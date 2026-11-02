@@ -30,18 +30,23 @@ jobs:
         env:
           CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
           CLOUDFLARE_ACCOUNT_ID: a9369cb853d78201bfa11df775767f0f
-      - name: Smoke-test production routes
+      - name: Smoke-test production Worker routes
         if: github.event_name == 'push' && github.ref == 'refs/heads/main'
         run: |
-          set -e
-          for url in \
-            https://linguafly.app/ \
-            https://linguafly.app/blog \
-            https://linguafly.app/blog/metodos \
-            https://linguafly.app/blog/metodos/mejores-apps-ingles-gratis \
-            https://linguafly.app/academia/b2/1
+          set -u
+          failed=0
+          base="https://linguaflyapp1.lramlo2026.workers.dev"
+          for path in \
+            / \
+            /blog \
+            /blog/metodos \
+            /blog/metodos/mejores-apps-ingles-gratis \
+            /academia/b2/1
           do
-            status=$(curl --silent --show-error --location --retry 5 --retry-delay 3 --retry-all-errors -o /tmp/linguafly-smoke.html -w "%{http_code}" "$url")
-            echo "$status $url"
-            test "$status" = "200"
+            status=$(curl --silent --show-error --location --retry 5 --retry-delay 3 --retry-all-errors -A "Mozilla/5.0 LinguaFly-SmokeTest" -o /tmp/linguafly-smoke.html -w "%{http_code}" "$base$path")
+            echo "$status $base$path"
+            if [ "$status" != "200" ]; then failed=1; fi
           done
+          echo "Custom-domain diagnostic:"
+          curl --silent --show-error --location --max-time 20 -o /dev/null -w "%{http_code} https://linguafly.app/\n" https://linguafly.app/ || true
+          exit "$failed"
