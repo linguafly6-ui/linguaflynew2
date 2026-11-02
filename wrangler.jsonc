@@ -15,12 +15,6 @@
   "services":[{"binding":"WORKER_SELF_REFERENCE","service":"linguaflyapp1","environment":"production"}],
   "vars":{
     "NEXT_PUBLIC_SITE_URL":"https://linguafly.app",
-    "STRIPE_SECRET_KEY":"",
-    "STRIPE_WEBHOOK_SECRET":"",
-    "STRIPE_PRICE_MONTHLY":"",
-    "STRIPE_PRICE_ANNUAL":"",
-    "NEXT_PUBLIC_STRIPE_PRICE_MONTHLY":"",
-    "NEXT_PUBLIC_STRIPE_PRICE_ANNUAL":""
   },
   "ratelimits":[{"name":"AI_RATE_LIMITER","namespace_id":"610154781","simple":{"limit":30,"period":60}}],
   "send_email":[{"name":"EMAIL","allowed_sender_addresses":["noreply@linguafly.app"]}]
