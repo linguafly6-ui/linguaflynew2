@@ -118,7 +118,8 @@ export default function VoiceConversation({ scenario, userId = "demo-user", onCo
           if (!transcription || data.noSpeech) {
             const lastPrompt = lastSpokenRef.current || "";
             const repeatMatch = lastPrompt.match(/(?:repite|repeat)\s*:\s*(.+)$/i);
-            const target = repeatMatch?.[1]?.trim() || "Hello";
+            const unitTarget = scenario.persona_prompt.match(/Student practice target:\s*(.+)/i)?.[1]?.trim();
+            const target = repeatMatch?.[1]?.trim() || unitTarget || "la palabra o frase de esta unidad";
             const retryLine = "No te he oído. Repite: " + target;
             setMessages((previous) => [...previous, { role: "assistant", content: retryLine }]);
             setNotice("No he reconocido tu respuesta. Inténtalo otra vez.");
@@ -173,7 +174,11 @@ export default function VoiceConversation({ scenario, userId = "demo-user", onCo
           stopMonitor();
           discardRecordingRef.current = true;
           if (recorder.state !== "inactive") recorder.stop();
-          void speakLine(lastSpokenRef.current || scenario.opening_line);
+          const unitTarget = scenario.persona_prompt.match(/Student practice target:\s*(.+)/i)?.[1]?.trim();
+          const previousTarget = lastSpokenRef.current.match(/(?:repite|repeat)\\s*:\\s*(.+)$/i)?.[1]?.trim();
+          const retryLine = "No te he oído. Repite: " + (previousTarget || unitTarget || "la palabra o frase de esta unidad");
+          setMessages((previous) => [...previous, { role: "assistant", content: retryLine }]);
+          void speakLine(retryLine);
           return;
         }
         if (voiceStartedRef.current && now - lastVoiceAtRef.current >= SILENCE_DURATION && !processingRef.current) {
