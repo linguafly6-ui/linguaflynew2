@@ -29,3 +29,4 @@ export async function getDB() { return (await env()).DB; }
 export async function getCourseDB() { return (await env()).COURSE_DB; }
 export async function getR2() { return (await env()).LINGUAFLY_MEDIA; }
 export async function getAI() { return (await env()).AI; }
+export async function getAIRateLimiter() { return (await env()).AI_RATE_LIMITER; }
