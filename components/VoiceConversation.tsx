@@ -43,6 +43,23 @@ export default function VoiceConversation({ scenario, userId = "demo-user", onCo
   const discardRecordingRef = useRef(false);
   const lastSpokenRef = useRef("");
   const processingRef = useRef(false);
+  const requestControllersRef = useRef<Set<AbortController>>(new Set());
+  const startCancelledRef = useRef(false);
+
+  const conversationFetch = useCallback(async (input: RequestInfo | URL, init: RequestInit = {}) => {
+    const controller = new AbortController();
+    requestControllersRef.current.add(controller);
+    try {
+      return await fetch(input, { ...init, signal: controller.signal });
+    } finally {
+      requestControllersRef.current.delete(controller);
+    }
+  }, []);
+
+  const abortConversationRequests = useCallback(() => {
+    requestControllersRef.current.forEach((controller) => controller.abort());
+    requestControllersRef.current.clear();
+  }, []);
 
   const stopMonitor = useCallback(() => {
     if (monitorRef.current !== null) { window.clearInterval(monitorRef.current); monitorRef.current = null; }
@@ -99,7 +116,7 @@ export default function VoiceConversation({ scenario, userId = "demo-user", onCo
           const form = new FormData();
           form.append("audio", blob, "linguafly-voice.webm");
           form.append("language", scenario.language);
-          const response = await fetch("/api/conversation/voice-input", { method: "POST", body: form });
+          const response = await conversationFetch("/api/conversation/voice-input", { method: "POST", body: form });
           const data = await response.json() as any;
           if (!response.ok || data.error) throw new Error(data.error || "No se pudo transcribir el audio");
           const transcription = String(data.transcription || "").trim();
@@ -134,7 +151,7 @@ export default function VoiceConversation({ scenario, userId = "demo-user", onCo
         if (!voiceStartedRef.current && elapsed >= 8000 && !hintRequestedRef.current) {
           hintRequestedRef.current = true;
           setNotice("¿No te escucho? Intenta hablar.");
-          void fetch("/api/conversation/hint", {
+          void conversationFetch("/api/conversation/hint", {
             method: "POST", headers: { "Content-Type": "application/json" },
             body: JSON.stringify({ sessionId: sessionRef.current, lastMessage: lastSpokenRef.current, personaPrompt: scenario.persona_prompt, language: scenario.language, level: scenario.level }),
           }).then(async (response) => {
@@ -160,7 +177,7 @@ export default function VoiceConversation({ scenario, userId = "demo-user", onCo
       setPhase("idle");
     }
   // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [scenario, stopMonitor]);
+  }, [scenario, stopMonitor, conversationFetch]);
 
   const speakLine = useCallback(async (text: string) => {
     if (!activeRef.current || !text.trim()) return;
@@ -180,7 +197,7 @@ export default function VoiceConversation({ scenario, userId = "demo-user", onCo
     setNotice(null);
     setHint(null);
     try {
-      const response = await fetch("/api/conversation/voice-output", {
+      const response = await conversationFetch("/api/conversation/voice-output", {
         method: "POST", headers: { "Content-Type": "application/json" },
         body: JSON.stringify({ text, language: scenario.language }),
       });
@@ -204,13 +221,13 @@ export default function VoiceConversation({ scenario, userId = "demo-user", onCo
     if (subtitleTimerRef.current !== null) { window.clearInterval(subtitleTimerRef.current); subtitleTimerRef.current = null; }
     setRevealedText(text);
     if (activeRef.current) beginListening();
-  }, [browserSpeak, beginListening, scenario.language]);
+  }, [browserSpeak, beginListening, scenario.language, conversationFetch]);
 
   const answerStudent = useCallback(async (message: string) => {
     if (!activeRef.current || !sessionRef.current) return;
     setPhase("thinking");
     try {
-      const response = await fetch("/api/conversation/chat", {
+      const response = await conversationFetch("/api/conversation/chat", {
         method: "POST", headers: { "Content-Type": "application/json" },
         body: JSON.stringify({ sessionId: sessionRef.current, message, personaPrompt: scenario.persona_prompt, language: scenario.language, level: scenario.level }),
       });
@@ -226,15 +243,17 @@ export default function VoiceConversation({ scenario, userId = "demo-user", onCo
       setPhase("listening");
       beginListening();
     }
-  }, [scenario, speakLine, beginListening]);
+  }, [scenario, speakLine, beginListening, conversationFetch]);
 
   const startConversation = async () => {
     if (starting || activeRef.current) return;
+    startCancelledRef.current = false;
     setStarting(true);
     setError(null);
     try {
       if (!navigator.mediaDevices?.getUserMedia || typeof MediaRecorder === "undefined") throw new Error("Este navegador no permite acceder al micrófono.");
       const stream = await navigator.mediaDevices.getUserMedia({ audio: { echoCancellation: true, noiseSuppression: true, autoGainControl: true } });
+      if (startCancelledRef.current) { stream.getTracks().forEach((track) => track.stop()); return; }
       streamRef.current = stream;
       const AudioContextClass = window.AudioContext || (window as any).webkitAudioContext;
       const context = new AudioContextClass();
@@ -245,11 +264,12 @@ export default function VoiceConversation({ scenario, userId = "demo-user", onCo
       context.createMediaStreamSource(stream).connect(analyser);
       analyserRef.current = analyser;
       await context.resume();
-      const response = await fetch("/api/conversation/start", {
+      const response = await conversationFetch("/api/conversation/start", {
         method: "POST", headers: { "Content-Type": "application/json" },
         body: JSON.stringify({ scenarioId: scenario.id, userId }),
       });
       const data = await response.json() as any;
+      if (startCancelledRef.current) return;
       if (!response.ok || data.error) throw new Error(data.error || "No se pudo iniciar la conversación");
       sessionRef.current = data.sessionId;
       activeRef.current = true;
@@ -265,8 +285,19 @@ export default function VoiceConversation({ scenario, userId = "demo-user", onCo
   };
 
   const finishConversation = async () => {
-    if (!sessionRef.current || !activeRef.current) return;
+    startCancelledRef.current = true;
+    if (!sessionRef.current || !activeRef.current) {
+      abortConversationRequests();
+      activeRef.current = false;
+      releaseAudio();
+      setStarting(false);
+      setPhase("idle");
+      setNotice(null);
+      setError("Conversación detenida.");
+      return;
+    }
     activeRef.current = false;
+    abortConversationRequests();
     stopMonitor();
     releaseAudio();
     setPhase("processing");
@@ -298,7 +329,7 @@ export default function VoiceConversation({ scenario, userId = "demo-user", onCo
     setPhase("idle");
   };
 
-  useEffect(() => () => { activeRef.current = false; releaseAudio(); }, [releaseAudio]);
+  useEffect(() => () => { activeRef.current = false; startCancelledRef.current = true; abortConversationRequests(); releaseAudio(); }, [abortConversationRequests, releaseAudio]);
 
   const status = phase === "speaking" ? "🤖 Hablando..." : phase === "listening" ? "🔴 Te escucho... habla ahora" : phase === "processing" ? "⏳ Procesando..." : phase === "thinking" ? "🤖 Pensando..." : phase === "completed" ? "Conversación finalizada" : "Listo para hablar";
   const passed = Number(result?.score || 0) >= 60;
@@ -308,7 +339,7 @@ export default function VoiceConversation({ scenario, userId = "demo-user", onCo
       <style jsx>{`@keyframes fade-in-up { from { opacity: 0; transform: translateY(10px); } to { opacity: 1; transform: translateY(0); } }`}</style>
       <header className="flex items-center justify-between gap-3 border-b border-slate-100/80 px-5 py-4 sm:px-7">
         <div className="min-w-0"><h2 className="truncate text-base font-bold text-slate-800">{scenario.title}</h2><p className="text-xs text-slate-400">{scenario.level} · {scenario.setting}</p></div>
-        {phase !== "idle" && phase !== "completed" && <button type="button" onClick={finishConversation} className="shrink-0 text-xs font-semibold text-gray-400 transition-colors duration-300 hover:text-red-500">✕ Terminar</button>}
+        {(phase !== "idle" && phase !== "completed" || starting) && <button type="button" onClick={finishConversation} className="shrink-0 rounded-full border border-red-200 bg-red-50 px-3 py-1.5 text-xs font-bold text-red-600 transition-colors hover:bg-red-100">■ Detener conversación</button>}
       </header>
       <main className="flex flex-1 flex-col gap-4 overflow-y-auto px-5 py-6 sm:px-8">
         {messages.map((message, index) => <div key={index} style={{ animation: "fade-in-up .35s ease-out" }} className={`flex ${message.role === "user" ? "justify-end" : "justify-start"}`}>

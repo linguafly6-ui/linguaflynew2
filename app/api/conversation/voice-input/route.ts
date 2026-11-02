@@ -1,7 +1,7 @@
 ﻿import { NextRequest, NextResponse } from "next/server";
 import { getEnv } from "@/lib/cf-context";
 
-const WHISPER_MODEL = "@cf/openai/whisper";
+const WHISPER_MODEL = "@cf/openai/whisper-large-v3-turbo";
 
 export async function POST(request: NextRequest) {
   try {
@@ -37,9 +37,15 @@ export async function POST(request: NextRequest) {
       });
     }
 
+    const languageCode = language.toLowerCase().split("-")[0];
+    const supportedLanguages = new Set(["en", "es", "fr", "de", "it", "pt"]);
+    const transcriptionLanguage = supportedLanguages.has(languageCode) ? languageCode : "en";
+
     const result = await env.AI.run(WHISPER_MODEL as any, {
       audio: Array.from(audioBytes),
-      ...(language ? { language } : {}),
+      task: "transcribe",
+      language: transcriptionLanguage,
+      vad_filter: false,
     });
 
     const transcription = String((result as any)?.text || "").trim();
