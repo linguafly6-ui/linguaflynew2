@@ -3,7 +3,7 @@ import { getAI, getAIRateLimiter } from "@/lib/db";
 
 export async function POST(request: NextRequest) {
   try {
-    const body = await request.json() as { text?: string; language?: string };
+    const body = await request.json() as any as { text?: string; language?: string };
     const text = typeof body.text === "string" ? body.text.trim() : "";
     if (!text || text.length > 500) return NextResponse.json({ error: "Provide text between 1 and 500 characters." }, { status: 400 });
     const ip = request.headers.get("cf-connecting-ip") || "unknown";
