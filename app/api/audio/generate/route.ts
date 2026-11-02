@@ -10,9 +10,9 @@ export async function POST(request: NextRequest) {
     const ip = request.headers.get("cf-connecting-ip") || "unknown";
     const limiter = await getAIRateLimiter();
     if (limiter) { const allowed = await limiter.limit({ key: ip }); if (!allowed.success) return NextResponse.json({ error: "Audio limit reached. Please try again shortly." }, { status: 429 }); }
-    const language = body.language === "es" ? "es" : "en";
+    const language = "en";
     const ai = await getAI();
-    const result = await ai.run("@cf/myshell-ai/melotts", { text, lang: language }) as { audio?: string; audio_base64?: string };
+    const result = await ai.run("@cf/myshell-ai/melotts", { prompt: text, lang: language }) as { audio?: string; audio_base64?: string };
     const encoded = result.audio ?? result.audio_base64;
     if (typeof encoded !== "string" || !encoded.length) return NextResponse.json({ error: "The speech service returned no audio." }, { status: 502 });
     const binary = atob(encoded);
