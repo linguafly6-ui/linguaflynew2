@@ -440,3 +440,9 @@ Student practice target: Repaso total del módulo 3.
 New vocabulary for this unit: No new vocabulary; review only.
 This is a review unit. Do not introduce new vocabulary.
 Ask for one short spoken English response at a time. After each attempt, give brief positive feedback in Spanish and continue patiently.','intermedio','2-3 min',1,0);
+
+
+-- Automatic unit completion rules for units 41-60.
+UPDATE a1_speaking_units
+SET system_prompt = system_prompt || char(10) || 'After the student practices the phrase/question 3 times, end the conversation with exactly this message: "¡Muy bien! Has completado la unidad. ¡Nos vemos en la siguiente!" When you say "Has completado la unidad", the conversation is over. Maximum 8 exchanges.'
+WHERE unit_number BETWEEN 41 AND 60;
