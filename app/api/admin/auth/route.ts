@@ -7,5 +7,11 @@ export async function POST(request:NextRequest){
   const admin=await authenticateAdmin(email,password);
   if(!admin)return NextResponse.json({error:"Email o contraseña incorrectos."},{status:401});
   const response=NextResponse.json({success:true});await createAdminSession(admin.id,response);return response;
- }catch(error){console.error("Admin login error:",error);return NextResponse.json({error:"No se pudo iniciar sesión."},{status:500});}
+ }catch(error){
+  console.error("Admin auth error:",error);
+  return NextResponse.json({
+   error:"No se pudo iniciar sesión.",
+   detail:error instanceof Error?error.message:String(error)
+  },{status:500});
+ }
 }
