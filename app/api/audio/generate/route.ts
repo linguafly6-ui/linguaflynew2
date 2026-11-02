@@ -1,7 +1,6 @@
 import { NextRequest, NextResponse } from "next/server";
 import { getAI, getAIRateLimiter } from "@/lib/db";
 
-export const runtime = "edge";
 export async function POST(request: NextRequest) {
   try {
     const body = await request.json() as { text?: string; language?: string };
