@@ -200,47 +200,15 @@ export default function VoiceConversation({ scenario, userId = "demo-user", onCo
   const speakLine = useCallback(async (text: string) => {
     if (!activeRef.current || !text.trim()) return;
     lastSpokenRef.current = text;
-    setRevealedText("");
-    if (subtitleTimerRef.current !== null) window.clearInterval(subtitleTimerRef.current);
-    let visibleCharacters = 0;
-    subtitleTimerRef.current = window.setInterval(() => {
-      visibleCharacters = Math.min(text.length, visibleCharacters + 2);
-      setRevealedText(text.slice(0, visibleCharacters));
-      if (visibleCharacters >= text.length && subtitleTimerRef.current !== null) {
-        window.clearInterval(subtitleTimerRef.current);
-        subtitleTimerRef.current = null;
-      }
-    }, 28);
-    setPhase("speaking");
+    setRevealedText(text);
     setNotice(null);
     setHint(null);
-    try {
-      const response = await conversationFetch("/api/conversation/voice-output", {
-        method: "POST", headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({ text, language: scenario.language, unitNumber: scenario.id.startsWith("a1-speaking-") ? Number(scenario.id.slice("a1-speaking-".length)) : null }),
-      });
-      if (!response.ok) throw new Error("TTS no disponible");
-      const blob = await response.blob();
-      if (!blob.size) throw new Error("Audio vacío");
-      if (!activeRef.current) return;
-      if (audioUrlRef.current) URL.revokeObjectURL(audioUrlRef.current);
-      const url = URL.createObjectURL(blob);
-      audioUrlRef.current = url;
-      const audio = new Audio(url);
-      audioRef.current = audio;
-      await new Promise<void>((resolve, reject) => {
-        audio.onended = () => resolve();
-        audio.onerror = () => reject(new Error("No se pudo reproducir el audio"));
-        audio.play().catch(reject);
-      });
-    } catch {
-      // No alternar a speechSynthesis: mantener la misma voz MeloTTS durante la sesión.
-      if (activeRef.current) setError("No se pudo generar la voz de la conversación. Puedes continuar leyendo los subtítulos.");
-    }
-    if (subtitleTimerRef.current !== null) { window.clearInterval(subtitleTimerRef.current); subtitleTimerRef.current = null; }
-    setRevealedText(text);
-    if (activeRef.current) beginListening();
-  }, [beginListening, scenario.language, conversationFetch]);
+    // A1 Speaking usa tutor exclusivamente textual: deja tiempo para leer y luego activa el micrófono.
+    setPhase("speaking");
+    window.setTimeout(() => {
+      if (activeRef.current) beginListening();
+    }, 1500);
+  }, [beginListening]);
 
   const answerStudent = useCallback(async (message: string) => {
     if (!activeRef.current || !sessionRef.current) return;
