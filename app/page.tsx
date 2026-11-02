@@ -6,10 +6,6 @@ export const dynamic = "force-dynamic";
 export default async function HomePage() {
   const [categories, articles, levels] = await Promise.all([getCategories(), getArticles(undefined, 3), getCourseLevels()]);
   return <main className="min-h-screen">
-    <header className="mx-auto flex max-w-6xl items-center justify-between px-6 py-6">
-      <Link href="/" className="text-2xl font-black tracking-tight text-[#14213d]">LinguaFly<span className="text-[#2457c5]">.</span></Link>
-      <nav className="flex gap-6 text-sm font-semibold text-slate-600"><Link href="/academia">Academy</Link><Link href="/blog">Blog</Link></nav>
-    </header>
     <section className="mx-auto grid max-w-6xl gap-10 px-6 py-16 md:grid-cols-[1.1fr_.9fr] md:py-24">
       <div><p className="mb-5 inline-flex rounded-full bg-[#d9f5e8] px-4 py-2 text-sm font-bold text-[#176b4b]">British English · CEFR A1–C2</p>
         <h1 className="max-w-2xl text-5xl font-black leading-tight tracking-tight text-[#14213d] md:text-6xl">Your English journey, <span className="text-[#2457c5]">step by step.</span></h1>
