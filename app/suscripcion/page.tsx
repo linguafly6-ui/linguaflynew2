@@ -22,17 +22,19 @@ export default function SubscriptionPage() {
   useEffect(() => {
     let active = true;
 
-    fetch("/api/auth/me")
-      .then((r) => (r.ok ? r.json() : null))
-      .then((data) => {
-        if (active) setStudent(data?.student ?? null);
-      })
-      .catch(() => {
+    async function loadStudent() {
+      try {
+        const res = await fetch("/api/auth/me");
+        const me: any = await res.json();
+        if (active) setStudent(me?.student ?? null);
+      } catch {
         if (active) setStudent(null);
-      })
-      .finally(() => {
+      } finally {
         if (active) setLoading(false);
-      });
+      }
+    }
+
+    void loadStudent();
 
     return () => {
       active = false;
@@ -53,7 +55,7 @@ export default function SubscriptionPage() {
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({ studentId: student.id, plan }),
       });
-      const data = await response.json();
+      const data: any = await response.json();
       if (!response.ok) throw new Error(data.error || "No se pudo iniciar el pago.");
       if (data.url) window.location.assign(data.url);
     } catch (e) {
@@ -68,7 +70,7 @@ export default function SubscriptionPage() {
     setError("");
     try {
       const response = await fetch("/api/billing/portal", { method: "POST" });
-      const data = await response.json();
+      const data: any = await response.json();
       if (!response.ok) throw new Error(data.error || "No se pudo abrir el portal.");
       if (data.url) window.location.assign(data.url);
     } catch (e) {
