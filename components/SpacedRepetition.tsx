@@ -227,7 +227,7 @@ export default function SpacedRepetition({ userId = "demo-user" }: { userId?: st
               </div>
             )}
 
-            {/* Botones de calificaciÃ³n SM-2 */}
+            {/* Botones de calificación SM-2 */}
             {!adaptiveContent && (
               <div className="mt-8 w-full">
                 <p className="mb-3 text-center text-sm font-semibold text-slate-500">¿Qué tal lo recordabas?</p>
