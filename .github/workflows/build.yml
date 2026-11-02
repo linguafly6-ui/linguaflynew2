@@ -24,3 +24,9 @@ jobs:
         run: npm install
       - name: Build for Cloudflare Workers
         run: npx opennextjs-cloudflare build
+      - name: Deploy to existing linguaflyapp1 Worker
+        if: github.event_name == 'push' && github.ref == 'refs/heads/main'
+        run: npx opennextjs-cloudflare deploy
+        env:
+          CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+          CLOUDFLARE_ACCOUNT_ID: a9369cb853d78201bfa11df775767f0f
