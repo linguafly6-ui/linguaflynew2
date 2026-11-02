@@ -117,7 +117,7 @@ export default function VoiceConversation({ scenario, userId = "demo-user", onCo
           const transcription = String(data.transcription || "").trim();
           if (!transcription || data.noSpeech) {
             const lastPrompt = lastSpokenRef.current || "";
-            const repeatMatch = lastPrompt.match(/(?:repite|repeat)\\s*:\\s*(.+)$/i);
+            const repeatMatch = lastPrompt.match(/(?:repite|repeat)\s*:\s*(.+)$/i);
             const target = repeatMatch?.[1]?.trim() || "Hello";
             const retryLine = "No te he oído. Repite: " + target;
             setMessages((previous) => [...previous, { role: "assistant", content: retryLine }]);
