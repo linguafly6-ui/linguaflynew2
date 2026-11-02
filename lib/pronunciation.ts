@@ -69,8 +69,8 @@ export function detectPhoneticIssues(
   transcribed: string
 ): string[] {
   const issues: string[] = [];
-  const targetWords = target.toLowerCase().split(/\\s+/);
-  const transcribedWords = transcribed.toLowerCase().split(/\\s+/);
+  const targetWords = target.toLowerCase().split(/\s+/);
+  const transcribedWords = transcribed.toLowerCase().split(/\s+/);
 
   const missing = targetWords.filter(
     (w) => !transcribedWords.some((tw) => tw.includes(w) || w.includes(tw))
