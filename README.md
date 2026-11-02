@@ -2,17 +2,23 @@
 
 Nueva base de la plataforma LinguaFly con Next.js y Cloudflare Workers mediante OpenNext.
 
-## Estado
+## Arquitectura y destino
 
-- [x] Repositorio inicializado.
-- [x] Esqueleto Next.js App Router.
-- [x] Configuración inicial de OpenNext y Wrangler.
-- [x] Referencias a las bases D1 existentes (blog y aprendizaje).
-- [x] Referencia al bucket R2 de medios.
-- [ ] Validar instalación y build en CI.
-- [ ] Conectar lecturas de contenido y cursos.
-- [ ] Implementar autenticación y progreso del alumno.
-- [ ] Revisar rutas, SEO, accesibilidad y despliegue.
+- Repositorio: `linguafly6-ui/linguaflynew2`.
+- Worker de destino existente: `linguaflyapp1` (no crear un Worker nuevo).
+- Framework: Next.js App Router + OpenNext para Cloudflare.
+- Sitio: `https://linguafly.app`.
+
+## Recursos Cloudflare referenciados
+
+- `DB`: D1 `blog`.
+- `COURSE_DB`: D1 `linguafly-learning`.
+- `LINGUAFLY_MEDIA`: R2 `linguafly-media`.
+- `AI`: Workers AI.
+- `IMAGES`: Cloudflare Images.
+- `WORKER_SELF_REFERENCE`: servicio `linguaflyapp1`.
+
+Los secretos existentes no se guardan en este repositorio ni deben sobrescribirse desde esta configuración.
 
 ## Desarrollo local
 
@@ -21,13 +27,15 @@ npm install
 npm run dev
 ```
 
-## Cloudflare
+## Estado
 
-El Worker nuevo se llama `linguaflynew2`. La configuración declara bindings a los recursos existentes:
+- [x] Repositorio y esqueleto Next.js App Router.
+- [x] Configuración inicial OpenNext/Wrangler dirigida al Worker existente `linguaflyapp1`.
+- [x] Referencias a D1 de blog y aprendizaje y R2 de medios.
+- [ ] Validar dependencias y build en CI.
+- [ ] Validar compatibilidad de bindings con el Worker existente.
+- [ ] Completar y probar rutas de blog y academia.
+- [ ] Implementar autenticación y progreso del alumno mediante la integración existente.
+- [ ] Revisar SEO, accesibilidad y despliegue.
 
-- `DB`: D1 `blog`.
-- `COURSE_DB`: D1 `linguafly-learning`.
-- `LINGUAFLY_MEDIA`: R2 `linguafly-media`.
-- `AI`: Workers AI.
-
-**Seguridad:** no se incluyen secretos ni se ejecutan migraciones sobre las bases de datos. Los comandos de despliegue están definidos, pero no se ha desplegado el Worker ni se ha cambiado el tráfico de producción.
+**Seguridad:** no se ejecutan migraciones, escrituras en D1 ni despliegues de producción como parte de esta preparación.
