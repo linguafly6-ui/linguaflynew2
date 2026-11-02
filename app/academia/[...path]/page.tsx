@@ -1,25 +1,45 @@
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import { getCourseUnit, getCourseUnits } from "@/lib/academy";
+import ExerciseCard from "@/components/academy/ExerciseCard";
 
 export const dynamic = "force-dynamic";
 
 type Props = { params: Promise<{ path: string[] }> };
+type ExerciseContent = {
+  prompt?: string;
+  options?: string[];
+  stimulus?: string;
+  sentence?: string;
+};
+
+function safeExerciseContent(raw: unknown): ExerciseContent {
+  try {
+    const parsed = JSON.parse(String(raw ?? "{}")) as Record<string, unknown>;
+    return {
+      prompt: typeof parsed.prompt === "string" ? parsed.prompt : undefined,
+      options: Array.isArray(parsed.options) ? parsed.options.filter((value): value is string => typeof value === "string").slice(0, 8) : undefined,
+      stimulus: typeof parsed.stimulus === "string" ? parsed.stimulus : undefined,
+      sentence: typeof parsed.sentence === "string" ? parsed.sentence : undefined,
+    };
+  } catch {
+    return {};
+  }
+}
 
 export default async function AcademyPathPage({ params }: Props) {
-  const { path } = await params;
+  const { path = [] } = await params;
 
   if (path.length === 1) {
     const level = path[0];
     const units = await getCourseUnits(level);
     if (!units.length) notFound();
-
     return (
       <main className="mx-auto min-h-screen max-w-5xl px-6 py-12">
         <Link href="/academia" className="font-bold text-blue-700">← Academy</Link>
         <h1 className="mt-8 text-4xl font-black">{level.toUpperCase()} course</h1>
         <div className="mt-8 grid gap-3 sm:grid-cols-2">
-          {units.map((unit: any) => (
+          {units.map((unit) => (
             <Link key={unit.unit_id} href={`/academia/${level.toLowerCase()}/${unit.unit_number}`} className="rounded-xl border bg-white p-5">
               <div className="flex justify-between gap-3">
                 <h2 className="font-bold">Unit {unit.unit_number}: {unit.title}</h2>
@@ -39,7 +59,7 @@ export default async function AcademyPathPage({ params }: Props) {
     const data = await getCourseUnit(level, number);
     if (!data) notFound();
 
-    const grouped = new Map<string, Record<string, unknown>[]>();
+    const grouped = new Map<string, typeof data.exercises>();
     for (const exercise of data.exercises) {
       const key = String(exercise.section_id);
       grouped.set(key, [...(grouped.get(key) ?? []), exercise]);
@@ -57,11 +77,15 @@ export default async function AcademyPathPage({ params }: Props) {
               <p className="mt-1 text-sm text-slate-500">{String(exercises[0].section_instructions || "")}</p>
               <div className="mt-5 space-y-4">
                 {exercises.map((exercise) => (
-                  <div key={String(exercise.exercise_id)} className="rounded-xl bg-slate-50 p-4">
-                    <p className="text-xs font-bold uppercase text-blue-700">{String(exercise.exercise_type_id)}</p>
-                    <h3 className="mt-2 font-semibold">{String(exercise.exercise_title || exercise.exercise_instructions || "Exercise")}</h3>
-                    <pre className="mt-3 overflow-x-auto whitespace-pre-wrap text-xs text-slate-600">{String(exercise.content_json)}</pre>
-                  </div>
+                  <ExerciseCard
+                    key={String(exercise.exercise_id)}
+                    exerciseId={String(exercise.exercise_id)}
+                    level={level}
+                    unit={unit}
+                    title={String(exercise.exercise_title || exercise.exercise_instructions || "Exercise")}
+                    exerciseType={String(exercise.exercise_type_id || "")}
+                    content={safeExerciseContent(exercise.content_json)}
+                  />
                 ))}
               </div>
             </section>
