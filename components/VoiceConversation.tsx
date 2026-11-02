@@ -250,7 +250,7 @@ export default function VoiceConversation({ scenario, userId = "demo-user", onCo
       const reachedExchangeLimit = exchangeCountRef.current >= maxExchanges;
       setMessages((previous) => [...previous, { role: "assistant", content: reply, correction: data.correction || null }]);
       if (tutorFinished || reachedExchangeLimit) {
-        const closingLine = tutorFinished ? reply : reply + "\\n\\n¡Excelente trabajo! Has completado la unidad.";
+        const closingLine = tutorFinished ? reply : reply + "\n\n¡Excelente trabajo! Has completado la unidad.";
         lastSpokenRef.current = closingLine;
         setRevealedText(closingLine);
         setPhase("speaking");
