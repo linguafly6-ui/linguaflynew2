@@ -115,7 +115,16 @@ export default function VoiceConversation({ scenario, userId = "demo-user", onCo
           const data = await response.json() as any;
           if (!response.ok || data.error) throw new Error(data.error || "No se pudo transcribir el audio");
           const transcription = String(data.transcription || "").trim();
-          if (!transcription) throw new Error("No se ha reconocido ninguna frase");
+          if (!transcription || data.noSpeech) {
+            const lastPrompt = lastSpokenRef.current || "";
+            const repeatMatch = lastPrompt.match(/(?:repite|repeat)\\s*:\\s*(.+)$/i);
+            const target = repeatMatch?.[1]?.trim() || "Hello";
+            const retryLine = "No te he oído. Repite: " + target;
+            setMessages((previous) => [...previous, { role: "assistant", content: retryLine }]);
+            setNotice("No he reconocido tu respuesta. Inténtalo otra vez.");
+            await speakLine(retryLine);
+            return;
+          }
           setMessages((previous) => [...previous, { role: "user", content: transcription }]);
           setHint(null);
           await answerStudent(transcription);
@@ -208,7 +217,7 @@ export default function VoiceConversation({ scenario, userId = "demo-user", onCo
     try {
       const response = await conversationFetch("/api/conversation/voice-output", {
         method: "POST", headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({ text, language: scenario.language }),
+        body: JSON.stringify({ text, language: scenario.language, unitNumber: scenario.id.startsWith("a1-speaking-") ? Number(scenario.id.slice("a1-speaking-".length)) : null }),
       });
       if (!response.ok) throw new Error("TTS no disponible");
       const blob = await response.blob();
