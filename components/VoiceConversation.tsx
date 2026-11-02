@@ -38,7 +38,12 @@ export default function VoiceConversation({ scenario, userId = "demo-user", onCo
   const subtitleTimerRef = useRef<number | null>(null);
   const listeningStartedRef = useRef(0);
   const voiceStartedRef = useRef(false);
+  const speechStartedAtRef = useRef(0);
   const lastVoiceAtRef = useRef(0);
+
+  const VOICE_THRESHOLD = 0.025;
+  const SILENCE_DURATION = 2500;
+  const MIN_SPEECH_DURATION = 500;
   const hintRequestedRef = useRef(false);
   const discardRecordingRef = useRef(false);
   const lastSpokenRef = useRef("");
@@ -81,23 +86,12 @@ export default function VoiceConversation({ scenario, userId = "demo-user", onCo
     window.speechSynthesis?.cancel();
   }, [stopMonitor]);
 
-  const browserSpeak = useCallback((text: string) => new Promise<void>((resolve) => {
-    if (!( "speechSynthesis" in window)) { resolve(); return; }
-    window.speechSynthesis.cancel();
-    const utterance = new SpeechSynthesisUtterance(text);
-    const code = scenario.language.toLowerCase().split("-")[0];
-    const locales: Record<string, string> = { en: "en-US", es: "es-ES", fr: "fr-FR", de: "de-DE", it: "it-IT", pt: "pt-PT" };
-    utterance.lang = locales[code] || scenario.language;
-    utterance.onend = () => resolve();
-    utterance.onerror = () => resolve();
-    window.speechSynthesis.speak(utterance);
-  }), [scenario.language]);
-
   const beginListening = useCallback(() => {
     if (!activeRef.current || !streamRef.current || !analyserRef.current) return;
     try {
       chunksRef.current = [];
       voiceStartedRef.current = false;
+      speechStartedAtRef.current = 0;
       hintRequestedRef.current = false;
       processingRef.current = false;
       listeningStartedRef.current = Date.now();
@@ -146,7 +140,13 @@ export default function VoiceConversation({ scenario, userId = "demo-user", onCo
         const volume = Math.sqrt(sum / samples.length);
         const now = Date.now();
         const elapsed = now - listeningStartedRef.current;
-        if (volume > 0.01) { voiceStartedRef.current = true; lastVoiceAtRef.current = now; }
+        if (volume > VOICE_THRESHOLD) {
+          if (!voiceStartedRef.current) {
+            voiceStartedRef.current = true;
+            speechStartedAtRef.current = now;
+          }
+          lastVoiceAtRef.current = now;
+        }
 
         if (!voiceStartedRef.current && elapsed >= 8000 && !hintRequestedRef.current) {
           hintRequestedRef.current = true;
@@ -166,7 +166,15 @@ export default function VoiceConversation({ scenario, userId = "demo-user", onCo
           void speakLine(lastSpokenRef.current || scenario.opening_line);
           return;
         }
-        if (voiceStartedRef.current && now - lastVoiceAtRef.current >= 1500 && !processingRef.current) {
+        if (voiceStartedRef.current && now - lastVoiceAtRef.current >= SILENCE_DURATION && !processingRef.current) {
+          const speechDuration = lastVoiceAtRef.current - speechStartedAtRef.current;
+          if (speechDuration < MIN_SPEECH_DURATION) {
+            // Ignorar golpes de micrófono/ruidos breves y seguir escuchando.
+            voiceStartedRef.current = false;
+            speechStartedAtRef.current = 0;
+            lastVoiceAtRef.current = 0;
+            return;
+          }
           processingRef.current = true;
           stopMonitor();
           if (recorder.state !== "inactive") recorder.stop();
@@ -216,12 +224,13 @@ export default function VoiceConversation({ scenario, userId = "demo-user", onCo
         audio.play().catch(reject);
       });
     } catch {
-      await browserSpeak(text);
+      // No alternar a speechSynthesis: mantener la misma voz MeloTTS durante la sesión.
+      if (activeRef.current) setError("No se pudo generar la voz de la conversación. Puedes continuar leyendo los subtítulos.");
     }
     if (subtitleTimerRef.current !== null) { window.clearInterval(subtitleTimerRef.current); subtitleTimerRef.current = null; }
     setRevealedText(text);
     if (activeRef.current) beginListening();
-  }, [browserSpeak, beginListening, scenario.language, conversationFetch]);
+  }, [beginListening, scenario.language, conversationFetch]);
 
   const answerStudent = useCallback(async (message: string) => {
     if (!activeRef.current || !sessionRef.current) return;

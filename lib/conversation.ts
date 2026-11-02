@@ -1,8 +1,8 @@
-﻿import { getEnv } from "./cf-context";
+import { getEnv } from "./cf-context";
 
 /**
  * ============================================================
- * CONVERSACIÃ“N SIMULADA CON IA
+ * CONVERSACIÓN SIMULADA CON IA
  * ============================================================
  * Role-play con un personaje IA que corrige errores del usuario
  * en tiempo real. Usa Workers AI para generar respuestas.
@@ -18,36 +18,36 @@ export interface ChatMessage {
 
 /**
  * Construye el prompt del sistema combinando el personaje del escenario
- * con instrucciones de correcciÃ³n pedagÃ³gica.
+ * con instrucciones de corrección pedagógica.
  */
 function buildSystemPrompt(personaPrompt: string, language: string, level: string): string {
   return `${personaPrompt}
 
 REGLAS IMPORTANTES:
-1. Responde SIEMPRE en ${language === "en" ? "inglÃ©s" : language === "fr" ? "francÃ©s" : "espaÃ±ol"}.
+1. Responde SIEMPRE en ${language === "en" ? "inglés" : language === "fr" ? "francés" : "español"}.
 2. Adapta tu vocabulario al nivel ${level} del estudiante.
-3. MantÃ©n tus respuestas cortas (mÃ¡ximo 2-3 frases) para que la conversaciÃ³n fluya.
-4. Si el estudiante comete errores gramaticales o de vocabulario, incluye al FINAL de tu respuesta una correcciÃ³n en este formato exacto:
-   [CORRECCIÃ“N: explica el error y la forma correcta]
-5. Si no hay errores, NO incluyas el bloque de correcciÃ³n.
-6. SÃ© natural, amable y mantÃ©n el role-play en todo momento.`;
+3. Mantén tus respuestas cortas (máximo 2-3 frases) para que la conversación fluya.
+4. Si el estudiante comete errores gramaticales o de vocabulario, incluye al FINAL de tu respuesta una corrección en este formato exacto:
+   [CORRECCIÓN: explica el error y la forma correcta]
+5. Si no hay errores, NO incluyas el bloque de corrección.
+6. Sé natural, amable y mantén el role-play en todo momento.`;
 }
 
 /**
- * Extrae la correcciÃ³n del bloque [CORRECCIÃ“N: ...] si existe.
+ * Extrae la corrección del bloque [CORRECCIÓN: ...] si existe.
  */
 export function extractCorrection(text: string): { content: string; correction: string | null } {
-  const match = text.match(/\[CORRECCIÃ“N:\s*(.+?)\]/i);
+  const match = text.match(/\[CORRECCIÓN:\s*(.+?)\]/i);
   if (match) {
     const correction = match[1].trim();
-    const content = text.replace(/\[CORRECCIÃ“N:\s*.+?\]/i, "").trim();
+    const content = text.replace(/\[CORRECCIÓN:\s*.+?\]/i, "").trim();
     return { content, correction };
   }
   return { content: text.trim(), correction: null };
 }
 
 /**
- * EnvÃ­a el historial de mensajes a Workers AI y obtiene la respuesta.
+ * Envía el historial de mensajes a Workers AI y obtiene la respuesta.
  */
 export async function chatWithPersona(
   messages: ChatMessage[],
@@ -82,7 +82,7 @@ export async function chatWithPersona(
 }
 
 /**
- * Carga el historial de mensajes de una sesiÃ³n desde D1.
+ * Carga el historial de mensajes de una sesión desde D1.
  */
 export async function loadSessionMessages(
   db: D1Database,
