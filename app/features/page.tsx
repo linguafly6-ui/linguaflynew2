@@ -4,6 +4,7 @@ import { useState } from "react";
 import PronunciationTutor from "@/components/PronunciationTutor";
 import ConversationPractice from "@/components/ConversationPractice";
 import SpacedRepetition from "@/components/SpacedRepetition";
+import ConversationCourse from "@/components/ConversationCourse";
 
 /**
  * ============================================================
@@ -13,12 +14,13 @@ import SpacedRepetition from "@/components/SpacedRepetition";
  * Ruta sugerida: /features  (o /app/features/page.tsx)
  */
 
-type Tab = "pronunciation" | "conversation" | "repetition";
+type Tab = "pronunciation" | "conversation" | "repetition" | "course";
 
 const TABS: { id: Tab; label: string; icon: string; desc: string }[] = [
   { id: "pronunciation", label: "Pronunciación", icon: "🎙️", desc: "Feedback instantáneo con IA" },
   { id: "conversation", label: "Conversación", icon: "💬", desc: "Role-play con personaje IA" },
   { id: "repetition", label: "Repaso", icon: "🧠", desc: "Repetición espaciada adaptativa" },
+  { id: "course", label: "Curso", icon: "🎓", desc: "Un camino paso a paso por niveles" },
 ];
 
 export default function FeaturesPage() {
@@ -32,14 +34,14 @@ export default function FeaturesPage() {
           <div className="mb-4 inline-flex items-center gap-3 rounded-full border border-white/20 bg-white/10 px-4 py-2 text-sm font-semibold text-blue-100 shadow-sm backdrop-blur"><span>✨</span><span>Tu estudio inteligente</span></div>
           <h1 className="text-4xl font-extrabold tracking-tight sm:text-5xl">🦅 LinguaFly</h1>
           <p className="mt-3 max-w-2xl text-lg leading-relaxed text-blue-100">
-            Aprende idiomas con IA: pronunciación, conversación y repetición adaptativa
+            Aprende idiomas con IA: pronunciación, conversación, repaso y un curso por niveles
           </p>
         </div>
       </div>
 
       {/* Tabs */}
       <div className="mx-auto -mt-8 max-w-6xl px-5 sm:px-8">
-        <div className="grid grid-cols-1 gap-3 sm:grid-cols-3 sm:gap-4">
+        <div className="grid grid-cols-1 gap-3 sm:grid-cols-2 lg:grid-cols-4 sm:gap-4">
           {TABS.map((tab) => (
             <button
               key={tab.id}
@@ -63,6 +65,7 @@ export default function FeaturesPage() {
         {activeTab === "pronunciation" && <PronunciationTutor />}
         {activeTab === "conversation" && <ConversationPractice />}
         {activeTab === "repetition" && <SpacedRepetition />}
+        {activeTab === "course" && <ConversationCourse />}
       </div>
     </div>
   );

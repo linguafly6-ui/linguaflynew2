@@ -19,7 +19,7 @@ interface Message {
   correction?: string | null;
 }
 
-export default function ConversationPractice({ userId = "demo-user" }: { userId?: string }) {
+export default function ConversationPractice({ userId = "demo-user", initialScenarioId, onCourseCompleted }: { userId?: string; initialScenarioId?: string; onCourseCompleted?: () => void }) {
   const [scenarios, setScenarios] = useState<Scenario[]>([]);
   const [selectedScenario, setSelectedScenario] = useState<Scenario | null>(null);
   const [sessionId, setSessionId] = useState<string | null>(null);
@@ -33,6 +33,8 @@ export default function ConversationPractice({ userId = "demo-user" }: { userId?
   const [isVoiceProcessing, setIsVoiceProcessing] = useState(false);
   const [isAudioLoading, setIsAudioLoading] = useState(false);
   const [lastSpokenMessage, setLastSpokenMessage] = useState("");
+  const [isCompleting, setIsCompleting] = useState(false);
+  const [completionResult, setCompletionResult] = useState<any>(null);
   const messagesEndRef = useRef<HTMLDivElement>(null);
   const mediaRecorderRef = useRef<MediaRecorder | null>(null);
   const mediaStreamRef = useRef<MediaStream | null>(null);
@@ -225,6 +227,33 @@ export default function ConversationPractice({ userId = "demo-user" }: { userId?
     }
   };
 
+  useEffect(() => {
+    if (initialScenarioId && !selectedScenario && scenarios.length > 0) {
+      const courseScenario = scenarios.find((scenario) => scenario.id === initialScenarioId);
+      if (courseScenario) void startConversation(courseScenario);
+    }
+  }, [initialScenarioId, scenarios, selectedScenario]);
+
+  const finishCourseConversation = async () => {
+    if (!sessionId || !selectedScenario || isCompleting) return;
+    setIsCompleting(true);
+    setError(null);
+    try {
+      const response = await fetch("/api/conversation/complete", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ userId, scenarioId: selectedScenario.id, sessionId }),
+      });
+      const data = await response.json() as any;
+      if (!response.ok || data.error) throw new Error(data.error || "No se pudo evaluar la conversación");
+      setCompletionResult(data);
+    } catch (err) {
+      setError(err instanceof Error ? err.message : "Error al evaluar la conversación");
+    } finally {
+      setIsCompleting(false);
+    }
+  };
+
   const sendMessage = async () => {
     if (!input.trim() || !sessionId || !selectedScenario) return;
 
@@ -358,19 +387,31 @@ export default function ConversationPractice({ userId = "demo-user" }: { userId?
 
   return (
     <div className="mx-auto flex h-[min(760px,85vh)] max-w-4xl flex-col rounded-3xl border border-slate-100 bg-white p-5 shadow-xl shadow-slate-200/70 sm:p-7">
-      <div className="flex items-center justify-between mb-4">
+      <div className="mb-4 flex items-center justify-between gap-3">
         <div>
           <h2 className="text-xl font-bold text-slate-900">{selectedScenario.title}</h2>
           <p className="text-sm text-slate-500">📍 {selectedScenario.setting}</p>
         </div>
+        <div className="flex items-center gap-2">
+        {initialScenarioId && !completionResult && <button type="button" onClick={finishCourseConversation} disabled={isCompleting || isLoading || messages.length < 2} className="rounded-xl bg-green-600 px-4 py-2 text-sm font-bold text-white shadow-sm transition hover:scale-105 hover:bg-green-700 disabled:opacity-50">{isCompleting ? "Evaluando..." : "Finalizar y evaluar"}</button>}
         <button
           onClick={reset}
           className="rounded-xl bg-slate-100 px-4 py-2 text-sm font-semibold text-slate-700 transition-all duration-300 hover:scale-105 hover:bg-slate-200 active:scale-95"
         >
           ← Cambiar escenario
         </button>
+        </div>
       </div>
 
+      {completionResult && (
+        <div className="mb-4 rounded-2xl border border-emerald-200 bg-emerald-50 p-5 text-emerald-950 shadow-sm">
+          <p className="text-xl font-extrabold">Evaluación: {completionResult.score}/100 · {"⭐".repeat(completionResult.stars)}</p>
+          <p className="mt-2">{completionResult.feedback}</p>
+          <p className="mt-2 text-sm">Errores gramaticales: {completionResult.grammar_errors} · Vocabulario utilizado: {completionResult.vocabulary_used}</p>
+          {completionResult.score < 60 && <p className="mt-2 text-sm font-semibold">Necesitas 60 puntos para desbloquear el siguiente escenario. Puedes seguir practicando y volver a intentarlo.</p>}
+          <button type="button" onClick={() => onCourseCompleted?.()} className="mt-4 rounded-xl bg-blue-600 px-5 py-2 font-bold text-white transition hover:scale-105 hover:bg-blue-700">Volver al curso</button>
+        </div>
+      )}
       <div className="flex-1 overflow-y-auto space-y-4 pb-4">
         {messages.map((msg, i) => (
           <div key={i} className={`flex ${msg.role === "user" ? "justify-end" : "justify-start"}`}>
