@@ -1,32 +1,24 @@
-﻿import { getCloudflareContext } from "@opennextjs/cloudflare";
+import { getCloudflareContext } from "@opennextjs/cloudflare";
 
-export interface D1Result<T> {
-  results: T[];
-  success: boolean;
-  meta?: Record<string, unknown>;
+// Native Cloudflare Workers D1 types used by the application.
+export type DatabaseResult<T = unknown> = D1Result<T>;
+export type DatabaseStatement = D1PreparedStatement;
+
+export interface Env {
+  DB: D1Database;
+  COURSE_DB: D1Database;
+  LINGUAFLY_MEDIA: R2Bucket;
+  AI: Ai;
+  AI_RATE_LIMITER?: RateLimit;
 }
-export interface D1Statement {
-  bind(...values: unknown[]): D1Statement;
-  all<T = Record<string, unknown>>(): Promise<D1Result<T>>;
-  first<T = Record<string, unknown>>(): Promise<T | null>;
-  run(): Promise<unknown>;
-}
-export interface any {
-  prepare(query: string): D1Statement;
-}
-type Env = {
-  DB: any;
-  COURSE_DB: any;
-  LINGUAFLY_MEDIA: { put(key: string, value: ArrayBuffer | ReadableStream): Promise<unknown> };
-  AI: { run(model: string, input: Record<string, unknown>): Promise<unknown> };
-  AI_RATE_LIMITER?: { limit(options: { key: string }): Promise<{ success: boolean }> };
-};
+
 async function env(): Promise<Env> {
   const { env } = await getCloudflareContext();
   return env as unknown as Env;
 }
-export async function getDB() { return (await env()).DB; }
-export async function getCourseDB() { return (await env()).COURSE_DB; }
-export async function getR2() { return (await env()).LINGUAFLY_MEDIA; }
-export async function getAI() { return (await env()).AI; }
-export async function getAIRateLimiter() { return (await env()).AI_RATE_LIMITER; }
+
+export async function getDB(): Promise<D1Database> { return (await env()).DB; }
+export async function getCourseDB(): Promise<D1Database> { return (await env()).COURSE_DB; }
+export async function getR2(): Promise<R2Bucket> { return (await env()).LINGUAFLY_MEDIA; }
+export async function getAI(): Promise<Ai> { return (await env()).AI; }
+export async function getAIRateLimiter(): Promise<RateLimit | undefined> { return (await env()).AI_RATE_LIMITER; }

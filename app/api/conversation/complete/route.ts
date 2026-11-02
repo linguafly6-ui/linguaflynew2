@@ -1,5 +1,6 @@
 import { NextRequest, NextResponse } from "next/server";
 import { getEnv } from "@/lib/cf-context";
+import { getStudent, studentUserId } from "@/lib/student-auth";
 const CHAT_MODEL = "@cf/meta/llama-3.1-8b-instruct-fast";
 
 export async function POST(request: NextRequest) {
@@ -10,6 +11,7 @@ export async function POST(request: NextRequest) {
   const env = getEnv();
   const session = await env.DB.prepare("SELECT id,user_id,scenario_id FROM conversation_sessions WHERE id = ?").bind(sessionId).first();
   if (!session || (session as any).user_id!==userId || (session as any).scenario_id!==scenarioId) return NextResponse.json({error:"Sesión no encontrada"},{status:404});
+  if (String(scenarioId).startsWith("a1-speaking-")) { const student = await getStudent(request); if (Number(String(scenarioId).slice(12)) > 5 && student?.plan !== "pro") return NextResponse.json({error:"Pro required"},{status:403}); if (student && (session as any).user_id !== studentUserId(student)) return NextResponse.json({error:"Sesión no válida"},{status:403}); }
   const resultRows = await env.DB.prepare("SELECT role,content FROM conversation_messages WHERE session_id = ? ORDER BY created_at ASC").bind(sessionId).all();
   const messages = resultRows.results || [];
   if (!messages.some((message:any)=>message.role==="user")) return NextResponse.json({error:"La conversación no contiene respuestas del estudiante"},{status:400});
@@ -33,6 +35,10 @@ export async function POST(request: NextRequest) {
   const feedback=String(parsed.feedback||"Sigue practicando para mejorar.");
   const grammar_errors=Math.max(0,Number(parsed.grammar_errors)||0);
   const vocabulary_used=Math.max(0,Number(parsed.vocabulary_used)||0);
+  if (String(scenarioId).startsWith("a1-speaking-")) {
+   await env.DB.prepare("UPDATE conversation_sessions SET status='completed',updated_at=datetime('now') WHERE id=?").bind(sessionId).run();
+   return NextResponse.json({score,stars,feedback,grammar_errors,vocabulary_used});
+  }
   await env.DB.prepare("UPDATE conversation_course_progress SET status=?,score=?,stars=?,attempts=attempts+1,completed_at=CASE WHEN ?='completed' THEN datetime('now') ELSE completed_at END WHERE user_id=? AND scenario_id=?")
    .bind(score>=60?"completed":"available",score,stars,score>=60?"completed":"available",userId,scenarioId).run();
   let unlocked_scenario=null;

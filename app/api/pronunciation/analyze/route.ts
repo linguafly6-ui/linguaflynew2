@@ -1,5 +1,6 @@
 ﻿import { NextRequest, NextResponse } from "next/server";
 import { getEnv } from "@/lib/cf-context";
+import { getStudent } from "@/lib/student-auth";
 import {
   transcribeAudio,
   calculateSimilarity,
@@ -21,6 +22,8 @@ import {
  */
 export async function POST(request: NextRequest) {
   try {
+    const student = await getStudent(request);
+    if (student?.plan !== "pro") return NextResponse.json({ error: "Pro required" }, { status: 403 });
     const env = getEnv();
     const formData = await request.formData();
 

@@ -16,7 +16,7 @@ export default async function BlogPathPage({ params }: Props) {
   if (path.length === 1) {
     const category = decodeSegment(path[0]);
     const [articles, categories] = await Promise.all([getArticles(category), getCategories()]);
-    if (!categories.some((item) => item.category === category)) notFound();
+    if (!categories.some((item: Awaited<ReturnType<typeof getCategories>>[number]) => item.category === category)) notFound();
 
     return (
       <main className="mx-auto min-h-screen max-w-6xl px-6 py-12">

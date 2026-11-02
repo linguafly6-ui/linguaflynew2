@@ -1,5 +1,7 @@
 ﻿import { getDB } from "./db";
 
+export type BlogCategory = { category: string; count: number };
+
 export type ArticleSummary = {
   id: number; slug: string; title: string; description: string | null;
   excerpt: string | null; category: string; author: string | null;

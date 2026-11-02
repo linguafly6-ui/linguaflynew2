@@ -1,4 +1,4 @@
-﻿import { NextRequest, NextResponse } from "next/server";
+import { NextRequest, NextResponse } from "next/server";
 import { getEnv } from "@/lib/cf-context";
 
 const TTS_MODEL = "@cf/myshell-ai/melotts";
@@ -16,7 +16,14 @@ export async function POST(request: NextRequest) {
       return NextResponse.json({ error: "Workers AI no estÃ¡ disponible" }, { status: 503 });
     }
 
-    const supportedLanguage = language.toLowerCase().split("-")[0];
+    const languageValue = language.toLowerCase().trim();
+    const languageAliases: Record<string, string> = {
+      english: "en", spanish: "es", french: "fr", german: "de",
+      italian: "it", portuguese: "pt",
+    };
+    const supportedLanguage = languageAliases[languageValue] || languageValue.split("-")[0];
+
+    // Usar siempre MeloTTS y el mismo idioma normalizado recibido durante la sesión.
     const result = await env.AI.run(TTS_MODEL as any, {
       prompt: text.trim(),
       lang: supportedLanguage,

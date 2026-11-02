@@ -1,7 +1,6 @@
-﻿import { NextRequest, NextResponse } from "next/server";
-import { getEnv } from "@/lib/cf-context";
+import { NextRequest, NextResponse } from "next/server";
 import { generateReferenceAudio } from "@/lib/pronunciation";
-
+import { getStudent } from "@/lib/student-auth";
 
 /**
  * POST /api/pronunciation/reference
@@ -11,24 +10,31 @@ import { generateReferenceAudio } from "@/lib/pronunciation";
  */
 export async function POST(request: NextRequest) {
   try {
-    const env = getEnv();
-    const { phrase, language } = await request.json() as any;
+    const student = await getStudent(request);
+    if (student?.plan !== "pro") return NextResponse.json({ error: "Pro required" }, { status: 403 });
+    const { phrase, language } = (await request.json()) as {
+      phrase?: string;
+      language?: string;
+    };
 
-    if (!phrase) {
+    if (!phrase?.trim()) {
       return NextResponse.json({ error: "Falta phrase" }, { status: 400 });
     }
 
-    const r2Key = await generateReferenceAudio(phrase, language || "en");
+    const r2Key = await generateReferenceAudio(phrase.trim(), language || "en");
 
-    // Devolver URL pÃºblica del audio en R2
     return NextResponse.json({
       audioUrl: `/api/media/${r2Key}`,
       r2Key,
     });
   } catch (error) {
-    console.error("Reference audio error:", error);
-    return NextResponse.json(
-      { error: "Error al generar audio de referencia" },
+    console.error("Pronunciation reference error:", error);
+    return Response.json(
+      {
+        error: "Error al generar audio de referencia",
+        detail: error instanceof Error ? error.message : String(error),
+        stack: error instanceof Error ? error.stack : undefined,
+      },
       { status: 500 }
     );
   }

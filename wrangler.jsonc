@@ -2,65 +2,20 @@
   "$schema": "node_modules/wrangler/config-schema.json",
   "name": "linguaflyapp1",
   "compatibility_date": "2026-08-12",
-  "compatibility_flags": [
-    "nodejs_compat",
-    "global_fetch_strictly_public"
-  ],
+  "compatibility_flags": ["nodejs_compat", "global_fetch_strictly_public"],
   "main": ".open-next/worker.js",
-  "assets": {
-    "directory": ".open-next/assets",
-    "binding": "ASSETS"
-  },
+  "assets": {"directory": ".open-next/assets", "binding": "ASSETS"},
   "d1_databases": [
-    {
-      "binding": "DB",
-      "database_name": "blog",
-      "database_id": "476f34d4-5622-4a56-923e-c4fb571578c2"
-    },
-    {
-      "binding": "COURSE_DB",
-      "database_name": "linguafly-learning",
-      "database_id": "0982f4a2-ce92-410a-9e72-e5a34c461612"
-    }
+    {"binding":"DB","database_name":"blog","database_id":"476f34d4-5622-4a56-923e-c4fb571578c2"},
+    {"binding":"COURSE_DB","database_name":"linguafly-learning","database_id":"0982f4a2-ce92-410a-9e72-e5a34c461612"}
   ],
-  "r2_buckets": [
-    {
-      "binding": "LINGUAFLY_MEDIA",
-      "bucket_name": "linguafly-media"
-    }
-  ],
-  "ai": {
-    "binding": "AI"
+  "r2_buckets":[{"binding":"LINGUAFLY_MEDIA","bucket_name":"linguafly-media"}],
+  "ai":{"binding":"AI"},
+  "images":{"binding":"IMAGES"},
+  "services":[{"binding":"WORKER_SELF_REFERENCE","service":"linguaflyapp1","environment":"production"}],
+  "vars":{
+    "NEXT_PUBLIC_SITE_URL":"https://linguafly.app",
   },
-  "images": {
-    "binding": "IMAGES"
-  },
-  "services": [
-    {
-      "binding": "WORKER_SELF_REFERENCE",
-      "service": "linguaflyapp1",
-      "environment": "production"
-    }
-  ],
-  "vars": {
-    "NEXT_PUBLIC_SITE_URL": "https://linguafly.app"
-  },
-  "ratelimits": [
-    {
-      "name": "AI_RATE_LIMITER",
-      "namespace_id": "610154781",
-      "simple": {
-        "limit": 30,
-        "period": 60
-      }
-    }
-  ],
-  "send_email": [
-    {
-      "name": "EMAIL",
-      "allowed_sender_addresses": [
-        "noreply@linguafly.app"
-      ]
-    }
-  ]
+  "ratelimits":[{"name":"AI_RATE_LIMITER","namespace_id":"610154781","simple":{"limit":30,"period":60}}],
+  "send_email":[{"name":"EMAIL","allowed_sender_addresses":["noreply@linguafly.app"]}]
 }
