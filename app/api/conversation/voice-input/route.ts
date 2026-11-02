@@ -8,7 +8,7 @@ export async function POST(request: NextRequest) {
     const env = getEnv();
     const formData = await request.formData();
     const audioFile = formData.get("audio");
-    const language = String(formData.get("language") || "").trim();
+    
 
     if (!(audioFile instanceof File) || audioFile.size === 0) {
       return NextResponse.json({ error: "Falta el archivo de audio" }, { status: 400 });
@@ -33,18 +33,12 @@ export async function POST(request: NextRequest) {
       const key = `conversation/voice-input/${crypto.randomUUID()}`;
       await env.LINGUAFLY_MEDIA.put(key, audioBytes, {
         httpMetadata: { contentType: audioFile.type || "audio/webm" },
-        customMetadata: { language: language || "auto" },
+        customMetadata: { language: "en" },
       });
     }
 
-    const normalizedLanguage = language.toLowerCase().trim();
-    const languageAliases: Record<string, string> = {
-      english: "en", spanish: "es", french: "fr", german: "de",
-      italian: "it", portuguese: "pt",
-    };
-    const languageCode = languageAliases[normalizedLanguage] || normalizedLanguage.split("-")[0];
-    const supportedLanguages = new Set(["en", "es", "fr", "de", "it", "pt"]);
-    const transcriptionLanguage = supportedLanguages.has(languageCode) ? languageCode : "en";
+    // El alumno practica inglés incluso cuando el tutor le explica en español.
+    const transcriptionLanguage = "en";
 
     // Whisper espera el audio codificado en base64. Convertir por bloques evita
     // exceder el límite de argumentos de String.fromCharCode con audios grandes.
@@ -64,10 +58,10 @@ export async function POST(request: NextRequest) {
 
     const transcription = String((result as any)?.text || "").trim();
     if (!transcription) {
-      return NextResponse.json({ error: "No se pudo reconocer voz en el audio" }, { status: 422 });
+      return NextResponse.json({ transcription: "", noSpeech: true });
     }
 
-    return NextResponse.json({ transcription });
+    return NextResponse.json({ transcription, noSpeech: false });
   } catch (error) {
     console.error("Voice input error:", error);
     return NextResponse.json({
