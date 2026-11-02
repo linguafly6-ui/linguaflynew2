@@ -60,7 +60,11 @@ export async function POST(request: NextRequest) {
 
     return NextResponse.json({ transcription });
   } catch (error) {
-    console.error("Conversation voice input error:", error);
-    return NextResponse.json({ error: "Error al transcribir el audio" }, { status: 500 });
+    console.error("Voice input error:", error);
+    return NextResponse.json({
+      error: "Error al transcribir el audio",
+      detail: error instanceof Error ? error.message : String(error),
+      stack: error instanceof Error ? error.stack : undefined,
+    }, { status: 500 });
   }
 }
