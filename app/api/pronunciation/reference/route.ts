@@ -1,5 +1,6 @@
 import { NextRequest, NextResponse } from "next/server";
 import { generateReferenceAudio } from "@/lib/pronunciation";
+import { getStudent } from "@/lib/student-auth";
 
 /**
  * POST /api/pronunciation/reference
@@ -9,6 +10,8 @@ import { generateReferenceAudio } from "@/lib/pronunciation";
  */
 export async function POST(request: NextRequest) {
   try {
+    const student = await getStudent(request);
+    if (student?.plan !== "pro") return NextResponse.json({ error: "Pro required" }, { status: 403 });
     const { phrase, language } = (await request.json()) as {
       phrase?: string;
       language?: string;

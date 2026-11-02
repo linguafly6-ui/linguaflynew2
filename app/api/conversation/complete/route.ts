@@ -1,5 +1,6 @@
 import { NextRequest, NextResponse } from "next/server";
 import { getEnv } from "@/lib/cf-context";
+import { getStudent, studentUserId } from "@/lib/student-auth";
 const CHAT_MODEL = "@cf/meta/llama-3.1-8b-instruct-fast";
 
 export async function POST(request: NextRequest) {
@@ -10,6 +11,7 @@ export async function POST(request: NextRequest) {
   const env = getEnv();
   const session = await env.DB.prepare("SELECT id,user_id,scenario_id FROM conversation_sessions WHERE id = ?").bind(sessionId).first();
   if (!session || (session as any).user_id!==userId || (session as any).scenario_id!==scenarioId) return NextResponse.json({error:"Sesión no encontrada"},{status:404});
+  if (String(scenarioId).startsWith("a1-speaking-")) { const student = await getStudent(request); if (Number(String(scenarioId).slice(12)) > 5 && student?.plan !== "pro") return NextResponse.json({error:"Pro required"},{status:403}); if (student && (session as any).user_id !== studentUserId(student)) return NextResponse.json({error:"Sesión no válida"},{status:403}); }
   const resultRows = await env.DB.prepare("SELECT role,content FROM conversation_messages WHERE session_id = ? ORDER BY created_at ASC").bind(sessionId).all();
   const messages = resultRows.results || [];
   if (!messages.some((message:any)=>message.role==="user")) return NextResponse.json({error:"La conversación no contiene respuestas del estudiante"},{status:400});
