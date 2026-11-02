@@ -27,6 +27,10 @@ export default function VoiceConversation({ scenario, userId = "demo-user", onCo
   const [revealedText, setRevealedText] = useState("");
 
   const activeRef = useRef(false);
+  const exchangeCountRef = useRef(0);
+  const finishConversationRef = useRef<(() => Promise<void>) | null>(null);
+  const unitNumber = Number(scenario.id.replace("a1-speaking-", ""));
+  const maxExchanges = unitNumber <= 20 ? 5 : unitNumber <= 60 ? 8 : 10;
   const sessionRef = useRef<string | null>(null);
   const streamRef = useRef<MediaStream | null>(null);
   const contextRef = useRef<AudioContext | null>(null);
@@ -241,7 +245,20 @@ export default function VoiceConversation({ scenario, userId = "demo-user", onCo
       if (!response.ok || data.error) throw new Error(data.error || "No se pudo generar la respuesta");
       const reply = String(data.reply || "").trim();
       if (!reply) throw new Error("La IA no ha devuelto una respuesta");
+      exchangeCountRef.current += 1;
+      const tutorFinished = /completad[oa]/i.test(reply);
+      const reachedExchangeLimit = exchangeCountRef.current >= maxExchanges;
       setMessages((previous) => [...previous, { role: "assistant", content: reply, correction: data.correction || null }]);
+      if (tutorFinished || reachedExchangeLimit) {
+        const closingLine = tutorFinished ? reply : reply + "\\n\\n¡Excelente trabajo! Has completado la unidad.";
+        lastSpokenRef.current = closingLine;
+        setRevealedText(closingLine);
+        setPhase("speaking");
+        window.setTimeout(() => {
+          if (activeRef.current) void finishConversationRef.current?.();
+        }, 3000);
+        return;
+      }
       await speakLine(reply);
     } catch (err) {
       if (!activeRef.current) return;
@@ -279,6 +296,7 @@ export default function VoiceConversation({ scenario, userId = "demo-user", onCo
       if (!response.ok || data.error) throw new Error(data.error || "No se pudo iniciar la conversación");
       sessionRef.current = data.sessionId;
       activeRef.current = true;
+      exchangeCountRef.current = 0;
       const opening = String(data.openingLine || scenario.opening_line);
       setMessages([{ role: "assistant", content: opening }]);
       await speakLine(opening);
@@ -329,7 +347,10 @@ export default function VoiceConversation({ scenario, userId = "demo-user", onCo
     }
   };
 
+  finishConversationRef.current = finishConversation;
+
   const retry = () => {
+    exchangeCountRef.current = 0;
     releaseAudio();
     activeRef.current = false;
     sessionRef.current = null;
