@@ -60,7 +60,7 @@ export default function ExerciseCard({ exerciseId, level, unit, title, exerciseT
   return (
     <article className="rounded-xl bg-slate-50 p-4">
       <div className="flex flex-wrap items-center justify-between gap-2">
-        <p className="text-xs font-bold uppercase text-blue-700">{exerciseType.replaceAll("-", " ")}</p>
+        <p className="text-xs font-bold uppercase text-blue-700">{exerciseType.replace(/-/g, " ")}</p>
         <p className="text-xs text-slate-500">{title}</p>
       </div>
       {content.stimulus ? <p className="mt-3 whitespace-pre-wrap rounded-lg bg-white p-3 text-sm leading-6">{content.stimulus}</p> : null}
