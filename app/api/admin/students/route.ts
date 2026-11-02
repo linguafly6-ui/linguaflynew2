@@ -24,7 +24,7 @@ export async function GET(request: NextRequest) {
         SELECT user_id,MAX(updated_at) AS session_activity FROM conversation_sessions GROUP BY user_id
       )
       SELECT p.user_id,p.total_scenarios_completed,p.avg_score,p.stars_total,
-        MAX(p.progress_activity,a.session_activity) AS last_activity,
+        CASE WHEN a.session_activity IS NOT NULL AND (p.progress_activity IS NULL OR a.session_activity>p.progress_activity) THEN a.session_activity ELSE p.progress_activity END AS last_activity,
         CASE p.level_rank WHEN 3 THEN 'B1' WHEN 2 THEN 'A2' WHEN 1 THEN 'A1' ELSE 'A1' END AS current_level
       FROM progress p LEFT JOIN activity a ON a.user_id=p.user_id
       ORDER BY last_activity DESC`).all();

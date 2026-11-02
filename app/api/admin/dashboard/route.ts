@@ -27,7 +27,7 @@ export async function GET(request: NextRequest) {
         FROM conversation_sessions GROUP BY user_id
       )
       SELECT p.user_id,p.scenarios_completed,p.avg_score,
-        MAX(p.progress_activity,a.session_activity) AS last_activity,
+        CASE WHEN a.session_activity IS NOT NULL AND (p.progress_activity IS NULL OR a.session_activity>p.progress_activity) THEN a.session_activity ELSE p.progress_activity END AS last_activity,
         COALESCE(a.total_conversations,0) AS total_conversations
       FROM progress p LEFT JOIN activity a ON a.user_id=p.user_id
       ORDER BY p.scenarios_completed DESC,total_conversations DESC,last_activity DESC LIMIT 10`).all(),
