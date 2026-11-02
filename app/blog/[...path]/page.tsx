@@ -6,16 +6,17 @@ import { markdownToHtml } from "@/lib/markdown";
 export const dynamic = "force-dynamic";
 
 type Props = { params: Promise<{ path: string[] }> };
+function decodeSegment(value: string) {
+  try { return decodeURIComponent(value); } catch { return value; }
+}
 
 export default async function BlogPathPage({ params }: Props) {
-  const { path } = await params;
+  const { path = [] } = await params;
+  console.log("blog path:", path);
 
   if (path.length === 1) {
-    const category = decodeURIComponent(path[0]);
-    const [articles, categories] = await Promise.all([
-      getArticles(category),
-      getCategories(),
-    ]);
+    const category = decodeSegment(path[0]);
+    const [articles, categories] = await Promise.all([getArticles(category), getCategories()]);
     if (!categories.some((item) => item.category === category)) notFound();
 
     return (
@@ -35,8 +36,7 @@ export default async function BlogPathPage({ params }: Props) {
   }
 
   if (path.length === 2) {
-    const category = decodeURIComponent(path[0]);
-    const slug = path[1];
+    const [category, slug] = path.map(decodeSegment);
     const article = await getArticle(category, slug);
     if (!article) notFound();
 
@@ -63,12 +63,10 @@ export default async function BlogPathPage({ params }: Props) {
 }
 
 export async function generateMetadata({ params }: Props) {
-  const { path } = await params;
+  const { path = [] } = await params;
   if (path.length !== 2) return {};
-  const article = await getArticle(decodeURIComponent(path[0]), path[1]);
+  const [category, slug] = path.map(decodeSegment);
+  const article = await getArticle(category, slug);
   if (!article) return {};
-  return {
-    title: String(article.title),
-    description: String(article.excerpt || article.description || ""),
-  };
+  return { title: String(article.title), description: String(article.excerpt || article.description || "") };
 }
