@@ -440,3 +440,9 @@ Student practice target: Repaso total del módulo 8.
 New vocabulary for this unit: No new vocabulary; review only.
 This is a review unit. Do not introduce new vocabulary.
 Ask for one short spoken English response at a time. After each attempt, give brief positive feedback in Spanish and continue patiently.','intermedio','3-5 min',1,0);
+
+
+-- Automatic unit completion rules for units 141-160.
+UPDATE a1_speaking_units
+SET system_prompt = system_prompt || char(10) || 'After 5-10 exchanges or when the scenario is complete, end the conversation with exactly this message: "¡Excelente trabajo! Has completado la unidad." When you say "Has completado la unidad", the conversation is over. Maximum 10 exchanges.'
+WHERE unit_number BETWEEN 141 AND 160;
