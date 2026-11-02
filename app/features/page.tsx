@@ -29,7 +29,8 @@ export default function FeaturesPage() {
       {/* Header */}
       <div className="relative overflow-hidden bg-gradient-to-br from-blue-700 via-blue-600 to-violet-700 text-white shadow-lg">
         <div className="relative mx-auto max-w-6xl px-5 py-14 sm:px-8 sm:py-16">
-          <div className="mb-4 inline-flex items-center gap-3 rounded-full border border-white/20 bg-white/10 px-4 py-2 text-sm font-semibold text-blue-100 shadow-sm backdrop-blur"><span>✨</span><span>Tu estudio inteligente</span></div>\n          <h1 className="text-4xl font-extrabold tracking-tight sm:text-5xl">🦅 LinguaFly</h1>
+          <div className="mb-4 inline-flex items-center gap-3 rounded-full border border-white/20 bg-white/10 px-4 py-2 text-sm font-semibold text-blue-100 shadow-sm backdrop-blur"><span>✨</span><span>Tu estudio inteligente</span></div>
+          <h1 className="text-4xl font-extrabold tracking-tight sm:text-5xl">🦅 LinguaFly</h1>
           <p className="mt-3 max-w-2xl text-lg leading-relaxed text-blue-100">
             Aprende idiomas con IA: pronunciaciÃ³n, conversaciÃ³n y repeticiÃ³n adaptativa
           </p>
