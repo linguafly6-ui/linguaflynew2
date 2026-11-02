@@ -102,7 +102,7 @@ export function generateFeedback(score: number, issues: string[]): string {
 }
 
 /**
- * Genera audio con MeloTTS y lo guarda en R2 como audio/mpeg.
+ * Genera audio WAV con MeloTTS, decodifica su base64 y lo guarda en R2.
  */
 export async function generateReferenceAudio(
   phrase: string,
@@ -159,20 +159,30 @@ export async function generateReferenceAudio(
     throw new Error("MeloTTS devolvió audio vacío");
   }
 
-  const audioData =
-    audioBytes instanceof ArrayBuffer
-      ? new Uint8Array(audioBytes)
-      : audioBytes instanceof Uint8Array
-        ? audioBytes
-        : new TextEncoder().encode(audioBytes);
+  let audioData: Uint8Array;
+
+  if (typeof audioBytes === "string") {
+    // MeloTTS devuelve el WAV codificado en base64: decodificarlo a bytes.
+    const binaryString = atob(audioBytes);
+    audioData = new Uint8Array(binaryString.length);
+    for (let i = 0; i < binaryString.length; i++) {
+      audioData[i] = binaryString.charCodeAt(i);
+    }
+  } else if (audioBytes instanceof ArrayBuffer) {
+    audioData = new Uint8Array(audioBytes);
+  } else if (audioBytes instanceof Uint8Array) {
+    audioData = audioBytes;
+  } else {
+    throw new Error(`Formato de audio no reconocido: ${typeof audioBytes}`);
+  }
 
   if (audioData.byteLength === 0) {
     throw new Error("MeloTTS devolvió audio vacío");
   }
 
-  const r2Key = `pronunciation-ref/${Date.now()}-${Math.random().toString(36).slice(2)}.mp3`;
+  const r2Key = `pronunciation-ref/${Date.now()}-${Math.random().toString(36).slice(2)}.wav`;
   await env.LINGUAFLY_MEDIA.put(r2Key, audioData, {
-    httpMetadata: { contentType: "audio/mpeg" },
+    httpMetadata: { contentType: "audio/wav" },
   });
 
   return r2Key;
