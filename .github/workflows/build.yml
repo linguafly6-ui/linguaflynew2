@@ -30,3 +30,18 @@ jobs:
         env:
           CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
           CLOUDFLARE_ACCOUNT_ID: a9369cb853d78201bfa11df775767f0f
+      - name: Smoke-test production routes
+        if: github.event_name == 'push' && github.ref == 'refs/heads/main'
+        run: |
+          set -e
+          for url in \
+            https://linguafly.app/ \
+            https://linguafly.app/blog \
+            https://linguafly.app/blog/metodos \
+            https://linguafly.app/blog/metodos/mejores-apps-ingles-gratis \
+            https://linguafly.app/academia/b2/1
+          do
+            status=$(curl --silent --show-error --location --retry 5 --retry-delay 3 --retry-all-errors -o /tmp/linguafly-smoke.html -w "%{http_code}" "$url")
+            echo "$status $url"
+            test "$status" = "200"
+          done
