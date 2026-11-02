@@ -1,4 +1,4 @@
-import { NextRequest, NextResponse } from "next/server";
+﻿import { NextRequest, NextResponse } from "next/server";
 import { getEnv } from "@/lib/cf-context";
 
 const TTS_MODEL = "@cf/myshell-ai/melotts";
@@ -13,7 +13,7 @@ export async function POST(request: NextRequest) {
     }
 
     if (!env.AI?.run) {
-      return NextResponse.json({ error: "Workers AI no está disponible" }, { status: 503 });
+      return NextResponse.json({ error: "Workers AI no estÃ¡ disponible" }, { status: 503 });
     }
 
     const supportedLanguage = language.toLowerCase().split("-")[0];
@@ -24,7 +24,7 @@ export async function POST(request: NextRequest) {
 
     const encodedAudio = (result as any)?.audio;
     if (!encodedAudio || typeof encodedAudio !== "string") {
-      return NextResponse.json({ error: "MeloTTS no está disponible para generar audio" }, { status: 503 });
+      return NextResponse.json({ error: "MeloTTS no estÃ¡ disponible para generar audio" }, { status: 503 });
     }
 
     const binary = atob(encodedAudio);
@@ -33,7 +33,7 @@ export async function POST(request: NextRequest) {
       audioBytes[index] = binary.charCodeAt(index);
     }
 
-    // Guardar una copia del audio generado en R2 cuando el binding está configurado.
+    // Guardar una copia del audio generado en R2 cuando el binding estÃ¡ configurado.
     if (env.LINGUAFLY_MEDIA) {
       const key = `conversation/voice-output/${crypto.randomUUID()}.mp3`;
       await env.LINGUAFLY_MEDIA.put(key, audioBytes, {

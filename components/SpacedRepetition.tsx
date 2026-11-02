@@ -1,12 +1,12 @@
-"use client";
+﻿"use client";
 
 import { useState, useEffect, useCallback } from "react";
 
 /**
  * ============================================================
- * COMPONENTE: Repetición Espaciada Adaptativa
+ * COMPONENTE: RepeticiÃ³n Espaciada Adaptativa
  * ============================================================
- * Sistema SM-2 con generación de contenido adaptativo por IA.
+ * Sistema SM-2 con generaciÃ³n de contenido adaptativo por IA.
  * Cuando el usuario falla, la IA crea un nuevo ejemplo.
  */
 
@@ -81,7 +81,7 @@ export default function SpacedRepetition({ userId = "demo-user" }: { userId?: st
           word: currentItem.word,
           translation: currentItem.translation,
           language: currentItem.language,
-          userLevel: "A1", // Ajustar según nivel del usuario
+          userLevel: "A1", // Ajustar segÃºn nivel del usuario
         }),
       });
       const data = await res.json() as any;
@@ -91,7 +91,7 @@ export default function SpacedRepetition({ userId = "demo-user" }: { userId?: st
         return;
       }
 
-      // Si falló y hay contenido adaptativo, mostrarlo
+      // Si fallÃ³ y hay contenido adaptativo, mostrarlo
       if (!wasCorrect && data.adaptiveContent) {
         setAdaptiveContent(data.adaptiveContent);
         // Esperar a que el usuario vea el contenido antes de continuar
@@ -100,7 +100,7 @@ export default function SpacedRepetition({ userId = "demo-user" }: { userId?: st
 
       nextItem();
     } catch (err) {
-      setError("Error al procesar la revisión");
+      setError("Error al procesar la revisiÃ³n");
     } finally {
       setIsSubmitting(false);
     }
@@ -112,18 +112,18 @@ export default function SpacedRepetition({ userId = "demo-user" }: { userId?: st
     if (currentIndex < items.length - 1) {
       setCurrentIndex(currentIndex + 1);
     } else {
-      // No hay más items
+      // No hay mÃ¡s items
       setItems([]);
       setCurrentIndex(0);
     }
   };
 
-  // Pantalla de estadísticas cuando no hay items
+  // Pantalla de estadÃ­sticas cuando no hay items
   if (items.length === 0) {
     return (
       <div className="max-w-2xl mx-auto p-6 space-y-6">
         <div className="text-center">
-          <h2 className="text-2xl font-bold text-gray-900">🧠 Repetición Espaciada</h2>
+          <h2 className="text-2xl font-bold text-gray-900">ðŸ§  RepeticiÃ³n Espaciada</h2>
           <p className="text-gray-500 mt-1">Algoritmo SM-2 con contenido adaptativo generado por IA</p>
         </div>
 
@@ -143,15 +143,15 @@ export default function SpacedRepetition({ userId = "demo-user" }: { userId?: st
             </div>
             <div className="bg-white border-2 border-gray-200 rounded-xl p-6 text-center">
               <p className="text-4xl font-bold text-purple-600">{stats.accuracy}%</p>
-              <p className="text-gray-500 mt-1">Precisión</p>
+              <p className="text-gray-500 mt-1">PrecisiÃ³n</p>
             </div>
           </div>
         )}
 
         <div className="bg-green-50 rounded-xl p-8 text-center">
-          <p className="text-2xl">🎉</p>
-          <p className="text-lg font-semibold text-gray-900 mt-2">¡No tienes repasos pendientes!</p>
-          <p className="text-gray-500 mt-1">Vuelve más tarde o añade nuevas palabras.</p>
+          <p className="text-2xl">ðŸŽ‰</p>
+          <p className="text-lg font-semibold text-gray-900 mt-2">Â¡No tienes repasos pendientes!</p>
+          <p className="text-gray-500 mt-1">Vuelve mÃ¡s tarde o aÃ±ade nuevas palabras.</p>
           <button
             onClick={loadDueItems}
             className="mt-4 px-6 py-2 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition"
@@ -166,7 +166,7 @@ export default function SpacedRepetition({ userId = "demo-user" }: { userId?: st
   return (
     <div className="max-w-2xl mx-auto p-6 space-y-6">
       <div className="text-center">
-        <h2 className="text-2xl font-bold text-gray-900">🧠 Repetición Espaciada</h2>
+        <h2 className="text-2xl font-bold text-gray-900">ðŸ§  RepeticiÃ³n Espaciada</h2>
         <p className="text-gray-500 mt-1">
           Repaso {currentIndex + 1} de {items.length}
         </p>
@@ -177,7 +177,7 @@ export default function SpacedRepetition({ userId = "demo-user" }: { userId?: st
       {/* Flashcard */}
       <div className="bg-white border-2 border-gray-200 rounded-2xl p-8 min-h-[300px] flex flex-col items-center justify-center">
         <p className="text-sm text-gray-400 mb-2">
-          {currentItem.language === "en" ? "🇬🇧 Inglés" : currentItem.language === "fr" ? "🇫🇷 Francés" : "🇪🇸 Español"}
+          {currentItem.language === "en" ? "ðŸ‡¬ðŸ‡§ InglÃ©s" : currentItem.language === "fr" ? "ðŸ‡«ðŸ‡· FrancÃ©s" : "ðŸ‡ªðŸ‡¸ EspaÃ±ol"}
         </p>
         <p className="text-4xl font-bold text-gray-900 text-center">{currentItem.word}</p>
 
@@ -198,24 +198,24 @@ export default function SpacedRepetition({ userId = "demo-user" }: { userId?: st
               <p className="text-2xl text-green-600 font-semibold">{currentItem.translation}</p>
             </div>
 
-            {/* Contenido adaptativo si falló */}
+            {/* Contenido adaptativo si fallÃ³ */}
             {adaptiveContent && (
               <div className="mt-6 w-full bg-purple-50 rounded-xl p-4">
-                <p className="text-sm font-semibold text-purple-700">🤖 Nuevo ejemplo generado por IA:</p>
+                <p className="text-sm font-semibold text-purple-700">ðŸ¤– Nuevo ejemplo generado por IA:</p>
                 <p className="text-gray-800 mt-2 italic">"{adaptiveContent}"</p>
                 <button
                   onClick={nextItem}
                   className="mt-4 w-full py-2 bg-purple-600 text-white rounded-lg hover:bg-purple-700 transition"
                 >
-                  Entendido, continuar →
+                  Entendido, continuar â†’
                 </button>
               </div>
             )}
 
-            {/* Botones de calificación SM-2 */}
+            {/* Botones de calificaciÃ³n SM-2 */}
             {!adaptiveContent && (
               <div className="mt-8 w-full">
-                <p className="text-sm text-gray-500 text-center mb-3">¿Qué tal lo recordabas?</p>
+                <p className="text-sm text-gray-500 text-center mb-3">Â¿QuÃ© tal lo recordabas?</p>
                 <div className="grid grid-cols-4 gap-2">
                   <button
                     onClick={() => rateAnswer(0)}
@@ -243,7 +243,7 @@ export default function SpacedRepetition({ userId = "demo-user" }: { userId?: st
                     disabled={isSubmitting}
                     className="py-3 bg-green-100 text-green-700 rounded-lg hover:bg-green-200 transition disabled:opacity-50"
                   >
-                    Fácil
+                    FÃ¡cil
                   </button>
                 </div>
               </div>
@@ -255,7 +255,7 @@ export default function SpacedRepetition({ userId = "demo-user" }: { userId?: st
       {/* Info del item */}
       <div className="flex justify-between text-sm text-gray-400">
         <span>Repeticiones: {currentItem.repetitions}</span>
-        <span>Próximo repaso: {currentItem.interval_days} días</span>
+        <span>PrÃ³ximo repaso: {currentItem.interval_days} dÃ­as</span>
       </div>
     </div>
   );

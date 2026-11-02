@@ -1,10 +1,11 @@
-import { NextRequest, NextResponse } from "next/server";
+﻿import { NextRequest, NextResponse } from "next/server";
 import { getEnv } from "@/lib/cf-context";
 import { getDueItems, getSRStats } from "@/lib/spaced-repetition";
 
+
 /**
  * GET /api/repetition/due?userId=xxx&limit=20
- * Devuelve los items pendientes de repaso + estadísticas.
+ * Devuelve los items pendientes de repaso + estadÃ­sticas.
  */
 export async function GET(request: NextRequest) {
   try {

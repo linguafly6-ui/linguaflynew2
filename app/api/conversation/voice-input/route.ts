@@ -1,4 +1,4 @@
-import { NextRequest, NextResponse } from "next/server";
+﻿import { NextRequest, NextResponse } from "next/server";
 import { getEnv } from "@/lib/cf-context";
 
 const WHISPER_MODEL = "@cf/openai/whisper";
@@ -19,16 +19,16 @@ export async function POST(request: NextRequest) {
     }
 
     if (audioFile.size > 10 * 1024 * 1024) {
-      return NextResponse.json({ error: "El audio supera el límite de 10 MB" }, { status: 413 });
+      return NextResponse.json({ error: "El audio supera el lÃ­mite de 10 MB" }, { status: 413 });
     }
 
     if (!env.AI?.run) {
-      return NextResponse.json({ error: "Workers AI no está disponible" }, { status: 503 });
+      return NextResponse.json({ error: "Workers AI no estÃ¡ disponible" }, { status: 503 });
     }
 
     const audioBytes = new Uint8Array(await audioFile.arrayBuffer());
 
-    // Guardar el audio original en R2 cuando el binding está configurado.
+    // Guardar el audio original en R2 cuando el binding estÃ¡ configurado.
     if (env.LINGUAFLY_MEDIA) {
       const key = `conversation/voice-input/${crypto.randomUUID()}`;
       await env.LINGUAFLY_MEDIA.put(key, audioBytes, {

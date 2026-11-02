@@ -1,17 +1,17 @@
-import { getEnv } from "./cf-context";
+﻿import { getEnv } from "./cf-context";
 
 /**
  * ============================================================
- * TUTOR DE PRONUNCIACIÓN
+ * TUTOR DE PRONUNCIACIÃ“N
  * ============================================================
  * Transcribe el audio del usuario con Workers AI (Whisper),
- * compara con la frase objetivo y devuelve puntuación + feedback.
+ * compara con la frase objetivo y devuelve puntuaciÃ³n + feedback.
  */
 
 // Modelos de Workers AI disponibles en plan Free
-const STT_MODEL = "@cf/openai/whisper-tiny-en"; // speech-to-text inglés
-const STT_MODEL_MULTI = "@cf/openai/whisper"; // multilingüe si disponible
-const TTS_MODEL = "@cf/myshell-ai/melotts"; // text-to-speech multilingüe
+const STT_MODEL = "@cf/openai/whisper-tiny-en"; // speech-to-text inglÃ©s
+const STT_MODEL_MULTI = "@cf/openai/whisper"; // multilingÃ¼e si disponible
+const TTS_MODEL = "@cf/myshell-ai/melotts"; // text-to-speech multilingÃ¼e
 
 export interface PronunciationResult {
   score: number; // 0-100
@@ -41,7 +41,7 @@ export async function transcribeAudio(
 
 /**
  * Calcula similitud entre dos strings usando distancia de Levenshtein
- * normalizada. No requiere librerías externas.
+ * normalizada. No requiere librerÃ­as externas.
  */
 export function calculateSimilarity(a: string, b: string): number {
   const s1 = a.toLowerCase().trim().replace(/[.,!?;:]/g, "");
@@ -76,7 +76,7 @@ export function calculateSimilarity(a: string, b: string): number {
 }
 
 /**
- * Detecta problemas fonéticos específicos comparando palabras.
+ * Detecta problemas fonÃ©ticos especÃ­ficos comparando palabras.
  */
 export function detectPhoneticIssues(
   target: string,
@@ -94,7 +94,7 @@ export function detectPhoneticIssues(
     issues.push(`Palabras no detectadas: ${missing.join(", ")}`);
   }
 
-  // Palabras extrañas
+  // Palabras extraÃ±as
   const extra = transcribedWords.filter(
     (w) => !targetWords.some((tw) => tw.includes(w) || w.includes(tw))
   );
@@ -106,17 +106,17 @@ export function detectPhoneticIssues(
 }
 
 /**
- * Genera feedback textual según la puntuación.
+ * Genera feedback textual segÃºn la puntuaciÃ³n.
  */
 export function generateFeedback(score: number, issues: string[]): string {
   if (score >= 90) {
-    return "¡Excelente pronunciación! Suena muy natural.";
+    return "Â¡Excelente pronunciaciÃ³n! Suena muy natural.";
   } else if (score >= 75) {
-    return "Muy bien. Pequeños detalles a pulir: " + issues.join("; ");
+    return "Muy bien. PequeÃ±os detalles a pulir: " + issues.join("; ");
   } else if (score >= 50) {
     return "Vas por buen camino. Practica las palabras que no se detectaron claramente.";
   } else {
-    return "Sigue intentándolo. Escucha la frase de referencia y repite despacio, palabra por palabra.";
+    return "Sigue intentÃ¡ndolo. Escucha la frase de referencia y repite despacio, palabra por palabra.";
   }
 }
 

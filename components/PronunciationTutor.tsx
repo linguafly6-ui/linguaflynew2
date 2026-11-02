@@ -1,13 +1,13 @@
-"use client";
+﻿"use client";
 
 import { useState, useRef, useEffect } from "react";
 
 /**
  * ============================================================
- * COMPONENTE: Tutor de Pronunciación
+ * COMPONENTE: Tutor de PronunciaciÃ³n
  * ============================================================
- * Graba audio del usuario, lo envía a Workers AI Whisper,
- * y muestra puntuación + feedback.
+ * Graba audio del usuario, lo envÃ­a a Workers AI Whisper,
+ * y muestra puntuaciÃ³n + feedback.
  */
 
 interface Phrase {
@@ -100,7 +100,7 @@ export default function PronunciationTutor({ userId = "demo-user" }: { userId?: 
       mediaRecorderRef.current = recorder;
       setIsRecording(true);
     } catch (err) {
-      setError("No se pudo acceder al micrófono. Permite el acceso en tu navegador.");
+      setError("No se pudo acceder al micrÃ³fono. Permite el acceso en tu navegador.");
     }
   };
 
@@ -150,8 +150,8 @@ export default function PronunciationTutor({ userId = "demo-user" }: { userId?: 
   return (
     <div className="max-w-2xl mx-auto p-6 space-y-6">
       <div className="text-center">
-        <h2 className="text-2xl font-bold text-gray-900">🎙️ Tutor de Pronunciación</h2>
-        <p className="text-gray-500 mt-1">Grábate diciendo la frase y recibe feedback instantáneo</p>
+        <h2 className="text-2xl font-bold text-gray-900">ðŸŽ™ï¸ Tutor de PronunciaciÃ³n</h2>
+        <p className="text-gray-500 mt-1">GrÃ¡bate diciendo la frase y recibe feedback instantÃ¡neo</p>
       </div>
 
       {/* Selectores */}
@@ -161,9 +161,9 @@ export default function PronunciationTutor({ userId = "demo-user" }: { userId?: 
           onChange={(e) => setLanguage(e.target.value)}
           className="px-4 py-2 rounded-lg border border-gray-300"
         >
-          <option value="en">🇬🇧 Inglés</option>
-          <option value="fr">🇫🇷 Francés</option>
-          <option value="es">🇪🇸 Español</option>
+          <option value="en">ðŸ‡¬ðŸ‡§ InglÃ©s</option>
+          <option value="fr">ðŸ‡«ðŸ‡· FrancÃ©s</option>
+          <option value="es">ðŸ‡ªðŸ‡¸ EspaÃ±ol</option>
         </select>
         <select
           value={level}
@@ -185,12 +185,12 @@ export default function PronunciationTutor({ userId = "demo-user" }: { userId?: 
             onClick={playReference}
             className="mt-4 px-4 py-2 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition"
           >
-            🔊 Escuchar referencia
+            ðŸ”Š Escuchar referencia
           </button>
         </div>
       )}
 
-      {/* Botón de grabación */}
+      {/* BotÃ³n de grabaciÃ³n */}
       <div className="flex flex-col items-center gap-4">
         {!isRecording ? (
           <button
@@ -198,14 +198,14 @@ export default function PronunciationTutor({ userId = "demo-user" }: { userId?: 
             disabled={isAnalyzing}
             className="w-20 h-20 rounded-full bg-red-500 text-white text-3xl flex items-center justify-center hover:bg-red-600 transition disabled:opacity-50"
           >
-            🎤
+            ðŸŽ¤
           </button>
         ) : (
           <button
             onClick={stopRecording}
             className="w-20 h-20 rounded-full bg-gray-700 text-white text-3xl flex items-center justify-center hover:bg-gray-800 transition animate-pulse"
           >
-            ⏹
+            â¹
           </button>
         )}
         <p className="text-sm text-gray-500">
@@ -222,7 +222,7 @@ export default function PronunciationTutor({ userId = "demo-user" }: { userId?: 
       {result && (
         <div className="bg-white border-2 border-gray-200 rounded-xl p-6 space-y-4">
           <div className="flex items-center justify-between">
-            <span className="text-lg font-semibold">Puntuación</span>
+            <span className="text-lg font-semibold">PuntuaciÃ³n</span>
             <span
               className={`text-4xl font-bold ${
                 result.score >= 75 ? "text-green-600" : result.score >= 50 ? "text-yellow-600" : "text-red-600"
@@ -267,7 +267,7 @@ export default function PronunciationTutor({ userId = "demo-user" }: { userId?: 
             onClick={nextPhrase}
             className="w-full py-3 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition"
           >
-            Siguiente frase →
+            Siguiente frase â†’
           </button>
         </div>
       )}

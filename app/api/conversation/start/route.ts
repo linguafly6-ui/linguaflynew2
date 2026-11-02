@@ -1,9 +1,10 @@
-import { NextRequest, NextResponse } from "next/server";
+﻿import { NextRequest, NextResponse } from "next/server";
 import { getEnv } from "@/lib/cf-context";
+
 
 /**
  * POST /api/conversation/start
- * Inicia una nueva sesión de conversación con un escenario.
+ * Inicia una nueva sesiÃ³n de conversaciÃ³n con un escenario.
  *
  * Body JSON: { scenarioId: string, userId: string }
  * Devuelve: { sessionId, openingLine, scenario }
@@ -26,14 +27,14 @@ export async function POST(request: NextRequest) {
       return NextResponse.json({ error: "Escenario no encontrado" }, { status: 404 });
     }
 
-    // Crear la sesión
+    // Crear la sesiÃ³n
     const sessionId = `conv-${Date.now()}-${Math.random().toString(36).slice(2, 8)}`;
     await env.DB.prepare(
       `INSERT INTO conversation_sessions (id, user_id, scenario_id, language, status, created_at, updated_at)
        VALUES (?, ?, ?, ?, 'active', datetime('now'), datetime('now'))`
     ).bind(sessionId, userId, scenarioId, (scenario as any).language).run();
 
-    // Guardar la línea de apertura como primer mensaje del asistente
+    // Guardar la lÃ­nea de apertura como primer mensaje del asistente
     const openingId = `msg-${Date.now()}-${Math.random().toString(36).slice(2, 8)}`;
     await env.DB.prepare(
       `INSERT INTO conversation_messages (id, session_id, role, content, created_at)
@@ -47,6 +48,6 @@ export async function POST(request: NextRequest) {
     });
   } catch (error) {
     console.error("Conversation start error:", error);
-    return NextResponse.json({ error: "Error al iniciar conversación" }, { status: 500 });
+    return NextResponse.json({ error: "Error al iniciar conversaciÃ³n" }, { status: 500 });
   }
 }

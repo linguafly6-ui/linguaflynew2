@@ -1,9 +1,10 @@
-import { NextRequest, NextResponse } from "next/server";
+﻿import { NextRequest, NextResponse } from "next/server";
 import { getEnv } from "@/lib/cf-context";
+
 
 /**
  * GET /api/pronunciation/phrases?language=en&level=A1
- * Devuelve frases para practicar pronunciación.
+ * Devuelve frases para practicar pronunciaciÃ³n.
  */
 export async function GET(request: NextRequest) {
   try {

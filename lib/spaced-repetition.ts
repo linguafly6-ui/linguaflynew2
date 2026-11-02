@@ -1,14 +1,14 @@
-import { getEnv } from "./cf-context";
+﻿import { getEnv } from "./cf-context";
 
 /**
  * ============================================================
- * REPETICIÓN ESPACIADA ADAPTATIVA (SM-2 + IA)
+ * REPETICIÃ“N ESPACIADA ADAPTATIVA (SM-2 + IA)
  * ============================================================
- * Implementa el algoritmo SM-2 (como Anki) pero con generación
+ * Implementa el algoritmo SM-2 (como Anki) pero con generaciÃ³n
  * de contenido adaptativo mediante Workers AI.
  */
 
-const CHAT_MODEL = "@cf/meta/llama-3.1-8b-instruct";
+const CHAT_MODEL = "@cf/meta/llama-3.1-8b-instruct-fast";
 
 export interface SRItem {
   id: string;
@@ -34,11 +34,11 @@ export interface ReviewResult {
 }
 
 /**
- * Algoritmo SM-2: calcula el próximo intervalo de revisión.
+ * Algoritmo SM-2: calcula el prÃ³ximo intervalo de revisiÃ³n.
  * @param quality 0-5 (0-2: incorrecto, 3-5: correcto)
- * @param repetitions número de repeticiones correctas consecutivas
- * @param ease_factor factor de facilidad (mínimo 1.3)
- * @param interval intervalo actual en días
+ * @param repetitions nÃºmero de repeticiones correctas consecutivas
+ * @param ease_factor factor de facilidad (mÃ­nimo 1.3)
+ * @param interval intervalo actual en dÃ­as
  */
 export function calculateSM2(
   quality: number,
@@ -94,7 +94,7 @@ export async function getDueItems(
 }
 
 /**
- * Procesa el resultado de una revisión y actualiza el item en D1.
+ * Procesa el resultado de una revisiÃ³n y actualiza el item en D1.
  */
 export async function processReview(
   db: D1Database,
@@ -138,7 +138,7 @@ export async function processReview(
     result.item_id
   ).run();
 
-  // Guardar la revisión
+  // Guardar la revisiÃ³n
   await db.prepare(
     `INSERT INTO sr_reviews (id, user_id, item_id, rating, was_correct, ai_generated_content, created_at)
      VALUES (?, ?, ?, ?, ?, ?, datetime('now'))`
@@ -154,7 +154,7 @@ export async function processReview(
 
 /**
  * Genera un nuevo ejemplo/contexto para una palabra usando IA.
- * Esto hace que el repaso no sea estático: cada vez que el usuario
+ * Esto hace que el repaso no sea estÃ¡tico: cada vez que el usuario
  * falla, la IA crea un nuevo ejemplo para reforzar el aprendizaje.
  */
 export async function generateAdaptiveContent(
@@ -165,15 +165,15 @@ export async function generateAdaptiveContent(
 ): Promise<string> {
   const env = getEnv();
 
-  const langName = language === "en" ? "inglés" : language === "fr" ? "francés" : "español";
+  const langName = language === "en" ? "inglÃ©s" : language === "fr" ? "francÃ©s" : "espaÃ±ol";
 
   const prompt = `Genera UNA frase de ejemplo en ${langName} usando la palabra "${word}" (significado: "${translation}").
 La frase debe ser apta para nivel ${userLevel}.
-Devuelve SOLO la frase, sin explicaciones ni traducción.`;
+Devuelve SOLO la frase, sin explicaciones ni traducciÃ³n.`;
 
   const response = await env.AI.run(CHAT_MODEL as any, {
     messages: [
-      { role: "system", content: "Eres un asistente que genera frases de ejemplo para aprender idiomas. Responde SOLO con la frase, nada más." },
+      { role: "system", content: "Eres un asistente que genera frases de ejemplo para aprender idiomas. Responde SOLO con la frase, nada mÃ¡s." },
       { role: "user", content: prompt },
     ],
     max_tokens: 60,
@@ -184,7 +184,7 @@ Devuelve SOLO la frase, sin explicaciones ni traducción.`;
 }
 
 /**
- * Añade una nueva palabra al sistema de repetición espaciada.
+ * AÃ±ade una nueva palabra al sistema de repeticiÃ³n espaciada.
  */
 export async function addSRItem(
   db: D1Database,
@@ -205,7 +205,7 @@ export async function addSRItem(
 }
 
 /**
- * Obtiene estadísticas de progreso del usuario.
+ * Obtiene estadÃ­sticas de progreso del usuario.
  */
 export async function getSRStats(db: D1Database, userId: string) {
   const total = await db.prepare(
@@ -231,8 +231,8 @@ export async function getSRStats(db: D1Database, userId: string) {
     totalItems: total?.count || 0,
     dueToday: due?.count || 0,
     mastered: mastered?.count || 0,
-    accuracy: accuracy?.total > 0
-      ? Math.round(((accuracy.correct / accuracy.total) * 100))
+    accuracy: (accuracy?.total || 0) > 0
+      ? Math.round(((accuracy!.correct / accuracy!.total) * 100))
       : 0,
   };
 }

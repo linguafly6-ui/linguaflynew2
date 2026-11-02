@@ -1,4 +1,4 @@
-import { NextRequest, NextResponse } from "next/server";
+﻿import { NextRequest, NextResponse } from "next/server";
 import { getEnv } from "@/lib/cf-context";
 import {
   transcribeAudio,
@@ -7,10 +7,11 @@ import {
   generateFeedback,
 } from "@/lib/pronunciation";
 
+
 /**
  * POST /api/pronunciation/analyze
  * Recibe audio grabado por el usuario y la frase objetivo.
- * Devuelve puntuación, transcripción y feedback.
+ * Devuelve puntuaciÃ³n, transcripciÃ³n y feedback.
  *
  * Body (multipart/form-data):
  *   - audio: Blob (WebM/WAV)
@@ -44,7 +45,7 @@ export async function POST(request: NextRequest) {
       return NextResponse.json({
         score: 0,
         transcription: "",
-        feedback: "No se pudo detectar el audio. Intenta hablar más cerca del micrófono.",
+        feedback: "No se pudo detectar el audio. Intenta hablar mÃ¡s cerca del micrÃ³fono.",
         phoneticIssues: [],
       });
     }
@@ -52,13 +53,13 @@ export async function POST(request: NextRequest) {
     // 2. Calcular similitud
     const score = calculateSimilarity(transcription, targetPhrase);
 
-    // 3. Detectar problemas fonéticos
+    // 3. Detectar problemas fonÃ©ticos
     const issues = detectPhoneticIssues(targetPhrase, transcription);
 
     // 4. Generar feedback
     const feedback = generateFeedback(score, issues);
 
-    // 5. Guardar la sesión en D1
+    // 5. Guardar la sesiÃ³n en D1
     const sessionId = `pron-${Date.now()}-${Math.random().toString(36).slice(2, 8)}`;
     await env.DB.prepare(
       `INSERT INTO pronunciation_sessions (id, user_id, phrase_id, target_phrase, target_language, transcription, similarity_score, feedback, created_at)
@@ -84,7 +85,7 @@ export async function POST(request: NextRequest) {
   } catch (error) {
     console.error("Pronunciation analyze error:", error);
     return NextResponse.json(
-      { error: "Error al analizar la pronunciación" },
+      { error: "Error al analizar la pronunciaciÃ³n" },
       { status: 500 }
     );
   }

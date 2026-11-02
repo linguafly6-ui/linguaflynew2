@@ -1,4 +1,4 @@
-import { getDB } from "./db";
+﻿import { getDB } from "./db";
 
 export type ArticleSummary = {
   id: number; slug: string; title: string; description: string | null;

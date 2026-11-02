@@ -1,4 +1,4 @@
-import { NextRequest, NextResponse } from "next/server";
+﻿import { NextRequest, NextResponse } from "next/server";
 import { getEnv } from "@/lib/cf-context";
 import {
   processReview,
@@ -6,9 +6,10 @@ import {
   type ReviewResult,
 } from "@/lib/spaced-repetition";
 
+
 /**
  * POST /api/repetition/review
- * Registra el resultado de una revisión y genera contenido adaptativo si falló.
+ * Registra el resultado de una revisiÃ³n y genera contenido adaptativo si fallÃ³.
  *
  * Body JSON: {
  *   itemId: string,
@@ -38,10 +39,10 @@ export async function POST(request: NextRequest) {
     } = body;
 
     if (!itemId || rating === undefined || wasCorrect === undefined) {
-      return NextResponse.json({ error: "Faltan parámetros" }, { status: 400 });
+      return NextResponse.json({ error: "Faltan parÃ¡metros" }, { status: 400 });
     }
 
-    // Si el usuario falló, generar un nuevo ejemplo con IA
+    // Si el usuario fallÃ³, generar un nuevo ejemplo con IA
     let aiContent: string | null = null;
     if (!wasCorrect) {
       aiContent = await generateAdaptiveContent(
@@ -52,7 +53,7 @@ export async function POST(request: NextRequest) {
       );
     }
 
-    // Procesar la revisión (SM-2 + guardar en D1)
+    // Procesar la revisiÃ³n (SM-2 + guardar en D1)
     const result: ReviewResult = {
       item_id: itemId,
       rating,
@@ -69,6 +70,6 @@ export async function POST(request: NextRequest) {
     });
   } catch (error) {
     console.error("SR review error:", error);
-    return NextResponse.json({ error: "Error al procesar revisión" }, { status: 500 });
+    return NextResponse.json({ error: "Error al procesar revisiÃ³n" }, { status: 500 });
   }
 }

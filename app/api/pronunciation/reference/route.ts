@@ -1,6 +1,7 @@
-import { NextRequest, NextResponse } from "next/server";
+﻿import { NextRequest, NextResponse } from "next/server";
 import { getEnv } from "@/lib/cf-context";
 import { generateReferenceAudio } from "@/lib/pronunciation";
+
 
 /**
  * POST /api/pronunciation/reference
@@ -19,7 +20,7 @@ export async function POST(request: NextRequest) {
 
     const r2Key = await generateReferenceAudio(phrase, language || "en");
 
-    // Devolver URL pública del audio en R2
+    // Devolver URL pÃºblica del audio en R2
     return NextResponse.json({
       audioUrl: `/api/media/${r2Key}`,
       r2Key,

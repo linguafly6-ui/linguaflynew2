@@ -1,10 +1,11 @@
-import { NextRequest, NextResponse } from "next/server";
+﻿import { NextRequest, NextResponse } from "next/server";
 import { getEnv } from "@/lib/cf-context";
 import { addSRItem } from "@/lib/spaced-repetition";
 
+
 /**
  * POST /api/repetition/add
- * Añade una nueva palabra al sistema de repetición espaciada.
+ * AÃ±ade una nueva palabra al sistema de repeticiÃ³n espaciada.
  *
  * Body JSON: {
  *   userId: string,
@@ -35,6 +36,6 @@ export async function POST(request: NextRequest) {
     return NextResponse.json({ success: true, itemId: id });
   } catch (error) {
     console.error("SR add error:", error);
-    return NextResponse.json({ error: "Error al añadir palabra" }, { status: 500 });
+    return NextResponse.json({ error: "Error al aÃ±adir palabra" }, { status: 500 });
   }
 }

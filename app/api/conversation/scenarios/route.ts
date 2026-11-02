@@ -1,9 +1,10 @@
-import { NextRequest, NextResponse } from "next/server";
+﻿import { NextRequest, NextResponse } from "next/server";
 import { getEnv } from "@/lib/cf-context";
+
 
 /**
  * GET /api/conversation/scenarios?language=en&level=A1
- * Lista los escenarios de conversación disponibles.
+ * Lista los escenarios de conversaciÃ³n disponibles.
  */
 export async function GET(request: NextRequest) {
   try {
@@ -12,7 +13,7 @@ export async function GET(request: NextRequest) {
     const language = searchParams.get("language");
     const level = searchParams.get("level");
 
-    let query = "SELECT id, title, description, language, level, setting FROM conversation_scenarios";
+    let query = "SELECT id, title, description, language, level, setting, persona_prompt, opening_line FROM conversation_scenarios";
     let params: string[] = [];
 
     if (language && level) {

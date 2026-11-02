@@ -1,4 +1,4 @@
-"use client";
+﻿"use client";
 
 import { useState, useRef, useEffect } from "react";
 
@@ -43,7 +43,7 @@ export default function ConversationPractice({ userId = "demo-user" }: { userId?
   useEffect(() => {
     fetch("/api/conversation/scenarios")
       .then((r) => r.json())
-      .then((data) => setScenarios(data.scenarios || []))
+      .then((data: any) => setScenarios(data.scenarios || []))
       .catch(() => setError("Error al cargar escenarios"));
   }, []);
 
@@ -96,7 +96,7 @@ export default function ConversationPractice({ userId = "demo-user" }: { userId?
       if (!response.ok) throw new Error("TTS no disponible");
 
       const audioBlob = await response.blob();
-      if (!audioBlob.size) throw new Error("Audio vacío");
+      if (!audioBlob.size) throw new Error("Audio vacÃ­o");
 
       if (audioUrlRef.current) URL.revokeObjectURL(audioUrlRef.current);
       const audioUrl = URL.createObjectURL(audioBlob);
@@ -106,7 +106,7 @@ export default function ConversationPractice({ userId = "demo-user" }: { userId?
       audioRef.current = audio;
       await audio.play();
     } catch (voiceError) {
-      // Fallback del navegador si MeloTTS no está configurado o falla la reproducción.
+      // Fallback del navegador si MeloTTS no estÃ¡ configurado o falla la reproducciÃ³n.
       playBrowserFallback(text, language);
     } finally {
       setIsAudioLoading(false);
@@ -164,7 +164,7 @@ export default function ConversationPractice({ userId = "demo-user" }: { userId?
         });
         audioChunksRef.current = [];
         if (!audioBlob.size) {
-          setError("La grabación está vacía. Inténtalo de nuevo.");
+          setError("La grabaciÃ³n estÃ¡ vacÃ­a. IntÃ©ntalo de nuevo.");
           return;
         }
 
@@ -178,7 +178,7 @@ export default function ConversationPractice({ userId = "demo-user" }: { userId?
             method: "POST",
             body: formData,
           });
-          const data = await response.json() as any;
+          const data = await response.json() as any as any;
 
           if (!response.ok || data.error) {
             throw new Error(data.error || "No se pudo transcribir el audio");
@@ -194,7 +194,7 @@ export default function ConversationPractice({ userId = "demo-user" }: { userId?
       recorder.start();
       setIsRecording(true);
     } catch (voiceError) {
-      setError("No se pudo acceder al micrófono. Revisa los permisos del navegador.");
+      setError("No se pudo acceder al micrÃ³fono. Revisa los permisos del navegador.");
     }
   };
 
@@ -207,7 +207,7 @@ export default function ConversationPractice({ userId = "demo-user" }: { userId?
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({ scenarioId: scenario.id, userId }),
       });
-      const data = await res.json() as any;
+      const data = await res.json() as any as any;
 
       if (data.error) {
         setError(data.error);
@@ -219,7 +219,7 @@ export default function ConversationPractice({ userId = "demo-user" }: { userId?
       setMessages([{ role: "assistant", content: data.openingLine }]);
       void speakMessage(data.openingLine, scenario.language);
     } catch (err) {
-      setError("Error al iniciar la conversación");
+      setError("Error al iniciar la conversaciÃ³n");
     } finally {
       setIsLoading(false);
     }
@@ -246,7 +246,7 @@ export default function ConversationPractice({ userId = "demo-user" }: { userId?
           level: selectedScenario.level,
         }),
       });
-      const data = await res.json() as any;
+      const data = await res.json() as any as any;
 
       if (data.error) {
         setError(data.error);
@@ -289,7 +289,7 @@ export default function ConversationPractice({ userId = "demo-user" }: { userId?
           level: selectedScenario.level,
         }),
       });
-      const data = await res.json() as any;
+      const data = await res.json() as any as any;
 
       if (!res.ok || data.error) {
         setError(data.error || "No se pudo generar la pista");
@@ -322,7 +322,7 @@ export default function ConversationPractice({ userId = "demo-user" }: { userId?
     return (
       <div className="max-w-2xl mx-auto p-6 space-y-6">
         <div className="text-center">
-          <h2 className="text-2xl font-bold text-gray-900">💬 Conversación Simulada</h2>
+          <h2 className="text-2xl font-bold text-gray-900">ðŸ’¬ ConversaciÃ³n Simulada</h2>
           <p className="text-gray-500 mt-1">Practica con un personaje IA que te corrige en tiempo real</p>
         </div>
 
@@ -340,11 +340,11 @@ export default function ConversationPractice({ userId = "demo-user" }: { userId?
                 <div>
                   <h3 className="text-lg font-semibold text-gray-900">{scenario.title}</h3>
                   <p className="text-gray-500 mt-1">{scenario.description}</p>
-                  <p className="text-sm text-gray-400 mt-2">📍 {scenario.setting}</p>
+                  <p className="text-sm text-gray-400 mt-2">ðŸ“ {scenario.setting}</p>
                 </div>
                 <div className="flex flex-col items-end gap-1">
                   <span className="text-2xl">
-                    {scenario.language === "en" ? "🇬🇧" : scenario.language === "fr" ? "🇫🇷" : "🇪🇸"}
+                    {scenario.language === "en" ? "ðŸ‡¬ðŸ‡§" : scenario.language === "fr" ? "ðŸ‡«ðŸ‡·" : "ðŸ‡ªðŸ‡¸"}
                   </span>
                   <span className="text-xs bg-gray-100 px-2 py-1 rounded">{scenario.level}</span>
                 </div>
@@ -361,13 +361,13 @@ export default function ConversationPractice({ userId = "demo-user" }: { userId?
       <div className="flex items-center justify-between mb-4">
         <div>
           <h2 className="text-lg font-bold text-gray-900">{selectedScenario.title}</h2>
-          <p className="text-sm text-gray-500">📍 {selectedScenario.setting}</p>
+          <p className="text-sm text-gray-500">ðŸ“ {selectedScenario.setting}</p>
         </div>
         <button
           onClick={reset}
           className="px-3 py-1.5 text-sm bg-gray-100 rounded-lg hover:bg-gray-200 transition"
         >
-          ← Cambiar escenario
+          â† Cambiar escenario
         </button>
       </div>
 
@@ -382,7 +382,7 @@ export default function ConversationPractice({ userId = "demo-user" }: { userId?
               <p>{msg.content}</p>
               {msg.correction && (
                 <div className="mt-2 pt-2 border-t border-gray-300/50">
-                  <p className="text-xs font-semibold text-yellow-600">📝 Corrección</p>
+                  <p className="text-xs font-semibold text-yellow-600">ðŸ“ CorrecciÃ³n</p>
                   <p className="text-sm text-gray-700 mt-1">{msg.correction}</p>
                 </div>
               )}
@@ -403,7 +403,7 @@ export default function ConversationPractice({ userId = "demo-user" }: { userId?
         <div className="mb-3 rounded-xl border border-yellow-300 bg-yellow-50 p-4 text-yellow-900 shadow-sm">
           <div className="flex items-start justify-between gap-3">
             <div>
-              <p className="text-sm font-semibold">💡 Pista para responder</p>
+              <p className="text-sm font-semibold">ðŸ’¡ Pista para responder</p>
               <p className="mt-1">{hint}</p>
             </div>
             <button
@@ -412,7 +412,7 @@ export default function ConversationPractice({ userId = "demo-user" }: { userId?
               aria-label="Cerrar pista"
               className="rounded-lg px-2 py-1 text-yellow-800 hover:bg-yellow-100 transition"
             >
-              ✕
+              âœ•
             </button>
           </div>
         </div>
@@ -421,7 +421,7 @@ export default function ConversationPractice({ userId = "demo-user" }: { userId?
       {isRecording && (
         <div className="mb-2 flex items-center gap-2 text-sm font-medium text-red-600" aria-live="polite">
           <span className="h-2.5 w-2.5 rounded-full bg-red-600 animate-pulse" />
-          Grabando... pulsa el micrófono para detener
+          Grabando... pulsa el micrÃ³fono para detener
         </div>
       )}
       {isVoiceProcessing && (
@@ -448,13 +448,13 @@ export default function ConversationPractice({ userId = "demo-user" }: { userId?
           type="button"
           onClick={toggleRecording}
           disabled={isLoading || isVoiceProcessing}
-          aria-label={isRecording ? "Detener grabación" : "Grabar respuesta"}
-          title={isRecording ? "Detener grabación" : "Grabar respuesta"}
+          aria-label={isRecording ? "Detener grabaciÃ³n" : "Grabar respuesta"}
+          title={isRecording ? "Detener grabaciÃ³n" : "Grabar respuesta"}
           className={`px-4 py-3 rounded-xl border transition disabled:opacity-50 ${
             isRecording ? "border-red-500 bg-red-50 text-red-700 animate-pulse" : "border-gray-300 bg-white hover:bg-gray-50"
           }`}
         >
-          🎤
+          ðŸŽ¤
         </button>
         <button
           onClick={sendMessage}
@@ -471,7 +471,7 @@ export default function ConversationPractice({ userId = "demo-user" }: { userId?
           disabled={isLoading || isHintLoading}
           className="self-start px-4 py-2 bg-yellow-100 text-yellow-800 rounded-lg hover:bg-yellow-200 transition disabled:opacity-50"
         >
-          {isHintLoading ? "Generando pista..." : "💡 Pista"}
+          {isHintLoading ? "Generando pista..." : "ðŸ’¡ Pista"}
         </button>
         <button
           type="button"
@@ -479,7 +479,7 @@ export default function ConversationPractice({ userId = "demo-user" }: { userId?
           disabled={!lastSpokenMessage || isAudioLoading}
           className="px-4 py-2 bg-gray-100 text-gray-700 rounded-lg hover:bg-gray-200 transition disabled:opacity-50"
         >
-          🔊 Volver a escuchar
+          ðŸ”Š Volver a escuchar
         </button>
       </div>
     </div>
