@@ -43,8 +43,8 @@ export default function VoiceConversation({ scenario, userId = "demo-user", onCo
   const lastVoiceAtRef = useRef(0);
 
   const VOICE_THRESHOLD = 0.025;
-  const SILENCE_DURATION = 2500;
-  const MIN_SPEECH_DURATION = 500;
+  const SILENCE_DURATION = 1500;
+  const MIN_SPEECH_DURATION = 200;
   const hintRequestedRef = useRef(false);
   const discardRecordingRef = useRef(false);
   const lastSpokenRef = useRef("");
