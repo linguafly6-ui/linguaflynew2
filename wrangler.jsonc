@@ -2,7 +2,10 @@
   "$schema": "node_modules/wrangler/config-schema.json",
   "name": "linguaflyapp1",
   "compatibility_date": "2026-08-12",
-  "compatibility_flags": ["nodejs_compat", "global_fetch_strictly_public"],
+  "compatibility_flags": [
+    "nodejs_compat",
+    "global_fetch_strictly_public"
+  ],
   "main": ".open-next/worker.js",
   "assets": {
     "directory": ".open-next/assets",
@@ -26,8 +29,12 @@
       "bucket_name": "linguafly-media"
     }
   ],
-  "ai": { "binding": "AI" },
-  "images": { "binding": "IMAGES" },
+  "ai": {
+    "binding": "AI"
+  },
+  "images": {
+    "binding": "IMAGES"
+  },
   "services": [
     {
       "binding": "WORKER_SELF_REFERENCE",
@@ -37,5 +44,23 @@
   ],
   "vars": {
     "NEXT_PUBLIC_SITE_URL": "https://linguafly.app"
-  }
+  },
+  "ratelimits": [
+    {
+      "name": "AI_RATE_LIMITER",
+      "namespace_id": "610154781",
+      "simple": {
+        "limit": 30,
+        "period": 60
+      }
+    }
+  ],
+  "send_email": [
+    {
+      "name": "EMAIL",
+      "allowed_sender_addresses": [
+        "noreply@linguafly.app"
+      ]
+    }
+  ]
 }
