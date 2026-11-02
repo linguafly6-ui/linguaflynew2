@@ -20,7 +20,7 @@ type Props = {
 
 type AttemptResult = {
   isCorrect?: boolean;
-  feedback?: { message?: string };
+  feedback?: { message?: string; explanation?: string };
   error?: string;
 };
 
@@ -99,6 +99,7 @@ export default function ExerciseCard({ exerciseId, level, unit, title, exerciseT
         {result?.isCorrect !== undefined ? (
           <p role="status" className={result.isCorrect ? "text-sm font-semibold text-green-700" : "text-sm font-semibold text-amber-700"}>
             {result.feedback?.message || (result.isCorrect ? "¡Correcto!" : "Inténtalo de nuevo.")}
+            {result.feedback?.explanation ? <span className="mt-1 block font-normal">{result.feedback.explanation}</span> : null}
           </p>
         ) : null}
         {result?.error ? <p role="alert" className="text-sm text-red-700">{result.error}</p> : null}
