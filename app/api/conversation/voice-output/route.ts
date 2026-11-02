@@ -22,14 +22,13 @@ export async function POST(request: NextRequest) {
       italian: "it", portuguese: "pt",
     };
     const supportedLanguage = languageAliases[languageValue] || languageValue.split("-")[0];
-    const parsedUnitNumber = Number(unitNumber);
-    const isA1SpeakingUnit = Number.isInteger(parsedUnitNumber) && parsedUnitNumber >= 1 && parsedUnitNumber <= 100;
-    const ttsLanguage = isA1SpeakingUnit ? (parsedUnitNumber <= 60 ? "es" : "en") : supportedLanguage;
+    const isA1SpeakingUnit = Number.isInteger(Number(unitNumber)) && Number(unitNumber) >= 1 && Number(unitNumber) <= 100;
+    const ttsLang = isA1SpeakingUnit ? "en" : supportedLanguage;
 
-    // En A1 Speaking, el idioma de voz depende de la fase; fuera del curso se respeta el idioma de la sesión.
+    // En A1 Speaking se usa siempre la voz inglesa para priorizar la pronunciación de las palabras del curso.
     const result = await env.AI.run(TTS_MODEL as any, {
       prompt: text.trim(),
-      lang: ttsLanguage,
+      lang: ttsLang,
     });
 
     const encodedAudio = (result as any)?.audio;
@@ -48,7 +47,7 @@ export async function POST(request: NextRequest) {
       const key = `conversation/voice-output/${crypto.randomUUID()}.mp3`;
       await env.LINGUAFLY_MEDIA.put(key, audioBytes, {
         httpMetadata: { contentType: "audio/mpeg" },
-        customMetadata: { language: ttsLanguage },
+        customMetadata: { language: ttsLang },
       });
     }
 
