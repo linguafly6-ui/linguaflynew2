@@ -4,10 +4,10 @@ import { useState, useRef, useEffect } from "react";
 
 /**
  * ============================================================
- * COMPONENTE: Tutor de PronunciaciÃ³n
+ * COMPONENTE: Tutor de Pronunciación
  * ============================================================
  * Graba audio del usuario, lo envÃ­a a Workers AI Whisper,
- * y muestra puntuaciÃ³n + feedback.
+ * y muestra puntuación + feedback.
  */
 
 interface Phrase {
@@ -100,7 +100,7 @@ export default function PronunciationTutor({ userId = "demo-user" }: { userId?: 
       mediaRecorderRef.current = recorder;
       setIsRecording(true);
     } catch (err) {
-      setError("No se pudo acceder al micrÃ³fono. Permite el acceso en tu navegador.");
+      setError("No se pudo acceder al micrófono. Permite el acceso en tu navegador.");
     }
   };
 
@@ -151,7 +151,7 @@ export default function PronunciationTutor({ userId = "demo-user" }: { userId?: 
     <div className="mx-auto max-w-3xl space-y-7 px-5 py-8 sm:px-8">
       <div className="text-center">
         <h2 className="text-3xl font-extrabold tracking-tight text-slate-900 sm:text-4xl">🎙️ Tutor de Pronunciación</h2>
-        <p className="mt-2 text-base text-slate-500">GrÃ¡bate diciendo la frase y recibe feedback instantÃ¡neo</p>
+        <p className="mt-2 text-base text-slate-500">Grábate diciendo la frase y recibe feedback instantáneo</p>
       </div>
 
       {/* Selectores */}
@@ -161,9 +161,9 @@ export default function PronunciationTutor({ userId = "demo-user" }: { userId?: 
           onChange={(e) => setLanguage(e.target.value)}
           className="rounded-full border border-slate-200 bg-white px-5 py-3 text-sm font-semibold text-slate-700 shadow-sm transition-all duration-300 hover:border-blue-300 hover:shadow-md focus:ring-2 focus:ring-blue-500"
         >
-          <option value="en">ðŸ‡¬ðŸ‡§ InglÃ©s</option>
-          <option value="fr">ðŸ‡«ðŸ‡· FrancÃ©s</option>
-          <option value="es">ðŸ‡ªðŸ‡¸ EspaÃ±ol</option>
+          <option value="en">🇬🇧 Inglés</option>
+          <option value="fr">🇫🇷 Francés</option>
+          <option value="es">🇪🇸 Español</option>
         </select>
         <select
           value={level}
@@ -185,12 +185,12 @@ export default function PronunciationTutor({ userId = "demo-user" }: { userId?: 
             onClick={playReference}
             className="mt-6 rounded-xl bg-blue-600 px-6 py-3 font-semibold text-white shadow-md shadow-blue-200 transition-all duration-300 hover:scale-105 hover:bg-blue-700 active:scale-95 focus:ring-2 focus:ring-blue-500"
           >
-            ðŸ”Š Escuchar referencia
+            🔊 Escuchar referencia
           </button>
         </div>
       )}
 
-      {/* BotÃ³n de grabaciÃ³n */}
+      {/* Botón de grabación */}
       <div className="flex flex-col items-center gap-4">
         {!isRecording ? (
           <button
@@ -198,14 +198,14 @@ export default function PronunciationTutor({ userId = "demo-user" }: { userId?: 
             disabled={isAnalyzing}
             className="flex h-24 w-24 items-center justify-center rounded-full bg-gradient-to-br from-red-500 to-rose-600 text-4xl text-white shadow-xl shadow-red-200 transition-all duration-300 hover:scale-105 active:scale-95 disabled:opacity-50 focus:ring-2 focus:ring-blue-500"
           >
-            ðŸŽ¤
+            🎤
           </button>
         ) : (
           <button
             onClick={stopRecording}
             className="flex h-24 w-24 items-center justify-center rounded-full bg-red-700 text-4xl text-white shadow-xl shadow-red-200 ring-8 ring-red-100 transition-all duration-300 animate-pulse hover:scale-105 active:scale-95 focus:ring-2 focus:ring-red-400"
           >
-            â¹
+            ⏹
           </button>
         )}
         <p className="text-sm font-medium text-slate-500">
@@ -267,7 +267,7 @@ export default function PronunciationTutor({ userId = "demo-user" }: { userId?: 
             onClick={nextPhrase}
             className="w-full rounded-xl bg-blue-600 py-4 font-bold text-white shadow-md transition-all duration-300 hover:scale-[1.02] hover:bg-blue-700 active:scale-95 focus:ring-2 focus:ring-blue-500"
           >
-            Siguiente frase â†’
+            Siguiente frase →
           </button>
         </div>
       )}

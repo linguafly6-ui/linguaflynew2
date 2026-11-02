@@ -4,7 +4,7 @@ import { useState, useEffect, useCallback } from "react";
 
 /**
  * ============================================================
- * COMPONENTE: RepeticiÃ³n Espaciada Adaptativa
+ * COMPONENTE: Repetición Espaciada Adaptativa
  * ============================================================
  * Sistema SM-2 con generaciÃ³n de contenido adaptativo por IA.
  * Cuando el usuario falla, la IA crea un nuevo ejemplo.
@@ -81,7 +81,7 @@ export default function SpacedRepetition({ userId = "demo-user" }: { userId?: st
           word: currentItem.word,
           translation: currentItem.translation,
           language: currentItem.language,
-          userLevel: "A1", // Ajustar segÃºn nivel del usuario
+          userLevel: "A1", // Ajustar según nivel del usuario
         }),
       });
       const data = await res.json() as any;
@@ -91,7 +91,7 @@ export default function SpacedRepetition({ userId = "demo-user" }: { userId?: st
         return;
       }
 
-      // Si fallÃ³ y hay contenido adaptativo, mostrarlo
+      // Si falló y hay contenido adaptativo, mostrarlo
       if (!wasCorrect && data.adaptiveContent) {
         setAdaptiveContent(data.adaptiveContent);
         // Esperar a que el usuario vea el contenido antes de continuar
@@ -112,7 +112,7 @@ export default function SpacedRepetition({ userId = "demo-user" }: { userId?: st
     if (currentIndex < items.length - 1) {
       setCurrentIndex(currentIndex + 1);
     } else {
-      // No hay mÃ¡s items
+      // No hay más items
       setItems([]);
       setCurrentIndex(0);
     }
@@ -123,7 +123,7 @@ export default function SpacedRepetition({ userId = "demo-user" }: { userId?: st
     return (
       <div className="mx-auto max-w-4xl space-y-7 px-5 py-8 sm:px-8">
         <div className="text-center">
-          <h2 className="text-3xl font-extrabold tracking-tight text-slate-900 sm:text-4xl">ðŸ§  RepeticiÃ³n Espaciada</h2>
+          <h2 className="text-3xl font-extrabold tracking-tight text-slate-900 sm:text-4xl">🧠 Repetición Espaciada</h2>
           <p className="mt-2 text-base text-slate-500">Algoritmo SM-2 con contenido adaptativo generado por IA</p>
         </div>
 
@@ -143,15 +143,15 @@ export default function SpacedRepetition({ userId = "demo-user" }: { userId?: st
             </div>
             <div className="rounded-2xl border border-slate-100 bg-white p-5 text-center shadow-lg shadow-slate-200/60 transition-all duration-300 hover:-translate-y-1 hover:shadow-xl">
               <p className="text-4xl font-black tracking-tight text-purple-600">{stats.accuracy}%</p>
-              <p className="mt-2 text-base text-slate-500">PrecisiÃ³n</p>
+              <p className="mt-2 text-base text-slate-500">Precisión</p>
             </div>
           </div>
         )}
 
         <div className="rounded-3xl border border-emerald-100 bg-gradient-to-br from-emerald-50 to-white p-8 text-center shadow-lg shadow-emerald-100/60">
-          <p className="text-5xl">ðŸŽ‰</p>
-          <p className="mt-3 text-xl font-bold text-slate-900">Â¡No tienes repasos pendientes!</p>
-          <p className="mt-2 text-base text-slate-500">Vuelve mÃ¡s tarde o aÃ±ade nuevas palabras.</p>
+          <p className="text-5xl">🎉</p>
+          <p className="mt-3 text-xl font-bold text-slate-900">¡No tienes repasos pendientes!</p>
+          <p className="mt-2 text-base text-slate-500">Vuelve más tarde o añade nuevas palabras.</p>
           <button
             onClick={loadDueItems}
             className="mt-5 rounded-xl bg-blue-600 px-7 py-3 font-bold text-white shadow-md transition-all duration-300 hover:scale-105 hover:bg-blue-700 active:scale-95"
@@ -166,7 +166,7 @@ export default function SpacedRepetition({ userId = "demo-user" }: { userId?: st
   return (
     <div className="mx-auto max-w-4xl space-y-7 px-5 py-8 sm:px-8">
       <div className="text-center">
-        <h2 className="text-3xl font-extrabold tracking-tight text-slate-900 sm:text-4xl">ðŸ§  RepeticiÃ³n Espaciada</h2>
+        <h2 className="text-3xl font-extrabold tracking-tight text-slate-900 sm:text-4xl">🧠 Repetición Espaciada</h2>
         <p className="mt-2 text-base text-slate-500">
           Repaso {currentIndex + 1} de {items.length}
         </p>
@@ -192,7 +192,7 @@ export default function SpacedRepetition({ userId = "demo-user" }: { userId?: st
       {/* Flashcard */}
       <div className="[perspective:1200px] min-h-[340px] rounded-3xl border border-slate-100 bg-white p-7 shadow-xl shadow-slate-200/70 transition-all duration-500 sm:p-10">
         <p className="mb-3 text-sm font-semibold uppercase tracking-wider text-slate-400">
-          {currentItem.language === "en" ? "ðŸ‡¬ðŸ‡§ InglÃ©s" : currentItem.language === "fr" ? "ðŸ‡«ðŸ‡· FrancÃ©s" : "ðŸ‡ªðŸ‡¸ EspaÃ±ol"}
+          {currentItem.language === "en" ? "🇬🇧 Inglés" : currentItem.language === "fr" ? "🇫🇷 Francés" : "🇪🇸 Español"}
         </p>
         <p className="text-center text-5xl font-black tracking-tight text-slate-900">{currentItem.word}</p>
 
@@ -213,16 +213,16 @@ export default function SpacedRepetition({ userId = "demo-user" }: { userId?: st
               <p className="text-5xl text-green-600 font-semibold">{currentItem.translation}</p>
             </div>
 
-            {/* Contenido adaptativo si fallÃ³ */}
+            {/* Contenido adaptativo si falló */}
             {adaptiveContent && (
               <div className="mt-6 w-full animate-[slideDown_.3s_ease-out] rounded-2xl border border-purple-100 bg-gradient-to-br from-purple-50 to-violet-100 p-5 shadow-sm">
-                <p className="text-sm font-bold text-purple-800">ðŸ¤– Nuevo ejemplo generado por IA:</p>
+                <p className="text-sm font-bold text-purple-800">🤖 Nuevo ejemplo generado por IA:</p>
                 <p className="mt-2 text-slate-700 italic">"{adaptiveContent}"</p>
                 <button
                   onClick={nextItem}
                   className="mt-4 w-full rounded-xl bg-purple-600 py-3 font-bold text-white transition-all duration-300 hover:scale-[1.02] hover:bg-purple-700 active:scale-95"
                 >
-                  Entendido, continuar â†’
+                  Entendido, continuar →
                 </button>
               </div>
             )}
@@ -230,7 +230,7 @@ export default function SpacedRepetition({ userId = "demo-user" }: { userId?: st
             {/* Botones de calificaciÃ³n SM-2 */}
             {!adaptiveContent && (
               <div className="mt-8 w-full">
-                <p className="mb-3 text-center text-sm font-semibold text-slate-500">Â¿QuÃ© tal lo recordabas?</p>
+                <p className="mb-3 text-center text-sm font-semibold text-slate-500">¿Qué tal lo recordabas?</p>
                 <div className="grid grid-cols-4 gap-2">
                   <button
                     onClick={() => rateAnswer(0)}
@@ -258,7 +258,7 @@ export default function SpacedRepetition({ userId = "demo-user" }: { userId?: st
                     disabled={isSubmitting}
                     className="rounded-xl bg-green-100 py-3 font-bold text-green-800 transition-all duration-300 hover:scale-105 hover:bg-green-200 active:scale-95 disabled:opacity-50"
                   >
-                    FÃ¡cil
+                    Fácil
                   </button>
                 </div>
               </div>
@@ -270,7 +270,7 @@ export default function SpacedRepetition({ userId = "demo-user" }: { userId?: st
       {/* Info del item */}
       <div className="flex justify-between rounded-xl bg-slate-50 px-4 py-3 text-sm text-slate-500">
         <span>Repeticiones: {currentItem.repetitions}</span>
-        <span>PrÃ³ximo repaso: {currentItem.interval_days} dÃ­as</span>
+        <span>Próximo repaso: {currentItem.interval_days} días</span>
       </div>
     </div>
   );

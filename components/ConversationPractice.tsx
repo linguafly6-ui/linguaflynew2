@@ -96,7 +96,7 @@ export default function ConversationPractice({ userId = "demo-user" }: { userId?
       if (!response.ok) throw new Error("TTS no disponible");
 
       const audioBlob = await response.blob();
-      if (!audioBlob.size) throw new Error("Audio vacÃ­o");
+      if (!audioBlob.size) throw new Error("Audio vacío");
 
       if (audioUrlRef.current) URL.revokeObjectURL(audioUrlRef.current);
       const audioUrl = URL.createObjectURL(audioBlob);
@@ -106,7 +106,7 @@ export default function ConversationPractice({ userId = "demo-user" }: { userId?
       audioRef.current = audio;
       await audio.play();
     } catch (voiceError) {
-      // Fallback del navegador si MeloTTS no estÃ¡ configurado o falla la reproducciÃ³n.
+      // Fallback del navegador si MeloTTS no está configurado o falla la reproducción.
       playBrowserFallback(text, language);
     } finally {
       setIsAudioLoading(false);
@@ -164,7 +164,7 @@ export default function ConversationPractice({ userId = "demo-user" }: { userId?
         });
         audioChunksRef.current = [];
         if (!audioBlob.size) {
-          setError("La grabaciÃ³n estÃ¡ vacÃ­a. IntÃ©ntalo de nuevo.");
+          setError("La grabación está vacÃ­a. IntÃ©ntalo de nuevo.");
           return;
         }
 
@@ -194,7 +194,7 @@ export default function ConversationPractice({ userId = "demo-user" }: { userId?
       recorder.start();
       setIsRecording(true);
     } catch (voiceError) {
-      setError("No se pudo acceder al micrÃ³fono. Revisa los permisos del navegador.");
+      setError("No se pudo acceder al micrófono. Revisa los permisos del navegador.");
     }
   };
 
@@ -219,7 +219,7 @@ export default function ConversationPractice({ userId = "demo-user" }: { userId?
       setMessages([{ role: "assistant", content: data.openingLine }]);
       void speakMessage(data.openingLine, scenario.language);
     } catch (err) {
-      setError("Error al iniciar la conversaciÃ³n");
+      setError("Error al iniciar la conversación");
     } finally {
       setIsLoading(false);
     }
@@ -322,7 +322,7 @@ export default function ConversationPractice({ userId = "demo-user" }: { userId?
     return (
       <div className="mx-auto max-w-3xl space-y-7 px-5 py-8 sm:px-8">
         <div className="text-center">
-          <h2 className="text-3xl font-extrabold tracking-tight text-slate-900 sm:text-4xl">ðŸ’¬ ConversaciÃ³n Simulada</h2>
+          <h2 className="text-3xl font-extrabold tracking-tight text-slate-900 sm:text-4xl">💬 ConversaciÃ³n Simulada</h2>
           <p className="mt-2 text-base text-slate-500">Practica con un personaje IA que te corrige en tiempo real</p>
         </div>
 
@@ -340,11 +340,11 @@ export default function ConversationPractice({ userId = "demo-user" }: { userId?
                 <div>
                   <h3 className="text-xl font-bold text-slate-900">{scenario.title}</h3>
                   <p className="mt-2 text-slate-500">{scenario.description}</p>
-                  <p className="mt-3 text-sm text-slate-400">ðŸ“ {scenario.setting}</p>
+                  <p className="mt-3 text-sm text-slate-400">📍 {scenario.setting}</p>
                 </div>
                 <div className="flex flex-col items-end gap-1">
                   <span className="text-4xl">
-                    {scenario.language === "en" ? "ðŸ‡¬ðŸ‡§" : scenario.language === "fr" ? "ðŸ‡«ðŸ‡·" : "ðŸ‡ªðŸ‡¸"}
+                    {scenario.language === "en" ? "🇬🇧" : scenario.language === "fr" ? "🇫🇷" : "🇪🇸"}
                   </span>
                   <span className="rounded-full bg-blue-50 px-3 py-1 text-xs font-bold text-blue-700">{scenario.level}</span>
                 </div>
@@ -361,13 +361,13 @@ export default function ConversationPractice({ userId = "demo-user" }: { userId?
       <div className="flex items-center justify-between mb-4">
         <div>
           <h2 className="text-xl font-bold text-slate-900">{selectedScenario.title}</h2>
-          <p className="text-sm text-slate-500">ðŸ“ {selectedScenario.setting}</p>
+          <p className="text-sm text-slate-500">📍 {selectedScenario.setting}</p>
         </div>
         <button
           onClick={reset}
           className="rounded-xl bg-slate-100 px-4 py-2 text-sm font-semibold text-slate-700 transition-all duration-300 hover:scale-105 hover:bg-slate-200 active:scale-95"
         >
-          â† Cambiar escenario
+          ← Cambiar escenario
         </button>
       </div>
 
@@ -385,7 +385,7 @@ export default function ConversationPractice({ userId = "demo-user" }: { userId?
               )}
               {msg.correction && (
                 <div className="mt-3 rounded-xl border border-yellow-200 bg-yellow-50 p-3">
-                  <p className="text-xs font-bold text-yellow-700">ðŸ“ CorrecciÃ³n</p>
+                  <p className="text-xs font-bold text-yellow-700">📝 CorrecciÃ³n</p>
                   <p className="mt-1 text-sm text-slate-700">{msg.correction}</p>
                 </div>
               )}
@@ -406,7 +406,7 @@ export default function ConversationPractice({ userId = "demo-user" }: { userId?
         <div className="mb-3 animate-[slideDown_.3s_ease-out] rounded-2xl border border-yellow-300 bg-yellow-50 p-4 text-yellow-950 shadow-md">
           <div className="flex items-start justify-between gap-3">
             <div>
-              <p className="text-sm font-semibold">ðŸ’¡ Pista para responder</p>
+              <p className="text-sm font-semibold">💡 Pista para responder</p>
               <p className="mt-1">{hint}</p>
             </div>
             <button
@@ -415,7 +415,7 @@ export default function ConversationPractice({ userId = "demo-user" }: { userId?
               aria-label="Cerrar pista"
               className="rounded-full px-3 py-2 text-yellow-800 transition-all duration-300 hover:scale-105 hover:bg-yellow-100 active:scale-95"
             >
-              âœ•
+              ✕
             </button>
           </div>
         </div>
@@ -424,7 +424,7 @@ export default function ConversationPractice({ userId = "demo-user" }: { userId?
       {isRecording && (
         <div className="mb-2 flex items-center gap-2 text-sm font-medium text-red-600" aria-live="polite">
           <span className="h-2.5 w-2.5 rounded-full bg-red-600 animate-pulse" />
-          Grabando... pulsa el micrÃ³fono para detener
+          Grabando... pulsa el micrófono para detener
         </div>
       )}
       {isVoiceProcessing && (
@@ -451,13 +451,13 @@ export default function ConversationPractice({ userId = "demo-user" }: { userId?
           type="button"
           onClick={toggleRecording}
           disabled={isLoading || isVoiceProcessing}
-          aria-label={isRecording ? "Detener grabaciÃ³n" : "Grabar respuesta"}
-          title={isRecording ? "Detener grabaciÃ³n" : "Grabar respuesta"}
+          aria-label={isRecording ? "Detener grabación" : "Grabar respuesta"}
+          title={isRecording ? "Detener grabación" : "Grabar respuesta"}
           className={`rounded-full border p-3 text-xl transition-all duration-300 hover:scale-105 active:scale-95 disabled:opacity-50 ${
             isRecording ? "border-red-500 bg-red-50 text-red-700 animate-pulse" : "border-gray-300 bg-white hover:bg-gray-50"
           }`}
         >
-          ðŸŽ¤
+          🎤
         </button>
         <button
           onClick={sendMessage}
@@ -474,7 +474,7 @@ export default function ConversationPractice({ userId = "demo-user" }: { userId?
           disabled={isLoading || isHintLoading}
           className="self-start rounded-xl bg-yellow-100 px-4 py-2 font-semibold text-yellow-900 transition-all duration-300 hover:scale-105 hover:bg-yellow-200 active:scale-95 disabled:opacity-50"
         >
-          {isHintLoading ? "Generando pista..." : "ðŸ’¡ Pista"}
+          {isHintLoading ? "Generando pista..." : "💡 Pista"}
         </button>
         <button
           type="button"
@@ -482,7 +482,7 @@ export default function ConversationPractice({ userId = "demo-user" }: { userId?
           disabled={!lastSpokenMessage || isAudioLoading}
           className="rounded-xl bg-slate-100 px-4 py-2 font-semibold text-slate-700 transition-all duration-300 hover:scale-105 hover:bg-slate-200 active:scale-95 disabled:opacity-50"
         >
-          ðŸ”Š Volver a escuchar
+          🔊 Volver a escuchar
         </button>
       </div>
     </div>
