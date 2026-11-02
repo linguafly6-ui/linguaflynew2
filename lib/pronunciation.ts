@@ -69,8 +69,8 @@ export function detectPhoneticIssues(
   transcribed: string
 ): string[] {
   const issues: string[] = [];
-  const targetWords = target.toLowerCase().split(/\s+/);
-  const transcribedWords = transcribed.toLowerCase().split(/\s+/);
+  const targetWords = target.toLowerCase().split(/\\s+/);
+  const transcribedWords = transcribed.toLowerCase().split(/\\s+/);
 
   const missing = targetWords.filter(
     (w) => !transcribedWords.some((tw) => tw.includes(w) || w.includes(tw))
@@ -117,28 +117,57 @@ export async function generateReferenceAudio(
     throw new Error("Cloudflare R2 binding (env.LINGUAFLY_MEDIA) is not available");
   }
 
-  // MeloTTS espera "prompt" (no "text") como texto de entrada.
   const result = await env.AI.run(TTS_MODEL as any, {
     prompt: phrase,
     lang: language || "en",
   });
 
-  // Workers AI puede devolver los bytes directamente o dentro de { audio }.
-  const audio = (result as any)?.audio ?? result;
-  let audioData: ArrayBuffer | Uint8Array;
+  // Registrar la estructura real de la respuesta para depurar.
+  console.log("MeloTTS tipo de resultado:", typeof result);
+  console.log(
+    "MeloTTS claves del resultado:",
+    result && typeof result === "object" ? Object.keys(result) : "N/A"
+  );
+  console.log("MeloTTS constructor:", (result as any)?.constructor?.name);
 
-  if (audio instanceof ArrayBuffer || ArrayBuffer.isView(audio)) {
-    audioData = audio as ArrayBuffer | Uint8Array;
-  } else if (audio && typeof audio.arrayBuffer === "function") {
-    audioData = await audio.arrayBuffer();
+  let audioBytes: ArrayBuffer | Uint8Array | string | null = null;
+  const response = result as any;
+
+  // Caso 1: objeto Response (tiene método arrayBuffer).
+  if (result && typeof response.arrayBuffer === "function") {
+    audioBytes = await response.arrayBuffer();
+  }
+  // Caso 2: objeto con propiedad audio.
+  else if (result && typeof result === "object" && response.audio) {
+    audioBytes = response.audio;
+  }
+  // Caso 3: string (audio binario).
+  else if (typeof result === "string") {
+    audioBytes = result;
+  }
+  // Caso 4: objeto con body.
+  else if (result && response.body) {
+    audioBytes = await new Response(response.body).arrayBuffer();
   } else {
+    const resultStr = JSON.stringify(result, null, 2);
     throw new Error(
-      `MeloTTS returned no usable audio payload (response type: ${Object.prototype.toString.call(result)})`
+      `MeloTTS devolvió un formato inesperado. Tipo: ${typeof result}, Valor: ${resultStr?.substring(0, 500)}`
     );
   }
 
+  if (!audioBytes) {
+    throw new Error("MeloTTS devolvió audio vacío");
+  }
+
+  const audioData =
+    audioBytes instanceof ArrayBuffer
+      ? new Uint8Array(audioBytes)
+      : audioBytes instanceof Uint8Array
+        ? audioBytes
+        : new TextEncoder().encode(audioBytes);
+
   if (audioData.byteLength === 0) {
-    throw new Error("MeloTTS returned an empty audio payload");
+    throw new Error("MeloTTS devolvió audio vacío");
   }
 
   const r2Key = `pronunciation-ref/${Date.now()}-${Math.random().toString(36).slice(2)}.mp3`;
