@@ -18,7 +18,7 @@ import { chatWithPersona, loadSessionMessages, type ChatMessage } from "@/lib/co
 export async function POST(request: NextRequest) {
   try {
     const env = getEnv();
-    const { sessionId, message, personaPrompt, language, level } = await request.json() as any;
+    const { sessionId, message, personaPrompt, scenarioContext, language, level } = await request.json() as any;
 
     if (!sessionId || !message || !personaPrompt) {
       return NextResponse.json({ error: "Faltan parámetros" }, { status: 400 });
@@ -42,7 +42,12 @@ export async function POST(request: NextRequest) {
       allMessages,
       personaPrompt,
       language,
-      level
+      level,
+      typeof scenarioContext === "string"
+        ? scenarioContext
+        : scenarioContext && typeof scenarioContext === "object"
+          ? JSON.stringify(scenarioContext)
+          : undefined
     );
 
     // 5. Guardar la respuesta del asistente en D1 (con corrección si la hay)

@@ -238,7 +238,20 @@ export default function VoiceConversation({ scenario, userId = "demo-user", onCo
     try {
       const response = await conversationFetch("/api/conversation/chat", {
         method: "POST", headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({ sessionId: sessionRef.current, message, personaPrompt: scenario.persona_prompt, language: scenario.language, level: scenario.level }),
+        body: JSON.stringify({
+          sessionId: sessionRef.current,
+          message,
+          personaPrompt: scenario.persona_prompt,
+          scenarioContext: {
+            id: scenario.id,
+            title: scenario.title,
+            description: scenario.description || "",
+            setting: scenario.setting || "",
+            persona: scenario.persona_prompt,
+          },
+          language: scenario.language,
+          level: scenario.level,
+        }),
       });
       const data = await response.json() as any;
       if (!response.ok || data.error) throw new Error(data.error || "No se pudo generar la respuesta");
