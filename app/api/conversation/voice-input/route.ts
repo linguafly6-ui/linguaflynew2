@@ -1,4 +1,4 @@
-﻿import { NextRequest, NextResponse } from "next/server";
+import { NextRequest, NextResponse } from "next/server";
 import { getEnv } from "@/lib/cf-context";
 
 const WHISPER_MODEL = "@cf/openai/whisper-large-v3-turbo";
@@ -46,8 +46,17 @@ export async function POST(request: NextRequest) {
     const supportedLanguages = new Set(["en", "es", "fr", "de", "it", "pt"]);
     const transcriptionLanguage = supportedLanguages.has(languageCode) ? languageCode : "en";
 
+    // Whisper espera el audio codificado en base64. Convertir por bloques evita
+    // exceder el límite de argumentos de String.fromCharCode con audios grandes.
+    let binaryAudio = "";
+    const chunkSize = 0x8000;
+    for (let offset = 0; offset < audioBytes.length; offset += chunkSize) {
+      binaryAudio += String.fromCharCode(...audioBytes.subarray(offset, offset + chunkSize));
+    }
+    const base64Audio = btoa(binaryAudio);
+
     const result = await env.AI.run(WHISPER_MODEL as any, {
-      audio: Array.from(audioBytes),
+      audio: base64Audio,
       task: "transcribe",
       language: transcriptionLanguage,
       vad_filter: false,
