@@ -1,4 +1,4 @@
-﻿"use client";
+"use client";
 
 import { useState, useEffect, useCallback } from "react";
 
@@ -121,40 +121,40 @@ export default function SpacedRepetition({ userId = "demo-user" }: { userId?: st
   // Pantalla de estadÃ­sticas cuando no hay items
   if (items.length === 0) {
     return (
-      <div className="max-w-2xl mx-auto p-6 space-y-6">
+      <div className="mx-auto max-w-4xl space-y-7 px-5 py-8 sm:px-8">
         <div className="text-center">
-          <h2 className="text-2xl font-bold text-gray-900">ðŸ§  RepeticiÃ³n Espaciada</h2>
-          <p className="text-gray-500 mt-1">Algoritmo SM-2 con contenido adaptativo generado por IA</p>
+          <h2 className="text-3xl font-extrabold tracking-tight text-slate-900 sm:text-4xl">ðŸ§  RepeticiÃ³n Espaciada</h2>
+          <p className="mt-2 text-base text-slate-500">Algoritmo SM-2 con contenido adaptativo generado por IA</p>
         </div>
 
         {stats && (
-          <div className="grid grid-cols-2 gap-4">
-            <div className="bg-white border-2 border-gray-200 rounded-xl p-6 text-center">
-              <p className="text-4xl font-bold text-blue-600">{stats.totalItems}</p>
-              <p className="text-gray-500 mt-1">Palabras totales</p>
+          <div className="grid grid-cols-2 gap-3 sm:grid-cols-4 sm:gap-4">
+            <div className="rounded-2xl border border-slate-100 bg-white p-5 text-center shadow-lg shadow-slate-200/60 transition-all duration-300 hover:-translate-y-1 hover:shadow-xl">
+              <p className="text-4xl font-black tracking-tight text-blue-600">{stats.totalItems}</p>
+              <p className="mt-2 text-base text-slate-500">Palabras totales</p>
             </div>
-            <div className="bg-white border-2 border-gray-200 rounded-xl p-6 text-center">
-              <p className="text-4xl font-bold text-green-600">{stats.mastered}</p>
-              <p className="text-gray-500 mt-1">Dominadas</p>
+            <div className="rounded-2xl border border-slate-100 bg-white p-5 text-center shadow-lg shadow-slate-200/60 transition-all duration-300 hover:-translate-y-1 hover:shadow-xl">
+              <p className="text-4xl font-black tracking-tight text-green-600">{stats.mastered}</p>
+              <p className="mt-2 text-base text-slate-500">Dominadas</p>
             </div>
-            <div className="bg-white border-2 border-gray-200 rounded-xl p-6 text-center">
-              <p className="text-4xl font-bold text-orange-600">{stats.dueToday}</p>
-              <p className="text-gray-500 mt-1">Pendientes hoy</p>
+            <div className="rounded-2xl border border-slate-100 bg-white p-5 text-center shadow-lg shadow-slate-200/60 transition-all duration-300 hover:-translate-y-1 hover:shadow-xl">
+              <p className="text-4xl font-black tracking-tight text-orange-600">{stats.dueToday}</p>
+              <p className="mt-2 text-base text-slate-500">Pendientes hoy</p>
             </div>
-            <div className="bg-white border-2 border-gray-200 rounded-xl p-6 text-center">
-              <p className="text-4xl font-bold text-purple-600">{stats.accuracy}%</p>
-              <p className="text-gray-500 mt-1">PrecisiÃ³n</p>
+            <div className="rounded-2xl border border-slate-100 bg-white p-5 text-center shadow-lg shadow-slate-200/60 transition-all duration-300 hover:-translate-y-1 hover:shadow-xl">
+              <p className="text-4xl font-black tracking-tight text-purple-600">{stats.accuracy}%</p>
+              <p className="mt-2 text-base text-slate-500">PrecisiÃ³n</p>
             </div>
           </div>
         )}
 
-        <div className="bg-green-50 rounded-xl p-8 text-center">
-          <p className="text-2xl">ðŸŽ‰</p>
-          <p className="text-lg font-semibold text-gray-900 mt-2">Â¡No tienes repasos pendientes!</p>
-          <p className="text-gray-500 mt-1">Vuelve mÃ¡s tarde o aÃ±ade nuevas palabras.</p>
+        <div className="rounded-3xl border border-emerald-100 bg-gradient-to-br from-emerald-50 to-white p-8 text-center shadow-lg shadow-emerald-100/60">
+          <p className="text-5xl">ðŸŽ‰</p>
+          <p className="mt-3 text-xl font-bold text-slate-900">Â¡No tienes repasos pendientes!</p>
+          <p className="mt-2 text-base text-slate-500">Vuelve mÃ¡s tarde o aÃ±ade nuevas palabras.</p>
           <button
             onClick={loadDueItems}
-            className="mt-4 px-6 py-2 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition"
+            className="mt-5 rounded-xl bg-blue-600 px-7 py-3 font-bold text-white shadow-md transition-all duration-300 hover:scale-105 hover:bg-blue-700 active:scale-95"
           >
             Recargar
           </button>
@@ -164,48 +164,48 @@ export default function SpacedRepetition({ userId = "demo-user" }: { userId?: st
   }
 
   return (
-    <div className="max-w-2xl mx-auto p-6 space-y-6">
+    <div className="mx-auto max-w-4xl space-y-7 px-5 py-8 sm:px-8">
       <div className="text-center">
-        <h2 className="text-2xl font-bold text-gray-900">ðŸ§  RepeticiÃ³n Espaciada</h2>
-        <p className="text-gray-500 mt-1">
+        <h2 className="text-3xl font-extrabold tracking-tight text-slate-900 sm:text-4xl">ðŸ§  RepeticiÃ³n Espaciada</h2>
+        <p className="mt-2 text-base text-slate-500">
           Repaso {currentIndex + 1} de {items.length}
         </p>
       </div>
 
-      {error && <div className="bg-red-50 text-red-700 p-4 rounded-lg text-center">{error}</div>}
+      {error && <div className="rounded-2xl border border-red-200 bg-red-50 p-4 text-center font-medium text-red-700 shadow-sm">{error}</div>}
 
-      {/* Flashcard */}
-      <div className="bg-white border-2 border-gray-200 rounded-2xl p-8 min-h-[300px] flex flex-col items-center justify-center">
-        <p className="text-sm text-gray-400 mb-2">
+      {stats && (\n        <div className="grid grid-cols-2 gap-3 sm:grid-cols-4">\n          {[{ label: "Palabras", value: stats.totalItems, color: "text-blue-600", icon: "📚" }, { label: "Dominadas", value: stats.mastered, color: "text-green-600", icon: "🏆" }, { label: "Pendientes", value: stats.dueToday, color: "text-orange-600", icon: "⏳" }, { label: "Precisión", value: `${stats.accuracy}%`, color: "text-violet-600", icon: "🎯" }].map((stat) => (\n            <div key={stat.label} className="rounded-2xl border border-slate-100 bg-white p-4 shadow-sm">\n              <div className="flex items-center justify-between"><span className="text-xl">{stat.icon}</span><span className={`text-2xl font-black ${stat.color}`}>{stat.value}</span></div>\n              <p className="mt-1 text-xs font-semibold text-slate-500">{stat.label}</p>\n            </div>\n          ))}\n        </div>\n      )}\n      <div className="space-y-2">\n        <div className="flex justify-between text-xs font-semibold text-slate-500"><span>Tu progreso de hoy</span><span>Repaso {currentIndex + 1} de {items.length}</span></div>\n        <div className="h-2 overflow-hidden rounded-full bg-slate-200"><div className="h-full rounded-full bg-gradient-to-r from-blue-600 to-violet-600 transition-all duration-500" style={{ width: `${((currentIndex + 1) / items.length) * 100}%` }} /></div>\n      </div>\n\n      {/* Flashcard */}
+      <div className="[perspective:1200px] min-h-[340px] rounded-3xl border border-slate-100 bg-white p-7 shadow-xl shadow-slate-200/70 transition-all duration-500 sm:p-10">
+        <p className="mb-3 text-sm font-semibold uppercase tracking-wider text-slate-400">
           {currentItem.language === "en" ? "ðŸ‡¬ðŸ‡§ InglÃ©s" : currentItem.language === "fr" ? "ðŸ‡«ðŸ‡· FrancÃ©s" : "ðŸ‡ªðŸ‡¸ EspaÃ±ol"}
         </p>
-        <p className="text-4xl font-bold text-gray-900 text-center">{currentItem.word}</p>
+        <p className="text-center text-5xl font-black tracking-tight text-slate-900">{currentItem.word}</p>
 
         {currentItem.context_sentence && (
-          <p className="text-gray-500 italic mt-4 text-center">"{currentItem.context_sentence}"</p>
+          <p className="mt-5 text-center text-slate-500 italic">"{currentItem.context_sentence}"</p>
         )}
 
         {!showAnswer ? (
           <button
             onClick={() => setShowAnswer(true)}
-            className="mt-8 px-8 py-3 bg-blue-600 text-white rounded-xl hover:bg-blue-700 transition"
+            className="mt-8 rounded-xl bg-blue-600 px-8 py-4 font-bold text-white shadow-md transition-all duration-300 hover:scale-105 hover:bg-blue-700 active:scale-95"
           >
             Mostrar respuesta
           </button>
         ) : (
           <>
-            <div className="mt-6 text-center">
-              <p className="text-2xl text-green-600 font-semibold">{currentItem.translation}</p>
+            <div className="mt-6 animate-[slideDown_.3s_ease-out] text-center">
+              <p className="text-5xl text-green-600 font-semibold">{currentItem.translation}</p>
             </div>
 
             {/* Contenido adaptativo si fallÃ³ */}
             {adaptiveContent && (
-              <div className="mt-6 w-full bg-purple-50 rounded-xl p-4">
-                <p className="text-sm font-semibold text-purple-700">ðŸ¤– Nuevo ejemplo generado por IA:</p>
-                <p className="text-gray-800 mt-2 italic">"{adaptiveContent}"</p>
+              <div className="mt-6 w-full animate-[slideDown_.3s_ease-out] rounded-2xl border border-purple-100 bg-gradient-to-br from-purple-50 to-violet-100 p-5 shadow-sm">
+                <p className="text-sm font-bold text-purple-800">ðŸ¤– Nuevo ejemplo generado por IA:</p>
+                <p className="mt-2 text-slate-700 italic">"{adaptiveContent}"</p>
                 <button
                   onClick={nextItem}
-                  className="mt-4 w-full py-2 bg-purple-600 text-white rounded-lg hover:bg-purple-700 transition"
+                  className="mt-4 w-full rounded-xl bg-purple-600 py-3 font-bold text-white transition-all duration-300 hover:scale-[1.02] hover:bg-purple-700 active:scale-95"
                 >
                   Entendido, continuar â†’
                 </button>
@@ -215,33 +215,33 @@ export default function SpacedRepetition({ userId = "demo-user" }: { userId?: st
             {/* Botones de calificaciÃ³n SM-2 */}
             {!adaptiveContent && (
               <div className="mt-8 w-full">
-                <p className="text-sm text-gray-500 text-center mb-3">Â¿QuÃ© tal lo recordabas?</p>
+                <p className="mb-3 text-center text-sm font-semibold text-slate-500">Â¿QuÃ© tal lo recordabas?</p>
                 <div className="grid grid-cols-4 gap-2">
                   <button
                     onClick={() => rateAnswer(0)}
                     disabled={isSubmitting}
-                    className="py-3 bg-red-100 text-red-700 rounded-lg hover:bg-red-200 transition disabled:opacity-50"
+                    className="rounded-xl bg-red-100 py-3 font-bold text-red-800 transition-all duration-300 hover:scale-105 hover:bg-red-200 active:scale-95 disabled:opacity-50"
                   >
                     Nada
                   </button>
                   <button
                     onClick={() => rateAnswer(2)}
                     disabled={isSubmitting}
-                    className="py-3 bg-orange-100 text-orange-700 rounded-lg hover:bg-orange-200 transition disabled:opacity-50"
+                    className="rounded-xl bg-orange-100 py-3 font-bold text-orange-800 transition-all duration-300 hover:scale-105 hover:bg-orange-200 active:scale-95 disabled:opacity-50"
                   >
                     Mal
                   </button>
                   <button
                     onClick={() => rateAnswer(4)}
                     disabled={isSubmitting}
-                    className="py-3 bg-yellow-100 text-yellow-700 rounded-lg hover:bg-yellow-200 transition disabled:opacity-50"
+                    className="rounded-xl bg-yellow-100 py-3 font-bold text-yellow-800 transition-all duration-300 hover:scale-105 hover:bg-yellow-200 active:scale-95 disabled:opacity-50"
                   >
                     Bien
                   </button>
                   <button
                     onClick={() => rateAnswer(5)}
                     disabled={isSubmitting}
-                    className="py-3 bg-green-100 text-green-700 rounded-lg hover:bg-green-200 transition disabled:opacity-50"
+                    className="rounded-xl bg-green-100 py-3 font-bold text-green-800 transition-all duration-300 hover:scale-105 hover:bg-green-200 active:scale-95 disabled:opacity-50"
                   >
                     FÃ¡cil
                   </button>
@@ -253,7 +253,7 @@ export default function SpacedRepetition({ userId = "demo-user" }: { userId?: st
       </div>
 
       {/* Info del item */}
-      <div className="flex justify-between text-sm text-gray-400">
+      <div className="flex justify-between rounded-xl bg-slate-50 px-4 py-3 text-sm text-slate-500">
         <span>Repeticiones: {currentItem.repetitions}</span>
         <span>PrÃ³ximo repaso: {currentItem.interval_days} dÃ­as</span>
       </div>

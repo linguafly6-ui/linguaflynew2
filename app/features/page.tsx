@@ -1,4 +1,4 @@
-﻿"use client";
+"use client";
 
 import { useState } from "react";
 import PronunciationTutor from "@/components/PronunciationTutor";
@@ -16,49 +16,49 @@ import SpacedRepetition from "@/components/SpacedRepetition";
 type Tab = "pronunciation" | "conversation" | "repetition";
 
 const TABS: { id: Tab; label: string; icon: string; desc: string }[] = [
-  { id: "pronunciation", label: "PronunciaciÃ³n", icon: "ðŸŽ™ï¸", desc: "Feedback instantÃ¡neo con IA" },
-  { id: "conversation", label: "ConversaciÃ³n", icon: "ðŸ’¬", desc: "Role-play con personaje IA" },
-  { id: "repetition", label: "Repaso", icon: "ðŸ§ ", desc: "RepeticiÃ³n espaciada adaptativa" },
+  { id: "pronunciation", label: "PronunciaciÃ³n", icon: "🎙️", desc: "Feedback instantÃ¡neo con IA" },
+  { id: "conversation", label: "ConversaciÃ³n", icon: "💬", desc: "Role-play con personaje IA" },
+  { id: "repetition", label: "Repaso", icon: "🧠", desc: "RepeticiÃ³n espaciada adaptativa" },
 ];
 
 export default function FeaturesPage() {
   const [activeTab, setActiveTab] = useState<Tab>("pronunciation");
 
   return (
-    <div className="min-h-screen bg-gray-50">
+    <div className="min-h-screen bg-gradient-to-b from-slate-50 via-white to-blue-50/40 pb-12">
       {/* Header */}
-      <div className="bg-gradient-to-r from-blue-600 to-purple-600 text-white">
-        <div className="max-w-4xl mx-auto px-6 py-12">
-          <h1 className="text-4xl font-bold">ðŸ¦… LinguaFly</h1>
-          <p className="mt-2 text-blue-100">
+      <div className="relative overflow-hidden bg-gradient-to-br from-blue-700 via-blue-600 to-violet-700 text-white shadow-lg">
+        <div className="relative mx-auto max-w-6xl px-5 py-14 sm:px-8 sm:py-16">
+          <div className="mb-4 inline-flex items-center gap-3 rounded-full border border-white/20 bg-white/10 px-4 py-2 text-sm font-semibold text-blue-100 shadow-sm backdrop-blur"><span>✨</span><span>Tu estudio inteligente</span></div>\n          <h1 className="text-4xl font-extrabold tracking-tight sm:text-5xl">🦅 LinguaFly</h1>
+          <p className="mt-3 max-w-2xl text-lg leading-relaxed text-blue-100">
             Aprende idiomas con IA: pronunciaciÃ³n, conversaciÃ³n y repeticiÃ³n adaptativa
           </p>
         </div>
       </div>
 
       {/* Tabs */}
-      <div className="max-w-4xl mx-auto px-6 -mt-8">
-        <div className="grid grid-cols-3 gap-3">
+      <div className="mx-auto -mt-8 max-w-6xl px-5 sm:px-8">
+        <div className="grid grid-cols-1 gap-3 sm:grid-cols-3 sm:gap-4">
           {TABS.map((tab) => (
             <button
               key={tab.id}
               onClick={() => setActiveTab(tab.id)}
-              className={`p-4 rounded-xl text-center transition ${
+              className={`group rounded-2xl border-2 p-5 text-center shadow-md transition-all duration-300 hover:-translate-y-1 hover:shadow-lg focus:ring-2 focus:ring-blue-500 sm:p-6 ${
                 activeTab === tab.id
-                  ? "bg-white shadow-lg border-2 border-blue-500"
-                  : "bg-white/80 border-2 border-transparent hover:bg-white"
+                  ? "border-blue-500 bg-white shadow-lg shadow-blue-100"
+                  : "border-white bg-white/90 hover:border-blue-200 hover:bg-white"
               }`}
             >
-              <span className="text-3xl block">{tab.icon}</span>
-              <span className="font-semibold text-gray-900 block mt-2">{tab.label}</span>
-              <span className="text-xs text-gray-500 block mt-1">{tab.desc}</span>
+              <span className="mb-2 block text-4xl transition-transform duration-300 group-hover:scale-110">{tab.icon}</span>
+              <span className="mt-2 block font-bold text-slate-900">{tab.label}</span>
+              <span className="mt-1 block text-sm text-slate-500">{tab.desc}</span>
             </button>
           ))}
         </div>
       </div>
 
       {/* Contenido */}
-      <div className="py-8">
+      <div className="py-10 transition-all duration-300">
         {activeTab === "pronunciation" && <PronunciationTutor />}
         {activeTab === "conversation" && <ConversationPractice />}
         {activeTab === "repetition" && <SpacedRepetition />}

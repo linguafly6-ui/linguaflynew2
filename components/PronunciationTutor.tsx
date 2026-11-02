@@ -1,4 +1,4 @@
-﻿"use client";
+"use client";
 
 import { useState, useRef, useEffect } from "react";
 
@@ -148,18 +148,18 @@ export default function PronunciationTutor({ userId = "demo-user" }: { userId?: 
   };
 
   return (
-    <div className="max-w-2xl mx-auto p-6 space-y-6">
+    <div className="mx-auto max-w-3xl space-y-7 px-5 py-8 sm:px-8">
       <div className="text-center">
-        <h2 className="text-2xl font-bold text-gray-900">ðŸŽ™ï¸ Tutor de PronunciaciÃ³n</h2>
-        <p className="text-gray-500 mt-1">GrÃ¡bate diciendo la frase y recibe feedback instantÃ¡neo</p>
+        <h2 className="text-3xl font-extrabold tracking-tight text-slate-900 sm:text-4xl">🎙️ Tutor de Pronunciación</h2>
+        <p className="mt-2 text-base text-slate-500">GrÃ¡bate diciendo la frase y recibe feedback instantÃ¡neo</p>
       </div>
 
       {/* Selectores */}
-      <div className="flex gap-4 justify-center">
+      <div className="flex flex-wrap justify-center gap-3">
         <select
           value={language}
           onChange={(e) => setLanguage(e.target.value)}
-          className="px-4 py-2 rounded-lg border border-gray-300"
+          className="rounded-full border border-slate-200 bg-white px-5 py-3 text-sm font-semibold text-slate-700 shadow-sm transition-all duration-300 hover:border-blue-300 hover:shadow-md focus:ring-2 focus:ring-blue-500"
         >
           <option value="en">ðŸ‡¬ðŸ‡§ InglÃ©s</option>
           <option value="fr">ðŸ‡«ðŸ‡· FrancÃ©s</option>
@@ -168,7 +168,7 @@ export default function PronunciationTutor({ userId = "demo-user" }: { userId?: 
         <select
           value={level}
           onChange={(e) => setLevel(e.target.value)}
-          className="px-4 py-2 rounded-lg border border-gray-300"
+          className="rounded-full border border-slate-200 bg-white px-5 py-3 text-sm font-semibold text-slate-700 shadow-sm transition-all duration-300 hover:border-blue-300 hover:shadow-md focus:ring-2 focus:ring-blue-500"
         >
           <option value="A1">A1 - Principiante</option>
           <option value="A2">A2 - Elemental</option>
@@ -178,12 +178,12 @@ export default function PronunciationTutor({ userId = "demo-user" }: { userId?: 
 
       {/* Frase actual */}
       {currentPhrase && (
-        <div className="bg-blue-50 rounded-xl p-6 text-center">
-          <p className="text-2xl font-semibold text-gray-900">{currentPhrase.phrase}</p>
-          <p className="text-gray-500 mt-2">{currentPhrase.translation}</p>
+        <div className="rounded-2xl border border-blue-100 bg-gradient-to-br from-blue-50 via-sky-50 to-white p-8 text-center shadow-lg shadow-blue-100/60 sm:p-10">
+          <p className="text-3xl font-extrabold leading-tight tracking-tight text-slate-900 sm:text-4xl">{currentPhrase.phrase}</p>
+          <p className="mt-3 text-slate-500">{currentPhrase.translation}</p>
           <button
             onClick={playReference}
-            className="mt-4 px-4 py-2 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition"
+            className="mt-6 rounded-xl bg-blue-600 px-6 py-3 font-semibold text-white shadow-md shadow-blue-200 transition-all duration-300 hover:scale-105 hover:bg-blue-700 active:scale-95 focus:ring-2 focus:ring-blue-500"
           >
             ðŸ”Š Escuchar referencia
           </button>
@@ -196,35 +196,35 @@ export default function PronunciationTutor({ userId = "demo-user" }: { userId?: 
           <button
             onClick={startRecording}
             disabled={isAnalyzing}
-            className="w-20 h-20 rounded-full bg-red-500 text-white text-3xl flex items-center justify-center hover:bg-red-600 transition disabled:opacity-50"
+            className="flex h-24 w-24 items-center justify-center rounded-full bg-gradient-to-br from-red-500 to-rose-600 text-4xl text-white shadow-xl shadow-red-200 transition-all duration-300 hover:scale-105 active:scale-95 disabled:opacity-50 focus:ring-2 focus:ring-blue-500"
           >
             ðŸŽ¤
           </button>
         ) : (
           <button
             onClick={stopRecording}
-            className="w-20 h-20 rounded-full bg-gray-700 text-white text-3xl flex items-center justify-center hover:bg-gray-800 transition animate-pulse"
+            className="flex h-24 w-24 items-center justify-center rounded-full bg-red-700 text-4xl text-white shadow-xl shadow-red-200 ring-8 ring-red-100 transition-all duration-300 animate-pulse hover:scale-105 active:scale-95 focus:ring-2 focus:ring-red-400"
           >
             â¹
           </button>
         )}
-        <p className="text-sm text-gray-500">
+        <p className="text-sm font-medium text-slate-500">
           {isRecording ? "Grabando... Pulsa para parar" : isAnalyzing ? "Analizando..." : "Pulsa para grabar"}
         </p>
       </div>
 
       {/* Error */}
       {error && (
-        <div className="bg-red-50 text-red-700 p-4 rounded-lg text-center">{error}</div>
+        <div className="rounded-2xl border border-red-200 bg-red-50 p-4 text-center font-medium text-red-700 shadow-sm">{error}</div>
       )}
 
       {/* Resultado */}
       {result && (
-        <div className="bg-white border-2 border-gray-200 rounded-xl p-6 space-y-4">
+        <div className="space-y-5 rounded-2xl border border-slate-100 bg-white p-6 shadow-lg shadow-slate-200/70 sm:p-8">
           <div className="flex items-center justify-between">
-            <span className="text-lg font-semibold">PuntuaciÃ³n</span>
+            <span className="text-lg font-bold text-slate-800">PuntuaciÃ³n</span>
             <span
-              className={`text-4xl font-bold ${
+              className={`text-4xl font-black tracking-tight ${
                 result.score >= 75 ? "text-green-600" : result.score >= 50 ? "text-yellow-600" : "text-red-600"
               }`}
             >
@@ -233,9 +233,9 @@ export default function PronunciationTutor({ userId = "demo-user" }: { userId?: 
           </div>
 
           {/* Barra de progreso */}
-          <div className="w-full bg-gray-200 rounded-full h-3">
+          <div className="h-4 w-full overflow-hidden rounded-full bg-gradient-to-r from-red-100 via-yellow-100 to-green-100">
             <div
-              className={`h-3 rounded-full transition-all ${
+              className={`h-4 rounded-full bg-gradient-to-r from-red-500 via-yellow-400 to-green-500 transition-all duration-700 ${
                 result.score >= 75 ? "bg-green-500" : result.score >= 50 ? "bg-yellow-500" : "bg-red-500"
               }`}
               style={{ width: `${result.score}%` }}
@@ -243,19 +243,19 @@ export default function PronunciationTutor({ userId = "demo-user" }: { userId?: 
           </div>
 
           <div>
-            <p className="text-sm text-gray-500">Lo que detectamos:</p>
-            <p className="text-gray-800 italic">"{result.transcription}"</p>
+            <p className="text-sm font-medium text-slate-500">Lo que detectamos:</p>
+            <p className="text-lg italic text-slate-500">"{result.transcription}"</p>
           </div>
 
           <div>
-            <p className="text-sm text-gray-500">Feedback:</p>
-            <p className="text-gray-800">{result.feedback}</p>
+            <p className="text-sm font-medium text-slate-500">Feedback:</p>
+            <p className="leading-relaxed text-slate-800">{result.feedback}</p>
           </div>
 
           {result.phoneticIssues.length > 0 && (
             <div>
-              <p className="text-sm text-gray-500">Problemas detectados:</p>
-              <ul className="list-disc list-inside text-gray-700">
+              <p className="text-sm font-medium text-slate-500">Problemas detectados:</p>
+              <ul className="list-disc list-inside text-slate-700">
                 {result.phoneticIssues.map((issue, i) => (
                   <li key={i}>{issue}</li>
                 ))}
@@ -265,7 +265,7 @@ export default function PronunciationTutor({ userId = "demo-user" }: { userId?: 
 
           <button
             onClick={nextPhrase}
-            className="w-full py-3 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition"
+            className="w-full rounded-xl bg-blue-600 py-4 font-bold text-white shadow-md transition-all duration-300 hover:scale-[1.02] hover:bg-blue-700 active:scale-95 focus:ring-2 focus:ring-blue-500"
           >
             Siguiente frase â†’
           </button>

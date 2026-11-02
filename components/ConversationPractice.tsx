@@ -1,4 +1,4 @@
-﻿"use client";
+"use client";
 
 import { useState, useRef, useEffect } from "react";
 
@@ -320,13 +320,13 @@ export default function ConversationPractice({ userId = "demo-user" }: { userId?
 
   if (!selectedScenario) {
     return (
-      <div className="max-w-2xl mx-auto p-6 space-y-6">
+      <div className="mx-auto max-w-3xl space-y-7 px-5 py-8 sm:px-8">
         <div className="text-center">
-          <h2 className="text-2xl font-bold text-gray-900">ðŸ’¬ ConversaciÃ³n Simulada</h2>
-          <p className="text-gray-500 mt-1">Practica con un personaje IA que te corrige en tiempo real</p>
+          <h2 className="text-3xl font-extrabold tracking-tight text-slate-900 sm:text-4xl">ðŸ’¬ ConversaciÃ³n Simulada</h2>
+          <p className="mt-2 text-base text-slate-500">Practica con un personaje IA que te corrige en tiempo real</p>
         </div>
 
-        {error && <div className="bg-red-50 text-red-700 p-4 rounded-lg text-center">{error}</div>}
+        {error && <div className="rounded-2xl border border-red-200 bg-red-50 p-4 text-center font-medium text-red-700 shadow-sm">{error}</div>}
 
         <div className="grid gap-4">
           {scenarios.map((scenario) => (
@@ -334,19 +334,19 @@ export default function ConversationPractice({ userId = "demo-user" }: { userId?
               key={scenario.id}
               onClick={() => startConversation(scenario)}
               disabled={isLoading}
-              className="text-left p-5 bg-white border-2 border-gray-200 rounded-xl hover:border-blue-500 hover:shadow-md transition disabled:opacity-50"
+              className="group w-full rounded-2xl border border-slate-200 bg-white p-6 text-left shadow-md transition-all duration-300 hover:scale-[1.02] hover:border-blue-300 hover:shadow-lg active:scale-[.99] disabled:opacity-50 focus:ring-2 focus:ring-blue-500"
             >
               <div className="flex items-start justify-between">
                 <div>
-                  <h3 className="text-lg font-semibold text-gray-900">{scenario.title}</h3>
-                  <p className="text-gray-500 mt-1">{scenario.description}</p>
-                  <p className="text-sm text-gray-400 mt-2">ðŸ“ {scenario.setting}</p>
+                  <h3 className="text-xl font-bold text-slate-900">{scenario.title}</h3>
+                  <p className="mt-2 text-slate-500">{scenario.description}</p>
+                  <p className="mt-3 text-sm text-slate-400">ðŸ“ {scenario.setting}</p>
                 </div>
                 <div className="flex flex-col items-end gap-1">
-                  <span className="text-2xl">
+                  <span className="text-4xl">
                     {scenario.language === "en" ? "ðŸ‡¬ðŸ‡§" : scenario.language === "fr" ? "ðŸ‡«ðŸ‡·" : "ðŸ‡ªðŸ‡¸"}
                   </span>
-                  <span className="text-xs bg-gray-100 px-2 py-1 rounded">{scenario.level}</span>
+                  <span className="rounded-full bg-blue-50 px-3 py-1 text-xs font-bold text-blue-700">{scenario.level}</span>
                 </div>
               </div>
             </button>
@@ -357,15 +357,15 @@ export default function ConversationPractice({ userId = "demo-user" }: { userId?
   }
 
   return (
-    <div className="max-w-2xl mx-auto p-6 flex flex-col h-[600px]">
+    <div className="mx-auto flex h-[min(760px,85vh)] max-w-4xl flex-col rounded-3xl border border-slate-100 bg-white p-5 shadow-xl shadow-slate-200/70 sm:p-7">
       <div className="flex items-center justify-between mb-4">
         <div>
-          <h2 className="text-lg font-bold text-gray-900">{selectedScenario.title}</h2>
-          <p className="text-sm text-gray-500">ðŸ“ {selectedScenario.setting}</p>
+          <h2 className="text-xl font-bold text-slate-900">{selectedScenario.title}</h2>
+          <p className="text-sm text-slate-500">ðŸ“ {selectedScenario.setting}</p>
         </div>
         <button
           onClick={reset}
-          className="px-3 py-1.5 text-sm bg-gray-100 rounded-lg hover:bg-gray-200 transition"
+          className="rounded-xl bg-slate-100 px-4 py-2 text-sm font-semibold text-slate-700 transition-all duration-300 hover:scale-105 hover:bg-slate-200 active:scale-95"
         >
           â† Cambiar escenario
         </button>
@@ -375,15 +375,15 @@ export default function ConversationPractice({ userId = "demo-user" }: { userId?
         {messages.map((msg, i) => (
           <div key={i} className={`flex ${msg.role === "user" ? "justify-end" : "justify-start"}`}>
             <div
-              className={`max-w-[75%] rounded-2xl p-4 ${
-                msg.role === "user" ? "bg-blue-600 text-white" : "bg-gray-100 text-gray-900"
+              className={`max-w-[85%] rounded-2xl p-4 shadow-sm sm:max-w-[75%] ${
+                msg.role === "user" ? "bg-gradient-to-br from-blue-600 to-blue-700 text-white shadow-blue-200" : "bg-slate-100 text-slate-800"
               }`}
             >
-              <p>{msg.content}</p>
+              <p className="whitespace-pre-wrap leading-relaxed">{msg.content}</p>\n              {msg.role === "assistant" && (\n                <button type="button" onClick={() => void speakMessage(msg.content, selectedScenario.language)} className="mt-3 inline-flex items-center gap-2 rounded-full bg-white/80 px-3 py-1.5 text-xs font-semibold text-blue-700 shadow-sm transition-all duration-300 hover:scale-105 hover:bg-white active:scale-95" aria-label="Escuchar mensaje">🔊 Escuchar</button>\n              )}
               {msg.correction && (
-                <div className="mt-2 pt-2 border-t border-gray-300/50">
-                  <p className="text-xs font-semibold text-yellow-600">ðŸ“ CorrecciÃ³n</p>
-                  <p className="text-sm text-gray-700 mt-1">{msg.correction}</p>
+                <div className="mt-3 rounded-xl border border-yellow-200 bg-yellow-50 p-3">
+                  <p className="text-xs font-bold text-yellow-700">ðŸ“ CorrecciÃ³n</p>
+                  <p className="mt-1 text-sm text-slate-700">{msg.correction}</p>
                 </div>
               )}
             </div>
@@ -391,8 +391,8 @@ export default function ConversationPractice({ userId = "demo-user" }: { userId?
         ))}
         {isLoading && (
           <div className="flex justify-start">
-            <div className="bg-gray-100 rounded-2xl p-4">
-              <span className="animate-pulse">Escribiendo...</span>
+            <div className="rounded-2xl bg-slate-100 p-4 text-slate-600">
+              <span className="animate-pulse">IA escribiendo<span className="ml-1 inline-block animate-bounce">...</span></span>
             </div>
           </div>
         )}
@@ -400,7 +400,7 @@ export default function ConversationPractice({ userId = "demo-user" }: { userId?
       </div>
 
       {hint && (
-        <div className="mb-3 rounded-xl border border-yellow-300 bg-yellow-50 p-4 text-yellow-900 shadow-sm">
+        <div className="mb-3 animate-[slideDown_.3s_ease-out] rounded-2xl border border-yellow-300 bg-yellow-50 p-4 text-yellow-950 shadow-md">
           <div className="flex items-start justify-between gap-3">
             <div>
               <p className="text-sm font-semibold">ðŸ’¡ Pista para responder</p>
@@ -410,7 +410,7 @@ export default function ConversationPractice({ userId = "demo-user" }: { userId?
               type="button"
               onClick={() => setHint(null)}
               aria-label="Cerrar pista"
-              className="rounded-lg px-2 py-1 text-yellow-800 hover:bg-yellow-100 transition"
+              className="rounded-full px-3 py-2 text-yellow-800 transition-all duration-300 hover:scale-105 hover:bg-yellow-100 active:scale-95"
             >
               âœ•
             </button>
@@ -432,9 +432,9 @@ export default function ConversationPractice({ userId = "demo-user" }: { userId?
       {isAudioLoading && (
         <p className="mb-2 text-sm text-gray-500" aria-live="polite">Generando voz para la respuesta...</p>
       )}
-      {error && <div className="mb-2 rounded-lg bg-red-50 p-3 text-sm text-red-700">{error}</div>}
+      {error && <div className="mb-2 rounded-2xl border border-red-200 bg-red-50 p-4 text-sm text-red-700">{error}</div>}
 
-      <div className="flex gap-2 pt-4 border-t border-gray-200">
+      <div className="flex flex-wrap gap-2 border-t border-slate-100 pt-4">
         <input
           type="text"
           value={input}
@@ -442,7 +442,7 @@ export default function ConversationPractice({ userId = "demo-user" }: { userId?
           onKeyDown={(e) => e.key === "Enter" && sendMessage()}
           placeholder="Escribe o dicta tu respuesta..."
           disabled={isLoading || isVoiceProcessing}
-          className="flex-1 min-w-0 px-4 py-3 rounded-xl border border-gray-300 focus:outline-none focus:ring-2 focus:ring-blue-500 disabled:opacity-50"
+          className="min-w-0 flex-1 rounded-2xl border border-slate-200 bg-slate-50 px-5 py-3 text-slate-800 transition-all duration-300 placeholder:text-slate-400 focus:border-blue-400 focus:bg-white focus:outline-none focus:ring-2 focus:ring-blue-500 disabled:opacity-50"
         />
         <button
           type="button"
@@ -450,7 +450,7 @@ export default function ConversationPractice({ userId = "demo-user" }: { userId?
           disabled={isLoading || isVoiceProcessing}
           aria-label={isRecording ? "Detener grabaciÃ³n" : "Grabar respuesta"}
           title={isRecording ? "Detener grabaciÃ³n" : "Grabar respuesta"}
-          className={`px-4 py-3 rounded-xl border transition disabled:opacity-50 ${
+          className={`rounded-full border p-3 text-xl transition-all duration-300 hover:scale-105 active:scale-95 disabled:opacity-50 ${
             isRecording ? "border-red-500 bg-red-50 text-red-700 animate-pulse" : "border-gray-300 bg-white hover:bg-gray-50"
           }`}
         >
@@ -459,7 +459,7 @@ export default function ConversationPractice({ userId = "demo-user" }: { userId?
         <button
           onClick={sendMessage}
           disabled={isLoading || isVoiceProcessing || !input.trim()}
-          className="px-5 py-3 bg-blue-600 text-white rounded-xl hover:bg-blue-700 transition disabled:opacity-50"
+          className="rounded-xl bg-blue-600 px-6 py-3 font-bold text-white shadow-md transition-all duration-300 hover:scale-105 hover:bg-blue-700 active:scale-95 disabled:opacity-50 focus:ring-2 focus:ring-blue-500"
         >
           Enviar
         </button>
@@ -469,7 +469,7 @@ export default function ConversationPractice({ userId = "demo-user" }: { userId?
           type="button"
           onClick={generateHint}
           disabled={isLoading || isHintLoading}
-          className="self-start px-4 py-2 bg-yellow-100 text-yellow-800 rounded-lg hover:bg-yellow-200 transition disabled:opacity-50"
+          className="self-start rounded-xl bg-yellow-100 px-4 py-2 font-semibold text-yellow-900 transition-all duration-300 hover:scale-105 hover:bg-yellow-200 active:scale-95 disabled:opacity-50"
         >
           {isHintLoading ? "Generando pista..." : "ðŸ’¡ Pista"}
         </button>
@@ -477,7 +477,7 @@ export default function ConversationPractice({ userId = "demo-user" }: { userId?
           type="button"
           onClick={replayLastMessage}
           disabled={!lastSpokenMessage || isAudioLoading}
-          className="px-4 py-2 bg-gray-100 text-gray-700 rounded-lg hover:bg-gray-200 transition disabled:opacity-50"
+          className="rounded-xl bg-slate-100 px-4 py-2 font-semibold text-slate-700 transition-all duration-300 hover:scale-105 hover:bg-slate-200 active:scale-95 disabled:opacity-50"
         >
           ðŸ”Š Volver a escuchar
         </button>
