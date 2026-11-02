@@ -2,7 +2,6 @@ import { cookies } from "next/headers";
 import { NextRequest, NextResponse } from "next/server";
 import { getCourseDB } from "@/lib/db";
 
-export const runtime = "edge";
 const json = (body: unknown, status = 200) => NextResponse.json(body, { status });
 async function learnerFromSession() {
   const token = (await cookies()).get("lf_session")?.value;
