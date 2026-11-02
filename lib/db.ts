@@ -19,6 +19,7 @@ type Env = {
   COURSE_DB: D1Database;
   LINGUAFLY_MEDIA: { put(key: string, value: ArrayBuffer | ReadableStream): Promise<unknown> };
   AI: { run(model: string, input: Record<string, unknown>): Promise<unknown> };
+  AI_RATE_LIMITER?: { limit(options: { key: string }): Promise<{ success: boolean }> };
 };
 async function env(): Promise<Env> {
   const { env } = await getCloudflareContext();
