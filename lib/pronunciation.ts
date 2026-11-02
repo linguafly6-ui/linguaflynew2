@@ -1,60 +1,49 @@
-﻿import { getEnv } from "./cf-context";
+import { getEnv } from "./cf-context";
 
 /**
  * ============================================================
- * TUTOR DE PRONUNCIACIÃ“N
+ * TUTOR DE PRONUNCIACIÓN
  * ============================================================
  * Transcribe el audio del usuario con Workers AI (Whisper),
- * compara con la frase objetivo y devuelve puntuaciÃ³n + feedback.
+ * compara con la frase objetivo y devuelve puntuación + feedback.
  */
 
 // Modelos de Workers AI disponibles en plan Free
-const STT_MODEL = "@cf/openai/whisper-tiny-en"; // speech-to-text inglÃ©s
-const STT_MODEL_MULTI = "@cf/openai/whisper"; // multilingÃ¼e si disponible
-const TTS_MODEL = "@cf/myshell-ai/melotts"; // text-to-speech multilingÃ¼e
+const STT_MODEL = "@cf/openai/whisper-tiny-en";
+const TTS_MODEL = "@cf/myshell-ai/melotts";
 
 export interface PronunciationResult {
-  score: number; // 0-100
+  score: number;
   transcription: string;
   feedback: string;
   phoneticIssues: string[];
 }
 
-/**
- * Transcribe audio usando Workers AI Whisper.
- * Recibe el audio en formato WebM/WAV como ArrayBuffer.
- */
 export async function transcribeAudio(
   audio: ArrayBuffer,
   language: string
 ): Promise<string> {
   const env = getEnv();
-  const model = language === "en" ? STT_MODEL : STT_MODEL;
+  if (!env?.AI) {
+    throw new Error("Cloudflare Workers AI binding (env.AI) is not available");
+  }
 
-  const response = await env.AI.run(model as any, {
+  const response = await env.AI.run(STT_MODEL as any, {
     audio: [...new Uint8Array(audio)],
   });
 
-  // Whisper devuelve { text: string }
   return (response as any).text?.trim() ?? "";
 }
 
-/**
- * Calcula similitud entre dos strings usando distancia de Levenshtein
- * normalizada. No requiere librerÃ­as externas.
- */
 export function calculateSimilarity(a: string, b: string): number {
   const s1 = a.toLowerCase().trim().replace(/[.,!?;:]/g, "");
   const s2 = b.toLowerCase().trim().replace(/[.,!?;:]/g, "");
 
   if (s1 === s2) return 100;
-
   const matrix: number[][] = [];
   const len1 = s1.length;
   const len2 = s2.length;
-
-  if (len1 === 0) return 0;
-  if (len2 === 0) return 0;
+  if (len1 === 0 || len2 === 0) return 0;
 
   for (let i = 0; i <= len1; i++) matrix[i] = [i];
   for (let j = 0; j <= len2; j++) matrix[0][j] = j;
@@ -75,9 +64,6 @@ export function calculateSimilarity(a: string, b: string): number {
   return Math.round(((maxLen - distance) / maxLen) * 100);
 }
 
-/**
- * Detecta problemas fonÃ©ticos especÃ­ficos comparando palabras.
- */
 export function detectPhoneticIssues(
   target: string,
   transcribed: string
@@ -86,7 +72,6 @@ export function detectPhoneticIssues(
   const targetWords = target.toLowerCase().split(/\s+/);
   const transcribedWords = transcribed.toLowerCase().split(/\s+/);
 
-  // Palabras omitidas
   const missing = targetWords.filter(
     (w) => !transcribedWords.some((tw) => tw.includes(w) || w.includes(tw))
   );
@@ -94,7 +79,6 @@ export function detectPhoneticIssues(
     issues.push(`Palabras no detectadas: ${missing.join(", ")}`);
   }
 
-  // Palabras extraÃ±as
   const extra = transcribedWords.filter(
     (w) => !targetWords.some((tw) => tw.includes(w) || w.includes(tw))
   );
@@ -105,41 +89,63 @@ export function detectPhoneticIssues(
   return issues;
 }
 
-/**
- * Genera feedback textual segÃºn la puntuaciÃ³n.
- */
 export function generateFeedback(score: number, issues: string[]): string {
   if (score >= 90) {
-    return "Â¡Excelente pronunciaciÃ³n! Suena muy natural.";
+    return "¡Excelente pronunciación! Suena muy natural.";
   } else if (score >= 75) {
-    return "Muy bien. PequeÃ±os detalles a pulir: " + issues.join("; ");
+    return "Muy bien. Pequeños detalles a pulir: " + issues.join("; ");
   } else if (score >= 50) {
     return "Vas por buen camino. Practica las palabras que no se detectaron claramente.";
   } else {
-    return "Sigue intentÃ¡ndolo. Escucha la frase de referencia y repite despacio, palabra por palabra.";
+    return "Sigue intentándolo. Escucha la frase de referencia y repite despacio, palabra por palabra.";
   }
 }
 
 /**
- * Genera audio de referencia con TTS y lo guarda en R2.
+ * Genera audio con MeloTTS y lo guarda en R2 como audio/mpeg.
  */
 export async function generateReferenceAudio(
   phrase: string,
   language: string
 ): Promise<string> {
   const env = getEnv();
-  const r2Key = `pronunciation-ref/${Date.now()}-${Math.random().toString(36).slice(2)}.mp3`;
 
-  const response = await env.AI.run(TTS_MODEL as any, {
+  if (!env?.AI) {
+    throw new Error("Cloudflare Workers AI binding (env.AI) is not available");
+  }
+  if (!env?.LINGUAFLY_MEDIA) {
+    throw new Error("Cloudflare R2 binding (env.LINGUAFLY_MEDIA) is not available");
+  }
+
+  const result = await env.AI.run(TTS_MODEL as any, {
     text: phrase,
-    lang: language,
+    lang: language || "en",
   });
 
-  // Melotts devuelve audio como Uint8Array en response.audio
-  const audioData = (response as any).audio;
-  if (audioData) {
-    await env.LINGUAFLY_MEDIA.put(r2Key, audioData);
+  // Workers AI puede entregar los bytes directamente o dentro de { audio }.
+  const audio = (result as any)?.audio ?? result;
+  let audioData: ArrayBuffer | Uint8Array;
+
+  if (audio instanceof ArrayBuffer || ArrayBuffer.isView(audio)) {
+    audioData = audio as ArrayBuffer | Uint8Array;
+  } else if (audio && typeof audio.arrayBuffer === "function") {
+    audioData = await audio.arrayBuffer();
+  } else {
+    throw new Error(
+      `MeloTTS returned no usable audio payload (response type: ${Object.prototype.toString.call(result)})`
+    );
   }
+
+  const byteLength =
+    audioData instanceof ArrayBuffer ? audioData.byteLength : audioData.byteLength;
+  if (byteLength === 0) {
+    throw new Error("MeloTTS returned an empty audio payload");
+  }
+
+  const r2Key = `pronunciation-ref/${Date.now()}-${Math.random().toString(36).slice(2)}.mp3`;
+  await env.LINGUAFLY_MEDIA.put(r2Key, audioData, {
+    httpMetadata: { contentType: "audio/mpeg" },
+  });
 
   return r2Key;
 }
