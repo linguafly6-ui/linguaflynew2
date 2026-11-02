@@ -1,5 +1,8 @@
 ﻿import { getCourseDB } from "./db";
 
+export type CourseLevel = { level: string; title: string; description: string | null; status: string; units: number };
+export type CourseUnit = { course_id: string; level: string; unit_number: number; unit_id: string; title: string; status: string };
+
 const LEVELS = new Set(["A1", "A2", "B1", "B2", "C1", "C2"]);
 function validLevel(value: string) {
   const level = value.trim().toUpperCase();

@@ -39,7 +39,7 @@ export default async function AcademyPathPage({ params }: Props) {
         <Link href="/academia" className="font-bold text-blue-700">← Academy</Link>
         <h1 className="mt-8 text-4xl font-black">{level.toUpperCase()} course</h1>
         <div className="mt-8 grid gap-3 sm:grid-cols-2">
-          {units.map((unit) => (
+          {units.map((unit: Awaited<ReturnType<typeof getCourseUnits>>[number]) => (
             <Link key={unit.unit_id} href={`/academia/${level.toLowerCase()}/${unit.unit_number}`} className="rounded-xl border bg-white p-5">
               <div className="flex justify-between gap-3">
                 <h2 className="font-bold">Unit {unit.unit_number}: {unit.title}</h2>
@@ -76,7 +76,7 @@ export default async function AcademyPathPage({ params }: Props) {
               <h2 className="text-xl font-bold">{String(exercises[0].section_title)}</h2>
               <p className="mt-1 text-sm text-slate-500">{String(exercises[0].section_instructions || "")}</p>
               <div className="mt-5 space-y-4">
-                {exercises.map((exercise) => (
+                {exercises.map((exercise: typeof data.exercises[number]) => (
                   <ExerciseCard
                     key={String(exercise.exercise_id)}
                     exerciseId={String(exercise.exercise_id)}
