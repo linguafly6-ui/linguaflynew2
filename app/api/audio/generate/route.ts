@@ -1,5 +1,5 @@
 import { NextRequest, NextResponse } from "next/server";
-import { getAI } from "@/lib/db";
+import { getAI, getAIRateLimiter } from "@/lib/db";
 
 export const runtime = "edge";
 export async function POST(request: NextRequest) {
@@ -7,6 +7,9 @@ export async function POST(request: NextRequest) {
     const body = await request.json() as { text?: string; language?: string };
     const text = typeof body.text === "string" ? body.text.trim() : "";
     if (!text || text.length > 500) return NextResponse.json({ error: "Provide text between 1 and 500 characters." }, { status: 400 });
+    const ip = request.headers.get("cf-connecting-ip") || "unknown";
+    const limiter = await getAIRateLimiter();
+    if (limiter) { const allowed = await limiter.limit({ key: ip }); if (!allowed.success) return NextResponse.json({ error: "Audio limit reached. Please try again shortly." }, { status: 429 }); }
     const language = body.language === "es" ? "es" : "en";
     const ai = await getAI();
     const result = await ai.run("@cf/myshell-ai/melotts", { text, lang: language }) as { audio?: string; audio_base64?: string };
