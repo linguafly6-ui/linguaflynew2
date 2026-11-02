@@ -164,7 +164,7 @@ export default function ConversationPractice({ userId = "demo-user" }: { userId?
         });
         audioChunksRef.current = [];
         if (!audioBlob.size) {
-          setError("La grabación está vacÃ­a. IntÃ©ntalo de nuevo.");
+          setError("La grabación está vacía. Inténtalo de nuevo.");
           return;
         }
 
@@ -322,7 +322,7 @@ export default function ConversationPractice({ userId = "demo-user" }: { userId?
     return (
       <div className="mx-auto max-w-3xl space-y-7 px-5 py-8 sm:px-8">
         <div className="text-center">
-          <h2 className="text-3xl font-extrabold tracking-tight text-slate-900 sm:text-4xl">💬 ConversaciÃ³n Simulada</h2>
+          <h2 className="text-3xl font-extrabold tracking-tight text-slate-900 sm:text-4xl">💬 Conversación Simulada</h2>
           <p className="mt-2 text-base text-slate-500">Practica con un personaje IA que te corrige en tiempo real</p>
         </div>
 
@@ -385,7 +385,7 @@ export default function ConversationPractice({ userId = "demo-user" }: { userId?
               )}
               {msg.correction && (
                 <div className="mt-3 rounded-xl border border-yellow-200 bg-yellow-50 p-3">
-                  <p className="text-xs font-bold text-yellow-700">📝 CorrecciÃ³n</p>
+                  <p className="text-xs font-bold text-yellow-700">📝 Corrección</p>
                   <p className="mt-1 text-sm text-slate-700">{msg.correction}</p>
                 </div>
               )}

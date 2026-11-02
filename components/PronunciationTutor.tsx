@@ -6,7 +6,7 @@ import { useState, useRef, useEffect } from "react";
  * ============================================================
  * COMPONENTE: Tutor de Pronunciación
  * ============================================================
- * Graba audio del usuario, lo envÃ­a a Workers AI Whisper,
+ * Graba audio del usuario, lo envía a Workers AI Whisper,
  * y muestra puntuación + feedback.
  */
 
@@ -222,7 +222,7 @@ export default function PronunciationTutor({ userId = "demo-user" }: { userId?: 
       {result && (
         <div className="space-y-5 rounded-2xl border border-slate-100 bg-white p-6 shadow-lg shadow-slate-200/70 sm:p-8">
           <div className="flex items-center justify-between">
-            <span className="text-lg font-bold text-slate-800">PuntuaciÃ³n</span>
+            <span className="text-lg font-bold text-slate-800">Puntuación</span>
             <span
               className={`text-4xl font-black tracking-tight ${
                 result.score >= 75 ? "text-green-600" : result.score >= 50 ? "text-yellow-600" : "text-red-600"

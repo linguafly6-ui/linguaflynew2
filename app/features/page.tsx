@@ -17,7 +17,7 @@ type Tab = "pronunciation" | "conversation" | "repetition";
 
 const TABS: { id: Tab; label: string; icon: string; desc: string }[] = [
   { id: "pronunciation", label: "Pronunciación", icon: "🎙️", desc: "Feedback instantáneo con IA" },
-  { id: "conversation", label: "ConversaciÃ³n", icon: "💬", desc: "Role-play con personaje IA" },
+  { id: "conversation", label: "Conversación", icon: "💬", desc: "Role-play con personaje IA" },
   { id: "repetition", label: "Repaso", icon: "🧠", desc: "Repetición espaciada adaptativa" },
 ];
 
@@ -32,7 +32,7 @@ export default function FeaturesPage() {
           <div className="mb-4 inline-flex items-center gap-3 rounded-full border border-white/20 bg-white/10 px-4 py-2 text-sm font-semibold text-blue-100 shadow-sm backdrop-blur"><span>✨</span><span>Tu estudio inteligente</span></div>
           <h1 className="text-4xl font-extrabold tracking-tight sm:text-5xl">🦅 LinguaFly</h1>
           <p className="mt-3 max-w-2xl text-lg leading-relaxed text-blue-100">
-            Aprende idiomas con IA: pronunciación, conversación y repeticiÃ³n adaptativa
+            Aprende idiomas con IA: pronunciación, conversación y repetición adaptativa
           </p>
         </div>
       </div>

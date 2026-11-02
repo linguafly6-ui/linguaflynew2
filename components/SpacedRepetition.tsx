@@ -6,7 +6,7 @@ import { useState, useEffect, useCallback } from "react";
  * ============================================================
  * COMPONENTE: Repetición Espaciada Adaptativa
  * ============================================================
- * Sistema SM-2 con generaciÃ³n de contenido adaptativo por IA.
+ * Sistema SM-2 con generación de contenido adaptativo por IA.
  * Cuando el usuario falla, la IA crea un nuevo ejemplo.
  */
 
@@ -100,7 +100,7 @@ export default function SpacedRepetition({ userId = "demo-user" }: { userId?: st
 
       nextItem();
     } catch (err) {
-      setError("Error al procesar la revisiÃ³n");
+      setError("Error al procesar la revisión");
     } finally {
       setIsSubmitting(false);
     }
@@ -118,7 +118,7 @@ export default function SpacedRepetition({ userId = "demo-user" }: { userId?: st
     }
   };
 
-  // Pantalla de estadÃ­sticas cuando no hay items
+  // Pantalla de estadísticas cuando no hay items
   if (items.length === 0) {
     return (
       <div className="mx-auto max-w-4xl space-y-7 px-5 py-8 sm:px-8">
