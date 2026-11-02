@@ -12,7 +12,6 @@ function decodeSegment(value: string) {
 
 export default async function BlogPathPage({ params }: Props) {
   const { path = [] } = await params;
-  console.log("blog path:", path);
 
   if (path.length === 1) {
     const category = decodeSegment(path[0]);
