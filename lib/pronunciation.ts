@@ -117,12 +117,13 @@ export async function generateReferenceAudio(
     throw new Error("Cloudflare R2 binding (env.LINGUAFLY_MEDIA) is not available");
   }
 
+  // MeloTTS espera "prompt" (no "text") como texto de entrada.
   const result = await env.AI.run(TTS_MODEL as any, {
-    text: phrase,
+    prompt: phrase,
     lang: language || "en",
   });
 
-  // Workers AI puede entregar los bytes directamente o dentro de { audio }.
+  // Workers AI puede devolver los bytes directamente o dentro de { audio }.
   const audio = (result as any)?.audio ?? result;
   let audioData: ArrayBuffer | Uint8Array;
 
@@ -136,9 +137,7 @@ export async function generateReferenceAudio(
     );
   }
 
-  const byteLength =
-    audioData instanceof ArrayBuffer ? audioData.byteLength : audioData.byteLength;
-  if (byteLength === 0) {
+  if (audioData.byteLength === 0) {
     throw new Error("MeloTTS returned an empty audio payload");
   }
 
