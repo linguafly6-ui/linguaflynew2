@@ -20,7 +20,7 @@ const TABS: { id: Tab; label: string; icon: string; desc: string }[] = [
   { id: "pronunciation", label: "Pronunciación", icon: "🎙️", desc: "Feedback instantáneo con IA" },
   { id: "conversation", label: "Conversación", icon: "💬", desc: "Role-play con personaje IA" },
   { id: "repetition", label: "Repaso", icon: "🧠", desc: "Repetición espaciada adaptativa" },
-  { id: "course", label: "Curso", icon: "🎓", desc: "Un camino paso a paso por niveles" },
+  { id: "course", label: "Curso", icon: "🎓", desc: "Práctica oral automática por niveles" },
 ];
 
 export default function FeaturesPage() {
