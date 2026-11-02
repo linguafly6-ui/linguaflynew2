@@ -12,7 +12,7 @@ function SiteHeader() {
   return <header className="site-header border-b border-slate-200/70 bg-white/85 backdrop-blur-xl"><div className="site-header-inner mx-auto flex min-h-20 w-[min(1152px,calc(100%-2rem))] items-center justify-between gap-6">
     <Link href="/" className="brand text-2xl font-black tracking-tight text-slate-900" aria-label="LinguaFly home">LinguaFly<span>.</span></Link>
     <nav aria-label="Main navigation" className="site-nav flex items-center gap-6 text-sm font-semibold text-slate-600">
-      <Link href="/academia">Academy</Link><Link href="/blog">Blog</Link>
+      <Link href="/blog">Blog</Link>
     </nav>
   </div></header>;
 }
@@ -20,7 +20,7 @@ function SiteFooter() {
   return <footer className="site-footer mt-20 bg-slate-950 text-slate-300"><div className="site-footer-inner mx-auto grid w-[min(1152px,calc(100%-2rem))] grid-cols-1 items-center gap-5 py-10 md:grid-cols-2">
     <Link href="/" className="brand brand-footer">LinguaFly<span>.</span></Link>
     <p>Practical British English learning, from A1 to C2.</p>
-    <nav aria-label="Footer navigation"><Link href="/academia">Academy</Link><Link href="/blog">Blog</Link></nav>
+    <nav aria-label="Footer navigation"><Link href="/blog">Blog</Link></nav>
     <small>© {new Date().getFullYear()} LinguaFly</small>
   </div></footer>;
 }
