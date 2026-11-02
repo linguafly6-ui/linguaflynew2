@@ -42,7 +42,7 @@ export function markdownToHtml(markdown: string): string {
       else output.push("<tr>" + cells.map(x => `<td>${inline(x)}</td>`).join("") + "</tr>");
       continue;
     }
-    const item = /^[-*+]\s+(.+)$/.exec(line) || /^(\d+)\.\s+(.+)$/.exec(line);
+    const item = /^([-*+])\s+(.+)$/.exec(line) || /^(\d+)\.\s+(.+)$/.exec(line);
     if (item) { flush(); const next = /^\d/.test(item[1]) ? "ol" : "ul"; if (list !== next) { closeList(); output.push(`<${next}>`); list = next; } output.push(`<li>${inline(item[2])}</li>`); continue; }
     closeList(); if (quote) { output.push("</blockquote>"); quote = false; } paragraph.push(line);
   }
