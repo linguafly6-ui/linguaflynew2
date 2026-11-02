@@ -1,4 +1,4 @@
-import { getCloudflareContext } from "@opennextjs/cloudflare";
+﻿import { getCloudflareContext } from "@opennextjs/cloudflare";
 
 export interface D1Result<T> {
   results: T[];
@@ -11,12 +11,12 @@ export interface D1Statement {
   first<T = Record<string, unknown>>(): Promise<T | null>;
   run(): Promise<unknown>;
 }
-export interface D1Database {
+export interface any {
   prepare(query: string): D1Statement;
 }
 type Env = {
-  DB: D1Database;
-  COURSE_DB: D1Database;
+  DB: any;
+  COURSE_DB: any;
   LINGUAFLY_MEDIA: { put(key: string, value: ArrayBuffer | ReadableStream): Promise<unknown> };
   AI: { run(model: string, input: Record<string, unknown>): Promise<unknown> };
   AI_RATE_LIMITER?: { limit(options: { key: string }): Promise<{ success: boolean }> };

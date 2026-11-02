@@ -24,7 +24,7 @@ export async function POST(request: NextRequest, context: { params: Promise<{ le
     if (!learner) return json({ error: "Authentication required." }, 401);
     const { level, unit } = await context.params;
     if (!/^(a1|a2|b1|b2|c1|c2)$/i.test(level) || !/^[1-9]\d{0,2}$/.test(unit)) return json({ error: "Invalid course unit." }, 400);
-    const body = await request.json() as { exerciseId?: string; response?: unknown; idempotencyKey?: string; responseTimeMs?: number };
+    const body = await request.json() as any as { exerciseId?: string; response?: unknown; idempotencyKey?: string; responseTimeMs?: number };
     if (!body.exerciseId || body.exerciseId.length > 128 || typeof body.idempotencyKey !== "string" || !/^[\w-]{12,100}$/.test(body.idempotencyKey)) return json({ error: "exerciseId and a valid idempotencyKey are required." }, 400);
     const responseText = JSON.stringify(body.response);
     if (responseText.length > 12000) return json({ error: "Response is too large." }, 413);

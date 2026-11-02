@@ -1,4 +1,4 @@
-import { getCourseDB } from "./db";
+﻿import { getCourseDB } from "./db";
 
 const LEVELS = new Set(["A1", "A2", "B1", "B2", "C1", "C2"]);
 function validLevel(value: string) {
