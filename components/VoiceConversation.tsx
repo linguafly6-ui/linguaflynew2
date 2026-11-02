@@ -11,6 +11,7 @@ interface VoiceScenario {
   level: string;
   persona_prompt: string;
   opening_line: string;
+  system_prompt?: string;
 }
 interface VoiceMessage { role: "assistant" | "user"; content: string; correction?: string | null; }
 type Phase = "idle" | "speaking" | "listening" | "processing" | "thinking" | "completed";
@@ -248,6 +249,7 @@ export default function VoiceConversation({ scenario, userId = "demo-user", onCo
             description: scenario.description || "",
             setting: scenario.setting || "",
             persona: scenario.persona_prompt,
+            system_prompt: scenario.system_prompt || undefined,
           },
           language: scenario.language,
           level: scenario.level,
@@ -331,6 +333,12 @@ export default function VoiceConversation({ scenario, userId = "demo-user", onCo
       });
       const data = await response.json() as any;
       if (!response.ok || data.error) throw new Error(data.error || "No se pudo evaluar la conversación");
+      if (scenario.id.startsWith("a1-speaking-")) {
+        const saved = await fetch("/api/course/a1-speaking/progress", { method: "POST", headers: { "Content-Type": "application/json" }, body: JSON.stringify({ userId, unitId: Number(scenario.id.replace("a1-speaking-", "")), score: data.score, feedback: data.feedback }) });
+        const progress = await saved.json() as any;
+        if (!saved.ok) throw new Error(progress.error || "No se pudo guardar el progreso");
+        data.courseProgress = progress;
+      }
       setResult(data);
       setPhase("completed");
     } catch (err) {
