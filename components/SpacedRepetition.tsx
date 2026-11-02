@@ -174,7 +174,22 @@ export default function SpacedRepetition({ userId = "demo-user" }: { userId?: st
 
       {error && <div className="rounded-2xl border border-red-200 bg-red-50 p-4 text-center font-medium text-red-700 shadow-sm">{error}</div>}
 
-      {stats && (\n        <div className="grid grid-cols-2 gap-3 sm:grid-cols-4">\n          {[{ label: "Palabras", value: stats.totalItems, color: "text-blue-600", icon: "📚" }, { label: "Dominadas", value: stats.mastered, color: "text-green-600", icon: "🏆" }, { label: "Pendientes", value: stats.dueToday, color: "text-orange-600", icon: "⏳" }, { label: "Precisión", value: `${stats.accuracy}%`, color: "text-violet-600", icon: "🎯" }].map((stat) => (\n            <div key={stat.label} className="rounded-2xl border border-slate-100 bg-white p-4 shadow-sm">\n              <div className="flex items-center justify-between"><span className="text-xl">{stat.icon}</span><span className={`text-2xl font-black ${stat.color}`}>{stat.value}</span></div>\n              <p className="mt-1 text-xs font-semibold text-slate-500">{stat.label}</p>\n            </div>\n          ))}\n        </div>\n      )}\n      <div className="space-y-2">\n        <div className="flex justify-between text-xs font-semibold text-slate-500"><span>Tu progreso de hoy</span><span>Repaso {currentIndex + 1} de {items.length}</span></div>\n        <div className="h-2 overflow-hidden rounded-full bg-slate-200"><div className="h-full rounded-full bg-gradient-to-r from-blue-600 to-violet-600 transition-all duration-500" style={{ width: `${((currentIndex + 1) / items.length) * 100}%` }} /></div>\n      </div>\n\n      {/* Flashcard */}
+      {stats && (
+        <div className="grid grid-cols-2 gap-3 sm:grid-cols-4">
+          {[{ label: "Palabras", value: stats.totalItems, color: "text-blue-600", icon: "📚" }, { label: "Dominadas", value: stats.mastered, color: "text-green-600", icon: "🏆" }, { label: "Pendientes", value: stats.dueToday, color: "text-orange-600", icon: "⏳" }, { label: "Precisión", value: `${stats.accuracy}%`, color: "text-violet-600", icon: "🎯" }].map((stat) => (
+            <div key={stat.label} className="rounded-2xl border border-slate-100 bg-white p-4 shadow-sm">
+              <div className="flex items-center justify-between"><span className="text-xl">{stat.icon}</span><span className={`text-2xl font-black ${stat.color}`}>{stat.value}</span></div>
+              <p className="mt-1 text-xs font-semibold text-slate-500">{stat.label}</p>
+            </div>
+          ))}
+        </div>
+      )}
+      <div className="space-y-2">
+        <div className="flex justify-between text-xs font-semibold text-slate-500"><span>Tu progreso de hoy</span><span>Repaso {currentIndex + 1} de {items.length}</span></div>
+        <div className="h-2 overflow-hidden rounded-full bg-slate-200"><div className="h-full rounded-full bg-gradient-to-r from-blue-600 to-violet-600 transition-all duration-500" style={{ width: `${((currentIndex + 1) / items.length) * 100}%` }} /></div>
+      </div>
+
+      {/* Flashcard */}
       <div className="[perspective:1200px] min-h-[340px] rounded-3xl border border-slate-100 bg-white p-7 shadow-xl shadow-slate-200/70 transition-all duration-500 sm:p-10">
         <p className="mb-3 text-sm font-semibold uppercase tracking-wider text-slate-400">
           {currentItem.language === "en" ? "ðŸ‡¬ðŸ‡§ InglÃ©s" : currentItem.language === "fr" ? "ðŸ‡«ðŸ‡· FrancÃ©s" : "ðŸ‡ªðŸ‡¸ EspaÃ±ol"}

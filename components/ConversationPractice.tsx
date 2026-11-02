@@ -379,7 +379,10 @@ export default function ConversationPractice({ userId = "demo-user" }: { userId?
                 msg.role === "user" ? "bg-gradient-to-br from-blue-600 to-blue-700 text-white shadow-blue-200" : "bg-slate-100 text-slate-800"
               }`}
             >
-              <p className="whitespace-pre-wrap leading-relaxed">{msg.content}</p>\n              {msg.role === "assistant" && (\n                <button type="button" onClick={() => void speakMessage(msg.content, selectedScenario.language)} className="mt-3 inline-flex items-center gap-2 rounded-full bg-white/80 px-3 py-1.5 text-xs font-semibold text-blue-700 shadow-sm transition-all duration-300 hover:scale-105 hover:bg-white active:scale-95" aria-label="Escuchar mensaje">🔊 Escuchar</button>\n              )}
+              <p className="whitespace-pre-wrap leading-relaxed">{msg.content}</p>
+              {msg.role === "assistant" && (
+                <button type="button" onClick={() => void speakMessage(msg.content, selectedScenario.language)} className="mt-3 inline-flex items-center gap-2 rounded-full bg-white/80 px-3 py-1.5 text-xs font-semibold text-blue-700 shadow-sm transition-all duration-300 hover:scale-105 hover:bg-white active:scale-95" aria-label="Escuchar mensaje">🔊 Escuchar</button>
+              )}
               {msg.correction && (
                 <div className="mt-3 rounded-xl border border-yellow-200 bg-yellow-50 p-3">
                   <p className="text-xs font-bold text-yellow-700">ðŸ“ CorrecciÃ³n</p>
