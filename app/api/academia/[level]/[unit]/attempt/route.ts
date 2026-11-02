@@ -33,11 +33,23 @@ export async function POST(request: NextRequest, context: { params: Promise<{ le
     const existing = await db.prepare("SELECT id, is_correct, score, max_score, feedback_json FROM learning_attempts WHERE learner_id = ? AND exercise_id = ? AND idempotency_key = ? LIMIT 1")
       .bind(learner.id, body.exerciseId, body.idempotencyKey).first<Record<string, unknown>>();
     if (existing) return json({ attemptId: existing.id, isCorrect: Boolean(existing.is_correct), score: existing.score, maxScore: existing.max_score, feedback: JSON.parse(String(existing.feedback_json || "{}")) });
-    const exercise = await db.prepare("SELECT e.id, e.points, k.grading_strategy, k.answer_config_json, k.normalization_config_json, k.correct_feedback, k.incorrect_feedback FROM exercises e JOIN sections s ON s.id = e.section_id JOIN units u ON u.id = s.unit_id JOIN courses c ON c.id = u.course_id JOIN exercise_answer_keys k ON k.exercise_id = e.id WHERE e.id = ? AND e.status = 'published' AND s.status = 'published' AND u.status = 'published' AND c.status = 'published' AND c.cefr_level = ? AND u.unit_number = ? AND c.language_code = 'en' LIMIT 1")
+    const exercise = await db.prepare("SELECT e.id, e.points, e.content_json, k.grading_strategy, k.answer_config_json, k.normalization_config_json, k.correct_feedback, k.incorrect_feedback FROM exercises e JOIN sections s ON s.id = e.section_id JOIN units u ON u.id = s.unit_id JOIN courses c ON c.id = u.course_id LEFT JOIN exercise_answer_keys k ON k.exercise_id = e.id WHERE e.id = ? AND e.status = 'published' AND s.status = 'published' AND u.status = 'published' AND c.status = 'published' AND c.cefr_level = ? AND u.unit_number = ? AND c.language_code = 'en' LIMIT 1")
       .bind(body.exerciseId, level.toUpperCase(), Number(unit)).first<Record<string, unknown>>();
     if (!exercise) return json({ error: "Exercise not found." }, 404);
-    const strategy = String(exercise.grading_strategy);
-    const answerConfig = JSON.parse(String(exercise.answer_config_json || "{}")) as { correctOptionKeys?: string[]; acceptedAnswers?: string[]; answers?: string[] };
+    const content = JSON.parse(String(exercise.content_json || "{}")) as { options?: unknown[]; correct_answer?: string; corrected?: string; explanation_es?: string };
+    let strategy = String(exercise.grading_strategy || "");
+    let answerConfig = JSON.parse(String(exercise.answer_config_json || "{}")) as { correctOptionKeys?: string[]; acceptedAnswers?: string[]; answers?: string[] };
+    if (!strategy && Array.isArray(content.options) && typeof content.correct_answer === "string") {
+      const correctIndex = content.options.findIndex((option) => option === content.correct_answer);
+      if (correctIndex >= 0) {
+        strategy = "single_choice";
+        answerConfig = { correctOptionKeys: [String.fromCharCode(65 + correctIndex)] };
+      }
+    }
+    if (!strategy && (typeof content.correct_answer === "string" || typeof content.corrected === "string")) {
+      strategy = "exact_match";
+      answerConfig = { acceptedAnswers: [content.correct_answer, content.corrected].filter((value): value is string => typeof value === "string") };
+    }
     const normalization = JSON.parse(String(exercise.normalization_config_json || "{}")) as { caseSensitive?: boolean; trim?: boolean; unicodeNormalization?: string };
     let isCorrect: boolean;
     if (strategy === "single_choice") {
@@ -56,7 +68,10 @@ export async function POST(request: NextRequest, context: { params: Promise<{ le
     }
     const maxScore = Math.max(0, Number(exercise.points) || 1);
     const score = isCorrect ? maxScore : 0;
-    const feedback = { message: String(isCorrect ? exercise.correct_feedback || "Correct. Well done!" : exercise.incorrect_feedback || "Not quite. Review the question and try again.") };
+    const feedback = {
+      message: String(isCorrect ? exercise.correct_feedback || "Correct. Well done!" : exercise.incorrect_feedback || "Not quite. Review the question and try again."),
+      ...(typeof content.explanation_es === "string" ? { explanation: content.explanation_es } : {}),
+    };
     const attemptId = crypto.randomUUID();
     await db.prepare("INSERT INTO learning_attempts (id, learner_id, exercise_id, idempotency_key, response_json, is_correct, score, max_score, response_time_ms, feedback_json, grading_version) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)")
       .bind(attemptId, learner.id, body.exerciseId, body.idempotencyKey, responseText, isCorrect ? 1 : 0, score, maxScore, responseTime, JSON.stringify(feedback), "linguafly-v1").run();
