@@ -34,6 +34,8 @@ export default function ConversationPractice({ userId = "demo-user" }: { userId?
   const [input, setInput] = useState("");
   const [isLoading, setIsLoading] = useState(false);
   const [error, setError] = useState<string | null>(null);
+  const [hint, setHint] = useState<string | null>(null);
+  const [isHintLoading, setIsHintLoading] = useState(false);
   const messagesEndRef = useRef<HTMLDivElement>(null);
 
   // Cargar escenarios
@@ -119,8 +121,45 @@ export default function ConversationPractice({ userId = "demo-user" }: { userId?
     }
   };
 
+  // Generar una pista sin enviarla como mensaje
+  const generateHint = async () => {
+    if (!sessionId || !selectedScenario) return;
+
+    setIsHintLoading(true);
+    setHint(null);
+    setError(null);
+
+    try {
+      const lastMessage = messages[messages.length - 1]?.content || selectedScenario.opening_line;
+      const res = await fetch("/api/conversation/hint", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({
+          sessionId,
+          lastMessage,
+          personaPrompt: selectedScenario.persona_prompt,
+          language: selectedScenario.language,
+          level: selectedScenario.level,
+        }),
+      });
+      const data = await res.json() as any;
+
+      if (!res.ok || data.error) {
+        setError(data.error || "No se pudo generar la pista");
+        return;
+      }
+
+      setHint(data.hint || null);
+    } catch (err) {
+      setError("Error al generar la pista");
+    } finally {
+      setIsHintLoading(false);
+    }
+  };
+
   // Volver a selección de escenarios
   const reset = () => {
+    setHint(null);
     setSelectedScenario(null);
     setSessionId(null);
     setMessages([]);
@@ -213,6 +252,26 @@ export default function ConversationPractice({ userId = "demo-user" }: { userId?
         <div ref={messagesEndRef} />
       </div>
 
+      {/* Pista opcional: no se incorpora al historial ni se envía automáticamente */}
+      {hint && (
+        <div className="mb-3 rounded-xl border border-yellow-300 bg-yellow-50 p-4 text-yellow-900 shadow-sm">
+          <div className="flex items-start justify-between gap-3">
+            <div>
+              <p className="text-sm font-semibold">💡 Pista para responder</p>
+              <p className="mt-1">{hint}</p>
+            </div>
+            <button
+              type="button"
+              onClick={() => setHint(null)}
+              aria-label="Cerrar pista"
+              className="rounded-lg px-2 py-1 text-yellow-800 hover:bg-yellow-100 transition"
+            >
+              ✕
+            </button>
+          </div>
+        </div>
+      )}
+
       {/* Input */}
       <div className="flex gap-2 pt-4 border-t border-gray-200">
         <input
@@ -232,6 +291,14 @@ export default function ConversationPractice({ userId = "demo-user" }: { userId?
           Enviar
         </button>
       </div>
+      <button
+        type="button"
+        onClick={generateHint}
+        disabled={isLoading || isHintLoading}
+        className="mt-3 self-start px-4 py-2 bg-yellow-100 text-yellow-800 rounded-lg hover:bg-yellow-200 transition disabled:opacity-50"
+      >
+        {isHintLoading ? "Generando pista..." : "💡 Pista"}
+      </button>
     </div>
   );
 }
