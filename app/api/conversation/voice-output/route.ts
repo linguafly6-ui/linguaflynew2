@@ -6,7 +6,7 @@ const TTS_MODEL = "@cf/myshell-ai/melotts";
 export async function POST(request: NextRequest) {
   try {
     const env = getEnv();
-    const { text, language } = await request.json() as any;
+    const { text, language, unitNumber } = await request.json() as any;
 
     if (typeof text !== "string" || !text.trim() || typeof language !== "string" || !language.trim()) {
       return NextResponse.json({ error: "Se requiere texto e idioma" }, { status: 400 });
@@ -22,11 +22,14 @@ export async function POST(request: NextRequest) {
       italian: "it", portuguese: "pt",
     };
     const supportedLanguage = languageAliases[languageValue] || languageValue.split("-")[0];
+    const parsedUnitNumber = Number(unitNumber);
+    const isA1SpeakingUnit = Number.isInteger(parsedUnitNumber) && parsedUnitNumber >= 1 && parsedUnitNumber <= 100;
+    const ttsLanguage = isA1SpeakingUnit ? (parsedUnitNumber <= 60 ? "es" : "en") : supportedLanguage;
 
-    // Usar siempre MeloTTS y el mismo idioma normalizado recibido durante la sesión.
+    // En A1 Speaking, el idioma de voz depende de la fase; fuera del curso se respeta el idioma de la sesión.
     const result = await env.AI.run(TTS_MODEL as any, {
       prompt: text.trim(),
-      lang: supportedLanguage,
+      lang: ttsLanguage,
     });
 
     const encodedAudio = (result as any)?.audio;
@@ -45,7 +48,7 @@ export async function POST(request: NextRequest) {
       const key = `conversation/voice-output/${crypto.randomUUID()}.mp3`;
       await env.LINGUAFLY_MEDIA.put(key, audioBytes, {
         httpMetadata: { contentType: "audio/mpeg" },
-        customMetadata: { language: supportedLanguage },
+        customMetadata: { language: ttsLanguage },
       });
     }
 
