@@ -37,7 +37,12 @@ export async function POST(request: NextRequest) {
       });
     }
 
-    const languageCode = language.toLowerCase().split("-")[0];
+    const normalizedLanguage = language.toLowerCase().trim();
+    const languageAliases: Record<string, string> = {
+      english: "en", spanish: "es", french: "fr", german: "de",
+      italian: "it", portuguese: "pt",
+    };
+    const languageCode = languageAliases[normalizedLanguage] || normalizedLanguage.split("-")[0];
     const supportedLanguages = new Set(["en", "es", "fr", "de", "it", "pt"]);
     const transcriptionLanguage = supportedLanguages.has(languageCode) ? languageCode : "en";
 

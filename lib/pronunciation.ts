@@ -31,7 +31,7 @@ export async function transcribeAudio(
   const response = await env.AI.run(STT_MODEL as any, {
     audio: [...new Uint8Array(audio)],
     task: "transcribe",
-    language: (language || "en").toLowerCase().split("-")[0],
+    language: ({ english: "en", spanish: "es", french: "fr", german: "de", italian: "it", portuguese: "pt" } as Record<string, string>)[(language || "en").toLowerCase()] || (language || "en").toLowerCase().split("-")[0],
     vad_filter: false,
   });
 
