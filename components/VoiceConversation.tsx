@@ -42,7 +42,7 @@ export default function VoiceConversation({ scenario, userId = "demo-user", onCo
   const speechStartedAtRef = useRef(0);
   const lastVoiceAtRef = useRef(0);
 
-  const VOICE_THRESHOLD = 0.025;
+  const VOICE_THRESHOLD = 0.008;
   const SILENCE_DURATION = 2500;
   const MIN_SPEECH_DURATION = 500;
   const hintRequestedRef = useRef(false);
@@ -123,12 +123,18 @@ export default function VoiceConversation({ scenario, userId = "demo-user", onCo
       const AudioContextClass = window.AudioContext || (window as any).webkitAudioContext;
       const context = new AudioContextClass();
       contextRef.current = context;
+
+      // Forzar resume antes de nada
+      if (context.state === "suspended") {
+        await context.resume();
+      }
+
       const analyser = context.createAnalyser();
       analyser.fftSize = 2048;
       analyser.smoothingTimeConstant = 0.75;
-      context.createMediaStreamSource(stream).connect(analyser);
+      const source = context.createMediaStreamSource(stream);
+      source.connect(analyser);
       analyserRef.current = analyser;
-      await context.resume();
 
       if (!activeRef.current) {
         cleanupAudioResources(false);
@@ -197,14 +203,19 @@ export default function VoiceConversation({ scenario, userId = "demo-user", onCo
       setNotice(null);
       setPhase("listening");
 
-      const analyser = analyserRef.current;
-      const samples = new Uint8Array(analyser.fftSize);
       monitorRef.current = window.setInterval(() => {
         if (!activeRef.current) return;
-        analyser.getByteTimeDomainData(samples);
+        const currentAnalyser = analyserRef.current;
+        if (!currentAnalyser) return;
+        const samples = new Uint8Array(currentAnalyser.fftSize);
+        currentAnalyser.getByteTimeDomainData(samples);
         let sum = 0;
         for (let index = 0; index < samples.length; index++) { const normalized = (samples[index] - 128) / 128; sum += normalized * normalized; }
         const volume = Math.sqrt(sum / samples.length);
+        // Debug temporal — eliminar cuando funcione
+        if (Math.random() < 0.1) {
+          console.log("Volumen actual:", volume.toFixed(4), "Umbral:", VOICE_THRESHOLD, "Detectado:", voiceStartedRef.current);
+        }
         const now = Date.now();
         const elapsed = now - listeningStartedRef.current;
         if (volume > VOICE_THRESHOLD) {
@@ -226,11 +237,11 @@ export default function VoiceConversation({ scenario, userId = "demo-user", onCo
             if (response.ok && data.hint && activeRef.current) setHint(data.hint);
           }).catch(() => undefined);
         }
-        if (!voiceStartedRef.current && elapsed >= 15000) {
+        if (!voiceStartedRef.current && elapsed >= 30000) {
           stopMonitor();
           discardRecordingRef.current = true;
           if (recorder.state !== "inactive") recorder.stop();
-          setError("No he detectado voz en estos 15 segundos. Comprueba el micrófono y vuelve a iniciar la conversación.");
+          setError("No he detectado voz en estos 30 segundos. Comprueba el micrófono y vuelve a iniciar la conversación.");
           activeRef.current = false;
           releaseAudio();
           setPhase("idle");
