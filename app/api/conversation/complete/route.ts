@@ -167,7 +167,7 @@ export async function POST(request: NextRequest) {
     }
 
     if (isCourseUnit) {
-      const match = String(scenarioId).match(/^(a1|a2|b1|b2|c1|c2)-speaking-(\\d+)$/);
+      const match = String(scenarioId).match(/^(a1|a2|b1|b2|c1|c2)-speaking-(\d+)$/);
       const student = await getStudent(request);
       if (!match || !student || studentUserId(student) !== userId) {
         return NextResponse.json({ error: "Sesión de alumno no válida." }, { status: 403 });
