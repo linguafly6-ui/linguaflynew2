@@ -425,7 +425,7 @@ export default function VoiceConversation({ scenario, userId = "demo-user", onCo
         method: "POST", headers: { "Content-Type": "application/json" },
         body: JSON.stringify({
           sessionId: sessionRef.current,
-          message,
+          message: `Palabra objetivo: "${currentWord}". El alumno ha dicho: ${message}`,
           personaPrompt: evaluationPrompt,
           scenarioContext: {
             id: scenario.id,
