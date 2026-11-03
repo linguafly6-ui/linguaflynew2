@@ -37,6 +37,7 @@ export default function AprenderPage() {
   const [submitting, setSubmitting] = useState(false);
   const [error, setError] = useState("");
   const [needLogin, setNeedLogin] = useState(false);
+  const [celebration, setCelebration] = useState(false);
 
   const loadStats = useCallback(async () => {
     try {
@@ -109,6 +110,7 @@ export default function AprenderPage() {
         xpEarned?: number; xpTotal?: number; streak?: number; error?: string;
       };
       if (!response.ok) throw new Error(data.error || "No se pudo comprobar la respuesta.");
+      if (data.unitCompleted) setCelebration(true);
       setFeedback({
         correct: Boolean(data.correct),
         correctAnswer: String(data.correctAnswer || ""),
@@ -153,6 +155,7 @@ export default function AprenderPage() {
       </div>
     </header>
 
+    {celebration && <div className="mb-5 flex items-center justify-between gap-3 rounded-2xl border border-amber-200 bg-amber-50 p-4 text-amber-950"><p className="font-extrabold">🎉 ¡Unidad completada! Has desbloqueado el siguiente paso.</p><button onClick={() => setCelebration(false)} className="text-sm font-bold underline">Cerrar</button></div>}
     {loading ? <div className="rounded-3xl border bg-white p-10 text-center text-slate-500">Preparando tu siguiente actividad…</div> :
       error ? <div className="rounded-2xl bg-red-50 p-5 text-red-700">{error}<button onClick={() => void loadNext()} className="ml-3 font-bold underline">Reintentar</button></div> :
       lesson?.proRequired ? <section className="rounded-3xl bg-slate-950 p-8 text-center text-white">
@@ -172,7 +175,7 @@ export default function AprenderPage() {
           <h2 className="mt-1 text-xl font-black text-slate-900">Practica hablando</h2>
           <p className="mt-1 text-sm text-slate-600">{lesson.prompt}</p>
         </div>
-        <ConversationPractice key={lesson.scenarioId} userId={"student-" + studentId} initialScenarioId={lesson.scenarioId} onCourseCompleted={() => { void loadNext(); }} />
+        <ConversationPractice key={lesson.scenarioId} userId={"student-" + studentId} initialScenarioId={lesson.scenarioId} onCourseCompleted={(result) => { if (result?.score >= 60) setCelebration(true); void loadNext(); }} />
       </section> :
       lesson?.type === "exercise" ? <section className="overflow-hidden rounded-3xl border border-slate-200 bg-white shadow-xl shadow-slate-200/50">
         <div className="h-2 bg-slate-100"><div className="h-full bg-blue-600 transition-all" style={{ width: progressPercent + "%" }} /></div>
