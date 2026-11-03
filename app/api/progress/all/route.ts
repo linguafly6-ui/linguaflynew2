@@ -13,8 +13,6 @@ export async function GET(request: NextRequest) {
     if (!db) return NextResponse.json({ error: "Base de datos de cursos no disponible." }, { status: 503 });
     const student = await getStudent(request);
     if (!student) return NextResponse.json({ error: "Inicia sesión para consultar tu progreso." }, { status: 401 });
-    const db = getEnv().COURSE_DB;
-    if (!db) return NextResponse.json({ error: "Base de datos de cursos no disponible." }, { status: 503 });
     const result = await db.prepare(
       "SELECT course_type,COUNT(*) AS started,SUM(completed) AS completed,ROUND(AVG(CASE WHEN completed=1 THEN score END)) AS averageScore,MAX(last_attempt) AS lastAttempt FROM unified_progress WHERE student_id=? GROUP BY course_type"
     ).bind(student.id).all();
