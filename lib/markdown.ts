@@ -5,10 +5,10 @@ function escapeHtml(value: string) {
 function inline(value: string) {
   let text = escapeHtml(String(value ?? ""));
   text = text.replace(/`([^`]+)`/g, '<code class="blog-inline-code">$1</code>');
-  text = text.replace(/**(.+?)**/g, '<strong class="blog-strong">$1</strong>');
-  text = text.replace(/*(.+?)*/g, "<em>$1</em>");
+  text = text.replace(/\*\*(.+?)\*\*/g, '<strong class="blog-strong">$1</strong>');
+  text = text.replace(/\*(.+?)\*/g, "<em>$1</em>");
   text = text.replace(/~~(.+?)~~/g, "<del>$1</del>");
-  text = text.replace(/[([^]]+)]((https?:\/\/[^\s)]+|\/[^\s)]*))/g, (_match, label: string, url: string) => {
+  text = text.replace(/\[([^\]]+)\]\((https?:\/\/[^\s)]+|\/[^\s)]*)\)/g, (_match, label: string, url: string) => {
     const internal = url.startsWith("/");
     const safeUrl = escapeHtml(url);
     return `<a href="${safeUrl}" class="blog-link"${internal ? "" : ' target="_blank" rel="nofollow noopener noreferrer"'}>${label}${internal ? "" : ' <span aria-hidden="true" class="blog-link-icon">↗</span>'}</a>`;
