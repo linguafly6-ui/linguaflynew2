@@ -107,7 +107,7 @@ export default function AprenderPage() {
       });
       const data = await response.json() as {
         correct?: boolean; correctAnswer?: string; explanation?: string;
-        xpEarned?: number; xpTotal?: number; streak?: number; error?: string;
+        xpEarned?: number; xpTotal?: number; streak?: number; unitCompleted?: boolean; error?: string;
       };
       if (!response.ok) throw new Error(data.error || "No se pudo comprobar la respuesta.");
       if (data.unitCompleted) setCelebration(true);
@@ -165,7 +165,7 @@ export default function AprenderPage() {
       </section> :
       completed ? <section className="rounded-3xl border border-emerald-200 bg-emerald-50 p-9 text-center">
         <div className="text-6xl">🏆</div><h2 className="mt-4 text-3xl font-black text-emerald-950">¡Curso completado!</h2>
-        <p className="mt-2 text-emerald-800">{lesson.message}</p>
+        <p className="mt-2 text-emerald-800">{lesson?.message}</p>
         <p className="mt-4 font-bold text-emerald-900">Has conseguido {stats.xp} XP</p>
         <Link href="/inicio" className="mt-6 inline-flex rounded-xl bg-emerald-700 px-5 py-3 font-bold text-white">Volver al inicio</Link>
       </section> :
