@@ -1,7 +1,7 @@
 "use client";
 
 import { useMemo, useRef, useState } from "react";
-import { TRANSLATION_STOPWORDS } from "@/components/T";
+import { STOPWORDS as TRANSLATION_STOPWORDS } from "@/components/T";
 
 type Tooltip = { word: string; translation: string; x: number; y: number } | null;
 
