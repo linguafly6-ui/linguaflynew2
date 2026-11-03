@@ -21,6 +21,9 @@ export async function POST(request: NextRequest) {
       'SELECT ei.id,ei.correct_answer,ei.explanation,eu.course_id,eu.unit_number FROM exercise_items ei JOIN exercise_units eu ON eu.id=ei.unit_id WHERE ei.id=?'
     ).bind(exerciseId).first() as any;
     if (!exercise) return NextResponse.json({ error: "Ejercicio no encontrado." }, { status: 404 });
+    if (Number(exercise.unit_number) > 5 && student.plan !== "pro" && student.plan !== "pro_test") {
+      return NextResponse.json({ error: "Esta unidad requiere LinguaFly Pro." }, { status: 403 });
+    }
 
     const correctAnswer = String(exercise.correct_answer || "").trim();
     const normalize = (value: string) => value.toLocaleLowerCase("en").replace(/[.!?]+$/g, "").replace(/\s+/g, " ").trim();
