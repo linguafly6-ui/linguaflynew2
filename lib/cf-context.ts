@@ -2,6 +2,9 @@
 
 export function getEnv(): any {
   const ctx = getCloudflareContext();
+  if (!ctx || !ctx.env) {
+    throw new Error("Cloudflare context no disponible. ¿Estás ejecutando en un Worker con OpenNext?");
+  }
   return ctx.env as any;
 }
 
