@@ -54,13 +54,28 @@ Inicia sesión en: ${loginUrl}
 Te recomendamos cambiar tu contraseña temporal desde Mi cuenta después de iniciar sesión.`;
 
   try {
-    await EMAIL.send({
-      to: email,
-      from: "noreply@linguafly.app",
-      subject: "¡Bienvenido/a a Linguafly! Tu contraseña de acceso",
-      html,
+    const boundary = "linguafly-" + crypto.randomUUID();
+    const subject = "Bienvenido/a a Linguafly: tu contraseña temporal";
+    const raw = [
+      "From: Linguafly <noreply@linguafly.app>",
+      "MIME-Version: 1.0",
+      "Subject: " + subject,
+      'Content-Type: multipart/alternative; boundary="' + boundary + '"',
+      "",
+      "--" + boundary,
+      "Content-Type: text/plain; charset=UTF-8",
+      "Content-Transfer-Encoding: 8bit",
+      "",
       text,
-    });
+      "--" + boundary,
+      "Content-Type: text/html; charset=UTF-8",
+      "Content-Transfer-Encoding: 8bit",
+      "",
+      html,
+      "--" + boundary + "--",
+      "",
+    ].join("\\r\\n");
+    await EMAIL.send(new EmailMessage("noreply@linguafly.app", email, raw));
     return true;
   } catch (error) {
     console.error("Failed to send welcome email:", error);
