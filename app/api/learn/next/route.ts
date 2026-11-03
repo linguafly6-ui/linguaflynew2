@@ -2,6 +2,7 @@ import { NextRequest, NextResponse } from "next/server";
 import { getEnv } from "@/lib/cf-context";
 import { getStudent } from "@/lib/student-auth";
 import { ensureLearnUnit, getSpeakingProgress, LEARN_COURSES } from "@/lib/learn";
+import { getVerbBaseHint } from "@/lib/exercise-data/build";
 
 export async function GET(request: NextRequest) {
   try {
@@ -81,6 +82,7 @@ export async function GET(request: NextRequest) {
           exerciseType: item.exercise_type,
           category: item.category,
           explanation: item.explanation,
+          hint: item.exercise_type === "fill_blank" ? getVerbBaseHint(String(item.correct_answer || "")) : undefined,
           order: item.order,
           prompt: unit.topic,
           progress: { completed: completedCount, total }
