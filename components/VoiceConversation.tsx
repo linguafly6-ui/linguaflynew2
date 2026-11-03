@@ -16,12 +16,27 @@ interface VoiceScenario {
 interface VoiceMessage { role: "assistant" | "user"; content: string; correction?: string | null; }
 
 function extractEnglishPhrase(text: string): { spanishText: string; englishPhrase: string | null } {
-  const match = text.match(/\[ENGLISH:\s*(.+?)\]/i);
-  if (match) {
-    const englishPhrase = match[1].trim();
+  // 1. Buscar marcador explícito [ENGLISH: ...]
+  const markerMatch = text.match(/\[ENGLISH:\s*(.+?)\]/i);
+  if (markerMatch) {
+    const englishPhrase = markerMatch[1].trim();
     const spanishText = text.replace(/\[ENGLISH:\s*.+?\]/i, "").trim();
     return { spanishText, englishPhrase };
   }
+
+  // 2. Fallback: buscar frases entre comillas dobles, simples o tipográficas
+  const quotedMatches = text.match(/["“”']([^"“”']{1,100})["“”']/g);
+  if (quotedMatches && quotedMatches.length > 0) {
+    // Usar la última frase entre comillas como la frase en inglés
+    const lastQuoted = quotedMatches[quotedMatches.length - 1];
+    const englishPhrase = lastQuoted.replace(/^["“”']|["“”']$/g, "").trim();
+    if (englishPhrase) {
+      // Quitar las comillas del texto visible pero mantener el resto
+      const spanishText = text.replace(/["“”']([^"“”']{1,100})["“”']/g, "$1").trim();
+      return { spanishText, englishPhrase };
+    }
+  }
+
   return { spanishText: text, englishPhrase: null };
 }
 
@@ -30,17 +45,21 @@ function getVisibleTutorText(text: string): string {
   return [spanishText, englishPhrase].filter(Boolean).join("\n");
 }
 
-const VOICE_PRACTICE_INSTRUCTIONS = "INSTRUCCIONES IMPORTANTES PARA LA PRÁCTICA DE PRONUNCIACIÓN:\n" +
-  "1. Responde SIEMPRE en castellano (español), incluso cuando el alumno hable en inglés.\n" +
-  "2. Incluye la única palabra o frase en inglés que el alumno debe practicar usando exactamente este formato: [ENGLISH: palabra o frase en inglés].\n" +
-  "3. Incluye SOLO UNA palabra o frase en inglés por mensaje y no escribas otras palabras en inglés fuera de ese marcador.\n" +
-  "4. Da todas las instrucciones, explicaciones, felicitaciones y feedback de pronunciación en castellano.\n" +
-  "5. Si el alumno pronunció bien, felicítalo en castellano y presenta la siguiente palabra o frase para practicar.\n" +
-  "6. Si el alumno se equivocó, anímalo en castellano a intentarlo de nuevo e incluye de nuevo la palabra o frase objetivo.\n" +
-  "7. Mantén las respuestas concisas: 1-2 frases en castellano más el marcador [ENGLISH: ...].\n" +
-  "8. No incluyas pronunciación figurada ni transcripciones fonéticas; el audio de la frase marcada servirá como modelo.\n" +
-  "Ejemplo: ¡Muy bien! Ahora intenta con: [ENGLISH: Good morning].";
-
+const VOICE_PRACTICE_INSTRUCTIONS = "⚠️ FORMATO OBLIGATORIO: Debes incluir la palabra o frase en inglés usando EXACTAMENTE este formato: [ENGLISH: palabra]. Sin este formato, el sistema no funcionará. NUNCA escribas palabras en inglés sin el marcador [ENGLISH: ...].\\n\\n" +
+  "1. Responde SIEMPRE en castellano (español).\\n" +
+  "2. Incluye UNA SOLA palabra o frase en inglés por mensaje usando el formato: [ENGLISH: palabra o frase].\\n" +
+  "3. NO escribas palabras en inglés fuera del marcador [ENGLISH: ...]. Si necesitas mencionar una palabra en inglés, ponla dentro del marcador.\\n" +
+  "4. Da todas las instrucciones, explicaciones, felicitaciones y feedback en castellano.\\n" +
+  "5. Si el alumno pronunció bien, felicítalo en castellano y da la SIGUIENTE palabra o frase nueva con [ENGLISH: ...]. No repitas la misma palabra.\\n" +
+  "6. Si el alumno se equivocó, anímalo en castellano a intentarlo de nuevo e incluye la misma palabra con [ENGLISH: ...].\\n" +
+  "7. Respuestas concisas: 1-2 frases en castellano + el marcador [ENGLISH: ...].\\n" +
+  "8. Ejemplos CORRECTOS:\\n" +
+  "   ¡Muy bien! Ahora intenta: [ENGLISH: Good morning]\\n" +
+  "   Escucha y repite: [ENGLISH: How are you]\\n" +
+  "   ¡Perfecto! Siguiente palabra: [ENGLISH: Thank you]\\n" +
+  "9. Ejemplo INCORRECTO (NO hagas esto):\\n" +
+  "   ¡Muy bien! Has dicho Hello correctamente. (Falta el marcador [ENGLISH: ...])\\n" +
+  "10. Avanza siempre a una palabra o frase NUEVA si el alumno acertó. No te quedes repitiendo la misma.";
 type Phase = "idle" | "speaking" | "listening" | "processing" | "thinking" | "completed";
 
 export default function VoiceConversation({ scenario, userId = "demo-user", onCourseCompleted }: { scenario: VoiceScenario; userId?: string; onCourseCompleted?: () => void }) {
@@ -355,9 +374,10 @@ export default function VoiceConversation({ scenario, userId = "demo-user", onCo
     // Solo se abre el micrófono cuando hay una frase inglesa concreta que repetir.
     if (englishPhrase && activeRef.current) {
       await beginListening();
-    } else if (activeRef.current) {
-      activeRef.current = false;
-      setPhase("idle");
+    } else if (activeRef.current && sessionRef.current) {
+      // La IA no incluyó frase en inglés. Pedirle que dé la siguiente palabra.
+      setMessages((previous) => [...previous, { role: "assistant", content: "Vamos con la siguiente palabra. Escucha y repite: [ENGLISH: Good morning]" }]);
+      await speakLine("Vamos con la siguiente palabra. Escucha y repite: [ENGLISH: Good morning]");
     }
   }, [beginListening, conversationFetch]);
 
