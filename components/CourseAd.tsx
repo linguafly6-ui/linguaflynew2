@@ -15,7 +15,7 @@ export default function CourseAd({ variant }: CourseAdProps) {
     let active = true;
     fetch("/api/auth/me", { cache: "no-store" })
       .then((response) => response.json())
-      .then((data) => {
+      .then((data: any) => {
         if (!active) return;
         const student = data?.student;
         setHasAccount(Boolean(student));
