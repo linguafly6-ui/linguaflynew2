@@ -24,6 +24,27 @@ CREATE TABLE IF NOT EXISTS learning_exercise_progress (
 CREATE INDEX IF NOT EXISTS idx_learning_exercise_student_course
   ON learning_exercise_progress(student_id, course_id, unit_number, status);
 
+-- Importar los intentos históricos guardados por el sistema anterior.
+INSERT OR IGNORE INTO learning_exercise_progress
+  (student_id,exercise_id,course_id,unit_number,status,attempts,is_correct,xp_awarded,completed_at,updated_at)
+SELECT
+  CAST(substr(ea.user_id,9) AS INTEGER),
+  ea.exercise_id,
+  eu.course_id,
+  eu.unit_number,
+  CASE WHEN MAX(ea.is_correct)=1 THEN 'completed' ELSE 'in_progress' END,
+  COUNT(*),
+  MAX(ea.is_correct),
+  CASE WHEN MAX(ea.is_correct)=1 THEN 10 ELSE 5 END,
+  CASE WHEN MAX(ea.is_correct)=1 THEN datetime('now') ELSE NULL END,
+  datetime('now')
+FROM exercise_answers ea
+JOIN exercise_items ei ON ei.id=ea.exercise_id
+JOIN exercise_units eu ON eu.id=ei.unit_id
+WHERE ea.user_id GLOB 'student-[0-9]*'
+  AND substr(ea.user_id,9) NOT GLOB '*[^0-9]*'
+GROUP BY ea.user_id,ea.exercise_id;
+
 CREATE TABLE IF NOT EXISTS learning_streaks (
   student_id INTEGER PRIMARY KEY,
   current_streak INTEGER NOT NULL DEFAULT 0,
@@ -31,3 +52,8 @@ CREATE TABLE IF NOT EXISTS learning_streaks (
   last_practice_date TEXT,
   xp_total INTEGER NOT NULL DEFAULT 0
 );
+
+INSERT OR IGNORE INTO learning_streaks(student_id,xp_total)
+SELECT student_id, SUM(xp_awarded)
+FROM learning_exercise_progress
+GROUP BY student_id;
