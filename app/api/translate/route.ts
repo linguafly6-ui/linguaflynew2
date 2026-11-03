@@ -16,6 +16,8 @@ export async function POST(request: NextRequest) {
       return NextResponse.json({ error: "Introduce una palabra o frase corta en inglés." }, { status: 400 });
     }
 
+    if (word.toLowerCase() === "to") return NextResponse.json({ translation: "a", word });
+
     const env = getEnv();
     const db = env.COURSE_DB || env.DB;
     if (!db) return NextResponse.json({ error: "Base de datos no disponible." }, { status: 503 });
