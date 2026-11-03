@@ -30,6 +30,7 @@ type Lesson = {
 export default function AprenderPage() {
   const [lesson, setLesson] = useState<Lesson | null>(null);
   const [studentId, setStudentId] = useState<number | null>(null);
+  const [studentLevel, setStudentLevel] = useState<string>("");
   const [answer, setAnswer] = useState("");
   const [selectedWords, setSelectedWords] = useState<string[]>([]);
   const [matchingPairs, setMatchingPairs] = useState<Record<string, string>>({});
@@ -87,7 +88,12 @@ export default function AprenderPage() {
           setLoading(false);
           return;
         }
+        if (!data.student.placement_level) {
+          window.location.replace("/test-nivel");
+          return;
+        }
         setStudentId(Number(data.student.id));
+        setStudentLevel(String(data.student.placement_level).toUpperCase());
         await loadNext();
       } catch {
         if (active) {
@@ -151,7 +157,7 @@ export default function AprenderPage() {
     <header className="mb-8 flex items-center justify-between gap-3">
       <div>
         <Link href="/inicio" className="text-sm font-semibold text-blue-700">← Mi aprendizaje</Link>
-        <h1 className="mt-2 text-2xl font-black text-slate-950 sm:text-3xl">Aprende paso a paso</h1>
+        <h1 className="mt-2 text-2xl font-black text-slate-950 sm:text-3xl">Aprende paso a paso · Nivel {studentLevel}</h1>
       </div>
       <div className="flex gap-2 text-sm font-extrabold">
         <span className="rounded-full bg-amber-50 px-3 py-2 text-amber-700">⚡ {stats.xp} XP</span>
