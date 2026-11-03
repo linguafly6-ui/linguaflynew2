@@ -3,9 +3,26 @@
 import { useEffect, useState } from "react";
 import Link from "next/link";
 
+type Student = {
+  id: number | string;
+  full_name?: string | null;
+  email: string;
+  is_test_account?: number;
+  plan?: string;
+  subscription_status?: string | null;
+  test_expires_at?: string | null;
+  created_at?: string | null;
+  admin_notes?: string | null;
+};
+
+type StudentsResponse = {
+  error?: string;
+  students?: Student[];
+};
+
 export default function AdminStudentAccountsPage() {
   const [adminKey,setAdminKey]=useState("");
-  const [students,setStudents]=useState<any[]>([]);
+  const [students,setStudents]=useState<Student[]>([]);
   const [loading,setLoading]=useState(true);
   const [error,setError]=useState("");
 
@@ -15,7 +32,11 @@ export default function AdminStudentAccountsPage() {
     if(!key){window.location.replace("/admin");return;}
     setAdminKey(key);
     fetch("/api/admin/students/accounts",{headers:{"x-admin-key":key},cache:"no-store"})
-      .then(async r=>{const d=await r.json();if(!r.ok)throw new Error(d.error||"No se pudieron cargar las cuentas.");setStudents(d.students||[]);})
+      .then(async r=>{
+        const d = await r.json() as StudentsResponse;
+        if(!r.ok) throw new Error(d.error || "No se pudieron cargar las cuentas.");
+        setStudents(d.students || []);
+      })
       .catch(e=>setError(e instanceof Error?e.message:"Error al cargar las cuentas."))
       .finally(()=>setLoading(false));
   },[]);
