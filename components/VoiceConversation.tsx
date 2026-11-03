@@ -384,9 +384,9 @@ export default function VoiceConversation({ scenario, userId = "demo-user", onCo
 
   useEffect(() => () => { activeRef.current = false; startCancelledRef.current = true; abortConversationRequests(); releaseAudio(); }, [abortConversationRequests, releaseAudio]);
 
-  const status = phase === "speaking" ? "💬 Tutor hablando..." : phase === "listening" ? "🎙️ Escuchando... habla ahora" : phase === "processing" ? (evaluating ? "Evaluando tu progreso..." : "⏳ Procesando...") : phase === "thinking" ? "⏳ Procesando..." : phase === "completed" ? "✅ Unidad evaluada" : "Listo para hablar";
   const exchangeCount = exchangeCountRef.current;
   const evaluating = phase === "processing" && !activeRef.current;
+  const status = phase === "speaking" ? "💬 Tutor hablando..." : phase === "listening" ? "🎙️ Escuchando... habla ahora" : phase === "processing" ? (evaluating ? "Evaluando tu progreso..." : "⏳ Procesando...") : phase === "thinking" ? "⏳ Procesando..." : phase === "completed" ? "✅ Unidad evaluada" : "Listo para hablar";
   const passed = Number(result?.score || 0) >= 60;
 
   return (
