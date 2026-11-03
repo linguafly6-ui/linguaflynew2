@@ -73,7 +73,8 @@ export default function AdminDashboard(){
       const response=await fetch("/api/admin/auth",{method:"POST",headers:{"Content-Type":"application/json"},body:JSON.stringify({adminKey})});
       const data=await response.json() as any;
       if(!response.ok||!data.authorized)throw new Error(data.error||"Clave incorrecta");
-      try{sessionStorage.setItem("lf_admin_key",adminKey);}catch{}\n      setAuthorized(true);
+      try{sessionStorage.setItem("lf_admin_key",adminKey);}catch{}
+      setAuthorized(true);
     }catch(error){setLoginError(error instanceof Error?error.message:"No se pudo acceder");}
     finally{setLogging(false);}
   };
@@ -119,7 +120,8 @@ export default function AdminDashboard(){
     <aside className="flex w-full flex-col bg-slate-800 text-white md:fixed md:inset-y-0 md:w-64">
       <div className="flex items-center gap-3 border-b border-white/10 px-6 py-6"><div className="flex h-11 w-11 items-center justify-center rounded-xl bg-blue-600 text-xl">✈️</div><div><p className="font-extrabold tracking-wide">LinguaFly</p><p className="text-xs text-slate-400">Admin Console</p></div></div>
       <nav className="flex gap-2 overflow-x-auto p-3 md:flex-1 md:flex-col md:gap-1 md:p-4">
-        <a href="/admin/tickets" className="flex shrink-0 items-center gap-3 rounded-xl px-4 py-3 text-left text-sm font-semibold text-slate-300 transition hover:bg-white/10 hover:text-white"><span>📮</span>Tickets de soporte</a>\n        {nav.map(item=><button key={item.id} onClick={()=>setActiveSection(item.id)} className={"flex shrink-0 items-center gap-3 rounded-xl px-4 py-3 text-left text-sm font-semibold transition "+(activeSection===item.id?"bg-blue-600 text-white shadow-lg shadow-blue-950/30":"text-slate-300 hover:bg-white/10 hover:text-white")}><span>{item.icon}</span>{item.label}</button>)}
+        <a href="/admin/tickets" className="flex shrink-0 items-center gap-3 rounded-xl px-4 py-3 text-left text-sm font-semibold text-slate-300 transition hover:bg-white/10 hover:text-white"><span>📮</span>Tickets de soporte</a>
+        {nav.map(item=><button key={item.id} onClick={()=>setActiveSection(item.id)} className={"flex shrink-0 items-center gap-3 rounded-xl px-4 py-3 text-left text-sm font-semibold transition "+(activeSection===item.id?"bg-blue-600 text-white shadow-lg shadow-blue-950/30":"text-slate-300 hover:bg-white/10 hover:text-white")}><span>{item.icon}</span>{item.label}</button>)}
       </nav>
       <div className="hidden border-t border-white/10 p-4 md:block"><div className="mb-3 rounded-xl bg-slate-700/70 p-3"><p className="text-xs text-slate-400">Actividad de hoy</p><p className="mt-1 text-2xl font-extrabold">{stats?.active_today??0}</p><p className="text-xs text-slate-400">alumnos activos</p></div><button onClick={logout} className="w-full rounded-xl px-4 py-3 text-left text-sm font-semibold text-slate-300 transition hover:bg-red-500/15 hover:text-red-300">↪ Cerrar sesión</button></div>
     </aside>
