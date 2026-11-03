@@ -62,21 +62,27 @@ export async function POST(request: NextRequest) {
     // 4. Generar feedback
     const feedback = generateFeedback(score, issues);
 
-    // 5. Guardar la sesiÃ³n en D1
+    // 5. Guardar la sesión en D1 (no crítico, si falla la respuesta sigue funcionando)
     const sessionId = `pron-${Date.now()}-${Math.random().toString(36).slice(2, 8)}`;
-    await env.DB.prepare(
-      `INSERT INTO pronunciation_sessions (id, user_id, phrase_id, target_phrase, target_language, transcription, similarity_score, feedback, created_at)
-       VALUES (?, ?, ?, ?, ?, ?, ?, ?, datetime('now'))`
-    ).bind(
-      sessionId,
-      userId,
-      phraseId || null,
-      targetPhrase,
-      language,
-      transcription,
-      score,
-      feedback
-    ).run();
+    if (env.DB) {
+      try {
+        await env.DB.prepare(
+          `INSERT INTO pronunciation_sessions (id, user_id, phrase_id, target_phrase, target_language, transcription, similarity_score, feedback, created_at)
+           VALUES (?, ?, ?, ?, ?, ?, ?, ?, datetime('now'))`
+        ).bind(
+          sessionId,
+          userId,
+          phraseId || null,
+          targetPhrase,
+          language,
+          transcription,
+          score,
+          feedback
+        ).run();
+      } catch (dbError) {
+        console.error("Failed to save pronunciation session:", dbError);
+      }
+    }
 
     return NextResponse.json({
       sessionId,
