@@ -41,7 +41,7 @@ export default function AdminStudentAccountsPage() {
       .finally(()=>setLoading(false));
   },[]);
 
-  const dateLabel=(value:string|null)=>value?new Date(value.includes("T")?value:value.replace(" ","T")+"Z").toLocaleDateString("es-ES"):"—";
+  const dateLabel=(value:string|null|undefined)=>value?new Date(value.includes("T")?value:value.replace(" ","T")+"Z").toLocaleDateString("es-ES"):"—";
   const planLabel=(s:any)=>s.plan==="pro_test"?"Pro de prueba":s.plan==="pro"?"Pro":"Free";
 
   if(!adminKey)return <main className="min-h-screen bg-slate-100 p-8 text-center text-slate-500">Comprobando acceso de administrador...</main>;
