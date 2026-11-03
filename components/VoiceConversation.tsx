@@ -2,6 +2,7 @@
 
 import { useCallback, useEffect, useRef, useState } from "react";
 import { A2_UNIT_WORDS, A2_DEFAULT_WORDS } from "@/lib/a2-speaking-words";
+import { B1_UNIT_WORDS, B1_DEFAULT_WORDS } from "@/lib/b1-speaking-words";
 
 
 // ============================================================
@@ -75,8 +76,31 @@ const UNIT_WORDS: Record<string, string[]> = {
 const SENTENCE_BUILDER_UNITS = [4, 8, 12, 16, 20, 24, 28, 32, 36, 40, 44, 48, 52, 56, 60, 64, 68, 72, 76, 80, 84, 88, 92, 96, 100];
 
 function isSentenceBuilderUnit(unitId: string): boolean {
-  const match = unitId.match(/(?:a1|a2)-speaking-(\d+)/);
+  const match = unitId.match(/(?:a1|a2|b1)-speaking-(\d+)/);
   return !!match && Number(match[1]) % 4 === 0;
+}
+
+function isB1ConversationUnit(unitId: string): boolean {
+  const match = unitId.match(/b1-speaking-(\d+)/);
+  return !!match && Number(match[1]) % 4 === 0;
+}
+
+function getB1PracticePrompt(unitId: string, item: string, index: number, total: number, feedback = ""): string {
+  const phrase = item.replace(/^\[(?:Tutor|Alumno)\]\s*/i, "").trim();
+  const role = item.match(/^\[(Tutor|Alumno)\]/i)?.[1]?.toLowerCase();
+  const prefix = feedback ? feedback + " " : "";
+  if (role === "tutor") return prefix + "El tutor hace esta pregunta. Escúchala y repítela en inglés. Línea " + (index + 1) + " de " + total + ": [ENGLISH: " + phrase + "]";
+  if (role === "alumno") return prefix + "Responde en inglés con esta respuesta modelo. Escúchala y repítela. Línea " + (index + 1) + " de " + total + ": [ENGLISH: " + phrase + "]";
+  return prefix + "Frase " + (index + 1) + " de " + total + ": escucha y repite en inglés. [ENGLISH: " + phrase + "]";
+}
+
+function isLikelyPhraseMatch(expected: string, spoken: string): boolean {
+  const normalise = (value: string) => value.toLowerCase().replace(/[^a-z0-9 ]/g, " ").replace(/\s+/g, " ").trim();
+  const a = normalise(expected), b = normalise(spoken);
+  if (!a || !b) return false;
+  const words = a.split(" "), spokenWords = new Set(b.split(" "));
+  const overlap = words.filter((word) => spokenWords.has(word)).length / words.length;
+  return overlap >= 0.72;
 }
 
 const DEFAULT_TOPICS: Record<number, string[]> = {
@@ -113,6 +137,7 @@ const DEFAULT_TOPICS: Record<number, string[]> = {
 };
 
 function getUnitWords(unitId: string): string[] {
+  if (unitId.startsWith("b1-speaking-")) return B1_UNIT_WORDS[unitId] || B1_DEFAULT_WORDS;
   if (unitId.startsWith("a2-speaking-")) {
     return A2_UNIT_WORDS[unitId] || A2_DEFAULT_WORDS;
   }
@@ -182,8 +207,9 @@ function extractEnglishPhrase(text: string): { spanishText: string; englishPhras
   return { spanishText: text, englishPhrase: null };
 }
 
-function getVisibleTutorText(text: string): string {
+function getVisibleTutorText(text: string, unitId = ""): string {
   const { spanishText, englishPhrase } = extractEnglishPhrase(text);
+  if (isB1ConversationUnit(unitId)) return spanishText;
   return [spanishText, englishPhrase].filter(Boolean).join("\n");
 }
 
@@ -457,7 +483,7 @@ export default function VoiceConversation({ scenario, userId = "demo-user", onCo
     setHint(null);
 
     const { englishPhrase } = extractEnglishPhrase(text);
-    const visibleText = getVisibleTutorText(text);
+    const visibleText = getVisibleTutorText(text, scenario.id);
 
     // Mostrar instrucciones y feedback en castellano; la frase inglesa también queda visible.
     if (subtitleTimerRef.current !== null) window.clearInterval(subtitleTimerRef.current);
@@ -513,13 +539,13 @@ export default function VoiceConversation({ scenario, userId = "demo-user", onCo
     if (!activeRef.current || !sessionRef.current) return;
     setPhase("thinking");
     try {
-      const currentWord = wordListRef.current[currentWordIndexRef.current] || "";
+      const currentItem = wordListRef.current[currentWordIndexRef.current] || "";
+      const isB1 = scenario.id.startsWith("b1-speaking-");
+      const currentWord = currentItem.replace(/^\[(?:Tutor|Alumno)\]\s*/i, "").trim();
       const totalWords = wordListRef.current.length;
-      const evaluationPrompt =
-        'Eres un tutor de inglés. El alumno está practicando la palabra: "' + currentWord + '". ' +
-        "Responde SOLO en castellano en 1-2 frases. Dile si pronunció bien o mal. " +
-        "NO incluyas palabras en inglés ni el formato [ENGLISH: ...] en tu respuesta. " +
-        'Solo da feedback breve en castellano sobre si dijo bien la palabra "' + currentWord + '".';
+      const evaluationPrompt = isB1
+        ? 'Eres un tutor de inglés Cambridge B1. El alumno está practicando la frase: "' + currentWord + '". Evalúa si la transcripción se parece a la frase objetivo y da feedback breve en castellano, animándole a pronunciar con claridad y ritmo natural. No incluyas otra frase en inglés.'
+        : 'Eres un tutor de inglés. El alumno está practicando la palabra: "' + currentWord + '". Responde SOLO en castellano en 1-2 frases. Dile si pronunció bien o mal. NO incluyas palabras en inglés ni el formato [ENGLISH: ...] en tu respuesta.';
 
       const response = await conversationFetch("/api/conversation/chat", {
         method: "POST", headers: { "Content-Type": "application/json" },
@@ -548,7 +574,7 @@ export default function VoiceConversation({ scenario, userId = "demo-user", onCo
       feedback = feedback.replace(/\[ENGLISH:\s*.+?\]/gi, "").trim();
 
       // Registrar aciertos solo cuando la API proporciona una señal explícita.
-      if (data.isCorrect === true || data.correct === true) correctCountRef.current += 1;
+      if (data.isCorrect === true || data.correct === true || (isB1 && isLikelyPhraseMatch(currentWord, message))) correctCountRef.current += 1;
 
       // Avanzar a la siguiente palabra; la secuencia la controla el componente.
       currentWordIndexRef.current += 1;
@@ -568,7 +594,9 @@ export default function VoiceConversation({ scenario, userId = "demo-user", onCo
       }
 
       const nextWord = wordListRef.current[nextIndex];
-      fullMessage = `${feedback} Palabra ${nextIndex + 1} de ${totalWords}: [ENGLISH: ${nextWord}]`;
+      fullMessage = isB1
+        ? getB1PracticePrompt(scenario.id, nextWord, nextIndex, totalWords, feedback)
+        : `${feedback} Palabra ${nextIndex + 1} de ${totalWords}: [ENGLISH: ${nextWord}]`;
       setMessages((previous) => [...previous, { role: "assistant", content: fullMessage }]);
       await speakLine(fullMessage);
     } catch (err) {
@@ -607,10 +635,16 @@ export default function VoiceConversation({ scenario, userId = "demo-user", onCo
       const firstWord = wordListRef.current[0];
 
       // Mensaje de inicio del tutor.
+      const isB1 = scenario.id.startsWith("b1-speaking-");
+      const isB1Conversation = isB1ConversationUnit(scenario.id);
       const isSentenceBuilder = isSentenceBuilderUnit(scenario.id);
-      const introText = isSentenceBuilder
-        ? `¡Bienvenido! En esta unidad vamos a formar frases usando las palabras que has aprendido. Practicaremos ${totalWords} frases. Escucha cada frase y repítela. Empezamos con la frase 1 de ${totalWords}: [ENGLISH: ${firstWord}]`
-        : `¡Bienvenido a la unidad! Vamos a practicar ${totalWords} palabras en inglés. Escucha cada palabra y repítela en voz alta. Empezamos con la palabra 1 de ${totalWords}: [ENGLISH: ${firstWord}]`;
+      const introText = isB1Conversation
+        ? getB1PracticePrompt(scenario.id, firstWord, 0, totalWords, "¡Bienvenido! Vamos a practicar un diálogo guiado de nivel B1.")
+        : isB1
+          ? "¡Bienvenido! En esta unidad practicaremos " + totalWords + " frases completas en inglés B1. Escucha cada frase y repítela. " + getB1PracticePrompt(scenario.id, firstWord, 0, totalWords)
+          : isSentenceBuilder
+            ? `¡Bienvenido! En esta unidad vamos a formar frases usando las palabras que has aprendido. Practicaremos ${totalWords} frases. Escucha cada frase y repítela. Empezamos con la frase 1 de ${totalWords}: [ENGLISH: ${firstWord}]`
+            : `¡Bienvenido a la unidad! Vamos a practicar ${totalWords} palabras en inglés. Escucha cada palabra y repítela en voz alta. Empezamos con la palabra 1 de ${totalWords}: [ENGLISH: ${firstWord}]`;
       setMessages([{ role: "assistant", content: introText }]);
       await speakLine(introText);
     } catch (err) {
@@ -650,7 +684,9 @@ export default function VoiceConversation({ scenario, userId = "demo-user", onCo
       ? "a1-speaking"
       : scenario.id.startsWith("a2-speaking-")
         ? "a2-speaking"
-        : null;
+        : scenario.id.startsWith("b1-speaking-")
+          ? "b1-speaking"
+          : null;
     let resultData: any = null;
 
     try {
@@ -747,7 +783,7 @@ export default function VoiceConversation({ scenario, userId = "demo-user", onCo
       <header className="flex items-center justify-between gap-3 border-b border-slate-100/80 px-5 py-4 sm:px-7">
         <div className="min-w-0"><h2 className="truncate text-base font-bold text-slate-800">{scenario.title}</h2><p className="text-xs text-slate-400">{scenario.level} · {scenario.setting}</p>
           {wordListRef.current.length > 0 && phase !== "idle" && phase !== "completed" && (
-            <p className="text-xs font-semibold text-blue-500">Palabra {Math.min(progress + 1, wordListRef.current.length)} de {wordListRef.current.length}</p>
+            <p className="text-xs font-semibold text-blue-500">{scenario.id.startsWith("b1-speaking-") ? "Frase" : "Palabra"} {Math.min(progress + 1, wordListRef.current.length)} de {wordListRef.current.length}</p>
           )}
         </div>
         {(phase !== "idle" && phase !== "completed" || starting) && <button type="button" onClick={finishConversation} className="shrink-0 rounded-full border border-red-200 bg-red-50 px-3 py-1.5 text-xs font-bold text-red-600 transition-colors hover:bg-red-100">■ Detener conversación</button>}
@@ -756,7 +792,7 @@ export default function VoiceConversation({ scenario, userId = "demo-user", onCo
         {messages.map((message, index) => <div key={index} style={{ animation: "fade-in-up .35s ease-out" }} className={`flex ${message.role === "user" ? "justify-end" : "justify-start"}`}>
           <div className={`max-w-[80%] rounded-2xl p-4 shadow-sm ${message.role === "user" ? "bg-blue-600 text-white" : "bg-slate-100 text-slate-800"}`}>
             <p className="mb-1 text-[11px] font-bold opacity-65">{message.role === "user" ? "🧑 Alumno" : "🤖 LinguaFly"}</p>
-            <p className="whitespace-pre-wrap leading-relaxed">{index === messages.length - 1 && message.role === "assistant" && phase === "speaking" ? revealedText : message.role === "assistant" ? getVisibleTutorText(message.content) : message.content}</p>
+            <p className="whitespace-pre-wrap leading-relaxed">{index === messages.length - 1 && message.role === "assistant" && phase === "speaking" ? revealedText : message.role === "assistant" ? getVisibleTutorText(message.content, scenario.id) : message.content}</p>
             {message.correction && <div className="mt-3 rounded-xl border border-yellow-300 bg-yellow-50 p-3 text-sm text-yellow-950"><p className="mb-1 font-bold">📝 Corrección</p>{message.correction}</div>}
           </div>
         </div>)}
