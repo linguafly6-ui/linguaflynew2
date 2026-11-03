@@ -1,6 +1,7 @@
 "use client";
 
 import { useState, useRef, useEffect } from "react";
+import { wrapWithTranslation } from "@/components/T";
 
 interface Scenario {
   id: string;
@@ -435,7 +436,7 @@ export default function ConversationPractice({ userId = "demo-user", initialScen
                 msg.role === "user" ? "bg-gradient-to-br from-blue-600 to-blue-700 text-white shadow-blue-200" : "bg-slate-100 text-slate-800"
               }`}
             >
-              <p className="whitespace-pre-wrap leading-relaxed">{msg.content}</p>
+              <p className="whitespace-pre-wrap leading-relaxed">{msg.role === "assistant" ? wrapWithTranslation(msg.content) : msg.content}</p>
               {msg.role === "assistant" && (
                 <button type="button" onClick={() => void speakMessage(msg.content, selectedScenario.language)} className="mt-3 inline-flex items-center gap-2 rounded-full bg-white/80 px-3 py-1.5 text-xs font-semibold text-blue-700 shadow-sm transition-all duration-300 hover:scale-105 hover:bg-white active:scale-95" aria-label="Escuchar mensaje">🔊 Escuchar</button>
               )}
