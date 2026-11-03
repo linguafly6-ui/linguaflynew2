@@ -22,14 +22,15 @@ export interface PronunciationResult {
 
 export async function transcribeAudio(
   audio: ArrayBuffer,
-  language: string
+  language: string,
+  userId = "pronunciation-user"
 ): Promise<string> {
   const env = getEnv();
   if (!env?.AI) {
     throw new Error("Cloudflare Workers AI binding (env.AI) is not available");
   }
 
-  if (!(await checkAiRateLimit("pronunciation-stt"))) throw new Error("AI_RATE_LIMITED");
+  if (!(await checkAiRateLimit(userId))) throw new Error("AI_RATE_LIMITED");
   const response = await env.AI.run(STT_MODEL as any, {
     audio: [...new Uint8Array(audio)],
     task: "transcribe",
@@ -111,7 +112,8 @@ export function generateFeedback(score: number, issues: string[]): string {
  */
 export async function generateReferenceAudio(
   phrase: string,
-  language: string
+  language: string,
+  userId = "pronunciation-tts"
 ): Promise<string> {
   const env = getEnv();
 
@@ -122,7 +124,7 @@ export async function generateReferenceAudio(
     throw new Error("Cloudflare R2 binding (env.LINGUAFLY_MEDIA) is not available");
   }
 
-  if (!(await checkAiRateLimit("pronunciation-tts"))) throw new Error("AI_RATE_LIMITED");
+  if (!(await checkAiRateLimit(userId))) throw new Error("AI_RATE_LIMITED");
   const result = await env.AI.run(TTS_MODEL as any, {
     prompt: phrase,
     lang: "en",

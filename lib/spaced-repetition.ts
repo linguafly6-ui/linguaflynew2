@@ -162,7 +162,8 @@ export async function generateAdaptiveContent(
   word: string,
   translation: string,
   language: string,
-  userLevel: string
+  userLevel: string,
+  userId = "spaced-repetition"
 ): Promise<string> {
   const env = getEnv();
 
@@ -172,7 +173,7 @@ export async function generateAdaptiveContent(
 La frase debe ser apta para nivel ${userLevel}.
 Devuelve SOLO la frase, sin explicaciones ni traducciÃ³n.`;
 
-  if (!(await checkAiRateLimit("spaced-repetition"))) throw new Error("AI_RATE_LIMITED");
+  if (!(await checkAiRateLimit(userId))) throw new Error("AI_RATE_LIMITED");
   const response = await env.AI.run(CHAT_MODEL as any, {
     messages: [
       { role: "system", content: "Eres un asistente que genera frases de ejemplo para aprender idiomas. Responde SOLO con la frase, nada mÃ¡s." },
