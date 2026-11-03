@@ -2,6 +2,48 @@
 
 import { useCallback, useEffect, useRef, useState } from "react";
 
+
+const UNIT_WORDS: Record<string, string[]> = {
+  "a1-speaking-1": [
+    "Hello",
+    "Good morning",
+    "Good afternoon",
+    "Good evening",
+    "Hi there",
+    "Goodbye",
+    "See you later",
+    "Good night",
+    "Nice to meet you",
+    "Have a nice day"
+  ],
+  "a1-speaking-2": [
+    "How are you",
+    "I'm fine thank you",
+    "What's your name",
+    "My name is",
+    "Nice to meet you",
+    "Where are you from",
+    "I'm from Spain",
+    "How old are you",
+    "I'm twenty years old",
+    "See you soon"
+  ],
+  "a1-speaking-3": [
+    "Can you help me",
+    "Excuse me",
+    "Sorry",
+    "Thank you",
+    "You're welcome",
+    "Please",
+    "Of course",
+    "No problem",
+    "I don't understand",
+    "Could you repeat that"
+  ],
+};
+
+const DEFAULT_WORDS = ["Hello", "Please", "Thank you", "Sorry", "Goodbye", "Yes", "No", "Maybe", "Excuse me", "See you later"];
+
 interface VoiceScenario {
   id: string;
   title: string;
@@ -45,21 +87,6 @@ function getVisibleTutorText(text: string): string {
   return [spanishText, englishPhrase].filter(Boolean).join("\n");
 }
 
-const VOICE_PRACTICE_INSTRUCTIONS = "⚠️ FORMATO OBLIGATORIO: Debes incluir la palabra o frase en inglés usando EXACTAMENTE este formato: [ENGLISH: palabra]. Sin este formato, el sistema no funcionará. NUNCA escribas palabras en inglés sin el marcador [ENGLISH: ...].\n\n" +
-  "1. Responde SIEMPRE en castellano (español).\n" +
-  "2. Incluye UNA SOLA palabra o frase en inglés por mensaje usando el formato: [ENGLISH: palabra o frase].\n" +
-  "3. NO escribas palabras en inglés fuera del marcador [ENGLISH: ...]. Si necesitas mencionar una palabra en inglés, ponla dentro del marcador.\n" +
-  "4. Da todas las instrucciones, explicaciones, felicitaciones y feedback en castellano.\n" +
-  "5. Si el alumno pronunció bien, felicítalo en castellano y da la SIGUIENTE palabra o frase nueva con [ENGLISH: ...]. No repitas la misma palabra.\n" +
-  "6. Si el alumno se equivocó, anímalo en castellano a intentarlo de nuevo e incluye la misma palabra con [ENGLISH: ...].\n" +
-  "7. Respuestas concisas: 1-2 frases en castellano + el marcador [ENGLISH: ...].\n" +
-  "8. Ejemplos CORRECTOS:\n" +
-  "   ¡Muy bien! Ahora intenta: [ENGLISH: Good morning]\n" +
-  "   Escucha y repite: [ENGLISH: How are you]\n" +
-  "   ¡Perfecto! Siguiente palabra: [ENGLISH: Thank you]\n" +
-  "9. Ejemplo INCORRECTO (NO hagas esto):\n" +
-  "   ¡Muy bien! Has dicho Hello correctamente. (Falta el marcador [ENGLISH: ...])\n" +
-  "10. Avanza siempre a una palabra o frase NUEVA si el alumno acertó. No te quedes repitiendo la misma.";
 type Phase = "idle" | "speaking" | "listening" | "processing" | "thinking" | "completed";
 
 export default function VoiceConversation({ scenario, userId = "demo-user", onCourseCompleted }: { scenario: VoiceScenario; userId?: string; onCourseCompleted?: () => void }) {
@@ -71,9 +98,14 @@ export default function VoiceConversation({ scenario, userId = "demo-user", onCo
   const [result, setResult] = useState<any>(null);
   const [starting, setStarting] = useState(false);
   const [revealedText, setRevealedText] = useState("");
+  const [progress, setProgress] = useState(0);
 
   const activeRef = useRef(false);
   const sessionRef = useRef<string | null>(null);
+  const wordListRef = useRef<string[]>([]);
+  const currentWordIndexRef = useRef(0);
+  const correctCountRef = useRef(0);
+  const finishConversationRef = useRef<(() => Promise<void>) | null>(null);
   const streamRef = useRef<MediaStream | null>(null);
   const contextRef = useRef<AudioContext | null>(null);
   const analyserRef = useRef<AnalyserNode | null>(null);
@@ -374,10 +406,6 @@ export default function VoiceConversation({ scenario, userId = "demo-user", onCo
     // Solo se abre el micrófono cuando hay una frase inglesa concreta que repetir.
     if (englishPhrase && activeRef.current) {
       await beginListening();
-    } else if (activeRef.current && sessionRef.current) {
-      // La IA no incluyó frase en inglés. Pedirle que dé la siguiente palabra.
-      setMessages((previous) => [...previous, { role: "assistant", content: "Vamos con la siguiente palabra. Escucha y repite: [ENGLISH: Good morning]" }]);
-      await speakLine("Vamos con la siguiente palabra. Escucha y repite: [ENGLISH: Good morning]");
     }
   }, [beginListening, conversationFetch]);
 
@@ -385,19 +413,27 @@ export default function VoiceConversation({ scenario, userId = "demo-user", onCo
     if (!activeRef.current || !sessionRef.current) return;
     setPhase("thinking");
     try {
+      const currentWord = wordListRef.current[currentWordIndexRef.current] || "";
+      const totalWords = wordListRef.current.length;
+      const evaluationPrompt =
+        'Eres un tutor de inglés. El alumno está practicando la palabra: "' + currentWord + '". ' +
+        "Responde SOLO en castellano en 1-2 frases. Dile si pronunció bien o mal. " +
+        "NO incluyas palabras en inglés ni el formato [ENGLISH: ...] en tu respuesta. " +
+        'Solo da feedback breve en castellano sobre si dijo bien la palabra "' + currentWord + '".';
+
       const response = await conversationFetch("/api/conversation/chat", {
         method: "POST", headers: { "Content-Type": "application/json" },
         body: JSON.stringify({
           sessionId: sessionRef.current,
           message,
-          personaPrompt: scenario.persona_prompt + "\n\n" + VOICE_PRACTICE_INSTRUCTIONS,
+          personaPrompt: evaluationPrompt,
           scenarioContext: {
             id: scenario.id,
             title: scenario.title,
             description: scenario.description || "",
             setting: scenario.setting || "",
-            persona: scenario.persona_prompt,
-            system_prompt: (scenario.system_prompt || scenario.persona_prompt) + "\n\n" + VOICE_PRACTICE_INSTRUCTIONS,
+            persona: "Tutor de inglés",
+            system_prompt: evaluationPrompt,
           },
           language: scenario.language,
           level: scenario.level,
@@ -405,10 +441,36 @@ export default function VoiceConversation({ scenario, userId = "demo-user", onCo
       });
       const data = await response.json() as any;
       if (!response.ok || data.error) throw new Error(data.error || "No se pudo generar la respuesta");
-      const reply = String(data.reply || "").trim();
-      if (!reply) throw new Error("La IA no ha devuelto una respuesta");
-      setMessages((previous) => [...previous, { role: "assistant", content: reply, correction: data.correction || null }]);
-      await speakLine(reply);
+      let feedback = String(data.reply || "").trim();
+      if (!feedback) feedback = "Bien hecho.";
+
+      // Limpiar cualquier marcador que la IA pueda incluir en el feedback.
+      feedback = feedback.replace(/\[ENGLISH:\s*.+?\]/gi, "").trim();
+
+      // Registrar aciertos solo cuando la API proporciona una señal explícita.
+      if (data.isCorrect === true || data.correct === true) correctCountRef.current += 1;
+
+      // Avanzar a la siguiente palabra; la secuencia la controla el componente.
+      currentWordIndexRef.current += 1;
+      setProgress(currentWordIndexRef.current);
+      const nextIndex = currentWordIndexRef.current;
+      const isLastWord = nextIndex >= totalWords;
+
+      let fullMessage: string;
+      if (isLastWord) {
+        fullMessage = `${feedback} ¡Has completado las ${totalWords} palabras! Muy buen trabajo. Vamos a ver tu puntuación.`;
+        setMessages((previous) => [...previous, { role: "assistant", content: fullMessage }]);
+        setRevealedText(fullMessage);
+        window.setTimeout(() => {
+          if (activeRef.current) void finishConversationRef.current?.();
+        }, 2000);
+        return;
+      }
+
+      const nextWord = wordListRef.current[nextIndex];
+      fullMessage = `${feedback} Palabra ${nextIndex + 1} de ${totalWords}: [ENGLISH: ${nextWord}]`;
+      setMessages((previous) => [...previous, { role: "assistant", content: fullMessage }]);
+      await speakLine(fullMessage);
     } catch (err) {
       if (!activeRef.current) return;
       setError(err instanceof Error ? err.message : "Error en la conversación");
@@ -416,7 +478,7 @@ export default function VoiceConversation({ scenario, userId = "demo-user", onCo
       releaseAudio();
       setPhase("idle");
     }
-  }, [scenario, speakLine, beginListening, conversationFetch, releaseAudio]);
+  }, [scenario, speakLine, conversationFetch, releaseAudio]);
 
   const startConversation = async () => {
     if (starting || activeRef.current) return;
@@ -435,13 +497,19 @@ export default function VoiceConversation({ scenario, userId = "demo-user", onCo
       if (!response.ok || data.error) throw new Error(data.error || "No se pudo iniciar la conversación");
       sessionRef.current = data.sessionId;
       activeRef.current = true;
-      const opening = String(data.openingLine || scenario.opening_line);
-      // Si el escenario no proporciona el marcador, usar una apertura española segura.
-      const formattedOpening = /\[ENGLISH:/i.test(opening)
-        ? opening
-        : "¡Bienvenido! Vamos a practicar inglés. Escucha y repite: [ENGLISH: Hello]";
-      setMessages([{ role: "assistant", content: formattedOpening }]);
-      await speakLine(formattedOpening);
+
+      // Cargar la lista de palabras de esta unidad.
+      wordListRef.current = UNIT_WORDS[scenario.id] || DEFAULT_WORDS;
+      currentWordIndexRef.current = 0;
+      correctCountRef.current = 0;
+      setProgress(0);
+      const totalWords = wordListRef.current.length;
+      const firstWord = wordListRef.current[0];
+
+      // Mensaje de inicio del tutor.
+      const introText = `¡Bienvenido a la unidad! Vamos a practicar ${totalWords} palabras en inglés. Escucha cada palabra y repítela en voz alta. Empezamos con la palabra 1 de ${totalWords}: [ENGLISH: ${firstWord}]`;
+      setMessages([{ role: "assistant", content: introText }]);
+      await speakLine(introText);
     } catch (err) {
       cleanupAudioResources();
       releaseAudio();
@@ -490,10 +558,16 @@ export default function VoiceConversation({ scenario, userId = "demo-user", onCo
     }
   };
 
+  finishConversationRef.current = finishConversation;
+
   const retry = () => {
     releaseAudio();
     activeRef.current = false;
     sessionRef.current = null;
+    wordListRef.current = [];
+    currentWordIndexRef.current = 0;
+    correctCountRef.current = 0;
+    setProgress(0);
     setMessages([]);
     setResult(null);
     setHint(null);
@@ -517,7 +591,11 @@ export default function VoiceConversation({ scenario, userId = "demo-user", onCo
     <div className="relative mx-auto flex min-h-[min(780px,88vh)] max-w-4xl flex-col overflow-hidden rounded-3xl border border-white/70 bg-gradient-to-br from-slate-50 via-white to-blue-50 shadow-xl shadow-slate-200/70">
       <style jsx>{`@keyframes fade-in-up { from { opacity: 0; transform: translateY(10px); } to { opacity: 1; transform: translateY(0); } }`}</style>
       <header className="flex items-center justify-between gap-3 border-b border-slate-100/80 px-5 py-4 sm:px-7">
-        <div className="min-w-0"><h2 className="truncate text-base font-bold text-slate-800">{scenario.title}</h2><p className="text-xs text-slate-400">{scenario.level} · {scenario.setting}</p></div>
+        <div className="min-w-0"><h2 className="truncate text-base font-bold text-slate-800">{scenario.title}</h2><p className="text-xs text-slate-400">{scenario.level} · {scenario.setting}</p>
+          {wordListRef.current.length > 0 && phase !== "idle" && phase !== "completed" && (
+            <p className="text-xs font-semibold text-blue-500">Palabra {Math.min(progress + 1, wordListRef.current.length)} de {wordListRef.current.length}</p>
+          )}
+        </div>
         {(phase !== "idle" && phase !== "completed" || starting) && <button type="button" onClick={finishConversation} className="shrink-0 rounded-full border border-red-200 bg-red-50 px-3 py-1.5 text-xs font-bold text-red-600 transition-colors hover:bg-red-100">■ Detener conversación</button>}
       </header>
       <main className="flex flex-1 flex-col gap-4 overflow-y-auto px-5 py-6 sm:px-8">
