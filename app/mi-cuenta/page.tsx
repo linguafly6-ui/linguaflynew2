@@ -53,7 +53,12 @@ export default function MiCuentaPage(){
           <button onClick={logout} className="rounded-xl border px-4 py-2.5 font-bold">Cerrar sesión</button>
         </div>
       </section>
-      <section className="mt-7 rounded-2xl border border-slate-200 bg-white p-6 shadow-sm">\n        <h2 className="text-xl font-black">Seguridad</h2>\n        <p className="mt-1 text-sm text-slate-600">Actualiza tu contraseña cuando quieras. Necesitarás introducir la contraseña actual.</p>\n        <CambiarPasswordForm />\n      </section>\n      <section className="mt-7 rounded-2xl bg-slate-50 p-6">
+      <section className="mt-7 rounded-2xl border border-slate-200 bg-white p-6 shadow-sm">
+        <h2 className="text-xl font-black">Seguridad</h2>
+        <p className="mt-1 text-sm text-slate-600">Actualiza tu contraseña cuando quieras. Necesitarás introducir la contraseña actual.</p>
+        <CambiarPasswordForm />
+      </section>
+      <section className="mt-7 rounded-2xl bg-slate-50 p-6">
         <h2 className="text-xl font-black">Tu progreso global</h2>
         <p className="mt-2 text-3xl font-black">{done} <span className="text-base font-semibold text-slate-500">unidades completadas</span></p>
         <div className="mt-4 grid gap-3 sm:grid-cols-2">{rows.map(([key,p])=><div key={key} className="rounded-xl bg-white p-4"><p className="font-bold">{key}</p><p className="mt-1 text-sm text-slate-600">{p.completed}/{p.totalUnits} · Media {p.averageScore}%</p></div>)}</div>
