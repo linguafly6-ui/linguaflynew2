@@ -122,8 +122,9 @@ export default function VoiceConversation({ scenario, userId = "demo-user", onCo
         } catch (err) {
           if (!activeRef.current) return;
           setError(err instanceof Error ? err.message : "Error al procesar tu voz");
-          setPhase("listening");
-          beginListening();
+          activeRef.current = false;
+          releaseAudio();
+          setPhase("idle");
         }
       };
       recorder.onerror = () => { if (activeRef.current) { setError("Ha ocurrido un problema con el micrófono."); setPhase("listening"); } };
@@ -186,7 +187,7 @@ export default function VoiceConversation({ scenario, userId = "demo-user", onCo
       setPhase("idle");
     }
   // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [scenario, stopMonitor, conversationFetch]);
+  }, [scenario, stopMonitor, conversationFetch, releaseAudio]);
 
   const speakLine = useCallback(async (text: string) => {
     if (!activeRef.current || !text.trim()) return;
@@ -264,10 +265,11 @@ export default function VoiceConversation({ scenario, userId = "demo-user", onCo
     } catch (err) {
       if (!activeRef.current) return;
       setError(err instanceof Error ? err.message : "Error en la conversación");
-      setPhase("listening");
-      beginListening();
+      activeRef.current = false;
+      releaseAudio();
+      setPhase("idle");
     }
-  }, [scenario, speakLine, beginListening, conversationFetch]);
+  }, [scenario, speakLine, beginListening, conversationFetch, releaseAudio]);
 
   const startConversation = async () => {
     if (starting || activeRef.current) return;
