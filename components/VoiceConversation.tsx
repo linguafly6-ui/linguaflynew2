@@ -16,7 +16,7 @@ interface VoiceScenario {
 interface VoiceMessage { role: "assistant" | "user"; content: string; correction?: string | null; }
 type Phase = "idle" | "speaking" | "listening" | "processing" | "thinking" | "completed";
 
-export default function VoiceConversation({ scenario, userId = "demo-user", onCourseCompleted }: { scenario: VoiceScenario; userId?: string; onCourseCompleted?: () => void }) {
+export default function VoiceConversation({ scenario, userId = "demo-user", onCourseCompleted, onNextUnit }: { scenario: VoiceScenario; userId?: string; onCourseCompleted?: () => void; onNextUnit?: () => void }) {
   const [phase, setPhase] = useState<Phase>("idle");
   const [messages, setMessages] = useState<VoiceMessage[]>([]);
   const [hint, setHint] = useState<string | null>(null);
@@ -384,7 +384,7 @@ export default function VoiceConversation({ scenario, userId = "demo-user", onCo
 
   useEffect(() => () => { activeRef.current = false; startCancelledRef.current = true; abortConversationRequests(); releaseAudio(); }, [abortConversationRequests, releaseAudio]);
 
-  const status = phase === "speaking" ? "💬 Tutor hablando..." : phase === "listening" ? "🎙️ Escuchando... habla ahora" : phase === "processing" ? "⏳ Procesando..." : phase === "thinking" ? "⏳ Procesando..." : phase === "completed" ? "✅ Unidad evaluada" : "Listo para hablar";
+  const status = phase === "speaking" ? "💬 Tutor hablando..." : phase === "listening" ? "🎙️ Escuchando... habla ahora" : phase === "processing" ? (evaluating ? "Evaluando tu progreso..." : "⏳ Procesando...") : phase === "thinking" ? "⏳ Procesando..." : phase === "completed" ? "✅ Unidad evaluada" : "Listo para hablar";
   const exchangeCount = exchangeCountRef.current;
   const evaluating = phase === "processing" && !activeRef.current;
   const passed = Number(result?.score || 0) >= 60;
@@ -427,7 +427,7 @@ export default function VoiceConversation({ scenario, userId = "demo-user", onCo
           {passed ? <p className="mt-3 text-lg font-extrabold text-green-700">✅ ¡Unidad completada!</p> : <p className="mt-3 text-base font-semibold text-amber-700">Necesitas practicar más. Consigue 60 puntos para desbloquear la siguiente unidad.</p>}
           <div className="mt-4 flex flex-wrap justify-center gap-2">
             {!passed && <button type="button" onClick={retry} className="rounded-xl bg-blue-600 px-5 py-2.5 text-sm font-bold text-white hover:bg-blue-700">Reintentar</button>}
-            <button type="button" onClick={onCourseCompleted} className="min-h-12 rounded-xl bg-blue-600 px-6 py-3 text-base font-extrabold text-white hover:bg-blue-700">{passed ? "Siguiente unidad →" : "Volver al curso"}</button>
+            {passed ? <button type="button" onClick={onNextUnit || onCourseCompleted} className="min-h-12 rounded-xl bg-blue-600 px-6 py-3 text-base font-extrabold text-white hover:bg-blue-700">Siguiente unidad →</button> : <button type="button" onClick={onCourseCompleted} className="min-h-12 rounded-xl bg-slate-100 px-6 py-3 text-base font-extrabold text-slate-700 hover:bg-slate-200">Volver al curso</button>}
           </div>
         </div>}
         {phase === "completed" && !result && <button type="button" onClick={onCourseCompleted} className="mt-2 rounded-xl bg-slate-100 px-5 py-2.5 text-sm font-bold text-slate-700">Volver al curso</button>}
