@@ -640,26 +640,76 @@ export default function VoiceConversation({ scenario, userId = "demo-user", onCo
     releaseAudio();
     setPhase("processing");
     setError(null);
+
+    const totalWords = wordListRef.current.length;
+    const correctWords = correctCountRef.current;
+    const fallbackScore = totalWords > 0
+      ? Math.max(0, Math.min(100, Math.round((correctWords / totalWords) * 100)))
+      : 0;
+    const coursePrefix = scenario.id.startsWith("a1-speaking-")
+      ? "a1-speaking"
+      : scenario.id.startsWith("a2-speaking-")
+        ? "a2-speaking"
+        : null;
+    let resultData: any = null;
+
     try {
-      const response = await fetch("/api/conversation/complete", {
-        method: "POST", headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({ userId, scenarioId: scenario.id, sessionId: sessionRef.current }),
+      const response = await conversationFetch("/api/conversation/complete", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({
+          userId,
+          scenarioId: scenario.id,
+          sessionId: sessionRef.current,
+          correctWords,
+          totalWords,
+        }),
       });
       const data = await response.json() as any;
-      if (!response.ok || data.error) throw new Error(data.error || "No se pudo evaluar la conversación");
-      const coursePrefix = scenario.id.startsWith("a1-speaking-") ? "a1-speaking" : scenario.id.startsWith("a2-speaking-") ? "a2-speaking" : null;
-      if (coursePrefix) {
-        const saved = await fetch("/api/course/" + coursePrefix + "/progress", { method: "POST", headers: { "Content-Type": "application/json" }, body: JSON.stringify({ userId, unitId: Number(scenario.id.replace(coursePrefix + "-", "")), score: data.score, feedback: data.feedback }) });
-        const progress = await saved.json() as any;
-        if (!saved.ok) throw new Error(progress.error || "No se pudo guardar el progreso");
-        data.courseProgress = progress;
+      if (!response.ok || data.error) {
+        throw new Error(data.error || "No se pudo evaluar la conversación");
       }
-      setResult(data);
-      setPhase("completed");
-    } catch (err) {
-      setError(err instanceof Error ? err.message : "No se pudo evaluar la conversación");
-      setPhase("completed");
+      resultData = data;
+    } catch (evalError) {
+      console.error("Evaluation failed, using fallback score:", evalError);
+      resultData = {
+        score: fallbackScore,
+        stars: fallbackScore >= 90 ? 3 : fallbackScore >= 75 ? 2 : fallbackScore >= 60 ? 1 : 0,
+        totalWords,
+        correctWords,
+        grammar_errors: 0,
+        vocabulary_used: correctWords,
+        feedback: `Has completado la unidad. Puntuación: ${fallbackScore}/100.`,
+        fallback: true,
+      };
     }
+
+    // El resultado de la evaluación se muestra aunque el guardado de progreso no esté disponible.
+    if (coursePrefix) {
+      try {
+        const saved = await conversationFetch("/api/course/" + coursePrefix + "/progress", {
+          method: "POST",
+          headers: { "Content-Type": "application/json" },
+          body: JSON.stringify({
+            userId,
+            unitId: Number(scenario.id.replace(coursePrefix + "-", "")),
+            score: resultData.score,
+            feedback: resultData.feedback || "",
+          }),
+        });
+        const progress = await saved.json() as any;
+        if (!saved.ok) {
+          console.error("Could not save course progress:", progress.error || saved.statusText);
+        } else {
+          resultData.courseProgress = progress;
+        }
+      } catch (saveError) {
+        console.error("Could not save progress:", saveError);
+      }
+    }
+
+    setResult(resultData);
+    setPhase("completed");
   };
 
   finishConversationRef.current = finishConversation;
