@@ -58,7 +58,7 @@ export async function GET(request: NextRequest) {
           });
         }
         const item = await db.prepare(
-          "SELECT ei.id,ei.category,ei.exercise_type,ei.question,ei.instruction,ei.passage,ei.audio_key,ei.options,ei.explanation,ei.\"order\" FROM exercise_items ei LEFT JOIN learning_exercise_progress lep ON lep.exercise_id=ei.id AND lep.student_id=? WHERE ei.unit_id=? AND COALESCE(lep.status,'in_progress')<>'completed' ORDER BY ei.\"order\" ASC LIMIT 1"
+          "SELECT ei.id,ei.category,ei.exercise_type,ei.question,ei.instruction,ei.passage,ei.audio_key,ei.options,ei.explanation,ei.correct_answer,ei.\"order\" FROM exercise_items ei LEFT JOIN learning_exercise_progress lep ON lep.exercise_id=ei.id AND lep.student_id=? WHERE ei.unit_id=? AND COALESCE(lep.status,'in_progress')<>'completed' ORDER BY ei.\"order\" ASC LIMIT 1"
         ).bind(student.id, unitId).first() as any;
 
         if (!item) {
