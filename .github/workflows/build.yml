@@ -83,9 +83,19 @@ jobs:
             /api/exercises/audio/listening/a1/unit1/ex46.mp3 \
 
           do
+            expected=200
+            case "$path" in
+              /api/course/a1-speaking/1|/api/course/a2-speaking/1|/api/course/b1-speaking/1|/api/course/b2-speaking/1|/api/course/c1-speaking/1|/api/course/c2-speaking/1|/api/exercises/a1/1|/api/exercises/a2/1|/api/exercises/b1/1|/api/exercises/b2/1|/api/exercises/c1/1|/api/exercises/c2/1)
+                expected=401
+                ;;
+            esac
             status=$(curl --silent --show-error --location --retry 5 --retry-delay 3 --retry-all-errors -A "Mozilla/5.0 LinguaFly-SmokeTest" -o /tmp/linguafly-smoke.html -w "%{http_code}" "$base$path")
-            echo "$status $base$path"
-            if [ "$status" != "200" ]; then failed=1; fi
+            echo "$status (expected $expected) $base$path"
+            if [ "$status" != "$expected" ]; then failed=1; fi
+            if [ "$expected" = "401" ] && ! grep -q '"needAccount":true' /tmp/linguafly-smoke.html; then
+              echo "Missing needAccount response for $base$path"
+              failed=1
+            fi
           done
           echo "Custom-domain diagnostic:"
           curl --silent --show-error --location --max-time 20 -o /dev/null -w "%{http_code} https://linguafly.app/\n" https://linguafly.app/ || true
