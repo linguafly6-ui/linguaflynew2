@@ -8,8 +8,8 @@ Configura estos bindings para el Worker `linguaflyapp1`:
 
 - `STRIPE_SECRET_KEY` — secreto de Stripe (modo test o live).
 - `STRIPE_WEBHOOK_SECRET` — secreto de firma del webhook.
-- `STRIPE_PRICE_MONTHLY` — Price ID recurrente mensual de **19,99 EUR/mes**.
-- `STRIPE_PRICE_ANNUAL` — Price ID recurrente anual de **199,99 EUR/año**.
+- `STRIPE_PRICE_MONTHLY` — Price ID recurrente mensual de **7,99 EUR/mes**.
+- `STRIPE_PRICE_ANNUAL` — Price ID recurrente anual de **59,99 EUR/año**.
 - `NEXT_PUBLIC_SITE_URL` — `https://linguafly.app`.
 
 Los cuatro valores de Stripe se leen desde el entorno del Worker. Los secretos deben configurarse como secretos y los Price ID pueden configurarse como variables de texto o secretos. No se han inventado Price ID ni claves.
@@ -52,4 +52,4 @@ El webhook valida la firma de Stripe y actualiza `students.plan`, `subscription_
 5. Cancela la suscripción desde el portal y verifica que el webhook devuelve el plan a Free cuando Stripe marca la suscripción como cancelada.
 6. Repite la prueba con claves live solo cuando todo lo anterior funcione.
 
-El panel de administración calcula el ingreso mensual estimado como número de suscripciones activas mensuales × 19,99 € más suscripciones anuales × 199,99 €/12. No representa el informe contable de Stripe.
+El panel de administración calcula el ingreso mensual estimado como número de suscripciones activas mensuales × 7,99 € más suscripciones anuales × 59,99 €/12. No representa el informe contable de Stripe.
