@@ -38,7 +38,8 @@ export async function GET(request: NextRequest) {
         }
 
         if (unitNumber > 5 && student.plan !== "pro" && student.plan !== "pro_test") {
-          return NextResponse.json({ courseId: course, unitNumber, proRequired: true, message: "Desbloquea esta unidad con LinguaFly Pro." });
+          lockedCourse = { courseId: course, unitNumber };
+          break;
         }
 
         const { unitId, unit, total } = await ensureLearnUnit(db, course, unitNumber);
