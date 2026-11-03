@@ -56,7 +56,7 @@ Te recomendamos cambiar tu contraseña temporal desde Mi cuenta después de inic
   try {
     await EMAIL.send({
       to: email,
-      from: "no-reply@linguafly.app",
+      from: "noreply@linguafly.app",
       subject: "¡Bienvenido/a a Linguafly! Tu contraseña de acceso",
       html,
       text,
