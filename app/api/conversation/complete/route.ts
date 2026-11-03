@@ -179,6 +179,30 @@ export async function POST(request: NextRequest) {
       await courseDb.prepare(
         "INSERT INTO " + table + "(user_id,unit_id,score,completed,attempts,feedback,updated_at) VALUES(?,?,?,?,1,?,datetime('now')) ON CONFLICT(user_id,unit_id) DO UPDATE SET score=MAX(score,excluded.score),completed=MAX(completed,excluded.completed),attempts=attempts+1,feedback=excluded.feedback,updated_at=datetime('now')"
       ).bind(userId, unitNumber, evaluated.score, evaluated.score >= 60 ? 1 : 0, evaluated.feedback).run();
+      const previousXp = await courseDb.prepare(
+        "SELECT xp_awarded FROM learning_speaking_progress WHERE student_id=? AND course_id=? AND unit_number=?"
+      ).bind(student.id, course, unitNumber).first() as any;
+      const xpTarget = evaluated.score >= 60 ? 10 : 5;
+      const xpEarned = Math.max(0, xpTarget - Number(previousXp?.xp_awarded || 0));
+      await courseDb.prepare(
+        "INSERT INTO learning_speaking_progress(student_id,course_id,unit_number,status,attempts,score,xp_awarded,completed_at,updated_at) VALUES(?,?,?,?,1,?,?,CASE WHEN ?=1 THEN datetime('now') ELSE NULL END,datetime('now')) ON CONFLICT(student_id,course_id,unit_number) DO UPDATE SET status=CASE WHEN excluded.status='completed' THEN 'completed' ELSE learning_speaking_progress.status END,attempts=attempts+1,score=MAX(score,excluded.score),xp_awarded=MAX(xp_awarded,excluded.xp_awarded),completed_at=CASE WHEN excluded.status='completed' THEN COALESCE(learning_speaking_progress.completed_at,datetime('now')) ELSE learning_speaking_progress.completed_at END,updated_at=datetime('now')"
+      ).bind(student.id, course, unitNumber, evaluated.score >= 60 ? "completed" : "in_progress", evaluated.score, Math.max(Number(previousXp?.xp_awarded || 0), xpTarget), evaluated.score >= 60 ? 1 : 0).run();
+
+      const today = new Date().toISOString().slice(0, 10);
+      const yesterday = new Date(Date.now() - 86400000).toISOString().slice(0, 10);
+      const streakRow = await courseDb.prepare(
+        "SELECT current_streak,longest_streak,last_practice_date,xp_total FROM learning_streaks WHERE student_id=?"
+      ).bind(student.id).first() as any;
+      const lastPractice = String(streakRow?.last_practice_date || "");
+      const currentStreak = lastPractice === today ? Number(streakRow?.current_streak || 1) : lastPractice === yesterday ? Number(streakRow?.current_streak || 0) + 1 : 1;
+      const longestStreak = Math.max(Number(streakRow?.longest_streak || 0), currentStreak);
+      await courseDb.prepare(
+        "INSERT INTO learning_streaks(student_id,current_streak,longest_streak,last_practice_date,xp_total) VALUES(?,?,?,?,?) ON CONFLICT(student_id) DO UPDATE SET current_streak=excluded.current_streak,longest_streak=excluded.longest_streak,last_practice_date=excluded.last_practice_date,xp_total=excluded.xp_total"
+      ).bind(student.id, currentStreak, longestStreak, today, Number(streakRow?.xp_total || 0) + xpEarned).run();
+      evaluated.xpEarned = xpEarned;
+      evaluated.xpTotal = Number(streakRow?.xp_total || 0) + xpEarned;
+      evaluated.streak = currentStreak;
+
       await saveUnifiedProgress(courseDb, Number(student.id), course + "-speaking", unitNumber, evaluated.score, evaluated.score >= 60);
     }
 
