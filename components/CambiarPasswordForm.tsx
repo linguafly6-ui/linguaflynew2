@@ -28,7 +28,7 @@ export default function CambiarPasswordForm() {
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({ currentPassword, newPassword }),
       });
-      const data = await response.json() as { success?: boolean; error?: string };
+      const data = await response.json() as { success: boolean; error?: string };
       if (!response.ok || !data.success) throw new Error(data.error || "No se pudo cambiar la contraseña.");
       setMessage({ type: "success", text: "Contraseña actualizada correctamente." });
       setCurrentPassword("");
