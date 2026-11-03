@@ -11,9 +11,8 @@ export async function POST(request:NextRequest){
   if(!(audio instanceof File)||!audio.size) return NextResponse.json({error:"Falta el archivo de audio"},{status:400});
   if(!audio.type.startsWith("audio/")||audio.size>10*1024*1024) return NextResponse.json({error:"Formato de audio no válido"},{status:400});
   if(!(await checkAiRateLimit(userId))) return NextResponse.json({error:"Demasiadas peticiones. Espera unos segundos e inténtalo de nuevo."},{status:429});
-  const bytes=new Uint8Array(await audio.arrayBuffer());let binary="";
-  for(let i=0;i<bytes.length;i+=0x8000) binary+=String.fromCharCode(...bytes.subarray(i,i+0x8000));
-  const result=await env.AI.run(WHISPER_MODEL as any,{audio:btoa(binary),task:"transcribe",language:"en",vad_filter:false});
+  const bytes=new Uint8Array(await audio.arrayBuffer());
+  const result=await env.AI.run(WHISPER_MODEL as any,{audio:[...bytes],task:"transcribe",language:"en",vad_filter:false});
   const transcription=String((result as any)?.text||"").trim();
   if(!transcription){
    let audioUrl:string|null=null;
