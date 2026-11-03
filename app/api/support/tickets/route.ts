@@ -28,7 +28,16 @@ export async function GET(request: NextRequest) {
   try {
     const student = await getStudent(request);
     if (!student) return NextResponse.json({error:"No autorizado"},{status:401});
-    const db=ticketDb(), unreadOnly=request.nextUrl.searchParams.get("unread")==="true";
+    const db=ticketDb(),unreadCondition="t.student_id=? AND t.updated_at>COALESCE(t.last_read_by_student,'') AND (SELECT sender_type FROM lf_ticket_messages WHERE ticket_id=t.id ORDER BY id DESC LIMIT 1)='admin'";
+    if(request.nextUrl.searchParams.get("countOnly")==="true"){
+      const [counts,unread]=await Promise.all([
+        db.prepare("SELECT COUNT(*) AS total,SUM(CASE WHEN status='open' THEN 1 ELSE 0 END) AS openCount,SUM(CASE WHEN status='answered' THEN 1 ELSE 0 END) AS answeredCount,SUM(CASE WHEN status='resolved' THEN 1 ELSE 0 END) AS resolvedCount,SUM(CASE WHEN status='closed' THEN 1 ELSE 0 END) AS closedCount FROM lf_support_tickets WHERE student_id=?").bind(student.id).first(),
+        db.prepare("SELECT COUNT(*) AS count FROM lf_support_tickets t WHERE "+unreadCondition).bind(student.id).first()
+      ]);
+      const c=counts as any,u=unread as any;
+      return NextResponse.json({total:Number(c?.total||0),openCount:Number(c?.openCount||0),answeredCount:Number(c?.answeredCount||0),resolvedCount:Number(c?.resolvedCount||0),closedCount:Number(c?.closedCount||0),unreadCount:Number(u?.count||0)},{headers:{"Cache-Control":"no-store"}});
+    }
+    const unreadOnly=request.nextUrl.searchParams.get("unread")==="true";
     const condition=unreadOnly ? "AND t.updated_at>COALESCE(t.last_read_by_student,'') AND (SELECT sender_type FROM lf_ticket_messages WHERE ticket_id=t.id ORDER BY id DESC LIMIT 1)='admin'" : "";
     const result=await db.prepare("SELECT t.id,t.subject,t.category,t.status,t.priority,t.course_context AS courseContext,t.unit_context AS unitContext,t.created_at AS createdAt,t.updated_at AS updatedAt,(SELECT m.message FROM lf_ticket_messages m WHERE m.ticket_id=t.id ORDER BY m.id DESC LIMIT 1) AS lastReply,(SELECT m.sender_type FROM lf_ticket_messages m WHERE m.ticket_id=t.id ORDER BY m.id DESC LIMIT 1) AS lastReplyFrom,(SELECT COUNT(*) FROM lf_ticket_messages m WHERE m.ticket_id=t.id) AS messagesCount,CASE WHEN t.updated_at>COALESCE(t.last_read_by_student,'') AND (SELECT sender_type FROM lf_ticket_messages WHERE ticket_id=t.id ORDER BY id DESC LIMIT 1)='admin' THEN 1 ELSE 0 END AS unread FROM lf_support_tickets t WHERE t.student_id=? "+condition+" ORDER BY t.updated_at DESC,t.id DESC").bind(student.id).all();
     const tickets=result.results||[];
