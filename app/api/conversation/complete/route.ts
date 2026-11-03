@@ -28,7 +28,7 @@ export async function POST(request: NextRequest) {
       return NextResponse.json({ error: "Faltan userId, scenarioId o sessionId" }, { status: 400 });
     }
 
-    const isCourseUnit = String(scenarioId).startsWith("a1-speaking-") || String(scenarioId).startsWith("a2-speaking-") || String(scenarioId).startsWith("b1-speaking-") || String(scenarioId).startsWith("b2-speaking-");
+    const isCourseUnit = String(scenarioId).startsWith("a1-speaking-") || String(scenarioId).startsWith("a2-speaking-") || String(scenarioId).startsWith("b1-speaking-") || String(scenarioId).startsWith("b2-speaking-") || String(scenarioId).startsWith("c1-speaking-");
     if (isCourseUnit) {
       const student = await getStudent(request);
       const unitNumber = Number(String(scenarioId).split("-").pop());
