@@ -75,7 +75,7 @@ Te recomendamos cambiar tu contraseña temporal desde Mi cuenta después de inic
       "--" + boundary + "--",
       "",
     ].join("\r\n");
-    await EMAIL.send(new EmailMessage("noreply@linguafly.app", email, raw));
+    await EMAIL.send(new EmailMessage("noreply@linguafly.app", email, raw) as any);
     return true;
   } catch (error) {
     console.error("Failed to send welcome email:", error);
