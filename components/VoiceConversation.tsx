@@ -127,7 +127,14 @@ export default function VoiceConversation({ scenario, userId = "demo-user", onCo
           setPhase("idle");
         }
       };
-      recorder.onerror = () => { if (activeRef.current) { setError("Ha ocurrido un problema con el micrófono."); setPhase("listening"); } };
+      recorder.onerror = () => {
+        if (activeRef.current) {
+          setError("Ha ocurrido un problema con el micrófono. Comprueba los permisos e inténtalo de nuevo.");
+          activeRef.current = false;
+          releaseAudio();
+          setPhase("idle");
+        }
+      };
       recorder.start(250);
       setNotice(null);
       setPhase("listening");
@@ -165,7 +172,10 @@ export default function VoiceConversation({ scenario, userId = "demo-user", onCo
           stopMonitor();
           discardRecordingRef.current = true;
           if (recorder.state !== "inactive") recorder.stop();
-          void speakLine(lastSpokenRef.current || scenario.opening_line);
+          setError("No he detectado voz en estos 15 segundos. Comprueba el micrófono y vuelve a iniciar la conversación.");
+          activeRef.current = false;
+          releaseAudio();
+          setPhase("idle");
           return;
         }
         if (voiceStartedRef.current && now - lastVoiceAtRef.current >= SILENCE_DURATION && !processingRef.current) {
