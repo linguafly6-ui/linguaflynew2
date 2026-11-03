@@ -5,6 +5,7 @@ import { A2_UNIT_WORDS, A2_DEFAULT_WORDS } from "@/lib/a2-speaking-words";
 import { B1_UNIT_WORDS, B1_DEFAULT_WORDS } from "@/lib/b1-speaking-words";
 import { B2_UNIT_WORDS, B2_DEFAULT_WORDS } from "@/lib/b2-speaking-words";
 import { C1_UNIT_WORDS, C1_DEFAULT_WORDS } from "@/lib/c1-speaking-words";
+import { C2_UNIT_WORDS, C2_DEFAULT_WORDS } from "@/lib/c2-speaking-words";
 
 
 // ============================================================
@@ -140,6 +141,7 @@ const DEFAULT_TOPICS: Record<number, string[]> = {
 
 function getUnitWords(unitId: string): string[] {
   if (unitId.startsWith("c1-speaking-")) return C1_UNIT_WORDS[unitId] || C1_DEFAULT_WORDS;
+  if (unitId.startsWith("c2-speaking-")) return C2_UNIT_WORDS[unitId] || C2_DEFAULT_WORDS;
   if (unitId.startsWith("b2-speaking-")) return B2_UNIT_WORDS[unitId] || B2_DEFAULT_WORDS;
   if (unitId.startsWith("b1-speaking-")) return B1_UNIT_WORDS[unitId] || B1_DEFAULT_WORDS;
   if (unitId.startsWith("a2-speaking-")) {
@@ -544,7 +546,7 @@ export default function VoiceConversation({ scenario, userId = "demo-user", onCo
     setPhase("thinking");
     try {
       const currentItem = wordListRef.current[currentWordIndexRef.current] || "";
-      const isB1 = (scenario.id.startsWith("b1-speaking-") || scenario.id.startsWith("b2-speaking-") || scenario.id.startsWith("c1-speaking-"));
+      const isB1 = (scenario.id.startsWith("b1-speaking-") || scenario.id.startsWith("b2-speaking-") || scenario.id.startsWith("c1-speaking-") || scenario.id.startsWith("c2-speaking-"));
       const currentWord = currentItem.replace(/^\[(?:Tutor|Alumno)\]\s*/i, "").trim();
       const totalWords = wordListRef.current.length;
       const evaluationPrompt = isB1
@@ -640,9 +642,9 @@ export default function VoiceConversation({ scenario, userId = "demo-user", onCo
       const firstWord = wordListRef.current[0];
 
       // Mensaje de inicio del tutor.
-      const isB1 = (scenario.id.startsWith("b1-speaking-") || scenario.id.startsWith("b2-speaking-") || scenario.id.startsWith("c1-speaking-"));
+      const isB1 = (scenario.id.startsWith("b1-speaking-") || scenario.id.startsWith("b2-speaking-") || scenario.id.startsWith("c1-speaking-") || scenario.id.startsWith("c2-speaking-"));
       const isB1Conversation = isB1ConversationUnit(scenario.id);
-      const speakingLevel = scenario.id.startsWith("c1-speaking-") ? "C1" : scenario.id.startsWith("b2-speaking-") ? "B2" : "B1";
+      const speakingLevel = scenario.id.startsWith("c1-speaking-") || scenario.id.startsWith("c2-speaking-") ? "C1" : scenario.id.startsWith("b2-speaking-") ? "B2" : "B1";
       const isSentenceBuilder = isSentenceBuilderUnit(scenario.id);
       const introText = isB1Conversation
         ? getB1PracticePrompt(firstWord, 0, totalWords, "¡Bienvenido! Vamos a practicar un diálogo guiado de nivel " + speakingLevel + ".")
@@ -694,7 +696,7 @@ export default function VoiceConversation({ scenario, userId = "demo-user", onCo
           ? "b1-speaking"
           : scenario.id.startsWith("b2-speaking-")
             ? "b2-speaking"
-            : scenario.id.startsWith("c1-speaking-")
+            : scenario.id.startsWith("c1-speaking-") || scenario.id.startsWith("c2-speaking-")
             ? "c1-speaking"
             : null;
     let resultData: any = null;
