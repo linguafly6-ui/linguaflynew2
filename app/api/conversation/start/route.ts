@@ -15,12 +15,12 @@ export async function POST(req:NextRequest){
    if(student){userId=studentUserId(student);if(body.userId!==userId)return NextResponse.json({error:"Sesión no válida"},{status:403});}
    const unit=await env.COURSE_DB.prepare("SELECT * FROM a1_speaking_units WHERE id=?").bind(id).first() as any;
    if(!unit)return NextResponse.json({error:"Unidad no encontrada"},{status:404});
-   scenario={id:scenarioId,title:"Unidad "+id,description:"Practica una conversación en inglés.",setting:"Situación cotidiana",language:"en",level:"A1",persona_prompt:unit.system_prompt};
+   scenario={id:scenarioId,title:"Unidad "+id,description:"Practica una conversación en inglés.",setting:"Situación cotidiana",language:"en",level:"A1"};
    opening="Hello! How can I help you today?";
   }else{
    const row=await env.DB.prepare("SELECT * FROM conversation_scenarios WHERE id=?").bind(scenarioId).first() as any;
    if(!row)return NextResponse.json({error:"Escenario no encontrado"},{status:404});
-   scenario={id:row.id,title:"Práctica de conversación",description:"Escucha y responde en inglés.",setting:"Situación cotidiana",language:"en",level:row.level,persona_prompt:row.persona_prompt};
+   scenario={id:row.id,title:"Práctica de conversación",description:"Escucha y responde en inglés.",setting:"Situación cotidiana",language:"en",level:row.level};
    opening=String(row.opening_line||"Hello! How can I help you today?");
   }
   const sessionId="conv-"+crypto.randomUUID();

@@ -4,10 +4,10 @@ export const runtime="edge";
 export async function GET(request:NextRequest){
  try{
   const level=request.nextUrl.searchParams.get("level");
-  let query="SELECT id,level,persona_prompt FROM conversation_scenarios",params:any[]=[];
+  let query="SELECT id,level FROM conversation_scenarios",params:any[]=[];
   if(level){query+=" WHERE level=?";params=[level];}
   query+=" ORDER BY level,id";
   const rows=await getEnv().DB.prepare(query).bind(...params).all();
-  return NextResponse.json({scenarios:(rows.results||[]).map((r:any)=>({id:r.id,title:"Práctica de conversación",description:"Escucha una situación y responde en inglés.",setting:"Situación cotidiana",language:"en",level:r.level,persona_prompt:r.persona_prompt}))});
+  return NextResponse.json({scenarios:(rows.results||[]).map((r:any)=>({id:r.id,title:"Práctica de conversación",description:"Escucha una situación y responde en inglés.",setting:"Situación cotidiana",language:"en",level:r.level}))});
  }catch(error){console.error(error);return NextResponse.json({error:"Error al obtener escenarios"},{status:500});}
 }
