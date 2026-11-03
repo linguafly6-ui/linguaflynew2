@@ -25,8 +25,10 @@ export default function VoiceConversation({ scenario, userId = "demo-user", onCo
   const [result, setResult] = useState<any>(null);
   const [starting, setStarting] = useState(false);
   const [revealedText, setRevealedText] = useState("");
+  const [typedText, setTypedText] = useState("");
 
   const activeRef = useRef(false);
+  const scrollContainerRef = useRef<HTMLElement | null>(null);
   const exchangeCountRef = useRef(0);
   const finishConversationRef = useRef<(() => Promise<void>) | null>(null);
   const unitNumber = Number(scenario.id.replace("a1-speaking-", ""));
@@ -210,13 +212,14 @@ export default function VoiceConversation({ scenario, userId = "demo-user", onCo
     if (!activeRef.current || !text.trim()) return;
     lastSpokenRef.current = text;
     setRevealedText(text);
+    setTypedText("");
     setNotice(null);
     setHint(null);
     // A1 Speaking usa tutor exclusivamente textual: deja tiempo para leer y luego activa el micrófono.
     setPhase("speaking");
     window.setTimeout(() => {
       if (activeRef.current) beginListening();
-    }, 1500);
+    }, Math.max(1500, Math.min(5000, text.length * 18)));
   }, [beginListening]);
 
   const answerStudent = useCallback(async (message: string) => {
@@ -349,6 +352,23 @@ export default function VoiceConversation({ scenario, userId = "demo-user", onCo
 
   finishConversationRef.current = finishConversation;
 
+  useEffect(() => {
+    if (phase !== "speaking" || !revealedText) { setTypedText(revealedText); return; }
+    let index = 0;
+    setTypedText("");
+    const timer = window.setInterval(() => {
+      index = Math.min(index + 2, revealedText.length);
+      setTypedText(revealedText.slice(0, index));
+      if (index >= revealedText.length) window.clearInterval(timer);
+    }, 18);
+    return () => window.clearInterval(timer);
+  }, [revealedText, phase]);
+
+  useEffect(() => {
+    const node = scrollContainerRef.current;
+    if (node) node.scrollTo({ top: node.scrollHeight, behavior: "smooth" });
+  }, [messages, typedText, phase]);
+
   const retry = () => {
     exchangeCountRef.current = 0;
     releaseAudio();
@@ -364,22 +384,26 @@ export default function VoiceConversation({ scenario, userId = "demo-user", onCo
 
   useEffect(() => () => { activeRef.current = false; startCancelledRef.current = true; abortConversationRequests(); releaseAudio(); }, [abortConversationRequests, releaseAudio]);
 
-  const status = phase === "speaking" ? "🤖 Hablando..." : phase === "listening" ? "🔴 Te escucho... habla ahora" : phase === "processing" ? "⏳ Procesando..." : phase === "thinking" ? "🤖 Pensando..." : phase === "completed" ? "Conversación finalizada" : "Listo para hablar";
+  const status = phase === "speaking" ? "💬 Tutor hablando..." : phase === "listening" ? "🎙️ Escuchando... habla ahora" : phase === "processing" ? "⏳ Procesando..." : phase === "thinking" ? "⏳ Procesando..." : phase === "completed" ? "✅ Unidad evaluada" : "Listo para hablar";
+  const exchangeCount = exchangeCountRef.current;
+  const evaluating = phase === "processing" && !activeRef.current;
   const passed = Number(result?.score || 0) >= 60;
 
   return (
-    <div className="relative mx-auto flex min-h-[min(780px,88vh)] max-w-4xl flex-col overflow-hidden rounded-3xl border border-white/70 bg-gradient-to-br from-slate-50 via-white to-blue-50 shadow-xl shadow-slate-200/70">
+    <div className="relative mx-auto flex min-h-[min(780px,88vh)] max-w-4xl flex-col overflow-hidden rounded-3xl border border-slate-100 bg-[#f8f9fa] shadow-xl shadow-slate-200/70">
       <style jsx>{`@keyframes fade-in-up { from { opacity: 0; transform: translateY(10px); } to { opacity: 1; transform: translateY(0); } }`}</style>
       <header className="flex items-center justify-between gap-3 border-b border-slate-100/80 px-5 py-4 sm:px-7">
         <div className="min-w-0"><h2 className="truncate text-base font-bold text-slate-800">{scenario.title}</h2><p className="text-xs text-slate-400">{scenario.level} · {scenario.setting}</p></div>
-        {(phase !== "idle" && phase !== "completed" || starting) && <button type="button" onClick={finishConversation} className="shrink-0 rounded-full border border-red-200 bg-red-50 px-3 py-1.5 text-xs font-bold text-red-600 transition-colors hover:bg-red-100">■ Detener conversación</button>}
+        {(phase !== "idle" && phase !== "completed" || starting) && <button type="button" onClick={() => { if (window.confirm("¿Terminar la conversación? Se evaluará tu progreso")) void finishConversation(); }} className="shrink-0 rounded-xl bg-red-600 px-4 py-2.5 text-sm font-extrabold text-white shadow-sm transition hover:bg-red-700">■ Terminar</button>}
       </header>
-      <main className="flex flex-1 flex-col gap-4 overflow-y-auto px-5 py-6 sm:px-8">
+      <main ref={scrollContainerRef} className="flex flex-1 flex-col gap-4 overflow-y-auto px-5 py-6 sm:px-8">
+        {scenario.id.startsWith("a1-speaking-") && phase !== "idle" && <div className="sticky top-0 z-10 rounded-xl border border-blue-100 bg-white/95 p-3 shadow-sm backdrop-blur"><div className="mb-2 flex justify-between text-sm font-bold text-slate-700"><span>Intercambio {Math.min(exchangeCount,maxExchanges)}/{maxExchanges}</span><span>{Math.round(Math.min(exchangeCount,maxExchanges)/maxExchanges*100)}%</span></div><div className="h-2 overflow-hidden rounded-full bg-slate-100"><div className="h-full rounded-full bg-blue-600 transition-all duration-500" style={{width:Math.min(exchangeCount,maxExchanges)/maxExchanges*100+"%"}}/></div>{evaluating&&<p className="mt-2 text-sm font-bold text-blue-700">Completando evaluación...</p>}</div>}
         {messages.map((message, index) => <div key={index} style={{ animation: "fade-in-up .35s ease-out" }} className={`flex ${message.role === "user" ? "justify-end" : "justify-start"}`}>
           <div className={`max-w-[80%] rounded-2xl p-4 shadow-sm ${message.role === "user" ? "bg-blue-600 text-white" : "bg-slate-100 text-slate-800"}`}>
             <p className="mb-1 text-[11px] font-bold opacity-65">{message.role === "user" ? "🧑 Alumno" : "🤖 LinguaFly"}</p>
-            <p className="whitespace-pre-wrap leading-relaxed">{index === messages.length - 1 && message.role === "assistant" && phase === "speaking" ? revealedText : message.content}</p>
-            {message.correction && <div className="mt-3 rounded-xl border border-yellow-300 bg-yellow-50 p-3 text-sm text-yellow-950"><p className="mb-1 font-bold">📝 Corrección</p>{message.correction}</div>}
+            <p className="whitespace-pre-wrap text-lg leading-relaxed sm:text-xl">{index === messages.length - 1 && message.role === "assistant" && phase === "speaking" ? typedText : message.content}</p>
+            {message.correction && <div className="mt-3 rounded-xl border border-yellow-300 bg-yellow-50 p-3 text-base text-yellow-950"><p className="mb-1 font-bold">📝 Corrección</p>{message.correction}</div>}
+            {message.content.includes("[CORRECCIÓN:") && <div className="mt-3 rounded-xl border border-yellow-300 bg-yellow-50 p-3 text-base font-semibold text-yellow-950">{message.content.match(/\[CORRECCIÓN:[^\]]+\]/)?.[0]}</div>}
           </div>
         </div>)}
         {hint && phase === "listening" && <div className="self-center rounded-full border border-yellow-200 bg-yellow-50/90 px-4 py-2 text-sm text-yellow-900 shadow-sm">💡 {hint}</div>}
@@ -388,19 +412,22 @@ export default function VoiceConversation({ scenario, userId = "demo-user", onCo
       </main>
       <footer className="flex min-h-24 flex-col items-center justify-center gap-2 border-t border-slate-100/80 bg-white/60 px-4 py-5">
         {phase === "speaking" && <div className="flex h-7 items-end gap-1.5" aria-label="Hablando"><span className="h-3 w-1.5 animate-pulse rounded-full bg-blue-500" /><span className="h-6 w-1.5 animate-pulse rounded-full bg-blue-500 [animation-delay:100ms]" /><span className="h-4 w-1.5 animate-pulse rounded-full bg-blue-500 [animation-delay:200ms]" /><span className="h-7 w-1.5 animate-pulse rounded-full bg-blue-500 [animation-delay:300ms]" /></div>}
-        {phase === "listening" && <span className="h-4 w-4 animate-pulse rounded-full bg-red-500 shadow-[0_0_0_7px_rgba(239,68,68,0.12)]" />}
+        {phase === "listening" && <span className="relative flex h-8 w-8 items-center justify-center rounded-full bg-red-100 text-xl text-red-600 before:absolute before:inset-0 before:animate-ping before:rounded-full before:bg-red-300/50">🎙️</span>}
         {(phase === "processing" || phase === "thinking") && <span className="h-6 w-6 animate-spin rounded-full border-2 border-blue-200 border-t-blue-600" />}
         <p className={`text-center text-lg font-semibold transition-all duration-300 ${phase === "listening" ? "text-red-600" : "text-slate-700"}`}>{status}</p>
         {phase === "thinking" && <div className="flex gap-1"><span className="animate-bounce">•</span><span className="animate-bounce [animation-delay:120ms]">•</span><span className="animate-bounce [animation-delay:240ms]">•</span></div>}
         {phase === "idle" && <button type="button" onClick={startConversation} disabled={starting} className="mt-2 rounded-full bg-blue-600 px-7 py-3 font-bold text-white shadow-lg shadow-blue-200 transition duration-300 hover:scale-[1.02] hover:bg-blue-700 disabled:opacity-60">{starting ? "Conectando..." : "🔊 Empezar conversación"}</button>}
-        {phase === "completed" && result && <div className="mt-3 w-full max-w-xl rounded-2xl border border-slate-200 bg-white p-5 text-center shadow-sm">
-          <p className="text-2xl font-extrabold text-slate-900">{result.score}/100 · {"⭐".repeat(result.stars || 0)}</p>
-          <p className="mt-2 text-sm text-slate-600">{result.feedback}</p>
+        {phase === "completed" && result && <div className="mt-3 w-full max-w-xl rounded-2xl border border-slate-200 bg-white p-6 text-center shadow-sm">
+          <div className="mb-3 text-5xl" aria-label="Evaluación completada">🎉</div>
+          <p className="text-4xl font-black text-slate-900">{result.score}/100</p>
+          <p className="mt-1 text-2xl" aria-label={(result.stars || 0)+" estrellas"}>{"⭐".repeat(result.stars || 0)}</p>
+          <div className="mt-4 rounded-2xl bg-slate-50 p-4 text-left"><p className="mb-1 font-bold text-slate-800">Feedback del tutor</p><p className="text-base leading-relaxed text-slate-700">{result.feedback}</p></div>
+          {(Array.isArray(result.corrections) ? result.corrections : messages.filter(m=>m.correction).map(m=>m.correction)).length>0 && <div className="mt-3 rounded-xl border border-amber-200 bg-amber-50 p-4 text-left"><p className="mb-2 font-bold text-amber-900">Correcciones para repasar</p><ul className="list-disc space-y-1 pl-5 text-sm text-amber-950">{(Array.isArray(result.corrections) ? result.corrections : messages.filter(m=>m.correction).map(m=>m.correction)).map((item:any,index:number)=><li key={index}>{typeof item==="string"?item:JSON.stringify(item)}</li>)}</ul></div>}
           <p className="mt-2 text-xs text-slate-500">Errores gramaticales: {result.grammar_errors} · Vocabulario utilizado: {result.vocabulary_used}</p>
-          {passed ? <p className="mt-3 font-bold text-emerald-700">🎉 ¡Enhorabuena! Has desbloqueado el siguiente escenario.</p> : <p className="mt-3 text-sm font-semibold text-amber-700">Necesitas 60 puntos para desbloquear el siguiente. Puedes volver a intentarlo.</p>}
+          {passed ? <p className="mt-3 text-lg font-extrabold text-green-700">✅ ¡Unidad completada!</p> : <p className="mt-3 text-base font-semibold text-amber-700">Necesitas practicar más. Consigue 60 puntos para desbloquear la siguiente unidad.</p>}
           <div className="mt-4 flex flex-wrap justify-center gap-2">
             {!passed && <button type="button" onClick={retry} className="rounded-xl bg-blue-600 px-5 py-2.5 text-sm font-bold text-white hover:bg-blue-700">Reintentar</button>}
-            <button type="button" onClick={onCourseCompleted} className="rounded-xl bg-slate-100 px-5 py-2.5 text-sm font-bold text-slate-700 hover:bg-slate-200">{passed ? "Continuar curso" : "Volver al curso"}</button>
+            <button type="button" onClick={onCourseCompleted} className="min-h-12 rounded-xl bg-blue-600 px-6 py-3 text-base font-extrabold text-white hover:bg-blue-700">{passed ? "Siguiente unidad →" : "Volver al curso"}</button>
           </div>
         </div>}
         {phase === "completed" && !result && <button type="button" onClick={onCourseCompleted} className="mt-2 rounded-xl bg-slate-100 px-5 py-2.5 text-sm font-bold text-slate-700">Volver al curso</button>}
