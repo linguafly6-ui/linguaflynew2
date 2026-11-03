@@ -7,12 +7,14 @@ export async function GET(request: NextRequest) {
   try {
     const student = await getStudent(request);
     if (!student) return NextResponse.json({ error: "Inicia sesión para continuar aprendiendo." }, { status: 401 });
+    if (!student.placement_level) return NextResponse.json({ error: "Completa primero tu test de nivel.", placementRequired: true }, { status: 403 });
     const env = getEnv();
     const db = env.COURSE_DB || env.DB;
     if (!db) return NextResponse.json({ error: "Base de datos no disponible." }, { status: 503 });
 
     let lockedCourse: { courseId: string; unitNumber: number } | null = null;
-    for (const course of LEARN_COURSES) {
+    const levelIndex = Math.max(0, LEARN_COURSES.indexOf(String(student.placement_level).toLowerCase() as typeof LEARN_COURSES[number]));
+    for (const course of LEARN_COURSES.slice(levelIndex)) {
       for (let unitNumber = 1; unitNumber <= 100; unitNumber++) {
         const progress = await db.prepare(
           "SELECT COUNT(*) AS completed FROM learning_exercise_progress lep JOIN exercise_items ei ON ei.id=lep.exercise_id JOIN exercise_units eu ON eu.id=ei.unit_id WHERE lep.student_id=? AND lep.course_id=? AND lep.unit_number=? AND lep.status='completed'"
