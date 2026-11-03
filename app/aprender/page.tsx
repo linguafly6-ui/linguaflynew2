@@ -14,6 +14,7 @@ type Lesson = {
   scenarioId?: string;
   question?: string;
   instruction?: string;
+  hint?: string;
   passage?: string;
   options?: string[];
   exerciseType?: string;
@@ -196,6 +197,7 @@ export default function AprenderPage() {
           </div>
           <h2 className="text-xl font-extrabold leading-relaxed text-slate-950 sm:text-2xl">{wrapWithTranslation(lesson.question || "")}</h2>
           {lesson.instruction && <p className="mt-3 text-sm text-slate-500">{lesson.instruction}</p>}
+          {lesson.exerciseType === "fill_blank" && lesson.hint && <p className="mt-2 inline-flex rounded-lg bg-amber-50 px-3 py-2 text-sm font-semibold text-amber-900">Verbo base: {lesson.hint}</p>}
           {lesson.passage && <p className="mt-5 whitespace-pre-line rounded-xl bg-slate-50 p-4 leading-7 text-slate-700">{wrapWithTranslation(lesson.passage)}</p>}
           {lesson.exerciseType === "word_order" && lesson.options?.length ? <div className="mt-7 space-y-4">
             <div className="flex min-h-14 flex-wrap gap-2 rounded-xl border border-dashed border-blue-300 bg-blue-50 p-3">
