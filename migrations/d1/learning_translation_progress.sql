@@ -61,6 +61,20 @@ CREATE TABLE IF NOT EXISTS learning_speaking_progress (
 CREATE INDEX IF NOT EXISTS idx_learning_speaking_student
   ON learning_speaking_progress(student_id, course_id, unit_number);
 
+-- Conservar el XP de progreso de speaking previo a esta ruta guiada.
+INSERT OR IGNORE INTO learning_speaking_progress(student_id,course_id,unit_number,status,attempts,score,xp_awarded,completed_at,updated_at)
+SELECT CAST(substr(user_id,9) AS INTEGER),'a1',unit_id,CASE WHEN completed=1 THEN 'completed' ELSE 'in_progress' END,attempts,score,CASE WHEN completed=1 THEN 10 WHEN attempts>0 THEN 5 ELSE 0 END,CASE WHEN completed=1 THEN updated_at ELSE NULL END,updated_at FROM a1_speaking_progress WHERE user_id GLOB 'student-[0-9]*' AND substr(user_id,9) NOT GLOB '*[^0-9]*';
+INSERT OR IGNORE INTO learning_speaking_progress(student_id,course_id,unit_number,status,attempts,score,xp_awarded,completed_at,updated_at)
+SELECT CAST(substr(user_id,9) AS INTEGER),'a2',unit_id,CASE WHEN completed=1 THEN 'completed' ELSE 'in_progress' END,attempts,score,CASE WHEN completed=1 THEN 10 WHEN attempts>0 THEN 5 ELSE 0 END,CASE WHEN completed=1 THEN updated_at ELSE NULL END,updated_at FROM a2_speaking_progress WHERE user_id GLOB 'student-[0-9]*' AND substr(user_id,9) NOT GLOB '*[^0-9]*';
+INSERT OR IGNORE INTO learning_speaking_progress(student_id,course_id,unit_number,status,attempts,score,xp_awarded,completed_at,updated_at)
+SELECT CAST(substr(user_id,9) AS INTEGER),'b1',unit_id,CASE WHEN completed=1 THEN 'completed' ELSE 'in_progress' END,attempts,score,CASE WHEN completed=1 THEN 10 WHEN attempts>0 THEN 5 ELSE 0 END,CASE WHEN completed=1 THEN updated_at ELSE NULL END,updated_at FROM b1_speaking_progress WHERE user_id GLOB 'student-[0-9]*' AND substr(user_id,9) NOT GLOB '*[^0-9]*';
+INSERT OR IGNORE INTO learning_speaking_progress(student_id,course_id,unit_number,status,attempts,score,xp_awarded,completed_at,updated_at)
+SELECT CAST(substr(user_id,9) AS INTEGER),'b2',unit_id,CASE WHEN completed=1 THEN 'completed' ELSE 'in_progress' END,attempts,score,CASE WHEN completed=1 THEN 10 WHEN attempts>0 THEN 5 ELSE 0 END,CASE WHEN completed=1 THEN updated_at ELSE NULL END,updated_at FROM b2_speaking_progress WHERE user_id GLOB 'student-[0-9]*' AND substr(user_id,9) NOT GLOB '*[^0-9]*';
+INSERT OR IGNORE INTO learning_speaking_progress(student_id,course_id,unit_number,status,attempts,score,xp_awarded,completed_at,updated_at)
+SELECT CAST(substr(user_id,9) AS INTEGER),'c1',unit_id,CASE WHEN completed=1 THEN 'completed' ELSE 'in_progress' END,attempts,score,CASE WHEN completed=1 THEN 10 WHEN attempts>0 THEN 5 ELSE 0 END,CASE WHEN completed=1 THEN updated_at ELSE NULL END,updated_at FROM c1_speaking_progress WHERE user_id GLOB 'student-[0-9]*' AND substr(user_id,9) NOT GLOB '*[^0-9]*';
+INSERT OR IGNORE INTO learning_speaking_progress(student_id,course_id,unit_number,status,attempts,score,xp_awarded,completed_at,updated_at)
+SELECT CAST(substr(user_id,9) AS INTEGER),'c2',unit_id,CASE WHEN completed=1 THEN 'completed' ELSE 'in_progress' END,attempts,score,CASE WHEN completed=1 THEN 10 WHEN attempts>0 THEN 5 ELSE 0 END,CASE WHEN completed=1 THEN updated_at ELSE NULL END,updated_at FROM c2_speaking_progress WHERE user_id GLOB 'student-[0-9]*' AND substr(user_id,9) NOT GLOB '*[^0-9]*';
+
 CREATE TABLE IF NOT EXISTS learning_streaks (
   student_id INTEGER PRIMARY KEY,
   current_streak INTEGER NOT NULL DEFAULT 0,
