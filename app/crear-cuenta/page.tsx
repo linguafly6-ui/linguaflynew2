@@ -22,10 +22,7 @@ export default function CreateAccountPage() {
       });
       const data = await response.json() as { error?: string };
       if (!response.ok) throw new Error(data.error || "No se pudo crear la cuenta.");
-      const params = new URLSearchParams(window.location.search);
-      const returnUrl = params.get("return");
-      const safeReturn = returnUrl && returnUrl.startsWith("/") && !returnUrl.startsWith("//") ? returnUrl : "/inicio";
-      router.push(["monthly", "annual"].includes(params.get("plan") || "") ? "/suscripcion" : safeReturn);
+      router.push("/test-nivel");
     } catch (submitError) {
       setError(submitError instanceof Error ? submitError.message : "No se pudo crear la cuenta.");
     } finally {
