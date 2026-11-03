@@ -60,7 +60,7 @@ export default function TestNivelPage() {
   const answered = selected !== null;
   const correct = answered && selected === current?.correctOption;
   const choose = (option: string) => {
-    if (answered) return;
+    if (!current || answered) return;
     setSelected(option);
     setAnswers((previous) => ({ ...previous, [current.id]: option }));
   };
