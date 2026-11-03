@@ -135,7 +135,7 @@ export default function SubscriptionPage() {
           <div className="mt-9 grid gap-5 md:grid-cols-2">
             <section className="flex flex-col rounded-2xl border border-slate-200 p-6 shadow-sm">
               <h2 className="text-xl font-bold">Mensual</h2>
-              <p className="mt-3 text-3xl font-black">€19,99<span className="text-base font-medium text-slate-500">/mes</span></p>
+              <p className="mt-3 text-3xl font-black">€7,99<span className="text-base font-medium text-slate-500">/mes</span></p>
               <ul className="mt-5 flex-1 space-y-3 text-sm text-slate-700">
                 <li>✓ Acceso completo a los 12 cursos A1–C2</li>
                 <li>✓ Entrenamiento de pronunciación</li>
@@ -152,8 +152,8 @@ export default function SubscriptionPage() {
 
             <section className="flex flex-col rounded-2xl border-2 border-blue-300 p-6 shadow-sm">
               <h2 className="text-xl font-bold">Anual</h2>
-              <p className="mt-3 text-3xl font-black">€199,99<span className="text-base font-medium text-slate-500">/año</span></p>
-              <p className="mt-1 text-sm font-semibold text-emerald-700">≈€16,67/mes · Ahorra un 17%</p>
+              <p className="mt-3 text-3xl font-black">€59,99<span className="text-base font-medium text-slate-500">/año</span></p>
+              <p className="mt-1 text-sm font-semibold text-emerald-700">≈€5/mes · Ahorra un 37%</p>
               <ul className="mt-5 flex-1 space-y-3 text-sm text-slate-700">
                 <li>✓ Acceso a 100 unidades</li>
                 <li>✓ Entrenamiento de pronunciación</li>
