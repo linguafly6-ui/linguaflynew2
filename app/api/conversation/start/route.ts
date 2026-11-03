@@ -1,26 +1,40 @@
 import { NextRequest, NextResponse } from "next/server";
-import { getEnv } from "@/lib/cf-context";
-import { loadUnitFromDb, generateLessonWithAI, getLevelForUnit, type UnitInfo } from "@/lib/conversation-script";
 
 export const runtime = "edge";
 
 export async function POST(request: NextRequest) {
-  try {
-    const env = getEnv();
-    const body = await request.json() as { unitId?: number };
-    const unitId: number | undefined = body.unitId;
-    if (unitId === undefined) return NextResponse.json({ error: "Falta unitId" }, { status: 400 });
-    if (unitId < 1 || unitId > 100) return NextResponse.json({ error: "unitId debe estar entre 1 y 100" }, { status: 400 });
-    let unit: UnitInfo | null = await loadUnitFromDb(env.DB, unitId);
-    if (!unit) {
-      const level = getLevelForUnit(unitId);
-      unit = { id: unitId, level, title: `Unidad ${unitId}`, description: `Leccion nivel ${level}`, language: "en", topic: "general" };
+  return NextResponse.json({
+    lesson: {
+      unitId: 1,
+      level: "A1",
+      title: "Saludos y Presentaciones",
+      description: "Aprende a saludar y presentarte en ingles",
+      language: "en",
+      introduction: "En esta unidad aprenderas a saludar y presentarte en ingles. Escucha la pronunciacion de cada palabra pulsando el boton de audio.",
+      sections: [
+        {
+          title: "Vocabulario basico",
+          explanation: "Los saludos mas comunes en ingles son:",
+          items: [
+            { english: "Hello", spanish: "Hola", example: "Hello, how are you?" },
+            { english: "Good morning", spanish: "Buenos dias", example: "Good morning, teacher!" },
+            { english: "Hi", spanish: "Hola (informal)", example: "Hi, I'm John" },
+            { english: "Goodbye", spanish: "Adios", example: "Goodbye, see you tomorrow" },
+            { english: "Thank you", spanish: "Gracias", example: "Thank you very much" }
+          ]
+        },
+        {
+          title: "Frases para presentarse",
+          explanation: "Para presentarte en ingles, puedes usar estas frases:",
+          items: [
+            { english: "My name is...", spanish: "Me llamo...", example: "My name is John" },
+            { english: "I'm from...", spanish: "Soy de...", example: "I'm from Spain" },
+            { english: "Nice to meet you", spanish: "Encantado de conocerte", example: "Nice to meet you, too" },
+            { english: "How are you?", spanish: "Como estas?", example: "How are you today?" }
+          ]
+        }
+      ],
+      tips: "Consejo: La 'h' en 'hello' no se pronuncia. Practica diciendo 'ello' en voz alta."
     }
-    const lesson = await generateLessonWithAI(env.AI, unit);
-    return NextResponse.json({ lesson });
-  } catch (error) {
-    const errorMessage = error instanceof Error ? error.message : String(error);
-    console.error("Lesson error:", errorMessage);
-    return NextResponse.json({ error: "Error al generar la leccion: " + errorMessage }, { status: 500 });
-  }
+  });
 }
