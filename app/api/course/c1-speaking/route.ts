@@ -44,7 +44,7 @@ export async function GET(req: NextRequest) {
       const p = progressMap.get(n) as any;
       const prev = progressMap.get(n - 1) as any;
       const done = Boolean(p?.completed);
-      const pro = student?.plan === "pro";
+      const pro = (student?.plan === "pro" || student?.plan === "pro_test");
       const unlocked = n <= 5 || (pro && (n === 6 || Boolean(prev?.completed && Number(prev.score) >= 60)));
       return {
         ...u,
