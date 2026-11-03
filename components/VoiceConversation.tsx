@@ -84,7 +84,7 @@ function isSentenceBuilderUnit(unitId: string): boolean {
 }
 
 function isB1ConversationUnit(unitId: string): boolean {
-  const match = unitId.match(/(?:b1|b2|c1)-speaking-(\d+)/);
+  const match = unitId.match(/(?:b1|b2|c1|c2)-speaking-(\d+)/);
   return !!match && Number(match[1]) % 4 === 0;
 }
 
@@ -550,7 +550,7 @@ export default function VoiceConversation({ scenario, userId = "demo-user", onCo
       const currentWord = currentItem.replace(/^\[(?:Tutor|Alumno)\]\s*/i, "").trim();
       const totalWords = wordListRef.current.length;
       const evaluationPrompt = isB1
-        ? 'Eres un tutor de inglés Cambridge B1/B2/C1. El alumno está practicando la frase: "' + currentWord + '". Evalúa si la transcripción se parece a la frase objetivo y da feedback breve en castellano, animándole a pronunciar con claridad y ritmo natural. No incluyas otra frase en inglés.'
+        ? 'Eres un tutor de inglés Cambridge B1/B2/C1/C2. El alumno está practicando la frase: "' + currentWord + '". Evalúa si la transcripción se parece a la frase objetivo y da feedback breve en castellano, animándole a pronunciar con claridad y ritmo natural. No incluyas otra frase en inglés.'
         : 'Eres un tutor de inglés. El alumno está practicando la palabra: "' + currentWord + '". Responde SOLO en castellano en 1-2 frases. Dile si pronunció bien o mal. NO incluyas palabras en inglés ni el formato [ENGLISH: ...] en tu respuesta.';
 
       const response = await conversationFetch("/api/conversation/chat", {
@@ -644,7 +644,7 @@ export default function VoiceConversation({ scenario, userId = "demo-user", onCo
       // Mensaje de inicio del tutor.
       const isB1 = (scenario.id.startsWith("b1-speaking-") || scenario.id.startsWith("b2-speaking-") || scenario.id.startsWith("c1-speaking-") || scenario.id.startsWith("c2-speaking-"));
       const isB1Conversation = isB1ConversationUnit(scenario.id);
-      const speakingLevel = scenario.id.startsWith("c1-speaking-") || scenario.id.startsWith("c2-speaking-") ? "C1" : scenario.id.startsWith("b2-speaking-") ? "B2" : "B1";
+      const speakingLevel = scenario.id.startsWith("c2-speaking-") ? "C2" : scenario.id.startsWith("c1-speaking-") ? "C1" : scenario.id.startsWith("b2-speaking-") ? "B2" : "B1";
       const isSentenceBuilder = isSentenceBuilderUnit(scenario.id);
       const introText = isB1Conversation
         ? getB1PracticePrompt(firstWord, 0, totalWords, "¡Bienvenido! Vamos a practicar un diálogo guiado de nivel " + speakingLevel + ".")
@@ -696,8 +696,10 @@ export default function VoiceConversation({ scenario, userId = "demo-user", onCo
           ? "b1-speaking"
           : scenario.id.startsWith("b2-speaking-")
             ? "b2-speaking"
-            : scenario.id.startsWith("c1-speaking-") || scenario.id.startsWith("c2-speaking-")
-            ? "c1-speaking"
+            : scenario.id.startsWith("c2-speaking-")
+            ? "c2-speaking"
+            : scenario.id.startsWith("c1-speaking-")
+              ? "c1-speaking"
             : null;
     let resultData: any = null;
 
