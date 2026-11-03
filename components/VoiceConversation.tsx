@@ -1,6 +1,7 @@
 "use client";
 
 import { useCallback, useEffect, useRef, useState } from "react";
+import { A2_UNIT_WORDS, A2_DEFAULT_WORDS } from "@/lib/a2-speaking-words";
 
 
 // ============================================================
@@ -74,8 +75,8 @@ const UNIT_WORDS: Record<string, string[]> = {
 const SENTENCE_BUILDER_UNITS = [4, 8, 12, 16, 20, 24, 28, 32, 36, 40, 44, 48, 52, 56, 60, 64, 68, 72, 76, 80, 84, 88, 92, 96, 100];
 
 function isSentenceBuilderUnit(unitId: string): boolean {
-  const match = unitId.match(/a1-speaking-(\d+)/);
-  return !!match && SENTENCE_BUILDER_UNITS.includes(Number(match[1]));
+  const match = unitId.match(/(?:a1|a2)-speaking-(\d+)/);
+  return !!match && Number(match[1]) % 4 === 0;
 }
 
 const DEFAULT_TOPICS: Record<number, string[]> = {
@@ -112,6 +113,9 @@ const DEFAULT_TOPICS: Record<number, string[]> = {
 };
 
 function getUnitWords(unitId: string): string[] {
+  if (unitId.startsWith("a2-speaking-")) {
+    return A2_UNIT_WORDS[unitId] || A2_DEFAULT_WORDS;
+  }
   const match = unitId.match(/a1-speaking-(\d+)/);
   if (!match) return ["Hello", "Please", "Thank you", "Sorry", "Goodbye", "Yes", "No", "Maybe", "Excuse me", "See you later"];
   const unitNumber = Number(match[1]);
@@ -643,8 +647,9 @@ export default function VoiceConversation({ scenario, userId = "demo-user", onCo
       });
       const data = await response.json() as any;
       if (!response.ok || data.error) throw new Error(data.error || "No se pudo evaluar la conversación");
-      if (scenario.id.startsWith("a1-speaking-")) {
-        const saved = await fetch("/api/course/a1-speaking/progress", { method: "POST", headers: { "Content-Type": "application/json" }, body: JSON.stringify({ userId, unitId: Number(scenario.id.replace("a1-speaking-", "")), score: data.score, feedback: data.feedback }) });
+      const coursePrefix = scenario.id.startsWith("a1-speaking-") ? "a1-speaking" : scenario.id.startsWith("a2-speaking-") ? "a2-speaking" : null;
+      if (coursePrefix) {
+        const saved = await fetch("/api/course/" + coursePrefix + "/progress", { method: "POST", headers: { "Content-Type": "application/json" }, body: JSON.stringify({ userId, unitId: Number(scenario.id.replace(coursePrefix + "-", "")), score: data.score, feedback: data.feedback }) });
         const progress = await saved.json() as any;
         if (!saved.ok) throw new Error(progress.error || "No se pudo guardar el progreso");
         data.courseProgress = progress;
