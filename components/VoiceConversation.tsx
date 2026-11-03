@@ -51,6 +51,7 @@ export default function VoiceConversation({ scenario, userId = "demo-user", onCo
   const processingRef = useRef(false);
   const requestControllersRef = useRef<Set<AbortController>>(new Set());
   const startCancelledRef = useRef(false);
+  const beginListeningRef = useRef<(() => Promise<void>) | null>(null);
 
   const conversationFetch = useCallback(async (input: RequestInfo | URL, init: RequestInit = {}) => {
     const controller = new AbortController();
@@ -158,7 +159,7 @@ export default function VoiceConversation({ scenario, userId = "demo-user", onCo
         cleanupAudioResources(false);
         if (!blob.size) {
           setNotice("No he podido oírte. Vamos otra vez.");
-          if (activeRef.current) void beginListening();
+          if (activeRef.current) void beginListeningRef.current?.();
           return;
         }
         setPhase("processing");
@@ -258,7 +259,9 @@ export default function VoiceConversation({ scenario, userId = "demo-user", onCo
       }
     }
   // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [scenario, stopMonitor, conversationFetch, releaseAudio, cleanupAudioResources, beginListening]);
+  }, [scenario, stopMonitor, conversationFetch, releaseAudio, cleanupAudioResources]);
+
+  beginListeningRef.current = beginListening;
 
   const speakLine = useCallback(async (text: string) => {
     if (!activeRef.current || !text.trim()) return;
