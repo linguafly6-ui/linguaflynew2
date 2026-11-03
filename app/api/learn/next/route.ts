@@ -11,6 +11,7 @@ export async function GET(request: NextRequest) {
     const db = env.COURSE_DB || env.DB;
     if (!db) return NextResponse.json({ error: "Base de datos no disponible." }, { status: 503 });
 
+    let lockedCourse: { courseId: string; unitNumber: number } | null = null;
     for (const course of LEARN_COURSES) {
       for (let unitNumber = 1; unitNumber <= 100; unitNumber++) {
         const progress = await db.prepare(
@@ -21,7 +22,8 @@ export async function GET(request: NextRequest) {
           const speaking = await getSpeakingProgress(db, course, Number(student.id), unitNumber);
           if (!speaking?.completed) {
             if (unitNumber > 5 && student.plan !== "pro" && student.plan !== "pro_test") {
-              return NextResponse.json({ courseId: course, unitNumber, proRequired: true, message: "Desbloquea esta unidad con LinguaFly Pro." });
+              lockedCourse = { courseId: course, unitNumber };
+              break;
             }
             return NextResponse.json({
               type: "speaking",
@@ -82,6 +84,8 @@ export async function GET(request: NextRequest) {
         });
       }
     }
+
+    if (lockedCourse) return NextResponse.json({ courseId: lockedCourse.courseId, unitNumber: lockedCourse.unitNumber, proRequired: true, message: "Has completado las unidades gratuitas. Desbloquea el resto de cursos con LinguaFly Pro." });
 
     const streak = await db.prepare("SELECT xp_total,current_streak,longest_streak FROM learning_streaks WHERE student_id=?")
       .bind(student.id).first() as any;
