@@ -5,6 +5,20 @@ import Link from "next/link";
 
 type Plan = "free" | "pro" | "pro_test";
 
+type CheckEmailResponse = {
+  error?: string;
+  available?: boolean;
+};
+
+type CreateStudentResponse = {
+  error?: string;
+  success?: boolean;
+  message?: string;
+  email?: string;
+  studentId?: number;
+  plan?: Plan;
+};
+
 export default function AdminCreateStudentPage() {
   const [adminKey, setAdminKey] = useState("");
   const [email, setEmail] = useState("");
@@ -37,7 +51,7 @@ export default function AdminCreateStudentPage() {
       const response = await fetch("/api/admin/students/create/check-email?email=" + encodeURIComponent(value), {
         headers: { "x-admin-key": adminKey }, cache: "no-store",
       });
-      const data = await response.json();
+      const data = await response.json() as CheckEmailResponse;
       if (!response.ok) throw new Error(data.error || "No se pudo comprobar el email.");
       setEmailAvailable(Boolean(data.available));
     } catch (err) {
@@ -58,7 +72,7 @@ export default function AdminCreateStudentPage() {
         headers: { "Content-Type": "application/json", "x-admin-key": adminKey },
         body: JSON.stringify({ email, password, plan, fullName, notes, expiresAt: plan === "pro_test" ? expiresAt : "" }),
       });
-      const data = await response.json();
+      const data = await response.json() as CreateStudentResponse;
       if (!response.ok) throw new Error(data.error || "No se pudo crear la cuenta.");
       setCreated(data);
       setEmail(""); setPassword(""); setConfirmPassword(""); setFullName(""); setNotes(""); setExpiresAt(""); setEmailAvailable(null);
