@@ -2,7 +2,7 @@ PRAGMA foreign_keys = ON;
 CREATE TABLE IF NOT EXISTS students (
  id INTEGER PRIMARY KEY AUTOINCREMENT, email TEXT UNIQUE NOT NULL, password_hash TEXT NOT NULL,
  plan TEXT DEFAULT 'free', stripe_customer_id TEXT, subscription_status TEXT DEFAULT 'inactive',
- current_period_end TEXT, created_at TEXT DEFAULT (datetime('now'))
+ current_period_end TEXT, billing_interval TEXT, created_at TEXT DEFAULT (datetime('now'))
 );
 CREATE TABLE IF NOT EXISTS student_progress (
  id INTEGER PRIMARY KEY AUTOINCREMENT, student_id INTEGER NOT NULL, unit_number INTEGER NOT NULL,
