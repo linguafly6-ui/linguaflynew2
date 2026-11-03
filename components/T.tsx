@@ -86,7 +86,7 @@ export function wrapWithTranslation(text: string) {
     if (part.toLowerCase() === "to" && /^\s+$/.test(next || "") && afterNext && TRANSLATABLE.has(afterNext.toLowerCase())) {
       output.push(<T key={index}>{part + next + afterNext}</T>);
       index += 2;
-    } else if (/^[A-Za-z]+$/.test(part) && !STOPWORDS.has(part.toLowerCase())) {
+    } else if (/^[A-Za-z]+$/.test(part) && (part.toLowerCase() === "to" || !STOPWORDS.has(part.toLowerCase()))) {
       output.push(<T key={index}>{part}</T>);
     } else {
       output.push(<span key={index}>{part}</span>);
