@@ -7,7 +7,7 @@ export const runtime = "edge";
 export async function POST(request: NextRequest) {
   try {
     const env = getEnv();
-    const body = await request.json();
+    const body = await request.json() as { unitId?: number };
     const unitId: number | undefined = body.unitId;
     if (unitId === undefined) return NextResponse.json({ error: "Falta unitId" }, { status: 400 });
     if (unitId < 1 || unitId > 100) return NextResponse.json({ error: "unitId debe estar entre 1 y 100" }, { status: 400 });
@@ -23,4 +23,3 @@ export async function POST(request: NextRequest) {
     return NextResponse.json({ error: "Error al generar la leccion" }, { status: 500 });
   }
 }
-

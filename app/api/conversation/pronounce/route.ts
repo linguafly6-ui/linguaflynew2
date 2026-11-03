@@ -5,7 +5,7 @@ export const runtime = "edge";
 
 export async function POST(request: NextRequest) {
   try {
-    const body = await request.json();
+    const body = await request.json() as { text?: string };
     const text: string | undefined = body.text;
     if (!text || text.trim().length === 0) return NextResponse.json({ error: "Falta text" }, { status: 400 });
     const audioBase64 = await generateAudio(text.trim());
@@ -16,4 +16,3 @@ export async function POST(request: NextRequest) {
     return NextResponse.json({ error: "Error al generar el audio" }, { status: 500 });
   }
 }
-
