@@ -85,7 +85,7 @@ function isB1ConversationUnit(unitId: string): boolean {
   return !!match && Number(match[1]) % 4 === 0;
 }
 
-function getB1PracticePrompt(unitId: string, item: string, index: number, total: number, feedback = ""): string {
+function getB1PracticePrompt(item: string, index: number, total: number, feedback = ""): string {
   const phrase = item.replace(/^\[(?:Tutor|Alumno)\]\s*/i, "").trim();
   const role = item.match(/^\[(Tutor|Alumno)\]/i)?.[1]?.toLowerCase();
   const prefix = feedback ? feedback + " " : "";
@@ -551,7 +551,7 @@ export default function VoiceConversation({ scenario, userId = "demo-user", onCo
         method: "POST", headers: { "Content-Type": "application/json" },
         body: JSON.stringify({
           sessionId: sessionRef.current,
-          message: `Palabra objetivo: "${currentWord}". El alumno ha dicho: ${message}`,
+          message: `${isB1 ? "Frase" : "Palabra"} objetivo: "${currentWord}". El alumno ha dicho: ${message}`,
           personaPrompt: evaluationPrompt,
           scenarioContext: {
             id: scenario.id,
@@ -584,7 +584,8 @@ export default function VoiceConversation({ scenario, userId = "demo-user", onCo
 
       let fullMessage: string;
       if (isLastWord) {
-        fullMessage = `${feedback} ¡Has completado las ${totalWords} palabras! Muy buen trabajo. Vamos a ver tu puntuación.`;
+        const completedLabel = scenario.id.startsWith("b1-speaking-") ? "frases" : "palabras";
+        fullMessage = `${feedback} ¡Has completado las ${totalWords} ${completedLabel}! Muy buen trabajo. Vamos a ver tu puntuación.`;
         setMessages((previous) => [...previous, { role: "assistant", content: fullMessage }]);
         setRevealedText(fullMessage);
         window.setTimeout(() => {
@@ -595,7 +596,7 @@ export default function VoiceConversation({ scenario, userId = "demo-user", onCo
 
       const nextWord = wordListRef.current[nextIndex];
       fullMessage = isB1
-        ? getB1PracticePrompt(scenario.id, nextWord, nextIndex, totalWords, feedback)
+        ? getB1PracticePrompt(nextWord, nextIndex, totalWords, feedback)
         : `${feedback} Palabra ${nextIndex + 1} de ${totalWords}: [ENGLISH: ${nextWord}]`;
       setMessages((previous) => [...previous, { role: "assistant", content: fullMessage }]);
       await speakLine(fullMessage);
@@ -639,9 +640,9 @@ export default function VoiceConversation({ scenario, userId = "demo-user", onCo
       const isB1Conversation = isB1ConversationUnit(scenario.id);
       const isSentenceBuilder = isSentenceBuilderUnit(scenario.id);
       const introText = isB1Conversation
-        ? getB1PracticePrompt(scenario.id, firstWord, 0, totalWords, "¡Bienvenido! Vamos a practicar un diálogo guiado de nivel B1.")
+        ? getB1PracticePrompt(firstWord, 0, totalWords, "¡Bienvenido! Vamos a practicar un diálogo guiado de nivel B1.")
         : isB1
-          ? "¡Bienvenido! En esta unidad practicaremos " + totalWords + " frases completas en inglés B1. Escucha cada frase y repítela. " + getB1PracticePrompt(scenario.id, firstWord, 0, totalWords)
+          ? "¡Bienvenido! En esta unidad practicaremos " + totalWords + " frases completas en inglés B1. Escucha cada frase y repítela. " + getB1PracticePrompt(firstWord, 0, totalWords)
           : isSentenceBuilder
             ? `¡Bienvenido! En esta unidad vamos a formar frases usando las palabras que has aprendido. Practicaremos ${totalWords} frases. Escucha cada frase y repítela. Empezamos con la frase 1 de ${totalWords}: [ENGLISH: ${firstWord}]`
             : `¡Bienvenido a la unidad! Vamos a practicar ${totalWords} palabras en inglés. Escucha cada palabra y repítela en voz alta. Empezamos con la palabra 1 de ${totalWords}: [ENGLISH: ${firstWord}]`;
