@@ -167,7 +167,7 @@ export async function generateAdaptiveContent(
 ): Promise<string> {
   const env = getEnv();
 
-  const langName = language === "en" ? "inglÃ©s" : language === "fr" ? "francÃ©s" : "espaÃ±ol";
+  const langName = "inglés";
 
   const prompt = `Genera UNA frase de ejemplo en ${langName} usando la palabra "${word}" (significado: "${translation}").
 La frase debe ser apta para nivel ${userLevel}.
