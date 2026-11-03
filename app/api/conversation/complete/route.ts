@@ -44,6 +44,7 @@ export async function POST(request: NextRequest) {
    return NextResponse.json({score,stars,feedback,grammar_errors,vocabulary_used});
   }
   await env.DB.prepare("UPDATE conversation_sessions SET status='completed',updated_at=datetime('now') WHERE id=?").bind(sessionId).run();
+  await env.DB.prepare("UPDATE conversation_sessions SET status='completed',updated_at=datetime('now') WHERE id=?").bind(sessionId).run();
   await env.DB.prepare("UPDATE conversation_course_progress SET status=?,score=?,stars=?,attempts=attempts+1,completed_at=CASE WHEN ?='completed' THEN datetime('now') ELSE completed_at END WHERE user_id=? AND scenario_id=?")
    .bind(score>=60?"completed":"available",score,stars,score>=60?"completed":"available",userId,scenarioId).run();
   let unlocked_scenario=null;
