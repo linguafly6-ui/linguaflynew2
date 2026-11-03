@@ -67,7 +67,7 @@ INSERT OR IGNORE INTO unified_progress(student_id,course_type,unit_number,score,
 SELECT CAST(substr(p.user_id,9) AS INTEGER),'exercises-'||p.course_id,u.unit_number,
        CASE WHEN SUM(p.completed)>0 THEN ROUND(SUM(p.score*p.completed)/SUM(p.completed)) ELSE 0 END,
        CASE WHEN SUM(p.completed)>=60 THEN 1 ELSE 0 END,
-       SUM(p.completed),MAX(p.last_attempt),
+       COUNT(*),MAX(p.last_attempt),
        CASE WHEN SUM(p.completed)>=60 THEN MAX(COALESCE(p.completed_at,p.last_attempt)) ELSE NULL END
 FROM exercise_progress p
 JOIN exercise_units u ON u.id=p.unit_id
