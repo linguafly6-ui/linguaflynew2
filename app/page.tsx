@@ -15,6 +15,7 @@ export default async function HomePage() {
         <div className="mt-9 flex flex-wrap gap-3">
           <Link href="/blog" className="rounded-xl bg-[#2457c5] px-6 py-3 font-bold text-white">Explore the blog</Link>
           <Link href="/features" className="rounded-xl border border-slate-300 bg-white px-6 py-3 font-bold">Practise English</Link>
+          <Link href="/ejercicios" className="rounded-xl border border-blue-200 bg-blue-50 px-6 py-3 font-bold text-blue-700">Interactive exercises</Link>
         </div>
       </div>
       <div className="rounded-3xl bg-[#14213d] p-8 text-white shadow-xl">
