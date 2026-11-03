@@ -389,49 +389,105 @@ export default function VoiceConversation({ scenario, userId = "demo-user", onCo
   const status = phase === "speaking" ? "💬 Tutor hablando..." : phase === "listening" ? "🎙️ Escuchando... habla ahora" : phase === "processing" ? (evaluating ? "Evaluando tu progreso..." : "⏳ Procesando...") : phase === "thinking" ? "⏳ Procesando..." : phase === "completed" ? "✅ Unidad evaluada" : "Listo para hablar";
   const passed = Number(result?.score || 0) >= 60;
 
+  const unitLabel = scenario.id.startsWith("a1-speaking-") ? `Unidad ${unitNumber}` : scenario.level;
+  const progressPercent = Math.min(exchangeCount, maxExchanges) / maxExchanges * 100;
+  const completionScreen = phase === "completed" && !!result;
+
   return (
-    <div className="relative mx-auto flex min-h-[min(780px,88vh)] max-w-4xl flex-col overflow-hidden rounded-3xl border border-slate-100 bg-[#f8f9fa] shadow-xl shadow-slate-200/70">
-      <style jsx>{`@keyframes fade-in-up { from { opacity: 0; transform: translateY(10px); } to { opacity: 1; transform: translateY(0); } }`}</style>
-      <header className="flex items-center justify-between gap-3 border-b border-slate-100/80 px-5 py-4 sm:px-7">
-        <div className="min-w-0"><h2 className="truncate text-base font-bold text-slate-800">{scenario.title}</h2><p className="text-xs text-slate-400">{scenario.level} · {scenario.setting}</p></div>
-        {(phase !== "idle" && phase !== "completed" || starting) && <button type="button" onClick={() => { if (window.confirm("¿Terminar la conversación? Se evaluará tu progreso")) void finishConversation(); }} className="shrink-0 rounded-xl bg-red-600 px-4 py-2.5 text-sm font-extrabold text-white shadow-sm transition hover:bg-red-700">■ Terminar</button>}
-      </header>
-      <main ref={scrollContainerRef} className="flex flex-1 flex-col gap-4 overflow-y-auto px-5 py-6 sm:px-8">
-        {scenario.id.startsWith("a1-speaking-") && phase !== "idle" && <div className="sticky top-0 z-10 rounded-xl border border-blue-100 bg-white/95 p-3 shadow-sm backdrop-blur"><div className="mb-2 flex justify-between text-sm font-bold text-slate-700"><span>Intercambio {Math.min(exchangeCount,maxExchanges)}/{maxExchanges}</span><span>{Math.round(Math.min(exchangeCount,maxExchanges)/maxExchanges*100)}%</span></div><div className="h-2 overflow-hidden rounded-full bg-slate-100"><div className="h-full rounded-full bg-blue-600 transition-all duration-500" style={{width:Math.min(exchangeCount,maxExchanges)/maxExchanges*100+"%"}}/></div>{evaluating&&<p className="mt-2 text-sm font-bold text-blue-700">Completando evaluación...</p>}</div>}
-        {messages.map((message, index) => <div key={index} style={{ animation: "fade-in-up .35s ease-out" }} className={`flex ${message.role === "user" ? "justify-end" : "justify-start"}`}>
-          <div className={`max-w-[80%] rounded-2xl p-4 shadow-sm ${message.role === "user" ? "bg-blue-600 text-white" : "bg-slate-100 text-slate-800"}`}>
-            <p className="mb-1 text-[11px] font-bold opacity-65">{message.role === "user" ? "🧑 Alumno" : "🤖 LinguaFly"}</p>
-            <p className="whitespace-pre-wrap text-lg leading-relaxed sm:text-xl">{index === messages.length - 1 && message.role === "assistant" && phase === "speaking" ? typedText : message.content}</p>
-            {message.correction && <div className="mt-3 rounded-xl border border-yellow-300 bg-yellow-50 p-3 text-base text-yellow-950"><p className="mb-1 font-bold">📝 Corrección</p>{message.correction}</div>}
-            {message.content.includes("[CORRECCIÓN:") && <div className="mt-3 rounded-xl border border-yellow-300 bg-yellow-50 p-3 text-base font-semibold text-yellow-950">{message.content.match(/\[CORRECCIÓN:[^\]]+\]/)?.[0]}</div>}
+    <div className={`voice-shell relative mx-auto flex min-h-[min(780px,88vh)] max-w-4xl flex-col overflow-hidden rounded-3xl shadow-2xl ${completionScreen ? (passed ? "voice-success" : "voice-retry") : "voice-conversation"}`}>
+      <style jsx>{`
+        .voice-shell { color: white; }
+        .voice-conversation { background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); }
+        .voice-success { background: linear-gradient(135deg, #16a34a 0%, #15803d 100%); }
+        .voice-retry { background: linear-gradient(135deg, #f97316 0%, #ea580c 100%); }
+        .glass { backdrop-filter: blur(10px); background: rgba(255,255,255,.15); border: 1px solid rgba(255,255,255,.2); }
+        .chat-scroll { scrollbar-width: thin; scrollbar-color: rgba(255,255,255,.3) transparent; }
+        .chat-scroll::-webkit-scrollbar { width: 6px; }
+        .chat-scroll::-webkit-scrollbar-track { background: transparent; }
+        .chat-scroll::-webkit-scrollbar-thumb { background: rgba(255,255,255,.3); border-radius: 3px; }
+        @keyframes tutor-in { from { opacity: 0; transform: translateX(-18px); } to { opacity: 1; transform: translateX(0); } }
+        @keyframes student-in { from { opacity: 0; transform: translateX(18px); } to { opacity: 1; transform: translateX(0); } }
+        @keyframes fade-in { from { opacity: 0; } to { opacity: 1; } }
+        @keyframes pulse-ring { 0% { transform: scale(.85); opacity: .7; } 100% { transform: scale(1.55); opacity: 0; } }
+        .tutor-message { animation: tutor-in .3s ease both; }
+        .student-message { animation: student-in .3s ease both; }
+        .voice-button { transition: transform .2s, background-color .2s; }
+        .voice-button:hover { transform: scale(1.05); }
+        .status-ring { animation: pulse-ring 1.5s ease-out infinite; }
+        @media (max-width: 640px) {
+          .chat-bubble { width: 85%; max-width: 85%; font-size: 16px; }
+          .chat-avatar { width: 32px; height: 32px; min-width: 32px; font-size: 16px; }
+          .status-orb { width: 64px; height: 64px; font-size: 25px; }
+        }
+      `}</style>
+
+      {completionScreen ? (
+        <section className="flex flex-1 flex-col items-center justify-center px-5 py-10 text-center" style={{animation:"fade-in .45s ease both"}}>
+          <div className="mb-4 text-6xl" aria-label="Evaluación completada">{passed ? "🎉" : "🧡"}</div>
+          {passed ? <>
+            <p className="text-lg font-bold text-white/90">¡Unidad completada!</p>
+            <p className="mt-1 text-5xl font-black text-white sm:text-6xl">{result.score}/100</p>
+            <p className="mt-3 text-3xl" aria-label={(result.stars || 0)+" estrellas"}>{"⭐".repeat(result.stars || 0)}</p>
+          </> : <>
+            <h2 className="text-3xl font-black text-white">Necesitas practicar más</h2>
+            <p className="mt-3 text-5xl font-black text-white">{result.score}/100</p>
+            <p className="mt-2 text-white/90">Consigue 60 puntos para desbloquear la siguiente unidad.</p>
+          </>}
+          <div className="mt-7 w-full max-w-xl rounded-3xl bg-white p-6 text-left text-slate-800 shadow-xl">
+            <p className="mb-2 font-extrabold">Feedback del tutor</p>
+            <p className="leading-relaxed">{result.feedback}</p>
+            {(Array.isArray(result.corrections) ? result.corrections : messages.filter(m=>m.correction).map(m=>m.correction)).length > 0 && <div className="mt-4 rounded-xl bg-amber-50 p-4 text-amber-950"><p className="mb-2 font-bold">Correcciones para repasar</p><ul className="list-disc space-y-1 pl-5 text-sm">{(Array.isArray(result.corrections) ? result.corrections : messages.filter(m=>m.correction).map(m=>m.correction)).map((item:any,index:number)=><li key={index}>{typeof item==="string"?item:JSON.stringify(item)}</li>)}</ul></div>}
+            <p className="mt-3 text-xs text-slate-500">Errores gramaticales: {result.grammar_errors} · Vocabulario utilizado: {result.vocabulary_used}</p>
           </div>
-        </div>)}
-        {hint && phase === "listening" && <div className="self-center rounded-full border border-yellow-200 bg-yellow-50/90 px-4 py-2 text-sm text-yellow-900 shadow-sm">💡 {hint}</div>}
-        {notice && phase === "listening" && <p className="self-center text-xs text-slate-400">{notice}</p>}
-        {error && <p className="self-center rounded-xl bg-red-50 px-4 py-2 text-sm text-red-700">{error}</p>}
-      </main>
-      <footer className="flex min-h-24 flex-col items-center justify-center gap-2 border-t border-slate-100/80 bg-white/60 px-4 py-5">
-        {phase === "speaking" && <div className="flex h-7 items-end gap-1.5" aria-label="Hablando"><span className="h-3 w-1.5 animate-pulse rounded-full bg-blue-500" /><span className="h-6 w-1.5 animate-pulse rounded-full bg-blue-500 [animation-delay:100ms]" /><span className="h-4 w-1.5 animate-pulse rounded-full bg-blue-500 [animation-delay:200ms]" /><span className="h-7 w-1.5 animate-pulse rounded-full bg-blue-500 [animation-delay:300ms]" /></div>}
-        {phase === "listening" && <span className="relative flex h-8 w-8 items-center justify-center rounded-full bg-red-100 text-xl text-red-600 before:absolute before:inset-0 before:animate-ping before:rounded-full before:bg-red-300/50">🎙️</span>}
-        {(phase === "processing" || phase === "thinking") && <span className="h-6 w-6 animate-spin rounded-full border-2 border-blue-200 border-t-blue-600" />}
-        <p className={`text-center text-lg font-semibold transition-all duration-300 ${phase === "listening" ? "text-red-600" : "text-slate-700"}`}>{status}</p>
-        {phase === "thinking" && <div className="flex gap-1"><span className="animate-bounce">•</span><span className="animate-bounce [animation-delay:120ms]">•</span><span className="animate-bounce [animation-delay:240ms]">•</span></div>}
-        {phase === "idle" && <button type="button" onClick={startConversation} disabled={starting} className="mt-2 rounded-full bg-blue-600 px-7 py-3 font-bold text-white shadow-lg shadow-blue-200 transition duration-300 hover:scale-[1.02] hover:bg-blue-700 disabled:opacity-60">{starting ? "Conectando..." : "🔊 Empezar conversación"}</button>}
-        {phase === "completed" && result && <div className="mt-3 w-full max-w-xl rounded-2xl border border-slate-200 bg-white p-6 text-center shadow-sm">
-          <div className="mb-3 text-5xl" aria-label="Evaluación completada">🎉</div>
-          <p className="text-4xl font-black text-slate-900">{result.score}/100</p>
-          <p className="mt-1 text-2xl" aria-label={(result.stars || 0)+" estrellas"}>{"⭐".repeat(result.stars || 0)}</p>
-          <div className="mt-4 rounded-2xl bg-slate-50 p-4 text-left"><p className="mb-1 font-bold text-slate-800">Feedback del tutor</p><p className="text-base leading-relaxed text-slate-700">{result.feedback}</p></div>
-          {(Array.isArray(result.corrections) ? result.corrections : messages.filter(m=>m.correction).map(m=>m.correction)).length>0 && <div className="mt-3 rounded-xl border border-amber-200 bg-amber-50 p-4 text-left"><p className="mb-2 font-bold text-amber-900">Correcciones para repasar</p><ul className="list-disc space-y-1 pl-5 text-sm text-amber-950">{(Array.isArray(result.corrections) ? result.corrections : messages.filter(m=>m.correction).map(m=>m.correction)).map((item:any,index:number)=><li key={index}>{typeof item==="string"?item:JSON.stringify(item)}</li>)}</ul></div>}
-          <p className="mt-2 text-xs text-slate-500">Errores gramaticales: {result.grammar_errors} · Vocabulario utilizado: {result.vocabulary_used}</p>
-          {passed ? <p className="mt-3 text-lg font-extrabold text-green-700">✅ ¡Unidad completada!</p> : <p className="mt-3 text-base font-semibold text-amber-700">Necesitas practicar más. Consigue 60 puntos para desbloquear la siguiente unidad.</p>}
-          <div className="mt-4 flex flex-wrap justify-center gap-2">
-            {!passed && <button type="button" onClick={retry} className="rounded-xl bg-blue-600 px-5 py-2.5 text-sm font-bold text-white hover:bg-blue-700">Reintentar</button>}
-            {passed ? <button type="button" onClick={onNextUnit || onCourseCompleted} className="min-h-12 rounded-xl bg-blue-600 px-6 py-3 text-base font-extrabold text-white hover:bg-blue-700">Siguiente unidad →</button> : <button type="button" onClick={onCourseCompleted} className="min-h-12 rounded-xl bg-slate-100 px-6 py-3 text-base font-extrabold text-slate-700 hover:bg-slate-200">Volver al curso</button>}
+          <div className="mt-6 flex flex-wrap justify-center gap-3">
+            {passed ? <button type="button" onClick={onNextUnit || onCourseCompleted} className="voice-button min-h-14 rounded-2xl bg-white px-8 py-4 text-lg font-extrabold text-green-800 shadow-lg">Siguiente unidad →</button> : <>
+              <button type="button" onClick={retry} className="voice-button min-h-14 rounded-2xl bg-white px-8 py-4 text-lg font-extrabold text-orange-700 shadow-lg">Reintentar</button>
+              <button type="button" onClick={onCourseCompleted} className="voice-button rounded-2xl border border-white/60 bg-white/15 px-6 py-3 font-bold text-white">Volver al curso</button>
+            </>}
           </div>
-        </div>}
-        {phase === "completed" && !result && <button type="button" onClick={onCourseCompleted} className="mt-2 rounded-xl bg-slate-100 px-5 py-2.5 text-sm font-bold text-slate-700">Volver al curso</button>}
-      </footer>
+        </section>
+      ) : starting ? (
+        <div className="flex flex-1 flex-col items-center justify-center gap-5 px-6 text-center">
+          <span className="h-14 w-14 animate-spin rounded-full border-4 border-white/30 border-t-white" />
+          <p className="text-lg font-bold text-white">Preparando tu clase de inglés...</p>
+        </div>
+      ) : <>
+        <header className="glass flex flex-wrap items-center justify-between gap-3 px-4 py-4 sm:px-6">
+          <div className="min-w-0 flex-1">
+            <h2 className="truncate text-base font-extrabold text-white sm:text-lg">{unitLabel} — {scenario.title}</h2>
+            <p className="text-xs text-white/75">{scenario.level}{scenario.setting ? " · "+scenario.setting : ""}</p>
+            {scenario.id.startsWith("a1-speaking-") && phase !== "idle" && <div className="mt-3 max-w-sm">
+              <div className="mb-1 flex justify-between text-xs font-bold text-white"><span>Intercambios</span><span>{Math.min(exchangeCount,maxExchanges)}/{maxExchanges}</span></div>
+              <div className="h-2 overflow-hidden rounded-full bg-white/25"><div className="h-full rounded-full bg-white transition-all duration-500" style={{width:progressPercent+"%"}} /></div>
+            </div>}
+          </div>
+          {(phase !== "idle" || starting) && <button type="button" onClick={() => { if (window.confirm("¿Terminar la conversación? Se evaluará tu progreso")) void finishConversation(); }} className="voice-button shrink-0 rounded-xl bg-red-600 px-4 py-2.5 text-sm font-extrabold text-white shadow-lg">■ Terminar</button>}
+        </header>
+        <main ref={scrollContainerRef} className="chat-scroll flex flex-1 flex-col gap-4 overflow-y-auto px-3 py-5 sm:px-6 sm:py-6">
+          {messages.map((message, index) => <div key={index} className={`flex items-end gap-2 ${message.role === "user" ? "justify-end student-message" : "justify-start tutor-message"}`}>
+            {message.role === "assistant" && <div className="chat-avatar flex h-10 w-10 shrink-0 items-center justify-center rounded-full border border-white/40 bg-white/20 text-xl shadow">👨‍🏫</div>}
+            <div className={`chat-bubble max-w-[80%] rounded-[18px] p-4 text-base shadow-lg sm:text-lg ${message.role === "user" ? "bg-[#2563eb] text-white" : "border border-white/60 bg-white/[.95] text-slate-900"}`}>
+              <p className="mb-1 text-[11px] font-bold opacity-60">{message.role === "user" ? "Alumno" : "Tutor"}</p>
+              <p className="whitespace-pre-wrap leading-relaxed">{index === messages.length - 1 && message.role === "assistant" && phase === "speaking" ? typedText : message.content}</p>
+              {message.correction && <div className="mt-3 rounded-xl border border-yellow-300 bg-yellow-100 p-3 text-sm font-semibold text-yellow-950"><span className="font-extrabold">📝 Corrección: </span>{message.correction}</div>}
+              {message.content.includes("[CORRECCIÓN:") && <div className="mt-3 rounded-xl border border-yellow-300 bg-yellow-100 p-3 text-sm font-semibold text-yellow-950">{message.content.match(/\[CORRECCIÓN:[^\]]+\]/)?.[0]}</div>}
+            </div>
+            {message.role === "user" && <div className="chat-avatar flex h-10 w-10 shrink-0 items-center justify-center rounded-full border border-white/40 bg-white/20 text-xl shadow">🧑‍🎓</div>}
+          </div>)}
+          {hint && phase === "listening" && <div className="glass self-center rounded-full px-4 py-2 text-sm text-white">💡 {hint}</div>}
+          {notice && phase === "listening" && <p className="self-center text-xs text-white/80">{notice}</p>}
+          {error && <p className="self-center rounded-xl bg-red-100 px-4 py-2 text-sm text-red-800">{error}</p>}
+        </main>
+        <footer className="glass flex min-h-36 flex-col items-center justify-center gap-2 px-4 py-4">
+          <div className="status-orb relative flex h-20 w-20 items-center justify-center rounded-full border border-white/35 bg-white/20 text-3xl shadow-lg">
+            {phase === "listening" ? <><span className="status-ring absolute inset-0 rounded-full border-2 border-white/70" />🎙️</> : phase === "processing" || phase === "thinking" ? <span className="inline-block animate-spin">⏳</span> : phase === "completed" ? <span className="text-green-300">✅</span> : "💬"}
+          </div>
+          <p className="text-center text-base font-bold text-white sm:text-lg">{status}</p>
+          {phase === "thinking" && <div className="flex gap-1 text-2xl text-white"><span className="animate-bounce">•</span><span className="animate-bounce [animation-delay:120ms]">•</span><span className="animate-bounce [animation-delay:240ms]">•</span></div>}
+          {phase === "idle" && <button type="button" onClick={startConversation} disabled={starting} className="voice-button mt-2 rounded-full bg-white px-7 py-3 font-extrabold text-indigo-800 shadow-lg disabled:opacity-60">🔊 Empezar conversación</button>}
+          {evaluating && <p className="text-sm font-bold text-white">Completando evaluación...</p>}
+        </footer>
+      </>}
     </div>
   );
 }
