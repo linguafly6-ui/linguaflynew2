@@ -52,8 +52,8 @@ export default function T({ children, className = "" }: TProps) {
       tabIndex={0}
       role="button"
       aria-label={"Traducir: " + children}
-      onMouseEnter={show}
-      onMouseLeave={() => setOpen(false)}
+      onPointerEnter={(event) => { if (event.pointerType === "mouse") show(); }}
+      onPointerLeave={(event) => { if (event.pointerType === "mouse") setOpen(false); }}
       onFocus={show}
       onBlur={() => setOpen(false)}
       onClick={() => open ? setOpen(false) : show()}
