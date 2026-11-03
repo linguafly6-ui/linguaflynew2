@@ -19,7 +19,7 @@ export default function Page() {
   const load=useCallback(async()=>{
     setLoading(true);
     try {
-      const me:any=await fetch("/api/auth/me").then(r=>r.json());
+      const me:any=await fetch("/api/auth/me").then(r=>r.json() as any);
       setStudent(me.student||null);
       const uid=me.student?"student-"+me.student.id:"guest-"+crypto.randomUUID();
       setUserId(uid);
