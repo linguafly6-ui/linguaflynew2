@@ -79,6 +79,16 @@ export function extractCorrection(text: string): { content: string; correction: 
 }
 
 /**
+ * Respuesta de respaldo si la IA no está disponible o falla.
+ */
+function fallbackResponse(): { content: string; correction: string | null } {
+  return {
+    content: "I'm sorry, I'm having trouble connecting right now. Could you try again in a moment?",
+    correction: null,
+  };
+}
+
+/**
  * Envía el historial de mensajes a Workers AI y obtiene la respuesta.
  */
 export async function chatWithPersona(
@@ -88,46 +98,65 @@ export async function chatWithPersona(
   level: string,
   scenarioContext?: string
 ): Promise<{ content: string; correction: string | null }> {
-  const env = getEnv();
+  try {
+    const env = getEnv();
 
-  const systemMessage = {
-    role: "system" as const,
-    content: buildSystemPrompt(personaPrompt, language, level, scenarioContext),
-  };
+    if (!env.AI) {
+      return fallbackResponse();
+    }
 
-  // Workers AI usa el formato de mensajes de OpenAI
-  const apiMessages = [
-    systemMessage,
-    ...messages.map((m) => ({
-      role: m.role,
-      content: m.content,
-    })),
-  ];
+    const systemMessage = {
+      role: "system" as const,
+      content: buildSystemPrompt(personaPrompt, language, level, scenarioContext),
+    };
 
-  const response = await env.AI.run(CHAT_MODEL as any, {
-    messages: apiMessages,
-    max_tokens: 300,
-    temperature: 0.7,
-  });
+    // Workers AI usa el formato de mensajes de OpenAI
+    const apiMessages = [
+      systemMessage,
+      ...messages.map((m) => ({
+        role: m.role,
+        content: m.content,
+      })),
+    ];
 
-  const rawText = (response as any).response ?? "";
-  return extractCorrection(rawText);
+    const response = await env.AI.run(CHAT_MODEL as any, {
+      messages: apiMessages,
+      max_tokens: 300,
+      temperature: 0.7,
+    });
+
+    const rawText = (response as any).response ?? "";
+    if (!rawText) {
+      return fallbackResponse();
+    }
+    return extractCorrection(rawText);
+  } catch (error) {
+    console.error("AI chat failed, using fallback:", error);
+    return fallbackResponse();
+  }
 }
 
 /**
  * Carga el historial de mensajes de una sesión desde D1.
  */
 export async function loadSessionMessages(
-  db: D1Database,
+  db: D1Database | undefined | null,
   sessionId: string
 ): Promise<ChatMessage[]> {
-  const rows = await db.prepare(
-    "SELECT role, content, correction FROM conversation_messages WHERE session_id = ? ORDER BY created_at ASC"
-  ).bind(sessionId).all();
+  if (!db) return [];
 
-  return (rows.results || []).map((r: any) => ({
-    role: r.role,
-    content: r.content,
-    correction: r.correction,
-  }));
+  try {
+    const rows = await db.prepare(
+      "SELECT role, content, correction FROM conversation_messages WHERE session_id = ? ORDER BY created_at ASC"
+    ).bind(sessionId).all();
+
+    return (rows.results || []).map((r: any) => ({
+      role: r.role,
+      content: r.content,
+      correction: r.correction,
+    }));
+  } catch (error) {
+    console.error("Failed to load session messages:", error);
+    return [];
+  }
 }
