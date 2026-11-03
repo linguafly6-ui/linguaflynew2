@@ -1,18 +1,19 @@
 "use client";
 
-import { useCallback, useState } from "react";
+import { useCallback, useState, type ReactNode } from "react";
 
 type TProps = { children: string; className?: string };
 
-export const TRANSLATION_STOPWORDS = new Set([
-  "the", "a", "an", "is", "are", "am", "was", "were", "be", "been", "being",
-  "and", "or", "but", "if", "of", "to", "in", "on", "at", "for", "from",
-  "with", "by", "as", "it", "its", "this", "that", "these", "those", "i",
-  "you", "he", "she", "we", "they", "me", "him", "her", "us", "them",
-  "my", "your", "his", "our", "their", "do", "does", "did", "have", "has",
-  "had", "will", "would", "can", "could", "should", "may", "might", "must",
-  "not", "no", "yes", "so", "than", "then", "there", "here", "who", "what",
-  "when", "where", "why", "how", "which", "while", "because"
+export const STOPWORDS = new Set([
+  "the", "a", "an", "of", "in", "on", "at", "for", "with", "by", "from",
+  "as", "or", "and", "but", "to"
+]);
+
+export const TRANSLATABLE = new Set([
+  "was", "am", "are", "is", "were", "have", "has", "had", "do", "does",
+  "did", "will", "would", "can", "could", "should", "not", "work", "wait",
+  "play", "be", "been", "being", "may", "might", "must", "go", "come",
+  "eat", "drink", "sleep", "study", "learn", "write", "read", "make", "take"
 ]);
 
 export default function T({ children, className = "" }: TProps) {
@@ -31,7 +32,7 @@ export default function T({ children, className = "" }: TProps) {
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({ word: children })
       });
-      const data = await response.json() as { translation?: string; error?: string };
+      const data = await response.json() as any;
       if (!response.ok || !data.translation) throw new Error(data.error || "No se pudo traducir");
       setTranslation(data.translation);
     } catch {
@@ -76,11 +77,20 @@ export default function T({ children, className = "" }: TProps) {
 }
 
 export function wrapWithTranslation(text: string) {
-  const parts = text.split(/(\s+|[A-Za-z]+(?:['’-][A-Za-z]+)*)/g).filter(Boolean);
-  return parts.map((part, index) => {
-    if (/^[A-Za-z]+(?:['’-][A-Za-z]+)*$/.test(part) && !TRANSLATION_STOPWORDS.has(part.toLowerCase())) {
-      return <T key={index}>{part}</T>;
+  const parts = text.split(/(\\s+|[A-Za-z]+)/g).filter(Boolean);
+  const output: ReactNode[] = [];
+  for (let index = 0; index < parts.length; index++) {
+    const part = parts[index];
+    const next = parts[index + 1];
+    const afterNext = parts[index + 2];
+    if (part.toLowerCase() === "to" && /^\\s+$/.test(next || "") && afterNext && TRANSLATABLE.has(afterNext.toLowerCase())) {
+      output.push(<T key={index}>{part + next + afterNext}</T>);
+      index += 2;
+    } else if (/^[A-Za-z]+$/.test(part) && !STOPWORDS.has(part.toLowerCase())) {
+      output.push(<T key={index}>{part}</T>);
+    } else {
+      output.push(<span key={index}>{part}</span>);
     }
-    return <span key={index}>{part}</span>;
-  });
+  }
+  return output;
 }
