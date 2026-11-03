@@ -29,7 +29,7 @@ export async function GET(req: NextRequest, { params }: { params: Promise<{ id: 
         console.error("Could not load B1 unit progress:", error);
       }
     }
-    const unlocked = unitNumber <= 5 || (student?.plan === "pro" && (unitNumber === 6 || Boolean(previous?.completed && Number(previous.score) >= 60)));
+    const unlocked = unitNumber <= 5 || ((student?.plan === "pro" || student?.plan === "pro_test") && (unitNumber === 6 || Boolean(previous?.completed && Number(previous.score) >= 60)));
     const moduleNumber = Math.ceil(unitNumber / 4);
     const title = B1_UNIT_TITLES[unitNumber - 1];
     const isConversation = unitNumber % 4 === 0;
