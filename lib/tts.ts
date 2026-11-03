@@ -12,11 +12,12 @@ export async function generateCachedTts(text: string, lang: "en" | "es", userId:
   const cached = await env.DB.prepare("SELECT r2_key FROM tts_cache WHERE cache_key=?").bind(cacheKey).first() as any;
   if (cached?.r2_key && await env.LINGUAFLY_MEDIA.head(cached.r2_key)) return String(cached.r2_key);
   if (!(await checkAiRateLimit(userId))) throw new Error("AI_RATE_LIMITED");
-  const result = await env.AI.run(MODEL as any, { prompt: text.trim(), lang });
-  const encoded = (result as any)?.audio;
-  if (typeof encoded !== "string" || !encoded) throw new Error("MeloTTS no ha generado audio");
-  const binary = atob(encoded), bytes = new Uint8Array(binary.length);
-  for (let i=0;i<binary.length;i++) bytes[i]=binary.charCodeAt(i);
+  const response = await env.AI.run(MODEL as any, { prompt: text.trim(), lang }) as Response;
+  if (!response || typeof response.arrayBuffer !== "function") throw new Error("Respuesta inválida de MeloTTS");
+  if (!response.ok) throw new Error(`MeloTTS respondió con estado ${response.status}`);
+  const audioBuffer = await response.arrayBuffer();
+  if (!audioBuffer.byteLength) throw new Error("MeloTTS no ha generado audio");
+  const bytes = new Uint8Array(audioBuffer);
   const key = `${prefix}/${cacheKey}.mp3`;
   await env.LINGUAFLY_MEDIA.put(key, bytes, { httpMetadata: { contentType: "audio/mpeg" } });
   await env.DB.prepare("INSERT INTO tts_cache (cache_key,text_hash,lang,r2_key) VALUES (?,?,?,?) ON CONFLICT(cache_key) DO UPDATE SET r2_key=excluded.r2_key").bind(cacheKey,textHash,lang,key).run();
