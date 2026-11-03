@@ -11,6 +11,7 @@ export async function GET(req: NextRequest, { params }: { params: Promise<{ id: 
       return NextResponse.json({ error: "Unidad no válida" }, { status: 400 });
     }
     const student = await getStudent(req);
+    if (!student) return NextResponse.json({ error: "Necesitas crear una cuenta gratuita para acceder a las lecciones.", needAccount: true }, { status: 401 });
     if (unitNumber > 5 && student?.plan !== "pro") {
       return NextResponse.json({ error: "Pro required" }, { status: 403 });
     }
