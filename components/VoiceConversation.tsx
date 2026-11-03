@@ -1,6 +1,6 @@
 "use client";
 import { useEffect,useRef,useState } from "react";
-type Scenario={id:string;title:string;description?:string;setting?:string;language:string;level:string;persona_prompt:string;opening_line?:string;system_prompt?:string};
+type Scenario={id:string;title:string;description?:string;setting?:string;language:string;level:string};
 type Msg={role:"assistant"|"user";correction?:string|null;content?:string;audioUrl?:string;messageId?:string};
 export default function VoiceConversation({scenario,userId="demo-user",onCourseCompleted}:{scenario:Scenario;userId?:string;onCourseCompleted?:()=>void}){
  const [phase,setPhase]=useState<"idle"|"speaking"|"listening"|"processing"|"thinking"|"completed">("idle"),[messages,setMessages]=useState<Msg[]>([]),[sessionId,setSessionId]=useState(""),[error,setError]=useState(""),[correction,setCorrection]=useState(""),[result,setResult]=useState<any>(null),[revealedText,setRevealedText]=useState(""),[speed,setSpeed]=useState(1);
