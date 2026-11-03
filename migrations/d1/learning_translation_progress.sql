@@ -45,6 +45,22 @@ WHERE ea.user_id GLOB 'student-[0-9]*'
   AND substr(ea.user_id,9) NOT GLOB '*[^0-9]*'
 GROUP BY ea.user_id,ea.exercise_id;
 
+CREATE TABLE IF NOT EXISTS learning_speaking_progress (
+  id INTEGER PRIMARY KEY AUTOINCREMENT,
+  student_id INTEGER NOT NULL,
+  course_id TEXT NOT NULL,
+  unit_number INTEGER NOT NULL,
+  status TEXT NOT NULL DEFAULT 'in_progress',
+  attempts INTEGER NOT NULL DEFAULT 0,
+  score INTEGER NOT NULL DEFAULT 0,
+  xp_awarded INTEGER NOT NULL DEFAULT 0,
+  completed_at TEXT,
+  updated_at TEXT NOT NULL DEFAULT (datetime('now')),
+  UNIQUE(student_id, course_id, unit_number)
+);
+CREATE INDEX IF NOT EXISTS idx_learning_speaking_student
+  ON learning_speaking_progress(student_id, course_id, unit_number);
+
 CREATE TABLE IF NOT EXISTS learning_streaks (
   student_id INTEGER PRIMARY KEY,
   current_streak INTEGER NOT NULL DEFAULT 0,
@@ -55,5 +71,9 @@ CREATE TABLE IF NOT EXISTS learning_streaks (
 
 INSERT OR IGNORE INTO learning_streaks(student_id,xp_total)
 SELECT student_id, SUM(xp_awarded)
-FROM learning_exercise_progress
+FROM (
+  SELECT student_id,xp_awarded FROM learning_exercise_progress
+  UNION ALL
+  SELECT student_id,xp_awarded FROM learning_speaking_progress
+)
 GROUP BY student_id;
