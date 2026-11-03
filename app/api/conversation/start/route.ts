@@ -5,7 +5,12 @@ import { generateCachedTts,audioServeUrl } from "@/lib/tts";
 export const runtime="edge";
 export async function POST(req:NextRequest){
  try{
-  const env=getEnv(),body=await req.json() as any,{scenarioId}=body;let userId=String(body.userId||"");
+  const env=getEnv();
+  if (!env || !env.AI || !env.DB || !env.LINGUAFLY_MEDIA) {
+   console.error("Bindings missing:", { hasEnv:!!env, hasAI:!!env?.AI, hasDB:!!env?.DB, hasR2:!!env?.LINGUAFLY_MEDIA });
+   return NextResponse.json({error:"Configuración incompleta"},{status:500});
+  }
+  const body=await req.json() as any,{scenarioId}=body;let userId=String(body.userId||"");
   if(!scenarioId||!userId) return NextResponse.json({error:"Faltan parámetros"},{status:400});
   let scenario:any,opening:string;
   if(String(scenarioId).startsWith("a1-speaking-")){
@@ -30,6 +35,6 @@ export async function POST(req:NextRequest){
   return NextResponse.json({sessionId,audioUrl:audioServeUrl(key),scenario});
  }catch(error){
   if(error instanceof Error&&error.message==="AI_RATE_LIMITED") return NextResponse.json({error:"Demasiadas peticiones. Espera unos segundos e inténtalo de nuevo."},{status:429});
-  console.error(error);return NextResponse.json({error:"Error al iniciar conversación"},{status:500});
+  console.error("Error en /api/conversation/start:", error);return NextResponse.json({error:"Error interno"},{status:500});
  }
 }
