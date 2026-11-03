@@ -23,19 +23,25 @@ export async function transcribeAudio(
   audio: ArrayBuffer,
   language: string
 ): Promise<string> {
-  const env = getEnv();
-  if (!env?.AI) {
-    throw new Error("Cloudflare Workers AI binding (env.AI) is not available");
+  try {
+    const env = getEnv();
+    if (!env?.AI?.run) {
+      console.error("Workers AI binding no disponible para transcripción");
+      return "";
+    }
+
+    const response = await env.AI.run(STT_MODEL as any, {
+      audio: [...new Uint8Array(audio)],
+      task: "transcribe",
+      language: ({ english: "en", spanish: "es", french: "fr", german: "de", italian: "it", portuguese: "pt" } as Record<string, string>)[(language || "en").toLowerCase()] || (language || "en").toLowerCase().split("-")[0],
+      vad_filter: false,
+    });
+
+    return (response as any).text?.trim() ?? "";
+  } catch (error) {
+    console.error("Whisper transcription failed:", error);
+    return "";
   }
-
-  const response = await env.AI.run(STT_MODEL as any, {
-    audio: [...new Uint8Array(audio)],
-    task: "transcribe",
-    language: ({ english: "en", spanish: "es", french: "fr", german: "de", italian: "it", portuguese: "pt" } as Record<string, string>)[(language || "en").toLowerCase()] || (language || "en").toLowerCase().split("-")[0],
-    vad_filter: false,
-  });
-
-  return (response as any).text?.trim() ?? "";
 }
 
 export function calculateSimilarity(a: string, b: string): number {
@@ -110,17 +116,15 @@ export function generateFeedback(score: number, issues: string[]): string {
 export async function generateReferenceAudio(
   phrase: string,
   language: string
-): Promise<string> {
-  const env = getEnv();
+): Promise<string | null> {
+  try {
+    const env = getEnv();
 
-  if (!env?.AI) {
-    throw new Error("Cloudflare Workers AI binding (env.AI) is not available");
-  }
-  if (!env?.LINGUAFLY_MEDIA) {
-    throw new Error("Cloudflare R2 binding (env.LINGUAFLY_MEDIA) is not available");
-  }
+    if (!env?.AI?.run || !env?.LINGUAFLY_MEDIA) {
+      return null;
+    }
 
-  const result = await env.AI.run(TTS_MODEL as any, {
+    const result = await env.AI.run(TTS_MODEL as any, {
     prompt: phrase,
     lang: language || "en",
   });
@@ -188,5 +192,9 @@ export async function generateReferenceAudio(
     httpMetadata: { contentType: "audio/wav" },
   });
 
-  return r2Key;
+    return r2Key;
+  } catch (error) {
+    console.error("Reference audio generation failed:", error);
+    return null;
+  }
 }
