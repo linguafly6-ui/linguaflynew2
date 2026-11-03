@@ -9,6 +9,18 @@ type Props = { params: Promise<{ path: string[] }> };
 function decodeSegment(value: string) {
   try { return decodeURIComponent(value); } catch { return value; }
 }
+function parseFaqs(value: unknown): { question: string; answer: string }[] {
+  if (Array.isArray(value)) {
+    return value.filter((item): item is { question: string; answer: string } =>
+      Boolean(item && typeof item === "object" && typeof (item as any).question === "string" && typeof (item as any).answer === "string")
+    );
+  }
+  if (typeof value !== "string" || !value.trim()) return [];
+  try {
+    const parsed: unknown = JSON.parse(value);
+    return Array.isArray(parsed) ? parseFaqs(parsed) : [];
+  } catch { return []; }
+}
 
 export default async function BlogPathPage({ params }: Props) {
   const { path = [] } = await params;
@@ -19,14 +31,20 @@ export default async function BlogPathPage({ params }: Props) {
     if (!categories.some((item: Awaited<ReturnType<typeof getCategories>>[number]) => item.category === category)) notFound();
 
     return (
-      <main className="mx-auto min-h-screen max-w-6xl px-6 py-12">
-        <Link href="/blog" className="font-bold text-blue-700">← All articles</Link>
-        <h1 className="mt-8 text-4xl font-black">{category}</h1>
-        <div className="mt-8 grid gap-4 md:grid-cols-2 lg:grid-cols-3">
+      <main className="mx-auto min-h-screen max-w-6xl px-5 py-10 sm:px-8 sm:py-14">
+        <Link href="/blog" className="inline-flex items-center gap-2 text-sm font-bold text-blue-700 transition hover:text-indigo-700">← Todos los artículos</Link>
+        <div className="mt-8 max-w-3xl">
+          <span className="rounded-full bg-blue-50 px-3 py-1 text-xs font-bold uppercase tracking-wider text-blue-700">Explora por tema</span>
+          <h1 className="mt-4 text-4xl font-black tracking-tight text-slate-950 sm:text-5xl">{category}</h1>
+          <p className="mt-3 text-lg text-slate-500">Guías y recursos para avanzar en tu aprendizaje de idiomas.</p>
+        </div>
+        <div className="mt-10 grid gap-5 md:grid-cols-2 lg:grid-cols-3">
           {articles.map((article) => (
-            <Link key={article.id} href={`/blog/${encodeURIComponent(article.category)}/${article.slug}`} className="rounded-2xl border bg-white p-6">
-              <h2 className="text-xl font-bold">{article.title}</h2>
-              <p className="mt-3 text-sm text-slate-600">{article.excerpt || article.description}</p>
+            <Link key={article.id} href={`/blog/${encodeURIComponent(article.category)}/${article.slug}`} className="group rounded-2xl border border-slate-200 bg-white p-6 shadow-sm transition duration-200 hover:-translate-y-1 hover:border-blue-200 hover:shadow-lg">
+              <span className="text-xs font-extrabold uppercase tracking-wider text-blue-700">{article.category}</span>
+              <h2 className="mt-3 text-xl font-extrabold leading-snug text-slate-950 group-hover:text-blue-700">{article.title}</h2>
+              <p className="mt-3 text-sm leading-6 text-slate-600">{article.excerpt || article.description}</p>
+              <span className="mt-6 inline-flex text-sm font-bold text-blue-700">Leer artículo →</span>
             </Link>
           ))}
         </div>
@@ -40,19 +58,20 @@ export default async function BlogPathPage({ params }: Props) {
     if (!article) notFound();
 
     const content = typeof article.content === "string" ? article.content : "";
+    const title = String(article.title);
+    const excerpt = String(article.excerpt || article.description || "");
+    const breadcrumbs = [{ label: "Blog", href: "/blog" }, { label: category, href: `/blog/${encodeURIComponent(category)}` }];
     return (
-      <main className="mx-auto min-h-screen max-w-4xl px-6 py-12">
-        <Link href="/blog" className="font-bold text-blue-700">← Blog</Link>
-        <article className="mt-8">
-          <p className="text-sm font-bold uppercase text-blue-700">{String(article.category)}</p>
-          <h1 className="mt-3 text-4xl font-black leading-tight">{String(article.title)}</h1>
-          <p className="mt-4 text-slate-500">{String(article.excerpt || article.description || "")}</p>
-          {typeof article.image === "string" && article.image.startsWith("https://") ? (
-            <img src={article.image} alt={String(article.alt || article.title)} className="mt-8 max-h-[28rem] w-full rounded-2xl object-cover" />
-          ) : null}
-          <div className="prose-content mt-10 max-w-none leading-8"><BlogArticle content={content} /></div>
-          <p className="mt-10 border-t pt-5 text-sm text-slate-500">{String(article.author || "LinguaFly")} · {String(article.read_time || "")}</p>
-        </article>
+      <main className="min-h-screen px-0 py-4 sm:py-8">
+        <BlogArticle
+          content={content}
+          title={title}
+          excerpt={excerpt}
+          author={String(article.author || "LinguaFly")}
+          readTime={String(article.read_time || "")}
+          faqs={parseFaqs(article.faqs)}
+          breadcrumbs={breadcrumbs}
+        />
       </main>
     );
   }
