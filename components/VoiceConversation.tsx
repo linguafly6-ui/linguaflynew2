@@ -32,7 +32,7 @@ export default function VoiceConversation({ scenario, userId = "demo-user", onCo
   const exchangeCountRef = useRef(0);
   const finishConversationRef = useRef<(() => Promise<void>) | null>(null);
   const unitNumber = Number(scenario.id.replace("a1-speaking-", ""));
-  const maxExchanges = unitNumber <= 20 ? 5 : unitNumber <= 60 ? 8 : 10;
+  const maxExchanges = unitNumber <= 20 ? 8 : unitNumber <= 60 ? 12 : 15;
   const sessionRef = useRef<string | null>(null);
   const streamRef = useRef<MediaStream | null>(null);
   const contextRef = useRef<AudioContext | null>(null);
