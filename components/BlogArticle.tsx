@@ -4,6 +4,7 @@ import { useEffect, useRef, useState } from "react";
 import CourseAd from "@/components/CourseAd";
 import { markdownToHtml } from "@/lib/markdown";
 import { wrapWithTranslation } from "@/components/T";
+import TranslatedBlogContent from "@/components/TranslatedBlogContent";
 
 interface BlogArticleProps {
   content: string;
@@ -92,9 +93,9 @@ export default function BlogArticle({ content, title, excerpt, author = "LinguaF
           </div>
         </header>
         <div className="blog-prose max-w-none">
-          {first ? <div dangerouslySetInnerHTML={{ __html: markdownToHtml(first) }} /> : null}
+          {first ? <TranslatedBlogContent html={markdownToHtml(first)} /> : null}
           <CourseAd variant="mid" />
-          {rest ? <div dangerouslySetInnerHTML={{ __html: markdownToHtml(rest) }} /> : null}
+          {rest ? <TranslatedBlogContent html={markdownToHtml(rest)} /> : null}
         </div>
         {faqs.length ? (
           <section className="mt-16" aria-labelledby="blog-faq-title">
