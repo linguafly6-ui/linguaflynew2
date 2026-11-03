@@ -197,11 +197,11 @@ export default function AprenderPage() {
               {!selectedWords.length && <span className="text-sm text-slate-400">Pulsa las palabras en el orden correcto…</span>}
             </div>
             <div className="flex flex-wrap gap-2">
-              {lesson.options.map((option, index) => <button key={index} disabled={Boolean(feedback) || submitting || selectedWords.filter((word) => word === option).length >= lesson.options!.filter((word) => word === option).length} onClick={() => setSelectedWords((current) => [...current, option])} className="rounded-xl border-2 border-slate-200 px-4 py-3 font-semibold hover:border-blue-400 disabled:opacity-40">{wrapWithTranslation(option)}</button>)}
+              {lesson.options!.map((option, index) => <button key={index} disabled={Boolean(feedback) || submitting || selectedWords.filter((word) => word === option).length >= lesson.options!.filter((word) => word === option).length} onClick={() => setSelectedWords((current) => [...current, option])} className="rounded-xl border-2 border-slate-200 px-4 py-3 font-semibold hover:border-blue-400 disabled:opacity-40">{wrapWithTranslation(option)}</button>)}
             </div>
             <button onClick={() => void submitAnswer(selectedWords.join(" "))} disabled={!selectedWords.length || Boolean(feedback) || submitting} className="w-full rounded-xl bg-blue-700 px-5 py-3 font-bold text-white disabled:opacity-40">Comprobar orden</button>
           </div> : lesson.exerciseType === "matching" && lesson.options?.length ? <div className="mt-7 space-y-3">
-            {lesson.options.map((pair) => {
+            {lesson.options!.map((pair) => {
               const left = pair.split("|")[0];
               return <label key={pair} className="flex items-center gap-3 rounded-xl bg-slate-50 p-3 text-sm">
                 <span className="min-w-0 flex-1 font-semibold">{wrapWithTranslation(left)}</span>
@@ -211,9 +211,9 @@ export default function AprenderPage() {
                 </select>
               </label>;
             })}
-            <button onClick={() => void submitAnswer(lesson.options!.map((pair) => pair.split("|")[0] + "=" + (matchingPairs[pair.split("|")[0]] || "")).join(","))} disabled={Object.keys(matchingPairs).length !== lesson.options.length || Boolean(feedback) || submitting} className="w-full rounded-xl bg-blue-700 px-5 py-3 font-bold text-white disabled:opacity-40">Comprobar parejas</button>
+            <button onClick={() => void submitAnswer(lesson.options!.map((pair) => pair.split("|")[0] + "=" + (matchingPairs[pair.split("|")[0]] || "")).join(","))} disabled={Object.keys(matchingPairs).length !== lesson.options!.length || Boolean(feedback) || submitting} className="w-full rounded-xl bg-blue-700 px-5 py-3 font-bold text-white disabled:opacity-40">Comprobar parejas</button>
           </div> : lesson.options?.length ? <div className="mt-7 grid gap-3 sm:grid-cols-2">
-            {lesson.options.map((option) => <button key={option} disabled={Boolean(feedback) || submitting} onClick={() => { setAnswer(option); void submitAnswer(option); }} className="rounded-2xl border-2 border-slate-200 p-4 text-left font-semibold transition hover:border-blue-400 hover:bg-blue-50 disabled:opacity-60">{wrapWithTranslation(option)}</button>)}
+            {lesson.options!.map((option) => <button key={option} disabled={Boolean(feedback) || submitting} onClick={() => { setAnswer(option); void submitAnswer(option); }} className="rounded-2xl border-2 border-slate-200 p-4 text-left font-semibold transition hover:border-blue-400 hover:bg-blue-50 disabled:opacity-60">{wrapWithTranslation(option)}</button>)}
           </div> : <div className="mt-7 flex gap-2">
             <input value={answer} disabled={Boolean(feedback) || submitting} onChange={(event) => setAnswer(event.target.value)} onKeyDown={(event) => { if (event.key === "Enter") void submitAnswer(); }} placeholder="Escribe tu respuesta…" className="min-w-0 flex-1 rounded-xl border border-slate-300 px-4 py-3" />
             <button onClick={() => void submitAnswer()} disabled={!answer.trim() || Boolean(feedback) || submitting} className="rounded-xl bg-blue-700 px-5 py-3 font-bold text-white disabled:opacity-40">Comprobar</button>
