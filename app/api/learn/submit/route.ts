@@ -7,6 +7,7 @@ export async function POST(request: NextRequest) {
   try {
     const student = await getStudent(request);
     if (!student) return NextResponse.json({ error: "Inicia sesión para guardar tu progreso." }, { status: 401 });
+    if (!student.placement_level) return NextResponse.json({ error: "Completa primero tu test de nivel.", placementRequired: true }, { status: 403 });
     const body = await request.json() as { exerciseId?: unknown; answer?: unknown };
     const exerciseId = Number(body.exerciseId);
     const answer = typeof body.answer === "string" ? body.answer.trim().slice(0, 1000) : "";
