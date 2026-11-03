@@ -177,7 +177,7 @@ export async function POST(request: NextRequest) {
       const courseDb = env.COURSE_DB || env.DB;
       const table = course + "_speaking_progress";
       await courseDb.prepare(
-        "INSERT INTO " + table + "(user_id,unit_id,score,completed,attempts,feedback,updated_at) VALUES(?,?,?,?,1,?,datetime('now')) ON CONFLICT(user_id,unit_id) DO UPDATE SET score=MAX(score,excluded.score),completed=MAX(completed,excluded.completed),attempts=" + table + ".attempts+1,feedback=excluded.feedback,updated_at=datetime('now')"
+        "INSERT INTO " + table + "(user_id,unit_id,score,completed,attempts,feedback,updated_at) VALUES(?,?,?,?,1,?,datetime('now')) ON CONFLICT(user_id,unit_id) DO UPDATE SET score=MAX(score,excluded.score),completed=MAX(completed,excluded.completed),attempts=attempts+1,feedback=excluded.feedback,updated_at=datetime('now')"
       ).bind(userId, unitNumber, evaluated.score, evaluated.score >= 60 ? 1 : 0, evaluated.feedback).run();
       await saveUnifiedProgress(courseDb, Number(student.id), course + "-speaking", unitNumber, evaluated.score, evaluated.score >= 60);
     }
