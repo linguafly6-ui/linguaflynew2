@@ -73,7 +73,7 @@ export default function AdminDashboard(){
       const response=await fetch("/api/admin/auth",{method:"POST",headers:{"Content-Type":"application/json"},body:JSON.stringify({adminKey})});
       const data=await response.json() as any;
       if(!response.ok||!data.authorized)throw new Error(data.error||"Clave incorrecta");
-      setAuthorized(true);
+      try{sessionStorage.setItem("lf_admin_key",adminKey);}catch{}\n      setAuthorized(true);
     }catch(error){setLoginError(error instanceof Error?error.message:"No se pudo acceder");}
     finally{setLogging(false);}
   };
@@ -86,7 +86,7 @@ export default function AdminDashboard(){
   };
 
   const filteredStudents=useMemo(()=>students.filter(student=>student.user_id.toLowerCase().includes(search.toLowerCase())),[students,search]);
-  const logout=()=>{setAuthorized(false);setAdminKey("");setStats(null);setStudents([]);setTopStudents([]);setScenarios([]);setSelected(null);setDetail(null);setDataError("");};
+  const logout=()=>{try{sessionStorage.removeItem("lf_admin_key");}catch{}setAuthorized(false);setAdminKey("");setStats(null);setStudents([]);setTopStudents([]);setScenarios([]);setSelected(null);setDetail(null);setDataError("");};
   const nav=[{id:"overview" as const,label:"Resumen",icon:"📊"},{id:"students" as const,label:"Alumnos",icon:"👥"},{id:"scenarios" as const,label:"Escenarios",icon:"🎯"},{id:"learning" as const,label:"LinguaFly Pro",icon:"💳"}];
 
   if(!authorized)return <main className="flex min-h-screen items-center justify-center bg-slate-100 px-4 py-10">
