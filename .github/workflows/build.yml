@@ -1,5 +1,9 @@
 name: OpenNext build
 
+concurrency:
+  group: linguafly-main-deploy
+  cancel-in-progress: true
+
 on:
   push:
     branches: [main]
@@ -49,6 +53,15 @@ jobs:
             /ejercicios \
             /ejercicios/a1 \
             /ejercicios/a1/1 \
+            /curso-a1-speaking \
+            /api/course/a1-speaking \
+            /api/course/a1-speaking/1 \
+            /curso-a2-speaking \
+            /api/course/a2-speaking \
+            /api/course/a2-speaking/1 \
+            /curso-b1-speaking \
+            /api/course/b1-speaking \
+            /api/course/b1-speaking/1 \
             /curso-b2-speaking \
             /api/course/b2-speaking \
             /api/course/b2-speaking/1 \
