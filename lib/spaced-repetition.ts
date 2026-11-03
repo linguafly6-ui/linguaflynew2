@@ -8,7 +8,7 @@
  * de contenido adaptativo mediante Workers AI.
  */
 
-const CHAT_MODEL = "@cf/meta/llama-3.1-8b-instruct-fast";
+const CHAT_MODEL = "@cf/meta/llama-3.1-8b-instruct";
 
 export interface SRItem {
   id: string;

@@ -1,73 +1,33 @@
-import { NextRequest, NextResponse } from "next/server";
+import { NextRequest,NextResponse } from "next/server";
 import { getEnv } from "@/lib/cf-context";
-
-const WHISPER_MODEL = "@cf/openai/whisper-large-v3-turbo";
-
-export async function POST(request: NextRequest) {
-  try {
-    const env = getEnv();
-    const formData = await request.formData();
-    const audioFile = formData.get("audio");
-    
-
-    if (!(audioFile instanceof File) || audioFile.size === 0) {
-      return NextResponse.json({ error: "Falta el archivo de audio" }, { status: 400 });
-    }
-
-    if (!audioFile.type.startsWith("audio/")) {
-      return NextResponse.json({ error: "El archivo debe ser audio" }, { status: 400 });
-    }
-
-    if (audioFile.size > 10 * 1024 * 1024) {
-      return NextResponse.json({ error: "El audio supera el lÃ­mite de 10 MB" }, { status: 413 });
-    }
-
-    if (!env.AI?.run) {
-      return NextResponse.json({ error: "Workers AI no estÃ¡ disponible" }, { status: 503 });
-    }
-
-    const audioBytes = new Uint8Array(await audioFile.arrayBuffer());
-
-    // Guardar el audio original en R2 cuando el binding estÃ¡ configurado.
-    if (env.LINGUAFLY_MEDIA) {
-      const key = `conversation/voice-input/${crypto.randomUUID()}`;
-      await env.LINGUAFLY_MEDIA.put(key, audioBytes, {
-        httpMetadata: { contentType: audioFile.type || "audio/webm" },
-        customMetadata: { language: "en" },
-      });
-    }
-
-    // El alumno practica inglés incluso cuando el tutor le explica en español.
-    const transcriptionLanguage = "en";
-
-    // Whisper espera el audio codificado en base64. Convertir por bloques evita
-    // exceder el límite de argumentos de String.fromCharCode con audios grandes.
-    let binaryAudio = "";
-    const chunkSize = 0x8000;
-    for (let offset = 0; offset < audioBytes.length; offset += chunkSize) {
-      binaryAudio += String.fromCharCode(...audioBytes.subarray(offset, offset + chunkSize));
-    }
-    const base64Audio = btoa(binaryAudio);
-
-    const result = await env.AI.run(WHISPER_MODEL as any, {
-      audio: base64Audio,
-      task: "transcribe",
-      language: transcriptionLanguage,
-      vad_filter: false,
-    });
-
-    const transcription = String((result as any)?.text || "").trim();
-    if (!transcription) {
-      return NextResponse.json({ transcription: "", noSpeech: true });
-    }
-
-    return NextResponse.json({ transcription, noSpeech: false });
-  } catch (error) {
-    console.error("Voice input error:", error);
-    return NextResponse.json({
-      error: "Error al transcribir el audio",
-      detail: error instanceof Error ? error.message : String(error),
-      stack: error instanceof Error ? error.stack : undefined,
-    }, { status: 500 });
+import { checkAiRateLimit } from "@/lib/ai-helpers";
+import { generateCachedTts,audioServeUrl } from "@/lib/tts";
+export const runtime="edge";
+const WHISPER_MODEL="@cf/openai/whisper-tiny-en";
+export async function POST(request:NextRequest){
+ try{
+  const env=getEnv(),form=await request.formData(),audio=form.get("audio");
+  const sessionId=String(form.get("sessionId")||""),userId=String(form.get("userId")||"guest");
+  if(!(audio instanceof File)||!audio.size) return NextResponse.json({error:"Falta el archivo de audio"},{status:400});
+  if(!audio.type.startsWith("audio/")||audio.size>10*1024*1024) return NextResponse.json({error:"Formato de audio no válido"},{status:400});
+  if(!(await checkAiRateLimit(userId))) return NextResponse.json({error:"Demasiadas peticiones. Espera unos segundos e inténtalo de nuevo."},{status:429});
+  const bytes=new Uint8Array(await audio.arrayBuffer());let binary="";
+  for(let i=0;i<bytes.length;i+=0x8000) binary+=String.fromCharCode(...bytes.subarray(i,i+0x8000));
+  const result=await env.AI.run(WHISPER_MODEL as any,{audio:btoa(binary),task:"transcribe",language:"en",vad_filter:false});
+  const transcription=String((result as any)?.text||"").trim();
+  if(!transcription){
+   let audioUrl:string|null=null;
+   if(sessionId){
+    const last=await env.DB.prepare("SELECT content FROM conversation_messages WHERE session_id=? AND role='assistant' ORDER BY created_at DESC LIMIT 1").bind(sessionId).first() as any;
+    const spoken=String(last?.content||"").trim();
+    const phrase=spoken.match(/Repite:\s*(.+)$/i)?.[1]?.trim()||spoken;
+    if(phrase) audioUrl=audioServeUrl(await generateCachedTts("No te he oído. Repite: "+phrase,"es",userId,"tts/repeat"));
+   }
+   return NextResponse.json({transcription:"",noSpeech:true,audioUrl});
   }
+  return NextResponse.json({transcription,noSpeech:false});
+ }catch(error){
+  if(error instanceof Error&&error.message==="AI_RATE_LIMITED") return NextResponse.json({error:"Demasiadas peticiones. Espera unos segundos e inténtalo de nuevo."},{status:429});
+  console.error(error);return NextResponse.json({error:"Error al transcribir el audio"},{status:500});
+ }
 }

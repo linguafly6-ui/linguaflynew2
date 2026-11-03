@@ -1,37 +1,13 @@
-﻿import { NextRequest, NextResponse } from "next/server";
+import { NextRequest,NextResponse } from "next/server";
 import { getEnv } from "@/lib/cf-context";
-
-
-/**
- * GET /api/conversation/scenarios?language=en&level=A1
- * Lista los escenarios de conversaciÃ³n disponibles.
- */
-export async function GET(request: NextRequest) {
-  try {
-    const env = getEnv();
-    const { searchParams } = new URL(request.url);
-    const language = searchParams.get("language");
-    const level = searchParams.get("level");
-
-    let query = "SELECT id, title, description, language, level, setting, persona_prompt, opening_line FROM conversation_scenarios";
-    let params: string[] = [];
-
-    if (language && level) {
-      query += " WHERE language = ? AND level = ?";
-      params = [language, level];
-    } else if (language) {
-      query += " WHERE language = ?";
-      params = [language];
-    }
-
-    const stmt = env.DB.prepare(query);
-    const rows = params.length > 0
-      ? await stmt.bind(...params).all()
-      : await stmt.all();
-
-    return NextResponse.json({ scenarios: rows.results || [] });
-  } catch (error) {
-    console.error("Scenarios error:", error);
-    return NextResponse.json({ error: "Error al obtener escenarios" }, { status: 500 });
-  }
+export const runtime="edge";
+export async function GET(request:NextRequest){
+ try{
+  const level=request.nextUrl.searchParams.get("level");
+  let query="SELECT id,level FROM conversation_scenarios",params:any[]=[];
+  if(level){query+=" WHERE level=?";params=[level];}
+  query+=" ORDER BY level,id";
+  const rows=await getEnv().DB.prepare(query).bind(...params).all();
+  return NextResponse.json({scenarios:(rows.results||[]).map((row:any)=>({id:row.id,title:"Práctica de conversación",description:"Escucha una situación y responde en inglés.",setting:"Situación cotidiana",language:"en",level:row.level,persona_prompt:"You are a friendly English conversation partner."}))});
+ }catch(error){console.error(error);return NextResponse.json({error:"Error al obtener escenarios"},{status:500});}
 }

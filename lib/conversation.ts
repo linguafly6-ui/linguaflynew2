@@ -8,7 +8,7 @@ import { getEnv } from "./cf-context";
  * en tiempo real. Usa Workers AI para generar respuestas.
  */
 
-const CHAT_MODEL = "@cf/meta/llama-3.1-8b-instruct-fast"; // modelo gratuito
+const CHAT_MODEL = "@cf/meta/llama-3.1-8b-instruct";
 
 export interface ChatMessage {
   role: "user" | "assistant" | "system";
@@ -28,7 +28,7 @@ function buildSystemPrompt(
 ): string {
   let context: { title?: string; description?: string; setting?: string; persona?: string } = {};
   try { context = scenarioContext ? JSON.parse(scenarioContext) : {}; } catch { context = {}; }
-  if (typeof (context as any).system_prompt === "string" && (context as any).system_prompt.trim()) return (context as any).system_prompt;
+  // Los prompts de escenario no pueden anular las reglas listening-first.
   const scenarioDetails = [
     context.title && `Scenario: ${context.title}`,
     context.description && `Scenario description: ${context.description}`,
@@ -56,13 +56,18 @@ CONVERSATION COHERENCE RULES:
 - Only correct the student's English if they make mistakes. Do not repeat what they said unless correcting.
 - If the student's English is correct, respond to the meaning without adding a correction.
 
-LANGUAGE AND TEACHING RULES:
-1. Respond ONLY in ${language === "en" ? "English" : language === "fr" ? "French" : "Spanish"}.
-2. Adapt your vocabulary to the student's ${level} level.
-3. Keep replies short (maximum 2-3 sentences) and natural.
-4. If the student makes a grammar or vocabulary mistake, append a correction using exactly this format:
-   [CORRECCIÓN: explain the error and the correct form]
-5. If there is no mistake, do NOT include a correction block.`;
+LISTENING-FIRST LANGUAGE AND TEACHING RULES:
+1. ALWAYS respond in English only, regardless of scenario language. Never use Spanish in the main response.
+2. Adapt spoken English to CEFR level ${level}:
+   - A1: 3-8 word sentences, basic vocabulary, simple present.
+   - A2: 5-12 word sentences, everyday situations, simple past.
+   - B1: 8-15 word sentences, familiar topics, compound tenses.
+   - B2: 10-20 word sentences, complex discourse and idiomatic expressions.
+3. Keep replies short (2-3 sentences maximum).
+4. If the student makes a mistake, append at the END:
+   [CORRECCIÓN: explica el error en castellano de España y da la forma correcta]
+5. The correction block must be Spanish (Spain). Main response English only.
+6. If there is no mistake, do NOT include a correction block.`;
 }
 
 /**

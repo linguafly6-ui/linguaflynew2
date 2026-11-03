@@ -1,2 +1,32 @@
-import { NextRequest,NextResponse } from "next/server";import {getEnv} from "@/lib/cf-context";import {getStudent,studentUserId} from "@/lib/student-auth";import {chatWithPersona,loadSessionMessages} from "@/lib/conversation";
-export async function POST(request:NextRequest){try{const env=getEnv();const {sessionId,message,personaPrompt,scenarioContext,language,level}=await request.json() as any;if(!sessionId||!message||!personaPrompt)return NextResponse.json({error:"Faltan parámetros"},{status:400});const s=await env.DB.prepare("SELECT id,user_id,scenario_id FROM conversation_sessions WHERE id=? AND status='active'").bind(sessionId).first() as any;if(s&&String(s.scenario_id).startsWith("a1-speaking-")){const student=await getStudent(request);if(Number(String(s.scenario_id).slice(12))>5&&student?.plan!=="pro")return NextResponse.json({error:"Pro required"},{status:403});if(student&&s.user_id!==studentUserId(student))return NextResponse.json({error:"Sesión no válida"},{status:403});}if(!s)return NextResponse.json({error:"Sesión no activa"},{status:404});await env.DB.prepare("INSERT INTO conversation_messages (id,session_id,role,content,created_at) VALUES (?,?, 'user', ?,datetime('now'))").bind(`msg-${Date.now()}`,sessionId,message).run();const history=await loadSessionMessages(env.DB,sessionId);const context=typeof scenarioContext==="string"?scenarioContext:JSON.stringify(scenarioContext||{});const {content,correction}=await chatWithPersona(history,personaPrompt,language||"en",level||"A1",context);await env.DB.prepare("INSERT INTO conversation_messages (id,session_id,role,content,correction,created_at) VALUES (?,?, 'assistant', ?,?,datetime('now'))").bind(`msg-${Date.now()}`,sessionId,content,correction).run();await env.DB.prepare("UPDATE conversation_sessions SET updated_at=datetime('now') WHERE id=?").bind(sessionId).run();return NextResponse.json({reply:content,correction});}catch(e){console.error(e);return NextResponse.json({error:"Error en la conversación"},{status:500});}}
+import { NextRequest,NextResponse } from "next/server";
+import { getEnv } from "@/lib/cf-context";
+import { getStudent,studentUserId } from "@/lib/student-auth";
+import { chatWithPersona,loadSessionMessages } from "@/lib/conversation";
+import { checkAiRateLimit } from "@/lib/ai-helpers";
+import { generateCachedTts,audioServeUrl } from "@/lib/tts";
+export const runtime="edge";
+export async function POST(request:NextRequest){
+ try{
+  const env=getEnv();
+  const {sessionId,message,personaPrompt,scenarioContext,level}=await request.json() as any;
+  if(!sessionId||typeof message!=="string"||!message.trim()||!personaPrompt) return NextResponse.json({error:"Faltan parámetros"},{status:400});
+  const session=await env.DB.prepare("SELECT id,user_id,scenario_id FROM conversation_sessions WHERE id=? AND status='active'").bind(sessionId).first() as any;
+  if(!session) return NextResponse.json({error:"Sesión no activa"},{status:404});
+  const student=await getStudent(request);
+  if(student&&session.user_id!==studentUserId(student)) return NextResponse.json({error:"Sesión no válida"},{status:403});
+  const userId=String(session.user_id||"guest");
+  if(!(await checkAiRateLimit(userId))) return NextResponse.json({error:"Demasiadas peticiones. Espera unos segundos e inténtalo de nuevo."},{status:429});
+  await env.DB.prepare("INSERT INTO conversation_messages (id,session_id,role,content,created_at) VALUES (?,?, 'user', ?,datetime('now'))").bind("msg-"+crypto.randomUUID(),sessionId,message.trim()).run();
+  const context=typeof scenarioContext==="string"?scenarioContext:JSON.stringify(scenarioContext||{});
+  const {content,correction}=await chatWithPersona(await loadSessionMessages(env.DB,sessionId),personaPrompt,"en",level||"A1",context);
+  const key=await generateCachedTts(content,"en",userId,`tts/conv/${sessionId}`);
+  const messageId="msg-"+crypto.randomUUID();
+  await env.DB.prepare("INSERT INTO conversation_messages (id,session_id,role,content,correction,audio_r2_key,created_at) VALUES (?,?, 'assistant', ?,?,?,datetime('now'))").bind(messageId,sessionId,content,correction,key).run();
+  await env.DB.prepare("UPDATE conversation_sessions SET updated_at=datetime('now') WHERE id=?").bind(sessionId).run();
+  return NextResponse.json({audioUrl:audioServeUrl(key),correction,messageId});
+ }catch(error){
+  console.error("Conversation chat error:",error);
+  if(error instanceof Error&&error.message==="AI_RATE_LIMITED") return NextResponse.json({error:"Demasiadas peticiones. Espera unos segundos e inténtalo de nuevo."},{status:429});
+  return NextResponse.json({error:"Error en la conversación"},{status:500});
+ }
+}

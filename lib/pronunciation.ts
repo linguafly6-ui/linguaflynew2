@@ -9,7 +9,7 @@ import { getEnv } from "./cf-context";
  */
 
 // Modelos de Workers AI disponibles en plan Free
-const STT_MODEL = "@cf/openai/whisper-large-v3-turbo";
+const STT_MODEL = "@cf/openai/whisper-tiny-en";
 const TTS_MODEL = "@cf/myshell-ai/melotts";
 
 export interface PronunciationResult {
@@ -122,7 +122,7 @@ export async function generateReferenceAudio(
 
   const result = await env.AI.run(TTS_MODEL as any, {
     prompt: phrase,
-    lang: language || "en",
+    lang: "en",
   });
 
   // Registrar la estructura real de la respuesta para depurar.
