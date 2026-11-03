@@ -1,6 +1,7 @@
 import { NextRequest, NextResponse } from "next/server";
 import { ticketDb, adminAuthorized } from "@/lib/support-tickets";
 import { hashPassword } from "@/lib/student-auth";
+import { generateTemporaryPassword, sendWelcomeEmail } from "@/lib/email-temporary-password";
 
 const EMAIL_RE = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
 
@@ -8,18 +9,16 @@ export async function POST(request: NextRequest) {
   try {
     if (!adminAuthorized(request)) return NextResponse.json({ error: "No autorizado" }, { status: 401 });
     const body = await request.json() as {
-      email?: string; password?: string; plan?: string; fullName?: string; notes?: string; expiresAt?: string;
+      email?: string; plan?: string; fullName?: string; notes?: string; expiresAt?: string;
     };
     const email = String(body.email || "").trim().toLowerCase();
-    const password = String(body.password || "");
     const fullName = String(body.fullName || "").trim().slice(0, 120);
     const notes = String(body.notes || "").trim().slice(0, 2000);
     const plan = ["free", "pro", "pro_test"].includes(String(body.plan)) ? String(body.plan) : "free";
     const expiresAt = String(body.expiresAt || "").trim();
 
-    if (!email || !password) return NextResponse.json({ error: "Email y contraseña son obligatorios." }, { status: 400 });
+    if (!email) return NextResponse.json({ error: "El email es obligatorio." }, { status: 400 });
     if (!EMAIL_RE.test(email)) return NextResponse.json({ error: "Email no válido." }, { status: 400 });
-    if (password.length < 8 || password.length > 256) return NextResponse.json({ error: "La contraseña debe tener entre 8 y 256 caracteres." }, { status: 400 });
     if (expiresAt && (!/^\d{4}-\d{2}-\d{2}$/.test(expiresAt) || Number.isNaN(Date.parse(expiresAt)))) {
       return NextResponse.json({ error: "La fecha de expiración no es válida." }, { status: 400 });
     }
@@ -29,7 +28,8 @@ export async function POST(request: NextRequest) {
     const existing = await db.prepare("SELECT id FROM students WHERE email=?").bind(email).first();
     if (existing) return NextResponse.json({ error: "Ya existe una cuenta con este email." }, { status: 409 });
 
-    const passwordHash = await hashPassword(password);
+    const tempPassword = generateTemporaryPassword();
+    const passwordHash = await hashPassword(tempPassword);
     const subscriptionStatus = plan === "free" ? "inactive" : "active";
     const inserted = await db.prepare(
       "INSERT INTO students (email,password_hash,plan,subscription_status,created_at) VALUES (?,?,?,?,datetime('now'))"
@@ -46,8 +46,15 @@ export async function POST(request: NextRequest) {
       // The account remains usable even if an older database has not received the metadata migration.
     }
 
+    const emailSent = await sendWelcomeEmail(email, fullName || null, tempPassword);
+    if (!emailSent) {
+      await db.prepare("DELETE FROM admin_student_metadata WHERE student_id = ?").bind(studentId).run().catch(() => undefined);
+      await db.prepare("DELETE FROM students WHERE id = ?").bind(studentId).run();
+      return NextResponse.json({ error: "No se pudo enviar el email de bienvenida. La cuenta no se ha creado; comprueba la configuración de EMAIL e inténtalo de nuevo." }, { status: 502 });
+    }
+
     return NextResponse.json({
-      success: true, studentId, email, plan,
+      success: true, studentId, email, plan, emailSent: true,
       message: plan === "pro_test" ? "Cuenta de prueba creada con acceso completo sin Stripe." : `Cuenta creada con plan ${plan}.`,
     }, { status: 201 });
   } catch (error) {
