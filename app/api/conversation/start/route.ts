@@ -19,7 +19,8 @@ export async function POST(request: NextRequest) {
     const lesson = await generateLessonWithAI(env.AI, unit);
     return NextResponse.json({ lesson });
   } catch (error) {
-    console.error("Lesson error:", error);
-    return NextResponse.json({ error: "Error al generar la leccion" }, { status: 500 });
+    const errorMessage = error instanceof Error ? error.message : String(error);
+    console.error("Lesson error:", errorMessage);
+    return NextResponse.json({ error: "Error al generar la leccion: " + errorMessage }, { status: 500 });
   }
 }

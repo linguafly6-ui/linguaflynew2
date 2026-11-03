@@ -40,9 +40,20 @@ export function getLevelForUnit(unitId: number): Level {
 }
 
 export async function loadUnitFromDb(db: D1Database, unitId: number): Promise<UnitInfo | null> {
-  const row = await db.prepare("SELECT id, level, title, description, language, topic FROM conversation_units WHERE id = ?").bind(unitId).first();
-  if (!row) return null;
-  return { id: row.id as number, level: row.level as Level, title: row.title as string, description: (row.description as string) || "", language: (row.language as string) || "en", topic: (row.topic as string) || "general" };
+  try {
+    const row = await db.prepare("SELECT id, level, title, description, language, topic FROM conversation_units WHERE id = ?").bind(unitId).first();
+    if (!row) return null;
+    return {
+      id: row.id as number,
+      level: row.level as Level,
+      title: row.title as string,
+      description: (row.description as string) || "",
+      language: (row.language as string) || "en",
+      topic: (row.topic as string) || "general",
+    };
+  } catch {
+    return null;
+  }
 }
 
 export async function generateLessonWithAI(ai: Ai, unit: UnitInfo): Promise<Lesson> {
