@@ -3,46 +3,142 @@
 import { useCallback, useEffect, useRef, useState } from "react";
 
 
+// ============================================================
+// LISTAS DE PALABRAS Y FRASES POR UNIDAD (1-100)
+// Cada cuarta unidad es un constructor de frases.
+// ============================================================
+
 const UNIT_WORDS: Record<string, string[]> = {
-  "a1-speaking-1": [
-    "Hello",
-    "Good morning",
-    "Good afternoon",
-    "Good evening",
-    "Hi there",
-    "Goodbye",
-    "See you later",
-    "Good night",
-    "Nice to meet you",
-    "Have a nice day"
-  ],
-  "a1-speaking-2": [
-    "How are you",
-    "I'm fine thank you",
-    "What's your name",
-    "My name is",
-    "Nice to meet you",
-    "Where are you from",
-    "I'm from Spain",
-    "How old are you",
-    "I'm twenty years old",
-    "See you soon"
-  ],
-  "a1-speaking-3": [
-    "Can you help me",
-    "Excuse me",
-    "Sorry",
-    "Thank you",
-    "You're welcome",
-    "Please",
-    "Of course",
-    "No problem",
-    "I don't understand",
-    "Could you repeat that"
-  ],
+  "a1-speaking-1": ["Hello", "Good morning", "Good afternoon", "Good evening", "Hi there", "Goodbye", "See you later", "Good night", "Nice to meet you", "Have a nice day"],
+  "a1-speaking-2": ["How are you", "I'm fine thank you", "What's your name", "My name is", "Nice to meet you", "Where are you from", "I'm from Spain", "How old are you", "I'm twenty years old", "See you soon"],
+  "a1-speaking-3": ["Can you help me", "Excuse me", "Sorry", "Thank you", "You're welcome", "Please", "Of course", "No problem", "I don't understand", "Could you repeat that"],
+  "a1-speaking-4": ["Hello, how are you", "Good morning, my name is John", "Can you help me please", "Thank you, you're welcome", "Hi there, nice to meet you", "Sorry, I don't understand", "Goodbye, see you later", "Excuse me, where are you from", "Good night, have a nice day", "How old are you, I'm twenty"],
+  "a1-speaking-5": ["One", "Two", "Three", "Four", "Five", "Six", "Seven", "Eight", "Nine", "Ten"],
+  "a1-speaking-6": ["Red", "Blue", "Green", "Yellow", "Black", "White", "Orange", "Purple", "Brown", "Pink"],
+  "a1-speaking-7": ["Mother", "Father", "Brother", "Sister", "Grandmother", "Grandfather", "Son", "Daughter", "Aunt", "Uncle"],
+  "a1-speaking-8": ["My mother is from Spain", "I have two brothers and one sister", "The apple is red", "My father is forty years old", "Hello, my name is John and I'm ten", "Can you help me, thank you", "Good morning, how are you today", "My favorite color is blue", "Nice to meet you, goodbye", "I'm from Spain, see you soon"],
+  "a1-speaking-9": ["Water", "Bread", "Milk", "Coffee", "Tea", "Apple", "Banana", "Rice", "Chicken", "Fish"],
+  "a1-speaking-10": ["I like coffee", "I don't like tea", "Can I have water", "I want bread", "Do you like fish", "I love apples", "The rice is good", "I need milk", "Thank you for the chicken", "No problem, enjoy your meal"],
+  "a1-speaking-11": ["Breakfast", "Lunch", "Dinner", "Hungry", "Thirsty", "Delicious", "Restaurant", "Menu", "Waiter", "Bill"],
+  "a1-speaking-12": ["I'm hungry, can I have bread", "Good morning, I'd like coffee please", "My mother makes delicious chicken", "What's your name, are you hungry", "I don't like fish but I love rice", "Excuse me waiter, can I have the bill", "Thank you, the breakfast was delicious", "I'm thirsty, can I have water", "Hello, welcome to the restaurant", "I have lunch at one o'clock"],
+  "a1-speaking-13": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday", "Today", "Tomorrow", "Yesterday"],
+  "a1-speaking-14": ["Morning", "Afternoon", "Evening", "Night", "Week", "Weekend", "Time", "Hour", "Minute", "Clock"],
+  "a1-speaking-15": ["Get up", "Have breakfast", "Go to work", "Have lunch", "Go home", "Have dinner", "Watch TV", "Go to bed", "Take a shower", "Brush my teeth"],
+  "a1-speaking-16": ["I get up at seven on Monday", "I have breakfast and then go to work", "What time is it, it's five o'clock", "I go home at six in the evening", "On Saturday I watch TV", "I have dinner at nine at night", "Good morning, did you have breakfast", "I take a shower and brush my teeth", "Tomorrow is Friday, the weekend is near", "Yesterday I had lunch at the restaurant"],
+  "a1-speaking-17": ["House", "Room", "Kitchen", "Bedroom", "Bathroom", "Living room", "Door", "Window", "Table", "Chair"],
+  "a1-speaking-18": ["Bed", "Sofa", "Lamp", "Clock", "Mirror", "Cupboard", "Shelf", "Carpet", "Curtain", "Pillow"],
+  "a1-speaking-19": ["In", "On", "Under", "Next to", "Behind", "In front of", "Above", "Below", "Inside", "Outside"],
+  "a1-speaking-20": ["The lamp is on the table", "My bed is in the bedroom", "The clock is next to the window", "I have a mirror in the bathroom", "The sofa is in the living room", "The carpet is under the chair", "There is a curtain behind the door", "The pillow is above the bed", "My house has a big kitchen", "The cupboard is inside the kitchen"],
+  "a1-speaking-21": ["Shirt", "Trousers", "Dress", "Skirt", "Shoes", "Socks", "Coat", "Hat", "Gloves", "Scarf"],
+  "a1-speaking-22": ["Head", "Hair", "Eyes", "Nose", "Mouth", "Ears", "Hands", "Feet", "Arms", "Legs"],
+  "a1-speaking-23": ["I have", "I need", "I want", "I like", "I wear", "I see", "I hear", "I touch", "I smell", "I feel"],
+  "a1-speaking-24": ["I wear a blue shirt and black trousers", "My head hurts, can you help me", "I need new shoes for work", "She has brown eyes and long hair", "I want a red dress for dinner", "Put on your coat and scarf, it's cold", "I see a hat on the table", "My hands are cold, I need gloves", "I have two socks in my cupboard", "I hear you, can you repeat please"],
+  "a1-speaking-25": ["Sunny", "Rainy", "Cloudy", "Windy", "Snowy", "Hot", "Cold", "Warm", "Cool", "Storm"],
+  "a1-speaking-26": ["Spring", "Summer", "Autumn", "Winter", "Sun", "Rain", "Snow", "Wind", "Cloud", "Sky"],
+  "a1-speaking-27": ["It is sunny", "It is raining", "It is cold today", "It is a beautiful day", "I like the summer", "The sky is blue", "It is snowing", "The wind is strong", "It is very hot", "I don't like the rain"],
+  "a1-speaking-28": ["It is sunny and warm today", "I like spring because it is not cold", "The sky is cloudy, it might rain", "In winter it is snowy and cold", "Good morning, it's a beautiful day", "It is raining, I need my coat", "The wind is strong in autumn", "It is very hot in the summer", "I don't like storms, I'm scared", "Today is sunny, let's go to the park"],
+  "a1-speaking-29": ["Car", "Bus", "Train", "Plane", "Bike", "Boat", "Taxi", "Metro", "Left", "Right"],
+  "a1-speaking-30": ["Go straight", "Turn left", "Turn right", "Stop here", "Next to the bank", "On the corner", "Opposite the school", "Behind the restaurant", "In front of the house", "Where is the station"],
+  "a1-speaking-31": ["Ticket", "Driver", "Passenger", "Station", "Airport", "Arrival", "Departure", "Journey", "Map", "Bridge"],
+  "a1-speaking-32": ["Excuse me, where is the station", "Go straight and turn left next to the bank", "I take the bus to go to work", "The train arrives at the station", "Can I have a ticket please", "Turn right, the airport is on the corner", "I need a map for the journey", "The taxi is behind the restaurant", "Take the metro, it's faster", "The plane departs from the airport"],
+  "a1-speaking-33": ["Teacher", "Doctor", "Student", "Worker", "Manager", "Nurse", "Cook", "Driver", "Artist", "Farmer"],
+  "a1-speaking-34": ["School", "University", "Office", "Hospital", "Factory", "Shop", "Library", "Classroom", "Homework", "Exam"],
+  "a1-speaking-35": ["I work", "I study", "I learn", "I teach", "I read", "I write", "I listen", "I practice", "I remember", "I forget"],
+  "a1-speaking-36": ["My mother is a doctor at the hospital", "I study English at the university", "The teacher is in the classroom", "I do my homework after dinner", "My father works in a factory", "I read books in the library", "Can you help me with my exam", "I practice English every morning", "I forget the words, can you repeat", "The nurse works at the hospital"],
+  "a1-speaking-37": ["Shop", "Money", "Price", "Cheap", "Expensive", "Buy", "Sell", "Pay", "Cash", "Card"],
+  "a1-speaking-38": ["How much", "How many", "I want to buy", "Can I pay", "It's too expensive", "Do you have", "I need a bag", "Where can I", "How much is it", "I'll take it"],
+  "a1-speaking-39": ["Shirt", "Trousers", "Shoes", "Book", "Phone", "Computer", "Food", "Drink", "Gift", "Ticket"],
+  "a1-speaking-40": ["How much is this shirt", "Can I pay by card or cash", "I want to buy a new phone", "It's too expensive, do you have something cheaper", "How many tickets do you need", "I need a bag for the food", "Excuse me, where can I buy shoes", "I'll take it, how much is it", "The book is ten euros, that's cheap", "Can I pay with my card please"],
+  "a1-speaking-41": ["Football", "Tennis", "Swimming", "Running", "Basketball", "Cycling", "Yoga", "Dancing", "Reading", "Painting"],
+  "a1-speaking-42": ["Play", "Win", "Lose", "Team", "Game", "Match", "Practice", "Score", "Ball", "Race"],
+  "a1-speaking-43": ["I like playing", "I enjoy", "I prefer", "I hate", "I love", "I'm good at", "I'm bad at", "My favorite", "In my free time", "On weekends"],
+  "a1-speaking-44": ["I like playing football on weekends", "My favorite sport is tennis", "I enjoy swimming in the summer", "I'm good at basketball but bad at running", "In my free time I like reading books", "My team won the match yesterday", "I practice yoga every morning", "I love dancing with my sister", "On Saturday I play games with my friends", "I prefer cycling to running"],
+  "a1-speaking-45": ["Headache", "Stomachache", "Fever", "Cough", "Cold", "Medicine", "Doctor", "Hospital", "Healthy", "Sick"],
+  "a1-speaking-46": ["I feel", "I have a", "I need to", "I should", "I must rest", "I feel better", "I feel worse", "It hurts", "Get well", "Take care"],
+  "a1-speaking-47": ["Water", "Sleep", "Exercise", "Fruit", "Vegetables", "Walk", "Relax", "Rest", "Fresh air", "Wash hands"],
+  "a1-speaking-48": ["I have a headache, I need medicine", "I feel sick, I should see a doctor", "You should drink water and rest", "I feel better after a good sleep", "Eat fruit and vegetables to stay healthy", "I have a cold and a cough", "Take care and get well soon", "I need to exercise and walk more", "Wash your hands to stay healthy", "I feel worse today, I must rest"],
+  "a1-speaking-49": ["Travel", "Holiday", "Beach", "Mountain", "Hotel", "Suitcase", "Passport", "Ticket", "Map", "Camera"],
+  "a1-speaking-50": ["I went to", "I visited", "I stayed at", "I travelled by", "I saw", "I took photos", "I bought", "I ate", "I enjoyed", "I came back"],
+  "a1-speaking-51": ["Sea", "Sand", "Sun", "Swim", "Relax", "Explore", "Beautiful", "Amazing", "Fun", "Adventure"],
+  "a1-speaking-52": ["I went to the beach on holiday", "I stayed at a hotel near the mountain", "I travelled by plane with my passport", "I took photos of the beautiful sea", "I enjoyed swimming in the warm water", "I bought a map and explored the city", "My suitcase is heavy, can you help me", "I came back home yesterday evening", "The holiday was amazing and fun", "I love travelling, it's a great adventure"],
+  "a1-speaking-53": ["Phone", "Computer", "Internet", "Email", "Message", "Screen", "Keyboard", "Mouse", "Battery", "Charger"],
+  "a1-speaking-54": ["Call", "Text", "Send", "Receive", "Download", "Upload", "Search", "Click", "Open", "Close"],
+  "a1-speaking-55": ["I use", "I need", "I have a problem", "Can you fix", "It's not working", "Turn on", "Turn off", "Plug in", "Connect", "Disconnect"],
+  "a1-speaking-56": ["I use my phone to send messages", "Can you fix my computer, it's not working", "I need to charge the battery", "Turn on the computer and connect to the internet", "I sent you an email yesterday", "I have a problem with my screen", "Can you help me download this", "Turn off your phone and plug in the charger", "I search the internet for information", "I received a message from my mother"],
+  "a1-speaking-57": ["Dog", "Cat", "Bird", "Fish", "Horse", "Cow", "Sheep", "Chicken", "Tree", "Flower"],
+  "a1-speaking-58": ["Forest", "River", "Lake", "Mountain", "Beach", "Garden", "Farm", "Park", "Field", "Nature"],
+  "a1-speaking-59": ["Big", "Small", "Fast", "Slow", "Beautiful", "Dangerous", "Friendly", "Wild", "Cute", "Strong"],
+  "a1-speaking-60": ["My dog is big and very friendly", "I saw a beautiful bird in the forest", "The river is near the mountain", "Cows and sheep live on the farm", "I like walking in the park with my dog", "The horse is fast and strong", "There are many trees and flowers in the garden", "Wild animals can be dangerous", "My cat is small and cute", "I love nature and the beautiful beach"],
 };
 
-const DEFAULT_WORDS = ["Hello", "Please", "Thank you", "Sorry", "Goodbye", "Yes", "No", "Maybe", "Excuse me", "See you later"];
+const SENTENCE_BUILDER_UNITS = [4, 8, 12, 16, 20, 24, 28, 32, 36, 40, 44, 48, 52, 56, 60, 64, 68, 72, 76, 80, 84, 88, 92, 96, 100];
+
+function isSentenceBuilderUnit(unitId: string): boolean {
+  const match = unitId.match(/a1-speaking-(\d+)/);
+  return !!match && SENTENCE_BUILDER_UNITS.includes(Number(match[1]));
+}
+
+const DEFAULT_TOPICS: Record<number, string[]> = {
+  61: ["City", "Town", "Village", "Street", "Road", "Bridge", "Building", "Park", "Square", "Market"],
+  62: ["Police", "Firefighter", "Post office", "Bank", "Library", "Museum", "School", "Church", "Stadium", "Pharmacy"],
+  63: ["I live in", "I work at", "I go to", "I live near", "It's far from", "It's close to", "Next to my house", "In the center", "On this street", "Around the corner"],
+  65: ["Music", "Song", "Guitar", "Piano", "Sing", "Dance", "Listen", "Rhythm", "Melody", "Concert"],
+  66: ["Movie", "Cinema", "Actor", "Director", "Comedy", "Drama", "Action", "Horror", "Ticket", "Popcorn"],
+  67: ["I watched", "I listened to", "I enjoyed", "I didn't like", "My favorite", "I recommend", "It was great", "It was boring", "I love this", "I hate that"],
+  69: ["Friend", "Best friend", "Friendly", "Together", "Share", "Help", "Trust", "Fun", "Laugh", "Smile"],
+  70: ["Family", "Parents", "Children", "Grandparents", "Cousin", "Nephew", "Niece", "Relative", "Generation", "Love"],
+  71: ["I miss", "I visit", "I call", "I invite", "I share with", "I help my", "I love my", "I live with", "I care about", "I spend time with"],
+  73: ["Happy", "Sad", "Angry", "Scared", "Excited", "Tired", "Bored", "Surprised", "Nervous", "Proud"],
+  74: ["I feel happy", "I feel sad", "I am excited", "I am tired", "I am scared", "I am bored", "I am angry", "I am surprised", "I am nervous", "I am proud"],
+  75: ["I feel happy when", "I feel sad when", "I get excited about", "I get tired after", "I get scared of", "I get bored when", "I get angry when", "I get surprised by", "I get nervous before", "I feel proud of"],
+  77: ["Morning routine", "Breakfast", "Get dressed", "Leave home", "Commute", "Arrive", "Start work", "Take a break", "Finish work", "Return home"],
+  78: ["Cook dinner", "Set the table", "Wash dishes", "Clean the house", "Do laundry", "Iron clothes", "Water plants", "Feed the dog", "Take out trash", "Lock the door"],
+  79: ["Every day I", "In the morning I", "After work I", "Before bed I", "On weekends I", "Sometimes I", "I always", "I never", "I usually", "I often"],
+  81: ["Ask", "Answer", "Question", "Understand", "Explain", "Agree", "Disagree", "Suggest", "Decide", "Choose"],
+  82: ["I think", "I believe", "I agree", "I disagree", "In my opinion", "I suggest", "I prefer", "I decided", "I'm not sure", "Let me think"],
+  83: ["What do you think", "Do you agree", "I think we should", "I suggest that", "In my opinion we", "I prefer to", "I decided to", "I'm not sure but", "Let me think about", "I believe that"],
+  85: ["Future", "Will", "Going to", "Plan", "Dream", "Goal", "Hope", "Wish", "Expect", "Promise"],
+  86: ["Next year", "Next month", "Next week", "Tomorrow", "Soon", "Later", "In the future", "Someday", "Eventually", "After that"],
+  87: ["I will", "I'm going to", "I plan to", "I hope to", "I want to", "I dream of", "I wish I could", "I expect to", "I promise to", "I look forward to"],
+  89: ["Past", "Yesterday", "Last week", "Last year", "Before", "Ago", "Earlier", "Used to", "Remember", "Forgot"],
+  90: ["I went", "I saw", "I did", "I had", "I was", "I said", "I thought", "I knew", "I took", "I gave"],
+  91: ["Yesterday I went", "Last week I saw", "Last year I visited", "I remember when", "I used to", "A long time ago", "Before that I", "I forgot to", "I had a great time", "It was a good day"],
+  93: ["Should", "Must", "Have to", "Need to", "Ought to", "Don't have to", "Shouldn't", "Mustn't", "Can", "Could"],
+  94: ["You should", "You must", "You have to", "You need to", "You shouldn't", "You mustn't", "You can", "You could", "You don't have to", "You ought to"],
+  95: ["You should rest", "You must see a doctor", "You have to eat healthy", "You need to exercise", "You shouldn't smoke", "You mustn't worry", "You can do it", "You could try yoga", "You don't have to hurry", "You ought to sleep more"],
+  97: ["Compare", "Bigger", "Smaller", "Better", "Worse", "Faster", "Slower", "More expensive", "Cheaper", "The best"],
+  98: ["This is bigger than", "This is better than", "This is faster than", "This is more expensive than", "This is cheaper than", "This is the best", "This is the worst", "This is the biggest", "This is the smallest", "This is the most beautiful"],
+  99: ["I prefer this because", "This is better than that", "This one is bigger", "That one is cheaper", "This is the best one", "This is the worst one", "This is more expensive", "That is faster", "This is the most beautiful", "I like this one more"],
+};
+
+function getUnitWords(unitId: string): string[] {
+  const match = unitId.match(/a1-speaking-(\d+)/);
+  if (!match) return ["Hello", "Please", "Thank you", "Sorry", "Goodbye", "Yes", "No", "Maybe", "Excuse me", "See you later"];
+  const unitNumber = Number(match[1]);
+  if (UNIT_WORDS[unitId]) return UNIT_WORDS[unitId];
+  if (!Number.isInteger(unitNumber) || unitNumber < 1 || unitNumber > 100) {
+    return ["Hello", "Please", "Thank you", "Sorry", "Goodbye", "Yes", "No", "Maybe", "Excuse me", "See you later"];
+  }
+  if (SENTENCE_BUILDER_UNITS.includes(unitNumber)) {
+    const previousWords = Array.from({ length: unitNumber - 1 }, (_, index) => index + 1)
+      .flatMap((number) => UNIT_WORDS["a1-speaking-" + number] || DEFAULT_TOPICS[number] || []);
+    const usableWords = previousWords.filter((word) => word && !/^(I |I'm |It's |My |The |A |An |You |We |They |He |She )/i.test(word));
+    const vocabulary = usableWords.length ? usableWords : ["English", "words", "practice"];
+    return Array.from({ length: 10 }, (_, index) => {
+      const first = vocabulary[(index * 3) % vocabulary.length].toLowerCase();
+      const second = vocabulary[(index * 3 + 1) % vocabulary.length].toLowerCase();
+      const templates = [
+        "I like " + first + " and " + second,
+        "The " + first + " is near the " + second,
+        "Can you help me with the " + first,
+        "I have a " + first + " and a " + second,
+        "Where is the " + first + " next to the " + second,
+      ];
+      return templates[index % templates.length];
+    });
+  }
+  return DEFAULT_TOPICS[unitNumber] || ["Hello", "Please", "Thank you", "Sorry", "Goodbye", "Yes", "No", "Maybe", "Excuse me", "See you later"];
+}
 
 interface VoiceScenario {
   id: string;
@@ -499,7 +595,7 @@ export default function VoiceConversation({ scenario, userId = "demo-user", onCo
       activeRef.current = true;
 
       // Cargar la lista de palabras de esta unidad.
-      wordListRef.current = UNIT_WORDS[scenario.id] || DEFAULT_WORDS;
+      wordListRef.current = getUnitWords(scenario.id);
       currentWordIndexRef.current = 0;
       correctCountRef.current = 0;
       setProgress(0);
@@ -507,7 +603,10 @@ export default function VoiceConversation({ scenario, userId = "demo-user", onCo
       const firstWord = wordListRef.current[0];
 
       // Mensaje de inicio del tutor.
-      const introText = `¡Bienvenido a la unidad! Vamos a practicar ${totalWords} palabras en inglés. Escucha cada palabra y repítela en voz alta. Empezamos con la palabra 1 de ${totalWords}: [ENGLISH: ${firstWord}]`;
+      const isSentenceBuilder = isSentenceBuilderUnit(scenario.id);
+      const introText = isSentenceBuilder
+        ? `¡Bienvenido! En esta unidad vamos a formar frases usando las palabras que has aprendido. Practicaremos ${totalWords} frases. Escucha cada frase y repítela. Empezamos con la frase 1 de ${totalWords}: [ENGLISH: ${firstWord}]`
+        : `¡Bienvenido a la unidad! Vamos a practicar ${totalWords} palabras en inglés. Escucha cada palabra y repítela en voz alta. Empezamos con la palabra 1 de ${totalWords}: [ENGLISH: ${firstWord}]`;
       setMessages([{ role: "assistant", content: introText }]);
       await speakLine(introText);
     } catch (err) {
