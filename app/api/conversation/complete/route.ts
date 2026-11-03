@@ -1,6 +1,7 @@
 import { NextRequest, NextResponse } from "next/server";
 import { getEnv } from "@/lib/cf-context";
 import { getStudent, studentUserId } from "@/lib/student-auth";
+import { saveUnifiedProgress } from "@/lib/unified-progress";
 
 const CHAT_MODEL = "@cf/meta/llama-3.1-8b-instruct-fast";
 
@@ -163,6 +164,22 @@ export async function POST(request: NextRequest) {
       } catch (progressError) {
         console.error("Could not update conversation course progress:", progressError);
       }
+    }
+
+    if (isCourseUnit) {
+      const match = String(scenarioId).match(/^(a1|a2|b1|b2|c1|c2)-speaking-(\\d+)$/);
+      const student = await getStudent(request);
+      if (!match || !student || studentUserId(student) !== userId) {
+        return NextResponse.json({ error: "Sesión de alumno no válida." }, { status: 403 });
+      }
+      const course = match[1];
+      const unitNumber = Number(match[2]);
+      const courseDb = env.COURSE_DB || env.DB;
+      const table = course + "_speaking_progress";
+      await courseDb.prepare(
+        "INSERT INTO " + table + "(user_id,unit_id,score,completed,attempts,feedback,updated_at) VALUES(?,?,?,?,1,?,datetime('now')) ON CONFLICT(user_id,unit_id) DO UPDATE SET score=MAX(score,excluded.score),completed=MAX(completed,excluded.completed),attempts=" + table + ".attempts+1,feedback=excluded.feedback,updated_at=datetime('now')"
+      ).bind(userId, unitNumber, evaluated.score, evaluated.score >= 60 ? 1 : 0, evaluated.feedback).run();
+      await saveUnifiedProgress(courseDb, Number(student.id), course + "-speaking", unitNumber, evaluated.score, evaluated.score >= 60);
     }
 
     return NextResponse.json(evaluated);
