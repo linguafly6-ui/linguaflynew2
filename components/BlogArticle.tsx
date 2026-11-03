@@ -3,6 +3,7 @@
 import { useEffect, useRef, useState } from "react";
 import CourseAd from "@/components/CourseAd";
 import { markdownToHtml } from "@/lib/markdown";
+import { wrapWithTranslation } from "@/components/T";
 
 interface BlogArticleProps {
   content: string;
@@ -83,8 +84,8 @@ export default function BlogArticle({ content, title, excerpt, author = "LinguaF
             ))}
           </nav>
           <span className="inline-flex rounded-full bg-blue-50 px-3 py-1 text-xs font-bold uppercase tracking-wider text-blue-700">LinguaFly · Blog</span>
-          {title ? <h1 className="mt-5 text-3xl font-black leading-tight tracking-tight text-slate-950 sm:text-5xl">{title}</h1> : null}
-          {excerpt ? <p className="mt-5 max-w-2xl text-lg leading-8 text-slate-600 sm:text-xl">{excerpt}</p> : null}
+          {title ? <h1 className="mt-5 text-3xl font-black leading-tight tracking-tight text-slate-950 sm:text-5xl">{wrapWithTranslation(title)}</h1> : null}
+          {excerpt ? <p className="mt-5 max-w-2xl text-lg leading-8 text-slate-600 sm:text-xl">{wrapWithTranslation(excerpt)}</p> : null}
           <div className="mt-7 flex flex-wrap items-center gap-x-5 gap-y-2 border-y border-slate-100 py-4 text-sm text-slate-500">
             <span className="inline-flex items-center gap-2"><span aria-hidden="true">✍️</span> Por {author}</span>
             {readTime ? <span className="inline-flex items-center gap-2"><span aria-hidden="true">◷</span> {readTime} de lectura</span> : null}
@@ -102,9 +103,9 @@ export default function BlogArticle({ content, title, excerpt, author = "LinguaF
               {faqs.map((faq, index) => (
                 <details key={index} className="group rounded-2xl border border-slate-200 bg-white p-5 shadow-sm transition-shadow hover:shadow-md">
                   <summary className="flex cursor-pointer list-none items-center justify-between gap-4 font-bold text-slate-800">
-                    {faq.question}<span className="shrink-0 text-blue-600 transition-transform group-open:rotate-180" aria-hidden="true">⌄</span>
+                    {wrapWithTranslation(faq.question)}<span className="shrink-0 text-blue-600 transition-transform group-open:rotate-180" aria-hidden="true">⌄</span>
                   </summary>
-                  <p className="mt-4 leading-7 text-slate-600">{faq.answer}</p>
+                  <p className="mt-4 leading-7 text-slate-600">{wrapWithTranslation(faq.answer)}</p>
                 </details>
               ))}
             </div>
