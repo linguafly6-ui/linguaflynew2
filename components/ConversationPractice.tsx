@@ -20,7 +20,7 @@ interface Message {
   correction?: string | null;
 }
 
-export default function ConversationPractice({ userId = "demo-user", initialScenarioId, onCourseCompleted }: { userId?: string; initialScenarioId?: string; onCourseCompleted?: () => void }) {
+export default function ConversationPractice({ userId = "demo-user", initialScenarioId, onCourseCompleted }: { userId?: string; initialScenarioId?: string; onCourseCompleted?: (result?: any) => void }) {
   const [scenarios, setScenarios] = useState<Scenario[]>([]);
   const [selectedScenario, setSelectedScenario] = useState<Scenario | null>(null);
   const [sessionId, setSessionId] = useState<string | null>(null);
@@ -229,7 +229,7 @@ export default function ConversationPractice({ userId = "demo-user", initialScen
   };
 
   useEffect(() => {
-    if (initialScenarioId && !selectedScenario && scenarios.length > 0) {
+    if (initialScenarioId && !selectedScenario && (scenarios.length > 0 || initialScenarioId.includes("-speaking-"))) {
       const courseScenario = scenarios.find((scenario) => scenario.id === initialScenarioId);
       if (courseScenario) {
         void startConversation(courseScenario);
@@ -262,7 +262,6 @@ export default function ConversationPractice({ userId = "demo-user", initialScen
       const data = await response.json() as any;
       if (!response.ok || data.error) throw new Error(data.error || "No se pudo evaluar la conversación");
       setCompletionResult(data);
-      if (initialScenarioId && initialScenarioId.includes("-speaking-")) onCourseCompleted?.();
     } catch (err) {
       setError(err instanceof Error ? err.message : "Error al evaluar la conversación");
     } finally {
@@ -424,8 +423,7 @@ export default function ConversationPractice({ userId = "demo-user", initialScen
           <p className="text-xl font-extrabold">Evaluación: {completionResult.score}/100 · {"⭐".repeat(completionResult.stars)}</p>
           <p className="mt-2">{completionResult.feedback}</p>
           <p className="mt-2 text-sm">Errores gramaticales: {completionResult.grammar_errors} · Vocabulario utilizado: {completionResult.vocabulary_used}</p>
-          {completionResult.score < 60 && <><p className="mt-2 text-sm font-semibold">Necesitas 60 puntos para desbloquear el siguiente escenario. Puedes seguir practicando y volver a intentarlo.</p><button type="button" onClick={() => setCompletionResult(null)} className="mt-4 mr-2 rounded-xl bg-emerald-700 px-5 py-2 font-bold text-white transition hover:scale-105 hover:bg-emerald-800">Seguir practicando</button></>}
-          <button type="button" onClick={() => onCourseCompleted?.()} className="mt-4 rounded-xl bg-blue-600 px-5 py-2 font-bold text-white transition hover:scale-105 hover:bg-blue-700">Volver al curso</button>
+          {completionResult.score < 60 ? <><p className="mt-2 text-sm font-semibold">Necesitas 60 puntos para desbloquear la siguiente actividad. Puedes seguir practicando y volver a intentarlo.</p><button type="button" onClick={() => setCompletionResult(null)} className="mt-4 rounded-xl bg-emerald-700 px-5 py-2 font-bold text-white transition hover:scale-105 hover:bg-emerald-800">Seguir practicando</button></> : <button type="button" onClick={() => onCourseCompleted?.(completionResult)} className="mt-4 rounded-xl bg-blue-600 px-5 py-2 font-bold text-white transition hover:scale-105 hover:bg-blue-700">Continuar →</button>}
         </div>
       )}
       <div className="flex-1 overflow-y-auto space-y-4 pb-4">
