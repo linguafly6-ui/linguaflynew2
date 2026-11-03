@@ -1,5 +1,5 @@
 {
-  "$schema": "node_modules/wrangler/config-schema.json",
+  "$schema": "./node_modules/wrangler/config-schema.json",
   "name": "linguaflyapp1",
   "compatibility_date": "2026-08-12",
   "compatibility_flags": ["nodejs_compat", "global_fetch_strictly_public"],
@@ -17,5 +17,5 @@
     "NEXT_PUBLIC_SITE_URL":"https://linguafly.app",
   },
   "ratelimits":[{"name":"AI_RATE_LIMITER","namespace_id":"610154781","simple":{"limit":30,"period":60}}],
-  "send_email":[{"name":"EMAIL","allowed_sender_addresses":["noreply@linguafly.app"]}]
+  "send_email":[{"name":"EMAIL","remote":true,"allowed_sender_addresses":["noreply@linguafly.app"]}]
 }
