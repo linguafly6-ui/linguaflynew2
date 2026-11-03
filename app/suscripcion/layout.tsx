@@ -7,8 +7,8 @@ export const metadata: Metadata = {
   title,
   description,
   alternates: { canonical: "/suscripcion" },
-  openGraph: { type: "website", title, description, url: "https://linguafly.app/suscripcion", siteName: "Linguafly" },
-  twitter: { card: "summary_large_image", title, description },
+  openGraph: { type: "website", title, description, url: "https://linguafly.app/suscripcion", siteName: "Linguafly", images: [{ url: "/opengraph-image", width: 1200, height: 630, alt: "Linguafly — Aprende inglés con IA conversacional" }] },
+  twitter: { card: "summary_large_image", title, description, images: ["/opengraph-image"] },
 };
 
 export default function SubscriptionLayout({ children }: Readonly<{ children: React.ReactNode }>) {
