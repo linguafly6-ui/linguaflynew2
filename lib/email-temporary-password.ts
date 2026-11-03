@@ -74,7 +74,7 @@ Te recomendamos cambiar tu contraseña temporal desde Mi cuenta después de inic
       html,
       "--" + boundary + "--",
       "",
-    ].join("\\r\\n");
+    ].join("\r\n");
     await EMAIL.send(new EmailMessage("noreply@linguafly.app", email, raw));
     return true;
   } catch (error) {
