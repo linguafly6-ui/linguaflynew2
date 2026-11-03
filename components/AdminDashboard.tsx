@@ -36,6 +36,7 @@ export default function AdminDashboard(){
   const [stats,setStats]=useState<Stats|null>(null);
   const [learning,setLearning]=useState<any>(null);
   const [openTicketCount,setOpenTicketCount]=useState(0);
+  const [totalTicketCount,setTotalTicketCount]=useState(0);
   const [topStudents,setTopStudents]=useState<Student[]>([]);
   const [students,setStudents]=useState<Student[]>([]);
   const [scenarios,setScenarios]=useState<Scenario[]>([]);
@@ -60,7 +61,7 @@ export default function AdminDashboard(){
       ]);
       setStats(dash.stats);setTopStudents(dash.top_students||[]);
       setStudents(studentData.students||[]);setScenarios(scenarioData.scenarios||[]);setLearning(learningData);
-      void api("/api/admin/tickets").then((ticketData:any)=>setOpenTicketCount(Number(ticketData.openCount||0))).catch(()=>{});
+      void api("/api/admin/tickets?countOnly=true").then((ticketData:any)=>{setOpenTicketCount(Number(ticketData.openCount||0));setTotalTicketCount(Number(ticketData.total||0));}).catch(()=>{});
     }catch(error){
       setDataError(error instanceof Error?error.message:"No se pudieron cargar los datos");
       if(error instanceof Error&&error.message==="No autorizado")setAuthorized(false);
@@ -122,7 +123,7 @@ export default function AdminDashboard(){
     <aside className="flex w-full flex-col bg-slate-800 text-white md:fixed md:inset-y-0 md:w-64">
       <div className="flex items-center gap-3 border-b border-white/10 px-6 py-6"><div className="flex h-11 w-11 items-center justify-center rounded-xl bg-blue-600 text-xl">✈️</div><div><p className="font-extrabold tracking-wide">LinguaFly</p><p className="text-xs text-slate-400">Admin Console</p></div></div>
       <nav className="flex gap-2 overflow-x-auto p-3 md:flex-1 md:flex-col md:gap-1 md:p-4">
-        <a href="/admin/tickets" className="flex shrink-0 items-center gap-3 rounded-xl px-4 py-3 text-left text-sm font-semibold text-slate-300 transition hover:bg-white/10 hover:text-white"><span>📮</span>Tickets de soporte{openTicketCount>0&&<span className="ml-auto rounded-full bg-red-500 px-2 py-0.5 text-xs font-bold text-white">{openTicketCount}</span>}</a>
+        <a href="/admin/tickets" className="flex shrink-0 items-center gap-3 rounded-xl px-4 py-3 text-left text-sm font-semibold text-slate-300 transition hover:bg-white/10 hover:text-white"><span>📮</span>Tickets de soporte{openTicketCount>0&&<span className="ml-auto rounded-full bg-red-500 px-2 py-0.5 text-xs font-bold text-white">{openTicketCount}</span>}<span className="ml-auto text-[10px] text-slate-400">{totalTicketCount} total</span></a>
         {nav.map(item=><button key={item.id} onClick={()=>setActiveSection(item.id)} className={"flex shrink-0 items-center gap-3 rounded-xl px-4 py-3 text-left text-sm font-semibold transition "+(activeSection===item.id?"bg-blue-600 text-white shadow-lg shadow-blue-950/30":"text-slate-300 hover:bg-white/10 hover:text-white")}><span>{item.icon}</span>{item.label}</button>)}
       </nav>
       <div className="hidden border-t border-white/10 p-4 md:block"><div className="mb-3 rounded-xl bg-slate-700/70 p-3"><p className="text-xs text-slate-400">Actividad de hoy</p><p className="mt-1 text-2xl font-extrabold">{stats?.active_today??0}</p><p className="text-xs text-slate-400">alumnos activos</p></div><button onClick={logout} className="w-full rounded-xl px-4 py-3 text-left text-sm font-semibold text-slate-300 transition hover:bg-red-500/15 hover:text-red-300">↪ Cerrar sesión</button></div>
