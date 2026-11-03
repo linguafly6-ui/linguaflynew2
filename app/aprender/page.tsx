@@ -31,6 +31,8 @@ export default function AprenderPage() {
   const [lesson, setLesson] = useState<Lesson | null>(null);
   const [studentId, setStudentId] = useState<number | null>(null);
   const [answer, setAnswer] = useState("");
+  const [selectedWords, setSelectedWords] = useState<string[]>([]);
+  const [matchingPairs, setMatchingPairs] = useState<Record<string, string>>({});
   const [feedback, setFeedback] = useState<{ correct: boolean; correctAnswer: string; explanation?: string } | null>(null);
   const [stats, setStats] = useState({ xp: 0, streak: 0 });
   const [loading, setLoading] = useState(true);
@@ -54,6 +56,8 @@ export default function AprenderPage() {
     setError("");
     setFeedback(null);
     setAnswer("");
+    setSelectedWords([]);
+    setMatchingPairs({});
     try {
       const response = await fetch("/api/learn/next", { cache: "no-store" });
       const data = await response.json() as Lesson & { error?: string };
@@ -187,7 +191,28 @@ export default function AprenderPage() {
           <h2 className="text-xl font-extrabold leading-relaxed text-slate-950 sm:text-2xl">{wrapWithTranslation(lesson.question || "")}</h2>
           {lesson.instruction && <p className="mt-3 text-sm text-slate-500">{wrapWithTranslation(lesson.instruction)}</p>}
           {lesson.passage && <p className="mt-5 whitespace-pre-line rounded-xl bg-slate-50 p-4 leading-7 text-slate-700">{wrapWithTranslation(lesson.passage)}</p>}
-          {lesson.options?.length ? <div className="mt-7 grid gap-3 sm:grid-cols-2">
+          {lesson.exerciseType === "word_order" && lesson.options?.length ? <div className="mt-7 space-y-4">
+            <div className="flex min-h-14 flex-wrap gap-2 rounded-xl border border-dashed border-blue-300 bg-blue-50 p-3">
+              {selectedWords.map((word, index) => <span key={index} className="rounded-lg bg-white px-3 py-2 text-sm font-bold shadow-sm">{word}</span>)}
+              {!selectedWords.length && <span className="text-sm text-slate-400">Pulsa las palabras en el orden correcto…</span>}
+            </div>
+            <div className="flex flex-wrap gap-2">
+              {lesson.options.map((option, index) => <button key={index} disabled={Boolean(feedback) || submitting || selectedWords.filter((word) => word === option).length >= lesson.options!.filter((word) => word === option).length} onClick={() => setSelectedWords((current) => [...current, option])} className="rounded-xl border-2 border-slate-200 px-4 py-3 font-semibold hover:border-blue-400 disabled:opacity-40">{wrapWithTranslation(option)}</button>)}
+            </div>
+            <button onClick={() => void submitAnswer(selectedWords.join(" "))} disabled={!selectedWords.length || Boolean(feedback) || submitting} className="w-full rounded-xl bg-blue-700 px-5 py-3 font-bold text-white disabled:opacity-40">Comprobar orden</button>
+          </div> : lesson.exerciseType === "matching" && lesson.options?.length ? <div className="mt-7 space-y-3">
+            {lesson.options.map((pair) => {
+              const left = pair.split("|")[0];
+              return <label key={pair} className="flex items-center gap-3 rounded-xl bg-slate-50 p-3 text-sm">
+                <span className="min-w-0 flex-1 font-semibold">{wrapWithTranslation(left)}</span>
+                <select value={matchingPairs[left] || ""} disabled={Boolean(feedback) || submitting} onChange={(event) => setMatchingPairs((current) => ({ ...current, [left]: event.target.value }))} className="max-w-[55%] rounded-lg border border-slate-300 bg-white p-2">
+                  <option value="">Elige definición</option>
+                  {lesson.options!.map((item) => <option key={item} value={item.split("|")[1]}>{item.split("|")[1]}</option>)}
+                </select>
+              </label>;
+            })}
+            <button onClick={() => void submitAnswer(lesson.options!.map((pair) => pair.split("|")[0] + "=" + (matchingPairs[pair.split("|")[0]] || "")).join(","))} disabled={Object.keys(matchingPairs).length !== lesson.options.length || Boolean(feedback) || submitting} className="w-full rounded-xl bg-blue-700 px-5 py-3 font-bold text-white disabled:opacity-40">Comprobar parejas</button>
+          </div> : lesson.options?.length ? <div className="mt-7 grid gap-3 sm:grid-cols-2">
             {lesson.options.map((option) => <button key={option} disabled={Boolean(feedback) || submitting} onClick={() => { setAnswer(option); void submitAnswer(option); }} className="rounded-2xl border-2 border-slate-200 p-4 text-left font-semibold transition hover:border-blue-400 hover:bg-blue-50 disabled:opacity-60">{wrapWithTranslation(option)}</button>)}
           </div> : <div className="mt-7 flex gap-2">
             <input value={answer} disabled={Boolean(feedback) || submitting} onChange={(event) => setAnswer(event.target.value)} onKeyDown={(event) => { if (event.key === "Enter") void submitAnswer(); }} placeholder="Escribe tu respuesta…" className="min-w-0 flex-1 rounded-xl border border-slate-300 px-4 py-3" />
@@ -195,8 +220,8 @@ export default function AprenderPage() {
           </div>}
           {feedback && <div className={"mt-7 rounded-2xl p-5 " + (feedback.correct ? "bg-emerald-50 text-emerald-950" : "bg-rose-50 text-rose-950")}>
             <p className="text-lg font-black">{feedback.correct ? "¡Muy bien! +XP" : "Sigue intentándolo"}</p>
-            {!feedback.correct && <p className="mt-2 text-sm">Respuesta correcta: <strong>{feedback.correctAnswer}</strong></p>}
-            {feedback.explanation && <p className="mt-2 text-sm">{feedback.explanation}</p>}
+            {!feedback.correct && <p className="mt-2 text-sm">Respuesta correcta: <strong>{wrapWithTranslation(feedback.correctAnswer)}</strong></p>}
+            {feedback.explanation && <p className="mt-2 text-sm">{wrapWithTranslation(feedback.explanation)}</p>}
             <button onClick={() => void loadNext()} className="mt-4 w-full rounded-xl bg-slate-950 px-5 py-3 font-bold text-white">Continuar →</button>
           </div>}
           {error && <p className="mt-4 text-sm text-red-600">{error}</p>}
