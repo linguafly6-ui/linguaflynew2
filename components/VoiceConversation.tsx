@@ -640,7 +640,7 @@ export default function VoiceConversation({ scenario, userId = "demo-user", onCo
       const firstWord = wordListRef.current[0];
 
       // Mensaje de inicio del tutor.
-      const isB1 = (scenario.id.startsWith("b1-speaking-") || scenario.id.startsWith("b2-speaking-"));
+      const isB1 = (scenario.id.startsWith("b1-speaking-") || scenario.id.startsWith("b2-speaking-") || scenario.id.startsWith("c1-speaking-"));
       const isB1Conversation = isB1ConversationUnit(scenario.id);
       const speakingLevel = scenario.id.startsWith("c1-speaking-") ? "C1" : scenario.id.startsWith("b2-speaking-") ? "B2" : "B1";
       const isSentenceBuilder = isSentenceBuilderUnit(scenario.id);
