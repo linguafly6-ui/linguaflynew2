@@ -34,12 +34,17 @@ export async function POST(request: NextRequest) {
       const currentStep = Math.max(1, Math.min(Number(session.current_step || 1), totalSteps));
       const personaPrompt = "You are a structured English language teacher. Follow the supplied lesson script exactly.";
       const context = JSON.stringify({ scriptJson: session.script_json, currentStep });
-      const result = await chatWithPersona(await loadSessionMessages(env.DB, sessionId), personaPrompt, "en", lesson.level || "A1", context);
-      const marker = result.content.match(/\[STEP:\s*(\d+)\]/i);
-      const done = /\[DONE\]/i.test(result.content);
+      const history = await loadSessionMessages(env.DB, sessionId);
+      let attempts = 0;
+      for (let index = history.length - 1; index >= 0 && history[index].role === "user"; index--) attempts++;
+      const result = await chatWithPersona(history, personaPrompt, "en", lesson.level || "A1", context);
+      const marker = result.content.match(/\\[STEP:\\s*(\\d+)\\]/i);
+      const done = /\\[DONE\\]/i.test(result.content);
       const suggestedStep = marker ? Number(marker[1]) : currentStep;
-      const nextStep = suggestedStep === currentStep + 1 ? currentStep + 1 : currentStep;
-      const completed = done && currentStep === totalSteps;
+      let nextStep = suggestedStep === currentStep + 1 ? currentStep + 1 : currentStep;
+      if (result.correction && attempts >= 3 && currentStep < totalSteps) nextStep = currentStep + 1;
+      const acceptedFinalAnswer = currentStep === totalSteps && !result.correction;
+      const completed = currentStep === totalSteps && (done || acceptedFinalAnswer || (Boolean(result.correction) && attempts >= 3));
       const stepAdvanced = nextStep > currentStep;
       const speechLine = completed
         ? "Well done! You've completed this unit."
