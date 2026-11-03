@@ -22,8 +22,6 @@ type CreateStudentResponse = {
 export default function AdminCreateStudentPage() {
   const [adminKey, setAdminKey] = useState("");
   const [email, setEmail] = useState("");
-  const [password, setPassword] = useState("");
-  const [confirmPassword, setConfirmPassword] = useState("");
   const [fullName, setFullName] = useState("");
   const [plan, setPlan] = useState<Plan>("pro_test");
   const [notes, setNotes] = useState("");
@@ -62,20 +60,18 @@ export default function AdminCreateStudentPage() {
   const handleSubmit = async (event: React.FormEvent<HTMLFormElement>) => {
     event.preventDefault();
     setError("");
-    if (password !== confirmPassword) { setError("Las contraseñas no coinciden."); return; }
-    if (password.length < 8) { setError("La contraseña debe tener al menos 8 caracteres."); return; }
     if (emailAvailable === false) { setError("Ya existe una cuenta con este email."); return; }
     setLoading(true);
     try {
       const response = await fetch("/api/admin/students/create", {
         method: "POST",
         headers: { "Content-Type": "application/json", "x-admin-key": adminKey },
-        body: JSON.stringify({ email, password, plan, fullName, notes, expiresAt: plan === "pro_test" ? expiresAt : "" }),
+        body: JSON.stringify({ email, plan, fullName, notes, expiresAt: plan === "pro_test" ? expiresAt : "" }),
       });
       const data = await response.json() as CreateStudentResponse;
       if (!response.ok) throw new Error(data.error || "No se pudo crear la cuenta.");
       setCreated(data);
-      setEmail(""); setPassword(""); setConfirmPassword(""); setFullName(""); setNotes(""); setExpiresAt(""); setEmailAvailable(null);
+      setEmail(""); setFullName(""); setNotes(""); setExpiresAt(""); setEmailAvailable(null);
     } catch (err) {
       setError(err instanceof Error ? err.message : "No se pudo crear la cuenta.");
     } finally { setLoading(false); }
@@ -89,12 +85,12 @@ export default function AdminCreateStudentPage() {
       <header className="mb-7">
         <p className="text-xs font-bold uppercase tracking-[0.18em] text-blue-600">Administración · Alumnos</p>
         <h1 className="mt-2 text-3xl font-black text-slate-900">Crear cuenta de alumno</h1>
-        <p className="mt-2 max-w-2xl text-slate-600">Crea cuentas Free, Pro o Pro de prueba. Las cuentas Pro de prueba tienen acceso completo sin Stripe.</p>
+        <p className="mt-2 max-w-2xl text-slate-600">Crea cuentas Free, Pro o Pro de prueba. Enviaremos al alumno una contraseña temporal por email. Las cuentas Pro de prueba tienen acceso completo sin Stripe.</p>
       </header>
 
       {created && <section className="mb-6 rounded-2xl border border-green-200 bg-green-50 p-5">
         <p className="font-bold text-green-900">✓ {created.message}</p>
-        <p className="mt-1 text-sm text-green-800">Email: {created.email} · ID: {created.studentId}</p>
+        <p className="mt-1 text-sm text-green-800">Email: {created.email} · ID: {created.studentId}</p><p className="mt-2 text-sm font-semibold text-green-800">Hemos enviado la contraseña temporal al correo del alumno.</p>
         <div className="mt-4 flex flex-wrap gap-4 text-sm"><Link href="/admin/alumnos" className="font-bold text-green-800 underline">Ver cuentas de alumnos →</Link><button type="button" onClick={() => setCreated(null)} className="font-semibold text-green-800 underline">Crear otra cuenta</button></div>
       </section>}
 
@@ -112,14 +108,6 @@ export default function AdminCreateStudentPage() {
           <div className="sm:col-span-2">
             <label htmlFor="student-name" className="mb-2 block text-sm font-bold text-slate-700">Nombre completo <span className="font-normal text-slate-400">(opcional)</span></label>
             <input id="student-name" value={fullName} onChange={e => setFullName(e.target.value)} maxLength={120} placeholder="Nombre y apellidos" className="w-full rounded-xl border border-slate-300 px-4 py-3 outline-none focus:border-blue-500 focus:ring-4 focus:ring-blue-100"/>
-          </div>
-          <div>
-            <label htmlFor="student-password" className="mb-2 block text-sm font-bold text-slate-700">Contraseña</label>
-            <input id="student-password" type="password" required minLength={8} maxLength={256} autoComplete="new-password" value={password} onChange={e => setPassword(e.target.value)} placeholder="Mínimo 8 caracteres" className="w-full rounded-xl border border-slate-300 px-4 py-3 outline-none focus:border-blue-500 focus:ring-4 focus:ring-blue-100"/>
-          </div>
-          <div>
-            <label htmlFor="student-confirm" className="mb-2 block text-sm font-bold text-slate-700">Confirmar contraseña</label>
-            <input id="student-confirm" type="password" required minLength={8} maxLength={256} autoComplete="new-password" value={confirmPassword} onChange={e => setConfirmPassword(e.target.value)} placeholder="Repite la contraseña" className="w-full rounded-xl border border-slate-300 px-4 py-3 outline-none focus:border-blue-500 focus:ring-4 focus:ring-blue-100"/>
           </div>
         </section>
 
