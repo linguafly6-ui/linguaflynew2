@@ -6,7 +6,7 @@ import { TRANSLATION_STOPWORDS } from "@/components/T";
 type Tooltip = { word: string; translation: string; x: number; y: number } | null;
 
 function decorateKeywords(html: string) {
-  return html.replace(/<(strong|em|h2|h3|li)\b([^>]*)>([\s\S]*?)<\/\1>/gi, (_match, tag: string, attrs: string, inner: string) => {
+  return html.replace(/<(strong|em|code)\b([^>]*)>([\s\S]*?)<\/\1>/gi, (_match, tag: string, attrs: string, inner: string) => {
     const enhanced = inner.replace(/(^|>)([^<>]+)(?=<|$)/g, (_text, prefix: string, plain: string) => {
       const words = plain.replace(/\b[A-Za-z][A-Za-z'’-]*\b/g, (word) => {
         if (TRANSLATION_STOPWORDS.has(word.toLowerCase())) return word;
