@@ -9,7 +9,9 @@ const courses: Record<string,number> = {
 
 export async function GET(request: NextRequest) {
   try {
-    const db = getEnv().COURSE_DB;\n    if (!db) return NextResponse.json({ error: "Base de datos de cursos no disponible." }, { status: 503 });\n    const student = await getStudent(request);
+    const db = getEnv().COURSE_DB;
+    if (!db) return NextResponse.json({ error: "Base de datos de cursos no disponible." }, { status: 503 });
+    const student = await getStudent(request);
     if (!student) return NextResponse.json({ error: "Inicia sesión para consultar tu progreso." }, { status: 401 });
     const db = getEnv().COURSE_DB;
     if (!db) return NextResponse.json({ error: "Base de datos de cursos no disponible." }, { status: 503 });
