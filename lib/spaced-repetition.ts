@@ -1,4 +1,5 @@
-﻿import { getEnv } from "./cf-context";\nimport { checkAiRateLimit } from "./ai-helpers";
+﻿import { getEnv } from "./cf-context";
+import { checkAiRateLimit } from "./ai-helpers";
 
 /**
  * ============================================================
@@ -171,7 +172,8 @@ export async function generateAdaptiveContent(
 La frase debe ser apta para nivel ${userLevel}.
 Devuelve SOLO la frase, sin explicaciones ni traducciÃ³n.`;
 
-  if (!(await checkAiRateLimit("spaced-repetition"))) throw new Error("AI_RATE_LIMITED");\n  const response = await env.AI.run(CHAT_MODEL as any, {
+  if (!(await checkAiRateLimit("spaced-repetition"))) throw new Error("AI_RATE_LIMITED");
+  const response = await env.AI.run(CHAT_MODEL as any, {
     messages: [
       { role: "system", content: "Eres un asistente que genera frases de ejemplo para aprender idiomas. Responde SOLO con la frase, nada mÃ¡s." },
       { role: "user", content: prompt },
