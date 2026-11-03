@@ -110,8 +110,8 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
       title,
       description,
       alternates: { canonical },
-      openGraph: { type: "website", title, description, url: `https://linguafly.app${canonical}`, siteName: "Linguafly" },
-      twitter: { card: "summary_large_image", title, description },
+      openGraph: { type: "website", title, description, url: `https://linguafly.app${canonical}`, siteName: "Linguafly", images: [{ url: "/opengraph-image", width: 1200, height: 630, alt: "Linguafly — Aprende inglés con IA conversacional" }] },
+      twitter: { card: "summary_large_image", title, description, images: ["/opengraph-image"] },
     };
   }
 
@@ -128,7 +128,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     title,
     description,
     alternates: { canonical },
-    openGraph: { type: "article", title, description, url: canonical, siteName: "Linguafly" },
-    twitter: { card: "summary_large_image", title, description },
+    openGraph: { type: "article", title, description, url: canonical, siteName: "Linguafly", images: [{ url: "/opengraph-image", width: 1200, height: 630, alt: "Linguafly — Aprende inglés con IA conversacional" }] },
+    twitter: { card: "summary_large_image", title, description, images: ["/opengraph-image"] },
   };
 }
