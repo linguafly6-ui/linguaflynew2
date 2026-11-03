@@ -216,7 +216,7 @@ export default function ConversationPractice({ userId = "demo-user", initialScen
         return;
       }
 
-      setSelectedScenario(scenario);
+      setSelectedScenario(data.scenario ? { ...scenario, ...data.scenario } : scenario);
       setSessionId(data.sessionId);
       setMessages([{ role: "assistant", content: data.openingLine }]);
       void speakMessage(data.openingLine, scenario.language);
@@ -230,7 +230,21 @@ export default function ConversationPractice({ userId = "demo-user", initialScen
   useEffect(() => {
     if (initialScenarioId && !selectedScenario && scenarios.length > 0) {
       const courseScenario = scenarios.find((scenario) => scenario.id === initialScenarioId);
-      if (courseScenario) void startConversation(courseScenario);
+      if (courseScenario) {
+        void startConversation(courseScenario);
+      } else if (initialScenarioId.includes("-speaking-")) {
+        const level = initialScenarioId.split("-")[0].toUpperCase();
+        void startConversation({
+          id: initialScenarioId,
+          title: "Speaking " + level,
+          description: "Practica la conversación de esta unidad.",
+          setting: "Práctica guiada",
+          language: "en",
+          level,
+          persona_prompt: "You are a patient English speaking tutor. Keep your replies concise, encourage the student to speak in English, and explain corrections in Spanish.",
+          opening_line: "Hello! Let's practise English together."
+        });
+      }
     }
   }, [initialScenarioId, scenarios, selectedScenario]);
 
@@ -247,6 +261,7 @@ export default function ConversationPractice({ userId = "demo-user", initialScen
       const data = await response.json() as any;
       if (!response.ok || data.error) throw new Error(data.error || "No se pudo evaluar la conversación");
       setCompletionResult(data);
+      if (initialScenarioId && initialScenarioId.includes("-speaking-")) onCourseCompleted?.();
     } catch (err) {
       setError(err instanceof Error ? err.message : "Error al evaluar la conversación");
     } finally {
