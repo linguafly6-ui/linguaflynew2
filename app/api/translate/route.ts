@@ -20,7 +20,9 @@ export async function POST(request: NextRequest) {
     const db = env.COURSE_DB || env.DB;
     if (!db) return NextResponse.json({ error: "Base de datos no disponible." }, { status: 503 });
 
-    const key = word.toLocaleLowerCase("en");
+    const key = "v2:" + word.toLocaleLowerCase("en");
+    const startsWithTo = /^to\s+/i.test(word);
+    const translationInput = startsWithTo ? word.replace(/^to\s+/i, "").trim() : word;
     const id = await cacheId(key);
     const cached = await db.prepare("SELECT translation FROM translation_cache WHERE id = ?").bind(id).first() as { translation?: string } | null;
     if (cached?.translation) return NextResponse.json({ translation: cached.translation, word });
@@ -28,8 +30,8 @@ export async function POST(request: NextRequest) {
     if (!env.AI?.run) return NextResponse.json({ error: "Servicio de traducción no disponible." }, { status: 503 });
     const result = await env.AI.run(MODEL as any, {
       messages: [
-        { role: "system", content: "Translate the following English word/phrase to Spanish. Return ONLY the translation, nothing else." },
-        { role: "user", content: word }
+        { role: "system", content: startsWithTo ? "Translate this English verb as a Spanish infinitive ending in -ar, -er, or -ir. Do not translate it as a noun. Return ONLY the infinitive." : "Translate the English word or phrase to Spanish. Consider grammatical function and context. Verbs must be infinitives (trabajar, comer, vivir); nouns must be nouns (trabajo, comida, vida). If an isolated word is ambiguous between verb and noun, return both as infinitive (verbo) / noun (sustantivo). Return ONLY the translation." },
+        { role: "user", content: translationInput }
       ],
       max_tokens: 100,
       temperature: 0.1
