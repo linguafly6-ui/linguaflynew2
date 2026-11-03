@@ -77,13 +77,13 @@ export default function T({ children, className = "" }: TProps) {
 }
 
 export function wrapWithTranslation(text: string) {
-  const parts = text.split(/(\\s+|[A-Za-z]+)/g).filter(Boolean);
+  const parts = text.split(/(\s+|[A-Za-z]+)/g).filter(Boolean);
   const output: ReactNode[] = [];
   for (let index = 0; index < parts.length; index++) {
     const part = parts[index];
     const next = parts[index + 1];
     const afterNext = parts[index + 2];
-    if (part.toLowerCase() === "to" && /^\\s+$/.test(next || "") && afterNext && TRANSLATABLE.has(afterNext.toLowerCase())) {
+    if (part.toLowerCase() === "to" && /^\s+$/.test(next || "") && afterNext && TRANSLATABLE.has(afterNext.toLowerCase())) {
       output.push(<T key={index}>{part + next + afterNext}</T>);
       index += 2;
     } else if (/^[A-Za-z]+$/.test(part) && !STOPWORDS.has(part.toLowerCase())) {
