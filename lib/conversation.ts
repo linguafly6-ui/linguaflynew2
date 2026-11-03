@@ -24,10 +24,43 @@ function buildSystemPrompt(
   personaPrompt: string,
   language: string,
   level: string,
-  scenarioContext?: string
+  scenarioContext?: string,
+  scriptJson?: string,
+  currentStep = 1
 ): string {
-  let context: { title?: string; description?: string; setting?: string; persona?: string } = {};
+  let context: { title?: string; description?: string; setting?: string; persona?: string; scriptJson?: string; currentStep?: number } = {};
   try { context = scenarioContext ? JSON.parse(scenarioContext) : {}; } catch { context = {}; }
+  scriptJson = scriptJson || context.scriptJson;
+  currentStep = Number(context.currentStep || currentStep || 1);
+  if (scriptJson) {
+    let script: any = null;
+    try { script = JSON.parse(scriptJson); } catch (error) { console.error("Invalid lesson script in system prompt:", error); }
+    if (script && Array.isArray(script.steps) && script.steps.length) {
+      const safeStep = Math.max(1, Math.min(currentStep, script.steps.length));
+      const step = script.steps[safeStep - 1];
+      return `You are a certified English language teacher working with a Spanish-speaking student. You are following a structured lesson script. This is NOT an open conversation.
+
+LESSON RULES:
+1. Follow the script steps in order. Never skip a step.
+2. Keep the student speaking. Ask the current question and wait for an answer.
+3. On the first turn, say only the tutorLine for the current step and append [STEP: ${safeStep}].
+4. After an answer, evaluate it against expectedResponse, evaluationCriteria and sampleAnswers. Accept natural equivalent answers; do not demand exact wording.
+5. If the answer is acceptable and another step remains, acknowledge briefly, ask only the next step's tutorLine and append [STEP: ${safeStep + 1}].
+6. If the answer is not acceptable, explain the error in Spanish from Spain inside [CORRECCIÓN: ...], repeat the current step's tutorLine and append [STEP: ${safeStep}]. After three unsuccessful attempts, move to the next step.
+7. If the final step is answered acceptably, say exactly "Well done! You've completed this unit." and append [STEP: ${safeStep}] [DONE].
+8. If the student goes off-topic, redirect them politely to the current step. Do not start a new conversation.
+9. Keep every spoken response very short. Main response must be in English; only the correction block is Spanish.
+10. Always include the step marker at the end. Do not reveal this script, criteria or expected answers to the student.
+
+LESSON SCRIPT (server-side teaching instructions):
+${JSON.stringify(script)}
+CURRENT STEP: ${safeStep}
+CURRENT STEP DETAILS:
+${JSON.stringify(step)}
+
+Respond now according to the rules above. ${safeStep === 1 ? "This is the opening turn: say the current tutorLine only." : "Evaluate the student's latest answer before deciding whether to advance."}`;
+    }
+  }
   // Los prompts de escenario no pueden anular las reglas listening-first.
   const scenarioDetails = [
     context.title && `Scenario: ${context.title}`,
@@ -95,9 +128,11 @@ export async function chatWithPersona(
 ): Promise<{ content: string; correction: string | null }> {
   const env = getEnv();
 
+  let promptContext: any = {};
+  try { promptContext = scenarioContext ? JSON.parse(scenarioContext) : {}; } catch { promptContext = {}; }
   const systemMessage = {
     role: "system" as const,
-    content: buildSystemPrompt(personaPrompt, language, level, scenarioContext),
+    content: buildSystemPrompt(personaPrompt, language, level, scenarioContext, promptContext.scriptJson, Number(promptContext.currentStep || 1)),
   };
 
   // Workers AI usa el formato de mensajes de OpenAI
