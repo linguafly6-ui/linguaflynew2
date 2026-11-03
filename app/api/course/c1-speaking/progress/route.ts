@@ -18,7 +18,7 @@ export async function POST(req: NextRequest) {
     if (!db) return NextResponse.json({ error:"Base de datos no disponible." },{status:503});
     const unitNumber = rawId;
     if (!unitNumber) return NextResponse.json({ error:"Unidad no encontrada" },{status:404});
-    if (unitNumber > 5 && student.plan !== "pro") return NextResponse.json({ error:"Pro required" },{status:403});
+    if (unitNumber > 5 && student.plan !== "pro" && student.plan !== "pro_test") return NextResponse.json({ error:"Pro required" },{status:403});
     const userId = studentUserId(student);
     if (unitNumber > 6) {
       const previous = await db.prepare("SELECT score,completed FROM c1_speaking_progress WHERE user_id=? AND unit_id=?")
