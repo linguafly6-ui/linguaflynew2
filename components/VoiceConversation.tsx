@@ -14,6 +14,33 @@ interface VoiceScenario {
   system_prompt?: string;
 }
 interface VoiceMessage { role: "assistant" | "user"; content: string; correction?: string | null; }
+
+function extractEnglishPhrase(text: string): { spanishText: string; englishPhrase: string | null } {
+  const match = text.match(/\[ENGLISH:\s*(.+?)\]/i);
+  if (match) {
+    const englishPhrase = match[1].trim();
+    const spanishText = text.replace(/\[ENGLISH:\s*.+?\]/i, "").trim();
+    return { spanishText, englishPhrase };
+  }
+  return { spanishText: text, englishPhrase: null };
+}
+
+function getVisibleTutorText(text: string): string {
+  const { spanishText, englishPhrase } = extractEnglishPhrase(text);
+  return [spanishText, englishPhrase].filter(Boolean).join("\n");
+}
+
+const VOICE_PRACTICE_INSTRUCTIONS = "INSTRUCCIONES IMPORTANTES PARA LA PRÁCTICA DE PRONUNCIACIÓN:\n" +
+  "1. Responde SIEMPRE en castellano (español), incluso cuando el alumno hable en inglés.\n" +
+  "2. Incluye la única palabra o frase en inglés que el alumno debe practicar usando exactamente este formato: [ENGLISH: palabra o frase en inglés].\n" +
+  "3. Incluye SOLO UNA palabra o frase en inglés por mensaje y no escribas otras palabras en inglés fuera de ese marcador.\n" +
+  "4. Da todas las instrucciones, explicaciones, felicitaciones y feedback de pronunciación en castellano.\n" +
+  "5. Si el alumno pronunció bien, felicítalo en castellano y presenta la siguiente palabra o frase para practicar.\n" +
+  "6. Si el alumno se equivocó, anímalo en castellano a intentarlo de nuevo e incluye de nuevo la palabra o frase objetivo.\n" +
+  "7. Mantén las respuestas concisas: 1-2 frases en castellano más el marcador [ENGLISH: ...].\n" +
+  "8. No incluyas pronunciación figurada ni transcripciones fonéticas; el audio de la frase marcada servirá como modelo.\n" +
+  "Ejemplo: ¡Muy bien! Ahora intenta con: [ENGLISH: Good morning].";
+
 type Phase = "idle" | "speaking" | "listening" | "processing" | "thinking" | "completed";
 
 export default function VoiceConversation({ scenario, userId = "demo-user", onCourseCompleted }: { scenario: VoiceScenario; userId?: string; onCourseCompleted?: () => void }) {
@@ -212,10 +239,6 @@ export default function VoiceConversation({ scenario, userId = "demo-user", onCo
         let sum = 0;
         for (let index = 0; index < samples.length; index++) { const normalized = (samples[index] - 128) / 128; sum += normalized * normalized; }
         const volume = Math.sqrt(sum / samples.length);
-        // Debug temporal — eliminar cuando funcione
-        if (Math.random() < 0.1) {
-          console.log("Volumen actual:", volume.toFixed(4), "Umbral:", VOICE_THRESHOLD, "Detectado:", voiceStartedRef.current);
-        }
         const now = Date.now();
         const elapsed = now - listeningStartedRef.current;
         if (volume > VOICE_THRESHOLD) {
@@ -278,46 +301,65 @@ export default function VoiceConversation({ scenario, userId = "demo-user", onCo
     if (!activeRef.current || !text.trim()) return;
     lastSpokenRef.current = text;
     setRevealedText("");
+    setPhase("speaking");
+    setNotice(null);
+    setHint(null);
+
+    const { englishPhrase } = extractEnglishPhrase(text);
+    const visibleText = getVisibleTutorText(text);
+
+    // Mostrar instrucciones y feedback en castellano; la frase inglesa también queda visible.
     if (subtitleTimerRef.current !== null) window.clearInterval(subtitleTimerRef.current);
     let visibleCharacters = 0;
     subtitleTimerRef.current = window.setInterval(() => {
-      visibleCharacters = Math.min(text.length, visibleCharacters + 2);
-      setRevealedText(text.slice(0, visibleCharacters));
-      if (visibleCharacters >= text.length && subtitleTimerRef.current !== null) {
+      visibleCharacters = Math.min(visibleText.length, visibleCharacters + 2);
+      setRevealedText(visibleText.slice(0, visibleCharacters));
+      if (visibleCharacters >= visibleText.length && subtitleTimerRef.current !== null) {
         window.clearInterval(subtitleTimerRef.current);
         subtitleTimerRef.current = null;
       }
     }, 28);
-    setPhase("speaking");
-    setNotice(null);
-    setHint(null);
-    try {
-      const response = await conversationFetch("/api/conversation/voice-output", {
-        method: "POST", headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({ text, language: scenario.language }),
-      });
-      if (!response.ok) throw new Error("TTS no disponible");
-      const blob = await response.blob();
-      if (!blob.size) throw new Error("Audio vacío");
-      if (!activeRef.current) return;
-      if (audioUrlRef.current) URL.revokeObjectURL(audioUrlRef.current);
-      const url = URL.createObjectURL(blob);
-      audioUrlRef.current = url;
-      const audio = new Audio(url);
-      audioRef.current = audio;
-      await new Promise<void>((resolve, reject) => {
-        audio.onended = () => resolve();
-        audio.onerror = () => reject(new Error("No se pudo reproducir el audio"));
-        audio.play().catch(reject);
-      });
-    } catch {
-      // No alternar a speechSynthesis: mantener la misma voz MeloTTS durante la sesión.
-      if (activeRef.current) setError("No se pudo generar la voz de la conversación. Puedes continuar leyendo los subtítulos.");
+
+    // Solo reproducir el fragmento inglés marcado. El texto del tutor nunca se envía al TTS.
+    if (englishPhrase) {
+      try {
+        const response = await conversationFetch("/api/conversation/voice-output", {
+          method: "POST", headers: { "Content-Type": "application/json" },
+          body: JSON.stringify({ text: englishPhrase, language: "en" }),
+        });
+        if (!response.ok) throw new Error("TTS no disponible");
+        const blob = await response.blob();
+        if (!blob.size) throw new Error("Audio vacío");
+        if (!activeRef.current) return;
+        if (audioUrlRef.current) URL.revokeObjectURL(audioUrlRef.current);
+        const url = URL.createObjectURL(blob);
+        audioUrlRef.current = url;
+        const audio = new Audio(url);
+        audioRef.current = audio;
+        await new Promise<void>((resolve, reject) => {
+          audio.onended = () => resolve();
+          audio.onerror = () => reject(new Error("No se pudo reproducir el audio"));
+          audio.play().catch(reject);
+        });
+      } catch {
+        if (activeRef.current) setError("No se pudo generar el audio de la palabra en inglés.");
+      }
     }
-    if (subtitleTimerRef.current !== null) { window.clearInterval(subtitleTimerRef.current); subtitleTimerRef.current = null; }
-    setRevealedText(text);
-    if (activeRef.current) beginListening();
-  }, [beginListening, scenario.language, conversationFetch]);
+
+    if (subtitleTimerRef.current !== null) {
+      window.clearInterval(subtitleTimerRef.current);
+      subtitleTimerRef.current = null;
+    }
+    setRevealedText(visibleText);
+
+    // Solo se abre el micrófono cuando hay una frase inglesa concreta que repetir.
+    if (englishPhrase && activeRef.current) {
+      await beginListening();
+    } else if (activeRef.current) {
+      activeRef.current = false;
+      setPhase("idle");
+    }
+  }, [beginListening, conversationFetch]);
 
   const answerStudent = useCallback(async (message: string) => {
     if (!activeRef.current || !sessionRef.current) return;
@@ -328,14 +370,14 @@ export default function VoiceConversation({ scenario, userId = "demo-user", onCo
         body: JSON.stringify({
           sessionId: sessionRef.current,
           message,
-          personaPrompt: scenario.persona_prompt,
+          personaPrompt: scenario.persona_prompt + "\n\n" + VOICE_PRACTICE_INSTRUCTIONS,
           scenarioContext: {
             id: scenario.id,
             title: scenario.title,
             description: scenario.description || "",
             setting: scenario.setting || "",
             persona: scenario.persona_prompt,
-            system_prompt: scenario.system_prompt || undefined,
+            system_prompt: (scenario.system_prompt || scenario.persona_prompt) + "\n\n" + VOICE_PRACTICE_INSTRUCTIONS,
           },
           language: scenario.language,
           level: scenario.level,
@@ -374,8 +416,12 @@ export default function VoiceConversation({ scenario, userId = "demo-user", onCo
       sessionRef.current = data.sessionId;
       activeRef.current = true;
       const opening = String(data.openingLine || scenario.opening_line);
-      setMessages([{ role: "assistant", content: opening }]);
-      await speakLine(opening);
+      // Si el escenario no proporciona el marcador, usar una apertura española segura.
+      const formattedOpening = /\[ENGLISH:/i.test(opening)
+        ? opening
+        : "¡Bienvenido! Vamos a practicar inglés. Escucha y repite: [ENGLISH: Hello]";
+      setMessages([{ role: "assistant", content: formattedOpening }]);
+      await speakLine(formattedOpening);
     } catch (err) {
       cleanupAudioResources();
       releaseAudio();
@@ -458,7 +504,7 @@ export default function VoiceConversation({ scenario, userId = "demo-user", onCo
         {messages.map((message, index) => <div key={index} style={{ animation: "fade-in-up .35s ease-out" }} className={`flex ${message.role === "user" ? "justify-end" : "justify-start"}`}>
           <div className={`max-w-[80%] rounded-2xl p-4 shadow-sm ${message.role === "user" ? "bg-blue-600 text-white" : "bg-slate-100 text-slate-800"}`}>
             <p className="mb-1 text-[11px] font-bold opacity-65">{message.role === "user" ? "🧑 Alumno" : "🤖 LinguaFly"}</p>
-            <p className="whitespace-pre-wrap leading-relaxed">{index === messages.length - 1 && message.role === "assistant" && phase === "speaking" ? revealedText : message.content}</p>
+            <p className="whitespace-pre-wrap leading-relaxed">{index === messages.length - 1 && message.role === "assistant" && phase === "speaking" ? revealedText : message.role === "assistant" ? getVisibleTutorText(message.content) : message.content}</p>
             {message.correction && <div className="mt-3 rounded-xl border border-yellow-300 bg-yellow-50 p-3 text-sm text-yellow-950"><p className="mb-1 font-bold">📝 Corrección</p>{message.correction}</div>}
           </div>
         </div>)}
