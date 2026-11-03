@@ -78,5 +78,8 @@ export default function Page() {
       </div>}
     </div>
     {nextUnit&&<div className="fixed inset-x-0 bottom-4 z-20 flex justify-center px-4"><button type="button" onClick={()=>{setResuming(true);void open(nextUnit.id);}} disabled={opening} className="min-h-14 rounded-full bg-blue-600 px-7 py-3 text-base font-extrabold text-white shadow-xl shadow-blue-900/20 transition hover:bg-blue-700 disabled:opacity-70">{opening||resuming?"Cargando conversación...":"▶ Continuar donde lo dejé"}</button></div>}
+    <div className="mx-auto max-w-6xl p-6">
+      <VoiceConversation initialUnitId={1} />
+    </div>
   </main>;
 }
