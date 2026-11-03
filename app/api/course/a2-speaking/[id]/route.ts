@@ -23,7 +23,7 @@ export async function GET(req: NextRequest, { params }: { params: Promise<{ id: 
     const previous = student && unitNumber > 6
       ? await env.COURSE_DB.prepare("SELECT score,completed FROM a2_speaking_progress WHERE user_id=? AND unit_id=?").bind(userId, unitNumber - 1).first() as any
       : null;
-    const unlocked = unitNumber <= 5 || (student?.plan === "pro" && (unitNumber === 6 || Boolean(previous?.completed && Number(previous.score) >= 60)));
+    const unlocked = unitNumber <= 5 || ((student?.plan === "pro" || student?.plan === "pro_test") && (unitNumber === 6 || Boolean(previous?.completed && Number(previous.score) >= 60)));
     const moduleNumber = Math.ceil(unitNumber / 4);
     const title = A2_UNIT_TITLES[unitNumber - 1];
     return NextResponse.json({
