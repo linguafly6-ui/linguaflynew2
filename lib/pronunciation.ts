@@ -1,4 +1,4 @@
-import { getEnv } from "./cf-context";
+import { getEnv } from "./cf-context";\nimport { checkAiRateLimit } from "./ai-helpers";
 
 /**
  * ============================================================
@@ -28,10 +28,10 @@ export async function transcribeAudio(
     throw new Error("Cloudflare Workers AI binding (env.AI) is not available");
   }
 
-  const response = await env.AI.run(STT_MODEL as any, {
+  if (!(await checkAiRateLimit("pronunciation-stt"))) throw new Error("AI_RATE_LIMITED");\n  const response = await env.AI.run(STT_MODEL as any, {
     audio: [...new Uint8Array(audio)],
     task: "transcribe",
-    language: ({ english: "en", spanish: "es", french: "fr", german: "de", italian: "it", portuguese: "pt" } as Record<string, string>)[(language || "en").toLowerCase()] || (language || "en").toLowerCase().split("-")[0],
+    language: "en",
     vad_filter: false,
   });
 
@@ -120,7 +120,7 @@ export async function generateReferenceAudio(
     throw new Error("Cloudflare R2 binding (env.LINGUAFLY_MEDIA) is not available");
   }
 
-  const result = await env.AI.run(TTS_MODEL as any, {
+  if (!(await checkAiRateLimit("pronunciation-tts"))) throw new Error("AI_RATE_LIMITED");\n  const result = await env.AI.run(TTS_MODEL as any, {
     prompt: phrase,
     lang: "en",
   });
