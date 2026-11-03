@@ -1,7 +1,6 @@
 PRAGMA foreign_keys = ON;
 
--- Existing Stripe customer/subscription columns are retained; this records the paid interval.
-ALTER TABLE students ADD COLUMN billing_interval TEXT;
+-- billing_interval is included in the students_subscriptions.sql base schema.
 
 CREATE TABLE IF NOT EXISTS unified_progress (
   id INTEGER PRIMARY KEY AUTOINCREMENT,
