@@ -84,6 +84,25 @@ export async function GET(request: NextRequest) {
           progress: { completed: completedCount, total }
         });
       }
+      if (course !== "a1" && !lockedCourse) {
+        for (let unitNumber = 101; unitNumber <= 200; unitNumber++) {
+          if (student.plan !== "pro" && student.plan !== "pro_test") {
+            lockedCourse = { courseId: course, unitNumber };
+            break;
+          }
+          const speaking = await getSpeakingProgress(db, course, Number(student.id), unitNumber);
+          if (!speaking?.completed) {
+            return NextResponse.json({
+              type: "speaking",
+              courseId: course,
+              unitId: unitNumber,
+              scenarioId: course + "-speaking-" + unitNumber,
+              prompt: "Practica conversación en inglés para completar la unidad " + unitNumber + " de " + course.toUpperCase() + ".",
+              progress: { completed: 0, total: 1 }
+            });
+          }
+        }
+      }
     }
 
     if (lockedCourse) return NextResponse.json({ courseId: lockedCourse.courseId, unitNumber: lockedCourse.unitNumber, proRequired: true, message: "Has completado las unidades gratuitas. Desbloquea el resto de cursos con LinguaFly Pro." });
