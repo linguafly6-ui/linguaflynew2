@@ -71,25 +71,69 @@ export default function VoiceConversation({ scenario, userId = "demo-user", onCo
     if (monitorRef.current !== null) { window.clearInterval(monitorRef.current); monitorRef.current = null; }
   }, []);
 
-  const releaseAudio = useCallback(() => {
+  const cleanupAudioResources = useCallback((stopRecorder = true) => {
     stopMonitor();
-    if (subtitleTimerRef.current !== null) { window.clearInterval(subtitleTimerRef.current); subtitleTimerRef.current = null; }
+
     const recorder = recorderRef.current;
-    if (recorder && recorder.state !== "inactive") { discardRecordingRef.current = true; recorder.stop(); }
+    if (stopRecorder && recorder && recorder.state !== "inactive") {
+      discardRecordingRef.current = true;
+      recorder.stop();
+    }
     recorderRef.current = null;
-    streamRef.current?.getTracks().forEach((track) => track.stop());
-    streamRef.current = null;
+
+    const stream = streamRef.current;
+    if (stream) {
+      stream.getTracks().forEach((track) => track.stop());
+      streamRef.current = null;
+    }
+
     analyserRef.current = null;
-    if (contextRef.current) { void contextRef.current.close().catch(() => undefined); contextRef.current = null; }
+
+    const context = contextRef.current;
+    if (context) {
+      contextRef.current = null;
+      void context.close().catch(() => undefined);
+    }
+  }, [stopMonitor]);
+
+  const releaseAudio = useCallback(() => {
+    cleanupAudioResources();
+    if (subtitleTimerRef.current !== null) { window.clearInterval(subtitleTimerRef.current); subtitleTimerRef.current = null; }
     audioRef.current?.pause();
     audioRef.current = null;
     if (audioUrlRef.current) { URL.revokeObjectURL(audioUrlRef.current); audioUrlRef.current = null; }
     window.speechSynthesis?.cancel();
-  }, [stopMonitor]);
+  }, [cleanupAudioResources]);
 
-  const beginListening = useCallback(() => {
-    if (!activeRef.current || !streamRef.current || !analyserRef.current) return;
+  const beginListening = useCallback(async () => {
+    if (!activeRef.current) return;
     try {
+      // Cada turno obtiene recursos nuevos; los de la grabación anterior ya deben estar liberados.
+      cleanupAudioResources(false);
+      const stream = await navigator.mediaDevices.getUserMedia({
+        audio: { echoCancellation: true, noiseSuppression: true, autoGainControl: true },
+      });
+      if (!activeRef.current) {
+        stream.getTracks().forEach((track) => track.stop());
+        return;
+      }
+      streamRef.current = stream;
+
+      const AudioContextClass = window.AudioContext || (window as any).webkitAudioContext;
+      const context = new AudioContextClass();
+      contextRef.current = context;
+      const analyser = context.createAnalyser();
+      analyser.fftSize = 2048;
+      analyser.smoothingTimeConstant = 0.75;
+      context.createMediaStreamSource(stream).connect(analyser);
+      analyserRef.current = analyser;
+      await context.resume();
+
+      if (!activeRef.current) {
+        cleanupAudioResources(false);
+        return;
+      }
+
       chunksRef.current = [];
       voiceStartedRef.current = false;
       speechStartedAtRef.current = 0;
@@ -102,10 +146,21 @@ export default function VoiceConversation({ scenario, userId = "demo-user", onCo
       recorderRef.current = recorder;
       recorder.ondataavailable = (event) => { if (event.data.size > 0) chunksRef.current.push(event.data); };
       recorder.onstop = async () => {
-        if (discardRecordingRef.current || !activeRef.current) { discardRecordingRef.current = false; chunksRef.current = []; return; }
+        if (discardRecordingRef.current || !activeRef.current) {
+          discardRecordingRef.current = false;
+          chunksRef.current = [];
+          cleanupAudioResources(false);
+          return;
+        }
         const blob = new Blob(chunksRef.current, { type: recorder.mimeType || "audio/webm" });
         chunksRef.current = [];
-        if (!blob.size) { setNotice("No he podido oírte. Vamos otra vez."); if (activeRef.current) beginListening(); return; }
+        // El blob ya contiene los datos; liberar micrófono y AudioContext antes de llamar a la API.
+        cleanupAudioResources(false);
+        if (!blob.size) {
+          setNotice("No he podido oírte. Vamos otra vez.");
+          if (activeRef.current) void beginListening();
+          return;
+        }
         setPhase("processing");
         try {
           const form = new FormData();
@@ -120,9 +175,11 @@ export default function VoiceConversation({ scenario, userId = "demo-user", onCo
           setHint(null);
           await answerStudent(transcription);
         } catch (err) {
+          cleanupAudioResources(false);
           if (!activeRef.current) return;
           setError(err instanceof Error ? err.message : "Error al procesar tu voz");
           activeRef.current = false;
+          cleanupAudioResources();
           releaseAudio();
           setPhase("idle");
         }
@@ -192,12 +249,16 @@ export default function VoiceConversation({ scenario, userId = "demo-user", onCo
           if (recorder.state !== "inactive") recorder.stop();
         }
       }, 100);
-    } catch {
-      setError("No se pudo iniciar la escucha. Comprueba los permisos del micrófono.");
-      setPhase("idle");
+    } catch (err) {
+      cleanupAudioResources();
+      if (activeRef.current) {
+        activeRef.current = false;
+        setError(err instanceof Error ? err.message : "No se pudo iniciar la escucha. Comprueba los permisos del micrófono.");
+        setPhase("idle");
+      }
     }
   // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [scenario, stopMonitor, conversationFetch, releaseAudio]);
+  }, [scenario, stopMonitor, conversationFetch, releaseAudio, cleanupAudioResources, beginListening]);
 
   const speakLine = useCallback(async (text: string) => {
     if (!activeRef.current || !text.trim()) return;
@@ -288,18 +349,7 @@ export default function VoiceConversation({ scenario, userId = "demo-user", onCo
     setError(null);
     try {
       if (!navigator.mediaDevices?.getUserMedia || typeof MediaRecorder === "undefined") throw new Error("Este navegador no permite acceder al micrófono.");
-      const stream = await navigator.mediaDevices.getUserMedia({ audio: { echoCancellation: true, noiseSuppression: true, autoGainControl: true } });
-      if (startCancelledRef.current) { stream.getTracks().forEach((track) => track.stop()); return; }
-      streamRef.current = stream;
-      const AudioContextClass = window.AudioContext || (window as any).webkitAudioContext;
-      const context = new AudioContextClass();
-      contextRef.current = context;
-      const analyser = context.createAnalyser();
-      analyser.fftSize = 2048;
-      analyser.smoothingTimeConstant = 0.75;
-      context.createMediaStreamSource(stream).connect(analyser);
-      analyserRef.current = analyser;
-      await context.resume();
+      cleanupAudioResources();
       const response = await conversationFetch("/api/conversation/start", {
         method: "POST", headers: { "Content-Type": "application/json" },
         body: JSON.stringify({ scenarioId: scenario.id, userId }),
@@ -313,6 +363,7 @@ export default function VoiceConversation({ scenario, userId = "demo-user", onCo
       setMessages([{ role: "assistant", content: opening }]);
       await speakLine(opening);
     } catch (err) {
+      cleanupAudioResources();
       releaseAudio();
       activeRef.current = false;
       setError(err instanceof Error ? err.message : "No se pudo iniciar la conversación");
@@ -371,7 +422,13 @@ export default function VoiceConversation({ scenario, userId = "demo-user", onCo
     setPhase("idle");
   };
 
-  useEffect(() => () => { activeRef.current = false; startCancelledRef.current = true; abortConversationRequests(); releaseAudio(); }, [abortConversationRequests, releaseAudio]);
+  useEffect(() => () => {
+    activeRef.current = false;
+    startCancelledRef.current = true;
+    abortConversationRequests();
+    cleanupAudioResources();
+    releaseAudio();
+  }, [abortConversationRequests, cleanupAudioResources, releaseAudio]);
 
   const status = phase === "speaking" ? "🤖 Hablando..." : phase === "listening" ? "🔴 Te escucho... habla ahora" : phase === "processing" ? "⏳ Procesando..." : phase === "thinking" ? "🤖 Pensando..." : phase === "completed" ? "Conversación finalizada" : "Listo para hablar";
   const passed = Number(result?.score || 0) >= 60;
