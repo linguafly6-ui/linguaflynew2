@@ -33,7 +33,7 @@ export async function POST(request: NextRequest) {
     if (isCourseUnit) {
       const student = await getStudent(request);
       const unitNumber = Number(String(scenarioId).split("-").pop());
-      if (unitNumber > 5 && student?.plan !== "pro") {
+      if (unitNumber > 5 && student?.plan !== "pro" && student?.plan !== "pro_test") {
         return NextResponse.json({ error: "Pro required" }, { status: 403 });
       }
       if (student && studentUserId(student) !== userId) {
