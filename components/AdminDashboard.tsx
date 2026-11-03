@@ -34,7 +34,8 @@ export default function AdminDashboard(){
   const [loginError,setLoginError]=useState("");
   const [activeSection,setActiveSection]=useState<"overview"|"students"|"scenarios"|"learning">("overview");
   const [stats,setStats]=useState<Stats|null>(null);
-  const [learning,setLearning]=useState<any>(null);\n  const [openTicketCount,setOpenTicketCount]=useState(0);
+  const [learning,setLearning]=useState<any>(null);
+  const [openTicketCount,setOpenTicketCount]=useState(0);
   const [topStudents,setTopStudents]=useState<Student[]>([]);
   const [students,setStudents]=useState<Student[]>([]);
   const [scenarios,setScenarios]=useState<Scenario[]>([]);
@@ -58,7 +59,8 @@ export default function AdminDashboard(){
         api("/api/admin/dashboard"),api("/api/admin/students"),api("/api/admin/scenarios"),api("/api/admin/learning")
       ]);
       setStats(dash.stats);setTopStudents(dash.top_students||[]);
-      setStudents(studentData.students||[]);setScenarios(scenarioData.scenarios||[]);setLearning(learningData);\n      void api("/api/admin/tickets").then((ticketData:any)=>setOpenTicketCount(Number(ticketData.openCount||0))).catch(()=>{});
+      setStudents(studentData.students||[]);setScenarios(scenarioData.scenarios||[]);setLearning(learningData);
+      void api("/api/admin/tickets").then((ticketData:any)=>setOpenTicketCount(Number(ticketData.openCount||0))).catch(()=>{});
     }catch(error){
       setDataError(error instanceof Error?error.message:"No se pudieron cargar los datos");
       if(error instanceof Error&&error.message==="No autorizado")setAuthorized(false);
