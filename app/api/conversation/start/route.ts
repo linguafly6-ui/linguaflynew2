@@ -14,6 +14,10 @@ export async function POST(req:NextRequest){
   if(!scenarioId||!userId) return NextResponse.json({error:"Faltan parámetros"},{status:400});
   let scenario:any,opening:string;
   if(String(scenarioId).startsWith("a1-speaking-")){
+   if (!env.COURSE_DB) {
+    console.error("Bindings missing:", { hasCourseDB:!!env.COURSE_DB });
+    return NextResponse.json({error:"Configuración incompleta"},{status:500});
+   }
    const id=Number(String(scenarioId).slice(12)),student=await getStudent(req);
    if(!Number.isInteger(id)||id<1||id>200) return NextResponse.json({error:"Unidad no válida"},{status:400});
    if(id>5&&student?.plan!=="pro") return NextResponse.json({error:"Se requiere el plan Pro"},{status:403});
