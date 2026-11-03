@@ -45,20 +45,20 @@ function getVisibleTutorText(text: string): string {
   return [spanishText, englishPhrase].filter(Boolean).join("\n");
 }
 
-const VOICE_PRACTICE_INSTRUCTIONS = "⚠️ FORMATO OBLIGATORIO: Debes incluir la palabra o frase en inglés usando EXACTAMENTE este formato: [ENGLISH: palabra]. Sin este formato, el sistema no funcionará. NUNCA escribas palabras en inglés sin el marcador [ENGLISH: ...].\\n\\n" +
-  "1. Responde SIEMPRE en castellano (español).\\n" +
-  "2. Incluye UNA SOLA palabra o frase en inglés por mensaje usando el formato: [ENGLISH: palabra o frase].\\n" +
-  "3. NO escribas palabras en inglés fuera del marcador [ENGLISH: ...]. Si necesitas mencionar una palabra en inglés, ponla dentro del marcador.\\n" +
-  "4. Da todas las instrucciones, explicaciones, felicitaciones y feedback en castellano.\\n" +
-  "5. Si el alumno pronunció bien, felicítalo en castellano y da la SIGUIENTE palabra o frase nueva con [ENGLISH: ...]. No repitas la misma palabra.\\n" +
-  "6. Si el alumno se equivocó, anímalo en castellano a intentarlo de nuevo e incluye la misma palabra con [ENGLISH: ...].\\n" +
-  "7. Respuestas concisas: 1-2 frases en castellano + el marcador [ENGLISH: ...].\\n" +
-  "8. Ejemplos CORRECTOS:\\n" +
-  "   ¡Muy bien! Ahora intenta: [ENGLISH: Good morning]\\n" +
-  "   Escucha y repite: [ENGLISH: How are you]\\n" +
-  "   ¡Perfecto! Siguiente palabra: [ENGLISH: Thank you]\\n" +
-  "9. Ejemplo INCORRECTO (NO hagas esto):\\n" +
-  "   ¡Muy bien! Has dicho Hello correctamente. (Falta el marcador [ENGLISH: ...])\\n" +
+const VOICE_PRACTICE_INSTRUCTIONS = "⚠️ FORMATO OBLIGATORIO: Debes incluir la palabra o frase en inglés usando EXACTAMENTE este formato: [ENGLISH: palabra]. Sin este formato, el sistema no funcionará. NUNCA escribas palabras en inglés sin el marcador [ENGLISH: ...].\n\n" +
+  "1. Responde SIEMPRE en castellano (español).\n" +
+  "2. Incluye UNA SOLA palabra o frase en inglés por mensaje usando el formato: [ENGLISH: palabra o frase].\n" +
+  "3. NO escribas palabras en inglés fuera del marcador [ENGLISH: ...]. Si necesitas mencionar una palabra en inglés, ponla dentro del marcador.\n" +
+  "4. Da todas las instrucciones, explicaciones, felicitaciones y feedback en castellano.\n" +
+  "5. Si el alumno pronunció bien, felicítalo en castellano y da la SIGUIENTE palabra o frase nueva con [ENGLISH: ...]. No repitas la misma palabra.\n" +
+  "6. Si el alumno se equivocó, anímalo en castellano a intentarlo de nuevo e incluye la misma palabra con [ENGLISH: ...].\n" +
+  "7. Respuestas concisas: 1-2 frases en castellano + el marcador [ENGLISH: ...].\n" +
+  "8. Ejemplos CORRECTOS:\n" +
+  "   ¡Muy bien! Ahora intenta: [ENGLISH: Good morning]\n" +
+  "   Escucha y repite: [ENGLISH: How are you]\n" +
+  "   ¡Perfecto! Siguiente palabra: [ENGLISH: Thank you]\n" +
+  "9. Ejemplo INCORRECTO (NO hagas esto):\n" +
+  "   ¡Muy bien! Has dicho Hello correctamente. (Falta el marcador [ENGLISH: ...])\n" +
   "10. Avanza siempre a una palabra o frase NUEVA si el alumno acertó. No te quedes repitiendo la misma.";
 type Phase = "idle" | "speaking" | "listening" | "processing" | "thinking" | "completed";
 
