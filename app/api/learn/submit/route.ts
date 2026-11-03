@@ -67,7 +67,7 @@ export async function POST(request: NextRequest) {
 
     const speaking = await getSpeakingProgress(db, exercise.course_id, Number(student.id), Number(exercise.unit_number));
     const unitCompleted = exercisesCompleted && Boolean(speaking?.completed);
-    const nextExercise = correct ? (unitCompleted ? null : { type: exercisesCompleted ? "speaking" : "exercise" }) : null;
+    const nextExercise = correct ? (unitCompleted ? null : { type: exercisesCompleted || (completedCount >= 10 && !speaking?.completed) ? "speaking" : "exercise" }) : null;
     const totals = await db.prepare("SELECT xp_total,current_streak,longest_streak FROM learning_streaks WHERE student_id=?")
       .bind(student.id).first() as any;
     return NextResponse.json({
