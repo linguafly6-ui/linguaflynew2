@@ -629,6 +629,7 @@ export default function VoiceConversation({ scenario, userId = "demo-user", onCo
       });
       const data = await response.json() as any;
       if (startCancelledRef.current) return;
+      if (response.status === 401 && data.needAccount) { window.location.href = `/crear-cuenta?return=${encodeURIComponent(window.location.pathname)}`; return; }
       if (!response.ok || data.error) throw new Error(data.error || "No se pudo iniciar la conversación");
       sessionRef.current = data.sessionId;
       activeRef.current = true;
