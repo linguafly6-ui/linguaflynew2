@@ -27,7 +27,7 @@ export default function PreA1CoursePage() {
         if (!response.ok) return null;
         return await response.json();
       })
-      .then((data) => {
+      .then((data: any) => {
         if (!active || !data) return;
         setCompleted((data.progress ?? []).filter((item: { completed: number }) => Number(item.completed) === 1).map((item: { mission_number: number }) => Number(item.mission_number)));
         setProgressAvailable(true);

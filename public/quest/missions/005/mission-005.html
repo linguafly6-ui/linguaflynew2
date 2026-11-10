@@ -1,0 +1,144 @@
+<!doctype html><html lang="es"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Linguafly Quest · Mission 005 — My Toy Box</title><style>
+:root{--blue:#1685e8;--ink:#17345c;--purple:#7847d8;--green:#22b84d;--pale:#e9f8ff}*{box-sizing:border-box}body{margin:0;background:linear-gradient(135deg,#dff7ff,#fff7dc);font-family:'Trebuchet MS',Arial,sans-serif;color:var(--ink)}header{display:flex;align-items:center;gap:16px;padding:12px 2.5%;background:#fff9;border-bottom:3px solid #bce5ff;flex-wrap:wrap}.logo{font-weight:1000;font-size:clamp(22px,3vw,34px);color:#0759c7;text-shadow:1px 2px white}.mission{background:white;border:2px solid #9bd5ff;border-radius:18px;padding:10px 18px;font-weight:900}.steps{margin-left:auto;display:flex;gap:7px;flex-wrap:wrap}.step{border-radius:24px;background:#e8eef7;padding:10px 14px;font-weight:900}.step.active{background:#1fbd58;color:white}.stats{background:white;border:2px solid #b8dcff;border-radius:20px;padding:9px 13px;font-weight:900}.layout{display:grid;grid-template-columns:minmax(0,1.65fr) minmax(310px,.85fr);gap:16px;padding:16px 2.5%;max-width:1600px;margin:auto}.sceneWrap{position:relative;border:5px solid white;border-radius:24px;overflow:hidden;box-shadow:0 5px 18px #5488a533;background:#ffe7bf;align-self:start}.scene{display:block;width:100%;height:auto}.hotspot{position:absolute;border:3px solid transparent;background:#ffffff08;border-radius:15px;cursor:pointer;transform:translate(-50%,-50%);min-width:7%;min-height:9%;transition:.15s}.hotspot:hover,.hotspot:focus{border-color:#ffcf24;background:#ffdc4233;box-shadow:0 0 0 5px #ffdc2444;outline:0}.hotspot.done{border-color:#22b84d;background:#22b84d22}.hotspot.done:after{content:'✓';position:absolute;right:-9px;top:-12px;background:#20b84c;color:white;border-radius:50%;font-weight:bold;padding:2px 7px}.hat-art{position:absolute;left:24%;top:69%;width:16%;height:20%;border:0;background:transparent;cursor:pointer;display:flex;align-items:center;justify-content:center;font-size:clamp(48px,7vw,86px);filter:drop-shadow(2px 4px 2px #6b4b3344);transform:rotate(-8deg)}.hat-art:hover,.hat-art:focus{outline:3px solid #ffcf24;border-radius:18px;background:#ffdc4233}.panel{background:white;border:4px solid #b7dcff;border-radius:26px;padding:18px;box-shadow:0 8px 20px #456e8a22;min-height:420px}.narrator{background:#eef7ff;border-radius:18px;padding:16px;font-weight:800;line-height:1.45;margin-bottom:14px}.speaker{border:0;border-radius:50%;width:43px;height:43px;background:#1685e8;color:white;font-size:22px;cursor:pointer;vertical-align:middle;margin-right:8px}.wordcard{border:2px solid #c7e4ff;border-radius:20px;padding:16px;text-align:center}.wordcard img{width:90px;height:75px;object-fit:contain}.word{font-size:clamp(26px,3vw,40px);font-weight:1000;color:#0759c7}.meaning{font-weight:800;color:#526e91;margin-top:5px}.prompt{text-align:center;font-weight:900;font-size:18px;margin:16px 0 10px}.choices{display:grid;grid-template-columns:repeat(2,1fr);gap:9px}.choice{border:2px solid #b9dcff;border-radius:16px;background:#f7fbff;padding:13px 8px;font-weight:900;font-size:17px;cursor:pointer}.choice:hover{background:#e4f5ff}.choice.correct{background:#dcffe4;border-color:#28b956}.choice.wrong{background:#ffe4e4;border-color:#ed6868}.feedback{min-height:38px;text-align:center;font-weight:900;padding:8px;color:#16863d}.vocab{margin:0 2.5% 20px;background:white;border:3px solid #cdbbff;border-radius:22px;padding:12px}.vocab h3{margin:0 0 8px;color:var(--purple)}.chips{display:flex;gap:8px;overflow-x:auto}.chip{min-width:90px;text-align:center;border:2px solid #c9e1ff;border-radius:14px;padding:7px;background:#f8fcff;font-weight:800}.chip small{display:block;color:#617896}.chip.found{border-color:#2cbd60;background:#eaffef}.primary{border:0;border-radius:18px;background:linear-gradient(#39d94f,#12a83b);color:white;font-weight:1000;font-size:20px;padding:15px 22px;cursor:pointer;box-shadow:0 4px #087d2a}.primary:disabled{opacity:.45;cursor:not-allowed}.center{text-align:center;margin:14px}.exercise{display:none}.exercise.show{display:block}.progress{height:12px;border-radius:20px;background:#e4edf7;overflow:hidden;margin:10px 0}.bar{height:100%;width:0;background:#20bd55;transition:.2s}.inputword{font-size:22px;padding:12px;border:2px solid #b8dfff;border-radius:12px;width:100%;text-align:center;font-weight:bold}.letter{padding:10px 13px;border:2px solid #b9dfff;border-radius:10px;background:#fff;font-size:20px;font-weight:900;cursor:pointer}.gridletters{display:grid;grid-template-columns:repeat(5,1fr);gap:6px;margin:12px auto;max-width:300px}.small{font-size:13px;color:#6c819c}@media(max-width:850px){.layout{grid-template-columns:1fr}.steps{margin-left:0}.panel{min-height:0}.sceneWrap{width:100%}}
+
+/* Formato de retos compartido con las misiones 001 y 002 */
+.exercise{display:none;margin:14px 2.5% 22px;background:#fff;border:4px solid #c7e2ff;border-radius:24px;padding:20px;box-shadow:0 8px 22px #3878a326}
+.exercise h2{margin:4px 0 8px}.answers{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px;margin-top:14px}.answer{padding:14px;border:2px solid #d9e8f8;border-radius:14px;background:#f8fbff;font-weight:850;font-size:16px;color:var(--ink);cursor:pointer}.answer:hover{border-color:#1683ef}.answer.correct{border-color:#20b75b;background:#edfff3}.answer.wrong{border-color:#ef5350;background:#fff0f0}.exercise .progress{height:12px;border-radius:20px;background:#e5edf7;overflow:hidden;margin:10px 0}.exercise .progress>div{height:100%;background:#20b75b;width:0;transition:.2s}.gridLetters{display:grid;grid-template-columns:repeat(8,36px);gap:4px;justify-content:center;margin:14px auto}.gridLetters .letter{background:#f2f7ff;border:1px solid #cfe2f7;border-radius:7px;height:36px;font-weight:900;padding:0;font-size:16px}.gridLetters .letter.selected{background:#ffe36b}.input{padding:12px;border:2px solid #cbdff4;border-radius:12px;font-size:20px;text-transform:uppercase;max-width:220px;width:100%}.exercise .bottom{display:flex;justify-content:space-between;gap:10px;align-items:center;margin-top:14px}.exercise .secondary{background:#eaf4ff;color:#0758c8;border-radius:14px;padding:10px 14px;font-weight:850;border:0;cursor:pointer}.exercise .primary{background:linear-gradient(#49d94e,#16a83e);color:white;border-radius:18px;padding:14px 20px;font-weight:950;box-shadow:0 4px 0 #128632;border:0;cursor:pointer}.exercise .primary:disabled{opacity:.45;cursor:not-allowed}
+@media(max-width:850px){.exercise{margin:10px 2%;padding:14px}.answers{grid-template-columns:1fr 1fr}.gridLetters{grid-template-columns:repeat(8,minmax(27px,36px))}}
+
+</style></head><body>
+<header><div class="logo">Linguafly Quest ✦</div><div class="mission">MISIÓN 005 · MY TOY BOX</div><div class="steps"><div class="step active" id="s1">1 Explorar</div><div class="step" id="s2">2 Practicar · 20 retos</div><div class="step" id="s3">3 ¡Misión completada!</div></div><div class="stats">📖 <span id="count">0/12</span></div><div class="stats">⭐ <span id="stars">0</span></div></header>
+<main class="layout"><section class="sceneWrap" id="sceneWrap"><svg class="scene" viewBox="0 0 1200 700" role="img" aria-label="Caja de juguetes abierta con doce juguetes coloridos">
+<defs>
+ <linearGradient id="bg" x2="0" y2="1"><stop stop-color="#bceeff"/><stop offset="1" stop-color="#fff1cf"/></linearGradient>
+ <linearGradient id="box" x2="0" y2="1"><stop stop-color="#ffcf68"/><stop offset="1" stop-color="#df7d32"/></linearGradient>
+ <linearGradient id="lid" x2="0" y2="1"><stop stop-color="#ffdf87"/><stop offset="1" stop-color="#f4a43d"/></linearGradient>
+ <filter id="shadow"><feGaussianBlur stdDeviation="8"/></filter>
+</defs>
+<rect width="1200" height="700" fill="url(#bg)"/>
+<circle cx="100" cy="95" r="48" fill="#fff7b5"/><path d="M0 520 Q170 470 340 520 T700 510 T1200 510 V700 H0" fill="#a5dc78"/>
+<path d="M0 600 Q300 540 600 600 T1200 580 V700 H0" fill="#79c95f"/>
+<!-- decorative stars -->
+<g fill="#fff" opacity=".9"><path d="M160 170l10 25 26 2-20 16 6 25-22-14-22 14 7-25-20-16 26-2z"/><path d="M1050 130l8 20 21 2-16 13 5 21-18-12-18 12 5-21-16-13 21-2z"/></g>
+<!-- toybox lid -->
+<rect x="250" y="125" width="700" height="105" rx="30" fill="url(#lid)" stroke="#9d5727" stroke-width="12"/>
+<rect x="290" y="145" width="620" height="55" rx="18" fill="#ffe8a9" stroke="#fff7d7" stroke-width="7"/>
+<text x="600" y="183" text-anchor="middle" font-family="Trebuchet MS,Arial" font-size="38" font-weight="900" fill="#9b5728">MY TOY BOX</text>
+<!-- box body -->
+<rect x="185" y="235" width="830" height="390" rx="38" fill="url(#box)" stroke="#9b5728" stroke-width="16"/>
+<rect x="215" y="260" width="770" height="330" rx="25" fill="#fff1c9" stroke="#b76b31" stroke-width="10"/>
+<!-- Distinctive toy-chest front: the label is deliberately drawn AFTER the chest body so it remains visible. -->
+<rect x="390" y="535" width="420" height="76" rx="20" fill="#ffe9a5" stroke="#8d4b22" stroke-width="10"/>
+<path d="M410 548 Q600 570 790 548" fill="none" stroke="#f7c65d" stroke-width="7"/>
+<path d="M455 573 l15 -18 15 18 -6 22 h-18z M730 573 l15 -18 15 18 -6 22 h-18z" fill="#f4bd39" stroke="#9d6727" stroke-width="4"/>
+<text x="600" y="590" text-anchor="middle" font-family="Trebuchet MS,Arial" font-size="38" font-weight="1000" fill="#713b1b" stroke="#fff4cc" stroke-width="2" paint-order="stroke">TOY BOX</text>
+<circle cx="600" cy="621" r="10" fill="#8b5428" stroke="#f6c45a" stroke-width="5"/>
+<path d="M220 460 H980" stroke="#c27a37" stroke-width="12"/>
+<!-- ball -->
+<g transform="translate(320 345)"><circle r="72" fill="#fff" stroke="#375b9b" stroke-width="8"/><path d="M-66-30 Q-5-70 66-25 L30 8 Q0 0-34 50 Q-68 18-66-30" fill="#f44b54"/><path d="M-30-65 Q20-74 48-45 L18-7 Q-5-25-30-65" fill="#ffcf3c"/><path d="M-34 50 Q0 8 30 8 L62 44 Q25 75-16 69Z" fill="#32a6ed"/></g>
+<!-- doll -->
+<g transform="translate(510 350)"><circle cy="-45" r="42" fill="#f5bd8d" stroke="#8e5737" stroke-width="7"/><path d="M-42-53 Q-35-105 12-91 Q48-77 42-34 Q15-65-5-58 Q-25-47-42-53" fill="#70432e"/><circle cx="-14" cy="-43" r="5" fill="#26364d"/><circle cx="15" cy="-43" r="5" fill="#26364d"/><path d="M-10-22 Q0-10 12-22" stroke="#bd4e5a" stroke-width="5" fill="none"/><path d="M-38 0 L38 0 L58 105 L-58 105Z" fill="#ec6ba7" stroke="#9d3e72" stroke-width="7"/><path d="M-45 30 L45 30" stroke="#fff" stroke-width="8"/></g>
+<!-- teddy -->
+<g transform="translate(710 355)" fill="#bd7b43" stroke="#774321" stroke-width="8"><circle cx="-40" cy="-72" r="28"/><circle cx="40" cy="-72" r="28"/><circle cy="-45" r="52"/><ellipse cy="42" rx="62" ry="70"/><circle cx="-19" cy="-52" r="6" fill="#272727"/><circle cx="19" cy="-52" r="6" fill="#272727"/><ellipse cy="-27" rx="22" ry="16" fill="#f4d6a6"/><circle cy="-30" r="7" fill="#272727"/><path d="M-12-8 Q0 3 12-8" stroke="#5d321e" fill="none" stroke-width="5"/></g>
+<!-- toy car -->
+<g transform="translate(900 350)"><path d="M-85 15 L-60-38 H28 L65 15Z" fill="#44b9ee" stroke="#175e99" stroke-width="8"/><rect x="-95" y="10" width="190" height="65" rx="22" fill="#ef4d55" stroke="#a82e3a" stroke-width="8"/><circle cx="-52" cy="78" r="23" fill="#36455a" stroke="#fff" stroke-width="8"/><circle cx="55" cy="78" r="23" fill="#36455a" stroke="#fff" stroke-width="8"/></g>
+<!-- train -->
+<g transform="translate(320 520)"><rect x="-82" y="-40" width="160" height="85" rx="20" fill="#4c9ce8" stroke="#245c9a" stroke-width="8"/><rect x="-35" y="-95" width="70" height="65" rx="15" fill="#f3c447" stroke="#9a6925" stroke-width="7"/><circle cx="-48" cy="52" r="18" fill="#374151"/><circle cx="45" cy="52" r="18" fill="#374151"/><rect x="15" y="-78" width="42" height="45" rx="8" fill="#fff"/></g>
+<!-- kite -->
+<g transform="translate(515 520)"><path d="M0-100 L70-15 L0 70 L-70-15Z" fill="#9b75e8" stroke="#5b43a2" stroke-width="8"/><path d="M0-100 V70 M-70-15 H70" stroke="#fff" stroke-width="6"/><path d="M0 70 Q40 95 12 125 Q-15 150 28 175" fill="none" stroke="#b65a9d" stroke-width="7"/><path d="M15 103l18 12-20 9z" fill="#ffce45"/></g>
+<!-- blocks -->
+<g transform="translate(715 520)"><rect x="-85" y="-70" width="75" height="75" rx="10" fill="#f4c341" stroke="#a66b25" stroke-width="7"/><rect x="8" y="-70" width="75" height="75" rx="10" fill="#ed6a88" stroke="#9c3b58" stroke-width="7"/><rect x="-40" y="10" width="80" height="75" rx="10" fill="#5eb9e9" stroke="#286d9b" stroke-width="7"/><text x="-47" y="-20" font-size="40" fill="#fff">A</text><text x="30" y="-20" font-size="40" fill="#fff">B</text><text x="-14" y="62" font-size="40" fill="#fff">C</text></g>
+<!-- puzzle -->
+<g transform="translate(905 530)"><rect x="-75" y="-65" width="150" height="135" rx="18" fill="#75c96b" stroke="#3f8e3b" stroke-width="8"/><path d="M-20-65v45q-30-20-30 10t30 10v70 M-75 0h45q-20-30 10-30t10 30h85" fill="none" stroke="#fff" stroke-width="10"/></g>
+<!-- robot -->
+<g transform="translate(430 260)"><rect x="-48" y="-42" width="96" height="85" rx="20" fill="#9da9b7" stroke="#526477" stroke-width="8"/><rect x="-32" y="-22" width="64" height="38" rx="10" fill="#c9f6ff"/><circle cx="-14" cy="-3" r="7" fill="#1685e8"/><circle cx="14" cy="-3" r="7" fill="#1685e8"/><path d="M0-42v-24m-10 0h20" stroke="#526477" stroke-width="8"/><path d="M-25 45l-18 25m68-25 18 25" stroke="#526477" stroke-width="8"/></g>
+<!-- yo-yo -->
+<g transform="translate(600 280)"><circle r="38" fill="#ffcf43" stroke="#ad7427" stroke-width="8"/><circle r="12" fill="#f36b6b"/><path d="M0 38 Q-20 85 10 105" fill="none" stroke="#fff" stroke-width="5"/></g>
+<!-- drum -->
+<g transform="translate(790 265)"><ellipse cy="-18" rx="45" ry="18" fill="#fff2cf" stroke="#a95b2c" stroke-width="7"/><path d="M-45-18v60q45 35 90 0v-60" fill="#e76c55" stroke="#a95b2c" stroke-width="7"/><ellipse cy="42" rx="45" ry="18" fill="#d94d48" stroke="#a95b2c" stroke-width="7"/></g>
+<!-- labels -->
+<g font-family="Trebuchet MS,Arial" font-size="23" font-weight="900" text-anchor="middle" fill="#17345c" stroke="#fff" stroke-width="8" paint-order="stroke"><text x="320" y="435">BALL</text><text x="510" y="435">DOLL</text><text x="710" y="435">TEDDY</text><text x="900" y="435">CAR</text><text x="320" y="635">TRAIN</text><text x="515" y="635">KITE</text><text x="715" y="635">BLOCKS</text><text x="905" y="635">PUZZLE</text></g>
+</svg>
+<button class="hotspot" style="left:26.5%;top:49%;width:13%;height:22%" data-id="ball" aria-label="Pelota"></button>
+<button class="hotspot" style="left:42.5%;top:48%;width:12%;height:25%" data-id="doll" aria-label="Muñeca"></button>
+<button class="hotspot" style="left:59%;top:48%;width:13%;height:25%" data-id="teddy" aria-label="Osito"></button>
+<button class="hotspot" style="left:75%;top:50%;width:15%;height:24%" data-id="car" aria-label="Coche de juguete"></button>
+<button class="hotspot" style="left:27%;top:75%;width:14%;height:20%" data-id="train" aria-label="Tren"></button>
+<button class="hotspot" style="left:43%;top:75%;width:13%;height:20%" data-id="kite" aria-label="Cometa"></button>
+<button class="hotspot" style="left:60%;top:75%;width:14%;height:20%" data-id="blocks" aria-label="Bloques"></button>
+<button class="hotspot" style="left:75%;top:75%;width:14%;height:20%" data-id="puzzle" aria-label="Puzzle"></button>
+<button class="hotspot" style="left:35%;top:37%;width:10%;height:15%" data-id="robot" aria-label="Robot"></button>
+<button class="hotspot" style="left:50%;top:39%;width:9%;height:13%" data-id="yoyo" aria-label="Yo-yo"></button>
+<button class="hotspot" style="left:66%;top:38%;width:10%;height:15%" data-id="drum" aria-label="Tambor"></button>
+<button class="hotspot" style="left:50%;top:83%;width:38%;height:15%" data-id="toybox" aria-label="Baúl de juguetes abierto, con juguetes dentro" title="TOY BOX — caja de juguetes"></button>
+</section>
+<aside class="panel"><div class="narrator"><button class="speaker" id="narrate">🔊</button><span id="narratorText">¡Bienvenido a la caja de juguetes! Haz clic en cada juguete para descubrir cómo se llama en inglés.</span></div>
+<div id="discover"><div class="wordcard"><div style="font-size:54px" id="emoji">🧸</div><div class="word" id="word">¡Elige un juguete!</div><div class="meaning" id="meaning">Pulsa sobre los dibujos de la caja.</div><button class="speaker" id="playWord">🔊</button><div class="small" id="phonetic">Escucha su nombre en inglés.</div></div><div class="prompt" id="prompt">Descubre los 12 juguetes para desbloquear los retos.</div><div class="choices" id="choices"></div><div class="feedback" id="feedback"></div><div class="center"><div class="small" id="foundText">0 de 12 juguetes descubiertos</div><button class="primary" id="goPractice" disabled>¡A los 20 retos! →</button></div></div>
+<div class="exercise" id="exercise"><div class="small" id="exerciseCounter">RETO 1 DE 20</div><div class="progress"><div id="exerciseBar"></div></div><h2 id="exerciseTitle">¡Vamos a jugar!</h2><div id="exercisePrompt"></div><div id="exerciseBody"></div><div class="feedback" id="exerciseFeedback"></div><div class="bottom"><button class="secondary" id="repeatAudio">🔊 Escuchar</button><button class="primary" id="nextExercise" disabled>Siguiente reto →</button></div></div>
+<div class="exercise" id="finished"><div style="font-size:70px;text-align:center">🎉🧸⭐</div><h2 style="text-align:center">¡Caja de juguetes descubierta!</h2><p style="text-align:center">Has aprendido 12 juguetes y completado 20 retos. ¡Fantástico!</p><div class="center"><button class="primary" onclick="location.reload()">Volver a jugar</button></div></div></aside></main>
+<section class="vocab"><h3>⭐ Palabras de esta misión</h3><div class="chips" id="chips"></div></section>
+<script>
+const items=[
+['ball','ball','pelota','⚽','/bɔːl/'],['doll','doll','muñeca','🪆','/dɒl/'],['teddy','teddy bear','osito de peluche','🧸','/ˈtedi beə/'],['car','toy car','coche de juguete','🚗','/tɔɪ kɑː/'],['train','train','tren','🚂','/treɪn/'],['kite','kite','cometa','🪁','/kaɪt/'],['blocks','building blocks','bloques de construcción','🧱','/ˈbɪldɪŋ blɒks/'],['puzzle','puzzle','rompecabezas','🧩','/ˈpʌzl/'],['robot','robot','robot','🤖','/ˈrəʊbɒt/'],['yoyo','yo-yo','yoyó','🪀','/ˈjəʊ jəʊ/'],['drum','drum','tambor','🥁','/drʌm/'],['toybox','toy box','caja de juguetes','🧸📦','/tɔɪ bɒks/']
+];
+let found=new Set(),current=null,stage='discover',score=0;
+const $=id=>document.getElementById(id);
+function speak(t,lang='en-GB'){if(!('speechSynthesis'in window))return;speechSynthesis.cancel();let u=new SpeechSynthesisUtterance(t);u.lang=lang;u.rate=.82;let vs=speechSynthesis.getVoices();let v=vs.find(x=>x.lang.toLowerCase().startsWith(lang.toLowerCase()))||vs.find(x=>x.lang.toLowerCase().startsWith(lang.slice(0,2)));if(v)u.voice=v;speechSynthesis.speak(u)}
+function item(id){return items.find(x=>x[0]===id)}
+function renderChips(){$('chips').innerHTML=items.map(x=>`<div class="chip ${found.has(x[0])?'found':''}"><span style="font-size:26px">${x[3]}</span><small>${found.has(x[0])?x[1]:'???'}</small></div>`).join('');$('count').textContent=found.size+'/12';$('foundText').textContent=found.size+' de 12 juguetes descubiertos';document.querySelectorAll('.hotspot').forEach(b=>b.classList.toggle('done',found.has(b.dataset.id)));$('goPractice').disabled=found.size!==12}
+function selectItem(id){if(stage!=='discover')return;current=item(id);$('emoji').textContent=current[3];$('word').textContent=current[1].toUpperCase();$('meaning').textContent='En castellano: '+current[2];$('phonetic').textContent='Pronunciación aproximada: '+current[4];$('prompt').textContent='¿Qué palabra en inglés corresponde a «'+current[2]+'»?';const options=[current[1],...items.filter(x=>x[0]!==id).sort(()=>Math.random()-.5).slice(0,3).map(x=>x[1])].sort(()=>Math.random()-.5);$('choices').innerHTML=options.map(o=>`<button class="choice" data-answer="${o}">${o}</button>`).join('');$('choices').querySelectorAll('button').forEach(b=>b.onclick=()=>{if(b.dataset.answer===current[1]){b.classList.add('correct');$('feedback').textContent='¡Muy bien! '+current[1]+' significa '+current[2]+'.';speak(current[1]);found.add(id);renderChips()}else{$('feedback').textContent='¡Casi! Escucha y prueba otra vez.';speak('Try again','en-GB')}})}
+document.querySelectorAll('.hotspot').forEach(b=>b.addEventListener('click',()=>selectItem(b.dataset.id)));
+$('playWord').onclick=()=>current&&speak(current[1]);$('narrate').onclick=()=>speak($('narratorText').textContent,'es-ES');
+$('goPractice').onclick=()=>{if(found.size!==12)return;stage='practice';$('s1').classList.remove('active');$('s2').classList.add('active');$('discover').style.display='none';$('exercise').classList.add('show');showTask()};
+const tasks=[
+{type:'mc',title:'¿Qué juguete es?',prompt:'Busca el juguete que se llama TEDDY BEAR.',opts:['⚽ Ball','🧸 Teddy bear','🚂 Train','🪁 Kite'],a:1},
+{type:'match',title:'Une la palabra con su traducción',prompt:'¿Qué significa DOLL?',opts:['Pelota','Muñeca','Tren','Tambor'],a:1},
+{type:'listen',title:'¡Escucha con atención!',prompt:'Pulsa escuchar y elige lo que oyes.',audio:'building blocks',opts:['Toy car','Building blocks','Yo-yo','Puzzle'],a:1},
+{type:'fill',title:'Completa la palabra',prompt:'B _ L L · ¿Qué letra falta?',answer:'A',hint:'Es redonda y podemos jugar al fútbol.'},
+{type:'mc',title:'¡Encuentra el juguete!',prompt:'¿Cuál de estos dibujos es un KITE?',opts:['🧩','🪁','🥁','🪆'],a:1},
+{type:'listen',title:'¿Qué juguete escuchas?',prompt:'Escucha y selecciona la palabra correcta.',audio:'toy car',opts:['Toy car','Teddy bear','Toy box','Train'],a:0},
+{type:'match',title:'Traducción relámpago',prompt:'¿Qué significa PUZZLE?',opts:['Rompecabezas','Robot','Cometa','Coche'],a:0},
+{type:'wordsearch',title:'Sopa de letras',prompt:'Encuentra la palabra BALL en la cuadrícula.',word:'BALL'},
+{type:'fill',title:'Letras perdidas',prompt:'T R A I _ · Completa el nombre del tren.',answer:'N',hint:'Es un vehículo que circula sobre raíles.'},
+{type:'mc',title:'¿Qué juguete es?',prompt:'Which one is a drum?',opts:['🥁 Drum','🧸 Teddy bear','🪁 Kite','🧱 Blocks'],a:0},
+{type:'listenq',title:'Escucha la frase',prompt:'“The teddy bear is brown.” ¿Qué animalito de juguete es marrón?',audio:'The teddy bear is brown.',opts:['The doll','The teddy bear','The toy car','The robot'],a:1},
+{type:'match',title:'Une la traducción',prompt:'¿Qué significa YO-YO?',opts:['Yoyó','Tambor','Bloques','Pelota'],a:0},
+{type:'wordsearch',title:'Sopa de letras',prompt:'Encuentra la palabra KITE en la cuadrícula.',word:'KITE'},
+{type:'fill',title:'Completa la palabra',prompt:'R O B _ T · ¿Qué letra falta?',answer:'O',hint:'Es un juguete que parece una máquina o un amigo mecánico.'},
+{type:'listenq',title:'Comprensión auditiva',prompt:'“I have a red ball.” ¿De qué color es la pelota?',audio:'I have a red ball.',opts:['Blue','Red','Green','Yellow'],a:1},
+{type:'speak',title:'¡Tu turno de hablar!',prompt:'Escucha y repite el nombre del juguete.',audio:'teddy bear'},
+{type:'speak',title:'Pronuncia otro juguete',prompt:'Escucha y repite esta palabra.',audio:'building blocks'},
+{type:'mc',title:'Detective de juguetes',prompt:'¿Cuál significa caja de juguetes?',opts:['Toy box','Toy car','Yo-yo','Puzzle'],a:0},
+{type:'listenq',title:'Escucha y responde',prompt:'“The kite is yellow.” ¿Qué juguete es amarillo?',audio:'The kite is yellow.',opts:['The train','The kite','The drum','The doll'],a:1},
+{type:'final',title:'¡Reto final!',prompt:'Elige la pareja correcta: OSITO DE PELUCHE + TEDDY BEAR.',opts:['Teddy bear · Osito','Ball · Tren','Kite · Robot','Drum · Muñeca'],a:0}
+];
+let taskIndex=0,taskDone=false,selectedLetters=[];
+
+// Distribuye la respuesta correcta en posiciones variables y evita repetirla consecutivamente.
+let __optionRound = 0;
+let __lastCorrectSlot = -1;
+function balancedOptionEntries(options, correctIndex){
+  const n=options.length; if(!n) return [];
+  let slot=(__optionRound++)%n;
+  if(n>1 && slot===__lastCorrectSlot) slot=(slot+1)%n;
+  __lastCorrectSlot=slot;
+  const distractors=options.map((value,index)=>({value,index})).filter(x=>x.index!==correctIndex);
+  for(let j=distractors.length-1;j>0;j--){const k=Math.floor(Math.random()*(j+1));[distractors[j],distractors[k]]=[distractors[k],distractors[j]];}
+  const correct={value:options[correctIndex],index:correctIndex};
+  distractors.splice(slot,0,correct); return distractors;
+}
+function balancedOptionValues(options, correctValue){
+  const index=options.findIndex(x=>String(x).toLowerCase()===String(correctValue).toLowerCase());
+  if(index<0) return [...options].sort(()=>Math.random()-.5);
+  return balancedOptionEntries(options,index).map(x=>x.value);
+}
+function showTask(){taskDone=false;const t=tasks[taskIndex];$('exerciseCounter').textContent=`RETO ${taskIndex+1} DE 20`;$('exerciseBar').style.width=`${taskIndex/20*100}%`;$('exerciseTitle').textContent=t.title;$('exercisePrompt').textContent=t.prompt;$('exerciseFeedback').textContent='';$('nextExercise').disabled=true;$('nextExercise').textContent=taskIndex===19?'Terminar misión 🏆':'Siguiente reto →';$('exerciseBody').innerHTML='';
+if(['mc','match','listen','listenq','final'].includes(t.type)){$('repeatAudio').onclick=()=>speak(t.audio||t.prompt,t.audio?'en-GB':'es-ES');$('exerciseBody').innerHTML=`<div class="answers">${balancedOptionEntries(t.opts,t.a).map(x=>`<button class="answer" data-i="${x.index}">${x.value}</button>`).join('')}</div>`;document.querySelectorAll('.answer').forEach(b=>b.onclick=()=>answer(Number(b.dataset.i)===t.a,b));}
+else if(t.type==='fill'){$('repeatAudio').onclick=()=>speak(t.hint,'es-ES');$('exerciseBody').innerHTML=`<p>${t.hint}</p><input class="input" id="fillInput" maxlength="1" placeholder="Letra"> <button class="secondary" id="checkFill">Comprobar</button>`;$('checkFill').onclick=()=>answer($('fillInput').value.trim().toUpperCase()===t.answer,null);}
+else if(t.type==='wordsearch'){$('repeatAudio').onclick=()=>speak(t.word,'en-GB');const chars=t.word.split('').concat('A','E','I','O','U','R','S','T','L','N','P','M','C','D','G','H','B','F','K','W','Y','Z').slice(0,24).sort(()=>Math.random()-.5);$('exerciseBody').innerHTML=`<div class="gridLetters">${chars.map((c,i)=>`<button class="letter" data-letter="${c}" data-i="${i}">${c}</button>`).join('')}</div><div class="small" style="text-align:center">Selecciona las letras en orden para formar ${t.word}.</div><div id="selected" style="text-align:center;font-size:24px;font-weight:900;min-height:32px"></div><button class="secondary" id="resetLetters">Borrar selección</button>`;selectedLetters=[];document.querySelectorAll('.letter').forEach(b=>b.onclick=()=>{if(selectedLetters.length<t.word.length){selectedLetters.push(b.dataset.letter);b.classList.add('selected');$('selected').textContent=selectedLetters.join('');if(selectedLetters.length===t.word.length)answer(selectedLetters.join('')===t.word,null)}});$('resetLetters').onclick=()=>{selectedLetters=[];document.querySelectorAll('.letter').forEach(x=>x.classList.remove('selected'));$('selected').textContent=''};}
+else if(t.type==='speak'){$('repeatAudio').onclick=()=>speak(t.audio,'en-GB');$('exerciseBody').innerHTML=`<div class="word">${t.audio.toUpperCase()}</div><button class="secondary" id="playTarget">🔊 Escuchar palabra</button> <button class="primary" id="sayIt">🎙️ Hablar</button><p class="small">La comprobación de pronunciación es orientativa.</p><div id="transcript"></div>`;const SR=window.SpeechRecognition||window.webkitSpeechRecognition;$('playTarget').onclick=()=>speak(t.audio,'en-GB');if(!SR){$('transcript').innerHTML='Este navegador no ofrece reconocimiento de voz. <button class="secondary" id="selfCheck">Ya he practicado</button>';$('selfCheck').onclick=()=>answer(true,null)}else{$('sayIt').onclick=()=>{const r=new SR();r.lang='en-GB';r.onresult=e=>{const got=e.results[0][0].transcript;$('transcript').textContent='Has dicho: '+got;answer(got.toLowerCase().includes(t.audio.toLowerCase()),null)};r.onerror=()=>{$('transcript').textContent='No hemos podido oírte. Comprueba el micrófono.'};r.start()}}}
+}
+function answer(ok,b){if(taskDone)return;if(b)b.style.borderColor=ok?'#20b75b':'#ef5350';if(ok){taskDone=true;score++;$('stars').textContent=score;$('exerciseFeedback').textContent='¡Muy bien! ⭐';speak('Well done!','en-GB');$('nextExercise').disabled=false;}else{$('exerciseFeedback').textContent='¡Casi! Escucha otra vez e inténtalo de nuevo.';if(b)b.style.borderColor='#ef5350';}}
+$('nextExercise').onclick=()=>{if(!taskDone)return;if(taskIndex===19){$('exercise').classList.remove('show');$('finished').classList.add('show');$('s2').classList.remove('active');$('s3').classList.add('active');$('exerciseBar').style.width='100%';return;}taskIndex++;showTask();};
+renderChips();
+</script></body></html>

@@ -1,0 +1,124 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Linguafly Quest · Mission 006 — My Little House</title>
+<style>
+:root{--blue:#1687e8;--deep:#143b73;--sky:#e7f7ff;--green:#19b95a;--purple:#7541d8;--line:#b7dcff;--ink:#17345c}
+*{box-sizing:border-box}body{margin:0;background:linear-gradient(135deg,#dff5ff,#fff8dc);font-family:system-ui,'Trebuchet MS',sans-serif;color:var(--ink);font-weight:700}
+header{display:flex;align-items:center;gap:12px;flex-wrap:wrap;padding:12px 2.5%;background:#fff9;border-bottom:2px solid #cce8ff;position:sticky;top:0;z-index:5}
+.logo{font-size:clamp(20px,2.2vw,32px);font-weight:1000;color:#0756bd;text-shadow:1px 2px #b6ddff}.mission{background:#fff;border:2px solid var(--line);border-radius:22px;padding:9px 18px;font-size:clamp(15px,1.7vw,23px)}
+.steps{display:flex;gap:6px;margin-left:auto}.step{border-radius:22px;padding:10px 14px;background:#e8eef7;color:#63809e}.step.active{background:var(--green);color:white}.counter{background:white;border:2px solid var(--line);border-radius:20px;padding:10px 14px}
+main{display:grid;grid-template-columns:minmax(0,1.8fr) minmax(320px,.9fr);gap:14px;padding:14px 2.5%}.scene-wrap{background:#fff;border:5px solid white;outline:2px solid var(--line);border-radius:22px;overflow:hidden;box-shadow:0 5px 16px #477ba322}.scene{width:100%;display:block;background:#c9efff}.hotspot{cursor:pointer;outline:none}.hotspot:hover .hl,.hotspot:focus .hl{stroke:#ffb900;stroke-width:8;filter:drop-shadow(0 0 5px #ffcf38)}.hotspot.done .hl{stroke:#25bd66;stroke-width:6}.scene-label{font: bold 17px system-ui;fill:#17345c;paint-order:stroke;stroke:#fff;stroke-width:5;stroke-linejoin:round}
+.panel{background:white;border:4px solid var(--line);border-radius:25px;padding:16px;box-shadow:0 8px 20px #477ba322;display:flex;flex-direction:column;gap:12px;min-height:440px}.narrator{background:#eef7ff;border-radius:18px;padding:16px;line-height:1.45;display:flex;gap:12px;align-items:center}.speaker{border:0;border-radius:50%;background:var(--blue);color:white;width:48px;height:48px;font-size:22px;cursor:pointer;flex-shrink:0}.lesson{border:2px solid #d2eaff;border-radius:20px;padding:14px;display:flex;align-items:center;gap:14px;min-height:112px}.lesson-icon{font-size:54px}.word{font-size:clamp(25px,3vw,38px);color:#0968d5}.small{font-size:14px;color:#55718f}.prompt{text-align:center;font-size:18px;line-height:1.4}.answers{display:grid;grid-template-columns:repeat(3,1fr);gap:8px}.choice{border:2px solid var(--line);background:#f9fcff;border-radius:15px;padding:12px 6px;cursor:pointer;font-weight:900;color:var(--ink);font-size:15px}.choice.correct{border-color:#21b65d;background:#eafff1}.choice.wrong{border-color:#ed6b6b;background:#fff0f0}.progressline{display:flex;justify-content:space-between;align-items:center;color:#6885a3;font-size:14px}.primary{border:0;border-radius:18px;background:linear-gradient(#32d35f,#0b9e43);color:white;padding:16px 20px;font-size:18px;font-weight:1000;cursor:pointer;box-shadow:0 4px #087a35}.primary:disabled{opacity:.45;cursor:not-allowed}.vocab{margin:0 2.5% 18px;background:#fff;border:3px solid var(--line);border-radius:20px;padding:12px}.vocab h3{margin:0 0 10px;color:var(--purple)}.vocab-grid{display:grid;grid-template-columns:repeat(6,1fr);gap:8px}.vocab-item{background:#f7fbff;border:1px solid var(--line);border-radius:12px;padding:8px;text-align:center;font-size:13px}.vocab-item b{display:block;font-size:22px}.challenge{display:none}.challenge.show{display:flex}.challenge .question{font-size:23px;text-align:center}.challenge-card{background:#f3f9ff;border:2px solid var(--line);border-radius:18px;padding:18px;min-height:220px;display:flex;flex-direction:column;justify-content:center;gap:14px}.challenge-options{display:grid;grid-template-columns:repeat(2,1fr);gap:10px}.challenge-options button,.letter{border:2px solid var(--line);background:white;border-radius:12px;padding:13px;cursor:pointer;font-size:17px;font-weight:900;color:var(--ink)}.challenge-options button.correct{background:#e3ffed;border-color:#19b95a}.challenge-options button.wrong{background:#fff0f0;border-color:#e66}.feedback{min-height:26px;text-align:center;font-weight:900}.feedback.ok{color:#15964a}.feedback.no{color:#d44}.wordsearch{display:grid;grid-template-columns:repeat(6,42px);gap:4px;justify-content:center}.wordsearch span{background:white;border:1px solid #b7dcff;border-radius:6px;padding:8px;text-align:center}.input-answer{font-size:20px;padding:12px;border:2px solid var(--line);border-radius:12px;max-width:250px;align-self:center;text-align:center}.actions{display:flex;gap:10px;justify-content:center;flex-wrap:wrap}.secondary{background:#eaf4ff;color:#17528b;border:2px solid var(--line);border-radius:14px;padding:12px 18px;font-weight:900;cursor:pointer}
+@media(max-width:900px){main{grid-template-columns:1fr}.panel{min-height:auto}.vocab-grid{grid-template-columns:repeat(4,1fr)}header{position:static}.steps{margin-left:0;order:3;width:100%}}
+@media(max-width:520px){main{padding:10px}.vocab{margin:0 10px 14px}.vocab-grid{grid-template-columns:repeat(3,1fr)}.answers{grid-template-columns:repeat(2,1fr)}.mission{order:2}.counter{font-size:13px}}
+</style></head>
+<body>
+<header><div class="logo">Linguafly Quest ✦</div><div class="mission">MISIÓN 006 · MY LITTLE HOUSE</div><div class="steps"><div class="step active" id="step1">1 Explorar</div><div class="step" id="step2">2 Practicar · 20 retos</div><div class="step" id="step3">3 ¡Misión completada!</div></div><div class="counter">📖 <span id="dictCount">0/12</span></div><div class="counter">⭐ <span id="stars">0</span></div></header>
+<main>
+<section class="scene-wrap" id="sceneWrap">
+<svg class="scene" viewBox="0 0 1000 620" role="img" aria-label="Casa ilustrada de dos plantas con habitaciones y muebles interactivos">
+<defs><linearGradient id="wall" x2="0" y2="1"><stop stop-color="#fff5bd"/><stop offset="1" stop-color="#ffe29a"/></linearGradient><linearGradient id="roof" x2="0" y2="1"><stop stop-color="#ff7474"/><stop offset="1" stop-color="#e84455"/></linearGradient></defs>
+<rect width="1000" height="620" fill="#c9efff"/><circle cx="865" cy="85" r="42" fill="#ffe46a"/><path d="M0 500 Q140 450 260 500 T520 490 T780 500 T1000 470 V620 H0" fill="#8edc82"/>
+<!-- house shell --> <path d="M65 205 L500 35 L935 205 V560 H65Z" fill="url(#wall)" stroke="#9a5935" stroke-width="10"/><path d="M35 210 L500 20 L965 210 L940 250 L500 65 L60 250Z" fill="url(#roof)" stroke="#9b3d3d" stroke-width="8"/><path d="M500 65 V560 M65 380 H935" stroke="#a96b3e" stroke-width="12"/><path d="M65 560 H935" stroke="#9a5935" stroke-width="12"/>
+<!-- upstairs rooms --> <rect x="85" y="235" width="260" height="130" fill="#f6c7ed" stroke="#bd79b0" stroke-width="5"/><rect x="355" y="235" width="270" height="130" fill="#bfefff" stroke="#65b5d8" stroke-width="5"/><rect x="635" y="235" width="280" height="130" fill="#d8f5c4" stroke="#8abf72" stroke-width="5"/>
+<!-- downstairs rooms --> <rect x="85" y="395" width="260" height="150" fill="#fff0ad" stroke="#d2a64a" stroke-width="5"/><rect x="355" y="395" width="270" height="150" fill="#c9e9ff" stroke="#65a5d0" stroke-width="5"/><rect x="635" y="395" width="280" height="150" fill="#ffd9ad" stroke="#d39b60" stroke-width="5"/>
+<!-- bed --> <g class="hotspot" data-id="bedroom" tabindex="0"><rect class="hl" x="95" y="245" width="240" height="112" rx="10" fill="transparent" stroke="transparent"/><rect x="130" y="290" width="155" height="52" rx="12" fill="#438bdc" stroke="#285d9b" stroke-width="5"/><rect x="140" y="280" width="65" height="30" rx="8" fill="white"/><rect x="210" y="280" width="65" height="30" rx="8" fill="white"/><text x="215" y="355" class="scene-label" text-anchor="middle">BEDROOM</text></g>
+<!-- bathroom --> <g class="hotspot" data-id="bathroom" tabindex="0"><rect class="hl" x="365" y="245" width="250" height="110" rx="10" fill="transparent" stroke="transparent"/><path d="M405 315 Q410 280 470 280 Q530 280 535 315 L520 338 H420Z" fill="#fff" stroke="#4a9dc7" stroke-width="6"/><path d="M435 280 V260 Q435 250 450 250 H470" stroke="#4a9dc7" stroke-width="6" fill="none"/><text x="500" y="355" class="scene-label" text-anchor="middle">BATHROOM</text></g>
+<!-- study --> <g class="hotspot" data-id="study" tabindex="0"><rect class="hl" x="645" y="245" width="260" height="110" rx="10" fill="transparent" stroke="transparent"/><rect x="700" y="290" width="145" height="15" fill="#9b623b"/><rect x="710" y="305" width="12" height="40" fill="#9b623b"/><rect x="820" y="305" width="12" height="40" fill="#9b623b"/><rect x="730" y="255" width="90" height="30" fill="#8e5bce"/><text x="775" y="355" class="scene-label" text-anchor="middle">STUDY</text></g>
+<!-- kitchen --> <g class="hotspot" data-id="kitchen" tabindex="0"><rect class="hl" x="95" y="405" width="240" height="130" rx="10" fill="transparent" stroke="transparent"/><rect x="115" y="455" width="190" height="75" fill="#f3b84e" stroke="#a56c30" stroke-width="5"/><rect x="125" y="420" width="65" height="70" rx="8" fill="#8fd6ed" stroke="#4d9bb9" stroke-width="5"/><rect x="205" y="430" width="80" height="15" fill="#777"/><circle cx="230" cy="462" r="16" fill="#444"/><circle cx="270" cy="462" r="16" fill="#444"/><text x="215" y="530" class="scene-label" text-anchor="middle">KITCHEN</text></g>
+<!-- living room sofa --> <g class="hotspot" data-id="living" tabindex="0"><rect class="hl" x="365" y="405" width="250" height="130" rx="10" fill="transparent" stroke="transparent"/><rect x="390" y="455" width="180" height="62" rx="20" fill="#f26d75" stroke="#a93d52" stroke-width="6"/><rect x="380" y="440" width="35" height="70" rx="12" fill="#f26d75"/><rect x="545" y="440" width="35" height="70" rx="12" fill="#f26d75"/><text x="490" y="530" class="scene-label" text-anchor="middle">LIVING ROOM</text></g>
+<!-- dining room --> <g class="hotspot" data-id="dining" tabindex="0"><rect class="hl" x="645" y="405" width="260" height="130" rx="10" fill="transparent" stroke="transparent"/><ellipse cx="775" cy="475" rx="85" ry="24" fill="#b97843" stroke="#794321" stroke-width="5"/><path d="M720 475 V525 M830 475 V525" stroke="#794321" stroke-width="9"/><text x="775" y="530" class="scene-label" text-anchor="middle">DINING ROOM</text></g>
+<!-- furniture hotspots overlay labels -->
+<g class="hotspot" data-id="bed" tabindex="0"><rect class="hl" x="125" y="275" width="165" height="75" rx="10" fill="transparent" stroke="transparent"/><text x="210" y="270" class="scene-label" text-anchor="middle">BED</text></g>
+<g class="hotspot" data-id="sofa" tabindex="0"><rect class="hl" x="385" y="435" width="195" height="85" rx="12" fill="transparent" stroke="transparent"/><text x="480" y="430" class="scene-label" text-anchor="middle">SOFA</text></g>
+<g class="hotspot" data-id="table" tabindex="0"><rect class="hl" x="685" y="445" width="180" height="85" rx="12" fill="transparent" stroke="transparent"/><text x="775" y="450" class="scene-label" text-anchor="middle">TABLE</text></g>
+<g class="hotspot" data-id="chair" tabindex="0"><rect class="hl" x="830" y="420" width="70" height="115" rx="8" fill="transparent" stroke="transparent"/><rect x="845" y="440" width="40" height="38" rx="5" fill="#e6a34c" stroke="#9b6330" stroke-width="4"/><path d="M850 478 V520 M880 478 V520" stroke="#9b6330" stroke-width="6"/><text x="865" y="540" class="scene-label" text-anchor="middle">CHAIR</text></g>
+<g class="hotspot" data-id="tv" tabindex="0"><rect class="hl" x="520" y="400" width="80" height="60" rx="8" fill="transparent" stroke="transparent"/><rect x="530" y="405" width="65" height="43" rx="4" fill="#334c68" stroke="#202f42" stroke-width="5"/><path d="M562 448 V458 M545 458 H580" stroke="#202f42" stroke-width="5"/><text x="562" y="395" class="scene-label" text-anchor="middle">TV</text></g>
+<g class="hotspot" data-id="lamp" tabindex="0"><rect class="hl" x="290" y="395" width="55" height="140" fill="transparent" stroke="transparent"/><path d="M315 420 V510 M290 420 H340 L328 390 H302Z" fill="#ffdf62" stroke="#ad8331" stroke-width="5"/><text x="315" y="535" class="scene-label" text-anchor="middle">LAMP</text></g>
+<!-- windows / door decoration --> <rect x="20" y="280" width="45" height="105" fill="#80d6f7" stroke="#8b5937" stroke-width="6"/><path d="M42 280 V385 M20 332 H65" stroke="white" stroke-width="5"/><rect x="935" y="390" width="50" height="170" rx="20" fill="#a96c3b" stroke="#744422" stroke-width="6"/><circle cx="970" cy="475" r="6" fill="#ffe16a"/>
+</svg></section>
+<aside class="panel" id="explorePanel"><div class="narrator"><button class="speaker" id="narratorAudio">🔊</button><span id="narratorText">¡Bienvenido a mi casa! Haz clic en cada habitación y en sus muebles para descubrir sus nombres en inglés.</span></div><div class="lesson"><div class="lesson-icon" id="itemIcon">🏠</div><div><div class="word" id="itemWord">MY LITTLE HOUSE</div><button class="secondary" id="wordAudio">🔊 Escuchar</button><div class="small" id="itemMeaning">En castellano: mi pequeña casa</div></div></div><div class="prompt" id="explorePrompt">¡Cada habitación esconde palabras nuevas!</div><div class="answers" id="exploreAnswers"></div><div class="progressline"><span id="discoverProgress">0 de 12 elementos descubiertos</span><span id="discoverHint">Pulsa sobre la casa</span></div><button class="primary" id="toChallenges" disabled>¡Listo! Ir a los 20 retos →</button></aside>
+<aside class="panel challenge" id="challengePanel"><div class="narrator"><button class="speaker" id="challengeAudio">🔊</button><span id="challengeIntro">¡Vamos a practicar lo que has aprendido en casa!</span></div><div class="progressline"><b id="challengeNumber">RETO 1 DE 20</b><span id="challengeProgress">0% completado</span></div><div class="challenge-card"><div class="question" id="question">¿Qué significa BEDROOM?</div><div id="challengeContent"></div><div class="feedback" id="feedback"></div></div><div class="actions"><button class="secondary" id="repeatChallenge">🔊 Escuchar</button><button class="primary" id="nextChallenge" disabled>Siguiente reto →</button></div></aside>
+</main>
+<section class="vocab"><h3>⭐ Palabras de esta misión</h3><div class="vocab-grid" id="vocabGrid"></div></section>
+<script>
+const items=[
+{id:'bedroom',word:'bedroom',es:'dormitorio',icon:'🛏️',say:'BEDROOM'},
+{id:'bathroom',word:'bathroom',es:'cuarto de baño',icon:'🛁',say:'BATHROOM'},
+{id:'kitchen',word:'kitchen',es:'cocina',icon:'🍳',say:'KITCHEN'},
+{id:'living',word:'living room',es:'salón',icon:'🛋️',say:'LIVING ROOM'},
+{id:'dining',word:'dining room',es:'comedor',icon:'🍽️',say:'DINING ROOM'},
+{id:'study',word:'study',es:'despacho / estudio',icon:'📚',say:'STUDY'},
+{id:'bed',word:'bed',es:'cama',icon:'🛏️',say:'BED'},
+{id:'sofa',word:'sofa',es:'sofá',icon:'🛋️',say:'SOFA'},
+{id:'table',word:'table',es:'mesa',icon:'🪑',say:'TABLE'},
+{id:'chair',word:'chair',es:'silla',icon:'🪑',say:'CHAIR'},
+{id:'tv',word:'TV',es:'televisión',icon:'📺',say:'T V'},
+{id:'lamp',word:'lamp',es:'lámpara',icon:'💡',say:'LAMP'}
+];
+const $=id=>document.getElementById(id);let discovered=new Set(),current=0,correct=false,stars=0;
+function speak(text,lang='en-GB'){if(!('speechSynthesis'in window))return; speechSynthesis.cancel();let u=new SpeechSynthesisUtterance(text);u.lang=lang;u.rate=.82;let vs=speechSynthesis.getVoices();let v=vs.find(x=>x.lang==='en-GB')||vs.find(x=>x.lang.startsWith('en'));if(v)u.voice=v;speechSynthesis.speak(u)}
+function saySpanish(t){if(!('speechSynthesis'in window))return;let u=new SpeechSynthesisUtterance(t);u.lang='es-ES';u.rate=.94;speechSynthesis.speak(u)}
+function renderVocab(){ $('vocabGrid').innerHTML=items.map(i=>`<div class="vocab-item"><b>${i.icon}</b>${i.word}</div>`).join('') }
+renderVocab();
+function updateDiscovery(){ $('dictCount').textContent=`${discovered.size}/12`;$('discoverProgress').textContent=`${discovered.size} de 12 elementos descubiertos`;$('toChallenges').disabled=discovered.size!==12;$('discoverHint').textContent=discovered.size===12?'¡Todos descubiertos!':'Pulsa sobre los elementos'; }
+function discover(id){let item=items.find(x=>x.id===id);if(!item)return;discovered.add(id);document.querySelectorAll(`[data-id="${id}"]`).forEach(n=>n.classList.add('done'));$('itemIcon').textContent=item.icon;$('itemWord').textContent=item.word.toUpperCase();$('itemMeaning').textContent='En castellano: '+item.es;$('explorePrompt').textContent=`¡Muy bien! ${item.word.toUpperCase()} significa ${item.es}.`;$('exploreAnswers').innerHTML='';speak(item.say);updateDiscovery();}
+document.querySelectorAll('.hotspot').forEach(el=>{el.addEventListener('click',()=>discover(el.dataset.id));el.addEventListener('keydown',e=>{if(e.key==='Enter'||e.key===' '){e.preventDefault();discover(el.dataset.id)}})});
+$('narratorAudio').onclick=()=>saySpanish($('narratorText').textContent);$('wordAudio').onclick=()=>{let w=$('itemWord').textContent;if(w!=='MY LITTLE HOUSE')speak(w)};
+const challenges=[
+{type:'mc',q:'¿Qué significa BEDROOM?',opts:['Dormitorio','Cocina','Jardín'],a:'Dormitorio'},
+{type:'listen',q:'Escucha y elige la habitación correcta.',audio:'BATHROOM',opts:['Bathroom','Bedroom','Kitchen'],a:'Bathroom'},
+{type:'match',q:'Relaciona LIVING ROOM con su traducción.',opts:['Salón','Comedor','Despacho'],a:'Salón'},
+{type:'fill',q:'Completa la palabra: K I T C H _ N',opts:['E','A','O'],a:'E'},
+{type:'mc',q:'¿Qué objeto es una BED?',opts:['🛏️ Cama','🛋️ Sofá','💡 Lámpara'],a:'🛏️ Cama'},
+{type:'order',q:'Ordena las palabras para formar: «Es una silla».',parts:['a','It','chair','is'],a:'It is a chair'},
+{type:'listen',q:'Escucha la palabra y selecciónala.',audio:'SOFA',opts:['Sofa','Table','Lamp'],a:'Sofa'},
+{type:'mc',q:'¿Dónde podemos cocinar?',opts:['Kitchen','Bathroom','Bedroom'],a:'Kitchen'},
+{type:'fill',q:'Completa: T A B _ E',opts:['L','R','N'],a:'L'},
+{type:'match',q:'¿Qué significa CHAIR?',opts:['Silla','Mesa','Televisión'],a:'Silla'},
+{type:'mc',q:'Elige el objeto que significa LAMP.',opts:['💡','📺','🛏️'],a:'💡'},
+{type:'listen',q:'Escucha y encuentra la palabra.',audio:'DINING ROOM',opts:['Dining room','Living room','Study'],a:'Dining room'},
+{type:'wordsearch',q:'Encuentra mentalmente la palabra BED. Pulsa las letras en orden.',letters:['B','E','D','A','T','O'],a:'BED'},
+{type:'fill',q:'Completa: L _ V I N G  R O O M',opts:['I','A','E'],a:'I'},
+{type:'mc',q:'¿Qué significa TABLE?',opts:['Mesa','Silla','Cama'],a:'Mesa'},
+{type:'listen',q:'Escucha la frase y responde: «The TV is in the living room». ¿Dónde está la televisión?',audio:'The TV is in the living room.',opts:['En el salón','En el baño','En la cocina'],a:'En el salón'},
+{type:'mc',q:'¿Qué habitación es STUDY?',opts:['Despacho / estudio','Comedor','Dormitorio'],a:'Despacho / estudio'},
+{type:'order',q:'Ordena para formar: «La lámpara está en el dormitorio».',parts:['The','lamp','is','in','the','bedroom'],a:'The lamp is in the bedroom'},
+{type:'speak',q:'Escucha y repite en inglés: «This is my house».',audio:'This is my house.',a:'This is my house'},
+{type:'final',q:'RETO FINAL: ¿Qué palabra completa la frase? «The sofa is in the ____».',opts:['living room','bathroom','kitchen'],a:'living room'}
+];
+function showChallenges(){ $('explorePanel').style.display='none';$('challengePanel').classList.add('show');$('step1').classList.remove('active');$('step2').classList.add('active');loadChallenge();window.scrollTo({top:0,behavior:'smooth'});}
+$('toChallenges').onclick=showChallenges;
+
+// Distribuye la respuesta correcta en posiciones variables y evita repetirla consecutivamente.
+let __optionRound = 0;
+let __lastCorrectSlot = -1;
+function balancedOptionEntries(options, correctIndex){
+  const n=options.length; if(!n) return [];
+  let slot=(__optionRound++)%n;
+  if(n>1 && slot===__lastCorrectSlot) slot=(slot+1)%n;
+  __lastCorrectSlot=slot;
+  const distractors=options.map((value,index)=>({value,index})).filter(x=>x.index!==correctIndex);
+  for(let j=distractors.length-1;j>0;j--){const k=Math.floor(Math.random()*(j+1));[distractors[j],distractors[k]]=[distractors[k],distractors[j]];}
+  const correct={value:options[correctIndex],index:correctIndex};
+  distractors.splice(slot,0,correct); return distractors;
+}
+function balancedOptionValues(options, correctValue){
+  const index=options.findIndex(x=>String(x).toLowerCase()===String(correctValue).toLowerCase());
+  if(index<0) return [...options].sort(()=>Math.random()-.5);
+  return balancedOptionEntries(options,index).map(x=>x.value);
+}
+function addOptions(c){let box=document.createElement('div');box.className='challenge-options';balancedOptionValues(c.opts||[],c.a).forEach(o=>{let b=document.createElement('button');b.textContent=o;b.onclick=()=>checkAnswer(o,c.a);box.append(b)});$('challengeContent').append(box);}
+function loadChallenge(){let c=challenges[current];correct=false;$('nextChallenge').disabled=true;$('feedback').textContent='';$('feedback').className='feedback';$('challengeNumber').textContent=`RETO ${current+1} DE 20`;$('challengeProgress').textContent=`${Math.round(current/20*100)}% completado`;$('question').textContent=c.q;$('challengeContent').innerHTML='';$('challengeAudio').onclick=()=>speak(c.audio||c.q);
+if(c.type==='order'){let selected=[];let pool=[...c.parts].sort(()=>Math.random()-.5);let box=document.createElement('div');box.className='challenge-options';pool.forEach(p=>{let b=document.createElement('button');b.textContent=p;b.onclick=()=>{if(b.disabled)return;b.disabled=true;selected.push(p);b.style.opacity='.4';if(selected.length===c.parts.length)checkAnswer(selected.join(' '),c.a)};box.append(b)});let result=document.createElement('p');result.style.textAlign='center';result.id='orderResult';$('challengeContent').append(box,result);}
+else if(c.type==='wordsearch'){let box=document.createElement('div');box.className='wordsearch';let picked='';c.letters.forEach(ch=>{let s=document.createElement('span');s.textContent=ch;s.style.cursor='pointer';s.onclick=()=>{picked+=ch;s.style.background='#dfffe9';$('orderResult').textContent=picked;if(picked.length===c.a.length)checkAnswer(picked,c.a)};box.append(s)});let r=document.createElement('p');r.id='orderResult';r.style.textAlign='center';$('challengeContent').append(box,r);}
+else if(c.type==='speak'){let b=document.createElement('button');b.className='secondary';b.textContent='🎤 Empezar a hablar';b.onclick=()=>{if(!('SpeechRecognition'in window||'webkitSpeechRecognition'in window)){checkAnswer(c.a,c.a,'El navegador no dispone de reconocimiento de voz. Hemos marcado la práctica como realizada.');return;}let R=window.SpeechRecognition||window.webkitSpeechRecognition;let rec=new R();rec.lang='en-GB';rec.onresult=e=>{let said=e.results[0][0].transcript.toLowerCase();let target=c.a.toLowerCase();let ok=said.includes('this')&&said.includes('house');checkAnswer(ok?c.a:said,c.a,`Has dicho: ${said}`)};rec.onerror=()=>{$('feedback').textContent='No se ha podido usar el micrófono. Puedes volver a intentarlo.';};rec.start();};$('challengeContent').append(b);}
+else{addOptions(c);}
+}
+function checkAnswer(value,answer,extra=''){let ok=value.toLowerCase()===answer.toLowerCase();if(ok){correct=true;stars++;$('stars').textContent=stars;$('feedback').className='feedback ok';$('feedback').textContent='¡Muy bien! ⭐ '+(extra||'¡Respuesta correcta!');$('nextChallenge').disabled=false;document.querySelectorAll('#challengeContent button').forEach(b=>{if(b.textContent===answer)b.classList.add('correct')});}else{$('feedback').className='feedback no';$('feedback').textContent='¡Casi! Inténtalo otra vez. '+(extra||'');}}
+$('repeatChallenge').onclick=()=>{let c=challenges[current];speak(c.audio||c.q)};
+$('nextChallenge').onclick=()=>{if(!correct)return;current++;if(current>=20){$('challengePanel').innerHTML='<div class="narrator">🎉 ¡Enhorabuena! Has completado los 20 retos de My Little House.</div><div class="lesson"><div class="lesson-icon">🏡</div><div><div class="word">MISSION COMPLETE!</div><div class="small">Has practicado habitaciones y muebles en inglés.</div></div></div><button class="primary" onclick="location.reload()">Volver a explorar</button>';$('step2').classList.remove('active');$('step3').classList.add('active');return;}loadChallenge();};
+updateDiscovery();
+</script></body></html>

@@ -1,0 +1,150 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Linguafly Quest · Mission 007 — Number Playground</title>
+<style>
+:root{--blue:#1687e8;--deep:#143b73;--sky:#e7f7ff;--green:#19b95a;--purple:#7541d8;--line:#b7dcff;--ink:#17345c}
+*{box-sizing:border-box}body{margin:0;background:linear-gradient(135deg,#dff5ff,#fff8dc);font-family:system-ui,'Trebuchet MS',sans-serif;color:var(--ink);font-weight:700}
+header{display:flex;align-items:center;gap:12px;flex-wrap:wrap;padding:12px 2.5%;background:#fff9;border-bottom:2px solid #cce8ff;position:sticky;top:0;z-index:5}
+.logo{font-size:clamp(20px,2.2vw,32px);font-weight:1000;color:#0756bd;text-shadow:1px 2px #b6ddff}.mission{background:#fff;border:2px solid var(--line);border-radius:22px;padding:9px 18px;font-size:clamp(15px,1.7vw,23px)}
+.steps{display:flex;gap:6px;margin-left:auto}.step{border-radius:22px;padding:10px 14px;background:#e8eef7;color:#63809e}.step.active{background:var(--green);color:white}.counter{background:white;border:2px solid var(--line);border-radius:20px;padding:10px 14px}
+main{display:grid;grid-template-columns:minmax(0,1.8fr) minmax(320px,.9fr);gap:14px;padding:14px 2.5%}.scene-wrap{background:#fff;border:5px solid white;outline:2px solid var(--line);border-radius:22px;overflow:hidden;box-shadow:0 5px 16px #477ba322}.scene{width:100%;display:block;background:#bdeeff}.panel{background:white;border:4px solid var(--line);border-radius:25px;padding:16px;box-shadow:0 8px 20px #477ba322;display:flex;flex-direction:column;gap:12px;min-height:440px}
+.narrator{background:#eef7ff;border-radius:18px;padding:16px;line-height:1.45;display:flex;gap:12px;align-items:center}.speaker{border:0;border-radius:50%;background:var(--blue);color:white;width:48px;height:48px;font-size:22px;cursor:pointer;flex-shrink:0}
+.lesson{border:2px solid #d2eaff;border-radius:20px;padding:14px;display:flex;align-items:center;gap:14px;min-height:112px}.lesson-icon{font-size:54px}.word{font-size:clamp(25px,3vw,38px);color:#0968d5}.small{font-size:14px;color:#55718f}.prompt{text-align:center;font-size:18px;line-height:1.4}.answers{display:grid;grid-template-columns:repeat(3,1fr);gap:8px}.choice{border:2px solid var(--line);background:#f9fcff;border-radius:15px;padding:12px 6px;cursor:pointer;font-weight:900;color:var(--ink);font-size:15px}.choice.correct{border-color:#21b65d;background:#eafff1}.choice.wrong{border-color:#ed6b6b;background:#fff0f0}
+.progressline{display:flex;justify-content:space-between;align-items:center;color:#6885a3;font-size:14px}.primary{border:0;border-radius:18px;background:linear-gradient(#32d35f,#0b9e43);color:white;padding:16px 20px;font-size:18px;font-weight:1000;cursor:pointer;box-shadow:0 4px #087a35}.primary:disabled{opacity:.45;cursor:not-allowed}
+.vocab{margin:0 2.5% 18px;background:#fff;border:3px solid var(--line);border-radius:20px;padding:12px}.vocab h3{margin:0 0 10px;color:var(--purple)}.vocab-grid{display:grid;grid-template-columns:repeat(10,1fr);gap:7px}.vocab-item{background:#f7fbff;border:1px solid var(--line);border-radius:12px;padding:7px;text-align:center;font-size:12px}.vocab-item b{display:block;font-size:18px}
+.challenge{display:none}.challenge.show{display:flex}.challenge .question{font-size:23px;text-align:center}.challenge-card{background:#f3f9ff;border:2px solid var(--line);border-radius:18px;padding:18px;min-height:220px;display:flex;flex-direction:column;justify-content:center;gap:14px}.challenge-options{display:grid;grid-template-columns:repeat(2,1fr);gap:10px}.challenge-options button,.letter{border:2px solid var(--line);background:white;border-radius:12px;padding:13px;cursor:pointer;font-size:17px;font-weight:900;color:var(--ink)}.challenge-options button.correct{background:#e3ffed;border-color:#19b95a}.challenge-options button.wrong{background:#fff0f0;border-color:#e66}.feedback{min-height:26px;text-align:center;font-weight:900}.feedback.ok{color:#15964a}.feedback.no{color:#d44}.wordsearch{display:grid;grid-template-columns:repeat(6,42px);gap:4px;justify-content:center}.wordsearch span{background:white;border:1px solid #b7dcff;border-radius:6px;padding:8px;text-align:center;cursor:pointer}.input-answer{font-size:20px;padding:12px;border:2px solid var(--line);border-radius:12px;max-width:250px;align-self:center;text-align:center}.actions{display:flex;gap:10px;justify-content:center;flex-wrap:wrap}.secondary{background:#eaf4ff;color:#17528b;border:2px solid var(--line);border-radius:14px;padding:12px 18px;font-weight:900;cursor:pointer}
+.number-board{height:620px;padding:20px;background:linear-gradient(#8de0ff 0 57%,#8cda77 57%);position:relative;overflow:hidden}
+.sun{position:absolute;right:7%;top:5%;font-size:60px}.cloud{position:absolute;top:7%;left:7%;font-size:56px;opacity:.9}.hill{position:absolute;bottom:0;left:-5%;width:110%;height:125px;background:#60c76b;border-radius:50% 50% 0 0}
+.board-title{position:relative;text-align:center;font-size:clamp(22px,3vw,36px);color:#1556a5;text-shadow:2px 2px white;margin:0 0 14px}
+.number-grid{position:relative;display:grid;grid-template-columns:repeat(5,1fr);gap:10px;z-index:1}
+.num-tile{min-height:112px;border:4px solid white;border-radius:18px;background:linear-gradient(145deg,#fff,#eaf7ff);box-shadow:0 5px 0 #79b8e8;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:3px;cursor:pointer;color:#17345c;transition:.12s}
+.num-tile:hover{transform:translateY(-3px);border-color:#ffd23f}.num-tile.done{border-color:#26bf69;background:#eafff1}.num-tile .digit{font-size:30px;line-height:1;color:#0868d5}.num-tile .dots{font-size:15px;line-height:1.2;letter-spacing:1px;max-width:100%;text-align:center}.num-tile .hint{font-size:12px;color:#55718f}
+@media(max-width:900px){main{grid-template-columns:1fr}.panel{min-height:auto}.vocab-grid{grid-template-columns:repeat(5,1fr)}header{position:static}.steps{margin-left:0;order:3;width:100%}.number-board{height:auto;min-height:570px}}
+@media(max-width:520px){main{padding:10px}.vocab{margin:0 10px 14px}.vocab-grid{grid-template-columns:repeat(4,1fr)}.mission{order:2}.counter{font-size:13px}.number-grid{grid-template-columns:repeat(4,1fr);gap:7px}.num-tile{min-height:85px}.num-tile .digit{font-size:24px}.number-board{padding:12px;min-height:520px}.num-tile .dots{font-size:12px}}
+</style></head>
+<body>
+<header><div class="logo">Linguafly Quest ✦</div><div class="mission">MISIÓN 007 · NUMBER PLAYGROUND</div><div class="steps"><div class="step active" id="step1">1 Explorar</div><div class="step" id="step2">2 Practicar · 20 retos</div><div class="step" id="step3">3 ¡Misión completada!</div></div><div class="counter">📖 <span id="dictCount">0/20</span></div><div class="counter">⭐ <span id="stars">0</span></div></header>
+<main>
+<section class="scene-wrap" id="sceneWrap">
+<div class="number-board" aria-label="Parque de números interactivo">
+<div class="sun">☀️</div><div class="cloud">☁️</div><div class="hill"></div>
+<h2 class="board-title">¡El parque de los números!</h2>
+<div class="number-grid" id="numberGrid"></div>
+</div>
+</section>
+<section class="panel" id="explorePanel">
+<div class="narrator"><button class="speaker" id="narratorAudio" aria-label="Escuchar instrucciones">🔊</button><span>¡Bienvenido al parque de los números! Pulsa cada número, cuenta los objetos y descubre cómo se dice en inglés. ¡Del uno al veinte!</span></div>
+<div class="lesson" id="lesson"><div class="lesson-icon" id="lessonIcon">🔢</div><div><div class="word" id="lessonWord">¡Pulsa un número!</div><div id="phonetic" class="small">Escucha y repite en inglés.</div><div class="small" id="meaning">En castellano: descubre los números.</div></div><button class="speaker" id="wordAudio">🔊</button></div>
+<div class="prompt" id="explorePrompt">¿Cuántos objetos hay? Cada casilla esconde un número.</div>
+<div class="answers" id="exploreAnswers"></div>
+<div class="progressline"><span id="discoverCount">0 de 20 números descubiertos</span><span>¡Aprende contando!</span></div>
+<button class="primary" id="toChallenges" disabled>¡A los 20 retos! →</button>
+</section>
+<section class="panel challenge" id="challengePanel">
+<div class="narrator"><button class="speaker" id="challengeAudio">🔊</button><span>¡Ahora vamos a jugar con los números! Escucha, cuenta, lee y responde.</span></div>
+<div class="progressline"><b id="challengeNumber">RETO 1 DE 20</b><span id="challengeProgress">0% completado</span></div>
+<div class="challenge-card"><div class="question" id="question"></div><div id="challengeContent"></div><div class="feedback" id="feedback"></div></div>
+<div class="actions"><button class="secondary" id="repeatChallenge">🔊 Escuchar otra vez</button><button class="primary" id="nextChallenge" disabled>Siguiente reto →</button></div>
+</section>
+</main>
+<section class="vocab"><h3>⭐ Números de esta misión</h3><div class="vocab-grid" id="vocabGrid"></div></section>
+<script>
+const $=id=>document.getElementById(id);
+const nums=[
+['one','uno','/wʌn/'],['two','dos','/tuː/'],['three','tres','/θriː/'],['four','cuatro','/fɔːr/'],['five','cinco','/faɪv/'],
+['six','seis','/sɪks/'],['seven','siete','/ˈsev.ən/'],['eight','ocho','/eɪt/'],['nine','nueve','/naɪn/'],['ten','diez','/ten/'],
+['eleven','once','/ɪˈlev.ən/'],['twelve','doce','/twelv/'],['thirteen','trece','/ˌθɜːrˈtiːn/'],['fourteen','catorce','/ˌfɔːrˈtiːn/'],['fifteen','quince','/ˌfɪfˈtiːn/'],
+['sixteen','dieciséis','/ˌsɪkˈstiːn/'],['seventeen','diecisiete','/ˌsev.ənˈtiːn/'],['eighteen','dieciocho','/ˌeɪˈtiːn/'],['nineteen','diecinueve','/ˌnaɪnˈtiːn/'],['twenty','veinte','/ˈtwen.ti/']
+];
+const icons=['⭐','🟡','🔵','🟢','🔴','🟣','🟠','🦋','🌼','🍎','⚽','🎈','🐠','🍓','🚗','🧸','🌈','🍪','🚀','🎁'];
+let discovered=new Set(), selected=null, stars=0, current=0, correct=false;
+// SpeechSynthesis can return an empty voice list during initial page load, and
+// calling cancel()+speak() in the same tick can silently drop short words.
+let speechRequest=0;
+function availableVoices(){return new Promise(resolve=>{if(!('speechSynthesis'in window)){resolve([]);return;}let list=speechSynthesis.getVoices();if(list.length){resolve(list);return;}let done=false;const finish=()=>{if(done)return;done=true;speechSynthesis.removeEventListener?.('voiceschanged',finish);resolve(speechSynthesis.getVoices());};speechSynthesis.addEventListener?.('voiceschanged',finish,{once:true});setTimeout(finish,700);});}
+async function speak(text,lang='en-GB'){
+ if(!text||!('speechSynthesis'in window))return;
+ const request=++speechRequest;
+ const voices=await availableVoices();
+ if(request!==speechRequest)return;
+ try{speechSynthesis.cancel();}catch(e){}
+ const u=new SpeechSynthesisUtterance(String(text));u.lang=lang;u.rate=lang.startsWith('en')?.9:.96;u.pitch=1;u.volume=1;
+ const exact=voices.find(v=>v.lang.toLowerCase()==='en-gb');
+ const regional=voices.find(v=>v.lang.toLowerCase().startsWith(lang.toLowerCase()));
+ const fallback=voices.find(v=>v.lang.toLowerCase().startsWith(lang.slice(0,2).toLowerCase()));
+ const voice=exact||regional||fallback;if(voice)u.voice=voice;
+ // A short pause after cancel is important in Chromium-based browsers.
+ setTimeout(()=>{if(request!==speechRequest)return;try{speechSynthesis.resume();speechSynthesis.speak(u);}catch(e){console.warn('No se pudo reproducir el audio',e);}},100);
+}
+function spanish(text){speak(text,'es-ES');}
+if('speechSynthesis'in window){speechSynthesis.getVoices();speechSynthesis.addEventListener?.('voiceschanged',()=>speechSynthesis.getVoices());}
+function renderBoard(){
+ nums.forEach((n,i)=>{let b=document.createElement('button');b.className='num-tile';b.dataset.i=i;b.innerHTML=`<span class="digit">${i+1}</span><span class="dots">${icons[i%icons.length].repeat(Math.min(i+1,8))}${i>=8?'…':''}</span><span class="hint">Pulsa para descubrir</span>`;b.onclick=()=>discover(i);$('numberGrid').append(b);
+ let v=document.createElement('div');v.className='vocab-item';v.innerHTML=`<b>${i+1}</b>${n[0]}`;$('vocabGrid').append(v);});
+}
+function discover(i){selected=i;let n=nums[i];discovered.add(i);$('dictCount').textContent=`${discovered.size}/20`;$('discoverCount').textContent=`${discovered.size} de 20 números descubiertos`;$('lessonIcon').textContent=icons[i%icons.length];$('lessonWord').textContent=n[0].toUpperCase();$('phonetic').textContent=`Pronunciación orientativa: ${n[2]}`;$('meaning').textContent=`En castellano: ${n[1]}`;$('explorePrompt').textContent=`¡Hay ${i+1}! Escucha el número en inglés y repítelo.`;$('wordAudio').onclick=()=>speak(n[0]);speak(n[0]);document.querySelectorAll('.num-tile').forEach((b,j)=>{if(j===i)b.classList.add('done')});if(discovered.size===20)$('toChallenges').disabled=false;}
+$('narratorAudio').onclick=()=>spanish('Bienvenido al parque de los números. Pulsa cada número, cuenta los objetos y descubre cómo se dice en inglés. Del uno al veinte.');
+$('toChallenges').onclick=()=>{$('explorePanel').style.display='none';$('challengePanel').classList.add('show');$('step1').classList.remove('active');$('step2').classList.add('active');loadChallenge();window.scrollTo({top:0,behavior:'smooth'});};
+renderBoard();
+
+const challenges=[
+{type:'mc',q:'¿Cómo se dice UNO en inglés?',opts:['One','Two','Three'],a:'One'},
+{type:'listen',q:'Escucha y elige el número correcto.',audio:'Seven',opts:['Six','Seven','Eight'],a:'Seven'},
+{type:'mc',q:'¿Qué número es TWELVE?',opts:['10','12','20'],a:'12'},
+{type:'count',q:'Cuenta las estrellas. ¿Cuántas hay?',icon:'⭐',count:5,opts:['Four','Five','Six'],a:'Five'},
+{type:'match',q:'Relaciona la palabra THREE con su significado.',opts:['Tres','Treinta','Trece'],a:'Tres'},
+{type:'fill',q:'Completa: F _ U R',opts:['O','A','E'],a:'O'},
+{type:'mc',q:'¿Cómo se escribe el número 8?',opts:['Eight','Eighteen','Eighty'],a:'Eight'},
+{type:'listen',q:'Escucha el número y selecciónalo.',audio:'Fifteen',opts:['Fifty','Five','Fifteen'],a:'Fifteen'},
+{type:'order',q:'Ordena las letras para formar el número 9.',parts:['N','I','N','E'],a:'NINE'},
+{type:'mc',q:'¿Qué significa ELEVEN?',opts:['Once','Doce','Diez'],a:'Once'},
+{type:'count',q:'Cuenta los globos. ¿Cuántos hay?',icon:'🎈',count:3,opts:['Two','Three','Four'],a:'Three'},
+{type:'fill',q:'Completa: T W E L _ E',opts:['V','F','B'],a:'V'},
+{type:'listen',q:'Escucha: “I have four apples”. ¿Cuántas manzanas tengo?',audio:'I have four apples.',opts:['Three','Four','Five'],a:'Four'},
+{type:'mc',q:'¿Qué número va después de NINETEEN?',opts:['Eighteen','Twenty','Ten'],a:'Twenty'},
+{type:'order',q:'Ordena los números: 3, 1, 2.',parts:['Three','One','Two'],a:'One Two Three'},
+{type:'wordsearch',q:'Forma la palabra TWO pulsando las letras en orden.',letters:['T','W','O','A','E','N'],a:'TWO'},
+{type:'mc',q:'¿Qué número es mayor: SIX o NINE?',opts:['Six','Nine','Son iguales'],a:'Nine'},
+{type:'listen',q:'Escucha y elige el número correcto.',audio:'Thirteen',opts:['Thirty','Thirteen','Three'],a:'Thirteen'},
+{type:'speak',q:'Escucha y pronuncia en inglés: “Twenty”.',audio:'Twenty',a:'Twenty'},
+{type:'final',q:'RETO FINAL: ¿Qué número completa la serie? 16, 17, 18, __',opts:['Nineteen','Twenty','Fifteen'],a:'Nineteen'}
+];
+let orderPick='';
+
+// Distribuye la respuesta correcta en posiciones variables y evita repetirla consecutivamente.
+let __optionRound = 0;
+let __lastCorrectSlot = -1;
+function balancedOptionEntries(options, correctIndex){
+  const n=options.length; if(!n) return [];
+  let slot=(__optionRound++)%n;
+  if(n>1 && slot===__lastCorrectSlot) slot=(slot+1)%n;
+  __lastCorrectSlot=slot;
+  const distractors=options.map((value,index)=>({value,index})).filter(x=>x.index!==correctIndex);
+  for(let j=distractors.length-1;j>0;j--){const k=Math.floor(Math.random()*(j+1));[distractors[j],distractors[k]]=[distractors[k],distractors[j]];}
+  const correct={value:options[correctIndex],index:correctIndex};
+  distractors.splice(slot,0,correct); return distractors;
+}
+function balancedOptionValues(options, correctValue){
+  const index=options.findIndex(x=>String(x).toLowerCase()===String(correctValue).toLowerCase());
+  if(index<0) return [...options].sort(()=>Math.random()-.5);
+  return balancedOptionEntries(options,index).map(x=>x.value);
+}
+function loadChallenge(){let c=challenges[current];correct=false;$('nextChallenge').disabled=true;$('feedback').textContent='';$('feedback').className='feedback';$('challengeNumber').textContent=`RETO ${current+1} DE 20`;$('challengeProgress').textContent=`${Math.round(current/20*100)}% completado`;$('question').textContent=c.q;$('challengeContent').innerHTML='';$('challengeAudio').onclick=()=>speak(c.audio||c.q);
+if(c.type==='count'){let visual=document.createElement('div');visual.style.cssText='font-size:35px;text-align:center;letter-spacing:7px';visual.textContent=c.icon.repeat(c.count);$('challengeContent').append(visual);addOptions(c);}
+else if(c.type==='order'){let pool=[...c.parts].sort(()=>Math.random()-.5),picked=[];let box=document.createElement('div');box.className='challenge-options';pool.forEach(p=>{let b=document.createElement('button');b.textContent=p;b.onclick=()=>{if(b.disabled)return;b.disabled=true;b.style.opacity='.4';picked.push(p);if(picked.length===c.parts.length)checkAnswer(picked.join(c.a.includes(' ')?' ':'').toUpperCase(),c.a.toUpperCase());};box.append(b)});$('challengeContent').append(box);}
+else if(c.type==='wordsearch'){let box=document.createElement('div');box.className='wordsearch';let picked='';let result=document.createElement('p');result.style.textAlign='center';c.letters.forEach(ch=>{let s=document.createElement('span');s.textContent=ch;s.onclick=()=>{if(s.dataset.used)return;s.dataset.used='1';s.style.background='#dfffe9';picked+=ch;result.textContent=picked;if(picked.length===c.a.length)checkAnswer(picked,c.a);};box.append(s)});$('challengeContent').append(box,result);}
+else if(c.type==='speak'){let b=document.createElement('button');b.className='secondary';b.textContent='🎤 Empezar a hablar';b.onclick=()=>{const R=window.SpeechRecognition||window.webkitSpeechRecognition;if(!R){$('feedback').textContent='Tu navegador no ofrece reconocimiento de voz. Escucha y repite en voz alta.';checkAnswer(c.a,c.a,'Práctica oral realizada sin evaluación automática.');return;}let r=new R();r.lang='en-GB';r.onresult=e=>{let raw=e.results[0][0].transcript||'';let said=raw.toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g,'').replace(/[^a-z0-9 ]/g,' ').replace(/\s+/g,' ').trim();
+ // Accept the exact word, the digit transcription, or a phrase containing it.
+ // Some speech engines return "20" instead of "twenty" for a correctly spoken word.
+ const tokens=said.split(' ');const ok=tokens.includes('twenty')||tokens.includes('20')||said==='twentie';
+ if(ok){checkAnswer(c.a,c.a,`¡Perfecto! Has dicho: ${raw.trim()||'twenty'}`);}else{$('feedback').className='feedback no';$('feedback').textContent=`He entendido «${raw.trim()}». Inténtalo otra vez diciendo claramente twenty.`;}};r.onerror=()=>{$('feedback').textContent='No se ha podido usar el micrófono. Inténtalo de nuevo.';};r.start();};$('challengeContent').append(b);}
+else if(c.type==='fill'){addOptions(c);}
+else addOptions(c);
+}
+function addOptions(c){let box=document.createElement('div');box.className='challenge-options';balancedOptionValues(c.opts||[],c.a).forEach(o=>{let b=document.createElement('button');b.textContent=o;b.onclick=()=>checkAnswer(o,c.a);box.append(b)});$('challengeContent').append(box);}
+function checkAnswer(value,answer,extra=''){let ok=String(value).toLowerCase()===String(answer).toLowerCase();if(ok){correct=true;stars++;$('stars').textContent=stars;$('feedback').className='feedback ok';$('feedback').textContent='¡Muy bien! ⭐ '+(extra||'¡Respuesta correcta!');$('nextChallenge').disabled=false;}else{$('feedback').className='feedback no';$('feedback').textContent='¡Casi! Inténtalo otra vez. '+(extra||'');}}
+$('repeatChallenge').onclick=()=>{let c=challenges[current];speak(c.audio||c.q)};
+$('nextChallenge').onclick=()=>{if(!correct)return;current++;if(current>=20){$('challengePanel').innerHTML='<div class="narrator">🎉 ¡Enhorabuena! Has completado los 20 retos de Number Playground.</div><div class="lesson"><div class="lesson-icon">🔢</div><div><div class="word">MISSION COMPLETE!</div><div class="small">¡Ya sabes contar del one al twenty!</div></div></div><button class="primary" onclick="location.reload()">Volver a explorar</button>';$('step2').classList.remove('active');$('step3').classList.add('active');return;}loadChallenge();};
+</script></body></html>

@@ -13,7 +13,7 @@ export default function InicioPage() {
     let active = true;
     fetch("/api/auth/me", { cache: "no-store" })
       .then((response) => response.json())
-      .then((data) => {
+      .then((data: any) => {
         if (active) setStudent(data.student ?? null);
       })
       .catch(() => {
