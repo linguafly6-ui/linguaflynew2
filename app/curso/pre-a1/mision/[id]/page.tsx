@@ -31,7 +31,7 @@ export default async function PreA1MissionPage({ params }: { params: Promise<{ i
       <div className="overflow-hidden rounded-2xl border bg-white">
         <iframe
           title={mission.title}
-          src={`/quest/missions/${id}/index.html`}
+          src={`/quest/missions/${id}/mission-${id}.html`}
           className="h-[calc(100vh-150px)] min-h-[620px] w-full border-0"
           allow="autoplay"
         />
