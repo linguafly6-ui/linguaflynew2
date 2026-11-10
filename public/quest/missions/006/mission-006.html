@@ -59,8 +59,8 @@ const items=[
 {id:'lamp',word:'lamp',es:'lámpara',icon:'💡',say:'LAMP'}
 ];
 const $=id=>document.getElementById(id);let discovered=new Set(),current=0,correct=false,stars=0;
-function speak(text,lang='en-GB'){if(!('speechSynthesis'in window))return; speechSynthesis.cancel();let u=new SpeechSynthesisUtterance(text);u.lang=lang;u.rate=.82;let vs=speechSynthesis.getVoices();let v=vs.find(x=>x.lang==='en-GB')||vs.find(x=>x.lang.startsWith('en'));if(v)u.voice=v;speechSynthesis.speak(u)}
-function saySpanish(t){if(!('speechSynthesis'in window))return;let u=new SpeechSynthesisUtterance(t);u.lang='es-ES';u.rate=.94;speechSynthesis.speak(u)}
+function speak(text,lang='en-GB'){if(String(lang||'').toLowerCase().startsWith('es'))return;if(!('speechSynthesis'in window))return; speechSynthesis.cancel();let u=new SpeechSynthesisUtterance(text);u.lang=lang;u.rate=.82;let vs=speechSynthesis.getVoices();let v=vs.find(x=>x.lang==='en-GB')||vs.find(x=>x.lang.startsWith('en'));if(v)u.voice=v;speechSynthesis.speak(u)}
+function saySpanish(t){return;if(!('speechSynthesis'in window))return;let u=new SpeechSynthesisUtterance(t);u.lang='es-ES';u.rate=.94;speechSynthesis.speak(u)}
 function renderVocab(){ $('vocabGrid').innerHTML=items.map(i=>`<div class="vocab-item"><b>${i.icon}</b>${i.word}</div>`).join('') }
 renderVocab();
 function updateDiscovery(){ $('dictCount').textContent=`${discovered.size}/12`;$('discoverProgress').textContent=`${discovered.size} de 12 elementos descubiertos`;$('toChallenges').disabled=discovered.size!==12;$('discoverHint').textContent=discovered.size===12?'¡Todos descubiertos!':'Pulsa sobre los elementos'; }

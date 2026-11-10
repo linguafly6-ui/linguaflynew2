@@ -64,7 +64,7 @@ let discovered=new Set(), selected=null, stars=0, current=0, correct=false;
 // calling cancel()+speak() in the same tick can silently drop short words.
 let speechRequest=0;
 function availableVoices(){return new Promise(resolve=>{if(!('speechSynthesis'in window)){resolve([]);return;}let list=speechSynthesis.getVoices();if(list.length){resolve(list);return;}let done=false;const finish=()=>{if(done)return;done=true;speechSynthesis.removeEventListener?.('voiceschanged',finish);resolve(speechSynthesis.getVoices());};speechSynthesis.addEventListener?.('voiceschanged',finish,{once:true});setTimeout(finish,700);});}
-async function speak(text,lang='en-GB'){
+async function speak(text,lang='en-GB'){if(String(lang||'').toLowerCase().startsWith('es'))return;
  if(!text||!('speechSynthesis'in window))return;
  const request=++speechRequest;
  const voices=await availableVoices();
