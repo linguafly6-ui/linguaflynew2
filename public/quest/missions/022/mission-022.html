@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="es"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Linguafly · Misión 022 · At the Café</title>
+<style>
+:root{--ink:#293650;--muted:#6c7890;--blue:#547bd5;--line:#e5eaf2}
+*{box-sizing:border-box}body{margin:0;background:linear-gradient(145deg,#fff3e9,#eef5ff);font-family:system-ui,-apple-system,Segoe UI,sans-serif;color:var(--ink)}
+main{max-width:980px;margin:auto;padding:22px 16px 48px}.top{display:flex;justify-content:space-between;gap:10px;align-items:center;flex-wrap:wrap}.brand{font-weight:900;letter-spacing:.05em;color:#4d68a0}.tag{background:#eaf0fc;border-radius:99px;padding:7px 12px;font-size:.85rem}
+h1{font-size:clamp(2rem,5vw,3rem);margin:14px 0 4px}.sub{color:var(--muted);margin:0 0 18px}.panel{background:#fff;border:1px solid var(--line);border-radius:23px;padding:clamp(16px,3vw,25px);margin:16px 0;box-shadow:0 12px 34px #2936500c}
+h2{margin:0 0 8px}.hint{color:var(--muted);margin:0 0 14px}.menu{display:grid;grid-template-columns:repeat(auto-fit,minmax(130px,1fr));gap:10px}.menuitem{border:2px solid var(--line);border-radius:17px;background:#fffdfa;padding:12px;text-align:center;cursor:pointer;color:var(--ink)}.menuitem:hover{border-color:var(--blue)}.emoji{font-size:2.5rem;display:block}.menuitem b{display:block;margin-top:5px}
+button{font:inherit}.primary,.secondary,.option{border:0;border-radius:14px;padding:12px 15px;cursor:pointer;font-weight:750}.primary{background:var(--blue);color:white}.secondary{background:#edf2fa;color:var(--ink)}
+.progress{height:9px;background:#edf1f7;border-radius:99px;overflow:hidden;margin:10px 0 16px}.bar{height:100%;width:0;background:linear-gradient(90deg,#648fe6,#65b89a);transition:width .2s}
+.qhead{display:flex;justify-content:space-between;gap:10px;align-items:center;flex-wrap:wrap}.qnum{font-weight:850;color:#5a76b1}.prompt{font-size:1.2rem;font-weight:800;margin:14px 0}
+.visual{min-height:112px;border-radius:18px;background:linear-gradient(135deg,#fff4e5,#f1f6ff);display:flex;align-items:center;justify-content:center;gap:14px;font-size:3.2rem;margin:12px 0;text-align:center;padding:12px;flex-wrap:wrap}
+.options{display:grid;grid-template-columns:repeat(auto-fit,minmax(145px,1fr));gap:10px}.option{background:#f1f5fb;color:var(--ink);border:2px solid transparent;min-height:58px}.option:hover{border-color:#91abe0}.option.correct{background:#e5f7ef;border-color:#58ad89}.option.wrong{background:#fff0f2;border-color:#df8fa1}
+.feedback{min-height:28px;font-weight:750;margin:12px 0}.good{color:#25835f}.bad{color:#b84d68}.actions{display:flex;justify-content:space-between;gap:10px;flex-wrap:wrap}
+.matchgrid{display:grid;grid-template-columns:1fr 1fr;gap:9px}.matchitem{border:2px solid var(--line);border-radius:13px;padding:12px;background:#f8faff;cursor:pointer;font-weight:750}.matchitem.chosen{border-color:var(--blue);background:#eaf0ff}.matchitem.done{border-color:#69b68f;background:#e5f7ef}
+@media(max-width:520px){main{padding:14px 12px 35px}.panel{border-radius:18px}.prompt{font-size:1.05rem}}
+</style></head><body><main>
+<div class="top"><div class="brand">LINGUAFLY · PRE-A1</div><div class="tag">MISIÓN 022 / AT THE CAFÉ</div></div>
+<h1>At the Café ☕</h1><p class="sub">Entra en la cafetería, reconoce el menú y practica cómo hacer un pedido sencillo.</p>
+<section class="panel"><h2>🍽️ Explora el menú</h2><p class="hint">Toca cada elemento para escuchar cómo se dice en inglés.</p><div class="menu" id="menu"></div></section>
+<section class="panel"><div class="qhead"><h2>🎯 Tu reto</h2><span class="qnum" id="qnum">Reto 1 de 20</span></div><div class="progress"><div class="bar" id="bar"></div></div><p class="prompt" id="prompt"></p><div class="visual" id="visual"></div><div id="activity"></div><div class="feedback" id="feedback" aria-live="polite"></div><div class="actions"><button class="secondary" id="repeat">🔊 Escuchar</button><button class="primary" id="next" disabled>Siguiente →</button></div></section>
+</main>
+<script>
+const menu=[
+{w:'water',es:'agua',e:'💧'},{w:'juice',es:'zumo',e:'🧃'},{w:'milk',es:'leche',e:'🥛'},
+{w:'tea',es:'té',e:'🍵'},{w:'sandwich',es:'sándwich',e:'🥪'},{w:'please',es:'por favor',e:'🙏'},{w:'thank you',es:'gracias',e:'😊'}
+];
+const $=id=>document.getElementById(id);
+function say(t){if(!('speechSynthesis'in window))return;speechSynthesis.cancel();let u=new SpeechSynthesisUtterance(t);u.lang='en-GB';u.rate=.84;speechSynthesis.speak(u)}
+$('menu').innerHTML=menu.map(x=>`<button class="menuitem" data-word="${x.w}"><span class="emoji">${x.e}</span><b>${x.w}</b><small>${x.es}</small></button>`).join('');
+document.querySelectorAll('.menuitem').forEach(b=>b.onclick=()=>say(b.dataset.word));
+const qs=[
+{type:'image',p:'¿Qué bebida aparece en la imagen?',v:'💧',a:'water',o:['water','tea','milk']},
+{type:'listen',p:'Escucha y elige la bebida.',v:'🎧',a:'juice',o:['juice','water','tea']},
+{type:'image',p:'¿Qué alimento aparece en la imagen?',v:'🥪',a:'sandwich',o:['sandwich','juice','milk']},
+{type:'listen',p:'Escucha y elige la bebida.',v:'🎧',a:'tea',o:['tea','milk','water']},
+{type:'social',p:'Quieres pedir agua. ¿Qué palabra amable añades al pedido?',v:'💧',a:'please',o:['please','thank you']},
+{type:'image',p:'¿Qué bebida aparece en la imagen?',v:'🥛',a:'milk',o:['milk','water','juice']},
+{type:'social',p:'Acabas de recibir tu pedido. ¿Qué dices?',v:'😊',a:'thank you',o:['please','thank you']},
+{type:'listen',p:'Escucha y elige la palabra.',v:'🎧',a:'sandwich',o:['sandwich','tea','water']},
+{type:'match',p:'Une cada imagen con su palabra.',v:'🔗'},
+{type:'image',p:'¿Qué bebida aparece en la imagen?',v:'🧃',a:'juice',o:['juice','milk','tea']},
+{type:'social',p:'Quieres pedir un sándwich. ¿Qué palabra usas para pedirlo amablemente?',v:'🥪',a:'please',o:['please','thank you']},
+{type:'listen',p:'Escucha y elige la bebida.',v:'🎧',a:'water',o:['water','juice','milk']},
+{type:'order',p:'Elige la expresión que completa el pedido: “Tea, ____.”',v:'🍵',a:'please',o:['please','thank you']},
+{type:'image',p:'¿Qué alimento aparece en la imagen?',v:'🥪',a:'sandwich',o:['sandwich','milk','water']},
+{type:'social',p:'La camarera te entrega el zumo. ¿Qué dices?',v:'🧃',a:'thank you',o:['thank you','please']},
+{type:'listen',p:'Escucha y elige la palabra.',v:'🎧',a:'milk',o:['milk','tea','juice']},
+{type:'order',p:'Elige la expresión para pedir agua: “Water, ____.”',v:'💧',a:'please',o:['please','thank you']},
+{type:'image',p:'¿Qué bebida aparece en la imagen?',v:'🍵',a:'tea',o:['tea','water','milk']},
+{type:'listen',p:'Escucha y elige la expresión.',v:'🎧',a:'thank you',o:['please','thank you']},
+{type:'social',p:'Vas a pedir un sándwich de forma amable. ¿Qué dices?',v:'🥪',a:'please',o:['please','thank you']}
+];
+let qi=0,done=false;
+function render(){
+ done=false;$('next').disabled=true;$('feedback').textContent='';$('feedback').className='feedback';
+ const q=qs[qi];$('qnum').textContent=`Reto ${qi+1} de 20`;$('bar').style.width=`${qi/20*100}%`;$('prompt').textContent=q.p;$('visual').textContent=q.v;$('activity').innerHTML='';
+ if(q.type==='match'){matchTask();return}
+ if(q.type==='listen')say(q.a);
+ options(q.o,q.a);
+}
+function options(opts,answer){
+ const order=[...opts].sort(()=>Math.random()-.5);
+ $('activity').innerHTML='<div class="options">'+order.map(x=>`<button class="option">${x}</button>`).join('')+'</div>';
+ document.querySelectorAll('.option').forEach(b=>b.onclick=()=>check(b,b.textContent===answer,answer));
+}
+function check(btn,ok,answer){
+ if(done)return;done=true;document.querySelectorAll('.option').forEach(b=>{b.disabled=true;if(b===btn)b.classList.add(ok?'correct':'wrong')});
+ $('feedback').textContent=ok?'¡Muy bien!':'Casi. La respuesta correcta era: '+answer;$('feedback').className='feedback '+(ok?'good':'bad');$('next').disabled=false;
+}
+function matchTask(){
+ $('activity').innerHTML='<p class="hint">Toca una imagen y después la palabra correspondiente.</p><div class="matchgrid" id="mg"></div>';
+ let pairs=[['💧','water'],['🧃','juice'],['🥛','milk'],['🍵','tea'],['🥪','sandwich']];
+ let left=pairs.map(p=>({v:p[0],id:p[1],side:'l'})),right=[...pairs].sort(()=>Math.random()-.5).map(p=>({v:p[1],id:p[1],side:'r'}));
+ let selected=null,count=0;
+ [...left,...right].forEach(x=>{let b=document.createElement('button');b.className='matchitem';b.textContent=x.v;b.onclick=()=>{if(b.classList.contains('done'))return;if(!selected){selected={x,b};b.classList.add('chosen');return}if(selected.x.side!==x.side&&selected.x.id===x.id){selected.b.classList.remove('chosen');selected.b.classList.add('done');b.classList.add('done');count++;say(x.id);selected=null;if(count===5){done=true;$('feedback').textContent='¡Todas las parejas encontradas!';$('feedback').className='feedback good';$('next').disabled=false}}else{selected.b.classList.remove('chosen');selected=null}};$('mg').appendChild(b)});
+}
+$('repeat').onclick=()=>{let q=qs[qi];if(q.type==='listen')say(q.a);else if(q.type==='match')say('water, juice, milk, tea, sandwich');else say(q.a||'At the café')};
+$('next').onclick=()=>{if(qi<19){qi++;render()}else{$('qnum').textContent='¡Misión completada!';$('bar').style.width='100%';$('prompt').textContent='¡Has terminado At the Café!';$('visual').textContent='☕🥪😊';$('activity').innerHTML='<p>Has reconocido bebidas y alimentos, y practicado cómo pedir algo con educación y dar las gracias.</p>';$('feedback').textContent='¡Buen trabajo!';$('next').disabled=true;$('repeat').disabled=true}};
+render();
+</script></body></html>

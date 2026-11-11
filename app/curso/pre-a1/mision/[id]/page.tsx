@@ -23,6 +23,16 @@ const missions: Record<string, { number: number; title: string }> = {
   "018": { number: 18, title: "Seasons of the Year" },
   "019": { number: 19, title: "Fruit Market" },
   "020": { number: 20, title: "Veggie Garden" },
+  "021": { number: 21, title: "Breakfast Time" },
+  "022": { number: 22, title: "At the Cafe" },
+  "023": { number: 23, title: "Animal Sounds" },
+  "024": { number: 24, title: "Farm Friends" },
+  "025": { number: 25, title: "Under the Sea" },
+  "026": { number: 26, title: "The Bug Hunt" },
+  "027": { number: 27, title: "At the Zoo" },
+  "028": { number: 28, title: "Where Is It?" },
+  "029": { number: 29, title: "My Family" },
+  "030": { number: 30, title: "People Around Me" },
 };
 
 export default async function PreA1MissionPage({ params }: { params: Promise<{ id: string }> }) {

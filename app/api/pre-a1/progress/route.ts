@@ -26,7 +26,7 @@ export async function POST(req: NextRequest) {
     if (!student) return NextResponse.json({ error: "Necesitas iniciar sesión." }, { status: 401 });
     const body = await req.json() as { missionNumber?: number; completed?: boolean };
     const missionNumber = Number(body.missionNumber);
-    if (!Number.isInteger(missionNumber) || missionNumber < 1 || missionNumber > 20 || body.completed !== true) {
+    if (!Number.isInteger(missionNumber) || missionNumber < 1 || missionNumber > 30 || body.completed !== true) {
       return NextResponse.json({ error: "Datos de misión no válidos." }, { status: 400 });
     }
     const db = getEnv().COURSE_DB;

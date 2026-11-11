@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="es"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Linguafly · Misión 021 · Breakfast Time</title>
+<style>
+:root{--ink:#293650;--muted:#6c7890;--blue:#547bd5;--line:#e5eaf2}
+*{box-sizing:border-box}body{margin:0;background:linear-gradient(145deg,#fff5e8,#f1f6ff);font-family:system-ui,-apple-system,Segoe UI,sans-serif;color:var(--ink)}
+main{max-width:1020px;margin:auto;padding:22px 16px 50px}.top{display:flex;justify-content:space-between;gap:10px;align-items:center;flex-wrap:wrap}.brand{font-weight:900;letter-spacing:.05em;color:#4d68a0}.tag,.pill{background:#eaf0fc;border-radius:99px;padding:7px 12px;font-size:.85rem}
+h1{font-size:clamp(2rem,5vw,3.1rem);margin:13px 0 4px}.sub{color:var(--muted);margin:0 0 20px}.panel{background:#fff;border:1px solid var(--line);border-radius:24px;padding:clamp(16px,3vw,25px);margin:16px 0;box-shadow:0 12px 34px #2936500c}
+h2{margin:0 0 8px}.hint{color:var(--muted);margin:0 0 15px}.foods{display:grid;grid-template-columns:repeat(auto-fit,minmax(112px,1fr));gap:10px}
+.food{border:2px solid var(--line);border-radius:18px;background:#fffdfa;padding:12px;text-align:center;cursor:pointer;color:var(--ink)}.food:hover,.food:focus{border-color:var(--blue);outline:none}.emoji{font-size:2.7rem;display:block}.food b{display:block;margin-top:4px}
+button{font:inherit}.primary,.secondary,.option{border:0;border-radius:14px;padding:12px 16px;cursor:pointer;font-weight:750}.primary{background:var(--blue);color:white}.secondary{background:#edf2fa;color:var(--ink)}
+.toolbar{display:flex;gap:10px;align-items:center;flex-wrap:wrap;margin-top:14px}.progress{height:9px;background:#edf1f7;border-radius:99px;overflow:hidden;flex:1;min-width:120px}.bar{height:100%;width:0;background:linear-gradient(90deg,#648fe6,#65b89a);transition:width .2s}
+.qhead{display:flex;justify-content:space-between;gap:10px;align-items:center;flex-wrap:wrap}.qnum{font-weight:850;color:#5a76b1}.prompt{font-size:1.22rem;font-weight:800;margin:15px 0}
+.visual{min-height:118px;border-radius:18px;background:linear-gradient(135deg,#fff4e5,#f1f6ff);display:flex;align-items:center;justify-content:center;gap:14px;font-size:3.5rem;margin:12px 0;text-align:center;padding:12px;flex-wrap:wrap}
+.options{display:grid;grid-template-columns:repeat(auto-fit,minmax(145px,1fr));gap:10px}.option{background:#f1f5fb;color:var(--ink);border:2px solid transparent;min-height:60px}.option:hover{border-color:#91abe0}.option.correct{background:#e5f7ef;border-color:#58ad89}.option.wrong{background:#fff0f2;border-color:#df8fa1}
+.feedback{min-height:28px;font-weight:750;margin:12px 0}.good{color:#25835f}.bad{color:#b84d68}.challenge-actions{display:flex;justify-content:space-between;gap:10px;flex-wrap:wrap}
+.matchgrid{display:grid;grid-template-columns:1fr 1fr;gap:9px}.matchitem{border:2px solid var(--line);border-radius:13px;padding:12px;background:#f8faff;cursor:pointer;font-weight:750}.matchitem.chosen{border-color:var(--blue);background:#eaf0ff}.matchitem.done{border-color:#69b68f;background:#e5f7ef}
+.sortbins{display:grid;grid-template-columns:1fr 1fr;gap:10px}.bin{border:2px dashed #b7c5d9;border-radius:16px;padding:12px;min-height:105px;text-align:center}.bin strong{display:block;margin-bottom:8px}.chips{display:flex;flex-wrap:wrap;gap:8px;justify-content:center}.chip{border:1px solid #dfe6f1;background:#f7f9fd;border-radius:99px;padding:8px 12px;cursor:pointer}
+@media(max-width:520px){main{padding:14px 12px 38px}.panel{border-radius:18px}.prompt{font-size:1.08rem}}
+</style></head><body><main>
+<div class="top"><div class="brand">LINGUAFLY · PRE-A1</div><div class="tag">MISIÓN 021 / BREAKFAST TIME</div></div>
+<h1>Breakfast Time 🍳</h1><p class="sub">Descubre alimentos del desayuno y practica I eat / I drink.</p>
+<section class="panel"><h2>☀️ Explora el desayuno</h2><p class="hint">Toca cada alimento para escuchar su nombre en inglés. Mira la imagen y repite la palabra.</p><div class="foods" id="foods"></div></section>
+<section class="panel" id="quiz"><div class="qhead"><h2>🎯 Tu reto</h2><span class="qnum" id="qnum">Reto 1 de 20</span></div><div class="progress"><div class="bar" id="bar"></div></div><p class="prompt" id="prompt"></p><div class="visual" id="visual"></div><div id="activity"></div><div class="feedback" id="feedback" aria-live="polite"></div><div class="challenge-actions"><button class="secondary" id="repeat">🔊 Escuchar</button><button class="primary" id="next" disabled>Siguiente →</button></div></section>
+</main>
+<script>
+const items=[
+{w:'breakfast',es:'desayuno',e:'🌅'},
+{w:'cereal',es:'cereales',e:'🥣'},
+{w:'toast',es:'tostada',e:'🍞'},
+{w:'milk',es:'leche',e:'🥛'},
+{w:'juice',es:'zumo',e:'🧃'},
+{w:'egg',es:'huevo',e:'🥚'},
+{w:'yogurt',es:'yogur',e:'🥛'}
+];
+const $=id=>document.getElementById(id);
+function say(t){if(!('speechSynthesis'in window))return;speechSynthesis.cancel();let u=new SpeechSynthesisUtterance(t);u.lang='en-GB';u.rate=.84;speechSynthesis.speak(u)}
+function item(w){return items.find(x=>x.w===w)}
+$('foods').innerHTML=items.map(x=>`<button class="food" data-word="${x.w}"><span class="emoji">${x.e}</span><b>${x.w}</b><small>${x.es}</small></button>`).join('');
+document.querySelectorAll('.food').forEach(b=>b.onclick=()=>say(b.dataset.word));
+const raw=[
+['image','¿Qué alimento aparece en la imagen?','🥣','cereal','toast','yogurt'],
+['listen','Escucha y elige el alimento.','','milk','juice','egg'],
+['image','¿Qué alimento aparece en la imagen?','🍞','toast','cereal','breakfast'],
+['phrase','La persona toma leche. Completa la frase.','🥛','I drink','I eat'],
+['image','¿Qué alimento aparece en la imagen?','🥚','egg','yogurt','milk'],
+['listen','Escucha y elige el alimento.','','juice','milk','cereal'],
+['phrase','La persona come una tostada. Completa la frase.','🍞','I eat','I drink'],
+['image','¿Qué alimento aparece en la imagen?','🧃','juice','milk','yogurt'],
+['match','Une cada alimento con su imagen.','',''],
+['listen','Escucha y elige el alimento.','','yogurt','egg','toast'],
+['phrase','La persona bebe zumo. Completa la frase.','🧃','I drink','I eat'],
+['image','¿Qué alimento aparece en la imagen?','🥛','milk','juice','cereal'],
+['image','¿Qué alimento aparece en la imagen?','🍽️ 🥣','cereal','toast','egg'],
+['listen','Escucha y elige el alimento.','','breakfast','cereal','milk'],
+['phrase','La persona come cereales. Completa la frase.','🥣','I eat','I drink'],
+['image','¿Qué alimento aparece en la imagen?','🥛','yogurt','milk','juice'],
+['classify','¿Qué frase corresponde a beber?','','I drink','I eat'],
+['listen','Escucha y elige el alimento.','','toast','egg','yogurt'],
+['image','¿Qué alimento aparece en la imagen?','🌅','breakfast','cereal','toast'],
+['phrase','La persona come un huevo. Completa la frase.','🥚','I eat','I drink']
+];
+// fixed balanced answer slots 7/7/6, no adjacent repeats
+const slots=[0,1,2,0,1,2,0,1,2,0,1,2,0,1,2,0,1,2,0,1];
+let qi=0,done=false,chosen=null;
+function render(){
+ done=false;$('next').disabled=true;$('feedback').textContent='';$('feedback').className='feedback';
+ const q=raw[qi];$('qnum').textContent=`Reto ${qi+1} de 20`;$('bar').style.width=`${qi/20*100}%`;$('prompt').textContent=q[1];$('visual').textContent=q[2]||'🍽️';$('activity').innerHTML='';
+ if(q[0]==='match'){matchTask();return}
+ if(q[0]==='classify'){options(['I eat','I drink'],'I drink');return}
+ let answer=q[3],opts=q.slice(3).filter(Boolean);
+ if(q[0]==='listen'){answer=q[3];opts=q.slice(3);say(answer)}
+ if(q[0]==='phrase'){opts=q.slice(3);answer=q[3]}
+ if(q[0]==='image'){opts=q.slice(3);answer=q[3]}
+ const filler=['milk','toast','egg','juice','cereal','yogurt','breakfast'].filter(x=>!opts.includes(x));
+ while(opts.length<3)opts.push(filler.shift());
+ options(opts,answer);
+}
+function options(opts,answer){
+ const shuffled=[...opts].sort(()=>Math.random()-.5);
+ $('activity').innerHTML='<div class="options">'+shuffled.map(x=>`<button class="option">${x}</button>`).join('')+'</div>';
+ document.querySelectorAll('.option').forEach(b=>b.onclick=()=>check(b,b.textContent===answer));
+}
+function check(btn,ok){
+ if(done)return;done=true;document.querySelectorAll('.option').forEach(b=>{b.disabled=true;if(b===btn)b.classList.add(ok?'correct':'wrong')});
+ if(ok){$('feedback').textContent='¡Muy bien!';$('feedback').className='feedback good'}else{$('feedback').textContent='Casi. La respuesta correcta era: '+(raw[qi][0]==='phrase'?'I eat / I drink':raw[qi][3]);$('feedback').className='feedback bad'}
+ $('next').disabled=false;
+}
+function matchTask(){
+ $('visual').textContent='🔗';$('activity').innerHTML='<p class="hint">Toca primero una imagen y después su palabra.</p><div class="matchgrid" id="mg"></div>';
+ let pairs=[['🥣','cereal'],['🍞','toast'],['🥚','egg'],['🧃','juice']];let selected=null,count=0;
+ let left=pairs.map(p=>({v:p[0],id:p[1],side:'l'})),right=[...pairs].sort(()=>Math.random()-.5).map(p=>({v:p[1],id:p[1],side:'r'}));
+ [...left,...right].forEach(x=>{let b=document.createElement('button');b.className='matchitem';b.textContent=x.v;b.onclick=()=>{if(b.classList.contains('done'))return;if(!selected){selected={x,b};b.classList.add('chosen');return}if(selected.x.side!==x.side&&selected.x.id===x.id){selected.b.classList.remove('chosen');selected.b.classList.add('done');b.classList.add('done');count++;say(x.id);selected=null;if(count===4){done=true;$('feedback').textContent='¡Todas las parejas encontradas!';$('feedback').className='feedback good';$('next').disabled=false}}else{selected.b.classList.remove('chosen');selected=null}};$('mg').appendChild(b)});
+}
+$('repeat').onclick=()=>{let q=raw[qi];if(q[0]==='listen')say(q[3]);else if(q[0]==='phrase')say(q[3]==='I eat'?'I eat':'I drink');else say('breakfast')};
+$('next').onclick=()=>{if(qi<19){qi++;render()}else{$('qnum').textContent='¡Misión completada!';$('bar').style.width='100%';$('prompt').textContent='¡Has terminado Breakfast Time!';$('visual').textContent='🌞🍽️🎉';$('activity').innerHTML='<p>Has practicado los alimentos del desayuno y las expresiones I eat / I drink.</p>'; $('feedback').textContent='¡Buen trabajo!';$('next').disabled=true;$('repeat').disabled=true}};
+render();
+</script></body></html>

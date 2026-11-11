@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Linguafly 030 · People Around Me</title>
+<style>
+:root{--ink:#203047;--muted:#64748b;--blue:#2764d8;--green:#16834a;--red:#b42318}
+*{box-sizing:border-box}body{margin:0;background:#f4f7fb;color:var(--ink);font:16px/1.45 system-ui,-apple-system,Segoe UI,sans-serif}
+main{max-width:900px;margin:auto;padding:22px}.top{display:flex;justify-content:space-between;gap:12px;align-items:center;flex-wrap:wrap}
+.tag{color:#2457b7;font-weight:750;font-size:.82rem;letter-spacing:.04em}.progress{height:9px;background:#e3eaf4;border-radius:20px;overflow:hidden;margin:14px 0 24px}.bar{height:100%;width:0;background:#3978e8;transition:width .2s}
+.panel{background:white;border:1px solid #e2e8f0;border-radius:20px;padding:clamp(18px,4vw,32px);box-shadow:0 8px 28px #19365b0c}
+h1{font-size:clamp(1.7rem,4vw,2.3rem);margin:.2em 0}h2{font-size:1.28rem;margin:.35em 0 1em}.muted{color:var(--muted)}
+.scene{display:flex;justify-content:center;align-items:center;gap:15px;flex-wrap:wrap;background:#f5f8fc;border-radius:16px;padding:20px;margin:18px 0;font-size:2.4rem;min-height:115px}
+.person{display:inline-flex;flex-direction:column;align-items:center;gap:4px;min-width:76px}.person small{font-size:.72rem;color:#64748b}
+.opts{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:10px;margin-top:18px}
+button{font:inherit;cursor:pointer;border:1px solid #cbd5e1;background:white;color:var(--ink);border-radius:12px;padding:13px 15px;font-weight:650}
+button:hover{border-color:var(--blue);background:#f5f8ff}button:disabled{cursor:default;opacity:.8}
+.primary{background:var(--blue);color:white;border-color:var(--blue)}.primary:hover{background:#1d4fb5;color:white}
+.feedback{min-height:32px;margin-top:16px;font-weight:700}.good{color:var(--green)}.bad{color:var(--red)}
+.actions{display:flex;justify-content:space-between;gap:10px;align-items:center;margin-top:22px;flex-wrap:wrap}
+.pill{background:#edf4ff;color:#2457b7;border-radius:999px;padding:5px 11px;font-size:.85rem;font-weight:700}
+.note{background:#f7faff;border-left:4px solid #7aa5ee;padding:10px 13px;border-radius:8px;margin:14px 0}
+.done{text-align:center;padding:28px}
+@media(max-width:520px){main{padding:12px}.panel{border-radius:15px}.scene{font-size:2rem}}
+</style></head><body><main>
+<div class="top"><div><div class="tag">LINGUAFLY · PRE-A1 · MISIÓN 030</div><h1>People Around Me</h1><div class="muted">Personas y rasgos físicos sencillos.</div></div><div class="pill" id="counter">Reto 1 de 20</div></div>
+<div class="progress"><div class="bar" id="bar"></div></div><section class="panel" id="game"></section></main>
+<script>
+const $=s=>document.querySelector(s);
+const tasks=[
+{kind:'identify',q:'¿Cuál imagen representa a un niño?',scene:[['👦',''],['👩',''],['👴','']],o:['woman','boy','man'],a:'boy'},
+{kind:'listen',q:'Escucha la palabra y elige la opción correcta.',s:'girl',scene:[['👧',''],['👨',''],['👦','']],o:['child','girl','man'],a:'girl'},
+{kind:'identify',q:'¿Cuál imagen representa a la persona adulta de sexo femenino?',scene:[['👨',''],['👩',''],['👦','']],o:['man','boy','woman'],a:'woman'},
+{kind:'listen',q:'Escucha y selecciona la palabra.',s:'man',scene:[['👨',''],['👩',''],['👧','']],o:['woman','man','girl'],a:'man'},
+{kind:'vocab',q:'¿Qué palabra nombra a un niño o niña?',scene:[['🧒',''],['👩',''],['👨','']],o:['child','woman','man'],a:'child'},
+{kind:'feature',q:'Señala la palabra para el pelo.',scene:[['💇',''],['👀','']],o:['eyes','hair','child'],a:'hair'},
+{kind:'listen',q:'Escucha la palabra y elige el rasgo físico.',s:'eyes',scene:[['👀',''],['💇','']],o:['hair','eyes','girl'],a:'eyes'},
+{kind:'pronoun',q:'Un hombre: completa la frase. ___ is a man.',scene:[['👨','']],o:['She','He','They'],a:'He'},
+{kind:'pronoun',q:'Una niña: completa la frase. ___ is a girl.',scene:[['👧','']],o:['He','They','She'],a:'She'},
+{kind:'listen',q:'Escucha la frase y elige el pronombre.',s:'She is a woman.',scene:[['👩','']],o:['He','She','They'],a:'She'},
+{kind:'identify',q:'¿Cuál imagen representa a un hombre adulto?',scene:[['👨',''],['👧',''],['👵','']],o:['girl','man','woman'],a:'man'},
+{kind:'vocab',q:'¿Qué palabra corresponde a esta parte del cuerpo?',scene:[['👀','']],o:['eyes','hair','boy'],a:'eyes'},
+{kind:'listen',q:'Escucha la palabra y selecciona la imagen adecuada.',s:'child',scene:[['🧒',''],['👴',''],['👩','']],o:['woman','child','man'],a:'child'},
+{kind:'pronoun',q:'Varias personas: completa la frase. ___ are people.',scene:[['👨',''],['👩',''],['🧒','']],o:['She','He','They'],a:'They'},
+{kind:'feature',q:'¿Qué palabra nombra el pelo?',scene:[['💇',''],['👀','']],o:['hair','eyes','woman'],a:'hair'},
+{kind:'listen',q:'Escucha la frase y selecciona la palabra que oyes.',s:'He is a boy.',scene:[['👦',''],['👧','']],o:['girl','boy','woman'],a:'boy'},
+{kind:'pronoun',q:'Una mujer: completa. ___ is a woman.',scene:[['👩','']],o:['They','She','He'],a:'She'},
+{kind:'classify',q:'Selecciona las dos palabras que nombran rasgos físicos.',scene:[['👀',''],['💇','']],o:['hair and eyes','boy and girl','man and woman'],a:'hair and eyes'},
+{kind:'listen',q:'Escucha la palabra y elige la persona.',s:'woman',scene:[['👩',''],['👨',''],['🧒','']],o:['child','man','woman'],a:'woman'},
+{kind:'review',q:'Elige la frase correcta para hablar de una niña.',scene:[['👧','']],o:['He is a girl.','She is a girl.','They is a girl.'],a:'She is a girl.'}
+];
+let index=0,score=0,locked=false;
+function shuffle(a){a=[...a];for(let i=a.length-1;i>0;i--){let j=Math.floor(Math.random()*(i+1));[a[i],a[j]]=[a[j],a[i]]}return a}
+function sceneHTML(s){return '<div class="scene">'+s.map(p=>`<span class="person">${p[0]}${p[1]?`<small>${p[1]}</small>`:''}</span>`).join('')+'</div>'}
+function speak(t){if(!('speechSynthesis'in window)){alert('El audio no está disponible en este navegador.');return}speechSynthesis.cancel();let u=new SpeechSynthesisUtterance(t);u.lang='en-GB';u.rate=.86;speechSynthesis.speak(u)}
+function render(){
+ locked=false;const t=tasks[index];$('#counter').textContent=`Reto ${index+1} de 20`;$('#bar').style.width=(index/20*100)+'%';
+ let s=`<div class="tag">RETO ${index+1} · ${t.kind==='listen'?'LISTENING':'PRACTICE'}</div><h2>${t.q}</h2>${sceneHTML(t.scene)}`;
+ if(t.kind==='listen')s+='<button id="play" type="button">▶ Repetir audio</button>';
+ s+='<div class="opts">'+shuffle(t.o).map(o=>`<button type="button" data-answer="${encodeURIComponent(o)}">${o}</button>`).join('')+'</div><div class="feedback" id="feedback" aria-live="polite"></div><div class="actions"><span class="muted">Selecciona una respuesta.</span><button class="primary" id="next" disabled>'+(index===19?'Ver resultado':'Siguiente')+'</button></div>';
+ $('#game').innerHTML=s;let p=$('#play');if(p)p.onclick=()=>speak(t.s);
+ document.querySelectorAll('[data-answer]').forEach(b=>b.onclick=()=>check(b,decodeURIComponent(b.dataset.answer)===t.a,t.a));
+ $('#next').onclick=()=>{if(index<19){index++;render()}else finish()};
+}
+function check(btn,ok,answer){if(locked)return;locked=true;document.querySelectorAll('[data-answer]').forEach(b=>b.disabled=true);let f=$('#feedback');if(ok){score++;f.textContent='¡Correcto!';f.className='feedback good'}else{f.textContent='La respuesta correcta es: '+answer+'.';f.className='feedback bad'}$('#next').disabled=false}
+function finish(){$('#bar').style.width='100%';$('#counter').textContent='Misión completada';$('#game').innerHTML=`<div class="done"><div style="font-size:3rem">👨‍👩‍👧</div><h2>¡Misión completada!</h2><p>Has terminado los 20 retos de <b>People Around Me</b>.</p><p>Respuestas correctas: <b>${score} / 20</b></p><p class="muted">Repasa: boy, girl, child, man, woman, hair, eyes; he, she, they.</p><button class="primary" onclick="location.reload()">Volver a practicar</button></div>`}
+render();
+</script></body></html>

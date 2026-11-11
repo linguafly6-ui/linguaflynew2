@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Linguafly 029 · My Family</title>
+<style>
+:root{--ink:#203047;--muted:#64748b;--blue:#2764d8;--pale:#edf4ff;--green:#16834a;--red:#b42318}
+*{box-sizing:border-box}body{margin:0;background:#f4f7fb;color:var(--ink);font:16px/1.45 system-ui,-apple-system,Segoe UI,sans-serif}
+main{max-width:900px;margin:auto;padding:22px}.top{display:flex;justify-content:space-between;gap:12px;align-items:center;flex-wrap:wrap}
+.tag{color:#2457b7;font-weight:750;font-size:.82rem;letter-spacing:.04em}.progress{height:9px;background:#e3eaf4;border-radius:20px;overflow:hidden;margin:14px 0 24px}.bar{height:100%;width:0;background:#3978e8;transition:width .2s}
+.panel{background:white;border:1px solid #e2e8f0;border-radius:20px;padding:clamp(18px,4vw,32px);box-shadow:0 8px 28px #19365b0c}
+h1{font-size:clamp(1.7rem,4vw,2.3rem);margin:.2em 0}h2{font-size:1.28rem;margin:.35em 0 1em}.muted{color:var(--muted)}
+.scene{display:flex;justify-content:center;align-items:center;gap:12px;flex-wrap:wrap;background:#f5f8fc;border-radius:16px;padding:20px;margin:18px 0;font-size:2.1rem;min-height:116px}
+.person{display:inline-flex;flex-direction:column;align-items:center;gap:3px;min-width:78px}.person small{font-size:.72rem;color:#64748b}
+.opts{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:10px;margin-top:18px}
+button{font:inherit;cursor:pointer;border:1px solid #cbd5e1;background:white;color:var(--ink);border-radius:12px;padding:13px 15px;font-weight:650}
+button:hover{border-color:var(--blue);background:#f5f8ff}button:disabled{cursor:default;opacity:.8}
+.primary{background:var(--blue);color:white;border-color:var(--blue)}.primary:hover{background:#1d4fb5;color:white}
+.feedback{min-height:32px;margin-top:16px;font-weight:700}.good{color:var(--green)}.bad{color:var(--red)}
+.actions{display:flex;justify-content:space-between;gap:10px;align-items:center;margin-top:22px;flex-wrap:wrap}
+.pill{background:var(--pale);color:#2457b7;border-radius:999px;padding:5px 11px;font-size:.85rem;font-weight:700}
+.tree{display:grid;grid-template-columns:1fr 1fr;gap:12px;max-width:520px;margin:18px auto}
+.branch{background:#f5f8fc;border:1px solid #dce5f1;border-radius:14px;padding:14px;text-align:center}
+.branch .pair{display:flex;justify-content:center;gap:18px;font-size:2rem}.branch small{display:block;color:var(--muted);font-size:.8rem}
+.note{background:#f7faff;border-left:4px solid #7aa5ee;padding:10px 13px;border-radius:8px;margin:14px 0}
+.done{text-align:center;padding:28px}
+@media(max-width:520px){main{padding:12px}.panel{border-radius:15px}.scene{font-size:1.8rem}.tree{gap:7px}.branch{padding:9px}}
+</style></head><body><main>
+<div class="top"><div><div class="tag">LINGUAFLY · PRE-A1 · MISIÓN 029</div><h1>My Family</h1><div class="muted">Personas de mi familia y cómo hablar de ellas.</div></div><div class="pill" id="counter">Reto 1 de 20</div></div>
+<div class="progress"><div class="bar" id="bar"></div></div><section class="panel" id="game"></section></main>
+<script>
+const $=s=>document.querySelector(s);
+const tasks=[
+{kind:'identify',q:'¿Quién es la madre?',scene:[['👩','mother'],['👨','father'],['👧','sister']],o:['sister','mother','father'],a:'mother'},
+{kind:'listen',q:'Escucha la palabra y elige a la persona.',s:'grandfather',scene:[['👴','persona mayor'],['👵','persona mayor']],o:['grandmother','grandfather','father'],a:'grandfather'},
+{kind:'identify',q:'¿Quién es el hermano?',scene:[['👦','boy'],['👧','girl'],['👶','baby']],o:['baby','sister','brother'],a:'brother'},
+{kind:'listen',q:'Escucha la palabra.',s:'baby',scene:[['👶','bebé'],['👧','niña']],o:['baby','sister','mother'],a:'baby'},
+{kind:'match',q:'Elige la palabra que corresponde a la mujer mayor de la familia.',scene:[['👵','abuela'],['👩','madre']],o:['grandmother','mother','sister'],a:'grandmother'},
+{kind:'pronoun',q:'Mira a la persona. Completa: ___ is my father.',scene:[['👨','father']],o:['She','He','They'],a:'He'},
+{kind:'pronoun',q:'Mira a la persona. Completa: ___ is my sister.',scene:[['👧','sister']],o:['They','He','She'],a:'She'},
+{kind:'listen',q:'Escucha la frase y elige el pronombre.',s:'They are my grandparents.',scene:[['👴','grandfather'],['👵','grandmother']],o:['He','They','She'],a:'They'},
+{kind:'identify',q:'¿Qué palabra nombra al padre?',scene:[['👨','adulto'],['👴','adulto mayor'],['👦','niño']],o:['father','grandfather','brother'],a:'father'},
+{kind:'pair',q:'¿Qué dos palabras nombran a los abuelos?',scene:[['👴',''],['👵','']],o:['mother and father','grandmother and grandfather','sister and brother'],a:'grandmother and grandfather'},
+{kind:'listen',q:'Escucha y selecciona la palabra que oyes.',s:'sister',scene:[['👧','hermana'],['👩','madre']],o:['mother','sister','grandmother'],a:'sister'},
+{kind:'pronoun',q:'Completa: ___ is my grandmother.',scene:[['👵','grandmother']],o:['He','She','They'],a:'She'},
+{kind:'identify',q:'¿Quién es el bebé?',scene:[['👶','bebé'],['👦','niño'],['👨','adulto']],o:['brother','baby','father'],a:'baby'},
+{kind:'listen',q:'Escucha la frase y elige la palabra de familia.',s:'He is my brother.',scene:[['👦','niño'],['👧','niña']],o:['brother','father','grandfather'],a:'brother'},
+{kind:'pronoun',q:'Dos personas: completa la frase. ___ are my parents.',scene:[['👩','mother'],['👨','father']],o:['She','He','They'],a:'They'},
+{kind:'identify',q:'¿Quién es la hermana?',scene:[['👧','niña'],['👦','niño'],['👶','bebé']],o:['sister','brother','baby'],a:'sister'},
+{kind:'listen',q:'Escucha la palabra y selecciona la imagen correcta.',s:'mother',scene:[['👩','madre'],['👵','abuela'],['👧','hermana']],o:['grandmother','mother','sister'],a:'mother'},
+{kind:'pronoun',q:'Una mujer: ___ is my mother.',scene:[['👩','mother']],o:['They','She','He'],a:'She'},
+{kind:'pair',q:'Selecciona la pareja de palabras que nombra a dos hermanos.',scene:[['👧',''],['👦','']],o:['sister and brother','mother and father','grandmother and grandfather'],a:'sister and brother'},
+{kind:'review',q:'Elige la frase correcta para hablar de dos abuelos.',scene:[['👴','grandfather'],['👵','grandmother']],o:['He is my grandparents.','She is my grandparents.','They are my grandparents.'],a:'They are my grandparents.'}
+];
+let index=0,score=0,locked=false;
+function shuffle(a){a=[...a];for(let i=a.length-1;i>0;i--){let j=Math.floor(Math.random()*(i+1));[a[i],a[j]]=[a[j],a[i]]}return a}
+function sceneHTML(s){return '<div class="scene">'+s.map(p=>`<span class="person">${p[0]}<small>${p[1]}</small></span>`).join('')+'</div>'}
+function speak(t){if(!('speechSynthesis'in window)){alert('El audio no está disponible en este navegador.');return}speechSynthesis.cancel();let u=new SpeechSynthesisUtterance(t);u.lang='en-GB';u.rate=.86;speechSynthesis.speak(u)}
+function render(){
+ locked=false;const t=tasks[index];$('#counter').textContent=`Reto ${index+1} de 20`;$('#bar').style.width=(index/20*100)+'%';
+ let s=`<div class="tag">RETO ${index+1} · ${t.kind==='listen'?'LISTENING':'PRACTICE'}</div><h2>${t.q}</h2>${sceneHTML(t.scene)}`;
+ if(t.kind==='listen')s+='<button id="play" type="button">▶ Repetir audio</button>';
+ s+='<div class="opts">'+shuffle(t.o).map(o=>`<button type="button" data-answer="${encodeURIComponent(o)}">${o}</button>`).join('')+'</div><div class="feedback" id="feedback" aria-live="polite"></div><div class="actions"><span class="muted">Selecciona una respuesta.</span><button class="primary" id="next" disabled>'+(index===19?'Ver resultado':'Siguiente')+'</button></div>';
+ $('#game').innerHTML=s;let p=$('#play');if(p)p.onclick=()=>speak(t.s);
+ document.querySelectorAll('[data-answer]').forEach(b=>b.onclick=()=>check(b,decodeURIComponent(b.dataset.answer)===t.a,t.a));
+ $('#next').onclick=()=>{if(index<19){index++;render()}else finish()};
+}
+function check(btn,ok,answer){if(locked)return;locked=true;document.querySelectorAll('[data-answer]').forEach(b=>b.disabled=true);let f=$('#feedback');if(ok){score++;f.textContent='¡Correcto!';f.className='feedback good'}else{f.textContent='La respuesta correcta es: '+answer+'.';f.className='feedback bad'}$('#next').disabled=false}
+function finish(){$('#bar').style.width='100%';$('#counter').textContent='Misión completada';$('#game').innerHTML=`<div class="done"><div style="font-size:3rem">👨‍👩‍👧‍👦</div><h2>¡Misión completada!</h2><p>Has terminado los 20 retos de <b>My Family</b>.</p><p>Respuestas correctas: <b>${score} / 20</b></p><p class="muted">Repasa: mother, father, sister, brother, baby, grandmother, grandfather; he, she, they.</p><button class="primary" onclick="location.reload()">Volver a practicar</button></div>`}
+render();
+</script></body></html>

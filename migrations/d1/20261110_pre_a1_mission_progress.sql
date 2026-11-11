@@ -3,7 +3,7 @@
 CREATE TABLE IF NOT EXISTS pre_a1_mission_progress (
   id INTEGER PRIMARY KEY AUTOINCREMENT,
   student_id INTEGER NOT NULL,
-  mission_number INTEGER NOT NULL CHECK (mission_number BETWEEN 1 AND 20),
+  mission_number INTEGER NOT NULL CHECK (mission_number BETWEEN 1 AND 30),
   completed INTEGER NOT NULL DEFAULT 0 CHECK (completed IN (0, 1)),
   completed_at TEXT,
   created_at TEXT NOT NULL DEFAULT CURRENT_TIMESTAMP,

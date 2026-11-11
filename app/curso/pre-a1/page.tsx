@@ -24,6 +24,16 @@ const missions = [
   { id: "018", title: "Seasons of the Year", detail: "Practica las cuatro estaciones del ano." },
   { id: "019", title: "Fruit Market", detail: "Conoce las frutas del mercado." },
   { id: "020", title: "Veggie Garden", detail: "Aprende las verduras de la huerta." },
+  { id: "021", title: "Breakfast Time", detail: "Aprende el vocabulario del desayuno." },
+  { id: "022", title: "At the Cafe", detail: "Practica palabras y frases en la cafeteria." },
+  { id: "023", title: "Animal Sounds", detail: "Descubre los sonidos de los animales en ingles." },
+  { id: "024", title: "Farm Friends", detail: "Conoce los animales de la granja." },
+  { id: "025", title: "Under the Sea", detail: "Explora la vida marina y su vocabulario." },
+  { id: "026", title: "The Bug Hunt", detail: "Descubre los insectos y sus nombres." },
+  { id: "027", title: "At the Zoo", detail: "Conoce los animales del zoologico." },
+  { id: "028", title: "Where Is It?", detail: "Practica las preposiciones de lugar." },
+  { id: "029", title: "My Family", detail: "Aprende el vocabulario de la familia." },
+  { id: "030", title: "People Around Me", detail: "Conoce a las personas que te rodean." },
 ];
 
 export default function PreA1CoursePage() {
