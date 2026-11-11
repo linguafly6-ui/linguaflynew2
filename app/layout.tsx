@@ -1,7 +1,6 @@
 import type { Metadata } from "next";
 import Script from "next/script";
 import Link from "next/link";
-import NavigationBar from "@/components/NavigationBar";
 import "./globals.css";
 
 const siteName = "Linguafly";
@@ -46,7 +45,6 @@ function SiteHeader() {
         <Link href="/" className="brand text-2xl font-black tracking-tight text-slate-900" aria-label="Linguafly home">Linguafly<span>.</span></Link>
         <nav aria-label="Main navigation" className="site-nav flex items-center gap-4 text-sm font-semibold text-slate-600">
           <Link href="/blog">Blog</Link>
-          <NavigationBar />
         </nav>
       </div>
     </header>
