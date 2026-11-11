@@ -1,7 +1,5 @@
 -- Extiende el constraint de pre_a1_mission_progress para admitir misiones 11-20.
 -- Recrea la tabla conservando los datos existentes. Aplicar solo con autorizacion.
-BEGIN TRANSACTION;
-
 CREATE TABLE pre_a1_mission_progress_new (
   id INTEGER PRIMARY KEY AUTOINCREMENT,
   student_id INTEGER NOT NULL,
@@ -22,4 +20,3 @@ ALTER TABLE pre_a1_mission_progress_new RENAME TO pre_a1_mission_progress;
 CREATE INDEX IF NOT EXISTS idx_pre_a1_mission_progress_student
   ON pre_a1_mission_progress(student_id, mission_number);
 
-COMMIT;
