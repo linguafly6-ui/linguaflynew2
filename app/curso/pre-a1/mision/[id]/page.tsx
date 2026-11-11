@@ -13,6 +13,16 @@ const missions: Record<string, { number: number; title: string }> = {
   "008": { number: 8, title: "My Body" },
   "009": { number: 9, title: "Funny Faces" },
   "010": { number: 10, title: "Animal Babies" },
+  "011": { number: 11, title: "At the Playground" },
+  "012": { number: 12, title: "Shapes Around Us" },
+  "013": { number: 13, title: "Big and Small" },
+  "014": { number: 14, title: "My School Bag" },
+  "015": { number: 15, title: "The Classroom" },
+  "016": { number: 16, title: "Days of the Week" },
+  "017": { number: 17, title: "Weather Watchers" },
+  "018": { number: 18, title: "Seasons of the Year" },
+  "019": { number: 19, title: "Fruit Market" },
+  "020": { number: 20, title: "Veggie Garden" },
 };
 
 export default async function PreA1MissionPage({ params }: { params: Promise<{ id: string }> }) {
