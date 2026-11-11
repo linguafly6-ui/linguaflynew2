@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="es"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Linguafly · Misión 020 · Veggie Garden</title>
+<style>
+:root{--ink:#293650;--muted:#6c7890;--blue:#547bd5;--line:#e5eaf2}
+*{box-sizing:border-box}body{margin:0;background:linear-gradient(145deg,#eff8ef,#fff8e9);font-family:system-ui,-apple-system,Segoe UI,sans-serif;color:var(--ink)}
+main{max-width:1020px;margin:auto;padding:22px 16px 50px}.top{display:flex;justify-content:space-between;gap:10px;align-items:center;flex-wrap:wrap}.brand{font-weight:900;letter-spacing:.05em;color:#4d68a0}.tag,.pill{background:#eaf0fc;border-radius:99px;padding:7px 12px;font-size:.85rem}
+h1{font-size:clamp(2rem,5vw,3.1rem);margin:13px 0 4px}.sub{color:var(--muted);margin:0 0 20px}.panel{background:#fff;border:1px solid var(--line);border-radius:24px;padding:clamp(16px,3vw,25px);margin:16px 0;box-shadow:0 12px 34px #2936500c}
+h2{margin:0 0 8px}.hint{color:var(--muted);margin:0 0 15px}.garden{display:grid;grid-template-columns:repeat(auto-fit,minmax(115px,1fr));gap:10px}
+.veg{border:2px solid var(--line);border-radius:18px;background:#fcfefb;padding:12px;text-align:center;cursor:pointer;color:var(--ink)}.veg:hover,.veg:focus{border-color:var(--blue);outline:none}.emoji{font-size:2.7rem;display:block}.veg b{display:block;margin-top:4px}
+button{font:inherit}.primary,.secondary,.option{border:0;border-radius:14px;padding:12px 16px;cursor:pointer;font-weight:750}.primary{background:var(--blue);color:white}.secondary{background:#edf2fa;color:var(--ink)}
+.toolbar{display:flex;gap:10px;align-items:center;flex-wrap:wrap;margin-top:14px}.progress{height:9px;background:#edf1f7;border-radius:99px;overflow:hidden;flex:1;min-width:120px}.bar{height:100%;width:0;background:linear-gradient(90deg,#648fe6,#65b89a);transition:width .2s}
+.qhead{display:flex;justify-content:space-between;gap:10px;align-items:center;flex-wrap:wrap}.qnum{font-weight:850;color:#5a76b1}.prompt{font-size:1.22rem;font-weight:800;margin:15px 0}
+.visual{min-height:118px;border-radius:18px;background:linear-gradient(135deg,#f1f8ef,#fff8e8);display:flex;align-items:center;justify-content:center;gap:14px;font-size:3.5rem;margin:12px 0;text-align:center;padding:12px;flex-wrap:wrap}
+.options{display:grid;grid-template-columns:repeat(auto-fit,minmax(145px,1fr));gap:10px}.option{background:#f1f5fb;color:var(--ink);border:2px solid transparent;min-height:60px}.option:hover{border-color:#91abe0}.option.correct{background:#e5f7ef;border-color:#58ad89}.option.wrong{background:#fff0f2;border-color:#df8fa1}
+.feedback{min-height:28px;font-weight:750;margin:12px 0}.good{color:#25835f}.bad{color:#b84d68}.challenge-actions{display:flex;justify-content:space-between;gap:10px;flex-wrap:wrap}
+.gridletters{display:grid;grid-template-columns:repeat(8,minmax(30px,44px));gap:5px;justify-content:center;margin:18px auto}.letter{padding:9px 0;background:#f0f4fb;border:1px solid #dfe6f1;border-radius:9px;font-weight:850;cursor:pointer}.letter.selected{background:#dce8ff;border-color:#547bd5}.letter.found{background:#dff5e9;border-color:#61b48c}
+.matchgrid{display:grid;grid-template-columns:1fr 1fr;gap:9px}.matchitem{border:2px solid var(--line);border-radius:13px;padding:12px;background:#f8faff;cursor:pointer;font-weight:750}.matchitem.chosen{border-color:var(--blue);background:#eaf0ff}.matchitem.done{border-color:#69b68f;background:#e5f7ef}
+.sortbins{display:grid;grid-template-columns:1fr 1fr;gap:10px}.bin{border:2px dashed #b7c5d9;border-radius:16px;padding:12px;min-height:105px;text-align:center}.bin strong{display:block;margin-bottom:8px}.chips{display:flex;flex-wrap:wrap;gap:8px;justify-content:center}.chip{border:1px solid #dfe6f1;background:#f7f9fd;border-radius:99px;padding:8px 12px;cursor:pointer}.chip.selected{background:#e5edff;border-color:var(--blue)}
+@media(max-width:520px){main{padding:14px 12px 38px}.panel{border-radius:18px}.prompt{font-size:1.08rem}.gridletters{gap:3px}.letter{padding:7px 0}}
+</style></head><body><main>
+<div class="top"><div class="brand">LINGUAFLY · PRE-A1</div><div class="tag">MISIÓN 020 / VEGGIE GARDEN</div></div>
+<h1>Veggie Garden 🥕</h1><p class="sub">Explora el huerto, descubre verduras y clasifícalas.</p>
+<section class="panel" id="explore"><h2>🌱 Explora el huerto</h2><p class="hint">Toca cada verdura para escuchar su nombre en inglés. Observa las imágenes y familiarízate con las palabras.</p><div class="garden" id="garden"></div></section>
+<section class="panel" id="quiz"><div class="qhead"><h2>🎯 Tu reto</h2><span class="qnum" id="qnum">Reto 1 de 20</span></div><div class="progress"><div class="bar" id="bar"></div></div><p class="prompt" id="prompt"></p><div class="visual" id="visual"></div><div id="activity"></div><div class="feedback" id="feedback" aria-live="polite"></div><div class="challenge-actions"><button class="secondary" id="repeat">🔊 Escuchar</button><button class="primary" id="next" disabled>Siguiente →</button></div></section>
+<section class="panel" id="result" style="display:none;text-align:center"><h2>🌟 ¡Huerto explorado!</h2><p id="score"></p><p>Has practicado los nombres de las verduras y su clasificación.</p><button class="primary" onclick="location.reload()">Volver a jugar</button></section>
+<p style="text-align:center;color:var(--muted);font-size:.84rem">Linguafly · Prototipo independiente · Audio en inglés</p></main>
+<script>
+const veggies=[
+ {w:'carrot',e:'🥕',es:'zanahoria',kind:'root'},
+ {w:'tomato',e:'🍅',es:'tomate',kind:'other'},
+ {w:'potato',e:'🥔',es:'patata',kind:'root'},
+ {w:'lettuce',e:'🥬',es:'lechuga',kind:'leaf'},
+ {w:'onion',e:'🧅',es:'cebolla',kind:'root'},
+ {w:'peas',e:'🫛',es:'guisantes',kind:'other'},
+ {w:'cucumber',e:'🥒',es:'pepino',kind:'other'}
+];
+const $=id=>document.getElementById(id);
+function speak(word){if(!('speechSynthesis'in window))return;speechSynthesis.cancel();const u=new SpeechSynthesisUtterance(word);u.lang='en-GB';u.rate=.82;speechSynthesis.speak(u)}
+$('garden').innerHTML=veggies.map(v=>`<button class="veg" data-say="${v.w}"><span class="emoji">${v.e}</span><b>${v.es}</b></button>`).join('');
+document.querySelectorAll('.veg').forEach(b=>b.addEventListener('click',()=>speak(b.dataset.say)));
+const tasks=[
+ {type:'image',w:'carrot',e:'🥕',p:'Mira la imagen. ¿Cómo se dice en inglés?'},
+ {type:'listen',w:'tomato',e:'🍅',p:'Escucha el nombre y selecciona la verdura correcta.'},
+ {type:'image',w:'potato',e:'🥔',p:'¿Qué palabra nombra esta verdura?'},
+ {type:'wordsearch',w:'LETTUCE',p:'Busca LETTUCE en la sopa de letras. Selecciona sus letras en orden.'},
+ {type:'image',w:'onion',e:'🧅',p:'Observa la imagen y elige su nombre en inglés.'},
+ {type:'match',p:'Une cada imagen con su nombre en inglés.'},
+ {type:'listen',w:'peas',e:'🫛',p:'Escucha con atención. ¿Qué verdura es?'},
+ {type:'image',w:'cucumber',e:'🥒',p:'¿Cómo se dice en inglés?'},
+ {type:'listen',w:'carrot',e:'🥕',p:'Escucha y encuentra la imagen correspondiente.'},
+ {type:'wordsearch',w:'TOMATO',p:'¡Otra sopa de letras! Encuentra TOMATO.'},
+ {type:'image',w:'lettuce',e:'🥬',p:'Elige la palabra que corresponde a esta imagen.'},
+ {type:'sort',p:'Clasifica los alimentos según su grupo ilustrado: verduras de hoja, raíces y otros.'},
+ {type:'listen',w:'potato',e:'🥔',p:'¿Qué palabra escuchas?'},
+ {type:'image',w:'peas',e:'🫛',p:'Observa la imagen y selecciona el nombre correcto.'},
+ {type:'match',p:'Relaciona estas tres verduras con sus palabras.'},
+ {type:'listen',w:'onion',e:'🧅',p:'Escucha el nombre en inglés y elige la verdura.'},
+ {type:'image',w:'tomato',e:'🍅',p:'¿Cómo se llama esta verdura en inglés?'},
+ {type:'wordsearch',w:'CUCUMBER',p:'Busca CUCUMBER en la sopa de letras. Selecciona sus letras en orden.'},
+ {type:'listen',w:'cucumber',e:'🥒',p:'Escucha y selecciona la imagen correcta.'},
+ {type:'image',w:'lettuce',e:'🥬',p:'Último reto: identifica esta verdura en inglés.'}
+];
+const slots=[1,2,0,2,1,0,2,1,0,2,1,0,2,1,0,2,1,0,2,1];
+const state={i:0,score:0,answered:false,wordSelected:[],matchFirst:null,matchDone:0,sortDone:0};
+function shuffle(a){return [...a].sort(()=>Math.random()-.5)}
+function veg(w){return veggies.find(v=>v.w===w)}
+function complete(ok,msg){if(state.answered)return;state.answered=true;if(ok)state.score++;$('feedback').textContent=msg;$('feedback').className='feedback '+(ok?'good':'bad');$('next').disabled=false}
+function mc(t){
+ const opts=shuffle([t.w,...shuffle(veggies.filter(v=>v.w!==t.w).map(v=>v.w)).slice(0,2)]);
+ $('activity').innerHTML='<div class="options" id="opts"></div>';
+ opts.forEach(w=>{const b=document.createElement('button');b.className='option';b.textContent=w;b.onclick=()=>{if(state.answered)return;document.querySelectorAll('#opts button').forEach(x=>{x.disabled=true;if(x.textContent===t.w)x.classList.add('correct')});if(w!==t.w)b.classList.add('wrong');complete(w===t.w,w===t.w?'¡Muy bien!':'La respuesta correcta está marcada.');};$('opts').appendChild(b)});
+}
+function wordsearch(t){
+ const word=t.w,grid=Array.from({length:8},()=>Array.from({length:8},()=>String.fromCharCode(65+Math.floor(Math.random()*26))));
+ const row=3,col=0;word.split('').forEach((ch,i)=>grid[row][col+i]=ch);state.wordSelected=[];
+ $('activity').innerHTML='<div class="gridletters" id="letters"></div><div style="text-align:center"><span class="pill" id="selectedWord">Palabra: —</span> <button class="secondary" id="resetWord">Borrar selección</button></div>';
+ grid.forEach((r,ri)=>r.forEach((ch,ci)=>{const b=document.createElement('button');b.className='letter';b.textContent=ch;b.onclick=()=>{if(state.answered||b.classList.contains('selected'))return;b.classList.add('selected');state.wordSelected.push({r:ri,c:ci,ch,el:b});$('selectedWord').textContent='Palabra: '+state.wordSelected.map(x=>x.ch).join('');if(state.wordSelected.length===word.length){const cells=state.wordSelected,picked=cells.map(x=>x.ch).join(''),contiguous=cells.every((x,i)=>i===0||(x.r===cells[i-1].r&&x.c===cells[i-1].c+1));if(picked===word&&contiguous){cells.forEach(x=>x.el.classList.add('found'));complete(true,'¡Palabra encontrada!')}else{$('feedback').textContent='Esa no es la palabra. Prueba otra vez o borra la selección.';$('feedback').className='feedback bad';cells.forEach(x=>x.el.classList.remove('selected'));state.wordSelected=[];$('selectedWord').textContent='Palabra: —'}}};$('letters').appendChild(b)}));
+ $('resetWord').onclick=()=>{state.wordSelected.forEach(x=>x.el.classList.remove('selected'));state.wordSelected=[];$('selectedWord').textContent='Palabra: —';$('feedback').textContent=''};
+}
+function match(){
+ const chosen=shuffle([veg('carrot'),veg('potato'),veg('peas')]),words=shuffle([veg('carrot'),veg('potato'),veg('peas')]);state.matchFirst=null;state.matchDone=0;
+ $('activity').innerHTML='<div class="matchgrid" id="matches"></div><p class="hint" style="text-align:center">Toca una imagen y después su palabra.</p>';const root=$('matches');
+ function pick(btn,side,w){if(state.answered||btn.classList.contains('done'))return;if(!state.matchFirst){state.matchFirst={btn,side,w};btn.classList.add('chosen');return}const first=state.matchFirst;first.btn.classList.remove('chosen');if(first.side!==side&&first.w===w){first.btn.classList.add('done');btn.classList.add('done');state.matchDone++;if(state.matchDone===3)complete(true,'¡Todas las parejas son correctas!')}else{$('feedback').textContent='Esa pareja no coincide. Prueba otra vez.';$('feedback').className='feedback bad'}state.matchFirst=null}
+ chosen.forEach(v=>{const b=document.createElement('button');b.className='matchitem';b.textContent=v.e;b.onclick=()=>pick(b,'image',v.w);root.appendChild(b)});
+ words.forEach(v=>{const b=document.createElement('button');b.className='matchitem';b.textContent=v.w;b.onclick=()=>pick(b,'word',v.w);root.appendChild(b)});
+}
+function sort(){
+ const groups=[{id:'leaf',label:'🥬 De hoja'},{id:'root',label:'🥕 Raíces'},{id:'other',label:'🧺 Otros'}];
+ let current=null,done=new Set();
+ const cards=shuffle(veggies);
+ $('activity').innerHTML='<p class="hint" style="text-align:center">Arrastra cada alimento a su grupo. En móvil, también puedes tocar un alimento y después su grupo.</p><div class="chips" id="chips"></div><div class="sortbins" id="bins"></div>';
+ groups.forEach(g=>{
+  const d=document.createElement('div');d.className='bin';d.dataset.group=g.id;
+  d.innerHTML=`<strong>${g.label}</strong><div class="chips"></div>`;
+  d.addEventListener('dragover',e=>{if(!state.answered){e.preventDefault();d.style.background='#eef4ff'}});
+  d.addEventListener('dragleave',()=>{d.style.background=''});
+  d.addEventListener('drop',e=>{e.preventDefault();d.style.background='';const w=e.dataTransfer.getData('text/plain');const el=document.querySelector('#chips [data-word="'+w+'"]');if(el)place(el,w,g.id)});
+  d.addEventListener('click',()=>{if(current&&!state.answered)place(current.el,current.w,g.id)});
+  $('bins').appendChild(d);
+ });
+ function place(el,w,groupId){
+  if(state.answered||done.has(w))return;
+  const v=veg(w);
+  if(v.kind===groupId){
+   done.add(w);const bin=document.querySelector('.bin[data-group="'+groupId+'"] .chips');
+   bin.appendChild(el);el.classList.remove('selected');el.classList.add('selected');el.disabled=true;el.draggable=false;current=null;
+   $('feedback').textContent='¡Correcto!';$('feedback').className='feedback good';
+   if(done.size===7)complete(true,'¡Has clasificado todas las verduras!');
+  }else{$('feedback').textContent='No es ese grupo. Prueba otra categoría.';$('feedback').className='feedback bad'}
+ }
+ cards.forEach(v=>{
+  const b=document.createElement('button');b.className='chip';b.textContent=v.e+' '+v.es;b.dataset.word=v.w;b.draggable=true;
+  b.addEventListener('dragstart',e=>{if(state.answered||b.disabled){e.preventDefault();return}e.dataTransfer.setData('text/plain',v.w);e.dataTransfer.effectAllowed='move';current={el:b,w:v.w}});
+  b.addEventListener('click',()=>{if(state.answered||b.disabled)return;document.querySelectorAll('#chips .chip').forEach(x=>x.classList.remove('selected'));b.classList.add('selected');current={el:b,w:v.w};$('feedback').textContent='Ahora toca el grupo correspondiente.';$('feedback').className='feedback'});
+  $('chips').appendChild(b);
+ });
+}
+function render(){const t=tasks[state.i];state.answered=false;state.wordSelected=[];state.matchFirst=null;$('qnum').textContent=`Reto ${state.i+1} de ${tasks.length}`;$('bar').style.width=`${state.i/tasks.length*100}%`;$('prompt').textContent=t.p;$('visual').textContent=t.e||'🌿 🥕 🍅 🥬';$('feedback').textContent='';$('feedback').className='feedback';$('next').disabled=true;$('next').textContent=state.i===tasks.length-1?'Ver resultado':'Siguiente →';
+ if(t.type==='image'||t.type==='listen')mc(t);else if(t.type==='wordsearch')wordsearch(t);else if(t.type==='match')match();else sort();
+}
+function repeat(){const t=tasks[state.i];if(t.type==='listen'||t.type==='image')speak(t.w)}
+$('repeat').onclick=repeat;
+$('next').onclick=()=>{if(!state.answered)return;if(state.i<tasks.length-1){state.i++;render()}else{$('quiz').style.display='none';$('explore').style.display='none';$('result').style.display='block';$('score').textContent=`Has completado ${state.score} de ${tasks.length} retos correctamente.`;$('bar').style.width='100%'}};
+render();
+</script></body></html>

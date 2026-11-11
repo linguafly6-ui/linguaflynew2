@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="es"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Linguafly · Misión 019 · Fruit Market</title>
+<style>
+:root{--ink:#293650;--muted:#6c7890;--blue:#547bd5;--line:#e5eaf2}
+*{box-sizing:border-box}body{margin:0;background:linear-gradient(145deg,#f0f7ff,#fff7e9);font-family:system-ui,-apple-system,Segoe UI,sans-serif;color:var(--ink)}
+main{max-width:1020px;margin:auto;padding:22px 16px 50px}.top{display:flex;justify-content:space-between;gap:10px;align-items:center;flex-wrap:wrap}.brand{font-weight:900;letter-spacing:.05em;color:#4d68a0}.tag,.pill{background:#eaf0fc;border-radius:99px;padding:7px 12px;font-size:.85rem}
+h1{font-size:clamp(2rem,5vw,3.1rem);margin:13px 0 4px}.sub{color:var(--muted);margin:0 0 20px}.panel{background:#fff;border:1px solid var(--line);border-radius:24px;padding:clamp(16px,3vw,25px);margin:16px 0;box-shadow:0 12px 34px #2936500c}
+h2{margin:0 0 8px}.hint{color:var(--muted);margin:0 0 15px}.market{display:grid;grid-template-columns:repeat(auto-fit,minmax(120px,1fr));gap:10px}
+.fruit{border:2px solid var(--line);border-radius:18px;background:#fcfdff;padding:12px;text-align:center;cursor:pointer;color:var(--ink)}.fruit:hover,.fruit:focus{border-color:var(--blue);outline:none}.fruit .emoji{font-size:2.7rem;display:block}.fruit b{display:block;margin-top:4px}
+button{font:inherit}.primary,.secondary,.option{border:0;border-radius:14px;padding:12px 16px;cursor:pointer;font-weight:750}.primary{background:var(--blue);color:white}.secondary{background:#edf2fa;color:var(--ink)}
+.toolbar{display:flex;gap:10px;align-items:center;flex-wrap:wrap;margin-top:14px}.progress{height:9px;background:#edf1f7;border-radius:99px;overflow:hidden;flex:1;min-width:120px}.bar{height:100%;width:0;background:linear-gradient(90deg,#648fe6,#65b89a);transition:width .2s}
+.qhead{display:flex;justify-content:space-between;gap:10px;align-items:center;flex-wrap:wrap}.qnum{font-weight:850;color:#5a76b1}.prompt{font-size:1.22rem;font-weight:800;margin:15px 0}.prompt small{display:block;font-size:.91rem;color:var(--muted);font-weight:500;margin-top:5px}
+.visual{min-height:132px;border-radius:18px;background:linear-gradient(135deg,#f4f8ff,#fff7e8);display:flex;align-items:center;justify-content:center;gap:14px;font-size:3.6rem;margin:12px 0;text-align:center;padding:12px;flex-wrap:wrap}.visual .big{font-size:2rem;font-weight:850}.visual .mood{font-size:2.5rem}
+.options{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:10px}.option{background:#f1f5fb;color:var(--ink);border:2px solid transparent;min-height:62px}.option:hover{border-color:#91abe0}.option.correct{background:#e5f7ef;border-color:#58ad89}.option.wrong{background:#fff0f2;border-color:#df8fa1}.feedback{min-height:28px;font-weight:750;margin:12px 0}.good{color:#25835f}.bad{color:#b84d68}.challenge-actions{display:flex;justify-content:space-between;gap:10px;flex-wrap:wrap}.result{display:none;text-align:center}.result.show{display:block}.foot{text-align:center;color:var(--muted);font-size:.84rem;margin-top:24px}
+@media(max-width:520px){main{padding:14px 12px 38px}.panel{border-radius:18px}.prompt{font-size:1.08rem}}
+</style></head><body><main>
+<div class="top"><div class="brand">LINGUAFLY · PRE-A1</div><div class="tag">MISIÓN 019 / FRUIT MARKET</div></div>
+<h1>Fruit Market 🍓</h1><p class="sub">Descubre frutas en el mercado y expresa lo que te gusta.</p>
+<section class="panel" id="explore"><h2>🧺 Explora el mercado</h2><p class="hint">Toca cada fruta para escuchar su nombre en inglés. Después, practica dos formas sencillas de expresar tus gustos.</p>
+<div class="market" id="fruitMarket"></div>
+<div class="toolbar"><span class="pill">I like = Me gusta</span><span class="pill">I don't like = No me gusta</span></div>
+</section>
+<section class="panel" id="quiz"><div class="qhead"><h2>🎯 Tu reto</h2><span class="qnum" id="qnum">Reto 1 de 20</span></div>
+<div class="progress"><div class="bar" id="bar"></div></div><p class="prompt" id="prompt"></p>
+<div class="visual" id="visual"></div><div class="options" id="options"></div><div class="feedback" id="feedback" aria-live="polite"></div>
+<div class="challenge-actions"><button class="secondary" id="repeat">🔊 Escuchar de nuevo</button><button class="primary" id="next" disabled>Siguiente →</button></div></section>
+<section class="panel result" id="result"><h2>🌟 ¡Mercado completado!</h2><p id="score"></p><p>Has practicado los nombres de las frutas y las expresiones <b>I like</b> / <b>I don't like</b>.</p><button class="primary" onclick="location.reload()">Volver a jugar</button></section>
+<p class="foot">Linguafly · Prototipo independiente · Audio en inglés</p></main>
+<script>
+const fruits=[
+ {w:'apple',e:'🍎',es:'manzana'},{w:'pear',e:'🍐',es:'pera'},{w:'orange',e:'🍊',es:'naranja'},
+ {w:'grape',e:'🍇',es:'uva'},{w:'strawberry',e:'🍓',es:'fresa'},{w:'melon',e:'🍈',es:'melón'},
+ {w:'banana',e:'🍌',es:'plátano'}
+];
+function speak(word){if(!('speechSynthesis'in window))return; speechSynthesis.cancel();const u=new SpeechSynthesisUtterance(word);u.lang='en-GB';u.rate=.82;speechSynthesis.speak(u)}
+document.getElementById('fruitMarket').innerHTML=fruits.map(f=>`<button class="fruit" data-say="${f.w}" aria-label="Escuchar ${f.es}"><span class="emoji">${f.e}</span><b>${f.es}</b></button>`).join('');
+document.querySelectorAll('.fruit').forEach(b=>b.addEventListener('click',()=>speak(b.dataset.say)));
+
+const raw=[
+ ['image','apple','🍎','Mira la fruta. ¿Cómo se dice en inglés?'],
+ ['listen','pear','🍐','Escucha y elige la fruta correcta.'],
+ ['image','orange','🍊','¿Cuál es el nombre en inglés de esta fruta?'],
+ ['image','grape','🍇','Observa la imagen y elige su nombre en inglés.'],
+ ['listen','strawberry','🍓','Escucha con atención. ¿Qué fruta es?'],
+ ['image','melon','🍈','¿Cómo se llama esta fruta en inglés?'],
+ ['image','banana','🍌','Mira la fruta. Elige su nombre en inglés.'],
+ ['like','like','🍓','A Sam le gusta esta fruta. ¿Qué puede decir Sam?','👍'],
+ ['listen','apple','🍎','Escucha el nombre y selecciona la imagen.'],
+ ['image','pear','🍐','¿Qué palabra nombra esta fruta?'],
+ ['dislike','dislike','🍊','A Alex no le gusta esta fruta. ¿Qué puede decir Alex?','👎'],
+ ['listen','grape','🍇','Escucha y encuentra la fruta.'],
+ ['image','strawberry','🍓','Elige la palabra correcta para esta imagen.'],
+ ['listen','melon','🍈','¿Qué fruta escuchas?'],
+ ['like','like','🍌','A Mia le gusta esta fruta. Elige la frase correcta.','👍'],
+ ['image','banana','🍌','¿Cómo se dice en inglés?'],
+ ['listen','orange','🍊','Escucha y elige la fruta que oyes.'],
+ ['dislike','dislike','🍇','A Leo no le gusta esta fruta. ¿Qué frase puede usar?','👎'],
+ ['image','melon','🍈','Observa la fruta y selecciona su nombre en inglés.'],
+ ['like','like','🍎','A Eva le gusta esta fruta. ¿Qué puede decir?','👍']
+];
+const slots=[1,2,0,2,1,0,2,1,0,2,1,0,1,2,0,1,2,0,2,1];
+const state={i:0,score:0,answered:false};
+const $=id=>document.getElementById(id);
+function shuffle(a){return [...a].sort(()=>Math.random()-.5)}
+function makeOptions(item){
+ if(item[0]==='like'||item[0]==='dislike')return ["I like","I don't like","I am"];
+ const others=shuffle(fruits.filter(f=>f.w!==item[1])).slice(0,2).map(f=>f.w);
+ return shuffle([item[1],...others]);
+}
+const questions=raw.map((r,i)=>({r,opts:makeOptions(r),slot:slots[i]}));
+function render(){
+ const q=questions[state.i],r=q.r;state.answered=false;
+ $('qnum').textContent=`Reto ${state.i+1} de ${questions.length}`;$('bar').style.width=`${state.i/questions.length*100}%`;
+ $('prompt').textContent=r[3];
+ $('visual').innerHTML=(r[0]==='like'||r[0]==='dislike')?`<span>${r[2]}</span><span class="mood">${r[4]}</span>`:`<span>${r[2]}</span>`;
+ $('options').innerHTML='';
+ const opts=[...q.opts];const correct=opts.indexOf(r[1]);opts.splice(correct,1);opts.splice(q.slot,0,r[1]);
+ opts.forEach((opt,i)=>{const b=document.createElement('button');b.className='option';b.textContent=opt;b.addEventListener('click',()=>answer(i===q.slot,b));$('options').appendChild(b)});
+ $('feedback').textContent='';$('feedback').className='feedback';$('next').disabled=true;$('next').textContent=state.i===questions.length-1?'Ver resultado':'Siguiente →';
+}
+function answer(ok,btn){if(state.answered)return;state.answered=true;const q=questions[state.i];[...$('options').children].forEach((b,i)=>{b.disabled=true;if(i===q.slot)b.classList.add('correct')});if(!ok)btn.classList.add('wrong');else state.score++;$('feedback').textContent=ok?'¡Muy bien!':'Casi. La respuesta correcta está marcada.';$('feedback').className='feedback '+(ok?'good':'bad');$('next').disabled=false;}
+function repeat(){const r=questions[state.i].r;if(r[0]==='listen')speak(r[1]);else if(r[0]==='image')speak(r[1]);else speak(r[1]==='like'?"I like":"I don't like")}
+$('repeat').addEventListener('click',repeat);
+$('next').addEventListener('click',()=>{if(!state.answered)return;if(state.i<questions.length-1){state.i++;render()}else{$('quiz').style.display='none';$('explore').style.display='none';$('result').classList.add('show');$('score').textContent=`Has respondido correctamente ${state.score} de ${questions.length} retos.`;$('bar').style.width='100%'}});
+render();
+</script></body></html>

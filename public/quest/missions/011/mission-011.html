@@ -1,0 +1,101 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Linguafly Quest · Mission 011 — At the Playground</title>
+<style>
+:root{--blue:#147ee8;--navy:#153b73;--green:#19b957;--purple:#7442e8;--yellow:#ffcf45}
+*{box-sizing:border-box}body{margin:0;font-family:"Trebuchet MS",Arial,sans-serif;color:var(--navy);background:linear-gradient(130deg,#dff7ff,#fff6d9)}
+header{display:flex;align-items:center;gap:12px;padding:12px 2.5%;background:#ffffffdf;border-bottom:3px solid #b8e3ff;flex-wrap:wrap}
+.logo{font-size:clamp(22px,3vw,34px);font-weight:1000;color:#075cc4;text-shadow:1px 2px white}.mission{background:#fff0a8;border:3px solid #ffca37;border-radius:28px;padding:9px 18px;font-weight:1000}
+.steps{display:flex;gap:7px;margin-left:auto;flex-wrap:wrap}.step{padding:10px 13px;border-radius:25px;background:#e8eff8;color:#587492;font-weight:900}.step.active{background:#19b957;color:white}.counter{padding:9px 13px;background:white;border:2px solid #bce3ff;border-radius:18px;font-weight:900}
+main{padding:14px 2.5%;display:grid;grid-template-columns:minmax(0,1.7fr) minmax(300px,1fr);gap:14px}
+.scene{background:white;border:5px solid white;border-radius:25px;padding:14px;box-shadow:0 4px 0 #a8ddff}
+.sceneIntro{background:linear-gradient(120deg,#d5f4ff,#fff2ca);border-radius:18px;padding:12px 16px;margin-bottom:12px;display:flex;align-items:center;gap:12px}
+.sceneIntro strong{font-size:clamp(18px,2vw,25px)}.sceneIntro span{font-size:38px}
+.playground{position:relative;min-height:245px;border:3px solid #b9e1ff;border-radius:22px;overflow:hidden;background:linear-gradient(#a9e4ff 0 57%,#a9df85 57% 100%);margin-bottom:12px}
+.sun{position:absolute;right:7%;top:8%;font-size:44px}.cloud{position:absolute;left:8%;top:9%;font-size:40px}
+.equipment{position:absolute;bottom:22px;display:flex;align-items:end;gap:12px;font-size:clamp(50px,7vw,82px);filter:drop-shadow(0 3px 1px #477b4b)}
+.equipment.one{left:8%}.equipment.two{left:42%}.equipment.three{right:7%}
+.cards{display:grid;grid-template-columns:repeat(4,1fr);gap:10px}
+.actionCard{border:3px solid #b9e1ff;border-radius:18px;background:linear-gradient(150deg,#fff,#eff9ff);padding:9px 5px;min-height:135px;cursor:pointer;color:#174276;box-shadow:0 3px #d1ebff}
+.actionCard:hover{transform:translateY(-2px);border-color:#1688ed}.actionCard.done{border-color:#19b957;background:#edfff2}.emoji{font-size:clamp(38px,4vw,58px);display:block}.actionCard b{display:block;font-size:clamp(13px,1.5vw,18px);margin-top:5px}
+.panel{background:white;border:4px solid #b9e2ff;border-radius:25px;padding:14px;box-shadow:0 5px 15px #9bc7df55}
+.narrator{background:#eff8ff;border-radius:17px;padding:14px;display:flex;gap:10px;align-items:center;font-size:17px;font-weight:900;line-height:1.35}
+.wordcard{margin-top:12px;border:2px solid #cce7ff;border-radius:19px;padding:13px;text-align:center}.bigEmoji{font-size:65px}.wordcard h2{font-size:clamp(30px,3vw,42px);color:#1268db;margin:0}.phon{color:#4b6688;font-weight:800}.meaning{font-size:18px;font-weight:900}
+.audio{border:0;background:#1479e8;color:white;border-radius:50%;width:46px;height:46px;font-size:21px;cursor:pointer;flex-shrink:0}
+.question{text-align:center;font-size:19px;font-weight:1000;margin:13px 0 9px}.bottom{display:flex;justify-content:space-between;align-items:center;gap:8px;margin-top:14px;flex-wrap:wrap}
+.action{background:#19b957;border:0;color:white;border-radius:18px;padding:14px 18px;font-size:18px;font-weight:1000;cursor:pointer;box-shadow:0 4px #087d38}.action:disabled{opacity:.45;cursor:not-allowed}
+.vocab{grid-column:1/-1;background:white;border:3px solid #b9e1ff;border-radius:20px;padding:12px}.vocab h3{margin:0 0 8px;color:#7442e8}.chips{display:flex;gap:7px;flex-wrap:wrap}.chip{background:#f5faff;border:1px solid #b9dcff;border-radius:12px;padding:7px 10px;font-weight:900}
+.practice{grid-column:1/-1;background:white;border:4px solid #b9e2ff;border-radius:24px;padding:20px;min-height:390px}.hidden{display:none!important}.barbg{height:13px;background:#e8f0fa;border-radius:20px;overflow:hidden;margin:12px 0}.bar{height:100%;background:#19b957;width:0}.type{font-weight:1000;color:#7442e8}.title{font-size:clamp(24px,3vw,34px);margin:9px 0}.prompt{font-size:20px;font-weight:900}.answers{display:flex;flex-wrap:wrap;gap:11px;margin:20px 0}.answer{border:2px solid #b8dcff;background:#f8fcff;border-radius:15px;padding:13px 17px;font-size:18px;font-weight:900;cursor:pointer;color:#174275}.answer:disabled{cursor:default}.answer.correct{border:3px solid #20b65b;background:#eaffef}.answer.wrong{border:3px solid #e85b5b;background:#fff0f0}.feedback{font-size:19px;font-weight:1000;min-height:30px}.next{float:right}.smallnote{color:#587492;font-size:14px}
+@media(max-width:850px){main{grid-template-columns:1fr}.cards{grid-template-columns:repeat(2,1fr)}.steps{margin-left:0}}
+</style></head><body>
+<header><div class="logo">Linguafly Quest ✦</div><div class="mission">MISIÓN 011 · AT THE PLAYGROUND</div>
+<div class="steps"><div class="step active" id="step1">1 Explorar</div><div class="step" id="step2">2 Practicar · 20 retos</div><div class="step" id="step3">3 ¡Misión completada!</div></div>
+<div class="counter">📖 Diccionario <span id="learnCount">0/7</span></div><div class="counter">⭐ <span id="stars">0</span></div></header>
+<main>
+<section class="scene" id="scene">
+<div class="sceneIntro"><span>🛝</span><div><strong>¡Nos vamos al parque!</strong><br>Descubre siete acciones del parque. Pulsa cada tarjeta, escucha la palabra en inglés y observa el movimiento.</div></div>
+<div class="playground" aria-label="Ilustración de un parque infantil"><span class="sun">☀️</span><span class="cloud">☁️</span><div class="equipment one">🛝 🌳</div><div class="equipment two">🛝</div><div class="equipment three">🛝 🛝</div></div>
+<div class="cards" id="actionCards"></div>
+</section>
+<section class="panel" id="theoryPanel">
+<div class="narrator"><span style="font-size:30px">🧭</span><span>¡Bienvenido al parque! Pulsa cada dibujo para descubrir una acción, su nombre en inglés y su significado.</span></div>
+<div class="wordcard"><div class="bigEmoji" id="bigEmoji">🏃</div><h2 id="word">RUN</h2><div class="phon" id="phon">/rʌn/</div><p class="meaning">En castellano: <span id="meaning">correr</span></p><button class="audio" onclick="speak(currentWord)">🔊</button><div class="smallnote">Escuchar la palabra en inglés</div></div>
+<div class="question" id="theoryQuestion">Pulsa sobre las 7 tarjetas para descubrir todas las acciones.</div>
+<div class="bottom"><span id="theoryProgress">0 de 7 palabras descubiertas</span><button class="action" id="goPractice" disabled onclick="startPractice()">¡A los 20 retos! →</button></div>
+</section>
+<section class="practice hidden" id="practice">
+<div class="type" id="exType">RETO 1 DE 20</div><div class="barbg"><div class="bar" id="bar"></div></div><h2 class="title" id="exTitle">¡Vamos a practicar!</h2><div class="prompt" id="prompt"></div><div id="audioArea"></div><div class="answers" id="answers"></div><div class="feedback" id="feedback"></div><button class="action next hidden" id="next" onclick="nextExercise()">Siguiente reto →</button>
+</section>
+<section class="vocab" id="vocab"><h3>⭐ Palabras de esta misión</h3><div class="chips" id="chips"></div></section>
+</main>
+<script>
+const items=[
+{id:'run',es:'correr',ipa:'/rʌn/',emoji:'🏃',motion:'🏃‍♂️'},
+{id:'jump',es:'saltar',ipa:'/dʒʌmp/',emoji:'🤸',motion:'🤸'},
+{id:'climb',es:'trepar',ipa:'/klaɪm/',emoji:'🧗',motion:'🧗'},
+{id:'swing',es:'columpiarse',ipa:'/swɪŋ/',emoji:'🛝',motion:'🛝'},
+{id:'slide',es:'deslizarse',ipa:'/slaɪd/',emoji:'🛝',motion:'🛝'},
+{id:'play',es:'jugar',ipa:'/pleɪ/',emoji:'⚽',motion:'⚽'},
+{id:'stop',es:'parar',ipa:'/stɒp/',emoji:'✋',motion:'✋'}
+];
+let discovered=new Set(),currentWord='run',idx=0,stars=0,currentExercise=null;
+const $=id=>document.getElementById(id);
+function speak(text){if(!('speechSynthesis'in window))return;speechSynthesis.cancel();const u=new SpeechSynthesisUtterance(text);u.lang='en-GB';u.rate=.88;const voices=speechSynthesis.getVoices();const v=voices.find(v=>v.lang.toLowerCase().startsWith('en-gb'))||voices.find(v=>v.lang.toLowerCase().startsWith('en'));if(v)u.voice=v;speechSynthesis.speak(u);}
+function render(){items.forEach((it,i)=>{const b=document.createElement('button');b.className='actionCard';b.id='action'+i;b.innerHTML=`<span class="emoji">${it.emoji}</span><b>${it.id.toUpperCase()}</b>`;b.onclick=()=>discover(it,i);$('actionCards').appendChild(b)});updateChips();}
+function updateChips(){$('chips').innerHTML=items.map(x=>`<span class="chip">${discovered.has(x.id)?'✓ ':''}${x.id}</span>`).join('');}
+function discover(it,i){discovered.add(it.id);$('action'+i).classList.add('done');currentWord=it.id;$('bigEmoji').textContent=it.motion;$('word').textContent=it.id.toUpperCase();$('meaning').textContent=it.es;$('phon').textContent=it.ipa;$('theoryQuestion').textContent='¡Muy bien! Escucha y repite: '+it.id+'.';$('theoryProgress').textContent=discovered.size+' de 7 palabras descubiertas';$('learnCount').textContent=discovered.size+'/7';updateChips();speak(it.id);if(discovered.size===7){$('goPractice').disabled=false;$('goPractice').textContent='¡Has descubierto todas! A los 20 retos →';}}
+const exercises=[
+['Imagen y palabra','¿Cómo se dice CORRER en inglés?',['run','jump','climb'],'run'],
+['Traducción','¿Qué significa JUMP?',['saltar','parar','jugar'],'saltar'],
+['Escucha','Escucha la palabra y selecciónala.','',['climb']],
+['Acción','¿Qué acción representa la imagen? 🛝',['slide','run','stop'],'slide'],
+['Completa','Completa: S W _ N G',['SWING','SWANG','SWINGG'],'SWING'],
+['Traducción','¿Qué significa PLAY?',['jugar','trepar','correr'],'jugar'],
+['Escucha','Escucha y elige la acción correcta.','',['stop']],
+['Relacionar','¿Cómo se dice TREPAR en inglés?',['climb','jump','swing'],'climb'],
+['Ortografía','Elige la palabra bien escrita para SALTAR.',['jump','jomp','jamp'],'jump'],
+['Comprensión','“Run and stop”. ¿Qué debes hacer?',['correr y parar','saltar y jugar','trepar y deslizarse'],'correr y parar'],
+['Imagen y palabra','¿Qué acción representa 🤸?',['jump','play','slide'],'jump'],
+['Completa','Completa: P L _ Y',['PLAY','PLEY','PLOY'],'PLAY'],
+['Escucha','Escucha la palabra y selecciónala.','',['run']],
+['Elegir','¿Qué acción haces en un columpio?',['swing','climb','stop'],'swing'],
+['Traducción','¿Qué significa SLIDE?',['deslizarse','correr','parar'],'deslizarse'],
+['Ordenar','Ordena las letras: P O T S',['STOP','SPOT','TOPS'],'STOP'],
+['Comprensión','“Jump, jump!” ¿Qué instrucción escuchas?',['¡Salta, salta!','¡Corre, corre!','¡Para, para!'],'¡Salta, salta!'],
+['Elegir','¿Qué palabra significa JUGAR?',['play','climb','slide'],'play'],
+['Pronunciación','Escucha y di en inglés: RUN.','',['run']],
+['Reto final','¿Cómo se dice PARAR en inglés?',['stop','swing','slide'],'stop']
+];
+function startPractice(){if(discovered.size!==7)return;$('scene').classList.add('hidden');$('theoryPanel').classList.add('hidden');$('vocab').classList.add('hidden');$('practice').classList.remove('hidden');$('step2').classList.add('active');idx=0;showExercise();}
+let __optionRound=0,__lastCorrectSlot=-1;
+function balancedOptionValues(options,correctValue){let arr=[...options];let correct=arr.findIndex(x=>String(x).toLowerCase()===String(correctValue).toLowerCase());if(correct<0)return arr.sort(()=>Math.random()-.5);let slot=__optionRound++%arr.length;if(arr.length>1&&slot===__lastCorrectSlot)slot=(slot+1)%arr.length;__lastCorrectSlot=slot;let wrong=arr.filter((_,i)=>i!==correct).sort(()=>Math.random()-.5);wrong.splice(slot,0,arr[correct]);return wrong;}
+function showExercise(){const e=exercises[idx];currentExercise=e;$('exType').textContent=`RETO ${idx+1} DE 20`;$('bar').style.width=(idx/20*100)+'%';$('exTitle').textContent=e[0];$('prompt').textContent=e[1];$('answers').innerHTML='';$('feedback').textContent='';$('next').classList.add('hidden');$('audioArea').innerHTML='';let choices=e[2]||[];
+if(e[2]===''){const target=e[3][0];const play=document.createElement('button');play.className='audio';play.textContent='🔊 Escuchar en inglés';play.onclick=()=>speak(target);$('audioArea').appendChild(play);if(idx===18){const mic=document.createElement('button');mic.className='action';mic.textContent='🎙️ Hablar';mic.onclick=()=>recognize('run');$('audioArea').appendChild(mic);return;}let pool=items.map(x=>x.id).filter(x=>x!==target);choices=[target,...pool.sort(()=>Math.random()-.5).slice(0,2)];}
+balancedOptionValues(choices,e[3]).forEach(a=>{const b=document.createElement('button');b.className='answer';b.textContent=a;b.onclick=()=>check(a);$('answers').appendChild(b)});}
+function check(a){const e=currentExercise,ok=a.toLowerCase()===String(e[3]).toLowerCase();$('feedback').textContent=ok?'¡Muy bien! ¡Respuesta correcta! ⭐':'¡Casi! La respuesta correcta es '+e[3]+'.';$('feedback').style.color=ok?'#159447':'#c34b4b';if(ok){stars++;$('stars').textContent=stars;}document.querySelectorAll('.answer').forEach(b=>{b.disabled=true;if(b.textContent.toLowerCase()===String(e[3]).toLowerCase())b.classList.add('correct');else if(b.textContent.toLowerCase()===a.toLowerCase())b.classList.add('wrong')});$('next').classList.remove('hidden');}
+function recognize(target){const SR=window.SpeechRecognition||window.webkitSpeechRecognition;if(!SR){$('feedback').textContent='El reconocimiento no está disponible. Puedes escuchar y continuar.';$('next').classList.remove('hidden');return;}const r=new SR();r.lang='en-GB';r.interimResults=false;r.maxAlternatives=3;r.onresult=e=>{const said=e.results[0][0].transcript.toLowerCase().replace(/[.,!?]/g,'').trim();const ok=['run','ran'].includes(said);$('feedback').textContent=ok?'¡Perfecto! Has dicho '+said+'.':'He entendido “'+said+'”. La palabra es RUN. Puedes repetir o continuar.';$('feedback').style.color=ok?'#159447':'#c34b4b';if(ok){stars++;$('stars').textContent=stars;}$('next').classList.remove('hidden')};r.onerror=()=>{$('feedback').textContent='No he podido escuchar bien. Puedes volver a intentarlo o continuar.';$('next').classList.remove('hidden')};r.start();}
+function nextExercise(){idx++;if(idx>=20){$('exType').textContent='¡MISIÓN COMPLETADA!';$('exTitle').textContent='¡Lo has hecho genial en el parque!';$('prompt').textContent='Has aprendido siete acciones en inglés.';$('answers').innerHTML='';$('audioArea').textContent='🏆 ⭐';$('feedback').textContent='¡Tus nuevas palabras ya forman parte del Diccionario Ancestral!';$('next').classList.add('hidden');$('bar').style.width='100%';$('step3').classList.add('active');return;}showExercise();}
+render();
+</script></body></html>

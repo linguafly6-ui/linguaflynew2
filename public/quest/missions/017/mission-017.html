@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Linguafly · Misión 017 · Weather Watchers</title>
+<style>
+:root{--ink:#24324a;--muted:#65738b;--blue:#4778d8;--pale:#eef5ff;--yellow:#ffd76b;--green:#3b9b78;--pink:#f4a6bd}
+*{box-sizing:border-box}body{margin:0;background:linear-gradient(160deg,#f4f8ff,#fff9ed);font-family:system-ui,-apple-system,Segoe UI,sans-serif;color:var(--ink)}
+main{max-width:1050px;margin:auto;padding:22px 16px 60px}.top{display:flex;justify-content:space-between;gap:12px;align-items:center;flex-wrap:wrap}.brand{font-weight:850;letter-spacing:.04em;color:#4566a5}.tag{background:#e7efff;border-radius:99px;padding:7px 12px;font-size:.85rem}
+h1{font-size:clamp(2rem,5vw,3.3rem);margin:12px 0 4px}.sub{color:var(--muted);margin:0 0 20px}.panel{background:#fff;border:1px solid #e5ebf5;border-radius:24px;padding:clamp(16px,3vw,26px);box-shadow:0 12px 35px #314b7210;margin:16px 0}
+h2{margin:0 0 8px;font-size:1.45rem}.hint{color:var(--muted);margin:0 0 16px}.sky{display:grid;grid-template-columns:repeat(auto-fit,minmax(130px,1fr));gap:12px}
+.weather{border:2px solid #e5ebf5;border-radius:18px;background:#fbfdff;padding:12px;text-align:center;cursor:pointer;transition:.15s;color:var(--ink)}.weather:hover,.weather:focus{transform:translateY(-2px);border-color:var(--blue);outline:none}.emoji{font-size:3rem;display:block;line-height:1.25}.word{font-size:1.15rem;font-weight:800}.translation{font-size:.9rem;color:var(--muted)}
+.explore-note{margin-top:14px;background:#fff8df;border-radius:14px;padding:12px 14px}
+.toolbar{display:flex;gap:10px;align-items:center;flex-wrap:wrap;margin:14px 0}.pill{background:#eef3fb;border-radius:99px;padding:7px 11px;font-size:.88rem;color:#52627a}
+button{font:inherit}.primary,.secondary,.option{border:0;border-radius:14px;padding:12px 16px;cursor:pointer;font-weight:750}.primary{background:var(--blue);color:white}.secondary{background:#edf2fa;color:var(--ink)}button:disabled{opacity:.5;cursor:not-allowed}
+.progress{height:9px;background:#edf1f7;border-radius:99px;overflow:hidden;flex:1;min-width:120px}.bar{height:100%;width:0;background:linear-gradient(90deg,#5a8be8,#58b99a);transition:width .2s}
+.challenge{display:none}.challenge.active{display:block}.qhead{display:flex;justify-content:space-between;gap:10px;align-items:center;flex-wrap:wrap}.qnum{font-weight:800;color:#5873a8}.prompt{font-size:1.3rem;font-weight:800;margin:16px 0}.prompt small{display:block;font-size:.94rem;font-weight:500;color:var(--muted);margin-top:5px}
+.visual{font-size:4rem;text-align:center;padding:12px;background:#f3f7ff;border-radius:18px;margin:12px 0}.options{display:grid;grid-template-columns:repeat(auto-fit,minmax(145px,1fr));gap:10px}.option{background:#f1f5fb;color:var(--ink);border:2px solid transparent;min-height:58px}.option:hover{border-color:#8eace7}.option.correct{background:#e4f7ef;border-color:#55ae89}.option.wrong{background:#fff0f2;border-color:#e58da0}
+.feedback{min-height:28px;font-weight:750;margin:12px 0}.feedback.good{color:#23845f}.feedback.bad{color:#bd526b}.challenge-actions{display:flex;justify-content:space-between;gap:10px;flex-wrap:wrap;margin-top:12px}
+.result{display:none;text-align:center}.result.show{display:block}.big{font-size:3.5rem}.foot{color:var(--muted);font-size:.85rem;text-align:center;margin-top:24px}
+@media(max-width:520px){main{padding:14px 12px 40px}.panel{border-radius:18px}.prompt{font-size:1.15rem}}
+</style></head>
+<body><main>
+<div class="top"><div class="brand">LINGUAFLY · PRE-A1</div><div class="tag">MISIÓN 017 / WEATHER WATCHERS</div></div>
+<h1>Weather Watchers <span aria-hidden="true">🌦️</span></h1><p class="sub">Observa el cielo, descubre el tiempo y elige la ropa adecuada.</p>
+<section class="panel" id="exploration">
+<h2>🔎 Explora el cielo</h2><p class="hint">Toca cada escena para descubrir cómo se dice en inglés. Escucha y observa el icono.</p>
+<div class="sky" id="sky">
+<button class="weather" data-word="sunny" data-emoji="☀️"><span class="emoji">☀️</span><span class="word">sunny</span><span class="translation">soleado</span></button>
+<button class="weather" data-word="rainy" data-emoji="🌧️"><span class="emoji">🌧️</span><span class="word">rainy</span><span class="translation">lluvioso</span></button>
+<button class="weather" data-word="cloudy" data-emoji="☁️"><span class="emoji">☁️</span><span class="word">cloudy</span><span class="translation">nublado</span></button>
+<button class="weather" data-word="windy" data-emoji="💨"><span class="emoji">💨</span><span class="word">windy</span><span class="translation">ventoso</span></button>
+<button class="weather" data-word="snowy" data-emoji="❄️"><span class="emoji">❄️</span><span class="word">snowy</span><span class="translation">nevado</span></button>
+<button class="weather" data-word="hot" data-emoji="🥵"><span class="emoji">🥵</span><span class="word">hot</span><span class="translation">caluroso</span></button>
+<button class="weather" data-word="cold" data-emoji="🥶"><span class="emoji">🥶</span><span class="word">cold</span><span class="translation">frío</span></button>
+</div>
+<div class="explore-note" id="exploreNote">💡 Consejo: observa el símbolo y escucha la palabra en inglés. Puedes volver a tocar cualquier escena.</div>
+<div class="toolbar"><span class="pill" id="seenCount">0 de 7 escenas exploradas</span><button class="primary" id="startBtn">Empezar los retos</button></div>
+</section>
+<section class="panel" id="challengePanel">
+<div class="qhead"><div><div class="qnum" id="qnum">RETO 1 DE 20</div><h2>Tu misión: observa y responde</h2></div><div class="pill" id="score">Aciertos: 0</div></div>
+<div class="toolbar"><div class="progress"><div class="bar" id="bar"></div></div><span class="pill" id="pct">0%</span></div>
+<div id="challengeArea"></div>
+<div class="result" id="result"><div class="big">🌈</div><h2>¡Misión completada!</h2><p id="resultText"></p><button class="primary" onclick="location.reload()">Volver a explorar</button></div>
+</section>
+<p class="foot">Linguafly · Prototipo independiente · Audio en inglés (en-GB) · Instrucciones en castellano</p>
+</main>
+<script>
+const data=[
+ {w:'sunny',e:'☀️',t:'soleado'},
+ {w:'rainy',e:'🌧️',t:'lluvioso'},
+ {w:'cloudy',e:'☁️',t:'nublado'},
+ {w:'windy',e:'💨',t:'ventoso'},
+ {w:'snowy',e:'❄️',t:'nevado'},
+ {w:'hot',e:'🥵',t:'caluroso'},
+ {w:'cold',e:'🥶',t:'frío'}
+];
+const clothing=[
+ {id:'sunglasses',e:'🕶️',label:'gafas de sol'},
+ {id:'umbrella',e:'☂️',label:'paraguas'},
+ {id:'jacket',e:'🧥',label:'chaqueta'},
+ {id:'coat',e:'🧥',label:'abrigo'},
+ {id:'light',e:'👕',label:'ropa ligera'},
+ {id:'scarf',e:'🧣',label:'bufanda'},
+ {id:'gloves',e:'🧤',label:'guantes'}
+];
+const suitable={
+ sunny:'sunglasses', rainy:'umbrella', cloudy:'jacket',
+ windy:'scarf', snowy:'gloves', hot:'light', cold:'coat'
+};
+let seen=new Set(),index=0,score=0,answered=false;
+function speak(word){if(!('speechSynthesis'in window))return;speechSynthesis.cancel();let u=new SpeechSynthesisUtterance(word);u.lang='en-GB';u.rate=.82;speechSynthesis.speak(u)}
+document.querySelectorAll('.weather').forEach(b=>b.addEventListener('click',()=>{
+ const w=b.dataset.word;seen.add(w);
+ document.getElementById('seenCount').textContent=`${seen.size} de 7 escenas exploradas`;
+ document.getElementById('exploreNote').textContent=`${b.dataset.emoji} ${w} · ${data.find(x=>x.w===w).t}`;
+ speak(w);
+}));
+const questions=[
+ {type:'image',w:'sunny',p:'Observa el cielo. ¿Qué palabra describe esta escena?'},
+ {type:'listen',w:'rainy',p:'Escucha la palabra y elige la escena correcta.'},
+ {type:'word',w:'cloudy',p:'Busca la escena que corresponde a esta palabra.'},
+ {type:'image',w:'windy',p:'¿Qué palabra describe el viento que mueve las cosas?'},
+ {type:'listen',w:'snowy',p:'Escucha y selecciona el tiempo que oyes.'},
+ {type:'word',w:'hot',p:'¿Qué escena corresponde a esta palabra?'},
+ {type:'listen',w:'cold',p:'Escucha la palabra y elige la escena.'},
+ {type:'clothes',w:'sunny',p:'El cielo está soleado. ¿Qué elemento puede protegerte del sol?'},
+ {type:'clothes',w:'rainy',p:'Está lloviendo. ¿Qué necesitas para no mojarte?'},
+ {type:'clothes',w:'cold',p:'Hace frío. ¿Qué prenda ayuda a mantener el calor?'},
+ {type:'image',w:'snowy',p:'Observa la escena. ¿Qué palabra indica que cae nieve?'},
+ {type:'word',w:'windy',p:'Encuentra la escena que representa esta palabra.'},
+ {type:'clothes',w:'hot',p:'Hace calor. ¿Qué tipo de ropa resulta más adecuada?'},
+ {type:'listen',w:'cloudy',p:'Escucha y elige la escena que corresponde.'},
+ {type:'image',w:'rainy',p:'¿Qué palabra describe un día con lluvia?'},
+ {type:'clothes',w:'snowy',p:'Está nevando y hace mucho frío. ¿Qué prenda elegirías?'},
+ {type:'word',w:'cold',p:'Selecciona la escena que corresponde a esta palabra.'},
+ {type:'listen',w:'sunny',p:'Escucha y selecciona la escena correcta.'},
+ {type:'clothes',w:'windy',p:'Hace viento. ¿Qué prenda puede ayudarte a cubrirte?'},
+ {type:'clothes',w:'cloudy',p:'El cielo está nublado y el día fresco. ¿Qué prenda puedes llevar?'}
+];
+function shuffle(a){let x=[...a];for(let i=x.length-1;i>0;i--){let j=Math.floor(Math.random()*(i+1));[x[i],x[j]]=[x[j],x[i]]}return x}
+function makeSlots(){let a=[0,0,0,0,0,0,0,1,1,1,1,1,1,1,2,2,2,2,2,2];for(let k=0;k<2000;k++){a=shuffle(a);if(a.every((v,i)=>i===0||v!==a[i-1]))return a}return [0,1,2,0,1,2,0,1,2,0,1,2,0,1,2,0,1,2,0,1]}
+const slots=makeSlots();questions.forEach((q,i)=>q.slot=slots[i]);
+function weatherOptions(correct){
+ const wrong=shuffle(data.filter(x=>x.w!==correct)).slice(0,2);
+ return shuffle([data.find(x=>x.w===correct),...wrong]);
+}
+function clothesOptions(correct){
+ const wrong=shuffle(clothing.filter(x=>x.id!==correct)).slice(0,2);
+ return shuffle([clothing.find(x=>x.id===correct),...wrong]);
+}
+function render(){
+ if(index>=questions.length){
+  document.getElementById('challengeArea').style.display='none';
+  document.getElementById('result').classList.add('show');
+  document.getElementById('bar').style.width='100%';document.getElementById('pct').textContent='100%';
+  document.getElementById('resultText').textContent=`Has conseguido ${score} de 20 aciertos. ¡Has observado e interpretado el tiempo!`;return;
+ }
+ answered=false;const q=questions[index],d=data.find(x=>x.w===q.w);
+ document.getElementById('qnum').textContent=`RETO ${index+1} DE 20`;
+ document.getElementById('score').textContent=`Aciertos: ${score}`;
+ document.getElementById('bar').style.width=`${index/20*100}%`;
+ document.getElementById('pct').textContent=`${Math.round(index/20*100)}%`;
+ let visual='',opts=[],correct=q.w,clothes=q.type==='clothes';
+ if(q.type==='image'){visual=`<div class="visual">${d.e}</div>`;opts=weatherOptions(q.w).map(x=>({id:x.w,label:x.w,emoji:''}));}
+ if(q.type==='word'){visual=`<div class="visual" style="font-size:2.4rem;font-weight:850">${q.w}</div>`;opts=weatherOptions(q.w).map(x=>({id:x.w,label:x.t,emoji:x.e}));correct=q.w;}
+ if(q.type==='listen'){visual='<div class="visual">🔊 Escucha y observa las escenas</div>';opts=weatherOptions(q.w).map(x=>({id:x.w,label:x.w,emoji:x.e}));}
+ if(clothes){visual=`<div class="visual">${d.e}<div style="font-size:1rem;font-weight:750">${d.t}</div></div>`;opts=clothesOptions(suitable[q.w]).map(x=>({id:x.id,label:x.label,emoji:x.e}));correct=suitable[q.w];}
+ // Put the correct option in a balanced slot after shuffling the distractors.
+ let right=opts.find(x=>x.id===correct),others=shuffle(opts.filter(x=>x.id!==correct)),placed=[...others];
+ placed.splice(q.slot,0,right);
+ document.getElementById('challengeArea').innerHTML=
+ `<div class="prompt">${q.p}<small>${clothes?'Elige según la situación del tiempo.':'Usa las escenas y palabras que descubriste en la exploración.'}</small></div>${visual}<div class="options">${placed.map(x=>`<button class="option" data-choice="${x.id}">${x.emoji?x.emoji+' ':''}${x.label}</button>`).join('')}</div><div class="feedback" id="feedback" aria-live="polite"></div><div class="challenge-actions"><button class="secondary" id="repeat">🔊 ${q.type==='listen'?'Escuchar de nuevo':'Escuchar palabra'}</button><button class="primary" id="next" disabled>${index===19?'Terminar misión':'Siguiente reto'}</button></div>`;
+ if(q.type==='listen')speak(q.w);
+ document.querySelectorAll('.option').forEach(b=>b.addEventListener('click',()=>choose(b,correct)));
+ document.getElementById('repeat').addEventListener('click',()=>speak(q.w));
+ document.getElementById('next').addEventListener('click',()=>{index++;render()});
+}
+function choose(btn,correct){if(answered)return;answered=true;let good=btn.dataset.choice===correct,fb=document.getElementById('feedback');if(good){score++;btn.classList.add('correct');fb.textContent='¡Correcto! Has interpretado bien la escena.';fb.className='feedback good'}else{btn.classList.add('wrong');let label=clothing.find(x=>x.id===correct)?.label||correct;fb.textContent=`No es esa. La respuesta correcta es ${label}.`;fb.className='feedback bad';document.querySelectorAll('.option').forEach(b=>{if(b.dataset.choice===correct)b.classList.add('correct')})}document.getElementById('score').textContent=`Aciertos: ${score}`;document.getElementById('next').disabled=false}
+document.getElementById('startBtn').addEventListener('click',()=>{document.getElementById('challengePanel').scrollIntoView({behavior:'smooth'});render()});
+</script></body></html>

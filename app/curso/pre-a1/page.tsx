@@ -14,6 +14,16 @@ const missions = [
   { id: "008", title: "My Body", detail: "Aprende las partes del cuerpo con actividades interactivas." },
   { id: "009", title: "Funny Faces", detail: "Explora caras y emociones." },
   { id: "010", title: "Animal Babies", detail: "Descubre animales y sus nombres." },
+  { id: "011", title: "At the Playground", detail: "Juega en el parque y aprende vocabulario del recreo." },
+  { id: "012", title: "Shapes Around Us", detail: "Descubre las formas geometricas que te rodean." },
+  { id: "013", title: "Big and Small", detail: "Practica los tamanos: grande y pequeno." },
+  { id: "014", title: "My School Bag", detail: "Conoce los objetos de tu mochila escolar." },
+  { id: "015", title: "The Classroom", detail: "Explora el aula y su vocabulario." },
+  { id: "016", title: "Days of the Week", detail: "Aprende los dias de la semana en ingles." },
+  { id: "017", title: "Weather Watchers", detail: "Descubre el clima y el tiempo atmosferico." },
+  { id: "018", title: "Seasons of the Year", detail: "Practica las cuatro estaciones del ano." },
+  { id: "019", title: "Fruit Market", detail: "Conoce las frutas del mercado." },
+  { id: "020", title: "Veggie Garden", detail: "Aprende las verduras de la huerta." },
 ];
 
 export default function PreA1CoursePage() {

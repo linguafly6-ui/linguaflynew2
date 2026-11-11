@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="es"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Linguafly · Misión 018 · Seasons of the Year</title>
+<style>
+:root{--ink:#27344c;--muted:#68768c;--blue:#547bd5;--line:#e5ebf4}
+*{box-sizing:border-box}body{margin:0;background:linear-gradient(145deg,#f1f6ff,#fff8ed);font-family:system-ui,-apple-system,Segoe UI,sans-serif;color:var(--ink)}
+main{max-width:1050px;margin:auto;padding:22px 16px 55px}.top{display:flex;justify-content:space-between;align-items:center;gap:10px;flex-wrap:wrap}.brand{font-weight:850;letter-spacing:.05em;color:#4c68a1}.tag,.pill{background:#eaf0fc;border-radius:99px;padding:7px 12px;font-size:.86rem}
+h1{font-size:clamp(2rem,5vw,3.2rem);margin:12px 0 4px}.sub{color:var(--muted);margin:0 0 20px}.panel{background:#fff;border:1px solid var(--line);border-radius:24px;padding:clamp(16px,3vw,26px);margin:16px 0;box-shadow:0 12px 34px #27344c0c}
+h2{margin:0 0 8px}.hint{color:var(--muted);margin:0 0 16px}.seasons{display:grid;grid-template-columns:repeat(auto-fit,minmax(185px,1fr));gap:13px}
+.season{border:2px solid var(--line);border-radius:20px;background:#fbfdff;padding:13px;text-align:center;cursor:pointer;color:var(--ink);transition:.15s}.season:hover,.season:focus{border-color:var(--blue);transform:translateY(-2px);outline:none}.scene{height:116px;border-radius:15px;display:flex;align-items:center;justify-content:center;font-size:3.1rem;margin-bottom:9px;gap:5px}.spring{background:linear-gradient(#e8f8e9,#fff1f4)}.summer{background:linear-gradient(#fff3c7,#e2f5ff)}.autumn{background:linear-gradient(#ffe0bc,#fff1df)}.winter{background:linear-gradient(#e5f2ff,#fff)}
+.word{font-size:1.15rem;font-weight:850}.translation{font-size:.9rem;color:var(--muted)}.natureRow{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;margin-top:14px}.natureCard{border:1px solid var(--line);background:#fafcff;border-radius:15px;padding:10px;text-align:center;cursor:pointer}.natureIcon{font-size:2.2rem;display:block}.natureCard b{display:block}.explore-note{margin-top:14px;background:#fff7df;border-radius:14px;padding:12px}
+button{font:inherit}.primary,.secondary,.option{border:0;border-radius:14px;padding:12px 16px;cursor:pointer;font-weight:750}.primary{background:var(--blue);color:white}.secondary{background:#edf2fa;color:var(--ink)}.toolbar{display:flex;gap:10px;align-items:center;flex-wrap:wrap;margin-top:14px}
+.progress{height:9px;background:#edf1f7;border-radius:99px;overflow:hidden;flex:1;min-width:120px}.bar{height:100%;width:0;background:linear-gradient(90deg,#648fe6,#65b89a);transition:width .2s}
+.qhead{display:flex;justify-content:space-between;gap:10px;align-items:center;flex-wrap:wrap}.qnum{font-weight:850;color:#5a76b1}.prompt{font-size:1.25rem;font-weight:800;margin:15px 0}.prompt small{display:block;font-size:.92rem;color:var(--muted);font-weight:500;margin-top:5px}.visual{min-height:118px;border-radius:18px;background:#f3f7ff;display:flex;align-items:center;justify-content:center;gap:12px;font-size:3.1rem;margin:12px 0;text-align:center;padding:10px}.visual .wordbig{font-size:2.1rem;font-weight:850}.options{display:grid;grid-template-columns:repeat(auto-fit,minmax(145px,1fr));gap:10px}.option{background:#f1f5fb;color:var(--ink);border:2px solid transparent;min-height:62px}.option:hover{border-color:#91abe0}.option.correct{background:#e5f7ef;border-color:#58ad89}.option.wrong{background:#fff0f2;border-color:#df8fa1}.feedback{min-height:28px;font-weight:750;margin:12px 0}.good{color:#25835f}.bad{color:#b84d68}.challenge-actions{display:flex;justify-content:space-between;gap:10px;flex-wrap:wrap}.result{display:none;text-align:center}.result.show{display:block}.foot{text-align:center;color:var(--muted);font-size:.84rem;margin-top:24px}
+@media(max-width:520px){main{padding:14px 12px 40px}.panel{border-radius:18px}.prompt{font-size:1.12rem}.natureRow{grid-template-columns:1fr 1fr 1fr}}
+</style></head><body><main>
+<div class="top"><div class="brand">LINGUAFLY · PRE-A1</div><div class="tag">MISIÓN 018 / SEASONS OF THE YEAR</div></div>
+<h1>Seasons of the Year 🍃</h1><p class="sub">Explora los paisajes y descubre palabras de la naturaleza.</p>
+<section class="panel" id="exploration"><h2>🔎 Explora las estaciones</h2><p class="hint">Toca cada paisaje y cada elemento natural para escuchar su nombre en inglés. Observa las pistas de cada ilustración.</p>
+<div class="seasons">
+<button class="season" data-word="spring"><div class="scene spring">🌷 🌸 🌱</div><div class="word">spring</div><div class="translation">primavera</div></button>
+<button class="season" data-word="summer"><div class="scene summer">☀️ 🌻 🌳</div><div class="word">summer</div><div class="translation">verano</div></button>
+<button class="season" data-word="autumn"><div class="scene autumn">🍂 🍁 🌳</div><div class="word">autumn</div><div class="translation">otoño</div></button>
+<button class="season" data-word="winter"><div class="scene winter">❄️ 🌲 ⛄</div><div class="word">winter</div><div class="translation">invierno</div></button>
+</div>
+<h3>Elementos naturales</h3><div class="natureRow">
+<button class="natureCard" data-word="flower"><span class="natureIcon">🌸</span><b>flower</b><span class="translation">flor</span></button>
+<button class="natureCard" data-word="leaf"><span class="natureIcon">🍂</span><b>leaf</b><span class="translation">hoja</span></button>
+<button class="natureCard" data-word="snow"><span class="natureIcon">❄️</span><b>snow</b><span class="translation">nieve</span></button>
+</div>
+<div class="explore-note" id="note">💡 Explora los cuatro paisajes y los tres elementos naturales. Puedes volver a tocarlos cuando quieras.</div>
+<div class="toolbar"><span class="pill" id="seen">0 de 7 elementos explorados</span><button class="primary" id="start">Empezar los retos</button></div>
+</section>
+<section class="panel" id="challengePanel"><div class="qhead"><div><div class="qnum" id="qnum">RETO 1 DE 20</div><h2>Observa y responde</h2></div><span class="pill" id="score">Aciertos: 0</span></div>
+<div class="toolbar"><div class="progress"><div class="bar" id="bar"></div></div><span class="pill" id="pct">0%</span></div>
+<div id="area"></div><div class="result" id="result"><div style="font-size:3.5rem">🌱</div><h2>¡Misión completada!</h2><p id="resultText"></p><button class="primary" onclick="location.reload()">Volver a explorar</button></div></section>
+<p class="foot">Linguafly · Prototipo independiente · Audio solo en inglés (en-GB)</p></main>
+<script>
+const seasons=[
+ {w:'spring',es:'primavera',scene:'🌷 🌸 🌱',art:'spring'},
+ {w:'summer',es:'verano',scene:'☀️ 🌻 🌳',art:'summer'},
+ {w:'autumn',es:'otoño',scene:'🍂 🍁 🌳',art:'autumn'},
+ {w:'winter',es:'invierno',scene:'❄️ 🌲 ⛄',art:'winter'}
+];
+const nature=[
+ {w:'flower',es:'flor',icon:'🌸',scene:'spring'},
+ {w:'leaf',es:'hoja',icon:'🍂',scene:'autumn'},
+ {w:'snow',es:'nieve',icon:'❄️',scene:'winter'}
+];
+const allWords=[...seasons.map(x=>x.w),...nature.map(x=>x.w)];
+let explored=new Set(),idx=0,score=0,answered=false;
+function speak(word){if(!('speechSynthesis'in window))return;speechSynthesis.cancel();const u=new SpeechSynthesisUtterance(word);u.lang='en-GB';u.rate=.82;speechSynthesis.speak(u)}
+function explore(word){explored.add(word);document.getElementById('seen').textContent=`${explored.size} de 7 elementos explorados`;let item=seasons.find(x=>x.w===word)||nature.find(x=>x.w===word);document.getElementById('note').textContent=`${item.scene||item.icon} ${word} · ${item.es}. Observa su forma y su lugar en la ilustración.`;speak(word)}
+document.querySelectorAll('[data-word]').forEach(b=>b.addEventListener('click',()=>explore(b.dataset.word)));
+const qs=[
+ {t:'scene',a:'spring',p:'Observa el paisaje. ¿Qué estación representa?',v:'🌷 🌸 🌱'},
+ {t:'listenSeason',a:'summer',p:'Escucha el nombre y elige el paisaje correcto.'},
+ {t:'scene',a:'autumn',p:'Observa el paisaje. ¿Qué estación representa?',v:'🍂 🍁 🌳'},
+ {t:'natureImage',a:'flower',p:'Observa el elemento natural. ¿Cómo se dice en inglés?',v:'🌸'},
+ {t:'scene',a:'winter',p:'¿Qué estación muestra este paisaje?',v:'❄️ 🌲 ⛄'},
+ {t:'listenSeason',a:'spring',p:'Escucha y selecciona la estación que oyes.'},
+ {t:'wordSeason',a:'summer',p:'Busca el paisaje que corresponde a esta palabra.'},
+ {t:'natureWord',a:'leaf',p:'Lee la palabra y selecciona el elemento natural correcto.'},
+ {t:'scene',a:'autumn',p:'Observa las hojas del paisaje. ¿Qué estación es?',v:'🍂 🍁 🌳'},
+ {t:'listenSeason',a:'winter',p:'Escucha y elige la estación correcta.'},
+ {t:'natureImage',a:'snow',p:'¿Cómo se dice en inglés este elemento natural?',v:'❄️'},
+ {t:'wordSeason',a:'spring',p:'Selecciona el paisaje que corresponde a esta palabra.'},
+ {t:'scene',a:'summer',p:'¿Qué estación representa este paisaje?',v:'☀️ 🌻 🌳'},
+ {t:'listenSeason',a:'autumn',p:'Escucha y selecciona el paisaje que corresponde.'},
+ {t:'natureToScene',a:'flower',p:'En la ilustración explorada, ¿en qué paisaje aparece esta flor?',v:'🌸'},
+ {t:'natureToScene',a:'leaf',p:'En la ilustración explorada, ¿en qué paisaje aparece esta hoja?',v:'🍂'},
+ {t:'natureToScene',a:'snow',p:'En la ilustración explorada, ¿en qué paisaje aparece la nieve?',v:'❄️'},
+ {t:'wordSeason',a:'winter',p:'Encuentra el paisaje que corresponde a esta palabra.'},
+ {t:'listenNature',a:'flower',p:'Escucha la palabra y elige el elemento natural.'},
+ {t:'listenNature',a:'snow',p:'Escucha la palabra y elige el elemento natural.'}
+];
+function shuffle(a){let x=[...a];for(let i=x.length-1;i>0;i--){let j=Math.floor(Math.random()*(i+1));[x[i],x[j]]=[x[j],x[i]]}return x}
+function answerSlots(){let a=[0,0,0,0,0,0,0,1,1,1,1,1,1,2,2,2,2,2,2,2];for(let k=0;k<3000;k++){a=shuffle(a);if(a.every((v,i)=>i===0||v!==a[i-1]))return a}return [0,1,2,0,1,2,0,1,2,0,1,2,0,1,2,0,1,2,0,1]}
+const slots=answerSlots();
+function seasonChoices(correct){const others=shuffle(seasons.filter(s=>s.w!==correct)).slice(0,2);return shuffle([...others,seasons.find(s=>s.w===correct)]).map(s=>({id:s.w,label:s.w,icon:s.scene}));}
+function natureChoices(correct){const others=shuffle(nature.filter(n=>n.w!==correct)).slice(0,2);return shuffle([...others,nature.find(n=>n.w===correct)]).map(n=>({id:n.w,label:n.w,icon:n.icon}));}
+function build(q){
+ let choices=[],correct=q.a,visual='';
+ if(q.t==='scene'){visual=q.v;choices=seasonChoices(q.a);}
+ if(q.t==='listenSeason'){visual='🔊 Escucha la estación';choices=seasonChoices(q.a);}
+ if(q.t==='wordSeason'){visual=`<span class="wordbig">${q.a}</span>`;choices=seasonChoices(q.a);}
+ if(q.t==='natureImage'){visual=q.v;choices=natureChoices(q.a);}
+ if(q.t==='natureWord'){visual=`<span class="wordbig">${q.a}</span>`;choices=natureChoices(q.a);}
+ if(q.t==='natureToScene'){visual=q.v;const n=nature.find(x=>x.w===q.a);correct=n.scene;choices=seasonChoices(correct);}
+ if(q.t==='listenNature'){visual='🔊 Escucha el elemento natural';choices=natureChoices(q.a);}
+ return {choices,correct,visual};
+}
+function render(){
+ if(idx>=qs.length){document.getElementById('area').style.display='none';document.getElementById('result').classList.add('show');document.getElementById('bar').style.width='100%';document.getElementById('pct').textContent='100%';document.getElementById('resultText').textContent=`Has conseguido ${score} de 20 aciertos. Has reconocido las estaciones y los elementos naturales.`;return;}
+ answered=false;const q=qs[idx],b=build(q);let right=b.choices.find(x=>x.id===b.correct),others=shuffle(b.choices.filter(x=>x.id!==b.correct)),placed=[...others];placed.splice(slots[idx],0,right);
+ document.getElementById('qnum').textContent=`RETO ${idx+1} DE 20`;document.getElementById('score').textContent=`Aciertos: ${score}`;document.getElementById('bar').style.width=`${idx/20*100}%`;document.getElementById('pct').textContent=`${Math.round(idx/20*100)}%`;
+ document.getElementById('area').innerHTML=`<div class="prompt">${q.p}<small>Usa los mismos paisajes y elementos que descubriste en la exploración.</small></div><div class="visual">${b.visual}</div><div class="options">${placed.map(o=>`<button class="option" data-id="${o.id}">${o.icon?o.icon+' ':''}${o.label}</button>`).join('')}</div><div class="feedback" id="feedback" aria-live="polite"></div><div class="challenge-actions"><button class="secondary" id="repeat">🔊 Escuchar de nuevo</button><button class="primary" id="next" disabled>${idx===19?'Terminar misión':'Siguiente reto'}</button></div>`;
+ if(q.t==='listenSeason'||q.t==='listenNature')speak(q.a);
+ document.querySelectorAll('.option').forEach(btn=>btn.addEventListener('click',()=>answer(btn,b.correct)));
+ document.getElementById('repeat').addEventListener('click',()=>speak(q.a));
+ document.getElementById('next').addEventListener('click',()=>{idx++;render()});
+}
+function answer(btn,correct){if(answered)return;answered=true;const ok=btn.dataset.id===correct,fb=document.getElementById('feedback');if(ok){score++;btn.classList.add('correct');fb.textContent='¡Correcto! Has reconocido la imagen o la palabra.';fb.className='feedback good'}else{btn.classList.add('wrong');fb.textContent=`Vuelve a observar. La respuesta correcta es ${correct}.`;fb.className='feedback bad';document.querySelectorAll('.option').forEach(b=>{if(b.dataset.id===correct)b.classList.add('correct')})}document.getElementById('score').textContent=`Aciertos: ${score}`;document.getElementById('next').disabled=false}
+document.getElementById('start').addEventListener('click',()=>{document.getElementById('challengePanel').scrollIntoView({behavior:'smooth'});render()});
+</script></body></html>
