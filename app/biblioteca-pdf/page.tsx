@@ -30,18 +30,32 @@ export default function PdfLibraryPage() {
       </header>
       <section className="mt-10">
         <h2 className="text-2xl font-extrabold text-slate-950">Nivel A1 · Principiante</h2>
-        <Link
-          href="/biblioteca-pdf/a1/unidad-1-presentarse"
-          className="mt-5 block rounded-2xl border border-slate-200 bg-white p-6 shadow-sm transition hover:border-blue-200 hover:shadow-md"
-        >
-          <span className="text-xs font-extrabold uppercase tracking-wider text-blue-700">Unidad 1</span>
-          <h3 className="mt-2 text-xl font-extrabold text-slate-950">Saludos y presentaciones en inglés</h3>
-          <p className="mt-2 leading-7 text-slate-600">
-            Aprende a saludar, decir tu nombre, preguntar cómo se llama otra persona y hablar de tu procedencia.
-            Incluye práctica de am, are, my y your.
-          </p>
-          <span className="mt-4 inline-flex font-bold text-blue-700">Ver explicación y ejercicios →</span>
-        </Link>
+        <div className="mt-5 grid gap-5">
+          <Link
+            href="/biblioteca-pdf/a1/unidad-1-presentarse"
+            className="block rounded-2xl border border-slate-200 bg-white p-6 shadow-sm transition hover:border-blue-200 hover:shadow-md"
+          >
+            <span className="text-xs font-extrabold uppercase tracking-wider text-blue-700">Unidad 1</span>
+            <h3 className="mt-2 text-xl font-extrabold text-slate-950">Saludos y presentaciones en inglés</h3>
+            <p className="mt-2 leading-7 text-slate-600">
+              Aprende a saludar, decir tu nombre, preguntar cómo se llama otra persona y hablar de tu procedencia.
+              Incluye práctica de am, are, my y your.
+            </p>
+            <span className="mt-4 inline-flex font-bold text-blue-700">Ver explicación y ejercicios →</span>
+          </Link>
+          <Link
+            href="/biblioteca-pdf/a1/unidad-2-datos-personales"
+            className="block rounded-2xl border border-slate-200 bg-white p-6 shadow-sm transition hover:border-blue-200 hover:shadow-md"
+          >
+            <span className="text-xs font-extrabold uppercase tracking-wider text-blue-700">Unidad 2</span>
+            <h3 className="mt-2 text-xl font-extrabold text-slate-950">El verbo to be e información personal</h3>
+            <p className="mt-2 leading-7 text-slate-600">
+              Practica am, is y are en afirmaciones, negativas y preguntas; aprende a dar datos personales,
+              hablar de edad, país, nacionalidad, profesión y datos de contacto.
+            </p>
+            <span className="mt-4 inline-flex font-bold text-blue-700">Ver explicación y ejercicios →</span>
+          </Link>
+        </div>
       </section>
     </main>
   );
