@@ -1,9 +1,9 @@
 import { getCloudflareContext } from "@opennextjs/cloudflare";
 
-export const runtime = "edge";
+export const dynamic = "force-dynamic";
 
 export async function GET() {
-  const { env } = await getCloudflareContext({ async: true });
+  const { env } = getCloudflareContext();
   const object = await env.LINGUAFLY_MEDIA.get(
     "biblioteca-pdf/a1/unidad-1-presentarse.pdf",
   );
