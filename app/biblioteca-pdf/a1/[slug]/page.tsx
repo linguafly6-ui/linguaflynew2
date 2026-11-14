@@ -31,9 +31,9 @@ const teachingNotes: Record<number, { explanation:string; examples:[string,strin
 14:{explanation:"Para formar negativas con I/you/we/they usamos do not o su contracción don’t + verbo en forma base: I don’t drink coffee. Para preguntar usamos Do + sujeto + verbo base?: Do you play football? Las respuestas cortas son Yes, I do / No, I don’t. Después de don’t y do el verbo no lleva -s.",examples:[["I don’t watch TV in the morning.","No veo la televisión por la mañana."],["Do you like music? Yes, I do.","¿Te gusta la música? Sí."],["Do they work on Sundays? No, they don’t.","¿Trabajan los domingos? No."],["We do not eat meat.","No comemos carne."]],mistakes:["I doesn’t like coffee → I don’t like coffee.","Does you play tennis? → Do you play tennis?","I don’t likes tea → I don’t like tea."],objectives:["Formar negativas con don’t + verbo base.","Construir preguntas con Do you…? y Do they…?","Responder con yes/no short answers correctamente."]}
 };
 
-export function generateStaticParams(){ return Object.keys(units).map((slug)=>({slug})); }
+export function generateStaticParams(){ return Object.keys(units).map((dbSlug)=>({slug:dbSlug.replace(/^a1-/,"")})); }
 export async function generateMetadata({params}:{params:Promise<{slug:string}>}):Promise<Metadata>{
- const {slug}=await params; const u=units[slug]; if(!u)return {};
+ const {slug}=await params; const u=units[`a1-${slug}`]; if(!u)return {};
  const canonical=`https://linguafly.app/biblioteca-pdf/a1/${slug}`;
  const title=`Ejercicios de inglés A1 – Unidad ${u.n}: ${u.title}`;
  return {title,description:u.description,alternates:{canonical},openGraph:{type:"article",title,description:u.description,url:canonical,siteName:"Linguafly"}};
