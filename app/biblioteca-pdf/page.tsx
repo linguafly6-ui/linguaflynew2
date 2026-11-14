@@ -67,6 +67,18 @@ export default function PdfLibraryPage() {
             </p>
             <span className="mt-4 inline-flex font-bold text-blue-700">Ver explicación y ejercicios →</span>
           </Link>
+          <Link
+            href="/biblioteca-pdf/a1/unidad-4-articulos-plurales-demostrativos"
+            className="block rounded-2xl border border-slate-200 bg-white p-6 shadow-sm transition hover:border-blue-200 hover:shadow-md"
+          >
+            <span className="text-xs font-extrabold uppercase tracking-wider text-blue-700">Unidad 4</span>
+            <h3 className="mt-2 text-xl font-extrabold text-slate-950">A, An, plurales y This/That</h3>
+            <p className="mt-2 leading-7 text-slate-600">
+              Practica artículos, plurales regulares, demostrativos, números del 1 al 10, objetos del aula y colores.
+              Incluye reading, listening y writing.
+            </p>
+            <span className="mt-4 inline-flex font-bold text-blue-700">Ver explicación y ejercicios →</span>
+          </Link>
         </div>
       </section>
     </main>
