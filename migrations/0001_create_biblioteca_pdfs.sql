@@ -1,3 +1,4 @@
+-- PDF library binary storage in the blog D1 database.
 CREATE TABLE IF NOT EXISTS biblioteca_pdf_files (
   slug TEXT PRIMARY KEY,
   title TEXT NOT NULL,
