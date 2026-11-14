@@ -7,11 +7,12 @@ const allowedSlugs=new Set([
 ]);
 export async function GET(_request:Request,{params}:{params:Promise<{slug:string}>}){
  const {slug}=await params;
- if(!allowedSlugs.has(slug))return new Response("Unidad no encontrada.",{status:404,headers:{"Cache-Control":"no-store"}});
+ const dbSlug=`a1-${slug}`;
+ if(!allowedSlugs.has(dbSlug))return new Response("Unidad no encontrada.",{status:404,headers:{"Cache-Control":"no-store"}});
  const db=await getDB();
- const pdf=await db.prepare("SELECT title, filename, content_type, size_bytes FROM biblioteca_pdf_files WHERE slug = ? LIMIT 1").bind(slug).first<PdfFileRow>();
+ const pdf=await db.prepare("SELECT title, filename, content_type, size_bytes FROM biblioteca_pdf_files WHERE slug = ? LIMIT 1").bind(dbSlug).first<PdfFileRow>();
  if(!pdf)return new Response("El PDF todavía no está disponible.",{status:404,headers:{"Cache-Control":"no-store"}});
- const chunks=await db.prepare("SELECT chunk_index, content FROM biblioteca_pdf_chunks WHERE slug = ? ORDER BY chunk_index ASC").bind(slug).all<PdfChunkRow>();
+ const chunks=await db.prepare("SELECT chunk_index, content FROM biblioteca_pdf_chunks WHERE slug = ? ORDER BY chunk_index ASC").bind(dbSlug).all<PdfChunkRow>();
  if(!chunks.results.length)return new Response("El archivo PDF está incompleto.",{status:500,headers:{"Cache-Control":"no-store"}});
  const body=new Uint8Array(pdf.size_bytes); let offset=0;
  for(const chunk of chunks.results){const bytes=new Uint8Array(chunk.content);if(offset+bytes.byteLength>body.byteLength)return new Response("El archivo PDF contiene fragmentos no válidos.",{status:500,headers:{"Cache-Control":"no-store"}});body.set(bytes,offset);offset+=bytes.byteLength;}
