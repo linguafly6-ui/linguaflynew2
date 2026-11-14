@@ -25,6 +25,11 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
       changeFrequency: "monthly",
       priority: 0.8,
     },
+    {
+      url: `${SITE_URL}/biblioteca-pdf/a1/unidad-3-to-be-negativa-preguntas`,
+      changeFrequency: "monthly",
+      priority: 0.8,
+    },
   ];
 
   const db = await getDB();
