@@ -204,9 +204,18 @@ export default function A1Unit1LibraryPage() {
         <p className="text-sm font-bold uppercase tracking-widest text-blue-700">Cuaderno de práctica</p>
         <h2 className="mt-2 text-2xl font-black text-slate-950">200 ejercicios de inglés A1</h2>
         <p className="mt-3 leading-7 text-slate-700">
-          El cuaderno descargable de esta unidad está pendiente de incorporarse al almacenamiento de archivos.
-          Esta página ya contiene la explicación didáctica para lectura e indexación; el enlace de descarga se
-          activará cuando el PDF se haya cargado y verificado.
+          Descarga el cuaderno completo con 200 actividades organizadas por bloques, repasa los contenidos
+          de la unidad y comprueba tus respuestas con el solucionario incluido.
+        </p>
+        <a
+          href="/api/biblioteca-pdf/a1/unidad-1-presentarse"
+          className="mt-5 inline-flex items-center justify-center rounded-xl bg-blue-700 px-6 py-3 font-bold text-white shadow-sm transition hover:bg-blue-800 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2"
+          download
+        >
+          Descargar los 200 ejercicios en PDF
+        </a>
+        <p className="mt-3 text-sm text-slate-500">
+          Archivo PDF · Nivel A1 · Unidad 1 · Incluye solucionario.
         </p>
       </section>
 
