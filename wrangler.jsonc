@@ -17,5 +17,44 @@
     "NEXT_PUBLIC_SITE_URL":"https://linguafly.app",
   },
   "ratelimits":[{"name":"AI_RATE_LIMITER","namespace_id":"610154781","simple":{"limit":30,"period":60}}],
-  "send_email":[{"name":"EMAIL","remote":true,"allowed_sender_addresses":["noreply@linguafly.app"]}]
+  "send_email":[{"name":"EMAIL","remote":true,"allowed_sender_addresses":["noreply@linguafly.app"]}],
+  "previews": {
+    "vars": {
+      "NEXT_PUBLIC_SITE_URL": "https://linguafly.app"
+    },
+    "d1_databases": [
+      {
+        "binding": "DB",
+        "database_name": "linguafly-preview",
+        "database_id": "b159641b-1910-49ec-b2ed-fbfae2440377",
+        "remote": true
+      },
+      {
+        "binding": "COURSE_DB",
+        "database_name": "linguafly-learning-preview",
+        "database_id": "7e4e332b-6b37-4b4c-905f-390e1ef0f79a"
+      }
+    ],
+    "r2_buckets": [
+      {
+        "binding": "LINGUAFLY_MEDIA",
+        "bucket_name": "linguafly-media-preview"
+      }
+    ],
+    "send_email": [
+      {
+        "name": "EMAIL",
+        "allowed_sender_addresses": []
+      }
+    ],
+    "ratelimits": [
+      {
+        "name": "AI_RATE_LIMITER",
+        "namespace_id": "610154782",
+        "simple": { "limit": 30, "period": 60 }
+      }
+    ],
+    "ai": { "binding": "AI" },
+    "images": { "binding": "IMAGES" }
+  }
 }
