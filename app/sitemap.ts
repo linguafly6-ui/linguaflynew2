@@ -19,6 +19,12 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
     { url: `${SITE_URL}/iniciar-sesion`, changeFrequency: "yearly", priority: 0.4 },
     { url: `${SITE_URL}/crear-cuenta`, changeFrequency: "monthly", priority: 0.6 },
     { url: `${SITE_URL}/suscripcion`, changeFrequency: "monthly", priority: 0.6 },
+    { url: `${SITE_URL}/biblioteca-pdf`, changeFrequency: "monthly", priority: 0.8 },
+    {
+      url: `${SITE_URL}/biblioteca-pdf/a1/unidad-1-presentarse`,
+      changeFrequency: "monthly",
+      priority: 0.8,
+    },
   ];
 
   const db = await getDB();
