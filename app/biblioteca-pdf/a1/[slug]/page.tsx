@@ -25,7 +25,7 @@ export async function generateMetadata({params}:{params:Promise<{slug:string}>})
  return {title,description:u.description,alternates:{canonical},openGraph:{type:"article",title,description:u.description,url:canonical,siteName:"Linguafly"}};
 }
 export default async function A1UnitPdfPage({params}:{params:Promise<{slug:string}>}){
- const {slug}=await params; const u=units[slug]; if(!u)notFound();
+ const {slug}=await params; const u=units[`a1-${slug}`]; if(!u)notFound();
  const lessons=[["1. Gramática",u.grammar],["2. Vocabulario",u.vocabulary],["3. Reading",u.reading],["4. Listening",u.listening],["5. Writing",u.writing]];
  return <main className="mx-auto min-h-screen max-w-4xl px-5 py-10 sm:px-8 sm:py-14">
   <nav aria-label="Ruta de navegación" className="mb-8 text-sm text-slate-500"><Link href="/" className="hover:text-blue-700">Inicio</Link><span className="mx-2">/</span><Link href="/biblioteca-pdf" className="hover:text-blue-700">Biblioteca PDF</Link><span className="mx-2">/</span><span aria-current="page" className="text-slate-700">Inglés A1 · Unidad {u.n}</span></nav>
