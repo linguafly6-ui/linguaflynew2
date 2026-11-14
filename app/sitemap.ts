@@ -35,6 +35,56 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
       changeFrequency: "monthly",
       priority: 0.8,
     },
+    {
+      url: `${SITE_URL}/biblioteca-pdf/a1/unidad-5-present-simple-rutinas`,
+      changeFrequency: "monthly",
+      priority: 0.8,
+    },
+    {
+      url: `${SITE_URL}/biblioteca-pdf/a1/unidad-6-familia-posesivos-genitivo`,
+      changeFrequency: "monthly",
+      priority: 0.8,
+    },
+    {
+      url: `${SITE_URL}/biblioteca-pdf/a1/unidad-7-colores-descripciones-fisicas`,
+      changeFrequency: "monthly",
+      priority: 0.8,
+    },
+    {
+      url: `${SITE_URL}/biblioteca-pdf/a1/unidad-8-numeros-edad-precios`,
+      changeFrequency: "monthly",
+      priority: 0.8,
+    },
+    {
+      url: `${SITE_URL}/biblioteca-pdf/a1/unidad-9-profesiones-ocupaciones`,
+      changeFrequency: "monthly",
+      priority: 0.8,
+    },
+    {
+      url: `${SITE_URL}/biblioteca-pdf/a1/unidad-10-rutinas-diarias-hora`,
+      changeFrequency: "monthly",
+      priority: 0.8,
+    },
+    {
+      url: `${SITE_URL}/biblioteca-pdf/a1/unidad-11-lugares-ciudad`,
+      changeFrequency: "monthly",
+      priority: 0.8,
+    },
+    {
+      url: `${SITE_URL}/biblioteca-pdf/a1/unidad-12-dias-semana`,
+      changeFrequency: "monthly",
+      priority: 0.8,
+    },
+    {
+      url: `${SITE_URL}/biblioteca-pdf/a1/unidad-13-rutina-diaria`,
+      changeFrequency: "monthly",
+      priority: 0.8,
+    },
+    {
+      url: `${SITE_URL}/biblioteca-pdf/a1/unidad-14-present-simple-dont-do-you`,
+      changeFrequency: "monthly",
+      priority: 0.8,
+    },
   ];
 
   const db = await getDB();

@@ -79,6 +79,66 @@ export default function PdfLibraryPage() {
             </p>
             <span className="mt-4 inline-flex font-bold text-blue-700">Ver explicación y ejercicios →</span>
           </Link>
+          <Link key="unit-5" href="/biblioteca-pdf/a1/unidad-5-present-simple-rutinas" className="block rounded-2xl border border-slate-200 bg-white p-6 shadow-sm transition hover:border-blue-200 hover:shadow-md">
+            <span className="text-xs font-extrabold uppercase tracking-wider text-blue-700">Unidad 5</span>
+            <h3 className="mt-2 text-xl font-extrabold text-slate-950">Present Simple y rutinas</h3>
+            <p className="mt-2 leading-7 text-slate-600">Practica la afirmativa, la regla de la tercera persona (-s/-es/-ies) y los verbos de la rutina diaria.</p>
+            <span className="mt-4 inline-flex font-bold text-blue-700">Ver explicación y ejercicios →</span>
+          </Link>
+          <Link key="unit-6" href="/biblioteca-pdf/a1/unidad-6-familia-posesivos-genitivo" className="block rounded-2xl border border-slate-200 bg-white p-6 shadow-sm transition hover:border-blue-200 hover:shadow-md">
+            <span className="text-xs font-extrabold uppercase tracking-wider text-blue-700">Unidad 6</span>
+            <h3 className="mt-2 text-xl font-extrabold text-slate-950">Familia, posesivos y genitivo sajón</h3>
+            <p className="mt-2 leading-7 text-slate-600">Aprende miembros de la familia, my/your/his/her/our/their y la posesión con 's.</p>
+            <span className="mt-4 inline-flex font-bold text-blue-700">Ver explicación y ejercicios →</span>
+          </Link>
+          <Link key="unit-7" href="/biblioteca-pdf/a1/unidad-7-colores-descripciones-fisicas" className="block rounded-2xl border border-slate-200 bg-white p-6 shadow-sm transition hover:border-blue-200 hover:shadow-md">
+            <span className="text-xs font-extrabold uppercase tracking-wider text-blue-700">Unidad 7</span>
+            <h3 className="mt-2 text-xl font-extrabold text-slate-950">Colores y descripciones físicas</h3>
+            <p className="mt-2 leading-7 text-slate-600">Describe altura, edad, pelo y ojos con colores, adjetivos y have/has got.</p>
+            <span className="mt-4 inline-flex font-bold text-blue-700">Ver explicación y ejercicios →</span>
+          </Link>
+          <Link key="unit-8" href="/biblioteca-pdf/a1/unidad-8-numeros-edad-precios" className="block rounded-2xl border border-slate-200 bg-white p-6 shadow-sm transition hover:border-blue-200 hover:shadow-md">
+            <span className="text-xs font-extrabold uppercase tracking-wider text-blue-700">Unidad 8</span>
+            <h3 className="mt-2 text-xl font-extrabold text-slate-950">Números del 20 al 100, edad y precios</h3>
+            <p className="mt-2 leading-7 text-slate-600">Practica números, How old…?, How much…? y vocabulario de precios y dinero.</p>
+            <span className="mt-4 inline-flex font-bold text-blue-700">Ver explicación y ejercicios →</span>
+          </Link>
+          <Link key="unit-9" href="/biblioteca-pdf/a1/unidad-9-profesiones-ocupaciones" className="block rounded-2xl border border-slate-200 bg-white p-6 shadow-sm transition hover:border-blue-200 hover:shadow-md">
+            <span className="text-xs font-extrabold uppercase tracking-wider text-blue-700">Unidad 9</span>
+            <h3 className="mt-2 text-xl font-extrabold text-slate-950">Profesiones y ocupaciones</h3>
+            <p className="mt-2 leading-7 text-slate-600">Aprende profesiones, a/an y preguntas sobre el trabajo y su lugar.</p>
+            <span className="mt-4 inline-flex font-bold text-blue-700">Ver explicación y ejercicios →</span>
+          </Link>
+          <Link key="unit-10" href="/biblioteca-pdf/a1/unidad-10-rutinas-diarias-hora" className="block rounded-2xl border border-slate-200 bg-white p-6 shadow-sm transition hover:border-blue-200 hover:shadow-md">
+            <span className="text-xs font-extrabold uppercase tracking-wider text-blue-700">Unidad 10</span>
+            <h3 className="mt-2 text-xl font-extrabold text-slate-950">Rutinas diarias y la hora</h3>
+            <p className="mt-2 leading-7 text-slate-600">Describe horarios con What time…?, at, o'clock y half past.</p>
+            <span className="mt-4 inline-flex font-bold text-blue-700">Ver explicación y ejercicios →</span>
+          </Link>
+          <Link key="unit-11" href="/biblioteca-pdf/a1/unidad-11-lugares-ciudad" className="block rounded-2xl border border-slate-200 bg-white p-6 shadow-sm transition hover:border-blue-200 hover:shadow-md">
+            <span className="text-xs font-extrabold uppercase tracking-wider text-blue-700">Unidad 11</span>
+            <h3 className="mt-2 text-xl font-extrabold text-slate-950">Lugares de la ciudad</h3>
+            <p className="mt-2 leading-7 text-slate-600">Practica There is/There are, Where is…? y preposiciones de lugar.</p>
+            <span className="mt-4 inline-flex font-bold text-blue-700">Ver explicación y ejercicios →</span>
+          </Link>
+          <Link key="unit-12" href="/biblioteca-pdf/a1/unidad-12-dias-semana" className="block rounded-2xl border border-slate-200 bg-white p-6 shadow-sm transition hover:border-blue-200 hover:shadow-md">
+            <span className="text-xs font-extrabold uppercase tracking-wider text-blue-700">Unidad 12</span>
+            <h3 className="mt-2 text-xl font-extrabold text-slate-950">Días de la semana</h3>
+            <p className="mt-2 leading-7 text-slate-600">Aprende los siete días, on, weekdays, weekend y actividades semanales.</p>
+            <span className="mt-4 inline-flex font-bold text-blue-700">Ver explicación y ejercicios →</span>
+          </Link>
+          <Link key="unit-13" href="/biblioteca-pdf/a1/unidad-13-rutina-diaria" className="block rounded-2xl border border-slate-200 bg-white p-6 shadow-sm transition hover:border-blue-200 hover:shadow-md">
+            <span className="text-xs font-extrabold uppercase tracking-wider text-blue-700">Unidad 13</span>
+            <h3 className="mt-2 text-xl font-extrabold text-slate-950">Rutina diaria: First, Then, After that</h3>
+            <p className="mt-2 leading-7 text-slate-600">Ordena las acciones de tu día con secuenciadores y Present Simple.</p>
+            <span className="mt-4 inline-flex font-bold text-blue-700">Ver explicación y ejercicios →</span>
+          </Link>
+          <Link key="unit-14" href="/biblioteca-pdf/a1/unidad-14-present-simple-dont-do-you" className="block rounded-2xl border border-slate-200 bg-white p-6 shadow-sm transition hover:border-blue-200 hover:shadow-md">
+            <span className="text-xs font-extrabold uppercase tracking-wider text-blue-700">Unidad 14</span>
+            <h3 className="mt-2 text-xl font-extrabold text-slate-950">Present Simple: don't y Do you…?</h3>
+            <p className="mt-2 leading-7 text-slate-600">Forma negativas y preguntas sobre hábitos con respuestas cortas.</p>
+            <span className="mt-4 inline-flex font-bold text-blue-700">Ver explicación y ejercicios →</span>
+          </Link>
         </div>
       </section>
     </main>
