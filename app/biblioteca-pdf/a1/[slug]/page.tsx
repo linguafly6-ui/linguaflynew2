@@ -21,7 +21,7 @@ const seoOverrides: Record<number, { title:string; description:string; keywords:
 };
 
 function buildUnitSeo(u: Unit){
- const title=`${u.title} en inglés A1: ejercicios y vocabulario | LinguaFly`;
+ const title=`${u.title} | Inglés A1 - LinguaFly`;
  const fullDescription=`${u.description} Practica ${u.grammar.split(/[;,]/)[0].toLowerCase()} con vocabulario de ${u.vocabulary.split(/[,;]/).slice(0,2).join(", ")}. Ejercicios PDF con soluciones.`;
  const description=fullDescription.length>160 ? fullDescription.slice(0,157).replace(/\s+\S*$/, "")+"..." : fullDescription;
  const keywords=[u.title.toLowerCase()+" en inglés",...u.grammar.split(/[;,]/).slice(0,2).map(x=>x.trim().toLowerCase()),...u.vocabulary.split(/[,;]/).slice(0,3).map(x=>x.trim().toLowerCase()),"ejercicios inglés A1 PDF","gramática inglesa A1"].filter(x=>x.length>2).slice(0,8);
@@ -167,7 +167,7 @@ const teachingNotes: Record<number, { explanation:string; examples:[string,strin
 export function generateStaticParams(){ return Object.keys(units).map((dbSlug)=>({slug:dbSlug.replace(/^a1-/,"")})); }
 export async function generateMetadata({params}:{params:Promise<{slug:string}>}):Promise<Metadata>{
  const {slug}=await params; const u=units[`a1-${slug}`]; if(!u)return {};
- const seo=buildUnitSeo(u);
+ const seo=seoOverrides[u.n] ?? buildUnitSeo(u);
  const canonical=`https://linguafly.app/biblioteca-pdf/a1/${slug}`;
  const title=seo.title;
  const description=seo.description;
@@ -177,7 +177,7 @@ export default async function A1UnitPdfPage({params}:{params:Promise<{slug:strin
  const {slug}=await params; const u=units[`a1-${slug}`]; if(!u)notFound();
  const lessons=u.n>=15?[["1. Grammar",u.grammar],["2. Vocabulary",u.vocabulary],["3. Reading",u.reading]]:[["1. Gramática",u.grammar],["2. Vocabulario",u.vocabulary],["3. Reading",u.reading],["4. Listening",u.listening],["5. Writing",u.writing]];
  const note=teachingNotes[u.n];
- const seo=buildUnitSeo(u);
+ const seo=seoOverrides[u.n] ?? buildUnitSeo(u);
  const pageDescription=seo?.description ?? u.description;
  return <main className="mx-auto min-h-screen max-w-4xl px-5 py-10 sm:px-8 sm:py-14">
   <nav aria-label="Ruta de navegación" className="mb-8 text-sm text-slate-500"><Link href="/" className="hover:text-blue-700">Inicio</Link><span className="mx-2">/</span><Link href="/biblioteca-pdf" className="hover:text-blue-700">Biblioteca PDF</Link><span className="mx-2">/</span><span aria-current="page" className="text-slate-700">Inglés A1 · Unidad {u.n}</span></nav>
