@@ -20,6 +20,14 @@ const seoOverrides: Record<number, { title:string; description:string; keywords:
 60:{title:"Repaso de inglés A1: compras y alimentación, unidades 51–59 | LinguaFly",description:"Repasa inglés A1 sobre compras y alimentación: supermercado, alimentos, contables e incontables, some/any, cantidades, ropa, restaurante, recetas, salud y dinero. Incluye ejercicios PDF de Grammar, Vocabulary y Reading con soluciones.",keywords:["repaso inglés A1 compras","shopping and food English","vocabulario alimentos en inglés","supermarket vocabulary","restaurant English","clothes shopping English","money vocabulary","ejercicios inglés A1 PDF"],intro:"Este repaso del módulo 6 integra el inglés de compras y alimentación de las unidades 51–59. Reúne vocabulario del supermercado, alimentos y envases, sustantivos contables e incontables, some y any, preguntas sobre cantidades y precios, ropa y tallas, pedidos en restaurantes, recetas, salud y dinero. El objetivo es aplicar las estructuras en situaciones prácticas: comprar productos, preguntar cuánto cuestan, pedir comida, seguir una receta y hablar de necesidades cotidianas. El PDF incluye práctica de Grammar, Vocabulary y Reading con solucionario."},
 };
 
+function buildUnitSeo(u: Unit){
+ const title=`${u.title} en inglés A1: ejercicios y vocabulario | LinguaFly`;
+ const description=`${u.description} Practica ${u.grammar.split(/[;,]/)[0].toLowerCase()} y vocabulario de ${u.vocabulary.split(/[,;]/).slice(0,3).join(", ")}. Ejercicios PDF con soluciones.`;
+ const keywords=[u.title.toLowerCase()+" en inglés",...u.grammar.split(/[;,]/).slice(0,2).map(x=>x.trim().toLowerCase()),...u.vocabulary.split(/[,;]/).slice(0,3).map(x=>x.trim().toLowerCase()),"ejercicios inglés A1 PDF","gramática inglesa A1"].filter(x=>x.length>2).slice(0,8);
+ const intro=`${u.description} La gramática de esta unidad trabaja ${u.grammar}. El vocabulario incluye ${u.vocabulary}. En comprensión lectora practicarás: ${u.reading}.`;
+ return {title,description,keywords,intro};
+}
+
 const units: Record<string, Unit> = {
 "a1-unidad-5-present-simple-rutinas":{n:5,title:"Present Simple afirmativo y rutinas",description:"Practica el Present Simple afirmativo, la terminación de tercera persona -s/-es/-ies y los verbos de la rutina diaria.",grammar:"Present Simple afirmativo; forma base con I/you/we/they; -s, -es e -ies con he/she/it.",vocabulary:"work, study, eat, drink, sleep, play, wake up, get up, go to work, watch TV y expresiones de tiempo.",reading:"María's daily routine: comprensión de una rutina desde que se despierta hasta que se acuesta.",listening:"David and Sara: horarios, trabajo, desayuno, gimnasio, estudio y actividades de tarde.",writing:"Describe tu rutina y la de otra persona con Present Simple y expresiones de tiempo.",guide:"unidad-5-present-simple-rutinas",exercises:"unidad-5-present-simple-rutinas-ejercicios-soluciones"},
 "a1-unidad-6-familia-posesivos-genitivo":{n:6,title:"Familia, posesivos y genitivo sajón",description:"Aprende el vocabulario de la familia, los adjetivos posesivos y la expresión de posesión con 's.",grammar:"my, your, his, her, our y their; posesivos antes del sustantivo; genitivo sajón con 's.",vocabulary:"mother, father, brother, sister, son, daughter, grandmother, grandfather, uncle, aunt y cousin.",reading:"Carlos and his family: nombres, edades, profesiones y lugares donde viven los familiares.",listening:"Ana and Pedro: hermanos, padres, abuelos y datos sencillos de sus familias.",writing:"Presenta a tu familia, utiliza los posesivos y escribe frases de posesión con 's.",guide:"unidad-6-familia-posesivos-genitivo",exercises:"unidad-6-familia-posesivos-ejercicios-soluciones"},
@@ -150,23 +158,23 @@ const teachingNotes: Record<number, { explanation:string; examples:[string,strin
 export function generateStaticParams(){ return Object.keys(units).map((dbSlug)=>({slug:dbSlug.replace(/^a1-/,"")})); }
 export async function generateMetadata({params}:{params:Promise<{slug:string}>}):Promise<Metadata>{
  const {slug}=await params; const u=units[`a1-${slug}`]; if(!u)return {};
- const seo=seoOverrides[u.n];
+ const seo=buildUnitSeo(u);
  const canonical=`https://linguafly.app/biblioteca-pdf/a1/${slug}`;
- const title=seo?.title ?? `Ejercicios de inglés A1 – Unidad ${u.n}: ${u.title}`;
- const description=seo?.description ?? u.description;
- return {title,description,keywords:seo?.keywords,alternates:{canonical},openGraph:{type:"article",title,description,url:canonical,siteName:"LinguaFly"},twitter:{card:"summary",title,description}};
+ const title=seo.title;
+ const description=seo.description;
+ return {title,description,keywords:seo.keywords,alternates:{canonical},openGraph:{type:"article",title,description,url:canonical,siteName:"LinguaFly"},twitter:{card:"summary",title,description}};
 }
 export default async function A1UnitPdfPage({params}:{params:Promise<{slug:string}>}){
  const {slug}=await params; const u=units[`a1-${slug}`]; if(!u)notFound();
  const lessons=u.n>=15?[["1. Grammar",u.grammar],["2. Vocabulary",u.vocabulary],["3. Reading",u.reading]]:[["1. Gramática",u.grammar],["2. Vocabulario",u.vocabulary],["3. Reading",u.reading],["4. Listening",u.listening],["5. Writing",u.writing]];
  const note=teachingNotes[u.n];
- const seo=seoOverrides[u.n];
+ const seo=buildUnitSeo(u);
  const pageDescription=seo?.description ?? u.description;
  return <main className="mx-auto min-h-screen max-w-4xl px-5 py-10 sm:px-8 sm:py-14">
   <nav aria-label="Ruta de navegación" className="mb-8 text-sm text-slate-500"><Link href="/" className="hover:text-blue-700">Inicio</Link><span className="mx-2">/</span><Link href="/biblioteca-pdf" className="hover:text-blue-700">Biblioteca PDF</Link><span className="mx-2">/</span><span aria-current="page" className="text-slate-700">Inglés A1 · Unidad {u.n}</span></nav>
   <header className="mb-10"><p className="text-sm font-bold uppercase tracking-widest text-blue-700">Biblioteca de ejercicios · Nivel A1</p><h1 className="mt-3 text-4xl font-black leading-tight tracking-tight text-slate-950 sm:text-5xl">Ejercicios de inglés A1 – Unidad {u.n}: {u.title}</h1><p className="mt-5 text-lg leading-8 text-slate-600">{pageDescription}</p></header>
   <article className="space-y-9 text-base leading-8 text-slate-700">
-   <section><h2 className="text-2xl font-extrabold tracking-tight text-slate-950">Qué vas a aprender</h2><p className="mt-3">{pageDescription} {note.explanation}</p>{seo && <p className="mt-3">{seo.intro}</p>}<ul className="mt-4 list-disc space-y-2 pl-6">{note.objectives.map((item)=><li key={item}>{item}</li>)}</ul></section>
+   <section><h2 className="text-2xl font-extrabold tracking-tight text-slate-950">Qué vas a aprender</h2><p className="mt-3">{pageDescription} {note.explanation}</p><p className="mt-3">{seo.intro}</p><ul className="mt-4 list-disc space-y-2 pl-6">{note.objectives.map((item)=><li key={item}>{item}</li>)}</ul></section>
    {u.article && <section><h2 className="text-2xl font-extrabold tracking-tight text-slate-950">Guía de estudio del cuaderno</h2><div className="mt-3 space-y-4 text-base leading-8 text-slate-700">{u.article.split("\n\n").map((paragraph,index)=><p key={index}>{paragraph}</p>)}</div></section>}
    <section><h2 className="text-2xl font-extrabold tracking-tight text-slate-950">1. Explicación y ejemplos</h2><p className="mt-3">{u.grammar}</p><div className="mt-5 grid gap-3 sm:grid-cols-2">{note.examples.map(([en,es])=><div key={en} className="rounded-2xl border border-slate-200 bg-white p-5"><p className="font-bold text-slate-950">{en}</p><p className="mt-1 text-sm text-slate-600">{es}</p></div>)}</div></section>
    <section><h2 className="text-2xl font-extrabold tracking-tight text-slate-950">2. Vocabulario de la unidad</h2><p className="mt-3">{u.vocabulary}</p><p className="mt-3">Estudia las palabras en grupos y crea una frase propia con cada expresión. No memorices únicamente traducciones aisladas: practica las palabras dentro de una situación cotidiana.</p></section>
