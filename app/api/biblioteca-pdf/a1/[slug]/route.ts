@@ -95,5 +95,7 @@ export async function GET(_request:Request,{params}:{params:Promise<{slug:string
   document.setProducer("LinguaFly");
   responseBody=await document.save();
  }
- return new Response(responseBody,{headers:{"Content-Type":pdf.content_type||"application/pdf","Content-Disposition":`attachment; filename="${safeFilename}"`,"Content-Length":String(responseBody.byteLength),"Cache-Control":"public, max-age=3600","X-Content-Type-Options":"nosniff"}});
+ const responseBuffer = new ArrayBuffer(responseBody.byteLength);
+ new Uint8Array(responseBuffer).set(responseBody);
+ return new Response(responseBuffer,{headers:{"Content-Type":pdf.content_type||"application/pdf","Content-Disposition":`attachment; filename="${safeFilename}"`,"Content-Length":String(responseBody.byteLength),"Cache-Control":"public, max-age=3600","X-Content-Type-Options":"nosniff"}});
 }
