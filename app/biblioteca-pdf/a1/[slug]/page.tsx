@@ -22,7 +22,8 @@ const seoOverrides: Record<number, { title:string; description:string; keywords:
 
 function buildUnitSeo(u: Unit){
  const title=`${u.title} en inglés A1: ejercicios y vocabulario | LinguaFly`;
- const description=`${u.description} Practica ${u.grammar.split(/[;,]/)[0].toLowerCase()} y vocabulario de ${u.vocabulary.split(/[,;]/).slice(0,3).join(", ")}. Ejercicios PDF con soluciones.`;
+ const fullDescription=`${u.description} Practica ${u.grammar.split(/[;,]/)[0].toLowerCase()} con vocabulario de ${u.vocabulary.split(/[,;]/).slice(0,2).join(", ")}. Ejercicios PDF con soluciones.`;
+ const description=fullDescription.length>160 ? fullDescription.slice(0,157).replace(/\\s+\\S*$/, "")+"..." : fullDescription;
  const keywords=[u.title.toLowerCase()+" en inglés",...u.grammar.split(/[;,]/).slice(0,2).map(x=>x.trim().toLowerCase()),...u.vocabulary.split(/[,;]/).slice(0,3).map(x=>x.trim().toLowerCase()),"ejercicios inglés A1 PDF","gramática inglesa A1"].filter(x=>x.length>2).slice(0,8);
  const intro=`${u.description} La gramática de esta unidad trabaja ${u.grammar}. El vocabulario incluye ${u.vocabulary}. En comprensión lectora practicarás: ${u.reading}.`;
  return {title,description,keywords,intro};
