@@ -139,6 +139,66 @@ export default function PdfLibraryPage() {
             <p className="mt-2 leading-7 text-slate-600">Forma negativas y preguntas sobre hábitos con respuestas cortas.</p>
             <span className="mt-4 inline-flex font-bold text-blue-700">Ver explicación y ejercicios →</span>
           </Link>
+          <Link key="unit-15" href="/biblioteca-pdf/a1/unidad-15-present-simple-does-doesnt" className="block rounded-2xl border border-slate-200 bg-white p-6 shadow-sm transition hover:border-blue-200 hover:shadow-md">
+            <span className="text-xs font-extrabold uppercase tracking-wider text-blue-700">Unidad 15</span>
+            <h3 className="mt-2 text-xl font-extrabold text-slate-950">Present Simple: doesn't y Does he/she...?</h3>
+            <p className="mt-2 leading-7 text-slate-600">Practica negativas y preguntas en tercera persona con does y doesn't. Amplía el vocabulario de animales y profesiones.</p>
+            <span className="mt-4 inline-flex font-bold text-blue-700">Ver explicación y ejercicios →</span>
+          </Link>
+          <Link key="unit-16" href="/biblioteca-pdf/a1/unidad-16-at-the-cafe" className="block rounded-2xl border border-slate-200 bg-white p-6 shadow-sm transition hover:border-blue-200 hover:shadow-md">
+            <span className="text-xs font-extrabold uppercase tracking-wider text-blue-700">Unidad 16</span>
+            <h3 className="mt-2 text-xl font-extrabold text-slate-950">At the Cafe</h3>
+            <p className="mt-2 leading-7 text-slate-600">Aprende a pedir comida y bebida, ofrecer productos y comprender precios y cuentas.</p>
+            <span className="mt-4 inline-flex font-bold text-blue-700">Ver explicación y ejercicios →</span>
+          </Link>
+          <Link key="unit-17" href="/biblioteca-pdf/a1/unidad-17-breakfast-lunch-dinner" className="block rounded-2xl border border-slate-200 bg-white p-6 shadow-sm transition hover:border-blue-200 hover:shadow-md">
+            <span className="text-xs font-extrabold uppercase tracking-wider text-blue-700">Unidad 17</span>
+            <h3 className="mt-2 text-xl font-extrabold text-slate-950">Breakfast, Lunch & Dinner</h3>
+            <p className="mt-2 leading-7 text-slate-600">Practica vocabulario de alimentos y bebidas y comprende descripciones de las comidas del día.</p>
+            <span className="mt-4 inline-flex font-bold text-blue-700">Ver explicación y ejercicios →</span>
+          </Link>
+          <Link key="unit-18" href="/biblioteca-pdf/a1/unidad-18-likes-dislikes" className="block rounded-2xl border border-slate-200 bg-white p-6 shadow-sm transition hover:border-blue-200 hover:shadow-md">
+            <span className="text-xs font-extrabold uppercase tracking-wider text-blue-700">Unidad 18</span>
+            <h3 className="mt-2 text-xl font-extrabold text-slate-950">Likes & Dislikes</h3>
+            <p className="mt-2 leading-7 text-slate-600">Expresa gustos con like + -ing y explica motivos con Why? Because…</p>
+            <span className="mt-4 inline-flex font-bold text-blue-700">Ver explicación y ejercicios →</span>
+          </Link>
+          <Link key="unit-19" href="/biblioteca-pdf/a1/unidad-19-months-dates-birthdays" className="block rounded-2xl border border-slate-200 bg-white p-6 shadow-sm transition hover:border-blue-200 hover:shadow-md">
+            <span className="text-xs font-extrabold uppercase tracking-wider text-blue-700">Unidad 19</span>
+            <h3 className="mt-2 text-xl font-extrabold text-slate-950">Months, Dates & Birthdays</h3>
+            <p className="mt-2 leading-7 text-slate-600">Aprende meses, fechas y cumpleaños. Practica in + mes, on + fecha y ordinales.</p>
+            <span className="mt-4 inline-flex font-bold text-blue-700">Ver explicación y ejercicios →</span>
+          </Link>
+          <Link key="unit-20" href="/biblioteca-pdf/a1/unidad-20-module-2-review" className="block rounded-2xl border border-slate-200 bg-white p-6 shadow-sm transition hover:border-blue-200 hover:shadow-md">
+            <span className="text-xs font-extrabold uppercase tracking-wider text-blue-700">Unidad 20</span>
+            <h3 className="mt-2 text-xl font-extrabold text-slate-950">Module 2 Review</h3>
+            <p className="mt-2 leading-7 text-slate-600">Repasa de forma integrada los contenidos de las unidades 15–19.</p>
+            <span className="mt-4 inline-flex font-bold text-blue-700">Ver explicación y ejercicios →</span>
+          </Link>
+          <Link key="unit-21" href="/biblioteca-pdf/a1/unidad-21-rooms-in-a-house" className="block rounded-2xl border border-slate-200 bg-white p-6 shadow-sm transition hover:border-blue-200 hover:shadow-md">
+            <span className="text-xs font-extrabold uppercase tracking-wider text-blue-700">Unidad 21</span>
+            <h3 className="mt-2 text-xl font-extrabold text-slate-950">Rooms in a House</h3>
+            <p className="mt-2 leading-7 text-slate-600">Aprende a nombrar habitaciones y comprende descripciones sencillas de viviendas.</p>
+            <span className="mt-4 inline-flex font-bold text-blue-700">Ver explicación y ejercicios →</span>
+          </Link>
+          <Link key="unit-22" href="/biblioteca-pdf/a1/unidad-22-furniture-household-items" className="block rounded-2xl border border-slate-200 bg-white p-6 shadow-sm transition hover:border-blue-200 hover:shadow-md">
+            <span className="text-xs font-extrabold uppercase tracking-wider text-blue-700">Unidad 22</span>
+            <h3 className="mt-2 text-xl font-extrabold text-slate-950">Furniture & Household Items</h3>
+            <p className="mt-2 leading-7 text-slate-600">Identifica muebles y objetos del hogar y expresa posesión con mine, yours, his, hers y ours.</p>
+            <span className="mt-4 inline-flex font-bold text-blue-700">Ver explicación y ejercicios →</span>
+          </Link>
+          <Link key="unit-23" href="/biblioteca-pdf/a1/unidad-23-there-is-there-are" className="block rounded-2xl border border-slate-200 bg-white p-6 shadow-sm transition hover:border-blue-200 hover:shadow-md">
+            <span className="text-xs font-extrabold uppercase tracking-wider text-blue-700">Unidad 23</span>
+            <h3 className="mt-2 text-xl font-extrabold text-slate-950">There is / There are</h3>
+            <p className="mt-2 leading-7 text-slate-600">Describe qué hay en un lugar con there is/are, negativas, preguntas e in/on/under/behind.</p>
+            <span className="mt-4 inline-flex font-bold text-blue-700">Ver explicación y ejercicios →</span>
+          </Link>
+          <Link key="unit-24" href="/biblioteca-pdf/a1/unidad-24-prepositions-of-place" className="block rounded-2xl border border-slate-200 bg-white p-6 shadow-sm transition hover:border-blue-200 hover:shadow-md">
+            <span className="text-xs font-extrabold uppercase tracking-wider text-blue-700">Unidad 24</span>
+            <h3 className="mt-2 text-xl font-extrabold text-slate-950">Prepositions of Place</h3>
+            <p className="mt-2 leading-7 text-slate-600">Describe ubicaciones con next to, between, in front of y opposite. Pregunta Where is/are…?</p>
+            <span className="mt-4 inline-flex font-bold text-blue-700">Ver explicación y ejercicios →</span>
+          </Link>
         </div>
       </section>
     </main>
