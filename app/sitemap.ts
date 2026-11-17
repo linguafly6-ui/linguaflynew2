@@ -110,7 +110,18 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
     { url: `${SITE_URL}/biblioteca-pdf/a1/unidad-34-countable-uncountable-nouns`, changeFrequency: "monthly", priority: 0.8 },
     { url: `${SITE_URL}/biblioteca-pdf/a1/unidad-35-pronouns-possessives`, changeFrequency: "monthly", priority: 0.8 },
     { url: `${SITE_URL}/biblioteca-pdf/a1/unidad-36-prepositions-place-direction`, changeFrequency: "monthly", priority: 0.8 },
-  ];
+  
+        { url: `${SITE_URL}/biblioteca-pdf/a1/unidad-37-talent-skills`, changeFrequency: "monthly", priority: 0.8 },
+        { url: `${SITE_URL}/biblioteca-pdf/a1/unidad-38-asking-for-permission`, changeFrequency: "monthly", priority: 0.8 },
+        { url: `${SITE_URL}/biblioteca-pdf/a1/unidad-39-outdoor-activities`, changeFrequency: "monthly", priority: 0.8 },
+        { url: `${SITE_URL}/biblioteca-pdf/a1/unidad-40-module-4-review-abilities-interests`, changeFrequency: "monthly", priority: 0.8 },
+        { url: `${SITE_URL}/biblioteca-pdf/a1/unidad-41-at-the-airport`, changeFrequency: "monthly", priority: 0.8 },
+        { url: `${SITE_URL}/biblioteca-pdf/a1/unidad-42-transport`, changeFrequency: "monthly", priority: 0.8 },
+        { url: `${SITE_URL}/biblioteca-pdf/a1/unidad-43-travel-verbs`, changeFrequency: "monthly", priority: 0.8 },
+        { url: `${SITE_URL}/biblioteca-pdf/a1/unidad-44-the-weather`, changeFrequency: "monthly", priority: 0.8 },
+        { url: `${SITE_URL}/biblioteca-pdf/a1/unidad-45-seasons`, changeFrequency: "monthly", priority: 0.8 },
+        { url: `${SITE_URL}/biblioteca-pdf/a1/unidad-46-at-the-hotel`, changeFrequency: "monthly", priority: 0.8 },
+        { url: `${SITE_URL}/biblioteca-pdf/a1/unidad-47-holidays`, changeFrequency: "monthly", priority: 0.8 },];
 
   const db = await getDB();
   // The live articles table uses is_published (not published) and articles
