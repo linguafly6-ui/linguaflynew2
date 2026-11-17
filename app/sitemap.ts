@@ -121,7 +121,20 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
         { url: `${SITE_URL}/biblioteca-pdf/a1/unidad-44-the-weather`, changeFrequency: "monthly", priority: 0.8 },
         { url: `${SITE_URL}/biblioteca-pdf/a1/unidad-45-seasons`, changeFrequency: "monthly", priority: 0.8 },
         { url: `${SITE_URL}/biblioteca-pdf/a1/unidad-46-at-the-hotel`, changeFrequency: "monthly", priority: 0.8 },
-        { url: `${SITE_URL}/biblioteca-pdf/a1/unidad-47-holidays`, changeFrequency: "monthly", priority: 0.8 },];
+        { url: `${SITE_URL}/biblioteca-pdf/a1/unidad-47-holidays`, changeFrequency: "monthly", priority: 0.8 },
+        { url: `${SITE_URL}/biblioteca-pdf/a1/unidad-48-sightseeing`, changeFrequency: "monthly", priority: 0.8 },
+        { url: `${SITE_URL}/biblioteca-pdf/a1/unidad-49-packing-a-suitcase`, changeFrequency: "monthly", priority: 0.8 },
+        { url: `${SITE_URL}/biblioteca-pdf/a1/unidad-50-module-5-review-places-travel`, changeFrequency: "monthly", priority: 0.8 },
+        { url: `${SITE_URL}/biblioteca-pdf/a1/unidad-51-at-the-supermarket`, changeFrequency: "monthly", priority: 0.8 },
+        { url: `${SITE_URL}/biblioteca-pdf/a1/unidad-52-countable-uncountable`, changeFrequency: "monthly", priority: 0.8 },
+        { url: `${SITE_URL}/biblioteca-pdf/a1/unidad-53-some-any-containers`, changeFrequency: "monthly", priority: 0.8 },
+        { url: `${SITE_URL}/biblioteca-pdf/a1/unidad-54-how-much-how-many`, changeFrequency: "monthly", priority: 0.8 },
+        { url: `${SITE_URL}/biblioteca-pdf/a1/unidad-55-clothing-store`, changeFrequency: "monthly", priority: 0.8 },
+        { url: `${SITE_URL}/biblioteca-pdf/a1/unidad-56-at-the-restaurant`, changeFrequency: "monthly", priority: 0.8 },
+        { url: `${SITE_URL}/biblioteca-pdf/a1/unidad-57-cooking-recipes`, changeFrequency: "monthly", priority: 0.8 },
+        { url: `${SITE_URL}/biblioteca-pdf/a1/unidad-58-health-illness`, changeFrequency: "monthly", priority: 0.8 },
+        { url: `${SITE_URL}/biblioteca-pdf/a1/unidad-59-money-currency`, changeFrequency: "monthly", priority: 0.8 },
+        { url: `${SITE_URL}/biblioteca-pdf/a1/unidad-60-module-6-review-shopping-food`, changeFrequency: "monthly", priority: 0.8 },];
 
   const db = await getDB();
   // The live articles table uses is_published (not published) and articles
