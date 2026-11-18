@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import { A2_PDF_UNITS } from "@/lib/a2-pdf-units";
+import { getA2ReadingPassages } from "@/lib/a2-exercise-generator";
 
 type Props = { params: Promise<{ slug: string }> };
 
@@ -27,6 +28,7 @@ export default async function A2PdfUnitPage({ params }: Props) {
   const { slug } = await params;
   const unit = A2_PDF_UNITS.find((item) => item.slug === slug);
   if (!unit) notFound();
+  const readingPassages = getA2ReadingPassages();
 
   return (
     <main className="mx-auto min-h-screen max-w-4xl px-5 py-10 sm:px-8 sm:py-14">
@@ -60,6 +62,18 @@ export default async function A2PdfUnitPage({ params }: Props) {
         <ul className="mt-4 space-y-3 text-slate-700">
           {unit.examples.map((item) => <li key={item} className="rounded-xl bg-slate-50 p-3">{item}</li>)}
         </ul>
+      </section>
+      <section className="mt-6 rounded-2xl border bg-white p-6">
+        <h2 className="text-lg font-extrabold">Reading: textos de comprensión</h2>
+        <p className="mt-2 text-sm text-slate-600">Lee estos textos en inglés antes de responder a las 60 preguntas de comprensión incluidas en el cuaderno PDF.</p>
+        <div className="mt-5 space-y-5">
+          {readingPassages.map((passage, index) => (
+            <article key={passage.title} className="rounded-xl bg-slate-50 p-4">
+              <h3 className="font-bold text-slate-900">Text {index + 1}: {passage.title}</h3>
+              <p className="mt-2 leading-7 text-slate-700">{passage.body}</p>
+            </article>
+          ))}
+        </div>
       </section>
       <section className="mt-6 rounded-2xl border bg-white p-6">
         <h2 className="text-lg font-extrabold">Practica lo aprendido</h2>
