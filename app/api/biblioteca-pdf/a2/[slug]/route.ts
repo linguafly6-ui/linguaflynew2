@@ -1,6 +1,6 @@
 import { PDFDocument, StandardFonts, rgb } from "pdf-lib";
 import { A2_PDF_UNITS } from "@/lib/a2-pdf-units";
-import { buildA2ExerciseSections } from "@/lib/a2-exercise-generator";
+import { buildA2ExerciseSections, getA2ReadingPassages } from "@/lib/a2-exercise-generator";
 
 export const runtime = "nodejs";
 export const dynamic = "force-dynamic";
@@ -42,8 +42,16 @@ export async function GET(_request: Request, { params }: Params) {
     y = pageHeight - 54;
   };
   const ensure = (height: number) => { if (y - height < 58) nextPage(); };
+  const cleanPdfText = (value: string) => value
+    .replace(/[→➜]/g, "->")
+    .replace(/[“”]/g, '"')
+    .replace(/[‘’]/g, "'")
+    .replace(/[—–]/g, "-")
+    .replace(/…/g, "...")
+    .replace(/•/g, "-")
+    .replace(/\u00a0/g, " ");
   const wrap = (value: string, font: typeof regular, size: number) => {
-    const words = value.split(/\s+/);
+    const words = cleanPdfText(value).split(/\s+/);
     const lines: string[] = [];
     let line = "";
     for (const word of words) {
@@ -96,6 +104,14 @@ export async function GET(_request: Request, { params }: Params) {
   paragraph("Distribución: 80 ejercicios de gramática, 60 de vocabulario y 60 preguntas de reading. Completa primero todas las actividades y consulta después las soluciones.", { size: 9, color: rgb(0.38, 0.43, 0.52), gap: 8 });
   let exerciseNumber = 1;
   for (const section of sections) {
+    if (section.title.startsWith("READING")) {
+      heading("READING TEXTS - Lee los 12 textos antes de responder");
+      const passages = getA2ReadingPassages();
+      passages.forEach((passage, index) => {
+        paragraph(`TEXT ${index + 1}: ${passage.title}`, { font: bold, size: 9.5, gap: 3 });
+        paragraph(passage.body, { size: 9, gap: 9 });
+      });
+    }
     heading(section.title);
     for (const exercise of section.exercises) {
       paragraph(`${exerciseNumber}. ${exercise.question}`, { font: bold, size: 8.5, gap: 2 });
