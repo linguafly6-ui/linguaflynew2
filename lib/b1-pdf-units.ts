@@ -1,6 +1,6 @@
 import type { A2PdfUnit } from "./a2-pdf-unit-types";
 
-const B1_SEEDS: Omit<A2PdfUnit, "readingPassages">[] = [
+const B1_SEEDS: Omit<A2PdfUnit, "readingPassages">[] =  [
   {
     "number": 1,
     "slug": "unidad-1-present-perfect-vs-past-simple",
@@ -283,117 +283,7 @@ const B1_SEEDS: Omit<A2PdfUnit, "readingPassages">[] = [
   },
   {
     "number": 6,
-    "slug": "unidad-6-future-continuous",
-    "title": "Future Continuous",
-    "focus": "Hablar de acciones que estarán en progreso en un momento futuro.",
-    "explanation": "Se forma con will be + verbo-ing. Describe una actividad que estará ocurriendo en un momento concreto del futuro y también puede servir para preguntar por planes de manera educada.",
-    "structure": [
-      "will be + -ing",
-      "this time tomorrow/next week",
-      "preguntas: Will + sujeto + be + -ing?"
-    ],
-    "examples": [
-      "This time tomorrow, I'll be flying to Rome.",
-      "At eight, we'll be having dinner.",
-      "Will you be using the car tonight?"
-    ],
-    "vocabulary": [
-      "in progress — en curso",
-      "flight — vuelo",
-      "schedule — horario",
-      "available — disponible"
-    ],
-    "exercises": [
-      {
-        "question": "At 9 tomorrow, I ___ (travel) to work.",
-        "answer": "will be travelling / traveling",
-        "note": "Acción en progreso en un momento futuro."
-      },
-      {
-        "question": "This time next week, they ___ (stay) in Lisbon.",
-        "answer": "will be staying",
-        "note": "Will be + verbo-ing."
-      },
-      {
-        "question": "___ you ___ (use) the computer this afternoon?",
-        "answer": "Will; be using",
-        "note": "Pregunta sobre una actividad futura."
-      },
-      {
-        "question": "Corrige: She will working at six.",
-        "answer": "She will be working at six.",
-        "note": "La estructura incluye be antes de -ing."
-      },
-      {
-        "question": "Don't call at 7; we ___ (have) dinner.",
-        "answer": "will be having",
-        "note": "La acción estará en progreso a esa hora."
-      },
-      {
-        "question": "What ___ he ___ (do) this time tomorrow?",
-        "answer": "will; be doing",
-        "note": "Pregunta con Future Continuous."
-      }
-    ]
-  },
-  {
-    "number": 7,
-    "slug": "unidad-7-future-perfect",
-    "title": "Future Perfect",
-    "focus": "Expresar acciones que estarán terminadas antes de un momento futuro.",
-    "explanation": "El Future Perfect se forma con will have + participio. Señala que una acción estará completada antes de una fecha o momento futuro, a menudo con by, by the time o before.",
-    "structure": [
-      "will have + participio",
-      "by + momento futuro",
-      "by the time + Present Simple."
-    ],
-    "examples": [
-      "By June, I'll have finished the course.",
-      "They will have arrived by midnight.",
-      "Will you have completed the project by Friday?"
-    ],
-    "vocabulary": [
-      "deadline — fecha límite",
-      "complete — completar",
-      "by then — para entonces",
-      "achievement — logro"
-    ],
-    "exercises": [
-      {
-        "question": "By next Friday, we ___ (finish) the project.",
-        "answer": "will have finished",
-        "note": "La acción estará terminada antes del viernes."
-      },
-      {
-        "question": "She ___ (not / arrive) by 6 p.m.",
-        "answer": "won't have arrived",
-        "note": "Negativa: won't have + participio."
-      },
-      {
-        "question": "___ you ___ (read) the book by Monday?",
-        "answer": "Will; have read",
-        "note": "Pregunta sobre una fecha límite futura."
-      },
-      {
-        "question": "Corrige: By 2030, he will has graduated.",
-        "answer": "By 2030, he will have graduated.",
-        "note": "Después de will usamos have, no has."
-      },
-      {
-        "question": "By the time you get home, I ___ (cook) dinner.",
-        "answer": "will have cooked",
-        "note": "La cena estará lista antes de que llegues."
-      },
-      {
-        "question": "In two months, they ___ (save) enough money.",
-        "answer": "will have saved",
-        "note": "Expresa un resultado completado en el futuro."
-      }
-    ]
-  },
-  {
-    "number": 8,
-    "slug": "unidad-8-future-plans-and-arrangements",
+    "slug": "unidad-6-future-plans-and-arrangements",
     "title": "Future plans and arrangements",
     "focus": "Elegir entre will, going to y Present Continuous según la intención y el grado de organización.",
     "explanation": "Will expresa decisiones espontáneas, promesas y predicciones; going to indica intenciones previas o predicciones con evidencia; Present Continuous expresa arreglos concretos ya organizados.",
@@ -448,8 +338,8 @@ const B1_SEEDS: Omit<A2PdfUnit, "readingPassages">[] = [
     ]
   },
   {
-    "number": 9,
-    "slug": "unidad-9-conditionals-zero-first-and-second",
+    "number": 7,
+    "slug": "unidad-7-conditionals-zero-first-and-second",
     "title": "Conditionals: zero, first and second",
     "focus": "Expresar hechos generales, posibilidades reales e hipótesis poco probables.",
     "explanation": "Zero Conditional expresa hechos o rutinas; First Conditional, posibilidades futuras reales; Second Conditional, situaciones imaginarias o poco probables. La forma verbal de cada cláusula determina el significado.",
@@ -503,8 +393,8 @@ const B1_SEEDS: Omit<A2PdfUnit, "readingPassages">[] = [
     ]
   },
   {
-    "number": 10,
-    "slug": "unidad-10-third-conditional",
+    "number": 8,
+    "slug": "unidad-8-third-conditional",
     "title": "Third Conditional",
     "focus": "Imaginar resultados diferentes para situaciones pasadas que ya no pueden cambiarse.",
     "explanation": "El Third Conditional habla de una condición irreal en el pasado y de su resultado hipotético. Se forma con if + Past Perfect y would have + participio. A menudo expresa arrepentimiento o crítica.",
@@ -558,8 +448,8 @@ const B1_SEEDS: Omit<A2PdfUnit, "readingPassages">[] = [
     ]
   },
   {
-    "number": 11,
-    "slug": "unidad-11-wish-and-if-only",
+    "number": 9,
+    "slug": "unidad-9-wish-and-if-only",
     "title": "Wish and if only",
     "focus": "Expresar deseos sobre el presente, arrepentimientos pasados y situaciones que queremos cambiar.",
     "explanation": "Wish e if only introducen deseos. Para una situación presente que queremos diferente usamos Past Simple; para arrepentimientos pasados, Past Perfect; para quejas o deseos de cambio usamos wish + would cuando queremos que algo cambie.",
@@ -614,8 +504,8 @@ const B1_SEEDS: Omit<A2PdfUnit, "readingPassages">[] = [
     ]
   },
   {
-    "number": 12,
-    "slug": "unidad-12-modals-of-obligation-and-advice",
+    "number": 10,
+    "slug": "unidad-10-modals-of-obligation-and-advice",
     "title": "Modals of obligation and advice",
     "focus": "Distinguir obligación, ausencia de obligación, prohibición y consejo.",
     "explanation": "Must y have to expresan obligación; mustn't indica prohibición; don't have to significa que no es necesario. Should y ought to expresan consejo. Had better ofrece una recomendación fuerte sobre una situación concreta.",
@@ -671,8 +561,8 @@ const B1_SEEDS: Omit<A2PdfUnit, "readingPassages">[] = [
     ]
   },
   {
-    "number": 13,
-    "slug": "unidad-13-modals-of-deduction-present",
+    "number": 11,
+    "slug": "unidad-11-modals-of-deduction-present",
     "title": "Modals of deduction: present",
     "focus": "Hacer deducciones sobre situaciones presentes usando distintos grados de certeza.",
     "explanation": "Must expresa una deducción muy probable; can't indica que algo es imposible o muy improbable; might, may y could expresan posibilidad. No describen obligación cuando se usan para deducir.",
@@ -727,63 +617,8 @@ const B1_SEEDS: Omit<A2PdfUnit, "readingPassages">[] = [
     ]
   },
   {
-    "number": 14,
-    "slug": "unidad-14-modals-of-deduction-past",
-    "title": "Modals of deduction: past",
-    "focus": "Deducir qué pudo, debió o no pudo haber ocurrido en el pasado.",
-    "explanation": "Para deducciones pasadas usamos modal + have + participio. Must have indica una conclusión probable; can't/couldn't have indica imposibilidad; may/might/could have expresa posibilidad.",
-    "structure": [
-      "must have + participio",
-      "can't/couldn't have + participio",
-      "may/might/could have + participio."
-    ],
-    "examples": [
-      "She must have forgotten the meeting.",
-      "They can't have arrived yet.",
-      "He might have taken the earlier train."
-    ],
-    "vocabulary": [
-      "deduction — deducción",
-      "evidence — prueba",
-      "mistake — error",
-      "probably — probablemente"
-    ],
-    "exercises": [
-      {
-        "question": "The ground is wet. It ___ (rain) last night.",
-        "answer": "must have rained",
-        "note": "Deducción probable sobre el pasado."
-      },
-      {
-        "question": "He was with me, so he ___ (take) your bag.",
-        "answer": "can't have taken",
-        "note": "La evidencia descarta esa posibilidad."
-      },
-      {
-        "question": "She isn't answering. She ___ (leave) her phone at home.",
-        "answer": "might have left",
-        "note": "Expresa una posibilidad pasada."
-      },
-      {
-        "question": "Corrige: They must had forgotten.",
-        "answer": "They must have forgotten.",
-        "note": "Después del modal usamos have + participio."
-      },
-      {
-        "question": "The parcel ___ (arrive); nobody has seen it.",
-        "answer": "may not have arrived",
-        "note": "Posibilidad negativa en el pasado."
-      },
-      {
-        "question": "You ___ (hear) the announcement; it was very loud.",
-        "answer": "must have heard",
-        "note": "Deducción fuerte sobre una percepción pasada."
-      }
-    ]
-  },
-  {
-    "number": 15,
-    "slug": "unidad-15-passive-voice-present-and-past",
+    "number": 12,
+    "slug": "unidad-12-passive-voice-present-and-past",
     "title": "Passive voice: present and past",
     "focus": "Poner el foco en la acción o el resultado en lugar de quién la realiza.",
     "explanation": "La voz pasiva se forma con be + participio. El tiempo verbal aparece en be: is made, was built. Se usa cuando el agente es desconocido, evidente o menos importante. El complemento agente se introduce con by cuando interesa mencionarlo.",
@@ -838,8 +673,8 @@ const B1_SEEDS: Omit<A2PdfUnit, "readingPassages">[] = [
     ]
   },
   {
-    "number": 16,
-    "slug": "unidad-16-passive-with-modals-and-future-forms",
+    "number": 13,
+    "slug": "unidad-13-passive-with-modals-and-future-forms",
     "title": "Passive with modals and future forms",
     "focus": "Construir pasivas con modales y referencias al futuro.",
     "explanation": "Después de un modal usamos be + participio: must be completed. Para el futuro usamos will be + participio. La forma pasiva mantiene el foco en la acción, la norma o el resultado.",
@@ -894,63 +729,8 @@ const B1_SEEDS: Omit<A2PdfUnit, "readingPassages">[] = [
     ]
   },
   {
-    "number": 17,
-    "slug": "unidad-17-have-something-done",
-    "title": "Have something done",
-    "focus": "Expresar que encargamos un servicio o pedimos a otra persona que haga algo por nosotros.",
-    "explanation": "La estructura have + objeto + participio indica que otra persona realiza un servicio para nosotros. Get something done es una alternativa más informal. El tiempo se expresa en have/get: had my hair cut, will have the car repaired.",
-    "structure": [
-      "have/get + objeto + participio",
-      "pasado: had + objeto + participio",
-      "futuro: will have + objeto + participio."
-    ],
-    "examples": [
-      "I'm having my car repaired.",
-      "She had her hair cut yesterday.",
-      "We'll get the windows cleaned next week."
-    ],
-    "vocabulary": [
-      "service — servicio",
-      "repair — reparar",
-      "appointment — cita",
-      "professional — profesional"
-    ],
-    "exercises": [
-      {
-        "question": "I ___ my phone ___ (repair) yesterday.",
-        "answer": "had; repaired",
-        "note": "Have something done en pasado."
-      },
-      {
-        "question": "She is having her hair ___ (cut).",
-        "answer": "cut",
-        "note": "El participio de cut es cut."
-      },
-      {
-        "question": "We will ___ the kitchen painted.",
-        "answer": "have",
-        "note": "Will have + objeto + participio."
-      },
-      {
-        "question": "Corrige: He cut his hair at the barber's (quiere decir que el barbero lo hizo).",
-        "answer": "He had his hair cut at the barber's.",
-        "note": "La estructura indica que otra persona realiza el servicio."
-      },
-      {
-        "question": "They got the roof ___ (fix) last month.",
-        "answer": "fixed",
-        "note": "Get something done es una variante informal."
-      },
-      {
-        "question": "I need to have my eyes ___ (test).",
-        "answer": "tested",
-        "note": "Have + objeto + participio."
-      }
-    ]
-  },
-  {
-    "number": 18,
-    "slug": "unidad-18-reported-speech-statements",
+    "number": 14,
+    "slug": "unidad-14-reported-speech-statements",
     "title": "Reported speech: statements",
     "focus": "Transmitir afirmaciones de otra persona ajustando tiempos, pronombres y referencias temporales.",
     "explanation": "En estilo indirecto, si el verbo introductor está en pasado, el tiempo verbal suele retroceder: Present Simple a Past Simple, will a would, Present Perfect a Past Perfect. Los pronombres y expresiones como today o here cambian según el contexto.",
@@ -1006,8 +786,8 @@ const B1_SEEDS: Omit<A2PdfUnit, "readingPassages">[] = [
     ]
   },
   {
-    "number": 19,
-    "slug": "unidad-19-reported-questions-and-commands",
+    "number": 15,
+    "slug": "unidad-15-reported-questions-and-commands",
     "title": "Reported questions and commands",
     "focus": "Contar preguntas, peticiones y órdenes sin mantener el orden interrogativo directo.",
     "explanation": "Las preguntas indirectas usan orden afirmativo y no llevan signo de interrogación dentro de la cláusula. Las preguntas yes/no suelen introducirse con if o whether. Las órdenes se reportan con tell/ask + objeto + to-infinitive; la negativa usa not to.",
@@ -1062,65 +842,8 @@ const B1_SEEDS: Omit<A2PdfUnit, "readingPassages">[] = [
     ]
   },
   {
-    "number": 20,
-    "slug": "unidad-20-reporting-verbs",
-    "title": "Reporting verbs",
-    "focus": "Usar verbos introductores variados para expresar consejos, promesas, advertencias y explicaciones.",
-    "explanation": "Además de say y tell, podemos usar advise, suggest, promise, warn, remind, invite y recommend. Cada verbo tiene un patrón: advise someone to do, suggest doing o suggest that, promise to do, warn someone not to do.",
-    "structure": [
-      "advise + objeto + to",
-      "suggest + -ing/that",
-      "promise + to",
-      "warn + objeto + not to",
-      "remind + objeto + to."
-    ],
-    "examples": [
-      "She advised me to apply.",
-      "He suggested taking a taxi.",
-      "They warned us not to swim there."
-    ],
-    "vocabulary": [
-      "advise — aconsejar",
-      "suggest — sugerir",
-      "warn — advertir",
-      "remind — recordar"
-    ],
-    "exercises": [
-      {
-        "question": "The doctor advised him ___ (rest).",
-        "answer": "to rest",
-        "note": "Advise + objeto + to-infinitive."
-      },
-      {
-        "question": "She suggested ___ (take) the earlier train.",
-        "answer": "taking",
-        "note": "Suggest puede ir seguido de gerundio."
-      },
-      {
-        "question": "They warned us ___ (not / touch) the wire.",
-        "answer": "not to touch",
-        "note": "Warn + objeto + not to."
-      },
-      {
-        "question": "Corrige: He suggested me to call.",
-        "answer": "He suggested that I call. / He suggested calling.",
-        "note": "Suggest no suele seguir el patrón suggest + objeto + to."
-      },
-      {
-        "question": "I promised ___ (help) with the move.",
-        "answer": "to help",
-        "note": "Promise + to-infinitive."
-      },
-      {
-        "question": "Please remind me ___ (send) the email.",
-        "answer": "to send",
-        "note": "Remind + objeto + to-infinitive."
-      }
-    ]
-  },
-  {
-    "number": 21,
-    "slug": "unidad-21-defining-and-non-defining-relative-clauses",
+    "number": 16,
+    "slug": "unidad-16-defining-and-non-defining-relative-clauses",
     "title": "Defining and non-defining relative clauses",
     "focus": "Añadir información esencial o adicional sobre personas, lugares y cosas.",
     "explanation": "Las defining relative clauses identifican el sustantivo y no llevan comas. Las non-defining añaden información extra y van entre comas; no se usa that en ellas. Who se refiere a personas, which a cosas y whose a posesión.",
@@ -1175,8 +898,8 @@ const B1_SEEDS: Omit<A2PdfUnit, "readingPassages">[] = [
     ]
   },
   {
-    "number": 22,
-    "slug": "unidad-22-gerunds-and-infinitives",
+    "number": 17,
+    "slug": "unidad-17-gerunds-and-infinitives",
     "title": "Gerunds and infinitives",
     "focus": "Elegir gerundio o infinitivo según el verbo y el significado.",
     "explanation": "Algunos verbos van seguidos de -ing (enjoy, avoid, suggest); otros de to-infinitive (decide, hope, plan). Algunos admiten ambas formas con poco cambio y otros cambian de significado, como stop, remember y try.",
@@ -1232,63 +955,8 @@ const B1_SEEDS: Omit<A2PdfUnit, "readingPassages">[] = [
     ]
   },
   {
-    "number": 23,
-    "slug": "unidad-23-verb-patterns-with-object-infinitive",
-    "title": "Verb patterns with object + infinitive",
-    "focus": "Usar verbos que introducen una persona y una acción que esa persona debe o quiere realizar.",
-    "explanation": "Verbos como want, ask, tell, expect, encourage y allow pueden ir seguidos de objeto + to-infinitive. Make y let suelen ir seguidos de objeto + verbo base sin to en la voz activa.",
-    "structure": [
-      "want/ask/tell + objeto + to",
-      "encourage/allow + objeto + to",
-      "make/let + objeto + base."
-    ],
-    "examples": [
-      "They encouraged me to apply.",
-      "The teacher told us to work in pairs.",
-      "My parents let me stay out late."
-    ],
-    "vocabulary": [
-      "encourage — animar",
-      "allow — permitir",
-      "expect — esperar",
-      "persuade — convencer"
-    ],
-    "exercises": [
-      {
-        "question": "She asked me ___ (wait) outside.",
-        "answer": "to wait",
-        "note": "Ask + objeto + to-infinitive."
-      },
-      {
-        "question": "The coach made us ___ (run) faster.",
-        "answer": "run",
-        "note": "Make + objeto + verbo base."
-      },
-      {
-        "question": "They allowed him ___ (leave) early.",
-        "answer": "to leave",
-        "note": "Allow + objeto + to-infinitive."
-      },
-      {
-        "question": "Corrige: My boss let me to go home.",
-        "answer": "My boss let me go home.",
-        "note": "Let no lleva to en esta estructura."
-      },
-      {
-        "question": "I expect you ___ (be) on time.",
-        "answer": "to be",
-        "note": "Expect + objeto + to-infinitive."
-      },
-      {
-        "question": "We persuaded her ___ (join) the team.",
-        "answer": "to join",
-        "note": "Persuade + objeto + to-infinitive."
-      }
-    ]
-  },
-  {
-    "number": 24,
-    "slug": "unidad-24-phrasal-verbs-separable-and-inseparable",
+    "number": 18,
+    "slug": "unidad-18-phrasal-verbs-separable-and-inseparable",
     "title": "Phrasal verbs: separable and inseparable",
     "focus": "Comprender cómo funcionan los phrasal verbs y dónde colocar el objeto.",
     "explanation": "Algunos phrasal verbs son separables (turn the radio off / turn off the radio); si el objeto es un pronombre, debe ir en medio (turn it off). Otros son inseparables (look after someone, run into someone).",
@@ -1342,65 +1010,8 @@ const B1_SEEDS: Omit<A2PdfUnit, "readingPassages">[] = [
     ]
   },
   {
-    "number": 25,
-    "slug": "unidad-25-phrasal-verbs-for-work-and-study",
-    "title": "Phrasal verbs for work and study",
-    "focus": "Ampliar el uso de phrasal verbs frecuentes en contextos laborales y académicos.",
-    "explanation": "Los phrasal verbs combinan un verbo con una partícula y a menudo tienen un significado distinto del verbo original. En contextos de trabajo y estudio son frecuentes carry out, set up, hand in, catch up, find out y put off.",
-    "structure": [
-      "carry out = realizar",
-      "set up = crear/organizar",
-      "hand in = entregar",
-      "catch up = ponerse al día",
-      "put off = posponer."
-    ],
-    "examples": [
-      "We carried out a survey.",
-      "She handed in her assignment.",
-      "I need to catch up on my reading."
-    ],
-    "vocabulary": [
-      "assignment — tarea",
-      "deadline — fecha límite",
-      "research — investigación",
-      "postpone — posponer"
-    ],
-    "exercises": [
-      {
-        "question": "You must ___ in your essay by Friday.",
-        "answer": "hand",
-        "note": "Hand in significa entregar."
-      },
-      {
-        "question": "They plan to ___ up a small business.",
-        "answer": "set",
-        "note": "Set up significa crear o establecer."
-      },
-      {
-        "question": "We need to catch ___ on the missed lessons.",
-        "answer": "up",
-        "note": "Catch up on significa ponerse al día."
-      },
-      {
-        "question": "Corrige: They put off the meeting up.",
-        "answer": "They put off the meeting.",
-        "note": "Put off significa posponer y no lleva up."
-      },
-      {
-        "question": "The team carried ___ an experiment.",
-        "answer": "out",
-        "note": "Carry out significa realizar."
-      },
-      {
-        "question": "Let's find ___ what happened.",
-        "answer": "out",
-        "note": "Find out significa averiguar."
-      }
-    ]
-  },
-  {
-    "number": 26,
-    "slug": "unidad-26-dependent-prepositions-after-verbs",
+    "number": 19,
+    "slug": "unidad-19-dependent-prepositions-after-verbs",
     "title": "Dependent prepositions after verbs",
     "focus": "Aprender las preposiciones que acompañan a verbos frecuentes.",
     "explanation": "Muchos verbos requieren una preposición concreta, como depend on, belong to, apologise for, insist on, succeed in y apply for. Conviene aprender cada combinación como una unidad y recordar que una preposición puede ir seguida de sustantivo o gerundio.",
@@ -1457,8 +1068,8 @@ const B1_SEEDS: Omit<A2PdfUnit, "readingPassages">[] = [
     ]
   },
   {
-    "number": 27,
-    "slug": "unidad-27-adjective-and-preposition-combinations",
+    "number": 20,
+    "slug": "unidad-20-adjective-and-preposition-combinations",
     "title": "Adjective and preposition combinations",
     "focus": "Usar correctamente combinaciones frecuentes de adjetivos y preposiciones.",
     "explanation": "Algunos adjetivos suelen ir con una preposición fija: keen on, responsible for, proud of, aware of, capable of, similar to y disappointed with. Después de una preposición, un verbo aparece normalmente en -ing.",
@@ -1516,8 +1127,8 @@ const B1_SEEDS: Omit<A2PdfUnit, "readingPassages">[] = [
     ]
   },
   {
-    "number": 28,
-    "slug": "unidad-28-articles-and-zero-article",
+    "number": 21,
+    "slug": "unidad-21-articles-and-zero-article",
     "title": "Articles and zero article",
     "focus": "Dominar el uso de a/an, the y la ausencia de artículo en contextos habituales.",
     "explanation": "A/an presenta un sustantivo singular no específico; the identifica algo conocido o concreto. No usamos artículo normalmente con plurales e incontables en sentido general, nombres de idiomas, comidas y la mayoría de países. Hay excepciones con nombres geográficos y organizaciones.",
@@ -1572,8 +1183,8 @@ const B1_SEEDS: Omit<A2PdfUnit, "readingPassages">[] = [
     ]
   },
   {
-    "number": 29,
-    "slug": "unidad-29-quantifiers-and-expressions-of-quantity",
+    "number": 22,
+    "slug": "unidad-22-quantifiers-and-expressions-of-quantity",
     "title": "Quantifiers and expressions of quantity",
     "focus": "Expresar cantidades con precisión y distinguir sustantivos contables e incontables.",
     "explanation": "Much y many se usan en preguntas y negativas; a lot of funciona con ambos tipos. Few/little indican una cantidad pequeña, mientras que a few/a little expresan que hay algo, aunque no mucho. Plenty of y a great deal of añaden matices de cantidad.",
@@ -1628,8 +1239,8 @@ const B1_SEEDS: Omit<A2PdfUnit, "readingPassages">[] = [
     ]
   },
   {
-    "number": 30,
-    "slug": "unidad-30-comparatives-and-modifiers",
+    "number": 23,
+    "slug": "unidad-23-comparatives-and-modifiers",
     "title": "Comparatives and modifiers",
     "focus": "Comparar con mayor precisión utilizando intensificadores y estructuras de igualdad.",
     "explanation": "Los comparativos pueden modificarse con much, far, a lot, slightly y a bit. As…as expresa igualdad; not as…as expresa inferioridad. The more…the more muestra que dos cambios están relacionados.",
@@ -1684,8 +1295,8 @@ const B1_SEEDS: Omit<A2PdfUnit, "readingPassages">[] = [
     ]
   },
   {
-    "number": 31,
-    "slug": "unidad-31-so-such-too-and-enough",
+    "number": 24,
+    "slug": "unidad-24-so-such-too-and-enough",
     "title": "So, such, too and enough",
     "focus": "Expresar intensidad, exceso y suficiencia con adjetivos y sustantivos.",
     "explanation": "So modifica adjetivos y adverbios; such acompaña a un sustantivo o a un grupo nominal. Too indica exceso y enough indica suficiencia. Enough va antes de un sustantivo, pero después de un adjetivo o adverbio.",
@@ -1742,8 +1353,8 @@ const B1_SEEDS: Omit<A2PdfUnit, "readingPassages">[] = [
     ]
   },
   {
-    "number": 32,
-    "slug": "unidad-32-adverbs-and-adverbial-phrases",
+    "number": 25,
+    "slug": "unidad-25-adverbs-and-adverbial-phrases",
     "title": "Adverbs and adverbial phrases",
     "focus": "Describir cómo, cuándo, dónde y con qué frecuencia ocurren las acciones.",
     "explanation": "Los adverbios modifican verbos, adjetivos u otros adverbios. Muchos se forman con -ly, aunque existen excepciones como fast, hard y well. Las expresiones adverbiales pueden indicar frecuencia, grado, tiempo o punto de vista.",
@@ -1798,8 +1409,8 @@ const B1_SEEDS: Omit<A2PdfUnit, "readingPassages">[] = [
     ]
   },
   {
-    "number": 33,
-    "slug": "unidad-33-linkers-of-contrast",
+    "number": 26,
+    "slug": "unidad-26-linkers-of-contrast",
     "title": "Linkers of contrast",
     "focus": "Conectar ideas opuestas con although, despite, however y whereas.",
     "explanation": "Although y though introducen una oración con sujeto y verbo. Despite e in spite of van seguidos de sustantivo o gerundio. However suele conectar dos oraciones y whereas contrasta dos hechos o grupos.",
@@ -1854,8 +1465,8 @@ const B1_SEEDS: Omit<A2PdfUnit, "readingPassages">[] = [
     ]
   },
   {
-    "number": 34,
-    "slug": "unidad-34-linkers-of-reason-result-and-purpose",
+    "number": 27,
+    "slug": "unidad-27-linkers-of-reason-result-and-purpose",
     "title": "Linkers of reason, result and purpose",
     "focus": "Explicar causas, consecuencias y finalidades de forma cohesionada.",
     "explanation": "Because y since introducen causas; therefore, so y as a result presentan consecuencias; in order to y so that expresan finalidad. La elección depende de la estructura y del registro.",
@@ -1911,64 +1522,8 @@ const B1_SEEDS: Omit<A2PdfUnit, "readingPassages">[] = [
     ]
   },
   {
-    "number": 35,
-    "slug": "unidad-35-concession-and-unexpected-results",
-    "title": "Concession and unexpected results",
-    "focus": "Presentar una idea que no impide que ocurra otra utilizando even though, while y no matter.",
-    "explanation": "Even though introduce una concesión fuerte con oración; despite/in spite of se combinan con sustantivo o gerundio. No matter how/what/where expresa que el resultado no cambia bajo distintas circunstancias.",
-    "structure": [
-      "even though + clause",
-      "despite + noun/-ing",
-      "no matter + wh-word",
-      "however + adjective/adverb."
-    ],
-    "examples": [
-      "Even though he was tired, he continued working.",
-      "Despite feeling nervous, she gave a great presentation.",
-      "No matter how busy I am, I call my family."
-    ],
-    "vocabulary": [
-      "concession — concesión",
-      "nevertheless — no obstante",
-      "regardless — independientemente",
-      "determined — decidido"
-    ],
-    "exercises": [
-      {
-        "question": "___ she was ill, she went to work.",
-        "answer": "Even though",
-        "note": "Introduce una oración completa de concesión."
-      },
-      {
-        "question": "Despite ___ nervous, he spoke clearly.",
-        "answer": "feeling / being",
-        "note": "Despite + gerundio."
-      },
-      {
-        "question": "No matter ___ difficult it is, keep trying.",
-        "answer": "how",
-        "note": "No matter how + adjective."
-      },
-      {
-        "question": "Corrige: Despite he was tired, he finished.",
-        "answer": "Although he was tired, he finished. / Despite being tired, he finished.",
-        "note": "Despite no va seguido de sujeto + verbo."
-      },
-      {
-        "question": "The plan failed. ___, we learned a lot.",
-        "answer": "Nevertheless",
-        "note": "Nevertheless presenta un resultado inesperado."
-      },
-      {
-        "question": "No matter what ___, I'll support you.",
-        "answer": "happens",
-        "note": "No matter what + verbo."
-      }
-    ]
-  },
-  {
-    "number": 36,
-    "slug": "unidad-36-discourse-markers-and-paragraph-structure",
+    "number": 28,
+    "slug": "unidad-28-discourse-markers-and-paragraph-structure",
     "title": "Discourse markers and paragraph structure",
     "focus": "Organizar textos y conversaciones mediante conectores y marcadores discursivos.",
     "explanation": "Los marcadores discursivos ayudan a introducir ideas, añadir información, ejemplificar, contrastar y concluir. En textos formales se usan furthermore, moreover y consequently; en conversación aparecen actually, anyway y by the way.",
@@ -2024,8 +1579,8 @@ const B1_SEEDS: Omit<A2PdfUnit, "readingPassages">[] = [
     ]
   },
   {
-    "number": 37,
-    "slug": "unidad-37-question-tags",
+    "number": 29,
+    "slug": "unidad-29-question-tags",
     "title": "Question tags",
     "focus": "Confirmar información y buscar acuerdo con preguntas cortas al final de una frase.",
     "explanation": "Las question tags usan un auxiliar y un pronombre. Una afirmación positiva suele llevar tag negativo; una afirmación negativa lleva tag positivo. Si la oración no tiene auxiliar, usamos do/does/did. Hay formas especiales como I'm late, aren't I? y Let's go, shall we?",
@@ -2081,8 +1636,8 @@ const B1_SEEDS: Omit<A2PdfUnit, "readingPassages">[] = [
     ]
   },
   {
-    "number": 38,
-    "slug": "unidad-38-indirect-questions-and-polite-enquiries",
+    "number": 30,
+    "slug": "unidad-30-indirect-questions-and-polite-enquiries",
     "title": "Indirect questions and polite enquiries",
     "focus": "Formular preguntas indirectas para sonar más educado y natural.",
     "explanation": "Las preguntas indirectas suelen comenzar con Could you tell me, Do you know o Would you mind telling me. Dentro de la pregunta usamos orden afirmativo y no repetimos do/does/did. En preguntas yes/no usamos if o whether.",
@@ -2137,176 +1692,8 @@ const B1_SEEDS: Omit<A2PdfUnit, "readingPassages">[] = [
     ]
   },
   {
-    "number": 39,
-    "slug": "unidad-39-embedded-questions-and-noun-clauses",
-    "title": "Embedded questions and noun clauses",
-    "focus": "Integrar preguntas e ideas dentro de una oración más amplia.",
-    "explanation": "Las embedded questions aparecen dentro de otra oración y usan orden afirmativo. Las noun clauses pueden comenzar con that, if/whether o una palabra interrogativa y funcionan como sujeto u objeto de un verbo.",
-    "structure": [
-      "I know/think/wonder + clause",
-      "wh-word + subject + verb",
-      "whether/if + clause",
-      "that puede omitirse en muchos casos."
-    ],
-    "examples": [
-      "I don't know what she wants.",
-      "He believes that the plan will work.",
-      "Can you explain why the machine stopped?"
-    ],
-    "vocabulary": [
-      "whether — si",
-      "wonder — preguntarse",
-      "assume — suponer",
-      "claim — afirmar"
-    ],
-    "exercises": [
-      {
-        "question": "I wonder where he ___.",
-        "answer": "lives",
-        "note": "La cláusula integrada mantiene orden afirmativo."
-      },
-      {
-        "question": "She said ___ she was busy.",
-        "answer": "that",
-        "note": "That introduce una noun clause y puede omitirse."
-      },
-      {
-        "question": "We don't know ___ they will accept the offer.",
-        "answer": "whether / if",
-        "note": "Expresa una pregunta indirecta yes/no."
-      },
-      {
-        "question": "Corrige: I don't understand why did he leave.",
-        "answer": "I don't understand why he left.",
-        "note": "No hay inversión en embedded questions."
-      },
-      {
-        "question": "Tell me what you ___.",
-        "answer": "need",
-        "note": "La wh-clause funciona como complemento."
-      },
-      {
-        "question": "It is unclear ___ the shop is open.",
-        "answer": "whether / if",
-        "note": "Whether/if introduce una alternativa indirecta."
-      }
-    ]
-  },
-  {
-    "number": 40,
-    "slug": "unidad-40-relative-pronouns-and-omission",
-    "title": "Relative pronouns and omission",
-    "focus": "Precisar cuándo se puede omitir el pronombre relativo y usar where, when y whose.",
-    "explanation": "En defining relative clauses se puede omitir who/which/that cuando funciona como objeto, pero no cuando es sujeto. Whose expresa posesión; where y when se refieren a lugares y momentos. Las non-defining clauses mantienen el pronombre y usan comas.",
-    "structure": [
-      "subject relative: no omission",
-      "object relative: omission possible",
-      "whose + noun",
-      "where = place",
-      "when = time."
-    ],
-    "examples": [
-      "The film (that) we watched was excellent.",
-      "The woman who called is my manager.",
-      "That's the year when we moved here."
-    ],
-    "vocabulary": [
-      "omit — omitir",
-      "referent — referente",
-      "ownership — propiedad",
-      "location — ubicación"
-    ],
-    "exercises": [
-      {
-        "question": "The person ___ called you is outside.",
-        "answer": "who / that",
-        "note": "El relativo es sujeto y no puede omitirse."
-      },
-      {
-        "question": "The book (that) I bought is here. Can that be omitted?",
-        "answer": "Yes, because it is the object.",
-        "note": "El relativo objeto puede omitirse en defining clauses."
-      },
-      {
-        "question": "That's the house ___ I grew up.",
-        "answer": "where",
-        "note": "Where se refiere a un lugar."
-      },
-      {
-        "question": "Corrige: The man which works here is kind.",
-        "answer": "The man who/that works here is kind.",
-        "note": "Who/that se refiere a personas."
-      },
-      {
-        "question": "The student ___ essay won is absent.",
-        "answer": "whose",
-        "note": "Whose expresa posesión."
-      },
-      {
-        "question": "I remember the day ___ we first met.",
-        "answer": "when",
-        "note": "When se refiere a un momento."
-      }
-    ]
-  },
-  {
-    "number": 41,
-    "slug": "unidad-41-causative-and-passive-reporting-structures",
-    "title": "Causative and passive reporting structures",
-    "focus": "Usar estructuras impersonales para informar de creencias, rumores y hechos.",
-    "explanation": "It is said/believed/thought that… y He is said to… permiten presentar información sin mencionar una fuente concreta. Se usan en registros formales y periodísticos. El infinitivo puede ser simple o perfecto según el tiempo de la información.",
-    "structure": [
-      "It is said that + clause",
-      "subject + is said to + infinitive",
-      "is believed to have + participle para anterioridad."
-    ],
-    "examples": [
-      "It is believed that the building is empty.",
-      "The actor is said to live abroad.",
-      "The painting is thought to have been stolen."
-    ],
-    "vocabulary": [
-      "rumour — rumor",
-      "report — informar",
-      "claim — afirmar",
-      "according to — según"
-    ],
-    "exercises": [
-      {
-        "question": "It is ___ that the company will expand.",
-        "answer": "believed / expected / said",
-        "note": "Pasiva impersonal: It is + participio."
-      },
-      {
-        "question": "The singer is said ___ live in Canada.",
-        "answer": "to",
-        "note": "Subject + is said + to-infinitive."
-      },
-      {
-        "question": "The documents are believed to ___ (steal) last night.",
-        "answer": "have been stolen",
-        "note": "Infinitivo perfecto pasivo para acción anterior."
-      },
-      {
-        "question": "Corrige: He is said that he is rich.",
-        "answer": "He is said to be rich. / It is said that he is rich.",
-        "note": "Elige una de las dos estructuras impersonales."
-      },
-      {
-        "question": "It is expected ___ prices will rise.",
-        "answer": "that",
-        "note": "That introduce la cláusula reportada."
-      },
-      {
-        "question": "The castle is thought to ___ (build) in the 12th century.",
-        "answer": "have been built",
-        "note": "Infinitivo perfecto pasivo."
-      }
-    ]
-  },
-  {
-    "number": 42,
-    "slug": "unidad-42-collocations-with-make-do-take-and-get",
+    "number": 31,
+    "slug": "unidad-31-collocations-with-make-do-take-and-get",
     "title": "Collocations with make, do, take and get",
     "focus": "Aprender combinaciones frecuentes para sonar más natural en inglés.",
     "explanation": "Las collocations son combinaciones habituales de palabras. Make suele aparecer con decisiones y planes; do con tareas y actividades; take con tiempo, medidas y oportunidades; get con resultados y cambios. No siempre se puede deducir la combinación por traducción.",
@@ -2362,8 +1749,8 @@ const B1_SEEDS: Omit<A2PdfUnit, "readingPassages">[] = [
     ]
   },
   {
-    "number": 43,
-    "slug": "unidad-43-word-formation-prefixes",
+    "number": 32,
+    "slug": "unidad-32-word-formation-prefixes",
     "title": "Word formation: prefixes",
     "focus": "Cambiar el significado de una palabra mediante prefijos frecuentes.",
     "explanation": "Los prefijos se añaden al principio de una palabra. Un-, in-, im-, il- e ir- suelen expresar negación; re- indica repetición; mis- indica error; over- y under- expresan exceso o insuficiencia. La elección depende de la palabra base.",
@@ -2420,8 +1807,8 @@ const B1_SEEDS: Omit<A2PdfUnit, "readingPassages">[] = [
     ]
   },
   {
-    "number": 44,
-    "slug": "unidad-44-word-formation-suffixes",
+    "number": 33,
+    "slug": "unidad-33-word-formation-suffixes",
     "title": "Word formation: suffixes",
     "focus": "Formar sustantivos, adjetivos y adverbios mediante sufijos comunes.",
     "explanation": "Los sufijos modifican la categoría o el significado de una palabra. -ment, -tion y -ness forman sustantivos; -ful, -less, -able y -ive forman adjetivos; -ly suele formar adverbios. Puede haber cambios ortográficos.",
@@ -2475,8 +1862,8 @@ const B1_SEEDS: Omit<A2PdfUnit, "readingPassages">[] = [
     ]
   },
   {
-    "number": 45,
-    "slug": "unidad-45-work-and-careers",
+    "number": 34,
+    "slug": "unidad-34-work-and-careers",
     "title": "Work and careers",
     "focus": "Hablar de experiencia profesional, responsabilidades, entrevistas y desarrollo laboral.",
     "explanation": "Esta unidad amplía el vocabulario del trabajo y practica estructuras para describir experiencia, responsabilidades, logros y objetivos. Se utilizan expresiones como be responsible for, apply for, be in charge of y work as.",
@@ -2532,8 +1919,8 @@ const B1_SEEDS: Omit<A2PdfUnit, "readingPassages">[] = [
     ]
   },
   {
-    "number": 46,
-    "slug": "unidad-46-education-and-learning-strategies",
+    "number": 35,
+    "slug": "unidad-35-education-and-learning-strategies",
     "title": "Education and learning strategies",
     "focus": "Describir estudios, métodos de aprendizaje, evaluación y objetivos académicos.",
     "explanation": "Se trabajan expresiones para hablar de asignaturas, titulaciones, progreso y estrategias. Las estructuras incluyen take an exam, pass/fail a test, make progress, revise for y be good at.",
@@ -2589,8 +1976,8 @@ const B1_SEEDS: Omit<A2PdfUnit, "readingPassages">[] = [
     ]
   },
   {
-    "number": 47,
-    "slug": "unidad-47-travel-and-tourism",
+    "number": 36,
+    "slug": "unidad-36-travel-and-tourism",
     "title": "Travel and tourism",
     "focus": "Describir viajes, experiencias, alojamiento, transporte e incidencias.",
     "explanation": "Se amplía el vocabulario para organizar itinerarios, reservar alojamiento y explicar problemas durante un viaje. Se practican expresiones de duración, recomendaciones y narración de experiencias.",
@@ -2647,8 +2034,8 @@ const B1_SEEDS: Omit<A2PdfUnit, "readingPassages">[] = [
     ]
   },
   {
-    "number": 48,
-    "slug": "unidad-48-environment-and-sustainability",
+    "number": 37,
+    "slug": "unidad-37-environment-and-sustainability",
     "title": "Environment and sustainability",
     "focus": "Hablar de problemas medioambientales, causas, consecuencias y soluciones.",
     "explanation": "Se trabajan términos sobre contaminación, recursos, biodiversidad y sostenibilidad, junto con pasivas y conectores de causa y resultado para describir medidas y cambios.",
@@ -2705,8 +2092,8 @@ const B1_SEEDS: Omit<A2PdfUnit, "readingPassages">[] = [
     ]
   },
   {
-    "number": 49,
-    "slug": "unidad-49-technology-and-digital-life",
+    "number": 38,
+    "slug": "unidad-38-technology-and-digital-life",
     "title": "Technology and digital life",
     "focus": "Describir dispositivos, hábitos digitales, ventajas, riesgos y cambios tecnológicos.",
     "explanation": "Se practica vocabulario de tecnología y expresiones para hablar de privacidad, seguridad, comunicación y dependencia digital. También se usan pasivas y modales para reglas y recomendaciones.",
@@ -2763,8 +2150,8 @@ const B1_SEEDS: Omit<A2PdfUnit, "readingPassages">[] = [
     ]
   },
   {
-    "number": 50,
-    "slug": "unidad-50-health-and-lifestyle",
+    "number": 39,
+    "slug": "unidad-39-health-and-lifestyle",
     "title": "Health and lifestyle",
     "focus": "Hablar de hábitos, bienestar, síntomas, consejos y cambios de estilo de vida.",
     "explanation": "La unidad reúne vocabulario de salud física y mental, hábitos y prevención. Se practican modales de consejo, expresiones de frecuencia y estructuras para explicar causas y resultados.",
@@ -2821,8 +2208,8 @@ const B1_SEEDS: Omit<A2PdfUnit, "readingPassages">[] = [
     ]
   },
   {
-    "number": 51,
-    "slug": "unidad-51-relationships-and-personality",
+    "number": 40,
+    "slug": "unidad-40-relationships-and-personality",
     "title": "Relationships and personality",
     "focus": "Describir relaciones, personalidad, emociones y resolución de conflictos.",
     "explanation": "Se amplía el vocabulario para caracterizar personas y relaciones. Se practican adjetivos con preposición, verbos de comunicación y expresiones para expresar empatía, desacuerdo y reconciliación.",
@@ -2879,8 +2266,8 @@ const B1_SEEDS: Omit<A2PdfUnit, "readingPassages">[] = [
     ]
   },
   {
-    "number": 52,
-    "slug": "unidad-52-money-shopping-and-consumer-choices",
+    "number": 41,
+    "slug": "unidad-41-money-shopping-and-consumer-choices",
     "title": "Money, shopping and consumer choices",
     "focus": "Hablar de gastos, presupuestos, compras, devoluciones y decisiones de consumo.",
     "explanation": "Se trabajan expresiones de dinero y consumo, incluidos phrasal verbs y collocations. Se practican comparaciones, cantidades y lenguaje para reclamar o explicar problemas con productos.",
@@ -2937,8 +2324,8 @@ const B1_SEEDS: Omit<A2PdfUnit, "readingPassages">[] = [
     ]
   },
   {
-    "number": 53,
-    "slug": "unidad-53-media-and-communication",
+    "number": 42,
+    "slug": "unidad-42-media-and-communication",
     "title": "Media and communication",
     "focus": "Comprender noticias, medios, opiniones y distintas formas de comunicación.",
     "explanation": "Se practica vocabulario de prensa, redes sociales y comunicación pública. Se utilizan verbos de reporte, lenguaje de opinión y expresiones para evaluar la fiabilidad de una fuente.",
@@ -2995,8 +2382,8 @@ const B1_SEEDS: Omit<A2PdfUnit, "readingPassages">[] = [
     ]
   },
   {
-    "number": 54,
-    "slug": "unidad-54-culture-arts-and-entertainment",
+    "number": 43,
+    "slug": "unidad-43-culture-arts-and-entertainment",
     "title": "Culture, arts and entertainment",
     "focus": "Describir obras culturales, espectáculos, reseñas y preferencias personales.",
     "explanation": "Se amplía el lenguaje para hablar de libros, películas, música, exposiciones y espectáculos. Se practican adjetivos de opinión, comparativos y estructuras para recomendar o criticar con ejemplos.",
@@ -3053,8 +2440,8 @@ const B1_SEEDS: Omit<A2PdfUnit, "readingPassages">[] = [
     ]
   },
   {
-    "number": 55,
-    "slug": "unidad-55-food-cooking-and-eating-out",
+    "number": 44,
+    "slug": "unidad-44-food-cooking-and-eating-out",
     "title": "Food, cooking and eating out",
     "focus": "Describir recetas, técnicas culinarias, restaurantes y preferencias alimentarias.",
     "explanation": "Se practica vocabulario de ingredientes y preparación, junto con imperativos, secuenciadores, cantidades y expresiones para pedir o valorar comida.",
@@ -3111,8 +2498,8 @@ const B1_SEEDS: Omit<A2PdfUnit, "readingPassages">[] = [
     ]
   },
   {
-    "number": 56,
-    "slug": "unidad-56-housing-and-local-communities",
+    "number": 45,
+    "slug": "unidad-45-housing-and-local-communities",
     "title": "Housing and local communities",
     "focus": "Describir viviendas, servicios locales, problemas vecinales y cambios urbanos.",
     "explanation": "Se trabajan expresiones sobre alquiler, instalaciones, servicios y convivencia. Se practican relativas, pasivas y lenguaje para sugerir mejoras o describir problemas.",
@@ -3169,8 +2556,8 @@ const B1_SEEDS: Omit<A2PdfUnit, "readingPassages">[] = [
     ]
   },
   {
-    "number": 57,
-    "slug": "unidad-57-crime-rules-and-public-safety",
+    "number": 46,
+    "slug": "unidad-46-crime-rules-and-public-safety",
     "title": "Crime, rules and public safety",
     "focus": "Hablar de normas, delitos, prevención y procedimientos de forma objetiva.",
     "explanation": "Se amplía el vocabulario de seguridad y justicia. Se practica la voz pasiva, los modales de obligación y deducción y el lenguaje para informar de incidentes.",
@@ -3227,65 +2614,8 @@ const B1_SEEDS: Omit<A2PdfUnit, "readingPassages">[] = [
     ]
   },
   {
-    "number": 58,
-    "slug": "unidad-58-science-and-discoveries",
-    "title": "Science and discoveries",
-    "focus": "Describir investigaciones, experimentos, descubrimientos y avances científicos.",
-    "explanation": "Se practican verbos de investigación, pasivas, lenguaje de posibilidad y causa-efecto. El vocabulario permite resumir procesos y resultados sin entrar en tecnicismos avanzados.",
-    "structure": [
-      "carry out research",
-      "conduct an experiment",
-      "make a discovery",
-      "evidence suggests",
-      "develop a theory."
-    ],
-    "examples": [
-      "The researchers carried out an experiment.",
-      "The results suggest a possible connection.",
-      "A new treatment is being developed."
-    ],
-    "vocabulary": [
-      "research — investigación",
-      "experiment — experimento",
-      "evidence — pruebas",
-      "discovery — descubrimiento"
-    ],
-    "exercises": [
-      {
-        "question": "Scientists carried ___ a series of tests.",
-        "answer": "out",
-        "note": "Carry out research/tests."
-      },
-      {
-        "question": "The results suggest ___ there is a link.",
-        "answer": "that",
-        "note": "Suggest that + clause."
-      },
-      {
-        "question": "A new medicine is being ___.",
-        "answer": "developed",
-        "note": "Pasiva continua."
-      },
-      {
-        "question": "Corrige: They did a research about climate.",
-        "answer": "They did research on climate. / They carried out research on climate.",
-        "note": "Research suele ser incontable."
-      },
-      {
-        "question": "The discovery had a major ___ on medicine.",
-        "answer": "impact",
-        "note": "Have an impact on."
-      },
-      {
-        "question": "The theory is based ___ strong evidence.",
-        "answer": "on",
-        "note": "Based on."
-      }
-    ]
-  },
-  {
-    "number": 59,
-    "slug": "unidad-59-describing-processes-and-instructions",
+    "number": 47,
+    "slug": "unidad-47-describing-processes-and-instructions",
     "title": "Describing processes and instructions",
     "focus": "Explicar procesos y procedimientos de manera ordenada y precisa.",
     "explanation": "Se utilizan pasivas, imperativos, secuenciadores y conectores temporales para describir cómo se fabrica, prepara o realiza algo.",
@@ -3341,8 +2671,8 @@ const B1_SEEDS: Omit<A2PdfUnit, "readingPassages">[] = [
     ]
   },
   {
-    "number": 60,
-    "slug": "unidad-60-describing-trends-and-changes",
+    "number": 48,
+    "slug": "unidad-48-describing-trends-and-changes",
     "title": "Describing trends and changes",
     "focus": "Explicar tendencias, aumentos, descensos y cambios graduales.",
     "explanation": "Se practica el lenguaje de gráficos y tendencias con increase, decrease, rise, fall, remain stable y gradually. Se combinan adverbios de grado, comparativos y tiempos verbales para describir datos.",
@@ -3398,8 +2728,8 @@ const B1_SEEDS: Omit<A2PdfUnit, "readingPassages">[] = [
     ]
   },
   {
-    "number": 61,
-    "slug": "unidad-61-giving-presentations-and-public-speaking",
+    "number": 49,
+    "slug": "unidad-49-giving-presentations-and-public-speaking",
     "title": "Giving presentations and public speaking",
     "focus": "Organizar presentaciones, introducir ideas, destacar información y responder preguntas.",
     "explanation": "Se practican expresiones para estructurar una exposición, presentar datos, aclarar puntos y concluir. Se utilizan marcadores discursivos, lenguaje formal y estrategias de interacción.",
@@ -3455,8 +2785,8 @@ const B1_SEEDS: Omit<A2PdfUnit, "readingPassages">[] = [
     ]
   },
   {
-    "number": 62,
-    "slug": "unidad-62-formal-and-informal-email-writing",
+    "number": 50,
+    "slug": "unidad-50-formal-and-informal-email-writing",
     "title": "Formal and informal email writing",
     "focus": "Adaptar el tono, la estructura y las fórmulas de cortesía en correos electrónicos.",
     "explanation": "Un correo formal suele incluir saludo, motivo, información organizada, petición y despedida. En contextos informales se usan contracciones y expresiones más cercanas. Es importante ajustar el registro al destinatario y al propósito.",
@@ -3509,8 +2839,8 @@ const B1_SEEDS: Omit<A2PdfUnit, "readingPassages">[] = [
     ]
   },
   {
-    "number": 63,
-    "slug": "unidad-63-complaints-and-problem-solving",
+    "number": 51,
+    "slug": "unidad-51-complaints-and-problem-solving",
     "title": "Complaints and problem solving",
     "focus": "Explicar problemas, presentar quejas educadas y proponer soluciones.",
     "explanation": "Se practican fórmulas para describir un problema, aportar detalles, pedir una solución y expresar insatisfacción con educación. Se combinan modales, pasivas y conectores.",
@@ -3566,8 +2896,8 @@ const B1_SEEDS: Omit<A2PdfUnit, "readingPassages">[] = [
     ]
   },
   {
-    "number": 64,
-    "slug": "unidad-64-negotiation-and-reaching-agreements",
+    "number": 52,
+    "slug": "unidad-52-negotiation-and-reaching-agreements",
     "title": "Negotiation and reaching agreements",
     "focus": "Proponer condiciones, negociar alternativas y alcanzar acuerdos sencillos.",
     "explanation": "Se usan expresiones para sugerir, aceptar, rechazar y negociar condiciones. Se practican modales de cortesía, condicionales y lenguaje de compromiso.",
@@ -3623,8 +2953,8 @@ const B1_SEEDS: Omit<A2PdfUnit, "readingPassages">[] = [
     ]
   },
   {
-    "number": 65,
-    "slug": "unidad-65-expressing-opinions-and-supporting-arguments",
+    "number": 53,
+    "slug": "unidad-53-expressing-opinions-and-supporting-arguments",
     "title": "Expressing opinions and supporting arguments",
     "focus": "Defender una opinión con razones, ejemplos y matices.",
     "explanation": "Para argumentar se utilizan I believe, from my point of view, one reason is, for example y on balance. Se puede matizar una opinión con tend to, seem to y may, evitando afirmaciones absolutas.",
@@ -3681,8 +3011,8 @@ const B1_SEEDS: Omit<A2PdfUnit, "readingPassages">[] = [
     ]
   },
   {
-    "number": 66,
-    "slug": "unidad-66-describing-people-character-and-behaviour",
+    "number": 54,
+    "slug": "unidad-54-describing-people-character-and-behaviour",
     "title": "Describing people, character and behaviour",
     "focus": "Describir rasgos de personalidad, comportamientos y relaciones con precisión.",
     "explanation": "Se amplía el repertorio de adjetivos y expresiones para describir personalidad y conducta. Se practican adjetivos con preposición, adverbios y estructuras de contraste.",
@@ -3740,8 +3070,8 @@ const B1_SEEDS: Omit<A2PdfUnit, "readingPassages">[] = [
     ]
   },
   {
-    "number": 67,
-    "slug": "unidad-67-feelings-reactions-and-emotions",
+    "number": 55,
+    "slug": "unidad-55-feelings-reactions-and-emotions",
     "title": "Feelings, reactions and emotions",
     "focus": "Expresar emociones, reacciones y causas con adjetivos precisos.",
     "explanation": "Se distingue entre adjetivos que describen la causa (-ing) y el sentimiento de una persona (-ed), y se amplía el vocabulario de reacciones. Se practican intensificadores y estructuras con feel.",
@@ -3798,8 +3128,8 @@ const B1_SEEDS: Omit<A2PdfUnit, "readingPassages">[] = [
     ]
   },
   {
-    "number": 68,
-    "slug": "unidad-68-describing-places-and-atmosphere",
+    "number": 56,
+    "slug": "unidad-56-describing-places-and-atmosphere",
     "title": "Describing places and atmosphere",
     "focus": "Describir lugares, ambiente, instalaciones y experiencias con detalles.",
     "explanation": "Se usan adjetivos y expresiones para caracterizar paisajes, ciudades y espacios. Se practican relativas, comparativos y vocabulario sensorial para hacer descripciones más precisas.",
@@ -3855,8 +3185,8 @@ const B1_SEEDS: Omit<A2PdfUnit, "readingPassages">[] = [
     ]
   },
   {
-    "number": 69,
-    "slug": "unidad-69-idioms-and-everyday-expressions",
+    "number": 57,
+    "slug": "unidad-57-idioms-and-everyday-expressions",
     "title": "Idioms and everyday expressions",
     "focus": "Comprender expresiones frecuentes que no se traducen literalmente.",
     "explanation": "Los idioms y expresiones fijas aparecen en conversaciones y textos cotidianos. La unidad introduce expresiones de frecuencia y dificultad moderada, como once in a while, by the way, on time, in a hurry y make up your mind.",
@@ -3913,8 +3243,8 @@ const B1_SEEDS: Omit<A2PdfUnit, "readingPassages">[] = [
     ]
   },
   {
-    "number": 70,
-    "slug": "unidad-70-integrated-b1-grammar-review",
+    "number": 58,
+    "slug": "unidad-58-integrated-b1-grammar-review",
     "title": "Integrated B1 grammar review",
     "focus": "Integrar los principales tiempos verbales, modales, condicionales, pasivas y estructuras de nivel B1.",
     "explanation": "Esta unidad revisa los contenidos centrales del nivel B1 y exige elegir la estructura según el contexto. Se recomienda identificar primero el marco temporal, la intención y la relación entre las ideas antes de seleccionar la forma verbal.",
@@ -3973,8 +3303,8 @@ const B1_SEEDS: Omit<A2PdfUnit, "readingPassages">[] = [
     ]
   },
   {
-    "number": 71,
-    "slug": "unidad-71-integrated-b1-vocabulary-review",
+    "number": 59,
+    "slug": "unidad-59-integrated-b1-vocabulary-review",
     "title": "Integrated B1 vocabulary review",
     "focus": "Consolidar vocabulario de trabajo, viajes, medioambiente, tecnología, salud y comunicación.",
     "explanation": "Repaso de collocations, phrasal verbs, formación de palabras, preposiciones dependientes y expresiones funcionales. El objetivo es seleccionar combinaciones naturales en distintos contextos.",
@@ -4031,8 +3361,8 @@ const B1_SEEDS: Omit<A2PdfUnit, "readingPassages">[] = [
     ]
   },
   {
-    "number": 72,
-    "slug": "unidad-72-b1-reading-and-communication-strategies",
+    "number": 60,
+    "slug": "unidad-60-b1-reading-and-communication-strategies",
     "title": "B1 reading and communication strategies",
     "focus": "Desarrollar estrategias para comprender textos, identificar ideas principales e inferir información.",
     "explanation": "Esta unidad integra técnicas de lectura: localizar información específica, reconocer referencias, deducir significado por contexto, distinguir hechos y opiniones e identificar la intención del autor. Se practica resumir y justificar respuestas con evidencia textual.",
