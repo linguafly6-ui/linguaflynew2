@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import { A2_PDF_UNITS } from "@/lib/a2-pdf-units";
 
 const canonical = "https://linguafly.app/biblioteca-pdf";
 
@@ -235,6 +236,20 @@ export default function PdfLibraryPage() {
           <Link key="unit-58" href="/biblioteca-pdf/a1/unidad-58-health-illness" className="block rounded-2xl border border-slate-200 bg-white p-6 shadow-sm transition hover:border-blue-200 hover:shadow-md"><span className="text-xs font-extrabold uppercase tracking-wider text-blue-700">Unidad 58</span><h3 className="mt-2 text-xl font-extrabold text-slate-950">Health & Illness</h3><p className="mt-2 leading-7 text-slate-600">Aprende vocabulario de salud y enfermedades en inglés A1: headache, cough, cold, fever y sore throat. Practica should y shouldn't para dar consejos sencillos con ejercicios PDF de gramática, vocabulario y lectura.</p><span className="mt-4 inline-flex font-bold text-blue-700">Ver explicación y ejercicios →</span></Link>
           <Link key="unit-59" href="/biblioteca-pdf/a1/unidad-59-money-currency" className="block rounded-2xl border border-slate-200 bg-white p-6 shadow-sm transition hover:border-blue-200 hover:shadow-md"><span className="text-xs font-extrabold uppercase tracking-wider text-blue-700">Unidad 59</span><h3 className="mt-2 text-xl font-extrabold text-slate-950">Money & Currency</h3><p className="mt-2 leading-7 text-slate-600">Aprende vocabulario de dinero y moneda en inglés A1: cash, card, coins, notes, price y change. Practica pay for, spend money on y cost para hablar de compras y precios con ejercicios PDF y soluciones.</p><span className="mt-4 inline-flex font-bold text-blue-700">Ver explicación y ejercicios →</span></Link>
           <Link key="unit-60" href="/biblioteca-pdf/a1/unidad-60-module-6-review-shopping-food" className="block rounded-2xl border border-slate-200 bg-white p-6 shadow-sm transition hover:border-blue-200 hover:shadow-md"><span className="text-xs font-extrabold uppercase tracking-wider text-blue-700">Unidad 60</span><h3 className="mt-2 text-xl font-extrabold text-slate-950">Module 6 Review — Shopping & Food</h3><p className="mt-2 leading-7 text-slate-600">Repasa inglés A1 sobre compras y alimentación: supermercado, alimentos, contables e incontables, some/any, cantidades, ropa, restaurante, recetas, salud y dinero. Incluye ejercicios PDF de Grammar, Vocabulary y Reading con soluciones.</p><span className="mt-4 inline-flex font-bold text-blue-700">Ver explicación y ejercicios →</span></Link>
+        </div>
+      </section>
+      <section className="mt-14">
+        <h2 className="text-2xl font-extrabold text-slate-950">Nivel A2 · Elemental</h2>
+        <p className="mt-2 max-w-3xl leading-7 text-slate-600">Cuadernos de las primeras diez unidades del curso A2. Cada PDF incluye explicación en español, estructuras clave, ejemplos, vocabulario, actividades y soluciones explicadas.</p>
+        <div className="mt-5 grid gap-5">
+          {A2_PDF_UNITS.map((unit) => (
+            <Link key={unit.slug} href={`/biblioteca-pdf/a2/${unit.slug}`} className="block rounded-2xl border border-slate-200 bg-white p-6 shadow-sm transition hover:border-blue-200 hover:shadow-md">
+              <span className="text-xs font-extrabold uppercase tracking-wider text-blue-700">Unidad {unit.number} · A2</span>
+              <h3 className="mt-2 text-xl font-extrabold text-slate-950">{unit.title}</h3>
+              <p className="mt-2 leading-7 text-slate-600">{unit.focus}</p>
+              <span className="mt-4 inline-flex font-bold text-blue-700">Ver explicación y descargar PDF →</span>
+            </Link>
+          ))}
         </div>
       </section>
     </main>
