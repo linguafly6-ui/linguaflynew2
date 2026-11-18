@@ -90,7 +90,7 @@ const c1GrammarBanks: Record<number, A2PdfExercise[]> = {
 
 export const buildC1ExerciseSections = (unit: A2PdfUnit) => {
  const shared = buildA2ExerciseSections(unit);
- const grammar = c1GrammarBanks[unit.number] ?? c1GrammarBanksExtra[unit.number] ?? c1GrammarBanksFinal[unit.number];
+ const grammar = c1GrammarBanks[unit.number] ?? c1GrammarBanksExtra[unit.number] ?? c1GrammarBanksFinal[unit.number] ?? c1GrammarBanksReview[unit.number];
  return [
   ...(grammar ? [{ title: `GRAMMAR — ${grammar.length} ejercicios revisados`, exercises: grammar }] : []),
   ...shared.filter((section) => !section.title.startsWith("GRAMMAR")),
@@ -198,5 +198,16 @@ const c1GrammarBanksFinal: Record<number, A2PdfExercise[]> = {
 {question:"Corrige: The report recommends to revise the procedure.",answer:"The report recommends revising the procedure.",note:"Recommend suele ir seguido de gerundio o de una cláusula mandativa."},
 {question:"Completa: The organisation is committed to ______ (improve) access to education.",answer:"improving",note:"En committed to, to es preposición y requiere gerundio."},
 {question:"Explica la diferencia entre stop doing y stop to do.",answer:"Stop doing significa abandonar una actividad; stop to do significa interrumpir otra actividad para realizar algo.",note:"El tipo de complemento modifica el significado del verbo stop."}
+]
+};
+
+const c1GrammarBanksReview: Record<number, A2PdfExercise[]> = {
+59:[
+{question:"Completa con inversión: Not until the second analysis ______ the error become apparent.",answer:"did",note:"Not until inicial exige inversión en la oración principal."},
+{question:"Completa el mixed conditional: If the researchers had controlled for age, the results ______ (be) more reliable now.",answer:"would be",note:"Una condición pasada hipotética tiene una consecuencia presente."},
+{question:"Pasa a pasiva impersonal: Experts believe that the manuscript was altered.",answer:"The manuscript is believed to have been altered.",note:"La pasiva de reporting con infinitivo perfecto expresa anterioridad."},
+{question:"Completa el mandative subjunctive: The panel recommended that the data ______ (be) independently verified.",answer:"be",note:"Recommend that selecciona la forma base en la cláusula mandativa."},
+{question:"Reescribe como cleft destacando the timing: The timing caused the negotiations to fail.",answer:"It was the timing that caused the negotiations to fail.",note:"La it-cleft focaliza el constituyente destacado."},
+{question:"Corrige la complementación: The authors suggested to repeat the experiment.",answer:"The authors suggested repeating the experiment.",note:"Suggest suele seleccionar gerundio o una cláusula that, no to-infinitive."}
 ]
 };
