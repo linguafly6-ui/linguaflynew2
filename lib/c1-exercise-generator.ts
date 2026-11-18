@@ -89,8 +89,9 @@ const c1GrammarBanks: Record<number, A2PdfExercise[]> = {
 export const buildC1ExerciseSections = (unit: A2PdfUnit) => {
  const shared = buildA2ExerciseSections(unit);
  const grammar = c1GrammarBanks[unit.number] ?? c1GrammarBanksExtra[unit.number] ?? c1GrammarBanksFinal[unit.number] ?? c1GrammarBanksReview[unit.number];
+ const focused = c1LexicalBanks[unit.number];
  return [
-  ...(grammar ? [{ title: `GRAMMAR — ${grammar.length} ejercicios revisados`, exercises: grammar }] : []),
+  ...(grammar ? [{ title: `GRAMMAR — ${grammar.length} ejercicios revisados`, exercises: grammar }] : focused ? [{ title: `LEXICAL & DISCOURSE FOCUS — ${focused.length} ejercicios revisados`, exercises: focused }] : []),
   ...shared.filter((section) => !section.title.startsWith("GRAMMAR")),
  ];
 };
@@ -209,3 +210,74 @@ const c1GrammarBanksReview: Record<number, A2PdfExercise[]> = {
 {question:"Corrige la complementación: The authors suggested to repeat the experiment.",answer:"The authors suggested repeating the experiment.",note:"Suggest suele seleccionar gerundio o una cláusula that, no to-infinitive."}
 ]
 };
+
+
+
+const c1LexicalBanks: Record<number, A2PdfExercise[]> = {
+21:[
+{question:"Elige la colocación natural: The committee ______ a decision after reviewing the evidence. (made / did)",answer:"made",note:"Make a decision es la colocación estándar."},
+{question:"Corrige la colocación: The study gives a powerful evidence for the claim.",answer:"The study provides compelling evidence for the claim.",note:"Evidence es incontable; provide compelling evidence es una combinación idiomática."},
+{question:"Completa: The findings ______ serious doubts about the reliability of the model. (raise / lift)",answer:"raise",note:"Raise doubts es una colocación frecuente y natural."},
+{question:"Sustituye very important por una opción más precisa en registro académico.",answer:"crucial / pivotal / of considerable significance",note:"La elección depende de si se destaca necesidad, influencia o relevancia."},
+{question:"Explica la diferencia entre strong argument y powerful argument.",answer:"Strong argument destaca solidez lógica; powerful argument destaca capacidad persuasiva o impacto.",note:"Los colocativos modifican el matiz, no son intercambiables en todos los contextos."},
+{question:"Reescribe evitando repetir significant: The results are significant and the implications are significant.",answer:"The results are substantial, and their implications are far-reaching.",note:"La variación léxica debe conservar el significado y mejorar la precisión."}
+],
+22:[
+{question:"Interpreta el modismo: The negotiations reached a dead end.",answer:"Las negociaciones llegaron a un punto muerto.",note:"Dead end se usa figuradamente para una situación sin salida o progreso."},
+{question:"Sustituye la expresión literal por un modismo adecuado: The new evidence made the issue easier to understand.",answer:"The new evidence shed light on the issue.",note:"Shed light on significa aclarar o ayudar a comprender."},
+{question:"Elige el significado de to take something with a pinch of salt.",answer:"No aceptar algo como totalmente fiable; mantener cierto escepticismo.",note:"Es una expresión idiomática de cautela ante una afirmación."},
+{question:"Completa: The proposal sounds attractive, but the devil is in the ______.",answer:"details",note:"The devil is in the details advierte que los problemas están en los detalles."},
+{question:"Reformula en registro neutro: The plan went down like a lead balloon.",answer:"The plan was received very negatively.",note:"La expresión idiomática es informal; la reformulación neutra conserva el sentido."},
+{question:"Explica por qué no conviene traducir literalmente un idiom.",answer:"Porque su significado suele ser convencional y no se deduce de la suma de sus palabras; hay que atender al contexto y al registro.",note:"La equivalencia debe ser pragmática, no palabra por palabra."}
+],
+23:[
+{question:"Identifica la metáfora en: The proposal opened the door to further negotiations.",answer:"Opened the door presenta la posibilidad de negociar como una puerta que se abre.",note:"La metáfora conceptualiza una oportunidad como acceso físico."},
+{question:"Reformula la metáfora en lenguaje literal: The policy cast a long shadow over the sector.",answer:"The policy had lasting negative effects on the sector.",note:"Cast a shadow comunica influencia negativa y duradera."},
+{question:"Explica el efecto de la metáfora: The data paint a troubling picture.",answer:"Presenta los datos como una imagen visual y orienta la interpretación hacia una valoración preocupante.",note:"La metáfora hace más concreta y evaluativa una descripción abstracta."},
+{question:"Distingue metáfora y símil.",answer:"La metáfora identifica o presenta una cosa como otra; el símil establece una comparación explícita, a menudo con like o as.",note:"Ambos crean asociaciones, pero difieren en su formulación."},
+{question:"Interpreta: The debate has reached a crossroads.",answer:"El debate ha llegado a un momento en el que debe elegirse entre distintas direcciones o alternativas.",note:"Crossroads representa una decisión como una intersección de caminos."},
+{question:"Propón una versión menos figurativa de: The argument collapses under scrutiny.",answer:"The argument cannot withstand detailed examination.",note:"La reformulación mantiene la idea de falta de solidez sin imagen física."}
+],
+24:[
+{question:"Sustituye el phrasal verb por un verbo formal: The researchers looked into the discrepancy.",answer:"The researchers investigated the discrepancy.",note:"Investigate es una alternativa formal a look into."},
+{question:"Completa: The panel will ______ the proposal before reaching a decision. (look over)",answer:"look over",note:"Look over significa revisar; examine sería una alternativa más formal."},
+{question:"Distingue carry out y bring about.",answer:"Carry out significa ejecutar una tarea o estudio; bring about significa causar o producir un cambio.",note:"El primer verbo describe realización; el segundo, causación."},
+{question:"Reformula formalmente: The company put off the launch.",answer:"The company postponed the launch.",note:"Postpone es más formal que put off."},
+{question:"Completa: The report ______ several inconsistencies in the original dataset. (point out)",answer:"points out",note:"Point out significa señalar o llamar la atención sobre algo."},
+{question:"Explica por qué un phrasal verb puede ser adecuado en un texto formal.",answer:"Algunos son neutrales o están plenamente asentados en registros profesionales; la adecuación depende del verbo concreto, el género y la audiencia.",note:"No todos los phrasal verbs son informales."}
+],
+25:[
+{question:"Forma el sustantivo de assess y úsalo en una frase.",answer:"Assessment — The assessment identified three areas for improvement.",note:"-ment forma un sustantivo de proceso o resultado."},
+{question:"Completa con la forma correcta: The proposal was widely ______ (critic).",answer:"criticised",note:"Se necesita el participio/adjetivo criticised."},
+{question:"Transforma en adjetivo: a decision based on evidence",answer:"an evidence-based decision",note:"El compuesto con guion condensa la relación entre sustantivo y modificador."},
+{question:"Explica la diferencia entre disinformation y misinformation.",answer:"Disinformation implica difusión deliberada de información falsa; misinformation es información incorrecta sin que la intención de engañar sea necesaria.",note:"El prefijo dis- suele añadir intencionalidad."},
+{question:"Completa: The policy's ______ (effective) remains difficult to measure.",answer:"effectiveness",note:"Effectiveness es el sustantivo abstracto derivado de effective."},
+{question:"Identifica el proceso de formación en overgeneralisation.",answer:"Prefijación con over- y sufijación nominal con -ation sobre la base generalise.",note:"La palabra combina afijación para expresar generalización excesiva."}
+],
+26:[
+{question:"Adapta al registro académico: Kids these days get loads of information online.",answer:"Young people today are exposed to substantial amounts of information online.",note:"La reformulación sustituye léxico coloquial por expresiones neutrales y precisas."},
+{question:"Adapta a un correo profesional cortés: Send me the figures today.",answer:"Could you please send me the figures by the end of today?",note:"La petición indirecta suaviza la imposición y fija un plazo claro."},
+{question:"Identifica la audiencia probable de: Pursuant to the aforementioned provisions...",answer:"Una audiencia jurídica, administrativa o institucional.",note:"El léxico formulaico y técnico presupone familiaridad con documentos formales."},
+{question:"Reformula para un público general: The intervention yielded statistically significant outcomes.",answer:"The intervention produced results that were unlikely to be due to chance.",note:"La versión explica el concepto técnico sin depender del término especializado."},
+{question:"Explica cómo cambia el tono al usar might I suggest frente a you must.",answer:"Might I suggest formula una propuesta mitigada; you must expresa obligación directa.",note:"La modalidad y la forma interrogativa influyen en cortesía y fuerza."},
+{question:"Corrige el registro mixto: Dear Professor, I wanna ask about the aforementioned assessment.",answer:"Dear Professor, I would like to ask about the assessment mentioned above.",note:"La versión mantiene un tono formal coherente y evita wanna."}
+],
+27:[
+{question:"Reformula como desacuerdo diplomático: Your interpretation is wrong.",answer:"I am not entirely convinced by that interpretation.",note:"La mitigación expresa desacuerdo sin atacar directamente al interlocutor."},
+{question:"Completa: I take your point; ______, I would interpret the evidence differently.",answer:"however / nevertheless",note:"El conector reconoce la postura y después introduce una reserva."},
+{question:"Transforma en una objeción constructiva: This proposal will never work.",answer:"I wonder whether the proposal would be workable under the current conditions.",note:"La pregunta indirecta convierte el rechazo categórico en una evaluación abierta."},
+{question:"Explica el efecto de conceder antes de objetar.",answer:"Muestra que se ha considerado la postura ajena, reduce la confrontación y prepara el terreno para la discrepancia.",note:"La concesión puede mejorar la cooperación sin abandonar la propia posición."},
+{question:"Reformula con una reserva: I agree with the aim, but the method is flawed.",answer:"While I agree with the overall aim, I have some reservations about the proposed method.",note:"While introduce una concesión y reservations suaviza la crítica."},
+{question:"Distingue I disagree y I see it differently.",answer:"I disagree expresa oposición explícita; I see it differently presenta una perspectiva alternativa de forma menos confrontativa.",note:"La elección depende de la relación y del grado de franqueza requerido."}
+],
+28:[
+{question:"Convierte en pregunta retórica: We cannot ignore the long-term consequences.",answer:"Can we really afford to ignore the long-term consequences?",note:"La pregunta no busca información; intensifica la advertencia."},
+{question:"Explica el efecto de: How many more warnings do we need?",answer:"La pregunta presupone que ya ha habido advertencias suficientes y expresa impaciencia o crítica.",note:"La respuesta se da por implícita y refuerza la postura del hablante."},
+{question:"Reformula como pregunta retórica persuasiva: The policy is not sustainable.",answer:"How can this policy possibly be sustainable?",note:"La formulación invita al público a compartir la conclusión negativa."},
+{question:"Distingue pregunta informativa y retórica.",answer:"La informativa solicita una respuesta; la retórica se formula para afirmar, enfatizar o provocar reflexión sin esperar necesariamente respuesta.",note:"La intención comunicativa determina la interpretación."},
+{question:"Identifica el recurso: Surely no one would defend such an outcome.",answer:"Pregunta retórica implícita mediante surely y una formulación que orienta al lector hacia una respuesta negativa.",note:"Surely presenta la conclusión como compartida o difícil de negar."},
+{question:"Reescribe evitando un tono agresivo: What were they thinking?",answer:"What considerations may have led them to take that decision?",note:"La versión neutral sustituye la crítica emocional por una petición de explicación."}
+]
+};
+
+
