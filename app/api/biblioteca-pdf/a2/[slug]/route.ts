@@ -106,7 +106,7 @@ export async function GET(_request: Request, { params }: Params) {
   for (const section of sections) {
     if (section.title.startsWith("READING")) {
       heading("READING TEXTS - Lee los 12 textos antes de responder");
-      const passages = getA2ReadingPassages();
+      const passages = getA2ReadingPassages(unit);
       passages.forEach((passage, index) => {
         paragraph(`TEXT ${index + 1}: ${passage.title}`, { font: bold, size: 9.5, gap: 3 });
         paragraph(passage.body, { size: 9, gap: 9 });
