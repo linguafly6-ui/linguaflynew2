@@ -56,7 +56,7 @@ const readingFacts: string[][] = [
   ["After Noah tried a new service.", "He needed to describe both positive points and a problem fairly.", "Noah wrote the review and another person used it.", "He included specific examples and explained who might find it useful.", "His review helped someone make a decision."]
 ];
 
-export function getA2ReadingPassages() { return readingStories; }
+export function getA2ReadingPassages(unit?: A2PdfUnit) { return unit?.readingPassages ?? readingStories; }
 
 export function buildA2ExerciseSections(unit: A2PdfUnit): A2ExerciseSection[] {
   const grammar: A2PdfExercise[] = [];
@@ -92,16 +92,37 @@ export function buildA2ExerciseSections(unit: A2PdfUnit): A2ExerciseSection[] {
   }
 
   const reading: A2PdfExercise[] = [];
-  readingStories.forEach((story, storyIndex) => {
-    for (let q = 0; q < 5; q++) {
-      const item = readingQuestions[q];
-      reading.push({
-        question: `READING ${storyIndex + 1} — ${story.title}. ${item.q}`,
-        answer: readingFacts[storyIndex][item.fact],
-        note: item.n
-      });
-    }
-  });
+  if (unit.readingPassages?.length) {
+    unit.readingPassages.forEach((story, storyIndex) => {
+      const sentences = story.body.match(/[^.!?]+[.!?]+/g) ?? [story.body];
+      for (let q = 0; q < 10; q++) {
+        const evidence = sentences[q % sentences.length].trim();
+        const prompts = [
+          "What information does the text give?",
+          "Which detail supports the main idea?",
+          "What does the writer tell us about this situation?",
+          "Find one fact mentioned in the passage.",
+          "What happens according to the text?"
+        ];
+        reading.push({
+          question: `READING ${storyIndex + 1} — ${story.title}. ${prompts[q % prompts.length]}`,
+          answer: evidence,
+          note: "La respuesta se encuentra directamente en el texto. Puedes expresarla con tus propias palabras sin cambiar el significado."
+        });
+      }
+    });
+  } else {
+    readingStories.forEach((story, storyIndex) => {
+      for (let q = 0; q < 5; q++) {
+        const item = readingQuestions[q];
+        reading.push({
+          question: `READING ${storyIndex + 1} — ${story.title}. ${item.q}`,
+          answer: readingFacts[storyIndex][item.fact],
+          note: item.n
+        });
+      }
+    });
+  }
   return [
     { title: "GRAMMAR — 80 ejercicios", exercises: grammar },
     { title: "VOCABULARY — 60 ejercicios", exercises: vocabulary },
