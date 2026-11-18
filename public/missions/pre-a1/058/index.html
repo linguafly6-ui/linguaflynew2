@@ -6,7 +6,7 @@
 <p class="muted">LINGUAFLY · PRE-A1 · MISSION 058</p><h1>🏫 Classroom English</h1><p class="lead">Listen to your teacher and follow everyday classroom instructions in English.</p>
 <nav><button class="active" data-tab="explore">1. Exploración</button><button data-tab="practice">2. Práctica</button><button data-tab="review">3. Repaso</button></nav>
 <section id="explore" class="panel active"><h2>Explore classroom instructions</h2><p class="muted">Listen, look and learn. Use the audio buttons to hear each expression.</p><div id="words" class="grid"></div></section>
-<section id="practice" class="panel"><h2>Listen and choose!</h2><p class="muted" id="counter">Question 1 of 20</p><div class="progress"><div id="bar" class="bar"></div></div><p id="question" class="question"></p><button id="translate">Translate / Traducir</button><p id="translation" class="translate" hidden></p><div id="answers" class="answers"></div><p id="feedback" class="feedback"></p><button id="next" class="primary" hidden>Next question →</button></section>
+<section id="practice" class="panel"><h2>Listen and choose!</h2><p class="muted" id="counter">Question 1 of 50</p><div class="progress"><div id="bar" class="bar"></div></div><p id="question" class="question"></p><button id="translate">Translate / Traducir</button><p id="translation" class="translate" hidden></p><div id="answers" class="answers"></div><p id="feedback" class="feedback"></p><button id="next" class="primary" hidden>Next question →</button></section>
 <section id="review" class="panel"><h2>Review time!</h2><div class="recap"><div><b>LISTEN</b><br>Pay attention with your ears.</div><div><b>LOOK</b><br>Use your eyes.</div><div><b>READ / WRITE</b><br>Read words and write answers.</div><div><b>OPEN / CLOSE</b><br>Open or shut your book.</div><div><b>SIT DOWN / STAND UP</b><br>Change your body position.</div><div><b>REPEAT</b><br>Say it again.</div></div><h3 id="result"></h3><button class="primary" onclick="restart()">Practise again</button></section>
 </main><script>
 const words=[["listen","escucha","👂"],["look","mira","👀"],["read","lee","📖"],["write","escribe","✍️"],["repeat","repite","🔁"],["open","abre","📂"],["close","cierra","📕"],["sit down","siéntate","🪑"],["stand up","ponte de pie","🧍"]];
@@ -31,15 +31,46 @@ const questions=[
 ["Choose the correct instruction to stop reading.",["Close your book.","Open your book.","Write your name."],0,"Elige la instrucción correcta para terminar de leer."],
 ["The teacher points to a picture and says “Look.” What do you do?",["Look at the picture.","Write the picture.","Close the picture."],0,"El profesor señala un dibujo y dice «Mira». ¿Qué haces?"],
 ["The teacher says “Listen and repeat.” What do you do?",["Listen, then say it again.","Read, then close the book.","Stand up, then sit down."],0,"El profesor dice «Escucha y repite». ¿Qué haces?"]
+
+,["The teacher says: “Point to the door.” What do you do?",["Show the door with your finger.","Close your book.","Sit down."],0,"El profesor dice: «Señala la puerta». ¿Qué haces?"]
+,["The teacher says: “Raise your hand.” What do you do?",["Put one hand up.","Stand on your chair.","Open your bag."],0,"El profesor dice: «Levanta la mano». ¿Qué haces?"]
+,["The teacher says: “Be quiet, please.” What should you do?",["Stop talking.","Speak louder.","Run outside."],0,"El profesor dice: «Silencio, por favor». ¿Qué debes hacer?"]
+,["The teacher says: “Work in pairs.” How many students work together?",["Two students.","One student.","Five students."],0,"El profesor dice: «Trabajad en parejas». ¿Cuántos alumnos trabajan juntos?"]
+,["The teacher says: “Work in groups.” What do you do?",["Work with other students.","Work alone.","Go home."],0,"El profesor dice: «Trabajad en grupos». ¿Qué haces?"]
+,["The teacher says: “Take out your pencil.” What do you need?",["Your pencil.","Your coat.","Your lunch."],0,"El profesor dice: «Saca tu lápiz». ¿Qué necesitas?"]
+,["The teacher says: “Put your pencil away.” What do you do?",["Put the pencil away.","Write your name.","Open the window."],0,"El profesor dice: «Guarda tu lápiz». ¿Qué haces?"]
+,["The teacher says: “Show me your homework.” What do you show?",["Your homework.","Your shoes.","Your lunch."],0,"El profesor dice: «Enséñame tus deberes». ¿Qué enseñas?"]
+,["The teacher says: “Write your name.” What do you write?",["Your name.","The date only.","A question."],0,"El profesor dice: «Escribe tu nombre». ¿Qué escribes?"]
+,["The teacher says: “Turn to page five.” Which page do you open?",["Page five.","Page fifteen.","Page fifty."],0,"El profesor dice: «Ve a la página cinco». ¿Qué página abres?"]
+,["The teacher says: “Look at the board.” Where do you look?",["At the board.","At the floor.","At your shoes."],0,"El profesor dice: «Mira la pizarra». ¿Dónde miras?"]
+,["The teacher says: “Put your hand down.” What do you do?",["Lower your hand.","Raise both hands.","Stand up."],0,"El profesor dice: «Baja la mano». ¿Qué haces?"]
+,["The teacher says: “Come to the board.” Where do you go?",["To the board.","To the door.","To your bag."],0,"El profesor dice: «Ven a la pizarra». ¿Adónde vas?"]
+,["The teacher says: “Go back to your seat.” Where do you go?",["To your seat.","To the playground.","To the board."],0,"El profesor dice: «Vuelve a tu sitio». ¿Adónde vas?"]
+,["The teacher says: “Check your answers.” What do you do?",["Look at your answers again.","Close your eyes.","Leave the classroom."],0,"El profesor dice: «Comprueba tus respuestas». ¿Qué haces?"]
+,["The teacher says: “Choose the correct answer.” What do you do?",["Pick the right answer.","Copy every answer.","Stop reading."],0,"El profesor dice: «Elige la respuesta correcta». ¿Qué haces?"]
+,["The teacher says: “Match the words.” What do you do?",["Connect the pairs.","Erase the page.","Close your book."],0,"El profesor dice: «Relaciona las palabras». ¿Qué haces?"]
+,["The teacher says: “Complete the sentence.” What do you do?",["Finish the sentence.","Read the title only.","Draw a circle."],0,"El profesor dice: «Completa la oración». ¿Qué haces?"]
+,["The teacher says: “Listen again.” What do you do?",["Listen one more time.","Start writing.","Stand up."],0,"El profesor dice: «Escucha otra vez». ¿Qué haces?"]
+,["The teacher says: “Read aloud.” How should you read?",["With your voice.","Only in your head.","Very silently."],0,"El profesor dice: «Lee en voz alta». ¿Cómo debes leer?"]
+,["Which instruction means “levanta la mano”?",["Raise your hand.","Put your hand down.","Open your book."],0,"¿Qué instrucción significa «levanta la mano»?"]
+,["Which instruction means “guarda tu lápiz”?",["Put your pencil away.","Take out your pencil.","Write your name."],0,"¿Qué instrucción significa «guarda tu lápiz»?"]
+,["Which instruction means “en parejas”?",["In pairs.","In groups of ten.","Alone."],0,"¿Qué instrucción significa «en parejas»?"]
+,["Which instruction means “pizarra” in “Look at the board”?",["Board.","Book.","Bag."],0,"¿Qué significa «board» en «Look at the board»?"]
+,["You do not understand. What can you say to the teacher?",["Can you repeat, please?","Good night, teacher.","I am a pencil."],0,"No entiendes. ¿Qué puedes decirle al profesor?"]
+,["You need help. Which phrase is polite?",["Can you help me, please?","Give me now!","Go away!"],0,"Necesitas ayuda. ¿Qué frase es educada?"]
+,["The teacher says: “Hands up.” What do you do?",["Raise your hands.","Put your hands in your pockets.","Sit on the floor."],0,"El profesor dice: «Manos arriba». ¿Qué haces?"]
+,["The teacher says: “Stop writing.” What do you do?",["Put your pencil down.","Write faster.","Open your notebook."],0,"El profesor dice: «Deja de escribir». ¿Qué haces?"]
+,["The teacher says: “Line up, please.” What do you do?",["Stand in a line.","Sit in a circle.","Open your books."],0,"El profesor dice: «Haced una fila, por favor». ¿Qué haces?"]
+,["The teacher says: “Good job!” What does it mean?",["You did well.","You are late.","Close the door."],0,"El profesor dice: «¡Buen trabajo!». ¿Qué significa?"]
 ];
 const $=id=>document.getElementById(id);let index=0,score=0,answered=false;
 function speak(t){if(!("speechSynthesis"in window))return;speechSynthesis.cancel();const u=new SpeechSynthesisUtterance(t);u.lang="en-GB";speechSynthesis.speak(u)}
 $("words").innerHTML=words.map(w=>'<div class="word"><div class="emoji">'+w[2]+'</div><h3>'+w[0]+'</h3><p>'+w[1]+'</p><button data-say="'+w[0]+'">🔊 Listen</button></div>').join("");
 $("words").querySelectorAll("[data-say]").forEach(b=>b.onclick=()=>speak(b.dataset.say));
-document.querySelectorAll("nav button").forEach(b=>b.onclick=()=>{document.querySelectorAll("nav button").forEach(x=>x.classList.toggle("active",x===b));document.querySelectorAll(".panel").forEach(x=>x.classList.toggle("active",x.id===b.dataset.tab));if(b.dataset.tab==="review")$("result").textContent="Your score: "+score+" / 20"});
-function render(){answered=false;const q=questions[index];$("counter").textContent="Question "+(index+1)+" of 20 · Score "+score;$("bar").style.width=(index/20*100)+"%";$("question").textContent=q[0];$("translation").hidden=true;$("translation").textContent=q[3];$("translate").textContent="Translate / Traducir";$("feedback").textContent="";$("next").hidden=true;$("answers").innerHTML=q[1].map((v,i)=>'<button data-answer="'+i+'">'+v+'</button>').join("");$("answers").querySelectorAll("button").forEach(b=>b.onclick=()=>choose(Number(b.dataset.answer),q))}
-function choose(choice,q){if(answered)return;answered=true;const correct=choice===q[2];if(correct)score++;$("answers").querySelectorAll("button").forEach((b,i)=>{b.disabled=true;if(i===q[2])b.style.borderColor="#2b9b72"});$("feedback").textContent=correct?"✓ Correct! Well done!":"Not quite. The correct answer is: "+q[1][q[2]];$("counter").textContent="Question "+(index+1)+" of 20 · Score "+score;$("next").hidden=false}
+document.querySelectorAll("nav button").forEach(b=>b.onclick=()=>{document.querySelectorAll("nav button").forEach(x=>x.classList.toggle("active",x===b));document.querySelectorAll(".panel").forEach(x=>x.classList.toggle("active",x.id===b.dataset.tab));if(b.dataset.tab==="review")$("result").textContent="Your score: "+score+" / 50"});
+function render(){answered=false;const q=questions[index];$("counter").textContent="Question "+(index+1)+" of 50 · Score "+score;$("bar").style.width=(index/50*100)+"%";$("question").textContent=q[0];$("translation").hidden=true;$("translation").textContent=q[3];$("translate").textContent="Translate / Traducir";$("feedback").textContent="";$("next").hidden=true;$("answers").innerHTML=q[1].map((v,i)=>'<button data-answer="'+i+'">'+v+'</button>').join("");$("answers").querySelectorAll("button").forEach(b=>b.onclick=()=>choose(Number(b.dataset.answer),q))}
+function choose(choice,q){if(answered)return;answered=true;const correct=choice===q[2];if(correct)score++;$("answers").querySelectorAll("button").forEach((b,i)=>{b.disabled=true;if(i===q[2])b.style.borderColor="#2b9b72"});$("feedback").textContent=correct?"✓ Correct! Well done!":"Not quite. The correct answer is: "+q[1][q[2]];$("counter").textContent="Question "+(index+1)+" of 50 · Score "+score;$("next").hidden=false}
 $("translate").onclick=()=>{$("translation").hidden=!$("translation").hidden;$("translate").textContent=$("translation").hidden?"Translate / Traducir":"Hide translation / Ocultar traducción"};
-$("next").onclick=()=>{index++;if(index===20){$("bar").style.width="100%";document.querySelector('[data-tab="review"]').click();return}render()};
+$("next").onclick=()=>{index++;if(index===50){$("bar").style.width="100%";document.querySelector('[data-tab="review"]').click();return}render()};
 function restart(){index=0;score=0;document.querySelector('[data-tab="practice"]').click();render()}render();
 </script></body></html>
