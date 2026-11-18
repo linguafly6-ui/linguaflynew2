@@ -100,8 +100,10 @@ export async function GET(_request: Request, { params }: Params) {
   heading("4. Vocabulario");
   for (const item of unit.vocabulary) paragraph("- " + item, { indent: 5, size: 10, gap: 2 });
   const sections = buildB2ExerciseSections(unit);
-  heading("5. Practica — 200 ejercicios");
-  paragraph("Distribución: 80 ejercicios de gramática, 60 de vocabulario y 60 preguntas de reading. Completa primero todas las actividades y consulta después las soluciones.", { size: 9, color: rgb(0.38, 0.43, 0.52), gap: 8 });
+  const grammarCount = sections.find((section) => section.title.startsWith("GRAMMAR"))?.exercises.length ?? 0;
+  const totalExercises = sections.reduce((sum, section) => sum + section.exercises.length, 0);
+  heading(`5. Practica — ${totalExercises} ejercicios`);
+  paragraph(`Distribución: ${grammarCount} ejercicios de gramática, 60 de vocabulario y 60 preguntas de reading. Completa primero todas las actividades y consulta después las soluciones.`, { size: 9, color: rgb(0.38, 0.43, 0.52), gap: 8 });
   let exerciseNumber = 1;
   for (const section of sections) {
     if (section.title.startsWith("READING")) {
