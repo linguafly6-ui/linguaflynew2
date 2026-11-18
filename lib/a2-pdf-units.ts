@@ -4,6 +4,7 @@ import { A2_PDF_UNITS_CONTINUED } from "./a2-pdf-units-11-20";
 import { A2_PDF_UNITS_21_30 } from "./a2-pdf-units-21-30";
 import { A2_PDF_UNITS_31_40 } from "./a2-pdf-units-31-40";
 import { A2_PDF_UNITS_41_50 } from "./a2-pdf-units-41-50";
+import { A2_PDF_UNITS_51_60 } from "./a2-pdf-units-51-60";
 export const A2_PDF_UNITS: A2PdfUnit[] = [
 {number:1,slug:"unidad-1-past-simple-memorable-events",title:"Past Simple: memorable events",focus:"Contar experiencias y acontecimientos terminados en el pasado.",explanation:"Usamos el Past Simple para hablar de acciones terminadas en un momento pasado. En afirmativa, los verbos regulares suelen añadir -ed (visit → visited) y los irregulares tienen una forma propia (go → went). Para negar y preguntar usamos did/didn't + verbo en forma base. Con el verbo be usamos was/were.",structure:["Afirmativa: sujeto + verbo en pasado + complemento.","Negativa: sujeto + didn't + verbo base.","Pregunta: Did + sujeto + verbo base?","Marcadores: yesterday, last weekend, two days ago, in 2022."],examples:["We visited the old castle last Saturday.","I didn't take any photos.","Did you enjoy the concert? — Yes, I did.","She went to London in 2023."],vocabulary:["memorable — inolvidable","journey — viaje","crowded — lleno de gente","arrive — llegar","discover — descubrir","take a photo — hacer una foto"],exercises:[
 {question:"Last summer, we ___ (travel) to Italy.",answer:"travelled / traveled",note:"Verbo regular: añade -ed; travelled es la grafía británica y traveled la estadounidense."},
@@ -88,5 +89,6 @@ export const A2_PDF_UNITS: A2PdfUnit[] = [
 ...A2_PDF_UNITS_CONTINUED,
 ...A2_PDF_UNITS_21_30,
 ...A2_PDF_UNITS_31_40,
-...A2_PDF_UNITS_41_50
+...A2_PDF_UNITS_41_50,
+...A2_PDF_UNITS_51_60
 ];
