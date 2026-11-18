@@ -445,7 +445,7 @@ const grammarBanks: Record<number, A2PdfExercise[]> = {
       "note": "Try + -ing significa probar un método como experimento."
     },
     {
-      "question": "Corrige según el significado: I tried opening the heavy door, but it was locked, so I made an effort to force it open.",
+      "question": "Completa con la forma correcta de try: I ______ (try) to open the heavy door, but it was locked.",
       "answer": "I tried to open the heavy door, but it was locked.",
       "note": "Try + to-infinitive expresa hacer el esfuerzo de conseguir algo."
     }
@@ -792,7 +792,7 @@ const grammarBanks: Record<number, A2PdfExercise[]> = {
       "note": "One sustituye un sustantivo contable singular mencionado."
     },
     {
-      "question": "Corrige: I don't like these shoes; I prefer the red one (plural).",
+      "question": "Reescribe sustituyendo la repetición por ones: I don't like these shoes; I prefer the red shoes.",
       "answer": "I don't like these shoes; I prefer the red ones.",
       "note": "Ones sustituye un sustantivo contable plural."
     },
@@ -838,9 +838,9 @@ const grammarBanks: Record<number, A2PdfExercise[]> = {
 
 export const buildB2ExerciseSections = (unit: A2PdfUnit) => {
   const shared = buildA2ExerciseSections(unit);
-  const grammar = grammarBanks[unit.number] ?? unit.exercises;
+  const grammar = grammarBanks[unit.number];
   return [
-    { title: `GRAMMAR — ${grammar.length} ejercicios`, exercises: grammar },
+    ...(grammar ? [{ title: `GRAMMAR — ${grammar.length} ejercicios`, exercises: grammar }] : []),
     ...shared.filter((section) => !section.title.startsWith("GRAMMAR")),
   ];
 };
