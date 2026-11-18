@@ -6,62 +6,511 @@
 <p class="muted">LINGUAFLY · PRE-A1 · MISSION 058</p><h1>🏫 Classroom English</h1><p class="lead">Comprende y traduce al español el inglés del aula mediante actividades variadas: relacionar palabras, interpretar instrucciones y elegir traducciones.</p>
 <nav><button class="active" data-tab="explore">1. Exploración</button><button data-tab="practice">2. Práctica</button><button data-tab="review">3. Repaso</button></nav>
 <section id="explore" class="panel active"><h2>Relaciona y aprende</h2><p class="muted">Une cada expresión en inglés con su significado en español. Después, escucha su pronunciación.</p><div id="words" class="grid"></div></section>
-<section id="practice" class="panel"><h2>Comprende y traduce al español</h2><p class="muted" id="counter">Reto 1 de 50</p><div class="progress"><div id="bar" class="bar"></div></div><p id="question" class="question"></p><button id="translate">Ver ayuda en español</button><p id="translation" class="translate" hidden></p><div id="answers" class="answers"></div><p id="feedback" class="feedback"></p><button id="next" class="primary" hidden>Next question →</button></section>
-<section id="review" class="panel"><h2>Review time!</h2><div class="recap"><div><b>LISTEN</b><br>Pay attention with your ears.</div><div><b>LOOK</b><br>Use your eyes.</div><div><b>READ / WRITE</b><br>Read words and write answers.</div><div><b>OPEN / CLOSE</b><br>Open or shut your book.</div><div><b>SIT DOWN / STAND UP</b><br>Change your body position.</div><div><b>REPEAT</b><br>Say it again.</div></div><h3 id="result"></h3><button class="primary" onclick="restart()">Practicar de nuevo</button></section>
+<section id="practice" class="panel"><h2>Traduce cada expresión al español</h2><p class="muted" id="counter">Reto 1 de 50</p><div class="progress"><div id="bar" class="bar"></div></div><p id="question" class="question"></p><button id="translate">Ver traducción</button><p id="translation" class="translate" hidden></p><div id="answers" class="answers"></div><p id="feedback" class="feedback"></p><button id="next" class="primary" hidden>Siguiente reto →</button></section>
+<section id="review" class="panel"><h2>¡Hora de repasar!</h2><div class="recap"><div><b>LISTEN</b><br>Pay attention with your ears.</div><div><b>LOOK</b><br>Use your eyes.</div><div><b>READ / WRITE</b><br>Read words and write answers.</div><div><b>OPEN / CLOSE</b><br>Open or shut your book.</div><div><b>SIT DOWN / STAND UP</b><br>Change your body position.</div><div><b>REPEAT</b><br>Say it again.</div></div><h3 id="result"></h3><button class="primary" onclick="restart()">Practicar de nuevo</button></section>
 </main><script>
 const words=[["listen","escucha","👂"],["look","mira","👀"],["read","lee","📖"],["write","escribe","✍️"],["repeat","repite","🔁"],["open","abre","📂"],["close","cierra","📕"],["sit down","siéntate","🪑"],["stand up","ponte de pie","🧍"]];
 const questions=[
-["The teacher says: “Listen!” What do you do?",["Listen carefully.","Open your book.","Stand up."],0,"El profesor dice: «¡Escucha!». ¿Qué haces?"],
-["The teacher says: “Look!” What do you do?",["Look at the board.","Close your book.","Sit down."],0,"El profesor dice: «¡Mira!». ¿Qué haces?"],
-["The teacher says: “Read!” What do you do?",["Read the text.","Write your name.","Stand up."],0,"El profesor dice: «¡Lee!». ¿Qué haces?"],
-["The teacher says: “Write!” What do you do?",["Write the answer.","Listen to music.","Close the door."],0,"El profesor dice: «¡Escribe!». ¿Qué haces?"],
-["The teacher says: “Repeat!” What do you do?",["Say it again.","Open the window.","Sit down."],0,"El profesor dice: «¡Repite!». ¿Qué haces?"],
-["The teacher says: “Open your book.” What do you do?",["Open your book.","Close your book.","Stand up."],0,"El profesor dice: «Abre tu libro». ¿Qué haces?"],
-["The teacher says: “Close your book.” What do you do?",["Close your book.","Read your book.","Open your book."],0,"El profesor dice: «Cierra tu libro». ¿Qué haces?"],
-["The teacher says: “Sit down.” What do you do?",["Sit on your chair.","Stand next to your chair.","Open your bag."],0,"El profesor dice: «Siéntate». ¿Qué haces?"],
-["The teacher says: “Stand up.” What do you do?",["Get on your feet.","Sit on the chair.","Close your eyes."],0,"El profesor dice: «Ponte de pie». ¿Qué haces?"],
-["Which instruction means “escucha”?",["Listen.","Look.","Read."],0,"¿Qué instrucción significa «escucha»?"],
-["Which instruction means “mira”?",["Write.","Look.","Repeat."],1,"¿Qué instrucción significa «mira»?"],
-["Which instruction means “lee”?",["Read.","Listen.","Open."],0,"¿Qué instrucción significa «lee»?"],
-["Which instruction means “cierra”?",["Open.","Close.","Repeat."],1,"¿Qué instrucción significa «cierra»?"],
-["You are sitting. The teacher says “Stand up.” What happens?",["You stand.","You sit.","You read."],0,"Estás sentado. El profesor dice «Ponte de pie». ¿Qué haces?"],
-["You are standing. The teacher says “Sit down.” What happens?",["You sit down.","You stand up.","You write."],0,"Estás de pie. El profesor dice «Siéntate». ¿Qué haces?"],
-["You read a sentence. The teacher says “Repeat.” What do you do?",["Say the sentence again.","Close the book.","Look away."],0,"Lees una oración. El profesor dice «Repite». ¿Qué haces?"],
-["Choose the correct instruction to start reading.",["Open your book.","Close your book.","Stand up."],0,"Elige la instrucción correcta para empezar a leer."],
-["Choose the correct instruction to stop reading.",["Close your book.","Open your book.","Write your name."],0,"Elige la instrucción correcta para terminar de leer."],
-["The teacher points to a picture and says “Look.” What do you do?",["Look at the picture.","Write the picture.","Close the picture."],0,"El profesor señala un dibujo y dice «Mira». ¿Qué haces?"],
-["The teacher says “Listen and repeat.” What do you do?",["Listen, then say it again.","Read, then close the book.","Stand up, then sit down."],0,"El profesor dice «Escucha y repite». ¿Qué haces?"]
-
-,["The teacher says: “Point to the door.” What do you do?",["Show the door with your finger.","Close your book.","Sit down."],0,"El profesor dice: «Señala la puerta». ¿Qué haces?"]
-,["The teacher says: “Raise your hand.” What do you do?",["Put one hand up.","Stand on your chair.","Open your bag."],0,"El profesor dice: «Levanta la mano». ¿Qué haces?"]
-,["The teacher says: “Be quiet, please.” What should you do?",["Stop talking.","Speak louder.","Run outside."],0,"El profesor dice: «Silencio, por favor». ¿Qué debes hacer?"]
-,["The teacher says: “Work in pairs.” How many students work together?",["Two students.","One student.","Five students."],0,"El profesor dice: «Trabajad en parejas». ¿Cuántos alumnos trabajan juntos?"]
-,["The teacher says: “Work in groups.” What do you do?",["Work with other students.","Work alone.","Go home."],0,"El profesor dice: «Trabajad en grupos». ¿Qué haces?"]
-,["The teacher says: “Take out your pencil.” What do you need?",["Your pencil.","Your coat.","Your lunch."],0,"El profesor dice: «Saca tu lápiz». ¿Qué necesitas?"]
-,["The teacher says: “Put your pencil away.” What do you do?",["Put the pencil away.","Write your name.","Open the window."],0,"El profesor dice: «Guarda tu lápiz». ¿Qué haces?"]
-,["The teacher says: “Show me your homework.” What do you show?",["Your homework.","Your shoes.","Your lunch."],0,"El profesor dice: «Enséñame tus deberes». ¿Qué enseñas?"]
-,["The teacher says: “Write your name.” What do you write?",["Your name.","The date only.","A question."],0,"El profesor dice: «Escribe tu nombre». ¿Qué escribes?"]
-,["The teacher says: “Turn to page five.” Which page do you open?",["Page five.","Page fifteen.","Page fifty."],0,"El profesor dice: «Ve a la página cinco». ¿Qué página abres?"]
-,["The teacher says: “Look at the board.” Where do you look?",["At the board.","At the floor.","At your shoes."],0,"El profesor dice: «Mira la pizarra». ¿Dónde miras?"]
-,["The teacher says: “Put your hand down.” What do you do?",["Lower your hand.","Raise both hands.","Stand up."],0,"El profesor dice: «Baja la mano». ¿Qué haces?"]
-,["The teacher says: “Come to the board.” Where do you go?",["To the board.","To the door.","To your bag."],0,"El profesor dice: «Ven a la pizarra». ¿Adónde vas?"]
-,["The teacher says: “Go back to your seat.” Where do you go?",["To your seat.","To the playground.","To the board."],0,"El profesor dice: «Vuelve a tu sitio». ¿Adónde vas?"]
-,["The teacher says: “Check your answers.” What do you do?",["Look at your answers again.","Close your eyes.","Leave the classroom."],0,"El profesor dice: «Comprueba tus respuestas». ¿Qué haces?"]
-,["The teacher says: “Choose the correct answer.” What do you do?",["Pick the right answer.","Copy every answer.","Stop reading."],0,"El profesor dice: «Elige la respuesta correcta». ¿Qué haces?"]
-,["The teacher says: “Match the words.” What do you do?",["Connect the pairs.","Erase the page.","Close your book."],0,"El profesor dice: «Relaciona las palabras». ¿Qué haces?"]
-,["The teacher says: “Complete the sentence.” What do you do?",["Finish the sentence.","Read the title only.","Draw a circle."],0,"El profesor dice: «Completa la oración». ¿Qué haces?"]
-,["The teacher says: “Listen again.” What do you do?",["Listen one more time.","Start writing.","Stand up."],0,"El profesor dice: «Escucha otra vez». ¿Qué haces?"]
-,["The teacher says: “Read aloud.” How should you read?",["With your voice.","Only in your head.","Very silently."],0,"El profesor dice: «Lee en voz alta». ¿Cómo debes leer?"]
-,["Which instruction means “levanta la mano”?",["Raise your hand.","Put your hand down.","Open your book."],0,"¿Qué instrucción significa «levanta la mano»?"]
-,["Which instruction means “guarda tu lápiz”?",["Put your pencil away.","Take out your pencil.","Write your name."],0,"¿Qué instrucción significa «guarda tu lápiz»?"]
-,["Which instruction means “en parejas”?",["In pairs.","In groups of ten.","Alone."],0,"¿Qué instrucción significa «en parejas»?"]
-,["Which instruction means “pizarra” in “Look at the board”?",["Board.","Book.","Bag."],0,"¿Qué significa «board» en «Look at the board»?"]
-,["You do not understand. What can you say to the teacher?",["Can you repeat, please?","Good night, teacher.","I am a pencil."],0,"No entiendes. ¿Qué puedes decirle al profesor?"]
-,["You need help. Which phrase is polite?",["Can you help me, please?","Give me now!","Go away!"],0,"Necesitas ayuda. ¿Qué frase es educada?"]
-,["The teacher says: “Hands up.” What do you do?",["Raise your hands.","Put your hands in your pockets.","Sit on the floor."],0,"El profesor dice: «Manos arriba». ¿Qué haces?"]
-,["The teacher says: “Stop writing.” What do you do?",["Put your pencil down.","Write faster.","Open your notebook."],0,"El profesor dice: «Deja de escribir». ¿Qué haces?"]
-,["The teacher says: “Line up, please.” What do you do?",["Stand in a line.","Sit in a circle.","Open your books."],0,"El profesor dice: «Haced una fila, por favor». ¿Qué haces?"]
-,["The teacher says: “Good job!” What does it mean?",["You did well.","You are late.","Close the door."],0,"El profesor dice: «¡Buen trabajo!». ¿Qué significa?"]
+  [
+    "Traduce al español: “Listen!”",
+    [
+      "¡Escucha!",
+      "¡Mira!",
+      "¡Lee!"
+    ],
+    0,
+    "“Listen!” significa: ¡Escucha!"
+  ],
+  [
+    "Traduce al español: “Look at the board.”",
+    [
+      "Mira la pizarra.",
+      "Abre el libro.",
+      "Cierra la puerta."
+    ],
+    0,
+    "“Look at the board.” significa: Mira la pizarra."
+  ],
+  [
+    "Traduce al español: “Read your book.”",
+    [
+      "Lee tu libro.",
+      "Escribe tu nombre.",
+      "Guarda tu lápiz."
+    ],
+    0,
+    "“Read your book.” significa: Lee tu libro."
+  ],
+  [
+    "Traduce al español: “Write your name.”",
+    [
+      "Escribe tu nombre.",
+      "Di tu nombre.",
+      "Borra tu nombre."
+    ],
+    0,
+    "“Write your name.” significa: Escribe tu nombre."
+  ],
+  [
+    "Traduce al español: “Repeat, please.”",
+    [
+      "Repite, por favor.",
+      "Escucha, por favor.",
+      "Siéntate, por favor."
+    ],
+    0,
+    "“Repeat, please.” significa: Repite, por favor."
+  ],
+  [
+    "Traduce al español: “Open your book.”",
+    [
+      "Abre tu libro.",
+      "Cierra tu libro.",
+      "Abre tu mochila."
+    ],
+    0,
+    "“Open your book.” significa: Abre tu libro."
+  ],
+  [
+    "Traduce al español: “Close the door.”",
+    [
+      "Cierra la puerta.",
+      "Abre la puerta.",
+      "Mira la puerta."
+    ],
+    0,
+    "“Close the door.” significa: Cierra la puerta."
+  ],
+  [
+    "Traduce al español: “Sit down, please.”",
+    [
+      "Siéntate, por favor.",
+      "Ponte de pie, por favor.",
+      "Ven aquí, por favor."
+    ],
+    0,
+    "“Sit down, please.” significa: Siéntate, por favor."
+  ],
+  [
+    "Traduce al español: “Stand up.”",
+    [
+      "Ponte de pie.",
+      "Siéntate.",
+      "Da la vuelta."
+    ],
+    0,
+    "“Stand up.” significa: Ponte de pie."
+  ],
+  [
+    "Traduce al español: “Raise your hand.”",
+    [
+      "Levanta la mano.",
+      "Baja la mano.",
+      "Abre la mano."
+    ],
+    0,
+    "“Raise your hand.” significa: Levanta la mano."
+  ],
+  [
+    "Traduce al español: “Put your hand down.”",
+    [
+      "Baja la mano.",
+      "Levanta la mano.",
+      "Lávate las manos."
+    ],
+    0,
+    "“Put your hand down.” significa: Baja la mano."
+  ],
+  [
+    "Traduce al español: “Be quiet, please.”",
+    [
+      "Silencio, por favor.",
+      "Habla más alto, por favor.",
+      "Sal fuera, por favor."
+    ],
+    0,
+    "“Be quiet, please.” significa: Silencio, por favor."
+  ],
+  [
+    "Traduce al español: “Work in pairs.”",
+    [
+      "Trabajad en parejas.",
+      "Trabajad solos.",
+      "Trabajad en grupos grandes."
+    ],
+    0,
+    "“Work in pairs.” significa: Trabajad en parejas."
+  ],
+  [
+    "Traduce al español: “Work in groups.”",
+    [
+      "Trabajad en grupos.",
+      "Trabajad en parejas.",
+      "Trabajad en silencio."
+    ],
+    0,
+    "“Work in groups.” significa: Trabajad en grupos."
+  ],
+  [
+    "Traduce al español: “Take out your pencil.”",
+    [
+      "Saca tu lápiz.",
+      "Guarda tu lápiz.",
+      "Afila tu lápiz."
+    ],
+    0,
+    "“Take out your pencil.” significa: Saca tu lápiz."
+  ],
+  [
+    "Traduce al español: “Put your pencil away.”",
+    [
+      "Guarda tu lápiz.",
+      "Saca tu lápiz.",
+      "Presta tu lápiz."
+    ],
+    0,
+    "“Put your pencil away.” significa: Guarda tu lápiz."
+  ],
+  [
+    "Traduce al español: “Show me your homework.”",
+    [
+      "Enséñame tus deberes.",
+      "Haz tus deberes.",
+      "Olvida tus deberes."
+    ],
+    0,
+    "“Show me your homework.” significa: Enséñame tus deberes."
+  ],
+  [
+    "Traduce al español: “Turn to page five.”",
+    [
+      "Ve a la página cinco.",
+      "Lee cinco páginas.",
+      "Escribe el número cinco."
+    ],
+    0,
+    "“Turn to page five.” significa: Ve a la página cinco."
+  ],
+  [
+    "Traduce al español: “Listen and repeat.”",
+    [
+      "Escucha y repite.",
+      "Lee y escribe.",
+      "Mira y dibuja."
+    ],
+    0,
+    "“Listen and repeat.” significa: Escucha y repite."
+  ],
+  [
+    "Traduce al español: “Point to the door.”",
+    [
+      "Señala la puerta.",
+      "Abre la puerta.",
+      "Limpia la puerta."
+    ],
+    0,
+    "“Point to the door.” significa: Señala la puerta."
+  ],
+  [
+    "Traduce al español: “Good morning.”",
+    [
+      "Buenos días.",
+      "Buenas noches.",
+      "Buenas tardes."
+    ],
+    0,
+    "“Good morning.” significa: Buenos días."
+  ],
+  [
+    "Traduce al español: “Good afternoon.”",
+    [
+      "Buenas tardes.",
+      "Buenos días.",
+      "Buenas noches."
+    ],
+    0,
+    "“Good afternoon.” significa: Buenas tardes."
+  ],
+  [
+    "Traduce al español: “Goodbye, see you tomorrow.”",
+    [
+      "Adiós, hasta mañana.",
+      "Hola, ¿qué tal?",
+      "Hasta luego, esta noche."
+    ],
+    0,
+    "“Goodbye, see you tomorrow.” significa: Adiós, hasta mañana."
+  ],
+  [
+    "Traduce al español: “Can you help me, please?”",
+    [
+      "¿Puedes ayudarme, por favor?",
+      "¿Puedes escucharme, por favor?",
+      "¿Puedes verme, por favor?"
+    ],
+    0,
+    "“Can you help me, please?” significa: ¿Puedes ayudarme, por favor?"
+  ],
+  [
+    "Traduce al español: “I don't understand.”",
+    [
+      "No lo entiendo.",
+      "No lo recuerdo.",
+      "No lo necesito."
+    ],
+    0,
+    "“I don't understand.” significa: No lo entiendo."
+  ],
+  [
+    "Traduce al español: “Can you repeat, please?”",
+    [
+      "¿Puedes repetirlo, por favor?",
+      "¿Puedes escribirlo, por favor?",
+      "¿Puedes abrirlo, por favor?"
+    ],
+    0,
+    "“Can you repeat, please?” significa: ¿Puedes repetirlo, por favor?"
+  ],
+  [
+    "Traduce al español: “What does this word mean?”",
+    [
+      "¿Qué significa esta palabra?",
+      "¿Cómo se escribe esta palabra?",
+      "¿Dónde está esta palabra?"
+    ],
+    0,
+    "“What does this word mean?” significa: ¿Qué significa esta palabra?"
+  ],
+  [
+    "Traduce al español: “Match the words.”",
+    [
+      "Relaciona las palabras.",
+      "Lee las palabras.",
+      "Copia las palabras."
+    ],
+    0,
+    "“Match the words.” significa: Relaciona las palabras."
+  ],
+  [
+    "Traduce al español: “Choose the correct answer.”",
+    [
+      "Elige la respuesta correcta.",
+      "Escribe una pregunta.",
+      "Lee la respuesta en voz alta."
+    ],
+    0,
+    "“Choose the correct answer.” significa: Elige la respuesta correcta."
+  ],
+  [
+    "Traduce al español: “Complete the sentence.”",
+    [
+      "Completa la oración.",
+      "Traduce el título.",
+      "Borra la oración."
+    ],
+    0,
+    "“Complete the sentence.” significa: Completa la oración."
+  ],
+  [
+    "Traduce al español: “Read aloud.”",
+    [
+      "Lee en voz alta.",
+      "Lee en silencio.",
+      "Escribe en voz alta."
+    ],
+    0,
+    "“Read aloud.” significa: Lee en voz alta."
+  ],
+  [
+    "Traduce al español: “Check your answers.”",
+    [
+      "Comprueba tus respuestas.",
+      "Cambia tus preguntas.",
+      "Cierra tus libros."
+    ],
+    0,
+    "“Check your answers.” significa: Comprueba tus respuestas."
+  ],
+  [
+    "Traduce al español: “Open your notebook.”",
+    [
+      "Abre tu cuaderno.",
+      "Cierra tu cuaderno.",
+      "Guarda tu cuaderno."
+    ],
+    0,
+    "“Open your notebook.” significa: Abre tu cuaderno."
+  ],
+  [
+    "Traduce al español: “I have a blue pencil.”",
+    [
+      "Tengo un lápiz azul.",
+      "Tengo un bolígrafo rojo.",
+      "Veo un lápiz azul."
+    ],
+    0,
+    "“I have a blue pencil.” significa: Tengo un lápiz azul."
+  ],
+  [
+    "Traduce al español: “This is my school bag.”",
+    [
+      "Esta es mi mochila escolar.",
+      "Este es mi libro de inglés.",
+      "Esta es mi mesa."
+    ],
+    0,
+    "“This is my school bag.” significa: Esta es mi mochila escolar."
+  ],
+  [
+    "Traduce al español: “Where is your book?”",
+    [
+      "¿Dónde está tu libro?",
+      "¿Quién tiene tu libro?",
+      "¿Qué es tu libro?"
+    ],
+    0,
+    "“Where is your book?” significa: ¿Dónde está tu libro?"
+  ],
+  [
+    "Traduce al español: “The teacher is here.”",
+    [
+      "El profesor está aquí.",
+      "El alumno está allí.",
+      "La profesora está en casa."
+    ],
+    0,
+    "“The teacher is here.” significa: El profesor está aquí."
+  ],
+  [
+    "Traduce al español: “The lesson starts now.”",
+    [
+      "La clase empieza ahora.",
+      "La clase termina mañana.",
+      "El recreo empieza ahora."
+    ],
+    0,
+    "“The lesson starts now.” significa: La clase empieza ahora."
+  ],
+  [
+    "Traduce al español: “Please, open the window.”",
+    [
+      "Por favor, abre la ventana.",
+      "Por favor, cierra la ventana.",
+      "Por favor, abre la puerta."
+    ],
+    0,
+    "“Please, open the window.” significa: Por favor, abre la ventana."
+  ],
+  [
+    "Traduce al español: “Don't run in the classroom.”",
+    [
+      "No corras en el aula.",
+      "No leas en el aula.",
+      "No escribas en el aula."
+    ],
+    0,
+    "“Don't run in the classroom.” significa: No corras en el aula."
+  ],
+  [
+    "Traduce al español: “Put your books on the table.”",
+    [
+      "Pon tus libros sobre la mesa.",
+      "Pon tus libros debajo de la mesa.",
+      "Guarda tus libros en la mochila."
+    ],
+    0,
+    "“Put your books on the table.” significa: Pon tus libros sobre la mesa."
+  ],
+  [
+    "Traduce al español: “My name is Anna.”",
+    [
+      "Me llamo Anna.",
+      "Tengo una hermana llamada Anna.",
+      "Anna es mi profesora."
+    ],
+    0,
+    "“My name is Anna.” significa: Me llamo Anna."
+  ],
+  [
+    "Traduce al español: “How are you today?”",
+    [
+      "¿Cómo estás hoy?",
+      "¿Qué día es hoy?",
+      "¿Cuántos años tienes?"
+    ],
+    0,
+    "“How are you today?” significa: ¿Cómo estás hoy?"
+  ],
+  [
+    "Traduce al español: “I'm fine, thank you.”",
+    [
+      "Estoy bien, gracias.",
+      "Estoy cansado, adiós.",
+      "Tengo hambre, por favor."
+    ],
+    0,
+    "“I'm fine, thank you.” significa: Estoy bien, gracias."
+  ],
+  [
+    "Traduce al español: “This is a red chair.”",
+    [
+      "Esta es una silla roja.",
+      "Esta es una mesa roja.",
+      "Esta es una silla azul."
+    ],
+    0,
+    "“This is a red chair.” significa: Esta es una silla roja."
+  ],
+  [
+    "Traduce al español: “There are three books.”",
+    [
+      "Hay tres libros.",
+      "Hay dos cuadernos.",
+      "Tengo tres lápices."
+    ],
+    0,
+    "“There are three books.” significa: Hay tres libros."
+  ],
+  [
+    "Traduce al español: “It's time for lunch.”",
+    [
+      "Es la hora de comer.",
+      "Es la hora de dormir.",
+      "Es la hora de estudiar."
+    ],
+    0,
+    "“It's time for lunch.” significa: Es la hora de comer."
+  ],
+  [
+    "Traduce al español: “See you on Monday.”",
+    [
+      "Nos vemos el lunes.",
+      "Nos vemos el domingo.",
+      "Hasta mañana por la mañana."
+    ],
+    0,
+    "“See you on Monday.” significa: Nos vemos el lunes."
+  ],
+  [
+    "Traduce al español: “Well done! Great work!”",
+    [
+      "¡Muy bien! ¡Buen trabajo!",
+      "¡Qué pena! ¡Mal trabajo!",
+      "¡Buenos días! ¡Hasta luego!"
+    ],
+    0,
+    "“Well done! Great work!” significa: ¡Muy bien! ¡Buen trabajo!"
+  ]
+  ,[
+    "Traduce al español: “Please, close your book.”",
+    [
+      "Por favor, cierra tu libro.",
+      "Por favor, abre tu libro.",
+      "Por favor, lee tu libro."
+    ],
+    0,
+    "“Please, close your book.” significa: Por favor, cierra tu libro."
+  ]
 ];
 const $=id=>document.getElementById(id);let index=0,score=0,answered=false;
 function speak(t){if(!("speechSynthesis"in window))return;speechSynthesis.cancel();const u=new SpeechSynthesisUtterance(t);u.lang="en-GB";speechSynthesis.speak(u)}
@@ -72,10 +521,10 @@ function renderWords(){
  $("words").querySelectorAll("[data-say]").forEach(b=>b.onclick=()=>speak(b.dataset.say));
 }
 renderWords();
-document.querySelectorAll("nav button").forEach(b=>b.onclick=()=>{document.querySelectorAll("nav button").forEach(x=>x.classList.toggle("active",x===b));document.querySelectorAll(".panel").forEach(x=>x.classList.toggle("active",x.id===b.dataset.tab));if(b.dataset.tab==="review")$("result").textContent="Your score: "+score+" / 50"});
-function render(){answered=false;const q=questions[index];$("counter").textContent="Question "+(index+1)+" of 50 · Score "+score;$("bar").style.width=(index/50*100)+"%";$("question").textContent=q[0];$("translation").hidden=true;$("translation").textContent=q[3];$("translate").textContent="Translate / Traducir";$("feedback").textContent="";$("next").hidden=true;$("answers").innerHTML=q[1].map((v,i)=>'<button data-answer="'+i+'">'+v+'</button>').join("");$("answers").querySelectorAll("button").forEach(b=>b.onclick=()=>choose(Number(b.dataset.answer),q))}
-function choose(choice,q){if(answered)return;answered=true;const correct=choice===q[2];if(correct)score++;$("answers").querySelectorAll("button").forEach((b,i)=>{b.disabled=true;if(i===q[2])b.style.borderColor="#2b9b72"});$("feedback").textContent=correct?"✓ Correct! Well done!":"Not quite. The correct answer is: "+q[1][q[2]];$("counter").textContent="Question "+(index+1)+" of 50 · Score "+score;$("next").hidden=false}
-$("translate").onclick=()=>{$("translation").hidden=!$("translation").hidden;$("translate").textContent=$("translation").hidden?"Translate / Traducir":"Hide translation / Ocultar traducción"};
+document.querySelectorAll("nav button").forEach(b=>b.onclick=()=>{document.querySelectorAll("nav button").forEach(x=>x.classList.toggle("active",x===b));document.querySelectorAll(".panel").forEach(x=>x.classList.toggle("active",x.id===b.dataset.tab));if(b.dataset.tab==="review")$("result").textContent="Tu puntuación: "+score+" / 50"});
+function render(){answered=false;const q=questions[index];$("counter").textContent="Reto "+(index+1)+" de 50 · Puntuación "+score;$("bar").style.width=(index/50*100)+"%";$("question").textContent=q[0];$("translation").hidden=true;$("translation").textContent=q[3];$("translate").textContent="Ver traducción";$("feedback").textContent="";$("next").hidden=true;$("answers").innerHTML=q[1].map((v,i)=>'<button data-answer="'+i+'">'+v+'</button>').join("");$("answers").querySelectorAll("button").forEach(b=>b.onclick=()=>choose(Number(b.dataset.answer),q))}
+function choose(choice,q){if(answered)return;answered=true;const correct=choice===q[2];if(correct)score++;$("answers").querySelectorAll("button").forEach((b,i)=>{b.disabled=true;if(i===q[2])b.style.borderColor="#2b9b72"});$("feedback").textContent=correct?"✓ ¡Correcto! ¡Muy bien!":"No es correcto. La traducción correcta es: "+q[1][q[2]];$("counter").textContent="Reto "+(index+1)+" de 50 · Puntuación "+score;$("next").hidden=false}
+$("translate").onclick=()=>{$("translation").hidden=!$("translation").hidden;$("translate").textContent=$("translation").hidden?"Ver traducción":"Ocultar traducción"};
 $("next").onclick=()=>{index++;if(index===50){$("bar").style.width="100%";document.querySelector('[data-tab="review"]').click();return}render()};
 function restart(){index=0;score=0;document.querySelector('[data-tab="practice"]').click();render()}render();
 </script></body></html>
