@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Linguafly 058 · Classroom English</title>
+<style>
+:root{font-family:system-ui,sans-serif;color:#203653;background:#f5f8fd}*{box-sizing:border-box}body{margin:0}main{max-width:980px;margin:auto;padding:24px 16px 48px}h1{color:#18365f;margin:.3em 0}.lead{color:#627895;line-height:1.5}nav{display:flex;gap:8px;flex-wrap:wrap;margin:22px 0}button{border:0;border-radius:12px;padding:12px 16px;font-weight:700;cursor:pointer;background:#e7eefb;color:#294b78}button.active,.primary{background:#243e68;color:white}.panel{display:none;background:white;border:1px solid #dce6f7;border-radius:20px;padding:22px}.panel.active{display:block}.grid,.answers,.recap{display:grid;grid-template-columns:repeat(auto-fit,minmax(170px,1fr));gap:12px}.word,.recap>div{background:#f6f9ff;border:1px solid #dce6f7;border-radius:14px;padding:16px;text-align:center}.emoji{font-size:34px}.muted{color:#627895}.question{font-size:21px;font-weight:800;margin:22px 0}.answers button{border:1px solid #dce6f7;background:#f8faff;color:#203653}.answers button:disabled{opacity:.8}.translate{background:#eef6ff;padding:12px;border-radius:10px}.progress{height:9px;background:#e9eff9;border-radius:9px;overflow:hidden}.bar{height:100%;width:0;background:#31b6c9}.feedback{min-height:28px;font-weight:700;margin:16px 0}@media(max-width:560px){.panel{padding:16px}}
+</style></head><body><main>
+<p class="muted">LINGUAFLY · PRE-A1 · MISSION 058</p><h1>🏫 Classroom English</h1><p class="lead">Listen to your teacher and follow everyday classroom instructions in English.</p>
+<nav><button class="active" data-tab="explore">1. Exploración</button><button data-tab="practice">2. Práctica</button><button data-tab="review">3. Repaso</button></nav>
+<section id="explore" class="panel active"><h2>Explore classroom instructions</h2><p class="muted">Listen, look and learn. Use the audio buttons to hear each expression.</p><div id="words" class="grid"></div></section>
+<section id="practice" class="panel"><h2>Listen and choose!</h2><p class="muted" id="counter">Question 1 of 20</p><div class="progress"><div id="bar" class="bar"></div></div><p id="question" class="question"></p><button id="translate">Translate / Traducir</button><p id="translation" class="translate" hidden></p><div id="answers" class="answers"></div><p id="feedback" class="feedback"></p><button id="next" class="primary" hidden>Next question →</button></section>
+<section id="review" class="panel"><h2>Review time!</h2><div class="recap"><div><b>LISTEN</b><br>Pay attention with your ears.</div><div><b>LOOK</b><br>Use your eyes.</div><div><b>READ / WRITE</b><br>Read words and write answers.</div><div><b>OPEN / CLOSE</b><br>Open or shut your book.</div><div><b>SIT DOWN / STAND UP</b><br>Change your body position.</div><div><b>REPEAT</b><br>Say it again.</div></div><h3 id="result"></h3><button class="primary" onclick="restart()">Practise again</button></section>
+</main><script>
+const words=[["listen","escucha","👂"],["look","mira","👀"],["read","lee","📖"],["write","escribe","✍️"],["repeat","repite","🔁"],["open","abre","📂"],["close","cierra","📕"],["sit down","siéntate","🪑"],["stand up","ponte de pie","🧍"]];
+const questions=[
+["The teacher says: “Listen!” What do you do?",["Listen carefully.","Open your book.","Stand up."],0,"El profesor dice: «¡Escucha!». ¿Qué haces?"],
+["The teacher says: “Look!” What do you do?",["Look at the board.","Close your book.","Sit down."],0,"El profesor dice: «¡Mira!». ¿Qué haces?"],
+["The teacher says: “Read!” What do you do?",["Read the text.","Write your name.","Stand up."],0,"El profesor dice: «¡Lee!». ¿Qué haces?"],
+["The teacher says: “Write!” What do you do?",["Write the answer.","Listen to music.","Close the door."],0,"El profesor dice: «¡Escribe!». ¿Qué haces?"],
+["The teacher says: “Repeat!” What do you do?",["Say it again.","Open the window.","Sit down."],0,"El profesor dice: «¡Repite!». ¿Qué haces?"],
+["The teacher says: “Open your book.” What do you do?",["Open your book.","Close your book.","Stand up."],0,"El profesor dice: «Abre tu libro». ¿Qué haces?"],
+["The teacher says: “Close your book.” What do you do?",["Close your book.","Read your book.","Open your book."],0,"El profesor dice: «Cierra tu libro». ¿Qué haces?"],
+["The teacher says: “Sit down.” What do you do?",["Sit on your chair.","Stand next to your chair.","Open your bag."],0,"El profesor dice: «Siéntate». ¿Qué haces?"],
+["The teacher says: “Stand up.” What do you do?",["Get on your feet.","Sit on the chair.","Close your eyes."],0,"El profesor dice: «Ponte de pie». ¿Qué haces?"],
+["Which instruction means “escucha”?",["Listen.","Look.","Read."],0,"¿Qué instrucción significa «escucha»?"],
+["Which instruction means “mira”?",["Write.","Look.","Repeat."],1,"¿Qué instrucción significa «mira»?"],
+["Which instruction means “lee”?",["Read.","Listen.","Open."],0,"¿Qué instrucción significa «lee»?"],
+["Which instruction means “cierra”?",["Open.","Close.","Repeat."],1,"¿Qué instrucción significa «cierra»?"],
+["You are sitting. The teacher says “Stand up.” What happens?",["You stand.","You sit.","You read."],0,"Estás sentado. El profesor dice «Ponte de pie». ¿Qué haces?"],
+["You are standing. The teacher says “Sit down.” What happens?",["You sit down.","You stand up.","You write."],0,"Estás de pie. El profesor dice «Siéntate». ¿Qué haces?"],
+["You read a sentence. The teacher says “Repeat.” What do you do?",["Say the sentence again.","Close the book.","Look away."],0,"Lees una oración. El profesor dice «Repite». ¿Qué haces?"],
+["Choose the correct instruction to start reading.",["Open your book.","Close your book.","Stand up."],0,"Elige la instrucción correcta para empezar a leer."],
+["Choose the correct instruction to stop reading.",["Close your book.","Open your book.","Write your name."],0,"Elige la instrucción correcta para terminar de leer."],
+["The teacher points to a picture and says “Look.” What do you do?",["Look at the picture.","Write the picture.","Close the picture."],0,"El profesor señala un dibujo y dice «Mira». ¿Qué haces?"],
+["The teacher says “Listen and repeat.” What do you do?",["Listen, then say it again.","Read, then close the book.","Stand up, then sit down."],0,"El profesor dice «Escucha y repite». ¿Qué haces?"]
+];
+const $=id=>document.getElementById(id);let index=0,score=0,answered=false;
+function speak(t){if(!("speechSynthesis"in window))return;speechSynthesis.cancel();const u=new SpeechSynthesisUtterance(t);u.lang="en-GB";speechSynthesis.speak(u)}
+$("words").innerHTML=words.map(w=>'<div class="word"><div class="emoji">'+w[2]+'</div><h3>'+w[0]+'</h3><p>'+w[1]+'</p><button data-say="'+w[0]+'">🔊 Listen</button></div>').join("");
+$("words").querySelectorAll("[data-say]").forEach(b=>b.onclick=()=>speak(b.dataset.say));
+document.querySelectorAll("nav button").forEach(b=>b.onclick=()=>{document.querySelectorAll("nav button").forEach(x=>x.classList.toggle("active",x===b));document.querySelectorAll(".panel").forEach(x=>x.classList.toggle("active",x.id===b.dataset.tab));if(b.dataset.tab==="review")$("result").textContent="Your score: "+score+" / 20"});
+function render(){answered=false;const q=questions[index];$("counter").textContent="Question "+(index+1)+" of 20 · Score "+score;$("bar").style.width=(index/20*100)+"%";$("question").textContent=q[0];$("translation").hidden=true;$("translation").textContent=q[3];$("translate").textContent="Translate / Traducir";$("feedback").textContent="";$("next").hidden=true;$("answers").innerHTML=q[1].map((v,i)=>'<button data-answer="'+i+'">'+v+'</button>').join("");$("answers").querySelectorAll("button").forEach(b=>b.onclick=()=>choose(Number(b.dataset.answer),q))}
+function choose(choice,q){if(answered)return;answered=true;const correct=choice===q[2];if(correct)score++;$("answers").querySelectorAll("button").forEach((b,i)=>{b.disabled=true;if(i===q[2])b.style.borderColor="#2b9b72"});$("feedback").textContent=correct?"✓ Correct! Well done!":"Not quite. The correct answer is: "+q[1][q[2]];$("counter").textContent="Question "+(index+1)+" of 20 · Score "+score;$("next").hidden=false}
+$("translate").onclick=()=>{$("translation").hidden=!$("translation").hidden;$("translate").textContent=$("translation").hidden?"Translate / Traducir":"Hide translation / Ocultar traducción"};
+$("next").onclick=()=>{index++;if(index===20){$("bar").style.width="100%";document.querySelector('[data-tab="review"]').click();return}render()};
+function restart(){index=0;score=0;document.querySelector('[data-tab="practice"]').click();render()}render();
+</script></body></html>
