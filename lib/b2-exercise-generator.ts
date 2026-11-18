@@ -449,6 +449,390 @@ const grammarBanks: Record<number, A2PdfExercise[]> = {
       "answer": "I tried to open the heavy door, but it was locked.",
       "note": "Try + to-infinitive expresa hacer el esfuerzo de conseguir algo."
     }
+  ],
+  "19": [
+    {
+      "question": "Cambia a un registro formal: We need to put off the meeting.",
+      "answer": "We need to postpone the meeting.",
+      "note": "Postpone es más formal que put off."
+    },
+    {
+      "question": "Elige la opción formal: Could you (get / obtain) a copy of the report?",
+      "answer": "obtain",
+      "note": "Obtain suele ser más formal que get."
+    },
+    {
+      "question": "Reescribe sin contracción: We can't confirm the booking yet.",
+      "answer": "We cannot confirm the booking yet.",
+      "note": "En informes formales se suelen evitar contracciones."
+    },
+    {
+      "question": "Completa con el verbo formal: The department will ______ further information. (get / obtain)",
+      "answer": "obtain",
+      "note": "Obtain es adecuado en comunicaciones formales."
+    },
+    {
+      "question": "Corrige el registro: Hey, I'm asking about the documents you sent.",
+      "answer": "I am enquiring about the documents you sent.",
+      "note": "En una consulta formal se prefiere enquire y se evita el saludo coloquial."
+    },
+    {
+      "question": "Elige la versión adecuada para un informe: (Kids / Children) need access to reliable information.",
+      "answer": "Children",
+      "note": "Children es la opción neutral/formal frente a kids."
+    }
+  ],
+  "20": [
+    {
+      "question": "Reformula con cautela usando appears to: The policy is effective.",
+      "answer": "The policy appears to be effective.",
+      "note": "Appears to reduce la certeza de la afirmación."
+    },
+    {
+      "question": "Completa con un modal de posibilidad: The figures ______ indicate a gradual recovery.",
+      "answer": "may",
+      "note": "May expresa posibilidad sin afirmar certeza."
+    },
+    {
+      "question": "Reescribe usando arguably: This is the most important factor.",
+      "answer": "Arguably, this is the most important factor.",
+      "note": "Arguably presenta una valoración como argumento razonable, no como hecho indiscutible."
+    },
+    {
+      "question": "Completa: The change has improved access, ______ to some extent. (at least / entirely)",
+      "answer": "at least",
+      "note": "To some extent limita el alcance de la afirmación."
+    },
+    {
+      "question": "Corrige la afirmación demasiado categórica usando might: The new system will solve every problem.",
+      "answer": "The new system might solve some of the problems.",
+      "note": "Might introduce cautela y some evita una generalización absoluta."
+    },
+    {
+      "question": "Elige la opción más prudente: The results (prove / appear to suggest) a link.",
+      "answer": "appear to suggest",
+      "note": "Appear to suggest expresa una interpretación provisional."
+    }
+  ],
+  "21": [
+    {
+      "question": "Completa con despite + sustantivo: ______ the heavy rain, the event went ahead.",
+      "answer": "Despite",
+      "note": "Despite va seguido de un sustantivo o gerundio, no de una oración completa."
+    },
+    {
+      "question": "Completa con in spite of + -ing: ______ (feel) tired, she finished the report.",
+      "answer": "In spite of feeling",
+      "note": "In spite of puede ir seguido de gerundio."
+    },
+    {
+      "question": "Une usando even though: The task was difficult. They completed it on time.",
+      "answer": "Even though the task was difficult, they completed it on time.",
+      "note": "Even though introduce una cláusula con sujeto y verbo."
+    },
+    {
+      "question": "Elige: Much as I (admire / am admiring) the proposal, I have some concerns.",
+      "answer": "admire",
+      "note": "Much as introduce una concesión y suele ir con presente simple para una opinión general."
+    },
+    {
+      "question": "Corrige: Despite it was late, we continued working.",
+      "answer": "Although it was late, we continued working. / Despite the late hour, we continued working.",
+      "note": "Despite no introduce directamente una cláusula finita con sujeto y verbo."
+    },
+    {
+      "question": "Completa con un conector: The plan is expensive; ______, it may be worth the investment.",
+      "answer": "nevertheless",
+      "note": "Nevertheless introduce un contraste con la idea anterior."
+    }
+  ],
+  "22": [
+    {
+      "question": "Completa con owing to: The flight was cancelled ______ bad weather.",
+      "answer": "owing to",
+      "note": "Owing to va seguido de un sustantivo o grupo nominal."
+    },
+    {
+      "question": "Une usando thereby + -ing: The team reduced waste. It saved money.",
+      "answer": "The team reduced waste, thereby saving money.",
+      "note": "Thereby va seguido de gerundio e indica el resultado de la acción anterior."
+    },
+    {
+      "question": "Completa con so as to: She left early ______ avoid the traffic.",
+      "answer": "so as to",
+      "note": "So as to introduce finalidad y va seguido de infinitivo."
+    },
+    {
+      "question": "Elige: The scheme was introduced (with the aim of reduce / with the aim of reducing) costs.",
+      "answer": "with the aim of reducing",
+      "note": "Aim of va seguido de gerundio."
+    },
+    {
+      "question": "Corrige: Due to the road was closed, we took another route.",
+      "answer": "Because the road was closed, we took another route. / Due to the road closure, we took another route.",
+      "note": "Due to va seguido de un sustantivo, no de una cláusula completa."
+    },
+    {
+      "question": "Reescribe expresando finalidad: He saved money because he wanted to buy a car. (in order to)",
+      "answer": "He saved money in order to buy a car.",
+      "note": "In order to + infinitivo expresa el propósito."
+    }
+  ],
+  "23": [
+    {
+      "question": "Completa: She is committed to ______ (improve) working conditions.",
+      "answer": "improving",
+      "note": "En committed to, to es preposición y va seguida de gerundio."
+    },
+    {
+      "question": "Completa: All staff should have access ______ the online platform.",
+      "answer": "to",
+      "note": "La colocación fija es have access to."
+    },
+    {
+      "question": "Completa: It is important to distinguish ______ fact and opinion.",
+      "answer": "between",
+      "note": "La estructura es distinguish between A and B."
+    },
+    {
+      "question": "Completa: Several residents objected to ______ (build) a new road.",
+      "answer": "building",
+      "note": "En object to, to es preposición y va seguida de gerundio."
+    },
+    {
+      "question": "Corrige: We look forward to meet you.",
+      "answer": "We look forward to meeting you.",
+      "note": "Look forward to contiene una preposición seguida de gerundio."
+    },
+    {
+      "question": "Elige: The charity is dedicated to (support / supporting) local families.",
+      "answer": "supporting",
+      "note": "Dedicated to + gerundio porque to funciona como preposición."
+    }
+  ],
+  "24": [
+    {
+      "question": "Convierte en pregunta indirecta: Where is the station? (Could you tell me...)",
+      "answer": "Could you tell me where the station is?",
+      "note": "En preguntas indirectas se usa orden afirmativo: sujeto + verbo."
+    },
+    {
+      "question": "Añade una question tag: You have finished the report, ______?",
+      "answer": "haven't you?",
+      "note": "Una afirmación positiva suele llevar una tag negativa con el mismo auxiliar."
+    },
+    {
+      "question": "Añade una question tag: They weren't informed, ______?",
+      "answer": "were they?",
+      "note": "Una oración negativa lleva una tag positiva."
+    },
+    {
+      "question": "Reformula como pregunta indirecta: What time does the shop close? (Do you know...)",
+      "answer": "Do you know what time the shop closes?",
+      "note": "Se elimina do-support y se mantiene el orden sujeto-verbo."
+    },
+    {
+      "question": "Corrige: Could you tell me where is the nearest bank?",
+      "answer": "Could you tell me where the nearest bank is?",
+      "note": "Después de Could you tell me se usa orden de frase afirmativa."
+    },
+    {
+      "question": "Completa la reacción: So you did ______ the email? (send)",
+      "answer": "send",
+      "note": "So you did...? puede expresar sorpresa y se completa con la forma base tras did."
+    }
+  ],
+  "25": [
+    {
+      "question": "Completa: The negotiations are ______ to continue next week. (likely)",
+      "answer": "likely",
+      "note": "Be likely to + infinitivo expresa probabilidad."
+    },
+    {
+      "question": "Reformula con bound to: She will certainly notice the mistake.",
+      "answer": "She is bound to notice the mistake.",
+      "note": "Be bound to expresa una expectativa muy alta o casi certeza."
+    },
+    {
+      "question": "Completa con may well: The proposal ______ attract considerable support.",
+      "answer": "may well",
+      "note": "May well expresa una posibilidad bastante probable."
+    },
+    {
+      "question": "Elige: He is (unlikely / unlikely to) accept the offer.",
+      "answer": "unlikely to",
+      "note": "La estructura es be unlikely to + infinitivo."
+    },
+    {
+      "question": "Reescribe usando apparently: It seems that the building is empty.",
+      "answer": "Apparently, the building is empty.",
+      "note": "Apparently presenta información como algo que parece ser cierto según indicios."
+    },
+    {
+      "question": "Corrige: They are likely winning the competition.",
+      "answer": "They are likely to win the competition.",
+      "note": "Likely va seguido de to-infinitive en esta estructura."
+    }
+  ],
+  "26": [
+    {
+      "question": "Completa: This version is ______ (far / very) more reliable than the previous one.",
+      "answer": "far",
+      "note": "Far puede intensificar un comparativo."
+    },
+    {
+      "question": "Completa: It was by ______ the most challenging stage.",
+      "answer": "far",
+      "note": "By far intensifica un superlativo."
+    },
+    {
+      "question": "Completa la correlativa: The more you practise, the ______ (confident) you become.",
+      "answer": "more confident",
+      "note": "La estructura the + comparative, the + comparative expresa relación proporcional."
+    },
+    {
+      "question": "Elige: The second route is (slightly / by far) shorter than the first.",
+      "answer": "slightly",
+      "note": "Slightly modera la diferencia en un comparativo."
+    },
+    {
+      "question": "Corrige: This is the most easiest option.",
+      "answer": "This is the easiest option.",
+      "note": "No se combinan most y el sufijo -est en el mismo superlativo."
+    },
+    {
+      "question": "Completa: The ______ (early) we leave, the less traffic we will encounter.",
+      "answer": "earlier",
+      "note": "En la correlativa se usa comparativo en ambas partes."
+    }
+  ],
+  "27": [
+    {
+      "question": "Pasa a causativa con have: A technician repaired my laptop yesterday.",
+      "answer": "I had my laptop repaired yesterday.",
+      "note": "Have + objeto + participio indica que otra persona realiza el servicio."
+    },
+    {
+      "question": "Completa: We need to get the heating system ______ (check).",
+      "answer": "checked",
+      "note": "Get + objeto + participio expresa que se encarga una acción a otra persona."
+    },
+    {
+      "question": "Reescribe con have + persona + infinitivo: The manager asked the assistant to print the documents.",
+      "answer": "The manager had the assistant print the documents.",
+      "note": "Have + persona + infinitivo sin to expresa dar instrucciones o encargar una tarea."
+    },
+    {
+      "question": "Completa: She had her portrait ______ (take) by a professional photographer.",
+      "answer": "taken",
+      "note": "En la causativa pasiva se usa have + objeto + participio."
+    },
+    {
+      "question": "Corrige: I got my car to repair last week.",
+      "answer": "I got my car repaired last week.",
+      "note": "Get + objeto + participio, sin to."
+    },
+    {
+      "question": "Elige: They had the electrician (install / installed) new lights.",
+      "answer": "install",
+      "note": "Con have + persona, se utiliza infinitivo sin to."
+    }
+  ],
+  "28": [
+    {
+      "question": "Completa: I'd rather ______ (stay) at home tonight.",
+      "answer": "stay",
+      "note": "Would rather + infinitivo sin to cuando el sujeto es el mismo."
+    },
+    {
+      "question": "Completa: I'd rather you ______ (not / mention) the issue at the meeting.",
+      "answer": "didn't mention",
+      "note": "Would rather + sujeto distinto + Past Simple expresa preferencia presente/futura."
+    },
+    {
+      "question": "Completa: It's high time we ______ (take) action.",
+      "answer": "took",
+      "note": "It's high time va seguido de Past Simple con sentido presente."
+    },
+    {
+      "question": "Completa: I wish I ______ (accept) the offer last year.",
+      "answer": "had accepted",
+      "note": "Wish + Past Perfect expresa arrepentimiento sobre el pasado."
+    },
+    {
+      "question": "Corrige: I'd rather to go by train.",
+      "answer": "I'd rather go by train.",
+      "note": "Would rather no lleva to antes del verbo."
+    },
+    {
+      "question": "Elige: I wish I (knew / had known) about the delay yesterday.",
+      "answer": "had known",
+      "note": "Yesterday sitúa el arrepentimiento en el pasado; se usa Past Perfect."
+    }
+  ],
+  "29": [
+    {
+      "question": "Responde usando so: I enjoy working remotely. (you)",
+      "answer": "So do I.",
+      "note": "So + auxiliar + sujeto expresa que se comparte una afirmación."
+    },
+    {
+      "question": "Responde usando neither: She hasn't seen the film. (I)",
+      "answer": "Neither have I.",
+      "note": "Neither + auxiliar + sujeto expresa acuerdo con una afirmación negativa."
+    },
+    {
+      "question": "Evita repetir el verbo: He said he would help, and he did ______.",
+      "answer": "so",
+      "note": "Do so sustituye una acción mencionada anteriormente."
+    },
+    {
+      "question": "Completa con one u ones: I prefer the blue ______ to the black ones.",
+      "answer": "one",
+      "note": "One sustituye un sustantivo contable singular mencionado."
+    },
+    {
+      "question": "Corrige: I don't like these shoes; I prefer the red one (plural).",
+      "answer": "I don't like these shoes; I prefer the red ones.",
+      "note": "Ones sustituye un sustantivo contable plural."
+    },
+    {
+      "question": "Completa la elipsis: Although (he was) ______ tired, he continued working.",
+      "answer": "Although tired, he continued working.",
+      "note": "Se puede omitir sujeto y verbo be cuando el sentido queda claro."
+    }
+  ],
+  "30": [
+    {
+      "question": "Une usando furthermore: The proposal is affordable. It is easy to implement.",
+      "answer": "The proposal is affordable; furthermore, it is easy to implement.",
+      "note": "Furthermore añade un argumento o información adicional."
+    },
+    {
+      "question": "Une con that said: The deadline is tight. We can still deliver the project.",
+      "answer": "The deadline is tight. That said, we can still deliver the project.",
+      "note": "That said introduce una reserva o contraste con lo anterior."
+    },
+    {
+      "question": "Reformula aclarando con in other words: The plan is not feasible.",
+      "answer": "In other words, the plan cannot be carried out successfully.",
+      "note": "In other words introduce una reformulación explicativa."
+    },
+    {
+      "question": "Completa con namely para especificar: Two departments will lead the project, ______ Finance and Operations.",
+      "answer": "namely",
+      "note": "Namely introduce los elementos concretos a los que se refiere una expresión general."
+    },
+    {
+      "question": "Completa el resultado: The supplier failed to deliver; ______, production was delayed.",
+      "answer": "as a consequence",
+      "note": "As a consequence introduce el resultado de la situación anterior."
+    },
+    {
+      "question": "Elige el conector adecuado: The data is incomplete. (Moreover / Having said that), the trend is still clear.",
+      "answer": "Having said that",
+      "note": "Having said that introduce una matización o contraste, no una suma de argumentos."
+    }
   ]
 };
 
