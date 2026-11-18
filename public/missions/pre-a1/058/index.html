@@ -501,6 +501,16 @@ const questions=[
     0,
     "“Well done! Great work!” significa: ¡Muy bien! ¡Buen trabajo!"
   ]
+  ,[
+    "Traduce al español: “Please, close your book.”",
+    [
+      "Por favor, cierra tu libro.",
+      "Por favor, abre tu libro.",
+      "Por favor, lee tu libro."
+    ],
+    0,
+    "“Please, close your book.” significa: Por favor, cierra tu libro."
+  ]
 ];
 const $=id=>document.getElementById(id);let index=0,score=0,answered=false;
 function speak(t){if(!("speechSynthesis"in window))return;speechSynthesis.cancel();const u=new SpeechSynthesisUtterance(t);u.lang="en-GB";speechSynthesis.speak(u)}
