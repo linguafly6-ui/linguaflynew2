@@ -81,5 +81,6 @@ export const A2_PDF_UNITS: A2PdfUnit[] = [
 {question:"The book ___ is on the table is mine.",answer:"which / that",note:"El relativo es sujeto de la cláusula; no se omite."},
 {question:"Une: I know a boy. He speaks four languages.",answer:"I know a boy who speaks four languages.",note:"Who conecta las dos ideas y se refiere a boy."},
 {question:"Corrige: The café who we visited was lovely.",answer:"The café which/that we visited was lovely.",note:"Para lugares/objetos usamos which o that, no who."}
-]}
+]},
+...A2_PDF_UNITS_CONTINUED
 ];
