@@ -257,6 +257,19 @@ export default function PdfLibraryPage() {
         <p className="mt-3 max-w-2xl leading-7 text-slate-700">Avanza al nivel B2 con gramática avanzada, vocabulario preciso, lecturas y cuadernos PDF con ejercicios y soluciones.</p>
         <Link href="/biblioteca-pdf/b2" className="mt-5 inline-flex rounded-xl bg-violet-700 px-5 py-3 font-bold text-white hover:bg-violet-800">Entrar en la biblioteca B2 →</Link>
       </section>
+
+      <section className="mt-14 rounded-3xl border border-sky-100 bg-sky-50 p-7 sm:p-9">
+        <p className="text-sm font-bold uppercase tracking-widest text-sky-700">Nivel avanzado</p>
+        <h2 className="mt-2 text-2xl font-extrabold text-slate-950">Curso de inglés C1 · 60 unidades</h2>
+        <p className="mt-3 max-w-2xl leading-7 text-slate-700">Perfecciona el inglés avanzado con gramática compleja, precisión léxica, argumentación y comunicación profesional.</p>
+        <Link href="/biblioteca-pdf/c1" className="mt-5 inline-flex rounded-xl bg-sky-700 px-5 py-3 font-bold text-white hover:bg-sky-800">Entrar en la biblioteca C1 →</Link>
+      </section>
+      <section className="mt-14 rounded-3xl border border-fuchsia-100 bg-fuchsia-50 p-7 sm:p-9">
+        <p className="text-sm font-bold uppercase tracking-widest text-fuchsia-700">Nivel de dominio</p>
+        <h2 className="mt-2 text-2xl font-extrabold text-slate-950">Curso de inglés C2 · 60 unidades</h2>
+        <p className="mt-3 max-w-2xl leading-7 text-slate-700">Desarrolla un dominio experto del idioma: matices, pragmática, estilo, discurso académico y comunicación sofisticada.</p>
+        <Link href="/biblioteca-pdf/c2" className="mt-5 inline-flex rounded-xl bg-fuchsia-700 px-5 py-3 font-bold text-white hover:bg-fuchsia-800">Entrar en la biblioteca C2 →</Link>
+      </section>
     </main>
   );
 }
