@@ -1,5 +1,6 @@
 import { PDFDocument, StandardFonts, rgb } from "pdf-lib";
 import { A2_PDF_UNITS } from "@/lib/a2-pdf-units";
+import { buildA2ExerciseSections } from "@/lib/a2-exercise-generator";
 
 export const runtime = "nodejs";
 export const dynamic = "force-dynamic";
@@ -90,17 +91,28 @@ export async function GET(_request: Request, { params }: Params) {
   for (const item of unit.examples) paragraph("- " + item, { indent: 5, size: 10, gap: 2 });
   heading("4. Vocabulario");
   for (const item of unit.vocabulary) paragraph("- " + item, { indent: 5, size: 10, gap: 2 });
-  heading("5. Practica");
-  paragraph("Completa las actividades sin mirar las soluciones. Escribe las respuestas en tu cuaderno.", { size: 9, color: rgb(0.38, 0.43, 0.52), gap: 8 });
-  unit.exercises.forEach((exercise, index) => {
-    paragraph(`${index + 1}. ${exercise.question}`, { font: bold, size: 10, gap: 2 });
-    paragraph("Respuesta: __________________________________________________________", { size: 9, color: rgb(0.50, 0.54, 0.60), gap: 6 });
-  });
-  heading("6. Soluciones y explicacion");
-  unit.exercises.forEach((exercise, index) => {
-    paragraph(`${index + 1}. ${exercise.answer}`, { font: bold, size: 9.5, gap: 1 });
-    paragraph(exercise.note, { size: 9, color: rgb(0.36, 0.41, 0.49), gap: 5 });
-  });
+  const sections = buildA2ExerciseSections(unit);
+  heading("5. Practica — 200 ejercicios");
+  paragraph("Distribución: 80 ejercicios de gramática, 60 de vocabulario y 60 preguntas de reading. Completa primero todas las actividades y consulta después las soluciones.", { size: 9, color: rgb(0.38, 0.43, 0.52), gap: 8 });
+  let exerciseNumber = 1;
+  for (const section of sections) {
+    heading(section.title);
+    for (const exercise of section.exercises) {
+      paragraph(`${exerciseNumber}. ${exercise.question}`, { font: bold, size: 8.5, gap: 2 });
+      paragraph("Respuesta: __________________________________________________________", { size: 8, color: rgb(0.50, 0.54, 0.60), gap: 4 });
+      exerciseNumber += 1;
+    }
+  }
+  heading("6. Soluciones y explicaciones");
+  exerciseNumber = 1;
+  for (const section of sections) {
+    heading(section.title);
+    for (const exercise of section.exercises) {
+      paragraph(`${exerciseNumber}. ${exercise.answer}`, { font: bold, size: 8.5, gap: 1 });
+      paragraph(exercise.note, { size: 8, color: rgb(0.36, 0.41, 0.49), gap: 4 });
+      exerciseNumber += 1;
+    }
+  }
   footer();
 
   const bytes = await pdf.save();
