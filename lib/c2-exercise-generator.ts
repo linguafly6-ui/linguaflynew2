@@ -8,7 +8,7 @@ export const getC2ReadingPassages = (unit: A2PdfUnit) => getA2ReadingPassages(un
 const c2GrammarBanks: Record<number, A2PdfExercise[]> = {
 1: [
 {question:"Elige el aspecto que enfatiza la duración hasta ahora: She ______ on the manuscript all morning. (has worked / has been working)",answer:"has been working",note:"El Present Perfect Continuous enfoca la actividad y su duración; no necesariamente su finalización."},
-{question:"Completa: By the time the archive reopened, the documents ______ (remain) inaccessible for decades.",answer:"had been remaining",note:"La intención es expresar duración anterior, aunque remain suele preferir estados; una formulación más natural es had been inaccessible for decades.",},
+{question:"Completa: By the time the archive reopened, the documents ______ (remain) inaccessible for decades.",answer:"had remained",note:"Remain es un verbo de estado y aquí el Past Perfect simple expresa la situación que se prolongó hasta otro momento pasado.",},
 {question:"Corrige para expresar anterioridad: When the results were published, the team works on the project for five years.",answer:"When the results were published, the team had been working on the project for five years.",note:"Past Perfect Continuous sitúa la actividad antes del acontecimiento pasado."},
 {question:"Completa: This is the most compelling explanation I ______ (encounter) so far.",answer:"have encountered",note:"Present Perfect conecta la experiencia acumulada con el presente."},
 {question:"Explica el contraste: He has written the introduction / He has been writing the introduction.",answer:"La primera indica que la introducción está escrita; la segunda destaca el proceso y no asegura que esté terminada.",note:"El aspecto cambia el foco entre resultado y desarrollo."},
@@ -63,7 +63,7 @@ const c2GrammarBanks: Record<number, A2PdfExercise[]> = {
 {question:"Explica el contraste entre fronting y clefting.",answer:"Fronting desplaza un constituyente para darle prominencia; clefting divide la oración en una estructura focal y otra presupuesta.",note:"Ambos recursos organizan información, pero con estructuras sintácticas distintas."}
 ],
 8: [
-{question:"Completa con so/neither: The first account was unreliable, and ______ was the second.",answer:"so",note:"So was the second expresa que la segunda cuenta compartía esa característica; para evitar ambigüedad, el contexto requiere afirmación paralela."},
+{question:"Completa con so/neither: The first account was unreliable, and ______ was the second.",answer:"so",note:"So + auxiliar + sujeto expresa que la segunda cuenta compartía la característica negativa descrita en la primera oración."},
 {question:"Sustituye la repetición con do so: The committee promised to investigate and eventually ______.",answer:"did so",note:"Do so sustituye una acción verbal mencionada previamente."},
 {question:"Completa con one/ones: Of the available interpretations, the most plausible ______ is the second.",answer:"one",note:"One sustituye un sustantivo contable singular recuperable del contexto."},
 {question:"Corrige: The first proposal was ambitious, but the second ones was impractical.",answer:"The first proposal was ambitious, but the second one was impractical.",note:"One retoma proposal, singular."},
