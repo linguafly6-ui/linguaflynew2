@@ -243,6 +243,13 @@ export default function PdfLibraryPage() {
         <p className="mt-3 max-w-2xl leading-7 text-slate-700">Continúa con el curso A2 en una biblioteca independiente, con sus propias unidades, explicaciones y cuadernos descargables.</p>
         <Link href="/biblioteca-pdf/a2" className="mt-5 inline-flex rounded-xl bg-blue-700 px-5 py-3 font-bold text-white hover:bg-blue-800">Entrar en la biblioteca A2 →</Link>
       </section>
+
+      <section className="mt-14 rounded-3xl border border-emerald-100 bg-emerald-50 p-7 sm:p-9">
+        <p className="text-sm font-bold uppercase tracking-widest text-emerald-700">Nivel intermedio</p>
+        <h2 className="mt-2 text-2xl font-extrabold text-slate-950">Curso de inglés B1 · 60 unidades</h2>
+        <p className="mt-3 max-w-2xl leading-7 text-slate-700">Continúa con el nivel B1: gramática intermedia, vocabulario temático, lecturas y cuadernos PDF con ejercicios y soluciones.</p>
+        <Link href="/biblioteca-pdf/b1" className="mt-5 inline-flex rounded-xl bg-emerald-700 px-5 py-3 font-bold text-white hover:bg-emerald-800">Entrar en la biblioteca B1 →</Link>
+      </section>
     </main>
   );
 }
