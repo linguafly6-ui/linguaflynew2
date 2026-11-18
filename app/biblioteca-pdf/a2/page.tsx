@@ -6,12 +6,12 @@ const canonical = "https://linguafly.app/biblioteca-pdf/a2";
 
 export const metadata: Metadata = {
   title: "Curso de inglés A2 en PDF: unidades y ejercicios | Linguafly",
-  description: "Biblioteca independiente del curso de inglés A2. Accede a las primeras diez unidades con explicaciones, ejemplos, vocabulario, ejercicios y soluciones descargables en PDF.",
+  description: "Biblioteca independiente del curso de inglés A2. Accede a las primeras veinte unidades con explicaciones, ejemplos, vocabulario, ejercicios y soluciones descargables en PDF.",
   alternates: { canonical },
   openGraph: {
     type: "website",
     title: "Curso de inglés A2 en PDF: unidades y ejercicios | Linguafly",
-    description: "Diez cuadernos de inglés A2 con teoría, vocabulario, práctica y soluciones.",
+    description: "Veinte cuadernos de inglés A2 con teoría, vocabulario, práctica y soluciones.",
     url: canonical,
     siteName: "Linguafly",
   },
@@ -35,7 +35,7 @@ export default function A2PdfLibraryPage() {
             <h2 className="text-2xl font-extrabold text-slate-950">Unidades del curso A2</h2>
             <p className="mt-2 text-sm text-slate-600">Selecciona una unidad para estudiar y descargar su PDF.</p>
           </div>
-          <span className="rounded-full bg-blue-50 px-3 py-1 text-sm font-bold text-blue-800">10 unidades</span>
+          <span className="rounded-full bg-blue-50 px-3 py-1 text-sm font-bold text-blue-800">20 unidades</span>
         </div>
         <div className="mt-5 grid gap-5 sm:grid-cols-2">
           {A2_PDF_UNITS.map((unit) => (
