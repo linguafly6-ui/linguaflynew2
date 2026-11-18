@@ -89,8 +89,9 @@ const c2GrammarBanks: Record<number, A2PdfExercise[]> = {
 export const buildC2ExerciseSections = (unit: A2PdfUnit) => {
  const shared = buildA2ExerciseSections(unit);
  const grammar = c2GrammarBanks[unit.number] ?? c2GrammarBanksExtra[unit.number];
+ const focused = c2DiscourseBanks[unit.number];
  return [
-  ...(grammar ? [{ title: `GRAMMAR — ${grammar.length} ejercicios revisados`, exercises: grammar }] : []),
+  ...(grammar ? [{ title: `GRAMMAR — ${grammar.length} ejercicios revisados`, exercises: grammar }] : focused ? [{ title: `SEMANTICS & PRAGMATICS — ${focused.length} ejercicios revisados`, exercises: focused }] : []),
   ...shared.filter((section) => !section.title.startsWith("GRAMMAR")),
  ];
 };
@@ -163,3 +164,73 @@ const c2GrammarBanksExtra: Record<number, A2PdfExercise[]> = {
 {question:"Distingue may, might y could en una afirmación académica.",answer:"Los tres pueden expresar posibilidad; might suele sonar más tentativo, may más neutral y could puede señalar una posibilidad entre varias.",note:"La fuerza exacta depende del contexto y de la variedad de inglés."}
 ]
 };
+
+
+
+const c2DiscourseBanks: Record<number, A2PdfExercise[]> = {
+19:[
+{question:"Identifica la implicatura: 'Some of the reviewers approved the article.' ¿Qué puede inferir el lector?",answer:"Puede inferir que no todos lo aprobaron, aunque la frase no lo afirma lógicamente.",note:"Some suele generar una implicatura escalar frente a all; el contexto puede cancelarla."},
+{question:"Explica por qué 'Can you pass the salt?' normalmente no pregunta por capacidad.",answer:"Funciona como petición indirecta convencional, no como pregunta literal sobre habilidad.",note:"La fuerza ilocutiva se interpreta a partir de convenciones y contexto."},
+{question:"Distingue significado literal e implicatura en: 'It is getting late' dicho al final de una reunión.",answer:"Literalmente informa de la hora; pragmáticamente puede sugerir que la reunión debería terminar.",note:"La intención depende del contexto compartido y de la relevancia."},
+{question:"¿Qué implicatura puede producir 'He is technically competent' en una evaluación?",answer:"Puede sugerir que la competencia es limitada a lo técnico y que faltan otras cualidades, según el contexto.",note:"La elección de un elogio restringido puede generar una inferencia contrastiva."},
+{question:"Explica cómo se cancela una implicatura escalar: 'Some, in fact all, participants agreed.'",answer:"La continuación explícita all cancela la inferencia inicial de que no todos estuvieron de acuerdo.",note:"Las implicaturas conversacionales son defeasibles, no consecuencias lógicas."},
+{question:"Distingue implicatura y presuposición.",answer:"La implicatura es una inferencia pragmática contextual y cancelable; la presuposición es información tratada como dada y suele proyectarse bajo ciertos operadores.",note:"No son equivalentes aunque ambas aporten contenido no expresado directamente."}
+],
+20:[
+{question:"Identifica la presuposición de: 'Mara stopped revising the chapter.'",answer:"Que Mara revisaba el capítulo antes.",note:"Stop es un verbo aspectual que presupone la actividad previa."},
+{question:"¿Qué presupone 'The director regrets approving the plan'?",answer:"Que el director aprobó el plan.",note:"Regret suele presuponer la verdad de la cláusula subordinada."},
+{question:"Explica la proyección: 'Mara did not stop revising the chapter.'",answer:"Se mantiene la presuposición de que Mara revisaba el capítulo; se niega que dejara de hacerlo.",note:"La presuposición de stop tiende a sobrevivir bajo negación."},
+{question:"Distingue presuposición y entailment en 'The king of Norland resigned'.",answer:"Presupone que existe un rey de Norland; entraña que esa persona dimitió, si la oración es verdadera.",note:"La presuposición se da por sentada; el entailment forma parte de las consecuencias lógicas."},
+{question:"Identifica el disparador: 'Even Lina managed to solve the problem.'",answer:"Even activa la presuposición de que Lina era una candidata inesperada o menos probable para resolverlo.",note:"El elemento focal even introduce una escala de expectativas."},
+{question:"¿Qué ocurre con la presuposición en 'If the chair realises that the figures are wrong, the meeting will be postponed'?",answer:"La cláusula that the figures are wrong puede seguir proyectando que las cifras son incorrectas, aunque el contexto condicional puede debilitar esa lectura.",note:"La proyección depende del entorno y de la interpretación del predicado factivo."}
+],
+21:[
+{question:"Distingue homonimia y polisemia con un ejemplo en inglés.",answer:"Bank puede ser polisémico si conecta la institución financiera con el edificio o actividad asociada; bat (animal / implemento deportivo) suele tratarse como homonimia.",note:"La distinción depende de si los sentidos se relacionan semánticamente o son léxicamente independientes."},
+{question:"Identifica la relación: purchase / buy.",answer:"Sinonimia aproximada; purchase suele ser más formal que buy.",note:"Los sinónimos rara vez son intercambiables en todos los registros y colocaciones."},
+{question:"Explica la antonimia graduable en hot / cold.",answer:"Son extremos de una escala y admiten grados intermedios como warm o cool.",note:"Los antónimos graduables permiten modificadores como very y comparativos."},
+{question:"¿Qué relación existe entre rose y flower?",answer:"Hiponimia: rose es un tipo de flower; flower es el hiperónimo.",note:"La relación va de categoría específica a categoría general."},
+{question:"Desambigua bank en: 'She sat on the bank and watched the boats.'",answer:"Ribera u orilla de un río, no entidad financiera.",note:"Los elementos del contexto seleccionan el sentido pertinente."},
+{question:"Explica por qué fast y quick no son sinónimos perfectos en 'fast car' y 'quick glance'.",answer:"Las colocaciones restringen la elección: fast car y quick glance son combinaciones convencionales.",note:"La equivalencia semántica no elimina las preferencias combinatorias."}
+],
+22:[
+{question:"Desambigua 'The journalist saw the man with the telescope'.",answer:"Puede significar que el periodista usó el telescopio o que el hombre tenía el telescopio.",note:"El sintagma preposicional presenta ambigüedad de adjunción."},
+{question:"Distingue ambigüedad léxica y estructural.",answer:"La léxica procede de varios sentidos de una palabra; la estructural, de más de un análisis sintáctico posible.",note:"El origen de la ambigüedad determina cómo se resuelve."},
+{question:"Identifica los dos sentidos de sanction.",answer:"Puede significar autorizar oficialmente o imponer una penalización.",note:"Es un caso de palabra con sentidos aparentemente opuestos según el contexto."},
+{question:"Reescribe para eliminar la ambigüedad: 'Visiting relatives can be boring'.",answer:"Visiting one's relatives can be boring. / Relatives who visit can be boring.",note:"La primera expresa que visitar familiares puede aburrir; la segunda que los familiares visitantes pueden aburrir."},
+{question:"Explica qué pista desambigua 'The bank raised its interest rates'.",answer:"Interest rates favorece el sentido de institución financiera.",note:"La selección léxica del contexto restringe el sentido de bank."},
+{question:"¿Por qué el contexto no siempre elimina la ambigüedad?",answer:"Porque puede faltar información suficiente o pueden mantenerse dos lecturas plausibles hasta recibir más contexto.",note:"La desambiguación es gradual y depende del conocimiento compartido."}
+],
+23:[
+{question:"Distingue denotación y connotación de slim y skinny.",answer:"Ambos denotan delgadez; slim suele tener connotación positiva y skinny puede sugerir delgadez excesiva o negativa.",note:"La carga evaluativa varía con el registro y la comunidad."},
+{question:"Analiza la prosodia semántica de cause en 'cause problems / cause concern'.",answer:"Cause aparece con frecuencia en entornos de efecto negativo o preocupación.",note:"La prosodia semántica es la orientación evaluativa adquirida por patrones de coocurrencia."},
+{question:"Elige: 'The initiative has ______ potential.' (great / big)",answer:"great",note:"Great potential es una colocación convencional; big potential es menos idiomática en este contexto."},
+{question:"Explica la diferencia connotativa entre politician y statesperson.",answer:"Politician es neutral pero puede adquirir una connotación negativa; statesperson suele elogiar juicio y servicio público.",note:"La connotación depende de asociaciones culturales y del contexto."},
+{question:"Reformula sin sesgo valorativo: The scheme was a disastrous waste of money.",answer:"The scheme incurred substantial costs and did not achieve its stated objectives.",note:"La versión separa los hechos de la evaluación emocional."},
+{question:"¿Qué sugiere la prosodia de utterly en 'utterly ridiculous'?",answer:"Refuerza una valoración muy negativa; utterly suele intensificar adjetivos extremos o evaluativos.",note:"La coocurrencia habitual contribuye a las expectativas de uso."}
+],
+24:[
+{question:"Interpreta el idiom 'to move the goalposts'.",answer:"Cambiar las condiciones o criterios de una situación mientras está en curso, normalmente de forma injusta.",note:"La imagen procede de alterar la meta durante un juego."},
+{question:"Completa: The witness finally let the ______ out of the bag.",answer:"cat",note:"Let the cat out of the bag significa revelar un secreto."},
+{question:"Distingue collocation e idiom.",answer:"Una collocation es una combinación léxica habitual cuyo significado suele ser transparente; un idiom tiene un significado convencional no totalmente deducible de sus componentes.",note:"Hay un continuo entre combinaciones transparentes y expresiones opacas."},
+{question:"Reformula en registro neutro: The negotiations were a bit of a minefield.",answer:"The negotiations involved numerous sensitive and potentially problematic issues.",note:"Minefield es una metáfora idiomática para una situación delicada."},
+{question:"Explica el significado de 'by and large'.",answer:"En general o considerando la situación en conjunto.",note:"Es un adverbial idiomático de alcance global."},
+{question:"¿Por qué 'make a decision' es collocation y no necesariamente idiom?",answer:"Porque el significado es transparente, pero make es el verbo convencional que combina con decision.",note:"La restricción es combinatoria, no una sustitución completa del significado literal."}
+],
+25:[
+{question:"Completa con colligación: The findings are consistent ______ the proposed explanation.",answer:"with",note:"Consistent suele aparecer con la preposición with."},
+{question:"Elige la estructura habitual: The evidence suggests (that the claim is valid / the claim to be valid).",answer:"that the claim is valid",note:"Suggest suele seleccionar una cláusula that o un gerundio, no un infinitivo con to en este sentido."},
+{question:"Completa: There is growing evidence ______ a link between sleep and memory.",answer:"of",note:"Evidence of a link es una construcción nominal frecuente."},
+{question:"Explica la diferencia entre collocation y colligation.",answer:"Collocation describe coocurrencia entre palabras; colligation describe asociaciones entre una palabra y patrones gramaticales.",note:"Una es principalmente léxica y la otra gramatical."},
+{question:"Corrige: The study depends of three variables.",answer:"The study depends on three variables.",note:"Depend on es la pauta preposicional estándar."},
+{question:"Identifica la colligación en 'be committed to improving access'.",answer:"Committed to + grupo nominal o gerundio; to funciona como preposición.",note:"La pauta gramatical determina la forma -ing del complemento verbal."}
+],
+26:[
+{question:"Identifica la metáfora conceptual en 'She attacked the weakness in his argument'.",answer:"ARGUMENT IS WAR: la crítica se conceptualiza como un ataque.",note:"La metáfora estructura cómo hablamos y pensamos sobre la argumentación."},
+{question:"Explica la metonimia en 'The White House issued a statement'.",answer:"White House representa a la administración o a sus portavoces, no solo al edificio.",note:"La metonimia usa una entidad relacionada para referirse a otra."},
+{question:"Distingue metáfora y metonimia.",answer:"La metáfora proyecta una estructura entre dominios distintos; la metonimia establece una relación de contigüidad dentro de un mismo marco conceptual.",note:"La relación conceptual es de semejanza/proyección frente a asociación."},
+{question:"Analiza el encuadre en 'tax relief' frente a 'tax cuts'.",answer:"Tax relief presenta la reducción como alivio de una carga; tax cuts la presenta de forma más descriptiva como disminución.",note:"El framing activa evaluaciones y perspectivas distintas sobre el mismo fenómeno."},
+{question:"Reformula neutralmente: The minister's plan is a lifeline for struggling families.",answer:"The minister's plan may provide financial support to families facing hardship.",note:"La versión reduce la metáfora positiva y explicita la afirmación con cautela."},
+{question:"Explica cómo el framing puede influir sin cambiar los hechos básicos.",answer:"Selecciona qué aspecto se hace saliente y qué asociaciones activa, orientando la interpretación y la evaluación del receptor.",note:"El encuadre organiza la presentación, no necesariamente altera los datos."}
+]
+};
+
