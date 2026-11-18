@@ -90,7 +90,7 @@ const c1GrammarBanks: Record<number, A2PdfExercise[]> = {
 
 export const buildC1ExerciseSections = (unit: A2PdfUnit) => {
  const shared = buildA2ExerciseSections(unit);
- const grammar = c1GrammarBanks[unit.number] ?? c1GrammarBanksExtra[unit.number];
+ const grammar = c1GrammarBanks[unit.number] ?? c1GrammarBanksExtra[unit.number] ?? c1GrammarBanksFinal[unit.number];
  return [
   ...(grammar ? [{ title: `GRAMMAR — ${grammar.length} ejercicios revisados`, exercises: grammar }] : []),
   ...shared.filter((section) => !section.title.startsWith("GRAMMAR")),
@@ -163,5 +163,40 @@ const c1GrammarBanksExtra: Record<number, A2PdfExercise[]> = {
 {question:"Reformula expresando finalidad: The team encrypted the files because it wanted to protect confidentiality. (in order to)",answer:"The team encrypted the files in order to protect confidentiality.",note:"In order to + infinitivo expresa propósito."},
 {question:"Completa: The policy was revised, ______ ensuring greater consistency across departments.",answer:"thus",note:"Thus introduce el resultado de la revisión; puede preceder a un gerundio en esta construcción."},
 {question:"Distingue as a result y with a view to.",answer:"As a result introduce consecuencia; with a view to introduce finalidad y va seguido de gerundio o sustantivo.",note:"No deben intercambiarse porque expresan relaciones distintas."}
+]
+};
+
+const c1GrammarBanksFinal: Record<number, A2PdfExercise[]> = {
+19:[
+{question:"Reformula con cautela usando appears to: The policy has reduced regional inequality.",answer:"The policy appears to have reduced regional inequality.",note:"Appear to have + participio presenta una interpretación retrospectiva no categórica."},
+{question:"Completa con un modal tentativo: The discrepancy ______ (may) reflect a sampling error.",answer:"may",note:"May expresa posibilidad sin afirmar que la explicación sea cierta."},
+{question:"Corrige la afirmación demasiado categórica: These results prove that the intervention works.",answer:"These results suggest that the intervention may be effective.",note:"Suggest y may limitan la fuerza de la conclusión."},
+{question:"Reescribe con arguably: This is the most significant limitation.",answer:"Arguably, this is the most significant limitation.",note:"Arguably indica que la valoración puede defenderse, pero admite debate."},
+{question:"Completa: The measure was successful, ______ in urban areas. (to some extent)",answer:"to some extent",note:"La expresión restringe el alcance de la evaluación."},
+{question:"Distingue apparently y evidently en un informe.",answer:"Apparently presenta algo según indicios o información disponible; evidently sugiere que la evidencia lo hace claro.",note:"Ambos pueden marcar inferencia, pero difieren en la fuerza percibida."}
+],
+20:[
+{question:"Completa con un adjetivo evaluativo preciso: The evidence is ______ (convince) but not conclusive.",answer:"compelling",note:"Compelling describe evidencia persuasiva; no implica necesariamente prueba definitiva."},
+{question:"Reformula para expresar una evaluación equilibrada: The proposal is excellent.",answer:"The proposal is promising, although its long-term feasibility remains uncertain.",note:"La evaluación equilibrada reconoce méritos y limita el alcance de la valoración."},
+{question:"Completa con un adverbio evaluativo: ______, the findings support the original hypothesis. (overall)",answer:"Overall",note:"Overall resume una valoración global."},
+{question:"Corrige la colocación: The results make a strong evidence for the claim.",answer:"The results provide strong evidence for the claim.",note:"Provide evidence es una colocación natural; evidence es incontable."},
+{question:"Reformula con una reserva: The new framework is useful. (to a certain extent)",answer:"The new framework is useful to a certain extent.",note:"La expresión limita la generalidad de la evaluación."},
+{question:"Explica la diferencia entre critical, crucial y contentious.",answer:"Critical significa de importancia decisiva o relativo al análisis; crucial indica esencial; contentious describe algo que genera desacuerdo.",note:"La precisión léxica evita evaluaciones vagas o confusas."}
+],
+29:[
+{question:"Completa la preposición: The findings are consistent ______ the earlier review.",answer:"with",note:"La colocación es consistent with."},
+{question:"Completa con gerundio: The committee objected to ______ (extend) the deadline.",answer:"extending",note:"En object to, to es preposición y va seguida de gerundio."},
+{question:"Completa: The report provides an explanation ______ the discrepancy.",answer:"for",note:"La estructura nominal es an explanation for something."},
+{question:"Corrige: The results are dependent of the sample size.",answer:"The results are dependent on the sample size.",note:"La colocación estándar es dependent on."},
+{question:"Completa: The author alludes ______ a previous controversy.",answer:"to",note:"Allude to requiere la preposición to."},
+{question:"Explica la diferencia entre responsible for y responsible to.",answer:"Responsible for indica aquello de lo que alguien se ocupa o responde; responsible to identifica a la persona o entidad ante la que responde.",note:"La preposición cambia la relación semántica."}
+],
+30:[
+{question:"Completa: The panel considered ______ (postpone) the hearing.",answer:"postponing",note:"Consider selecciona gerundio como complemento."},
+{question:"Completa: The witness appears ______ (misunderstand) the question.",answer:"to have misunderstood",note:"Appear + infinitivo perfecto indica que la incomprensión precedió al momento actual."},
+{question:"Elige: I regret (informing / to inform) you that the application has been rejected.",answer:"to inform",note:"Regret + to-infinitive se usa para comunicar algo desagradable en el momento de hablar."},
+{question:"Corrige: The report recommends to revise the procedure.",answer:"The report recommends revising the procedure.",note:"Recommend suele ir seguido de gerundio o de una cláusula mandativa."},
+{question:"Completa: The organisation is committed to ______ (improve) access to education.",answer:"improving",note:"En committed to, to es preposición y requiere gerundio."},
+{question:"Explica la diferencia entre stop doing y stop to do.",answer:"Stop doing significa abandonar una actividad; stop to do significa interrumpir otra actividad para realizar algo.",note:"El tipo de complemento modifica el significado del verbo stop."}
 ]
 };
