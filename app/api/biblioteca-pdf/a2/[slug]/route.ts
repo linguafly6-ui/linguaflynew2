@@ -80,7 +80,7 @@ export async function GET(_request: Request, { params }: Params) {
   const heading = (value: string) => {
     ensure(28);
     y -= 3;
-    page.drawText(value.toUpperCase(), { x: margin, y, size: 11, font: bold, color: rgb(0.08, 0.28, 0.62) });
+    page.drawText(cleanPdfText(value).toUpperCase(), { x: margin, y, size: 11, font: bold, color: rgb(0.08, 0.28, 0.62) });
     y -= 19;
   };
 
