@@ -28,7 +28,7 @@ export default async function A2PdfUnitPage({ params }: Props) {
   const { slug } = await params;
   const unit = A2_PDF_UNITS.find((item) => item.slug === slug);
   if (!unit) notFound();
-  const readingPassages = getA2ReadingPassages();
+  const readingPassages = getA2ReadingPassages(unit);
 
   return (
     <main className="mx-auto min-h-screen max-w-4xl px-5 py-10 sm:px-8 sm:py-14">
