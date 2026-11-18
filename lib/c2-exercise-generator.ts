@@ -90,10 +90,78 @@ const c2GrammarBanks: Record<number, A2PdfExercise[]> = {
 
 export const buildC2ExerciseSections = (unit: A2PdfUnit) => {
  const shared = buildA2ExerciseSections(unit);
- const grammar = c2GrammarBanks[unit.number];
+ const grammar = c2GrammarBanks[unit.number] ?? c2GrammarBanksExtra[unit.number];
  return [
   ...(grammar ? [{ title: `GRAMMAR — ${grammar.length} ejercicios revisados`, exercises: grammar }] : []),
   ...shared.filter((section) => !section.title.startsWith("GRAMMAR")),
  ];
 };
 export const getC2ReadingPassages = (unit: A2PdfUnit) => getA2ReadingPassages(unit);
+
+
+const c2GrammarBanksExtra: Record<number, A2PdfExercise[]> = {
+11:[
+{question:"Completa con nominalización: The committee decided to postpone the vote. The committee's ______ to postpone the vote was unanimous.",answer:"decision",note:"Decision es el sustantivo derivado de decide."},
+{question:"Reformula con mayor densidad nominal: The researchers evaluated the reliability of the model.",answer:"The researchers conducted an evaluation of the model's reliability.",note:"Evaluation empaqueta la acción en un grupo nominal."},
+{question:"Corrige: The rapid expansion of the system has been occurred since 2020.",answer:"The rapid expansion of the system has occurred since 2020.",note:"Occur es intransitivo y no forma la pasiva con been."},
+{question:"Completa: The ______ (interpret) of the findings remains contested.",answer:"interpretation",note:"Interpretation es el sustantivo abstracto derivado de interpret."},
+{question:"Explica una desventaja de la densidad sintáctica excesiva.",answer:"Puede ocultar la agencia, aumentar la carga de procesamiento y dificultar la identificación de la relación lógica entre ideas.",note:"La densidad nominal es útil en discurso especializado, pero no debe perjudicar la claridad."},
+{question:"Reescribe con nominalización: The agency failed to comply with the directive.",answer:"The agency's failure to comply with the directive.",note:"Failure transforma failed en un sustantivo y permite empaquetar la proposición."}
+],
+12:[
+{question:"Completa: The proposal appears ______ (lack) sufficient empirical support.",answer:"to lack",note:"Appear puede seleccionar to-infinitive."},
+{question:"Completa con infinitivo perfecto: The witness is thought ______ (leave) before midnight.",answer:"to have left",note:"To have + participio expresa anterioridad respecto al pensamiento actual."},
+{question:"Elige: The policy requires that applicants (provide / to provide) supporting evidence.",answer:"provide",note:"Require that + cláusula mandativa usa la forma base."},
+{question:"Corrige: They objected for the proposal to be implemented.",answer:"They objected to the proposal being implemented.",note:"Object to selecciona un complemento con to como preposición y un gerundio."},
+{question:"Completa: The findings are likely ______ (challenge) the prevailing account.",answer:"to challenge",note:"Be likely + to-infinitive expresa probabilidad."},
+{question:"Explica la diferencia entre remember doing y remember to do.",answer:"Remember doing se refiere a recordar una acción ya realizada; remember to do significa no olvidar realizarla.",note:"El patrón de complementación modifica el significado."}
+],
+13:[
+{question:"Completa el subjuntivo mandativo: It is imperative that the evidence ______ (be) preserved.",answer:"be",note:"El subjuntivo mandativo usa la forma base be."},
+{question:"Corrige: The chair demanded that the report is rewritten.",answer:"The chair demanded that the report be rewritten.",note:"Demand that selecciona forma base en la cláusula mandativa."},
+{question:"Reformula con should: The court ordered that the documents be disclosed.",answer:"The court ordered that the documents should be disclosed.",note:"Should puede aparecer en la variante británica de la construcción mandativa."},
+{question:"Completa: The statute requires that every applicant ______ (submit) a declaration.",answer:"submit",note:"La forma base submit no lleva -s en el subjuntivo."},
+{question:"Explica el valor de were en: If I were to accept the offer, what would happen?",answer:"Were marca una hipótesis remota o formal, no un pasado real.",note:"Were to + infinitivo presenta una condición hipotética."},
+{question:"Distingue el subjuntivo mandativo de un uso indicativo.",answer:"El mandativo expresa exigencia, recomendación o necesidad y usa la forma base; el indicativo presenta un hecho o una creencia.",note:"La selección depende del significado y del verbo o adjetivo rector."}
+],
+14:[
+{question:"Pasa a pasiva manteniendo el modal: The authorities should have released the findings.",answer:"The findings should have been released by the authorities.",note:"La pasiva modal perfecta se forma con modal + have been + participio."},
+{question:"Completa la pasiva de infinitivo: The manuscript is believed ______ (steal) during the war.",answer:"to have been stolen",note:"To have been + participio expresa una acción pasiva anterior."},
+{question:"Reescribe con agente omitido: Someone has tampered with the records.",answer:"The records have been tampered with.",note:"La pasiva permite omitir el agente cuando se desconoce o no es relevante."},
+{question:"Corrige: The data is being analyse by an independent team.",answer:"The data is being analysed by an independent team.",note:"Present Continuous passive requiere being + participio."},
+{question:"Completa: The proposal ______ (report) to have been withdrawn.",answer:"is reported",note:"La estructura impersonal es be + reported + to-infinitive."},
+{question:"Explica el efecto pragmático de omitir el agente en una pasiva.",answer:"Desplaza el foco hacia el proceso o el resultado y puede dejar sin especificar quién es responsable.",note:"La supresión del agente puede ser neutral o estratégicamente significativa."}
+],
+15:[
+{question:"Completa con un reporting verb que exprese admisión: The minister ______ that the initial estimates had been inaccurate.",answer:"conceded",note:"Concede expresa que se admite un punto, a menudo desfavorable para la propia postura."},
+{question:"Reescribe con deny + gerundio perfecto: 'I had not seen the confidential memo,' she said.",answer:"She denied having seen the confidential memo.",note:"Deny + having + participio expresa la negación de una acción anterior."},
+{question:"Transforma con is said to: People say that the manuscript dates from the 14th century.",answer:"The manuscript is said to date from the 14th century.",note:"La pasiva de reporting desplaza el foco al sujeto del contenido."},
+{question:"Completa: The article ______ (argue) that the reforms were largely symbolic.",answer:"argues",note:"Argue that presenta una tesis o línea de razonamiento."},
+{question:"Corrige: He accused that the figures had been falsified.",answer:"He alleged that the figures had been falsified. / He accused the officials of falsifying the figures.",note:"Accuse requiere objeto + of + gerundio; allege puede introducir una cláusula that."},
+{question:"Distingue allege y demonstrate como verbos de atribución.",answer:"Allege atribuye una afirmación que no necesariamente está probada; demonstrate presenta evidencia que respalda una conclusión.",note:"El reporting verb señala el estatus epistemológico de la información."}
+],
+16:[
+{question:"Completa con un conector de concesión: The sample was limited; ______, the pattern was consistent across all sites.",answer:"nevertheless",note:"Nevertheless introduce una idea que contrasta con la limitación anterior."},
+{question:"Une con insofar as: The proposal is defensible. It addresses the immediate risks.",answer:"The proposal is defensible insofar as it addresses the immediate risks.",note:"Insofar as limita el alcance de la afirmación."},
+{question:"Corrige la puntuación: The evidence is compelling, consequently the claim deserves consideration.",answer:"The evidence is compelling; consequently, the claim deserves consideration.",note:"Consequently es un adverbio conjuntivo y necesita puntuación adecuada."},
+{question:"Completa con whereas: The first account relies on oral testimony, ______ the second draws on archival records.",answer:"whereas",note:"Whereas contrapone dos fuentes o perspectivas."},
+{question:"Reformula para añadir una consecuencia: The definition is too narrow. It excludes several relevant cases. (thereby)",answer:"The definition is too narrow, thereby excluding several relevant cases.",note:"Thereby + gerundio expresa el efecto de la primera proposición."},
+{question:"Explica la diferencia entre notwithstanding y notwithstanding that.",answer:"Notwithstanding puede funcionar como preposición o adverbio; notwithstanding that introduce una cláusula concesiva.",note:"La estructura que sigue determina la función gramatical."}
+],
+17:[
+{question:"Reescribe con albeit: The findings are preliminary, although they are significant.",answer:"The findings are preliminary, albeit significant.",note:"Albeit introduce una concesión reducida."},
+{question:"Completa: ______ the objections raised, the proposal was approved.",answer:"Notwithstanding",note:"Notwithstanding + grupo nominal expresa concesión en registro formal."},
+{question:"Corrige: Much as I am agreeing with the premise, I reject the conclusion.",answer:"Much as I agree with the premise, I reject the conclusion.",note:"Much as suele introducir una concesión con verbo de estado en presente simple."},
+{question:"Une usando even if: The figures are accurate. The conclusion does not follow.",answer:"Even if the figures are accurate, the conclusion does not follow.",note:"Even if introduce una condición concesiva que no cambia el resultado principal."},
+{question:"Completa: The policy may be effective, ______ only in the short term.",answer:"albeit",note:"Albeit introduce una limitación o concesión: albeit only in the short term."},
+{question:"Explica la diferencia entre although y despite.",answer:"Although introduce una cláusula con sujeto y verbo; despite va seguido de sustantivo, pronombre o gerundio.",note:"La diferencia es de estructura sintáctica."}
+],
+18:[
+{question:"Completa con una expresión de cautela: The results ______ suggest a correlation, but not causation.",answer:"appear to",note:"Appear to reduce la fuerza categórica de la afirmación."},
+{question:"Reformula con may well: The intervention is quite likely to produce unintended effects.",answer:"The intervention may well produce unintended effects.",note:"May well expresa una posibilidad relativamente probable."},
+{question:"Corrige: The data might suggests a different explanation.",answer:"The data might suggest a different explanation.",note:"Después de un modal se usa la forma base del verbo."},
+{question:"Completa: The findings are ______ (arguable) consistent with the earlier study.",answer:"arguably",note:"Arguably presenta una valoración como defendible, no como certeza absoluta."},
+{question:"Reescribe evitando una afirmación absoluta: This proves that the policy has failed.",answer:"This appears to indicate that the policy may have been ineffective.",note:"Appear to indicate y may have been introducen cautela y limitan la conclusión."},
+{question:"Distingue may, might y could en una afirmación académica.",answer:"Los tres pueden expresar posibilidad; might suele sonar más tentativo, may más neutral y could puede señalar una posibilidad entre varias.",note:"La fuerza exacta depende del contexto y de la variedad de inglés."}
+]
+};
