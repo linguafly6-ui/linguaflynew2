@@ -1,4 +1,4 @@
-import type { A2PdfUnit } from "./a2-pdf-units";
+import type { A2PdfUnit } from "./a2-pdf-unit-types";
 
 export const A2_PDF_UNITS_CONTINUED: A2PdfUnit[] = [
   {
