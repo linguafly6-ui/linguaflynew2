@@ -25,7 +25,7 @@ export default function A2PdfLibraryPage() {
         <p className="text-sm font-bold uppercase tracking-widest text-blue-700">Linguafly · Elementary</p>
         <h1 className="mt-3 text-4xl font-black tracking-tight text-slate-950 sm:text-5xl">Curso de inglés A2 en PDF</h1>
         <p className="mt-5 text-lg leading-8 text-slate-600">
-          Avanza al nivel elemental con una colección independiente de diez unidades. Cada cuaderno reúne
+          Avanza al nivel elemental con una colección independiente de veinte unidades. Cada cuaderno reúne
           explicaciones en español, estructuras gramaticales, ejemplos, vocabulario, actividades y soluciones explicadas.
         </p>
       </header>
