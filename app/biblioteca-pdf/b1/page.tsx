@@ -20,7 +20,7 @@ export const metadata: Metadata = {
 export default function B1PdfLibraryPage() {
   return (
     <main className="mx-auto min-h-screen max-w-5xl px-5 py-10 sm:px-8 sm:py-14">
-      <Link href="/biblioteca-pdf" className="text-sm font-bold text-blue-700 hover:underline">← Biblioteca A1</Link>
+      <Link href="/biblioteca-pdf" className="text-sm font-bold text-blue-700 hover:underline">← Biblioteca de PDFs</Link>
       <header className="mt-9 max-w-3xl">
         <p className="text-sm font-bold uppercase tracking-widest text-blue-700">Linguafly · Intermediate</p>
         <h1 className="mt-3 text-4xl font-black tracking-tight text-slate-950 sm:text-5xl">Curso de inglés B1 en PDF</h1>
