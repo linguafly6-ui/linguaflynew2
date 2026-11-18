@@ -90,10 +90,78 @@ const c1GrammarBanks: Record<number, A2PdfExercise[]> = {
 
 export const buildC1ExerciseSections = (unit: A2PdfUnit) => {
  const shared = buildA2ExerciseSections(unit);
- const grammar = c1GrammarBanks[unit.number];
+ const grammar = c1GrammarBanks[unit.number] ?? c1GrammarBanksExtra[unit.number];
  return [
   ...(grammar ? [{ title: `GRAMMAR — ${grammar.length} ejercicios revisados`, exercises: grammar }] : []),
   ...shared.filter((section) => !section.title.startsWith("GRAMMAR")),
  ];
 };
 export const getC1ReadingPassages = (unit: A2PdfUnit) => getA2ReadingPassages(unit);
+
+
+const c1GrammarBanksExtra: Record<number, A2PdfExercise[]> = {
+11:[
+{question:"Completa con el reporting verb adecuado: The spokesperson ______ that no further details would be released. (maintain)",answer:"maintained",note:"Maintain that presenta una postura o afirmación sostenida por el hablante."},
+{question:"Reescribe con deny: 'I did not authorise the payment,' he said.",answer:"He denied having authorised the payment.",note:"Deny puede ir seguido de gerundio perfecto para una acción anterior."},
+{question:"Completa: The report ______ (claim) that the figures had been manipulated.",answer:"claims",note:"Claim that introduce el contenido atribuido a una fuente."},
+{question:"Corrige: She suggested me to contact the editor.",answer:"She suggested that I contact the editor. / She suggested contacting the editor.",note:"Suggest no selecciona normalmente objeto + to-infinitive."},
+{question:"Transforma usando is alleged to: People allege that the firm concealed the losses.",answer:"The firm is alleged to have concealed the losses.",note:"El infinitivo perfecto marca anterioridad respecto a la alegación."},
+{question:"Explica la diferencia entre claim, concede y acknowledge como reporting verbs.",answer:"Claim presenta una afirmación; concede admite un punto, a menudo contra la propia postura; acknowledge reconoce un hecho o dificultad.",note:"Los reporting verbs expresan también la actitud del emisor ante el contenido."}
+],
+12:[
+{question:"Reduce la relativa: The proposal, which was submitted yesterday, contains several amendments.",answer:"The proposal, submitted yesterday, contains several amendments.",note:"La relativa pasiva se reduce a participio pasado."},
+{question:"Completa: The candidates ______ (shortlist) for interview will be contacted tomorrow.",answer:"shortlisted",note:"El participio pasado reduce una relativa pasiva: candidates who were shortlisted."},
+{question:"Reescribe usando whom: The consultant to whom we spoke was highly experienced.",answer:"The consultant we spoke to was highly experienced.",note:"La preposición puede quedar al final en una relativa menos formal; whom conserva el registro formal."},
+{question:"Corrige el participio colgante: Having reviewed the application, the missing documents were obvious.",answer:"Having reviewed the application, the officer noticed the missing documents.",note:"El sujeto implícito de la cláusula participial debe ser quien revisa."},
+{question:"Completa con whose: The scholar, ______ work challenged the consensus, received an award.",answer:"whose",note:"Whose introduce posesión y puede referirse a personas."},
+{question:"Reescribe con which retomando toda la idea: The company withdrew its offer. This surprised the candidates.",answer:"The company withdrew its offer, which surprised the candidates.",note:"Which puede referirse a la cláusula anterior completa."}
+],
+13:[
+{question:"Amplía el grupo nominal con una relativa: the report (which the committee commissioned last year).",answer:"the report which the committee commissioned last year",note:"La relativa especifica qué informe se menciona."},
+{question:"Identifica el núcleo del grupo nominal: the unexpectedly rapid decline in regional employment.",answer:"decline",note:"El núcleo es el sustantivo principal; los demás elementos lo modifican o complementan."},
+{question:"Reordena como grupo nominal natural: policy / long-term / environmental / the effects / of.",answer:"the long-term environmental effects of the policy",note:"Los adjetivos preceden al núcleo effects y of the policy completa el significado."},
+{question:"Completa con un sustantivo compuesto: a ______-wide consultation (nation).",answer:"nation",note:"Nation-wide funciona como modificador compuesto de consultation."},
+{question:"Corrige la acumulación de modificadores: the report environmental recent policy.",answer:"the recent environmental policy report",note:"El orden de modificadores debe permitir identificar con claridad el núcleo report."},
+{question:"Explica el efecto de nominalizar en: The committee rejected the proposal / the committee's rejection of the proposal.",answer:"La segunda versión empaqueta el proceso como un sustantivo y permite usarlo como núcleo de un grupo nominal.",note:"La densidad nominal es frecuente en registros académicos y administrativos."}
+],
+14:[
+{question:"Nominaliza: The agency decided to postpone the launch.",answer:"The agency's decision to postpone the launch.",note:"Decision convierte el verbo decide en un sustantivo."},
+{question:"Completa: The ______ (allocate) of resources remains controversial.",answer:"allocation",note:"Allocation es el sustantivo derivado de allocate."},
+{question:"Reescribe con nominalización: The committee investigated how funds had been spent.",answer:"The committee conducted an investigation into the expenditure of funds.",note:"Investigation y expenditure condensan las acciones en sustantivos."},
+{question:"Corrige: The implementation of the policy was failed to improve access.",answer:"The implementation of the policy failed to improve access.",note:"Implementation es el sujeto nominal; no necesita was en esta oración activa."},
+{question:"Transforma: The researchers analysed the results carefully. (analysis)",answer:"The researchers conducted a careful analysis of the results.",note:"Analysis es la forma nominal de analyse."},
+{question:"Explica un riesgo de la nominalización excesiva.",answer:"Puede ocultar quién realiza la acción y producir textos densos o menos directos.",note:"La nominalización aporta concisión, pero debe equilibrarse con claridad y agencia."}
+],
+15:[
+{question:"Completa con so do I / neither do I: I cannot support the amendment, and ______.",answer:"neither can I",note:"Neither + auxiliar + sujeto expresa acuerdo con una oración negativa; se conserva el modal can."},
+{question:"Evita repetir el predicado: She said she would review the draft, and she ______.",answer:"did so",note:"Do so sustituye el predicado mencionado."},
+{question:"Completa con one/ones: The revised clauses are clearer than the original ______.",answer:"ones",note:"Ones sustituye un sustantivo contable plural."},
+{question:"Corrige: I prefer the first option to the later one that you suggested it.",answer:"I prefer the first option to the later one that you suggested.",note:"No se duplica el objeto mediante it dentro de la relativa."},
+{question:"Explica la elipsis en: Some agreed with the proposal; others did not.",answer:"Did not omite agree with the proposal, recuperable del contexto.",note:"La elipsis evita repetir información ya conocida."},
+{question:"Reescribe con inversión de acuerdo: He rarely attends these briefings. (Neither...)",answer:"Neither do I.",note:"La respuesta expresa que el hablante tampoco asiste; neither va seguido de auxiliar y sujeto."}
+],
+16:[
+{question:"Une con whereas para marcar contraste: The first model is inexpensive. The second is more reliable.",answer:"The first model is inexpensive, whereas the second is more reliable.",note:"Whereas introduce una cláusula contrastiva."},
+{question:"Completa con un conector de consecuencia: The sample was too small; ______, the findings cannot be generalised.",answer:"therefore",note:"Therefore señala una consecuencia lógica."},
+{question:"Corrige la puntuación: The evidence is limited however the conclusion remains plausible.",answer:"The evidence is limited; however, the conclusion remains plausible.",note:"However como conector oracional suele separarse mediante punto y coma/coma o punto."},
+{question:"Reformula evitando repetición: The policy was costly. The policy was also difficult to enforce.",answer:"The policy was costly and, moreover, difficult to enforce.",note:"Moreover añade un argumento sin repetir el sujeto."},
+{question:"Elige el conector concesivo: The method is demanding; (nevertheless / furthermore), it produces consistent results.",answer:"nevertheless",note:"Nevertheless introduce una idea que contrasta con la anterior."},
+{question:"Explica la diferencia entre consequently y conversely.",answer:"Consequently introduce un resultado; conversely introduce una alternativa o relación opuesta.",note:"La elección del marcador debe reflejar la relación lógica real."}
+],
+17:[
+{question:"Completa con despite: ______ considerable opposition, the measure was adopted.",answer:"Despite",note:"Despite va seguido de un grupo nominal."},
+{question:"Reescribe con much as: Although I respect the decision, I cannot endorse it.",answer:"Much as I respect the decision, I cannot endorse it.",note:"Much as introduce una concesión enfática."},
+{question:"Corrige: Despite the evidence was incomplete, the panel reached a verdict.",answer:"Although the evidence was incomplete, the panel reached a verdict.",note:"Despite no introduce directamente una cláusula finita."},
+{question:"Completa: Admittedly, the proposal is expensive; ______, its long-term benefits are substantial.",answer:"nonetheless",note:"Nonetheless introduce una reserva o contraste con la concesión previa."},
+{question:"Reformula con albeit: The solution is effective, although it is costly.",answer:"The solution is effective, albeit costly.",note:"Albeit introduce una concesión reducida, normalmente seguida de adjetivo o cláusula no finita."},
+{question:"Explica el matiz de notwithstanding en registro formal.",answer:"Notwithstanding significa 'a pesar de' y puede aparecer antes o después del elemento concesivo; tiene un tono formal.",note:"La posición y la estructura que sigue deben ser gramaticalmente coherentes."}
+],
+18:[
+{question:"Une usando thereby: The company streamlined the process. It reduced administrative costs.",answer:"The company streamlined the process, thereby reducing administrative costs.",note:"Thereby + gerundio expresa el resultado producido por la acción anterior."},
+{question:"Completa con owing to: The hearing was postponed ______ a procedural error.",answer:"owing to",note:"Owing to va seguido de un sustantivo o grupo nominal."},
+{question:"Corrige: Due to the roads were flooded, the event was cancelled.",answer:"Because the roads were flooded, the event was cancelled.",note:"Due to no introduce una cláusula finita; se usa because o due to + sustantivo."},
+{question:"Reformula expresando finalidad: The team encrypted the files because it wanted to protect confidentiality. (in order to)",answer:"The team encrypted the files in order to protect confidentiality.",note:"In order to + infinitivo expresa propósito."},
+{question:"Completa: The policy was revised, ______ ensuring greater consistency across departments.",answer:"thus",note:"Thus introduce el resultado de la revisión; puede preceder a un gerundio en esta construcción."},
+{question:"Distingue as a result y with a view to.",answer:"As a result introduce consecuencia; with a view to introduce finalidad y va seguido de gerundio o sustantivo.",note:"No deben intercambiarse porque expresan relaciones distintas."}
+]
+};
