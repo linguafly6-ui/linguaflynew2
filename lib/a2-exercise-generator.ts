@@ -34,12 +34,29 @@ const readingStories = [
 ];
 
 const readingQuestions = [
-  { q: "When did the main event take place?", a: "The text says it happened at the time mentioned in the opening sentence.", n: "Busca la referencia temporal al principio del texto." },
-  { q: "What problem or decision did the person/group face?", a: "They faced the difficulty or decision described in the middle of the text.", n: "La respuesta está en la parte central del texto." },
-  { q: "Who helped or took part?", a: "The people named in the text helped or took part.", n: "Identifica los nombres y las personas mencionadas." },
-  { q: "What did they do to solve the situation or continue?", a: "They followed the solution or actions described in the text.", n: "Localiza las acciones que explican cómo avanzó la historia." },
-  { q: "What was the final result?", a: "The final sentence or sentences explain the result.", n: "La conclusión aparece al final del texto." }
+  { q: "When did the event or activity take place?", fact: 0, n: "Busca la referencia temporal en el texto." },
+  { q: "What challenge, problem or decision appears in the story?", fact: 1, n: "Localiza el problema o la decisión principal." },
+  { q: "Who helped, participated or was involved?", fact: 2, n: "Identifica a las personas que aparecen en la historia." },
+  { q: "What action did the person or group take?", fact: 3, n: "Busca la acción que permitió continuar o resolver la situación." },
+  { q: "What was the result?", fact: 4, n: "Resume el desenlace utilizando información concreta del texto." }
 ];
+
+const readingFacts: string[][] = [
+  ["Last month.", "The plan seemed difficult and a problem changed the original plan.", "A friend offered to help.", "They found another way instead of giving up.", "Alex felt more confident and wrote down what was learned."],
+  ["At the weekend.", "They needed to choose an activity and the weather was not perfect.", "Mia and her friends took part.", "They changed one activity and helped each other.", "They still had a good time together."],
+  ["When Daniel was looking for information; the first meeting followed.", "Daniel was new to the local project and made a few mistakes.", "The people at the project showed him what to do.", "He read the instructions, asked questions and took part.", "He learned quickly and recommended the project to a neighbour."],
+  ["When Sofia had to make a decision.", "She had two options with different advantages.", "She spoke to her family.", "She compared advantages, disadvantages, time and cost.", "She chose the option that suited her needs best."],
+  ["On Saturday morning.", "Something unexpected changed the group's original plan.", "Everyone in the group was involved.", "They discussed alternatives and agreed on a new arrangement.", "The activity went well."],
+  ["Every week.", "Some students were nervous about speaking English.", "Their teacher encouraged them.", "They practised questions, vocabulary and descriptions together.", "They became more confident and understood more."],
+  ["On Friday.", "The streets were busy and Leo had several tasks to complete.", "Leo met a colleague near the library.", "He walked, checked opening times and followed a list.", "He finished early and visited a new café."],
+  ["As part of her daily routine.", "Ella wanted to feel more organised.", "Ella made the changes herself.", "She prepared clothes, listed tasks and stopped checking her phone during meals.", "Her mornings became calmer and her work easier."],
+  ["A few days after the new family moved in.", "The family needed advice about a local service.", "Their neighbour helped them.", "She shared useful information and recommended a trusted place.", "They became friendly neighbours."],
+  ["When the friends met to discuss the coming year.", "They needed to turn their different goals into realistic plans.", "A group of friends took part.", "They shared goals and agreed to support one another.", "They felt preparation would help them reach their goals."],
+  ["On a Saturday.", "The community wanted to improve a shared space and the work took longer than expected.", "People from the neighbourhood volunteered.", "They divided tasks, cleaned, painted and planted flowers.", "The space looked brighter and the organisers thanked everyone."],
+  ["After Noah tried a new service.", "He needed to describe both positive points and a problem fairly.", "Noah wrote the review and another person used it.", "He included specific examples and explained who might find it useful.", "His review helped someone make a decision."]
+];
+
+export function getA2ReadingPassages() { return readingStories; }
 
 export function buildA2ExerciseSections(unit: A2PdfUnit): A2ExerciseSection[] {
   const grammar: A2PdfExercise[] = [];
@@ -79,8 +96,8 @@ export function buildA2ExerciseSections(unit: A2PdfUnit): A2ExerciseSection[] {
     for (let q = 0; q < 5; q++) {
       const item = readingQuestions[q];
       reading.push({
-        question: `READING ${storyIndex + 1} — ${story.title}. Lee el texto y responde: ${item.q} Texto: “${story.body}”`,
-        answer: item.a,
+        question: `READING ${storyIndex + 1} — ${story.title}. ${item.q}`,
+        answer: readingFacts[storyIndex][item.fact],
         note: item.n
       });
     }
