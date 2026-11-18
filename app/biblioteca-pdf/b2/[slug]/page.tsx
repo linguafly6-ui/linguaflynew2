@@ -77,7 +77,7 @@ export default async function B2PdfUnitPage({ params }: Props) {
       </section>
       <section className="mt-6 rounded-2xl border bg-white p-6">
         <h2 className="text-lg font-extrabold">Practica lo aprendido</h2>
-        <p className="mt-2 text-sm text-slate-600">El cuaderno contiene 200 ejercicios: 80 de gramática, 60 de vocabulario y 60 preguntas de comprensión lectora (reading), con solucionario.</p>
+        <p className="mt-2 text-sm text-slate-600">El cuaderno contiene ejercicios de gramática específicos de la unidad, 60 de vocabulario y 60 preguntas de comprensión lectora (reading), con solucionario.</p>
         <a href={`/api/biblioteca-pdf/b2/${unit.slug}`} className="mt-5 inline-flex rounded-xl bg-blue-700 px-5 py-3 font-bold text-white">Descargar PDF de la unidad {unit.number}</a>
       </section>
       <nav className="mt-8 flex items-center justify-between gap-4 text-sm font-bold">
