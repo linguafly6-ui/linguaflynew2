@@ -4,8 +4,9 @@
 
 - This is the Linguafly Next.js application deployed to Cloudflare Workers through OpenNext.
 - The Cloudflare Worker is `linguaflyapp1`; the connected Git repository is `linguafly6-ui/linguaflynew2`.
-- Cloudflare Workers Builds uses `main` as the production branch. Its production build command is `npx opennextjs-cloudflare build` and its production deploy command is `npx wrangler deploy`.
+- Cloudflare Workers Builds is the **only production deployment authority**. It watches `main`, builds with `npx opennextjs-cloudflare build`, and deploys with `npx wrangler deploy` after a reviewed PR is merged.
 - Cloudflare Preview builds are enabled for non-production branches and use `npx wrangler preview`.
+- GitHub Actions workflow `.github/workflows/build.yml` is **build-only CI** for pull requests. It has no production deploy or production smoke-test step. Do not add a competing automatic production deployment path.
 - **Never push directly to `main`. Never run `npx wrangler deploy` or `opennextjs-cloudflare deploy` as part of an agent task.** Production releases happen only after a reviewed PR is merged to `main`.
 - Do not change Cloudflare Workers Builds settings, production bindings, secrets, domains, routes, or deployment configuration unless the task explicitly assigns that work to the coordinating maintainer.
 
@@ -52,5 +53,5 @@ If a task genuinely needs one of these, call it out in the PR and ask the coordi
 
 - Install from the lockfile with `npm ci`.
 - Run the Cloudflare-compatible build check with `npx opennextjs-cloudflare build`.
-- The existing `.github/workflows/build.yml` (`OpenNext build`) workflow runs this build for PRs into `main`; its `build` job is the PR build check. Its deploy and production smoke-test steps run only on a push to `main`.
+- The existing `.github/workflows/build.yml` (`OpenNext build`) workflow runs this build for PRs into `main`; its `build` job is the PR build check. It is build-only and never deploys.
 - Describe checks that were not run. Do not claim a Preview or build passed unless its result was actually verified.
