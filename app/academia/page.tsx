@@ -19,7 +19,13 @@ export default function AcademyPage() {
         <p className="mt-3 text-slate-600">Primeras palabras e instrucciones cotidianas en inglés.</p>
         <span className="mt-6 inline-block font-bold text-blue-700">Ver misiones →</span>
       </Link>
-      <p className="mt-6 text-sm text-slate-500">Los demás niveles y su catálogo se irán incorporando a esta sección.</p>
+      <Link href="/academia/a1" className="mt-5 block rounded-3xl border border-indigo-200 bg-indigo-50 p-7 shadow-sm transition hover:border-indigo-400">
+        <p className="text-sm font-extrabold tracking-widest text-indigo-700">01 / ELEMENTARY</p>
+        <h2 className="mt-3 text-3xl font-black text-slate-950">A1 · Inglés elemental</h2>
+        <p className="mt-3 text-slate-600">32 temas organizados en 8 bloques: información personal, vida diaria, hogar, compras, salud, estudios, viajes y comunicación.</p>
+        <span className="mt-6 inline-block font-bold text-indigo-700">Ver catálogo temático →</span>
+      </Link>
+      <p className="mt-6 text-sm text-slate-500">El catálogo A1 presenta el recorrido temático; sus actividades interactivas se añadirán progresivamente.</p>
     </section>
   </main>;
 }
