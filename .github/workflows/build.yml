@@ -1,7 +1,8 @@
 name: OpenNext build
 
 concurrency:
-  group: linguafly-main-deploy
+  # A PR build must never cancel the production deploy, and vice versa.
+  group: ${{ github.event_name == 'pull_request' && format('linguafly-pr-{0}', github.event.pull_request.number) || format('linguafly-ref-{0}', github.ref) }}
   cancel-in-progress: true
 
 on:
@@ -25,7 +26,7 @@ jobs:
         with:
           node-version: 22
       - name: Install dependencies
-        run: npm install
+        run: npm ci
       - name: Build for Cloudflare Workers
         run: npx opennextjs-cloudflare build
       - name: Deploy to existing linguaflyapp1 Worker
