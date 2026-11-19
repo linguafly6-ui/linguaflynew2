@@ -23,25 +23,33 @@ export async function transcribeAudio(
   audio: ArrayBuffer,
   language: string
 ): Promise<string> {
-  try {
-    const env = getEnv();
-    if (!env?.AI?.run) {
-      console.error("Workers AI binding no disponible para transcripción");
-      return "";
-    }
-
-    const response = await env.AI.run(STT_MODEL as any, {
-      audio: [...new Uint8Array(audio)],
-      task: "transcribe",
-      language: ({ english: "en", spanish: "es", french: "fr", german: "de", italian: "it", portuguese: "pt" } as Record<string, string>)[(language || "en").toLowerCase()] || (language || "en").toLowerCase().split("-")[0],
-      vad_filter: false,
-    });
-
-    return (response as any).text?.trim() ?? "";
-  } catch (error) {
-    console.error("Whisper transcription failed:", error);
-    return "";
+  const env = getEnv();
+  if (!env?.AI?.run) {
+    throw new Error("Workers AI binding no disponible para transcripción");
   }
+
+  // Workers AI Whisper espera el audio codificado en Base64. Enviar un
+  // array de bytes puede producir una respuesta vacía sin transcribir el audio.
+  const bytes = new Uint8Array(audio);
+  let binary = "";
+  const chunkSize = 0x8000;
+  for (let offset = 0; offset < bytes.length; offset += chunkSize) {
+    binary += String.fromCharCode(...bytes.subarray(offset, offset + chunkSize));
+  }
+  const audioBase64 = btoa(binary);
+
+  const response = await env.AI.run(STT_MODEL as any, {
+    audio: audioBase64,
+    task: "transcribe",
+    language: ({ english: "en", spanish: "es", french: "fr", german: "de", italian: "it", portuguese: "pt" } as Record<string, string>)[(language || "en").toLowerCase()] || (language || "en").toLowerCase().split("-")[0],
+    vad_filter: false,
+  });
+
+  const transcription = (response as any).text?.trim();
+  if (typeof transcription !== "string") {
+    throw new Error("Whisper devolvió una respuesta sin el campo de transcripción");
+  }
+  return transcription;
 }
 
 export function calculateSimilarity(a: string, b: string): number {
