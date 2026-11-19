@@ -52,5 +52,5 @@ If a task genuinely needs one of these, call it out in the PR and ask the coordi
 
 - Install from the lockfile with `npm ci`.
 - Run the Cloudflare-compatible build check with `npx opennextjs-cloudflare build`.
-- The GitHub Actions quality-gate workflow runs this build for PRs into `main`. It is a build check only; it does not deploy.
+- The existing `.github/workflows/build.yml` (`OpenNext build`) workflow runs this build for PRs into `main`; its `build` job is the PR build check. Its deploy and production smoke-test steps run only on a push to `main`.
 - Describe checks that were not run. Do not claim a Preview or build passed unless its result was actually verified.
