@@ -1,3 +1,0 @@
-import Link from "next/link";
-export const metadata={title:"At the Café · Misión 047 · Linguafly A1",description:"Pedir en una cafetería."};
-export default function MissionPage(){return <main className="mx-auto min-h-[70vh] max-w-5xl px-5 py-10"><Link href="/academia/a1" className="text-sm font-semibold text-blue-700">← Misiones A1</Link><p className="mt-6 text-sm font-extrabold uppercase tracking-widest text-indigo-700">Linguafly Quest · A1 · Misión 047</p><h1 className="mt-2 text-4xl font-black text-slate-950">At the Café</h1><p className="mt-3 text-slate-600">Pedir en una cafetería.</p><iframe title="Misión 047 · At the Café" src="/missions/a1/047/index.html" className="mt-6 h-[1100px] w-full rounded-2xl border border-slate-200 bg-white"/></main>}
