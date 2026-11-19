@@ -10,7 +10,7 @@
 
 ## Validation
 - [ ] `npm ci`
-- [ ] `npx opennextjs-cloudflare build`
+- [ ] `OpenNext build` GitHub Actions check passed (`build` job)
 - [ ] Reviewed the Cloudflare Preview (URL: )
 - [ ] No production deployment command was run
 
