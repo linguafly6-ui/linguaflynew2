@@ -143,17 +143,6 @@ export default function A1Page() {
         <Link href="/academia/a1/050" className="rounded-2xl border border-indigo-100 bg-white p-4 transition hover:border-indigo-400 hover:shadow-sm"><p className="text-xs font-extrabold tracking-widest text-indigo-700">MISIÓN 050</p><h3 className="mt-1 font-bold text-slate-900">Food and Ordering</h3><p className="mt-1 text-sm text-slate-600">Situaciones integradas de comida</p><span className="mt-3 inline-block text-sm font-bold text-indigo-700">Empezar misión →</span></Link>
       </div>
     </section>
-    <section className="mt-8 rounded-3xl border border-slate-200 bg-white p-6">
-      <h2 className="text-2xl font-black text-slate-950">10 bloques de progresión</h2>
-      <p className="mt-1 text-sm text-slate-600">Estructura alineada con la hoja «Bloques de progresión» del Excel de las 100 misiones A1.</p>
-      <div className="mt-5 grid gap-3 sm:grid-cols-2">
-        {units.map((unit) => <article key={unit.number} className="rounded-2xl border border-slate-100 bg-slate-50 p-4">
-          <p className="text-xs font-black tracking-widest text-blue-700">{unit.number} · MISIONES {unit.title.split(" · ")[0]}</p>
-          <h3 className="mt-2 text-lg font-bold text-slate-900">{unit.title.split(" · ")[1]}</h3>
-          <p className="mt-2 text-sm leading-6 text-slate-600">{unit.subtitle}</p>
-        </article>)}
-      </div>
-    </section>
     <section className="mt-8 rounded-2xl bg-amber-50 p-5 text-sm leading-6 text-amber-950">
       <strong>Nota:</strong> este catálogo sigue los 10 bloques de progresión del Excel curricular. Ya están disponibles las primeras 50 misiones interactivas, cada una con 50 retos. Las siguientes se incorporarán progresivamente hasta completar las 100 misiones del curso.
     </section>
