@@ -64,9 +64,8 @@ export default function A1Page() {
     <section className="mt-6 rounded-3xl bg-gradient-to-br from-blue-950 via-indigo-900 to-violet-800 px-7 py-10 text-white sm:px-12">
       <p className="text-sm font-extrabold uppercase tracking-[.2em] text-cyan-300">Linguafly Academy · Elementary</p>
       <h1 className="mt-3 text-4xl font-black sm:text-5xl">Curso de inglés A1</h1>
-      <p className="mt-4 max-w-3xl text-lg leading-8 text-blue-100">Catálogo temático para avanzar desde las primeras frases hasta desenvolverte en intercambios cotidianos muy sencillos. El recorrido sigue los 10 bloques de progresión del Excel curricular de 100 misiones.</p>
+      <p className="mt-4 max-w-3xl text-lg leading-8 text-blue-100">Catálogo temático para avanzar desde las primeras frases hasta desenvolverte en intercambios cotidianos muy sencillos.</p>
       <div className="mt-7 flex flex-wrap gap-3 text-sm font-bold">
-        <span className="rounded-full bg-white/15 px-4 py-2">10 bloques</span>
         <span className="rounded-full bg-white/15 px-4 py-2">100 misiones</span>
         <span className="rounded-full bg-white/15 px-4 py-2">Nivel MCER A1</span>
       </div>
@@ -119,7 +118,7 @@ export default function A1Page() {
       </div>
     </section>
     <section className="mt-6 rounded-3xl border border-indigo-100 bg-indigo-50 p-6">
-      <div className="flex flex-wrap items-end justify-between gap-3"><div><p className="text-xs font-black uppercase tracking-widest text-indigo-700">Nuevas misiones · Bloques A1.4 y A1.5</p><h2 className="mt-1 text-2xl font-black text-slate-950">Misiones 031–050</h2><p className="mt-1 text-sm text-slate-600">20 misiones nuevas según el Excel curricular, con 50 retos cada una.</p></div><span className="rounded-full bg-white px-3 py-2 text-sm font-bold text-indigo-800">20 misiones</span></div>
+      <div className="flex flex-wrap items-end justify-between gap-3"><div><p className="text-xs font-black uppercase tracking-widest text-indigo-700">Nuevas misiones · A1.4 y A1.5</p><h2 className="mt-1 text-2xl font-black text-slate-950">Misiones 031–050</h2><p className="mt-1 text-sm text-slate-600">20 misiones nuevas según el Excel curricular, con 50 retos cada una.</p></div><span className="rounded-full bg-white px-3 py-2 text-sm font-bold text-indigo-800">20 misiones</span></div>
       <div className="mt-5 grid gap-3 sm:grid-cols-2 lg:grid-cols-3">
         <Link href="/academia/a1/031" className="rounded-2xl border border-indigo-100 bg-white p-4 transition hover:border-indigo-400 hover:shadow-sm"><p className="text-xs font-extrabold tracking-widest text-indigo-700">MISIÓN 031</p><h3 className="mt-1 font-bold text-slate-900">A Typical Day</h3><p className="mt-1 text-sm text-slate-600">Rutina diaria</p><span className="mt-3 inline-block text-sm font-bold text-indigo-700">Empezar misión →</span></Link>
         <Link href="/academia/a1/032" className="rounded-2xl border border-indigo-100 bg-white p-4 transition hover:border-indigo-400 hover:shadow-sm"><p className="text-xs font-extrabold tracking-widest text-indigo-700">MISIÓN 032</p><h3 className="mt-1 font-bold text-slate-900">Morning and Evening</h3><p className="mt-1 text-sm text-slate-600">Momentos del día</p><span className="mt-3 inline-block text-sm font-bold text-indigo-700">Empezar misión →</span></Link>
@@ -144,7 +143,7 @@ export default function A1Page() {
       </div>
     </section>
     <section className="mt-8 rounded-2xl bg-amber-50 p-5 text-sm leading-6 text-amber-950">
-      <strong>Nota:</strong> este catálogo sigue los 10 bloques de progresión del Excel curricular. Ya están disponibles las primeras 50 misiones interactivas, cada una con 50 retos. Las siguientes se incorporarán progresivamente hasta completar las 100 misiones del curso.
+      <strong>Nota:</strong> este catálogo sigue la progresión del Excel curricular. Ya están disponibles las primeras 50 misiones interactivas, cada una con 50 retos. Las siguientes se incorporarán progresivamente hasta completar las 100 misiones del curso.
     </section>
   </main>;
 }
