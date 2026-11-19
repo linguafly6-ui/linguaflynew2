@@ -90,8 +90,9 @@ Las hojas Reading y Listening ofrecen la referencia por misión, incluyendo form
 
 ## Límites técnicos y de integración
 - Trabajar exclusivamente en misiones 071–100.
-- No tocar las misiones 001–070, el motor común, catálogo, rutas, configuración, base de datos ni paneles mientras el PR #38 no esté integrado.
-- No hacer despliegues ni escribir en `main`.
-- Los archivos existentes 071–100 son páginas antiguas de dos secciones; al completarlas deben usar el motor común compatible que integra el PR #38. Esta rama se creó desde `main` mientras el PR #38 estaba abierto: antes de integrar, actualizar esta rama desde `main` después de que #38 se fusione para heredar el runtime y el acceso dinámico ya validados.
-- Entregar un PR hacia `main` cuando #38 esté integrado y después de validar compilación y contenido.
-- Revisar `AGENTS.md` antes de tocar código.
+- No modificar el contenido de las misiones 001–070. Las únicas páginas de misión que se pueden sustituir son 071–100.
+- El PR #38 ya está fusionado en `main`; esta rama se ha sincronizado sobre ese merge y ya incluye el motor compartido compatible y las rutas 011–070.
+- Reutilizar el contrato de datos y el motor de misiones ya integrado. No duplicar ni reemplazar `mission-runtime.js`; cualquier cambio compartido debe justificarse, ser retrocompatible y revisarse por separado.
+- Actualizar en esta rama los títulos/descripciones y la ruta dinámica para que 071–100 correspondan al currículo A1 inicial.
+- No modificar la base de datos ni los paneles de alumno/profesor. No desplegar ni escribir directamente en `main`.
+- Antes de tocar código, revisar `AGENTS.md`. Entregar un PR hacia `main` tras validar contenido, rutas y compilación.
