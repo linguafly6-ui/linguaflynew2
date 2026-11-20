@@ -1,0 +1,75 @@
+{
+  "schemaVersion": "1.0.0",
+  "canonicalSectionOrder": [
+    "explore",
+    "practice",
+    "grammar",
+    "pronunciation",
+    "reading",
+    "writing",
+    "speaking",
+    "listening"
+  ],
+  "courses": [
+    {
+      "courseId": "english-pre-a1",
+      "level": "PRE-A1",
+      "title": "Starter",
+      "status": "active",
+      "contentPath": "content/missions/pre-a1",
+      "missionCount": 100
+    },
+    {
+      "courseId": "english-a1",
+      "level": "A1",
+      "title": "Elementary",
+      "status": "active",
+      "contentPath": "content/missions/a1",
+      "missionCount": 100
+    },
+    {
+      "courseId": "english-a2",
+      "level": "A2",
+      "title": "Pre-intermediate",
+      "status": "planned",
+      "contentPath": "content/missions/a2"
+    },
+    {
+      "courseId": "english-b1",
+      "level": "B1",
+      "title": "Intermediate",
+      "status": "planned",
+      "contentPath": "content/missions/b1"
+    },
+    {
+      "courseId": "english-b2",
+      "level": "B2",
+      "title": "Upper-intermediate",
+      "status": "planned",
+      "contentPath": "content/missions/b2"
+    },
+    {
+      "courseId": "english-c1",
+      "level": "C1",
+      "title": "Advanced",
+      "status": "planned",
+      "contentPath": "content/missions/c1"
+    },
+    {
+      "courseId": "english-c2",
+      "level": "C2",
+      "title": "Proficiency",
+      "status": "planned",
+      "contentPath": "content/missions/c2"
+    }
+  ],
+  "identityRules": {
+    "courseId": "Stable across course revisions",
+    "unitId": "Stable block identifier",
+    "missionId": "Stable mission identifier",
+    "sectionId": "Stable section identifier",
+    "exerciseId": "Stable exercise identifier",
+    "itemId": "Stable activity identifier",
+    "contentVersion": "Increment when published learning content changes; do not reuse retired item IDs."
+  }
+}

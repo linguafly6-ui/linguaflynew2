@@ -1,0 +1,1206 @@
+{
+  "schemaVersion": "1.2.0",
+  "contentVersion": 1,
+  "course": {
+    "courseId": "english-a1",
+    "level": "A1",
+    "language": "en-GB"
+  },
+  "unit": {
+    "unitId": "english-a1-unit-06",
+    "courseId": "english-a1",
+    "position": 6,
+    "title": "Shopping, clothes and money"
+  },
+  "mission": {
+    "missionId": "english-a1-m060",
+    "unitId": "english-a1-unit-06",
+    "position": 60,
+    "title": "Shopping Mission"
+  },
+  "sections": [
+    {
+      "sectionId": "english-a1-m060-explore",
+      "sectionKey": "explore",
+      "position": 1,
+      "title": "Exploración",
+      "exercise": {
+        "exerciseId": "english-a1-m060-explore-ex01",
+        "type": "vocabulary_pairs",
+        "items": [
+          {
+            "itemId": "english-a1-m060-explore-ex01-i01",
+            "position": 1,
+            "english": "shopping",
+            "spanish": "compras",
+            "audio": "tts:en-GB:shopping"
+          },
+          {
+            "itemId": "english-a1-m060-explore-ex01-i02",
+            "position": 2,
+            "english": "price",
+            "spanish": "precio",
+            "audio": "tts:en-GB:price"
+          },
+          {
+            "itemId": "english-a1-m060-explore-ex01-i03",
+            "position": 3,
+            "english": "size",
+            "spanish": "talla",
+            "audio": "tts:en-GB:size"
+          },
+          {
+            "itemId": "english-a1-m060-explore-ex01-i04",
+            "position": 4,
+            "english": "cheap",
+            "spanish": "barato",
+            "audio": "tts:en-GB:cheap"
+          },
+          {
+            "itemId": "english-a1-m060-explore-ex01-i05",
+            "position": 5,
+            "english": "expensive",
+            "spanish": "caro",
+            "audio": "tts:en-GB:expensive"
+          },
+          {
+            "itemId": "english-a1-m060-explore-ex01-i06",
+            "position": 6,
+            "english": "a kilo of",
+            "spanish": "un kilo de",
+            "audio": "tts:en-GB:a kilo of"
+          },
+          {
+            "itemId": "english-a1-m060-explore-ex01-i07",
+            "position": 7,
+            "english": "a pair of",
+            "spanish": "un par de",
+            "audio": "tts:en-GB:a pair of"
+          },
+          {
+            "itemId": "english-a1-m060-explore-ex01-i08",
+            "position": 8,
+            "english": "I'd like",
+            "spanish": "quisiera",
+            "audio": "tts:en-GB:I'd like"
+          },
+          {
+            "itemId": "english-a1-m060-explore-ex01-i09",
+            "position": 9,
+            "english": "How much is...?",
+            "spanish": "¿Cuánto cuesta...?",
+            "audio": "tts:en-GB:How much is...?"
+          },
+          {
+            "itemId": "english-a1-m060-explore-ex01-i10",
+            "position": 10,
+            "english": "receipt",
+            "spanish": "recibo",
+            "audio": "tts:en-GB:receipt"
+          }
+        ],
+        "theory": {
+          "title": "Vocabulary: Shopping Mission",
+          "explanation": "Aprende y reconoce diez palabras y expresiones de shopping mission. Relaciona cada forma en inglés con su significado y escucha el modelo británico.",
+          "patterns": [
+            {
+              "label": "Frases útiles",
+              "pattern": "A short phrase + a clear response",
+              "examples": [
+                "I'm looking for a blue jacket.",
+                "How much is this bag?",
+                "I'd like a kilo of apples."
+              ]
+            }
+          ],
+          "tip": "Escucha cada palabra, repítela en voz alta y úsala después en una frase propia."
+        }
+      }
+    },
+    {
+      "sectionId": "english-a1-m060-practice",
+      "sectionKey": "practice",
+      "position": 2,
+      "title": "Práctica",
+      "exercise": {
+        "exerciseId": "english-a1-m060-practice-ex01",
+        "type": "mixed_practice",
+        "items": [
+          {
+            "itemId": "english-a1-m060-practice-ex01-i01",
+            "position": 1,
+            "taskType": "translation_multiple_choice",
+            "prompt": "Traduce al español: “I'm looking for a blue jacket.”",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "Estoy buscando una chaqueta azul.",
+              "¿Tiene estos en talla mediana?",
+              "Esta camisa es barata."
+            ],
+            "correctAnswer": "Estoy buscando una chaqueta azul.",
+            "sourceEnglish": "I'm looking for a blue jacket."
+          },
+          {
+            "itemId": "english-a1-m060-practice-ex01-i02",
+            "position": 2,
+            "taskType": "translation_multiple_choice",
+            "prompt": "Traduce al español: “How much is this bag?”",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "¿Cuánto cuesta este bolso?",
+              "Los zapatos son demasiado caros.",
+              "¿Cuánto cuestan estos pantalones?"
+            ],
+            "correctAnswer": "¿Cuánto cuesta este bolso?",
+            "sourceEnglish": "How much is this bag?"
+          },
+          {
+            "itemId": "english-a1-m060-practice-ex01-i03",
+            "position": 3,
+            "taskType": "translation_multiple_choice",
+            "prompt": "Traduce al español: “I'd like a kilo of apples.”",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "Quisiera un kilo de manzanas.",
+              "¿Me da un recibo, por favor?",
+              "Un par de zapatos negros, por favor."
+            ],
+            "correctAnswer": "Quisiera un kilo de manzanas.",
+            "sourceEnglish": "I'd like a kilo of apples."
+          },
+          {
+            "itemId": "english-a1-m060-practice-ex01-i04",
+            "position": 4,
+            "taskType": "translation_multiple_choice",
+            "prompt": "Traduce al español: “Do you have these in medium?”",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "¿Tiene estos en talla mediana?",
+              "Esta camisa es barata.",
+              "Eso es todo, gracias."
+            ],
+            "correctAnswer": "¿Tiene estos en talla mediana?",
+            "sourceEnglish": "Do you have these in medium?"
+          },
+          {
+            "itemId": "english-a1-m060-practice-ex01-i05",
+            "position": 5,
+            "taskType": "translation_multiple_choice",
+            "prompt": "Traduce al español: “The shoes are too expensive.”",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "Los zapatos son demasiado caros.",
+              "¿Cuánto cuestan estos pantalones?",
+              "Estoy buscando una chaqueta azul."
+            ],
+            "correctAnswer": "Los zapatos son demasiado caros.",
+            "sourceEnglish": "The shoes are too expensive."
+          },
+          {
+            "itemId": "english-a1-m060-practice-ex01-i06",
+            "position": 6,
+            "taskType": "translation_multiple_choice",
+            "prompt": "Traduce al español: “Can I have a receipt, please?”",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "¿Me da un recibo, por favor?",
+              "Un par de zapatos negros, por favor.",
+              "¿Cuánto cuesta este bolso?"
+            ],
+            "correctAnswer": "¿Me da un recibo, por favor?",
+            "sourceEnglish": "Can I have a receipt, please?"
+          },
+          {
+            "itemId": "english-a1-m060-practice-ex01-i07",
+            "position": 7,
+            "taskType": "translation_multiple_choice",
+            "prompt": "Traduce al español: “This shirt is cheap.”",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "Esta camisa es barata.",
+              "Eso es todo, gracias.",
+              "Quisiera un kilo de manzanas."
+            ],
+            "correctAnswer": "Esta camisa es barata.",
+            "sourceEnglish": "This shirt is cheap."
+          },
+          {
+            "itemId": "english-a1-m060-practice-ex01-i08",
+            "position": 8,
+            "taskType": "translation_multiple_choice",
+            "prompt": "Traduce al español: “How much are these trousers?”",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "¿Cuánto cuestan estos pantalones?",
+              "Estoy buscando una chaqueta azul.",
+              "¿Tiene estos en talla mediana?"
+            ],
+            "correctAnswer": "¿Cuánto cuestan estos pantalones?",
+            "sourceEnglish": "How much are these trousers?"
+          },
+          {
+            "itemId": "english-a1-m060-practice-ex01-i09",
+            "position": 9,
+            "taskType": "translation_multiple_choice",
+            "prompt": "Traduce al español: “A pair of black shoes, please.”",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "Un par de zapatos negros, por favor.",
+              "¿Cuánto cuesta este bolso?",
+              "Los zapatos son demasiado caros."
+            ],
+            "correctAnswer": "Un par de zapatos negros, por favor.",
+            "sourceEnglish": "A pair of black shoes, please."
+          },
+          {
+            "itemId": "english-a1-m060-practice-ex01-i10",
+            "position": 10,
+            "taskType": "translation_multiple_choice",
+            "prompt": "Traduce al español: “That's all, thank you.”",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "Eso es todo, gracias.",
+              "Quisiera un kilo de manzanas.",
+              "¿Me da un recibo, por favor?"
+            ],
+            "correctAnswer": "Eso es todo, gracias.",
+            "sourceEnglish": "That's all, thank you."
+          },
+          {
+            "itemId": "english-a1-m060-practice-ex01-i11",
+            "position": 11,
+            "taskType": "listening_translation_multiple_choice",
+            "prompt": "Escucha el inglés y elige su significado.",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "Estoy buscando una chaqueta azul.",
+              "¿Tiene estos en talla mediana?",
+              "Esta camisa es barata."
+            ],
+            "correctAnswer": "Estoy buscando una chaqueta azul.",
+            "sourceEnglish": "I'm looking for a blue jacket."
+          },
+          {
+            "itemId": "english-a1-m060-practice-ex01-i12",
+            "position": 12,
+            "taskType": "listening_translation_multiple_choice",
+            "prompt": "Escucha el inglés y elige su significado.",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "¿Cuánto cuesta este bolso?",
+              "Los zapatos son demasiado caros.",
+              "¿Cuánto cuestan estos pantalones?"
+            ],
+            "correctAnswer": "¿Cuánto cuesta este bolso?",
+            "sourceEnglish": "How much is this bag?"
+          },
+          {
+            "itemId": "english-a1-m060-practice-ex01-i13",
+            "position": 13,
+            "taskType": "listening_translation_multiple_choice",
+            "prompt": "Escucha el inglés y elige su significado.",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "Quisiera un kilo de manzanas.",
+              "¿Me da un recibo, por favor?",
+              "Un par de zapatos negros, por favor."
+            ],
+            "correctAnswer": "Quisiera un kilo de manzanas.",
+            "sourceEnglish": "I'd like a kilo of apples."
+          },
+          {
+            "itemId": "english-a1-m060-practice-ex01-i14",
+            "position": 14,
+            "taskType": "listening_translation_multiple_choice",
+            "prompt": "Escucha el inglés y elige su significado.",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "¿Tiene estos en talla mediana?",
+              "Esta camisa es barata.",
+              "Eso es todo, gracias."
+            ],
+            "correctAnswer": "¿Tiene estos en talla mediana?",
+            "sourceEnglish": "Do you have these in medium?"
+          },
+          {
+            "itemId": "english-a1-m060-practice-ex01-i15",
+            "position": 15,
+            "taskType": "listening_translation_multiple_choice",
+            "prompt": "Escucha el inglés y elige su significado.",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "Los zapatos son demasiado caros.",
+              "¿Cuánto cuestan estos pantalones?",
+              "Estoy buscando una chaqueta azul."
+            ],
+            "correctAnswer": "Los zapatos son demasiado caros.",
+            "sourceEnglish": "The shoes are too expensive."
+          },
+          {
+            "itemId": "english-a1-m060-practice-ex01-i16",
+            "position": 16,
+            "taskType": "listening_translation_multiple_choice",
+            "prompt": "Escucha el inglés y elige su significado.",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "¿Me da un recibo, por favor?",
+              "Un par de zapatos negros, por favor.",
+              "¿Cuánto cuesta este bolso?"
+            ],
+            "correctAnswer": "¿Me da un recibo, por favor?",
+            "sourceEnglish": "Can I have a receipt, please?"
+          },
+          {
+            "itemId": "english-a1-m060-practice-ex01-i17",
+            "position": 17,
+            "taskType": "listening_translation_multiple_choice",
+            "prompt": "Escucha el inglés y elige su significado.",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "Esta camisa es barata.",
+              "Eso es todo, gracias.",
+              "Quisiera un kilo de manzanas."
+            ],
+            "correctAnswer": "Esta camisa es barata.",
+            "sourceEnglish": "This shirt is cheap."
+          },
+          {
+            "itemId": "english-a1-m060-practice-ex01-i18",
+            "position": 18,
+            "taskType": "listening_translation_multiple_choice",
+            "prompt": "Escucha el inglés y elige su significado.",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "¿Cuánto cuestan estos pantalones?",
+              "Estoy buscando una chaqueta azul.",
+              "¿Tiene estos en talla mediana?"
+            ],
+            "correctAnswer": "¿Cuánto cuestan estos pantalones?",
+            "sourceEnglish": "How much are these trousers?"
+          },
+          {
+            "itemId": "english-a1-m060-practice-ex01-i19",
+            "position": 19,
+            "taskType": "listening_translation_multiple_choice",
+            "prompt": "Escucha el inglés y elige su significado.",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "Un par de zapatos negros, por favor.",
+              "¿Cuánto cuesta este bolso?",
+              "Los zapatos son demasiado caros."
+            ],
+            "correctAnswer": "Un par de zapatos negros, por favor.",
+            "sourceEnglish": "A pair of black shoes, please."
+          },
+          {
+            "itemId": "english-a1-m060-practice-ex01-i20",
+            "position": 20,
+            "taskType": "listening_translation_multiple_choice",
+            "prompt": "Escucha el inglés y elige su significado.",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "Eso es todo, gracias.",
+              "Quisiera un kilo de manzanas.",
+              "¿Me da un recibo, por favor?"
+            ],
+            "correctAnswer": "Eso es todo, gracias.",
+            "sourceEnglish": "That's all, thank you."
+          }
+        ]
+      }
+    },
+    {
+      "sectionId": "english-a1-m060-grammar",
+      "sectionKey": "grammar",
+      "position": 3,
+      "title": "Gramática",
+      "exercise": {
+        "exerciseId": "english-a1-m060-grammar-ex01",
+        "type": "grammar",
+        "items": [
+          {
+            "itemId": "english-a1-m060-grammar-ex01-i01",
+            "position": 1,
+            "prompt": "How much ___ this bag?",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "is",
+              "are",
+              "do"
+            ],
+            "correctAnswer": "is"
+          },
+          {
+            "itemId": "english-a1-m060-grammar-ex01-i02",
+            "position": 2,
+            "prompt": "Do you ___ these in medium?",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "have",
+              "has",
+              "having"
+            ],
+            "correctAnswer": "have"
+          },
+          {
+            "itemId": "english-a1-m060-grammar-ex01-i03",
+            "position": 3,
+            "prompt": "I'd ___ a kilo of apples.",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "like",
+              "likes",
+              "liking"
+            ],
+            "correctAnswer": "like"
+          },
+          {
+            "itemId": "english-a1-m060-grammar-ex01-i04",
+            "position": 4,
+            "prompt": "Can I ___ a receipt?",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "have",
+              "has",
+              "having"
+            ],
+            "correctAnswer": "have"
+          },
+          {
+            "itemId": "english-a1-m060-grammar-ex01-i05",
+            "position": 5,
+            "prompt": "How much ___ these trousers?",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "are",
+              "is",
+              "does"
+            ],
+            "correctAnswer": "are"
+          },
+          {
+            "itemId": "english-a1-m060-grammar-ex01-i06",
+            "position": 6,
+            "prompt": "The shoes ___ too expensive.",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "are",
+              "is",
+              "am"
+            ],
+            "correctAnswer": "are"
+          },
+          {
+            "itemId": "english-a1-m060-grammar-ex01-i07",
+            "position": 7,
+            "prompt": "This shirt ___ cheap.",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "is",
+              "are",
+              "am"
+            ],
+            "correctAnswer": "is"
+          },
+          {
+            "itemId": "english-a1-m060-grammar-ex01-i08",
+            "position": 8,
+            "prompt": "Would you like ___ else?",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "anything",
+              "something",
+              "nothing"
+            ],
+            "correctAnswer": "anything"
+          },
+          {
+            "itemId": "english-a1-m060-grammar-ex01-i09",
+            "position": 9,
+            "prompt": "Here ___ your change.",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "is",
+              "are",
+              "am"
+            ],
+            "correctAnswer": "is"
+          },
+          {
+            "itemId": "english-a1-m060-grammar-ex01-i10",
+            "position": 10,
+            "prompt": "That's all, ___ you.",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "thank",
+              "thanks",
+              "thanking"
+            ],
+            "correctAnswer": "thank"
+          }
+        ],
+        "theory": {
+          "title": "Integrated shopping questions and requests",
+          "explanation": "En una compra combinamos preguntas con How much...? y Do you have...? con peticiones corteses usando I'd like... y Can I have...?",
+          "patterns": [
+            {
+              "label": "Estructura",
+              "pattern": "How much is this bag?",
+              "examples": [
+                "How much is this bag?",
+                "Do you have these in medium?",
+                "I'd like a kilo of apples, please."
+              ]
+            }
+          ],
+          "tip": "Usa please y thank you para mantener un tono educado."
+        }
+      }
+    },
+    {
+      "sectionId": "english-a1-m060-pronunciation",
+      "sectionKey": "pronunciation",
+      "position": 4,
+      "title": "Pronunciación",
+      "exercise": {
+        "exerciseId": "english-a1-m060-pronunciation-ex01",
+        "type": "pronunciation_cards",
+        "items": [
+          {
+            "itemId": "english-a1-m060-pronunciation-ex01-i01",
+            "position": 1,
+            "word": "shopping",
+            "translation": "compras",
+            "pronunciationGuide": "Listen to the British English model and keep the final consonant clear.",
+            "audio": "tts:en-GB:shopping"
+          },
+          {
+            "itemId": "english-a1-m060-pronunciation-ex01-i02",
+            "position": 2,
+            "word": "price",
+            "translation": "precio",
+            "pronunciationGuide": "Listen to the British English model and keep the final consonant clear.",
+            "audio": "tts:en-GB:price"
+          },
+          {
+            "itemId": "english-a1-m060-pronunciation-ex01-i03",
+            "position": 3,
+            "word": "size",
+            "translation": "talla",
+            "pronunciationGuide": "Listen to the British English model and keep the final consonant clear.",
+            "audio": "tts:en-GB:size"
+          },
+          {
+            "itemId": "english-a1-m060-pronunciation-ex01-i04",
+            "position": 4,
+            "word": "cheap",
+            "translation": "barato",
+            "pronunciationGuide": "Listen to the British English model and keep the final consonant clear.",
+            "audio": "tts:en-GB:cheap"
+          },
+          {
+            "itemId": "english-a1-m060-pronunciation-ex01-i05",
+            "position": 5,
+            "word": "expensive",
+            "translation": "caro",
+            "pronunciationGuide": "Listen to the British English model and keep the final consonant clear.",
+            "audio": "tts:en-GB:expensive"
+          },
+          {
+            "itemId": "english-a1-m060-pronunciation-ex01-i06",
+            "position": 6,
+            "word": "a kilo of",
+            "translation": "un kilo de",
+            "pronunciationGuide": "Listen to the phrase as one unit and notice its main stress.",
+            "audio": "tts:en-GB:a kilo of"
+          },
+          {
+            "itemId": "english-a1-m060-pronunciation-ex01-i07",
+            "position": 7,
+            "word": "a pair of",
+            "translation": "un par de",
+            "pronunciationGuide": "Listen to the phrase as one unit and notice its main stress.",
+            "audio": "tts:en-GB:a pair of"
+          },
+          {
+            "itemId": "english-a1-m060-pronunciation-ex01-i08",
+            "position": 8,
+            "word": "I'd like",
+            "translation": "quisiera",
+            "pronunciationGuide": "Listen to the phrase as one unit and notice its main stress.",
+            "audio": "tts:en-GB:I'd like"
+          },
+          {
+            "itemId": "english-a1-m060-pronunciation-ex01-i09",
+            "position": 9,
+            "word": "How much is...?",
+            "translation": "¿Cuánto cuesta...?",
+            "pronunciationGuide": "Listen to the phrase as one unit and notice its main stress.",
+            "audio": "tts:en-GB:How much is...?"
+          },
+          {
+            "itemId": "english-a1-m060-pronunciation-ex01-i10",
+            "position": 10,
+            "word": "receipt",
+            "translation": "recibo",
+            "pronunciationGuide": "Listen to the British English model and keep the final consonant clear.",
+            "audio": "tts:en-GB:receipt"
+          }
+        ],
+        "focus": "Practica el ritmo y el acento de las palabras clave de Shopping Mission."
+      }
+    },
+    {
+      "sectionId": "english-a1-m060-reading",
+      "sectionKey": "reading",
+      "position": 5,
+      "title": "Reading",
+      "exercise": {
+        "exerciseId": "english-a1-m060-reading-ex01",
+        "type": "reading_comprehension",
+        "items": [
+          {
+            "itemId": "english-a1-m060-reading-ex01-i01",
+            "position": 1,
+            "prompt": "Which English sentence means “Estoy buscando una chaqueta azul.”?",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "I'm looking for a blue jacket.",
+              "How much is this bag?",
+              "I'd like a kilo of apples."
+            ],
+            "correctAnswer": "I'm looking for a blue jacket."
+          },
+          {
+            "itemId": "english-a1-m060-reading-ex01-i02",
+            "position": 2,
+            "prompt": "Which English sentence means “¿Cuánto cuesta este bolso?”?",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "How much is this bag?",
+              "I'd like a kilo of apples.",
+              "Do you have these in medium?"
+            ],
+            "correctAnswer": "How much is this bag?"
+          },
+          {
+            "itemId": "english-a1-m060-reading-ex01-i03",
+            "position": 3,
+            "prompt": "Which English sentence means “Quisiera un kilo de manzanas.”?",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "I'd like a kilo of apples.",
+              "Do you have these in medium?",
+              "The shoes are too expensive."
+            ],
+            "correctAnswer": "I'd like a kilo of apples."
+          },
+          {
+            "itemId": "english-a1-m060-reading-ex01-i04",
+            "position": 4,
+            "prompt": "Which English sentence means “¿Tiene estos en talla mediana?”?",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "Do you have these in medium?",
+              "The shoes are too expensive.",
+              "Can I have a receipt, please?"
+            ],
+            "correctAnswer": "Do you have these in medium?"
+          },
+          {
+            "itemId": "english-a1-m060-reading-ex01-i05",
+            "position": 5,
+            "prompt": "Which English sentence means “Los zapatos son demasiado caros.”?",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "The shoes are too expensive.",
+              "Can I have a receipt, please?",
+              "This shirt is cheap."
+            ],
+            "correctAnswer": "The shoes are too expensive."
+          },
+          {
+            "itemId": "english-a1-m060-reading-ex01-i06",
+            "position": 6,
+            "prompt": "Which English sentence means “¿Me da un recibo, por favor?”?",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "Can I have a receipt, please?",
+              "This shirt is cheap.",
+              "How much are these trousers?"
+            ],
+            "correctAnswer": "Can I have a receipt, please?"
+          },
+          {
+            "itemId": "english-a1-m060-reading-ex01-i07",
+            "position": 7,
+            "prompt": "Which English sentence means “Esta camisa es barata.”?",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "This shirt is cheap.",
+              "How much are these trousers?",
+              "A pair of black shoes, please."
+            ],
+            "correctAnswer": "This shirt is cheap."
+          },
+          {
+            "itemId": "english-a1-m060-reading-ex01-i08",
+            "position": 8,
+            "prompt": "Which English sentence means “¿Cuánto cuestan estos pantalones?”?",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "How much are these trousers?",
+              "A pair of black shoes, please.",
+              "That's all, thank you."
+            ],
+            "correctAnswer": "How much are these trousers?"
+          },
+          {
+            "itemId": "english-a1-m060-reading-ex01-i09",
+            "position": 9,
+            "prompt": "Which English sentence means “Un par de zapatos negros, por favor.”?",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "A pair of black shoes, please.",
+              "That's all, thank you.",
+              "I'm looking for a blue jacket."
+            ],
+            "correctAnswer": "A pair of black shoes, please."
+          },
+          {
+            "itemId": "english-a1-m060-reading-ex01-i10",
+            "position": 10,
+            "prompt": "Which English sentence means “Eso es todo, gracias.”?",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "That's all, thank you.",
+              "I'm looking for a blue jacket.",
+              "How much is this bag?"
+            ],
+            "correctAnswer": "That's all, thank you."
+          }
+        ],
+        "content": {
+          "passageId": "english-a1-m060-reading-passage-01",
+          "passage": "I'm looking for a blue jacket. How much is this bag? I'd like a kilo of apples. Do you have these in medium? The shoes are too expensive. Can I have a receipt, please?"
+        }
+      }
+    },
+    {
+      "sectionId": "english-a1-m060-writing",
+      "sectionKey": "writing",
+      "position": 6,
+      "title": "Writing",
+      "exercise": {
+        "exerciseId": "english-a1-m060-writing-ex01",
+        "type": "dictation",
+        "items": [
+          {
+            "itemId": "english-a1-m060-writing-ex01-i01",
+            "position": 1,
+            "audio": "tts:en-GB:I'm looking for a blue jacket.",
+            "expectedAnswer": "I'm looking for a blue jacket.",
+            "evaluation": {
+              "type": "normalised_text"
+            }
+          },
+          {
+            "itemId": "english-a1-m060-writing-ex01-i02",
+            "position": 2,
+            "audio": "tts:en-GB:How much is this bag?",
+            "expectedAnswer": "How much is this bag?",
+            "evaluation": {
+              "type": "normalised_text"
+            }
+          },
+          {
+            "itemId": "english-a1-m060-writing-ex01-i03",
+            "position": 3,
+            "audio": "tts:en-GB:I'd like a kilo of apples.",
+            "expectedAnswer": "I'd like a kilo of apples.",
+            "evaluation": {
+              "type": "normalised_text"
+            }
+          },
+          {
+            "itemId": "english-a1-m060-writing-ex01-i04",
+            "position": 4,
+            "audio": "tts:en-GB:Do you have these in medium?",
+            "expectedAnswer": "Do you have these in medium?",
+            "evaluation": {
+              "type": "normalised_text"
+            }
+          },
+          {
+            "itemId": "english-a1-m060-writing-ex01-i05",
+            "position": 5,
+            "audio": "tts:en-GB:The shoes are too expensive.",
+            "expectedAnswer": "The shoes are too expensive.",
+            "evaluation": {
+              "type": "normalised_text"
+            }
+          },
+          {
+            "itemId": "english-a1-m060-writing-ex01-i06",
+            "position": 6,
+            "audio": "tts:en-GB:Can I have a receipt, please?",
+            "expectedAnswer": "Can I have a receipt, please?",
+            "evaluation": {
+              "type": "normalised_text"
+            }
+          },
+          {
+            "itemId": "english-a1-m060-writing-ex01-i07",
+            "position": 7,
+            "audio": "tts:en-GB:This shirt is cheap.",
+            "expectedAnswer": "This shirt is cheap.",
+            "evaluation": {
+              "type": "normalised_text"
+            }
+          },
+          {
+            "itemId": "english-a1-m060-writing-ex01-i08",
+            "position": 8,
+            "audio": "tts:en-GB:How much are these trousers?",
+            "expectedAnswer": "How much are these trousers?",
+            "evaluation": {
+              "type": "normalised_text"
+            }
+          },
+          {
+            "itemId": "english-a1-m060-writing-ex01-i09",
+            "position": 9,
+            "audio": "tts:en-GB:A pair of black shoes, please.",
+            "expectedAnswer": "A pair of black shoes, please.",
+            "evaluation": {
+              "type": "normalised_text"
+            }
+          },
+          {
+            "itemId": "english-a1-m060-writing-ex01-i10",
+            "position": 10,
+            "audio": "tts:en-GB:That's all, thank you.",
+            "expectedAnswer": "That's all, thank you.",
+            "evaluation": {
+              "type": "normalised_text"
+            }
+          }
+        ],
+        "writingTask": "Escribe un texto breve de 5–6 frases sobre shopping mission. Utiliza al menos cinco palabras de Exploración y la estructura gramatical de esta misión.",
+        "modelText": "I'm looking for a blue jacket. How much is this bag? I'd like a kilo of apples. Do you have these in medium? The shoes are too expensive. Can I have a receipt, please?"
+      }
+    },
+    {
+      "sectionId": "english-a1-m060-speaking",
+      "sectionKey": "speaking",
+      "position": 7,
+      "title": "Speaking",
+      "exercise": {
+        "exerciseId": "english-a1-m060-speaking-ex01",
+        "type": "speaking_prompts",
+        "items": [
+          {
+            "itemId": "english-a1-m060-speaking-ex01-i01",
+            "position": 1,
+            "prompt": "Say a sentence about this situation: Estoy buscando una chaqueta azul.",
+            "modelAnswer": "I'm looking for a blue jacket.",
+            "evaluation": {
+              "type": "transcription_feedback",
+              "transcriptionSeparateFromPronunciation": true
+            }
+          },
+          {
+            "itemId": "english-a1-m060-speaking-ex01-i02",
+            "position": 2,
+            "prompt": "Say a sentence about this situation: ¿Cuánto cuesta este bolso?",
+            "modelAnswer": "How much is this bag?",
+            "evaluation": {
+              "type": "transcription_feedback",
+              "transcriptionSeparateFromPronunciation": true
+            }
+          },
+          {
+            "itemId": "english-a1-m060-speaking-ex01-i03",
+            "position": 3,
+            "prompt": "Say a sentence about this situation: Quisiera un kilo de manzanas.",
+            "modelAnswer": "I'd like a kilo of apples.",
+            "evaluation": {
+              "type": "transcription_feedback",
+              "transcriptionSeparateFromPronunciation": true
+            }
+          },
+          {
+            "itemId": "english-a1-m060-speaking-ex01-i04",
+            "position": 4,
+            "prompt": "Say a sentence about this situation: ¿Tiene estos en talla mediana?",
+            "modelAnswer": "Do you have these in medium?",
+            "evaluation": {
+              "type": "transcription_feedback",
+              "transcriptionSeparateFromPronunciation": true
+            }
+          },
+          {
+            "itemId": "english-a1-m060-speaking-ex01-i05",
+            "position": 5,
+            "prompt": "Say a sentence about this situation: Los zapatos son demasiado caros.",
+            "modelAnswer": "The shoes are too expensive.",
+            "evaluation": {
+              "type": "transcription_feedback",
+              "transcriptionSeparateFromPronunciation": true
+            }
+          },
+          {
+            "itemId": "english-a1-m060-speaking-ex01-i06",
+            "position": 6,
+            "prompt": "Say a sentence about this situation: ¿Me da un recibo, por favor?",
+            "modelAnswer": "Can I have a receipt, please?",
+            "evaluation": {
+              "type": "transcription_feedback",
+              "transcriptionSeparateFromPronunciation": true
+            }
+          },
+          {
+            "itemId": "english-a1-m060-speaking-ex01-i07",
+            "position": 7,
+            "prompt": "Say a sentence about this situation: Esta camisa es barata.",
+            "modelAnswer": "This shirt is cheap.",
+            "evaluation": {
+              "type": "transcription_feedback",
+              "transcriptionSeparateFromPronunciation": true
+            }
+          },
+          {
+            "itemId": "english-a1-m060-speaking-ex01-i08",
+            "position": 8,
+            "prompt": "Say a sentence about this situation: ¿Cuánto cuestan estos pantalones?",
+            "modelAnswer": "How much are these trousers?",
+            "evaluation": {
+              "type": "transcription_feedback",
+              "transcriptionSeparateFromPronunciation": true
+            }
+          },
+          {
+            "itemId": "english-a1-m060-speaking-ex01-i09",
+            "position": 9,
+            "prompt": "Say a sentence about this situation: Un par de zapatos negros, por favor.",
+            "modelAnswer": "A pair of black shoes, please.",
+            "evaluation": {
+              "type": "transcription_feedback",
+              "transcriptionSeparateFromPronunciation": true
+            }
+          },
+          {
+            "itemId": "english-a1-m060-speaking-ex01-i10",
+            "position": 10,
+            "prompt": "Say a sentence about this situation: Eso es todo, gracias.",
+            "modelAnswer": "That's all, thank you.",
+            "evaluation": {
+              "type": "transcription_feedback",
+              "transcriptionSeparateFromPronunciation": true
+            }
+          }
+        ]
+      }
+    },
+    {
+      "sectionId": "english-a1-m060-listening",
+      "sectionKey": "listening",
+      "position": 8,
+      "title": "Listening",
+      "exercise": {
+        "exerciseId": "english-a1-m060-listening-ex01",
+        "type": "listening_gap_fill",
+        "items": [
+          {
+            "itemId": "english-a1-m060-listening-ex01-i01",
+            "position": 1,
+            "gapToken": "[[gap-01]]",
+            "expectedWordId": "english-a1-m060-listening-word-01"
+          },
+          {
+            "itemId": "english-a1-m060-listening-ex01-i02",
+            "position": 2,
+            "gapToken": "[[gap-02]]",
+            "expectedWordId": "english-a1-m060-listening-word-02"
+          },
+          {
+            "itemId": "english-a1-m060-listening-ex01-i03",
+            "position": 3,
+            "gapToken": "[[gap-03]]",
+            "expectedWordId": "english-a1-m060-listening-word-03"
+          },
+          {
+            "itemId": "english-a1-m060-listening-ex01-i04",
+            "position": 4,
+            "gapToken": "[[gap-04]]",
+            "expectedWordId": "english-a1-m060-listening-word-04"
+          },
+          {
+            "itemId": "english-a1-m060-listening-ex01-i05",
+            "position": 5,
+            "gapToken": "[[gap-05]]",
+            "expectedWordId": "english-a1-m060-listening-word-05"
+          },
+          {
+            "itemId": "english-a1-m060-listening-ex01-i06",
+            "position": 6,
+            "gapToken": "[[gap-06]]",
+            "expectedWordId": "english-a1-m060-listening-word-06"
+          },
+          {
+            "itemId": "english-a1-m060-listening-ex01-i07",
+            "position": 7,
+            "gapToken": "[[gap-07]]",
+            "expectedWordId": "english-a1-m060-listening-word-07"
+          },
+          {
+            "itemId": "english-a1-m060-listening-ex01-i08",
+            "position": 8,
+            "gapToken": "[[gap-08]]",
+            "expectedWordId": "english-a1-m060-listening-word-08"
+          },
+          {
+            "itemId": "english-a1-m060-listening-ex01-i09",
+            "position": 9,
+            "gapToken": "[[gap-09]]",
+            "expectedWordId": "english-a1-m060-listening-word-09"
+          },
+          {
+            "itemId": "english-a1-m060-listening-ex01-i10",
+            "position": 10,
+            "gapToken": "[[gap-10]]",
+            "expectedWordId": "english-a1-m060-listening-word-10"
+          }
+        ],
+        "content": {
+          "audio": "tts:en-GB:The key words for Shopping Mission are: shopping, price, size, cheap, expensive, a kilo of, a pair of, I'd like, How much is...?, receipt. Listen and repeat each word carefully.",
+          "audioLocale": "en-GB",
+          "transcriptTemplate": "The key words for Shopping Mission are: [[gap-01]], [[gap-02]], [[gap-03]], [[gap-04]], [[gap-05]], [[gap-06]], [[gap-07]], [[gap-08]], [[gap-09]], [[gap-10]]. Listen and repeat each word carefully.",
+          "wordBank": [
+            {
+              "wordId": "english-a1-m060-listening-word-01",
+              "word": "shopping"
+            },
+            {
+              "wordId": "english-a1-m060-listening-word-02",
+              "word": "price"
+            },
+            {
+              "wordId": "english-a1-m060-listening-word-03",
+              "word": "size"
+            },
+            {
+              "wordId": "english-a1-m060-listening-word-04",
+              "word": "cheap"
+            },
+            {
+              "wordId": "english-a1-m060-listening-word-05",
+              "word": "expensive"
+            },
+            {
+              "wordId": "english-a1-m060-listening-word-06",
+              "word": "a kilo of"
+            },
+            {
+              "wordId": "english-a1-m060-listening-word-07",
+              "word": "a pair of"
+            },
+            {
+              "wordId": "english-a1-m060-listening-word-08",
+              "word": "I'd like"
+            },
+            {
+              "wordId": "english-a1-m060-listening-word-09",
+              "word": "How much is...?"
+            },
+            {
+              "wordId": "english-a1-m060-listening-word-10",
+              "word": "receipt"
+            }
+          ],
+          "interaction": "select_place_move_replace"
+        }
+      }
+    }
+  ]
+}

@@ -1,0 +1,1206 @@
+{
+  "schemaVersion": "1.2.0",
+  "contentVersion": 1,
+  "course": {
+    "courseId": "english-a1",
+    "level": "A1",
+    "language": "en-GB"
+  },
+  "unit": {
+    "unitId": "english-a1-unit-06",
+    "courseId": "english-a1",
+    "position": 6,
+    "title": "Shopping, clothes and money"
+  },
+  "mission": {
+    "missionId": "english-a1-m051",
+    "unitId": "english-a1-unit-06",
+    "position": 51,
+    "title": "Clothes and Colours"
+  },
+  "sections": [
+    {
+      "sectionId": "english-a1-m051-explore",
+      "sectionKey": "explore",
+      "position": 1,
+      "title": "Exploración",
+      "exercise": {
+        "exerciseId": "english-a1-m051-explore-ex01",
+        "type": "vocabulary_pairs",
+        "items": [
+          {
+            "itemId": "english-a1-m051-explore-ex01-i01",
+            "position": 1,
+            "english": "T-shirt",
+            "spanish": "camiseta",
+            "audio": "tts:en-GB:T-shirt"
+          },
+          {
+            "itemId": "english-a1-m051-explore-ex01-i02",
+            "position": 2,
+            "english": "shirt",
+            "spanish": "camisa",
+            "audio": "tts:en-GB:shirt"
+          },
+          {
+            "itemId": "english-a1-m051-explore-ex01-i03",
+            "position": 3,
+            "english": "trousers",
+            "spanish": "pantalones",
+            "audio": "tts:en-GB:trousers"
+          },
+          {
+            "itemId": "english-a1-m051-explore-ex01-i04",
+            "position": 4,
+            "english": "dress",
+            "spanish": "vestido",
+            "audio": "tts:en-GB:dress"
+          },
+          {
+            "itemId": "english-a1-m051-explore-ex01-i05",
+            "position": 5,
+            "english": "skirt",
+            "spanish": "falda",
+            "audio": "tts:en-GB:skirt"
+          },
+          {
+            "itemId": "english-a1-m051-explore-ex01-i06",
+            "position": 6,
+            "english": "shoes",
+            "spanish": "zapatos",
+            "audio": "tts:en-GB:shoes"
+          },
+          {
+            "itemId": "english-a1-m051-explore-ex01-i07",
+            "position": 7,
+            "english": "coat",
+            "spanish": "abrigo",
+            "audio": "tts:en-GB:coat"
+          },
+          {
+            "itemId": "english-a1-m051-explore-ex01-i08",
+            "position": 8,
+            "english": "jacket",
+            "spanish": "chaqueta",
+            "audio": "tts:en-GB:jacket"
+          },
+          {
+            "itemId": "english-a1-m051-explore-ex01-i09",
+            "position": 9,
+            "english": "red",
+            "spanish": "rojo",
+            "audio": "tts:en-GB:red"
+          },
+          {
+            "itemId": "english-a1-m051-explore-ex01-i10",
+            "position": 10,
+            "english": "blue",
+            "spanish": "azul",
+            "audio": "tts:en-GB:blue"
+          }
+        ],
+        "theory": {
+          "title": "Vocabulary: Clothes and Colours",
+          "explanation": "Aprende y reconoce diez palabras y expresiones de clothes and colours. Relaciona cada forma en inglés con su significado y escucha el modelo británico.",
+          "patterns": [
+            {
+              "label": "Frases útiles",
+              "pattern": "A short phrase + a clear response",
+              "examples": [
+                "The T-shirt is red.",
+                "My shoes are blue.",
+                "I wear a black coat."
+              ]
+            }
+          ],
+          "tip": "Escucha cada palabra, repítela en voz alta y úsala después en una frase propia."
+        }
+      }
+    },
+    {
+      "sectionId": "english-a1-m051-practice",
+      "sectionKey": "practice",
+      "position": 2,
+      "title": "Práctica",
+      "exercise": {
+        "exerciseId": "english-a1-m051-practice-ex01",
+        "type": "mixed_practice",
+        "items": [
+          {
+            "itemId": "english-a1-m051-practice-ex01-i01",
+            "position": 1,
+            "taskType": "translation_multiple_choice",
+            "prompt": "Traduce al español: “The T-shirt is red.”",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "La camiseta es roja.",
+              "Ella tiene un vestido verde.",
+              "Estos pantalones son marrones."
+            ],
+            "correctAnswer": "La camiseta es roja.",
+            "sourceEnglish": "The T-shirt is red."
+          },
+          {
+            "itemId": "english-a1-m051-practice-ex01-i02",
+            "position": 2,
+            "taskType": "translation_multiple_choice",
+            "prompt": "Traduce al español: “My shoes are blue.”",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "Mis zapatos son azules.",
+              "Él lleva una camisa blanca.",
+              "Mi sombrero es gris."
+            ],
+            "correctAnswer": "Mis zapatos son azules.",
+            "sourceEnglish": "My shoes are blue."
+          },
+          {
+            "itemId": "english-a1-m051-practice-ex01-i03",
+            "position": 3,
+            "taskType": "translation_multiple_choice",
+            "prompt": "Traduce al español: “I wear a black coat.”",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "Llevo un abrigo negro.",
+              "La falda es amarilla.",
+              "Me gustan los zapatos rosas."
+            ],
+            "correctAnswer": "Llevo un abrigo negro.",
+            "sourceEnglish": "I wear a black coat."
+          },
+          {
+            "itemId": "english-a1-m051-practice-ex01-i04",
+            "position": 4,
+            "taskType": "translation_multiple_choice",
+            "prompt": "Traduce al español: “She has a green dress.”",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "Ella tiene un vestido verde.",
+              "Estos pantalones son marrones.",
+              "La chaqueta es naranja."
+            ],
+            "correctAnswer": "Ella tiene un vestido verde.",
+            "sourceEnglish": "She has a green dress."
+          },
+          {
+            "itemId": "english-a1-m051-practice-ex01-i05",
+            "position": 5,
+            "taskType": "translation_multiple_choice",
+            "prompt": "Traduce al español: “He wears a white shirt.”",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "Él lleva una camisa blanca.",
+              "Mi sombrero es gris.",
+              "La camiseta es roja."
+            ],
+            "correctAnswer": "Él lleva una camisa blanca.",
+            "sourceEnglish": "He wears a white shirt."
+          },
+          {
+            "itemId": "english-a1-m051-practice-ex01-i06",
+            "position": 6,
+            "taskType": "translation_multiple_choice",
+            "prompt": "Traduce al español: “The skirt is yellow.”",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "La falda es amarilla.",
+              "Me gustan los zapatos rosas.",
+              "Mis zapatos son azules."
+            ],
+            "correctAnswer": "La falda es amarilla.",
+            "sourceEnglish": "The skirt is yellow."
+          },
+          {
+            "itemId": "english-a1-m051-practice-ex01-i07",
+            "position": 7,
+            "taskType": "translation_multiple_choice",
+            "prompt": "Traduce al español: “These trousers are brown.”",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "Estos pantalones son marrones.",
+              "La chaqueta es naranja.",
+              "Llevo un abrigo negro."
+            ],
+            "correctAnswer": "Estos pantalones son marrones.",
+            "sourceEnglish": "These trousers are brown."
+          },
+          {
+            "itemId": "english-a1-m051-practice-ex01-i08",
+            "position": 8,
+            "taskType": "translation_multiple_choice",
+            "prompt": "Traduce al español: “My hat is grey.”",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "Mi sombrero es gris.",
+              "La camiseta es roja.",
+              "Ella tiene un vestido verde."
+            ],
+            "correctAnswer": "Mi sombrero es gris.",
+            "sourceEnglish": "My hat is grey."
+          },
+          {
+            "itemId": "english-a1-m051-practice-ex01-i09",
+            "position": 9,
+            "taskType": "translation_multiple_choice",
+            "prompt": "Traduce al español: “I like pink shoes.”",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "Me gustan los zapatos rosas.",
+              "Mis zapatos son azules.",
+              "Él lleva una camisa blanca."
+            ],
+            "correctAnswer": "Me gustan los zapatos rosas.",
+            "sourceEnglish": "I like pink shoes."
+          },
+          {
+            "itemId": "english-a1-m051-practice-ex01-i10",
+            "position": 10,
+            "taskType": "translation_multiple_choice",
+            "prompt": "Traduce al español: “The jacket is orange.”",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "La chaqueta es naranja.",
+              "Llevo un abrigo negro.",
+              "La falda es amarilla."
+            ],
+            "correctAnswer": "La chaqueta es naranja.",
+            "sourceEnglish": "The jacket is orange."
+          },
+          {
+            "itemId": "english-a1-m051-practice-ex01-i11",
+            "position": 11,
+            "taskType": "listening_translation_multiple_choice",
+            "prompt": "Escucha el inglés y elige su significado.",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "La camiseta es roja.",
+              "Ella tiene un vestido verde.",
+              "Estos pantalones son marrones."
+            ],
+            "correctAnswer": "La camiseta es roja.",
+            "sourceEnglish": "The T-shirt is red."
+          },
+          {
+            "itemId": "english-a1-m051-practice-ex01-i12",
+            "position": 12,
+            "taskType": "listening_translation_multiple_choice",
+            "prompt": "Escucha el inglés y elige su significado.",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "Mis zapatos son azules.",
+              "Él lleva una camisa blanca.",
+              "Mi sombrero es gris."
+            ],
+            "correctAnswer": "Mis zapatos son azules.",
+            "sourceEnglish": "My shoes are blue."
+          },
+          {
+            "itemId": "english-a1-m051-practice-ex01-i13",
+            "position": 13,
+            "taskType": "listening_translation_multiple_choice",
+            "prompt": "Escucha el inglés y elige su significado.",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "Llevo un abrigo negro.",
+              "La falda es amarilla.",
+              "Me gustan los zapatos rosas."
+            ],
+            "correctAnswer": "Llevo un abrigo negro.",
+            "sourceEnglish": "I wear a black coat."
+          },
+          {
+            "itemId": "english-a1-m051-practice-ex01-i14",
+            "position": 14,
+            "taskType": "listening_translation_multiple_choice",
+            "prompt": "Escucha el inglés y elige su significado.",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "Ella tiene un vestido verde.",
+              "Estos pantalones son marrones.",
+              "La chaqueta es naranja."
+            ],
+            "correctAnswer": "Ella tiene un vestido verde.",
+            "sourceEnglish": "She has a green dress."
+          },
+          {
+            "itemId": "english-a1-m051-practice-ex01-i15",
+            "position": 15,
+            "taskType": "listening_translation_multiple_choice",
+            "prompt": "Escucha el inglés y elige su significado.",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "Él lleva una camisa blanca.",
+              "Mi sombrero es gris.",
+              "La camiseta es roja."
+            ],
+            "correctAnswer": "Él lleva una camisa blanca.",
+            "sourceEnglish": "He wears a white shirt."
+          },
+          {
+            "itemId": "english-a1-m051-practice-ex01-i16",
+            "position": 16,
+            "taskType": "listening_translation_multiple_choice",
+            "prompt": "Escucha el inglés y elige su significado.",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "La falda es amarilla.",
+              "Me gustan los zapatos rosas.",
+              "Mis zapatos son azules."
+            ],
+            "correctAnswer": "La falda es amarilla.",
+            "sourceEnglish": "The skirt is yellow."
+          },
+          {
+            "itemId": "english-a1-m051-practice-ex01-i17",
+            "position": 17,
+            "taskType": "listening_translation_multiple_choice",
+            "prompt": "Escucha el inglés y elige su significado.",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "Estos pantalones son marrones.",
+              "La chaqueta es naranja.",
+              "Llevo un abrigo negro."
+            ],
+            "correctAnswer": "Estos pantalones son marrones.",
+            "sourceEnglish": "These trousers are brown."
+          },
+          {
+            "itemId": "english-a1-m051-practice-ex01-i18",
+            "position": 18,
+            "taskType": "listening_translation_multiple_choice",
+            "prompt": "Escucha el inglés y elige su significado.",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "Mi sombrero es gris.",
+              "La camiseta es roja.",
+              "Ella tiene un vestido verde."
+            ],
+            "correctAnswer": "Mi sombrero es gris.",
+            "sourceEnglish": "My hat is grey."
+          },
+          {
+            "itemId": "english-a1-m051-practice-ex01-i19",
+            "position": 19,
+            "taskType": "listening_translation_multiple_choice",
+            "prompt": "Escucha el inglés y elige su significado.",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "Me gustan los zapatos rosas.",
+              "Mis zapatos son azules.",
+              "Él lleva una camisa blanca."
+            ],
+            "correctAnswer": "Me gustan los zapatos rosas.",
+            "sourceEnglish": "I like pink shoes."
+          },
+          {
+            "itemId": "english-a1-m051-practice-ex01-i20",
+            "position": 20,
+            "taskType": "listening_translation_multiple_choice",
+            "prompt": "Escucha el inglés y elige su significado.",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "La chaqueta es naranja.",
+              "Llevo un abrigo negro.",
+              "La falda es amarilla."
+            ],
+            "correctAnswer": "La chaqueta es naranja.",
+            "sourceEnglish": "The jacket is orange."
+          }
+        ]
+      }
+    },
+    {
+      "sectionId": "english-a1-m051-grammar",
+      "sectionKey": "grammar",
+      "position": 3,
+      "title": "Gramática",
+      "exercise": {
+        "exerciseId": "english-a1-m051-grammar-ex01",
+        "type": "grammar",
+        "items": [
+          {
+            "itemId": "english-a1-m051-grammar-ex01-i01",
+            "position": 1,
+            "prompt": "The T-shirt ___ red.",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "is",
+              "are",
+              "am"
+            ],
+            "correctAnswer": "is"
+          },
+          {
+            "itemId": "english-a1-m051-grammar-ex01-i02",
+            "position": 2,
+            "prompt": "My shoes ___ blue.",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "is",
+              "are",
+              "am"
+            ],
+            "correctAnswer": "are"
+          },
+          {
+            "itemId": "english-a1-m051-grammar-ex01-i03",
+            "position": 3,
+            "prompt": "I ___ wearing a coat.",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "am",
+              "is",
+              "are"
+            ],
+            "correctAnswer": "am"
+          },
+          {
+            "itemId": "english-a1-m051-grammar-ex01-i04",
+            "position": 4,
+            "prompt": "The trousers ___ black.",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "is",
+              "are",
+              "am"
+            ],
+            "correctAnswer": "are"
+          },
+          {
+            "itemId": "english-a1-m051-grammar-ex01-i05",
+            "position": 5,
+            "prompt": "She ___ happy with her dress.",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "is",
+              "are",
+              "am"
+            ],
+            "correctAnswer": "is"
+          },
+          {
+            "itemId": "english-a1-m051-grammar-ex01-i06",
+            "position": 6,
+            "prompt": "We ___ in the clothes shop.",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "are",
+              "is",
+              "am"
+            ],
+            "correctAnswer": "are"
+          },
+          {
+            "itemId": "english-a1-m051-grammar-ex01-i07",
+            "position": 7,
+            "prompt": "This jacket ___ green.",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "is",
+              "are",
+              "am"
+            ],
+            "correctAnswer": "is"
+          },
+          {
+            "itemId": "english-a1-m051-grammar-ex01-i08",
+            "position": 8,
+            "prompt": "You ___ right.",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "are",
+              "is",
+              "am"
+            ],
+            "correctAnswer": "are"
+          },
+          {
+            "itemId": "english-a1-m051-grammar-ex01-i09",
+            "position": 9,
+            "prompt": "The socks ___ white.",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "is",
+              "are",
+              "am"
+            ],
+            "correctAnswer": "are"
+          },
+          {
+            "itemId": "english-a1-m051-grammar-ex01-i10",
+            "position": 10,
+            "prompt": "It ___ a blue shirt.",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "is",
+              "are",
+              "am"
+            ],
+            "correctAnswer": "is"
+          }
+        ],
+        "theory": {
+          "title": "Be + adjectives for clothes and colours",
+          "explanation": "Usamos am, is y are para describir personas y objetos. El adjetivo de color va después de be: The T-shirt is red. Con plurales usamos are: The shoes are blue.",
+          "patterns": [
+            {
+              "label": "Estructura",
+              "pattern": "The T-shirt is red.",
+              "examples": [
+                "The T-shirt is red.",
+                "My shoes are blue.",
+                "The jacket is black."
+              ]
+            }
+          ],
+          "tip": "I am; he/she/it is; you/we/they are."
+        }
+      }
+    },
+    {
+      "sectionId": "english-a1-m051-pronunciation",
+      "sectionKey": "pronunciation",
+      "position": 4,
+      "title": "Pronunciación",
+      "exercise": {
+        "exerciseId": "english-a1-m051-pronunciation-ex01",
+        "type": "pronunciation_cards",
+        "items": [
+          {
+            "itemId": "english-a1-m051-pronunciation-ex01-i01",
+            "position": 1,
+            "word": "T-shirt",
+            "translation": "camiseta",
+            "pronunciationGuide": "Listen to the British English model and keep the final consonant clear.",
+            "audio": "tts:en-GB:T-shirt"
+          },
+          {
+            "itemId": "english-a1-m051-pronunciation-ex01-i02",
+            "position": 2,
+            "word": "shirt",
+            "translation": "camisa",
+            "pronunciationGuide": "Listen to the British English model and keep the final consonant clear.",
+            "audio": "tts:en-GB:shirt"
+          },
+          {
+            "itemId": "english-a1-m051-pronunciation-ex01-i03",
+            "position": 3,
+            "word": "trousers",
+            "translation": "pantalones",
+            "pronunciationGuide": "Listen to the British English model and keep the final consonant clear.",
+            "audio": "tts:en-GB:trousers"
+          },
+          {
+            "itemId": "english-a1-m051-pronunciation-ex01-i04",
+            "position": 4,
+            "word": "dress",
+            "translation": "vestido",
+            "pronunciationGuide": "Listen to the British English model and keep the final consonant clear.",
+            "audio": "tts:en-GB:dress"
+          },
+          {
+            "itemId": "english-a1-m051-pronunciation-ex01-i05",
+            "position": 5,
+            "word": "skirt",
+            "translation": "falda",
+            "pronunciationGuide": "Listen to the British English model and keep the final consonant clear.",
+            "audio": "tts:en-GB:skirt"
+          },
+          {
+            "itemId": "english-a1-m051-pronunciation-ex01-i06",
+            "position": 6,
+            "word": "shoes",
+            "translation": "zapatos",
+            "pronunciationGuide": "Listen to the British English model and keep the final consonant clear.",
+            "audio": "tts:en-GB:shoes"
+          },
+          {
+            "itemId": "english-a1-m051-pronunciation-ex01-i07",
+            "position": 7,
+            "word": "coat",
+            "translation": "abrigo",
+            "pronunciationGuide": "Listen to the British English model and keep the final consonant clear.",
+            "audio": "tts:en-GB:coat"
+          },
+          {
+            "itemId": "english-a1-m051-pronunciation-ex01-i08",
+            "position": 8,
+            "word": "jacket",
+            "translation": "chaqueta",
+            "pronunciationGuide": "Listen to the British English model and keep the final consonant clear.",
+            "audio": "tts:en-GB:jacket"
+          },
+          {
+            "itemId": "english-a1-m051-pronunciation-ex01-i09",
+            "position": 9,
+            "word": "red",
+            "translation": "rojo",
+            "pronunciationGuide": "Listen to the British English model and keep the final consonant clear.",
+            "audio": "tts:en-GB:red"
+          },
+          {
+            "itemId": "english-a1-m051-pronunciation-ex01-i10",
+            "position": 10,
+            "word": "blue",
+            "translation": "azul",
+            "pronunciationGuide": "Listen to the British English model and keep the final consonant clear.",
+            "audio": "tts:en-GB:blue"
+          }
+        ],
+        "focus": "Practica el ritmo y el acento de las palabras clave de Clothes and Colours."
+      }
+    },
+    {
+      "sectionId": "english-a1-m051-reading",
+      "sectionKey": "reading",
+      "position": 5,
+      "title": "Reading",
+      "exercise": {
+        "exerciseId": "english-a1-m051-reading-ex01",
+        "type": "reading_comprehension",
+        "items": [
+          {
+            "itemId": "english-a1-m051-reading-ex01-i01",
+            "position": 1,
+            "prompt": "Which English sentence means “La camiseta es roja.”?",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "The T-shirt is red.",
+              "My shoes are blue.",
+              "I wear a black coat."
+            ],
+            "correctAnswer": "The T-shirt is red."
+          },
+          {
+            "itemId": "english-a1-m051-reading-ex01-i02",
+            "position": 2,
+            "prompt": "Which English sentence means “Mis zapatos son azules.”?",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "My shoes are blue.",
+              "I wear a black coat.",
+              "She has a green dress."
+            ],
+            "correctAnswer": "My shoes are blue."
+          },
+          {
+            "itemId": "english-a1-m051-reading-ex01-i03",
+            "position": 3,
+            "prompt": "Which English sentence means “Llevo un abrigo negro.”?",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "I wear a black coat.",
+              "She has a green dress.",
+              "He wears a white shirt."
+            ],
+            "correctAnswer": "I wear a black coat."
+          },
+          {
+            "itemId": "english-a1-m051-reading-ex01-i04",
+            "position": 4,
+            "prompt": "Which English sentence means “Ella tiene un vestido verde.”?",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "She has a green dress.",
+              "He wears a white shirt.",
+              "The skirt is yellow."
+            ],
+            "correctAnswer": "She has a green dress."
+          },
+          {
+            "itemId": "english-a1-m051-reading-ex01-i05",
+            "position": 5,
+            "prompt": "Which English sentence means “Él lleva una camisa blanca.”?",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "He wears a white shirt.",
+              "The skirt is yellow.",
+              "These trousers are brown."
+            ],
+            "correctAnswer": "He wears a white shirt."
+          },
+          {
+            "itemId": "english-a1-m051-reading-ex01-i06",
+            "position": 6,
+            "prompt": "Which English sentence means “La falda es amarilla.”?",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "The skirt is yellow.",
+              "These trousers are brown.",
+              "My hat is grey."
+            ],
+            "correctAnswer": "The skirt is yellow."
+          },
+          {
+            "itemId": "english-a1-m051-reading-ex01-i07",
+            "position": 7,
+            "prompt": "Which English sentence means “Estos pantalones son marrones.”?",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "These trousers are brown.",
+              "My hat is grey.",
+              "I like pink shoes."
+            ],
+            "correctAnswer": "These trousers are brown."
+          },
+          {
+            "itemId": "english-a1-m051-reading-ex01-i08",
+            "position": 8,
+            "prompt": "Which English sentence means “Mi sombrero es gris.”?",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "My hat is grey.",
+              "I like pink shoes.",
+              "The jacket is orange."
+            ],
+            "correctAnswer": "My hat is grey."
+          },
+          {
+            "itemId": "english-a1-m051-reading-ex01-i09",
+            "position": 9,
+            "prompt": "Which English sentence means “Me gustan los zapatos rosas.”?",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "I like pink shoes.",
+              "The jacket is orange.",
+              "The T-shirt is red."
+            ],
+            "correctAnswer": "I like pink shoes."
+          },
+          {
+            "itemId": "english-a1-m051-reading-ex01-i10",
+            "position": 10,
+            "prompt": "Which English sentence means “La chaqueta es naranja.”?",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "The jacket is orange.",
+              "The T-shirt is red.",
+              "My shoes are blue."
+            ],
+            "correctAnswer": "The jacket is orange."
+          }
+        ],
+        "content": {
+          "passageId": "english-a1-m051-reading-passage-01",
+          "passage": "The T-shirt is red. My shoes are blue. I wear a black coat. She has a green dress. He wears a white shirt. The skirt is yellow."
+        }
+      }
+    },
+    {
+      "sectionId": "english-a1-m051-writing",
+      "sectionKey": "writing",
+      "position": 6,
+      "title": "Writing",
+      "exercise": {
+        "exerciseId": "english-a1-m051-writing-ex01",
+        "type": "dictation",
+        "items": [
+          {
+            "itemId": "english-a1-m051-writing-ex01-i01",
+            "position": 1,
+            "audio": "tts:en-GB:The T-shirt is red.",
+            "expectedAnswer": "The T-shirt is red.",
+            "evaluation": {
+              "type": "normalised_text"
+            }
+          },
+          {
+            "itemId": "english-a1-m051-writing-ex01-i02",
+            "position": 2,
+            "audio": "tts:en-GB:My shoes are blue.",
+            "expectedAnswer": "My shoes are blue.",
+            "evaluation": {
+              "type": "normalised_text"
+            }
+          },
+          {
+            "itemId": "english-a1-m051-writing-ex01-i03",
+            "position": 3,
+            "audio": "tts:en-GB:I wear a black coat.",
+            "expectedAnswer": "I wear a black coat.",
+            "evaluation": {
+              "type": "normalised_text"
+            }
+          },
+          {
+            "itemId": "english-a1-m051-writing-ex01-i04",
+            "position": 4,
+            "audio": "tts:en-GB:She has a green dress.",
+            "expectedAnswer": "She has a green dress.",
+            "evaluation": {
+              "type": "normalised_text"
+            }
+          },
+          {
+            "itemId": "english-a1-m051-writing-ex01-i05",
+            "position": 5,
+            "audio": "tts:en-GB:He wears a white shirt.",
+            "expectedAnswer": "He wears a white shirt.",
+            "evaluation": {
+              "type": "normalised_text"
+            }
+          },
+          {
+            "itemId": "english-a1-m051-writing-ex01-i06",
+            "position": 6,
+            "audio": "tts:en-GB:The skirt is yellow.",
+            "expectedAnswer": "The skirt is yellow.",
+            "evaluation": {
+              "type": "normalised_text"
+            }
+          },
+          {
+            "itemId": "english-a1-m051-writing-ex01-i07",
+            "position": 7,
+            "audio": "tts:en-GB:These trousers are brown.",
+            "expectedAnswer": "These trousers are brown.",
+            "evaluation": {
+              "type": "normalised_text"
+            }
+          },
+          {
+            "itemId": "english-a1-m051-writing-ex01-i08",
+            "position": 8,
+            "audio": "tts:en-GB:My hat is grey.",
+            "expectedAnswer": "My hat is grey.",
+            "evaluation": {
+              "type": "normalised_text"
+            }
+          },
+          {
+            "itemId": "english-a1-m051-writing-ex01-i09",
+            "position": 9,
+            "audio": "tts:en-GB:I like pink shoes.",
+            "expectedAnswer": "I like pink shoes.",
+            "evaluation": {
+              "type": "normalised_text"
+            }
+          },
+          {
+            "itemId": "english-a1-m051-writing-ex01-i10",
+            "position": 10,
+            "audio": "tts:en-GB:The jacket is orange.",
+            "expectedAnswer": "The jacket is orange.",
+            "evaluation": {
+              "type": "normalised_text"
+            }
+          }
+        ],
+        "writingTask": "Escribe un texto breve de 5–6 frases sobre clothes and colours. Utiliza al menos cinco palabras de Exploración y la estructura gramatical de esta misión.",
+        "modelText": "The T-shirt is red. My shoes are blue. I wear a black coat. She has a green dress. He wears a white shirt. The skirt is yellow."
+      }
+    },
+    {
+      "sectionId": "english-a1-m051-speaking",
+      "sectionKey": "speaking",
+      "position": 7,
+      "title": "Speaking",
+      "exercise": {
+        "exerciseId": "english-a1-m051-speaking-ex01",
+        "type": "speaking_prompts",
+        "items": [
+          {
+            "itemId": "english-a1-m051-speaking-ex01-i01",
+            "position": 1,
+            "prompt": "Say a sentence about this situation: La camiseta es roja.",
+            "modelAnswer": "The T-shirt is red.",
+            "evaluation": {
+              "type": "transcription_feedback",
+              "transcriptionSeparateFromPronunciation": true
+            }
+          },
+          {
+            "itemId": "english-a1-m051-speaking-ex01-i02",
+            "position": 2,
+            "prompt": "Say a sentence about this situation: Mis zapatos son azules.",
+            "modelAnswer": "My shoes are blue.",
+            "evaluation": {
+              "type": "transcription_feedback",
+              "transcriptionSeparateFromPronunciation": true
+            }
+          },
+          {
+            "itemId": "english-a1-m051-speaking-ex01-i03",
+            "position": 3,
+            "prompt": "Say a sentence about this situation: Llevo un abrigo negro.",
+            "modelAnswer": "I wear a black coat.",
+            "evaluation": {
+              "type": "transcription_feedback",
+              "transcriptionSeparateFromPronunciation": true
+            }
+          },
+          {
+            "itemId": "english-a1-m051-speaking-ex01-i04",
+            "position": 4,
+            "prompt": "Say a sentence about this situation: Ella tiene un vestido verde.",
+            "modelAnswer": "She has a green dress.",
+            "evaluation": {
+              "type": "transcription_feedback",
+              "transcriptionSeparateFromPronunciation": true
+            }
+          },
+          {
+            "itemId": "english-a1-m051-speaking-ex01-i05",
+            "position": 5,
+            "prompt": "Say a sentence about this situation: Él lleva una camisa blanca.",
+            "modelAnswer": "He wears a white shirt.",
+            "evaluation": {
+              "type": "transcription_feedback",
+              "transcriptionSeparateFromPronunciation": true
+            }
+          },
+          {
+            "itemId": "english-a1-m051-speaking-ex01-i06",
+            "position": 6,
+            "prompt": "Say a sentence about this situation: La falda es amarilla.",
+            "modelAnswer": "The skirt is yellow.",
+            "evaluation": {
+              "type": "transcription_feedback",
+              "transcriptionSeparateFromPronunciation": true
+            }
+          },
+          {
+            "itemId": "english-a1-m051-speaking-ex01-i07",
+            "position": 7,
+            "prompt": "Say a sentence about this situation: Estos pantalones son marrones.",
+            "modelAnswer": "These trousers are brown.",
+            "evaluation": {
+              "type": "transcription_feedback",
+              "transcriptionSeparateFromPronunciation": true
+            }
+          },
+          {
+            "itemId": "english-a1-m051-speaking-ex01-i08",
+            "position": 8,
+            "prompt": "Say a sentence about this situation: Mi sombrero es gris.",
+            "modelAnswer": "My hat is grey.",
+            "evaluation": {
+              "type": "transcription_feedback",
+              "transcriptionSeparateFromPronunciation": true
+            }
+          },
+          {
+            "itemId": "english-a1-m051-speaking-ex01-i09",
+            "position": 9,
+            "prompt": "Say a sentence about this situation: Me gustan los zapatos rosas.",
+            "modelAnswer": "I like pink shoes.",
+            "evaluation": {
+              "type": "transcription_feedback",
+              "transcriptionSeparateFromPronunciation": true
+            }
+          },
+          {
+            "itemId": "english-a1-m051-speaking-ex01-i10",
+            "position": 10,
+            "prompt": "Say a sentence about this situation: La chaqueta es naranja.",
+            "modelAnswer": "The jacket is orange.",
+            "evaluation": {
+              "type": "transcription_feedback",
+              "transcriptionSeparateFromPronunciation": true
+            }
+          }
+        ]
+      }
+    },
+    {
+      "sectionId": "english-a1-m051-listening",
+      "sectionKey": "listening",
+      "position": 8,
+      "title": "Listening",
+      "exercise": {
+        "exerciseId": "english-a1-m051-listening-ex01",
+        "type": "listening_gap_fill",
+        "items": [
+          {
+            "itemId": "english-a1-m051-listening-ex01-i01",
+            "position": 1,
+            "gapToken": "[[gap-01]]",
+            "expectedWordId": "english-a1-m051-listening-word-01"
+          },
+          {
+            "itemId": "english-a1-m051-listening-ex01-i02",
+            "position": 2,
+            "gapToken": "[[gap-02]]",
+            "expectedWordId": "english-a1-m051-listening-word-02"
+          },
+          {
+            "itemId": "english-a1-m051-listening-ex01-i03",
+            "position": 3,
+            "gapToken": "[[gap-03]]",
+            "expectedWordId": "english-a1-m051-listening-word-03"
+          },
+          {
+            "itemId": "english-a1-m051-listening-ex01-i04",
+            "position": 4,
+            "gapToken": "[[gap-04]]",
+            "expectedWordId": "english-a1-m051-listening-word-04"
+          },
+          {
+            "itemId": "english-a1-m051-listening-ex01-i05",
+            "position": 5,
+            "gapToken": "[[gap-05]]",
+            "expectedWordId": "english-a1-m051-listening-word-05"
+          },
+          {
+            "itemId": "english-a1-m051-listening-ex01-i06",
+            "position": 6,
+            "gapToken": "[[gap-06]]",
+            "expectedWordId": "english-a1-m051-listening-word-06"
+          },
+          {
+            "itemId": "english-a1-m051-listening-ex01-i07",
+            "position": 7,
+            "gapToken": "[[gap-07]]",
+            "expectedWordId": "english-a1-m051-listening-word-07"
+          },
+          {
+            "itemId": "english-a1-m051-listening-ex01-i08",
+            "position": 8,
+            "gapToken": "[[gap-08]]",
+            "expectedWordId": "english-a1-m051-listening-word-08"
+          },
+          {
+            "itemId": "english-a1-m051-listening-ex01-i09",
+            "position": 9,
+            "gapToken": "[[gap-09]]",
+            "expectedWordId": "english-a1-m051-listening-word-09"
+          },
+          {
+            "itemId": "english-a1-m051-listening-ex01-i10",
+            "position": 10,
+            "gapToken": "[[gap-10]]",
+            "expectedWordId": "english-a1-m051-listening-word-10"
+          }
+        ],
+        "content": {
+          "audio": "tts:en-GB:The key words for Clothes and Colours are: T-shirt, shirt, trousers, dress, skirt, shoes, coat, jacket, red, blue. Listen and repeat each word carefully.",
+          "audioLocale": "en-GB",
+          "transcriptTemplate": "The key words for Clothes and Colours are: [[gap-01]], [[gap-02]], [[gap-03]], [[gap-04]], [[gap-05]], [[gap-06]], [[gap-07]], [[gap-08]], [[gap-09]], [[gap-10]]. Listen and repeat each word carefully.",
+          "wordBank": [
+            {
+              "wordId": "english-a1-m051-listening-word-01",
+              "word": "T-shirt"
+            },
+            {
+              "wordId": "english-a1-m051-listening-word-02",
+              "word": "shirt"
+            },
+            {
+              "wordId": "english-a1-m051-listening-word-03",
+              "word": "trousers"
+            },
+            {
+              "wordId": "english-a1-m051-listening-word-04",
+              "word": "dress"
+            },
+            {
+              "wordId": "english-a1-m051-listening-word-05",
+              "word": "skirt"
+            },
+            {
+              "wordId": "english-a1-m051-listening-word-06",
+              "word": "shoes"
+            },
+            {
+              "wordId": "english-a1-m051-listening-word-07",
+              "word": "coat"
+            },
+            {
+              "wordId": "english-a1-m051-listening-word-08",
+              "word": "jacket"
+            },
+            {
+              "wordId": "english-a1-m051-listening-word-09",
+              "word": "red"
+            },
+            {
+              "wordId": "english-a1-m051-listening-word-10",
+              "word": "blue"
+            }
+          ],
+          "interaction": "select_place_move_replace"
+        }
+      }
+    }
+  ]
+}

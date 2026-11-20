@@ -1,0 +1,1206 @@
+{
+  "schemaVersion": "1.2.0",
+  "contentVersion": 1,
+  "course": {
+    "courseId": "english-a1",
+    "level": "A1",
+    "language": "en-GB"
+  },
+  "unit": {
+    "unitId": "english-a1-unit-06",
+    "courseId": "english-a1",
+    "position": 6,
+    "title": "Shopping, clothes and money"
+  },
+  "mission": {
+    "missionId": "english-a1-m057",
+    "unitId": "english-a1-unit-06",
+    "position": 57,
+    "title": "Everyday Objects"
+  },
+  "sections": [
+    {
+      "sectionId": "english-a1-m057-explore",
+      "sectionKey": "explore",
+      "position": 1,
+      "title": "Exploración",
+      "exercise": {
+        "exerciseId": "english-a1-m057-explore-ex01",
+        "type": "vocabulary_pairs",
+        "items": [
+          {
+            "itemId": "english-a1-m057-explore-ex01-i01",
+            "position": 1,
+            "english": "wallet",
+            "spanish": "cartera",
+            "audio": "tts:en-GB:wallet"
+          },
+          {
+            "itemId": "english-a1-m057-explore-ex01-i02",
+            "position": 2,
+            "english": "keys",
+            "spanish": "llaves",
+            "audio": "tts:en-GB:keys"
+          },
+          {
+            "itemId": "english-a1-m057-explore-ex01-i03",
+            "position": 3,
+            "english": "bag",
+            "spanish": "bolso",
+            "audio": "tts:en-GB:bag"
+          },
+          {
+            "itemId": "english-a1-m057-explore-ex01-i04",
+            "position": 4,
+            "english": "phone",
+            "spanish": "teléfono",
+            "audio": "tts:en-GB:phone"
+          },
+          {
+            "itemId": "english-a1-m057-explore-ex01-i05",
+            "position": 5,
+            "english": "watch",
+            "spanish": "reloj",
+            "audio": "tts:en-GB:watch"
+          },
+          {
+            "itemId": "english-a1-m057-explore-ex01-i06",
+            "position": 6,
+            "english": "glasses",
+            "spanish": "gafas",
+            "audio": "tts:en-GB:glasses"
+          },
+          {
+            "itemId": "english-a1-m057-explore-ex01-i07",
+            "position": 7,
+            "english": "umbrella",
+            "spanish": "paraguas",
+            "audio": "tts:en-GB:umbrella"
+          },
+          {
+            "itemId": "english-a1-m057-explore-ex01-i08",
+            "position": 8,
+            "english": "purse",
+            "spanish": "monedero",
+            "audio": "tts:en-GB:purse"
+          },
+          {
+            "itemId": "english-a1-m057-explore-ex01-i09",
+            "position": 9,
+            "english": "my",
+            "spanish": "mi",
+            "audio": "tts:en-GB:my"
+          },
+          {
+            "itemId": "english-a1-m057-explore-ex01-i10",
+            "position": 10,
+            "english": "his",
+            "spanish": "su (de él)",
+            "audio": "tts:en-GB:his"
+          }
+        ],
+        "theory": {
+          "title": "Vocabulary: Everyday Objects",
+          "explanation": "Aprende y reconoce diez palabras y expresiones de everyday objects. Relaciona cada forma en inglés con su significado y escucha el modelo británico.",
+          "patterns": [
+            {
+              "label": "Frases útiles",
+              "pattern": "A short phrase + a clear response",
+              "examples": [
+                "My keys are in my bag.",
+                "I have my phone.",
+                "This is her watch."
+              ]
+            }
+          ],
+          "tip": "Escucha cada palabra, repítela en voz alta y úsala después en una frase propia."
+        }
+      }
+    },
+    {
+      "sectionId": "english-a1-m057-practice",
+      "sectionKey": "practice",
+      "position": 2,
+      "title": "Práctica",
+      "exercise": {
+        "exerciseId": "english-a1-m057-practice-ex01",
+        "type": "mixed_practice",
+        "items": [
+          {
+            "itemId": "english-a1-m057-practice-ex01-i01",
+            "position": 1,
+            "taskType": "translation_multiple_choice",
+            "prompt": "Traduce al español: “My keys are in my bag.”",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "Mis llaves están en mi bolso.",
+              "Su cartera es negra.",
+              "Mi monedero es pequeño."
+            ],
+            "correctAnswer": "Mis llaves están en mi bolso.",
+            "sourceEnglish": "My keys are in my bag."
+          },
+          {
+            "itemId": "english-a1-m057-practice-ex01-i02",
+            "position": 2,
+            "taskType": "translation_multiple_choice",
+            "prompt": "Traduce al español: “I have my phone.”",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "Tengo mi teléfono.",
+              "No encuentro mis gafas.",
+              "Estas son mis llaves."
+            ],
+            "correctAnswer": "Tengo mi teléfono.",
+            "sourceEnglish": "I have my phone."
+          },
+          {
+            "itemId": "english-a1-m057-practice-ex01-i03",
+            "position": 3,
+            "taskType": "translation_multiple_choice",
+            "prompt": "Traduce al español: “This is her watch.”",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "Este es su reloj.",
+              "¿Dónde está tu paraguas?",
+              "El teléfono está sobre la mesa."
+            ],
+            "correctAnswer": "Este es su reloj.",
+            "sourceEnglish": "This is her watch."
+          },
+          {
+            "itemId": "english-a1-m057-practice-ex01-i04",
+            "position": 4,
+            "taskType": "translation_multiple_choice",
+            "prompt": "Traduce al español: “His wallet is black.”",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "Su cartera es negra.",
+              "Mi monedero es pequeño.",
+              "Su bolso es azul."
+            ],
+            "correctAnswer": "Su cartera es negra.",
+            "sourceEnglish": "His wallet is black."
+          },
+          {
+            "itemId": "english-a1-m057-practice-ex01-i05",
+            "position": 5,
+            "taskType": "translation_multiple_choice",
+            "prompt": "Traduce al español: “I can't find my glasses.”",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "No encuentro mis gafas.",
+              "Estas son mis llaves.",
+              "Mis llaves están en mi bolso."
+            ],
+            "correctAnswer": "No encuentro mis gafas.",
+            "sourceEnglish": "I can't find my glasses."
+          },
+          {
+            "itemId": "english-a1-m057-practice-ex01-i06",
+            "position": 6,
+            "taskType": "translation_multiple_choice",
+            "prompt": "Traduce al español: “Where is your umbrella?”",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "¿Dónde está tu paraguas?",
+              "El teléfono está sobre la mesa.",
+              "Tengo mi teléfono."
+            ],
+            "correctAnswer": "¿Dónde está tu paraguas?",
+            "sourceEnglish": "Where is your umbrella?"
+          },
+          {
+            "itemId": "english-a1-m057-practice-ex01-i07",
+            "position": 7,
+            "taskType": "translation_multiple_choice",
+            "prompt": "Traduce al español: “My purse is small.”",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "Mi monedero es pequeño.",
+              "Su bolso es azul.",
+              "Este es su reloj."
+            ],
+            "correctAnswer": "Mi monedero es pequeño.",
+            "sourceEnglish": "My purse is small."
+          },
+          {
+            "itemId": "english-a1-m057-practice-ex01-i08",
+            "position": 8,
+            "taskType": "translation_multiple_choice",
+            "prompt": "Traduce al español: “These are my keys.”",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "Estas son mis llaves.",
+              "Mis llaves están en mi bolso.",
+              "Su cartera es negra."
+            ],
+            "correctAnswer": "Estas son mis llaves.",
+            "sourceEnglish": "These are my keys."
+          },
+          {
+            "itemId": "english-a1-m057-practice-ex01-i09",
+            "position": 9,
+            "taskType": "translation_multiple_choice",
+            "prompt": "Traduce al español: “The phone is on the table.”",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "El teléfono está sobre la mesa.",
+              "Tengo mi teléfono.",
+              "No encuentro mis gafas."
+            ],
+            "correctAnswer": "El teléfono está sobre la mesa.",
+            "sourceEnglish": "The phone is on the table."
+          },
+          {
+            "itemId": "english-a1-m057-practice-ex01-i10",
+            "position": 10,
+            "taskType": "translation_multiple_choice",
+            "prompt": "Traduce al español: “Her bag is blue.”",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "Su bolso es azul.",
+              "Este es su reloj.",
+              "¿Dónde está tu paraguas?"
+            ],
+            "correctAnswer": "Su bolso es azul.",
+            "sourceEnglish": "Her bag is blue."
+          },
+          {
+            "itemId": "english-a1-m057-practice-ex01-i11",
+            "position": 11,
+            "taskType": "listening_translation_multiple_choice",
+            "prompt": "Escucha el inglés y elige su significado.",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "Mis llaves están en mi bolso.",
+              "Su cartera es negra.",
+              "Mi monedero es pequeño."
+            ],
+            "correctAnswer": "Mis llaves están en mi bolso.",
+            "sourceEnglish": "My keys are in my bag."
+          },
+          {
+            "itemId": "english-a1-m057-practice-ex01-i12",
+            "position": 12,
+            "taskType": "listening_translation_multiple_choice",
+            "prompt": "Escucha el inglés y elige su significado.",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "Tengo mi teléfono.",
+              "No encuentro mis gafas.",
+              "Estas son mis llaves."
+            ],
+            "correctAnswer": "Tengo mi teléfono.",
+            "sourceEnglish": "I have my phone."
+          },
+          {
+            "itemId": "english-a1-m057-practice-ex01-i13",
+            "position": 13,
+            "taskType": "listening_translation_multiple_choice",
+            "prompt": "Escucha el inglés y elige su significado.",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "Este es su reloj.",
+              "¿Dónde está tu paraguas?",
+              "El teléfono está sobre la mesa."
+            ],
+            "correctAnswer": "Este es su reloj.",
+            "sourceEnglish": "This is her watch."
+          },
+          {
+            "itemId": "english-a1-m057-practice-ex01-i14",
+            "position": 14,
+            "taskType": "listening_translation_multiple_choice",
+            "prompt": "Escucha el inglés y elige su significado.",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "Su cartera es negra.",
+              "Mi monedero es pequeño.",
+              "Su bolso es azul."
+            ],
+            "correctAnswer": "Su cartera es negra.",
+            "sourceEnglish": "His wallet is black."
+          },
+          {
+            "itemId": "english-a1-m057-practice-ex01-i15",
+            "position": 15,
+            "taskType": "listening_translation_multiple_choice",
+            "prompt": "Escucha el inglés y elige su significado.",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "No encuentro mis gafas.",
+              "Estas son mis llaves.",
+              "Mis llaves están en mi bolso."
+            ],
+            "correctAnswer": "No encuentro mis gafas.",
+            "sourceEnglish": "I can't find my glasses."
+          },
+          {
+            "itemId": "english-a1-m057-practice-ex01-i16",
+            "position": 16,
+            "taskType": "listening_translation_multiple_choice",
+            "prompt": "Escucha el inglés y elige su significado.",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "¿Dónde está tu paraguas?",
+              "El teléfono está sobre la mesa.",
+              "Tengo mi teléfono."
+            ],
+            "correctAnswer": "¿Dónde está tu paraguas?",
+            "sourceEnglish": "Where is your umbrella?"
+          },
+          {
+            "itemId": "english-a1-m057-practice-ex01-i17",
+            "position": 17,
+            "taskType": "listening_translation_multiple_choice",
+            "prompt": "Escucha el inglés y elige su significado.",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "Mi monedero es pequeño.",
+              "Su bolso es azul.",
+              "Este es su reloj."
+            ],
+            "correctAnswer": "Mi monedero es pequeño.",
+            "sourceEnglish": "My purse is small."
+          },
+          {
+            "itemId": "english-a1-m057-practice-ex01-i18",
+            "position": 18,
+            "taskType": "listening_translation_multiple_choice",
+            "prompt": "Escucha el inglés y elige su significado.",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "Estas son mis llaves.",
+              "Mis llaves están en mi bolso.",
+              "Su cartera es negra."
+            ],
+            "correctAnswer": "Estas son mis llaves.",
+            "sourceEnglish": "These are my keys."
+          },
+          {
+            "itemId": "english-a1-m057-practice-ex01-i19",
+            "position": 19,
+            "taskType": "listening_translation_multiple_choice",
+            "prompt": "Escucha el inglés y elige su significado.",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "El teléfono está sobre la mesa.",
+              "Tengo mi teléfono.",
+              "No encuentro mis gafas."
+            ],
+            "correctAnswer": "El teléfono está sobre la mesa.",
+            "sourceEnglish": "The phone is on the table."
+          },
+          {
+            "itemId": "english-a1-m057-practice-ex01-i20",
+            "position": 20,
+            "taskType": "listening_translation_multiple_choice",
+            "prompt": "Escucha el inglés y elige su significado.",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "Su bolso es azul.",
+              "Este es su reloj.",
+              "¿Dónde está tu paraguas?"
+            ],
+            "correctAnswer": "Su bolso es azul.",
+            "sourceEnglish": "Her bag is blue."
+          }
+        ]
+      }
+    },
+    {
+      "sectionId": "english-a1-m057-grammar",
+      "sectionKey": "grammar",
+      "position": 3,
+      "title": "Gramática",
+      "exercise": {
+        "exerciseId": "english-a1-m057-grammar-ex01",
+        "type": "grammar",
+        "items": [
+          {
+            "itemId": "english-a1-m057-grammar-ex01-i01",
+            "position": 1,
+            "prompt": "I have a phone. This is ___ phone.",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "my",
+              "his",
+              "their"
+            ],
+            "correctAnswer": "my"
+          },
+          {
+            "itemId": "english-a1-m057-grammar-ex01-i02",
+            "position": 2,
+            "prompt": "Tom has a wallet. It is ___ wallet.",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "his",
+              "her",
+              "our"
+            ],
+            "correctAnswer": "his"
+          },
+          {
+            "itemId": "english-a1-m057-grammar-ex01-i03",
+            "position": 3,
+            "prompt": "Anna has a bag. It is ___ bag.",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "her",
+              "his",
+              "their"
+            ],
+            "correctAnswer": "her"
+          },
+          {
+            "itemId": "english-a1-m057-grammar-ex01-i04",
+            "position": 4,
+            "prompt": "We have keys. They are ___ keys.",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "our",
+              "your",
+              "its"
+            ],
+            "correctAnswer": "our"
+          },
+          {
+            "itemId": "english-a1-m057-grammar-ex01-i05",
+            "position": 5,
+            "prompt": "You have glasses. Are these ___ glasses?",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "your",
+              "our",
+              "his"
+            ],
+            "correctAnswer": "your"
+          },
+          {
+            "itemId": "english-a1-m057-grammar-ex01-i06",
+            "position": 6,
+            "prompt": "The dog has a bed. It is ___ bed.",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "its",
+              "their",
+              "her"
+            ],
+            "correctAnswer": "its"
+          },
+          {
+            "itemId": "english-a1-m057-grammar-ex01-i07",
+            "position": 7,
+            "prompt": "They have a car. It is ___ car.",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "their",
+              "his",
+              "my"
+            ],
+            "correctAnswer": "their"
+          },
+          {
+            "itemId": "english-a1-m057-grammar-ex01-i08",
+            "position": 8,
+            "prompt": "I have an umbrella. It is ___ umbrella.",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "my",
+              "her",
+              "his"
+            ],
+            "correctAnswer": "my"
+          },
+          {
+            "itemId": "english-a1-m057-grammar-ex01-i09",
+            "position": 9,
+            "prompt": "Sarah has a watch. It is ___ watch.",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "her",
+              "our",
+              "their"
+            ],
+            "correctAnswer": "her"
+          },
+          {
+            "itemId": "english-a1-m057-grammar-ex01-i10",
+            "position": 10,
+            "prompt": "We have a house. It is ___ house.",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "our",
+              "their",
+              "your"
+            ],
+            "correctAnswer": "our"
+          }
+        ],
+        "theory": {
+          "title": "Possessive adjectives",
+          "explanation": "Usamos my, your, his, her, its, our y their delante de un nombre para indicar a quién pertenece algo.",
+          "patterns": [
+            {
+              "label": "Estructura",
+              "pattern": "My keys are in my bag.",
+              "examples": [
+                "My keys are in my bag.",
+                "His wallet is black.",
+                "Her watch is new."
+              ]
+            }
+          ],
+          "tip": "El posesivo va antes del nombre: my phone, her bag, their keys."
+        }
+      }
+    },
+    {
+      "sectionId": "english-a1-m057-pronunciation",
+      "sectionKey": "pronunciation",
+      "position": 4,
+      "title": "Pronunciación",
+      "exercise": {
+        "exerciseId": "english-a1-m057-pronunciation-ex01",
+        "type": "pronunciation_cards",
+        "items": [
+          {
+            "itemId": "english-a1-m057-pronunciation-ex01-i01",
+            "position": 1,
+            "word": "wallet",
+            "translation": "cartera",
+            "pronunciationGuide": "Listen to the British English model and keep the final consonant clear.",
+            "audio": "tts:en-GB:wallet"
+          },
+          {
+            "itemId": "english-a1-m057-pronunciation-ex01-i02",
+            "position": 2,
+            "word": "keys",
+            "translation": "llaves",
+            "pronunciationGuide": "Listen to the British English model and keep the final consonant clear.",
+            "audio": "tts:en-GB:keys"
+          },
+          {
+            "itemId": "english-a1-m057-pronunciation-ex01-i03",
+            "position": 3,
+            "word": "bag",
+            "translation": "bolso",
+            "pronunciationGuide": "Listen to the British English model and keep the final consonant clear.",
+            "audio": "tts:en-GB:bag"
+          },
+          {
+            "itemId": "english-a1-m057-pronunciation-ex01-i04",
+            "position": 4,
+            "word": "phone",
+            "translation": "teléfono",
+            "pronunciationGuide": "Listen to the British English model and keep the final consonant clear.",
+            "audio": "tts:en-GB:phone"
+          },
+          {
+            "itemId": "english-a1-m057-pronunciation-ex01-i05",
+            "position": 5,
+            "word": "watch",
+            "translation": "reloj",
+            "pronunciationGuide": "Listen to the British English model and keep the final consonant clear.",
+            "audio": "tts:en-GB:watch"
+          },
+          {
+            "itemId": "english-a1-m057-pronunciation-ex01-i06",
+            "position": 6,
+            "word": "glasses",
+            "translation": "gafas",
+            "pronunciationGuide": "Listen to the British English model and keep the final consonant clear.",
+            "audio": "tts:en-GB:glasses"
+          },
+          {
+            "itemId": "english-a1-m057-pronunciation-ex01-i07",
+            "position": 7,
+            "word": "umbrella",
+            "translation": "paraguas",
+            "pronunciationGuide": "Listen to the British English model and keep the final consonant clear.",
+            "audio": "tts:en-GB:umbrella"
+          },
+          {
+            "itemId": "english-a1-m057-pronunciation-ex01-i08",
+            "position": 8,
+            "word": "purse",
+            "translation": "monedero",
+            "pronunciationGuide": "Listen to the British English model and keep the final consonant clear.",
+            "audio": "tts:en-GB:purse"
+          },
+          {
+            "itemId": "english-a1-m057-pronunciation-ex01-i09",
+            "position": 9,
+            "word": "my",
+            "translation": "mi",
+            "pronunciationGuide": "Listen to the British English model and keep the final consonant clear.",
+            "audio": "tts:en-GB:my"
+          },
+          {
+            "itemId": "english-a1-m057-pronunciation-ex01-i10",
+            "position": 10,
+            "word": "his",
+            "translation": "su (de él)",
+            "pronunciationGuide": "Listen to the British English model and keep the final consonant clear.",
+            "audio": "tts:en-GB:his"
+          }
+        ],
+        "focus": "Practica el ritmo y el acento de las palabras clave de Everyday Objects."
+      }
+    },
+    {
+      "sectionId": "english-a1-m057-reading",
+      "sectionKey": "reading",
+      "position": 5,
+      "title": "Reading",
+      "exercise": {
+        "exerciseId": "english-a1-m057-reading-ex01",
+        "type": "reading_comprehension",
+        "items": [
+          {
+            "itemId": "english-a1-m057-reading-ex01-i01",
+            "position": 1,
+            "prompt": "Which English sentence means “Mis llaves están en mi bolso.”?",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "My keys are in my bag.",
+              "I have my phone.",
+              "This is her watch."
+            ],
+            "correctAnswer": "My keys are in my bag."
+          },
+          {
+            "itemId": "english-a1-m057-reading-ex01-i02",
+            "position": 2,
+            "prompt": "Which English sentence means “Tengo mi teléfono.”?",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "I have my phone.",
+              "This is her watch.",
+              "His wallet is black."
+            ],
+            "correctAnswer": "I have my phone."
+          },
+          {
+            "itemId": "english-a1-m057-reading-ex01-i03",
+            "position": 3,
+            "prompt": "Which English sentence means “Este es su reloj.”?",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "This is her watch.",
+              "His wallet is black.",
+              "I can't find my glasses."
+            ],
+            "correctAnswer": "This is her watch."
+          },
+          {
+            "itemId": "english-a1-m057-reading-ex01-i04",
+            "position": 4,
+            "prompt": "Which English sentence means “Su cartera es negra.”?",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "His wallet is black.",
+              "I can't find my glasses.",
+              "Where is your umbrella?"
+            ],
+            "correctAnswer": "His wallet is black."
+          },
+          {
+            "itemId": "english-a1-m057-reading-ex01-i05",
+            "position": 5,
+            "prompt": "Which English sentence means “No encuentro mis gafas.”?",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "I can't find my glasses.",
+              "Where is your umbrella?",
+              "My purse is small."
+            ],
+            "correctAnswer": "I can't find my glasses."
+          },
+          {
+            "itemId": "english-a1-m057-reading-ex01-i06",
+            "position": 6,
+            "prompt": "Which English sentence means “¿Dónde está tu paraguas?”?",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "Where is your umbrella?",
+              "My purse is small.",
+              "These are my keys."
+            ],
+            "correctAnswer": "Where is your umbrella?"
+          },
+          {
+            "itemId": "english-a1-m057-reading-ex01-i07",
+            "position": 7,
+            "prompt": "Which English sentence means “Mi monedero es pequeño.”?",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "My purse is small.",
+              "These are my keys.",
+              "The phone is on the table."
+            ],
+            "correctAnswer": "My purse is small."
+          },
+          {
+            "itemId": "english-a1-m057-reading-ex01-i08",
+            "position": 8,
+            "prompt": "Which English sentence means “Estas son mis llaves.”?",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "These are my keys.",
+              "The phone is on the table.",
+              "Her bag is blue."
+            ],
+            "correctAnswer": "These are my keys."
+          },
+          {
+            "itemId": "english-a1-m057-reading-ex01-i09",
+            "position": 9,
+            "prompt": "Which English sentence means “El teléfono está sobre la mesa.”?",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "The phone is on the table.",
+              "Her bag is blue.",
+              "My keys are in my bag."
+            ],
+            "correctAnswer": "The phone is on the table."
+          },
+          {
+            "itemId": "english-a1-m057-reading-ex01-i10",
+            "position": 10,
+            "prompt": "Which English sentence means “Su bolso es azul.”?",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "Her bag is blue.",
+              "My keys are in my bag.",
+              "I have my phone."
+            ],
+            "correctAnswer": "Her bag is blue."
+          }
+        ],
+        "content": {
+          "passageId": "english-a1-m057-reading-passage-01",
+          "passage": "My keys are in my bag. I have my phone. This is her watch. His wallet is black. I can't find my glasses. Where is your umbrella?"
+        }
+      }
+    },
+    {
+      "sectionId": "english-a1-m057-writing",
+      "sectionKey": "writing",
+      "position": 6,
+      "title": "Writing",
+      "exercise": {
+        "exerciseId": "english-a1-m057-writing-ex01",
+        "type": "dictation",
+        "items": [
+          {
+            "itemId": "english-a1-m057-writing-ex01-i01",
+            "position": 1,
+            "audio": "tts:en-GB:My keys are in my bag.",
+            "expectedAnswer": "My keys are in my bag.",
+            "evaluation": {
+              "type": "normalised_text"
+            }
+          },
+          {
+            "itemId": "english-a1-m057-writing-ex01-i02",
+            "position": 2,
+            "audio": "tts:en-GB:I have my phone.",
+            "expectedAnswer": "I have my phone.",
+            "evaluation": {
+              "type": "normalised_text"
+            }
+          },
+          {
+            "itemId": "english-a1-m057-writing-ex01-i03",
+            "position": 3,
+            "audio": "tts:en-GB:This is her watch.",
+            "expectedAnswer": "This is her watch.",
+            "evaluation": {
+              "type": "normalised_text"
+            }
+          },
+          {
+            "itemId": "english-a1-m057-writing-ex01-i04",
+            "position": 4,
+            "audio": "tts:en-GB:His wallet is black.",
+            "expectedAnswer": "His wallet is black.",
+            "evaluation": {
+              "type": "normalised_text"
+            }
+          },
+          {
+            "itemId": "english-a1-m057-writing-ex01-i05",
+            "position": 5,
+            "audio": "tts:en-GB:I can't find my glasses.",
+            "expectedAnswer": "I can't find my glasses.",
+            "evaluation": {
+              "type": "normalised_text"
+            }
+          },
+          {
+            "itemId": "english-a1-m057-writing-ex01-i06",
+            "position": 6,
+            "audio": "tts:en-GB:Where is your umbrella?",
+            "expectedAnswer": "Where is your umbrella?",
+            "evaluation": {
+              "type": "normalised_text"
+            }
+          },
+          {
+            "itemId": "english-a1-m057-writing-ex01-i07",
+            "position": 7,
+            "audio": "tts:en-GB:My purse is small.",
+            "expectedAnswer": "My purse is small.",
+            "evaluation": {
+              "type": "normalised_text"
+            }
+          },
+          {
+            "itemId": "english-a1-m057-writing-ex01-i08",
+            "position": 8,
+            "audio": "tts:en-GB:These are my keys.",
+            "expectedAnswer": "These are my keys.",
+            "evaluation": {
+              "type": "normalised_text"
+            }
+          },
+          {
+            "itemId": "english-a1-m057-writing-ex01-i09",
+            "position": 9,
+            "audio": "tts:en-GB:The phone is on the table.",
+            "expectedAnswer": "The phone is on the table.",
+            "evaluation": {
+              "type": "normalised_text"
+            }
+          },
+          {
+            "itemId": "english-a1-m057-writing-ex01-i10",
+            "position": 10,
+            "audio": "tts:en-GB:Her bag is blue.",
+            "expectedAnswer": "Her bag is blue.",
+            "evaluation": {
+              "type": "normalised_text"
+            }
+          }
+        ],
+        "writingTask": "Escribe un texto breve de 5–6 frases sobre everyday objects. Utiliza al menos cinco palabras de Exploración y la estructura gramatical de esta misión.",
+        "modelText": "My keys are in my bag. I have my phone. This is her watch. His wallet is black. I can't find my glasses. Where is your umbrella?"
+      }
+    },
+    {
+      "sectionId": "english-a1-m057-speaking",
+      "sectionKey": "speaking",
+      "position": 7,
+      "title": "Speaking",
+      "exercise": {
+        "exerciseId": "english-a1-m057-speaking-ex01",
+        "type": "speaking_prompts",
+        "items": [
+          {
+            "itemId": "english-a1-m057-speaking-ex01-i01",
+            "position": 1,
+            "prompt": "Say a sentence about this situation: Mis llaves están en mi bolso.",
+            "modelAnswer": "My keys are in my bag.",
+            "evaluation": {
+              "type": "transcription_feedback",
+              "transcriptionSeparateFromPronunciation": true
+            }
+          },
+          {
+            "itemId": "english-a1-m057-speaking-ex01-i02",
+            "position": 2,
+            "prompt": "Say a sentence about this situation: Tengo mi teléfono.",
+            "modelAnswer": "I have my phone.",
+            "evaluation": {
+              "type": "transcription_feedback",
+              "transcriptionSeparateFromPronunciation": true
+            }
+          },
+          {
+            "itemId": "english-a1-m057-speaking-ex01-i03",
+            "position": 3,
+            "prompt": "Say a sentence about this situation: Este es su reloj.",
+            "modelAnswer": "This is her watch.",
+            "evaluation": {
+              "type": "transcription_feedback",
+              "transcriptionSeparateFromPronunciation": true
+            }
+          },
+          {
+            "itemId": "english-a1-m057-speaking-ex01-i04",
+            "position": 4,
+            "prompt": "Say a sentence about this situation: Su cartera es negra.",
+            "modelAnswer": "His wallet is black.",
+            "evaluation": {
+              "type": "transcription_feedback",
+              "transcriptionSeparateFromPronunciation": true
+            }
+          },
+          {
+            "itemId": "english-a1-m057-speaking-ex01-i05",
+            "position": 5,
+            "prompt": "Say a sentence about this situation: No encuentro mis gafas.",
+            "modelAnswer": "I can't find my glasses.",
+            "evaluation": {
+              "type": "transcription_feedback",
+              "transcriptionSeparateFromPronunciation": true
+            }
+          },
+          {
+            "itemId": "english-a1-m057-speaking-ex01-i06",
+            "position": 6,
+            "prompt": "Say a sentence about this situation: ¿Dónde está tu paraguas?",
+            "modelAnswer": "Where is your umbrella?",
+            "evaluation": {
+              "type": "transcription_feedback",
+              "transcriptionSeparateFromPronunciation": true
+            }
+          },
+          {
+            "itemId": "english-a1-m057-speaking-ex01-i07",
+            "position": 7,
+            "prompt": "Say a sentence about this situation: Mi monedero es pequeño.",
+            "modelAnswer": "My purse is small.",
+            "evaluation": {
+              "type": "transcription_feedback",
+              "transcriptionSeparateFromPronunciation": true
+            }
+          },
+          {
+            "itemId": "english-a1-m057-speaking-ex01-i08",
+            "position": 8,
+            "prompt": "Say a sentence about this situation: Estas son mis llaves.",
+            "modelAnswer": "These are my keys.",
+            "evaluation": {
+              "type": "transcription_feedback",
+              "transcriptionSeparateFromPronunciation": true
+            }
+          },
+          {
+            "itemId": "english-a1-m057-speaking-ex01-i09",
+            "position": 9,
+            "prompt": "Say a sentence about this situation: El teléfono está sobre la mesa.",
+            "modelAnswer": "The phone is on the table.",
+            "evaluation": {
+              "type": "transcription_feedback",
+              "transcriptionSeparateFromPronunciation": true
+            }
+          },
+          {
+            "itemId": "english-a1-m057-speaking-ex01-i10",
+            "position": 10,
+            "prompt": "Say a sentence about this situation: Su bolso es azul.",
+            "modelAnswer": "Her bag is blue.",
+            "evaluation": {
+              "type": "transcription_feedback",
+              "transcriptionSeparateFromPronunciation": true
+            }
+          }
+        ]
+      }
+    },
+    {
+      "sectionId": "english-a1-m057-listening",
+      "sectionKey": "listening",
+      "position": 8,
+      "title": "Listening",
+      "exercise": {
+        "exerciseId": "english-a1-m057-listening-ex01",
+        "type": "listening_gap_fill",
+        "items": [
+          {
+            "itemId": "english-a1-m057-listening-ex01-i01",
+            "position": 1,
+            "gapToken": "[[gap-01]]",
+            "expectedWordId": "english-a1-m057-listening-word-01"
+          },
+          {
+            "itemId": "english-a1-m057-listening-ex01-i02",
+            "position": 2,
+            "gapToken": "[[gap-02]]",
+            "expectedWordId": "english-a1-m057-listening-word-02"
+          },
+          {
+            "itemId": "english-a1-m057-listening-ex01-i03",
+            "position": 3,
+            "gapToken": "[[gap-03]]",
+            "expectedWordId": "english-a1-m057-listening-word-03"
+          },
+          {
+            "itemId": "english-a1-m057-listening-ex01-i04",
+            "position": 4,
+            "gapToken": "[[gap-04]]",
+            "expectedWordId": "english-a1-m057-listening-word-04"
+          },
+          {
+            "itemId": "english-a1-m057-listening-ex01-i05",
+            "position": 5,
+            "gapToken": "[[gap-05]]",
+            "expectedWordId": "english-a1-m057-listening-word-05"
+          },
+          {
+            "itemId": "english-a1-m057-listening-ex01-i06",
+            "position": 6,
+            "gapToken": "[[gap-06]]",
+            "expectedWordId": "english-a1-m057-listening-word-06"
+          },
+          {
+            "itemId": "english-a1-m057-listening-ex01-i07",
+            "position": 7,
+            "gapToken": "[[gap-07]]",
+            "expectedWordId": "english-a1-m057-listening-word-07"
+          },
+          {
+            "itemId": "english-a1-m057-listening-ex01-i08",
+            "position": 8,
+            "gapToken": "[[gap-08]]",
+            "expectedWordId": "english-a1-m057-listening-word-08"
+          },
+          {
+            "itemId": "english-a1-m057-listening-ex01-i09",
+            "position": 9,
+            "gapToken": "[[gap-09]]",
+            "expectedWordId": "english-a1-m057-listening-word-09"
+          },
+          {
+            "itemId": "english-a1-m057-listening-ex01-i10",
+            "position": 10,
+            "gapToken": "[[gap-10]]",
+            "expectedWordId": "english-a1-m057-listening-word-10"
+          }
+        ],
+        "content": {
+          "audio": "tts:en-GB:The key words for Everyday Objects are: wallet, keys, bag, phone, watch, glasses, umbrella, purse, my, his. Listen and repeat each word carefully.",
+          "audioLocale": "en-GB",
+          "transcriptTemplate": "The key words for Everyday Objects are: [[gap-01]], [[gap-02]], [[gap-03]], [[gap-04]], [[gap-05]], [[gap-06]], [[gap-07]], [[gap-08]], [[gap-09]], [[gap-10]]. Listen and repeat each word carefully.",
+          "wordBank": [
+            {
+              "wordId": "english-a1-m057-listening-word-01",
+              "word": "wallet"
+            },
+            {
+              "wordId": "english-a1-m057-listening-word-02",
+              "word": "keys"
+            },
+            {
+              "wordId": "english-a1-m057-listening-word-03",
+              "word": "bag"
+            },
+            {
+              "wordId": "english-a1-m057-listening-word-04",
+              "word": "phone"
+            },
+            {
+              "wordId": "english-a1-m057-listening-word-05",
+              "word": "watch"
+            },
+            {
+              "wordId": "english-a1-m057-listening-word-06",
+              "word": "glasses"
+            },
+            {
+              "wordId": "english-a1-m057-listening-word-07",
+              "word": "umbrella"
+            },
+            {
+              "wordId": "english-a1-m057-listening-word-08",
+              "word": "purse"
+            },
+            {
+              "wordId": "english-a1-m057-listening-word-09",
+              "word": "my"
+            },
+            {
+              "wordId": "english-a1-m057-listening-word-10",
+              "word": "his"
+            }
+          ],
+          "interaction": "select_place_move_replace"
+        }
+      }
+    }
+  ]
+}
