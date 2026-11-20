@@ -27,7 +27,7 @@ questions:{name:"Question words",rule:"Use what for things, where for places, wh
 const esc=s=>String(s).replace(/[&<>"']/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]));
 const list=a=>"<ul>"+a.map(x=>"<li>"+esc(x)+"</li>").join("")+"</ul>";
 const card=(h,p)=>"<div class='a1extra-card'><h3>"+h+"</h3>"+p+"</div>";
-const n=+(location.pathname.match(/\/(\d{3})\/index\.html/)||[])[1];const l=lessons[n];if(!l||document.querySelector("[data-a1-eight]"))return;
+const n=+(location.pathname.match(/\/(\d{3})(?:\/index\.html)?\/?$/)||[])[1];const l=lessons[n];if(!l||document.querySelector("[data-a1-eight]"))return;
 const g=grammar[l.grammar];const nav=document.querySelector("nav");const main=document.querySelector("main");if(!nav||!main)return;
 const sections=[
 ["grammar","3. Gramática","Gramática",card("Objetivo: "+g.name,"<p>"+esc(g.rule)+"</p>")+card("Modelos",list(g.examples))+card("Práctica guiada","<ol>"+g.tasks.map((x,i)=>"<li>"+esc(x)+"</li>").join("")+"</ol><details><summary>Ver soluciones</summary>"+list(g.answers)+"</details>")+card("Producción","<p>Escribe dos frases verdaderas sobre "+esc(l.title)+". Usa la estructura de esta lección.</p>")],
