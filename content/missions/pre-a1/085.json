@@ -99,28 +99,29 @@
           }
         ],
         "theory": {
-          "title": "Frases y vocabulario de la misión",
-          "explanation": "Observa el orden de las palabras en las frases y relaciona cada expresión con su significado en español.",
+          "title": "At the campsite",
+          "explanation": "Usa «I am in…» para decir dónde estás y «I have…» para hablar del equipo que llevas.",
           "patterns": [
             {
               "label": "Modelo",
-              "pattern": "Where is the campsite?",
+              "pattern": "I am at the campsite.",
               "examples": [
-                "Where is the campsite?",
-                "Where is the tent?",
-                "Where is the sleeping bag?"
+                "I am at the campsite.",
+                "My tent is near the lake.",
+                "I have a sleeping bag."
               ]
             },
             {
-              "label": "Traducción",
-              "pattern": "English sentence → significado en español",
+              "label": "Pregunta y respuesta",
+              "pattern": "Lee el modelo y cambia una palabra para hablar de otra cosa.",
               "examples": [
-                "Where is the torch?",
-                "Where is the campfire?"
+                "I am at the campsite.",
+                "My tent is near the lake.",
+                "I have a sleeping bag."
               ]
             }
           ],
-          "tip": "Lee la frase completa antes de elegir la traducción."
+          "tip": "Escucha el modelo, repite la frase y cambia una palabra para crear una frase nueva."
         }
       }
     },
@@ -426,131 +427,131 @@
           {
             "itemId": "english-pre-a1-m085-grammar-ex01-i01",
             "position": 1,
-            "prompt": "Elige la traducción correcta: “Where is the campsite?”",
+            "prompt": "Complete: I ___ at the campsite.",
             "evaluation": {
               "type": "single_choice"
             },
             "options": [
-              "¿Dónde está el camping?",
-              "¿Dónde está la tienda de campaña?",
-              "¿Dónde está el saco de dormir?"
+              "am",
+              "is",
+              "are"
             ]
           },
           {
             "itemId": "english-pre-a1-m085-grammar-ex01-i02",
             "position": 2,
-            "prompt": "Elige la traducción correcta: “Where is the tent?”",
+            "prompt": "Choose the correct sentence about the tent.",
             "evaluation": {
               "type": "single_choice"
             },
             "options": [
-              "¿Dónde está la tienda de campaña?",
-              "¿Dónde está el saco de dormir?",
-              "¿Dónde está la linterna?"
+              "The tent is near the lake.",
+              "The tent are near the lake.",
+              "The tent near is the lake."
             ]
           },
           {
             "itemId": "english-pre-a1-m085-grammar-ex01-i03",
             "position": 3,
-            "prompt": "Elige la traducción correcta: “Where is the sleeping bag?”",
+            "prompt": "Complete: I ___ a sleeping bag.",
             "evaluation": {
               "type": "single_choice"
             },
             "options": [
-              "¿Dónde está el saco de dormir?",
-              "¿Dónde está la linterna?",
-              "¿Dónde está la hoguera?"
+              "have",
+              "has",
+              "having"
             ]
           },
           {
             "itemId": "english-pre-a1-m085-grammar-ex01-i04",
             "position": 4,
-            "prompt": "Elige la traducción correcta: “Where is the torch?”",
+            "prompt": "Choose the correct phrase for a sleeping bag.",
             "evaluation": {
               "type": "single_choice"
             },
             "options": [
-              "¿Dónde está la linterna?",
-              "¿Dónde está la hoguera?",
-              "¿Dónde está la mochila?"
+              "a warm sleeping bag",
+              "an warm sleeping bag",
+              "a sleeping bag warm"
             ]
           },
           {
             "itemId": "english-pre-a1-m085-grammar-ex01-i05",
             "position": 5,
-            "prompt": "Elige la traducción correcta: “Where is the campfire?”",
+            "prompt": "Complete: The torch ___ bright.",
             "evaluation": {
               "type": "single_choice"
             },
             "options": [
-              "¿Dónde está la hoguera?",
-              "¿Dónde está la mochila?",
-              "¿Dónde está el mapa?"
+              "is",
+              "are",
+              "am"
             ]
           },
           {
             "itemId": "english-pre-a1-m085-grammar-ex01-i06",
             "position": 6,
-            "prompt": "Elige la traducción correcta: “Where is the backpack?”",
+            "prompt": "Choose the correct sentence about the backpack.",
             "evaluation": {
               "type": "single_choice"
             },
             "options": [
-              "¿Dónde está la mochila?",
-              "¿Dónde está el mapa?",
-              "¿Dónde está el lago?"
+              "My backpack is heavy.",
+              "My backpack are heavy.",
+              "My backpack heavy is."
             ]
           },
           {
             "itemId": "english-pre-a1-m085-grammar-ex01-i07",
             "position": 7,
-            "prompt": "Elige la traducción correcta: “Where is the map?”",
+            "prompt": "Complete: We walk ___ the path.",
             "evaluation": {
               "type": "single_choice"
             },
             "options": [
-              "¿Dónde está el mapa?",
-              "¿Dónde está el lago?",
-              "¿Dónde está las botas?"
+              "on",
+              "in",
+              "at"
             ]
           },
           {
             "itemId": "english-pre-a1-m085-grammar-ex01-i08",
             "position": 8,
-            "prompt": "Elige la traducción correcta: “Where is the lake?”",
+            "prompt": "Ask where the map is.",
             "evaluation": {
               "type": "single_choice"
             },
             "options": [
-              "¿Dónde está el lago?",
-              "¿Dónde está las botas?",
-              "¿Dónde está el sendero?"
+              "Where is the map?",
+              "Where the map is?",
+              "Where are the map?"
             ]
           },
           {
             "itemId": "english-pre-a1-m085-grammar-ex01-i09",
             "position": 9,
-            "prompt": "Elige la traducción correcta: “Where is the boots?”",
+            "prompt": "Complete: My boots ___ brown.",
             "evaluation": {
               "type": "single_choice"
             },
             "options": [
-              "¿Dónde está las botas?",
-              "¿Dónde está el sendero?",
-              "¿Dónde está el camping?"
+              "are",
+              "is",
+              "am"
             ]
           },
           {
             "itemId": "english-pre-a1-m085-grammar-ex01-i10",
             "position": 10,
-            "prompt": "Elige la traducción correcta: “Where is the path?”",
+            "prompt": "Choose the correct sentence about the campfire.",
             "evaluation": {
               "type": "single_choice"
             },
             "options": [
-              "¿Dónde está el sendero?",
-              "¿Dónde está el camping?",
-              "¿Dónde está la tienda de campaña?"
+              "We sit by the campfire.",
+              "We sit in the campfire.",
+              "We sit under the campfire."
             ]
           }
         ]
@@ -569,7 +570,7 @@
             "position": 1,
             "word": "campsite",
             "translation": "el camping",
-            "pronunciationGuide": "Escucha el modelo británico y repite despacio.",
+            "pronunciationGuide": "Listen to “campsite”, notice the sounds, and repeat it slowly twice.",
             "audio": "tts:en-GB:campsite"
           },
           {
@@ -577,7 +578,7 @@
             "position": 2,
             "word": "tent",
             "translation": "la tienda de campaña",
-            "pronunciationGuide": "Escucha el modelo británico y repite despacio.",
+            "pronunciationGuide": "Listen to “tent”, notice the sounds, and repeat it slowly twice.",
             "audio": "tts:en-GB:tent"
           },
           {
@@ -585,7 +586,7 @@
             "position": 3,
             "word": "sleeping bag",
             "translation": "el saco de dormir",
-            "pronunciationGuide": "Escucha el modelo británico y repite despacio.",
+            "pronunciationGuide": "Listen to “sleeping bag”, notice the sounds, and repeat it slowly twice.",
             "audio": "tts:en-GB:sleeping bag"
           },
           {
@@ -593,7 +594,7 @@
             "position": 4,
             "word": "torch",
             "translation": "la linterna",
-            "pronunciationGuide": "Escucha el modelo británico y repite despacio.",
+            "pronunciationGuide": "Listen to “torch”, notice the sounds, and repeat it slowly twice.",
             "audio": "tts:en-GB:torch"
           },
           {
@@ -601,7 +602,7 @@
             "position": 5,
             "word": "campfire",
             "translation": "la hoguera",
-            "pronunciationGuide": "Escucha el modelo británico y repite despacio.",
+            "pronunciationGuide": "Listen to “campfire”, notice the sounds, and repeat it slowly twice.",
             "audio": "tts:en-GB:campfire"
           },
           {
@@ -609,7 +610,7 @@
             "position": 6,
             "word": "backpack",
             "translation": "la mochila",
-            "pronunciationGuide": "Escucha el modelo británico y repite despacio.",
+            "pronunciationGuide": "Listen to “backpack”, notice the sounds, and repeat it slowly twice.",
             "audio": "tts:en-GB:backpack"
           },
           {
@@ -617,7 +618,7 @@
             "position": 7,
             "word": "map",
             "translation": "el mapa",
-            "pronunciationGuide": "Escucha el modelo británico y repite despacio.",
+            "pronunciationGuide": "Listen to “map”, notice the sounds, and repeat it slowly twice.",
             "audio": "tts:en-GB:map"
           },
           {
@@ -625,7 +626,7 @@
             "position": 8,
             "word": "lake",
             "translation": "el lago",
-            "pronunciationGuide": "Escucha el modelo británico y repite despacio.",
+            "pronunciationGuide": "Listen to “lake”, notice the sounds, and repeat it slowly twice.",
             "audio": "tts:en-GB:lake"
           },
           {
@@ -633,7 +634,7 @@
             "position": 9,
             "word": "boots",
             "translation": "las botas",
-            "pronunciationGuide": "Escucha el modelo británico y repite despacio.",
+            "pronunciationGuide": "Listen to “boots”, notice the sounds, and repeat it slowly twice.",
             "audio": "tts:en-GB:boots"
           },
           {
@@ -641,7 +642,7 @@
             "position": 10,
             "word": "path",
             "translation": "el sendero",
-            "pronunciationGuide": "Escucha el modelo británico y repite despacio.",
+            "pronunciationGuide": "Listen to “path”, notice the sounds, and repeat it slowly twice.",
             "audio": "tts:en-GB:path"
           }
         ]
@@ -656,137 +657,137 @@
         "type": "reading_comprehension",
         "content": {
           "passageId": "english-pre-a1-m085-reading-passage-01",
-          "passage": "I like the campsite. I like the tent. I like the sleeping bag. I like the torch. I like the campfire. I like the backpack. I like the map. I like the lake. I like the boots. I like the path."
+          "passage": "Tom is at a campsite with his family. They put up a tent near the lake. Tom has a sleeping bag. He puts a torch in his backpack. In the evening, they sit by the campfire. Dad looks at the map. They walk along a path. Tom wears his boots. The night is cold. Tom sleeps in the tent."
         },
         "items": [
           {
             "itemId": "english-pre-a1-m085-reading-ex01-i01",
             "position": 1,
-            "prompt": "¿Qué significa “I like the campsite.”?",
+            "prompt": "Where is Tom?",
             "evaluation": {
               "type": "single_choice"
             },
             "options": [
-              "Me gusta el camping.",
-              "Me gusta la tienda de campaña.",
-              "Me gusta el saco de dormir."
+              "At a campsite",
+              "At a farm shop",
+              "At a hairdresser"
             ]
           },
           {
             "itemId": "english-pre-a1-m085-reading-ex01-i02",
             "position": 2,
-            "prompt": "¿Qué significa “I like the tent.”?",
+            "prompt": "Who is with Tom?",
             "evaluation": {
               "type": "single_choice"
             },
             "options": [
-              "Me gusta la tienda de campaña.",
-              "Me gusta el saco de dormir.",
-              "Me gusta la linterna."
+              "His family",
+              "His class",
+              "His team"
             ]
           },
           {
             "itemId": "english-pre-a1-m085-reading-ex01-i03",
             "position": 3,
-            "prompt": "¿Qué significa “I like the sleeping bag.”?",
+            "prompt": "Where is the tent?",
             "evaluation": {
               "type": "single_choice"
             },
             "options": [
-              "Me gusta el saco de dormir.",
-              "Me gusta la linterna.",
-              "Me gusta la hoguera."
+              "Near the lake",
+              "In the shop",
+              "On the road"
             ]
           },
           {
             "itemId": "english-pre-a1-m085-reading-ex01-i04",
             "position": 4,
-            "prompt": "¿Qué significa “I like the torch.”?",
+            "prompt": "What does Tom have?",
             "evaluation": {
               "type": "single_choice"
             },
             "options": [
-              "Me gusta la linterna.",
-              "Me gusta la hoguera.",
-              "Me gusta la mochila."
+              "A sleeping bag",
+              "A toy car",
+              "A helmet"
             ]
           },
           {
             "itemId": "english-pre-a1-m085-reading-ex01-i05",
             "position": 5,
-            "prompt": "¿Qué significa “I like the campfire.”?",
+            "prompt": "Where does he put the torch?",
             "evaluation": {
               "type": "single_choice"
             },
             "options": [
-              "Me gusta la hoguera.",
-              "Me gusta la mochila.",
-              "Me gusta el mapa."
+              "In his backpack",
+              "In the lake",
+              "Under the tent"
             ]
           },
           {
             "itemId": "english-pre-a1-m085-reading-ex01-i06",
             "position": 6,
-            "prompt": "¿Qué significa “I like the backpack.”?",
+            "prompt": "Where does the family sit?",
             "evaluation": {
               "type": "single_choice"
             },
             "options": [
-              "Me gusta la mochila.",
-              "Me gusta el mapa.",
-              "Me gusta el lago."
+              "By the campfire",
+              "In the shop",
+              "On the bus"
             ]
           },
           {
             "itemId": "english-pre-a1-m085-reading-ex01-i07",
             "position": 7,
-            "prompt": "¿Qué significa “I like the map.”?",
+            "prompt": "What does Dad look at?",
             "evaluation": {
               "type": "single_choice"
             },
             "options": [
-              "Me gusta el mapa.",
-              "Me gusta el lago.",
-              "Me gusta las botas."
+              "A map",
+              "A menu",
+              "A mirror"
             ]
           },
           {
             "itemId": "english-pre-a1-m085-reading-ex01-i08",
             "position": 8,
-            "prompt": "¿Qué significa “I like the lake.”?",
+            "prompt": "Where do they walk?",
             "evaluation": {
               "type": "single_choice"
             },
             "options": [
-              "Me gusta el lago.",
-              "Me gusta las botas.",
-              "Me gusta el sendero."
+              "Along a path",
+              "Across a shop",
+              "Into a café"
             ]
           },
           {
             "itemId": "english-pre-a1-m085-reading-ex01-i09",
             "position": 9,
-            "prompt": "¿Qué significa “I like the boots.”?",
+            "prompt": "What does Tom wear?",
             "evaluation": {
               "type": "single_choice"
             },
             "options": [
-              "Me gusta las botas.",
-              "Me gusta el sendero.",
-              "Me gusta el camping."
+              "Boots",
+              "Sandals",
+              "A uniform"
             ]
           },
           {
             "itemId": "english-pre-a1-m085-reading-ex01-i10",
             "position": 10,
-            "prompt": "¿Qué significa “I like the path.”?",
+            "prompt": "Where does Tom sleep?",
             "evaluation": {
               "type": "single_choice"
             },
             "options": [
-              "Me gusta el sendero.",
-              "Me gusta el camping.",
-              "Me gusta la tienda de campaña."
+              "In the tent",
+              "By the lake",
+              "In the car"
             ]
           }
         ]
@@ -894,9 +895,9 @@
           {
             "itemId": "english-pre-a1-m085-speaking-ex01-i01",
             "position": 1,
-            "prompt": "Say the word “campsite”.",
-            "modelAnswer": "campsite",
-            "audio": "tts:en-GB:campsite",
+            "prompt": "Say the sentence. Use the model to help you: “I am at the campsite.”",
+            "modelAnswer": "I am at the campsite.",
+            "audio": "tts:en-GB:I am at the campsite.",
             "evaluation": {
               "type": "transcription_feedback",
               "transcriptionSeparateFromPronunciation": true
@@ -905,9 +906,9 @@
           {
             "itemId": "english-pre-a1-m085-speaking-ex01-i02",
             "position": 2,
-            "prompt": "Say the word “tent”.",
-            "modelAnswer": "tent",
-            "audio": "tts:en-GB:tent",
+            "prompt": "Say the sentence. Use the model to help you: “This is my tent.”",
+            "modelAnswer": "This is my tent.",
+            "audio": "tts:en-GB:This is my tent.",
             "evaluation": {
               "type": "transcription_feedback",
               "transcriptionSeparateFromPronunciation": true
@@ -916,9 +917,9 @@
           {
             "itemId": "english-pre-a1-m085-speaking-ex01-i03",
             "position": 3,
-            "prompt": "Say the word “sleeping bag”.",
-            "modelAnswer": "sleeping bag",
-            "audio": "tts:en-GB:sleeping bag",
+            "prompt": "Say the sentence. Use the model to help you: “The lake is near the tent.”",
+            "modelAnswer": "The lake is near the tent.",
+            "audio": "tts:en-GB:The lake is near the tent.",
             "evaluation": {
               "type": "transcription_feedback",
               "transcriptionSeparateFromPronunciation": true
@@ -927,9 +928,9 @@
           {
             "itemId": "english-pre-a1-m085-speaking-ex01-i04",
             "position": 4,
-            "prompt": "Say the word “torch”.",
-            "modelAnswer": "torch",
-            "audio": "tts:en-GB:torch",
+            "prompt": "Say the sentence. Use the model to help you: “I have a sleeping bag.”",
+            "modelAnswer": "I have a sleeping bag.",
+            "audio": "tts:en-GB:I have a sleeping bag.",
             "evaluation": {
               "type": "transcription_feedback",
               "transcriptionSeparateFromPronunciation": true
@@ -938,9 +939,9 @@
           {
             "itemId": "english-pre-a1-m085-speaking-ex01-i05",
             "position": 5,
-            "prompt": "Say the word “campfire”.",
-            "modelAnswer": "campfire",
-            "audio": "tts:en-GB:campfire",
+            "prompt": "Say the sentence. Use the model to help you: “I have a torch.”",
+            "modelAnswer": "I have a torch.",
+            "audio": "tts:en-GB:I have a torch.",
             "evaluation": {
               "type": "transcription_feedback",
               "transcriptionSeparateFromPronunciation": true
@@ -949,9 +950,9 @@
           {
             "itemId": "english-pre-a1-m085-speaking-ex01-i06",
             "position": 6,
-            "prompt": "Say the word “backpack”.",
-            "modelAnswer": "backpack",
-            "audio": "tts:en-GB:backpack",
+            "prompt": "Say the sentence. Use the model to help you: “My backpack is big.”",
+            "modelAnswer": "My backpack is big.",
+            "audio": "tts:en-GB:My backpack is big.",
             "evaluation": {
               "type": "transcription_feedback",
               "transcriptionSeparateFromPronunciation": true
@@ -960,9 +961,9 @@
           {
             "itemId": "english-pre-a1-m085-speaking-ex01-i07",
             "position": 7,
-            "prompt": "Say the word “map”.",
-            "modelAnswer": "map",
-            "audio": "tts:en-GB:map",
+            "prompt": "Say the sentence. Use the model to help you: “We sit by the campfire.”",
+            "modelAnswer": "We sit by the campfire.",
+            "audio": "tts:en-GB:We sit by the campfire.",
             "evaluation": {
               "type": "transcription_feedback",
               "transcriptionSeparateFromPronunciation": true
@@ -971,9 +972,9 @@
           {
             "itemId": "english-pre-a1-m085-speaking-ex01-i08",
             "position": 8,
-            "prompt": "Say the word “lake”.",
-            "modelAnswer": "lake",
-            "audio": "tts:en-GB:lake",
+            "prompt": "Say the sentence. Use the model to help you: “I look at the map.”",
+            "modelAnswer": "I look at the map.",
+            "audio": "tts:en-GB:I look at the map.",
             "evaluation": {
               "type": "transcription_feedback",
               "transcriptionSeparateFromPronunciation": true
@@ -982,9 +983,9 @@
           {
             "itemId": "english-pre-a1-m085-speaking-ex01-i09",
             "position": 9,
-            "prompt": "Say the word “boots”.",
-            "modelAnswer": "boots",
-            "audio": "tts:en-GB:boots",
+            "prompt": "Say the sentence. Use the model to help you: “I wear my boots.”",
+            "modelAnswer": "I wear my boots.",
+            "audio": "tts:en-GB:I wear my boots.",
             "evaluation": {
               "type": "transcription_feedback",
               "transcriptionSeparateFromPronunciation": true
@@ -993,9 +994,9 @@
           {
             "itemId": "english-pre-a1-m085-speaking-ex01-i10",
             "position": 10,
-            "prompt": "Say the word “path”.",
-            "modelAnswer": "path",
-            "audio": "tts:en-GB:path",
+            "prompt": "Say the sentence. Use the model to help you: “I walk on the path.”",
+            "modelAnswer": "I walk on the path.",
+            "audio": "tts:en-GB:I walk on the path.",
             "evaluation": {
               "type": "transcription_feedback",
               "transcriptionSeparateFromPronunciation": true
@@ -1012,9 +1013,9 @@
         "exerciseId": "english-pre-a1-m085-listening-ex01",
         "type": "listening_gap_fill",
         "content": {
-          "audio": "tts:en-GB:Listen and complete. This is the campsite. This is the tent. This is the sleeping bag. This is the torch. This is the campfire. This is the backpack. This is the map. This is the lake. This is the boots. This is the path.",
+          "audio": "tts:en-GB:Listen and complete. We are at the campsite today. Our tent is near the lake. I have a warm sleeping bag. I put a torch in my bag. We sit by the campfire. My backpack is heavy. Dad looks at the map. The lake is very quiet. I wear my boots. We walk along the path.",
           "audioLocale": "en-GB",
-          "transcriptTemplate": "Listen and complete. This is the [[gap-01]]. This is the [[gap-02]]. This is the [[gap-03]]. This is the [[gap-04]]. This is the [[gap-05]]. This is the [[gap-06]]. This is the [[gap-07]]. This is the [[gap-08]]. This is the [[gap-09]]. This is the [[gap-10]].",
+          "transcriptTemplate": "Listen and complete. We are at the [[gap-01]] today. Our [[gap-02]] is near the lake. I have a warm [[gap-03]]. I put a [[gap-04]] in my bag. We sit by the [[gap-05]]. My [[gap-06]] is heavy. Dad looks at the [[gap-07]]. The [[gap-08]] is very quiet. I wear my [[gap-09]]. We walk along the [[gap-10]].",
           "wordBank": [
             {
               "wordId": "english-pre-a1-m085-listening-word-01",

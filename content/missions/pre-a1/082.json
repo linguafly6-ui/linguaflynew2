@@ -99,28 +99,29 @@
           }
         ],
         "theory": {
-          "title": "Frases y vocabulario de la misión",
-          "explanation": "Observa el orden de las palabras en las frases y relaciona cada expresión con su significado en español.",
+          "title": "At the fire station",
+          "explanation": "Usa «A firefighter wears…» para hablar del equipo y «The fire engine has…» para describir el vehículo.",
           "patterns": [
             {
               "label": "Modelo",
-              "pattern": "Where is the fire station?",
+              "pattern": "A firefighter wears a helmet.",
               "examples": [
-                "Where is the fire station?",
-                "Where is the firefighter?",
-                "Where is the fire engine?"
+                "A firefighter wears a helmet.",
+                "The fire engine is red.",
+                "The firefighter uses a hose."
               ]
             },
             {
-              "label": "Traducción",
-              "pattern": "English sentence → significado en español",
+              "label": "Pregunta y respuesta",
+              "pattern": "Lee el modelo y cambia una palabra para hablar de otra cosa.",
               "examples": [
-                "Where is the helmet?",
-                "Where is the hose?"
+                "A firefighter wears a helmet.",
+                "The fire engine is red.",
+                "The firefighter uses a hose."
               ]
             }
           ],
-          "tip": "Lee la frase completa antes de elegir la traducción."
+          "tip": "Escucha el modelo, repite la frase y cambia una palabra para crear una frase nueva."
         }
       }
     },
@@ -426,131 +427,131 @@
           {
             "itemId": "english-pre-a1-m082-grammar-ex01-i01",
             "position": 1,
-            "prompt": "Elige la traducción correcta: “Where is the fire station?”",
+            "prompt": "Complete: A firefighter ___ a helmet.",
             "evaluation": {
               "type": "single_choice"
             },
             "options": [
-              "¿Dónde está el parque de bomberos?",
-              "¿Dónde está el bombero?",
-              "¿Dónde está el camión de bomberos?"
+              "wears",
+              "wear",
+              "wearing"
             ]
           },
           {
             "itemId": "english-pre-a1-m082-grammar-ex01-i02",
             "position": 2,
-            "prompt": "Elige la traducción correcta: “Where is the firefighter?”",
+            "prompt": "Choose the correct sentence about the fire engine.",
             "evaluation": {
               "type": "single_choice"
             },
             "options": [
-              "¿Dónde está el bombero?",
-              "¿Dónde está el camión de bomberos?",
-              "¿Dónde está el casco?"
+              "The fire engine is red.",
+              "The fire engine are red.",
+              "The fire engine red is."
             ]
           },
           {
             "itemId": "english-pre-a1-m082-grammar-ex01-i03",
             "position": 3,
-            "prompt": "Elige la traducción correcta: “Where is the fire engine?”",
+            "prompt": "Complete: The firefighter ___ the hose.",
             "evaluation": {
               "type": "single_choice"
             },
             "options": [
-              "¿Dónde está el camión de bomberos?",
-              "¿Dónde está el casco?",
-              "¿Dónde está la manguera?"
+              "uses",
+              "use",
+              "using"
             ]
           },
           {
             "itemId": "english-pre-a1-m082-grammar-ex01-i04",
             "position": 4,
-            "prompt": "Elige la traducción correcta: “Where is the helmet?”",
+            "prompt": "Choose the correct phrase for the ladder.",
             "evaluation": {
               "type": "single_choice"
             },
             "options": [
-              "¿Dónde está el casco?",
-              "¿Dónde está la manguera?",
-              "¿Dónde está la escalera?"
+              "a long ladder",
+              "an long ladder",
+              "a ladder long"
             ]
           },
           {
             "itemId": "english-pre-a1-m082-grammar-ex01-i05",
             "position": 5,
-            "prompt": "Elige la traducción correcta: “Where is the hose?”",
+            "prompt": "Complete: There ___ water in the hose.",
             "evaluation": {
               "type": "single_choice"
             },
             "options": [
-              "¿Dónde está la manguera?",
-              "¿Dónde está la escalera?",
-              "¿Dónde está el fuego?"
+              "is",
+              "are",
+              "am"
             ]
           },
           {
             "itemId": "english-pre-a1-m082-grammar-ex01-i06",
             "position": 6,
-            "prompt": "Elige la traducción correcta: “Where is the ladder?”",
+            "prompt": "Choose the correct sentence about the alarm.",
             "evaluation": {
               "type": "single_choice"
             },
             "options": [
-              "¿Dónde está la escalera?",
-              "¿Dónde está el fuego?",
-              "¿Dónde está el agua?"
+              "The alarm is loud.",
+              "The alarm are loud.",
+              "The alarm loud is."
             ]
           },
           {
             "itemId": "english-pre-a1-m082-grammar-ex01-i07",
             "position": 7,
-            "prompt": "Elige la traducción correcta: “Where is the fire?”",
+            "prompt": "Complete: Firefighters ___ water.",
             "evaluation": {
               "type": "single_choice"
             },
             "options": [
-              "¿Dónde está el fuego?",
-              "¿Dónde está el agua?",
-              "¿Dónde está el uniforme?"
+              "use",
+              "uses",
+              "using"
             ]
           },
           {
             "itemId": "english-pre-a1-m082-grammar-ex01-i08",
             "position": 8,
-            "prompt": "Elige la traducción correcta: “Where is the water?”",
+            "prompt": "Choose the correct phrase for the uniform.",
             "evaluation": {
               "type": "single_choice"
             },
             "options": [
-              "¿Dónde está el agua?",
-              "¿Dónde está el uniforme?",
-              "¿Dónde está la alarma?"
+              "a blue uniform",
+              "an blue uniform",
+              "a uniform blue"
             ]
           },
           {
             "itemId": "english-pre-a1-m082-grammar-ex01-i09",
             "position": 9,
-            "prompt": "Elige la traducción correcta: “Where is the uniform?”",
+            "prompt": "Where is the firefighter in relation to the fire?",
             "evaluation": {
               "type": "single_choice"
             },
             "options": [
-              "¿Dónde está el uniforme?",
-              "¿Dónde está la alarma?",
-              "¿Dónde está el parque de bomberos?"
+              "near",
+              "under",
+              "between"
             ]
           },
           {
             "itemId": "english-pre-a1-m082-grammar-ex01-i10",
             "position": 10,
-            "prompt": "Elige la traducción correcta: “Where is the alarm?”",
+            "prompt": "Choose the correct question about the fire engine.",
             "evaluation": {
               "type": "single_choice"
             },
             "options": [
-              "¿Dónde está la alarma?",
-              "¿Dónde está el parque de bomberos?",
-              "¿Dónde está el bombero?"
+              "Where is the fire engine?",
+              "Where the fire engine is?",
+              "Where are the fire engine?"
             ]
           }
         ]
@@ -569,7 +570,7 @@
             "position": 1,
             "word": "fire station",
             "translation": "el parque de bomberos",
-            "pronunciationGuide": "Escucha el modelo británico y repite despacio.",
+            "pronunciationGuide": "Listen to “fire station”, notice the sounds, and repeat it slowly twice.",
             "audio": "tts:en-GB:fire station"
           },
           {
@@ -577,7 +578,7 @@
             "position": 2,
             "word": "firefighter",
             "translation": "el bombero",
-            "pronunciationGuide": "Escucha el modelo británico y repite despacio.",
+            "pronunciationGuide": "Listen to “firefighter”, notice the sounds, and repeat it slowly twice.",
             "audio": "tts:en-GB:firefighter"
           },
           {
@@ -585,7 +586,7 @@
             "position": 3,
             "word": "fire engine",
             "translation": "el camión de bomberos",
-            "pronunciationGuide": "Escucha el modelo británico y repite despacio.",
+            "pronunciationGuide": "Listen to “fire engine”, notice the sounds, and repeat it slowly twice.",
             "audio": "tts:en-GB:fire engine"
           },
           {
@@ -593,7 +594,7 @@
             "position": 4,
             "word": "helmet",
             "translation": "el casco",
-            "pronunciationGuide": "Escucha el modelo británico y repite despacio.",
+            "pronunciationGuide": "Listen to “helmet”, notice the sounds, and repeat it slowly twice.",
             "audio": "tts:en-GB:helmet"
           },
           {
@@ -601,7 +602,7 @@
             "position": 5,
             "word": "hose",
             "translation": "la manguera",
-            "pronunciationGuide": "Escucha el modelo británico y repite despacio.",
+            "pronunciationGuide": "Listen to “hose”, notice the sounds, and repeat it slowly twice.",
             "audio": "tts:en-GB:hose"
           },
           {
@@ -609,7 +610,7 @@
             "position": 6,
             "word": "ladder",
             "translation": "la escalera",
-            "pronunciationGuide": "Escucha el modelo británico y repite despacio.",
+            "pronunciationGuide": "Listen to “ladder”, notice the sounds, and repeat it slowly twice.",
             "audio": "tts:en-GB:ladder"
           },
           {
@@ -617,7 +618,7 @@
             "position": 7,
             "word": "fire",
             "translation": "el fuego",
-            "pronunciationGuide": "Escucha el modelo británico y repite despacio.",
+            "pronunciationGuide": "Listen to “fire”, notice the sounds, and repeat it slowly twice.",
             "audio": "tts:en-GB:fire"
           },
           {
@@ -625,7 +626,7 @@
             "position": 8,
             "word": "water",
             "translation": "el agua",
-            "pronunciationGuide": "Escucha el modelo británico y repite despacio.",
+            "pronunciationGuide": "Listen to “water”, notice the sounds, and repeat it slowly twice.",
             "audio": "tts:en-GB:water"
           },
           {
@@ -633,7 +634,7 @@
             "position": 9,
             "word": "uniform",
             "translation": "el uniforme",
-            "pronunciationGuide": "Escucha el modelo británico y repite despacio.",
+            "pronunciationGuide": "Listen to “uniform”, notice the sounds, and repeat it slowly twice.",
             "audio": "tts:en-GB:uniform"
           },
           {
@@ -641,7 +642,7 @@
             "position": 10,
             "word": "alarm",
             "translation": "la alarma",
-            "pronunciationGuide": "Escucha el modelo británico y repite despacio.",
+            "pronunciationGuide": "Listen to “alarm”, notice the sounds, and repeat it slowly twice.",
             "audio": "tts:en-GB:alarm"
           }
         ]
@@ -656,137 +657,137 @@
         "type": "reading_comprehension",
         "content": {
           "passageId": "english-pre-a1-m082-reading-passage-01",
-          "passage": "I like the fire station. I like the firefighter. I like the fire engine. I like the helmet. I like the hose. I like the ladder. I like the fire. I like the water. I like the uniform. I like the alarm."
+          "passage": "Sam visits the fire station with his class. A firefighter wears a yellow helmet. The fire engine is big and red. There is a long hose on the engine. The firefighter uses water. A ladder is on the fire engine. The alarm is loud. The firefighter wears a uniform. The fire is out. Sam says thank you."
         },
         "items": [
           {
             "itemId": "english-pre-a1-m082-reading-ex01-i01",
             "position": 1,
-            "prompt": "¿Qué significa “I like the fire station.”?",
+            "prompt": "Where does Sam go?",
             "evaluation": {
               "type": "single_choice"
             },
             "options": [
-              "Me gusta el parque de bomberos.",
-              "Me gusta el bombero.",
-              "Me gusta el camión de bomberos."
+              "To the fire station",
+              "To the farm shop",
+              "To the cinema"
             ]
           },
           {
             "itemId": "english-pre-a1-m082-reading-ex01-i02",
             "position": 2,
-            "prompt": "¿Qué significa “I like the firefighter.”?",
+            "prompt": "Who wears a yellow helmet?",
             "evaluation": {
               "type": "single_choice"
             },
             "options": [
-              "Me gusta el bombero.",
-              "Me gusta el camión de bomberos.",
-              "Me gusta el casco."
+              "A firefighter",
+              "A farmer",
+              "A doctor"
             ]
           },
           {
             "itemId": "english-pre-a1-m082-reading-ex01-i03",
             "position": 3,
-            "prompt": "¿Qué significa “I like the fire engine.”?",
+            "prompt": "What colour is the fire engine?",
             "evaluation": {
               "type": "single_choice"
             },
             "options": [
-              "Me gusta el camión de bomberos.",
-              "Me gusta el casco.",
-              "Me gusta la manguera."
+              "Red",
+              "Blue",
+              "Green"
             ]
           },
           {
             "itemId": "english-pre-a1-m082-reading-ex01-i04",
             "position": 4,
-            "prompt": "¿Qué significa “I like the helmet.”?",
+            "prompt": "What is on the engine?",
             "evaluation": {
               "type": "single_choice"
             },
             "options": [
-              "Me gusta el casco.",
-              "Me gusta la manguera.",
-              "Me gusta la escalera."
+              "A long hose",
+              "A tent",
+              "A kite"
             ]
           },
           {
             "itemId": "english-pre-a1-m082-reading-ex01-i05",
             "position": 5,
-            "prompt": "¿Qué significa “I like the hose.”?",
+            "prompt": "What does the firefighter use?",
             "evaluation": {
               "type": "single_choice"
             },
             "options": [
-              "Me gusta la manguera.",
-              "Me gusta la escalera.",
-              "Me gusta el fuego."
+              "Water",
+              "Milk",
+              "Juice"
             ]
           },
           {
             "itemId": "english-pre-a1-m082-reading-ex01-i06",
             "position": 6,
-            "prompt": "¿Qué significa “I like the ladder.”?",
+            "prompt": "Where is the ladder?",
             "evaluation": {
               "type": "single_choice"
             },
             "options": [
-              "Me gusta la escalera.",
-              "Me gusta el fuego.",
-              "Me gusta el agua."
+              "On the fire engine",
+              "In the café",
+              "Under the bed"
             ]
           },
           {
             "itemId": "english-pre-a1-m082-reading-ex01-i07",
             "position": 7,
-            "prompt": "¿Qué significa “I like the fire.”?",
+            "prompt": "How is the alarm?",
             "evaluation": {
               "type": "single_choice"
             },
             "options": [
-              "Me gusta el fuego.",
-              "Me gusta el agua.",
-              "Me gusta el uniforme."
+              "Loud",
+              "Quiet",
+              "Small"
             ]
           },
           {
             "itemId": "english-pre-a1-m082-reading-ex01-i08",
             "position": 8,
-            "prompt": "¿Qué significa “I like the water.”?",
+            "prompt": "What does the firefighter wear?",
             "evaluation": {
               "type": "single_choice"
             },
             "options": [
-              "Me gusta el agua.",
-              "Me gusta el uniforme.",
-              "Me gusta la alarma."
+              "A uniform",
+              "A swimsuit",
+              "A dress"
             ]
           },
           {
             "itemId": "english-pre-a1-m082-reading-ex01-i09",
             "position": 9,
-            "prompt": "¿Qué significa “I like the uniform.”?",
+            "prompt": "Is the fire out?",
             "evaluation": {
               "type": "single_choice"
             },
             "options": [
-              "Me gusta el uniforme.",
-              "Me gusta la alarma.",
-              "Me gusta el parque de bomberos."
+              "Yes",
+              "No",
+              "The text does not say"
             ]
           },
           {
             "itemId": "english-pre-a1-m082-reading-ex01-i10",
             "position": 10,
-            "prompt": "¿Qué significa “I like the alarm.”?",
+            "prompt": "What does Sam say?",
             "evaluation": {
               "type": "single_choice"
             },
             "options": [
-              "Me gusta la alarma.",
-              "Me gusta el parque de bomberos.",
-              "Me gusta el bombero."
+              "Thank you",
+              "Good night",
+              "I'm hungry"
             ]
           }
         ]
@@ -894,9 +895,9 @@
           {
             "itemId": "english-pre-a1-m082-speaking-ex01-i01",
             "position": 1,
-            "prompt": "Say the word “fire station”.",
-            "modelAnswer": "fire station",
-            "audio": "tts:en-GB:fire station",
+            "prompt": "Say the sentence. Use the model to help you: “I am at the fire station.”",
+            "modelAnswer": "I am at the fire station.",
+            "audio": "tts:en-GB:I am at the fire station.",
             "evaluation": {
               "type": "transcription_feedback",
               "transcriptionSeparateFromPronunciation": true
@@ -905,9 +906,9 @@
           {
             "itemId": "english-pre-a1-m082-speaking-ex01-i02",
             "position": 2,
-            "prompt": "Say the word “firefighter”.",
-            "modelAnswer": "firefighter",
-            "audio": "tts:en-GB:firefighter",
+            "prompt": "Say the sentence. Use the model to help you: “The firefighter is here.”",
+            "modelAnswer": "The firefighter is here.",
+            "audio": "tts:en-GB:The firefighter is here.",
             "evaluation": {
               "type": "transcription_feedback",
               "transcriptionSeparateFromPronunciation": true
@@ -916,9 +917,9 @@
           {
             "itemId": "english-pre-a1-m082-speaking-ex01-i03",
             "position": 3,
-            "prompt": "Say the word “fire engine”.",
-            "modelAnswer": "fire engine",
-            "audio": "tts:en-GB:fire engine",
+            "prompt": "Say the sentence. Use the model to help you: “The fire engine is red.”",
+            "modelAnswer": "The fire engine is red.",
+            "audio": "tts:en-GB:The fire engine is red.",
             "evaluation": {
               "type": "transcription_feedback",
               "transcriptionSeparateFromPronunciation": true
@@ -927,9 +928,9 @@
           {
             "itemId": "english-pre-a1-m082-speaking-ex01-i04",
             "position": 4,
-            "prompt": "Say the word “helmet”.",
-            "modelAnswer": "helmet",
-            "audio": "tts:en-GB:helmet",
+            "prompt": "Say the sentence. Use the model to help you: “The firefighter wears a helmet.”",
+            "modelAnswer": "The firefighter wears a helmet.",
+            "audio": "tts:en-GB:The firefighter wears a helmet.",
             "evaluation": {
               "type": "transcription_feedback",
               "transcriptionSeparateFromPronunciation": true
@@ -938,9 +939,9 @@
           {
             "itemId": "english-pre-a1-m082-speaking-ex01-i05",
             "position": 5,
-            "prompt": "Say the word “hose”.",
-            "modelAnswer": "hose",
-            "audio": "tts:en-GB:hose",
+            "prompt": "Say the sentence. Use the model to help you: “The hose is long.”",
+            "modelAnswer": "The hose is long.",
+            "audio": "tts:en-GB:The hose is long.",
             "evaluation": {
               "type": "transcription_feedback",
               "transcriptionSeparateFromPronunciation": true
@@ -949,9 +950,9 @@
           {
             "itemId": "english-pre-a1-m082-speaking-ex01-i06",
             "position": 6,
-            "prompt": "Say the word “ladder”.",
-            "modelAnswer": "ladder",
-            "audio": "tts:en-GB:ladder",
+            "prompt": "Say the sentence. Use the model to help you: “The ladder is on the engine.”",
+            "modelAnswer": "The ladder is on the engine.",
+            "audio": "tts:en-GB:The ladder is on the engine.",
             "evaluation": {
               "type": "transcription_feedback",
               "transcriptionSeparateFromPronunciation": true
@@ -960,9 +961,9 @@
           {
             "itemId": "english-pre-a1-m082-speaking-ex01-i07",
             "position": 7,
-            "prompt": "Say the word “fire”.",
-            "modelAnswer": "fire",
-            "audio": "tts:en-GB:fire",
+            "prompt": "Say the sentence. Use the model to help you: “Firefighters use water.”",
+            "modelAnswer": "Firefighters use water.",
+            "audio": "tts:en-GB:Firefighters use water.",
             "evaluation": {
               "type": "transcription_feedback",
               "transcriptionSeparateFromPronunciation": true
@@ -971,9 +972,9 @@
           {
             "itemId": "english-pre-a1-m082-speaking-ex01-i08",
             "position": 8,
-            "prompt": "Say the word “water”.",
-            "modelAnswer": "water",
-            "audio": "tts:en-GB:water",
+            "prompt": "Say the sentence. Use the model to help you: “The uniform is yellow.”",
+            "modelAnswer": "The uniform is yellow.",
+            "audio": "tts:en-GB:The uniform is yellow.",
             "evaluation": {
               "type": "transcription_feedback",
               "transcriptionSeparateFromPronunciation": true
@@ -982,9 +983,9 @@
           {
             "itemId": "english-pre-a1-m082-speaking-ex01-i09",
             "position": 9,
-            "prompt": "Say the word “uniform”.",
-            "modelAnswer": "uniform",
-            "audio": "tts:en-GB:uniform",
+            "prompt": "Say the sentence. Use the model to help you: “The alarm is loud.”",
+            "modelAnswer": "The alarm is loud.",
+            "audio": "tts:en-GB:The alarm is loud.",
             "evaluation": {
               "type": "transcription_feedback",
               "transcriptionSeparateFromPronunciation": true
@@ -993,9 +994,9 @@
           {
             "itemId": "english-pre-a1-m082-speaking-ex01-i10",
             "position": 10,
-            "prompt": "Say the word “alarm”.",
-            "modelAnswer": "alarm",
-            "audio": "tts:en-GB:alarm",
+            "prompt": "Say the sentence. Use the model to help you: “The fire is out.”",
+            "modelAnswer": "The fire is out.",
+            "audio": "tts:en-GB:The fire is out.",
             "evaluation": {
               "type": "transcription_feedback",
               "transcriptionSeparateFromPronunciation": true
@@ -1012,9 +1013,9 @@
         "exerciseId": "english-pre-a1-m082-listening-ex01",
         "type": "listening_gap_fill",
         "content": {
-          "audio": "tts:en-GB:Listen and complete. This is the fire station. This is the firefighter. This is the fire engine. This is the helmet. This is the hose. This is the ladder. This is the fire. This is the water. This is the uniform. This is the alarm.",
+          "audio": "tts:en-GB:Listen and complete. We visit the fire station today. A firefighter is at the door. The red fire engine is big. The firefighter wears a helmet. There is a long hose. The ladder is on the truck. Firefighters put out a fire with water. The uniform is clean. The alarm is loud.",
           "audioLocale": "en-GB",
-          "transcriptTemplate": "Listen and complete. This is the [[gap-01]]. This is the [[gap-02]]. This is the [[gap-03]]. This is the [[gap-04]]. This is the [[gap-05]]. This is the [[gap-06]]. This is the [[gap-07]]. This is the [[gap-08]]. This is the [[gap-09]]. This is the [[gap-10]].",
+          "transcriptTemplate": "Listen and complete. We visit the [[gap-01]] today. A [[gap-02]] is at the door. The red [[gap-03]] is big. The firefighter wears a [[gap-04]]. There is a long [[gap-05]]. The [[gap-06]] is on the truck. Firefighters put out a [[gap-07]] with [[gap-08]]. The [[gap-09]] is clean. The [[gap-10]] is loud.",
           "wordBank": [
             {
               "wordId": "english-pre-a1-m082-listening-word-01",

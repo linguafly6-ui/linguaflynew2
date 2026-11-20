@@ -99,28 +99,29 @@
           }
         ],
         "theory": {
-          "title": "Frases y vocabulario de la misión",
-          "explanation": "Observa el orden de las palabras en las frases y relaciona cada expresión con su significado en español.",
+          "title": "At the doctor's: How I feel",
+          "explanation": "Usa «I feel…» y «I am…» para decir cómo te encuentras. Puedes añadir «today» para hablar de hoy.",
           "patterns": [
             {
               "label": "Modelo",
-              "pattern": "Where is the tired?",
+              "pattern": "I feel tired today.",
               "examples": [
-                "Where is the tired?",
-                "Where is the hungry?",
-                "Where is the thirsty?"
+                "I feel tired today.",
+                "I am hungry and thirsty.",
+                "I am better now."
               ]
             },
             {
-              "label": "Traducción",
-              "pattern": "English sentence → significado en español",
+              "label": "Pregunta y respuesta",
+              "pattern": "Lee el modelo y cambia una palabra para hablar de otra cosa.",
               "examples": [
-                "Where is the cold?",
-                "Where is the hot?"
+                "I feel tired today.",
+                "I am hungry and thirsty.",
+                "I am better now."
               ]
             }
           ],
-          "tip": "Lee la frase completa antes de elegir la traducción."
+          "tip": "Escucha el modelo, repite la frase y cambia una palabra para crear una frase nueva."
         }
       }
     },
@@ -276,140 +277,140 @@
             "itemId": "english-pre-a1-m090-practice-ex01-i11",
             "position": 11,
             "taskType": "translation_multiple_choice",
-            "prompt": "Traduce la frase: “I can see the tired.”",
+            "prompt": "Traduce la frase: “I am tired today.”",
             "evaluation": {
               "type": "single_choice"
             },
             "options": [
-              "Puedo ver cansado.",
-              "Puedo ver hambriento.",
-              "Puedo ver sediento."
+              "Estoy cansado hoy.",
+              "Tengo hambre.",
+              "Tengo sed."
             ]
           },
           {
             "itemId": "english-pre-a1-m090-practice-ex01-i12",
             "position": 12,
             "taskType": "translation_multiple_choice",
-            "prompt": "Traduce la frase: “I can see the hungry.”",
+            "prompt": "Traduce la frase: “I am hungry.”",
             "evaluation": {
               "type": "single_choice"
             },
             "options": [
-              "Puedo ver hambriento.",
-              "Puedo ver sediento.",
-              "Puedo ver tener frío."
+              "Tengo hambre.",
+              "Tengo sed.",
+              "Tengo frío."
             ]
           },
           {
             "itemId": "english-pre-a1-m090-practice-ex01-i13",
             "position": 13,
             "taskType": "translation_multiple_choice",
-            "prompt": "Traduce la frase: “I can see the thirsty.”",
+            "prompt": "Traduce la frase: “I am thirsty.”",
             "evaluation": {
               "type": "single_choice"
             },
             "options": [
-              "Puedo ver sediento.",
-              "Puedo ver tener frío.",
-              "Puedo ver tener calor."
+              "Tengo sed.",
+              "Tengo frío.",
+              "Tengo calor."
             ]
           },
           {
             "itemId": "english-pre-a1-m090-practice-ex01-i14",
             "position": 14,
             "taskType": "translation_multiple_choice",
-            "prompt": "Traduce la frase: “I can see the cold.”",
+            "prompt": "Traduce la frase: “I feel cold.”",
             "evaluation": {
               "type": "single_choice"
             },
             "options": [
-              "Puedo ver tener frío.",
-              "Puedo ver tener calor.",
-              "Puedo ver contento."
+              "Tengo frío.",
+              "Tengo calor.",
+              "Estoy contento."
             ]
           },
           {
             "itemId": "english-pre-a1-m090-practice-ex01-i15",
             "position": 15,
             "taskType": "translation_multiple_choice",
-            "prompt": "Traduce la frase: “I can see the hot.”",
+            "prompt": "Traduce la frase: “I feel hot.”",
             "evaluation": {
               "type": "single_choice"
             },
             "options": [
-              "Puedo ver tener calor.",
-              "Puedo ver contento.",
-              "Puedo ver triste."
+              "Tengo calor.",
+              "Estoy contento.",
+              "Estoy triste."
             ]
           },
           {
             "itemId": "english-pre-a1-m090-practice-ex01-i16",
             "position": 16,
             "taskType": "translation_multiple_choice",
-            "prompt": "Traduce la frase: “I can see the happy.”",
+            "prompt": "Traduce la frase: “I am happy.”",
             "evaluation": {
               "type": "single_choice"
             },
             "options": [
-              "Puedo ver contento.",
-              "Puedo ver triste.",
-              "Puedo ver enfermo."
+              "Estoy contento.",
+              "Estoy triste.",
+              "Estoy enfermo."
             ]
           },
           {
             "itemId": "english-pre-a1-m090-practice-ex01-i17",
             "position": 17,
             "taskType": "translation_multiple_choice",
-            "prompt": "Traduce la frase: “I can see the sad.”",
+            "prompt": "Traduce la frase: “I am sad.”",
             "evaluation": {
               "type": "single_choice"
             },
             "options": [
-              "Puedo ver triste.",
-              "Puedo ver enfermo.",
-              "Puedo ver mejor."
+              "Estoy triste.",
+              "Estoy enfermo.",
+              "Me siento mejor ahora."
             ]
           },
           {
             "itemId": "english-pre-a1-m090-practice-ex01-i18",
             "position": 18,
             "taskType": "translation_multiple_choice",
-            "prompt": "Traduce la frase: “I can see the ill.”",
+            "prompt": "Traduce la frase: “I am ill.”",
             "evaluation": {
               "type": "single_choice"
             },
             "options": [
-              "Puedo ver enfermo.",
-              "Puedo ver mejor.",
-              "Puedo ver bien."
+              "Estoy enfermo.",
+              "Me siento mejor ahora.",
+              "Estoy bien."
             ]
           },
           {
             "itemId": "english-pre-a1-m090-practice-ex01-i19",
             "position": 19,
             "taskType": "translation_multiple_choice",
-            "prompt": "Traduce la frase: “I can see the better.”",
+            "prompt": "Traduce la frase: “I feel better now.”",
             "evaluation": {
               "type": "single_choice"
             },
             "options": [
-              "Puedo ver mejor.",
-              "Puedo ver bien.",
-              "Puedo ver cansado."
+              "Me siento mejor ahora.",
+              "Estoy bien.",
+              "Estoy cansado hoy."
             ]
           },
           {
             "itemId": "english-pre-a1-m090-practice-ex01-i20",
             "position": 20,
             "taskType": "translation_multiple_choice",
-            "prompt": "Traduce la frase: “I can see the well.”",
+            "prompt": "Traduce la frase: “I am well.”",
             "evaluation": {
               "type": "single_choice"
             },
             "options": [
-              "Puedo ver bien.",
-              "Puedo ver cansado.",
-              "Puedo ver hambriento."
+              "Estoy bien.",
+              "Estoy cansado hoy.",
+              "Tengo hambre."
             ]
           }
         ]
@@ -426,131 +427,131 @@
           {
             "itemId": "english-pre-a1-m090-grammar-ex01-i01",
             "position": 1,
-            "prompt": "Elige la traducción correcta: “Where is the tired?”",
+            "prompt": "Complete: I ___ tired today.",
             "evaluation": {
               "type": "single_choice"
             },
             "options": [
-              "¿Dónde está cansado?",
-              "¿Dónde está hambriento?",
-              "¿Dónde está sediento?"
+              "am",
+              "is",
+              "are"
             ]
           },
           {
             "itemId": "english-pre-a1-m090-grammar-ex01-i02",
             "position": 2,
-            "prompt": "Elige la traducción correcta: “Where is the hungry?”",
+            "prompt": "Choose the correct sentence about hunger.",
             "evaluation": {
               "type": "single_choice"
             },
             "options": [
-              "¿Dónde está hambriento?",
-              "¿Dónde está sediento?",
-              "¿Dónde está tener frío?"
+              "She is hungry.",
+              "She are hungry.",
+              "She hungry is."
             ]
           },
           {
             "itemId": "english-pre-a1-m090-grammar-ex01-i03",
             "position": 3,
-            "prompt": "Elige la traducción correcta: “Where is the thirsty?”",
+            "prompt": "Complete: I ___ thirsty.",
             "evaluation": {
               "type": "single_choice"
             },
             "options": [
-              "¿Dónde está sediento?",
-              "¿Dónde está tener frío?",
-              "¿Dónde está tener calor?"
+              "am",
+              "is",
+              "be"
             ]
           },
           {
             "itemId": "english-pre-a1-m090-grammar-ex01-i04",
             "position": 4,
-            "prompt": "Elige la traducción correcta: “Where is the cold?”",
+            "prompt": "Choose the correct sentence about feeling cold.",
             "evaluation": {
               "type": "single_choice"
             },
             "options": [
-              "¿Dónde está tener frío?",
-              "¿Dónde está tener calor?",
-              "¿Dónde está contento?"
+              "He feels cold.",
+              "He feel cold.",
+              "He feeling cold."
             ]
           },
           {
             "itemId": "english-pre-a1-m090-grammar-ex01-i05",
             "position": 5,
-            "prompt": "Elige la traducción correcta: “Where is the hot?”",
+            "prompt": "Complete: The room is ___.",
             "evaluation": {
               "type": "single_choice"
             },
             "options": [
-              "¿Dónde está tener calor?",
-              "¿Dónde está contento?",
-              "¿Dónde está triste?"
+              "hot",
+              "hots",
+              "hotting"
             ]
           },
           {
             "itemId": "english-pre-a1-m090-grammar-ex01-i06",
             "position": 6,
-            "prompt": "Elige la traducción correcta: “Where is the happy?”",
+            "prompt": "Choose the correct question about someone's health.",
             "evaluation": {
               "type": "single_choice"
             },
             "options": [
-              "¿Dónde está contento?",
-              "¿Dónde está triste?",
-              "¿Dónde está enfermo?"
+              "Are you well?",
+              "Is you well?",
+              "You are well?"
             ]
           },
           {
             "itemId": "english-pre-a1-m090-grammar-ex01-i07",
             "position": 7,
-            "prompt": "Elige la traducción correcta: “Where is the sad?”",
+            "prompt": "Complete: I am ___ today.",
             "evaluation": {
               "type": "single_choice"
             },
             "options": [
-              "¿Dónde está triste?",
-              "¿Dónde está enfermo?",
-              "¿Dónde está mejor?"
+              "happy",
+              "happily",
+              "happiness"
             ]
           },
           {
             "itemId": "english-pre-a1-m090-grammar-ex01-i08",
             "position": 8,
-            "prompt": "Elige la traducción correcta: “Where is the ill?”",
+            "prompt": "Choose the correct sentence about feeling sad.",
             "evaluation": {
               "type": "single_choice"
             },
             "options": [
-              "¿Dónde está enfermo?",
-              "¿Dónde está mejor?",
-              "¿Dónde está bien?"
+              "I feel sad.",
+              "I feels sad.",
+              "I feeling sad."
             ]
           },
           {
             "itemId": "english-pre-a1-m090-grammar-ex01-i09",
             "position": 9,
-            "prompt": "Elige la traducción correcta: “Where is the better?”",
+            "prompt": "Complete: She is ill, but now she is ___.",
             "evaluation": {
               "type": "single_choice"
             },
             "options": [
-              "¿Dónde está mejor?",
-              "¿Dónde está bien?",
-              "¿Dónde está cansado?"
+              "better",
+              "best",
+              "gooder"
             ]
           },
           {
             "itemId": "english-pre-a1-m090-grammar-ex01-i10",
             "position": 10,
-            "prompt": "Elige la traducción correcta: “Where is the well?”",
+            "prompt": "Choose the correct sentence about feeling well.",
             "evaluation": {
               "type": "single_choice"
             },
             "options": [
-              "¿Dónde está bien?",
-              "¿Dónde está cansado?",
-              "¿Dónde está hambriento?"
+              "I am well now.",
+              "I are well now.",
+              "I well am now."
             ]
           }
         ]
@@ -569,7 +570,7 @@
             "position": 1,
             "word": "tired",
             "translation": "cansado",
-            "pronunciationGuide": "Escucha el modelo británico y repite despacio.",
+            "pronunciationGuide": "Listen to “tired”, notice the sounds, and repeat it slowly twice.",
             "audio": "tts:en-GB:tired"
           },
           {
@@ -577,7 +578,7 @@
             "position": 2,
             "word": "hungry",
             "translation": "hambriento",
-            "pronunciationGuide": "Escucha el modelo británico y repite despacio.",
+            "pronunciationGuide": "Listen to “hungry”, notice the sounds, and repeat it slowly twice.",
             "audio": "tts:en-GB:hungry"
           },
           {
@@ -585,7 +586,7 @@
             "position": 3,
             "word": "thirsty",
             "translation": "sediento",
-            "pronunciationGuide": "Escucha el modelo británico y repite despacio.",
+            "pronunciationGuide": "Listen to “thirsty”, notice the sounds, and repeat it slowly twice.",
             "audio": "tts:en-GB:thirsty"
           },
           {
@@ -593,7 +594,7 @@
             "position": 4,
             "word": "cold",
             "translation": "tener frío",
-            "pronunciationGuide": "Escucha el modelo británico y repite despacio.",
+            "pronunciationGuide": "Listen to “cold”, notice the sounds, and repeat it slowly twice.",
             "audio": "tts:en-GB:cold"
           },
           {
@@ -601,7 +602,7 @@
             "position": 5,
             "word": "hot",
             "translation": "tener calor",
-            "pronunciationGuide": "Escucha el modelo británico y repite despacio.",
+            "pronunciationGuide": "Listen to “hot”, notice the sounds, and repeat it slowly twice.",
             "audio": "tts:en-GB:hot"
           },
           {
@@ -609,7 +610,7 @@
             "position": 6,
             "word": "happy",
             "translation": "contento",
-            "pronunciationGuide": "Escucha el modelo británico y repite despacio.",
+            "pronunciationGuide": "Listen to “happy”, notice the sounds, and repeat it slowly twice.",
             "audio": "tts:en-GB:happy"
           },
           {
@@ -617,7 +618,7 @@
             "position": 7,
             "word": "sad",
             "translation": "triste",
-            "pronunciationGuide": "Escucha el modelo británico y repite despacio.",
+            "pronunciationGuide": "Listen to “sad”, notice the sounds, and repeat it slowly twice.",
             "audio": "tts:en-GB:sad"
           },
           {
@@ -625,7 +626,7 @@
             "position": 8,
             "word": "ill",
             "translation": "enfermo",
-            "pronunciationGuide": "Escucha el modelo británico y repite despacio.",
+            "pronunciationGuide": "Listen to “ill”, notice the sounds, and repeat it slowly twice.",
             "audio": "tts:en-GB:ill"
           },
           {
@@ -633,7 +634,7 @@
             "position": 9,
             "word": "better",
             "translation": "mejor",
-            "pronunciationGuide": "Escucha el modelo británico y repite despacio.",
+            "pronunciationGuide": "Listen to “better”, notice the sounds, and repeat it slowly twice.",
             "audio": "tts:en-GB:better"
           },
           {
@@ -641,7 +642,7 @@
             "position": 10,
             "word": "well",
             "translation": "bien",
-            "pronunciationGuide": "Escucha el modelo británico y repite despacio.",
+            "pronunciationGuide": "Listen to “well”, notice the sounds, and repeat it slowly twice.",
             "audio": "tts:en-GB:well"
           }
         ]
@@ -656,137 +657,137 @@
         "type": "reading_comprehension",
         "content": {
           "passageId": "english-pre-a1-m090-reading-passage-01",
-          "passage": "I like the tired. I like the hungry. I like the thirsty. I like the cold. I like the hot. I like the happy. I like the sad. I like the ill. I like the better. I like the well."
+          "passage": "Mia visits the doctor with Mum. She feels tired today. She is hungry after school. She is also thirsty. The waiting room is cold. Mum gives her some water. Mia feels sad because she is ill. The doctor talks to Mia. After a rest, she feels better. At home, Mia is happy and well."
         },
         "items": [
           {
             "itemId": "english-pre-a1-m090-reading-ex01-i01",
             "position": 1,
-            "prompt": "¿Qué significa “I like the tired.”?",
+            "prompt": "Who visits the doctor?",
             "evaluation": {
               "type": "single_choice"
             },
             "options": [
-              "Me gusta cansado.",
-              "Me gusta hambriento.",
-              "Me gusta sediento."
+              "Mia",
+              "Ben",
+              "Nora"
             ]
           },
           {
             "itemId": "english-pre-a1-m090-reading-ex01-i02",
             "position": 2,
-            "prompt": "¿Qué significa “I like the hungry.”?",
+            "prompt": "Who goes with Mia?",
             "evaluation": {
               "type": "single_choice"
             },
             "options": [
-              "Me gusta hambriento.",
-              "Me gusta sediento.",
-              "Me gusta tener frío."
+              "Mum",
+              "Dad",
+              "Her teacher"
             ]
           },
           {
             "itemId": "english-pre-a1-m090-reading-ex01-i03",
             "position": 3,
-            "prompt": "¿Qué significa “I like the thirsty.”?",
+            "prompt": "How does Mia feel today?",
             "evaluation": {
               "type": "single_choice"
             },
             "options": [
-              "Me gusta sediento.",
-              "Me gusta tener frío.",
-              "Me gusta tener calor."
+              "Tired",
+              "Angry",
+              "Excited"
             ]
           },
           {
             "itemId": "english-pre-a1-m090-reading-ex01-i04",
             "position": 4,
-            "prompt": "¿Qué significa “I like the cold.”?",
+            "prompt": "When is Mia hungry?",
             "evaluation": {
               "type": "single_choice"
             },
             "options": [
-              "Me gusta tener frío.",
-              "Me gusta tener calor.",
-              "Me gusta contento."
+              "After school",
+              "At breakfast",
+              "At night"
             ]
           },
           {
             "itemId": "english-pre-a1-m090-reading-ex01-i05",
             "position": 5,
-            "prompt": "¿Qué significa “I like the hot.”?",
+            "prompt": "What does Mia need?",
             "evaluation": {
               "type": "single_choice"
             },
             "options": [
-              "Me gusta tener calor.",
-              "Me gusta contento.",
-              "Me gusta triste."
+              "Water",
+              "A toy",
+              "A ticket"
             ]
           },
           {
             "itemId": "english-pre-a1-m090-reading-ex01-i06",
             "position": 6,
-            "prompt": "¿Qué significa “I like the happy.”?",
+            "prompt": "How is the waiting room?",
             "evaluation": {
               "type": "single_choice"
             },
             "options": [
-              "Me gusta contento.",
-              "Me gusta triste.",
-              "Me gusta enfermo."
+              "Cold",
+              "Hot",
+              "Sunny"
             ]
           },
           {
             "itemId": "english-pre-a1-m090-reading-ex01-i07",
             "position": 7,
-            "prompt": "¿Qué significa “I like the sad.”?",
+            "prompt": "Why does Mia feel sad?",
             "evaluation": {
               "type": "single_choice"
             },
             "options": [
-              "Me gusta triste.",
-              "Me gusta enfermo.",
-              "Me gusta mejor."
+              "She is ill",
+              "She lost a toy",
+              "She is late"
             ]
           },
           {
             "itemId": "english-pre-a1-m090-reading-ex01-i08",
             "position": 8,
-            "prompt": "¿Qué significa “I like the ill.”?",
+            "prompt": "Who talks to Mia?",
             "evaluation": {
               "type": "single_choice"
             },
             "options": [
-              "Me gusta enfermo.",
-              "Me gusta mejor.",
-              "Me gusta bien."
+              "The doctor",
+              "The farmer",
+              "The waiter"
             ]
           },
           {
             "itemId": "english-pre-a1-m090-reading-ex01-i09",
             "position": 9,
-            "prompt": "¿Qué significa “I like the better.”?",
+            "prompt": "How does Mia feel after a rest?",
             "evaluation": {
               "type": "single_choice"
             },
             "options": [
-              "Me gusta mejor.",
-              "Me gusta bien.",
-              "Me gusta cansado."
+              "Better",
+              "Worse",
+              "Hungry"
             ]
           },
           {
             "itemId": "english-pre-a1-m090-reading-ex01-i10",
             "position": 10,
-            "prompt": "¿Qué significa “I like the well.”?",
+            "prompt": "How is Mia at home?",
             "evaluation": {
               "type": "single_choice"
             },
             "options": [
-              "Me gusta bien.",
-              "Me gusta cansado.",
-              "Me gusta hambriento."
+              "Happy and well",
+              "Cold and sad",
+              "Tired and thirsty"
             ]
           }
         ]
@@ -894,9 +895,9 @@
           {
             "itemId": "english-pre-a1-m090-speaking-ex01-i01",
             "position": 1,
-            "prompt": "Say the word “tired”.",
-            "modelAnswer": "tired",
-            "audio": "tts:en-GB:tired",
+            "prompt": "Say the sentence. Use the model to help you: “I feel tired today.”",
+            "modelAnswer": "I feel tired today.",
+            "audio": "tts:en-GB:I feel tired today.",
             "evaluation": {
               "type": "transcription_feedback",
               "transcriptionSeparateFromPronunciation": true
@@ -905,9 +906,9 @@
           {
             "itemId": "english-pre-a1-m090-speaking-ex01-i02",
             "position": 2,
-            "prompt": "Say the word “hungry”.",
-            "modelAnswer": "hungry",
-            "audio": "tts:en-GB:hungry",
+            "prompt": "Say the sentence. Use the model to help you: “I am hungry.”",
+            "modelAnswer": "I am hungry.",
+            "audio": "tts:en-GB:I am hungry.",
             "evaluation": {
               "type": "transcription_feedback",
               "transcriptionSeparateFromPronunciation": true
@@ -916,9 +917,9 @@
           {
             "itemId": "english-pre-a1-m090-speaking-ex01-i03",
             "position": 3,
-            "prompt": "Say the word “thirsty”.",
-            "modelAnswer": "thirsty",
-            "audio": "tts:en-GB:thirsty",
+            "prompt": "Say the sentence. Use the model to help you: “I am thirsty.”",
+            "modelAnswer": "I am thirsty.",
+            "audio": "tts:en-GB:I am thirsty.",
             "evaluation": {
               "type": "transcription_feedback",
               "transcriptionSeparateFromPronunciation": true
@@ -927,9 +928,9 @@
           {
             "itemId": "english-pre-a1-m090-speaking-ex01-i04",
             "position": 4,
-            "prompt": "Say the word “cold”.",
-            "modelAnswer": "cold",
-            "audio": "tts:en-GB:cold",
+            "prompt": "Say the sentence. Use the model to help you: “I feel cold.”",
+            "modelAnswer": "I feel cold.",
+            "audio": "tts:en-GB:I feel cold.",
             "evaluation": {
               "type": "transcription_feedback",
               "transcriptionSeparateFromPronunciation": true
@@ -938,9 +939,9 @@
           {
             "itemId": "english-pre-a1-m090-speaking-ex01-i05",
             "position": 5,
-            "prompt": "Say the word “hot”.",
-            "modelAnswer": "hot",
-            "audio": "tts:en-GB:hot",
+            "prompt": "Say the sentence. Use the model to help you: “I feel hot.”",
+            "modelAnswer": "I feel hot.",
+            "audio": "tts:en-GB:I feel hot.",
             "evaluation": {
               "type": "transcription_feedback",
               "transcriptionSeparateFromPronunciation": true
@@ -949,9 +950,9 @@
           {
             "itemId": "english-pre-a1-m090-speaking-ex01-i06",
             "position": 6,
-            "prompt": "Say the word “happy”.",
-            "modelAnswer": "happy",
-            "audio": "tts:en-GB:happy",
+            "prompt": "Say the sentence. Use the model to help you: “I am happy.”",
+            "modelAnswer": "I am happy.",
+            "audio": "tts:en-GB:I am happy.",
             "evaluation": {
               "type": "transcription_feedback",
               "transcriptionSeparateFromPronunciation": true
@@ -960,9 +961,9 @@
           {
             "itemId": "english-pre-a1-m090-speaking-ex01-i07",
             "position": 7,
-            "prompt": "Say the word “sad”.",
-            "modelAnswer": "sad",
-            "audio": "tts:en-GB:sad",
+            "prompt": "Say the sentence. Use the model to help you: “I am sad.”",
+            "modelAnswer": "I am sad.",
+            "audio": "tts:en-GB:I am sad.",
             "evaluation": {
               "type": "transcription_feedback",
               "transcriptionSeparateFromPronunciation": true
@@ -971,9 +972,9 @@
           {
             "itemId": "english-pre-a1-m090-speaking-ex01-i08",
             "position": 8,
-            "prompt": "Say the word “ill”.",
-            "modelAnswer": "ill",
-            "audio": "tts:en-GB:ill",
+            "prompt": "Say the sentence. Use the model to help you: “I am ill today.”",
+            "modelAnswer": "I am ill today.",
+            "audio": "tts:en-GB:I am ill today.",
             "evaluation": {
               "type": "transcription_feedback",
               "transcriptionSeparateFromPronunciation": true
@@ -982,9 +983,9 @@
           {
             "itemId": "english-pre-a1-m090-speaking-ex01-i09",
             "position": 9,
-            "prompt": "Say the word “better”.",
-            "modelAnswer": "better",
-            "audio": "tts:en-GB:better",
+            "prompt": "Say the sentence. Use the model to help you: “I am better now.”",
+            "modelAnswer": "I am better now.",
+            "audio": "tts:en-GB:I am better now.",
             "evaluation": {
               "type": "transcription_feedback",
               "transcriptionSeparateFromPronunciation": true
@@ -993,9 +994,9 @@
           {
             "itemId": "english-pre-a1-m090-speaking-ex01-i10",
             "position": 10,
-            "prompt": "Say the word “well”.",
-            "modelAnswer": "well",
-            "audio": "tts:en-GB:well",
+            "prompt": "Say the sentence. Use the model to help you: “I am well, thank you.”",
+            "modelAnswer": "I am well, thank you.",
+            "audio": "tts:en-GB:I am well, thank you.",
             "evaluation": {
               "type": "transcription_feedback",
               "transcriptionSeparateFromPronunciation": true
@@ -1012,9 +1013,9 @@
         "exerciseId": "english-pre-a1-m090-listening-ex01",
         "type": "listening_gap_fill",
         "content": {
-          "audio": "tts:en-GB:Listen and complete. This is the tired. This is the hungry. This is the thirsty. This is the cold. This is the hot. This is the happy. This is the sad. This is the ill. This is the better. This is the well.",
+          "audio": "tts:en-GB:Listen and complete. Today I feel tired. I am hungry; I want some food. I am thirsty; I need water. The room is cold. The sun makes me feel hot. I am happy when I play. I am sad when my toy is lost. I am ill today, so I rest. Now I feel better. I am well again.",
           "audioLocale": "en-GB",
-          "transcriptTemplate": "Listen and complete. This is the [[gap-01]]. This is the [[gap-02]]. This is the [[gap-03]]. This is the [[gap-04]]. This is the [[gap-05]]. This is the [[gap-06]]. This is the [[gap-07]]. This is the [[gap-08]]. This is the [[gap-09]]. This is the [[gap-10]].",
+          "transcriptTemplate": "Listen and complete. Today I feel [[gap-01]]. I am [[gap-02]]; I want some food. I am [[gap-03]]; I need water. The room is [[gap-04]]. The sun makes me feel [[gap-05]]. I am [[gap-06]] when I play. I am [[gap-07]] when my toy is lost. I am [[gap-08]] today, so I rest. Now I feel [[gap-09]]. I am [[gap-10]] again.",
           "wordBank": [
             {
               "wordId": "english-pre-a1-m090-listening-word-01",
