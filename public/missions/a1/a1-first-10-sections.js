@@ -520,7 +520,39 @@ taskUI("grammar","3. Gramática · 10 ejercicios","Practica "+g.name+" con 10 re
 taskUI("reading","5. Reading · texto + 10 preguntas","Lee primero el texto y después responde. Texto: "+l.reading,readingItems);
 taskUI("writing","6. Writing · 10 dictados","Escucha palabras y frases en inglés y escríbelas.",dictationItems);
 taskUI("speaking","7. Speaking · 10 ejercicios","Responde en voz alta usando el vocabulario de la misión.",speakingItems);
-taskUI("listening","8. Listening · audio + 10 preguntas","Escucha el audio completo y responde a las preguntas. Puedes reproducir cada fragmento.",listeningItems);
+(()=>{
+ const section=document.getElementById("listening");if(!section)return;
+ const matches=[...l.listening.matchAll(/[A-Za-z]+(?:'[A-Za-z]+)?/g)];
+ const selected=new Set(Array.from({length:10},(_,i)=>Math.round(i*(matches.length-1)/9)));
+ const gaps=[...selected].sort((a,b)=>a-b).map((pos,index)=>({pos,index,answer:matches[pos][0]}));
+ const byPos=new Map(gaps.map(g=>[g.pos,g]));
+ let cursor=0,passage="";
+ matches.forEach((m,pos)=>{
+  const gap=byPos.get(pos),start=m.index;
+  passage+=esc(l.listening.slice(cursor,start));
+  passage+=gap?"<input class='a1-listen-gap' data-gap='"+gap.index+"' aria-label='Hueco "+(gap.index+1)+"' autocomplete='off' spellcheck='false' placeholder='"+(gap.index+1)+"'>":esc(m[0]);
+  cursor=start+m[0].length;
+ });
+ passage+=esc(l.listening.slice(cursor));
+ section.innerHTML="<h2>8. Listening · audio + 10 huecos</h2><p class='muted'>Escucha el audio completo y completa los diez huecos en este único texto. No hay opciones: escribe lo que realmente oyes.</p>"+keyVocabularyCard()+"<div class='a1extra-card'><button type='button' data-listen-audio>🔊 Escuchar audio completo</button><p class='a1-listen-passage'>"+passage+"</p><button type='button' data-listen-check>Comprobar las 10 respuestas</button><p class='a1extra-feedback' data-listen-feedback aria-live='polite'></p><p data-listen-result></p></div>";
+ section.querySelector("[data-listen-audio]").onclick=()=>speak(l.listening);
+ section.querySelector("[data-listen-check]").onclick=()=>{
+  let score=0;
+  gaps.forEach(g=>{
+   const input=section.querySelector("[data-gap='"+g.index+"']");
+   const norm=x=>String(x).trim().toLowerCase().replace(/[^a-z']/g,"");
+   const ok=norm(input.value)===norm(g.answer);
+   if(ok)score++;
+   input.disabled=true;
+   input.style.borderColor=ok?"#27945d":"#c94b45";
+   input.title=ok?"Correcto":"Respuesta: "+g.answer;
+  });
+  section.querySelector("[data-listen-feedback]").textContent="Has acertado "+score+" de 10 huecos.";
+  section.querySelector("[data-listen-result]").textContent="Soluciones: "+gaps.map((g,i)=>(i+1)+". "+g.answer).join(" · ");
+  section.querySelector("[data-listen-check]").disabled=true;
+ };
+ const css=document.createElement("style");css.textContent=".a1-listen-passage{font-size:18px;line-height:2.5;margin:20px 0;color:#20345d}.a1-listen-gap{display:inline-block;width:clamp(76px,11vw,120px);margin:3px 4px;padding:7px 8px;border:1px solid #8da4ca;border-radius:7px;background:#fff;color:#20345d;font:inherit;font-size:15px;text-align:center}.a1-listen-gap:disabled{opacity:1;background:#f2f5fb}";document.head.appendChild(css);
+})();
 
 nav.querySelectorAll("[data-tab]").forEach(b=>b.addEventListener("click",()=>{nav.querySelectorAll("[data-tab]").forEach(x=>x.classList.toggle("active",x===b));main.querySelectorAll(".panel").forEach(p=>p.classList.toggle("active",p.id===b.dataset.tab));}));
 document.addEventListener("click",e=>{const b=e.target.closest(".a1extra-say");if(!b)return;if(!("speechSynthesis"in window))return;speechSynthesis.cancel();const u=new SpeechSynthesisUtterance(b.dataset.say);u.lang="en-GB";speechSynthesis.speak(u);});
