@@ -98,6 +98,12 @@ root.querySelector(".lf-shell").appendChild(speakingPanel);
 
 var writingTab=document.createElement("button");writingTab.type="button";writingTab.dataset.tab="writing";writingTab.textContent="8. Writing";document.querySelector(".lf-tabs").appendChild(writingTab);
 var writingPanel=document.createElement("section");writingPanel.id="writing";writingPanel.className="lf-panel";writingPanel.innerHTML='<h2>Writing · Expresión escrita</h2><p class="lf-muted">Practica la escritura en inglés paso a paso con el vocabulario y los modelos de esta misión. Escribe tus propias respuestas y revísalas antes de terminar.</p><div id="lf-writing-content"></div>';root.querySelector(".lf-shell").appendChild(writingPanel);
+var orderedTabIds=["explore","practice","grammar","pronunciation","reading","writing","speaking","listening"];
+var orderedTabLabels={"explore":"1. Exploración","practice":"2. Práctica · 20 retos","grammar":"3. Gramática","pronunciation":"4. Pronunciación","reading":"5. Reading","writing":"6. Writing","speaking":"7. Speaking","listening":"8. Listening"};
+var orderedNav=root.querySelector(".lf-tabs"),orderedShell=root.querySelector(".lf-shell");
+orderedTabIds.forEach(function(id){var button=orderedNav.querySelector('[data-tab="'+id+'"]'),panel=document.getElementById(id);if(button){button.textContent=orderedTabLabels[id];orderedNav.appendChild(button);}if(panel)orderedShell.appendChild(panel);});
+
+
 speakingTab.addEventListener("click",function(){document.querySelectorAll(".lf-tabs button").forEach(function(x){x.classList.toggle("active",x===speakingTab);});document.querySelectorAll(".lf-panel").forEach(function(x){x.classList.toggle("active",x.id==="speaking");});});
 
 function speak(text,reps){if(!("speechSynthesis" in window)||!("SpeechSynthesisUtterance" in window))return;window.speechSynthesis.cancel();var left=reps||1;function play(){if(left<=0)return;left--;var u=new SpeechSynthesisUtterance(String(text));u.lang="en-GB";u.rate=.86;u.onend=function(){if(left>0)play();};window.speechSynthesis.speak(u);}play();}
