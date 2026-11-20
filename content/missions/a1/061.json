@@ -1,0 +1,1205 @@
+{
+  "schemaVersion": "1.2.0",
+  "contentVersion": 1,
+  "course": {
+    "courseId": "english-a1",
+    "level": "A1",
+    "language": "en-GB"
+  },
+  "unit": {
+    "unitId": "english-a1-unit-07",
+    "courseId": "english-a1",
+    "position": 7,
+    "title": "Free time, hobbies and abilities"
+  },
+  "mission": {
+    "missionId": "english-a1-m061",
+    "unitId": "english-a1-unit-07",
+    "position": 61,
+    "title": "Free Time Activities"
+  },
+  "sections": [
+    {
+      "sectionId": "english-a1-m061-explore",
+      "sectionKey": "explore",
+      "position": 1,
+      "title": "explore",
+      "exercise": {
+        "exerciseId": "english-a1-m061-explore-ex01",
+        "type": "vocabulary_pairs",
+        "items": [
+          {
+            "itemId": "english-a1-m061-explore-ex01-i01",
+            "position": 1,
+            "english": "read",
+            "spanish": "leer",
+            "audio": "tts:en-GB:read"
+          },
+          {
+            "itemId": "english-a1-m061-explore-ex01-i02",
+            "position": 2,
+            "english": "listen to music",
+            "spanish": "escuchar música",
+            "audio": "tts:en-GB:listen to music"
+          },
+          {
+            "itemId": "english-a1-m061-explore-ex01-i03",
+            "position": 3,
+            "english": "dance",
+            "spanish": "bailar",
+            "audio": "tts:en-GB:dance"
+          },
+          {
+            "itemId": "english-a1-m061-explore-ex01-i04",
+            "position": 4,
+            "english": "draw",
+            "spanish": "dibujar",
+            "audio": "tts:en-GB:draw"
+          },
+          {
+            "itemId": "english-a1-m061-explore-ex01-i05",
+            "position": 5,
+            "english": "cook",
+            "spanish": "cocinar",
+            "audio": "tts:en-GB:cook"
+          },
+          {
+            "itemId": "english-a1-m061-explore-ex01-i06",
+            "position": 6,
+            "english": "watch films",
+            "spanish": "ver películas",
+            "audio": "tts:en-GB:watch films"
+          },
+          {
+            "itemId": "english-a1-m061-explore-ex01-i07",
+            "position": 7,
+            "english": "play chess",
+            "spanish": "jugar al ajedrez",
+            "audio": "tts:en-GB:play chess"
+          },
+          {
+            "itemId": "english-a1-m061-explore-ex01-i08",
+            "position": 8,
+            "english": "take photos",
+            "spanish": "hacer fotos",
+            "audio": "tts:en-GB:take photos"
+          },
+          {
+            "itemId": "english-a1-m061-explore-ex01-i09",
+            "position": 9,
+            "english": "ride a bike",
+            "spanish": "montar en bicicleta",
+            "audio": "tts:en-GB:ride a bike"
+          },
+          {
+            "itemId": "english-a1-m061-explore-ex01-i10",
+            "position": 10,
+            "english": "go swimming",
+            "spanish": "ir a nadar",
+            "audio": "tts:en-GB:go swimming"
+          }
+        ],
+        "theory": {
+          "title": "Vocabulary: Free Time Activities",
+          "explanation": "Explora diez palabras y expresiones sobre free time activities. Escucha el modelo británico, relaciona cada palabra con su significado y úsala en una frase.",
+          "patterns": [
+            {
+              "label": "Useful language",
+              "pattern": "Short question + short answer",
+              "examples": [
+                "I read every evening.",
+                "She listens to music.",
+                "We dance at home."
+              ]
+            }
+          ],
+          "tip": "Repite las expresiones y crea un ejemplo relacionado con tu vida."
+        }
+      }
+    },
+    {
+      "sectionId": "english-a1-m061-practice",
+      "sectionKey": "practice",
+      "position": 2,
+      "title": "practice",
+      "exercise": {
+        "exerciseId": "english-a1-m061-practice-ex01",
+        "type": "mixed_practice",
+        "items": [
+          {
+            "itemId": "english-a1-m061-practice-ex01-i01",
+            "position": 1,
+            "taskType": "translation_multiple_choice",
+            "prompt": "Traduce al español: “I read every evening.”",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "Leo todas las tardes.",
+              "Ella escucha música.",
+              "Bailamos en casa."
+            ],
+            "correctAnswer": "Leo todas las tardes.",
+            "sourceEnglish": "I read every evening."
+          },
+          {
+            "itemId": "english-a1-m061-practice-ex01-i02",
+            "position": 2,
+            "taskType": "translation_multiple_choice",
+            "prompt": "Traduce al español: “She listens to music.”",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "Ella escucha música.",
+              "Bailamos en casa.",
+              "Le gusta dibujar."
+            ],
+            "correctAnswer": "Ella escucha música.",
+            "sourceEnglish": "She listens to music."
+          },
+          {
+            "itemId": "english-a1-m061-practice-ex01-i03",
+            "position": 3,
+            "taskType": "translation_multiple_choice",
+            "prompt": "Traduce al español: “We dance at home.”",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "Bailamos en casa.",
+              "Le gusta dibujar.",
+              "Cocino con mi familia."
+            ],
+            "correctAnswer": "Bailamos en casa.",
+            "sourceEnglish": "We dance at home."
+          },
+          {
+            "itemId": "english-a1-m061-practice-ex01-i04",
+            "position": 4,
+            "taskType": "translation_multiple_choice",
+            "prompt": "Traduce al español: “He likes drawing.”",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "Le gusta dibujar.",
+              "Cocino con mi familia.",
+              "Ven películas."
+            ],
+            "correctAnswer": "Le gusta dibujar.",
+            "sourceEnglish": "He likes drawing."
+          },
+          {
+            "itemId": "english-a1-m061-practice-ex01-i05",
+            "position": 5,
+            "taskType": "translation_multiple_choice",
+            "prompt": "Traduce al español: “I cook with my family.”",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "Cocino con mi familia.",
+              "Ven películas.",
+              "Leo todas las tardes."
+            ],
+            "correctAnswer": "Cocino con mi familia.",
+            "sourceEnglish": "I cook with my family."
+          },
+          {
+            "itemId": "english-a1-m061-practice-ex01-i06",
+            "position": 6,
+            "taskType": "translation_multiple_choice",
+            "prompt": "Traduce al español: “They watch films.”",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "Ven películas.",
+              "Leo todas las tardes.",
+              "Ella escucha música."
+            ],
+            "correctAnswer": "Ven películas.",
+            "sourceEnglish": "They watch films."
+          },
+          {
+            "itemId": "english-a1-m061-practice-ex01-i07",
+            "position": 7,
+            "taskType": "translation_multiple_choice",
+            "prompt": "Traduce al español: “I read every evening.”",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "Leo todas las tardes.",
+              "Ella escucha música.",
+              "Bailamos en casa."
+            ],
+            "correctAnswer": "Leo todas las tardes.",
+            "sourceEnglish": "I read every evening."
+          },
+          {
+            "itemId": "english-a1-m061-practice-ex01-i08",
+            "position": 8,
+            "taskType": "translation_multiple_choice",
+            "prompt": "Traduce al español: “She listens to music.”",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "Ella escucha música.",
+              "Bailamos en casa.",
+              "Le gusta dibujar."
+            ],
+            "correctAnswer": "Ella escucha música.",
+            "sourceEnglish": "She listens to music."
+          },
+          {
+            "itemId": "english-a1-m061-practice-ex01-i09",
+            "position": 9,
+            "taskType": "translation_multiple_choice",
+            "prompt": "Traduce al español: “We dance at home.”",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "Bailamos en casa.",
+              "Le gusta dibujar.",
+              "Cocino con mi familia."
+            ],
+            "correctAnswer": "Bailamos en casa.",
+            "sourceEnglish": "We dance at home."
+          },
+          {
+            "itemId": "english-a1-m061-practice-ex01-i10",
+            "position": 10,
+            "taskType": "translation_multiple_choice",
+            "prompt": "Traduce al español: “He likes drawing.”",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "Le gusta dibujar.",
+              "Cocino con mi familia.",
+              "Ven películas."
+            ],
+            "correctAnswer": "Le gusta dibujar.",
+            "sourceEnglish": "He likes drawing."
+          },
+          {
+            "itemId": "english-a1-m061-practice-ex01-i11",
+            "position": 11,
+            "taskType": "listening_translation_multiple_choice",
+            "prompt": "Escucha el inglés y elige su significado.",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "Leo todas las tardes.",
+              "Ella escucha música.",
+              "Bailamos en casa."
+            ],
+            "correctAnswer": "Leo todas las tardes.",
+            "sourceEnglish": "I read every evening."
+          },
+          {
+            "itemId": "english-a1-m061-practice-ex01-i12",
+            "position": 12,
+            "taskType": "listening_translation_multiple_choice",
+            "prompt": "Escucha el inglés y elige su significado.",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "Ella escucha música.",
+              "Bailamos en casa.",
+              "Le gusta dibujar."
+            ],
+            "correctAnswer": "Ella escucha música.",
+            "sourceEnglish": "She listens to music."
+          },
+          {
+            "itemId": "english-a1-m061-practice-ex01-i13",
+            "position": 13,
+            "taskType": "listening_translation_multiple_choice",
+            "prompt": "Escucha el inglés y elige su significado.",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "Bailamos en casa.",
+              "Le gusta dibujar.",
+              "Cocino con mi familia."
+            ],
+            "correctAnswer": "Bailamos en casa.",
+            "sourceEnglish": "We dance at home."
+          },
+          {
+            "itemId": "english-a1-m061-practice-ex01-i14",
+            "position": 14,
+            "taskType": "listening_translation_multiple_choice",
+            "prompt": "Escucha el inglés y elige su significado.",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "Le gusta dibujar.",
+              "Cocino con mi familia.",
+              "Ven películas."
+            ],
+            "correctAnswer": "Le gusta dibujar.",
+            "sourceEnglish": "He likes drawing."
+          },
+          {
+            "itemId": "english-a1-m061-practice-ex01-i15",
+            "position": 15,
+            "taskType": "listening_translation_multiple_choice",
+            "prompt": "Escucha el inglés y elige su significado.",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "Cocino con mi familia.",
+              "Ven películas.",
+              "Leo todas las tardes."
+            ],
+            "correctAnswer": "Cocino con mi familia.",
+            "sourceEnglish": "I cook with my family."
+          },
+          {
+            "itemId": "english-a1-m061-practice-ex01-i16",
+            "position": 16,
+            "taskType": "listening_translation_multiple_choice",
+            "prompt": "Escucha el inglés y elige su significado.",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "Ven películas.",
+              "Leo todas las tardes.",
+              "Ella escucha música."
+            ],
+            "correctAnswer": "Ven películas.",
+            "sourceEnglish": "They watch films."
+          },
+          {
+            "itemId": "english-a1-m061-practice-ex01-i17",
+            "position": 17,
+            "taskType": "listening_translation_multiple_choice",
+            "prompt": "Escucha el inglés y elige su significado.",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "Leo todas las tardes.",
+              "Ella escucha música.",
+              "Bailamos en casa."
+            ],
+            "correctAnswer": "Leo todas las tardes.",
+            "sourceEnglish": "I read every evening."
+          },
+          {
+            "itemId": "english-a1-m061-practice-ex01-i18",
+            "position": 18,
+            "taskType": "listening_translation_multiple_choice",
+            "prompt": "Escucha el inglés y elige su significado.",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "Ella escucha música.",
+              "Bailamos en casa.",
+              "Le gusta dibujar."
+            ],
+            "correctAnswer": "Ella escucha música.",
+            "sourceEnglish": "She listens to music."
+          },
+          {
+            "itemId": "english-a1-m061-practice-ex01-i19",
+            "position": 19,
+            "taskType": "listening_translation_multiple_choice",
+            "prompt": "Escucha el inglés y elige su significado.",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "Bailamos en casa.",
+              "Le gusta dibujar.",
+              "Cocino con mi familia."
+            ],
+            "correctAnswer": "Bailamos en casa.",
+            "sourceEnglish": "We dance at home."
+          },
+          {
+            "itemId": "english-a1-m061-practice-ex01-i20",
+            "position": 20,
+            "taskType": "listening_translation_multiple_choice",
+            "prompt": "Escucha el inglés y elige su significado.",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "Le gusta dibujar.",
+              "Cocino con mi familia.",
+              "Ven películas."
+            ],
+            "correctAnswer": "Le gusta dibujar.",
+            "sourceEnglish": "He likes drawing."
+          }
+        ]
+      }
+    },
+    {
+      "sectionId": "english-a1-m061-grammar",
+      "sectionKey": "grammar",
+      "position": 3,
+      "title": "grammar",
+      "exercise": {
+        "exerciseId": "english-a1-m061-grammar-ex01",
+        "type": "grammar",
+        "items": [
+          {
+            "itemId": "english-a1-m061-grammar-ex01-i01",
+            "position": 1,
+            "prompt": "I enjoy ___ books.",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "reading",
+              "read",
+              "reads"
+            ],
+            "correctAnswer": "reading"
+          },
+          {
+            "itemId": "english-a1-m061-grammar-ex01-i02",
+            "position": 2,
+            "prompt": "She likes ___ tennis.",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "playing",
+              "play",
+              "plays"
+            ],
+            "correctAnswer": "playing"
+          },
+          {
+            "itemId": "english-a1-m061-grammar-ex01-i03",
+            "position": 3,
+            "prompt": "They love ___ to music.",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "listening",
+              "listen",
+              "listens"
+            ],
+            "correctAnswer": "listening"
+          },
+          {
+            "itemId": "english-a1-m061-grammar-ex01-i04",
+            "position": 4,
+            "prompt": "He enjoys ___ photos.",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "taking",
+              "take",
+              "takes"
+            ],
+            "correctAnswer": "taking"
+          },
+          {
+            "itemId": "english-a1-m061-grammar-ex01-i05",
+            "position": 5,
+            "prompt": "We like ___ films.",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "watching",
+              "watch",
+              "watches"
+            ],
+            "correctAnswer": "watching"
+          },
+          {
+            "itemId": "english-a1-m061-grammar-ex01-i06",
+            "position": 6,
+            "prompt": "My sister enjoys ___.",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "dancing",
+              "dance",
+              "dances"
+            ],
+            "correctAnswer": "dancing"
+          },
+          {
+            "itemId": "english-a1-m061-grammar-ex01-i07",
+            "position": 7,
+            "prompt": "I don't like ___ early.",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "getting up",
+              "get up",
+              "gets up"
+            ],
+            "correctAnswer": "getting up"
+          },
+          {
+            "itemId": "english-a1-m061-grammar-ex01-i08",
+            "position": 8,
+            "prompt": "Do you enjoy ___?",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "swimming",
+              "swim",
+              "swims"
+            ],
+            "correctAnswer": "swimming"
+          },
+          {
+            "itemId": "english-a1-m061-grammar-ex01-i09",
+            "position": 9,
+            "prompt": "Tom likes ___ his bike.",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "riding",
+              "ride",
+              "rides"
+            ],
+            "correctAnswer": "riding"
+          },
+          {
+            "itemId": "english-a1-m061-grammar-ex01-i10",
+            "position": 10,
+            "prompt": "She loves ___.",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "singing",
+              "sing",
+              "sings"
+            ],
+            "correctAnswer": "singing"
+          }
+        ],
+        "theory": {
+          "title": "Like and enjoy + -ing",
+          "explanation": "Usamos like, love y enjoy para hablar de aficiones. Después de enjoy usamos un verbo terminado en -ing; después de like también es frecuente usar -ing.",
+          "patterns": [
+            {
+              "label": "Model",
+              "pattern": "I enjoy swimming",
+              "examples": [
+                "I enjoy swimming",
+                "She likes drawing."
+              ]
+            }
+          ],
+          "tip": "Lee el modelo en voz alta y fíjate en la forma verbal."
+        }
+      }
+    },
+    {
+      "sectionId": "english-a1-m061-pronunciation",
+      "sectionKey": "pronunciation",
+      "position": 4,
+      "title": "pronunciation",
+      "exercise": {
+        "exerciseId": "english-a1-m061-pronunciation-ex01",
+        "type": "pronunciation_cards",
+        "items": [
+          {
+            "itemId": "english-a1-m061-pronunciation-ex01-i01",
+            "position": 1,
+            "word": "read",
+            "translation": "leer",
+            "pronunciationGuide": "Listen to the en-GB model and keep the final consonant clear.",
+            "audio": "tts:en-GB:read"
+          },
+          {
+            "itemId": "english-a1-m061-pronunciation-ex01-i02",
+            "position": 2,
+            "word": "listen to music",
+            "translation": "escuchar música",
+            "pronunciationGuide": "Listen to the phrase as one unit and notice its main stress.",
+            "audio": "tts:en-GB:listen to music"
+          },
+          {
+            "itemId": "english-a1-m061-pronunciation-ex01-i03",
+            "position": 3,
+            "word": "dance",
+            "translation": "bailar",
+            "pronunciationGuide": "Listen to the en-GB model and keep the final consonant clear.",
+            "audio": "tts:en-GB:dance"
+          },
+          {
+            "itemId": "english-a1-m061-pronunciation-ex01-i04",
+            "position": 4,
+            "word": "draw",
+            "translation": "dibujar",
+            "pronunciationGuide": "Listen to the en-GB model and keep the final consonant clear.",
+            "audio": "tts:en-GB:draw"
+          },
+          {
+            "itemId": "english-a1-m061-pronunciation-ex01-i05",
+            "position": 5,
+            "word": "cook",
+            "translation": "cocinar",
+            "pronunciationGuide": "Listen to the en-GB model and keep the final consonant clear.",
+            "audio": "tts:en-GB:cook"
+          },
+          {
+            "itemId": "english-a1-m061-pronunciation-ex01-i06",
+            "position": 6,
+            "word": "watch films",
+            "translation": "ver películas",
+            "pronunciationGuide": "Listen to the phrase as one unit and notice its main stress.",
+            "audio": "tts:en-GB:watch films"
+          },
+          {
+            "itemId": "english-a1-m061-pronunciation-ex01-i07",
+            "position": 7,
+            "word": "play chess",
+            "translation": "jugar al ajedrez",
+            "pronunciationGuide": "Listen to the en-GB model and keep the final consonant clear.",
+            "audio": "tts:en-GB:play chess"
+          },
+          {
+            "itemId": "english-a1-m061-pronunciation-ex01-i08",
+            "position": 8,
+            "word": "take photos",
+            "translation": "hacer fotos",
+            "pronunciationGuide": "Listen to the en-GB model and keep the final consonant clear.",
+            "audio": "tts:en-GB:take photos"
+          },
+          {
+            "itemId": "english-a1-m061-pronunciation-ex01-i09",
+            "position": 9,
+            "word": "ride a bike",
+            "translation": "montar en bicicleta",
+            "pronunciationGuide": "Listen to the en-GB model and keep the final consonant clear.",
+            "audio": "tts:en-GB:ride a bike"
+          },
+          {
+            "itemId": "english-a1-m061-pronunciation-ex01-i10",
+            "position": 10,
+            "word": "go swimming",
+            "translation": "ir a nadar",
+            "pronunciationGuide": "Listen to the en-GB model and keep the final consonant clear.",
+            "audio": "tts:en-GB:go swimming"
+          }
+        ],
+        "focus": "Practica el ritmo y el acento de las palabras clave de Free Time Activities."
+      }
+    },
+    {
+      "sectionId": "english-a1-m061-reading",
+      "sectionKey": "reading",
+      "position": 5,
+      "title": "reading",
+      "exercise": {
+        "exerciseId": "english-a1-m061-reading-ex01",
+        "type": "reading_comprehension",
+        "items": [
+          {
+            "itemId": "english-a1-m061-reading-ex01-i01",
+            "position": 1,
+            "prompt": "Which English sentence means “Leo todas las tardes.”?",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "I read every evening.",
+              "She listens to music.",
+              "We dance at home."
+            ],
+            "correctAnswer": "I read every evening."
+          },
+          {
+            "itemId": "english-a1-m061-reading-ex01-i02",
+            "position": 2,
+            "prompt": "Which English sentence means “Ella escucha música.”?",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "She listens to music.",
+              "We dance at home.",
+              "He likes drawing."
+            ],
+            "correctAnswer": "She listens to music."
+          },
+          {
+            "itemId": "english-a1-m061-reading-ex01-i03",
+            "position": 3,
+            "prompt": "Which English sentence means “Bailamos en casa.”?",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "We dance at home.",
+              "He likes drawing.",
+              "I cook with my family."
+            ],
+            "correctAnswer": "We dance at home."
+          },
+          {
+            "itemId": "english-a1-m061-reading-ex01-i04",
+            "position": 4,
+            "prompt": "Which English sentence means “Le gusta dibujar.”?",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "He likes drawing.",
+              "I cook with my family.",
+              "They watch films."
+            ],
+            "correctAnswer": "He likes drawing."
+          },
+          {
+            "itemId": "english-a1-m061-reading-ex01-i05",
+            "position": 5,
+            "prompt": "Which English sentence means “Cocino con mi familia.”?",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "I cook with my family.",
+              "They watch films.",
+              "I read every evening."
+            ],
+            "correctAnswer": "I cook with my family."
+          },
+          {
+            "itemId": "english-a1-m061-reading-ex01-i06",
+            "position": 6,
+            "prompt": "Which English sentence means “Ven películas.”?",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "They watch films.",
+              "I read every evening.",
+              "She listens to music."
+            ],
+            "correctAnswer": "They watch films."
+          },
+          {
+            "itemId": "english-a1-m061-reading-ex01-i07",
+            "position": 7,
+            "prompt": "Which English sentence means “Leo todas las tardes.”?",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "I read every evening.",
+              "She listens to music.",
+              "We dance at home."
+            ],
+            "correctAnswer": "I read every evening."
+          },
+          {
+            "itemId": "english-a1-m061-reading-ex01-i08",
+            "position": 8,
+            "prompt": "Which English sentence means “Ella escucha música.”?",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "She listens to music.",
+              "We dance at home.",
+              "He likes drawing."
+            ],
+            "correctAnswer": "She listens to music."
+          },
+          {
+            "itemId": "english-a1-m061-reading-ex01-i09",
+            "position": 9,
+            "prompt": "Which English sentence means “Bailamos en casa.”?",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "We dance at home.",
+              "He likes drawing.",
+              "I read every evening."
+            ],
+            "correctAnswer": "We dance at home."
+          },
+          {
+            "itemId": "english-a1-m061-reading-ex01-i10",
+            "position": 10,
+            "prompt": "Which English sentence means “Le gusta dibujar.”?",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "He likes drawing.",
+              "I read every evening.",
+              "She listens to music."
+            ],
+            "correctAnswer": "He likes drawing."
+          }
+        ],
+        "content": {
+          "passageId": "english-a1-m061-reading-passage-01",
+          "passage": "I read every evening. She listens to music. We dance at home. He likes drawing. I cook with my family. They watch films."
+        }
+      }
+    },
+    {
+      "sectionId": "english-a1-m061-writing",
+      "sectionKey": "writing",
+      "position": 6,
+      "title": "writing",
+      "exercise": {
+        "exerciseId": "english-a1-m061-writing-ex01",
+        "type": "dictation",
+        "items": [
+          {
+            "itemId": "english-a1-m061-writing-ex01-i01",
+            "position": 1,
+            "audio": "tts:en-GB:I read every evening.",
+            "expectedAnswer": "I read every evening.",
+            "evaluation": {
+              "type": "normalised_text"
+            }
+          },
+          {
+            "itemId": "english-a1-m061-writing-ex01-i02",
+            "position": 2,
+            "audio": "tts:en-GB:She listens to music.",
+            "expectedAnswer": "She listens to music.",
+            "evaluation": {
+              "type": "normalised_text"
+            }
+          },
+          {
+            "itemId": "english-a1-m061-writing-ex01-i03",
+            "position": 3,
+            "audio": "tts:en-GB:We dance at home.",
+            "expectedAnswer": "We dance at home.",
+            "evaluation": {
+              "type": "normalised_text"
+            }
+          },
+          {
+            "itemId": "english-a1-m061-writing-ex01-i04",
+            "position": 4,
+            "audio": "tts:en-GB:He likes drawing.",
+            "expectedAnswer": "He likes drawing.",
+            "evaluation": {
+              "type": "normalised_text"
+            }
+          },
+          {
+            "itemId": "english-a1-m061-writing-ex01-i05",
+            "position": 5,
+            "audio": "tts:en-GB:I cook with my family.",
+            "expectedAnswer": "I cook with my family.",
+            "evaluation": {
+              "type": "normalised_text"
+            }
+          },
+          {
+            "itemId": "english-a1-m061-writing-ex01-i06",
+            "position": 6,
+            "audio": "tts:en-GB:They watch films.",
+            "expectedAnswer": "They watch films.",
+            "evaluation": {
+              "type": "normalised_text"
+            }
+          },
+          {
+            "itemId": "english-a1-m061-writing-ex01-i07",
+            "position": 7,
+            "audio": "tts:en-GB:I read every evening.",
+            "expectedAnswer": "I read every evening.",
+            "evaluation": {
+              "type": "normalised_text"
+            }
+          },
+          {
+            "itemId": "english-a1-m061-writing-ex01-i08",
+            "position": 8,
+            "audio": "tts:en-GB:She listens to music.",
+            "expectedAnswer": "She listens to music.",
+            "evaluation": {
+              "type": "normalised_text"
+            }
+          },
+          {
+            "itemId": "english-a1-m061-writing-ex01-i09",
+            "position": 9,
+            "audio": "tts:en-GB:We dance at home.",
+            "expectedAnswer": "We dance at home.",
+            "evaluation": {
+              "type": "normalised_text"
+            }
+          },
+          {
+            "itemId": "english-a1-m061-writing-ex01-i10",
+            "position": 10,
+            "audio": "tts:en-GB:He likes drawing.",
+            "expectedAnswer": "He likes drawing.",
+            "evaluation": {
+              "type": "normalised_text"
+            }
+          }
+        ],
+        "writingTask": "Escribe 5–6 frases sobre free time activities. Incluye vocabulario de la misión y la estructura like and enjoy + -ing.",
+        "modelText": "I read every evening. She listens to music. We dance at home. He likes drawing. I cook with my family. They watch films."
+      }
+    },
+    {
+      "sectionId": "english-a1-m061-speaking",
+      "sectionKey": "speaking",
+      "position": 7,
+      "title": "speaking",
+      "exercise": {
+        "exerciseId": "english-a1-m061-speaking-ex01",
+        "type": "speaking_prompts",
+        "items": [
+          {
+            "itemId": "english-a1-m061-speaking-ex01-i01",
+            "position": 1,
+            "prompt": "Say a sentence about this situation: Leo todas las tardes.",
+            "modelAnswer": "I read every evening.",
+            "evaluation": {
+              "type": "transcription_feedback",
+              "transcriptionSeparateFromPronunciation": true
+            }
+          },
+          {
+            "itemId": "english-a1-m061-speaking-ex01-i02",
+            "position": 2,
+            "prompt": "Say a sentence about this situation: Ella escucha música.",
+            "modelAnswer": "She listens to music.",
+            "evaluation": {
+              "type": "transcription_feedback",
+              "transcriptionSeparateFromPronunciation": true
+            }
+          },
+          {
+            "itemId": "english-a1-m061-speaking-ex01-i03",
+            "position": 3,
+            "prompt": "Say a sentence about this situation: Bailamos en casa.",
+            "modelAnswer": "We dance at home.",
+            "evaluation": {
+              "type": "transcription_feedback",
+              "transcriptionSeparateFromPronunciation": true
+            }
+          },
+          {
+            "itemId": "english-a1-m061-speaking-ex01-i04",
+            "position": 4,
+            "prompt": "Say a sentence about this situation: Le gusta dibujar.",
+            "modelAnswer": "He likes drawing.",
+            "evaluation": {
+              "type": "transcription_feedback",
+              "transcriptionSeparateFromPronunciation": true
+            }
+          },
+          {
+            "itemId": "english-a1-m061-speaking-ex01-i05",
+            "position": 5,
+            "prompt": "Say a sentence about this situation: Cocino con mi familia.",
+            "modelAnswer": "I cook with my family.",
+            "evaluation": {
+              "type": "transcription_feedback",
+              "transcriptionSeparateFromPronunciation": true
+            }
+          },
+          {
+            "itemId": "english-a1-m061-speaking-ex01-i06",
+            "position": 6,
+            "prompt": "Say a sentence about this situation: Ven películas.",
+            "modelAnswer": "They watch films.",
+            "evaluation": {
+              "type": "transcription_feedback",
+              "transcriptionSeparateFromPronunciation": true
+            }
+          },
+          {
+            "itemId": "english-a1-m061-speaking-ex01-i07",
+            "position": 7,
+            "prompt": "Say a sentence about this situation: Leo todas las tardes.",
+            "modelAnswer": "I read every evening.",
+            "evaluation": {
+              "type": "transcription_feedback",
+              "transcriptionSeparateFromPronunciation": true
+            }
+          },
+          {
+            "itemId": "english-a1-m061-speaking-ex01-i08",
+            "position": 8,
+            "prompt": "Say a sentence about this situation: Ella escucha música.",
+            "modelAnswer": "She listens to music.",
+            "evaluation": {
+              "type": "transcription_feedback",
+              "transcriptionSeparateFromPronunciation": true
+            }
+          },
+          {
+            "itemId": "english-a1-m061-speaking-ex01-i09",
+            "position": 9,
+            "prompt": "Say a sentence about this situation: Bailamos en casa.",
+            "modelAnswer": "We dance at home.",
+            "evaluation": {
+              "type": "transcription_feedback",
+              "transcriptionSeparateFromPronunciation": true
+            }
+          },
+          {
+            "itemId": "english-a1-m061-speaking-ex01-i10",
+            "position": 10,
+            "prompt": "Say a sentence about this situation: Le gusta dibujar.",
+            "modelAnswer": "He likes drawing.",
+            "evaluation": {
+              "type": "transcription_feedback",
+              "transcriptionSeparateFromPronunciation": true
+            }
+          }
+        ]
+      }
+    },
+    {
+      "sectionId": "english-a1-m061-listening",
+      "sectionKey": "listening",
+      "position": 8,
+      "title": "listening",
+      "exercise": {
+        "exerciseId": "english-a1-m061-listening-ex01",
+        "type": "listening_gap_fill",
+        "items": [
+          {
+            "itemId": "english-a1-m061-listening-ex01-i01",
+            "position": 1,
+            "gapToken": "[[gap-01]]",
+            "expectedWordId": "english-a1-m061-listening-word-01"
+          },
+          {
+            "itemId": "english-a1-m061-listening-ex01-i02",
+            "position": 2,
+            "gapToken": "[[gap-02]]",
+            "expectedWordId": "english-a1-m061-listening-word-02"
+          },
+          {
+            "itemId": "english-a1-m061-listening-ex01-i03",
+            "position": 3,
+            "gapToken": "[[gap-03]]",
+            "expectedWordId": "english-a1-m061-listening-word-03"
+          },
+          {
+            "itemId": "english-a1-m061-listening-ex01-i04",
+            "position": 4,
+            "gapToken": "[[gap-04]]",
+            "expectedWordId": "english-a1-m061-listening-word-04"
+          },
+          {
+            "itemId": "english-a1-m061-listening-ex01-i05",
+            "position": 5,
+            "gapToken": "[[gap-05]]",
+            "expectedWordId": "english-a1-m061-listening-word-05"
+          },
+          {
+            "itemId": "english-a1-m061-listening-ex01-i06",
+            "position": 6,
+            "gapToken": "[[gap-06]]",
+            "expectedWordId": "english-a1-m061-listening-word-06"
+          },
+          {
+            "itemId": "english-a1-m061-listening-ex01-i07",
+            "position": 7,
+            "gapToken": "[[gap-07]]",
+            "expectedWordId": "english-a1-m061-listening-word-07"
+          },
+          {
+            "itemId": "english-a1-m061-listening-ex01-i08",
+            "position": 8,
+            "gapToken": "[[gap-08]]",
+            "expectedWordId": "english-a1-m061-listening-word-08"
+          },
+          {
+            "itemId": "english-a1-m061-listening-ex01-i09",
+            "position": 9,
+            "gapToken": "[[gap-09]]",
+            "expectedWordId": "english-a1-m061-listening-word-09"
+          },
+          {
+            "itemId": "english-a1-m061-listening-ex01-i10",
+            "position": 10,
+            "gapToken": "[[gap-10]]",
+            "expectedWordId": "english-a1-m061-listening-word-10"
+          }
+        ],
+        "content": {
+          "audio": "tts:en-GB:The key words for Free Time Activities are: read, listen to music, dance, draw, cook, watch films, play chess, take photos, ride a bike, go swimming. Listen and repeat each word carefully.",
+          "audioLocale": "en-GB",
+          "transcriptTemplate": "The key words for Free Time Activities are: [[gap-01]], [[gap-02]], [[gap-03]], [[gap-04]], [[gap-05]], [[gap-06]], [[gap-07]], [[gap-08]], [[gap-09]], [[gap-10]]. Listen and repeat each word carefully.",
+          "wordBank": [
+            {
+              "wordId": "english-a1-m061-listening-word-01",
+              "word": "read"
+            },
+            {
+              "wordId": "english-a1-m061-listening-word-02",
+              "word": "listen to music"
+            },
+            {
+              "wordId": "english-a1-m061-listening-word-03",
+              "word": "dance"
+            },
+            {
+              "wordId": "english-a1-m061-listening-word-04",
+              "word": "draw"
+            },
+            {
+              "wordId": "english-a1-m061-listening-word-05",
+              "word": "cook"
+            },
+            {
+              "wordId": "english-a1-m061-listening-word-06",
+              "word": "watch films"
+            },
+            {
+              "wordId": "english-a1-m061-listening-word-07",
+              "word": "play chess"
+            },
+            {
+              "wordId": "english-a1-m061-listening-word-08",
+              "word": "take photos"
+            },
+            {
+              "wordId": "english-a1-m061-listening-word-09",
+              "word": "ride a bike"
+            },
+            {
+              "wordId": "english-a1-m061-listening-word-10",
+              "word": "go swimming"
+            }
+          ],
+          "interaction": "select_place_move_replace"
+        }
+      }
+    }
+  ]
+}

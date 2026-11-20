@@ -1,0 +1,1205 @@
+{
+  "schemaVersion": "1.2.0",
+  "contentVersion": 1,
+  "course": {
+    "courseId": "english-a1",
+    "level": "A1",
+    "language": "en-GB"
+  },
+  "unit": {
+    "unitId": "english-a1-unit-07",
+    "courseId": "english-a1",
+    "position": 7,
+    "title": "Free time, hobbies and abilities"
+  },
+  "mission": {
+    "missionId": "english-a1-m065",
+    "unitId": "english-a1-unit-07",
+    "position": 65,
+    "title": "What Are You Doing?"
+  },
+  "sections": [
+    {
+      "sectionId": "english-a1-m065-explore",
+      "sectionKey": "explore",
+      "position": 1,
+      "title": "explore",
+      "exercise": {
+        "exerciseId": "english-a1-m065-explore-ex01",
+        "type": "vocabulary_pairs",
+        "items": [
+          {
+            "itemId": "english-a1-m065-explore-ex01-i01",
+            "position": 1,
+            "english": "reading",
+            "spanish": "leyendo",
+            "audio": "tts:en-GB:reading"
+          },
+          {
+            "itemId": "english-a1-m065-explore-ex01-i02",
+            "position": 2,
+            "english": "playing",
+            "spanish": "jugando",
+            "audio": "tts:en-GB:playing"
+          },
+          {
+            "itemId": "english-a1-m065-explore-ex01-i03",
+            "position": 3,
+            "english": "studying",
+            "spanish": "estudiando",
+            "audio": "tts:en-GB:studying"
+          },
+          {
+            "itemId": "english-a1-m065-explore-ex01-i04",
+            "position": 4,
+            "english": "working",
+            "spanish": "trabajando",
+            "audio": "tts:en-GB:working"
+          },
+          {
+            "itemId": "english-a1-m065-explore-ex01-i05",
+            "position": 5,
+            "english": "cooking",
+            "spanish": "cocinando",
+            "audio": "tts:en-GB:cooking"
+          },
+          {
+            "itemId": "english-a1-m065-explore-ex01-i06",
+            "position": 6,
+            "english": "swimming",
+            "spanish": "nadando",
+            "audio": "tts:en-GB:swimming"
+          },
+          {
+            "itemId": "english-a1-m065-explore-ex01-i07",
+            "position": 7,
+            "english": "listen to music",
+            "spanish": "escuchar música",
+            "audio": "tts:en-GB:listen to music"
+          },
+          {
+            "itemId": "english-a1-m065-explore-ex01-i08",
+            "position": 8,
+            "english": "take photos",
+            "spanish": "hacer fotos",
+            "audio": "tts:en-GB:take photos"
+          },
+          {
+            "itemId": "english-a1-m065-explore-ex01-i09",
+            "position": 9,
+            "english": "ride a bike",
+            "spanish": "montar en bicicleta",
+            "audio": "tts:en-GB:ride a bike"
+          },
+          {
+            "itemId": "english-a1-m065-explore-ex01-i10",
+            "position": 10,
+            "english": "read a book",
+            "spanish": "leer un libro",
+            "audio": "tts:en-GB:read a book"
+          }
+        ],
+        "theory": {
+          "title": "Vocabulary: What Are You Doing?",
+          "explanation": "Explora diez palabras y expresiones sobre what are you doing?. Escucha el modelo británico, relaciona cada palabra con su significado y úsala en una frase.",
+          "patterns": [
+            {
+              "label": "Useful language",
+              "pattern": "Short question + short answer",
+              "examples": [
+                "I am reading.",
+                "She is playing tennis.",
+                "They are studying."
+              ]
+            }
+          ],
+          "tip": "Repite las expresiones y crea un ejemplo relacionado con tu vida."
+        }
+      }
+    },
+    {
+      "sectionId": "english-a1-m065-practice",
+      "sectionKey": "practice",
+      "position": 2,
+      "title": "practice",
+      "exercise": {
+        "exerciseId": "english-a1-m065-practice-ex01",
+        "type": "mixed_practice",
+        "items": [
+          {
+            "itemId": "english-a1-m065-practice-ex01-i01",
+            "position": 1,
+            "taskType": "translation_multiple_choice",
+            "prompt": "Traduce al español: “I am reading.”",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "Estoy leyendo.",
+              "Ella está jugando al tenis.",
+              "Están estudiando."
+            ],
+            "correctAnswer": "Estoy leyendo.",
+            "sourceEnglish": "I am reading."
+          },
+          {
+            "itemId": "english-a1-m065-practice-ex01-i02",
+            "position": 2,
+            "taskType": "translation_multiple_choice",
+            "prompt": "Traduce al español: “She is playing tennis.”",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "Ella está jugando al tenis.",
+              "Están estudiando.",
+              "Él está trabajando ahora."
+            ],
+            "correctAnswer": "Ella está jugando al tenis.",
+            "sourceEnglish": "She is playing tennis."
+          },
+          {
+            "itemId": "english-a1-m065-practice-ex01-i03",
+            "position": 3,
+            "taskType": "translation_multiple_choice",
+            "prompt": "Traduce al español: “They are studying.”",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "Están estudiando.",
+              "Él está trabajando ahora.",
+              "Estamos preparando la cena."
+            ],
+            "correctAnswer": "Están estudiando.",
+            "sourceEnglish": "They are studying."
+          },
+          {
+            "itemId": "english-a1-m065-practice-ex01-i04",
+            "position": 4,
+            "taskType": "translation_multiple_choice",
+            "prompt": "Traduce al español: “He is working now.”",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "Él está trabajando ahora.",
+              "Estamos preparando la cena.",
+              "¿Estás nadando?"
+            ],
+            "correctAnswer": "Él está trabajando ahora.",
+            "sourceEnglish": "He is working now."
+          },
+          {
+            "itemId": "english-a1-m065-practice-ex01-i05",
+            "position": 5,
+            "taskType": "translation_multiple_choice",
+            "prompt": "Traduce al español: “We are cooking dinner.”",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "Estamos preparando la cena.",
+              "¿Estás nadando?",
+              "Estoy leyendo."
+            ],
+            "correctAnswer": "Estamos preparando la cena.",
+            "sourceEnglish": "We are cooking dinner."
+          },
+          {
+            "itemId": "english-a1-m065-practice-ex01-i06",
+            "position": 6,
+            "taskType": "translation_multiple_choice",
+            "prompt": "Traduce al español: “Are you swimming?”",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "¿Estás nadando?",
+              "Estoy leyendo.",
+              "Ella está jugando al tenis."
+            ],
+            "correctAnswer": "¿Estás nadando?",
+            "sourceEnglish": "Are you swimming?"
+          },
+          {
+            "itemId": "english-a1-m065-practice-ex01-i07",
+            "position": 7,
+            "taskType": "translation_multiple_choice",
+            "prompt": "Traduce al español: “I am reading.”",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "Estoy leyendo.",
+              "Ella está jugando al tenis.",
+              "Están estudiando."
+            ],
+            "correctAnswer": "Estoy leyendo.",
+            "sourceEnglish": "I am reading."
+          },
+          {
+            "itemId": "english-a1-m065-practice-ex01-i08",
+            "position": 8,
+            "taskType": "translation_multiple_choice",
+            "prompt": "Traduce al español: “She is playing tennis.”",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "Ella está jugando al tenis.",
+              "Están estudiando.",
+              "Él está trabajando ahora."
+            ],
+            "correctAnswer": "Ella está jugando al tenis.",
+            "sourceEnglish": "She is playing tennis."
+          },
+          {
+            "itemId": "english-a1-m065-practice-ex01-i09",
+            "position": 9,
+            "taskType": "translation_multiple_choice",
+            "prompt": "Traduce al español: “They are studying.”",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "Están estudiando.",
+              "Él está trabajando ahora.",
+              "Estamos preparando la cena."
+            ],
+            "correctAnswer": "Están estudiando.",
+            "sourceEnglish": "They are studying."
+          },
+          {
+            "itemId": "english-a1-m065-practice-ex01-i10",
+            "position": 10,
+            "taskType": "translation_multiple_choice",
+            "prompt": "Traduce al español: “He is working now.”",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "Él está trabajando ahora.",
+              "Estamos preparando la cena.",
+              "¿Estás nadando?"
+            ],
+            "correctAnswer": "Él está trabajando ahora.",
+            "sourceEnglish": "He is working now."
+          },
+          {
+            "itemId": "english-a1-m065-practice-ex01-i11",
+            "position": 11,
+            "taskType": "listening_translation_multiple_choice",
+            "prompt": "Escucha el inglés y elige su significado.",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "Estoy leyendo.",
+              "Ella está jugando al tenis.",
+              "Están estudiando."
+            ],
+            "correctAnswer": "Estoy leyendo.",
+            "sourceEnglish": "I am reading."
+          },
+          {
+            "itemId": "english-a1-m065-practice-ex01-i12",
+            "position": 12,
+            "taskType": "listening_translation_multiple_choice",
+            "prompt": "Escucha el inglés y elige su significado.",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "Ella está jugando al tenis.",
+              "Están estudiando.",
+              "Él está trabajando ahora."
+            ],
+            "correctAnswer": "Ella está jugando al tenis.",
+            "sourceEnglish": "She is playing tennis."
+          },
+          {
+            "itemId": "english-a1-m065-practice-ex01-i13",
+            "position": 13,
+            "taskType": "listening_translation_multiple_choice",
+            "prompt": "Escucha el inglés y elige su significado.",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "Están estudiando.",
+              "Él está trabajando ahora.",
+              "Estamos preparando la cena."
+            ],
+            "correctAnswer": "Están estudiando.",
+            "sourceEnglish": "They are studying."
+          },
+          {
+            "itemId": "english-a1-m065-practice-ex01-i14",
+            "position": 14,
+            "taskType": "listening_translation_multiple_choice",
+            "prompt": "Escucha el inglés y elige su significado.",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "Él está trabajando ahora.",
+              "Estamos preparando la cena.",
+              "¿Estás nadando?"
+            ],
+            "correctAnswer": "Él está trabajando ahora.",
+            "sourceEnglish": "He is working now."
+          },
+          {
+            "itemId": "english-a1-m065-practice-ex01-i15",
+            "position": 15,
+            "taskType": "listening_translation_multiple_choice",
+            "prompt": "Escucha el inglés y elige su significado.",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "Estamos preparando la cena.",
+              "¿Estás nadando?",
+              "Estoy leyendo."
+            ],
+            "correctAnswer": "Estamos preparando la cena.",
+            "sourceEnglish": "We are cooking dinner."
+          },
+          {
+            "itemId": "english-a1-m065-practice-ex01-i16",
+            "position": 16,
+            "taskType": "listening_translation_multiple_choice",
+            "prompt": "Escucha el inglés y elige su significado.",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "¿Estás nadando?",
+              "Estoy leyendo.",
+              "Ella está jugando al tenis."
+            ],
+            "correctAnswer": "¿Estás nadando?",
+            "sourceEnglish": "Are you swimming?"
+          },
+          {
+            "itemId": "english-a1-m065-practice-ex01-i17",
+            "position": 17,
+            "taskType": "listening_translation_multiple_choice",
+            "prompt": "Escucha el inglés y elige su significado.",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "Estoy leyendo.",
+              "Ella está jugando al tenis.",
+              "Están estudiando."
+            ],
+            "correctAnswer": "Estoy leyendo.",
+            "sourceEnglish": "I am reading."
+          },
+          {
+            "itemId": "english-a1-m065-practice-ex01-i18",
+            "position": 18,
+            "taskType": "listening_translation_multiple_choice",
+            "prompt": "Escucha el inglés y elige su significado.",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "Ella está jugando al tenis.",
+              "Están estudiando.",
+              "Él está trabajando ahora."
+            ],
+            "correctAnswer": "Ella está jugando al tenis.",
+            "sourceEnglish": "She is playing tennis."
+          },
+          {
+            "itemId": "english-a1-m065-practice-ex01-i19",
+            "position": 19,
+            "taskType": "listening_translation_multiple_choice",
+            "prompt": "Escucha el inglés y elige su significado.",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "Están estudiando.",
+              "Él está trabajando ahora.",
+              "Estamos preparando la cena."
+            ],
+            "correctAnswer": "Están estudiando.",
+            "sourceEnglish": "They are studying."
+          },
+          {
+            "itemId": "english-a1-m065-practice-ex01-i20",
+            "position": 20,
+            "taskType": "listening_translation_multiple_choice",
+            "prompt": "Escucha el inglés y elige su significado.",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "Él está trabajando ahora.",
+              "Estamos preparando la cena.",
+              "¿Estás nadando?"
+            ],
+            "correctAnswer": "Él está trabajando ahora.",
+            "sourceEnglish": "He is working now."
+          }
+        ]
+      }
+    },
+    {
+      "sectionId": "english-a1-m065-grammar",
+      "sectionKey": "grammar",
+      "position": 3,
+      "title": "grammar",
+      "exercise": {
+        "exerciseId": "english-a1-m065-grammar-ex01",
+        "type": "grammar",
+        "items": [
+          {
+            "itemId": "english-a1-m065-grammar-ex01-i01",
+            "position": 1,
+            "prompt": "I ___ playing tennis now.",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "am",
+              "is",
+              "are"
+            ],
+            "correctAnswer": "am"
+          },
+          {
+            "itemId": "english-a1-m065-grammar-ex01-i02",
+            "position": 2,
+            "prompt": "She ___ swimming.",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "is",
+              "are",
+              "am"
+            ],
+            "correctAnswer": "is"
+          },
+          {
+            "itemId": "english-a1-m065-grammar-ex01-i03",
+            "position": 3,
+            "prompt": "They ___ running.",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "are",
+              "is",
+              "am"
+            ],
+            "correctAnswer": "are"
+          },
+          {
+            "itemId": "english-a1-m065-grammar-ex01-i04",
+            "position": 4,
+            "prompt": "He is ___ a ball.",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "kicking",
+              "kick",
+              "kicks"
+            ],
+            "correctAnswer": "kicking"
+          },
+          {
+            "itemId": "english-a1-m065-grammar-ex01-i05",
+            "position": 5,
+            "prompt": "___ you watching the game?",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "Are",
+              "Is",
+              "Am"
+            ],
+            "correctAnswer": "Are"
+          },
+          {
+            "itemId": "english-a1-m065-grammar-ex01-i06",
+            "position": 6,
+            "prompt": "We are not ___ today.",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "playing",
+              "play",
+              "plays"
+            ],
+            "correctAnswer": "playing"
+          },
+          {
+            "itemId": "english-a1-m065-grammar-ex01-i07",
+            "position": 7,
+            "prompt": "What ___ he doing?",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "is",
+              "are",
+              "am"
+            ],
+            "correctAnswer": "is"
+          },
+          {
+            "itemId": "english-a1-m065-grammar-ex01-i08",
+            "position": 8,
+            "prompt": "The children ___ dancing.",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "are",
+              "is",
+              "am"
+            ],
+            "correctAnswer": "are"
+          },
+          {
+            "itemId": "english-a1-m065-grammar-ex01-i09",
+            "position": 9,
+            "prompt": "I am ___ my bike.",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "riding",
+              "ride",
+              "rides"
+            ],
+            "correctAnswer": "riding"
+          },
+          {
+            "itemId": "english-a1-m065-grammar-ex01-i10",
+            "position": 10,
+            "prompt": "She isn't ___ now.",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "singing",
+              "sing",
+              "sings"
+            ],
+            "correctAnswer": "singing"
+          }
+        ],
+        "theory": {
+          "title": "Present continuous for actions now",
+          "explanation": "Usamos am/is/are + verbo en -ing para acciones que ocurren ahora. La forma negativa añade not y las preguntas colocan be antes del sujeto.",
+          "patterns": [
+            {
+              "label": "Model",
+              "pattern": "I am playing football now",
+              "examples": [
+                "I am playing football now",
+                "Is she running?"
+              ]
+            }
+          ],
+          "tip": "Lee el modelo en voz alta y fíjate en la forma verbal."
+        }
+      }
+    },
+    {
+      "sectionId": "english-a1-m065-pronunciation",
+      "sectionKey": "pronunciation",
+      "position": 4,
+      "title": "pronunciation",
+      "exercise": {
+        "exerciseId": "english-a1-m065-pronunciation-ex01",
+        "type": "pronunciation_cards",
+        "items": [
+          {
+            "itemId": "english-a1-m065-pronunciation-ex01-i01",
+            "position": 1,
+            "word": "reading",
+            "translation": "leyendo",
+            "pronunciationGuide": "Listen to the en-GB model and keep the final consonant clear.",
+            "audio": "tts:en-GB:reading"
+          },
+          {
+            "itemId": "english-a1-m065-pronunciation-ex01-i02",
+            "position": 2,
+            "word": "playing",
+            "translation": "jugando",
+            "pronunciationGuide": "Listen to the en-GB model and keep the final consonant clear.",
+            "audio": "tts:en-GB:playing"
+          },
+          {
+            "itemId": "english-a1-m065-pronunciation-ex01-i03",
+            "position": 3,
+            "word": "studying",
+            "translation": "estudiando",
+            "pronunciationGuide": "Listen to the en-GB model and keep the final consonant clear.",
+            "audio": "tts:en-GB:studying"
+          },
+          {
+            "itemId": "english-a1-m065-pronunciation-ex01-i04",
+            "position": 4,
+            "word": "working",
+            "translation": "trabajando",
+            "pronunciationGuide": "Listen to the en-GB model and keep the final consonant clear.",
+            "audio": "tts:en-GB:working"
+          },
+          {
+            "itemId": "english-a1-m065-pronunciation-ex01-i05",
+            "position": 5,
+            "word": "cooking",
+            "translation": "cocinando",
+            "pronunciationGuide": "Listen to the en-GB model and keep the final consonant clear.",
+            "audio": "tts:en-GB:cooking"
+          },
+          {
+            "itemId": "english-a1-m065-pronunciation-ex01-i06",
+            "position": 6,
+            "word": "swimming",
+            "translation": "nadando",
+            "pronunciationGuide": "Listen to the en-GB model and keep the final consonant clear.",
+            "audio": "tts:en-GB:swimming"
+          },
+          {
+            "itemId": "english-a1-m065-pronunciation-ex01-i07",
+            "position": 7,
+            "word": "listen to music",
+            "translation": "escuchar música",
+            "pronunciationGuide": "Listen to the en-GB model and keep the final consonant clear.",
+            "audio": "tts:en-GB:listen to music"
+          },
+          {
+            "itemId": "english-a1-m065-pronunciation-ex01-i08",
+            "position": 8,
+            "word": "take photos",
+            "translation": "hacer fotos",
+            "pronunciationGuide": "Listen to the en-GB model and keep the final consonant clear.",
+            "audio": "tts:en-GB:take photos"
+          },
+          {
+            "itemId": "english-a1-m065-pronunciation-ex01-i09",
+            "position": 9,
+            "word": "ride a bike",
+            "translation": "montar en bicicleta",
+            "pronunciationGuide": "Listen to the en-GB model and keep the final consonant clear.",
+            "audio": "tts:en-GB:ride a bike"
+          },
+          {
+            "itemId": "english-a1-m065-pronunciation-ex01-i10",
+            "position": 10,
+            "word": "read a book",
+            "translation": "leer un libro",
+            "pronunciationGuide": "Listen to the en-GB model and keep the final consonant clear.",
+            "audio": "tts:en-GB:read a book"
+          }
+        ],
+        "focus": "Practica el ritmo y el acento de las palabras clave de What Are You Doing?."
+      }
+    },
+    {
+      "sectionId": "english-a1-m065-reading",
+      "sectionKey": "reading",
+      "position": 5,
+      "title": "reading",
+      "exercise": {
+        "exerciseId": "english-a1-m065-reading-ex01",
+        "type": "reading_comprehension",
+        "items": [
+          {
+            "itemId": "english-a1-m065-reading-ex01-i01",
+            "position": 1,
+            "prompt": "Which English sentence means “Estoy leyendo.”?",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "I am reading.",
+              "She is playing tennis.",
+              "They are studying."
+            ],
+            "correctAnswer": "I am reading."
+          },
+          {
+            "itemId": "english-a1-m065-reading-ex01-i02",
+            "position": 2,
+            "prompt": "Which English sentence means “Ella está jugando al tenis.”?",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "She is playing tennis.",
+              "They are studying.",
+              "He is working now."
+            ],
+            "correctAnswer": "She is playing tennis."
+          },
+          {
+            "itemId": "english-a1-m065-reading-ex01-i03",
+            "position": 3,
+            "prompt": "Which English sentence means “Están estudiando.”?",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "They are studying.",
+              "He is working now.",
+              "We are cooking dinner."
+            ],
+            "correctAnswer": "They are studying."
+          },
+          {
+            "itemId": "english-a1-m065-reading-ex01-i04",
+            "position": 4,
+            "prompt": "Which English sentence means “Él está trabajando ahora.”?",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "He is working now.",
+              "We are cooking dinner.",
+              "Are you swimming?"
+            ],
+            "correctAnswer": "He is working now."
+          },
+          {
+            "itemId": "english-a1-m065-reading-ex01-i05",
+            "position": 5,
+            "prompt": "Which English sentence means “Estamos preparando la cena.”?",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "We are cooking dinner.",
+              "Are you swimming?",
+              "I am reading."
+            ],
+            "correctAnswer": "We are cooking dinner."
+          },
+          {
+            "itemId": "english-a1-m065-reading-ex01-i06",
+            "position": 6,
+            "prompt": "Which English sentence means “¿Estás nadando?”?",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "Are you swimming?",
+              "I am reading.",
+              "She is playing tennis."
+            ],
+            "correctAnswer": "Are you swimming?"
+          },
+          {
+            "itemId": "english-a1-m065-reading-ex01-i07",
+            "position": 7,
+            "prompt": "Which English sentence means “Estoy leyendo.”?",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "I am reading.",
+              "She is playing tennis.",
+              "They are studying."
+            ],
+            "correctAnswer": "I am reading."
+          },
+          {
+            "itemId": "english-a1-m065-reading-ex01-i08",
+            "position": 8,
+            "prompt": "Which English sentence means “Ella está jugando al tenis.”?",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "She is playing tennis.",
+              "They are studying.",
+              "He is working now."
+            ],
+            "correctAnswer": "She is playing tennis."
+          },
+          {
+            "itemId": "english-a1-m065-reading-ex01-i09",
+            "position": 9,
+            "prompt": "Which English sentence means “Están estudiando.”?",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "They are studying.",
+              "He is working now.",
+              "I am reading."
+            ],
+            "correctAnswer": "They are studying."
+          },
+          {
+            "itemId": "english-a1-m065-reading-ex01-i10",
+            "position": 10,
+            "prompt": "Which English sentence means “Él está trabajando ahora.”?",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "He is working now.",
+              "I am reading.",
+              "She is playing tennis."
+            ],
+            "correctAnswer": "He is working now."
+          }
+        ],
+        "content": {
+          "passageId": "english-a1-m065-reading-passage-01",
+          "passage": "I am reading. She is playing tennis. They are studying. He is working now. We are cooking dinner. Are you swimming?"
+        }
+      }
+    },
+    {
+      "sectionId": "english-a1-m065-writing",
+      "sectionKey": "writing",
+      "position": 6,
+      "title": "writing",
+      "exercise": {
+        "exerciseId": "english-a1-m065-writing-ex01",
+        "type": "dictation",
+        "items": [
+          {
+            "itemId": "english-a1-m065-writing-ex01-i01",
+            "position": 1,
+            "audio": "tts:en-GB:I am reading.",
+            "expectedAnswer": "I am reading.",
+            "evaluation": {
+              "type": "normalised_text"
+            }
+          },
+          {
+            "itemId": "english-a1-m065-writing-ex01-i02",
+            "position": 2,
+            "audio": "tts:en-GB:She is playing tennis.",
+            "expectedAnswer": "She is playing tennis.",
+            "evaluation": {
+              "type": "normalised_text"
+            }
+          },
+          {
+            "itemId": "english-a1-m065-writing-ex01-i03",
+            "position": 3,
+            "audio": "tts:en-GB:They are studying.",
+            "expectedAnswer": "They are studying.",
+            "evaluation": {
+              "type": "normalised_text"
+            }
+          },
+          {
+            "itemId": "english-a1-m065-writing-ex01-i04",
+            "position": 4,
+            "audio": "tts:en-GB:He is working now.",
+            "expectedAnswer": "He is working now.",
+            "evaluation": {
+              "type": "normalised_text"
+            }
+          },
+          {
+            "itemId": "english-a1-m065-writing-ex01-i05",
+            "position": 5,
+            "audio": "tts:en-GB:We are cooking dinner.",
+            "expectedAnswer": "We are cooking dinner.",
+            "evaluation": {
+              "type": "normalised_text"
+            }
+          },
+          {
+            "itemId": "english-a1-m065-writing-ex01-i06",
+            "position": 6,
+            "audio": "tts:en-GB:Are you swimming?",
+            "expectedAnswer": "Are you swimming?",
+            "evaluation": {
+              "type": "normalised_text"
+            }
+          },
+          {
+            "itemId": "english-a1-m065-writing-ex01-i07",
+            "position": 7,
+            "audio": "tts:en-GB:I am reading.",
+            "expectedAnswer": "I am reading.",
+            "evaluation": {
+              "type": "normalised_text"
+            }
+          },
+          {
+            "itemId": "english-a1-m065-writing-ex01-i08",
+            "position": 8,
+            "audio": "tts:en-GB:She is playing tennis.",
+            "expectedAnswer": "She is playing tennis.",
+            "evaluation": {
+              "type": "normalised_text"
+            }
+          },
+          {
+            "itemId": "english-a1-m065-writing-ex01-i09",
+            "position": 9,
+            "audio": "tts:en-GB:They are studying.",
+            "expectedAnswer": "They are studying.",
+            "evaluation": {
+              "type": "normalised_text"
+            }
+          },
+          {
+            "itemId": "english-a1-m065-writing-ex01-i10",
+            "position": 10,
+            "audio": "tts:en-GB:He is working now.",
+            "expectedAnswer": "He is working now.",
+            "evaluation": {
+              "type": "normalised_text"
+            }
+          }
+        ],
+        "writingTask": "Escribe 5–6 frases sobre what are you doing?. Incluye vocabulario de la misión y la estructura present continuous for actions now.",
+        "modelText": "I am reading. She is playing tennis. They are studying. He is working now. We are cooking dinner. Are you swimming?"
+      }
+    },
+    {
+      "sectionId": "english-a1-m065-speaking",
+      "sectionKey": "speaking",
+      "position": 7,
+      "title": "speaking",
+      "exercise": {
+        "exerciseId": "english-a1-m065-speaking-ex01",
+        "type": "speaking_prompts",
+        "items": [
+          {
+            "itemId": "english-a1-m065-speaking-ex01-i01",
+            "position": 1,
+            "prompt": "Say a sentence about this situation: Estoy leyendo.",
+            "modelAnswer": "I am reading.",
+            "evaluation": {
+              "type": "transcription_feedback",
+              "transcriptionSeparateFromPronunciation": true
+            }
+          },
+          {
+            "itemId": "english-a1-m065-speaking-ex01-i02",
+            "position": 2,
+            "prompt": "Say a sentence about this situation: Ella está jugando al tenis.",
+            "modelAnswer": "She is playing tennis.",
+            "evaluation": {
+              "type": "transcription_feedback",
+              "transcriptionSeparateFromPronunciation": true
+            }
+          },
+          {
+            "itemId": "english-a1-m065-speaking-ex01-i03",
+            "position": 3,
+            "prompt": "Say a sentence about this situation: Están estudiando.",
+            "modelAnswer": "They are studying.",
+            "evaluation": {
+              "type": "transcription_feedback",
+              "transcriptionSeparateFromPronunciation": true
+            }
+          },
+          {
+            "itemId": "english-a1-m065-speaking-ex01-i04",
+            "position": 4,
+            "prompt": "Say a sentence about this situation: Él está trabajando ahora.",
+            "modelAnswer": "He is working now.",
+            "evaluation": {
+              "type": "transcription_feedback",
+              "transcriptionSeparateFromPronunciation": true
+            }
+          },
+          {
+            "itemId": "english-a1-m065-speaking-ex01-i05",
+            "position": 5,
+            "prompt": "Say a sentence about this situation: Estamos preparando la cena.",
+            "modelAnswer": "We are cooking dinner.",
+            "evaluation": {
+              "type": "transcription_feedback",
+              "transcriptionSeparateFromPronunciation": true
+            }
+          },
+          {
+            "itemId": "english-a1-m065-speaking-ex01-i06",
+            "position": 6,
+            "prompt": "Say a sentence about this situation: ¿Estás nadando?",
+            "modelAnswer": "Are you swimming?",
+            "evaluation": {
+              "type": "transcription_feedback",
+              "transcriptionSeparateFromPronunciation": true
+            }
+          },
+          {
+            "itemId": "english-a1-m065-speaking-ex01-i07",
+            "position": 7,
+            "prompt": "Say a sentence about this situation: Estoy leyendo.",
+            "modelAnswer": "I am reading.",
+            "evaluation": {
+              "type": "transcription_feedback",
+              "transcriptionSeparateFromPronunciation": true
+            }
+          },
+          {
+            "itemId": "english-a1-m065-speaking-ex01-i08",
+            "position": 8,
+            "prompt": "Say a sentence about this situation: Ella está jugando al tenis.",
+            "modelAnswer": "She is playing tennis.",
+            "evaluation": {
+              "type": "transcription_feedback",
+              "transcriptionSeparateFromPronunciation": true
+            }
+          },
+          {
+            "itemId": "english-a1-m065-speaking-ex01-i09",
+            "position": 9,
+            "prompt": "Say a sentence about this situation: Están estudiando.",
+            "modelAnswer": "They are studying.",
+            "evaluation": {
+              "type": "transcription_feedback",
+              "transcriptionSeparateFromPronunciation": true
+            }
+          },
+          {
+            "itemId": "english-a1-m065-speaking-ex01-i10",
+            "position": 10,
+            "prompt": "Say a sentence about this situation: Él está trabajando ahora.",
+            "modelAnswer": "He is working now.",
+            "evaluation": {
+              "type": "transcription_feedback",
+              "transcriptionSeparateFromPronunciation": true
+            }
+          }
+        ]
+      }
+    },
+    {
+      "sectionId": "english-a1-m065-listening",
+      "sectionKey": "listening",
+      "position": 8,
+      "title": "listening",
+      "exercise": {
+        "exerciseId": "english-a1-m065-listening-ex01",
+        "type": "listening_gap_fill",
+        "items": [
+          {
+            "itemId": "english-a1-m065-listening-ex01-i01",
+            "position": 1,
+            "gapToken": "[[gap-01]]",
+            "expectedWordId": "english-a1-m065-listening-word-01"
+          },
+          {
+            "itemId": "english-a1-m065-listening-ex01-i02",
+            "position": 2,
+            "gapToken": "[[gap-02]]",
+            "expectedWordId": "english-a1-m065-listening-word-02"
+          },
+          {
+            "itemId": "english-a1-m065-listening-ex01-i03",
+            "position": 3,
+            "gapToken": "[[gap-03]]",
+            "expectedWordId": "english-a1-m065-listening-word-03"
+          },
+          {
+            "itemId": "english-a1-m065-listening-ex01-i04",
+            "position": 4,
+            "gapToken": "[[gap-04]]",
+            "expectedWordId": "english-a1-m065-listening-word-04"
+          },
+          {
+            "itemId": "english-a1-m065-listening-ex01-i05",
+            "position": 5,
+            "gapToken": "[[gap-05]]",
+            "expectedWordId": "english-a1-m065-listening-word-05"
+          },
+          {
+            "itemId": "english-a1-m065-listening-ex01-i06",
+            "position": 6,
+            "gapToken": "[[gap-06]]",
+            "expectedWordId": "english-a1-m065-listening-word-06"
+          },
+          {
+            "itemId": "english-a1-m065-listening-ex01-i07",
+            "position": 7,
+            "gapToken": "[[gap-07]]",
+            "expectedWordId": "english-a1-m065-listening-word-07"
+          },
+          {
+            "itemId": "english-a1-m065-listening-ex01-i08",
+            "position": 8,
+            "gapToken": "[[gap-08]]",
+            "expectedWordId": "english-a1-m065-listening-word-08"
+          },
+          {
+            "itemId": "english-a1-m065-listening-ex01-i09",
+            "position": 9,
+            "gapToken": "[[gap-09]]",
+            "expectedWordId": "english-a1-m065-listening-word-09"
+          },
+          {
+            "itemId": "english-a1-m065-listening-ex01-i10",
+            "position": 10,
+            "gapToken": "[[gap-10]]",
+            "expectedWordId": "english-a1-m065-listening-word-10"
+          }
+        ],
+        "content": {
+          "audio": "tts:en-GB:The key words for What Are You Doing? are: reading, playing, studying, working, cooking, swimming, listen to music, take photos, ride a bike, read a book. Listen and repeat each word carefully.",
+          "audioLocale": "en-GB",
+          "transcriptTemplate": "The key words for What Are You Doing? are: [[gap-01]], [[gap-02]], [[gap-03]], [[gap-04]], [[gap-05]], [[gap-06]], [[gap-07]], [[gap-08]], [[gap-09]], [[gap-10]]. Listen and repeat each word carefully.",
+          "wordBank": [
+            {
+              "wordId": "english-a1-m065-listening-word-01",
+              "word": "reading"
+            },
+            {
+              "wordId": "english-a1-m065-listening-word-02",
+              "word": "playing"
+            },
+            {
+              "wordId": "english-a1-m065-listening-word-03",
+              "word": "studying"
+            },
+            {
+              "wordId": "english-a1-m065-listening-word-04",
+              "word": "working"
+            },
+            {
+              "wordId": "english-a1-m065-listening-word-05",
+              "word": "cooking"
+            },
+            {
+              "wordId": "english-a1-m065-listening-word-06",
+              "word": "swimming"
+            },
+            {
+              "wordId": "english-a1-m065-listening-word-07",
+              "word": "listen to music"
+            },
+            {
+              "wordId": "english-a1-m065-listening-word-08",
+              "word": "take photos"
+            },
+            {
+              "wordId": "english-a1-m065-listening-word-09",
+              "word": "ride a bike"
+            },
+            {
+              "wordId": "english-a1-m065-listening-word-10",
+              "word": "read a book"
+            }
+          ],
+          "interaction": "select_place_move_replace"
+        }
+      }
+    }
+  ]
+}

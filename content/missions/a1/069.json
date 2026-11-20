@@ -1,0 +1,1205 @@
+{
+  "schemaVersion": "1.2.0",
+  "contentVersion": 1,
+  "course": {
+    "courseId": "english-a1",
+    "level": "A1",
+    "language": "en-GB"
+  },
+  "unit": {
+    "unitId": "english-a1-unit-07",
+    "courseId": "english-a1",
+    "position": 7,
+    "title": "Free time, hobbies and abilities"
+  },
+  "mission": {
+    "missionId": "english-a1-m069",
+    "unitId": "english-a1-unit-07",
+    "position": 69,
+    "title": "Agreeing and Disagreeing"
+  },
+  "sections": [
+    {
+      "sectionId": "english-a1-m069-explore",
+      "sectionKey": "explore",
+      "position": 1,
+      "title": "explore",
+      "exercise": {
+        "exerciseId": "english-a1-m069-explore-ex01",
+        "type": "vocabulary_pairs",
+        "items": [
+          {
+            "itemId": "english-a1-m069-explore-ex01-i01",
+            "position": 1,
+            "english": "yes, sure",
+            "spanish": "sí, claro",
+            "audio": "tts:en-GB:yes, sure"
+          },
+          {
+            "itemId": "english-a1-m069-explore-ex01-i02",
+            "position": 2,
+            "english": "sorry",
+            "spanish": "lo siento",
+            "audio": "tts:en-GB:sorry"
+          },
+          {
+            "itemId": "english-a1-m069-explore-ex01-i03",
+            "position": 3,
+            "english": "I'm busy",
+            "spanish": "estoy ocupado/a",
+            "audio": "tts:en-GB:I'm busy"
+          },
+          {
+            "itemId": "english-a1-m069-explore-ex01-i04",
+            "position": 4,
+            "english": "maybe",
+            "spanish": "quizá",
+            "audio": "tts:en-GB:maybe"
+          },
+          {
+            "itemId": "english-a1-m069-explore-ex01-i05",
+            "position": 5,
+            "english": "another day",
+            "spanish": "otro día",
+            "audio": "tts:en-GB:another day"
+          },
+          {
+            "itemId": "english-a1-m069-explore-ex01-i06",
+            "position": 6,
+            "english": "that's fine",
+            "spanish": "está bien",
+            "audio": "tts:en-GB:that's fine"
+          },
+          {
+            "itemId": "english-a1-m069-explore-ex01-i7",
+            "position": 7,
+            "english": "why don't we...?",
+            "spanish": "¿por qué no...?",
+            "audio": "tts:en-GB:why don't we...?"
+          },
+          {
+            "itemId": "english-a1-m069-explore-ex01-i8",
+            "position": 8,
+            "english": "let's...",
+            "spanish": "vamos a...",
+            "audio": "tts:en-GB:let's..."
+          },
+          {
+            "itemId": "english-a1-m069-explore-ex01-i9",
+            "position": 9,
+            "english": "good idea",
+            "spanish": "buena idea",
+            "audio": "tts:en-GB:good idea"
+          },
+          {
+            "itemId": "english-a1-m069-explore-ex01-i10",
+            "position": 10,
+            "english": "not today",
+            "spanish": "hoy no",
+            "audio": "tts:en-GB:not today"
+          }
+        ],
+        "theory": {
+          "title": "Vocabulary: Agreeing and Disagreeing",
+          "explanation": "Explora diez palabras y expresiones sobre agreeing and disagreeing. Escucha el modelo británico, relaciona cada palabra con su significado y úsala en una frase.",
+          "patterns": [
+            {
+              "label": "Useful language",
+              "pattern": "Short question + short answer",
+              "examples": [
+                "Yes, sure!",
+                "Sorry, I'm busy.",
+                "Maybe another day."
+              ]
+            }
+          ],
+          "tip": "Repite las expresiones y crea un ejemplo relacionado con tu vida."
+        }
+      }
+    },
+    {
+      "sectionId": "english-a1-m069-practice",
+      "sectionKey": "practice",
+      "position": 2,
+      "title": "practice",
+      "exercise": {
+        "exerciseId": "english-a1-m069-practice-ex01",
+        "type": "mixed_practice",
+        "items": [
+          {
+            "itemId": "english-a1-m069-practice-ex01-i01",
+            "position": 1,
+            "taskType": "translation_multiple_choice",
+            "prompt": "Traduce al español: “Yes, sure!”",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "¡Sí, claro!",
+              "Lo siento, estoy ocupado/a.",
+              "Quizá otro día."
+            ],
+            "correctAnswer": "¡Sí, claro!",
+            "sourceEnglish": "Yes, sure!"
+          },
+          {
+            "itemId": "english-a1-m069-practice-ex01-i02",
+            "position": 2,
+            "taskType": "translation_multiple_choice",
+            "prompt": "Traduce al español: “Sorry, I'm busy.”",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "Lo siento, estoy ocupado/a.",
+              "Quizá otro día.",
+              "Está bien."
+            ],
+            "correctAnswer": "Lo siento, estoy ocupado/a.",
+            "sourceEnglish": "Sorry, I'm busy."
+          },
+          {
+            "itemId": "english-a1-m069-practice-ex01-i03",
+            "position": 3,
+            "taskType": "translation_multiple_choice",
+            "prompt": "Traduce al español: “Maybe another day.”",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "Quizá otro día.",
+              "Está bien.",
+              "Es una buena idea."
+            ],
+            "correctAnswer": "Quizá otro día.",
+            "sourceEnglish": "Maybe another day."
+          },
+          {
+            "itemId": "english-a1-m069-practice-ex01-i04",
+            "position": 4,
+            "taskType": "translation_multiple_choice",
+            "prompt": "Traduce al español: “That's fine.”",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "Está bien.",
+              "Es una buena idea.",
+              "Hoy no, gracias."
+            ],
+            "correctAnswer": "Está bien.",
+            "sourceEnglish": "That's fine."
+          },
+          {
+            "itemId": "english-a1-m069-practice-ex01-i05",
+            "position": 5,
+            "taskType": "translation_multiple_choice",
+            "prompt": "Traduce al español: “That's a good idea.”",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "Es una buena idea.",
+              "Hoy no, gracias.",
+              "¡Sí, claro!"
+            ],
+            "correctAnswer": "Es una buena idea.",
+            "sourceEnglish": "That's a good idea."
+          },
+          {
+            "itemId": "english-a1-m069-practice-ex01-i06",
+            "position": 6,
+            "taskType": "translation_multiple_choice",
+            "prompt": "Traduce al español: “Not today, thanks.”",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "Hoy no, gracias.",
+              "¡Sí, claro!",
+              "Lo siento, estoy ocupado/a."
+            ],
+            "correctAnswer": "Hoy no, gracias.",
+            "sourceEnglish": "Not today, thanks."
+          },
+          {
+            "itemId": "english-a1-m069-practice-ex01-i07",
+            "position": 7,
+            "taskType": "translation_multiple_choice",
+            "prompt": "Traduce al español: “Yes, sure!”",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "¡Sí, claro!",
+              "Lo siento, estoy ocupado/a.",
+              "Quizá otro día."
+            ],
+            "correctAnswer": "¡Sí, claro!",
+            "sourceEnglish": "Yes, sure!"
+          },
+          {
+            "itemId": "english-a1-m069-practice-ex01-i08",
+            "position": 8,
+            "taskType": "translation_multiple_choice",
+            "prompt": "Traduce al español: “Sorry, I'm busy.”",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "Lo siento, estoy ocupado/a.",
+              "Quizá otro día.",
+              "Está bien."
+            ],
+            "correctAnswer": "Lo siento, estoy ocupado/a.",
+            "sourceEnglish": "Sorry, I'm busy."
+          },
+          {
+            "itemId": "english-a1-m069-practice-ex01-i09",
+            "position": 9,
+            "taskType": "translation_multiple_choice",
+            "prompt": "Traduce al español: “Maybe another day.”",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "Quizá otro día.",
+              "Está bien.",
+              "Es una buena idea."
+            ],
+            "correctAnswer": "Quizá otro día.",
+            "sourceEnglish": "Maybe another day."
+          },
+          {
+            "itemId": "english-a1-m069-practice-ex01-i10",
+            "position": 10,
+            "taskType": "translation_multiple_choice",
+            "prompt": "Traduce al español: “That's fine.”",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "Está bien.",
+              "Es una buena idea.",
+              "Hoy no, gracias."
+            ],
+            "correctAnswer": "Está bien.",
+            "sourceEnglish": "That's fine."
+          },
+          {
+            "itemId": "english-a1-m069-practice-ex01-i11",
+            "position": 11,
+            "taskType": "listening_translation_multiple_choice",
+            "prompt": "Escucha el inglés y elige su significado.",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "¡Sí, claro!",
+              "Lo siento, estoy ocupado/a.",
+              "Quizá otro día."
+            ],
+            "correctAnswer": "¡Sí, claro!",
+            "sourceEnglish": "Yes, sure!"
+          },
+          {
+            "itemId": "english-a1-m069-practice-ex01-i12",
+            "position": 12,
+            "taskType": "listening_translation_multiple_choice",
+            "prompt": "Escucha el inglés y elige su significado.",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "Lo siento, estoy ocupado/a.",
+              "Quizá otro día.",
+              "Está bien."
+            ],
+            "correctAnswer": "Lo siento, estoy ocupado/a.",
+            "sourceEnglish": "Sorry, I'm busy."
+          },
+          {
+            "itemId": "english-a1-m069-practice-ex01-i13",
+            "position": 13,
+            "taskType": "listening_translation_multiple_choice",
+            "prompt": "Escucha el inglés y elige su significado.",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "Quizá otro día.",
+              "Está bien.",
+              "Es una buena idea."
+            ],
+            "correctAnswer": "Quizá otro día.",
+            "sourceEnglish": "Maybe another day."
+          },
+          {
+            "itemId": "english-a1-m069-practice-ex01-i14",
+            "position": 14,
+            "taskType": "listening_translation_multiple_choice",
+            "prompt": "Escucha el inglés y elige su significado.",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "Está bien.",
+              "Es una buena idea.",
+              "Hoy no, gracias."
+            ],
+            "correctAnswer": "Está bien.",
+            "sourceEnglish": "That's fine."
+          },
+          {
+            "itemId": "english-a1-m069-practice-ex01-i15",
+            "position": 15,
+            "taskType": "listening_translation_multiple_choice",
+            "prompt": "Escucha el inglés y elige su significado.",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "Es una buena idea.",
+              "Hoy no, gracias.",
+              "¡Sí, claro!"
+            ],
+            "correctAnswer": "Es una buena idea.",
+            "sourceEnglish": "That's a good idea."
+          },
+          {
+            "itemId": "english-a1-m069-practice-ex01-i16",
+            "position": 16,
+            "taskType": "listening_translation_multiple_choice",
+            "prompt": "Escucha el inglés y elige su significado.",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "Hoy no, gracias.",
+              "¡Sí, claro!",
+              "Lo siento, estoy ocupado/a."
+            ],
+            "correctAnswer": "Hoy no, gracias.",
+            "sourceEnglish": "Not today, thanks."
+          },
+          {
+            "itemId": "english-a1-m069-practice-ex01-i17",
+            "position": 17,
+            "taskType": "listening_translation_multiple_choice",
+            "prompt": "Escucha el inglés y elige su significado.",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "¡Sí, claro!",
+              "Lo siento, estoy ocupado/a.",
+              "Quizá otro día."
+            ],
+            "correctAnswer": "¡Sí, claro!",
+            "sourceEnglish": "Yes, sure!"
+          },
+          {
+            "itemId": "english-a1-m069-practice-ex01-i18",
+            "position": 18,
+            "taskType": "listening_translation_multiple_choice",
+            "prompt": "Escucha el inglés y elige su significado.",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "Lo siento, estoy ocupado/a.",
+              "Quizá otro día.",
+              "Está bien."
+            ],
+            "correctAnswer": "Lo siento, estoy ocupado/a.",
+            "sourceEnglish": "Sorry, I'm busy."
+          },
+          {
+            "itemId": "english-a1-m069-practice-ex01-i19",
+            "position": 19,
+            "taskType": "listening_translation_multiple_choice",
+            "prompt": "Escucha el inglés y elige su significado.",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "Quizá otro día.",
+              "Está bien.",
+              "Es una buena idea."
+            ],
+            "correctAnswer": "Quizá otro día.",
+            "sourceEnglish": "Maybe another day."
+          },
+          {
+            "itemId": "english-a1-m069-practice-ex01-i20",
+            "position": 20,
+            "taskType": "listening_translation_multiple_choice",
+            "prompt": "Escucha el inglés y elige su significado.",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "Está bien.",
+              "Es una buena idea.",
+              "Hoy no, gracias."
+            ],
+            "correctAnswer": "Está bien.",
+            "sourceEnglish": "That's fine."
+          }
+        ]
+      }
+    },
+    {
+      "sectionId": "english-a1-m069-grammar",
+      "sectionKey": "grammar",
+      "position": 3,
+      "title": "grammar",
+      "exercise": {
+        "exerciseId": "english-a1-m069-grammar-ex01",
+        "type": "grammar",
+        "items": [
+          {
+            "itemId": "english-a1-m069-grammar-ex01-i01",
+            "position": 1,
+            "prompt": "Let's ___ to the park.",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "go",
+              "goes",
+              "going"
+            ],
+            "correctAnswer": "go"
+          },
+          {
+            "itemId": "english-a1-m069-grammar-ex01-i02",
+            "position": 2,
+            "prompt": "Why don't we ___ football?",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "play",
+              "plays",
+              "playing"
+            ],
+            "correctAnswer": "play"
+          },
+          {
+            "itemId": "english-a1-m069-grammar-ex01-i03",
+            "position": 3,
+            "prompt": "That's a good ___.",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "idea",
+              "ideas",
+              "ideal"
+            ],
+            "correctAnswer": "idea"
+          },
+          {
+            "itemId": "english-a1-m069-grammar-ex01-i04",
+            "position": 4,
+            "prompt": "Sorry, I ___ today.",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "can't",
+              "don't can",
+              "am not"
+            ],
+            "correctAnswer": "can't"
+          },
+          {
+            "itemId": "english-a1-m069-grammar-ex01-i05",
+            "position": 5,
+            "prompt": "Let's ___ at seven.",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "meet",
+              "meets",
+              "meeting"
+            ],
+            "correctAnswer": "meet"
+          },
+          {
+            "itemId": "english-a1-m069-grammar-ex01-i06",
+            "position": 6,
+            "prompt": "Why don't we ___ a film?",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "watch",
+              "watches",
+              "watching"
+            ],
+            "correctAnswer": "watch"
+          },
+          {
+            "itemId": "english-a1-m069-grammar-ex01-i07",
+            "position": 7,
+            "prompt": "That ___ great!",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "sounds",
+              "sound",
+              "sounding"
+            ],
+            "correctAnswer": "sounds"
+          },
+          {
+            "itemId": "english-a1-m069-grammar-ex01-i08",
+            "position": 8,
+            "prompt": "I'd ___ to, thanks.",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "love",
+              "loves",
+              "loving"
+            ],
+            "correctAnswer": "love"
+          },
+          {
+            "itemId": "english-a1-m069-grammar-ex01-i09",
+            "position": 9,
+            "prompt": "How about ___ tennis?",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "playing",
+              "play",
+              "plays"
+            ],
+            "correctAnswer": "playing"
+          },
+          {
+            "itemId": "english-a1-m069-grammar-ex01-i10",
+            "position": 10,
+            "prompt": "Good idea! Let's ___!",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "go",
+              "going",
+              "goes"
+            ],
+            "correctAnswer": "go"
+          }
+        ],
+        "theory": {
+          "title": "Making and responding to suggestions",
+          "explanation": "Para proponer algo usamos Let's + verbo base o Why don't we + verbo base. Aceptamos con That's a good idea y rechazamos amablemente con Sorry, I can't.",
+          "patterns": [
+            {
+              "label": "Model",
+              "pattern": "Let's go swimming",
+              "examples": [
+                "Let's go swimming",
+                "Why don't we play tennis?"
+              ]
+            }
+          ],
+          "tip": "Lee el modelo en voz alta y fíjate en la forma verbal."
+        }
+      }
+    },
+    {
+      "sectionId": "english-a1-m069-pronunciation",
+      "sectionKey": "pronunciation",
+      "position": 4,
+      "title": "pronunciation",
+      "exercise": {
+        "exerciseId": "english-a1-m069-pronunciation-ex01",
+        "type": "pronunciation_cards",
+        "items": [
+          {
+            "itemId": "english-a1-m069-pronunciation-ex01-i01",
+            "position": 1,
+            "word": "yes, sure",
+            "translation": "sí, claro",
+            "pronunciationGuide": "Listen to the phrase as one unit and notice its main stress.",
+            "audio": "tts:en-GB:yes, sure"
+          },
+          {
+            "itemId": "english-a1-m069-pronunciation-ex01-i02",
+            "position": 2,
+            "word": "sorry",
+            "translation": "lo siento",
+            "pronunciationGuide": "Listen to the en-GB model and keep the final consonant clear.",
+            "audio": "tts:en-GB:sorry"
+          },
+          {
+            "itemId": "english-a1-m069-pronunciation-ex01-i03",
+            "position": 3,
+            "word": "I'm busy",
+            "translation": "estoy ocupado/a",
+            "pronunciationGuide": "Listen to the phrase as one unit and notice its main stress.",
+            "audio": "tts:en-GB:I'm busy"
+          },
+          {
+            "itemId": "english-a1-m069-pronunciation-ex01-i04",
+            "position": 4,
+            "word": "maybe",
+            "translation": "quizá",
+            "pronunciationGuide": "Listen to the en-GB model and keep the final consonant clear.",
+            "audio": "tts:en-GB:maybe"
+          },
+          {
+            "itemId": "english-a1-m069-pronunciation-ex01-i05",
+            "position": 5,
+            "word": "another day",
+            "translation": "otro día",
+            "pronunciationGuide": "Listen to the phrase as one unit and notice its main stress.",
+            "audio": "tts:en-GB:another day"
+          },
+          {
+            "itemId": "english-a1-m069-pronunciation-ex01-i06",
+            "position": 6,
+            "word": "that's fine",
+            "translation": "está bien",
+            "pronunciationGuide": "Listen to the phrase as one unit and notice its main stress.",
+            "audio": "tts:en-GB:that's fine"
+          },
+          {
+            "itemId": "english-a1-m069-pronunciation-ex01-i7",
+            "position": 7,
+            "word": "why don't we...?",
+            "translation": "¿por qué no...?",
+            "pronunciationGuide": "Listen to the en-GB model and keep the final consonant clear.",
+            "audio": "tts:en-GB:why don't we...?"
+          },
+          {
+            "itemId": "english-a1-m069-pronunciation-ex01-i8",
+            "position": 8,
+            "word": "let's...",
+            "translation": "vamos a...",
+            "pronunciationGuide": "Listen to the en-GB model and keep the final consonant clear.",
+            "audio": "tts:en-GB:let's..."
+          },
+          {
+            "itemId": "english-a1-m069-pronunciation-ex01-i9",
+            "position": 9,
+            "word": "good idea",
+            "translation": "buena idea",
+            "pronunciationGuide": "Listen to the en-GB model and keep the final consonant clear.",
+            "audio": "tts:en-GB:good idea"
+          },
+          {
+            "itemId": "english-a1-m069-pronunciation-ex01-i10",
+            "position": 10,
+            "word": "not today",
+            "translation": "hoy no",
+            "pronunciationGuide": "Listen to the en-GB model and keep the final consonant clear.",
+            "audio": "tts:en-GB:not today"
+          }
+        ],
+        "focus": "Practica el ritmo y el acento de las palabras clave de Agreeing and Disagreeing."
+      }
+    },
+    {
+      "sectionId": "english-a1-m069-reading",
+      "sectionKey": "reading",
+      "position": 5,
+      "title": "reading",
+      "exercise": {
+        "exerciseId": "english-a1-m069-reading-ex01",
+        "type": "reading_comprehension",
+        "items": [
+          {
+            "itemId": "english-a1-m069-reading-ex01-i01",
+            "position": 1,
+            "prompt": "Which English sentence means “¡Sí, claro!”?",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "Yes, sure!",
+              "Sorry, I'm busy.",
+              "Maybe another day."
+            ],
+            "correctAnswer": "Yes, sure!"
+          },
+          {
+            "itemId": "english-a1-m069-reading-ex01-i02",
+            "position": 2,
+            "prompt": "Which English sentence means “Lo siento, estoy ocupado/a.”?",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "Sorry, I'm busy.",
+              "Maybe another day.",
+              "That's fine."
+            ],
+            "correctAnswer": "Sorry, I'm busy."
+          },
+          {
+            "itemId": "english-a1-m069-reading-ex01-i03",
+            "position": 3,
+            "prompt": "Which English sentence means “Quizá otro día.”?",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "Maybe another day.",
+              "That's fine.",
+              "That's a good idea."
+            ],
+            "correctAnswer": "Maybe another day."
+          },
+          {
+            "itemId": "english-a1-m069-reading-ex01-i04",
+            "position": 4,
+            "prompt": "Which English sentence means “Está bien.”?",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "That's fine.",
+              "That's a good idea.",
+              "Not today, thanks."
+            ],
+            "correctAnswer": "That's fine."
+          },
+          {
+            "itemId": "english-a1-m069-reading-ex01-i05",
+            "position": 5,
+            "prompt": "Which English sentence means “Es una buena idea.”?",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "That's a good idea.",
+              "Not today, thanks.",
+              "Yes, sure!"
+            ],
+            "correctAnswer": "That's a good idea."
+          },
+          {
+            "itemId": "english-a1-m069-reading-ex01-i06",
+            "position": 6,
+            "prompt": "Which English sentence means “Hoy no, gracias.”?",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "Not today, thanks.",
+              "Yes, sure!",
+              "Sorry, I'm busy."
+            ],
+            "correctAnswer": "Not today, thanks."
+          },
+          {
+            "itemId": "english-a1-m069-reading-ex01-i07",
+            "position": 7,
+            "prompt": "Which English sentence means “¡Sí, claro!”?",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "Yes, sure!",
+              "Sorry, I'm busy.",
+              "Maybe another day."
+            ],
+            "correctAnswer": "Yes, sure!"
+          },
+          {
+            "itemId": "english-a1-m069-reading-ex01-i08",
+            "position": 8,
+            "prompt": "Which English sentence means “Lo siento, estoy ocupado/a.”?",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "Sorry, I'm busy.",
+              "Maybe another day.",
+              "That's fine."
+            ],
+            "correctAnswer": "Sorry, I'm busy."
+          },
+          {
+            "itemId": "english-a1-m069-reading-ex01-i09",
+            "position": 9,
+            "prompt": "Which English sentence means “Quizá otro día.”?",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "Maybe another day.",
+              "That's fine.",
+              "Yes, sure!"
+            ],
+            "correctAnswer": "Maybe another day."
+          },
+          {
+            "itemId": "english-a1-m069-reading-ex01-i10",
+            "position": 10,
+            "prompt": "Which English sentence means “Está bien.”?",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "That's fine.",
+              "Yes, sure!",
+              "Sorry, I'm busy."
+            ],
+            "correctAnswer": "That's fine."
+          }
+        ],
+        "content": {
+          "passageId": "english-a1-m069-reading-passage-01",
+          "passage": "Yes, sure! Sorry, I'm busy. Maybe another day. That's fine. That's a good idea. Not today, thanks."
+        }
+      }
+    },
+    {
+      "sectionId": "english-a1-m069-writing",
+      "sectionKey": "writing",
+      "position": 6,
+      "title": "writing",
+      "exercise": {
+        "exerciseId": "english-a1-m069-writing-ex01",
+        "type": "dictation",
+        "items": [
+          {
+            "itemId": "english-a1-m069-writing-ex01-i01",
+            "position": 1,
+            "audio": "tts:en-GB:Yes, sure!",
+            "expectedAnswer": "Yes, sure!",
+            "evaluation": {
+              "type": "normalised_text"
+            }
+          },
+          {
+            "itemId": "english-a1-m069-writing-ex01-i02",
+            "position": 2,
+            "audio": "tts:en-GB:Sorry, I'm busy.",
+            "expectedAnswer": "Sorry, I'm busy.",
+            "evaluation": {
+              "type": "normalised_text"
+            }
+          },
+          {
+            "itemId": "english-a1-m069-writing-ex01-i03",
+            "position": 3,
+            "audio": "tts:en-GB:Maybe another day.",
+            "expectedAnswer": "Maybe another day.",
+            "evaluation": {
+              "type": "normalised_text"
+            }
+          },
+          {
+            "itemId": "english-a1-m069-writing-ex01-i04",
+            "position": 4,
+            "audio": "tts:en-GB:That's fine.",
+            "expectedAnswer": "That's fine.",
+            "evaluation": {
+              "type": "normalised_text"
+            }
+          },
+          {
+            "itemId": "english-a1-m069-writing-ex01-i05",
+            "position": 5,
+            "audio": "tts:en-GB:That's a good idea.",
+            "expectedAnswer": "That's a good idea.",
+            "evaluation": {
+              "type": "normalised_text"
+            }
+          },
+          {
+            "itemId": "english-a1-m069-writing-ex01-i06",
+            "position": 6,
+            "audio": "tts:en-GB:Not today, thanks.",
+            "expectedAnswer": "Not today, thanks.",
+            "evaluation": {
+              "type": "normalised_text"
+            }
+          },
+          {
+            "itemId": "english-a1-m069-writing-ex01-i07",
+            "position": 7,
+            "audio": "tts:en-GB:Yes, sure!",
+            "expectedAnswer": "Yes, sure!",
+            "evaluation": {
+              "type": "normalised_text"
+            }
+          },
+          {
+            "itemId": "english-a1-m069-writing-ex01-i08",
+            "position": 8,
+            "audio": "tts:en-GB:Sorry, I'm busy.",
+            "expectedAnswer": "Sorry, I'm busy.",
+            "evaluation": {
+              "type": "normalised_text"
+            }
+          },
+          {
+            "itemId": "english-a1-m069-writing-ex01-i09",
+            "position": 9,
+            "audio": "tts:en-GB:Maybe another day.",
+            "expectedAnswer": "Maybe another day.",
+            "evaluation": {
+              "type": "normalised_text"
+            }
+          },
+          {
+            "itemId": "english-a1-m069-writing-ex01-i10",
+            "position": 10,
+            "audio": "tts:en-GB:That's fine.",
+            "expectedAnswer": "That's fine.",
+            "evaluation": {
+              "type": "normalised_text"
+            }
+          }
+        ],
+        "writingTask": "Escribe 5–6 frases sobre agreeing and disagreeing. Incluye vocabulario de la misión y la estructura making and responding to suggestions.",
+        "modelText": "Yes, sure! Sorry, I'm busy. Maybe another day. That's fine. That's a good idea. Not today, thanks."
+      }
+    },
+    {
+      "sectionId": "english-a1-m069-speaking",
+      "sectionKey": "speaking",
+      "position": 7,
+      "title": "speaking",
+      "exercise": {
+        "exerciseId": "english-a1-m069-speaking-ex01",
+        "type": "speaking_prompts",
+        "items": [
+          {
+            "itemId": "english-a1-m069-speaking-ex01-i01",
+            "position": 1,
+            "prompt": "Say a sentence about this situation: ¡Sí, claro!",
+            "modelAnswer": "Yes, sure!",
+            "evaluation": {
+              "type": "transcription_feedback",
+              "transcriptionSeparateFromPronunciation": true
+            }
+          },
+          {
+            "itemId": "english-a1-m069-speaking-ex01-i02",
+            "position": 2,
+            "prompt": "Say a sentence about this situation: Lo siento, estoy ocupado/a.",
+            "modelAnswer": "Sorry, I'm busy.",
+            "evaluation": {
+              "type": "transcription_feedback",
+              "transcriptionSeparateFromPronunciation": true
+            }
+          },
+          {
+            "itemId": "english-a1-m069-speaking-ex01-i03",
+            "position": 3,
+            "prompt": "Say a sentence about this situation: Quizá otro día.",
+            "modelAnswer": "Maybe another day.",
+            "evaluation": {
+              "type": "transcription_feedback",
+              "transcriptionSeparateFromPronunciation": true
+            }
+          },
+          {
+            "itemId": "english-a1-m069-speaking-ex01-i04",
+            "position": 4,
+            "prompt": "Say a sentence about this situation: Está bien.",
+            "modelAnswer": "That's fine.",
+            "evaluation": {
+              "type": "transcription_feedback",
+              "transcriptionSeparateFromPronunciation": true
+            }
+          },
+          {
+            "itemId": "english-a1-m069-speaking-ex01-i05",
+            "position": 5,
+            "prompt": "Say a sentence about this situation: Es una buena idea.",
+            "modelAnswer": "That's a good idea.",
+            "evaluation": {
+              "type": "transcription_feedback",
+              "transcriptionSeparateFromPronunciation": true
+            }
+          },
+          {
+            "itemId": "english-a1-m069-speaking-ex01-i06",
+            "position": 6,
+            "prompt": "Say a sentence about this situation: Hoy no, gracias.",
+            "modelAnswer": "Not today, thanks.",
+            "evaluation": {
+              "type": "transcription_feedback",
+              "transcriptionSeparateFromPronunciation": true
+            }
+          },
+          {
+            "itemId": "english-a1-m069-speaking-ex01-i07",
+            "position": 7,
+            "prompt": "Say a sentence about this situation: ¡Sí, claro!",
+            "modelAnswer": "Yes, sure!",
+            "evaluation": {
+              "type": "transcription_feedback",
+              "transcriptionSeparateFromPronunciation": true
+            }
+          },
+          {
+            "itemId": "english-a1-m069-speaking-ex01-i08",
+            "position": 8,
+            "prompt": "Say a sentence about this situation: Lo siento, estoy ocupado/a.",
+            "modelAnswer": "Sorry, I'm busy.",
+            "evaluation": {
+              "type": "transcription_feedback",
+              "transcriptionSeparateFromPronunciation": true
+            }
+          },
+          {
+            "itemId": "english-a1-m069-speaking-ex01-i09",
+            "position": 9,
+            "prompt": "Say a sentence about this situation: Quizá otro día.",
+            "modelAnswer": "Maybe another day.",
+            "evaluation": {
+              "type": "transcription_feedback",
+              "transcriptionSeparateFromPronunciation": true
+            }
+          },
+          {
+            "itemId": "english-a1-m069-speaking-ex01-i10",
+            "position": 10,
+            "prompt": "Say a sentence about this situation: Está bien.",
+            "modelAnswer": "That's fine.",
+            "evaluation": {
+              "type": "transcription_feedback",
+              "transcriptionSeparateFromPronunciation": true
+            }
+          }
+        ]
+      }
+    },
+    {
+      "sectionId": "english-a1-m069-listening",
+      "sectionKey": "listening",
+      "position": 8,
+      "title": "listening",
+      "exercise": {
+        "exerciseId": "english-a1-m069-listening-ex01",
+        "type": "listening_gap_fill",
+        "items": [
+          {
+            "itemId": "english-a1-m069-listening-ex01-i01",
+            "position": 1,
+            "gapToken": "[[gap-01]]",
+            "expectedWordId": "english-a1-m069-listening-word-01"
+          },
+          {
+            "itemId": "english-a1-m069-listening-ex01-i02",
+            "position": 2,
+            "gapToken": "[[gap-02]]",
+            "expectedWordId": "english-a1-m069-listening-word-02"
+          },
+          {
+            "itemId": "english-a1-m069-listening-ex01-i03",
+            "position": 3,
+            "gapToken": "[[gap-03]]",
+            "expectedWordId": "english-a1-m069-listening-word-03"
+          },
+          {
+            "itemId": "english-a1-m069-listening-ex01-i04",
+            "position": 4,
+            "gapToken": "[[gap-04]]",
+            "expectedWordId": "english-a1-m069-listening-word-04"
+          },
+          {
+            "itemId": "english-a1-m069-listening-ex01-i05",
+            "position": 5,
+            "gapToken": "[[gap-05]]",
+            "expectedWordId": "english-a1-m069-listening-word-05"
+          },
+          {
+            "itemId": "english-a1-m069-listening-ex01-i06",
+            "position": 6,
+            "gapToken": "[[gap-06]]",
+            "expectedWordId": "english-a1-m069-listening-word-06"
+          },
+          {
+            "itemId": "english-a1-m069-listening-ex01-i7",
+            "position": 7,
+            "gapToken": "[[gap-07]]",
+            "expectedWordId": "english-a1-m069-listening-word-7"
+          },
+          {
+            "itemId": "english-a1-m069-listening-ex01-i8",
+            "position": 8,
+            "gapToken": "[[gap-08]]",
+            "expectedWordId": "english-a1-m069-listening-word-8"
+          },
+          {
+            "itemId": "english-a1-m069-listening-ex01-i9",
+            "position": 9,
+            "gapToken": "[[gap-09]]",
+            "expectedWordId": "english-a1-m069-listening-word-9"
+          },
+          {
+            "itemId": "english-a1-m069-listening-ex01-i10",
+            "position": 10,
+            "gapToken": "[[gap-10]]",
+            "expectedWordId": "english-a1-m069-listening-word-10"
+          }
+        ],
+        "content": {
+          "audio": "tts:en-GB:The key words for Agreeing and Disagreeing are: yes, sure, sorry, I'm busy, maybe, another day, that's fine, why don't we...?, let's..., good idea, not today. Listen and repeat each word carefully.",
+          "audioLocale": "en-GB",
+          "transcriptTemplate": "The key words for Agreeing and Disagreeing are: [[gap-01]], [[gap-02]], [[gap-03]], [[gap-04]], [[gap-05]], [[gap-06]], [[gap-07]], [[gap-08]], [[gap-09]], [[gap-10]]. Listen and repeat each word carefully.",
+          "wordBank": [
+            {
+              "wordId": "english-a1-m069-listening-word-01",
+              "word": "yes, sure"
+            },
+            {
+              "wordId": "english-a1-m069-listening-word-02",
+              "word": "sorry"
+            },
+            {
+              "wordId": "english-a1-m069-listening-word-03",
+              "word": "I'm busy"
+            },
+            {
+              "wordId": "english-a1-m069-listening-word-04",
+              "word": "maybe"
+            },
+            {
+              "wordId": "english-a1-m069-listening-word-05",
+              "word": "another day"
+            },
+            {
+              "wordId": "english-a1-m069-listening-word-06",
+              "word": "that's fine"
+            },
+            {
+              "wordId": "english-a1-m069-listening-word-7",
+              "word": "why don't we...?"
+            },
+            {
+              "wordId": "english-a1-m069-listening-word-8",
+              "word": "let's..."
+            },
+            {
+              "wordId": "english-a1-m069-listening-word-9",
+              "word": "good idea"
+            },
+            {
+              "wordId": "english-a1-m069-listening-word-10",
+              "word": "not today"
+            }
+          ],
+          "interaction": "select_place_move_replace"
+        }
+      }
+    }
+  ]
+}

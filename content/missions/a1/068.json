@@ -1,0 +1,1205 @@
+{
+  "schemaVersion": "1.2.0",
+  "contentVersion": 1,
+  "course": {
+    "courseId": "english-a1",
+    "level": "A1",
+    "language": "en-GB"
+  },
+  "unit": {
+    "unitId": "english-a1-unit-07",
+    "courseId": "english-a1",
+    "position": 7,
+    "title": "Free time, hobbies and abilities"
+  },
+  "mission": {
+    "missionId": "english-a1-m068",
+    "unitId": "english-a1-unit-07",
+    "position": 68,
+    "title": "Plans for Saturday"
+  },
+  "sections": [
+    {
+      "sectionId": "english-a1-m068-explore",
+      "sectionKey": "explore",
+      "position": 1,
+      "title": "explore",
+      "exercise": {
+        "exerciseId": "english-a1-m068-explore-ex01",
+        "type": "vocabulary_pairs",
+        "items": [
+          {
+            "itemId": "english-a1-m068-explore-ex01-i01",
+            "position": 1,
+            "english": "this weekend",
+            "spanish": "este fin de semana",
+            "audio": "tts:en-GB:this weekend"
+          },
+          {
+            "itemId": "english-a1-m068-explore-ex01-i02",
+            "position": 2,
+            "english": "on Saturday",
+            "spanish": "el sábado",
+            "audio": "tts:en-GB:on Saturday"
+          },
+          {
+            "itemId": "english-a1-m068-explore-ex01-i03",
+            "position": 3,
+            "english": "tomorrow",
+            "spanish": "mañana",
+            "audio": "tts:en-GB:tomorrow"
+          },
+          {
+            "itemId": "english-a1-m068-explore-ex01-i04",
+            "position": 4,
+            "english": "meet",
+            "spanish": "quedar",
+            "audio": "tts:en-GB:meet"
+          },
+          {
+            "itemId": "english-a1-m068-explore-ex01-i05",
+            "position": 5,
+            "english": "go",
+            "spanish": "ir",
+            "audio": "tts:en-GB:go"
+          },
+          {
+            "itemId": "english-a1-m068-explore-ex01-i06",
+            "position": 6,
+            "english": "at the park",
+            "spanish": "en el parque",
+            "audio": "tts:en-GB:at the park"
+          },
+          {
+            "itemId": "english-a1-m068-explore-ex01-i7",
+            "position": 7,
+            "english": "next week",
+            "spanish": "la semana que viene",
+            "audio": "tts:en-GB:next week"
+          },
+          {
+            "itemId": "english-a1-m068-explore-ex01-i8",
+            "position": 8,
+            "english": "after school",
+            "spanish": "después de clase",
+            "audio": "tts:en-GB:after school"
+          },
+          {
+            "itemId": "english-a1-m068-explore-ex01-i9",
+            "position": 9,
+            "english": "visit",
+            "spanish": "visitar",
+            "audio": "tts:en-GB:visit"
+          },
+          {
+            "itemId": "english-a1-m068-explore-ex01-i10",
+            "position": 10,
+            "english": "cinema",
+            "spanish": "cine",
+            "audio": "tts:en-GB:cinema"
+          }
+        ],
+        "theory": {
+          "title": "Vocabulary: Plans for Saturday",
+          "explanation": "Explora diez palabras y expresiones sobre plans for saturday. Escucha el modelo británico, relaciona cada palabra con su significado y úsala en una frase.",
+          "patterns": [
+            {
+              "label": "Useful language",
+              "pattern": "Short question + short answer",
+              "examples": [
+                "What are you doing on Saturday?",
+                "Let's meet tomorrow.",
+                "I am going to the park."
+              ]
+            }
+          ],
+          "tip": "Repite las expresiones y crea un ejemplo relacionado con tu vida."
+        }
+      }
+    },
+    {
+      "sectionId": "english-a1-m068-practice",
+      "sectionKey": "practice",
+      "position": 2,
+      "title": "practice",
+      "exercise": {
+        "exerciseId": "english-a1-m068-practice-ex01",
+        "type": "mixed_practice",
+        "items": [
+          {
+            "itemId": "english-a1-m068-practice-ex01-i01",
+            "position": 1,
+            "taskType": "translation_multiple_choice",
+            "prompt": "Traduce al español: “What are you doing on Saturday?”",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "¿Qué haces el sábado?",
+              "Quedemos mañana.",
+              "Voy a ir al parque."
+            ],
+            "correctAnswer": "¿Qué haces el sábado?",
+            "sourceEnglish": "What are you doing on Saturday?"
+          },
+          {
+            "itemId": "english-a1-m068-practice-ex01-i02",
+            "position": 2,
+            "taskType": "translation_multiple_choice",
+            "prompt": "Traduce al español: “Let's meet tomorrow.”",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "Quedemos mañana.",
+              "Voy a ir al parque.",
+              "¿Estás libre este fin de semana?"
+            ],
+            "correctAnswer": "Quedemos mañana.",
+            "sourceEnglish": "Let's meet tomorrow."
+          },
+          {
+            "itemId": "english-a1-m068-practice-ex01-i03",
+            "position": 3,
+            "taskType": "translation_multiple_choice",
+            "prompt": "Traduce al español: “I am going to the park.”",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "Voy a ir al parque.",
+              "¿Estás libre este fin de semana?",
+              "Podemos quedar a las diez."
+            ],
+            "correctAnswer": "Voy a ir al parque.",
+            "sourceEnglish": "I am going to the park."
+          },
+          {
+            "itemId": "english-a1-m068-practice-ex01-i04",
+            "position": 4,
+            "taskType": "translation_multiple_choice",
+            "prompt": "Traduce al español: “Are you free this weekend?”",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "¿Estás libre este fin de semana?",
+              "Podemos quedar a las diez.",
+              "Voy a quedar con mis amigos."
+            ],
+            "correctAnswer": "¿Estás libre este fin de semana?",
+            "sourceEnglish": "Are you free this weekend?"
+          },
+          {
+            "itemId": "english-a1-m068-practice-ex01-i05",
+            "position": 5,
+            "taskType": "translation_multiple_choice",
+            "prompt": "Traduce al español: “We can meet at ten.”",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "Podemos quedar a las diez.",
+              "Voy a quedar con mis amigos.",
+              "¿Qué haces el sábado?"
+            ],
+            "correctAnswer": "Podemos quedar a las diez.",
+            "sourceEnglish": "We can meet at ten."
+          },
+          {
+            "itemId": "english-a1-m068-practice-ex01-i06",
+            "position": 6,
+            "taskType": "translation_multiple_choice",
+            "prompt": "Traduce al español: “I am meeting my friends.”",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "Voy a quedar con mis amigos.",
+              "¿Qué haces el sábado?",
+              "Quedemos mañana."
+            ],
+            "correctAnswer": "Voy a quedar con mis amigos.",
+            "sourceEnglish": "I am meeting my friends."
+          },
+          {
+            "itemId": "english-a1-m068-practice-ex01-i07",
+            "position": 7,
+            "taskType": "translation_multiple_choice",
+            "prompt": "Traduce al español: “What are you doing on Saturday?”",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "¿Qué haces el sábado?",
+              "Quedemos mañana.",
+              "Voy a ir al parque."
+            ],
+            "correctAnswer": "¿Qué haces el sábado?",
+            "sourceEnglish": "What are you doing on Saturday?"
+          },
+          {
+            "itemId": "english-a1-m068-practice-ex01-i08",
+            "position": 8,
+            "taskType": "translation_multiple_choice",
+            "prompt": "Traduce al español: “Let's meet tomorrow.”",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "Quedemos mañana.",
+              "Voy a ir al parque.",
+              "¿Estás libre este fin de semana?"
+            ],
+            "correctAnswer": "Quedemos mañana.",
+            "sourceEnglish": "Let's meet tomorrow."
+          },
+          {
+            "itemId": "english-a1-m068-practice-ex01-i09",
+            "position": 9,
+            "taskType": "translation_multiple_choice",
+            "prompt": "Traduce al español: “I am going to the park.”",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "Voy a ir al parque.",
+              "¿Estás libre este fin de semana?",
+              "Podemos quedar a las diez."
+            ],
+            "correctAnswer": "Voy a ir al parque.",
+            "sourceEnglish": "I am going to the park."
+          },
+          {
+            "itemId": "english-a1-m068-practice-ex01-i10",
+            "position": 10,
+            "taskType": "translation_multiple_choice",
+            "prompt": "Traduce al español: “Are you free this weekend?”",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "¿Estás libre este fin de semana?",
+              "Podemos quedar a las diez.",
+              "Voy a quedar con mis amigos."
+            ],
+            "correctAnswer": "¿Estás libre este fin de semana?",
+            "sourceEnglish": "Are you free this weekend?"
+          },
+          {
+            "itemId": "english-a1-m068-practice-ex01-i11",
+            "position": 11,
+            "taskType": "listening_translation_multiple_choice",
+            "prompt": "Escucha el inglés y elige su significado.",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "¿Qué haces el sábado?",
+              "Quedemos mañana.",
+              "Voy a ir al parque."
+            ],
+            "correctAnswer": "¿Qué haces el sábado?",
+            "sourceEnglish": "What are you doing on Saturday?"
+          },
+          {
+            "itemId": "english-a1-m068-practice-ex01-i12",
+            "position": 12,
+            "taskType": "listening_translation_multiple_choice",
+            "prompt": "Escucha el inglés y elige su significado.",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "Quedemos mañana.",
+              "Voy a ir al parque.",
+              "¿Estás libre este fin de semana?"
+            ],
+            "correctAnswer": "Quedemos mañana.",
+            "sourceEnglish": "Let's meet tomorrow."
+          },
+          {
+            "itemId": "english-a1-m068-practice-ex01-i13",
+            "position": 13,
+            "taskType": "listening_translation_multiple_choice",
+            "prompt": "Escucha el inglés y elige su significado.",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "Voy a ir al parque.",
+              "¿Estás libre este fin de semana?",
+              "Podemos quedar a las diez."
+            ],
+            "correctAnswer": "Voy a ir al parque.",
+            "sourceEnglish": "I am going to the park."
+          },
+          {
+            "itemId": "english-a1-m068-practice-ex01-i14",
+            "position": 14,
+            "taskType": "listening_translation_multiple_choice",
+            "prompt": "Escucha el inglés y elige su significado.",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "¿Estás libre este fin de semana?",
+              "Podemos quedar a las diez.",
+              "Voy a quedar con mis amigos."
+            ],
+            "correctAnswer": "¿Estás libre este fin de semana?",
+            "sourceEnglish": "Are you free this weekend?"
+          },
+          {
+            "itemId": "english-a1-m068-practice-ex01-i15",
+            "position": 15,
+            "taskType": "listening_translation_multiple_choice",
+            "prompt": "Escucha el inglés y elige su significado.",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "Podemos quedar a las diez.",
+              "Voy a quedar con mis amigos.",
+              "¿Qué haces el sábado?"
+            ],
+            "correctAnswer": "Podemos quedar a las diez.",
+            "sourceEnglish": "We can meet at ten."
+          },
+          {
+            "itemId": "english-a1-m068-practice-ex01-i16",
+            "position": 16,
+            "taskType": "listening_translation_multiple_choice",
+            "prompt": "Escucha el inglés y elige su significado.",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "Voy a quedar con mis amigos.",
+              "¿Qué haces el sábado?",
+              "Quedemos mañana."
+            ],
+            "correctAnswer": "Voy a quedar con mis amigos.",
+            "sourceEnglish": "I am meeting my friends."
+          },
+          {
+            "itemId": "english-a1-m068-practice-ex01-i17",
+            "position": 17,
+            "taskType": "listening_translation_multiple_choice",
+            "prompt": "Escucha el inglés y elige su significado.",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "¿Qué haces el sábado?",
+              "Quedemos mañana.",
+              "Voy a ir al parque."
+            ],
+            "correctAnswer": "¿Qué haces el sábado?",
+            "sourceEnglish": "What are you doing on Saturday?"
+          },
+          {
+            "itemId": "english-a1-m068-practice-ex01-i18",
+            "position": 18,
+            "taskType": "listening_translation_multiple_choice",
+            "prompt": "Escucha el inglés y elige su significado.",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "Quedemos mañana.",
+              "Voy a ir al parque.",
+              "¿Estás libre este fin de semana?"
+            ],
+            "correctAnswer": "Quedemos mañana.",
+            "sourceEnglish": "Let's meet tomorrow."
+          },
+          {
+            "itemId": "english-a1-m068-practice-ex01-i19",
+            "position": 19,
+            "taskType": "listening_translation_multiple_choice",
+            "prompt": "Escucha el inglés y elige su significado.",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "Voy a ir al parque.",
+              "¿Estás libre este fin de semana?",
+              "Podemos quedar a las diez."
+            ],
+            "correctAnswer": "Voy a ir al parque.",
+            "sourceEnglish": "I am going to the park."
+          },
+          {
+            "itemId": "english-a1-m068-practice-ex01-i20",
+            "position": 20,
+            "taskType": "listening_translation_multiple_choice",
+            "prompt": "Escucha el inglés y elige su significado.",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "¿Estás libre este fin de semana?",
+              "Podemos quedar a las diez.",
+              "Voy a quedar con mis amigos."
+            ],
+            "correctAnswer": "¿Estás libre este fin de semana?",
+            "sourceEnglish": "Are you free this weekend?"
+          }
+        ]
+      }
+    },
+    {
+      "sectionId": "english-a1-m068-grammar",
+      "sectionKey": "grammar",
+      "position": 3,
+      "title": "grammar",
+      "exercise": {
+        "exerciseId": "english-a1-m068-grammar-ex01",
+        "type": "grammar",
+        "items": [
+          {
+            "itemId": "english-a1-m068-grammar-ex01-i01",
+            "position": 1,
+            "prompt": "I ___ going to play tennis.",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "am",
+              "is",
+              "are"
+            ],
+            "correctAnswer": "am"
+          },
+          {
+            "itemId": "english-a1-m068-grammar-ex01-i02",
+            "position": 2,
+            "prompt": "She ___ going to meet us.",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "is",
+              "are",
+              "am"
+            ],
+            "correctAnswer": "is"
+          },
+          {
+            "itemId": "english-a1-m068-grammar-ex01-i03",
+            "position": 3,
+            "prompt": "They ___ going to go cycling.",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "are",
+              "is",
+              "am"
+            ],
+            "correctAnswer": "are"
+          },
+          {
+            "itemId": "english-a1-m068-grammar-ex01-i04",
+            "position": 4,
+            "prompt": "We are going to ___ a film.",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "watch",
+              "watches",
+              "watching"
+            ],
+            "correctAnswer": "watch"
+          },
+          {
+            "itemId": "english-a1-m068-grammar-ex01-i05",
+            "position": 5,
+            "prompt": "He is going to ___ football.",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "play",
+              "plays",
+              "playing"
+            ],
+            "correctAnswer": "play"
+          },
+          {
+            "itemId": "english-a1-m068-grammar-ex01-i06",
+            "position": 6,
+            "prompt": "___ you going to come?",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "Are",
+              "Is",
+              "Am"
+            ],
+            "correctAnswer": "Are"
+          },
+          {
+            "itemId": "english-a1-m068-grammar-ex01-i07",
+            "position": 7,
+            "prompt": "I'm not going to ___ today.",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "swim",
+              "swims",
+              "swimming"
+            ],
+            "correctAnswer": "swim"
+          },
+          {
+            "itemId": "english-a1-m068-grammar-ex01-i08",
+            "position": 8,
+            "prompt": "What ___ she going to do?",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "is",
+              "are",
+              "am"
+            ],
+            "correctAnswer": "is"
+          },
+          {
+            "itemId": "english-a1-m068-grammar-ex01-i09",
+            "position": 9,
+            "prompt": "They are ___ to visit us.",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "going",
+              "go",
+              "goes"
+            ],
+            "correctAnswer": "going"
+          },
+          {
+            "itemId": "english-a1-m068-grammar-ex01-i10",
+            "position": 10,
+            "prompt": "Are we going to ___ at six?",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "meet",
+              "meets",
+              "meeting"
+            ],
+            "correctAnswer": "meet"
+          }
+        ],
+        "theory": {
+          "title": "Plans with be going to",
+          "explanation": "Usamos be going to + verbo base para hablar de planes e intenciones. Cambia be según el sujeto: am, is o are.",
+          "patterns": [
+            {
+              "label": "Model",
+              "pattern": "I'm going to play tennis",
+              "examples": [
+                "I'm going to play tennis",
+                "We're going to meet on Saturday."
+              ]
+            }
+          ],
+          "tip": "Lee el modelo en voz alta y fíjate en la forma verbal."
+        }
+      }
+    },
+    {
+      "sectionId": "english-a1-m068-pronunciation",
+      "sectionKey": "pronunciation",
+      "position": 4,
+      "title": "pronunciation",
+      "exercise": {
+        "exerciseId": "english-a1-m068-pronunciation-ex01",
+        "type": "pronunciation_cards",
+        "items": [
+          {
+            "itemId": "english-a1-m068-pronunciation-ex01-i01",
+            "position": 1,
+            "word": "this weekend",
+            "translation": "este fin de semana",
+            "pronunciationGuide": "Listen to the phrase as one unit and notice its main stress.",
+            "audio": "tts:en-GB:this weekend"
+          },
+          {
+            "itemId": "english-a1-m068-pronunciation-ex01-i02",
+            "position": 2,
+            "word": "on Saturday",
+            "translation": "el sábado",
+            "pronunciationGuide": "Listen to the phrase as one unit and notice its main stress.",
+            "audio": "tts:en-GB:on Saturday"
+          },
+          {
+            "itemId": "english-a1-m068-pronunciation-ex01-i03",
+            "position": 3,
+            "word": "tomorrow",
+            "translation": "mañana",
+            "pronunciationGuide": "Listen to the en-GB model and keep the final consonant clear.",
+            "audio": "tts:en-GB:tomorrow"
+          },
+          {
+            "itemId": "english-a1-m068-pronunciation-ex01-i04",
+            "position": 4,
+            "word": "meet",
+            "translation": "quedar",
+            "pronunciationGuide": "Listen to the en-GB model and keep the final consonant clear.",
+            "audio": "tts:en-GB:meet"
+          },
+          {
+            "itemId": "english-a1-m068-pronunciation-ex01-i05",
+            "position": 5,
+            "word": "go",
+            "translation": "ir",
+            "pronunciationGuide": "Listen to the en-GB model and keep the final consonant clear.",
+            "audio": "tts:en-GB:go"
+          },
+          {
+            "itemId": "english-a1-m068-pronunciation-ex01-i06",
+            "position": 6,
+            "word": "at the park",
+            "translation": "en el parque",
+            "pronunciationGuide": "Listen to the phrase as one unit and notice its main stress.",
+            "audio": "tts:en-GB:at the park"
+          },
+          {
+            "itemId": "english-a1-m068-pronunciation-ex01-i7",
+            "position": 7,
+            "word": "next week",
+            "translation": "la semana que viene",
+            "pronunciationGuide": "Listen to the en-GB model and keep the final consonant clear.",
+            "audio": "tts:en-GB:next week"
+          },
+          {
+            "itemId": "english-a1-m068-pronunciation-ex01-i8",
+            "position": 8,
+            "word": "after school",
+            "translation": "después de clase",
+            "pronunciationGuide": "Listen to the en-GB model and keep the final consonant clear.",
+            "audio": "tts:en-GB:after school"
+          },
+          {
+            "itemId": "english-a1-m068-pronunciation-ex01-i9",
+            "position": 9,
+            "word": "visit",
+            "translation": "visitar",
+            "pronunciationGuide": "Listen to the en-GB model and keep the final consonant clear.",
+            "audio": "tts:en-GB:visit"
+          },
+          {
+            "itemId": "english-a1-m068-pronunciation-ex01-i10",
+            "position": 10,
+            "word": "cinema",
+            "translation": "cine",
+            "pronunciationGuide": "Listen to the en-GB model and keep the final consonant clear.",
+            "audio": "tts:en-GB:cinema"
+          }
+        ],
+        "focus": "Practica el ritmo y el acento de las palabras clave de Plans for Saturday."
+      }
+    },
+    {
+      "sectionId": "english-a1-m068-reading",
+      "sectionKey": "reading",
+      "position": 5,
+      "title": "reading",
+      "exercise": {
+        "exerciseId": "english-a1-m068-reading-ex01",
+        "type": "reading_comprehension",
+        "items": [
+          {
+            "itemId": "english-a1-m068-reading-ex01-i01",
+            "position": 1,
+            "prompt": "Which English sentence means “¿Qué haces el sábado?”?",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "What are you doing on Saturday?",
+              "Let's meet tomorrow.",
+              "I am going to the park."
+            ],
+            "correctAnswer": "What are you doing on Saturday?"
+          },
+          {
+            "itemId": "english-a1-m068-reading-ex01-i02",
+            "position": 2,
+            "prompt": "Which English sentence means “Quedemos mañana.”?",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "Let's meet tomorrow.",
+              "I am going to the park.",
+              "Are you free this weekend?"
+            ],
+            "correctAnswer": "Let's meet tomorrow."
+          },
+          {
+            "itemId": "english-a1-m068-reading-ex01-i03",
+            "position": 3,
+            "prompt": "Which English sentence means “Voy a ir al parque.”?",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "I am going to the park.",
+              "Are you free this weekend?",
+              "We can meet at ten."
+            ],
+            "correctAnswer": "I am going to the park."
+          },
+          {
+            "itemId": "english-a1-m068-reading-ex01-i04",
+            "position": 4,
+            "prompt": "Which English sentence means “¿Estás libre este fin de semana?”?",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "Are you free this weekend?",
+              "We can meet at ten.",
+              "I am meeting my friends."
+            ],
+            "correctAnswer": "Are you free this weekend?"
+          },
+          {
+            "itemId": "english-a1-m068-reading-ex01-i05",
+            "position": 5,
+            "prompt": "Which English sentence means “Podemos quedar a las diez.”?",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "We can meet at ten.",
+              "I am meeting my friends.",
+              "What are you doing on Saturday?"
+            ],
+            "correctAnswer": "We can meet at ten."
+          },
+          {
+            "itemId": "english-a1-m068-reading-ex01-i06",
+            "position": 6,
+            "prompt": "Which English sentence means “Voy a quedar con mis amigos.”?",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "I am meeting my friends.",
+              "What are you doing on Saturday?",
+              "Let's meet tomorrow."
+            ],
+            "correctAnswer": "I am meeting my friends."
+          },
+          {
+            "itemId": "english-a1-m068-reading-ex01-i07",
+            "position": 7,
+            "prompt": "Which English sentence means “¿Qué haces el sábado?”?",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "What are you doing on Saturday?",
+              "Let's meet tomorrow.",
+              "I am going to the park."
+            ],
+            "correctAnswer": "What are you doing on Saturday?"
+          },
+          {
+            "itemId": "english-a1-m068-reading-ex01-i08",
+            "position": 8,
+            "prompt": "Which English sentence means “Quedemos mañana.”?",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "Let's meet tomorrow.",
+              "I am going to the park.",
+              "Are you free this weekend?"
+            ],
+            "correctAnswer": "Let's meet tomorrow."
+          },
+          {
+            "itemId": "english-a1-m068-reading-ex01-i09",
+            "position": 9,
+            "prompt": "Which English sentence means “Voy a ir al parque.”?",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "I am going to the park.",
+              "Are you free this weekend?",
+              "What are you doing on Saturday?"
+            ],
+            "correctAnswer": "I am going to the park."
+          },
+          {
+            "itemId": "english-a1-m068-reading-ex01-i10",
+            "position": 10,
+            "prompt": "Which English sentence means “¿Estás libre este fin de semana?”?",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "Are you free this weekend?",
+              "What are you doing on Saturday?",
+              "Let's meet tomorrow."
+            ],
+            "correctAnswer": "Are you free this weekend?"
+          }
+        ],
+        "content": {
+          "passageId": "english-a1-m068-reading-passage-01",
+          "passage": "What are you doing on Saturday? Let's meet tomorrow. I am going to the park. Are you free this weekend? We can meet at ten. I am meeting my friends."
+        }
+      }
+    },
+    {
+      "sectionId": "english-a1-m068-writing",
+      "sectionKey": "writing",
+      "position": 6,
+      "title": "writing",
+      "exercise": {
+        "exerciseId": "english-a1-m068-writing-ex01",
+        "type": "dictation",
+        "items": [
+          {
+            "itemId": "english-a1-m068-writing-ex01-i01",
+            "position": 1,
+            "audio": "tts:en-GB:What are you doing on Saturday?",
+            "expectedAnswer": "What are you doing on Saturday?",
+            "evaluation": {
+              "type": "normalised_text"
+            }
+          },
+          {
+            "itemId": "english-a1-m068-writing-ex01-i02",
+            "position": 2,
+            "audio": "tts:en-GB:Let's meet tomorrow.",
+            "expectedAnswer": "Let's meet tomorrow.",
+            "evaluation": {
+              "type": "normalised_text"
+            }
+          },
+          {
+            "itemId": "english-a1-m068-writing-ex01-i03",
+            "position": 3,
+            "audio": "tts:en-GB:I am going to the park.",
+            "expectedAnswer": "I am going to the park.",
+            "evaluation": {
+              "type": "normalised_text"
+            }
+          },
+          {
+            "itemId": "english-a1-m068-writing-ex01-i04",
+            "position": 4,
+            "audio": "tts:en-GB:Are you free this weekend?",
+            "expectedAnswer": "Are you free this weekend?",
+            "evaluation": {
+              "type": "normalised_text"
+            }
+          },
+          {
+            "itemId": "english-a1-m068-writing-ex01-i05",
+            "position": 5,
+            "audio": "tts:en-GB:We can meet at ten.",
+            "expectedAnswer": "We can meet at ten.",
+            "evaluation": {
+              "type": "normalised_text"
+            }
+          },
+          {
+            "itemId": "english-a1-m068-writing-ex01-i06",
+            "position": 6,
+            "audio": "tts:en-GB:I am meeting my friends.",
+            "expectedAnswer": "I am meeting my friends.",
+            "evaluation": {
+              "type": "normalised_text"
+            }
+          },
+          {
+            "itemId": "english-a1-m068-writing-ex01-i07",
+            "position": 7,
+            "audio": "tts:en-GB:What are you doing on Saturday?",
+            "expectedAnswer": "What are you doing on Saturday?",
+            "evaluation": {
+              "type": "normalised_text"
+            }
+          },
+          {
+            "itemId": "english-a1-m068-writing-ex01-i08",
+            "position": 8,
+            "audio": "tts:en-GB:Let's meet tomorrow.",
+            "expectedAnswer": "Let's meet tomorrow.",
+            "evaluation": {
+              "type": "normalised_text"
+            }
+          },
+          {
+            "itemId": "english-a1-m068-writing-ex01-i09",
+            "position": 9,
+            "audio": "tts:en-GB:I am going to the park.",
+            "expectedAnswer": "I am going to the park.",
+            "evaluation": {
+              "type": "normalised_text"
+            }
+          },
+          {
+            "itemId": "english-a1-m068-writing-ex01-i10",
+            "position": 10,
+            "audio": "tts:en-GB:Are you free this weekend?",
+            "expectedAnswer": "Are you free this weekend?",
+            "evaluation": {
+              "type": "normalised_text"
+            }
+          }
+        ],
+        "writingTask": "Escribe 5–6 frases sobre plans for saturday. Incluye vocabulario de la misión y la estructura plans with be going to.",
+        "modelText": "What are you doing on Saturday? Let's meet tomorrow. I am going to the park. Are you free this weekend? We can meet at ten. I am meeting my friends."
+      }
+    },
+    {
+      "sectionId": "english-a1-m068-speaking",
+      "sectionKey": "speaking",
+      "position": 7,
+      "title": "speaking",
+      "exercise": {
+        "exerciseId": "english-a1-m068-speaking-ex01",
+        "type": "speaking_prompts",
+        "items": [
+          {
+            "itemId": "english-a1-m068-speaking-ex01-i01",
+            "position": 1,
+            "prompt": "Say a sentence about this situation: ¿Qué haces el sábado?",
+            "modelAnswer": "What are you doing on Saturday?",
+            "evaluation": {
+              "type": "transcription_feedback",
+              "transcriptionSeparateFromPronunciation": true
+            }
+          },
+          {
+            "itemId": "english-a1-m068-speaking-ex01-i02",
+            "position": 2,
+            "prompt": "Say a sentence about this situation: Quedemos mañana.",
+            "modelAnswer": "Let's meet tomorrow.",
+            "evaluation": {
+              "type": "transcription_feedback",
+              "transcriptionSeparateFromPronunciation": true
+            }
+          },
+          {
+            "itemId": "english-a1-m068-speaking-ex01-i03",
+            "position": 3,
+            "prompt": "Say a sentence about this situation: Voy a ir al parque.",
+            "modelAnswer": "I am going to the park.",
+            "evaluation": {
+              "type": "transcription_feedback",
+              "transcriptionSeparateFromPronunciation": true
+            }
+          },
+          {
+            "itemId": "english-a1-m068-speaking-ex01-i04",
+            "position": 4,
+            "prompt": "Say a sentence about this situation: ¿Estás libre este fin de semana?",
+            "modelAnswer": "Are you free this weekend?",
+            "evaluation": {
+              "type": "transcription_feedback",
+              "transcriptionSeparateFromPronunciation": true
+            }
+          },
+          {
+            "itemId": "english-a1-m068-speaking-ex01-i05",
+            "position": 5,
+            "prompt": "Say a sentence about this situation: Podemos quedar a las diez.",
+            "modelAnswer": "We can meet at ten.",
+            "evaluation": {
+              "type": "transcription_feedback",
+              "transcriptionSeparateFromPronunciation": true
+            }
+          },
+          {
+            "itemId": "english-a1-m068-speaking-ex01-i06",
+            "position": 6,
+            "prompt": "Say a sentence about this situation: Voy a quedar con mis amigos.",
+            "modelAnswer": "I am meeting my friends.",
+            "evaluation": {
+              "type": "transcription_feedback",
+              "transcriptionSeparateFromPronunciation": true
+            }
+          },
+          {
+            "itemId": "english-a1-m068-speaking-ex01-i07",
+            "position": 7,
+            "prompt": "Say a sentence about this situation: ¿Qué haces el sábado?",
+            "modelAnswer": "What are you doing on Saturday?",
+            "evaluation": {
+              "type": "transcription_feedback",
+              "transcriptionSeparateFromPronunciation": true
+            }
+          },
+          {
+            "itemId": "english-a1-m068-speaking-ex01-i08",
+            "position": 8,
+            "prompt": "Say a sentence about this situation: Quedemos mañana.",
+            "modelAnswer": "Let's meet tomorrow.",
+            "evaluation": {
+              "type": "transcription_feedback",
+              "transcriptionSeparateFromPronunciation": true
+            }
+          },
+          {
+            "itemId": "english-a1-m068-speaking-ex01-i09",
+            "position": 9,
+            "prompt": "Say a sentence about this situation: Voy a ir al parque.",
+            "modelAnswer": "I am going to the park.",
+            "evaluation": {
+              "type": "transcription_feedback",
+              "transcriptionSeparateFromPronunciation": true
+            }
+          },
+          {
+            "itemId": "english-a1-m068-speaking-ex01-i10",
+            "position": 10,
+            "prompt": "Say a sentence about this situation: ¿Estás libre este fin de semana?",
+            "modelAnswer": "Are you free this weekend?",
+            "evaluation": {
+              "type": "transcription_feedback",
+              "transcriptionSeparateFromPronunciation": true
+            }
+          }
+        ]
+      }
+    },
+    {
+      "sectionId": "english-a1-m068-listening",
+      "sectionKey": "listening",
+      "position": 8,
+      "title": "listening",
+      "exercise": {
+        "exerciseId": "english-a1-m068-listening-ex01",
+        "type": "listening_gap_fill",
+        "items": [
+          {
+            "itemId": "english-a1-m068-listening-ex01-i01",
+            "position": 1,
+            "gapToken": "[[gap-01]]",
+            "expectedWordId": "english-a1-m068-listening-word-01"
+          },
+          {
+            "itemId": "english-a1-m068-listening-ex01-i02",
+            "position": 2,
+            "gapToken": "[[gap-02]]",
+            "expectedWordId": "english-a1-m068-listening-word-02"
+          },
+          {
+            "itemId": "english-a1-m068-listening-ex01-i03",
+            "position": 3,
+            "gapToken": "[[gap-03]]",
+            "expectedWordId": "english-a1-m068-listening-word-03"
+          },
+          {
+            "itemId": "english-a1-m068-listening-ex01-i04",
+            "position": 4,
+            "gapToken": "[[gap-04]]",
+            "expectedWordId": "english-a1-m068-listening-word-04"
+          },
+          {
+            "itemId": "english-a1-m068-listening-ex01-i05",
+            "position": 5,
+            "gapToken": "[[gap-05]]",
+            "expectedWordId": "english-a1-m068-listening-word-05"
+          },
+          {
+            "itemId": "english-a1-m068-listening-ex01-i06",
+            "position": 6,
+            "gapToken": "[[gap-06]]",
+            "expectedWordId": "english-a1-m068-listening-word-06"
+          },
+          {
+            "itemId": "english-a1-m068-listening-ex01-i7",
+            "position": 7,
+            "gapToken": "[[gap-07]]",
+            "expectedWordId": "english-a1-m068-listening-word-7"
+          },
+          {
+            "itemId": "english-a1-m068-listening-ex01-i8",
+            "position": 8,
+            "gapToken": "[[gap-08]]",
+            "expectedWordId": "english-a1-m068-listening-word-8"
+          },
+          {
+            "itemId": "english-a1-m068-listening-ex01-i9",
+            "position": 9,
+            "gapToken": "[[gap-09]]",
+            "expectedWordId": "english-a1-m068-listening-word-9"
+          },
+          {
+            "itemId": "english-a1-m068-listening-ex01-i10",
+            "position": 10,
+            "gapToken": "[[gap-10]]",
+            "expectedWordId": "english-a1-m068-listening-word-10"
+          }
+        ],
+        "content": {
+          "audio": "tts:en-GB:The key words for Plans for Saturday are: this weekend, on Saturday, tomorrow, meet, go, at the park, next week, after school, visit, cinema. Listen and repeat each word carefully.",
+          "audioLocale": "en-GB",
+          "transcriptTemplate": "The key words for Plans for Saturday are: [[gap-01]], [[gap-02]], [[gap-03]], [[gap-04]], [[gap-05]], [[gap-06]], [[gap-07]], [[gap-08]], [[gap-09]], [[gap-10]]. Listen and repeat each word carefully.",
+          "wordBank": [
+            {
+              "wordId": "english-a1-m068-listening-word-01",
+              "word": "this weekend"
+            },
+            {
+              "wordId": "english-a1-m068-listening-word-02",
+              "word": "on Saturday"
+            },
+            {
+              "wordId": "english-a1-m068-listening-word-03",
+              "word": "tomorrow"
+            },
+            {
+              "wordId": "english-a1-m068-listening-word-04",
+              "word": "meet"
+            },
+            {
+              "wordId": "english-a1-m068-listening-word-05",
+              "word": "go"
+            },
+            {
+              "wordId": "english-a1-m068-listening-word-06",
+              "word": "at the park"
+            },
+            {
+              "wordId": "english-a1-m068-listening-word-7",
+              "word": "next week"
+            },
+            {
+              "wordId": "english-a1-m068-listening-word-8",
+              "word": "after school"
+            },
+            {
+              "wordId": "english-a1-m068-listening-word-9",
+              "word": "visit"
+            },
+            {
+              "wordId": "english-a1-m068-listening-word-10",
+              "word": "cinema"
+            }
+          ],
+          "interaction": "select_place_move_replace"
+        }
+      }
+    }
+  ]
+}

@@ -1,0 +1,1204 @@
+{
+  "schemaVersion": "1.2.0",
+  "contentVersion": 1,
+  "course": {
+    "courseId": "english-a1",
+    "level": "A1",
+    "language": "en-GB"
+  },
+  "unit": {
+    "unitId": "english-a1-unit-07",
+    "courseId": "english-a1",
+    "position": 7,
+    "title": "Free time, hobbies and abilities"
+  },
+  "mission": {
+    "missionId": "english-a1-m070",
+    "unitId": "english-a1-unit-07",
+    "position": 70,
+    "title": "Free Time Conversation"
+  },
+  "sections": [
+    {
+      "sectionId": "english-a1-m070-explore",
+      "sectionKey": "explore",
+      "position": 1,
+      "title": "explore",
+      "exercise": {
+        "exerciseId": "english-a1-m070-explore-ex01",
+        "type": "vocabulary_pairs",
+        "items": [
+          {
+            "itemId": "english-a1-m070-explore-ex01-i01",
+            "position": 1,
+            "english": "hobbies",
+            "spanish": "aficiones",
+            "audio": "tts:en-GB:hobbies"
+          },
+          {
+            "itemId": "english-a1-m070-explore-ex01-i02",
+            "position": 2,
+            "english": "sports",
+            "spanish": "deportes",
+            "audio": "tts:en-GB:sports"
+          },
+          {
+            "itemId": "english-a1-m070-explore-ex01-i03",
+            "position": 3,
+            "english": "free time",
+            "spanish": "tiempo libre",
+            "audio": "tts:en-GB:free time"
+          },
+          {
+            "itemId": "english-a1-m070-explore-ex01-i04",
+            "position": 4,
+            "english": "can",
+            "spanish": "saber / poder",
+            "audio": "tts:en-GB:can"
+          },
+          {
+            "itemId": "english-a1-m070-explore-ex01-i05",
+            "position": 5,
+            "english": "invite",
+            "spanish": "invitar",
+            "audio": "tts:en-GB:invite"
+          },
+          {
+            "itemId": "english-a1-m070-explore-ex01-i06",
+            "position": 6,
+            "english": "Would you like to...?",
+            "spanish": "¿Te gustaría...?",
+            "audio": "tts:en-GB:Would you like to...?"
+          },
+          {
+            "itemId": "english-a1-m070-explore-ex01-i7",
+            "position": 7,
+            "english": "ask a question",
+            "spanish": "hacer una pregunta",
+            "audio": "tts:en-GB:ask a question"
+          },
+          {
+            "itemId": "english-a1-m070-explore-ex01-i8",
+            "position": 8,
+            "english": "answer",
+            "spanish": "responder",
+            "audio": "tts:en-GB:answer"
+          },
+          {
+            "itemId": "english-a1-m070-explore-ex01-i9",
+            "position": 9,
+            "english": "usually",
+            "spanish": "normalmente",
+            "audio": "tts:en-GB:usually"
+          },
+          {
+            "itemId": "english-a1-m070-explore-ex01-i10",
+            "position": 10,
+            "english": "sometimes",
+            "spanish": "a veces",
+            "audio": "tts:en-GB:sometimes"
+          }
+        ],
+        "theory": {
+          "title": "Vocabulary: Free Time Conversation",
+          "explanation": "Explora diez palabras y expresiones sobre free time conversation. Escucha el modelo británico, relaciona cada palabra con su significado y úsala en una frase.",
+          "patterns": [
+            {
+              "label": "Useful language",
+              "pattern": "Short question + short answer",
+              "examples": [
+                "What do you do in your free time?",
+                "I like playing football.",
+                "Can you swim?"
+              ]
+            }
+          ],
+          "tip": "Repite las expresiones y crea un ejemplo relacionado con tu vida."
+        }
+      }
+    },
+    {
+      "sectionId": "english-a1-m070-practice",
+      "sectionKey": "practice",
+      "position": 2,
+      "title": "practice",
+      "exercise": {
+        "exerciseId": "english-a1-m070-practice-ex01",
+        "type": "mixed_practice",
+        "items": [
+          {
+            "itemId": "english-a1-m070-practice-ex01-i01",
+            "position": 1,
+            "taskType": "translation_multiple_choice",
+            "prompt": "Traduce al español: “What do you do in your free time?”",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "¿Qué haces en tu tiempo libre?",
+              "Me gusta jugar al fútbol.",
+              "¿Sabes nadar?"
+            ],
+            "correctAnswer": "¿Qué haces en tu tiempo libre?",
+            "sourceEnglish": "What do you do in your free time?"
+          },
+          {
+            "itemId": "english-a1-m070-practice-ex01-i02",
+            "position": 2,
+            "taskType": "translation_multiple_choice",
+            "prompt": "Traduce al español: “I like playing football.”",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "Me gusta jugar al fútbol.",
+              "¿Sabes nadar?",
+              "Sí, sé nadar."
+            ],
+            "correctAnswer": "Me gusta jugar al fútbol.",
+            "sourceEnglish": "I like playing football."
+          },
+          {
+            "itemId": "english-a1-m070-practice-ex01-i03",
+            "position": 3,
+            "taskType": "translation_multiple_choice",
+            "prompt": "Traduce al español: “Can you swim?”",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "¿Sabes nadar?",
+              "Sí, sé nadar.",
+              "¿Te gustaría salir?"
+            ],
+            "correctAnswer": "¿Sabes nadar?",
+            "sourceEnglish": "Can you swim?"
+          },
+          {
+            "itemId": "english-a1-m070-practice-ex01-i04",
+            "position": 4,
+            "taskType": "translation_multiple_choice",
+            "prompt": "Traduce al español: “Yes, I can swim.”",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "Sí, sé nadar.",
+              "¿Te gustaría salir?",
+              "Quedemos el sábado."
+            ],
+            "correctAnswer": "Sí, sé nadar.",
+            "sourceEnglish": "Yes, I can swim."
+          },
+          {
+            "itemId": "english-a1-m070-practice-ex01-i05",
+            "position": 5,
+            "taskType": "translation_multiple_choice",
+            "prompt": "Traduce al español: “Would you like to go out?”",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "¿Te gustaría salir?",
+              "Quedemos el sábado.",
+              "¿Qué haces en tu tiempo libre?"
+            ],
+            "correctAnswer": "¿Te gustaría salir?",
+            "sourceEnglish": "Would you like to go out?"
+          },
+          {
+            "itemId": "english-a1-m070-practice-ex01-i06",
+            "position": 6,
+            "taskType": "translation_multiple_choice",
+            "prompt": "Traduce al español: “Let's meet on Saturday.”",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "Quedemos el sábado.",
+              "¿Qué haces en tu tiempo libre?",
+              "Me gusta jugar al fútbol."
+            ],
+            "correctAnswer": "Quedemos el sábado.",
+            "sourceEnglish": "Let's meet on Saturday."
+          },
+          {
+            "itemId": "english-a1-m070-practice-ex01-i07",
+            "position": 7,
+            "taskType": "translation_multiple_choice",
+            "prompt": "Traduce al español: “What do you do in your free time?”",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "¿Qué haces en tu tiempo libre?",
+              "Me gusta jugar al fútbol.",
+              "¿Sabes nadar?"
+            ],
+            "correctAnswer": "¿Qué haces en tu tiempo libre?",
+            "sourceEnglish": "What do you do in your free time?"
+          },
+          {
+            "itemId": "english-a1-m070-practice-ex01-i08",
+            "position": 8,
+            "taskType": "translation_multiple_choice",
+            "prompt": "Traduce al español: “I like playing football.”",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "Me gusta jugar al fútbol.",
+              "¿Sabes nadar?",
+              "Sí, sé nadar."
+            ],
+            "correctAnswer": "Me gusta jugar al fútbol.",
+            "sourceEnglish": "I like playing football."
+          },
+          {
+            "itemId": "english-a1-m070-practice-ex01-i09",
+            "position": 9,
+            "taskType": "translation_multiple_choice",
+            "prompt": "Traduce al español: “Can you swim?”",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "¿Sabes nadar?",
+              "Sí, sé nadar.",
+              "¿Te gustaría salir?"
+            ],
+            "correctAnswer": "¿Sabes nadar?",
+            "sourceEnglish": "Can you swim?"
+          },
+          {
+            "itemId": "english-a1-m070-practice-ex01-i10",
+            "position": 10,
+            "taskType": "translation_multiple_choice",
+            "prompt": "Traduce al español: “Yes, I can swim.”",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "Sí, sé nadar.",
+              "¿Te gustaría salir?",
+              "Quedemos el sábado."
+            ],
+            "correctAnswer": "Sí, sé nadar.",
+            "sourceEnglish": "Yes, I can swim."
+          },
+          {
+            "itemId": "english-a1-m070-practice-ex01-i11",
+            "position": 11,
+            "taskType": "listening_translation_multiple_choice",
+            "prompt": "Escucha el inglés y elige su significado.",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "¿Qué haces en tu tiempo libre?",
+              "Me gusta jugar al fútbol.",
+              "¿Sabes nadar?"
+            ],
+            "correctAnswer": "¿Qué haces en tu tiempo libre?",
+            "sourceEnglish": "What do you do in your free time?"
+          },
+          {
+            "itemId": "english-a1-m070-practice-ex01-i12",
+            "position": 12,
+            "taskType": "listening_translation_multiple_choice",
+            "prompt": "Escucha el inglés y elige su significado.",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "Me gusta jugar al fútbol.",
+              "¿Sabes nadar?",
+              "Sí, sé nadar."
+            ],
+            "correctAnswer": "Me gusta jugar al fútbol.",
+            "sourceEnglish": "I like playing football."
+          },
+          {
+            "itemId": "english-a1-m070-practice-ex01-i13",
+            "position": 13,
+            "taskType": "listening_translation_multiple_choice",
+            "prompt": "Escucha el inglés y elige su significado.",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "¿Sabes nadar?",
+              "Sí, sé nadar.",
+              "¿Te gustaría salir?"
+            ],
+            "correctAnswer": "¿Sabes nadar?",
+            "sourceEnglish": "Can you swim?"
+          },
+          {
+            "itemId": "english-a1-m070-practice-ex01-i14",
+            "position": 14,
+            "taskType": "listening_translation_multiple_choice",
+            "prompt": "Escucha el inglés y elige su significado.",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "Sí, sé nadar.",
+              "¿Te gustaría salir?",
+              "Quedemos el sábado."
+            ],
+            "correctAnswer": "Sí, sé nadar.",
+            "sourceEnglish": "Yes, I can swim."
+          },
+          {
+            "itemId": "english-a1-m070-practice-ex01-i15",
+            "position": 15,
+            "taskType": "listening_translation_multiple_choice",
+            "prompt": "Escucha el inglés y elige su significado.",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "¿Te gustaría salir?",
+              "Quedemos el sábado.",
+              "¿Qué haces en tu tiempo libre?"
+            ],
+            "correctAnswer": "¿Te gustaría salir?",
+            "sourceEnglish": "Would you like to go out?"
+          },
+          {
+            "itemId": "english-a1-m070-practice-ex01-i16",
+            "position": 16,
+            "taskType": "listening_translation_multiple_choice",
+            "prompt": "Escucha el inglés y elige su significado.",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "Quedemos el sábado.",
+              "¿Qué haces en tu tiempo libre?",
+              "Me gusta jugar al fútbol."
+            ],
+            "correctAnswer": "Quedemos el sábado.",
+            "sourceEnglish": "Let's meet on Saturday."
+          },
+          {
+            "itemId": "english-a1-m070-practice-ex01-i17",
+            "position": 17,
+            "taskType": "listening_translation_multiple_choice",
+            "prompt": "Escucha el inglés y elige su significado.",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "¿Qué haces en tu tiempo libre?",
+              "Me gusta jugar al fútbol.",
+              "¿Sabes nadar?"
+            ],
+            "correctAnswer": "¿Qué haces en tu tiempo libre?",
+            "sourceEnglish": "What do you do in your free time?"
+          },
+          {
+            "itemId": "english-a1-m070-practice-ex01-i18",
+            "position": 18,
+            "taskType": "listening_translation_multiple_choice",
+            "prompt": "Escucha el inglés y elige su significado.",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "Me gusta jugar al fútbol.",
+              "¿Sabes nadar?",
+              "Sí, sé nadar."
+            ],
+            "correctAnswer": "Me gusta jugar al fútbol.",
+            "sourceEnglish": "I like playing football."
+          },
+          {
+            "itemId": "english-a1-m070-practice-ex01-i19",
+            "position": 19,
+            "taskType": "listening_translation_multiple_choice",
+            "prompt": "Escucha el inglés y elige su significado.",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "¿Sabes nadar?",
+              "Sí, sé nadar.",
+              "¿Te gustaría salir?"
+            ],
+            "correctAnswer": "¿Sabes nadar?",
+            "sourceEnglish": "Can you swim?"
+          },
+          {
+            "itemId": "english-a1-m070-practice-ex01-i20",
+            "position": 20,
+            "taskType": "listening_translation_multiple_choice",
+            "prompt": "Escucha el inglés y elige su significado.",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "Sí, sé nadar.",
+              "¿Te gustaría salir?",
+              "Quedemos el sábado."
+            ],
+            "correctAnswer": "Sí, sé nadar.",
+            "sourceEnglish": "Yes, I can swim."
+          }
+        ]
+      }
+    },
+    {
+      "sectionId": "english-a1-m070-grammar",
+      "sectionKey": "grammar",
+      "position": 3,
+      "title": "grammar",
+      "exercise": {
+        "exerciseId": "english-a1-m070-grammar-ex01",
+        "type": "grammar",
+        "items": [
+          {
+            "itemId": "english-a1-m070-grammar-ex01-i01",
+            "position": 1,
+            "prompt": "___ you play football?",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "Do",
+              "Does",
+              "Are"
+            ],
+            "correctAnswer": "Do"
+          },
+          {
+            "itemId": "english-a1-m070-grammar-ex01-i02",
+            "position": 2,
+            "prompt": "___ she like tennis?",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "Does",
+              "Do",
+              "Is"
+            ],
+            "correctAnswer": "Does"
+          },
+          {
+            "itemId": "english-a1-m070-grammar-ex01-i03",
+            "position": 3,
+            "prompt": "Can they ___ today?",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "come",
+              "comes",
+              "coming"
+            ],
+            "correctAnswer": "come"
+          },
+          {
+            "itemId": "english-a1-m070-grammar-ex01-i04",
+            "position": 4,
+            "prompt": "Yes, I ___.",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "do",
+              "does",
+              "am"
+            ],
+            "correctAnswer": "do"
+          },
+          {
+            "itemId": "english-a1-m070-grammar-ex01-i05",
+            "position": 5,
+            "prompt": "No, he ___.",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "doesn't",
+              "don't",
+              "isn't"
+            ],
+            "correctAnswer": "doesn't"
+          },
+          {
+            "itemId": "english-a1-m070-grammar-ex01-i06",
+            "position": 6,
+            "prompt": "___ your brother swim?",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "Can",
+              "Does",
+              "Is"
+            ],
+            "correctAnswer": "Can"
+          },
+          {
+            "itemId": "english-a1-m070-grammar-ex01-i07",
+            "position": 7,
+            "prompt": "Where ___ you meet?",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "do",
+              "does",
+              "are"
+            ],
+            "correctAnswer": "do"
+          },
+          {
+            "itemId": "english-a1-m070-grammar-ex01-i08",
+            "position": 8,
+            "prompt": "What time ___ the game start?",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "does",
+              "do",
+              "is"
+            ],
+            "correctAnswer": "does"
+          },
+          {
+            "itemId": "english-a1-m070-grammar-ex01-i09",
+            "position": 9,
+            "prompt": "Do they enjoy ___?",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "cycling",
+              "cycle",
+              "cycles"
+            ],
+            "correctAnswer": "cycling"
+          },
+          {
+            "itemId": "english-a1-m070-grammar-ex01-i10",
+            "position": 10,
+            "prompt": "Yes, she ___.",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "does",
+              "do",
+              "is"
+            ],
+            "correctAnswer": "does"
+          }
+        ],
+        "theory": {
+          "title": "Questions and short answers",
+          "explanation": "Usamos do/does para preguntas en presente simple y can para preguntar por habilidades o posibilidades. Las respuestas cortas repiten el auxiliar.",
+          "patterns": [
+            {
+              "label": "Model",
+              "pattern": "Do you play tennis? Does he like music? Can you come?",
+              "examples": [
+                "Do you play tennis? Does he like music? Can you come?"
+              ]
+            }
+          ],
+          "tip": "Lee el modelo en voz alta y fíjate en la forma verbal."
+        }
+      }
+    },
+    {
+      "sectionId": "english-a1-m070-pronunciation",
+      "sectionKey": "pronunciation",
+      "position": 4,
+      "title": "pronunciation",
+      "exercise": {
+        "exerciseId": "english-a1-m070-pronunciation-ex01",
+        "type": "pronunciation_cards",
+        "items": [
+          {
+            "itemId": "english-a1-m070-pronunciation-ex01-i01",
+            "position": 1,
+            "word": "hobbies",
+            "translation": "aficiones",
+            "pronunciationGuide": "Listen to the en-GB model and keep the final consonant clear.",
+            "audio": "tts:en-GB:hobbies"
+          },
+          {
+            "itemId": "english-a1-m070-pronunciation-ex01-i02",
+            "position": 2,
+            "word": "sports",
+            "translation": "deportes",
+            "pronunciationGuide": "Listen to the en-GB model and keep the final consonant clear.",
+            "audio": "tts:en-GB:sports"
+          },
+          {
+            "itemId": "english-a1-m070-pronunciation-ex01-i03",
+            "position": 3,
+            "word": "free time",
+            "translation": "tiempo libre",
+            "pronunciationGuide": "Listen to the phrase as one unit and notice its main stress.",
+            "audio": "tts:en-GB:free time"
+          },
+          {
+            "itemId": "english-a1-m070-pronunciation-ex01-i04",
+            "position": 4,
+            "word": "can",
+            "translation": "saber / poder",
+            "pronunciationGuide": "Listen to the en-GB model and keep the final consonant clear.",
+            "audio": "tts:en-GB:can"
+          },
+          {
+            "itemId": "english-a1-m070-pronunciation-ex01-i05",
+            "position": 5,
+            "word": "invite",
+            "translation": "invitar",
+            "pronunciationGuide": "Listen to the en-GB model and keep the final consonant clear.",
+            "audio": "tts:en-GB:invite"
+          },
+          {
+            "itemId": "english-a1-m070-pronunciation-ex01-i06",
+            "position": 6,
+            "word": "Would you like to...?",
+            "translation": "¿Te gustaría...?",
+            "pronunciationGuide": "Listen to the phrase as one unit and notice its main stress.",
+            "audio": "tts:en-GB:Would you like to...?"
+          },
+          {
+            "itemId": "english-a1-m070-pronunciation-ex01-i7",
+            "position": 7,
+            "word": "ask a question",
+            "translation": "hacer una pregunta",
+            "pronunciationGuide": "Listen to the en-GB model and keep the final consonant clear.",
+            "audio": "tts:en-GB:ask a question"
+          },
+          {
+            "itemId": "english-a1-m070-pronunciation-ex01-i8",
+            "position": 8,
+            "word": "answer",
+            "translation": "responder",
+            "pronunciationGuide": "Listen to the en-GB model and keep the final consonant clear.",
+            "audio": "tts:en-GB:answer"
+          },
+          {
+            "itemId": "english-a1-m070-pronunciation-ex01-i9",
+            "position": 9,
+            "word": "usually",
+            "translation": "normalmente",
+            "pronunciationGuide": "Listen to the en-GB model and keep the final consonant clear.",
+            "audio": "tts:en-GB:usually"
+          },
+          {
+            "itemId": "english-a1-m070-pronunciation-ex01-i10",
+            "position": 10,
+            "word": "sometimes",
+            "translation": "a veces",
+            "pronunciationGuide": "Listen to the en-GB model and keep the final consonant clear.",
+            "audio": "tts:en-GB:sometimes"
+          }
+        ],
+        "focus": "Practica el ritmo y el acento de las palabras clave de Free Time Conversation."
+      }
+    },
+    {
+      "sectionId": "english-a1-m070-reading",
+      "sectionKey": "reading",
+      "position": 5,
+      "title": "reading",
+      "exercise": {
+        "exerciseId": "english-a1-m070-reading-ex01",
+        "type": "reading_comprehension",
+        "items": [
+          {
+            "itemId": "english-a1-m070-reading-ex01-i01",
+            "position": 1,
+            "prompt": "Which English sentence means “¿Qué haces en tu tiempo libre?”?",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "What do you do in your free time?",
+              "I like playing football.",
+              "Can you swim?"
+            ],
+            "correctAnswer": "What do you do in your free time?"
+          },
+          {
+            "itemId": "english-a1-m070-reading-ex01-i02",
+            "position": 2,
+            "prompt": "Which English sentence means “Me gusta jugar al fútbol.”?",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "I like playing football.",
+              "Can you swim?",
+              "Yes, I can swim."
+            ],
+            "correctAnswer": "I like playing football."
+          },
+          {
+            "itemId": "english-a1-m070-reading-ex01-i03",
+            "position": 3,
+            "prompt": "Which English sentence means “¿Sabes nadar?”?",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "Can you swim?",
+              "Yes, I can swim.",
+              "Would you like to go out?"
+            ],
+            "correctAnswer": "Can you swim?"
+          },
+          {
+            "itemId": "english-a1-m070-reading-ex01-i04",
+            "position": 4,
+            "prompt": "Which English sentence means “Sí, sé nadar.”?",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "Yes, I can swim.",
+              "Would you like to go out?",
+              "Let's meet on Saturday."
+            ],
+            "correctAnswer": "Yes, I can swim."
+          },
+          {
+            "itemId": "english-a1-m070-reading-ex01-i05",
+            "position": 5,
+            "prompt": "Which English sentence means “¿Te gustaría salir?”?",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "Would you like to go out?",
+              "Let's meet on Saturday.",
+              "What do you do in your free time?"
+            ],
+            "correctAnswer": "Would you like to go out?"
+          },
+          {
+            "itemId": "english-a1-m070-reading-ex01-i06",
+            "position": 6,
+            "prompt": "Which English sentence means “Quedemos el sábado.”?",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "Let's meet on Saturday.",
+              "What do you do in your free time?",
+              "I like playing football."
+            ],
+            "correctAnswer": "Let's meet on Saturday."
+          },
+          {
+            "itemId": "english-a1-m070-reading-ex01-i07",
+            "position": 7,
+            "prompt": "Which English sentence means “¿Qué haces en tu tiempo libre?”?",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "What do you do in your free time?",
+              "I like playing football.",
+              "Can you swim?"
+            ],
+            "correctAnswer": "What do you do in your free time?"
+          },
+          {
+            "itemId": "english-a1-m070-reading-ex01-i08",
+            "position": 8,
+            "prompt": "Which English sentence means “Me gusta jugar al fútbol.”?",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "I like playing football.",
+              "Can you swim?",
+              "Yes, I can swim."
+            ],
+            "correctAnswer": "I like playing football."
+          },
+          {
+            "itemId": "english-a1-m070-reading-ex01-i09",
+            "position": 9,
+            "prompt": "Which English sentence means “¿Sabes nadar?”?",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "Can you swim?",
+              "Yes, I can swim.",
+              "What do you do in your free time?"
+            ],
+            "correctAnswer": "Can you swim?"
+          },
+          {
+            "itemId": "english-a1-m070-reading-ex01-i10",
+            "position": 10,
+            "prompt": "Which English sentence means “Sí, sé nadar.”?",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "Yes, I can swim.",
+              "What do you do in your free time?",
+              "I like playing football."
+            ],
+            "correctAnswer": "Yes, I can swim."
+          }
+        ],
+        "content": {
+          "passageId": "english-a1-m070-reading-passage-01",
+          "passage": "What do you do in your free time? I like playing football. Can you swim? Yes, I can swim. Would you like to go out? Let's meet on Saturday."
+        }
+      }
+    },
+    {
+      "sectionId": "english-a1-m070-writing",
+      "sectionKey": "writing",
+      "position": 6,
+      "title": "writing",
+      "exercise": {
+        "exerciseId": "english-a1-m070-writing-ex01",
+        "type": "dictation",
+        "items": [
+          {
+            "itemId": "english-a1-m070-writing-ex01-i01",
+            "position": 1,
+            "audio": "tts:en-GB:What do you do in your free time?",
+            "expectedAnswer": "What do you do in your free time?",
+            "evaluation": {
+              "type": "normalised_text"
+            }
+          },
+          {
+            "itemId": "english-a1-m070-writing-ex01-i02",
+            "position": 2,
+            "audio": "tts:en-GB:I like playing football.",
+            "expectedAnswer": "I like playing football.",
+            "evaluation": {
+              "type": "normalised_text"
+            }
+          },
+          {
+            "itemId": "english-a1-m070-writing-ex01-i03",
+            "position": 3,
+            "audio": "tts:en-GB:Can you swim?",
+            "expectedAnswer": "Can you swim?",
+            "evaluation": {
+              "type": "normalised_text"
+            }
+          },
+          {
+            "itemId": "english-a1-m070-writing-ex01-i04",
+            "position": 4,
+            "audio": "tts:en-GB:Yes, I can swim.",
+            "expectedAnswer": "Yes, I can swim.",
+            "evaluation": {
+              "type": "normalised_text"
+            }
+          },
+          {
+            "itemId": "english-a1-m070-writing-ex01-i05",
+            "position": 5,
+            "audio": "tts:en-GB:Would you like to go out?",
+            "expectedAnswer": "Would you like to go out?",
+            "evaluation": {
+              "type": "normalised_text"
+            }
+          },
+          {
+            "itemId": "english-a1-m070-writing-ex01-i06",
+            "position": 6,
+            "audio": "tts:en-GB:Let's meet on Saturday.",
+            "expectedAnswer": "Let's meet on Saturday.",
+            "evaluation": {
+              "type": "normalised_text"
+            }
+          },
+          {
+            "itemId": "english-a1-m070-writing-ex01-i07",
+            "position": 7,
+            "audio": "tts:en-GB:What do you do in your free time?",
+            "expectedAnswer": "What do you do in your free time?",
+            "evaluation": {
+              "type": "normalised_text"
+            }
+          },
+          {
+            "itemId": "english-a1-m070-writing-ex01-i08",
+            "position": 8,
+            "audio": "tts:en-GB:I like playing football.",
+            "expectedAnswer": "I like playing football.",
+            "evaluation": {
+              "type": "normalised_text"
+            }
+          },
+          {
+            "itemId": "english-a1-m070-writing-ex01-i09",
+            "position": 9,
+            "audio": "tts:en-GB:Can you swim?",
+            "expectedAnswer": "Can you swim?",
+            "evaluation": {
+              "type": "normalised_text"
+            }
+          },
+          {
+            "itemId": "english-a1-m070-writing-ex01-i10",
+            "position": 10,
+            "audio": "tts:en-GB:Yes, I can swim.",
+            "expectedAnswer": "Yes, I can swim.",
+            "evaluation": {
+              "type": "normalised_text"
+            }
+          }
+        ],
+        "writingTask": "Escribe 5–6 frases sobre free time conversation. Incluye vocabulario de la misión y la estructura questions and short answers.",
+        "modelText": "What do you do in your free time? I like playing football. Can you swim? Yes, I can swim. Would you like to go out? Let's meet on Saturday."
+      }
+    },
+    {
+      "sectionId": "english-a1-m070-speaking",
+      "sectionKey": "speaking",
+      "position": 7,
+      "title": "speaking",
+      "exercise": {
+        "exerciseId": "english-a1-m070-speaking-ex01",
+        "type": "speaking_prompts",
+        "items": [
+          {
+            "itemId": "english-a1-m070-speaking-ex01-i01",
+            "position": 1,
+            "prompt": "Say a sentence about this situation: ¿Qué haces en tu tiempo libre?",
+            "modelAnswer": "What do you do in your free time?",
+            "evaluation": {
+              "type": "transcription_feedback",
+              "transcriptionSeparateFromPronunciation": true
+            }
+          },
+          {
+            "itemId": "english-a1-m070-speaking-ex01-i02",
+            "position": 2,
+            "prompt": "Say a sentence about this situation: Me gusta jugar al fútbol.",
+            "modelAnswer": "I like playing football.",
+            "evaluation": {
+              "type": "transcription_feedback",
+              "transcriptionSeparateFromPronunciation": true
+            }
+          },
+          {
+            "itemId": "english-a1-m070-speaking-ex01-i03",
+            "position": 3,
+            "prompt": "Say a sentence about this situation: ¿Sabes nadar?",
+            "modelAnswer": "Can you swim?",
+            "evaluation": {
+              "type": "transcription_feedback",
+              "transcriptionSeparateFromPronunciation": true
+            }
+          },
+          {
+            "itemId": "english-a1-m070-speaking-ex01-i04",
+            "position": 4,
+            "prompt": "Say a sentence about this situation: Sí, sé nadar.",
+            "modelAnswer": "Yes, I can swim.",
+            "evaluation": {
+              "type": "transcription_feedback",
+              "transcriptionSeparateFromPronunciation": true
+            }
+          },
+          {
+            "itemId": "english-a1-m070-speaking-ex01-i05",
+            "position": 5,
+            "prompt": "Say a sentence about this situation: ¿Te gustaría salir?",
+            "modelAnswer": "Would you like to go out?",
+            "evaluation": {
+              "type": "transcription_feedback",
+              "transcriptionSeparateFromPronunciation": true
+            }
+          },
+          {
+            "itemId": "english-a1-m070-speaking-ex01-i06",
+            "position": 6,
+            "prompt": "Say a sentence about this situation: Quedemos el sábado.",
+            "modelAnswer": "Let's meet on Saturday.",
+            "evaluation": {
+              "type": "transcription_feedback",
+              "transcriptionSeparateFromPronunciation": true
+            }
+          },
+          {
+            "itemId": "english-a1-m070-speaking-ex01-i07",
+            "position": 7,
+            "prompt": "Say a sentence about this situation: ¿Qué haces en tu tiempo libre?",
+            "modelAnswer": "What do you do in your free time?",
+            "evaluation": {
+              "type": "transcription_feedback",
+              "transcriptionSeparateFromPronunciation": true
+            }
+          },
+          {
+            "itemId": "english-a1-m070-speaking-ex01-i08",
+            "position": 8,
+            "prompt": "Say a sentence about this situation: Me gusta jugar al fútbol.",
+            "modelAnswer": "I like playing football.",
+            "evaluation": {
+              "type": "transcription_feedback",
+              "transcriptionSeparateFromPronunciation": true
+            }
+          },
+          {
+            "itemId": "english-a1-m070-speaking-ex01-i09",
+            "position": 9,
+            "prompt": "Say a sentence about this situation: ¿Sabes nadar?",
+            "modelAnswer": "Can you swim?",
+            "evaluation": {
+              "type": "transcription_feedback",
+              "transcriptionSeparateFromPronunciation": true
+            }
+          },
+          {
+            "itemId": "english-a1-m070-speaking-ex01-i10",
+            "position": 10,
+            "prompt": "Say a sentence about this situation: Sí, sé nadar.",
+            "modelAnswer": "Yes, I can swim.",
+            "evaluation": {
+              "type": "transcription_feedback",
+              "transcriptionSeparateFromPronunciation": true
+            }
+          }
+        ]
+      }
+    },
+    {
+      "sectionId": "english-a1-m070-listening",
+      "sectionKey": "listening",
+      "position": 8,
+      "title": "listening",
+      "exercise": {
+        "exerciseId": "english-a1-m070-listening-ex01",
+        "type": "listening_gap_fill",
+        "items": [
+          {
+            "itemId": "english-a1-m070-listening-ex01-i01",
+            "position": 1,
+            "gapToken": "[[gap-01]]",
+            "expectedWordId": "english-a1-m070-listening-word-01"
+          },
+          {
+            "itemId": "english-a1-m070-listening-ex01-i02",
+            "position": 2,
+            "gapToken": "[[gap-02]]",
+            "expectedWordId": "english-a1-m070-listening-word-02"
+          },
+          {
+            "itemId": "english-a1-m070-listening-ex01-i03",
+            "position": 3,
+            "gapToken": "[[gap-03]]",
+            "expectedWordId": "english-a1-m070-listening-word-03"
+          },
+          {
+            "itemId": "english-a1-m070-listening-ex01-i04",
+            "position": 4,
+            "gapToken": "[[gap-04]]",
+            "expectedWordId": "english-a1-m070-listening-word-04"
+          },
+          {
+            "itemId": "english-a1-m070-listening-ex01-i05",
+            "position": 5,
+            "gapToken": "[[gap-05]]",
+            "expectedWordId": "english-a1-m070-listening-word-05"
+          },
+          {
+            "itemId": "english-a1-m070-listening-ex01-i06",
+            "position": 6,
+            "gapToken": "[[gap-06]]",
+            "expectedWordId": "english-a1-m070-listening-word-06"
+          },
+          {
+            "itemId": "english-a1-m070-listening-ex01-i7",
+            "position": 7,
+            "gapToken": "[[gap-07]]",
+            "expectedWordId": "english-a1-m070-listening-word-7"
+          },
+          {
+            "itemId": "english-a1-m070-listening-ex01-i8",
+            "position": 8,
+            "gapToken": "[[gap-08]]",
+            "expectedWordId": "english-a1-m070-listening-word-8"
+          },
+          {
+            "itemId": "english-a1-m070-listening-ex01-i9",
+            "position": 9,
+            "gapToken": "[[gap-09]]",
+            "expectedWordId": "english-a1-m070-listening-word-9"
+          },
+          {
+            "itemId": "english-a1-m070-listening-ex01-i10",
+            "position": 10,
+            "gapToken": "[[gap-10]]",
+            "expectedWordId": "english-a1-m070-listening-word-10"
+          }
+        ],
+        "content": {
+          "audio": "tts:en-GB:The key words for Free Time Conversation are: hobbies, sports, free time, can, invite, Would you like to...?, ask a question, answer, usually, sometimes. Listen and repeat each word carefully.",
+          "audioLocale": "en-GB",
+          "transcriptTemplate": "The key words for Free Time Conversation are: [[gap-01]], [[gap-02]], [[gap-03]], [[gap-04]], [[gap-05]], [[gap-06]], [[gap-07]], [[gap-08]], [[gap-09]], [[gap-10]]. Listen and repeat each word carefully.",
+          "wordBank": [
+            {
+              "wordId": "english-a1-m070-listening-word-01",
+              "word": "hobbies"
+            },
+            {
+              "wordId": "english-a1-m070-listening-word-02",
+              "word": "sports"
+            },
+            {
+              "wordId": "english-a1-m070-listening-word-03",
+              "word": "free time"
+            },
+            {
+              "wordId": "english-a1-m070-listening-word-04",
+              "word": "can"
+            },
+            {
+              "wordId": "english-a1-m070-listening-word-05",
+              "word": "invite"
+            },
+            {
+              "wordId": "english-a1-m070-listening-word-06",
+              "word": "Would you like to...?"
+            },
+            {
+              "wordId": "english-a1-m070-listening-word-7",
+              "word": "ask a question"
+            },
+            {
+              "wordId": "english-a1-m070-listening-word-8",
+              "word": "answer"
+            },
+            {
+              "wordId": "english-a1-m070-listening-word-9",
+              "word": "usually"
+            },
+            {
+              "wordId": "english-a1-m070-listening-word-10",
+              "word": "sometimes"
+            }
+          ],
+          "interaction": "select_place_move_replace"
+        }
+      }
+    }
+  ]
+}

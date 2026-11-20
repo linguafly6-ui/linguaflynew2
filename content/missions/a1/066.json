@@ -1,0 +1,1205 @@
+{
+  "schemaVersion": "1.2.0",
+  "contentVersion": 1,
+  "course": {
+    "courseId": "english-a1",
+    "level": "A1",
+    "language": "en-GB"
+  },
+  "unit": {
+    "unitId": "english-a1-unit-07",
+    "courseId": "english-a1",
+    "position": 7,
+    "title": "Free time, hobbies and abilities"
+  },
+  "mission": {
+    "missionId": "english-a1-m066",
+    "unitId": "english-a1-unit-07",
+    "position": 66,
+    "title": "At the Sports Centre"
+  },
+  "sections": [
+    {
+      "sectionId": "english-a1-m066-explore",
+      "sectionKey": "explore",
+      "position": 1,
+      "title": "explore",
+      "exercise": {
+        "exerciseId": "english-a1-m066-explore-ex01",
+        "type": "vocabulary_pairs",
+        "items": [
+          {
+            "itemId": "english-a1-m066-explore-ex01-i01",
+            "position": 1,
+            "english": "gym",
+            "spanish": "gimnasio",
+            "audio": "tts:en-GB:gym"
+          },
+          {
+            "itemId": "english-a1-m066-explore-ex01-i02",
+            "position": 2,
+            "english": "swimming pool",
+            "spanish": "piscina",
+            "audio": "tts:en-GB:swimming pool"
+          },
+          {
+            "itemId": "english-a1-m066-explore-ex01-i03",
+            "position": 3,
+            "english": "team",
+            "spanish": "equipo",
+            "audio": "tts:en-GB:team"
+          },
+          {
+            "itemId": "english-a1-m066-explore-ex01-i04",
+            "position": 4,
+            "english": "match",
+            "spanish": "partido",
+            "audio": "tts:en-GB:match"
+          },
+          {
+            "itemId": "english-a1-m066-explore-ex01-i05",
+            "position": 5,
+            "english": "practice",
+            "spanish": "entrenamiento",
+            "audio": "tts:en-GB:practice"
+          },
+          {
+            "itemId": "english-a1-m066-explore-ex01-i06",
+            "position": 6,
+            "english": "ticket",
+            "spanish": "entrada",
+            "audio": "tts:en-GB:ticket"
+          },
+          {
+            "itemId": "english-a1-m066-explore-ex01-i7",
+            "position": 7,
+            "english": "locker",
+            "spanish": "taquilla",
+            "audio": "tts:en-GB:locker"
+          },
+          {
+            "itemId": "english-a1-m066-explore-ex01-i8",
+            "position": 8,
+            "english": "sports hall",
+            "spanish": "pabellón deportivo",
+            "audio": "tts:en-GB:sports hall"
+          },
+          {
+            "itemId": "english-a1-m066-explore-ex01-i9",
+            "position": 9,
+            "english": "reception",
+            "spanish": "recepción",
+            "audio": "tts:en-GB:reception"
+          },
+          {
+            "itemId": "english-a1-m066-explore-ex01-i10",
+            "position": 10,
+            "english": "coach",
+            "spanish": "entrenador",
+            "audio": "tts:en-GB:coach"
+          }
+        ],
+        "theory": {
+          "title": "Vocabulary: At the Sports Centre",
+          "explanation": "Explora diez palabras y expresiones sobre at the sports centre. Escucha el modelo británico, relaciona cada palabra con su significado y úsala en una frase.",
+          "patterns": [
+            {
+              "label": "Useful language",
+              "pattern": "Short question + short answer",
+              "examples": [
+                "Where is the gym?",
+                "The swimming pool is open.",
+                "Our team has a match."
+              ]
+            }
+          ],
+          "tip": "Repite las expresiones y crea un ejemplo relacionado con tu vida."
+        }
+      }
+    },
+    {
+      "sectionId": "english-a1-m066-practice",
+      "sectionKey": "practice",
+      "position": 2,
+      "title": "practice",
+      "exercise": {
+        "exerciseId": "english-a1-m066-practice-ex01",
+        "type": "mixed_practice",
+        "items": [
+          {
+            "itemId": "english-a1-m066-practice-ex01-i01",
+            "position": 1,
+            "taskType": "translation_multiple_choice",
+            "prompt": "Traduce al español: “Where is the gym?”",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "¿Dónde está el gimnasio?",
+              "La piscina está abierta.",
+              "Nuestro equipo tiene un partido."
+            ],
+            "correctAnswer": "¿Dónde está el gimnasio?",
+            "sourceEnglish": "Where is the gym?"
+          },
+          {
+            "itemId": "english-a1-m066-practice-ex01-i02",
+            "position": 2,
+            "taskType": "translation_multiple_choice",
+            "prompt": "Traduce al español: “The swimming pool is open.”",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "La piscina está abierta.",
+              "Nuestro equipo tiene un partido.",
+              "El entrenamiento empieza a las seis."
+            ],
+            "correctAnswer": "La piscina está abierta.",
+            "sourceEnglish": "The swimming pool is open."
+          },
+          {
+            "itemId": "english-a1-m066-practice-ex01-i03",
+            "position": 3,
+            "taskType": "translation_multiple_choice",
+            "prompt": "Traduce al español: “Our team has a match.”",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "Nuestro equipo tiene un partido.",
+              "El entrenamiento empieza a las seis.",
+              "Necesito una entrada."
+            ],
+            "correctAnswer": "Nuestro equipo tiene un partido.",
+            "sourceEnglish": "Our team has a match."
+          },
+          {
+            "itemId": "english-a1-m066-practice-ex01-i04",
+            "position": 4,
+            "taskType": "translation_multiple_choice",
+            "prompt": "Traduce al español: “Practice starts at six.”",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "El entrenamiento empieza a las seis.",
+              "Necesito una entrada.",
+              "El entrenador es amable."
+            ],
+            "correctAnswer": "El entrenamiento empieza a las seis.",
+            "sourceEnglish": "Practice starts at six."
+          },
+          {
+            "itemId": "english-a1-m066-practice-ex01-i05",
+            "position": 5,
+            "taskType": "translation_multiple_choice",
+            "prompt": "Traduce al español: “I need a ticket.”",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "Necesito una entrada.",
+              "El entrenador es amable.",
+              "¿Dónde está el gimnasio?"
+            ],
+            "correctAnswer": "Necesito una entrada.",
+            "sourceEnglish": "I need a ticket."
+          },
+          {
+            "itemId": "english-a1-m066-practice-ex01-i06",
+            "position": 6,
+            "taskType": "translation_multiple_choice",
+            "prompt": "Traduce al español: “The coach is friendly.”",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "El entrenador es amable.",
+              "¿Dónde está el gimnasio?",
+              "La piscina está abierta."
+            ],
+            "correctAnswer": "El entrenador es amable.",
+            "sourceEnglish": "The coach is friendly."
+          },
+          {
+            "itemId": "english-a1-m066-practice-ex01-i07",
+            "position": 7,
+            "taskType": "translation_multiple_choice",
+            "prompt": "Traduce al español: “Where is the gym?”",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "¿Dónde está el gimnasio?",
+              "La piscina está abierta.",
+              "Nuestro equipo tiene un partido."
+            ],
+            "correctAnswer": "¿Dónde está el gimnasio?",
+            "sourceEnglish": "Where is the gym?"
+          },
+          {
+            "itemId": "english-a1-m066-practice-ex01-i08",
+            "position": 8,
+            "taskType": "translation_multiple_choice",
+            "prompt": "Traduce al español: “The swimming pool is open.”",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "La piscina está abierta.",
+              "Nuestro equipo tiene un partido.",
+              "El entrenamiento empieza a las seis."
+            ],
+            "correctAnswer": "La piscina está abierta.",
+            "sourceEnglish": "The swimming pool is open."
+          },
+          {
+            "itemId": "english-a1-m066-practice-ex01-i09",
+            "position": 9,
+            "taskType": "translation_multiple_choice",
+            "prompt": "Traduce al español: “Our team has a match.”",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "Nuestro equipo tiene un partido.",
+              "El entrenamiento empieza a las seis.",
+              "Necesito una entrada."
+            ],
+            "correctAnswer": "Nuestro equipo tiene un partido.",
+            "sourceEnglish": "Our team has a match."
+          },
+          {
+            "itemId": "english-a1-m066-practice-ex01-i10",
+            "position": 10,
+            "taskType": "translation_multiple_choice",
+            "prompt": "Traduce al español: “Practice starts at six.”",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "El entrenamiento empieza a las seis.",
+              "Necesito una entrada.",
+              "El entrenador es amable."
+            ],
+            "correctAnswer": "El entrenamiento empieza a las seis.",
+            "sourceEnglish": "Practice starts at six."
+          },
+          {
+            "itemId": "english-a1-m066-practice-ex01-i11",
+            "position": 11,
+            "taskType": "listening_translation_multiple_choice",
+            "prompt": "Escucha el inglés y elige su significado.",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "¿Dónde está el gimnasio?",
+              "La piscina está abierta.",
+              "Nuestro equipo tiene un partido."
+            ],
+            "correctAnswer": "¿Dónde está el gimnasio?",
+            "sourceEnglish": "Where is the gym?"
+          },
+          {
+            "itemId": "english-a1-m066-practice-ex01-i12",
+            "position": 12,
+            "taskType": "listening_translation_multiple_choice",
+            "prompt": "Escucha el inglés y elige su significado.",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "La piscina está abierta.",
+              "Nuestro equipo tiene un partido.",
+              "El entrenamiento empieza a las seis."
+            ],
+            "correctAnswer": "La piscina está abierta.",
+            "sourceEnglish": "The swimming pool is open."
+          },
+          {
+            "itemId": "english-a1-m066-practice-ex01-i13",
+            "position": 13,
+            "taskType": "listening_translation_multiple_choice",
+            "prompt": "Escucha el inglés y elige su significado.",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "Nuestro equipo tiene un partido.",
+              "El entrenamiento empieza a las seis.",
+              "Necesito una entrada."
+            ],
+            "correctAnswer": "Nuestro equipo tiene un partido.",
+            "sourceEnglish": "Our team has a match."
+          },
+          {
+            "itemId": "english-a1-m066-practice-ex01-i14",
+            "position": 14,
+            "taskType": "listening_translation_multiple_choice",
+            "prompt": "Escucha el inglés y elige su significado.",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "El entrenamiento empieza a las seis.",
+              "Necesito una entrada.",
+              "El entrenador es amable."
+            ],
+            "correctAnswer": "El entrenamiento empieza a las seis.",
+            "sourceEnglish": "Practice starts at six."
+          },
+          {
+            "itemId": "english-a1-m066-practice-ex01-i15",
+            "position": 15,
+            "taskType": "listening_translation_multiple_choice",
+            "prompt": "Escucha el inglés y elige su significado.",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "Necesito una entrada.",
+              "El entrenador es amable.",
+              "¿Dónde está el gimnasio?"
+            ],
+            "correctAnswer": "Necesito una entrada.",
+            "sourceEnglish": "I need a ticket."
+          },
+          {
+            "itemId": "english-a1-m066-practice-ex01-i16",
+            "position": 16,
+            "taskType": "listening_translation_multiple_choice",
+            "prompt": "Escucha el inglés y elige su significado.",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "El entrenador es amable.",
+              "¿Dónde está el gimnasio?",
+              "La piscina está abierta."
+            ],
+            "correctAnswer": "El entrenador es amable.",
+            "sourceEnglish": "The coach is friendly."
+          },
+          {
+            "itemId": "english-a1-m066-practice-ex01-i17",
+            "position": 17,
+            "taskType": "listening_translation_multiple_choice",
+            "prompt": "Escucha el inglés y elige su significado.",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "¿Dónde está el gimnasio?",
+              "La piscina está abierta.",
+              "Nuestro equipo tiene un partido."
+            ],
+            "correctAnswer": "¿Dónde está el gimnasio?",
+            "sourceEnglish": "Where is the gym?"
+          },
+          {
+            "itemId": "english-a1-m066-practice-ex01-i18",
+            "position": 18,
+            "taskType": "listening_translation_multiple_choice",
+            "prompt": "Escucha el inglés y elige su significado.",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "La piscina está abierta.",
+              "Nuestro equipo tiene un partido.",
+              "El entrenamiento empieza a las seis."
+            ],
+            "correctAnswer": "La piscina está abierta.",
+            "sourceEnglish": "The swimming pool is open."
+          },
+          {
+            "itemId": "english-a1-m066-practice-ex01-i19",
+            "position": 19,
+            "taskType": "listening_translation_multiple_choice",
+            "prompt": "Escucha el inglés y elige su significado.",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "Nuestro equipo tiene un partido.",
+              "El entrenamiento empieza a las seis.",
+              "Necesito una entrada."
+            ],
+            "correctAnswer": "Nuestro equipo tiene un partido.",
+            "sourceEnglish": "Our team has a match."
+          },
+          {
+            "itemId": "english-a1-m066-practice-ex01-i20",
+            "position": 20,
+            "taskType": "listening_translation_multiple_choice",
+            "prompt": "Escucha el inglés y elige su significado.",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "El entrenamiento empieza a las seis.",
+              "Necesito una entrada.",
+              "El entrenador es amable."
+            ],
+            "correctAnswer": "El entrenamiento empieza a las seis.",
+            "sourceEnglish": "Practice starts at six."
+          }
+        ]
+      }
+    },
+    {
+      "sectionId": "english-a1-m066-grammar",
+      "sectionKey": "grammar",
+      "position": 3,
+      "title": "grammar",
+      "exercise": {
+        "exerciseId": "english-a1-m066-grammar-ex01",
+        "type": "grammar",
+        "items": [
+          {
+            "itemId": "english-a1-m066-grammar-ex01-i01",
+            "position": 1,
+            "prompt": "There ___ a swimming pool.",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "is",
+              "are",
+              "am"
+            ],
+            "correctAnswer": "is"
+          },
+          {
+            "itemId": "english-a1-m066-grammar-ex01-i02",
+            "position": 2,
+            "prompt": "There ___ two tennis courts.",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "are",
+              "is",
+              "am"
+            ],
+            "correctAnswer": "are"
+          },
+          {
+            "itemId": "english-a1-m066-grammar-ex01-i03",
+            "position": 3,
+            "prompt": "There ___ a café here.",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "is",
+              "are",
+              "be"
+            ],
+            "correctAnswer": "is"
+          },
+          {
+            "itemId": "english-a1-m066-grammar-ex01-i04",
+            "position": 4,
+            "prompt": "There ___ three changing rooms.",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "are",
+              "is",
+              "be"
+            ],
+            "correctAnswer": "are"
+          },
+          {
+            "itemId": "english-a1-m066-grammar-ex01-i05",
+            "position": 5,
+            "prompt": "___ there a gym?",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "Is",
+              "Are",
+              "Do"
+            ],
+            "correctAnswer": "Is"
+          },
+          {
+            "itemId": "english-a1-m066-grammar-ex01-i06",
+            "position": 6,
+            "prompt": "___ there any lockers?",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "Are",
+              "Is",
+              "Does"
+            ],
+            "correctAnswer": "Are"
+          },
+          {
+            "itemId": "english-a1-m066-grammar-ex01-i07",
+            "position": 7,
+            "prompt": "There isn't ___ sports shop.",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "a",
+              "an",
+              "some"
+            ],
+            "correctAnswer": "a"
+          },
+          {
+            "itemId": "english-a1-m066-grammar-ex01-i08",
+            "position": 8,
+            "prompt": "There are ___ people in the hall.",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "some",
+              "a",
+              "an"
+            ],
+            "correctAnswer": "some"
+          },
+          {
+            "itemId": "english-a1-m066-grammar-ex01-i09",
+            "position": 9,
+            "prompt": "There ___ a football pitch outside.",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "is",
+              "are",
+              "do"
+            ],
+            "correctAnswer": "is"
+          },
+          {
+            "itemId": "english-a1-m066-grammar-ex01-i10",
+            "position": 10,
+            "prompt": "There aren't ___ courts today.",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "any",
+              "a",
+              "an"
+            ],
+            "correctAnswer": "any"
+          }
+        ],
+        "theory": {
+          "title": "There is and there are",
+          "explanation": "Usamos there is con un nombre singular y there are con nombres plurales para decir qué hay en un lugar.",
+          "patterns": [
+            {
+              "label": "Model",
+              "pattern": "There is a swimming pool",
+              "examples": [
+                "There is a swimming pool",
+                "There are two tennis courts."
+              ]
+            }
+          ],
+          "tip": "Lee el modelo en voz alta y fíjate en la forma verbal."
+        }
+      }
+    },
+    {
+      "sectionId": "english-a1-m066-pronunciation",
+      "sectionKey": "pronunciation",
+      "position": 4,
+      "title": "pronunciation",
+      "exercise": {
+        "exerciseId": "english-a1-m066-pronunciation-ex01",
+        "type": "pronunciation_cards",
+        "items": [
+          {
+            "itemId": "english-a1-m066-pronunciation-ex01-i01",
+            "position": 1,
+            "word": "gym",
+            "translation": "gimnasio",
+            "pronunciationGuide": "Listen to the en-GB model and keep the final consonant clear.",
+            "audio": "tts:en-GB:gym"
+          },
+          {
+            "itemId": "english-a1-m066-pronunciation-ex01-i02",
+            "position": 2,
+            "word": "swimming pool",
+            "translation": "piscina",
+            "pronunciationGuide": "Listen to the phrase as one unit and notice its main stress.",
+            "audio": "tts:en-GB:swimming pool"
+          },
+          {
+            "itemId": "english-a1-m066-pronunciation-ex01-i03",
+            "position": 3,
+            "word": "team",
+            "translation": "equipo",
+            "pronunciationGuide": "Listen to the en-GB model and keep the final consonant clear.",
+            "audio": "tts:en-GB:team"
+          },
+          {
+            "itemId": "english-a1-m066-pronunciation-ex01-i04",
+            "position": 4,
+            "word": "match",
+            "translation": "partido",
+            "pronunciationGuide": "Listen to the en-GB model and keep the final consonant clear.",
+            "audio": "tts:en-GB:match"
+          },
+          {
+            "itemId": "english-a1-m066-pronunciation-ex01-i05",
+            "position": 5,
+            "word": "practice",
+            "translation": "entrenamiento",
+            "pronunciationGuide": "Listen to the en-GB model and keep the final consonant clear.",
+            "audio": "tts:en-GB:practice"
+          },
+          {
+            "itemId": "english-a1-m066-pronunciation-ex01-i06",
+            "position": 6,
+            "word": "ticket",
+            "translation": "entrada",
+            "pronunciationGuide": "Listen to the en-GB model and keep the final consonant clear.",
+            "audio": "tts:en-GB:ticket"
+          },
+          {
+            "itemId": "english-a1-m066-pronunciation-ex01-i7",
+            "position": 7,
+            "word": "locker",
+            "translation": "taquilla",
+            "pronunciationGuide": "Listen to the en-GB model and keep the final consonant clear.",
+            "audio": "tts:en-GB:locker"
+          },
+          {
+            "itemId": "english-a1-m066-pronunciation-ex01-i8",
+            "position": 8,
+            "word": "sports hall",
+            "translation": "pabellón deportivo",
+            "pronunciationGuide": "Listen to the en-GB model and keep the final consonant clear.",
+            "audio": "tts:en-GB:sports hall"
+          },
+          {
+            "itemId": "english-a1-m066-pronunciation-ex01-i9",
+            "position": 9,
+            "word": "reception",
+            "translation": "recepción",
+            "pronunciationGuide": "Listen to the en-GB model and keep the final consonant clear.",
+            "audio": "tts:en-GB:reception"
+          },
+          {
+            "itemId": "english-a1-m066-pronunciation-ex01-i10",
+            "position": 10,
+            "word": "coach",
+            "translation": "entrenador",
+            "pronunciationGuide": "Listen to the en-GB model and keep the final consonant clear.",
+            "audio": "tts:en-GB:coach"
+          }
+        ],
+        "focus": "Practica el ritmo y el acento de las palabras clave de At the Sports Centre."
+      }
+    },
+    {
+      "sectionId": "english-a1-m066-reading",
+      "sectionKey": "reading",
+      "position": 5,
+      "title": "reading",
+      "exercise": {
+        "exerciseId": "english-a1-m066-reading-ex01",
+        "type": "reading_comprehension",
+        "items": [
+          {
+            "itemId": "english-a1-m066-reading-ex01-i01",
+            "position": 1,
+            "prompt": "Which English sentence means “¿Dónde está el gimnasio?”?",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "Where is the gym?",
+              "The swimming pool is open.",
+              "Our team has a match."
+            ],
+            "correctAnswer": "Where is the gym?"
+          },
+          {
+            "itemId": "english-a1-m066-reading-ex01-i02",
+            "position": 2,
+            "prompt": "Which English sentence means “La piscina está abierta.”?",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "The swimming pool is open.",
+              "Our team has a match.",
+              "Practice starts at six."
+            ],
+            "correctAnswer": "The swimming pool is open."
+          },
+          {
+            "itemId": "english-a1-m066-reading-ex01-i03",
+            "position": 3,
+            "prompt": "Which English sentence means “Nuestro equipo tiene un partido.”?",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "Our team has a match.",
+              "Practice starts at six.",
+              "I need a ticket."
+            ],
+            "correctAnswer": "Our team has a match."
+          },
+          {
+            "itemId": "english-a1-m066-reading-ex01-i04",
+            "position": 4,
+            "prompt": "Which English sentence means “El entrenamiento empieza a las seis.”?",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "Practice starts at six.",
+              "I need a ticket.",
+              "The coach is friendly."
+            ],
+            "correctAnswer": "Practice starts at six."
+          },
+          {
+            "itemId": "english-a1-m066-reading-ex01-i05",
+            "position": 5,
+            "prompt": "Which English sentence means “Necesito una entrada.”?",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "I need a ticket.",
+              "The coach is friendly.",
+              "Where is the gym?"
+            ],
+            "correctAnswer": "I need a ticket."
+          },
+          {
+            "itemId": "english-a1-m066-reading-ex01-i06",
+            "position": 6,
+            "prompt": "Which English sentence means “El entrenador es amable.”?",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "The coach is friendly.",
+              "Where is the gym?",
+              "The swimming pool is open."
+            ],
+            "correctAnswer": "The coach is friendly."
+          },
+          {
+            "itemId": "english-a1-m066-reading-ex01-i07",
+            "position": 7,
+            "prompt": "Which English sentence means “¿Dónde está el gimnasio?”?",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "Where is the gym?",
+              "The swimming pool is open.",
+              "Our team has a match."
+            ],
+            "correctAnswer": "Where is the gym?"
+          },
+          {
+            "itemId": "english-a1-m066-reading-ex01-i08",
+            "position": 8,
+            "prompt": "Which English sentence means “La piscina está abierta.”?",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "The swimming pool is open.",
+              "Our team has a match.",
+              "Practice starts at six."
+            ],
+            "correctAnswer": "The swimming pool is open."
+          },
+          {
+            "itemId": "english-a1-m066-reading-ex01-i09",
+            "position": 9,
+            "prompt": "Which English sentence means “Nuestro equipo tiene un partido.”?",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "Our team has a match.",
+              "Practice starts at six.",
+              "Where is the gym?"
+            ],
+            "correctAnswer": "Our team has a match."
+          },
+          {
+            "itemId": "english-a1-m066-reading-ex01-i10",
+            "position": 10,
+            "prompt": "Which English sentence means “El entrenamiento empieza a las seis.”?",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "Practice starts at six.",
+              "Where is the gym?",
+              "The swimming pool is open."
+            ],
+            "correctAnswer": "Practice starts at six."
+          }
+        ],
+        "content": {
+          "passageId": "english-a1-m066-reading-passage-01",
+          "passage": "Where is the gym? The swimming pool is open. Our team has a match. Practice starts at six. I need a ticket. The coach is friendly."
+        }
+      }
+    },
+    {
+      "sectionId": "english-a1-m066-writing",
+      "sectionKey": "writing",
+      "position": 6,
+      "title": "writing",
+      "exercise": {
+        "exerciseId": "english-a1-m066-writing-ex01",
+        "type": "dictation",
+        "items": [
+          {
+            "itemId": "english-a1-m066-writing-ex01-i01",
+            "position": 1,
+            "audio": "tts:en-GB:Where is the gym?",
+            "expectedAnswer": "Where is the gym?",
+            "evaluation": {
+              "type": "normalised_text"
+            }
+          },
+          {
+            "itemId": "english-a1-m066-writing-ex01-i02",
+            "position": 2,
+            "audio": "tts:en-GB:The swimming pool is open.",
+            "expectedAnswer": "The swimming pool is open.",
+            "evaluation": {
+              "type": "normalised_text"
+            }
+          },
+          {
+            "itemId": "english-a1-m066-writing-ex01-i03",
+            "position": 3,
+            "audio": "tts:en-GB:Our team has a match.",
+            "expectedAnswer": "Our team has a match.",
+            "evaluation": {
+              "type": "normalised_text"
+            }
+          },
+          {
+            "itemId": "english-a1-m066-writing-ex01-i04",
+            "position": 4,
+            "audio": "tts:en-GB:Practice starts at six.",
+            "expectedAnswer": "Practice starts at six.",
+            "evaluation": {
+              "type": "normalised_text"
+            }
+          },
+          {
+            "itemId": "english-a1-m066-writing-ex01-i05",
+            "position": 5,
+            "audio": "tts:en-GB:I need a ticket.",
+            "expectedAnswer": "I need a ticket.",
+            "evaluation": {
+              "type": "normalised_text"
+            }
+          },
+          {
+            "itemId": "english-a1-m066-writing-ex01-i06",
+            "position": 6,
+            "audio": "tts:en-GB:The coach is friendly.",
+            "expectedAnswer": "The coach is friendly.",
+            "evaluation": {
+              "type": "normalised_text"
+            }
+          },
+          {
+            "itemId": "english-a1-m066-writing-ex01-i07",
+            "position": 7,
+            "audio": "tts:en-GB:Where is the gym?",
+            "expectedAnswer": "Where is the gym?",
+            "evaluation": {
+              "type": "normalised_text"
+            }
+          },
+          {
+            "itemId": "english-a1-m066-writing-ex01-i08",
+            "position": 8,
+            "audio": "tts:en-GB:The swimming pool is open.",
+            "expectedAnswer": "The swimming pool is open.",
+            "evaluation": {
+              "type": "normalised_text"
+            }
+          },
+          {
+            "itemId": "english-a1-m066-writing-ex01-i09",
+            "position": 9,
+            "audio": "tts:en-GB:Our team has a match.",
+            "expectedAnswer": "Our team has a match.",
+            "evaluation": {
+              "type": "normalised_text"
+            }
+          },
+          {
+            "itemId": "english-a1-m066-writing-ex01-i10",
+            "position": 10,
+            "audio": "tts:en-GB:Practice starts at six.",
+            "expectedAnswer": "Practice starts at six.",
+            "evaluation": {
+              "type": "normalised_text"
+            }
+          }
+        ],
+        "writingTask": "Escribe 5–6 frases sobre at the sports centre. Incluye vocabulario de la misión y la estructura there is and there are.",
+        "modelText": "Where is the gym? The swimming pool is open. Our team has a match. Practice starts at six. I need a ticket. The coach is friendly."
+      }
+    },
+    {
+      "sectionId": "english-a1-m066-speaking",
+      "sectionKey": "speaking",
+      "position": 7,
+      "title": "speaking",
+      "exercise": {
+        "exerciseId": "english-a1-m066-speaking-ex01",
+        "type": "speaking_prompts",
+        "items": [
+          {
+            "itemId": "english-a1-m066-speaking-ex01-i01",
+            "position": 1,
+            "prompt": "Say a sentence about this situation: ¿Dónde está el gimnasio?",
+            "modelAnswer": "Where is the gym?",
+            "evaluation": {
+              "type": "transcription_feedback",
+              "transcriptionSeparateFromPronunciation": true
+            }
+          },
+          {
+            "itemId": "english-a1-m066-speaking-ex01-i02",
+            "position": 2,
+            "prompt": "Say a sentence about this situation: La piscina está abierta.",
+            "modelAnswer": "The swimming pool is open.",
+            "evaluation": {
+              "type": "transcription_feedback",
+              "transcriptionSeparateFromPronunciation": true
+            }
+          },
+          {
+            "itemId": "english-a1-m066-speaking-ex01-i03",
+            "position": 3,
+            "prompt": "Say a sentence about this situation: Nuestro equipo tiene un partido.",
+            "modelAnswer": "Our team has a match.",
+            "evaluation": {
+              "type": "transcription_feedback",
+              "transcriptionSeparateFromPronunciation": true
+            }
+          },
+          {
+            "itemId": "english-a1-m066-speaking-ex01-i04",
+            "position": 4,
+            "prompt": "Say a sentence about this situation: El entrenamiento empieza a las seis.",
+            "modelAnswer": "Practice starts at six.",
+            "evaluation": {
+              "type": "transcription_feedback",
+              "transcriptionSeparateFromPronunciation": true
+            }
+          },
+          {
+            "itemId": "english-a1-m066-speaking-ex01-i05",
+            "position": 5,
+            "prompt": "Say a sentence about this situation: Necesito una entrada.",
+            "modelAnswer": "I need a ticket.",
+            "evaluation": {
+              "type": "transcription_feedback",
+              "transcriptionSeparateFromPronunciation": true
+            }
+          },
+          {
+            "itemId": "english-a1-m066-speaking-ex01-i06",
+            "position": 6,
+            "prompt": "Say a sentence about this situation: El entrenador es amable.",
+            "modelAnswer": "The coach is friendly.",
+            "evaluation": {
+              "type": "transcription_feedback",
+              "transcriptionSeparateFromPronunciation": true
+            }
+          },
+          {
+            "itemId": "english-a1-m066-speaking-ex01-i07",
+            "position": 7,
+            "prompt": "Say a sentence about this situation: ¿Dónde está el gimnasio?",
+            "modelAnswer": "Where is the gym?",
+            "evaluation": {
+              "type": "transcription_feedback",
+              "transcriptionSeparateFromPronunciation": true
+            }
+          },
+          {
+            "itemId": "english-a1-m066-speaking-ex01-i08",
+            "position": 8,
+            "prompt": "Say a sentence about this situation: La piscina está abierta.",
+            "modelAnswer": "The swimming pool is open.",
+            "evaluation": {
+              "type": "transcription_feedback",
+              "transcriptionSeparateFromPronunciation": true
+            }
+          },
+          {
+            "itemId": "english-a1-m066-speaking-ex01-i09",
+            "position": 9,
+            "prompt": "Say a sentence about this situation: Nuestro equipo tiene un partido.",
+            "modelAnswer": "Our team has a match.",
+            "evaluation": {
+              "type": "transcription_feedback",
+              "transcriptionSeparateFromPronunciation": true
+            }
+          },
+          {
+            "itemId": "english-a1-m066-speaking-ex01-i10",
+            "position": 10,
+            "prompt": "Say a sentence about this situation: El entrenamiento empieza a las seis.",
+            "modelAnswer": "Practice starts at six.",
+            "evaluation": {
+              "type": "transcription_feedback",
+              "transcriptionSeparateFromPronunciation": true
+            }
+          }
+        ]
+      }
+    },
+    {
+      "sectionId": "english-a1-m066-listening",
+      "sectionKey": "listening",
+      "position": 8,
+      "title": "listening",
+      "exercise": {
+        "exerciseId": "english-a1-m066-listening-ex01",
+        "type": "listening_gap_fill",
+        "items": [
+          {
+            "itemId": "english-a1-m066-listening-ex01-i01",
+            "position": 1,
+            "gapToken": "[[gap-01]]",
+            "expectedWordId": "english-a1-m066-listening-word-01"
+          },
+          {
+            "itemId": "english-a1-m066-listening-ex01-i02",
+            "position": 2,
+            "gapToken": "[[gap-02]]",
+            "expectedWordId": "english-a1-m066-listening-word-02"
+          },
+          {
+            "itemId": "english-a1-m066-listening-ex01-i03",
+            "position": 3,
+            "gapToken": "[[gap-03]]",
+            "expectedWordId": "english-a1-m066-listening-word-03"
+          },
+          {
+            "itemId": "english-a1-m066-listening-ex01-i04",
+            "position": 4,
+            "gapToken": "[[gap-04]]",
+            "expectedWordId": "english-a1-m066-listening-word-04"
+          },
+          {
+            "itemId": "english-a1-m066-listening-ex01-i05",
+            "position": 5,
+            "gapToken": "[[gap-05]]",
+            "expectedWordId": "english-a1-m066-listening-word-05"
+          },
+          {
+            "itemId": "english-a1-m066-listening-ex01-i06",
+            "position": 6,
+            "gapToken": "[[gap-06]]",
+            "expectedWordId": "english-a1-m066-listening-word-06"
+          },
+          {
+            "itemId": "english-a1-m066-listening-ex01-i7",
+            "position": 7,
+            "gapToken": "[[gap-07]]",
+            "expectedWordId": "english-a1-m066-listening-word-7"
+          },
+          {
+            "itemId": "english-a1-m066-listening-ex01-i8",
+            "position": 8,
+            "gapToken": "[[gap-08]]",
+            "expectedWordId": "english-a1-m066-listening-word-8"
+          },
+          {
+            "itemId": "english-a1-m066-listening-ex01-i9",
+            "position": 9,
+            "gapToken": "[[gap-09]]",
+            "expectedWordId": "english-a1-m066-listening-word-9"
+          },
+          {
+            "itemId": "english-a1-m066-listening-ex01-i10",
+            "position": 10,
+            "gapToken": "[[gap-10]]",
+            "expectedWordId": "english-a1-m066-listening-word-10"
+          }
+        ],
+        "content": {
+          "audio": "tts:en-GB:The key words for At the Sports Centre are: gym, swimming pool, team, match, practice, ticket, locker, sports hall, reception, coach. Listen and repeat each word carefully.",
+          "audioLocale": "en-GB",
+          "transcriptTemplate": "The key words for At the Sports Centre are: [[gap-01]], [[gap-02]], [[gap-03]], [[gap-04]], [[gap-05]], [[gap-06]], [[gap-07]], [[gap-08]], [[gap-09]], [[gap-10]]. Listen and repeat each word carefully.",
+          "wordBank": [
+            {
+              "wordId": "english-a1-m066-listening-word-01",
+              "word": "gym"
+            },
+            {
+              "wordId": "english-a1-m066-listening-word-02",
+              "word": "swimming pool"
+            },
+            {
+              "wordId": "english-a1-m066-listening-word-03",
+              "word": "team"
+            },
+            {
+              "wordId": "english-a1-m066-listening-word-04",
+              "word": "match"
+            },
+            {
+              "wordId": "english-a1-m066-listening-word-05",
+              "word": "practice"
+            },
+            {
+              "wordId": "english-a1-m066-listening-word-06",
+              "word": "ticket"
+            },
+            {
+              "wordId": "english-a1-m066-listening-word-7",
+              "word": "locker"
+            },
+            {
+              "wordId": "english-a1-m066-listening-word-8",
+              "word": "sports hall"
+            },
+            {
+              "wordId": "english-a1-m066-listening-word-9",
+              "word": "reception"
+            },
+            {
+              "wordId": "english-a1-m066-listening-word-10",
+              "word": "coach"
+            }
+          ],
+          "interaction": "select_place_move_replace"
+        }
+      }
+    }
+  ]
+}

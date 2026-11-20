@@ -1,0 +1,1205 @@
+{
+  "schemaVersion": "1.2.0",
+  "contentVersion": 1,
+  "course": {
+    "courseId": "english-a1",
+    "level": "A1",
+    "language": "en-GB"
+  },
+  "unit": {
+    "unitId": "english-a1-unit-07",
+    "courseId": "english-a1",
+    "position": 7,
+    "title": "Free time, hobbies and abilities"
+  },
+  "mission": {
+    "missionId": "english-a1-m067",
+    "unitId": "english-a1-unit-07",
+    "position": 67,
+    "title": "My Favourite Hobby"
+  },
+  "sections": [
+    {
+      "sectionId": "english-a1-m067-explore",
+      "sectionKey": "explore",
+      "position": 1,
+      "title": "explore",
+      "exercise": {
+        "exerciseId": "english-a1-m067-explore-ex01",
+        "type": "vocabulary_pairs",
+        "items": [
+          {
+            "itemId": "english-a1-m067-explore-ex01-i01",
+            "position": 1,
+            "english": "favourite",
+            "spanish": "favorito/a",
+            "audio": "tts:en-GB:favourite"
+          },
+          {
+            "itemId": "english-a1-m067-explore-ex01-i02",
+            "position": 2,
+            "english": "enjoy",
+            "spanish": "disfrutar",
+            "audio": "tts:en-GB:enjoy"
+          },
+          {
+            "itemId": "english-a1-m067-explore-ex01-i03",
+            "position": 3,
+            "english": "hobby",
+            "spanish": "afición",
+            "audio": "tts:en-GB:hobby"
+          },
+          {
+            "itemId": "english-a1-m067-explore-ex01-i04",
+            "position": 4,
+            "english": "free time",
+            "spanish": "tiempo libre",
+            "audio": "tts:en-GB:free time"
+          },
+          {
+            "itemId": "english-a1-m067-explore-ex01-i05",
+            "position": 5,
+            "english": "because",
+            "spanish": "porque",
+            "audio": "tts:en-GB:because"
+          },
+          {
+            "itemId": "english-a1-m067-explore-ex01-i06",
+            "position": 6,
+            "english": "interesting",
+            "spanish": "interesante",
+            "audio": "tts:en-GB:interesting"
+          },
+          {
+            "itemId": "english-a1-m067-explore-ex01-i7",
+            "position": 7,
+            "english": "creative",
+            "spanish": "creativo/a",
+            "audio": "tts:en-GB:creative"
+          },
+          {
+            "itemId": "english-a1-m067-explore-ex01-i8",
+            "position": 8,
+            "english": "collect",
+            "spanish": "coleccionar",
+            "audio": "tts:en-GB:collect"
+          },
+          {
+            "itemId": "english-a1-m067-explore-ex01-i9",
+            "position": 9,
+            "english": "photograph",
+            "spanish": "fotografiar",
+            "audio": "tts:en-GB:photograph"
+          },
+          {
+            "itemId": "english-a1-m067-explore-ex01-i10",
+            "position": 10,
+            "english": "board game",
+            "spanish": "juego de mesa",
+            "audio": "tts:en-GB:board game"
+          }
+        ],
+        "theory": {
+          "title": "Vocabulary: My Favourite Hobby",
+          "explanation": "Explora diez palabras y expresiones sobre my favourite hobby. Escucha el modelo británico, relaciona cada palabra con su significado y úsala en una frase.",
+          "patterns": [
+            {
+              "label": "Useful language",
+              "pattern": "Short question + short answer",
+              "examples": [
+                "My favourite hobby is reading.",
+                "I enjoy drawing.",
+                "Photography is my hobby."
+              ]
+            }
+          ],
+          "tip": "Repite las expresiones y crea un ejemplo relacionado con tu vida."
+        }
+      }
+    },
+    {
+      "sectionId": "english-a1-m067-practice",
+      "sectionKey": "practice",
+      "position": 2,
+      "title": "practice",
+      "exercise": {
+        "exerciseId": "english-a1-m067-practice-ex01",
+        "type": "mixed_practice",
+        "items": [
+          {
+            "itemId": "english-a1-m067-practice-ex01-i01",
+            "position": 1,
+            "taskType": "translation_multiple_choice",
+            "prompt": "Traduce al español: “My favourite hobby is reading.”",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "Mi afición favorita es leer.",
+              "Disfruto dibujando.",
+              "La fotografía es mi afición."
+            ],
+            "correctAnswer": "Mi afición favorita es leer.",
+            "sourceEnglish": "My favourite hobby is reading."
+          },
+          {
+            "itemId": "english-a1-m067-practice-ex01-i02",
+            "position": 2,
+            "taskType": "translation_multiple_choice",
+            "prompt": "Traduce al español: “I enjoy drawing.”",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "Disfruto dibujando.",
+              "La fotografía es mi afición.",
+              "Leo en mi tiempo libre."
+            ],
+            "correctAnswer": "Disfruto dibujando.",
+            "sourceEnglish": "I enjoy drawing."
+          },
+          {
+            "itemId": "english-a1-m067-practice-ex01-i03",
+            "position": 3,
+            "taskType": "translation_multiple_choice",
+            "prompt": "Traduce al español: “Photography is my hobby.”",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "La fotografía es mi afición.",
+              "Leo en mi tiempo libre.",
+              "Me gusta el tenis porque es divertido."
+            ],
+            "correctAnswer": "La fotografía es mi afición.",
+            "sourceEnglish": "Photography is my hobby."
+          },
+          {
+            "itemId": "english-a1-m067-practice-ex01-i04",
+            "position": 4,
+            "taskType": "translation_multiple_choice",
+            "prompt": "Traduce al español: “I read in my free time.”",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "Leo en mi tiempo libre.",
+              "Me gusta el tenis porque es divertido.",
+              "La música es interesante."
+            ],
+            "correctAnswer": "Leo en mi tiempo libre.",
+            "sourceEnglish": "I read in my free time."
+          },
+          {
+            "itemId": "english-a1-m067-practice-ex01-i05",
+            "position": 5,
+            "taskType": "translation_multiple_choice",
+            "prompt": "Traduce al español: “I like tennis because it is fun.”",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "Me gusta el tenis porque es divertido.",
+              "La música es interesante.",
+              "Mi afición favorita es leer."
+            ],
+            "correctAnswer": "Me gusta el tenis porque es divertido.",
+            "sourceEnglish": "I like tennis because it is fun."
+          },
+          {
+            "itemId": "english-a1-m067-practice-ex01-i06",
+            "position": 6,
+            "taskType": "translation_multiple_choice",
+            "prompt": "Traduce al español: “Music is interesting.”",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "La música es interesante.",
+              "Mi afición favorita es leer.",
+              "Disfruto dibujando."
+            ],
+            "correctAnswer": "La música es interesante.",
+            "sourceEnglish": "Music is interesting."
+          },
+          {
+            "itemId": "english-a1-m067-practice-ex01-i07",
+            "position": 7,
+            "taskType": "translation_multiple_choice",
+            "prompt": "Traduce al español: “My favourite hobby is reading.”",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "Mi afición favorita es leer.",
+              "Disfruto dibujando.",
+              "La fotografía es mi afición."
+            ],
+            "correctAnswer": "Mi afición favorita es leer.",
+            "sourceEnglish": "My favourite hobby is reading."
+          },
+          {
+            "itemId": "english-a1-m067-practice-ex01-i08",
+            "position": 8,
+            "taskType": "translation_multiple_choice",
+            "prompt": "Traduce al español: “I enjoy drawing.”",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "Disfruto dibujando.",
+              "La fotografía es mi afición.",
+              "Leo en mi tiempo libre."
+            ],
+            "correctAnswer": "Disfruto dibujando.",
+            "sourceEnglish": "I enjoy drawing."
+          },
+          {
+            "itemId": "english-a1-m067-practice-ex01-i09",
+            "position": 9,
+            "taskType": "translation_multiple_choice",
+            "prompt": "Traduce al español: “Photography is my hobby.”",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "La fotografía es mi afición.",
+              "Leo en mi tiempo libre.",
+              "Me gusta el tenis porque es divertido."
+            ],
+            "correctAnswer": "La fotografía es mi afición.",
+            "sourceEnglish": "Photography is my hobby."
+          },
+          {
+            "itemId": "english-a1-m067-practice-ex01-i10",
+            "position": 10,
+            "taskType": "translation_multiple_choice",
+            "prompt": "Traduce al español: “I read in my free time.”",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "Leo en mi tiempo libre.",
+              "Me gusta el tenis porque es divertido.",
+              "La música es interesante."
+            ],
+            "correctAnswer": "Leo en mi tiempo libre.",
+            "sourceEnglish": "I read in my free time."
+          },
+          {
+            "itemId": "english-a1-m067-practice-ex01-i11",
+            "position": 11,
+            "taskType": "listening_translation_multiple_choice",
+            "prompt": "Escucha el inglés y elige su significado.",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "Mi afición favorita es leer.",
+              "Disfruto dibujando.",
+              "La fotografía es mi afición."
+            ],
+            "correctAnswer": "Mi afición favorita es leer.",
+            "sourceEnglish": "My favourite hobby is reading."
+          },
+          {
+            "itemId": "english-a1-m067-practice-ex01-i12",
+            "position": 12,
+            "taskType": "listening_translation_multiple_choice",
+            "prompt": "Escucha el inglés y elige su significado.",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "Disfruto dibujando.",
+              "La fotografía es mi afición.",
+              "Leo en mi tiempo libre."
+            ],
+            "correctAnswer": "Disfruto dibujando.",
+            "sourceEnglish": "I enjoy drawing."
+          },
+          {
+            "itemId": "english-a1-m067-practice-ex01-i13",
+            "position": 13,
+            "taskType": "listening_translation_multiple_choice",
+            "prompt": "Escucha el inglés y elige su significado.",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "La fotografía es mi afición.",
+              "Leo en mi tiempo libre.",
+              "Me gusta el tenis porque es divertido."
+            ],
+            "correctAnswer": "La fotografía es mi afición.",
+            "sourceEnglish": "Photography is my hobby."
+          },
+          {
+            "itemId": "english-a1-m067-practice-ex01-i14",
+            "position": 14,
+            "taskType": "listening_translation_multiple_choice",
+            "prompt": "Escucha el inglés y elige su significado.",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "Leo en mi tiempo libre.",
+              "Me gusta el tenis porque es divertido.",
+              "La música es interesante."
+            ],
+            "correctAnswer": "Leo en mi tiempo libre.",
+            "sourceEnglish": "I read in my free time."
+          },
+          {
+            "itemId": "english-a1-m067-practice-ex01-i15",
+            "position": 15,
+            "taskType": "listening_translation_multiple_choice",
+            "prompt": "Escucha el inglés y elige su significado.",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "Me gusta el tenis porque es divertido.",
+              "La música es interesante.",
+              "Mi afición favorita es leer."
+            ],
+            "correctAnswer": "Me gusta el tenis porque es divertido.",
+            "sourceEnglish": "I like tennis because it is fun."
+          },
+          {
+            "itemId": "english-a1-m067-practice-ex01-i16",
+            "position": 16,
+            "taskType": "listening_translation_multiple_choice",
+            "prompt": "Escucha el inglés y elige su significado.",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "La música es interesante.",
+              "Mi afición favorita es leer.",
+              "Disfruto dibujando."
+            ],
+            "correctAnswer": "La música es interesante.",
+            "sourceEnglish": "Music is interesting."
+          },
+          {
+            "itemId": "english-a1-m067-practice-ex01-i17",
+            "position": 17,
+            "taskType": "listening_translation_multiple_choice",
+            "prompt": "Escucha el inglés y elige su significado.",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "Mi afición favorita es leer.",
+              "Disfruto dibujando.",
+              "La fotografía es mi afición."
+            ],
+            "correctAnswer": "Mi afición favorita es leer.",
+            "sourceEnglish": "My favourite hobby is reading."
+          },
+          {
+            "itemId": "english-a1-m067-practice-ex01-i18",
+            "position": 18,
+            "taskType": "listening_translation_multiple_choice",
+            "prompt": "Escucha el inglés y elige su significado.",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "Disfruto dibujando.",
+              "La fotografía es mi afición.",
+              "Leo en mi tiempo libre."
+            ],
+            "correctAnswer": "Disfruto dibujando.",
+            "sourceEnglish": "I enjoy drawing."
+          },
+          {
+            "itemId": "english-a1-m067-practice-ex01-i19",
+            "position": 19,
+            "taskType": "listening_translation_multiple_choice",
+            "prompt": "Escucha el inglés y elige su significado.",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "La fotografía es mi afición.",
+              "Leo en mi tiempo libre.",
+              "Me gusta el tenis porque es divertido."
+            ],
+            "correctAnswer": "La fotografía es mi afición.",
+            "sourceEnglish": "Photography is my hobby."
+          },
+          {
+            "itemId": "english-a1-m067-practice-ex01-i20",
+            "position": 20,
+            "taskType": "listening_translation_multiple_choice",
+            "prompt": "Escucha el inglés y elige su significado.",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "Leo en mi tiempo libre.",
+              "Me gusta el tenis porque es divertido.",
+              "La música es interesante."
+            ],
+            "correctAnswer": "Leo en mi tiempo libre.",
+            "sourceEnglish": "I read in my free time."
+          }
+        ]
+      }
+    },
+    {
+      "sectionId": "english-a1-m067-grammar",
+      "sectionKey": "grammar",
+      "position": 3,
+      "title": "grammar",
+      "exercise": {
+        "exerciseId": "english-a1-m067-grammar-ex01",
+        "type": "grammar",
+        "items": [
+          {
+            "itemId": "english-a1-m067-grammar-ex01-i01",
+            "position": 1,
+            "prompt": "I love ___ chess.",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "playing",
+              "play",
+              "plays"
+            ],
+            "correctAnswer": "playing"
+          },
+          {
+            "itemId": "english-a1-m067-grammar-ex01-i02",
+            "position": 2,
+            "prompt": "She likes ___ pictures.",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "drawing",
+              "draw",
+              "draws"
+            ],
+            "correctAnswer": "drawing"
+          },
+          {
+            "itemId": "english-a1-m067-grammar-ex01-i03",
+            "position": 3,
+            "prompt": "They hate ___.",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "losing",
+              "lose",
+              "loses"
+            ],
+            "correctAnswer": "losing"
+          },
+          {
+            "itemId": "english-a1-m067-grammar-ex01-i04",
+            "position": 4,
+            "prompt": "He likes ___ to music.",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "listening",
+              "listen",
+              "listens"
+            ],
+            "correctAnswer": "listening"
+          },
+          {
+            "itemId": "english-a1-m067-grammar-ex01-i05",
+            "position": 5,
+            "prompt": "We love ___ films.",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "watching",
+              "watch",
+              "watches"
+            ],
+            "correctAnswer": "watching"
+          },
+          {
+            "itemId": "english-a1-m067-grammar-ex01-i06",
+            "position": 6,
+            "prompt": "I don't like ___ late.",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "being",
+              "be",
+              "am"
+            ],
+            "correctAnswer": "being"
+          },
+          {
+            "itemId": "english-a1-m067-grammar-ex01-i07",
+            "position": 7,
+            "prompt": "Do you like ___?",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "cycling",
+              "cycle",
+              "cycles"
+            ],
+            "correctAnswer": "cycling"
+          },
+          {
+            "itemId": "english-a1-m067-grammar-ex01-i08",
+            "position": 8,
+            "prompt": "My brother loves ___.",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "cooking",
+              "cook",
+              "cooks"
+            ],
+            "correctAnswer": "cooking"
+          },
+          {
+            "itemId": "english-a1-m067-grammar-ex01-i09",
+            "position": 9,
+            "prompt": "She hates ___ the bus.",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "missing",
+              "miss",
+              "misses"
+            ],
+            "correctAnswer": "missing"
+          },
+          {
+            "itemId": "english-a1-m067-grammar-ex01-i10",
+            "position": 10,
+            "prompt": "They enjoy ___ together.",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "singing",
+              "sing",
+              "sings"
+            ],
+            "correctAnswer": "singing"
+          }
+        ],
+        "theory": {
+          "title": "Preferences with like, love and hate",
+          "explanation": "Usamos like, love y hate para expresar preferencias. Podemos usar un nombre o un verbo en -ing después de estas expresiones.",
+          "patterns": [
+            {
+              "label": "Model",
+              "pattern": "I love playing chess",
+              "examples": [
+                "I love playing chess",
+                "She likes drawing."
+              ]
+            }
+          ],
+          "tip": "Lee el modelo en voz alta y fíjate en la forma verbal."
+        }
+      }
+    },
+    {
+      "sectionId": "english-a1-m067-pronunciation",
+      "sectionKey": "pronunciation",
+      "position": 4,
+      "title": "pronunciation",
+      "exercise": {
+        "exerciseId": "english-a1-m067-pronunciation-ex01",
+        "type": "pronunciation_cards",
+        "items": [
+          {
+            "itemId": "english-a1-m067-pronunciation-ex01-i01",
+            "position": 1,
+            "word": "favourite",
+            "translation": "favorito/a",
+            "pronunciationGuide": "Listen to the en-GB model and keep the final consonant clear.",
+            "audio": "tts:en-GB:favourite"
+          },
+          {
+            "itemId": "english-a1-m067-pronunciation-ex01-i02",
+            "position": 2,
+            "word": "enjoy",
+            "translation": "disfrutar",
+            "pronunciationGuide": "Listen to the en-GB model and keep the final consonant clear.",
+            "audio": "tts:en-GB:enjoy"
+          },
+          {
+            "itemId": "english-a1-m067-pronunciation-ex01-i03",
+            "position": 3,
+            "word": "hobby",
+            "translation": "afición",
+            "pronunciationGuide": "Listen to the en-GB model and keep the final consonant clear.",
+            "audio": "tts:en-GB:hobby"
+          },
+          {
+            "itemId": "english-a1-m067-pronunciation-ex01-i04",
+            "position": 4,
+            "word": "free time",
+            "translation": "tiempo libre",
+            "pronunciationGuide": "Listen to the phrase as one unit and notice its main stress.",
+            "audio": "tts:en-GB:free time"
+          },
+          {
+            "itemId": "english-a1-m067-pronunciation-ex01-i05",
+            "position": 5,
+            "word": "because",
+            "translation": "porque",
+            "pronunciationGuide": "Listen to the en-GB model and keep the final consonant clear.",
+            "audio": "tts:en-GB:because"
+          },
+          {
+            "itemId": "english-a1-m067-pronunciation-ex01-i06",
+            "position": 6,
+            "word": "interesting",
+            "translation": "interesante",
+            "pronunciationGuide": "Listen to the en-GB model and keep the final consonant clear.",
+            "audio": "tts:en-GB:interesting"
+          },
+          {
+            "itemId": "english-a1-m067-pronunciation-ex01-i7",
+            "position": 7,
+            "word": "creative",
+            "translation": "creativo/a",
+            "pronunciationGuide": "Listen to the en-GB model and keep the final consonant clear.",
+            "audio": "tts:en-GB:creative"
+          },
+          {
+            "itemId": "english-a1-m067-pronunciation-ex01-i8",
+            "position": 8,
+            "word": "collect",
+            "translation": "coleccionar",
+            "pronunciationGuide": "Listen to the en-GB model and keep the final consonant clear.",
+            "audio": "tts:en-GB:collect"
+          },
+          {
+            "itemId": "english-a1-m067-pronunciation-ex01-i9",
+            "position": 9,
+            "word": "photograph",
+            "translation": "fotografiar",
+            "pronunciationGuide": "Listen to the en-GB model and keep the final consonant clear.",
+            "audio": "tts:en-GB:photograph"
+          },
+          {
+            "itemId": "english-a1-m067-pronunciation-ex01-i10",
+            "position": 10,
+            "word": "board game",
+            "translation": "juego de mesa",
+            "pronunciationGuide": "Listen to the en-GB model and keep the final consonant clear.",
+            "audio": "tts:en-GB:board game"
+          }
+        ],
+        "focus": "Practica el ritmo y el acento de las palabras clave de My Favourite Hobby."
+      }
+    },
+    {
+      "sectionId": "english-a1-m067-reading",
+      "sectionKey": "reading",
+      "position": 5,
+      "title": "reading",
+      "exercise": {
+        "exerciseId": "english-a1-m067-reading-ex01",
+        "type": "reading_comprehension",
+        "items": [
+          {
+            "itemId": "english-a1-m067-reading-ex01-i01",
+            "position": 1,
+            "prompt": "Which English sentence means “Mi afición favorita es leer.”?",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "My favourite hobby is reading.",
+              "I enjoy drawing.",
+              "Photography is my hobby."
+            ],
+            "correctAnswer": "My favourite hobby is reading."
+          },
+          {
+            "itemId": "english-a1-m067-reading-ex01-i02",
+            "position": 2,
+            "prompt": "Which English sentence means “Disfruto dibujando.”?",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "I enjoy drawing.",
+              "Photography is my hobby.",
+              "I read in my free time."
+            ],
+            "correctAnswer": "I enjoy drawing."
+          },
+          {
+            "itemId": "english-a1-m067-reading-ex01-i03",
+            "position": 3,
+            "prompt": "Which English sentence means “La fotografía es mi afición.”?",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "Photography is my hobby.",
+              "I read in my free time.",
+              "I like tennis because it is fun."
+            ],
+            "correctAnswer": "Photography is my hobby."
+          },
+          {
+            "itemId": "english-a1-m067-reading-ex01-i04",
+            "position": 4,
+            "prompt": "Which English sentence means “Leo en mi tiempo libre.”?",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "I read in my free time.",
+              "I like tennis because it is fun.",
+              "Music is interesting."
+            ],
+            "correctAnswer": "I read in my free time."
+          },
+          {
+            "itemId": "english-a1-m067-reading-ex01-i05",
+            "position": 5,
+            "prompt": "Which English sentence means “Me gusta el tenis porque es divertido.”?",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "I like tennis because it is fun.",
+              "Music is interesting.",
+              "My favourite hobby is reading."
+            ],
+            "correctAnswer": "I like tennis because it is fun."
+          },
+          {
+            "itemId": "english-a1-m067-reading-ex01-i06",
+            "position": 6,
+            "prompt": "Which English sentence means “La música es interesante.”?",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "Music is interesting.",
+              "My favourite hobby is reading.",
+              "I enjoy drawing."
+            ],
+            "correctAnswer": "Music is interesting."
+          },
+          {
+            "itemId": "english-a1-m067-reading-ex01-i07",
+            "position": 7,
+            "prompt": "Which English sentence means “Mi afición favorita es leer.”?",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "My favourite hobby is reading.",
+              "I enjoy drawing.",
+              "Photography is my hobby."
+            ],
+            "correctAnswer": "My favourite hobby is reading."
+          },
+          {
+            "itemId": "english-a1-m067-reading-ex01-i08",
+            "position": 8,
+            "prompt": "Which English sentence means “Disfruto dibujando.”?",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "I enjoy drawing.",
+              "Photography is my hobby.",
+              "I read in my free time."
+            ],
+            "correctAnswer": "I enjoy drawing."
+          },
+          {
+            "itemId": "english-a1-m067-reading-ex01-i09",
+            "position": 9,
+            "prompt": "Which English sentence means “La fotografía es mi afición.”?",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "Photography is my hobby.",
+              "I read in my free time.",
+              "My favourite hobby is reading."
+            ],
+            "correctAnswer": "Photography is my hobby."
+          },
+          {
+            "itemId": "english-a1-m067-reading-ex01-i10",
+            "position": 10,
+            "prompt": "Which English sentence means “Leo en mi tiempo libre.”?",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "I read in my free time.",
+              "My favourite hobby is reading.",
+              "I enjoy drawing."
+            ],
+            "correctAnswer": "I read in my free time."
+          }
+        ],
+        "content": {
+          "passageId": "english-a1-m067-reading-passage-01",
+          "passage": "My favourite hobby is reading. I enjoy drawing. Photography is my hobby. I read in my free time. I like tennis because it is fun. Music is interesting."
+        }
+      }
+    },
+    {
+      "sectionId": "english-a1-m067-writing",
+      "sectionKey": "writing",
+      "position": 6,
+      "title": "writing",
+      "exercise": {
+        "exerciseId": "english-a1-m067-writing-ex01",
+        "type": "dictation",
+        "items": [
+          {
+            "itemId": "english-a1-m067-writing-ex01-i01",
+            "position": 1,
+            "audio": "tts:en-GB:My favourite hobby is reading.",
+            "expectedAnswer": "My favourite hobby is reading.",
+            "evaluation": {
+              "type": "normalised_text"
+            }
+          },
+          {
+            "itemId": "english-a1-m067-writing-ex01-i02",
+            "position": 2,
+            "audio": "tts:en-GB:I enjoy drawing.",
+            "expectedAnswer": "I enjoy drawing.",
+            "evaluation": {
+              "type": "normalised_text"
+            }
+          },
+          {
+            "itemId": "english-a1-m067-writing-ex01-i03",
+            "position": 3,
+            "audio": "tts:en-GB:Photography is my hobby.",
+            "expectedAnswer": "Photography is my hobby.",
+            "evaluation": {
+              "type": "normalised_text"
+            }
+          },
+          {
+            "itemId": "english-a1-m067-writing-ex01-i04",
+            "position": 4,
+            "audio": "tts:en-GB:I read in my free time.",
+            "expectedAnswer": "I read in my free time.",
+            "evaluation": {
+              "type": "normalised_text"
+            }
+          },
+          {
+            "itemId": "english-a1-m067-writing-ex01-i05",
+            "position": 5,
+            "audio": "tts:en-GB:I like tennis because it is fun.",
+            "expectedAnswer": "I like tennis because it is fun.",
+            "evaluation": {
+              "type": "normalised_text"
+            }
+          },
+          {
+            "itemId": "english-a1-m067-writing-ex01-i06",
+            "position": 6,
+            "audio": "tts:en-GB:Music is interesting.",
+            "expectedAnswer": "Music is interesting.",
+            "evaluation": {
+              "type": "normalised_text"
+            }
+          },
+          {
+            "itemId": "english-a1-m067-writing-ex01-i07",
+            "position": 7,
+            "audio": "tts:en-GB:My favourite hobby is reading.",
+            "expectedAnswer": "My favourite hobby is reading.",
+            "evaluation": {
+              "type": "normalised_text"
+            }
+          },
+          {
+            "itemId": "english-a1-m067-writing-ex01-i08",
+            "position": 8,
+            "audio": "tts:en-GB:I enjoy drawing.",
+            "expectedAnswer": "I enjoy drawing.",
+            "evaluation": {
+              "type": "normalised_text"
+            }
+          },
+          {
+            "itemId": "english-a1-m067-writing-ex01-i09",
+            "position": 9,
+            "audio": "tts:en-GB:Photography is my hobby.",
+            "expectedAnswer": "Photography is my hobby.",
+            "evaluation": {
+              "type": "normalised_text"
+            }
+          },
+          {
+            "itemId": "english-a1-m067-writing-ex01-i10",
+            "position": 10,
+            "audio": "tts:en-GB:I read in my free time.",
+            "expectedAnswer": "I read in my free time.",
+            "evaluation": {
+              "type": "normalised_text"
+            }
+          }
+        ],
+        "writingTask": "Escribe 5–6 frases sobre my favourite hobby. Incluye vocabulario de la misión y la estructura preferences with like, love and hate.",
+        "modelText": "My favourite hobby is reading. I enjoy drawing. Photography is my hobby. I read in my free time. I like tennis because it is fun. Music is interesting."
+      }
+    },
+    {
+      "sectionId": "english-a1-m067-speaking",
+      "sectionKey": "speaking",
+      "position": 7,
+      "title": "speaking",
+      "exercise": {
+        "exerciseId": "english-a1-m067-speaking-ex01",
+        "type": "speaking_prompts",
+        "items": [
+          {
+            "itemId": "english-a1-m067-speaking-ex01-i01",
+            "position": 1,
+            "prompt": "Say a sentence about this situation: Mi afición favorita es leer.",
+            "modelAnswer": "My favourite hobby is reading.",
+            "evaluation": {
+              "type": "transcription_feedback",
+              "transcriptionSeparateFromPronunciation": true
+            }
+          },
+          {
+            "itemId": "english-a1-m067-speaking-ex01-i02",
+            "position": 2,
+            "prompt": "Say a sentence about this situation: Disfruto dibujando.",
+            "modelAnswer": "I enjoy drawing.",
+            "evaluation": {
+              "type": "transcription_feedback",
+              "transcriptionSeparateFromPronunciation": true
+            }
+          },
+          {
+            "itemId": "english-a1-m067-speaking-ex01-i03",
+            "position": 3,
+            "prompt": "Say a sentence about this situation: La fotografía es mi afición.",
+            "modelAnswer": "Photography is my hobby.",
+            "evaluation": {
+              "type": "transcription_feedback",
+              "transcriptionSeparateFromPronunciation": true
+            }
+          },
+          {
+            "itemId": "english-a1-m067-speaking-ex01-i04",
+            "position": 4,
+            "prompt": "Say a sentence about this situation: Leo en mi tiempo libre.",
+            "modelAnswer": "I read in my free time.",
+            "evaluation": {
+              "type": "transcription_feedback",
+              "transcriptionSeparateFromPronunciation": true
+            }
+          },
+          {
+            "itemId": "english-a1-m067-speaking-ex01-i05",
+            "position": 5,
+            "prompt": "Say a sentence about this situation: Me gusta el tenis porque es divertido.",
+            "modelAnswer": "I like tennis because it is fun.",
+            "evaluation": {
+              "type": "transcription_feedback",
+              "transcriptionSeparateFromPronunciation": true
+            }
+          },
+          {
+            "itemId": "english-a1-m067-speaking-ex01-i06",
+            "position": 6,
+            "prompt": "Say a sentence about this situation: La música es interesante.",
+            "modelAnswer": "Music is interesting.",
+            "evaluation": {
+              "type": "transcription_feedback",
+              "transcriptionSeparateFromPronunciation": true
+            }
+          },
+          {
+            "itemId": "english-a1-m067-speaking-ex01-i07",
+            "position": 7,
+            "prompt": "Say a sentence about this situation: Mi afición favorita es leer.",
+            "modelAnswer": "My favourite hobby is reading.",
+            "evaluation": {
+              "type": "transcription_feedback",
+              "transcriptionSeparateFromPronunciation": true
+            }
+          },
+          {
+            "itemId": "english-a1-m067-speaking-ex01-i08",
+            "position": 8,
+            "prompt": "Say a sentence about this situation: Disfruto dibujando.",
+            "modelAnswer": "I enjoy drawing.",
+            "evaluation": {
+              "type": "transcription_feedback",
+              "transcriptionSeparateFromPronunciation": true
+            }
+          },
+          {
+            "itemId": "english-a1-m067-speaking-ex01-i09",
+            "position": 9,
+            "prompt": "Say a sentence about this situation: La fotografía es mi afición.",
+            "modelAnswer": "Photography is my hobby.",
+            "evaluation": {
+              "type": "transcription_feedback",
+              "transcriptionSeparateFromPronunciation": true
+            }
+          },
+          {
+            "itemId": "english-a1-m067-speaking-ex01-i10",
+            "position": 10,
+            "prompt": "Say a sentence about this situation: Leo en mi tiempo libre.",
+            "modelAnswer": "I read in my free time.",
+            "evaluation": {
+              "type": "transcription_feedback",
+              "transcriptionSeparateFromPronunciation": true
+            }
+          }
+        ]
+      }
+    },
+    {
+      "sectionId": "english-a1-m067-listening",
+      "sectionKey": "listening",
+      "position": 8,
+      "title": "listening",
+      "exercise": {
+        "exerciseId": "english-a1-m067-listening-ex01",
+        "type": "listening_gap_fill",
+        "items": [
+          {
+            "itemId": "english-a1-m067-listening-ex01-i01",
+            "position": 1,
+            "gapToken": "[[gap-01]]",
+            "expectedWordId": "english-a1-m067-listening-word-01"
+          },
+          {
+            "itemId": "english-a1-m067-listening-ex01-i02",
+            "position": 2,
+            "gapToken": "[[gap-02]]",
+            "expectedWordId": "english-a1-m067-listening-word-02"
+          },
+          {
+            "itemId": "english-a1-m067-listening-ex01-i03",
+            "position": 3,
+            "gapToken": "[[gap-03]]",
+            "expectedWordId": "english-a1-m067-listening-word-03"
+          },
+          {
+            "itemId": "english-a1-m067-listening-ex01-i04",
+            "position": 4,
+            "gapToken": "[[gap-04]]",
+            "expectedWordId": "english-a1-m067-listening-word-04"
+          },
+          {
+            "itemId": "english-a1-m067-listening-ex01-i05",
+            "position": 5,
+            "gapToken": "[[gap-05]]",
+            "expectedWordId": "english-a1-m067-listening-word-05"
+          },
+          {
+            "itemId": "english-a1-m067-listening-ex01-i06",
+            "position": 6,
+            "gapToken": "[[gap-06]]",
+            "expectedWordId": "english-a1-m067-listening-word-06"
+          },
+          {
+            "itemId": "english-a1-m067-listening-ex01-i7",
+            "position": 7,
+            "gapToken": "[[gap-07]]",
+            "expectedWordId": "english-a1-m067-listening-word-7"
+          },
+          {
+            "itemId": "english-a1-m067-listening-ex01-i8",
+            "position": 8,
+            "gapToken": "[[gap-08]]",
+            "expectedWordId": "english-a1-m067-listening-word-8"
+          },
+          {
+            "itemId": "english-a1-m067-listening-ex01-i9",
+            "position": 9,
+            "gapToken": "[[gap-09]]",
+            "expectedWordId": "english-a1-m067-listening-word-9"
+          },
+          {
+            "itemId": "english-a1-m067-listening-ex01-i10",
+            "position": 10,
+            "gapToken": "[[gap-10]]",
+            "expectedWordId": "english-a1-m067-listening-word-10"
+          }
+        ],
+        "content": {
+          "audio": "tts:en-GB:The key words for My Favourite Hobby are: favourite, enjoy, hobby, free time, because, interesting, creative, collect, photograph, board game. Listen and repeat each word carefully.",
+          "audioLocale": "en-GB",
+          "transcriptTemplate": "The key words for My Favourite Hobby are: [[gap-01]], [[gap-02]], [[gap-03]], [[gap-04]], [[gap-05]], [[gap-06]], [[gap-07]], [[gap-08]], [[gap-09]], [[gap-10]]. Listen and repeat each word carefully.",
+          "wordBank": [
+            {
+              "wordId": "english-a1-m067-listening-word-01",
+              "word": "favourite"
+            },
+            {
+              "wordId": "english-a1-m067-listening-word-02",
+              "word": "enjoy"
+            },
+            {
+              "wordId": "english-a1-m067-listening-word-03",
+              "word": "hobby"
+            },
+            {
+              "wordId": "english-a1-m067-listening-word-04",
+              "word": "free time"
+            },
+            {
+              "wordId": "english-a1-m067-listening-word-05",
+              "word": "because"
+            },
+            {
+              "wordId": "english-a1-m067-listening-word-06",
+              "word": "interesting"
+            },
+            {
+              "wordId": "english-a1-m067-listening-word-7",
+              "word": "creative"
+            },
+            {
+              "wordId": "english-a1-m067-listening-word-8",
+              "word": "collect"
+            },
+            {
+              "wordId": "english-a1-m067-listening-word-9",
+              "word": "photograph"
+            },
+            {
+              "wordId": "english-a1-m067-listening-word-10",
+              "word": "board game"
+            }
+          ],
+          "interaction": "select_place_move_replace"
+        }
+      }
+    }
+  ]
+}
