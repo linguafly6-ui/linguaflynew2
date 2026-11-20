@@ -99,26 +99,29 @@
           }
         ],
         "theory": {
-          "title": "Imperativos: Start / Stop; nombres sencillos",
-          "explanation": "Usamos «Start» para indicar que una actividad empieza y «Stop» para indicar que debe parar. Como en otras instrucciones, el verbo va al principio y usamos su forma básica.",
+          "title": "Instrucciones y deportes",
+          "explanation": "Usa «Start!» para comenzar y «Stop!» para parar. Para hablar del juego, puedes decir «The game starts now».",
           "patterns": [
             {
               "label": "Modelo",
-              "pattern": "Start the game. Stop the ball.",
+              "pattern": "Start the game!",
               "examples": [
-                "Start the game. Stop the ball.",
-                "Start the game."
+                "Start the game!",
+                "Stop the ball!",
+                "Our team can win."
               ]
             },
             {
               "label": "Práctica",
-              "pattern": "Escucha o lee la regla y elige la instrucción correcta para el juego.",
+              "pattern": "Lee la frase, escucha el modelo y crea una frase parecida.",
               "examples": [
-                "Start the game."
+                "Start the game!",
+                "Stop the ball!",
+                "Our team can win."
               ]
             }
           ],
-          "tip": "Lee el ejemplo y observa cómo se usa el vocabulario en una frase."
+          "tip": "Escucha y repite. Fíjate en el orden de las palabras y usa el modelo para hablar."
         }
       }
     },
@@ -892,112 +895,112 @@
           {
             "itemId": "english-pre-a1-m042-speaking-ex01-i01",
             "position": 1,
-            "prompt": "Say the word “ball”.",
+            "prompt": "Say a short sentence about “ball”. Use the model if you need help.",
             "audio": "tts:en-GB:ball",
             "evaluation": {
               "type": "transcription_feedback",
               "transcriptionSeparateFromPronunciation": true
             },
-            "modelAnswer": "ball"
+            "modelAnswer": "I have a ball."
           },
           {
             "itemId": "english-pre-a1-m042-speaking-ex01-i02",
             "position": 2,
-            "prompt": "Make a sentence with “racket”.",
+            "prompt": "Say a short sentence about “racket”. Use the model if you need help.",
             "audio": "tts:en-GB:I can see racket.",
             "evaluation": {
               "type": "transcription_feedback",
               "transcriptionSeparateFromPronunciation": true
             },
-            "modelAnswer": "I can see racket."
+            "modelAnswer": "I have a racket."
           },
           {
             "itemId": "english-pre-a1-m042-speaking-ex01-i03",
             "position": 3,
-            "prompt": "Say the word “goal”.",
+            "prompt": "Say a short sentence about “goal”. Use the model if you need help.",
             "audio": "tts:en-GB:goal",
             "evaluation": {
               "type": "transcription_feedback",
               "transcriptionSeparateFromPronunciation": true
             },
-            "modelAnswer": "goal"
+            "modelAnswer": "The goal is near the field."
           },
           {
             "itemId": "english-pre-a1-m042-speaking-ex01-i04",
             "position": 4,
-            "prompt": "Make a sentence with “team”.",
+            "prompt": "Say a short sentence about “team”. Use the model if you need help.",
             "audio": "tts:en-GB:I can see team.",
             "evaluation": {
               "type": "transcription_feedback",
               "transcriptionSeparateFromPronunciation": true
             },
-            "modelAnswer": "I can see team."
+            "modelAnswer": "My team is ready."
           },
           {
             "itemId": "english-pre-a1-m042-speaking-ex01-i05",
             "position": 5,
-            "prompt": "Say the word “win”.",
+            "prompt": "Say a short sentence about “win”. Use the model if you need help.",
             "audio": "tts:en-GB:win",
             "evaluation": {
               "type": "transcription_feedback",
               "transcriptionSeparateFromPronunciation": true
             },
-            "modelAnswer": "win"
+            "modelAnswer": "I want to win."
           },
           {
             "itemId": "english-pre-a1-m042-speaking-ex01-i06",
             "position": 6,
-            "prompt": "Make a sentence with “start”.",
+            "prompt": "Say a short sentence about “start”. Use the model if you need help.",
             "audio": "tts:en-GB:I can see start.",
             "evaluation": {
               "type": "transcription_feedback",
               "transcriptionSeparateFromPronunciation": true
             },
-            "modelAnswer": "I can see start."
+            "modelAnswer": "Start the game."
           },
           {
             "itemId": "english-pre-a1-m042-speaking-ex01-i07",
             "position": 7,
-            "prompt": "Say the word “stop”.",
+            "prompt": "Say a short sentence about “stop”. Use the model if you need help.",
             "audio": "tts:en-GB:stop",
             "evaluation": {
               "type": "transcription_feedback",
               "transcriptionSeparateFromPronunciation": true
             },
-            "modelAnswer": "stop"
+            "modelAnswer": "Stop the ball."
           },
           {
             "itemId": "english-pre-a1-m042-speaking-ex01-i08",
             "position": 8,
-            "prompt": "Make a sentence with “medal”.",
+            "prompt": "Say a short sentence about “medal”. Use the model if you need help.",
             "audio": "tts:en-GB:I can see medal.",
             "evaluation": {
               "type": "transcription_feedback",
               "transcriptionSeparateFromPronunciation": true
             },
-            "modelAnswer": "I can see medal."
+            "modelAnswer": "I have a medal."
           },
           {
             "itemId": "english-pre-a1-m042-speaking-ex01-i09",
             "position": 9,
-            "prompt": "Say the word “player”.",
+            "prompt": "Say a short sentence about “player”. Use the model if you need help.",
             "audio": "tts:en-GB:player",
             "evaluation": {
               "type": "transcription_feedback",
               "transcriptionSeparateFromPronunciation": true
             },
-            "modelAnswer": "player"
+            "modelAnswer": "I am a player."
           },
           {
             "itemId": "english-pre-a1-m042-speaking-ex01-i10",
             "position": 10,
-            "prompt": "Make a sentence with “race”.",
+            "prompt": "Say a short sentence about “race”. Use the model if you need help.",
             "audio": "tts:en-GB:I can see race.",
             "evaluation": {
               "type": "transcription_feedback",
               "transcriptionSeparateFromPronunciation": true
             },
-            "modelAnswer": "I can see race."
+            "modelAnswer": "I run in a race."
           }
         ]
       }
@@ -1016,8 +1019,7 @@
             "evaluation": {
               "type": "word_bank"
             },
-            "gapToken": "[[gap-01]]",
-            "expectedWordId": "english-pre-a1-m042-listening-word-01"
+            "gapToken": "[[gap-01]]"
           },
           {
             "itemId": "english-pre-a1-m042-listening-ex01-i02",
@@ -1025,8 +1027,7 @@
             "evaluation": {
               "type": "word_bank"
             },
-            "gapToken": "[[gap-02]]",
-            "expectedWordId": "english-pre-a1-m042-listening-word-02"
+            "gapToken": "[[gap-02]]"
           },
           {
             "itemId": "english-pre-a1-m042-listening-ex01-i03",
@@ -1034,8 +1035,7 @@
             "evaluation": {
               "type": "word_bank"
             },
-            "gapToken": "[[gap-03]]",
-            "expectedWordId": "english-pre-a1-m042-listening-word-03"
+            "gapToken": "[[gap-03]]"
           },
           {
             "itemId": "english-pre-a1-m042-listening-ex01-i04",
@@ -1043,8 +1043,7 @@
             "evaluation": {
               "type": "word_bank"
             },
-            "gapToken": "[[gap-04]]",
-            "expectedWordId": "english-pre-a1-m042-listening-word-04"
+            "gapToken": "[[gap-04]]"
           },
           {
             "itemId": "english-pre-a1-m042-listening-ex01-i05",
@@ -1052,8 +1051,7 @@
             "evaluation": {
               "type": "word_bank"
             },
-            "gapToken": "[[gap-05]]",
-            "expectedWordId": "english-pre-a1-m042-listening-word-05"
+            "gapToken": "[[gap-05]]"
           },
           {
             "itemId": "english-pre-a1-m042-listening-ex01-i06",
@@ -1061,8 +1059,7 @@
             "evaluation": {
               "type": "word_bank"
             },
-            "gapToken": "[[gap-06]]",
-            "expectedWordId": "english-pre-a1-m042-listening-word-06"
+            "gapToken": "[[gap-06]]"
           },
           {
             "itemId": "english-pre-a1-m042-listening-ex01-i07",
@@ -1070,8 +1067,7 @@
             "evaluation": {
               "type": "word_bank"
             },
-            "gapToken": "[[gap-07]]",
-            "expectedWordId": "english-pre-a1-m042-listening-word-07"
+            "gapToken": "[[gap-07]]"
           },
           {
             "itemId": "english-pre-a1-m042-listening-ex01-i08",
@@ -1079,8 +1075,7 @@
             "evaluation": {
               "type": "word_bank"
             },
-            "gapToken": "[[gap-08]]",
-            "expectedWordId": "english-pre-a1-m042-listening-word-08"
+            "gapToken": "[[gap-08]]"
           },
           {
             "itemId": "english-pre-a1-m042-listening-ex01-i09",
@@ -1088,8 +1083,7 @@
             "evaluation": {
               "type": "word_bank"
             },
-            "gapToken": "[[gap-09]]",
-            "expectedWordId": "english-pre-a1-m042-listening-word-09"
+            "gapToken": "[[gap-09]]"
           },
           {
             "itemId": "english-pre-a1-m042-listening-ex01-i10",
@@ -1097,14 +1091,13 @@
             "evaluation": {
               "type": "word_bank"
             },
-            "gapToken": "[[gap-10]]",
-            "expectedWordId": "english-pre-a1-m042-listening-word-10"
+            "gapToken": "[[gap-10]]"
           }
         ],
         "content": {
-          "audio": "tts:en-GB:Welcome to At the Sports Day. Word 1: ball. Word 2: racket. Word 3: goal. Word 4: team. Word 5: win. Word 6: start. Word 7: stop. Word 8: medal. Word 9: player. Word 10: race. Thank you for listening.",
+          "audio": "tts:en-GB:At Sports Day, each team has a ball. A player has a racket. The teacher says, 'Start the game!' The teams try to win. The ball goes near the goal. The teacher says, 'Stop!' The winner gets a medal. Then the players run a race.",
           "audioLocale": "en-GB",
-          "transcriptTemplate": "Welcome to At the Sports Day. Word 1: [[gap-01]]. Word 2: [[gap-02]]. Word 3: [[gap-03]]. Word 4: [[gap-04]]. Word 5: [[gap-05]]. Word 6: [[gap-06]]. Word 7: [[gap-07]]. Word 8: [[gap-08]]. Word 9: [[gap-09]]. Word 10: [[gap-10]]. Thank you for listening.",
+          "transcriptTemplate": "At Sports Day, each [[gap-04]] has a [[gap-01]]. A [[gap-09]] has a [[gap-02]]. The teacher says, '[[gap-06]] the game!' The teams try to [[gap-05]]. The ball goes near the [[gap-03]]. The teacher says, '[[gap-07]]!' The winner gets a [[gap-08]]. Then the players run a [[gap-10]].",
           "wordBank": [
             {
               "wordId": "english-pre-a1-m042-listening-word-01",

@@ -99,26 +99,29 @@
           }
         ],
         "theory": {
-          "title": "Imperativos y verbos de naturaleza en presente simple",
-          "explanation": "Usamos el imperativo para dar una instrucción: «Water the flower». Para contar algo que ocurre en la naturaleza, usamos una frase sencilla: «Seeds grow». En esta misión practicamos acciones cortas del jardín.",
+          "title": "Plantas y jardín",
+          "explanation": "Usa el imperativo para dar instrucciones: «Water the plant». Para describir la naturaleza, di «Seeds grow».",
           "patterns": [
             {
               "label": "Modelo",
-              "pattern": "Water the flower. Seeds grow.",
+              "pattern": "Water the flower.",
               "examples": [
-                "Water the flower. Seeds grow.",
-                "Water the flower."
+                "Water the flower.",
+                "Seeds grow.",
+                "The grass is green."
               ]
             },
             {
               "label": "Práctica",
-              "pattern": "Relaciona cada instrucción con la imagen y completa una frase sobre las plantas.",
+              "pattern": "Lee la frase, escucha el modelo y crea una frase parecida.",
               "examples": [
-                "Water the flower."
+                "Water the flower.",
+                "Seeds grow.",
+                "The grass is green."
               ]
             }
           ],
-          "tip": "Lee el ejemplo y observa cómo se usa el vocabulario en una frase."
+          "tip": "Escucha y repite. Fíjate en el orden de las palabras y usa el modelo para hablar."
         }
       }
     },
@@ -489,7 +492,7 @@
           {
             "itemId": "english-pre-a1-m048-grammar-ex01-i06",
             "position": 6,
-            "prompt": "Complete: Seeds ___.",
+            "prompt": "Complete: Flowers ___ in spring.",
             "evaluation": {
               "type": "single_choice"
             },
@@ -892,112 +895,112 @@
           {
             "itemId": "english-pre-a1-m048-speaking-ex01-i01",
             "position": 1,
-            "prompt": "Say the word “tree”.",
+            "prompt": "Say a short sentence about “tree”. Use the model if you need help.",
             "audio": "tts:en-GB:tree",
             "evaluation": {
               "type": "transcription_feedback",
               "transcriptionSeparateFromPronunciation": true
             },
-            "modelAnswer": "tree"
+            "modelAnswer": "The tree is tall."
           },
           {
             "itemId": "english-pre-a1-m048-speaking-ex01-i02",
             "position": 2,
-            "prompt": "Make a sentence with “flower”.",
+            "prompt": "Say a short sentence about “flower”. Use the model if you need help.",
             "audio": "tts:en-GB:I can see flower.",
             "evaluation": {
               "type": "transcription_feedback",
               "transcriptionSeparateFromPronunciation": true
             },
-            "modelAnswer": "I can see flower."
+            "modelAnswer": "The flower is red."
           },
           {
             "itemId": "english-pre-a1-m048-speaking-ex01-i03",
             "position": 3,
-            "prompt": "Say the word “grass”.",
+            "prompt": "Say a short sentence about “grass”. Use the model if you need help.",
             "audio": "tts:en-GB:grass",
             "evaluation": {
               "type": "transcription_feedback",
               "transcriptionSeparateFromPronunciation": true
             },
-            "modelAnswer": "grass"
+            "modelAnswer": "The grass is green."
           },
           {
             "itemId": "english-pre-a1-m048-speaking-ex01-i04",
             "position": 4,
-            "prompt": "Make a sentence with “seed”.",
+            "prompt": "Say a short sentence about “seed”. Use the model if you need help.",
             "audio": "tts:en-GB:I can see seed.",
             "evaluation": {
               "type": "transcription_feedback",
               "transcriptionSeparateFromPronunciation": true
             },
-            "modelAnswer": "I can see seed."
+            "modelAnswer": "I plant a seed."
           },
           {
             "itemId": "english-pre-a1-m048-speaking-ex01-i05",
             "position": 5,
-            "prompt": "Say the word “leaf”.",
+            "prompt": "Say a short sentence about “leaf”. Use the model if you need help.",
             "audio": "tts:en-GB:leaf",
             "evaluation": {
               "type": "transcription_feedback",
               "transcriptionSeparateFromPronunciation": true
             },
-            "modelAnswer": "leaf"
+            "modelAnswer": "The leaf is green."
           },
           {
             "itemId": "english-pre-a1-m048-speaking-ex01-i06",
             "position": 6,
-            "prompt": "Make a sentence with “water”.",
+            "prompt": "Say a short sentence about “water”. Use the model if you need help.",
             "audio": "tts:en-GB:I can see water.",
             "evaluation": {
               "type": "transcription_feedback",
               "transcriptionSeparateFromPronunciation": true
             },
-            "modelAnswer": "I can see water."
+            "modelAnswer": "Water the plant, please."
           },
           {
             "itemId": "english-pre-a1-m048-speaking-ex01-i07",
             "position": 7,
-            "prompt": "Say the word “grow”.",
+            "prompt": "Say a short sentence about “grow”. Use the model if you need help.",
             "audio": "tts:en-GB:grow",
             "evaluation": {
               "type": "transcription_feedback",
               "transcriptionSeparateFromPronunciation": true
             },
-            "modelAnswer": "grow"
+            "modelAnswer": "Plants grow in the sun."
           },
           {
             "itemId": "english-pre-a1-m048-speaking-ex01-i08",
             "position": 8,
-            "prompt": "Make a sentence with “soil”.",
+            "prompt": "Say a short sentence about “soil”. Use the model if you need help.",
             "audio": "tts:en-GB:I can see soil.",
             "evaluation": {
               "type": "transcription_feedback",
               "transcriptionSeparateFromPronunciation": true
             },
-            "modelAnswer": "I can see soil."
+            "modelAnswer": "The seed is in the soil."
           },
           {
             "itemId": "english-pre-a1-m048-speaking-ex01-i09",
             "position": 9,
-            "prompt": "Say the word “sun”.",
+            "prompt": "Say a short sentence about “sun”. Use the model if you need help.",
             "audio": "tts:en-GB:sun",
             "evaluation": {
               "type": "transcription_feedback",
               "transcriptionSeparateFromPronunciation": true
             },
-            "modelAnswer": "sun"
+            "modelAnswer": "The sun is bright."
           },
           {
             "itemId": "english-pre-a1-m048-speaking-ex01-i10",
             "position": 10,
-            "prompt": "Make a sentence with “plant”.",
+            "prompt": "Say a short sentence about “plant”. Use the model if you need help.",
             "audio": "tts:en-GB:I can see plant.",
             "evaluation": {
               "type": "transcription_feedback",
               "transcriptionSeparateFromPronunciation": true
             },
-            "modelAnswer": "I can see plant."
+            "modelAnswer": "I water the plant."
           }
         ]
       }
@@ -1016,8 +1019,7 @@
             "evaluation": {
               "type": "word_bank"
             },
-            "gapToken": "[[gap-01]]",
-            "expectedWordId": "english-pre-a1-m048-listening-word-01"
+            "gapToken": "[[gap-01]]"
           },
           {
             "itemId": "english-pre-a1-m048-listening-ex01-i02",
@@ -1025,8 +1027,7 @@
             "evaluation": {
               "type": "word_bank"
             },
-            "gapToken": "[[gap-02]]",
-            "expectedWordId": "english-pre-a1-m048-listening-word-02"
+            "gapToken": "[[gap-02]]"
           },
           {
             "itemId": "english-pre-a1-m048-listening-ex01-i03",
@@ -1034,8 +1035,7 @@
             "evaluation": {
               "type": "word_bank"
             },
-            "gapToken": "[[gap-03]]",
-            "expectedWordId": "english-pre-a1-m048-listening-word-03"
+            "gapToken": "[[gap-03]]"
           },
           {
             "itemId": "english-pre-a1-m048-listening-ex01-i04",
@@ -1043,8 +1043,7 @@
             "evaluation": {
               "type": "word_bank"
             },
-            "gapToken": "[[gap-04]]",
-            "expectedWordId": "english-pre-a1-m048-listening-word-04"
+            "gapToken": "[[gap-04]]"
           },
           {
             "itemId": "english-pre-a1-m048-listening-ex01-i05",
@@ -1052,8 +1051,7 @@
             "evaluation": {
               "type": "word_bank"
             },
-            "gapToken": "[[gap-05]]",
-            "expectedWordId": "english-pre-a1-m048-listening-word-05"
+            "gapToken": "[[gap-05]]"
           },
           {
             "itemId": "english-pre-a1-m048-listening-ex01-i06",
@@ -1061,8 +1059,7 @@
             "evaluation": {
               "type": "word_bank"
             },
-            "gapToken": "[[gap-06]]",
-            "expectedWordId": "english-pre-a1-m048-listening-word-06"
+            "gapToken": "[[gap-06]]"
           },
           {
             "itemId": "english-pre-a1-m048-listening-ex01-i07",
@@ -1070,8 +1067,7 @@
             "evaluation": {
               "type": "word_bank"
             },
-            "gapToken": "[[gap-07]]",
-            "expectedWordId": "english-pre-a1-m048-listening-word-07"
+            "gapToken": "[[gap-07]]"
           },
           {
             "itemId": "english-pre-a1-m048-listening-ex01-i08",
@@ -1079,8 +1075,7 @@
             "evaluation": {
               "type": "word_bank"
             },
-            "gapToken": "[[gap-08]]",
-            "expectedWordId": "english-pre-a1-m048-listening-word-08"
+            "gapToken": "[[gap-08]]"
           },
           {
             "itemId": "english-pre-a1-m048-listening-ex01-i09",
@@ -1088,8 +1083,7 @@
             "evaluation": {
               "type": "word_bank"
             },
-            "gapToken": "[[gap-09]]",
-            "expectedWordId": "english-pre-a1-m048-listening-word-09"
+            "gapToken": "[[gap-09]]"
           },
           {
             "itemId": "english-pre-a1-m048-listening-ex01-i10",
@@ -1097,14 +1091,13 @@
             "evaluation": {
               "type": "word_bank"
             },
-            "gapToken": "[[gap-10]]",
-            "expectedWordId": "english-pre-a1-m048-listening-word-10"
+            "gapToken": "[[gap-10]]"
           }
         ],
         "content": {
-          "audio": "tts:en-GB:Welcome to In the Garden. Word 1: tree. Word 2: flower. Word 3: grass. Word 4: seed. Word 5: leaf. Word 6: water. Word 7: grow. Word 8: soil. Word 9: sun. Word 10: plant. Thank you for listening.",
+          "audio": "tts:en-GB:In the garden, the plant grows in the soil. I put a seed in the soil. The tree is tall. The flower is red. The grass is green. A leaf is on the plant. The sun is bright. I water the plant. It will grow.",
           "audioLocale": "en-GB",
-          "transcriptTemplate": "Welcome to In the Garden. Word 1: [[gap-01]]. Word 2: [[gap-02]]. Word 3: [[gap-03]]. Word 4: [[gap-04]]. Word 5: [[gap-05]]. Word 6: [[gap-06]]. Word 7: [[gap-07]]. Word 8: [[gap-08]]. Word 9: [[gap-09]]. Word 10: [[gap-10]]. Thank you for listening.",
+          "transcriptTemplate": "In the garden, the [[gap-10]] grows in the [[gap-08]]. I put a [[gap-04]] in the soil. The [[gap-01]] is tall. The [[gap-02]] is red. The [[gap-03]] is green. A [[gap-05]] is on the plant. The [[gap-09]] is bright. I [[gap-06]] the plant. It will [[gap-07]].",
           "wordBank": [
             {
               "wordId": "english-pre-a1-m048-listening-word-01",
