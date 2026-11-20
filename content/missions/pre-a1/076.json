@@ -99,28 +99,29 @@
           }
         ],
         "theory": {
-          "title": "Frases y vocabulario de la misión",
-          "explanation": "Observa el orden de las palabras en las frases y relaciona cada expresión con su significado en español.",
+          "title": "En la playa",
+          "explanation": "Usa «It is sunny» para describir el día y «I play… / I find…» para contar qué haces en la playa.",
           "patterns": [
             {
               "label": "Modelo",
-              "pattern": "Where is the sand?",
+              "pattern": "It is sunny.",
               "examples": [
-                "Where is the sand?",
-                "Where is the sea?",
-                "Where is the shell?"
+                "It is sunny.",
+                "I find a shell.",
+                "I play in the sand."
               ]
             },
             {
-              "label": "Traducción",
-              "pattern": "English sentence → significado en español",
+              "label": "Uso",
+              "pattern": "Lee la frase y usa el modelo para hablar de una situación parecida.",
               "examples": [
-                "Where is the beach?",
-                "Where is the sun?"
+                "It is sunny.",
+                "I find a shell.",
+                "I play in the sand."
               ]
             }
           ],
-          "tip": "Lee la frase completa antes de elegir la traducción."
+          "tip": "Lee la frase completa, escucha el modelo y repítelo en voz alta."
         }
       }
     },
@@ -426,131 +427,131 @@
           {
             "itemId": "english-pre-a1-m076-grammar-ex01-i01",
             "position": 1,
-            "prompt": "Elige la traducción correcta: “Where is the sand?”",
+            "prompt": "What is on the ground at the beach?",
             "evaluation": {
               "type": "single_choice"
             },
             "options": [
-              "¿Dónde está la arena?",
-              "¿Dónde está el mar?",
-              "¿Dónde está la concha?"
+              "Sand",
+              "A pillow",
+              "A ticket"
             ]
           },
           {
             "itemId": "english-pre-a1-m076-grammar-ex01-i02",
             "position": 2,
-            "prompt": "Elige la traducción correcta: “Where is the sea?”",
+            "prompt": "Where can you swim?",
             "evaluation": {
               "type": "single_choice"
             },
             "options": [
-              "¿Dónde está el mar?",
-              "¿Dónde está la concha?",
-              "¿Dónde está la playa?"
+              "In the sea",
+              "In a wardrobe",
+              "On a train"
             ]
           },
           {
             "itemId": "english-pre-a1-m076-grammar-ex01-i03",
             "position": 3,
-            "prompt": "Elige la traducción correcta: “Where is the shell?”",
+            "prompt": "What can you find on the beach?",
             "evaluation": {
               "type": "single_choice"
             },
             "options": [
-              "¿Dónde está la concha?",
-              "¿Dónde está la playa?",
-              "¿Dónde está el sol?"
+              "A shell",
+              "A shoe",
+              "A book"
             ]
           },
           {
             "itemId": "english-pre-a1-m076-grammar-ex01-i04",
             "position": 4,
-            "prompt": "Elige la traducción correcta: “Where is the beach?”",
+            "prompt": "Where do you play in the sand?",
             "evaluation": {
               "type": "single_choice"
             },
             "options": [
-              "¿Dónde está la playa?",
-              "¿Dónde está el sol?",
-              "¿Dónde está la sombrilla?"
+              "On the beach",
+              "At the station",
+              "In the bedroom"
             ]
           },
           {
             "itemId": "english-pre-a1-m076-grammar-ex01-i05",
             "position": 5,
-            "prompt": "Elige la traducción correcta: “Where is the sun?”",
+            "prompt": "What shines in the sky?",
             "evaluation": {
               "type": "single_choice"
             },
             "options": [
-              "¿Dónde está el sol?",
-              "¿Dónde está la sombrilla?",
-              "¿Dónde está la toalla?"
+              "The sun",
+              "A bucket",
+              "A spade"
             ]
           },
           {
             "itemId": "english-pre-a1-m076-grammar-ex01-i06",
             "position": 6,
-            "prompt": "Elige la traducción correcta: “Where is the umbrella?”",
+            "prompt": "What gives you shade?",
             "evaluation": {
               "type": "single_choice"
             },
             "options": [
-              "¿Dónde está la sombrilla?",
-              "¿Dónde está la toalla?",
-              "¿Dónde está el cubo?"
+              "An umbrella",
+              "A shell",
+              "A wave"
             ]
           },
           {
             "itemId": "english-pre-a1-m076-grammar-ex01-i07",
             "position": 7,
-            "prompt": "Elige la traducción correcta: “Where is the towel?”",
+            "prompt": "What do you dry yourself with?",
             "evaluation": {
               "type": "single_choice"
             },
             "options": [
-              "¿Dónde está la toalla?",
-              "¿Dónde está el cubo?",
-              "¿Dónde está la pala?"
+              "A towel",
+              "A bucket",
+              "A spade"
             ]
           },
           {
             "itemId": "english-pre-a1-m076-grammar-ex01-i08",
             "position": 8,
-            "prompt": "Elige la traducción correcta: “Where is the bucket?”",
+            "prompt": "What can you put sand in?",
             "evaluation": {
               "type": "single_choice"
             },
             "options": [
-              "¿Dónde está el cubo?",
-              "¿Dónde está la pala?",
-              "¿Dónde está la ola?"
+              "A bucket",
+              "A towel",
+              "An umbrella"
             ]
           },
           {
             "itemId": "english-pre-a1-m076-grammar-ex01-i09",
             "position": 9,
-            "prompt": "Elige la traducción correcta: “Where is the spade?”",
+            "prompt": "What can you use to dig in the sand?",
             "evaluation": {
               "type": "single_choice"
             },
             "options": [
-              "¿Dónde está la pala?",
-              "¿Dónde está la ola?",
-              "¿Dónde está la arena?"
+              "A spade",
+              "A shell",
+              "A wave"
             ]
           },
           {
             "itemId": "english-pre-a1-m076-grammar-ex01-i10",
             "position": 10,
-            "prompt": "Elige la traducción correcta: “Where is the wave?”",
+            "prompt": "What moves towards the beach?",
             "evaluation": {
               "type": "single_choice"
             },
             "options": [
-              "¿Dónde está la ola?",
-              "¿Dónde está la arena?",
-              "¿Dónde está el mar?"
+              "A wave",
+              "A bucket",
+              "A towel"
             ]
           }
         ]
@@ -656,137 +657,137 @@
         "type": "reading_comprehension",
         "content": {
           "passageId": "english-pre-a1-m076-reading-passage-01",
-          "passage": "I like the sand. I like the sea. I like the shell. I like the beach. I like the sun. I like the umbrella. I like the towel. I like the bucket. I like the spade. I like the wave."
+          "passage": "It is a sunny day at the beach. The sun is hot. I play in the sand. I find a shell near the sea. I sit under an umbrella on a towel. I use a bucket and a spade to make a sandcastle. A big wave comes to the beach."
         },
         "items": [
           {
             "itemId": "english-pre-a1-m076-reading-ex01-i01",
             "position": 1,
-            "prompt": "¿Qué significa “I like the sand.”?",
+            "prompt": "Where is the speaker?",
             "evaluation": {
               "type": "single_choice"
             },
             "options": [
-              "Me gusta la arena.",
-              "Me gusta el mar.",
-              "Me gusta la concha."
+              "At the beach",
+              "At the hospital",
+              "At the station"
             ]
           },
           {
             "itemId": "english-pre-a1-m076-reading-ex01-i02",
             "position": 2,
-            "prompt": "¿Qué significa “I like the sea.”?",
+            "prompt": "What is the weather like?",
             "evaluation": {
               "type": "single_choice"
             },
             "options": [
-              "Me gusta el mar.",
-              "Me gusta la concha.",
-              "Me gusta la playa."
+              "Sunny",
+              "Rainy",
+              "Snowy"
             ]
           },
           {
             "itemId": "english-pre-a1-m076-reading-ex01-i03",
             "position": 3,
-            "prompt": "¿Qué significa “I like the shell.”?",
+            "prompt": "What does the speaker find?",
             "evaluation": {
               "type": "single_choice"
             },
             "options": [
-              "Me gusta la concha.",
-              "Me gusta la playa.",
-              "Me gusta el sol."
+              "A shell",
+              "A ticket",
+              "A pillow"
             ]
           },
           {
             "itemId": "english-pre-a1-m076-reading-ex01-i04",
             "position": 4,
-            "prompt": "¿Qué significa “I like the beach.”?",
+            "prompt": "Where is the shell?",
             "evaluation": {
               "type": "single_choice"
             },
             "options": [
-              "Me gusta la playa.",
-              "Me gusta el sol.",
-              "Me gusta la sombrilla."
+              "Near the sea",
+              "In a wardrobe",
+              "On a train"
             ]
           },
           {
             "itemId": "english-pre-a1-m076-reading-ex01-i05",
             "position": 5,
-            "prompt": "¿Qué significa “I like the sun.”?",
+            "prompt": "Where does the speaker sit?",
             "evaluation": {
               "type": "single_choice"
             },
             "options": [
-              "Me gusta el sol.",
-              "Me gusta la sombrilla.",
-              "Me gusta la toalla."
+              "Under an umbrella",
+              "On a platform",
+              "In a cinema"
             ]
           },
           {
             "itemId": "english-pre-a1-m076-reading-ex01-i06",
             "position": 6,
-            "prompt": "¿Qué significa “I like the umbrella.”?",
+            "prompt": "What does the speaker sit on?",
             "evaluation": {
               "type": "single_choice"
             },
             "options": [
-              "Me gusta la sombrilla.",
-              "Me gusta la toalla.",
-              "Me gusta el cubo."
+              "A towel",
+              "A blanket",
+              "A seat"
             ]
           },
           {
             "itemId": "english-pre-a1-m076-reading-ex01-i07",
             "position": 7,
-            "prompt": "¿Qué significa “I like the towel.”?",
+            "prompt": "What does the speaker use to carry sand?",
             "evaluation": {
               "type": "single_choice"
             },
             "options": [
-              "Me gusta la toalla.",
-              "Me gusta el cubo.",
-              "Me gusta la pala."
+              "A bucket",
+              "A suitcase",
+              "A basket"
             ]
           },
           {
             "itemId": "english-pre-a1-m076-reading-ex01-i08",
             "position": 8,
-            "prompt": "¿Qué significa “I like the bucket.”?",
+            "prompt": "What does the speaker use to dig?",
             "evaluation": {
               "type": "single_choice"
             },
             "options": [
-              "Me gusta el cubo.",
-              "Me gusta la pala.",
-              "Me gusta la ola."
+              "A spade",
+              "A ruler",
+              "A ticket"
             ]
           },
           {
             "itemId": "english-pre-a1-m076-reading-ex01-i09",
             "position": 9,
-            "prompt": "¿Qué significa “I like the spade.”?",
+            "prompt": "What comes to the beach?",
             "evaluation": {
               "type": "single_choice"
             },
             "options": [
-              "Me gusta la pala.",
-              "Me gusta la ola.",
-              "Me gusta la arena."
+              "A big wave",
+              "A train",
+              "A doctor"
             ]
           },
           {
             "itemId": "english-pre-a1-m076-reading-ex01-i10",
             "position": 10,
-            "prompt": "¿Qué significa “I like the wave.”?",
+            "prompt": "What is the text about?",
             "evaluation": {
               "type": "single_choice"
             },
             "options": [
-              "Me gusta la ola.",
-              "Me gusta la arena.",
-              "Me gusta el mar."
+              "A day at the beach",
+              "A day at school",
+              "A birthday party"
             ]
           }
         ]
@@ -894,8 +895,8 @@
           {
             "itemId": "english-pre-a1-m076-speaking-ex01-i01",
             "position": 1,
-            "prompt": "Say the word “sand”.",
-            "modelAnswer": "sand",
+            "prompt": "Say a short sentence about “sand”. Use the model if you need help.",
+            "modelAnswer": "The sand is warm.",
             "audio": "tts:en-GB:sand",
             "evaluation": {
               "type": "transcription_feedback",
@@ -905,8 +906,8 @@
           {
             "itemId": "english-pre-a1-m076-speaking-ex01-i02",
             "position": 2,
-            "prompt": "Say the word “sea”.",
-            "modelAnswer": "sea",
+            "prompt": "Say a short sentence about “sea”. Use the model if you need help.",
+            "modelAnswer": "The sea is blue.",
             "audio": "tts:en-GB:sea",
             "evaluation": {
               "type": "transcription_feedback",
@@ -916,8 +917,8 @@
           {
             "itemId": "english-pre-a1-m076-speaking-ex01-i03",
             "position": 3,
-            "prompt": "Say the word “shell”.",
-            "modelAnswer": "shell",
+            "prompt": "Say a short sentence about “shell”. Use the model if you need help.",
+            "modelAnswer": "I find a shell.",
             "audio": "tts:en-GB:shell",
             "evaluation": {
               "type": "transcription_feedback",
@@ -927,8 +928,8 @@
           {
             "itemId": "english-pre-a1-m076-speaking-ex01-i04",
             "position": 4,
-            "prompt": "Say the word “beach”.",
-            "modelAnswer": "beach",
+            "prompt": "Say a short sentence about “beach”. Use the model if you need help.",
+            "modelAnswer": "I am at the beach.",
             "audio": "tts:en-GB:beach",
             "evaluation": {
               "type": "transcription_feedback",
@@ -938,8 +939,8 @@
           {
             "itemId": "english-pre-a1-m076-speaking-ex01-i05",
             "position": 5,
-            "prompt": "Say the word “sun”.",
-            "modelAnswer": "sun",
+            "prompt": "Say a short sentence about “sun”. Use the model if you need help.",
+            "modelAnswer": "The sun is hot.",
             "audio": "tts:en-GB:sun",
             "evaluation": {
               "type": "transcription_feedback",
@@ -949,8 +950,8 @@
           {
             "itemId": "english-pre-a1-m076-speaking-ex01-i06",
             "position": 6,
-            "prompt": "Say the word “umbrella”.",
-            "modelAnswer": "umbrella",
+            "prompt": "Say a short sentence about “umbrella”. Use the model if you need help.",
+            "modelAnswer": "I sit under an umbrella.",
             "audio": "tts:en-GB:umbrella",
             "evaluation": {
               "type": "transcription_feedback",
@@ -960,8 +961,8 @@
           {
             "itemId": "english-pre-a1-m076-speaking-ex01-i07",
             "position": 7,
-            "prompt": "Say the word “towel”.",
-            "modelAnswer": "towel",
+            "prompt": "Say a short sentence about “towel”. Use the model if you need help.",
+            "modelAnswer": "My towel is dry.",
             "audio": "tts:en-GB:towel",
             "evaluation": {
               "type": "transcription_feedback",
@@ -971,8 +972,8 @@
           {
             "itemId": "english-pre-a1-m076-speaking-ex01-i08",
             "position": 8,
-            "prompt": "Say the word “bucket”.",
-            "modelAnswer": "bucket",
+            "prompt": "Say a short sentence about “bucket”. Use the model if you need help.",
+            "modelAnswer": "I have a bucket.",
             "audio": "tts:en-GB:bucket",
             "evaluation": {
               "type": "transcription_feedback",
@@ -982,8 +983,8 @@
           {
             "itemId": "english-pre-a1-m076-speaking-ex01-i09",
             "position": 9,
-            "prompt": "Say the word “spade”.",
-            "modelAnswer": "spade",
+            "prompt": "Say a short sentence about “spade”. Use the model if you need help.",
+            "modelAnswer": "I dig with a spade.",
             "audio": "tts:en-GB:spade",
             "evaluation": {
               "type": "transcription_feedback",
@@ -993,8 +994,8 @@
           {
             "itemId": "english-pre-a1-m076-speaking-ex01-i10",
             "position": 10,
-            "prompt": "Say the word “wave”.",
-            "modelAnswer": "wave",
+            "prompt": "Say a short sentence about “wave”. Use the model if you need help.",
+            "modelAnswer": "A wave is in the sea.",
             "audio": "tts:en-GB:wave",
             "evaluation": {
               "type": "transcription_feedback",
@@ -1012,9 +1013,9 @@
         "exerciseId": "english-pre-a1-m076-listening-ex01",
         "type": "listening_gap_fill",
         "content": {
-          "audio": "tts:en-GB:Listen and complete. This is the sand. This is the sea. This is the shell. This is the beach. This is the sun. This is the umbrella. This is the towel. This is the bucket. This is the spade. This is the wave.",
+          "audio": "tts:en-GB:It is a sunny day at the beach. The sun is hot. I play in the sand. I find a shell by the sea. I sit under an umbrella on a towel. I use a bucket and a spade to play. A big wave comes to the beach.",
           "audioLocale": "en-GB",
-          "transcriptTemplate": "Listen and complete. This is the [[gap-01]]. This is the [[gap-02]]. This is the [[gap-03]]. This is the [[gap-04]]. This is the [[gap-05]]. This is the [[gap-06]]. This is the [[gap-07]]. This is the [[gap-08]]. This is the [[gap-09]]. This is the [[gap-10]].",
+          "transcriptTemplate": "It is a sunny day at the [[gap-04]]. The [[gap-05]] is hot. I play in the [[gap-01]]. I find a [[gap-03]] by the [[gap-02]]. I sit under an [[gap-06]] on a [[gap-07]]. I use a [[gap-08]] and a [[gap-09]] to play. A big [[gap-10]] comes to the beach.",
           "wordBank": [
             {
               "wordId": "english-pre-a1-m076-listening-word-01",
@@ -1063,62 +1064,52 @@
           {
             "itemId": "english-pre-a1-m076-listening-ex01-i01",
             "position": 1,
-            "gapToken": "[[gap-01]]",
-            "expectedWordId": "english-pre-a1-m076-listening-word-01"
+            "gapToken": "[[gap-01]]"
           },
           {
             "itemId": "english-pre-a1-m076-listening-ex01-i02",
             "position": 2,
-            "gapToken": "[[gap-02]]",
-            "expectedWordId": "english-pre-a1-m076-listening-word-02"
+            "gapToken": "[[gap-02]]"
           },
           {
             "itemId": "english-pre-a1-m076-listening-ex01-i03",
             "position": 3,
-            "gapToken": "[[gap-03]]",
-            "expectedWordId": "english-pre-a1-m076-listening-word-03"
+            "gapToken": "[[gap-03]]"
           },
           {
             "itemId": "english-pre-a1-m076-listening-ex01-i04",
             "position": 4,
-            "gapToken": "[[gap-04]]",
-            "expectedWordId": "english-pre-a1-m076-listening-word-04"
+            "gapToken": "[[gap-04]]"
           },
           {
             "itemId": "english-pre-a1-m076-listening-ex01-i05",
             "position": 5,
-            "gapToken": "[[gap-05]]",
-            "expectedWordId": "english-pre-a1-m076-listening-word-05"
+            "gapToken": "[[gap-05]]"
           },
           {
             "itemId": "english-pre-a1-m076-listening-ex01-i06",
             "position": 6,
-            "gapToken": "[[gap-06]]",
-            "expectedWordId": "english-pre-a1-m076-listening-word-06"
+            "gapToken": "[[gap-06]]"
           },
           {
             "itemId": "english-pre-a1-m076-listening-ex01-i07",
             "position": 7,
-            "gapToken": "[[gap-07]]",
-            "expectedWordId": "english-pre-a1-m076-listening-word-07"
+            "gapToken": "[[gap-07]]"
           },
           {
             "itemId": "english-pre-a1-m076-listening-ex01-i08",
             "position": 8,
-            "gapToken": "[[gap-08]]",
-            "expectedWordId": "english-pre-a1-m076-listening-word-08"
+            "gapToken": "[[gap-08]]"
           },
           {
             "itemId": "english-pre-a1-m076-listening-ex01-i09",
             "position": 9,
-            "gapToken": "[[gap-09]]",
-            "expectedWordId": "english-pre-a1-m076-listening-word-09"
+            "gapToken": "[[gap-09]]"
           },
           {
             "itemId": "english-pre-a1-m076-listening-ex01-i10",
             "position": 10,
-            "gapToken": "[[gap-10]]",
-            "expectedWordId": "english-pre-a1-m076-listening-word-10"
+            "gapToken": "[[gap-10]]"
           }
         ]
       }
