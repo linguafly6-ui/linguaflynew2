@@ -1,0 +1,1119 @@
+{
+  "schemaVersion": "1.2.0",
+  "contentVersion": 1,
+  "course": {
+    "courseId": "english-pre-a1",
+    "level": "PRE-A1",
+    "language": "en-GB"
+  },
+  "unit": {
+    "unitId": "english-pre-a1-unit-11",
+    "courseId": "english-pre-a1",
+    "position": 11,
+    "title": "At the Playground"
+  },
+  "mission": {
+    "missionId": "english-pre-a1-m011",
+    "unitId": "english-pre-a1-unit-11",
+    "position": 11,
+    "title": "At the Playground"
+  },
+  "sections": [
+    {
+      "sectionId": "english-pre-a1-m011-explore",
+      "sectionKey": "explore",
+      "position": 1,
+      "exercise": {
+        "exerciseId": "english-pre-a1-m011-explore-ex01",
+        "type": "vocabulary_pairs",
+        "theory": {
+          "title": "At the Playground: words and simple English",
+          "explanation": "Learn ten useful words about at the playground. Listen to each British English model and repeat it.",
+          "patterns": [
+            {
+              "label": "Useful sentence",
+              "pattern": "Run to the gate.",
+              "examples": [
+                "I can run.",
+                "I can jump.",
+                "I can climb a tree."
+              ]
+            }
+          ],
+          "tip": "Say each new word aloud, then use it in a short sentence."
+        },
+        "items": [
+          {
+            "itemId": "english-pre-a1-m011-explore-ex01-i01",
+            "position": 1,
+            "english": "run",
+            "spanish": "correr",
+            "audio": "tts:en-GB:run"
+          },
+          {
+            "itemId": "english-pre-a1-m011-explore-ex01-i02",
+            "position": 2,
+            "english": "jump",
+            "spanish": "saltar",
+            "audio": "tts:en-GB:jump"
+          },
+          {
+            "itemId": "english-pre-a1-m011-explore-ex01-i03",
+            "position": 3,
+            "english": "climb",
+            "spanish": "trepar",
+            "audio": "tts:en-GB:climb"
+          },
+          {
+            "itemId": "english-pre-a1-m011-explore-ex01-i04",
+            "position": 4,
+            "english": "swing",
+            "spanish": "columpiarse",
+            "audio": "tts:en-GB:swing"
+          },
+          {
+            "itemId": "english-pre-a1-m011-explore-ex01-i05",
+            "position": 5,
+            "english": "slide",
+            "spanish": "deslizarse",
+            "audio": "tts:en-GB:slide"
+          },
+          {
+            "itemId": "english-pre-a1-m011-explore-ex01-i06",
+            "position": 6,
+            "english": "play",
+            "spanish": "jugar",
+            "audio": "tts:en-GB:play"
+          },
+          {
+            "itemId": "english-pre-a1-m011-explore-ex01-i07",
+            "position": 7,
+            "english": "stop",
+            "spanish": "parar",
+            "audio": "tts:en-GB:stop"
+          },
+          {
+            "itemId": "english-pre-a1-m011-explore-ex01-i08",
+            "position": 8,
+            "english": "walk",
+            "spanish": "caminar",
+            "audio": "tts:en-GB:walk"
+          },
+          {
+            "itemId": "english-pre-a1-m011-explore-ex01-i09",
+            "position": 9,
+            "english": "hop",
+            "spanish": "saltar a la pata coja",
+            "audio": "tts:en-GB:hop"
+          },
+          {
+            "itemId": "english-pre-a1-m011-explore-ex01-i10",
+            "position": 10,
+            "english": "skip",
+            "spanish": "saltar a saltitos",
+            "audio": "tts:en-GB:skip"
+          }
+        ]
+      }
+    },
+    {
+      "sectionId": "english-pre-a1-m011-practice",
+      "sectionKey": "practice",
+      "position": 2,
+      "exercise": {
+        "exerciseId": "english-pre-a1-m011-practice-ex01",
+        "type": "mixed_practice",
+        "items": [
+          {
+            "itemId": "english-pre-a1-m011-practice-ex01-i01",
+            "position": 1,
+            "taskType": "vocabulary_translation",
+            "prompt": "Choose the Spanish meaning of “run”.",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "correr",
+              "columpiarse",
+              "parar"
+            ]
+          },
+          {
+            "itemId": "english-pre-a1-m011-practice-ex01-i02",
+            "position": 2,
+            "taskType": "vocabulary_translation",
+            "prompt": "Choose the Spanish meaning of “jump”.",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "saltar",
+              "deslizarse",
+              "caminar"
+            ]
+          },
+          {
+            "itemId": "english-pre-a1-m011-practice-ex01-i03",
+            "position": 3,
+            "taskType": "vocabulary_translation",
+            "prompt": "Choose the Spanish meaning of “climb”.",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "trepar",
+              "jugar",
+              "saltar a la pata coja"
+            ]
+          },
+          {
+            "itemId": "english-pre-a1-m011-practice-ex01-i04",
+            "position": 4,
+            "taskType": "vocabulary_translation",
+            "prompt": "Choose the Spanish meaning of “swing”.",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "columpiarse",
+              "parar",
+              "saltar a saltitos"
+            ]
+          },
+          {
+            "itemId": "english-pre-a1-m011-practice-ex01-i05",
+            "position": 5,
+            "taskType": "vocabulary_translation",
+            "prompt": "Choose the Spanish meaning of “slide”.",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "deslizarse",
+              "caminar",
+              "correr"
+            ]
+          },
+          {
+            "itemId": "english-pre-a1-m011-practice-ex01-i06",
+            "position": 6,
+            "taskType": "vocabulary_translation",
+            "prompt": "Choose the Spanish meaning of “play”.",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "jugar",
+              "saltar a la pata coja",
+              "saltar"
+            ]
+          },
+          {
+            "itemId": "english-pre-a1-m011-practice-ex01-i07",
+            "position": 7,
+            "taskType": "vocabulary_translation",
+            "prompt": "Choose the Spanish meaning of “stop”.",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "parar",
+              "saltar a saltitos",
+              "trepar"
+            ]
+          },
+          {
+            "itemId": "english-pre-a1-m011-practice-ex01-i08",
+            "position": 8,
+            "taskType": "vocabulary_translation",
+            "prompt": "Choose the Spanish meaning of “walk”.",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "caminar",
+              "correr",
+              "columpiarse"
+            ]
+          },
+          {
+            "itemId": "english-pre-a1-m011-practice-ex01-i09",
+            "position": 9,
+            "taskType": "vocabulary_translation",
+            "prompt": "Choose the Spanish meaning of “hop”.",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "saltar a la pata coja",
+              "saltar",
+              "deslizarse"
+            ]
+          },
+          {
+            "itemId": "english-pre-a1-m011-practice-ex01-i10",
+            "position": 10,
+            "taskType": "vocabulary_translation",
+            "prompt": "Choose the Spanish meaning of “skip”.",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "saltar a saltitos",
+              "trepar",
+              "jugar"
+            ]
+          },
+          {
+            "itemId": "english-pre-a1-m011-practice-ex01-i11",
+            "position": 11,
+            "taskType": "topic_vocabulary",
+            "prompt": "Which English word means “correr”?",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "run",
+              "climb",
+              "play"
+            ]
+          },
+          {
+            "itemId": "english-pre-a1-m011-practice-ex01-i12",
+            "position": 12,
+            "taskType": "topic_vocabulary",
+            "prompt": "Choose the word for “saltar”?",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "jump",
+              "swing",
+              "stop"
+            ]
+          },
+          {
+            "itemId": "english-pre-a1-m011-practice-ex01-i13",
+            "position": 13,
+            "taskType": "topic_vocabulary",
+            "prompt": "Select the English word for “trepar”?",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "climb",
+              "slide",
+              "walk"
+            ]
+          },
+          {
+            "itemId": "english-pre-a1-m011-practice-ex01-i14",
+            "position": 14,
+            "taskType": "topic_vocabulary",
+            "prompt": "What is the English word for “columpiarse”?",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "swing",
+              "play",
+              "hop"
+            ]
+          },
+          {
+            "itemId": "english-pre-a1-m011-practice-ex01-i15",
+            "position": 15,
+            "taskType": "topic_vocabulary",
+            "prompt": "Find the word that means “deslizarse”?",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "slide",
+              "stop",
+              "skip"
+            ]
+          },
+          {
+            "itemId": "english-pre-a1-m011-practice-ex01-i16",
+            "position": 16,
+            "taskType": "topic_vocabulary",
+            "prompt": "Which word matches “jugar”?",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "play",
+              "walk",
+              "run"
+            ]
+          },
+          {
+            "itemId": "english-pre-a1-m011-practice-ex01-i17",
+            "position": 17,
+            "taskType": "topic_vocabulary",
+            "prompt": "Choose the translation for “parar”?",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "stop",
+              "hop",
+              "jump"
+            ]
+          },
+          {
+            "itemId": "english-pre-a1-m011-practice-ex01-i18",
+            "position": 18,
+            "taskType": "topic_vocabulary",
+            "prompt": "Select the matching word for “caminar”?",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "walk",
+              "skip",
+              "climb"
+            ]
+          },
+          {
+            "itemId": "english-pre-a1-m011-practice-ex01-i19",
+            "position": 19,
+            "taskType": "topic_vocabulary",
+            "prompt": "What word means “saltar a la pata coja”?",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "hop",
+              "run",
+              "swing"
+            ]
+          },
+          {
+            "itemId": "english-pre-a1-m011-practice-ex01-i20",
+            "position": 20,
+            "taskType": "topic_vocabulary",
+            "prompt": "Find the English word for “saltar a saltitos”?",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "skip",
+              "jump",
+              "slide"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "sectionId": "english-pre-a1-m011-grammar",
+      "sectionKey": "grammar",
+      "position": 3,
+      "exercise": {
+        "exerciseId": "english-pre-a1-m011-grammar-ex01",
+        "type": "grammar",
+        "items": [
+          {
+            "itemId": "english-pre-a1-m011-grammar-ex01-i01",
+            "position": 1,
+            "prompt": "Choose the correct word or phrase: ___ to the gate.",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "Run",
+              "Runs",
+              "Running"
+            ]
+          },
+          {
+            "itemId": "english-pre-a1-m011-grammar-ex01-i02",
+            "position": 2,
+            "prompt": "Choose the correct word or phrase: ___ over the line.",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "Jump",
+              "Jumps",
+              "Jumping"
+            ]
+          },
+          {
+            "itemId": "english-pre-a1-m011-grammar-ex01-i03",
+            "position": 3,
+            "prompt": "Choose the correct word or phrase: Please ___ here.",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "stop",
+              "stops",
+              "stopping"
+            ]
+          },
+          {
+            "itemId": "english-pre-a1-m011-grammar-ex01-i04",
+            "position": 4,
+            "prompt": "Choose the correct word or phrase: We ___ in the park.",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "play",
+              "plays",
+              "playing"
+            ]
+          },
+          {
+            "itemId": "english-pre-a1-m011-grammar-ex01-i05",
+            "position": 5,
+            "prompt": "Choose the correct word or phrase: I can ___.",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "climb",
+              "climbs",
+              "climbing"
+            ]
+          },
+          {
+            "itemId": "english-pre-a1-m011-grammar-ex01-i06",
+            "position": 6,
+            "prompt": "Choose the correct word or phrase: She can ___.",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "run",
+              "runs",
+              "running"
+            ]
+          },
+          {
+            "itemId": "english-pre-a1-m011-grammar-ex01-i07",
+            "position": 7,
+            "prompt": "Choose the correct word or phrase: Do not ___ on the wet floor.",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "run",
+              "runs",
+              "running"
+            ]
+          },
+          {
+            "itemId": "english-pre-a1-m011-grammar-ex01-i08",
+            "position": 8,
+            "prompt": "Choose the correct word or phrase: They ___ to school.",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "walk",
+              "walks",
+              "walking"
+            ]
+          },
+          {
+            "itemId": "english-pre-a1-m011-grammar-ex01-i09",
+            "position": 9,
+            "prompt": "Choose the correct word or phrase: A command starts with ___.",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "a base verb",
+              "an -ing form",
+              "a past form"
+            ]
+          },
+          {
+            "itemId": "english-pre-a1-m011-grammar-ex01-i10",
+            "position": 10,
+            "prompt": "Choose the correct word or phrase: ___ to the music.",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "Skip",
+              "Skips",
+              "Skipping"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "sectionId": "english-pre-a1-m011-pronunciation",
+      "sectionKey": "pronunciation",
+      "position": 4,
+      "exercise": {
+        "exerciseId": "english-pre-a1-m011-pronunciation-ex01",
+        "type": "pronunciation_cards",
+        "items": [
+          {
+            "itemId": "english-pre-a1-m011-pronunciation-ex01-i01",
+            "position": 1,
+            "word": "run",
+            "translation": "correr",
+            "pronunciationGuide": "ran",
+            "audio": "tts:en-GB:run"
+          },
+          {
+            "itemId": "english-pre-a1-m011-pronunciation-ex01-i02",
+            "position": 2,
+            "word": "jump",
+            "translation": "saltar",
+            "pronunciationGuide": "yamp",
+            "audio": "tts:en-GB:jump"
+          },
+          {
+            "itemId": "english-pre-a1-m011-pronunciation-ex01-i03",
+            "position": 3,
+            "word": "climb",
+            "translation": "trepar",
+            "pronunciationGuide": "kláim",
+            "audio": "tts:en-GB:climb"
+          },
+          {
+            "itemId": "english-pre-a1-m011-pronunciation-ex01-i04",
+            "position": 4,
+            "word": "swing",
+            "translation": "columpiarse",
+            "pronunciationGuide": "suíng",
+            "audio": "tts:en-GB:swing"
+          },
+          {
+            "itemId": "english-pre-a1-m011-pronunciation-ex01-i05",
+            "position": 5,
+            "word": "slide",
+            "translation": "deslizarse",
+            "pronunciationGuide": "sláid",
+            "audio": "tts:en-GB:slide"
+          },
+          {
+            "itemId": "english-pre-a1-m011-pronunciation-ex01-i06",
+            "position": 6,
+            "word": "play",
+            "translation": "jugar",
+            "pronunciationGuide": "pléi",
+            "audio": "tts:en-GB:play"
+          },
+          {
+            "itemId": "english-pre-a1-m011-pronunciation-ex01-i07",
+            "position": 7,
+            "word": "stop",
+            "translation": "parar",
+            "pronunciationGuide": "stop",
+            "audio": "tts:en-GB:stop"
+          },
+          {
+            "itemId": "english-pre-a1-m011-pronunciation-ex01-i08",
+            "position": 8,
+            "word": "walk",
+            "translation": "caminar",
+            "pronunciationGuide": "uók",
+            "audio": "tts:en-GB:walk"
+          },
+          {
+            "itemId": "english-pre-a1-m011-pronunciation-ex01-i09",
+            "position": 9,
+            "word": "hop",
+            "translation": "saltar a la pata coja",
+            "pronunciationGuide": "hop",
+            "audio": "tts:en-GB:hop"
+          },
+          {
+            "itemId": "english-pre-a1-m011-pronunciation-ex01-i10",
+            "position": 10,
+            "word": "skip",
+            "translation": "saltar a saltitos",
+            "pronunciationGuide": "skip",
+            "audio": "tts:en-GB:skip"
+          }
+        ]
+      }
+    },
+    {
+      "sectionId": "english-pre-a1-m011-reading",
+      "sectionKey": "reading",
+      "position": 5,
+      "exercise": {
+        "exerciseId": "english-pre-a1-m011-reading-ex01",
+        "type": "reading_comprehension",
+        "content": {
+          "passageId": "english-pre-a1-m011-reading-passage-01",
+          "passage": "On Saturday, Mia goes to the playground with her brother Leo. They run to the swings and jump over a small line. Leo can climb the steps and go down the slide. Mia likes to swing. They play with a ball, but they stop when their mum calls. Then they walk home together."
+        },
+        "items": [
+          {
+            "itemId": "english-pre-a1-m011-reading-ex01-i01",
+            "position": 1,
+            "prompt": "When does Mia go to the playground?",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "On Saturday",
+              "On Monday",
+              "On Friday"
+            ]
+          },
+          {
+            "itemId": "english-pre-a1-m011-reading-ex01-i02",
+            "position": 2,
+            "prompt": "Who goes with Mia?",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "Her brother Leo",
+              "Her teacher",
+              "Her friend"
+            ]
+          },
+          {
+            "itemId": "english-pre-a1-m011-reading-ex01-i03",
+            "position": 3,
+            "prompt": "Where do they run?",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "To the swings",
+              "To the shops",
+              "To school"
+            ]
+          },
+          {
+            "itemId": "english-pre-a1-m011-reading-ex01-i04",
+            "position": 4,
+            "prompt": "What does Leo climb?",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "The steps",
+              "A tree",
+              "A wall"
+            ]
+          },
+          {
+            "itemId": "english-pre-a1-m011-reading-ex01-i05",
+            "position": 5,
+            "prompt": "What does Leo go down?",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "The slide",
+              "The stairs at home",
+              "The hill"
+            ]
+          },
+          {
+            "itemId": "english-pre-a1-m011-reading-ex01-i06",
+            "position": 6,
+            "prompt": "What does Mia like to do?",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "Swing",
+              "Climb",
+              "Skip"
+            ]
+          },
+          {
+            "itemId": "english-pre-a1-m011-reading-ex01-i07",
+            "position": 7,
+            "prompt": "What do they play with?",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "A ball",
+              "A kite",
+              "A bike"
+            ]
+          },
+          {
+            "itemId": "english-pre-a1-m011-reading-ex01-i08",
+            "position": 8,
+            "prompt": "Why do they stop?",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "Their mum calls",
+              "It starts to rain",
+              "They are tired"
+            ]
+          },
+          {
+            "itemId": "english-pre-a1-m011-reading-ex01-i09",
+            "position": 9,
+            "prompt": "How do they go home?",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "They walk",
+              "They run",
+              "They take a bus"
+            ]
+          },
+          {
+            "itemId": "english-pre-a1-m011-reading-ex01-i10",
+            "position": 10,
+            "prompt": "Who is Leo?",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "Mia's brother",
+              "Mia's dad",
+              "Mia's teacher"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "sectionId": "english-pre-a1-m011-writing",
+      "sectionKey": "writing",
+      "position": 6,
+      "exercise": {
+        "exerciseId": "english-pre-a1-m011-writing-ex01",
+        "type": "dictation",
+        "items": [
+          {
+            "itemId": "english-pre-a1-m011-writing-ex01-i01",
+            "position": 1,
+            "audio": "tts:en-GB:run",
+            "expectedAnswer": "run",
+            "evaluation": {
+              "type": "normalised_text"
+            }
+          },
+          {
+            "itemId": "english-pre-a1-m011-writing-ex01-i02",
+            "position": 2,
+            "audio": "tts:en-GB:jump",
+            "expectedAnswer": "jump",
+            "evaluation": {
+              "type": "normalised_text"
+            }
+          },
+          {
+            "itemId": "english-pre-a1-m011-writing-ex01-i03",
+            "position": 3,
+            "audio": "tts:en-GB:climb",
+            "expectedAnswer": "climb",
+            "evaluation": {
+              "type": "normalised_text"
+            }
+          },
+          {
+            "itemId": "english-pre-a1-m011-writing-ex01-i04",
+            "position": 4,
+            "audio": "tts:en-GB:swing",
+            "expectedAnswer": "swing",
+            "evaluation": {
+              "type": "normalised_text"
+            }
+          },
+          {
+            "itemId": "english-pre-a1-m011-writing-ex01-i05",
+            "position": 5,
+            "audio": "tts:en-GB:slide",
+            "expectedAnswer": "slide",
+            "evaluation": {
+              "type": "normalised_text"
+            }
+          },
+          {
+            "itemId": "english-pre-a1-m011-writing-ex01-i06",
+            "position": 6,
+            "audio": "tts:en-GB:play",
+            "expectedAnswer": "play",
+            "evaluation": {
+              "type": "normalised_text"
+            }
+          },
+          {
+            "itemId": "english-pre-a1-m011-writing-ex01-i07",
+            "position": 7,
+            "audio": "tts:en-GB:stop",
+            "expectedAnswer": "stop",
+            "evaluation": {
+              "type": "normalised_text"
+            }
+          },
+          {
+            "itemId": "english-pre-a1-m011-writing-ex01-i08",
+            "position": 8,
+            "audio": "tts:en-GB:walk",
+            "expectedAnswer": "walk",
+            "evaluation": {
+              "type": "normalised_text"
+            }
+          },
+          {
+            "itemId": "english-pre-a1-m011-writing-ex01-i09",
+            "position": 9,
+            "audio": "tts:en-GB:hop",
+            "expectedAnswer": "hop",
+            "evaluation": {
+              "type": "normalised_text"
+            }
+          },
+          {
+            "itemId": "english-pre-a1-m011-writing-ex01-i10",
+            "position": 10,
+            "audio": "tts:en-GB:skip",
+            "expectedAnswer": "skip",
+            "evaluation": {
+              "type": "normalised_text"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "sectionId": "english-pre-a1-m011-speaking",
+      "sectionKey": "speaking",
+      "position": 7,
+      "exercise": {
+        "exerciseId": "english-pre-a1-m011-speaking-ex01",
+        "type": "speaking_prompts",
+        "items": [
+          {
+            "itemId": "english-pre-a1-m011-speaking-ex01-i01",
+            "position": 1,
+            "prompt": "Say a short sentence using “run”.",
+            "modelAnswer": "I can run.",
+            "evaluation": {
+              "type": "transcription_feedback",
+              "transcriptionSeparateFromPronunciation": true
+            }
+          },
+          {
+            "itemId": "english-pre-a1-m011-speaking-ex01-i02",
+            "position": 2,
+            "prompt": "Say a short sentence using “jump”.",
+            "modelAnswer": "I can jump.",
+            "evaluation": {
+              "type": "transcription_feedback",
+              "transcriptionSeparateFromPronunciation": true
+            }
+          },
+          {
+            "itemId": "english-pre-a1-m011-speaking-ex01-i03",
+            "position": 3,
+            "prompt": "Say a short sentence using “climb”.",
+            "modelAnswer": "I can climb a tree.",
+            "evaluation": {
+              "type": "transcription_feedback",
+              "transcriptionSeparateFromPronunciation": true
+            }
+          },
+          {
+            "itemId": "english-pre-a1-m011-speaking-ex01-i04",
+            "position": 4,
+            "prompt": "Say a short sentence using “swing”.",
+            "modelAnswer": "I like to swing.",
+            "evaluation": {
+              "type": "transcription_feedback",
+              "transcriptionSeparateFromPronunciation": true
+            }
+          },
+          {
+            "itemId": "english-pre-a1-m011-speaking-ex01-i05",
+            "position": 5,
+            "prompt": "Say a short sentence using “slide”.",
+            "modelAnswer": "I go down the slide.",
+            "evaluation": {
+              "type": "transcription_feedback",
+              "transcriptionSeparateFromPronunciation": true
+            }
+          },
+          {
+            "itemId": "english-pre-a1-m011-speaking-ex01-i06",
+            "position": 6,
+            "prompt": "Say a short sentence using “play”.",
+            "modelAnswer": "I play with my friends.",
+            "evaluation": {
+              "type": "transcription_feedback",
+              "transcriptionSeparateFromPronunciation": true
+            }
+          },
+          {
+            "itemId": "english-pre-a1-m011-speaking-ex01-i07",
+            "position": 7,
+            "prompt": "Say a short sentence using “stop”.",
+            "modelAnswer": "I stop at the gate.",
+            "evaluation": {
+              "type": "transcription_feedback",
+              "transcriptionSeparateFromPronunciation": true
+            }
+          },
+          {
+            "itemId": "english-pre-a1-m011-speaking-ex01-i08",
+            "position": 8,
+            "prompt": "Say a short sentence using “walk”.",
+            "modelAnswer": "I walk to school.",
+            "evaluation": {
+              "type": "transcription_feedback",
+              "transcriptionSeparateFromPronunciation": true
+            }
+          },
+          {
+            "itemId": "english-pre-a1-m011-speaking-ex01-i09",
+            "position": 9,
+            "prompt": "Say a short sentence using “hop”.",
+            "modelAnswer": "I can hop on one foot.",
+            "evaluation": {
+              "type": "transcription_feedback",
+              "transcriptionSeparateFromPronunciation": true
+            }
+          },
+          {
+            "itemId": "english-pre-a1-m011-speaking-ex01-i10",
+            "position": 10,
+            "prompt": "Say a short sentence using “skip”.",
+            "modelAnswer": "I skip to the music.",
+            "evaluation": {
+              "type": "transcription_feedback",
+              "transcriptionSeparateFromPronunciation": true
+            }
+          }
+        ]
+      }
+    },
+    {
+      "sectionId": "english-pre-a1-m011-listening",
+      "sectionKey": "listening",
+      "position": 8,
+      "exercise": {
+        "exerciseId": "english-pre-a1-m011-listening-ex01",
+        "type": "listening_gap_fill",
+        "content": {
+          "audio": "tts:en-GB:At the playground, I run to the gate. I jump over a small line. I climb the steps. I swing on the seat. I go down the slide. I play with my friends. When Mum says stop, I stop. Then I walk slowly. I hop on one foot. I skip to the music.",
+          "audioLocale": "en-GB",
+          "transcriptTemplate": "At the playground, I [[gap-01]] to the gate. I [[gap-02]] over a small line. I [[gap-03]] the steps. I [[gap-04]] on the seat. I go down the [[gap-05]]. I [[gap-06]] with my friends. When Mum says [[gap-07]], I stop. Then I [[gap-08]] slowly. I [[gap-09]] on one foot. I [[gap-10]] to the music.",
+          "wordBank": [
+            {
+              "wordId": "english-pre-a1-m011-listening-word-01",
+              "word": "run"
+            },
+            {
+              "wordId": "english-pre-a1-m011-listening-word-02",
+              "word": "jump"
+            },
+            {
+              "wordId": "english-pre-a1-m011-listening-word-03",
+              "word": "climb"
+            },
+            {
+              "wordId": "english-pre-a1-m011-listening-word-04",
+              "word": "swing"
+            },
+            {
+              "wordId": "english-pre-a1-m011-listening-word-05",
+              "word": "slide"
+            },
+            {
+              "wordId": "english-pre-a1-m011-listening-word-06",
+              "word": "play"
+            },
+            {
+              "wordId": "english-pre-a1-m011-listening-word-07",
+              "word": "stop"
+            },
+            {
+              "wordId": "english-pre-a1-m011-listening-word-08",
+              "word": "walk"
+            },
+            {
+              "wordId": "english-pre-a1-m011-listening-word-09",
+              "word": "hop"
+            },
+            {
+              "wordId": "english-pre-a1-m011-listening-word-10",
+              "word": "skip"
+            }
+          ],
+          "interaction": "select_place_move_replace"
+        },
+        "items": [
+          {
+            "itemId": "english-pre-a1-m011-listening-ex01-i01",
+            "position": 1,
+            "gapToken": "[[gap-01]]",
+            "expectedWordId": "english-pre-a1-m011-listening-word-01"
+          },
+          {
+            "itemId": "english-pre-a1-m011-listening-ex01-i02",
+            "position": 2,
+            "gapToken": "[[gap-02]]",
+            "expectedWordId": "english-pre-a1-m011-listening-word-02"
+          },
+          {
+            "itemId": "english-pre-a1-m011-listening-ex01-i03",
+            "position": 3,
+            "gapToken": "[[gap-03]]",
+            "expectedWordId": "english-pre-a1-m011-listening-word-03"
+          },
+          {
+            "itemId": "english-pre-a1-m011-listening-ex01-i04",
+            "position": 4,
+            "gapToken": "[[gap-04]]",
+            "expectedWordId": "english-pre-a1-m011-listening-word-04"
+          },
+          {
+            "itemId": "english-pre-a1-m011-listening-ex01-i05",
+            "position": 5,
+            "gapToken": "[[gap-05]]",
+            "expectedWordId": "english-pre-a1-m011-listening-word-05"
+          },
+          {
+            "itemId": "english-pre-a1-m011-listening-ex01-i06",
+            "position": 6,
+            "gapToken": "[[gap-06]]",
+            "expectedWordId": "english-pre-a1-m011-listening-word-06"
+          },
+          {
+            "itemId": "english-pre-a1-m011-listening-ex01-i07",
+            "position": 7,
+            "gapToken": "[[gap-07]]",
+            "expectedWordId": "english-pre-a1-m011-listening-word-07"
+          },
+          {
+            "itemId": "english-pre-a1-m011-listening-ex01-i08",
+            "position": 8,
+            "gapToken": "[[gap-08]]",
+            "expectedWordId": "english-pre-a1-m011-listening-word-08"
+          },
+          {
+            "itemId": "english-pre-a1-m011-listening-ex01-i09",
+            "position": 9,
+            "gapToken": "[[gap-09]]",
+            "expectedWordId": "english-pre-a1-m011-listening-word-09"
+          },
+          {
+            "itemId": "english-pre-a1-m011-listening-ex01-i10",
+            "position": 10,
+            "gapToken": "[[gap-10]]",
+            "expectedWordId": "english-pre-a1-m011-listening-word-10"
+          }
+        ]
+      }
+    }
+  ]
+}
