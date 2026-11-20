@@ -28,19 +28,19 @@
         "type": "vocabulary_pairs",
         "theory": {
           "title": "Breakfast Time: food and drinks",
-          "explanation": "Learn ten useful breakfast words. Listen to each British English model and repeat it.",
+          "explanation": "Learn ten useful words for breakfast. Listen to each British English model and repeat it.",
           "patterns": [
             {
               "label": "Food and drink",
-              "pattern": "I eat + food · I drink + drink",
+              "pattern": "I eat + food · I drink + drinks",
               "examples": [
-                "I eat toast.",
-                "I drink milk.",
-                "I eat cereal for breakfast."
+                "I eat toast for breakfast.",
+                "I drink milk in the morning.",
+                "I have an egg and cereal."
               ]
             }
           ],
-          "tip": "Usa eat para alimentos y drink para bebidas."
+          "tip": "Escucha, repite y fíjate en la frase completa. Usa el modelo para crear tu propia frase."
         },
         "items": [
           {
@@ -88,9 +88,9 @@
           {
             "itemId": "english-pre-a1-m021-explore-ex01-i07",
             "position": 7,
-            "english": "yogurt",
+            "english": "yoghurt",
             "spanish": "yogur",
-            "audio": "tts:en-GB:yogurt"
+            "audio": "tts:en-GB:yoghurt"
           },
           {
             "itemId": "english-pre-a1-m021-explore-ex01-i08",
@@ -212,7 +212,7 @@
             "itemId": "english-pre-a1-m021-practice-ex01-i07",
             "position": 7,
             "taskType": "vocabulary_translation",
-            "prompt": "Choose the Spanish meaning of “yogurt”.",
+            "prompt": "Choose the Spanish meaning of “yoghurt”.",
             "evaluation": {
               "type": "single_choice"
             },
@@ -303,7 +303,7 @@
             "options": [
               "toast",
               "juice",
-              "yogurt"
+              "yoghurt"
             ]
           },
           {
@@ -330,7 +330,7 @@
             },
             "options": [
               "juice",
-              "yogurt",
+              "yoghurt",
               "waffle"
             ]
           },
@@ -357,7 +357,7 @@
               "type": "single_choice"
             },
             "options": [
-              "yogurt",
+              "yoghurt",
               "waffle",
               "breakfast"
             ]
@@ -424,7 +424,7 @@
           {
             "itemId": "english-pre-a1-m021-grammar-ex01-i01",
             "position": 1,
-            "prompt": "Choose the correct sentence for milk.",
+            "prompt": "What do you do with milk?",
             "evaluation": {
               "type": "single_choice"
             },
@@ -437,7 +437,7 @@
           {
             "itemId": "english-pre-a1-m021-grammar-ex01-i02",
             "position": 2,
-            "prompt": "Complete: I ___ toast.",
+            "prompt": "Complete: I ___ toast for breakfast.",
             "evaluation": {
               "type": "single_choice"
             },
@@ -450,7 +450,7 @@
           {
             "itemId": "english-pre-a1-m021-grammar-ex01-i03",
             "position": 3,
-            "prompt": "Complete: I ___ juice.",
+            "prompt": "Complete: I ___ juice in the morning.",
             "evaluation": {
               "type": "single_choice"
             },
@@ -476,79 +476,79 @@
           {
             "itemId": "english-pre-a1-m021-grammar-ex01-i05",
             "position": 5,
-            "prompt": "Choose the correct sentence for milk.",
+            "prompt": "Which sentence is about a drink?",
             "evaluation": {
               "type": "single_choice"
             },
             "options": [
               "I drink milk.",
-              "I eat milk.",
-              "I drinks milk."
+              "I eat cereal.",
+              "I drinks toast."
             ]
           },
           {
             "itemId": "english-pre-a1-m021-grammar-ex01-i06",
             "position": 6,
-            "prompt": "Complete: I ___ toast.",
+            "prompt": "Complete: I eat ___ for breakfast.",
             "evaluation": {
               "type": "single_choice"
             },
             "options": [
-              "eat",
-              "drink",
-              "eats"
+              "cereal",
+              "juice",
+              "milk"
             ]
           },
           {
             "itemId": "english-pre-a1-m021-grammar-ex01-i07",
             "position": 7,
-            "prompt": "Complete: I ___ juice.",
+            "prompt": "Choose the correct sentence about a pancake.",
             "evaluation": {
               "type": "single_choice"
             },
             "options": [
-              "drink",
-              "eat",
-              "drinks"
+              "I eat a pancake.",
+              "I drink a pancake.",
+              "I eats a pancake."
             ]
           },
           {
             "itemId": "english-pre-a1-m021-grammar-ex01-i08",
             "position": 8,
-            "prompt": "Choose the sentence about an egg.",
+            "prompt": "Complete: I ___ milk every morning.",
             "evaluation": {
               "type": "single_choice"
             },
             "options": [
-              "I eat an egg.",
-              "I drink an egg.",
-              "I eats an egg."
+              "drink",
+              "drinks",
+              "eating"
             ]
           },
           {
             "itemId": "english-pre-a1-m021-grammar-ex01-i09",
             "position": 9,
-            "prompt": "Choose the correct sentence for milk.",
+            "prompt": "Choose the correct sentence about a waffle.",
             "evaluation": {
               "type": "single_choice"
             },
             "options": [
-              "I drink milk.",
-              "I eat milk.",
-              "I drinks milk."
+              "I eat a waffle.",
+              "I drink a waffle.",
+              "I eats a waffle."
             ]
           },
           {
             "itemId": "english-pre-a1-m021-grammar-ex01-i10",
             "position": 10,
-            "prompt": "Complete: I ___ toast.",
+            "prompt": "Which sentence uses “porridge” correctly?",
             "evaluation": {
               "type": "single_choice"
             },
             "options": [
-              "eat",
-              "drink",
-              "eats"
+              "I eat porridge.",
+              "I drink porridge.",
+              "I eats porridge."
             ]
           }
         ]
@@ -613,10 +613,10 @@
           {
             "itemId": "english-pre-a1-m021-pronunciation-ex01-i07",
             "position": 7,
-            "word": "yogurt",
+            "word": "yoghurt",
             "translation": "yogur",
             "pronunciationGuide": "yó-gat",
-            "audio": "tts:en-GB:yogurt"
+            "audio": "tts:en-GB:yoghurt"
           },
           {
             "itemId": "english-pre-a1-m021-pronunciation-ex01-i08",
@@ -902,8 +902,8 @@
           {
             "itemId": "english-pre-a1-m021-speaking-ex01-i01",
             "position": 1,
-            "prompt": "Say a sentence about breakfast.",
-            "modelAnswer": "I like breakfast.",
+            "prompt": "Say a short sentence about “breakfast”. You can use the model.",
+            "modelAnswer": "I have breakfast in the morning.",
             "evaluation": {
               "type": "transcription_feedback",
               "transcriptionSeparateFromPronunciation": true
@@ -912,8 +912,8 @@
           {
             "itemId": "english-pre-a1-m021-speaking-ex01-i02",
             "position": 2,
-            "prompt": "Say a sentence about cereal.",
-            "modelAnswer": "I like cereal.",
+            "prompt": "Say a short sentence about “cereal”. You can use the model.",
+            "modelAnswer": "I eat cereal for breakfast.",
             "evaluation": {
               "type": "transcription_feedback",
               "transcriptionSeparateFromPronunciation": true
@@ -922,8 +922,8 @@
           {
             "itemId": "english-pre-a1-m021-speaking-ex01-i03",
             "position": 3,
-            "prompt": "Say a sentence about toast.",
-            "modelAnswer": "I like toast.",
+            "prompt": "Say a short sentence about “toast”. You can use the model.",
+            "modelAnswer": "I eat toast.",
             "evaluation": {
               "type": "transcription_feedback",
               "transcriptionSeparateFromPronunciation": true
@@ -932,8 +932,8 @@
           {
             "itemId": "english-pre-a1-m021-speaking-ex01-i04",
             "position": 4,
-            "prompt": "Say a sentence about milk.",
-            "modelAnswer": "I like milk.",
+            "prompt": "Say a short sentence about “milk”. You can use the model.",
+            "modelAnswer": "I drink milk.",
             "evaluation": {
               "type": "transcription_feedback",
               "transcriptionSeparateFromPronunciation": true
@@ -942,8 +942,8 @@
           {
             "itemId": "english-pre-a1-m021-speaking-ex01-i05",
             "position": 5,
-            "prompt": "Say a sentence about juice.",
-            "modelAnswer": "I like juice.",
+            "prompt": "Say a short sentence about “juice”. You can use the model.",
+            "modelAnswer": "I drink orange juice.",
             "evaluation": {
               "type": "transcription_feedback",
               "transcriptionSeparateFromPronunciation": true
@@ -952,8 +952,8 @@
           {
             "itemId": "english-pre-a1-m021-speaking-ex01-i06",
             "position": 6,
-            "prompt": "Say a sentence about egg.",
-            "modelAnswer": "I like egg.",
+            "prompt": "Say a short sentence about “egg”. You can use the model.",
+            "modelAnswer": "I eat an egg.",
             "evaluation": {
               "type": "transcription_feedback",
               "transcriptionSeparateFromPronunciation": true
@@ -962,8 +962,8 @@
           {
             "itemId": "english-pre-a1-m021-speaking-ex01-i07",
             "position": 7,
-            "prompt": "Say a sentence about yogurt.",
-            "modelAnswer": "I like yogurt.",
+            "prompt": "Say a short sentence about “yogurt”. You can use the model.",
+            "modelAnswer": "I have yoghurt.",
             "evaluation": {
               "type": "transcription_feedback",
               "transcriptionSeparateFromPronunciation": true
@@ -972,8 +972,8 @@
           {
             "itemId": "english-pre-a1-m021-speaking-ex01-i08",
             "position": 8,
-            "prompt": "Say a sentence about pancake.",
-            "modelAnswer": "I like pancake.",
+            "prompt": "Say a short sentence about “pancake”. You can use the model.",
+            "modelAnswer": "I eat a pancake.",
             "evaluation": {
               "type": "transcription_feedback",
               "transcriptionSeparateFromPronunciation": true
@@ -982,8 +982,8 @@
           {
             "itemId": "english-pre-a1-m021-speaking-ex01-i09",
             "position": 9,
-            "prompt": "Say a sentence about waffle.",
-            "modelAnswer": "I like waffle.",
+            "prompt": "Say a short sentence about “waffle”. You can use the model.",
+            "modelAnswer": "I eat a waffle.",
             "evaluation": {
               "type": "transcription_feedback",
               "transcriptionSeparateFromPronunciation": true
@@ -992,8 +992,8 @@
           {
             "itemId": "english-pre-a1-m021-speaking-ex01-i10",
             "position": 10,
-            "prompt": "Say a sentence about porridge.",
-            "modelAnswer": "I like porridge.",
+            "prompt": "Say a short sentence about “porridge”. You can use the model.",
+            "modelAnswer": "I eat porridge.",
             "evaluation": {
               "type": "transcription_feedback",
               "transcriptionSeparateFromPronunciation": true
@@ -1010,9 +1010,9 @@
         "exerciseId": "english-pre-a1-m021-listening-ex01",
         "type": "listening_gap_fill",
         "content": {
-          "audio": "tts:en-GB:Hello! It is breakfast time. I eat cereal and toast. I drink milk and juice. I have an egg and yogurt. I like a pancake and a waffle. I eat porridge for breakfast.",
+          "audio": "tts:en-GB:It is breakfast time. I eat cereal and toast. I drink milk and juice. I have an egg and yoghurt. I like a pancake and a waffle. I eat porridge for breakfast.",
           "audioLocale": "en-GB",
-          "transcriptTemplate": "Hello! It is [[gap-01]] time. I eat [[gap-02]] and [[gap-03]]. I drink [[gap-04]] and [[gap-05]]. I have an [[gap-06]] and [[gap-07]]. I like a [[gap-08]] and a [[gap-09]]. I eat [[gap-10]] for breakfast.",
+          "transcriptTemplate": "It is [[gap-01]] time. I eat [[gap-02]] and [[gap-03]]. I drink [[gap-04]] and [[gap-05]]. I have an [[gap-06]] and [[gap-07]]. I like a [[gap-08]] and a [[gap-09]]. I eat [[gap-10]] for breakfast.",
           "wordBank": [
             {
               "wordId": "english-pre-a1-m021-listening-word-01",
@@ -1040,7 +1040,7 @@
             },
             {
               "wordId": "english-pre-a1-m021-listening-word-07",
-              "word": "yogurt"
+              "word": "yoghurt"
             },
             {
               "wordId": "english-pre-a1-m021-listening-word-08",

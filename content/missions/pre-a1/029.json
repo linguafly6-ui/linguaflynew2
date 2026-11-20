@@ -28,19 +28,19 @@
         "type": "vocabulary_pairs",
         "theory": {
           "title": "My Family: vocabulary",
-          "explanation": "Learn ten useful words about my family. Listen to each British English model and repeat it.",
+          "explanation": "Learn ten useful words for talking about your family. Listen to each British English model and repeat it.",
           "patterns": [
             {
-              "label": "Useful sentence",
-              "pattern": "I like mother.",
+              "label": "Talk about family",
+              "pattern": "He is… · She is… · They are…",
               "examples": [
-                "I can see mother.",
-                "This is father.",
-                "I like sister."
+                "She is my mother.",
+                "He is my father.",
+                "They are my grandparents."
               ]
             }
           ],
-          "tip": "Escucha cada palabra y úsala en una frase corta."
+          "tip": "Escucha, repite y fíjate en la frase completa. Usa el modelo para crear tu propia frase."
         },
         "items": [
           {
@@ -110,7 +110,7 @@
             "itemId": "english-pre-a1-m029-explore-ex01-i10",
             "position": 10,
             "english": "cousin",
-            "spanish": "primo",
+            "spanish": "primo/a",
             "audio": "tts:en-GB:cousin"
           }
         ]
@@ -205,7 +205,7 @@
             "options": [
               "abuela",
               "tía",
-              "primo"
+              "primo/a"
             ]
           },
           {
@@ -232,7 +232,7 @@
             },
             "options": [
               "tía",
-              "primo",
+              "primo/a",
               "padre"
             ]
           },
@@ -259,7 +259,7 @@
               "type": "single_choice"
             },
             "options": [
-              "primo",
+              "primo/a",
               "padre",
               "hermano"
             ]
@@ -394,7 +394,7 @@
             "itemId": "english-pre-a1-m029-practice-ex01-i20",
             "position": 20,
             "taskType": "english_vocabulary",
-            "prompt": "Which English word means “primo”?",
+            "prompt": "Which English word means “primo/a”?",
             "evaluation": {
               "type": "single_choice"
             },
@@ -476,79 +476,79 @@
           {
             "itemId": "english-pre-a1-m029-grammar-ex01-i05",
             "position": 5,
-            "prompt": "Choose the correct sentence about a mother.",
+            "prompt": "Complete: ___ is my brother.",
             "evaluation": {
               "type": "single_choice"
             },
             "options": [
-              "She is my mother.",
-              "He is my mother.",
-              "They is my mother."
+              "He",
+              "She",
+              "They"
             ]
           },
           {
             "itemId": "english-pre-a1-m029-grammar-ex01-i06",
             "position": 6,
-            "prompt": "Choose the correct sentence about a father.",
+            "prompt": "Choose the correct sentence about a grandmother.",
             "evaluation": {
               "type": "single_choice"
             },
             "options": [
-              "He is my father.",
-              "She is my father.",
-              "They is my father."
+              "She is my grandmother.",
+              "He is my grandmother.",
+              "They is my grandmother."
             ]
           },
           {
             "itemId": "english-pre-a1-m029-grammar-ex01-i07",
             "position": 7,
-            "prompt": "Complete: ___ is my sister.",
+            "prompt": "Choose the correct sentence about a grandfather.",
             "evaluation": {
               "type": "single_choice"
             },
             "options": [
-              "She",
-              "He",
-              "They"
+              "He is my grandfather.",
+              "She is my grandfather.",
+              "They is my grandfather."
             ]
           },
           {
             "itemId": "english-pre-a1-m029-grammar-ex01-i08",
             "position": 8,
-            "prompt": "You talk about your mother and father. Choose the pronoun.",
+            "prompt": "Complete: My aunt and uncle ___ here.",
             "evaluation": {
               "type": "single_choice"
             },
             "options": [
-              "They",
-              "He",
-              "She"
+              "are",
+              "is",
+              "am"
             ]
           },
           {
             "itemId": "english-pre-a1-m029-grammar-ex01-i09",
             "position": 9,
-            "prompt": "Choose the correct sentence about a mother.",
+            "prompt": "Choose the correct phrase for one cousin.",
             "evaluation": {
               "type": "single_choice"
             },
             "options": [
-              "She is my mother.",
-              "He is my mother.",
-              "They is my mother."
+              "my cousin",
+              "my cousins",
+              "I cousin"
             ]
           },
           {
             "itemId": "english-pre-a1-m029-grammar-ex01-i10",
             "position": 10,
-            "prompt": "Choose the correct sentence about a father.",
+            "prompt": "Choose the correct sentence about two grandparents.",
             "evaluation": {
               "type": "single_choice"
             },
             "options": [
-              "He is my father.",
-              "She is my father.",
-              "They is my father."
+              "They are my grandparents.",
+              "They is my grandparents.",
+              "She are my grandparents."
             ]
           }
         ]
@@ -638,7 +638,7 @@
             "itemId": "english-pre-a1-m029-pronunciation-ex01-i10",
             "position": 10,
             "word": "cousin",
-            "translation": "primo",
+            "translation": "primo/a",
             "pronunciationGuide": "Escucha el audio británico y repite.",
             "audio": "tts:en-GB:cousin"
           }
@@ -902,8 +902,8 @@
           {
             "itemId": "english-pre-a1-m029-speaking-ex01-i01",
             "position": 1,
-            "prompt": "Say a sentence with “mother”.",
-            "modelAnswer": "I like mother.",
+            "prompt": "Say a short sentence about “mother”. You can use the model.",
+            "modelAnswer": "She is my mother.",
             "evaluation": {
               "type": "transcription_feedback",
               "transcriptionSeparateFromPronunciation": true
@@ -912,8 +912,8 @@
           {
             "itemId": "english-pre-a1-m029-speaking-ex01-i02",
             "position": 2,
-            "prompt": "Say a sentence with “father”.",
-            "modelAnswer": "I like father.",
+            "prompt": "Say a short sentence about “father”. You can use the model.",
+            "modelAnswer": "He is my father.",
             "evaluation": {
               "type": "transcription_feedback",
               "transcriptionSeparateFromPronunciation": true
@@ -922,8 +922,8 @@
           {
             "itemId": "english-pre-a1-m029-speaking-ex01-i03",
             "position": 3,
-            "prompt": "Say a sentence with “sister”.",
-            "modelAnswer": "I like sister.",
+            "prompt": "Say a short sentence about “sister”. You can use the model.",
+            "modelAnswer": "She is my sister.",
             "evaluation": {
               "type": "transcription_feedback",
               "transcriptionSeparateFromPronunciation": true
@@ -932,8 +932,8 @@
           {
             "itemId": "english-pre-a1-m029-speaking-ex01-i04",
             "position": 4,
-            "prompt": "Say a sentence with “brother”.",
-            "modelAnswer": "I like brother.",
+            "prompt": "Say a short sentence about “brother”. You can use the model.",
+            "modelAnswer": "He is my brother.",
             "evaluation": {
               "type": "transcription_feedback",
               "transcriptionSeparateFromPronunciation": true
@@ -942,8 +942,8 @@
           {
             "itemId": "english-pre-a1-m029-speaking-ex01-i05",
             "position": 5,
-            "prompt": "Say a sentence with “baby”.",
-            "modelAnswer": "I like baby.",
+            "prompt": "Say a short sentence about “baby”. You can use the model.",
+            "modelAnswer": "This is my baby.",
             "evaluation": {
               "type": "transcription_feedback",
               "transcriptionSeparateFromPronunciation": true
@@ -952,8 +952,8 @@
           {
             "itemId": "english-pre-a1-m029-speaking-ex01-i06",
             "position": 6,
-            "prompt": "Say a sentence with “grandmother”.",
-            "modelAnswer": "I like grandmother.",
+            "prompt": "Say a short sentence about “grandmother”. You can use the model.",
+            "modelAnswer": "She is my grandmother.",
             "evaluation": {
               "type": "transcription_feedback",
               "transcriptionSeparateFromPronunciation": true
@@ -962,8 +962,8 @@
           {
             "itemId": "english-pre-a1-m029-speaking-ex01-i07",
             "position": 7,
-            "prompt": "Say a sentence with “grandfather”.",
-            "modelAnswer": "I like grandfather.",
+            "prompt": "Say a short sentence about “grandfather”. You can use the model.",
+            "modelAnswer": "He is my grandfather.",
             "evaluation": {
               "type": "transcription_feedback",
               "transcriptionSeparateFromPronunciation": true
@@ -972,8 +972,8 @@
           {
             "itemId": "english-pre-a1-m029-speaking-ex01-i08",
             "position": 8,
-            "prompt": "Say a sentence with “aunt”.",
-            "modelAnswer": "I like aunt.",
+            "prompt": "Say a short sentence about “aunt”. You can use the model.",
+            "modelAnswer": "She is my aunt.",
             "evaluation": {
               "type": "transcription_feedback",
               "transcriptionSeparateFromPronunciation": true
@@ -982,8 +982,8 @@
           {
             "itemId": "english-pre-a1-m029-speaking-ex01-i09",
             "position": 9,
-            "prompt": "Say a sentence with “uncle”.",
-            "modelAnswer": "I like uncle.",
+            "prompt": "Say a short sentence about “uncle”. You can use the model.",
+            "modelAnswer": "He is my uncle.",
             "evaluation": {
               "type": "transcription_feedback",
               "transcriptionSeparateFromPronunciation": true
@@ -992,8 +992,8 @@
           {
             "itemId": "english-pre-a1-m029-speaking-ex01-i10",
             "position": 10,
-            "prompt": "Say a sentence with “cousin”.",
-            "modelAnswer": "I like cousin.",
+            "prompt": "Say a short sentence about “cousin”. You can use the model.",
+            "modelAnswer": "This is my cousin.",
             "evaluation": {
               "type": "transcription_feedback",
               "transcriptionSeparateFromPronunciation": true
@@ -1010,9 +1010,9 @@
         "exerciseId": "english-pre-a1-m029-listening-ex01",
         "type": "listening_gap_fill",
         "content": {
-          "audio": "tts:en-GB:Welcome! This is my family. I can see mother. I can see father. I can see sister. I can see brother. I can see baby. I can see grandmother. I can see grandfather. I can see aunt. I can see uncle. I can see cousin. I like this place. Thank you for listening.",
+          "audio": "tts:en-GB:This is my mother and my father. My sister and my brother are here. My baby is small. My grandmother and my grandfather are here too. My aunt, my uncle and my cousin are here.",
           "audioLocale": "en-GB",
-          "transcriptTemplate": "Welcome! This is my family. I can see [[gap-01]]. I can see [[gap-02]]. I can see [[gap-03]]. I can see [[gap-04]]. I can see [[gap-05]]. I can see [[gap-06]]. I can see [[gap-07]]. I can see [[gap-08]]. I can see [[gap-09]]. I can see [[gap-10]]. I like this place. Thank you for listening.",
+          "transcriptTemplate": "This is my [[gap-01]] and my [[gap-02]]. My [[gap-03]] and my [[gap-04]] are here. My [[gap-05]] is small. My [[gap-06]] and my [[gap-07]] are here too. My [[gap-08]], my [[gap-09]] and my [[gap-10]] are here.",
           "wordBank": [
             {
               "wordId": "english-pre-a1-m029-listening-word-01",

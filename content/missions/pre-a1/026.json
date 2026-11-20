@@ -28,19 +28,19 @@
         "type": "vocabulary_pairs",
         "theory": {
           "title": "The Bug Hunt: vocabulary",
-          "explanation": "Learn ten useful words about the bug hunt. Listen to each British English model and repeat it.",
+          "explanation": "Learn ten useful words about insects and other small bugs. Listen to each British English model and repeat it.",
           "patterns": [
             {
-              "label": "Useful sentence",
-              "pattern": "I like bee.",
+              "label": "Give a simple instruction",
+              "pattern": "Find + noun · Look for + noun.",
               "examples": [
-                "I can see bee.",
-                "This is butterfly.",
-                "I like ant."
+                "Find a bee.",
+                "Look for a butterfly.",
+                "Find an ant."
               ]
             }
           ],
-          "tip": "Escucha cada palabra y úsala en una frase corta."
+          "tip": "Escucha, repite y fíjate en la frase completa. Usa el modelo para crear tu propia frase."
         },
         "items": [
           {
@@ -442,9 +442,9 @@
               "type": "single_choice"
             },
             "options": [
-              "Busca una mariposa",
-              "Dibuja una mariposa",
-              "Escucha una abeja"
+              "Busca una mariposa.",
+              "Dibuja una mariposa.",
+              "Escucha una abeja."
             ]
           },
           {
@@ -476,33 +476,59 @@
           {
             "itemId": "english-pre-a1-m026-grammar-ex01-i05",
             "position": 5,
-            "prompt": "Choose the correct instruction.",
+            "prompt": "Which instruction asks you to find a ladybird?",
             "evaluation": {
               "type": "single_choice"
             },
             "options": [
-              "Find a bee.",
-              "Finds a bee.",
-              "Finding a bee."
+              "Find a ladybird.",
+              "Finds a ladybird.",
+              "Finding a ladybird."
             ]
           },
           {
             "itemId": "english-pre-a1-m026-grammar-ex01-i06",
             "position": 6,
-            "prompt": "What does “Look for a butterfly” mean?",
+            "prompt": "Complete: Look ___ a caterpillar.",
             "evaluation": {
               "type": "single_choice"
             },
             "options": [
-              "Busca una mariposa",
-              "Dibuja una mariposa",
-              "Escucha una abeja"
+              "for",
+              "at",
+              "on"
             ]
           },
           {
             "itemId": "english-pre-a1-m026-grammar-ex01-i07",
             "position": 7,
-            "prompt": "Complete: ___ an ant.",
+            "prompt": "Choose the correct instruction for a mosquito.",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "Look for a mosquito.",
+              "Looks for a mosquito.",
+              "Looking for mosquito."
+            ]
+          },
+          {
+            "itemId": "english-pre-a1-m026-grammar-ex01-i08",
+            "position": 8,
+            "prompt": "What does “Find a beetle” mean?",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "Encuentra un escarabajo.",
+              "Dibuja un escarabajo.",
+              "Escucha un escarabajo."
+            ]
+          },
+          {
+            "itemId": "english-pre-a1-m026-grammar-ex01-i09",
+            "position": 9,
+            "prompt": "Complete: ___ a dragonfly.",
             "evaluation": {
               "type": "single_choice"
             },
@@ -513,42 +539,16 @@
             ]
           },
           {
-            "itemId": "english-pre-a1-m026-grammar-ex01-i08",
-            "position": 8,
-            "prompt": "Choose the instruction for a spider.",
-            "evaluation": {
-              "type": "single_choice"
-            },
-            "options": [
-              "Look for a spider.",
-              "Looks for a spider.",
-              "Looking for a spider."
-            ]
-          },
-          {
-            "itemId": "english-pre-a1-m026-grammar-ex01-i09",
-            "position": 9,
-            "prompt": "Choose the correct instruction.",
-            "evaluation": {
-              "type": "single_choice"
-            },
-            "options": [
-              "Find a bee.",
-              "Finds a bee.",
-              "Finding a bee."
-            ]
-          },
-          {
             "itemId": "english-pre-a1-m026-grammar-ex01-i10",
             "position": 10,
-            "prompt": "What does “Look for a butterfly” mean?",
+            "prompt": "Choose the correct instruction for a grasshopper.",
             "evaluation": {
               "type": "single_choice"
             },
             "options": [
-              "Busca una mariposa",
-              "Dibuja una mariposa",
-              "Escucha una abeja"
+              "Look for a grasshopper.",
+              "Looks for a grasshopper.",
+              "Looking a grasshopper."
             ]
           }
         ]
@@ -902,8 +902,8 @@
           {
             "itemId": "english-pre-a1-m026-speaking-ex01-i01",
             "position": 1,
-            "prompt": "Say a sentence with “bee”.",
-            "modelAnswer": "I like bee.",
+            "prompt": "Say a short sentence about “bee”. You can use the model.",
+            "modelAnswer": "I can see a bee.",
             "evaluation": {
               "type": "transcription_feedback",
               "transcriptionSeparateFromPronunciation": true
@@ -912,8 +912,8 @@
           {
             "itemId": "english-pre-a1-m026-speaking-ex01-i02",
             "position": 2,
-            "prompt": "Say a sentence with “butterfly”.",
-            "modelAnswer": "I like butterfly.",
+            "prompt": "Say a short sentence about “butterfly”. You can use the model.",
+            "modelAnswer": "I can see a butterfly.",
             "evaluation": {
               "type": "transcription_feedback",
               "transcriptionSeparateFromPronunciation": true
@@ -922,8 +922,8 @@
           {
             "itemId": "english-pre-a1-m026-speaking-ex01-i03",
             "position": 3,
-            "prompt": "Say a sentence with “ant”.",
-            "modelAnswer": "I like ant.",
+            "prompt": "Say a short sentence about “ant”. You can use the model.",
+            "modelAnswer": "I can see an ant.",
             "evaluation": {
               "type": "transcription_feedback",
               "transcriptionSeparateFromPronunciation": true
@@ -932,8 +932,8 @@
           {
             "itemId": "english-pre-a1-m026-speaking-ex01-i04",
             "position": 4,
-            "prompt": "Say a sentence with “spider”.",
-            "modelAnswer": "I like spider.",
+            "prompt": "Say a short sentence about “spider”. You can use the model.",
+            "modelAnswer": "I can see a spider.",
             "evaluation": {
               "type": "transcription_feedback",
               "transcriptionSeparateFromPronunciation": true
@@ -942,8 +942,8 @@
           {
             "itemId": "english-pre-a1-m026-speaking-ex01-i05",
             "position": 5,
-            "prompt": "Say a sentence with “ladybird”.",
-            "modelAnswer": "I like ladybird.",
+            "prompt": "Say a short sentence about “ladybird”. You can use the model.",
+            "modelAnswer": "I can see a ladybird.",
             "evaluation": {
               "type": "transcription_feedback",
               "transcriptionSeparateFromPronunciation": true
@@ -952,8 +952,8 @@
           {
             "itemId": "english-pre-a1-m026-speaking-ex01-i06",
             "position": 6,
-            "prompt": "Say a sentence with “caterpillar”.",
-            "modelAnswer": "I like caterpillar.",
+            "prompt": "Say a short sentence about “caterpillar”. You can use the model.",
+            "modelAnswer": "I can see a caterpillar.",
             "evaluation": {
               "type": "transcription_feedback",
               "transcriptionSeparateFromPronunciation": true
@@ -962,8 +962,8 @@
           {
             "itemId": "english-pre-a1-m026-speaking-ex01-i07",
             "position": 7,
-            "prompt": "Say a sentence with “mosquito”.",
-            "modelAnswer": "I like mosquito.",
+            "prompt": "Say a short sentence about “mosquito”. You can use the model.",
+            "modelAnswer": "I can see a mosquito.",
             "evaluation": {
               "type": "transcription_feedback",
               "transcriptionSeparateFromPronunciation": true
@@ -972,8 +972,8 @@
           {
             "itemId": "english-pre-a1-m026-speaking-ex01-i08",
             "position": 8,
-            "prompt": "Say a sentence with “beetle”.",
-            "modelAnswer": "I like beetle.",
+            "prompt": "Say a short sentence about “beetle”. You can use the model.",
+            "modelAnswer": "I can see a beetle.",
             "evaluation": {
               "type": "transcription_feedback",
               "transcriptionSeparateFromPronunciation": true
@@ -982,8 +982,8 @@
           {
             "itemId": "english-pre-a1-m026-speaking-ex01-i09",
             "position": 9,
-            "prompt": "Say a sentence with “dragonfly”.",
-            "modelAnswer": "I like dragonfly.",
+            "prompt": "Say a short sentence about “dragonfly”. You can use the model.",
+            "modelAnswer": "I can see a dragonfly.",
             "evaluation": {
               "type": "transcription_feedback",
               "transcriptionSeparateFromPronunciation": true
@@ -992,8 +992,8 @@
           {
             "itemId": "english-pre-a1-m026-speaking-ex01-i10",
             "position": 10,
-            "prompt": "Say a sentence with “grasshopper”.",
-            "modelAnswer": "I like grasshopper.",
+            "prompt": "Say a short sentence about “grasshopper”. You can use the model.",
+            "modelAnswer": "I can see a grasshopper.",
             "evaluation": {
               "type": "transcription_feedback",
               "transcriptionSeparateFromPronunciation": true
@@ -1010,9 +1010,9 @@
         "exerciseId": "english-pre-a1-m026-listening-ex01",
         "type": "listening_gap_fill",
         "content": {
-          "audio": "tts:en-GB:Welcome! This is the bug hunt. I can see bee. I can see butterfly. I can see ant. I can see spider. I can see ladybird. I can see caterpillar. I can see mosquito. I can see beetle. I can see dragonfly. I can see grasshopper. I like this place. Thank you for listening.",
+          "audio": "tts:en-GB:In the garden, I see a bee, a butterfly, an ant and a spider. I see a ladybird and a caterpillar. I hear a mosquito. I also see a beetle, a dragonfly and a grasshopper.",
           "audioLocale": "en-GB",
-          "transcriptTemplate": "Welcome! This is the bug hunt. I can see [[gap-01]]. I can see [[gap-02]]. I can see [[gap-03]]. I can see [[gap-04]]. I can see [[gap-05]]. I can see [[gap-06]]. I can see [[gap-07]]. I can see [[gap-08]]. I can see [[gap-09]]. I can see [[gap-10]]. I like this place. Thank you for listening.",
+          "transcriptTemplate": "In the garden, I see a [[gap-01]], a [[gap-02]], an [[gap-03]] and a [[gap-04]]. I see a [[gap-05]] and a [[gap-06]]. I hear a [[gap-07]]. I also see a [[gap-08]], a [[gap-09]] and a [[gap-10]].",
           "wordBank": [
             {
               "wordId": "english-pre-a1-m026-listening-word-01",

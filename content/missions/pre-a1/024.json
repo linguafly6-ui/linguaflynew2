@@ -28,19 +28,19 @@
         "type": "vocabulary_pairs",
         "theory": {
           "title": "Farm Friends: vocabulary",
-          "explanation": "Learn ten useful words about farm friends. Listen to each British English model and repeat it.",
+          "explanation": "Learn ten useful words about life on a farm. Listen to each British English model and repeat it.",
           "patterns": [
             {
-              "label": "Useful sentence",
-              "pattern": "I like farm.",
+              "label": "Say what is on a farm",
+              "pattern": "There is a + singular noun.",
               "examples": [
-                "I can see farm.",
-                "This is barn.",
-                "I like field."
+                "There is a cow in the field.",
+                "There is a barn on the farm.",
+                "There is a hen by the farmer."
               ]
             }
           ],
-          "tip": "Escucha cada palabra y úsala en una frase corta."
+          "tip": "Escucha, repite y fíjate en la frase completa. Usa el modelo para crear tu propia frase."
         },
         "items": [
           {
@@ -437,7 +437,7 @@
           {
             "itemId": "english-pre-a1-m024-grammar-ex01-i02",
             "position": 2,
-            "prompt": "Complete: There ___ a hen.",
+            "prompt": "Complete: There ___ a hen by the barn.",
             "evaluation": {
               "type": "single_choice"
             },
@@ -455,9 +455,9 @@
               "type": "single_choice"
             },
             "options": [
-              "Hay una oveja",
-              "Hay dos ovejas",
-              "La oveja está comiendo"
+              "Hay una oveja.",
+              "Hay dos ovejas.",
+              "La oveja está comiendo."
             ]
           },
           {
@@ -476,79 +476,79 @@
           {
             "itemId": "english-pre-a1-m024-grammar-ex01-i05",
             "position": 5,
-            "prompt": "Choose the correct sentence.",
+            "prompt": "Complete: There is ___ farmer on the farm.",
             "evaluation": {
               "type": "single_choice"
             },
             "options": [
-              "There is a cow.",
-              "There are a cow.",
-              "There is cow a."
+              "a",
+              "an",
+              "are"
             ]
           },
           {
             "itemId": "english-pre-a1-m024-grammar-ex01-i06",
             "position": 6,
-            "prompt": "Complete: There ___ a hen.",
+            "prompt": "Which sentence names one tractor?",
             "evaluation": {
               "type": "single_choice"
             },
             "options": [
-              "is",
-              "are",
-              "am"
+              "There is a tractor.",
+              "There are a tractor.",
+              "There is tractors."
             ]
           },
           {
             "itemId": "english-pre-a1-m024-grammar-ex01-i07",
             "position": 7,
-            "prompt": "What does “There is a sheep” mean?",
+            "prompt": "Choose the correct sentence about a silo.",
             "evaluation": {
               "type": "single_choice"
             },
             "options": [
-              "Hay una oveja",
-              "Hay dos ovejas",
-              "La oveja está comiendo"
+              "There is a silo.",
+              "There are a silo.",
+              "There is silo a."
             ]
           },
           {
             "itemId": "english-pre-a1-m024-grammar-ex01-i08",
             "position": 8,
-            "prompt": "Choose the phrase for one goat.",
-            "evaluation": {
-              "type": "single_choice"
-            },
-            "options": [
-              "There is a goat.",
-              "There are a goat.",
-              "There is goats."
-            ]
-          },
-          {
-            "itemId": "english-pre-a1-m024-grammar-ex01-i09",
-            "position": 9,
-            "prompt": "Choose the correct sentence.",
-            "evaluation": {
-              "type": "single_choice"
-            },
-            "options": [
-              "There is a cow.",
-              "There are a cow.",
-              "There is cow a."
-            ]
-          },
-          {
-            "itemId": "english-pre-a1-m024-grammar-ex01-i10",
-            "position": 10,
-            "prompt": "Complete: There ___ a hen.",
+            "prompt": "Complete: There ___ a barn in the field.",
             "evaluation": {
               "type": "single_choice"
             },
             "options": [
               "is",
               "are",
-              "am"
+              "be"
+            ]
+          },
+          {
+            "itemId": "english-pre-a1-m024-grammar-ex01-i09",
+            "position": 9,
+            "prompt": "Which phrase means “Hay una granja”?",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "There is a farm.",
+              "There are a farm.",
+              "There is farm a."
+            ]
+          },
+          {
+            "itemId": "english-pre-a1-m024-grammar-ex01-i10",
+            "position": 10,
+            "prompt": "Choose the correct sentence about a sheep.",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "There is a sheep.",
+              "There is an sheep.",
+              "There are a sheep."
             ]
           }
         ]
@@ -902,8 +902,8 @@
           {
             "itemId": "english-pre-a1-m024-speaking-ex01-i01",
             "position": 1,
-            "prompt": "Say a sentence with “farm”.",
-            "modelAnswer": "I like farm.",
+            "prompt": "Say a short sentence about “farm”. You can use the model.",
+            "modelAnswer": "I am on a farm.",
             "evaluation": {
               "type": "transcription_feedback",
               "transcriptionSeparateFromPronunciation": true
@@ -912,8 +912,8 @@
           {
             "itemId": "english-pre-a1-m024-speaking-ex01-i02",
             "position": 2,
-            "prompt": "Say a sentence with “barn”.",
-            "modelAnswer": "I like barn.",
+            "prompt": "Say a short sentence about “barn”. You can use the model.",
+            "modelAnswer": "There is a barn.",
             "evaluation": {
               "type": "transcription_feedback",
               "transcriptionSeparateFromPronunciation": true
@@ -922,8 +922,8 @@
           {
             "itemId": "english-pre-a1-m024-speaking-ex01-i03",
             "position": 3,
-            "prompt": "Say a sentence with “field”.",
-            "modelAnswer": "I like field.",
+            "prompt": "Say a short sentence about “field”. You can use the model.",
+            "modelAnswer": "The field is green.",
             "evaluation": {
               "type": "transcription_feedback",
               "transcriptionSeparateFromPronunciation": true
@@ -932,8 +932,8 @@
           {
             "itemId": "english-pre-a1-m024-speaking-ex01-i04",
             "position": 4,
-            "prompt": "Say a sentence with “farmer”.",
-            "modelAnswer": "I like farmer.",
+            "prompt": "Say a short sentence about “farmer”. You can use the model.",
+            "modelAnswer": "The farmer is here.",
             "evaluation": {
               "type": "transcription_feedback",
               "transcriptionSeparateFromPronunciation": true
@@ -942,8 +942,8 @@
           {
             "itemId": "english-pre-a1-m024-speaking-ex01-i05",
             "position": 5,
-            "prompt": "Say a sentence with “cow”.",
-            "modelAnswer": "I like cow.",
+            "prompt": "Say a short sentence about “cow”. You can use the model.",
+            "modelAnswer": "There is a cow.",
             "evaluation": {
               "type": "transcription_feedback",
               "transcriptionSeparateFromPronunciation": true
@@ -952,8 +952,8 @@
           {
             "itemId": "english-pre-a1-m024-speaking-ex01-i06",
             "position": 6,
-            "prompt": "Say a sentence with “sheep”.",
-            "modelAnswer": "I like sheep.",
+            "prompt": "Say a short sentence about “sheep”. You can use the model.",
+            "modelAnswer": "There is a sheep.",
             "evaluation": {
               "type": "transcription_feedback",
               "transcriptionSeparateFromPronunciation": true
@@ -962,8 +962,8 @@
           {
             "itemId": "english-pre-a1-m024-speaking-ex01-i07",
             "position": 7,
-            "prompt": "Say a sentence with “goat”.",
-            "modelAnswer": "I like goat.",
+            "prompt": "Say a short sentence about “goat”. You can use the model.",
+            "modelAnswer": "There is a goat.",
             "evaluation": {
               "type": "transcription_feedback",
               "transcriptionSeparateFromPronunciation": true
@@ -972,8 +972,8 @@
           {
             "itemId": "english-pre-a1-m024-speaking-ex01-i08",
             "position": 8,
-            "prompt": "Say a sentence with “hen”.",
-            "modelAnswer": "I like hen.",
+            "prompt": "Say a short sentence about “hen”. You can use the model.",
+            "modelAnswer": "There is a hen.",
             "evaluation": {
               "type": "transcription_feedback",
               "transcriptionSeparateFromPronunciation": true
@@ -982,8 +982,8 @@
           {
             "itemId": "english-pre-a1-m024-speaking-ex01-i09",
             "position": 9,
-            "prompt": "Say a sentence with “tractor”.",
-            "modelAnswer": "I like tractor.",
+            "prompt": "Say a short sentence about “tractor”. You can use the model.",
+            "modelAnswer": "The tractor is big.",
             "evaluation": {
               "type": "transcription_feedback",
               "transcriptionSeparateFromPronunciation": true
@@ -992,8 +992,8 @@
           {
             "itemId": "english-pre-a1-m024-speaking-ex01-i10",
             "position": 10,
-            "prompt": "Say a sentence with “silo”.",
-            "modelAnswer": "I like silo.",
+            "prompt": "Say a short sentence about “silo”. You can use the model.",
+            "modelAnswer": "The silo is tall.",
             "evaluation": {
               "type": "transcription_feedback",
               "transcriptionSeparateFromPronunciation": true
@@ -1010,9 +1010,9 @@
         "exerciseId": "english-pre-a1-m024-listening-ex01",
         "type": "listening_gap_fill",
         "content": {
-          "audio": "tts:en-GB:Welcome! This is farm friends. I can see farm. I can see barn. I can see field. I can see farmer. I can see cow. I can see sheep. I can see goat. I can see hen. I can see tractor. I can see silo. I like this place. Thank you for listening.",
+          "audio": "tts:en-GB:This is a farm. There is a barn in the field. The farmer has a cow, a sheep, a goat and a hen. A tractor is by the silo.",
           "audioLocale": "en-GB",
-          "transcriptTemplate": "Welcome! This is [[gap-01]] friends. I can see farm. I can see [[gap-02]]. I can see [[gap-03]]. I can see [[gap-04]]. I can see [[gap-05]]. I can see [[gap-06]]. I can see [[gap-07]]. I can see [[gap-08]]. I can see [[gap-09]]. I can see [[gap-10]]. I like this place. Thank you for listening.",
+          "transcriptTemplate": "This is a [[gap-01]]. There is a [[gap-02]] in the [[gap-03]]. The [[gap-04]] has a [[gap-05]], a [[gap-06]], a [[gap-07]] and a [[gap-08]]. A [[gap-09]] is by the [[gap-10]].",
           "wordBank": [
             {
               "wordId": "english-pre-a1-m024-listening-word-01",

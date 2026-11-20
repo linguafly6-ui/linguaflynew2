@@ -28,19 +28,19 @@
         "type": "vocabulary_pairs",
         "theory": {
           "title": "Animal Sounds: vocabulary",
-          "explanation": "Learn ten useful words about animal sounds. Listen to each British English model and repeat it.",
+          "explanation": "Learn ten useful words for farm animals and the sounds they make. Listen to each British English model and repeat it.",
           "patterns": [
             {
-              "label": "Useful sentence",
-              "pattern": "I like cow.",
+              "label": "Name an animal",
+              "pattern": "What is it? · It is a + animal.",
               "examples": [
-                "I can see cow.",
-                "This is sheep.",
-                "I like duck."
+                "What is it? It is a cow.",
+                "It is a sheep.",
+                "It is a duck."
               ]
             }
           ],
-          "tip": "Escucha cada palabra y úsala en una frase corta."
+          "tip": "Escucha, repite y fíjate en la frase completa. Usa el modelo para crear tu propia frase."
         },
         "items": [
           {
@@ -96,7 +96,7 @@
             "itemId": "english-pre-a1-m023-explore-ex01-i08",
             "position": 8,
             "english": "quack",
-            "spanish": "cua",
+            "spanish": "cuac",
             "audio": "tts:en-GB:quack"
           },
           {
@@ -177,7 +177,7 @@
             "options": [
               "caballo",
               "gallina",
-              "cua"
+              "cuac"
             ]
           },
           {
@@ -204,7 +204,7 @@
             },
             "options": [
               "gallina",
-              "cua",
+              "cuac",
               "pavo"
             ]
           },
@@ -231,7 +231,7 @@
               "type": "single_choice"
             },
             "options": [
-              "cua",
+              "cuac",
               "pavo",
               "oveja"
             ]
@@ -366,7 +366,7 @@
             "itemId": "english-pre-a1-m023-practice-ex01-i18",
             "position": 18,
             "taskType": "english_vocabulary",
-            "prompt": "Which English word means “cua”?",
+            "prompt": "Which English word means “cuac”?",
             "evaluation": {
               "type": "single_choice"
             },
@@ -424,20 +424,20 @@
           {
             "itemId": "english-pre-a1-m023-grammar-ex01-i01",
             "position": 1,
-            "prompt": "Choose the correct question.",
+            "prompt": "You see a cow. What do you ask?",
             "evaluation": {
               "type": "single_choice"
             },
             "options": [
               "What is it?",
-              "Where are it?",
-              "Who is it animal?"
+              "Where is it?",
+              "Who are it?"
             ]
           },
           {
             "itemId": "english-pre-a1-m023-grammar-ex01-i02",
             "position": 2,
-            "prompt": "Complete: What is it? It is ___ cow.",
+            "prompt": "Complete: It is ___ cow.",
             "evaluation": {
               "type": "single_choice"
             },
@@ -450,105 +450,105 @@
           {
             "itemId": "english-pre-a1-m023-grammar-ex01-i03",
             "position": 3,
-            "prompt": "Choose the correct answer for a duck.",
+            "prompt": "Choose the correct answer about a sheep.",
             "evaluation": {
               "type": "single_choice"
             },
             "options": [
-              "It is a duck.",
-              "It are a duck.",
-              "It is duck a."
+              "It is a sheep.",
+              "It are a sheep.",
+              "It is sheep a."
             ]
           },
           {
             "itemId": "english-pre-a1-m023-grammar-ex01-i04",
             "position": 4,
-            "prompt": "You hear “quack”. Which animal is it?",
+            "prompt": "You hear “quack”. What is it?",
             "evaluation": {
               "type": "single_choice"
             },
             "options": [
               "A duck",
               "A horse",
-              "A sheep"
+              "A pig"
             ]
           },
           {
             "itemId": "english-pre-a1-m023-grammar-ex01-i05",
             "position": 5,
-            "prompt": "Choose the correct question.",
+            "prompt": "Complete: What is it? It ___ a horse.",
             "evaluation": {
               "type": "single_choice"
             },
             "options": [
-              "What is it?",
-              "Where are it?",
-              "Who is it animal?"
+              "is",
+              "are",
+              "am"
             ]
           },
           {
             "itemId": "english-pre-a1-m023-grammar-ex01-i06",
             "position": 6,
-            "prompt": "Complete: What is it? It is ___ cow.",
+            "prompt": "You hear “moo”. Which animal makes this sound?",
             "evaluation": {
               "type": "single_choice"
             },
             "options": [
-              "a",
-              "an",
-              "are"
+              "A cow",
+              "A chicken",
+              "A turkey"
             ]
           },
           {
             "itemId": "english-pre-a1-m023-grammar-ex01-i07",
             "position": 7,
-            "prompt": "Choose the correct answer for a duck.",
+            "prompt": "Choose the correct sentence about a pig.",
             "evaluation": {
               "type": "single_choice"
             },
             "options": [
-              "It is a duck.",
-              "It are a duck.",
-              "It is duck a."
+              "It is a pig.",
+              "It is an pig.",
+              "It are a pig."
             ]
           },
           {
             "itemId": "english-pre-a1-m023-grammar-ex01-i08",
             "position": 8,
-            "prompt": "You hear “quack”. Which animal is it?",
+            "prompt": "Which animal says “quack”?",
             "evaluation": {
               "type": "single_choice"
             },
             "options": [
               "A duck",
-              "A horse",
-              "A sheep"
+              "A sheep",
+              "A rooster"
             ]
           },
           {
             "itemId": "english-pre-a1-m023-grammar-ex01-i09",
             "position": 9,
-            "prompt": "Choose the correct question.",
-            "evaluation": {
-              "type": "single_choice"
-            },
-            "options": [
-              "What is it?",
-              "Where are it?",
-              "Who is it animal?"
-            ]
-          },
-          {
-            "itemId": "english-pre-a1-m023-grammar-ex01-i10",
-            "position": 10,
-            "prompt": "Complete: What is it? It is ___ cow.",
+            "prompt": "Complete: It is ___ chicken.",
             "evaluation": {
               "type": "single_choice"
             },
             "options": [
               "a",
               "an",
-              "are"
+              "is"
+            ]
+          },
+          {
+            "itemId": "english-pre-a1-m023-grammar-ex01-i10",
+            "position": 10,
+            "prompt": "Choose the correct answer about a turkey.",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "It is a turkey.",
+              "It is an turkey.",
+              "It are a turkey."
             ]
           }
         ]
@@ -622,7 +622,7 @@
             "itemId": "english-pre-a1-m023-pronunciation-ex01-i08",
             "position": 8,
             "word": "quack",
-            "translation": "cua",
+            "translation": "cuac",
             "pronunciationGuide": "kuák",
             "audio": "tts:en-GB:quack"
           },
@@ -902,8 +902,8 @@
           {
             "itemId": "english-pre-a1-m023-speaking-ex01-i01",
             "position": 1,
-            "prompt": "Say a sentence with “cow”.",
-            "modelAnswer": "I like cow.",
+            "prompt": "Say a short sentence about “cow”. You can use the model.",
+            "modelAnswer": "I can see a cow.",
             "evaluation": {
               "type": "transcription_feedback",
               "transcriptionSeparateFromPronunciation": true
@@ -912,8 +912,8 @@
           {
             "itemId": "english-pre-a1-m023-speaking-ex01-i02",
             "position": 2,
-            "prompt": "Say a sentence with “sheep”.",
-            "modelAnswer": "I like sheep.",
+            "prompt": "Say a short sentence about “sheep”. You can use the model.",
+            "modelAnswer": "I can see a sheep.",
             "evaluation": {
               "type": "transcription_feedback",
               "transcriptionSeparateFromPronunciation": true
@@ -922,8 +922,8 @@
           {
             "itemId": "english-pre-a1-m023-speaking-ex01-i03",
             "position": 3,
-            "prompt": "Say a sentence with “duck”.",
-            "modelAnswer": "I like duck.",
+            "prompt": "Say a short sentence about “duck”. You can use the model.",
+            "modelAnswer": "I can see a duck.",
             "evaluation": {
               "type": "transcription_feedback",
               "transcriptionSeparateFromPronunciation": true
@@ -932,8 +932,8 @@
           {
             "itemId": "english-pre-a1-m023-speaking-ex01-i04",
             "position": 4,
-            "prompt": "Say a sentence with “horse”.",
-            "modelAnswer": "I like horse.",
+            "prompt": "Say a short sentence about “horse”. You can use the model.",
+            "modelAnswer": "I can see a horse.",
             "evaluation": {
               "type": "transcription_feedback",
               "transcriptionSeparateFromPronunciation": true
@@ -942,8 +942,8 @@
           {
             "itemId": "english-pre-a1-m023-speaking-ex01-i05",
             "position": 5,
-            "prompt": "Say a sentence with “pig”.",
-            "modelAnswer": "I like pig.",
+            "prompt": "Say a short sentence about “pig”. You can use the model.",
+            "modelAnswer": "I can see a pig.",
             "evaluation": {
               "type": "transcription_feedback",
               "transcriptionSeparateFromPronunciation": true
@@ -952,8 +952,8 @@
           {
             "itemId": "english-pre-a1-m023-speaking-ex01-i06",
             "position": 6,
-            "prompt": "Say a sentence with “chicken”.",
-            "modelAnswer": "I like chicken.",
+            "prompt": "Say a short sentence about “chicken”. You can use the model.",
+            "modelAnswer": "I can see a chicken.",
             "evaluation": {
               "type": "transcription_feedback",
               "transcriptionSeparateFromPronunciation": true
@@ -962,8 +962,8 @@
           {
             "itemId": "english-pre-a1-m023-speaking-ex01-i07",
             "position": 7,
-            "prompt": "Say a sentence with “moo”.",
-            "modelAnswer": "I like moo.",
+            "prompt": "Say a short sentence about “moo”. You can use the model.",
+            "modelAnswer": "A cow says moo.",
             "evaluation": {
               "type": "transcription_feedback",
               "transcriptionSeparateFromPronunciation": true
@@ -972,8 +972,8 @@
           {
             "itemId": "english-pre-a1-m023-speaking-ex01-i08",
             "position": 8,
-            "prompt": "Say a sentence with “quack”.",
-            "modelAnswer": "I like quack.",
+            "prompt": "Say a short sentence about “quack”. You can use the model.",
+            "modelAnswer": "A duck says quack.",
             "evaluation": {
               "type": "transcription_feedback",
               "transcriptionSeparateFromPronunciation": true
@@ -982,8 +982,8 @@
           {
             "itemId": "english-pre-a1-m023-speaking-ex01-i09",
             "position": 9,
-            "prompt": "Say a sentence with “rooster”.",
-            "modelAnswer": "I like rooster.",
+            "prompt": "Say a short sentence about “rooster”. You can use the model.",
+            "modelAnswer": "I can see a rooster.",
             "evaluation": {
               "type": "transcription_feedback",
               "transcriptionSeparateFromPronunciation": true
@@ -992,8 +992,8 @@
           {
             "itemId": "english-pre-a1-m023-speaking-ex01-i10",
             "position": 10,
-            "prompt": "Say a sentence with “turkey”.",
-            "modelAnswer": "I like turkey.",
+            "prompt": "Say a short sentence about “turkey”. You can use the model.",
+            "modelAnswer": "I can see a turkey.",
             "evaluation": {
               "type": "transcription_feedback",
               "transcriptionSeparateFromPronunciation": true
@@ -1010,9 +1010,9 @@
         "exerciseId": "english-pre-a1-m023-listening-ex01",
         "type": "listening_gap_fill",
         "content": {
-          "audio": "tts:en-GB:Welcome! This is animal sounds. I can see cow. I can see sheep. I can see duck. I can see horse. I can see pig. I can see chicken. I can see moo. I can see quack. I can see rooster. I can see turkey. I like this place. Thank you for listening.",
+          "audio": "tts:en-GB:On the farm, I see a cow, a sheep, a duck, a horse, a pig and a chicken. The cow says moo. The duck says quack. I also see a rooster and a turkey.",
           "audioLocale": "en-GB",
-          "transcriptTemplate": "Welcome! This is animal sounds. I can see [[gap-01]]. I can see [[gap-02]]. I can see [[gap-03]]. I can see [[gap-04]]. I can see [[gap-05]]. I can see [[gap-06]]. I can see [[gap-07]]. I can see [[gap-08]]. I can see [[gap-09]]. I can see [[gap-10]]. I like this place. Thank you for listening.",
+          "transcriptTemplate": "On the farm, I see a [[gap-01]], a [[gap-02]], a [[gap-03]], a [[gap-04]], a [[gap-05]] and a [[gap-06]]. The cow says [[gap-07]]. The duck says [[gap-08]]. I also see a [[gap-09]] and a [[gap-10]].",
           "wordBank": [
             {
               "wordId": "english-pre-a1-m023-listening-word-01",
