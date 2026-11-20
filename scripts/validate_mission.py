@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Standard-library structural and cross-reference validator for mission v1.0.0."""
+"""Standard-library structural and cross-reference validator for mission v1.1.0."""
 import json, re, sys
 from pathlib import Path
 
@@ -15,7 +15,7 @@ def validate(data):
         elif value in seen: err(path, f"ID duplicado; primera aparición en {seen[value]}")
         else: seen[value] = path
     if not isinstance(data, dict): return ["$: la raíz debe ser un objeto"]
-    if data.get("schemaVersion") != "1.0.0": err("$.schemaVersion", "debe ser 1.0.0")
+    if data.get("schemaVersion") != "1.1.0": err("$.schemaVersion", "debe ser 1.1.0")
     if type(data.get("contentVersion")) is not int or data["contentVersion"] < 1: err("$.contentVersion", "debe ser entero >= 1")
     for group, field in [("course","courseId"),("unit","unitId"),("mission","missionId")]:
         obj=data.get(group)
@@ -58,22 +58,38 @@ def validate(data):
             else: check_id(c["passageId"],p+".exercise.content.passageId")
         if key=="listening":
             c=ex.get("content",{})
-            if not isinstance(c,dict): err(p+".exercise.content","objeto obligatorio"); continue
-            if not c.get("audio") or not c.get("transcriptTemplate"): err(p+".exercise.content","requiere audio y transcriptTemplate")
+            if not isinstance(c,dict):
+                err(p+".exercise.content","objeto obligatorio")
+                continue
+            if not c.get("audio"): err(p+".exercise.content.audio","requiere audio reproducible o directiva de síntesis")
+            if c.get("audioLocale")!="en-GB": err(p+".exercise.content.audioLocale","debe ser en-GB")
+            if c.get("interaction")!="select_place_move_replace": err(p+".exercise.content.interaction","debe permitir seleccionar, colocar, mover y sustituir palabras")
+            template=c.get("transcriptTemplate","")
+            tokens=re.findall(r"\[\[gap-(\d{2})\]\]",template) if isinstance(template,str) else []
+            if tokens!=[f"{i:02d}" for i in range(1,11)]: err(p+".exercise.content.transcriptTemplate","debe contener exactamente los tokens [[gap-01]] a [[gap-10]], en orden")
             bank=c.get("wordBank")
-            if not isinstance(bank,list) or len(bank)!=10: err(p+".exercise.content.wordBank","debe contener 10 palabras"); continue
-            bank_ids=set()
+            if not isinstance(bank,list) or len(bank)!=10:
+                err(p+".exercise.content.wordBank","debe contener exactamente 10 palabras")
+                bank=[]
+            bank_ids=set(); bank_words=[]
             for k,w in enumerate(bank):
-                if not isinstance(w,dict): err(f"{p}.exercise.content.wordBank[{k}]","entrada inválida"); continue
+                if not isinstance(w,dict):
+                    err(f"{p}.exercise.content.wordBank[{k}]","entrada inválida")
+                    continue
                 wid=w.get("wordId"); check_id(wid,f"{p}.exercise.content.wordBank[{k}].wordId")
                 if isinstance(wid,str) and wid: bank_ids.add(wid)
-                if not w.get("word"): err(f"{p}.exercise.content.wordBank[{k}].word","palabra obligatoria")
-            used=[it.get("expectedWordId") for it in items if isinstance(it,dict)]
-            for k,wid in enumerate(used):
+                word=w.get("word")
+                if not isinstance(word,str) or not word.strip(): err(f"{p}.exercise.content.wordBank[{k}].word","palabra obligatoria")
+                else: bank_words.append(word.strip().casefold())
+            if len(bank_words)!=10 or len(set(bank_words))!=10: err(p+".exercise.content.wordBank","las diez palabras deben ser distintas")
+            used=[]
+            for k,it in enumerate(items):
+                if not isinstance(it,dict): continue
+                expected=f"[[gap-{k+1:02d}]]"
+                if it.get("gapToken")!=expected: err(f"{p}.exercise.items[{k}].gapToken",f"debe ser {expected}")
+                wid=it.get("expectedWordId"); used.append(wid)
                 if not isinstance(wid,str) or wid not in bank_ids: err(f"{p}.exercise.items[{k}].expectedWordId","no referencia palabra del banco")
-            if len([x for x in used if isinstance(x,str)])!=10 or len(set(x for x in used if isinstance(x,str)))!=10: err(p+".exercise.items","los diez huecos deben usar palabras distintas")
-            template=c.get("transcriptTemplate","")
-            if not isinstance(template,str) or template.count("{{gap:")!=10: err(p+".exercise.content.transcriptTemplate","debe contener exactamente 10 tokens {{gap:...}}")
+            if len(used)!=10 or len(set(x for x in used if isinstance(x,str)))!=10: err(p+".exercise.items","los diez huecos deben usar las diez palabras distintas del banco")
     return errors
 
 def main():
@@ -87,6 +103,6 @@ def main():
         print(f"NO VÁLIDA: {len(issues)} problema(s)")
         for x in issues: print("- "+x)
         return 1
-    print("VÁLIDA: estructura, cantidades, orden e IDs básicos conformes a v1.0.0"); return 0
+    print("VÁLIDA: estructura, cantidades, orden e IDs básicos conformes a v1.1.0"); return 0
 
 if __name__=="__main__": raise SystemExit(main())

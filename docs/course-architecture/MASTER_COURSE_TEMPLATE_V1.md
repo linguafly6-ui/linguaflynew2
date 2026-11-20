@@ -24,7 +24,7 @@ Orden fijo de las ocho secciones:
 | 5 | reading | Reading | 1 pasaje completo y visible + 10 preguntas de comprensión autocorregibles |
 | 6 | writing | Writing | 10 dictados de palabras y frases; audio británico, entrada de respuesta, corrección y resultado |
 | 7 | speaking | Speaking | 10 tareas/prompts; modelo de referencia, grabación, transcripción/análisis y feedback. No presentar la transcripción como medición fonética |
-| 8 | listening | Listening | 1 audio/pasaje completo + texto con 10 huecos + banco de 10 palabras mezcladas; asignar, mover y sustituir palabras, corregir, mostrar soluciones y puntuación |
+| 8 | listening | Listening | 1 audio reproducible en en-GB + texto con 10 huecos inline + banco de 10 palabras mezcladas; seleccionar, colocar, mover y sustituir palabras, corregir, mostrar soluciones y puntuación |
 
 Las cantidades son exactas, no mínimos. Una misión incompleta no se considera conforme. Si una sección necesita una adaptación pedagógica, debe conservar la misma cantidad y el mismo contrato de interacción.
 
@@ -37,7 +37,7 @@ Las cantidades son exactas, no mínimos. Una misión incompleta no se considera 
 - **Reading:** el pasaje se muestra como bloque independiente antes de las preguntas. Exactamente diez preguntas vinculadas al pasaje; el alumno puede volver a consultarlo.
 - **Writing:** exactamente diez dictados, combinando palabras y frases. Cada elemento tiene audio, respuesta esperada y evaluación; los intentos deben conservarse.
 - **Speaking:** exactamente diez prompts evaluables. Se permite volver a grabar. La respuesta del servicio de voz distingue transcripción, coincidencia textual y feedback. No se afirma que una coincidencia de Whisper mida la calidad fonética.
-- **Listening:** audio reproducible; texto con diez huecos numerados; banco con las diez respuestas en orden mezclado; las palabras colocadas se pueden mover; al sustituir una respuesta, la anterior vuelve al banco; al comprobar se muestran aciertos, errores y soluciones.
+- **Listening (formato canónico único para todos los niveles):** audio reproducible en `en-GB`; texto completo con exactamente diez huecos inline `[[gap-01]]` a `[[gap-10]]`; banco de diez palabras distintas, mezcladas por intento; seleccionar, colocar, mover y sustituir palabras. Al sustituir, la palabra desplazada vuelve al banco. Al comprobar se muestran aciertos, errores, soluciones y puntuación. No se admiten preguntas tipo test ni transcripción diferida como sustituto del gap-fill.
 
 ## 3. Identificadores estables
 
@@ -196,7 +196,7 @@ El contrato ejecutable se define en:
 - `scripts/validate_mission.py` (validador complementario en Python estándar).
 - `docs/course-architecture/SCHEMA_AND_VALIDATOR_V1.md` (guía de uso y límites).
 
-Toda nueva misión debe pasar ambas validaciones antes de incorporarse a un lote de migración. El JSON Schema valida estructura, tipos y cantidades; el script comprueba además unicidad de IDs, coherencia de referencias entre curso/unidad/misión y correspondencia de los diez huecos de Listening con las diez palabras del banco.
+Toda nueva misión debe pasar ambas validaciones antes de incorporarse a un lote de migración. El JSON Schema valida estructura, tipos y cantidades; el script comprueba además unicidad de IDs, coherencia de referencias entre curso/unidad/misión y correspondencia exacta de los tokens `[[gap-01]]` a `[[gap-10]]` con las diez palabras distintas del banco y el contrato de interacción común.
 
 ## 11. Límites de esta versión
 
