@@ -1,4 +1,4 @@
-# Contrato JSON y validador de misión v1.0.0
+# Contrato JSON y validador de misión v1.1.0
 
 Este paquete formaliza el contrato de datos definido en MASTER_COURSE_TEMPLATE_V1.md. No convierte páginas ni modifica el runtime.
 

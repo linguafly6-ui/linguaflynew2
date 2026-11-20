@@ -12,7 +12,7 @@ from scripts.validate_mission import validate
 
 def make_mission():
     data = {
-        "schemaVersion": "1.0.0",
+        "schemaVersion": "1.1.0",
         "contentVersion": 1,
         "course": {"courseId": "test-course", "level": "A1", "language": "en-GB"},
         "unit": {"unitId": "test-unit", "courseId": "test-course", "position": 1, "title": "Test unit"},
@@ -52,7 +52,7 @@ def make_mission():
                             evaluation={"type": "transcription_feedback",
                                         "transcriptionSeparateFromPronunciation": True})
             elif key == "listening":
-                item.update(gapToken=f"{{{{gap:{index}}}}}",
+                item.update(gapToken=f"[[gap-{index:02d}]]",
                             expectedWordId=f"test-listening-word-{index:02d}")
             items.append(item)
         exercise = {"exerciseId": f"test-{key}-exercise", "type": exercise_type, "items": items}
@@ -61,7 +61,9 @@ def make_mission():
         if key == "listening":
             exercise["content"] = {
                 "audio": "/audio/listening.mp3",
-                "transcriptTemplate": " ".join(f"{{{{gap:{i}}}}}" for i in range(1, 11)),
+                "audioLocale": "en-GB",
+                "interaction": "select_place_move_replace",
+                "transcriptTemplate": " ".join(f"[[gap-{i:02d}]]" for i in range(1, 11)),
                 "wordBank": [
                     {"wordId": f"test-listening-word-{i:02d}", "word": f"word{i}"}
                     for i in range(1, 11)
@@ -98,6 +100,20 @@ class MissionValidatorTests(unittest.TestCase):
         data["sections"][7]["exercise"]["items"][1]["expectedWordId"] = "test-listening-word-01"
         self.assertTrue(any("palabras distintas" in issue for issue in validate(data)))
 
+    def test_listening_rejects_noncanonical_interaction(self):
+        data = make_mission()
+        data["sections"][7]["exercise"]["content"]["interaction"] = "multiple_choice"
+        self.assertTrue(any("seleccionar, colocar, mover y sustituir" in issue for issue in validate(data)))
+
+    def test_listening_requires_canonical_gap_tokens(self):
+        data = make_mission()
+        data["sections"][7]["exercise"]["items"][0]["gapToken"] = "{{gap:1}}"
+        self.assertTrue(any("debe ser [[gap-01]]" in issue for issue in validate(data)))
+
+    def test_listening_rejects_duplicate_word_text(self):
+        data = make_mission()
+        data["sections"][7]["exercise"]["content"]["wordBank"][1]["word"] = "word1"
+        self.assertTrue(any("las diez palabras deben ser distintas" in issue for issue in validate(data)))
     def test_speaking_keeps_transcription_separate(self):
         data = make_mission()
         data["sections"][6]["exercise"]["items"][0]["evaluation"]["transcriptionSeparateFromPronunciation"] = False
