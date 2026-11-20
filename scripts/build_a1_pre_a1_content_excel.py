@@ -97,14 +97,22 @@ def listening_block(title,words):
     b=words[1][0] if len(words)>1 else "class"
     return (f"LISTENING · A1\n\nTEACHER SCRIPT (read twice at a natural, slow speed):\n“Hello! My name is Emma. Today, our English lesson is about {title}. I have a notebook and a pen. I listen to the new words and repeat them. My favourite word today is {a}. I practise with my friend after class. We use {b} in a short sentence. Learning English is fun.”\n\nQUESTIONS:\n1. What is the lesson about? — {title}.\n2. What does Emma have? — A notebook and a pen.\n3. What does Emma do with the new words? — She listens and repeats them.\n4. Who does Emma practise with? — Her friend.\n5. Is learning English fun for Emma? — Yes, it is.\n\nLISTEN AGAIN: Listen for the words {a} and {b}. Repeat the final sentence.")
 def main():
-    paths=sorted((ROOT/"public/missions/a1").glob("*/index.html"))
-    missions=[load_mission(p) for p in paths if p.parent.name.isdigit()]
+    mission_dirs=sorted((p for p in (ROOT/"public/missions/a1").iterdir() if p.is_dir() and p.name.isdigit()), key=lambda p:int(p.name))
+    paths=[]
+    for folder in mission_dirs:
+        # Missions 001–050 use index.html; 051–100 use index-v2.html in production.
+        candidate=folder/"index.html"
+        if not candidate.exists():
+            candidate=folder/"index-v2.html"
+        if candidate.exists():
+            paths.append(candidate)
+    missions=[load_mission(p) for p in paths]
     missions.sort(key=lambda x:x[0])
-    if len(missions)!=50: raise ValueError(f"Expected 50 A1 missions, found {len(missions)}")
+    if len(missions)!=100: raise ValueError(f"Expected 100 A1 missions, found {len(missions)}")
     wb=Workbook(); ws=wb.active; ws.title="Resumen"
     ws.append(["Curso","Misiones","Secciones nuevas por misión","Fuente","Criterio"])
-    ws.append(["A1",50,"8: Exploración, Práctica, Gramática, Pronunciación, Reading, Writing, Speaking, Listening","main · public/missions/a1","Contenido original redactado para nivel A1; Pre-A1 no se copia."])
-    ws.append(["Alcance","400 bloques didácticos (50 misiones × 8 secciones)","","",""])
+    ws.append(["A1",100,"8: Exploración, Práctica, Gramática, Pronunciación, Reading, Writing, Speaking, Listening","main · public/missions/a1","Contenido original redactado para nivel A1; Pre-A1 no se copia."])
+    ws.append(["Alcance","800 bloques didácticos (100 misiones × 8 secciones)","","",""])
     ws.append(["Base de adaptación","Se conservan los títulos y el vocabulario temático A1 de cada misión; las explicaciones, textos, diálogos y ejercicios son nuevos y graduados a A1.","","",""])
     for c in ws[1]:
         c.font=Font(bold=True,color="FFFFFF"); c.fill=PatternFill("solid",fgColor="254A87")
