@@ -1,11 +1,10 @@
 import { NextRequest, NextResponse } from "next/server";
 import { getEnv } from "@/lib/cf-context";
 import { getStudent } from "@/lib/student-auth";
-import { transcribeAudio, calculateSimilarity, detectPhoneticIssues, generateFeedback } from "@/lib/pronunciation";
+import { transcribeAudio, calculateSimilarity, detectRecognitionIssues, generateFeedback } from "@/lib/pronunciation";
 
 const GUEST_RATE_LIMIT_PER_MINUTE = 30;
 const FREE_DAILY_LIMIT = 10;
-const PRO_DAILY_LIMIT = 100;
 
 async function getGuestQuotaId(request: NextRequest) {
   // Cloudflare supplies this header at the edge; store only its SHA-256 digest.
@@ -75,7 +74,7 @@ export async function POST(request: NextRequest) {
     const isGuest = !student;
     const quotaId = isGuest ? await getGuestQuotaId(request) : String(student.id);
     const isPro = !!student && (student.plan === "pro" || student.plan === "pro_test");
-    const dailyLimit = isPro ? PRO_DAILY_LIMIT : FREE_DAILY_LIMIT;
+    const dailyLimit = FREE_DAILY_LIMIT;
 
     // Additional edge rate limit for anonymous traffic, keyed by the visitor IP.
     if (isGuest && env.AI_RATE_LIMITER) {
@@ -105,9 +104,7 @@ export async function POST(request: NextRequest) {
       usedToday = Number(usage?.total ?? 0);
       if (usedToday >= dailyLimit) {
         return NextResponse.json({
-          error: isPro
-            ? `Has alcanzado el límite de ${PRO_DAILY_LIMIT} análisis en 24 horas.`
-            : `Has alcanzado los ${FREE_DAILY_LIMIT} análisis gratuitos de las últimas 24 horas. Vuelve mañana o pásate a Pro para ampliar tu límite.`,
+          error: `Has alcanzado los ${FREE_DAILY_LIMIT} análisis disponibles en las últimas 24 horas. Vuelve mañana.`,
           quota: { used: usedToday, limit: dailyLimit, plan: isPro ? "pro" : "free" },
         }, { status: 429 });
       }
@@ -118,9 +115,9 @@ export async function POST(request: NextRequest) {
     const transcription = await transcribeAudio(await audioFile.arrayBuffer(), "en");
     if (!transcription) {
       return NextResponse.json({
-        score: 0, transcription: "",
+        score: 0, scoreLabel: "Coincidencia de transcripción (no es una nota fonética)", transcription: "",
         feedback: "No se ha podido reconocer el audio. Inténtalo de nuevo en un lugar silencioso y habla cerca del micrófono.",
-        phoneticIssues: [], britishTips: getBritishTip(target),
+        recognitionIssues: [], phoneticIssues: [], britishTips: getBritishTip(target),
         similarityType: "transcription-only",
         scoreLabel: "Sin transcripción",
         quota: isGuest ? { plan: "guest", limit: GUEST_RATE_LIMIT_PER_MINUTE, period: "minute" } : { used: usedToday + 1, limit: dailyLimit, plan: isPro ? "pro" : "free" },
@@ -129,7 +126,7 @@ export async function POST(request: NextRequest) {
 
     stage = "calculate-feedback";
     const score = calculateSimilarity(transcription, target);
-    const issues = detectPhoneticIssues(target, transcription);
+    const issues = detectRecognitionIssues(target, transcription);
     const feedback = generateFeedback(score, issues);
     const sessionId = `pron-${Date.now()}-${Math.random().toString(36).slice(2, 8)}`;
 
@@ -147,7 +144,7 @@ export async function POST(request: NextRequest) {
 
     stage = "save-session";
     return NextResponse.json({
-      sessionId, score, transcription, feedback, phoneticIssues: issues,
+      sessionId, score, scoreLabel: "Coincidencia de transcripción (no es una nota fonética)", transcription, feedback, recognitionIssues: issues, phoneticIssues: [],
       britishTips: getBritishTip(target),
       similarityType: "transcription-only",
       scoreLabel: "Coincidencia de transcripción (no es una nota fonética)",
