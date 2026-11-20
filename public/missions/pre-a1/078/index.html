@@ -55,9 +55,9 @@ var ids=["explore","practice","grammar","pronunciation","reading","writing","spe
 var labels={"explore":"1. Exploración","practice":"2. Práctica","grammar":"3. Gramática","pronunciation":"4. Pronunciación","reading":"5. Reading","writing":"6. Writing","speaking":"7. Speaking","listening":"8. Listening"};
 var nav=document.querySelector("nav"),main=document.querySelector("main");
 if(!nav||!main)return;
-var first=main.querySelector(".panel"),fragment=document.createDocumentFragment();
-ids.forEach(function(id){var button=nav.querySelector('[data-tab="'+id+'"]'),panel=document.getElementById(id);if(button){button.textContent=labels[id];nav.appendChild(button);}if(panel)fragment.appendChild(panel);});
-if(first)main.insertBefore(fragment,first);else main.appendChild(fragment);
+
+ids.forEach(function(id){var button=nav.querySelector('[data-tab="'+id+'"]'),panel=document.getElementById(id);if(button){button.textContent=labels[id];nav.appendChild(button);}if(panel)main.appendChild(panel);});
+
 }
 if(document.readyState==="loading")document.addEventListener("DOMContentLoaded",reorderMissionSections,{once:true});else reorderMissionSections();
 })();
