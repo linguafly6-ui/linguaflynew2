@@ -38,28 +38,28 @@
             "itemId": "english-pre-a1-m062-explore-ex01-i02",
             "position": 2,
             "english": "It's my…",
-            "spanish": "Es mío / mía…",
+            "spanish": "Es mi…",
             "audio": "tts:en-GB:It's my…"
           },
           {
             "itemId": "english-pre-a1-m062-explore-ex01-i03",
             "position": 3,
             "english": "It's your…",
-            "spanish": "Es tuyo / tuya…",
+            "spanish": "Es tu…",
             "audio": "tts:en-GB:It's your…"
           },
           {
             "itemId": "english-pre-a1-m062-explore-ex01-i04",
             "position": 4,
             "english": "It's his…",
-            "spanish": "Es suyo (de él)…",
+            "spanish": "Es su… (de él)",
             "audio": "tts:en-GB:It's his…"
           },
           {
             "itemId": "english-pre-a1-m062-explore-ex01-i05",
             "position": 5,
             "english": "It's her…",
-            "spanish": "Es suyo (de ella)…",
+            "spanish": "Es su… (de ella)",
             "audio": "tts:en-GB:It's her…"
           },
           {
@@ -99,25 +99,29 @@
           }
         ],
         "theory": {
-          "title": "Whose…? + adjetivo posesivo",
-          "explanation": "Usamos «Whose…?» para preguntar de quién es un objeto. Podemos responder «It’s my…», «It’s your…», «It’s his…» o «It’s her…». El posesivo va delante del nombre del objeto.",
+          "title": "Preguntar de quién es algo",
+          "explanation": "Usa «Whose…?» para preguntar por el dueño. Responde con «It's my…», «It's your…», «It's his…» o «It's her…» seguido del objeto.",
           "patterns": [
             {
               "label": "Modelo",
-              "pattern": "Whose pencil is it? It's his pencil.",
+              "pattern": "Whose pencil is it?",
               "examples": [
-                "Whose pencil is it? It's his pencil."
+                "Whose pencil is it?",
+                "It's my pencil.",
+                "It's her bag."
               ]
             },
             {
               "label": "Uso",
-              "pattern": "Completa un diálogo sobre objetos perdidos con la pregunta y el posesivo adecuados.",
+              "pattern": "Escucha el ejemplo y construye una frase parecida.",
               "examples": [
-                "It's her pencil."
+                "Whose pencil is it?",
+                "It's my pencil.",
+                "It's her bag."
               ]
             }
           ],
-          "tip": "Observa el ejemplo y repite las frases en voz alta."
+          "tip": "Escucha y repite. Fíjate en quién tiene el objeto o en la información que quieres preguntar."
         }
       }
     },
@@ -139,7 +143,7 @@
             },
             "options": [
               "¿De quién…?",
-              "Es suyo (de él)…",
+              "Es su… (de él)",
               "mochila / bolsa"
             ]
           },
@@ -152,8 +156,8 @@
               "type": "single_choice"
             },
             "options": [
-              "Es mío / mía…",
-              "Es suyo (de ella)…",
+              "Es mi…",
+              "Es su… (de ella)",
               "libro"
             ]
           },
@@ -166,7 +170,7 @@
               "type": "single_choice"
             },
             "options": [
-              "Es tuyo / tuya…",
+              "Es tu…",
               "lápiz",
               "juguete"
             ]
@@ -180,7 +184,7 @@
               "type": "single_choice"
             },
             "options": [
-              "Es suyo (de él)…",
+              "Es su… (de él)",
               "mochila / bolsa",
               "regla"
             ]
@@ -194,7 +198,7 @@
               "type": "single_choice"
             },
             "options": [
-              "Es suyo (de ella)…",
+              "Es su… (de ella)",
               "libro",
               "¿De quién…?"
             ]
@@ -210,7 +214,7 @@
             "options": [
               "lápiz",
               "juguete",
-              "Es mío / mía…"
+              "Es mi…"
             ]
           },
           {
@@ -224,7 +228,7 @@
             "options": [
               "mochila / bolsa",
               "regla",
-              "Es tuyo / tuya…"
+              "Es tu…"
             ]
           },
           {
@@ -238,7 +242,7 @@
             "options": [
               "libro",
               "¿De quién…?",
-              "Es suyo (de él)…"
+              "Es su… (de él)"
             ]
           },
           {
@@ -251,8 +255,8 @@
             },
             "options": [
               "juguete",
-              "Es mío / mía…",
-              "Es suyo (de ella)…"
+              "Es mi…",
+              "Es su… (de ella)"
             ]
           },
           {
@@ -265,7 +269,7 @@
             },
             "options": [
               "regla",
-              "Es tuyo / tuya…",
+              "Es tu…",
               "lápiz"
             ]
           },
@@ -475,7 +479,7 @@
           {
             "itemId": "english-pre-a1-m062-grammar-ex01-i05",
             "position": 5,
-            "prompt": "Choose the question about ownership.",
+            "prompt": "A friend finds a bag. Choose the question about its owner.",
             "evaluation": {
               "type": "single_choice"
             },
@@ -488,7 +492,7 @@
           {
             "itemId": "english-pre-a1-m062-grammar-ex01-i06",
             "position": 6,
-            "prompt": "A boy owns it. Choose the phrase.",
+            "prompt": "A boy owns a bag. Choose the phrase.",
             "evaluation": {
               "type": "single_choice"
             },
@@ -501,7 +505,7 @@
           {
             "itemId": "english-pre-a1-m062-grammar-ex01-i07",
             "position": 7,
-            "prompt": "A girl owns it. Choose the phrase.",
+            "prompt": "A girl owns a pencil. Choose the phrase.",
             "evaluation": {
               "type": "single_choice"
             },
@@ -514,7 +518,7 @@
           {
             "itemId": "english-pre-a1-m062-grammar-ex01-i08",
             "position": 8,
-            "prompt": "Complete: Whose book is ___?",
+            "prompt": "Complete: Whose pencil is ___?",
             "evaluation": {
               "type": "single_choice"
             },
@@ -573,7 +577,7 @@
             "itemId": "english-pre-a1-m062-pronunciation-ex01-i02",
             "position": 2,
             "word": "It's my…",
-            "translation": "Es mío / mía…",
+            "translation": "Es mi…",
             "pronunciationGuide": "its mái",
             "audio": "tts:en-GB:It's my…"
           },
@@ -581,7 +585,7 @@
             "itemId": "english-pre-a1-m062-pronunciation-ex01-i03",
             "position": 3,
             "word": "It's your…",
-            "translation": "Es tuyo / tuya…",
+            "translation": "Es tu…",
             "pronunciationGuide": "its yó",
             "audio": "tts:en-GB:It's your…"
           },
@@ -589,7 +593,7 @@
             "itemId": "english-pre-a1-m062-pronunciation-ex01-i04",
             "position": 4,
             "word": "It's his…",
-            "translation": "Es suyo (de él)…",
+            "translation": "Es su… (de él)",
             "pronunciationGuide": "its jiz",
             "audio": "tts:en-GB:It's his…"
           },
@@ -597,7 +601,7 @@
             "itemId": "english-pre-a1-m062-pronunciation-ex01-i05",
             "position": 5,
             "word": "It's her…",
-            "translation": "Es suyo (de ella)…",
+            "translation": "Es su… (de ella)",
             "pronunciationGuide": "its jér",
             "audio": "tts:en-GB:It's her…"
           },
@@ -891,8 +895,8 @@
           {
             "itemId": "english-pre-a1-m062-speaking-ex01-i01",
             "position": 1,
-            "prompt": "Say the word “Whose…?”.",
-            "modelAnswer": "Whose…?",
+            "prompt": "Say a short sentence with “Whose…?”. Use the model if you need help.",
+            "modelAnswer": "Whose pencil is it?",
             "audio": "tts:en-GB:Whose…?",
             "evaluation": {
               "type": "transcription_feedback",
@@ -902,8 +906,8 @@
           {
             "itemId": "english-pre-a1-m062-speaking-ex01-i02",
             "position": 2,
-            "prompt": "Say the word “It's my…”.",
-            "modelAnswer": "It's my…",
+            "prompt": "Say a short sentence with “It's my…”. Use the model if you need help.",
+            "modelAnswer": "It's my pencil.",
             "audio": "tts:en-GB:It's my…",
             "evaluation": {
               "type": "transcription_feedback",
@@ -913,8 +917,8 @@
           {
             "itemId": "english-pre-a1-m062-speaking-ex01-i03",
             "position": 3,
-            "prompt": "Say the word “It's your…”.",
-            "modelAnswer": "It's your…",
+            "prompt": "Say a short sentence with “It's your…”. Use the model if you need help.",
+            "modelAnswer": "It's your bag.",
             "audio": "tts:en-GB:It's your…",
             "evaluation": {
               "type": "transcription_feedback",
@@ -924,8 +928,8 @@
           {
             "itemId": "english-pre-a1-m062-speaking-ex01-i04",
             "position": 4,
-            "prompt": "Say the word “It's his…”.",
-            "modelAnswer": "It's his…",
+            "prompt": "Say a short sentence with “It's his…”. Use the model if you need help.",
+            "modelAnswer": "It's his book.",
             "audio": "tts:en-GB:It's his…",
             "evaluation": {
               "type": "transcription_feedback",
@@ -935,8 +939,8 @@
           {
             "itemId": "english-pre-a1-m062-speaking-ex01-i05",
             "position": 5,
-            "prompt": "Say the word “It's her…”.",
-            "modelAnswer": "It's her…",
+            "prompt": "Say a short sentence with “It's her…”. Use the model if you need help.",
+            "modelAnswer": "It's her toy.",
             "audio": "tts:en-GB:It's her…",
             "evaluation": {
               "type": "transcription_feedback",
@@ -946,8 +950,8 @@
           {
             "itemId": "english-pre-a1-m062-speaking-ex01-i06",
             "position": 6,
-            "prompt": "Say the word “pencil”.",
-            "modelAnswer": "pencil",
+            "prompt": "Say a short sentence with “pencil”. Use the model if you need help.",
+            "modelAnswer": "This is a pencil.",
             "audio": "tts:en-GB:pencil",
             "evaluation": {
               "type": "transcription_feedback",
@@ -957,8 +961,8 @@
           {
             "itemId": "english-pre-a1-m062-speaking-ex01-i07",
             "position": 7,
-            "prompt": "Say the word “bag”.",
-            "modelAnswer": "bag",
+            "prompt": "Say a short sentence with “bag”. Use the model if you need help.",
+            "modelAnswer": "This is my bag.",
             "audio": "tts:en-GB:bag",
             "evaluation": {
               "type": "transcription_feedback",
@@ -968,8 +972,8 @@
           {
             "itemId": "english-pre-a1-m062-speaking-ex01-i08",
             "position": 8,
-            "prompt": "Say the word “book”.",
-            "modelAnswer": "book",
+            "prompt": "Say a short sentence with “book”. Use the model if you need help.",
+            "modelAnswer": "This is a book.",
             "audio": "tts:en-GB:book",
             "evaluation": {
               "type": "transcription_feedback",
@@ -979,8 +983,8 @@
           {
             "itemId": "english-pre-a1-m062-speaking-ex01-i09",
             "position": 9,
-            "prompt": "Say the word “toy”.",
-            "modelAnswer": "toy",
+            "prompt": "Say a short sentence with “toy”. Use the model if you need help.",
+            "modelAnswer": "This is my toy.",
             "audio": "tts:en-GB:toy",
             "evaluation": {
               "type": "transcription_feedback",
@@ -990,8 +994,8 @@
           {
             "itemId": "english-pre-a1-m062-speaking-ex01-i10",
             "position": 10,
-            "prompt": "Say the word “ruler”.",
-            "modelAnswer": "ruler",
+            "prompt": "Say a short sentence with “ruler”. Use the model if you need help.",
+            "modelAnswer": "This is a ruler.",
             "audio": "tts:en-GB:ruler",
             "evaluation": {
               "type": "transcription_feedback",
@@ -1009,9 +1013,9 @@
         "exerciseId": "english-pre-a1-m062-listening-ex01",
         "type": "listening_gap_fill",
         "content": {
-          "audio": "tts:en-GB:Presenter: Welcome to Lost and Found. A pencil is on the desk. Whose pencil is it? Girl: It's my pencil. Presenter: Thank you. Now, a blue bag. Whose bag is it? Boy: It's her bag. It is Lucy's. Presenter: And this book? Girl: It's his book. It belongs to Tom. Presenter: Thank you for helping us! Listen for these ten words: Whose…?, It's my…, It's your…, It's his…, It's her…, pencil, bag, book, toy, ruler.",
+          "audio": "tts:en-GB:Whose pencil is it? It's my pencil. It's your bag. It's his book. It's her toy. The pencil is on the desk. The bag is blue. The book is on the table. The toy is new. The ruler is long.",
           "audioLocale": "en-GB",
-          "transcriptTemplate": "Presenter: Welcome to Lost and Found. A pencil is on the desk. Whose pencil is it? Girl: It's my pencil. Presenter: Thank you. Now, a blue bag. Whose bag is it? Boy: It's her bag. It is Lucy's. Presenter: And this book? Girl: It's his book. It belongs to Tom. Presenter: Thank you for helping us! Listen for these ten words: [[gap-01]], [[gap-02]], [[gap-03]], [[gap-04]], [[gap-05]], [[gap-06]], [[gap-07]], [[gap-08]], [[gap-09]], [[gap-10]].",
+          "transcriptTemplate": "[[gap-01]] pencil is it? [[gap-02]] pencil. [[gap-03]] bag. [[gap-04]] book. [[gap-05]] toy. The [[gap-06]] is on the desk. The [[gap-07]] is blue. The [[gap-08]] is on the table. The [[gap-09]] is new. The [[gap-10]] is long.",
           "wordBank": [
             {
               "wordId": "english-pre-a1-m062-listening-word-01",
@@ -1060,62 +1064,52 @@
           {
             "itemId": "english-pre-a1-m062-listening-ex01-i01",
             "position": 1,
-            "gapToken": "[[gap-01]]",
-            "expectedWordId": "english-pre-a1-m062-listening-word-01"
+            "gapToken": "[[gap-01]]"
           },
           {
             "itemId": "english-pre-a1-m062-listening-ex01-i02",
             "position": 2,
-            "gapToken": "[[gap-02]]",
-            "expectedWordId": "english-pre-a1-m062-listening-word-02"
+            "gapToken": "[[gap-02]]"
           },
           {
             "itemId": "english-pre-a1-m062-listening-ex01-i03",
             "position": 3,
-            "gapToken": "[[gap-03]]",
-            "expectedWordId": "english-pre-a1-m062-listening-word-03"
+            "gapToken": "[[gap-03]]"
           },
           {
             "itemId": "english-pre-a1-m062-listening-ex01-i04",
             "position": 4,
-            "gapToken": "[[gap-04]]",
-            "expectedWordId": "english-pre-a1-m062-listening-word-04"
+            "gapToken": "[[gap-04]]"
           },
           {
             "itemId": "english-pre-a1-m062-listening-ex01-i05",
             "position": 5,
-            "gapToken": "[[gap-05]]",
-            "expectedWordId": "english-pre-a1-m062-listening-word-05"
+            "gapToken": "[[gap-05]]"
           },
           {
             "itemId": "english-pre-a1-m062-listening-ex01-i06",
             "position": 6,
-            "gapToken": "[[gap-06]]",
-            "expectedWordId": "english-pre-a1-m062-listening-word-06"
+            "gapToken": "[[gap-06]]"
           },
           {
             "itemId": "english-pre-a1-m062-listening-ex01-i07",
             "position": 7,
-            "gapToken": "[[gap-07]]",
-            "expectedWordId": "english-pre-a1-m062-listening-word-07"
+            "gapToken": "[[gap-07]]"
           },
           {
             "itemId": "english-pre-a1-m062-listening-ex01-i08",
             "position": 8,
-            "gapToken": "[[gap-08]]",
-            "expectedWordId": "english-pre-a1-m062-listening-word-08"
+            "gapToken": "[[gap-08]]"
           },
           {
             "itemId": "english-pre-a1-m062-listening-ex01-i09",
             "position": 9,
-            "gapToken": "[[gap-09]]",
-            "expectedWordId": "english-pre-a1-m062-listening-word-09"
+            "gapToken": "[[gap-09]]"
           },
           {
             "itemId": "english-pre-a1-m062-listening-ex01-i10",
             "position": 10,
-            "gapToken": "[[gap-10]]",
-            "expectedWordId": "english-pre-a1-m062-listening-word-10"
+            "gapToken": "[[gap-10]]"
           }
         ]
       }
