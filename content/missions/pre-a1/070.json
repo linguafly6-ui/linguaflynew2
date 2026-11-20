@@ -99,25 +99,29 @@
           }
         ],
         "theory": {
-          "title": "Repaso integrado: TO BE, can, likes, there is/are y preposiciones",
-          "explanation": "Esta misión reúne estructuras que ya has practicado. Usa «It is…» para describir, «It can…» para capacidades, «I like…» para gustos, «There is / There are» para decir qué hay y las preposiciones para indicar dónde está algo. No necesitas aprender una regla nueva: combina modelos conocidos.",
+          "title": "Repaso integrado",
+          "explanation": "Combina estructuras conocidas: «It is…», «I can…», «I like…», «There is/are…» y las preposiciones «in», «on» y «under».",
           "patterns": [
             {
               "label": "Modelo",
-              "pattern": "It is a fox. It can run. There is a tree. The ball is under the tree.",
+              "pattern": "It is a fox.",
               "examples": [
-                "It is a fox. It can run. There is a tree. The ball is under the tree."
+                "It is a fox.",
+                "I can run.",
+                "The ball is under the chair."
               ]
             },
             {
               "label": "Uso",
-              "pattern": "Lee cada pequeña situación y combina la estructura que ya conoces.",
+              "pattern": "Escucha el ejemplo y construye una frase parecida.",
               "examples": [
-                "There is a tree."
+                "It is a fox.",
+                "I can run.",
+                "The ball is under the chair."
               ]
             }
           ],
-          "tip": "Observa el ejemplo y repite las frases en voz alta."
+          "tip": "Escucha y repite. Fíjate en quién tiene el objeto o en la información que quieres preguntar."
         }
       }
     },
@@ -475,7 +479,7 @@
           {
             "itemId": "english-pre-a1-m070-grammar-ex01-i05",
             "position": 5,
-            "prompt": "Choose the correct description.",
+            "prompt": "Choose the correct sentence about one fox.",
             "evaluation": {
               "type": "single_choice"
             },
@@ -488,7 +492,7 @@
           {
             "itemId": "english-pre-a1-m070-grammar-ex01-i06",
             "position": 6,
-            "prompt": "Choose the correct ability sentence.",
+            "prompt": "Choose the correct sentence about what a fox can do.",
             "evaluation": {
               "type": "single_choice"
             },
@@ -501,7 +505,7 @@
           {
             "itemId": "english-pre-a1-m070-grammar-ex01-i07",
             "position": 7,
-            "prompt": "Choose the correct sentence about a tree.",
+            "prompt": "Complete: ___ a tree in the park.",
             "evaluation": {
               "type": "single_choice"
             },
@@ -514,7 +518,7 @@
           {
             "itemId": "english-pre-a1-m070-grammar-ex01-i08",
             "position": 8,
-            "prompt": "The ball is below the table. Choose the preposition.",
+            "prompt": "The ball is below the chair. Choose the preposition.",
             "evaluation": {
               "type": "single_choice"
             },
@@ -891,8 +895,8 @@
           {
             "itemId": "english-pre-a1-m070-speaking-ex01-i01",
             "position": 1,
-            "prompt": "Say the word “It is…”.",
-            "modelAnswer": "It is…",
+            "prompt": "Say a short sentence with “It is…”. Use the model if you need help.",
+            "modelAnswer": "It is a fox.",
             "audio": "tts:en-GB:It is…",
             "evaluation": {
               "type": "transcription_feedback",
@@ -902,8 +906,8 @@
           {
             "itemId": "english-pre-a1-m070-speaking-ex01-i02",
             "position": 2,
-            "prompt": "Say the word “I can…”.",
-            "modelAnswer": "I can…",
+            "prompt": "Say a short sentence with “I can…”. Use the model if you need help.",
+            "modelAnswer": "I can run.",
             "audio": "tts:en-GB:I can…",
             "evaluation": {
               "type": "transcription_feedback",
@@ -913,8 +917,8 @@
           {
             "itemId": "english-pre-a1-m070-speaking-ex01-i03",
             "position": 3,
-            "prompt": "Say the word “I like…”.",
-            "modelAnswer": "I like…",
+            "prompt": "Say a short sentence with “I like…”. Use the model if you need help.",
+            "modelAnswer": "I like animals.",
             "audio": "tts:en-GB:I like…",
             "evaluation": {
               "type": "transcription_feedback",
@@ -924,8 +928,8 @@
           {
             "itemId": "english-pre-a1-m070-speaking-ex01-i04",
             "position": 4,
-            "prompt": "Say the word “There is…”.",
-            "modelAnswer": "There is…",
+            "prompt": "Say a short sentence with “There is…”. Use the model if you need help.",
+            "modelAnswer": "There is a tree.",
             "audio": "tts:en-GB:There is…",
             "evaluation": {
               "type": "transcription_feedback",
@@ -935,8 +939,8 @@
           {
             "itemId": "english-pre-a1-m070-speaking-ex01-i05",
             "position": 5,
-            "prompt": "Say the word “There are…”.",
-            "modelAnswer": "There are…",
+            "prompt": "Say a short sentence with “There are…”. Use the model if you need help.",
+            "modelAnswer": "There are two flowers.",
             "audio": "tts:en-GB:There are…",
             "evaluation": {
               "type": "transcription_feedback",
@@ -946,8 +950,8 @@
           {
             "itemId": "english-pre-a1-m070-speaking-ex01-i06",
             "position": 6,
-            "prompt": "Say the word “in”.",
-            "modelAnswer": "in",
+            "prompt": "Say a short sentence with “in”. Use the model if you need help.",
+            "modelAnswer": "The ball is in the bag.",
             "audio": "tts:en-GB:in",
             "evaluation": {
               "type": "transcription_feedback",
@@ -957,8 +961,8 @@
           {
             "itemId": "english-pre-a1-m070-speaking-ex01-i07",
             "position": 7,
-            "prompt": "Say the word “on”.",
-            "modelAnswer": "on",
+            "prompt": "Say a short sentence with “on”. Use the model if you need help.",
+            "modelAnswer": "The book is on the table.",
             "audio": "tts:en-GB:on",
             "evaluation": {
               "type": "transcription_feedback",
@@ -968,8 +972,8 @@
           {
             "itemId": "english-pre-a1-m070-speaking-ex01-i08",
             "position": 8,
-            "prompt": "Say the word “under”.",
-            "modelAnswer": "under",
+            "prompt": "Say a short sentence with “under”. Use the model if you need help.",
+            "modelAnswer": "The cat is under the chair.",
             "audio": "tts:en-GB:under",
             "evaluation": {
               "type": "transcription_feedback",
@@ -979,8 +983,8 @@
           {
             "itemId": "english-pre-a1-m070-speaking-ex01-i09",
             "position": 9,
-            "prompt": "Say the word “who”.",
-            "modelAnswer": "who",
+            "prompt": "Say a short sentence with “who”. Use the model if you need help.",
+            "modelAnswer": "Who is she?",
             "audio": "tts:en-GB:who",
             "evaluation": {
               "type": "transcription_feedback",
@@ -990,8 +994,8 @@
           {
             "itemId": "english-pre-a1-m070-speaking-ex01-i10",
             "position": 10,
-            "prompt": "Say the word “where”.",
-            "modelAnswer": "where",
+            "prompt": "Say a short sentence with “where”. Use the model if you need help.",
+            "modelAnswer": "Where is the fox?",
             "audio": "tts:en-GB:where",
             "evaluation": {
               "type": "transcription_feedback",
@@ -1009,9 +1013,9 @@
         "exerciseId": "english-pre-a1-m070-listening-ex01",
         "type": "listening_gap_fill",
         "content": {
-          "audio": "tts:en-GB:Presenter: Welcome to the Pre-A1 Grand Adventure! Listen to our story. Tom is in the garden. There is a tree and there are three flowers. A small dog is next to the tree. It can jump. Tom likes dogs. He has got a blue ball. The ball is under the chair. Tom asks, “Where is my ball?” His sister says, “It is under the chair!” Well done, Tom. You can use your English! Listen for these ten words: It is…, I can…, I like…, There is…, There are…, in, on, under, who, where.",
+          "audio": "tts:en-GB:It is a fox. I can run fast. I like animals. There is a tree in the park. There are two flowers. The ball is in the bag. The book is on the table. The cat is under the chair. Ask who the fox is. Ask where the fox is.",
           "audioLocale": "en-GB",
-          "transcriptTemplate": "Presenter: Welcome to the Pre-A1 Grand Adventure! Listen to our story. Tom is in the garden. There is a tree and there are three flowers. A small dog is next to the tree. It can jump. Tom likes dogs. He has got a blue ball. The ball is under the chair. Tom asks, “Where is my ball?” His sister says, “It is under the chair!” Well done, Tom. You can use your English! Listen for these ten words: [[gap-01]], [[gap-02]], [[gap-03]], [[gap-04]], [[gap-05]], [[gap-06]], [[gap-07]], [[gap-08]], [[gap-09]], [[gap-10]].",
+          "transcriptTemplate": "[[gap-01]] a fox. [[gap-02]] run fast. [[gap-03]] animals. [[gap-04]] a tree in the park. [[gap-05]] two flowers. The ball is [[gap-06]] the bag. The book is [[gap-07]] the table. The cat is [[gap-08]] the chair. Ask [[gap-09]] the fox is. Ask [[gap-10]] the fox is.",
           "wordBank": [
             {
               "wordId": "english-pre-a1-m070-listening-word-01",
@@ -1060,62 +1064,52 @@
           {
             "itemId": "english-pre-a1-m070-listening-ex01-i01",
             "position": 1,
-            "gapToken": "[[gap-01]]",
-            "expectedWordId": "english-pre-a1-m070-listening-word-01"
+            "gapToken": "[[gap-01]]"
           },
           {
             "itemId": "english-pre-a1-m070-listening-ex01-i02",
             "position": 2,
-            "gapToken": "[[gap-02]]",
-            "expectedWordId": "english-pre-a1-m070-listening-word-02"
+            "gapToken": "[[gap-02]]"
           },
           {
             "itemId": "english-pre-a1-m070-listening-ex01-i03",
             "position": 3,
-            "gapToken": "[[gap-03]]",
-            "expectedWordId": "english-pre-a1-m070-listening-word-03"
+            "gapToken": "[[gap-03]]"
           },
           {
             "itemId": "english-pre-a1-m070-listening-ex01-i04",
             "position": 4,
-            "gapToken": "[[gap-04]]",
-            "expectedWordId": "english-pre-a1-m070-listening-word-04"
+            "gapToken": "[[gap-04]]"
           },
           {
             "itemId": "english-pre-a1-m070-listening-ex01-i05",
             "position": 5,
-            "gapToken": "[[gap-05]]",
-            "expectedWordId": "english-pre-a1-m070-listening-word-05"
+            "gapToken": "[[gap-05]]"
           },
           {
             "itemId": "english-pre-a1-m070-listening-ex01-i06",
             "position": 6,
-            "gapToken": "[[gap-06]]",
-            "expectedWordId": "english-pre-a1-m070-listening-word-06"
+            "gapToken": "[[gap-06]]"
           },
           {
             "itemId": "english-pre-a1-m070-listening-ex01-i07",
             "position": 7,
-            "gapToken": "[[gap-07]]",
-            "expectedWordId": "english-pre-a1-m070-listening-word-07"
+            "gapToken": "[[gap-07]]"
           },
           {
             "itemId": "english-pre-a1-m070-listening-ex01-i08",
             "position": 8,
-            "gapToken": "[[gap-08]]",
-            "expectedWordId": "english-pre-a1-m070-listening-word-08"
+            "gapToken": "[[gap-08]]"
           },
           {
             "itemId": "english-pre-a1-m070-listening-ex01-i09",
             "position": 9,
-            "gapToken": "[[gap-09]]",
-            "expectedWordId": "english-pre-a1-m070-listening-word-09"
+            "gapToken": "[[gap-09]]"
           },
           {
             "itemId": "english-pre-a1-m070-listening-ex01-i10",
             "position": 10,
-            "gapToken": "[[gap-10]]",
-            "expectedWordId": "english-pre-a1-m070-listening-word-10"
+            "gapToken": "[[gap-10]]"
           }
         ]
       }

@@ -99,25 +99,29 @@
           }
         ],
         "theory": {
-          "title": "Have got: preguntas y respuestas breves",
-          "explanation": "Preguntamos si alguien tiene algo con «Have you got…?». Respondemos «Yes, I have» si lo tenemos y «No, I haven’t» si no lo tenemos. La pregunta va seguida del objeto: «Have you got a pen?»",
+          "title": "Have you got…?",
+          "explanation": "Pregunta «Have you got…?» y responde «Yes, I have» o «No, I haven't».",
           "patterns": [
             {
               "label": "Modelo",
-              "pattern": "Have you got a pen? Yes, I have. / No, I haven't.",
+              "pattern": "Have you got a pen?",
               "examples": [
-                "Have you got a pen? Yes, I have. / No, I haven't."
+                "Have you got a pen?",
+                "Yes, I have.",
+                "No, I haven't."
               ]
             },
             {
               "label": "Uso",
-              "pattern": "Lee la pregunta y elige la respuesta que coincide con la situación.",
+              "pattern": "Escucha el ejemplo y construye una frase parecida.",
               "examples": [
-                "Have you got a pen?"
+                "Have you got a pen?",
+                "Yes, I have.",
+                "No, I haven't."
               ]
             }
           ],
-          "tip": "Observa el ejemplo y repite las frases en voz alta."
+          "tip": "Escucha y repite. Fíjate en quién tiene el objeto o en la información que quieres preguntar."
         }
       }
     },
@@ -475,7 +479,7 @@
           {
             "itemId": "english-pre-a1-m064-grammar-ex01-i05",
             "position": 5,
-            "prompt": "Choose the correct question.",
+            "prompt": "You want to know if your friend has a pen. Choose the question.",
             "evaluation": {
               "type": "single_choice"
             },
@@ -488,7 +492,7 @@
           {
             "itemId": "english-pre-a1-m064-grammar-ex01-i06",
             "position": 6,
-            "prompt": "You have a book. Choose the answer.",
+            "prompt": "You have a pen. Choose the short positive answer.",
             "evaluation": {
               "type": "single_choice"
             },
@@ -501,7 +505,7 @@
           {
             "itemId": "english-pre-a1-m064-grammar-ex01-i07",
             "position": 7,
-            "prompt": "You do not have a pencil. Choose the answer.",
+            "prompt": "You do not have a ruler. Choose the short negative answer.",
             "evaluation": {
               "type": "single_choice"
             },
@@ -514,7 +518,7 @@
           {
             "itemId": "english-pre-a1-m064-grammar-ex01-i08",
             "position": 8,
-            "prompt": "Complete: Have you ___ a bag?",
+            "prompt": "Complete: Have you ___ a ruler?",
             "evaluation": {
               "type": "single_choice"
             },
@@ -891,8 +895,8 @@
           {
             "itemId": "english-pre-a1-m064-speaking-ex01-i01",
             "position": 1,
-            "prompt": "Say the word “Have you got…?”.",
-            "modelAnswer": "Have you got…?",
+            "prompt": "Say a short sentence with “Have you got…?”. Use the model if you need help.",
+            "modelAnswer": "Have you got a pen?",
             "audio": "tts:en-GB:Have you got…?",
             "evaluation": {
               "type": "transcription_feedback",
@@ -902,7 +906,7 @@
           {
             "itemId": "english-pre-a1-m064-speaking-ex01-i02",
             "position": 2,
-            "prompt": "Say the word “Yes, I have.”.",
+            "prompt": "Say a short sentence with “Yes, I have.”. Use the model if you need help.",
             "modelAnswer": "Yes, I have.",
             "audio": "tts:en-GB:Yes, I have.",
             "evaluation": {
@@ -913,7 +917,7 @@
           {
             "itemId": "english-pre-a1-m064-speaking-ex01-i03",
             "position": 3,
-            "prompt": "Say the word “No, I haven't.”.",
+            "prompt": "Say a short sentence with “No, I haven't.”. Use the model if you need help.",
             "modelAnswer": "No, I haven't.",
             "audio": "tts:en-GB:No, I haven't.",
             "evaluation": {
@@ -924,8 +928,8 @@
           {
             "itemId": "english-pre-a1-m064-speaking-ex01-i04",
             "position": 4,
-            "prompt": "Say the word “pen”.",
-            "modelAnswer": "pen",
+            "prompt": "Say a short sentence with “pen”. Use the model if you need help.",
+            "modelAnswer": "I've got a pen.",
             "audio": "tts:en-GB:pen",
             "evaluation": {
               "type": "transcription_feedback",
@@ -935,8 +939,8 @@
           {
             "itemId": "english-pre-a1-m064-speaking-ex01-i05",
             "position": 5,
-            "prompt": "Say the word “pencil”.",
-            "modelAnswer": "pencil",
+            "prompt": "Say a short sentence with “pencil”. Use the model if you need help.",
+            "modelAnswer": "I've got a pencil.",
             "audio": "tts:en-GB:pencil",
             "evaluation": {
               "type": "transcription_feedback",
@@ -946,8 +950,8 @@
           {
             "itemId": "english-pre-a1-m064-speaking-ex01-i06",
             "position": 6,
-            "prompt": "Say the word “book”.",
-            "modelAnswer": "book",
+            "prompt": "Say a short sentence with “book”. Use the model if you need help.",
+            "modelAnswer": "I've got a book.",
             "audio": "tts:en-GB:book",
             "evaluation": {
               "type": "transcription_feedback",
@@ -957,8 +961,8 @@
           {
             "itemId": "english-pre-a1-m064-speaking-ex01-i07",
             "position": 7,
-            "prompt": "Say the word “bag”.",
-            "modelAnswer": "bag",
+            "prompt": "Say a short sentence with “bag”. Use the model if you need help.",
+            "modelAnswer": "I've got a bag.",
             "audio": "tts:en-GB:bag",
             "evaluation": {
               "type": "transcription_feedback",
@@ -968,8 +972,8 @@
           {
             "itemId": "english-pre-a1-m064-speaking-ex01-i08",
             "position": 8,
-            "prompt": "Say the word “ruler”.",
-            "modelAnswer": "ruler",
+            "prompt": "Say a short sentence with “ruler”. Use the model if you need help.",
+            "modelAnswer": "I've got a ruler.",
             "audio": "tts:en-GB:ruler",
             "evaluation": {
               "type": "transcription_feedback",
@@ -979,8 +983,8 @@
           {
             "itemId": "english-pre-a1-m064-speaking-ex01-i09",
             "position": 9,
-            "prompt": "Say the word “toy”.",
-            "modelAnswer": "toy",
+            "prompt": "Say a short sentence with “toy”. Use the model if you need help.",
+            "modelAnswer": "I've got a toy.",
             "audio": "tts:en-GB:toy",
             "evaluation": {
               "type": "transcription_feedback",
@@ -990,8 +994,8 @@
           {
             "itemId": "english-pre-a1-m064-speaking-ex01-i10",
             "position": 10,
-            "prompt": "Say the word “chair”.",
-            "modelAnswer": "chair",
+            "prompt": "Say a short sentence with “chair”. Use the model if you need help.",
+            "modelAnswer": "I've got a chair.",
             "audio": "tts:en-GB:chair",
             "evaluation": {
               "type": "transcription_feedback",
@@ -1009,9 +1013,9 @@
         "exerciseId": "english-pre-a1-m064-listening-ex01",
         "type": "listening_gap_fill",
         "content": {
-          "audio": "tts:en-GB:Listen to a story in the classroom. The teacher asks Tom, “Have you got a book?” Tom says, “Yes, I have.” Then she asks Lucy, “Have you got a ruler?” Lucy says, “No, I haven't.” She has got a pencil. The teacher asks, “Have you got a bag, Tom?” “Yes, I have. It is blue,” he says. They start the lesson. Listen for these ten words: Have you got…?, Yes, I have., No, I haven't., pen, pencil, book, bag, ruler, toy, chair.",
+          "audio": "tts:en-GB:Have you got a book? Yes, I have. Have you got a ruler? No, I haven't. I have a pen and a pencil. The book is blue. The bag is on the desk. The ruler is long. The toy is new. The chair is near the table.",
           "audioLocale": "en-GB",
-          "transcriptTemplate": "Listen to a story in the classroom. The teacher asks Tom, “Have you got a book?” Tom says, “Yes, I have.” Then she asks Lucy, “Have you got a ruler?” Lucy says, “No, I haven't.” She has got a pencil. The teacher asks, “Have you got a bag, Tom?” “Yes, I have. It is blue,” he says. They start the lesson. Listen for these ten words: [[gap-01]], [[gap-02]], [[gap-03]], [[gap-04]], [[gap-05]], [[gap-06]], [[gap-07]], [[gap-08]], [[gap-09]], [[gap-10]].",
+          "transcriptTemplate": "[[gap-01]] a book? [[gap-02]] Yes, I have. Have you got a ruler? [[gap-03]] No, I haven't. I have a [[gap-04]] and a [[gap-05]]. The [[gap-06]] is blue. The [[gap-07]] is on the desk. The [[gap-08]] is long. The [[gap-09]] is new. The [[gap-10]] is near the table.",
           "wordBank": [
             {
               "wordId": "english-pre-a1-m064-listening-word-01",
@@ -1060,62 +1064,52 @@
           {
             "itemId": "english-pre-a1-m064-listening-ex01-i01",
             "position": 1,
-            "gapToken": "[[gap-01]]",
-            "expectedWordId": "english-pre-a1-m064-listening-word-01"
+            "gapToken": "[[gap-01]]"
           },
           {
             "itemId": "english-pre-a1-m064-listening-ex01-i02",
             "position": 2,
-            "gapToken": "[[gap-02]]",
-            "expectedWordId": "english-pre-a1-m064-listening-word-02"
+            "gapToken": "[[gap-02]]"
           },
           {
             "itemId": "english-pre-a1-m064-listening-ex01-i03",
             "position": 3,
-            "gapToken": "[[gap-03]]",
-            "expectedWordId": "english-pre-a1-m064-listening-word-03"
+            "gapToken": "[[gap-03]]"
           },
           {
             "itemId": "english-pre-a1-m064-listening-ex01-i04",
             "position": 4,
-            "gapToken": "[[gap-04]]",
-            "expectedWordId": "english-pre-a1-m064-listening-word-04"
+            "gapToken": "[[gap-04]]"
           },
           {
             "itemId": "english-pre-a1-m064-listening-ex01-i05",
             "position": 5,
-            "gapToken": "[[gap-05]]",
-            "expectedWordId": "english-pre-a1-m064-listening-word-05"
+            "gapToken": "[[gap-05]]"
           },
           {
             "itemId": "english-pre-a1-m064-listening-ex01-i06",
             "position": 6,
-            "gapToken": "[[gap-06]]",
-            "expectedWordId": "english-pre-a1-m064-listening-word-06"
+            "gapToken": "[[gap-06]]"
           },
           {
             "itemId": "english-pre-a1-m064-listening-ex01-i07",
             "position": 7,
-            "gapToken": "[[gap-07]]",
-            "expectedWordId": "english-pre-a1-m064-listening-word-07"
+            "gapToken": "[[gap-07]]"
           },
           {
             "itemId": "english-pre-a1-m064-listening-ex01-i08",
             "position": 8,
-            "gapToken": "[[gap-08]]",
-            "expectedWordId": "english-pre-a1-m064-listening-word-08"
+            "gapToken": "[[gap-08]]"
           },
           {
             "itemId": "english-pre-a1-m064-listening-ex01-i09",
             "position": 9,
-            "gapToken": "[[gap-09]]",
-            "expectedWordId": "english-pre-a1-m064-listening-word-09"
+            "gapToken": "[[gap-09]]"
           },
           {
             "itemId": "english-pre-a1-m064-listening-ex01-i10",
             "position": 10,
-            "gapToken": "[[gap-10]]",
-            "expectedWordId": "english-pre-a1-m064-listening-word-10"
+            "gapToken": "[[gap-10]]"
           }
         ]
       }
