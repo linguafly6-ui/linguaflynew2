@@ -39,6 +39,53 @@ const sections=[
 ];
 const style=document.createElement("style");style.textContent=".a1extra-card{background:#f7f9ff;color:#20345d;border:1px solid #dce6f7;border-radius:16px;padding:18px;margin:14px 0;line-height:1.65}.a1extra-card p,.a1extra-card li,.a1extra-card details,.a1extra-card summary{color:#20345d}.a1extra-card h3{margin:0 0 8px;color:#243e75;font-size:18px}.a1extra-card ul,.a1extra-card ol{padding-left:24px}.a1extra-card li{margin:7px 0}.a1extra-reading{font-size:17px;line-height:1.9}.a1extra-drill{font-size:20px;font-weight:800;letter-spacing:.04em}.a1extra-say{background:#e1f7ff;color:#087c9a;padding:10px 14px;border-radius:12px;font-weight:800}.a1extra-card details{margin-top:12px;padding:10px;background:#fff;border-radius:10px}.a1extra-card summary{cursor:pointer;font-weight:800}";document.head.appendChild(style);
 for(const [id,label,title,html] of sections){const b=document.createElement("button");b.type="button";b.dataset.tab=id;b.textContent=label;nav.appendChild(b);const s=document.createElement("section");s.id=id;s.className="panel";s.dataset.a1Eight="true";s.innerHTML="<h2>"+title+"</h2><p class='muted'>Misión "+String(n).padStart(3,"0")+" · "+esc(l.title)+"</p>"+html;main.appendChild(s);}
+
+/* Interactive 10-task runtime for every added A1 section. */
+const makeChoices=(correct,wrong)=>[correct,...wrong.filter(x=>x!==correct).slice(0,2)];
+const shuffle=a=>a.map(x=>({x,k:Math.random()})).sort((a,b)=>a.k-b.k).map(o=>o.x);
+const taskUI=(id,title,intro,items)=> {
+ const s=document.getElementById(id); if(!s)return;
+ s.innerHTML="<h2>"+title+"</h2><p class='muted'>"+intro+"</p><div class='a1extra-progress'><span data-count>1 / 10</span><div><i data-bar></i></div></div><div class='a1extra-card' data-taskbox></div><p class='a1extra-feedback' data-feedback aria-live='polite'></p><button type='button' data-next disabled>Siguiente ejercicio →</button><p class='a1extra-score' data-score hidden></p>";
+ const box=s.querySelector("[data-taskbox]"),fb=s.querySelector("[data-feedback]"),next=s.querySelector("[data-next]"),count=s.querySelector("[data-count]"),bar=s.querySelector("[data-bar]"),score=s.querySelector("[data-score]");
+ let at=0,points=0,done=false;
+ function render(){
+  done=false;const t=items[at];count.textContent=(at+1)+" / 10";bar.style.width=(at*10)+"%";fb.textContent="";next.disabled=true;next.textContent=at===9?"Ver resultado":"Siguiente ejercicio →";
+  if(t.kind==="write"){
+   box.innerHTML="<span class='tag'>DICTADO · "+(at+1)+"</span><p>"+t.prompt+"</p><button type='button' data-audio>🔊 Escuchar audio</button><label class='a1extra-label'>Escribe lo que escuchas</label><input data-answer autocomplete='off' spellcheck='false' placeholder='Escribe aquí…'><button type='button' data-check>Comprobar</button>";
+   box.querySelector("[data-audio]").onclick=()=>speak(t.target);
+   box.querySelector("[data-check]").onclick=()=>checkText(box.querySelector("[data-answer]").value,t.target);
+  } else if(t.kind==="speak"||t.kind==="pron"){
+   box.innerHTML="<span class='tag'>"+(t.kind==="speak"?"HABLA":"PRONUNCIACIÓN")+" · "+(at+1)+"</span><p class='a1extra-question'>"+t.prompt+"</p><p>"+t.target+"</p><button type='button' data-model>🔊 Escuchar modelo</button><button type='button' data-done>He practicado</button>";
+   box.querySelector("[data-model]").onclick=()=>speak(t.target);box.querySelector("[data-done]").onclick=()=>mark(true,"¡Bien! Has completado la práctica oral. Compara tu producción con el modelo.");
+  } else {
+   const opts=shuffle(makeChoices(t.answer,t.wrong||[]));
+   box.innerHTML="<span class='tag'>EJERCICIO · "+(at+1)+"</span><p class='a1extra-question'>"+t.prompt+"</p>"+(t.audio? "<button type='button' data-audio>🔊 Escuchar audio</button>":"")+"<div class='a1extra-options'>"+opts.map((o,i)=>"<button type='button' data-option='"+i+"'>"+o+"</button>").join("")+"</div>";
+   if(t.audio)box.querySelector("[data-audio]").onclick=()=>speak(t.audio);
+   box.querySelectorAll("[data-option]").forEach((b,i)=>b.onclick=()=>mark(opts[i]===t.answer,opts[i]===t.answer?"¡Correcto!": "La respuesta correcta es: "+t.answer));
+  }
+ }
+ function mark(ok,msg){if(done)return;done=true;if(ok)points++;fb.textContent=msg;fb.className="a1extra-feedback "+(ok?"good":"bad");next.disabled=false;}
+ function checkText(value,target){const norm=x=>String(x).trim().toLowerCase().replace(/[.,!?']/g,"").replace(/\\s+/g," ");mark(norm(value)===norm(target),norm(value)===norm(target)?"¡Exacto!":"Respuesta esperada: "+target);}
+ next.onclick=()=>{if(at<9){at++;render();}else{box.innerHTML="<h3>Sección completada</h3><p>Has terminado los 10 ejercicios.</p>";fb.textContent="";next.hidden=true;count.textContent="10 / 10";bar.style.width="100%";score.hidden=false;score.textContent="Resultado: "+points+" / 10 respuestas correctas."; }};
+ render();
+};
+const speak=text=>{if(!("speechSynthesis"in window)){alert("La reproducción de voz no está disponible en este navegador.");return;}speechSynthesis.cancel();const u=new SpeechSynthesisUtterance(text);u.lang="en-GB";speechSynthesis.speak(u);};
+const sentences=l.reading.split(/(?<=[.!?])\\s+/).filter(Boolean);
+const listenWords=l.listening.match(/[A-Za-z']+/g)||l.words;
+const vocab=l.words.slice(0,10);
+const grammarItems=Array.from({length:10},(_,i)=>{const j=i%g.tasks.length;const task=g.tasks[j],answer=g.answers[j];return {prompt:"Completa la frase según la regla: "+task,answer,wrong:g.answers.filter(x=>x!==answer).concat(["do","does","are"])};});
+const readingItems=Array.from({length:10},(_,i)=>{const sentence=sentences[i%sentences.length];const alternatives=[sentences[(i+1)%sentences.length],sentences[(i+2)%sentences.length]].filter(x=>x!==sentence);return {prompt:"¿Qué frase aparece en el texto?",answer:sentence,wrong:alternatives};});
+const listeningItems=Array.from({length:10},(_,i)=>{const word=listenWords[(i* Math.max(1,Math.floor(listenWords.length/10)))%listenWords.length];const sentence=l.listening.split(/(?<=[.!?])\\s+/).find(x=>x.toLowerCase().includes(word.toLowerCase()))||l.listening;const blank=sentence.replace(new RegExp("\\b"+word.replace(/[.*+?^${}()|[\\]\\\\]/g,"\\\\nav.querySelectorAll("[data-tab]")")+"\\b","i"),"_____");return {prompt:"Escucha y elige la palabra que falta: "+blank,answer:word,wrong:listenWords.filter(x=>x.toLowerCase()!==word.toLowerCase()).slice(i%Math.max(1,listenWords.length-3),i%Math.max(1,listenWords.length-3)+2),audio:sentence};});
+const dictationItems=Array.from({length:10},(_,i)=>{const target=i<5?vocab[i]:((l.listening.split(/(?<=[.!?])\\s+/)[(i-5)%Math.max(1,l.listening.split(/(?<=[.!?])\\s+/).length)]||l.listening).trim());return {kind:"write",prompt:"Pulsa el audio y escribe exactamente la palabra o frase.",target};});
+const speakingItems=Array.from({length:10},(_,i)=>({kind:"speak",prompt:["Preséntate usando esta palabra: ","Formula una pregunta con esta expresión: ","Di una frase verdadera sobre ti usando: ","Haz una pregunta a tu compañero con: ","Describe una persona o cosa usando: "][i%5]+vocab[i],target:vocab[i]}));
+const pronunciationItems=Array.from({length:10},(_,i)=>({kind:"pron",prompt:"Escucha el modelo y repite la palabra con claridad.",target:vocab[i]}));
+taskUI("grammar","3. Gramática · 10 ejercicios","Practica "+g.name+" con 10 respuestas autocorregibles.",grammarItems);
+taskUI("pronunciation","4. Pronunciación · 10 ejercicios","Escucha cada modelo y repite en voz alta.",pronunciationItems);
+taskUI("reading","5. Reading · texto + 10 preguntas","Lee primero el texto y después responde. Texto: "+l.reading,readingItems);
+taskUI("writing","6. Writing · 10 dictados","Escucha palabras y frases en inglés y escríbelas.",dictationItems);
+taskUI("speaking","7. Speaking · 10 ejercicios","Responde en voz alta usando el vocabulario de la misión.",speakingItems);
+taskUI("listening","8. Listening · audio + 10 preguntas","Escucha el audio completo y responde a las preguntas. Puedes reproducir cada fragmento.",listeningItems);
+
 nav.querySelectorAll("[data-tab]").forEach(b=>b.addEventListener("click",()=>{nav.querySelectorAll("[data-tab]").forEach(x=>x.classList.toggle("active",x===b));main.querySelectorAll(".panel").forEach(p=>p.classList.toggle("active",p.id===b.dataset.tab));}));
 document.addEventListener("click",e=>{const b=e.target.closest(".a1extra-say");if(!b)return;if(!("speechSynthesis"in window))return;speechSynthesis.cancel();const u=new SpeechSynthesisUtterance(b.dataset.say);u.lang="en-GB";speechSynthesis.speak(u);});
 })();
