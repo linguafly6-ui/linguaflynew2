@@ -146,6 +146,19 @@ const readingQuestionSets = {
 ["Which event happens at the end?","The teacher welcomes Sara.","Ben asks Sara's name.","Sara says she is new."]
 ]
 };
+const pronunciationCues = {
+"name":"neim","surname":"ser-neim","age":"eidch","address":"a-dres","city":"si-ti","country":"kan-tri","nationality":"na-sha-na-li-ti","phone number":"feun nam-ba","email address":"i-meil a-dres","date of birth":"deit av berth",
+"hello":"he-lou","good morning":"gud mor-ning","good afternoon":"gud af-ter-nun","good evening":"gud iv-ning","goodbye":"gud-bai","see you later":"si iu lei-ta","please":"pliiz","thank you":"zank iu","you're welcome":"ior wel-kam","meet":"miit",
+"Spain":"spein","Spanish":"spa-nish","the United Kingdom":"dha iu-nai-tid king-dam","British":"bri-tish","France":"frans","French":"french","Germany":"yer-ma-ni","German":"yer-man","Italy":"i-ta-li","Italian":"i-ta-lian",
+"letter":"le-ta","alphabet":"al-fa-bet","spell":"spel","first name":"ferst neim","capital letter":"ka-pi-tal le-ta","small letter":"smol le-ta","how do you spell...?":"hau du iu spel","double":"da-bal","vowel":"vau-el",
+"who":"huu","what":"wot","where":"wea","when":"wen","how":"hau","how old":"hau ould","married":"ma-rid","single":"sin-gal","occupation":"o-kiu-pei-shan",
+"zero":"zi-rou","ten":"ten","twenty":"twen-ti","thirty":"zer-ti","forty":"for-ti","fifty":"fif-ti","sixty":"siks-ti","seventy":"se-ven-ti","eighty":"ei-ti","ninety":"nain-ti",
+"language":"lang-gwidch","English":"ing-glish","speak":"spiik","read":"riid","write":"rait","understand":"an-da-stand","practise":"prak-tis",
+"profile":"prou-fail","born":"born","live":"liv","work":"werk","study":"sta-di","favourite":"fei-vrit","hobby":"ho-bi","free time":"fri taim","profile picture":"prou-fail pik-cha",
+"classmate":"klas-meit","teacher":"tii-cha","student":"stiu-dent","friend":"frend","boy":"boi","girl":"gerl","man":"man","woman":"wu-man","people":"pii-pal","group":"gruup",
+"conversation":"kon-va-sei-shan","question":"kwes-chan","answer":"an-sa","introduce":"in-tra-dius","again":"a-gen","slowly":"slou-li","together":"ta-ge-dha","class":"klas","new":"niu","welcome":"wel-kam"
+};
+const pronunciationCue = word => pronunciationCues[word] || word;
 const esc=s=>String(s).replace(/[&<>"']/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]));
 const list=a=>"<ul>"+a.map(x=>"<li>"+esc(x)+"</li>").join("")+"</ul>";
 const card=(h,p)=>"<div class='a1extra-card'><h3>"+h+"</h3>"+p+"</div>";
@@ -153,7 +166,7 @@ const n=+(location.pathname.match(/\/(\d{3})(?:\/index\.html)?\/?$/)||[])[1];con
 const g=grammar[l.grammar];const nav=document.querySelector("nav");const main=document.querySelector("main");if(!nav||!main)return;
 const sections=[
 ["grammar","3. Gramática","Gramática",card("Objetivo: "+g.name,"<p>"+esc(g.rule)+"</p>")+card("Modelos",list(g.examples))+card("Práctica guiada","<ol>"+g.tasks.map((x,i)=>"<li>"+esc(x)+"</li>").join("")+"</ol><details><summary>Ver soluciones</summary>"+list(g.answers)+"</details>")+card("Producción","<p>Escribe dos frases verdaderas sobre "+esc(l.title)+". Usa la estructura de esta lección.</p>")],
-["pronunciation","4. Pronunciación","Pronunciación",card("Objetivo","<p>Hablar con claridad usando el vocabulario de "+esc(l.title)+".</p>")+card("Consejo de pronunciación","<p>"+esc(l.focus)+"</p>")+card("Escucha y repite","<p class='a1extra-drill'>"+esc(l.drill)+"</p><button type='button' class='a1extra-say' data-say='"+esc(l.drill)+"'>🔊 Escuchar modelo</button>")+card("Práctica","<ol><li>Lee cada palabra en voz alta.</li><li>Da una palmada en la sílaba más fuerte.</li><li>Grábate y compara tu pronunciación con el modelo.</li></ol>")],
+["pronunciation","4. Pronunciación","Pronunciación",card("Repasa el vocabulario","<p>Lee las palabras y su aproximación de pronunciación en inglés británico. La escritura entre guiones es una ayuda para hispanohablantes, no una transcripción IPA.</p><ul class='a1-pron-list'>"+l.words.map(w=>"<li><strong>"+esc(w)+"</strong><span>"+esc(pronunciationCue(w))+"</span></li>").join("")+"</ul>")+card("Consejo de pronunciación","<p>"+esc(l.focus)+"</p>")],
 ["reading","5. Reading","Reading",card("Read the text","<p class='a1extra-reading'>"+esc(l.reading)+"</p>")+card("Check your understanding","<ol><li>Who or what is the text about?</li><li>Find three words from this mission.</li><li>Write one fact from the text.</li></ol><details><summary>Suggested answers</summary><p>Answers depend on the mission text. Find the person/topic, three target words and one stated fact.</p></details>")],
 ["writing","6. Writing","Writing",card("Your writing task","<p>"+esc(l.writing)+"</p>")+card("Useful language","<p>I am… · My name is… · I live in… · I like… · I can… · My favourite…</p>")+card("Checklist","<ul><li>Write 5–6 short sentences.</li><li>Use at least four words from this mission.</li><li>Start each sentence with a capital letter.</li><li>Finish each sentence with a full stop.</li><li>Check the verb and word order.</li></ul>")],
 ["speaking","7. Speaking","Speaking",card("Speaking situation","<p>"+esc(l.speaking)+"</p>")+card("Useful phrases","<p>Hello. / Nice to meet you. / I think… / Can you repeat, please? / How do you say… in English?</p>")+card("Your turn","<ol><li>Prepare three key words.</li><li>Speak for 30–45 seconds.</li><li>Ask your partner one follow-up question.</li></ol><button type='button' class='a1extra-say' data-say='"+esc(l.speaking)+"'>🔊 Escuchar consigna</button>")],
@@ -233,9 +246,8 @@ const readingItems=(readingQuestionSets[n]||[]).map(([prompt,answer,wrong1,wrong
 const listeningItems=Array.from({length:10},(_,i)=>{const word=listenWords[(i*Math.max(1,Math.floor(listenWords.length/10)))%listenWords.length];const sentence=l.listening.split(/(?<=[.!?])\\s+/).find(x=>x.toLowerCase().includes(word.toLowerCase()))||l.listening;const blank=sentence.replace(new RegExp("\\b"+word+"\\b","i"),"_____");return {prompt:"Escucha y elige la palabra que falta: "+blank,answer:word,wrong:listenWords.filter(x=>x.toLowerCase()!==word.toLowerCase()).slice(i%Math.max(1,listenWords.length-3),i%Math.max(1,listenWords.length-3)+2),audio:sentence};});
 const dictationItems=Array.from({length:10},(_,i)=>{const target=i<5?vocab[i]:((l.listening.split(/(?<=[.!?])\\s+/)[(i-5)%Math.max(1,l.listening.split(/(?<=[.!?])\\s+/).length)]||l.listening).trim());return {kind:"write",prompt:"Pulsa el audio y escribe exactamente la palabra o frase.",target};});
 const speakingItems=Array.from({length:10},(_,i)=>({kind:"speak",prompt:["Preséntate en voz alta e incluye esta palabra: ","Haz una pregunta completa que incluya esta expresión: ","Di una frase verdadera sobre ti usando esta palabra: ","Haz una pregunta a tu compañero con esta palabra: ","Describe una persona o cosa e incluye esta palabra: "][i%5]+vocab[i],target:vocab[i]}));
-const pronunciationItems=Array.from({length:10},(_,i)=>({kind:"pron",prompt:"Escucha el modelo y repite la palabra con claridad.",target:vocab[i]}));
 taskUI("grammar","3. Gramática · 10 ejercicios","Practica "+g.name+" con 10 respuestas autocorregibles.",grammarItems);
-taskUI("pronunciation","4. Pronunciación · 10 ejercicios","Escucha cada modelo y repite en voz alta.",pronunciationItems);
+
 taskUI("reading","5. Reading · texto + 10 preguntas","Lee primero el texto y después responde. Texto: "+l.reading,readingItems);
 taskUI("writing","6. Writing · 10 dictados","Escucha palabras y frases en inglés y escríbelas.",dictationItems);
 taskUI("speaking","7. Speaking · 10 ejercicios","Responde en voz alta usando el vocabulario de la misión.",speakingItems);
