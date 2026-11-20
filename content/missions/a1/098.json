@@ -1,0 +1,1206 @@
+{
+  "schemaVersion": "1.2.0",
+  "contentVersion": 1,
+  "course": {
+    "courseId": "english-a1",
+    "level": "A1",
+    "language": "en-GB"
+  },
+  "unit": {
+    "unitId": "english-a1-unit-10",
+    "courseId": "english-a1",
+    "position": 10,
+    "title": "Health, weather and everyday interaction"
+  },
+  "mission": {
+    "missionId": "english-a1-m098",
+    "unitId": "english-a1-unit-10",
+    "position": 98,
+    "title": "A Short Story"
+  },
+  "sections": [
+    {
+      "sectionId": "english-a1-m098-explore",
+      "sectionKey": "explore",
+      "position": 1,
+      "title": "explore",
+      "exercise": {
+        "exerciseId": "english-a1-m098-explore-ex01",
+        "type": "vocabulary_pairs",
+        "items": [
+          {
+            "itemId": "english-a1-m098-explore-ex01-i01",
+            "position": 1,
+            "english": "first",
+            "spanish": "primero",
+            "audio": "tts:en-GB:first"
+          },
+          {
+            "itemId": "english-a1-m098-explore-ex01-i02",
+            "position": 2,
+            "english": "then",
+            "spanish": "después",
+            "audio": "tts:en-GB:then"
+          },
+          {
+            "itemId": "english-a1-m098-explore-ex01-i03",
+            "position": 3,
+            "english": "after that",
+            "spanish": "después de eso",
+            "audio": "tts:en-GB:after that"
+          },
+          {
+            "itemId": "english-a1-m098-explore-ex01-i04",
+            "position": 4,
+            "english": "finally",
+            "spanish": "finalmente",
+            "audio": "tts:en-GB:finally"
+          },
+          {
+            "itemId": "english-a1-m098-explore-ex01-i05",
+            "position": 5,
+            "english": "yesterday",
+            "spanish": "ayer",
+            "audio": "tts:en-GB:yesterday"
+          },
+          {
+            "itemId": "english-a1-m098-explore-ex01-i06",
+            "position": 6,
+            "english": "morning",
+            "spanish": "mañana",
+            "audio": "tts:en-GB:morning"
+          },
+          {
+            "itemId": "english-a1-m098-explore-ex01-i07",
+            "position": 7,
+            "english": "walk",
+            "spanish": "paseo",
+            "audio": "tts:en-GB:walk"
+          },
+          {
+            "itemId": "english-a1-m098-explore-ex01-i08",
+            "position": 8,
+            "english": "friend",
+            "spanish": "amigo",
+            "audio": "tts:en-GB:friend"
+          },
+          {
+            "itemId": "english-a1-m098-explore-ex01-i09",
+            "position": 9,
+            "english": "home",
+            "spanish": "casa",
+            "audio": "tts:en-GB:home"
+          },
+          {
+            "itemId": "english-a1-m098-explore-ex01-i10",
+            "position": 10,
+            "english": "story",
+            "spanish": "historia",
+            "audio": "tts:en-GB:story"
+          }
+        ],
+        "theory": {
+          "title": "Vocabulary: A Short Story",
+          "explanation": "Explora diez palabras y expresiones sobre a short story. Escucha el modelo británico y relaciona cada palabra con su significado.",
+          "patterns": [
+            {
+              "label": "Useful language",
+              "pattern": "Short question + short answer",
+              "examples": [
+                "First, I got up.",
+                "Then, I had breakfast.",
+                "After that, I met my friend."
+              ]
+            }
+          ],
+          "tip": "Repite las expresiones y crea un ejemplo relacionado con tu vida."
+        }
+      }
+    },
+    {
+      "sectionId": "english-a1-m098-practice",
+      "sectionKey": "practice",
+      "position": 2,
+      "title": "practice",
+      "exercise": {
+        "exerciseId": "english-a1-m098-practice-ex01",
+        "type": "mixed_practice",
+        "items": [
+          {
+            "itemId": "english-a1-m098-practice-ex01-i01",
+            "position": 1,
+            "taskType": "translation_multiple_choice",
+            "prompt": "Traduce al español: “First, I got up.”",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "Primero, me levanté.",
+              "Finalmente, fuimos a casa.",
+              "Después visitamos el parque."
+            ],
+            "correctAnswer": "Primero, me levanté.",
+            "sourceEnglish": "First, I got up."
+          },
+          {
+            "itemId": "english-a1-m098-practice-ex01-i02",
+            "position": 2,
+            "taskType": "translation_multiple_choice",
+            "prompt": "Traduce al español: “Then, I had breakfast.”",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "Después, desayuné.",
+              "Ayer fue un día ajetreado.",
+              "Después de eso, almorzamos."
+            ],
+            "correctAnswer": "Después, desayuné.",
+            "sourceEnglish": "Then, I had breakfast."
+          },
+          {
+            "itemId": "english-a1-m098-practice-ex01-i03",
+            "position": 3,
+            "taskType": "translation_multiple_choice",
+            "prompt": "Traduce al español: “After that, I met my friend.”",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "Después de eso, me encontré con mi amigo.",
+              "Por la mañana, salí a pasear.",
+              "Finalmente, vi una película."
+            ],
+            "correctAnswer": "Después de eso, me encontré con mi amigo.",
+            "sourceEnglish": "After that, I met my friend."
+          },
+          {
+            "itemId": "english-a1-m098-practice-ex01-i04",
+            "position": 4,
+            "taskType": "translation_multiple_choice",
+            "prompt": "Traduce al español: “Finally, we went home.”",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "Finalmente, fuimos a casa.",
+              "Después visitamos el parque.",
+              "Esta es mi historia breve."
+            ],
+            "correctAnswer": "Finalmente, fuimos a casa.",
+            "sourceEnglish": "Finally, we went home."
+          },
+          {
+            "itemId": "english-a1-m098-practice-ex01-i05",
+            "position": 5,
+            "taskType": "translation_multiple_choice",
+            "prompt": "Traduce al español: “Yesterday was a busy day.”",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "Ayer fue un día ajetreado.",
+              "Después de eso, almorzamos.",
+              "Primero, me levanté."
+            ],
+            "correctAnswer": "Ayer fue un día ajetreado.",
+            "sourceEnglish": "Yesterday was a busy day."
+          },
+          {
+            "itemId": "english-a1-m098-practice-ex01-i06",
+            "position": 6,
+            "taskType": "translation_multiple_choice",
+            "prompt": "Traduce al español: “In the morning, I went for a walk.”",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "Por la mañana, salí a pasear.",
+              "Finalmente, vi una película.",
+              "Después, desayuné."
+            ],
+            "correctAnswer": "Por la mañana, salí a pasear.",
+            "sourceEnglish": "In the morning, I went for a walk."
+          },
+          {
+            "itemId": "english-a1-m098-practice-ex01-i07",
+            "position": 7,
+            "taskType": "translation_multiple_choice",
+            "prompt": "Traduce al español: “Then we visited the park.”",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "Después visitamos el parque.",
+              "Esta es mi historia breve.",
+              "Después de eso, me encontré con mi amigo."
+            ],
+            "correctAnswer": "Después visitamos el parque.",
+            "sourceEnglish": "Then we visited the park."
+          },
+          {
+            "itemId": "english-a1-m098-practice-ex01-i08",
+            "position": 8,
+            "taskType": "translation_multiple_choice",
+            "prompt": "Traduce al español: “After that, we had lunch.”",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "Después de eso, almorzamos.",
+              "Primero, me levanté.",
+              "Finalmente, fuimos a casa."
+            ],
+            "correctAnswer": "Después de eso, almorzamos.",
+            "sourceEnglish": "After that, we had lunch."
+          },
+          {
+            "itemId": "english-a1-m098-practice-ex01-i09",
+            "position": 9,
+            "taskType": "translation_multiple_choice",
+            "prompt": "Traduce al español: “Finally, I watched a film.”",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "Finalmente, vi una película.",
+              "Después, desayuné.",
+              "Ayer fue un día ajetreado."
+            ],
+            "correctAnswer": "Finalmente, vi una película.",
+            "sourceEnglish": "Finally, I watched a film."
+          },
+          {
+            "itemId": "english-a1-m098-practice-ex01-i10",
+            "position": 10,
+            "taskType": "translation_multiple_choice",
+            "prompt": "Traduce al español: “This is my short story.”",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "Esta es mi historia breve.",
+              "Después de eso, me encontré con mi amigo.",
+              "Por la mañana, salí a pasear."
+            ],
+            "correctAnswer": "Esta es mi historia breve.",
+            "sourceEnglish": "This is my short story."
+          },
+          {
+            "itemId": "english-a1-m098-practice-ex01-i11",
+            "position": 11,
+            "taskType": "listening_translation_multiple_choice",
+            "prompt": "Escucha el inglés y elige su significado.",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "Primero, me levanté.",
+              "Ayer fue un día ajetreado.",
+              "Después de eso, almorzamos."
+            ],
+            "correctAnswer": "Primero, me levanté.",
+            "sourceEnglish": "First, I got up."
+          },
+          {
+            "itemId": "english-a1-m098-practice-ex01-i12",
+            "position": 12,
+            "taskType": "listening_translation_multiple_choice",
+            "prompt": "Escucha el inglés y elige su significado.",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "Después, desayuné.",
+              "Por la mañana, salí a pasear.",
+              "Finalmente, vi una película."
+            ],
+            "correctAnswer": "Después, desayuné.",
+            "sourceEnglish": "Then, I had breakfast."
+          },
+          {
+            "itemId": "english-a1-m098-practice-ex01-i13",
+            "position": 13,
+            "taskType": "listening_translation_multiple_choice",
+            "prompt": "Escucha el inglés y elige su significado.",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "Después de eso, me encontré con mi amigo.",
+              "Después visitamos el parque.",
+              "Esta es mi historia breve."
+            ],
+            "correctAnswer": "Después de eso, me encontré con mi amigo.",
+            "sourceEnglish": "After that, I met my friend."
+          },
+          {
+            "itemId": "english-a1-m098-practice-ex01-i14",
+            "position": 14,
+            "taskType": "listening_translation_multiple_choice",
+            "prompt": "Escucha el inglés y elige su significado.",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "Finalmente, fuimos a casa.",
+              "Después de eso, almorzamos.",
+              "Primero, me levanté."
+            ],
+            "correctAnswer": "Finalmente, fuimos a casa.",
+            "sourceEnglish": "Finally, we went home."
+          },
+          {
+            "itemId": "english-a1-m098-practice-ex01-i15",
+            "position": 15,
+            "taskType": "listening_translation_multiple_choice",
+            "prompt": "Escucha el inglés y elige su significado.",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "Ayer fue un día ajetreado.",
+              "Finalmente, vi una película.",
+              "Después, desayuné."
+            ],
+            "correctAnswer": "Ayer fue un día ajetreado.",
+            "sourceEnglish": "Yesterday was a busy day."
+          },
+          {
+            "itemId": "english-a1-m098-practice-ex01-i16",
+            "position": 16,
+            "taskType": "listening_translation_multiple_choice",
+            "prompt": "Escucha el inglés y elige su significado.",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "Por la mañana, salí a pasear.",
+              "Esta es mi historia breve.",
+              "Después de eso, me encontré con mi amigo."
+            ],
+            "correctAnswer": "Por la mañana, salí a pasear.",
+            "sourceEnglish": "In the morning, I went for a walk."
+          },
+          {
+            "itemId": "english-a1-m098-practice-ex01-i17",
+            "position": 17,
+            "taskType": "listening_translation_multiple_choice",
+            "prompt": "Escucha el inglés y elige su significado.",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "Después visitamos el parque.",
+              "Primero, me levanté.",
+              "Finalmente, fuimos a casa."
+            ],
+            "correctAnswer": "Después visitamos el parque.",
+            "sourceEnglish": "Then we visited the park."
+          },
+          {
+            "itemId": "english-a1-m098-practice-ex01-i18",
+            "position": 18,
+            "taskType": "listening_translation_multiple_choice",
+            "prompt": "Escucha el inglés y elige su significado.",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "Después de eso, almorzamos.",
+              "Después, desayuné.",
+              "Ayer fue un día ajetreado."
+            ],
+            "correctAnswer": "Después de eso, almorzamos.",
+            "sourceEnglish": "After that, we had lunch."
+          },
+          {
+            "itemId": "english-a1-m098-practice-ex01-i19",
+            "position": 19,
+            "taskType": "listening_translation_multiple_choice",
+            "prompt": "Escucha el inglés y elige su significado.",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "Finalmente, vi una película.",
+              "Después de eso, me encontré con mi amigo.",
+              "Por la mañana, salí a pasear."
+            ],
+            "correctAnswer": "Finalmente, vi una película.",
+            "sourceEnglish": "Finally, I watched a film."
+          },
+          {
+            "itemId": "english-a1-m098-practice-ex01-i20",
+            "position": 20,
+            "taskType": "listening_translation_multiple_choice",
+            "prompt": "Escucha el inglés y elige su significado.",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "Esta es mi historia breve.",
+              "Finalmente, fuimos a casa.",
+              "Después visitamos el parque."
+            ],
+            "correctAnswer": "Esta es mi historia breve.",
+            "sourceEnglish": "This is my short story."
+          }
+        ]
+      }
+    },
+    {
+      "sectionId": "english-a1-m098-grammar",
+      "sectionKey": "grammar",
+      "position": 3,
+      "title": "grammar",
+      "exercise": {
+        "exerciseId": "english-a1-m098-grammar-ex01",
+        "type": "grammar",
+        "items": [
+          {
+            "itemId": "english-a1-m098-grammar-ex01-i01",
+            "position": 1,
+            "prompt": "First, we ___ at the station.",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "arrived",
+              "arrive",
+              "arriving"
+            ],
+            "correctAnswer": "arrived"
+          },
+          {
+            "itemId": "english-a1-m098-grammar-ex01-i02",
+            "position": 2,
+            "prompt": "Then we ___ lunch.",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "had",
+              "have",
+              "has"
+            ],
+            "correctAnswer": "had"
+          },
+          {
+            "itemId": "english-a1-m098-grammar-ex01-i03",
+            "position": 3,
+            "prompt": "After that, they ___ a game.",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "played",
+              "play",
+              "playing"
+            ],
+            "correctAnswer": "played"
+          },
+          {
+            "itemId": "english-a1-m098-grammar-ex01-i04",
+            "position": 4,
+            "prompt": "Finally, we ___ home.",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "went",
+              "go",
+              "going"
+            ],
+            "correctAnswer": "went"
+          },
+          {
+            "itemId": "english-a1-m098-grammar-ex01-i05",
+            "position": 5,
+            "prompt": "She ___ a photo yesterday.",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "took",
+              "take",
+              "takes"
+            ],
+            "correctAnswer": "took"
+          },
+          {
+            "itemId": "english-a1-m098-grammar-ex01-i06",
+            "position": 6,
+            "prompt": "We ___ the museum last week.",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "visited",
+              "visit",
+              "visiting"
+            ],
+            "correctAnswer": "visited"
+          },
+          {
+            "itemId": "english-a1-m098-grammar-ex01-i07",
+            "position": 7,
+            "prompt": "He ___ his friend on Saturday.",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "saw",
+              "see",
+              "seeing"
+            ],
+            "correctAnswer": "saw"
+          },
+          {
+            "itemId": "english-a1-m098-grammar-ex01-i08",
+            "position": 8,
+            "prompt": "They ___ a bus to town.",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "caught",
+              "catch",
+              "catches"
+            ],
+            "correctAnswer": "caught"
+          },
+          {
+            "itemId": "english-a1-m098-grammar-ex01-i09",
+            "position": 9,
+            "prompt": "I ___ a story last night.",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "read",
+              "reads",
+              "reading"
+            ],
+            "correctAnswer": "read"
+          },
+          {
+            "itemId": "english-a1-m098-grammar-ex01-i10",
+            "position": 10,
+            "prompt": "After that, we ___ goodbye.",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "said",
+              "say",
+              "saying"
+            ],
+            "correctAnswer": "said"
+          }
+        ],
+        "theory": {
+          "title": "Past simple and sequencing words",
+          "explanation": "Usamos el pasado simple para contar acontecimientos terminados y conectores como first, then, after that y finally para ordenar una historia.",
+          "patterns": [
+            {
+              "label": "Model",
+              "pattern": "First we arrived",
+              "examples": [
+                "First we arrived",
+                "Then we ate",
+                "Finally we went home."
+              ]
+            }
+          ],
+          "tip": "Lee los ejemplos y comprueba cómo cambia la estructura."
+        }
+      }
+    },
+    {
+      "sectionId": "english-a1-m098-pronunciation",
+      "sectionKey": "pronunciation",
+      "position": 4,
+      "title": "pronunciation",
+      "exercise": {
+        "exerciseId": "english-a1-m098-pronunciation-ex01",
+        "type": "pronunciation_cards",
+        "items": [
+          {
+            "itemId": "english-a1-m098-pronunciation-ex01-i01",
+            "position": 1,
+            "word": "first",
+            "translation": "primero",
+            "pronunciationGuide": "Listen to the en-GB model and keep the final consonant clear.",
+            "audio": "tts:en-GB:first"
+          },
+          {
+            "itemId": "english-a1-m098-pronunciation-ex01-i02",
+            "position": 2,
+            "word": "then",
+            "translation": "después",
+            "pronunciationGuide": "Listen to the en-GB model and keep the final consonant clear.",
+            "audio": "tts:en-GB:then"
+          },
+          {
+            "itemId": "english-a1-m098-pronunciation-ex01-i03",
+            "position": 3,
+            "word": "after that",
+            "translation": "después de eso",
+            "pronunciationGuide": "Listen to the phrase as one unit and notice its main stress.",
+            "audio": "tts:en-GB:after that"
+          },
+          {
+            "itemId": "english-a1-m098-pronunciation-ex01-i04",
+            "position": 4,
+            "word": "finally",
+            "translation": "finalmente",
+            "pronunciationGuide": "Listen to the en-GB model and keep the final consonant clear.",
+            "audio": "tts:en-GB:finally"
+          },
+          {
+            "itemId": "english-a1-m098-pronunciation-ex01-i05",
+            "position": 5,
+            "word": "yesterday",
+            "translation": "ayer",
+            "pronunciationGuide": "Listen to the en-GB model and keep the final consonant clear.",
+            "audio": "tts:en-GB:yesterday"
+          },
+          {
+            "itemId": "english-a1-m098-pronunciation-ex01-i06",
+            "position": 6,
+            "word": "morning",
+            "translation": "mañana",
+            "pronunciationGuide": "Listen to the en-GB model and keep the final consonant clear.",
+            "audio": "tts:en-GB:morning"
+          },
+          {
+            "itemId": "english-a1-m098-pronunciation-ex01-i07",
+            "position": 7,
+            "word": "walk",
+            "translation": "paseo",
+            "pronunciationGuide": "Listen to the en-GB model and keep the final consonant clear.",
+            "audio": "tts:en-GB:walk"
+          },
+          {
+            "itemId": "english-a1-m098-pronunciation-ex01-i08",
+            "position": 8,
+            "word": "friend",
+            "translation": "amigo",
+            "pronunciationGuide": "Listen to the en-GB model and keep the final consonant clear.",
+            "audio": "tts:en-GB:friend"
+          },
+          {
+            "itemId": "english-a1-m098-pronunciation-ex01-i09",
+            "position": 9,
+            "word": "home",
+            "translation": "casa",
+            "pronunciationGuide": "Listen to the en-GB model and keep the final consonant clear.",
+            "audio": "tts:en-GB:home"
+          },
+          {
+            "itemId": "english-a1-m098-pronunciation-ex01-i10",
+            "position": 10,
+            "word": "story",
+            "translation": "historia",
+            "pronunciationGuide": "Listen to the en-GB model and keep the final consonant clear.",
+            "audio": "tts:en-GB:story"
+          }
+        ],
+        "focus": "Practica el ritmo y el acento de las palabras clave de A Short Story."
+      }
+    },
+    {
+      "sectionId": "english-a1-m098-reading",
+      "sectionKey": "reading",
+      "position": 5,
+      "title": "reading",
+      "exercise": {
+        "exerciseId": "english-a1-m098-reading-ex01",
+        "type": "reading_comprehension",
+        "items": [
+          {
+            "itemId": "english-a1-m098-reading-ex01-i01",
+            "position": 1,
+            "prompt": "Which English sentence means “Primero, me levanté.”?",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "First, I got up.",
+              "Then, I had breakfast.",
+              "After that, I met my friend."
+            ],
+            "correctAnswer": "First, I got up."
+          },
+          {
+            "itemId": "english-a1-m098-reading-ex01-i02",
+            "position": 2,
+            "prompt": "Which English sentence means “Después, desayuné.”?",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "Then, I had breakfast.",
+              "After that, I met my friend.",
+              "Finally, we went home."
+            ],
+            "correctAnswer": "Then, I had breakfast."
+          },
+          {
+            "itemId": "english-a1-m098-reading-ex01-i03",
+            "position": 3,
+            "prompt": "Which English sentence means “Después de eso, me encontré con mi amigo.”?",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "After that, I met my friend.",
+              "Finally, we went home.",
+              "Yesterday was a busy day."
+            ],
+            "correctAnswer": "After that, I met my friend."
+          },
+          {
+            "itemId": "english-a1-m098-reading-ex01-i04",
+            "position": 4,
+            "prompt": "Which English sentence means “Finalmente, fuimos a casa.”?",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "Finally, we went home.",
+              "Yesterday was a busy day.",
+              "In the morning, I went for a walk."
+            ],
+            "correctAnswer": "Finally, we went home."
+          },
+          {
+            "itemId": "english-a1-m098-reading-ex01-i05",
+            "position": 5,
+            "prompt": "Which English sentence means “Ayer fue un día ajetreado.”?",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "Yesterday was a busy day.",
+              "In the morning, I went for a walk.",
+              "Then we visited the park."
+            ],
+            "correctAnswer": "Yesterday was a busy day."
+          },
+          {
+            "itemId": "english-a1-m098-reading-ex01-i06",
+            "position": 6,
+            "prompt": "Which English sentence means “Por la mañana, salí a pasear.”?",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "In the morning, I went for a walk.",
+              "Then we visited the park.",
+              "After that, we had lunch."
+            ],
+            "correctAnswer": "In the morning, I went for a walk."
+          },
+          {
+            "itemId": "english-a1-m098-reading-ex01-i07",
+            "position": 7,
+            "prompt": "Which English sentence means “Después visitamos el parque.”?",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "Then we visited the park.",
+              "After that, we had lunch.",
+              "Finally, I watched a film."
+            ],
+            "correctAnswer": "Then we visited the park."
+          },
+          {
+            "itemId": "english-a1-m098-reading-ex01-i08",
+            "position": 8,
+            "prompt": "Which English sentence means “Después de eso, almorzamos.”?",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "After that, we had lunch.",
+              "Finally, I watched a film.",
+              "This is my short story."
+            ],
+            "correctAnswer": "After that, we had lunch."
+          },
+          {
+            "itemId": "english-a1-m098-reading-ex01-i09",
+            "position": 9,
+            "prompt": "Which English sentence means “Finalmente, vi una película.”?",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "Finally, I watched a film.",
+              "This is my short story.",
+              "First, I got up."
+            ],
+            "correctAnswer": "Finally, I watched a film."
+          },
+          {
+            "itemId": "english-a1-m098-reading-ex01-i10",
+            "position": 10,
+            "prompt": "Which English sentence means “Esta es mi historia breve.”?",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "This is my short story.",
+              "First, I got up.",
+              "Then, I had breakfast."
+            ],
+            "correctAnswer": "This is my short story."
+          }
+        ],
+        "content": {
+          "passageId": "english-a1-m098-reading-passage-01",
+          "passage": "First, I got up. Then, I had breakfast. After that, I met my friend. Finally, we went home. Yesterday was a busy day. In the morning, I went for a walk."
+        }
+      }
+    },
+    {
+      "sectionId": "english-a1-m098-writing",
+      "sectionKey": "writing",
+      "position": 6,
+      "title": "writing",
+      "exercise": {
+        "exerciseId": "english-a1-m098-writing-ex01",
+        "type": "dictation",
+        "items": [
+          {
+            "itemId": "english-a1-m098-writing-ex01-i01",
+            "position": 1,
+            "audio": "tts:en-GB:First, I got up.",
+            "expectedAnswer": "First, I got up.",
+            "evaluation": {
+              "type": "normalised_text"
+            }
+          },
+          {
+            "itemId": "english-a1-m098-writing-ex01-i02",
+            "position": 2,
+            "audio": "tts:en-GB:Then, I had breakfast.",
+            "expectedAnswer": "Then, I had breakfast.",
+            "evaluation": {
+              "type": "normalised_text"
+            }
+          },
+          {
+            "itemId": "english-a1-m098-writing-ex01-i03",
+            "position": 3,
+            "audio": "tts:en-GB:After that, I met my friend.",
+            "expectedAnswer": "After that, I met my friend.",
+            "evaluation": {
+              "type": "normalised_text"
+            }
+          },
+          {
+            "itemId": "english-a1-m098-writing-ex01-i04",
+            "position": 4,
+            "audio": "tts:en-GB:Finally, we went home.",
+            "expectedAnswer": "Finally, we went home.",
+            "evaluation": {
+              "type": "normalised_text"
+            }
+          },
+          {
+            "itemId": "english-a1-m098-writing-ex01-i05",
+            "position": 5,
+            "audio": "tts:en-GB:Yesterday was a busy day.",
+            "expectedAnswer": "Yesterday was a busy day.",
+            "evaluation": {
+              "type": "normalised_text"
+            }
+          },
+          {
+            "itemId": "english-a1-m098-writing-ex01-i06",
+            "position": 6,
+            "audio": "tts:en-GB:In the morning, I went for a walk.",
+            "expectedAnswer": "In the morning, I went for a walk.",
+            "evaluation": {
+              "type": "normalised_text"
+            }
+          },
+          {
+            "itemId": "english-a1-m098-writing-ex01-i07",
+            "position": 7,
+            "audio": "tts:en-GB:Then we visited the park.",
+            "expectedAnswer": "Then we visited the park.",
+            "evaluation": {
+              "type": "normalised_text"
+            }
+          },
+          {
+            "itemId": "english-a1-m098-writing-ex01-i08",
+            "position": 8,
+            "audio": "tts:en-GB:After that, we had lunch.",
+            "expectedAnswer": "After that, we had lunch.",
+            "evaluation": {
+              "type": "normalised_text"
+            }
+          },
+          {
+            "itemId": "english-a1-m098-writing-ex01-i09",
+            "position": 9,
+            "audio": "tts:en-GB:Finally, I watched a film.",
+            "expectedAnswer": "Finally, I watched a film.",
+            "evaluation": {
+              "type": "normalised_text"
+            }
+          },
+          {
+            "itemId": "english-a1-m098-writing-ex01-i10",
+            "position": 10,
+            "audio": "tts:en-GB:This is my short story.",
+            "expectedAnswer": "This is my short story.",
+            "evaluation": {
+              "type": "normalised_text"
+            }
+          }
+        ],
+        "writingTask": "Escribe 5–6 frases sobre a short story. Utiliza al menos cinco palabras de la misión y la estructura past simple and sequencing words.",
+        "modelText": "First, I got up. Then, I had breakfast. After that, I met my friend. Finally, we went home. Yesterday was a busy day. In the morning, I went for a walk."
+      }
+    },
+    {
+      "sectionId": "english-a1-m098-speaking",
+      "sectionKey": "speaking",
+      "position": 7,
+      "title": "speaking",
+      "exercise": {
+        "exerciseId": "english-a1-m098-speaking-ex01",
+        "type": "speaking_prompts",
+        "items": [
+          {
+            "itemId": "english-a1-m098-speaking-ex01-i01",
+            "position": 1,
+            "prompt": "Say a sentence about this situation: Primero, me levanté.",
+            "modelAnswer": "First, I got up.",
+            "evaluation": {
+              "type": "transcription_feedback",
+              "transcriptionSeparateFromPronunciation": true
+            }
+          },
+          {
+            "itemId": "english-a1-m098-speaking-ex01-i02",
+            "position": 2,
+            "prompt": "Say a sentence about this situation: Después, desayuné.",
+            "modelAnswer": "Then, I had breakfast.",
+            "evaluation": {
+              "type": "transcription_feedback",
+              "transcriptionSeparateFromPronunciation": true
+            }
+          },
+          {
+            "itemId": "english-a1-m098-speaking-ex01-i03",
+            "position": 3,
+            "prompt": "Say a sentence about this situation: Después de eso, me encontré con mi amigo.",
+            "modelAnswer": "After that, I met my friend.",
+            "evaluation": {
+              "type": "transcription_feedback",
+              "transcriptionSeparateFromPronunciation": true
+            }
+          },
+          {
+            "itemId": "english-a1-m098-speaking-ex01-i04",
+            "position": 4,
+            "prompt": "Say a sentence about this situation: Finalmente, fuimos a casa.",
+            "modelAnswer": "Finally, we went home.",
+            "evaluation": {
+              "type": "transcription_feedback",
+              "transcriptionSeparateFromPronunciation": true
+            }
+          },
+          {
+            "itemId": "english-a1-m098-speaking-ex01-i05",
+            "position": 5,
+            "prompt": "Say a sentence about this situation: Ayer fue un día ajetreado.",
+            "modelAnswer": "Yesterday was a busy day.",
+            "evaluation": {
+              "type": "transcription_feedback",
+              "transcriptionSeparateFromPronunciation": true
+            }
+          },
+          {
+            "itemId": "english-a1-m098-speaking-ex01-i06",
+            "position": 6,
+            "prompt": "Say a sentence about this situation: Por la mañana, salí a pasear.",
+            "modelAnswer": "In the morning, I went for a walk.",
+            "evaluation": {
+              "type": "transcription_feedback",
+              "transcriptionSeparateFromPronunciation": true
+            }
+          },
+          {
+            "itemId": "english-a1-m098-speaking-ex01-i07",
+            "position": 7,
+            "prompt": "Say a sentence about this situation: Después visitamos el parque.",
+            "modelAnswer": "Then we visited the park.",
+            "evaluation": {
+              "type": "transcription_feedback",
+              "transcriptionSeparateFromPronunciation": true
+            }
+          },
+          {
+            "itemId": "english-a1-m098-speaking-ex01-i08",
+            "position": 8,
+            "prompt": "Say a sentence about this situation: Después de eso, almorzamos.",
+            "modelAnswer": "After that, we had lunch.",
+            "evaluation": {
+              "type": "transcription_feedback",
+              "transcriptionSeparateFromPronunciation": true
+            }
+          },
+          {
+            "itemId": "english-a1-m098-speaking-ex01-i09",
+            "position": 9,
+            "prompt": "Say a sentence about this situation: Finalmente, vi una película.",
+            "modelAnswer": "Finally, I watched a film.",
+            "evaluation": {
+              "type": "transcription_feedback",
+              "transcriptionSeparateFromPronunciation": true
+            }
+          },
+          {
+            "itemId": "english-a1-m098-speaking-ex01-i10",
+            "position": 10,
+            "prompt": "Say a sentence about this situation: Esta es mi historia breve.",
+            "modelAnswer": "This is my short story.",
+            "evaluation": {
+              "type": "transcription_feedback",
+              "transcriptionSeparateFromPronunciation": true
+            }
+          }
+        ]
+      }
+    },
+    {
+      "sectionId": "english-a1-m098-listening",
+      "sectionKey": "listening",
+      "position": 8,
+      "title": "listening",
+      "exercise": {
+        "exerciseId": "english-a1-m098-listening-ex01",
+        "type": "listening_gap_fill",
+        "items": [
+          {
+            "itemId": "english-a1-m098-listening-ex01-i01",
+            "position": 1,
+            "gapToken": "[[gap-01]]",
+            "expectedWordId": "english-a1-m098-listening-word-01"
+          },
+          {
+            "itemId": "english-a1-m098-listening-ex01-i02",
+            "position": 2,
+            "gapToken": "[[gap-02]]",
+            "expectedWordId": "english-a1-m098-listening-word-02"
+          },
+          {
+            "itemId": "english-a1-m098-listening-ex01-i03",
+            "position": 3,
+            "gapToken": "[[gap-03]]",
+            "expectedWordId": "english-a1-m098-listening-word-03"
+          },
+          {
+            "itemId": "english-a1-m098-listening-ex01-i04",
+            "position": 4,
+            "gapToken": "[[gap-04]]",
+            "expectedWordId": "english-a1-m098-listening-word-04"
+          },
+          {
+            "itemId": "english-a1-m098-listening-ex01-i05",
+            "position": 5,
+            "gapToken": "[[gap-05]]",
+            "expectedWordId": "english-a1-m098-listening-word-05"
+          },
+          {
+            "itemId": "english-a1-m098-listening-ex01-i06",
+            "position": 6,
+            "gapToken": "[[gap-06]]",
+            "expectedWordId": "english-a1-m098-listening-word-06"
+          },
+          {
+            "itemId": "english-a1-m098-listening-ex01-i07",
+            "position": 7,
+            "gapToken": "[[gap-07]]",
+            "expectedWordId": "english-a1-m098-listening-word-07"
+          },
+          {
+            "itemId": "english-a1-m098-listening-ex01-i08",
+            "position": 8,
+            "gapToken": "[[gap-08]]",
+            "expectedWordId": "english-a1-m098-listening-word-08"
+          },
+          {
+            "itemId": "english-a1-m098-listening-ex01-i09",
+            "position": 9,
+            "gapToken": "[[gap-09]]",
+            "expectedWordId": "english-a1-m098-listening-word-09"
+          },
+          {
+            "itemId": "english-a1-m098-listening-ex01-i10",
+            "position": 10,
+            "gapToken": "[[gap-10]]",
+            "expectedWordId": "english-a1-m098-listening-word-10"
+          }
+        ],
+        "content": {
+          "audio": "tts:en-GB:The key words for A Short Story are: first, then, after that, finally, yesterday, morning, walk, friend, home, story. Listen and repeat each word carefully.",
+          "audioLocale": "en-GB",
+          "transcriptTemplate": "The key words for A Short Story are: [[gap-01]], [[gap-02]], [[gap-03]], [[gap-04]], [[gap-05]], [[gap-06]], [[gap-07]], [[gap-08]], [[gap-09]], [[gap-10]]. Listen and repeat each word carefully.",
+          "wordBank": [
+            {
+              "wordId": "english-a1-m098-listening-word-01",
+              "word": "first"
+            },
+            {
+              "wordId": "english-a1-m098-listening-word-02",
+              "word": "then"
+            },
+            {
+              "wordId": "english-a1-m098-listening-word-03",
+              "word": "after that"
+            },
+            {
+              "wordId": "english-a1-m098-listening-word-04",
+              "word": "finally"
+            },
+            {
+              "wordId": "english-a1-m098-listening-word-05",
+              "word": "yesterday"
+            },
+            {
+              "wordId": "english-a1-m098-listening-word-06",
+              "word": "morning"
+            },
+            {
+              "wordId": "english-a1-m098-listening-word-07",
+              "word": "walk"
+            },
+            {
+              "wordId": "english-a1-m098-listening-word-08",
+              "word": "friend"
+            },
+            {
+              "wordId": "english-a1-m098-listening-word-09",
+              "word": "home"
+            },
+            {
+              "wordId": "english-a1-m098-listening-word-10",
+              "word": "story"
+            }
+          ],
+          "interaction": "select_place_move_replace"
+        }
+      }
+    }
+  ]
+}

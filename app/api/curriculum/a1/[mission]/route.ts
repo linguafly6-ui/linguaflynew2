@@ -39,13 +39,24 @@ import mission087 from "@/content/missions/a1/087.json";
 import mission088 from "@/content/missions/a1/088.json";
 import mission089 from "@/content/missions/a1/089.json";
 import mission090 from "@/content/missions/a1/090.json";
+import mission091 from "@/content/missions/a1/091.json";
+import mission092 from "@/content/missions/a1/092.json";
+import mission093 from "@/content/missions/a1/093.json";
+import mission094 from "@/content/missions/a1/094.json";
+import mission095 from "@/content/missions/a1/095.json";
+import mission096 from "@/content/missions/a1/096.json";
+import mission097 from "@/content/missions/a1/097.json";
+import mission098 from "@/content/missions/a1/098.json";
+import mission099 from "@/content/missions/a1/099.json";
+import mission100 from "@/content/missions/a1/100.json";
 
 const missions: Record<string, unknown> = {
   "051": mission051, "052": mission052, "053": mission053, "054": mission054, "055": mission055,
   "056": mission056, "057": mission057, "058": mission058, "059": mission059, "060": mission060,
   "061": mission061, "062": mission062, "063": mission063, "064": mission064, "065": mission065, "066": mission066, "067": mission067, "068": mission068, "069": mission069, "070": mission070,
   "071": mission071, "072": mission072, "073": mission073, "074": mission074, "075": mission075, "076": mission076, "077": mission077, "078": mission078, "079": mission079, "080": mission080,
-  "081": mission081, "082": mission082, "083": mission083, "084": mission084, "085": mission085, "086": mission086, "087": mission087, "088": mission088, "089": mission089, "090": mission090
+  "081": mission081, "082": mission082, "083": mission083, "084": mission084, "085": mission085, "086": mission086, "087": mission087, "088": mission088, "089": mission089, "090": mission090,
+  "091": mission091, "092": mission092, "093": mission093, "094": mission094, "095": mission095, "096": mission096, "097": mission097, "098": mission098, "099": mission099, "100": mission100
 };
 
 export function GET(_request: Request, { params }: { params: Promise<{ mission: string }> }) {

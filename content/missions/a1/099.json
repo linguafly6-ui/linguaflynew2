@@ -1,0 +1,1205 @@
+{
+  "schemaVersion": "1.2.0",
+  "contentVersion": 1,
+  "course": {
+    "courseId": "english-a1",
+    "level": "A1",
+    "language": "en-GB"
+  },
+  "unit": {
+    "unitId": "english-a1-unit-10",
+    "courseId": "english-a1",
+    "position": 10,
+    "title": "Health, weather and everyday interaction"
+  },
+  "mission": {
+    "missionId": "english-a1-m099",
+    "unitId": "english-a1-unit-10",
+    "position": 99,
+    "title": "Reading and Listening Challenge"
+  },
+  "sections": [
+    {
+      "sectionId": "english-a1-m099-explore",
+      "sectionKey": "explore",
+      "position": 1,
+      "title": "explore",
+      "exercise": {
+        "exerciseId": "english-a1-m099-explore-ex01",
+        "type": "vocabulary_pairs",
+        "items": [
+          {
+            "itemId": "english-a1-m099-explore-ex01-i01",
+            "position": 1,
+            "english": "notice",
+            "spanish": "aviso",
+            "audio": "tts:en-GB:notice"
+          },
+          {
+            "itemId": "english-a1-m099-explore-ex01-i02",
+            "position": 2,
+            "english": "message",
+            "spanish": "mensaje",
+            "audio": "tts:en-GB:message"
+          },
+          {
+            "itemId": "english-a1-m099-explore-ex01-i03",
+            "position": 3,
+            "english": "dialogue",
+            "spanish": "diálogo",
+            "audio": "tts:en-GB:dialogue"
+          },
+          {
+            "itemId": "english-a1-m099-explore-ex01-i04",
+            "position": 4,
+            "english": "opening time",
+            "spanish": "horario de apertura",
+            "audio": "tts:en-GB:opening time"
+          },
+          {
+            "itemId": "english-a1-m099-explore-ex01-i05",
+            "position": 5,
+            "english": "closed",
+            "spanish": "cerrado",
+            "audio": "tts:en-GB:closed"
+          },
+          {
+            "itemId": "english-a1-m099-explore-ex01-i06",
+            "position": 6,
+            "english": "meet",
+            "spanish": "quedar",
+            "audio": "tts:en-GB:meet"
+          },
+          {
+            "itemId": "english-a1-m099-explore-ex01-i07",
+            "position": 7,
+            "english": "today",
+            "spanish": "hoy",
+            "audio": "tts:en-GB:today"
+          },
+          {
+            "itemId": "english-a1-m099-explore-ex01-i08",
+            "position": 8,
+            "english": "tomorrow",
+            "spanish": "mañana",
+            "audio": "tts:en-GB:tomorrow"
+          },
+          {
+            "itemId": "english-a1-m099-explore-ex01-i09",
+            "position": 9,
+            "english": "入口",
+            "spanish": "entrada",
+            "audio": "tts:en-GB:入口"
+          },
+          {
+            "itemId": "english-a1-m099-explore-ex01-i10",
+            "position": 10,
+            "english": "price",
+            "spanish": "precio",
+            "audio": "tts:en-GB:price"
+          }
+        ],
+        "theory": {
+          "title": "Vocabulary: Reading and Listening Challenge",
+          "explanation": "Explora diez palabras y expresiones sobre reading and listening challenge. Escucha el modelo británico y relaciona cada palabra con su significado.",
+          "patterns": [
+            {
+              "label": "Useful language",
+              "pattern": "Short question + short answer",
+              "examples": [
+                "The library is closed today.",
+                "The café opens at nine.",
+                "Meet me at the bus stop."
+              ]
+            }
+          ],
+          "tip": "Repite las expresiones y crea un ejemplo relacionado con tu vida."
+        }
+      }
+    },
+    {
+      "sectionId": "english-a1-m099-practice",
+      "sectionKey": "practice",
+      "position": 2,
+      "title": "practice",
+      "exercise": {
+        "exerciseId": "english-a1-m099-practice-ex01",
+        "type": "mixed_practice",
+        "items": [
+          {
+            "itemId": "english-a1-m099-practice-ex01-i01",
+            "position": 1,
+            "taskType": "translation_multiple_choice",
+            "prompt": "Traduce al español: “The library is closed today.”",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "La biblioteca está cerrada hoy.",
+              "La fiesta es el sábado.",
+              "Un billete cuesta cinco libras."
+            ],
+            "correctAnswer": "La biblioteca está cerrada hoy.",
+            "sourceEnglish": "The library is closed today."
+          },
+          {
+            "itemId": "english-a1-m099-practice-ex01-i02",
+            "position": 2,
+            "taskType": "translation_multiple_choice",
+            "prompt": "Traduce al español: “The café opens at nine.”",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "La cafetería abre a las nueve.",
+              "Por favor, llámame mañana.",
+              "El mensaje es para Anna."
+            ],
+            "correctAnswer": "La cafetería abre a las nueve.",
+            "sourceEnglish": "The café opens at nine."
+          },
+          {
+            "itemId": "english-a1-m099-practice-ex01-i03",
+            "position": 3,
+            "taskType": "translation_multiple_choice",
+            "prompt": "Traduce al español: “Meet me at the bus stop.”",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "Queda conmigo en la parada de autobús.",
+              "La tienda cierra a las seis.",
+              "El tren sale del andén dos."
+            ],
+            "correctAnswer": "Queda conmigo en la parada de autobús.",
+            "sourceEnglish": "Meet me at the bus stop."
+          },
+          {
+            "itemId": "english-a1-m099-practice-ex01-i04",
+            "position": 4,
+            "taskType": "translation_multiple_choice",
+            "prompt": "Traduce al español: “The party is on Saturday.”",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "La fiesta es el sábado.",
+              "Un billete cuesta cinco libras.",
+              "Escucha y elige la respuesta correcta."
+            ],
+            "correctAnswer": "La fiesta es el sábado.",
+            "sourceEnglish": "The party is on Saturday."
+          },
+          {
+            "itemId": "english-a1-m099-practice-ex01-i05",
+            "position": 5,
+            "taskType": "translation_multiple_choice",
+            "prompt": "Traduce al español: “Please call me tomorrow.”",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "Por favor, llámame mañana.",
+              "El mensaje es para Anna.",
+              "La biblioteca está cerrada hoy."
+            ],
+            "correctAnswer": "Por favor, llámame mañana.",
+            "sourceEnglish": "Please call me tomorrow."
+          },
+          {
+            "itemId": "english-a1-m099-practice-ex01-i06",
+            "position": 6,
+            "taskType": "translation_multiple_choice",
+            "prompt": "Traduce al español: “The shop closes at six.”",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "La tienda cierra a las seis.",
+              "El tren sale del andén dos.",
+              "La cafetería abre a las nueve."
+            ],
+            "correctAnswer": "La tienda cierra a las seis.",
+            "sourceEnglish": "The shop closes at six."
+          },
+          {
+            "itemId": "english-a1-m099-practice-ex01-i07",
+            "position": 7,
+            "taskType": "translation_multiple_choice",
+            "prompt": "Traduce al español: “A ticket costs five pounds.”",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "Un billete cuesta cinco libras.",
+              "Escucha y elige la respuesta correcta.",
+              "Queda conmigo en la parada de autobús."
+            ],
+            "correctAnswer": "Un billete cuesta cinco libras.",
+            "sourceEnglish": "A ticket costs five pounds."
+          },
+          {
+            "itemId": "english-a1-m099-practice-ex01-i08",
+            "position": 8,
+            "taskType": "translation_multiple_choice",
+            "prompt": "Traduce al español: “The message is for Anna.”",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "El mensaje es para Anna.",
+              "La biblioteca está cerrada hoy.",
+              "La fiesta es el sábado."
+            ],
+            "correctAnswer": "El mensaje es para Anna.",
+            "sourceEnglish": "The message is for Anna."
+          },
+          {
+            "itemId": "english-a1-m099-practice-ex01-i09",
+            "position": 9,
+            "taskType": "translation_multiple_choice",
+            "prompt": "Traduce al español: “The train leaves from platform two.”",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "El tren sale del andén dos.",
+              "La cafetería abre a las nueve.",
+              "Por favor, llámame mañana."
+            ],
+            "correctAnswer": "El tren sale del andén dos.",
+            "sourceEnglish": "The train leaves from platform two."
+          },
+          {
+            "itemId": "english-a1-m099-practice-ex01-i10",
+            "position": 10,
+            "taskType": "translation_multiple_choice",
+            "prompt": "Traduce al español: “Listen and choose the correct answer.”",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "Escucha y elige la respuesta correcta.",
+              "Queda conmigo en la parada de autobús.",
+              "La tienda cierra a las seis."
+            ],
+            "correctAnswer": "Escucha y elige la respuesta correcta.",
+            "sourceEnglish": "Listen and choose the correct answer."
+          },
+          {
+            "itemId": "english-a1-m099-practice-ex01-i11",
+            "position": 11,
+            "taskType": "listening_translation_multiple_choice",
+            "prompt": "Escucha el inglés y elige su significado.",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "La biblioteca está cerrada hoy.",
+              "Por favor, llámame mañana.",
+              "El mensaje es para Anna."
+            ],
+            "correctAnswer": "La biblioteca está cerrada hoy.",
+            "sourceEnglish": "The library is closed today."
+          },
+          {
+            "itemId": "english-a1-m099-practice-ex01-i12",
+            "position": 12,
+            "taskType": "listening_translation_multiple_choice",
+            "prompt": "Escucha el inglés y elige su significado.",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "La cafetería abre a las nueve.",
+              "La tienda cierra a las seis.",
+              "El tren sale del andén dos."
+            ],
+            "correctAnswer": "La cafetería abre a las nueve.",
+            "sourceEnglish": "The café opens at nine."
+          },
+          {
+            "itemId": "english-a1-m099-practice-ex01-i13",
+            "position": 13,
+            "taskType": "listening_translation_multiple_choice",
+            "prompt": "Escucha el inglés y elige su significado.",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "Queda conmigo en la parada de autobús.",
+              "Un billete cuesta cinco libras.",
+              "Escucha y elige la respuesta correcta."
+            ],
+            "correctAnswer": "Queda conmigo en la parada de autobús.",
+            "sourceEnglish": "Meet me at the bus stop."
+          },
+          {
+            "itemId": "english-a1-m099-practice-ex01-i14",
+            "position": 14,
+            "taskType": "listening_translation_multiple_choice",
+            "prompt": "Escucha el inglés y elige su significado.",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "La fiesta es el sábado.",
+              "El mensaje es para Anna.",
+              "La biblioteca está cerrada hoy."
+            ],
+            "correctAnswer": "La fiesta es el sábado.",
+            "sourceEnglish": "The party is on Saturday."
+          },
+          {
+            "itemId": "english-a1-m099-practice-ex01-i15",
+            "position": 15,
+            "taskType": "listening_translation_multiple_choice",
+            "prompt": "Escucha el inglés y elige su significado.",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "Por favor, llámame mañana.",
+              "El tren sale del andén dos.",
+              "La cafetería abre a las nueve."
+            ],
+            "correctAnswer": "Por favor, llámame mañana.",
+            "sourceEnglish": "Please call me tomorrow."
+          },
+          {
+            "itemId": "english-a1-m099-practice-ex01-i16",
+            "position": 16,
+            "taskType": "listening_translation_multiple_choice",
+            "prompt": "Escucha el inglés y elige su significado.",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "La tienda cierra a las seis.",
+              "Escucha y elige la respuesta correcta.",
+              "Queda conmigo en la parada de autobús."
+            ],
+            "correctAnswer": "La tienda cierra a las seis.",
+            "sourceEnglish": "The shop closes at six."
+          },
+          {
+            "itemId": "english-a1-m099-practice-ex01-i17",
+            "position": 17,
+            "taskType": "listening_translation_multiple_choice",
+            "prompt": "Escucha el inglés y elige su significado.",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "Un billete cuesta cinco libras.",
+              "La biblioteca está cerrada hoy.",
+              "La fiesta es el sábado."
+            ],
+            "correctAnswer": "Un billete cuesta cinco libras.",
+            "sourceEnglish": "A ticket costs five pounds."
+          },
+          {
+            "itemId": "english-a1-m099-practice-ex01-i18",
+            "position": 18,
+            "taskType": "listening_translation_multiple_choice",
+            "prompt": "Escucha el inglés y elige su significado.",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "El mensaje es para Anna.",
+              "La cafetería abre a las nueve.",
+              "Por favor, llámame mañana."
+            ],
+            "correctAnswer": "El mensaje es para Anna.",
+            "sourceEnglish": "The message is for Anna."
+          },
+          {
+            "itemId": "english-a1-m099-practice-ex01-i19",
+            "position": 19,
+            "taskType": "listening_translation_multiple_choice",
+            "prompt": "Escucha el inglés y elige su significado.",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "El tren sale del andén dos.",
+              "Queda conmigo en la parada de autobús.",
+              "La tienda cierra a las seis."
+            ],
+            "correctAnswer": "El tren sale del andén dos.",
+            "sourceEnglish": "The train leaves from platform two."
+          },
+          {
+            "itemId": "english-a1-m099-practice-ex01-i20",
+            "position": 20,
+            "taskType": "listening_translation_multiple_choice",
+            "prompt": "Escucha el inglés y elige su significado.",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "Escucha y elige la respuesta correcta.",
+              "La fiesta es el sábado.",
+              "Un billete cuesta cinco libras."
+            ],
+            "correctAnswer": "Escucha y elige la respuesta correcta.",
+            "sourceEnglish": "Listen and choose the correct answer."
+          }
+        ]
+      }
+    },
+    {
+      "sectionId": "english-a1-m099-grammar",
+      "sectionKey": "grammar",
+      "position": 3,
+      "title": "grammar",
+      "exercise": {
+        "exerciseId": "english-a1-m099-grammar-ex01",
+        "type": "grammar",
+        "items": [
+          {
+            "itemId": "english-a1-m099-grammar-ex01-i01",
+            "position": 1,
+            "prompt": "She ___ to school every day.",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "walks",
+              "walk",
+              "walking"
+            ],
+            "correctAnswer": "walks"
+          },
+          {
+            "itemId": "english-a1-m099-grammar-ex01-i02",
+            "position": 2,
+            "prompt": "They ___ watching TV now.",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "are",
+              "is",
+              "am"
+            ],
+            "correctAnswer": "are"
+          },
+          {
+            "itemId": "english-a1-m099-grammar-ex01-i03",
+            "position": 3,
+            "prompt": "There ___ two parks in my town.",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "are",
+              "is",
+              "be"
+            ],
+            "correctAnswer": "are"
+          },
+          {
+            "itemId": "english-a1-m099-grammar-ex01-i04",
+            "position": 4,
+            "prompt": "___ you speak English?",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "Can",
+              "Do",
+              "Are"
+            ],
+            "correctAnswer": "Can"
+          },
+          {
+            "itemId": "english-a1-m099-grammar-ex01-i05",
+            "position": 5,
+            "prompt": "Yesterday we ___ to the beach.",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "went",
+              "go",
+              "goed"
+            ],
+            "correctAnswer": "went"
+          },
+          {
+            "itemId": "english-a1-m099-grammar-ex01-i06",
+            "position": 6,
+            "prompt": "How much ___ this ticket?",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "is",
+              "are",
+              "do"
+            ],
+            "correctAnswer": "is"
+          },
+          {
+            "itemId": "english-a1-m099-grammar-ex01-i07",
+            "position": 7,
+            "prompt": "He ___ got a headache.",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "has",
+              "have",
+              "is"
+            ],
+            "correctAnswer": "has"
+          },
+          {
+            "itemId": "english-a1-m099-grammar-ex01-i08",
+            "position": 8,
+            "prompt": "I ___ meeting Anna tomorrow.",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "am",
+              "is",
+              "are"
+            ],
+            "correctAnswer": "am"
+          },
+          {
+            "itemId": "english-a1-m099-grammar-ex01-i09",
+            "position": 9,
+            "prompt": "Where ___ the station?",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "is",
+              "are",
+              "do"
+            ],
+            "correctAnswer": "is"
+          },
+          {
+            "itemId": "english-a1-m099-grammar-ex01-i10",
+            "position": 10,
+            "prompt": "We ___ play football on Sundays.",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "often",
+              "oftenly",
+              "oftens"
+            ],
+            "correctAnswer": "often"
+          }
+        ],
+        "theory": {
+          "title": "A1 reading and listening review",
+          "explanation": "Repasamos estructuras frecuentes del nivel A1: presente simple, presente continuo, can, there is/are, preguntas y pasado simple básico.",
+          "patterns": [
+            {
+              "label": "Model",
+              "pattern": "I usually walk to school",
+              "examples": [
+                "I usually walk to school",
+                "Yesterday I went by bus."
+              ]
+            }
+          ],
+          "tip": "Lee los ejemplos y comprueba cómo cambia la estructura."
+        }
+      }
+    },
+    {
+      "sectionId": "english-a1-m099-pronunciation",
+      "sectionKey": "pronunciation",
+      "position": 4,
+      "title": "pronunciation",
+      "exercise": {
+        "exerciseId": "english-a1-m099-pronunciation-ex01",
+        "type": "pronunciation_cards",
+        "items": [
+          {
+            "itemId": "english-a1-m099-pronunciation-ex01-i01",
+            "position": 1,
+            "word": "notice",
+            "translation": "aviso",
+            "pronunciationGuide": "Listen to the en-GB model and keep the final consonant clear.",
+            "audio": "tts:en-GB:notice"
+          },
+          {
+            "itemId": "english-a1-m099-pronunciation-ex01-i02",
+            "position": 2,
+            "word": "message",
+            "translation": "mensaje",
+            "pronunciationGuide": "Listen to the en-GB model and keep the final consonant clear.",
+            "audio": "tts:en-GB:message"
+          },
+          {
+            "itemId": "english-a1-m099-pronunciation-ex01-i03",
+            "position": 3,
+            "word": "dialogue",
+            "translation": "diálogo",
+            "pronunciationGuide": "Listen to the en-GB model and keep the final consonant clear.",
+            "audio": "tts:en-GB:dialogue"
+          },
+          {
+            "itemId": "english-a1-m099-pronunciation-ex01-i04",
+            "position": 4,
+            "word": "opening time",
+            "translation": "horario de apertura",
+            "pronunciationGuide": "Listen to the phrase as one unit and notice its main stress.",
+            "audio": "tts:en-GB:opening time"
+          },
+          {
+            "itemId": "english-a1-m099-pronunciation-ex01-i05",
+            "position": 5,
+            "word": "closed",
+            "translation": "cerrado",
+            "pronunciationGuide": "Listen to the en-GB model and keep the final consonant clear.",
+            "audio": "tts:en-GB:closed"
+          },
+          {
+            "itemId": "english-a1-m099-pronunciation-ex01-i06",
+            "position": 6,
+            "word": "meet",
+            "translation": "quedar",
+            "pronunciationGuide": "Listen to the en-GB model and keep the final consonant clear.",
+            "audio": "tts:en-GB:meet"
+          },
+          {
+            "itemId": "english-a1-m099-pronunciation-ex01-i07",
+            "position": 7,
+            "word": "today",
+            "translation": "hoy",
+            "pronunciationGuide": "Listen to the en-GB model and keep the final consonant clear.",
+            "audio": "tts:en-GB:today"
+          },
+          {
+            "itemId": "english-a1-m099-pronunciation-ex01-i08",
+            "position": 8,
+            "word": "tomorrow",
+            "translation": "mañana",
+            "pronunciationGuide": "Listen to the en-GB model and keep the final consonant clear.",
+            "audio": "tts:en-GB:tomorrow"
+          },
+          {
+            "itemId": "english-a1-m099-pronunciation-ex01-i09",
+            "position": 9,
+            "word": "入口",
+            "translation": "entrada",
+            "pronunciationGuide": "Listen to the en-GB model and keep the final consonant clear.",
+            "audio": "tts:en-GB:入口"
+          },
+          {
+            "itemId": "english-a1-m099-pronunciation-ex01-i10",
+            "position": 10,
+            "word": "price",
+            "translation": "precio",
+            "pronunciationGuide": "Listen to the en-GB model and keep the final consonant clear.",
+            "audio": "tts:en-GB:price"
+          }
+        ],
+        "focus": "Practica el ritmo y el acento de las palabras clave de Reading and Listening Challenge."
+      }
+    },
+    {
+      "sectionId": "english-a1-m099-reading",
+      "sectionKey": "reading",
+      "position": 5,
+      "title": "reading",
+      "exercise": {
+        "exerciseId": "english-a1-m099-reading-ex01",
+        "type": "reading_comprehension",
+        "items": [
+          {
+            "itemId": "english-a1-m099-reading-ex01-i01",
+            "position": 1,
+            "prompt": "Which English sentence means “La biblioteca está cerrada hoy.”?",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "The library is closed today.",
+              "The café opens at nine.",
+              "Meet me at the bus stop."
+            ],
+            "correctAnswer": "The library is closed today."
+          },
+          {
+            "itemId": "english-a1-m099-reading-ex01-i02",
+            "position": 2,
+            "prompt": "Which English sentence means “La cafetería abre a las nueve.”?",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "The café opens at nine.",
+              "Meet me at the bus stop.",
+              "The party is on Saturday."
+            ],
+            "correctAnswer": "The café opens at nine."
+          },
+          {
+            "itemId": "english-a1-m099-reading-ex01-i03",
+            "position": 3,
+            "prompt": "Which English sentence means “Queda conmigo en la parada de autobús.”?",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "Meet me at the bus stop.",
+              "The party is on Saturday.",
+              "Please call me tomorrow."
+            ],
+            "correctAnswer": "Meet me at the bus stop."
+          },
+          {
+            "itemId": "english-a1-m099-reading-ex01-i04",
+            "position": 4,
+            "prompt": "Which English sentence means “La fiesta es el sábado.”?",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "The party is on Saturday.",
+              "Please call me tomorrow.",
+              "The shop closes at six."
+            ],
+            "correctAnswer": "The party is on Saturday."
+          },
+          {
+            "itemId": "english-a1-m099-reading-ex01-i05",
+            "position": 5,
+            "prompt": "Which English sentence means “Por favor, llámame mañana.”?",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "Please call me tomorrow.",
+              "The shop closes at six.",
+              "A ticket costs five pounds."
+            ],
+            "correctAnswer": "Please call me tomorrow."
+          },
+          {
+            "itemId": "english-a1-m099-reading-ex01-i06",
+            "position": 6,
+            "prompt": "Which English sentence means “La tienda cierra a las seis.”?",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "The shop closes at six.",
+              "A ticket costs five pounds.",
+              "The message is for Anna."
+            ],
+            "correctAnswer": "The shop closes at six."
+          },
+          {
+            "itemId": "english-a1-m099-reading-ex01-i07",
+            "position": 7,
+            "prompt": "Which English sentence means “Un billete cuesta cinco libras.”?",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "A ticket costs five pounds.",
+              "The message is for Anna.",
+              "The train leaves from platform two."
+            ],
+            "correctAnswer": "A ticket costs five pounds."
+          },
+          {
+            "itemId": "english-a1-m099-reading-ex01-i08",
+            "position": 8,
+            "prompt": "Which English sentence means “El mensaje es para Anna.”?",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "The message is for Anna.",
+              "The train leaves from platform two.",
+              "Listen and choose the correct answer."
+            ],
+            "correctAnswer": "The message is for Anna."
+          },
+          {
+            "itemId": "english-a1-m099-reading-ex01-i09",
+            "position": 9,
+            "prompt": "Which English sentence means “El tren sale del andén dos.”?",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "The train leaves from platform two.",
+              "Listen and choose the correct answer.",
+              "The library is closed today."
+            ],
+            "correctAnswer": "The train leaves from platform two."
+          },
+          {
+            "itemId": "english-a1-m099-reading-ex01-i10",
+            "position": 10,
+            "prompt": "Which English sentence means “Escucha y elige la respuesta correcta.”?",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "Listen and choose the correct answer.",
+              "The library is closed today.",
+              "The café opens at nine."
+            ],
+            "correctAnswer": "Listen and choose the correct answer."
+          }
+        ],
+        "content": {
+          "passageId": "english-a1-m099-reading-passage-01",
+          "passage": "The library is closed today. The café opens at nine. Meet me at the bus stop. The party is on Saturday. Please call me tomorrow. The shop closes at six."
+        }
+      }
+    },
+    {
+      "sectionId": "english-a1-m099-writing",
+      "sectionKey": "writing",
+      "position": 6,
+      "title": "writing",
+      "exercise": {
+        "exerciseId": "english-a1-m099-writing-ex01",
+        "type": "dictation",
+        "items": [
+          {
+            "itemId": "english-a1-m099-writing-ex01-i01",
+            "position": 1,
+            "audio": "tts:en-GB:The library is closed today.",
+            "expectedAnswer": "The library is closed today.",
+            "evaluation": {
+              "type": "normalised_text"
+            }
+          },
+          {
+            "itemId": "english-a1-m099-writing-ex01-i02",
+            "position": 2,
+            "audio": "tts:en-GB:The café opens at nine.",
+            "expectedAnswer": "The café opens at nine.",
+            "evaluation": {
+              "type": "normalised_text"
+            }
+          },
+          {
+            "itemId": "english-a1-m099-writing-ex01-i03",
+            "position": 3,
+            "audio": "tts:en-GB:Meet me at the bus stop.",
+            "expectedAnswer": "Meet me at the bus stop.",
+            "evaluation": {
+              "type": "normalised_text"
+            }
+          },
+          {
+            "itemId": "english-a1-m099-writing-ex01-i04",
+            "position": 4,
+            "audio": "tts:en-GB:The party is on Saturday.",
+            "expectedAnswer": "The party is on Saturday.",
+            "evaluation": {
+              "type": "normalised_text"
+            }
+          },
+          {
+            "itemId": "english-a1-m099-writing-ex01-i05",
+            "position": 5,
+            "audio": "tts:en-GB:Please call me tomorrow.",
+            "expectedAnswer": "Please call me tomorrow.",
+            "evaluation": {
+              "type": "normalised_text"
+            }
+          },
+          {
+            "itemId": "english-a1-m099-writing-ex01-i06",
+            "position": 6,
+            "audio": "tts:en-GB:The shop closes at six.",
+            "expectedAnswer": "The shop closes at six.",
+            "evaluation": {
+              "type": "normalised_text"
+            }
+          },
+          {
+            "itemId": "english-a1-m099-writing-ex01-i07",
+            "position": 7,
+            "audio": "tts:en-GB:A ticket costs five pounds.",
+            "expectedAnswer": "A ticket costs five pounds.",
+            "evaluation": {
+              "type": "normalised_text"
+            }
+          },
+          {
+            "itemId": "english-a1-m099-writing-ex01-i08",
+            "position": 8,
+            "audio": "tts:en-GB:The message is for Anna.",
+            "expectedAnswer": "The message is for Anna.",
+            "evaluation": {
+              "type": "normalised_text"
+            }
+          },
+          {
+            "itemId": "english-a1-m099-writing-ex01-i09",
+            "position": 9,
+            "audio": "tts:en-GB:The train leaves from platform two.",
+            "expectedAnswer": "The train leaves from platform two.",
+            "evaluation": {
+              "type": "normalised_text"
+            }
+          },
+          {
+            "itemId": "english-a1-m099-writing-ex01-i10",
+            "position": 10,
+            "audio": "tts:en-GB:Listen and choose the correct answer.",
+            "expectedAnswer": "Listen and choose the correct answer.",
+            "evaluation": {
+              "type": "normalised_text"
+            }
+          }
+        ],
+        "writingTask": "Escribe 5–6 frases sobre reading and listening challenge. Utiliza al menos cinco palabras de la misión y la estructura a1 reading and listening review.",
+        "modelText": "The library is closed today. The café opens at nine. Meet me at the bus stop. The party is on Saturday. Please call me tomorrow. The shop closes at six."
+      }
+    },
+    {
+      "sectionId": "english-a1-m099-speaking",
+      "sectionKey": "speaking",
+      "position": 7,
+      "title": "speaking",
+      "exercise": {
+        "exerciseId": "english-a1-m099-speaking-ex01",
+        "type": "speaking_prompts",
+        "items": [
+          {
+            "itemId": "english-a1-m099-speaking-ex01-i01",
+            "position": 1,
+            "prompt": "Say a sentence about this situation: La biblioteca está cerrada hoy.",
+            "modelAnswer": "The library is closed today.",
+            "evaluation": {
+              "type": "transcription_feedback",
+              "transcriptionSeparateFromPronunciation": true
+            }
+          },
+          {
+            "itemId": "english-a1-m099-speaking-ex01-i02",
+            "position": 2,
+            "prompt": "Say a sentence about this situation: La cafetería abre a las nueve.",
+            "modelAnswer": "The café opens at nine.",
+            "evaluation": {
+              "type": "transcription_feedback",
+              "transcriptionSeparateFromPronunciation": true
+            }
+          },
+          {
+            "itemId": "english-a1-m099-speaking-ex01-i03",
+            "position": 3,
+            "prompt": "Say a sentence about this situation: Queda conmigo en la parada de autobús.",
+            "modelAnswer": "Meet me at the bus stop.",
+            "evaluation": {
+              "type": "transcription_feedback",
+              "transcriptionSeparateFromPronunciation": true
+            }
+          },
+          {
+            "itemId": "english-a1-m099-speaking-ex01-i04",
+            "position": 4,
+            "prompt": "Say a sentence about this situation: La fiesta es el sábado.",
+            "modelAnswer": "The party is on Saturday.",
+            "evaluation": {
+              "type": "transcription_feedback",
+              "transcriptionSeparateFromPronunciation": true
+            }
+          },
+          {
+            "itemId": "english-a1-m099-speaking-ex01-i05",
+            "position": 5,
+            "prompt": "Say a sentence about this situation: Por favor, llámame mañana.",
+            "modelAnswer": "Please call me tomorrow.",
+            "evaluation": {
+              "type": "transcription_feedback",
+              "transcriptionSeparateFromPronunciation": true
+            }
+          },
+          {
+            "itemId": "english-a1-m099-speaking-ex01-i06",
+            "position": 6,
+            "prompt": "Say a sentence about this situation: La tienda cierra a las seis.",
+            "modelAnswer": "The shop closes at six.",
+            "evaluation": {
+              "type": "transcription_feedback",
+              "transcriptionSeparateFromPronunciation": true
+            }
+          },
+          {
+            "itemId": "english-a1-m099-speaking-ex01-i07",
+            "position": 7,
+            "prompt": "Say a sentence about this situation: Un billete cuesta cinco libras.",
+            "modelAnswer": "A ticket costs five pounds.",
+            "evaluation": {
+              "type": "transcription_feedback",
+              "transcriptionSeparateFromPronunciation": true
+            }
+          },
+          {
+            "itemId": "english-a1-m099-speaking-ex01-i08",
+            "position": 8,
+            "prompt": "Say a sentence about this situation: El mensaje es para Anna.",
+            "modelAnswer": "The message is for Anna.",
+            "evaluation": {
+              "type": "transcription_feedback",
+              "transcriptionSeparateFromPronunciation": true
+            }
+          },
+          {
+            "itemId": "english-a1-m099-speaking-ex01-i09",
+            "position": 9,
+            "prompt": "Say a sentence about this situation: El tren sale del andén dos.",
+            "modelAnswer": "The train leaves from platform two.",
+            "evaluation": {
+              "type": "transcription_feedback",
+              "transcriptionSeparateFromPronunciation": true
+            }
+          },
+          {
+            "itemId": "english-a1-m099-speaking-ex01-i10",
+            "position": 10,
+            "prompt": "Say a sentence about this situation: Escucha y elige la respuesta correcta.",
+            "modelAnswer": "Listen and choose the correct answer.",
+            "evaluation": {
+              "type": "transcription_feedback",
+              "transcriptionSeparateFromPronunciation": true
+            }
+          }
+        ]
+      }
+    },
+    {
+      "sectionId": "english-a1-m099-listening",
+      "sectionKey": "listening",
+      "position": 8,
+      "title": "listening",
+      "exercise": {
+        "exerciseId": "english-a1-m099-listening-ex01",
+        "type": "listening_gap_fill",
+        "items": [
+          {
+            "itemId": "english-a1-m099-listening-ex01-i01",
+            "position": 1,
+            "gapToken": "[[gap-01]]",
+            "expectedWordId": "english-a1-m099-listening-word-01"
+          },
+          {
+            "itemId": "english-a1-m099-listening-ex01-i02",
+            "position": 2,
+            "gapToken": "[[gap-02]]",
+            "expectedWordId": "english-a1-m099-listening-word-02"
+          },
+          {
+            "itemId": "english-a1-m099-listening-ex01-i03",
+            "position": 3,
+            "gapToken": "[[gap-03]]",
+            "expectedWordId": "english-a1-m099-listening-word-03"
+          },
+          {
+            "itemId": "english-a1-m099-listening-ex01-i04",
+            "position": 4,
+            "gapToken": "[[gap-04]]",
+            "expectedWordId": "english-a1-m099-listening-word-04"
+          },
+          {
+            "itemId": "english-a1-m099-listening-ex01-i05",
+            "position": 5,
+            "gapToken": "[[gap-05]]",
+            "expectedWordId": "english-a1-m099-listening-word-05"
+          },
+          {
+            "itemId": "english-a1-m099-listening-ex01-i06",
+            "position": 6,
+            "gapToken": "[[gap-06]]",
+            "expectedWordId": "english-a1-m099-listening-word-06"
+          },
+          {
+            "itemId": "english-a1-m099-listening-ex01-i07",
+            "position": 7,
+            "gapToken": "[[gap-07]]",
+            "expectedWordId": "english-a1-m099-listening-word-07"
+          },
+          {
+            "itemId": "english-a1-m099-listening-ex01-i08",
+            "position": 8,
+            "gapToken": "[[gap-08]]",
+            "expectedWordId": "english-a1-m099-listening-word-08"
+          },
+          {
+            "itemId": "english-a1-m099-listening-ex01-i09",
+            "position": 9,
+            "gapToken": "[[gap-09]]",
+            "expectedWordId": "english-a1-m099-listening-word-09"
+          },
+          {
+            "itemId": "english-a1-m099-listening-ex01-i10",
+            "position": 10,
+            "gapToken": "[[gap-10]]",
+            "expectedWordId": "english-a1-m099-listening-word-10"
+          }
+        ],
+        "content": {
+          "audio": "tts:en-GB:The key words for Reading and Listening Challenge are: notice, message, dialogue, opening time, closed, meet, today, tomorrow, 入口, price. Listen and repeat each word carefully.",
+          "audioLocale": "en-GB",
+          "transcriptTemplate": "The key words for Reading and Listening Challenge are: [[gap-01]], [[gap-02]], [[gap-03]], [[gap-04]], [[gap-05]], [[gap-06]], [[gap-07]], [[gap-08]], [[gap-09]], [[gap-10]]. Listen and repeat each word carefully.",
+          "wordBank": [
+            {
+              "wordId": "english-a1-m099-listening-word-01",
+              "word": "notice"
+            },
+            {
+              "wordId": "english-a1-m099-listening-word-02",
+              "word": "message"
+            },
+            {
+              "wordId": "english-a1-m099-listening-word-03",
+              "word": "dialogue"
+            },
+            {
+              "wordId": "english-a1-m099-listening-word-04",
+              "word": "opening time"
+            },
+            {
+              "wordId": "english-a1-m099-listening-word-05",
+              "word": "closed"
+            },
+            {
+              "wordId": "english-a1-m099-listening-word-06",
+              "word": "meet"
+            },
+            {
+              "wordId": "english-a1-m099-listening-word-07",
+              "word": "today"
+            },
+            {
+              "wordId": "english-a1-m099-listening-word-08",
+              "word": "tomorrow"
+            },
+            {
+              "wordId": "english-a1-m099-listening-word-09",
+              "word": "入口"
+            },
+            {
+              "wordId": "english-a1-m099-listening-word-10",
+              "word": "price"
+            }
+          ],
+          "interaction": "select_place_move_replace"
+        }
+      }
+    }
+  ]
+}

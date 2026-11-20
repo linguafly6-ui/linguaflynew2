@@ -1,0 +1,1205 @@
+{
+  "schemaVersion": "1.2.0",
+  "contentVersion": 1,
+  "course": {
+    "courseId": "english-a1",
+    "level": "A1",
+    "language": "en-GB"
+  },
+  "unit": {
+    "unitId": "english-a1-unit-10",
+    "courseId": "english-a1",
+    "position": 10,
+    "title": "Health, weather and everyday interaction"
+  },
+  "mission": {
+    "missionId": "english-a1-m091",
+    "unitId": "english-a1-unit-10",
+    "position": 91,
+    "title": "At the Doctor"
+  },
+  "sections": [
+    {
+      "sectionId": "english-a1-m091-explore",
+      "sectionKey": "explore",
+      "position": 1,
+      "title": "explore",
+      "exercise": {
+        "exerciseId": "english-a1-m091-explore-ex01",
+        "type": "vocabulary_pairs",
+        "items": [
+          {
+            "itemId": "english-a1-m091-explore-ex01-i01",
+            "position": 1,
+            "english": "headache",
+            "spanish": "dolor de cabeza",
+            "audio": "tts:en-GB:headache"
+          },
+          {
+            "itemId": "english-a1-m091-explore-ex01-i02",
+            "position": 2,
+            "english": "stomach ache",
+            "spanish": "dolor de estómago",
+            "audio": "tts:en-GB:stomach ache"
+          },
+          {
+            "itemId": "english-a1-m091-explore-ex01-i03",
+            "position": 3,
+            "english": "cold",
+            "spanish": "resfriado",
+            "audio": "tts:en-GB:cold"
+          },
+          {
+            "itemId": "english-a1-m091-explore-ex01-i04",
+            "position": 4,
+            "english": "cough",
+            "spanish": "tos",
+            "audio": "tts:en-GB:cough"
+          },
+          {
+            "itemId": "english-a1-m091-explore-ex01-i05",
+            "position": 5,
+            "english": "fever",
+            "spanish": "fiebre",
+            "audio": "tts:en-GB:fever"
+          },
+          {
+            "itemId": "english-a1-m091-explore-ex01-i06",
+            "position": 6,
+            "english": "feel ill",
+            "spanish": "sentirse mal",
+            "audio": "tts:en-GB:feel ill"
+          },
+          {
+            "itemId": "english-a1-m091-explore-ex01-i07",
+            "position": 7,
+            "english": "doctor",
+            "spanish": "médico",
+            "audio": "tts:en-GB:doctor"
+          },
+          {
+            "itemId": "english-a1-m091-explore-ex01-i08",
+            "position": 8,
+            "english": "medicine",
+            "spanish": "medicina",
+            "audio": "tts:en-GB:medicine"
+          },
+          {
+            "itemId": "english-a1-m091-explore-ex01-i09",
+            "position": 9,
+            "english": "throat",
+            "spanish": "garganta",
+            "audio": "tts:en-GB:throat"
+          },
+          {
+            "itemId": "english-a1-m091-explore-ex01-i10",
+            "position": 10,
+            "english": "appointment",
+            "spanish": "cita",
+            "audio": "tts:en-GB:appointment"
+          }
+        ],
+        "theory": {
+          "title": "Vocabulary: At the Doctor",
+          "explanation": "Explora diez palabras y expresiones sobre at the doctor. Escucha el modelo británico y relaciona cada palabra con su significado.",
+          "patterns": [
+            {
+              "label": "Useful language",
+              "pattern": "Short question + short answer",
+              "examples": [
+                "I have a headache.",
+                "My stomach hurts.",
+                "I have a cold."
+              ]
+            }
+          ],
+          "tip": "Repite las expresiones y crea un ejemplo relacionado con tu vida."
+        }
+      }
+    },
+    {
+      "sectionId": "english-a1-m091-practice",
+      "sectionKey": "practice",
+      "position": 2,
+      "title": "practice",
+      "exercise": {
+        "exerciseId": "english-a1-m091-practice-ex01",
+        "type": "mixed_practice",
+        "items": [
+          {
+            "itemId": "english-a1-m091-practice-ex01-i01",
+            "position": 1,
+            "taskType": "translation_multiple_choice",
+            "prompt": "Traduce al español: “I have a headache.”",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "Tengo dolor de cabeza.",
+              "Tengo tos.",
+              "Deberías ver a un médico."
+            ],
+            "correctAnswer": "Tengo dolor de cabeza.",
+            "sourceEnglish": "I have a headache."
+          },
+          {
+            "itemId": "english-a1-m091-practice-ex01-i02",
+            "position": 2,
+            "taskType": "translation_multiple_choice",
+            "prompt": "Traduce al español: “My stomach hurts.”",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "Me duele el estómago.",
+              "Tengo fiebre.",
+              "Bebe un poco de agua, por favor."
+            ],
+            "correctAnswer": "Me duele el estómago.",
+            "sourceEnglish": "My stomach hurts."
+          },
+          {
+            "itemId": "english-a1-m091-practice-ex01-i03",
+            "position": 3,
+            "taskType": "translation_multiple_choice",
+            "prompt": "Traduce al español: “I have a cold.”",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "Estoy resfriado.",
+              "Hoy me encuentro mal.",
+              "¿Te duele la garganta?"
+            ],
+            "correctAnswer": "Estoy resfriado.",
+            "sourceEnglish": "I have a cold."
+          },
+          {
+            "itemId": "english-a1-m091-practice-ex01-i04",
+            "position": 4,
+            "taskType": "translation_multiple_choice",
+            "prompt": "Traduce al español: “I have a cough.”",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "Tengo tos.",
+              "Deberías ver a un médico.",
+              "Tengo una cita a las diez."
+            ],
+            "correctAnswer": "Tengo tos.",
+            "sourceEnglish": "I have a cough."
+          },
+          {
+            "itemId": "english-a1-m091-practice-ex01-i05",
+            "position": 5,
+            "taskType": "translation_multiple_choice",
+            "prompt": "Traduce al español: “I have a temperature.”",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "Tengo fiebre.",
+              "Bebe un poco de agua, por favor.",
+              "Tengo dolor de cabeza."
+            ],
+            "correctAnswer": "Tengo fiebre.",
+            "sourceEnglish": "I have a temperature."
+          },
+          {
+            "itemId": "english-a1-m091-practice-ex01-i06",
+            "position": 6,
+            "taskType": "translation_multiple_choice",
+            "prompt": "Traduce al español: “I feel ill today.”",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "Hoy me encuentro mal.",
+              "¿Te duele la garganta?",
+              "Me duele el estómago."
+            ],
+            "correctAnswer": "Hoy me encuentro mal.",
+            "sourceEnglish": "I feel ill today."
+          },
+          {
+            "itemId": "english-a1-m091-practice-ex01-i07",
+            "position": 7,
+            "taskType": "translation_multiple_choice",
+            "prompt": "Traduce al español: “You should see a doctor.”",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "Deberías ver a un médico.",
+              "Tengo una cita a las diez.",
+              "Estoy resfriado."
+            ],
+            "correctAnswer": "Deberías ver a un médico.",
+            "sourceEnglish": "You should see a doctor."
+          },
+          {
+            "itemId": "english-a1-m091-practice-ex01-i08",
+            "position": 8,
+            "taskType": "translation_multiple_choice",
+            "prompt": "Traduce al español: “Drink some water, please.”",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "Bebe un poco de agua, por favor.",
+              "Tengo dolor de cabeza.",
+              "Tengo tos."
+            ],
+            "correctAnswer": "Bebe un poco de agua, por favor.",
+            "sourceEnglish": "Drink some water, please."
+          },
+          {
+            "itemId": "english-a1-m091-practice-ex01-i09",
+            "position": 9,
+            "taskType": "translation_multiple_choice",
+            "prompt": "Traduce al español: “Does your throat hurt?”",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "¿Te duele la garganta?",
+              "Me duele el estómago.",
+              "Tengo fiebre."
+            ],
+            "correctAnswer": "¿Te duele la garganta?",
+            "sourceEnglish": "Does your throat hurt?"
+          },
+          {
+            "itemId": "english-a1-m091-practice-ex01-i10",
+            "position": 10,
+            "taskType": "translation_multiple_choice",
+            "prompt": "Traduce al español: “I have an appointment at ten.”",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "Tengo una cita a las diez.",
+              "Estoy resfriado.",
+              "Hoy me encuentro mal."
+            ],
+            "correctAnswer": "Tengo una cita a las diez.",
+            "sourceEnglish": "I have an appointment at ten."
+          },
+          {
+            "itemId": "english-a1-m091-practice-ex01-i11",
+            "position": 11,
+            "taskType": "listening_translation_multiple_choice",
+            "prompt": "Escucha el inglés y elige su significado.",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "Tengo dolor de cabeza.",
+              "Tengo fiebre.",
+              "Bebe un poco de agua, por favor."
+            ],
+            "correctAnswer": "Tengo dolor de cabeza.",
+            "sourceEnglish": "I have a headache."
+          },
+          {
+            "itemId": "english-a1-m091-practice-ex01-i12",
+            "position": 12,
+            "taskType": "listening_translation_multiple_choice",
+            "prompt": "Escucha el inglés y elige su significado.",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "Me duele el estómago.",
+              "Hoy me encuentro mal.",
+              "¿Te duele la garganta?"
+            ],
+            "correctAnswer": "Me duele el estómago.",
+            "sourceEnglish": "My stomach hurts."
+          },
+          {
+            "itemId": "english-a1-m091-practice-ex01-i13",
+            "position": 13,
+            "taskType": "listening_translation_multiple_choice",
+            "prompt": "Escucha el inglés y elige su significado.",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "Estoy resfriado.",
+              "Deberías ver a un médico.",
+              "Tengo una cita a las diez."
+            ],
+            "correctAnswer": "Estoy resfriado.",
+            "sourceEnglish": "I have a cold."
+          },
+          {
+            "itemId": "english-a1-m091-practice-ex01-i14",
+            "position": 14,
+            "taskType": "listening_translation_multiple_choice",
+            "prompt": "Escucha el inglés y elige su significado.",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "Tengo tos.",
+              "Bebe un poco de agua, por favor.",
+              "Tengo dolor de cabeza."
+            ],
+            "correctAnswer": "Tengo tos.",
+            "sourceEnglish": "I have a cough."
+          },
+          {
+            "itemId": "english-a1-m091-practice-ex01-i15",
+            "position": 15,
+            "taskType": "listening_translation_multiple_choice",
+            "prompt": "Escucha el inglés y elige su significado.",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "Tengo fiebre.",
+              "¿Te duele la garganta?",
+              "Me duele el estómago."
+            ],
+            "correctAnswer": "Tengo fiebre.",
+            "sourceEnglish": "I have a temperature."
+          },
+          {
+            "itemId": "english-a1-m091-practice-ex01-i16",
+            "position": 16,
+            "taskType": "listening_translation_multiple_choice",
+            "prompt": "Escucha el inglés y elige su significado.",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "Hoy me encuentro mal.",
+              "Tengo una cita a las diez.",
+              "Estoy resfriado."
+            ],
+            "correctAnswer": "Hoy me encuentro mal.",
+            "sourceEnglish": "I feel ill today."
+          },
+          {
+            "itemId": "english-a1-m091-practice-ex01-i17",
+            "position": 17,
+            "taskType": "listening_translation_multiple_choice",
+            "prompt": "Escucha el inglés y elige su significado.",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "Deberías ver a un médico.",
+              "Tengo dolor de cabeza.",
+              "Tengo tos."
+            ],
+            "correctAnswer": "Deberías ver a un médico.",
+            "sourceEnglish": "You should see a doctor."
+          },
+          {
+            "itemId": "english-a1-m091-practice-ex01-i18",
+            "position": 18,
+            "taskType": "listening_translation_multiple_choice",
+            "prompt": "Escucha el inglés y elige su significado.",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "Bebe un poco de agua, por favor.",
+              "Me duele el estómago.",
+              "Tengo fiebre."
+            ],
+            "correctAnswer": "Bebe un poco de agua, por favor.",
+            "sourceEnglish": "Drink some water, please."
+          },
+          {
+            "itemId": "english-a1-m091-practice-ex01-i19",
+            "position": 19,
+            "taskType": "listening_translation_multiple_choice",
+            "prompt": "Escucha el inglés y elige su significado.",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "¿Te duele la garganta?",
+              "Estoy resfriado.",
+              "Hoy me encuentro mal."
+            ],
+            "correctAnswer": "¿Te duele la garganta?",
+            "sourceEnglish": "Does your throat hurt?"
+          },
+          {
+            "itemId": "english-a1-m091-practice-ex01-i20",
+            "position": 20,
+            "taskType": "listening_translation_multiple_choice",
+            "prompt": "Escucha el inglés y elige su significado.",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "Tengo una cita a las diez.",
+              "Tengo tos.",
+              "Deberías ver a un médico."
+            ],
+            "correctAnswer": "Tengo una cita a las diez.",
+            "sourceEnglish": "I have an appointment at ten."
+          }
+        ]
+      }
+    },
+    {
+      "sectionId": "english-a1-m091-grammar",
+      "sectionKey": "grammar",
+      "position": 3,
+      "title": "grammar",
+      "exercise": {
+        "exerciseId": "english-a1-m091-grammar-ex01",
+        "type": "grammar",
+        "items": [
+          {
+            "itemId": "english-a1-m091-grammar-ex01-i01",
+            "position": 1,
+            "prompt": "I ___ got a headache.",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "have",
+              "has",
+              "am"
+            ],
+            "correctAnswer": "have"
+          },
+          {
+            "itemId": "english-a1-m091-grammar-ex01-i02",
+            "position": 2,
+            "prompt": "She ___ got a cough.",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "has",
+              "have",
+              "is"
+            ],
+            "correctAnswer": "has"
+          },
+          {
+            "itemId": "english-a1-m091-grammar-ex01-i03",
+            "position": 3,
+            "prompt": "They ___ got a temperature.",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "have",
+              "has",
+              "are"
+            ],
+            "correctAnswer": "have"
+          },
+          {
+            "itemId": "english-a1-m091-grammar-ex01-i04",
+            "position": 4,
+            "prompt": "He has ___ a toothache.",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "got",
+              "get",
+              "gets"
+            ],
+            "correctAnswer": "got"
+          },
+          {
+            "itemId": "english-a1-m091-grammar-ex01-i05",
+            "position": 5,
+            "prompt": "Have you ___ a cold?",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "got",
+              "get",
+              "gets"
+            ],
+            "correctAnswer": "got"
+          },
+          {
+            "itemId": "english-a1-m091-grammar-ex01-i06",
+            "position": 6,
+            "prompt": "My sister ___ got a sore throat.",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "has",
+              "have",
+              "is"
+            ],
+            "correctAnswer": "has"
+          },
+          {
+            "itemId": "english-a1-m091-grammar-ex01-i07",
+            "position": 7,
+            "prompt": "We ___ got a doctor's appointment.",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "have",
+              "has",
+              "are"
+            ],
+            "correctAnswer": "have"
+          },
+          {
+            "itemId": "english-a1-m091-grammar-ex01-i08",
+            "position": 8,
+            "prompt": "___ he got a stomach ache?",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "Has",
+              "Have",
+              "Is"
+            ],
+            "correctAnswer": "Has"
+          },
+          {
+            "itemId": "english-a1-m091-grammar-ex01-i09",
+            "position": 9,
+            "prompt": "I haven't ___ a fever.",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "got",
+              "get",
+              "gets"
+            ],
+            "correctAnswer": "got"
+          },
+          {
+            "itemId": "english-a1-m091-grammar-ex01-i10",
+            "position": 10,
+            "prompt": "The patient ___ got a headache.",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "has",
+              "have",
+              "are"
+            ],
+            "correctAnswer": "has"
+          }
+        ],
+        "theory": {
+          "title": "Have got for symptoms and health",
+          "explanation": "Usamos have got y has got para describir síntomas o problemas de salud. I/you/we/they usan have got; he/she/it usa has got.",
+          "patterns": [
+            {
+              "label": "Model",
+              "pattern": "I've got a headache",
+              "examples": [
+                "I've got a headache",
+                "She's got a sore throat."
+              ]
+            }
+          ],
+          "tip": "Lee los ejemplos y comprueba cómo cambia la estructura."
+        }
+      }
+    },
+    {
+      "sectionId": "english-a1-m091-pronunciation",
+      "sectionKey": "pronunciation",
+      "position": 4,
+      "title": "pronunciation",
+      "exercise": {
+        "exerciseId": "english-a1-m091-pronunciation-ex01",
+        "type": "pronunciation_cards",
+        "items": [
+          {
+            "itemId": "english-a1-m091-pronunciation-ex01-i01",
+            "position": 1,
+            "word": "headache",
+            "translation": "dolor de cabeza",
+            "pronunciationGuide": "Listen to the en-GB model and keep the final consonant clear.",
+            "audio": "tts:en-GB:headache"
+          },
+          {
+            "itemId": "english-a1-m091-pronunciation-ex01-i02",
+            "position": 2,
+            "word": "stomach ache",
+            "translation": "dolor de estómago",
+            "pronunciationGuide": "Listen to the phrase as one unit and notice its main stress.",
+            "audio": "tts:en-GB:stomach ache"
+          },
+          {
+            "itemId": "english-a1-m091-pronunciation-ex01-i03",
+            "position": 3,
+            "word": "cold",
+            "translation": "resfriado",
+            "pronunciationGuide": "Listen to the en-GB model and keep the final consonant clear.",
+            "audio": "tts:en-GB:cold"
+          },
+          {
+            "itemId": "english-a1-m091-pronunciation-ex01-i04",
+            "position": 4,
+            "word": "cough",
+            "translation": "tos",
+            "pronunciationGuide": "Listen to the en-GB model and keep the final consonant clear.",
+            "audio": "tts:en-GB:cough"
+          },
+          {
+            "itemId": "english-a1-m091-pronunciation-ex01-i05",
+            "position": 5,
+            "word": "fever",
+            "translation": "fiebre",
+            "pronunciationGuide": "Listen to the en-GB model and keep the final consonant clear.",
+            "audio": "tts:en-GB:fever"
+          },
+          {
+            "itemId": "english-a1-m091-pronunciation-ex01-i06",
+            "position": 6,
+            "word": "feel ill",
+            "translation": "sentirse mal",
+            "pronunciationGuide": "Listen to the phrase as one unit and notice its main stress.",
+            "audio": "tts:en-GB:feel ill"
+          },
+          {
+            "itemId": "english-a1-m091-pronunciation-ex01-i07",
+            "position": 7,
+            "word": "doctor",
+            "translation": "médico",
+            "pronunciationGuide": "Listen to the en-GB model and keep the final consonant clear.",
+            "audio": "tts:en-GB:doctor"
+          },
+          {
+            "itemId": "english-a1-m091-pronunciation-ex01-i08",
+            "position": 8,
+            "word": "medicine",
+            "translation": "medicina",
+            "pronunciationGuide": "Listen to the en-GB model and keep the final consonant clear.",
+            "audio": "tts:en-GB:medicine"
+          },
+          {
+            "itemId": "english-a1-m091-pronunciation-ex01-i09",
+            "position": 9,
+            "word": "throat",
+            "translation": "garganta",
+            "pronunciationGuide": "Listen to the en-GB model and keep the final consonant clear.",
+            "audio": "tts:en-GB:throat"
+          },
+          {
+            "itemId": "english-a1-m091-pronunciation-ex01-i10",
+            "position": 10,
+            "word": "appointment",
+            "translation": "cita",
+            "pronunciationGuide": "Listen to the en-GB model and keep the final consonant clear.",
+            "audio": "tts:en-GB:appointment"
+          }
+        ],
+        "focus": "Practica el ritmo y el acento de las palabras clave de At the Doctor."
+      }
+    },
+    {
+      "sectionId": "english-a1-m091-reading",
+      "sectionKey": "reading",
+      "position": 5,
+      "title": "reading",
+      "exercise": {
+        "exerciseId": "english-a1-m091-reading-ex01",
+        "type": "reading_comprehension",
+        "items": [
+          {
+            "itemId": "english-a1-m091-reading-ex01-i01",
+            "position": 1,
+            "prompt": "Which English sentence means “Tengo dolor de cabeza.”?",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "I have a headache.",
+              "My stomach hurts.",
+              "I have a cold."
+            ],
+            "correctAnswer": "I have a headache."
+          },
+          {
+            "itemId": "english-a1-m091-reading-ex01-i02",
+            "position": 2,
+            "prompt": "Which English sentence means “Me duele el estómago.”?",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "My stomach hurts.",
+              "I have a cold.",
+              "I have a cough."
+            ],
+            "correctAnswer": "My stomach hurts."
+          },
+          {
+            "itemId": "english-a1-m091-reading-ex01-i03",
+            "position": 3,
+            "prompt": "Which English sentence means “Estoy resfriado.”?",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "I have a cold.",
+              "I have a cough.",
+              "I have a temperature."
+            ],
+            "correctAnswer": "I have a cold."
+          },
+          {
+            "itemId": "english-a1-m091-reading-ex01-i04",
+            "position": 4,
+            "prompt": "Which English sentence means “Tengo tos.”?",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "I have a cough.",
+              "I have a temperature.",
+              "I feel ill today."
+            ],
+            "correctAnswer": "I have a cough."
+          },
+          {
+            "itemId": "english-a1-m091-reading-ex01-i05",
+            "position": 5,
+            "prompt": "Which English sentence means “Tengo fiebre.”?",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "I have a temperature.",
+              "I feel ill today.",
+              "You should see a doctor."
+            ],
+            "correctAnswer": "I have a temperature."
+          },
+          {
+            "itemId": "english-a1-m091-reading-ex01-i06",
+            "position": 6,
+            "prompt": "Which English sentence means “Hoy me encuentro mal.”?",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "I feel ill today.",
+              "You should see a doctor.",
+              "Drink some water, please."
+            ],
+            "correctAnswer": "I feel ill today."
+          },
+          {
+            "itemId": "english-a1-m091-reading-ex01-i07",
+            "position": 7,
+            "prompt": "Which English sentence means “Deberías ver a un médico.”?",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "You should see a doctor.",
+              "Drink some water, please.",
+              "Does your throat hurt?"
+            ],
+            "correctAnswer": "You should see a doctor."
+          },
+          {
+            "itemId": "english-a1-m091-reading-ex01-i08",
+            "position": 8,
+            "prompt": "Which English sentence means “Bebe un poco de agua, por favor.”?",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "Drink some water, please.",
+              "Does your throat hurt?",
+              "I have an appointment at ten."
+            ],
+            "correctAnswer": "Drink some water, please."
+          },
+          {
+            "itemId": "english-a1-m091-reading-ex01-i09",
+            "position": 9,
+            "prompt": "Which English sentence means “¿Te duele la garganta?”?",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "Does your throat hurt?",
+              "I have an appointment at ten.",
+              "I have a headache."
+            ],
+            "correctAnswer": "Does your throat hurt?"
+          },
+          {
+            "itemId": "english-a1-m091-reading-ex01-i10",
+            "position": 10,
+            "prompt": "Which English sentence means “Tengo una cita a las diez.”?",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "I have an appointment at ten.",
+              "I have a headache.",
+              "My stomach hurts."
+            ],
+            "correctAnswer": "I have an appointment at ten."
+          }
+        ],
+        "content": {
+          "passageId": "english-a1-m091-reading-passage-01",
+          "passage": "I have a headache. My stomach hurts. I have a cold. I have a cough. I have a temperature. I feel ill today."
+        }
+      }
+    },
+    {
+      "sectionId": "english-a1-m091-writing",
+      "sectionKey": "writing",
+      "position": 6,
+      "title": "writing",
+      "exercise": {
+        "exerciseId": "english-a1-m091-writing-ex01",
+        "type": "dictation",
+        "items": [
+          {
+            "itemId": "english-a1-m091-writing-ex01-i01",
+            "position": 1,
+            "audio": "tts:en-GB:I have a headache.",
+            "expectedAnswer": "I have a headache.",
+            "evaluation": {
+              "type": "normalised_text"
+            }
+          },
+          {
+            "itemId": "english-a1-m091-writing-ex01-i02",
+            "position": 2,
+            "audio": "tts:en-GB:My stomach hurts.",
+            "expectedAnswer": "My stomach hurts.",
+            "evaluation": {
+              "type": "normalised_text"
+            }
+          },
+          {
+            "itemId": "english-a1-m091-writing-ex01-i03",
+            "position": 3,
+            "audio": "tts:en-GB:I have a cold.",
+            "expectedAnswer": "I have a cold.",
+            "evaluation": {
+              "type": "normalised_text"
+            }
+          },
+          {
+            "itemId": "english-a1-m091-writing-ex01-i04",
+            "position": 4,
+            "audio": "tts:en-GB:I have a cough.",
+            "expectedAnswer": "I have a cough.",
+            "evaluation": {
+              "type": "normalised_text"
+            }
+          },
+          {
+            "itemId": "english-a1-m091-writing-ex01-i05",
+            "position": 5,
+            "audio": "tts:en-GB:I have a temperature.",
+            "expectedAnswer": "I have a temperature.",
+            "evaluation": {
+              "type": "normalised_text"
+            }
+          },
+          {
+            "itemId": "english-a1-m091-writing-ex01-i06",
+            "position": 6,
+            "audio": "tts:en-GB:I feel ill today.",
+            "expectedAnswer": "I feel ill today.",
+            "evaluation": {
+              "type": "normalised_text"
+            }
+          },
+          {
+            "itemId": "english-a1-m091-writing-ex01-i07",
+            "position": 7,
+            "audio": "tts:en-GB:You should see a doctor.",
+            "expectedAnswer": "You should see a doctor.",
+            "evaluation": {
+              "type": "normalised_text"
+            }
+          },
+          {
+            "itemId": "english-a1-m091-writing-ex01-i08",
+            "position": 8,
+            "audio": "tts:en-GB:Drink some water, please.",
+            "expectedAnswer": "Drink some water, please.",
+            "evaluation": {
+              "type": "normalised_text"
+            }
+          },
+          {
+            "itemId": "english-a1-m091-writing-ex01-i09",
+            "position": 9,
+            "audio": "tts:en-GB:Does your throat hurt?",
+            "expectedAnswer": "Does your throat hurt?",
+            "evaluation": {
+              "type": "normalised_text"
+            }
+          },
+          {
+            "itemId": "english-a1-m091-writing-ex01-i10",
+            "position": 10,
+            "audio": "tts:en-GB:I have an appointment at ten.",
+            "expectedAnswer": "I have an appointment at ten.",
+            "evaluation": {
+              "type": "normalised_text"
+            }
+          }
+        ],
+        "writingTask": "Escribe 5–6 frases sobre at the doctor. Utiliza al menos cinco palabras de la misión y la estructura have got for symptoms and health.",
+        "modelText": "I have a headache. My stomach hurts. I have a cold. I have a cough. I have a temperature. I feel ill today."
+      }
+    },
+    {
+      "sectionId": "english-a1-m091-speaking",
+      "sectionKey": "speaking",
+      "position": 7,
+      "title": "speaking",
+      "exercise": {
+        "exerciseId": "english-a1-m091-speaking-ex01",
+        "type": "speaking_prompts",
+        "items": [
+          {
+            "itemId": "english-a1-m091-speaking-ex01-i01",
+            "position": 1,
+            "prompt": "Say a sentence about this situation: Tengo dolor de cabeza.",
+            "modelAnswer": "I have a headache.",
+            "evaluation": {
+              "type": "transcription_feedback",
+              "transcriptionSeparateFromPronunciation": true
+            }
+          },
+          {
+            "itemId": "english-a1-m091-speaking-ex01-i02",
+            "position": 2,
+            "prompt": "Say a sentence about this situation: Me duele el estómago.",
+            "modelAnswer": "My stomach hurts.",
+            "evaluation": {
+              "type": "transcription_feedback",
+              "transcriptionSeparateFromPronunciation": true
+            }
+          },
+          {
+            "itemId": "english-a1-m091-speaking-ex01-i03",
+            "position": 3,
+            "prompt": "Say a sentence about this situation: Estoy resfriado.",
+            "modelAnswer": "I have a cold.",
+            "evaluation": {
+              "type": "transcription_feedback",
+              "transcriptionSeparateFromPronunciation": true
+            }
+          },
+          {
+            "itemId": "english-a1-m091-speaking-ex01-i04",
+            "position": 4,
+            "prompt": "Say a sentence about this situation: Tengo tos.",
+            "modelAnswer": "I have a cough.",
+            "evaluation": {
+              "type": "transcription_feedback",
+              "transcriptionSeparateFromPronunciation": true
+            }
+          },
+          {
+            "itemId": "english-a1-m091-speaking-ex01-i05",
+            "position": 5,
+            "prompt": "Say a sentence about this situation: Tengo fiebre.",
+            "modelAnswer": "I have a temperature.",
+            "evaluation": {
+              "type": "transcription_feedback",
+              "transcriptionSeparateFromPronunciation": true
+            }
+          },
+          {
+            "itemId": "english-a1-m091-speaking-ex01-i06",
+            "position": 6,
+            "prompt": "Say a sentence about this situation: Hoy me encuentro mal.",
+            "modelAnswer": "I feel ill today.",
+            "evaluation": {
+              "type": "transcription_feedback",
+              "transcriptionSeparateFromPronunciation": true
+            }
+          },
+          {
+            "itemId": "english-a1-m091-speaking-ex01-i07",
+            "position": 7,
+            "prompt": "Say a sentence about this situation: Deberías ver a un médico.",
+            "modelAnswer": "You should see a doctor.",
+            "evaluation": {
+              "type": "transcription_feedback",
+              "transcriptionSeparateFromPronunciation": true
+            }
+          },
+          {
+            "itemId": "english-a1-m091-speaking-ex01-i08",
+            "position": 8,
+            "prompt": "Say a sentence about this situation: Bebe un poco de agua, por favor.",
+            "modelAnswer": "Drink some water, please.",
+            "evaluation": {
+              "type": "transcription_feedback",
+              "transcriptionSeparateFromPronunciation": true
+            }
+          },
+          {
+            "itemId": "english-a1-m091-speaking-ex01-i09",
+            "position": 9,
+            "prompt": "Say a sentence about this situation: ¿Te duele la garganta?",
+            "modelAnswer": "Does your throat hurt?",
+            "evaluation": {
+              "type": "transcription_feedback",
+              "transcriptionSeparateFromPronunciation": true
+            }
+          },
+          {
+            "itemId": "english-a1-m091-speaking-ex01-i10",
+            "position": 10,
+            "prompt": "Say a sentence about this situation: Tengo una cita a las diez.",
+            "modelAnswer": "I have an appointment at ten.",
+            "evaluation": {
+              "type": "transcription_feedback",
+              "transcriptionSeparateFromPronunciation": true
+            }
+          }
+        ]
+      }
+    },
+    {
+      "sectionId": "english-a1-m091-listening",
+      "sectionKey": "listening",
+      "position": 8,
+      "title": "listening",
+      "exercise": {
+        "exerciseId": "english-a1-m091-listening-ex01",
+        "type": "listening_gap_fill",
+        "items": [
+          {
+            "itemId": "english-a1-m091-listening-ex01-i01",
+            "position": 1,
+            "gapToken": "[[gap-01]]",
+            "expectedWordId": "english-a1-m091-listening-word-01"
+          },
+          {
+            "itemId": "english-a1-m091-listening-ex01-i02",
+            "position": 2,
+            "gapToken": "[[gap-02]]",
+            "expectedWordId": "english-a1-m091-listening-word-02"
+          },
+          {
+            "itemId": "english-a1-m091-listening-ex01-i03",
+            "position": 3,
+            "gapToken": "[[gap-03]]",
+            "expectedWordId": "english-a1-m091-listening-word-03"
+          },
+          {
+            "itemId": "english-a1-m091-listening-ex01-i04",
+            "position": 4,
+            "gapToken": "[[gap-04]]",
+            "expectedWordId": "english-a1-m091-listening-word-04"
+          },
+          {
+            "itemId": "english-a1-m091-listening-ex01-i05",
+            "position": 5,
+            "gapToken": "[[gap-05]]",
+            "expectedWordId": "english-a1-m091-listening-word-05"
+          },
+          {
+            "itemId": "english-a1-m091-listening-ex01-i06",
+            "position": 6,
+            "gapToken": "[[gap-06]]",
+            "expectedWordId": "english-a1-m091-listening-word-06"
+          },
+          {
+            "itemId": "english-a1-m091-listening-ex01-i07",
+            "position": 7,
+            "gapToken": "[[gap-07]]",
+            "expectedWordId": "english-a1-m091-listening-word-07"
+          },
+          {
+            "itemId": "english-a1-m091-listening-ex01-i08",
+            "position": 8,
+            "gapToken": "[[gap-08]]",
+            "expectedWordId": "english-a1-m091-listening-word-08"
+          },
+          {
+            "itemId": "english-a1-m091-listening-ex01-i09",
+            "position": 9,
+            "gapToken": "[[gap-09]]",
+            "expectedWordId": "english-a1-m091-listening-word-09"
+          },
+          {
+            "itemId": "english-a1-m091-listening-ex01-i10",
+            "position": 10,
+            "gapToken": "[[gap-10]]",
+            "expectedWordId": "english-a1-m091-listening-word-10"
+          }
+        ],
+        "content": {
+          "audio": "tts:en-GB:The key words for At the Doctor are: headache, stomach ache, cold, cough, fever, feel ill, doctor, medicine, throat, appointment. Listen and repeat each word carefully.",
+          "audioLocale": "en-GB",
+          "transcriptTemplate": "The key words for At the Doctor are: [[gap-01]], [[gap-02]], [[gap-03]], [[gap-04]], [[gap-05]], [[gap-06]], [[gap-07]], [[gap-08]], [[gap-09]], [[gap-10]]. Listen and repeat each word carefully.",
+          "wordBank": [
+            {
+              "wordId": "english-a1-m091-listening-word-01",
+              "word": "headache"
+            },
+            {
+              "wordId": "english-a1-m091-listening-word-02",
+              "word": "stomach ache"
+            },
+            {
+              "wordId": "english-a1-m091-listening-word-03",
+              "word": "cold"
+            },
+            {
+              "wordId": "english-a1-m091-listening-word-04",
+              "word": "cough"
+            },
+            {
+              "wordId": "english-a1-m091-listening-word-05",
+              "word": "fever"
+            },
+            {
+              "wordId": "english-a1-m091-listening-word-06",
+              "word": "feel ill"
+            },
+            {
+              "wordId": "english-a1-m091-listening-word-07",
+              "word": "doctor"
+            },
+            {
+              "wordId": "english-a1-m091-listening-word-08",
+              "word": "medicine"
+            },
+            {
+              "wordId": "english-a1-m091-listening-word-09",
+              "word": "throat"
+            },
+            {
+              "wordId": "english-a1-m091-listening-word-10",
+              "word": "appointment"
+            }
+          ],
+          "interaction": "select_place_move_replace"
+        }
+      }
+    }
+  ]
+}

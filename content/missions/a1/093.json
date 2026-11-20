@@ -1,0 +1,1205 @@
+{
+  "schemaVersion": "1.2.0",
+  "contentVersion": 1,
+  "course": {
+    "courseId": "english-a1",
+    "level": "A1",
+    "language": "en-GB"
+  },
+  "unit": {
+    "unitId": "english-a1-unit-10",
+    "courseId": "english-a1",
+    "position": 10,
+    "title": "Health, weather and everyday interaction"
+  },
+  "mission": {
+    "missionId": "english-a1-m093",
+    "unitId": "english-a1-unit-10",
+    "position": 93,
+    "title": "Healthy Habits"
+  },
+  "sections": [
+    {
+      "sectionId": "english-a1-m093-explore",
+      "sectionKey": "explore",
+      "position": 1,
+      "title": "explore",
+      "exercise": {
+        "exerciseId": "english-a1-m093-explore-ex01",
+        "type": "vocabulary_pairs",
+        "items": [
+          {
+            "itemId": "english-a1-m093-explore-ex01-i01",
+            "position": 1,
+            "english": "sleep",
+            "spanish": "dormir",
+            "audio": "tts:en-GB:sleep"
+          },
+          {
+            "itemId": "english-a1-m093-explore-ex01-i02",
+            "position": 2,
+            "english": "water",
+            "spanish": "agua",
+            "audio": "tts:en-GB:water"
+          },
+          {
+            "itemId": "english-a1-m093-explore-ex01-i03",
+            "position": 3,
+            "english": "exercise",
+            "spanish": "ejercicio",
+            "audio": "tts:en-GB:exercise"
+          },
+          {
+            "itemId": "english-a1-m093-explore-ex01-i04",
+            "position": 4,
+            "english": "fruit",
+            "spanish": "fruta",
+            "audio": "tts:en-GB:fruit"
+          },
+          {
+            "itemId": "english-a1-m093-explore-ex01-i05",
+            "position": 5,
+            "english": "vegetables",
+            "spanish": "verduras",
+            "audio": "tts:en-GB:vegetables"
+          },
+          {
+            "itemId": "english-a1-m093-explore-ex01-i06",
+            "position": 6,
+            "english": "healthy",
+            "spanish": "saludable",
+            "audio": "tts:en-GB:healthy"
+          },
+          {
+            "itemId": "english-a1-m093-explore-ex01-i07",
+            "position": 7,
+            "english": "walk",
+            "spanish": "caminar",
+            "audio": "tts:en-GB:walk"
+          },
+          {
+            "itemId": "english-a1-m093-explore-ex01-i08",
+            "position": 8,
+            "english": "breakfast",
+            "spanish": "desayuno",
+            "audio": "tts:en-GB:breakfast"
+          },
+          {
+            "itemId": "english-a1-m093-explore-ex01-i09",
+            "position": 9,
+            "english": "every day",
+            "spanish": "cada día",
+            "audio": "tts:en-GB:every day"
+          },
+          {
+            "itemId": "english-a1-m093-explore-ex01-i10",
+            "position": 10,
+            "english": "early",
+            "spanish": "temprano",
+            "audio": "tts:en-GB:early"
+          }
+        ],
+        "theory": {
+          "title": "Vocabulary: Healthy Habits",
+          "explanation": "Explora diez palabras y expresiones sobre healthy habits. Escucha el modelo británico y relaciona cada palabra con su significado.",
+          "patterns": [
+            {
+              "label": "Useful language",
+              "pattern": "Short question + short answer",
+              "examples": [
+                "I sleep eight hours.",
+                "I drink water every day.",
+                "I do exercise in the morning."
+              ]
+            }
+          ],
+          "tip": "Repite las expresiones y crea un ejemplo relacionado con tu vida."
+        }
+      }
+    },
+    {
+      "sectionId": "english-a1-m093-practice",
+      "sectionKey": "practice",
+      "position": 2,
+      "title": "practice",
+      "exercise": {
+        "exerciseId": "english-a1-m093-practice-ex01",
+        "type": "mixed_practice",
+        "items": [
+          {
+            "itemId": "english-a1-m093-practice-ex01-i01",
+            "position": 1,
+            "taskType": "translation_multiple_choice",
+            "prompt": "Traduce al español: “I sleep eight hours.”",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "Duermo ocho horas.",
+              "Como fruta en el desayuno.",
+              "Tomo un desayuno saludable."
+            ],
+            "correctAnswer": "Duermo ocho horas.",
+            "sourceEnglish": "I sleep eight hours."
+          },
+          {
+            "itemId": "english-a1-m093-practice-ex01-i02",
+            "position": 2,
+            "taskType": "translation_multiple_choice",
+            "prompt": "Traduce al español: “I drink water every day.”",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "Bebo agua todos los días.",
+              "Las verduras son saludables.",
+              "Me acuesto temprano."
+            ],
+            "correctAnswer": "Bebo agua todos los días.",
+            "sourceEnglish": "I drink water every day."
+          },
+          {
+            "itemId": "english-a1-m093-practice-ex01-i03",
+            "position": 3,
+            "taskType": "translation_multiple_choice",
+            "prompt": "Traduce al español: “I do exercise in the morning.”",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "Hago ejercicio por la mañana.",
+              "Salgo a caminar.",
+              "Duermo bien por la noche."
+            ],
+            "correctAnswer": "Hago ejercicio por la mañana.",
+            "sourceEnglish": "I do exercise in the morning."
+          },
+          {
+            "itemId": "english-a1-m093-practice-ex01-i04",
+            "position": 4,
+            "taskType": "translation_multiple_choice",
+            "prompt": "Traduce al español: “I eat fruit for breakfast.”",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "Como fruta en el desayuno.",
+              "Tomo un desayuno saludable.",
+              "Los hábitos saludables son importantes."
+            ],
+            "correctAnswer": "Como fruta en el desayuno.",
+            "sourceEnglish": "I eat fruit for breakfast."
+          },
+          {
+            "itemId": "english-a1-m093-practice-ex01-i05",
+            "position": 5,
+            "taskType": "translation_multiple_choice",
+            "prompt": "Traduce al español: “Vegetables are healthy.”",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "Las verduras son saludables.",
+              "Me acuesto temprano.",
+              "Duermo ocho horas."
+            ],
+            "correctAnswer": "Las verduras son saludables.",
+            "sourceEnglish": "Vegetables are healthy."
+          },
+          {
+            "itemId": "english-a1-m093-practice-ex01-i06",
+            "position": 6,
+            "taskType": "translation_multiple_choice",
+            "prompt": "Traduce al español: “I go for a walk.”",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "Salgo a caminar.",
+              "Duermo bien por la noche.",
+              "Bebo agua todos los días."
+            ],
+            "correctAnswer": "Salgo a caminar.",
+            "sourceEnglish": "I go for a walk."
+          },
+          {
+            "itemId": "english-a1-m093-practice-ex01-i07",
+            "position": 7,
+            "taskType": "translation_multiple_choice",
+            "prompt": "Traduce al español: “I have a healthy breakfast.”",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "Tomo un desayuno saludable.",
+              "Los hábitos saludables son importantes.",
+              "Hago ejercicio por la mañana."
+            ],
+            "correctAnswer": "Tomo un desayuno saludable.",
+            "sourceEnglish": "I have a healthy breakfast."
+          },
+          {
+            "itemId": "english-a1-m093-practice-ex01-i08",
+            "position": 8,
+            "taskType": "translation_multiple_choice",
+            "prompt": "Traduce al español: “I go to bed early.”",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "Me acuesto temprano.",
+              "Duermo ocho horas.",
+              "Como fruta en el desayuno."
+            ],
+            "correctAnswer": "Me acuesto temprano.",
+            "sourceEnglish": "I go to bed early."
+          },
+          {
+            "itemId": "english-a1-m093-practice-ex01-i09",
+            "position": 9,
+            "taskType": "translation_multiple_choice",
+            "prompt": "Traduce al español: “I sleep well at night.”",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "Duermo bien por la noche.",
+              "Bebo agua todos los días.",
+              "Las verduras son saludables."
+            ],
+            "correctAnswer": "Duermo bien por la noche.",
+            "sourceEnglish": "I sleep well at night."
+          },
+          {
+            "itemId": "english-a1-m093-practice-ex01-i10",
+            "position": 10,
+            "taskType": "translation_multiple_choice",
+            "prompt": "Traduce al español: “Healthy habits are important.”",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "Los hábitos saludables son importantes.",
+              "Hago ejercicio por la mañana.",
+              "Salgo a caminar."
+            ],
+            "correctAnswer": "Los hábitos saludables son importantes.",
+            "sourceEnglish": "Healthy habits are important."
+          },
+          {
+            "itemId": "english-a1-m093-practice-ex01-i11",
+            "position": 11,
+            "taskType": "listening_translation_multiple_choice",
+            "prompt": "Escucha el inglés y elige su significado.",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "Duermo ocho horas.",
+              "Las verduras son saludables.",
+              "Me acuesto temprano."
+            ],
+            "correctAnswer": "Duermo ocho horas.",
+            "sourceEnglish": "I sleep eight hours."
+          },
+          {
+            "itemId": "english-a1-m093-practice-ex01-i12",
+            "position": 12,
+            "taskType": "listening_translation_multiple_choice",
+            "prompt": "Escucha el inglés y elige su significado.",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "Bebo agua todos los días.",
+              "Salgo a caminar.",
+              "Duermo bien por la noche."
+            ],
+            "correctAnswer": "Bebo agua todos los días.",
+            "sourceEnglish": "I drink water every day."
+          },
+          {
+            "itemId": "english-a1-m093-practice-ex01-i13",
+            "position": 13,
+            "taskType": "listening_translation_multiple_choice",
+            "prompt": "Escucha el inglés y elige su significado.",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "Hago ejercicio por la mañana.",
+              "Tomo un desayuno saludable.",
+              "Los hábitos saludables son importantes."
+            ],
+            "correctAnswer": "Hago ejercicio por la mañana.",
+            "sourceEnglish": "I do exercise in the morning."
+          },
+          {
+            "itemId": "english-a1-m093-practice-ex01-i14",
+            "position": 14,
+            "taskType": "listening_translation_multiple_choice",
+            "prompt": "Escucha el inglés y elige su significado.",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "Como fruta en el desayuno.",
+              "Me acuesto temprano.",
+              "Duermo ocho horas."
+            ],
+            "correctAnswer": "Como fruta en el desayuno.",
+            "sourceEnglish": "I eat fruit for breakfast."
+          },
+          {
+            "itemId": "english-a1-m093-practice-ex01-i15",
+            "position": 15,
+            "taskType": "listening_translation_multiple_choice",
+            "prompt": "Escucha el inglés y elige su significado.",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "Las verduras son saludables.",
+              "Duermo bien por la noche.",
+              "Bebo agua todos los días."
+            ],
+            "correctAnswer": "Las verduras son saludables.",
+            "sourceEnglish": "Vegetables are healthy."
+          },
+          {
+            "itemId": "english-a1-m093-practice-ex01-i16",
+            "position": 16,
+            "taskType": "listening_translation_multiple_choice",
+            "prompt": "Escucha el inglés y elige su significado.",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "Salgo a caminar.",
+              "Los hábitos saludables son importantes.",
+              "Hago ejercicio por la mañana."
+            ],
+            "correctAnswer": "Salgo a caminar.",
+            "sourceEnglish": "I go for a walk."
+          },
+          {
+            "itemId": "english-a1-m093-practice-ex01-i17",
+            "position": 17,
+            "taskType": "listening_translation_multiple_choice",
+            "prompt": "Escucha el inglés y elige su significado.",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "Tomo un desayuno saludable.",
+              "Duermo ocho horas.",
+              "Como fruta en el desayuno."
+            ],
+            "correctAnswer": "Tomo un desayuno saludable.",
+            "sourceEnglish": "I have a healthy breakfast."
+          },
+          {
+            "itemId": "english-a1-m093-practice-ex01-i18",
+            "position": 18,
+            "taskType": "listening_translation_multiple_choice",
+            "prompt": "Escucha el inglés y elige su significado.",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "Me acuesto temprano.",
+              "Bebo agua todos los días.",
+              "Las verduras son saludables."
+            ],
+            "correctAnswer": "Me acuesto temprano.",
+            "sourceEnglish": "I go to bed early."
+          },
+          {
+            "itemId": "english-a1-m093-practice-ex01-i19",
+            "position": 19,
+            "taskType": "listening_translation_multiple_choice",
+            "prompt": "Escucha el inglés y elige su significado.",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "Duermo bien por la noche.",
+              "Hago ejercicio por la mañana.",
+              "Salgo a caminar."
+            ],
+            "correctAnswer": "Duermo bien por la noche.",
+            "sourceEnglish": "I sleep well at night."
+          },
+          {
+            "itemId": "english-a1-m093-practice-ex01-i20",
+            "position": 20,
+            "taskType": "listening_translation_multiple_choice",
+            "prompt": "Escucha el inglés y elige su significado.",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "Los hábitos saludables son importantes.",
+              "Como fruta en el desayuno.",
+              "Tomo un desayuno saludable."
+            ],
+            "correctAnswer": "Los hábitos saludables son importantes.",
+            "sourceEnglish": "Healthy habits are important."
+          }
+        ]
+      }
+    },
+    {
+      "sectionId": "english-a1-m093-grammar",
+      "sectionKey": "grammar",
+      "position": 3,
+      "title": "grammar",
+      "exercise": {
+        "exerciseId": "english-a1-m093-grammar-ex01",
+        "type": "grammar",
+        "items": [
+          {
+            "itemId": "english-a1-m093-grammar-ex01-i01",
+            "position": 1,
+            "prompt": "I ___ drink water every day.",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "usually",
+              "usual",
+              "use"
+            ],
+            "correctAnswer": "usually"
+          },
+          {
+            "itemId": "english-a1-m093-grammar-ex01-i02",
+            "position": 2,
+            "prompt": "She ___ walks to school.",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "often",
+              "oftens",
+              "oftenly"
+            ],
+            "correctAnswer": "often"
+          },
+          {
+            "itemId": "english-a1-m093-grammar-ex01-i03",
+            "position": 3,
+            "prompt": "He ___ eats vegetables.",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "sometimes",
+              "sometime",
+              "some"
+            ],
+            "correctAnswer": "sometimes"
+          },
+          {
+            "itemId": "english-a1-m093-grammar-ex01-i04",
+            "position": 4,
+            "prompt": "We ___ go to bed late.",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "never",
+              "not",
+              "no"
+            ],
+            "correctAnswer": "never"
+          },
+          {
+            "itemId": "english-a1-m093-grammar-ex01-i05",
+            "position": 5,
+            "prompt": "They ___ play sport at weekends.",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "often",
+              "oftens",
+              "oftenly"
+            ],
+            "correctAnswer": "often"
+          },
+          {
+            "itemId": "english-a1-m093-grammar-ex01-i06",
+            "position": 6,
+            "prompt": "My brother ___ has breakfast.",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "always",
+              "every",
+              "all"
+            ],
+            "correctAnswer": "always"
+          },
+          {
+            "itemId": "english-a1-m093-grammar-ex01-i07",
+            "position": 7,
+            "prompt": "I am ___ tired after exercise.",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "sometimes",
+              "sometime",
+              "some"
+            ],
+            "correctAnswer": "sometimes"
+          },
+          {
+            "itemId": "english-a1-m093-grammar-ex01-i08",
+            "position": 8,
+            "prompt": "She ___ eats fruit.",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "usually",
+              "usual",
+              "use"
+            ],
+            "correctAnswer": "usually"
+          },
+          {
+            "itemId": "english-a1-m093-grammar-ex01-i09",
+            "position": 9,
+            "prompt": "We ___ wash our hands before meals.",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "always",
+              "every",
+              "all"
+            ],
+            "correctAnswer": "always"
+          },
+          {
+            "itemId": "english-a1-m093-grammar-ex01-i10",
+            "position": 10,
+            "prompt": "He ___ drinks fizzy drinks.",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "never",
+              "not",
+              "no"
+            ],
+            "correctAnswer": "never"
+          }
+        ],
+        "theory": {
+          "title": "Present simple and frequency adverbs for habits",
+          "explanation": "Usamos el presente simple para hablar de hábitos saludables y adverbios como always, usually, often, sometimes y never para indicar frecuencia.",
+          "patterns": [
+            {
+              "label": "Model",
+              "pattern": "I usually drink water",
+              "examples": [
+                "I usually drink water",
+                "She always walks to school."
+              ]
+            }
+          ],
+          "tip": "Lee los ejemplos y comprueba cómo cambia la estructura."
+        }
+      }
+    },
+    {
+      "sectionId": "english-a1-m093-pronunciation",
+      "sectionKey": "pronunciation",
+      "position": 4,
+      "title": "pronunciation",
+      "exercise": {
+        "exerciseId": "english-a1-m093-pronunciation-ex01",
+        "type": "pronunciation_cards",
+        "items": [
+          {
+            "itemId": "english-a1-m093-pronunciation-ex01-i01",
+            "position": 1,
+            "word": "sleep",
+            "translation": "dormir",
+            "pronunciationGuide": "Listen to the en-GB model and keep the final consonant clear.",
+            "audio": "tts:en-GB:sleep"
+          },
+          {
+            "itemId": "english-a1-m093-pronunciation-ex01-i02",
+            "position": 2,
+            "word": "water",
+            "translation": "agua",
+            "pronunciationGuide": "Listen to the en-GB model and keep the final consonant clear.",
+            "audio": "tts:en-GB:water"
+          },
+          {
+            "itemId": "english-a1-m093-pronunciation-ex01-i03",
+            "position": 3,
+            "word": "exercise",
+            "translation": "ejercicio",
+            "pronunciationGuide": "Listen to the en-GB model and keep the final consonant clear.",
+            "audio": "tts:en-GB:exercise"
+          },
+          {
+            "itemId": "english-a1-m093-pronunciation-ex01-i04",
+            "position": 4,
+            "word": "fruit",
+            "translation": "fruta",
+            "pronunciationGuide": "Listen to the en-GB model and keep the final consonant clear.",
+            "audio": "tts:en-GB:fruit"
+          },
+          {
+            "itemId": "english-a1-m093-pronunciation-ex01-i05",
+            "position": 5,
+            "word": "vegetables",
+            "translation": "verduras",
+            "pronunciationGuide": "Listen to the en-GB model and keep the final consonant clear.",
+            "audio": "tts:en-GB:vegetables"
+          },
+          {
+            "itemId": "english-a1-m093-pronunciation-ex01-i06",
+            "position": 6,
+            "word": "healthy",
+            "translation": "saludable",
+            "pronunciationGuide": "Listen to the en-GB model and keep the final consonant clear.",
+            "audio": "tts:en-GB:healthy"
+          },
+          {
+            "itemId": "english-a1-m093-pronunciation-ex01-i07",
+            "position": 7,
+            "word": "walk",
+            "translation": "caminar",
+            "pronunciationGuide": "Listen to the en-GB model and keep the final consonant clear.",
+            "audio": "tts:en-GB:walk"
+          },
+          {
+            "itemId": "english-a1-m093-pronunciation-ex01-i08",
+            "position": 8,
+            "word": "breakfast",
+            "translation": "desayuno",
+            "pronunciationGuide": "Listen to the en-GB model and keep the final consonant clear.",
+            "audio": "tts:en-GB:breakfast"
+          },
+          {
+            "itemId": "english-a1-m093-pronunciation-ex01-i09",
+            "position": 9,
+            "word": "every day",
+            "translation": "cada día",
+            "pronunciationGuide": "Listen to the phrase as one unit and notice its main stress.",
+            "audio": "tts:en-GB:every day"
+          },
+          {
+            "itemId": "english-a1-m093-pronunciation-ex01-i10",
+            "position": 10,
+            "word": "early",
+            "translation": "temprano",
+            "pronunciationGuide": "Listen to the en-GB model and keep the final consonant clear.",
+            "audio": "tts:en-GB:early"
+          }
+        ],
+        "focus": "Practica el ritmo y el acento de las palabras clave de Healthy Habits."
+      }
+    },
+    {
+      "sectionId": "english-a1-m093-reading",
+      "sectionKey": "reading",
+      "position": 5,
+      "title": "reading",
+      "exercise": {
+        "exerciseId": "english-a1-m093-reading-ex01",
+        "type": "reading_comprehension",
+        "items": [
+          {
+            "itemId": "english-a1-m093-reading-ex01-i01",
+            "position": 1,
+            "prompt": "Which English sentence means “Duermo ocho horas.”?",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "I sleep eight hours.",
+              "I drink water every day.",
+              "I do exercise in the morning."
+            ],
+            "correctAnswer": "I sleep eight hours."
+          },
+          {
+            "itemId": "english-a1-m093-reading-ex01-i02",
+            "position": 2,
+            "prompt": "Which English sentence means “Bebo agua todos los días.”?",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "I drink water every day.",
+              "I do exercise in the morning.",
+              "I eat fruit for breakfast."
+            ],
+            "correctAnswer": "I drink water every day."
+          },
+          {
+            "itemId": "english-a1-m093-reading-ex01-i03",
+            "position": 3,
+            "prompt": "Which English sentence means “Hago ejercicio por la mañana.”?",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "I do exercise in the morning.",
+              "I eat fruit for breakfast.",
+              "Vegetables are healthy."
+            ],
+            "correctAnswer": "I do exercise in the morning."
+          },
+          {
+            "itemId": "english-a1-m093-reading-ex01-i04",
+            "position": 4,
+            "prompt": "Which English sentence means “Como fruta en el desayuno.”?",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "I eat fruit for breakfast.",
+              "Vegetables are healthy.",
+              "I go for a walk."
+            ],
+            "correctAnswer": "I eat fruit for breakfast."
+          },
+          {
+            "itemId": "english-a1-m093-reading-ex01-i05",
+            "position": 5,
+            "prompt": "Which English sentence means “Las verduras son saludables.”?",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "Vegetables are healthy.",
+              "I go for a walk.",
+              "I have a healthy breakfast."
+            ],
+            "correctAnswer": "Vegetables are healthy."
+          },
+          {
+            "itemId": "english-a1-m093-reading-ex01-i06",
+            "position": 6,
+            "prompt": "Which English sentence means “Salgo a caminar.”?",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "I go for a walk.",
+              "I have a healthy breakfast.",
+              "I go to bed early."
+            ],
+            "correctAnswer": "I go for a walk."
+          },
+          {
+            "itemId": "english-a1-m093-reading-ex01-i07",
+            "position": 7,
+            "prompt": "Which English sentence means “Tomo un desayuno saludable.”?",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "I have a healthy breakfast.",
+              "I go to bed early.",
+              "I sleep well at night."
+            ],
+            "correctAnswer": "I have a healthy breakfast."
+          },
+          {
+            "itemId": "english-a1-m093-reading-ex01-i08",
+            "position": 8,
+            "prompt": "Which English sentence means “Me acuesto temprano.”?",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "I go to bed early.",
+              "I sleep well at night.",
+              "Healthy habits are important."
+            ],
+            "correctAnswer": "I go to bed early."
+          },
+          {
+            "itemId": "english-a1-m093-reading-ex01-i09",
+            "position": 9,
+            "prompt": "Which English sentence means “Duermo bien por la noche.”?",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "I sleep well at night.",
+              "Healthy habits are important.",
+              "I sleep eight hours."
+            ],
+            "correctAnswer": "I sleep well at night."
+          },
+          {
+            "itemId": "english-a1-m093-reading-ex01-i10",
+            "position": 10,
+            "prompt": "Which English sentence means “Los hábitos saludables son importantes.”?",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "Healthy habits are important.",
+              "I sleep eight hours.",
+              "I drink water every day."
+            ],
+            "correctAnswer": "Healthy habits are important."
+          }
+        ],
+        "content": {
+          "passageId": "english-a1-m093-reading-passage-01",
+          "passage": "I sleep eight hours. I drink water every day. I do exercise in the morning. I eat fruit for breakfast. Vegetables are healthy. I go for a walk."
+        }
+      }
+    },
+    {
+      "sectionId": "english-a1-m093-writing",
+      "sectionKey": "writing",
+      "position": 6,
+      "title": "writing",
+      "exercise": {
+        "exerciseId": "english-a1-m093-writing-ex01",
+        "type": "dictation",
+        "items": [
+          {
+            "itemId": "english-a1-m093-writing-ex01-i01",
+            "position": 1,
+            "audio": "tts:en-GB:I sleep eight hours.",
+            "expectedAnswer": "I sleep eight hours.",
+            "evaluation": {
+              "type": "normalised_text"
+            }
+          },
+          {
+            "itemId": "english-a1-m093-writing-ex01-i02",
+            "position": 2,
+            "audio": "tts:en-GB:I drink water every day.",
+            "expectedAnswer": "I drink water every day.",
+            "evaluation": {
+              "type": "normalised_text"
+            }
+          },
+          {
+            "itemId": "english-a1-m093-writing-ex01-i03",
+            "position": 3,
+            "audio": "tts:en-GB:I do exercise in the morning.",
+            "expectedAnswer": "I do exercise in the morning.",
+            "evaluation": {
+              "type": "normalised_text"
+            }
+          },
+          {
+            "itemId": "english-a1-m093-writing-ex01-i04",
+            "position": 4,
+            "audio": "tts:en-GB:I eat fruit for breakfast.",
+            "expectedAnswer": "I eat fruit for breakfast.",
+            "evaluation": {
+              "type": "normalised_text"
+            }
+          },
+          {
+            "itemId": "english-a1-m093-writing-ex01-i05",
+            "position": 5,
+            "audio": "tts:en-GB:Vegetables are healthy.",
+            "expectedAnswer": "Vegetables are healthy.",
+            "evaluation": {
+              "type": "normalised_text"
+            }
+          },
+          {
+            "itemId": "english-a1-m093-writing-ex01-i06",
+            "position": 6,
+            "audio": "tts:en-GB:I go for a walk.",
+            "expectedAnswer": "I go for a walk.",
+            "evaluation": {
+              "type": "normalised_text"
+            }
+          },
+          {
+            "itemId": "english-a1-m093-writing-ex01-i07",
+            "position": 7,
+            "audio": "tts:en-GB:I have a healthy breakfast.",
+            "expectedAnswer": "I have a healthy breakfast.",
+            "evaluation": {
+              "type": "normalised_text"
+            }
+          },
+          {
+            "itemId": "english-a1-m093-writing-ex01-i08",
+            "position": 8,
+            "audio": "tts:en-GB:I go to bed early.",
+            "expectedAnswer": "I go to bed early.",
+            "evaluation": {
+              "type": "normalised_text"
+            }
+          },
+          {
+            "itemId": "english-a1-m093-writing-ex01-i09",
+            "position": 9,
+            "audio": "tts:en-GB:I sleep well at night.",
+            "expectedAnswer": "I sleep well at night.",
+            "evaluation": {
+              "type": "normalised_text"
+            }
+          },
+          {
+            "itemId": "english-a1-m093-writing-ex01-i10",
+            "position": 10,
+            "audio": "tts:en-GB:Healthy habits are important.",
+            "expectedAnswer": "Healthy habits are important.",
+            "evaluation": {
+              "type": "normalised_text"
+            }
+          }
+        ],
+        "writingTask": "Escribe 5–6 frases sobre healthy habits. Utiliza al menos cinco palabras de la misión y la estructura present simple and frequency adverbs for habits.",
+        "modelText": "I sleep eight hours. I drink water every day. I do exercise in the morning. I eat fruit for breakfast. Vegetables are healthy. I go for a walk."
+      }
+    },
+    {
+      "sectionId": "english-a1-m093-speaking",
+      "sectionKey": "speaking",
+      "position": 7,
+      "title": "speaking",
+      "exercise": {
+        "exerciseId": "english-a1-m093-speaking-ex01",
+        "type": "speaking_prompts",
+        "items": [
+          {
+            "itemId": "english-a1-m093-speaking-ex01-i01",
+            "position": 1,
+            "prompt": "Say a sentence about this situation: Duermo ocho horas.",
+            "modelAnswer": "I sleep eight hours.",
+            "evaluation": {
+              "type": "transcription_feedback",
+              "transcriptionSeparateFromPronunciation": true
+            }
+          },
+          {
+            "itemId": "english-a1-m093-speaking-ex01-i02",
+            "position": 2,
+            "prompt": "Say a sentence about this situation: Bebo agua todos los días.",
+            "modelAnswer": "I drink water every day.",
+            "evaluation": {
+              "type": "transcription_feedback",
+              "transcriptionSeparateFromPronunciation": true
+            }
+          },
+          {
+            "itemId": "english-a1-m093-speaking-ex01-i03",
+            "position": 3,
+            "prompt": "Say a sentence about this situation: Hago ejercicio por la mañana.",
+            "modelAnswer": "I do exercise in the morning.",
+            "evaluation": {
+              "type": "transcription_feedback",
+              "transcriptionSeparateFromPronunciation": true
+            }
+          },
+          {
+            "itemId": "english-a1-m093-speaking-ex01-i04",
+            "position": 4,
+            "prompt": "Say a sentence about this situation: Como fruta en el desayuno.",
+            "modelAnswer": "I eat fruit for breakfast.",
+            "evaluation": {
+              "type": "transcription_feedback",
+              "transcriptionSeparateFromPronunciation": true
+            }
+          },
+          {
+            "itemId": "english-a1-m093-speaking-ex01-i05",
+            "position": 5,
+            "prompt": "Say a sentence about this situation: Las verduras son saludables.",
+            "modelAnswer": "Vegetables are healthy.",
+            "evaluation": {
+              "type": "transcription_feedback",
+              "transcriptionSeparateFromPronunciation": true
+            }
+          },
+          {
+            "itemId": "english-a1-m093-speaking-ex01-i06",
+            "position": 6,
+            "prompt": "Say a sentence about this situation: Salgo a caminar.",
+            "modelAnswer": "I go for a walk.",
+            "evaluation": {
+              "type": "transcription_feedback",
+              "transcriptionSeparateFromPronunciation": true
+            }
+          },
+          {
+            "itemId": "english-a1-m093-speaking-ex01-i07",
+            "position": 7,
+            "prompt": "Say a sentence about this situation: Tomo un desayuno saludable.",
+            "modelAnswer": "I have a healthy breakfast.",
+            "evaluation": {
+              "type": "transcription_feedback",
+              "transcriptionSeparateFromPronunciation": true
+            }
+          },
+          {
+            "itemId": "english-a1-m093-speaking-ex01-i08",
+            "position": 8,
+            "prompt": "Say a sentence about this situation: Me acuesto temprano.",
+            "modelAnswer": "I go to bed early.",
+            "evaluation": {
+              "type": "transcription_feedback",
+              "transcriptionSeparateFromPronunciation": true
+            }
+          },
+          {
+            "itemId": "english-a1-m093-speaking-ex01-i09",
+            "position": 9,
+            "prompt": "Say a sentence about this situation: Duermo bien por la noche.",
+            "modelAnswer": "I sleep well at night.",
+            "evaluation": {
+              "type": "transcription_feedback",
+              "transcriptionSeparateFromPronunciation": true
+            }
+          },
+          {
+            "itemId": "english-a1-m093-speaking-ex01-i10",
+            "position": 10,
+            "prompt": "Say a sentence about this situation: Los hábitos saludables son importantes.",
+            "modelAnswer": "Healthy habits are important.",
+            "evaluation": {
+              "type": "transcription_feedback",
+              "transcriptionSeparateFromPronunciation": true
+            }
+          }
+        ]
+      }
+    },
+    {
+      "sectionId": "english-a1-m093-listening",
+      "sectionKey": "listening",
+      "position": 8,
+      "title": "listening",
+      "exercise": {
+        "exerciseId": "english-a1-m093-listening-ex01",
+        "type": "listening_gap_fill",
+        "items": [
+          {
+            "itemId": "english-a1-m093-listening-ex01-i01",
+            "position": 1,
+            "gapToken": "[[gap-01]]",
+            "expectedWordId": "english-a1-m093-listening-word-01"
+          },
+          {
+            "itemId": "english-a1-m093-listening-ex01-i02",
+            "position": 2,
+            "gapToken": "[[gap-02]]",
+            "expectedWordId": "english-a1-m093-listening-word-02"
+          },
+          {
+            "itemId": "english-a1-m093-listening-ex01-i03",
+            "position": 3,
+            "gapToken": "[[gap-03]]",
+            "expectedWordId": "english-a1-m093-listening-word-03"
+          },
+          {
+            "itemId": "english-a1-m093-listening-ex01-i04",
+            "position": 4,
+            "gapToken": "[[gap-04]]",
+            "expectedWordId": "english-a1-m093-listening-word-04"
+          },
+          {
+            "itemId": "english-a1-m093-listening-ex01-i05",
+            "position": 5,
+            "gapToken": "[[gap-05]]",
+            "expectedWordId": "english-a1-m093-listening-word-05"
+          },
+          {
+            "itemId": "english-a1-m093-listening-ex01-i06",
+            "position": 6,
+            "gapToken": "[[gap-06]]",
+            "expectedWordId": "english-a1-m093-listening-word-06"
+          },
+          {
+            "itemId": "english-a1-m093-listening-ex01-i07",
+            "position": 7,
+            "gapToken": "[[gap-07]]",
+            "expectedWordId": "english-a1-m093-listening-word-07"
+          },
+          {
+            "itemId": "english-a1-m093-listening-ex01-i08",
+            "position": 8,
+            "gapToken": "[[gap-08]]",
+            "expectedWordId": "english-a1-m093-listening-word-08"
+          },
+          {
+            "itemId": "english-a1-m093-listening-ex01-i09",
+            "position": 9,
+            "gapToken": "[[gap-09]]",
+            "expectedWordId": "english-a1-m093-listening-word-09"
+          },
+          {
+            "itemId": "english-a1-m093-listening-ex01-i10",
+            "position": 10,
+            "gapToken": "[[gap-10]]",
+            "expectedWordId": "english-a1-m093-listening-word-10"
+          }
+        ],
+        "content": {
+          "audio": "tts:en-GB:The key words for Healthy Habits are: sleep, water, exercise, fruit, vegetables, healthy, walk, breakfast, every day, early. Listen and repeat each word carefully.",
+          "audioLocale": "en-GB",
+          "transcriptTemplate": "The key words for Healthy Habits are: [[gap-01]], [[gap-02]], [[gap-03]], [[gap-04]], [[gap-05]], [[gap-06]], [[gap-07]], [[gap-08]], [[gap-09]], [[gap-10]]. Listen and repeat each word carefully.",
+          "wordBank": [
+            {
+              "wordId": "english-a1-m093-listening-word-01",
+              "word": "sleep"
+            },
+            {
+              "wordId": "english-a1-m093-listening-word-02",
+              "word": "water"
+            },
+            {
+              "wordId": "english-a1-m093-listening-word-03",
+              "word": "exercise"
+            },
+            {
+              "wordId": "english-a1-m093-listening-word-04",
+              "word": "fruit"
+            },
+            {
+              "wordId": "english-a1-m093-listening-word-05",
+              "word": "vegetables"
+            },
+            {
+              "wordId": "english-a1-m093-listening-word-06",
+              "word": "healthy"
+            },
+            {
+              "wordId": "english-a1-m093-listening-word-07",
+              "word": "walk"
+            },
+            {
+              "wordId": "english-a1-m093-listening-word-08",
+              "word": "breakfast"
+            },
+            {
+              "wordId": "english-a1-m093-listening-word-09",
+              "word": "every day"
+            },
+            {
+              "wordId": "english-a1-m093-listening-word-10",
+              "word": "early"
+            }
+          ],
+          "interaction": "select_place_move_replace"
+        }
+      }
+    }
+  ]
+}

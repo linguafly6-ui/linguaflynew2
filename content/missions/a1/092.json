@@ -1,0 +1,1205 @@
+{
+  "schemaVersion": "1.2.0",
+  "contentVersion": 1,
+  "course": {
+    "courseId": "english-a1",
+    "level": "A1",
+    "language": "en-GB"
+  },
+  "unit": {
+    "unitId": "english-a1-unit-10",
+    "courseId": "english-a1",
+    "position": 10,
+    "title": "Health, weather and everyday interaction"
+  },
+  "mission": {
+    "missionId": "english-a1-m092",
+    "unitId": "english-a1-unit-10",
+    "position": 92,
+    "title": "Parts of the Body"
+  },
+  "sections": [
+    {
+      "sectionId": "english-a1-m092-explore",
+      "sectionKey": "explore",
+      "position": 1,
+      "title": "explore",
+      "exercise": {
+        "exerciseId": "english-a1-m092-explore-ex01",
+        "type": "vocabulary_pairs",
+        "items": [
+          {
+            "itemId": "english-a1-m092-explore-ex01-i01",
+            "position": 1,
+            "english": "head",
+            "spanish": "cabeza",
+            "audio": "tts:en-GB:head"
+          },
+          {
+            "itemId": "english-a1-m092-explore-ex01-i02",
+            "position": 2,
+            "english": "back",
+            "spanish": "espalda",
+            "audio": "tts:en-GB:back"
+          },
+          {
+            "itemId": "english-a1-m092-explore-ex01-i03",
+            "position": 3,
+            "english": "arm",
+            "spanish": "brazo",
+            "audio": "tts:en-GB:arm"
+          },
+          {
+            "itemId": "english-a1-m092-explore-ex01-i04",
+            "position": 4,
+            "english": "leg",
+            "spanish": "pierna",
+            "audio": "tts:en-GB:leg"
+          },
+          {
+            "itemId": "english-a1-m092-explore-ex01-i05",
+            "position": 5,
+            "english": "hand",
+            "spanish": "mano",
+            "audio": "tts:en-GB:hand"
+          },
+          {
+            "itemId": "english-a1-m092-explore-ex01-i06",
+            "position": 6,
+            "english": "foot",
+            "spanish": "pie",
+            "audio": "tts:en-GB:foot"
+          },
+          {
+            "itemId": "english-a1-m092-explore-ex01-i07",
+            "position": 7,
+            "english": "stomach",
+            "spanish": "estómago",
+            "audio": "tts:en-GB:stomach"
+          },
+          {
+            "itemId": "english-a1-m092-explore-ex01-i08",
+            "position": 8,
+            "english": "throat",
+            "spanish": "garganta",
+            "audio": "tts:en-GB:throat"
+          },
+          {
+            "itemId": "english-a1-m092-explore-ex01-i09",
+            "position": 9,
+            "english": "shoulder",
+            "spanish": "hombro",
+            "audio": "tts:en-GB:shoulder"
+          },
+          {
+            "itemId": "english-a1-m092-explore-ex01-i10",
+            "position": 10,
+            "english": "knee",
+            "spanish": "rodilla",
+            "audio": "tts:en-GB:knee"
+          }
+        ],
+        "theory": {
+          "title": "Vocabulary: Parts of the Body",
+          "explanation": "Explora diez palabras y expresiones sobre parts of the body. Escucha el modelo británico y relaciona cada palabra con su significado.",
+          "patterns": [
+            {
+              "label": "Useful language",
+              "pattern": "Short question + short answer",
+              "examples": [
+                "This is my head.",
+                "My back hurts.",
+                "Raise your arm, please."
+              ]
+            }
+          ],
+          "tip": "Repite las expresiones y crea un ejemplo relacionado con tu vida."
+        }
+      }
+    },
+    {
+      "sectionId": "english-a1-m092-practice",
+      "sectionKey": "practice",
+      "position": 2,
+      "title": "practice",
+      "exercise": {
+        "exerciseId": "english-a1-m092-practice-ex01",
+        "type": "mixed_practice",
+        "items": [
+          {
+            "itemId": "english-a1-m092-practice-ex01-i01",
+            "position": 1,
+            "taskType": "translation_multiple_choice",
+            "prompt": "Traduce al español: “This is my head.”",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "Esta es mi cabeza.",
+              "Tengo la pierna cansada.",
+              "Hoy me duele el estómago."
+            ],
+            "correctAnswer": "Esta es mi cabeza.",
+            "sourceEnglish": "This is my head."
+          },
+          {
+            "itemId": "english-a1-m092-practice-ex01-i02",
+            "position": 2,
+            "taskType": "translation_multiple_choice",
+            "prompt": "Traduce al español: “My back hurts.”",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "Me duele la espalda.",
+              "Lávate las manos.",
+              "Me duele la garganta."
+            ],
+            "correctAnswer": "Me duele la espalda.",
+            "sourceEnglish": "My back hurts."
+          },
+          {
+            "itemId": "english-a1-m092-practice-ex01-i03",
+            "position": 3,
+            "taskType": "translation_multiple_choice",
+            "prompt": "Traduce al español: “Raise your arm, please.”",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "Levanta el brazo, por favor.",
+              "Me duele el pie.",
+              "Mi hombro está bien."
+            ],
+            "correctAnswer": "Levanta el brazo, por favor.",
+            "sourceEnglish": "Raise your arm, please."
+          },
+          {
+            "itemId": "english-a1-m092-practice-ex01-i04",
+            "position": 4,
+            "taskType": "translation_multiple_choice",
+            "prompt": "Traduce al español: “My leg is tired.”",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "Tengo la pierna cansada.",
+              "Hoy me duele el estómago.",
+              "Dobla la rodilla."
+            ],
+            "correctAnswer": "Tengo la pierna cansada.",
+            "sourceEnglish": "My leg is tired."
+          },
+          {
+            "itemId": "english-a1-m092-practice-ex01-i05",
+            "position": 5,
+            "taskType": "translation_multiple_choice",
+            "prompt": "Traduce al español: “Wash your hands.”",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "Lávate las manos.",
+              "Me duele la garganta.",
+              "Esta es mi cabeza."
+            ],
+            "correctAnswer": "Lávate las manos.",
+            "sourceEnglish": "Wash your hands."
+          },
+          {
+            "itemId": "english-a1-m092-practice-ex01-i06",
+            "position": 6,
+            "taskType": "translation_multiple_choice",
+            "prompt": "Traduce al español: “My foot hurts.”",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "Me duele el pie.",
+              "Mi hombro está bien.",
+              "Me duele la espalda."
+            ],
+            "correctAnswer": "Me duele el pie.",
+            "sourceEnglish": "My foot hurts."
+          },
+          {
+            "itemId": "english-a1-m092-practice-ex01-i07",
+            "position": 7,
+            "taskType": "translation_multiple_choice",
+            "prompt": "Traduce al español: “My stomach hurts today.”",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "Hoy me duele el estómago.",
+              "Dobla la rodilla.",
+              "Levanta el brazo, por favor."
+            ],
+            "correctAnswer": "Hoy me duele el estómago.",
+            "sourceEnglish": "My stomach hurts today."
+          },
+          {
+            "itemId": "english-a1-m092-practice-ex01-i08",
+            "position": 8,
+            "taskType": "translation_multiple_choice",
+            "prompt": "Traduce al español: “I have a sore throat.”",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "Me duele la garganta.",
+              "Esta es mi cabeza.",
+              "Tengo la pierna cansada."
+            ],
+            "correctAnswer": "Me duele la garganta.",
+            "sourceEnglish": "I have a sore throat."
+          },
+          {
+            "itemId": "english-a1-m092-practice-ex01-i09",
+            "position": 9,
+            "taskType": "translation_multiple_choice",
+            "prompt": "Traduce al español: “My shoulder is fine.”",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "Mi hombro está bien.",
+              "Me duele la espalda.",
+              "Lávate las manos."
+            ],
+            "correctAnswer": "Mi hombro está bien.",
+            "sourceEnglish": "My shoulder is fine."
+          },
+          {
+            "itemId": "english-a1-m092-practice-ex01-i10",
+            "position": 10,
+            "taskType": "translation_multiple_choice",
+            "prompt": "Traduce al español: “Bend your knee.”",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "Dobla la rodilla.",
+              "Levanta el brazo, por favor.",
+              "Me duele el pie."
+            ],
+            "correctAnswer": "Dobla la rodilla.",
+            "sourceEnglish": "Bend your knee."
+          },
+          {
+            "itemId": "english-a1-m092-practice-ex01-i11",
+            "position": 11,
+            "taskType": "listening_translation_multiple_choice",
+            "prompt": "Escucha el inglés y elige su significado.",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "Esta es mi cabeza.",
+              "Lávate las manos.",
+              "Me duele la garganta."
+            ],
+            "correctAnswer": "Esta es mi cabeza.",
+            "sourceEnglish": "This is my head."
+          },
+          {
+            "itemId": "english-a1-m092-practice-ex01-i12",
+            "position": 12,
+            "taskType": "listening_translation_multiple_choice",
+            "prompt": "Escucha el inglés y elige su significado.",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "Me duele la espalda.",
+              "Me duele el pie.",
+              "Mi hombro está bien."
+            ],
+            "correctAnswer": "Me duele la espalda.",
+            "sourceEnglish": "My back hurts."
+          },
+          {
+            "itemId": "english-a1-m092-practice-ex01-i13",
+            "position": 13,
+            "taskType": "listening_translation_multiple_choice",
+            "prompt": "Escucha el inglés y elige su significado.",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "Levanta el brazo, por favor.",
+              "Hoy me duele el estómago.",
+              "Dobla la rodilla."
+            ],
+            "correctAnswer": "Levanta el brazo, por favor.",
+            "sourceEnglish": "Raise your arm, please."
+          },
+          {
+            "itemId": "english-a1-m092-practice-ex01-i14",
+            "position": 14,
+            "taskType": "listening_translation_multiple_choice",
+            "prompt": "Escucha el inglés y elige su significado.",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "Tengo la pierna cansada.",
+              "Me duele la garganta.",
+              "Esta es mi cabeza."
+            ],
+            "correctAnswer": "Tengo la pierna cansada.",
+            "sourceEnglish": "My leg is tired."
+          },
+          {
+            "itemId": "english-a1-m092-practice-ex01-i15",
+            "position": 15,
+            "taskType": "listening_translation_multiple_choice",
+            "prompt": "Escucha el inglés y elige su significado.",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "Lávate las manos.",
+              "Mi hombro está bien.",
+              "Me duele la espalda."
+            ],
+            "correctAnswer": "Lávate las manos.",
+            "sourceEnglish": "Wash your hands."
+          },
+          {
+            "itemId": "english-a1-m092-practice-ex01-i16",
+            "position": 16,
+            "taskType": "listening_translation_multiple_choice",
+            "prompt": "Escucha el inglés y elige su significado.",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "Me duele el pie.",
+              "Dobla la rodilla.",
+              "Levanta el brazo, por favor."
+            ],
+            "correctAnswer": "Me duele el pie.",
+            "sourceEnglish": "My foot hurts."
+          },
+          {
+            "itemId": "english-a1-m092-practice-ex01-i17",
+            "position": 17,
+            "taskType": "listening_translation_multiple_choice",
+            "prompt": "Escucha el inglés y elige su significado.",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "Hoy me duele el estómago.",
+              "Esta es mi cabeza.",
+              "Tengo la pierna cansada."
+            ],
+            "correctAnswer": "Hoy me duele el estómago.",
+            "sourceEnglish": "My stomach hurts today."
+          },
+          {
+            "itemId": "english-a1-m092-practice-ex01-i18",
+            "position": 18,
+            "taskType": "listening_translation_multiple_choice",
+            "prompt": "Escucha el inglés y elige su significado.",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "Me duele la garganta.",
+              "Me duele la espalda.",
+              "Lávate las manos."
+            ],
+            "correctAnswer": "Me duele la garganta.",
+            "sourceEnglish": "I have a sore throat."
+          },
+          {
+            "itemId": "english-a1-m092-practice-ex01-i19",
+            "position": 19,
+            "taskType": "listening_translation_multiple_choice",
+            "prompt": "Escucha el inglés y elige su significado.",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "Mi hombro está bien.",
+              "Levanta el brazo, por favor.",
+              "Me duele el pie."
+            ],
+            "correctAnswer": "Mi hombro está bien.",
+            "sourceEnglish": "My shoulder is fine."
+          },
+          {
+            "itemId": "english-a1-m092-practice-ex01-i20",
+            "position": 20,
+            "taskType": "listening_translation_multiple_choice",
+            "prompt": "Escucha el inglés y elige su significado.",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "Dobla la rodilla.",
+              "Tengo la pierna cansada.",
+              "Hoy me duele el estómago."
+            ],
+            "correctAnswer": "Dobla la rodilla.",
+            "sourceEnglish": "Bend your knee."
+          }
+        ]
+      }
+    },
+    {
+      "sectionId": "english-a1-m092-grammar",
+      "sectionKey": "grammar",
+      "position": 3,
+      "title": "grammar",
+      "exercise": {
+        "exerciseId": "english-a1-m092-grammar-ex01",
+        "type": "grammar",
+        "items": [
+          {
+            "itemId": "english-a1-m092-grammar-ex01-i01",
+            "position": 1,
+            "prompt": "I have got two ___.",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "hands",
+              "hand",
+              "hand's"
+            ],
+            "correctAnswer": "hands"
+          },
+          {
+            "itemId": "english-a1-m092-grammar-ex01-i02",
+            "position": 2,
+            "prompt": "She ___ got blue eyes.",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "has",
+              "have",
+              "is"
+            ],
+            "correctAnswer": "has"
+          },
+          {
+            "itemId": "english-a1-m092-grammar-ex01-i03",
+            "position": 3,
+            "prompt": "He has got a pain in ___ leg.",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "his",
+              "her",
+              "their"
+            ],
+            "correctAnswer": "his"
+          },
+          {
+            "itemId": "english-a1-m092-grammar-ex01-i04",
+            "position": 4,
+            "prompt": "They have got two ___.",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "feet",
+              "foot",
+              "foots"
+            ],
+            "correctAnswer": "feet"
+          },
+          {
+            "itemId": "english-a1-m092-grammar-ex01-i05",
+            "position": 5,
+            "prompt": "My brother ___ got short hair.",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "has",
+              "have",
+              "is"
+            ],
+            "correctAnswer": "has"
+          },
+          {
+            "itemId": "english-a1-m092-grammar-ex01-i06",
+            "position": 6,
+            "prompt": "Have you got a pain in ___ arm?",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "your",
+              "you",
+              "yours"
+            ],
+            "correctAnswer": "your"
+          },
+          {
+            "itemId": "english-a1-m092-grammar-ex01-i07",
+            "position": 7,
+            "prompt": "The baby has got small ___.",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "ears",
+              "ear",
+              "ear's"
+            ],
+            "correctAnswer": "ears"
+          },
+          {
+            "itemId": "english-a1-m092-grammar-ex01-i08",
+            "position": 8,
+            "prompt": "We ___ got ten fingers.",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "have",
+              "has",
+              "are"
+            ],
+            "correctAnswer": "have"
+          },
+          {
+            "itemId": "english-a1-m092-grammar-ex01-i09",
+            "position": 9,
+            "prompt": "She has got a headache in ___ head.",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "her",
+              "his",
+              "their"
+            ],
+            "correctAnswer": "her"
+          },
+          {
+            "itemId": "english-a1-m092-grammar-ex01-i10",
+            "position": 10,
+            "prompt": "I have got a pain in ___ back.",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "my",
+              "me",
+              "mine"
+            ],
+            "correctAnswer": "my"
+          }
+        ],
+        "theory": {
+          "title": "Have got and possessives for body parts",
+          "explanation": "Usamos have got para describir partes del cuerpo y posesión. Los adjetivos posesivos my, your, his y her van antes del nombre.",
+          "patterns": [
+            {
+              "label": "Model",
+              "pattern": "I've got two hands",
+              "examples": [
+                "I've got two hands",
+                "She has got blue eyes."
+              ]
+            }
+          ],
+          "tip": "Lee los ejemplos y comprueba cómo cambia la estructura."
+        }
+      }
+    },
+    {
+      "sectionId": "english-a1-m092-pronunciation",
+      "sectionKey": "pronunciation",
+      "position": 4,
+      "title": "pronunciation",
+      "exercise": {
+        "exerciseId": "english-a1-m092-pronunciation-ex01",
+        "type": "pronunciation_cards",
+        "items": [
+          {
+            "itemId": "english-a1-m092-pronunciation-ex01-i01",
+            "position": 1,
+            "word": "head",
+            "translation": "cabeza",
+            "pronunciationGuide": "Listen to the en-GB model and keep the final consonant clear.",
+            "audio": "tts:en-GB:head"
+          },
+          {
+            "itemId": "english-a1-m092-pronunciation-ex01-i02",
+            "position": 2,
+            "word": "back",
+            "translation": "espalda",
+            "pronunciationGuide": "Listen to the en-GB model and keep the final consonant clear.",
+            "audio": "tts:en-GB:back"
+          },
+          {
+            "itemId": "english-a1-m092-pronunciation-ex01-i03",
+            "position": 3,
+            "word": "arm",
+            "translation": "brazo",
+            "pronunciationGuide": "Listen to the en-GB model and keep the final consonant clear.",
+            "audio": "tts:en-GB:arm"
+          },
+          {
+            "itemId": "english-a1-m092-pronunciation-ex01-i04",
+            "position": 4,
+            "word": "leg",
+            "translation": "pierna",
+            "pronunciationGuide": "Listen to the en-GB model and keep the final consonant clear.",
+            "audio": "tts:en-GB:leg"
+          },
+          {
+            "itemId": "english-a1-m092-pronunciation-ex01-i05",
+            "position": 5,
+            "word": "hand",
+            "translation": "mano",
+            "pronunciationGuide": "Listen to the en-GB model and keep the final consonant clear.",
+            "audio": "tts:en-GB:hand"
+          },
+          {
+            "itemId": "english-a1-m092-pronunciation-ex01-i06",
+            "position": 6,
+            "word": "foot",
+            "translation": "pie",
+            "pronunciationGuide": "Listen to the en-GB model and keep the final consonant clear.",
+            "audio": "tts:en-GB:foot"
+          },
+          {
+            "itemId": "english-a1-m092-pronunciation-ex01-i07",
+            "position": 7,
+            "word": "stomach",
+            "translation": "estómago",
+            "pronunciationGuide": "Listen to the en-GB model and keep the final consonant clear.",
+            "audio": "tts:en-GB:stomach"
+          },
+          {
+            "itemId": "english-a1-m092-pronunciation-ex01-i08",
+            "position": 8,
+            "word": "throat",
+            "translation": "garganta",
+            "pronunciationGuide": "Listen to the en-GB model and keep the final consonant clear.",
+            "audio": "tts:en-GB:throat"
+          },
+          {
+            "itemId": "english-a1-m092-pronunciation-ex01-i09",
+            "position": 9,
+            "word": "shoulder",
+            "translation": "hombro",
+            "pronunciationGuide": "Listen to the en-GB model and keep the final consonant clear.",
+            "audio": "tts:en-GB:shoulder"
+          },
+          {
+            "itemId": "english-a1-m092-pronunciation-ex01-i10",
+            "position": 10,
+            "word": "knee",
+            "translation": "rodilla",
+            "pronunciationGuide": "Listen to the en-GB model and keep the final consonant clear.",
+            "audio": "tts:en-GB:knee"
+          }
+        ],
+        "focus": "Practica el ritmo y el acento de las palabras clave de Parts of the Body."
+      }
+    },
+    {
+      "sectionId": "english-a1-m092-reading",
+      "sectionKey": "reading",
+      "position": 5,
+      "title": "reading",
+      "exercise": {
+        "exerciseId": "english-a1-m092-reading-ex01",
+        "type": "reading_comprehension",
+        "items": [
+          {
+            "itemId": "english-a1-m092-reading-ex01-i01",
+            "position": 1,
+            "prompt": "Which English sentence means “Esta es mi cabeza.”?",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "This is my head.",
+              "My back hurts.",
+              "Raise your arm, please."
+            ],
+            "correctAnswer": "This is my head."
+          },
+          {
+            "itemId": "english-a1-m092-reading-ex01-i02",
+            "position": 2,
+            "prompt": "Which English sentence means “Me duele la espalda.”?",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "My back hurts.",
+              "Raise your arm, please.",
+              "My leg is tired."
+            ],
+            "correctAnswer": "My back hurts."
+          },
+          {
+            "itemId": "english-a1-m092-reading-ex01-i03",
+            "position": 3,
+            "prompt": "Which English sentence means “Levanta el brazo, por favor.”?",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "Raise your arm, please.",
+              "My leg is tired.",
+              "Wash your hands."
+            ],
+            "correctAnswer": "Raise your arm, please."
+          },
+          {
+            "itemId": "english-a1-m092-reading-ex01-i04",
+            "position": 4,
+            "prompt": "Which English sentence means “Tengo la pierna cansada.”?",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "My leg is tired.",
+              "Wash your hands.",
+              "My foot hurts."
+            ],
+            "correctAnswer": "My leg is tired."
+          },
+          {
+            "itemId": "english-a1-m092-reading-ex01-i05",
+            "position": 5,
+            "prompt": "Which English sentence means “Lávate las manos.”?",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "Wash your hands.",
+              "My foot hurts.",
+              "My stomach hurts today."
+            ],
+            "correctAnswer": "Wash your hands."
+          },
+          {
+            "itemId": "english-a1-m092-reading-ex01-i06",
+            "position": 6,
+            "prompt": "Which English sentence means “Me duele el pie.”?",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "My foot hurts.",
+              "My stomach hurts today.",
+              "I have a sore throat."
+            ],
+            "correctAnswer": "My foot hurts."
+          },
+          {
+            "itemId": "english-a1-m092-reading-ex01-i07",
+            "position": 7,
+            "prompt": "Which English sentence means “Hoy me duele el estómago.”?",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "My stomach hurts today.",
+              "I have a sore throat.",
+              "My shoulder is fine."
+            ],
+            "correctAnswer": "My stomach hurts today."
+          },
+          {
+            "itemId": "english-a1-m092-reading-ex01-i08",
+            "position": 8,
+            "prompt": "Which English sentence means “Me duele la garganta.”?",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "I have a sore throat.",
+              "My shoulder is fine.",
+              "Bend your knee."
+            ],
+            "correctAnswer": "I have a sore throat."
+          },
+          {
+            "itemId": "english-a1-m092-reading-ex01-i09",
+            "position": 9,
+            "prompt": "Which English sentence means “Mi hombro está bien.”?",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "My shoulder is fine.",
+              "Bend your knee.",
+              "This is my head."
+            ],
+            "correctAnswer": "My shoulder is fine."
+          },
+          {
+            "itemId": "english-a1-m092-reading-ex01-i10",
+            "position": 10,
+            "prompt": "Which English sentence means “Dobla la rodilla.”?",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "Bend your knee.",
+              "This is my head.",
+              "My back hurts."
+            ],
+            "correctAnswer": "Bend your knee."
+          }
+        ],
+        "content": {
+          "passageId": "english-a1-m092-reading-passage-01",
+          "passage": "This is my head. My back hurts. Raise your arm, please. My leg is tired. Wash your hands. My foot hurts."
+        }
+      }
+    },
+    {
+      "sectionId": "english-a1-m092-writing",
+      "sectionKey": "writing",
+      "position": 6,
+      "title": "writing",
+      "exercise": {
+        "exerciseId": "english-a1-m092-writing-ex01",
+        "type": "dictation",
+        "items": [
+          {
+            "itemId": "english-a1-m092-writing-ex01-i01",
+            "position": 1,
+            "audio": "tts:en-GB:This is my head.",
+            "expectedAnswer": "This is my head.",
+            "evaluation": {
+              "type": "normalised_text"
+            }
+          },
+          {
+            "itemId": "english-a1-m092-writing-ex01-i02",
+            "position": 2,
+            "audio": "tts:en-GB:My back hurts.",
+            "expectedAnswer": "My back hurts.",
+            "evaluation": {
+              "type": "normalised_text"
+            }
+          },
+          {
+            "itemId": "english-a1-m092-writing-ex01-i03",
+            "position": 3,
+            "audio": "tts:en-GB:Raise your arm, please.",
+            "expectedAnswer": "Raise your arm, please.",
+            "evaluation": {
+              "type": "normalised_text"
+            }
+          },
+          {
+            "itemId": "english-a1-m092-writing-ex01-i04",
+            "position": 4,
+            "audio": "tts:en-GB:My leg is tired.",
+            "expectedAnswer": "My leg is tired.",
+            "evaluation": {
+              "type": "normalised_text"
+            }
+          },
+          {
+            "itemId": "english-a1-m092-writing-ex01-i05",
+            "position": 5,
+            "audio": "tts:en-GB:Wash your hands.",
+            "expectedAnswer": "Wash your hands.",
+            "evaluation": {
+              "type": "normalised_text"
+            }
+          },
+          {
+            "itemId": "english-a1-m092-writing-ex01-i06",
+            "position": 6,
+            "audio": "tts:en-GB:My foot hurts.",
+            "expectedAnswer": "My foot hurts.",
+            "evaluation": {
+              "type": "normalised_text"
+            }
+          },
+          {
+            "itemId": "english-a1-m092-writing-ex01-i07",
+            "position": 7,
+            "audio": "tts:en-GB:My stomach hurts today.",
+            "expectedAnswer": "My stomach hurts today.",
+            "evaluation": {
+              "type": "normalised_text"
+            }
+          },
+          {
+            "itemId": "english-a1-m092-writing-ex01-i08",
+            "position": 8,
+            "audio": "tts:en-GB:I have a sore throat.",
+            "expectedAnswer": "I have a sore throat.",
+            "evaluation": {
+              "type": "normalised_text"
+            }
+          },
+          {
+            "itemId": "english-a1-m092-writing-ex01-i09",
+            "position": 9,
+            "audio": "tts:en-GB:My shoulder is fine.",
+            "expectedAnswer": "My shoulder is fine.",
+            "evaluation": {
+              "type": "normalised_text"
+            }
+          },
+          {
+            "itemId": "english-a1-m092-writing-ex01-i10",
+            "position": 10,
+            "audio": "tts:en-GB:Bend your knee.",
+            "expectedAnswer": "Bend your knee.",
+            "evaluation": {
+              "type": "normalised_text"
+            }
+          }
+        ],
+        "writingTask": "Escribe 5–6 frases sobre parts of the body. Utiliza al menos cinco palabras de la misión y la estructura have got and possessives for body parts.",
+        "modelText": "This is my head. My back hurts. Raise your arm, please. My leg is tired. Wash your hands. My foot hurts."
+      }
+    },
+    {
+      "sectionId": "english-a1-m092-speaking",
+      "sectionKey": "speaking",
+      "position": 7,
+      "title": "speaking",
+      "exercise": {
+        "exerciseId": "english-a1-m092-speaking-ex01",
+        "type": "speaking_prompts",
+        "items": [
+          {
+            "itemId": "english-a1-m092-speaking-ex01-i01",
+            "position": 1,
+            "prompt": "Say a sentence about this situation: Esta es mi cabeza.",
+            "modelAnswer": "This is my head.",
+            "evaluation": {
+              "type": "transcription_feedback",
+              "transcriptionSeparateFromPronunciation": true
+            }
+          },
+          {
+            "itemId": "english-a1-m092-speaking-ex01-i02",
+            "position": 2,
+            "prompt": "Say a sentence about this situation: Me duele la espalda.",
+            "modelAnswer": "My back hurts.",
+            "evaluation": {
+              "type": "transcription_feedback",
+              "transcriptionSeparateFromPronunciation": true
+            }
+          },
+          {
+            "itemId": "english-a1-m092-speaking-ex01-i03",
+            "position": 3,
+            "prompt": "Say a sentence about this situation: Levanta el brazo, por favor.",
+            "modelAnswer": "Raise your arm, please.",
+            "evaluation": {
+              "type": "transcription_feedback",
+              "transcriptionSeparateFromPronunciation": true
+            }
+          },
+          {
+            "itemId": "english-a1-m092-speaking-ex01-i04",
+            "position": 4,
+            "prompt": "Say a sentence about this situation: Tengo la pierna cansada.",
+            "modelAnswer": "My leg is tired.",
+            "evaluation": {
+              "type": "transcription_feedback",
+              "transcriptionSeparateFromPronunciation": true
+            }
+          },
+          {
+            "itemId": "english-a1-m092-speaking-ex01-i05",
+            "position": 5,
+            "prompt": "Say a sentence about this situation: Lávate las manos.",
+            "modelAnswer": "Wash your hands.",
+            "evaluation": {
+              "type": "transcription_feedback",
+              "transcriptionSeparateFromPronunciation": true
+            }
+          },
+          {
+            "itemId": "english-a1-m092-speaking-ex01-i06",
+            "position": 6,
+            "prompt": "Say a sentence about this situation: Me duele el pie.",
+            "modelAnswer": "My foot hurts.",
+            "evaluation": {
+              "type": "transcription_feedback",
+              "transcriptionSeparateFromPronunciation": true
+            }
+          },
+          {
+            "itemId": "english-a1-m092-speaking-ex01-i07",
+            "position": 7,
+            "prompt": "Say a sentence about this situation: Hoy me duele el estómago.",
+            "modelAnswer": "My stomach hurts today.",
+            "evaluation": {
+              "type": "transcription_feedback",
+              "transcriptionSeparateFromPronunciation": true
+            }
+          },
+          {
+            "itemId": "english-a1-m092-speaking-ex01-i08",
+            "position": 8,
+            "prompt": "Say a sentence about this situation: Me duele la garganta.",
+            "modelAnswer": "I have a sore throat.",
+            "evaluation": {
+              "type": "transcription_feedback",
+              "transcriptionSeparateFromPronunciation": true
+            }
+          },
+          {
+            "itemId": "english-a1-m092-speaking-ex01-i09",
+            "position": 9,
+            "prompt": "Say a sentence about this situation: Mi hombro está bien.",
+            "modelAnswer": "My shoulder is fine.",
+            "evaluation": {
+              "type": "transcription_feedback",
+              "transcriptionSeparateFromPronunciation": true
+            }
+          },
+          {
+            "itemId": "english-a1-m092-speaking-ex01-i10",
+            "position": 10,
+            "prompt": "Say a sentence about this situation: Dobla la rodilla.",
+            "modelAnswer": "Bend your knee.",
+            "evaluation": {
+              "type": "transcription_feedback",
+              "transcriptionSeparateFromPronunciation": true
+            }
+          }
+        ]
+      }
+    },
+    {
+      "sectionId": "english-a1-m092-listening",
+      "sectionKey": "listening",
+      "position": 8,
+      "title": "listening",
+      "exercise": {
+        "exerciseId": "english-a1-m092-listening-ex01",
+        "type": "listening_gap_fill",
+        "items": [
+          {
+            "itemId": "english-a1-m092-listening-ex01-i01",
+            "position": 1,
+            "gapToken": "[[gap-01]]",
+            "expectedWordId": "english-a1-m092-listening-word-01"
+          },
+          {
+            "itemId": "english-a1-m092-listening-ex01-i02",
+            "position": 2,
+            "gapToken": "[[gap-02]]",
+            "expectedWordId": "english-a1-m092-listening-word-02"
+          },
+          {
+            "itemId": "english-a1-m092-listening-ex01-i03",
+            "position": 3,
+            "gapToken": "[[gap-03]]",
+            "expectedWordId": "english-a1-m092-listening-word-03"
+          },
+          {
+            "itemId": "english-a1-m092-listening-ex01-i04",
+            "position": 4,
+            "gapToken": "[[gap-04]]",
+            "expectedWordId": "english-a1-m092-listening-word-04"
+          },
+          {
+            "itemId": "english-a1-m092-listening-ex01-i05",
+            "position": 5,
+            "gapToken": "[[gap-05]]",
+            "expectedWordId": "english-a1-m092-listening-word-05"
+          },
+          {
+            "itemId": "english-a1-m092-listening-ex01-i06",
+            "position": 6,
+            "gapToken": "[[gap-06]]",
+            "expectedWordId": "english-a1-m092-listening-word-06"
+          },
+          {
+            "itemId": "english-a1-m092-listening-ex01-i07",
+            "position": 7,
+            "gapToken": "[[gap-07]]",
+            "expectedWordId": "english-a1-m092-listening-word-07"
+          },
+          {
+            "itemId": "english-a1-m092-listening-ex01-i08",
+            "position": 8,
+            "gapToken": "[[gap-08]]",
+            "expectedWordId": "english-a1-m092-listening-word-08"
+          },
+          {
+            "itemId": "english-a1-m092-listening-ex01-i09",
+            "position": 9,
+            "gapToken": "[[gap-09]]",
+            "expectedWordId": "english-a1-m092-listening-word-09"
+          },
+          {
+            "itemId": "english-a1-m092-listening-ex01-i10",
+            "position": 10,
+            "gapToken": "[[gap-10]]",
+            "expectedWordId": "english-a1-m092-listening-word-10"
+          }
+        ],
+        "content": {
+          "audio": "tts:en-GB:The key words for Parts of the Body are: head, back, arm, leg, hand, foot, stomach, throat, shoulder, knee. Listen and repeat each word carefully.",
+          "audioLocale": "en-GB",
+          "transcriptTemplate": "The key words for Parts of the Body are: [[gap-01]], [[gap-02]], [[gap-03]], [[gap-04]], [[gap-05]], [[gap-06]], [[gap-07]], [[gap-08]], [[gap-09]], [[gap-10]]. Listen and repeat each word carefully.",
+          "wordBank": [
+            {
+              "wordId": "english-a1-m092-listening-word-01",
+              "word": "head"
+            },
+            {
+              "wordId": "english-a1-m092-listening-word-02",
+              "word": "back"
+            },
+            {
+              "wordId": "english-a1-m092-listening-word-03",
+              "word": "arm"
+            },
+            {
+              "wordId": "english-a1-m092-listening-word-04",
+              "word": "leg"
+            },
+            {
+              "wordId": "english-a1-m092-listening-word-05",
+              "word": "hand"
+            },
+            {
+              "wordId": "english-a1-m092-listening-word-06",
+              "word": "foot"
+            },
+            {
+              "wordId": "english-a1-m092-listening-word-07",
+              "word": "stomach"
+            },
+            {
+              "wordId": "english-a1-m092-listening-word-08",
+              "word": "throat"
+            },
+            {
+              "wordId": "english-a1-m092-listening-word-09",
+              "word": "shoulder"
+            },
+            {
+              "wordId": "english-a1-m092-listening-word-10",
+              "word": "knee"
+            }
+          ],
+          "interaction": "select_place_move_replace"
+        }
+      }
+    }
+  ]
+}

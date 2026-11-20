@@ -1,0 +1,1205 @@
+{
+  "schemaVersion": "1.2.0",
+  "contentVersion": 1,
+  "course": {
+    "courseId": "english-a1",
+    "level": "A1",
+    "language": "en-GB"
+  },
+  "unit": {
+    "unitId": "english-a1-unit-10",
+    "courseId": "english-a1",
+    "position": 10,
+    "title": "Health, weather and everyday interaction"
+  },
+  "mission": {
+    "missionId": "english-a1-m096",
+    "unitId": "english-a1-unit-10",
+    "position": 96,
+    "title": "Making Arrangements"
+  },
+  "sections": [
+    {
+      "sectionId": "english-a1-m096-explore",
+      "sectionKey": "explore",
+      "position": 1,
+      "title": "explore",
+      "exercise": {
+        "exerciseId": "english-a1-m096-explore-ex01",
+        "type": "vocabulary_pairs",
+        "items": [
+          {
+            "itemId": "english-a1-m096-explore-ex01-i01",
+            "position": 1,
+            "english": "Are you free?",
+            "spanish": "¿Estás libre?",
+            "audio": "tts:en-GB:Are you free?"
+          },
+          {
+            "itemId": "english-a1-m096-explore-ex01-i02",
+            "position": 2,
+            "english": "what time",
+            "spanish": "a qué hora",
+            "audio": "tts:en-GB:what time"
+          },
+          {
+            "itemId": "english-a1-m096-explore-ex01-i03",
+            "position": 3,
+            "english": "where",
+            "spanish": "dónde",
+            "audio": "tts:en-GB:where"
+          },
+          {
+            "itemId": "english-a1-m096-explore-ex01-i04",
+            "position": 4,
+            "english": "meet",
+            "spanish": "quedar",
+            "audio": "tts:en-GB:meet"
+          },
+          {
+            "itemId": "english-a1-m096-explore-ex01-i05",
+            "position": 5,
+            "english": "shall we",
+            "spanish": "¿te parece si...?",
+            "audio": "tts:en-GB:shall we"
+          },
+          {
+            "itemId": "english-a1-m096-explore-ex01-i06",
+            "position": 6,
+            "english": "see you",
+            "spanish": "nos vemos",
+            "audio": "tts:en-GB:see you"
+          },
+          {
+            "itemId": "english-a1-m096-explore-ex01-i07",
+            "position": 7,
+            "english": "Saturday",
+            "spanish": "sábado",
+            "audio": "tts:en-GB:Saturday"
+          },
+          {
+            "itemId": "english-a1-m096-explore-ex01-i08",
+            "position": 8,
+            "english": "at six",
+            "spanish": "a las seis",
+            "audio": "tts:en-GB:at six"
+          },
+          {
+            "itemId": "english-a1-m096-explore-ex01-i09",
+            "position": 9,
+            "english": "café",
+            "spanish": "cafetería",
+            "audio": "tts:en-GB:café"
+          },
+          {
+            "itemId": "english-a1-m096-explore-ex01-i10",
+            "position": 10,
+            "english": "sorry",
+            "spanish": "lo siento",
+            "audio": "tts:en-GB:sorry"
+          }
+        ],
+        "theory": {
+          "title": "Vocabulary: Making Arrangements",
+          "explanation": "Explora diez palabras y expresiones sobre making arrangements. Escucha el modelo británico y relaciona cada palabra con su significado.",
+          "patterns": [
+            {
+              "label": "Useful language",
+              "pattern": "Short question + short answer",
+              "examples": [
+                "Are you free on Saturday?",
+                "What time shall we meet?",
+                "Where shall we meet?"
+              ]
+            }
+          ],
+          "tip": "Repite las expresiones y crea un ejemplo relacionado con tu vida."
+        }
+      }
+    },
+    {
+      "sectionId": "english-a1-m096-practice",
+      "sectionKey": "practice",
+      "position": 2,
+      "title": "practice",
+      "exercise": {
+        "exerciseId": "english-a1-m096-practice-ex01",
+        "type": "mixed_practice",
+        "items": [
+          {
+            "itemId": "english-a1-m096-practice-ex01-i01",
+            "position": 1,
+            "taskType": "translation_multiple_choice",
+            "prompt": "Traduce al español: “Are you free on Saturday?”",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "¿Estás libre el sábado?",
+              "Quedemos a las seis.",
+              "Lo siento, estoy ocupado."
+            ],
+            "correctAnswer": "¿Estás libre el sábado?",
+            "sourceEnglish": "Are you free on Saturday?"
+          },
+          {
+            "itemId": "english-a1-m096-practice-ex01-i02",
+            "position": 2,
+            "taskType": "translation_multiple_choice",
+            "prompt": "Traduce al español: “What time shall we meet?”",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "¿A qué hora quedamos?",
+              "¿Quedamos en la cafetería?",
+              "¿Estás libre esta tarde?"
+            ],
+            "correctAnswer": "¿A qué hora quedamos?",
+            "sourceEnglish": "What time shall we meet?"
+          },
+          {
+            "itemId": "english-a1-m096-practice-ex01-i03",
+            "position": 3,
+            "taskType": "translation_multiple_choice",
+            "prompt": "Traduce al español: “Where shall we meet?”",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "¿Dónde quedamos?",
+              "Hasta mañana.",
+              "Quedemos fuera de la estación."
+            ],
+            "correctAnswer": "¿Dónde quedamos?",
+            "sourceEnglish": "Where shall we meet?"
+          },
+          {
+            "itemId": "english-a1-m096-practice-ex01-i04",
+            "position": 4,
+            "taskType": "translation_multiple_choice",
+            "prompt": "Traduce al español: “Let's meet at six.”",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "Quedemos a las seis.",
+              "Lo siento, estoy ocupado.",
+              "¡Genial! Nos vemos el sábado."
+            ],
+            "correctAnswer": "Quedemos a las seis.",
+            "sourceEnglish": "Let's meet at six."
+          },
+          {
+            "itemId": "english-a1-m096-practice-ex01-i05",
+            "position": 5,
+            "taskType": "translation_multiple_choice",
+            "prompt": "Traduce al español: “Shall we meet at the café?”",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "¿Quedamos en la cafetería?",
+              "¿Estás libre esta tarde?",
+              "¿Estás libre el sábado?"
+            ],
+            "correctAnswer": "¿Quedamos en la cafetería?",
+            "sourceEnglish": "Shall we meet at the café?"
+          },
+          {
+            "itemId": "english-a1-m096-practice-ex01-i06",
+            "position": 6,
+            "taskType": "translation_multiple_choice",
+            "prompt": "Traduce al español: “See you tomorrow.”",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "Hasta mañana.",
+              "Quedemos fuera de la estación.",
+              "¿A qué hora quedamos?"
+            ],
+            "correctAnswer": "Hasta mañana.",
+            "sourceEnglish": "See you tomorrow."
+          },
+          {
+            "itemId": "english-a1-m096-practice-ex01-i07",
+            "position": 7,
+            "taskType": "translation_multiple_choice",
+            "prompt": "Traduce al español: “Sorry, I am busy.”",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "Lo siento, estoy ocupado.",
+              "¡Genial! Nos vemos el sábado.",
+              "¿Dónde quedamos?"
+            ],
+            "correctAnswer": "Lo siento, estoy ocupado.",
+            "sourceEnglish": "Sorry, I am busy."
+          },
+          {
+            "itemId": "english-a1-m096-practice-ex01-i08",
+            "position": 8,
+            "taskType": "translation_multiple_choice",
+            "prompt": "Traduce al español: “Are you free this afternoon?”",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "¿Estás libre esta tarde?",
+              "¿Estás libre el sábado?",
+              "Quedemos a las seis."
+            ],
+            "correctAnswer": "¿Estás libre esta tarde?",
+            "sourceEnglish": "Are you free this afternoon?"
+          },
+          {
+            "itemId": "english-a1-m096-practice-ex01-i09",
+            "position": 9,
+            "taskType": "translation_multiple_choice",
+            "prompt": "Traduce al español: “Let's meet outside the station.”",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "Quedemos fuera de la estación.",
+              "¿A qué hora quedamos?",
+              "¿Quedamos en la cafetería?"
+            ],
+            "correctAnswer": "Quedemos fuera de la estación.",
+            "sourceEnglish": "Let's meet outside the station."
+          },
+          {
+            "itemId": "english-a1-m096-practice-ex01-i10",
+            "position": 10,
+            "taskType": "translation_multiple_choice",
+            "prompt": "Traduce al español: “Great! See you on Saturday.”",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "¡Genial! Nos vemos el sábado.",
+              "¿Dónde quedamos?",
+              "Hasta mañana."
+            ],
+            "correctAnswer": "¡Genial! Nos vemos el sábado.",
+            "sourceEnglish": "Great! See you on Saturday."
+          },
+          {
+            "itemId": "english-a1-m096-practice-ex01-i11",
+            "position": 11,
+            "taskType": "listening_translation_multiple_choice",
+            "prompt": "Escucha el inglés y elige su significado.",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "¿Estás libre el sábado?",
+              "¿Quedamos en la cafetería?",
+              "¿Estás libre esta tarde?"
+            ],
+            "correctAnswer": "¿Estás libre el sábado?",
+            "sourceEnglish": "Are you free on Saturday?"
+          },
+          {
+            "itemId": "english-a1-m096-practice-ex01-i12",
+            "position": 12,
+            "taskType": "listening_translation_multiple_choice",
+            "prompt": "Escucha el inglés y elige su significado.",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "¿A qué hora quedamos?",
+              "Hasta mañana.",
+              "Quedemos fuera de la estación."
+            ],
+            "correctAnswer": "¿A qué hora quedamos?",
+            "sourceEnglish": "What time shall we meet?"
+          },
+          {
+            "itemId": "english-a1-m096-practice-ex01-i13",
+            "position": 13,
+            "taskType": "listening_translation_multiple_choice",
+            "prompt": "Escucha el inglés y elige su significado.",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "¿Dónde quedamos?",
+              "Lo siento, estoy ocupado.",
+              "¡Genial! Nos vemos el sábado."
+            ],
+            "correctAnswer": "¿Dónde quedamos?",
+            "sourceEnglish": "Where shall we meet?"
+          },
+          {
+            "itemId": "english-a1-m096-practice-ex01-i14",
+            "position": 14,
+            "taskType": "listening_translation_multiple_choice",
+            "prompt": "Escucha el inglés y elige su significado.",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "Quedemos a las seis.",
+              "¿Estás libre esta tarde?",
+              "¿Estás libre el sábado?"
+            ],
+            "correctAnswer": "Quedemos a las seis.",
+            "sourceEnglish": "Let's meet at six."
+          },
+          {
+            "itemId": "english-a1-m096-practice-ex01-i15",
+            "position": 15,
+            "taskType": "listening_translation_multiple_choice",
+            "prompt": "Escucha el inglés y elige su significado.",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "¿Quedamos en la cafetería?",
+              "Quedemos fuera de la estación.",
+              "¿A qué hora quedamos?"
+            ],
+            "correctAnswer": "¿Quedamos en la cafetería?",
+            "sourceEnglish": "Shall we meet at the café?"
+          },
+          {
+            "itemId": "english-a1-m096-practice-ex01-i16",
+            "position": 16,
+            "taskType": "listening_translation_multiple_choice",
+            "prompt": "Escucha el inglés y elige su significado.",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "Hasta mañana.",
+              "¡Genial! Nos vemos el sábado.",
+              "¿Dónde quedamos?"
+            ],
+            "correctAnswer": "Hasta mañana.",
+            "sourceEnglish": "See you tomorrow."
+          },
+          {
+            "itemId": "english-a1-m096-practice-ex01-i17",
+            "position": 17,
+            "taskType": "listening_translation_multiple_choice",
+            "prompt": "Escucha el inglés y elige su significado.",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "Lo siento, estoy ocupado.",
+              "¿Estás libre el sábado?",
+              "Quedemos a las seis."
+            ],
+            "correctAnswer": "Lo siento, estoy ocupado.",
+            "sourceEnglish": "Sorry, I am busy."
+          },
+          {
+            "itemId": "english-a1-m096-practice-ex01-i18",
+            "position": 18,
+            "taskType": "listening_translation_multiple_choice",
+            "prompt": "Escucha el inglés y elige su significado.",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "¿Estás libre esta tarde?",
+              "¿A qué hora quedamos?",
+              "¿Quedamos en la cafetería?"
+            ],
+            "correctAnswer": "¿Estás libre esta tarde?",
+            "sourceEnglish": "Are you free this afternoon?"
+          },
+          {
+            "itemId": "english-a1-m096-practice-ex01-i19",
+            "position": 19,
+            "taskType": "listening_translation_multiple_choice",
+            "prompt": "Escucha el inglés y elige su significado.",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "Quedemos fuera de la estación.",
+              "¿Dónde quedamos?",
+              "Hasta mañana."
+            ],
+            "correctAnswer": "Quedemos fuera de la estación.",
+            "sourceEnglish": "Let's meet outside the station."
+          },
+          {
+            "itemId": "english-a1-m096-practice-ex01-i20",
+            "position": 20,
+            "taskType": "listening_translation_multiple_choice",
+            "prompt": "Escucha el inglés y elige su significado.",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "¡Genial! Nos vemos el sábado.",
+              "Quedemos a las seis.",
+              "Lo siento, estoy ocupado."
+            ],
+            "correctAnswer": "¡Genial! Nos vemos el sábado.",
+            "sourceEnglish": "Great! See you on Saturday."
+          }
+        ]
+      }
+    },
+    {
+      "sectionId": "english-a1-m096-grammar",
+      "sectionKey": "grammar",
+      "position": 3,
+      "title": "grammar",
+      "exercise": {
+        "exerciseId": "english-a1-m096-grammar-ex01",
+        "type": "grammar",
+        "items": [
+          {
+            "itemId": "english-a1-m096-grammar-ex01-i01",
+            "position": 1,
+            "prompt": "I ___ meeting Anna tomorrow.",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "am",
+              "is",
+              "are"
+            ],
+            "correctAnswer": "am"
+          },
+          {
+            "itemId": "english-a1-m096-grammar-ex01-i02",
+            "position": 2,
+            "prompt": "She ___ coming tonight.",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "is",
+              "are",
+              "am"
+            ],
+            "correctAnswer": "is"
+          },
+          {
+            "itemId": "english-a1-m096-grammar-ex01-i03",
+            "position": 3,
+            "prompt": "We ___ having a party on Friday.",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "are",
+              "is",
+              "am"
+            ],
+            "correctAnswer": "are"
+          },
+          {
+            "itemId": "english-a1-m096-grammar-ex01-i04",
+            "position": 4,
+            "prompt": "___ you travelling next week?",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "Are",
+              "Is",
+              "Am"
+            ],
+            "correctAnswer": "Are"
+          },
+          {
+            "itemId": "english-a1-m096-grammar-ex01-i05",
+            "position": 5,
+            "prompt": "He is ___ his friends later.",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "meeting",
+              "meet",
+              "meets"
+            ],
+            "correctAnswer": "meeting"
+          },
+          {
+            "itemId": "english-a1-m096-grammar-ex01-i06",
+            "position": 6,
+            "prompt": "They are not ___ today.",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "coming",
+              "come",
+              "comes"
+            ],
+            "correctAnswer": "coming"
+          },
+          {
+            "itemId": "english-a1-m096-grammar-ex01-i07",
+            "position": 7,
+            "prompt": "What ___ you doing tomorrow?",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "are",
+              "is",
+              "am"
+            ],
+            "correctAnswer": "are"
+          },
+          {
+            "itemId": "english-a1-m096-grammar-ex01-i08",
+            "position": 8,
+            "prompt": "My parents ___ arriving at six.",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "are",
+              "is",
+              "am"
+            ],
+            "correctAnswer": "are"
+          },
+          {
+            "itemId": "english-a1-m096-grammar-ex01-i09",
+            "position": 9,
+            "prompt": "I am ___ dinner with Sam tonight.",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "having",
+              "have",
+              "has"
+            ],
+            "correctAnswer": "having"
+          },
+          {
+            "itemId": "english-a1-m096-grammar-ex01-i10",
+            "position": 10,
+            "prompt": "Is she ___ to the party?",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "coming",
+              "come",
+              "comes"
+            ],
+            "correctAnswer": "coming"
+          }
+        ],
+        "theory": {
+          "title": "Present continuous for future arrangements",
+          "explanation": "Podemos usar el presente continuo con una expresión de tiempo futuro para hablar de planes ya organizados: I'm meeting Anna tomorrow.",
+          "patterns": [
+            {
+              "label": "Model",
+              "pattern": "I'm meeting my friends on Saturday",
+              "examples": [
+                "I'm meeting my friends on Saturday",
+                "Are you coming tonight?"
+              ]
+            }
+          ],
+          "tip": "Lee los ejemplos y comprueba cómo cambia la estructura."
+        }
+      }
+    },
+    {
+      "sectionId": "english-a1-m096-pronunciation",
+      "sectionKey": "pronunciation",
+      "position": 4,
+      "title": "pronunciation",
+      "exercise": {
+        "exerciseId": "english-a1-m096-pronunciation-ex01",
+        "type": "pronunciation_cards",
+        "items": [
+          {
+            "itemId": "english-a1-m096-pronunciation-ex01-i01",
+            "position": 1,
+            "word": "Are you free?",
+            "translation": "¿Estás libre?",
+            "pronunciationGuide": "Listen to the phrase as one unit and notice its main stress.",
+            "audio": "tts:en-GB:Are you free?"
+          },
+          {
+            "itemId": "english-a1-m096-pronunciation-ex01-i02",
+            "position": 2,
+            "word": "what time",
+            "translation": "a qué hora",
+            "pronunciationGuide": "Listen to the phrase as one unit and notice its main stress.",
+            "audio": "tts:en-GB:what time"
+          },
+          {
+            "itemId": "english-a1-m096-pronunciation-ex01-i03",
+            "position": 3,
+            "word": "where",
+            "translation": "dónde",
+            "pronunciationGuide": "Listen to the en-GB model and keep the final consonant clear.",
+            "audio": "tts:en-GB:where"
+          },
+          {
+            "itemId": "english-a1-m096-pronunciation-ex01-i04",
+            "position": 4,
+            "word": "meet",
+            "translation": "quedar",
+            "pronunciationGuide": "Listen to the en-GB model and keep the final consonant clear.",
+            "audio": "tts:en-GB:meet"
+          },
+          {
+            "itemId": "english-a1-m096-pronunciation-ex01-i05",
+            "position": 5,
+            "word": "shall we",
+            "translation": "¿te parece si...?",
+            "pronunciationGuide": "Listen to the phrase as one unit and notice its main stress.",
+            "audio": "tts:en-GB:shall we"
+          },
+          {
+            "itemId": "english-a1-m096-pronunciation-ex01-i06",
+            "position": 6,
+            "word": "see you",
+            "translation": "nos vemos",
+            "pronunciationGuide": "Listen to the phrase as one unit and notice its main stress.",
+            "audio": "tts:en-GB:see you"
+          },
+          {
+            "itemId": "english-a1-m096-pronunciation-ex01-i07",
+            "position": 7,
+            "word": "Saturday",
+            "translation": "sábado",
+            "pronunciationGuide": "Listen to the en-GB model and keep the final consonant clear.",
+            "audio": "tts:en-GB:Saturday"
+          },
+          {
+            "itemId": "english-a1-m096-pronunciation-ex01-i08",
+            "position": 8,
+            "word": "at six",
+            "translation": "a las seis",
+            "pronunciationGuide": "Listen to the phrase as one unit and notice its main stress.",
+            "audio": "tts:en-GB:at six"
+          },
+          {
+            "itemId": "english-a1-m096-pronunciation-ex01-i09",
+            "position": 9,
+            "word": "café",
+            "translation": "cafetería",
+            "pronunciationGuide": "Listen to the en-GB model and keep the final consonant clear.",
+            "audio": "tts:en-GB:café"
+          },
+          {
+            "itemId": "english-a1-m096-pronunciation-ex01-i10",
+            "position": 10,
+            "word": "sorry",
+            "translation": "lo siento",
+            "pronunciationGuide": "Listen to the en-GB model and keep the final consonant clear.",
+            "audio": "tts:en-GB:sorry"
+          }
+        ],
+        "focus": "Practica el ritmo y el acento de las palabras clave de Making Arrangements."
+      }
+    },
+    {
+      "sectionId": "english-a1-m096-reading",
+      "sectionKey": "reading",
+      "position": 5,
+      "title": "reading",
+      "exercise": {
+        "exerciseId": "english-a1-m096-reading-ex01",
+        "type": "reading_comprehension",
+        "items": [
+          {
+            "itemId": "english-a1-m096-reading-ex01-i01",
+            "position": 1,
+            "prompt": "Which English sentence means “¿Estás libre el sábado?”?",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "Are you free on Saturday?",
+              "What time shall we meet?",
+              "Where shall we meet?"
+            ],
+            "correctAnswer": "Are you free on Saturday?"
+          },
+          {
+            "itemId": "english-a1-m096-reading-ex01-i02",
+            "position": 2,
+            "prompt": "Which English sentence means “¿A qué hora quedamos?”?",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "What time shall we meet?",
+              "Where shall we meet?",
+              "Let's meet at six."
+            ],
+            "correctAnswer": "What time shall we meet?"
+          },
+          {
+            "itemId": "english-a1-m096-reading-ex01-i03",
+            "position": 3,
+            "prompt": "Which English sentence means “¿Dónde quedamos?”?",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "Where shall we meet?",
+              "Let's meet at six.",
+              "Shall we meet at the café?"
+            ],
+            "correctAnswer": "Where shall we meet?"
+          },
+          {
+            "itemId": "english-a1-m096-reading-ex01-i04",
+            "position": 4,
+            "prompt": "Which English sentence means “Quedemos a las seis.”?",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "Let's meet at six.",
+              "Shall we meet at the café?",
+              "See you tomorrow."
+            ],
+            "correctAnswer": "Let's meet at six."
+          },
+          {
+            "itemId": "english-a1-m096-reading-ex01-i05",
+            "position": 5,
+            "prompt": "Which English sentence means “¿Quedamos en la cafetería?”?",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "Shall we meet at the café?",
+              "See you tomorrow.",
+              "Sorry, I am busy."
+            ],
+            "correctAnswer": "Shall we meet at the café?"
+          },
+          {
+            "itemId": "english-a1-m096-reading-ex01-i06",
+            "position": 6,
+            "prompt": "Which English sentence means “Hasta mañana.”?",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "See you tomorrow.",
+              "Sorry, I am busy.",
+              "Are you free this afternoon?"
+            ],
+            "correctAnswer": "See you tomorrow."
+          },
+          {
+            "itemId": "english-a1-m096-reading-ex01-i07",
+            "position": 7,
+            "prompt": "Which English sentence means “Lo siento, estoy ocupado.”?",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "Sorry, I am busy.",
+              "Are you free this afternoon?",
+              "Let's meet outside the station."
+            ],
+            "correctAnswer": "Sorry, I am busy."
+          },
+          {
+            "itemId": "english-a1-m096-reading-ex01-i08",
+            "position": 8,
+            "prompt": "Which English sentence means “¿Estás libre esta tarde?”?",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "Are you free this afternoon?",
+              "Let's meet outside the station.",
+              "Great! See you on Saturday."
+            ],
+            "correctAnswer": "Are you free this afternoon?"
+          },
+          {
+            "itemId": "english-a1-m096-reading-ex01-i09",
+            "position": 9,
+            "prompt": "Which English sentence means “Quedemos fuera de la estación.”?",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "Let's meet outside the station.",
+              "Great! See you on Saturday.",
+              "Are you free on Saturday?"
+            ],
+            "correctAnswer": "Let's meet outside the station."
+          },
+          {
+            "itemId": "english-a1-m096-reading-ex01-i10",
+            "position": 10,
+            "prompt": "Which English sentence means “¡Genial! Nos vemos el sábado.”?",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "Great! See you on Saturday.",
+              "Are you free on Saturday?",
+              "What time shall we meet?"
+            ],
+            "correctAnswer": "Great! See you on Saturday."
+          }
+        ],
+        "content": {
+          "passageId": "english-a1-m096-reading-passage-01",
+          "passage": "Are you free on Saturday? What time shall we meet? Where shall we meet? Let's meet at six. Shall we meet at the café? See you tomorrow."
+        }
+      }
+    },
+    {
+      "sectionId": "english-a1-m096-writing",
+      "sectionKey": "writing",
+      "position": 6,
+      "title": "writing",
+      "exercise": {
+        "exerciseId": "english-a1-m096-writing-ex01",
+        "type": "dictation",
+        "items": [
+          {
+            "itemId": "english-a1-m096-writing-ex01-i01",
+            "position": 1,
+            "audio": "tts:en-GB:Are you free on Saturday?",
+            "expectedAnswer": "Are you free on Saturday?",
+            "evaluation": {
+              "type": "normalised_text"
+            }
+          },
+          {
+            "itemId": "english-a1-m096-writing-ex01-i02",
+            "position": 2,
+            "audio": "tts:en-GB:What time shall we meet?",
+            "expectedAnswer": "What time shall we meet?",
+            "evaluation": {
+              "type": "normalised_text"
+            }
+          },
+          {
+            "itemId": "english-a1-m096-writing-ex01-i03",
+            "position": 3,
+            "audio": "tts:en-GB:Where shall we meet?",
+            "expectedAnswer": "Where shall we meet?",
+            "evaluation": {
+              "type": "normalised_text"
+            }
+          },
+          {
+            "itemId": "english-a1-m096-writing-ex01-i04",
+            "position": 4,
+            "audio": "tts:en-GB:Let's meet at six.",
+            "expectedAnswer": "Let's meet at six.",
+            "evaluation": {
+              "type": "normalised_text"
+            }
+          },
+          {
+            "itemId": "english-a1-m096-writing-ex01-i05",
+            "position": 5,
+            "audio": "tts:en-GB:Shall we meet at the café?",
+            "expectedAnswer": "Shall we meet at the café?",
+            "evaluation": {
+              "type": "normalised_text"
+            }
+          },
+          {
+            "itemId": "english-a1-m096-writing-ex01-i06",
+            "position": 6,
+            "audio": "tts:en-GB:See you tomorrow.",
+            "expectedAnswer": "See you tomorrow.",
+            "evaluation": {
+              "type": "normalised_text"
+            }
+          },
+          {
+            "itemId": "english-a1-m096-writing-ex01-i07",
+            "position": 7,
+            "audio": "tts:en-GB:Sorry, I am busy.",
+            "expectedAnswer": "Sorry, I am busy.",
+            "evaluation": {
+              "type": "normalised_text"
+            }
+          },
+          {
+            "itemId": "english-a1-m096-writing-ex01-i08",
+            "position": 8,
+            "audio": "tts:en-GB:Are you free this afternoon?",
+            "expectedAnswer": "Are you free this afternoon?",
+            "evaluation": {
+              "type": "normalised_text"
+            }
+          },
+          {
+            "itemId": "english-a1-m096-writing-ex01-i09",
+            "position": 9,
+            "audio": "tts:en-GB:Let's meet outside the station.",
+            "expectedAnswer": "Let's meet outside the station.",
+            "evaluation": {
+              "type": "normalised_text"
+            }
+          },
+          {
+            "itemId": "english-a1-m096-writing-ex01-i10",
+            "position": 10,
+            "audio": "tts:en-GB:Great! See you on Saturday.",
+            "expectedAnswer": "Great! See you on Saturday.",
+            "evaluation": {
+              "type": "normalised_text"
+            }
+          }
+        ],
+        "writingTask": "Escribe 5–6 frases sobre making arrangements. Utiliza al menos cinco palabras de la misión y la estructura present continuous for future arrangements.",
+        "modelText": "Are you free on Saturday? What time shall we meet? Where shall we meet? Let's meet at six. Shall we meet at the café? See you tomorrow."
+      }
+    },
+    {
+      "sectionId": "english-a1-m096-speaking",
+      "sectionKey": "speaking",
+      "position": 7,
+      "title": "speaking",
+      "exercise": {
+        "exerciseId": "english-a1-m096-speaking-ex01",
+        "type": "speaking_prompts",
+        "items": [
+          {
+            "itemId": "english-a1-m096-speaking-ex01-i01",
+            "position": 1,
+            "prompt": "Say a sentence about this situation: ¿Estás libre el sábado?",
+            "modelAnswer": "Are you free on Saturday?",
+            "evaluation": {
+              "type": "transcription_feedback",
+              "transcriptionSeparateFromPronunciation": true
+            }
+          },
+          {
+            "itemId": "english-a1-m096-speaking-ex01-i02",
+            "position": 2,
+            "prompt": "Say a sentence about this situation: ¿A qué hora quedamos?",
+            "modelAnswer": "What time shall we meet?",
+            "evaluation": {
+              "type": "transcription_feedback",
+              "transcriptionSeparateFromPronunciation": true
+            }
+          },
+          {
+            "itemId": "english-a1-m096-speaking-ex01-i03",
+            "position": 3,
+            "prompt": "Say a sentence about this situation: ¿Dónde quedamos?",
+            "modelAnswer": "Where shall we meet?",
+            "evaluation": {
+              "type": "transcription_feedback",
+              "transcriptionSeparateFromPronunciation": true
+            }
+          },
+          {
+            "itemId": "english-a1-m096-speaking-ex01-i04",
+            "position": 4,
+            "prompt": "Say a sentence about this situation: Quedemos a las seis.",
+            "modelAnswer": "Let's meet at six.",
+            "evaluation": {
+              "type": "transcription_feedback",
+              "transcriptionSeparateFromPronunciation": true
+            }
+          },
+          {
+            "itemId": "english-a1-m096-speaking-ex01-i05",
+            "position": 5,
+            "prompt": "Say a sentence about this situation: ¿Quedamos en la cafetería?",
+            "modelAnswer": "Shall we meet at the café?",
+            "evaluation": {
+              "type": "transcription_feedback",
+              "transcriptionSeparateFromPronunciation": true
+            }
+          },
+          {
+            "itemId": "english-a1-m096-speaking-ex01-i06",
+            "position": 6,
+            "prompt": "Say a sentence about this situation: Hasta mañana.",
+            "modelAnswer": "See you tomorrow.",
+            "evaluation": {
+              "type": "transcription_feedback",
+              "transcriptionSeparateFromPronunciation": true
+            }
+          },
+          {
+            "itemId": "english-a1-m096-speaking-ex01-i07",
+            "position": 7,
+            "prompt": "Say a sentence about this situation: Lo siento, estoy ocupado.",
+            "modelAnswer": "Sorry, I am busy.",
+            "evaluation": {
+              "type": "transcription_feedback",
+              "transcriptionSeparateFromPronunciation": true
+            }
+          },
+          {
+            "itemId": "english-a1-m096-speaking-ex01-i08",
+            "position": 8,
+            "prompt": "Say a sentence about this situation: ¿Estás libre esta tarde?",
+            "modelAnswer": "Are you free this afternoon?",
+            "evaluation": {
+              "type": "transcription_feedback",
+              "transcriptionSeparateFromPronunciation": true
+            }
+          },
+          {
+            "itemId": "english-a1-m096-speaking-ex01-i09",
+            "position": 9,
+            "prompt": "Say a sentence about this situation: Quedemos fuera de la estación.",
+            "modelAnswer": "Let's meet outside the station.",
+            "evaluation": {
+              "type": "transcription_feedback",
+              "transcriptionSeparateFromPronunciation": true
+            }
+          },
+          {
+            "itemId": "english-a1-m096-speaking-ex01-i10",
+            "position": 10,
+            "prompt": "Say a sentence about this situation: ¡Genial! Nos vemos el sábado.",
+            "modelAnswer": "Great! See you on Saturday.",
+            "evaluation": {
+              "type": "transcription_feedback",
+              "transcriptionSeparateFromPronunciation": true
+            }
+          }
+        ]
+      }
+    },
+    {
+      "sectionId": "english-a1-m096-listening",
+      "sectionKey": "listening",
+      "position": 8,
+      "title": "listening",
+      "exercise": {
+        "exerciseId": "english-a1-m096-listening-ex01",
+        "type": "listening_gap_fill",
+        "items": [
+          {
+            "itemId": "english-a1-m096-listening-ex01-i01",
+            "position": 1,
+            "gapToken": "[[gap-01]]",
+            "expectedWordId": "english-a1-m096-listening-word-01"
+          },
+          {
+            "itemId": "english-a1-m096-listening-ex01-i02",
+            "position": 2,
+            "gapToken": "[[gap-02]]",
+            "expectedWordId": "english-a1-m096-listening-word-02"
+          },
+          {
+            "itemId": "english-a1-m096-listening-ex01-i03",
+            "position": 3,
+            "gapToken": "[[gap-03]]",
+            "expectedWordId": "english-a1-m096-listening-word-03"
+          },
+          {
+            "itemId": "english-a1-m096-listening-ex01-i04",
+            "position": 4,
+            "gapToken": "[[gap-04]]",
+            "expectedWordId": "english-a1-m096-listening-word-04"
+          },
+          {
+            "itemId": "english-a1-m096-listening-ex01-i05",
+            "position": 5,
+            "gapToken": "[[gap-05]]",
+            "expectedWordId": "english-a1-m096-listening-word-05"
+          },
+          {
+            "itemId": "english-a1-m096-listening-ex01-i06",
+            "position": 6,
+            "gapToken": "[[gap-06]]",
+            "expectedWordId": "english-a1-m096-listening-word-06"
+          },
+          {
+            "itemId": "english-a1-m096-listening-ex01-i07",
+            "position": 7,
+            "gapToken": "[[gap-07]]",
+            "expectedWordId": "english-a1-m096-listening-word-07"
+          },
+          {
+            "itemId": "english-a1-m096-listening-ex01-i08",
+            "position": 8,
+            "gapToken": "[[gap-08]]",
+            "expectedWordId": "english-a1-m096-listening-word-08"
+          },
+          {
+            "itemId": "english-a1-m096-listening-ex01-i09",
+            "position": 9,
+            "gapToken": "[[gap-09]]",
+            "expectedWordId": "english-a1-m096-listening-word-09"
+          },
+          {
+            "itemId": "english-a1-m096-listening-ex01-i10",
+            "position": 10,
+            "gapToken": "[[gap-10]]",
+            "expectedWordId": "english-a1-m096-listening-word-10"
+          }
+        ],
+        "content": {
+          "audio": "tts:en-GB:The key words for Making Arrangements are: Are you free?, what time, where, meet, shall we, see you, Saturday, at six, café, sorry. Listen and repeat each word carefully.",
+          "audioLocale": "en-GB",
+          "transcriptTemplate": "The key words for Making Arrangements are: [[gap-01]], [[gap-02]], [[gap-03]], [[gap-04]], [[gap-05]], [[gap-06]], [[gap-07]], [[gap-08]], [[gap-09]], [[gap-10]]. Listen and repeat each word carefully.",
+          "wordBank": [
+            {
+              "wordId": "english-a1-m096-listening-word-01",
+              "word": "Are you free?"
+            },
+            {
+              "wordId": "english-a1-m096-listening-word-02",
+              "word": "what time"
+            },
+            {
+              "wordId": "english-a1-m096-listening-word-03",
+              "word": "where"
+            },
+            {
+              "wordId": "english-a1-m096-listening-word-04",
+              "word": "meet"
+            },
+            {
+              "wordId": "english-a1-m096-listening-word-05",
+              "word": "shall we"
+            },
+            {
+              "wordId": "english-a1-m096-listening-word-06",
+              "word": "see you"
+            },
+            {
+              "wordId": "english-a1-m096-listening-word-07",
+              "word": "Saturday"
+            },
+            {
+              "wordId": "english-a1-m096-listening-word-08",
+              "word": "at six"
+            },
+            {
+              "wordId": "english-a1-m096-listening-word-09",
+              "word": "café"
+            },
+            {
+              "wordId": "english-a1-m096-listening-word-10",
+              "word": "sorry"
+            }
+          ],
+          "interaction": "select_place_move_replace"
+        }
+      }
+    }
+  ]
+}

@@ -22,7 +22,7 @@ export default function AcademyPage() {
       <Link href="/academia/a1" className="block rounded-3xl border border-indigo-200 bg-indigo-50 p-7 shadow-sm transition hover:border-indigo-400">
         <p className="text-sm font-extrabold tracking-widest text-indigo-700">01 / ELEMENTARY</p>
         <h2 className="mt-3 text-3xl font-black text-slate-950">A1 · Inglés elemental</h2>
-        <p className="mt-3 text-slate-600">32 temas organizados en 8 bloques: información personal, vida diaria, hogar, compras, salud, estudios, viajes y comunicación.</p>
+        <p className="mt-3 text-slate-600">100 misiones organizadas en 10 bloques temáticos para practicar situaciones cotidianas, vocabulario, gramática y las cuatro destrezas.</p>
         <span className="mt-6 inline-block font-bold text-indigo-700">Ver catálogo temático →</span>
       </Link>
       <Link href="/academia/speaking" className="block rounded-3xl border border-cyan-200 bg-cyan-50 p-7 shadow-sm transition hover:border-cyan-400 md:col-span-2">

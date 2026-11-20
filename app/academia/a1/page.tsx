@@ -71,8 +71,8 @@ export default function A1Page() {
       </div>
     </section>
     <div className="mt-8 flex items-center justify-between gap-4">
-      <div><h2 className="text-2xl font-black text-slate-950">Temario A1</h2><p className="mt-1 text-sm text-slate-600">Progresión pedagógica oficial del plan de 100 misiones A1.</p></div>
-      <span className="rounded-xl bg-blue-50 px-3 py-2 text-sm font-bold text-blue-800">32 temas</span>
+      <div><h2 className="text-2xl font-black text-slate-950">Temario A1</h2><p className="mt-1 text-sm text-slate-600">Progresión didáctica propuesta de 100 misiones en 10 bloques, basada en el nivel A1 del MCER y referencias Cambridge A1 Movers. No es un temario oficial de Cambridge.</p></div>
+      <span className="rounded-xl bg-blue-50 px-3 py-2 text-sm font-bold text-blue-800">100 misiones</span>
     </div>
     <section className="mt-8 rounded-3xl border border-indigo-100 bg-indigo-50 p-6">
       <div className="flex flex-wrap items-end justify-between gap-3">

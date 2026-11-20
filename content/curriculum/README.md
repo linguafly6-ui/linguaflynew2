@@ -6,7 +6,7 @@
 - Mission schema: `schemas/course-mission.schema.json` (JSON Schema 2020-12, version 1.2.0)
 - Mission content: `content/missions/{level}/{NNN}.json`
 - Existing Pre-A1 missions already live in `content/missions/pre-a1/`.
-- A1 missions 051–100 are being normalized into `content/missions/a1/`.
+- A1 missions 051–100 are normalized into `content/missions/a1/`.
 
 Every mission uses the same eight sections, in the same order:
 
