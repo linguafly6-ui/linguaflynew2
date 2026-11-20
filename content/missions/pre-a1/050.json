@@ -1,0 +1,1155 @@
+{
+  "schemaVersion": "1.2.0",
+  "contentVersion": 1,
+  "course": {
+    "courseId": "english-pre-a1",
+    "level": "PRE-A1",
+    "language": "en-GB"
+  },
+  "unit": {
+    "unitId": "english-pre-a1-unit-05",
+    "courseId": "english-pre-a1",
+    "position": 50,
+    "title": "The Weather Report"
+  },
+  "mission": {
+    "missionId": "english-pre-a1-m050",
+    "unitId": "english-pre-a1-unit-05",
+    "position": 50,
+    "title": "The Weather Report"
+  },
+  "sections": [
+    {
+      "sectionId": "english-pre-a1-m050-explore",
+      "sectionKey": "explore",
+      "position": 1,
+      "exercise": {
+        "exerciseId": "english-pre-a1-m050-explore-ex01",
+        "type": "vocabulary_pairs",
+        "items": [
+          {
+            "itemId": "english-pre-a1-m050-explore-ex01-i01",
+            "position": 1,
+            "english": "What's the weather like?",
+            "spanish": "¿Qué tiempo hace?",
+            "audio": "tts:en-GB:What's the weather like?"
+          },
+          {
+            "itemId": "english-pre-a1-m050-explore-ex01-i02",
+            "position": 2,
+            "english": "It's sunny",
+            "spanish": "Hace sol",
+            "audio": "tts:en-GB:It's sunny"
+          },
+          {
+            "itemId": "english-pre-a1-m050-explore-ex01-i03",
+            "position": 3,
+            "english": "It's rainy",
+            "spanish": "Está lluvioso",
+            "audio": "tts:en-GB:It's rainy"
+          },
+          {
+            "itemId": "english-pre-a1-m050-explore-ex01-i04",
+            "position": 4,
+            "english": "It's cold",
+            "spanish": "Hace frío",
+            "audio": "tts:en-GB:It's cold"
+          },
+          {
+            "itemId": "english-pre-a1-m050-explore-ex01-i05",
+            "position": 5,
+            "english": "coat",
+            "spanish": "abrigo",
+            "audio": "tts:en-GB:coat"
+          },
+          {
+            "itemId": "english-pre-a1-m050-explore-ex01-i06",
+            "position": 6,
+            "english": "hat",
+            "spanish": "gorro / sombrero",
+            "audio": "tts:en-GB:hat"
+          },
+          {
+            "itemId": "english-pre-a1-m050-explore-ex01-i07",
+            "position": 7,
+            "english": "boots",
+            "spanish": "botas",
+            "audio": "tts:en-GB:boots"
+          },
+          {
+            "itemId": "english-pre-a1-m050-explore-ex01-i08",
+            "position": 8,
+            "english": "warm",
+            "spanish": "templado",
+            "audio": "tts:en-GB:warm"
+          },
+          {
+            "itemId": "english-pre-a1-m050-explore-ex01-i09",
+            "position": 9,
+            "english": "hot",
+            "spanish": "caluroso",
+            "audio": "tts:en-GB:hot"
+          },
+          {
+            "itemId": "english-pre-a1-m050-explore-ex01-i10",
+            "position": 10,
+            "english": "scarf",
+            "spanish": "bufanda",
+            "audio": "tts:en-GB:scarf"
+          }
+        ],
+        "theory": {
+          "title": "What's the weather like? It's…",
+          "explanation": "Preguntamos «What’s the weather like?» para saber qué tiempo hace. Respondemos con «It’s…» y una palabra del tiempo: «It’s sunny», «It’s rainy» o «It’s cold». Podemos escoger una prenda que nos ayude con ese tiempo.",
+          "patterns": [
+            {
+              "label": "Modelo",
+              "pattern": "What’s the weather like? It’s rainy.",
+              "examples": [
+                "What’s the weather like? It’s rainy.",
+                "It's rainy."
+              ]
+            },
+            {
+              "label": "Práctica",
+              "pattern": "Responde a la pregunta del tiempo y elige una prenda apropiada.",
+              "examples": [
+                "It's rainy."
+              ]
+            }
+          ],
+          "tip": "Lee el ejemplo y observa cómo se usa el vocabulario en una frase."
+        }
+      }
+    },
+    {
+      "sectionId": "english-pre-a1-m050-practice",
+      "sectionKey": "practice",
+      "position": 2,
+      "exercise": {
+        "exerciseId": "english-pre-a1-m050-practice-ex01",
+        "type": "mixed_practice",
+        "items": [
+          {
+            "itemId": "english-pre-a1-m050-practice-ex01-i01",
+            "position": 1,
+            "taskType": "translation_multiple_choice",
+            "prompt": "Traduce “What's the weather like?” al español.",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "¿Qué tiempo hace?",
+              "Hace frío",
+              "botas"
+            ]
+          },
+          {
+            "itemId": "english-pre-a1-m050-practice-ex01-i02",
+            "position": 2,
+            "taskType": "translation_multiple_choice",
+            "prompt": "Traduce “It's sunny” al español.",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "Hace sol",
+              "abrigo",
+              "templado"
+            ]
+          },
+          {
+            "itemId": "english-pre-a1-m050-practice-ex01-i03",
+            "position": 3,
+            "taskType": "translation_multiple_choice",
+            "prompt": "Traduce “It's rainy” al español.",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "Está lluvioso",
+              "gorro / sombrero",
+              "caluroso"
+            ]
+          },
+          {
+            "itemId": "english-pre-a1-m050-practice-ex01-i04",
+            "position": 4,
+            "taskType": "translation_multiple_choice",
+            "prompt": "Traduce “It's cold” al español.",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "Hace frío",
+              "botas",
+              "bufanda"
+            ]
+          },
+          {
+            "itemId": "english-pre-a1-m050-practice-ex01-i05",
+            "position": 5,
+            "taskType": "translation_multiple_choice",
+            "prompt": "Traduce “coat” al español.",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "abrigo",
+              "templado",
+              "¿Qué tiempo hace?"
+            ]
+          },
+          {
+            "itemId": "english-pre-a1-m050-practice-ex01-i06",
+            "position": 6,
+            "taskType": "translation_multiple_choice",
+            "prompt": "Traduce “hat” al español.",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "gorro / sombrero",
+              "caluroso",
+              "Hace sol"
+            ]
+          },
+          {
+            "itemId": "english-pre-a1-m050-practice-ex01-i07",
+            "position": 7,
+            "taskType": "translation_multiple_choice",
+            "prompt": "Traduce “boots” al español.",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "botas",
+              "bufanda",
+              "Está lluvioso"
+            ]
+          },
+          {
+            "itemId": "english-pre-a1-m050-practice-ex01-i08",
+            "position": 8,
+            "taskType": "translation_multiple_choice",
+            "prompt": "Traduce “warm” al español.",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "templado",
+              "¿Qué tiempo hace?",
+              "Hace frío"
+            ]
+          },
+          {
+            "itemId": "english-pre-a1-m050-practice-ex01-i09",
+            "position": 9,
+            "taskType": "translation_multiple_choice",
+            "prompt": "Traduce “hot” al español.",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "caluroso",
+              "Hace sol",
+              "abrigo"
+            ]
+          },
+          {
+            "itemId": "english-pre-a1-m050-practice-ex01-i10",
+            "position": 10,
+            "taskType": "translation_multiple_choice",
+            "prompt": "Traduce “scarf” al español.",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "bufanda",
+              "Está lluvioso",
+              "gorro / sombrero"
+            ]
+          },
+          {
+            "itemId": "english-pre-a1-m050-practice-ex01-i11",
+            "position": 11,
+            "taskType": "translation_multiple_choice",
+            "prompt": "Traduce “What's the weather like?” al español.",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "¿Qué tiempo hace?",
+              "Hace frío",
+              "botas"
+            ]
+          },
+          {
+            "itemId": "english-pre-a1-m050-practice-ex01-i12",
+            "position": 12,
+            "taskType": "translation_multiple_choice",
+            "prompt": "Traduce “It's sunny” al español.",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "Hace sol",
+              "abrigo",
+              "templado"
+            ]
+          },
+          {
+            "itemId": "english-pre-a1-m050-practice-ex01-i13",
+            "position": 13,
+            "taskType": "translation_multiple_choice",
+            "prompt": "Traduce “It's rainy” al español.",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "Está lluvioso",
+              "gorro / sombrero",
+              "caluroso"
+            ]
+          },
+          {
+            "itemId": "english-pre-a1-m050-practice-ex01-i14",
+            "position": 14,
+            "taskType": "translation_multiple_choice",
+            "prompt": "Traduce “It's cold” al español.",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "Hace frío",
+              "botas",
+              "bufanda"
+            ]
+          },
+          {
+            "itemId": "english-pre-a1-m050-practice-ex01-i15",
+            "position": 15,
+            "taskType": "translation_multiple_choice",
+            "prompt": "Traduce “coat” al español.",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "abrigo",
+              "templado",
+              "¿Qué tiempo hace?"
+            ]
+          },
+          {
+            "itemId": "english-pre-a1-m050-practice-ex01-i16",
+            "position": 16,
+            "taskType": "translation_multiple_choice",
+            "prompt": "Traduce “hat” al español.",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "gorro / sombrero",
+              "caluroso",
+              "Hace sol"
+            ]
+          },
+          {
+            "itemId": "english-pre-a1-m050-practice-ex01-i17",
+            "position": 17,
+            "taskType": "translation_multiple_choice",
+            "prompt": "Traduce “boots” al español.",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "botas",
+              "bufanda",
+              "Está lluvioso"
+            ]
+          },
+          {
+            "itemId": "english-pre-a1-m050-practice-ex01-i18",
+            "position": 18,
+            "taskType": "translation_multiple_choice",
+            "prompt": "Traduce “warm” al español.",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "templado",
+              "¿Qué tiempo hace?",
+              "Hace frío"
+            ]
+          },
+          {
+            "itemId": "english-pre-a1-m050-practice-ex01-i19",
+            "position": 19,
+            "taskType": "translation_multiple_choice",
+            "prompt": "Traduce “hot” al español.",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "caluroso",
+              "Hace sol",
+              "abrigo"
+            ]
+          },
+          {
+            "itemId": "english-pre-a1-m050-practice-ex01-i20",
+            "position": 20,
+            "taskType": "translation_multiple_choice",
+            "prompt": "Traduce “scarf” al español.",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "bufanda",
+              "Está lluvioso",
+              "gorro / sombrero"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "sectionId": "english-pre-a1-m050-grammar",
+      "sectionKey": "grammar",
+      "position": 3,
+      "exercise": {
+        "exerciseId": "english-pre-a1-m050-grammar-ex01",
+        "type": "grammar",
+        "items": [
+          {
+            "itemId": "english-pre-a1-m050-grammar-ex01-i01",
+            "position": 1,
+            "prompt": "Choose the question about the weather.",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "What's the weather like?",
+              "How old are you?",
+              "Where is the station?"
+            ]
+          },
+          {
+            "itemId": "english-pre-a1-m050-grammar-ex01-i02",
+            "position": 2,
+            "prompt": "Complete: It ___ sunny.",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "is",
+              "are",
+              "am"
+            ]
+          },
+          {
+            "itemId": "english-pre-a1-m050-grammar-ex01-i03",
+            "position": 3,
+            "prompt": "It is rainy. Which item can help keep you dry?",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "A coat",
+              "A swimsuit",
+              "A fan"
+            ]
+          },
+          {
+            "itemId": "english-pre-a1-m050-grammar-ex01-i04",
+            "position": 4,
+            "prompt": "Choose the correct answer: What's the weather like? (cold)",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "It's cold.",
+              "It cold are.",
+              "It is boots."
+            ]
+          },
+          {
+            "itemId": "english-pre-a1-m050-grammar-ex01-i05",
+            "position": 5,
+            "prompt": "Complete: It ___ sunny.",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "is",
+              "are",
+              "am"
+            ]
+          },
+          {
+            "itemId": "english-pre-a1-m050-grammar-ex01-i06",
+            "position": 6,
+            "prompt": "The opposite of hot is ___.",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "cold",
+              "warm",
+              "sunny"
+            ]
+          },
+          {
+            "itemId": "english-pre-a1-m050-grammar-ex01-i07",
+            "position": 7,
+            "prompt": "When it rains, wear a ___.",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "coat",
+              "swimsuit",
+              "sunglasses"
+            ]
+          },
+          {
+            "itemId": "english-pre-a1-m050-grammar-ex01-i08",
+            "position": 8,
+            "prompt": "Complete: What's the weather ___?",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "like",
+              "likes",
+              "liking"
+            ]
+          },
+          {
+            "itemId": "english-pre-a1-m050-grammar-ex01-i09",
+            "position": 9,
+            "prompt": "Choose: They ___ boots.",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "wear",
+              "wears",
+              "wearing"
+            ]
+          },
+          {
+            "itemId": "english-pre-a1-m050-grammar-ex01-i10",
+            "position": 10,
+            "prompt": "It's cold. Put on your ___.",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "coat",
+              "shorts",
+              "swimsuit"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "sectionId": "english-pre-a1-m050-pronunciation",
+      "sectionKey": "pronunciation",
+      "position": 4,
+      "exercise": {
+        "exerciseId": "english-pre-a1-m050-pronunciation-ex01",
+        "type": "pronunciation_cards",
+        "items": [
+          {
+            "itemId": "english-pre-a1-m050-pronunciation-ex01-i01",
+            "position": 1,
+            "word": "What's the weather like?",
+            "translation": "¿Qué tiempo hace?",
+            "pronunciationGuide": "uóts dha uédha láik",
+            "audio": "tts:en-GB:What's the weather like?"
+          },
+          {
+            "itemId": "english-pre-a1-m050-pronunciation-ex01-i02",
+            "position": 2,
+            "word": "It's sunny",
+            "translation": "Hace sol",
+            "pronunciationGuide": "its sá-ni",
+            "audio": "tts:en-GB:It's sunny"
+          },
+          {
+            "itemId": "english-pre-a1-m050-pronunciation-ex01-i03",
+            "position": 3,
+            "word": "It's rainy",
+            "translation": "Está lluvioso",
+            "pronunciationGuide": "its réi-ni",
+            "audio": "tts:en-GB:It's rainy"
+          },
+          {
+            "itemId": "english-pre-a1-m050-pronunciation-ex01-i04",
+            "position": 4,
+            "word": "It's cold",
+            "translation": "Hace frío",
+            "pronunciationGuide": "its kóuld",
+            "audio": "tts:en-GB:It's cold"
+          },
+          {
+            "itemId": "english-pre-a1-m050-pronunciation-ex01-i05",
+            "position": 5,
+            "word": "coat",
+            "translation": "abrigo",
+            "pronunciationGuide": "kóut",
+            "audio": "tts:en-GB:coat"
+          },
+          {
+            "itemId": "english-pre-a1-m050-pronunciation-ex01-i06",
+            "position": 6,
+            "word": "hat",
+            "translation": "gorro / sombrero",
+            "pronunciationGuide": "jat",
+            "audio": "tts:en-GB:hat"
+          },
+          {
+            "itemId": "english-pre-a1-m050-pronunciation-ex01-i07",
+            "position": 7,
+            "word": "boots",
+            "translation": "botas",
+            "pronunciationGuide": "búuts",
+            "audio": "tts:en-GB:boots"
+          },
+          {
+            "itemId": "english-pre-a1-m050-pronunciation-ex01-i08",
+            "position": 8,
+            "word": "warm",
+            "translation": "templado",
+            "pronunciationGuide": "Escucha y repite despacio",
+            "audio": "tts:en-GB:warm"
+          },
+          {
+            "itemId": "english-pre-a1-m050-pronunciation-ex01-i09",
+            "position": 9,
+            "word": "hot",
+            "translation": "caluroso",
+            "pronunciationGuide": "Escucha y repite despacio",
+            "audio": "tts:en-GB:hot"
+          },
+          {
+            "itemId": "english-pre-a1-m050-pronunciation-ex01-i10",
+            "position": 10,
+            "word": "scarf",
+            "translation": "bufanda",
+            "pronunciationGuide": "Escucha y repite despacio",
+            "audio": "tts:en-GB:scarf"
+          }
+        ]
+      }
+    },
+    {
+      "sectionId": "english-pre-a1-m050-reading",
+      "sectionKey": "reading",
+      "position": 5,
+      "exercise": {
+        "exerciseId": "english-pre-a1-m050-reading-ex01",
+        "type": "reading_comprehension",
+        "items": [
+          {
+            "itemId": "english-pre-a1-m050-reading-ex01-i01",
+            "position": 1,
+            "prompt": "What is the weather like today?",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "Rainy and cold",
+              "Sunny and hot",
+              "Snowy and warm"
+            ]
+          },
+          {
+            "itemId": "english-pre-a1-m050-reading-ex01-i02",
+            "position": 2,
+            "prompt": "Where is Sam?",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "In London",
+              "In Paris",
+              "In Madrid"
+            ]
+          },
+          {
+            "itemId": "english-pre-a1-m050-reading-ex01-i03",
+            "position": 3,
+            "prompt": "What does Sam look out of?",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "The window",
+              "The door",
+              "The bag"
+            ]
+          },
+          {
+            "itemId": "english-pre-a1-m050-reading-ex01-i04",
+            "position": 4,
+            "prompt": "What does Sam put on?",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "His coat and boots",
+              "A swimsuit and sandals",
+              "A T-shirt and shorts"
+            ]
+          },
+          {
+            "itemId": "english-pre-a1-m050-reading-ex01-i05",
+            "position": 5,
+            "prompt": "Who has a warm hat?",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "His sister",
+              "His mum",
+              "His teacher"
+            ]
+          },
+          {
+            "itemId": "english-pre-a1-m050-reading-ex01-i06",
+            "position": 6,
+            "prompt": "When is the weather sunny?",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "On Sunday",
+              "On Monday",
+              "On Friday"
+            ]
+          },
+          {
+            "itemId": "english-pre-a1-m050-reading-ex01-i07",
+            "position": 7,
+            "prompt": "What does Sam wear on Sunday?",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "A hat",
+              "His coat and boots",
+              "A scarf"
+            ]
+          },
+          {
+            "itemId": "english-pre-a1-m050-reading-ex01-i08",
+            "position": 8,
+            "prompt": "What question does Sam ask?",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "What's the weather like?",
+              "Where is my coat?",
+              "How much is it?"
+            ]
+          },
+          {
+            "itemId": "english-pre-a1-m050-reading-ex01-i09",
+            "position": 9,
+            "prompt": "Who answers Sam?",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "Mum",
+              "His sister",
+              "His teacher"
+            ]
+          },
+          {
+            "itemId": "english-pre-a1-m050-reading-ex01-i10",
+            "position": 10,
+            "prompt": "What is the weather on Sunday?",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "Sunny",
+              "Rainy",
+              "Cold"
+            ]
+          }
+        ],
+        "content": {
+          "passageId": "english-pre-a1-m050-reading-passage-01",
+          "passage": "Today is rainy and cold in London. Sam looks out of the window. He puts on his coat and boots. His sister has a warm hat. On Sunday, the weather is sunny. Sam wears a hat but not his coat. He asks, “What’s the weather like?” Mum says, “It’s sunny today!”"
+        }
+      }
+    },
+    {
+      "sectionId": "english-pre-a1-m050-writing",
+      "sectionKey": "writing",
+      "position": 6,
+      "exercise": {
+        "exerciseId": "english-pre-a1-m050-writing-ex01",
+        "type": "dictation",
+        "items": [
+          {
+            "itemId": "english-pre-a1-m050-writing-ex01-i01",
+            "position": 1,
+            "audio": "tts:en-GB:What's the weather like?",
+            "evaluation": {
+              "type": "normalised_text"
+            }
+          },
+          {
+            "itemId": "english-pre-a1-m050-writing-ex01-i02",
+            "position": 2,
+            "audio": "tts:en-GB:It's sunny",
+            "evaluation": {
+              "type": "normalised_text"
+            }
+          },
+          {
+            "itemId": "english-pre-a1-m050-writing-ex01-i03",
+            "position": 3,
+            "audio": "tts:en-GB:It's rainy",
+            "evaluation": {
+              "type": "normalised_text"
+            }
+          },
+          {
+            "itemId": "english-pre-a1-m050-writing-ex01-i04",
+            "position": 4,
+            "audio": "tts:en-GB:It's cold",
+            "evaluation": {
+              "type": "normalised_text"
+            }
+          },
+          {
+            "itemId": "english-pre-a1-m050-writing-ex01-i05",
+            "position": 5,
+            "audio": "tts:en-GB:coat",
+            "evaluation": {
+              "type": "normalised_text"
+            }
+          },
+          {
+            "itemId": "english-pre-a1-m050-writing-ex01-i06",
+            "position": 6,
+            "audio": "tts:en-GB:hat",
+            "evaluation": {
+              "type": "normalised_text"
+            }
+          },
+          {
+            "itemId": "english-pre-a1-m050-writing-ex01-i07",
+            "position": 7,
+            "audio": "tts:en-GB:boots",
+            "evaluation": {
+              "type": "normalised_text"
+            }
+          },
+          {
+            "itemId": "english-pre-a1-m050-writing-ex01-i08",
+            "position": 8,
+            "audio": "tts:en-GB:warm",
+            "evaluation": {
+              "type": "normalised_text"
+            }
+          },
+          {
+            "itemId": "english-pre-a1-m050-writing-ex01-i09",
+            "position": 9,
+            "audio": "tts:en-GB:hot",
+            "evaluation": {
+              "type": "normalised_text"
+            }
+          },
+          {
+            "itemId": "english-pre-a1-m050-writing-ex01-i10",
+            "position": 10,
+            "audio": "tts:en-GB:scarf",
+            "evaluation": {
+              "type": "normalised_text"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "sectionId": "english-pre-a1-m050-speaking",
+      "sectionKey": "speaking",
+      "position": 7,
+      "exercise": {
+        "exerciseId": "english-pre-a1-m050-speaking-ex01",
+        "type": "speaking_prompts",
+        "items": [
+          {
+            "itemId": "english-pre-a1-m050-speaking-ex01-i01",
+            "position": 1,
+            "prompt": "Say the word “What's the weather like?”.",
+            "audio": "tts:en-GB:What's the weather like?",
+            "evaluation": {
+              "type": "transcription_feedback",
+              "transcriptionSeparateFromPronunciation": true
+            },
+            "modelAnswer": "What's the weather like?"
+          },
+          {
+            "itemId": "english-pre-a1-m050-speaking-ex01-i02",
+            "position": 2,
+            "prompt": "Make a sentence with “It's sunny”.",
+            "audio": "tts:en-GB:I can see It's sunny.",
+            "evaluation": {
+              "type": "transcription_feedback",
+              "transcriptionSeparateFromPronunciation": true
+            },
+            "modelAnswer": "I can see It's sunny."
+          },
+          {
+            "itemId": "english-pre-a1-m050-speaking-ex01-i03",
+            "position": 3,
+            "prompt": "Say the word “It's rainy”.",
+            "audio": "tts:en-GB:It's rainy",
+            "evaluation": {
+              "type": "transcription_feedback",
+              "transcriptionSeparateFromPronunciation": true
+            },
+            "modelAnswer": "It's rainy"
+          },
+          {
+            "itemId": "english-pre-a1-m050-speaking-ex01-i04",
+            "position": 4,
+            "prompt": "Make a sentence with “It's cold”.",
+            "audio": "tts:en-GB:I can see It's cold.",
+            "evaluation": {
+              "type": "transcription_feedback",
+              "transcriptionSeparateFromPronunciation": true
+            },
+            "modelAnswer": "I can see It's cold."
+          },
+          {
+            "itemId": "english-pre-a1-m050-speaking-ex01-i05",
+            "position": 5,
+            "prompt": "Say the word “coat”.",
+            "audio": "tts:en-GB:coat",
+            "evaluation": {
+              "type": "transcription_feedback",
+              "transcriptionSeparateFromPronunciation": true
+            },
+            "modelAnswer": "coat"
+          },
+          {
+            "itemId": "english-pre-a1-m050-speaking-ex01-i06",
+            "position": 6,
+            "prompt": "Make a sentence with “hat”.",
+            "audio": "tts:en-GB:I can see hat.",
+            "evaluation": {
+              "type": "transcription_feedback",
+              "transcriptionSeparateFromPronunciation": true
+            },
+            "modelAnswer": "I can see hat."
+          },
+          {
+            "itemId": "english-pre-a1-m050-speaking-ex01-i07",
+            "position": 7,
+            "prompt": "Say the word “boots”.",
+            "audio": "tts:en-GB:boots",
+            "evaluation": {
+              "type": "transcription_feedback",
+              "transcriptionSeparateFromPronunciation": true
+            },
+            "modelAnswer": "boots"
+          },
+          {
+            "itemId": "english-pre-a1-m050-speaking-ex01-i08",
+            "position": 8,
+            "prompt": "Make a sentence with “warm”.",
+            "audio": "tts:en-GB:I can see warm.",
+            "evaluation": {
+              "type": "transcription_feedback",
+              "transcriptionSeparateFromPronunciation": true
+            },
+            "modelAnswer": "I can see warm."
+          },
+          {
+            "itemId": "english-pre-a1-m050-speaking-ex01-i09",
+            "position": 9,
+            "prompt": "Say the word “hot”.",
+            "audio": "tts:en-GB:hot",
+            "evaluation": {
+              "type": "transcription_feedback",
+              "transcriptionSeparateFromPronunciation": true
+            },
+            "modelAnswer": "hot"
+          },
+          {
+            "itemId": "english-pre-a1-m050-speaking-ex01-i10",
+            "position": 10,
+            "prompt": "Make a sentence with “scarf”.",
+            "audio": "tts:en-GB:I can see scarf.",
+            "evaluation": {
+              "type": "transcription_feedback",
+              "transcriptionSeparateFromPronunciation": true
+            },
+            "modelAnswer": "I can see scarf."
+          }
+        ]
+      }
+    },
+    {
+      "sectionId": "english-pre-a1-m050-listening",
+      "sectionKey": "listening",
+      "position": 8,
+      "exercise": {
+        "exerciseId": "english-pre-a1-m050-listening-ex01",
+        "type": "listening_gap_fill",
+        "items": [
+          {
+            "itemId": "english-pre-a1-m050-listening-ex01-i01",
+            "position": 1,
+            "evaluation": {
+              "type": "word_bank"
+            },
+            "gapToken": "[[gap-01]]",
+            "expectedWordId": "english-pre-a1-m050-listening-word-01"
+          },
+          {
+            "itemId": "english-pre-a1-m050-listening-ex01-i02",
+            "position": 2,
+            "evaluation": {
+              "type": "word_bank"
+            },
+            "gapToken": "[[gap-02]]",
+            "expectedWordId": "english-pre-a1-m050-listening-word-02"
+          },
+          {
+            "itemId": "english-pre-a1-m050-listening-ex01-i03",
+            "position": 3,
+            "evaluation": {
+              "type": "word_bank"
+            },
+            "gapToken": "[[gap-03]]",
+            "expectedWordId": "english-pre-a1-m050-listening-word-03"
+          },
+          {
+            "itemId": "english-pre-a1-m050-listening-ex01-i04",
+            "position": 4,
+            "evaluation": {
+              "type": "word_bank"
+            },
+            "gapToken": "[[gap-04]]",
+            "expectedWordId": "english-pre-a1-m050-listening-word-04"
+          },
+          {
+            "itemId": "english-pre-a1-m050-listening-ex01-i05",
+            "position": 5,
+            "evaluation": {
+              "type": "word_bank"
+            },
+            "gapToken": "[[gap-05]]",
+            "expectedWordId": "english-pre-a1-m050-listening-word-05"
+          },
+          {
+            "itemId": "english-pre-a1-m050-listening-ex01-i06",
+            "position": 6,
+            "evaluation": {
+              "type": "word_bank"
+            },
+            "gapToken": "[[gap-06]]",
+            "expectedWordId": "english-pre-a1-m050-listening-word-06"
+          },
+          {
+            "itemId": "english-pre-a1-m050-listening-ex01-i07",
+            "position": 7,
+            "evaluation": {
+              "type": "word_bank"
+            },
+            "gapToken": "[[gap-07]]",
+            "expectedWordId": "english-pre-a1-m050-listening-word-07"
+          },
+          {
+            "itemId": "english-pre-a1-m050-listening-ex01-i08",
+            "position": 8,
+            "evaluation": {
+              "type": "word_bank"
+            },
+            "gapToken": "[[gap-08]]",
+            "expectedWordId": "english-pre-a1-m050-listening-word-08"
+          },
+          {
+            "itemId": "english-pre-a1-m050-listening-ex01-i09",
+            "position": 9,
+            "evaluation": {
+              "type": "word_bank"
+            },
+            "gapToken": "[[gap-09]]",
+            "expectedWordId": "english-pre-a1-m050-listening-word-09"
+          },
+          {
+            "itemId": "english-pre-a1-m050-listening-ex01-i10",
+            "position": 10,
+            "evaluation": {
+              "type": "word_bank"
+            },
+            "gapToken": "[[gap-10]]",
+            "expectedWordId": "english-pre-a1-m050-listening-word-10"
+          }
+        ],
+        "content": {
+          "audio": "tts:en-GB:Welcome to The Weather Report. Word 1: What's the weather like?. Word 2: It's sunny. Word 3: It's rainy. Word 4: It's cold. Word 5: coat. Word 6: hat. Word 7: boots. Word 8: warm. Word 9: hot. Word 10: scarf. Thank you for listening.",
+          "audioLocale": "en-GB",
+          "transcriptTemplate": "Welcome to The Weather Report. Word 1: [[gap-01]]. Word 2: [[gap-02]]. Word 3: [[gap-03]]. Word 4: [[gap-04]]. Word 5: [[gap-05]]. Word 6: [[gap-06]]. Word 7: [[gap-07]]. Word 8: [[gap-08]]. Word 9: [[gap-09]]. Word 10: [[gap-10]]. Thank you for listening.",
+          "wordBank": [
+            {
+              "wordId": "english-pre-a1-m050-listening-word-01",
+              "word": "What's the weather like?"
+            },
+            {
+              "wordId": "english-pre-a1-m050-listening-word-02",
+              "word": "It's sunny"
+            },
+            {
+              "wordId": "english-pre-a1-m050-listening-word-03",
+              "word": "It's rainy"
+            },
+            {
+              "wordId": "english-pre-a1-m050-listening-word-04",
+              "word": "It's cold"
+            },
+            {
+              "wordId": "english-pre-a1-m050-listening-word-05",
+              "word": "coat"
+            },
+            {
+              "wordId": "english-pre-a1-m050-listening-word-06",
+              "word": "hat"
+            },
+            {
+              "wordId": "english-pre-a1-m050-listening-word-07",
+              "word": "boots"
+            },
+            {
+              "wordId": "english-pre-a1-m050-listening-word-08",
+              "word": "warm"
+            },
+            {
+              "wordId": "english-pre-a1-m050-listening-word-09",
+              "word": "hot"
+            },
+            {
+              "wordId": "english-pre-a1-m050-listening-word-10",
+              "word": "scarf"
+            }
+          ],
+          "interaction": "select_place_move_replace"
+        }
+      }
+    }
+  ]
+}
