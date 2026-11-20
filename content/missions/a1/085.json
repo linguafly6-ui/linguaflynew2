@@ -1,0 +1,1205 @@
+{
+  "schemaVersion": "1.2.0",
+  "contentVersion": 1,
+  "course": {
+    "courseId": "english-a1",
+    "level": "A1",
+    "language": "en-GB"
+  },
+  "unit": {
+    "unitId": "english-a1-unit-09",
+    "courseId": "english-a1",
+    "position": 9,
+    "title": "Town, transport and travel"
+  },
+  "mission": {
+    "missionId": "english-a1-m085",
+    "unitId": "english-a1-unit-09",
+    "position": 85,
+    "title": "At the Airport"
+  },
+  "sections": [
+    {
+      "sectionId": "english-a1-m085-explore",
+      "sectionKey": "explore",
+      "position": 1,
+      "title": "explore",
+      "exercise": {
+        "exerciseId": "english-a1-m085-explore-ex01",
+        "type": "vocabulary_pairs",
+        "items": [
+          {
+            "itemId": "english-a1-m085-explore-ex01-i01",
+            "position": 1,
+            "english": "airport",
+            "spanish": "aeropuerto",
+            "audio": "tts:en-GB:airport"
+          },
+          {
+            "itemId": "english-a1-m085-explore-ex01-i02",
+            "position": 2,
+            "english": "boarding pass",
+            "spanish": "tarjeta de embarque",
+            "audio": "tts:en-GB:boarding pass"
+          },
+          {
+            "itemId": "english-a1-m085-explore-ex01-i03",
+            "position": 3,
+            "english": "gate",
+            "spanish": "puerta de embarque",
+            "audio": "tts:en-GB:gate"
+          },
+          {
+            "itemId": "english-a1-m085-explore-ex01-i04",
+            "position": 4,
+            "english": "flight",
+            "spanish": "vuelo",
+            "audio": "tts:en-GB:flight"
+          },
+          {
+            "itemId": "english-a1-m085-explore-ex01-i05",
+            "position": 5,
+            "english": "luggage",
+            "spanish": "equipaje",
+            "audio": "tts:en-GB:luggage"
+          },
+          {
+            "itemId": "english-a1-m085-explore-ex01-i06",
+            "position": 6,
+            "english": "passport",
+            "spanish": "pasaporte",
+            "audio": "tts:en-GB:passport"
+          },
+          {
+            "itemId": "english-a1-m085-explore-ex01-i07",
+            "position": 7,
+            "english": "check-in",
+            "spanish": "facturación",
+            "audio": "tts:en-GB:check-in"
+          },
+          {
+            "itemId": "english-a1-m085-explore-ex01-i08",
+            "position": 8,
+            "english": "security",
+            "spanish": "seguridad",
+            "audio": "tts:en-GB:security"
+          },
+          {
+            "itemId": "english-a1-m085-explore-ex01-i09",
+            "position": 9,
+            "english": "departure",
+            "spanish": "salida",
+            "audio": "tts:en-GB:departure"
+          },
+          {
+            "itemId": "english-a1-m085-explore-ex01-i10",
+            "position": 10,
+            "english": "arrivals",
+            "spanish": "llegadas",
+            "audio": "tts:en-GB:arrivals"
+          }
+        ],
+        "theory": {
+          "title": "Vocabulary: At the Airport",
+          "explanation": "Explora diez palabras y expresiones sobre at the airport. Escucha el modelo británico y relaciona cada palabra con su significado.",
+          "patterns": [
+            {
+              "label": "Useful language",
+              "pattern": "Short question + short answer",
+              "examples": [
+                "Where is the check-in desk?",
+                "Here is my boarding pass.",
+                "What is the gate number?"
+              ]
+            }
+          ],
+          "tip": "Repite las expresiones y crea un ejemplo relacionado con tu vida."
+        }
+      }
+    },
+    {
+      "sectionId": "english-a1-m085-practice",
+      "sectionKey": "practice",
+      "position": 2,
+      "title": "practice",
+      "exercise": {
+        "exerciseId": "english-a1-m085-practice-ex01",
+        "type": "mixed_practice",
+        "items": [
+          {
+            "itemId": "english-a1-m085-practice-ex01-i01",
+            "position": 1,
+            "taskType": "translation_multiple_choice",
+            "prompt": "Traduce al español: “Where is the check-in desk?”",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "¿Dónde está el mostrador de facturación?",
+              "Mi vuelo es a las once.",
+              "Ve al control de seguridad, por favor."
+            ],
+            "correctAnswer": "¿Dónde está el mostrador de facturación?",
+            "sourceEnglish": "Where is the check-in desk?"
+          },
+          {
+            "itemId": "english-a1-m085-practice-ex01-i02",
+            "position": 2,
+            "taskType": "translation_multiple_choice",
+            "prompt": "Traduce al español: “Here is my boarding pass.”",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "Aquí está mi tarjeta de embarque.",
+              "Este es mi equipaje.",
+              "El vuelo está listo para embarcar."
+            ],
+            "correctAnswer": "Aquí está mi tarjeta de embarque.",
+            "sourceEnglish": "Here is my boarding pass."
+          },
+          {
+            "itemId": "english-a1-m085-practice-ex01-i03",
+            "position": 3,
+            "taskType": "translation_multiple_choice",
+            "prompt": "Traduce al español: “What is the gate number?”",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "¿Cuál es el número de puerta?",
+              "Tengo mi pasaporte.",
+              "¿Dónde están las llegadas?"
+            ],
+            "correctAnswer": "¿Cuál es el número de puerta?",
+            "sourceEnglish": "What is the gate number?"
+          },
+          {
+            "itemId": "english-a1-m085-practice-ex01-i04",
+            "position": 4,
+            "taskType": "translation_multiple_choice",
+            "prompt": "Traduce al español: “My flight is at eleven.”",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "Mi vuelo es a las once.",
+              "Ve al control de seguridad, por favor.",
+              "El aeropuerto está muy concurrido."
+            ],
+            "correctAnswer": "Mi vuelo es a las once.",
+            "sourceEnglish": "My flight is at eleven."
+          },
+          {
+            "itemId": "english-a1-m085-practice-ex01-i05",
+            "position": 5,
+            "taskType": "translation_multiple_choice",
+            "prompt": "Traduce al español: “This is my luggage.”",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "Este es mi equipaje.",
+              "El vuelo está listo para embarcar.",
+              "¿Dónde está el mostrador de facturación?"
+            ],
+            "correctAnswer": "Este es mi equipaje.",
+            "sourceEnglish": "This is my luggage."
+          },
+          {
+            "itemId": "english-a1-m085-practice-ex01-i06",
+            "position": 6,
+            "taskType": "translation_multiple_choice",
+            "prompt": "Traduce al español: “I have my passport.”",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "Tengo mi pasaporte.",
+              "¿Dónde están las llegadas?",
+              "Aquí está mi tarjeta de embarque."
+            ],
+            "correctAnswer": "Tengo mi pasaporte.",
+            "sourceEnglish": "I have my passport."
+          },
+          {
+            "itemId": "english-a1-m085-practice-ex01-i07",
+            "position": 7,
+            "taskType": "translation_multiple_choice",
+            "prompt": "Traduce al español: “Go to security, please.”",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "Ve al control de seguridad, por favor.",
+              "El aeropuerto está muy concurrido.",
+              "¿Cuál es el número de puerta?"
+            ],
+            "correctAnswer": "Ve al control de seguridad, por favor.",
+            "sourceEnglish": "Go to security, please."
+          },
+          {
+            "itemId": "english-a1-m085-practice-ex01-i08",
+            "position": 8,
+            "taskType": "translation_multiple_choice",
+            "prompt": "Traduce al español: “The flight is ready for boarding.”",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "El vuelo está listo para embarcar.",
+              "¿Dónde está el mostrador de facturación?",
+              "Mi vuelo es a las once."
+            ],
+            "correctAnswer": "El vuelo está listo para embarcar.",
+            "sourceEnglish": "The flight is ready for boarding."
+          },
+          {
+            "itemId": "english-a1-m085-practice-ex01-i09",
+            "position": 9,
+            "taskType": "translation_multiple_choice",
+            "prompt": "Traduce al español: “Where are arrivals?”",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "¿Dónde están las llegadas?",
+              "Aquí está mi tarjeta de embarque.",
+              "Este es mi equipaje."
+            ],
+            "correctAnswer": "¿Dónde están las llegadas?",
+            "sourceEnglish": "Where are arrivals?"
+          },
+          {
+            "itemId": "english-a1-m085-practice-ex01-i10",
+            "position": 10,
+            "taskType": "translation_multiple_choice",
+            "prompt": "Traduce al español: “The airport is very busy.”",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "El aeropuerto está muy concurrido.",
+              "¿Cuál es el número de puerta?",
+              "Tengo mi pasaporte."
+            ],
+            "correctAnswer": "El aeropuerto está muy concurrido.",
+            "sourceEnglish": "The airport is very busy."
+          },
+          {
+            "itemId": "english-a1-m085-practice-ex01-i11",
+            "position": 11,
+            "taskType": "listening_translation_multiple_choice",
+            "prompt": "Escucha el inglés y elige su significado.",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "¿Dónde está el mostrador de facturación?",
+              "Este es mi equipaje.",
+              "El vuelo está listo para embarcar."
+            ],
+            "correctAnswer": "¿Dónde está el mostrador de facturación?",
+            "sourceEnglish": "Where is the check-in desk?"
+          },
+          {
+            "itemId": "english-a1-m085-practice-ex01-i12",
+            "position": 12,
+            "taskType": "listening_translation_multiple_choice",
+            "prompt": "Escucha el inglés y elige su significado.",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "Aquí está mi tarjeta de embarque.",
+              "Tengo mi pasaporte.",
+              "¿Dónde están las llegadas?"
+            ],
+            "correctAnswer": "Aquí está mi tarjeta de embarque.",
+            "sourceEnglish": "Here is my boarding pass."
+          },
+          {
+            "itemId": "english-a1-m085-practice-ex01-i13",
+            "position": 13,
+            "taskType": "listening_translation_multiple_choice",
+            "prompt": "Escucha el inglés y elige su significado.",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "¿Cuál es el número de puerta?",
+              "Ve al control de seguridad, por favor.",
+              "El aeropuerto está muy concurrido."
+            ],
+            "correctAnswer": "¿Cuál es el número de puerta?",
+            "sourceEnglish": "What is the gate number?"
+          },
+          {
+            "itemId": "english-a1-m085-practice-ex01-i14",
+            "position": 14,
+            "taskType": "listening_translation_multiple_choice",
+            "prompt": "Escucha el inglés y elige su significado.",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "Mi vuelo es a las once.",
+              "El vuelo está listo para embarcar.",
+              "¿Dónde está el mostrador de facturación?"
+            ],
+            "correctAnswer": "Mi vuelo es a las once.",
+            "sourceEnglish": "My flight is at eleven."
+          },
+          {
+            "itemId": "english-a1-m085-practice-ex01-i15",
+            "position": 15,
+            "taskType": "listening_translation_multiple_choice",
+            "prompt": "Escucha el inglés y elige su significado.",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "Este es mi equipaje.",
+              "¿Dónde están las llegadas?",
+              "Aquí está mi tarjeta de embarque."
+            ],
+            "correctAnswer": "Este es mi equipaje.",
+            "sourceEnglish": "This is my luggage."
+          },
+          {
+            "itemId": "english-a1-m085-practice-ex01-i16",
+            "position": 16,
+            "taskType": "listening_translation_multiple_choice",
+            "prompt": "Escucha el inglés y elige su significado.",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "Tengo mi pasaporte.",
+              "El aeropuerto está muy concurrido.",
+              "¿Cuál es el número de puerta?"
+            ],
+            "correctAnswer": "Tengo mi pasaporte.",
+            "sourceEnglish": "I have my passport."
+          },
+          {
+            "itemId": "english-a1-m085-practice-ex01-i17",
+            "position": 17,
+            "taskType": "listening_translation_multiple_choice",
+            "prompt": "Escucha el inglés y elige su significado.",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "Ve al control de seguridad, por favor.",
+              "¿Dónde está el mostrador de facturación?",
+              "Mi vuelo es a las once."
+            ],
+            "correctAnswer": "Ve al control de seguridad, por favor.",
+            "sourceEnglish": "Go to security, please."
+          },
+          {
+            "itemId": "english-a1-m085-practice-ex01-i18",
+            "position": 18,
+            "taskType": "listening_translation_multiple_choice",
+            "prompt": "Escucha el inglés y elige su significado.",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "El vuelo está listo para embarcar.",
+              "Aquí está mi tarjeta de embarque.",
+              "Este es mi equipaje."
+            ],
+            "correctAnswer": "El vuelo está listo para embarcar.",
+            "sourceEnglish": "The flight is ready for boarding."
+          },
+          {
+            "itemId": "english-a1-m085-practice-ex01-i19",
+            "position": 19,
+            "taskType": "listening_translation_multiple_choice",
+            "prompt": "Escucha el inglés y elige su significado.",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "¿Dónde están las llegadas?",
+              "¿Cuál es el número de puerta?",
+              "Tengo mi pasaporte."
+            ],
+            "correctAnswer": "¿Dónde están las llegadas?",
+            "sourceEnglish": "Where are arrivals?"
+          },
+          {
+            "itemId": "english-a1-m085-practice-ex01-i20",
+            "position": 20,
+            "taskType": "listening_translation_multiple_choice",
+            "prompt": "Escucha el inglés y elige su significado.",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "El aeropuerto está muy concurrido.",
+              "Mi vuelo es a las once.",
+              "Ve al control de seguridad, por favor."
+            ],
+            "correctAnswer": "El aeropuerto está muy concurrido.",
+            "sourceEnglish": "The airport is very busy."
+          }
+        ]
+      }
+    },
+    {
+      "sectionId": "english-a1-m085-grammar",
+      "sectionKey": "grammar",
+      "position": 3,
+      "title": "grammar",
+      "exercise": {
+        "exerciseId": "english-a1-m085-grammar-ex01",
+        "type": "grammar",
+        "items": [
+          {
+            "itemId": "english-a1-m085-grammar-ex01-i01",
+            "position": 1,
+            "prompt": "The room ___ got a shower.",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "has",
+              "have",
+              "is"
+            ],
+            "correctAnswer": "has"
+          },
+          {
+            "itemId": "english-a1-m085-grammar-ex01-i02",
+            "position": 2,
+            "prompt": "We ___ got a reservation.",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "have",
+              "has",
+              "are"
+            ],
+            "correctAnswer": "have"
+          },
+          {
+            "itemId": "english-a1-m085-grammar-ex01-i03",
+            "position": 3,
+            "prompt": "There ___ a restaurant in the hotel.",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "is",
+              "are",
+              "be"
+            ],
+            "correctAnswer": "is"
+          },
+          {
+            "itemId": "english-a1-m085-grammar-ex01-i04",
+            "position": 4,
+            "prompt": "There ___ two beds in the room.",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "are",
+              "is",
+              "am"
+            ],
+            "correctAnswer": "are"
+          },
+          {
+            "itemId": "english-a1-m085-grammar-ex01-i05",
+            "position": 5,
+            "prompt": "___ you got a booking?",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "Have",
+              "Has",
+              "Are"
+            ],
+            "correctAnswer": "Have"
+          },
+          {
+            "itemId": "english-a1-m085-grammar-ex01-i06",
+            "position": 6,
+            "prompt": "The hotel ___ got a swimming pool.",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "has",
+              "have",
+              "is"
+            ],
+            "correctAnswer": "has"
+          },
+          {
+            "itemId": "english-a1-m085-grammar-ex01-i07",
+            "position": 7,
+            "prompt": "There isn't ___ lift.",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "a",
+              "an",
+              "some"
+            ],
+            "correctAnswer": "a"
+          },
+          {
+            "itemId": "english-a1-m085-grammar-ex01-i08",
+            "position": 8,
+            "prompt": "There are ___ towels in the bathroom.",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "some",
+              "a",
+              "an"
+            ],
+            "correctAnswer": "some"
+          },
+          {
+            "itemId": "english-a1-m085-grammar-ex01-i09",
+            "position": 9,
+            "prompt": "___ there a car park?",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "Is",
+              "Are",
+              "Do"
+            ],
+            "correctAnswer": "Is"
+          },
+          {
+            "itemId": "english-a1-m085-grammar-ex01-i10",
+            "position": 10,
+            "prompt": "They ___ got a family room.",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "have",
+              "has",
+              "are"
+            ],
+            "correctAnswer": "have"
+          }
+        ],
+        "theory": {
+          "title": "Have got and there is/are for accommodation",
+          "explanation": "Usamos have got para hablar de posesión y there is/are para describir instalaciones y servicios de un alojamiento.",
+          "patterns": [
+            {
+              "label": "Model",
+              "pattern": "The room has got a shower",
+              "examples": [
+                "The room has got a shower",
+                "There is a restaurant."
+              ]
+            }
+          ],
+          "tip": "Lee los ejemplos y comprueba cómo cambia la estructura."
+        }
+      }
+    },
+    {
+      "sectionId": "english-a1-m085-pronunciation",
+      "sectionKey": "pronunciation",
+      "position": 4,
+      "title": "pronunciation",
+      "exercise": {
+        "exerciseId": "english-a1-m085-pronunciation-ex01",
+        "type": "pronunciation_cards",
+        "items": [
+          {
+            "itemId": "english-a1-m085-pronunciation-ex01-i01",
+            "position": 1,
+            "word": "airport",
+            "translation": "aeropuerto",
+            "pronunciationGuide": "Listen to the en-GB model and keep the final consonant clear.",
+            "audio": "tts:en-GB:airport"
+          },
+          {
+            "itemId": "english-a1-m085-pronunciation-ex01-i02",
+            "position": 2,
+            "word": "boarding pass",
+            "translation": "tarjeta de embarque",
+            "pronunciationGuide": "Listen to the phrase as one unit and notice its main stress.",
+            "audio": "tts:en-GB:boarding pass"
+          },
+          {
+            "itemId": "english-a1-m085-pronunciation-ex01-i03",
+            "position": 3,
+            "word": "gate",
+            "translation": "puerta de embarque",
+            "pronunciationGuide": "Listen to the en-GB model and keep the final consonant clear.",
+            "audio": "tts:en-GB:gate"
+          },
+          {
+            "itemId": "english-a1-m085-pronunciation-ex01-i04",
+            "position": 4,
+            "word": "flight",
+            "translation": "vuelo",
+            "pronunciationGuide": "Listen to the en-GB model and keep the final consonant clear.",
+            "audio": "tts:en-GB:flight"
+          },
+          {
+            "itemId": "english-a1-m085-pronunciation-ex01-i05",
+            "position": 5,
+            "word": "luggage",
+            "translation": "equipaje",
+            "pronunciationGuide": "Listen to the en-GB model and keep the final consonant clear.",
+            "audio": "tts:en-GB:luggage"
+          },
+          {
+            "itemId": "english-a1-m085-pronunciation-ex01-i06",
+            "position": 6,
+            "word": "passport",
+            "translation": "pasaporte",
+            "pronunciationGuide": "Listen to the en-GB model and keep the final consonant clear.",
+            "audio": "tts:en-GB:passport"
+          },
+          {
+            "itemId": "english-a1-m085-pronunciation-ex01-i07",
+            "position": 7,
+            "word": "check-in",
+            "translation": "facturación",
+            "pronunciationGuide": "Listen to the en-GB model and keep the final consonant clear.",
+            "audio": "tts:en-GB:check-in"
+          },
+          {
+            "itemId": "english-a1-m085-pronunciation-ex01-i08",
+            "position": 8,
+            "word": "security",
+            "translation": "seguridad",
+            "pronunciationGuide": "Listen to the en-GB model and keep the final consonant clear.",
+            "audio": "tts:en-GB:security"
+          },
+          {
+            "itemId": "english-a1-m085-pronunciation-ex01-i09",
+            "position": 9,
+            "word": "departure",
+            "translation": "salida",
+            "pronunciationGuide": "Listen to the en-GB model and keep the final consonant clear.",
+            "audio": "tts:en-GB:departure"
+          },
+          {
+            "itemId": "english-a1-m085-pronunciation-ex01-i10",
+            "position": 10,
+            "word": "arrivals",
+            "translation": "llegadas",
+            "pronunciationGuide": "Listen to the en-GB model and keep the final consonant clear.",
+            "audio": "tts:en-GB:arrivals"
+          }
+        ],
+        "focus": "Practica el ritmo y el acento de las palabras clave de At the Airport."
+      }
+    },
+    {
+      "sectionId": "english-a1-m085-reading",
+      "sectionKey": "reading",
+      "position": 5,
+      "title": "reading",
+      "exercise": {
+        "exerciseId": "english-a1-m085-reading-ex01",
+        "type": "reading_comprehension",
+        "items": [
+          {
+            "itemId": "english-a1-m085-reading-ex01-i01",
+            "position": 1,
+            "prompt": "Which English sentence means “¿Dónde está el mostrador de facturación?”?",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "Where is the check-in desk?",
+              "Here is my boarding pass.",
+              "What is the gate number?"
+            ],
+            "correctAnswer": "Where is the check-in desk?"
+          },
+          {
+            "itemId": "english-a1-m085-reading-ex01-i02",
+            "position": 2,
+            "prompt": "Which English sentence means “Aquí está mi tarjeta de embarque.”?",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "Here is my boarding pass.",
+              "What is the gate number?",
+              "My flight is at eleven."
+            ],
+            "correctAnswer": "Here is my boarding pass."
+          },
+          {
+            "itemId": "english-a1-m085-reading-ex01-i03",
+            "position": 3,
+            "prompt": "Which English sentence means “¿Cuál es el número de puerta?”?",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "What is the gate number?",
+              "My flight is at eleven.",
+              "This is my luggage."
+            ],
+            "correctAnswer": "What is the gate number?"
+          },
+          {
+            "itemId": "english-a1-m085-reading-ex01-i04",
+            "position": 4,
+            "prompt": "Which English sentence means “Mi vuelo es a las once.”?",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "My flight is at eleven.",
+              "This is my luggage.",
+              "I have my passport."
+            ],
+            "correctAnswer": "My flight is at eleven."
+          },
+          {
+            "itemId": "english-a1-m085-reading-ex01-i05",
+            "position": 5,
+            "prompt": "Which English sentence means “Este es mi equipaje.”?",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "This is my luggage.",
+              "I have my passport.",
+              "Go to security, please."
+            ],
+            "correctAnswer": "This is my luggage."
+          },
+          {
+            "itemId": "english-a1-m085-reading-ex01-i06",
+            "position": 6,
+            "prompt": "Which English sentence means “Tengo mi pasaporte.”?",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "I have my passport.",
+              "Go to security, please.",
+              "The flight is ready for boarding."
+            ],
+            "correctAnswer": "I have my passport."
+          },
+          {
+            "itemId": "english-a1-m085-reading-ex01-i07",
+            "position": 7,
+            "prompt": "Which English sentence means “Ve al control de seguridad, por favor.”?",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "Go to security, please.",
+              "The flight is ready for boarding.",
+              "Where are arrivals?"
+            ],
+            "correctAnswer": "Go to security, please."
+          },
+          {
+            "itemId": "english-a1-m085-reading-ex01-i08",
+            "position": 8,
+            "prompt": "Which English sentence means “El vuelo está listo para embarcar.”?",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "The flight is ready for boarding.",
+              "Where are arrivals?",
+              "The airport is very busy."
+            ],
+            "correctAnswer": "The flight is ready for boarding."
+          },
+          {
+            "itemId": "english-a1-m085-reading-ex01-i09",
+            "position": 9,
+            "prompt": "Which English sentence means “¿Dónde están las llegadas?”?",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "Where are arrivals?",
+              "The airport is very busy.",
+              "Where is the check-in desk?"
+            ],
+            "correctAnswer": "Where are arrivals?"
+          },
+          {
+            "itemId": "english-a1-m085-reading-ex01-i10",
+            "position": 10,
+            "prompt": "Which English sentence means “El aeropuerto está muy concurrido.”?",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "The airport is very busy.",
+              "Where is the check-in desk?",
+              "Here is my boarding pass."
+            ],
+            "correctAnswer": "The airport is very busy."
+          }
+        ],
+        "content": {
+          "passageId": "english-a1-m085-reading-passage-01",
+          "passage": "Where is the check-in desk? Here is my boarding pass. What is the gate number? My flight is at eleven. This is my luggage. I have my passport."
+        }
+      }
+    },
+    {
+      "sectionId": "english-a1-m085-writing",
+      "sectionKey": "writing",
+      "position": 6,
+      "title": "writing",
+      "exercise": {
+        "exerciseId": "english-a1-m085-writing-ex01",
+        "type": "dictation",
+        "items": [
+          {
+            "itemId": "english-a1-m085-writing-ex01-i01",
+            "position": 1,
+            "audio": "tts:en-GB:Where is the check-in desk?",
+            "expectedAnswer": "Where is the check-in desk?",
+            "evaluation": {
+              "type": "normalised_text"
+            }
+          },
+          {
+            "itemId": "english-a1-m085-writing-ex01-i02",
+            "position": 2,
+            "audio": "tts:en-GB:Here is my boarding pass.",
+            "expectedAnswer": "Here is my boarding pass.",
+            "evaluation": {
+              "type": "normalised_text"
+            }
+          },
+          {
+            "itemId": "english-a1-m085-writing-ex01-i03",
+            "position": 3,
+            "audio": "tts:en-GB:What is the gate number?",
+            "expectedAnswer": "What is the gate number?",
+            "evaluation": {
+              "type": "normalised_text"
+            }
+          },
+          {
+            "itemId": "english-a1-m085-writing-ex01-i04",
+            "position": 4,
+            "audio": "tts:en-GB:My flight is at eleven.",
+            "expectedAnswer": "My flight is at eleven.",
+            "evaluation": {
+              "type": "normalised_text"
+            }
+          },
+          {
+            "itemId": "english-a1-m085-writing-ex01-i05",
+            "position": 5,
+            "audio": "tts:en-GB:This is my luggage.",
+            "expectedAnswer": "This is my luggage.",
+            "evaluation": {
+              "type": "normalised_text"
+            }
+          },
+          {
+            "itemId": "english-a1-m085-writing-ex01-i06",
+            "position": 6,
+            "audio": "tts:en-GB:I have my passport.",
+            "expectedAnswer": "I have my passport.",
+            "evaluation": {
+              "type": "normalised_text"
+            }
+          },
+          {
+            "itemId": "english-a1-m085-writing-ex01-i07",
+            "position": 7,
+            "audio": "tts:en-GB:Go to security, please.",
+            "expectedAnswer": "Go to security, please.",
+            "evaluation": {
+              "type": "normalised_text"
+            }
+          },
+          {
+            "itemId": "english-a1-m085-writing-ex01-i08",
+            "position": 8,
+            "audio": "tts:en-GB:The flight is ready for boarding.",
+            "expectedAnswer": "The flight is ready for boarding.",
+            "evaluation": {
+              "type": "normalised_text"
+            }
+          },
+          {
+            "itemId": "english-a1-m085-writing-ex01-i09",
+            "position": 9,
+            "audio": "tts:en-GB:Where are arrivals?",
+            "expectedAnswer": "Where are arrivals?",
+            "evaluation": {
+              "type": "normalised_text"
+            }
+          },
+          {
+            "itemId": "english-a1-m085-writing-ex01-i10",
+            "position": 10,
+            "audio": "tts:en-GB:The airport is very busy.",
+            "expectedAnswer": "The airport is very busy.",
+            "evaluation": {
+              "type": "normalised_text"
+            }
+          }
+        ],
+        "writingTask": "Escribe 5–6 frases sobre at the airport. Utiliza al menos cinco palabras de la misión y la estructura have got and there is/are for accommodation.",
+        "modelText": "Where is the check-in desk? Here is my boarding pass. What is the gate number? My flight is at eleven. This is my luggage. I have my passport."
+      }
+    },
+    {
+      "sectionId": "english-a1-m085-speaking",
+      "sectionKey": "speaking",
+      "position": 7,
+      "title": "speaking",
+      "exercise": {
+        "exerciseId": "english-a1-m085-speaking-ex01",
+        "type": "speaking_prompts",
+        "items": [
+          {
+            "itemId": "english-a1-m085-speaking-ex01-i01",
+            "position": 1,
+            "prompt": "Say a sentence about this situation: ¿Dónde está el mostrador de facturación?",
+            "modelAnswer": "Where is the check-in desk?",
+            "evaluation": {
+              "type": "transcription_feedback",
+              "transcriptionSeparateFromPronunciation": true
+            }
+          },
+          {
+            "itemId": "english-a1-m085-speaking-ex01-i02",
+            "position": 2,
+            "prompt": "Say a sentence about this situation: Aquí está mi tarjeta de embarque.",
+            "modelAnswer": "Here is my boarding pass.",
+            "evaluation": {
+              "type": "transcription_feedback",
+              "transcriptionSeparateFromPronunciation": true
+            }
+          },
+          {
+            "itemId": "english-a1-m085-speaking-ex01-i03",
+            "position": 3,
+            "prompt": "Say a sentence about this situation: ¿Cuál es el número de puerta?",
+            "modelAnswer": "What is the gate number?",
+            "evaluation": {
+              "type": "transcription_feedback",
+              "transcriptionSeparateFromPronunciation": true
+            }
+          },
+          {
+            "itemId": "english-a1-m085-speaking-ex01-i04",
+            "position": 4,
+            "prompt": "Say a sentence about this situation: Mi vuelo es a las once.",
+            "modelAnswer": "My flight is at eleven.",
+            "evaluation": {
+              "type": "transcription_feedback",
+              "transcriptionSeparateFromPronunciation": true
+            }
+          },
+          {
+            "itemId": "english-a1-m085-speaking-ex01-i05",
+            "position": 5,
+            "prompt": "Say a sentence about this situation: Este es mi equipaje.",
+            "modelAnswer": "This is my luggage.",
+            "evaluation": {
+              "type": "transcription_feedback",
+              "transcriptionSeparateFromPronunciation": true
+            }
+          },
+          {
+            "itemId": "english-a1-m085-speaking-ex01-i06",
+            "position": 6,
+            "prompt": "Say a sentence about this situation: Tengo mi pasaporte.",
+            "modelAnswer": "I have my passport.",
+            "evaluation": {
+              "type": "transcription_feedback",
+              "transcriptionSeparateFromPronunciation": true
+            }
+          },
+          {
+            "itemId": "english-a1-m085-speaking-ex01-i07",
+            "position": 7,
+            "prompt": "Say a sentence about this situation: Ve al control de seguridad, por favor.",
+            "modelAnswer": "Go to security, please.",
+            "evaluation": {
+              "type": "transcription_feedback",
+              "transcriptionSeparateFromPronunciation": true
+            }
+          },
+          {
+            "itemId": "english-a1-m085-speaking-ex01-i08",
+            "position": 8,
+            "prompt": "Say a sentence about this situation: El vuelo está listo para embarcar.",
+            "modelAnswer": "The flight is ready for boarding.",
+            "evaluation": {
+              "type": "transcription_feedback",
+              "transcriptionSeparateFromPronunciation": true
+            }
+          },
+          {
+            "itemId": "english-a1-m085-speaking-ex01-i09",
+            "position": 9,
+            "prompt": "Say a sentence about this situation: ¿Dónde están las llegadas?",
+            "modelAnswer": "Where are arrivals?",
+            "evaluation": {
+              "type": "transcription_feedback",
+              "transcriptionSeparateFromPronunciation": true
+            }
+          },
+          {
+            "itemId": "english-a1-m085-speaking-ex01-i10",
+            "position": 10,
+            "prompt": "Say a sentence about this situation: El aeropuerto está muy concurrido.",
+            "modelAnswer": "The airport is very busy.",
+            "evaluation": {
+              "type": "transcription_feedback",
+              "transcriptionSeparateFromPronunciation": true
+            }
+          }
+        ]
+      }
+    },
+    {
+      "sectionId": "english-a1-m085-listening",
+      "sectionKey": "listening",
+      "position": 8,
+      "title": "listening",
+      "exercise": {
+        "exerciseId": "english-a1-m085-listening-ex01",
+        "type": "listening_gap_fill",
+        "items": [
+          {
+            "itemId": "english-a1-m085-listening-ex01-i01",
+            "position": 1,
+            "gapToken": "[[gap-01]]",
+            "expectedWordId": "english-a1-m085-listening-word-01"
+          },
+          {
+            "itemId": "english-a1-m085-listening-ex01-i02",
+            "position": 2,
+            "gapToken": "[[gap-02]]",
+            "expectedWordId": "english-a1-m085-listening-word-02"
+          },
+          {
+            "itemId": "english-a1-m085-listening-ex01-i03",
+            "position": 3,
+            "gapToken": "[[gap-03]]",
+            "expectedWordId": "english-a1-m085-listening-word-03"
+          },
+          {
+            "itemId": "english-a1-m085-listening-ex01-i04",
+            "position": 4,
+            "gapToken": "[[gap-04]]",
+            "expectedWordId": "english-a1-m085-listening-word-04"
+          },
+          {
+            "itemId": "english-a1-m085-listening-ex01-i05",
+            "position": 5,
+            "gapToken": "[[gap-05]]",
+            "expectedWordId": "english-a1-m085-listening-word-05"
+          },
+          {
+            "itemId": "english-a1-m085-listening-ex01-i06",
+            "position": 6,
+            "gapToken": "[[gap-06]]",
+            "expectedWordId": "english-a1-m085-listening-word-06"
+          },
+          {
+            "itemId": "english-a1-m085-listening-ex01-i07",
+            "position": 7,
+            "gapToken": "[[gap-07]]",
+            "expectedWordId": "english-a1-m085-listening-word-07"
+          },
+          {
+            "itemId": "english-a1-m085-listening-ex01-i08",
+            "position": 8,
+            "gapToken": "[[gap-08]]",
+            "expectedWordId": "english-a1-m085-listening-word-08"
+          },
+          {
+            "itemId": "english-a1-m085-listening-ex01-i09",
+            "position": 9,
+            "gapToken": "[[gap-09]]",
+            "expectedWordId": "english-a1-m085-listening-word-09"
+          },
+          {
+            "itemId": "english-a1-m085-listening-ex01-i10",
+            "position": 10,
+            "gapToken": "[[gap-10]]",
+            "expectedWordId": "english-a1-m085-listening-word-10"
+          }
+        ],
+        "content": {
+          "audio": "tts:en-GB:The key words for At the Airport are: airport, boarding pass, gate, flight, luggage, passport, check-in, security, departure, arrivals. Listen and repeat each word carefully.",
+          "audioLocale": "en-GB",
+          "transcriptTemplate": "The key words for At the Airport are: [[gap-01]], [[gap-02]], [[gap-03]], [[gap-04]], [[gap-05]], [[gap-06]], [[gap-07]], [[gap-08]], [[gap-09]], [[gap-10]]. Listen and repeat each word carefully.",
+          "wordBank": [
+            {
+              "wordId": "english-a1-m085-listening-word-01",
+              "word": "airport"
+            },
+            {
+              "wordId": "english-a1-m085-listening-word-02",
+              "word": "boarding pass"
+            },
+            {
+              "wordId": "english-a1-m085-listening-word-03",
+              "word": "gate"
+            },
+            {
+              "wordId": "english-a1-m085-listening-word-04",
+              "word": "flight"
+            },
+            {
+              "wordId": "english-a1-m085-listening-word-05",
+              "word": "luggage"
+            },
+            {
+              "wordId": "english-a1-m085-listening-word-06",
+              "word": "passport"
+            },
+            {
+              "wordId": "english-a1-m085-listening-word-07",
+              "word": "check-in"
+            },
+            {
+              "wordId": "english-a1-m085-listening-word-08",
+              "word": "security"
+            },
+            {
+              "wordId": "english-a1-m085-listening-word-09",
+              "word": "departure"
+            },
+            {
+              "wordId": "english-a1-m085-listening-word-10",
+              "word": "arrivals"
+            }
+          ],
+          "interaction": "select_place_move_replace"
+        }
+      }
+    }
+  ]
+}

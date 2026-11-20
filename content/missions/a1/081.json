@@ -1,0 +1,1206 @@
+{
+  "schemaVersion": "1.2.0",
+  "contentVersion": 1,
+  "course": {
+    "courseId": "english-a1",
+    "level": "A1",
+    "language": "en-GB"
+  },
+  "unit": {
+    "unitId": "english-a1-unit-09",
+    "courseId": "english-a1",
+    "position": 9,
+    "title": "Town, transport and travel"
+  },
+  "mission": {
+    "missionId": "english-a1-m081",
+    "unitId": "english-a1-unit-09",
+    "position": 81,
+    "title": "Getting Around Town"
+  },
+  "sections": [
+    {
+      "sectionId": "english-a1-m081-explore",
+      "sectionKey": "explore",
+      "position": 1,
+      "title": "explore",
+      "exercise": {
+        "exerciseId": "english-a1-m081-explore-ex01",
+        "type": "vocabulary_pairs",
+        "items": [
+          {
+            "itemId": "english-a1-m081-explore-ex01-i01",
+            "position": 1,
+            "english": "bus",
+            "spanish": "autobús",
+            "audio": "tts:en-GB:bus"
+          },
+          {
+            "itemId": "english-a1-m081-explore-ex01-i02",
+            "position": 2,
+            "english": "train",
+            "spanish": "tren",
+            "audio": "tts:en-GB:train"
+          },
+          {
+            "itemId": "english-a1-m081-explore-ex01-i03",
+            "position": 3,
+            "english": "taxi",
+            "spanish": "taxi",
+            "audio": "tts:en-GB:taxi"
+          },
+          {
+            "itemId": "english-a1-m081-explore-ex01-i04",
+            "position": 4,
+            "english": "bike",
+            "spanish": "bicicleta",
+            "audio": "tts:en-GB:bike"
+          },
+          {
+            "itemId": "english-a1-m081-explore-ex01-i05",
+            "position": 5,
+            "english": "underground",
+            "spanish": "metro",
+            "audio": "tts:en-GB:underground"
+          },
+          {
+            "itemId": "english-a1-m081-explore-ex01-i06",
+            "position": 6,
+            "english": "ticket",
+            "spanish": "billete",
+            "audio": "tts:en-GB:ticket"
+          },
+          {
+            "itemId": "english-a1-m081-explore-ex01-i07",
+            "position": 7,
+            "english": "stop",
+            "spanish": "parada",
+            "audio": "tts:en-GB:stop"
+          },
+          {
+            "itemId": "english-a1-m081-explore-ex01-i08",
+            "position": 8,
+            "english": "station",
+            "spanish": "estación",
+            "audio": "tts:en-GB:station"
+          },
+          {
+            "itemId": "english-a1-m081-explore-ex01-i09",
+            "position": 9,
+            "english": "platform",
+            "spanish": "andén",
+            "audio": "tts:en-GB:platform"
+          },
+          {
+            "itemId": "english-a1-m081-explore-ex01-i10",
+            "position": 10,
+            "english": "city centre",
+            "spanish": "centro de la ciudad",
+            "audio": "tts:en-GB:city centre"
+          }
+        ],
+        "theory": {
+          "title": "Vocabulary: Getting Around Town",
+          "explanation": "Explora diez palabras y expresiones sobre getting around town. Escucha el modelo británico y relaciona cada palabra con su significado.",
+          "patterns": [
+            {
+              "label": "Useful language",
+              "pattern": "Short question + short answer",
+              "examples": [
+                "I go by bus.",
+                "Where is the station?",
+                "I need a ticket."
+              ]
+            }
+          ],
+          "tip": "Repite las expresiones y crea un ejemplo relacionado con tu vida."
+        }
+      }
+    },
+    {
+      "sectionId": "english-a1-m081-practice",
+      "sectionKey": "practice",
+      "position": 2,
+      "title": "practice",
+      "exercise": {
+        "exerciseId": "english-a1-m081-practice-ex01",
+        "type": "mixed_practice",
+        "items": [
+          {
+            "itemId": "english-a1-m081-practice-ex01-i01",
+            "position": 1,
+            "taskType": "translation_multiple_choice",
+            "prompt": "Traduce al español: “I go by bus.”",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "Voy en autobús.",
+              "La parada de autobús está cerca.",
+              "Voy en bicicleta."
+            ],
+            "correctAnswer": "Voy en autobús.",
+            "sourceEnglish": "I go by bus."
+          },
+          {
+            "itemId": "english-a1-m081-practice-ex01-i02",
+            "position": 2,
+            "taskType": "translation_multiple_choice",
+            "prompt": "Traduce al español: “Where is the station?”",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "¿Dónde está la estación?",
+              "¿Puedo coger un taxi?",
+              "El metro está aquí."
+            ],
+            "correctAnswer": "¿Dónde está la estación?",
+            "sourceEnglish": "Where is the station?"
+          },
+          {
+            "itemId": "english-a1-m081-practice-ex01-i03",
+            "position": 3,
+            "taskType": "translation_multiple_choice",
+            "prompt": "Traduce al español: “I need a ticket.”",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "Necesito un billete.",
+              "El tren es rápido.",
+              "¿Qué autobús va al centro?"
+            ],
+            "correctAnswer": "Necesito un billete.",
+            "sourceEnglish": "I need a ticket."
+          },
+          {
+            "itemId": "english-a1-m081-practice-ex01-i04",
+            "position": 4,
+            "taskType": "translation_multiple_choice",
+            "prompt": "Traduce al español: “The bus stop is near.”",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "La parada de autobús está cerca.",
+              "Voy en bicicleta.",
+              "¿Cómo llego allí?"
+            ],
+            "correctAnswer": "La parada de autobús está cerca.",
+            "sourceEnglish": "The bus stop is near."
+          },
+          {
+            "itemId": "english-a1-m081-practice-ex01-i05",
+            "position": 5,
+            "taskType": "translation_multiple_choice",
+            "prompt": "Traduce al español: “Can I take a taxi?”",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "¿Puedo coger un taxi?",
+              "El metro está aquí.",
+              "Voy en autobús."
+            ],
+            "correctAnswer": "¿Puedo coger un taxi?",
+            "sourceEnglish": "Can I take a taxi?"
+          },
+          {
+            "itemId": "english-a1-m081-practice-ex01-i06",
+            "position": 6,
+            "taskType": "translation_multiple_choice",
+            "prompt": "Traduce al español: “The train is fast.”",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "El tren es rápido.",
+              "¿Qué autobús va al centro?",
+              "¿Dónde está la estación?"
+            ],
+            "correctAnswer": "El tren es rápido.",
+            "sourceEnglish": "The train is fast."
+          },
+          {
+            "itemId": "english-a1-m081-practice-ex01-i07",
+            "position": 7,
+            "taskType": "translation_multiple_choice",
+            "prompt": "Traduce al español: “I ride my bike.”",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "Voy en bicicleta.",
+              "¿Cómo llego allí?",
+              "Necesito un billete."
+            ],
+            "correctAnswer": "Voy en bicicleta.",
+            "sourceEnglish": "I ride my bike."
+          },
+          {
+            "itemId": "english-a1-m081-practice-ex01-i08",
+            "position": 8,
+            "taskType": "translation_multiple_choice",
+            "prompt": "Traduce al español: “The underground is here.”",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "El metro está aquí.",
+              "Voy en autobús.",
+              "La parada de autobús está cerca."
+            ],
+            "correctAnswer": "El metro está aquí.",
+            "sourceEnglish": "The underground is here."
+          },
+          {
+            "itemId": "english-a1-m081-practice-ex01-i09",
+            "position": 9,
+            "taskType": "translation_multiple_choice",
+            "prompt": "Traduce al español: “Which bus goes to the centre?”",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "¿Qué autobús va al centro?",
+              "¿Dónde está la estación?",
+              "¿Puedo coger un taxi?"
+            ],
+            "correctAnswer": "¿Qué autobús va al centro?",
+            "sourceEnglish": "Which bus goes to the centre?"
+          },
+          {
+            "itemId": "english-a1-m081-practice-ex01-i10",
+            "position": 10,
+            "taskType": "translation_multiple_choice",
+            "prompt": "Traduce al español: “How do I get there?”",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "¿Cómo llego allí?",
+              "Necesito un billete.",
+              "El tren es rápido."
+            ],
+            "correctAnswer": "¿Cómo llego allí?",
+            "sourceEnglish": "How do I get there?"
+          },
+          {
+            "itemId": "english-a1-m081-practice-ex01-i11",
+            "position": 11,
+            "taskType": "listening_translation_multiple_choice",
+            "prompt": "Escucha el inglés y elige su significado.",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "Voy en autobús.",
+              "¿Puedo coger un taxi?",
+              "El metro está aquí."
+            ],
+            "correctAnswer": "Voy en autobús.",
+            "sourceEnglish": "I go by bus."
+          },
+          {
+            "itemId": "english-a1-m081-practice-ex01-i12",
+            "position": 12,
+            "taskType": "listening_translation_multiple_choice",
+            "prompt": "Escucha el inglés y elige su significado.",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "¿Dónde está la estación?",
+              "El tren es rápido.",
+              "¿Qué autobús va al centro?"
+            ],
+            "correctAnswer": "¿Dónde está la estación?",
+            "sourceEnglish": "Where is the station?"
+          },
+          {
+            "itemId": "english-a1-m081-practice-ex01-i13",
+            "position": 13,
+            "taskType": "listening_translation_multiple_choice",
+            "prompt": "Escucha el inglés y elige su significado.",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "Necesito un billete.",
+              "Voy en bicicleta.",
+              "¿Cómo llego allí?"
+            ],
+            "correctAnswer": "Necesito un billete.",
+            "sourceEnglish": "I need a ticket."
+          },
+          {
+            "itemId": "english-a1-m081-practice-ex01-i14",
+            "position": 14,
+            "taskType": "listening_translation_multiple_choice",
+            "prompt": "Escucha el inglés y elige su significado.",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "La parada de autobús está cerca.",
+              "El metro está aquí.",
+              "Voy en autobús."
+            ],
+            "correctAnswer": "La parada de autobús está cerca.",
+            "sourceEnglish": "The bus stop is near."
+          },
+          {
+            "itemId": "english-a1-m081-practice-ex01-i15",
+            "position": 15,
+            "taskType": "listening_translation_multiple_choice",
+            "prompt": "Escucha el inglés y elige su significado.",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "¿Puedo coger un taxi?",
+              "¿Qué autobús va al centro?",
+              "¿Dónde está la estación?"
+            ],
+            "correctAnswer": "¿Puedo coger un taxi?",
+            "sourceEnglish": "Can I take a taxi?"
+          },
+          {
+            "itemId": "english-a1-m081-practice-ex01-i16",
+            "position": 16,
+            "taskType": "listening_translation_multiple_choice",
+            "prompt": "Escucha el inglés y elige su significado.",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "El tren es rápido.",
+              "¿Cómo llego allí?",
+              "Necesito un billete."
+            ],
+            "correctAnswer": "El tren es rápido.",
+            "sourceEnglish": "The train is fast."
+          },
+          {
+            "itemId": "english-a1-m081-practice-ex01-i17",
+            "position": 17,
+            "taskType": "listening_translation_multiple_choice",
+            "prompt": "Escucha el inglés y elige su significado.",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "Voy en bicicleta.",
+              "Voy en autobús.",
+              "La parada de autobús está cerca."
+            ],
+            "correctAnswer": "Voy en bicicleta.",
+            "sourceEnglish": "I ride my bike."
+          },
+          {
+            "itemId": "english-a1-m081-practice-ex01-i18",
+            "position": 18,
+            "taskType": "listening_translation_multiple_choice",
+            "prompt": "Escucha el inglés y elige su significado.",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "El metro está aquí.",
+              "¿Dónde está la estación?",
+              "¿Puedo coger un taxi?"
+            ],
+            "correctAnswer": "El metro está aquí.",
+            "sourceEnglish": "The underground is here."
+          },
+          {
+            "itemId": "english-a1-m081-practice-ex01-i19",
+            "position": 19,
+            "taskType": "listening_translation_multiple_choice",
+            "prompt": "Escucha el inglés y elige su significado.",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "¿Qué autobús va al centro?",
+              "Necesito un billete.",
+              "El tren es rápido."
+            ],
+            "correctAnswer": "¿Qué autobús va al centro?",
+            "sourceEnglish": "Which bus goes to the centre?"
+          },
+          {
+            "itemId": "english-a1-m081-practice-ex01-i20",
+            "position": 20,
+            "taskType": "listening_translation_multiple_choice",
+            "prompt": "Escucha el inglés y elige su significado.",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "¿Cómo llego allí?",
+              "La parada de autobús está cerca.",
+              "Voy en bicicleta."
+            ],
+            "correctAnswer": "¿Cómo llego allí?",
+            "sourceEnglish": "How do I get there?"
+          }
+        ]
+      }
+    },
+    {
+      "sectionId": "english-a1-m081-grammar",
+      "sectionKey": "grammar",
+      "position": 3,
+      "title": "grammar",
+      "exercise": {
+        "exerciseId": "english-a1-m081-grammar-ex01",
+        "type": "grammar",
+        "items": [
+          {
+            "itemId": "english-a1-m081-grammar-ex01-i01",
+            "position": 1,
+            "prompt": "I go to work ___ bus.",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "by",
+              "on",
+              "in"
+            ],
+            "correctAnswer": "by"
+          },
+          {
+            "itemId": "english-a1-m081-grammar-ex01-i02",
+            "position": 2,
+            "prompt": "We travel ___ train.",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "by",
+              "on",
+              "at"
+            ],
+            "correctAnswer": "by"
+          },
+          {
+            "itemId": "english-a1-m081-grammar-ex01-i03",
+            "position": 3,
+            "prompt": "She goes to school ___ foot.",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "on",
+              "by",
+              "in"
+            ],
+            "correctAnswer": "on"
+          },
+          {
+            "itemId": "english-a1-m081-grammar-ex01-i04",
+            "position": 4,
+            "prompt": "They travel ___ plane.",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "by",
+              "on",
+              "at"
+            ],
+            "correctAnswer": "by"
+          },
+          {
+            "itemId": "english-a1-m081-grammar-ex01-i05",
+            "position": 5,
+            "prompt": "I go ___ the car with my dad.",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "in",
+              "by",
+              "at"
+            ],
+            "correctAnswer": "in"
+          },
+          {
+            "itemId": "english-a1-m081-grammar-ex01-i06",
+            "position": 6,
+            "prompt": "He is ___ the bus now.",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "on",
+              "by",
+              "at"
+            ],
+            "correctAnswer": "on"
+          },
+          {
+            "itemId": "english-a1-m081-grammar-ex01-i07",
+            "position": 7,
+            "prompt": "We go to London ___ train.",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "by",
+              "in",
+              "on"
+            ],
+            "correctAnswer": "by"
+          },
+          {
+            "itemId": "english-a1-m081-grammar-ex01-i08",
+            "position": 8,
+            "prompt": "She travels ___ bike.",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "by",
+              "on",
+              "in"
+            ],
+            "correctAnswer": "by"
+          },
+          {
+            "itemId": "english-a1-m081-grammar-ex01-i09",
+            "position": 9,
+            "prompt": "They are ___ the taxi.",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "in",
+              "by",
+              "at"
+            ],
+            "correctAnswer": "in"
+          },
+          {
+            "itemId": "english-a1-m081-grammar-ex01-i10",
+            "position": 10,
+            "prompt": "I walk to school ___ foot.",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "on",
+              "in",
+              "by"
+            ],
+            "correctAnswer": "on"
+          }
+        ],
+        "theory": {
+          "title": "Prepositions with transport",
+          "explanation": "Usamos by para indicar el medio de transporte: by bus, by train, by plane. Decimos on foot y usamos in/on con algunos vehículos según el contexto.",
+          "patterns": [
+            {
+              "label": "Model",
+              "pattern": "I go by bus",
+              "examples": [
+                "I go by bus",
+                "We travel by train",
+                "I go to school on foot."
+              ]
+            }
+          ],
+          "tip": "Lee los ejemplos y comprueba cómo cambia la estructura."
+        }
+      }
+    },
+    {
+      "sectionId": "english-a1-m081-pronunciation",
+      "sectionKey": "pronunciation",
+      "position": 4,
+      "title": "pronunciation",
+      "exercise": {
+        "exerciseId": "english-a1-m081-pronunciation-ex01",
+        "type": "pronunciation_cards",
+        "items": [
+          {
+            "itemId": "english-a1-m081-pronunciation-ex01-i01",
+            "position": 1,
+            "word": "bus",
+            "translation": "autobús",
+            "pronunciationGuide": "Listen to the en-GB model and keep the final consonant clear.",
+            "audio": "tts:en-GB:bus"
+          },
+          {
+            "itemId": "english-a1-m081-pronunciation-ex01-i02",
+            "position": 2,
+            "word": "train",
+            "translation": "tren",
+            "pronunciationGuide": "Listen to the en-GB model and keep the final consonant clear.",
+            "audio": "tts:en-GB:train"
+          },
+          {
+            "itemId": "english-a1-m081-pronunciation-ex01-i03",
+            "position": 3,
+            "word": "taxi",
+            "translation": "taxi",
+            "pronunciationGuide": "Listen to the en-GB model and keep the final consonant clear.",
+            "audio": "tts:en-GB:taxi"
+          },
+          {
+            "itemId": "english-a1-m081-pronunciation-ex01-i04",
+            "position": 4,
+            "word": "bike",
+            "translation": "bicicleta",
+            "pronunciationGuide": "Listen to the en-GB model and keep the final consonant clear.",
+            "audio": "tts:en-GB:bike"
+          },
+          {
+            "itemId": "english-a1-m081-pronunciation-ex01-i05",
+            "position": 5,
+            "word": "underground",
+            "translation": "metro",
+            "pronunciationGuide": "Listen to the en-GB model and keep the final consonant clear.",
+            "audio": "tts:en-GB:underground"
+          },
+          {
+            "itemId": "english-a1-m081-pronunciation-ex01-i06",
+            "position": 6,
+            "word": "ticket",
+            "translation": "billete",
+            "pronunciationGuide": "Listen to the en-GB model and keep the final consonant clear.",
+            "audio": "tts:en-GB:ticket"
+          },
+          {
+            "itemId": "english-a1-m081-pronunciation-ex01-i07",
+            "position": 7,
+            "word": "stop",
+            "translation": "parada",
+            "pronunciationGuide": "Listen to the en-GB model and keep the final consonant clear.",
+            "audio": "tts:en-GB:stop"
+          },
+          {
+            "itemId": "english-a1-m081-pronunciation-ex01-i08",
+            "position": 8,
+            "word": "station",
+            "translation": "estación",
+            "pronunciationGuide": "Listen to the en-GB model and keep the final consonant clear.",
+            "audio": "tts:en-GB:station"
+          },
+          {
+            "itemId": "english-a1-m081-pronunciation-ex01-i09",
+            "position": 9,
+            "word": "platform",
+            "translation": "andén",
+            "pronunciationGuide": "Listen to the en-GB model and keep the final consonant clear.",
+            "audio": "tts:en-GB:platform"
+          },
+          {
+            "itemId": "english-a1-m081-pronunciation-ex01-i10",
+            "position": 10,
+            "word": "city centre",
+            "translation": "centro de la ciudad",
+            "pronunciationGuide": "Listen to the phrase as one unit and notice its main stress.",
+            "audio": "tts:en-GB:city centre"
+          }
+        ],
+        "focus": "Practica el ritmo y el acento de las palabras clave de Getting Around Town."
+      }
+    },
+    {
+      "sectionId": "english-a1-m081-reading",
+      "sectionKey": "reading",
+      "position": 5,
+      "title": "reading",
+      "exercise": {
+        "exerciseId": "english-a1-m081-reading-ex01",
+        "type": "reading_comprehension",
+        "items": [
+          {
+            "itemId": "english-a1-m081-reading-ex01-i01",
+            "position": 1,
+            "prompt": "Which English sentence means “Voy en autobús.”?",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "I go by bus.",
+              "Where is the station?",
+              "I need a ticket."
+            ],
+            "correctAnswer": "I go by bus."
+          },
+          {
+            "itemId": "english-a1-m081-reading-ex01-i02",
+            "position": 2,
+            "prompt": "Which English sentence means “¿Dónde está la estación?”?",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "Where is the station?",
+              "I need a ticket.",
+              "The bus stop is near."
+            ],
+            "correctAnswer": "Where is the station?"
+          },
+          {
+            "itemId": "english-a1-m081-reading-ex01-i03",
+            "position": 3,
+            "prompt": "Which English sentence means “Necesito un billete.”?",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "I need a ticket.",
+              "The bus stop is near.",
+              "Can I take a taxi?"
+            ],
+            "correctAnswer": "I need a ticket."
+          },
+          {
+            "itemId": "english-a1-m081-reading-ex01-i04",
+            "position": 4,
+            "prompt": "Which English sentence means “La parada de autobús está cerca.”?",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "The bus stop is near.",
+              "Can I take a taxi?",
+              "The train is fast."
+            ],
+            "correctAnswer": "The bus stop is near."
+          },
+          {
+            "itemId": "english-a1-m081-reading-ex01-i05",
+            "position": 5,
+            "prompt": "Which English sentence means “¿Puedo coger un taxi?”?",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "Can I take a taxi?",
+              "The train is fast.",
+              "I ride my bike."
+            ],
+            "correctAnswer": "Can I take a taxi?"
+          },
+          {
+            "itemId": "english-a1-m081-reading-ex01-i06",
+            "position": 6,
+            "prompt": "Which English sentence means “El tren es rápido.”?",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "The train is fast.",
+              "I ride my bike.",
+              "The underground is here."
+            ],
+            "correctAnswer": "The train is fast."
+          },
+          {
+            "itemId": "english-a1-m081-reading-ex01-i07",
+            "position": 7,
+            "prompt": "Which English sentence means “Voy en bicicleta.”?",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "I ride my bike.",
+              "The underground is here.",
+              "Which bus goes to the centre?"
+            ],
+            "correctAnswer": "I ride my bike."
+          },
+          {
+            "itemId": "english-a1-m081-reading-ex01-i08",
+            "position": 8,
+            "prompt": "Which English sentence means “El metro está aquí.”?",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "The underground is here.",
+              "Which bus goes to the centre?",
+              "How do I get there?"
+            ],
+            "correctAnswer": "The underground is here."
+          },
+          {
+            "itemId": "english-a1-m081-reading-ex01-i09",
+            "position": 9,
+            "prompt": "Which English sentence means “¿Qué autobús va al centro?”?",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "Which bus goes to the centre?",
+              "How do I get there?",
+              "I go by bus."
+            ],
+            "correctAnswer": "Which bus goes to the centre?"
+          },
+          {
+            "itemId": "english-a1-m081-reading-ex01-i10",
+            "position": 10,
+            "prompt": "Which English sentence means “¿Cómo llego allí?”?",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "How do I get there?",
+              "I go by bus.",
+              "Where is the station?"
+            ],
+            "correctAnswer": "How do I get there?"
+          }
+        ],
+        "content": {
+          "passageId": "english-a1-m081-reading-passage-01",
+          "passage": "I go by bus. Where is the station? I need a ticket. The bus stop is near. Can I take a taxi? The train is fast."
+        }
+      }
+    },
+    {
+      "sectionId": "english-a1-m081-writing",
+      "sectionKey": "writing",
+      "position": 6,
+      "title": "writing",
+      "exercise": {
+        "exerciseId": "english-a1-m081-writing-ex01",
+        "type": "dictation",
+        "items": [
+          {
+            "itemId": "english-a1-m081-writing-ex01-i01",
+            "position": 1,
+            "audio": "tts:en-GB:I go by bus.",
+            "expectedAnswer": "I go by bus.",
+            "evaluation": {
+              "type": "normalised_text"
+            }
+          },
+          {
+            "itemId": "english-a1-m081-writing-ex01-i02",
+            "position": 2,
+            "audio": "tts:en-GB:Where is the station?",
+            "expectedAnswer": "Where is the station?",
+            "evaluation": {
+              "type": "normalised_text"
+            }
+          },
+          {
+            "itemId": "english-a1-m081-writing-ex01-i03",
+            "position": 3,
+            "audio": "tts:en-GB:I need a ticket.",
+            "expectedAnswer": "I need a ticket.",
+            "evaluation": {
+              "type": "normalised_text"
+            }
+          },
+          {
+            "itemId": "english-a1-m081-writing-ex01-i04",
+            "position": 4,
+            "audio": "tts:en-GB:The bus stop is near.",
+            "expectedAnswer": "The bus stop is near.",
+            "evaluation": {
+              "type": "normalised_text"
+            }
+          },
+          {
+            "itemId": "english-a1-m081-writing-ex01-i05",
+            "position": 5,
+            "audio": "tts:en-GB:Can I take a taxi?",
+            "expectedAnswer": "Can I take a taxi?",
+            "evaluation": {
+              "type": "normalised_text"
+            }
+          },
+          {
+            "itemId": "english-a1-m081-writing-ex01-i06",
+            "position": 6,
+            "audio": "tts:en-GB:The train is fast.",
+            "expectedAnswer": "The train is fast.",
+            "evaluation": {
+              "type": "normalised_text"
+            }
+          },
+          {
+            "itemId": "english-a1-m081-writing-ex01-i07",
+            "position": 7,
+            "audio": "tts:en-GB:I ride my bike.",
+            "expectedAnswer": "I ride my bike.",
+            "evaluation": {
+              "type": "normalised_text"
+            }
+          },
+          {
+            "itemId": "english-a1-m081-writing-ex01-i08",
+            "position": 8,
+            "audio": "tts:en-GB:The underground is here.",
+            "expectedAnswer": "The underground is here.",
+            "evaluation": {
+              "type": "normalised_text"
+            }
+          },
+          {
+            "itemId": "english-a1-m081-writing-ex01-i09",
+            "position": 9,
+            "audio": "tts:en-GB:Which bus goes to the centre?",
+            "expectedAnswer": "Which bus goes to the centre?",
+            "evaluation": {
+              "type": "normalised_text"
+            }
+          },
+          {
+            "itemId": "english-a1-m081-writing-ex01-i10",
+            "position": 10,
+            "audio": "tts:en-GB:How do I get there?",
+            "expectedAnswer": "How do I get there?",
+            "evaluation": {
+              "type": "normalised_text"
+            }
+          }
+        ],
+        "writingTask": "Escribe 5–6 frases sobre getting around town. Utiliza al menos cinco palabras de la misión y la estructura prepositions with transport.",
+        "modelText": "I go by bus. Where is the station? I need a ticket. The bus stop is near. Can I take a taxi? The train is fast."
+      }
+    },
+    {
+      "sectionId": "english-a1-m081-speaking",
+      "sectionKey": "speaking",
+      "position": 7,
+      "title": "speaking",
+      "exercise": {
+        "exerciseId": "english-a1-m081-speaking-ex01",
+        "type": "speaking_prompts",
+        "items": [
+          {
+            "itemId": "english-a1-m081-speaking-ex01-i01",
+            "position": 1,
+            "prompt": "Say a sentence about this situation: Voy en autobús.",
+            "modelAnswer": "I go by bus.",
+            "evaluation": {
+              "type": "transcription_feedback",
+              "transcriptionSeparateFromPronunciation": true
+            }
+          },
+          {
+            "itemId": "english-a1-m081-speaking-ex01-i02",
+            "position": 2,
+            "prompt": "Say a sentence about this situation: ¿Dónde está la estación?",
+            "modelAnswer": "Where is the station?",
+            "evaluation": {
+              "type": "transcription_feedback",
+              "transcriptionSeparateFromPronunciation": true
+            }
+          },
+          {
+            "itemId": "english-a1-m081-speaking-ex01-i03",
+            "position": 3,
+            "prompt": "Say a sentence about this situation: Necesito un billete.",
+            "modelAnswer": "I need a ticket.",
+            "evaluation": {
+              "type": "transcription_feedback",
+              "transcriptionSeparateFromPronunciation": true
+            }
+          },
+          {
+            "itemId": "english-a1-m081-speaking-ex01-i04",
+            "position": 4,
+            "prompt": "Say a sentence about this situation: La parada de autobús está cerca.",
+            "modelAnswer": "The bus stop is near.",
+            "evaluation": {
+              "type": "transcription_feedback",
+              "transcriptionSeparateFromPronunciation": true
+            }
+          },
+          {
+            "itemId": "english-a1-m081-speaking-ex01-i05",
+            "position": 5,
+            "prompt": "Say a sentence about this situation: ¿Puedo coger un taxi?",
+            "modelAnswer": "Can I take a taxi?",
+            "evaluation": {
+              "type": "transcription_feedback",
+              "transcriptionSeparateFromPronunciation": true
+            }
+          },
+          {
+            "itemId": "english-a1-m081-speaking-ex01-i06",
+            "position": 6,
+            "prompt": "Say a sentence about this situation: El tren es rápido.",
+            "modelAnswer": "The train is fast.",
+            "evaluation": {
+              "type": "transcription_feedback",
+              "transcriptionSeparateFromPronunciation": true
+            }
+          },
+          {
+            "itemId": "english-a1-m081-speaking-ex01-i07",
+            "position": 7,
+            "prompt": "Say a sentence about this situation: Voy en bicicleta.",
+            "modelAnswer": "I ride my bike.",
+            "evaluation": {
+              "type": "transcription_feedback",
+              "transcriptionSeparateFromPronunciation": true
+            }
+          },
+          {
+            "itemId": "english-a1-m081-speaking-ex01-i08",
+            "position": 8,
+            "prompt": "Say a sentence about this situation: El metro está aquí.",
+            "modelAnswer": "The underground is here.",
+            "evaluation": {
+              "type": "transcription_feedback",
+              "transcriptionSeparateFromPronunciation": true
+            }
+          },
+          {
+            "itemId": "english-a1-m081-speaking-ex01-i09",
+            "position": 9,
+            "prompt": "Say a sentence about this situation: ¿Qué autobús va al centro?",
+            "modelAnswer": "Which bus goes to the centre?",
+            "evaluation": {
+              "type": "transcription_feedback",
+              "transcriptionSeparateFromPronunciation": true
+            }
+          },
+          {
+            "itemId": "english-a1-m081-speaking-ex01-i10",
+            "position": 10,
+            "prompt": "Say a sentence about this situation: ¿Cómo llego allí?",
+            "modelAnswer": "How do I get there?",
+            "evaluation": {
+              "type": "transcription_feedback",
+              "transcriptionSeparateFromPronunciation": true
+            }
+          }
+        ]
+      }
+    },
+    {
+      "sectionId": "english-a1-m081-listening",
+      "sectionKey": "listening",
+      "position": 8,
+      "title": "listening",
+      "exercise": {
+        "exerciseId": "english-a1-m081-listening-ex01",
+        "type": "listening_gap_fill",
+        "items": [
+          {
+            "itemId": "english-a1-m081-listening-ex01-i01",
+            "position": 1,
+            "gapToken": "[[gap-01]]",
+            "expectedWordId": "english-a1-m081-listening-word-01"
+          },
+          {
+            "itemId": "english-a1-m081-listening-ex01-i02",
+            "position": 2,
+            "gapToken": "[[gap-02]]",
+            "expectedWordId": "english-a1-m081-listening-word-02"
+          },
+          {
+            "itemId": "english-a1-m081-listening-ex01-i03",
+            "position": 3,
+            "gapToken": "[[gap-03]]",
+            "expectedWordId": "english-a1-m081-listening-word-03"
+          },
+          {
+            "itemId": "english-a1-m081-listening-ex01-i04",
+            "position": 4,
+            "gapToken": "[[gap-04]]",
+            "expectedWordId": "english-a1-m081-listening-word-04"
+          },
+          {
+            "itemId": "english-a1-m081-listening-ex01-i05",
+            "position": 5,
+            "gapToken": "[[gap-05]]",
+            "expectedWordId": "english-a1-m081-listening-word-05"
+          },
+          {
+            "itemId": "english-a1-m081-listening-ex01-i06",
+            "position": 6,
+            "gapToken": "[[gap-06]]",
+            "expectedWordId": "english-a1-m081-listening-word-06"
+          },
+          {
+            "itemId": "english-a1-m081-listening-ex01-i07",
+            "position": 7,
+            "gapToken": "[[gap-07]]",
+            "expectedWordId": "english-a1-m081-listening-word-07"
+          },
+          {
+            "itemId": "english-a1-m081-listening-ex01-i08",
+            "position": 8,
+            "gapToken": "[[gap-08]]",
+            "expectedWordId": "english-a1-m081-listening-word-08"
+          },
+          {
+            "itemId": "english-a1-m081-listening-ex01-i09",
+            "position": 9,
+            "gapToken": "[[gap-09]]",
+            "expectedWordId": "english-a1-m081-listening-word-09"
+          },
+          {
+            "itemId": "english-a1-m081-listening-ex01-i10",
+            "position": 10,
+            "gapToken": "[[gap-10]]",
+            "expectedWordId": "english-a1-m081-listening-word-10"
+          }
+        ],
+        "content": {
+          "audio": "tts:en-GB:The key words for Getting Around Town are: bus, train, taxi, bike, underground, ticket, stop, station, platform, city centre. Listen and repeat each word carefully.",
+          "audioLocale": "en-GB",
+          "transcriptTemplate": "The key words for Getting Around Town are: [[gap-01]], [[gap-02]], [[gap-03]], [[gap-04]], [[gap-05]], [[gap-06]], [[gap-07]], [[gap-08]], [[gap-09]], [[gap-10]]. Listen and repeat each word carefully.",
+          "wordBank": [
+            {
+              "wordId": "english-a1-m081-listening-word-01",
+              "word": "bus"
+            },
+            {
+              "wordId": "english-a1-m081-listening-word-02",
+              "word": "train"
+            },
+            {
+              "wordId": "english-a1-m081-listening-word-03",
+              "word": "taxi"
+            },
+            {
+              "wordId": "english-a1-m081-listening-word-04",
+              "word": "bike"
+            },
+            {
+              "wordId": "english-a1-m081-listening-word-05",
+              "word": "underground"
+            },
+            {
+              "wordId": "english-a1-m081-listening-word-06",
+              "word": "ticket"
+            },
+            {
+              "wordId": "english-a1-m081-listening-word-07",
+              "word": "stop"
+            },
+            {
+              "wordId": "english-a1-m081-listening-word-08",
+              "word": "station"
+            },
+            {
+              "wordId": "english-a1-m081-listening-word-09",
+              "word": "platform"
+            },
+            {
+              "wordId": "english-a1-m081-listening-word-10",
+              "word": "city centre"
+            }
+          ],
+          "interaction": "select_place_move_replace"
+        }
+      }
+    }
+  ]
+}

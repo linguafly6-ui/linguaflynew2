@@ -1,0 +1,1205 @@
+{
+  "schemaVersion": "1.2.0",
+  "contentVersion": 1,
+  "course": {
+    "courseId": "english-a1",
+    "level": "A1",
+    "language": "en-GB"
+  },
+  "unit": {
+    "unitId": "english-a1-unit-09",
+    "courseId": "english-a1",
+    "position": 9,
+    "title": "Town, transport and travel"
+  },
+  "mission": {
+    "missionId": "english-a1-m084",
+    "unitId": "english-a1-unit-09",
+    "position": 84,
+    "title": "At the Train Station"
+  },
+  "sections": [
+    {
+      "sectionId": "english-a1-m084-explore",
+      "sectionKey": "explore",
+      "position": 1,
+      "title": "explore",
+      "exercise": {
+        "exerciseId": "english-a1-m084-explore-ex01",
+        "type": "vocabulary_pairs",
+        "items": [
+          {
+            "itemId": "english-a1-m084-explore-ex01-i01",
+            "position": 1,
+            "english": "platform",
+            "spanish": "andén",
+            "audio": "tts:en-GB:platform"
+          },
+          {
+            "itemId": "english-a1-m084-explore-ex01-i02",
+            "position": 2,
+            "english": "ticket",
+            "spanish": "billete",
+            "audio": "tts:en-GB:ticket"
+          },
+          {
+            "itemId": "english-a1-m084-explore-ex01-i03",
+            "position": 3,
+            "english": "return",
+            "spanish": "ida y vuelta",
+            "audio": "tts:en-GB:return"
+          },
+          {
+            "itemId": "english-a1-m084-explore-ex01-i04",
+            "position": 4,
+            "english": "single",
+            "spanish": "solo ida",
+            "audio": "tts:en-GB:single"
+          },
+          {
+            "itemId": "english-a1-m084-explore-ex01-i05",
+            "position": 5,
+            "english": "departure",
+            "spanish": "salida",
+            "audio": "tts:en-GB:departure"
+          },
+          {
+            "itemId": "english-a1-m084-explore-ex01-i06",
+            "position": 6,
+            "english": "arrival",
+            "spanish": "llegada",
+            "audio": "tts:en-GB:arrival"
+          },
+          {
+            "itemId": "english-a1-m084-explore-ex01-i07",
+            "position": 7,
+            "english": "train",
+            "spanish": "tren",
+            "audio": "tts:en-GB:train"
+          },
+          {
+            "itemId": "english-a1-m084-explore-ex01-i08",
+            "position": 8,
+            "english": "station",
+            "spanish": "estación",
+            "audio": "tts:en-GB:station"
+          },
+          {
+            "itemId": "english-a1-m084-explore-ex01-i09",
+            "position": 9,
+            "english": "timetable",
+            "spanish": "horario",
+            "audio": "tts:en-GB:timetable"
+          },
+          {
+            "itemId": "english-a1-m084-explore-ex01-i10",
+            "position": 10,
+            "english": "ticket office",
+            "spanish": "taquilla",
+            "audio": "tts:en-GB:ticket office"
+          }
+        ],
+        "theory": {
+          "title": "Vocabulary: At the Train Station",
+          "explanation": "Explora diez palabras y expresiones sobre at the train station. Escucha el modelo británico y relaciona cada palabra con su significado.",
+          "patterns": [
+            {
+              "label": "Useful language",
+              "pattern": "Short question + short answer",
+              "examples": [
+                "A return ticket, please.",
+                "A single ticket to Oxford, please.",
+                "Which platform is it?"
+              ]
+            }
+          ],
+          "tip": "Repite las expresiones y crea un ejemplo relacionado con tu vida."
+        }
+      }
+    },
+    {
+      "sectionId": "english-a1-m084-practice",
+      "sectionKey": "practice",
+      "position": 2,
+      "title": "practice",
+      "exercise": {
+        "exerciseId": "english-a1-m084-practice-ex01",
+        "type": "mixed_practice",
+        "items": [
+          {
+            "itemId": "english-a1-m084-practice-ex01-i01",
+            "position": 1,
+            "taskType": "translation_multiple_choice",
+            "prompt": "Traduce al español: “A return ticket, please.”",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "Un billete de ida y vuelta, por favor.",
+              "El tren sale a las diez.",
+              "El tren llega tarde."
+            ],
+            "correctAnswer": "Un billete de ida y vuelta, por favor.",
+            "sourceEnglish": "A return ticket, please."
+          },
+          {
+            "itemId": "english-a1-m084-practice-ex01-i02",
+            "position": 2,
+            "taskType": "translation_multiple_choice",
+            "prompt": "Traduce al español: “A single ticket to Oxford, please.”",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "Un billete de solo ida a Oxford, por favor.",
+              "¿A qué hora es la llegada?",
+              "¿Dónde está la taquilla?"
+            ],
+            "correctAnswer": "Un billete de solo ida a Oxford, por favor.",
+            "sourceEnglish": "A single ticket to Oxford, please."
+          },
+          {
+            "itemId": "english-a1-m084-practice-ex01-i03",
+            "position": 3,
+            "taskType": "translation_multiple_choice",
+            "prompt": "Traduce al español: “Which platform is it?”",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "¿En qué andén es?",
+              "La salida es a las nueve.",
+              "Por favor, consulta el horario."
+            ],
+            "correctAnswer": "¿En qué andén es?",
+            "sourceEnglish": "Which platform is it?"
+          },
+          {
+            "itemId": "english-a1-m084-practice-ex01-i04",
+            "position": 4,
+            "taskType": "translation_multiple_choice",
+            "prompt": "Traduce al español: “The train leaves at ten.”",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "El tren sale a las diez.",
+              "El tren llega tarde.",
+              "Este es mi billete."
+            ],
+            "correctAnswer": "El tren sale a las diez.",
+            "sourceEnglish": "The train leaves at ten."
+          },
+          {
+            "itemId": "english-a1-m084-practice-ex01-i05",
+            "position": 5,
+            "taskType": "translation_multiple_choice",
+            "prompt": "Traduce al español: “What time is the arrival?”",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "¿A qué hora es la llegada?",
+              "¿Dónde está la taquilla?",
+              "Un billete de ida y vuelta, por favor."
+            ],
+            "correctAnswer": "¿A qué hora es la llegada?",
+            "sourceEnglish": "What time is the arrival?"
+          },
+          {
+            "itemId": "english-a1-m084-practice-ex01-i06",
+            "position": 6,
+            "taskType": "translation_multiple_choice",
+            "prompt": "Traduce al español: “The departure is at nine.”",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "La salida es a las nueve.",
+              "Por favor, consulta el horario.",
+              "Un billete de solo ida a Oxford, por favor."
+            ],
+            "correctAnswer": "La salida es a las nueve.",
+            "sourceEnglish": "The departure is at nine."
+          },
+          {
+            "itemId": "english-a1-m084-practice-ex01-i07",
+            "position": 7,
+            "taskType": "translation_multiple_choice",
+            "prompt": "Traduce al español: “The train is late.”",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "El tren llega tarde.",
+              "Este es mi billete.",
+              "¿En qué andén es?"
+            ],
+            "correctAnswer": "El tren llega tarde.",
+            "sourceEnglish": "The train is late."
+          },
+          {
+            "itemId": "english-a1-m084-practice-ex01-i08",
+            "position": 8,
+            "taskType": "translation_multiple_choice",
+            "prompt": "Traduce al español: “Where is the ticket office?”",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "¿Dónde está la taquilla?",
+              "Un billete de ida y vuelta, por favor.",
+              "El tren sale a las diez."
+            ],
+            "correctAnswer": "¿Dónde está la taquilla?",
+            "sourceEnglish": "Where is the ticket office?"
+          },
+          {
+            "itemId": "english-a1-m084-practice-ex01-i09",
+            "position": 9,
+            "taskType": "translation_multiple_choice",
+            "prompt": "Traduce al español: “Please check the timetable.”",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "Por favor, consulta el horario.",
+              "Un billete de solo ida a Oxford, por favor.",
+              "¿A qué hora es la llegada?"
+            ],
+            "correctAnswer": "Por favor, consulta el horario.",
+            "sourceEnglish": "Please check the timetable."
+          },
+          {
+            "itemId": "english-a1-m084-practice-ex01-i10",
+            "position": 10,
+            "taskType": "translation_multiple_choice",
+            "prompt": "Traduce al español: “This is my ticket.”",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "Este es mi billete.",
+              "¿En qué andén es?",
+              "La salida es a las nueve."
+            ],
+            "correctAnswer": "Este es mi billete.",
+            "sourceEnglish": "This is my ticket."
+          },
+          {
+            "itemId": "english-a1-m084-practice-ex01-i11",
+            "position": 11,
+            "taskType": "listening_translation_multiple_choice",
+            "prompt": "Escucha el inglés y elige su significado.",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "Un billete de ida y vuelta, por favor.",
+              "¿A qué hora es la llegada?",
+              "¿Dónde está la taquilla?"
+            ],
+            "correctAnswer": "Un billete de ida y vuelta, por favor.",
+            "sourceEnglish": "A return ticket, please."
+          },
+          {
+            "itemId": "english-a1-m084-practice-ex01-i12",
+            "position": 12,
+            "taskType": "listening_translation_multiple_choice",
+            "prompt": "Escucha el inglés y elige su significado.",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "Un billete de solo ida a Oxford, por favor.",
+              "La salida es a las nueve.",
+              "Por favor, consulta el horario."
+            ],
+            "correctAnswer": "Un billete de solo ida a Oxford, por favor.",
+            "sourceEnglish": "A single ticket to Oxford, please."
+          },
+          {
+            "itemId": "english-a1-m084-practice-ex01-i13",
+            "position": 13,
+            "taskType": "listening_translation_multiple_choice",
+            "prompt": "Escucha el inglés y elige su significado.",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "¿En qué andén es?",
+              "El tren llega tarde.",
+              "Este es mi billete."
+            ],
+            "correctAnswer": "¿En qué andén es?",
+            "sourceEnglish": "Which platform is it?"
+          },
+          {
+            "itemId": "english-a1-m084-practice-ex01-i14",
+            "position": 14,
+            "taskType": "listening_translation_multiple_choice",
+            "prompt": "Escucha el inglés y elige su significado.",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "El tren sale a las diez.",
+              "¿Dónde está la taquilla?",
+              "Un billete de ida y vuelta, por favor."
+            ],
+            "correctAnswer": "El tren sale a las diez.",
+            "sourceEnglish": "The train leaves at ten."
+          },
+          {
+            "itemId": "english-a1-m084-practice-ex01-i15",
+            "position": 15,
+            "taskType": "listening_translation_multiple_choice",
+            "prompt": "Escucha el inglés y elige su significado.",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "¿A qué hora es la llegada?",
+              "Por favor, consulta el horario.",
+              "Un billete de solo ida a Oxford, por favor."
+            ],
+            "correctAnswer": "¿A qué hora es la llegada?",
+            "sourceEnglish": "What time is the arrival?"
+          },
+          {
+            "itemId": "english-a1-m084-practice-ex01-i16",
+            "position": 16,
+            "taskType": "listening_translation_multiple_choice",
+            "prompt": "Escucha el inglés y elige su significado.",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "La salida es a las nueve.",
+              "Este es mi billete.",
+              "¿En qué andén es?"
+            ],
+            "correctAnswer": "La salida es a las nueve.",
+            "sourceEnglish": "The departure is at nine."
+          },
+          {
+            "itemId": "english-a1-m084-practice-ex01-i17",
+            "position": 17,
+            "taskType": "listening_translation_multiple_choice",
+            "prompt": "Escucha el inglés y elige su significado.",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "El tren llega tarde.",
+              "Un billete de ida y vuelta, por favor.",
+              "El tren sale a las diez."
+            ],
+            "correctAnswer": "El tren llega tarde.",
+            "sourceEnglish": "The train is late."
+          },
+          {
+            "itemId": "english-a1-m084-practice-ex01-i18",
+            "position": 18,
+            "taskType": "listening_translation_multiple_choice",
+            "prompt": "Escucha el inglés y elige su significado.",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "¿Dónde está la taquilla?",
+              "Un billete de solo ida a Oxford, por favor.",
+              "¿A qué hora es la llegada?"
+            ],
+            "correctAnswer": "¿Dónde está la taquilla?",
+            "sourceEnglish": "Where is the ticket office?"
+          },
+          {
+            "itemId": "english-a1-m084-practice-ex01-i19",
+            "position": 19,
+            "taskType": "listening_translation_multiple_choice",
+            "prompt": "Escucha el inglés y elige su significado.",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "Por favor, consulta el horario.",
+              "¿En qué andén es?",
+              "La salida es a las nueve."
+            ],
+            "correctAnswer": "Por favor, consulta el horario.",
+            "sourceEnglish": "Please check the timetable."
+          },
+          {
+            "itemId": "english-a1-m084-practice-ex01-i20",
+            "position": 20,
+            "taskType": "listening_translation_multiple_choice",
+            "prompt": "Escucha el inglés y elige su significado.",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "Este es mi billete.",
+              "El tren sale a las diez.",
+              "El tren llega tarde."
+            ],
+            "correctAnswer": "Este es mi billete.",
+            "sourceEnglish": "This is my ticket."
+          }
+        ]
+      }
+    },
+    {
+      "sectionId": "english-a1-m084-grammar",
+      "sectionKey": "grammar",
+      "position": 3,
+      "title": "grammar",
+      "exercise": {
+        "exerciseId": "english-a1-m084-grammar-ex01",
+        "type": "grammar",
+        "items": [
+          {
+            "itemId": "english-a1-m084-grammar-ex01-i01",
+            "position": 1,
+            "prompt": "The train leaves ___ nine.",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "at",
+              "on",
+              "in"
+            ],
+            "correctAnswer": "at"
+          },
+          {
+            "itemId": "english-a1-m084-grammar-ex01-i02",
+            "position": 2,
+            "prompt": "The bus arrives ___ half past ten.",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "at",
+              "on",
+              "in"
+            ],
+            "correctAnswer": "at"
+          },
+          {
+            "itemId": "english-a1-m084-grammar-ex01-i03",
+            "position": 3,
+            "prompt": "We travel ___ Monday.",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "on",
+              "at",
+              "in"
+            ],
+            "correctAnswer": "on"
+          },
+          {
+            "itemId": "english-a1-m084-grammar-ex01-i04",
+            "position": 4,
+            "prompt": "The flight leaves ___ 6:30.",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "at",
+              "on",
+              "in"
+            ],
+            "correctAnswer": "at"
+          },
+          {
+            "itemId": "english-a1-m084-grammar-ex01-i05",
+            "position": 5,
+            "prompt": "The train ___ at eight.",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "leaves",
+              "leave",
+              "leaving"
+            ],
+            "correctAnswer": "leaves"
+          },
+          {
+            "itemId": "english-a1-m084-grammar-ex01-i06",
+            "position": 6,
+            "prompt": "The buses ___ every hour.",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "run",
+              "runs",
+              "running"
+            ],
+            "correctAnswer": "run"
+          },
+          {
+            "itemId": "english-a1-m084-grammar-ex01-i07",
+            "position": 7,
+            "prompt": "What time ___ the plane arrive?",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "does",
+              "do",
+              "is"
+            ],
+            "correctAnswer": "does"
+          },
+          {
+            "itemId": "english-a1-m084-grammar-ex01-i08",
+            "position": 8,
+            "prompt": "The train doesn't ___ here.",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "stop",
+              "stops",
+              "stopping"
+            ],
+            "correctAnswer": "stop"
+          },
+          {
+            "itemId": "english-a1-m084-grammar-ex01-i09",
+            "position": 9,
+            "prompt": "Our bus ___ at platform two.",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "leaves",
+              "leave",
+              "leaving"
+            ],
+            "correctAnswer": "leaves"
+          },
+          {
+            "itemId": "english-a1-m084-grammar-ex01-i10",
+            "position": 10,
+            "prompt": "The station opens ___ 5 a.m.",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "at",
+              "on",
+              "in"
+            ],
+            "correctAnswer": "at"
+          }
+        ],
+        "theory": {
+          "title": "At + time for travel timetables",
+          "explanation": "Usamos at con horas exactas y el presente simple para horarios. On se usa con días: The train leaves at nine on Monday.",
+          "patterns": [
+            {
+              "label": "Model",
+              "pattern": "The train leaves at nine",
+              "examples": [
+                "The train leaves at nine",
+                "The bus arrives at half past ten."
+              ]
+            }
+          ],
+          "tip": "Lee los ejemplos y comprueba cómo cambia la estructura."
+        }
+      }
+    },
+    {
+      "sectionId": "english-a1-m084-pronunciation",
+      "sectionKey": "pronunciation",
+      "position": 4,
+      "title": "pronunciation",
+      "exercise": {
+        "exerciseId": "english-a1-m084-pronunciation-ex01",
+        "type": "pronunciation_cards",
+        "items": [
+          {
+            "itemId": "english-a1-m084-pronunciation-ex01-i01",
+            "position": 1,
+            "word": "platform",
+            "translation": "andén",
+            "pronunciationGuide": "Listen to the en-GB model and keep the final consonant clear.",
+            "audio": "tts:en-GB:platform"
+          },
+          {
+            "itemId": "english-a1-m084-pronunciation-ex01-i02",
+            "position": 2,
+            "word": "ticket",
+            "translation": "billete",
+            "pronunciationGuide": "Listen to the en-GB model and keep the final consonant clear.",
+            "audio": "tts:en-GB:ticket"
+          },
+          {
+            "itemId": "english-a1-m084-pronunciation-ex01-i03",
+            "position": 3,
+            "word": "return",
+            "translation": "ida y vuelta",
+            "pronunciationGuide": "Listen to the en-GB model and keep the final consonant clear.",
+            "audio": "tts:en-GB:return"
+          },
+          {
+            "itemId": "english-a1-m084-pronunciation-ex01-i04",
+            "position": 4,
+            "word": "single",
+            "translation": "solo ida",
+            "pronunciationGuide": "Listen to the en-GB model and keep the final consonant clear.",
+            "audio": "tts:en-GB:single"
+          },
+          {
+            "itemId": "english-a1-m084-pronunciation-ex01-i05",
+            "position": 5,
+            "word": "departure",
+            "translation": "salida",
+            "pronunciationGuide": "Listen to the en-GB model and keep the final consonant clear.",
+            "audio": "tts:en-GB:departure"
+          },
+          {
+            "itemId": "english-a1-m084-pronunciation-ex01-i06",
+            "position": 6,
+            "word": "arrival",
+            "translation": "llegada",
+            "pronunciationGuide": "Listen to the en-GB model and keep the final consonant clear.",
+            "audio": "tts:en-GB:arrival"
+          },
+          {
+            "itemId": "english-a1-m084-pronunciation-ex01-i07",
+            "position": 7,
+            "word": "train",
+            "translation": "tren",
+            "pronunciationGuide": "Listen to the en-GB model and keep the final consonant clear.",
+            "audio": "tts:en-GB:train"
+          },
+          {
+            "itemId": "english-a1-m084-pronunciation-ex01-i08",
+            "position": 8,
+            "word": "station",
+            "translation": "estación",
+            "pronunciationGuide": "Listen to the en-GB model and keep the final consonant clear.",
+            "audio": "tts:en-GB:station"
+          },
+          {
+            "itemId": "english-a1-m084-pronunciation-ex01-i09",
+            "position": 9,
+            "word": "timetable",
+            "translation": "horario",
+            "pronunciationGuide": "Listen to the en-GB model and keep the final consonant clear.",
+            "audio": "tts:en-GB:timetable"
+          },
+          {
+            "itemId": "english-a1-m084-pronunciation-ex01-i10",
+            "position": 10,
+            "word": "ticket office",
+            "translation": "taquilla",
+            "pronunciationGuide": "Listen to the phrase as one unit and notice its main stress.",
+            "audio": "tts:en-GB:ticket office"
+          }
+        ],
+        "focus": "Practica el ritmo y el acento de las palabras clave de At the Train Station."
+      }
+    },
+    {
+      "sectionId": "english-a1-m084-reading",
+      "sectionKey": "reading",
+      "position": 5,
+      "title": "reading",
+      "exercise": {
+        "exerciseId": "english-a1-m084-reading-ex01",
+        "type": "reading_comprehension",
+        "items": [
+          {
+            "itemId": "english-a1-m084-reading-ex01-i01",
+            "position": 1,
+            "prompt": "Which English sentence means “Un billete de ida y vuelta, por favor.”?",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "A return ticket, please.",
+              "A single ticket to Oxford, please.",
+              "Which platform is it?"
+            ],
+            "correctAnswer": "A return ticket, please."
+          },
+          {
+            "itemId": "english-a1-m084-reading-ex01-i02",
+            "position": 2,
+            "prompt": "Which English sentence means “Un billete de solo ida a Oxford, por favor.”?",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "A single ticket to Oxford, please.",
+              "Which platform is it?",
+              "The train leaves at ten."
+            ],
+            "correctAnswer": "A single ticket to Oxford, please."
+          },
+          {
+            "itemId": "english-a1-m084-reading-ex01-i03",
+            "position": 3,
+            "prompt": "Which English sentence means “¿En qué andén es?”?",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "Which platform is it?",
+              "The train leaves at ten.",
+              "What time is the arrival?"
+            ],
+            "correctAnswer": "Which platform is it?"
+          },
+          {
+            "itemId": "english-a1-m084-reading-ex01-i04",
+            "position": 4,
+            "prompt": "Which English sentence means “El tren sale a las diez.”?",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "The train leaves at ten.",
+              "What time is the arrival?",
+              "The departure is at nine."
+            ],
+            "correctAnswer": "The train leaves at ten."
+          },
+          {
+            "itemId": "english-a1-m084-reading-ex01-i05",
+            "position": 5,
+            "prompt": "Which English sentence means “¿A qué hora es la llegada?”?",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "What time is the arrival?",
+              "The departure is at nine.",
+              "The train is late."
+            ],
+            "correctAnswer": "What time is the arrival?"
+          },
+          {
+            "itemId": "english-a1-m084-reading-ex01-i06",
+            "position": 6,
+            "prompt": "Which English sentence means “La salida es a las nueve.”?",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "The departure is at nine.",
+              "The train is late.",
+              "Where is the ticket office?"
+            ],
+            "correctAnswer": "The departure is at nine."
+          },
+          {
+            "itemId": "english-a1-m084-reading-ex01-i07",
+            "position": 7,
+            "prompt": "Which English sentence means “El tren llega tarde.”?",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "The train is late.",
+              "Where is the ticket office?",
+              "Please check the timetable."
+            ],
+            "correctAnswer": "The train is late."
+          },
+          {
+            "itemId": "english-a1-m084-reading-ex01-i08",
+            "position": 8,
+            "prompt": "Which English sentence means “¿Dónde está la taquilla?”?",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "Where is the ticket office?",
+              "Please check the timetable.",
+              "This is my ticket."
+            ],
+            "correctAnswer": "Where is the ticket office?"
+          },
+          {
+            "itemId": "english-a1-m084-reading-ex01-i09",
+            "position": 9,
+            "prompt": "Which English sentence means “Por favor, consulta el horario.”?",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "Please check the timetable.",
+              "This is my ticket.",
+              "A return ticket, please."
+            ],
+            "correctAnswer": "Please check the timetable."
+          },
+          {
+            "itemId": "english-a1-m084-reading-ex01-i10",
+            "position": 10,
+            "prompt": "Which English sentence means “Este es mi billete.”?",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "This is my ticket.",
+              "A return ticket, please.",
+              "A single ticket to Oxford, please."
+            ],
+            "correctAnswer": "This is my ticket."
+          }
+        ],
+        "content": {
+          "passageId": "english-a1-m084-reading-passage-01",
+          "passage": "A return ticket, please. A single ticket to Oxford, please. Which platform is it? The train leaves at ten. What time is the arrival? The departure is at nine."
+        }
+      }
+    },
+    {
+      "sectionId": "english-a1-m084-writing",
+      "sectionKey": "writing",
+      "position": 6,
+      "title": "writing",
+      "exercise": {
+        "exerciseId": "english-a1-m084-writing-ex01",
+        "type": "dictation",
+        "items": [
+          {
+            "itemId": "english-a1-m084-writing-ex01-i01",
+            "position": 1,
+            "audio": "tts:en-GB:A return ticket, please.",
+            "expectedAnswer": "A return ticket, please.",
+            "evaluation": {
+              "type": "normalised_text"
+            }
+          },
+          {
+            "itemId": "english-a1-m084-writing-ex01-i02",
+            "position": 2,
+            "audio": "tts:en-GB:A single ticket to Oxford, please.",
+            "expectedAnswer": "A single ticket to Oxford, please.",
+            "evaluation": {
+              "type": "normalised_text"
+            }
+          },
+          {
+            "itemId": "english-a1-m084-writing-ex01-i03",
+            "position": 3,
+            "audio": "tts:en-GB:Which platform is it?",
+            "expectedAnswer": "Which platform is it?",
+            "evaluation": {
+              "type": "normalised_text"
+            }
+          },
+          {
+            "itemId": "english-a1-m084-writing-ex01-i04",
+            "position": 4,
+            "audio": "tts:en-GB:The train leaves at ten.",
+            "expectedAnswer": "The train leaves at ten.",
+            "evaluation": {
+              "type": "normalised_text"
+            }
+          },
+          {
+            "itemId": "english-a1-m084-writing-ex01-i05",
+            "position": 5,
+            "audio": "tts:en-GB:What time is the arrival?",
+            "expectedAnswer": "What time is the arrival?",
+            "evaluation": {
+              "type": "normalised_text"
+            }
+          },
+          {
+            "itemId": "english-a1-m084-writing-ex01-i06",
+            "position": 6,
+            "audio": "tts:en-GB:The departure is at nine.",
+            "expectedAnswer": "The departure is at nine.",
+            "evaluation": {
+              "type": "normalised_text"
+            }
+          },
+          {
+            "itemId": "english-a1-m084-writing-ex01-i07",
+            "position": 7,
+            "audio": "tts:en-GB:The train is late.",
+            "expectedAnswer": "The train is late.",
+            "evaluation": {
+              "type": "normalised_text"
+            }
+          },
+          {
+            "itemId": "english-a1-m084-writing-ex01-i08",
+            "position": 8,
+            "audio": "tts:en-GB:Where is the ticket office?",
+            "expectedAnswer": "Where is the ticket office?",
+            "evaluation": {
+              "type": "normalised_text"
+            }
+          },
+          {
+            "itemId": "english-a1-m084-writing-ex01-i09",
+            "position": 9,
+            "audio": "tts:en-GB:Please check the timetable.",
+            "expectedAnswer": "Please check the timetable.",
+            "evaluation": {
+              "type": "normalised_text"
+            }
+          },
+          {
+            "itemId": "english-a1-m084-writing-ex01-i10",
+            "position": 10,
+            "audio": "tts:en-GB:This is my ticket.",
+            "expectedAnswer": "This is my ticket.",
+            "evaluation": {
+              "type": "normalised_text"
+            }
+          }
+        ],
+        "writingTask": "Escribe 5–6 frases sobre at the train station. Utiliza al menos cinco palabras de la misión y la estructura at + time for travel timetables.",
+        "modelText": "A return ticket, please. A single ticket to Oxford, please. Which platform is it? The train leaves at ten. What time is the arrival? The departure is at nine."
+      }
+    },
+    {
+      "sectionId": "english-a1-m084-speaking",
+      "sectionKey": "speaking",
+      "position": 7,
+      "title": "speaking",
+      "exercise": {
+        "exerciseId": "english-a1-m084-speaking-ex01",
+        "type": "speaking_prompts",
+        "items": [
+          {
+            "itemId": "english-a1-m084-speaking-ex01-i01",
+            "position": 1,
+            "prompt": "Say a sentence about this situation: Un billete de ida y vuelta, por favor.",
+            "modelAnswer": "A return ticket, please.",
+            "evaluation": {
+              "type": "transcription_feedback",
+              "transcriptionSeparateFromPronunciation": true
+            }
+          },
+          {
+            "itemId": "english-a1-m084-speaking-ex01-i02",
+            "position": 2,
+            "prompt": "Say a sentence about this situation: Un billete de solo ida a Oxford, por favor.",
+            "modelAnswer": "A single ticket to Oxford, please.",
+            "evaluation": {
+              "type": "transcription_feedback",
+              "transcriptionSeparateFromPronunciation": true
+            }
+          },
+          {
+            "itemId": "english-a1-m084-speaking-ex01-i03",
+            "position": 3,
+            "prompt": "Say a sentence about this situation: ¿En qué andén es?",
+            "modelAnswer": "Which platform is it?",
+            "evaluation": {
+              "type": "transcription_feedback",
+              "transcriptionSeparateFromPronunciation": true
+            }
+          },
+          {
+            "itemId": "english-a1-m084-speaking-ex01-i04",
+            "position": 4,
+            "prompt": "Say a sentence about this situation: El tren sale a las diez.",
+            "modelAnswer": "The train leaves at ten.",
+            "evaluation": {
+              "type": "transcription_feedback",
+              "transcriptionSeparateFromPronunciation": true
+            }
+          },
+          {
+            "itemId": "english-a1-m084-speaking-ex01-i05",
+            "position": 5,
+            "prompt": "Say a sentence about this situation: ¿A qué hora es la llegada?",
+            "modelAnswer": "What time is the arrival?",
+            "evaluation": {
+              "type": "transcription_feedback",
+              "transcriptionSeparateFromPronunciation": true
+            }
+          },
+          {
+            "itemId": "english-a1-m084-speaking-ex01-i06",
+            "position": 6,
+            "prompt": "Say a sentence about this situation: La salida es a las nueve.",
+            "modelAnswer": "The departure is at nine.",
+            "evaluation": {
+              "type": "transcription_feedback",
+              "transcriptionSeparateFromPronunciation": true
+            }
+          },
+          {
+            "itemId": "english-a1-m084-speaking-ex01-i07",
+            "position": 7,
+            "prompt": "Say a sentence about this situation: El tren llega tarde.",
+            "modelAnswer": "The train is late.",
+            "evaluation": {
+              "type": "transcription_feedback",
+              "transcriptionSeparateFromPronunciation": true
+            }
+          },
+          {
+            "itemId": "english-a1-m084-speaking-ex01-i08",
+            "position": 8,
+            "prompt": "Say a sentence about this situation: ¿Dónde está la taquilla?",
+            "modelAnswer": "Where is the ticket office?",
+            "evaluation": {
+              "type": "transcription_feedback",
+              "transcriptionSeparateFromPronunciation": true
+            }
+          },
+          {
+            "itemId": "english-a1-m084-speaking-ex01-i09",
+            "position": 9,
+            "prompt": "Say a sentence about this situation: Por favor, consulta el horario.",
+            "modelAnswer": "Please check the timetable.",
+            "evaluation": {
+              "type": "transcription_feedback",
+              "transcriptionSeparateFromPronunciation": true
+            }
+          },
+          {
+            "itemId": "english-a1-m084-speaking-ex01-i10",
+            "position": 10,
+            "prompt": "Say a sentence about this situation: Este es mi billete.",
+            "modelAnswer": "This is my ticket.",
+            "evaluation": {
+              "type": "transcription_feedback",
+              "transcriptionSeparateFromPronunciation": true
+            }
+          }
+        ]
+      }
+    },
+    {
+      "sectionId": "english-a1-m084-listening",
+      "sectionKey": "listening",
+      "position": 8,
+      "title": "listening",
+      "exercise": {
+        "exerciseId": "english-a1-m084-listening-ex01",
+        "type": "listening_gap_fill",
+        "items": [
+          {
+            "itemId": "english-a1-m084-listening-ex01-i01",
+            "position": 1,
+            "gapToken": "[[gap-01]]",
+            "expectedWordId": "english-a1-m084-listening-word-01"
+          },
+          {
+            "itemId": "english-a1-m084-listening-ex01-i02",
+            "position": 2,
+            "gapToken": "[[gap-02]]",
+            "expectedWordId": "english-a1-m084-listening-word-02"
+          },
+          {
+            "itemId": "english-a1-m084-listening-ex01-i03",
+            "position": 3,
+            "gapToken": "[[gap-03]]",
+            "expectedWordId": "english-a1-m084-listening-word-03"
+          },
+          {
+            "itemId": "english-a1-m084-listening-ex01-i04",
+            "position": 4,
+            "gapToken": "[[gap-04]]",
+            "expectedWordId": "english-a1-m084-listening-word-04"
+          },
+          {
+            "itemId": "english-a1-m084-listening-ex01-i05",
+            "position": 5,
+            "gapToken": "[[gap-05]]",
+            "expectedWordId": "english-a1-m084-listening-word-05"
+          },
+          {
+            "itemId": "english-a1-m084-listening-ex01-i06",
+            "position": 6,
+            "gapToken": "[[gap-06]]",
+            "expectedWordId": "english-a1-m084-listening-word-06"
+          },
+          {
+            "itemId": "english-a1-m084-listening-ex01-i07",
+            "position": 7,
+            "gapToken": "[[gap-07]]",
+            "expectedWordId": "english-a1-m084-listening-word-07"
+          },
+          {
+            "itemId": "english-a1-m084-listening-ex01-i08",
+            "position": 8,
+            "gapToken": "[[gap-08]]",
+            "expectedWordId": "english-a1-m084-listening-word-08"
+          },
+          {
+            "itemId": "english-a1-m084-listening-ex01-i09",
+            "position": 9,
+            "gapToken": "[[gap-09]]",
+            "expectedWordId": "english-a1-m084-listening-word-09"
+          },
+          {
+            "itemId": "english-a1-m084-listening-ex01-i10",
+            "position": 10,
+            "gapToken": "[[gap-10]]",
+            "expectedWordId": "english-a1-m084-listening-word-10"
+          }
+        ],
+        "content": {
+          "audio": "tts:en-GB:The key words for At the Train Station are: platform, ticket, return, single, departure, arrival, train, station, timetable, ticket office. Listen and repeat each word carefully.",
+          "audioLocale": "en-GB",
+          "transcriptTemplate": "The key words for At the Train Station are: [[gap-01]], [[gap-02]], [[gap-03]], [[gap-04]], [[gap-05]], [[gap-06]], [[gap-07]], [[gap-08]], [[gap-09]], [[gap-10]]. Listen and repeat each word carefully.",
+          "wordBank": [
+            {
+              "wordId": "english-a1-m084-listening-word-01",
+              "word": "platform"
+            },
+            {
+              "wordId": "english-a1-m084-listening-word-02",
+              "word": "ticket"
+            },
+            {
+              "wordId": "english-a1-m084-listening-word-03",
+              "word": "return"
+            },
+            {
+              "wordId": "english-a1-m084-listening-word-04",
+              "word": "single"
+            },
+            {
+              "wordId": "english-a1-m084-listening-word-05",
+              "word": "departure"
+            },
+            {
+              "wordId": "english-a1-m084-listening-word-06",
+              "word": "arrival"
+            },
+            {
+              "wordId": "english-a1-m084-listening-word-07",
+              "word": "train"
+            },
+            {
+              "wordId": "english-a1-m084-listening-word-08",
+              "word": "station"
+            },
+            {
+              "wordId": "english-a1-m084-listening-word-09",
+              "word": "timetable"
+            },
+            {
+              "wordId": "english-a1-m084-listening-word-10",
+              "word": "ticket office"
+            }
+          ],
+          "interaction": "select_place_move_replace"
+        }
+      }
+    }
+  ]
+}

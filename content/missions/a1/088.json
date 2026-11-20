@@ -1,0 +1,1205 @@
+{
+  "schemaVersion": "1.2.0",
+  "contentVersion": 1,
+  "course": {
+    "courseId": "english-a1",
+    "level": "A1",
+    "language": "en-GB"
+  },
+  "unit": {
+    "unitId": "english-a1-unit-09",
+    "courseId": "english-a1",
+    "position": 9,
+    "title": "Town, transport and travel"
+  },
+  "mission": {
+    "missionId": "english-a1-m088",
+    "unitId": "english-a1-unit-09",
+    "position": 88,
+    "title": "Weather and Seasons"
+  },
+  "sections": [
+    {
+      "sectionId": "english-a1-m088-explore",
+      "sectionKey": "explore",
+      "position": 1,
+      "title": "explore",
+      "exercise": {
+        "exerciseId": "english-a1-m088-explore-ex01",
+        "type": "vocabulary_pairs",
+        "items": [
+          {
+            "itemId": "english-a1-m088-explore-ex01-i01",
+            "position": 1,
+            "english": "sunny",
+            "spanish": "soleado",
+            "audio": "tts:en-GB:sunny"
+          },
+          {
+            "itemId": "english-a1-m088-explore-ex01-i02",
+            "position": 2,
+            "english": "cloudy",
+            "spanish": "nublado",
+            "audio": "tts:en-GB:cloudy"
+          },
+          {
+            "itemId": "english-a1-m088-explore-ex01-i03",
+            "position": 3,
+            "english": "rainy",
+            "spanish": "lluvioso",
+            "audio": "tts:en-GB:rainy"
+          },
+          {
+            "itemId": "english-a1-m088-explore-ex01-i04",
+            "position": 4,
+            "english": "windy",
+            "spanish": "ventoso",
+            "audio": "tts:en-GB:windy"
+          },
+          {
+            "itemId": "english-a1-m088-explore-ex01-i05",
+            "position": 5,
+            "english": "spring",
+            "spanish": "primavera",
+            "audio": "tts:en-GB:spring"
+          },
+          {
+            "itemId": "english-a1-m088-explore-ex01-i06",
+            "position": 6,
+            "english": "summer",
+            "spanish": "verano",
+            "audio": "tts:en-GB:summer"
+          },
+          {
+            "itemId": "english-a1-m088-explore-ex01-i07",
+            "position": 7,
+            "english": "autumn",
+            "spanish": "otoño",
+            "audio": "tts:en-GB:autumn"
+          },
+          {
+            "itemId": "english-a1-m088-explore-ex01-i08",
+            "position": 8,
+            "english": "winter",
+            "spanish": "invierno",
+            "audio": "tts:en-GB:winter"
+          },
+          {
+            "itemId": "english-a1-m088-explore-ex01-i09",
+            "position": 9,
+            "english": "hot",
+            "spanish": "caluroso",
+            "audio": "tts:en-GB:hot"
+          },
+          {
+            "itemId": "english-a1-m088-explore-ex01-i10",
+            "position": 10,
+            "english": "cold",
+            "spanish": "frío",
+            "audio": "tts:en-GB:cold"
+          }
+        ],
+        "theory": {
+          "title": "Vocabulary: Weather and Seasons",
+          "explanation": "Explora diez palabras y expresiones sobre weather and seasons. Escucha el modelo británico y relaciona cada palabra con su significado.",
+          "patterns": [
+            {
+              "label": "Useful language",
+              "pattern": "Short question + short answer",
+              "examples": [
+                "It is sunny today.",
+                "It is cloudy this morning.",
+                "It is rainy in autumn."
+              ]
+            }
+          ],
+          "tip": "Repite las expresiones y crea un ejemplo relacionado con tu vida."
+        }
+      }
+    },
+    {
+      "sectionId": "english-a1-m088-practice",
+      "sectionKey": "practice",
+      "position": 2,
+      "title": "practice",
+      "exercise": {
+        "exerciseId": "english-a1-m088-practice-ex01",
+        "type": "mixed_practice",
+        "items": [
+          {
+            "itemId": "english-a1-m088-practice-ex01-i01",
+            "position": 1,
+            "taskType": "translation_multiple_choice",
+            "prompt": "Traduce al español: “It is sunny today.”",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "Hoy hace sol.",
+              "Hace viento junto al mar.",
+              "El otoño es fresco."
+            ],
+            "correctAnswer": "Hoy hace sol.",
+            "sourceEnglish": "It is sunny today."
+          },
+          {
+            "itemId": "english-a1-m088-practice-ex01-i02",
+            "position": 2,
+            "taskType": "translation_multiple_choice",
+            "prompt": "Traduce al español: “It is cloudy this morning.”",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "Esta mañana está nublado.",
+              "Me gusta la primavera.",
+              "El invierno es frío."
+            ],
+            "correctAnswer": "Esta mañana está nublado.",
+            "sourceEnglish": "It is cloudy this morning."
+          },
+          {
+            "itemId": "english-a1-m088-practice-ex01-i03",
+            "position": 3,
+            "taskType": "translation_multiple_choice",
+            "prompt": "Traduce al español: “It is rainy in autumn.”",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "En otoño llueve.",
+              "El verano es caluroso.",
+              "¿Qué tiempo hace?"
+            ],
+            "correctAnswer": "En otoño llueve.",
+            "sourceEnglish": "It is rainy in autumn."
+          },
+          {
+            "itemId": "english-a1-m088-practice-ex01-i04",
+            "position": 4,
+            "taskType": "translation_multiple_choice",
+            "prompt": "Traduce al español: “It is windy by the sea.”",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "Hace viento junto al mar.",
+              "El otoño es fresco.",
+              "Llévate un paraguas, por favor."
+            ],
+            "correctAnswer": "Hace viento junto al mar.",
+            "sourceEnglish": "It is windy by the sea."
+          },
+          {
+            "itemId": "english-a1-m088-practice-ex01-i05",
+            "position": 5,
+            "taskType": "translation_multiple_choice",
+            "prompt": "Traduce al español: “I like spring.”",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "Me gusta la primavera.",
+              "El invierno es frío.",
+              "Hoy hace sol."
+            ],
+            "correctAnswer": "Me gusta la primavera.",
+            "sourceEnglish": "I like spring."
+          },
+          {
+            "itemId": "english-a1-m088-practice-ex01-i06",
+            "position": 6,
+            "taskType": "translation_multiple_choice",
+            "prompt": "Traduce al español: “Summer is hot.”",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "El verano es caluroso.",
+              "¿Qué tiempo hace?",
+              "Esta mañana está nublado."
+            ],
+            "correctAnswer": "El verano es caluroso.",
+            "sourceEnglish": "Summer is hot."
+          },
+          {
+            "itemId": "english-a1-m088-practice-ex01-i07",
+            "position": 7,
+            "taskType": "translation_multiple_choice",
+            "prompt": "Traduce al español: “Autumn is cool.”",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "El otoño es fresco.",
+              "Llévate un paraguas, por favor.",
+              "En otoño llueve."
+            ],
+            "correctAnswer": "El otoño es fresco.",
+            "sourceEnglish": "Autumn is cool."
+          },
+          {
+            "itemId": "english-a1-m088-practice-ex01-i08",
+            "position": 8,
+            "taskType": "translation_multiple_choice",
+            "prompt": "Traduce al español: “Winter is cold.”",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "El invierno es frío.",
+              "Hoy hace sol.",
+              "Hace viento junto al mar."
+            ],
+            "correctAnswer": "El invierno es frío.",
+            "sourceEnglish": "Winter is cold."
+          },
+          {
+            "itemId": "english-a1-m088-practice-ex01-i09",
+            "position": 9,
+            "taskType": "translation_multiple_choice",
+            "prompt": "Traduce al español: “What is the weather like?”",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "¿Qué tiempo hace?",
+              "Esta mañana está nublado.",
+              "Me gusta la primavera."
+            ],
+            "correctAnswer": "¿Qué tiempo hace?",
+            "sourceEnglish": "What is the weather like?"
+          },
+          {
+            "itemId": "english-a1-m088-practice-ex01-i10",
+            "position": 10,
+            "taskType": "translation_multiple_choice",
+            "prompt": "Traduce al español: “Take an umbrella, please.”",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "Llévate un paraguas, por favor.",
+              "En otoño llueve.",
+              "El verano es caluroso."
+            ],
+            "correctAnswer": "Llévate un paraguas, por favor.",
+            "sourceEnglish": "Take an umbrella, please."
+          },
+          {
+            "itemId": "english-a1-m088-practice-ex01-i11",
+            "position": 11,
+            "taskType": "listening_translation_multiple_choice",
+            "prompt": "Escucha el inglés y elige su significado.",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "Hoy hace sol.",
+              "Me gusta la primavera.",
+              "El invierno es frío."
+            ],
+            "correctAnswer": "Hoy hace sol.",
+            "sourceEnglish": "It is sunny today."
+          },
+          {
+            "itemId": "english-a1-m088-practice-ex01-i12",
+            "position": 12,
+            "taskType": "listening_translation_multiple_choice",
+            "prompt": "Escucha el inglés y elige su significado.",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "Esta mañana está nublado.",
+              "El verano es caluroso.",
+              "¿Qué tiempo hace?"
+            ],
+            "correctAnswer": "Esta mañana está nublado.",
+            "sourceEnglish": "It is cloudy this morning."
+          },
+          {
+            "itemId": "english-a1-m088-practice-ex01-i13",
+            "position": 13,
+            "taskType": "listening_translation_multiple_choice",
+            "prompt": "Escucha el inglés y elige su significado.",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "En otoño llueve.",
+              "El otoño es fresco.",
+              "Llévate un paraguas, por favor."
+            ],
+            "correctAnswer": "En otoño llueve.",
+            "sourceEnglish": "It is rainy in autumn."
+          },
+          {
+            "itemId": "english-a1-m088-practice-ex01-i14",
+            "position": 14,
+            "taskType": "listening_translation_multiple_choice",
+            "prompt": "Escucha el inglés y elige su significado.",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "Hace viento junto al mar.",
+              "El invierno es frío.",
+              "Hoy hace sol."
+            ],
+            "correctAnswer": "Hace viento junto al mar.",
+            "sourceEnglish": "It is windy by the sea."
+          },
+          {
+            "itemId": "english-a1-m088-practice-ex01-i15",
+            "position": 15,
+            "taskType": "listening_translation_multiple_choice",
+            "prompt": "Escucha el inglés y elige su significado.",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "Me gusta la primavera.",
+              "¿Qué tiempo hace?",
+              "Esta mañana está nublado."
+            ],
+            "correctAnswer": "Me gusta la primavera.",
+            "sourceEnglish": "I like spring."
+          },
+          {
+            "itemId": "english-a1-m088-practice-ex01-i16",
+            "position": 16,
+            "taskType": "listening_translation_multiple_choice",
+            "prompt": "Escucha el inglés y elige su significado.",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "El verano es caluroso.",
+              "Llévate un paraguas, por favor.",
+              "En otoño llueve."
+            ],
+            "correctAnswer": "El verano es caluroso.",
+            "sourceEnglish": "Summer is hot."
+          },
+          {
+            "itemId": "english-a1-m088-practice-ex01-i17",
+            "position": 17,
+            "taskType": "listening_translation_multiple_choice",
+            "prompt": "Escucha el inglés y elige su significado.",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "El otoño es fresco.",
+              "Hoy hace sol.",
+              "Hace viento junto al mar."
+            ],
+            "correctAnswer": "El otoño es fresco.",
+            "sourceEnglish": "Autumn is cool."
+          },
+          {
+            "itemId": "english-a1-m088-practice-ex01-i18",
+            "position": 18,
+            "taskType": "listening_translation_multiple_choice",
+            "prompt": "Escucha el inglés y elige su significado.",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "El invierno es frío.",
+              "Esta mañana está nublado.",
+              "Me gusta la primavera."
+            ],
+            "correctAnswer": "El invierno es frío.",
+            "sourceEnglish": "Winter is cold."
+          },
+          {
+            "itemId": "english-a1-m088-practice-ex01-i19",
+            "position": 19,
+            "taskType": "listening_translation_multiple_choice",
+            "prompt": "Escucha el inglés y elige su significado.",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "¿Qué tiempo hace?",
+              "En otoño llueve.",
+              "El verano es caluroso."
+            ],
+            "correctAnswer": "¿Qué tiempo hace?",
+            "sourceEnglish": "What is the weather like?"
+          },
+          {
+            "itemId": "english-a1-m088-practice-ex01-i20",
+            "position": 20,
+            "taskType": "listening_translation_multiple_choice",
+            "prompt": "Escucha el inglés y elige su significado.",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "Llévate un paraguas, por favor.",
+              "Hace viento junto al mar.",
+              "El otoño es fresco."
+            ],
+            "correctAnswer": "Llévate un paraguas, por favor.",
+            "sourceEnglish": "Take an umbrella, please."
+          }
+        ]
+      }
+    },
+    {
+      "sectionId": "english-a1-m088-grammar",
+      "sectionKey": "grammar",
+      "position": 3,
+      "title": "grammar",
+      "exercise": {
+        "exerciseId": "english-a1-m088-grammar-ex01",
+        "type": "grammar",
+        "items": [
+          {
+            "itemId": "english-a1-m088-grammar-ex01-i01",
+            "position": 1,
+            "prompt": "It ___ sunny today.",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "is",
+              "are",
+              "am"
+            ],
+            "correctAnswer": "is"
+          },
+          {
+            "itemId": "english-a1-m088-grammar-ex01-i02",
+            "position": 2,
+            "prompt": "It ___ raining now.",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "is",
+              "are",
+              "do"
+            ],
+            "correctAnswer": "is"
+          },
+          {
+            "itemId": "english-a1-m088-grammar-ex01-i03",
+            "position": 3,
+            "prompt": "It is ___ in winter.",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "cold",
+              "colder",
+              "coldly"
+            ],
+            "correctAnswer": "cold"
+          },
+          {
+            "itemId": "english-a1-m088-grammar-ex01-i04",
+            "position": 4,
+            "prompt": "It is ___ in summer.",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "hot",
+              "hotly",
+              "hottest"
+            ],
+            "correctAnswer": "hot"
+          },
+          {
+            "itemId": "english-a1-m088-grammar-ex01-i05",
+            "position": 5,
+            "prompt": "It ___ often windy here.",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "is",
+              "are",
+              "am"
+            ],
+            "correctAnswer": "is"
+          },
+          {
+            "itemId": "english-a1-m088-grammar-ex01-i06",
+            "position": 6,
+            "prompt": "What is the weather ___ today?",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "like",
+              "likes",
+              "liking"
+            ],
+            "correctAnswer": "like"
+          },
+          {
+            "itemId": "english-a1-m088-grammar-ex01-i07",
+            "position": 7,
+            "prompt": "It isn't ___ today.",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "snowing",
+              "snow",
+              "snows"
+            ],
+            "correctAnswer": "snowing"
+          },
+          {
+            "itemId": "english-a1-m088-grammar-ex01-i08",
+            "position": 8,
+            "prompt": "We go swimming ___ summer.",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "in",
+              "on",
+              "at"
+            ],
+            "correctAnswer": "in"
+          },
+          {
+            "itemId": "english-a1-m088-grammar-ex01-i09",
+            "position": 9,
+            "prompt": "It is cloudy, ___ take an umbrella.",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "so",
+              "because",
+              "but"
+            ],
+            "correctAnswer": "so"
+          },
+          {
+            "itemId": "english-a1-m088-grammar-ex01-i10",
+            "position": 10,
+            "prompt": "It ___ warm in spring.",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "is",
+              "are",
+              "be"
+            ],
+            "correctAnswer": "is"
+          }
+        ],
+        "theory": {
+          "title": "It is + weather adjectives",
+          "explanation": "Usamos It is + adjetivo para describir el tiempo: It is sunny, cold o windy. Podemos hablar de estaciones con in: in summer, in winter.",
+          "patterns": [
+            {
+              "label": "Model",
+              "pattern": "It is sunny today",
+              "examples": [
+                "It is sunny today",
+                "It is cold in winter."
+              ]
+            }
+          ],
+          "tip": "Lee los ejemplos y comprueba cómo cambia la estructura."
+        }
+      }
+    },
+    {
+      "sectionId": "english-a1-m088-pronunciation",
+      "sectionKey": "pronunciation",
+      "position": 4,
+      "title": "pronunciation",
+      "exercise": {
+        "exerciseId": "english-a1-m088-pronunciation-ex01",
+        "type": "pronunciation_cards",
+        "items": [
+          {
+            "itemId": "english-a1-m088-pronunciation-ex01-i01",
+            "position": 1,
+            "word": "sunny",
+            "translation": "soleado",
+            "pronunciationGuide": "Listen to the en-GB model and keep the final consonant clear.",
+            "audio": "tts:en-GB:sunny"
+          },
+          {
+            "itemId": "english-a1-m088-pronunciation-ex01-i02",
+            "position": 2,
+            "word": "cloudy",
+            "translation": "nublado",
+            "pronunciationGuide": "Listen to the en-GB model and keep the final consonant clear.",
+            "audio": "tts:en-GB:cloudy"
+          },
+          {
+            "itemId": "english-a1-m088-pronunciation-ex01-i03",
+            "position": 3,
+            "word": "rainy",
+            "translation": "lluvioso",
+            "pronunciationGuide": "Listen to the en-GB model and keep the final consonant clear.",
+            "audio": "tts:en-GB:rainy"
+          },
+          {
+            "itemId": "english-a1-m088-pronunciation-ex01-i04",
+            "position": 4,
+            "word": "windy",
+            "translation": "ventoso",
+            "pronunciationGuide": "Listen to the en-GB model and keep the final consonant clear.",
+            "audio": "tts:en-GB:windy"
+          },
+          {
+            "itemId": "english-a1-m088-pronunciation-ex01-i05",
+            "position": 5,
+            "word": "spring",
+            "translation": "primavera",
+            "pronunciationGuide": "Listen to the en-GB model and keep the final consonant clear.",
+            "audio": "tts:en-GB:spring"
+          },
+          {
+            "itemId": "english-a1-m088-pronunciation-ex01-i06",
+            "position": 6,
+            "word": "summer",
+            "translation": "verano",
+            "pronunciationGuide": "Listen to the en-GB model and keep the final consonant clear.",
+            "audio": "tts:en-GB:summer"
+          },
+          {
+            "itemId": "english-a1-m088-pronunciation-ex01-i07",
+            "position": 7,
+            "word": "autumn",
+            "translation": "otoño",
+            "pronunciationGuide": "Listen to the en-GB model and keep the final consonant clear.",
+            "audio": "tts:en-GB:autumn"
+          },
+          {
+            "itemId": "english-a1-m088-pronunciation-ex01-i08",
+            "position": 8,
+            "word": "winter",
+            "translation": "invierno",
+            "pronunciationGuide": "Listen to the en-GB model and keep the final consonant clear.",
+            "audio": "tts:en-GB:winter"
+          },
+          {
+            "itemId": "english-a1-m088-pronunciation-ex01-i09",
+            "position": 9,
+            "word": "hot",
+            "translation": "caluroso",
+            "pronunciationGuide": "Listen to the en-GB model and keep the final consonant clear.",
+            "audio": "tts:en-GB:hot"
+          },
+          {
+            "itemId": "english-a1-m088-pronunciation-ex01-i10",
+            "position": 10,
+            "word": "cold",
+            "translation": "frío",
+            "pronunciationGuide": "Listen to the en-GB model and keep the final consonant clear.",
+            "audio": "tts:en-GB:cold"
+          }
+        ],
+        "focus": "Practica el ritmo y el acento de las palabras clave de Weather and Seasons."
+      }
+    },
+    {
+      "sectionId": "english-a1-m088-reading",
+      "sectionKey": "reading",
+      "position": 5,
+      "title": "reading",
+      "exercise": {
+        "exerciseId": "english-a1-m088-reading-ex01",
+        "type": "reading_comprehension",
+        "items": [
+          {
+            "itemId": "english-a1-m088-reading-ex01-i01",
+            "position": 1,
+            "prompt": "Which English sentence means “Hoy hace sol.”?",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "It is sunny today.",
+              "It is cloudy this morning.",
+              "It is rainy in autumn."
+            ],
+            "correctAnswer": "It is sunny today."
+          },
+          {
+            "itemId": "english-a1-m088-reading-ex01-i02",
+            "position": 2,
+            "prompt": "Which English sentence means “Esta mañana está nublado.”?",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "It is cloudy this morning.",
+              "It is rainy in autumn.",
+              "It is windy by the sea."
+            ],
+            "correctAnswer": "It is cloudy this morning."
+          },
+          {
+            "itemId": "english-a1-m088-reading-ex01-i03",
+            "position": 3,
+            "prompt": "Which English sentence means “En otoño llueve.”?",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "It is rainy in autumn.",
+              "It is windy by the sea.",
+              "I like spring."
+            ],
+            "correctAnswer": "It is rainy in autumn."
+          },
+          {
+            "itemId": "english-a1-m088-reading-ex01-i04",
+            "position": 4,
+            "prompt": "Which English sentence means “Hace viento junto al mar.”?",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "It is windy by the sea.",
+              "I like spring.",
+              "Summer is hot."
+            ],
+            "correctAnswer": "It is windy by the sea."
+          },
+          {
+            "itemId": "english-a1-m088-reading-ex01-i05",
+            "position": 5,
+            "prompt": "Which English sentence means “Me gusta la primavera.”?",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "I like spring.",
+              "Summer is hot.",
+              "Autumn is cool."
+            ],
+            "correctAnswer": "I like spring."
+          },
+          {
+            "itemId": "english-a1-m088-reading-ex01-i06",
+            "position": 6,
+            "prompt": "Which English sentence means “El verano es caluroso.”?",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "Summer is hot.",
+              "Autumn is cool.",
+              "Winter is cold."
+            ],
+            "correctAnswer": "Summer is hot."
+          },
+          {
+            "itemId": "english-a1-m088-reading-ex01-i07",
+            "position": 7,
+            "prompt": "Which English sentence means “El otoño es fresco.”?",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "Autumn is cool.",
+              "Winter is cold.",
+              "What is the weather like?"
+            ],
+            "correctAnswer": "Autumn is cool."
+          },
+          {
+            "itemId": "english-a1-m088-reading-ex01-i08",
+            "position": 8,
+            "prompt": "Which English sentence means “El invierno es frío.”?",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "Winter is cold.",
+              "What is the weather like?",
+              "Take an umbrella, please."
+            ],
+            "correctAnswer": "Winter is cold."
+          },
+          {
+            "itemId": "english-a1-m088-reading-ex01-i09",
+            "position": 9,
+            "prompt": "Which English sentence means “¿Qué tiempo hace?”?",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "What is the weather like?",
+              "Take an umbrella, please.",
+              "It is sunny today."
+            ],
+            "correctAnswer": "What is the weather like?"
+          },
+          {
+            "itemId": "english-a1-m088-reading-ex01-i10",
+            "position": 10,
+            "prompt": "Which English sentence means “Llévate un paraguas, por favor.”?",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "Take an umbrella, please.",
+              "It is sunny today.",
+              "It is cloudy this morning."
+            ],
+            "correctAnswer": "Take an umbrella, please."
+          }
+        ],
+        "content": {
+          "passageId": "english-a1-m088-reading-passage-01",
+          "passage": "It is sunny today. It is cloudy this morning. It is rainy in autumn. It is windy by the sea. I like spring. Summer is hot."
+        }
+      }
+    },
+    {
+      "sectionId": "english-a1-m088-writing",
+      "sectionKey": "writing",
+      "position": 6,
+      "title": "writing",
+      "exercise": {
+        "exerciseId": "english-a1-m088-writing-ex01",
+        "type": "dictation",
+        "items": [
+          {
+            "itemId": "english-a1-m088-writing-ex01-i01",
+            "position": 1,
+            "audio": "tts:en-GB:It is sunny today.",
+            "expectedAnswer": "It is sunny today.",
+            "evaluation": {
+              "type": "normalised_text"
+            }
+          },
+          {
+            "itemId": "english-a1-m088-writing-ex01-i02",
+            "position": 2,
+            "audio": "tts:en-GB:It is cloudy this morning.",
+            "expectedAnswer": "It is cloudy this morning.",
+            "evaluation": {
+              "type": "normalised_text"
+            }
+          },
+          {
+            "itemId": "english-a1-m088-writing-ex01-i03",
+            "position": 3,
+            "audio": "tts:en-GB:It is rainy in autumn.",
+            "expectedAnswer": "It is rainy in autumn.",
+            "evaluation": {
+              "type": "normalised_text"
+            }
+          },
+          {
+            "itemId": "english-a1-m088-writing-ex01-i04",
+            "position": 4,
+            "audio": "tts:en-GB:It is windy by the sea.",
+            "expectedAnswer": "It is windy by the sea.",
+            "evaluation": {
+              "type": "normalised_text"
+            }
+          },
+          {
+            "itemId": "english-a1-m088-writing-ex01-i05",
+            "position": 5,
+            "audio": "tts:en-GB:I like spring.",
+            "expectedAnswer": "I like spring.",
+            "evaluation": {
+              "type": "normalised_text"
+            }
+          },
+          {
+            "itemId": "english-a1-m088-writing-ex01-i06",
+            "position": 6,
+            "audio": "tts:en-GB:Summer is hot.",
+            "expectedAnswer": "Summer is hot.",
+            "evaluation": {
+              "type": "normalised_text"
+            }
+          },
+          {
+            "itemId": "english-a1-m088-writing-ex01-i07",
+            "position": 7,
+            "audio": "tts:en-GB:Autumn is cool.",
+            "expectedAnswer": "Autumn is cool.",
+            "evaluation": {
+              "type": "normalised_text"
+            }
+          },
+          {
+            "itemId": "english-a1-m088-writing-ex01-i08",
+            "position": 8,
+            "audio": "tts:en-GB:Winter is cold.",
+            "expectedAnswer": "Winter is cold.",
+            "evaluation": {
+              "type": "normalised_text"
+            }
+          },
+          {
+            "itemId": "english-a1-m088-writing-ex01-i09",
+            "position": 9,
+            "audio": "tts:en-GB:What is the weather like?",
+            "expectedAnswer": "What is the weather like?",
+            "evaluation": {
+              "type": "normalised_text"
+            }
+          },
+          {
+            "itemId": "english-a1-m088-writing-ex01-i10",
+            "position": 10,
+            "audio": "tts:en-GB:Take an umbrella, please.",
+            "expectedAnswer": "Take an umbrella, please.",
+            "evaluation": {
+              "type": "normalised_text"
+            }
+          }
+        ],
+        "writingTask": "Escribe 5–6 frases sobre weather and seasons. Utiliza al menos cinco palabras de la misión y la estructura it is + weather adjectives.",
+        "modelText": "It is sunny today. It is cloudy this morning. It is rainy in autumn. It is windy by the sea. I like spring. Summer is hot."
+      }
+    },
+    {
+      "sectionId": "english-a1-m088-speaking",
+      "sectionKey": "speaking",
+      "position": 7,
+      "title": "speaking",
+      "exercise": {
+        "exerciseId": "english-a1-m088-speaking-ex01",
+        "type": "speaking_prompts",
+        "items": [
+          {
+            "itemId": "english-a1-m088-speaking-ex01-i01",
+            "position": 1,
+            "prompt": "Say a sentence about this situation: Hoy hace sol.",
+            "modelAnswer": "It is sunny today.",
+            "evaluation": {
+              "type": "transcription_feedback",
+              "transcriptionSeparateFromPronunciation": true
+            }
+          },
+          {
+            "itemId": "english-a1-m088-speaking-ex01-i02",
+            "position": 2,
+            "prompt": "Say a sentence about this situation: Esta mañana está nublado.",
+            "modelAnswer": "It is cloudy this morning.",
+            "evaluation": {
+              "type": "transcription_feedback",
+              "transcriptionSeparateFromPronunciation": true
+            }
+          },
+          {
+            "itemId": "english-a1-m088-speaking-ex01-i03",
+            "position": 3,
+            "prompt": "Say a sentence about this situation: En otoño llueve.",
+            "modelAnswer": "It is rainy in autumn.",
+            "evaluation": {
+              "type": "transcription_feedback",
+              "transcriptionSeparateFromPronunciation": true
+            }
+          },
+          {
+            "itemId": "english-a1-m088-speaking-ex01-i04",
+            "position": 4,
+            "prompt": "Say a sentence about this situation: Hace viento junto al mar.",
+            "modelAnswer": "It is windy by the sea.",
+            "evaluation": {
+              "type": "transcription_feedback",
+              "transcriptionSeparateFromPronunciation": true
+            }
+          },
+          {
+            "itemId": "english-a1-m088-speaking-ex01-i05",
+            "position": 5,
+            "prompt": "Say a sentence about this situation: Me gusta la primavera.",
+            "modelAnswer": "I like spring.",
+            "evaluation": {
+              "type": "transcription_feedback",
+              "transcriptionSeparateFromPronunciation": true
+            }
+          },
+          {
+            "itemId": "english-a1-m088-speaking-ex01-i06",
+            "position": 6,
+            "prompt": "Say a sentence about this situation: El verano es caluroso.",
+            "modelAnswer": "Summer is hot.",
+            "evaluation": {
+              "type": "transcription_feedback",
+              "transcriptionSeparateFromPronunciation": true
+            }
+          },
+          {
+            "itemId": "english-a1-m088-speaking-ex01-i07",
+            "position": 7,
+            "prompt": "Say a sentence about this situation: El otoño es fresco.",
+            "modelAnswer": "Autumn is cool.",
+            "evaluation": {
+              "type": "transcription_feedback",
+              "transcriptionSeparateFromPronunciation": true
+            }
+          },
+          {
+            "itemId": "english-a1-m088-speaking-ex01-i08",
+            "position": 8,
+            "prompt": "Say a sentence about this situation: El invierno es frío.",
+            "modelAnswer": "Winter is cold.",
+            "evaluation": {
+              "type": "transcription_feedback",
+              "transcriptionSeparateFromPronunciation": true
+            }
+          },
+          {
+            "itemId": "english-a1-m088-speaking-ex01-i09",
+            "position": 9,
+            "prompt": "Say a sentence about this situation: ¿Qué tiempo hace?",
+            "modelAnswer": "What is the weather like?",
+            "evaluation": {
+              "type": "transcription_feedback",
+              "transcriptionSeparateFromPronunciation": true
+            }
+          },
+          {
+            "itemId": "english-a1-m088-speaking-ex01-i10",
+            "position": 10,
+            "prompt": "Say a sentence about this situation: Llévate un paraguas, por favor.",
+            "modelAnswer": "Take an umbrella, please.",
+            "evaluation": {
+              "type": "transcription_feedback",
+              "transcriptionSeparateFromPronunciation": true
+            }
+          }
+        ]
+      }
+    },
+    {
+      "sectionId": "english-a1-m088-listening",
+      "sectionKey": "listening",
+      "position": 8,
+      "title": "listening",
+      "exercise": {
+        "exerciseId": "english-a1-m088-listening-ex01",
+        "type": "listening_gap_fill",
+        "items": [
+          {
+            "itemId": "english-a1-m088-listening-ex01-i01",
+            "position": 1,
+            "gapToken": "[[gap-01]]",
+            "expectedWordId": "english-a1-m088-listening-word-01"
+          },
+          {
+            "itemId": "english-a1-m088-listening-ex01-i02",
+            "position": 2,
+            "gapToken": "[[gap-02]]",
+            "expectedWordId": "english-a1-m088-listening-word-02"
+          },
+          {
+            "itemId": "english-a1-m088-listening-ex01-i03",
+            "position": 3,
+            "gapToken": "[[gap-03]]",
+            "expectedWordId": "english-a1-m088-listening-word-03"
+          },
+          {
+            "itemId": "english-a1-m088-listening-ex01-i04",
+            "position": 4,
+            "gapToken": "[[gap-04]]",
+            "expectedWordId": "english-a1-m088-listening-word-04"
+          },
+          {
+            "itemId": "english-a1-m088-listening-ex01-i05",
+            "position": 5,
+            "gapToken": "[[gap-05]]",
+            "expectedWordId": "english-a1-m088-listening-word-05"
+          },
+          {
+            "itemId": "english-a1-m088-listening-ex01-i06",
+            "position": 6,
+            "gapToken": "[[gap-06]]",
+            "expectedWordId": "english-a1-m088-listening-word-06"
+          },
+          {
+            "itemId": "english-a1-m088-listening-ex01-i07",
+            "position": 7,
+            "gapToken": "[[gap-07]]",
+            "expectedWordId": "english-a1-m088-listening-word-07"
+          },
+          {
+            "itemId": "english-a1-m088-listening-ex01-i08",
+            "position": 8,
+            "gapToken": "[[gap-08]]",
+            "expectedWordId": "english-a1-m088-listening-word-08"
+          },
+          {
+            "itemId": "english-a1-m088-listening-ex01-i09",
+            "position": 9,
+            "gapToken": "[[gap-09]]",
+            "expectedWordId": "english-a1-m088-listening-word-09"
+          },
+          {
+            "itemId": "english-a1-m088-listening-ex01-i10",
+            "position": 10,
+            "gapToken": "[[gap-10]]",
+            "expectedWordId": "english-a1-m088-listening-word-10"
+          }
+        ],
+        "content": {
+          "audio": "tts:en-GB:The key words for Weather and Seasons are: sunny, cloudy, rainy, windy, spring, summer, autumn, winter, hot, cold. Listen and repeat each word carefully.",
+          "audioLocale": "en-GB",
+          "transcriptTemplate": "The key words for Weather and Seasons are: [[gap-01]], [[gap-02]], [[gap-03]], [[gap-04]], [[gap-05]], [[gap-06]], [[gap-07]], [[gap-08]], [[gap-09]], [[gap-10]]. Listen and repeat each word carefully.",
+          "wordBank": [
+            {
+              "wordId": "english-a1-m088-listening-word-01",
+              "word": "sunny"
+            },
+            {
+              "wordId": "english-a1-m088-listening-word-02",
+              "word": "cloudy"
+            },
+            {
+              "wordId": "english-a1-m088-listening-word-03",
+              "word": "rainy"
+            },
+            {
+              "wordId": "english-a1-m088-listening-word-04",
+              "word": "windy"
+            },
+            {
+              "wordId": "english-a1-m088-listening-word-05",
+              "word": "spring"
+            },
+            {
+              "wordId": "english-a1-m088-listening-word-06",
+              "word": "summer"
+            },
+            {
+              "wordId": "english-a1-m088-listening-word-07",
+              "word": "autumn"
+            },
+            {
+              "wordId": "english-a1-m088-listening-word-08",
+              "word": "winter"
+            },
+            {
+              "wordId": "english-a1-m088-listening-word-09",
+              "word": "hot"
+            },
+            {
+              "wordId": "english-a1-m088-listening-word-10",
+              "word": "cold"
+            }
+          ],
+          "interaction": "select_place_move_replace"
+        }
+      }
+    }
+  ]
+}

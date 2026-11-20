@@ -1,0 +1,1205 @@
+{
+  "schemaVersion": "1.2.0",
+  "contentVersion": 1,
+  "course": {
+    "courseId": "english-a1",
+    "level": "A1",
+    "language": "en-GB"
+  },
+  "unit": {
+    "unitId": "english-a1-unit-09",
+    "courseId": "english-a1",
+    "position": 9,
+    "title": "Town, transport and travel"
+  },
+  "mission": {
+    "missionId": "english-a1-m089",
+    "unitId": "english-a1-unit-09",
+    "position": 89,
+    "title": "Holiday Activities"
+  },
+  "sections": [
+    {
+      "sectionId": "english-a1-m089-explore",
+      "sectionKey": "explore",
+      "position": 1,
+      "title": "explore",
+      "exercise": {
+        "exerciseId": "english-a1-m089-explore-ex01",
+        "type": "vocabulary_pairs",
+        "items": [
+          {
+            "itemId": "english-a1-m089-explore-ex01-i01",
+            "position": 1,
+            "english": "visit",
+            "spanish": "visitar",
+            "audio": "tts:en-GB:visit"
+          },
+          {
+            "itemId": "english-a1-m089-explore-ex01-i02",
+            "position": 2,
+            "english": "walk",
+            "spanish": "pasear",
+            "audio": "tts:en-GB:walk"
+          },
+          {
+            "itemId": "english-a1-m089-explore-ex01-i03",
+            "position": 3,
+            "english": "take photos",
+            "spanish": "hacer fotos",
+            "audio": "tts:en-GB:take photos"
+          },
+          {
+            "itemId": "english-a1-m089-explore-ex01-i04",
+            "position": 4,
+            "english": "swim",
+            "spanish": "nadar",
+            "audio": "tts:en-GB:swim"
+          },
+          {
+            "itemId": "english-a1-m089-explore-ex01-i05",
+            "position": 5,
+            "english": "stay",
+            "spanish": "alojarse",
+            "audio": "tts:en-GB:stay"
+          },
+          {
+            "itemId": "english-a1-m089-explore-ex01-i06",
+            "position": 6,
+            "english": "enjoy",
+            "spanish": "disfrutar",
+            "audio": "tts:en-GB:enjoy"
+          },
+          {
+            "itemId": "english-a1-m089-explore-ex01-i07",
+            "position": 7,
+            "english": "beach",
+            "spanish": "playa",
+            "audio": "tts:en-GB:beach"
+          },
+          {
+            "itemId": "english-a1-m089-explore-ex01-i08",
+            "position": 8,
+            "english": "museum",
+            "spanish": "museo",
+            "audio": "tts:en-GB:museum"
+          },
+          {
+            "itemId": "english-a1-m089-explore-ex01-i09",
+            "position": 9,
+            "english": "city",
+            "spanish": "ciudad",
+            "audio": "tts:en-GB:city"
+          },
+          {
+            "itemId": "english-a1-m089-explore-ex01-i10",
+            "position": 10,
+            "english": "restaurant",
+            "spanish": "restaurante",
+            "audio": "tts:en-GB:restaurant"
+          }
+        ],
+        "theory": {
+          "title": "Vocabulary: Holiday Activities",
+          "explanation": "Explora diez palabras y expresiones sobre holiday activities. Escucha el modelo británico y relaciona cada palabra con su significado.",
+          "patterns": [
+            {
+              "label": "Useful language",
+              "pattern": "Short question + short answer",
+              "examples": [
+                "I visit new places.",
+                "We walk in the park.",
+                "I take photos every day."
+              ]
+            }
+          ],
+          "tip": "Repite las expresiones y crea un ejemplo relacionado con tu vida."
+        }
+      }
+    },
+    {
+      "sectionId": "english-a1-m089-practice",
+      "sectionKey": "practice",
+      "position": 2,
+      "title": "practice",
+      "exercise": {
+        "exerciseId": "english-a1-m089-practice-ex01",
+        "type": "mixed_practice",
+        "items": [
+          {
+            "itemId": "english-a1-m089-practice-ex01-i01",
+            "position": 1,
+            "taskType": "translation_multiple_choice",
+            "prompt": "Traduce al español: “I visit new places.”",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "Visito lugares nuevos.",
+              "Nado en el mar.",
+              "Visitamos un museo."
+            ],
+            "correctAnswer": "Visito lugares nuevos.",
+            "sourceEnglish": "I visit new places."
+          },
+          {
+            "itemId": "english-a1-m089-practice-ex01-i02",
+            "position": 2,
+            "taskType": "translation_multiple_choice",
+            "prompt": "Traduce al español: “We walk in the park.”",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "Paseamos por el parque.",
+              "Nos alojamos en un hotel.",
+              "Me gusta pasear por la ciudad."
+            ],
+            "correctAnswer": "Paseamos por el parque.",
+            "sourceEnglish": "We walk in the park."
+          },
+          {
+            "itemId": "english-a1-m089-practice-ex01-i03",
+            "position": 3,
+            "taskType": "translation_multiple_choice",
+            "prompt": "Traduce al español: “I take photos every day.”",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "Hago fotos todos los días.",
+              "Disfruto de mis vacaciones.",
+              "Comemos en un restaurante."
+            ],
+            "correctAnswer": "Hago fotos todos los días.",
+            "sourceEnglish": "I take photos every day."
+          },
+          {
+            "itemId": "english-a1-m089-practice-ex01-i04",
+            "position": 4,
+            "taskType": "translation_multiple_choice",
+            "prompt": "Traduce al español: “I swim in the sea.”",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "Nado en el mar.",
+              "Visitamos un museo.",
+              "La playa es preciosa."
+            ],
+            "correctAnswer": "Nado en el mar.",
+            "sourceEnglish": "I swim in the sea."
+          },
+          {
+            "itemId": "english-a1-m089-practice-ex01-i05",
+            "position": 5,
+            "taskType": "translation_multiple_choice",
+            "prompt": "Traduce al español: “We stay in a hotel.”",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "Nos alojamos en un hotel.",
+              "Me gusta pasear por la ciudad.",
+              "Visito lugares nuevos."
+            ],
+            "correctAnswer": "Nos alojamos en un hotel.",
+            "sourceEnglish": "We stay in a hotel."
+          },
+          {
+            "itemId": "english-a1-m089-practice-ex01-i06",
+            "position": 6,
+            "taskType": "translation_multiple_choice",
+            "prompt": "Traduce al español: “I enjoy my holiday.”",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "Disfruto de mis vacaciones.",
+              "Comemos en un restaurante.",
+              "Paseamos por el parque."
+            ],
+            "correctAnswer": "Disfruto de mis vacaciones.",
+            "sourceEnglish": "I enjoy my holiday."
+          },
+          {
+            "itemId": "english-a1-m089-practice-ex01-i07",
+            "position": 7,
+            "taskType": "translation_multiple_choice",
+            "prompt": "Traduce al español: “We visit a museum.”",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "Visitamos un museo.",
+              "La playa es preciosa.",
+              "Hago fotos todos los días."
+            ],
+            "correctAnswer": "Visitamos un museo.",
+            "sourceEnglish": "We visit a museum."
+          },
+          {
+            "itemId": "english-a1-m089-practice-ex01-i08",
+            "position": 8,
+            "taskType": "translation_multiple_choice",
+            "prompt": "Traduce al español: “I like walking in the city.”",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "Me gusta pasear por la ciudad.",
+              "Visito lugares nuevos.",
+              "Nado en el mar."
+            ],
+            "correctAnswer": "Me gusta pasear por la ciudad.",
+            "sourceEnglish": "I like walking in the city."
+          },
+          {
+            "itemId": "english-a1-m089-practice-ex01-i09",
+            "position": 9,
+            "taskType": "translation_multiple_choice",
+            "prompt": "Traduce al español: “We eat at a restaurant.”",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "Comemos en un restaurante.",
+              "Paseamos por el parque.",
+              "Nos alojamos en un hotel."
+            ],
+            "correctAnswer": "Comemos en un restaurante.",
+            "sourceEnglish": "We eat at a restaurant."
+          },
+          {
+            "itemId": "english-a1-m089-practice-ex01-i10",
+            "position": 10,
+            "taskType": "translation_multiple_choice",
+            "prompt": "Traduce al español: “The beach is beautiful.”",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "La playa es preciosa.",
+              "Hago fotos todos los días.",
+              "Disfruto de mis vacaciones."
+            ],
+            "correctAnswer": "La playa es preciosa.",
+            "sourceEnglish": "The beach is beautiful."
+          },
+          {
+            "itemId": "english-a1-m089-practice-ex01-i11",
+            "position": 11,
+            "taskType": "listening_translation_multiple_choice",
+            "prompt": "Escucha el inglés y elige su significado.",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "Visito lugares nuevos.",
+              "Nos alojamos en un hotel.",
+              "Me gusta pasear por la ciudad."
+            ],
+            "correctAnswer": "Visito lugares nuevos.",
+            "sourceEnglish": "I visit new places."
+          },
+          {
+            "itemId": "english-a1-m089-practice-ex01-i12",
+            "position": 12,
+            "taskType": "listening_translation_multiple_choice",
+            "prompt": "Escucha el inglés y elige su significado.",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "Paseamos por el parque.",
+              "Disfruto de mis vacaciones.",
+              "Comemos en un restaurante."
+            ],
+            "correctAnswer": "Paseamos por el parque.",
+            "sourceEnglish": "We walk in the park."
+          },
+          {
+            "itemId": "english-a1-m089-practice-ex01-i13",
+            "position": 13,
+            "taskType": "listening_translation_multiple_choice",
+            "prompt": "Escucha el inglés y elige su significado.",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "Hago fotos todos los días.",
+              "Visitamos un museo.",
+              "La playa es preciosa."
+            ],
+            "correctAnswer": "Hago fotos todos los días.",
+            "sourceEnglish": "I take photos every day."
+          },
+          {
+            "itemId": "english-a1-m089-practice-ex01-i14",
+            "position": 14,
+            "taskType": "listening_translation_multiple_choice",
+            "prompt": "Escucha el inglés y elige su significado.",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "Nado en el mar.",
+              "Me gusta pasear por la ciudad.",
+              "Visito lugares nuevos."
+            ],
+            "correctAnswer": "Nado en el mar.",
+            "sourceEnglish": "I swim in the sea."
+          },
+          {
+            "itemId": "english-a1-m089-practice-ex01-i15",
+            "position": 15,
+            "taskType": "listening_translation_multiple_choice",
+            "prompt": "Escucha el inglés y elige su significado.",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "Nos alojamos en un hotel.",
+              "Comemos en un restaurante.",
+              "Paseamos por el parque."
+            ],
+            "correctAnswer": "Nos alojamos en un hotel.",
+            "sourceEnglish": "We stay in a hotel."
+          },
+          {
+            "itemId": "english-a1-m089-practice-ex01-i16",
+            "position": 16,
+            "taskType": "listening_translation_multiple_choice",
+            "prompt": "Escucha el inglés y elige su significado.",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "Disfruto de mis vacaciones.",
+              "La playa es preciosa.",
+              "Hago fotos todos los días."
+            ],
+            "correctAnswer": "Disfruto de mis vacaciones.",
+            "sourceEnglish": "I enjoy my holiday."
+          },
+          {
+            "itemId": "english-a1-m089-practice-ex01-i17",
+            "position": 17,
+            "taskType": "listening_translation_multiple_choice",
+            "prompt": "Escucha el inglés y elige su significado.",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "Visitamos un museo.",
+              "Visito lugares nuevos.",
+              "Nado en el mar."
+            ],
+            "correctAnswer": "Visitamos un museo.",
+            "sourceEnglish": "We visit a museum."
+          },
+          {
+            "itemId": "english-a1-m089-practice-ex01-i18",
+            "position": 18,
+            "taskType": "listening_translation_multiple_choice",
+            "prompt": "Escucha el inglés y elige su significado.",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "Me gusta pasear por la ciudad.",
+              "Paseamos por el parque.",
+              "Nos alojamos en un hotel."
+            ],
+            "correctAnswer": "Me gusta pasear por la ciudad.",
+            "sourceEnglish": "I like walking in the city."
+          },
+          {
+            "itemId": "english-a1-m089-practice-ex01-i19",
+            "position": 19,
+            "taskType": "listening_translation_multiple_choice",
+            "prompt": "Escucha el inglés y elige su significado.",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "Comemos en un restaurante.",
+              "Hago fotos todos los días.",
+              "Disfruto de mis vacaciones."
+            ],
+            "correctAnswer": "Comemos en un restaurante.",
+            "sourceEnglish": "We eat at a restaurant."
+          },
+          {
+            "itemId": "english-a1-m089-practice-ex01-i20",
+            "position": 20,
+            "taskType": "listening_translation_multiple_choice",
+            "prompt": "Escucha el inglés y elige su significado.",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "La playa es preciosa.",
+              "Nado en el mar.",
+              "Visitamos un museo."
+            ],
+            "correctAnswer": "La playa es preciosa.",
+            "sourceEnglish": "The beach is beautiful."
+          }
+        ]
+      }
+    },
+    {
+      "sectionId": "english-a1-m089-grammar",
+      "sectionKey": "grammar",
+      "position": 3,
+      "title": "grammar",
+      "exercise": {
+        "exerciseId": "english-a1-m089-grammar-ex01",
+        "type": "grammar",
+        "items": [
+          {
+            "itemId": "english-a1-m089-grammar-ex01-i01",
+            "position": 1,
+            "prompt": "We ___ swim at the beach.",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "can",
+              "are",
+              "do"
+            ],
+            "correctAnswer": "can"
+          },
+          {
+            "itemId": "english-a1-m089-grammar-ex01-i02",
+            "position": 2,
+            "prompt": "I usually ___ cycling on holiday.",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "go",
+              "goes",
+              "going"
+            ],
+            "correctAnswer": "go"
+          },
+          {
+            "itemId": "english-a1-m089-grammar-ex01-i03",
+            "position": 3,
+            "prompt": "She ___ visit museums in summer.",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "can",
+              "cans",
+              "is can"
+            ],
+            "correctAnswer": "can"
+          },
+          {
+            "itemId": "english-a1-m089-grammar-ex01-i04",
+            "position": 4,
+            "prompt": "They ___ to the beach every day.",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "go",
+              "goes",
+              "going"
+            ],
+            "correctAnswer": "go"
+          },
+          {
+            "itemId": "english-a1-m089-grammar-ex01-i05",
+            "position": 5,
+            "prompt": "Can you ___ a bike?",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "ride",
+              "rides",
+              "riding"
+            ],
+            "correctAnswer": "ride"
+          },
+          {
+            "itemId": "english-a1-m089-grammar-ex01-i06",
+            "position": 6,
+            "prompt": "He ___ swimming on Sundays.",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "goes",
+              "go",
+              "going"
+            ],
+            "correctAnswer": "goes"
+          },
+          {
+            "itemId": "english-a1-m089-grammar-ex01-i07",
+            "position": 7,
+            "prompt": "We ___ play tennis here.",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "can",
+              "cans",
+              "are"
+            ],
+            "correctAnswer": "can"
+          },
+          {
+            "itemId": "english-a1-m089-grammar-ex01-i08",
+            "position": 8,
+            "prompt": "My family ___ in a hotel.",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "stays",
+              "stay",
+              "staying"
+            ],
+            "correctAnswer": "stays"
+          },
+          {
+            "itemId": "english-a1-m089-grammar-ex01-i09",
+            "position": 9,
+            "prompt": "I don't ___ in winter.",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "travel",
+              "travels",
+              "travelling"
+            ],
+            "correctAnswer": "travel"
+          },
+          {
+            "itemId": "english-a1-m089-grammar-ex01-i10",
+            "position": 10,
+            "prompt": "They can ___ photos.",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "take",
+              "takes",
+              "taking"
+            ],
+            "correctAnswer": "take"
+          }
+        ],
+        "theory": {
+          "title": "Can and present simple for holiday activities",
+          "explanation": "Usamos can para hablar de actividades posibles y el presente simple para describir hábitos o actividades habituales durante las vacaciones.",
+          "patterns": [
+            {
+              "label": "Model",
+              "pattern": "We can swim at the beach",
+              "examples": [
+                "We can swim at the beach",
+                "I usually go cycling on holiday."
+              ]
+            }
+          ],
+          "tip": "Lee los ejemplos y comprueba cómo cambia la estructura."
+        }
+      }
+    },
+    {
+      "sectionId": "english-a1-m089-pronunciation",
+      "sectionKey": "pronunciation",
+      "position": 4,
+      "title": "pronunciation",
+      "exercise": {
+        "exerciseId": "english-a1-m089-pronunciation-ex01",
+        "type": "pronunciation_cards",
+        "items": [
+          {
+            "itemId": "english-a1-m089-pronunciation-ex01-i01",
+            "position": 1,
+            "word": "visit",
+            "translation": "visitar",
+            "pronunciationGuide": "Listen to the en-GB model and keep the final consonant clear.",
+            "audio": "tts:en-GB:visit"
+          },
+          {
+            "itemId": "english-a1-m089-pronunciation-ex01-i02",
+            "position": 2,
+            "word": "walk",
+            "translation": "pasear",
+            "pronunciationGuide": "Listen to the en-GB model and keep the final consonant clear.",
+            "audio": "tts:en-GB:walk"
+          },
+          {
+            "itemId": "english-a1-m089-pronunciation-ex01-i03",
+            "position": 3,
+            "word": "take photos",
+            "translation": "hacer fotos",
+            "pronunciationGuide": "Listen to the phrase as one unit and notice its main stress.",
+            "audio": "tts:en-GB:take photos"
+          },
+          {
+            "itemId": "english-a1-m089-pronunciation-ex01-i04",
+            "position": 4,
+            "word": "swim",
+            "translation": "nadar",
+            "pronunciationGuide": "Listen to the en-GB model and keep the final consonant clear.",
+            "audio": "tts:en-GB:swim"
+          },
+          {
+            "itemId": "english-a1-m089-pronunciation-ex01-i05",
+            "position": 5,
+            "word": "stay",
+            "translation": "alojarse",
+            "pronunciationGuide": "Listen to the en-GB model and keep the final consonant clear.",
+            "audio": "tts:en-GB:stay"
+          },
+          {
+            "itemId": "english-a1-m089-pronunciation-ex01-i06",
+            "position": 6,
+            "word": "enjoy",
+            "translation": "disfrutar",
+            "pronunciationGuide": "Listen to the en-GB model and keep the final consonant clear.",
+            "audio": "tts:en-GB:enjoy"
+          },
+          {
+            "itemId": "english-a1-m089-pronunciation-ex01-i07",
+            "position": 7,
+            "word": "beach",
+            "translation": "playa",
+            "pronunciationGuide": "Listen to the en-GB model and keep the final consonant clear.",
+            "audio": "tts:en-GB:beach"
+          },
+          {
+            "itemId": "english-a1-m089-pronunciation-ex01-i08",
+            "position": 8,
+            "word": "museum",
+            "translation": "museo",
+            "pronunciationGuide": "Listen to the en-GB model and keep the final consonant clear.",
+            "audio": "tts:en-GB:museum"
+          },
+          {
+            "itemId": "english-a1-m089-pronunciation-ex01-i09",
+            "position": 9,
+            "word": "city",
+            "translation": "ciudad",
+            "pronunciationGuide": "Listen to the en-GB model and keep the final consonant clear.",
+            "audio": "tts:en-GB:city"
+          },
+          {
+            "itemId": "english-a1-m089-pronunciation-ex01-i10",
+            "position": 10,
+            "word": "restaurant",
+            "translation": "restaurante",
+            "pronunciationGuide": "Listen to the en-GB model and keep the final consonant clear.",
+            "audio": "tts:en-GB:restaurant"
+          }
+        ],
+        "focus": "Practica el ritmo y el acento de las palabras clave de Holiday Activities."
+      }
+    },
+    {
+      "sectionId": "english-a1-m089-reading",
+      "sectionKey": "reading",
+      "position": 5,
+      "title": "reading",
+      "exercise": {
+        "exerciseId": "english-a1-m089-reading-ex01",
+        "type": "reading_comprehension",
+        "items": [
+          {
+            "itemId": "english-a1-m089-reading-ex01-i01",
+            "position": 1,
+            "prompt": "Which English sentence means “Visito lugares nuevos.”?",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "I visit new places.",
+              "We walk in the park.",
+              "I take photos every day."
+            ],
+            "correctAnswer": "I visit new places."
+          },
+          {
+            "itemId": "english-a1-m089-reading-ex01-i02",
+            "position": 2,
+            "prompt": "Which English sentence means “Paseamos por el parque.”?",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "We walk in the park.",
+              "I take photos every day.",
+              "I swim in the sea."
+            ],
+            "correctAnswer": "We walk in the park."
+          },
+          {
+            "itemId": "english-a1-m089-reading-ex01-i03",
+            "position": 3,
+            "prompt": "Which English sentence means “Hago fotos todos los días.”?",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "I take photos every day.",
+              "I swim in the sea.",
+              "We stay in a hotel."
+            ],
+            "correctAnswer": "I take photos every day."
+          },
+          {
+            "itemId": "english-a1-m089-reading-ex01-i04",
+            "position": 4,
+            "prompt": "Which English sentence means “Nado en el mar.”?",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "I swim in the sea.",
+              "We stay in a hotel.",
+              "I enjoy my holiday."
+            ],
+            "correctAnswer": "I swim in the sea."
+          },
+          {
+            "itemId": "english-a1-m089-reading-ex01-i05",
+            "position": 5,
+            "prompt": "Which English sentence means “Nos alojamos en un hotel.”?",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "We stay in a hotel.",
+              "I enjoy my holiday.",
+              "We visit a museum."
+            ],
+            "correctAnswer": "We stay in a hotel."
+          },
+          {
+            "itemId": "english-a1-m089-reading-ex01-i06",
+            "position": 6,
+            "prompt": "Which English sentence means “Disfruto de mis vacaciones.”?",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "I enjoy my holiday.",
+              "We visit a museum.",
+              "I like walking in the city."
+            ],
+            "correctAnswer": "I enjoy my holiday."
+          },
+          {
+            "itemId": "english-a1-m089-reading-ex01-i07",
+            "position": 7,
+            "prompt": "Which English sentence means “Visitamos un museo.”?",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "We visit a museum.",
+              "I like walking in the city.",
+              "We eat at a restaurant."
+            ],
+            "correctAnswer": "We visit a museum."
+          },
+          {
+            "itemId": "english-a1-m089-reading-ex01-i08",
+            "position": 8,
+            "prompt": "Which English sentence means “Me gusta pasear por la ciudad.”?",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "I like walking in the city.",
+              "We eat at a restaurant.",
+              "The beach is beautiful."
+            ],
+            "correctAnswer": "I like walking in the city."
+          },
+          {
+            "itemId": "english-a1-m089-reading-ex01-i09",
+            "position": 9,
+            "prompt": "Which English sentence means “Comemos en un restaurante.”?",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "We eat at a restaurant.",
+              "The beach is beautiful.",
+              "I visit new places."
+            ],
+            "correctAnswer": "We eat at a restaurant."
+          },
+          {
+            "itemId": "english-a1-m089-reading-ex01-i10",
+            "position": 10,
+            "prompt": "Which English sentence means “La playa es preciosa.”?",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "The beach is beautiful.",
+              "I visit new places.",
+              "We walk in the park."
+            ],
+            "correctAnswer": "The beach is beautiful."
+          }
+        ],
+        "content": {
+          "passageId": "english-a1-m089-reading-passage-01",
+          "passage": "I visit new places. We walk in the park. I take photos every day. I swim in the sea. We stay in a hotel. I enjoy my holiday."
+        }
+      }
+    },
+    {
+      "sectionId": "english-a1-m089-writing",
+      "sectionKey": "writing",
+      "position": 6,
+      "title": "writing",
+      "exercise": {
+        "exerciseId": "english-a1-m089-writing-ex01",
+        "type": "dictation",
+        "items": [
+          {
+            "itemId": "english-a1-m089-writing-ex01-i01",
+            "position": 1,
+            "audio": "tts:en-GB:I visit new places.",
+            "expectedAnswer": "I visit new places.",
+            "evaluation": {
+              "type": "normalised_text"
+            }
+          },
+          {
+            "itemId": "english-a1-m089-writing-ex01-i02",
+            "position": 2,
+            "audio": "tts:en-GB:We walk in the park.",
+            "expectedAnswer": "We walk in the park.",
+            "evaluation": {
+              "type": "normalised_text"
+            }
+          },
+          {
+            "itemId": "english-a1-m089-writing-ex01-i03",
+            "position": 3,
+            "audio": "tts:en-GB:I take photos every day.",
+            "expectedAnswer": "I take photos every day.",
+            "evaluation": {
+              "type": "normalised_text"
+            }
+          },
+          {
+            "itemId": "english-a1-m089-writing-ex01-i04",
+            "position": 4,
+            "audio": "tts:en-GB:I swim in the sea.",
+            "expectedAnswer": "I swim in the sea.",
+            "evaluation": {
+              "type": "normalised_text"
+            }
+          },
+          {
+            "itemId": "english-a1-m089-writing-ex01-i05",
+            "position": 5,
+            "audio": "tts:en-GB:We stay in a hotel.",
+            "expectedAnswer": "We stay in a hotel.",
+            "evaluation": {
+              "type": "normalised_text"
+            }
+          },
+          {
+            "itemId": "english-a1-m089-writing-ex01-i06",
+            "position": 6,
+            "audio": "tts:en-GB:I enjoy my holiday.",
+            "expectedAnswer": "I enjoy my holiday.",
+            "evaluation": {
+              "type": "normalised_text"
+            }
+          },
+          {
+            "itemId": "english-a1-m089-writing-ex01-i07",
+            "position": 7,
+            "audio": "tts:en-GB:We visit a museum.",
+            "expectedAnswer": "We visit a museum.",
+            "evaluation": {
+              "type": "normalised_text"
+            }
+          },
+          {
+            "itemId": "english-a1-m089-writing-ex01-i08",
+            "position": 8,
+            "audio": "tts:en-GB:I like walking in the city.",
+            "expectedAnswer": "I like walking in the city.",
+            "evaluation": {
+              "type": "normalised_text"
+            }
+          },
+          {
+            "itemId": "english-a1-m089-writing-ex01-i09",
+            "position": 9,
+            "audio": "tts:en-GB:We eat at a restaurant.",
+            "expectedAnswer": "We eat at a restaurant.",
+            "evaluation": {
+              "type": "normalised_text"
+            }
+          },
+          {
+            "itemId": "english-a1-m089-writing-ex01-i10",
+            "position": 10,
+            "audio": "tts:en-GB:The beach is beautiful.",
+            "expectedAnswer": "The beach is beautiful.",
+            "evaluation": {
+              "type": "normalised_text"
+            }
+          }
+        ],
+        "writingTask": "Escribe 5–6 frases sobre holiday activities. Utiliza al menos cinco palabras de la misión y la estructura can and present simple for holiday activities.",
+        "modelText": "I visit new places. We walk in the park. I take photos every day. I swim in the sea. We stay in a hotel. I enjoy my holiday."
+      }
+    },
+    {
+      "sectionId": "english-a1-m089-speaking",
+      "sectionKey": "speaking",
+      "position": 7,
+      "title": "speaking",
+      "exercise": {
+        "exerciseId": "english-a1-m089-speaking-ex01",
+        "type": "speaking_prompts",
+        "items": [
+          {
+            "itemId": "english-a1-m089-speaking-ex01-i01",
+            "position": 1,
+            "prompt": "Say a sentence about this situation: Visito lugares nuevos.",
+            "modelAnswer": "I visit new places.",
+            "evaluation": {
+              "type": "transcription_feedback",
+              "transcriptionSeparateFromPronunciation": true
+            }
+          },
+          {
+            "itemId": "english-a1-m089-speaking-ex01-i02",
+            "position": 2,
+            "prompt": "Say a sentence about this situation: Paseamos por el parque.",
+            "modelAnswer": "We walk in the park.",
+            "evaluation": {
+              "type": "transcription_feedback",
+              "transcriptionSeparateFromPronunciation": true
+            }
+          },
+          {
+            "itemId": "english-a1-m089-speaking-ex01-i03",
+            "position": 3,
+            "prompt": "Say a sentence about this situation: Hago fotos todos los días.",
+            "modelAnswer": "I take photos every day.",
+            "evaluation": {
+              "type": "transcription_feedback",
+              "transcriptionSeparateFromPronunciation": true
+            }
+          },
+          {
+            "itemId": "english-a1-m089-speaking-ex01-i04",
+            "position": 4,
+            "prompt": "Say a sentence about this situation: Nado en el mar.",
+            "modelAnswer": "I swim in the sea.",
+            "evaluation": {
+              "type": "transcription_feedback",
+              "transcriptionSeparateFromPronunciation": true
+            }
+          },
+          {
+            "itemId": "english-a1-m089-speaking-ex01-i05",
+            "position": 5,
+            "prompt": "Say a sentence about this situation: Nos alojamos en un hotel.",
+            "modelAnswer": "We stay in a hotel.",
+            "evaluation": {
+              "type": "transcription_feedback",
+              "transcriptionSeparateFromPronunciation": true
+            }
+          },
+          {
+            "itemId": "english-a1-m089-speaking-ex01-i06",
+            "position": 6,
+            "prompt": "Say a sentence about this situation: Disfruto de mis vacaciones.",
+            "modelAnswer": "I enjoy my holiday.",
+            "evaluation": {
+              "type": "transcription_feedback",
+              "transcriptionSeparateFromPronunciation": true
+            }
+          },
+          {
+            "itemId": "english-a1-m089-speaking-ex01-i07",
+            "position": 7,
+            "prompt": "Say a sentence about this situation: Visitamos un museo.",
+            "modelAnswer": "We visit a museum.",
+            "evaluation": {
+              "type": "transcription_feedback",
+              "transcriptionSeparateFromPronunciation": true
+            }
+          },
+          {
+            "itemId": "english-a1-m089-speaking-ex01-i08",
+            "position": 8,
+            "prompt": "Say a sentence about this situation: Me gusta pasear por la ciudad.",
+            "modelAnswer": "I like walking in the city.",
+            "evaluation": {
+              "type": "transcription_feedback",
+              "transcriptionSeparateFromPronunciation": true
+            }
+          },
+          {
+            "itemId": "english-a1-m089-speaking-ex01-i09",
+            "position": 9,
+            "prompt": "Say a sentence about this situation: Comemos en un restaurante.",
+            "modelAnswer": "We eat at a restaurant.",
+            "evaluation": {
+              "type": "transcription_feedback",
+              "transcriptionSeparateFromPronunciation": true
+            }
+          },
+          {
+            "itemId": "english-a1-m089-speaking-ex01-i10",
+            "position": 10,
+            "prompt": "Say a sentence about this situation: La playa es preciosa.",
+            "modelAnswer": "The beach is beautiful.",
+            "evaluation": {
+              "type": "transcription_feedback",
+              "transcriptionSeparateFromPronunciation": true
+            }
+          }
+        ]
+      }
+    },
+    {
+      "sectionId": "english-a1-m089-listening",
+      "sectionKey": "listening",
+      "position": 8,
+      "title": "listening",
+      "exercise": {
+        "exerciseId": "english-a1-m089-listening-ex01",
+        "type": "listening_gap_fill",
+        "items": [
+          {
+            "itemId": "english-a1-m089-listening-ex01-i01",
+            "position": 1,
+            "gapToken": "[[gap-01]]",
+            "expectedWordId": "english-a1-m089-listening-word-01"
+          },
+          {
+            "itemId": "english-a1-m089-listening-ex01-i02",
+            "position": 2,
+            "gapToken": "[[gap-02]]",
+            "expectedWordId": "english-a1-m089-listening-word-02"
+          },
+          {
+            "itemId": "english-a1-m089-listening-ex01-i03",
+            "position": 3,
+            "gapToken": "[[gap-03]]",
+            "expectedWordId": "english-a1-m089-listening-word-03"
+          },
+          {
+            "itemId": "english-a1-m089-listening-ex01-i04",
+            "position": 4,
+            "gapToken": "[[gap-04]]",
+            "expectedWordId": "english-a1-m089-listening-word-04"
+          },
+          {
+            "itemId": "english-a1-m089-listening-ex01-i05",
+            "position": 5,
+            "gapToken": "[[gap-05]]",
+            "expectedWordId": "english-a1-m089-listening-word-05"
+          },
+          {
+            "itemId": "english-a1-m089-listening-ex01-i06",
+            "position": 6,
+            "gapToken": "[[gap-06]]",
+            "expectedWordId": "english-a1-m089-listening-word-06"
+          },
+          {
+            "itemId": "english-a1-m089-listening-ex01-i07",
+            "position": 7,
+            "gapToken": "[[gap-07]]",
+            "expectedWordId": "english-a1-m089-listening-word-07"
+          },
+          {
+            "itemId": "english-a1-m089-listening-ex01-i08",
+            "position": 8,
+            "gapToken": "[[gap-08]]",
+            "expectedWordId": "english-a1-m089-listening-word-08"
+          },
+          {
+            "itemId": "english-a1-m089-listening-ex01-i09",
+            "position": 9,
+            "gapToken": "[[gap-09]]",
+            "expectedWordId": "english-a1-m089-listening-word-09"
+          },
+          {
+            "itemId": "english-a1-m089-listening-ex01-i10",
+            "position": 10,
+            "gapToken": "[[gap-10]]",
+            "expectedWordId": "english-a1-m089-listening-word-10"
+          }
+        ],
+        "content": {
+          "audio": "tts:en-GB:The key words for Holiday Activities are: visit, walk, take photos, swim, stay, enjoy, beach, museum, city, restaurant. Listen and repeat each word carefully.",
+          "audioLocale": "en-GB",
+          "transcriptTemplate": "The key words for Holiday Activities are: [[gap-01]], [[gap-02]], [[gap-03]], [[gap-04]], [[gap-05]], [[gap-06]], [[gap-07]], [[gap-08]], [[gap-09]], [[gap-10]]. Listen and repeat each word carefully.",
+          "wordBank": [
+            {
+              "wordId": "english-a1-m089-listening-word-01",
+              "word": "visit"
+            },
+            {
+              "wordId": "english-a1-m089-listening-word-02",
+              "word": "walk"
+            },
+            {
+              "wordId": "english-a1-m089-listening-word-03",
+              "word": "take photos"
+            },
+            {
+              "wordId": "english-a1-m089-listening-word-04",
+              "word": "swim"
+            },
+            {
+              "wordId": "english-a1-m089-listening-word-05",
+              "word": "stay"
+            },
+            {
+              "wordId": "english-a1-m089-listening-word-06",
+              "word": "enjoy"
+            },
+            {
+              "wordId": "english-a1-m089-listening-word-07",
+              "word": "beach"
+            },
+            {
+              "wordId": "english-a1-m089-listening-word-08",
+              "word": "museum"
+            },
+            {
+              "wordId": "english-a1-m089-listening-word-09",
+              "word": "city"
+            },
+            {
+              "wordId": "english-a1-m089-listening-word-10",
+              "word": "restaurant"
+            }
+          ],
+          "interaction": "select_place_move_replace"
+        }
+      }
+    }
+  ]
+}

@@ -1,0 +1,1204 @@
+{
+  "schemaVersion": "1.2.0",
+  "contentVersion": 1,
+  "course": {
+    "courseId": "english-a1",
+    "level": "A1",
+    "language": "en-GB"
+  },
+  "unit": {
+    "unitId": "english-a1-unit-09",
+    "courseId": "english-a1",
+    "position": 9,
+    "title": "Town, transport and travel"
+  },
+  "mission": {
+    "missionId": "english-a1-m090",
+    "unitId": "english-a1-unit-09",
+    "position": 90,
+    "title": "Travel Conversation"
+  },
+  "sections": [
+    {
+      "sectionId": "english-a1-m090-explore",
+      "sectionKey": "explore",
+      "position": 1,
+      "title": "explore",
+      "exercise": {
+        "exerciseId": "english-a1-m090-explore-ex01",
+        "type": "vocabulary_pairs",
+        "items": [
+          {
+            "itemId": "english-a1-m090-explore-ex01-i01",
+            "position": 1,
+            "english": "transport",
+            "spanish": "transporte",
+            "audio": "tts:en-GB:transport"
+          },
+          {
+            "itemId": "english-a1-m090-explore-ex01-i02",
+            "position": 2,
+            "english": "directions",
+            "spanish": "indicaciones",
+            "audio": "tts:en-GB:directions"
+          },
+          {
+            "itemId": "english-a1-m090-explore-ex01-i03",
+            "position": 3,
+            "english": "ticket",
+            "spanish": "billete",
+            "audio": "tts:en-GB:ticket"
+          },
+          {
+            "itemId": "english-a1-m090-explore-ex01-i04",
+            "position": 4,
+            "english": "hotel",
+            "spanish": "hotel",
+            "audio": "tts:en-GB:hotel"
+          },
+          {
+            "itemId": "english-a1-m090-explore-ex01-i05",
+            "position": 5,
+            "english": "weather",
+            "spanish": "tiempo",
+            "audio": "tts:en-GB:weather"
+          },
+          {
+            "itemId": "english-a1-m090-explore-ex01-i06",
+            "position": 6,
+            "english": "holiday",
+            "spanish": "vacaciones",
+            "audio": "tts:en-GB:holiday"
+          },
+          {
+            "itemId": "english-a1-m090-explore-ex01-i07",
+            "position": 7,
+            "english": "station",
+            "spanish": "estación",
+            "audio": "tts:en-GB:station"
+          },
+          {
+            "itemId": "english-a1-m090-explore-ex01-i08",
+            "position": 8,
+            "english": "airport",
+            "spanish": "aeropuerto",
+            "audio": "tts:en-GB:airport"
+          },
+          {
+            "itemId": "english-a1-m090-explore-ex01-i09",
+            "position": 9,
+            "english": "suitcase",
+            "spanish": "maleta",
+            "audio": "tts:en-GB:suitcase"
+          },
+          {
+            "itemId": "english-a1-m090-explore-ex01-i10",
+            "position": 10,
+            "english": "reservation",
+            "spanish": "reserva",
+            "audio": "tts:en-GB:reservation"
+          }
+        ],
+        "theory": {
+          "title": "Vocabulary: Travel Conversation",
+          "explanation": "Explora diez palabras y expresiones sobre travel conversation. Escucha el modelo británico y relaciona cada palabra con su significado.",
+          "patterns": [
+            {
+              "label": "Useful language",
+              "pattern": "Short question + short answer",
+              "examples": [
+                "How do I get to the station?",
+                "I need two tickets, please.",
+                "Where is the hotel?"
+              ]
+            }
+          ],
+          "tip": "Repite las expresiones y crea un ejemplo relacionado con tu vida."
+        }
+      }
+    },
+    {
+      "sectionId": "english-a1-m090-practice",
+      "sectionKey": "practice",
+      "position": 2,
+      "title": "practice",
+      "exercise": {
+        "exerciseId": "english-a1-m090-practice-ex01",
+        "type": "mixed_practice",
+        "items": [
+          {
+            "itemId": "english-a1-m090-practice-ex01-i01",
+            "position": 1,
+            "taskType": "translation_multiple_choice",
+            "prompt": "Traduce al español: “How do I get to the station?”",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "¿Cómo llego a la estación?",
+              "Tengo una reserva de habitación.",
+              "La parada está enfrente del banco."
+            ],
+            "correctAnswer": "¿Cómo llego a la estación?",
+            "sourceEnglish": "How do I get to the station?"
+          },
+          {
+            "itemId": "english-a1-m090-practice-ex01-i02",
+            "position": 2,
+            "taskType": "translation_multiple_choice",
+            "prompt": "Traduce al español: “I need two tickets, please.”",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "Necesito dos billetes, por favor.",
+              "¿Qué tiempo hace hoy?",
+              "Mi vuelo sale a las seis."
+            ],
+            "correctAnswer": "Necesito dos billetes, por favor.",
+            "sourceEnglish": "I need two tickets, please."
+          },
+          {
+            "itemId": "english-a1-m090-practice-ex01-i03",
+            "position": 3,
+            "taskType": "translation_multiple_choice",
+            "prompt": "Traduce al español: “Where is the hotel?”",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "¿Dónde está el hotel?",
+              "Nos vamos de vacaciones.",
+              "Tengo una maleta."
+            ],
+            "correctAnswer": "¿Dónde está el hotel?",
+            "sourceEnglish": "Where is the hotel?"
+          },
+          {
+            "itemId": "english-a1-m090-practice-ex01-i04",
+            "position": 4,
+            "taskType": "translation_multiple_choice",
+            "prompt": "Traduce al español: “I have a room reservation.”",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "Tengo una reserva de habitación.",
+              "La parada está enfrente del banco.",
+              "¿Puede ayudarme, por favor?"
+            ],
+            "correctAnswer": "Tengo una reserva de habitación.",
+            "sourceEnglish": "I have a room reservation."
+          },
+          {
+            "itemId": "english-a1-m090-practice-ex01-i05",
+            "position": 5,
+            "taskType": "translation_multiple_choice",
+            "prompt": "Traduce al español: “What is the weather like today?”",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "¿Qué tiempo hace hoy?",
+              "Mi vuelo sale a las seis.",
+              "¿Cómo llego a la estación?"
+            ],
+            "correctAnswer": "¿Qué tiempo hace hoy?",
+            "sourceEnglish": "What is the weather like today?"
+          },
+          {
+            "itemId": "english-a1-m090-practice-ex01-i06",
+            "position": 6,
+            "taskType": "translation_multiple_choice",
+            "prompt": "Traduce al español: “We are going on holiday.”",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "Nos vamos de vacaciones.",
+              "Tengo una maleta.",
+              "Necesito dos billetes, por favor."
+            ],
+            "correctAnswer": "Nos vamos de vacaciones.",
+            "sourceEnglish": "We are going on holiday."
+          },
+          {
+            "itemId": "english-a1-m090-practice-ex01-i07",
+            "position": 7,
+            "taskType": "translation_multiple_choice",
+            "prompt": "Traduce al español: “The bus stop is opposite the bank.”",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "La parada está enfrente del banco.",
+              "¿Puede ayudarme, por favor?",
+              "¿Dónde está el hotel?"
+            ],
+            "correctAnswer": "La parada está enfrente del banco.",
+            "sourceEnglish": "The bus stop is opposite the bank."
+          },
+          {
+            "itemId": "english-a1-m090-practice-ex01-i08",
+            "position": 8,
+            "taskType": "translation_multiple_choice",
+            "prompt": "Traduce al español: “My flight leaves at six.”",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "Mi vuelo sale a las seis.",
+              "¿Cómo llego a la estación?",
+              "Tengo una reserva de habitación."
+            ],
+            "correctAnswer": "Mi vuelo sale a las seis.",
+            "sourceEnglish": "My flight leaves at six."
+          },
+          {
+            "itemId": "english-a1-m090-practice-ex01-i09",
+            "position": 9,
+            "taskType": "translation_multiple_choice",
+            "prompt": "Traduce al español: “I have one suitcase.”",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "Tengo una maleta.",
+              "Necesito dos billetes, por favor.",
+              "¿Qué tiempo hace hoy?"
+            ],
+            "correctAnswer": "Tengo una maleta.",
+            "sourceEnglish": "I have one suitcase."
+          },
+          {
+            "itemId": "english-a1-m090-practice-ex01-i10",
+            "position": 10,
+            "taskType": "translation_multiple_choice",
+            "prompt": "Traduce al español: “Can you help me, please?”",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "¿Puede ayudarme, por favor?",
+              "¿Dónde está el hotel?",
+              "Nos vamos de vacaciones."
+            ],
+            "correctAnswer": "¿Puede ayudarme, por favor?",
+            "sourceEnglish": "Can you help me, please?"
+          },
+          {
+            "itemId": "english-a1-m090-practice-ex01-i11",
+            "position": 11,
+            "taskType": "listening_translation_multiple_choice",
+            "prompt": "Escucha el inglés y elige su significado.",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "¿Cómo llego a la estación?",
+              "¿Qué tiempo hace hoy?",
+              "Mi vuelo sale a las seis."
+            ],
+            "correctAnswer": "¿Cómo llego a la estación?",
+            "sourceEnglish": "How do I get to the station?"
+          },
+          {
+            "itemId": "english-a1-m090-practice-ex01-i12",
+            "position": 12,
+            "taskType": "listening_translation_multiple_choice",
+            "prompt": "Escucha el inglés y elige su significado.",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "Necesito dos billetes, por favor.",
+              "Nos vamos de vacaciones.",
+              "Tengo una maleta."
+            ],
+            "correctAnswer": "Necesito dos billetes, por favor.",
+            "sourceEnglish": "I need two tickets, please."
+          },
+          {
+            "itemId": "english-a1-m090-practice-ex01-i13",
+            "position": 13,
+            "taskType": "listening_translation_multiple_choice",
+            "prompt": "Escucha el inglés y elige su significado.",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "¿Dónde está el hotel?",
+              "La parada está enfrente del banco.",
+              "¿Puede ayudarme, por favor?"
+            ],
+            "correctAnswer": "¿Dónde está el hotel?",
+            "sourceEnglish": "Where is the hotel?"
+          },
+          {
+            "itemId": "english-a1-m090-practice-ex01-i14",
+            "position": 14,
+            "taskType": "listening_translation_multiple_choice",
+            "prompt": "Escucha el inglés y elige su significado.",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "Tengo una reserva de habitación.",
+              "Mi vuelo sale a las seis.",
+              "¿Cómo llego a la estación?"
+            ],
+            "correctAnswer": "Tengo una reserva de habitación.",
+            "sourceEnglish": "I have a room reservation."
+          },
+          {
+            "itemId": "english-a1-m090-practice-ex01-i15",
+            "position": 15,
+            "taskType": "listening_translation_multiple_choice",
+            "prompt": "Escucha el inglés y elige su significado.",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "¿Qué tiempo hace hoy?",
+              "Tengo una maleta.",
+              "Necesito dos billetes, por favor."
+            ],
+            "correctAnswer": "¿Qué tiempo hace hoy?",
+            "sourceEnglish": "What is the weather like today?"
+          },
+          {
+            "itemId": "english-a1-m090-practice-ex01-i16",
+            "position": 16,
+            "taskType": "listening_translation_multiple_choice",
+            "prompt": "Escucha el inglés y elige su significado.",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "Nos vamos de vacaciones.",
+              "¿Puede ayudarme, por favor?",
+              "¿Dónde está el hotel?"
+            ],
+            "correctAnswer": "Nos vamos de vacaciones.",
+            "sourceEnglish": "We are going on holiday."
+          },
+          {
+            "itemId": "english-a1-m090-practice-ex01-i17",
+            "position": 17,
+            "taskType": "listening_translation_multiple_choice",
+            "prompt": "Escucha el inglés y elige su significado.",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "La parada está enfrente del banco.",
+              "¿Cómo llego a la estación?",
+              "Tengo una reserva de habitación."
+            ],
+            "correctAnswer": "La parada está enfrente del banco.",
+            "sourceEnglish": "The bus stop is opposite the bank."
+          },
+          {
+            "itemId": "english-a1-m090-practice-ex01-i18",
+            "position": 18,
+            "taskType": "listening_translation_multiple_choice",
+            "prompt": "Escucha el inglés y elige su significado.",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "Mi vuelo sale a las seis.",
+              "Necesito dos billetes, por favor.",
+              "¿Qué tiempo hace hoy?"
+            ],
+            "correctAnswer": "Mi vuelo sale a las seis.",
+            "sourceEnglish": "My flight leaves at six."
+          },
+          {
+            "itemId": "english-a1-m090-practice-ex01-i19",
+            "position": 19,
+            "taskType": "listening_translation_multiple_choice",
+            "prompt": "Escucha el inglés y elige su significado.",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "Tengo una maleta.",
+              "¿Dónde está el hotel?",
+              "Nos vamos de vacaciones."
+            ],
+            "correctAnswer": "Tengo una maleta.",
+            "sourceEnglish": "I have one suitcase."
+          },
+          {
+            "itemId": "english-a1-m090-practice-ex01-i20",
+            "position": 20,
+            "taskType": "listening_translation_multiple_choice",
+            "prompt": "Escucha el inglés y elige su significado.",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "¿Puede ayudarme, por favor?",
+              "Tengo una reserva de habitación.",
+              "La parada está enfrente del banco."
+            ],
+            "correctAnswer": "¿Puede ayudarme, por favor?",
+            "sourceEnglish": "Can you help me, please?"
+          }
+        ]
+      }
+    },
+    {
+      "sectionId": "english-a1-m090-grammar",
+      "sectionKey": "grammar",
+      "position": 3,
+      "title": "grammar",
+      "exercise": {
+        "exerciseId": "english-a1-m090-grammar-ex01",
+        "type": "grammar",
+        "items": [
+          {
+            "itemId": "english-a1-m090-grammar-ex01-i01",
+            "position": 1,
+            "prompt": "___ is the station?",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "Where",
+              "When",
+              "Who"
+            ],
+            "correctAnswer": "Where"
+          },
+          {
+            "itemId": "english-a1-m090-grammar-ex01-i02",
+            "position": 2,
+            "prompt": "How much ___ a ticket?",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "is",
+              "are",
+              "do"
+            ],
+            "correctAnswer": "is"
+          },
+          {
+            "itemId": "english-a1-m090-grammar-ex01-i03",
+            "position": 3,
+            "prompt": "Can I ___ a ticket, please?",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "have",
+              "has",
+              "having"
+            ],
+            "correctAnswer": "have"
+          },
+          {
+            "itemId": "english-a1-m090-grammar-ex01-i04",
+            "position": 4,
+            "prompt": "What time ___ the train leave?",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "does",
+              "do",
+              "is"
+            ],
+            "correctAnswer": "does"
+          },
+          {
+            "itemId": "english-a1-m090-grammar-ex01-i05",
+            "position": 5,
+            "prompt": "We travel ___ train.",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "by",
+              "on",
+              "at"
+            ],
+            "correctAnswer": "by"
+          },
+          {
+            "itemId": "english-a1-m090-grammar-ex01-i06",
+            "position": 6,
+            "prompt": "Could you ___ me, please?",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "help",
+              "helps",
+              "helping"
+            ],
+            "correctAnswer": "help"
+          },
+          {
+            "itemId": "english-a1-m090-grammar-ex01-i07",
+            "position": 7,
+            "prompt": "The hotel is ___ the station.",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "near",
+              "between",
+              "at"
+            ],
+            "correctAnswer": "near"
+          },
+          {
+            "itemId": "english-a1-m090-grammar-ex01-i08",
+            "position": 8,
+            "prompt": "I'd like ___ book a room.",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "to",
+              "for",
+              "at"
+            ],
+            "correctAnswer": "to"
+          },
+          {
+            "itemId": "english-a1-m090-grammar-ex01-i09",
+            "position": 9,
+            "prompt": "___ there a bus at six?",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "Is",
+              "Are",
+              "Do"
+            ],
+            "correctAnswer": "Is"
+          },
+          {
+            "itemId": "english-a1-m090-grammar-ex01-i10",
+            "position": 10,
+            "prompt": "Thank you ___ your help.",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "for",
+              "to",
+              "at"
+            ],
+            "correctAnswer": "for"
+          }
+        ],
+        "theory": {
+          "title": "Integrated travel questions and polite language",
+          "explanation": "En situaciones de viaje combinamos preguntas con where, when y how much, peticiones corteses y expresiones para pedir ayuda o confirmar información.",
+          "patterns": [
+            {
+              "label": "Model",
+              "pattern": "Where is the station? Can I have a ticket, please?",
+              "examples": [
+                "Where is the station? Can I have a ticket, please?"
+              ]
+            }
+          ],
+          "tip": "Lee los ejemplos y comprueba cómo cambia la estructura."
+        }
+      }
+    },
+    {
+      "sectionId": "english-a1-m090-pronunciation",
+      "sectionKey": "pronunciation",
+      "position": 4,
+      "title": "pronunciation",
+      "exercise": {
+        "exerciseId": "english-a1-m090-pronunciation-ex01",
+        "type": "pronunciation_cards",
+        "items": [
+          {
+            "itemId": "english-a1-m090-pronunciation-ex01-i01",
+            "position": 1,
+            "word": "transport",
+            "translation": "transporte",
+            "pronunciationGuide": "Listen to the en-GB model and keep the final consonant clear.",
+            "audio": "tts:en-GB:transport"
+          },
+          {
+            "itemId": "english-a1-m090-pronunciation-ex01-i02",
+            "position": 2,
+            "word": "directions",
+            "translation": "indicaciones",
+            "pronunciationGuide": "Listen to the en-GB model and keep the final consonant clear.",
+            "audio": "tts:en-GB:directions"
+          },
+          {
+            "itemId": "english-a1-m090-pronunciation-ex01-i03",
+            "position": 3,
+            "word": "ticket",
+            "translation": "billete",
+            "pronunciationGuide": "Listen to the en-GB model and keep the final consonant clear.",
+            "audio": "tts:en-GB:ticket"
+          },
+          {
+            "itemId": "english-a1-m090-pronunciation-ex01-i04",
+            "position": 4,
+            "word": "hotel",
+            "translation": "hotel",
+            "pronunciationGuide": "Listen to the en-GB model and keep the final consonant clear.",
+            "audio": "tts:en-GB:hotel"
+          },
+          {
+            "itemId": "english-a1-m090-pronunciation-ex01-i05",
+            "position": 5,
+            "word": "weather",
+            "translation": "tiempo",
+            "pronunciationGuide": "Listen to the en-GB model and keep the final consonant clear.",
+            "audio": "tts:en-GB:weather"
+          },
+          {
+            "itemId": "english-a1-m090-pronunciation-ex01-i06",
+            "position": 6,
+            "word": "holiday",
+            "translation": "vacaciones",
+            "pronunciationGuide": "Listen to the en-GB model and keep the final consonant clear.",
+            "audio": "tts:en-GB:holiday"
+          },
+          {
+            "itemId": "english-a1-m090-pronunciation-ex01-i07",
+            "position": 7,
+            "word": "station",
+            "translation": "estación",
+            "pronunciationGuide": "Listen to the en-GB model and keep the final consonant clear.",
+            "audio": "tts:en-GB:station"
+          },
+          {
+            "itemId": "english-a1-m090-pronunciation-ex01-i08",
+            "position": 8,
+            "word": "airport",
+            "translation": "aeropuerto",
+            "pronunciationGuide": "Listen to the en-GB model and keep the final consonant clear.",
+            "audio": "tts:en-GB:airport"
+          },
+          {
+            "itemId": "english-a1-m090-pronunciation-ex01-i09",
+            "position": 9,
+            "word": "suitcase",
+            "translation": "maleta",
+            "pronunciationGuide": "Listen to the en-GB model and keep the final consonant clear.",
+            "audio": "tts:en-GB:suitcase"
+          },
+          {
+            "itemId": "english-a1-m090-pronunciation-ex01-i10",
+            "position": 10,
+            "word": "reservation",
+            "translation": "reserva",
+            "pronunciationGuide": "Listen to the en-GB model and keep the final consonant clear.",
+            "audio": "tts:en-GB:reservation"
+          }
+        ],
+        "focus": "Practica el ritmo y el acento de las palabras clave de Travel Conversation."
+      }
+    },
+    {
+      "sectionId": "english-a1-m090-reading",
+      "sectionKey": "reading",
+      "position": 5,
+      "title": "reading",
+      "exercise": {
+        "exerciseId": "english-a1-m090-reading-ex01",
+        "type": "reading_comprehension",
+        "items": [
+          {
+            "itemId": "english-a1-m090-reading-ex01-i01",
+            "position": 1,
+            "prompt": "Which English sentence means “¿Cómo llego a la estación?”?",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "How do I get to the station?",
+              "I need two tickets, please.",
+              "Where is the hotel?"
+            ],
+            "correctAnswer": "How do I get to the station?"
+          },
+          {
+            "itemId": "english-a1-m090-reading-ex01-i02",
+            "position": 2,
+            "prompt": "Which English sentence means “Necesito dos billetes, por favor.”?",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "I need two tickets, please.",
+              "Where is the hotel?",
+              "I have a room reservation."
+            ],
+            "correctAnswer": "I need two tickets, please."
+          },
+          {
+            "itemId": "english-a1-m090-reading-ex01-i03",
+            "position": 3,
+            "prompt": "Which English sentence means “¿Dónde está el hotel?”?",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "Where is the hotel?",
+              "I have a room reservation.",
+              "What is the weather like today?"
+            ],
+            "correctAnswer": "Where is the hotel?"
+          },
+          {
+            "itemId": "english-a1-m090-reading-ex01-i04",
+            "position": 4,
+            "prompt": "Which English sentence means “Tengo una reserva de habitación.”?",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "I have a room reservation.",
+              "What is the weather like today?",
+              "We are going on holiday."
+            ],
+            "correctAnswer": "I have a room reservation."
+          },
+          {
+            "itemId": "english-a1-m090-reading-ex01-i05",
+            "position": 5,
+            "prompt": "Which English sentence means “¿Qué tiempo hace hoy?”?",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "What is the weather like today?",
+              "We are going on holiday.",
+              "The bus stop is opposite the bank."
+            ],
+            "correctAnswer": "What is the weather like today?"
+          },
+          {
+            "itemId": "english-a1-m090-reading-ex01-i06",
+            "position": 6,
+            "prompt": "Which English sentence means “Nos vamos de vacaciones.”?",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "We are going on holiday.",
+              "The bus stop is opposite the bank.",
+              "My flight leaves at six."
+            ],
+            "correctAnswer": "We are going on holiday."
+          },
+          {
+            "itemId": "english-a1-m090-reading-ex01-i07",
+            "position": 7,
+            "prompt": "Which English sentence means “La parada está enfrente del banco.”?",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "The bus stop is opposite the bank.",
+              "My flight leaves at six.",
+              "I have one suitcase."
+            ],
+            "correctAnswer": "The bus stop is opposite the bank."
+          },
+          {
+            "itemId": "english-a1-m090-reading-ex01-i08",
+            "position": 8,
+            "prompt": "Which English sentence means “Mi vuelo sale a las seis.”?",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "My flight leaves at six.",
+              "I have one suitcase.",
+              "Can you help me, please?"
+            ],
+            "correctAnswer": "My flight leaves at six."
+          },
+          {
+            "itemId": "english-a1-m090-reading-ex01-i09",
+            "position": 9,
+            "prompt": "Which English sentence means “Tengo una maleta.”?",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "I have one suitcase.",
+              "Can you help me, please?",
+              "How do I get to the station?"
+            ],
+            "correctAnswer": "I have one suitcase."
+          },
+          {
+            "itemId": "english-a1-m090-reading-ex01-i10",
+            "position": 10,
+            "prompt": "Which English sentence means “¿Puede ayudarme, por favor?”?",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "Can you help me, please?",
+              "How do I get to the station?",
+              "I need two tickets, please."
+            ],
+            "correctAnswer": "Can you help me, please?"
+          }
+        ],
+        "content": {
+          "passageId": "english-a1-m090-reading-passage-01",
+          "passage": "How do I get to the station? I need two tickets, please. Where is the hotel? I have a room reservation. What is the weather like today? We are going on holiday."
+        }
+      }
+    },
+    {
+      "sectionId": "english-a1-m090-writing",
+      "sectionKey": "writing",
+      "position": 6,
+      "title": "writing",
+      "exercise": {
+        "exerciseId": "english-a1-m090-writing-ex01",
+        "type": "dictation",
+        "items": [
+          {
+            "itemId": "english-a1-m090-writing-ex01-i01",
+            "position": 1,
+            "audio": "tts:en-GB:How do I get to the station?",
+            "expectedAnswer": "How do I get to the station?",
+            "evaluation": {
+              "type": "normalised_text"
+            }
+          },
+          {
+            "itemId": "english-a1-m090-writing-ex01-i02",
+            "position": 2,
+            "audio": "tts:en-GB:I need two tickets, please.",
+            "expectedAnswer": "I need two tickets, please.",
+            "evaluation": {
+              "type": "normalised_text"
+            }
+          },
+          {
+            "itemId": "english-a1-m090-writing-ex01-i03",
+            "position": 3,
+            "audio": "tts:en-GB:Where is the hotel?",
+            "expectedAnswer": "Where is the hotel?",
+            "evaluation": {
+              "type": "normalised_text"
+            }
+          },
+          {
+            "itemId": "english-a1-m090-writing-ex01-i04",
+            "position": 4,
+            "audio": "tts:en-GB:I have a room reservation.",
+            "expectedAnswer": "I have a room reservation.",
+            "evaluation": {
+              "type": "normalised_text"
+            }
+          },
+          {
+            "itemId": "english-a1-m090-writing-ex01-i05",
+            "position": 5,
+            "audio": "tts:en-GB:What is the weather like today?",
+            "expectedAnswer": "What is the weather like today?",
+            "evaluation": {
+              "type": "normalised_text"
+            }
+          },
+          {
+            "itemId": "english-a1-m090-writing-ex01-i06",
+            "position": 6,
+            "audio": "tts:en-GB:We are going on holiday.",
+            "expectedAnswer": "We are going on holiday.",
+            "evaluation": {
+              "type": "normalised_text"
+            }
+          },
+          {
+            "itemId": "english-a1-m090-writing-ex01-i07",
+            "position": 7,
+            "audio": "tts:en-GB:The bus stop is opposite the bank.",
+            "expectedAnswer": "The bus stop is opposite the bank.",
+            "evaluation": {
+              "type": "normalised_text"
+            }
+          },
+          {
+            "itemId": "english-a1-m090-writing-ex01-i08",
+            "position": 8,
+            "audio": "tts:en-GB:My flight leaves at six.",
+            "expectedAnswer": "My flight leaves at six.",
+            "evaluation": {
+              "type": "normalised_text"
+            }
+          },
+          {
+            "itemId": "english-a1-m090-writing-ex01-i09",
+            "position": 9,
+            "audio": "tts:en-GB:I have one suitcase.",
+            "expectedAnswer": "I have one suitcase.",
+            "evaluation": {
+              "type": "normalised_text"
+            }
+          },
+          {
+            "itemId": "english-a1-m090-writing-ex01-i10",
+            "position": 10,
+            "audio": "tts:en-GB:Can you help me, please?",
+            "expectedAnswer": "Can you help me, please?",
+            "evaluation": {
+              "type": "normalised_text"
+            }
+          }
+        ],
+        "writingTask": "Escribe 5–6 frases sobre travel conversation. Utiliza al menos cinco palabras de la misión y la estructura integrated travel questions and polite language.",
+        "modelText": "How do I get to the station? I need two tickets, please. Where is the hotel? I have a room reservation. What is the weather like today? We are going on holiday."
+      }
+    },
+    {
+      "sectionId": "english-a1-m090-speaking",
+      "sectionKey": "speaking",
+      "position": 7,
+      "title": "speaking",
+      "exercise": {
+        "exerciseId": "english-a1-m090-speaking-ex01",
+        "type": "speaking_prompts",
+        "items": [
+          {
+            "itemId": "english-a1-m090-speaking-ex01-i01",
+            "position": 1,
+            "prompt": "Say a sentence about this situation: ¿Cómo llego a la estación?",
+            "modelAnswer": "How do I get to the station?",
+            "evaluation": {
+              "type": "transcription_feedback",
+              "transcriptionSeparateFromPronunciation": true
+            }
+          },
+          {
+            "itemId": "english-a1-m090-speaking-ex01-i02",
+            "position": 2,
+            "prompt": "Say a sentence about this situation: Necesito dos billetes, por favor.",
+            "modelAnswer": "I need two tickets, please.",
+            "evaluation": {
+              "type": "transcription_feedback",
+              "transcriptionSeparateFromPronunciation": true
+            }
+          },
+          {
+            "itemId": "english-a1-m090-speaking-ex01-i03",
+            "position": 3,
+            "prompt": "Say a sentence about this situation: ¿Dónde está el hotel?",
+            "modelAnswer": "Where is the hotel?",
+            "evaluation": {
+              "type": "transcription_feedback",
+              "transcriptionSeparateFromPronunciation": true
+            }
+          },
+          {
+            "itemId": "english-a1-m090-speaking-ex01-i04",
+            "position": 4,
+            "prompt": "Say a sentence about this situation: Tengo una reserva de habitación.",
+            "modelAnswer": "I have a room reservation.",
+            "evaluation": {
+              "type": "transcription_feedback",
+              "transcriptionSeparateFromPronunciation": true
+            }
+          },
+          {
+            "itemId": "english-a1-m090-speaking-ex01-i05",
+            "position": 5,
+            "prompt": "Say a sentence about this situation: ¿Qué tiempo hace hoy?",
+            "modelAnswer": "What is the weather like today?",
+            "evaluation": {
+              "type": "transcription_feedback",
+              "transcriptionSeparateFromPronunciation": true
+            }
+          },
+          {
+            "itemId": "english-a1-m090-speaking-ex01-i06",
+            "position": 6,
+            "prompt": "Say a sentence about this situation: Nos vamos de vacaciones.",
+            "modelAnswer": "We are going on holiday.",
+            "evaluation": {
+              "type": "transcription_feedback",
+              "transcriptionSeparateFromPronunciation": true
+            }
+          },
+          {
+            "itemId": "english-a1-m090-speaking-ex01-i07",
+            "position": 7,
+            "prompt": "Say a sentence about this situation: La parada está enfrente del banco.",
+            "modelAnswer": "The bus stop is opposite the bank.",
+            "evaluation": {
+              "type": "transcription_feedback",
+              "transcriptionSeparateFromPronunciation": true
+            }
+          },
+          {
+            "itemId": "english-a1-m090-speaking-ex01-i08",
+            "position": 8,
+            "prompt": "Say a sentence about this situation: Mi vuelo sale a las seis.",
+            "modelAnswer": "My flight leaves at six.",
+            "evaluation": {
+              "type": "transcription_feedback",
+              "transcriptionSeparateFromPronunciation": true
+            }
+          },
+          {
+            "itemId": "english-a1-m090-speaking-ex01-i09",
+            "position": 9,
+            "prompt": "Say a sentence about this situation: Tengo una maleta.",
+            "modelAnswer": "I have one suitcase.",
+            "evaluation": {
+              "type": "transcription_feedback",
+              "transcriptionSeparateFromPronunciation": true
+            }
+          },
+          {
+            "itemId": "english-a1-m090-speaking-ex01-i10",
+            "position": 10,
+            "prompt": "Say a sentence about this situation: ¿Puede ayudarme, por favor?",
+            "modelAnswer": "Can you help me, please?",
+            "evaluation": {
+              "type": "transcription_feedback",
+              "transcriptionSeparateFromPronunciation": true
+            }
+          }
+        ]
+      }
+    },
+    {
+      "sectionId": "english-a1-m090-listening",
+      "sectionKey": "listening",
+      "position": 8,
+      "title": "listening",
+      "exercise": {
+        "exerciseId": "english-a1-m090-listening-ex01",
+        "type": "listening_gap_fill",
+        "items": [
+          {
+            "itemId": "english-a1-m090-listening-ex01-i01",
+            "position": 1,
+            "gapToken": "[[gap-01]]",
+            "expectedWordId": "english-a1-m090-listening-word-01"
+          },
+          {
+            "itemId": "english-a1-m090-listening-ex01-i02",
+            "position": 2,
+            "gapToken": "[[gap-02]]",
+            "expectedWordId": "english-a1-m090-listening-word-02"
+          },
+          {
+            "itemId": "english-a1-m090-listening-ex01-i03",
+            "position": 3,
+            "gapToken": "[[gap-03]]",
+            "expectedWordId": "english-a1-m090-listening-word-03"
+          },
+          {
+            "itemId": "english-a1-m090-listening-ex01-i04",
+            "position": 4,
+            "gapToken": "[[gap-04]]",
+            "expectedWordId": "english-a1-m090-listening-word-04"
+          },
+          {
+            "itemId": "english-a1-m090-listening-ex01-i05",
+            "position": 5,
+            "gapToken": "[[gap-05]]",
+            "expectedWordId": "english-a1-m090-listening-word-05"
+          },
+          {
+            "itemId": "english-a1-m090-listening-ex01-i06",
+            "position": 6,
+            "gapToken": "[[gap-06]]",
+            "expectedWordId": "english-a1-m090-listening-word-06"
+          },
+          {
+            "itemId": "english-a1-m090-listening-ex01-i07",
+            "position": 7,
+            "gapToken": "[[gap-07]]",
+            "expectedWordId": "english-a1-m090-listening-word-07"
+          },
+          {
+            "itemId": "english-a1-m090-listening-ex01-i08",
+            "position": 8,
+            "gapToken": "[[gap-08]]",
+            "expectedWordId": "english-a1-m090-listening-word-08"
+          },
+          {
+            "itemId": "english-a1-m090-listening-ex01-i09",
+            "position": 9,
+            "gapToken": "[[gap-09]]",
+            "expectedWordId": "english-a1-m090-listening-word-09"
+          },
+          {
+            "itemId": "english-a1-m090-listening-ex01-i10",
+            "position": 10,
+            "gapToken": "[[gap-10]]",
+            "expectedWordId": "english-a1-m090-listening-word-10"
+          }
+        ],
+        "content": {
+          "audio": "tts:en-GB:The key words for Travel Conversation are: transport, directions, ticket, hotel, weather, holiday, station, airport, suitcase, reservation. Listen and repeat each word carefully.",
+          "audioLocale": "en-GB",
+          "transcriptTemplate": "The key words for Travel Conversation are: [[gap-01]], [[gap-02]], [[gap-03]], [[gap-04]], [[gap-05]], [[gap-06]], [[gap-07]], [[gap-08]], [[gap-09]], [[gap-10]]. Listen and repeat each word carefully.",
+          "wordBank": [
+            {
+              "wordId": "english-a1-m090-listening-word-01",
+              "word": "transport"
+            },
+            {
+              "wordId": "english-a1-m090-listening-word-02",
+              "word": "directions"
+            },
+            {
+              "wordId": "english-a1-m090-listening-word-03",
+              "word": "ticket"
+            },
+            {
+              "wordId": "english-a1-m090-listening-word-04",
+              "word": "hotel"
+            },
+            {
+              "wordId": "english-a1-m090-listening-word-05",
+              "word": "weather"
+            },
+            {
+              "wordId": "english-a1-m090-listening-word-06",
+              "word": "holiday"
+            },
+            {
+              "wordId": "english-a1-m090-listening-word-07",
+              "word": "station"
+            },
+            {
+              "wordId": "english-a1-m090-listening-word-08",
+              "word": "airport"
+            },
+            {
+              "wordId": "english-a1-m090-listening-word-09",
+              "word": "suitcase"
+            },
+            {
+              "wordId": "english-a1-m090-listening-word-10",
+              "word": "reservation"
+            }
+          ],
+          "interaction": "select_place_move_replace"
+        }
+      }
+    }
+  ]
+}

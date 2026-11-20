@@ -1,0 +1,1205 @@
+{
+  "schemaVersion": "1.2.0",
+  "contentVersion": 1,
+  "course": {
+    "courseId": "english-a1",
+    "level": "A1",
+    "language": "en-GB"
+  },
+  "unit": {
+    "unitId": "english-a1-unit-09",
+    "courseId": "english-a1",
+    "position": 9,
+    "title": "Town, transport and travel"
+  },
+  "mission": {
+    "missionId": "english-a1-m083",
+    "unitId": "english-a1-unit-09",
+    "position": 83,
+    "title": "Travel Plans"
+  },
+  "sections": [
+    {
+      "sectionId": "english-a1-m083-explore",
+      "sectionKey": "explore",
+      "position": 1,
+      "title": "explore",
+      "exercise": {
+        "exerciseId": "english-a1-m083-explore-ex01",
+        "type": "vocabulary_pairs",
+        "items": [
+          {
+            "itemId": "english-a1-m083-explore-ex01-i01",
+            "position": 1,
+            "english": "travel",
+            "spanish": "viajar",
+            "audio": "tts:en-GB:travel"
+          },
+          {
+            "itemId": "english-a1-m083-explore-ex01-i02",
+            "position": 2,
+            "english": "holiday",
+            "spanish": "vacaciones",
+            "audio": "tts:en-GB:holiday"
+          },
+          {
+            "itemId": "english-a1-m083-explore-ex01-i03",
+            "position": 3,
+            "english": "trip",
+            "spanish": "viaje",
+            "audio": "tts:en-GB:trip"
+          },
+          {
+            "itemId": "english-a1-m083-explore-ex01-i04",
+            "position": 4,
+            "english": "suitcase",
+            "spanish": "maleta",
+            "audio": "tts:en-GB:suitcase"
+          },
+          {
+            "itemId": "english-a1-m083-explore-ex01-i05",
+            "position": 5,
+            "english": "passport",
+            "spanish": "pasaporte",
+            "audio": "tts:en-GB:passport"
+          },
+          {
+            "itemId": "english-a1-m083-explore-ex01-i06",
+            "position": 6,
+            "english": "map",
+            "spanish": "mapa",
+            "audio": "tts:en-GB:map"
+          },
+          {
+            "itemId": "english-a1-m083-explore-ex01-i07",
+            "position": 7,
+            "english": "camera",
+            "spanish": "cámara",
+            "audio": "tts:en-GB:camera"
+          },
+          {
+            "itemId": "english-a1-m083-explore-ex01-i08",
+            "position": 8,
+            "english": "train",
+            "spanish": "tren",
+            "audio": "tts:en-GB:train"
+          },
+          {
+            "itemId": "english-a1-m083-explore-ex01-i09",
+            "position": 9,
+            "english": "hotel",
+            "spanish": "hotel",
+            "audio": "tts:en-GB:hotel"
+          },
+          {
+            "itemId": "english-a1-m083-explore-ex01-i10",
+            "position": 10,
+            "english": "beach",
+            "spanish": "playa",
+            "audio": "tts:en-GB:beach"
+          }
+        ],
+        "theory": {
+          "title": "Vocabulary: Travel Plans",
+          "explanation": "Explora diez palabras y expresiones sobre travel plans. Escucha el modelo británico y relaciona cada palabra con su significado.",
+          "patterns": [
+            {
+              "label": "Useful language",
+              "pattern": "Short question + short answer",
+              "examples": [
+                "I am going on holiday.",
+                "I have a small suitcase.",
+                "I need my passport."
+              ]
+            }
+          ],
+          "tip": "Repite las expresiones y crea un ejemplo relacionado con tu vida."
+        }
+      }
+    },
+    {
+      "sectionId": "english-a1-m083-practice",
+      "sectionKey": "practice",
+      "position": 2,
+      "title": "practice",
+      "exercise": {
+        "exerciseId": "english-a1-m083-practice-ex01",
+        "type": "mixed_practice",
+        "items": [
+          {
+            "itemId": "english-a1-m083-practice-ex01-i01",
+            "position": 1,
+            "taskType": "translation_multiple_choice",
+            "prompt": "Traduce al español: “I am going on holiday.”",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "Me voy de vacaciones.",
+              "Este es un mapa de Londres.",
+              "Viajo en tren."
+            ],
+            "correctAnswer": "Me voy de vacaciones.",
+            "sourceEnglish": "I am going on holiday."
+          },
+          {
+            "itemId": "english-a1-m083-practice-ex01-i02",
+            "position": 2,
+            "taskType": "translation_multiple_choice",
+            "prompt": "Traduce al español: “I have a small suitcase.”",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "Tengo una maleta pequeña.",
+              "Estamos planeando un viaje.",
+              "El hotel está cerca del centro."
+            ],
+            "correctAnswer": "Tengo una maleta pequeña.",
+            "sourceEnglish": "I have a small suitcase."
+          },
+          {
+            "itemId": "english-a1-m083-practice-ex01-i03",
+            "position": 3,
+            "taskType": "translation_multiple_choice",
+            "prompt": "Traduce al español: “I need my passport.”",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "Necesito mi pasaporte.",
+              "Quiero visitar la playa.",
+              "Me llevo mi cámara."
+            ],
+            "correctAnswer": "Necesito mi pasaporte.",
+            "sourceEnglish": "I need my passport."
+          },
+          {
+            "itemId": "english-a1-m083-practice-ex01-i04",
+            "position": 4,
+            "taskType": "translation_multiple_choice",
+            "prompt": "Traduce al español: “This is a map of London.”",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "Este es un mapa de Londres.",
+              "Viajo en tren.",
+              "¿Cuándo salimos?"
+            ],
+            "correctAnswer": "Este es un mapa de Londres.",
+            "sourceEnglish": "This is a map of London."
+          },
+          {
+            "itemId": "english-a1-m083-practice-ex01-i05",
+            "position": 5,
+            "taskType": "translation_multiple_choice",
+            "prompt": "Traduce al español: “We are planning a trip.”",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "Estamos planeando un viaje.",
+              "El hotel está cerca del centro.",
+              "Me voy de vacaciones."
+            ],
+            "correctAnswer": "Estamos planeando un viaje.",
+            "sourceEnglish": "We are planning a trip."
+          },
+          {
+            "itemId": "english-a1-m083-practice-ex01-i06",
+            "position": 6,
+            "taskType": "translation_multiple_choice",
+            "prompt": "Traduce al español: “I want to visit the beach.”",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "Quiero visitar la playa.",
+              "Me llevo mi cámara.",
+              "Tengo una maleta pequeña."
+            ],
+            "correctAnswer": "Quiero visitar la playa.",
+            "sourceEnglish": "I want to visit the beach."
+          },
+          {
+            "itemId": "english-a1-m083-practice-ex01-i07",
+            "position": 7,
+            "taskType": "translation_multiple_choice",
+            "prompt": "Traduce al español: “I travel by train.”",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "Viajo en tren.",
+              "¿Cuándo salimos?",
+              "Necesito mi pasaporte."
+            ],
+            "correctAnswer": "Viajo en tren.",
+            "sourceEnglish": "I travel by train."
+          },
+          {
+            "itemId": "english-a1-m083-practice-ex01-i08",
+            "position": 8,
+            "taskType": "translation_multiple_choice",
+            "prompt": "Traduce al español: “The hotel is near the centre.”",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "El hotel está cerca del centro.",
+              "Me voy de vacaciones.",
+              "Este es un mapa de Londres."
+            ],
+            "correctAnswer": "El hotel está cerca del centro.",
+            "sourceEnglish": "The hotel is near the centre."
+          },
+          {
+            "itemId": "english-a1-m083-practice-ex01-i09",
+            "position": 9,
+            "taskType": "translation_multiple_choice",
+            "prompt": "Traduce al español: “I am taking my camera.”",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "Me llevo mi cámara.",
+              "Tengo una maleta pequeña.",
+              "Estamos planeando un viaje."
+            ],
+            "correctAnswer": "Me llevo mi cámara.",
+            "sourceEnglish": "I am taking my camera."
+          },
+          {
+            "itemId": "english-a1-m083-practice-ex01-i10",
+            "position": 10,
+            "taskType": "translation_multiple_choice",
+            "prompt": "Traduce al español: “When do we leave?”",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "¿Cuándo salimos?",
+              "Necesito mi pasaporte.",
+              "Quiero visitar la playa."
+            ],
+            "correctAnswer": "¿Cuándo salimos?",
+            "sourceEnglish": "When do we leave?"
+          },
+          {
+            "itemId": "english-a1-m083-practice-ex01-i11",
+            "position": 11,
+            "taskType": "listening_translation_multiple_choice",
+            "prompt": "Escucha el inglés y elige su significado.",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "Me voy de vacaciones.",
+              "Estamos planeando un viaje.",
+              "El hotel está cerca del centro."
+            ],
+            "correctAnswer": "Me voy de vacaciones.",
+            "sourceEnglish": "I am going on holiday."
+          },
+          {
+            "itemId": "english-a1-m083-practice-ex01-i12",
+            "position": 12,
+            "taskType": "listening_translation_multiple_choice",
+            "prompt": "Escucha el inglés y elige su significado.",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "Tengo una maleta pequeña.",
+              "Quiero visitar la playa.",
+              "Me llevo mi cámara."
+            ],
+            "correctAnswer": "Tengo una maleta pequeña.",
+            "sourceEnglish": "I have a small suitcase."
+          },
+          {
+            "itemId": "english-a1-m083-practice-ex01-i13",
+            "position": 13,
+            "taskType": "listening_translation_multiple_choice",
+            "prompt": "Escucha el inglés y elige su significado.",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "Necesito mi pasaporte.",
+              "Viajo en tren.",
+              "¿Cuándo salimos?"
+            ],
+            "correctAnswer": "Necesito mi pasaporte.",
+            "sourceEnglish": "I need my passport."
+          },
+          {
+            "itemId": "english-a1-m083-practice-ex01-i14",
+            "position": 14,
+            "taskType": "listening_translation_multiple_choice",
+            "prompt": "Escucha el inglés y elige su significado.",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "Este es un mapa de Londres.",
+              "El hotel está cerca del centro.",
+              "Me voy de vacaciones."
+            ],
+            "correctAnswer": "Este es un mapa de Londres.",
+            "sourceEnglish": "This is a map of London."
+          },
+          {
+            "itemId": "english-a1-m083-practice-ex01-i15",
+            "position": 15,
+            "taskType": "listening_translation_multiple_choice",
+            "prompt": "Escucha el inglés y elige su significado.",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "Estamos planeando un viaje.",
+              "Me llevo mi cámara.",
+              "Tengo una maleta pequeña."
+            ],
+            "correctAnswer": "Estamos planeando un viaje.",
+            "sourceEnglish": "We are planning a trip."
+          },
+          {
+            "itemId": "english-a1-m083-practice-ex01-i16",
+            "position": 16,
+            "taskType": "listening_translation_multiple_choice",
+            "prompt": "Escucha el inglés y elige su significado.",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "Quiero visitar la playa.",
+              "¿Cuándo salimos?",
+              "Necesito mi pasaporte."
+            ],
+            "correctAnswer": "Quiero visitar la playa.",
+            "sourceEnglish": "I want to visit the beach."
+          },
+          {
+            "itemId": "english-a1-m083-practice-ex01-i17",
+            "position": 17,
+            "taskType": "listening_translation_multiple_choice",
+            "prompt": "Escucha el inglés y elige su significado.",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "Viajo en tren.",
+              "Me voy de vacaciones.",
+              "Este es un mapa de Londres."
+            ],
+            "correctAnswer": "Viajo en tren.",
+            "sourceEnglish": "I travel by train."
+          },
+          {
+            "itemId": "english-a1-m083-practice-ex01-i18",
+            "position": 18,
+            "taskType": "listening_translation_multiple_choice",
+            "prompt": "Escucha el inglés y elige su significado.",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "El hotel está cerca del centro.",
+              "Tengo una maleta pequeña.",
+              "Estamos planeando un viaje."
+            ],
+            "correctAnswer": "El hotel está cerca del centro.",
+            "sourceEnglish": "The hotel is near the centre."
+          },
+          {
+            "itemId": "english-a1-m083-practice-ex01-i19",
+            "position": 19,
+            "taskType": "listening_translation_multiple_choice",
+            "prompt": "Escucha el inglés y elige su significado.",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "Me llevo mi cámara.",
+              "Necesito mi pasaporte.",
+              "Quiero visitar la playa."
+            ],
+            "correctAnswer": "Me llevo mi cámara.",
+            "sourceEnglish": "I am taking my camera."
+          },
+          {
+            "itemId": "english-a1-m083-practice-ex01-i20",
+            "position": 20,
+            "taskType": "listening_translation_multiple_choice",
+            "prompt": "Escucha el inglés y elige su significado.",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "¿Cuándo salimos?",
+              "Este es un mapa de Londres.",
+              "Viajo en tren."
+            ],
+            "correctAnswer": "¿Cuándo salimos?",
+            "sourceEnglish": "When do we leave?"
+          }
+        ]
+      }
+    },
+    {
+      "sectionId": "english-a1-m083-grammar",
+      "sectionKey": "grammar",
+      "position": 3,
+      "title": "grammar",
+      "exercise": {
+        "exerciseId": "english-a1-m083-grammar-ex01",
+        "type": "grammar",
+        "items": [
+          {
+            "itemId": "english-a1-m083-grammar-ex01-i01",
+            "position": 1,
+            "prompt": "I'd like ___ visit London.",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "to",
+              "for",
+              "at"
+            ],
+            "correctAnswer": "to"
+          },
+          {
+            "itemId": "english-a1-m083-grammar-ex01-i02",
+            "position": 2,
+            "prompt": "We'd like to ___ by train.",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "travel",
+              "travels",
+              "travelling"
+            ],
+            "correctAnswer": "travel"
+          },
+          {
+            "itemId": "english-a1-m083-grammar-ex01-i03",
+            "position": 3,
+            "prompt": "What would you like ___ do?",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "to",
+              "for",
+              "at"
+            ],
+            "correctAnswer": "to"
+          },
+          {
+            "itemId": "english-a1-m083-grammar-ex01-i04",
+            "position": 4,
+            "prompt": "She'd like to ___ in a hotel.",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "stay",
+              "stays",
+              "staying"
+            ],
+            "correctAnswer": "stay"
+          },
+          {
+            "itemId": "english-a1-m083-grammar-ex01-i05",
+            "position": 5,
+            "prompt": "They would like ___ a ticket.",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "to buy",
+              "buy",
+              "buying"
+            ],
+            "correctAnswer": "to buy"
+          },
+          {
+            "itemId": "english-a1-m083-grammar-ex01-i06",
+            "position": 6,
+            "prompt": "I'd like to ___ the museum.",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "visit",
+              "visits",
+              "visiting"
+            ],
+            "correctAnswer": "visit"
+          },
+          {
+            "itemId": "english-a1-m083-grammar-ex01-i07",
+            "position": 7,
+            "prompt": "Would you like to ___ a trip?",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "plan",
+              "plans",
+              "planning"
+            ],
+            "correctAnswer": "plan"
+          },
+          {
+            "itemId": "english-a1-m083-grammar-ex01-i08",
+            "position": 8,
+            "prompt": "He'd like to ___ tomorrow.",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "leave",
+              "leaves",
+              "leaving"
+            ],
+            "correctAnswer": "leave"
+          },
+          {
+            "itemId": "english-a1-m083-grammar-ex01-i09",
+            "position": 9,
+            "prompt": "We'd like to ___ a taxi.",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "take",
+              "takes",
+              "taking"
+            ],
+            "correctAnswer": "take"
+          },
+          {
+            "itemId": "english-a1-m083-grammar-ex01-i10",
+            "position": 10,
+            "prompt": "I'd like to ___ near the beach.",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "stay",
+              "stays",
+              "staying"
+            ],
+            "correctAnswer": "stay"
+          }
+        ],
+        "theory": {
+          "title": "Would like to for travel plans",
+          "explanation": "Usamos would like to + verbo base para expresar deseos y planes de forma cortés. También podemos preguntar What would you like to do?",
+          "patterns": [
+            {
+              "label": "Model",
+              "pattern": "I'd like to visit London",
+              "examples": [
+                "I'd like to visit London",
+                "We'd like to travel by train."
+              ]
+            }
+          ],
+          "tip": "Lee los ejemplos y comprueba cómo cambia la estructura."
+        }
+      }
+    },
+    {
+      "sectionId": "english-a1-m083-pronunciation",
+      "sectionKey": "pronunciation",
+      "position": 4,
+      "title": "pronunciation",
+      "exercise": {
+        "exerciseId": "english-a1-m083-pronunciation-ex01",
+        "type": "pronunciation_cards",
+        "items": [
+          {
+            "itemId": "english-a1-m083-pronunciation-ex01-i01",
+            "position": 1,
+            "word": "travel",
+            "translation": "viajar",
+            "pronunciationGuide": "Listen to the en-GB model and keep the final consonant clear.",
+            "audio": "tts:en-GB:travel"
+          },
+          {
+            "itemId": "english-a1-m083-pronunciation-ex01-i02",
+            "position": 2,
+            "word": "holiday",
+            "translation": "vacaciones",
+            "pronunciationGuide": "Listen to the en-GB model and keep the final consonant clear.",
+            "audio": "tts:en-GB:holiday"
+          },
+          {
+            "itemId": "english-a1-m083-pronunciation-ex01-i03",
+            "position": 3,
+            "word": "trip",
+            "translation": "viaje",
+            "pronunciationGuide": "Listen to the en-GB model and keep the final consonant clear.",
+            "audio": "tts:en-GB:trip"
+          },
+          {
+            "itemId": "english-a1-m083-pronunciation-ex01-i04",
+            "position": 4,
+            "word": "suitcase",
+            "translation": "maleta",
+            "pronunciationGuide": "Listen to the en-GB model and keep the final consonant clear.",
+            "audio": "tts:en-GB:suitcase"
+          },
+          {
+            "itemId": "english-a1-m083-pronunciation-ex01-i05",
+            "position": 5,
+            "word": "passport",
+            "translation": "pasaporte",
+            "pronunciationGuide": "Listen to the en-GB model and keep the final consonant clear.",
+            "audio": "tts:en-GB:passport"
+          },
+          {
+            "itemId": "english-a1-m083-pronunciation-ex01-i06",
+            "position": 6,
+            "word": "map",
+            "translation": "mapa",
+            "pronunciationGuide": "Listen to the en-GB model and keep the final consonant clear.",
+            "audio": "tts:en-GB:map"
+          },
+          {
+            "itemId": "english-a1-m083-pronunciation-ex01-i07",
+            "position": 7,
+            "word": "camera",
+            "translation": "cámara",
+            "pronunciationGuide": "Listen to the en-GB model and keep the final consonant clear.",
+            "audio": "tts:en-GB:camera"
+          },
+          {
+            "itemId": "english-a1-m083-pronunciation-ex01-i08",
+            "position": 8,
+            "word": "train",
+            "translation": "tren",
+            "pronunciationGuide": "Listen to the en-GB model and keep the final consonant clear.",
+            "audio": "tts:en-GB:train"
+          },
+          {
+            "itemId": "english-a1-m083-pronunciation-ex01-i09",
+            "position": 9,
+            "word": "hotel",
+            "translation": "hotel",
+            "pronunciationGuide": "Listen to the en-GB model and keep the final consonant clear.",
+            "audio": "tts:en-GB:hotel"
+          },
+          {
+            "itemId": "english-a1-m083-pronunciation-ex01-i10",
+            "position": 10,
+            "word": "beach",
+            "translation": "playa",
+            "pronunciationGuide": "Listen to the en-GB model and keep the final consonant clear.",
+            "audio": "tts:en-GB:beach"
+          }
+        ],
+        "focus": "Practica el ritmo y el acento de las palabras clave de Travel Plans."
+      }
+    },
+    {
+      "sectionId": "english-a1-m083-reading",
+      "sectionKey": "reading",
+      "position": 5,
+      "title": "reading",
+      "exercise": {
+        "exerciseId": "english-a1-m083-reading-ex01",
+        "type": "reading_comprehension",
+        "items": [
+          {
+            "itemId": "english-a1-m083-reading-ex01-i01",
+            "position": 1,
+            "prompt": "Which English sentence means “Me voy de vacaciones.”?",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "I am going on holiday.",
+              "I have a small suitcase.",
+              "I need my passport."
+            ],
+            "correctAnswer": "I am going on holiday."
+          },
+          {
+            "itemId": "english-a1-m083-reading-ex01-i02",
+            "position": 2,
+            "prompt": "Which English sentence means “Tengo una maleta pequeña.”?",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "I have a small suitcase.",
+              "I need my passport.",
+              "This is a map of London."
+            ],
+            "correctAnswer": "I have a small suitcase."
+          },
+          {
+            "itemId": "english-a1-m083-reading-ex01-i03",
+            "position": 3,
+            "prompt": "Which English sentence means “Necesito mi pasaporte.”?",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "I need my passport.",
+              "This is a map of London.",
+              "We are planning a trip."
+            ],
+            "correctAnswer": "I need my passport."
+          },
+          {
+            "itemId": "english-a1-m083-reading-ex01-i04",
+            "position": 4,
+            "prompt": "Which English sentence means “Este es un mapa de Londres.”?",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "This is a map of London.",
+              "We are planning a trip.",
+              "I want to visit the beach."
+            ],
+            "correctAnswer": "This is a map of London."
+          },
+          {
+            "itemId": "english-a1-m083-reading-ex01-i05",
+            "position": 5,
+            "prompt": "Which English sentence means “Estamos planeando un viaje.”?",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "We are planning a trip.",
+              "I want to visit the beach.",
+              "I travel by train."
+            ],
+            "correctAnswer": "We are planning a trip."
+          },
+          {
+            "itemId": "english-a1-m083-reading-ex01-i06",
+            "position": 6,
+            "prompt": "Which English sentence means “Quiero visitar la playa.”?",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "I want to visit the beach.",
+              "I travel by train.",
+              "The hotel is near the centre."
+            ],
+            "correctAnswer": "I want to visit the beach."
+          },
+          {
+            "itemId": "english-a1-m083-reading-ex01-i07",
+            "position": 7,
+            "prompt": "Which English sentence means “Viajo en tren.”?",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "I travel by train.",
+              "The hotel is near the centre.",
+              "I am taking my camera."
+            ],
+            "correctAnswer": "I travel by train."
+          },
+          {
+            "itemId": "english-a1-m083-reading-ex01-i08",
+            "position": 8,
+            "prompt": "Which English sentence means “El hotel está cerca del centro.”?",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "The hotel is near the centre.",
+              "I am taking my camera.",
+              "When do we leave?"
+            ],
+            "correctAnswer": "The hotel is near the centre."
+          },
+          {
+            "itemId": "english-a1-m083-reading-ex01-i09",
+            "position": 9,
+            "prompt": "Which English sentence means “Me llevo mi cámara.”?",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "I am taking my camera.",
+              "When do we leave?",
+              "I am going on holiday."
+            ],
+            "correctAnswer": "I am taking my camera."
+          },
+          {
+            "itemId": "english-a1-m083-reading-ex01-i10",
+            "position": 10,
+            "prompt": "Which English sentence means “¿Cuándo salimos?”?",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "When do we leave?",
+              "I am going on holiday.",
+              "I have a small suitcase."
+            ],
+            "correctAnswer": "When do we leave?"
+          }
+        ],
+        "content": {
+          "passageId": "english-a1-m083-reading-passage-01",
+          "passage": "I am going on holiday. I have a small suitcase. I need my passport. This is a map of London. We are planning a trip. I want to visit the beach."
+        }
+      }
+    },
+    {
+      "sectionId": "english-a1-m083-writing",
+      "sectionKey": "writing",
+      "position": 6,
+      "title": "writing",
+      "exercise": {
+        "exerciseId": "english-a1-m083-writing-ex01",
+        "type": "dictation",
+        "items": [
+          {
+            "itemId": "english-a1-m083-writing-ex01-i01",
+            "position": 1,
+            "audio": "tts:en-GB:I am going on holiday.",
+            "expectedAnswer": "I am going on holiday.",
+            "evaluation": {
+              "type": "normalised_text"
+            }
+          },
+          {
+            "itemId": "english-a1-m083-writing-ex01-i02",
+            "position": 2,
+            "audio": "tts:en-GB:I have a small suitcase.",
+            "expectedAnswer": "I have a small suitcase.",
+            "evaluation": {
+              "type": "normalised_text"
+            }
+          },
+          {
+            "itemId": "english-a1-m083-writing-ex01-i03",
+            "position": 3,
+            "audio": "tts:en-GB:I need my passport.",
+            "expectedAnswer": "I need my passport.",
+            "evaluation": {
+              "type": "normalised_text"
+            }
+          },
+          {
+            "itemId": "english-a1-m083-writing-ex01-i04",
+            "position": 4,
+            "audio": "tts:en-GB:This is a map of London.",
+            "expectedAnswer": "This is a map of London.",
+            "evaluation": {
+              "type": "normalised_text"
+            }
+          },
+          {
+            "itemId": "english-a1-m083-writing-ex01-i05",
+            "position": 5,
+            "audio": "tts:en-GB:We are planning a trip.",
+            "expectedAnswer": "We are planning a trip.",
+            "evaluation": {
+              "type": "normalised_text"
+            }
+          },
+          {
+            "itemId": "english-a1-m083-writing-ex01-i06",
+            "position": 6,
+            "audio": "tts:en-GB:I want to visit the beach.",
+            "expectedAnswer": "I want to visit the beach.",
+            "evaluation": {
+              "type": "normalised_text"
+            }
+          },
+          {
+            "itemId": "english-a1-m083-writing-ex01-i07",
+            "position": 7,
+            "audio": "tts:en-GB:I travel by train.",
+            "expectedAnswer": "I travel by train.",
+            "evaluation": {
+              "type": "normalised_text"
+            }
+          },
+          {
+            "itemId": "english-a1-m083-writing-ex01-i08",
+            "position": 8,
+            "audio": "tts:en-GB:The hotel is near the centre.",
+            "expectedAnswer": "The hotel is near the centre.",
+            "evaluation": {
+              "type": "normalised_text"
+            }
+          },
+          {
+            "itemId": "english-a1-m083-writing-ex01-i09",
+            "position": 9,
+            "audio": "tts:en-GB:I am taking my camera.",
+            "expectedAnswer": "I am taking my camera.",
+            "evaluation": {
+              "type": "normalised_text"
+            }
+          },
+          {
+            "itemId": "english-a1-m083-writing-ex01-i10",
+            "position": 10,
+            "audio": "tts:en-GB:When do we leave?",
+            "expectedAnswer": "When do we leave?",
+            "evaluation": {
+              "type": "normalised_text"
+            }
+          }
+        ],
+        "writingTask": "Escribe 5–6 frases sobre travel plans. Utiliza al menos cinco palabras de la misión y la estructura would like to for travel plans.",
+        "modelText": "I am going on holiday. I have a small suitcase. I need my passport. This is a map of London. We are planning a trip. I want to visit the beach."
+      }
+    },
+    {
+      "sectionId": "english-a1-m083-speaking",
+      "sectionKey": "speaking",
+      "position": 7,
+      "title": "speaking",
+      "exercise": {
+        "exerciseId": "english-a1-m083-speaking-ex01",
+        "type": "speaking_prompts",
+        "items": [
+          {
+            "itemId": "english-a1-m083-speaking-ex01-i01",
+            "position": 1,
+            "prompt": "Say a sentence about this situation: Me voy de vacaciones.",
+            "modelAnswer": "I am going on holiday.",
+            "evaluation": {
+              "type": "transcription_feedback",
+              "transcriptionSeparateFromPronunciation": true
+            }
+          },
+          {
+            "itemId": "english-a1-m083-speaking-ex01-i02",
+            "position": 2,
+            "prompt": "Say a sentence about this situation: Tengo una maleta pequeña.",
+            "modelAnswer": "I have a small suitcase.",
+            "evaluation": {
+              "type": "transcription_feedback",
+              "transcriptionSeparateFromPronunciation": true
+            }
+          },
+          {
+            "itemId": "english-a1-m083-speaking-ex01-i03",
+            "position": 3,
+            "prompt": "Say a sentence about this situation: Necesito mi pasaporte.",
+            "modelAnswer": "I need my passport.",
+            "evaluation": {
+              "type": "transcription_feedback",
+              "transcriptionSeparateFromPronunciation": true
+            }
+          },
+          {
+            "itemId": "english-a1-m083-speaking-ex01-i04",
+            "position": 4,
+            "prompt": "Say a sentence about this situation: Este es un mapa de Londres.",
+            "modelAnswer": "This is a map of London.",
+            "evaluation": {
+              "type": "transcription_feedback",
+              "transcriptionSeparateFromPronunciation": true
+            }
+          },
+          {
+            "itemId": "english-a1-m083-speaking-ex01-i05",
+            "position": 5,
+            "prompt": "Say a sentence about this situation: Estamos planeando un viaje.",
+            "modelAnswer": "We are planning a trip.",
+            "evaluation": {
+              "type": "transcription_feedback",
+              "transcriptionSeparateFromPronunciation": true
+            }
+          },
+          {
+            "itemId": "english-a1-m083-speaking-ex01-i06",
+            "position": 6,
+            "prompt": "Say a sentence about this situation: Quiero visitar la playa.",
+            "modelAnswer": "I want to visit the beach.",
+            "evaluation": {
+              "type": "transcription_feedback",
+              "transcriptionSeparateFromPronunciation": true
+            }
+          },
+          {
+            "itemId": "english-a1-m083-speaking-ex01-i07",
+            "position": 7,
+            "prompt": "Say a sentence about this situation: Viajo en tren.",
+            "modelAnswer": "I travel by train.",
+            "evaluation": {
+              "type": "transcription_feedback",
+              "transcriptionSeparateFromPronunciation": true
+            }
+          },
+          {
+            "itemId": "english-a1-m083-speaking-ex01-i08",
+            "position": 8,
+            "prompt": "Say a sentence about this situation: El hotel está cerca del centro.",
+            "modelAnswer": "The hotel is near the centre.",
+            "evaluation": {
+              "type": "transcription_feedback",
+              "transcriptionSeparateFromPronunciation": true
+            }
+          },
+          {
+            "itemId": "english-a1-m083-speaking-ex01-i09",
+            "position": 9,
+            "prompt": "Say a sentence about this situation: Me llevo mi cámara.",
+            "modelAnswer": "I am taking my camera.",
+            "evaluation": {
+              "type": "transcription_feedback",
+              "transcriptionSeparateFromPronunciation": true
+            }
+          },
+          {
+            "itemId": "english-a1-m083-speaking-ex01-i10",
+            "position": 10,
+            "prompt": "Say a sentence about this situation: ¿Cuándo salimos?",
+            "modelAnswer": "When do we leave?",
+            "evaluation": {
+              "type": "transcription_feedback",
+              "transcriptionSeparateFromPronunciation": true
+            }
+          }
+        ]
+      }
+    },
+    {
+      "sectionId": "english-a1-m083-listening",
+      "sectionKey": "listening",
+      "position": 8,
+      "title": "listening",
+      "exercise": {
+        "exerciseId": "english-a1-m083-listening-ex01",
+        "type": "listening_gap_fill",
+        "items": [
+          {
+            "itemId": "english-a1-m083-listening-ex01-i01",
+            "position": 1,
+            "gapToken": "[[gap-01]]",
+            "expectedWordId": "english-a1-m083-listening-word-01"
+          },
+          {
+            "itemId": "english-a1-m083-listening-ex01-i02",
+            "position": 2,
+            "gapToken": "[[gap-02]]",
+            "expectedWordId": "english-a1-m083-listening-word-02"
+          },
+          {
+            "itemId": "english-a1-m083-listening-ex01-i03",
+            "position": 3,
+            "gapToken": "[[gap-03]]",
+            "expectedWordId": "english-a1-m083-listening-word-03"
+          },
+          {
+            "itemId": "english-a1-m083-listening-ex01-i04",
+            "position": 4,
+            "gapToken": "[[gap-04]]",
+            "expectedWordId": "english-a1-m083-listening-word-04"
+          },
+          {
+            "itemId": "english-a1-m083-listening-ex01-i05",
+            "position": 5,
+            "gapToken": "[[gap-05]]",
+            "expectedWordId": "english-a1-m083-listening-word-05"
+          },
+          {
+            "itemId": "english-a1-m083-listening-ex01-i06",
+            "position": 6,
+            "gapToken": "[[gap-06]]",
+            "expectedWordId": "english-a1-m083-listening-word-06"
+          },
+          {
+            "itemId": "english-a1-m083-listening-ex01-i07",
+            "position": 7,
+            "gapToken": "[[gap-07]]",
+            "expectedWordId": "english-a1-m083-listening-word-07"
+          },
+          {
+            "itemId": "english-a1-m083-listening-ex01-i08",
+            "position": 8,
+            "gapToken": "[[gap-08]]",
+            "expectedWordId": "english-a1-m083-listening-word-08"
+          },
+          {
+            "itemId": "english-a1-m083-listening-ex01-i09",
+            "position": 9,
+            "gapToken": "[[gap-09]]",
+            "expectedWordId": "english-a1-m083-listening-word-09"
+          },
+          {
+            "itemId": "english-a1-m083-listening-ex01-i10",
+            "position": 10,
+            "gapToken": "[[gap-10]]",
+            "expectedWordId": "english-a1-m083-listening-word-10"
+          }
+        ],
+        "content": {
+          "audio": "tts:en-GB:The key words for Travel Plans are: travel, holiday, trip, suitcase, passport, map, camera, train, hotel, beach. Listen and repeat each word carefully.",
+          "audioLocale": "en-GB",
+          "transcriptTemplate": "The key words for Travel Plans are: [[gap-01]], [[gap-02]], [[gap-03]], [[gap-04]], [[gap-05]], [[gap-06]], [[gap-07]], [[gap-08]], [[gap-09]], [[gap-10]]. Listen and repeat each word carefully.",
+          "wordBank": [
+            {
+              "wordId": "english-a1-m083-listening-word-01",
+              "word": "travel"
+            },
+            {
+              "wordId": "english-a1-m083-listening-word-02",
+              "word": "holiday"
+            },
+            {
+              "wordId": "english-a1-m083-listening-word-03",
+              "word": "trip"
+            },
+            {
+              "wordId": "english-a1-m083-listening-word-04",
+              "word": "suitcase"
+            },
+            {
+              "wordId": "english-a1-m083-listening-word-05",
+              "word": "passport"
+            },
+            {
+              "wordId": "english-a1-m083-listening-word-06",
+              "word": "map"
+            },
+            {
+              "wordId": "english-a1-m083-listening-word-07",
+              "word": "camera"
+            },
+            {
+              "wordId": "english-a1-m083-listening-word-08",
+              "word": "train"
+            },
+            {
+              "wordId": "english-a1-m083-listening-word-09",
+              "word": "hotel"
+            },
+            {
+              "wordId": "english-a1-m083-listening-word-10",
+              "word": "beach"
+            }
+          ],
+          "interaction": "select_place_move_replace"
+        }
+      }
+    }
+  ]
+}
