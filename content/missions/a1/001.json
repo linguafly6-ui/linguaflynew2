@@ -1,0 +1,901 @@
+{
+  "schemaVersion": "1.0.0",
+  "contentVersion": 1,
+  "course": {
+    "courseId": "english-a1",
+    "level": "A1",
+    "language": "en-GB"
+  },
+  "unit": {
+    "unitId": "english-a1-unit-01",
+    "courseId": "english-a1",
+    "position": 1,
+    "title": "Personal Information"
+  },
+  "mission": {
+    "missionId": "english-a1-m001",
+    "unitId": "english-a1-unit-01",
+    "position": 1,
+    "title": "Who Am I?"
+  },
+  "sections": [
+    {
+      "sectionId": "english-a1-m001-explore",
+      "sectionKey": "explore",
+      "position": 1,
+      "exercise": {
+        "exerciseId": "english-a1-m001-explore-ex01",
+        "type": "vocabulary_pairs",
+        "items": [
+          {
+            "itemId": "english-a1-m001-explore-ex01-i01",
+            "position": 1,
+            "english": "name",
+            "spanish": "nombre",
+            "audio": "tts:en-GB:name"
+          },
+          {
+            "itemId": "english-a1-m001-explore-ex01-i02",
+            "position": 2,
+            "english": "surname",
+            "spanish": "apellido",
+            "audio": "tts:en-GB:surname"
+          },
+          {
+            "itemId": "english-a1-m001-explore-ex01-i03",
+            "position": 3,
+            "english": "age",
+            "spanish": "edad",
+            "audio": "tts:en-GB:age"
+          },
+          {
+            "itemId": "english-a1-m001-explore-ex01-i04",
+            "position": 4,
+            "english": "address",
+            "spanish": "dirección",
+            "audio": "tts:en-GB:address"
+          },
+          {
+            "itemId": "english-a1-m001-explore-ex01-i05",
+            "position": 5,
+            "english": "city",
+            "spanish": "ciudad",
+            "audio": "tts:en-GB:city"
+          },
+          {
+            "itemId": "english-a1-m001-explore-ex01-i06",
+            "position": 6,
+            "english": "country",
+            "spanish": "país",
+            "audio": "tts:en-GB:country"
+          },
+          {
+            "itemId": "english-a1-m001-explore-ex01-i07",
+            "position": 7,
+            "english": "nationality",
+            "spanish": "nacionalidad",
+            "audio": "tts:en-GB:nationality"
+          },
+          {
+            "itemId": "english-a1-m001-explore-ex01-i08",
+            "position": 8,
+            "english": "phone number",
+            "spanish": "número de teléfono",
+            "audio": "tts:en-GB:phone number"
+          },
+          {
+            "itemId": "english-a1-m001-explore-ex01-i09",
+            "position": 9,
+            "english": "email address",
+            "spanish": "dirección de correo electrónico",
+            "audio": "tts:en-GB:email address"
+          },
+          {
+            "itemId": "english-a1-m001-explore-ex01-i10",
+            "position": 10,
+            "english": "date of birth",
+            "spanish": "fecha de nacimiento",
+            "audio": "tts:en-GB:date of birth"
+          }
+        ]
+      }
+    },
+    {
+      "sectionId": "english-a1-m001-practice",
+      "sectionKey": "practice",
+      "position": 2,
+      "exercise": {
+        "exerciseId": "english-a1-m001-practice-ex01",
+        "type": "mixed_practice",
+        "items": [
+          {
+            "itemId": "english-a1-m001-practice-ex01-i01",
+            "position": 1,
+            "taskType": "translation_multiple_choice",
+            "prompt": "Traduce “name” al español.",
+            "evaluation": {
+              "type": "single_choice"
+            }
+          },
+          {
+            "itemId": "english-a1-m001-practice-ex01-i02",
+            "position": 2,
+            "taskType": "translation_multiple_choice",
+            "prompt": "Traduce “surname” al español.",
+            "evaluation": {
+              "type": "single_choice"
+            }
+          },
+          {
+            "itemId": "english-a1-m001-practice-ex01-i03",
+            "position": 3,
+            "taskType": "translation_multiple_choice",
+            "prompt": "Traduce “age” al español.",
+            "evaluation": {
+              "type": "single_choice"
+            }
+          },
+          {
+            "itemId": "english-a1-m001-practice-ex01-i04",
+            "position": 4,
+            "taskType": "translation_multiple_choice",
+            "prompt": "Traduce “address” al español.",
+            "evaluation": {
+              "type": "single_choice"
+            }
+          },
+          {
+            "itemId": "english-a1-m001-practice-ex01-i05",
+            "position": 5,
+            "taskType": "translation_multiple_choice",
+            "prompt": "Traduce “city” al español.",
+            "evaluation": {
+              "type": "single_choice"
+            }
+          },
+          {
+            "itemId": "english-a1-m001-practice-ex01-i06",
+            "position": 6,
+            "taskType": "translation_multiple_choice",
+            "prompt": "Traduce “country” al español.",
+            "evaluation": {
+              "type": "single_choice"
+            }
+          },
+          {
+            "itemId": "english-a1-m001-practice-ex01-i07",
+            "position": 7,
+            "taskType": "translation_multiple_choice",
+            "prompt": "Traduce “nationality” al español.",
+            "evaluation": {
+              "type": "single_choice"
+            }
+          },
+          {
+            "itemId": "english-a1-m001-practice-ex01-i08",
+            "position": 8,
+            "taskType": "translation_multiple_choice",
+            "prompt": "Traduce “phone number” al español.",
+            "evaluation": {
+              "type": "single_choice"
+            }
+          },
+          {
+            "itemId": "english-a1-m001-practice-ex01-i09",
+            "position": 9,
+            "taskType": "translation_multiple_choice",
+            "prompt": "Traduce “email address” al español.",
+            "evaluation": {
+              "type": "single_choice"
+            }
+          },
+          {
+            "itemId": "english-a1-m001-practice-ex01-i10",
+            "position": 10,
+            "taskType": "translation_multiple_choice",
+            "prompt": "Traduce “date of birth” al español.",
+            "evaluation": {
+              "type": "single_choice"
+            }
+          },
+          {
+            "itemId": "english-a1-m001-practice-ex01-i11",
+            "position": 11,
+            "taskType": "translation_multiple_choice",
+            "prompt": "Traduce “My name is Alex.” al español.",
+            "evaluation": {
+              "type": "single_choice"
+            }
+          },
+          {
+            "itemId": "english-a1-m001-practice-ex01-i12",
+            "position": 12,
+            "taskType": "translation_multiple_choice",
+            "prompt": "Traduce “I am twenty years old.” al español.",
+            "evaluation": {
+              "type": "single_choice"
+            }
+          },
+          {
+            "itemId": "english-a1-m001-practice-ex01-i13",
+            "position": 13,
+            "taskType": "translation_multiple_choice",
+            "prompt": "Traduce “I live in Madrid.” al español.",
+            "evaluation": {
+              "type": "single_choice"
+            }
+          },
+          {
+            "itemId": "english-a1-m001-practice-ex01-i14",
+            "position": 14,
+            "taskType": "translation_multiple_choice",
+            "prompt": "Traduce “I am from Spain.” al español.",
+            "evaluation": {
+              "type": "single_choice"
+            }
+          },
+          {
+            "itemId": "english-a1-m001-practice-ex01-i15",
+            "position": 15,
+            "taskType": "translation_multiple_choice",
+            "prompt": "Traduce “My surname is Taylor.” al español.",
+            "evaluation": {
+              "type": "single_choice"
+            }
+          },
+          {
+            "itemId": "english-a1-m001-practice-ex01-i16",
+            "position": 16,
+            "taskType": "translation_multiple_choice",
+            "prompt": "Traduce “What is your address?” al español.",
+            "evaluation": {
+              "type": "single_choice"
+            }
+          },
+          {
+            "itemId": "english-a1-m001-practice-ex01-i17",
+            "position": 17,
+            "taskType": "translation_multiple_choice",
+            "prompt": "Traduce “What is your phone number?” al español.",
+            "evaluation": {
+              "type": "single_choice"
+            }
+          },
+          {
+            "itemId": "english-a1-m001-practice-ex01-i18",
+            "position": 18,
+            "taskType": "translation_multiple_choice",
+            "prompt": "Traduce “My email address is alex@example.test.” al español.",
+            "evaluation": {
+              "type": "single_choice"
+            }
+          },
+          {
+            "itemId": "english-a1-m001-practice-ex01-i19",
+            "position": 19,
+            "taskType": "translation_multiple_choice",
+            "prompt": "Traduce “Where do you live?” al español.",
+            "evaluation": {
+              "type": "single_choice"
+            }
+          },
+          {
+            "itemId": "english-a1-m001-practice-ex01-i20",
+            "position": 20,
+            "taskType": "translation_multiple_choice",
+            "prompt": "Traduce “When is your birthday?” al español.",
+            "evaluation": {
+              "type": "single_choice"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "sectionId": "english-a1-m001-grammar",
+      "sectionKey": "grammar",
+      "position": 3,
+      "exercise": {
+        "exerciseId": "english-a1-m001-grammar-ex01",
+        "type": "grammar",
+        "items": [
+          {
+            "itemId": "english-a1-m001-grammar-ex01-i01",
+            "position": 1,
+            "prompt": "I _____ from Madrid.",
+            "evaluation": {
+              "type": "single_choice"
+            }
+          },
+          {
+            "itemId": "english-a1-m001-grammar-ex01-i02",
+            "position": 2,
+            "prompt": "My surname _____ Brown.",
+            "evaluation": {
+              "type": "single_choice"
+            }
+          },
+          {
+            "itemId": "english-a1-m001-grammar-ex01-i03",
+            "position": 3,
+            "prompt": "_____ you a student?",
+            "evaluation": {
+              "type": "single_choice"
+            }
+          },
+          {
+            "itemId": "english-a1-m001-grammar-ex01-i04",
+            "position": 4,
+            "prompt": "I _____ twenty-four years old.",
+            "evaluation": {
+              "type": "single_choice"
+            }
+          },
+          {
+            "itemId": "english-a1-m001-grammar-ex01-i05",
+            "position": 5,
+            "prompt": "She _____ from Spain.",
+            "evaluation": {
+              "type": "single_choice"
+            }
+          },
+          {
+            "itemId": "english-a1-m001-grammar-ex01-i06",
+            "position": 6,
+            "prompt": "They _____ students.",
+            "evaluation": {
+              "type": "single_choice"
+            }
+          },
+          {
+            "itemId": "english-a1-m001-grammar-ex01-i07",
+            "position": 7,
+            "prompt": "We _____ in Madrid.",
+            "evaluation": {
+              "type": "single_choice"
+            }
+          },
+          {
+            "itemId": "english-a1-m001-grammar-ex01-i08",
+            "position": 8,
+            "prompt": "_____ he your teacher?",
+            "evaluation": {
+              "type": "single_choice"
+            }
+          },
+          {
+            "itemId": "english-a1-m001-grammar-ex01-i09",
+            "position": 9,
+            "prompt": "My friends _____ from Italy.",
+            "evaluation": {
+              "type": "single_choice"
+            }
+          },
+          {
+            "itemId": "english-a1-m001-grammar-ex01-i10",
+            "position": 10,
+            "prompt": "I _____ not thirty years old.",
+            "evaluation": {
+              "type": "single_choice"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "sectionId": "english-a1-m001-pronunciation",
+      "sectionKey": "pronunciation",
+      "position": 4,
+      "exercise": {
+        "exerciseId": "english-a1-m001-pronunciation-ex01",
+        "type": "pronunciation_cards",
+        "items": [
+          {
+            "itemId": "english-a1-m001-pronunciation-ex01-i01",
+            "position": 1,
+            "word": "name",
+            "translation": "nombre",
+            "pronunciationGuide": "neim",
+            "audio": "tts:en-GB:name"
+          },
+          {
+            "itemId": "english-a1-m001-pronunciation-ex01-i02",
+            "position": 2,
+            "word": "surname",
+            "translation": "apellido",
+            "pronunciationGuide": "suh-neim",
+            "audio": "tts:en-GB:surname"
+          },
+          {
+            "itemId": "english-a1-m001-pronunciation-ex01-i03",
+            "position": 3,
+            "word": "age",
+            "translation": "edad",
+            "pronunciationGuide": "eich",
+            "audio": "tts:en-GB:age"
+          },
+          {
+            "itemId": "english-a1-m001-pronunciation-ex01-i04",
+            "position": 4,
+            "word": "address",
+            "translation": "dirección",
+            "pronunciationGuide": "uh-dres",
+            "audio": "tts:en-GB:address"
+          },
+          {
+            "itemId": "english-a1-m001-pronunciation-ex01-i05",
+            "position": 5,
+            "word": "city",
+            "translation": "ciudad",
+            "pronunciationGuide": "si-ti",
+            "audio": "tts:en-GB:city"
+          },
+          {
+            "itemId": "english-a1-m001-pronunciation-ex01-i06",
+            "position": 6,
+            "word": "country",
+            "translation": "país",
+            "pronunciationGuide": "kun-tri",
+            "audio": "tts:en-GB:country"
+          },
+          {
+            "itemId": "english-a1-m001-pronunciation-ex01-i07",
+            "position": 7,
+            "word": "nationality",
+            "translation": "nacionalidad",
+            "pronunciationGuide": "na-shuh-na-li-ti",
+            "audio": "tts:en-GB:nationality"
+          },
+          {
+            "itemId": "english-a1-m001-pronunciation-ex01-i08",
+            "position": 8,
+            "word": "phone number",
+            "translation": "número de teléfono",
+            "pronunciationGuide": "foun num-buh",
+            "audio": "tts:en-GB:phone number"
+          },
+          {
+            "itemId": "english-a1-m001-pronunciation-ex01-i09",
+            "position": 9,
+            "word": "email address",
+            "translation": "dirección de correo electrónico",
+            "pronunciationGuide": "ii-meil uh-dres",
+            "audio": "tts:en-GB:email address"
+          },
+          {
+            "itemId": "english-a1-m001-pronunciation-ex01-i10",
+            "position": 10,
+            "word": "date of birth",
+            "translation": "fecha de nacimiento",
+            "pronunciationGuide": "deit uhv berth",
+            "audio": "tts:en-GB:date of birth"
+          }
+        ]
+      }
+    },
+    {
+      "sectionId": "english-a1-m001-reading",
+      "sectionKey": "reading",
+      "position": 5,
+      "exercise": {
+        "exerciseId": "english-a1-m001-reading-ex01",
+        "type": "reading_comprehension",
+        "content": {
+          "passageId": "english-a1-m001-reading-passage-01",
+          "passage": "My name is Alex Taylor. I am twenty-four years old. I am from Spain and I live in Madrid. My address is 10 Green Street. My phone number is 000 123 456. My email address is alex@example.test. My date of birth is 12 May."
+        },
+        "items": [
+          {
+            "itemId": "english-a1-m001-reading-ex01-i01",
+            "position": 1,
+            "prompt": "What is the text mainly about?",
+            "evaluation": {
+              "type": "single_choice"
+            }
+          },
+          {
+            "itemId": "english-a1-m001-reading-ex01-i02",
+            "position": 2,
+            "prompt": "How old is Alex?",
+            "evaluation": {
+              "type": "single_choice"
+            }
+          },
+          {
+            "itemId": "english-a1-m001-reading-ex01-i03",
+            "position": 3,
+            "prompt": "Which country is Alex from?",
+            "evaluation": {
+              "type": "single_choice"
+            }
+          },
+          {
+            "itemId": "english-a1-m001-reading-ex01-i04",
+            "position": 4,
+            "prompt": "Which city does Alex live in?",
+            "evaluation": {
+              "type": "single_choice"
+            }
+          },
+          {
+            "itemId": "english-a1-m001-reading-ex01-i05",
+            "position": 5,
+            "prompt": "What is Alex's surname?",
+            "evaluation": {
+              "type": "single_choice"
+            }
+          },
+          {
+            "itemId": "english-a1-m001-reading-ex01-i06",
+            "position": 6,
+            "prompt": "Which detail is the fictional address?",
+            "evaluation": {
+              "type": "single_choice"
+            }
+          },
+          {
+            "itemId": "english-a1-m001-reading-ex01-i07",
+            "position": 7,
+            "prompt": "What is the fictional phone number?",
+            "evaluation": {
+              "type": "single_choice"
+            }
+          },
+          {
+            "itemId": "english-a1-m001-reading-ex01-i08",
+            "position": 8,
+            "prompt": "What is Alex's date of birth?",
+            "evaluation": {
+              "type": "single_choice"
+            }
+          },
+          {
+            "itemId": "english-a1-m001-reading-ex01-i09",
+            "position": 9,
+            "prompt": "Which statement about Alex is true?",
+            "evaluation": {
+              "type": "single_choice"
+            }
+          },
+          {
+            "itemId": "english-a1-m001-reading-ex01-i10",
+            "position": 10,
+            "prompt": "Why might someone use an email address?",
+            "evaluation": {
+              "type": "single_choice"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "sectionId": "english-a1-m001-writing",
+      "sectionKey": "writing",
+      "position": 6,
+      "exercise": {
+        "exerciseId": "english-a1-m001-writing-ex01",
+        "type": "dictation",
+        "items": [
+          {
+            "itemId": "english-a1-m001-writing-ex01-i01",
+            "position": 1,
+            "audio": "tts:en-GB:My name is Alex.",
+            "expectedAnswer": "My name is Alex.",
+            "evaluation": {
+              "type": "normalised_text"
+            }
+          },
+          {
+            "itemId": "english-a1-m001-writing-ex01-i02",
+            "position": 2,
+            "audio": "tts:en-GB:My surname is Taylor.",
+            "expectedAnswer": "My surname is Taylor.",
+            "evaluation": {
+              "type": "normalised_text"
+            }
+          },
+          {
+            "itemId": "english-a1-m001-writing-ex01-i03",
+            "position": 3,
+            "audio": "tts:en-GB:I am twenty-four years old.",
+            "expectedAnswer": "I am twenty-four years old.",
+            "evaluation": {
+              "type": "normalised_text"
+            }
+          },
+          {
+            "itemId": "english-a1-m001-writing-ex01-i04",
+            "position": 4,
+            "audio": "tts:en-GB:I am from Spain.",
+            "expectedAnswer": "I am from Spain.",
+            "evaluation": {
+              "type": "normalised_text"
+            }
+          },
+          {
+            "itemId": "english-a1-m001-writing-ex01-i05",
+            "position": 5,
+            "audio": "tts:en-GB:I am Spanish.",
+            "expectedAnswer": "I am Spanish.",
+            "evaluation": {
+              "type": "normalised_text"
+            }
+          },
+          {
+            "itemId": "english-a1-m001-writing-ex01-i06",
+            "position": 6,
+            "audio": "tts:en-GB:I live in Madrid.",
+            "expectedAnswer": "I live in Madrid.",
+            "evaluation": {
+              "type": "normalised_text"
+            }
+          },
+          {
+            "itemId": "english-a1-m001-writing-ex01-i07",
+            "position": 7,
+            "audio": "tts:en-GB:My address is 10 Green Street.",
+            "expectedAnswer": "My address is 10 Green Street.",
+            "evaluation": {
+              "type": "normalised_text"
+            }
+          },
+          {
+            "itemId": "english-a1-m001-writing-ex01-i08",
+            "position": 8,
+            "audio": "tts:en-GB:My phone number is 000 123 456.",
+            "expectedAnswer": "My phone number is 000 123 456.",
+            "evaluation": {
+              "type": "normalised_text"
+            }
+          },
+          {
+            "itemId": "english-a1-m001-writing-ex01-i09",
+            "position": 9,
+            "audio": "tts:en-GB:My email address is alex@example.test.",
+            "expectedAnswer": "My email address is alex@example.test.",
+            "evaluation": {
+              "type": "normalised_text"
+            }
+          },
+          {
+            "itemId": "english-a1-m001-writing-ex01-i10",
+            "position": 10,
+            "audio": "tts:en-GB:My birthday is on 12 May.",
+            "expectedAnswer": "My birthday is on 12 May.",
+            "evaluation": {
+              "type": "normalised_text"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "sectionId": "english-a1-m001-speaking",
+      "sectionKey": "speaking",
+      "position": 7,
+      "exercise": {
+        "exerciseId": "english-a1-m001-speaking-ex01",
+        "type": "speaking_prompts",
+        "items": [
+          {
+            "itemId": "english-a1-m001-speaking-ex01-i01",
+            "position": 1,
+            "prompt": "Introduce yourself by giving your first name.",
+            "modelAnswer": "My name is Alex.",
+            "evaluation": {
+              "type": "transcription_feedback",
+              "transcriptionSeparateFromPronunciation": true
+            }
+          },
+          {
+            "itemId": "english-a1-m001-speaking-ex01-i02",
+            "position": 2,
+            "prompt": "Say your first name and surname.",
+            "modelAnswer": "My name is Alex Taylor.",
+            "evaluation": {
+              "type": "transcription_feedback",
+              "transcriptionSeparateFromPronunciation": true
+            }
+          },
+          {
+            "itemId": "english-a1-m001-speaking-ex01-i03",
+            "position": 3,
+            "prompt": "Say how old you are; you may use an imaginary age.",
+            "modelAnswer": "I am twenty-four years old.",
+            "evaluation": {
+              "type": "transcription_feedback",
+              "transcriptionSeparateFromPronunciation": true
+            }
+          },
+          {
+            "itemId": "english-a1-m001-speaking-ex01-i04",
+            "position": 4,
+            "prompt": "Say which country you are from.",
+            "modelAnswer": "I am from Spain.",
+            "evaluation": {
+              "type": "transcription_feedback",
+              "transcriptionSeparateFromPronunciation": true
+            }
+          },
+          {
+            "itemId": "english-a1-m001-speaking-ex01-i05",
+            "position": 5,
+            "prompt": "Say your nationality.",
+            "modelAnswer": "I am Spanish.",
+            "evaluation": {
+              "type": "transcription_feedback",
+              "transcriptionSeparateFromPronunciation": true
+            }
+          },
+          {
+            "itemId": "english-a1-m001-speaking-ex01-i06",
+            "position": 6,
+            "prompt": "Say which city you live in.",
+            "modelAnswer": "I live in Madrid.",
+            "evaluation": {
+              "type": "transcription_feedback",
+              "transcriptionSeparateFromPronunciation": true
+            }
+          },
+          {
+            "itemId": "english-a1-m001-speaking-ex01-i07",
+            "position": 7,
+            "prompt": "Ask another student for their name.",
+            "modelAnswer": "What is your name?",
+            "evaluation": {
+              "type": "transcription_feedback",
+              "transcriptionSeparateFromPronunciation": true
+            }
+          },
+          {
+            "itemId": "english-a1-m001-speaking-ex01-i08",
+            "position": 8,
+            "prompt": "Ask another student where they are from.",
+            "modelAnswer": "Where are you from?",
+            "evaluation": {
+              "type": "transcription_feedback",
+              "transcriptionSeparateFromPronunciation": true
+            }
+          },
+          {
+            "itemId": "english-a1-m001-speaking-ex01-i09",
+            "position": 9,
+            "prompt": "Ask another student how old they are.",
+            "modelAnswer": "How old are you?",
+            "evaluation": {
+              "type": "transcription_feedback",
+              "transcriptionSeparateFromPronunciation": true
+            }
+          },
+          {
+            "itemId": "english-a1-m001-speaking-ex01-i10",
+            "position": 10,
+            "prompt": "Give a short introduction using your name, age and city.",
+            "modelAnswer": "Hello. My name is Alex. I am twenty-four and I live in Madrid.",
+            "evaluation": {
+              "type": "transcription_feedback",
+              "transcriptionSeparateFromPronunciation": true
+            }
+          }
+        ]
+      }
+    },
+    {
+      "sectionId": "english-a1-m001-listening",
+      "sectionKey": "listening",
+      "position": 8,
+      "exercise": {
+        "exerciseId": "english-a1-m001-listening-ex01",
+        "type": "listening_gap_fill",
+        "content": {
+          "audio": "tts:en-GB:Hello. My name is Alex Taylor. I am twenty-four years old. I am Spanish. I live in Madrid. My phone number is 000 123 456. My birthday is on 12 May.",
+          "transcriptTemplate": "Hello. My name is [[gap-01]] Taylor. I am [[gap-02]] years old. I am [[gap-03]]. I live in [[gap-04]]. My [[gap-05]] number is [[gap-06]] [[gap-07]] [[gap-08]]. My [[gap-09]] is on 12 [[gap-10]].",
+          "wordBank": [
+            {
+              "wordId": "english-a1-m001-listening-word-01",
+              "word": "May"
+            },
+            {
+              "wordId": "english-a1-m001-listening-word-02",
+              "word": "phone"
+            },
+            {
+              "wordId": "english-a1-m001-listening-word-03",
+              "word": "Madrid"
+            },
+            {
+              "wordId": "english-a1-m001-listening-word-04",
+              "word": "Spanish"
+            },
+            {
+              "wordId": "english-a1-m001-listening-word-05",
+              "word": "000"
+            },
+            {
+              "wordId": "english-a1-m001-listening-word-06",
+              "word": "Alex"
+            },
+            {
+              "wordId": "english-a1-m001-listening-word-07",
+              "word": "123"
+            },
+            {
+              "wordId": "english-a1-m001-listening-word-08",
+              "word": "twenty-four"
+            },
+            {
+              "wordId": "english-a1-m001-listening-word-09",
+              "word": "birthday"
+            },
+            {
+              "wordId": "english-a1-m001-listening-word-10",
+              "word": "456"
+            }
+          ]
+        },
+        "items": [
+          {
+            "itemId": "english-a1-m001-listening-ex01-i01",
+            "position": 1,
+            "gapToken": "[[gap-01]]",
+            "expectedWordId": "english-a1-m001-listening-word-06"
+          },
+          {
+            "itemId": "english-a1-m001-listening-ex01-i02",
+            "position": 2,
+            "gapToken": "[[gap-02]]",
+            "expectedWordId": "english-a1-m001-listening-word-08"
+          },
+          {
+            "itemId": "english-a1-m001-listening-ex01-i03",
+            "position": 3,
+            "gapToken": "[[gap-03]]",
+            "expectedWordId": "english-a1-m001-listening-word-04"
+          },
+          {
+            "itemId": "english-a1-m001-listening-ex01-i04",
+            "position": 4,
+            "gapToken": "[[gap-04]]",
+            "expectedWordId": "english-a1-m001-listening-word-03"
+          },
+          {
+            "itemId": "english-a1-m001-listening-ex01-i05",
+            "position": 5,
+            "gapToken": "[[gap-05]]",
+            "expectedWordId": "english-a1-m001-listening-word-02"
+          },
+          {
+            "itemId": "english-a1-m001-listening-ex01-i06",
+            "position": 6,
+            "gapToken": "[[gap-06]]",
+            "expectedWordId": "english-a1-m001-listening-word-05"
+          },
+          {
+            "itemId": "english-a1-m001-listening-ex01-i07",
+            "position": 7,
+            "gapToken": "[[gap-07]]",
+            "expectedWordId": "english-a1-m001-listening-word-07"
+          },
+          {
+            "itemId": "english-a1-m001-listening-ex01-i08",
+            "position": 8,
+            "gapToken": "[[gap-08]]",
+            "expectedWordId": "english-a1-m001-listening-word-10"
+          },
+          {
+            "itemId": "english-a1-m001-listening-ex01-i09",
+            "position": 9,
+            "gapToken": "[[gap-09]]",
+            "expectedWordId": "english-a1-m001-listening-word-09"
+          },
+          {
+            "itemId": "english-a1-m001-listening-ex01-i10",
+            "position": 10,
+            "gapToken": "[[gap-10]]",
+            "expectedWordId": "english-a1-m001-listening-word-01"
+          }
+        ]
+      }
+    }
+  ]
+}
