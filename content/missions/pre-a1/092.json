@@ -73,7 +73,7 @@
             "itemId": "english-pre-a1-m092-explore-ex01-i07",
             "position": 7,
             "english": "chicken",
-            "spanish": "la gallina",
+            "spanish": "el pollo",
             "audio": "tts:en-GB:chicken"
           },
           {
@@ -99,28 +99,29 @@
           }
         ],
         "theory": {
-          "title": "Frases y vocabulario de la misión",
-          "explanation": "Observa el orden de las palabras en las frases y relaciona cada expresión con su significado en español.",
+          "title": "At the farm: More animals",
+          "explanation": "Usa «It is…» para describir un animal y «It can…» para decir qué sabe hacer.",
           "patterns": [
             {
               "label": "Modelo",
-              "pattern": "Where is the horse?",
+              "pattern": "The horse is big.",
               "examples": [
-                "Where is the horse?",
-                "Where is the cow?",
-                "Where is the sheep?"
+                "The horse is big.",
+                "The duck can swim.",
+                "The sheep is white."
               ]
             },
             {
-              "label": "Traducción",
-              "pattern": "English sentence → significado en español",
+              "label": "Uso",
+              "pattern": "Lee el modelo y cambia una palabra para hablar de otra situación.",
               "examples": [
-                "Where is the goat?",
-                "Where is the pig?"
+                "The horse is big.",
+                "The duck can swim.",
+                "The sheep is white."
               ]
             }
           ],
-          "tip": "Lee la frase completa antes de elegir la traducción."
+          "tip": "Escucha la frase, repítela y cambia una palabra para crear un ejemplo propio."
         }
       }
     },
@@ -225,9 +226,9 @@
               "type": "single_choice"
             },
             "options": [
-              "la gallina",
-              "la gallina",
-              "el ganso"
+              "el pollo",
+              "el pato",
+              "la gallina"
             ]
           },
           {
@@ -276,140 +277,140 @@
             "itemId": "english-pre-a1-m092-practice-ex01-i11",
             "position": 11,
             "taskType": "translation_multiple_choice",
-            "prompt": "Traduce la frase: “I can see the horse.”",
+            "prompt": "Traduce la frase: “The horse is brown.”",
             "evaluation": {
               "type": "single_choice"
             },
             "options": [
-              "Puedo ver el caballo.",
-              "Puedo ver la vaca.",
-              "Puedo ver la oveja."
+              "El caballo es marrón.",
+              "La vaca come hierba.",
+              "La oveja es blanca."
             ]
           },
           {
             "itemId": "english-pre-a1-m092-practice-ex01-i12",
             "position": 12,
             "taskType": "translation_multiple_choice",
-            "prompt": "Traduce la frase: “I can see the cow.”",
+            "prompt": "Traduce la frase: “The cow eats grass.”",
             "evaluation": {
               "type": "single_choice"
             },
             "options": [
-              "Puedo ver la vaca.",
-              "Puedo ver la oveja.",
-              "Puedo ver la cabra."
+              "La vaca come hierba.",
+              "La oveja es blanca.",
+              "La cabra es pequeña."
             ]
           },
           {
             "itemId": "english-pre-a1-m092-practice-ex01-i13",
             "position": 13,
             "taskType": "translation_multiple_choice",
-            "prompt": "Traduce la frase: “I can see the sheep.”",
+            "prompt": "Traduce la frase: “The sheep is white.”",
             "evaluation": {
               "type": "single_choice"
             },
             "options": [
-              "Puedo ver la oveja.",
-              "Puedo ver la cabra.",
-              "Puedo ver el cerdo."
+              "La oveja es blanca.",
+              "La cabra es pequeña.",
+              "El cerdo es rosa."
             ]
           },
           {
             "itemId": "english-pre-a1-m092-practice-ex01-i14",
             "position": 14,
             "taskType": "translation_multiple_choice",
-            "prompt": "Traduce la frase: “I can see the goat.”",
+            "prompt": "Traduce la frase: “The goat is small.”",
             "evaluation": {
               "type": "single_choice"
             },
             "options": [
-              "Puedo ver la cabra.",
-              "Puedo ver el cerdo.",
-              "Puedo ver el pato."
+              "La cabra es pequeña.",
+              "El cerdo es rosa.",
+              "El pato sabe nadar."
             ]
           },
           {
             "itemId": "english-pre-a1-m092-practice-ex01-i15",
             "position": 15,
             "taskType": "translation_multiple_choice",
-            "prompt": "Traduce la frase: “I can see the pig.”",
+            "prompt": "Traduce la frase: “The pig is pink.”",
             "evaluation": {
               "type": "single_choice"
             },
             "options": [
-              "Puedo ver el cerdo.",
-              "Puedo ver el pato.",
-              "Puedo ver la gallina."
+              "El cerdo es rosa.",
+              "El pato sabe nadar.",
+              "El pollo está en la granja."
             ]
           },
           {
             "itemId": "english-pre-a1-m092-practice-ex01-i16",
             "position": 16,
             "taskType": "translation_multiple_choice",
-            "prompt": "Traduce la frase: “I can see the duck.”",
+            "prompt": "Traduce la frase: “The duck can swim.”",
             "evaluation": {
               "type": "single_choice"
             },
             "options": [
-              "Puedo ver el pato.",
-              "Puedo ver la gallina.",
-              "Puedo ver la gallina."
+              "El pato sabe nadar.",
+              "El pollo está en la granja.",
+              "La gallina tiene huevos."
             ]
           },
           {
             "itemId": "english-pre-a1-m092-practice-ex01-i17",
             "position": 17,
             "taskType": "translation_multiple_choice",
-            "prompt": "Traduce la frase: “I can see the chicken.”",
+            "prompt": "Traduce la frase: “The chicken is on the farm.”",
             "evaluation": {
               "type": "single_choice"
             },
             "options": [
-              "Puedo ver la gallina.",
-              "Puedo ver la gallina.",
-              "Puedo ver el ganso."
+              "El pollo está en la granja.",
+              "La gallina tiene huevos.",
+              "El ganso está junto a la puerta."
             ]
           },
           {
             "itemId": "english-pre-a1-m092-practice-ex01-i18",
             "position": 18,
             "taskType": "translation_multiple_choice",
-            "prompt": "Traduce la frase: “I can see the hen.”",
+            "prompt": "Traduce la frase: “The hen has eggs.”",
             "evaluation": {
               "type": "single_choice"
             },
             "options": [
-              "Puedo ver la gallina.",
-              "Puedo ver el ganso.",
-              "Puedo ver el burro."
+              "La gallina tiene huevos.",
+              "El ganso está junto a la puerta.",
+              "El burro es fuerte."
             ]
           },
           {
             "itemId": "english-pre-a1-m092-practice-ex01-i19",
             "position": 19,
             "taskType": "translation_multiple_choice",
-            "prompt": "Traduce la frase: “I can see the goose.”",
+            "prompt": "Traduce la frase: “The goose is by the gate.”",
             "evaluation": {
               "type": "single_choice"
             },
             "options": [
-              "Puedo ver el ganso.",
-              "Puedo ver el burro.",
-              "Puedo ver el caballo."
+              "El ganso está junto a la puerta.",
+              "El burro es fuerte.",
+              "El caballo es marrón."
             ]
           },
           {
             "itemId": "english-pre-a1-m092-practice-ex01-i20",
             "position": 20,
             "taskType": "translation_multiple_choice",
-            "prompt": "Traduce la frase: “I can see the donkey.”",
+            "prompt": "Traduce la frase: “The donkey is strong.”",
             "evaluation": {
               "type": "single_choice"
             },
             "options": [
-              "Puedo ver el burro.",
-              "Puedo ver el caballo.",
-              "Puedo ver la vaca."
+              "El burro es fuerte.",
+              "El caballo es marrón.",
+              "La vaca come hierba."
             ]
           }
         ]
@@ -426,131 +427,131 @@
           {
             "itemId": "english-pre-a1-m092-grammar-ex01-i01",
             "position": 1,
-            "prompt": "Elige la traducción correcta: “Where is the horse?”",
+            "prompt": "Describe the horse's colour.",
             "evaluation": {
               "type": "single_choice"
             },
             "options": [
-              "¿Dónde está el caballo?",
-              "¿Dónde está la vaca?",
-              "¿Dónde está la oveja?"
+              "is",
+              "are",
+              "am"
             ]
           },
           {
             "itemId": "english-pre-a1-m092-grammar-ex01-i02",
             "position": 2,
-            "prompt": "Elige la traducción correcta: “Where is the cow?”",
+            "prompt": "Choose the correct sentence about the cows.",
             "evaluation": {
               "type": "single_choice"
             },
             "options": [
-              "¿Dónde está la vaca?",
-              "¿Dónde está la oveja?",
-              "¿Dónde está la cabra?"
+              "The cows are big.",
+              "The cows is big.",
+              "The cows big are."
             ]
           },
           {
             "itemId": "english-pre-a1-m092-grammar-ex01-i03",
             "position": 3,
-            "prompt": "Elige la traducción correcta: “Where is the sheep?”",
+            "prompt": "Complete: The sheep ___ white wool.",
             "evaluation": {
               "type": "single_choice"
             },
             "options": [
-              "¿Dónde está la oveja?",
-              "¿Dónde está la cabra?",
-              "¿Dónde está el cerdo?"
+              "has",
+              "have",
+              "having"
             ]
           },
           {
             "itemId": "english-pre-a1-m092-grammar-ex01-i04",
             "position": 4,
-            "prompt": "Elige la traducción correcta: “Where is the goat?”",
+            "prompt": "Choose the correct phrase about the goat.",
             "evaluation": {
               "type": "single_choice"
             },
             "options": [
-              "¿Dónde está la cabra?",
-              "¿Dónde está el cerdo?",
-              "¿Dónde está el pato?"
+              "a small goat",
+              "an small goat",
+              "a goat small"
             ]
           },
           {
             "itemId": "english-pre-a1-m092-grammar-ex01-i05",
             "position": 5,
-            "prompt": "Elige la traducción correcta: “Where is the pig?”",
+            "prompt": "Describe the pig's colour.",
             "evaluation": {
               "type": "single_choice"
             },
             "options": [
-              "¿Dónde está el cerdo?",
-              "¿Dónde está el pato?",
-              "¿Dónde está la gallina?"
+              "is",
+              "are",
+              "am"
             ]
           },
           {
             "itemId": "english-pre-a1-m092-grammar-ex01-i06",
             "position": 6,
-            "prompt": "Elige la traducción correcta: “Where is the duck?”",
+            "prompt": "What can the duck do?",
             "evaluation": {
               "type": "single_choice"
             },
             "options": [
-              "¿Dónde está el pato?",
-              "¿Dónde está la gallina?",
-              "¿Dónde está la gallina?"
+              "The duck can swim.",
+              "The duck cans swim.",
+              "The duck can swimming."
             ]
           },
           {
             "itemId": "english-pre-a1-m092-grammar-ex01-i07",
             "position": 7,
-            "prompt": "Elige la traducción correcta: “Where is the chicken?”",
+            "prompt": "Complete: A hen ___ eggs.",
             "evaluation": {
               "type": "single_choice"
             },
             "options": [
-              "¿Dónde está la gallina?",
-              "¿Dónde está la gallina?",
-              "¿Dónde está el ganso?"
+              "lays",
+              "lay",
+              "laying"
             ]
           },
           {
             "itemId": "english-pre-a1-m092-grammar-ex01-i08",
             "position": 8,
-            "prompt": "Elige la traducción correcta: “Where is the hen?”",
+            "prompt": "Choose where the goose is.",
             "evaluation": {
               "type": "single_choice"
             },
             "options": [
-              "¿Dónde está la gallina?",
-              "¿Dónde está el ganso?",
-              "¿Dónde está el burro?"
+              "The goose is near the pond.",
+              "The goose are near the pond.",
+              "The goose near is the pond."
             ]
           },
           {
             "itemId": "english-pre-a1-m092-grammar-ex01-i09",
             "position": 9,
-            "prompt": "Elige la traducción correcta: “Where is the goose?”",
+            "prompt": "Complete: The donkey ___ four legs.",
             "evaluation": {
               "type": "single_choice"
             },
             "options": [
-              "¿Dónde está el ganso?",
-              "¿Dónde está el burro?",
-              "¿Dónde está el caballo?"
+              "has",
+              "have",
+              "having"
             ]
           },
           {
             "itemId": "english-pre-a1-m092-grammar-ex01-i10",
             "position": 10,
-            "prompt": "Elige la traducción correcta: “Where is the donkey?”",
+            "prompt": "Ask if the horse can run.",
             "evaluation": {
               "type": "single_choice"
             },
             "options": [
-              "¿Dónde está el burro?",
-              "¿Dónde está el caballo?",
-              "¿Dónde está la vaca?"
+              "Can the horse run?",
+              "Does the horse can run?",
+              "Can runs the horse?"
             ]
           }
         ]
@@ -569,7 +570,7 @@
             "position": 1,
             "word": "horse",
             "translation": "el caballo",
-            "pronunciationGuide": "Escucha el modelo británico y repite despacio.",
+            "pronunciationGuide": "Listen to “horse”, notice the sounds, and repeat it slowly twice.",
             "audio": "tts:en-GB:horse"
           },
           {
@@ -577,7 +578,7 @@
             "position": 2,
             "word": "cow",
             "translation": "la vaca",
-            "pronunciationGuide": "Escucha el modelo británico y repite despacio.",
+            "pronunciationGuide": "Listen to “cow”, notice the sounds, and repeat it slowly twice.",
             "audio": "tts:en-GB:cow"
           },
           {
@@ -585,7 +586,7 @@
             "position": 3,
             "word": "sheep",
             "translation": "la oveja",
-            "pronunciationGuide": "Escucha el modelo británico y repite despacio.",
+            "pronunciationGuide": "Listen to “sheep”, notice the sounds, and repeat it slowly twice.",
             "audio": "tts:en-GB:sheep"
           },
           {
@@ -593,7 +594,7 @@
             "position": 4,
             "word": "goat",
             "translation": "la cabra",
-            "pronunciationGuide": "Escucha el modelo británico y repite despacio.",
+            "pronunciationGuide": "Listen to “goat”, notice the sounds, and repeat it slowly twice.",
             "audio": "tts:en-GB:goat"
           },
           {
@@ -601,7 +602,7 @@
             "position": 5,
             "word": "pig",
             "translation": "el cerdo",
-            "pronunciationGuide": "Escucha el modelo británico y repite despacio.",
+            "pronunciationGuide": "Listen to “pig”, notice the sounds, and repeat it slowly twice.",
             "audio": "tts:en-GB:pig"
           },
           {
@@ -609,7 +610,7 @@
             "position": 6,
             "word": "duck",
             "translation": "el pato",
-            "pronunciationGuide": "Escucha el modelo británico y repite despacio.",
+            "pronunciationGuide": "Listen to “duck”, notice the sounds, and repeat it slowly twice.",
             "audio": "tts:en-GB:duck"
           },
           {
@@ -617,7 +618,7 @@
             "position": 7,
             "word": "chicken",
             "translation": "la gallina",
-            "pronunciationGuide": "Escucha el modelo británico y repite despacio.",
+            "pronunciationGuide": "Listen to “chicken”, notice the sounds, and repeat it slowly twice.",
             "audio": "tts:en-GB:chicken"
           },
           {
@@ -625,7 +626,7 @@
             "position": 8,
             "word": "hen",
             "translation": "la gallina",
-            "pronunciationGuide": "Escucha el modelo británico y repite despacio.",
+            "pronunciationGuide": "Listen to “hen”, notice the sounds, and repeat it slowly twice.",
             "audio": "tts:en-GB:hen"
           },
           {
@@ -633,7 +634,7 @@
             "position": 9,
             "word": "goose",
             "translation": "el ganso",
-            "pronunciationGuide": "Escucha el modelo británico y repite despacio.",
+            "pronunciationGuide": "Listen to “goose”, notice the sounds, and repeat it slowly twice.",
             "audio": "tts:en-GB:goose"
           },
           {
@@ -641,7 +642,7 @@
             "position": 10,
             "word": "donkey",
             "translation": "el burro",
-            "pronunciationGuide": "Escucha el modelo británico y repite despacio.",
+            "pronunciationGuide": "Listen to “donkey”, notice the sounds, and repeat it slowly twice.",
             "audio": "tts:en-GB:donkey"
           }
         ]
@@ -656,137 +657,137 @@
         "type": "reading_comprehension",
         "content": {
           "passageId": "english-pre-a1-m092-reading-passage-01",
-          "passage": "I like the horse. I like the cow. I like the sheep. I like the goat. I like the pig. I like the duck. I like the chicken. I like the hen. I like the goose. I like the donkey."
+          "passage": "Ben visits a farm with Dad. A brown horse is in the field. A cow eats grass. A white sheep stands by a tree. A goat is near the fence. A pink pig is in the mud. A duck swims in the pond. A hen has three eggs. A goose walks by the gate. A donkey carries a small bag."
         },
         "items": [
           {
             "itemId": "english-pre-a1-m092-reading-ex01-i01",
             "position": 1,
-            "prompt": "¿Qué significa “I like the horse.”?",
+            "prompt": "Where does Ben go?",
             "evaluation": {
               "type": "single_choice"
             },
             "options": [
-              "Me gusta el caballo.",
-              "Me gusta la vaca.",
-              "Me gusta la oveja."
+              "To a farm",
+              "To a café",
+              "To an airport"
             ]
           },
           {
             "itemId": "english-pre-a1-m092-reading-ex01-i02",
             "position": 2,
-            "prompt": "¿Qué significa “I like the cow.”?",
+            "prompt": "Who goes with Ben?",
             "evaluation": {
               "type": "single_choice"
             },
             "options": [
-              "Me gusta la vaca.",
-              "Me gusta la oveja.",
-              "Me gusta la cabra."
+              "Dad",
+              "Mum",
+              "His teacher"
             ]
           },
           {
             "itemId": "english-pre-a1-m092-reading-ex01-i03",
             "position": 3,
-            "prompt": "¿Qué significa “I like the sheep.”?",
+            "prompt": "What colour is the horse?",
             "evaluation": {
               "type": "single_choice"
             },
             "options": [
-              "Me gusta la oveja.",
-              "Me gusta la cabra.",
-              "Me gusta el cerdo."
+              "Brown",
+              "White",
+              "Pink"
             ]
           },
           {
             "itemId": "english-pre-a1-m092-reading-ex01-i04",
             "position": 4,
-            "prompt": "¿Qué significa “I like the goat.”?",
+            "prompt": "What does the cow eat?",
             "evaluation": {
               "type": "single_choice"
             },
             "options": [
-              "Me gusta la cabra.",
-              "Me gusta el cerdo.",
-              "Me gusta el pato."
+              "Grass",
+              "Fish",
+              "Bread"
             ]
           },
           {
             "itemId": "english-pre-a1-m092-reading-ex01-i05",
             "position": 5,
-            "prompt": "¿Qué significa “I like the pig.”?",
+            "prompt": "Where is the sheep?",
             "evaluation": {
               "type": "single_choice"
             },
             "options": [
-              "Me gusta el cerdo.",
-              "Me gusta el pato.",
-              "Me gusta la gallina."
+              "By a tree",
+              "In a boat",
+              "In a shop"
             ]
           },
           {
             "itemId": "english-pre-a1-m092-reading-ex01-i06",
             "position": 6,
-            "prompt": "¿Qué significa “I like the duck.”?",
+            "prompt": "Where is the pig?",
             "evaluation": {
               "type": "single_choice"
             },
             "options": [
-              "Me gusta el pato.",
-              "Me gusta la gallina.",
-              "Me gusta la gallina."
+              "In the mud",
+              "In the pond",
+              "In the house"
             ]
           },
           {
             "itemId": "english-pre-a1-m092-reading-ex01-i07",
             "position": 7,
-            "prompt": "¿Qué significa “I like the chicken.”?",
+            "prompt": "What does the duck do?",
             "evaluation": {
               "type": "single_choice"
             },
             "options": [
-              "Me gusta la gallina.",
-              "Me gusta la gallina.",
-              "Me gusta el ganso."
+              "It swims",
+              "It flies",
+              "It sleeps"
             ]
           },
           {
             "itemId": "english-pre-a1-m092-reading-ex01-i08",
             "position": 8,
-            "prompt": "¿Qué significa “I like the hen.”?",
+            "prompt": "How many eggs does the hen have?",
             "evaluation": {
               "type": "single_choice"
             },
             "options": [
-              "Me gusta la gallina.",
-              "Me gusta el ganso.",
-              "Me gusta el burro."
+              "Three",
+              "Two",
+              "Four"
             ]
           },
           {
             "itemId": "english-pre-a1-m092-reading-ex01-i09",
             "position": 9,
-            "prompt": "¿Qué significa “I like the goose.”?",
+            "prompt": "Where does the goose walk?",
             "evaluation": {
               "type": "single_choice"
             },
             "options": [
-              "Me gusta el ganso.",
-              "Me gusta el burro.",
-              "Me gusta el caballo."
+              "By the gate",
+              "By the sea",
+              "In the classroom"
             ]
           },
           {
             "itemId": "english-pre-a1-m092-reading-ex01-i10",
             "position": 10,
-            "prompt": "¿Qué significa “I like the donkey.”?",
+            "prompt": "What does the donkey carry?",
             "evaluation": {
               "type": "single_choice"
             },
             "options": [
-              "Me gusta el burro.",
-              "Me gusta el caballo.",
-              "Me gusta la vaca."
+              "A small bag",
+              "A big box",
+              "A basket of fish"
             ]
           }
         ]
@@ -894,9 +895,9 @@
           {
             "itemId": "english-pre-a1-m092-speaking-ex01-i01",
             "position": 1,
-            "prompt": "Say the word “horse”.",
-            "modelAnswer": "horse",
-            "audio": "tts:en-GB:horse",
+            "prompt": "Say the sentence. Use the model to help you: “The horse is brown.”",
+            "modelAnswer": "The horse is brown.",
+            "audio": "tts:en-GB:The horse is brown.",
             "evaluation": {
               "type": "transcription_feedback",
               "transcriptionSeparateFromPronunciation": true
@@ -905,9 +906,9 @@
           {
             "itemId": "english-pre-a1-m092-speaking-ex01-i02",
             "position": 2,
-            "prompt": "Say the word “cow”.",
-            "modelAnswer": "cow",
-            "audio": "tts:en-GB:cow",
+            "prompt": "Say the sentence. Use the model to help you: “The cow eats grass.”",
+            "modelAnswer": "The cow eats grass.",
+            "audio": "tts:en-GB:The cow eats grass.",
             "evaluation": {
               "type": "transcription_feedback",
               "transcriptionSeparateFromPronunciation": true
@@ -916,9 +917,9 @@
           {
             "itemId": "english-pre-a1-m092-speaking-ex01-i03",
             "position": 3,
-            "prompt": "Say the word “sheep”.",
-            "modelAnswer": "sheep",
-            "audio": "tts:en-GB:sheep",
+            "prompt": "Say the sentence. Use the model to help you: “The sheep is white.”",
+            "modelAnswer": "The sheep is white.",
+            "audio": "tts:en-GB:The sheep is white.",
             "evaluation": {
               "type": "transcription_feedback",
               "transcriptionSeparateFromPronunciation": true
@@ -927,9 +928,9 @@
           {
             "itemId": "english-pre-a1-m092-speaking-ex01-i04",
             "position": 4,
-            "prompt": "Say the word “goat”.",
-            "modelAnswer": "goat",
-            "audio": "tts:en-GB:goat",
+            "prompt": "Say the sentence. Use the model to help you: “The goat is small.”",
+            "modelAnswer": "The goat is small.",
+            "audio": "tts:en-GB:The goat is small.",
             "evaluation": {
               "type": "transcription_feedback",
               "transcriptionSeparateFromPronunciation": true
@@ -938,9 +939,9 @@
           {
             "itemId": "english-pre-a1-m092-speaking-ex01-i05",
             "position": 5,
-            "prompt": "Say the word “pig”.",
-            "modelAnswer": "pig",
-            "audio": "tts:en-GB:pig",
+            "prompt": "Say the sentence. Use the model to help you: “The pig is pink.”",
+            "modelAnswer": "The pig is pink.",
+            "audio": "tts:en-GB:The pig is pink.",
             "evaluation": {
               "type": "transcription_feedback",
               "transcriptionSeparateFromPronunciation": true
@@ -949,9 +950,9 @@
           {
             "itemId": "english-pre-a1-m092-speaking-ex01-i06",
             "position": 6,
-            "prompt": "Say the word “duck”.",
-            "modelAnswer": "duck",
-            "audio": "tts:en-GB:duck",
+            "prompt": "Say the sentence. Use the model to help you: “The duck can swim.”",
+            "modelAnswer": "The duck can swim.",
+            "audio": "tts:en-GB:The duck can swim.",
             "evaluation": {
               "type": "transcription_feedback",
               "transcriptionSeparateFromPronunciation": true
@@ -960,9 +961,9 @@
           {
             "itemId": "english-pre-a1-m092-speaking-ex01-i07",
             "position": 7,
-            "prompt": "Say the word “chicken”.",
-            "modelAnswer": "chicken",
-            "audio": "tts:en-GB:chicken",
+            "prompt": "Say the sentence. Use the model to help you: “The chicken is on the farm.”",
+            "modelAnswer": "The chicken is on the farm.",
+            "audio": "tts:en-GB:The chicken is on the farm.",
             "evaluation": {
               "type": "transcription_feedback",
               "transcriptionSeparateFromPronunciation": true
@@ -971,9 +972,9 @@
           {
             "itemId": "english-pre-a1-m092-speaking-ex01-i08",
             "position": 8,
-            "prompt": "Say the word “hen”.",
-            "modelAnswer": "hen",
-            "audio": "tts:en-GB:hen",
+            "prompt": "Say the sentence. Use the model to help you: “The hen has eggs.”",
+            "modelAnswer": "The hen has eggs.",
+            "audio": "tts:en-GB:The hen has eggs.",
             "evaluation": {
               "type": "transcription_feedback",
               "transcriptionSeparateFromPronunciation": true
@@ -982,9 +983,9 @@
           {
             "itemId": "english-pre-a1-m092-speaking-ex01-i09",
             "position": 9,
-            "prompt": "Say the word “goose”.",
-            "modelAnswer": "goose",
-            "audio": "tts:en-GB:goose",
+            "prompt": "Say the sentence. Use the model to help you: “The goose is by the gate.”",
+            "modelAnswer": "The goose is by the gate.",
+            "audio": "tts:en-GB:The goose is by the gate.",
             "evaluation": {
               "type": "transcription_feedback",
               "transcriptionSeparateFromPronunciation": true
@@ -993,9 +994,9 @@
           {
             "itemId": "english-pre-a1-m092-speaking-ex01-i10",
             "position": 10,
-            "prompt": "Say the word “donkey”.",
-            "modelAnswer": "donkey",
-            "audio": "tts:en-GB:donkey",
+            "prompt": "Say the sentence. Use the model to help you: “The donkey is strong.”",
+            "modelAnswer": "The donkey is strong.",
+            "audio": "tts:en-GB:The donkey is strong.",
             "evaluation": {
               "type": "transcription_feedback",
               "transcriptionSeparateFromPronunciation": true
@@ -1012,9 +1013,9 @@
         "exerciseId": "english-pre-a1-m092-listening-ex01",
         "type": "listening_gap_fill",
         "content": {
-          "audio": "tts:en-GB:Listen and complete. This is the horse. This is the cow. This is the sheep. This is the goat. This is the pig. This is the duck. This is the chicken. This is the hen. This is the goose. This is the donkey.",
+          "audio": "tts:en-GB:Listen and complete. I see a horse in the field. The cow eats grass. A sheep has white wool. The goat is near the fence. The pig is pink. A duck swims in the pond. The chicken is by the barn. The hen has three eggs. A goose walks by the gate. The donkey carries a bag.",
           "audioLocale": "en-GB",
-          "transcriptTemplate": "Listen and complete. This is the [[gap-01]]. This is the [[gap-02]]. This is the [[gap-03]]. This is the [[gap-04]]. This is the [[gap-05]]. This is the [[gap-06]]. This is the [[gap-07]]. This is the [[gap-08]]. This is the [[gap-09]]. This is the [[gap-10]].",
+          "transcriptTemplate": "Listen and complete. I see a [[gap-01]] in the field. The [[gap-02]] eats grass. A [[gap-03]] has white wool. The [[gap-04]] is near the fence. The [[gap-05]] is pink. A [[gap-06]] swims in the pond. The [[gap-07]] is by the barn. The [[gap-08]] has three eggs. A [[gap-09]] walks by the gate. The [[gap-10]] carries a bag.",
           "wordBank": [
             {
               "wordId": "english-pre-a1-m092-listening-word-01",

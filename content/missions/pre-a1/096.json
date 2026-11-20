@@ -99,28 +99,29 @@
           }
         ],
         "theory": {
-          "title": "Frases y vocabulario de la misión",
-          "explanation": "Observa el orden de las palabras en las frases y relaciona cada expresión con su significado en español.",
+          "title": "At the airport",
+          "explanation": "Usa «I have…» para hablar de tus documentos y «The … is…» para describir el viaje.",
           "patterns": [
             {
               "label": "Modelo",
-              "pattern": "Where is the pilot?",
+              "pattern": "I have my passport.",
               "examples": [
-                "Where is the pilot?",
-                "Where is the flight attendant?",
-                "Where is the passenger?"
+                "I have my passport.",
+                "The plane is on the runway.",
+                "The pilot is on the plane."
               ]
             },
             {
-              "label": "Traducción",
-              "pattern": "English sentence → significado en español",
+              "label": "Uso",
+              "pattern": "Lee el modelo y cambia una palabra para hablar de otra situación.",
               "examples": [
-                "Where is the airport?",
-                "Where is the gate?"
+                "I have my passport.",
+                "The plane is on the runway.",
+                "The pilot is on the plane."
               ]
             }
           ],
-          "tip": "Lee la frase completa antes de elegir la traducción."
+          "tip": "Escucha la frase, repítela y cambia una palabra para crear un ejemplo propio."
         }
       }
     },
@@ -276,140 +277,140 @@
             "itemId": "english-pre-a1-m096-practice-ex01-i11",
             "position": 11,
             "taskType": "translation_multiple_choice",
-            "prompt": "Traduce la frase: “I can see the pilot.”",
+            "prompt": "Traduce la frase: “The pilot is on the plane.”",
             "evaluation": {
               "type": "single_choice"
             },
             "options": [
-              "Puedo ver el piloto.",
-              "Puedo ver el auxiliar de vuelo.",
-              "Puedo ver el pasajero."
+              "El piloto está en el avión.",
+              "El auxiliar de vuelo dice hola.",
+              "Soy un pasajero."
             ]
           },
           {
             "itemId": "english-pre-a1-m096-practice-ex01-i12",
             "position": 12,
             "taskType": "translation_multiple_choice",
-            "prompt": "Traduce la frase: “I can see the flight attendant.”",
+            "prompt": "Traduce la frase: “The flight attendant says hello.”",
             "evaluation": {
               "type": "single_choice"
             },
             "options": [
-              "Puedo ver el auxiliar de vuelo.",
-              "Puedo ver el pasajero.",
-              "Puedo ver el aeropuerto."
+              "El auxiliar de vuelo dice hola.",
+              "Soy un pasajero.",
+              "Estamos en el aeropuerto."
             ]
           },
           {
             "itemId": "english-pre-a1-m096-practice-ex01-i13",
             "position": 13,
             "taskType": "translation_multiple_choice",
-            "prompt": "Traduce la frase: “I can see the passenger.”",
+            "prompt": "Traduce la frase: “I am a passenger.”",
             "evaluation": {
               "type": "single_choice"
             },
             "options": [
-              "Puedo ver el pasajero.",
-              "Puedo ver el aeropuerto.",
-              "Puedo ver la puerta de embarque."
+              "Soy un pasajero.",
+              "Estamos en el aeropuerto.",
+              "Esperamos en la puerta de embarque."
             ]
           },
           {
             "itemId": "english-pre-a1-m096-practice-ex01-i14",
             "position": 14,
             "taskType": "translation_multiple_choice",
-            "prompt": "Traduce la frase: “I can see the airport.”",
+            "prompt": "Traduce la frase: “We are at the airport.”",
             "evaluation": {
               "type": "single_choice"
             },
             "options": [
-              "Puedo ver el aeropuerto.",
-              "Puedo ver la puerta de embarque.",
-              "Puedo ver el pasaporte."
+              "Estamos en el aeropuerto.",
+              "Esperamos en la puerta de embarque.",
+              "Tengo mi pasaporte."
             ]
           },
           {
             "itemId": "english-pre-a1-m096-practice-ex01-i15",
             "position": 15,
             "taskType": "translation_multiple_choice",
-            "prompt": "Traduce la frase: “I can see the gate.”",
+            "prompt": "Traduce la frase: “We wait at the gate.”",
             "evaluation": {
               "type": "single_choice"
             },
             "options": [
-              "Puedo ver la puerta de embarque.",
-              "Puedo ver el pasaporte.",
-              "Puedo ver el control de seguridad."
+              "Esperamos en la puerta de embarque.",
+              "Tengo mi pasaporte.",
+              "Pasamos por el control de seguridad."
             ]
           },
           {
             "itemId": "english-pre-a1-m096-practice-ex01-i16",
             "position": 16,
             "taskType": "translation_multiple_choice",
-            "prompt": "Traduce la frase: “I can see the passport.”",
+            "prompt": "Traduce la frase: “I have my passport.”",
             "evaluation": {
               "type": "single_choice"
             },
             "options": [
-              "Puedo ver el pasaporte.",
-              "Puedo ver el control de seguridad.",
-              "Puedo ver el equipaje."
+              "Tengo mi pasaporte.",
+              "Pasamos por el control de seguridad.",
+              "Mi equipaje pesa mucho."
             ]
           },
           {
             "itemId": "english-pre-a1-m096-practice-ex01-i17",
             "position": 17,
             "taskType": "translation_multiple_choice",
-            "prompt": "Traduce la frase: “I can see the security.”",
+            "prompt": "Traduce la frase: “We go through security.”",
             "evaluation": {
               "type": "single_choice"
             },
             "options": [
-              "Puedo ver el control de seguridad.",
-              "Puedo ver el equipaje.",
-              "Puedo ver el avión."
+              "Pasamos por el control de seguridad.",
+              "Mi equipaje pesa mucho.",
+              "El avión está listo."
             ]
           },
           {
             "itemId": "english-pre-a1-m096-practice-ex01-i18",
             "position": 18,
             "taskType": "translation_multiple_choice",
-            "prompt": "Traduce la frase: “I can see the luggage.”",
+            "prompt": "Traduce la frase: “My luggage is heavy.”",
             "evaluation": {
               "type": "single_choice"
             },
             "options": [
-              "Puedo ver el equipaje.",
-              "Puedo ver el avión.",
-              "Puedo ver la pista."
+              "Mi equipaje pesa mucho.",
+              "El avión está listo.",
+              "El avión está en la pista."
             ]
           },
           {
             "itemId": "english-pre-a1-m096-practice-ex01-i19",
             "position": 19,
             "taskType": "translation_multiple_choice",
-            "prompt": "Traduce la frase: “I can see the plane.”",
+            "prompt": "Traduce la frase: “The plane is ready.”",
             "evaluation": {
               "type": "single_choice"
             },
             "options": [
-              "Puedo ver el avión.",
-              "Puedo ver la pista.",
-              "Puedo ver el piloto."
+              "El avión está listo.",
+              "El avión está en la pista.",
+              "El piloto está en el avión."
             ]
           },
           {
             "itemId": "english-pre-a1-m096-practice-ex01-i20",
             "position": 20,
             "taskType": "translation_multiple_choice",
-            "prompt": "Traduce la frase: “I can see the runway.”",
+            "prompt": "Traduce la frase: “The plane is on the runway.”",
             "evaluation": {
               "type": "single_choice"
             },
             "options": [
-              "Puedo ver la pista.",
-              "Puedo ver el piloto.",
-              "Puedo ver el auxiliar de vuelo."
+              "El avión está en la pista.",
+              "El piloto está en el avión.",
+              "El auxiliar de vuelo dice hola."
             ]
           }
         ]
@@ -426,131 +427,131 @@
           {
             "itemId": "english-pre-a1-m096-grammar-ex01-i01",
             "position": 1,
-            "prompt": "Elige la traducción correcta: “Where is the pilot?”",
+            "prompt": "Who flies the plane?",
             "evaluation": {
               "type": "single_choice"
             },
             "options": [
-              "¿Dónde está el piloto?",
-              "¿Dónde está el auxiliar de vuelo?",
-              "¿Dónde está el pasajero?"
+              "pilot",
+              "passenger",
+              "gate"
             ]
           },
           {
             "itemId": "english-pre-a1-m096-grammar-ex01-i02",
             "position": 2,
-            "prompt": "Elige la traducción correcta: “Where is the flight attendant?”",
+            "prompt": "Choose the correct sentence about the flight attendant.",
             "evaluation": {
               "type": "single_choice"
             },
             "options": [
-              "¿Dónde está el auxiliar de vuelo?",
-              "¿Dónde está el pasajero?",
-              "¿Dónde está el aeropuerto?"
+              "The flight attendant is kind.",
+              "The flight attendant are kind.",
+              "The flight attendant kind is."
             ]
           },
           {
             "itemId": "english-pre-a1-m096-grammar-ex01-i03",
             "position": 3,
-            "prompt": "Elige la traducción correcta: “Where is the passenger?”",
+            "prompt": "Who travels on a plane?",
             "evaluation": {
               "type": "single_choice"
             },
             "options": [
-              "¿Dónde está el pasajero?",
-              "¿Dónde está el aeropuerto?",
-              "¿Dónde está la puerta de embarque?"
+              "passenger",
+              "runway",
+              "passport"
             ]
           },
           {
             "itemId": "english-pre-a1-m096-grammar-ex01-i04",
             "position": 4,
-            "prompt": "Elige la traducción correcta: “Where is the airport?”",
+            "prompt": "Where are you when you wait for a flight?",
             "evaluation": {
               "type": "single_choice"
             },
             "options": [
-              "¿Dónde está el aeropuerto?",
-              "¿Dónde está la puerta de embarque?",
-              "¿Dónde está el pasaporte?"
+              "at the airport",
+              "in the airport gate",
+              "on the airport"
             ]
           },
           {
             "itemId": "english-pre-a1-m096-grammar-ex01-i05",
             "position": 5,
-            "prompt": "Elige la traducción correcta: “Where is the gate?”",
+            "prompt": "What document do I need?",
             "evaluation": {
               "type": "single_choice"
             },
             "options": [
-              "¿Dónde está la puerta de embarque?",
-              "¿Dónde está el pasaporte?",
-              "¿Dónde está el control de seguridad?"
+              "passport",
+              "runway",
+              "pilot"
             ]
           },
           {
             "itemId": "english-pre-a1-m096-grammar-ex01-i06",
             "position": 6,
-            "prompt": "Elige la traducción correcta: “Where is the passport?”",
+            "prompt": "Choose the correct sentence about security.",
             "evaluation": {
               "type": "single_choice"
             },
             "options": [
-              "¿Dónde está el pasaporte?",
-              "¿Dónde está el control de seguridad?",
-              "¿Dónde está el equipaje?"
+              "We go through security.",
+              "We goes through security.",
+              "We going through security."
             ]
           },
           {
             "itemId": "english-pre-a1-m096-grammar-ex01-i07",
             "position": 7,
-            "prompt": "Elige la traducción correcta: “Where is the security?”",
+            "prompt": "What can be heavy?",
             "evaluation": {
               "type": "single_choice"
             },
             "options": [
-              "¿Dónde está el control de seguridad?",
-              "¿Dónde está el equipaje?",
-              "¿Dónde está el avión?"
+              "luggage",
+              "gate",
+              "pilot"
             ]
           },
           {
             "itemId": "english-pre-a1-m096-grammar-ex01-i08",
             "position": 8,
-            "prompt": "Elige la traducción correcta: “Where is the luggage?”",
+            "prompt": "Where do passengers wait to board?",
             "evaluation": {
               "type": "single_choice"
             },
             "options": [
-              "¿Dónde está el equipaje?",
-              "¿Dónde está el avión?",
-              "¿Dónde está la pista?"
+              "at the gate",
+              "in the gate",
+              "on the gate"
             ]
           },
           {
             "itemId": "english-pre-a1-m096-grammar-ex01-i09",
             "position": 9,
-            "prompt": "Elige la traducción correcta: “Where is the plane?”",
+            "prompt": "Where does a plane land and take off?",
             "evaluation": {
               "type": "single_choice"
             },
             "options": [
-              "¿Dónde está el avión?",
-              "¿Dónde está la pista?",
-              "¿Dónde está el piloto?"
+              "runway",
+              "passport",
+              "luggage"
             ]
           },
           {
             "itemId": "english-pre-a1-m096-grammar-ex01-i10",
             "position": 10,
-            "prompt": "Elige la traducción correcta: “Where is the runway?”",
+            "prompt": "Ask where the plane is.",
             "evaluation": {
               "type": "single_choice"
             },
             "options": [
-              "¿Dónde está la pista?",
-              "¿Dónde está el piloto?",
-              "¿Dónde está el auxiliar de vuelo?"
+              "Where is the plane?",
+              "Where the plane is?",
+              "Where are the plane?"
             ]
           }
         ]
@@ -569,7 +570,7 @@
             "position": 1,
             "word": "pilot",
             "translation": "el piloto",
-            "pronunciationGuide": "Escucha el modelo británico y repite despacio.",
+            "pronunciationGuide": "Listen to “pilot”, notice the sounds, and repeat it slowly twice.",
             "audio": "tts:en-GB:pilot"
           },
           {
@@ -577,7 +578,7 @@
             "position": 2,
             "word": "flight attendant",
             "translation": "el auxiliar de vuelo",
-            "pronunciationGuide": "Escucha el modelo británico y repite despacio.",
+            "pronunciationGuide": "Listen to “flight attendant”, notice the sounds, and repeat it slowly twice.",
             "audio": "tts:en-GB:flight attendant"
           },
           {
@@ -585,7 +586,7 @@
             "position": 3,
             "word": "passenger",
             "translation": "el pasajero",
-            "pronunciationGuide": "Escucha el modelo británico y repite despacio.",
+            "pronunciationGuide": "Listen to “passenger”, notice the sounds, and repeat it slowly twice.",
             "audio": "tts:en-GB:passenger"
           },
           {
@@ -593,7 +594,7 @@
             "position": 4,
             "word": "airport",
             "translation": "el aeropuerto",
-            "pronunciationGuide": "Escucha el modelo británico y repite despacio.",
+            "pronunciationGuide": "Listen to “airport”, notice the sounds, and repeat it slowly twice.",
             "audio": "tts:en-GB:airport"
           },
           {
@@ -601,7 +602,7 @@
             "position": 5,
             "word": "gate",
             "translation": "la puerta de embarque",
-            "pronunciationGuide": "Escucha el modelo británico y repite despacio.",
+            "pronunciationGuide": "Listen to “gate”, notice the sounds, and repeat it slowly twice.",
             "audio": "tts:en-GB:gate"
           },
           {
@@ -609,7 +610,7 @@
             "position": 6,
             "word": "passport",
             "translation": "el pasaporte",
-            "pronunciationGuide": "Escucha el modelo británico y repite despacio.",
+            "pronunciationGuide": "Listen to “passport”, notice the sounds, and repeat it slowly twice.",
             "audio": "tts:en-GB:passport"
           },
           {
@@ -617,7 +618,7 @@
             "position": 7,
             "word": "security",
             "translation": "el control de seguridad",
-            "pronunciationGuide": "Escucha el modelo británico y repite despacio.",
+            "pronunciationGuide": "Listen to “security”, notice the sounds, and repeat it slowly twice.",
             "audio": "tts:en-GB:security"
           },
           {
@@ -625,7 +626,7 @@
             "position": 8,
             "word": "luggage",
             "translation": "el equipaje",
-            "pronunciationGuide": "Escucha el modelo británico y repite despacio.",
+            "pronunciationGuide": "Listen to “luggage”, notice the sounds, and repeat it slowly twice.",
             "audio": "tts:en-GB:luggage"
           },
           {
@@ -633,7 +634,7 @@
             "position": 9,
             "word": "plane",
             "translation": "el avión",
-            "pronunciationGuide": "Escucha el modelo británico y repite despacio.",
+            "pronunciationGuide": "Listen to “plane”, notice the sounds, and repeat it slowly twice.",
             "audio": "tts:en-GB:plane"
           },
           {
@@ -641,7 +642,7 @@
             "position": 10,
             "word": "runway",
             "translation": "la pista",
-            "pronunciationGuide": "Escucha el modelo británico y repite despacio.",
+            "pronunciationGuide": "Listen to “runway”, notice the sounds, and repeat it slowly twice.",
             "audio": "tts:en-GB:runway"
           }
         ]
@@ -656,137 +657,137 @@
         "type": "reading_comprehension",
         "content": {
           "passageId": "english-pre-a1-m096-reading-passage-01",
-          "passage": "I like the pilot. I like the flight attendant. I like the passenger. I like the airport. I like the gate. I like the passport. I like the security. I like the luggage. I like the plane. I like the runway."
+          "passage": "Sara is at the airport with Dad. She is a passenger. She has her passport in her bag. They go through security. Their luggage is heavy. They wait at gate six. A flight attendant says hello. The pilot is on the plane. The plane is on the runway. Soon they fly to London."
         },
         "items": [
           {
             "itemId": "english-pre-a1-m096-reading-ex01-i01",
             "position": 1,
-            "prompt": "¿Qué significa “I like the pilot.”?",
+            "prompt": "Where is Sara?",
             "evaluation": {
               "type": "single_choice"
             },
             "options": [
-              "Me gusta el piloto.",
-              "Me gusta el auxiliar de vuelo.",
-              "Me gusta el pasajero."
+              "At the airport",
+              "At the station",
+              "At the farm"
             ]
           },
           {
             "itemId": "english-pre-a1-m096-reading-ex01-i02",
             "position": 2,
-            "prompt": "¿Qué significa “I like the flight attendant.”?",
+            "prompt": "Who is with Sara?",
             "evaluation": {
               "type": "single_choice"
             },
             "options": [
-              "Me gusta el auxiliar de vuelo.",
-              "Me gusta el pasajero.",
-              "Me gusta el aeropuerto."
+              "Dad",
+              "Mum",
+              "Her friend"
             ]
           },
           {
             "itemId": "english-pre-a1-m096-reading-ex01-i03",
             "position": 3,
-            "prompt": "¿Qué significa “I like the passenger.”?",
+            "prompt": "What is Sara?",
             "evaluation": {
               "type": "single_choice"
             },
             "options": [
-              "Me gusta el pasajero.",
-              "Me gusta el aeropuerto.",
-              "Me gusta la puerta de embarque."
+              "A passenger",
+              "A pilot",
+              "A flight attendant"
             ]
           },
           {
             "itemId": "english-pre-a1-m096-reading-ex01-i04",
             "position": 4,
-            "prompt": "¿Qué significa “I like the airport.”?",
+            "prompt": "Where is her passport?",
             "evaluation": {
               "type": "single_choice"
             },
             "options": [
-              "Me gusta el aeropuerto.",
-              "Me gusta la puerta de embarque.",
-              "Me gusta el pasaporte."
+              "In her bag",
+              "In the plane",
+              "At the gate"
             ]
           },
           {
             "itemId": "english-pre-a1-m096-reading-ex01-i05",
             "position": 5,
-            "prompt": "¿Qué significa “I like the gate.”?",
+            "prompt": "Where do they go through?",
             "evaluation": {
               "type": "single_choice"
             },
             "options": [
-              "Me gusta la puerta de embarque.",
-              "Me gusta el pasaporte.",
-              "Me gusta el control de seguridad."
+              "Security",
+              "The runway",
+              "The bookcase"
             ]
           },
           {
             "itemId": "english-pre-a1-m096-reading-ex01-i06",
             "position": 6,
-            "prompt": "¿Qué significa “I like the passport.”?",
+            "prompt": "How is their luggage?",
             "evaluation": {
               "type": "single_choice"
             },
             "options": [
-              "Me gusta el pasaporte.",
-              "Me gusta el control de seguridad.",
-              "Me gusta el equipaje."
+              "Heavy",
+              "Small",
+              "Empty"
             ]
           },
           {
             "itemId": "english-pre-a1-m096-reading-ex01-i07",
             "position": 7,
-            "prompt": "¿Qué significa “I like the security.”?",
+            "prompt": "Where do they wait?",
             "evaluation": {
               "type": "single_choice"
             },
             "options": [
-              "Me gusta el control de seguridad.",
-              "Me gusta el equipaje.",
-              "Me gusta el avión."
+              "At gate six",
+              "At gate two",
+              "On the runway"
             ]
           },
           {
             "itemId": "english-pre-a1-m096-reading-ex01-i08",
             "position": 8,
-            "prompt": "¿Qué significa “I like the luggage.”?",
+            "prompt": "Who says hello?",
             "evaluation": {
               "type": "single_choice"
             },
             "options": [
-              "Me gusta el equipaje.",
-              "Me gusta el avión.",
-              "Me gusta la pista."
+              "A flight attendant",
+              "A farmer",
+              "A teacher"
             ]
           },
           {
             "itemId": "english-pre-a1-m096-reading-ex01-i09",
             "position": 9,
-            "prompt": "¿Qué significa “I like the plane.”?",
+            "prompt": "Where is the pilot?",
             "evaluation": {
               "type": "single_choice"
             },
             "options": [
-              "Me gusta el avión.",
-              "Me gusta la pista.",
-              "Me gusta el piloto."
+              "On the plane",
+              "At the gate",
+              "In the bag"
             ]
           },
           {
             "itemId": "english-pre-a1-m096-reading-ex01-i10",
             "position": 10,
-            "prompt": "¿Qué significa “I like the runway.”?",
+            "prompt": "Where do they fly?",
             "evaluation": {
               "type": "single_choice"
             },
             "options": [
-              "Me gusta la pista.",
-              "Me gusta el piloto.",
-              "Me gusta el auxiliar de vuelo."
+              "To London",
+              "To Paris",
+              "To Madrid"
             ]
           }
         ]
@@ -894,9 +895,9 @@
           {
             "itemId": "english-pre-a1-m096-speaking-ex01-i01",
             "position": 1,
-            "prompt": "Say the word “pilot”.",
-            "modelAnswer": "pilot",
-            "audio": "tts:en-GB:pilot",
+            "prompt": "Say the sentence. Use the model to help you: “I am at the airport.”",
+            "modelAnswer": "I am at the airport.",
+            "audio": "tts:en-GB:I am at the airport.",
             "evaluation": {
               "type": "transcription_feedback",
               "transcriptionSeparateFromPronunciation": true
@@ -905,9 +906,9 @@
           {
             "itemId": "english-pre-a1-m096-speaking-ex01-i02",
             "position": 2,
-            "prompt": "Say the word “flight attendant”.",
-            "modelAnswer": "flight attendant",
-            "audio": "tts:en-GB:flight attendant",
+            "prompt": "Say the sentence. Use the model to help you: “I am a passenger.”",
+            "modelAnswer": "I am a passenger.",
+            "audio": "tts:en-GB:I am a passenger.",
             "evaluation": {
               "type": "transcription_feedback",
               "transcriptionSeparateFromPronunciation": true
@@ -916,9 +917,9 @@
           {
             "itemId": "english-pre-a1-m096-speaking-ex01-i03",
             "position": 3,
-            "prompt": "Say the word “passenger”.",
-            "modelAnswer": "passenger",
-            "audio": "tts:en-GB:passenger",
+            "prompt": "Say the sentence. Use the model to help you: “I have my passport.”",
+            "modelAnswer": "I have my passport.",
+            "audio": "tts:en-GB:I have my passport.",
             "evaluation": {
               "type": "transcription_feedback",
               "transcriptionSeparateFromPronunciation": true
@@ -927,9 +928,9 @@
           {
             "itemId": "english-pre-a1-m096-speaking-ex01-i04",
             "position": 4,
-            "prompt": "Say the word “airport”.",
-            "modelAnswer": "airport",
-            "audio": "tts:en-GB:airport",
+            "prompt": "Say the sentence. Use the model to help you: “We go through security.”",
+            "modelAnswer": "We go through security.",
+            "audio": "tts:en-GB:We go through security.",
             "evaluation": {
               "type": "transcription_feedback",
               "transcriptionSeparateFromPronunciation": true
@@ -938,9 +939,9 @@
           {
             "itemId": "english-pre-a1-m096-speaking-ex01-i05",
             "position": 5,
-            "prompt": "Say the word “gate”.",
-            "modelAnswer": "gate",
-            "audio": "tts:en-GB:gate",
+            "prompt": "Say the sentence. Use the model to help you: “My luggage is heavy.”",
+            "modelAnswer": "My luggage is heavy.",
+            "audio": "tts:en-GB:My luggage is heavy.",
             "evaluation": {
               "type": "transcription_feedback",
               "transcriptionSeparateFromPronunciation": true
@@ -949,9 +950,9 @@
           {
             "itemId": "english-pre-a1-m096-speaking-ex01-i06",
             "position": 6,
-            "prompt": "Say the word “passport”.",
-            "modelAnswer": "passport",
-            "audio": "tts:en-GB:passport",
+            "prompt": "Say the sentence. Use the model to help you: “We wait at the gate.”",
+            "modelAnswer": "We wait at the gate.",
+            "audio": "tts:en-GB:We wait at the gate.",
             "evaluation": {
               "type": "transcription_feedback",
               "transcriptionSeparateFromPronunciation": true
@@ -960,9 +961,9 @@
           {
             "itemId": "english-pre-a1-m096-speaking-ex01-i07",
             "position": 7,
-            "prompt": "Say the word “security”.",
-            "modelAnswer": "security",
-            "audio": "tts:en-GB:security",
+            "prompt": "Say the sentence. Use the model to help you: “The flight attendant says hello.”",
+            "modelAnswer": "The flight attendant says hello.",
+            "audio": "tts:en-GB:The flight attendant says hello.",
             "evaluation": {
               "type": "transcription_feedback",
               "transcriptionSeparateFromPronunciation": true
@@ -971,9 +972,9 @@
           {
             "itemId": "english-pre-a1-m096-speaking-ex01-i08",
             "position": 8,
-            "prompt": "Say the word “luggage”.",
-            "modelAnswer": "luggage",
-            "audio": "tts:en-GB:luggage",
+            "prompt": "Say the sentence. Use the model to help you: “The pilot is on the plane.”",
+            "modelAnswer": "The pilot is on the plane.",
+            "audio": "tts:en-GB:The pilot is on the plane.",
             "evaluation": {
               "type": "transcription_feedback",
               "transcriptionSeparateFromPronunciation": true
@@ -982,9 +983,9 @@
           {
             "itemId": "english-pre-a1-m096-speaking-ex01-i09",
             "position": 9,
-            "prompt": "Say the word “plane”.",
-            "modelAnswer": "plane",
-            "audio": "tts:en-GB:plane",
+            "prompt": "Say the sentence. Use the model to help you: “The plane is on the runway.”",
+            "modelAnswer": "The plane is on the runway.",
+            "audio": "tts:en-GB:The plane is on the runway.",
             "evaluation": {
               "type": "transcription_feedback",
               "transcriptionSeparateFromPronunciation": true
@@ -993,9 +994,9 @@
           {
             "itemId": "english-pre-a1-m096-speaking-ex01-i10",
             "position": 10,
-            "prompt": "Say the word “runway”.",
-            "modelAnswer": "runway",
-            "audio": "tts:en-GB:runway",
+            "prompt": "Say the sentence. Use the model to help you: “We fly to London.”",
+            "modelAnswer": "We fly to London.",
+            "audio": "tts:en-GB:We fly to London.",
             "evaluation": {
               "type": "transcription_feedback",
               "transcriptionSeparateFromPronunciation": true
@@ -1012,9 +1013,9 @@
         "exerciseId": "english-pre-a1-m096-listening-ex01",
         "type": "listening_gap_fill",
         "content": {
-          "audio": "tts:en-GB:Listen and complete. This is the pilot. This is the flight attendant. This is the passenger. This is the airport. This is the gate. This is the passport. This is the security. This is the luggage. This is the plane. This is the runway.",
+          "audio": "tts:en-GB:Listen and complete. Sara is at the airport. She is a passenger. She has her passport. They go through security. Her luggage is heavy. They wait at the gate. A flight attendant says hello. The pilot is on the plane. The plane is ready. The plane is on the runway.",
           "audioLocale": "en-GB",
-          "transcriptTemplate": "Listen and complete. This is the [[gap-01]]. This is the [[gap-02]]. This is the [[gap-03]]. This is the [[gap-04]]. This is the [[gap-05]]. This is the [[gap-06]]. This is the [[gap-07]]. This is the [[gap-08]]. This is the [[gap-09]]. This is the [[gap-10]].",
+          "transcriptTemplate": "Listen and complete. Sara is at the [[gap-04]]. She is a [[gap-03]]. She has her [[gap-06]]. They go through [[gap-07]]. Her [[gap-08]] is heavy. They wait at the [[gap-05]]. A [[gap-02]] says hello. The [[gap-01]] is on the plane. The [[gap-09]] is ready. The plane is on the [[gap-10]].",
           "wordBank": [
             {
               "wordId": "english-pre-a1-m096-listening-word-01",
