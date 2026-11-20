@@ -24,6 +24,128 @@ continuous:{name:"Present continuous",rule:"Use am/is/are + verb-ing for actions
 like:{name:"Like / love + nouns or -ing",rule:"Use like or love + a noun, or like/love + verb-ing, to talk about preferences.",examples:["I like my class.","She loves reading.","We like learning together."],tasks:["I like ___ (read).","He loves ___ (music).","Do you ___ this class?"],answers:["reading","music","like"]},
 questions:{name:"Question words",rule:"Use what for things, where for places, when for times, who for people, why for reasons and how for manner.",examples:["What is your name?","Where do you live?","How do you spell your surname?"],tasks:["___ is your name?","___ are you from?","___ do you spell it?"],answers:["What","Where","How"]}
 };
+const readingQuestionSets = {
+1:[
+["What is the text mainly about?","Laura's personal details","A school timetable","A holiday in Spain"],
+["How old is Laura?","Twenty-four","Twenty-eight","Fourteen"],
+["Where is Laura from?","Spain","Italy","The United Kingdom"],
+["Where does Laura live?","Madrid","Seville","London"],
+["What is Laura's surname?","García","Green","Ruiz"],
+["Which detail is an address?","14 Green Street","12 May","612 345 678"],
+["What is Laura's phone number?","612 345 678","612 345 876","600 123 456"],
+["When is Laura's date of birth?","12 May","3 March","24 May"],
+["Which sentence is true?","Laura lives in Madrid.","Laura is twenty-eight.","Laura is from France."],
+["Why might someone ask for Laura's email address?","To contact her by email","To find her age","To ask where she lives"]
+],
+2:[
+["What is the text mainly about?","People greeting each other politely","A family holiday","A school lesson"],
+["Who says 'Good morning, Mr Brown'?","Emma","Leo","Mr Brown"],
+["Who is Leo?","Emma's friend","Emma's teacher","Emma's brother"],
+["What does Emma say when she meets Leo?","Nice to meet you","Goodbye","See you later"],
+["What does 'You're welcome' reply to?","Thank you","Good morning","Goodbye"],
+["Which phrase is used to leave?","See you later","Nice to meet you","Thank you"],
+["Is the conversation formal or informal?","Polite and friendly","Angry","Very formal"],
+["Who receives thanks?","The person who helps","Mr Brown only","A person leaving"],
+["Which happens first in the text?","Emma greets Mr Brown","Emma says goodbye","Emma thanks Leo"],
+["What is the best title?","A friendly meeting","At the doctor's","Buying a ticket"]
+],
+3:[
+["What is the text mainly about?","People's countries and nationalities","Languages at work","A trip to France"],
+["Where is Marco from?","Italy","France","Spain"],
+["What is Marco's nationality?","Italian","French","British"],
+["Where is Emma from?","France","Italy","The United Kingdom"],
+["What nationality is Emma?","French","Italian","Spanish"],
+["Where is the English class?","Spain","France","Germany"],
+["What is the teacher's nationality?","British","Spanish","Italian"],
+["Which country is the teacher from?","The United Kingdom","Italy","France"],
+["Who is from Italy?","Marco","Emma","The teacher"],
+["Which pair is correct?","France – French","Italy – French","Spain – British"]
+],
+4:[
+["What is the text mainly about?","Spelling a first name and surname","Describing a classroom","Meeting a new teacher"],
+["What is the person's first name?","Alice","Green","Alex"],
+["What is the surname?","Green","Alice","White"],
+["How many letters are in Alice?","Five","Four","Six"],
+["How many letters are in Green?","Five","Six","Four"],
+["What kind of letter is the A in Alice?","A capital letter","A small letter","A vowel sound only"],
+["How is the name Alice spelt?","A-L-I-C-E","A-L-I-S-E","A-L-E-C-E"],
+["How is the surname spelt?","G-R-E-E-N","G-R-I-E-N","G-R-E-N"],
+["What do the first letters of Alice and Green have in common?","They are capital letters","They are both vowels","They are small letters"],
+["Why does the speaker spell the names?","To show exactly how to write them","To say where they live","To give their phone number"]
+],
+5:[
+["What is the text mainly about?","Ben and Mia sharing personal information","Two people choosing a job","A married couple moving house"],
+["What is Ben's job?","He is a teacher.","He is a doctor.","He is a nurse."],
+["Is Ben single or married?","Single","Married","The text doesn't say"],
+["Where does Ben live?","8 Park Road","14 Green Street","8 Oxford Road"],
+["What is Mia's job?","She is a doctor.","She is a teacher.","She is a student."],
+["Is Mia married?","Yes","No, she is single","The text doesn't say"],
+["Who lives at 8 Park Road?","Ben","Mia","Both of them"],
+["Which question asks about a job?","What is your occupation?","Where do you live?","How old are you?"],
+["What does 'they' refer to in 'They ask each other'?","Ben and Mia","The teacher and Ben","Two doctors"],
+["Which statement is true?","Ben is a teacher and Mia is a doctor.","Ben is married and Mia is single.","Mia lives at 8 Park Road."]
+],
+6:[
+["What is the text mainly about?","Numbers used for contact details and everyday information","A telephone conversation","A maths lesson"],
+["What is the phone number?","020 4567 8910","020 4567 8911","020 4657 8910"],
+["Where does the speaker work?","In an office","In a school","In a shop"],
+["What is the office number?","40","20","30"],
+["How many students are in the class?","20","30","40"],
+["How many books are in the room?","30","20","10"],
+["What time is the appointment?","10:30","10:00","3:10"],
+["Which number is the largest?","40","20","30"],
+["What does 'There are 20 students' tell us?","The number of students in the class","The room number","The appointment time"],
+["Which detail is a time, not a quantity?","10:30","30 books","20 students"]
+],
+7:[
+["What is the text mainly about?","The languages the speaker and a friend know","A language school timetable","A trip abroad"],
+["Which language does the speaker speak?","Spanish","French","German"],
+["What language is the speaker studying?","English","German","French"],
+["What can the speaker read?","Short texts in English","Long books in French","Messages in German"],
+["What can the speaker write?","Simple messages","Long novels","French essays"],
+["What does the speaker need to practise?","Listening","Writing","Reading"],
+["Which languages does the speaker's friend speak?","French and German","Spanish and English","English and Italian"],
+["Does the speaker understand the teacher?","Yes","No","The text doesn't say"],
+["What does 'but' show in 'I understand my teacher, but I need to practise listening'?","A contrast","A reason","A sequence"],
+["Which statement is true?","The speaker studies English.","The speaker's friend speaks Spanish.","The speaker cannot read English."]
+],
+8:[
+["What is the text mainly about?","Jack's personal and work profile","Jack's family history","A cycling competition"],
+["Where was Jack born?","Bristol","London","Cardiff"],
+["Where does Jack live now?","London","Bristol","Oxford"],
+["Where does Jack work?","In a café","In a shop","In an office"],
+["What does Jack study?","English","French","Spanish"],
+["What is Jack's favourite hobby?","Cycling","Swimming","Reading"],
+["What does Jack do in his free time?","He reads and listens to music.","He works in a café.","He studies at school."],
+["Which sentence describes the past?","I was born in Bristol.","I live in London.","I work in a café."],
+["Does Jack live in the same city where he was born?","No","Yes","The text doesn't say"],
+["Which detail is about Jack's job?","He works in a café.","He likes cycling.","He listens to music."]
+],
+9:[
+["What is the text mainly about?","A group of students in an English class","A family of twelve people","A teacher's daily routine"],
+["How many students are in the class?","Twelve","Eight","Six"],
+["How is the teacher described?","Kind","Strict","New"],
+["Who is Rosa?","A classmate and friend","The teacher","A student's sister"],
+["How many women are in the group?","Six","Twelve","Eight"],
+["How many men are in the group?","Six","Two","Twelve"],
+["How do the students work?","Together","Alone","At home"],
+["What does 'each other' mean here?","One another","The teacher only","The people outside the class"],
+["Which statement is true?","There are six women and six men.","There are twelve teachers.","Rosa is the teacher."],
+["What can we infer about the class?","The students help one another.","Nobody knows each other.","The class has only two students."]
+],
+10:[
+["What is the text mainly about?","Two classmates meeting for the first time","A teacher explaining grammar","Friends planning a holiday"],
+["Who is new in the class?","Sara","Ben","The teacher"],
+["Who introduces himself?","Ben","Sara","The teacher"],
+["What does Ben ask?","What's your name?","Where do you live?","How old are you?"],
+["What is the new student's name?","Sara","Ben","Alex"],
+["How do they speak?","Slowly","Loudly","Very quickly"],
+["What do they practise together?","Speaking and asking questions","Writing emails","Playing a sport"],
+["Who says 'Welcome to the class!'?","The teacher","Ben","Sara"],
+["Why do they speak slowly?","To help communication","Because they are angry","Because the class is finished"],
+["Which event happens at the end?","The teacher welcomes Sara.","Ben asks Sara's name.","Sara says she is new."]
+]
+};
 const esc=s=>String(s).replace(/[&<>"']/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]));
 const list=a=>"<ul>"+a.map(x=>"<li>"+esc(x)+"</li>").join("")+"</ul>";
 const card=(h,p)=>"<div class='a1extra-card'><h3>"+h+"</h3>"+p+"</div>";
@@ -107,7 +229,7 @@ const sentences=l.reading.split(/(?<=[.!?])\\s+/).filter(Boolean);
 const listenWords=l.listening.match(/[A-Za-z']+/g)||l.words;
 const vocab=l.words.slice(0,10);
 const grammarItems=Array.from({length:10},(_,i)=>{const j=i%g.tasks.length;const task=g.tasks[j],answer=g.answers[j];return {prompt:"Completa la frase según la regla: "+task,answer,wrong:g.answers.filter(x=>x!==answer).concat(["do","does","are"])};});
-const readingItems=Array.from({length:10},(_,i)=>{const sentence=sentences[i%sentences.length];const alternatives=[sentences[(i+1)%sentences.length],sentences[(i+2)%sentences.length]].filter(x=>x!==sentence);return {prompt:"¿Qué frase aparece en el texto?",answer:sentence,wrong:alternatives};});
+const readingItems=(readingQuestionSets[n]||[]).map(([prompt,answer,wrong1,wrong2])=>({prompt,answer,wrong:[wrong1,wrong2]}));
 const listeningItems=Array.from({length:10},(_,i)=>{const word=listenWords[(i*Math.max(1,Math.floor(listenWords.length/10)))%listenWords.length];const sentence=l.listening.split(/(?<=[.!?])\\s+/).find(x=>x.toLowerCase().includes(word.toLowerCase()))||l.listening;const blank=sentence.replace(new RegExp("\\b"+word+"\\b","i"),"_____");return {prompt:"Escucha y elige la palabra que falta: "+blank,answer:word,wrong:listenWords.filter(x=>x.toLowerCase()!==word.toLowerCase()).slice(i%Math.max(1,listenWords.length-3),i%Math.max(1,listenWords.length-3)+2),audio:sentence};});
 const dictationItems=Array.from({length:10},(_,i)=>{const target=i<5?vocab[i]:((l.listening.split(/(?<=[.!?])\\s+/)[(i-5)%Math.max(1,l.listening.split(/(?<=[.!?])\\s+/).length)]||l.listening).trim());return {kind:"write",prompt:"Pulsa el audio y escribe exactamente la palabra o frase.",target};});
 const speakingItems=Array.from({length:10},(_,i)=>({kind:"speak",prompt:["Preséntate en voz alta e incluye esta palabra: ","Haz una pregunta completa que incluya esta expresión: ","Di una frase verdadera sobre ti usando esta palabra: ","Haz una pregunta a tu compañero con esta palabra: ","Describe una persona o cosa e incluye esta palabra: "][i%5]+vocab[i],target:vocab[i]}));
