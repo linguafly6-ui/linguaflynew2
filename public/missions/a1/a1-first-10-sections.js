@@ -527,31 +527,47 @@ taskUI("speaking","7. Speaking · 10 ejercicios","Responde en voz alta usando el
  const gaps=[...selected].sort((a,b)=>a-b).map((pos,index)=>({pos,index,answer:matches[pos][0]}));
  const byPos=new Map(gaps.map(g=>[g.pos,g]));
  let cursor=0,passage="";
- matches.forEach((m,pos)=>{
-  const gap=byPos.get(pos),start=m.index;
-  passage+=esc(l.listening.slice(cursor,start));
-  passage+=gap?"<input class='a1-listen-gap' data-gap='"+gap.index+"' aria-label='Hueco "+(gap.index+1)+"' autocomplete='off' spellcheck='false' placeholder='"+(gap.index+1)+"'>":esc(m[0]);
-  cursor=start+m[0].length;
+ const sentenceParts=l.listening.match(/[^.!?]+[.!?]?/g)||[l.listening];
+ let globalWord=0;
+ sentenceParts.forEach(sentence=>{
+  const local=[...sentence.matchAll(/[A-Za-z]+(?:'[A-Za-z]+)?/g)];
+  let localCursor=0,html="";
+  local.forEach(m=>{
+   const gap=byPos.get(globalWord),at=m.index;
+   html+=esc(sentence.slice(localCursor,at));
+   html+=gap?"<span class='a1-listen-blank-wrap'><span class='a1-listen-blank-number'>"+(gap.index+1)+"</span><input class='a1-listen-gap' data-gap='"+gap.index+"' aria-label='Hueco "+(gap.index+1)+"' autocomplete='off' spellcheck='false' placeholder='…'></span>":esc(m[0]);
+   localCursor=at+m[0].length;globalWord++;
+  });
+  html+=esc(sentence.slice(localCursor));
+  if(html.trim())passage+="<p>"+html.trim()+"</p>";
  });
- passage+=esc(l.listening.slice(cursor));
- section.innerHTML="<h2>8. Listening · audio + 10 huecos</h2><p class='muted'>Escucha el audio completo y completa los diez huecos en este único texto. No hay opciones: escribe lo que realmente oyes.</p>"+keyVocabularyCard()+"<div class='a1extra-card'><button type='button' data-listen-audio>🔊 Escuchar audio completo</button><p class='a1-listen-passage'>"+passage+"</p><button type='button' data-listen-check>Comprobar las 10 respuestas</button><p class='a1extra-feedback' data-listen-feedback aria-live='polite'></p><p data-listen-result></p></div>";
+ section.innerHTML="<div class='a1-listen-header'><span class='a1-listen-eyebrow'>SKILL 08 · LISTENING</span><h2>Escucha y completa</h2><p>Escucha el audio completo y rellena los diez huecos dentro del texto. Lee el contexto, pero no adivines: escribe exactamente lo que oyes.</p></div><div class='a1-listen-audio-card'><div class='a1-listen-audio-icon'>♫</div><div class='a1-listen-audio-copy'><strong>Audio de la misión</strong><span>Inglés británico · Texto completo · Puedes escucharlo varias veces</span></div><button type='button' class='a1-listen-play' data-listen-audio>▶ Reproducir audio</button></div><div class='a1-listen-task-head'><div><span class='a1-listen-step'>TU ACTIVIDAD</span><h3>Completa el texto</h3></div><div class='a1-listen-counter' data-listen-count>0 <span>/ 10</span></div></div><div class='a1-listen-progress'><i data-listen-bar></i></div><div class='a1-listen-paper'><div class='a1-listen-paper-top'><span>LISTENING · GAP FILL</span><span>10 HUECOS</span></div><p class='a1-listen-instruction'>Escribe una palabra en cada espacio.</p><div class='a1-listen-passage'>"+passage+"</div><div class='a1-listen-actions'><button type='button' class='a1-listen-check' data-listen-check>Comprobar respuestas</button><button type='button' class='a1-listen-reset' data-listen-reset hidden>Volver a intentarlo</button></div><p class='a1-listen-feedback' data-listen-feedback aria-live='polite'></p><div class='a1-listen-solutions' data-listen-result hidden></div></div><p class='a1-listen-tip'>Consejo: escucha una vez para entender la idea general y una segunda vez para localizar las palabras que faltan.</p>";
+ const inputs=[...section.querySelectorAll("[data-gap]")],count=section.querySelector("[data-listen-count]"),bar=section.querySelector("[data-listen-bar]"),check=section.querySelector("[data-listen-check]"),reset=section.querySelector("[data-listen-reset]"),feedback=section.querySelector("[data-listen-feedback]"),result=section.querySelector("[data-listen-result]");
+ const updateProgress=()=>{const filled=inputs.filter(x=>x.value.trim()).length;count.innerHTML=filled+" <span>/ 10</span>";bar.style.width=(filled*10)+"%";};
+ inputs.forEach(input=>input.addEventListener("input",updateProgress));
  section.querySelector("[data-listen-audio]").onclick=()=>speak(l.listening);
- section.querySelector("[data-listen-check]").onclick=()=>{
+ check.onclick=()=>{
   let score=0;
   gaps.forEach(g=>{
    const input=section.querySelector("[data-gap='"+g.index+"']");
    const norm=x=>String(x).trim().toLowerCase().replace(/[^a-z']/g,"");
    const ok=norm(input.value)===norm(g.answer);
    if(ok)score++;
+   input.classList.toggle("is-correct",ok);input.classList.toggle("is-wrong",!ok);
    input.disabled=true;
-   input.style.borderColor=ok?"#27945d":"#c94b45";
-   input.title=ok?"Correcto":"Respuesta: "+g.answer;
+   const wrap=input.closest(".a1-listen-blank-wrap");
+   if(!ok){const solution=document.createElement("span");solution.className="a1-listen-correction";solution.textContent=g.answer;wrap.appendChild(solution);}
   });
-  section.querySelector("[data-listen-feedback]").textContent="Has acertado "+score+" de 10 huecos.";
-  section.querySelector("[data-listen-result]").textContent="Soluciones: "+gaps.map((g,i)=>(i+1)+". "+g.answer).join(" · ");
-  section.querySelector("[data-listen-check]").disabled=true;
+  feedback.textContent="Resultado: "+score+" de 10 respuestas correctas.";
+  feedback.classList.add("is-visible");
+  result.hidden=false;result.textContent="Respuestas correctas: "+gaps.map((g,i)=>(i+1)+". "+g.answer).join("   ·   ");
+  check.hidden=true;reset.hidden=false;
  };
- const css=document.createElement("style");css.textContent=".a1-listen-passage{font-size:18px;line-height:2.5;margin:20px 0;color:#20345d}.a1-listen-gap{display:inline-block;width:clamp(76px,11vw,120px);margin:3px 4px;padding:7px 8px;border:1px solid #8da4ca;border-radius:7px;background:#fff;color:#20345d;font:inherit;font-size:15px;text-align:center}.a1-listen-gap:disabled{opacity:1;background:#f2f5fb}";document.head.appendChild(css);
+ reset.onclick=()=>{
+  inputs.forEach(input=>{input.value="";input.disabled=false;input.classList.remove("is-correct","is-wrong");input.closest(".a1-listen-blank-wrap").querySelectorAll(".a1-listen-correction").forEach(x=>x.remove());});
+  feedback.textContent="";feedback.classList.remove("is-visible");result.hidden=true;check.hidden=false;reset.hidden=true;updateProgress();
+ };
+ const css=document.createElement("style");css.textContent=".a1-listen-header{padding:25px 27px;margin:12px 0 18px;border-radius:20px;background:linear-gradient(130deg,#172b58,#315b99);color:#fff}.a1-listen-eyebrow,.a1-listen-step{font-size:10px;font-weight:900;letter-spacing:.15em;color:#82d8e8}.a1-listen-header h2{margin:8px 0;font-size:26px;color:#fff}.a1-listen-header>p{margin:0;max-width:720px;color:#e3edff;line-height:1.65}.a1-listen-audio-card{display:flex;align-items:center;gap:14px;padding:16px 18px;margin:0 0 26px;background:#eef5ff;border:1px solid #d7e4f7;border-radius:16px}.a1-listen-audio-icon{display:grid;place-items:center;flex:0 0 44px;height:44px;border-radius:13px;background:#d9f4f7;color:#087e91;font-size:25px}.a1-listen-audio-copy{display:flex;flex:1;flex-direction:column;gap:4px;min-width:0}.a1-listen-audio-copy strong{color:#203b70}.a1-listen-audio-copy span{font-size:12px;color:#627592;line-height:1.4}.a1-listen-play,.a1-listen-check,.a1-listen-reset{border:0;border-radius:11px;padding:11px 16px;font-weight:800;cursor:pointer}.a1-listen-play,.a1-listen-check{background:#2456a0;color:#fff}.a1-listen-task-head{display:flex;align-items:end;justify-content:space-between;gap:12px;margin:0 2px 9px}.a1-listen-task-head h3{margin:4px 0 0;color:#203b70;font-size:20px}.a1-listen-step{color:#16869a}.a1-listen-counter{font-size:21px;font-weight:900;color:#203b70}.a1-listen-counter span{font-size:13px;color:#8796ad;font-weight:700}.a1-listen-progress{height:7px;background:#e8edf5;border-radius:20px;overflow:hidden;margin-bottom:14px}.a1-listen-progress i{display:block;width:0;height:100%;background:#1c9bb0;border-radius:20px;transition:width .2s}.a1-listen-paper{padding:20px 23px 22px;border:1px solid #dce5f1;border-radius:18px;background:#fff;box-shadow:0 8px 24px rgba(35,58,95,.06)}.a1-listen-paper-top{display:flex;justify-content:space-between;color:#8292aa;font-size:10px;font-weight:900;letter-spacing:.12em}.a1-listen-instruction{margin:15px 0 10px;color:#667995;font-size:13px}.a1-listen-passage{margin:0;color:#263d63;font-size:18px;line-height:2.65}.a1-listen-passage p{margin:0 0 12px}.a1-listen-blank-wrap{display:inline-flex;position:relative;vertical-align:baseline;align-items:center;margin:0 5px 0 3px;padding-top:13px}.a1-listen-blank-number{position:absolute;top:0;left:3px;font-size:9px;font-weight:900;color:#16869a;line-height:1}.a1-listen-gap{width:clamp(74px,9vw,108px);height:34px;padding:4px 7px;border:0;border-bottom:2px solid #5e83bb;border-radius:5px 5px 0 0;background:#f0f5fc;color:#203b70;font:700 15px inherit;text-align:center;outline:none}.a1-listen-gap:focus{background:#e5f6fa;border-bottom-color:#1596a8;box-shadow:0 2px 0 #1596a8}.a1-listen-gap.is-correct{background:#e8f7ee;border-bottom-color:#27945d;color:#176b42}.a1-listen-gap.is-wrong{background:#fff0ef;border-bottom-color:#c94b45;color:#a52d27}.a1-listen-correction{display:inline-block;margin-left:5px;color:#b13c35;font-size:12px;font-weight:800}.a1-listen-actions{display:flex;gap:10px;flex-wrap:wrap;margin-top:23px}.a1-listen-reset{background:#edf1f7;color:#344b70}.a1-listen-feedback{display:none;margin:15px 0 0;padding:12px 14px;border-radius:10px;background:#eaf4ff;color:#234b82;font-weight:800}.a1-listen-feedback.is-visible{display:block}.a1-listen-solutions{margin-top:12px;padding:12px 14px;background:#f6f8fc;border-radius:10px;color:#526783;font-size:13px;line-height:1.8}.a1-listen-tip{margin:13px 2px;color:#74849b;font-size:12px;line-height:1.6}@media(max-width:560px){.a1-listen-header{padding:20px}.a1-listen-audio-card{align-items:flex-start;flex-wrap:wrap}.a1-listen-audio-copy{flex-basis:calc(100% - 60px)}.a1-listen-play{width:100%}.a1-listen-paper{padding:16px 13px}.a1-listen-passage{font-size:16px;line-height:2.7}.a1-listen-gap{width:76px}}";document.head.appendChild(css);
 })();
 
 nav.querySelectorAll("[data-tab]").forEach(b=>b.addEventListener("click",()=>{nav.querySelectorAll("[data-tab]").forEach(x=>x.classList.toggle("active",x===b));main.querySelectorAll(".panel").forEach(p=>p.classList.toggle("active",p.id===b.dataset.tab));}));
