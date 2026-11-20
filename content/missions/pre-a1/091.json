@@ -31,7 +31,7 @@
             "itemId": "english-pre-a1-m091-explore-ex01-i01",
             "position": 1,
             "english": "seaside",
-            "spanish": "la costa",
+            "spanish": "la zona costera",
             "audio": "tts:en-GB:seaside"
           },
           {
@@ -99,28 +99,29 @@
           }
         ],
         "theory": {
-          "title": "Frases y vocabulario de la misión",
-          "explanation": "Observa el orden de las palabras en las frases y relaciona cada expresión con su significado en español.",
+          "title": "At the seaside",
+          "explanation": "Usa «There is…» para decir qué hay en la costa y «The … is…» para describir lugares y objetos.",
           "patterns": [
             {
               "label": "Modelo",
-              "pattern": "Where is the seaside?",
+              "pattern": "There is a boat in the harbour.",
               "examples": [
-                "Where is the seaside?",
-                "Where is the harbour?",
-                "Where is the boat?"
+                "There is a boat in the harbour.",
+                "The lighthouse is tall.",
+                "The sand is warm."
               ]
             },
             {
-              "label": "Traducción",
-              "pattern": "English sentence → significado en español",
+              "label": "Uso",
+              "pattern": "Lee el modelo y cambia una palabra para hablar de otra situación.",
               "examples": [
-                "Where is the fisherman?",
-                "Where is the fish?"
+                "There is a boat in the harbour.",
+                "The lighthouse is tall.",
+                "The sand is warm."
               ]
             }
           ],
-          "tip": "Lee la frase completa antes de elegir la traducción."
+          "tip": "Escucha la frase, repítela y cambia una palabra para crear un ejemplo propio."
         }
       }
     },
@@ -141,7 +142,7 @@
               "type": "single_choice"
             },
             "options": [
-              "la costa",
+              "la zona costera",
               "el puerto",
               "el barco"
             ]
@@ -276,140 +277,140 @@
             "itemId": "english-pre-a1-m091-practice-ex01-i11",
             "position": 11,
             "taskType": "translation_multiple_choice",
-            "prompt": "Traduce la frase: “I can see the seaside.”",
+            "prompt": "Traduce la frase: “We are at the seaside.”",
             "evaluation": {
               "type": "single_choice"
             },
             "options": [
-              "Puedo ver la costa.",
-              "Puedo ver el puerto.",
-              "Puedo ver el barco."
+              "Estamos en la costa.",
+              "El barco está en el puerto.",
+              "Puedo ver a un pescador."
             ]
           },
           {
             "itemId": "english-pre-a1-m091-practice-ex01-i12",
             "position": 12,
             "taskType": "translation_multiple_choice",
-            "prompt": "Traduce la frase: “I can see the harbour.”",
+            "prompt": "Traduce la frase: “The boat is in the harbour.”",
             "evaluation": {
               "type": "single_choice"
             },
             "options": [
-              "Puedo ver el puerto.",
-              "Puedo ver el barco.",
-              "Puedo ver el pescador."
+              "El barco está en el puerto.",
+              "Puedo ver a un pescador.",
+              "El pescador tiene un pez."
             ]
           },
           {
             "itemId": "english-pre-a1-m091-practice-ex01-i13",
             "position": 13,
             "taskType": "translation_multiple_choice",
-            "prompt": "Traduce la frase: “I can see the boat.”",
+            "prompt": "Traduce la frase: “I can see a fisherman.”",
             "evaluation": {
               "type": "single_choice"
             },
             "options": [
-              "Puedo ver el barco.",
-              "Puedo ver el pescador.",
-              "Puedo ver el pez."
+              "Puedo ver a un pescador.",
+              "El pescador tiene un pez.",
+              "El pez está en el agua."
             ]
           },
           {
             "itemId": "english-pre-a1-m091-practice-ex01-i14",
             "position": 14,
             "taskType": "translation_multiple_choice",
-            "prompt": "Traduce la frase: “I can see the fisherman.”",
+            "prompt": "Traduce la frase: “The fisherman has a fish.”",
             "evaluation": {
               "type": "single_choice"
             },
             "options": [
-              "Puedo ver el pescador.",
-              "Puedo ver el pez.",
-              "Puedo ver la roca."
+              "El pescador tiene un pez.",
+              "El pez está en el agua.",
+              "Me siento en una roca."
             ]
           },
           {
             "itemId": "english-pre-a1-m091-practice-ex01-i15",
             "position": 15,
             "taskType": "translation_multiple_choice",
-            "prompt": "Traduce la frase: “I can see the fish.”",
+            "prompt": "Traduce la frase: “The fish is in the water.”",
             "evaluation": {
               "type": "single_choice"
             },
             "options": [
-              "Puedo ver el pez.",
-              "Puedo ver la roca.",
-              "Puedo ver la arena."
+              "El pez está en el agua.",
+              "Me siento en una roca.",
+              "La arena está caliente."
             ]
           },
           {
             "itemId": "english-pre-a1-m091-practice-ex01-i16",
             "position": 16,
             "taskType": "translation_multiple_choice",
-            "prompt": "Traduce la frase: “I can see the rock.”",
+            "prompt": "Traduce la frase: “I sit on a rock.”",
             "evaluation": {
               "type": "single_choice"
             },
             "options": [
-              "Puedo ver la roca.",
-              "Puedo ver la arena.",
-              "Puedo ver la concha."
+              "Me siento en una roca.",
+              "La arena está caliente.",
+              "Encuentro una concha."
             ]
           },
           {
             "itemId": "english-pre-a1-m091-practice-ex01-i17",
             "position": 17,
             "taskType": "translation_multiple_choice",
-            "prompt": "Traduce la frase: “I can see the sand.”",
+            "prompt": "Traduce la frase: “The sand is warm.”",
             "evaluation": {
               "type": "single_choice"
             },
             "options": [
-              "Puedo ver la arena.",
-              "Puedo ver la concha.",
-              "Puedo ver el faro."
+              "La arena está caliente.",
+              "Encuentro una concha.",
+              "El faro es alto."
             ]
           },
           {
             "itemId": "english-pre-a1-m091-practice-ex01-i18",
             "position": 18,
             "taskType": "translation_multiple_choice",
-            "prompt": "Traduce la frase: “I can see the shell.”",
+            "prompt": "Traduce la frase: “I find a shell.”",
             "evaluation": {
               "type": "single_choice"
             },
             "options": [
-              "Puedo ver la concha.",
-              "Puedo ver el faro.",
-              "Puedo ver la costa."
+              "Encuentro una concha.",
+              "El faro es alto.",
+              "Caminamos por la costa."
             ]
           },
           {
             "itemId": "english-pre-a1-m091-practice-ex01-i19",
             "position": 19,
             "taskType": "translation_multiple_choice",
-            "prompt": "Traduce la frase: “I can see the lighthouse.”",
+            "prompt": "Traduce la frase: “The lighthouse is tall.”",
             "evaluation": {
               "type": "single_choice"
             },
             "options": [
-              "Puedo ver el faro.",
-              "Puedo ver la costa.",
-              "Puedo ver la costa."
+              "El faro es alto.",
+              "Caminamos por la costa.",
+              "Estamos en la costa."
             ]
           },
           {
             "itemId": "english-pre-a1-m091-practice-ex01-i20",
             "position": 20,
             "taskType": "translation_multiple_choice",
-            "prompt": "Traduce la frase: “I can see the coast.”",
+            "prompt": "Traduce la frase: “We walk along the coast.”",
             "evaluation": {
               "type": "single_choice"
             },
             "options": [
-              "Puedo ver la costa.",
-              "Puedo ver la costa.",
-              "Puedo ver el puerto."
+              "Caminamos por la costa.",
+              "Estamos en la costa.",
+              "El barco está en el puerto."
             ]
           }
         ]
@@ -426,131 +427,131 @@
           {
             "itemId": "english-pre-a1-m091-grammar-ex01-i01",
             "position": 1,
-            "prompt": "Elige la traducción correcta: “Where is the seaside?”",
+            "prompt": "Where is the boat?",
             "evaluation": {
               "type": "single_choice"
             },
             "options": [
-              "¿Dónde está la costa?",
-              "¿Dónde está el puerto?",
-              "¿Dónde está el barco?"
+              "The boat is in the harbour.",
+              "The boat are in the harbour.",
+              "The boat in is harbour."
             ]
           },
           {
             "itemId": "english-pre-a1-m091-grammar-ex01-i02",
             "position": 2,
-            "prompt": "Elige la traducción correcta: “Where is the harbour?”",
+            "prompt": "Complete the sentence about the lighthouse.",
             "evaluation": {
               "type": "single_choice"
             },
             "options": [
-              "¿Dónde está el puerto?",
-              "¿Dónde está el barco?",
-              "¿Dónde está el pescador?"
+              "is",
+              "are",
+              "am"
             ]
           },
           {
             "itemId": "english-pre-a1-m091-grammar-ex01-i03",
             "position": 3,
-            "prompt": "Elige la traducción correcta: “Where is the boat?”",
+            "prompt": "What does the fisherman have?",
             "evaluation": {
               "type": "single_choice"
             },
             "options": [
-              "¿Dónde está el barco?",
-              "¿Dónde está el pescador?",
-              "¿Dónde está el pez?"
+              "has",
+              "have",
+              "having"
             ]
           },
           {
             "itemId": "english-pre-a1-m091-grammar-ex01-i04",
             "position": 4,
-            "prompt": "Elige la traducción correcta: “Where is the fisherman?”",
+            "prompt": "Choose the correct phrase to describe the boat.",
             "evaluation": {
               "type": "single_choice"
             },
             "options": [
-              "¿Dónde está el pescador?",
-              "¿Dónde está el pez?",
-              "¿Dónde está la roca?"
+              "a blue boat",
+              "a boat blue",
+              "an blue boat"
             ]
           },
           {
             "itemId": "english-pre-a1-m091-grammar-ex01-i05",
             "position": 5,
-            "prompt": "Elige la traducción correcta: “Where is the fish?”",
+            "prompt": "Where are the fish?",
             "evaluation": {
               "type": "single_choice"
             },
             "options": [
-              "¿Dónde está el pez?",
-              "¿Dónde está la roca?",
-              "¿Dónde está la arena?"
+              "are",
+              "is",
+              "am"
             ]
           },
           {
             "itemId": "english-pre-a1-m091-grammar-ex01-i06",
             "position": 6,
-            "prompt": "Elige la traducción correcta: “Where is the rock?”",
+            "prompt": "Where is the shell?",
             "evaluation": {
               "type": "single_choice"
             },
             "options": [
-              "¿Dónde está la roca?",
-              "¿Dónde está la arena?",
-              "¿Dónde está la concha?"
+              "The shell is on the sand.",
+              "The shell are on the sand.",
+              "The shell on is sand."
             ]
           },
           {
             "itemId": "english-pre-a1-m091-grammar-ex01-i07",
             "position": 7,
-            "prompt": "Elige la traducción correcta: “Where is the sand?”",
+            "prompt": "Choose the plural noun for the beach.",
             "evaluation": {
               "type": "single_choice"
             },
             "options": [
-              "¿Dónde está la arena?",
-              "¿Dónde está la concha?",
-              "¿Dónde está el faro?"
+              "rocks",
+              "rock",
+              "a rock"
             ]
           },
           {
             "itemId": "english-pre-a1-m091-grammar-ex01-i08",
             "position": 8,
-            "prompt": "Elige la traducción correcta: “Where is the shell?”",
+            "prompt": "Ask about the harbour's location.",
             "evaluation": {
               "type": "single_choice"
             },
             "options": [
-              "¿Dónde está la concha?",
-              "¿Dónde está el faro?",
-              "¿Dónde está la costa?"
+              "Where is the harbour?",
+              "Where the harbour is?",
+              "Where are the harbour?"
             ]
           },
           {
             "itemId": "english-pre-a1-m091-grammar-ex01-i09",
             "position": 9,
-            "prompt": "Elige la traducción correcta: “Where is the lighthouse?”",
+            "prompt": "Which sentence describes the lighthouse?",
             "evaluation": {
               "type": "single_choice"
             },
             "options": [
-              "¿Dónde está el faro?",
-              "¿Dónde está la costa?",
-              "¿Dónde está la costa?"
+              "The lighthouse is tall.",
+              "The lighthouse are tall.",
+              "The lighthouse tall is."
             ]
           },
           {
             "itemId": "english-pre-a1-m091-grammar-ex01-i10",
             "position": 10,
-            "prompt": "Elige la traducción correcta: “Where is the coast?”",
+            "prompt": "Complete: We ___ at the seaside.",
             "evaluation": {
               "type": "single_choice"
             },
             "options": [
-              "¿Dónde está la costa?",
-              "¿Dónde está la costa?",
-              "¿Dónde está el puerto?"
+              "are",
+              "is",
+              "am"
             ]
           }
         ]
@@ -569,7 +570,7 @@
             "position": 1,
             "word": "seaside",
             "translation": "la costa",
-            "pronunciationGuide": "Escucha el modelo británico y repite despacio.",
+            "pronunciationGuide": "Listen to “seaside”, notice the sounds, and repeat it slowly twice.",
             "audio": "tts:en-GB:seaside"
           },
           {
@@ -577,7 +578,7 @@
             "position": 2,
             "word": "harbour",
             "translation": "el puerto",
-            "pronunciationGuide": "Escucha el modelo británico y repite despacio.",
+            "pronunciationGuide": "Listen to “harbour”, notice the sounds, and repeat it slowly twice.",
             "audio": "tts:en-GB:harbour"
           },
           {
@@ -585,7 +586,7 @@
             "position": 3,
             "word": "boat",
             "translation": "el barco",
-            "pronunciationGuide": "Escucha el modelo británico y repite despacio.",
+            "pronunciationGuide": "Listen to “boat”, notice the sounds, and repeat it slowly twice.",
             "audio": "tts:en-GB:boat"
           },
           {
@@ -593,7 +594,7 @@
             "position": 4,
             "word": "fisherman",
             "translation": "el pescador",
-            "pronunciationGuide": "Escucha el modelo británico y repite despacio.",
+            "pronunciationGuide": "Listen to “fisherman”, notice the sounds, and repeat it slowly twice.",
             "audio": "tts:en-GB:fisherman"
           },
           {
@@ -601,7 +602,7 @@
             "position": 5,
             "word": "fish",
             "translation": "el pez",
-            "pronunciationGuide": "Escucha el modelo británico y repite despacio.",
+            "pronunciationGuide": "Listen to “fish”, notice the sounds, and repeat it slowly twice.",
             "audio": "tts:en-GB:fish"
           },
           {
@@ -609,7 +610,7 @@
             "position": 6,
             "word": "rock",
             "translation": "la roca",
-            "pronunciationGuide": "Escucha el modelo británico y repite despacio.",
+            "pronunciationGuide": "Listen to “rock”, notice the sounds, and repeat it slowly twice.",
             "audio": "tts:en-GB:rock"
           },
           {
@@ -617,7 +618,7 @@
             "position": 7,
             "word": "sand",
             "translation": "la arena",
-            "pronunciationGuide": "Escucha el modelo británico y repite despacio.",
+            "pronunciationGuide": "Listen to “sand”, notice the sounds, and repeat it slowly twice.",
             "audio": "tts:en-GB:sand"
           },
           {
@@ -625,7 +626,7 @@
             "position": 8,
             "word": "shell",
             "translation": "la concha",
-            "pronunciationGuide": "Escucha el modelo británico y repite despacio.",
+            "pronunciationGuide": "Listen to “shell”, notice the sounds, and repeat it slowly twice.",
             "audio": "tts:en-GB:shell"
           },
           {
@@ -633,7 +634,7 @@
             "position": 9,
             "word": "lighthouse",
             "translation": "el faro",
-            "pronunciationGuide": "Escucha el modelo británico y repite despacio.",
+            "pronunciationGuide": "Listen to “lighthouse”, notice the sounds, and repeat it slowly twice.",
             "audio": "tts:en-GB:lighthouse"
           },
           {
@@ -641,7 +642,7 @@
             "position": 10,
             "word": "coast",
             "translation": "la costa",
-            "pronunciationGuide": "Escucha el modelo británico y repite despacio.",
+            "pronunciationGuide": "Listen to “coast”, notice the sounds, and repeat it slowly twice.",
             "audio": "tts:en-GB:coast"
           }
         ]
@@ -656,137 +657,137 @@
         "type": "reading_comprehension",
         "content": {
           "passageId": "english-pre-a1-m091-reading-passage-01",
-          "passage": "I like the seaside. I like the harbour. I like the boat. I like the fisherman. I like the fish. I like the rock. I like the sand. I like the shell. I like the lighthouse. I like the coast."
+          "passage": "Jack and his family visit the seaside. They walk to the harbour. A fisherman is near a blue boat. He has some fish. Jack sits on a rock. The sand is warm. He finds a shell. The lighthouse is tall. They look at the coast. Then they go home."
         },
         "items": [
           {
             "itemId": "english-pre-a1-m091-reading-ex01-i01",
             "position": 1,
-            "prompt": "¿Qué significa “I like the seaside.”?",
+            "prompt": "Where does Jack go?",
             "evaluation": {
               "type": "single_choice"
             },
             "options": [
-              "Me gusta la costa.",
-              "Me gusta el puerto.",
-              "Me gusta el barco."
+              "To the seaside",
+              "To the airport",
+              "To the playground"
             ]
           },
           {
             "itemId": "english-pre-a1-m091-reading-ex01-i02",
             "position": 2,
-            "prompt": "¿Qué significa “I like the harbour.”?",
+            "prompt": "Where do they walk?",
             "evaluation": {
               "type": "single_choice"
             },
             "options": [
-              "Me gusta el puerto.",
-              "Me gusta el barco.",
-              "Me gusta el pescador."
+              "To the harbour",
+              "To the farm",
+              "To the classroom"
             ]
           },
           {
             "itemId": "english-pre-a1-m091-reading-ex01-i03",
             "position": 3,
-            "prompt": "¿Qué significa “I like the boat.”?",
+            "prompt": "What colour is the boat?",
             "evaluation": {
               "type": "single_choice"
             },
             "options": [
-              "Me gusta el barco.",
-              "Me gusta el pescador.",
-              "Me gusta el pez."
+              "Blue",
+              "Red",
+              "Green"
             ]
           },
           {
             "itemId": "english-pre-a1-m091-reading-ex01-i04",
             "position": 4,
-            "prompt": "¿Qué significa “I like the fisherman.”?",
+            "prompt": "Who is near the boat?",
             "evaluation": {
               "type": "single_choice"
             },
             "options": [
-              "Me gusta el pescador.",
-              "Me gusta el pez.",
-              "Me gusta la roca."
+              "A fisherman",
+              "A pilot",
+              "A farmer"
             ]
           },
           {
             "itemId": "english-pre-a1-m091-reading-ex01-i05",
             "position": 5,
-            "prompt": "¿Qué significa “I like the fish.”?",
+            "prompt": "What does the fisherman have?",
             "evaluation": {
               "type": "single_choice"
             },
             "options": [
-              "Me gusta el pez.",
-              "Me gusta la roca.",
-              "Me gusta la arena."
+              "Fish",
+              "Books",
+              "Flowers"
             ]
           },
           {
             "itemId": "english-pre-a1-m091-reading-ex01-i06",
             "position": 6,
-            "prompt": "¿Qué significa “I like the rock.”?",
+            "prompt": "Where does Jack sit?",
             "evaluation": {
               "type": "single_choice"
             },
             "options": [
-              "Me gusta la roca.",
-              "Me gusta la arena.",
-              "Me gusta la concha."
+              "On a rock",
+              "On a boat",
+              "On the sand"
             ]
           },
           {
             "itemId": "english-pre-a1-m091-reading-ex01-i07",
             "position": 7,
-            "prompt": "¿Qué significa “I like the sand.”?",
+            "prompt": "How is the sand?",
             "evaluation": {
               "type": "single_choice"
             },
             "options": [
-              "Me gusta la arena.",
-              "Me gusta la concha.",
-              "Me gusta el faro."
+              "Warm",
+              "Cold",
+              "Wet"
             ]
           },
           {
             "itemId": "english-pre-a1-m091-reading-ex01-i08",
             "position": 8,
-            "prompt": "¿Qué significa “I like the shell.”?",
+            "prompt": "What does Jack find?",
             "evaluation": {
               "type": "single_choice"
             },
             "options": [
-              "Me gusta la concha.",
-              "Me gusta el faro.",
-              "Me gusta la costa."
+              "A shell",
+              "A key",
+              "A leaf"
             ]
           },
           {
             "itemId": "english-pre-a1-m091-reading-ex01-i09",
             "position": 9,
-            "prompt": "¿Qué significa “I like the lighthouse.”?",
+            "prompt": "What is tall?",
             "evaluation": {
               "type": "single_choice"
             },
             "options": [
-              "Me gusta el faro.",
-              "Me gusta la costa.",
-              "Me gusta la costa."
+              "The lighthouse",
+              "The boat",
+              "The rock"
             ]
           },
           {
             "itemId": "english-pre-a1-m091-reading-ex01-i10",
             "position": 10,
-            "prompt": "¿Qué significa “I like the coast.”?",
+            "prompt": "Where do they go at the end?",
             "evaluation": {
               "type": "single_choice"
             },
             "options": [
-              "Me gusta la costa.",
-              "Me gusta la costa.",
-              "Me gusta el puerto."
+              "Home",
+              "To school",
+              "To the airport"
             ]
           }
         ]
@@ -894,9 +895,9 @@
           {
             "itemId": "english-pre-a1-m091-speaking-ex01-i01",
             "position": 1,
-            "prompt": "Say the word “seaside”.",
-            "modelAnswer": "seaside",
-            "audio": "tts:en-GB:seaside",
+            "prompt": "Say the sentence. Use the model to help you: “We are at the seaside.”",
+            "modelAnswer": "We are at the seaside.",
+            "audio": "tts:en-GB:We are at the seaside.",
             "evaluation": {
               "type": "transcription_feedback",
               "transcriptionSeparateFromPronunciation": true
@@ -905,9 +906,9 @@
           {
             "itemId": "english-pre-a1-m091-speaking-ex01-i02",
             "position": 2,
-            "prompt": "Say the word “harbour”.",
-            "modelAnswer": "harbour",
-            "audio": "tts:en-GB:harbour",
+            "prompt": "Say the sentence. Use the model to help you: “The harbour is busy.”",
+            "modelAnswer": "The harbour is busy.",
+            "audio": "tts:en-GB:The harbour is busy.",
             "evaluation": {
               "type": "transcription_feedback",
               "transcriptionSeparateFromPronunciation": true
@@ -916,9 +917,9 @@
           {
             "itemId": "english-pre-a1-m091-speaking-ex01-i03",
             "position": 3,
-            "prompt": "Say the word “boat”.",
-            "modelAnswer": "boat",
-            "audio": "tts:en-GB:boat",
+            "prompt": "Say the sentence. Use the model to help you: “I can see a boat.”",
+            "modelAnswer": "I can see a boat.",
+            "audio": "tts:en-GB:I can see a boat.",
             "evaluation": {
               "type": "transcription_feedback",
               "transcriptionSeparateFromPronunciation": true
@@ -927,9 +928,9 @@
           {
             "itemId": "english-pre-a1-m091-speaking-ex01-i04",
             "position": 4,
-            "prompt": "Say the word “fisherman”.",
-            "modelAnswer": "fisherman",
-            "audio": "tts:en-GB:fisherman",
+            "prompt": "Say the sentence. Use the model to help you: “The fisherman has fish.”",
+            "modelAnswer": "The fisherman has fish.",
+            "audio": "tts:en-GB:The fisherman has fish.",
             "evaluation": {
               "type": "transcription_feedback",
               "transcriptionSeparateFromPronunciation": true
@@ -938,9 +939,9 @@
           {
             "itemId": "english-pre-a1-m091-speaking-ex01-i05",
             "position": 5,
-            "prompt": "Say the word “fish”.",
-            "modelAnswer": "fish",
-            "audio": "tts:en-GB:fish",
+            "prompt": "Say the sentence. Use the model to help you: “The fish are in the water.”",
+            "modelAnswer": "The fish are in the water.",
+            "audio": "tts:en-GB:The fish are in the water.",
             "evaluation": {
               "type": "transcription_feedback",
               "transcriptionSeparateFromPronunciation": true
@@ -949,9 +950,9 @@
           {
             "itemId": "english-pre-a1-m091-speaking-ex01-i06",
             "position": 6,
-            "prompt": "Say the word “rock”.",
-            "modelAnswer": "rock",
-            "audio": "tts:en-GB:rock",
+            "prompt": "Say the sentence. Use the model to help you: “I sit on a rock.”",
+            "modelAnswer": "I sit on a rock.",
+            "audio": "tts:en-GB:I sit on a rock.",
             "evaluation": {
               "type": "transcription_feedback",
               "transcriptionSeparateFromPronunciation": true
@@ -960,9 +961,9 @@
           {
             "itemId": "english-pre-a1-m091-speaking-ex01-i07",
             "position": 7,
-            "prompt": "Say the word “sand”.",
-            "modelAnswer": "sand",
-            "audio": "tts:en-GB:sand",
+            "prompt": "Say the sentence. Use the model to help you: “The sand is warm.”",
+            "modelAnswer": "The sand is warm.",
+            "audio": "tts:en-GB:The sand is warm.",
             "evaluation": {
               "type": "transcription_feedback",
               "transcriptionSeparateFromPronunciation": true
@@ -971,9 +972,9 @@
           {
             "itemId": "english-pre-a1-m091-speaking-ex01-i08",
             "position": 8,
-            "prompt": "Say the word “shell”.",
-            "modelAnswer": "shell",
-            "audio": "tts:en-GB:shell",
+            "prompt": "Say the sentence. Use the model to help you: “I find a shell.”",
+            "modelAnswer": "I find a shell.",
+            "audio": "tts:en-GB:I find a shell.",
             "evaluation": {
               "type": "transcription_feedback",
               "transcriptionSeparateFromPronunciation": true
@@ -982,9 +983,9 @@
           {
             "itemId": "english-pre-a1-m091-speaking-ex01-i09",
             "position": 9,
-            "prompt": "Say the word “lighthouse”.",
-            "modelAnswer": "lighthouse",
-            "audio": "tts:en-GB:lighthouse",
+            "prompt": "Say the sentence. Use the model to help you: “The lighthouse is tall.”",
+            "modelAnswer": "The lighthouse is tall.",
+            "audio": "tts:en-GB:The lighthouse is tall.",
             "evaluation": {
               "type": "transcription_feedback",
               "transcriptionSeparateFromPronunciation": true
@@ -993,9 +994,9 @@
           {
             "itemId": "english-pre-a1-m091-speaking-ex01-i10",
             "position": 10,
-            "prompt": "Say the word “coast”.",
-            "modelAnswer": "coast",
-            "audio": "tts:en-GB:coast",
+            "prompt": "Say the sentence. Use the model to help you: “We walk along the coast.”",
+            "modelAnswer": "We walk along the coast.",
+            "audio": "tts:en-GB:We walk along the coast.",
             "evaluation": {
               "type": "transcription_feedback",
               "transcriptionSeparateFromPronunciation": true
@@ -1012,9 +1013,9 @@
         "exerciseId": "english-pre-a1-m091-listening-ex01",
         "type": "listening_gap_fill",
         "content": {
-          "audio": "tts:en-GB:Listen and complete. This is the seaside. This is the harbour. This is the boat. This is the fisherman. This is the fish. This is the rock. This is the sand. This is the shell. This is the lighthouse. This is the coast.",
+          "audio": "tts:en-GB:Listen and complete. We visit the seaside today. The boats are in the harbour. I can see a blue boat. A fisherman is on the boat. He has a big fish. I sit on a rock. The sand is warm. I find a shell. The lighthouse is tall. We walk along the coast.",
           "audioLocale": "en-GB",
-          "transcriptTemplate": "Listen and complete. This is the [[gap-01]]. This is the [[gap-02]]. This is the [[gap-03]]. This is the [[gap-04]]. This is the [[gap-05]]. This is the [[gap-06]]. This is the [[gap-07]]. This is the [[gap-08]]. This is the [[gap-09]]. This is the [[gap-10]].",
+          "transcriptTemplate": "Listen and complete. We visit the [[gap-01]] today. The boats are in the [[gap-02]]. I can see a blue [[gap-03]]. A [[gap-04]] is on the boat. He has a big [[gap-05]]. I sit on a [[gap-06]]. The [[gap-07]] is warm. I find a [[gap-08]]. The [[gap-09]] is tall. We walk along the [[gap-10]].",
           "wordBank": [
             {
               "wordId": "english-pre-a1-m091-listening-word-01",

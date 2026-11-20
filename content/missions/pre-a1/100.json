@@ -99,28 +99,29 @@
           }
         ],
         "theory": {
-          "title": "Frases y vocabulario de la misión",
-          "explanation": "Observa el orden de las palabras en las frases y relaciona cada expresión con su significado en español.",
+          "title": "Pre-A1 grand review",
+          "explanation": "Combina saludos, personas, lugares y objetos con frases muy cortas. Recuerda «I am…», «I have…» y «This is…».",
           "patterns": [
             {
               "label": "Modelo",
-              "pattern": "Where is the hello?",
+              "pattern": "Hello! I am Alex.",
               "examples": [
-                "Where is the hello?",
-                "Where is the family?",
-                "Where is the house?"
+                "Hello! I am Alex.",
+                "This is my family.",
+                "I have a book. Thank you!"
               ]
             },
             {
-              "label": "Traducción",
-              "pattern": "English sentence → significado en español",
+              "label": "Uso",
+              "pattern": "Lee el modelo y cambia una palabra para crear una frase propia.",
               "examples": [
-                "Where is the food?",
-                "Where is the school?"
+                "Hello! I am Alex.",
+                "This is my family.",
+                "I have a book. Thank you!"
               ]
             }
           ],
-          "tip": "Lee la frase completa antes de elegir la traducción."
+          "tip": "Escucha la frase, repítela y cambia una palabra para crear un ejemplo propio."
         }
       }
     },
@@ -276,140 +277,140 @@
             "itemId": "english-pre-a1-m100-practice-ex01-i11",
             "position": 11,
             "taskType": "translation_multiple_choice",
-            "prompt": "Traduce la frase: “I can see the hello.”",
+            "prompt": "Traduce la frase: “Hello! My name is Alex.”",
             "evaluation": {
               "type": "single_choice"
             },
             "options": [
-              "Puedo ver hola.",
-              "Puedo ver la familia.",
-              "Puedo ver la casa."
+              "¡Hola! Me llamo Alex.",
+              "Esta es mi familia.",
+              "Vivo en una casa."
             ]
           },
           {
             "itemId": "english-pre-a1-m100-practice-ex01-i12",
             "position": 12,
             "taskType": "translation_multiple_choice",
-            "prompt": "Traduce la frase: “I can see the family.”",
+            "prompt": "Traduce la frase: “This is my family.”",
             "evaluation": {
               "type": "single_choice"
             },
             "options": [
-              "Puedo ver la familia.",
-              "Puedo ver la casa.",
-              "Puedo ver la comida."
+              "Esta es mi familia.",
+              "Vivo en una casa.",
+              "Comemos juntos."
             ]
           },
           {
             "itemId": "english-pre-a1-m100-practice-ex01-i13",
             "position": 13,
             "taskType": "translation_multiple_choice",
-            "prompt": "Traduce la frase: “I can see the house.”",
+            "prompt": "Traduce la frase: “I live in a house.”",
             "evaluation": {
               "type": "single_choice"
             },
             "options": [
-              "Puedo ver la casa.",
-              "Puedo ver la comida.",
-              "Puedo ver la escuela."
+              "Vivo en una casa.",
+              "Comemos juntos.",
+              "Voy a la escuela."
             ]
           },
           {
             "itemId": "english-pre-a1-m100-practice-ex01-i14",
             "position": 14,
             "taskType": "translation_multiple_choice",
-            "prompt": "Traduce la frase: “I can see the food.”",
+            "prompt": "Traduce la frase: “We eat food together.”",
             "evaluation": {
               "type": "single_choice"
             },
             "options": [
-              "Puedo ver la comida.",
-              "Puedo ver la escuela.",
-              "Puedo ver el amigo."
+              "Comemos juntos.",
+              "Voy a la escuela.",
+              "Sam es mi amigo."
             ]
           },
           {
             "itemId": "english-pre-a1-m100-practice-ex01-i15",
             "position": 15,
             "taskType": "translation_multiple_choice",
-            "prompt": "Traduce la frase: “I can see the school.”",
+            "prompt": "Traduce la frase: “I go to school.”",
             "evaluation": {
               "type": "single_choice"
             },
             "options": [
-              "Puedo ver la escuela.",
-              "Puedo ver el amigo.",
-              "Puedo ver el agua."
+              "Voy a la escuela.",
+              "Sam es mi amigo.",
+              "Bebemos agua."
             ]
           },
           {
             "itemId": "english-pre-a1-m100-practice-ex01-i16",
             "position": 16,
             "taskType": "translation_multiple_choice",
-            "prompt": "Traduce la frase: “I can see the friend.”",
+            "prompt": "Traduce la frase: “Sam is my friend.”",
             "evaluation": {
               "type": "single_choice"
             },
             "options": [
-              "Puedo ver el amigo.",
-              "Puedo ver el agua.",
-              "Puedo ver el libro."
+              "Sam es mi amigo.",
+              "Bebemos agua.",
+              "Leo un libro."
             ]
           },
           {
             "itemId": "english-pre-a1-m100-practice-ex01-i17",
             "position": 17,
             "taskType": "translation_multiple_choice",
-            "prompt": "Traduce la frase: “I can see the water.”",
+            "prompt": "Traduce la frase: “We drink water.”",
             "evaluation": {
               "type": "single_choice"
             },
             "options": [
-              "Puedo ver el agua.",
-              "Puedo ver el libro.",
-              "Puedo ver contento."
+              "Bebemos agua.",
+              "Leo un libro.",
+              "Estoy contento."
             ]
           },
           {
             "itemId": "english-pre-a1-m100-practice-ex01-i18",
             "position": 18,
             "taskType": "translation_multiple_choice",
-            "prompt": "Traduce la frase: “I can see the book.”",
+            "prompt": "Traduce la frase: “I read a book.”",
             "evaluation": {
               "type": "single_choice"
             },
             "options": [
-              "Puedo ver el libro.",
-              "Puedo ver contento.",
-              "Puedo ver gracias."
+              "Leo un libro.",
+              "Estoy contento.",
+              "¡Gracias!"
             ]
           },
           {
             "itemId": "english-pre-a1-m100-practice-ex01-i19",
             "position": 19,
             "taskType": "translation_multiple_choice",
-            "prompt": "Traduce la frase: “I can see the happy.”",
+            "prompt": "Traduce la frase: “I am happy.”",
             "evaluation": {
               "type": "single_choice"
             },
             "options": [
-              "Puedo ver contento.",
-              "Puedo ver gracias.",
-              "Puedo ver hola."
+              "Estoy contento.",
+              "¡Gracias!",
+              "¡Hola! Me llamo Alex."
             ]
           },
           {
             "itemId": "english-pre-a1-m100-practice-ex01-i20",
             "position": 20,
             "taskType": "translation_multiple_choice",
-            "prompt": "Traduce la frase: “I can see the thank you.”",
+            "prompt": "Traduce la frase: “Thank you!”",
             "evaluation": {
               "type": "single_choice"
             },
             "options": [
-              "Puedo ver gracias.",
-              "Puedo ver hola.",
-              "Puedo ver la familia."
+              "¡Gracias!",
+              "¡Hola! Me llamo Alex.",
+              "Esta es mi familia."
             ]
           }
         ]
@@ -426,131 +427,131 @@
           {
             "itemId": "english-pre-a1-m100-grammar-ex01-i01",
             "position": 1,
-            "prompt": "Elige la traducción correcta: “Where is the hello?”",
+            "prompt": "Choose the correct greeting.",
             "evaluation": {
               "type": "single_choice"
             },
             "options": [
-              "¿Dónde está hola?",
-              "¿Dónde está la familia?",
-              "¿Dónde está la casa?"
+              "Hello!",
+              "Goodbye yesterday!",
+              "I am hello."
             ]
           },
           {
             "itemId": "english-pre-a1-m100-grammar-ex01-i02",
             "position": 2,
-            "prompt": "Elige la traducción correcta: “Where is the family?”",
+            "prompt": "Complete: This is my ___.",
             "evaluation": {
               "type": "single_choice"
             },
             "options": [
-              "¿Dónde está la familia?",
-              "¿Dónde está la casa?",
-              "¿Dónde está la comida?"
+              "family",
+              "families",
+              "familial"
             ]
           },
           {
             "itemId": "english-pre-a1-m100-grammar-ex01-i03",
             "position": 3,
-            "prompt": "Elige la traducción correcta: “Where is the house?”",
+            "prompt": "Describe the house.",
             "evaluation": {
               "type": "single_choice"
             },
             "options": [
-              "¿Dónde está la casa?",
-              "¿Dónde está la comida?",
-              "¿Dónde está la escuela?"
+              "My house is small.",
+              "My house are small.",
+              "My house small is."
             ]
           },
           {
             "itemId": "english-pre-a1-m100-grammar-ex01-i04",
             "position": 4,
-            "prompt": "Elige la traducción correcta: “Where is the food?”",
+            "prompt": "Complete: I like ___.",
             "evaluation": {
               "type": "single_choice"
             },
             "options": [
-              "¿Dónde está la comida?",
-              "¿Dónde está la escuela?",
-              "¿Dónde está el amigo?"
+              "food",
+              "foods",
+              "fooding"
             ]
           },
           {
             "itemId": "english-pre-a1-m100-grammar-ex01-i05",
             "position": 5,
-            "prompt": "Elige la traducción correcta: “Where is the school?”",
+            "prompt": "Choose the correct sentence about school.",
             "evaluation": {
               "type": "single_choice"
             },
             "options": [
-              "¿Dónde está la escuela?",
-              "¿Dónde está el amigo?",
-              "¿Dónde está el agua?"
+              "I go to school.",
+              "I goes to school.",
+              "I going to school."
             ]
           },
           {
             "itemId": "english-pre-a1-m100-grammar-ex01-i06",
             "position": 6,
-            "prompt": "Elige la traducción correcta: “Where is the friend?”",
+            "prompt": "Complete: He is my ___.",
             "evaluation": {
               "type": "single_choice"
             },
             "options": [
-              "¿Dónde está el amigo?",
-              "¿Dónde está el agua?",
-              "¿Dónde está el libro?"
+              "friend",
+              "friends",
+              "friendly"
             ]
           },
           {
             "itemId": "english-pre-a1-m100-grammar-ex01-i07",
             "position": 7,
-            "prompt": "Elige la traducción correcta: “Where is the water?”",
+            "prompt": "Choose the correct sentence about drinking.",
             "evaluation": {
               "type": "single_choice"
             },
             "options": [
-              "¿Dónde está el agua?",
-              "¿Dónde está el libro?",
-              "¿Dónde está contento?"
+              "I drink water.",
+              "I drinks water.",
+              "I drinking water."
             ]
           },
           {
             "itemId": "english-pre-a1-m100-grammar-ex01-i08",
             "position": 8,
-            "prompt": "Elige la traducción correcta: “Where is the book?”",
+            "prompt": "Complete: This is a ___.",
             "evaluation": {
               "type": "single_choice"
             },
             "options": [
-              "¿Dónde está el libro?",
-              "¿Dónde está contento?",
-              "¿Dónde está gracias?"
+              "book",
+              "books",
+              "booking"
             ]
           },
           {
             "itemId": "english-pre-a1-m100-grammar-ex01-i09",
             "position": 9,
-            "prompt": "Elige la traducción correcta: “Where is the happy?”",
+            "prompt": "Choose the correct sentence about a feeling.",
             "evaluation": {
               "type": "single_choice"
             },
             "options": [
-              "¿Dónde está contento?",
-              "¿Dónde está gracias?",
-              "¿Dónde está hola?"
+              "I am happy.",
+              "I have happy.",
+              "I happy am."
             ]
           },
           {
             "itemId": "english-pre-a1-m100-grammar-ex01-i10",
             "position": 10,
-            "prompt": "Elige la traducción correcta: “Where is the thank you?”",
+            "prompt": "Choose the polite expression.",
             "evaluation": {
               "type": "single_choice"
             },
             "options": [
-              "¿Dónde está gracias?",
-              "¿Dónde está hola?",
-              "¿Dónde está la familia?"
+              "Thank you!",
+              "Thanks you!",
+              "Thanking you!"
             ]
           }
         ]
@@ -569,7 +570,7 @@
             "position": 1,
             "word": "hello",
             "translation": "hola",
-            "pronunciationGuide": "Escucha el modelo británico y repite despacio.",
+            "pronunciationGuide": "Listen to “hello”, notice the sounds, and repeat it slowly twice.",
             "audio": "tts:en-GB:hello"
           },
           {
@@ -577,7 +578,7 @@
             "position": 2,
             "word": "family",
             "translation": "la familia",
-            "pronunciationGuide": "Escucha el modelo británico y repite despacio.",
+            "pronunciationGuide": "Listen to “family”, notice the sounds, and repeat it slowly twice.",
             "audio": "tts:en-GB:family"
           },
           {
@@ -585,7 +586,7 @@
             "position": 3,
             "word": "house",
             "translation": "la casa",
-            "pronunciationGuide": "Escucha el modelo británico y repite despacio.",
+            "pronunciationGuide": "Listen to “house”, notice the sounds, and repeat it slowly twice.",
             "audio": "tts:en-GB:house"
           },
           {
@@ -593,7 +594,7 @@
             "position": 4,
             "word": "food",
             "translation": "la comida",
-            "pronunciationGuide": "Escucha el modelo británico y repite despacio.",
+            "pronunciationGuide": "Listen to “food”, notice the sounds, and repeat it slowly twice.",
             "audio": "tts:en-GB:food"
           },
           {
@@ -601,7 +602,7 @@
             "position": 5,
             "word": "school",
             "translation": "la escuela",
-            "pronunciationGuide": "Escucha el modelo británico y repite despacio.",
+            "pronunciationGuide": "Listen to “school”, notice the sounds, and repeat it slowly twice.",
             "audio": "tts:en-GB:school"
           },
           {
@@ -609,7 +610,7 @@
             "position": 6,
             "word": "friend",
             "translation": "el amigo",
-            "pronunciationGuide": "Escucha el modelo británico y repite despacio.",
+            "pronunciationGuide": "Listen to “friend”, notice the sounds, and repeat it slowly twice.",
             "audio": "tts:en-GB:friend"
           },
           {
@@ -617,7 +618,7 @@
             "position": 7,
             "word": "water",
             "translation": "el agua",
-            "pronunciationGuide": "Escucha el modelo británico y repite despacio.",
+            "pronunciationGuide": "Listen to “water”, notice the sounds, and repeat it slowly twice.",
             "audio": "tts:en-GB:water"
           },
           {
@@ -625,7 +626,7 @@
             "position": 8,
             "word": "book",
             "translation": "el libro",
-            "pronunciationGuide": "Escucha el modelo británico y repite despacio.",
+            "pronunciationGuide": "Listen to “book”, notice the sounds, and repeat it slowly twice.",
             "audio": "tts:en-GB:book"
           },
           {
@@ -633,7 +634,7 @@
             "position": 9,
             "word": "happy",
             "translation": "contento",
-            "pronunciationGuide": "Escucha el modelo británico y repite despacio.",
+            "pronunciationGuide": "Listen to “happy”, notice the sounds, and repeat it slowly twice.",
             "audio": "tts:en-GB:happy"
           },
           {
@@ -641,7 +642,7 @@
             "position": 10,
             "word": "thank you",
             "translation": "gracias",
-            "pronunciationGuide": "Escucha el modelo británico y repite despacio.",
+            "pronunciationGuide": "Listen to “thank you”, notice the sounds, and repeat it slowly twice.",
             "audio": "tts:en-GB:thank you"
           }
         ]
@@ -656,137 +657,137 @@
         "type": "reading_comprehension",
         "content": {
           "passageId": "english-pre-a1-m100-reading-passage-01",
-          "passage": "I like the hello. I like the family. I like the house. I like the food. I like the school. I like the friend. I like the water. I like the book. I like the happy. I like the thank you."
+          "passage": "Hello! My name is Alex. I live with my family in a small house. I have a sister. We eat food together. I go to school every day. My friend Sam is in my class. We drink water at lunch. I read a book with Sam. I am happy at school. At home, I say, “Thank you!”"
         },
         "items": [
           {
             "itemId": "english-pre-a1-m100-reading-ex01-i01",
             "position": 1,
-            "prompt": "¿Qué significa “I like the hello.”?",
+            "prompt": "What is the child's name?",
             "evaluation": {
               "type": "single_choice"
             },
             "options": [
-              "Me gusta hola.",
-              "Me gusta la familia.",
-              "Me gusta la casa."
+              "Alex",
+              "Sam",
+              "Ben"
             ]
           },
           {
             "itemId": "english-pre-a1-m100-reading-ex01-i02",
             "position": 2,
-            "prompt": "¿Qué significa “I like the family.”?",
+            "prompt": "Who lives with Alex?",
             "evaluation": {
               "type": "single_choice"
             },
             "options": [
-              "Me gusta la familia.",
-              "Me gusta la casa.",
-              "Me gusta la comida."
+              "His family",
+              "His teacher",
+              "His friend"
             ]
           },
           {
             "itemId": "english-pre-a1-m100-reading-ex01-i03",
             "position": 3,
-            "prompt": "¿Qué significa “I like the house.”?",
+            "prompt": "Where does Alex live?",
             "evaluation": {
               "type": "single_choice"
             },
             "options": [
-              "Me gusta la casa.",
-              "Me gusta la comida.",
-              "Me gusta la escuela."
+              "In a small house",
+              "In a big school",
+              "At the airport"
             ]
           },
           {
             "itemId": "english-pre-a1-m100-reading-ex01-i04",
             "position": 4,
-            "prompt": "¿Qué significa “I like the food.”?",
+            "prompt": "Who is Alex's sister?",
             "evaluation": {
               "type": "single_choice"
             },
             "options": [
-              "Me gusta la comida.",
-              "Me gusta la escuela.",
-              "Me gusta el amigo."
+              "A family member",
+              "His teacher",
+              "His friend Sam"
             ]
           },
           {
             "itemId": "english-pre-a1-m100-reading-ex01-i05",
             "position": 5,
-            "prompt": "¿Qué significa “I like the school.”?",
+            "prompt": "What do they do together?",
             "evaluation": {
               "type": "single_choice"
             },
             "options": [
-              "Me gusta la escuela.",
-              "Me gusta el amigo.",
-              "Me gusta el agua."
+              "Eat food",
+              "Fly a plane",
+              "Clean a shop"
             ]
           },
           {
             "itemId": "english-pre-a1-m100-reading-ex01-i06",
             "position": 6,
-            "prompt": "¿Qué significa “I like the friend.”?",
+            "prompt": "Where does Alex go every day?",
             "evaluation": {
               "type": "single_choice"
             },
             "options": [
-              "Me gusta el amigo.",
-              "Me gusta el agua.",
-              "Me gusta el libro."
+              "To school",
+              "To the seaside",
+              "To the farm"
             ]
           },
           {
             "itemId": "english-pre-a1-m100-reading-ex01-i07",
             "position": 7,
-            "prompt": "¿Qué significa “I like the water.”?",
+            "prompt": "Who is Sam?",
             "evaluation": {
               "type": "single_choice"
             },
             "options": [
-              "Me gusta el agua.",
-              "Me gusta el libro.",
-              "Me gusta contento."
+              "Alex's friend",
+              "Alex's brother",
+              "Alex's teacher"
             ]
           },
           {
             "itemId": "english-pre-a1-m100-reading-ex01-i08",
             "position": 8,
-            "prompt": "¿Qué significa “I like the book.”?",
+            "prompt": "What do they drink at lunch?",
             "evaluation": {
               "type": "single_choice"
             },
             "options": [
-              "Me gusta el libro.",
-              "Me gusta contento.",
-              "Me gusta gracias."
+              "Water",
+              "Tea",
+              "Milk"
             ]
           },
           {
             "itemId": "english-pre-a1-m100-reading-ex01-i09",
             "position": 9,
-            "prompt": "¿Qué significa “I like the happy.”?",
+            "prompt": "What does Alex read?",
             "evaluation": {
               "type": "single_choice"
             },
             "options": [
-              "Me gusta contento.",
-              "Me gusta gracias.",
-              "Me gusta hola."
+              "A book",
+              "A menu",
+              "A map"
             ]
           },
           {
             "itemId": "english-pre-a1-m100-reading-ex01-i10",
             "position": 10,
-            "prompt": "¿Qué significa “I like the thank you.”?",
+            "prompt": "How does Alex feel at school?",
             "evaluation": {
               "type": "single_choice"
             },
             "options": [
-              "Me gusta gracias.",
-              "Me gusta hola.",
-              "Me gusta la familia."
+              "Happy",
+              "Sad",
+              "Tired"
             ]
           }
         ]
@@ -894,9 +895,9 @@
           {
             "itemId": "english-pre-a1-m100-speaking-ex01-i01",
             "position": 1,
-            "prompt": "Say the word “hello”.",
-            "modelAnswer": "hello",
-            "audio": "tts:en-GB:hello",
+            "prompt": "Say the sentence. Use the model to help you: “Hello! My name is Alex.”",
+            "modelAnswer": "Hello! My name is Alex.",
+            "audio": "tts:en-GB:Hello! My name is Alex.",
             "evaluation": {
               "type": "transcription_feedback",
               "transcriptionSeparateFromPronunciation": true
@@ -905,9 +906,9 @@
           {
             "itemId": "english-pre-a1-m100-speaking-ex01-i02",
             "position": 2,
-            "prompt": "Say the word “family”.",
-            "modelAnswer": "family",
-            "audio": "tts:en-GB:family",
+            "prompt": "Say the sentence. Use the model to help you: “This is my family.”",
+            "modelAnswer": "This is my family.",
+            "audio": "tts:en-GB:This is my family.",
             "evaluation": {
               "type": "transcription_feedback",
               "transcriptionSeparateFromPronunciation": true
@@ -916,9 +917,9 @@
           {
             "itemId": "english-pre-a1-m100-speaking-ex01-i03",
             "position": 3,
-            "prompt": "Say the word “house”.",
-            "modelAnswer": "house",
-            "audio": "tts:en-GB:house",
+            "prompt": "Say the sentence. Use the model to help you: “I live in a house.”",
+            "modelAnswer": "I live in a house.",
+            "audio": "tts:en-GB:I live in a house.",
             "evaluation": {
               "type": "transcription_feedback",
               "transcriptionSeparateFromPronunciation": true
@@ -927,9 +928,9 @@
           {
             "itemId": "english-pre-a1-m100-speaking-ex01-i04",
             "position": 4,
-            "prompt": "Say the word “food”.",
-            "modelAnswer": "food",
-            "audio": "tts:en-GB:food",
+            "prompt": "Say the sentence. Use the model to help you: “I like food.”",
+            "modelAnswer": "I like food.",
+            "audio": "tts:en-GB:I like food.",
             "evaluation": {
               "type": "transcription_feedback",
               "transcriptionSeparateFromPronunciation": true
@@ -938,9 +939,9 @@
           {
             "itemId": "english-pre-a1-m100-speaking-ex01-i05",
             "position": 5,
-            "prompt": "Say the word “school”.",
-            "modelAnswer": "school",
-            "audio": "tts:en-GB:school",
+            "prompt": "Say the sentence. Use the model to help you: “I go to school.”",
+            "modelAnswer": "I go to school.",
+            "audio": "tts:en-GB:I go to school.",
             "evaluation": {
               "type": "transcription_feedback",
               "transcriptionSeparateFromPronunciation": true
@@ -949,9 +950,9 @@
           {
             "itemId": "english-pre-a1-m100-speaking-ex01-i06",
             "position": 6,
-            "prompt": "Say the word “friend”.",
-            "modelAnswer": "friend",
-            "audio": "tts:en-GB:friend",
+            "prompt": "Say the sentence. Use the model to help you: “Sam is my friend.”",
+            "modelAnswer": "Sam is my friend.",
+            "audio": "tts:en-GB:Sam is my friend.",
             "evaluation": {
               "type": "transcription_feedback",
               "transcriptionSeparateFromPronunciation": true
@@ -960,9 +961,9 @@
           {
             "itemId": "english-pre-a1-m100-speaking-ex01-i07",
             "position": 7,
-            "prompt": "Say the word “water”.",
-            "modelAnswer": "water",
-            "audio": "tts:en-GB:water",
+            "prompt": "Say the sentence. Use the model to help you: “I drink water.”",
+            "modelAnswer": "I drink water.",
+            "audio": "tts:en-GB:I drink water.",
             "evaluation": {
               "type": "transcription_feedback",
               "transcriptionSeparateFromPronunciation": true
@@ -971,9 +972,9 @@
           {
             "itemId": "english-pre-a1-m100-speaking-ex01-i08",
             "position": 8,
-            "prompt": "Say the word “book”.",
-            "modelAnswer": "book",
-            "audio": "tts:en-GB:book",
+            "prompt": "Say the sentence. Use the model to help you: “I read a book.”",
+            "modelAnswer": "I read a book.",
+            "audio": "tts:en-GB:I read a book.",
             "evaluation": {
               "type": "transcription_feedback",
               "transcriptionSeparateFromPronunciation": true
@@ -982,9 +983,9 @@
           {
             "itemId": "english-pre-a1-m100-speaking-ex01-i09",
             "position": 9,
-            "prompt": "Say the word “happy”.",
-            "modelAnswer": "happy",
-            "audio": "tts:en-GB:happy",
+            "prompt": "Say the sentence. Use the model to help you: “I am happy.”",
+            "modelAnswer": "I am happy.",
+            "audio": "tts:en-GB:I am happy.",
             "evaluation": {
               "type": "transcription_feedback",
               "transcriptionSeparateFromPronunciation": true
@@ -993,9 +994,9 @@
           {
             "itemId": "english-pre-a1-m100-speaking-ex01-i10",
             "position": 10,
-            "prompt": "Say the word “thank you”.",
-            "modelAnswer": "thank you",
-            "audio": "tts:en-GB:thank you",
+            "prompt": "Say the sentence. Use the model to help you: “Thank you!”",
+            "modelAnswer": "Thank you!",
+            "audio": "tts:en-GB:Thank you!",
             "evaluation": {
               "type": "transcription_feedback",
               "transcriptionSeparateFromPronunciation": true
@@ -1012,9 +1013,9 @@
         "exerciseId": "english-pre-a1-m100-listening-ex01",
         "type": "listening_gap_fill",
         "content": {
-          "audio": "tts:en-GB:Listen and complete. This is the hello. This is the family. This is the house. This is the food. This is the school. This is the friend. This is the water. This is the book. This is the happy. This is the thank you.",
+          "audio": "tts:en-GB:Listen and complete. hello! My name is Alex. This is my family. I live in a house. We eat food together. I go to school every day. Sam is my friend. We drink water at lunch. I read a book. I am happy at school. I say, “thank you!”",
           "audioLocale": "en-GB",
-          "transcriptTemplate": "Listen and complete. This is the [[gap-01]]. This is the [[gap-02]]. This is the [[gap-03]]. This is the [[gap-04]]. This is the [[gap-05]]. This is the [[gap-06]]. This is the [[gap-07]]. This is the [[gap-08]]. This is the [[gap-09]]. This is the [[gap-10]].",
+          "transcriptTemplate": "Listen and complete. [[gap-01]]! My name is Alex. This is my [[gap-02]]. I live in a [[gap-03]]. We eat [[gap-04]] together. I go to [[gap-05]] every day. Sam is my [[gap-06]]. We drink [[gap-07]] at lunch. I read a [[gap-08]]. I am [[gap-09]] at school. I say, “[[gap-10]]!”",
           "wordBank": [
             {
               "wordId": "english-pre-a1-m100-listening-word-01",
