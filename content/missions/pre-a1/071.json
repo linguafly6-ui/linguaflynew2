@@ -99,28 +99,29 @@
           }
         ],
         "theory": {
-          "title": "Frases y vocabulario de la misión",
-          "explanation": "Observa el orden de las palabras en las frases y relaciona cada expresión con su significado en español.",
+          "title": "En la estación de tren",
+          "explanation": "Usa «The train is…» para describir dónde está el tren y «The train arrives/departs…» para hablar de horarios.",
           "patterns": [
             {
               "label": "Modelo",
-              "pattern": "Where is the train?",
+              "pattern": "The train is at platform 2.",
               "examples": [
-                "Where is the train?",
-                "Where is the platform?",
-                "Where is the ticket?"
+                "The train is at platform 2.",
+                "The arrival time is nine fifteen.",
+                "The departure time is nine thirty."
               ]
             },
             {
-              "label": "Traducción",
-              "pattern": "English sentence → significado en español",
+              "label": "Uso",
+              "pattern": "Lee la frase y usa el modelo para hablar de una situación parecida.",
               "examples": [
-                "Where is the train station?",
-                "Where is the passenger?"
+                "The train is at platform 2.",
+                "The arrival time is nine fifteen.",
+                "The departure time is nine thirty."
               ]
             }
           ],
-          "tip": "Lee la frase completa antes de elegir la traducción."
+          "tip": "Lee la frase completa, escucha el modelo y repítelo en voz alta."
         }
       }
     },
@@ -426,131 +427,131 @@
           {
             "itemId": "english-pre-a1-m071-grammar-ex01-i01",
             "position": 1,
-            "prompt": "Elige la traducción correcta: “Where is the train?”",
+            "prompt": "Choose the correct sentence.",
             "evaluation": {
               "type": "single_choice"
             },
             "options": [
-              "¿Dónde está el tren?",
-              "¿Dónde está el andén?",
-              "¿Dónde está el billete?"
+              "The train is at the station.",
+              "The train are at station.",
+              "The train at is the station."
             ]
           },
           {
             "itemId": "english-pre-a1-m071-grammar-ex01-i02",
             "position": 2,
-            "prompt": "Elige la traducción correcta: “Where is the platform?”",
+            "prompt": "Complete: The passenger ___ a ticket.",
             "evaluation": {
               "type": "single_choice"
             },
             "options": [
-              "¿Dónde está el andén?",
-              "¿Dónde está el billete?",
-              "¿Dónde está la estación?"
+              "has",
+              "have",
+              "is"
             ]
           },
           {
             "itemId": "english-pre-a1-m071-grammar-ex01-i03",
             "position": 3,
-            "prompt": "Elige la traducción correcta: “Where is the ticket?”",
+            "prompt": "Choose the correct phrase.",
             "evaluation": {
               "type": "single_choice"
             },
             "options": [
-              "¿Dónde está el billete?",
-              "¿Dónde está la estación?",
-              "¿Dónde está el pasajero?"
+              "a train ticket",
+              "a ticket train",
+              "train a ticket"
             ]
           },
           {
             "itemId": "english-pre-a1-m071-grammar-ex01-i04",
             "position": 4,
-            "prompt": "Elige la traducción correcta: “Where is the train station?”",
+            "prompt": "Complete: The train is ___ platform 2.",
             "evaluation": {
               "type": "single_choice"
             },
             "options": [
-              "¿Dónde está la estación?",
-              "¿Dónde está el pasajero?",
-              "¿Dónde está la maleta?"
+              "at",
+              "in",
+              "under"
             ]
           },
           {
             "itemId": "english-pre-a1-m071-grammar-ex01-i05",
             "position": 5,
-            "prompt": "Elige la traducción correcta: “Where is the passenger?”",
+            "prompt": "What does “arrival” mean?",
             "evaluation": {
               "type": "single_choice"
             },
             "options": [
-              "¿Dónde está el pasajero?",
-              "¿Dónde está la maleta?",
-              "¿Dónde está el reloj?"
+              "llegada",
+              "salida",
+              "asiento"
             ]
           },
           {
             "itemId": "english-pre-a1-m071-grammar-ex01-i06",
             "position": 6,
-            "prompt": "Elige la traducción correcta: “Where is the suitcase?”",
+            "prompt": "What does “departure” mean?",
             "evaluation": {
               "type": "single_choice"
             },
             "options": [
-              "¿Dónde está la maleta?",
-              "¿Dónde está el reloj?",
-              "¿Dónde está la llegada?"
+              "salida",
+              "llegada",
+              "reloj"
             ]
           },
           {
             "itemId": "english-pre-a1-m071-grammar-ex01-i07",
             "position": 7,
-            "prompt": "Elige la traducción correcta: “Where is the clock?”",
+            "prompt": "Choose the correct sentence about the station clock.",
             "evaluation": {
               "type": "single_choice"
             },
             "options": [
-              "¿Dónde está el reloj?",
-              "¿Dónde está la llegada?",
-              "¿Dónde está la salida?"
+              "The clock is on the wall.",
+              "The clock are on the wall.",
+              "The clock on is wall."
             ]
           },
           {
             "itemId": "english-pre-a1-m071-grammar-ex01-i08",
             "position": 8,
-            "prompt": "Elige la traducción correcta: “Where is the arrival?”",
+            "prompt": "Complete: I have a ___.",
             "evaluation": {
               "type": "single_choice"
             },
             "options": [
-              "¿Dónde está la llegada?",
-              "¿Dónde está la salida?",
-              "¿Dónde está el asiento?"
+              "suitcase",
+              "arrive",
+              "departure"
             ]
           },
           {
             "itemId": "english-pre-a1-m071-grammar-ex01-i09",
             "position": 9,
-            "prompt": "Elige la traducción correcta: “Where is the departure?”",
+            "prompt": "Which phrase names the place where trains stop?",
             "evaluation": {
               "type": "single_choice"
             },
             "options": [
-              "¿Dónde está la salida?",
-              "¿Dónde está el asiento?",
-              "¿Dónde está el tren?"
+              "a train station",
+              "a station train",
+              "train a station"
             ]
           },
           {
             "itemId": "english-pre-a1-m071-grammar-ex01-i10",
             "position": 10,
-            "prompt": "Elige la traducción correcta: “Where is the seat?”",
+            "prompt": "Where do passengers sit?",
             "evaluation": {
               "type": "single_choice"
             },
             "options": [
-              "¿Dónde está el asiento?",
-              "¿Dónde está el tren?",
-              "¿Dónde está el andén?"
+              "On a seat",
+              "In a suitcase",
+              "On a ticket"
             ]
           }
         ]
@@ -656,137 +657,137 @@
         "type": "reading_comprehension",
         "content": {
           "passageId": "english-pre-a1-m071-reading-passage-01",
-          "passage": "I like the train. I like the platform. I like the ticket. I like the train station. I like the passenger. I like the suitcase. I like the clock. I like the arrival. I like the departure. I like the seat."
+          "passage": "Ben is at the train station with his suitcase. He has a ticket. He waits on platform 2. The clock says nine o'clock. The train arrives at nine fifteen. Its departure time is nine thirty. Ben is a passenger. He sits in his seat and reads a book."
         },
         "items": [
           {
             "itemId": "english-pre-a1-m071-reading-ex01-i01",
             "position": 1,
-            "prompt": "¿Qué significa “I like the train.”?",
+            "prompt": "Where is Ben?",
             "evaluation": {
               "type": "single_choice"
             },
             "options": [
-              "Me gusta el tren.",
-              "Me gusta el andén.",
-              "Me gusta el billete."
+              "At the train station",
+              "At the swimming pool",
+              "At the market"
             ]
           },
           {
             "itemId": "english-pre-a1-m071-reading-ex01-i02",
             "position": 2,
-            "prompt": "¿Qué significa “I like the platform.”?",
+            "prompt": "What does Ben have?",
             "evaluation": {
               "type": "single_choice"
             },
             "options": [
-              "Me gusta el andén.",
-              "Me gusta el billete.",
-              "Me gusta la estación."
+              "A ticket",
+              "A swimsuit",
+              "A basket"
             ]
           },
           {
             "itemId": "english-pre-a1-m071-reading-ex01-i03",
             "position": 3,
-            "prompt": "¿Qué significa “I like the ticket.”?",
+            "prompt": "What is Ben carrying?",
             "evaluation": {
               "type": "single_choice"
             },
             "options": [
-              "Me gusta el billete.",
-              "Me gusta la estación.",
-              "Me gusta el pasajero."
+              "A suitcase",
+              "A ball",
+              "A pillow"
             ]
           },
           {
             "itemId": "english-pre-a1-m071-reading-ex01-i04",
             "position": 4,
-            "prompt": "¿Qué significa “I like the train station.”?",
+            "prompt": "Where does Ben wait?",
             "evaluation": {
               "type": "single_choice"
             },
             "options": [
-              "Me gusta la estación.",
-              "Me gusta el pasajero.",
-              "Me gusta la maleta."
+              "On platform 2",
+              "In the shop",
+              "On the train roof"
             ]
           },
           {
             "itemId": "english-pre-a1-m071-reading-ex01-i05",
             "position": 5,
-            "prompt": "¿Qué significa “I like the passenger.”?",
+            "prompt": "What time does the clock show?",
             "evaluation": {
               "type": "single_choice"
             },
             "options": [
-              "Me gusta el pasajero.",
-              "Me gusta la maleta.",
-              "Me gusta el reloj."
+              "Nine o'clock",
+              "Ten o'clock",
+              "Eight o'clock"
             ]
           },
           {
             "itemId": "english-pre-a1-m071-reading-ex01-i06",
             "position": 6,
-            "prompt": "¿Qué significa “I like the suitcase.”?",
+            "prompt": "When does the train arrive?",
             "evaluation": {
               "type": "single_choice"
             },
             "options": [
-              "Me gusta la maleta.",
-              "Me gusta el reloj.",
-              "Me gusta la llegada."
+              "At nine fifteen",
+              "At nine thirty",
+              "At ten o'clock"
             ]
           },
           {
             "itemId": "english-pre-a1-m071-reading-ex01-i07",
             "position": 7,
-            "prompt": "¿Qué significa “I like the clock.”?",
+            "prompt": "When does the train depart?",
             "evaluation": {
               "type": "single_choice"
             },
             "options": [
-              "Me gusta el reloj.",
-              "Me gusta la llegada.",
-              "Me gusta la salida."
+              "At nine thirty",
+              "At nine fifteen",
+              "At eight o'clock"
             ]
           },
           {
             "itemId": "english-pre-a1-m071-reading-ex01-i08",
             "position": 8,
-            "prompt": "¿Qué significa “I like the arrival.”?",
+            "prompt": "What is Ben?",
             "evaluation": {
               "type": "single_choice"
             },
             "options": [
-              "Me gusta la llegada.",
-              "Me gusta la salida.",
-              "Me gusta el asiento."
+              "A passenger",
+              "A seller",
+              "A lifeguard"
             ]
           },
           {
             "itemId": "english-pre-a1-m071-reading-ex01-i09",
             "position": 9,
-            "prompt": "¿Qué significa “I like the departure.”?",
+            "prompt": "Where does Ben sit?",
             "evaluation": {
               "type": "single_choice"
             },
             "options": [
-              "Me gusta la salida.",
-              "Me gusta el asiento.",
-              "Me gusta el tren."
+              "On a seat",
+              "On a suitcase",
+              "On a ticket"
             ]
           },
           {
             "itemId": "english-pre-a1-m071-reading-ex01-i10",
             "position": 10,
-            "prompt": "¿Qué significa “I like the seat.”?",
+            "prompt": "What is the text about?",
             "evaluation": {
               "type": "single_choice"
             },
             "options": [
-              "Me gusta el asiento.",
-              "Me gusta el tren.",
-              "Me gusta el andén."
+              "A train journey",
+              "A day at the beach",
+              "A birthday party"
             ]
           }
         ]
@@ -894,8 +895,8 @@
           {
             "itemId": "english-pre-a1-m071-speaking-ex01-i01",
             "position": 1,
-            "prompt": "Say the word “train”.",
-            "modelAnswer": "train",
+            "prompt": "Say a short sentence about “train”. Use the model if you need help.",
+            "modelAnswer": "The train is at platform 2.",
             "audio": "tts:en-GB:train",
             "evaluation": {
               "type": "transcription_feedback",
@@ -905,8 +906,8 @@
           {
             "itemId": "english-pre-a1-m071-speaking-ex01-i02",
             "position": 2,
-            "prompt": "Say the word “platform”.",
-            "modelAnswer": "platform",
+            "prompt": "Say a short sentence about “platform”. Use the model if you need help.",
+            "modelAnswer": "The platform is busy.",
             "audio": "tts:en-GB:platform",
             "evaluation": {
               "type": "transcription_feedback",
@@ -916,8 +917,8 @@
           {
             "itemId": "english-pre-a1-m071-speaking-ex01-i03",
             "position": 3,
-            "prompt": "Say the word “ticket”.",
-            "modelAnswer": "ticket",
+            "prompt": "Say a short sentence about “ticket”. Use the model if you need help.",
+            "modelAnswer": "I have a ticket.",
             "audio": "tts:en-GB:ticket",
             "evaluation": {
               "type": "transcription_feedback",
@@ -927,8 +928,8 @@
           {
             "itemId": "english-pre-a1-m071-speaking-ex01-i04",
             "position": 4,
-            "prompt": "Say the word “train station”.",
-            "modelAnswer": "train station",
+            "prompt": "Say a short sentence about “train station”. Use the model if you need help.",
+            "modelAnswer": "The train station is busy.",
             "audio": "tts:en-GB:train station",
             "evaluation": {
               "type": "transcription_feedback",
@@ -938,8 +939,8 @@
           {
             "itemId": "english-pre-a1-m071-speaking-ex01-i05",
             "position": 5,
-            "prompt": "Say the word “passenger”.",
-            "modelAnswer": "passenger",
+            "prompt": "Say a short sentence about “passenger”. Use the model if you need help.",
+            "modelAnswer": "The passenger is here.",
             "audio": "tts:en-GB:passenger",
             "evaluation": {
               "type": "transcription_feedback",
@@ -949,8 +950,8 @@
           {
             "itemId": "english-pre-a1-m071-speaking-ex01-i06",
             "position": 6,
-            "prompt": "Say the word “suitcase”.",
-            "modelAnswer": "suitcase",
+            "prompt": "Say a short sentence about “suitcase”. Use the model if you need help.",
+            "modelAnswer": "My suitcase is heavy.",
             "audio": "tts:en-GB:suitcase",
             "evaluation": {
               "type": "transcription_feedback",
@@ -960,8 +961,8 @@
           {
             "itemId": "english-pre-a1-m071-speaking-ex01-i07",
             "position": 7,
-            "prompt": "Say the word “clock”.",
-            "modelAnswer": "clock",
+            "prompt": "Say a short sentence about “clock”. Use the model if you need help.",
+            "modelAnswer": "The clock says nine.",
             "audio": "tts:en-GB:clock",
             "evaluation": {
               "type": "transcription_feedback",
@@ -971,8 +972,8 @@
           {
             "itemId": "english-pre-a1-m071-speaking-ex01-i08",
             "position": 8,
-            "prompt": "Say the word “arrival”.",
-            "modelAnswer": "arrival",
+            "prompt": "Say a short sentence about “arrival”. Use the model if you need help.",
+            "modelAnswer": "The arrival time is nine fifteen.",
             "audio": "tts:en-GB:arrival",
             "evaluation": {
               "type": "transcription_feedback",
@@ -982,8 +983,8 @@
           {
             "itemId": "english-pre-a1-m071-speaking-ex01-i09",
             "position": 9,
-            "prompt": "Say the word “departure”.",
-            "modelAnswer": "departure",
+            "prompt": "Say a short sentence about “departure”. Use the model if you need help.",
+            "modelAnswer": "The departure time is nine thirty.",
             "audio": "tts:en-GB:departure",
             "evaluation": {
               "type": "transcription_feedback",
@@ -993,8 +994,8 @@
           {
             "itemId": "english-pre-a1-m071-speaking-ex01-i10",
             "position": 10,
-            "prompt": "Say the word “seat”.",
-            "modelAnswer": "seat",
+            "prompt": "Say a short sentence about “seat”. Use the model if you need help.",
+            "modelAnswer": "I sit in my seat.",
             "audio": "tts:en-GB:seat",
             "evaluation": {
               "type": "transcription_feedback",
@@ -1012,9 +1013,9 @@
         "exerciseId": "english-pre-a1-m071-listening-ex01",
         "type": "listening_gap_fill",
         "content": {
-          "audio": "tts:en-GB:Listen and complete. This is the train. This is the platform. This is the ticket. This is the train station. This is the passenger. This is the suitcase. This is the clock. This is the arrival. This is the departure. This is the seat.",
+          "audio": "tts:en-GB:Ben is at the train station. He is a passenger with a suitcase. He has a ticket. The clock says nine o'clock. The train is at platform 2. The arrival time is nine fifteen. The departure time is nine thirty. Ben sits in his seat.",
           "audioLocale": "en-GB",
-          "transcriptTemplate": "Listen and complete. This is the [[gap-01]]. This is the [[gap-02]]. This is the [[gap-03]]. This is the [[gap-04]] station. This is the [[gap-05]]. This is the [[gap-06]]. This is the [[gap-07]]. This is the [[gap-08]]. This is the [[gap-09]]. This is the [[gap-10]].",
+          "transcriptTemplate": "Ben is at the [[gap-04]] station. He is a [[gap-05]] with a [[gap-06]]. He has a [[gap-03]]. The [[gap-07]] says nine o'clock. The [[gap-01]] is at [[gap-02]] 2. The [[gap-08]] time is nine fifteen. The [[gap-09]] time is nine thirty. Ben sits in his [[gap-10]].",
           "wordBank": [
             {
               "wordId": "english-pre-a1-m071-listening-word-01",
@@ -1063,62 +1064,52 @@
           {
             "itemId": "english-pre-a1-m071-listening-ex01-i01",
             "position": 1,
-            "gapToken": "[[gap-01]]",
-            "expectedWordId": "english-pre-a1-m071-listening-word-01"
+            "gapToken": "[[gap-01]]"
           },
           {
             "itemId": "english-pre-a1-m071-listening-ex01-i02",
             "position": 2,
-            "gapToken": "[[gap-02]]",
-            "expectedWordId": "english-pre-a1-m071-listening-word-02"
+            "gapToken": "[[gap-02]]"
           },
           {
             "itemId": "english-pre-a1-m071-listening-ex01-i03",
             "position": 3,
-            "gapToken": "[[gap-03]]",
-            "expectedWordId": "english-pre-a1-m071-listening-word-03"
+            "gapToken": "[[gap-03]]"
           },
           {
             "itemId": "english-pre-a1-m071-listening-ex01-i04",
             "position": 4,
-            "gapToken": "[[gap-04]]",
-            "expectedWordId": "english-pre-a1-m071-listening-word-04"
+            "gapToken": "[[gap-04]]"
           },
           {
             "itemId": "english-pre-a1-m071-listening-ex01-i05",
             "position": 5,
-            "gapToken": "[[gap-05]]",
-            "expectedWordId": "english-pre-a1-m071-listening-word-05"
+            "gapToken": "[[gap-05]]"
           },
           {
             "itemId": "english-pre-a1-m071-listening-ex01-i06",
             "position": 6,
-            "gapToken": "[[gap-06]]",
-            "expectedWordId": "english-pre-a1-m071-listening-word-06"
+            "gapToken": "[[gap-06]]"
           },
           {
             "itemId": "english-pre-a1-m071-listening-ex01-i07",
             "position": 7,
-            "gapToken": "[[gap-07]]",
-            "expectedWordId": "english-pre-a1-m071-listening-word-07"
+            "gapToken": "[[gap-07]]"
           },
           {
             "itemId": "english-pre-a1-m071-listening-ex01-i08",
             "position": 8,
-            "gapToken": "[[gap-08]]",
-            "expectedWordId": "english-pre-a1-m071-listening-word-08"
+            "gapToken": "[[gap-08]]"
           },
           {
             "itemId": "english-pre-a1-m071-listening-ex01-i09",
             "position": 9,
-            "gapToken": "[[gap-09]]",
-            "expectedWordId": "english-pre-a1-m071-listening-word-09"
+            "gapToken": "[[gap-09]]"
           },
           {
             "itemId": "english-pre-a1-m071-listening-ex01-i10",
             "position": 10,
-            "gapToken": "[[gap-10]]",
-            "expectedWordId": "english-pre-a1-m071-listening-word-10"
+            "gapToken": "[[gap-10]]"
           }
         ]
       }

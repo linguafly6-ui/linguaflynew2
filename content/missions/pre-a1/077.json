@@ -99,28 +99,29 @@
           }
         ],
         "theory": {
-          "title": "Frases y vocabulario de la misión",
-          "explanation": "Observa el orden de las palabras en las frases y relaciona cada expresión con su significado en español.",
+          "title": "En el cine",
+          "explanation": "Usa «We go to the cinema» y «We watch a film» para hablar de una salida al cine.",
           "patterns": [
             {
               "label": "Modelo",
-              "pattern": "Where is the cinema?",
+              "pattern": "We go to the cinema.",
               "examples": [
-                "Where is the cinema?",
-                "Where is the film?",
-                "Where is the ticket?"
+                "We go to the cinema.",
+                "We watch a film.",
+                "We eat popcorn."
               ]
             },
             {
-              "label": "Traducción",
-              "pattern": "English sentence → significado en español",
+              "label": "Uso",
+              "pattern": "Lee la frase y usa el modelo para hablar de una situación parecida.",
               "examples": [
-                "Where is the screen?",
-                "Where is the seat?"
+                "We go to the cinema.",
+                "We watch a film.",
+                "We eat popcorn."
               ]
             }
           ],
-          "tip": "Lee la frase completa antes de elegir la traducción."
+          "tip": "Lee la frase completa, escucha el modelo y repítelo en voz alta."
         }
       }
     },
@@ -426,131 +427,131 @@
           {
             "itemId": "english-pre-a1-m077-grammar-ex01-i01",
             "position": 1,
-            "prompt": "Elige la traducción correcta: “Where is the cinema?”",
+            "prompt": "Where do you go to watch a film?",
             "evaluation": {
               "type": "single_choice"
             },
             "options": [
-              "¿Dónde está el cine?",
-              "¿Dónde está la película?",
-              "¿Dónde está la entrada?"
+              "To the cinema",
+              "To the market",
+              "To the station"
             ]
           },
           {
             "itemId": "english-pre-a1-m077-grammar-ex01-i02",
             "position": 2,
-            "prompt": "Elige la traducción correcta: “Where is the film?”",
+            "prompt": "What do you watch at the cinema?",
             "evaluation": {
               "type": "single_choice"
             },
             "options": [
-              "¿Dónde está la película?",
-              "¿Dónde está la entrada?",
-              "¿Dónde está la pantalla?"
+              "A film",
+              "A ticket",
+              "A seat"
             ]
           },
           {
             "itemId": "english-pre-a1-m077-grammar-ex01-i03",
             "position": 3,
-            "prompt": "Elige la traducción correcta: “Where is the ticket?”",
+            "prompt": "What do you show at the entrance?",
             "evaluation": {
               "type": "single_choice"
             },
             "options": [
-              "¿Dónde está la entrada?",
-              "¿Dónde está la pantalla?",
-              "¿Dónde está el asiento?"
+              "A ticket",
+              "A screen",
+              "Popcorn"
             ]
           },
           {
             "itemId": "english-pre-a1-m077-grammar-ex01-i04",
             "position": 4,
-            "prompt": "Elige la traducción correcta: “Where is the screen?”",
+            "prompt": "Where do you see the film?",
             "evaluation": {
               "type": "single_choice"
             },
             "options": [
-              "¿Dónde está la pantalla?",
-              "¿Dónde está el asiento?",
-              "¿Dónde está las palomitas?"
+              "On the screen",
+              "On the seat",
+              "In the ticket"
             ]
           },
           {
             "itemId": "english-pre-a1-m077-grammar-ex01-i05",
             "position": 5,
-            "prompt": "Elige la traducción correcta: “Where is the seat?”",
+            "prompt": "Where do you sit?",
             "evaluation": {
               "type": "single_choice"
             },
             "options": [
-              "¿Dónde está el asiento?",
-              "¿Dónde está las palomitas?",
-              "¿Dónde está el actor?"
+              "In a seat",
+              "On the screen",
+              "In the film"
             ]
           },
           {
             "itemId": "english-pre-a1-m077-grammar-ex01-i06",
             "position": 6,
-            "prompt": "Elige la traducción correcta: “Where is the popcorn?”",
+            "prompt": "What snack can you eat?",
             "evaluation": {
               "type": "single_choice"
             },
             "options": [
-              "¿Dónde está las palomitas?",
-              "¿Dónde está el actor?",
-              "¿Dónde está la actriz?"
+              "Popcorn",
+              "A ticket",
+              "A screen"
             ]
           },
           {
             "itemId": "english-pre-a1-m077-grammar-ex01-i07",
             "position": 7,
-            "prompt": "Elige la traducción correcta: “Where is the actor?”",
+            "prompt": "Who acts in a film?",
             "evaluation": {
               "type": "single_choice"
             },
             "options": [
-              "¿Dónde está el actor?",
-              "¿Dónde está la actriz?",
-              "¿Dónde está la música?"
+              "An actor",
+              "A passenger",
+              "A seller"
             ]
           },
           {
             "itemId": "english-pre-a1-m077-grammar-ex01-i08",
             "position": 8,
-            "prompt": "Elige la traducción correcta: “Where is the actress?”",
+            "prompt": "Who is a female actor?",
             "evaluation": {
               "type": "single_choice"
             },
             "options": [
-              "¿Dónde está la actriz?",
-              "¿Dónde está la música?",
-              "¿Dónde está la historia?"
+              "An actress",
+              "A trainer",
+              "A customer"
             ]
           },
           {
             "itemId": "english-pre-a1-m077-grammar-ex01-i09",
             "position": 9,
-            "prompt": "Elige la traducción correcta: “Where is the music?”",
+            "prompt": "What can you hear in a film?",
             "evaluation": {
               "type": "single_choice"
             },
             "options": [
-              "¿Dónde está la música?",
-              "¿Dónde está la historia?",
-              "¿Dónde está el cine?"
+              "Music",
+              "A seat",
+              "A ticket"
             ]
           },
           {
             "itemId": "english-pre-a1-m077-grammar-ex01-i10",
             "position": 10,
-            "prompt": "Elige la traducción correcta: “Where is the story?”",
+            "prompt": "What tells the events in a film?",
             "evaluation": {
               "type": "single_choice"
             },
             "options": [
-              "¿Dónde está la historia?",
-              "¿Dónde está el cine?",
-              "¿Dónde está la película?"
+              "The story",
+              "The screen",
+              "The popcorn"
             ]
           }
         ]
@@ -656,137 +657,137 @@
         "type": "reading_comprehension",
         "content": {
           "passageId": "english-pre-a1-m077-reading-passage-01",
-          "passage": "I like the cinema. I like the film. I like the ticket. I like the screen. I like the seat. I like the popcorn. I like the actor. I like the actress. I like the music. I like the story."
+          "passage": "We go to the cinema on Saturday. We buy a ticket and find our seats. The film starts. We look at the screen. There is music in the film. The actor is funny and the actress is kind. We eat popcorn and enjoy the story."
         },
         "items": [
           {
             "itemId": "english-pre-a1-m077-reading-ex01-i01",
             "position": 1,
-            "prompt": "¿Qué significa “I like the cinema.”?",
+            "prompt": "Where do they go?",
             "evaluation": {
               "type": "single_choice"
             },
             "options": [
-              "Me gusta el cine.",
-              "Me gusta la película.",
-              "Me gusta la entrada."
+              "To the cinema",
+              "To the market",
+              "To the swimming pool"
             ]
           },
           {
             "itemId": "english-pre-a1-m077-reading-ex01-i02",
             "position": 2,
-            "prompt": "¿Qué significa “I like the film.”?",
+            "prompt": "When do they go?",
             "evaluation": {
               "type": "single_choice"
             },
             "options": [
-              "Me gusta la película.",
-              "Me gusta la entrada.",
-              "Me gusta la pantalla."
+              "On Saturday",
+              "On Monday",
+              "On Friday"
             ]
           },
           {
             "itemId": "english-pre-a1-m077-reading-ex01-i03",
             "position": 3,
-            "prompt": "¿Qué significa “I like the ticket.”?",
+            "prompt": "What do they buy?",
             "evaluation": {
               "type": "single_choice"
             },
             "options": [
-              "Me gusta la entrada.",
-              "Me gusta la pantalla.",
-              "Me gusta el asiento."
+              "A ticket",
+              "A towel",
+              "A ball"
             ]
           },
           {
             "itemId": "english-pre-a1-m077-reading-ex01-i04",
             "position": 4,
-            "prompt": "¿Qué significa “I like the screen.”?",
+            "prompt": "Where do they look?",
             "evaluation": {
               "type": "single_choice"
             },
             "options": [
-              "Me gusta la pantalla.",
-              "Me gusta el asiento.",
-              "Me gusta las palomitas."
+              "At the screen",
+              "At the floor",
+              "At the door"
             ]
           },
           {
             "itemId": "english-pre-a1-m077-reading-ex01-i05",
             "position": 5,
-            "prompt": "¿Qué significa “I like the seat.”?",
+            "prompt": "What is in the film?",
             "evaluation": {
               "type": "single_choice"
             },
             "options": [
-              "Me gusta el asiento.",
-              "Me gusta las palomitas.",
-              "Me gusta el actor."
+              "Music",
+              "A train",
+              "A shower"
             ]
           },
           {
             "itemId": "english-pre-a1-m077-reading-ex01-i06",
             "position": 6,
-            "prompt": "¿Qué significa “I like the popcorn.”?",
+            "prompt": "How is the actor?",
             "evaluation": {
               "type": "single_choice"
             },
             "options": [
-              "Me gusta las palomitas.",
-              "Me gusta el actor.",
-              "Me gusta la actriz."
+              "Funny",
+              "Sad",
+              "Tired"
             ]
           },
           {
             "itemId": "english-pre-a1-m077-reading-ex01-i07",
             "position": 7,
-            "prompt": "¿Qué significa “I like the actor.”?",
+            "prompt": "How is the actress?",
             "evaluation": {
               "type": "single_choice"
             },
             "options": [
-              "Me gusta el actor.",
-              "Me gusta la actriz.",
-              "Me gusta la música."
+              "Kind",
+              "Angry",
+              "Hungry"
             ]
           },
           {
             "itemId": "english-pre-a1-m077-reading-ex01-i08",
             "position": 8,
-            "prompt": "¿Qué significa “I like the actress.”?",
+            "prompt": "What do they eat?",
             "evaluation": {
               "type": "single_choice"
             },
             "options": [
-              "Me gusta la actriz.",
-              "Me gusta la música.",
-              "Me gusta la historia."
+              "Popcorn",
+              "A sandwich",
+              "An apple"
             ]
           },
           {
             "itemId": "english-pre-a1-m077-reading-ex01-i09",
             "position": 9,
-            "prompt": "¿Qué significa “I like the music.”?",
+            "prompt": "What do they enjoy?",
             "evaluation": {
               "type": "single_choice"
             },
             "options": [
-              "Me gusta la música.",
-              "Me gusta la historia.",
-              "Me gusta el cine."
+              "The story",
+              "The ticket",
+              "The seat"
             ]
           },
           {
             "itemId": "english-pre-a1-m077-reading-ex01-i10",
             "position": 10,
-            "prompt": "¿Qué significa “I like the story.”?",
+            "prompt": "What is the text about?",
             "evaluation": {
               "type": "single_choice"
             },
             "options": [
-              "Me gusta la historia.",
-              "Me gusta el cine.",
-              "Me gusta la película."
+              "A visit to the cinema",
+              "A visit to the doctor",
+              "A trip to the beach"
             ]
           }
         ]
@@ -894,8 +895,8 @@
           {
             "itemId": "english-pre-a1-m077-speaking-ex01-i01",
             "position": 1,
-            "prompt": "Say the word “cinema”.",
-            "modelAnswer": "cinema",
+            "prompt": "Say a short sentence about “cinema”. Use the model if you need help.",
+            "modelAnswer": "We go to the cinema.",
             "audio": "tts:en-GB:cinema",
             "evaluation": {
               "type": "transcription_feedback",
@@ -905,8 +906,8 @@
           {
             "itemId": "english-pre-a1-m077-speaking-ex01-i02",
             "position": 2,
-            "prompt": "Say the word “film”.",
-            "modelAnswer": "film",
+            "prompt": "Say a short sentence about “film”. Use the model if you need help.",
+            "modelAnswer": "The film is funny.",
             "audio": "tts:en-GB:film",
             "evaluation": {
               "type": "transcription_feedback",
@@ -916,8 +917,8 @@
           {
             "itemId": "english-pre-a1-m077-speaking-ex01-i03",
             "position": 3,
-            "prompt": "Say the word “ticket”.",
-            "modelAnswer": "ticket",
+            "prompt": "Say a short sentence about “ticket”. Use the model if you need help.",
+            "modelAnswer": "I have a ticket.",
             "audio": "tts:en-GB:ticket",
             "evaluation": {
               "type": "transcription_feedback",
@@ -927,8 +928,8 @@
           {
             "itemId": "english-pre-a1-m077-speaking-ex01-i04",
             "position": 4,
-            "prompt": "Say the word “screen”.",
-            "modelAnswer": "screen",
+            "prompt": "Say a short sentence about “screen”. Use the model if you need help.",
+            "modelAnswer": "The screen is big.",
             "audio": "tts:en-GB:screen",
             "evaluation": {
               "type": "transcription_feedback",
@@ -938,8 +939,8 @@
           {
             "itemId": "english-pre-a1-m077-speaking-ex01-i05",
             "position": 5,
-            "prompt": "Say the word “seat”.",
-            "modelAnswer": "seat",
+            "prompt": "Say a short sentence about “seat”. Use the model if you need help.",
+            "modelAnswer": "I sit in my seat.",
             "audio": "tts:en-GB:seat",
             "evaluation": {
               "type": "transcription_feedback",
@@ -949,8 +950,8 @@
           {
             "itemId": "english-pre-a1-m077-speaking-ex01-i06",
             "position": 6,
-            "prompt": "Say the word “popcorn”.",
-            "modelAnswer": "popcorn",
+            "prompt": "Say a short sentence about “popcorn”. Use the model if you need help.",
+            "modelAnswer": "I eat popcorn.",
             "audio": "tts:en-GB:popcorn",
             "evaluation": {
               "type": "transcription_feedback",
@@ -960,8 +961,8 @@
           {
             "itemId": "english-pre-a1-m077-speaking-ex01-i07",
             "position": 7,
-            "prompt": "Say the word “actor”.",
-            "modelAnswer": "actor",
+            "prompt": "Say a short sentence about “actor”. Use the model if you need help.",
+            "modelAnswer": "The actor is funny.",
             "audio": "tts:en-GB:actor",
             "evaluation": {
               "type": "transcription_feedback",
@@ -971,8 +972,8 @@
           {
             "itemId": "english-pre-a1-m077-speaking-ex01-i08",
             "position": 8,
-            "prompt": "Say the word “actress”.",
-            "modelAnswer": "actress",
+            "prompt": "Say a short sentence about “actress”. Use the model if you need help.",
+            "modelAnswer": "The actress is kind.",
             "audio": "tts:en-GB:actress",
             "evaluation": {
               "type": "transcription_feedback",
@@ -982,8 +983,8 @@
           {
             "itemId": "english-pre-a1-m077-speaking-ex01-i09",
             "position": 9,
-            "prompt": "Say the word “music”.",
-            "modelAnswer": "music",
+            "prompt": "Say a short sentence about “music”. Use the model if you need help.",
+            "modelAnswer": "I hear music.",
             "audio": "tts:en-GB:music",
             "evaluation": {
               "type": "transcription_feedback",
@@ -993,8 +994,8 @@
           {
             "itemId": "english-pre-a1-m077-speaking-ex01-i10",
             "position": 10,
-            "prompt": "Say the word “story”.",
-            "modelAnswer": "story",
+            "prompt": "Say a short sentence about “story”. Use the model if you need help.",
+            "modelAnswer": "I like the story.",
             "audio": "tts:en-GB:story",
             "evaluation": {
               "type": "transcription_feedback",
@@ -1012,9 +1013,9 @@
         "exerciseId": "english-pre-a1-m077-listening-ex01",
         "type": "listening_gap_fill",
         "content": {
-          "audio": "tts:en-GB:Listen and complete. This is the cinema. This is the film. This is the ticket. This is the screen. This is the seat. This is the popcorn. This is the actor. This is the actress. This is the music. This is the story.",
+          "audio": "tts:en-GB:We go to the cinema. We buy a ticket and find our seats. The film starts. We look at the screen. There is music in the film. The actor is funny and the actress is kind. We eat popcorn and enjoy the story.",
           "audioLocale": "en-GB",
-          "transcriptTemplate": "Listen and complete. This is the [[gap-01]]. This is the [[gap-02]]. This is the [[gap-03]]. This is the [[gap-04]]. This is the [[gap-05]]. This is the [[gap-06]]. This is the [[gap-07]]. This is the [[gap-08]]. This is the [[gap-09]]. This is the [[gap-10]].",
+          "transcriptTemplate": "We go to the [[gap-01]]. We buy a [[gap-03]] and find our [[gap-05]]. The [[gap-02]] starts. We look at the [[gap-04]]. There is [[gap-09]] in the film. The [[gap-07]] is funny and the [[gap-08]] is kind. We eat [[gap-06]] and enjoy the [[gap-10]].",
           "wordBank": [
             {
               "wordId": "english-pre-a1-m077-listening-word-01",
@@ -1063,62 +1064,52 @@
           {
             "itemId": "english-pre-a1-m077-listening-ex01-i01",
             "position": 1,
-            "gapToken": "[[gap-01]]",
-            "expectedWordId": "english-pre-a1-m077-listening-word-01"
+            "gapToken": "[[gap-01]]"
           },
           {
             "itemId": "english-pre-a1-m077-listening-ex01-i02",
             "position": 2,
-            "gapToken": "[[gap-02]]",
-            "expectedWordId": "english-pre-a1-m077-listening-word-02"
+            "gapToken": "[[gap-02]]"
           },
           {
             "itemId": "english-pre-a1-m077-listening-ex01-i03",
             "position": 3,
-            "gapToken": "[[gap-03]]",
-            "expectedWordId": "english-pre-a1-m077-listening-word-03"
+            "gapToken": "[[gap-03]]"
           },
           {
             "itemId": "english-pre-a1-m077-listening-ex01-i04",
             "position": 4,
-            "gapToken": "[[gap-04]]",
-            "expectedWordId": "english-pre-a1-m077-listening-word-04"
+            "gapToken": "[[gap-04]]"
           },
           {
             "itemId": "english-pre-a1-m077-listening-ex01-i05",
             "position": 5,
-            "gapToken": "[[gap-05]]",
-            "expectedWordId": "english-pre-a1-m077-listening-word-05"
+            "gapToken": "[[gap-05]]"
           },
           {
             "itemId": "english-pre-a1-m077-listening-ex01-i06",
             "position": 6,
-            "gapToken": "[[gap-06]]",
-            "expectedWordId": "english-pre-a1-m077-listening-word-06"
+            "gapToken": "[[gap-06]]"
           },
           {
             "itemId": "english-pre-a1-m077-listening-ex01-i07",
             "position": 7,
-            "gapToken": "[[gap-07]]",
-            "expectedWordId": "english-pre-a1-m077-listening-word-07"
+            "gapToken": "[[gap-07]]"
           },
           {
             "itemId": "english-pre-a1-m077-listening-ex01-i08",
             "position": 8,
-            "gapToken": "[[gap-08]]",
-            "expectedWordId": "english-pre-a1-m077-listening-word-08"
+            "gapToken": "[[gap-08]]"
           },
           {
             "itemId": "english-pre-a1-m077-listening-ex01-i09",
             "position": 9,
-            "gapToken": "[[gap-09]]",
-            "expectedWordId": "english-pre-a1-m077-listening-word-09"
+            "gapToken": "[[gap-09]]"
           },
           {
             "itemId": "english-pre-a1-m077-listening-ex01-i10",
             "position": 10,
-            "gapToken": "[[gap-10]]",
-            "expectedWordId": "english-pre-a1-m077-listening-word-10"
+            "gapToken": "[[gap-10]]"
           }
         ]
       }
