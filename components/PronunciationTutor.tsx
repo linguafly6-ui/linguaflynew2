@@ -7,7 +7,7 @@ import { useState, useRef, useEffect } from "react";
  * COMPONENTE: Tutor de Pronunciación
  * ============================================================
  * Graba audio del usuario, lo envía a Workers AI Whisper,
- * y muestra puntuación + feedback.
+ * y muestra coincidencia de transcripción + ayudas fonéticas de referencia.
  */
 
 interface Phrase {
@@ -24,7 +24,9 @@ interface AnalysisResult {
   score: number;
   transcription: string;
   feedback: string;
-  phoneticIssues: string[];
+  scoreLabel: string;
+  recognitionIssues: string[];
+  britishTips: Array<{ word: string; ipa: string; cue: string; spanishCue: string; tip: string }>;
 }
 
 export default function PronunciationTutor({ userId = "demo-user" }: { userId?: string }) {
@@ -72,7 +74,7 @@ export default function PronunciationTutor({ userId = "demo-user" }: { userId?: 
     } catch (err) {
       // Fallback: usar Web Speech API del navegador
       const utterance = new SpeechSynthesisUtterance(currentPhrase.phrase);
-      utterance.lang = language === "en" ? "en-US" : language === "fr" ? "fr-FR" : "es-ES";
+      utterance.lang = language === "en" ? "en-GB" : language === "fr" ? "fr-FR" : "es-ES";
       speechSynthesis.speak(utterance);
     }
   };
@@ -222,8 +224,9 @@ export default function PronunciationTutor({ userId = "demo-user" }: { userId?: 
       {result && (
         <div className="space-y-5 rounded-2xl border border-slate-100 bg-white p-6 shadow-lg shadow-slate-200/70 sm:p-8">
           <div className="flex items-center justify-between">
-            <span className="text-lg font-bold text-slate-800">Puntuación</span>
+            <span className="text-lg font-bold text-slate-800">Coincidencia de transcripción</span>
             <span
+              aria-label={result.scoreLabel}
               className={`text-4xl font-black tracking-tight ${
                 result.score >= 75 ? "text-green-600" : result.score >= 50 ? "text-yellow-600" : "text-red-600"
               }`}
@@ -232,7 +235,9 @@ export default function PronunciationTutor({ userId = "demo-user" }: { userId?: 
             </span>
           </div>
 
-          {/* Barra de progreso */}
+          <p className="text-xs text-slate-500">{result.scoreLabel}</p>
+
+          {/* Barra de coincidencia de texto; no representa precisión fonética. */}
           <div className="h-4 w-full overflow-hidden rounded-full bg-gradient-to-r from-red-100 via-yellow-100 to-green-100">
             <div
               className={`h-4 rounded-full bg-gradient-to-r from-red-500 via-yellow-400 to-green-500 transition-all duration-700 ${
@@ -252,14 +257,27 @@ export default function PronunciationTutor({ userId = "demo-user" }: { userId?: 
             <p className="leading-relaxed text-slate-800">{result.feedback}</p>
           </div>
 
-          {result.phoneticIssues.length > 0 && (
+          {result.recognitionIssues.length > 0 && (
             <div>
-              <p className="text-sm font-medium text-slate-500">Problemas detectados:</p>
+              <p className="text-sm font-medium text-slate-500">Diferencias en el reconocimiento:</p>
               <ul className="list-disc list-inside text-slate-700">
-                {result.phoneticIssues.map((issue, i) => (
+                {result.recognitionIssues.map((issue, i) => (
                   <li key={i}>{issue}</li>
                 ))}
               </ul>
+            </div>
+          )}
+          {result.britishTips.length > 0 && (
+            <div className="space-y-3 rounded-xl bg-sky-50 p-4">
+              <p className="font-semibold text-slate-800">Referencia de inglés británico</p>
+              {result.britishTips.map((item) => (
+                <div key={item.word} className="border-b border-sky-100 pb-2 last:border-0">
+                  <p className="font-semibold text-slate-800">{item.word} · {item.ipa}</p>
+                  <p className="text-lg font-bold text-blue-700">{item.spanishCue}</p>
+                  <p className="text-xs text-slate-500">Aproximación para hispanohablantes; no es IPA.</p>
+                  <p className="text-sm text-slate-700">{item.tip}</p>
+                </div>
+              ))}
             </div>
           )}
 
