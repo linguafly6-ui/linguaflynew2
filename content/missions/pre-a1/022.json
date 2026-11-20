@@ -1,0 +1,1125 @@
+{
+  "schemaVersion": "1.2.0",
+  "contentVersion": 1,
+  "course": {
+    "courseId": "english-pre-a1",
+    "level": "PRE-A1",
+    "language": "en-GB"
+  },
+  "unit": {
+    "unitId": "english-pre-a1-unit-22",
+    "courseId": "english-pre-a1",
+    "position": 22,
+    "title": "At the Café"
+  },
+  "mission": {
+    "missionId": "english-pre-a1-m022",
+    "unitId": "english-pre-a1-unit-22",
+    "position": 22,
+    "title": "At the Café"
+  },
+  "sections": [
+    {
+      "sectionId": "english-pre-a1-m022-explore",
+      "sectionKey": "explore",
+      "position": 1,
+      "exercise": {
+        "exerciseId": "english-pre-a1-m022-explore-ex01",
+        "type": "vocabulary_pairs",
+        "theory": {
+          "title": "At the Café: vocabulary",
+          "explanation": "Learn ten useful words about at the café. Listen to each British English model and repeat it.",
+          "patterns": [
+            {
+              "label": "Useful sentence",
+              "pattern": "I like water.",
+              "examples": [
+                "I can see water.",
+                "This is juice.",
+                "I like milk."
+              ]
+            }
+          ],
+          "tip": "Escucha cada palabra y úsala en una frase corta."
+        },
+        "items": [
+          {
+            "itemId": "english-pre-a1-m022-explore-ex01-i01",
+            "position": 1,
+            "english": "water",
+            "spanish": "agua",
+            "audio": "tts:en-GB:water"
+          },
+          {
+            "itemId": "english-pre-a1-m022-explore-ex01-i02",
+            "position": 2,
+            "english": "juice",
+            "spanish": "zumo",
+            "audio": "tts:en-GB:juice"
+          },
+          {
+            "itemId": "english-pre-a1-m022-explore-ex01-i03",
+            "position": 3,
+            "english": "milk",
+            "spanish": "leche",
+            "audio": "tts:en-GB:milk"
+          },
+          {
+            "itemId": "english-pre-a1-m022-explore-ex01-i04",
+            "position": 4,
+            "english": "tea",
+            "spanish": "té",
+            "audio": "tts:en-GB:tea"
+          },
+          {
+            "itemId": "english-pre-a1-m022-explore-ex01-i05",
+            "position": 5,
+            "english": "sandwich",
+            "spanish": "sándwich",
+            "audio": "tts:en-GB:sandwich"
+          },
+          {
+            "itemId": "english-pre-a1-m022-explore-ex01-i06",
+            "position": 6,
+            "english": "please",
+            "spanish": "por favor",
+            "audio": "tts:en-GB:please"
+          },
+          {
+            "itemId": "english-pre-a1-m022-explore-ex01-i07",
+            "position": 7,
+            "english": "thank you",
+            "spanish": "gracias",
+            "audio": "tts:en-GB:thank you"
+          },
+          {
+            "itemId": "english-pre-a1-m022-explore-ex01-i08",
+            "position": 8,
+            "english": "coffee",
+            "spanish": "café",
+            "audio": "tts:en-GB:coffee"
+          },
+          {
+            "itemId": "english-pre-a1-m022-explore-ex01-i09",
+            "position": 9,
+            "english": "lemonade",
+            "spanish": "limonada",
+            "audio": "tts:en-GB:lemonade"
+          },
+          {
+            "itemId": "english-pre-a1-m022-explore-ex01-i10",
+            "position": 10,
+            "english": "cocoa",
+            "spanish": "cacao",
+            "audio": "tts:en-GB:cocoa"
+          }
+        ]
+      }
+    },
+    {
+      "sectionId": "english-pre-a1-m022-practice",
+      "sectionKey": "practice",
+      "position": 2,
+      "exercise": {
+        "exerciseId": "english-pre-a1-m022-practice-ex01",
+        "type": "mixed_practice",
+        "items": [
+          {
+            "itemId": "english-pre-a1-m022-practice-ex01-i01",
+            "position": 1,
+            "taskType": "vocabulary_translation",
+            "prompt": "Choose the Spanish meaning of “water”.",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "agua",
+              "leche",
+              "sándwich"
+            ]
+          },
+          {
+            "itemId": "english-pre-a1-m022-practice-ex01-i02",
+            "position": 2,
+            "taskType": "vocabulary_translation",
+            "prompt": "Choose the Spanish meaning of “juice”.",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "zumo",
+              "té",
+              "por favor"
+            ]
+          },
+          {
+            "itemId": "english-pre-a1-m022-practice-ex01-i03",
+            "position": 3,
+            "taskType": "vocabulary_translation",
+            "prompt": "Choose the Spanish meaning of “milk”.",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "leche",
+              "sándwich",
+              "gracias"
+            ]
+          },
+          {
+            "itemId": "english-pre-a1-m022-practice-ex01-i04",
+            "position": 4,
+            "taskType": "vocabulary_translation",
+            "prompt": "Choose the Spanish meaning of “tea”.",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "té",
+              "por favor",
+              "café"
+            ]
+          },
+          {
+            "itemId": "english-pre-a1-m022-practice-ex01-i05",
+            "position": 5,
+            "taskType": "vocabulary_translation",
+            "prompt": "Choose the Spanish meaning of “sandwich”.",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "sándwich",
+              "gracias",
+              "limonada"
+            ]
+          },
+          {
+            "itemId": "english-pre-a1-m022-practice-ex01-i06",
+            "position": 6,
+            "taskType": "vocabulary_translation",
+            "prompt": "Choose the Spanish meaning of “please”.",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "por favor",
+              "café",
+              "cacao"
+            ]
+          },
+          {
+            "itemId": "english-pre-a1-m022-practice-ex01-i07",
+            "position": 7,
+            "taskType": "vocabulary_translation",
+            "prompt": "Choose the Spanish meaning of “thank you”.",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "gracias",
+              "limonada",
+              "agua"
+            ]
+          },
+          {
+            "itemId": "english-pre-a1-m022-practice-ex01-i08",
+            "position": 8,
+            "taskType": "vocabulary_translation",
+            "prompt": "Choose the Spanish meaning of “coffee”.",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "café",
+              "cacao",
+              "zumo"
+            ]
+          },
+          {
+            "itemId": "english-pre-a1-m022-practice-ex01-i09",
+            "position": 9,
+            "taskType": "vocabulary_translation",
+            "prompt": "Choose the Spanish meaning of “lemonade”.",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "limonada",
+              "agua",
+              "leche"
+            ]
+          },
+          {
+            "itemId": "english-pre-a1-m022-practice-ex01-i10",
+            "position": 10,
+            "taskType": "vocabulary_translation",
+            "prompt": "Choose the Spanish meaning of “cocoa”.",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "cacao",
+              "zumo",
+              "té"
+            ]
+          },
+          {
+            "itemId": "english-pre-a1-m022-practice-ex01-i11",
+            "position": 11,
+            "taskType": "english_vocabulary",
+            "prompt": "Which English word means “agua”?",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "water",
+              "milk",
+              "sandwich"
+            ]
+          },
+          {
+            "itemId": "english-pre-a1-m022-practice-ex01-i12",
+            "position": 12,
+            "taskType": "english_vocabulary",
+            "prompt": "Which English word means “zumo”?",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "juice",
+              "tea",
+              "please"
+            ]
+          },
+          {
+            "itemId": "english-pre-a1-m022-practice-ex01-i13",
+            "position": 13,
+            "taskType": "english_vocabulary",
+            "prompt": "Which English word means “leche”?",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "milk",
+              "sandwich",
+              "thank you"
+            ]
+          },
+          {
+            "itemId": "english-pre-a1-m022-practice-ex01-i14",
+            "position": 14,
+            "taskType": "english_vocabulary",
+            "prompt": "Which English word means “té”?",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "tea",
+              "please",
+              "coffee"
+            ]
+          },
+          {
+            "itemId": "english-pre-a1-m022-practice-ex01-i15",
+            "position": 15,
+            "taskType": "english_vocabulary",
+            "prompt": "Which English word means “sándwich”?",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "sandwich",
+              "thank you",
+              "lemonade"
+            ]
+          },
+          {
+            "itemId": "english-pre-a1-m022-practice-ex01-i16",
+            "position": 16,
+            "taskType": "english_vocabulary",
+            "prompt": "Which English word means “por favor”?",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "please",
+              "coffee",
+              "cocoa"
+            ]
+          },
+          {
+            "itemId": "english-pre-a1-m022-practice-ex01-i17",
+            "position": 17,
+            "taskType": "english_vocabulary",
+            "prompt": "Which English word means “gracias”?",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "thank you",
+              "lemonade",
+              "water"
+            ]
+          },
+          {
+            "itemId": "english-pre-a1-m022-practice-ex01-i18",
+            "position": 18,
+            "taskType": "english_vocabulary",
+            "prompt": "Which English word means “café”?",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "coffee",
+              "cocoa",
+              "juice"
+            ]
+          },
+          {
+            "itemId": "english-pre-a1-m022-practice-ex01-i19",
+            "position": 19,
+            "taskType": "english_vocabulary",
+            "prompt": "Which English word means “limonada”?",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "lemonade",
+              "water",
+              "milk"
+            ]
+          },
+          {
+            "itemId": "english-pre-a1-m022-practice-ex01-i20",
+            "position": 20,
+            "taskType": "english_vocabulary",
+            "prompt": "Which English word means “cacao”?",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "cocoa",
+              "juice",
+              "tea"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "sectionId": "english-pre-a1-m022-grammar",
+      "sectionKey": "grammar",
+      "position": 3,
+      "exercise": {
+        "exerciseId": "english-pre-a1-m022-grammar-ex01",
+        "type": "grammar",
+        "theory": {
+          "focus": "Peticiones corteses: please / thank you",
+          "explanation": "En un pedido sencillo podemos decir el nombre de la bebida o comida y añadir «please» para pedirla con educación. Cuando recibimos algo, podemos responder «thank you». En esta misión practicamos estas expresiones como fórmulas completas.",
+          "model": "Water, please. Thank you.",
+          "practice": "Construye un intercambio corto entre una persona que pide y otra que sirve."
+        },
+        "items": [
+          {
+            "itemId": "english-pre-a1-m022-grammar-ex01-i01",
+            "position": 1,
+            "prompt": "You want water. What do you say?",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "Water, please.",
+              "Water goodbye.",
+              "Please thank you water."
+            ]
+          },
+          {
+            "itemId": "english-pre-a1-m022-grammar-ex01-i02",
+            "position": 2,
+            "prompt": "The café worker gives you a sandwich. What do you say?",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "Thank you.",
+              "Good night.",
+              "Please me."
+            ]
+          },
+          {
+            "itemId": "english-pre-a1-m022-grammar-ex01-i03",
+            "position": 3,
+            "prompt": "Choose the polite request.",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "Juice, please.",
+              "Juice now!",
+              "Thank you juice."
+            ]
+          },
+          {
+            "itemId": "english-pre-a1-m022-grammar-ex01-i04",
+            "position": 4,
+            "prompt": "Complete the exchange: “Tea, please.” “___”",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "Thank you.",
+              "Please tea.",
+              "Good morning."
+            ]
+          },
+          {
+            "itemId": "english-pre-a1-m022-grammar-ex01-i05",
+            "position": 5,
+            "prompt": "You want water. What do you say?",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "Water, please.",
+              "Water goodbye.",
+              "Please thank you water."
+            ]
+          },
+          {
+            "itemId": "english-pre-a1-m022-grammar-ex01-i06",
+            "position": 6,
+            "prompt": "The café worker gives you a sandwich. What do you say?",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "Thank you.",
+              "Good night.",
+              "Please me."
+            ]
+          },
+          {
+            "itemId": "english-pre-a1-m022-grammar-ex01-i07",
+            "position": 7,
+            "prompt": "Choose the polite request.",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "Juice, please.",
+              "Juice now!",
+              "Thank you juice."
+            ]
+          },
+          {
+            "itemId": "english-pre-a1-m022-grammar-ex01-i08",
+            "position": 8,
+            "prompt": "Complete the exchange: “Tea, please.” “___”",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "Thank you.",
+              "Please tea.",
+              "Good morning."
+            ]
+          },
+          {
+            "itemId": "english-pre-a1-m022-grammar-ex01-i09",
+            "position": 9,
+            "prompt": "You want water. What do you say?",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "Water, please.",
+              "Water goodbye.",
+              "Please thank you water."
+            ]
+          },
+          {
+            "itemId": "english-pre-a1-m022-grammar-ex01-i10",
+            "position": 10,
+            "prompt": "The café worker gives you a sandwich. What do you say?",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "Thank you.",
+              "Good night.",
+              "Please me."
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "sectionId": "english-pre-a1-m022-pronunciation",
+      "sectionKey": "pronunciation",
+      "position": 4,
+      "exercise": {
+        "exerciseId": "english-pre-a1-m022-pronunciation-ex01",
+        "type": "pronunciation_cards",
+        "items": [
+          {
+            "itemId": "english-pre-a1-m022-pronunciation-ex01-i01",
+            "position": 1,
+            "word": "water",
+            "translation": "agua",
+            "pronunciationGuide": "uó-ta",
+            "audio": "tts:en-GB:water"
+          },
+          {
+            "itemId": "english-pre-a1-m022-pronunciation-ex01-i02",
+            "position": 2,
+            "word": "juice",
+            "translation": "zumo",
+            "pronunciationGuide": "yús",
+            "audio": "tts:en-GB:juice"
+          },
+          {
+            "itemId": "english-pre-a1-m022-pronunciation-ex01-i03",
+            "position": 3,
+            "word": "milk",
+            "translation": "leche",
+            "pronunciationGuide": "milk",
+            "audio": "tts:en-GB:milk"
+          },
+          {
+            "itemId": "english-pre-a1-m022-pronunciation-ex01-i04",
+            "position": 4,
+            "word": "tea",
+            "translation": "té",
+            "pronunciationGuide": "tíi",
+            "audio": "tts:en-GB:tea"
+          },
+          {
+            "itemId": "english-pre-a1-m022-pronunciation-ex01-i05",
+            "position": 5,
+            "word": "sandwich",
+            "translation": "sándwich",
+            "pronunciationGuide": "sán-uich",
+            "audio": "tts:en-GB:sandwich"
+          },
+          {
+            "itemId": "english-pre-a1-m022-pronunciation-ex01-i06",
+            "position": 6,
+            "word": "please",
+            "translation": "por favor",
+            "pronunciationGuide": "plíiz",
+            "audio": "tts:en-GB:please"
+          },
+          {
+            "itemId": "english-pre-a1-m022-pronunciation-ex01-i07",
+            "position": 7,
+            "word": "thank you",
+            "translation": "gracias",
+            "pronunciationGuide": "zánk iu",
+            "audio": "tts:en-GB:thank you"
+          },
+          {
+            "itemId": "english-pre-a1-m022-pronunciation-ex01-i08",
+            "position": 8,
+            "word": "coffee",
+            "translation": "café",
+            "pronunciationGuide": "Escucha el audio británico y repite.",
+            "audio": "tts:en-GB:coffee"
+          },
+          {
+            "itemId": "english-pre-a1-m022-pronunciation-ex01-i09",
+            "position": 9,
+            "word": "lemonade",
+            "translation": "limonada",
+            "pronunciationGuide": "Escucha el audio británico y repite.",
+            "audio": "tts:en-GB:lemonade"
+          },
+          {
+            "itemId": "english-pre-a1-m022-pronunciation-ex01-i10",
+            "position": 10,
+            "word": "cocoa",
+            "translation": "cacao",
+            "pronunciationGuide": "Escucha el audio británico y repite.",
+            "audio": "tts:en-GB:cocoa"
+          }
+        ]
+      }
+    },
+    {
+      "sectionId": "english-pre-a1-m022-reading",
+      "sectionKey": "reading",
+      "position": 5,
+      "exercise": {
+        "exerciseId": "english-pre-a1-m022-reading-ex01",
+        "type": "reading_comprehension",
+        "content": {
+          "passageId": "english-pre-a1-m022-reading-passage-01",
+          "passage": "At the café, Ben is with his sister. Ben says, “Water, please.” His sister says, “Juice, please.” The café worker brings water and juice. They sit at a small table. Ben has a sandwich and his sister has tea. They smile and say, “Thank you!”"
+        },
+        "items": [
+          {
+            "itemId": "english-pre-a1-m022-reading-ex01-i01",
+            "position": 1,
+            "prompt": "Where are Ben and his sister?",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "At the café",
+              "At the farm",
+              "At the beach"
+            ]
+          },
+          {
+            "itemId": "english-pre-a1-m022-reading-ex01-i02",
+            "position": 2,
+            "prompt": "Who is with Ben?",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "His sister",
+              "His teacher",
+              "His father"
+            ]
+          },
+          {
+            "itemId": "english-pre-a1-m022-reading-ex01-i03",
+            "position": 3,
+            "prompt": "What does Ben ask for?",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "Water",
+              "Milk",
+              "Tea"
+            ]
+          },
+          {
+            "itemId": "english-pre-a1-m022-reading-ex01-i04",
+            "position": 4,
+            "prompt": "What does his sister ask for?",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "Juice",
+              "Water",
+              "Milk"
+            ]
+          },
+          {
+            "itemId": "english-pre-a1-m022-reading-ex01-i05",
+            "position": 5,
+            "prompt": "Who brings the drinks?",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "The café worker",
+              "Ben",
+              "His sister"
+            ]
+          },
+          {
+            "itemId": "english-pre-a1-m022-reading-ex01-i06",
+            "position": 6,
+            "prompt": "Where do they sit?",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "At a small table",
+              "On the floor",
+              "Outside the shop"
+            ]
+          },
+          {
+            "itemId": "english-pre-a1-m022-reading-ex01-i07",
+            "position": 7,
+            "prompt": "What does Ben eat?",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "A sandwich",
+              "An egg",
+              "Cereal"
+            ]
+          },
+          {
+            "itemId": "english-pre-a1-m022-reading-ex01-i08",
+            "position": 8,
+            "prompt": "What does his sister drink?",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "Tea",
+              "Milk",
+              "Water"
+            ]
+          },
+          {
+            "itemId": "english-pre-a1-m022-reading-ex01-i09",
+            "position": 9,
+            "prompt": "Which polite word do they use to ask?",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "Please",
+              "Goodbye",
+              "Sorry"
+            ]
+          },
+          {
+            "itemId": "english-pre-a1-m022-reading-ex01-i10",
+            "position": 10,
+            "prompt": "What do they say after the worker brings the drinks?",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "Thank you!",
+              "Good night!",
+              "See you!"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "sectionId": "english-pre-a1-m022-writing",
+      "sectionKey": "writing",
+      "position": 6,
+      "exercise": {
+        "exerciseId": "english-pre-a1-m022-writing-ex01",
+        "type": "dictation",
+        "items": [
+          {
+            "itemId": "english-pre-a1-m022-writing-ex01-i01",
+            "position": 1,
+            "audio": "tts:en-GB:water",
+            "expectedAnswer": "water",
+            "evaluation": {
+              "type": "normalised_text"
+            }
+          },
+          {
+            "itemId": "english-pre-a1-m022-writing-ex01-i02",
+            "position": 2,
+            "audio": "tts:en-GB:juice",
+            "expectedAnswer": "juice",
+            "evaluation": {
+              "type": "normalised_text"
+            }
+          },
+          {
+            "itemId": "english-pre-a1-m022-writing-ex01-i03",
+            "position": 3,
+            "audio": "tts:en-GB:milk",
+            "expectedAnswer": "milk",
+            "evaluation": {
+              "type": "normalised_text"
+            }
+          },
+          {
+            "itemId": "english-pre-a1-m022-writing-ex01-i04",
+            "position": 4,
+            "audio": "tts:en-GB:tea",
+            "expectedAnswer": "tea",
+            "evaluation": {
+              "type": "normalised_text"
+            }
+          },
+          {
+            "itemId": "english-pre-a1-m022-writing-ex01-i05",
+            "position": 5,
+            "audio": "tts:en-GB:sandwich",
+            "expectedAnswer": "sandwich",
+            "evaluation": {
+              "type": "normalised_text"
+            }
+          },
+          {
+            "itemId": "english-pre-a1-m022-writing-ex01-i06",
+            "position": 6,
+            "audio": "tts:en-GB:Water, please.",
+            "expectedAnswer": "Water, please.",
+            "evaluation": {
+              "type": "normalised_text"
+            }
+          },
+          {
+            "itemId": "english-pre-a1-m022-writing-ex01-i07",
+            "position": 7,
+            "audio": "tts:en-GB:Thank you.",
+            "expectedAnswer": "Thank you.",
+            "evaluation": {
+              "type": "normalised_text"
+            }
+          },
+          {
+            "itemId": "english-pre-a1-m022-writing-ex01-i08",
+            "position": 8,
+            "audio": "tts:en-GB:coffee",
+            "expectedAnswer": "coffee",
+            "evaluation": {
+              "type": "normalised_text"
+            }
+          },
+          {
+            "itemId": "english-pre-a1-m022-writing-ex01-i09",
+            "position": 9,
+            "audio": "tts:en-GB:lemonade",
+            "expectedAnswer": "lemonade",
+            "evaluation": {
+              "type": "normalised_text"
+            }
+          },
+          {
+            "itemId": "english-pre-a1-m022-writing-ex01-i10",
+            "position": 10,
+            "audio": "tts:en-GB:cocoa",
+            "expectedAnswer": "cocoa",
+            "evaluation": {
+              "type": "normalised_text"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "sectionId": "english-pre-a1-m022-speaking",
+      "sectionKey": "speaking",
+      "position": 7,
+      "exercise": {
+        "exerciseId": "english-pre-a1-m022-speaking-ex01",
+        "type": "speaking_prompts",
+        "items": [
+          {
+            "itemId": "english-pre-a1-m022-speaking-ex01-i01",
+            "position": 1,
+            "prompt": "Say a sentence with “water”.",
+            "modelAnswer": "I like water.",
+            "evaluation": {
+              "type": "transcription_feedback",
+              "transcriptionSeparateFromPronunciation": true
+            }
+          },
+          {
+            "itemId": "english-pre-a1-m022-speaking-ex01-i02",
+            "position": 2,
+            "prompt": "Say a sentence with “juice”.",
+            "modelAnswer": "I like juice.",
+            "evaluation": {
+              "type": "transcription_feedback",
+              "transcriptionSeparateFromPronunciation": true
+            }
+          },
+          {
+            "itemId": "english-pre-a1-m022-speaking-ex01-i03",
+            "position": 3,
+            "prompt": "Say a sentence with “milk”.",
+            "modelAnswer": "I like milk.",
+            "evaluation": {
+              "type": "transcription_feedback",
+              "transcriptionSeparateFromPronunciation": true
+            }
+          },
+          {
+            "itemId": "english-pre-a1-m022-speaking-ex01-i04",
+            "position": 4,
+            "prompt": "Say a sentence with “tea”.",
+            "modelAnswer": "I like tea.",
+            "evaluation": {
+              "type": "transcription_feedback",
+              "transcriptionSeparateFromPronunciation": true
+            }
+          },
+          {
+            "itemId": "english-pre-a1-m022-speaking-ex01-i05",
+            "position": 5,
+            "prompt": "Say a sentence with “sandwich”.",
+            "modelAnswer": "I like sandwich.",
+            "evaluation": {
+              "type": "transcription_feedback",
+              "transcriptionSeparateFromPronunciation": true
+            }
+          },
+          {
+            "itemId": "english-pre-a1-m022-speaking-ex01-i06",
+            "position": 6,
+            "prompt": "Say a sentence with “please”.",
+            "modelAnswer": "I like please.",
+            "evaluation": {
+              "type": "transcription_feedback",
+              "transcriptionSeparateFromPronunciation": true
+            }
+          },
+          {
+            "itemId": "english-pre-a1-m022-speaking-ex01-i07",
+            "position": 7,
+            "prompt": "Say a sentence with “thank you”.",
+            "modelAnswer": "I like thank you.",
+            "evaluation": {
+              "type": "transcription_feedback",
+              "transcriptionSeparateFromPronunciation": true
+            }
+          },
+          {
+            "itemId": "english-pre-a1-m022-speaking-ex01-i08",
+            "position": 8,
+            "prompt": "Say a sentence with “coffee”.",
+            "modelAnswer": "I like coffee.",
+            "evaluation": {
+              "type": "transcription_feedback",
+              "transcriptionSeparateFromPronunciation": true
+            }
+          },
+          {
+            "itemId": "english-pre-a1-m022-speaking-ex01-i09",
+            "position": 9,
+            "prompt": "Say a sentence with “lemonade”.",
+            "modelAnswer": "I like lemonade.",
+            "evaluation": {
+              "type": "transcription_feedback",
+              "transcriptionSeparateFromPronunciation": true
+            }
+          },
+          {
+            "itemId": "english-pre-a1-m022-speaking-ex01-i10",
+            "position": 10,
+            "prompt": "Say a sentence with “cocoa”.",
+            "modelAnswer": "I like cocoa.",
+            "evaluation": {
+              "type": "transcription_feedback",
+              "transcriptionSeparateFromPronunciation": true
+            }
+          }
+        ]
+      }
+    },
+    {
+      "sectionId": "english-pre-a1-m022-listening",
+      "sectionKey": "listening",
+      "position": 8,
+      "exercise": {
+        "exerciseId": "english-pre-a1-m022-listening-ex01",
+        "type": "listening_gap_fill",
+        "content": {
+          "audio": "tts:en-GB:Welcome! This is at the café. I can see water. I can see juice. I can see milk. I can see tea. I can see sandwich. I can see please. I can see thank you. I can see coffee. I can see lemonade. I can see cocoa. I like this place. Thank you for listening.",
+          "audioLocale": "en-GB",
+          "transcriptTemplate": "Welcome! This is at the café. I can see [[gap-01]]. I can see [[gap-02]]. I can see [[gap-03]]. I can see [[gap-04]]. I can see [[gap-05]]. I can see [[gap-06]]. I can see [[gap-07]]. I can see [[gap-08]]. I can see [[gap-09]]. I can see [[gap-10]]. I like this place. Thank you for listening.",
+          "wordBank": [
+            {
+              "wordId": "english-pre-a1-m022-listening-word-01",
+              "word": "water"
+            },
+            {
+              "wordId": "english-pre-a1-m022-listening-word-02",
+              "word": "juice"
+            },
+            {
+              "wordId": "english-pre-a1-m022-listening-word-03",
+              "word": "milk"
+            },
+            {
+              "wordId": "english-pre-a1-m022-listening-word-04",
+              "word": "tea"
+            },
+            {
+              "wordId": "english-pre-a1-m022-listening-word-05",
+              "word": "sandwich"
+            },
+            {
+              "wordId": "english-pre-a1-m022-listening-word-06",
+              "word": "please"
+            },
+            {
+              "wordId": "english-pre-a1-m022-listening-word-07",
+              "word": "thank you"
+            },
+            {
+              "wordId": "english-pre-a1-m022-listening-word-08",
+              "word": "coffee"
+            },
+            {
+              "wordId": "english-pre-a1-m022-listening-word-09",
+              "word": "lemonade"
+            },
+            {
+              "wordId": "english-pre-a1-m022-listening-word-10",
+              "word": "cocoa"
+            }
+          ],
+          "interaction": "select_place_move_replace"
+        },
+        "items": [
+          {
+            "itemId": "english-pre-a1-m022-listening-ex01-i01",
+            "position": 1,
+            "gapToken": "[[gap-01]]",
+            "expectedWordId": "english-pre-a1-m022-listening-word-01"
+          },
+          {
+            "itemId": "english-pre-a1-m022-listening-ex01-i02",
+            "position": 2,
+            "gapToken": "[[gap-02]]",
+            "expectedWordId": "english-pre-a1-m022-listening-word-02"
+          },
+          {
+            "itemId": "english-pre-a1-m022-listening-ex01-i03",
+            "position": 3,
+            "gapToken": "[[gap-03]]",
+            "expectedWordId": "english-pre-a1-m022-listening-word-03"
+          },
+          {
+            "itemId": "english-pre-a1-m022-listening-ex01-i04",
+            "position": 4,
+            "gapToken": "[[gap-04]]",
+            "expectedWordId": "english-pre-a1-m022-listening-word-04"
+          },
+          {
+            "itemId": "english-pre-a1-m022-listening-ex01-i05",
+            "position": 5,
+            "gapToken": "[[gap-05]]",
+            "expectedWordId": "english-pre-a1-m022-listening-word-05"
+          },
+          {
+            "itemId": "english-pre-a1-m022-listening-ex01-i06",
+            "position": 6,
+            "gapToken": "[[gap-06]]",
+            "expectedWordId": "english-pre-a1-m022-listening-word-06"
+          },
+          {
+            "itemId": "english-pre-a1-m022-listening-ex01-i07",
+            "position": 7,
+            "gapToken": "[[gap-07]]",
+            "expectedWordId": "english-pre-a1-m022-listening-word-07"
+          },
+          {
+            "itemId": "english-pre-a1-m022-listening-ex01-i08",
+            "position": 8,
+            "gapToken": "[[gap-08]]",
+            "expectedWordId": "english-pre-a1-m022-listening-word-08"
+          },
+          {
+            "itemId": "english-pre-a1-m022-listening-ex01-i09",
+            "position": 9,
+            "gapToken": "[[gap-09]]",
+            "expectedWordId": "english-pre-a1-m022-listening-word-09"
+          },
+          {
+            "itemId": "english-pre-a1-m022-listening-ex01-i10",
+            "position": 10,
+            "gapToken": "[[gap-10]]",
+            "expectedWordId": "english-pre-a1-m022-listening-word-10"
+          }
+        ]
+      }
+    }
+  ]
+}

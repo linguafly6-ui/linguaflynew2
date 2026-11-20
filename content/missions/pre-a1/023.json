@@ -1,0 +1,1125 @@
+{
+  "schemaVersion": "1.2.0",
+  "contentVersion": 1,
+  "course": {
+    "courseId": "english-pre-a1",
+    "level": "PRE-A1",
+    "language": "en-GB"
+  },
+  "unit": {
+    "unitId": "english-pre-a1-unit-23",
+    "courseId": "english-pre-a1",
+    "position": 23,
+    "title": "Animal Sounds"
+  },
+  "mission": {
+    "missionId": "english-pre-a1-m023",
+    "unitId": "english-pre-a1-unit-23",
+    "position": 23,
+    "title": "Animal Sounds"
+  },
+  "sections": [
+    {
+      "sectionId": "english-pre-a1-m023-explore",
+      "sectionKey": "explore",
+      "position": 1,
+      "exercise": {
+        "exerciseId": "english-pre-a1-m023-explore-ex01",
+        "type": "vocabulary_pairs",
+        "theory": {
+          "title": "Animal Sounds: vocabulary",
+          "explanation": "Learn ten useful words about animal sounds. Listen to each British English model and repeat it.",
+          "patterns": [
+            {
+              "label": "Useful sentence",
+              "pattern": "I like cow.",
+              "examples": [
+                "I can see cow.",
+                "This is sheep.",
+                "I like duck."
+              ]
+            }
+          ],
+          "tip": "Escucha cada palabra y úsala en una frase corta."
+        },
+        "items": [
+          {
+            "itemId": "english-pre-a1-m023-explore-ex01-i01",
+            "position": 1,
+            "english": "cow",
+            "spanish": "vaca",
+            "audio": "tts:en-GB:cow"
+          },
+          {
+            "itemId": "english-pre-a1-m023-explore-ex01-i02",
+            "position": 2,
+            "english": "sheep",
+            "spanish": "oveja",
+            "audio": "tts:en-GB:sheep"
+          },
+          {
+            "itemId": "english-pre-a1-m023-explore-ex01-i03",
+            "position": 3,
+            "english": "duck",
+            "spanish": "pato",
+            "audio": "tts:en-GB:duck"
+          },
+          {
+            "itemId": "english-pre-a1-m023-explore-ex01-i04",
+            "position": 4,
+            "english": "horse",
+            "spanish": "caballo",
+            "audio": "tts:en-GB:horse"
+          },
+          {
+            "itemId": "english-pre-a1-m023-explore-ex01-i05",
+            "position": 5,
+            "english": "pig",
+            "spanish": "cerdo",
+            "audio": "tts:en-GB:pig"
+          },
+          {
+            "itemId": "english-pre-a1-m023-explore-ex01-i06",
+            "position": 6,
+            "english": "chicken",
+            "spanish": "gallina",
+            "audio": "tts:en-GB:chicken"
+          },
+          {
+            "itemId": "english-pre-a1-m023-explore-ex01-i07",
+            "position": 7,
+            "english": "moo",
+            "spanish": "muuu",
+            "audio": "tts:en-GB:moo"
+          },
+          {
+            "itemId": "english-pre-a1-m023-explore-ex01-i08",
+            "position": 8,
+            "english": "quack",
+            "spanish": "cua",
+            "audio": "tts:en-GB:quack"
+          },
+          {
+            "itemId": "english-pre-a1-m023-explore-ex01-i09",
+            "position": 9,
+            "english": "rooster",
+            "spanish": "gallo",
+            "audio": "tts:en-GB:rooster"
+          },
+          {
+            "itemId": "english-pre-a1-m023-explore-ex01-i10",
+            "position": 10,
+            "english": "turkey",
+            "spanish": "pavo",
+            "audio": "tts:en-GB:turkey"
+          }
+        ]
+      }
+    },
+    {
+      "sectionId": "english-pre-a1-m023-practice",
+      "sectionKey": "practice",
+      "position": 2,
+      "exercise": {
+        "exerciseId": "english-pre-a1-m023-practice-ex01",
+        "type": "mixed_practice",
+        "items": [
+          {
+            "itemId": "english-pre-a1-m023-practice-ex01-i01",
+            "position": 1,
+            "taskType": "vocabulary_translation",
+            "prompt": "Choose the Spanish meaning of “cow”.",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "vaca",
+              "pato",
+              "cerdo"
+            ]
+          },
+          {
+            "itemId": "english-pre-a1-m023-practice-ex01-i02",
+            "position": 2,
+            "taskType": "vocabulary_translation",
+            "prompt": "Choose the Spanish meaning of “sheep”.",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "oveja",
+              "caballo",
+              "gallina"
+            ]
+          },
+          {
+            "itemId": "english-pre-a1-m023-practice-ex01-i03",
+            "position": 3,
+            "taskType": "vocabulary_translation",
+            "prompt": "Choose the Spanish meaning of “duck”.",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "pato",
+              "cerdo",
+              "muuu"
+            ]
+          },
+          {
+            "itemId": "english-pre-a1-m023-practice-ex01-i04",
+            "position": 4,
+            "taskType": "vocabulary_translation",
+            "prompt": "Choose the Spanish meaning of “horse”.",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "caballo",
+              "gallina",
+              "cua"
+            ]
+          },
+          {
+            "itemId": "english-pre-a1-m023-practice-ex01-i05",
+            "position": 5,
+            "taskType": "vocabulary_translation",
+            "prompt": "Choose the Spanish meaning of “pig”.",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "cerdo",
+              "muuu",
+              "gallo"
+            ]
+          },
+          {
+            "itemId": "english-pre-a1-m023-practice-ex01-i06",
+            "position": 6,
+            "taskType": "vocabulary_translation",
+            "prompt": "Choose the Spanish meaning of “chicken”.",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "gallina",
+              "cua",
+              "pavo"
+            ]
+          },
+          {
+            "itemId": "english-pre-a1-m023-practice-ex01-i07",
+            "position": 7,
+            "taskType": "vocabulary_translation",
+            "prompt": "Choose the Spanish meaning of “moo”.",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "muuu",
+              "gallo",
+              "vaca"
+            ]
+          },
+          {
+            "itemId": "english-pre-a1-m023-practice-ex01-i08",
+            "position": 8,
+            "taskType": "vocabulary_translation",
+            "prompt": "Choose the Spanish meaning of “quack”.",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "cua",
+              "pavo",
+              "oveja"
+            ]
+          },
+          {
+            "itemId": "english-pre-a1-m023-practice-ex01-i09",
+            "position": 9,
+            "taskType": "vocabulary_translation",
+            "prompt": "Choose the Spanish meaning of “rooster”.",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "gallo",
+              "vaca",
+              "pato"
+            ]
+          },
+          {
+            "itemId": "english-pre-a1-m023-practice-ex01-i10",
+            "position": 10,
+            "taskType": "vocabulary_translation",
+            "prompt": "Choose the Spanish meaning of “turkey”.",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "pavo",
+              "oveja",
+              "caballo"
+            ]
+          },
+          {
+            "itemId": "english-pre-a1-m023-practice-ex01-i11",
+            "position": 11,
+            "taskType": "english_vocabulary",
+            "prompt": "Which English word means “vaca”?",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "cow",
+              "duck",
+              "pig"
+            ]
+          },
+          {
+            "itemId": "english-pre-a1-m023-practice-ex01-i12",
+            "position": 12,
+            "taskType": "english_vocabulary",
+            "prompt": "Which English word means “oveja”?",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "sheep",
+              "horse",
+              "chicken"
+            ]
+          },
+          {
+            "itemId": "english-pre-a1-m023-practice-ex01-i13",
+            "position": 13,
+            "taskType": "english_vocabulary",
+            "prompt": "Which English word means “pato”?",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "duck",
+              "pig",
+              "moo"
+            ]
+          },
+          {
+            "itemId": "english-pre-a1-m023-practice-ex01-i14",
+            "position": 14,
+            "taskType": "english_vocabulary",
+            "prompt": "Which English word means “caballo”?",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "horse",
+              "chicken",
+              "quack"
+            ]
+          },
+          {
+            "itemId": "english-pre-a1-m023-practice-ex01-i15",
+            "position": 15,
+            "taskType": "english_vocabulary",
+            "prompt": "Which English word means “cerdo”?",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "pig",
+              "moo",
+              "rooster"
+            ]
+          },
+          {
+            "itemId": "english-pre-a1-m023-practice-ex01-i16",
+            "position": 16,
+            "taskType": "english_vocabulary",
+            "prompt": "Which English word means “gallina”?",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "chicken",
+              "quack",
+              "turkey"
+            ]
+          },
+          {
+            "itemId": "english-pre-a1-m023-practice-ex01-i17",
+            "position": 17,
+            "taskType": "english_vocabulary",
+            "prompt": "Which English word means “muuu”?",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "moo",
+              "rooster",
+              "cow"
+            ]
+          },
+          {
+            "itemId": "english-pre-a1-m023-practice-ex01-i18",
+            "position": 18,
+            "taskType": "english_vocabulary",
+            "prompt": "Which English word means “cua”?",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "quack",
+              "turkey",
+              "sheep"
+            ]
+          },
+          {
+            "itemId": "english-pre-a1-m023-practice-ex01-i19",
+            "position": 19,
+            "taskType": "english_vocabulary",
+            "prompt": "Which English word means “gallo”?",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "rooster",
+              "cow",
+              "duck"
+            ]
+          },
+          {
+            "itemId": "english-pre-a1-m023-practice-ex01-i20",
+            "position": 20,
+            "taskType": "english_vocabulary",
+            "prompt": "Which English word means “pavo”?",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "turkey",
+              "sheep",
+              "horse"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "sectionId": "english-pre-a1-m023-grammar",
+      "sectionKey": "grammar",
+      "position": 3,
+      "exercise": {
+        "exerciseId": "english-pre-a1-m023-grammar-ex01",
+        "type": "grammar",
+        "theory": {
+          "focus": "What is it? It is a…",
+          "explanation": "Usamos «What is it?» para preguntar qué animal es. Para responder, decimos «It is a…» y el nombre del animal. Con algunos animales usamos «an», pero en esta misión el modelo principal es «a duck».",
+          "model": "What is it? It’s a duck.",
+          "practice": "Escucha o lee una pista y responde con “It is a…” más el animal."
+        },
+        "items": [
+          {
+            "itemId": "english-pre-a1-m023-grammar-ex01-i01",
+            "position": 1,
+            "prompt": "Choose the correct question.",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "What is it?",
+              "Where are it?",
+              "Who is it animal?"
+            ]
+          },
+          {
+            "itemId": "english-pre-a1-m023-grammar-ex01-i02",
+            "position": 2,
+            "prompt": "Complete: What is it? It is ___ cow.",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "a",
+              "an",
+              "are"
+            ]
+          },
+          {
+            "itemId": "english-pre-a1-m023-grammar-ex01-i03",
+            "position": 3,
+            "prompt": "Choose the correct answer for a duck.",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "It is a duck.",
+              "It are a duck.",
+              "It is duck a."
+            ]
+          },
+          {
+            "itemId": "english-pre-a1-m023-grammar-ex01-i04",
+            "position": 4,
+            "prompt": "You hear “quack”. Which animal is it?",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "A duck",
+              "A horse",
+              "A sheep"
+            ]
+          },
+          {
+            "itemId": "english-pre-a1-m023-grammar-ex01-i05",
+            "position": 5,
+            "prompt": "Choose the correct question.",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "What is it?",
+              "Where are it?",
+              "Who is it animal?"
+            ]
+          },
+          {
+            "itemId": "english-pre-a1-m023-grammar-ex01-i06",
+            "position": 6,
+            "prompt": "Complete: What is it? It is ___ cow.",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "a",
+              "an",
+              "are"
+            ]
+          },
+          {
+            "itemId": "english-pre-a1-m023-grammar-ex01-i07",
+            "position": 7,
+            "prompt": "Choose the correct answer for a duck.",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "It is a duck.",
+              "It are a duck.",
+              "It is duck a."
+            ]
+          },
+          {
+            "itemId": "english-pre-a1-m023-grammar-ex01-i08",
+            "position": 8,
+            "prompt": "You hear “quack”. Which animal is it?",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "A duck",
+              "A horse",
+              "A sheep"
+            ]
+          },
+          {
+            "itemId": "english-pre-a1-m023-grammar-ex01-i09",
+            "position": 9,
+            "prompt": "Choose the correct question.",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "What is it?",
+              "Where are it?",
+              "Who is it animal?"
+            ]
+          },
+          {
+            "itemId": "english-pre-a1-m023-grammar-ex01-i10",
+            "position": 10,
+            "prompt": "Complete: What is it? It is ___ cow.",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "a",
+              "an",
+              "are"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "sectionId": "english-pre-a1-m023-pronunciation",
+      "sectionKey": "pronunciation",
+      "position": 4,
+      "exercise": {
+        "exerciseId": "english-pre-a1-m023-pronunciation-ex01",
+        "type": "pronunciation_cards",
+        "items": [
+          {
+            "itemId": "english-pre-a1-m023-pronunciation-ex01-i01",
+            "position": 1,
+            "word": "cow",
+            "translation": "vaca",
+            "pronunciationGuide": "káu",
+            "audio": "tts:en-GB:cow"
+          },
+          {
+            "itemId": "english-pre-a1-m023-pronunciation-ex01-i02",
+            "position": 2,
+            "word": "sheep",
+            "translation": "oveja",
+            "pronunciationGuide": "shíip",
+            "audio": "tts:en-GB:sheep"
+          },
+          {
+            "itemId": "english-pre-a1-m023-pronunciation-ex01-i03",
+            "position": 3,
+            "word": "duck",
+            "translation": "pato",
+            "pronunciationGuide": "dak",
+            "audio": "tts:en-GB:duck"
+          },
+          {
+            "itemId": "english-pre-a1-m023-pronunciation-ex01-i04",
+            "position": 4,
+            "word": "horse",
+            "translation": "caballo",
+            "pronunciationGuide": "jóos",
+            "audio": "tts:en-GB:horse"
+          },
+          {
+            "itemId": "english-pre-a1-m023-pronunciation-ex01-i05",
+            "position": 5,
+            "word": "pig",
+            "translation": "cerdo",
+            "pronunciationGuide": "pig",
+            "audio": "tts:en-GB:pig"
+          },
+          {
+            "itemId": "english-pre-a1-m023-pronunciation-ex01-i06",
+            "position": 6,
+            "word": "chicken",
+            "translation": "gallina",
+            "pronunciationGuide": "chí-ken",
+            "audio": "tts:en-GB:chicken"
+          },
+          {
+            "itemId": "english-pre-a1-m023-pronunciation-ex01-i07",
+            "position": 7,
+            "word": "moo",
+            "translation": "muuu",
+            "pronunciationGuide": "múu",
+            "audio": "tts:en-GB:moo"
+          },
+          {
+            "itemId": "english-pre-a1-m023-pronunciation-ex01-i08",
+            "position": 8,
+            "word": "quack",
+            "translation": "cua",
+            "pronunciationGuide": "kuák",
+            "audio": "tts:en-GB:quack"
+          },
+          {
+            "itemId": "english-pre-a1-m023-pronunciation-ex01-i09",
+            "position": 9,
+            "word": "rooster",
+            "translation": "gallo",
+            "pronunciationGuide": "Escucha el audio británico y repite.",
+            "audio": "tts:en-GB:rooster"
+          },
+          {
+            "itemId": "english-pre-a1-m023-pronunciation-ex01-i10",
+            "position": 10,
+            "word": "turkey",
+            "translation": "pavo",
+            "pronunciationGuide": "Escucha el audio británico y repite.",
+            "audio": "tts:en-GB:turkey"
+          }
+        ]
+      }
+    },
+    {
+      "sectionId": "english-pre-a1-m023-reading",
+      "sectionKey": "reading",
+      "position": 5,
+      "exercise": {
+        "exerciseId": "english-pre-a1-m023-reading-ex01",
+        "type": "reading_comprehension",
+        "content": {
+          "passageId": "english-pre-a1-m023-reading-passage-01",
+          "passage": "At the farm, Lily hears a sound. “Moo!” It is a cow. Then she hears “quack, quack!” It is a duck. A sheep is near the gate. A horse is in the field. A pig is by the tree and a chicken is near the barn. Lily asks, “What is it?” and names each animal."
+        },
+        "items": [
+          {
+            "itemId": "english-pre-a1-m023-reading-ex01-i01",
+            "position": 1,
+            "prompt": "Where is Lily?",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "At the farm",
+              "At the zoo",
+              "At the café"
+            ]
+          },
+          {
+            "itemId": "english-pre-a1-m023-reading-ex01-i02",
+            "position": 2,
+            "prompt": "Which animal says “moo”?",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "A cow",
+              "A duck",
+              "A pig"
+            ]
+          },
+          {
+            "itemId": "english-pre-a1-m023-reading-ex01-i03",
+            "position": 3,
+            "prompt": "Which animal says “quack”?",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "A duck",
+              "A sheep",
+              "A horse"
+            ]
+          },
+          {
+            "itemId": "english-pre-a1-m023-reading-ex01-i04",
+            "position": 4,
+            "prompt": "Which animal is near the gate?",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "A sheep",
+              "A chicken",
+              "A cow"
+            ]
+          },
+          {
+            "itemId": "english-pre-a1-m023-reading-ex01-i05",
+            "position": 5,
+            "prompt": "Where is the horse?",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "In the field",
+              "By the tree",
+              "Near the barn"
+            ]
+          },
+          {
+            "itemId": "english-pre-a1-m023-reading-ex01-i06",
+            "position": 6,
+            "prompt": "Which animal is by the tree?",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "A pig",
+              "A duck",
+              "A horse"
+            ]
+          },
+          {
+            "itemId": "english-pre-a1-m023-reading-ex01-i07",
+            "position": 7,
+            "prompt": "Which animal is near the barn?",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "A chicken",
+              "A sheep",
+              "A cow"
+            ]
+          },
+          {
+            "itemId": "english-pre-a1-m023-reading-ex01-i08",
+            "position": 8,
+            "prompt": "What question does Lily ask?",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "What is it?",
+              "Where is it?",
+              "How are you?"
+            ]
+          },
+          {
+            "itemId": "english-pre-a1-m023-reading-ex01-i09",
+            "position": 9,
+            "prompt": "Which animal makes a sound twice in the text?",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "The duck",
+              "The horse",
+              "The chicken"
+            ]
+          },
+          {
+            "itemId": "english-pre-a1-m023-reading-ex01-i10",
+            "position": 10,
+            "prompt": "What is Lily doing?",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "Naming animals",
+              "Buying food",
+              "Feeding a fish"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "sectionId": "english-pre-a1-m023-writing",
+      "sectionKey": "writing",
+      "position": 6,
+      "exercise": {
+        "exerciseId": "english-pre-a1-m023-writing-ex01",
+        "type": "dictation",
+        "items": [
+          {
+            "itemId": "english-pre-a1-m023-writing-ex01-i01",
+            "position": 1,
+            "audio": "tts:en-GB:cow",
+            "expectedAnswer": "cow",
+            "evaluation": {
+              "type": "normalised_text"
+            }
+          },
+          {
+            "itemId": "english-pre-a1-m023-writing-ex01-i02",
+            "position": 2,
+            "audio": "tts:en-GB:sheep",
+            "expectedAnswer": "sheep",
+            "evaluation": {
+              "type": "normalised_text"
+            }
+          },
+          {
+            "itemId": "english-pre-a1-m023-writing-ex01-i03",
+            "position": 3,
+            "audio": "tts:en-GB:duck",
+            "expectedAnswer": "duck",
+            "evaluation": {
+              "type": "normalised_text"
+            }
+          },
+          {
+            "itemId": "english-pre-a1-m023-writing-ex01-i04",
+            "position": 4,
+            "audio": "tts:en-GB:horse",
+            "expectedAnswer": "horse",
+            "evaluation": {
+              "type": "normalised_text"
+            }
+          },
+          {
+            "itemId": "english-pre-a1-m023-writing-ex01-i05",
+            "position": 5,
+            "audio": "tts:en-GB:pig",
+            "expectedAnswer": "pig",
+            "evaluation": {
+              "type": "normalised_text"
+            }
+          },
+          {
+            "itemId": "english-pre-a1-m023-writing-ex01-i06",
+            "position": 6,
+            "audio": "tts:en-GB:What is it?",
+            "expectedAnswer": "What is it?",
+            "evaluation": {
+              "type": "normalised_text"
+            }
+          },
+          {
+            "itemId": "english-pre-a1-m023-writing-ex01-i07",
+            "position": 7,
+            "audio": "tts:en-GB:It's a duck.",
+            "expectedAnswer": "It's a duck.",
+            "evaluation": {
+              "type": "normalised_text"
+            }
+          },
+          {
+            "itemId": "english-pre-a1-m023-writing-ex01-i08",
+            "position": 8,
+            "audio": "tts:en-GB:rooster",
+            "expectedAnswer": "rooster",
+            "evaluation": {
+              "type": "normalised_text"
+            }
+          },
+          {
+            "itemId": "english-pre-a1-m023-writing-ex01-i09",
+            "position": 9,
+            "audio": "tts:en-GB:turkey",
+            "expectedAnswer": "turkey",
+            "evaluation": {
+              "type": "normalised_text"
+            }
+          },
+          {
+            "itemId": "english-pre-a1-m023-writing-ex01-i10",
+            "position": 10,
+            "audio": "tts:en-GB:donkey",
+            "expectedAnswer": "donkey",
+            "evaluation": {
+              "type": "normalised_text"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "sectionId": "english-pre-a1-m023-speaking",
+      "sectionKey": "speaking",
+      "position": 7,
+      "exercise": {
+        "exerciseId": "english-pre-a1-m023-speaking-ex01",
+        "type": "speaking_prompts",
+        "items": [
+          {
+            "itemId": "english-pre-a1-m023-speaking-ex01-i01",
+            "position": 1,
+            "prompt": "Say a sentence with “cow”.",
+            "modelAnswer": "I like cow.",
+            "evaluation": {
+              "type": "transcription_feedback",
+              "transcriptionSeparateFromPronunciation": true
+            }
+          },
+          {
+            "itemId": "english-pre-a1-m023-speaking-ex01-i02",
+            "position": 2,
+            "prompt": "Say a sentence with “sheep”.",
+            "modelAnswer": "I like sheep.",
+            "evaluation": {
+              "type": "transcription_feedback",
+              "transcriptionSeparateFromPronunciation": true
+            }
+          },
+          {
+            "itemId": "english-pre-a1-m023-speaking-ex01-i03",
+            "position": 3,
+            "prompt": "Say a sentence with “duck”.",
+            "modelAnswer": "I like duck.",
+            "evaluation": {
+              "type": "transcription_feedback",
+              "transcriptionSeparateFromPronunciation": true
+            }
+          },
+          {
+            "itemId": "english-pre-a1-m023-speaking-ex01-i04",
+            "position": 4,
+            "prompt": "Say a sentence with “horse”.",
+            "modelAnswer": "I like horse.",
+            "evaluation": {
+              "type": "transcription_feedback",
+              "transcriptionSeparateFromPronunciation": true
+            }
+          },
+          {
+            "itemId": "english-pre-a1-m023-speaking-ex01-i05",
+            "position": 5,
+            "prompt": "Say a sentence with “pig”.",
+            "modelAnswer": "I like pig.",
+            "evaluation": {
+              "type": "transcription_feedback",
+              "transcriptionSeparateFromPronunciation": true
+            }
+          },
+          {
+            "itemId": "english-pre-a1-m023-speaking-ex01-i06",
+            "position": 6,
+            "prompt": "Say a sentence with “chicken”.",
+            "modelAnswer": "I like chicken.",
+            "evaluation": {
+              "type": "transcription_feedback",
+              "transcriptionSeparateFromPronunciation": true
+            }
+          },
+          {
+            "itemId": "english-pre-a1-m023-speaking-ex01-i07",
+            "position": 7,
+            "prompt": "Say a sentence with “moo”.",
+            "modelAnswer": "I like moo.",
+            "evaluation": {
+              "type": "transcription_feedback",
+              "transcriptionSeparateFromPronunciation": true
+            }
+          },
+          {
+            "itemId": "english-pre-a1-m023-speaking-ex01-i08",
+            "position": 8,
+            "prompt": "Say a sentence with “quack”.",
+            "modelAnswer": "I like quack.",
+            "evaluation": {
+              "type": "transcription_feedback",
+              "transcriptionSeparateFromPronunciation": true
+            }
+          },
+          {
+            "itemId": "english-pre-a1-m023-speaking-ex01-i09",
+            "position": 9,
+            "prompt": "Say a sentence with “rooster”.",
+            "modelAnswer": "I like rooster.",
+            "evaluation": {
+              "type": "transcription_feedback",
+              "transcriptionSeparateFromPronunciation": true
+            }
+          },
+          {
+            "itemId": "english-pre-a1-m023-speaking-ex01-i10",
+            "position": 10,
+            "prompt": "Say a sentence with “turkey”.",
+            "modelAnswer": "I like turkey.",
+            "evaluation": {
+              "type": "transcription_feedback",
+              "transcriptionSeparateFromPronunciation": true
+            }
+          }
+        ]
+      }
+    },
+    {
+      "sectionId": "english-pre-a1-m023-listening",
+      "sectionKey": "listening",
+      "position": 8,
+      "exercise": {
+        "exerciseId": "english-pre-a1-m023-listening-ex01",
+        "type": "listening_gap_fill",
+        "content": {
+          "audio": "tts:en-GB:Welcome! This is animal sounds. I can see cow. I can see sheep. I can see duck. I can see horse. I can see pig. I can see chicken. I can see moo. I can see quack. I can see rooster. I can see turkey. I like this place. Thank you for listening.",
+          "audioLocale": "en-GB",
+          "transcriptTemplate": "Welcome! This is animal sounds. I can see [[gap-01]]. I can see [[gap-02]]. I can see [[gap-03]]. I can see [[gap-04]]. I can see [[gap-05]]. I can see [[gap-06]]. I can see [[gap-07]]. I can see [[gap-08]]. I can see [[gap-09]]. I can see [[gap-10]]. I like this place. Thank you for listening.",
+          "wordBank": [
+            {
+              "wordId": "english-pre-a1-m023-listening-word-01",
+              "word": "cow"
+            },
+            {
+              "wordId": "english-pre-a1-m023-listening-word-02",
+              "word": "sheep"
+            },
+            {
+              "wordId": "english-pre-a1-m023-listening-word-03",
+              "word": "duck"
+            },
+            {
+              "wordId": "english-pre-a1-m023-listening-word-04",
+              "word": "horse"
+            },
+            {
+              "wordId": "english-pre-a1-m023-listening-word-05",
+              "word": "pig"
+            },
+            {
+              "wordId": "english-pre-a1-m023-listening-word-06",
+              "word": "chicken"
+            },
+            {
+              "wordId": "english-pre-a1-m023-listening-word-07",
+              "word": "moo"
+            },
+            {
+              "wordId": "english-pre-a1-m023-listening-word-08",
+              "word": "quack"
+            },
+            {
+              "wordId": "english-pre-a1-m023-listening-word-09",
+              "word": "rooster"
+            },
+            {
+              "wordId": "english-pre-a1-m023-listening-word-10",
+              "word": "turkey"
+            }
+          ],
+          "interaction": "select_place_move_replace"
+        },
+        "items": [
+          {
+            "itemId": "english-pre-a1-m023-listening-ex01-i01",
+            "position": 1,
+            "gapToken": "[[gap-01]]",
+            "expectedWordId": "english-pre-a1-m023-listening-word-01"
+          },
+          {
+            "itemId": "english-pre-a1-m023-listening-ex01-i02",
+            "position": 2,
+            "gapToken": "[[gap-02]]",
+            "expectedWordId": "english-pre-a1-m023-listening-word-02"
+          },
+          {
+            "itemId": "english-pre-a1-m023-listening-ex01-i03",
+            "position": 3,
+            "gapToken": "[[gap-03]]",
+            "expectedWordId": "english-pre-a1-m023-listening-word-03"
+          },
+          {
+            "itemId": "english-pre-a1-m023-listening-ex01-i04",
+            "position": 4,
+            "gapToken": "[[gap-04]]",
+            "expectedWordId": "english-pre-a1-m023-listening-word-04"
+          },
+          {
+            "itemId": "english-pre-a1-m023-listening-ex01-i05",
+            "position": 5,
+            "gapToken": "[[gap-05]]",
+            "expectedWordId": "english-pre-a1-m023-listening-word-05"
+          },
+          {
+            "itemId": "english-pre-a1-m023-listening-ex01-i06",
+            "position": 6,
+            "gapToken": "[[gap-06]]",
+            "expectedWordId": "english-pre-a1-m023-listening-word-06"
+          },
+          {
+            "itemId": "english-pre-a1-m023-listening-ex01-i07",
+            "position": 7,
+            "gapToken": "[[gap-07]]",
+            "expectedWordId": "english-pre-a1-m023-listening-word-07"
+          },
+          {
+            "itemId": "english-pre-a1-m023-listening-ex01-i08",
+            "position": 8,
+            "gapToken": "[[gap-08]]",
+            "expectedWordId": "english-pre-a1-m023-listening-word-08"
+          },
+          {
+            "itemId": "english-pre-a1-m023-listening-ex01-i09",
+            "position": 9,
+            "gapToken": "[[gap-09]]",
+            "expectedWordId": "english-pre-a1-m023-listening-word-09"
+          },
+          {
+            "itemId": "english-pre-a1-m023-listening-ex01-i10",
+            "position": 10,
+            "gapToken": "[[gap-10]]",
+            "expectedWordId": "english-pre-a1-m023-listening-word-10"
+          }
+        ]
+      }
+    }
+  ]
+}
