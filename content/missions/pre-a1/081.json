@@ -99,28 +99,29 @@
           }
         ],
         "theory": {
-          "title": "Frases y vocabulario de la misión",
-          "explanation": "Observa el orden de las palabras en las frases y relaciona cada expresión con su significado en español.",
+          "title": "At the farm shop",
+          "explanation": "Usa «There is…» para decir qué hay y «I buy…» para hablar de lo que compras.",
           "patterns": [
             {
               "label": "Modelo",
-              "pattern": "Where is the farm shop?",
+              "pattern": "There is a farm shop.",
               "examples": [
-                "Where is the farm shop?",
-                "Where is the egg?",
-                "Where is the milk?"
+                "There is a farm shop.",
+                "There are six eggs.",
+                "I buy milk and cheese."
               ]
             },
             {
-              "label": "Traducción",
-              "pattern": "English sentence → significado en español",
+              "label": "Pregunta y respuesta",
+              "pattern": "Lee el modelo y cambia una palabra para hablar de otra cosa.",
               "examples": [
-                "Where is the cheese?",
-                "Where is the honey?"
+                "There is a farm shop.",
+                "There are six eggs.",
+                "I buy milk and cheese."
               ]
             }
           ],
-          "tip": "Lee la frase completa antes de elegir la traducción."
+          "tip": "Escucha el modelo, repite la frase y cambia una palabra para crear una frase nueva."
         }
       }
     },
@@ -426,131 +427,131 @@
           {
             "itemId": "english-pre-a1-m081-grammar-ex01-i01",
             "position": 1,
-            "prompt": "Elige la traducción correcta: “Where is the farm shop?”",
+            "prompt": "Complete: There ___ six eggs.",
             "evaluation": {
               "type": "single_choice"
             },
             "options": [
-              "¿Dónde está la tienda de la granja?",
-              "¿Dónde está el huevo?",
-              "¿Dónde está la leche?"
+              "There are six eggs.",
+              "There is six eggs.",
+              "There be six eggs."
             ]
           },
           {
             "itemId": "english-pre-a1-m081-grammar-ex01-i02",
             "position": 2,
-            "prompt": "Elige la traducción correcta: “Where is the egg?”",
+            "prompt": "Complete: There ___ a basket on the table.",
             "evaluation": {
               "type": "single_choice"
             },
             "options": [
-              "¿Dónde está el huevo?",
-              "¿Dónde está la leche?",
-              "¿Dónde está el queso?"
+              "is",
+              "are",
+              "am"
             ]
           },
           {
             "itemId": "english-pre-a1-m081-grammar-ex01-i03",
             "position": 3,
-            "prompt": "Elige la traducción correcta: “Where is the milk?”",
+            "prompt": "Choose the verb: I ___ milk at the farm shop.",
             "evaluation": {
               "type": "single_choice"
             },
             "options": [
-              "¿Dónde está la leche?",
-              "¿Dónde está el queso?",
-              "¿Dónde está la miel?"
+              "buy",
+              "buys",
+              "buying"
             ]
           },
           {
             "itemId": "english-pre-a1-m081-grammar-ex01-i04",
             "position": 4,
-            "prompt": "Elige la traducción correcta: “Where is the cheese?”",
+            "prompt": "Choose the correct amount: There is ___ cheese.",
             "evaluation": {
               "type": "single_choice"
             },
             "options": [
-              "¿Dónde está el queso?",
-              "¿Dónde está la miel?",
-              "¿Dónde está la manzana?"
+              "some cheese",
+              "a cheese",
+              "an cheese"
             ]
           },
           {
             "itemId": "english-pre-a1-m081-grammar-ex01-i05",
             "position": 5,
-            "prompt": "Elige la traducción correcta: “Where is the honey?”",
+            "prompt": "Choose the correct verb: The farmer ___ hello.",
             "evaluation": {
               "type": "single_choice"
             },
             "options": [
-              "¿Dónde está la miel?",
-              "¿Dónde está la manzana?",
-              "¿Dónde está la patata?"
+              "says",
+              "say",
+              "saying"
             ]
           },
           {
             "itemId": "english-pre-a1-m081-grammar-ex01-i06",
             "position": 6,
-            "prompt": "Elige la traducción correcta: “Where is the apple?”",
+            "prompt": "Choose the correct sentence about the apples.",
             "evaluation": {
               "type": "single_choice"
             },
             "options": [
-              "¿Dónde está la manzana?",
-              "¿Dónde está la patata?",
-              "¿Dónde está la zanahoria?"
+              "The apples are red.",
+              "The apples is red.",
+              "The apples red are."
             ]
           },
           {
             "itemId": "english-pre-a1-m081-grammar-ex01-i07",
             "position": 7,
-            "prompt": "Elige la traducción correcta: “Where is the potato?”",
+            "prompt": "Choose the correct article: I have ___ apple.",
             "evaluation": {
               "type": "single_choice"
             },
             "options": [
-              "¿Dónde está la patata?",
-              "¿Dónde está la zanahoria?",
-              "¿Dónde está la cesta?"
+              "an",
+              "a",
+              "the"
             ]
           },
           {
             "itemId": "english-pre-a1-m081-grammar-ex01-i08",
             "position": 8,
-            "prompt": "Elige la traducción correcta: “Where is the carrot?”",
+            "prompt": "Choose the plural noun: There are two ___.",
             "evaluation": {
               "type": "single_choice"
             },
             "options": [
-              "¿Dónde está la zanahoria?",
-              "¿Dónde está la cesta?",
-              "¿Dónde está el granjero?"
+              "carrots",
+              "carrot",
+              "a carrot"
             ]
           },
           {
             "itemId": "english-pre-a1-m081-grammar-ex01-i09",
             "position": 9,
-            "prompt": "Elige la traducción correcta: “Where is the basket?”",
+            "prompt": "Ask about the price of milk.",
             "evaluation": {
               "type": "single_choice"
             },
             "options": [
-              "¿Dónde está la cesta?",
-              "¿Dónde está el granjero?",
-              "¿Dónde está la tienda de la granja?"
+              "How much is the milk?",
+              "How many is the milk?",
+              "How milk much is?"
             ]
           },
           {
             "itemId": "english-pre-a1-m081-grammar-ex01-i10",
             "position": 10,
-            "prompt": "Elige la traducción correcta: “Where is the farmer?”",
+            "prompt": "Choose the correct sentence about honey.",
             "evaluation": {
               "type": "single_choice"
             },
             "options": [
-              "¿Dónde está el granjero?",
-              "¿Dónde está la tienda de la granja?",
-              "¿Dónde está el huevo?"
+              "I like honey.",
+              "I likes honey.",
+              "I liking honey."
             ]
           }
         ]
@@ -569,7 +570,7 @@
             "position": 1,
             "word": "farm shop",
             "translation": "la tienda de la granja",
-            "pronunciationGuide": "Escucha el modelo británico y repite despacio.",
+            "pronunciationGuide": "Listen to “farm shop”, notice the sounds, and repeat it slowly twice.",
             "audio": "tts:en-GB:farm shop"
           },
           {
@@ -577,7 +578,7 @@
             "position": 2,
             "word": "egg",
             "translation": "el huevo",
-            "pronunciationGuide": "Escucha el modelo británico y repite despacio.",
+            "pronunciationGuide": "Listen to “egg”, notice the sounds, and repeat it slowly twice.",
             "audio": "tts:en-GB:egg"
           },
           {
@@ -585,7 +586,7 @@
             "position": 3,
             "word": "milk",
             "translation": "la leche",
-            "pronunciationGuide": "Escucha el modelo británico y repite despacio.",
+            "pronunciationGuide": "Listen to “milk”, notice the sounds, and repeat it slowly twice.",
             "audio": "tts:en-GB:milk"
           },
           {
@@ -593,7 +594,7 @@
             "position": 4,
             "word": "cheese",
             "translation": "el queso",
-            "pronunciationGuide": "Escucha el modelo británico y repite despacio.",
+            "pronunciationGuide": "Listen to “cheese”, notice the sounds, and repeat it slowly twice.",
             "audio": "tts:en-GB:cheese"
           },
           {
@@ -601,7 +602,7 @@
             "position": 5,
             "word": "honey",
             "translation": "la miel",
-            "pronunciationGuide": "Escucha el modelo británico y repite despacio.",
+            "pronunciationGuide": "Listen to “honey”, notice the sounds, and repeat it slowly twice.",
             "audio": "tts:en-GB:honey"
           },
           {
@@ -609,7 +610,7 @@
             "position": 6,
             "word": "apple",
             "translation": "la manzana",
-            "pronunciationGuide": "Escucha el modelo británico y repite despacio.",
+            "pronunciationGuide": "Listen to “apple”, notice the sounds, and repeat it slowly twice.",
             "audio": "tts:en-GB:apple"
           },
           {
@@ -617,7 +618,7 @@
             "position": 7,
             "word": "potato",
             "translation": "la patata",
-            "pronunciationGuide": "Escucha el modelo británico y repite despacio.",
+            "pronunciationGuide": "Listen to “potato”, notice the sounds, and repeat it slowly twice.",
             "audio": "tts:en-GB:potato"
           },
           {
@@ -625,7 +626,7 @@
             "position": 8,
             "word": "carrot",
             "translation": "la zanahoria",
-            "pronunciationGuide": "Escucha el modelo británico y repite despacio.",
+            "pronunciationGuide": "Listen to “carrot”, notice the sounds, and repeat it slowly twice.",
             "audio": "tts:en-GB:carrot"
           },
           {
@@ -633,7 +634,7 @@
             "position": 9,
             "word": "basket",
             "translation": "la cesta",
-            "pronunciationGuide": "Escucha el modelo británico y repite despacio.",
+            "pronunciationGuide": "Listen to “basket”, notice the sounds, and repeat it slowly twice.",
             "audio": "tts:en-GB:basket"
           },
           {
@@ -641,7 +642,7 @@
             "position": 10,
             "word": "farmer",
             "translation": "el granjero",
-            "pronunciationGuide": "Escucha el modelo británico y repite despacio.",
+            "pronunciationGuide": "Listen to “farmer”, notice the sounds, and repeat it slowly twice.",
             "audio": "tts:en-GB:farmer"
           }
         ]
@@ -656,137 +657,137 @@
         "type": "reading_comprehension",
         "content": {
           "passageId": "english-pre-a1-m081-reading-passage-01",
-          "passage": "I like the farm shop. I like the egg. I like the milk. I like the cheese. I like the honey. I like the apple. I like the potato. I like the carrot. I like the basket. I like the farmer."
+          "passage": "Mia is at the farm shop. She has a basket. She buys six eggs. She buys milk and cheese. Her dad likes honey. Mia chooses a red apple. She also buys a potato and a carrot. The farmer says hello. Mia takes her food home. She is happy."
         },
         "items": [
           {
             "itemId": "english-pre-a1-m081-reading-ex01-i01",
             "position": 1,
-            "prompt": "¿Qué significa “I like the farm shop.”?",
+            "prompt": "Where is Mia?",
             "evaluation": {
               "type": "single_choice"
             },
             "options": [
-              "Me gusta la tienda de la granja.",
-              "Me gusta el huevo.",
-              "Me gusta la leche."
+              "At the farm shop",
+              "At the toy shop",
+              "At the café"
             ]
           },
           {
             "itemId": "english-pre-a1-m081-reading-ex01-i02",
             "position": 2,
-            "prompt": "¿Qué significa “I like the egg.”?",
+            "prompt": "What does Mia carry?",
             "evaluation": {
               "type": "single_choice"
             },
             "options": [
-              "Me gusta el huevo.",
-              "Me gusta la leche.",
-              "Me gusta el queso."
+              "A basket",
+              "A helmet",
+              "A map"
             ]
           },
           {
             "itemId": "english-pre-a1-m081-reading-ex01-i03",
             "position": 3,
-            "prompt": "¿Qué significa “I like the milk.”?",
+            "prompt": "How many eggs does she buy?",
             "evaluation": {
               "type": "single_choice"
             },
             "options": [
-              "Me gusta la leche.",
-              "Me gusta el queso.",
-              "Me gusta la miel."
+              "Six",
+              "Two",
+              "Ten"
             ]
           },
           {
             "itemId": "english-pre-a1-m081-reading-ex01-i04",
             "position": 4,
-            "prompt": "¿Qué significa “I like the cheese.”?",
+            "prompt": "What does she buy with milk?",
             "evaluation": {
               "type": "single_choice"
             },
             "options": [
-              "Me gusta el queso.",
-              "Me gusta la miel.",
-              "Me gusta la manzana."
+              "Cheese",
+              "A toy",
+              "A shirt"
             ]
           },
           {
             "itemId": "english-pre-a1-m081-reading-ex01-i05",
             "position": 5,
-            "prompt": "¿Qué significa “I like the honey.”?",
+            "prompt": "Who likes honey?",
             "evaluation": {
               "type": "single_choice"
             },
             "options": [
-              "Me gusta la miel.",
-              "Me gusta la manzana.",
-              "Me gusta la patata."
+              "Her dad",
+              "The farmer",
+              "Her mum"
             ]
           },
           {
             "itemId": "english-pre-a1-m081-reading-ex01-i06",
             "position": 6,
-            "prompt": "¿Qué significa “I like the apple.”?",
+            "prompt": "What colour is the apple?",
             "evaluation": {
               "type": "single_choice"
             },
             "options": [
-              "Me gusta la manzana.",
-              "Me gusta la patata.",
-              "Me gusta la zanahoria."
+              "Red",
+              "Blue",
+              "Green"
             ]
           },
           {
             "itemId": "english-pre-a1-m081-reading-ex01-i07",
             "position": 7,
-            "prompt": "¿Qué significa “I like the potato.”?",
+            "prompt": "Which vegetables does Mia buy?",
             "evaluation": {
               "type": "single_choice"
             },
             "options": [
-              "Me gusta la patata.",
-              "Me gusta la zanahoria.",
-              "Me gusta la cesta."
+              "A potato and a carrot",
+              "A tomato and an onion",
+              "A pea and a bean"
             ]
           },
           {
             "itemId": "english-pre-a1-m081-reading-ex01-i08",
             "position": 8,
-            "prompt": "¿Qué significa “I like the carrot.”?",
+            "prompt": "Who says hello?",
             "evaluation": {
               "type": "single_choice"
             },
             "options": [
-              "Me gusta la zanahoria.",
-              "Me gusta la cesta.",
-              "Me gusta el granjero."
+              "The farmer",
+              "The firefighter",
+              "The hairdresser"
             ]
           },
           {
             "itemId": "english-pre-a1-m081-reading-ex01-i09",
             "position": 9,
-            "prompt": "¿Qué significa “I like the basket.”?",
+            "prompt": "Where does Mia take the food?",
             "evaluation": {
               "type": "single_choice"
             },
             "options": [
-              "Me gusta la cesta.",
-              "Me gusta el granjero.",
-              "Me gusta la tienda de la granja."
+              "Home",
+              "To school",
+              "To the station"
             ]
           },
           {
             "itemId": "english-pre-a1-m081-reading-ex01-i10",
             "position": 10,
-            "prompt": "¿Qué significa “I like the farmer.”?",
+            "prompt": "How does Mia feel?",
             "evaluation": {
               "type": "single_choice"
             },
             "options": [
-              "Me gusta el granjero.",
-              "Me gusta la tienda de la granja.",
-              "Me gusta el huevo."
+              "Happy",
+              "Sad",
+              "Tired"
             ]
           }
         ]
@@ -894,9 +895,9 @@
           {
             "itemId": "english-pre-a1-m081-speaking-ex01-i01",
             "position": 1,
-            "prompt": "Say the word “farm shop”.",
-            "modelAnswer": "farm shop",
-            "audio": "tts:en-GB:farm shop",
+            "prompt": "Say the sentence. Use the model to help you: “This is a farm shop.”",
+            "modelAnswer": "This is a farm shop.",
+            "audio": "tts:en-GB:This is a farm shop.",
             "evaluation": {
               "type": "transcription_feedback",
               "transcriptionSeparateFromPronunciation": true
@@ -905,9 +906,9 @@
           {
             "itemId": "english-pre-a1-m081-speaking-ex01-i02",
             "position": 2,
-            "prompt": "Say the word “egg”.",
-            "modelAnswer": "egg",
-            "audio": "tts:en-GB:egg",
+            "prompt": "Say the sentence. Use the model to help you: “I have a basket.”",
+            "modelAnswer": "I have a basket.",
+            "audio": "tts:en-GB:I have a basket.",
             "evaluation": {
               "type": "transcription_feedback",
               "transcriptionSeparateFromPronunciation": true
@@ -916,9 +917,9 @@
           {
             "itemId": "english-pre-a1-m081-speaking-ex01-i03",
             "position": 3,
-            "prompt": "Say the word “milk”.",
-            "modelAnswer": "milk",
-            "audio": "tts:en-GB:milk",
+            "prompt": "Say the sentence. Use the model to help you: “I buy six eggs.”",
+            "modelAnswer": "I buy six eggs.",
+            "audio": "tts:en-GB:I buy six eggs.",
             "evaluation": {
               "type": "transcription_feedback",
               "transcriptionSeparateFromPronunciation": true
@@ -927,9 +928,9 @@
           {
             "itemId": "english-pre-a1-m081-speaking-ex01-i04",
             "position": 4,
-            "prompt": "Say the word “cheese”.",
-            "modelAnswer": "cheese",
-            "audio": "tts:en-GB:cheese",
+            "prompt": "Say the sentence. Use the model to help you: “I like milk.”",
+            "modelAnswer": "I like milk.",
+            "audio": "tts:en-GB:I like milk.",
             "evaluation": {
               "type": "transcription_feedback",
               "transcriptionSeparateFromPronunciation": true
@@ -938,9 +939,9 @@
           {
             "itemId": "english-pre-a1-m081-speaking-ex01-i05",
             "position": 5,
-            "prompt": "Say the word “honey”.",
-            "modelAnswer": "honey",
-            "audio": "tts:en-GB:honey",
+            "prompt": "Say the sentence. Use the model to help you: “I like cheese.”",
+            "modelAnswer": "I like cheese.",
+            "audio": "tts:en-GB:I like cheese.",
             "evaluation": {
               "type": "transcription_feedback",
               "transcriptionSeparateFromPronunciation": true
@@ -949,9 +950,9 @@
           {
             "itemId": "english-pre-a1-m081-speaking-ex01-i06",
             "position": 6,
-            "prompt": "Say the word “apple”.",
-            "modelAnswer": "apple",
-            "audio": "tts:en-GB:apple",
+            "prompt": "Say the sentence. Use the model to help you: “My dad likes honey.”",
+            "modelAnswer": "My dad likes honey.",
+            "audio": "tts:en-GB:My dad likes honey.",
             "evaluation": {
               "type": "transcription_feedback",
               "transcriptionSeparateFromPronunciation": true
@@ -960,9 +961,9 @@
           {
             "itemId": "english-pre-a1-m081-speaking-ex01-i07",
             "position": 7,
-            "prompt": "Say the word “potato”.",
-            "modelAnswer": "potato",
-            "audio": "tts:en-GB:potato",
+            "prompt": "Say the sentence. Use the model to help you: “The apple is red.”",
+            "modelAnswer": "The apple is red.",
+            "audio": "tts:en-GB:The apple is red.",
             "evaluation": {
               "type": "transcription_feedback",
               "transcriptionSeparateFromPronunciation": true
@@ -971,9 +972,9 @@
           {
             "itemId": "english-pre-a1-m081-speaking-ex01-i08",
             "position": 8,
-            "prompt": "Say the word “carrot”.",
-            "modelAnswer": "carrot",
-            "audio": "tts:en-GB:carrot",
+            "prompt": "Say the sentence. Use the model to help you: “I buy a potato.”",
+            "modelAnswer": "I buy a potato.",
+            "audio": "tts:en-GB:I buy a potato.",
             "evaluation": {
               "type": "transcription_feedback",
               "transcriptionSeparateFromPronunciation": true
@@ -982,9 +983,9 @@
           {
             "itemId": "english-pre-a1-m081-speaking-ex01-i09",
             "position": 9,
-            "prompt": "Say the word “basket”.",
-            "modelAnswer": "basket",
-            "audio": "tts:en-GB:basket",
+            "prompt": "Say the sentence. Use the model to help you: “I buy a carrot.”",
+            "modelAnswer": "I buy a carrot.",
+            "audio": "tts:en-GB:I buy a carrot.",
             "evaluation": {
               "type": "transcription_feedback",
               "transcriptionSeparateFromPronunciation": true
@@ -993,9 +994,9 @@
           {
             "itemId": "english-pre-a1-m081-speaking-ex01-i10",
             "position": 10,
-            "prompt": "Say the word “farmer”.",
-            "modelAnswer": "farmer",
-            "audio": "tts:en-GB:farmer",
+            "prompt": "Say the sentence. Use the model to help you: “The farmer says hello.”",
+            "modelAnswer": "The farmer says hello.",
+            "audio": "tts:en-GB:The farmer says hello.",
             "evaluation": {
               "type": "transcription_feedback",
               "transcriptionSeparateFromPronunciation": true
@@ -1012,9 +1013,9 @@
         "exerciseId": "english-pre-a1-m081-listening-ex01",
         "type": "listening_gap_fill",
         "content": {
-          "audio": "tts:en-GB:Listen and complete. This is the farm shop. This is the egg. This is the milk. This is the cheese. This is the honey. This is the apple. This is the potato. This is the carrot. This is the basket. This is the farmer.",
+          "audio": "tts:en-GB:Listen and complete. We go to the farm shop on Saturday. I carry a basket. I buy an egg and some milk. I like cheese on my sandwich. My dad likes honey. I choose a red apple. We also buy a potato and a carrot. The farmer helps us. We take the food home. It is a good day.",
           "audioLocale": "en-GB",
-          "transcriptTemplate": "Listen and complete. This is the [[gap-01]]. This is the [[gap-02]]. This is the [[gap-03]]. This is the [[gap-04]]. This is the [[gap-05]]. This is the [[gap-06]]. This is the [[gap-07]]. This is the [[gap-08]]. This is the [[gap-09]]. This is the [[gap-10]].",
+          "transcriptTemplate": "Listen and complete. We go to the [[gap-01]] on Saturday. I carry a [[gap-09]]. I buy an [[gap-02]] and some [[gap-03]]. I like [[gap-04]] on my sandwich. My dad likes [[gap-05]]. I choose a red [[gap-06]]. We also buy a [[gap-07]] and a [[gap-08]]. The [[gap-10]] helps us. We take the food home. It is a good day.",
           "wordBank": [
             {
               "wordId": "english-pre-a1-m081-listening-word-01",

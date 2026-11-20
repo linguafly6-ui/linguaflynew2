@@ -99,28 +99,29 @@
           }
         ],
         "theory": {
-          "title": "Frases y vocabulario de la misión",
-          "explanation": "Observa el orden de las palabras en las frases y relaciona cada expresión con su significado en español.",
+          "title": "At the café",
+          "explanation": "Usa «I'd like…» para pedir algo y «Can I have…?» para pedir con educación.",
           "patterns": [
             {
               "label": "Modelo",
-              "pattern": "Where is the café?",
+              "pattern": "I'd like a cup of tea, please.",
               "examples": [
-                "Where is the café?",
-                "Where is the coffee?",
-                "Where is the tea?"
+                "I'd like a cup of tea, please.",
+                "Can I have a sandwich?",
+                "The juice is in a glass."
               ]
             },
             {
-              "label": "Traducción",
-              "pattern": "English sentence → significado en español",
+              "label": "Pregunta y respuesta",
+              "pattern": "Lee el modelo y cambia una palabra para hablar de otra cosa.",
               "examples": [
-                "Where is the juice?",
-                "Where is the sandwich?"
+                "I'd like a cup of tea, please.",
+                "Can I have a sandwich?",
+                "The juice is in a glass."
               ]
             }
           ],
-          "tip": "Lee la frase completa antes de elegir la traducción."
+          "tip": "Escucha el modelo, repite la frase y cambia una palabra para crear una frase nueva."
         }
       }
     },
@@ -426,131 +427,131 @@
           {
             "itemId": "english-pre-a1-m089-grammar-ex01-i01",
             "position": 1,
-            "prompt": "Elige la traducción correcta: “Where is the café?”",
+            "prompt": "Complete the polite order: I'd ___ a cup of tea.",
             "evaluation": {
               "type": "single_choice"
             },
             "options": [
-              "¿Dónde está la cafetería?",
-              "¿Dónde está el café?",
-              "¿Dónde está el té?"
+              "like",
+              "likes",
+              "liking"
             ]
           },
           {
             "itemId": "english-pre-a1-m089-grammar-ex01-i02",
             "position": 2,
-            "prompt": "Elige la traducción correcta: “Where is the coffee?”",
+            "prompt": "Choose the polite way to ask for a sandwich.",
             "evaluation": {
               "type": "single_choice"
             },
             "options": [
-              "¿Dónde está el café?",
-              "¿Dónde está el té?",
-              "¿Dónde está el zumo?"
+              "Can I have a sandwich, please?",
+              "I can has a sandwich?",
+              "Can I having sandwich?"
             ]
           },
           {
             "itemId": "english-pre-a1-m089-grammar-ex01-i03",
             "position": 3,
-            "prompt": "Elige la traducción correcta: “Where is the tea?”",
+            "prompt": "Complete: The coffee ___ hot.",
             "evaluation": {
               "type": "single_choice"
             },
             "options": [
-              "¿Dónde está el té?",
-              "¿Dónde está el zumo?",
-              "¿Dónde está el sándwich?"
+              "is",
+              "are",
+              "am"
             ]
           },
           {
             "itemId": "english-pre-a1-m089-grammar-ex01-i04",
             "position": 4,
-            "prompt": "Elige la traducción correcta: “Where is the juice?”",
+            "prompt": "Choose the correct phrase for juice.",
             "evaluation": {
               "type": "single_choice"
             },
             "options": [
-              "¿Dónde está el zumo?",
-              "¿Dónde está el sándwich?",
-              "¿Dónde está el menú?"
+              "a glass of juice",
+              "a juice of glass",
+              "an glass of juice"
             ]
           },
           {
             "itemId": "english-pre-a1-m089-grammar-ex01-i05",
             "position": 5,
-            "prompt": "Elige la traducción correcta: “Where is the sandwich?”",
+            "prompt": "Complete: I drink tea ___ a cup.",
             "evaluation": {
               "type": "single_choice"
             },
             "options": [
-              "¿Dónde está el sándwich?",
-              "¿Dónde está el menú?",
-              "¿Dónde está la taza?"
+              "from",
+              "on",
+              "at"
             ]
           },
           {
             "itemId": "english-pre-a1-m089-grammar-ex01-i06",
             "position": 6,
-            "prompt": "Elige la traducción correcta: “Where is the menu?”",
+            "prompt": "Choose the correct sentence about the menu.",
             "evaluation": {
               "type": "single_choice"
             },
             "options": [
-              "¿Dónde está el menú?",
-              "¿Dónde está la taza?",
-              "¿Dónde está el vaso?"
+              "The menu is on the table.",
+              "The menu are on the table.",
+              "The menu on is table."
             ]
           },
           {
             "itemId": "english-pre-a1-m089-grammar-ex01-i07",
             "position": 7,
-            "prompt": "Elige la traducción correcta: “Where is the cup?”",
+            "prompt": "Complete: Can I have ___ milk?",
             "evaluation": {
               "type": "single_choice"
             },
             "options": [
-              "¿Dónde está la taza?",
-              "¿Dónde está el vaso?",
-              "¿Dónde está el azúcar?"
+              "some",
+              "a",
+              "an"
             ]
           },
           {
             "itemId": "english-pre-a1-m089-grammar-ex01-i08",
             "position": 8,
-            "prompt": "Elige la traducción correcta: “Where is the glass?”",
+            "prompt": "Choose the correct sentence about sugar.",
             "evaluation": {
               "type": "single_choice"
             },
             "options": [
-              "¿Dónde está el vaso?",
-              "¿Dónde está el azúcar?",
-              "¿Dónde está la leche?"
+              "I like sugar in my tea.",
+              "I likes sugar in my tea.",
+              "I liking sugar in my tea."
             ]
           },
           {
             "itemId": "english-pre-a1-m089-grammar-ex01-i09",
             "position": 9,
-            "prompt": "Elige la traducción correcta: “Where is the sugar?”",
+            "prompt": "Complete: The waiter ___ the food.",
             "evaluation": {
               "type": "single_choice"
             },
             "options": [
-              "¿Dónde está el azúcar?",
-              "¿Dónde está la leche?",
-              "¿Dónde está la cafetería?"
+              "brings",
+              "bring",
+              "bringing"
             ]
           },
           {
             "itemId": "english-pre-a1-m089-grammar-ex01-i10",
             "position": 10,
-            "prompt": "Elige la traducción correcta: “Where is the milk?”",
+            "prompt": "Choose the correct question to offer juice.",
             "evaluation": {
               "type": "single_choice"
             },
             "options": [
-              "¿Dónde está la leche?",
-              "¿Dónde está la cafetería?",
-              "¿Dónde está el café?"
+              "Would you like some juice?",
+              "Would you likes some juice?",
+              "You would like juice?"
             ]
           }
         ]
@@ -569,7 +570,7 @@
             "position": 1,
             "word": "café",
             "translation": "la cafetería",
-            "pronunciationGuide": "Escucha el modelo británico y repite despacio.",
+            "pronunciationGuide": "Listen to “café”, notice the sounds, and repeat it slowly twice.",
             "audio": "tts:en-GB:café"
           },
           {
@@ -577,7 +578,7 @@
             "position": 2,
             "word": "coffee",
             "translation": "el café",
-            "pronunciationGuide": "Escucha el modelo británico y repite despacio.",
+            "pronunciationGuide": "Listen to “coffee”, notice the sounds, and repeat it slowly twice.",
             "audio": "tts:en-GB:coffee"
           },
           {
@@ -585,7 +586,7 @@
             "position": 3,
             "word": "tea",
             "translation": "el té",
-            "pronunciationGuide": "Escucha el modelo británico y repite despacio.",
+            "pronunciationGuide": "Listen to “tea”, notice the sounds, and repeat it slowly twice.",
             "audio": "tts:en-GB:tea"
           },
           {
@@ -593,7 +594,7 @@
             "position": 4,
             "word": "juice",
             "translation": "el zumo",
-            "pronunciationGuide": "Escucha el modelo británico y repite despacio.",
+            "pronunciationGuide": "Listen to “juice”, notice the sounds, and repeat it slowly twice.",
             "audio": "tts:en-GB:juice"
           },
           {
@@ -601,7 +602,7 @@
             "position": 5,
             "word": "sandwich",
             "translation": "el sándwich",
-            "pronunciationGuide": "Escucha el modelo británico y repite despacio.",
+            "pronunciationGuide": "Listen to “sandwich”, notice the sounds, and repeat it slowly twice.",
             "audio": "tts:en-GB:sandwich"
           },
           {
@@ -609,7 +610,7 @@
             "position": 6,
             "word": "menu",
             "translation": "el menú",
-            "pronunciationGuide": "Escucha el modelo británico y repite despacio.",
+            "pronunciationGuide": "Listen to “menu”, notice the sounds, and repeat it slowly twice.",
             "audio": "tts:en-GB:menu"
           },
           {
@@ -617,7 +618,7 @@
             "position": 7,
             "word": "cup",
             "translation": "la taza",
-            "pronunciationGuide": "Escucha el modelo británico y repite despacio.",
+            "pronunciationGuide": "Listen to “cup”, notice the sounds, and repeat it slowly twice.",
             "audio": "tts:en-GB:cup"
           },
           {
@@ -625,7 +626,7 @@
             "position": 8,
             "word": "glass",
             "translation": "el vaso",
-            "pronunciationGuide": "Escucha el modelo británico y repite despacio.",
+            "pronunciationGuide": "Listen to “glass”, notice the sounds, and repeat it slowly twice.",
             "audio": "tts:en-GB:glass"
           },
           {
@@ -633,7 +634,7 @@
             "position": 9,
             "word": "sugar",
             "translation": "el azúcar",
-            "pronunciationGuide": "Escucha el modelo británico y repite despacio.",
+            "pronunciationGuide": "Listen to “sugar”, notice the sounds, and repeat it slowly twice.",
             "audio": "tts:en-GB:sugar"
           },
           {
@@ -641,7 +642,7 @@
             "position": 10,
             "word": "milk",
             "translation": "la leche",
-            "pronunciationGuide": "Escucha el modelo británico y repite despacio.",
+            "pronunciationGuide": "Listen to “milk”, notice the sounds, and repeat it slowly twice.",
             "audio": "tts:en-GB:milk"
           }
         ]
@@ -656,137 +657,137 @@
         "type": "reading_comprehension",
         "content": {
           "passageId": "english-pre-a1-m089-reading-passage-01",
-          "passage": "I like the café. I like the coffee. I like the tea. I like the juice. I like the sandwich. I like the menu. I like the cup. I like the glass. I like the sugar. I like the milk."
+          "passage": "Nora and Ben go to a café. They look at the menu. Nora would like a cup of tea. Ben orders coffee. They share a sandwich. Nora has a glass of juice too. Ben likes milk in his coffee. He asks for some sugar. The waiter brings the drinks. They enjoy their visit."
         },
         "items": [
           {
             "itemId": "english-pre-a1-m089-reading-ex01-i01",
             "position": 1,
-            "prompt": "¿Qué significa “I like the café.”?",
+            "prompt": "Where do Nora and Ben go?",
             "evaluation": {
               "type": "single_choice"
             },
             "options": [
-              "Me gusta la cafetería.",
-              "Me gusta el café.",
-              "Me gusta el té."
+              "To a café",
+              "To a clothes shop",
+              "To a campsite"
             ]
           },
           {
             "itemId": "english-pre-a1-m089-reading-ex01-i02",
             "position": 2,
-            "prompt": "¿Qué significa “I like the coffee.”?",
+            "prompt": "What do they look at?",
             "evaluation": {
               "type": "single_choice"
             },
             "options": [
-              "Me gusta el café.",
-              "Me gusta el té.",
-              "Me gusta el zumo."
+              "The menu",
+              "A map",
+              "A mirror"
             ]
           },
           {
             "itemId": "english-pre-a1-m089-reading-ex01-i03",
             "position": 3,
-            "prompt": "¿Qué significa “I like the tea.”?",
+            "prompt": "What would Nora like?",
             "evaluation": {
               "type": "single_choice"
             },
             "options": [
-              "Me gusta el té.",
-              "Me gusta el zumo.",
-              "Me gusta el sándwich."
+              "A cup of tea",
+              "A glass of milk",
+              "A sandwich"
             ]
           },
           {
             "itemId": "english-pre-a1-m089-reading-ex01-i04",
             "position": 4,
-            "prompt": "¿Qué significa “I like the juice.”?",
+            "prompt": "What does Ben order?",
             "evaluation": {
               "type": "single_choice"
             },
             "options": [
-              "Me gusta el zumo.",
-              "Me gusta el sándwich.",
-              "Me gusta el menú."
+              "Coffee",
+              "Juice",
+              "Water"
             ]
           },
           {
             "itemId": "english-pre-a1-m089-reading-ex01-i05",
             "position": 5,
-            "prompt": "¿Qué significa “I like the sandwich.”?",
+            "prompt": "What do they share?",
             "evaluation": {
               "type": "single_choice"
             },
             "options": [
-              "Me gusta el sándwich.",
-              "Me gusta el menú.",
-              "Me gusta la taza."
+              "A sandwich",
+              "A cake",
+              "An apple"
             ]
           },
           {
             "itemId": "english-pre-a1-m089-reading-ex01-i06",
             "position": 6,
-            "prompt": "¿Qué significa “I like the menu.”?",
+            "prompt": "What does Nora drink too?",
             "evaluation": {
               "type": "single_choice"
             },
             "options": [
-              "Me gusta el menú.",
-              "Me gusta la taza.",
-              "Me gusta el vaso."
+              "Juice",
+              "Coffee",
+              "Milk"
             ]
           },
           {
             "itemId": "english-pre-a1-m089-reading-ex01-i07",
             "position": 7,
-            "prompt": "¿Qué significa “I like the cup.”?",
+            "prompt": "What does Ben like in his coffee?",
             "evaluation": {
               "type": "single_choice"
             },
             "options": [
-              "Me gusta la taza.",
-              "Me gusta el vaso.",
-              "Me gusta el azúcar."
+              "Milk",
+              "Lemon",
+              "Honey"
             ]
           },
           {
             "itemId": "english-pre-a1-m089-reading-ex01-i08",
             "position": 8,
-            "prompt": "¿Qué significa “I like the glass.”?",
+            "prompt": "What does Ben ask for?",
             "evaluation": {
               "type": "single_choice"
             },
             "options": [
-              "Me gusta el vaso.",
-              "Me gusta el azúcar.",
-              "Me gusta la leche."
+              "Sugar",
+              "A ticket",
+              "A toy"
             ]
           },
           {
             "itemId": "english-pre-a1-m089-reading-ex01-i09",
             "position": 9,
-            "prompt": "¿Qué significa “I like the sugar.”?",
+            "prompt": "Who brings the drinks?",
             "evaluation": {
               "type": "single_choice"
             },
             "options": [
-              "Me gusta el azúcar.",
-              "Me gusta la leche.",
-              "Me gusta la cafetería."
+              "The waiter",
+              "The farmer",
+              "The teacher"
             ]
           },
           {
             "itemId": "english-pre-a1-m089-reading-ex01-i10",
             "position": 10,
-            "prompt": "¿Qué significa “I like the milk.”?",
+            "prompt": "Do they enjoy their visit?",
             "evaluation": {
               "type": "single_choice"
             },
             "options": [
-              "Me gusta la leche.",
-              "Me gusta la cafetería.",
-              "Me gusta el café."
+              "Yes",
+              "No",
+              "The text does not say"
             ]
           }
         ]
@@ -894,9 +895,9 @@
           {
             "itemId": "english-pre-a1-m089-speaking-ex01-i01",
             "position": 1,
-            "prompt": "Say the word “café”.",
-            "modelAnswer": "café",
-            "audio": "tts:en-GB:café",
+            "prompt": "Say the sentence. Use the model to help you: “I am at the café.”",
+            "modelAnswer": "I am at the café.",
+            "audio": "tts:en-GB:I am at the café.",
             "evaluation": {
               "type": "transcription_feedback",
               "transcriptionSeparateFromPronunciation": true
@@ -905,9 +906,9 @@
           {
             "itemId": "english-pre-a1-m089-speaking-ex01-i02",
             "position": 2,
-            "prompt": "Say the word “coffee”.",
-            "modelAnswer": "coffee",
-            "audio": "tts:en-GB:coffee",
+            "prompt": "Say the sentence. Use the model to help you: “Can I see the menu, please?”",
+            "modelAnswer": "Can I see the menu, please?",
+            "audio": "tts:en-GB:Can I see the menu, please?",
             "evaluation": {
               "type": "transcription_feedback",
               "transcriptionSeparateFromPronunciation": true
@@ -916,9 +917,9 @@
           {
             "itemId": "english-pre-a1-m089-speaking-ex01-i03",
             "position": 3,
-            "prompt": "Say the word “tea”.",
-            "modelAnswer": "tea",
-            "audio": "tts:en-GB:tea",
+            "prompt": "Say the sentence. Use the model to help you: “I'd like a cup of tea.”",
+            "modelAnswer": "I'd like a cup of tea.",
+            "audio": "tts:en-GB:I'd like a cup of tea.",
             "evaluation": {
               "type": "transcription_feedback",
               "transcriptionSeparateFromPronunciation": true
@@ -927,9 +928,9 @@
           {
             "itemId": "english-pre-a1-m089-speaking-ex01-i04",
             "position": 4,
-            "prompt": "Say the word “juice”.",
-            "modelAnswer": "juice",
-            "audio": "tts:en-GB:juice",
+            "prompt": "Say the sentence. Use the model to help you: “I'd like a coffee.”",
+            "modelAnswer": "I'd like a coffee.",
+            "audio": "tts:en-GB:I'd like a coffee.",
             "evaluation": {
               "type": "transcription_feedback",
               "transcriptionSeparateFromPronunciation": true
@@ -938,9 +939,9 @@
           {
             "itemId": "english-pre-a1-m089-speaking-ex01-i05",
             "position": 5,
-            "prompt": "Say the word “sandwich”.",
-            "modelAnswer": "sandwich",
-            "audio": "tts:en-GB:sandwich",
+            "prompt": "Say the sentence. Use the model to help you: “Can I have some juice?”",
+            "modelAnswer": "Can I have some juice?",
+            "audio": "tts:en-GB:Can I have some juice?",
             "evaluation": {
               "type": "transcription_feedback",
               "transcriptionSeparateFromPronunciation": true
@@ -949,9 +950,9 @@
           {
             "itemId": "english-pre-a1-m089-speaking-ex01-i06",
             "position": 6,
-            "prompt": "Say the word “menu”.",
-            "modelAnswer": "menu",
-            "audio": "tts:en-GB:menu",
+            "prompt": "Say the sentence. Use the model to help you: “I want a sandwich.”",
+            "modelAnswer": "I want a sandwich.",
+            "audio": "tts:en-GB:I want a sandwich.",
             "evaluation": {
               "type": "transcription_feedback",
               "transcriptionSeparateFromPronunciation": true
@@ -960,9 +961,9 @@
           {
             "itemId": "english-pre-a1-m089-speaking-ex01-i07",
             "position": 7,
-            "prompt": "Say the word “cup”.",
-            "modelAnswer": "cup",
-            "audio": "tts:en-GB:cup",
+            "prompt": "Say the sentence. Use the model to help you: “The cup is on the table.”",
+            "modelAnswer": "The cup is on the table.",
+            "audio": "tts:en-GB:The cup is on the table.",
             "evaluation": {
               "type": "transcription_feedback",
               "transcriptionSeparateFromPronunciation": true
@@ -971,9 +972,9 @@
           {
             "itemId": "english-pre-a1-m089-speaking-ex01-i08",
             "position": 8,
-            "prompt": "Say the word “glass”.",
-            "modelAnswer": "glass",
-            "audio": "tts:en-GB:glass",
+            "prompt": "Say the sentence. Use the model to help you: “The glass is clean.”",
+            "modelAnswer": "The glass is clean.",
+            "audio": "tts:en-GB:The glass is clean.",
             "evaluation": {
               "type": "transcription_feedback",
               "transcriptionSeparateFromPronunciation": true
@@ -982,9 +983,9 @@
           {
             "itemId": "english-pre-a1-m089-speaking-ex01-i09",
             "position": 9,
-            "prompt": "Say the word “sugar”.",
-            "modelAnswer": "sugar",
-            "audio": "tts:en-GB:sugar",
+            "prompt": "Say the sentence. Use the model to help you: “I like milk in my coffee.”",
+            "modelAnswer": "I like milk in my coffee.",
+            "audio": "tts:en-GB:I like milk in my coffee.",
             "evaluation": {
               "type": "transcription_feedback",
               "transcriptionSeparateFromPronunciation": true
@@ -993,9 +994,9 @@
           {
             "itemId": "english-pre-a1-m089-speaking-ex01-i10",
             "position": 10,
-            "prompt": "Say the word “milk”.",
-            "modelAnswer": "milk",
-            "audio": "tts:en-GB:milk",
+            "prompt": "Say the sentence. Use the model to help you: “Thank you very much.”",
+            "modelAnswer": "Thank you very much.",
+            "audio": "tts:en-GB:Thank you very much.",
             "evaluation": {
               "type": "transcription_feedback",
               "transcriptionSeparateFromPronunciation": true
@@ -1012,9 +1013,9 @@
         "exerciseId": "english-pre-a1-m089-listening-ex01",
         "type": "listening_gap_fill",
         "content": {
-          "audio": "tts:en-GB:Listen and complete. This is the café. This is the coffee. This is the tea. This is the juice. This is the sandwich. This is the menu. This is the cup. This is the glass. This is the sugar. This is the milk.",
+          "audio": "tts:en-GB:Listen and complete. We are at the café. Can I see the menu, please? I'd like a cup of tea. My friend wants coffee. We share a sandwich. I drink juice from a glass. Tea is in a cup. I also like juice. Can I have some milk? Please add a little sugar.",
           "audioLocale": "en-GB",
-          "transcriptTemplate": "Listen and complete. This is the [[gap-01]]. This is the [[gap-02]]. This is the [[gap-03]]. This is the [[gap-04]]. This is the [[gap-05]]. This is the [[gap-06]]. This is the [[gap-07]]. This is the [[gap-08]]. This is the [[gap-09]]. This is the [[gap-10]].",
+          "transcriptTemplate": "Listen and complete. We are at the [[gap-01]]. Can I see the [[gap-06]], please? I'd like a cup of [[gap-03]]. My friend wants [[gap-02]]. We share a [[gap-05]]. I drink juice from a [[gap-08]]. Tea is in a [[gap-07]]. I also like [[gap-04]]. Can I have some [[gap-10]]? Please add a little [[gap-09]].",
           "wordBank": [
             {
               "wordId": "english-pre-a1-m089-listening-word-01",
