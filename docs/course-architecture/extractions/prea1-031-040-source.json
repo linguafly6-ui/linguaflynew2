@@ -1,0 +1,4616 @@
+{
+  "source": "main",
+  "scope": "Pre-A1 missions 031-040 detailed extraction",
+  "note": "Includes mission source objects and explicit Writing targets where present. Writing targets are legacy dictation data, not automatically suitable canonical content. Answer fields remain audit-only.",
+  "missions": [
+    {
+      "mission": "031",
+      "source": {
+        "id": "031",
+        "title": "My Face and Hair",
+        "theme": "Rasgos faciales y colores",
+        "description": "Reconoce rasgos del rostro y comprende descripciones cortas con “has got”.",
+        "words": [
+          [
+            "face",
+            "cara",
+            "🙂"
+          ],
+          [
+            "hair",
+            "pelo",
+            "💇"
+          ],
+          [
+            "eyes",
+            "ojos",
+            "👀"
+          ],
+          [
+            "nose",
+            "nariz",
+            "👃"
+          ],
+          [
+            "mouth",
+            "boca",
+            "👄"
+          ],
+          [
+            "curly",
+            "rizado",
+            "🌀"
+          ],
+          [
+            "straight",
+            "liso",
+            "〰️"
+          ],
+          [
+            "brown",
+            "castaño",
+            "🤎"
+          ],
+          [
+            "black",
+            "negro",
+            "⚫"
+          ],
+          [
+            "blonde",
+            "rubio",
+            "🌟"
+          ]
+        ],
+        "extraVocabulary": [],
+        "pronunciation": [
+          {
+            "word": "face",
+            "activity": "Escuchar el sonido inicial y repetir",
+            "hint": "féis"
+          },
+          {
+            "word": "hair",
+            "activity": "Practicar las vocales y repetir",
+            "hint": "hea"
+          },
+          {
+            "word": "eyes",
+            "activity": "Marcar las sílabas al decir la palabra",
+            "hint": "áiz"
+          },
+          {
+            "word": "nose",
+            "activity": "Escuchar el sonido final y repetir",
+            "hint": "nóuz"
+          },
+          {
+            "word": "mouth",
+            "activity": "Escuchar el sonido inicial y repetir",
+            "hint": "máuz"
+          },
+          {
+            "word": "curly",
+            "activity": "Practicar las vocales y repetir",
+            "hint": "kér-li"
+          },
+          {
+            "word": "straight",
+            "activity": "Marcar las sílabas al decir la palabra",
+            "hint": "stréit"
+          },
+          {
+            "word": "brown",
+            "activity": "Escuchar el sonido final y repetir",
+            "hint": "bráun"
+          }
+        ],
+        "grammar": {
+          "focus": "Have got (reconocimiento): has got; adjetivo + hair",
+          "explanation": "En esta misión reconocemos «has got» en descripciones de otras personas. «She has got…» significa «ella tiene…» y «He has got…» significa «él tiene…». Para describir el pelo, el color o la forma aparece antes de «hair»: «curly hair», «straight hair», «brown hair».",
+          "model": "She has got brown hair.",
+          "practice": "Lee la descripción y elige el personaje con ese pelo.",
+          "order": "She has got brown hair.",
+          "final": [
+            "She has got brown hair.",
+            "She have got brown hair.",
+            "She has brown got hair."
+          ],
+          "items": [
+            {
+              "prompt": "Choose the correct phrase for one girl.",
+              "answer": "She has got",
+              "options": [
+                "She has got",
+                "She have got",
+                "She are got"
+              ],
+              "es": "Con she, el modelo es has got."
+            },
+            {
+              "prompt": "Complete: He ___ got black hair.",
+              "answer": "has",
+              "options": [
+                "has",
+                "have",
+                "is"
+              ],
+              "es": "La forma del modelo con he es has got."
+            },
+            {
+              "prompt": "Choose the correct order.",
+              "answer": "curly hair",
+              "options": [
+                "curly hair",
+                "hair curly",
+                "curlys hair"
+              ],
+              "es": "El adjetivo curly va antes de hair."
+            },
+            {
+              "prompt": "Which phrase means “pelo castaño”?",
+              "answer": "brown hair",
+              "options": [
+                "brown hair",
+                "black eyes",
+                "straight nose"
+              ],
+              "es": "Brown describe el color del pelo."
+            }
+          ]
+        },
+        "readingText": "Look at the three faces. Mia has got curly brown hair and brown eyes. Tom has got straight black hair. His eyes are dark. Ava has got straight blonde hair and a small nose. They have different faces and hair. Can you match each description to the right person?",
+        "readingQuestions": [
+          {
+            "question": "How many faces are in the text?",
+            "answer": "Three",
+            "options": [
+              "Three",
+              "Two",
+              "Four"
+            ]
+          },
+          {
+            "question": "Who has got curly brown hair?",
+            "answer": "Mia",
+            "options": [
+              "Mia",
+              "Tom",
+              "Ava"
+            ]
+          },
+          {
+            "question": "What colour are Mia's eyes?",
+            "answer": "Brown",
+            "options": [
+              "Brown",
+              "Black",
+              "Blonde"
+            ]
+          },
+          {
+            "question": "Who has got straight black hair?",
+            "answer": "Tom",
+            "options": [
+              "Tom",
+              "Mia",
+              "Ava"
+            ]
+          },
+          {
+            "question": "What colour are Tom's eyes?",
+            "answer": "Dark",
+            "options": [
+              "Dark",
+              "Blue",
+              "Green"
+            ]
+          },
+          {
+            "question": "Who has got blonde hair?",
+            "answer": "Ava",
+            "options": [
+              "Ava",
+              "Mia",
+              "Tom"
+            ]
+          },
+          {
+            "question": "Is Ava's hair curly or straight?",
+            "answer": "Straight",
+            "options": [
+              "Straight",
+              "Curly",
+              "Short"
+            ]
+          },
+          {
+            "question": "What is small on Ava's face?",
+            "answer": "Her nose",
+            "options": [
+              "Her nose",
+              "Her mouth",
+              "Her eyes"
+            ]
+          },
+          {
+            "question": "Do the three people have the same hair?",
+            "answer": "No",
+            "options": [
+              "No",
+              "Yes",
+              "The text does not say"
+            ]
+          },
+          {
+            "question": "What must the reader do?",
+            "answer": "Match each description to a person",
+            "options": [
+              "Match each description to a person",
+              "Count the animals",
+              "Choose a drink"
+            ]
+          }
+        ],
+        "listeningFormat": "Entrevista",
+        "listeningScript": "Interviewer: Hello, Mia. Tell us about your friends. Mia: Tom has got straight black hair. Interviewer: What about Ava? Mia: Ava has got straight blonde hair. Interviewer: And you, Mia? Mia: I have got curly brown hair. Interviewer: Have you all got the same hair? Mia: No, we have got different hair. Interviewer: Thank you, Mia.",
+        "listeningQuestions": [
+          {
+            "question": "Who is being interviewed?",
+            "answer": "Mia",
+            "options": [
+              "Mia",
+              "Tom",
+              "Ava"
+            ]
+          },
+          {
+            "question": "Who has got straight black hair?",
+            "answer": "Tom",
+            "options": [
+              "Tom",
+              "Mia",
+              "Ava"
+            ]
+          },
+          {
+            "question": "What colour is Tom's hair?",
+            "answer": "Black",
+            "options": [
+              "Black",
+              "Brown",
+              "Blonde"
+            ]
+          },
+          {
+            "question": "Who has got straight blonde hair?",
+            "answer": "Ava",
+            "options": [
+              "Ava",
+              "Mia",
+              "Tom"
+            ]
+          },
+          {
+            "question": "What colour is Ava's hair?",
+            "answer": "Blonde",
+            "options": [
+              "Blonde",
+              "Black",
+              "Brown"
+            ]
+          },
+          {
+            "question": "What kind of hair has Mia got?",
+            "answer": "Curly",
+            "options": [
+              "Curly",
+              "Straight",
+              "Short"
+            ]
+          },
+          {
+            "question": "What colour is Mia's hair?",
+            "answer": "Brown",
+            "options": [
+              "Brown",
+              "Black",
+              "Blonde"
+            ]
+          },
+          {
+            "question": "Have the three friends got the same hair?",
+            "answer": "No",
+            "options": [
+              "No",
+              "Yes",
+              "The interviewer says yes"
+            ]
+          },
+          {
+            "question": "What do they have?",
+            "answer": "Different hair",
+            "options": [
+              "Different hair",
+              "The same hair",
+              "No hair"
+            ]
+          },
+          {
+            "question": "Who says “Thank you, Mia”?",
+            "answer": "The interviewer",
+            "options": [
+              "The interviewer",
+              "Tom",
+              "Ava"
+            ]
+          }
+        ]
+      },
+      "writingSource": [
+        {
+          "id": "W031-01",
+          "type": "Palabra",
+          "text": "face",
+          "translation": "cara"
+        },
+        {
+          "id": "W031-02",
+          "type": "Palabra",
+          "text": "hair",
+          "translation": "pelo"
+        },
+        {
+          "id": "W031-03",
+          "type": "Palabra",
+          "text": "eyes",
+          "translation": "eyes"
+        },
+        {
+          "id": "W031-04",
+          "type": "Palabra",
+          "text": "nose",
+          "translation": "nariz"
+        },
+        {
+          "id": "W031-05",
+          "type": "Palabra",
+          "text": "mouth",
+          "translation": "boca"
+        },
+        {
+          "id": "W031-06",
+          "type": "Frase",
+          "text": "She has got brown hair.",
+          "translation": "ella has got marrón pelo."
+        },
+        {
+          "id": "W031-07",
+          "type": "Palabra",
+          "text": "forehead",
+          "translation": "frente"
+        },
+        {
+          "id": "W031-08",
+          "type": "Palabra",
+          "text": "eyebrow",
+          "translation": "ceja"
+        },
+        {
+          "id": "W031-09",
+          "type": "Palabra",
+          "text": "eyelash",
+          "translation": "pestaña"
+        },
+        {
+          "id": "W031-10",
+          "type": "Palabra",
+          "text": "eyelid",
+          "translation": "párpado"
+        },
+        {
+          "id": "W031-11",
+          "type": "Palabra",
+          "text": "cheek",
+          "translation": "mejilla"
+        },
+        {
+          "id": "W031-12",
+          "type": "Palabra",
+          "text": "chin",
+          "translation": "barbilla"
+        },
+        {
+          "id": "W031-13",
+          "type": "Palabra",
+          "text": "lips",
+          "translation": "lips"
+        },
+        {
+          "id": "W031-14",
+          "type": "Palabra",
+          "text": "teeth",
+          "translation": "teeth"
+        },
+        {
+          "id": "W031-15",
+          "type": "Palabra",
+          "text": "tongue",
+          "translation": "lengua"
+        },
+        {
+          "id": "W031-16",
+          "type": "Palabra",
+          "text": "beard",
+          "translation": "barba"
+        },
+        {
+          "id": "W031-17",
+          "type": "Palabra",
+          "text": "moustache",
+          "translation": "bigote"
+        },
+        {
+          "id": "W031-18",
+          "type": "Palabra",
+          "text": "fringe",
+          "translation": "flequillo"
+        },
+        {
+          "id": "W031-19",
+          "type": "Palabra",
+          "text": "ponytail",
+          "translation": "coleta"
+        },
+        {
+          "id": "W031-20",
+          "type": "Palabra",
+          "text": "braid",
+          "translation": "trenza"
+        },
+        {
+          "id": "W031-21",
+          "type": "Palabra",
+          "text": "curls",
+          "translation": "rizos"
+        }
+      ]
+    },
+    {
+      "mission": "032",
+      "source": {
+        "id": "032",
+        "title": "Getting Dressed",
+        "theme": "Acciones relacionadas con la ropa",
+        "description": "Comprende instrucciones sencillas para ponerse y quitarse prendas de ropa.",
+        "words": [
+          [
+            "wear",
+            "llevar puesto",
+            "👕"
+          ],
+          [
+            "put on",
+            "ponerse",
+            "🧥"
+          ],
+          [
+            "take off",
+            "quitarse",
+            "🧣"
+          ],
+          [
+            "shoes",
+            "zapatos",
+            "👟"
+          ],
+          [
+            "coat",
+            "abrigo",
+            "🧥"
+          ],
+          [
+            "hat",
+            "sombrero / gorro",
+            "🧢"
+          ]
+        ],
+        "extraVocabulary": [],
+        "pronunciation": [
+          {
+            "word": "wear",
+            "activity": "Escuchar el sonido inicial y repetir",
+            "hint": "uéa"
+          },
+          {
+            "word": "put on",
+            "activity": "Practicar las vocales y repetir",
+            "hint": "put ón"
+          },
+          {
+            "word": "take off",
+            "activity": "Marcar las sílabas al decir la palabra",
+            "hint": "téik óf"
+          },
+          {
+            "word": "shoes",
+            "activity": "Escuchar el sonido final y repetir",
+            "hint": "shúuz"
+          },
+          {
+            "word": "coat",
+            "activity": "Escuchar el sonido inicial y repetir",
+            "hint": "kóut"
+          },
+          {
+            "word": "hat",
+            "activity": "Practicar las vocales y repetir",
+            "hint": "jat"
+          }
+        ],
+        "grammar": {
+          "focus": "Imperativos: put on / take off",
+          "explanation": "Usamos «Put on…» para indicar que alguien se ponga una prenda y «Take off…» para pedir que se la quite. En una instrucción el verbo va al principio: «Put on your coat».",
+          "model": "Put on your coat. Take off your shoes.",
+          "practice": "Ordena las instrucciones para vestirse según la situación.",
+          "order": "Put on your coat.",
+          "final": [
+            "Put on your coat.",
+            "Puts on your coat.",
+            "Putting on your coat."
+          ],
+          "items": [
+            {
+              "prompt": "It is cold. Choose the instruction.",
+              "answer": "Put on your coat.",
+              "options": [
+                "Put on your coat.",
+                "Take off your coat.",
+                "Put off your coat."
+              ],
+              "es": "Put on significa ponerse."
+            },
+            {
+              "prompt": "Your shoes are dirty. Choose the instruction to remove them.",
+              "answer": "Take off your shoes.",
+              "options": [
+                "Take off your shoes.",
+                "Put on your shoes.",
+                "Take on your shoes."
+              ],
+              "es": "Take off significa quitarse."
+            },
+            {
+              "prompt": "Complete: ___ on your hat.",
+              "answer": "Put",
+              "options": [
+                "Put",
+                "Puts",
+                "Putting"
+              ],
+              "es": "El imperativo usa el verbo base Put."
+            },
+            {
+              "prompt": "Choose the correct sentence.",
+              "answer": "Take off your coat.",
+              "options": [
+                "Take off your coat.",
+                "Takes off your coat.",
+                "Taking off your coat."
+              ],
+              "es": "La instrucción comienza con Take off."
+            }
+          ]
+        },
+        "readingText": "It is a cold morning. Ben is ready for school. First, he puts on his shoes. Then he puts on his coat. He wears a warm hat, too. At home, his sister takes off her coat and shoes. Mum says, “Put on your hat, Ben!” Ben smiles and goes out.",
+        "readingQuestions": [
+          {
+            "question": "What is the weather like?",
+            "answer": "Cold",
+            "options": [
+              "Cold",
+              "Hot",
+              "Sunny and warm"
+            ]
+          },
+          {
+            "question": "Who is ready for school?",
+            "answer": "Ben",
+            "options": [
+              "Ben",
+              "His sister",
+              "Mum"
+            ]
+          },
+          {
+            "question": "What does Ben put on first?",
+            "answer": "His shoes",
+            "options": [
+              "His shoes",
+              "His coat",
+              "His hat"
+            ]
+          },
+          {
+            "question": "What does Ben put on after his shoes?",
+            "answer": "His coat",
+            "options": [
+              "His coat",
+              "His hat",
+              "His shirt"
+            ]
+          },
+          {
+            "question": "What does Ben wear on his head?",
+            "answer": "A warm hat",
+            "options": [
+              "A warm hat",
+              "A scarf",
+              "A cap"
+            ]
+          },
+          {
+            "question": "Who takes off her coat and shoes?",
+            "answer": "His sister",
+            "options": [
+              "His sister",
+              "Ben",
+              "Mum"
+            ]
+          },
+          {
+            "question": "Where is the family?",
+            "answer": "At home",
+            "options": [
+              "At home",
+              "At the zoo",
+              "At the café"
+            ]
+          },
+          {
+            "question": "What does Mum tell Ben to put on?",
+            "answer": "His hat",
+            "options": [
+              "His hat",
+              "His shoes",
+              "His coat"
+            ]
+          },
+          {
+            "question": "What does Ben do at the end?",
+            "answer": "He goes out",
+            "options": [
+              "He goes out",
+              "He goes to bed",
+              "He eats breakfast"
+            ]
+          },
+          {
+            "question": "Which phrase means “quitarse”?",
+            "answer": "Take off",
+            "options": [
+              "Take off",
+              "Put on",
+              "Wear"
+            ]
+          }
+        ],
+        "listeningFormat": "Historia narrada",
+        "listeningScript": "It is a cold day. Anna is at home. She puts on her shoes. Then she puts on her coat. She takes a hat from the chair and puts it on. Her brother is warm. He takes off his coat inside the house. Anna says, “Put on your shoes. It is time to go!” They leave the house together.",
+        "listeningQuestions": [
+          {
+            "question": "What is the weather like?",
+            "answer": "Cold",
+            "options": [
+              "Cold",
+              "Hot",
+              "Rainy and warm"
+            ]
+          },
+          {
+            "question": "Who is at home?",
+            "answer": "Anna",
+            "options": [
+              "Anna",
+              "Ben",
+              "Mia"
+            ]
+          },
+          {
+            "question": "What does Anna put on first?",
+            "answer": "Her shoes",
+            "options": [
+              "Her shoes",
+              "Her coat",
+              "Her hat"
+            ]
+          },
+          {
+            "question": "What does Anna put on next?",
+            "answer": "Her coat",
+            "options": [
+              "Her coat",
+              "Her shoes",
+              "Her scarf"
+            ]
+          },
+          {
+            "question": "Where does Anna take the hat from?",
+            "answer": "The chair",
+            "options": [
+              "The chair",
+              "The table",
+              "The bag"
+            ]
+          },
+          {
+            "question": "Who takes off a coat inside the house?",
+            "answer": "Her brother",
+            "options": [
+              "Her brother",
+              "Anna",
+              "Her mother"
+            ]
+          },
+          {
+            "question": "What does Anna tell her brother to put on?",
+            "answer": "His shoes",
+            "options": [
+              "His shoes",
+              "His coat",
+              "His hat"
+            ]
+          },
+          {
+            "question": "What time is it?",
+            "answer": "Time to go",
+            "options": [
+              "Time to go",
+              "Time to sleep",
+              "Time for lunch"
+            ]
+          },
+          {
+            "question": "Where are Anna and her brother at the start?",
+            "answer": "At home",
+            "options": [
+              "At home",
+              "At school",
+              "At the park"
+            ]
+          },
+          {
+            "question": "What do they do at the end?",
+            "answer": "They leave together",
+            "options": [
+              "They leave together",
+              "They go to bed",
+              "They eat dinner"
+            ]
+          }
+        ]
+      },
+      "writingSource": [
+        {
+          "id": "W032-01",
+          "type": "Palabra",
+          "text": "wear",
+          "translation": "llevar"
+        },
+        {
+          "id": "W032-02",
+          "type": "Expresión",
+          "text": "put on",
+          "translation": "ponerse"
+        },
+        {
+          "id": "W032-03",
+          "type": "Expresión",
+          "text": "take off",
+          "translation": "quitarse"
+        },
+        {
+          "id": "W032-04",
+          "type": "Palabra",
+          "text": "shoes",
+          "translation": "shoes"
+        },
+        {
+          "id": "W032-05",
+          "type": "Palabra",
+          "text": "coat",
+          "translation": "abrigo"
+        },
+        {
+          "id": "W032-06",
+          "type": "Frase",
+          "text": "Put on your coat.",
+          "translation": "poner encendido tu abrigo."
+        },
+        {
+          "id": "W032-07",
+          "type": "Frase",
+          "text": "Take off your shoes.",
+          "translation": "tomar lejos tu shoes."
+        },
+        {
+          "id": "W032-08",
+          "type": "Palabra",
+          "text": "button",
+          "translation": "botón"
+        },
+        {
+          "id": "W032-09",
+          "type": "Palabra",
+          "text": "zip",
+          "translation": "zip"
+        },
+        {
+          "id": "W032-10",
+          "type": "Palabra",
+          "text": "tie",
+          "translation": "empate"
+        },
+        {
+          "id": "W032-11",
+          "type": "Palabra",
+          "text": "fold",
+          "translation": "plegar"
+        },
+        {
+          "id": "W032-12",
+          "type": "Palabra",
+          "text": "hang",
+          "translation": "colgarse"
+        },
+        {
+          "id": "W032-13",
+          "type": "Palabra",
+          "text": "fasten",
+          "translation": "fasten"
+        },
+        {
+          "id": "W032-14",
+          "type": "Palabra",
+          "text": "unfasten",
+          "translation": "unfasten"
+        },
+        {
+          "id": "W032-15",
+          "type": "Palabra",
+          "text": "try",
+          "translation": "intentar"
+        },
+        {
+          "id": "W032-16",
+          "type": "Palabra",
+          "text": "choose",
+          "translation": "escoger"
+        },
+        {
+          "id": "W032-17",
+          "type": "Palabra",
+          "text": "change",
+          "translation": "cambiarse"
+        },
+        {
+          "id": "W032-18",
+          "type": "Palabra",
+          "text": "dress",
+          "translation": "vestir"
+        },
+        {
+          "id": "W032-19",
+          "type": "Palabra",
+          "text": "undress",
+          "translation": "undress"
+        },
+        {
+          "id": "W032-20",
+          "type": "Palabra",
+          "text": "remove",
+          "translation": "quitar"
+        },
+        {
+          "id": "W032-21",
+          "type": "Palabra",
+          "text": "match",
+          "translation": "partido"
+        },
+        {
+          "id": "W032-22",
+          "type": "Palabra",
+          "text": "size",
+          "translation": "tamaño"
+        }
+      ]
+    },
+    {
+      "mission": "033",
+      "source": {
+        "id": "033",
+        "title": "Clean and Tidy",
+        "theme": "Objetos de limpieza y orden",
+        "description": "Reconoce acciones de higiene y orden y sigue instrucciones sencillas.",
+        "words": [
+          [
+            "clean",
+            "limpiar",
+            "🧽"
+          ],
+          [
+            "wash",
+            "lavar",
+            "🧼"
+          ],
+          [
+            "brush",
+            "cepillar",
+            "🪥"
+          ],
+          [
+            "soap",
+            "jabón",
+            "🧴"
+          ],
+          [
+            "towel",
+            "toalla",
+            "🧻"
+          ],
+          [
+            "tidy",
+            "ordenado / ordenar",
+            "🧺"
+          ],
+          [
+            "dirty",
+            "sucio",
+            "🟤"
+          ]
+        ],
+        "extraVocabulary": [],
+        "pronunciation": [
+          {
+            "word": "clean",
+            "activity": "Escuchar el sonido inicial y repetir",
+            "hint": "klíin"
+          },
+          {
+            "word": "wash",
+            "activity": "Practicar las vocales y repetir",
+            "hint": "uósh"
+          },
+          {
+            "word": "brush",
+            "activity": "Marcar las sílabas al decir la palabra",
+            "hint": "brásh"
+          },
+          {
+            "word": "soap",
+            "activity": "Escuchar el sonido final y repetir",
+            "hint": "sóup"
+          },
+          {
+            "word": "towel",
+            "activity": "Escuchar el sonido inicial y repetir",
+            "hint": "táu-el"
+          },
+          {
+            "word": "tidy",
+            "activity": "Practicar las vocales y repetir",
+            "hint": "tái-di"
+          },
+          {
+            "word": "dirty",
+            "activity": "Marcar las sílabas al decir la palabra",
+            "hint": "dér-ti"
+          }
+        ],
+        "grammar": {
+          "focus": "Imperativos: wash / brush / clean",
+          "explanation": "Un imperativo es una instrucción. Empezamos con el verbo en su forma básica: «Wash your hands», «Brush your teeth» o «Clean the table». No añadimos -s al verbo cuando damos una orden.",
+          "model": "Wash your hands. Brush your teeth.",
+          "practice": "Ordena las instrucciones de higiene y limpieza en una secuencia lógica.",
+          "order": "Wash your hands.",
+          "final": [
+            "Wash your hands.",
+            "Washes your hands.",
+            "Washing your hands."
+          ],
+          "items": [
+            {
+              "prompt": "Choose the correct instruction.",
+              "answer": "Wash your hands.",
+              "options": [
+                "Wash your hands.",
+                "Washes your hands.",
+                "Washing your hands."
+              ],
+              "es": "El imperativo usa wash, sin -s."
+            },
+            {
+              "prompt": "Complete: ___ your teeth.",
+              "answer": "Brush",
+              "options": [
+                "Brush",
+                "Brushes",
+                "Brushing"
+              ],
+              "es": "Empezamos la instrucción con Brush."
+            },
+            {
+              "prompt": "Which word means “limpiar”?",
+              "answer": "Clean",
+              "options": [
+                "Clean",
+                "Dirty",
+                "Towel"
+              ],
+              "es": "Clean es el verbo limpiar."
+            },
+            {
+              "prompt": "Choose the correct instruction for a dirty table.",
+              "answer": "Clean the table.",
+              "options": [
+                "Clean the table.",
+                "Dirty the table.",
+                "Cleans the table."
+              ],
+              "es": "Usamos Clean + objeto para dar la instrucción."
+            }
+          ]
+        },
+        "readingText": "It is cleaning day at home. First, Mia washes her hands with soap. Then she uses a towel. Dad says, “Brush your teeth, please.” Ben cleans the table because it is dirty. After that, the children tidy their toys. The room is clean and tidy now.",
+        "readingQuestions": [
+          {
+            "question": "What day is it at home?",
+            "answer": "Cleaning day",
+            "options": [
+              "Cleaning day",
+              "A birthday",
+              "A school day"
+            ]
+          },
+          {
+            "question": "What does Mia use to wash her hands?",
+            "answer": "Soap",
+            "options": [
+              "Soap",
+              "Shampoo",
+              "Juice"
+            ]
+          },
+          {
+            "question": "What does Mia use after washing her hands?",
+            "answer": "A towel",
+            "options": [
+              "A towel",
+              "A brush",
+              "A book"
+            ]
+          },
+          {
+            "question": "Who says “Brush your teeth”?",
+            "answer": "Dad",
+            "options": [
+              "Dad",
+              "Mia",
+              "Ben"
+            ]
+          },
+          {
+            "question": "What does Ben clean?",
+            "answer": "The table",
+            "options": [
+              "The table",
+              "The window",
+              "The floor"
+            ]
+          },
+          {
+            "question": "Why does Ben clean the table?",
+            "answer": "It is dirty",
+            "options": [
+              "It is dirty",
+              "It is new",
+              "It is wet"
+            ]
+          },
+          {
+            "question": "What do the children tidy?",
+            "answer": "Their toys",
+            "options": [
+              "Their toys",
+              "Their shoes",
+              "Their books"
+            ]
+          },
+          {
+            "question": "What is the room like at the end?",
+            "answer": "Clean and tidy",
+            "options": [
+              "Clean and tidy",
+              "Dirty and messy",
+              "Cold and dark"
+            ]
+          },
+          {
+            "question": "What does Mia wash?",
+            "answer": "Her hands",
+            "options": [
+              "Her hands",
+              "Her hair",
+              "Her shoes"
+            ]
+          },
+          {
+            "question": "Which word describes the table before Ben cleans it?",
+            "answer": "Dirty",
+            "options": [
+              "Dirty",
+              "Tidy",
+              "Clean"
+            ]
+          }
+        ],
+        "listeningFormat": "Situación dramatizada",
+        "listeningScript": "Mum: It is time to clean the bathroom. Ben: What can I do? Mum: Wash your hands with soap. Ben: OK. Mum: Now brush your teeth. Ben: Where is my towel? Mum: It is next to the sink. Ben: Thank you. Mum: Please tidy your things. The bathroom is clean now.",
+        "listeningQuestions": [
+          {
+            "question": "Where are Mum and Ben?",
+            "answer": "In the bathroom",
+            "options": [
+              "In the bathroom",
+              "In the kitchen",
+              "In the garden"
+            ]
+          },
+          {
+            "question": "What is it time to do?",
+            "answer": "Clean the bathroom",
+            "options": [
+              "Clean the bathroom",
+              "Cook dinner",
+              "Play a game"
+            ]
+          },
+          {
+            "question": "What must Ben wash?",
+            "answer": "His hands",
+            "options": [
+              "His hands",
+              "His shoes",
+              "His hair"
+            ]
+          },
+          {
+            "question": "What does Mum tell Ben to use?",
+            "answer": "Soap",
+            "options": [
+              "Soap",
+              "Juice",
+              "Toothpaste only"
+            ]
+          },
+          {
+            "question": "What must Ben brush?",
+            "answer": "His teeth",
+            "options": [
+              "His teeth",
+              "His hair",
+              "His coat"
+            ]
+          },
+          {
+            "question": "What does Ben look for?",
+            "answer": "His towel",
+            "options": [
+              "His towel",
+              "His book",
+              "His shoes"
+            ]
+          },
+          {
+            "question": "Where is the towel?",
+            "answer": "Next to the sink",
+            "options": [
+              "Next to the sink",
+              "On the bed",
+              "In the garden"
+            ]
+          },
+          {
+            "question": "What must Ben tidy?",
+            "answer": "His things",
+            "options": [
+              "His things",
+              "The food",
+              "The books at school"
+            ]
+          },
+          {
+            "question": "Who gives the instructions?",
+            "answer": "Mum",
+            "options": [
+              "Mum",
+              "Ben",
+              "Dad"
+            ]
+          },
+          {
+            "question": "How is the bathroom at the end?",
+            "answer": "Clean",
+            "options": [
+              "Clean",
+              "Dirty",
+              "Untidy"
+            ]
+          }
+        ]
+      },
+      "writingSource": [
+        {
+          "id": "W033-01",
+          "type": "Palabra",
+          "text": "clean",
+          "translation": "limpio"
+        },
+        {
+          "id": "W033-02",
+          "type": "Palabra",
+          "text": "wash",
+          "translation": "lavar"
+        },
+        {
+          "id": "W033-03",
+          "type": "Palabra",
+          "text": "brush",
+          "translation": "pincel"
+        },
+        {
+          "id": "W033-04",
+          "type": "Palabra",
+          "text": "soap",
+          "translation": "jabón"
+        },
+        {
+          "id": "W033-05",
+          "type": "Palabra",
+          "text": "towel",
+          "translation": "toalla"
+        },
+        {
+          "id": "W033-06",
+          "type": "Expresión",
+          "text": "Wash your hands.",
+          "translation": "lavar tu hands."
+        },
+        {
+          "id": "W033-07",
+          "type": "Expresión",
+          "text": "Brush your teeth.",
+          "translation": "pincel tu teeth."
+        },
+        {
+          "id": "W033-08",
+          "type": "Palabra",
+          "text": "sponge",
+          "translation": "esponja"
+        },
+        {
+          "id": "W033-09",
+          "type": "Palabra",
+          "text": "broom",
+          "translation": "escoba"
+        },
+        {
+          "id": "W033-10",
+          "type": "Palabra",
+          "text": "mop",
+          "translation": "fregona"
+        },
+        {
+          "id": "W033-11",
+          "type": "Palabra",
+          "text": "bucket",
+          "translation": "cubo"
+        },
+        {
+          "id": "W033-12",
+          "type": "Palabra",
+          "text": "dustpan",
+          "translation": "recogedor"
+        },
+        {
+          "id": "W033-13",
+          "type": "Palabra",
+          "text": "cloth",
+          "translation": "tela"
+        },
+        {
+          "id": "W033-14",
+          "type": "Palabra",
+          "text": "detergent",
+          "translation": "detergent"
+        },
+        {
+          "id": "W033-15",
+          "type": "Palabra",
+          "text": "bin",
+          "translation": "bote"
+        },
+        {
+          "id": "W033-16",
+          "type": "Palabra",
+          "text": "rubbish",
+          "translation": "basura"
+        },
+        {
+          "id": "W033-17",
+          "type": "Palabra",
+          "text": "messy",
+          "translation": "desordenado"
+        },
+        {
+          "id": "W033-18",
+          "type": "Palabra",
+          "text": "sweep",
+          "translation": "barrer"
+        },
+        {
+          "id": "W033-19",
+          "type": "Palabra",
+          "text": "wipe",
+          "translation": "limpiar"
+        },
+        {
+          "id": "W033-20",
+          "type": "Palabra",
+          "text": "dust",
+          "translation": "quitar el polvo"
+        },
+        {
+          "id": "W033-21",
+          "type": "Palabra",
+          "text": "polish",
+          "translation": "pulir"
+        },
+        {
+          "id": "W033-22",
+          "type": "Palabra",
+          "text": "vacuum",
+          "translation": "aspirar"
+        }
+      ]
+    },
+    {
+      "mission": "034",
+      "source": {
+        "id": "034",
+        "title": "Bath Time",
+        "theme": "Higiene personal",
+        "description": "Identifica objetos de aseo y ordena una rutina de higiene muy sencilla.",
+        "words": [
+          [
+            "bath",
+            "baño / bañera",
+            "🛁"
+          ],
+          [
+            "shower",
+            "ducha",
+            "🚿"
+          ],
+          [
+            "toothbrush",
+            "cepillo de dientes",
+            "🪥"
+          ],
+          [
+            "toothpaste",
+            "pasta de dientes",
+            "🦷"
+          ],
+          [
+            "shampoo",
+            "champú",
+            "🧴"
+          ],
+          [
+            "hands",
+            "manos",
+            "👐"
+          ]
+        ],
+        "extraVocabulary": [],
+        "pronunciation": [
+          {
+            "word": "bath",
+            "activity": "Escuchar el sonido inicial y repetir",
+            "hint": "baaz"
+          },
+          {
+            "word": "shower",
+            "activity": "Practicar las vocales y repetir",
+            "hint": "sháua"
+          },
+          {
+            "word": "toothbrush",
+            "activity": "Marcar las sílabas al decir la palabra",
+            "hint": "túz-brásh"
+          },
+          {
+            "word": "toothpaste",
+            "activity": "Escuchar el sonido final y repetir",
+            "hint": "túz-péist"
+          },
+          {
+            "word": "shampoo",
+            "activity": "Escuchar el sonido inicial y repetir",
+            "hint": "sham-púu"
+          },
+          {
+            "word": "hands",
+            "activity": "Practicar las vocales y repetir",
+            "hint": "jandz"
+          }
+        ],
+        "grammar": {
+          "focus": "Imperativos y secuencia sencilla de rutina",
+          "explanation": "Para dar instrucciones de higiene usamos el verbo al principio: «Brush your teeth» y «Wash your hands». Podemos ordenar varias acciones con «First» (primero) y «Then» (después).",
+          "model": "Brush your teeth. Wash your hands.",
+          "practice": "Relaciona cada objeto del baño con la instrucción correspondiente y ordena los pasos.",
+          "order": "Brush your teeth.",
+          "final": [
+            "Brush your teeth.",
+            "Brushes your teeth.",
+            "Brushing your teeth."
+          ],
+          "items": [
+            {
+              "prompt": "Which object do you use with toothpaste?",
+              "answer": "A toothbrush",
+              "options": [
+                "A toothbrush",
+                "A towel",
+                "A bath"
+              ],
+              "es": "El cepillo de dientes se usa con pasta de dientes."
+            },
+            {
+              "prompt": "Complete the instruction: Wash your ___.",
+              "answer": "hands",
+              "options": [
+                "hands",
+                "toothpaste",
+                "shower"
+              ],
+              "es": "La expresión del currículo es Wash your hands."
+            },
+            {
+              "prompt": "Choose the correct instruction.",
+              "answer": "Brush your teeth.",
+              "options": [
+                "Brush your teeth.",
+                "Brushes your teeth.",
+                "Brushing your teeth."
+              ],
+              "es": "El imperativo usa el verbo base brush."
+            },
+            {
+              "prompt": "Which word means “champú”?",
+              "answer": "Shampoo",
+              "options": [
+                "Shampoo",
+                "Shower",
+                "Toothbrush"
+              ],
+              "es": "Shampoo significa champú."
+            }
+          ]
+        },
+        "readingText": "It is bath time for Ella. First, she takes a shower. She uses shampoo to wash her hair. Then she gets her toothbrush and toothpaste. She brushes her teeth. After that, she washes her hands. Her bath time is finished and she is ready for bed.",
+        "readingQuestions": [
+          {
+            "question": "Who is getting ready for bed?",
+            "answer": "Ella",
+            "options": [
+              "Ella",
+              "Ben",
+              "Mia"
+            ]
+          },
+          {
+            "question": "What time is it for Ella?",
+            "answer": "Bath time",
+            "options": [
+              "Bath time",
+              "Lunch time",
+              "Play time"
+            ]
+          },
+          {
+            "question": "What does Ella do first?",
+            "answer": "She takes a shower",
+            "options": [
+              "She takes a shower",
+              "She brushes her teeth",
+              "She washes her hands"
+            ]
+          },
+          {
+            "question": "What does she use to wash her hair?",
+            "answer": "Shampoo",
+            "options": [
+              "Shampoo",
+              "Toothpaste",
+              "Soap for dishes"
+            ]
+          },
+          {
+            "question": "What does Ella get after her shower?",
+            "answer": "Her toothbrush and toothpaste",
+            "options": [
+              "Her toothbrush and toothpaste",
+              "Her shoes and coat",
+              "Her book and bag"
+            ]
+          },
+          {
+            "question": "What does she brush?",
+            "answer": "Her teeth",
+            "options": [
+              "Her teeth",
+              "Her hair",
+              "Her hands"
+            ]
+          },
+          {
+            "question": "What does Ella wash after brushing her teeth?",
+            "answer": "Her hands",
+            "options": [
+              "Her hands",
+              "Her shoes",
+              "Her face only"
+            ]
+          },
+          {
+            "question": "When is her bath time finished?",
+            "answer": "After she washes her hands",
+            "options": [
+              "After she washes her hands",
+              "Before the shower",
+              "Before brushing her teeth"
+            ]
+          },
+          {
+            "question": "What is Ella ready for?",
+            "answer": "Bed",
+            "options": [
+              "Bed",
+              "School",
+              "The café"
+            ]
+          },
+          {
+            "question": "Which item is used for cleaning teeth?",
+            "answer": "Toothpaste",
+            "options": [
+              "Toothpaste",
+              "Shampoo",
+              "A bath"
+            ]
+          }
+        ],
+        "listeningFormat": "Programa de radio",
+        "listeningScript": "Presenter: Welcome to Bath Time. Here is a simple routine. First, take a shower. Use shampoo. Then get your toothbrush and toothpaste. Brush your teeth. Next, wash your hands. You can take a bath, too. A shower or a bath helps you get clean. Thank you for listening!",
+        "listeningQuestions": [
+          {
+            "question": "What is the programme about?",
+            "answer": "Bath time",
+            "options": [
+              "Bath time",
+              "Breakfast",
+              "Sports day"
+            ]
+          },
+          {
+            "question": "What do you do first?",
+            "answer": "Take a shower",
+            "options": [
+              "Take a shower",
+              "Wash your hands",
+              "Brush your teeth"
+            ]
+          },
+          {
+            "question": "What do you use in the shower?",
+            "answer": "Shampoo",
+            "options": [
+              "Shampoo",
+              "Toothpaste",
+              "A toothbrush only"
+            ]
+          },
+          {
+            "question": "What do you get after the shower?",
+            "answer": "A toothbrush and toothpaste",
+            "options": [
+              "A toothbrush and toothpaste",
+              "A towel and shoes",
+              "A book and bag"
+            ]
+          },
+          {
+            "question": "What must you brush?",
+            "answer": "Your teeth",
+            "options": [
+              "Your teeth",
+              "Your hands",
+              "Your hair"
+            ]
+          },
+          {
+            "question": "What do you wash next?",
+            "answer": "Your hands",
+            "options": [
+              "Your hands",
+              "Your shoes",
+              "The floor"
+            ]
+          },
+          {
+            "question": "What other bath option does the presenter mention?",
+            "answer": "A bath",
+            "options": [
+              "A bath",
+              "A swim in the sea",
+              "A walk in the park"
+            ]
+          },
+          {
+            "question": "What does shampoo help you wash?",
+            "answer": "Your hair",
+            "options": [
+              "Your hair",
+              "Your teeth",
+              "Your hands"
+            ]
+          },
+          {
+            "question": "Who speaks in the programme?",
+            "answer": "The presenter",
+            "options": [
+              "The presenter",
+              "A farmer",
+              "A child asking for a sandwich"
+            ]
+          },
+          {
+            "question": "What does the routine help you do?",
+            "answer": "Get clean",
+            "options": [
+              "Get clean",
+              "Get dressed for a party",
+              "Cook food"
+            ]
+          }
+        ]
+      },
+      "writingSource": [
+        {
+          "id": "W034-01",
+          "type": "Palabra",
+          "text": "bath",
+          "translation": "bañera"
+        },
+        {
+          "id": "W034-02",
+          "type": "Palabra",
+          "text": "shower",
+          "translation": "chubasco"
+        },
+        {
+          "id": "W034-03",
+          "type": "Palabra",
+          "text": "toothbrush",
+          "translation": "cepillo de dientes"
+        },
+        {
+          "id": "W034-04",
+          "type": "Palabra",
+          "text": "toothpaste",
+          "translation": "crema/pasta dental/dentaria/dentífrica"
+        },
+        {
+          "id": "W034-05",
+          "type": "Palabra",
+          "text": "shampoo",
+          "translation": "champú"
+        },
+        {
+          "id": "W034-06",
+          "type": "Expresión",
+          "text": "Brush your teeth.",
+          "translation": "pincel tu teeth."
+        },
+        {
+          "id": "W034-07",
+          "type": "Expresión",
+          "text": "Wash your hands.",
+          "translation": "lavar tu hands."
+        },
+        {
+          "id": "W034-08",
+          "type": "Palabra",
+          "text": "flannel",
+          "translation": "manopla"
+        },
+        {
+          "id": "W034-09",
+          "type": "Palabra",
+          "text": "razor",
+          "translation": "navaja"
+        },
+        {
+          "id": "W034-10",
+          "type": "Palabra",
+          "text": "comb",
+          "translation": "peine"
+        },
+        {
+          "id": "W034-11",
+          "type": "Palabra",
+          "text": "mirror",
+          "translation": "espejo"
+        },
+        {
+          "id": "W034-12",
+          "type": "Palabra",
+          "text": "tap",
+          "translation": "grifo"
+        },
+        {
+          "id": "W034-13",
+          "type": "Palabra",
+          "text": "sink",
+          "translation": "fregadero"
+        },
+        {
+          "id": "W034-14",
+          "type": "Palabra",
+          "text": "conditioner",
+          "translation": "conditioner"
+        },
+        {
+          "id": "W034-15",
+          "type": "Palabra",
+          "text": "lotion",
+          "translation": "loción"
+        },
+        {
+          "id": "W034-16",
+          "type": "Palabra",
+          "text": "deodorant",
+          "translation": "desodorante"
+        },
+        {
+          "id": "W034-17",
+          "type": "Palabra",
+          "text": "bathmat",
+          "translation": "bathmat"
+        },
+        {
+          "id": "W034-18",
+          "type": "Palabra",
+          "text": "sponge",
+          "translation": "esponja"
+        },
+        {
+          "id": "W034-19",
+          "type": "Palabra",
+          "text": "cotton",
+          "translation": "algodón"
+        },
+        {
+          "id": "W034-20",
+          "type": "Palabra",
+          "text": "nailbrush",
+          "translation": "nailbrush"
+        },
+        {
+          "id": "W034-21",
+          "type": "Palabra",
+          "text": "towel",
+          "translation": "toalla"
+        },
+        {
+          "id": "W034-22",
+          "type": "Palabra",
+          "text": "bathrobe",
+          "translation": "albornoz"
+        }
+      ]
+    },
+    {
+      "mission": "035",
+      "source": {
+        "id": "035",
+        "title": "My Daily Routine",
+        "theme": "Rutinas cotidianas",
+        "description": "Reconoce acciones diarias y ordena una rutina con frases muy cortas.",
+        "words": [
+          [
+            "wake up",
+            "despertarse",
+            "🌅"
+          ],
+          [
+            "get up",
+            "levantarse",
+            "🛏️"
+          ],
+          [
+            "eat",
+            "comer",
+            "🍽️"
+          ],
+          [
+            "go",
+            "ir",
+            "🚶"
+          ],
+          [
+            "play",
+            "jugar",
+            "🧸"
+          ],
+          [
+            "sleep",
+            "dormir",
+            "😴"
+          ]
+        ],
+        "extraVocabulary": [],
+        "pronunciation": [
+          {
+            "word": "wake up",
+            "activity": "Escuchar el sonido inicial y repetir",
+            "hint": "uéik ap"
+          },
+          {
+            "word": "get up",
+            "activity": "Practicar las vocales y repetir",
+            "hint": "guét ap"
+          },
+          {
+            "word": "eat",
+            "activity": "Marcar las sílabas al decir la palabra",
+            "hint": "íit"
+          },
+          {
+            "word": "go",
+            "activity": "Escuchar el sonido final y repetir",
+            "hint": "góu"
+          },
+          {
+            "word": "play",
+            "activity": "Escuchar el sonido inicial y repetir",
+            "hint": "pléi"
+          },
+          {
+            "word": "sleep",
+            "activity": "Practicar las vocales y repetir",
+            "hint": "slíip"
+          }
+        ],
+        "grammar": {
+          "focus": "Presente simple en bloques de acción: I…",
+          "explanation": "Para hablar de la rutina usamos «I» + un verbo en presente. Por ejemplo: «I wake up», «I eat» y «I sleep». En esta misión aprendemos estas expresiones como bloques completos, sin añadir terminaciones.",
+          "model": "I wake up. I eat. I sleep.",
+          "practice": "Ordena tres acciones y completa cada frase con el verbo correcto.",
+          "order": "I wake up.",
+          "final": [
+            "I wake up.",
+            "I wakes up.",
+            "I waking up."
+          ],
+          "items": [
+            {
+              "prompt": "Complete: I ___ up in the morning.",
+              "answer": "wake",
+              "options": [
+                "wake",
+                "wakes",
+                "waking"
+              ],
+              "es": "Con I usamos wake, sin -s."
+            },
+            {
+              "prompt": "Choose the correct sentence.",
+              "answer": "I eat.",
+              "options": [
+                "I eat.",
+                "I eats.",
+                "I eating."
+              ],
+              "es": "El modelo de la misión es I + eat."
+            },
+            {
+              "prompt": "Which phrase means “dormir”?",
+              "answer": "sleep",
+              "options": [
+                "sleep",
+                "play",
+                "go"
+              ],
+              "es": "Sleep significa dormir."
+            },
+            {
+              "prompt": "Complete: I ___ to school.",
+              "answer": "go",
+              "options": [
+                "go",
+                "goes",
+                "going"
+              ],
+              "es": "Con I usamos go."
+            }
+          ]
+        },
+        "readingText": "Tom has a busy day. He wakes up in the morning. He gets up and eats breakfast. Then he goes to school. In the afternoon, he plays with his friends. At night, Tom sleeps. He likes his daily routine because every day has time to learn and play.",
+        "readingQuestions": [
+          {
+            "question": "Who has a busy day?",
+            "answer": "Tom",
+            "options": [
+              "Tom",
+              "Mia",
+              "Ben"
+            ]
+          },
+          {
+            "question": "When does Tom wake up?",
+            "answer": "In the morning",
+            "options": [
+              "In the morning",
+              "At night",
+              "In the afternoon"
+            ]
+          },
+          {
+            "question": "What does Tom do after he wakes up?",
+            "answer": "He gets up",
+            "options": [
+              "He gets up",
+              "He goes to sleep",
+              "He plays football"
+            ]
+          },
+          {
+            "question": "What does Tom eat?",
+            "answer": "Breakfast",
+            "options": [
+              "Breakfast",
+              "Dinner",
+              "A birthday cake"
+            ]
+          },
+          {
+            "question": "Where does Tom go after breakfast?",
+            "answer": "To school",
+            "options": [
+              "To school",
+              "To the zoo",
+              "To the beach"
+            ]
+          },
+          {
+            "question": "When does Tom play with his friends?",
+            "answer": "In the afternoon",
+            "options": [
+              "In the afternoon",
+              "In the morning",
+              "At night"
+            ]
+          },
+          {
+            "question": "What does Tom do at night?",
+            "answer": "He sleeps",
+            "options": [
+              "He sleeps",
+              "He goes to school",
+              "He plays"
+            ]
+          },
+          {
+            "question": "Who does Tom play with?",
+            "answer": "His friends",
+            "options": [
+              "His friends",
+              "His teacher",
+              "His grandparents"
+            ]
+          },
+          {
+            "question": "What does Tom like?",
+            "answer": "His daily routine",
+            "options": [
+              "His daily routine",
+              "Long journeys",
+              "Cleaning the kitchen"
+            ]
+          },
+          {
+            "question": "Which action comes first?",
+            "answer": "Wake up",
+            "options": [
+              "Wake up",
+              "Play",
+              "Sleep"
+            ]
+          }
+        ],
+        "listeningFormat": "Entrevista",
+        "listeningScript": "Interviewer: Hello, Lily. Tell us about your day. Lily: I wake up in the morning. Interviewer: What do you do next? Lily: I get up and eat breakfast. Interviewer: Do you go to school? Lily: Yes, I go to school. Then I play with my friends. Interviewer: What do you do at night? Lily: I sleep. Interviewer: Thank you, Lily!",
+        "listeningQuestions": [
+          {
+            "question": "Who is being interviewed?",
+            "answer": "Lily",
+            "options": [
+              "Lily",
+              "Tom",
+              "Ben"
+            ]
+          },
+          {
+            "question": "When does Lily wake up?",
+            "answer": "In the morning",
+            "options": [
+              "In the morning",
+              "In the evening",
+              "At night"
+            ]
+          },
+          {
+            "question": "What does she do after waking up?",
+            "answer": "She gets up",
+            "options": [
+              "She gets up",
+              "She sleeps",
+              "She plays"
+            ]
+          },
+          {
+            "question": "What does Lily eat?",
+            "answer": "Breakfast",
+            "options": [
+              "Breakfast",
+              "Lunch",
+              "Dinner"
+            ]
+          },
+          {
+            "question": "Where does Lily go?",
+            "answer": "To school",
+            "options": [
+              "To school",
+              "To the farm",
+              "To the café"
+            ]
+          },
+          {
+            "question": "Who does Lily play with?",
+            "answer": "Her friends",
+            "options": [
+              "Her friends",
+              "Her parents",
+              "Her teacher"
+            ]
+          },
+          {
+            "question": "When does she sleep?",
+            "answer": "At night",
+            "options": [
+              "At night",
+              "In the morning",
+              "In the afternoon"
+            ]
+          },
+          {
+            "question": "Who asks the questions?",
+            "answer": "The interviewer",
+            "options": [
+              "The interviewer",
+              "Lily's brother",
+              "A farmer"
+            ]
+          },
+          {
+            "question": "Which action comes after breakfast?",
+            "answer": "Go to school",
+            "options": [
+              "Go to school",
+              "Go to sleep",
+              "Take a shower"
+            ]
+          },
+          {
+            "question": "What is the interview about?",
+            "answer": "Lily's daily routine",
+            "options": [
+              "Lily's daily routine",
+              "Her birthday",
+              "Her favourite animals"
+            ]
+          }
+        ]
+      },
+      "writingSource": [
+        {
+          "id": "W035-01",
+          "type": "Expresión",
+          "text": "wake up",
+          "translation": "despertarse"
+        },
+        {
+          "id": "W035-02",
+          "type": "Expresión",
+          "text": "get up",
+          "translation": "levantarse"
+        },
+        {
+          "id": "W035-03",
+          "type": "Palabra",
+          "text": "eat",
+          "translation": "comer"
+        },
+        {
+          "id": "W035-04",
+          "type": "Palabra",
+          "text": "go",
+          "translation": "ir"
+        },
+        {
+          "id": "W035-05",
+          "type": "Palabra",
+          "text": "play",
+          "translation": "jugar"
+        },
+        {
+          "id": "W035-06",
+          "type": "Expresión",
+          "text": "I wake up.",
+          "translation": "yo despertarse arriba."
+        },
+        {
+          "id": "W035-07",
+          "type": "Expresión",
+          "text": "I eat.",
+          "translation": "yo comer."
+        },
+        {
+          "id": "W035-08",
+          "type": "Expresión",
+          "text": "I sleep.",
+          "translation": "yo dormir."
+        },
+        {
+          "id": "W035-09",
+          "type": "Palabra",
+          "text": "shower",
+          "translation": "chubasco"
+        },
+        {
+          "id": "W035-10",
+          "type": "Palabra",
+          "text": "brush",
+          "translation": "pincel"
+        },
+        {
+          "id": "W035-11",
+          "type": "Palabra",
+          "text": "breakfast",
+          "translation": "desayuno"
+        },
+        {
+          "id": "W035-12",
+          "type": "Palabra",
+          "text": "lunch",
+          "translation": "almuerzo"
+        },
+        {
+          "id": "W035-13",
+          "type": "Palabra",
+          "text": "dinner",
+          "translation": "cena"
+        },
+        {
+          "id": "W035-14",
+          "type": "Palabra",
+          "text": "homework",
+          "translation": "deberes"
+        },
+        {
+          "id": "W035-15",
+          "type": "Palabra",
+          "text": "school",
+          "translation": "escuela"
+        },
+        {
+          "id": "W035-16",
+          "type": "Palabra",
+          "text": "uniform",
+          "translation": "uniforme"
+        },
+        {
+          "id": "W035-17",
+          "type": "Palabra",
+          "text": "work",
+          "translation": "trabajo"
+        },
+        {
+          "id": "W035-18",
+          "type": "Palabra",
+          "text": "rest",
+          "translation": "reposo"
+        },
+        {
+          "id": "W035-19",
+          "type": "Palabra",
+          "text": "exercise",
+          "translation": "ejercicio"
+        },
+        {
+          "id": "W035-20",
+          "type": "Palabra",
+          "text": "relax",
+          "translation": "relajar"
+        },
+        {
+          "id": "W035-21",
+          "type": "Palabra",
+          "text": "arrive",
+          "translation": "llegar"
+        },
+        {
+          "id": "W035-22",
+          "type": "Palabra",
+          "text": "leave",
+          "translation": "partir"
+        },
+        {
+          "id": "W035-23",
+          "type": "Palabra",
+          "text": "finish",
+          "translation": "meta"
+        }
+      ]
+    },
+    {
+      "mission": "036",
+      "source": {
+        "id": "036",
+        "title": "What Time Is It?",
+        "theme": "Horas en punto y momentos del día",
+        "description": "Lee horas en punto y reconoce los momentos principales del día.",
+        "words": [
+          [
+            "one o'clock",
+            "la una en punto",
+            "🕐"
+          ],
+          [
+            "two o'clock",
+            "las dos en punto",
+            "🕑"
+          ],
+          [
+            "three o'clock",
+            "las tres en punto",
+            "🕒"
+          ],
+          [
+            "four o'clock",
+            "las cuatro en punto",
+            "🕓"
+          ],
+          [
+            "five o'clock",
+            "las cinco en punto",
+            "🕔"
+          ],
+          [
+            "six o'clock",
+            "las seis en punto",
+            "🕕"
+          ],
+          [
+            "seven o'clock",
+            "las siete en punto",
+            "🕖"
+          ],
+          [
+            "eight o'clock",
+            "las ocho en punto",
+            "🕗"
+          ],
+          [
+            "nine o'clock",
+            "las nueve en punto",
+            "🕘"
+          ],
+          [
+            "ten o'clock",
+            "las diez en punto",
+            "🕙"
+          ],
+          [
+            "eleven o'clock",
+            "las once en punto",
+            "🕚"
+          ],
+          [
+            "twelve o'clock",
+            "las doce en punto",
+            "🕛"
+          ],
+          [
+            "morning",
+            "mañana",
+            "🌅"
+          ],
+          [
+            "afternoon",
+            "tarde",
+            "🌤️"
+          ],
+          [
+            "evening",
+            "atardecer / primeras horas de la noche",
+            "🌆"
+          ],
+          [
+            "night",
+            "noche",
+            "🌙"
+          ]
+        ],
+        "extraVocabulary": [],
+        "pronunciation": [
+          {
+            "word": "one o'clock–twelve o'clock",
+            "activity": "Escuchar el sonido inicial y repetir",
+            "hint": "uán a-klók tu tuélv a-klók"
+          },
+          {
+            "word": "morning",
+            "activity": "Practicar las vocales y repetir",
+            "hint": "móo-ning"
+          },
+          {
+            "word": "afternoon",
+            "activity": "Marcar las sílabas al decir la palabra",
+            "hint": "af-ta-núun"
+          },
+          {
+            "word": "evening",
+            "activity": "Escuchar el sonido final y repetir",
+            "hint": "íiv-ning"
+          },
+          {
+            "word": "night",
+            "activity": "Escuchar el sonido inicial y repetir",
+            "hint": "náit"
+          }
+        ],
+        "grammar": {
+          "focus": "What time is it? It is… o’clock",
+          "explanation": "Preguntamos la hora con «What time is it?». Para una hora en punto respondemos «It is… o’clock» o «It’s… o’clock». El número va antes de o’clock. En esta misión practicamos horas en punto del uno al doce.",
+          "model": "What time is it? It’s one o’clock. It’s twelve o’clock.",
+          "practice": "Mira el reloj y completa la respuesta con el número correcto.",
+          "order": "It is three o'clock.",
+          "final": [
+            "It is three o'clock.",
+            "It are three o'clock.",
+            "It is o'clock three."
+          ],
+          "items": [
+            {
+              "prompt": "Choose the correct question.",
+              "answer": "What time is it?",
+              "options": [
+                "What time is it?",
+                "Where time is it?",
+                "What day is time?"
+              ],
+              "es": "What time is it? pregunta qué hora es."
+            },
+            {
+              "prompt": "Complete: It is five ___.",
+              "answer": "o'clock",
+              "options": [
+                "o'clock",
+                "morning",
+                "night"
+              ],
+              "es": "Para las horas en punto usamos o'clock."
+            },
+            {
+              "prompt": "The clock shows 7:00. Choose the answer.",
+              "answer": "It is seven o'clock.",
+              "options": [
+                "It is seven o'clock.",
+                "It is five o'clock.",
+                "It is twelve o'clock."
+              ],
+              "es": "A las 7:00 decimos seven o'clock."
+            },
+            {
+              "prompt": "The clock shows 12:00. Choose the answer.",
+              "answer": "It is twelve o'clock.",
+              "options": [
+                "It is twelve o'clock.",
+                "It is two o'clock.",
+                "It is ten o'clock."
+              ],
+              "es": "A las 12:00 decimos twelve o'clock."
+            }
+          ]
+        },
+        "readingText": "It is Monday. At seven o'clock, Sam wakes up in the morning. At eight o'clock, he eats breakfast. At twelve o'clock, it is lunchtime. In the afternoon, he plays at three o'clock. At six o'clock, it is evening. At nine o'clock, it is night and Sam goes to bed.",
+        "readingQuestions": [
+          {
+            "question": "What day is it?",
+            "answer": "Monday",
+            "options": [
+              "Monday",
+              "Friday",
+              "Sunday"
+            ]
+          },
+          {
+            "question": "What time does Sam wake up?",
+            "answer": "Seven o'clock",
+            "options": [
+              "Seven o'clock",
+              "Eight o'clock",
+              "Nine o'clock"
+            ]
+          },
+          {
+            "question": "When does Sam eat breakfast?",
+            "answer": "Eight o'clock",
+            "options": [
+              "Eight o'clock",
+              "Twelve o'clock",
+              "Three o'clock"
+            ]
+          },
+          {
+            "question": "What time is lunchtime?",
+            "answer": "Twelve o'clock",
+            "options": [
+              "Twelve o'clock",
+              "Six o'clock",
+              "Seven o'clock"
+            ]
+          },
+          {
+            "question": "When does Sam play?",
+            "answer": "Three o'clock",
+            "options": [
+              "Three o'clock",
+              "Nine o'clock",
+              "Eight o'clock"
+            ]
+          },
+          {
+            "question": "What moment of the day is it at six o'clock?",
+            "answer": "Evening",
+            "options": [
+              "Evening",
+              "Morning",
+              "Night"
+            ]
+          },
+          {
+            "question": "What time does Sam go to bed?",
+            "answer": "Nine o'clock",
+            "options": [
+              "Nine o'clock",
+              "Seven o'clock",
+              "Twelve o'clock"
+            ]
+          },
+          {
+            "question": "What moment of the day is it at seven o'clock in the morning?",
+            "answer": "Morning",
+            "options": [
+              "Morning",
+              "Evening",
+              "Night"
+            ]
+          },
+          {
+            "question": "How many different clock times are in the text?",
+            "answer": "Six",
+            "options": [
+              "Six",
+              "Four",
+              "Eight"
+            ]
+          },
+          {
+            "question": "What does Sam do at night?",
+            "answer": "He goes to bed",
+            "options": [
+              "He goes to bed",
+              "He eats breakfast",
+              "He goes to school"
+            ]
+          }
+        ],
+        "listeningFormat": "Historia narrada",
+        "listeningScript": "Listen to Ben's day. At seven o'clock in the morning, Ben gets up. At eight o'clock, he eats breakfast. At one o'clock in the afternoon, he reads a book. At five o'clock, he plays football. At seven o'clock in the evening, he has dinner. At ten o'clock at night, Ben sleeps.",
+        "listeningQuestions": [
+          {
+            "question": "Whose day do we hear about?",
+            "answer": "Ben's",
+            "options": [
+              "Ben's",
+              "Sam's",
+              "Lily's"
+            ]
+          },
+          {
+            "question": "What time does Ben get up?",
+            "answer": "Seven o'clock",
+            "options": [
+              "Seven o'clock",
+              "Eight o'clock",
+              "Ten o'clock"
+            ]
+          },
+          {
+            "question": "When does Ben eat breakfast?",
+            "answer": "Eight o'clock",
+            "options": [
+              "Eight o'clock",
+              "One o'clock",
+              "Five o'clock"
+            ]
+          },
+          {
+            "question": "What does Ben do at one o'clock?",
+            "answer": "He reads a book",
+            "options": [
+              "He reads a book",
+              "He plays football",
+              "He sleeps"
+            ]
+          },
+          {
+            "question": "What does Ben do at five o'clock?",
+            "answer": "He plays football",
+            "options": [
+              "He plays football",
+              "He eats breakfast",
+              "He reads a book"
+            ]
+          },
+          {
+            "question": "When does Ben have dinner?",
+            "answer": "Seven o'clock in the evening",
+            "options": [
+              "Seven o'clock in the evening",
+              "Seven o'clock in the morning",
+              "Ten o'clock at night"
+            ]
+          },
+          {
+            "question": "What time does Ben sleep?",
+            "answer": "Ten o'clock",
+            "options": [
+              "Ten o'clock",
+              "Five o'clock",
+              "One o'clock"
+            ]
+          },
+          {
+            "question": "Which moment of the day is one o'clock?",
+            "answer": "Afternoon",
+            "options": [
+              "Afternoon",
+              "Morning",
+              "Night"
+            ]
+          },
+          {
+            "question": "Which moment of the day is ten o'clock at night?",
+            "answer": "Night",
+            "options": [
+              "Night",
+              "Morning",
+              "Afternoon"
+            ]
+          },
+          {
+            "question": "What kind of audio is this?",
+            "answer": "A story about a day",
+            "options": [
+              "A story about a day",
+              "A café order",
+              "An interview about animals"
+            ]
+          }
+        ]
+      },
+      "writingSource": [
+        {
+          "id": "W036-01",
+          "type": "Expresión",
+          "text": "one o'clock",
+          "translation": "la una en punto"
+        },
+        {
+          "id": "W036-02",
+          "type": "Expresión",
+          "text": "two o'clock",
+          "translation": "las dos en punto"
+        },
+        {
+          "id": "W036-03",
+          "type": "Expresión",
+          "text": "three o'clock",
+          "translation": "las tres en punto"
+        },
+        {
+          "id": "W036-04",
+          "type": "Palabra",
+          "text": "morning",
+          "translation": "mañana"
+        },
+        {
+          "id": "W036-05",
+          "type": "Palabra",
+          "text": "afternoon",
+          "translation": "tarde"
+        },
+        {
+          "id": "W036-06",
+          "type": "Expresión",
+          "text": "It's one o'clock.",
+          "translation": "ello's uno oh'reloj."
+        },
+        {
+          "id": "W036-07",
+          "type": "Expresión",
+          "text": "It's twelve o'clock.",
+          "translation": "ello's doce oh'reloj."
+        },
+        {
+          "id": "W036-08",
+          "type": "Palabra",
+          "text": "minute",
+          "translation": "minuto"
+        },
+        {
+          "id": "W036-09",
+          "type": "Palabra",
+          "text": "hour",
+          "translation": "hora"
+        },
+        {
+          "id": "W036-10",
+          "type": "Palabra",
+          "text": "clock",
+          "translation": "reloj"
+        },
+        {
+          "id": "W036-11",
+          "type": "Palabra",
+          "text": "watch",
+          "translation": "reloj"
+        },
+        {
+          "id": "W036-12",
+          "type": "Palabra",
+          "text": "noon",
+          "translation": "mediodía"
+        },
+        {
+          "id": "W036-13",
+          "type": "Palabra",
+          "text": "midnight",
+          "translation": "medianoche"
+        },
+        {
+          "id": "W036-14",
+          "type": "Palabra",
+          "text": "sunrise",
+          "translation": "amanecer"
+        },
+        {
+          "id": "W036-15",
+          "type": "Palabra",
+          "text": "sunset",
+          "translation": "atardecer"
+        },
+        {
+          "id": "W036-16",
+          "type": "Palabra",
+          "text": "half",
+          "translation": "mitad"
+        },
+        {
+          "id": "W036-17",
+          "type": "Palabra",
+          "text": "quarter",
+          "translation": "trimestre"
+        },
+        {
+          "id": "W036-18",
+          "type": "Palabra",
+          "text": "early",
+          "translation": "temprano"
+        },
+        {
+          "id": "W036-19",
+          "type": "Palabra",
+          "text": "late",
+          "translation": "tarde"
+        },
+        {
+          "id": "W036-20",
+          "type": "Palabra",
+          "text": "before",
+          "translation": "antes de"
+        },
+        {
+          "id": "W036-21",
+          "type": "Palabra",
+          "text": "after",
+          "translation": "después"
+        },
+        {
+          "id": "W036-22",
+          "type": "Palabra",
+          "text": "soon",
+          "translation": "pronto"
+        }
+      ]
+    },
+    {
+      "mission": "037",
+      "source": {
+        "id": "037",
+        "title": "My Birthday",
+        "theme": "Cumpleaños, edad y celebraciones",
+        "description": "Comprende preguntas y respuestas modelo sobre la edad y el cumpleaños.",
+        "words": [
+          [
+            "birthday",
+            "cumpleaños",
+            "🎂"
+          ],
+          [
+            "cake",
+            "tarta",
+            "🍰"
+          ],
+          [
+            "candle",
+            "vela",
+            "🕯️"
+          ],
+          [
+            "present",
+            "regalo",
+            "🎁"
+          ],
+          [
+            "card",
+            "tarjeta",
+            "💌"
+          ],
+          [
+            "How old are you?",
+            "¿Cuántos años tienes?",
+            "❓"
+          ]
+        ],
+        "extraVocabulary": [],
+        "pronunciation": [
+          {
+            "word": "birthday",
+            "activity": "Escuchar el sonido inicial y repetir",
+            "hint": "bérz-dei"
+          },
+          {
+            "word": "cake",
+            "activity": "Practicar las vocales y repetir",
+            "hint": "kéik"
+          },
+          {
+            "word": "candle",
+            "activity": "Marcar las sílabas al decir la palabra",
+            "hint": "kán-dol"
+          },
+          {
+            "word": "present",
+            "activity": "Escuchar el sonido final y repetir",
+            "hint": "pré-zent"
+          },
+          {
+            "word": "card",
+            "activity": "Escuchar el sonido inicial y repetir",
+            "hint": "kaad"
+          },
+          {
+            "word": "How old are you?",
+            "activity": "Practicar las vocales y repetir",
+            "hint": "jáu óuld aa iu"
+          }
+        ],
+        "grammar": {
+          "focus": "How old are you? I'm…",
+          "explanation": "Preguntamos la edad con «How old are you?». Respondemos con «I’m…» y un número: «I’m six». En esta misión practicamos la pregunta y la respuesta como un intercambio fijo.",
+          "model": "How old are you? I’m six.",
+          "practice": "Completa un diálogo de cumpleaños con una edad y reconoce la pregunta correcta.",
+          "order": "I'm six.",
+          "final": [
+            "I'm six.",
+            "I six am.",
+            "I am six years."
+          ],
+          "items": [
+            {
+              "prompt": "Choose the question about age.",
+              "answer": "How old are you?",
+              "options": [
+                "How old are you?",
+                "What is your name?",
+                "Where are you?"
+              ],
+              "es": "How old are you? pregunta cuántos años tienes."
+            },
+            {
+              "prompt": "Complete: I’m ___.",
+              "answer": "seven",
+              "options": [
+                "seven",
+                "birthday",
+                "cake"
+              ],
+              "es": "Después de I’m ponemos el número de años."
+            },
+            {
+              "prompt": "Choose the correct answer to “How old are you?”",
+              "answer": "I'm eight.",
+              "options": [
+                "I'm eight.",
+                "My birthday cake.",
+                "I am birthday."
+              ],
+              "es": "La respuesta modelo empieza con I’m + número."
+            },
+            {
+              "prompt": "Which word means “vela”?",
+              "answer": "candle",
+              "options": [
+                "candle",
+                "card",
+                "cake"
+              ],
+              "es": "Candle significa vela."
+            }
+          ]
+        },
+        "readingText": "It is Ella's birthday today. She is seven years old. There is a big cake on the table with seven candles. Her friend Ben has a present and a birthday card. Ben asks, “How old are you, Ella?” Ella smiles and says, “I’m seven!” They sing a birthday song.",
+        "readingQuestions": [
+          {
+            "question": "Whose birthday is it?",
+            "answer": "Ella's",
+            "options": [
+              "Ella's",
+              "Ben's",
+              "Mum's"
+            ]
+          },
+          {
+            "question": "How old is Ella?",
+            "answer": "Seven",
+            "options": [
+              "Seven",
+              "Six",
+              "Eight"
+            ]
+          },
+          {
+            "question": "Where is the cake?",
+            "answer": "On the table",
+            "options": [
+              "On the table",
+              "On the floor",
+              "In the garden"
+            ]
+          },
+          {
+            "question": "How many candles are on the cake?",
+            "answer": "Seven",
+            "options": [
+              "Seven",
+              "Five",
+              "Ten"
+            ]
+          },
+          {
+            "question": "What does Ben have?",
+            "answer": "A present and a card",
+            "options": [
+              "A present and a card",
+              "A cake and a candle",
+              "A book and a bag"
+            ]
+          },
+          {
+            "question": "What question does Ben ask?",
+            "answer": "How old are you?",
+            "options": [
+              "How old are you?",
+              "What time is it?",
+              "Where is the cake?"
+            ]
+          },
+          {
+            "question": "What does Ella answer?",
+            "answer": "I'm seven",
+            "options": [
+              "I'm seven",
+              "I'm nine",
+              "I'm six"
+            ]
+          },
+          {
+            "question": "What do they sing?",
+            "answer": "A birthday song",
+            "options": [
+              "A birthday song",
+              "A school song",
+              "A sleep song"
+            ]
+          },
+          {
+            "question": "What is on the cake?",
+            "answer": "Candles",
+            "options": [
+              "Candles",
+              "Books",
+              "Flowers"
+            ]
+          },
+          {
+            "question": "Who gives Ella the present?",
+            "answer": "Ben",
+            "options": [
+              "Ben",
+              "Ella",
+              "Her teacher"
+            ]
+          }
+        ],
+        "listeningFormat": "Situación dramatizada",
+        "listeningScript": "Ben: Happy birthday, Ella! Ella: Thank you! Ben: How old are you? Ella: I’m eight today. Ben: Here is a card and a present. Ella: Thank you, Ben. Mum: Look at the cake. There are eight candles. Ella: Eight candles! Let’s sing! Ben: Happy birthday!",
+        "listeningQuestions": [
+          {
+            "question": "Who has a birthday?",
+            "answer": "Ella",
+            "options": [
+              "Ella",
+              "Ben",
+              "Mum"
+            ]
+          },
+          {
+            "question": "What does Ben say first?",
+            "answer": "Happy birthday",
+            "options": [
+              "Happy birthday",
+              "Good night",
+              "Good morning"
+            ]
+          },
+          {
+            "question": "What question does Ben ask?",
+            "answer": "How old are you?",
+            "options": [
+              "How old are you?",
+              "Where is your cake?",
+              "What is your name?"
+            ]
+          },
+          {
+            "question": "How old is Ella?",
+            "answer": "Eight",
+            "options": [
+              "Eight",
+              "Seven",
+              "Six"
+            ]
+          },
+          {
+            "question": "What does Ben give Ella?",
+            "answer": "A card and a present",
+            "options": [
+              "A card and a present",
+              "A cake and a candle",
+              "A book and a pencil"
+            ]
+          },
+          {
+            "question": "Who points to the cake?",
+            "answer": "Mum",
+            "options": [
+              "Mum",
+              "Ben",
+              "Ella"
+            ]
+          },
+          {
+            "question": "How many candles are on the cake?",
+            "answer": "Eight",
+            "options": [
+              "Eight",
+              "Seven",
+              "Ten"
+            ]
+          },
+          {
+            "question": "What does Ella say after Ben gives the present?",
+            "answer": "Thank you",
+            "options": [
+              "Thank you",
+              "Goodbye",
+              "Please"
+            ]
+          },
+          {
+            "question": "What do they decide to do?",
+            "answer": "Sing",
+            "options": [
+              "Sing",
+              "Go to school",
+              "Play football"
+            ]
+          },
+          {
+            "question": "Which celebration is it?",
+            "answer": "A birthday",
+            "options": [
+              "A birthday",
+              "A wedding",
+              "A sports day"
+            ]
+          }
+        ]
+      },
+      "writingSource": [
+        {
+          "id": "W037-01",
+          "type": "Palabra",
+          "text": "birthday",
+          "translation": "cumpleaños"
+        },
+        {
+          "id": "W037-02",
+          "type": "Palabra",
+          "text": "cake",
+          "translation": "pudín"
+        },
+        {
+          "id": "W037-03",
+          "type": "Palabra",
+          "text": "candle",
+          "translation": "vela"
+        },
+        {
+          "id": "W037-04",
+          "type": "Palabra",
+          "text": "present",
+          "translation": "regalo"
+        },
+        {
+          "id": "W037-05",
+          "type": "Palabra",
+          "text": "card",
+          "translation": "carta"
+        },
+        {
+          "id": "W037-06",
+          "type": "Expresión",
+          "text": "I'm six.",
+          "translation": "yo'm seis."
+        },
+        {
+          "id": "W037-07",
+          "type": "Palabra",
+          "text": "guest",
+          "translation": "huésped"
+        },
+        {
+          "id": "W037-08",
+          "type": "Palabra",
+          "text": "invitation",
+          "translation": "invitación"
+        },
+        {
+          "id": "W037-09",
+          "type": "Palabra",
+          "text": "wish",
+          "translation": "deseo"
+        },
+        {
+          "id": "W037-10",
+          "type": "Palabra",
+          "text": "decorate",
+          "translation": "decorar"
+        },
+        {
+          "id": "W037-11",
+          "type": "Palabra",
+          "text": "chocolate",
+          "translation": "chocolate"
+        },
+        {
+          "id": "W037-12",
+          "type": "Palabra",
+          "text": "cupcake",
+          "translation": "magdalena"
+        },
+        {
+          "id": "W037-13",
+          "type": "Palabra",
+          "text": "ribbon",
+          "translation": "cinta"
+        },
+        {
+          "id": "W037-14",
+          "type": "Palabra",
+          "text": "wrapping",
+          "translation": "envoltorio"
+        },
+        {
+          "id": "W037-15",
+          "type": "Palabra",
+          "text": "celebrate",
+          "translation": "celebrar"
+        },
+        {
+          "id": "W037-16",
+          "type": "Palabra",
+          "text": "age",
+          "translation": "edad"
+        },
+        {
+          "id": "W037-17",
+          "type": "Palabra",
+          "text": "years",
+          "translation": "years"
+        },
+        {
+          "id": "W037-18",
+          "type": "Palabra",
+          "text": "surprise",
+          "translation": "sorpresa"
+        },
+        {
+          "id": "W037-19",
+          "type": "Palabra",
+          "text": "game",
+          "translation": "juego"
+        },
+        {
+          "id": "W037-20",
+          "type": "Palabra",
+          "text": "music",
+          "translation": "música"
+        },
+        {
+          "id": "W037-21",
+          "type": "Palabra",
+          "text": "balloon",
+          "translation": "globo"
+        }
+      ]
+    },
+    {
+      "mission": "038",
+      "source": {
+        "id": "038",
+        "title": "Party Time",
+        "theme": "Fiestas, invitaciones y cortesía",
+        "description": "Reconoce vocabulario de fiesta y utiliza instrucciones y expresiones sociales sencillas.",
+        "words": [
+          [
+            "party",
+            "fiesta",
+            "🎉"
+          ],
+          [
+            "balloon",
+            "globo",
+            "🎈"
+          ],
+          [
+            "music",
+            "música",
+            "🎵"
+          ],
+          [
+            "dance",
+            "bailar",
+            "💃"
+          ],
+          [
+            "gift",
+            "regalo",
+            "🎁"
+          ],
+          [
+            "please",
+            "por favor",
+            "🙏"
+          ],
+          [
+            "thank you",
+            "gracias",
+            "💛"
+          ]
+        ],
+        "extraVocabulary": [],
+        "pronunciation": [
+          {
+            "word": "party",
+            "activity": "Escuchar el sonido inicial y repetir",
+            "hint": "páa-ti"
+          },
+          {
+            "word": "balloon",
+            "activity": "Practicar las vocales y repetir",
+            "hint": "ba-lúun"
+          },
+          {
+            "word": "music",
+            "activity": "Marcar las sílabas al decir la palabra",
+            "hint": "miú-zik"
+          },
+          {
+            "word": "dance",
+            "activity": "Escuchar el sonido final y repetir",
+            "hint": "daans"
+          },
+          {
+            "word": "gift",
+            "activity": "Escuchar el sonido inicial y repetir",
+            "hint": "guift"
+          },
+          {
+            "word": "please",
+            "activity": "Practicar las vocales y repetir",
+            "hint": "plíiz"
+          },
+          {
+            "word": "thank you",
+            "activity": "Marcar las sílabas al decir la palabra",
+            "hint": "zánk iu"
+          }
+        ],
+        "grammar": {
+          "focus": "Imperativos y fórmulas de cortesía",
+          "explanation": "Podemos invitar a alguien a hacer algo con una instrucción sencilla: «Dance, please». El verbo va al principio y usamos «please» para pedirlo con educación. Cuando recibimos algo, respondemos «Thank you».",
+          "model": "Dance, please. Thank you.",
+          "practice": "Elige una expresión adecuada para cada situación de una fiesta.",
+          "order": "Dance, please.",
+          "final": [
+            "Dance, please.",
+            "Dances, please.",
+            "Dancing, please."
+          ],
+          "items": [
+            {
+              "prompt": "Choose the polite instruction.",
+              "answer": "Dance, please.",
+              "options": [
+                "Dance, please.",
+                "Dances, please.",
+                "Dancing, please."
+              ],
+              "es": "El imperativo usa dance en su forma básica."
+            },
+            {
+              "prompt": "Someone gives you a gift. What do you say?",
+              "answer": "Thank you.",
+              "options": [
+                "Thank you.",
+                "Please.",
+                "Good night."
+              ],
+              "es": "Thank you sirve para dar las gracias."
+            },
+            {
+              "prompt": "Complete: Music, ___",
+              "answer": "please",
+              "options": [
+                "please",
+                "thank you",
+                "goodbye"
+              ],
+              "es": "Please añade cortesía a una petición."
+            },
+            {
+              "prompt": "Which word means “globo”?",
+              "answer": "balloon",
+              "options": [
+                "balloon",
+                "gift",
+                "music"
+              ],
+              "es": "Balloon significa globo."
+            }
+          ]
+        },
+        "readingText": "It is Mia's birthday party. There are blue and yellow balloons in the room. Music is playing and the children dance. Ben gives Mia a gift. Mia says, “Thank you!” A little girl asks, “Can I have a balloon, please?” Mia gives her a red balloon. Everyone smiles and enjoys the party.",
+        "readingQuestions": [
+          {
+            "question": "Whose party is it?",
+            "answer": "Mia's",
+            "options": [
+              "Mia's",
+              "Ben's",
+              "Ella's"
+            ]
+          },
+          {
+            "question": "What colours are the balloons?",
+            "answer": "Blue and yellow",
+            "options": [
+              "Blue and yellow",
+              "Red and green",
+              "Black and white"
+            ]
+          },
+          {
+            "question": "What is playing?",
+            "answer": "Music",
+            "options": [
+              "Music",
+              "A radio news report",
+              "A film"
+            ]
+          },
+          {
+            "question": "What do the children do?",
+            "answer": "They dance",
+            "options": [
+              "They dance",
+              "They sleep",
+              "They read"
+            ]
+          },
+          {
+            "question": "Who gives Mia a gift?",
+            "answer": "Ben",
+            "options": [
+              "Ben",
+              "The little girl",
+              "Mum"
+            ]
+          },
+          {
+            "question": "What does Mia say?",
+            "answer": "Thank you",
+            "options": [
+              "Thank you",
+              "Goodbye",
+              "Good night"
+            ]
+          },
+          {
+            "question": "What does the little girl ask for?",
+            "answer": "A balloon",
+            "options": [
+              "A balloon",
+              "A cake",
+              "A card"
+            ]
+          },
+          {
+            "question": "Which polite word does the girl use?",
+            "answer": "Please",
+            "options": [
+              "Please",
+              "Sorry",
+              "Hello"
+            ]
+          },
+          {
+            "question": "What colour is the balloon Mia gives her?",
+            "answer": "Red",
+            "options": [
+              "Red",
+              "Blue",
+              "Yellow"
+            ]
+          },
+          {
+            "question": "How does everyone feel?",
+            "answer": "Happy",
+            "options": [
+              "Happy",
+              "Angry",
+              "Tired"
+            ]
+          }
+        ],
+        "listeningFormat": "Programa de radio",
+        "listeningScript": "Presenter: Welcome to Party Time! The music is on. The children are ready to dance. There are balloons by the door. Listen to Mia: “Dance, please!” Ben gives her a gift. Mia says, “Thank you!” A friend asks for a balloon, please. Mia gives her one. What a lovely party!",
+        "listeningQuestions": [
+          {
+            "question": "What is the programme called?",
+            "answer": "Party Time",
+            "options": [
+              "Party Time",
+              "Bath Time",
+              "Breakfast Time"
+            ]
+          },
+          {
+            "question": "What is on?",
+            "answer": "The music",
+            "options": [
+              "The music",
+              "The television",
+              "The shower"
+            ]
+          },
+          {
+            "question": "What are the children ready to do?",
+            "answer": "Dance",
+            "options": [
+              "Dance",
+              "Sleep",
+              "Eat breakfast"
+            ]
+          },
+          {
+            "question": "Where are the balloons?",
+            "answer": "By the door",
+            "options": [
+              "By the door",
+              "Under the table",
+              "In the garden"
+            ]
+          },
+          {
+            "question": "Who says “Dance, please”?",
+            "answer": "Mia",
+            "options": [
+              "Mia",
+              "Ben",
+              "The presenter"
+            ]
+          },
+          {
+            "question": "What does Ben give Mia?",
+            "answer": "A gift",
+            "options": [
+              "A gift",
+              "A balloon",
+              "A card"
+            ]
+          },
+          {
+            "question": "What does Mia say?",
+            "answer": "Thank you",
+            "options": [
+              "Thank you",
+              "Goodbye",
+              "Please dance"
+            ]
+          },
+          {
+            "question": "What does a friend ask for?",
+            "answer": "A balloon",
+            "options": [
+              "A balloon",
+              "A cake",
+              "A sandwich"
+            ]
+          },
+          {
+            "question": "What does Mia give her friend?",
+            "answer": "A balloon",
+            "options": [
+              "A balloon",
+              "A present",
+              "A card"
+            ]
+          },
+          {
+            "question": "What does the presenter think of the party?",
+            "answer": "It is lovely",
+            "options": [
+              "It is lovely",
+              "It is boring",
+              "It is quiet"
+            ]
+          }
+        ]
+      },
+      "writingSource": [
+        {
+          "id": "W038-01",
+          "type": "Palabra",
+          "text": "party",
+          "translation": "fiesta"
+        },
+        {
+          "id": "W038-02",
+          "type": "Palabra",
+          "text": "balloon",
+          "translation": "globo"
+        },
+        {
+          "id": "W038-03",
+          "type": "Palabra",
+          "text": "music",
+          "translation": "música"
+        },
+        {
+          "id": "W038-04",
+          "type": "Palabra",
+          "text": "dance",
+          "translation": "baile"
+        },
+        {
+          "id": "W038-05",
+          "type": "Palabra",
+          "text": "gift",
+          "translation": "regalo"
+        },
+        {
+          "id": "W038-06",
+          "type": "Expresión",
+          "text": "Dance, please.",
+          "translation": "baile, gustarle."
+        },
+        {
+          "id": "W038-07",
+          "type": "Expresión",
+          "text": "Thank you.",
+          "translation": "gracias"
+        },
+        {
+          "id": "W038-08",
+          "type": "Palabra",
+          "text": "confetti",
+          "translation": "confeti"
+        },
+        {
+          "id": "W038-09",
+          "type": "Palabra",
+          "text": "streamer",
+          "translation": "serpentinas"
+        },
+        {
+          "id": "W038-10",
+          "type": "Palabra",
+          "text": "banner",
+          "translation": "pancarta"
+        },
+        {
+          "id": "W038-11",
+          "type": "Palabra",
+          "text": "invitation",
+          "translation": "invitación"
+        },
+        {
+          "id": "W038-12",
+          "type": "Palabra",
+          "text": "decoration",
+          "translation": "decoración"
+        },
+        {
+          "id": "W038-13",
+          "type": "Palabra",
+          "text": "costume",
+          "translation": "traje"
+        },
+        {
+          "id": "W038-14",
+          "type": "Palabra",
+          "text": "mask",
+          "translation": "máscara"
+        },
+        {
+          "id": "W038-15",
+          "type": "Palabra",
+          "text": "hat",
+          "translation": "sombrero"
+        },
+        {
+          "id": "W038-16",
+          "type": "Palabra",
+          "text": "guest",
+          "translation": "huésped"
+        },
+        {
+          "id": "W038-17",
+          "type": "Palabra",
+          "text": "host",
+          "translation": "anfitrión"
+        },
+        {
+          "id": "W038-18",
+          "type": "Palabra",
+          "text": "table",
+          "translation": "mesa"
+        },
+        {
+          "id": "W038-19",
+          "type": "Palabra",
+          "text": "cake",
+          "translation": "pudín"
+        },
+        {
+          "id": "W038-20",
+          "type": "Palabra",
+          "text": "snack",
+          "translation": "tentempié"
+        },
+        {
+          "id": "W038-21",
+          "type": "Palabra",
+          "text": "prize",
+          "translation": "premio"
+        },
+        {
+          "id": "W038-22",
+          "type": "Palabra",
+          "text": "dj",
+          "translation": "dj"
+        }
+      ]
+    },
+    {
+      "mission": "039",
+      "source": {
+        "id": "039",
+        "title": "My Favorite Things",
+        "theme": "Gustos y preferencias",
+        "description": "Expresa gustos y preferencias con frases memorizables y vocabulario familiar.",
+        "words": [
+          [
+            "favorite",
+            "favorito/a",
+            "⭐"
+          ],
+          [
+            "like",
+            "gustar",
+            "👍"
+          ],
+          [
+            "love",
+            "encantar",
+            "❤️"
+          ],
+          [
+            "don't like",
+            "no gustar",
+            "👎"
+          ],
+          [
+            "toys",
+            "juguetes",
+            "🧸"
+          ],
+          [
+            "food",
+            "comida",
+            "🍎"
+          ],
+          [
+            "animals",
+            "animales",
+            "🐾"
+          ]
+        ],
+        "extraVocabulary": [],
+        "pronunciation": [
+          {
+            "word": "favorite",
+            "activity": "Escuchar el sonido inicial y repetir",
+            "hint": "féi-və-rit"
+          },
+          {
+            "word": "like",
+            "activity": "Practicar las vocales y repetir",
+            "hint": "láik"
+          },
+          {
+            "word": "love",
+            "activity": "Marcar las sílabas al decir la palabra",
+            "hint": "lav"
+          },
+          {
+            "word": "don't like",
+            "activity": "Escuchar el sonido final y repetir",
+            "hint": "dóunt láik"
+          },
+          {
+            "word": "toys",
+            "activity": "Escuchar el sonido inicial y repetir",
+            "hint": "tóiz"
+          },
+          {
+            "word": "food",
+            "activity": "Practicar las vocales y repetir",
+            "hint": "fúud"
+          },
+          {
+            "word": "animals",
+            "activity": "Marcar las sílabas al decir la palabra",
+            "hint": "á-ni-molz"
+          }
+        ],
+        "grammar": {
+          "focus": "My favourite… / I like… / I don't like…",
+          "explanation": "Usamos «I like…» para decir que algo nos gusta y «I don’t like…» para decir que no nos gusta. También podemos decir «My favourite… is…» para nombrar nuestro favorito. Después ponemos un juguete, una comida o un animal.",
+          "model": "My favourite toy is a car. I like animals.",
+          "practice": "Clasifica las cosas que te gustan y las que no te gustan y completa una frase modelo.",
+          "order": "I like animals.",
+          "final": [
+            "I like animals.",
+            "I likes animals.",
+            "I am like animals."
+          ],
+          "items": [
+            {
+              "prompt": "Choose the correct sentence.",
+              "answer": "I like toys.",
+              "options": [
+                "I like toys.",
+                "I likes toys.",
+                "I liking toys."
+              ],
+              "es": "Con I usamos like, sin -s."
+            },
+            {
+              "prompt": "Which phrase means “no me gusta”?",
+              "answer": "I don't like",
+              "options": [
+                "I don't like",
+                "I love",
+                "My favourite"
+              ],
+              "es": "I don't like expresa un gusto negativo."
+            },
+            {
+              "prompt": "Complete: My favourite toy ___ a car.",
+              "answer": "is",
+              "options": [
+                "is",
+                "are",
+                "am"
+              ],
+              "es": "Para presentar un favorito usamos My favourite… is…"
+            },
+            {
+              "prompt": "Choose the sentence about a favourite food.",
+              "answer": "My favourite food is pizza.",
+              "options": [
+                "My favourite food is pizza.",
+                "I favourite food pizza.",
+                "My food are favourite pizza."
+              ],
+              "es": "El modelo es My favourite + nombre + is…"
+            }
+          ]
+        },
+        "readingText": "Hello! My name is Leo. My favourite toy is my red car. I like animals, too. I love dogs and cats. I like apples, but I don't like bananas. My sister likes bananas. Her favourite food is rice. We have different favourite things, but we play together.",
+        "readingQuestions": [
+          {
+            "question": "What is the boy's name?",
+            "answer": "Leo",
+            "options": [
+              "Leo",
+              "Ben",
+              "Tom"
+            ]
+          },
+          {
+            "question": "What is Leo's favourite toy?",
+            "answer": "His red car",
+            "options": [
+              "His red car",
+              "A blue ball",
+              "A teddy bear"
+            ]
+          },
+          {
+            "question": "Which animals does Leo love?",
+            "answer": "Dogs and cats",
+            "options": [
+              "Dogs and cats",
+              "Lions and tigers",
+              "Fish and ducks"
+            ]
+          },
+          {
+            "question": "Which fruit does Leo like?",
+            "answer": "Apples",
+            "options": [
+              "Apples",
+              "Bananas",
+              "Oranges"
+            ]
+          },
+          {
+            "question": "Which fruit does Leo not like?",
+            "answer": "Bananas",
+            "options": [
+              "Bananas",
+              "Apples",
+              "Grapes"
+            ]
+          },
+          {
+            "question": "Who likes bananas?",
+            "answer": "His sister",
+            "options": [
+              "His sister",
+              "Leo",
+              "His teacher"
+            ]
+          },
+          {
+            "question": "What is his sister's favourite food?",
+            "answer": "Rice",
+            "options": [
+              "Rice",
+              "Pizza",
+              "Bread"
+            ]
+          },
+          {
+            "question": "Do Leo and his sister have the same favourites?",
+            "answer": "No",
+            "options": [
+              "No",
+              "Yes",
+              "The text does not say"
+            ]
+          },
+          {
+            "question": "What do they do together?",
+            "answer": "They play",
+            "options": [
+              "They play",
+              "They cook",
+              "They sleep"
+            ]
+          },
+          {
+            "question": "What is the text about?",
+            "answer": "Favourite things",
+            "options": [
+              "Favourite things",
+              "A birthday party",
+              "A trip to the zoo"
+            ]
+          }
+        ],
+        "listeningFormat": "Entrevista",
+        "listeningScript": "Interviewer: What is your favourite thing, Max? Max: My favourite toy is my train. Interviewer: Do you like animals? Max: Yes, I love dogs. Interviewer: What food do you like? Max: I like apples. I don't like bananas. Interviewer: What about your sister? Max: She likes bananas. Her favourite toy is a doll.",
+        "listeningQuestions": [
+          {
+            "question": "Who is being interviewed?",
+            "answer": "Max",
+            "options": [
+              "Max",
+              "Leo",
+              "Ben"
+            ]
+          },
+          {
+            "question": "What is Max's favourite toy?",
+            "answer": "A train",
+            "options": [
+              "A train",
+              "A car",
+              "A doll"
+            ]
+          },
+          {
+            "question": "Does Max like animals?",
+            "answer": "Yes",
+            "options": [
+              "Yes",
+              "No",
+              "He does not answer"
+            ]
+          },
+          {
+            "question": "Which animals does Max love?",
+            "answer": "Dogs",
+            "options": [
+              "Dogs",
+              "Cats",
+              "Lions"
+            ]
+          },
+          {
+            "question": "Which food does Max like?",
+            "answer": "Apples",
+            "options": [
+              "Apples",
+              "Bananas",
+              "Rice"
+            ]
+          },
+          {
+            "question": "Which food does Max not like?",
+            "answer": "Bananas",
+            "options": [
+              "Bananas",
+              "Apples",
+              "Bread"
+            ]
+          },
+          {
+            "question": "Who likes bananas?",
+            "answer": "His sister",
+            "options": [
+              "His sister",
+              "Max",
+              "The interviewer"
+            ]
+          },
+          {
+            "question": "What is his sister's favourite toy?",
+            "answer": "A doll",
+            "options": [
+              "A doll",
+              "A train",
+              "A car"
+            ]
+          },
+          {
+            "question": "Who asks the questions?",
+            "answer": "The interviewer",
+            "options": [
+              "The interviewer",
+              "Max's sister",
+              "His teacher"
+            ]
+          },
+          {
+            "question": "What is the interview about?",
+            "answer": "Likes and favourite things",
+            "options": [
+              "Likes and favourite things",
+              "Time and clocks",
+              "A family photo"
+            ]
+          }
+        ]
+      },
+      "writingSource": [
+        {
+          "id": "W039-01",
+          "type": "Palabra",
+          "text": "favorite",
+          "translation": "favorite"
+        },
+        {
+          "id": "W039-02",
+          "type": "Palabra",
+          "text": "like",
+          "translation": "gustarle"
+        },
+        {
+          "id": "W039-03",
+          "type": "Palabra",
+          "text": "love",
+          "translation": "amor"
+        },
+        {
+          "id": "W039-04",
+          "type": "Expresión",
+          "text": "don't like",
+          "translation": "capo't gustarle"
+        },
+        {
+          "id": "W039-05",
+          "type": "Palabra",
+          "text": "toys",
+          "translation": "toys"
+        },
+        {
+          "id": "W039-06",
+          "type": "Frase",
+          "text": "My favourite toy is a car.",
+          "translation": "mi favorito juguete EI a automóvil."
+        },
+        {
+          "id": "W039-07",
+          "type": "Expresión",
+          "text": "I like animals.",
+          "translation": "yo gustarle animals."
+        },
+        {
+          "id": "W039-08",
+          "type": "Palabra",
+          "text": "best",
+          "translation": "mejor"
+        },
+        {
+          "id": "W039-09",
+          "type": "Palabra",
+          "text": "worst",
+          "translation": "peor"
+        },
+        {
+          "id": "W039-10",
+          "type": "Palabra",
+          "text": "game",
+          "translation": "juego"
+        },
+        {
+          "id": "W039-11",
+          "type": "Palabra",
+          "text": "hobby",
+          "translation": "afición"
+        },
+        {
+          "id": "W039-12",
+          "type": "Palabra",
+          "text": "sport",
+          "translation": "deporte"
+        },
+        {
+          "id": "W039-13",
+          "type": "Palabra",
+          "text": "music",
+          "translation": "música"
+        },
+        {
+          "id": "W039-14",
+          "type": "Palabra",
+          "text": "book",
+          "translation": "libro"
+        },
+        {
+          "id": "W039-15",
+          "type": "Palabra",
+          "text": "film",
+          "translation": "película"
+        },
+        {
+          "id": "W039-16",
+          "type": "Palabra",
+          "text": "colour",
+          "translation": "colour"
+        },
+        {
+          "id": "W039-17",
+          "type": "Palabra",
+          "text": "pet",
+          "translation": "mascota"
+        },
+        {
+          "id": "W039-18",
+          "type": "Palabra",
+          "text": "food",
+          "translation": "alimento"
+        },
+        {
+          "id": "W039-19",
+          "type": "Palabra",
+          "text": "song",
+          "translation": "canción"
+        },
+        {
+          "id": "W039-20",
+          "type": "Palabra",
+          "text": "drawing",
+          "translation": "dibujo"
+        },
+        {
+          "id": "W039-21",
+          "type": "Palabra",
+          "text": "collection",
+          "translation": "colección"
+        },
+        {
+          "id": "W039-22",
+          "type": "Palabra",
+          "text": "comic",
+          "translation": "cómico"
+        }
+      ]
+    },
+    {
+      "mission": "040",
+      "source": {
+        "id": "040",
+        "title": "Can You Do It?",
+        "theme": "Habilidad y verbo can en afirmativa e interrogativa simple",
+        "description": "Pregunta y expresa capacidades mediante acciones ilustradas y frases cortas.",
+        "words": [
+          [
+            "can",
+            "poder / saber",
+            "✅"
+          ],
+          [
+            "can't",
+            "no poder / no saber",
+            "❌"
+          ],
+          [
+            "swim",
+            "nadar",
+            "🏊"
+          ],
+          [
+            "run",
+            "correr",
+            "🏃"
+          ],
+          [
+            "jump",
+            "saltar",
+            "🤸"
+          ],
+          [
+            "dance",
+            "bailar",
+            "💃"
+          ],
+          [
+            "sing",
+            "cantar",
+            "🎤"
+          ],
+          [
+            "fly",
+            "volar",
+            "🪽"
+          ]
+        ],
+        "extraVocabulary": [],
+        "pronunciation": [
+          {
+            "word": "can",
+            "activity": "Escuchar el sonido inicial y repetir",
+            "hint": "kan"
+          },
+          {
+            "word": "can't",
+            "activity": "Practicar las vocales y repetir",
+            "hint": "kaant"
+          },
+          {
+            "word": "swim",
+            "activity": "Marcar las sílabas al decir la palabra",
+            "hint": "suím"
+          },
+          {
+            "word": "run",
+            "activity": "Escuchar el sonido final y repetir",
+            "hint": "ran"
+          },
+          {
+            "word": "jump",
+            "activity": "Escuchar el sonido inicial y repetir",
+            "hint": "yamp"
+          },
+          {
+            "word": "dance",
+            "activity": "Practicar las vocales y repetir",
+            "hint": "daans"
+          },
+          {
+            "word": "sing",
+            "activity": "Marcar las sílabas al decir la palabra",
+            "hint": "sing"
+          },
+          {
+            "word": "fly",
+            "activity": "Escuchar el sonido final y repetir",
+            "hint": "flái"
+          }
+        ],
+        "grammar": {
+          "focus": "Can / can't + verbo en forma básica",
+          "explanation": "Usamos «can» para decir que sabemos o podemos hacer algo y «can’t» para decir que no podemos. Después de can o can’t ponemos el verbo en su forma básica: «I can swim» y «I can’t fly».",
+          "model": "I can swim. I can’t fly.",
+          "practice": "Relaciona cada capacidad con can o can't según la imagen y completa la frase.",
+          "order": "I can swim.",
+          "final": [
+            "I can swim.",
+            "I can swims.",
+            "I am can swim."
+          ],
+          "items": [
+            {
+              "prompt": "Choose the correct sentence.",
+              "answer": "I can swim.",
+              "options": [
+                "I can swim.",
+                "I can swims.",
+                "I am can swim."
+              ],
+              "es": "Después de can usamos el verbo base swim."
+            },
+            {
+              "prompt": "Complete: I ___ fly.",
+              "answer": "can't",
+              "options": [
+                "can't",
+                "can to",
+                "don't can"
+              ],
+              "es": "Can't expresa que no puedes volar."
+            },
+            {
+              "prompt": "Which sentence means “Puedo cantar”?",
+              "answer": "I can sing.",
+              "options": [
+                "I can sing.",
+                "I can't sing.",
+                "I can singing."
+              ],
+              "es": "I can sing expresa capacidad."
+            },
+            {
+              "prompt": "Choose the correct verb after can.",
+              "answer": "jump",
+              "options": [
+                "jump",
+                "jumps",
+                "jumping"
+              ],
+              "es": "El verbo después de can no lleva -s ni -ing."
+            }
+          ]
+        },
+        "readingText": "This is a school talent day. Anna can sing and dance. Ben can run and jump, but he can't swim. Mia can swim very well. Tom can sing, but he can't fly. The children are happy. They show what they can do at the school show.",
+        "readingQuestions": [
+          {
+            "question": "What event is it?",
+            "answer": "A school talent day",
+            "options": [
+              "A school talent day",
+              "A birthday party",
+              "A sports lesson"
+            ]
+          },
+          {
+            "question": "What can Anna do?",
+            "answer": "Sing and dance",
+            "options": [
+              "Sing and dance",
+              "Swim and fly",
+              "Run and sleep"
+            ]
+          },
+          {
+            "question": "What can Ben do?",
+            "answer": "Run and jump",
+            "options": [
+              "Run and jump",
+              "Sing and fly",
+              "Swim and dance"
+            ]
+          },
+          {
+            "question": "Can Ben swim?",
+            "answer": "No",
+            "options": [
+              "No",
+              "Yes",
+              "The text does not say"
+            ]
+          },
+          {
+            "question": "Who can swim very well?",
+            "answer": "Mia",
+            "options": [
+              "Mia",
+              "Anna",
+              "Tom"
+            ]
+          },
+          {
+            "question": "What can Tom do?",
+            "answer": "Sing",
+            "options": [
+              "Sing",
+              "Fly",
+              "Swim"
+            ]
+          },
+          {
+            "question": "Can Tom fly?",
+            "answer": "No",
+            "options": [
+              "No",
+              "Yes",
+              "He can fly very well"
+            ]
+          },
+          {
+            "question": "Where do the children show their abilities?",
+            "answer": "At the school show",
+            "options": [
+              "At the school show",
+              "At the café",
+              "At the beach"
+            ]
+          },
+          {
+            "question": "How do the children feel?",
+            "answer": "Happy",
+            "options": [
+              "Happy",
+              "Angry",
+              "Sad"
+            ]
+          },
+          {
+            "question": "What is the text about?",
+            "answer": "Things the children can do",
+            "options": [
+              "Things the children can do",
+              "Their favourite food",
+              "Their daily routine"
+            ]
+          }
+        ],
+        "listeningFormat": "Historia narrada",
+        "listeningScript": "Listen to the children at the park. Jack can run fast. He can jump, too. Lily can dance and sing. Sam can swim, but he can't fly. A bird can fly. The children look at the bird and smile. “Can you sing?” Jack asks Lily. “Yes, I can!” she says.",
+        "listeningQuestions": [
+          {
+            "question": "Where are the children?",
+            "answer": "At the park",
+            "options": [
+              "At the park",
+              "At the café",
+              "At school"
+            ]
+          },
+          {
+            "question": "What can Jack do?",
+            "answer": "Run and jump",
+            "options": [
+              "Run and jump",
+              "Swim and fly",
+              "Dance and sing"
+            ]
+          },
+          {
+            "question": "What can Lily do?",
+            "answer": "Dance and sing",
+            "options": [
+              "Dance and sing",
+              "Run and swim",
+              "Fly and jump"
+            ]
+          },
+          {
+            "question": "Can Sam swim?",
+            "answer": "Yes",
+            "options": [
+              "Yes",
+              "No",
+              "The text does not say"
+            ]
+          },
+          {
+            "question": "Can Sam fly?",
+            "answer": "No",
+            "options": [
+              "No",
+              "Yes",
+              "He flies with the bird"
+            ]
+          },
+          {
+            "question": "Who can fly?",
+            "answer": "A bird",
+            "options": [
+              "A bird",
+              "Sam",
+              "Jack"
+            ]
+          },
+          {
+            "question": "What does Jack ask Lily?",
+            "answer": "Can you sing?",
+            "options": [
+              "Can you sing?",
+              "Can you swim?",
+              "What time is it?"
+            ]
+          },
+          {
+            "question": "What does Lily answer?",
+            "answer": "Yes, I can",
+            "options": [
+              "Yes, I can",
+              "No, I can't",
+              "Thank you"
+            ]
+          },
+          {
+            "question": "What do the children do when they see the bird?",
+            "answer": "They smile",
+            "options": [
+              "They smile",
+              "They cry",
+              "They go home"
+            ]
+          },
+          {
+            "question": "What grammar point is used?",
+            "answer": "Can and can't",
+            "options": [
+              "Can and can't",
+              "There is",
+              "I like"
+            ]
+          }
+        ]
+      },
+      "writingSource": [
+        {
+          "id": "W040-01",
+          "type": "Palabra",
+          "text": "can",
+          "translation": "poder"
+        },
+        {
+          "id": "W040-02",
+          "type": "Palabra",
+          "text": "can't",
+          "translation": "no poder"
+        },
+        {
+          "id": "W040-03",
+          "type": "Palabra",
+          "text": "swim",
+          "translation": "nadar"
+        },
+        {
+          "id": "W040-04",
+          "type": "Palabra",
+          "text": "run",
+          "translation": "correr"
+        },
+        {
+          "id": "W040-05",
+          "type": "Palabra",
+          "text": "jump",
+          "translation": "saltar"
+        },
+        {
+          "id": "W040-06",
+          "type": "Expresión",
+          "text": "I can swim.",
+          "translation": "yo poder nadar."
+        },
+        {
+          "id": "W040-07",
+          "type": "Expresión",
+          "text": "I can't fly.",
+          "translation": "yo poder't mosca."
+        },
+        {
+          "id": "W040-08",
+          "type": "Palabra",
+          "text": "cook",
+          "translation": "cocinero"
+        },
+        {
+          "id": "W040-09",
+          "type": "Palabra",
+          "text": "skate",
+          "translation": "patín"
+        },
+        {
+          "id": "W040-10",
+          "type": "Palabra",
+          "text": "ski",
+          "translation": "esquí"
+        },
+        {
+          "id": "W040-11",
+          "type": "Palabra",
+          "text": "ride",
+          "translation": "montar"
+        },
+        {
+          "id": "W040-12",
+          "type": "Palabra",
+          "text": "draw",
+          "translation": "dibujar"
+        },
+        {
+          "id": "W040-13",
+          "type": "Palabra",
+          "text": "read",
+          "translation": "leer"
+        },
+        {
+          "id": "W040-14",
+          "type": "Palabra",
+          "text": "write",
+          "translation": "escribir"
+        },
+        {
+          "id": "W040-15",
+          "type": "Palabra",
+          "text": "paint",
+          "translation": "pintura"
+        },
+        {
+          "id": "W040-16",
+          "type": "Palabra",
+          "text": "whistle",
+          "translation": "silbato"
+        },
+        {
+          "id": "W040-17",
+          "type": "Palabra",
+          "text": "juggle",
+          "translation": "juggle"
+        },
+        {
+          "id": "W040-18",
+          "type": "Palabra",
+          "text": "dive",
+          "translation": "bucear"
+        },
+        {
+          "id": "W040-19",
+          "type": "Palabra",
+          "text": "climb",
+          "translation": "escalar"
+        },
+        {
+          "id": "W040-20",
+          "type": "Palabra",
+          "text": "crawl",
+          "translation": "arrastrarse"
+        },
+        {
+          "id": "W040-21",
+          "type": "Palabra",
+          "text": "kick",
+          "translation": "dar una patada"
+        },
+        {
+          "id": "W040-22",
+          "type": "Palabra",
+          "text": "throw",
+          "translation": "lanzar"
+        }
+      ]
+    }
+  ]
+}
