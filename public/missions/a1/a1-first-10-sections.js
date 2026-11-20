@@ -55,9 +55,9 @@ const taskUI=(id,title,intro,items)=> {
    box.querySelector("[data-audio]").onclick=()=>speak(t.target);
    box.querySelector("[data-check]").onclick=()=>checkText(box.querySelector("[data-answer]").value,t.target);
   } else if(t.kind==="speak"||t.kind==="pron"){
-   box.innerHTML="<span class='tag'>"+(t.kind==="speak"?"SPEAKING · GRABACIÓN Y EVALUACIÓN":"PRONUNCIACIÓN")+" · "+(at+1)+"</span><p class='a1extra-question'>"+t.prompt+"</p><p><strong>Modelo:</strong> "+t.target+"</p><button type='button' data-model>🔊 Escuchar modelo</button>"+(t.kind==="speak"?"<button type='button' data-record>● Grabar mi voz</button><button type='button' data-stop disabled>■ Detener y evaluar</button><p data-recstatus role='status'>Permite el acceso al micrófono para grabarte y evaluar las palabras reconocidas.</p><div data-recording></div>":"<button type='button' data-done>He practicado</button>");
+   box.innerHTML="<span class='tag'>"+(t.kind==="speak"?"SPEAKING":"PRONUNCIACIÓN")+" · "+(at+1)+"</span><p class='a1extra-question'>"+t.prompt+"</p><p><strong>Modelo británico:</strong> "+t.target+"</p><button type='button' data-model>🔊 Escuchar modelo</button><button type='button' data-record>● Grabar mi voz</button><button type='button' data-stop disabled>■ Detener y transcribir</button><p data-recstatus role='status'>La transcripción ayuda a comprobar qué palabras se reconocen; no mide los fonemas.</p><div data-recording></div><div data-result></div>";
    box.querySelector("[data-model]").onclick=()=>speak(t.target);
-   if(t.kind==="speak") attachSpeechAssessment(box,t,mark); else box.querySelector("[data-done]").onclick=()=>mark(true,"Práctica completada. Compara tu pronunciación con el modelo.");
+   attachSpeechAssessment(box,t,mark);
   } else {
    const opts=shuffle(makeChoices(t.answer,t.wrong||[]));
    box.innerHTML="<span class='tag'>EJERCICIO · "+(at+1)+"</span><p class='a1extra-question'>"+t.prompt+"</p>"+(t.audio? "<button type='button' data-audio>🔊 Escuchar audio</button>":"")+"<div class='a1extra-options'>"+opts.map((o,i)=>"<button type='button' data-option='"+i+"'>"+o+"</button>").join("")+"</div>";
@@ -65,37 +65,43 @@ const taskUI=(id,title,intro,items)=> {
    box.querySelectorAll("[data-option]").forEach((b,i)=>b.onclick=()=>mark(opts[i]===t.answer,opts[i]===t.answer?"¡Correcto!": "La respuesta correcta es: "+t.answer));
   }
  }
- function mark(ok,msg){if(done)return;done=true;if(ok)points++;fb.textContent=msg;fb.className="a1extra-feedback "+(ok?"good":"bad");next.disabled=false;}
+ function mark(ok,msg,neutral=false){if(done)return;done=true;if(ok&&!neutral)points++;fb.textContent=msg;fb.className="a1extra-feedback "+(neutral?"":(ok?"good":"bad"));next.disabled=false;}
  function checkText(value,target){const norm=x=>String(x).trim().toLowerCase().replace(/[.,!?']/g,"").replace(/\\s+/g," ");mark(norm(value)===norm(target),norm(value)===norm(target)?"¡Exacto!":"Respuesta esperada: "+target);}
  next.onclick=()=>{if(at<9){at++;render();}else{box.innerHTML="<h3>Sección completada</h3><p>Has terminado los 10 ejercicios.</p>";fb.textContent="";next.hidden=true;count.textContent="10 / 10";bar.style.width="100%";score.hidden=false;score.textContent="Resultado: "+points+" / 10 respuestas correctas."; }};
  render();
 };
 const speak=text=>{if(!("speechSynthesis"in window)){alert("La reproducción de voz no está disponible en este navegador.");return;}speechSynthesis.cancel();const u=new SpeechSynthesisUtterance(text);u.lang="en-GB";speechSynthesis.speak(u);};
 const attachSpeechAssessment=(box,t,mark)=>{
- const start=box.querySelector("[data-record]"),stop=box.querySelector("[data-stop]"),status=box.querySelector("[data-recstatus]"),recording=box.querySelector("[data-recording]");
- const SR=window.SpeechRecognition||window.webkitSpeechRecognition;let media=null,recorder=null,chunks=[],recognition=null,transcript="",active=false;
- if(!navigator.mediaDevices||!navigator.mediaDevices.getUserMedia||!window.MediaRecorder){status.textContent="Grabación no disponible. Usa Chrome o Edge actualizado en una conexión HTTPS.";start.disabled=true;return;}
- if(!SR)status.textContent="Grabación disponible; evaluación por voz requiere Chrome o Edge compatible.";
- start.onclick=async()=>{
+ const startButton=box.querySelector("[data-record]"),stopButton=box.querySelector("[data-stop]"),status=box.querySelector("[data-recstatus]"),recording=box.querySelector("[data-recording]"),resultBox=box.querySelector("[data-result]");
+ let stream=null,recorder=null,chunks=[],active=false;
+ if(!navigator.mediaDevices?.getUserMedia||!window.MediaRecorder){status.textContent="La grabación no está disponible. Usa un navegador actualizado y una conexión HTTPS.";startButton.disabled=true;return;}
+ startButton.onclick=async()=>{
   try{
-   media=await navigator.mediaDevices.getUserMedia({audio:true});chunks=[];transcript="";
-   recorder=new MediaRecorder(media);recorder.ondataavailable=e=>{if(e.data&&e.data.size)chunks.push(e.data);};
-   recorder.onstop=()=>{const blob=new Blob(chunks,{type:recorder.mimeType||"audio/webm"});const url=URL.createObjectURL(blob);recording.innerHTML="<audio controls src='"+url+"'></audio><p>Escucha tu grabación para revisar ritmo y claridad.</p>";media.getTracks().forEach(track=>track.stop());};
-   recorder.start();active=true;start.disabled=true;stop.disabled=false;status.textContent="Grabando… Di el modelo en voz alta.";
-   if(SR){recognition=new SR();recognition.lang="en-GB";recognition.continuous=false;recognition.interimResults=true;recognition.onresult=e=>{transcript=Array.from(e.results).map(x=>x[0].transcript).join(" ");status.textContent="Te he oído: "+transcript;};recognition.onerror=e=>{status.textContent="Error de reconocimiento ("+e.error+"). La grabación seguirá disponible.";};try{recognition.start();}catch(e){}}
-  }catch(e){status.textContent="No se pudo acceder al micrófono. Comprueba los permisos del navegador.";}
+   stream=await navigator.mediaDevices.getUserMedia({audio:true});chunks=[];
+   recorder=new MediaRecorder(stream);recorder.ondataavailable=e=>{if(e.data?.size)chunks.push(e.data);};
+   recorder.onstop=async()=>{
+    const blob=new Blob(chunks,{type:recorder.mimeType||"audio/webm"});
+    const audioUrl=URL.createObjectURL(blob);
+    recording.innerHTML="<audio controls></audio><p class='muted'>Escucha tu grabación si quieres revisar cómo suenas.</p>";
+    recording.querySelector("audio").src=audioUrl;
+    stream?.getTracks().forEach(track=>track.stop());stream=null;
+    status.textContent="Enviando audio a Workers AI para transcribirlo…";
+    stopButton.disabled=true;startButton.disabled=false;
+    const form=new FormData();form.append("audio",blob,"speaking.webm");form.append("targetPhrase",t.target);form.append("language","en");
+    try{
+     const response=await fetch("/api/pronunciation/analyze",{method:"POST",body:form});
+     const data=await response.json();
+     if(!response.ok||data.error){status.textContent=esc(data.error||"No se pudo analizar la grabación.");return;}
+     status.textContent=data.transcription?"Transcripción recibida. Revisa las palabras reconocidas.":"No se reconocieron palabras; inténtalo otra vez.";
+     const tips=Array.isArray(data.britishTips)?data.britishTips:[];
+     resultBox.innerHTML="<div class='a1extra-card'><strong>Coincidencia de transcripción: "+Number(data.score||0)+"/100</strong><p>"+esc(data.scoreLabel||"No es una nota fonética.")+"</p><p><strong>El sistema reconoció:</strong> "+esc(data.transcription||"—")+"</p><p>"+esc(data.feedback||"")+"</p>"+tips.map(item=>"<div><strong>"+esc(item.word)+" · "+esc(item.ipa)+"</strong><p>"+esc(item.spanishCue)+"</p><small>Aproximación para hispanohablantes; no es IPA.</small><p>"+esc(item.tip)+"</p></div>").join("")+"</div>";
+     mark(true,"Grabación completada. La coincidencia indica qué palabras reconoció Whisper; no evalúa la calidad de cada fonema.",true);
+    }catch(error){status.textContent="No se pudo conectar con el análisis de voz. Puedes volver a grabar.";}
+   };
+   recorder.start();active=true;startButton.disabled=true;stopButton.disabled=false;status.textContent="Grabando… Di la palabra o frase del modelo británico.";
+  }catch(error){status.textContent="No se pudo acceder al micrófono. Comprueba los permisos del navegador.";}
  };
- stop.onclick=()=>{
-  if(!active)return;active=false;stop.disabled=true;start.disabled=false;if(recognition){try{recognition.stop();}catch(e){}}
-  if(recorder&&recorder.state!=="inactive")recorder.stop();
-  if(!SR){status.textContent="Audio grabado. Este navegador no permite evaluar automáticamente el reconocimiento de voz.";return;}
-  const expected=String(t.target).toLowerCase().match(/[a-z']+/g)||[],actual=transcript.toLowerCase().match(/[a-z']+/g)||[];
-  if(!actual.length){status.textContent="No se reconocieron palabras. Inténtalo de nuevo hablando más cerca del micrófono.";return;}
-  let matched=0;const remaining=actual.slice();expected.forEach(w=>{const i=remaining.indexOf(w);if(i>=0){matched++;remaining.splice(i,1);}});
-  const pct=Math.round(100*matched/Math.max(1,expected.length));
-  status.textContent="Transcripción: "+transcript+" · Coincidencia de palabras: "+pct+"%. "+(pct>=80?"Se reconocieron casi todas las palabras.":"Repite más despacio y vuelve a grabar.");
-  mark(pct>=80,"Coincidencia de palabras reconocidas: "+pct+"%. Esto no mide la precisión fonética de cada sonido.");
- };
+ stopButton.onclick=()=>{if(!active)return;active=false;if(recorder&&recorder.state!=="inactive")recorder.stop();};
 };
 const sentences=l.reading.split(/(?<=[.!?])\\s+/).filter(Boolean);
 const listenWords=l.listening.match(/[A-Za-z']+/g)||l.words;
