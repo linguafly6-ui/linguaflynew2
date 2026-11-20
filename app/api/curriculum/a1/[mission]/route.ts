@@ -19,11 +19,22 @@ import mission067 from "@/content/missions/a1/067.json";
 import mission068 from "@/content/missions/a1/068.json";
 import mission069 from "@/content/missions/a1/069.json";
 import mission070 from "@/content/missions/a1/070.json";
+import mission071 from "@/content/missions/a1/071.json";
+import mission072 from "@/content/missions/a1/072.json";
+import mission073 from "@/content/missions/a1/073.json";
+import mission074 from "@/content/missions/a1/074.json";
+import mission075 from "@/content/missions/a1/075.json";
+import mission076 from "@/content/missions/a1/076.json";
+import mission077 from "@/content/missions/a1/077.json";
+import mission078 from "@/content/missions/a1/078.json";
+import mission079 from "@/content/missions/a1/079.json";
+import mission080 from "@/content/missions/a1/080.json";
 
 const missions: Record<string, unknown> = {
   "051": mission051, "052": mission052, "053": mission053, "054": mission054, "055": mission055,
   "056": mission056, "057": mission057, "058": mission058, "059": mission059, "060": mission060,
-  "061": mission061, "062": mission062, "063": mission063, "064": mission064, "065": mission065, "066": mission066, "067": mission067, "068": mission068, "069": mission069, "070": mission070
+  "061": mission061, "062": mission062, "063": mission063, "064": mission064, "065": mission065, "066": mission066, "067": mission067, "068": mission068, "069": mission069, "070": mission070,
+  "071": mission071, "072": mission072, "073": mission073, "074": mission074, "075": mission075, "076": mission076, "077": mission077, "078": mission078, "079": mission079, "080": mission080
 };
 
 export function GET(_request: Request, { params }: { params: Promise<{ mission: string }> }) {

@@ -1,0 +1,1205 @@
+{
+  "schemaVersion": "1.2.0",
+  "contentVersion": 1,
+  "course": {
+    "courseId": "english-a1",
+    "level": "A1",
+    "language": "en-GB"
+  },
+  "unit": {
+    "unitId": "english-a1-unit-08",
+    "courseId": "english-a1",
+    "position": 8,
+    "title": "Study, work and communication"
+  },
+  "mission": {
+    "missionId": "english-a1-m079",
+    "unitId": "english-a1-unit-08",
+    "position": 79,
+    "title": "Rules at School and Work"
+  },
+  "sections": [
+    {
+      "sectionId": "english-a1-m079-explore",
+      "sectionKey": "explore",
+      "position": 1,
+      "title": "explore",
+      "exercise": {
+        "exerciseId": "english-a1-m079-explore-ex01",
+        "type": "vocabulary_pairs",
+        "items": [
+          {
+            "itemId": "english-a1-m079-explore-ex01-i01",
+            "position": 1,
+            "english": "must",
+            "spanish": "deber",
+            "audio": "tts:en-GB:must"
+          },
+          {
+            "itemId": "english-a1-m079-explore-ex01-i02",
+            "position": 2,
+            "english": "mustn't",
+            "spanish": "no deber",
+            "audio": "tts:en-GB:mustn't"
+          },
+          {
+            "itemId": "english-a1-m079-explore-ex01-i03",
+            "position": 3,
+            "english": "can",
+            "spanish": "poder",
+            "audio": "tts:en-GB:can"
+          },
+          {
+            "itemId": "english-a1-m079-explore-ex01-i04",
+            "position": 4,
+            "english": "don't",
+            "spanish": "no (imperativo)",
+            "audio": "tts:en-GB:don't"
+          },
+          {
+            "itemId": "english-a1-m079-explore-ex01-i05",
+            "position": 5,
+            "english": "please",
+            "spanish": "por favor",
+            "audio": "tts:en-GB:please"
+          },
+          {
+            "itemId": "english-a1-m079-explore-ex01-i06",
+            "position": 6,
+            "english": "rule",
+            "spanish": "norma",
+            "audio": "tts:en-GB:rule"
+          },
+          {
+            "itemId": "english-a1-m079-explore-ex01-i07",
+            "position": 7,
+            "english": "be quiet",
+            "spanish": "estar en silencio",
+            "audio": "tts:en-GB:be quiet"
+          },
+          {
+            "itemId": "english-a1-m079-explore-ex01-i08",
+            "position": 8,
+            "english": "wear",
+            "spanish": "llevar puesto",
+            "audio": "tts:en-GB:wear"
+          },
+          {
+            "itemId": "english-a1-m079-explore-ex01-i09",
+            "position": 9,
+            "english": "arrive on time",
+            "spanish": "llegar puntual",
+            "audio": "tts:en-GB:arrive on time"
+          },
+          {
+            "itemId": "english-a1-m079-explore-ex01-i10",
+            "position": 10,
+            "english": "use",
+            "spanish": "usar",
+            "audio": "tts:en-GB:use"
+          }
+        ],
+        "theory": {
+          "title": "Vocabulary: Rules at School and Work",
+          "explanation": "Explora diez palabras y expresiones sobre rules at school and work. Escucha el modelo británico y relaciona cada palabra con su significado.",
+          "patterns": [
+            {
+              "label": "Useful language",
+              "pattern": "Short question + short answer",
+              "examples": [
+                "You must listen in class.",
+                "You mustn't run here.",
+                "You can use a computer."
+              ]
+            }
+          ],
+          "tip": "Repite las expresiones y crea un ejemplo relacionado con tu vida."
+        }
+      }
+    },
+    {
+      "sectionId": "english-a1-m079-practice",
+      "sectionKey": "practice",
+      "position": 2,
+      "title": "practice",
+      "exercise": {
+        "exerciseId": "english-a1-m079-practice-ex01",
+        "type": "mixed_practice",
+        "items": [
+          {
+            "itemId": "english-a1-m079-practice-ex01-i01",
+            "position": 1,
+            "taskType": "translation_multiple_choice",
+            "prompt": "Traduce al español: “You must listen in class.”",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "Debes escuchar en clase.",
+              "Puedes usar un ordenador.",
+              "Debes estar en silencio."
+            ],
+            "correctAnswer": "Debes escuchar en clase.",
+            "sourceEnglish": "You must listen in class."
+          },
+          {
+            "itemId": "english-a1-m079-practice-ex01-i02",
+            "position": 2,
+            "taskType": "translation_multiple_choice",
+            "prompt": "Traduce al español: “You mustn't run here.”",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "No debes correr aquí.",
+              "No hables, por favor.",
+              "Debes llevar uniforme."
+            ],
+            "correctAnswer": "No debes correr aquí.",
+            "sourceEnglish": "You mustn't run here."
+          },
+          {
+            "itemId": "english-a1-m079-practice-ex01-i03",
+            "position": 3,
+            "taskType": "translation_multiple_choice",
+            "prompt": "Traduce al español: “You can use a computer.”",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "Puedes usar un ordenador.",
+              "Por favor, sigue las normas.",
+              "Debes llegar puntual."
+            ],
+            "correctAnswer": "Puedes usar un ordenador.",
+            "sourceEnglish": "You can use a computer."
+          },
+          {
+            "itemId": "english-a1-m079-practice-ex01-i04",
+            "position": 4,
+            "taskType": "translation_multiple_choice",
+            "prompt": "Traduce al español: “Don't talk, please.”",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "No hables, por favor.",
+              "Debes estar en silencio.",
+              "Puedes usar este teléfono."
+            ],
+            "correctAnswer": "No hables, por favor.",
+            "sourceEnglish": "Don't talk, please."
+          },
+          {
+            "itemId": "english-a1-m079-practice-ex01-i05",
+            "position": 5,
+            "taskType": "translation_multiple_choice",
+            "prompt": "Traduce al español: “Please follow the rules.”",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "Por favor, sigue las normas.",
+              "Debes llevar uniforme.",
+              "No debes comer aquí."
+            ],
+            "correctAnswer": "Por favor, sigue las normas.",
+            "sourceEnglish": "Please follow the rules."
+          },
+          {
+            "itemId": "english-a1-m079-practice-ex01-i06",
+            "position": 6,
+            "taskType": "translation_multiple_choice",
+            "prompt": "Traduce al español: “You must be quiet.”",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "Debes estar en silencio.",
+              "Debes llegar puntual.",
+              "Debes escuchar en clase."
+            ],
+            "correctAnswer": "Debes estar en silencio.",
+            "sourceEnglish": "You must be quiet."
+          },
+          {
+            "itemId": "english-a1-m079-practice-ex01-i07",
+            "position": 7,
+            "taskType": "translation_multiple_choice",
+            "prompt": "Traduce al español: “You must wear a uniform.”",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "Debes llevar uniforme.",
+              "Puedes usar este teléfono.",
+              "No debes correr aquí."
+            ],
+            "correctAnswer": "Debes llevar uniforme.",
+            "sourceEnglish": "You must wear a uniform."
+          },
+          {
+            "itemId": "english-a1-m079-practice-ex01-i08",
+            "position": 8,
+            "taskType": "translation_multiple_choice",
+            "prompt": "Traduce al español: “You must arrive on time.”",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "Debes llegar puntual.",
+              "No debes comer aquí.",
+              "Puedes usar un ordenador."
+            ],
+            "correctAnswer": "Debes llegar puntual.",
+            "sourceEnglish": "You must arrive on time."
+          },
+          {
+            "itemId": "english-a1-m079-practice-ex01-i09",
+            "position": 9,
+            "taskType": "translation_multiple_choice",
+            "prompt": "Traduce al español: “You can use this phone.”",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "Puedes usar este teléfono.",
+              "Debes escuchar en clase.",
+              "No hables, por favor."
+            ],
+            "correctAnswer": "Puedes usar este teléfono.",
+            "sourceEnglish": "You can use this phone."
+          },
+          {
+            "itemId": "english-a1-m079-practice-ex01-i10",
+            "position": 10,
+            "taskType": "translation_multiple_choice",
+            "prompt": "Traduce al español: “You mustn't eat here.”",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "No debes comer aquí.",
+              "No debes correr aquí.",
+              "Por favor, sigue las normas."
+            ],
+            "correctAnswer": "No debes comer aquí.",
+            "sourceEnglish": "You mustn't eat here."
+          },
+          {
+            "itemId": "english-a1-m079-practice-ex01-i11",
+            "position": 11,
+            "taskType": "listening_translation_multiple_choice",
+            "prompt": "Escucha el inglés y elige su significado.",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "Debes escuchar en clase.",
+              "No hables, por favor.",
+              "Debes llevar uniforme."
+            ],
+            "correctAnswer": "Debes escuchar en clase.",
+            "sourceEnglish": "You must listen in class."
+          },
+          {
+            "itemId": "english-a1-m079-practice-ex01-i12",
+            "position": 12,
+            "taskType": "listening_translation_multiple_choice",
+            "prompt": "Escucha el inglés y elige su significado.",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "No debes correr aquí.",
+              "Por favor, sigue las normas.",
+              "Debes llegar puntual."
+            ],
+            "correctAnswer": "No debes correr aquí.",
+            "sourceEnglish": "You mustn't run here."
+          },
+          {
+            "itemId": "english-a1-m079-practice-ex01-i13",
+            "position": 13,
+            "taskType": "listening_translation_multiple_choice",
+            "prompt": "Escucha el inglés y elige su significado.",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "Puedes usar un ordenador.",
+              "Debes estar en silencio.",
+              "Puedes usar este teléfono."
+            ],
+            "correctAnswer": "Puedes usar un ordenador.",
+            "sourceEnglish": "You can use a computer."
+          },
+          {
+            "itemId": "english-a1-m079-practice-ex01-i14",
+            "position": 14,
+            "taskType": "listening_translation_multiple_choice",
+            "prompt": "Escucha el inglés y elige su significado.",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "No hables, por favor.",
+              "Debes llevar uniforme.",
+              "No debes comer aquí."
+            ],
+            "correctAnswer": "No hables, por favor.",
+            "sourceEnglish": "Don't talk, please."
+          },
+          {
+            "itemId": "english-a1-m079-practice-ex01-i15",
+            "position": 15,
+            "taskType": "listening_translation_multiple_choice",
+            "prompt": "Escucha el inglés y elige su significado.",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "Por favor, sigue las normas.",
+              "Debes llegar puntual.",
+              "Debes escuchar en clase."
+            ],
+            "correctAnswer": "Por favor, sigue las normas.",
+            "sourceEnglish": "Please follow the rules."
+          },
+          {
+            "itemId": "english-a1-m079-practice-ex01-i16",
+            "position": 16,
+            "taskType": "listening_translation_multiple_choice",
+            "prompt": "Escucha el inglés y elige su significado.",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "Debes estar en silencio.",
+              "Puedes usar este teléfono.",
+              "No debes correr aquí."
+            ],
+            "correctAnswer": "Debes estar en silencio.",
+            "sourceEnglish": "You must be quiet."
+          },
+          {
+            "itemId": "english-a1-m079-practice-ex01-i17",
+            "position": 17,
+            "taskType": "listening_translation_multiple_choice",
+            "prompt": "Escucha el inglés y elige su significado.",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "Debes llevar uniforme.",
+              "No debes comer aquí.",
+              "Puedes usar un ordenador."
+            ],
+            "correctAnswer": "Debes llevar uniforme.",
+            "sourceEnglish": "You must wear a uniform."
+          },
+          {
+            "itemId": "english-a1-m079-practice-ex01-i18",
+            "position": 18,
+            "taskType": "listening_translation_multiple_choice",
+            "prompt": "Escucha el inglés y elige su significado.",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "Debes llegar puntual.",
+              "Debes escuchar en clase.",
+              "No hables, por favor."
+            ],
+            "correctAnswer": "Debes llegar puntual.",
+            "sourceEnglish": "You must arrive on time."
+          },
+          {
+            "itemId": "english-a1-m079-practice-ex01-i19",
+            "position": 19,
+            "taskType": "listening_translation_multiple_choice",
+            "prompt": "Escucha el inglés y elige su significado.",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "Puedes usar este teléfono.",
+              "No debes correr aquí.",
+              "Por favor, sigue las normas."
+            ],
+            "correctAnswer": "Puedes usar este teléfono.",
+            "sourceEnglish": "You can use this phone."
+          },
+          {
+            "itemId": "english-a1-m079-practice-ex01-i20",
+            "position": 20,
+            "taskType": "listening_translation_multiple_choice",
+            "prompt": "Escucha el inglés y elige su significado.",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "No debes comer aquí.",
+              "Puedes usar un ordenador.",
+              "Debes estar en silencio."
+            ],
+            "correctAnswer": "No debes comer aquí.",
+            "sourceEnglish": "You mustn't eat here."
+          }
+        ]
+      }
+    },
+    {
+      "sectionId": "english-a1-m079-grammar",
+      "sectionKey": "grammar",
+      "position": 3,
+      "title": "grammar",
+      "exercise": {
+        "exerciseId": "english-a1-m079-grammar-ex01",
+        "type": "grammar",
+        "items": [
+          {
+            "itemId": "english-a1-m079-grammar-ex01-i01",
+            "position": 1,
+            "prompt": "You ___ wear your ID card.",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "must",
+              "mustn't",
+              "are"
+            ],
+            "correctAnswer": "must"
+          },
+          {
+            "itemId": "english-a1-m079-grammar-ex01-i02",
+            "position": 2,
+            "prompt": "You ___ run in the corridor.",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "mustn't",
+              "must",
+              "don't"
+            ],
+            "correctAnswer": "mustn't"
+          },
+          {
+            "itemId": "english-a1-m079-grammar-ex01-i03",
+            "position": 3,
+            "prompt": "Students ___ listen to the teacher.",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "must",
+              "mustn't",
+              "does"
+            ],
+            "correctAnswer": "must"
+          },
+          {
+            "itemId": "english-a1-m079-grammar-ex01-i04",
+            "position": 4,
+            "prompt": "You ___ use your phone in the exam.",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "mustn't",
+              "must",
+              "are"
+            ],
+            "correctAnswer": "mustn't"
+          },
+          {
+            "itemId": "english-a1-m079-grammar-ex01-i05",
+            "position": 5,
+            "prompt": "We ___ arrive on time.",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "must",
+              "mustn't",
+              "is"
+            ],
+            "correctAnswer": "must"
+          },
+          {
+            "itemId": "english-a1-m079-grammar-ex01-i06",
+            "position": 6,
+            "prompt": "You ___ be quiet in the library.",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "must",
+              "mustn't",
+              "does"
+            ],
+            "correctAnswer": "must"
+          },
+          {
+            "itemId": "english-a1-m079-grammar-ex01-i07",
+            "position": 7,
+            "prompt": "Visitors ___ sign in.",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "must",
+              "mustn't",
+              "are"
+            ],
+            "correctAnswer": "must"
+          },
+          {
+            "itemId": "english-a1-m079-grammar-ex01-i08",
+            "position": 8,
+            "prompt": "You ___ eat in the computer room.",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "mustn't",
+              "must",
+              "is"
+            ],
+            "correctAnswer": "mustn't"
+          },
+          {
+            "itemId": "english-a1-m079-grammar-ex01-i09",
+            "position": 9,
+            "prompt": "Workers ___ wash their hands.",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "must",
+              "mustn't",
+              "does"
+            ],
+            "correctAnswer": "must"
+          },
+          {
+            "itemId": "english-a1-m079-grammar-ex01-i10",
+            "position": 10,
+            "prompt": "You ___ forget your homework.",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "mustn't",
+              "must",
+              "are"
+            ],
+            "correctAnswer": "mustn't"
+          }
+        ],
+        "theory": {
+          "title": "Must and mustn't for simple rules",
+          "explanation": "Usamos must para expresar una obligación y mustn't para indicar que algo está prohibido. Después de ambos usamos el verbo base.",
+          "patterns": [
+            {
+              "label": "Model",
+              "pattern": "You must wear a uniform",
+              "examples": [
+                "You must wear a uniform",
+                "You mustn't use your phone."
+              ]
+            }
+          ],
+          "tip": "Lee los ejemplos y comprueba cómo cambia la estructura."
+        }
+      }
+    },
+    {
+      "sectionId": "english-a1-m079-pronunciation",
+      "sectionKey": "pronunciation",
+      "position": 4,
+      "title": "pronunciation",
+      "exercise": {
+        "exerciseId": "english-a1-m079-pronunciation-ex01",
+        "type": "pronunciation_cards",
+        "items": [
+          {
+            "itemId": "english-a1-m079-pronunciation-ex01-i01",
+            "position": 1,
+            "word": "must",
+            "translation": "deber",
+            "pronunciationGuide": "Listen to the en-GB model and keep the final consonant clear.",
+            "audio": "tts:en-GB:must"
+          },
+          {
+            "itemId": "english-a1-m079-pronunciation-ex01-i02",
+            "position": 2,
+            "word": "mustn't",
+            "translation": "no deber",
+            "pronunciationGuide": "Listen to the en-GB model and keep the final consonant clear.",
+            "audio": "tts:en-GB:mustn't"
+          },
+          {
+            "itemId": "english-a1-m079-pronunciation-ex01-i03",
+            "position": 3,
+            "word": "can",
+            "translation": "poder",
+            "pronunciationGuide": "Listen to the en-GB model and keep the final consonant clear.",
+            "audio": "tts:en-GB:can"
+          },
+          {
+            "itemId": "english-a1-m079-pronunciation-ex01-i04",
+            "position": 4,
+            "word": "don't",
+            "translation": "no (imperativo)",
+            "pronunciationGuide": "Listen to the en-GB model and keep the final consonant clear.",
+            "audio": "tts:en-GB:don't"
+          },
+          {
+            "itemId": "english-a1-m079-pronunciation-ex01-i05",
+            "position": 5,
+            "word": "please",
+            "translation": "por favor",
+            "pronunciationGuide": "Listen to the en-GB model and keep the final consonant clear.",
+            "audio": "tts:en-GB:please"
+          },
+          {
+            "itemId": "english-a1-m079-pronunciation-ex01-i06",
+            "position": 6,
+            "word": "rule",
+            "translation": "norma",
+            "pronunciationGuide": "Listen to the en-GB model and keep the final consonant clear.",
+            "audio": "tts:en-GB:rule"
+          },
+          {
+            "itemId": "english-a1-m079-pronunciation-ex01-i07",
+            "position": 7,
+            "word": "be quiet",
+            "translation": "estar en silencio",
+            "pronunciationGuide": "Listen to the phrase as one unit and notice its main stress.",
+            "audio": "tts:en-GB:be quiet"
+          },
+          {
+            "itemId": "english-a1-m079-pronunciation-ex01-i08",
+            "position": 8,
+            "word": "wear",
+            "translation": "llevar puesto",
+            "pronunciationGuide": "Listen to the en-GB model and keep the final consonant clear.",
+            "audio": "tts:en-GB:wear"
+          },
+          {
+            "itemId": "english-a1-m079-pronunciation-ex01-i09",
+            "position": 9,
+            "word": "arrive on time",
+            "translation": "llegar puntual",
+            "pronunciationGuide": "Listen to the phrase as one unit and notice its main stress.",
+            "audio": "tts:en-GB:arrive on time"
+          },
+          {
+            "itemId": "english-a1-m079-pronunciation-ex01-i10",
+            "position": 10,
+            "word": "use",
+            "translation": "usar",
+            "pronunciationGuide": "Listen to the en-GB model and keep the final consonant clear.",
+            "audio": "tts:en-GB:use"
+          }
+        ],
+        "focus": "Practica el ritmo y el acento de las palabras clave de Rules at School and Work."
+      }
+    },
+    {
+      "sectionId": "english-a1-m079-reading",
+      "sectionKey": "reading",
+      "position": 5,
+      "title": "reading",
+      "exercise": {
+        "exerciseId": "english-a1-m079-reading-ex01",
+        "type": "reading_comprehension",
+        "items": [
+          {
+            "itemId": "english-a1-m079-reading-ex01-i01",
+            "position": 1,
+            "prompt": "Which English sentence means “Debes escuchar en clase.”?",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "You must listen in class.",
+              "You mustn't run here.",
+              "You can use a computer."
+            ],
+            "correctAnswer": "You must listen in class."
+          },
+          {
+            "itemId": "english-a1-m079-reading-ex01-i02",
+            "position": 2,
+            "prompt": "Which English sentence means “No debes correr aquí.”?",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "You mustn't run here.",
+              "You can use a computer.",
+              "Don't talk, please."
+            ],
+            "correctAnswer": "You mustn't run here."
+          },
+          {
+            "itemId": "english-a1-m079-reading-ex01-i03",
+            "position": 3,
+            "prompt": "Which English sentence means “Puedes usar un ordenador.”?",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "You can use a computer.",
+              "Don't talk, please.",
+              "Please follow the rules."
+            ],
+            "correctAnswer": "You can use a computer."
+          },
+          {
+            "itemId": "english-a1-m079-reading-ex01-i04",
+            "position": 4,
+            "prompt": "Which English sentence means “No hables, por favor.”?",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "Don't talk, please.",
+              "Please follow the rules.",
+              "You must be quiet."
+            ],
+            "correctAnswer": "Don't talk, please."
+          },
+          {
+            "itemId": "english-a1-m079-reading-ex01-i05",
+            "position": 5,
+            "prompt": "Which English sentence means “Por favor, sigue las normas.”?",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "Please follow the rules.",
+              "You must be quiet.",
+              "You must wear a uniform."
+            ],
+            "correctAnswer": "Please follow the rules."
+          },
+          {
+            "itemId": "english-a1-m079-reading-ex01-i06",
+            "position": 6,
+            "prompt": "Which English sentence means “Debes estar en silencio.”?",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "You must be quiet.",
+              "You must wear a uniform.",
+              "You must arrive on time."
+            ],
+            "correctAnswer": "You must be quiet."
+          },
+          {
+            "itemId": "english-a1-m079-reading-ex01-i07",
+            "position": 7,
+            "prompt": "Which English sentence means “Debes llevar uniforme.”?",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "You must wear a uniform.",
+              "You must arrive on time.",
+              "You can use this phone."
+            ],
+            "correctAnswer": "You must wear a uniform."
+          },
+          {
+            "itemId": "english-a1-m079-reading-ex01-i08",
+            "position": 8,
+            "prompt": "Which English sentence means “Debes llegar puntual.”?",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "You must arrive on time.",
+              "You can use this phone.",
+              "You mustn't eat here."
+            ],
+            "correctAnswer": "You must arrive on time."
+          },
+          {
+            "itemId": "english-a1-m079-reading-ex01-i09",
+            "position": 9,
+            "prompt": "Which English sentence means “Puedes usar este teléfono.”?",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "You can use this phone.",
+              "You mustn't eat here.",
+              "You must listen in class."
+            ],
+            "correctAnswer": "You can use this phone."
+          },
+          {
+            "itemId": "english-a1-m079-reading-ex01-i10",
+            "position": 10,
+            "prompt": "Which English sentence means “No debes comer aquí.”?",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "You mustn't eat here.",
+              "You must listen in class.",
+              "You mustn't run here."
+            ],
+            "correctAnswer": "You mustn't eat here."
+          }
+        ],
+        "content": {
+          "passageId": "english-a1-m079-reading-passage-01",
+          "passage": "You must listen in class. You mustn't run here. You can use a computer. Don't talk, please. Please follow the rules. You must be quiet."
+        }
+      }
+    },
+    {
+      "sectionId": "english-a1-m079-writing",
+      "sectionKey": "writing",
+      "position": 6,
+      "title": "writing",
+      "exercise": {
+        "exerciseId": "english-a1-m079-writing-ex01",
+        "type": "dictation",
+        "items": [
+          {
+            "itemId": "english-a1-m079-writing-ex01-i01",
+            "position": 1,
+            "audio": "tts:en-GB:You must listen in class.",
+            "expectedAnswer": "You must listen in class.",
+            "evaluation": {
+              "type": "normalised_text"
+            }
+          },
+          {
+            "itemId": "english-a1-m079-writing-ex01-i02",
+            "position": 2,
+            "audio": "tts:en-GB:You mustn't run here.",
+            "expectedAnswer": "You mustn't run here.",
+            "evaluation": {
+              "type": "normalised_text"
+            }
+          },
+          {
+            "itemId": "english-a1-m079-writing-ex01-i03",
+            "position": 3,
+            "audio": "tts:en-GB:You can use a computer.",
+            "expectedAnswer": "You can use a computer.",
+            "evaluation": {
+              "type": "normalised_text"
+            }
+          },
+          {
+            "itemId": "english-a1-m079-writing-ex01-i04",
+            "position": 4,
+            "audio": "tts:en-GB:Don't talk, please.",
+            "expectedAnswer": "Don't talk, please.",
+            "evaluation": {
+              "type": "normalised_text"
+            }
+          },
+          {
+            "itemId": "english-a1-m079-writing-ex01-i05",
+            "position": 5,
+            "audio": "tts:en-GB:Please follow the rules.",
+            "expectedAnswer": "Please follow the rules.",
+            "evaluation": {
+              "type": "normalised_text"
+            }
+          },
+          {
+            "itemId": "english-a1-m079-writing-ex01-i06",
+            "position": 6,
+            "audio": "tts:en-GB:You must be quiet.",
+            "expectedAnswer": "You must be quiet.",
+            "evaluation": {
+              "type": "normalised_text"
+            }
+          },
+          {
+            "itemId": "english-a1-m079-writing-ex01-i07",
+            "position": 7,
+            "audio": "tts:en-GB:You must wear a uniform.",
+            "expectedAnswer": "You must wear a uniform.",
+            "evaluation": {
+              "type": "normalised_text"
+            }
+          },
+          {
+            "itemId": "english-a1-m079-writing-ex01-i08",
+            "position": 8,
+            "audio": "tts:en-GB:You must arrive on time.",
+            "expectedAnswer": "You must arrive on time.",
+            "evaluation": {
+              "type": "normalised_text"
+            }
+          },
+          {
+            "itemId": "english-a1-m079-writing-ex01-i09",
+            "position": 9,
+            "audio": "tts:en-GB:You can use this phone.",
+            "expectedAnswer": "You can use this phone.",
+            "evaluation": {
+              "type": "normalised_text"
+            }
+          },
+          {
+            "itemId": "english-a1-m079-writing-ex01-i10",
+            "position": 10,
+            "audio": "tts:en-GB:You mustn't eat here.",
+            "expectedAnswer": "You mustn't eat here.",
+            "evaluation": {
+              "type": "normalised_text"
+            }
+          }
+        ],
+        "writingTask": "Escribe 5–6 frases sobre rules at school and work. Utiliza al menos cinco palabras de la misión y la estructura must and mustn't for simple rules.",
+        "modelText": "You must listen in class. You mustn't run here. You can use a computer. Don't talk, please. Please follow the rules. You must be quiet."
+      }
+    },
+    {
+      "sectionId": "english-a1-m079-speaking",
+      "sectionKey": "speaking",
+      "position": 7,
+      "title": "speaking",
+      "exercise": {
+        "exerciseId": "english-a1-m079-speaking-ex01",
+        "type": "speaking_prompts",
+        "items": [
+          {
+            "itemId": "english-a1-m079-speaking-ex01-i01",
+            "position": 1,
+            "prompt": "Say a sentence about this situation: Debes escuchar en clase.",
+            "modelAnswer": "You must listen in class.",
+            "evaluation": {
+              "type": "transcription_feedback",
+              "transcriptionSeparateFromPronunciation": true
+            }
+          },
+          {
+            "itemId": "english-a1-m079-speaking-ex01-i02",
+            "position": 2,
+            "prompt": "Say a sentence about this situation: No debes correr aquí.",
+            "modelAnswer": "You mustn't run here.",
+            "evaluation": {
+              "type": "transcription_feedback",
+              "transcriptionSeparateFromPronunciation": true
+            }
+          },
+          {
+            "itemId": "english-a1-m079-speaking-ex01-i03",
+            "position": 3,
+            "prompt": "Say a sentence about this situation: Puedes usar un ordenador.",
+            "modelAnswer": "You can use a computer.",
+            "evaluation": {
+              "type": "transcription_feedback",
+              "transcriptionSeparateFromPronunciation": true
+            }
+          },
+          {
+            "itemId": "english-a1-m079-speaking-ex01-i04",
+            "position": 4,
+            "prompt": "Say a sentence about this situation: No hables, por favor.",
+            "modelAnswer": "Don't talk, please.",
+            "evaluation": {
+              "type": "transcription_feedback",
+              "transcriptionSeparateFromPronunciation": true
+            }
+          },
+          {
+            "itemId": "english-a1-m079-speaking-ex01-i05",
+            "position": 5,
+            "prompt": "Say a sentence about this situation: Por favor, sigue las normas.",
+            "modelAnswer": "Please follow the rules.",
+            "evaluation": {
+              "type": "transcription_feedback",
+              "transcriptionSeparateFromPronunciation": true
+            }
+          },
+          {
+            "itemId": "english-a1-m079-speaking-ex01-i06",
+            "position": 6,
+            "prompt": "Say a sentence about this situation: Debes estar en silencio.",
+            "modelAnswer": "You must be quiet.",
+            "evaluation": {
+              "type": "transcription_feedback",
+              "transcriptionSeparateFromPronunciation": true
+            }
+          },
+          {
+            "itemId": "english-a1-m079-speaking-ex01-i07",
+            "position": 7,
+            "prompt": "Say a sentence about this situation: Debes llevar uniforme.",
+            "modelAnswer": "You must wear a uniform.",
+            "evaluation": {
+              "type": "transcription_feedback",
+              "transcriptionSeparateFromPronunciation": true
+            }
+          },
+          {
+            "itemId": "english-a1-m079-speaking-ex01-i08",
+            "position": 8,
+            "prompt": "Say a sentence about this situation: Debes llegar puntual.",
+            "modelAnswer": "You must arrive on time.",
+            "evaluation": {
+              "type": "transcription_feedback",
+              "transcriptionSeparateFromPronunciation": true
+            }
+          },
+          {
+            "itemId": "english-a1-m079-speaking-ex01-i09",
+            "position": 9,
+            "prompt": "Say a sentence about this situation: Puedes usar este teléfono.",
+            "modelAnswer": "You can use this phone.",
+            "evaluation": {
+              "type": "transcription_feedback",
+              "transcriptionSeparateFromPronunciation": true
+            }
+          },
+          {
+            "itemId": "english-a1-m079-speaking-ex01-i10",
+            "position": 10,
+            "prompt": "Say a sentence about this situation: No debes comer aquí.",
+            "modelAnswer": "You mustn't eat here.",
+            "evaluation": {
+              "type": "transcription_feedback",
+              "transcriptionSeparateFromPronunciation": true
+            }
+          }
+        ]
+      }
+    },
+    {
+      "sectionId": "english-a1-m079-listening",
+      "sectionKey": "listening",
+      "position": 8,
+      "title": "listening",
+      "exercise": {
+        "exerciseId": "english-a1-m079-listening-ex01",
+        "type": "listening_gap_fill",
+        "items": [
+          {
+            "itemId": "english-a1-m079-listening-ex01-i01",
+            "position": 1,
+            "gapToken": "[[gap-01]]",
+            "expectedWordId": "english-a1-m079-listening-word-01"
+          },
+          {
+            "itemId": "english-a1-m079-listening-ex01-i02",
+            "position": 2,
+            "gapToken": "[[gap-02]]",
+            "expectedWordId": "english-a1-m079-listening-word-02"
+          },
+          {
+            "itemId": "english-a1-m079-listening-ex01-i03",
+            "position": 3,
+            "gapToken": "[[gap-03]]",
+            "expectedWordId": "english-a1-m079-listening-word-03"
+          },
+          {
+            "itemId": "english-a1-m079-listening-ex01-i04",
+            "position": 4,
+            "gapToken": "[[gap-04]]",
+            "expectedWordId": "english-a1-m079-listening-word-04"
+          },
+          {
+            "itemId": "english-a1-m079-listening-ex01-i05",
+            "position": 5,
+            "gapToken": "[[gap-05]]",
+            "expectedWordId": "english-a1-m079-listening-word-05"
+          },
+          {
+            "itemId": "english-a1-m079-listening-ex01-i06",
+            "position": 6,
+            "gapToken": "[[gap-06]]",
+            "expectedWordId": "english-a1-m079-listening-word-06"
+          },
+          {
+            "itemId": "english-a1-m079-listening-ex01-i07",
+            "position": 7,
+            "gapToken": "[[gap-07]]",
+            "expectedWordId": "english-a1-m079-listening-word-07"
+          },
+          {
+            "itemId": "english-a1-m079-listening-ex01-i08",
+            "position": 8,
+            "gapToken": "[[gap-08]]",
+            "expectedWordId": "english-a1-m079-listening-word-08"
+          },
+          {
+            "itemId": "english-a1-m079-listening-ex01-i09",
+            "position": 9,
+            "gapToken": "[[gap-09]]",
+            "expectedWordId": "english-a1-m079-listening-word-09"
+          },
+          {
+            "itemId": "english-a1-m079-listening-ex01-i10",
+            "position": 10,
+            "gapToken": "[[gap-10]]",
+            "expectedWordId": "english-a1-m079-listening-word-10"
+          }
+        ],
+        "content": {
+          "audio": "tts:en-GB:The key words for Rules at School and Work are: must, mustn't, can, don't, please, rule, be quiet, wear, arrive on time, use. Listen and repeat each word carefully.",
+          "audioLocale": "en-GB",
+          "transcriptTemplate": "The key words for Rules at School and Work are: [[gap-01]], [[gap-02]], [[gap-03]], [[gap-04]], [[gap-05]], [[gap-06]], [[gap-07]], [[gap-08]], [[gap-09]], [[gap-10]]. Listen and repeat each word carefully.",
+          "wordBank": [
+            {
+              "wordId": "english-a1-m079-listening-word-01",
+              "word": "must"
+            },
+            {
+              "wordId": "english-a1-m079-listening-word-02",
+              "word": "mustn't"
+            },
+            {
+              "wordId": "english-a1-m079-listening-word-03",
+              "word": "can"
+            },
+            {
+              "wordId": "english-a1-m079-listening-word-04",
+              "word": "don't"
+            },
+            {
+              "wordId": "english-a1-m079-listening-word-05",
+              "word": "please"
+            },
+            {
+              "wordId": "english-a1-m079-listening-word-06",
+              "word": "rule"
+            },
+            {
+              "wordId": "english-a1-m079-listening-word-07",
+              "word": "be quiet"
+            },
+            {
+              "wordId": "english-a1-m079-listening-word-08",
+              "word": "wear"
+            },
+            {
+              "wordId": "english-a1-m079-listening-word-09",
+              "word": "arrive on time"
+            },
+            {
+              "wordId": "english-a1-m079-listening-word-10",
+              "word": "use"
+            }
+          ],
+          "interaction": "select_place_move_replace"
+        }
+      }
+    }
+  ]
+}

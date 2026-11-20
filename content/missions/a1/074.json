@@ -1,0 +1,1204 @@
+{
+  "schemaVersion": "1.2.0",
+  "contentVersion": 1,
+  "course": {
+    "courseId": "english-a1",
+    "level": "A1",
+    "language": "en-GB"
+  },
+  "unit": {
+    "unitId": "english-a1-unit-08",
+    "courseId": "english-a1",
+    "position": 8,
+    "title": "Study, work and communication"
+  },
+  "mission": {
+    "missionId": "english-a1-m074",
+    "unitId": "english-a1-unit-08",
+    "position": 74,
+    "title": "What Do You Do?"
+  },
+  "sections": [
+    {
+      "sectionId": "english-a1-m074-explore",
+      "sectionKey": "explore",
+      "position": 1,
+      "title": "explore",
+      "exercise": {
+        "exerciseId": "english-a1-m074-explore-ex01",
+        "type": "vocabulary_pairs",
+        "items": [
+          {
+            "itemId": "english-a1-m074-explore-ex01-i01",
+            "position": 1,
+            "english": "job",
+            "spanish": "trabajo / empleo",
+            "audio": "tts:en-GB:job"
+          },
+          {
+            "itemId": "english-a1-m074-explore-ex01-i02",
+            "position": 2,
+            "english": "work",
+            "spanish": "trabajar",
+            "audio": "tts:en-GB:work"
+          },
+          {
+            "itemId": "english-a1-m074-explore-ex01-i03",
+            "position": 3,
+            "english": "study",
+            "spanish": "estudiar",
+            "audio": "tts:en-GB:study"
+          },
+          {
+            "itemId": "english-a1-m074-explore-ex01-i04",
+            "position": 4,
+            "english": "Where do you work?",
+            "spanish": "¿Dónde trabajas?",
+            "audio": "tts:en-GB:Where do you work?"
+          },
+          {
+            "itemId": "english-a1-m074-explore-ex01-i05",
+            "position": 5,
+            "english": "What do you do?",
+            "spanish": "¿A qué te dedicas?",
+            "audio": "tts:en-GB:What do you do?"
+          },
+          {
+            "itemId": "english-a1-m074-explore-ex01-i06",
+            "position": 6,
+            "english": "I am a...",
+            "spanish": "Soy...",
+            "audio": "tts:en-GB:I am a..."
+          },
+          {
+            "itemId": "english-a1-m074-explore-ex01-i07",
+            "position": 7,
+            "english": "student",
+            "spanish": "estudiante",
+            "audio": "tts:en-GB:student"
+          },
+          {
+            "itemId": "english-a1-m074-explore-ex01-i08",
+            "position": 8,
+            "english": "company",
+            "spanish": "empresa",
+            "audio": "tts:en-GB:company"
+          },
+          {
+            "itemId": "english-a1-m074-explore-ex01-i09",
+            "position": 9,
+            "english": "at school",
+            "spanish": "en el colegio",
+            "audio": "tts:en-GB:at school"
+          },
+          {
+            "itemId": "english-a1-m074-explore-ex01-i10",
+            "position": 10,
+            "english": "in an office",
+            "spanish": "en una oficina",
+            "audio": "tts:en-GB:in an office"
+          }
+        ],
+        "theory": {
+          "title": "Vocabulary: What Do You Do?",
+          "explanation": "Explora diez palabras y expresiones sobre what do you do?. Escucha el modelo británico y relaciona cada palabra con su significado.",
+          "patterns": [
+            {
+              "label": "Useful language",
+              "pattern": "Short question + short answer",
+              "examples": [
+                "What do you do?",
+                "I am a student.",
+                "Where do you work?"
+              ]
+            }
+          ],
+          "tip": "Repite las expresiones y crea un ejemplo relacionado con tu vida."
+        }
+      }
+    },
+    {
+      "sectionId": "english-a1-m074-practice",
+      "sectionKey": "practice",
+      "position": 2,
+      "title": "practice",
+      "exercise": {
+        "exerciseId": "english-a1-m074-practice-ex01",
+        "type": "mixed_practice",
+        "items": [
+          {
+            "itemId": "english-a1-m074-practice-ex01-i01",
+            "position": 1,
+            "taskType": "translation_multiple_choice",
+            "prompt": "Traduce al español: “What do you do?”",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "¿A qué te dedicas?",
+              "¿Dónde trabajas?",
+              "Ella es médica."
+            ],
+            "correctAnswer": "¿A qué te dedicas?",
+            "sourceEnglish": "What do you do?"
+          },
+          {
+            "itemId": "english-a1-m074-practice-ex01-i02",
+            "position": 2,
+            "taskType": "translation_multiple_choice",
+            "prompt": "Traduce al español: “I am a student.”",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "Soy estudiante.",
+              "Trabajo en una tienda.",
+              "Él trabaja en una oficina."
+            ],
+            "correctAnswer": "Soy estudiante.",
+            "sourceEnglish": "I am a student."
+          },
+          {
+            "itemId": "english-a1-m074-practice-ex01-i03",
+            "position": 3,
+            "taskType": "translation_multiple_choice",
+            "prompt": "Traduce al español: “Where do you work?”",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "¿Dónde trabajas?",
+              "Estudio inglés.",
+              "¿Trabajas aquí?"
+            ],
+            "correctAnswer": "¿Dónde trabajas?",
+            "sourceEnglish": "Where do you work?"
+          },
+          {
+            "itemId": "english-a1-m074-practice-ex01-i04",
+            "position": 4,
+            "taskType": "translation_multiple_choice",
+            "prompt": "Traduce al español: “I work in a shop.”",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "Trabajo en una tienda.",
+              "Ella es médica.",
+              "Trabajo para una empresa pequeña."
+            ],
+            "correctAnswer": "Trabajo en una tienda.",
+            "sourceEnglish": "I work in a shop."
+          },
+          {
+            "itemId": "english-a1-m074-practice-ex01-i05",
+            "position": 5,
+            "taskType": "translation_multiple_choice",
+            "prompt": "Traduce al español: “I study English.”",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "Estudio inglés.",
+              "Él trabaja en una oficina.",
+              "Soy profesor/a."
+            ],
+            "correctAnswer": "Estudio inglés.",
+            "sourceEnglish": "I study English."
+          },
+          {
+            "itemId": "english-a1-m074-practice-ex01-i06",
+            "position": 6,
+            "taskType": "translation_multiple_choice",
+            "prompt": "Traduce al español: “She is a doctor.”",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "Ella es médica.",
+              "¿Trabajas aquí?",
+              "¿A qué te dedicas?"
+            ],
+            "correctAnswer": "Ella es médica.",
+            "sourceEnglish": "She is a doctor."
+          },
+          {
+            "itemId": "english-a1-m074-practice-ex01-i07",
+            "position": 7,
+            "taskType": "translation_multiple_choice",
+            "prompt": "Traduce al español: “He works in an office.”",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "Él trabaja en una oficina.",
+              "Trabajo para una empresa pequeña.",
+              "Soy estudiante."
+            ],
+            "correctAnswer": "Él trabaja en una oficina.",
+            "sourceEnglish": "He works in an office."
+          },
+          {
+            "itemId": "english-a1-m074-practice-ex01-i08",
+            "position": 8,
+            "taskType": "translation_multiple_choice",
+            "prompt": "Traduce al español: “Do you work here?”",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "¿Trabajas aquí?",
+              "Soy profesor/a.",
+              "¿Dónde trabajas?"
+            ],
+            "correctAnswer": "¿Trabajas aquí?",
+            "sourceEnglish": "Do you work here?"
+          },
+          {
+            "itemId": "english-a1-m074-practice-ex01-i09",
+            "position": 9,
+            "taskType": "translation_multiple_choice",
+            "prompt": "Traduce al español: “I work for a small company.”",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "Trabajo para una empresa pequeña.",
+              "¿A qué te dedicas?",
+              "Trabajo en una tienda."
+            ],
+            "correctAnswer": "Trabajo para una empresa pequeña.",
+            "sourceEnglish": "I work for a small company."
+          },
+          {
+            "itemId": "english-a1-m074-practice-ex01-i10",
+            "position": 10,
+            "taskType": "translation_multiple_choice",
+            "prompt": "Traduce al español: “I am a teacher.”",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "Soy profesor/a.",
+              "Soy estudiante.",
+              "Estudio inglés."
+            ],
+            "correctAnswer": "Soy profesor/a.",
+            "sourceEnglish": "I am a teacher."
+          },
+          {
+            "itemId": "english-a1-m074-practice-ex01-i11",
+            "position": 11,
+            "taskType": "listening_translation_multiple_choice",
+            "prompt": "Escucha el inglés y elige su significado.",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "¿A qué te dedicas?",
+              "Trabajo en una tienda.",
+              "Él trabaja en una oficina."
+            ],
+            "correctAnswer": "¿A qué te dedicas?",
+            "sourceEnglish": "What do you do?"
+          },
+          {
+            "itemId": "english-a1-m074-practice-ex01-i12",
+            "position": 12,
+            "taskType": "listening_translation_multiple_choice",
+            "prompt": "Escucha el inglés y elige su significado.",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "Soy estudiante.",
+              "Estudio inglés.",
+              "¿Trabajas aquí?"
+            ],
+            "correctAnswer": "Soy estudiante.",
+            "sourceEnglish": "I am a student."
+          },
+          {
+            "itemId": "english-a1-m074-practice-ex01-i13",
+            "position": 13,
+            "taskType": "listening_translation_multiple_choice",
+            "prompt": "Escucha el inglés y elige su significado.",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "¿Dónde trabajas?",
+              "Ella es médica.",
+              "Trabajo para una empresa pequeña."
+            ],
+            "correctAnswer": "¿Dónde trabajas?",
+            "sourceEnglish": "Where do you work?"
+          },
+          {
+            "itemId": "english-a1-m074-practice-ex01-i14",
+            "position": 14,
+            "taskType": "listening_translation_multiple_choice",
+            "prompt": "Escucha el inglés y elige su significado.",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "Trabajo en una tienda.",
+              "Él trabaja en una oficina.",
+              "Soy profesor/a."
+            ],
+            "correctAnswer": "Trabajo en una tienda.",
+            "sourceEnglish": "I work in a shop."
+          },
+          {
+            "itemId": "english-a1-m074-practice-ex01-i15",
+            "position": 15,
+            "taskType": "listening_translation_multiple_choice",
+            "prompt": "Escucha el inglés y elige su significado.",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "Estudio inglés.",
+              "¿Trabajas aquí?",
+              "¿A qué te dedicas?"
+            ],
+            "correctAnswer": "Estudio inglés.",
+            "sourceEnglish": "I study English."
+          },
+          {
+            "itemId": "english-a1-m074-practice-ex01-i16",
+            "position": 16,
+            "taskType": "listening_translation_multiple_choice",
+            "prompt": "Escucha el inglés y elige su significado.",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "Ella es médica.",
+              "Trabajo para una empresa pequeña.",
+              "Soy estudiante."
+            ],
+            "correctAnswer": "Ella es médica.",
+            "sourceEnglish": "She is a doctor."
+          },
+          {
+            "itemId": "english-a1-m074-practice-ex01-i17",
+            "position": 17,
+            "taskType": "listening_translation_multiple_choice",
+            "prompt": "Escucha el inglés y elige su significado.",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "Él trabaja en una oficina.",
+              "Soy profesor/a.",
+              "¿Dónde trabajas?"
+            ],
+            "correctAnswer": "Él trabaja en una oficina.",
+            "sourceEnglish": "He works in an office."
+          },
+          {
+            "itemId": "english-a1-m074-practice-ex01-i18",
+            "position": 18,
+            "taskType": "listening_translation_multiple_choice",
+            "prompt": "Escucha el inglés y elige su significado.",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "¿Trabajas aquí?",
+              "¿A qué te dedicas?",
+              "Trabajo en una tienda."
+            ],
+            "correctAnswer": "¿Trabajas aquí?",
+            "sourceEnglish": "Do you work here?"
+          },
+          {
+            "itemId": "english-a1-m074-practice-ex01-i19",
+            "position": 19,
+            "taskType": "listening_translation_multiple_choice",
+            "prompt": "Escucha el inglés y elige su significado.",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "Trabajo para una empresa pequeña.",
+              "Soy estudiante.",
+              "Estudio inglés."
+            ],
+            "correctAnswer": "Trabajo para una empresa pequeña.",
+            "sourceEnglish": "I work for a small company."
+          },
+          {
+            "itemId": "english-a1-m074-practice-ex01-i20",
+            "position": 20,
+            "taskType": "listening_translation_multiple_choice",
+            "prompt": "Escucha el inglés y elige su significado.",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "Soy profesor/a.",
+              "¿Dónde trabajas?",
+              "Ella es médica."
+            ],
+            "correctAnswer": "Soy profesor/a.",
+            "sourceEnglish": "I am a teacher."
+          }
+        ]
+      }
+    },
+    {
+      "sectionId": "english-a1-m074-grammar",
+      "sectionKey": "grammar",
+      "position": 3,
+      "title": "grammar",
+      "exercise": {
+        "exerciseId": "english-a1-m074-grammar-ex01",
+        "type": "grammar",
+        "items": [
+          {
+            "itemId": "english-a1-m074-grammar-ex01-i01",
+            "position": 1,
+            "prompt": "___ you work in a school?",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "Do",
+              "Does",
+              "Are"
+            ],
+            "correctAnswer": "Do"
+          },
+          {
+            "itemId": "english-a1-m074-grammar-ex01-i02",
+            "position": 2,
+            "prompt": "___ he work in a shop?",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "Does",
+              "Do",
+              "Is"
+            ],
+            "correctAnswer": "Does"
+          },
+          {
+            "itemId": "english-a1-m074-grammar-ex01-i03",
+            "position": 3,
+            "prompt": "Where ___ your mother work?",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "does",
+              "do",
+              "is"
+            ],
+            "correctAnswer": "does"
+          },
+          {
+            "itemId": "english-a1-m074-grammar-ex01-i04",
+            "position": 4,
+            "prompt": "What ___ they do?",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "do",
+              "does",
+              "are"
+            ],
+            "correctAnswer": "do"
+          },
+          {
+            "itemId": "english-a1-m074-grammar-ex01-i05",
+            "position": 5,
+            "prompt": "___ she teach English?",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "Does",
+              "Do",
+              "Is"
+            ],
+            "correctAnswer": "Does"
+          },
+          {
+            "itemId": "english-a1-m074-grammar-ex01-i06",
+            "position": 6,
+            "prompt": "Do you ___ in an office?",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "work",
+              "works",
+              "working"
+            ],
+            "correctAnswer": "work"
+          },
+          {
+            "itemId": "english-a1-m074-grammar-ex01-i07",
+            "position": 7,
+            "prompt": "Does he ___ patients?",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "help",
+              "helps",
+              "helping"
+            ],
+            "correctAnswer": "help"
+          },
+          {
+            "itemId": "english-a1-m074-grammar-ex01-i08",
+            "position": 8,
+            "prompt": "Where do they ___?",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "work",
+              "works",
+              "working"
+            ],
+            "correctAnswer": "work"
+          },
+          {
+            "itemId": "english-a1-m074-grammar-ex01-i09",
+            "position": 9,
+            "prompt": "What time ___ she start?",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "does",
+              "do",
+              "is"
+            ],
+            "correctAnswer": "does"
+          },
+          {
+            "itemId": "english-a1-m074-grammar-ex01-i10",
+            "position": 10,
+            "prompt": "Does your father ___ here?",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "work",
+              "works",
+              "working"
+            ],
+            "correctAnswer": "work"
+          }
+        ],
+        "theory": {
+          "title": "Questions with do and does",
+          "explanation": "Usamos do con I/you/we/they y does con he/she/it para hacer preguntas en presente simple. Después de does el verbo principal va en forma base.",
+          "patterns": [
+            {
+              "label": "Model",
+              "pattern": "What do you do? Where does she work?",
+              "examples": [
+                "What do you do? Where does she work?"
+              ]
+            }
+          ],
+          "tip": "Lee los ejemplos y comprueba cómo cambia la estructura."
+        }
+      }
+    },
+    {
+      "sectionId": "english-a1-m074-pronunciation",
+      "sectionKey": "pronunciation",
+      "position": 4,
+      "title": "pronunciation",
+      "exercise": {
+        "exerciseId": "english-a1-m074-pronunciation-ex01",
+        "type": "pronunciation_cards",
+        "items": [
+          {
+            "itemId": "english-a1-m074-pronunciation-ex01-i01",
+            "position": 1,
+            "word": "job",
+            "translation": "trabajo / empleo",
+            "pronunciationGuide": "Listen to the en-GB model and keep the final consonant clear.",
+            "audio": "tts:en-GB:job"
+          },
+          {
+            "itemId": "english-a1-m074-pronunciation-ex01-i02",
+            "position": 2,
+            "word": "work",
+            "translation": "trabajar",
+            "pronunciationGuide": "Listen to the en-GB model and keep the final consonant clear.",
+            "audio": "tts:en-GB:work"
+          },
+          {
+            "itemId": "english-a1-m074-pronunciation-ex01-i03",
+            "position": 3,
+            "word": "study",
+            "translation": "estudiar",
+            "pronunciationGuide": "Listen to the en-GB model and keep the final consonant clear.",
+            "audio": "tts:en-GB:study"
+          },
+          {
+            "itemId": "english-a1-m074-pronunciation-ex01-i04",
+            "position": 4,
+            "word": "Where do you work?",
+            "translation": "¿Dónde trabajas?",
+            "pronunciationGuide": "Listen to the phrase as one unit and notice its main stress.",
+            "audio": "tts:en-GB:Where do you work?"
+          },
+          {
+            "itemId": "english-a1-m074-pronunciation-ex01-i05",
+            "position": 5,
+            "word": "What do you do?",
+            "translation": "¿A qué te dedicas?",
+            "pronunciationGuide": "Listen to the phrase as one unit and notice its main stress.",
+            "audio": "tts:en-GB:What do you do?"
+          },
+          {
+            "itemId": "english-a1-m074-pronunciation-ex01-i06",
+            "position": 6,
+            "word": "I am a...",
+            "translation": "Soy...",
+            "pronunciationGuide": "Listen to the phrase as one unit and notice its main stress.",
+            "audio": "tts:en-GB:I am a..."
+          },
+          {
+            "itemId": "english-a1-m074-pronunciation-ex01-i07",
+            "position": 7,
+            "word": "student",
+            "translation": "estudiante",
+            "pronunciationGuide": "Listen to the en-GB model and keep the final consonant clear.",
+            "audio": "tts:en-GB:student"
+          },
+          {
+            "itemId": "english-a1-m074-pronunciation-ex01-i08",
+            "position": 8,
+            "word": "company",
+            "translation": "empresa",
+            "pronunciationGuide": "Listen to the en-GB model and keep the final consonant clear.",
+            "audio": "tts:en-GB:company"
+          },
+          {
+            "itemId": "english-a1-m074-pronunciation-ex01-i09",
+            "position": 9,
+            "word": "at school",
+            "translation": "en el colegio",
+            "pronunciationGuide": "Listen to the phrase as one unit and notice its main stress.",
+            "audio": "tts:en-GB:at school"
+          },
+          {
+            "itemId": "english-a1-m074-pronunciation-ex01-i10",
+            "position": 10,
+            "word": "in an office",
+            "translation": "en una oficina",
+            "pronunciationGuide": "Listen to the phrase as one unit and notice its main stress.",
+            "audio": "tts:en-GB:in an office"
+          }
+        ],
+        "focus": "Practica el ritmo y el acento de las palabras clave de What Do You Do?."
+      }
+    },
+    {
+      "sectionId": "english-a1-m074-reading",
+      "sectionKey": "reading",
+      "position": 5,
+      "title": "reading",
+      "exercise": {
+        "exerciseId": "english-a1-m074-reading-ex01",
+        "type": "reading_comprehension",
+        "items": [
+          {
+            "itemId": "english-a1-m074-reading-ex01-i01",
+            "position": 1,
+            "prompt": "Which English sentence means “¿A qué te dedicas?”?",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "What do you do?",
+              "I am a student.",
+              "Where do you work?"
+            ],
+            "correctAnswer": "What do you do?"
+          },
+          {
+            "itemId": "english-a1-m074-reading-ex01-i02",
+            "position": 2,
+            "prompt": "Which English sentence means “Soy estudiante.”?",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "I am a student.",
+              "Where do you work?",
+              "I work in a shop."
+            ],
+            "correctAnswer": "I am a student."
+          },
+          {
+            "itemId": "english-a1-m074-reading-ex01-i03",
+            "position": 3,
+            "prompt": "Which English sentence means “¿Dónde trabajas?”?",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "Where do you work?",
+              "I work in a shop.",
+              "I study English."
+            ],
+            "correctAnswer": "Where do you work?"
+          },
+          {
+            "itemId": "english-a1-m074-reading-ex01-i04",
+            "position": 4,
+            "prompt": "Which English sentence means “Trabajo en una tienda.”?",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "I work in a shop.",
+              "I study English.",
+              "She is a doctor."
+            ],
+            "correctAnswer": "I work in a shop."
+          },
+          {
+            "itemId": "english-a1-m074-reading-ex01-i05",
+            "position": 5,
+            "prompt": "Which English sentence means “Estudio inglés.”?",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "I study English.",
+              "She is a doctor.",
+              "He works in an office."
+            ],
+            "correctAnswer": "I study English."
+          },
+          {
+            "itemId": "english-a1-m074-reading-ex01-i06",
+            "position": 6,
+            "prompt": "Which English sentence means “Ella es médica.”?",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "She is a doctor.",
+              "He works in an office.",
+              "Do you work here?"
+            ],
+            "correctAnswer": "She is a doctor."
+          },
+          {
+            "itemId": "english-a1-m074-reading-ex01-i07",
+            "position": 7,
+            "prompt": "Which English sentence means “Él trabaja en una oficina.”?",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "He works in an office.",
+              "Do you work here?",
+              "I work for a small company."
+            ],
+            "correctAnswer": "He works in an office."
+          },
+          {
+            "itemId": "english-a1-m074-reading-ex01-i08",
+            "position": 8,
+            "prompt": "Which English sentence means “¿Trabajas aquí?”?",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "Do you work here?",
+              "I work for a small company.",
+              "I am a teacher."
+            ],
+            "correctAnswer": "Do you work here?"
+          },
+          {
+            "itemId": "english-a1-m074-reading-ex01-i09",
+            "position": 9,
+            "prompt": "Which English sentence means “Trabajo para una empresa pequeña.”?",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "I work for a small company.",
+              "I am a teacher.",
+              "What do you do?"
+            ],
+            "correctAnswer": "I work for a small company."
+          },
+          {
+            "itemId": "english-a1-m074-reading-ex01-i10",
+            "position": 10,
+            "prompt": "Which English sentence means “Soy profesor/a.”?",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "I am a teacher.",
+              "What do you do?",
+              "I am a student."
+            ],
+            "correctAnswer": "I am a teacher."
+          }
+        ],
+        "content": {
+          "passageId": "english-a1-m074-reading-passage-01",
+          "passage": "What do you do? I am a student. Where do you work? I work in a shop. I study English. She is a doctor."
+        }
+      }
+    },
+    {
+      "sectionId": "english-a1-m074-writing",
+      "sectionKey": "writing",
+      "position": 6,
+      "title": "writing",
+      "exercise": {
+        "exerciseId": "english-a1-m074-writing-ex01",
+        "type": "dictation",
+        "items": [
+          {
+            "itemId": "english-a1-m074-writing-ex01-i01",
+            "position": 1,
+            "audio": "tts:en-GB:What do you do?",
+            "expectedAnswer": "What do you do?",
+            "evaluation": {
+              "type": "normalised_text"
+            }
+          },
+          {
+            "itemId": "english-a1-m074-writing-ex01-i02",
+            "position": 2,
+            "audio": "tts:en-GB:I am a student.",
+            "expectedAnswer": "I am a student.",
+            "evaluation": {
+              "type": "normalised_text"
+            }
+          },
+          {
+            "itemId": "english-a1-m074-writing-ex01-i03",
+            "position": 3,
+            "audio": "tts:en-GB:Where do you work?",
+            "expectedAnswer": "Where do you work?",
+            "evaluation": {
+              "type": "normalised_text"
+            }
+          },
+          {
+            "itemId": "english-a1-m074-writing-ex01-i04",
+            "position": 4,
+            "audio": "tts:en-GB:I work in a shop.",
+            "expectedAnswer": "I work in a shop.",
+            "evaluation": {
+              "type": "normalised_text"
+            }
+          },
+          {
+            "itemId": "english-a1-m074-writing-ex01-i05",
+            "position": 5,
+            "audio": "tts:en-GB:I study English.",
+            "expectedAnswer": "I study English.",
+            "evaluation": {
+              "type": "normalised_text"
+            }
+          },
+          {
+            "itemId": "english-a1-m074-writing-ex01-i06",
+            "position": 6,
+            "audio": "tts:en-GB:She is a doctor.",
+            "expectedAnswer": "She is a doctor.",
+            "evaluation": {
+              "type": "normalised_text"
+            }
+          },
+          {
+            "itemId": "english-a1-m074-writing-ex01-i07",
+            "position": 7,
+            "audio": "tts:en-GB:He works in an office.",
+            "expectedAnswer": "He works in an office.",
+            "evaluation": {
+              "type": "normalised_text"
+            }
+          },
+          {
+            "itemId": "english-a1-m074-writing-ex01-i08",
+            "position": 8,
+            "audio": "tts:en-GB:Do you work here?",
+            "expectedAnswer": "Do you work here?",
+            "evaluation": {
+              "type": "normalised_text"
+            }
+          },
+          {
+            "itemId": "english-a1-m074-writing-ex01-i09",
+            "position": 9,
+            "audio": "tts:en-GB:I work for a small company.",
+            "expectedAnswer": "I work for a small company.",
+            "evaluation": {
+              "type": "normalised_text"
+            }
+          },
+          {
+            "itemId": "english-a1-m074-writing-ex01-i10",
+            "position": 10,
+            "audio": "tts:en-GB:I am a teacher.",
+            "expectedAnswer": "I am a teacher.",
+            "evaluation": {
+              "type": "normalised_text"
+            }
+          }
+        ],
+        "writingTask": "Escribe 5–6 frases sobre what do you do?. Utiliza al menos cinco palabras de la misión y la estructura questions with do and does.",
+        "modelText": "What do you do? I am a student. Where do you work? I work in a shop. I study English. She is a doctor."
+      }
+    },
+    {
+      "sectionId": "english-a1-m074-speaking",
+      "sectionKey": "speaking",
+      "position": 7,
+      "title": "speaking",
+      "exercise": {
+        "exerciseId": "english-a1-m074-speaking-ex01",
+        "type": "speaking_prompts",
+        "items": [
+          {
+            "itemId": "english-a1-m074-speaking-ex01-i01",
+            "position": 1,
+            "prompt": "Say a sentence about this situation: ¿A qué te dedicas?",
+            "modelAnswer": "What do you do?",
+            "evaluation": {
+              "type": "transcription_feedback",
+              "transcriptionSeparateFromPronunciation": true
+            }
+          },
+          {
+            "itemId": "english-a1-m074-speaking-ex01-i02",
+            "position": 2,
+            "prompt": "Say a sentence about this situation: Soy estudiante.",
+            "modelAnswer": "I am a student.",
+            "evaluation": {
+              "type": "transcription_feedback",
+              "transcriptionSeparateFromPronunciation": true
+            }
+          },
+          {
+            "itemId": "english-a1-m074-speaking-ex01-i03",
+            "position": 3,
+            "prompt": "Say a sentence about this situation: ¿Dónde trabajas?",
+            "modelAnswer": "Where do you work?",
+            "evaluation": {
+              "type": "transcription_feedback",
+              "transcriptionSeparateFromPronunciation": true
+            }
+          },
+          {
+            "itemId": "english-a1-m074-speaking-ex01-i04",
+            "position": 4,
+            "prompt": "Say a sentence about this situation: Trabajo en una tienda.",
+            "modelAnswer": "I work in a shop.",
+            "evaluation": {
+              "type": "transcription_feedback",
+              "transcriptionSeparateFromPronunciation": true
+            }
+          },
+          {
+            "itemId": "english-a1-m074-speaking-ex01-i05",
+            "position": 5,
+            "prompt": "Say a sentence about this situation: Estudio inglés.",
+            "modelAnswer": "I study English.",
+            "evaluation": {
+              "type": "transcription_feedback",
+              "transcriptionSeparateFromPronunciation": true
+            }
+          },
+          {
+            "itemId": "english-a1-m074-speaking-ex01-i06",
+            "position": 6,
+            "prompt": "Say a sentence about this situation: Ella es médica.",
+            "modelAnswer": "She is a doctor.",
+            "evaluation": {
+              "type": "transcription_feedback",
+              "transcriptionSeparateFromPronunciation": true
+            }
+          },
+          {
+            "itemId": "english-a1-m074-speaking-ex01-i07",
+            "position": 7,
+            "prompt": "Say a sentence about this situation: Él trabaja en una oficina.",
+            "modelAnswer": "He works in an office.",
+            "evaluation": {
+              "type": "transcription_feedback",
+              "transcriptionSeparateFromPronunciation": true
+            }
+          },
+          {
+            "itemId": "english-a1-m074-speaking-ex01-i08",
+            "position": 8,
+            "prompt": "Say a sentence about this situation: ¿Trabajas aquí?",
+            "modelAnswer": "Do you work here?",
+            "evaluation": {
+              "type": "transcription_feedback",
+              "transcriptionSeparateFromPronunciation": true
+            }
+          },
+          {
+            "itemId": "english-a1-m074-speaking-ex01-i09",
+            "position": 9,
+            "prompt": "Say a sentence about this situation: Trabajo para una empresa pequeña.",
+            "modelAnswer": "I work for a small company.",
+            "evaluation": {
+              "type": "transcription_feedback",
+              "transcriptionSeparateFromPronunciation": true
+            }
+          },
+          {
+            "itemId": "english-a1-m074-speaking-ex01-i10",
+            "position": 10,
+            "prompt": "Say a sentence about this situation: Soy profesor/a.",
+            "modelAnswer": "I am a teacher.",
+            "evaluation": {
+              "type": "transcription_feedback",
+              "transcriptionSeparateFromPronunciation": true
+            }
+          }
+        ]
+      }
+    },
+    {
+      "sectionId": "english-a1-m074-listening",
+      "sectionKey": "listening",
+      "position": 8,
+      "title": "listening",
+      "exercise": {
+        "exerciseId": "english-a1-m074-listening-ex01",
+        "type": "listening_gap_fill",
+        "items": [
+          {
+            "itemId": "english-a1-m074-listening-ex01-i01",
+            "position": 1,
+            "gapToken": "[[gap-01]]",
+            "expectedWordId": "english-a1-m074-listening-word-01"
+          },
+          {
+            "itemId": "english-a1-m074-listening-ex01-i02",
+            "position": 2,
+            "gapToken": "[[gap-02]]",
+            "expectedWordId": "english-a1-m074-listening-word-02"
+          },
+          {
+            "itemId": "english-a1-m074-listening-ex01-i03",
+            "position": 3,
+            "gapToken": "[[gap-03]]",
+            "expectedWordId": "english-a1-m074-listening-word-03"
+          },
+          {
+            "itemId": "english-a1-m074-listening-ex01-i04",
+            "position": 4,
+            "gapToken": "[[gap-04]]",
+            "expectedWordId": "english-a1-m074-listening-word-04"
+          },
+          {
+            "itemId": "english-a1-m074-listening-ex01-i05",
+            "position": 5,
+            "gapToken": "[[gap-05]]",
+            "expectedWordId": "english-a1-m074-listening-word-05"
+          },
+          {
+            "itemId": "english-a1-m074-listening-ex01-i06",
+            "position": 6,
+            "gapToken": "[[gap-06]]",
+            "expectedWordId": "english-a1-m074-listening-word-06"
+          },
+          {
+            "itemId": "english-a1-m074-listening-ex01-i07",
+            "position": 7,
+            "gapToken": "[[gap-07]]",
+            "expectedWordId": "english-a1-m074-listening-word-07"
+          },
+          {
+            "itemId": "english-a1-m074-listening-ex01-i08",
+            "position": 8,
+            "gapToken": "[[gap-08]]",
+            "expectedWordId": "english-a1-m074-listening-word-08"
+          },
+          {
+            "itemId": "english-a1-m074-listening-ex01-i09",
+            "position": 9,
+            "gapToken": "[[gap-09]]",
+            "expectedWordId": "english-a1-m074-listening-word-09"
+          },
+          {
+            "itemId": "english-a1-m074-listening-ex01-i10",
+            "position": 10,
+            "gapToken": "[[gap-10]]",
+            "expectedWordId": "english-a1-m074-listening-word-10"
+          }
+        ],
+        "content": {
+          "audio": "tts:en-GB:The key words for What Do You Do? are: job, work, study, Where do you work?, What do you do?, I am a..., student, company, at school, in an office. Listen and repeat each word carefully.",
+          "audioLocale": "en-GB",
+          "transcriptTemplate": "The key words for What Do You Do? are: [[gap-01]], [[gap-02]], [[gap-03]], [[gap-04]], [[gap-05]], [[gap-06]], [[gap-07]], [[gap-08]], [[gap-09]], [[gap-10]]. Listen and repeat each word carefully.",
+          "wordBank": [
+            {
+              "wordId": "english-a1-m074-listening-word-01",
+              "word": "job"
+            },
+            {
+              "wordId": "english-a1-m074-listening-word-02",
+              "word": "work"
+            },
+            {
+              "wordId": "english-a1-m074-listening-word-03",
+              "word": "study"
+            },
+            {
+              "wordId": "english-a1-m074-listening-word-04",
+              "word": "Where do you work?"
+            },
+            {
+              "wordId": "english-a1-m074-listening-word-05",
+              "word": "What do you do?"
+            },
+            {
+              "wordId": "english-a1-m074-listening-word-06",
+              "word": "I am a..."
+            },
+            {
+              "wordId": "english-a1-m074-listening-word-07",
+              "word": "student"
+            },
+            {
+              "wordId": "english-a1-m074-listening-word-08",
+              "word": "company"
+            },
+            {
+              "wordId": "english-a1-m074-listening-word-09",
+              "word": "at school"
+            },
+            {
+              "wordId": "english-a1-m074-listening-word-10",
+              "word": "in an office"
+            }
+          ],
+          "interaction": "select_place_move_replace"
+        }
+      }
+    }
+  ]
+}

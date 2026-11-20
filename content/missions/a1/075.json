@@ -1,0 +1,1205 @@
+{
+  "schemaVersion": "1.2.0",
+  "contentVersion": 1,
+  "course": {
+    "courseId": "english-a1",
+    "level": "A1",
+    "language": "en-GB"
+  },
+  "unit": {
+    "unitId": "english-a1-unit-08",
+    "courseId": "english-a1",
+    "position": 8,
+    "title": "Study, work and communication"
+  },
+  "mission": {
+    "missionId": "english-a1-m075",
+    "unitId": "english-a1-unit-08",
+    "position": 75,
+    "title": "A Working Day"
+  },
+  "sections": [
+    {
+      "sectionId": "english-a1-m075-explore",
+      "sectionKey": "explore",
+      "position": 1,
+      "title": "explore",
+      "exercise": {
+        "exerciseId": "english-a1-m075-explore-ex01",
+        "type": "vocabulary_pairs",
+        "items": [
+          {
+            "itemId": "english-a1-m075-explore-ex01-i01",
+            "position": 1,
+            "english": "help",
+            "spanish": "ayudar",
+            "audio": "tts:en-GB:help"
+          },
+          {
+            "itemId": "english-a1-m075-explore-ex01-i02",
+            "position": 2,
+            "english": "teach",
+            "spanish": "enseñar",
+            "audio": "tts:en-GB:teach"
+          },
+          {
+            "itemId": "english-a1-m075-explore-ex01-i03",
+            "position": 3,
+            "english": "sell",
+            "spanish": "vender",
+            "audio": "tts:en-GB:sell"
+          },
+          {
+            "itemId": "english-a1-m075-explore-ex01-i04",
+            "position": 4,
+            "english": "drive",
+            "spanish": "conducir",
+            "audio": "tts:en-GB:drive"
+          },
+          {
+            "itemId": "english-a1-m075-explore-ex01-i05",
+            "position": 5,
+            "english": "make",
+            "spanish": "hacer",
+            "audio": "tts:en-GB:make"
+          },
+          {
+            "itemId": "english-a1-m075-explore-ex01-i06",
+            "position": 6,
+            "english": "serve",
+            "spanish": "servir",
+            "audio": "tts:en-GB:serve"
+          },
+          {
+            "itemId": "english-a1-m075-explore-ex01-i07",
+            "position": 7,
+            "english": "start",
+            "spanish": "empezar",
+            "audio": "tts:en-GB:start"
+          },
+          {
+            "itemId": "english-a1-m075-explore-ex01-i08",
+            "position": 8,
+            "english": "finish",
+            "spanish": "terminar",
+            "audio": "tts:en-GB:finish"
+          },
+          {
+            "itemId": "english-a1-m075-explore-ex01-i09",
+            "position": 9,
+            "english": "break",
+            "spanish": "descanso",
+            "audio": "tts:en-GB:break"
+          },
+          {
+            "itemId": "english-a1-m075-explore-ex01-i10",
+            "position": 10,
+            "english": "every day",
+            "spanish": "todos los días",
+            "audio": "tts:en-GB:every day"
+          }
+        ],
+        "theory": {
+          "title": "Vocabulary: A Working Day",
+          "explanation": "Explora diez palabras y expresiones sobre a working day. Escucha el modelo británico y relaciona cada palabra con su significado.",
+          "patterns": [
+            {
+              "label": "Useful language",
+              "pattern": "Short question + short answer",
+              "examples": [
+                "I start work at eight.",
+                "She helps customers.",
+                "He teaches English."
+              ]
+            }
+          ],
+          "tip": "Repite las expresiones y crea un ejemplo relacionado con tu vida."
+        }
+      }
+    },
+    {
+      "sectionId": "english-a1-m075-practice",
+      "sectionKey": "practice",
+      "position": 2,
+      "title": "practice",
+      "exercise": {
+        "exerciseId": "english-a1-m075-practice-ex01",
+        "type": "mixed_practice",
+        "items": [
+          {
+            "itemId": "english-a1-m075-practice-ex01-i01",
+            "position": 1,
+            "taskType": "translation_multiple_choice",
+            "prompt": "Traduce al español: “I start work at eight.”",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "Empiezo a trabajar a las ocho.",
+              "Él enseña inglés.",
+              "Hacemos sándwiches."
+            ],
+            "correctAnswer": "Empiezo a trabajar a las ocho.",
+            "sourceEnglish": "I start work at eight."
+          },
+          {
+            "itemId": "english-a1-m075-practice-ex01-i02",
+            "position": 2,
+            "taskType": "translation_multiple_choice",
+            "prompt": "Traduce al español: “She helps customers.”",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "Ella ayuda a los clientes.",
+              "Ellos venden ropa.",
+              "Sirvo comida en una cafetería."
+            ],
+            "correctAnswer": "Ella ayuda a los clientes.",
+            "sourceEnglish": "She helps customers."
+          },
+          {
+            "itemId": "english-a1-m075-practice-ex01-i03",
+            "position": 3,
+            "taskType": "translation_multiple_choice",
+            "prompt": "Traduce al español: “He teaches English.”",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "Él enseña inglés.",
+              "Mi padre conduce un autobús.",
+              "El trabajo termina a las cinco."
+            ],
+            "correctAnswer": "Él enseña inglés.",
+            "sourceEnglish": "He teaches English."
+          },
+          {
+            "itemId": "english-a1-m075-practice-ex01-i04",
+            "position": 4,
+            "taskType": "translation_multiple_choice",
+            "prompt": "Traduce al español: “They sell clothes.”",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "Ellos venden ropa.",
+              "Hacemos sándwiches.",
+              "Tengo un descanso al mediodía."
+            ],
+            "correctAnswer": "Ellos venden ropa.",
+            "sourceEnglish": "They sell clothes."
+          },
+          {
+            "itemId": "english-a1-m075-practice-ex01-i05",
+            "position": 5,
+            "taskType": "translation_multiple_choice",
+            "prompt": "Traduce al español: “My dad drives a bus.”",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "Mi padre conduce un autobús.",
+              "Sirvo comida en una cafetería.",
+              "Ella trabaja todos los días."
+            ],
+            "correctAnswer": "Mi padre conduce un autobús.",
+            "sourceEnglish": "My dad drives a bus."
+          },
+          {
+            "itemId": "english-a1-m075-practice-ex01-i06",
+            "position": 6,
+            "taskType": "translation_multiple_choice",
+            "prompt": "Traduce al español: “We make sandwiches.”",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "Hacemos sándwiches.",
+              "El trabajo termina a las cinco.",
+              "Empiezo a trabajar a las ocho."
+            ],
+            "correctAnswer": "Hacemos sándwiches.",
+            "sourceEnglish": "We make sandwiches."
+          },
+          {
+            "itemId": "english-a1-m075-practice-ex01-i07",
+            "position": 7,
+            "taskType": "translation_multiple_choice",
+            "prompt": "Traduce al español: “I serve food at a café.”",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "Sirvo comida en una cafetería.",
+              "Tengo un descanso al mediodía.",
+              "Ella ayuda a los clientes."
+            ],
+            "correctAnswer": "Sirvo comida en una cafetería.",
+            "sourceEnglish": "I serve food at a café."
+          },
+          {
+            "itemId": "english-a1-m075-practice-ex01-i08",
+            "position": 8,
+            "taskType": "translation_multiple_choice",
+            "prompt": "Traduce al español: “Work finishes at five.”",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "El trabajo termina a las cinco.",
+              "Ella trabaja todos los días.",
+              "Él enseña inglés."
+            ],
+            "correctAnswer": "El trabajo termina a las cinco.",
+            "sourceEnglish": "Work finishes at five."
+          },
+          {
+            "itemId": "english-a1-m075-practice-ex01-i09",
+            "position": 9,
+            "taskType": "translation_multiple_choice",
+            "prompt": "Traduce al español: “I have a break at noon.”",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "Tengo un descanso al mediodía.",
+              "Empiezo a trabajar a las ocho.",
+              "Ellos venden ropa."
+            ],
+            "correctAnswer": "Tengo un descanso al mediodía.",
+            "sourceEnglish": "I have a break at noon."
+          },
+          {
+            "itemId": "english-a1-m075-practice-ex01-i10",
+            "position": 10,
+            "taskType": "translation_multiple_choice",
+            "prompt": "Traduce al español: “She works every day.”",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "Ella trabaja todos los días.",
+              "Ella ayuda a los clientes.",
+              "Mi padre conduce un autobús."
+            ],
+            "correctAnswer": "Ella trabaja todos los días.",
+            "sourceEnglish": "She works every day."
+          },
+          {
+            "itemId": "english-a1-m075-practice-ex01-i11",
+            "position": 11,
+            "taskType": "listening_translation_multiple_choice",
+            "prompt": "Escucha el inglés y elige su significado.",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "Empiezo a trabajar a las ocho.",
+              "Ellos venden ropa.",
+              "Sirvo comida en una cafetería."
+            ],
+            "correctAnswer": "Empiezo a trabajar a las ocho.",
+            "sourceEnglish": "I start work at eight."
+          },
+          {
+            "itemId": "english-a1-m075-practice-ex01-i12",
+            "position": 12,
+            "taskType": "listening_translation_multiple_choice",
+            "prompt": "Escucha el inglés y elige su significado.",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "Ella ayuda a los clientes.",
+              "Mi padre conduce un autobús.",
+              "El trabajo termina a las cinco."
+            ],
+            "correctAnswer": "Ella ayuda a los clientes.",
+            "sourceEnglish": "She helps customers."
+          },
+          {
+            "itemId": "english-a1-m075-practice-ex01-i13",
+            "position": 13,
+            "taskType": "listening_translation_multiple_choice",
+            "prompt": "Escucha el inglés y elige su significado.",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "Él enseña inglés.",
+              "Hacemos sándwiches.",
+              "Tengo un descanso al mediodía."
+            ],
+            "correctAnswer": "Él enseña inglés.",
+            "sourceEnglish": "He teaches English."
+          },
+          {
+            "itemId": "english-a1-m075-practice-ex01-i14",
+            "position": 14,
+            "taskType": "listening_translation_multiple_choice",
+            "prompt": "Escucha el inglés y elige su significado.",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "Ellos venden ropa.",
+              "Sirvo comida en una cafetería.",
+              "Ella trabaja todos los días."
+            ],
+            "correctAnswer": "Ellos venden ropa.",
+            "sourceEnglish": "They sell clothes."
+          },
+          {
+            "itemId": "english-a1-m075-practice-ex01-i15",
+            "position": 15,
+            "taskType": "listening_translation_multiple_choice",
+            "prompt": "Escucha el inglés y elige su significado.",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "Mi padre conduce un autobús.",
+              "El trabajo termina a las cinco.",
+              "Empiezo a trabajar a las ocho."
+            ],
+            "correctAnswer": "Mi padre conduce un autobús.",
+            "sourceEnglish": "My dad drives a bus."
+          },
+          {
+            "itemId": "english-a1-m075-practice-ex01-i16",
+            "position": 16,
+            "taskType": "listening_translation_multiple_choice",
+            "prompt": "Escucha el inglés y elige su significado.",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "Hacemos sándwiches.",
+              "Tengo un descanso al mediodía.",
+              "Ella ayuda a los clientes."
+            ],
+            "correctAnswer": "Hacemos sándwiches.",
+            "sourceEnglish": "We make sandwiches."
+          },
+          {
+            "itemId": "english-a1-m075-practice-ex01-i17",
+            "position": 17,
+            "taskType": "listening_translation_multiple_choice",
+            "prompt": "Escucha el inglés y elige su significado.",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "Sirvo comida en una cafetería.",
+              "Ella trabaja todos los días.",
+              "Él enseña inglés."
+            ],
+            "correctAnswer": "Sirvo comida en una cafetería.",
+            "sourceEnglish": "I serve food at a café."
+          },
+          {
+            "itemId": "english-a1-m075-practice-ex01-i18",
+            "position": 18,
+            "taskType": "listening_translation_multiple_choice",
+            "prompt": "Escucha el inglés y elige su significado.",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "El trabajo termina a las cinco.",
+              "Empiezo a trabajar a las ocho.",
+              "Ellos venden ropa."
+            ],
+            "correctAnswer": "El trabajo termina a las cinco.",
+            "sourceEnglish": "Work finishes at five."
+          },
+          {
+            "itemId": "english-a1-m075-practice-ex01-i19",
+            "position": 19,
+            "taskType": "listening_translation_multiple_choice",
+            "prompt": "Escucha el inglés y elige su significado.",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "Tengo un descanso al mediodía.",
+              "Ella ayuda a los clientes.",
+              "Mi padre conduce un autobús."
+            ],
+            "correctAnswer": "Tengo un descanso al mediodía.",
+            "sourceEnglish": "I have a break at noon."
+          },
+          {
+            "itemId": "english-a1-m075-practice-ex01-i20",
+            "position": 20,
+            "taskType": "listening_translation_multiple_choice",
+            "prompt": "Escucha el inglés y elige su significado.",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "Ella trabaja todos los días.",
+              "Él enseña inglés.",
+              "Hacemos sándwiches."
+            ],
+            "correctAnswer": "Ella trabaja todos los días.",
+            "sourceEnglish": "She works every day."
+          }
+        ]
+      }
+    },
+    {
+      "sectionId": "english-a1-m075-grammar",
+      "sectionKey": "grammar",
+      "position": 3,
+      "title": "grammar",
+      "exercise": {
+        "exerciseId": "english-a1-m075-grammar-ex01",
+        "type": "grammar",
+        "items": [
+          {
+            "itemId": "english-a1-m075-grammar-ex01-i01",
+            "position": 1,
+            "prompt": "I ___ get up at seven.",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "usually",
+              "usual",
+              "use"
+            ],
+            "correctAnswer": "usually"
+          },
+          {
+            "itemId": "english-a1-m075-grammar-ex01-i02",
+            "position": 2,
+            "prompt": "She is ___ busy.",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "always",
+              "every",
+              "oftenly"
+            ],
+            "correctAnswer": "always"
+          },
+          {
+            "itemId": "english-a1-m075-grammar-ex01-i03",
+            "position": 3,
+            "prompt": "We ___ have lunch at school.",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "sometimes",
+              "sometime",
+              "some"
+            ],
+            "correctAnswer": "sometimes"
+          },
+          {
+            "itemId": "english-a1-m075-grammar-ex01-i04",
+            "position": 4,
+            "prompt": "He ___ works on Sundays.",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "never",
+              "not",
+              "no"
+            ],
+            "correctAnswer": "never"
+          },
+          {
+            "itemId": "english-a1-m075-grammar-ex01-i05",
+            "position": 5,
+            "prompt": "They ___ go home at five.",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "often",
+              "oftens",
+              "oftenly"
+            ],
+            "correctAnswer": "often"
+          },
+          {
+            "itemId": "english-a1-m075-grammar-ex01-i06",
+            "position": 6,
+            "prompt": "I am ___ late.",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "never",
+              "not",
+              "no"
+            ],
+            "correctAnswer": "never"
+          },
+          {
+            "itemId": "english-a1-m075-grammar-ex01-i07",
+            "position": 7,
+            "prompt": "My teacher ___ gives us homework.",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "sometimes",
+              "sometime",
+              "some"
+            ],
+            "correctAnswer": "sometimes"
+          },
+          {
+            "itemId": "english-a1-m075-grammar-ex01-i08",
+            "position": 8,
+            "prompt": "She ___ drinks tea in the morning.",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "usually",
+              "usual",
+              "use"
+            ],
+            "correctAnswer": "usually"
+          },
+          {
+            "itemId": "english-a1-m075-grammar-ex01-i09",
+            "position": 9,
+            "prompt": "We ___ play football after class.",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "often",
+              "oftens",
+              "oftenly"
+            ],
+            "correctAnswer": "often"
+          },
+          {
+            "itemId": "english-a1-m075-grammar-ex01-i10",
+            "position": 10,
+            "prompt": "He is ___ at work by eight.",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "always",
+              "every",
+              "all"
+            ],
+            "correctAnswer": "always"
+          }
+        ],
+        "theory": {
+          "title": "Adverbs of frequency",
+          "explanation": "Los adverbios always, usually, often, sometimes y never indican con qué frecuencia hacemos algo. Normalmente van antes del verbo principal y después de be.",
+          "patterns": [
+            {
+              "label": "Model",
+              "pattern": "I usually start at nine",
+              "examples": [
+                "I usually start at nine",
+                "She is always busy."
+              ]
+            }
+          ],
+          "tip": "Lee los ejemplos y comprueba cómo cambia la estructura."
+        }
+      }
+    },
+    {
+      "sectionId": "english-a1-m075-pronunciation",
+      "sectionKey": "pronunciation",
+      "position": 4,
+      "title": "pronunciation",
+      "exercise": {
+        "exerciseId": "english-a1-m075-pronunciation-ex01",
+        "type": "pronunciation_cards",
+        "items": [
+          {
+            "itemId": "english-a1-m075-pronunciation-ex01-i01",
+            "position": 1,
+            "word": "help",
+            "translation": "ayudar",
+            "pronunciationGuide": "Listen to the en-GB model and keep the final consonant clear.",
+            "audio": "tts:en-GB:help"
+          },
+          {
+            "itemId": "english-a1-m075-pronunciation-ex01-i02",
+            "position": 2,
+            "word": "teach",
+            "translation": "enseñar",
+            "pronunciationGuide": "Listen to the en-GB model and keep the final consonant clear.",
+            "audio": "tts:en-GB:teach"
+          },
+          {
+            "itemId": "english-a1-m075-pronunciation-ex01-i03",
+            "position": 3,
+            "word": "sell",
+            "translation": "vender",
+            "pronunciationGuide": "Listen to the en-GB model and keep the final consonant clear.",
+            "audio": "tts:en-GB:sell"
+          },
+          {
+            "itemId": "english-a1-m075-pronunciation-ex01-i04",
+            "position": 4,
+            "word": "drive",
+            "translation": "conducir",
+            "pronunciationGuide": "Listen to the en-GB model and keep the final consonant clear.",
+            "audio": "tts:en-GB:drive"
+          },
+          {
+            "itemId": "english-a1-m075-pronunciation-ex01-i05",
+            "position": 5,
+            "word": "make",
+            "translation": "hacer",
+            "pronunciationGuide": "Listen to the en-GB model and keep the final consonant clear.",
+            "audio": "tts:en-GB:make"
+          },
+          {
+            "itemId": "english-a1-m075-pronunciation-ex01-i06",
+            "position": 6,
+            "word": "serve",
+            "translation": "servir",
+            "pronunciationGuide": "Listen to the en-GB model and keep the final consonant clear.",
+            "audio": "tts:en-GB:serve"
+          },
+          {
+            "itemId": "english-a1-m075-pronunciation-ex01-i07",
+            "position": 7,
+            "word": "start",
+            "translation": "empezar",
+            "pronunciationGuide": "Listen to the en-GB model and keep the final consonant clear.",
+            "audio": "tts:en-GB:start"
+          },
+          {
+            "itemId": "english-a1-m075-pronunciation-ex01-i08",
+            "position": 8,
+            "word": "finish",
+            "translation": "terminar",
+            "pronunciationGuide": "Listen to the en-GB model and keep the final consonant clear.",
+            "audio": "tts:en-GB:finish"
+          },
+          {
+            "itemId": "english-a1-m075-pronunciation-ex01-i09",
+            "position": 9,
+            "word": "break",
+            "translation": "descanso",
+            "pronunciationGuide": "Listen to the en-GB model and keep the final consonant clear.",
+            "audio": "tts:en-GB:break"
+          },
+          {
+            "itemId": "english-a1-m075-pronunciation-ex01-i10",
+            "position": 10,
+            "word": "every day",
+            "translation": "todos los días",
+            "pronunciationGuide": "Listen to the phrase as one unit and notice its main stress.",
+            "audio": "tts:en-GB:every day"
+          }
+        ],
+        "focus": "Practica el ritmo y el acento de las palabras clave de A Working Day."
+      }
+    },
+    {
+      "sectionId": "english-a1-m075-reading",
+      "sectionKey": "reading",
+      "position": 5,
+      "title": "reading",
+      "exercise": {
+        "exerciseId": "english-a1-m075-reading-ex01",
+        "type": "reading_comprehension",
+        "items": [
+          {
+            "itemId": "english-a1-m075-reading-ex01-i01",
+            "position": 1,
+            "prompt": "Which English sentence means “Empiezo a trabajar a las ocho.”?",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "I start work at eight.",
+              "She helps customers.",
+              "He teaches English."
+            ],
+            "correctAnswer": "I start work at eight."
+          },
+          {
+            "itemId": "english-a1-m075-reading-ex01-i02",
+            "position": 2,
+            "prompt": "Which English sentence means “Ella ayuda a los clientes.”?",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "She helps customers.",
+              "He teaches English.",
+              "They sell clothes."
+            ],
+            "correctAnswer": "She helps customers."
+          },
+          {
+            "itemId": "english-a1-m075-reading-ex01-i03",
+            "position": 3,
+            "prompt": "Which English sentence means “Él enseña inglés.”?",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "He teaches English.",
+              "They sell clothes.",
+              "My dad drives a bus."
+            ],
+            "correctAnswer": "He teaches English."
+          },
+          {
+            "itemId": "english-a1-m075-reading-ex01-i04",
+            "position": 4,
+            "prompt": "Which English sentence means “Ellos venden ropa.”?",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "They sell clothes.",
+              "My dad drives a bus.",
+              "We make sandwiches."
+            ],
+            "correctAnswer": "They sell clothes."
+          },
+          {
+            "itemId": "english-a1-m075-reading-ex01-i05",
+            "position": 5,
+            "prompt": "Which English sentence means “Mi padre conduce un autobús.”?",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "My dad drives a bus.",
+              "We make sandwiches.",
+              "I serve food at a café."
+            ],
+            "correctAnswer": "My dad drives a bus."
+          },
+          {
+            "itemId": "english-a1-m075-reading-ex01-i06",
+            "position": 6,
+            "prompt": "Which English sentence means “Hacemos sándwiches.”?",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "We make sandwiches.",
+              "I serve food at a café.",
+              "Work finishes at five."
+            ],
+            "correctAnswer": "We make sandwiches."
+          },
+          {
+            "itemId": "english-a1-m075-reading-ex01-i07",
+            "position": 7,
+            "prompt": "Which English sentence means “Sirvo comida en una cafetería.”?",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "I serve food at a café.",
+              "Work finishes at five.",
+              "I have a break at noon."
+            ],
+            "correctAnswer": "I serve food at a café."
+          },
+          {
+            "itemId": "english-a1-m075-reading-ex01-i08",
+            "position": 8,
+            "prompt": "Which English sentence means “El trabajo termina a las cinco.”?",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "Work finishes at five.",
+              "I have a break at noon.",
+              "She works every day."
+            ],
+            "correctAnswer": "Work finishes at five."
+          },
+          {
+            "itemId": "english-a1-m075-reading-ex01-i09",
+            "position": 9,
+            "prompt": "Which English sentence means “Tengo un descanso al mediodía.”?",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "I have a break at noon.",
+              "She works every day.",
+              "I start work at eight."
+            ],
+            "correctAnswer": "I have a break at noon."
+          },
+          {
+            "itemId": "english-a1-m075-reading-ex01-i10",
+            "position": 10,
+            "prompt": "Which English sentence means “Ella trabaja todos los días.”?",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "She works every day.",
+              "I start work at eight.",
+              "She helps customers."
+            ],
+            "correctAnswer": "She works every day."
+          }
+        ],
+        "content": {
+          "passageId": "english-a1-m075-reading-passage-01",
+          "passage": "I start work at eight. She helps customers. He teaches English. They sell clothes. My dad drives a bus. We make sandwiches."
+        }
+      }
+    },
+    {
+      "sectionId": "english-a1-m075-writing",
+      "sectionKey": "writing",
+      "position": 6,
+      "title": "writing",
+      "exercise": {
+        "exerciseId": "english-a1-m075-writing-ex01",
+        "type": "dictation",
+        "items": [
+          {
+            "itemId": "english-a1-m075-writing-ex01-i01",
+            "position": 1,
+            "audio": "tts:en-GB:I start work at eight.",
+            "expectedAnswer": "I start work at eight.",
+            "evaluation": {
+              "type": "normalised_text"
+            }
+          },
+          {
+            "itemId": "english-a1-m075-writing-ex01-i02",
+            "position": 2,
+            "audio": "tts:en-GB:She helps customers.",
+            "expectedAnswer": "She helps customers.",
+            "evaluation": {
+              "type": "normalised_text"
+            }
+          },
+          {
+            "itemId": "english-a1-m075-writing-ex01-i03",
+            "position": 3,
+            "audio": "tts:en-GB:He teaches English.",
+            "expectedAnswer": "He teaches English.",
+            "evaluation": {
+              "type": "normalised_text"
+            }
+          },
+          {
+            "itemId": "english-a1-m075-writing-ex01-i04",
+            "position": 4,
+            "audio": "tts:en-GB:They sell clothes.",
+            "expectedAnswer": "They sell clothes.",
+            "evaluation": {
+              "type": "normalised_text"
+            }
+          },
+          {
+            "itemId": "english-a1-m075-writing-ex01-i05",
+            "position": 5,
+            "audio": "tts:en-GB:My dad drives a bus.",
+            "expectedAnswer": "My dad drives a bus.",
+            "evaluation": {
+              "type": "normalised_text"
+            }
+          },
+          {
+            "itemId": "english-a1-m075-writing-ex01-i06",
+            "position": 6,
+            "audio": "tts:en-GB:We make sandwiches.",
+            "expectedAnswer": "We make sandwiches.",
+            "evaluation": {
+              "type": "normalised_text"
+            }
+          },
+          {
+            "itemId": "english-a1-m075-writing-ex01-i07",
+            "position": 7,
+            "audio": "tts:en-GB:I serve food at a café.",
+            "expectedAnswer": "I serve food at a café.",
+            "evaluation": {
+              "type": "normalised_text"
+            }
+          },
+          {
+            "itemId": "english-a1-m075-writing-ex01-i08",
+            "position": 8,
+            "audio": "tts:en-GB:Work finishes at five.",
+            "expectedAnswer": "Work finishes at five.",
+            "evaluation": {
+              "type": "normalised_text"
+            }
+          },
+          {
+            "itemId": "english-a1-m075-writing-ex01-i09",
+            "position": 9,
+            "audio": "tts:en-GB:I have a break at noon.",
+            "expectedAnswer": "I have a break at noon.",
+            "evaluation": {
+              "type": "normalised_text"
+            }
+          },
+          {
+            "itemId": "english-a1-m075-writing-ex01-i10",
+            "position": 10,
+            "audio": "tts:en-GB:She works every day.",
+            "expectedAnswer": "She works every day.",
+            "evaluation": {
+              "type": "normalised_text"
+            }
+          }
+        ],
+        "writingTask": "Escribe 5–6 frases sobre a working day. Utiliza al menos cinco palabras de la misión y la estructura adverbs of frequency.",
+        "modelText": "I start work at eight. She helps customers. He teaches English. They sell clothes. My dad drives a bus. We make sandwiches."
+      }
+    },
+    {
+      "sectionId": "english-a1-m075-speaking",
+      "sectionKey": "speaking",
+      "position": 7,
+      "title": "speaking",
+      "exercise": {
+        "exerciseId": "english-a1-m075-speaking-ex01",
+        "type": "speaking_prompts",
+        "items": [
+          {
+            "itemId": "english-a1-m075-speaking-ex01-i01",
+            "position": 1,
+            "prompt": "Say a sentence about this situation: Empiezo a trabajar a las ocho.",
+            "modelAnswer": "I start work at eight.",
+            "evaluation": {
+              "type": "transcription_feedback",
+              "transcriptionSeparateFromPronunciation": true
+            }
+          },
+          {
+            "itemId": "english-a1-m075-speaking-ex01-i02",
+            "position": 2,
+            "prompt": "Say a sentence about this situation: Ella ayuda a los clientes.",
+            "modelAnswer": "She helps customers.",
+            "evaluation": {
+              "type": "transcription_feedback",
+              "transcriptionSeparateFromPronunciation": true
+            }
+          },
+          {
+            "itemId": "english-a1-m075-speaking-ex01-i03",
+            "position": 3,
+            "prompt": "Say a sentence about this situation: Él enseña inglés.",
+            "modelAnswer": "He teaches English.",
+            "evaluation": {
+              "type": "transcription_feedback",
+              "transcriptionSeparateFromPronunciation": true
+            }
+          },
+          {
+            "itemId": "english-a1-m075-speaking-ex01-i04",
+            "position": 4,
+            "prompt": "Say a sentence about this situation: Ellos venden ropa.",
+            "modelAnswer": "They sell clothes.",
+            "evaluation": {
+              "type": "transcription_feedback",
+              "transcriptionSeparateFromPronunciation": true
+            }
+          },
+          {
+            "itemId": "english-a1-m075-speaking-ex01-i05",
+            "position": 5,
+            "prompt": "Say a sentence about this situation: Mi padre conduce un autobús.",
+            "modelAnswer": "My dad drives a bus.",
+            "evaluation": {
+              "type": "transcription_feedback",
+              "transcriptionSeparateFromPronunciation": true
+            }
+          },
+          {
+            "itemId": "english-a1-m075-speaking-ex01-i06",
+            "position": 6,
+            "prompt": "Say a sentence about this situation: Hacemos sándwiches.",
+            "modelAnswer": "We make sandwiches.",
+            "evaluation": {
+              "type": "transcription_feedback",
+              "transcriptionSeparateFromPronunciation": true
+            }
+          },
+          {
+            "itemId": "english-a1-m075-speaking-ex01-i07",
+            "position": 7,
+            "prompt": "Say a sentence about this situation: Sirvo comida en una cafetería.",
+            "modelAnswer": "I serve food at a café.",
+            "evaluation": {
+              "type": "transcription_feedback",
+              "transcriptionSeparateFromPronunciation": true
+            }
+          },
+          {
+            "itemId": "english-a1-m075-speaking-ex01-i08",
+            "position": 8,
+            "prompt": "Say a sentence about this situation: El trabajo termina a las cinco.",
+            "modelAnswer": "Work finishes at five.",
+            "evaluation": {
+              "type": "transcription_feedback",
+              "transcriptionSeparateFromPronunciation": true
+            }
+          },
+          {
+            "itemId": "english-a1-m075-speaking-ex01-i09",
+            "position": 9,
+            "prompt": "Say a sentence about this situation: Tengo un descanso al mediodía.",
+            "modelAnswer": "I have a break at noon.",
+            "evaluation": {
+              "type": "transcription_feedback",
+              "transcriptionSeparateFromPronunciation": true
+            }
+          },
+          {
+            "itemId": "english-a1-m075-speaking-ex01-i10",
+            "position": 10,
+            "prompt": "Say a sentence about this situation: Ella trabaja todos los días.",
+            "modelAnswer": "She works every day.",
+            "evaluation": {
+              "type": "transcription_feedback",
+              "transcriptionSeparateFromPronunciation": true
+            }
+          }
+        ]
+      }
+    },
+    {
+      "sectionId": "english-a1-m075-listening",
+      "sectionKey": "listening",
+      "position": 8,
+      "title": "listening",
+      "exercise": {
+        "exerciseId": "english-a1-m075-listening-ex01",
+        "type": "listening_gap_fill",
+        "items": [
+          {
+            "itemId": "english-a1-m075-listening-ex01-i01",
+            "position": 1,
+            "gapToken": "[[gap-01]]",
+            "expectedWordId": "english-a1-m075-listening-word-01"
+          },
+          {
+            "itemId": "english-a1-m075-listening-ex01-i02",
+            "position": 2,
+            "gapToken": "[[gap-02]]",
+            "expectedWordId": "english-a1-m075-listening-word-02"
+          },
+          {
+            "itemId": "english-a1-m075-listening-ex01-i03",
+            "position": 3,
+            "gapToken": "[[gap-03]]",
+            "expectedWordId": "english-a1-m075-listening-word-03"
+          },
+          {
+            "itemId": "english-a1-m075-listening-ex01-i04",
+            "position": 4,
+            "gapToken": "[[gap-04]]",
+            "expectedWordId": "english-a1-m075-listening-word-04"
+          },
+          {
+            "itemId": "english-a1-m075-listening-ex01-i05",
+            "position": 5,
+            "gapToken": "[[gap-05]]",
+            "expectedWordId": "english-a1-m075-listening-word-05"
+          },
+          {
+            "itemId": "english-a1-m075-listening-ex01-i06",
+            "position": 6,
+            "gapToken": "[[gap-06]]",
+            "expectedWordId": "english-a1-m075-listening-word-06"
+          },
+          {
+            "itemId": "english-a1-m075-listening-ex01-i07",
+            "position": 7,
+            "gapToken": "[[gap-07]]",
+            "expectedWordId": "english-a1-m075-listening-word-07"
+          },
+          {
+            "itemId": "english-a1-m075-listening-ex01-i08",
+            "position": 8,
+            "gapToken": "[[gap-08]]",
+            "expectedWordId": "english-a1-m075-listening-word-08"
+          },
+          {
+            "itemId": "english-a1-m075-listening-ex01-i09",
+            "position": 9,
+            "gapToken": "[[gap-09]]",
+            "expectedWordId": "english-a1-m075-listening-word-09"
+          },
+          {
+            "itemId": "english-a1-m075-listening-ex01-i10",
+            "position": 10,
+            "gapToken": "[[gap-10]]",
+            "expectedWordId": "english-a1-m075-listening-word-10"
+          }
+        ],
+        "content": {
+          "audio": "tts:en-GB:The key words for A Working Day are: help, teach, sell, drive, make, serve, start, finish, break, every day. Listen and repeat each word carefully.",
+          "audioLocale": "en-GB",
+          "transcriptTemplate": "The key words for A Working Day are: [[gap-01]], [[gap-02]], [[gap-03]], [[gap-04]], [[gap-05]], [[gap-06]], [[gap-07]], [[gap-08]], [[gap-09]], [[gap-10]]. Listen and repeat each word carefully.",
+          "wordBank": [
+            {
+              "wordId": "english-a1-m075-listening-word-01",
+              "word": "help"
+            },
+            {
+              "wordId": "english-a1-m075-listening-word-02",
+              "word": "teach"
+            },
+            {
+              "wordId": "english-a1-m075-listening-word-03",
+              "word": "sell"
+            },
+            {
+              "wordId": "english-a1-m075-listening-word-04",
+              "word": "drive"
+            },
+            {
+              "wordId": "english-a1-m075-listening-word-05",
+              "word": "make"
+            },
+            {
+              "wordId": "english-a1-m075-listening-word-06",
+              "word": "serve"
+            },
+            {
+              "wordId": "english-a1-m075-listening-word-07",
+              "word": "start"
+            },
+            {
+              "wordId": "english-a1-m075-listening-word-08",
+              "word": "finish"
+            },
+            {
+              "wordId": "english-a1-m075-listening-word-09",
+              "word": "break"
+            },
+            {
+              "wordId": "english-a1-m075-listening-word-10",
+              "word": "every day"
+            }
+          ],
+          "interaction": "select_place_move_replace"
+        }
+      }
+    }
+  ]
+}

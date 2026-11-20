@@ -1,0 +1,1204 @@
+{
+  "schemaVersion": "1.2.0",
+  "contentVersion": 1,
+  "course": {
+    "courseId": "english-a1",
+    "level": "A1",
+    "language": "en-GB"
+  },
+  "unit": {
+    "unitId": "english-a1-unit-08",
+    "courseId": "english-a1",
+    "position": 8,
+    "title": "Study, work and communication"
+  },
+  "mission": {
+    "missionId": "english-a1-m078",
+    "unitId": "english-a1-unit-08",
+    "position": 78,
+    "title": "Phone Conversations"
+  },
+  "sections": [
+    {
+      "sectionId": "english-a1-m078-explore",
+      "sectionKey": "explore",
+      "position": 1,
+      "title": "explore",
+      "exercise": {
+        "exerciseId": "english-a1-m078-explore-ex01",
+        "type": "vocabulary_pairs",
+        "items": [
+          {
+            "itemId": "english-a1-m078-explore-ex01-i01",
+            "position": 1,
+            "english": "hello",
+            "spanish": "hola",
+            "audio": "tts:en-GB:hello"
+          },
+          {
+            "itemId": "english-a1-m078-explore-ex01-i02",
+            "position": 2,
+            "english": "speaking",
+            "spanish": "al habla",
+            "audio": "tts:en-GB:speaking"
+          },
+          {
+            "itemId": "english-a1-m078-explore-ex01-i03",
+            "position": 3,
+            "english": "call",
+            "spanish": "llamar / llamada",
+            "audio": "tts:en-GB:call"
+          },
+          {
+            "itemId": "english-a1-m078-explore-ex01-i04",
+            "position": 4,
+            "english": "number",
+            "spanish": "número",
+            "audio": "tts:en-GB:number"
+          },
+          {
+            "itemId": "english-a1-m078-explore-ex01-i05",
+            "position": 5,
+            "english": "later",
+            "spanish": "más tarde",
+            "audio": "tts:en-GB:later"
+          },
+          {
+            "itemId": "english-a1-m078-explore-ex01-i06",
+            "position": 6,
+            "english": "leave a message",
+            "spanish": "dejar un mensaje",
+            "audio": "tts:en-GB:leave a message"
+          },
+          {
+            "itemId": "english-a1-m078-explore-ex01-i07",
+            "position": 7,
+            "english": "phone",
+            "spanish": "teléfono",
+            "audio": "tts:en-GB:phone"
+          },
+          {
+            "itemId": "english-a1-m078-explore-ex01-i08",
+            "position": 8,
+            "english": "answer",
+            "spanish": "contestar",
+            "audio": "tts:en-GB:answer"
+          },
+          {
+            "itemId": "english-a1-m078-explore-ex01-i09",
+            "position": 9,
+            "english": "busy",
+            "spanish": "ocupado/a",
+            "audio": "tts:en-GB:busy"
+          },
+          {
+            "itemId": "english-a1-m078-explore-ex01-i10",
+            "position": 10,
+            "english": "speak to",
+            "spanish": "hablar con",
+            "audio": "tts:en-GB:speak to"
+          }
+        ],
+        "theory": {
+          "title": "Vocabulary: Phone Conversations",
+          "explanation": "Explora diez palabras y expresiones sobre phone conversations. Escucha el modelo británico y relaciona cada palabra con su significado.",
+          "patterns": [
+            {
+              "label": "Useful language",
+              "pattern": "Short question + short answer",
+              "examples": [
+                "Hello, this is Anna.",
+                "Who is speaking, please?",
+                "Can I speak to Tom?"
+              ]
+            }
+          ],
+          "tip": "Repite las expresiones y crea un ejemplo relacionado con tu vida."
+        }
+      }
+    },
+    {
+      "sectionId": "english-a1-m078-practice",
+      "sectionKey": "practice",
+      "position": 2,
+      "title": "practice",
+      "exercise": {
+        "exerciseId": "english-a1-m078-practice-ex01",
+        "type": "mixed_practice",
+        "items": [
+          {
+            "itemId": "english-a1-m078-practice-ex01-i01",
+            "position": 1,
+            "taskType": "translation_multiple_choice",
+            "prompt": "Traduce al español: “Hello, this is Anna.”",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "Hola, soy Anna.",
+              "¿Puedo hablar con Tom?",
+              "¿Cuál es tu número de teléfono?"
+            ],
+            "correctAnswer": "Hola, soy Anna.",
+            "sourceEnglish": "Hello, this is Anna."
+          },
+          {
+            "itemId": "english-a1-m078-practice-ex01-i02",
+            "position": 2,
+            "taskType": "translation_multiple_choice",
+            "prompt": "Traduce al español: “Who is speaking, please?”",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "¿Quién habla, por favor?",
+              "Llamaré más tarde.",
+              "Lo siento, la línea está ocupada."
+            ],
+            "correctAnswer": "¿Quién habla, por favor?",
+            "sourceEnglish": "Who is speaking, please?"
+          },
+          {
+            "itemId": "english-a1-m078-practice-ex01-i03",
+            "position": 3,
+            "taskType": "translation_multiple_choice",
+            "prompt": "Traduce al español: “Can I speak to Tom?”",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "¿Puedo hablar con Tom?",
+              "¿Puedo dejar un mensaje?",
+              "Por favor, contesta al teléfono."
+            ],
+            "correctAnswer": "¿Puedo hablar con Tom?",
+            "sourceEnglish": "Can I speak to Tom?"
+          },
+          {
+            "itemId": "english-a1-m078-practice-ex01-i04",
+            "position": 4,
+            "taskType": "translation_multiple_choice",
+            "prompt": "Traduce al español: “I will call later.”",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "Llamaré más tarde.",
+              "¿Cuál es tu número de teléfono?",
+              "Tom no está aquí ahora."
+            ],
+            "correctAnswer": "Llamaré más tarde.",
+            "sourceEnglish": "I will call later."
+          },
+          {
+            "itemId": "english-a1-m078-practice-ex01-i05",
+            "position": 5,
+            "taskType": "translation_multiple_choice",
+            "prompt": "Traduce al español: “Can I leave a message?”",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "¿Puedo dejar un mensaje?",
+              "Lo siento, la línea está ocupada.",
+              "Gracias por llamar."
+            ],
+            "correctAnswer": "¿Puedo dejar un mensaje?",
+            "sourceEnglish": "Can I leave a message?"
+          },
+          {
+            "itemId": "english-a1-m078-practice-ex01-i06",
+            "position": 6,
+            "taskType": "translation_multiple_choice",
+            "prompt": "Traduce al español: “What is your phone number?”",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "¿Cuál es tu número de teléfono?",
+              "Por favor, contesta al teléfono.",
+              "Hola, soy Anna."
+            ],
+            "correctAnswer": "¿Cuál es tu número de teléfono?",
+            "sourceEnglish": "What is your phone number?"
+          },
+          {
+            "itemId": "english-a1-m078-practice-ex01-i07",
+            "position": 7,
+            "taskType": "translation_multiple_choice",
+            "prompt": "Traduce al español: “Sorry, the line is busy.”",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "Lo siento, la línea está ocupada.",
+              "Tom no está aquí ahora.",
+              "¿Quién habla, por favor?"
+            ],
+            "correctAnswer": "Lo siento, la línea está ocupada.",
+            "sourceEnglish": "Sorry, the line is busy."
+          },
+          {
+            "itemId": "english-a1-m078-practice-ex01-i08",
+            "position": 8,
+            "taskType": "translation_multiple_choice",
+            "prompt": "Traduce al español: “Please answer the phone.”",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "Por favor, contesta al teléfono.",
+              "Gracias por llamar.",
+              "¿Puedo hablar con Tom?"
+            ],
+            "correctAnswer": "Por favor, contesta al teléfono.",
+            "sourceEnglish": "Please answer the phone."
+          },
+          {
+            "itemId": "english-a1-m078-practice-ex01-i09",
+            "position": 9,
+            "taskType": "translation_multiple_choice",
+            "prompt": "Traduce al español: “Tom is not here now.”",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "Tom no está aquí ahora.",
+              "Hola, soy Anna.",
+              "Llamaré más tarde."
+            ],
+            "correctAnswer": "Tom no está aquí ahora.",
+            "sourceEnglish": "Tom is not here now."
+          },
+          {
+            "itemId": "english-a1-m078-practice-ex01-i10",
+            "position": 10,
+            "taskType": "translation_multiple_choice",
+            "prompt": "Traduce al español: “Thanks for calling.”",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "Gracias por llamar.",
+              "¿Quién habla, por favor?",
+              "¿Puedo dejar un mensaje?"
+            ],
+            "correctAnswer": "Gracias por llamar.",
+            "sourceEnglish": "Thanks for calling."
+          },
+          {
+            "itemId": "english-a1-m078-practice-ex01-i11",
+            "position": 11,
+            "taskType": "listening_translation_multiple_choice",
+            "prompt": "Escucha el inglés y elige su significado.",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "Hola, soy Anna.",
+              "Llamaré más tarde.",
+              "Lo siento, la línea está ocupada."
+            ],
+            "correctAnswer": "Hola, soy Anna.",
+            "sourceEnglish": "Hello, this is Anna."
+          },
+          {
+            "itemId": "english-a1-m078-practice-ex01-i12",
+            "position": 12,
+            "taskType": "listening_translation_multiple_choice",
+            "prompt": "Escucha el inglés y elige su significado.",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "¿Quién habla, por favor?",
+              "¿Puedo dejar un mensaje?",
+              "Por favor, contesta al teléfono."
+            ],
+            "correctAnswer": "¿Quién habla, por favor?",
+            "sourceEnglish": "Who is speaking, please?"
+          },
+          {
+            "itemId": "english-a1-m078-practice-ex01-i13",
+            "position": 13,
+            "taskType": "listening_translation_multiple_choice",
+            "prompt": "Escucha el inglés y elige su significado.",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "¿Puedo hablar con Tom?",
+              "¿Cuál es tu número de teléfono?",
+              "Tom no está aquí ahora."
+            ],
+            "correctAnswer": "¿Puedo hablar con Tom?",
+            "sourceEnglish": "Can I speak to Tom?"
+          },
+          {
+            "itemId": "english-a1-m078-practice-ex01-i14",
+            "position": 14,
+            "taskType": "listening_translation_multiple_choice",
+            "prompt": "Escucha el inglés y elige su significado.",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "Llamaré más tarde.",
+              "Lo siento, la línea está ocupada.",
+              "Gracias por llamar."
+            ],
+            "correctAnswer": "Llamaré más tarde.",
+            "sourceEnglish": "I will call later."
+          },
+          {
+            "itemId": "english-a1-m078-practice-ex01-i15",
+            "position": 15,
+            "taskType": "listening_translation_multiple_choice",
+            "prompt": "Escucha el inglés y elige su significado.",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "¿Puedo dejar un mensaje?",
+              "Por favor, contesta al teléfono.",
+              "Hola, soy Anna."
+            ],
+            "correctAnswer": "¿Puedo dejar un mensaje?",
+            "sourceEnglish": "Can I leave a message?"
+          },
+          {
+            "itemId": "english-a1-m078-practice-ex01-i16",
+            "position": 16,
+            "taskType": "listening_translation_multiple_choice",
+            "prompt": "Escucha el inglés y elige su significado.",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "¿Cuál es tu número de teléfono?",
+              "Tom no está aquí ahora.",
+              "¿Quién habla, por favor?"
+            ],
+            "correctAnswer": "¿Cuál es tu número de teléfono?",
+            "sourceEnglish": "What is your phone number?"
+          },
+          {
+            "itemId": "english-a1-m078-practice-ex01-i17",
+            "position": 17,
+            "taskType": "listening_translation_multiple_choice",
+            "prompt": "Escucha el inglés y elige su significado.",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "Lo siento, la línea está ocupada.",
+              "Gracias por llamar.",
+              "¿Puedo hablar con Tom?"
+            ],
+            "correctAnswer": "Lo siento, la línea está ocupada.",
+            "sourceEnglish": "Sorry, the line is busy."
+          },
+          {
+            "itemId": "english-a1-m078-practice-ex01-i18",
+            "position": 18,
+            "taskType": "listening_translation_multiple_choice",
+            "prompt": "Escucha el inglés y elige su significado.",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "Por favor, contesta al teléfono.",
+              "Hola, soy Anna.",
+              "Llamaré más tarde."
+            ],
+            "correctAnswer": "Por favor, contesta al teléfono.",
+            "sourceEnglish": "Please answer the phone."
+          },
+          {
+            "itemId": "english-a1-m078-practice-ex01-i19",
+            "position": 19,
+            "taskType": "listening_translation_multiple_choice",
+            "prompt": "Escucha el inglés y elige su significado.",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "Tom no está aquí ahora.",
+              "¿Quién habla, por favor?",
+              "¿Puedo dejar un mensaje?"
+            ],
+            "correctAnswer": "Tom no está aquí ahora.",
+            "sourceEnglish": "Tom is not here now."
+          },
+          {
+            "itemId": "english-a1-m078-practice-ex01-i20",
+            "position": 20,
+            "taskType": "listening_translation_multiple_choice",
+            "prompt": "Escucha el inglés y elige su significado.",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "Gracias por llamar.",
+              "¿Puedo hablar con Tom?",
+              "¿Cuál es tu número de teléfono?"
+            ],
+            "correctAnswer": "Gracias por llamar.",
+            "sourceEnglish": "Thanks for calling."
+          }
+        ]
+      }
+    },
+    {
+      "sectionId": "english-a1-m078-grammar",
+      "sectionKey": "grammar",
+      "position": 3,
+      "title": "grammar",
+      "exercise": {
+        "exerciseId": "english-a1-m078-grammar-ex01",
+        "type": "grammar",
+        "items": [
+          {
+            "itemId": "english-a1-m078-grammar-ex01-i01",
+            "position": 1,
+            "prompt": "Can I ___ to Anna, please?",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "speak",
+              "speaks",
+              "speaking"
+            ],
+            "correctAnswer": "speak"
+          },
+          {
+            "itemId": "english-a1-m078-grammar-ex01-i02",
+            "position": 2,
+            "prompt": "Could you ___ that, please?",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "repeat",
+              "repeats",
+              "repeating"
+            ],
+            "correctAnswer": "repeat"
+          },
+          {
+            "itemId": "english-a1-m078-grammar-ex01-i03",
+            "position": 3,
+            "prompt": "Can I ___ a message?",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "leave",
+              "leaves",
+              "leaving"
+            ],
+            "correctAnswer": "leave"
+          },
+          {
+            "itemId": "english-a1-m078-grammar-ex01-i04",
+            "position": 4,
+            "prompt": "___ you hold on, please?",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "Can",
+              "Are",
+              "Do"
+            ],
+            "correctAnswer": "Can"
+          },
+          {
+            "itemId": "english-a1-m078-grammar-ex01-i05",
+            "position": 5,
+            "prompt": "Could you ___ me later?",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "call",
+              "calls",
+              "calling"
+            ],
+            "correctAnswer": "call"
+          },
+          {
+            "itemId": "english-a1-m078-grammar-ex01-i06",
+            "position": 6,
+            "prompt": "Is Anna ___?",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "there",
+              "their",
+              "they"
+            ],
+            "correctAnswer": "there"
+          },
+          {
+            "itemId": "english-a1-m078-grammar-ex01-i07",
+            "position": 7,
+            "prompt": "Please ___ a moment.",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "wait",
+              "waits",
+              "waiting"
+            ],
+            "correctAnswer": "wait"
+          },
+          {
+            "itemId": "english-a1-m078-grammar-ex01-i08",
+            "position": 8,
+            "prompt": "Can you ___ your name?",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "spell",
+              "spells",
+              "spelling"
+            ],
+            "correctAnswer": "spell"
+          },
+          {
+            "itemId": "english-a1-m078-grammar-ex01-i09",
+            "position": 9,
+            "prompt": "I'll ___ her the message.",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "give",
+              "gives",
+              "giving"
+            ],
+            "correctAnswer": "give"
+          },
+          {
+            "itemId": "english-a1-m078-grammar-ex01-i10",
+            "position": 10,
+            "prompt": "Could I ___ your number?",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "have",
+              "has",
+              "having"
+            ],
+            "correctAnswer": "have"
+          }
+        ],
+        "theory": {
+          "title": "Polite requests on the phone",
+          "explanation": "Usamos Can I speak to...? y Could you...? para pedir hablar con alguien o solicitar que repitan información por teléfono.",
+          "patterns": [
+            {
+              "label": "Model",
+              "pattern": "Can I speak to Anna, please? Could you repeat that?",
+              "examples": [
+                "Can I speak to Anna, please? Could you repeat that?"
+              ]
+            }
+          ],
+          "tip": "Lee los ejemplos y comprueba cómo cambia la estructura."
+        }
+      }
+    },
+    {
+      "sectionId": "english-a1-m078-pronunciation",
+      "sectionKey": "pronunciation",
+      "position": 4,
+      "title": "pronunciation",
+      "exercise": {
+        "exerciseId": "english-a1-m078-pronunciation-ex01",
+        "type": "pronunciation_cards",
+        "items": [
+          {
+            "itemId": "english-a1-m078-pronunciation-ex01-i01",
+            "position": 1,
+            "word": "hello",
+            "translation": "hola",
+            "pronunciationGuide": "Listen to the en-GB model and keep the final consonant clear.",
+            "audio": "tts:en-GB:hello"
+          },
+          {
+            "itemId": "english-a1-m078-pronunciation-ex01-i02",
+            "position": 2,
+            "word": "speaking",
+            "translation": "al habla",
+            "pronunciationGuide": "Listen to the en-GB model and keep the final consonant clear.",
+            "audio": "tts:en-GB:speaking"
+          },
+          {
+            "itemId": "english-a1-m078-pronunciation-ex01-i03",
+            "position": 3,
+            "word": "call",
+            "translation": "llamar / llamada",
+            "pronunciationGuide": "Listen to the en-GB model and keep the final consonant clear.",
+            "audio": "tts:en-GB:call"
+          },
+          {
+            "itemId": "english-a1-m078-pronunciation-ex01-i04",
+            "position": 4,
+            "word": "number",
+            "translation": "número",
+            "pronunciationGuide": "Listen to the en-GB model and keep the final consonant clear.",
+            "audio": "tts:en-GB:number"
+          },
+          {
+            "itemId": "english-a1-m078-pronunciation-ex01-i05",
+            "position": 5,
+            "word": "later",
+            "translation": "más tarde",
+            "pronunciationGuide": "Listen to the en-GB model and keep the final consonant clear.",
+            "audio": "tts:en-GB:later"
+          },
+          {
+            "itemId": "english-a1-m078-pronunciation-ex01-i06",
+            "position": 6,
+            "word": "leave a message",
+            "translation": "dejar un mensaje",
+            "pronunciationGuide": "Listen to the phrase as one unit and notice its main stress.",
+            "audio": "tts:en-GB:leave a message"
+          },
+          {
+            "itemId": "english-a1-m078-pronunciation-ex01-i07",
+            "position": 7,
+            "word": "phone",
+            "translation": "teléfono",
+            "pronunciationGuide": "Listen to the en-GB model and keep the final consonant clear.",
+            "audio": "tts:en-GB:phone"
+          },
+          {
+            "itemId": "english-a1-m078-pronunciation-ex01-i08",
+            "position": 8,
+            "word": "answer",
+            "translation": "contestar",
+            "pronunciationGuide": "Listen to the en-GB model and keep the final consonant clear.",
+            "audio": "tts:en-GB:answer"
+          },
+          {
+            "itemId": "english-a1-m078-pronunciation-ex01-i09",
+            "position": 9,
+            "word": "busy",
+            "translation": "ocupado/a",
+            "pronunciationGuide": "Listen to the en-GB model and keep the final consonant clear.",
+            "audio": "tts:en-GB:busy"
+          },
+          {
+            "itemId": "english-a1-m078-pronunciation-ex01-i10",
+            "position": 10,
+            "word": "speak to",
+            "translation": "hablar con",
+            "pronunciationGuide": "Listen to the phrase as one unit and notice its main stress.",
+            "audio": "tts:en-GB:speak to"
+          }
+        ],
+        "focus": "Practica el ritmo y el acento de las palabras clave de Phone Conversations."
+      }
+    },
+    {
+      "sectionId": "english-a1-m078-reading",
+      "sectionKey": "reading",
+      "position": 5,
+      "title": "reading",
+      "exercise": {
+        "exerciseId": "english-a1-m078-reading-ex01",
+        "type": "reading_comprehension",
+        "items": [
+          {
+            "itemId": "english-a1-m078-reading-ex01-i01",
+            "position": 1,
+            "prompt": "Which English sentence means “Hola, soy Anna.”?",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "Hello, this is Anna.",
+              "Who is speaking, please?",
+              "Can I speak to Tom?"
+            ],
+            "correctAnswer": "Hello, this is Anna."
+          },
+          {
+            "itemId": "english-a1-m078-reading-ex01-i02",
+            "position": 2,
+            "prompt": "Which English sentence means “¿Quién habla, por favor?”?",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "Who is speaking, please?",
+              "Can I speak to Tom?",
+              "I will call later."
+            ],
+            "correctAnswer": "Who is speaking, please?"
+          },
+          {
+            "itemId": "english-a1-m078-reading-ex01-i03",
+            "position": 3,
+            "prompt": "Which English sentence means “¿Puedo hablar con Tom?”?",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "Can I speak to Tom?",
+              "I will call later.",
+              "Can I leave a message?"
+            ],
+            "correctAnswer": "Can I speak to Tom?"
+          },
+          {
+            "itemId": "english-a1-m078-reading-ex01-i04",
+            "position": 4,
+            "prompt": "Which English sentence means “Llamaré más tarde.”?",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "I will call later.",
+              "Can I leave a message?",
+              "What is your phone number?"
+            ],
+            "correctAnswer": "I will call later."
+          },
+          {
+            "itemId": "english-a1-m078-reading-ex01-i05",
+            "position": 5,
+            "prompt": "Which English sentence means “¿Puedo dejar un mensaje?”?",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "Can I leave a message?",
+              "What is your phone number?",
+              "Sorry, the line is busy."
+            ],
+            "correctAnswer": "Can I leave a message?"
+          },
+          {
+            "itemId": "english-a1-m078-reading-ex01-i06",
+            "position": 6,
+            "prompt": "Which English sentence means “¿Cuál es tu número de teléfono?”?",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "What is your phone number?",
+              "Sorry, the line is busy.",
+              "Please answer the phone."
+            ],
+            "correctAnswer": "What is your phone number?"
+          },
+          {
+            "itemId": "english-a1-m078-reading-ex01-i07",
+            "position": 7,
+            "prompt": "Which English sentence means “Lo siento, la línea está ocupada.”?",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "Sorry, the line is busy.",
+              "Please answer the phone.",
+              "Tom is not here now."
+            ],
+            "correctAnswer": "Sorry, the line is busy."
+          },
+          {
+            "itemId": "english-a1-m078-reading-ex01-i08",
+            "position": 8,
+            "prompt": "Which English sentence means “Por favor, contesta al teléfono.”?",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "Please answer the phone.",
+              "Tom is not here now.",
+              "Thanks for calling."
+            ],
+            "correctAnswer": "Please answer the phone."
+          },
+          {
+            "itemId": "english-a1-m078-reading-ex01-i09",
+            "position": 9,
+            "prompt": "Which English sentence means “Tom no está aquí ahora.”?",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "Tom is not here now.",
+              "Thanks for calling.",
+              "Hello, this is Anna."
+            ],
+            "correctAnswer": "Tom is not here now."
+          },
+          {
+            "itemId": "english-a1-m078-reading-ex01-i10",
+            "position": 10,
+            "prompt": "Which English sentence means “Gracias por llamar.”?",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "Thanks for calling.",
+              "Hello, this is Anna.",
+              "Who is speaking, please?"
+            ],
+            "correctAnswer": "Thanks for calling."
+          }
+        ],
+        "content": {
+          "passageId": "english-a1-m078-reading-passage-01",
+          "passage": "Hello, this is Anna. Who is speaking, please? Can I speak to Tom? I will call later. Can I leave a message? What is your phone number?"
+        }
+      }
+    },
+    {
+      "sectionId": "english-a1-m078-writing",
+      "sectionKey": "writing",
+      "position": 6,
+      "title": "writing",
+      "exercise": {
+        "exerciseId": "english-a1-m078-writing-ex01",
+        "type": "dictation",
+        "items": [
+          {
+            "itemId": "english-a1-m078-writing-ex01-i01",
+            "position": 1,
+            "audio": "tts:en-GB:Hello, this is Anna.",
+            "expectedAnswer": "Hello, this is Anna.",
+            "evaluation": {
+              "type": "normalised_text"
+            }
+          },
+          {
+            "itemId": "english-a1-m078-writing-ex01-i02",
+            "position": 2,
+            "audio": "tts:en-GB:Who is speaking, please?",
+            "expectedAnswer": "Who is speaking, please?",
+            "evaluation": {
+              "type": "normalised_text"
+            }
+          },
+          {
+            "itemId": "english-a1-m078-writing-ex01-i03",
+            "position": 3,
+            "audio": "tts:en-GB:Can I speak to Tom?",
+            "expectedAnswer": "Can I speak to Tom?",
+            "evaluation": {
+              "type": "normalised_text"
+            }
+          },
+          {
+            "itemId": "english-a1-m078-writing-ex01-i04",
+            "position": 4,
+            "audio": "tts:en-GB:I will call later.",
+            "expectedAnswer": "I will call later.",
+            "evaluation": {
+              "type": "normalised_text"
+            }
+          },
+          {
+            "itemId": "english-a1-m078-writing-ex01-i05",
+            "position": 5,
+            "audio": "tts:en-GB:Can I leave a message?",
+            "expectedAnswer": "Can I leave a message?",
+            "evaluation": {
+              "type": "normalised_text"
+            }
+          },
+          {
+            "itemId": "english-a1-m078-writing-ex01-i06",
+            "position": 6,
+            "audio": "tts:en-GB:What is your phone number?",
+            "expectedAnswer": "What is your phone number?",
+            "evaluation": {
+              "type": "normalised_text"
+            }
+          },
+          {
+            "itemId": "english-a1-m078-writing-ex01-i07",
+            "position": 7,
+            "audio": "tts:en-GB:Sorry, the line is busy.",
+            "expectedAnswer": "Sorry, the line is busy.",
+            "evaluation": {
+              "type": "normalised_text"
+            }
+          },
+          {
+            "itemId": "english-a1-m078-writing-ex01-i08",
+            "position": 8,
+            "audio": "tts:en-GB:Please answer the phone.",
+            "expectedAnswer": "Please answer the phone.",
+            "evaluation": {
+              "type": "normalised_text"
+            }
+          },
+          {
+            "itemId": "english-a1-m078-writing-ex01-i09",
+            "position": 9,
+            "audio": "tts:en-GB:Tom is not here now.",
+            "expectedAnswer": "Tom is not here now.",
+            "evaluation": {
+              "type": "normalised_text"
+            }
+          },
+          {
+            "itemId": "english-a1-m078-writing-ex01-i10",
+            "position": 10,
+            "audio": "tts:en-GB:Thanks for calling.",
+            "expectedAnswer": "Thanks for calling.",
+            "evaluation": {
+              "type": "normalised_text"
+            }
+          }
+        ],
+        "writingTask": "Escribe 5–6 frases sobre phone conversations. Utiliza al menos cinco palabras de la misión y la estructura polite requests on the phone.",
+        "modelText": "Hello, this is Anna. Who is speaking, please? Can I speak to Tom? I will call later. Can I leave a message? What is your phone number?"
+      }
+    },
+    {
+      "sectionId": "english-a1-m078-speaking",
+      "sectionKey": "speaking",
+      "position": 7,
+      "title": "speaking",
+      "exercise": {
+        "exerciseId": "english-a1-m078-speaking-ex01",
+        "type": "speaking_prompts",
+        "items": [
+          {
+            "itemId": "english-a1-m078-speaking-ex01-i01",
+            "position": 1,
+            "prompt": "Say a sentence about this situation: Hola, soy Anna.",
+            "modelAnswer": "Hello, this is Anna.",
+            "evaluation": {
+              "type": "transcription_feedback",
+              "transcriptionSeparateFromPronunciation": true
+            }
+          },
+          {
+            "itemId": "english-a1-m078-speaking-ex01-i02",
+            "position": 2,
+            "prompt": "Say a sentence about this situation: ¿Quién habla, por favor?",
+            "modelAnswer": "Who is speaking, please?",
+            "evaluation": {
+              "type": "transcription_feedback",
+              "transcriptionSeparateFromPronunciation": true
+            }
+          },
+          {
+            "itemId": "english-a1-m078-speaking-ex01-i03",
+            "position": 3,
+            "prompt": "Say a sentence about this situation: ¿Puedo hablar con Tom?",
+            "modelAnswer": "Can I speak to Tom?",
+            "evaluation": {
+              "type": "transcription_feedback",
+              "transcriptionSeparateFromPronunciation": true
+            }
+          },
+          {
+            "itemId": "english-a1-m078-speaking-ex01-i04",
+            "position": 4,
+            "prompt": "Say a sentence about this situation: Llamaré más tarde.",
+            "modelAnswer": "I will call later.",
+            "evaluation": {
+              "type": "transcription_feedback",
+              "transcriptionSeparateFromPronunciation": true
+            }
+          },
+          {
+            "itemId": "english-a1-m078-speaking-ex01-i05",
+            "position": 5,
+            "prompt": "Say a sentence about this situation: ¿Puedo dejar un mensaje?",
+            "modelAnswer": "Can I leave a message?",
+            "evaluation": {
+              "type": "transcription_feedback",
+              "transcriptionSeparateFromPronunciation": true
+            }
+          },
+          {
+            "itemId": "english-a1-m078-speaking-ex01-i06",
+            "position": 6,
+            "prompt": "Say a sentence about this situation: ¿Cuál es tu número de teléfono?",
+            "modelAnswer": "What is your phone number?",
+            "evaluation": {
+              "type": "transcription_feedback",
+              "transcriptionSeparateFromPronunciation": true
+            }
+          },
+          {
+            "itemId": "english-a1-m078-speaking-ex01-i07",
+            "position": 7,
+            "prompt": "Say a sentence about this situation: Lo siento, la línea está ocupada.",
+            "modelAnswer": "Sorry, the line is busy.",
+            "evaluation": {
+              "type": "transcription_feedback",
+              "transcriptionSeparateFromPronunciation": true
+            }
+          },
+          {
+            "itemId": "english-a1-m078-speaking-ex01-i08",
+            "position": 8,
+            "prompt": "Say a sentence about this situation: Por favor, contesta al teléfono.",
+            "modelAnswer": "Please answer the phone.",
+            "evaluation": {
+              "type": "transcription_feedback",
+              "transcriptionSeparateFromPronunciation": true
+            }
+          },
+          {
+            "itemId": "english-a1-m078-speaking-ex01-i09",
+            "position": 9,
+            "prompt": "Say a sentence about this situation: Tom no está aquí ahora.",
+            "modelAnswer": "Tom is not here now.",
+            "evaluation": {
+              "type": "transcription_feedback",
+              "transcriptionSeparateFromPronunciation": true
+            }
+          },
+          {
+            "itemId": "english-a1-m078-speaking-ex01-i10",
+            "position": 10,
+            "prompt": "Say a sentence about this situation: Gracias por llamar.",
+            "modelAnswer": "Thanks for calling.",
+            "evaluation": {
+              "type": "transcription_feedback",
+              "transcriptionSeparateFromPronunciation": true
+            }
+          }
+        ]
+      }
+    },
+    {
+      "sectionId": "english-a1-m078-listening",
+      "sectionKey": "listening",
+      "position": 8,
+      "title": "listening",
+      "exercise": {
+        "exerciseId": "english-a1-m078-listening-ex01",
+        "type": "listening_gap_fill",
+        "items": [
+          {
+            "itemId": "english-a1-m078-listening-ex01-i01",
+            "position": 1,
+            "gapToken": "[[gap-01]]",
+            "expectedWordId": "english-a1-m078-listening-word-01"
+          },
+          {
+            "itemId": "english-a1-m078-listening-ex01-i02",
+            "position": 2,
+            "gapToken": "[[gap-02]]",
+            "expectedWordId": "english-a1-m078-listening-word-02"
+          },
+          {
+            "itemId": "english-a1-m078-listening-ex01-i03",
+            "position": 3,
+            "gapToken": "[[gap-03]]",
+            "expectedWordId": "english-a1-m078-listening-word-03"
+          },
+          {
+            "itemId": "english-a1-m078-listening-ex01-i04",
+            "position": 4,
+            "gapToken": "[[gap-04]]",
+            "expectedWordId": "english-a1-m078-listening-word-04"
+          },
+          {
+            "itemId": "english-a1-m078-listening-ex01-i05",
+            "position": 5,
+            "gapToken": "[[gap-05]]",
+            "expectedWordId": "english-a1-m078-listening-word-05"
+          },
+          {
+            "itemId": "english-a1-m078-listening-ex01-i06",
+            "position": 6,
+            "gapToken": "[[gap-06]]",
+            "expectedWordId": "english-a1-m078-listening-word-06"
+          },
+          {
+            "itemId": "english-a1-m078-listening-ex01-i07",
+            "position": 7,
+            "gapToken": "[[gap-07]]",
+            "expectedWordId": "english-a1-m078-listening-word-07"
+          },
+          {
+            "itemId": "english-a1-m078-listening-ex01-i08",
+            "position": 8,
+            "gapToken": "[[gap-08]]",
+            "expectedWordId": "english-a1-m078-listening-word-08"
+          },
+          {
+            "itemId": "english-a1-m078-listening-ex01-i09",
+            "position": 9,
+            "gapToken": "[[gap-09]]",
+            "expectedWordId": "english-a1-m078-listening-word-09"
+          },
+          {
+            "itemId": "english-a1-m078-listening-ex01-i10",
+            "position": 10,
+            "gapToken": "[[gap-10]]",
+            "expectedWordId": "english-a1-m078-listening-word-10"
+          }
+        ],
+        "content": {
+          "audio": "tts:en-GB:The key words for Phone Conversations are: hello, speaking, call, number, later, leave a message, phone, answer, busy, speak to. Listen and repeat each word carefully.",
+          "audioLocale": "en-GB",
+          "transcriptTemplate": "The key words for Phone Conversations are: [[gap-01]], [[gap-02]], [[gap-03]], [[gap-04]], [[gap-05]], [[gap-06]], [[gap-07]], [[gap-08]], [[gap-09]], [[gap-10]]. Listen and repeat each word carefully.",
+          "wordBank": [
+            {
+              "wordId": "english-a1-m078-listening-word-01",
+              "word": "hello"
+            },
+            {
+              "wordId": "english-a1-m078-listening-word-02",
+              "word": "speaking"
+            },
+            {
+              "wordId": "english-a1-m078-listening-word-03",
+              "word": "call"
+            },
+            {
+              "wordId": "english-a1-m078-listening-word-04",
+              "word": "number"
+            },
+            {
+              "wordId": "english-a1-m078-listening-word-05",
+              "word": "later"
+            },
+            {
+              "wordId": "english-a1-m078-listening-word-06",
+              "word": "leave a message"
+            },
+            {
+              "wordId": "english-a1-m078-listening-word-07",
+              "word": "phone"
+            },
+            {
+              "wordId": "english-a1-m078-listening-word-08",
+              "word": "answer"
+            },
+            {
+              "wordId": "english-a1-m078-listening-word-09",
+              "word": "busy"
+            },
+            {
+              "wordId": "english-a1-m078-listening-word-10",
+              "word": "speak to"
+            }
+          ],
+          "interaction": "select_place_move_replace"
+        }
+      }
+    }
+  ]
+}

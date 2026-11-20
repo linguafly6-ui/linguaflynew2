@@ -1,0 +1,1205 @@
+{
+  "schemaVersion": "1.2.0",
+  "contentVersion": 1,
+  "course": {
+    "courseId": "english-a1",
+    "level": "A1",
+    "language": "en-GB"
+  },
+  "unit": {
+    "unitId": "english-a1-unit-08",
+    "courseId": "english-a1",
+    "position": 8,
+    "title": "Study, work and communication"
+  },
+  "mission": {
+    "missionId": "english-a1-m080",
+    "unitId": "english-a1-unit-08",
+    "position": 80,
+    "title": "Study and Work Profile"
+  },
+  "sections": [
+    {
+      "sectionId": "english-a1-m080-explore",
+      "sectionKey": "explore",
+      "position": 1,
+      "title": "explore",
+      "exercise": {
+        "exerciseId": "english-a1-m080-explore-ex01",
+        "type": "vocabulary_pairs",
+        "items": [
+          {
+            "itemId": "english-a1-m080-explore-ex01-i01",
+            "position": 1,
+            "english": "job",
+            "spanish": "empleo",
+            "audio": "tts:en-GB:job"
+          },
+          {
+            "itemId": "english-a1-m080-explore-ex01-i02",
+            "position": 2,
+            "english": "subjects",
+            "spanish": "asignaturas",
+            "audio": "tts:en-GB:subjects"
+          },
+          {
+            "itemId": "english-a1-m080-explore-ex01-i03",
+            "position": 3,
+            "english": "routine",
+            "spanish": "rutina",
+            "audio": "tts:en-GB:routine"
+          },
+          {
+            "itemId": "english-a1-m080-explore-ex01-i04",
+            "position": 4,
+            "english": "skills",
+            "spanish": "habilidades",
+            "audio": "tts:en-GB:skills"
+          },
+          {
+            "itemId": "english-a1-m080-explore-ex01-i05",
+            "position": 5,
+            "english": "technology",
+            "spanish": "tecnología",
+            "audio": "tts:en-GB:technology"
+          },
+          {
+            "itemId": "english-a1-m080-explore-ex01-i06",
+            "position": 6,
+            "english": "schedule",
+            "spanish": "horario",
+            "audio": "tts:en-GB:schedule"
+          },
+          {
+            "itemId": "english-a1-m080-explore-ex01-i07",
+            "position": 7,
+            "english": "student",
+            "spanish": "estudiante",
+            "audio": "tts:en-GB:student"
+          },
+          {
+            "itemId": "english-a1-m080-explore-ex01-i08",
+            "position": 8,
+            "english": "work",
+            "spanish": "trabajo",
+            "audio": "tts:en-GB:work"
+          },
+          {
+            "itemId": "english-a1-m080-explore-ex01-i09",
+            "position": 9,
+            "english": "study",
+            "spanish": "estudiar",
+            "audio": "tts:en-GB:study"
+          },
+          {
+            "itemId": "english-a1-m080-explore-ex01-i10",
+            "position": 10,
+            "english": "experience",
+            "spanish": "experiencia",
+            "audio": "tts:en-GB:experience"
+          }
+        ],
+        "theory": {
+          "title": "Vocabulary: Study and Work Profile",
+          "explanation": "Explora diez palabras y expresiones sobre study and work profile. Escucha el modelo británico y relaciona cada palabra con su significado.",
+          "patterns": [
+            {
+              "label": "Useful language",
+              "pattern": "Short question + short answer",
+              "examples": [
+                "I am a student.",
+                "I study English and science.",
+                "I work in a small shop."
+              ]
+            }
+          ],
+          "tip": "Repite las expresiones y crea un ejemplo relacionado con tu vida."
+        }
+      }
+    },
+    {
+      "sectionId": "english-a1-m080-practice",
+      "sectionKey": "practice",
+      "position": 2,
+      "title": "practice",
+      "exercise": {
+        "exerciseId": "english-a1-m080-practice-ex01",
+        "type": "mixed_practice",
+        "items": [
+          {
+            "itemId": "english-a1-m080-practice-ex01-i01",
+            "position": 1,
+            "taskType": "translation_multiple_choice",
+            "prompt": "Traduce al español: “I am a student.”",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "Soy estudiante.",
+              "Trabajo en una tienda pequeña.",
+              "Mi trabajo empieza a las nueve."
+            ],
+            "correctAnswer": "Soy estudiante.",
+            "sourceEnglish": "I am a student."
+          },
+          {
+            "itemId": "english-a1-m080-practice-ex01-i02",
+            "position": 2,
+            "taskType": "translation_multiple_choice",
+            "prompt": "Traduce al español: “I study English and science.”",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "Estudio inglés y ciencias.",
+              "Mi rutina está muy ocupada.",
+              "Me gustan mis asignaturas."
+            ],
+            "correctAnswer": "Estudio inglés y ciencias.",
+            "sourceEnglish": "I study English and science."
+          },
+          {
+            "itemId": "english-a1-m080-practice-ex01-i03",
+            "position": 3,
+            "taskType": "translation_multiple_choice",
+            "prompt": "Traduce al español: “I work in a small shop.”",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "Trabajo en una tienda pequeña.",
+              "Sé usar un ordenador.",
+              "Tengo un horario de trabajo sencillo."
+            ],
+            "correctAnswer": "Trabajo en una tienda pequeña.",
+            "sourceEnglish": "I work in a small shop."
+          },
+          {
+            "itemId": "english-a1-m080-practice-ex01-i04",
+            "position": 4,
+            "taskType": "translation_multiple_choice",
+            "prompt": "Traduce al español: “My routine is very busy.”",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "Mi rutina está muy ocupada.",
+              "Mi trabajo empieza a las nueve.",
+              "Se me da bien hablar con la gente."
+            ],
+            "correctAnswer": "Mi rutina está muy ocupada.",
+            "sourceEnglish": "My routine is very busy."
+          },
+          {
+            "itemId": "english-a1-m080-practice-ex01-i05",
+            "position": 5,
+            "taskType": "translation_multiple_choice",
+            "prompt": "Traduce al español: “I can use a computer.”",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "Sé usar un ordenador.",
+              "Me gustan mis asignaturas.",
+              "Este es mi perfil de estudios y trabajo."
+            ],
+            "correctAnswer": "Sé usar un ordenador.",
+            "sourceEnglish": "I can use a computer."
+          },
+          {
+            "itemId": "english-a1-m080-practice-ex01-i06",
+            "position": 6,
+            "taskType": "translation_multiple_choice",
+            "prompt": "Traduce al español: “My work starts at nine.”",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "Mi trabajo empieza a las nueve.",
+              "Tengo un horario de trabajo sencillo.",
+              "Soy estudiante."
+            ],
+            "correctAnswer": "Mi trabajo empieza a las nueve.",
+            "sourceEnglish": "My work starts at nine."
+          },
+          {
+            "itemId": "english-a1-m080-practice-ex01-i07",
+            "position": 7,
+            "taskType": "translation_multiple_choice",
+            "prompt": "Traduce al español: “I like my subjects.”",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "Me gustan mis asignaturas.",
+              "Se me da bien hablar con la gente.",
+              "Estudio inglés y ciencias."
+            ],
+            "correctAnswer": "Me gustan mis asignaturas.",
+            "sourceEnglish": "I like my subjects."
+          },
+          {
+            "itemId": "english-a1-m080-practice-ex01-i08",
+            "position": 8,
+            "taskType": "translation_multiple_choice",
+            "prompt": "Traduce al español: “I have a simple work schedule.”",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "Tengo un horario de trabajo sencillo.",
+              "Este es mi perfil de estudios y trabajo.",
+              "Trabajo en una tienda pequeña."
+            ],
+            "correctAnswer": "Tengo un horario de trabajo sencillo.",
+            "sourceEnglish": "I have a simple work schedule."
+          },
+          {
+            "itemId": "english-a1-m080-practice-ex01-i09",
+            "position": 9,
+            "taskType": "translation_multiple_choice",
+            "prompt": "Traduce al español: “I am good at speaking to people.”",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "Se me da bien hablar con la gente.",
+              "Soy estudiante.",
+              "Mi rutina está muy ocupada."
+            ],
+            "correctAnswer": "Se me da bien hablar con la gente.",
+            "sourceEnglish": "I am good at speaking to people."
+          },
+          {
+            "itemId": "english-a1-m080-practice-ex01-i10",
+            "position": 10,
+            "taskType": "translation_multiple_choice",
+            "prompt": "Traduce al español: “This is my study and work profile.”",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "Este es mi perfil de estudios y trabajo.",
+              "Estudio inglés y ciencias.",
+              "Sé usar un ordenador."
+            ],
+            "correctAnswer": "Este es mi perfil de estudios y trabajo.",
+            "sourceEnglish": "This is my study and work profile."
+          },
+          {
+            "itemId": "english-a1-m080-practice-ex01-i11",
+            "position": 11,
+            "taskType": "listening_translation_multiple_choice",
+            "prompt": "Escucha el inglés y elige su significado.",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "Soy estudiante.",
+              "Mi rutina está muy ocupada.",
+              "Me gustan mis asignaturas."
+            ],
+            "correctAnswer": "Soy estudiante.",
+            "sourceEnglish": "I am a student."
+          },
+          {
+            "itemId": "english-a1-m080-practice-ex01-i12",
+            "position": 12,
+            "taskType": "listening_translation_multiple_choice",
+            "prompt": "Escucha el inglés y elige su significado.",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "Estudio inglés y ciencias.",
+              "Sé usar un ordenador.",
+              "Tengo un horario de trabajo sencillo."
+            ],
+            "correctAnswer": "Estudio inglés y ciencias.",
+            "sourceEnglish": "I study English and science."
+          },
+          {
+            "itemId": "english-a1-m080-practice-ex01-i13",
+            "position": 13,
+            "taskType": "listening_translation_multiple_choice",
+            "prompt": "Escucha el inglés y elige su significado.",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "Trabajo en una tienda pequeña.",
+              "Mi trabajo empieza a las nueve.",
+              "Se me da bien hablar con la gente."
+            ],
+            "correctAnswer": "Trabajo en una tienda pequeña.",
+            "sourceEnglish": "I work in a small shop."
+          },
+          {
+            "itemId": "english-a1-m080-practice-ex01-i14",
+            "position": 14,
+            "taskType": "listening_translation_multiple_choice",
+            "prompt": "Escucha el inglés y elige su significado.",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "Mi rutina está muy ocupada.",
+              "Me gustan mis asignaturas.",
+              "Este es mi perfil de estudios y trabajo."
+            ],
+            "correctAnswer": "Mi rutina está muy ocupada.",
+            "sourceEnglish": "My routine is very busy."
+          },
+          {
+            "itemId": "english-a1-m080-practice-ex01-i15",
+            "position": 15,
+            "taskType": "listening_translation_multiple_choice",
+            "prompt": "Escucha el inglés y elige su significado.",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "Sé usar un ordenador.",
+              "Tengo un horario de trabajo sencillo.",
+              "Soy estudiante."
+            ],
+            "correctAnswer": "Sé usar un ordenador.",
+            "sourceEnglish": "I can use a computer."
+          },
+          {
+            "itemId": "english-a1-m080-practice-ex01-i16",
+            "position": 16,
+            "taskType": "listening_translation_multiple_choice",
+            "prompt": "Escucha el inglés y elige su significado.",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "Mi trabajo empieza a las nueve.",
+              "Se me da bien hablar con la gente.",
+              "Estudio inglés y ciencias."
+            ],
+            "correctAnswer": "Mi trabajo empieza a las nueve.",
+            "sourceEnglish": "My work starts at nine."
+          },
+          {
+            "itemId": "english-a1-m080-practice-ex01-i17",
+            "position": 17,
+            "taskType": "listening_translation_multiple_choice",
+            "prompt": "Escucha el inglés y elige su significado.",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "Me gustan mis asignaturas.",
+              "Este es mi perfil de estudios y trabajo.",
+              "Trabajo en una tienda pequeña."
+            ],
+            "correctAnswer": "Me gustan mis asignaturas.",
+            "sourceEnglish": "I like my subjects."
+          },
+          {
+            "itemId": "english-a1-m080-practice-ex01-i18",
+            "position": 18,
+            "taskType": "listening_translation_multiple_choice",
+            "prompt": "Escucha el inglés y elige su significado.",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "Tengo un horario de trabajo sencillo.",
+              "Soy estudiante.",
+              "Mi rutina está muy ocupada."
+            ],
+            "correctAnswer": "Tengo un horario de trabajo sencillo.",
+            "sourceEnglish": "I have a simple work schedule."
+          },
+          {
+            "itemId": "english-a1-m080-practice-ex01-i19",
+            "position": 19,
+            "taskType": "listening_translation_multiple_choice",
+            "prompt": "Escucha el inglés y elige su significado.",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "Se me da bien hablar con la gente.",
+              "Estudio inglés y ciencias.",
+              "Sé usar un ordenador."
+            ],
+            "correctAnswer": "Se me da bien hablar con la gente.",
+            "sourceEnglish": "I am good at speaking to people."
+          },
+          {
+            "itemId": "english-a1-m080-practice-ex01-i20",
+            "position": 20,
+            "taskType": "listening_translation_multiple_choice",
+            "prompt": "Escucha el inglés y elige su significado.",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "Este es mi perfil de estudios y trabajo.",
+              "Trabajo en una tienda pequeña.",
+              "Mi trabajo empieza a las nueve."
+            ],
+            "correctAnswer": "Este es mi perfil de estudios y trabajo.",
+            "sourceEnglish": "This is my study and work profile."
+          }
+        ]
+      }
+    },
+    {
+      "sectionId": "english-a1-m080-grammar",
+      "sectionKey": "grammar",
+      "position": 3,
+      "title": "grammar",
+      "exercise": {
+        "exerciseId": "english-a1-m080-grammar-ex01",
+        "type": "grammar",
+        "items": [
+          {
+            "itemId": "english-a1-m080-grammar-ex01-i01",
+            "position": 1,
+            "prompt": "I study English ___ Spanish.",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "and",
+              "but",
+              "because"
+            ],
+            "correctAnswer": "and"
+          },
+          {
+            "itemId": "english-a1-m080-grammar-ex01-i02",
+            "position": 2,
+            "prompt": "I like my job, ___ it is difficult.",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "but",
+              "and",
+              "because"
+            ],
+            "correctAnswer": "but"
+          },
+          {
+            "itemId": "english-a1-m080-grammar-ex01-i03",
+            "position": 3,
+            "prompt": "I work at home ___ I have a computer.",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "because",
+              "but",
+              "and"
+            ],
+            "correctAnswer": "because"
+          },
+          {
+            "itemId": "english-a1-m080-grammar-ex01-i04",
+            "position": 4,
+            "prompt": "She is a teacher ___ a writer.",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "and",
+              "because",
+              "but"
+            ],
+            "correctAnswer": "and"
+          },
+          {
+            "itemId": "english-a1-m080-grammar-ex01-i05",
+            "position": 5,
+            "prompt": "I like maths, ___ I don't like science.",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "but",
+              "because",
+              "and"
+            ],
+            "correctAnswer": "but"
+          },
+          {
+            "itemId": "english-a1-m080-grammar-ex01-i06",
+            "position": 6,
+            "prompt": "We study English ___ we want to travel.",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "because",
+              "but",
+              "and"
+            ],
+            "correctAnswer": "because"
+          },
+          {
+            "itemId": "english-a1-m080-grammar-ex01-i07",
+            "position": 7,
+            "prompt": "He works in a shop ___ studies at night.",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "and",
+              "because",
+              "but"
+            ],
+            "correctAnswer": "and"
+          },
+          {
+            "itemId": "english-a1-m080-grammar-ex01-i08",
+            "position": 8,
+            "prompt": "I am tired, ___ I am happy.",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "but",
+              "and",
+              "because"
+            ],
+            "correctAnswer": "but"
+          },
+          {
+            "itemId": "english-a1-m080-grammar-ex01-i09",
+            "position": 9,
+            "prompt": "She likes her school ___ her teachers are kind.",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "because",
+              "but",
+              "and"
+            ],
+            "correctAnswer": "because"
+          },
+          {
+            "itemId": "english-a1-m080-grammar-ex01-i10",
+            "position": 10,
+            "prompt": "I have a phone ___ a laptop.",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "and",
+              "but",
+              "because"
+            ],
+            "correctAnswer": "and"
+          }
+        ],
+        "theory": {
+          "title": "Linking ideas with and, but and because",
+          "explanation": "Usamos and para añadir información, but para contrastar y because para explicar una razón.",
+          "patterns": [
+            {
+              "label": "Model",
+              "pattern": "I study and work",
+              "examples": [
+                "I study and work",
+                "I like my job because it is interesting."
+              ]
+            }
+          ],
+          "tip": "Lee los ejemplos y comprueba cómo cambia la estructura."
+        }
+      }
+    },
+    {
+      "sectionId": "english-a1-m080-pronunciation",
+      "sectionKey": "pronunciation",
+      "position": 4,
+      "title": "pronunciation",
+      "exercise": {
+        "exerciseId": "english-a1-m080-pronunciation-ex01",
+        "type": "pronunciation_cards",
+        "items": [
+          {
+            "itemId": "english-a1-m080-pronunciation-ex01-i01",
+            "position": 1,
+            "word": "job",
+            "translation": "empleo",
+            "pronunciationGuide": "Listen to the en-GB model and keep the final consonant clear.",
+            "audio": "tts:en-GB:job"
+          },
+          {
+            "itemId": "english-a1-m080-pronunciation-ex01-i02",
+            "position": 2,
+            "word": "subjects",
+            "translation": "asignaturas",
+            "pronunciationGuide": "Listen to the en-GB model and keep the final consonant clear.",
+            "audio": "tts:en-GB:subjects"
+          },
+          {
+            "itemId": "english-a1-m080-pronunciation-ex01-i03",
+            "position": 3,
+            "word": "routine",
+            "translation": "rutina",
+            "pronunciationGuide": "Listen to the en-GB model and keep the final consonant clear.",
+            "audio": "tts:en-GB:routine"
+          },
+          {
+            "itemId": "english-a1-m080-pronunciation-ex01-i04",
+            "position": 4,
+            "word": "skills",
+            "translation": "habilidades",
+            "pronunciationGuide": "Listen to the en-GB model and keep the final consonant clear.",
+            "audio": "tts:en-GB:skills"
+          },
+          {
+            "itemId": "english-a1-m080-pronunciation-ex01-i05",
+            "position": 5,
+            "word": "technology",
+            "translation": "tecnología",
+            "pronunciationGuide": "Listen to the en-GB model and keep the final consonant clear.",
+            "audio": "tts:en-GB:technology"
+          },
+          {
+            "itemId": "english-a1-m080-pronunciation-ex01-i06",
+            "position": 6,
+            "word": "schedule",
+            "translation": "horario",
+            "pronunciationGuide": "Listen to the en-GB model and keep the final consonant clear.",
+            "audio": "tts:en-GB:schedule"
+          },
+          {
+            "itemId": "english-a1-m080-pronunciation-ex01-i07",
+            "position": 7,
+            "word": "student",
+            "translation": "estudiante",
+            "pronunciationGuide": "Listen to the en-GB model and keep the final consonant clear.",
+            "audio": "tts:en-GB:student"
+          },
+          {
+            "itemId": "english-a1-m080-pronunciation-ex01-i08",
+            "position": 8,
+            "word": "work",
+            "translation": "trabajo",
+            "pronunciationGuide": "Listen to the en-GB model and keep the final consonant clear.",
+            "audio": "tts:en-GB:work"
+          },
+          {
+            "itemId": "english-a1-m080-pronunciation-ex01-i09",
+            "position": 9,
+            "word": "study",
+            "translation": "estudiar",
+            "pronunciationGuide": "Listen to the en-GB model and keep the final consonant clear.",
+            "audio": "tts:en-GB:study"
+          },
+          {
+            "itemId": "english-a1-m080-pronunciation-ex01-i10",
+            "position": 10,
+            "word": "experience",
+            "translation": "experiencia",
+            "pronunciationGuide": "Listen to the en-GB model and keep the final consonant clear.",
+            "audio": "tts:en-GB:experience"
+          }
+        ],
+        "focus": "Practica el ritmo y el acento de las palabras clave de Study and Work Profile."
+      }
+    },
+    {
+      "sectionId": "english-a1-m080-reading",
+      "sectionKey": "reading",
+      "position": 5,
+      "title": "reading",
+      "exercise": {
+        "exerciseId": "english-a1-m080-reading-ex01",
+        "type": "reading_comprehension",
+        "items": [
+          {
+            "itemId": "english-a1-m080-reading-ex01-i01",
+            "position": 1,
+            "prompt": "Which English sentence means “Soy estudiante.”?",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "I am a student.",
+              "I study English and science.",
+              "I work in a small shop."
+            ],
+            "correctAnswer": "I am a student."
+          },
+          {
+            "itemId": "english-a1-m080-reading-ex01-i02",
+            "position": 2,
+            "prompt": "Which English sentence means “Estudio inglés y ciencias.”?",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "I study English and science.",
+              "I work in a small shop.",
+              "My routine is very busy."
+            ],
+            "correctAnswer": "I study English and science."
+          },
+          {
+            "itemId": "english-a1-m080-reading-ex01-i03",
+            "position": 3,
+            "prompt": "Which English sentence means “Trabajo en una tienda pequeña.”?",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "I work in a small shop.",
+              "My routine is very busy.",
+              "I can use a computer."
+            ],
+            "correctAnswer": "I work in a small shop."
+          },
+          {
+            "itemId": "english-a1-m080-reading-ex01-i04",
+            "position": 4,
+            "prompt": "Which English sentence means “Mi rutina está muy ocupada.”?",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "My routine is very busy.",
+              "I can use a computer.",
+              "My work starts at nine."
+            ],
+            "correctAnswer": "My routine is very busy."
+          },
+          {
+            "itemId": "english-a1-m080-reading-ex01-i05",
+            "position": 5,
+            "prompt": "Which English sentence means “Sé usar un ordenador.”?",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "I can use a computer.",
+              "My work starts at nine.",
+              "I like my subjects."
+            ],
+            "correctAnswer": "I can use a computer."
+          },
+          {
+            "itemId": "english-a1-m080-reading-ex01-i06",
+            "position": 6,
+            "prompt": "Which English sentence means “Mi trabajo empieza a las nueve.”?",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "My work starts at nine.",
+              "I like my subjects.",
+              "I have a simple work schedule."
+            ],
+            "correctAnswer": "My work starts at nine."
+          },
+          {
+            "itemId": "english-a1-m080-reading-ex01-i07",
+            "position": 7,
+            "prompt": "Which English sentence means “Me gustan mis asignaturas.”?",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "I like my subjects.",
+              "I have a simple work schedule.",
+              "I am good at speaking to people."
+            ],
+            "correctAnswer": "I like my subjects."
+          },
+          {
+            "itemId": "english-a1-m080-reading-ex01-i08",
+            "position": 8,
+            "prompt": "Which English sentence means “Tengo un horario de trabajo sencillo.”?",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "I have a simple work schedule.",
+              "I am good at speaking to people.",
+              "This is my study and work profile."
+            ],
+            "correctAnswer": "I have a simple work schedule."
+          },
+          {
+            "itemId": "english-a1-m080-reading-ex01-i09",
+            "position": 9,
+            "prompt": "Which English sentence means “Se me da bien hablar con la gente.”?",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "I am good at speaking to people.",
+              "This is my study and work profile.",
+              "I am a student."
+            ],
+            "correctAnswer": "I am good at speaking to people."
+          },
+          {
+            "itemId": "english-a1-m080-reading-ex01-i10",
+            "position": 10,
+            "prompt": "Which English sentence means “Este es mi perfil de estudios y trabajo.”?",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "This is my study and work profile.",
+              "I am a student.",
+              "I study English and science."
+            ],
+            "correctAnswer": "This is my study and work profile."
+          }
+        ],
+        "content": {
+          "passageId": "english-a1-m080-reading-passage-01",
+          "passage": "I am a student. I study English and science. I work in a small shop. My routine is very busy. I can use a computer. My work starts at nine."
+        }
+      }
+    },
+    {
+      "sectionId": "english-a1-m080-writing",
+      "sectionKey": "writing",
+      "position": 6,
+      "title": "writing",
+      "exercise": {
+        "exerciseId": "english-a1-m080-writing-ex01",
+        "type": "dictation",
+        "items": [
+          {
+            "itemId": "english-a1-m080-writing-ex01-i01",
+            "position": 1,
+            "audio": "tts:en-GB:I am a student.",
+            "expectedAnswer": "I am a student.",
+            "evaluation": {
+              "type": "normalised_text"
+            }
+          },
+          {
+            "itemId": "english-a1-m080-writing-ex01-i02",
+            "position": 2,
+            "audio": "tts:en-GB:I study English and science.",
+            "expectedAnswer": "I study English and science.",
+            "evaluation": {
+              "type": "normalised_text"
+            }
+          },
+          {
+            "itemId": "english-a1-m080-writing-ex01-i03",
+            "position": 3,
+            "audio": "tts:en-GB:I work in a small shop.",
+            "expectedAnswer": "I work in a small shop.",
+            "evaluation": {
+              "type": "normalised_text"
+            }
+          },
+          {
+            "itemId": "english-a1-m080-writing-ex01-i04",
+            "position": 4,
+            "audio": "tts:en-GB:My routine is very busy.",
+            "expectedAnswer": "My routine is very busy.",
+            "evaluation": {
+              "type": "normalised_text"
+            }
+          },
+          {
+            "itemId": "english-a1-m080-writing-ex01-i05",
+            "position": 5,
+            "audio": "tts:en-GB:I can use a computer.",
+            "expectedAnswer": "I can use a computer.",
+            "evaluation": {
+              "type": "normalised_text"
+            }
+          },
+          {
+            "itemId": "english-a1-m080-writing-ex01-i06",
+            "position": 6,
+            "audio": "tts:en-GB:My work starts at nine.",
+            "expectedAnswer": "My work starts at nine.",
+            "evaluation": {
+              "type": "normalised_text"
+            }
+          },
+          {
+            "itemId": "english-a1-m080-writing-ex01-i07",
+            "position": 7,
+            "audio": "tts:en-GB:I like my subjects.",
+            "expectedAnswer": "I like my subjects.",
+            "evaluation": {
+              "type": "normalised_text"
+            }
+          },
+          {
+            "itemId": "english-a1-m080-writing-ex01-i08",
+            "position": 8,
+            "audio": "tts:en-GB:I have a simple work schedule.",
+            "expectedAnswer": "I have a simple work schedule.",
+            "evaluation": {
+              "type": "normalised_text"
+            }
+          },
+          {
+            "itemId": "english-a1-m080-writing-ex01-i09",
+            "position": 9,
+            "audio": "tts:en-GB:I am good at speaking to people.",
+            "expectedAnswer": "I am good at speaking to people.",
+            "evaluation": {
+              "type": "normalised_text"
+            }
+          },
+          {
+            "itemId": "english-a1-m080-writing-ex01-i10",
+            "position": 10,
+            "audio": "tts:en-GB:This is my study and work profile.",
+            "expectedAnswer": "This is my study and work profile.",
+            "evaluation": {
+              "type": "normalised_text"
+            }
+          }
+        ],
+        "writingTask": "Escribe 5–6 frases sobre study and work profile. Utiliza al menos cinco palabras de la misión y la estructura linking ideas with and, but and because.",
+        "modelText": "I am a student. I study English and science. I work in a small shop. My routine is very busy. I can use a computer. My work starts at nine."
+      }
+    },
+    {
+      "sectionId": "english-a1-m080-speaking",
+      "sectionKey": "speaking",
+      "position": 7,
+      "title": "speaking",
+      "exercise": {
+        "exerciseId": "english-a1-m080-speaking-ex01",
+        "type": "speaking_prompts",
+        "items": [
+          {
+            "itemId": "english-a1-m080-speaking-ex01-i01",
+            "position": 1,
+            "prompt": "Say a sentence about this situation: Soy estudiante.",
+            "modelAnswer": "I am a student.",
+            "evaluation": {
+              "type": "transcription_feedback",
+              "transcriptionSeparateFromPronunciation": true
+            }
+          },
+          {
+            "itemId": "english-a1-m080-speaking-ex01-i02",
+            "position": 2,
+            "prompt": "Say a sentence about this situation: Estudio inglés y ciencias.",
+            "modelAnswer": "I study English and science.",
+            "evaluation": {
+              "type": "transcription_feedback",
+              "transcriptionSeparateFromPronunciation": true
+            }
+          },
+          {
+            "itemId": "english-a1-m080-speaking-ex01-i03",
+            "position": 3,
+            "prompt": "Say a sentence about this situation: Trabajo en una tienda pequeña.",
+            "modelAnswer": "I work in a small shop.",
+            "evaluation": {
+              "type": "transcription_feedback",
+              "transcriptionSeparateFromPronunciation": true
+            }
+          },
+          {
+            "itemId": "english-a1-m080-speaking-ex01-i04",
+            "position": 4,
+            "prompt": "Say a sentence about this situation: Mi rutina está muy ocupada.",
+            "modelAnswer": "My routine is very busy.",
+            "evaluation": {
+              "type": "transcription_feedback",
+              "transcriptionSeparateFromPronunciation": true
+            }
+          },
+          {
+            "itemId": "english-a1-m080-speaking-ex01-i05",
+            "position": 5,
+            "prompt": "Say a sentence about this situation: Sé usar un ordenador.",
+            "modelAnswer": "I can use a computer.",
+            "evaluation": {
+              "type": "transcription_feedback",
+              "transcriptionSeparateFromPronunciation": true
+            }
+          },
+          {
+            "itemId": "english-a1-m080-speaking-ex01-i06",
+            "position": 6,
+            "prompt": "Say a sentence about this situation: Mi trabajo empieza a las nueve.",
+            "modelAnswer": "My work starts at nine.",
+            "evaluation": {
+              "type": "transcription_feedback",
+              "transcriptionSeparateFromPronunciation": true
+            }
+          },
+          {
+            "itemId": "english-a1-m080-speaking-ex01-i07",
+            "position": 7,
+            "prompt": "Say a sentence about this situation: Me gustan mis asignaturas.",
+            "modelAnswer": "I like my subjects.",
+            "evaluation": {
+              "type": "transcription_feedback",
+              "transcriptionSeparateFromPronunciation": true
+            }
+          },
+          {
+            "itemId": "english-a1-m080-speaking-ex01-i08",
+            "position": 8,
+            "prompt": "Say a sentence about this situation: Tengo un horario de trabajo sencillo.",
+            "modelAnswer": "I have a simple work schedule.",
+            "evaluation": {
+              "type": "transcription_feedback",
+              "transcriptionSeparateFromPronunciation": true
+            }
+          },
+          {
+            "itemId": "english-a1-m080-speaking-ex01-i09",
+            "position": 9,
+            "prompt": "Say a sentence about this situation: Se me da bien hablar con la gente.",
+            "modelAnswer": "I am good at speaking to people.",
+            "evaluation": {
+              "type": "transcription_feedback",
+              "transcriptionSeparateFromPronunciation": true
+            }
+          },
+          {
+            "itemId": "english-a1-m080-speaking-ex01-i10",
+            "position": 10,
+            "prompt": "Say a sentence about this situation: Este es mi perfil de estudios y trabajo.",
+            "modelAnswer": "This is my study and work profile.",
+            "evaluation": {
+              "type": "transcription_feedback",
+              "transcriptionSeparateFromPronunciation": true
+            }
+          }
+        ]
+      }
+    },
+    {
+      "sectionId": "english-a1-m080-listening",
+      "sectionKey": "listening",
+      "position": 8,
+      "title": "listening",
+      "exercise": {
+        "exerciseId": "english-a1-m080-listening-ex01",
+        "type": "listening_gap_fill",
+        "items": [
+          {
+            "itemId": "english-a1-m080-listening-ex01-i01",
+            "position": 1,
+            "gapToken": "[[gap-01]]",
+            "expectedWordId": "english-a1-m080-listening-word-01"
+          },
+          {
+            "itemId": "english-a1-m080-listening-ex01-i02",
+            "position": 2,
+            "gapToken": "[[gap-02]]",
+            "expectedWordId": "english-a1-m080-listening-word-02"
+          },
+          {
+            "itemId": "english-a1-m080-listening-ex01-i03",
+            "position": 3,
+            "gapToken": "[[gap-03]]",
+            "expectedWordId": "english-a1-m080-listening-word-03"
+          },
+          {
+            "itemId": "english-a1-m080-listening-ex01-i04",
+            "position": 4,
+            "gapToken": "[[gap-04]]",
+            "expectedWordId": "english-a1-m080-listening-word-04"
+          },
+          {
+            "itemId": "english-a1-m080-listening-ex01-i05",
+            "position": 5,
+            "gapToken": "[[gap-05]]",
+            "expectedWordId": "english-a1-m080-listening-word-05"
+          },
+          {
+            "itemId": "english-a1-m080-listening-ex01-i06",
+            "position": 6,
+            "gapToken": "[[gap-06]]",
+            "expectedWordId": "english-a1-m080-listening-word-06"
+          },
+          {
+            "itemId": "english-a1-m080-listening-ex01-i07",
+            "position": 7,
+            "gapToken": "[[gap-07]]",
+            "expectedWordId": "english-a1-m080-listening-word-07"
+          },
+          {
+            "itemId": "english-a1-m080-listening-ex01-i08",
+            "position": 8,
+            "gapToken": "[[gap-08]]",
+            "expectedWordId": "english-a1-m080-listening-word-08"
+          },
+          {
+            "itemId": "english-a1-m080-listening-ex01-i09",
+            "position": 9,
+            "gapToken": "[[gap-09]]",
+            "expectedWordId": "english-a1-m080-listening-word-09"
+          },
+          {
+            "itemId": "english-a1-m080-listening-ex01-i10",
+            "position": 10,
+            "gapToken": "[[gap-10]]",
+            "expectedWordId": "english-a1-m080-listening-word-10"
+          }
+        ],
+        "content": {
+          "audio": "tts:en-GB:The key words for Study and Work Profile are: job, subjects, routine, skills, technology, schedule, student, work, study, experience. Listen and repeat each word carefully.",
+          "audioLocale": "en-GB",
+          "transcriptTemplate": "The key words for Study and Work Profile are: [[gap-01]], [[gap-02]], [[gap-03]], [[gap-04]], [[gap-05]], [[gap-06]], [[gap-07]], [[gap-08]], [[gap-09]], [[gap-10]]. Listen and repeat each word carefully.",
+          "wordBank": [
+            {
+              "wordId": "english-a1-m080-listening-word-01",
+              "word": "job"
+            },
+            {
+              "wordId": "english-a1-m080-listening-word-02",
+              "word": "subjects"
+            },
+            {
+              "wordId": "english-a1-m080-listening-word-03",
+              "word": "routine"
+            },
+            {
+              "wordId": "english-a1-m080-listening-word-04",
+              "word": "skills"
+            },
+            {
+              "wordId": "english-a1-m080-listening-word-05",
+              "word": "technology"
+            },
+            {
+              "wordId": "english-a1-m080-listening-word-06",
+              "word": "schedule"
+            },
+            {
+              "wordId": "english-a1-m080-listening-word-07",
+              "word": "student"
+            },
+            {
+              "wordId": "english-a1-m080-listening-word-08",
+              "word": "work"
+            },
+            {
+              "wordId": "english-a1-m080-listening-word-09",
+              "word": "study"
+            },
+            {
+              "wordId": "english-a1-m080-listening-word-10",
+              "word": "experience"
+            }
+          ],
+          "interaction": "select_place_move_replace"
+        }
+      }
+    }
+  ]
+}

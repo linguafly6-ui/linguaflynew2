@@ -1,0 +1,1205 @@
+{
+  "schemaVersion": "1.2.0",
+  "contentVersion": 1,
+  "course": {
+    "courseId": "english-a1",
+    "level": "A1",
+    "language": "en-GB"
+  },
+  "unit": {
+    "unitId": "english-a1-unit-08",
+    "courseId": "english-a1",
+    "position": 8,
+    "title": "Study, work and communication"
+  },
+  "mission": {
+    "missionId": "english-a1-m073",
+    "unitId": "english-a1-unit-08",
+    "position": 73,
+    "title": "Jobs and Workplaces"
+  },
+  "sections": [
+    {
+      "sectionId": "english-a1-m073-explore",
+      "sectionKey": "explore",
+      "position": 1,
+      "title": "explore",
+      "exercise": {
+        "exerciseId": "english-a1-m073-explore-ex01",
+        "type": "vocabulary_pairs",
+        "items": [
+          {
+            "itemId": "english-a1-m073-explore-ex01-i01",
+            "position": 1,
+            "english": "doctor",
+            "spanish": "médico/a",
+            "audio": "tts:en-GB:doctor"
+          },
+          {
+            "itemId": "english-a1-m073-explore-ex01-i02",
+            "position": 2,
+            "english": "teacher",
+            "spanish": "profesor/a",
+            "audio": "tts:en-GB:teacher"
+          },
+          {
+            "itemId": "english-a1-m073-explore-ex01-i03",
+            "position": 3,
+            "english": "shop assistant",
+            "spanish": "dependiente/a",
+            "audio": "tts:en-GB:shop assistant"
+          },
+          {
+            "itemId": "english-a1-m073-explore-ex01-i04",
+            "position": 4,
+            "english": "office",
+            "spanish": "oficina",
+            "audio": "tts:en-GB:office"
+          },
+          {
+            "itemId": "english-a1-m073-explore-ex01-i05",
+            "position": 5,
+            "english": "hospital",
+            "spanish": "hospital",
+            "audio": "tts:en-GB:hospital"
+          },
+          {
+            "itemId": "english-a1-m073-explore-ex01-i06",
+            "position": 6,
+            "english": "school",
+            "spanish": "colegio",
+            "audio": "tts:en-GB:school"
+          },
+          {
+            "itemId": "english-a1-m073-explore-ex01-i07",
+            "position": 7,
+            "english": "driver",
+            "spanish": "conductor/a",
+            "audio": "tts:en-GB:driver"
+          },
+          {
+            "itemId": "english-a1-m073-explore-ex01-i08",
+            "position": 8,
+            "english": "nurse",
+            "spanish": "enfermero/a",
+            "audio": "tts:en-GB:nurse"
+          },
+          {
+            "itemId": "english-a1-m073-explore-ex01-i09",
+            "position": 9,
+            "english": "restaurant",
+            "spanish": "restaurante",
+            "audio": "tts:en-GB:restaurant"
+          },
+          {
+            "itemId": "english-a1-m073-explore-ex01-i10",
+            "position": 10,
+            "english": "workplace",
+            "spanish": "lugar de trabajo",
+            "audio": "tts:en-GB:workplace"
+          }
+        ],
+        "theory": {
+          "title": "Vocabulary: Jobs and Workplaces",
+          "explanation": "Explora diez palabras y expresiones sobre jobs and workplaces. Escucha el modelo británico y relaciona cada palabra con su significado.",
+          "patterns": [
+            {
+              "label": "Useful language",
+              "pattern": "Short question + short answer",
+              "examples": [
+                "A doctor works in a hospital.",
+                "A teacher works at a school.",
+                "She is a shop assistant."
+              ]
+            }
+          ],
+          "tip": "Repite las expresiones y crea un ejemplo relacionado con tu vida."
+        }
+      }
+    },
+    {
+      "sectionId": "english-a1-m073-practice",
+      "sectionKey": "practice",
+      "position": 2,
+      "title": "practice",
+      "exercise": {
+        "exerciseId": "english-a1-m073-practice-ex01",
+        "type": "mixed_practice",
+        "items": [
+          {
+            "itemId": "english-a1-m073-practice-ex01-i01",
+            "position": 1,
+            "taskType": "translation_multiple_choice",
+            "prompt": "Traduce al español: “A doctor works in a hospital.”",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "Un médico trabaja en un hospital.",
+              "Ella es dependienta.",
+              "Él es conductor de autobús."
+            ],
+            "correctAnswer": "Un médico trabaja en un hospital.",
+            "sourceEnglish": "A doctor works in a hospital."
+          },
+          {
+            "itemId": "english-a1-m073-practice-ex01-i02",
+            "position": 2,
+            "taskType": "translation_multiple_choice",
+            "prompt": "Traduce al español: “A teacher works at a school.”",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "Un profesor trabaja en un colegio.",
+              "Mi padre trabaja en una oficina.",
+              "Trabajo en un restaurante."
+            ],
+            "correctAnswer": "Un profesor trabaja en un colegio.",
+            "sourceEnglish": "A teacher works at a school."
+          },
+          {
+            "itemId": "english-a1-m073-practice-ex01-i03",
+            "position": 3,
+            "taskType": "translation_multiple_choice",
+            "prompt": "Traduce al español: “She is a shop assistant.”",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "Ella es dependienta.",
+              "La enfermera es muy amable.",
+              "¿Dónde trabaja ella?"
+            ],
+            "correctAnswer": "Ella es dependienta.",
+            "sourceEnglish": "She is a shop assistant."
+          },
+          {
+            "itemId": "english-a1-m073-practice-ex01-i04",
+            "position": 4,
+            "taskType": "translation_multiple_choice",
+            "prompt": "Traduce al español: “My father works in an office.”",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "Mi padre trabaja en una oficina.",
+              "Él es conductor de autobús.",
+              "Este es mi lugar de trabajo."
+            ],
+            "correctAnswer": "Mi padre trabaja en una oficina.",
+            "sourceEnglish": "My father works in an office."
+          },
+          {
+            "itemId": "english-a1-m073-practice-ex01-i05",
+            "position": 5,
+            "taskType": "translation_multiple_choice",
+            "prompt": "Traduce al español: “The nurse is very kind.”",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "La enfermera es muy amable.",
+              "Trabajo en un restaurante.",
+              "El hospital está cerca del colegio."
+            ],
+            "correctAnswer": "La enfermera es muy amable.",
+            "sourceEnglish": "The nurse is very kind."
+          },
+          {
+            "itemId": "english-a1-m073-practice-ex01-i06",
+            "position": 6,
+            "taskType": "translation_multiple_choice",
+            "prompt": "Traduce al español: “He is a bus driver.”",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "Él es conductor de autobús.",
+              "¿Dónde trabaja ella?",
+              "Un médico trabaja en un hospital."
+            ],
+            "correctAnswer": "Él es conductor de autobús.",
+            "sourceEnglish": "He is a bus driver."
+          },
+          {
+            "itemId": "english-a1-m073-practice-ex01-i07",
+            "position": 7,
+            "taskType": "translation_multiple_choice",
+            "prompt": "Traduce al español: “I work in a restaurant.”",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "Trabajo en un restaurante.",
+              "Este es mi lugar de trabajo.",
+              "Un profesor trabaja en un colegio."
+            ],
+            "correctAnswer": "Trabajo en un restaurante.",
+            "sourceEnglish": "I work in a restaurant."
+          },
+          {
+            "itemId": "english-a1-m073-practice-ex01-i08",
+            "position": 8,
+            "taskType": "translation_multiple_choice",
+            "prompt": "Traduce al español: “Where does she work?”",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "¿Dónde trabaja ella?",
+              "El hospital está cerca del colegio.",
+              "Ella es dependienta."
+            ],
+            "correctAnswer": "¿Dónde trabaja ella?",
+            "sourceEnglish": "Where does she work?"
+          },
+          {
+            "itemId": "english-a1-m073-practice-ex01-i09",
+            "position": 9,
+            "taskType": "translation_multiple_choice",
+            "prompt": "Traduce al español: “This is my workplace.”",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "Este es mi lugar de trabajo.",
+              "Un médico trabaja en un hospital.",
+              "Mi padre trabaja en una oficina."
+            ],
+            "correctAnswer": "Este es mi lugar de trabajo.",
+            "sourceEnglish": "This is my workplace."
+          },
+          {
+            "itemId": "english-a1-m073-practice-ex01-i10",
+            "position": 10,
+            "taskType": "translation_multiple_choice",
+            "prompt": "Traduce al español: “The hospital is near the school.”",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "El hospital está cerca del colegio.",
+              "Un profesor trabaja en un colegio.",
+              "La enfermera es muy amable."
+            ],
+            "correctAnswer": "El hospital está cerca del colegio.",
+            "sourceEnglish": "The hospital is near the school."
+          },
+          {
+            "itemId": "english-a1-m073-practice-ex01-i11",
+            "position": 11,
+            "taskType": "listening_translation_multiple_choice",
+            "prompt": "Escucha el inglés y elige su significado.",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "Un médico trabaja en un hospital.",
+              "Mi padre trabaja en una oficina.",
+              "Trabajo en un restaurante."
+            ],
+            "correctAnswer": "Un médico trabaja en un hospital.",
+            "sourceEnglish": "A doctor works in a hospital."
+          },
+          {
+            "itemId": "english-a1-m073-practice-ex01-i12",
+            "position": 12,
+            "taskType": "listening_translation_multiple_choice",
+            "prompt": "Escucha el inglés y elige su significado.",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "Un profesor trabaja en un colegio.",
+              "La enfermera es muy amable.",
+              "¿Dónde trabaja ella?"
+            ],
+            "correctAnswer": "Un profesor trabaja en un colegio.",
+            "sourceEnglish": "A teacher works at a school."
+          },
+          {
+            "itemId": "english-a1-m073-practice-ex01-i13",
+            "position": 13,
+            "taskType": "listening_translation_multiple_choice",
+            "prompt": "Escucha el inglés y elige su significado.",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "Ella es dependienta.",
+              "Él es conductor de autobús.",
+              "Este es mi lugar de trabajo."
+            ],
+            "correctAnswer": "Ella es dependienta.",
+            "sourceEnglish": "She is a shop assistant."
+          },
+          {
+            "itemId": "english-a1-m073-practice-ex01-i14",
+            "position": 14,
+            "taskType": "listening_translation_multiple_choice",
+            "prompt": "Escucha el inglés y elige su significado.",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "Mi padre trabaja en una oficina.",
+              "Trabajo en un restaurante.",
+              "El hospital está cerca del colegio."
+            ],
+            "correctAnswer": "Mi padre trabaja en una oficina.",
+            "sourceEnglish": "My father works in an office."
+          },
+          {
+            "itemId": "english-a1-m073-practice-ex01-i15",
+            "position": 15,
+            "taskType": "listening_translation_multiple_choice",
+            "prompt": "Escucha el inglés y elige su significado.",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "La enfermera es muy amable.",
+              "¿Dónde trabaja ella?",
+              "Un médico trabaja en un hospital."
+            ],
+            "correctAnswer": "La enfermera es muy amable.",
+            "sourceEnglish": "The nurse is very kind."
+          },
+          {
+            "itemId": "english-a1-m073-practice-ex01-i16",
+            "position": 16,
+            "taskType": "listening_translation_multiple_choice",
+            "prompt": "Escucha el inglés y elige su significado.",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "Él es conductor de autobús.",
+              "Este es mi lugar de trabajo.",
+              "Un profesor trabaja en un colegio."
+            ],
+            "correctAnswer": "Él es conductor de autobús.",
+            "sourceEnglish": "He is a bus driver."
+          },
+          {
+            "itemId": "english-a1-m073-practice-ex01-i17",
+            "position": 17,
+            "taskType": "listening_translation_multiple_choice",
+            "prompt": "Escucha el inglés y elige su significado.",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "Trabajo en un restaurante.",
+              "El hospital está cerca del colegio.",
+              "Ella es dependienta."
+            ],
+            "correctAnswer": "Trabajo en un restaurante.",
+            "sourceEnglish": "I work in a restaurant."
+          },
+          {
+            "itemId": "english-a1-m073-practice-ex01-i18",
+            "position": 18,
+            "taskType": "listening_translation_multiple_choice",
+            "prompt": "Escucha el inglés y elige su significado.",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "¿Dónde trabaja ella?",
+              "Un médico trabaja en un hospital.",
+              "Mi padre trabaja en una oficina."
+            ],
+            "correctAnswer": "¿Dónde trabaja ella?",
+            "sourceEnglish": "Where does she work?"
+          },
+          {
+            "itemId": "english-a1-m073-practice-ex01-i19",
+            "position": 19,
+            "taskType": "listening_translation_multiple_choice",
+            "prompt": "Escucha el inglés y elige su significado.",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "Este es mi lugar de trabajo.",
+              "Un profesor trabaja en un colegio.",
+              "La enfermera es muy amable."
+            ],
+            "correctAnswer": "Este es mi lugar de trabajo.",
+            "sourceEnglish": "This is my workplace."
+          },
+          {
+            "itemId": "english-a1-m073-practice-ex01-i20",
+            "position": 20,
+            "taskType": "listening_translation_multiple_choice",
+            "prompt": "Escucha el inglés y elige su significado.",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "El hospital está cerca del colegio.",
+              "Ella es dependienta.",
+              "Él es conductor de autobús."
+            ],
+            "correctAnswer": "El hospital está cerca del colegio.",
+            "sourceEnglish": "The hospital is near the school."
+          }
+        ]
+      }
+    },
+    {
+      "sectionId": "english-a1-m073-grammar",
+      "sectionKey": "grammar",
+      "position": 3,
+      "title": "grammar",
+      "exercise": {
+        "exerciseId": "english-a1-m073-grammar-ex01",
+        "type": "grammar",
+        "items": [
+          {
+            "itemId": "english-a1-m073-grammar-ex01-i01",
+            "position": 1,
+            "prompt": "A nurse ___ in a hospital.",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "works",
+              "work",
+              "working"
+            ],
+            "correctAnswer": "works"
+          },
+          {
+            "itemId": "english-a1-m073-grammar-ex01-i02",
+            "position": 2,
+            "prompt": "Teachers ___ children.",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "teach",
+              "teaches",
+              "teaching"
+            ],
+            "correctAnswer": "teach"
+          },
+          {
+            "itemId": "english-a1-m073-grammar-ex01-i03",
+            "position": 3,
+            "prompt": "My father ___ in an office.",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "works",
+              "work",
+              "working"
+            ],
+            "correctAnswer": "works"
+          },
+          {
+            "itemId": "english-a1-m073-grammar-ex01-i04",
+            "position": 4,
+            "prompt": "A chef ___ food.",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "cooks",
+              "cook",
+              "cooking"
+            ],
+            "correctAnswer": "cooks"
+          },
+          {
+            "itemId": "english-a1-m073-grammar-ex01-i05",
+            "position": 5,
+            "prompt": "Doctors ___ people.",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "help",
+              "helps",
+              "helping"
+            ],
+            "correctAnswer": "help"
+          },
+          {
+            "itemId": "english-a1-m073-grammar-ex01-i06",
+            "position": 6,
+            "prompt": "She ___ in a school.",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "works",
+              "work",
+              "working"
+            ],
+            "correctAnswer": "works"
+          },
+          {
+            "itemId": "english-a1-m073-grammar-ex01-i07",
+            "position": 7,
+            "prompt": "He ___ English.",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "teaches",
+              "teach",
+              "teaching"
+            ],
+            "correctAnswer": "teaches"
+          },
+          {
+            "itemId": "english-a1-m073-grammar-ex01-i08",
+            "position": 8,
+            "prompt": "A driver ___ a bus.",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "drives",
+              "drive",
+              "driving"
+            ],
+            "correctAnswer": "drives"
+          },
+          {
+            "itemId": "english-a1-m073-grammar-ex01-i09",
+            "position": 9,
+            "prompt": "They ___ in a shop.",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "work",
+              "works",
+              "working"
+            ],
+            "correctAnswer": "work"
+          },
+          {
+            "itemId": "english-a1-m073-grammar-ex01-i10",
+            "position": 10,
+            "prompt": "My aunt ___ patients.",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "helps",
+              "help",
+              "helping"
+            ],
+            "correctAnswer": "helps"
+          }
+        ],
+        "theory": {
+          "title": "Present simple: jobs and workplaces",
+          "explanation": "Usamos el presente simple para describir trabajos y rutinas. En he/she/it el verbo suele terminar en -s o -es.",
+          "patterns": [
+            {
+              "label": "Model",
+              "pattern": "A nurse works in a hospital",
+              "examples": [
+                "A nurse works in a hospital",
+                "A teacher teaches children."
+              ]
+            }
+          ],
+          "tip": "Lee los ejemplos y comprueba cómo cambia la estructura."
+        }
+      }
+    },
+    {
+      "sectionId": "english-a1-m073-pronunciation",
+      "sectionKey": "pronunciation",
+      "position": 4,
+      "title": "pronunciation",
+      "exercise": {
+        "exerciseId": "english-a1-m073-pronunciation-ex01",
+        "type": "pronunciation_cards",
+        "items": [
+          {
+            "itemId": "english-a1-m073-pronunciation-ex01-i01",
+            "position": 1,
+            "word": "doctor",
+            "translation": "médico/a",
+            "pronunciationGuide": "Listen to the en-GB model and keep the final consonant clear.",
+            "audio": "tts:en-GB:doctor"
+          },
+          {
+            "itemId": "english-a1-m073-pronunciation-ex01-i02",
+            "position": 2,
+            "word": "teacher",
+            "translation": "profesor/a",
+            "pronunciationGuide": "Listen to the en-GB model and keep the final consonant clear.",
+            "audio": "tts:en-GB:teacher"
+          },
+          {
+            "itemId": "english-a1-m073-pronunciation-ex01-i03",
+            "position": 3,
+            "word": "shop assistant",
+            "translation": "dependiente/a",
+            "pronunciationGuide": "Listen to the phrase as one unit and notice its main stress.",
+            "audio": "tts:en-GB:shop assistant"
+          },
+          {
+            "itemId": "english-a1-m073-pronunciation-ex01-i04",
+            "position": 4,
+            "word": "office",
+            "translation": "oficina",
+            "pronunciationGuide": "Listen to the en-GB model and keep the final consonant clear.",
+            "audio": "tts:en-GB:office"
+          },
+          {
+            "itemId": "english-a1-m073-pronunciation-ex01-i05",
+            "position": 5,
+            "word": "hospital",
+            "translation": "hospital",
+            "pronunciationGuide": "Listen to the en-GB model and keep the final consonant clear.",
+            "audio": "tts:en-GB:hospital"
+          },
+          {
+            "itemId": "english-a1-m073-pronunciation-ex01-i06",
+            "position": 6,
+            "word": "school",
+            "translation": "colegio",
+            "pronunciationGuide": "Listen to the en-GB model and keep the final consonant clear.",
+            "audio": "tts:en-GB:school"
+          },
+          {
+            "itemId": "english-a1-m073-pronunciation-ex01-i07",
+            "position": 7,
+            "word": "driver",
+            "translation": "conductor/a",
+            "pronunciationGuide": "Listen to the en-GB model and keep the final consonant clear.",
+            "audio": "tts:en-GB:driver"
+          },
+          {
+            "itemId": "english-a1-m073-pronunciation-ex01-i08",
+            "position": 8,
+            "word": "nurse",
+            "translation": "enfermero/a",
+            "pronunciationGuide": "Listen to the en-GB model and keep the final consonant clear.",
+            "audio": "tts:en-GB:nurse"
+          },
+          {
+            "itemId": "english-a1-m073-pronunciation-ex01-i09",
+            "position": 9,
+            "word": "restaurant",
+            "translation": "restaurante",
+            "pronunciationGuide": "Listen to the en-GB model and keep the final consonant clear.",
+            "audio": "tts:en-GB:restaurant"
+          },
+          {
+            "itemId": "english-a1-m073-pronunciation-ex01-i10",
+            "position": 10,
+            "word": "workplace",
+            "translation": "lugar de trabajo",
+            "pronunciationGuide": "Listen to the en-GB model and keep the final consonant clear.",
+            "audio": "tts:en-GB:workplace"
+          }
+        ],
+        "focus": "Practica el ritmo y el acento de las palabras clave de Jobs and Workplaces."
+      }
+    },
+    {
+      "sectionId": "english-a1-m073-reading",
+      "sectionKey": "reading",
+      "position": 5,
+      "title": "reading",
+      "exercise": {
+        "exerciseId": "english-a1-m073-reading-ex01",
+        "type": "reading_comprehension",
+        "items": [
+          {
+            "itemId": "english-a1-m073-reading-ex01-i01",
+            "position": 1,
+            "prompt": "Which English sentence means “Un médico trabaja en un hospital.”?",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "A doctor works in a hospital.",
+              "A teacher works at a school.",
+              "She is a shop assistant."
+            ],
+            "correctAnswer": "A doctor works in a hospital."
+          },
+          {
+            "itemId": "english-a1-m073-reading-ex01-i02",
+            "position": 2,
+            "prompt": "Which English sentence means “Un profesor trabaja en un colegio.”?",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "A teacher works at a school.",
+              "She is a shop assistant.",
+              "My father works in an office."
+            ],
+            "correctAnswer": "A teacher works at a school."
+          },
+          {
+            "itemId": "english-a1-m073-reading-ex01-i03",
+            "position": 3,
+            "prompt": "Which English sentence means “Ella es dependienta.”?",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "She is a shop assistant.",
+              "My father works in an office.",
+              "The nurse is very kind."
+            ],
+            "correctAnswer": "She is a shop assistant."
+          },
+          {
+            "itemId": "english-a1-m073-reading-ex01-i04",
+            "position": 4,
+            "prompt": "Which English sentence means “Mi padre trabaja en una oficina.”?",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "My father works in an office.",
+              "The nurse is very kind.",
+              "He is a bus driver."
+            ],
+            "correctAnswer": "My father works in an office."
+          },
+          {
+            "itemId": "english-a1-m073-reading-ex01-i05",
+            "position": 5,
+            "prompt": "Which English sentence means “La enfermera es muy amable.”?",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "The nurse is very kind.",
+              "He is a bus driver.",
+              "I work in a restaurant."
+            ],
+            "correctAnswer": "The nurse is very kind."
+          },
+          {
+            "itemId": "english-a1-m073-reading-ex01-i06",
+            "position": 6,
+            "prompt": "Which English sentence means “Él es conductor de autobús.”?",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "He is a bus driver.",
+              "I work in a restaurant.",
+              "Where does she work?"
+            ],
+            "correctAnswer": "He is a bus driver."
+          },
+          {
+            "itemId": "english-a1-m073-reading-ex01-i07",
+            "position": 7,
+            "prompt": "Which English sentence means “Trabajo en un restaurante.”?",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "I work in a restaurant.",
+              "Where does she work?",
+              "This is my workplace."
+            ],
+            "correctAnswer": "I work in a restaurant."
+          },
+          {
+            "itemId": "english-a1-m073-reading-ex01-i08",
+            "position": 8,
+            "prompt": "Which English sentence means “¿Dónde trabaja ella?”?",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "Where does she work?",
+              "This is my workplace.",
+              "The hospital is near the school."
+            ],
+            "correctAnswer": "Where does she work?"
+          },
+          {
+            "itemId": "english-a1-m073-reading-ex01-i09",
+            "position": 9,
+            "prompt": "Which English sentence means “Este es mi lugar de trabajo.”?",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "This is my workplace.",
+              "The hospital is near the school.",
+              "A doctor works in a hospital."
+            ],
+            "correctAnswer": "This is my workplace."
+          },
+          {
+            "itemId": "english-a1-m073-reading-ex01-i10",
+            "position": 10,
+            "prompt": "Which English sentence means “El hospital está cerca del colegio.”?",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "The hospital is near the school.",
+              "A doctor works in a hospital.",
+              "A teacher works at a school."
+            ],
+            "correctAnswer": "The hospital is near the school."
+          }
+        ],
+        "content": {
+          "passageId": "english-a1-m073-reading-passage-01",
+          "passage": "A doctor works in a hospital. A teacher works at a school. She is a shop assistant. My father works in an office. The nurse is very kind. He is a bus driver."
+        }
+      }
+    },
+    {
+      "sectionId": "english-a1-m073-writing",
+      "sectionKey": "writing",
+      "position": 6,
+      "title": "writing",
+      "exercise": {
+        "exerciseId": "english-a1-m073-writing-ex01",
+        "type": "dictation",
+        "items": [
+          {
+            "itemId": "english-a1-m073-writing-ex01-i01",
+            "position": 1,
+            "audio": "tts:en-GB:A doctor works in a hospital.",
+            "expectedAnswer": "A doctor works in a hospital.",
+            "evaluation": {
+              "type": "normalised_text"
+            }
+          },
+          {
+            "itemId": "english-a1-m073-writing-ex01-i02",
+            "position": 2,
+            "audio": "tts:en-GB:A teacher works at a school.",
+            "expectedAnswer": "A teacher works at a school.",
+            "evaluation": {
+              "type": "normalised_text"
+            }
+          },
+          {
+            "itemId": "english-a1-m073-writing-ex01-i03",
+            "position": 3,
+            "audio": "tts:en-GB:She is a shop assistant.",
+            "expectedAnswer": "She is a shop assistant.",
+            "evaluation": {
+              "type": "normalised_text"
+            }
+          },
+          {
+            "itemId": "english-a1-m073-writing-ex01-i04",
+            "position": 4,
+            "audio": "tts:en-GB:My father works in an office.",
+            "expectedAnswer": "My father works in an office.",
+            "evaluation": {
+              "type": "normalised_text"
+            }
+          },
+          {
+            "itemId": "english-a1-m073-writing-ex01-i05",
+            "position": 5,
+            "audio": "tts:en-GB:The nurse is very kind.",
+            "expectedAnswer": "The nurse is very kind.",
+            "evaluation": {
+              "type": "normalised_text"
+            }
+          },
+          {
+            "itemId": "english-a1-m073-writing-ex01-i06",
+            "position": 6,
+            "audio": "tts:en-GB:He is a bus driver.",
+            "expectedAnswer": "He is a bus driver.",
+            "evaluation": {
+              "type": "normalised_text"
+            }
+          },
+          {
+            "itemId": "english-a1-m073-writing-ex01-i07",
+            "position": 7,
+            "audio": "tts:en-GB:I work in a restaurant.",
+            "expectedAnswer": "I work in a restaurant.",
+            "evaluation": {
+              "type": "normalised_text"
+            }
+          },
+          {
+            "itemId": "english-a1-m073-writing-ex01-i08",
+            "position": 8,
+            "audio": "tts:en-GB:Where does she work?",
+            "expectedAnswer": "Where does she work?",
+            "evaluation": {
+              "type": "normalised_text"
+            }
+          },
+          {
+            "itemId": "english-a1-m073-writing-ex01-i09",
+            "position": 9,
+            "audio": "tts:en-GB:This is my workplace.",
+            "expectedAnswer": "This is my workplace.",
+            "evaluation": {
+              "type": "normalised_text"
+            }
+          },
+          {
+            "itemId": "english-a1-m073-writing-ex01-i10",
+            "position": 10,
+            "audio": "tts:en-GB:The hospital is near the school.",
+            "expectedAnswer": "The hospital is near the school.",
+            "evaluation": {
+              "type": "normalised_text"
+            }
+          }
+        ],
+        "writingTask": "Escribe 5–6 frases sobre jobs and workplaces. Utiliza al menos cinco palabras de la misión y la estructura present simple: jobs and workplaces.",
+        "modelText": "A doctor works in a hospital. A teacher works at a school. She is a shop assistant. My father works in an office. The nurse is very kind. He is a bus driver."
+      }
+    },
+    {
+      "sectionId": "english-a1-m073-speaking",
+      "sectionKey": "speaking",
+      "position": 7,
+      "title": "speaking",
+      "exercise": {
+        "exerciseId": "english-a1-m073-speaking-ex01",
+        "type": "speaking_prompts",
+        "items": [
+          {
+            "itemId": "english-a1-m073-speaking-ex01-i01",
+            "position": 1,
+            "prompt": "Say a sentence about this situation: Un médico trabaja en un hospital.",
+            "modelAnswer": "A doctor works in a hospital.",
+            "evaluation": {
+              "type": "transcription_feedback",
+              "transcriptionSeparateFromPronunciation": true
+            }
+          },
+          {
+            "itemId": "english-a1-m073-speaking-ex01-i02",
+            "position": 2,
+            "prompt": "Say a sentence about this situation: Un profesor trabaja en un colegio.",
+            "modelAnswer": "A teacher works at a school.",
+            "evaluation": {
+              "type": "transcription_feedback",
+              "transcriptionSeparateFromPronunciation": true
+            }
+          },
+          {
+            "itemId": "english-a1-m073-speaking-ex01-i03",
+            "position": 3,
+            "prompt": "Say a sentence about this situation: Ella es dependienta.",
+            "modelAnswer": "She is a shop assistant.",
+            "evaluation": {
+              "type": "transcription_feedback",
+              "transcriptionSeparateFromPronunciation": true
+            }
+          },
+          {
+            "itemId": "english-a1-m073-speaking-ex01-i04",
+            "position": 4,
+            "prompt": "Say a sentence about this situation: Mi padre trabaja en una oficina.",
+            "modelAnswer": "My father works in an office.",
+            "evaluation": {
+              "type": "transcription_feedback",
+              "transcriptionSeparateFromPronunciation": true
+            }
+          },
+          {
+            "itemId": "english-a1-m073-speaking-ex01-i05",
+            "position": 5,
+            "prompt": "Say a sentence about this situation: La enfermera es muy amable.",
+            "modelAnswer": "The nurse is very kind.",
+            "evaluation": {
+              "type": "transcription_feedback",
+              "transcriptionSeparateFromPronunciation": true
+            }
+          },
+          {
+            "itemId": "english-a1-m073-speaking-ex01-i06",
+            "position": 6,
+            "prompt": "Say a sentence about this situation: Él es conductor de autobús.",
+            "modelAnswer": "He is a bus driver.",
+            "evaluation": {
+              "type": "transcription_feedback",
+              "transcriptionSeparateFromPronunciation": true
+            }
+          },
+          {
+            "itemId": "english-a1-m073-speaking-ex01-i07",
+            "position": 7,
+            "prompt": "Say a sentence about this situation: Trabajo en un restaurante.",
+            "modelAnswer": "I work in a restaurant.",
+            "evaluation": {
+              "type": "transcription_feedback",
+              "transcriptionSeparateFromPronunciation": true
+            }
+          },
+          {
+            "itemId": "english-a1-m073-speaking-ex01-i08",
+            "position": 8,
+            "prompt": "Say a sentence about this situation: ¿Dónde trabaja ella?",
+            "modelAnswer": "Where does she work?",
+            "evaluation": {
+              "type": "transcription_feedback",
+              "transcriptionSeparateFromPronunciation": true
+            }
+          },
+          {
+            "itemId": "english-a1-m073-speaking-ex01-i09",
+            "position": 9,
+            "prompt": "Say a sentence about this situation: Este es mi lugar de trabajo.",
+            "modelAnswer": "This is my workplace.",
+            "evaluation": {
+              "type": "transcription_feedback",
+              "transcriptionSeparateFromPronunciation": true
+            }
+          },
+          {
+            "itemId": "english-a1-m073-speaking-ex01-i10",
+            "position": 10,
+            "prompt": "Say a sentence about this situation: El hospital está cerca del colegio.",
+            "modelAnswer": "The hospital is near the school.",
+            "evaluation": {
+              "type": "transcription_feedback",
+              "transcriptionSeparateFromPronunciation": true
+            }
+          }
+        ]
+      }
+    },
+    {
+      "sectionId": "english-a1-m073-listening",
+      "sectionKey": "listening",
+      "position": 8,
+      "title": "listening",
+      "exercise": {
+        "exerciseId": "english-a1-m073-listening-ex01",
+        "type": "listening_gap_fill",
+        "items": [
+          {
+            "itemId": "english-a1-m073-listening-ex01-i01",
+            "position": 1,
+            "gapToken": "[[gap-01]]",
+            "expectedWordId": "english-a1-m073-listening-word-01"
+          },
+          {
+            "itemId": "english-a1-m073-listening-ex01-i02",
+            "position": 2,
+            "gapToken": "[[gap-02]]",
+            "expectedWordId": "english-a1-m073-listening-word-02"
+          },
+          {
+            "itemId": "english-a1-m073-listening-ex01-i03",
+            "position": 3,
+            "gapToken": "[[gap-03]]",
+            "expectedWordId": "english-a1-m073-listening-word-03"
+          },
+          {
+            "itemId": "english-a1-m073-listening-ex01-i04",
+            "position": 4,
+            "gapToken": "[[gap-04]]",
+            "expectedWordId": "english-a1-m073-listening-word-04"
+          },
+          {
+            "itemId": "english-a1-m073-listening-ex01-i05",
+            "position": 5,
+            "gapToken": "[[gap-05]]",
+            "expectedWordId": "english-a1-m073-listening-word-05"
+          },
+          {
+            "itemId": "english-a1-m073-listening-ex01-i06",
+            "position": 6,
+            "gapToken": "[[gap-06]]",
+            "expectedWordId": "english-a1-m073-listening-word-06"
+          },
+          {
+            "itemId": "english-a1-m073-listening-ex01-i07",
+            "position": 7,
+            "gapToken": "[[gap-07]]",
+            "expectedWordId": "english-a1-m073-listening-word-07"
+          },
+          {
+            "itemId": "english-a1-m073-listening-ex01-i08",
+            "position": 8,
+            "gapToken": "[[gap-08]]",
+            "expectedWordId": "english-a1-m073-listening-word-08"
+          },
+          {
+            "itemId": "english-a1-m073-listening-ex01-i09",
+            "position": 9,
+            "gapToken": "[[gap-09]]",
+            "expectedWordId": "english-a1-m073-listening-word-09"
+          },
+          {
+            "itemId": "english-a1-m073-listening-ex01-i10",
+            "position": 10,
+            "gapToken": "[[gap-10]]",
+            "expectedWordId": "english-a1-m073-listening-word-10"
+          }
+        ],
+        "content": {
+          "audio": "tts:en-GB:The key words for Jobs and Workplaces are: doctor, teacher, shop assistant, office, hospital, school, driver, nurse, restaurant, workplace. Listen and repeat each word carefully.",
+          "audioLocale": "en-GB",
+          "transcriptTemplate": "The key words for Jobs and Workplaces are: [[gap-01]], [[gap-02]], [[gap-03]], [[gap-04]], [[gap-05]], [[gap-06]], [[gap-07]], [[gap-08]], [[gap-09]], [[gap-10]]. Listen and repeat each word carefully.",
+          "wordBank": [
+            {
+              "wordId": "english-a1-m073-listening-word-01",
+              "word": "doctor"
+            },
+            {
+              "wordId": "english-a1-m073-listening-word-02",
+              "word": "teacher"
+            },
+            {
+              "wordId": "english-a1-m073-listening-word-03",
+              "word": "shop assistant"
+            },
+            {
+              "wordId": "english-a1-m073-listening-word-04",
+              "word": "office"
+            },
+            {
+              "wordId": "english-a1-m073-listening-word-05",
+              "word": "hospital"
+            },
+            {
+              "wordId": "english-a1-m073-listening-word-06",
+              "word": "school"
+            },
+            {
+              "wordId": "english-a1-m073-listening-word-07",
+              "word": "driver"
+            },
+            {
+              "wordId": "english-a1-m073-listening-word-08",
+              "word": "nurse"
+            },
+            {
+              "wordId": "english-a1-m073-listening-word-09",
+              "word": "restaurant"
+            },
+            {
+              "wordId": "english-a1-m073-listening-word-10",
+              "word": "workplace"
+            }
+          ],
+          "interaction": "select_place_move_replace"
+        }
+      }
+    }
+  ]
+}

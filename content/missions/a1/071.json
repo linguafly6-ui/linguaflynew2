@@ -1,0 +1,1205 @@
+{
+  "schemaVersion": "1.2.0",
+  "contentVersion": 1,
+  "course": {
+    "courseId": "english-a1",
+    "level": "A1",
+    "language": "en-GB"
+  },
+  "unit": {
+    "unitId": "english-a1-unit-08",
+    "courseId": "english-a1",
+    "position": 8,
+    "title": "Study, work and communication"
+  },
+  "mission": {
+    "missionId": "english-a1-m071",
+    "unitId": "english-a1-unit-08",
+    "position": 71,
+    "title": "School Subjects"
+  },
+  "sections": [
+    {
+      "sectionId": "english-a1-m071-explore",
+      "sectionKey": "explore",
+      "position": 1,
+      "title": "explore",
+      "exercise": {
+        "exerciseId": "english-a1-m071-explore-ex01",
+        "type": "vocabulary_pairs",
+        "items": [
+          {
+            "itemId": "english-a1-m071-explore-ex01-i01",
+            "position": 1,
+            "english": "English",
+            "spanish": "inglés",
+            "audio": "tts:en-GB:English"
+          },
+          {
+            "itemId": "english-a1-m071-explore-ex01-i02",
+            "position": 2,
+            "english": "maths",
+            "spanish": "matemáticas",
+            "audio": "tts:en-GB:maths"
+          },
+          {
+            "itemId": "english-a1-m071-explore-ex01-i03",
+            "position": 3,
+            "english": "science",
+            "spanish": "ciencias",
+            "audio": "tts:en-GB:science"
+          },
+          {
+            "itemId": "english-a1-m071-explore-ex01-i04",
+            "position": 4,
+            "english": "history",
+            "spanish": "historia",
+            "audio": "tts:en-GB:history"
+          },
+          {
+            "itemId": "english-a1-m071-explore-ex01-i05",
+            "position": 5,
+            "english": "geography",
+            "spanish": "geografía",
+            "audio": "tts:en-GB:geography"
+          },
+          {
+            "itemId": "english-a1-m071-explore-ex01-i06",
+            "position": 6,
+            "english": "art",
+            "spanish": "plástica",
+            "audio": "tts:en-GB:art"
+          },
+          {
+            "itemId": "english-a1-m071-explore-ex01-i07",
+            "position": 7,
+            "english": "notebook",
+            "spanish": "cuaderno",
+            "audio": "tts:en-GB:notebook"
+          },
+          {
+            "itemId": "english-a1-m071-explore-ex01-i08",
+            "position": 8,
+            "english": "ruler",
+            "spanish": "regla",
+            "audio": "tts:en-GB:ruler"
+          },
+          {
+            "itemId": "english-a1-m071-explore-ex01-i09",
+            "position": 9,
+            "english": "timetable",
+            "spanish": "horario",
+            "audio": "tts:en-GB:timetable"
+          },
+          {
+            "itemId": "english-a1-m071-explore-ex01-i10",
+            "position": 10,
+            "english": "lesson",
+            "spanish": "clase",
+            "audio": "tts:en-GB:lesson"
+          }
+        ],
+        "theory": {
+          "title": "Vocabulary: School Subjects",
+          "explanation": "Explora diez palabras y expresiones sobre school subjects. Escucha el modelo británico y relaciona cada palabra con su significado.",
+          "patterns": [
+            {
+              "label": "Useful language",
+              "pattern": "Short question + short answer",
+              "examples": [
+                "My favourite subject is science.",
+                "We have English on Monday.",
+                "I need a notebook."
+              ]
+            }
+          ],
+          "tip": "Repite las expresiones y crea un ejemplo relacionado con tu vida."
+        }
+      }
+    },
+    {
+      "sectionId": "english-a1-m071-practice",
+      "sectionKey": "practice",
+      "position": 2,
+      "title": "practice",
+      "exercise": {
+        "exerciseId": "english-a1-m071-practice-ex01",
+        "type": "mixed_practice",
+        "items": [
+          {
+            "itemId": "english-a1-m071-practice-ex01-i01",
+            "position": 1,
+            "taskType": "translation_multiple_choice",
+            "prompt": "Traduce al español: “My favourite subject is science.”",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "Mi asignatura favorita es ciencias.",
+              "Necesito un cuaderno.",
+              "La clase empieza a las nueve."
+            ],
+            "correctAnswer": "Mi asignatura favorita es ciencias.",
+            "sourceEnglish": "My favourite subject is science."
+          },
+          {
+            "itemId": "english-a1-m071-practice-ex01-i02",
+            "position": 2,
+            "taskType": "translation_multiple_choice",
+            "prompt": "Traduce al español: “We have English on Monday.”",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "Tenemos inglés el lunes.",
+              "Las matemáticas son interesantes.",
+              "Estudio historia en el colegio."
+            ],
+            "correctAnswer": "Tenemos inglés el lunes.",
+            "sourceEnglish": "We have English on Monday."
+          },
+          {
+            "itemId": "english-a1-m071-practice-ex01-i03",
+            "position": 3,
+            "taskType": "translation_multiple_choice",
+            "prompt": "Traduce al español: “I need a notebook.”",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "Necesito un cuaderno.",
+              "¿Dónde está mi regla?",
+              "Nuestro horario está en la pared."
+            ],
+            "correctAnswer": "Necesito un cuaderno.",
+            "sourceEnglish": "I need a notebook."
+          },
+          {
+            "itemId": "english-a1-m071-practice-ex01-i04",
+            "position": 4,
+            "taskType": "translation_multiple_choice",
+            "prompt": "Traduce al español: “Maths is interesting.”",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "Las matemáticas son interesantes.",
+              "La clase empieza a las nueve.",
+              "Hoy tengo plástica."
+            ],
+            "correctAnswer": "Las matemáticas son interesantes.",
+            "sourceEnglish": "Maths is interesting."
+          },
+          {
+            "itemId": "english-a1-m071-practice-ex01-i05",
+            "position": 5,
+            "taskType": "translation_multiple_choice",
+            "prompt": "Traduce al español: “Where is my ruler?”",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "¿Dónde está mi regla?",
+              "Estudio historia en el colegio.",
+              "Ciencias es mi asignatura favorita."
+            ],
+            "correctAnswer": "¿Dónde está mi regla?",
+            "sourceEnglish": "Where is my ruler?"
+          },
+          {
+            "itemId": "english-a1-m071-practice-ex01-i06",
+            "position": 6,
+            "taskType": "translation_multiple_choice",
+            "prompt": "Traduce al español: “The lesson starts at nine.”",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "La clase empieza a las nueve.",
+              "Nuestro horario está en la pared.",
+              "Mi asignatura favorita es ciencias."
+            ],
+            "correctAnswer": "La clase empieza a las nueve.",
+            "sourceEnglish": "The lesson starts at nine."
+          },
+          {
+            "itemId": "english-a1-m071-practice-ex01-i07",
+            "position": 7,
+            "taskType": "translation_multiple_choice",
+            "prompt": "Traduce al español: “I study history at school.”",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "Estudio historia en el colegio.",
+              "Hoy tengo plástica.",
+              "Tenemos inglés el lunes."
+            ],
+            "correctAnswer": "Estudio historia en el colegio.",
+            "sourceEnglish": "I study history at school."
+          },
+          {
+            "itemId": "english-a1-m071-practice-ex01-i08",
+            "position": 8,
+            "taskType": "translation_multiple_choice",
+            "prompt": "Traduce al español: “Our timetable is on the wall.”",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "Nuestro horario está en la pared.",
+              "Ciencias es mi asignatura favorita.",
+              "Necesito un cuaderno."
+            ],
+            "correctAnswer": "Nuestro horario está en la pared.",
+            "sourceEnglish": "Our timetable is on the wall."
+          },
+          {
+            "itemId": "english-a1-m071-practice-ex01-i09",
+            "position": 9,
+            "taskType": "translation_multiple_choice",
+            "prompt": "Traduce al español: “I have art today.”",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "Hoy tengo plástica.",
+              "Mi asignatura favorita es ciencias.",
+              "Las matemáticas son interesantes."
+            ],
+            "correctAnswer": "Hoy tengo plástica.",
+            "sourceEnglish": "I have art today."
+          },
+          {
+            "itemId": "english-a1-m071-practice-ex01-i10",
+            "position": 10,
+            "taskType": "translation_multiple_choice",
+            "prompt": "Traduce al español: “Science is my favourite subject.”",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "Ciencias es mi asignatura favorita.",
+              "Tenemos inglés el lunes.",
+              "¿Dónde está mi regla?"
+            ],
+            "correctAnswer": "Ciencias es mi asignatura favorita.",
+            "sourceEnglish": "Science is my favourite subject."
+          },
+          {
+            "itemId": "english-a1-m071-practice-ex01-i11",
+            "position": 11,
+            "taskType": "listening_translation_multiple_choice",
+            "prompt": "Escucha el inglés y elige su significado.",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "Mi asignatura favorita es ciencias.",
+              "Las matemáticas son interesantes.",
+              "Estudio historia en el colegio."
+            ],
+            "correctAnswer": "Mi asignatura favorita es ciencias.",
+            "sourceEnglish": "My favourite subject is science."
+          },
+          {
+            "itemId": "english-a1-m071-practice-ex01-i12",
+            "position": 12,
+            "taskType": "listening_translation_multiple_choice",
+            "prompt": "Escucha el inglés y elige su significado.",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "Tenemos inglés el lunes.",
+              "¿Dónde está mi regla?",
+              "Nuestro horario está en la pared."
+            ],
+            "correctAnswer": "Tenemos inglés el lunes.",
+            "sourceEnglish": "We have English on Monday."
+          },
+          {
+            "itemId": "english-a1-m071-practice-ex01-i13",
+            "position": 13,
+            "taskType": "listening_translation_multiple_choice",
+            "prompt": "Escucha el inglés y elige su significado.",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "Necesito un cuaderno.",
+              "La clase empieza a las nueve.",
+              "Hoy tengo plástica."
+            ],
+            "correctAnswer": "Necesito un cuaderno.",
+            "sourceEnglish": "I need a notebook."
+          },
+          {
+            "itemId": "english-a1-m071-practice-ex01-i14",
+            "position": 14,
+            "taskType": "listening_translation_multiple_choice",
+            "prompt": "Escucha el inglés y elige su significado.",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "Las matemáticas son interesantes.",
+              "Estudio historia en el colegio.",
+              "Ciencias es mi asignatura favorita."
+            ],
+            "correctAnswer": "Las matemáticas son interesantes.",
+            "sourceEnglish": "Maths is interesting."
+          },
+          {
+            "itemId": "english-a1-m071-practice-ex01-i15",
+            "position": 15,
+            "taskType": "listening_translation_multiple_choice",
+            "prompt": "Escucha el inglés y elige su significado.",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "¿Dónde está mi regla?",
+              "Nuestro horario está en la pared.",
+              "Mi asignatura favorita es ciencias."
+            ],
+            "correctAnswer": "¿Dónde está mi regla?",
+            "sourceEnglish": "Where is my ruler?"
+          },
+          {
+            "itemId": "english-a1-m071-practice-ex01-i16",
+            "position": 16,
+            "taskType": "listening_translation_multiple_choice",
+            "prompt": "Escucha el inglés y elige su significado.",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "La clase empieza a las nueve.",
+              "Hoy tengo plástica.",
+              "Tenemos inglés el lunes."
+            ],
+            "correctAnswer": "La clase empieza a las nueve.",
+            "sourceEnglish": "The lesson starts at nine."
+          },
+          {
+            "itemId": "english-a1-m071-practice-ex01-i17",
+            "position": 17,
+            "taskType": "listening_translation_multiple_choice",
+            "prompt": "Escucha el inglés y elige su significado.",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "Estudio historia en el colegio.",
+              "Ciencias es mi asignatura favorita.",
+              "Necesito un cuaderno."
+            ],
+            "correctAnswer": "Estudio historia en el colegio.",
+            "sourceEnglish": "I study history at school."
+          },
+          {
+            "itemId": "english-a1-m071-practice-ex01-i18",
+            "position": 18,
+            "taskType": "listening_translation_multiple_choice",
+            "prompt": "Escucha el inglés y elige su significado.",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "Nuestro horario está en la pared.",
+              "Mi asignatura favorita es ciencias.",
+              "Las matemáticas son interesantes."
+            ],
+            "correctAnswer": "Nuestro horario está en la pared.",
+            "sourceEnglish": "Our timetable is on the wall."
+          },
+          {
+            "itemId": "english-a1-m071-practice-ex01-i19",
+            "position": 19,
+            "taskType": "listening_translation_multiple_choice",
+            "prompt": "Escucha el inglés y elige su significado.",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "Hoy tengo plástica.",
+              "Tenemos inglés el lunes.",
+              "¿Dónde está mi regla?"
+            ],
+            "correctAnswer": "Hoy tengo plástica.",
+            "sourceEnglish": "I have art today."
+          },
+          {
+            "itemId": "english-a1-m071-practice-ex01-i20",
+            "position": 20,
+            "taskType": "listening_translation_multiple_choice",
+            "prompt": "Escucha el inglés y elige su significado.",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "Ciencias es mi asignatura favorita.",
+              "Necesito un cuaderno.",
+              "La clase empieza a las nueve."
+            ],
+            "correctAnswer": "Ciencias es mi asignatura favorita.",
+            "sourceEnglish": "Science is my favourite subject."
+          }
+        ]
+      }
+    },
+    {
+      "sectionId": "english-a1-m071-grammar",
+      "sectionKey": "grammar",
+      "position": 3,
+      "title": "grammar",
+      "exercise": {
+        "exerciseId": "english-a1-m071-grammar-ex01",
+        "type": "grammar",
+        "items": [
+          {
+            "itemId": "english-a1-m071-grammar-ex01-i01",
+            "position": 1,
+            "prompt": "I ___ English at school.",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "study",
+              "studies",
+              "studying"
+            ],
+            "correctAnswer": "study"
+          },
+          {
+            "itemId": "english-a1-m071-grammar-ex01-i02",
+            "position": 2,
+            "prompt": "She ___ maths.",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "likes",
+              "like",
+              "liking"
+            ],
+            "correctAnswer": "likes"
+          },
+          {
+            "itemId": "english-a1-m071-grammar-ex01-i03",
+            "position": 3,
+            "prompt": "They ___ history on Monday.",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "have",
+              "has",
+              "having"
+            ],
+            "correctAnswer": "have"
+          },
+          {
+            "itemId": "english-a1-m071-grammar-ex01-i04",
+            "position": 4,
+            "prompt": "He ___ science.",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "studies",
+              "study",
+              "studying"
+            ],
+            "correctAnswer": "studies"
+          },
+          {
+            "itemId": "english-a1-m071-grammar-ex01-i05",
+            "position": 5,
+            "prompt": "We ___ music lessons.",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "have",
+              "has",
+              "having"
+            ],
+            "correctAnswer": "have"
+          },
+          {
+            "itemId": "english-a1-m071-grammar-ex01-i06",
+            "position": 6,
+            "prompt": "My favourite subject ___ English.",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "is",
+              "are",
+              "am"
+            ],
+            "correctAnswer": "is"
+          },
+          {
+            "itemId": "english-a1-m071-grammar-ex01-i07",
+            "position": 7,
+            "prompt": "Tom ___ art very much.",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "likes",
+              "like",
+              "liking"
+            ],
+            "correctAnswer": "likes"
+          },
+          {
+            "itemId": "english-a1-m071-grammar-ex01-i08",
+            "position": 8,
+            "prompt": "I ___ books in class.",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "read",
+              "reads",
+              "reading"
+            ],
+            "correctAnswer": "read"
+          },
+          {
+            "itemId": "english-a1-m071-grammar-ex01-i09",
+            "position": 9,
+            "prompt": "She ___ to school at eight.",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "goes",
+              "go",
+              "going"
+            ],
+            "correctAnswer": "goes"
+          },
+          {
+            "itemId": "english-a1-m071-grammar-ex01-i10",
+            "position": 10,
+            "prompt": "They ___ computers.",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "use",
+              "uses",
+              "using"
+            ],
+            "correctAnswer": "use"
+          }
+        ],
+        "theory": {
+          "title": "Present simple for school subjects",
+          "explanation": "Usamos el presente simple para hablar de asignaturas y preferencias. En tercera persona singular añadimos -s al verbo.",
+          "patterns": [
+            {
+              "label": "Model",
+              "pattern": "I study English",
+              "examples": [
+                "I study English",
+                "She likes science."
+              ]
+            }
+          ],
+          "tip": "Lee los ejemplos y comprueba cómo cambia la estructura."
+        }
+      }
+    },
+    {
+      "sectionId": "english-a1-m071-pronunciation",
+      "sectionKey": "pronunciation",
+      "position": 4,
+      "title": "pronunciation",
+      "exercise": {
+        "exerciseId": "english-a1-m071-pronunciation-ex01",
+        "type": "pronunciation_cards",
+        "items": [
+          {
+            "itemId": "english-a1-m071-pronunciation-ex01-i01",
+            "position": 1,
+            "word": "English",
+            "translation": "inglés",
+            "pronunciationGuide": "Listen to the en-GB model and keep the final consonant clear.",
+            "audio": "tts:en-GB:English"
+          },
+          {
+            "itemId": "english-a1-m071-pronunciation-ex01-i02",
+            "position": 2,
+            "word": "maths",
+            "translation": "matemáticas",
+            "pronunciationGuide": "Listen to the en-GB model and keep the final consonant clear.",
+            "audio": "tts:en-GB:maths"
+          },
+          {
+            "itemId": "english-a1-m071-pronunciation-ex01-i03",
+            "position": 3,
+            "word": "science",
+            "translation": "ciencias",
+            "pronunciationGuide": "Listen to the en-GB model and keep the final consonant clear.",
+            "audio": "tts:en-GB:science"
+          },
+          {
+            "itemId": "english-a1-m071-pronunciation-ex01-i04",
+            "position": 4,
+            "word": "history",
+            "translation": "historia",
+            "pronunciationGuide": "Listen to the en-GB model and keep the final consonant clear.",
+            "audio": "tts:en-GB:history"
+          },
+          {
+            "itemId": "english-a1-m071-pronunciation-ex01-i05",
+            "position": 5,
+            "word": "geography",
+            "translation": "geografía",
+            "pronunciationGuide": "Listen to the en-GB model and keep the final consonant clear.",
+            "audio": "tts:en-GB:geography"
+          },
+          {
+            "itemId": "english-a1-m071-pronunciation-ex01-i06",
+            "position": 6,
+            "word": "art",
+            "translation": "plástica",
+            "pronunciationGuide": "Listen to the en-GB model and keep the final consonant clear.",
+            "audio": "tts:en-GB:art"
+          },
+          {
+            "itemId": "english-a1-m071-pronunciation-ex01-i07",
+            "position": 7,
+            "word": "notebook",
+            "translation": "cuaderno",
+            "pronunciationGuide": "Listen to the en-GB model and keep the final consonant clear.",
+            "audio": "tts:en-GB:notebook"
+          },
+          {
+            "itemId": "english-a1-m071-pronunciation-ex01-i08",
+            "position": 8,
+            "word": "ruler",
+            "translation": "regla",
+            "pronunciationGuide": "Listen to the en-GB model and keep the final consonant clear.",
+            "audio": "tts:en-GB:ruler"
+          },
+          {
+            "itemId": "english-a1-m071-pronunciation-ex01-i09",
+            "position": 9,
+            "word": "timetable",
+            "translation": "horario",
+            "pronunciationGuide": "Listen to the en-GB model and keep the final consonant clear.",
+            "audio": "tts:en-GB:timetable"
+          },
+          {
+            "itemId": "english-a1-m071-pronunciation-ex01-i10",
+            "position": 10,
+            "word": "lesson",
+            "translation": "clase",
+            "pronunciationGuide": "Listen to the en-GB model and keep the final consonant clear.",
+            "audio": "tts:en-GB:lesson"
+          }
+        ],
+        "focus": "Practica el ritmo y el acento de las palabras clave de School Subjects."
+      }
+    },
+    {
+      "sectionId": "english-a1-m071-reading",
+      "sectionKey": "reading",
+      "position": 5,
+      "title": "reading",
+      "exercise": {
+        "exerciseId": "english-a1-m071-reading-ex01",
+        "type": "reading_comprehension",
+        "items": [
+          {
+            "itemId": "english-a1-m071-reading-ex01-i01",
+            "position": 1,
+            "prompt": "Which English sentence means “Mi asignatura favorita es ciencias.”?",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "My favourite subject is science.",
+              "We have English on Monday.",
+              "I need a notebook."
+            ],
+            "correctAnswer": "My favourite subject is science."
+          },
+          {
+            "itemId": "english-a1-m071-reading-ex01-i02",
+            "position": 2,
+            "prompt": "Which English sentence means “Tenemos inglés el lunes.”?",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "We have English on Monday.",
+              "I need a notebook.",
+              "Maths is interesting."
+            ],
+            "correctAnswer": "We have English on Monday."
+          },
+          {
+            "itemId": "english-a1-m071-reading-ex01-i03",
+            "position": 3,
+            "prompt": "Which English sentence means “Necesito un cuaderno.”?",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "I need a notebook.",
+              "Maths is interesting.",
+              "Where is my ruler?"
+            ],
+            "correctAnswer": "I need a notebook."
+          },
+          {
+            "itemId": "english-a1-m071-reading-ex01-i04",
+            "position": 4,
+            "prompt": "Which English sentence means “Las matemáticas son interesantes.”?",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "Maths is interesting.",
+              "Where is my ruler?",
+              "The lesson starts at nine."
+            ],
+            "correctAnswer": "Maths is interesting."
+          },
+          {
+            "itemId": "english-a1-m071-reading-ex01-i05",
+            "position": 5,
+            "prompt": "Which English sentence means “¿Dónde está mi regla?”?",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "Where is my ruler?",
+              "The lesson starts at nine.",
+              "I study history at school."
+            ],
+            "correctAnswer": "Where is my ruler?"
+          },
+          {
+            "itemId": "english-a1-m071-reading-ex01-i06",
+            "position": 6,
+            "prompt": "Which English sentence means “La clase empieza a las nueve.”?",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "The lesson starts at nine.",
+              "I study history at school.",
+              "Our timetable is on the wall."
+            ],
+            "correctAnswer": "The lesson starts at nine."
+          },
+          {
+            "itemId": "english-a1-m071-reading-ex01-i07",
+            "position": 7,
+            "prompt": "Which English sentence means “Estudio historia en el colegio.”?",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "I study history at school.",
+              "Our timetable is on the wall.",
+              "I have art today."
+            ],
+            "correctAnswer": "I study history at school."
+          },
+          {
+            "itemId": "english-a1-m071-reading-ex01-i08",
+            "position": 8,
+            "prompt": "Which English sentence means “Nuestro horario está en la pared.”?",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "Our timetable is on the wall.",
+              "I have art today.",
+              "Science is my favourite subject."
+            ],
+            "correctAnswer": "Our timetable is on the wall."
+          },
+          {
+            "itemId": "english-a1-m071-reading-ex01-i09",
+            "position": 9,
+            "prompt": "Which English sentence means “Hoy tengo plástica.”?",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "I have art today.",
+              "Science is my favourite subject.",
+              "My favourite subject is science."
+            ],
+            "correctAnswer": "I have art today."
+          },
+          {
+            "itemId": "english-a1-m071-reading-ex01-i10",
+            "position": 10,
+            "prompt": "Which English sentence means “Ciencias es mi asignatura favorita.”?",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "Science is my favourite subject.",
+              "My favourite subject is science.",
+              "We have English on Monday."
+            ],
+            "correctAnswer": "Science is my favourite subject."
+          }
+        ],
+        "content": {
+          "passageId": "english-a1-m071-reading-passage-01",
+          "passage": "My favourite subject is science. We have English on Monday. I need a notebook. Maths is interesting. Where is my ruler? The lesson starts at nine."
+        }
+      }
+    },
+    {
+      "sectionId": "english-a1-m071-writing",
+      "sectionKey": "writing",
+      "position": 6,
+      "title": "writing",
+      "exercise": {
+        "exerciseId": "english-a1-m071-writing-ex01",
+        "type": "dictation",
+        "items": [
+          {
+            "itemId": "english-a1-m071-writing-ex01-i01",
+            "position": 1,
+            "audio": "tts:en-GB:My favourite subject is science.",
+            "expectedAnswer": "My favourite subject is science.",
+            "evaluation": {
+              "type": "normalised_text"
+            }
+          },
+          {
+            "itemId": "english-a1-m071-writing-ex01-i02",
+            "position": 2,
+            "audio": "tts:en-GB:We have English on Monday.",
+            "expectedAnswer": "We have English on Monday.",
+            "evaluation": {
+              "type": "normalised_text"
+            }
+          },
+          {
+            "itemId": "english-a1-m071-writing-ex01-i03",
+            "position": 3,
+            "audio": "tts:en-GB:I need a notebook.",
+            "expectedAnswer": "I need a notebook.",
+            "evaluation": {
+              "type": "normalised_text"
+            }
+          },
+          {
+            "itemId": "english-a1-m071-writing-ex01-i04",
+            "position": 4,
+            "audio": "tts:en-GB:Maths is interesting.",
+            "expectedAnswer": "Maths is interesting.",
+            "evaluation": {
+              "type": "normalised_text"
+            }
+          },
+          {
+            "itemId": "english-a1-m071-writing-ex01-i05",
+            "position": 5,
+            "audio": "tts:en-GB:Where is my ruler?",
+            "expectedAnswer": "Where is my ruler?",
+            "evaluation": {
+              "type": "normalised_text"
+            }
+          },
+          {
+            "itemId": "english-a1-m071-writing-ex01-i06",
+            "position": 6,
+            "audio": "tts:en-GB:The lesson starts at nine.",
+            "expectedAnswer": "The lesson starts at nine.",
+            "evaluation": {
+              "type": "normalised_text"
+            }
+          },
+          {
+            "itemId": "english-a1-m071-writing-ex01-i07",
+            "position": 7,
+            "audio": "tts:en-GB:I study history at school.",
+            "expectedAnswer": "I study history at school.",
+            "evaluation": {
+              "type": "normalised_text"
+            }
+          },
+          {
+            "itemId": "english-a1-m071-writing-ex01-i08",
+            "position": 8,
+            "audio": "tts:en-GB:Our timetable is on the wall.",
+            "expectedAnswer": "Our timetable is on the wall.",
+            "evaluation": {
+              "type": "normalised_text"
+            }
+          },
+          {
+            "itemId": "english-a1-m071-writing-ex01-i09",
+            "position": 9,
+            "audio": "tts:en-GB:I have art today.",
+            "expectedAnswer": "I have art today.",
+            "evaluation": {
+              "type": "normalised_text"
+            }
+          },
+          {
+            "itemId": "english-a1-m071-writing-ex01-i10",
+            "position": 10,
+            "audio": "tts:en-GB:Science is my favourite subject.",
+            "expectedAnswer": "Science is my favourite subject.",
+            "evaluation": {
+              "type": "normalised_text"
+            }
+          }
+        ],
+        "writingTask": "Escribe 5–6 frases sobre school subjects. Utiliza al menos cinco palabras de la misión y la estructura present simple for school subjects.",
+        "modelText": "My favourite subject is science. We have English on Monday. I need a notebook. Maths is interesting. Where is my ruler? The lesson starts at nine."
+      }
+    },
+    {
+      "sectionId": "english-a1-m071-speaking",
+      "sectionKey": "speaking",
+      "position": 7,
+      "title": "speaking",
+      "exercise": {
+        "exerciseId": "english-a1-m071-speaking-ex01",
+        "type": "speaking_prompts",
+        "items": [
+          {
+            "itemId": "english-a1-m071-speaking-ex01-i01",
+            "position": 1,
+            "prompt": "Say a sentence about this situation: Mi asignatura favorita es ciencias.",
+            "modelAnswer": "My favourite subject is science.",
+            "evaluation": {
+              "type": "transcription_feedback",
+              "transcriptionSeparateFromPronunciation": true
+            }
+          },
+          {
+            "itemId": "english-a1-m071-speaking-ex01-i02",
+            "position": 2,
+            "prompt": "Say a sentence about this situation: Tenemos inglés el lunes.",
+            "modelAnswer": "We have English on Monday.",
+            "evaluation": {
+              "type": "transcription_feedback",
+              "transcriptionSeparateFromPronunciation": true
+            }
+          },
+          {
+            "itemId": "english-a1-m071-speaking-ex01-i03",
+            "position": 3,
+            "prompt": "Say a sentence about this situation: Necesito un cuaderno.",
+            "modelAnswer": "I need a notebook.",
+            "evaluation": {
+              "type": "transcription_feedback",
+              "transcriptionSeparateFromPronunciation": true
+            }
+          },
+          {
+            "itemId": "english-a1-m071-speaking-ex01-i04",
+            "position": 4,
+            "prompt": "Say a sentence about this situation: Las matemáticas son interesantes.",
+            "modelAnswer": "Maths is interesting.",
+            "evaluation": {
+              "type": "transcription_feedback",
+              "transcriptionSeparateFromPronunciation": true
+            }
+          },
+          {
+            "itemId": "english-a1-m071-speaking-ex01-i05",
+            "position": 5,
+            "prompt": "Say a sentence about this situation: ¿Dónde está mi regla?",
+            "modelAnswer": "Where is my ruler?",
+            "evaluation": {
+              "type": "transcription_feedback",
+              "transcriptionSeparateFromPronunciation": true
+            }
+          },
+          {
+            "itemId": "english-a1-m071-speaking-ex01-i06",
+            "position": 6,
+            "prompt": "Say a sentence about this situation: La clase empieza a las nueve.",
+            "modelAnswer": "The lesson starts at nine.",
+            "evaluation": {
+              "type": "transcription_feedback",
+              "transcriptionSeparateFromPronunciation": true
+            }
+          },
+          {
+            "itemId": "english-a1-m071-speaking-ex01-i07",
+            "position": 7,
+            "prompt": "Say a sentence about this situation: Estudio historia en el colegio.",
+            "modelAnswer": "I study history at school.",
+            "evaluation": {
+              "type": "transcription_feedback",
+              "transcriptionSeparateFromPronunciation": true
+            }
+          },
+          {
+            "itemId": "english-a1-m071-speaking-ex01-i08",
+            "position": 8,
+            "prompt": "Say a sentence about this situation: Nuestro horario está en la pared.",
+            "modelAnswer": "Our timetable is on the wall.",
+            "evaluation": {
+              "type": "transcription_feedback",
+              "transcriptionSeparateFromPronunciation": true
+            }
+          },
+          {
+            "itemId": "english-a1-m071-speaking-ex01-i09",
+            "position": 9,
+            "prompt": "Say a sentence about this situation: Hoy tengo plástica.",
+            "modelAnswer": "I have art today.",
+            "evaluation": {
+              "type": "transcription_feedback",
+              "transcriptionSeparateFromPronunciation": true
+            }
+          },
+          {
+            "itemId": "english-a1-m071-speaking-ex01-i10",
+            "position": 10,
+            "prompt": "Say a sentence about this situation: Ciencias es mi asignatura favorita.",
+            "modelAnswer": "Science is my favourite subject.",
+            "evaluation": {
+              "type": "transcription_feedback",
+              "transcriptionSeparateFromPronunciation": true
+            }
+          }
+        ]
+      }
+    },
+    {
+      "sectionId": "english-a1-m071-listening",
+      "sectionKey": "listening",
+      "position": 8,
+      "title": "listening",
+      "exercise": {
+        "exerciseId": "english-a1-m071-listening-ex01",
+        "type": "listening_gap_fill",
+        "items": [
+          {
+            "itemId": "english-a1-m071-listening-ex01-i01",
+            "position": 1,
+            "gapToken": "[[gap-01]]",
+            "expectedWordId": "english-a1-m071-listening-word-01"
+          },
+          {
+            "itemId": "english-a1-m071-listening-ex01-i02",
+            "position": 2,
+            "gapToken": "[[gap-02]]",
+            "expectedWordId": "english-a1-m071-listening-word-02"
+          },
+          {
+            "itemId": "english-a1-m071-listening-ex01-i03",
+            "position": 3,
+            "gapToken": "[[gap-03]]",
+            "expectedWordId": "english-a1-m071-listening-word-03"
+          },
+          {
+            "itemId": "english-a1-m071-listening-ex01-i04",
+            "position": 4,
+            "gapToken": "[[gap-04]]",
+            "expectedWordId": "english-a1-m071-listening-word-04"
+          },
+          {
+            "itemId": "english-a1-m071-listening-ex01-i05",
+            "position": 5,
+            "gapToken": "[[gap-05]]",
+            "expectedWordId": "english-a1-m071-listening-word-05"
+          },
+          {
+            "itemId": "english-a1-m071-listening-ex01-i06",
+            "position": 6,
+            "gapToken": "[[gap-06]]",
+            "expectedWordId": "english-a1-m071-listening-word-06"
+          },
+          {
+            "itemId": "english-a1-m071-listening-ex01-i07",
+            "position": 7,
+            "gapToken": "[[gap-07]]",
+            "expectedWordId": "english-a1-m071-listening-word-07"
+          },
+          {
+            "itemId": "english-a1-m071-listening-ex01-i08",
+            "position": 8,
+            "gapToken": "[[gap-08]]",
+            "expectedWordId": "english-a1-m071-listening-word-08"
+          },
+          {
+            "itemId": "english-a1-m071-listening-ex01-i09",
+            "position": 9,
+            "gapToken": "[[gap-09]]",
+            "expectedWordId": "english-a1-m071-listening-word-09"
+          },
+          {
+            "itemId": "english-a1-m071-listening-ex01-i10",
+            "position": 10,
+            "gapToken": "[[gap-10]]",
+            "expectedWordId": "english-a1-m071-listening-word-10"
+          }
+        ],
+        "content": {
+          "audio": "tts:en-GB:The key words for School Subjects are: English, maths, science, history, geography, art, notebook, ruler, timetable, lesson. Listen and repeat each word carefully.",
+          "audioLocale": "en-GB",
+          "transcriptTemplate": "The key words for School Subjects are: [[gap-01]], [[gap-02]], [[gap-03]], [[gap-04]], [[gap-05]], [[gap-06]], [[gap-07]], [[gap-08]], [[gap-09]], [[gap-10]]. Listen and repeat each word carefully.",
+          "wordBank": [
+            {
+              "wordId": "english-a1-m071-listening-word-01",
+              "word": "English"
+            },
+            {
+              "wordId": "english-a1-m071-listening-word-02",
+              "word": "maths"
+            },
+            {
+              "wordId": "english-a1-m071-listening-word-03",
+              "word": "science"
+            },
+            {
+              "wordId": "english-a1-m071-listening-word-04",
+              "word": "history"
+            },
+            {
+              "wordId": "english-a1-m071-listening-word-05",
+              "word": "geography"
+            },
+            {
+              "wordId": "english-a1-m071-listening-word-06",
+              "word": "art"
+            },
+            {
+              "wordId": "english-a1-m071-listening-word-07",
+              "word": "notebook"
+            },
+            {
+              "wordId": "english-a1-m071-listening-word-08",
+              "word": "ruler"
+            },
+            {
+              "wordId": "english-a1-m071-listening-word-09",
+              "word": "timetable"
+            },
+            {
+              "wordId": "english-a1-m071-listening-word-10",
+              "word": "lesson"
+            }
+          ],
+          "interaction": "select_place_move_replace"
+        }
+      }
+    }
+  ]
+}
