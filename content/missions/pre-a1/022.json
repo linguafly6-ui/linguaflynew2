@@ -28,19 +28,19 @@
         "type": "vocabulary_pairs",
         "theory": {
           "title": "At the Café: vocabulary",
-          "explanation": "Learn ten useful words about at the café. Listen to each British English model and repeat it.",
+          "explanation": "Learn ten useful words for ordering food and drinks at a café. Listen to each British English model and repeat it.",
           "patterns": [
             {
-              "label": "Useful sentence",
-              "pattern": "I like water.",
+              "label": "Polite requests",
+              "pattern": "[Drink or food] + please · Thank you.",
               "examples": [
-                "I can see water.",
-                "This is juice.",
-                "I like milk."
+                "Water, please.",
+                "A sandwich, please.",
+                "Thank you!"
               ]
             }
           ],
-          "tip": "Escucha cada palabra y úsala en una frase corta."
+          "tip": "Escucha, repite y fíjate en la frase completa. Usa el modelo para crear tu propia frase."
         },
         "items": [
           {
@@ -431,20 +431,20 @@
             "options": [
               "Water, please.",
               "Water goodbye.",
-              "Please thank you water."
+              "Please water thank."
             ]
           },
           {
             "itemId": "english-pre-a1-m022-grammar-ex01-i02",
             "position": 2,
-            "prompt": "The café worker gives you a sandwich. What do you say?",
+            "prompt": "The worker gives you tea. What do you say?",
             "evaluation": {
               "type": "single_choice"
             },
             "options": [
               "Thank you.",
-              "Good night.",
-              "Please me."
+              "Please tea.",
+              "Good night tea."
             ]
           },
           {
@@ -455,100 +455,100 @@
               "type": "single_choice"
             },
             "options": [
-              "Juice, please.",
-              "Juice now!",
-              "Thank you juice."
+              "A sandwich, please.",
+              "A sandwich now!",
+              "Thank you sandwich."
             ]
           },
           {
             "itemId": "english-pre-a1-m022-grammar-ex01-i04",
             "position": 4,
-            "prompt": "Complete the exchange: “Tea, please.” “___”",
+            "prompt": "Complete: “Juice, please.” “___”",
             "evaluation": {
               "type": "single_choice"
             },
             "options": [
-              "Thank you.",
-              "Please tea.",
-              "Good morning."
+              "Here you are.",
+              "Please juice.",
+              "Good night."
             ]
           },
           {
             "itemId": "english-pre-a1-m022-grammar-ex01-i05",
             "position": 5,
-            "prompt": "You want water. What do you say?",
+            "prompt": "You want coffee. What do you say?",
             "evaluation": {
               "type": "single_choice"
             },
             "options": [
-              "Water, please.",
-              "Water goodbye.",
-              "Please thank you water."
+              "Coffee, please.",
+              "Coffee goodbye.",
+              "Please coffee thank."
             ]
           },
           {
             "itemId": "english-pre-a1-m022-grammar-ex01-i06",
             "position": 6,
-            "prompt": "The café worker gives you a sandwich. What do you say?",
+            "prompt": "Your friend gives you a drink. What do you say?",
             "evaluation": {
               "type": "single_choice"
             },
             "options": [
               "Thank you.",
-              "Good night.",
+              "Goodbye drink.",
               "Please me."
             ]
           },
           {
             "itemId": "english-pre-a1-m022-grammar-ex01-i07",
             "position": 7,
-            "prompt": "Choose the polite request.",
+            "prompt": "Which word makes a request polite?",
             "evaluation": {
               "type": "single_choice"
             },
             "options": [
-              "Juice, please.",
-              "Juice now!",
-              "Thank you juice."
+              "Please",
+              "Sorry",
+              "Goodbye"
             ]
           },
           {
             "itemId": "english-pre-a1-m022-grammar-ex01-i08",
             "position": 8,
-            "prompt": "Complete the exchange: “Tea, please.” “___”",
+            "prompt": "Choose the correct reply after “Thank you”.",
             "evaluation": {
               "type": "single_choice"
             },
             "options": [
-              "Thank you.",
-              "Please tea.",
-              "Good morning."
+              "You’re welcome.",
+              "Please.",
+              "Good night."
             ]
           },
           {
             "itemId": "english-pre-a1-m022-grammar-ex01-i09",
             "position": 9,
-            "prompt": "You want water. What do you say?",
+            "prompt": "Complete: “Water, ___.”",
             "evaluation": {
               "type": "single_choice"
             },
             "options": [
-              "Water, please.",
-              "Water goodbye.",
-              "Please thank you water."
+              "please",
+              "thank",
+              "hello"
             ]
           },
           {
             "itemId": "english-pre-a1-m022-grammar-ex01-i10",
             "position": 10,
-            "prompt": "The café worker gives you a sandwich. What do you say?",
+            "prompt": "Which phrase says thank you?",
             "evaluation": {
               "type": "single_choice"
             },
             "options": [
               "Thank you.",
-              "Good night.",
-              "Please me."
+              "Water, please.",
+              "Good morning."
             ]
           }
         ]
@@ -902,8 +902,8 @@
           {
             "itemId": "english-pre-a1-m022-speaking-ex01-i01",
             "position": 1,
-            "prompt": "Say a sentence with “water”.",
-            "modelAnswer": "I like water.",
+            "prompt": "Say a short sentence about “water”. You can use the model.",
+            "modelAnswer": "Water, please.",
             "evaluation": {
               "type": "transcription_feedback",
               "transcriptionSeparateFromPronunciation": true
@@ -912,8 +912,8 @@
           {
             "itemId": "english-pre-a1-m022-speaking-ex01-i02",
             "position": 2,
-            "prompt": "Say a sentence with “juice”.",
-            "modelAnswer": "I like juice.",
+            "prompt": "Say a short sentence about “juice”. You can use the model.",
+            "modelAnswer": "I would like juice, please.",
             "evaluation": {
               "type": "transcription_feedback",
               "transcriptionSeparateFromPronunciation": true
@@ -922,8 +922,8 @@
           {
             "itemId": "english-pre-a1-m022-speaking-ex01-i03",
             "position": 3,
-            "prompt": "Say a sentence with “milk”.",
-            "modelAnswer": "I like milk.",
+            "prompt": "Say a short sentence about “milk”. You can use the model.",
+            "modelAnswer": "I would like milk, please.",
             "evaluation": {
               "type": "transcription_feedback",
               "transcriptionSeparateFromPronunciation": true
@@ -932,8 +932,8 @@
           {
             "itemId": "english-pre-a1-m022-speaking-ex01-i04",
             "position": 4,
-            "prompt": "Say a sentence with “tea”.",
-            "modelAnswer": "I like tea.",
+            "prompt": "Say a short sentence about “tea”. You can use the model.",
+            "modelAnswer": "Tea, please.",
             "evaluation": {
               "type": "transcription_feedback",
               "transcriptionSeparateFromPronunciation": true
@@ -942,8 +942,8 @@
           {
             "itemId": "english-pre-a1-m022-speaking-ex01-i05",
             "position": 5,
-            "prompt": "Say a sentence with “sandwich”.",
-            "modelAnswer": "I like sandwich.",
+            "prompt": "Say a short sentence about “sandwich”. You can use the model.",
+            "modelAnswer": "A sandwich, please.",
             "evaluation": {
               "type": "transcription_feedback",
               "transcriptionSeparateFromPronunciation": true
@@ -952,8 +952,8 @@
           {
             "itemId": "english-pre-a1-m022-speaking-ex01-i06",
             "position": 6,
-            "prompt": "Say a sentence with “please”.",
-            "modelAnswer": "I like please.",
+            "prompt": "Say a short sentence about “please”. You can use the model.",
+            "modelAnswer": "Please can I have water?",
             "evaluation": {
               "type": "transcription_feedback",
               "transcriptionSeparateFromPronunciation": true
@@ -962,8 +962,8 @@
           {
             "itemId": "english-pre-a1-m022-speaking-ex01-i07",
             "position": 7,
-            "prompt": "Say a sentence with “thank you”.",
-            "modelAnswer": "I like thank you.",
+            "prompt": "Say a short sentence about “thank you”. You can use the model.",
+            "modelAnswer": "Thank you for the drink.",
             "evaluation": {
               "type": "transcription_feedback",
               "transcriptionSeparateFromPronunciation": true
@@ -972,7 +972,7 @@
           {
             "itemId": "english-pre-a1-m022-speaking-ex01-i08",
             "position": 8,
-            "prompt": "Say a sentence with “coffee”.",
+            "prompt": "Say a short sentence about “coffee”. You can use the model.",
             "modelAnswer": "I like coffee.",
             "evaluation": {
               "type": "transcription_feedback",
@@ -982,7 +982,7 @@
           {
             "itemId": "english-pre-a1-m022-speaking-ex01-i09",
             "position": 9,
-            "prompt": "Say a sentence with “lemonade”.",
+            "prompt": "Say a short sentence about “lemonade”. You can use the model.",
             "modelAnswer": "I like lemonade.",
             "evaluation": {
               "type": "transcription_feedback",
@@ -992,7 +992,7 @@
           {
             "itemId": "english-pre-a1-m022-speaking-ex01-i10",
             "position": 10,
-            "prompt": "Say a sentence with “cocoa”.",
+            "prompt": "Say a short sentence about “cocoa”. You can use the model.",
             "modelAnswer": "I like cocoa.",
             "evaluation": {
               "type": "transcription_feedback",
@@ -1010,9 +1010,9 @@
         "exerciseId": "english-pre-a1-m022-listening-ex01",
         "type": "listening_gap_fill",
         "content": {
-          "audio": "tts:en-GB:Welcome! This is at the café. I can see water. I can see juice. I can see milk. I can see tea. I can see sandwich. I can see please. I can see thank you. I can see coffee. I can see lemonade. I can see cocoa. I like this place. Thank you for listening.",
+          "audio": "tts:en-GB:I am at the café. I would like water, juice, milk and tea. I would like a sandwich, too. I say please when I ask. I say thank you after I get my food. I also see coffee, lemonade and cocoa.",
           "audioLocale": "en-GB",
-          "transcriptTemplate": "Welcome! This is at the café. I can see [[gap-01]]. I can see [[gap-02]]. I can see [[gap-03]]. I can see [[gap-04]]. I can see [[gap-05]]. I can see [[gap-06]]. I can see [[gap-07]]. I can see [[gap-08]]. I can see [[gap-09]]. I can see [[gap-10]]. I like this place. Thank you for listening.",
+          "transcriptTemplate": "I am at the café. I would like [[gap-01]], [[gap-02]], [[gap-03]] and [[gap-04]]. I would like a [[gap-05]], too. I say [[gap-06]] when I ask. I say [[gap-07]] after I get my food. I also see [[gap-08]], [[gap-09]] and [[gap-10]].",
           "wordBank": [
             {
               "wordId": "english-pre-a1-m022-listening-word-01",
