@@ -99,25 +99,29 @@
           }
         ],
         "theory": {
-          "title": "Imperativo Spell…; first / last",
-          "explanation": "Pedimos que alguien deletree con «Spell…». «First» significa primero y «last» significa último. Podemos preguntar por la primera o la última letra de una palabra y decirlas en orden.",
+          "title": "Deletrear y localizar letras",
+          "explanation": "Usa «Spell…» para pedir que alguien deletree. «First» es primero y «last» es último.",
           "patterns": [
             {
               "label": "Modelo",
-              "pattern": "Spell your name. First letter: A. Last letter: N.",
+              "pattern": "Spell your name.",
               "examples": [
-                "Spell your name. First letter: A. Last letter: N."
+                "Spell your name.",
+                "The first letter is S.",
+                "The last letter is M."
               ]
             },
             {
               "label": "Uso",
-              "pattern": "Identifica la primera y la última letra de una palabra corta.",
+              "pattern": "Escucha, observa el ejemplo y crea una frase parecida.",
               "examples": [
-                "Spell your name."
+                "Spell your name.",
+                "The first letter is S.",
+                "The last letter is M."
               ]
             }
           ],
-          "tip": "Observa el ejemplo y repite las frases en voz alta."
+          "tip": "Escucha y repite. Fíjate en el orden de las palabras y practica con el modelo."
         }
       }
     },
@@ -501,7 +505,7 @@
           {
             "itemId": "english-pre-a1-m055-grammar-ex01-i07",
             "position": 7,
-            "prompt": "What is the first letter in “cat”?",
+            "prompt": "Which letter comes after B in the alphabet?",
             "evaluation": {
               "type": "single_choice"
             },
@@ -527,7 +531,7 @@
           {
             "itemId": "english-pre-a1-m055-grammar-ex01-i09",
             "position": 9,
-            "prompt": "Choose the correct instruction.",
+            "prompt": "Choose the command that asks someone to say letters aloud.",
             "evaluation": {
               "type": "single_choice"
             },
@@ -891,8 +895,8 @@
           {
             "itemId": "english-pre-a1-m055-speaking-ex01-i01",
             "position": 1,
-            "prompt": "Say the word “name”.",
-            "modelAnswer": "name",
+            "prompt": "Say a short sentence with “name”. Use the model if you need help.",
+            "modelAnswer": "My name is Sam.",
             "audio": "tts:en-GB:name",
             "evaluation": {
               "type": "transcription_feedback",
@@ -902,8 +906,8 @@
           {
             "itemId": "english-pre-a1-m055-speaking-ex01-i02",
             "position": 2,
-            "prompt": "Say the word “letters”.",
-            "modelAnswer": "letters",
+            "prompt": "Say a short sentence with “letters”. Use the model if you need help.",
+            "modelAnswer": "There are 26 letters.",
             "audio": "tts:en-GB:letters",
             "evaluation": {
               "type": "transcription_feedback",
@@ -913,8 +917,8 @@
           {
             "itemId": "english-pre-a1-m055-speaking-ex01-i03",
             "position": 3,
-            "prompt": "Say the word “first”.",
-            "modelAnswer": "first",
+            "prompt": "Say a short sentence with “first”. Use the model if you need help.",
+            "modelAnswer": "A is the first letter.",
             "audio": "tts:en-GB:first",
             "evaluation": {
               "type": "transcription_feedback",
@@ -924,8 +928,8 @@
           {
             "itemId": "english-pre-a1-m055-speaking-ex01-i04",
             "position": 4,
-            "prompt": "Say the word “last”.",
-            "modelAnswer": "last",
+            "prompt": "Say a short sentence with “last”. Use the model if you need help.",
+            "modelAnswer": "Z is the last letter.",
             "audio": "tts:en-GB:last",
             "evaluation": {
               "type": "transcription_feedback",
@@ -935,8 +939,8 @@
           {
             "itemId": "english-pre-a1-m055-speaking-ex01-i05",
             "position": 5,
-            "prompt": "Say the word “spell”.",
-            "modelAnswer": "spell",
+            "prompt": "Say a short sentence with “spell”. Use the model if you need help.",
+            "modelAnswer": "I can spell cat.",
             "audio": "tts:en-GB:spell",
             "evaluation": {
               "type": "transcription_feedback",
@@ -946,8 +950,8 @@
           {
             "itemId": "english-pre-a1-m055-speaking-ex01-i06",
             "position": 6,
-            "prompt": "Say the word “cat”.",
-            "modelAnswer": "cat",
+            "prompt": "Say a short sentence with “cat”. Use the model if you need help.",
+            "modelAnswer": "C-A-T spells cat.",
             "audio": "tts:en-GB:cat",
             "evaluation": {
               "type": "transcription_feedback",
@@ -957,8 +961,8 @@
           {
             "itemId": "english-pre-a1-m055-speaking-ex01-i07",
             "position": 7,
-            "prompt": "Say the word “pen”.",
-            "modelAnswer": "pen",
+            "prompt": "Say a short sentence with “pen”. Use the model if you need help.",
+            "modelAnswer": "P-E-N spells pen.",
             "audio": "tts:en-GB:pen",
             "evaluation": {
               "type": "transcription_feedback",
@@ -968,8 +972,8 @@
           {
             "itemId": "english-pre-a1-m055-speaking-ex01-i08",
             "position": 8,
-            "prompt": "Say the word “dog”.",
-            "modelAnswer": "dog",
+            "prompt": "Say a short sentence with “dog”. Use the model if you need help.",
+            "modelAnswer": "D-O-G spells dog.",
             "audio": "tts:en-GB:dog",
             "evaluation": {
               "type": "transcription_feedback",
@@ -979,8 +983,8 @@
           {
             "itemId": "english-pre-a1-m055-speaking-ex01-i09",
             "position": 9,
-            "prompt": "Say the word “sun”.",
-            "modelAnswer": "sun",
+            "prompt": "Say a short sentence with “sun”. Use the model if you need help.",
+            "modelAnswer": "S-U-N spells sun.",
             "audio": "tts:en-GB:sun",
             "evaluation": {
               "type": "transcription_feedback",
@@ -990,8 +994,8 @@
           {
             "itemId": "english-pre-a1-m055-speaking-ex01-i10",
             "position": 10,
-            "prompt": "Say the word “bus”.",
-            "modelAnswer": "bus",
+            "prompt": "Say a short sentence with “bus”. Use the model if you need help.",
+            "modelAnswer": "B-U-S spells bus.",
             "audio": "tts:en-GB:bus",
             "evaluation": {
               "type": "transcription_feedback",
@@ -1009,9 +1013,9 @@
         "exerciseId": "english-pre-a1-m055-listening-ex01",
         "type": "listening_gap_fill",
         "content": {
-          "audio": "tts:en-GB:Interviewer: Hello, Amy. Can you spell your name? Amy: Yes. A – M – Y. Interviewer: What is the first letter? Amy: A. Interviewer: And the last letter? Amy: Y. Interviewer: Can you spell “pen”? Amy: P – E – N. Interviewer: What is the last letter in pen? Amy: N. Listen for these ten words: name, letters, first, last, spell, cat, pen, dog, sun, bus.",
+          "audio": "tts:en-GB:My name is Sam. There are 26 letters in the English alphabet. The first letter in dog is D. The last letter in sun is N. I can spell cat: C-A-T. I can spell pen: P-E-N. I can spell dog: D-O-G. I can spell sun: S-U-N and bus: B-U-S.",
           "audioLocale": "en-GB",
-          "transcriptTemplate": "Interviewer: Hello, Amy. Can you spell your name? Amy: Yes. A – M – Y. Interviewer: What is the first letter? Amy: A. Interviewer: And the last letter? Amy: Y. Interviewer: Can you spell “pen”? Amy: P – E – N. Interviewer: What is the last letter in pen? Amy: N. Listen for these ten words: [[gap-01]], [[gap-02]], [[gap-03]], [[gap-04]], [[gap-05]], [[gap-06]], [[gap-07]], [[gap-08]], [[gap-09]], [[gap-10]].",
+          "transcriptTemplate": "My [[gap-01]] is Sam. There are 26 [[gap-02]] in the English alphabet. The [[gap-03]] letter in dog is D. The [[gap-04]] letter in sun is N. I can [[gap-05]] [[gap-06]]: C-A-T. I can spell [[gap-07]]: P-E-N. I can spell [[gap-08]]: D-O-G. I can spell [[gap-09]]: S-U-N and [[gap-10]]: B-U-S.",
           "wordBank": [
             {
               "wordId": "english-pre-a1-m055-listening-word-01",
@@ -1060,62 +1064,52 @@
           {
             "itemId": "english-pre-a1-m055-listening-ex01-i01",
             "position": 1,
-            "gapToken": "[[gap-01]]",
-            "expectedWordId": "english-pre-a1-m055-listening-word-01"
+            "gapToken": "[[gap-01]]"
           },
           {
             "itemId": "english-pre-a1-m055-listening-ex01-i02",
             "position": 2,
-            "gapToken": "[[gap-02]]",
-            "expectedWordId": "english-pre-a1-m055-listening-word-02"
+            "gapToken": "[[gap-02]]"
           },
           {
             "itemId": "english-pre-a1-m055-listening-ex01-i03",
             "position": 3,
-            "gapToken": "[[gap-03]]",
-            "expectedWordId": "english-pre-a1-m055-listening-word-03"
+            "gapToken": "[[gap-03]]"
           },
           {
             "itemId": "english-pre-a1-m055-listening-ex01-i04",
             "position": 4,
-            "gapToken": "[[gap-04]]",
-            "expectedWordId": "english-pre-a1-m055-listening-word-04"
+            "gapToken": "[[gap-04]]"
           },
           {
             "itemId": "english-pre-a1-m055-listening-ex01-i05",
             "position": 5,
-            "gapToken": "[[gap-05]]",
-            "expectedWordId": "english-pre-a1-m055-listening-word-05"
+            "gapToken": "[[gap-05]]"
           },
           {
             "itemId": "english-pre-a1-m055-listening-ex01-i06",
             "position": 6,
-            "gapToken": "[[gap-06]]",
-            "expectedWordId": "english-pre-a1-m055-listening-word-06"
+            "gapToken": "[[gap-06]]"
           },
           {
             "itemId": "english-pre-a1-m055-listening-ex01-i07",
             "position": 7,
-            "gapToken": "[[gap-07]]",
-            "expectedWordId": "english-pre-a1-m055-listening-word-07"
+            "gapToken": "[[gap-07]]"
           },
           {
             "itemId": "english-pre-a1-m055-listening-ex01-i08",
             "position": 8,
-            "gapToken": "[[gap-08]]",
-            "expectedWordId": "english-pre-a1-m055-listening-word-08"
+            "gapToken": "[[gap-08]]"
           },
           {
             "itemId": "english-pre-a1-m055-listening-ex01-i09",
             "position": 9,
-            "gapToken": "[[gap-09]]",
-            "expectedWordId": "english-pre-a1-m055-listening-word-09"
+            "gapToken": "[[gap-09]]"
           },
           {
             "itemId": "english-pre-a1-m055-listening-ex01-i10",
             "position": 10,
-            "gapToken": "[[gap-10]]",
-            "expectedWordId": "english-pre-a1-m055-listening-word-10"
+            "gapToken": "[[gap-10]]"
           }
         ]
       }
