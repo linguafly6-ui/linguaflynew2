@@ -81,7 +81,7 @@ export function calculateSimilarity(a: string, b: string): number {
   return Math.round(((maxLen - distance) / maxLen) * 100);
 }
 
-export function detectPhoneticIssues(
+export function detectRecognitionIssues(
   target: string,
   transcribed: string
 ): string[] {
@@ -93,14 +93,14 @@ export function detectPhoneticIssues(
     (w) => !transcribedWords.some((tw) => tw.includes(w) || w.includes(tw))
   );
   if (missing.length > 0) {
-    issues.push(`Palabras no detectadas: ${missing.join(", ")}`);
+    issues.push(`Palabras que no aparecen en la transcripción: ${missing.join(", ")}`);
   }
 
   const extra = transcribedWords.filter(
     (w) => !targetWords.some((tw) => tw.includes(w) || w.includes(tw))
   );
   if (extra.length > 0 && extra.length <= 3) {
-    issues.push(`Posibles errores: ${extra.join(", ")}`);
+    issues.push(`Palabras adicionales en la transcripción: ${extra.join(", ")}`);
   }
 
   return issues;
@@ -108,13 +108,13 @@ export function detectPhoneticIssues(
 
 export function generateFeedback(score: number, issues: string[]): string {
   if (score >= 90) {
-    return "¡Excelente pronunciación! Suena muy natural.";
+    return "La transcripción coincide con el texto esperado. Esto no permite valorar por sí solo la pronunciación de cada sonido.";
   } else if (score >= 75) {
-    return "Muy bien. Pequeños detalles a pulir: " + issues.join("; ");
+    return "La mayoría de las palabras coincide. Revisa estas diferencias de reconocimiento: " + issues.join("; ");
   } else if (score >= 50) {
-    return "Vas por buen camino. Practica las palabras que no se detectaron claramente.";
+    return "La coincidencia es parcial. Repite la frase y comprueba las palabras que no se reconocieron.";
   } else {
-    return "Sigue intentándolo. Escucha la frase de referencia y repite despacio, palabra por palabra.";
+    return "La transcripción se parece poco al texto esperado. Escucha el modelo y repite más despacio. La puntuación no es una nota fonética.";
   }
 }
 
