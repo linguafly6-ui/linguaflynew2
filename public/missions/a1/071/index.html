@@ -27,4 +27,4 @@ $("next").onclick=()=>{if(i<49){i++;render()}else finish()};
 document.querySelectorAll("[data-tab]").forEach(b=>b.onclick=()=>{document.querySelectorAll("[data-tab]").forEach(x=>x.classList.toggle("active",x===b));document.querySelectorAll(".panel").forEach(p=>p.classList.toggle("active",p.id===b.dataset.tab));if(b.dataset.tab==="review"){$("recap").innerHTML=data.words.map(w=>"<div><b>"+w[0]+"</b><br>"+w[1]+"</div>").join("");$("result").textContent="Puntuación: "+score+" de 50"}})
 $("restart").onclick=()=>{i=0;score=0;$("speak").disabled=false;$("translate").disabled=false;render();document.querySelector('[data-tab="practice"]').click()};
 renderWords();render();
-</script><script src="/missions/a1/a1-first-10-sections.js"></script></body></html>
+</script><script src="/missions/a1/a1-missions-71-80-data.js"></script><script src="/missions/a1/a1-first-10-sections.js"></script></body></html>
