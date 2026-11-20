@@ -203,7 +203,7 @@ const makeChoices=(correct,wrong)=>[correct,...wrong.filter(x=>x!==correct).slic
 const shuffle=a=>a.map(x=>({x,k:Math.random()})).sort((a,b)=>a.k-b.k).map(o=>o.x);
 const taskUI=(id,title,intro,items)=> {
  const s=document.getElementById(id); if(!s)return;
- s.innerHTML="<h2>"+title+"</h2><p class='muted'>"+intro+"</p>"+keyVocabularyCard()+"<div class='a1extra-progress'><span data-count>1 / 10</span><div><i data-bar></i></div></div><div class='a1extra-card' data-taskbox></div><p class='a1extra-feedback' data-feedback aria-live='polite'></p><button type='button' data-next disabled>Siguiente ejercicio →</button><p class='a1extra-score' data-score hidden></p>";
+ s.innerHTML="<h2>"+title+"</h2><p class='muted'>"+intro+"</p>"+(id==="writing"?"":keyVocabularyCard())+"<div class='a1extra-progress'><span data-count>1 / 10</span><div><i data-bar></i></div></div><div class='a1extra-card' data-taskbox></div><p class='a1extra-feedback' data-feedback aria-live='polite'></p><button type='button' data-next disabled>Siguiente ejercicio →</button><p class='a1extra-score' data-score hidden></p>";
  const box=s.querySelector("[data-taskbox]"),fb=s.querySelector("[data-feedback]"),next=s.querySelector("[data-next]"),count=s.querySelector("[data-count]"),bar=s.querySelector("[data-bar]"),score=s.querySelector("[data-score]");
  let at=0,points=0,done=false;
  function render(){
