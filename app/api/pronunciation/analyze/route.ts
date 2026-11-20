@@ -15,7 +15,7 @@ async function getGuestQuotaId(request: NextRequest) {
   return "guest-" + hash;
 }
 
-const BRITISH_TIPS: Record<string, { ipa: string; cue: string; tip: string }> = {
+const BRITISH_TIPS: Record<string, { ipa: string; cue: string; spanishCue: string; tip: string }> = {
   name: { ipa: "/neɪm/", cue: "NAYM", spanishCue: "NÉIM", tip: "Desliza desde /e/ hacia una i breve." },
   age: { ipa: "/eɪdʒ/", cue: "AYJ", spanishCue: "ÉICH", tip: "Termina con /dʒ/, como el sonido inicial de job." },
   hello: { ipa: "/həˈləʊ/", cue: "huh-LOH", spanishCue: "he-LÓU", tip: "Aspira suavemente la h inicial y acentúa la segunda sílaba." },
@@ -43,18 +43,18 @@ const BRITISH_TIPS: Record<string, { ipa: string; cue: string; tip: string }> = 
   teacher: { ipa: "/ˈtiː.tʃə/", cue: "TEE-chuh", spanishCue: "TÍ-cha", tip: "Alarga /iː/ y termina con /tʃə/; la r escrita no se pronuncia." },
   student: { ipa: "/ˈstjuː.dənt/", cue: "STYOO-dent", spanishCue: "STIÚ-dent", tip: "En inglés británico es común el sonido /j/ después de /t/." },
   friend: { ipa: "/frend/", cue: "FREND", spanishCue: "FREND", tip: "Mantén la vocal /e/ breve y termina con /nd/." },
-  future: { ipa: "/ˈfjuː.tʃə/", cue: "FYOO-chuh", tip: "Start with /f/, glide into /j/ as in 'yes', then make /tʃ/ as in 'cheese'. Stress the first syllable. In non-rhotic British English, the final r is not pronounced." },
-  water: { ipa: "/ˈwɔː.tə/", cue: "WAW-tuh", tip: "Hold the /ɔː/ vowel. In standard non-rhotic British English, do not pronounce the final written r." },
-  three: { ipa: "/θriː/", cue: "THREE", tip: "Place the tip of your tongue lightly between your teeth for /θ/. Do not replace it with /t/ or /s/. Keep /iː/ long." },
-  thought: { ipa: "/θɔːt/", cue: "THAWT", tip: "Begin with /θ/ (tongue gently between the teeth), sustain /ɔː/, then release a clear final /t/." },
-  comfortable: { ipa: "/ˈkʌm.fə.tə.bəl/", cue: "KUM-fuh-tuh-buhl", tip: "A common British pronunciation has four syllables. Stress the first syllable; weaken the unstressed vowels." },
-  schedule: { ipa: "/ˈʃed.juːl/", cue: "SHED-yool", tip: "A common British pronunciation begins with /ʃ/ as in 'ship', rather than /sk/. Stress the first syllable." },
-  think: { ipa: "/θɪŋk/", cue: "THINK", tip: "Make /θ/ with the tongue tip gently between the teeth and let air pass without voicing." },
-  this: { ipa: "/ðɪs/", cue: "THIS", tip: "Make /ð/ in the same tongue position as /θ/, but switch your voice on." },
-  ship: { ipa: "/ʃɪp/", cue: "SHIP", tip: "Round your lips slightly and make the continuous /ʃ/ sound; do not stop it like /tʃ/." },
-  sheep: { ipa: "/ʃiːp/", cue: "SHEEP", tip: "Keep /iː/ long and distinguish the initial /ʃ/ from /s/." },
-  work: { ipa: "/wɜːk/", cue: "WURK", tip: "Use the long central vowel /ɜː/. In non-rhotic British English, do not pronounce a separate r sound." },
-  learn: { ipa: "/lɜːn/", cue: "LURN", tip: "Hold /ɜː/ steadily; the written r is not pronounced as a consonant in non-rhotic British English." },
+  future: { ipa: "/ˈfjuː.tʃə/", cue: "FYOO-chuh", spanishCue: "FIÚ-cha", tip: "Start with /f/, glide into /j/ as in 'yes', then make /tʃ/ as in 'cheese'. Stress the first syllable. In non-rhotic British English, the final r is not pronounced." },
+  water: { ipa: "/ˈwɔː.tə/", cue: "WAW-tuh", spanishCue: "UÓ-ta", tip: "Hold the /ɔː/ vowel. In standard non-rhotic British English, do not pronounce the final written r." },
+  three: { ipa: "/θriː/", cue: "THREE", spanishCue: "THRÍ (lengua entre los dientes)", tip: "Place the tip of your tongue lightly between your teeth for /θ/. Do not replace it with /t/ or /s/. Keep /iː/ long." },
+  thought: { ipa: "/θɔːt/", cue: "THAWT", spanishCue: "THÓOT (con /θ/ inicial)", tip: "Begin with /θ/ (tongue gently between the teeth), sustain /ɔː/, then release a clear final /t/." },
+  comfortable: { ipa: "/ˈkʌm.fə.tə.bəl/", cue: "KUM-fuh-tuh-buhl", spanishCue: "KÁM-fa-ta-bol", tip: "A common British pronunciation has four syllables. Stress the first syllable; weaken the unstressed vowels." },
+  schedule: { ipa: "/ˈʃed.juːl/", cue: "SHED-yool", spanishCue: "SHÉ-diuul", tip: "A common British pronunciation begins with /ʃ/ as in 'ship', rather than /sk/. Stress the first syllable." },
+  think: { ipa: "/θɪŋk/", cue: "THINK", spanishCue: "THINK (con /θ/ inicial)", tip: "Make /θ/ with the tongue tip gently between the teeth and let air pass without voicing." },
+  this: { ipa: "/ðɪs/", cue: "THIS", spanishCue: "DHIS (con /ð/ inicial)", tip: "Make /ð/ in the same tongue position as /θ/, but switch your voice on." },
+  ship: { ipa: "/ʃɪp/", cue: "SHIP", spanishCue: "SHÍP", tip: "Round your lips slightly and make the continuous /ʃ/ sound; do not stop it like /tʃ/." },
+  sheep: { ipa: "/ʃiːp/", cue: "SHEEP", spanishCue: "SHÍIP (vocal larga)", tip: "Keep /iː/ long and distinguish the initial /ʃ/ from /s/." },
+  work: { ipa: "/wɜːk/", cue: "WURK", spanishCue: "UÉRK (sin pronunciar la r)", tip: "Use the long central vowel /ɜː/. In non-rhotic British English, do not pronounce a separate r sound." },
+  learn: { ipa: "/lɜːn/", cue: "LURN", spanishCue: "LÉRN (sin pronunciar la r)", tip: "Hold /ɜː/ steadily; the written r is not pronounced as a consonant in non-rhotic British English." },
 };
 
 function getBritishTip(target: string) {
@@ -119,7 +119,6 @@ export async function POST(request: NextRequest) {
         feedback: "No se ha podido reconocer el audio. Inténtalo de nuevo en un lugar silencioso y habla cerca del micrófono.",
         recognitionIssues: [], phoneticIssues: [], britishTips: getBritishTip(target),
         similarityType: "transcription-only",
-        scoreLabel: "Sin transcripción",
         quota: isGuest ? { plan: "guest", limit: GUEST_RATE_LIMIT_PER_MINUTE, period: "minute" } : { used: usedToday + 1, limit: dailyLimit, plan: isPro ? "pro" : "free" },
       });
     }
@@ -147,7 +146,6 @@ export async function POST(request: NextRequest) {
       sessionId, score, scoreLabel: "Coincidencia de transcripción (no es una nota fonética)", transcription, feedback, recognitionIssues: issues, phoneticIssues: [],
       britishTips: getBritishTip(target),
       similarityType: "transcription-only",
-      scoreLabel: "Coincidencia de transcripción (no es una nota fonética)",
       quota: isGuest ? { plan: "guest", limit: GUEST_RATE_LIMIT_PER_MINUTE, period: "minute" } : { used: usedToday + 1, limit: dailyLimit, plan: isPro ? "pro" : "free" },
     });
   } catch (error) {
