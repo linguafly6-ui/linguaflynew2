@@ -1,0 +1,4792 @@
+{
+  "extractionVersion": "1.0.0",
+  "source": "main",
+  "scope": "Pre-A1 071-078",
+  "warning": "Raw legacy extraction for editorial audit only; not canonical learner content. Source answers/options are legacy client-readable data and must remain server-side in canonical delivery.",
+  "missions": [
+    {
+      "mission": "071",
+      "title": "At the Train Station",
+      "vocabulary": [
+        [
+          "train",
+          "el tren"
+        ],
+        [
+          "platform",
+          "el andén"
+        ],
+        [
+          "ticket",
+          "el billete"
+        ],
+        [
+          "train station",
+          "la estación"
+        ],
+        [
+          "passenger",
+          "el pasajero"
+        ],
+        [
+          "suitcase",
+          "la maleta"
+        ],
+        [
+          "clock",
+          "el reloj"
+        ],
+        [
+          "arrival",
+          "la llegada"
+        ],
+        [
+          "departure",
+          "la salida"
+        ],
+        [
+          "seat",
+          "el asiento"
+        ]
+      ],
+      "practiceSource": [
+        {
+          "sourceIndex": 1,
+          "type": "Traduce la palabra",
+          "prompt": "train",
+          "sourceAnswer": "el tren",
+          "options": [
+            "el tren",
+            "el andén",
+            "el billete"
+          ]
+        },
+        {
+          "sourceIndex": 2,
+          "type": "Traduce la palabra",
+          "prompt": "platform",
+          "sourceAnswer": "el andén",
+          "options": [
+            "el andén",
+            "el billete",
+            "la estación"
+          ]
+        },
+        {
+          "sourceIndex": 3,
+          "type": "Traduce la palabra",
+          "prompt": "ticket",
+          "sourceAnswer": "el billete",
+          "options": [
+            "el billete",
+            "la estación",
+            "el pasajero"
+          ]
+        },
+        {
+          "sourceIndex": 4,
+          "type": "Traduce la palabra",
+          "prompt": "train station",
+          "sourceAnswer": "la estación",
+          "options": [
+            "la estación",
+            "el pasajero",
+            "la maleta"
+          ]
+        },
+        {
+          "sourceIndex": 5,
+          "type": "Traduce la palabra",
+          "prompt": "passenger",
+          "sourceAnswer": "el pasajero",
+          "options": [
+            "el pasajero",
+            "la maleta",
+            "el reloj"
+          ]
+        },
+        {
+          "sourceIndex": 6,
+          "type": "Traduce la palabra",
+          "prompt": "suitcase",
+          "sourceAnswer": "la maleta",
+          "options": [
+            "la maleta",
+            "el reloj",
+            "la llegada"
+          ]
+        },
+        {
+          "sourceIndex": 7,
+          "type": "Traduce la palabra",
+          "prompt": "clock",
+          "sourceAnswer": "el reloj",
+          "options": [
+            "el reloj",
+            "la llegada",
+            "la salida"
+          ]
+        },
+        {
+          "sourceIndex": 8,
+          "type": "Traduce la palabra",
+          "prompt": "arrival",
+          "sourceAnswer": "la llegada",
+          "options": [
+            "la llegada",
+            "la salida",
+            "el asiento"
+          ]
+        },
+        {
+          "sourceIndex": 9,
+          "type": "Traduce la palabra",
+          "prompt": "departure",
+          "sourceAnswer": "la salida",
+          "options": [
+            "la salida",
+            "el asiento",
+            "el tren"
+          ]
+        },
+        {
+          "sourceIndex": 10,
+          "type": "Traduce la palabra",
+          "prompt": "seat",
+          "sourceAnswer": "el asiento",
+          "options": [
+            "el asiento",
+            "el tren",
+            "el andén"
+          ]
+        },
+        {
+          "sourceIndex": 11,
+          "type": "Traduce la frase",
+          "prompt": "I can see the train.",
+          "sourceAnswer": "Puedo ver el tren.",
+          "options": [
+            "Puedo ver el tren.",
+            "Puedo ver el andén.",
+            "Puedo ver el billete."
+          ]
+        },
+        {
+          "sourceIndex": 12,
+          "type": "Traduce la frase",
+          "prompt": "I can see the platform.",
+          "sourceAnswer": "Puedo ver el andén.",
+          "options": [
+            "Puedo ver el andén.",
+            "Puedo ver el billete.",
+            "Puedo ver la estación."
+          ]
+        },
+        {
+          "sourceIndex": 13,
+          "type": "Traduce la frase",
+          "prompt": "I can see the ticket.",
+          "sourceAnswer": "Puedo ver el billete.",
+          "options": [
+            "Puedo ver el billete.",
+            "Puedo ver la estación.",
+            "Puedo ver el pasajero."
+          ]
+        },
+        {
+          "sourceIndex": 14,
+          "type": "Traduce la frase",
+          "prompt": "I can see the train station.",
+          "sourceAnswer": "Puedo ver la estación.",
+          "options": [
+            "Puedo ver la estación.",
+            "Puedo ver el pasajero.",
+            "Puedo ver la maleta."
+          ]
+        },
+        {
+          "sourceIndex": 15,
+          "type": "Traduce la frase",
+          "prompt": "I can see the passenger.",
+          "sourceAnswer": "Puedo ver el pasajero.",
+          "options": [
+            "Puedo ver el pasajero.",
+            "Puedo ver la maleta.",
+            "Puedo ver el reloj."
+          ]
+        },
+        {
+          "sourceIndex": 16,
+          "type": "Traduce la frase",
+          "prompt": "I can see the suitcase.",
+          "sourceAnswer": "Puedo ver la maleta.",
+          "options": [
+            "Puedo ver la maleta.",
+            "Puedo ver el reloj.",
+            "Puedo ver la llegada."
+          ]
+        },
+        {
+          "sourceIndex": 17,
+          "type": "Traduce la frase",
+          "prompt": "I can see the clock.",
+          "sourceAnswer": "Puedo ver el reloj.",
+          "options": [
+            "Puedo ver el reloj.",
+            "Puedo ver la llegada.",
+            "Puedo ver la salida."
+          ]
+        },
+        {
+          "sourceIndex": 18,
+          "type": "Traduce la frase",
+          "prompt": "I can see the arrival.",
+          "sourceAnswer": "Puedo ver la llegada.",
+          "options": [
+            "Puedo ver la llegada.",
+            "Puedo ver la salida.",
+            "Puedo ver el asiento."
+          ]
+        },
+        {
+          "sourceIndex": 19,
+          "type": "Traduce la frase",
+          "prompt": "I can see the departure.",
+          "sourceAnswer": "Puedo ver la salida.",
+          "options": [
+            "Puedo ver la salida.",
+            "Puedo ver el asiento.",
+            "Puedo ver el tren."
+          ]
+        },
+        {
+          "sourceIndex": 20,
+          "type": "Traduce la frase",
+          "prompt": "I can see the seat.",
+          "sourceAnswer": "Puedo ver el asiento.",
+          "options": [
+            "Puedo ver el asiento.",
+            "Puedo ver el tren.",
+            "Puedo ver el andén."
+          ]
+        },
+        {
+          "sourceIndex": 21,
+          "type": "Traduce la frase",
+          "prompt": "Where is the train?",
+          "sourceAnswer": "¿Dónde está el tren?",
+          "options": [
+            "¿Dónde está el tren?",
+            "¿Dónde está el andén?",
+            "¿Dónde está el billete?"
+          ]
+        },
+        {
+          "sourceIndex": 22,
+          "type": "Traduce la frase",
+          "prompt": "Where is the platform?",
+          "sourceAnswer": "¿Dónde está el andén?",
+          "options": [
+            "¿Dónde está el andén?",
+            "¿Dónde está el billete?",
+            "¿Dónde está la estación?"
+          ]
+        },
+        {
+          "sourceIndex": 23,
+          "type": "Traduce la frase",
+          "prompt": "Where is the ticket?",
+          "sourceAnswer": "¿Dónde está el billete?",
+          "options": [
+            "¿Dónde está el billete?",
+            "¿Dónde está la estación?",
+            "¿Dónde está el pasajero?"
+          ]
+        },
+        {
+          "sourceIndex": 24,
+          "type": "Traduce la frase",
+          "prompt": "Where is the train station?",
+          "sourceAnswer": "¿Dónde está la estación?",
+          "options": [
+            "¿Dónde está la estación?",
+            "¿Dónde está el pasajero?",
+            "¿Dónde está la maleta?"
+          ]
+        },
+        {
+          "sourceIndex": 25,
+          "type": "Traduce la frase",
+          "prompt": "Where is the passenger?",
+          "sourceAnswer": "¿Dónde está el pasajero?",
+          "options": [
+            "¿Dónde está el pasajero?",
+            "¿Dónde está la maleta?",
+            "¿Dónde está el reloj?"
+          ]
+        },
+        {
+          "sourceIndex": 26,
+          "type": "Traduce la frase",
+          "prompt": "Where is the suitcase?",
+          "sourceAnswer": "¿Dónde está la maleta?",
+          "options": [
+            "¿Dónde está la maleta?",
+            "¿Dónde está el reloj?",
+            "¿Dónde está la llegada?"
+          ]
+        },
+        {
+          "sourceIndex": 27,
+          "type": "Traduce la frase",
+          "prompt": "Where is the clock?",
+          "sourceAnswer": "¿Dónde está el reloj?",
+          "options": [
+            "¿Dónde está el reloj?",
+            "¿Dónde está la llegada?",
+            "¿Dónde está la salida?"
+          ]
+        },
+        {
+          "sourceIndex": 28,
+          "type": "Traduce la frase",
+          "prompt": "Where is the arrival?",
+          "sourceAnswer": "¿Dónde está la llegada?",
+          "options": [
+            "¿Dónde está la llegada?",
+            "¿Dónde está la salida?",
+            "¿Dónde está el asiento?"
+          ]
+        },
+        {
+          "sourceIndex": 29,
+          "type": "Traduce la frase",
+          "prompt": "Where is the departure?",
+          "sourceAnswer": "¿Dónde está la salida?",
+          "options": [
+            "¿Dónde está la salida?",
+            "¿Dónde está el asiento?",
+            "¿Dónde está el tren?"
+          ]
+        },
+        {
+          "sourceIndex": 30,
+          "type": "Traduce la frase",
+          "prompt": "Where is the seat?",
+          "sourceAnswer": "¿Dónde está el asiento?",
+          "options": [
+            "¿Dónde está el asiento?",
+            "¿Dónde está el tren?",
+            "¿Dónde está el andén?"
+          ]
+        },
+        {
+          "sourceIndex": 31,
+          "type": "Traduce la frase",
+          "prompt": "I like the train.",
+          "sourceAnswer": "Me gusta el tren.",
+          "options": [
+            "Me gusta el tren.",
+            "Me gusta el andén.",
+            "Me gusta el billete."
+          ]
+        },
+        {
+          "sourceIndex": 32,
+          "type": "Traduce la frase",
+          "prompt": "I like the platform.",
+          "sourceAnswer": "Me gusta el andén.",
+          "options": [
+            "Me gusta el andén.",
+            "Me gusta el billete.",
+            "Me gusta la estación."
+          ]
+        },
+        {
+          "sourceIndex": 33,
+          "type": "Traduce la frase",
+          "prompt": "I like the ticket.",
+          "sourceAnswer": "Me gusta el billete.",
+          "options": [
+            "Me gusta el billete.",
+            "Me gusta la estación.",
+            "Me gusta el pasajero."
+          ]
+        },
+        {
+          "sourceIndex": 34,
+          "type": "Traduce la frase",
+          "prompt": "I like the train station.",
+          "sourceAnswer": "Me gusta la estación.",
+          "options": [
+            "Me gusta la estación.",
+            "Me gusta el pasajero.",
+            "Me gusta la maleta."
+          ]
+        },
+        {
+          "sourceIndex": 35,
+          "type": "Traduce la frase",
+          "prompt": "I like the passenger.",
+          "sourceAnswer": "Me gusta el pasajero.",
+          "options": [
+            "Me gusta el pasajero.",
+            "Me gusta la maleta.",
+            "Me gusta el reloj."
+          ]
+        },
+        {
+          "sourceIndex": 36,
+          "type": "Traduce la frase",
+          "prompt": "I like the suitcase.",
+          "sourceAnswer": "Me gusta la maleta.",
+          "options": [
+            "Me gusta la maleta.",
+            "Me gusta el reloj.",
+            "Me gusta la llegada."
+          ]
+        },
+        {
+          "sourceIndex": 37,
+          "type": "Traduce la frase",
+          "prompt": "I like the clock.",
+          "sourceAnswer": "Me gusta el reloj.",
+          "options": [
+            "Me gusta el reloj.",
+            "Me gusta la llegada.",
+            "Me gusta la salida."
+          ]
+        },
+        {
+          "sourceIndex": 38,
+          "type": "Traduce la frase",
+          "prompt": "I like the arrival.",
+          "sourceAnswer": "Me gusta la llegada.",
+          "options": [
+            "Me gusta la llegada.",
+            "Me gusta la salida.",
+            "Me gusta el asiento."
+          ]
+        },
+        {
+          "sourceIndex": 39,
+          "type": "Traduce la frase",
+          "prompt": "I like the departure.",
+          "sourceAnswer": "Me gusta la salida.",
+          "options": [
+            "Me gusta la salida.",
+            "Me gusta el asiento.",
+            "Me gusta el tren."
+          ]
+        },
+        {
+          "sourceIndex": 40,
+          "type": "Traduce la frase",
+          "prompt": "I like the seat.",
+          "sourceAnswer": "Me gusta el asiento.",
+          "options": [
+            "Me gusta el asiento.",
+            "Me gusta el tren.",
+            "Me gusta el andén."
+          ]
+        },
+        {
+          "sourceIndex": 41,
+          "type": "Traduce la frase",
+          "prompt": "This is the train.",
+          "sourceAnswer": "Esto es el tren.",
+          "options": [
+            "Esto es el tren.",
+            "Esto es el andén.",
+            "Esto es el billete."
+          ]
+        },
+        {
+          "sourceIndex": 42,
+          "type": "Traduce la frase",
+          "prompt": "This is the platform.",
+          "sourceAnswer": "Esto es el andén.",
+          "options": [
+            "Esto es el andén.",
+            "Esto es el billete.",
+            "Esto es la estación."
+          ]
+        },
+        {
+          "sourceIndex": 43,
+          "type": "Traduce la frase",
+          "prompt": "This is the ticket.",
+          "sourceAnswer": "Esto es el billete.",
+          "options": [
+            "Esto es el billete.",
+            "Esto es la estación.",
+            "Esto es el pasajero."
+          ]
+        },
+        {
+          "sourceIndex": 44,
+          "type": "Traduce la frase",
+          "prompt": "This is the train station.",
+          "sourceAnswer": "Esto es la estación.",
+          "options": [
+            "Esto es la estación.",
+            "Esto es el pasajero.",
+            "Esto es la maleta."
+          ]
+        },
+        {
+          "sourceIndex": 45,
+          "type": "Traduce la frase",
+          "prompt": "This is the passenger.",
+          "sourceAnswer": "Esto es el pasajero.",
+          "options": [
+            "Esto es el pasajero.",
+            "Esto es la maleta.",
+            "Esto es el reloj."
+          ]
+        },
+        {
+          "sourceIndex": 46,
+          "type": "Traduce la frase",
+          "prompt": "This is the suitcase.",
+          "sourceAnswer": "Esto es la maleta.",
+          "options": [
+            "Esto es la maleta.",
+            "Esto es el reloj.",
+            "Esto es la llegada."
+          ]
+        },
+        {
+          "sourceIndex": 47,
+          "type": "Traduce la frase",
+          "prompt": "This is the clock.",
+          "sourceAnswer": "Esto es el reloj.",
+          "options": [
+            "Esto es el reloj.",
+            "Esto es la llegada.",
+            "Esto es la salida."
+          ]
+        },
+        {
+          "sourceIndex": 48,
+          "type": "Traduce la frase",
+          "prompt": "This is the arrival.",
+          "sourceAnswer": "Esto es la llegada.",
+          "options": [
+            "Esto es la llegada.",
+            "Esto es la salida.",
+            "Esto es el asiento."
+          ]
+        },
+        {
+          "sourceIndex": 49,
+          "type": "Traduce la frase",
+          "prompt": "This is the departure.",
+          "sourceAnswer": "Esto es la salida.",
+          "options": [
+            "Esto es la salida.",
+            "Esto es el asiento.",
+            "Esto es el tren."
+          ]
+        },
+        {
+          "sourceIndex": 50,
+          "type": "Traduce la frase",
+          "prompt": "This is the seat.",
+          "sourceAnswer": "Esto es el asiento.",
+          "options": [
+            "Esto es el asiento.",
+            "Esto es el tren.",
+            "Esto es el andén."
+          ]
+        }
+      ]
+    },
+    {
+      "mission": "072",
+      "title": "At the Swimming Pool",
+      "vocabulary": [
+        [
+          "swimming pool",
+          "la piscina"
+        ],
+        [
+          "swimsuit",
+          "el bañador"
+        ],
+        [
+          "towel",
+          "la toalla"
+        ],
+        [
+          "water",
+          "el agua"
+        ],
+        [
+          "swimming cap",
+          "el gorro"
+        ],
+        [
+          "goggles",
+          "las gafas"
+        ],
+        [
+          "ladder",
+          "la escalera"
+        ],
+        [
+          "lifeguard",
+          "el socorrista"
+        ],
+        [
+          "shower",
+          "la ducha"
+        ],
+        [
+          "float",
+          "el flotador"
+        ]
+      ],
+      "practiceSource": [
+        {
+          "sourceIndex": 1,
+          "type": "Traduce la palabra",
+          "prompt": "swimming pool",
+          "sourceAnswer": "la piscina",
+          "options": [
+            "la piscina",
+            "el bañador",
+            "la toalla"
+          ]
+        },
+        {
+          "sourceIndex": 2,
+          "type": "Traduce la palabra",
+          "prompt": "swimsuit",
+          "sourceAnswer": "el bañador",
+          "options": [
+            "el bañador",
+            "la toalla",
+            "el agua"
+          ]
+        },
+        {
+          "sourceIndex": 3,
+          "type": "Traduce la palabra",
+          "prompt": "towel",
+          "sourceAnswer": "la toalla",
+          "options": [
+            "la toalla",
+            "el agua",
+            "el gorro"
+          ]
+        },
+        {
+          "sourceIndex": 4,
+          "type": "Traduce la palabra",
+          "prompt": "water",
+          "sourceAnswer": "el agua",
+          "options": [
+            "el agua",
+            "el gorro",
+            "las gafas"
+          ]
+        },
+        {
+          "sourceIndex": 5,
+          "type": "Traduce la palabra",
+          "prompt": "swimming cap",
+          "sourceAnswer": "el gorro",
+          "options": [
+            "el gorro",
+            "las gafas",
+            "la escalera"
+          ]
+        },
+        {
+          "sourceIndex": 6,
+          "type": "Traduce la palabra",
+          "prompt": "goggles",
+          "sourceAnswer": "las gafas",
+          "options": [
+            "las gafas",
+            "la escalera",
+            "el socorrista"
+          ]
+        },
+        {
+          "sourceIndex": 7,
+          "type": "Traduce la palabra",
+          "prompt": "ladder",
+          "sourceAnswer": "la escalera",
+          "options": [
+            "la escalera",
+            "el socorrista",
+            "la ducha"
+          ]
+        },
+        {
+          "sourceIndex": 8,
+          "type": "Traduce la palabra",
+          "prompt": "lifeguard",
+          "sourceAnswer": "el socorrista",
+          "options": [
+            "el socorrista",
+            "la ducha",
+            "el flotador"
+          ]
+        },
+        {
+          "sourceIndex": 9,
+          "type": "Traduce la palabra",
+          "prompt": "shower",
+          "sourceAnswer": "la ducha",
+          "options": [
+            "la ducha",
+            "el flotador",
+            "la piscina"
+          ]
+        },
+        {
+          "sourceIndex": 10,
+          "type": "Traduce la palabra",
+          "prompt": "float",
+          "sourceAnswer": "el flotador",
+          "options": [
+            "el flotador",
+            "la piscina",
+            "el bañador"
+          ]
+        },
+        {
+          "sourceIndex": 11,
+          "type": "Traduce la frase",
+          "prompt": "I can see the swimming pool.",
+          "sourceAnswer": "Puedo ver la piscina.",
+          "options": [
+            "Puedo ver la piscina.",
+            "Puedo ver el bañador.",
+            "Puedo ver la toalla."
+          ]
+        },
+        {
+          "sourceIndex": 12,
+          "type": "Traduce la frase",
+          "prompt": "I can see the swimsuit.",
+          "sourceAnswer": "Puedo ver el bañador.",
+          "options": [
+            "Puedo ver el bañador.",
+            "Puedo ver la toalla.",
+            "Puedo ver el agua."
+          ]
+        },
+        {
+          "sourceIndex": 13,
+          "type": "Traduce la frase",
+          "prompt": "I can see the towel.",
+          "sourceAnswer": "Puedo ver la toalla.",
+          "options": [
+            "Puedo ver la toalla.",
+            "Puedo ver el agua.",
+            "Puedo ver el gorro."
+          ]
+        },
+        {
+          "sourceIndex": 14,
+          "type": "Traduce la frase",
+          "prompt": "I can see the water.",
+          "sourceAnswer": "Puedo ver el agua.",
+          "options": [
+            "Puedo ver el agua.",
+            "Puedo ver el gorro.",
+            "Puedo ver las gafas."
+          ]
+        },
+        {
+          "sourceIndex": 15,
+          "type": "Traduce la frase",
+          "prompt": "I can see the swimming cap.",
+          "sourceAnswer": "Puedo ver el gorro.",
+          "options": [
+            "Puedo ver el gorro.",
+            "Puedo ver las gafas.",
+            "Puedo ver la escalera."
+          ]
+        },
+        {
+          "sourceIndex": 16,
+          "type": "Traduce la frase",
+          "prompt": "I can see the goggles.",
+          "sourceAnswer": "Puedo ver las gafas.",
+          "options": [
+            "Puedo ver las gafas.",
+            "Puedo ver la escalera.",
+            "Puedo ver el socorrista."
+          ]
+        },
+        {
+          "sourceIndex": 17,
+          "type": "Traduce la frase",
+          "prompt": "I can see the ladder.",
+          "sourceAnswer": "Puedo ver la escalera.",
+          "options": [
+            "Puedo ver la escalera.",
+            "Puedo ver el socorrista.",
+            "Puedo ver la ducha."
+          ]
+        },
+        {
+          "sourceIndex": 18,
+          "type": "Traduce la frase",
+          "prompt": "I can see the lifeguard.",
+          "sourceAnswer": "Puedo ver el socorrista.",
+          "options": [
+            "Puedo ver el socorrista.",
+            "Puedo ver la ducha.",
+            "Puedo ver el flotador."
+          ]
+        },
+        {
+          "sourceIndex": 19,
+          "type": "Traduce la frase",
+          "prompt": "I can see the shower.",
+          "sourceAnswer": "Puedo ver la ducha.",
+          "options": [
+            "Puedo ver la ducha.",
+            "Puedo ver el flotador.",
+            "Puedo ver la piscina."
+          ]
+        },
+        {
+          "sourceIndex": 20,
+          "type": "Traduce la frase",
+          "prompt": "I can see the float.",
+          "sourceAnswer": "Puedo ver el flotador.",
+          "options": [
+            "Puedo ver el flotador.",
+            "Puedo ver la piscina.",
+            "Puedo ver el bañador."
+          ]
+        },
+        {
+          "sourceIndex": 21,
+          "type": "Traduce la frase",
+          "prompt": "Where is the swimming pool?",
+          "sourceAnswer": "¿Dónde está la piscina?",
+          "options": [
+            "¿Dónde está la piscina?",
+            "¿Dónde está el bañador?",
+            "¿Dónde está la toalla?"
+          ]
+        },
+        {
+          "sourceIndex": 22,
+          "type": "Traduce la frase",
+          "prompt": "Where is the swimsuit?",
+          "sourceAnswer": "¿Dónde está el bañador?",
+          "options": [
+            "¿Dónde está el bañador?",
+            "¿Dónde está la toalla?",
+            "¿Dónde está el agua?"
+          ]
+        },
+        {
+          "sourceIndex": 23,
+          "type": "Traduce la frase",
+          "prompt": "Where is the towel?",
+          "sourceAnswer": "¿Dónde está la toalla?",
+          "options": [
+            "¿Dónde está la toalla?",
+            "¿Dónde está el agua?",
+            "¿Dónde está el gorro?"
+          ]
+        },
+        {
+          "sourceIndex": 24,
+          "type": "Traduce la frase",
+          "prompt": "Where is the water?",
+          "sourceAnswer": "¿Dónde está el agua?",
+          "options": [
+            "¿Dónde está el agua?",
+            "¿Dónde está el gorro?",
+            "¿Dónde está las gafas?"
+          ]
+        },
+        {
+          "sourceIndex": 25,
+          "type": "Traduce la frase",
+          "prompt": "Where is the swimming cap?",
+          "sourceAnswer": "¿Dónde está el gorro?",
+          "options": [
+            "¿Dónde está el gorro?",
+            "¿Dónde está las gafas?",
+            "¿Dónde está la escalera?"
+          ]
+        },
+        {
+          "sourceIndex": 26,
+          "type": "Traduce la frase",
+          "prompt": "Where is the goggles?",
+          "sourceAnswer": "¿Dónde está las gafas?",
+          "options": [
+            "¿Dónde está las gafas?",
+            "¿Dónde está la escalera?",
+            "¿Dónde está el socorrista?"
+          ]
+        },
+        {
+          "sourceIndex": 27,
+          "type": "Traduce la frase",
+          "prompt": "Where is the ladder?",
+          "sourceAnswer": "¿Dónde está la escalera?",
+          "options": [
+            "¿Dónde está la escalera?",
+            "¿Dónde está el socorrista?",
+            "¿Dónde está la ducha?"
+          ]
+        },
+        {
+          "sourceIndex": 28,
+          "type": "Traduce la frase",
+          "prompt": "Where is the lifeguard?",
+          "sourceAnswer": "¿Dónde está el socorrista?",
+          "options": [
+            "¿Dónde está el socorrista?",
+            "¿Dónde está la ducha?",
+            "¿Dónde está el flotador?"
+          ]
+        },
+        {
+          "sourceIndex": 29,
+          "type": "Traduce la frase",
+          "prompt": "Where is the shower?",
+          "sourceAnswer": "¿Dónde está la ducha?",
+          "options": [
+            "¿Dónde está la ducha?",
+            "¿Dónde está el flotador?",
+            "¿Dónde está la piscina?"
+          ]
+        },
+        {
+          "sourceIndex": 30,
+          "type": "Traduce la frase",
+          "prompt": "Where is the float?",
+          "sourceAnswer": "¿Dónde está el flotador?",
+          "options": [
+            "¿Dónde está el flotador?",
+            "¿Dónde está la piscina?",
+            "¿Dónde está el bañador?"
+          ]
+        },
+        {
+          "sourceIndex": 31,
+          "type": "Traduce la frase",
+          "prompt": "I like the swimming pool.",
+          "sourceAnswer": "Me gusta la piscina.",
+          "options": [
+            "Me gusta la piscina.",
+            "Me gusta el bañador.",
+            "Me gusta la toalla."
+          ]
+        },
+        {
+          "sourceIndex": 32,
+          "type": "Traduce la frase",
+          "prompt": "I like the swimsuit.",
+          "sourceAnswer": "Me gusta el bañador.",
+          "options": [
+            "Me gusta el bañador.",
+            "Me gusta la toalla.",
+            "Me gusta el agua."
+          ]
+        },
+        {
+          "sourceIndex": 33,
+          "type": "Traduce la frase",
+          "prompt": "I like the towel.",
+          "sourceAnswer": "Me gusta la toalla.",
+          "options": [
+            "Me gusta la toalla.",
+            "Me gusta el agua.",
+            "Me gusta el gorro."
+          ]
+        },
+        {
+          "sourceIndex": 34,
+          "type": "Traduce la frase",
+          "prompt": "I like the water.",
+          "sourceAnswer": "Me gusta el agua.",
+          "options": [
+            "Me gusta el agua.",
+            "Me gusta el gorro.",
+            "Me gusta las gafas."
+          ]
+        },
+        {
+          "sourceIndex": 35,
+          "type": "Traduce la frase",
+          "prompt": "I like the swimming cap.",
+          "sourceAnswer": "Me gusta el gorro.",
+          "options": [
+            "Me gusta el gorro.",
+            "Me gusta las gafas.",
+            "Me gusta la escalera."
+          ]
+        },
+        {
+          "sourceIndex": 36,
+          "type": "Traduce la frase",
+          "prompt": "I like the goggles.",
+          "sourceAnswer": "Me gusta las gafas.",
+          "options": [
+            "Me gusta las gafas.",
+            "Me gusta la escalera.",
+            "Me gusta el socorrista."
+          ]
+        },
+        {
+          "sourceIndex": 37,
+          "type": "Traduce la frase",
+          "prompt": "I like the ladder.",
+          "sourceAnswer": "Me gusta la escalera.",
+          "options": [
+            "Me gusta la escalera.",
+            "Me gusta el socorrista.",
+            "Me gusta la ducha."
+          ]
+        },
+        {
+          "sourceIndex": 38,
+          "type": "Traduce la frase",
+          "prompt": "I like the lifeguard.",
+          "sourceAnswer": "Me gusta el socorrista.",
+          "options": [
+            "Me gusta el socorrista.",
+            "Me gusta la ducha.",
+            "Me gusta el flotador."
+          ]
+        },
+        {
+          "sourceIndex": 39,
+          "type": "Traduce la frase",
+          "prompt": "I like the shower.",
+          "sourceAnswer": "Me gusta la ducha.",
+          "options": [
+            "Me gusta la ducha.",
+            "Me gusta el flotador.",
+            "Me gusta la piscina."
+          ]
+        },
+        {
+          "sourceIndex": 40,
+          "type": "Traduce la frase",
+          "prompt": "I like the float.",
+          "sourceAnswer": "Me gusta el flotador.",
+          "options": [
+            "Me gusta el flotador.",
+            "Me gusta la piscina.",
+            "Me gusta el bañador."
+          ]
+        },
+        {
+          "sourceIndex": 41,
+          "type": "Traduce la frase",
+          "prompt": "This is the swimming pool.",
+          "sourceAnswer": "Esto es la piscina.",
+          "options": [
+            "Esto es la piscina.",
+            "Esto es el bañador.",
+            "Esto es la toalla."
+          ]
+        },
+        {
+          "sourceIndex": 42,
+          "type": "Traduce la frase",
+          "prompt": "This is the swimsuit.",
+          "sourceAnswer": "Esto es el bañador.",
+          "options": [
+            "Esto es el bañador.",
+            "Esto es la toalla.",
+            "Esto es el agua."
+          ]
+        },
+        {
+          "sourceIndex": 43,
+          "type": "Traduce la frase",
+          "prompt": "This is the towel.",
+          "sourceAnswer": "Esto es la toalla.",
+          "options": [
+            "Esto es la toalla.",
+            "Esto es el agua.",
+            "Esto es el gorro."
+          ]
+        },
+        {
+          "sourceIndex": 44,
+          "type": "Traduce la frase",
+          "prompt": "This is the water.",
+          "sourceAnswer": "Esto es el agua.",
+          "options": [
+            "Esto es el agua.",
+            "Esto es el gorro.",
+            "Esto es las gafas."
+          ]
+        },
+        {
+          "sourceIndex": 45,
+          "type": "Traduce la frase",
+          "prompt": "This is the swimming cap.",
+          "sourceAnswer": "Esto es el gorro.",
+          "options": [
+            "Esto es el gorro.",
+            "Esto es las gafas.",
+            "Esto es la escalera."
+          ]
+        },
+        {
+          "sourceIndex": 46,
+          "type": "Traduce la frase",
+          "prompt": "This is the goggles.",
+          "sourceAnswer": "Esto es las gafas.",
+          "options": [
+            "Esto es las gafas.",
+            "Esto es la escalera.",
+            "Esto es el socorrista."
+          ]
+        },
+        {
+          "sourceIndex": 47,
+          "type": "Traduce la frase",
+          "prompt": "This is the ladder.",
+          "sourceAnswer": "Esto es la escalera.",
+          "options": [
+            "Esto es la escalera.",
+            "Esto es el socorrista.",
+            "Esto es la ducha."
+          ]
+        },
+        {
+          "sourceIndex": 48,
+          "type": "Traduce la frase",
+          "prompt": "This is the lifeguard.",
+          "sourceAnswer": "Esto es el socorrista.",
+          "options": [
+            "Esto es el socorrista.",
+            "Esto es la ducha.",
+            "Esto es el flotador."
+          ]
+        },
+        {
+          "sourceIndex": 49,
+          "type": "Traduce la frase",
+          "prompt": "This is the shower.",
+          "sourceAnswer": "Esto es la ducha.",
+          "options": [
+            "Esto es la ducha.",
+            "Esto es el flotador.",
+            "Esto es la piscina."
+          ]
+        },
+        {
+          "sourceIndex": 50,
+          "type": "Traduce la frase",
+          "prompt": "This is the float.",
+          "sourceAnswer": "Esto es el flotador.",
+          "options": [
+            "Esto es el flotador.",
+            "Esto es la piscina.",
+            "Esto es el bañador."
+          ]
+        }
+      ]
+    },
+    {
+      "mission": "073",
+      "title": "At the Doctor's",
+      "vocabulary": [
+        [
+          "doctor",
+          "el médico"
+        ],
+        [
+          "nurse",
+          "la enfermera"
+        ],
+        [
+          "patient",
+          "el paciente"
+        ],
+        [
+          "appointment",
+          "la cita"
+        ],
+        [
+          "medicine",
+          "la medicina"
+        ],
+        [
+          "pain",
+          "el dolor"
+        ],
+        [
+          "head",
+          "la cabeza"
+        ],
+        [
+          "arm",
+          "el brazo"
+        ],
+        [
+          "temperature",
+          "la temperatura"
+        ],
+        [
+          "hospital",
+          "el hospital"
+        ]
+      ],
+      "practiceSource": [
+        {
+          "sourceIndex": 1,
+          "type": "Traduce la palabra",
+          "prompt": "doctor",
+          "sourceAnswer": "el médico",
+          "options": [
+            "el médico",
+            "la enfermera",
+            "el paciente"
+          ]
+        },
+        {
+          "sourceIndex": 2,
+          "type": "Traduce la palabra",
+          "prompt": "nurse",
+          "sourceAnswer": "la enfermera",
+          "options": [
+            "la enfermera",
+            "el paciente",
+            "la cita"
+          ]
+        },
+        {
+          "sourceIndex": 3,
+          "type": "Traduce la palabra",
+          "prompt": "patient",
+          "sourceAnswer": "el paciente",
+          "options": [
+            "el paciente",
+            "la cita",
+            "la medicina"
+          ]
+        },
+        {
+          "sourceIndex": 4,
+          "type": "Traduce la palabra",
+          "prompt": "appointment",
+          "sourceAnswer": "la cita",
+          "options": [
+            "la cita",
+            "la medicina",
+            "el dolor"
+          ]
+        },
+        {
+          "sourceIndex": 5,
+          "type": "Traduce la palabra",
+          "prompt": "medicine",
+          "sourceAnswer": "la medicina",
+          "options": [
+            "la medicina",
+            "el dolor",
+            "la cabeza"
+          ]
+        },
+        {
+          "sourceIndex": 6,
+          "type": "Traduce la palabra",
+          "prompt": "pain",
+          "sourceAnswer": "el dolor",
+          "options": [
+            "el dolor",
+            "la cabeza",
+            "el brazo"
+          ]
+        },
+        {
+          "sourceIndex": 7,
+          "type": "Traduce la palabra",
+          "prompt": "head",
+          "sourceAnswer": "la cabeza",
+          "options": [
+            "la cabeza",
+            "el brazo",
+            "la temperatura"
+          ]
+        },
+        {
+          "sourceIndex": 8,
+          "type": "Traduce la palabra",
+          "prompt": "arm",
+          "sourceAnswer": "el brazo",
+          "options": [
+            "el brazo",
+            "la temperatura",
+            "el hospital"
+          ]
+        },
+        {
+          "sourceIndex": 9,
+          "type": "Traduce la palabra",
+          "prompt": "temperature",
+          "sourceAnswer": "la temperatura",
+          "options": [
+            "la temperatura",
+            "el hospital",
+            "el médico"
+          ]
+        },
+        {
+          "sourceIndex": 10,
+          "type": "Traduce la palabra",
+          "prompt": "hospital",
+          "sourceAnswer": "el hospital",
+          "options": [
+            "el hospital",
+            "el médico",
+            "la enfermera"
+          ]
+        },
+        {
+          "sourceIndex": 11,
+          "type": "Traduce la frase",
+          "prompt": "I can see the doctor.",
+          "sourceAnswer": "Puedo ver el médico.",
+          "options": [
+            "Puedo ver el médico.",
+            "Puedo ver la enfermera.",
+            "Puedo ver el paciente."
+          ]
+        },
+        {
+          "sourceIndex": 12,
+          "type": "Traduce la frase",
+          "prompt": "I can see the nurse.",
+          "sourceAnswer": "Puedo ver la enfermera.",
+          "options": [
+            "Puedo ver la enfermera.",
+            "Puedo ver el paciente.",
+            "Puedo ver la cita."
+          ]
+        },
+        {
+          "sourceIndex": 13,
+          "type": "Traduce la frase",
+          "prompt": "I can see the patient.",
+          "sourceAnswer": "Puedo ver el paciente.",
+          "options": [
+            "Puedo ver el paciente.",
+            "Puedo ver la cita.",
+            "Puedo ver la medicina."
+          ]
+        },
+        {
+          "sourceIndex": 14,
+          "type": "Traduce la frase",
+          "prompt": "I can see the appointment.",
+          "sourceAnswer": "Puedo ver la cita.",
+          "options": [
+            "Puedo ver la cita.",
+            "Puedo ver la medicina.",
+            "Puedo ver el dolor."
+          ]
+        },
+        {
+          "sourceIndex": 15,
+          "type": "Traduce la frase",
+          "prompt": "I can see the medicine.",
+          "sourceAnswer": "Puedo ver la medicina.",
+          "options": [
+            "Puedo ver la medicina.",
+            "Puedo ver el dolor.",
+            "Puedo ver la cabeza."
+          ]
+        },
+        {
+          "sourceIndex": 16,
+          "type": "Traduce la frase",
+          "prompt": "I can see the pain.",
+          "sourceAnswer": "Puedo ver el dolor.",
+          "options": [
+            "Puedo ver el dolor.",
+            "Puedo ver la cabeza.",
+            "Puedo ver el brazo."
+          ]
+        },
+        {
+          "sourceIndex": 17,
+          "type": "Traduce la frase",
+          "prompt": "I can see the head.",
+          "sourceAnswer": "Puedo ver la cabeza.",
+          "options": [
+            "Puedo ver la cabeza.",
+            "Puedo ver el brazo.",
+            "Puedo ver la temperatura."
+          ]
+        },
+        {
+          "sourceIndex": 18,
+          "type": "Traduce la frase",
+          "prompt": "I can see the arm.",
+          "sourceAnswer": "Puedo ver el brazo.",
+          "options": [
+            "Puedo ver el brazo.",
+            "Puedo ver la temperatura.",
+            "Puedo ver el hospital."
+          ]
+        },
+        {
+          "sourceIndex": 19,
+          "type": "Traduce la frase",
+          "prompt": "I can see the temperature.",
+          "sourceAnswer": "Puedo ver la temperatura.",
+          "options": [
+            "Puedo ver la temperatura.",
+            "Puedo ver el hospital.",
+            "Puedo ver el médico."
+          ]
+        },
+        {
+          "sourceIndex": 20,
+          "type": "Traduce la frase",
+          "prompt": "I can see the hospital.",
+          "sourceAnswer": "Puedo ver el hospital.",
+          "options": [
+            "Puedo ver el hospital.",
+            "Puedo ver el médico.",
+            "Puedo ver la enfermera."
+          ]
+        },
+        {
+          "sourceIndex": 21,
+          "type": "Traduce la frase",
+          "prompt": "Where is the doctor?",
+          "sourceAnswer": "¿Dónde está el médico?",
+          "options": [
+            "¿Dónde está el médico?",
+            "¿Dónde está la enfermera?",
+            "¿Dónde está el paciente?"
+          ]
+        },
+        {
+          "sourceIndex": 22,
+          "type": "Traduce la frase",
+          "prompt": "Where is the nurse?",
+          "sourceAnswer": "¿Dónde está la enfermera?",
+          "options": [
+            "¿Dónde está la enfermera?",
+            "¿Dónde está el paciente?",
+            "¿Dónde está la cita?"
+          ]
+        },
+        {
+          "sourceIndex": 23,
+          "type": "Traduce la frase",
+          "prompt": "Where is the patient?",
+          "sourceAnswer": "¿Dónde está el paciente?",
+          "options": [
+            "¿Dónde está el paciente?",
+            "¿Dónde está la cita?",
+            "¿Dónde está la medicina?"
+          ]
+        },
+        {
+          "sourceIndex": 24,
+          "type": "Traduce la frase",
+          "prompt": "Where is the appointment?",
+          "sourceAnswer": "¿Dónde está la cita?",
+          "options": [
+            "¿Dónde está la cita?",
+            "¿Dónde está la medicina?",
+            "¿Dónde está el dolor?"
+          ]
+        },
+        {
+          "sourceIndex": 25,
+          "type": "Traduce la frase",
+          "prompt": "Where is the medicine?",
+          "sourceAnswer": "¿Dónde está la medicina?",
+          "options": [
+            "¿Dónde está la medicina?",
+            "¿Dónde está el dolor?",
+            "¿Dónde está la cabeza?"
+          ]
+        },
+        {
+          "sourceIndex": 26,
+          "type": "Traduce la frase",
+          "prompt": "Where is the pain?",
+          "sourceAnswer": "¿Dónde está el dolor?",
+          "options": [
+            "¿Dónde está el dolor?",
+            "¿Dónde está la cabeza?",
+            "¿Dónde está el brazo?"
+          ]
+        },
+        {
+          "sourceIndex": 27,
+          "type": "Traduce la frase",
+          "prompt": "Where is the head?",
+          "sourceAnswer": "¿Dónde está la cabeza?",
+          "options": [
+            "¿Dónde está la cabeza?",
+            "¿Dónde está el brazo?",
+            "¿Dónde está la temperatura?"
+          ]
+        },
+        {
+          "sourceIndex": 28,
+          "type": "Traduce la frase",
+          "prompt": "Where is the arm?",
+          "sourceAnswer": "¿Dónde está el brazo?",
+          "options": [
+            "¿Dónde está el brazo?",
+            "¿Dónde está la temperatura?",
+            "¿Dónde está el hospital?"
+          ]
+        },
+        {
+          "sourceIndex": 29,
+          "type": "Traduce la frase",
+          "prompt": "Where is the temperature?",
+          "sourceAnswer": "¿Dónde está la temperatura?",
+          "options": [
+            "¿Dónde está la temperatura?",
+            "¿Dónde está el hospital?",
+            "¿Dónde está el médico?"
+          ]
+        },
+        {
+          "sourceIndex": 30,
+          "type": "Traduce la frase",
+          "prompt": "Where is the hospital?",
+          "sourceAnswer": "¿Dónde está el hospital?",
+          "options": [
+            "¿Dónde está el hospital?",
+            "¿Dónde está el médico?",
+            "¿Dónde está la enfermera?"
+          ]
+        },
+        {
+          "sourceIndex": 31,
+          "type": "Traduce la frase",
+          "prompt": "I like the doctor.",
+          "sourceAnswer": "Me gusta el médico.",
+          "options": [
+            "Me gusta el médico.",
+            "Me gusta la enfermera.",
+            "Me gusta el paciente."
+          ]
+        },
+        {
+          "sourceIndex": 32,
+          "type": "Traduce la frase",
+          "prompt": "I like the nurse.",
+          "sourceAnswer": "Me gusta la enfermera.",
+          "options": [
+            "Me gusta la enfermera.",
+            "Me gusta el paciente.",
+            "Me gusta la cita."
+          ]
+        },
+        {
+          "sourceIndex": 33,
+          "type": "Traduce la frase",
+          "prompt": "I like the patient.",
+          "sourceAnswer": "Me gusta el paciente.",
+          "options": [
+            "Me gusta el paciente.",
+            "Me gusta la cita.",
+            "Me gusta la medicina."
+          ]
+        },
+        {
+          "sourceIndex": 34,
+          "type": "Traduce la frase",
+          "prompt": "I like the appointment.",
+          "sourceAnswer": "Me gusta la cita.",
+          "options": [
+            "Me gusta la cita.",
+            "Me gusta la medicina.",
+            "Me gusta el dolor."
+          ]
+        },
+        {
+          "sourceIndex": 35,
+          "type": "Traduce la frase",
+          "prompt": "I like the medicine.",
+          "sourceAnswer": "Me gusta la medicina.",
+          "options": [
+            "Me gusta la medicina.",
+            "Me gusta el dolor.",
+            "Me gusta la cabeza."
+          ]
+        },
+        {
+          "sourceIndex": 36,
+          "type": "Traduce la frase",
+          "prompt": "I like the pain.",
+          "sourceAnswer": "Me gusta el dolor.",
+          "options": [
+            "Me gusta el dolor.",
+            "Me gusta la cabeza.",
+            "Me gusta el brazo."
+          ]
+        },
+        {
+          "sourceIndex": 37,
+          "type": "Traduce la frase",
+          "prompt": "I like the head.",
+          "sourceAnswer": "Me gusta la cabeza.",
+          "options": [
+            "Me gusta la cabeza.",
+            "Me gusta el brazo.",
+            "Me gusta la temperatura."
+          ]
+        },
+        {
+          "sourceIndex": 38,
+          "type": "Traduce la frase",
+          "prompt": "I like the arm.",
+          "sourceAnswer": "Me gusta el brazo.",
+          "options": [
+            "Me gusta el brazo.",
+            "Me gusta la temperatura.",
+            "Me gusta el hospital."
+          ]
+        },
+        {
+          "sourceIndex": 39,
+          "type": "Traduce la frase",
+          "prompt": "I like the temperature.",
+          "sourceAnswer": "Me gusta la temperatura.",
+          "options": [
+            "Me gusta la temperatura.",
+            "Me gusta el hospital.",
+            "Me gusta el médico."
+          ]
+        },
+        {
+          "sourceIndex": 40,
+          "type": "Traduce la frase",
+          "prompt": "I like the hospital.",
+          "sourceAnswer": "Me gusta el hospital.",
+          "options": [
+            "Me gusta el hospital.",
+            "Me gusta el médico.",
+            "Me gusta la enfermera."
+          ]
+        },
+        {
+          "sourceIndex": 41,
+          "type": "Traduce la frase",
+          "prompt": "This is the doctor.",
+          "sourceAnswer": "Esto es el médico.",
+          "options": [
+            "Esto es el médico.",
+            "Esto es la enfermera.",
+            "Esto es el paciente."
+          ]
+        },
+        {
+          "sourceIndex": 42,
+          "type": "Traduce la frase",
+          "prompt": "This is the nurse.",
+          "sourceAnswer": "Esto es la enfermera.",
+          "options": [
+            "Esto es la enfermera.",
+            "Esto es el paciente.",
+            "Esto es la cita."
+          ]
+        },
+        {
+          "sourceIndex": 43,
+          "type": "Traduce la frase",
+          "prompt": "This is the patient.",
+          "sourceAnswer": "Esto es el paciente.",
+          "options": [
+            "Esto es el paciente.",
+            "Esto es la cita.",
+            "Esto es la medicina."
+          ]
+        },
+        {
+          "sourceIndex": 44,
+          "type": "Traduce la frase",
+          "prompt": "This is the appointment.",
+          "sourceAnswer": "Esto es la cita.",
+          "options": [
+            "Esto es la cita.",
+            "Esto es la medicina.",
+            "Esto es el dolor."
+          ]
+        },
+        {
+          "sourceIndex": 45,
+          "type": "Traduce la frase",
+          "prompt": "This is the medicine.",
+          "sourceAnswer": "Esto es la medicina.",
+          "options": [
+            "Esto es la medicina.",
+            "Esto es el dolor.",
+            "Esto es la cabeza."
+          ]
+        },
+        {
+          "sourceIndex": 46,
+          "type": "Traduce la frase",
+          "prompt": "This is the pain.",
+          "sourceAnswer": "Esto es el dolor.",
+          "options": [
+            "Esto es el dolor.",
+            "Esto es la cabeza.",
+            "Esto es el brazo."
+          ]
+        },
+        {
+          "sourceIndex": 47,
+          "type": "Traduce la frase",
+          "prompt": "This is the head.",
+          "sourceAnswer": "Esto es la cabeza.",
+          "options": [
+            "Esto es la cabeza.",
+            "Esto es el brazo.",
+            "Esto es la temperatura."
+          ]
+        },
+        {
+          "sourceIndex": 48,
+          "type": "Traduce la frase",
+          "prompt": "This is the arm.",
+          "sourceAnswer": "Esto es el brazo.",
+          "options": [
+            "Esto es el brazo.",
+            "Esto es la temperatura.",
+            "Esto es el hospital."
+          ]
+        },
+        {
+          "sourceIndex": 49,
+          "type": "Traduce la frase",
+          "prompt": "This is the temperature.",
+          "sourceAnswer": "Esto es la temperatura.",
+          "options": [
+            "Esto es la temperatura.",
+            "Esto es el hospital.",
+            "Esto es el médico."
+          ]
+        },
+        {
+          "sourceIndex": 50,
+          "type": "Traduce la frase",
+          "prompt": "This is the hospital.",
+          "sourceAnswer": "Esto es el hospital.",
+          "options": [
+            "Esto es el hospital.",
+            "Esto es el médico.",
+            "Esto es la enfermera."
+          ]
+        }
+      ]
+    },
+    {
+      "mission": "074",
+      "title": "At the Market",
+      "vocabulary": [
+        [
+          "market",
+          "el mercado"
+        ],
+        [
+          "seller",
+          "el vendedor"
+        ],
+        [
+          "customer",
+          "el cliente"
+        ],
+        [
+          "fruit",
+          "la fruta"
+        ],
+        [
+          "vegetables",
+          "las verduras"
+        ],
+        [
+          "apple",
+          "la manzana"
+        ],
+        [
+          "tomato",
+          "el tomate"
+        ],
+        [
+          "basket",
+          "la cesta"
+        ],
+        [
+          "money",
+          "el dinero"
+        ],
+        [
+          "price",
+          "el precio"
+        ]
+      ],
+      "practiceSource": [
+        {
+          "sourceIndex": 1,
+          "type": "Traduce la palabra",
+          "prompt": "market",
+          "sourceAnswer": "el mercado",
+          "options": [
+            "el mercado",
+            "el vendedor",
+            "el cliente"
+          ]
+        },
+        {
+          "sourceIndex": 2,
+          "type": "Traduce la palabra",
+          "prompt": "seller",
+          "sourceAnswer": "el vendedor",
+          "options": [
+            "el vendedor",
+            "el cliente",
+            "la fruta"
+          ]
+        },
+        {
+          "sourceIndex": 3,
+          "type": "Traduce la palabra",
+          "prompt": "customer",
+          "sourceAnswer": "el cliente",
+          "options": [
+            "el cliente",
+            "la fruta",
+            "las verduras"
+          ]
+        },
+        {
+          "sourceIndex": 4,
+          "type": "Traduce la palabra",
+          "prompt": "fruit",
+          "sourceAnswer": "la fruta",
+          "options": [
+            "la fruta",
+            "las verduras",
+            "la manzana"
+          ]
+        },
+        {
+          "sourceIndex": 5,
+          "type": "Traduce la palabra",
+          "prompt": "vegetables",
+          "sourceAnswer": "las verduras",
+          "options": [
+            "las verduras",
+            "la manzana",
+            "el tomate"
+          ]
+        },
+        {
+          "sourceIndex": 6,
+          "type": "Traduce la palabra",
+          "prompt": "apple",
+          "sourceAnswer": "la manzana",
+          "options": [
+            "la manzana",
+            "el tomate",
+            "la cesta"
+          ]
+        },
+        {
+          "sourceIndex": 7,
+          "type": "Traduce la palabra",
+          "prompt": "tomato",
+          "sourceAnswer": "el tomate",
+          "options": [
+            "el tomate",
+            "la cesta",
+            "el dinero"
+          ]
+        },
+        {
+          "sourceIndex": 8,
+          "type": "Traduce la palabra",
+          "prompt": "basket",
+          "sourceAnswer": "la cesta",
+          "options": [
+            "la cesta",
+            "el dinero",
+            "el precio"
+          ]
+        },
+        {
+          "sourceIndex": 9,
+          "type": "Traduce la palabra",
+          "prompt": "money",
+          "sourceAnswer": "el dinero",
+          "options": [
+            "el dinero",
+            "el precio",
+            "el mercado"
+          ]
+        },
+        {
+          "sourceIndex": 10,
+          "type": "Traduce la palabra",
+          "prompt": "price",
+          "sourceAnswer": "el precio",
+          "options": [
+            "el precio",
+            "el mercado",
+            "el vendedor"
+          ]
+        },
+        {
+          "sourceIndex": 11,
+          "type": "Traduce la frase",
+          "prompt": "I can see the market.",
+          "sourceAnswer": "Puedo ver el mercado.",
+          "options": [
+            "Puedo ver el mercado.",
+            "Puedo ver el vendedor.",
+            "Puedo ver el cliente."
+          ]
+        },
+        {
+          "sourceIndex": 12,
+          "type": "Traduce la frase",
+          "prompt": "I can see the seller.",
+          "sourceAnswer": "Puedo ver el vendedor.",
+          "options": [
+            "Puedo ver el vendedor.",
+            "Puedo ver el cliente.",
+            "Puedo ver la fruta."
+          ]
+        },
+        {
+          "sourceIndex": 13,
+          "type": "Traduce la frase",
+          "prompt": "I can see the customer.",
+          "sourceAnswer": "Puedo ver el cliente.",
+          "options": [
+            "Puedo ver el cliente.",
+            "Puedo ver la fruta.",
+            "Puedo ver las verduras."
+          ]
+        },
+        {
+          "sourceIndex": 14,
+          "type": "Traduce la frase",
+          "prompt": "I can see the fruit.",
+          "sourceAnswer": "Puedo ver la fruta.",
+          "options": [
+            "Puedo ver la fruta.",
+            "Puedo ver las verduras.",
+            "Puedo ver la manzana."
+          ]
+        },
+        {
+          "sourceIndex": 15,
+          "type": "Traduce la frase",
+          "prompt": "I can see the vegetables.",
+          "sourceAnswer": "Puedo ver las verduras.",
+          "options": [
+            "Puedo ver las verduras.",
+            "Puedo ver la manzana.",
+            "Puedo ver el tomate."
+          ]
+        },
+        {
+          "sourceIndex": 16,
+          "type": "Traduce la frase",
+          "prompt": "I can see the apple.",
+          "sourceAnswer": "Puedo ver la manzana.",
+          "options": [
+            "Puedo ver la manzana.",
+            "Puedo ver el tomate.",
+            "Puedo ver la cesta."
+          ]
+        },
+        {
+          "sourceIndex": 17,
+          "type": "Traduce la frase",
+          "prompt": "I can see the tomato.",
+          "sourceAnswer": "Puedo ver el tomate.",
+          "options": [
+            "Puedo ver el tomate.",
+            "Puedo ver la cesta.",
+            "Puedo ver el dinero."
+          ]
+        },
+        {
+          "sourceIndex": 18,
+          "type": "Traduce la frase",
+          "prompt": "I can see the basket.",
+          "sourceAnswer": "Puedo ver la cesta.",
+          "options": [
+            "Puedo ver la cesta.",
+            "Puedo ver el dinero.",
+            "Puedo ver el precio."
+          ]
+        },
+        {
+          "sourceIndex": 19,
+          "type": "Traduce la frase",
+          "prompt": "I can see the money.",
+          "sourceAnswer": "Puedo ver el dinero.",
+          "options": [
+            "Puedo ver el dinero.",
+            "Puedo ver el precio.",
+            "Puedo ver el mercado."
+          ]
+        },
+        {
+          "sourceIndex": 20,
+          "type": "Traduce la frase",
+          "prompt": "I can see the price.",
+          "sourceAnswer": "Puedo ver el precio.",
+          "options": [
+            "Puedo ver el precio.",
+            "Puedo ver el mercado.",
+            "Puedo ver el vendedor."
+          ]
+        },
+        {
+          "sourceIndex": 21,
+          "type": "Traduce la frase",
+          "prompt": "Where is the market?",
+          "sourceAnswer": "¿Dónde está el mercado?",
+          "options": [
+            "¿Dónde está el mercado?",
+            "¿Dónde está el vendedor?",
+            "¿Dónde está el cliente?"
+          ]
+        },
+        {
+          "sourceIndex": 22,
+          "type": "Traduce la frase",
+          "prompt": "Where is the seller?",
+          "sourceAnswer": "¿Dónde está el vendedor?",
+          "options": [
+            "¿Dónde está el vendedor?",
+            "¿Dónde está el cliente?",
+            "¿Dónde está la fruta?"
+          ]
+        },
+        {
+          "sourceIndex": 23,
+          "type": "Traduce la frase",
+          "prompt": "Where is the customer?",
+          "sourceAnswer": "¿Dónde está el cliente?",
+          "options": [
+            "¿Dónde está el cliente?",
+            "¿Dónde está la fruta?",
+            "¿Dónde está las verduras?"
+          ]
+        },
+        {
+          "sourceIndex": 24,
+          "type": "Traduce la frase",
+          "prompt": "Where is the fruit?",
+          "sourceAnswer": "¿Dónde está la fruta?",
+          "options": [
+            "¿Dónde está la fruta?",
+            "¿Dónde está las verduras?",
+            "¿Dónde está la manzana?"
+          ]
+        },
+        {
+          "sourceIndex": 25,
+          "type": "Traduce la frase",
+          "prompt": "Where is the vegetables?",
+          "sourceAnswer": "¿Dónde está las verduras?",
+          "options": [
+            "¿Dónde está las verduras?",
+            "¿Dónde está la manzana?",
+            "¿Dónde está el tomate?"
+          ]
+        },
+        {
+          "sourceIndex": 26,
+          "type": "Traduce la frase",
+          "prompt": "Where is the apple?",
+          "sourceAnswer": "¿Dónde está la manzana?",
+          "options": [
+            "¿Dónde está la manzana?",
+            "¿Dónde está el tomate?",
+            "¿Dónde está la cesta?"
+          ]
+        },
+        {
+          "sourceIndex": 27,
+          "type": "Traduce la frase",
+          "prompt": "Where is the tomato?",
+          "sourceAnswer": "¿Dónde está el tomate?",
+          "options": [
+            "¿Dónde está el tomate?",
+            "¿Dónde está la cesta?",
+            "¿Dónde está el dinero?"
+          ]
+        },
+        {
+          "sourceIndex": 28,
+          "type": "Traduce la frase",
+          "prompt": "Where is the basket?",
+          "sourceAnswer": "¿Dónde está la cesta?",
+          "options": [
+            "¿Dónde está la cesta?",
+            "¿Dónde está el dinero?",
+            "¿Dónde está el precio?"
+          ]
+        },
+        {
+          "sourceIndex": 29,
+          "type": "Traduce la frase",
+          "prompt": "Where is the money?",
+          "sourceAnswer": "¿Dónde está el dinero?",
+          "options": [
+            "¿Dónde está el dinero?",
+            "¿Dónde está el precio?",
+            "¿Dónde está el mercado?"
+          ]
+        },
+        {
+          "sourceIndex": 30,
+          "type": "Traduce la frase",
+          "prompt": "Where is the price?",
+          "sourceAnswer": "¿Dónde está el precio?",
+          "options": [
+            "¿Dónde está el precio?",
+            "¿Dónde está el mercado?",
+            "¿Dónde está el vendedor?"
+          ]
+        },
+        {
+          "sourceIndex": 31,
+          "type": "Traduce la frase",
+          "prompt": "I like the market.",
+          "sourceAnswer": "Me gusta el mercado.",
+          "options": [
+            "Me gusta el mercado.",
+            "Me gusta el vendedor.",
+            "Me gusta el cliente."
+          ]
+        },
+        {
+          "sourceIndex": 32,
+          "type": "Traduce la frase",
+          "prompt": "I like the seller.",
+          "sourceAnswer": "Me gusta el vendedor.",
+          "options": [
+            "Me gusta el vendedor.",
+            "Me gusta el cliente.",
+            "Me gusta la fruta."
+          ]
+        },
+        {
+          "sourceIndex": 33,
+          "type": "Traduce la frase",
+          "prompt": "I like the customer.",
+          "sourceAnswer": "Me gusta el cliente.",
+          "options": [
+            "Me gusta el cliente.",
+            "Me gusta la fruta.",
+            "Me gusta las verduras."
+          ]
+        },
+        {
+          "sourceIndex": 34,
+          "type": "Traduce la frase",
+          "prompt": "I like the fruit.",
+          "sourceAnswer": "Me gusta la fruta.",
+          "options": [
+            "Me gusta la fruta.",
+            "Me gusta las verduras.",
+            "Me gusta la manzana."
+          ]
+        },
+        {
+          "sourceIndex": 35,
+          "type": "Traduce la frase",
+          "prompt": "I like the vegetables.",
+          "sourceAnswer": "Me gusta las verduras.",
+          "options": [
+            "Me gusta las verduras.",
+            "Me gusta la manzana.",
+            "Me gusta el tomate."
+          ]
+        },
+        {
+          "sourceIndex": 36,
+          "type": "Traduce la frase",
+          "prompt": "I like the apple.",
+          "sourceAnswer": "Me gusta la manzana.",
+          "options": [
+            "Me gusta la manzana.",
+            "Me gusta el tomate.",
+            "Me gusta la cesta."
+          ]
+        },
+        {
+          "sourceIndex": 37,
+          "type": "Traduce la frase",
+          "prompt": "I like the tomato.",
+          "sourceAnswer": "Me gusta el tomate.",
+          "options": [
+            "Me gusta el tomate.",
+            "Me gusta la cesta.",
+            "Me gusta el dinero."
+          ]
+        },
+        {
+          "sourceIndex": 38,
+          "type": "Traduce la frase",
+          "prompt": "I like the basket.",
+          "sourceAnswer": "Me gusta la cesta.",
+          "options": [
+            "Me gusta la cesta.",
+            "Me gusta el dinero.",
+            "Me gusta el precio."
+          ]
+        },
+        {
+          "sourceIndex": 39,
+          "type": "Traduce la frase",
+          "prompt": "I like the money.",
+          "sourceAnswer": "Me gusta el dinero.",
+          "options": [
+            "Me gusta el dinero.",
+            "Me gusta el precio.",
+            "Me gusta el mercado."
+          ]
+        },
+        {
+          "sourceIndex": 40,
+          "type": "Traduce la frase",
+          "prompt": "I like the price.",
+          "sourceAnswer": "Me gusta el precio.",
+          "options": [
+            "Me gusta el precio.",
+            "Me gusta el mercado.",
+            "Me gusta el vendedor."
+          ]
+        },
+        {
+          "sourceIndex": 41,
+          "type": "Traduce la frase",
+          "prompt": "This is the market.",
+          "sourceAnswer": "Esto es el mercado.",
+          "options": [
+            "Esto es el mercado.",
+            "Esto es el vendedor.",
+            "Esto es el cliente."
+          ]
+        },
+        {
+          "sourceIndex": 42,
+          "type": "Traduce la frase",
+          "prompt": "This is the seller.",
+          "sourceAnswer": "Esto es el vendedor.",
+          "options": [
+            "Esto es el vendedor.",
+            "Esto es el cliente.",
+            "Esto es la fruta."
+          ]
+        },
+        {
+          "sourceIndex": 43,
+          "type": "Traduce la frase",
+          "prompt": "This is the customer.",
+          "sourceAnswer": "Esto es el cliente.",
+          "options": [
+            "Esto es el cliente.",
+            "Esto es la fruta.",
+            "Esto es las verduras."
+          ]
+        },
+        {
+          "sourceIndex": 44,
+          "type": "Traduce la frase",
+          "prompt": "This is the fruit.",
+          "sourceAnswer": "Esto es la fruta.",
+          "options": [
+            "Esto es la fruta.",
+            "Esto es las verduras.",
+            "Esto es la manzana."
+          ]
+        },
+        {
+          "sourceIndex": 45,
+          "type": "Traduce la frase",
+          "prompt": "This is the vegetables.",
+          "sourceAnswer": "Esto es las verduras.",
+          "options": [
+            "Esto es las verduras.",
+            "Esto es la manzana.",
+            "Esto es el tomate."
+          ]
+        },
+        {
+          "sourceIndex": 46,
+          "type": "Traduce la frase",
+          "prompt": "This is the apple.",
+          "sourceAnswer": "Esto es la manzana.",
+          "options": [
+            "Esto es la manzana.",
+            "Esto es el tomate.",
+            "Esto es la cesta."
+          ]
+        },
+        {
+          "sourceIndex": 47,
+          "type": "Traduce la frase",
+          "prompt": "This is the tomato.",
+          "sourceAnswer": "Esto es el tomate.",
+          "options": [
+            "Esto es el tomate.",
+            "Esto es la cesta.",
+            "Esto es el dinero."
+          ]
+        },
+        {
+          "sourceIndex": 48,
+          "type": "Traduce la frase",
+          "prompt": "This is the basket.",
+          "sourceAnswer": "Esto es la cesta.",
+          "options": [
+            "Esto es la cesta.",
+            "Esto es el dinero.",
+            "Esto es el precio."
+          ]
+        },
+        {
+          "sourceIndex": 49,
+          "type": "Traduce la frase",
+          "prompt": "This is the money.",
+          "sourceAnswer": "Esto es el dinero.",
+          "options": [
+            "Esto es el dinero.",
+            "Esto es el precio.",
+            "Esto es el mercado."
+          ]
+        },
+        {
+          "sourceIndex": 50,
+          "type": "Traduce la frase",
+          "prompt": "This is the price.",
+          "sourceAnswer": "Esto es el precio.",
+          "options": [
+            "Esto es el precio.",
+            "Esto es el mercado.",
+            "Esto es el vendedor."
+          ]
+        }
+      ]
+    },
+    {
+      "mission": "075",
+      "title": "In the Bedroom",
+      "vocabulary": [
+        [
+          "bed",
+          "la cama"
+        ],
+        [
+          "pillow",
+          "la almohada"
+        ],
+        [
+          "blanket",
+          "la manta"
+        ],
+        [
+          "wardrobe",
+          "el armario"
+        ],
+        [
+          "lamp",
+          "la lámpara"
+        ],
+        [
+          "drawer",
+          "el cajón"
+        ],
+        [
+          "alarm clock",
+          "el despertador"
+        ],
+        [
+          "curtain",
+          "la cortina"
+        ],
+        [
+          "床",
+          "la mesita"
+        ],
+        [
+          "rug",
+          "la alfombra"
+        ]
+      ],
+      "practiceSource": [
+        {
+          "sourceIndex": 1,
+          "type": "Traduce la palabra",
+          "prompt": "bed",
+          "sourceAnswer": "la cama",
+          "options": [
+            "la cama",
+            "la almohada",
+            "la manta"
+          ]
+        },
+        {
+          "sourceIndex": 2,
+          "type": "Traduce la palabra",
+          "prompt": "pillow",
+          "sourceAnswer": "la almohada",
+          "options": [
+            "la almohada",
+            "la manta",
+            "el armario"
+          ]
+        },
+        {
+          "sourceIndex": 3,
+          "type": "Traduce la palabra",
+          "prompt": "blanket",
+          "sourceAnswer": "la manta",
+          "options": [
+            "la manta",
+            "el armario",
+            "la lámpara"
+          ]
+        },
+        {
+          "sourceIndex": 4,
+          "type": "Traduce la palabra",
+          "prompt": "wardrobe",
+          "sourceAnswer": "el armario",
+          "options": [
+            "el armario",
+            "la lámpara",
+            "el cajón"
+          ]
+        },
+        {
+          "sourceIndex": 5,
+          "type": "Traduce la palabra",
+          "prompt": "lamp",
+          "sourceAnswer": "la lámpara",
+          "options": [
+            "la lámpara",
+            "el cajón",
+            "el despertador"
+          ]
+        },
+        {
+          "sourceIndex": 6,
+          "type": "Traduce la palabra",
+          "prompt": "drawer",
+          "sourceAnswer": "el cajón",
+          "options": [
+            "el cajón",
+            "el despertador",
+            "la cortina"
+          ]
+        },
+        {
+          "sourceIndex": 7,
+          "type": "Traduce la palabra",
+          "prompt": "alarm clock",
+          "sourceAnswer": "el despertador",
+          "options": [
+            "el despertador",
+            "la cortina",
+            "la mesita"
+          ]
+        },
+        {
+          "sourceIndex": 8,
+          "type": "Traduce la palabra",
+          "prompt": "curtain",
+          "sourceAnswer": "la cortina",
+          "options": [
+            "la cortina",
+            "la mesita",
+            "la alfombra"
+          ]
+        },
+        {
+          "sourceIndex": 9,
+          "type": "Traduce la palabra",
+          "prompt": "床",
+          "sourceAnswer": "la mesita",
+          "options": [
+            "la mesita",
+            "la alfombra",
+            "la cama"
+          ]
+        },
+        {
+          "sourceIndex": 10,
+          "type": "Traduce la palabra",
+          "prompt": "rug",
+          "sourceAnswer": "la alfombra",
+          "options": [
+            "la alfombra",
+            "la cama",
+            "la almohada"
+          ]
+        },
+        {
+          "sourceIndex": 11,
+          "type": "Traduce la frase",
+          "prompt": "I can see the bed.",
+          "sourceAnswer": "Puedo ver la cama.",
+          "options": [
+            "Puedo ver la cama.",
+            "Puedo ver la almohada.",
+            "Puedo ver la manta."
+          ]
+        },
+        {
+          "sourceIndex": 12,
+          "type": "Traduce la frase",
+          "prompt": "I can see the pillow.",
+          "sourceAnswer": "Puedo ver la almohada.",
+          "options": [
+            "Puedo ver la almohada.",
+            "Puedo ver la manta.",
+            "Puedo ver el armario."
+          ]
+        },
+        {
+          "sourceIndex": 13,
+          "type": "Traduce la frase",
+          "prompt": "I can see the blanket.",
+          "sourceAnswer": "Puedo ver la manta.",
+          "options": [
+            "Puedo ver la manta.",
+            "Puedo ver el armario.",
+            "Puedo ver la lámpara."
+          ]
+        },
+        {
+          "sourceIndex": 14,
+          "type": "Traduce la frase",
+          "prompt": "I can see the wardrobe.",
+          "sourceAnswer": "Puedo ver el armario.",
+          "options": [
+            "Puedo ver el armario.",
+            "Puedo ver la lámpara.",
+            "Puedo ver el cajón."
+          ]
+        },
+        {
+          "sourceIndex": 15,
+          "type": "Traduce la frase",
+          "prompt": "I can see the lamp.",
+          "sourceAnswer": "Puedo ver la lámpara.",
+          "options": [
+            "Puedo ver la lámpara.",
+            "Puedo ver el cajón.",
+            "Puedo ver el despertador."
+          ]
+        },
+        {
+          "sourceIndex": 16,
+          "type": "Traduce la frase",
+          "prompt": "I can see the drawer.",
+          "sourceAnswer": "Puedo ver el cajón.",
+          "options": [
+            "Puedo ver el cajón.",
+            "Puedo ver el despertador.",
+            "Puedo ver la cortina."
+          ]
+        },
+        {
+          "sourceIndex": 17,
+          "type": "Traduce la frase",
+          "prompt": "I can see the alarm clock.",
+          "sourceAnswer": "Puedo ver el despertador.",
+          "options": [
+            "Puedo ver el despertador.",
+            "Puedo ver la cortina.",
+            "Puedo ver la mesita."
+          ]
+        },
+        {
+          "sourceIndex": 18,
+          "type": "Traduce la frase",
+          "prompt": "I can see the curtain.",
+          "sourceAnswer": "Puedo ver la cortina.",
+          "options": [
+            "Puedo ver la cortina.",
+            "Puedo ver la mesita.",
+            "Puedo ver la alfombra."
+          ]
+        },
+        {
+          "sourceIndex": 19,
+          "type": "Traduce la frase",
+          "prompt": "I can see the 床.",
+          "sourceAnswer": "Puedo ver la mesita.",
+          "options": [
+            "Puedo ver la mesita.",
+            "Puedo ver la alfombra.",
+            "Puedo ver la cama."
+          ]
+        },
+        {
+          "sourceIndex": 20,
+          "type": "Traduce la frase",
+          "prompt": "I can see the rug.",
+          "sourceAnswer": "Puedo ver la alfombra.",
+          "options": [
+            "Puedo ver la alfombra.",
+            "Puedo ver la cama.",
+            "Puedo ver la almohada."
+          ]
+        },
+        {
+          "sourceIndex": 21,
+          "type": "Traduce la frase",
+          "prompt": "Where is the bed?",
+          "sourceAnswer": "¿Dónde está la cama?",
+          "options": [
+            "¿Dónde está la cama?",
+            "¿Dónde está la almohada?",
+            "¿Dónde está la manta?"
+          ]
+        },
+        {
+          "sourceIndex": 22,
+          "type": "Traduce la frase",
+          "prompt": "Where is the pillow?",
+          "sourceAnswer": "¿Dónde está la almohada?",
+          "options": [
+            "¿Dónde está la almohada?",
+            "¿Dónde está la manta?",
+            "¿Dónde está el armario?"
+          ]
+        },
+        {
+          "sourceIndex": 23,
+          "type": "Traduce la frase",
+          "prompt": "Where is the blanket?",
+          "sourceAnswer": "¿Dónde está la manta?",
+          "options": [
+            "¿Dónde está la manta?",
+            "¿Dónde está el armario?",
+            "¿Dónde está la lámpara?"
+          ]
+        },
+        {
+          "sourceIndex": 24,
+          "type": "Traduce la frase",
+          "prompt": "Where is the wardrobe?",
+          "sourceAnswer": "¿Dónde está el armario?",
+          "options": [
+            "¿Dónde está el armario?",
+            "¿Dónde está la lámpara?",
+            "¿Dónde está el cajón?"
+          ]
+        },
+        {
+          "sourceIndex": 25,
+          "type": "Traduce la frase",
+          "prompt": "Where is the lamp?",
+          "sourceAnswer": "¿Dónde está la lámpara?",
+          "options": [
+            "¿Dónde está la lámpara?",
+            "¿Dónde está el cajón?",
+            "¿Dónde está el despertador?"
+          ]
+        },
+        {
+          "sourceIndex": 26,
+          "type": "Traduce la frase",
+          "prompt": "Where is the drawer?",
+          "sourceAnswer": "¿Dónde está el cajón?",
+          "options": [
+            "¿Dónde está el cajón?",
+            "¿Dónde está el despertador?",
+            "¿Dónde está la cortina?"
+          ]
+        },
+        {
+          "sourceIndex": 27,
+          "type": "Traduce la frase",
+          "prompt": "Where is the alarm clock?",
+          "sourceAnswer": "¿Dónde está el despertador?",
+          "options": [
+            "¿Dónde está el despertador?",
+            "¿Dónde está la cortina?",
+            "¿Dónde está la mesita?"
+          ]
+        },
+        {
+          "sourceIndex": 28,
+          "type": "Traduce la frase",
+          "prompt": "Where is the curtain?",
+          "sourceAnswer": "¿Dónde está la cortina?",
+          "options": [
+            "¿Dónde está la cortina?",
+            "¿Dónde está la mesita?",
+            "¿Dónde está la alfombra?"
+          ]
+        },
+        {
+          "sourceIndex": 29,
+          "type": "Traduce la frase",
+          "prompt": "Where is the 床?",
+          "sourceAnswer": "¿Dónde está la mesita?",
+          "options": [
+            "¿Dónde está la mesita?",
+            "¿Dónde está la alfombra?",
+            "¿Dónde está la cama?"
+          ]
+        },
+        {
+          "sourceIndex": 30,
+          "type": "Traduce la frase",
+          "prompt": "Where is the rug?",
+          "sourceAnswer": "¿Dónde está la alfombra?",
+          "options": [
+            "¿Dónde está la alfombra?",
+            "¿Dónde está la cama?",
+            "¿Dónde está la almohada?"
+          ]
+        },
+        {
+          "sourceIndex": 31,
+          "type": "Traduce la frase",
+          "prompt": "I like the bed.",
+          "sourceAnswer": "Me gusta la cama.",
+          "options": [
+            "Me gusta la cama.",
+            "Me gusta la almohada.",
+            "Me gusta la manta."
+          ]
+        },
+        {
+          "sourceIndex": 32,
+          "type": "Traduce la frase",
+          "prompt": "I like the pillow.",
+          "sourceAnswer": "Me gusta la almohada.",
+          "options": [
+            "Me gusta la almohada.",
+            "Me gusta la manta.",
+            "Me gusta el armario."
+          ]
+        },
+        {
+          "sourceIndex": 33,
+          "type": "Traduce la frase",
+          "prompt": "I like the blanket.",
+          "sourceAnswer": "Me gusta la manta.",
+          "options": [
+            "Me gusta la manta.",
+            "Me gusta el armario.",
+            "Me gusta la lámpara."
+          ]
+        },
+        {
+          "sourceIndex": 34,
+          "type": "Traduce la frase",
+          "prompt": "I like the wardrobe.",
+          "sourceAnswer": "Me gusta el armario.",
+          "options": [
+            "Me gusta el armario.",
+            "Me gusta la lámpara.",
+            "Me gusta el cajón."
+          ]
+        },
+        {
+          "sourceIndex": 35,
+          "type": "Traduce la frase",
+          "prompt": "I like the lamp.",
+          "sourceAnswer": "Me gusta la lámpara.",
+          "options": [
+            "Me gusta la lámpara.",
+            "Me gusta el cajón.",
+            "Me gusta el despertador."
+          ]
+        },
+        {
+          "sourceIndex": 36,
+          "type": "Traduce la frase",
+          "prompt": "I like the drawer.",
+          "sourceAnswer": "Me gusta el cajón.",
+          "options": [
+            "Me gusta el cajón.",
+            "Me gusta el despertador.",
+            "Me gusta la cortina."
+          ]
+        },
+        {
+          "sourceIndex": 37,
+          "type": "Traduce la frase",
+          "prompt": "I like the alarm clock.",
+          "sourceAnswer": "Me gusta el despertador.",
+          "options": [
+            "Me gusta el despertador.",
+            "Me gusta la cortina.",
+            "Me gusta la mesita."
+          ]
+        },
+        {
+          "sourceIndex": 38,
+          "type": "Traduce la frase",
+          "prompt": "I like the curtain.",
+          "sourceAnswer": "Me gusta la cortina.",
+          "options": [
+            "Me gusta la cortina.",
+            "Me gusta la mesita.",
+            "Me gusta la alfombra."
+          ]
+        },
+        {
+          "sourceIndex": 39,
+          "type": "Traduce la frase",
+          "prompt": "I like the 床.",
+          "sourceAnswer": "Me gusta la mesita.",
+          "options": [
+            "Me gusta la mesita.",
+            "Me gusta la alfombra.",
+            "Me gusta la cama."
+          ]
+        },
+        {
+          "sourceIndex": 40,
+          "type": "Traduce la frase",
+          "prompt": "I like the rug.",
+          "sourceAnswer": "Me gusta la alfombra.",
+          "options": [
+            "Me gusta la alfombra.",
+            "Me gusta la cama.",
+            "Me gusta la almohada."
+          ]
+        },
+        {
+          "sourceIndex": 41,
+          "type": "Traduce la frase",
+          "prompt": "This is the bed.",
+          "sourceAnswer": "Esto es la cama.",
+          "options": [
+            "Esto es la cama.",
+            "Esto es la almohada.",
+            "Esto es la manta."
+          ]
+        },
+        {
+          "sourceIndex": 42,
+          "type": "Traduce la frase",
+          "prompt": "This is the pillow.",
+          "sourceAnswer": "Esto es la almohada.",
+          "options": [
+            "Esto es la almohada.",
+            "Esto es la manta.",
+            "Esto es el armario."
+          ]
+        },
+        {
+          "sourceIndex": 43,
+          "type": "Traduce la frase",
+          "prompt": "This is the blanket.",
+          "sourceAnswer": "Esto es la manta.",
+          "options": [
+            "Esto es la manta.",
+            "Esto es el armario.",
+            "Esto es la lámpara."
+          ]
+        },
+        {
+          "sourceIndex": 44,
+          "type": "Traduce la frase",
+          "prompt": "This is the wardrobe.",
+          "sourceAnswer": "Esto es el armario.",
+          "options": [
+            "Esto es el armario.",
+            "Esto es la lámpara.",
+            "Esto es el cajón."
+          ]
+        },
+        {
+          "sourceIndex": 45,
+          "type": "Traduce la frase",
+          "prompt": "This is the lamp.",
+          "sourceAnswer": "Esto es la lámpara.",
+          "options": [
+            "Esto es la lámpara.",
+            "Esto es el cajón.",
+            "Esto es el despertador."
+          ]
+        },
+        {
+          "sourceIndex": 46,
+          "type": "Traduce la frase",
+          "prompt": "This is the drawer.",
+          "sourceAnswer": "Esto es el cajón.",
+          "options": [
+            "Esto es el cajón.",
+            "Esto es el despertador.",
+            "Esto es la cortina."
+          ]
+        },
+        {
+          "sourceIndex": 47,
+          "type": "Traduce la frase",
+          "prompt": "This is the alarm clock.",
+          "sourceAnswer": "Esto es el despertador.",
+          "options": [
+            "Esto es el despertador.",
+            "Esto es la cortina.",
+            "Esto es la mesita."
+          ]
+        },
+        {
+          "sourceIndex": 48,
+          "type": "Traduce la frase",
+          "prompt": "This is the curtain.",
+          "sourceAnswer": "Esto es la cortina.",
+          "options": [
+            "Esto es la cortina.",
+            "Esto es la mesita.",
+            "Esto es la alfombra."
+          ]
+        },
+        {
+          "sourceIndex": 49,
+          "type": "Traduce la frase",
+          "prompt": "This is the 床.",
+          "sourceAnswer": "Esto es la mesita.",
+          "options": [
+            "Esto es la mesita.",
+            "Esto es la alfombra.",
+            "Esto es la cama."
+          ]
+        },
+        {
+          "sourceIndex": 50,
+          "type": "Traduce la frase",
+          "prompt": "This is the rug.",
+          "sourceAnswer": "Esto es la alfombra.",
+          "options": [
+            "Esto es la alfombra.",
+            "Esto es la cama.",
+            "Esto es la almohada."
+          ]
+        }
+      ]
+    },
+    {
+      "mission": "076",
+      "title": "At the Beach",
+      "vocabulary": [
+        [
+          "sand",
+          "la arena"
+        ],
+        [
+          "sea",
+          "el mar"
+        ],
+        [
+          "shell",
+          "la concha"
+        ],
+        [
+          "beach",
+          "la playa"
+        ],
+        [
+          "sun",
+          "el sol"
+        ],
+        [
+          "umbrella",
+          "la sombrilla"
+        ],
+        [
+          "towel",
+          "la toalla"
+        ],
+        [
+          "bucket",
+          "el cubo"
+        ],
+        [
+          "spade",
+          "la pala"
+        ],
+        [
+          "wave",
+          "la ola"
+        ]
+      ],
+      "practiceSource": [
+        {
+          "sourceIndex": 1,
+          "type": "Traduce la palabra",
+          "prompt": "sand",
+          "sourceAnswer": "la arena",
+          "options": [
+            "la arena",
+            "el mar",
+            "la concha"
+          ]
+        },
+        {
+          "sourceIndex": 2,
+          "type": "Traduce la palabra",
+          "prompt": "sea",
+          "sourceAnswer": "el mar",
+          "options": [
+            "el mar",
+            "la concha",
+            "la playa"
+          ]
+        },
+        {
+          "sourceIndex": 3,
+          "type": "Traduce la palabra",
+          "prompt": "shell",
+          "sourceAnswer": "la concha",
+          "options": [
+            "la concha",
+            "la playa",
+            "el sol"
+          ]
+        },
+        {
+          "sourceIndex": 4,
+          "type": "Traduce la palabra",
+          "prompt": "beach",
+          "sourceAnswer": "la playa",
+          "options": [
+            "la playa",
+            "el sol",
+            "la sombrilla"
+          ]
+        },
+        {
+          "sourceIndex": 5,
+          "type": "Traduce la palabra",
+          "prompt": "sun",
+          "sourceAnswer": "el sol",
+          "options": [
+            "el sol",
+            "la sombrilla",
+            "la toalla"
+          ]
+        },
+        {
+          "sourceIndex": 6,
+          "type": "Traduce la palabra",
+          "prompt": "umbrella",
+          "sourceAnswer": "la sombrilla",
+          "options": [
+            "la sombrilla",
+            "la toalla",
+            "el cubo"
+          ]
+        },
+        {
+          "sourceIndex": 7,
+          "type": "Traduce la palabra",
+          "prompt": "towel",
+          "sourceAnswer": "la toalla",
+          "options": [
+            "la toalla",
+            "el cubo",
+            "la pala"
+          ]
+        },
+        {
+          "sourceIndex": 8,
+          "type": "Traduce la palabra",
+          "prompt": "bucket",
+          "sourceAnswer": "el cubo",
+          "options": [
+            "el cubo",
+            "la pala",
+            "la ola"
+          ]
+        },
+        {
+          "sourceIndex": 9,
+          "type": "Traduce la palabra",
+          "prompt": "spade",
+          "sourceAnswer": "la pala",
+          "options": [
+            "la pala",
+            "la ola",
+            "la arena"
+          ]
+        },
+        {
+          "sourceIndex": 10,
+          "type": "Traduce la palabra",
+          "prompt": "wave",
+          "sourceAnswer": "la ola",
+          "options": [
+            "la ola",
+            "la arena",
+            "el mar"
+          ]
+        },
+        {
+          "sourceIndex": 11,
+          "type": "Traduce la frase",
+          "prompt": "I can see the sand.",
+          "sourceAnswer": "Puedo ver la arena.",
+          "options": [
+            "Puedo ver la arena.",
+            "Puedo ver el mar.",
+            "Puedo ver la concha."
+          ]
+        },
+        {
+          "sourceIndex": 12,
+          "type": "Traduce la frase",
+          "prompt": "I can see the sea.",
+          "sourceAnswer": "Puedo ver el mar.",
+          "options": [
+            "Puedo ver el mar.",
+            "Puedo ver la concha.",
+            "Puedo ver la playa."
+          ]
+        },
+        {
+          "sourceIndex": 13,
+          "type": "Traduce la frase",
+          "prompt": "I can see the shell.",
+          "sourceAnswer": "Puedo ver la concha.",
+          "options": [
+            "Puedo ver la concha.",
+            "Puedo ver la playa.",
+            "Puedo ver el sol."
+          ]
+        },
+        {
+          "sourceIndex": 14,
+          "type": "Traduce la frase",
+          "prompt": "I can see the beach.",
+          "sourceAnswer": "Puedo ver la playa.",
+          "options": [
+            "Puedo ver la playa.",
+            "Puedo ver el sol.",
+            "Puedo ver la sombrilla."
+          ]
+        },
+        {
+          "sourceIndex": 15,
+          "type": "Traduce la frase",
+          "prompt": "I can see the sun.",
+          "sourceAnswer": "Puedo ver el sol.",
+          "options": [
+            "Puedo ver el sol.",
+            "Puedo ver la sombrilla.",
+            "Puedo ver la toalla."
+          ]
+        },
+        {
+          "sourceIndex": 16,
+          "type": "Traduce la frase",
+          "prompt": "I can see the umbrella.",
+          "sourceAnswer": "Puedo ver la sombrilla.",
+          "options": [
+            "Puedo ver la sombrilla.",
+            "Puedo ver la toalla.",
+            "Puedo ver el cubo."
+          ]
+        },
+        {
+          "sourceIndex": 17,
+          "type": "Traduce la frase",
+          "prompt": "I can see the towel.",
+          "sourceAnswer": "Puedo ver la toalla.",
+          "options": [
+            "Puedo ver la toalla.",
+            "Puedo ver el cubo.",
+            "Puedo ver la pala."
+          ]
+        },
+        {
+          "sourceIndex": 18,
+          "type": "Traduce la frase",
+          "prompt": "I can see the bucket.",
+          "sourceAnswer": "Puedo ver el cubo.",
+          "options": [
+            "Puedo ver el cubo.",
+            "Puedo ver la pala.",
+            "Puedo ver la ola."
+          ]
+        },
+        {
+          "sourceIndex": 19,
+          "type": "Traduce la frase",
+          "prompt": "I can see the spade.",
+          "sourceAnswer": "Puedo ver la pala.",
+          "options": [
+            "Puedo ver la pala.",
+            "Puedo ver la ola.",
+            "Puedo ver la arena."
+          ]
+        },
+        {
+          "sourceIndex": 20,
+          "type": "Traduce la frase",
+          "prompt": "I can see the wave.",
+          "sourceAnswer": "Puedo ver la ola.",
+          "options": [
+            "Puedo ver la ola.",
+            "Puedo ver la arena.",
+            "Puedo ver el mar."
+          ]
+        },
+        {
+          "sourceIndex": 21,
+          "type": "Traduce la frase",
+          "prompt": "Where is the sand?",
+          "sourceAnswer": "¿Dónde está la arena?",
+          "options": [
+            "¿Dónde está la arena?",
+            "¿Dónde está el mar?",
+            "¿Dónde está la concha?"
+          ]
+        },
+        {
+          "sourceIndex": 22,
+          "type": "Traduce la frase",
+          "prompt": "Where is the sea?",
+          "sourceAnswer": "¿Dónde está el mar?",
+          "options": [
+            "¿Dónde está el mar?",
+            "¿Dónde está la concha?",
+            "¿Dónde está la playa?"
+          ]
+        },
+        {
+          "sourceIndex": 23,
+          "type": "Traduce la frase",
+          "prompt": "Where is the shell?",
+          "sourceAnswer": "¿Dónde está la concha?",
+          "options": [
+            "¿Dónde está la concha?",
+            "¿Dónde está la playa?",
+            "¿Dónde está el sol?"
+          ]
+        },
+        {
+          "sourceIndex": 24,
+          "type": "Traduce la frase",
+          "prompt": "Where is the beach?",
+          "sourceAnswer": "¿Dónde está la playa?",
+          "options": [
+            "¿Dónde está la playa?",
+            "¿Dónde está el sol?",
+            "¿Dónde está la sombrilla?"
+          ]
+        },
+        {
+          "sourceIndex": 25,
+          "type": "Traduce la frase",
+          "prompt": "Where is the sun?",
+          "sourceAnswer": "¿Dónde está el sol?",
+          "options": [
+            "¿Dónde está el sol?",
+            "¿Dónde está la sombrilla?",
+            "¿Dónde está la toalla?"
+          ]
+        },
+        {
+          "sourceIndex": 26,
+          "type": "Traduce la frase",
+          "prompt": "Where is the umbrella?",
+          "sourceAnswer": "¿Dónde está la sombrilla?",
+          "options": [
+            "¿Dónde está la sombrilla?",
+            "¿Dónde está la toalla?",
+            "¿Dónde está el cubo?"
+          ]
+        },
+        {
+          "sourceIndex": 27,
+          "type": "Traduce la frase",
+          "prompt": "Where is the towel?",
+          "sourceAnswer": "¿Dónde está la toalla?",
+          "options": [
+            "¿Dónde está la toalla?",
+            "¿Dónde está el cubo?",
+            "¿Dónde está la pala?"
+          ]
+        },
+        {
+          "sourceIndex": 28,
+          "type": "Traduce la frase",
+          "prompt": "Where is the bucket?",
+          "sourceAnswer": "¿Dónde está el cubo?",
+          "options": [
+            "¿Dónde está el cubo?",
+            "¿Dónde está la pala?",
+            "¿Dónde está la ola?"
+          ]
+        },
+        {
+          "sourceIndex": 29,
+          "type": "Traduce la frase",
+          "prompt": "Where is the spade?",
+          "sourceAnswer": "¿Dónde está la pala?",
+          "options": [
+            "¿Dónde está la pala?",
+            "¿Dónde está la ola?",
+            "¿Dónde está la arena?"
+          ]
+        },
+        {
+          "sourceIndex": 30,
+          "type": "Traduce la frase",
+          "prompt": "Where is the wave?",
+          "sourceAnswer": "¿Dónde está la ola?",
+          "options": [
+            "¿Dónde está la ola?",
+            "¿Dónde está la arena?",
+            "¿Dónde está el mar?"
+          ]
+        },
+        {
+          "sourceIndex": 31,
+          "type": "Traduce la frase",
+          "prompt": "I like the sand.",
+          "sourceAnswer": "Me gusta la arena.",
+          "options": [
+            "Me gusta la arena.",
+            "Me gusta el mar.",
+            "Me gusta la concha."
+          ]
+        },
+        {
+          "sourceIndex": 32,
+          "type": "Traduce la frase",
+          "prompt": "I like the sea.",
+          "sourceAnswer": "Me gusta el mar.",
+          "options": [
+            "Me gusta el mar.",
+            "Me gusta la concha.",
+            "Me gusta la playa."
+          ]
+        },
+        {
+          "sourceIndex": 33,
+          "type": "Traduce la frase",
+          "prompt": "I like the shell.",
+          "sourceAnswer": "Me gusta la concha.",
+          "options": [
+            "Me gusta la concha.",
+            "Me gusta la playa.",
+            "Me gusta el sol."
+          ]
+        },
+        {
+          "sourceIndex": 34,
+          "type": "Traduce la frase",
+          "prompt": "I like the beach.",
+          "sourceAnswer": "Me gusta la playa.",
+          "options": [
+            "Me gusta la playa.",
+            "Me gusta el sol.",
+            "Me gusta la sombrilla."
+          ]
+        },
+        {
+          "sourceIndex": 35,
+          "type": "Traduce la frase",
+          "prompt": "I like the sun.",
+          "sourceAnswer": "Me gusta el sol.",
+          "options": [
+            "Me gusta el sol.",
+            "Me gusta la sombrilla.",
+            "Me gusta la toalla."
+          ]
+        },
+        {
+          "sourceIndex": 36,
+          "type": "Traduce la frase",
+          "prompt": "I like the umbrella.",
+          "sourceAnswer": "Me gusta la sombrilla.",
+          "options": [
+            "Me gusta la sombrilla.",
+            "Me gusta la toalla.",
+            "Me gusta el cubo."
+          ]
+        },
+        {
+          "sourceIndex": 37,
+          "type": "Traduce la frase",
+          "prompt": "I like the towel.",
+          "sourceAnswer": "Me gusta la toalla.",
+          "options": [
+            "Me gusta la toalla.",
+            "Me gusta el cubo.",
+            "Me gusta la pala."
+          ]
+        },
+        {
+          "sourceIndex": 38,
+          "type": "Traduce la frase",
+          "prompt": "I like the bucket.",
+          "sourceAnswer": "Me gusta el cubo.",
+          "options": [
+            "Me gusta el cubo.",
+            "Me gusta la pala.",
+            "Me gusta la ola."
+          ]
+        },
+        {
+          "sourceIndex": 39,
+          "type": "Traduce la frase",
+          "prompt": "I like the spade.",
+          "sourceAnswer": "Me gusta la pala.",
+          "options": [
+            "Me gusta la pala.",
+            "Me gusta la ola.",
+            "Me gusta la arena."
+          ]
+        },
+        {
+          "sourceIndex": 40,
+          "type": "Traduce la frase",
+          "prompt": "I like the wave.",
+          "sourceAnswer": "Me gusta la ola.",
+          "options": [
+            "Me gusta la ola.",
+            "Me gusta la arena.",
+            "Me gusta el mar."
+          ]
+        },
+        {
+          "sourceIndex": 41,
+          "type": "Traduce la frase",
+          "prompt": "This is the sand.",
+          "sourceAnswer": "Esto es la arena.",
+          "options": [
+            "Esto es la arena.",
+            "Esto es el mar.",
+            "Esto es la concha."
+          ]
+        },
+        {
+          "sourceIndex": 42,
+          "type": "Traduce la frase",
+          "prompt": "This is the sea.",
+          "sourceAnswer": "Esto es el mar.",
+          "options": [
+            "Esto es el mar.",
+            "Esto es la concha.",
+            "Esto es la playa."
+          ]
+        },
+        {
+          "sourceIndex": 43,
+          "type": "Traduce la frase",
+          "prompt": "This is the shell.",
+          "sourceAnswer": "Esto es la concha.",
+          "options": [
+            "Esto es la concha.",
+            "Esto es la playa.",
+            "Esto es el sol."
+          ]
+        },
+        {
+          "sourceIndex": 44,
+          "type": "Traduce la frase",
+          "prompt": "This is the beach.",
+          "sourceAnswer": "Esto es la playa.",
+          "options": [
+            "Esto es la playa.",
+            "Esto es el sol.",
+            "Esto es la sombrilla."
+          ]
+        },
+        {
+          "sourceIndex": 45,
+          "type": "Traduce la frase",
+          "prompt": "This is the sun.",
+          "sourceAnswer": "Esto es el sol.",
+          "options": [
+            "Esto es el sol.",
+            "Esto es la sombrilla.",
+            "Esto es la toalla."
+          ]
+        },
+        {
+          "sourceIndex": 46,
+          "type": "Traduce la frase",
+          "prompt": "This is the umbrella.",
+          "sourceAnswer": "Esto es la sombrilla.",
+          "options": [
+            "Esto es la sombrilla.",
+            "Esto es la toalla.",
+            "Esto es el cubo."
+          ]
+        },
+        {
+          "sourceIndex": 47,
+          "type": "Traduce la frase",
+          "prompt": "This is the towel.",
+          "sourceAnswer": "Esto es la toalla.",
+          "options": [
+            "Esto es la toalla.",
+            "Esto es el cubo.",
+            "Esto es la pala."
+          ]
+        },
+        {
+          "sourceIndex": 48,
+          "type": "Traduce la frase",
+          "prompt": "This is the bucket.",
+          "sourceAnswer": "Esto es el cubo.",
+          "options": [
+            "Esto es el cubo.",
+            "Esto es la pala.",
+            "Esto es la ola."
+          ]
+        },
+        {
+          "sourceIndex": 49,
+          "type": "Traduce la frase",
+          "prompt": "This is the spade.",
+          "sourceAnswer": "Esto es la pala.",
+          "options": [
+            "Esto es la pala.",
+            "Esto es la ola.",
+            "Esto es la arena."
+          ]
+        },
+        {
+          "sourceIndex": 50,
+          "type": "Traduce la frase",
+          "prompt": "This is the wave.",
+          "sourceAnswer": "Esto es la ola.",
+          "options": [
+            "Esto es la ola.",
+            "Esto es la arena.",
+            "Esto es el mar."
+          ]
+        }
+      ]
+    },
+    {
+      "mission": "077",
+      "title": "At the Cinema",
+      "vocabulary": [
+        [
+          "cinema",
+          "el cine"
+        ],
+        [
+          "film",
+          "la película"
+        ],
+        [
+          "ticket",
+          "la entrada"
+        ],
+        [
+          "screen",
+          "la pantalla"
+        ],
+        [
+          "seat",
+          "el asiento"
+        ],
+        [
+          "popcorn",
+          "las palomitas"
+        ],
+        [
+          "actor",
+          "el actor"
+        ],
+        [
+          "actress",
+          "la actriz"
+        ],
+        [
+          "music",
+          "la música"
+        ],
+        [
+          "story",
+          "la historia"
+        ]
+      ],
+      "practiceSource": [
+        {
+          "sourceIndex": 1,
+          "type": "Traduce la palabra",
+          "prompt": "cinema",
+          "sourceAnswer": "el cine",
+          "options": [
+            "el cine",
+            "la película",
+            "la entrada"
+          ]
+        },
+        {
+          "sourceIndex": 2,
+          "type": "Traduce la palabra",
+          "prompt": "film",
+          "sourceAnswer": "la película",
+          "options": [
+            "la película",
+            "la entrada",
+            "la pantalla"
+          ]
+        },
+        {
+          "sourceIndex": 3,
+          "type": "Traduce la palabra",
+          "prompt": "ticket",
+          "sourceAnswer": "la entrada",
+          "options": [
+            "la entrada",
+            "la pantalla",
+            "el asiento"
+          ]
+        },
+        {
+          "sourceIndex": 4,
+          "type": "Traduce la palabra",
+          "prompt": "screen",
+          "sourceAnswer": "la pantalla",
+          "options": [
+            "la pantalla",
+            "el asiento",
+            "las palomitas"
+          ]
+        },
+        {
+          "sourceIndex": 5,
+          "type": "Traduce la palabra",
+          "prompt": "seat",
+          "sourceAnswer": "el asiento",
+          "options": [
+            "el asiento",
+            "las palomitas",
+            "el actor"
+          ]
+        },
+        {
+          "sourceIndex": 6,
+          "type": "Traduce la palabra",
+          "prompt": "popcorn",
+          "sourceAnswer": "las palomitas",
+          "options": [
+            "las palomitas",
+            "el actor",
+            "la actriz"
+          ]
+        },
+        {
+          "sourceIndex": 7,
+          "type": "Traduce la palabra",
+          "prompt": "actor",
+          "sourceAnswer": "el actor",
+          "options": [
+            "el actor",
+            "la actriz",
+            "la música"
+          ]
+        },
+        {
+          "sourceIndex": 8,
+          "type": "Traduce la palabra",
+          "prompt": "actress",
+          "sourceAnswer": "la actriz",
+          "options": [
+            "la actriz",
+            "la música",
+            "la historia"
+          ]
+        },
+        {
+          "sourceIndex": 9,
+          "type": "Traduce la palabra",
+          "prompt": "music",
+          "sourceAnswer": "la música",
+          "options": [
+            "la música",
+            "la historia",
+            "el cine"
+          ]
+        },
+        {
+          "sourceIndex": 10,
+          "type": "Traduce la palabra",
+          "prompt": "story",
+          "sourceAnswer": "la historia",
+          "options": [
+            "la historia",
+            "el cine",
+            "la película"
+          ]
+        },
+        {
+          "sourceIndex": 11,
+          "type": "Traduce la frase",
+          "prompt": "I can see the cinema.",
+          "sourceAnswer": "Puedo ver el cine.",
+          "options": [
+            "Puedo ver el cine.",
+            "Puedo ver la película.",
+            "Puedo ver la entrada."
+          ]
+        },
+        {
+          "sourceIndex": 12,
+          "type": "Traduce la frase",
+          "prompt": "I can see the film.",
+          "sourceAnswer": "Puedo ver la película.",
+          "options": [
+            "Puedo ver la película.",
+            "Puedo ver la entrada.",
+            "Puedo ver la pantalla."
+          ]
+        },
+        {
+          "sourceIndex": 13,
+          "type": "Traduce la frase",
+          "prompt": "I can see the ticket.",
+          "sourceAnswer": "Puedo ver la entrada.",
+          "options": [
+            "Puedo ver la entrada.",
+            "Puedo ver la pantalla.",
+            "Puedo ver el asiento."
+          ]
+        },
+        {
+          "sourceIndex": 14,
+          "type": "Traduce la frase",
+          "prompt": "I can see the screen.",
+          "sourceAnswer": "Puedo ver la pantalla.",
+          "options": [
+            "Puedo ver la pantalla.",
+            "Puedo ver el asiento.",
+            "Puedo ver las palomitas."
+          ]
+        },
+        {
+          "sourceIndex": 15,
+          "type": "Traduce la frase",
+          "prompt": "I can see the seat.",
+          "sourceAnswer": "Puedo ver el asiento.",
+          "options": [
+            "Puedo ver el asiento.",
+            "Puedo ver las palomitas.",
+            "Puedo ver el actor."
+          ]
+        },
+        {
+          "sourceIndex": 16,
+          "type": "Traduce la frase",
+          "prompt": "I can see the popcorn.",
+          "sourceAnswer": "Puedo ver las palomitas.",
+          "options": [
+            "Puedo ver las palomitas.",
+            "Puedo ver el actor.",
+            "Puedo ver la actriz."
+          ]
+        },
+        {
+          "sourceIndex": 17,
+          "type": "Traduce la frase",
+          "prompt": "I can see the actor.",
+          "sourceAnswer": "Puedo ver el actor.",
+          "options": [
+            "Puedo ver el actor.",
+            "Puedo ver la actriz.",
+            "Puedo ver la música."
+          ]
+        },
+        {
+          "sourceIndex": 18,
+          "type": "Traduce la frase",
+          "prompt": "I can see the actress.",
+          "sourceAnswer": "Puedo ver la actriz.",
+          "options": [
+            "Puedo ver la actriz.",
+            "Puedo ver la música.",
+            "Puedo ver la historia."
+          ]
+        },
+        {
+          "sourceIndex": 19,
+          "type": "Traduce la frase",
+          "prompt": "I can see the music.",
+          "sourceAnswer": "Puedo ver la música.",
+          "options": [
+            "Puedo ver la música.",
+            "Puedo ver la historia.",
+            "Puedo ver el cine."
+          ]
+        },
+        {
+          "sourceIndex": 20,
+          "type": "Traduce la frase",
+          "prompt": "I can see the story.",
+          "sourceAnswer": "Puedo ver la historia.",
+          "options": [
+            "Puedo ver la historia.",
+            "Puedo ver el cine.",
+            "Puedo ver la película."
+          ]
+        },
+        {
+          "sourceIndex": 21,
+          "type": "Traduce la frase",
+          "prompt": "Where is the cinema?",
+          "sourceAnswer": "¿Dónde está el cine?",
+          "options": [
+            "¿Dónde está el cine?",
+            "¿Dónde está la película?",
+            "¿Dónde está la entrada?"
+          ]
+        },
+        {
+          "sourceIndex": 22,
+          "type": "Traduce la frase",
+          "prompt": "Where is the film?",
+          "sourceAnswer": "¿Dónde está la película?",
+          "options": [
+            "¿Dónde está la película?",
+            "¿Dónde está la entrada?",
+            "¿Dónde está la pantalla?"
+          ]
+        },
+        {
+          "sourceIndex": 23,
+          "type": "Traduce la frase",
+          "prompt": "Where is the ticket?",
+          "sourceAnswer": "¿Dónde está la entrada?",
+          "options": [
+            "¿Dónde está la entrada?",
+            "¿Dónde está la pantalla?",
+            "¿Dónde está el asiento?"
+          ]
+        },
+        {
+          "sourceIndex": 24,
+          "type": "Traduce la frase",
+          "prompt": "Where is the screen?",
+          "sourceAnswer": "¿Dónde está la pantalla?",
+          "options": [
+            "¿Dónde está la pantalla?",
+            "¿Dónde está el asiento?",
+            "¿Dónde está las palomitas?"
+          ]
+        },
+        {
+          "sourceIndex": 25,
+          "type": "Traduce la frase",
+          "prompt": "Where is the seat?",
+          "sourceAnswer": "¿Dónde está el asiento?",
+          "options": [
+            "¿Dónde está el asiento?",
+            "¿Dónde está las palomitas?",
+            "¿Dónde está el actor?"
+          ]
+        },
+        {
+          "sourceIndex": 26,
+          "type": "Traduce la frase",
+          "prompt": "Where is the popcorn?",
+          "sourceAnswer": "¿Dónde está las palomitas?",
+          "options": [
+            "¿Dónde está las palomitas?",
+            "¿Dónde está el actor?",
+            "¿Dónde está la actriz?"
+          ]
+        },
+        {
+          "sourceIndex": 27,
+          "type": "Traduce la frase",
+          "prompt": "Where is the actor?",
+          "sourceAnswer": "¿Dónde está el actor?",
+          "options": [
+            "¿Dónde está el actor?",
+            "¿Dónde está la actriz?",
+            "¿Dónde está la música?"
+          ]
+        },
+        {
+          "sourceIndex": 28,
+          "type": "Traduce la frase",
+          "prompt": "Where is the actress?",
+          "sourceAnswer": "¿Dónde está la actriz?",
+          "options": [
+            "¿Dónde está la actriz?",
+            "¿Dónde está la música?",
+            "¿Dónde está la historia?"
+          ]
+        },
+        {
+          "sourceIndex": 29,
+          "type": "Traduce la frase",
+          "prompt": "Where is the music?",
+          "sourceAnswer": "¿Dónde está la música?",
+          "options": [
+            "¿Dónde está la música?",
+            "¿Dónde está la historia?",
+            "¿Dónde está el cine?"
+          ]
+        },
+        {
+          "sourceIndex": 30,
+          "type": "Traduce la frase",
+          "prompt": "Where is the story?",
+          "sourceAnswer": "¿Dónde está la historia?",
+          "options": [
+            "¿Dónde está la historia?",
+            "¿Dónde está el cine?",
+            "¿Dónde está la película?"
+          ]
+        },
+        {
+          "sourceIndex": 31,
+          "type": "Traduce la frase",
+          "prompt": "I like the cinema.",
+          "sourceAnswer": "Me gusta el cine.",
+          "options": [
+            "Me gusta el cine.",
+            "Me gusta la película.",
+            "Me gusta la entrada."
+          ]
+        },
+        {
+          "sourceIndex": 32,
+          "type": "Traduce la frase",
+          "prompt": "I like the film.",
+          "sourceAnswer": "Me gusta la película.",
+          "options": [
+            "Me gusta la película.",
+            "Me gusta la entrada.",
+            "Me gusta la pantalla."
+          ]
+        },
+        {
+          "sourceIndex": 33,
+          "type": "Traduce la frase",
+          "prompt": "I like the ticket.",
+          "sourceAnswer": "Me gusta la entrada.",
+          "options": [
+            "Me gusta la entrada.",
+            "Me gusta la pantalla.",
+            "Me gusta el asiento."
+          ]
+        },
+        {
+          "sourceIndex": 34,
+          "type": "Traduce la frase",
+          "prompt": "I like the screen.",
+          "sourceAnswer": "Me gusta la pantalla.",
+          "options": [
+            "Me gusta la pantalla.",
+            "Me gusta el asiento.",
+            "Me gusta las palomitas."
+          ]
+        },
+        {
+          "sourceIndex": 35,
+          "type": "Traduce la frase",
+          "prompt": "I like the seat.",
+          "sourceAnswer": "Me gusta el asiento.",
+          "options": [
+            "Me gusta el asiento.",
+            "Me gusta las palomitas.",
+            "Me gusta el actor."
+          ]
+        },
+        {
+          "sourceIndex": 36,
+          "type": "Traduce la frase",
+          "prompt": "I like the popcorn.",
+          "sourceAnswer": "Me gusta las palomitas.",
+          "options": [
+            "Me gusta las palomitas.",
+            "Me gusta el actor.",
+            "Me gusta la actriz."
+          ]
+        },
+        {
+          "sourceIndex": 37,
+          "type": "Traduce la frase",
+          "prompt": "I like the actor.",
+          "sourceAnswer": "Me gusta el actor.",
+          "options": [
+            "Me gusta el actor.",
+            "Me gusta la actriz.",
+            "Me gusta la música."
+          ]
+        },
+        {
+          "sourceIndex": 38,
+          "type": "Traduce la frase",
+          "prompt": "I like the actress.",
+          "sourceAnswer": "Me gusta la actriz.",
+          "options": [
+            "Me gusta la actriz.",
+            "Me gusta la música.",
+            "Me gusta la historia."
+          ]
+        },
+        {
+          "sourceIndex": 39,
+          "type": "Traduce la frase",
+          "prompt": "I like the music.",
+          "sourceAnswer": "Me gusta la música.",
+          "options": [
+            "Me gusta la música.",
+            "Me gusta la historia.",
+            "Me gusta el cine."
+          ]
+        },
+        {
+          "sourceIndex": 40,
+          "type": "Traduce la frase",
+          "prompt": "I like the story.",
+          "sourceAnswer": "Me gusta la historia.",
+          "options": [
+            "Me gusta la historia.",
+            "Me gusta el cine.",
+            "Me gusta la película."
+          ]
+        },
+        {
+          "sourceIndex": 41,
+          "type": "Traduce la frase",
+          "prompt": "This is the cinema.",
+          "sourceAnswer": "Esto es el cine.",
+          "options": [
+            "Esto es el cine.",
+            "Esto es la película.",
+            "Esto es la entrada."
+          ]
+        },
+        {
+          "sourceIndex": 42,
+          "type": "Traduce la frase",
+          "prompt": "This is the film.",
+          "sourceAnswer": "Esto es la película.",
+          "options": [
+            "Esto es la película.",
+            "Esto es la entrada.",
+            "Esto es la pantalla."
+          ]
+        },
+        {
+          "sourceIndex": 43,
+          "type": "Traduce la frase",
+          "prompt": "This is the ticket.",
+          "sourceAnswer": "Esto es la entrada.",
+          "options": [
+            "Esto es la entrada.",
+            "Esto es la pantalla.",
+            "Esto es el asiento."
+          ]
+        },
+        {
+          "sourceIndex": 44,
+          "type": "Traduce la frase",
+          "prompt": "This is the screen.",
+          "sourceAnswer": "Esto es la pantalla.",
+          "options": [
+            "Esto es la pantalla.",
+            "Esto es el asiento.",
+            "Esto es las palomitas."
+          ]
+        },
+        {
+          "sourceIndex": 45,
+          "type": "Traduce la frase",
+          "prompt": "This is the seat.",
+          "sourceAnswer": "Esto es el asiento.",
+          "options": [
+            "Esto es el asiento.",
+            "Esto es las palomitas.",
+            "Esto es el actor."
+          ]
+        },
+        {
+          "sourceIndex": 46,
+          "type": "Traduce la frase",
+          "prompt": "This is the popcorn.",
+          "sourceAnswer": "Esto es las palomitas.",
+          "options": [
+            "Esto es las palomitas.",
+            "Esto es el actor.",
+            "Esto es la actriz."
+          ]
+        },
+        {
+          "sourceIndex": 47,
+          "type": "Traduce la frase",
+          "prompt": "This is the actor.",
+          "sourceAnswer": "Esto es el actor.",
+          "options": [
+            "Esto es el actor.",
+            "Esto es la actriz.",
+            "Esto es la música."
+          ]
+        },
+        {
+          "sourceIndex": 48,
+          "type": "Traduce la frase",
+          "prompt": "This is the actress.",
+          "sourceAnswer": "Esto es la actriz.",
+          "options": [
+            "Esto es la actriz.",
+            "Esto es la música.",
+            "Esto es la historia."
+          ]
+        },
+        {
+          "sourceIndex": 49,
+          "type": "Traduce la frase",
+          "prompt": "This is the music.",
+          "sourceAnswer": "Esto es la música.",
+          "options": [
+            "Esto es la música.",
+            "Esto es la historia.",
+            "Esto es el cine."
+          ]
+        },
+        {
+          "sourceIndex": 50,
+          "type": "Traduce la frase",
+          "prompt": "This is the story.",
+          "sourceAnswer": "Esto es la historia.",
+          "options": [
+            "Esto es la historia.",
+            "Esto es el cine.",
+            "Esto es la película."
+          ]
+        }
+      ]
+    },
+    {
+      "mission": "078",
+      "title": "At the Birthday Party",
+      "vocabulary": [
+        [
+          "birthday",
+          "el cumpleaños"
+        ],
+        [
+          "party",
+          "la fiesta"
+        ],
+        [
+          "present",
+          "el regalo"
+        ],
+        [
+          "cake",
+          "la tarta"
+        ],
+        [
+          "candle",
+          "la vela"
+        ],
+        [
+          "balloon",
+          "el globo"
+        ],
+        [
+          "card",
+          "la tarjeta"
+        ],
+        [
+          "guest",
+          "el invitado"
+        ],
+        [
+          "song",
+          "la canción"
+        ],
+        [
+          "dance",
+          "el baile"
+        ]
+      ],
+      "practiceSource": [
+        {
+          "sourceIndex": 1,
+          "type": "Traduce la palabra",
+          "prompt": "birthday",
+          "sourceAnswer": "el cumpleaños",
+          "options": [
+            "el cumpleaños",
+            "la fiesta",
+            "el regalo"
+          ]
+        },
+        {
+          "sourceIndex": 2,
+          "type": "Traduce la palabra",
+          "prompt": "party",
+          "sourceAnswer": "la fiesta",
+          "options": [
+            "la fiesta",
+            "el regalo",
+            "la tarta"
+          ]
+        },
+        {
+          "sourceIndex": 3,
+          "type": "Traduce la palabra",
+          "prompt": "present",
+          "sourceAnswer": "el regalo",
+          "options": [
+            "el regalo",
+            "la tarta",
+            "la vela"
+          ]
+        },
+        {
+          "sourceIndex": 4,
+          "type": "Traduce la palabra",
+          "prompt": "cake",
+          "sourceAnswer": "la tarta",
+          "options": [
+            "la tarta",
+            "la vela",
+            "el globo"
+          ]
+        },
+        {
+          "sourceIndex": 5,
+          "type": "Traduce la palabra",
+          "prompt": "candle",
+          "sourceAnswer": "la vela",
+          "options": [
+            "la vela",
+            "el globo",
+            "la tarjeta"
+          ]
+        },
+        {
+          "sourceIndex": 6,
+          "type": "Traduce la palabra",
+          "prompt": "balloon",
+          "sourceAnswer": "el globo",
+          "options": [
+            "el globo",
+            "la tarjeta",
+            "el invitado"
+          ]
+        },
+        {
+          "sourceIndex": 7,
+          "type": "Traduce la palabra",
+          "prompt": "card",
+          "sourceAnswer": "la tarjeta",
+          "options": [
+            "la tarjeta",
+            "el invitado",
+            "la canción"
+          ]
+        },
+        {
+          "sourceIndex": 8,
+          "type": "Traduce la palabra",
+          "prompt": "guest",
+          "sourceAnswer": "el invitado",
+          "options": [
+            "el invitado",
+            "la canción",
+            "el baile"
+          ]
+        },
+        {
+          "sourceIndex": 9,
+          "type": "Traduce la palabra",
+          "prompt": "song",
+          "sourceAnswer": "la canción",
+          "options": [
+            "la canción",
+            "el baile",
+            "el cumpleaños"
+          ]
+        },
+        {
+          "sourceIndex": 10,
+          "type": "Traduce la palabra",
+          "prompt": "dance",
+          "sourceAnswer": "el baile",
+          "options": [
+            "el baile",
+            "el cumpleaños",
+            "la fiesta"
+          ]
+        },
+        {
+          "sourceIndex": 11,
+          "type": "Traduce la frase",
+          "prompt": "I can see the birthday.",
+          "sourceAnswer": "Puedo ver el cumpleaños.",
+          "options": [
+            "Puedo ver el cumpleaños.",
+            "Puedo ver la fiesta.",
+            "Puedo ver el regalo."
+          ]
+        },
+        {
+          "sourceIndex": 12,
+          "type": "Traduce la frase",
+          "prompt": "I can see the party.",
+          "sourceAnswer": "Puedo ver la fiesta.",
+          "options": [
+            "Puedo ver la fiesta.",
+            "Puedo ver el regalo.",
+            "Puedo ver la tarta."
+          ]
+        },
+        {
+          "sourceIndex": 13,
+          "type": "Traduce la frase",
+          "prompt": "I can see the present.",
+          "sourceAnswer": "Puedo ver el regalo.",
+          "options": [
+            "Puedo ver el regalo.",
+            "Puedo ver la tarta.",
+            "Puedo ver la vela."
+          ]
+        },
+        {
+          "sourceIndex": 14,
+          "type": "Traduce la frase",
+          "prompt": "I can see the cake.",
+          "sourceAnswer": "Puedo ver la tarta.",
+          "options": [
+            "Puedo ver la tarta.",
+            "Puedo ver la vela.",
+            "Puedo ver el globo."
+          ]
+        },
+        {
+          "sourceIndex": 15,
+          "type": "Traduce la frase",
+          "prompt": "I can see the candle.",
+          "sourceAnswer": "Puedo ver la vela.",
+          "options": [
+            "Puedo ver la vela.",
+            "Puedo ver el globo.",
+            "Puedo ver la tarjeta."
+          ]
+        },
+        {
+          "sourceIndex": 16,
+          "type": "Traduce la frase",
+          "prompt": "I can see the balloon.",
+          "sourceAnswer": "Puedo ver el globo.",
+          "options": [
+            "Puedo ver el globo.",
+            "Puedo ver la tarjeta.",
+            "Puedo ver el invitado."
+          ]
+        },
+        {
+          "sourceIndex": 17,
+          "type": "Traduce la frase",
+          "prompt": "I can see the card.",
+          "sourceAnswer": "Puedo ver la tarjeta.",
+          "options": [
+            "Puedo ver la tarjeta.",
+            "Puedo ver el invitado.",
+            "Puedo ver la canción."
+          ]
+        },
+        {
+          "sourceIndex": 18,
+          "type": "Traduce la frase",
+          "prompt": "I can see the guest.",
+          "sourceAnswer": "Puedo ver el invitado.",
+          "options": [
+            "Puedo ver el invitado.",
+            "Puedo ver la canción.",
+            "Puedo ver el baile."
+          ]
+        },
+        {
+          "sourceIndex": 19,
+          "type": "Traduce la frase",
+          "prompt": "I can see the song.",
+          "sourceAnswer": "Puedo ver la canción.",
+          "options": [
+            "Puedo ver la canción.",
+            "Puedo ver el baile.",
+            "Puedo ver el cumpleaños."
+          ]
+        },
+        {
+          "sourceIndex": 20,
+          "type": "Traduce la frase",
+          "prompt": "I can see the dance.",
+          "sourceAnswer": "Puedo ver el baile.",
+          "options": [
+            "Puedo ver el baile.",
+            "Puedo ver el cumpleaños.",
+            "Puedo ver la fiesta."
+          ]
+        },
+        {
+          "sourceIndex": 21,
+          "type": "Traduce la frase",
+          "prompt": "Where is the birthday?",
+          "sourceAnswer": "¿Dónde está el cumpleaños?",
+          "options": [
+            "¿Dónde está el cumpleaños?",
+            "¿Dónde está la fiesta?",
+            "¿Dónde está el regalo?"
+          ]
+        },
+        {
+          "sourceIndex": 22,
+          "type": "Traduce la frase",
+          "prompt": "Where is the party?",
+          "sourceAnswer": "¿Dónde está la fiesta?",
+          "options": [
+            "¿Dónde está la fiesta?",
+            "¿Dónde está el regalo?",
+            "¿Dónde está la tarta?"
+          ]
+        },
+        {
+          "sourceIndex": 23,
+          "type": "Traduce la frase",
+          "prompt": "Where is the present?",
+          "sourceAnswer": "¿Dónde está el regalo?",
+          "options": [
+            "¿Dónde está el regalo?",
+            "¿Dónde está la tarta?",
+            "¿Dónde está la vela?"
+          ]
+        },
+        {
+          "sourceIndex": 24,
+          "type": "Traduce la frase",
+          "prompt": "Where is the cake?",
+          "sourceAnswer": "¿Dónde está la tarta?",
+          "options": [
+            "¿Dónde está la tarta?",
+            "¿Dónde está la vela?",
+            "¿Dónde está el globo?"
+          ]
+        },
+        {
+          "sourceIndex": 25,
+          "type": "Traduce la frase",
+          "prompt": "Where is the candle?",
+          "sourceAnswer": "¿Dónde está la vela?",
+          "options": [
+            "¿Dónde está la vela?",
+            "¿Dónde está el globo?",
+            "¿Dónde está la tarjeta?"
+          ]
+        },
+        {
+          "sourceIndex": 26,
+          "type": "Traduce la frase",
+          "prompt": "Where is the balloon?",
+          "sourceAnswer": "¿Dónde está el globo?",
+          "options": [
+            "¿Dónde está el globo?",
+            "¿Dónde está la tarjeta?",
+            "¿Dónde está el invitado?"
+          ]
+        },
+        {
+          "sourceIndex": 27,
+          "type": "Traduce la frase",
+          "prompt": "Where is the card?",
+          "sourceAnswer": "¿Dónde está la tarjeta?",
+          "options": [
+            "¿Dónde está la tarjeta?",
+            "¿Dónde está el invitado?",
+            "¿Dónde está la canción?"
+          ]
+        },
+        {
+          "sourceIndex": 28,
+          "type": "Traduce la frase",
+          "prompt": "Where is the guest?",
+          "sourceAnswer": "¿Dónde está el invitado?",
+          "options": [
+            "¿Dónde está el invitado?",
+            "¿Dónde está la canción?",
+            "¿Dónde está el baile?"
+          ]
+        },
+        {
+          "sourceIndex": 29,
+          "type": "Traduce la frase",
+          "prompt": "Where is the song?",
+          "sourceAnswer": "¿Dónde está la canción?",
+          "options": [
+            "¿Dónde está la canción?",
+            "¿Dónde está el baile?",
+            "¿Dónde está el cumpleaños?"
+          ]
+        },
+        {
+          "sourceIndex": 30,
+          "type": "Traduce la frase",
+          "prompt": "Where is the dance?",
+          "sourceAnswer": "¿Dónde está el baile?",
+          "options": [
+            "¿Dónde está el baile?",
+            "¿Dónde está el cumpleaños?",
+            "¿Dónde está la fiesta?"
+          ]
+        },
+        {
+          "sourceIndex": 31,
+          "type": "Traduce la frase",
+          "prompt": "I like the birthday.",
+          "sourceAnswer": "Me gusta el cumpleaños.",
+          "options": [
+            "Me gusta el cumpleaños.",
+            "Me gusta la fiesta.",
+            "Me gusta el regalo."
+          ]
+        },
+        {
+          "sourceIndex": 32,
+          "type": "Traduce la frase",
+          "prompt": "I like the party.",
+          "sourceAnswer": "Me gusta la fiesta.",
+          "options": [
+            "Me gusta la fiesta.",
+            "Me gusta el regalo.",
+            "Me gusta la tarta."
+          ]
+        },
+        {
+          "sourceIndex": 33,
+          "type": "Traduce la frase",
+          "prompt": "I like the present.",
+          "sourceAnswer": "Me gusta el regalo.",
+          "options": [
+            "Me gusta el regalo.",
+            "Me gusta la tarta.",
+            "Me gusta la vela."
+          ]
+        },
+        {
+          "sourceIndex": 34,
+          "type": "Traduce la frase",
+          "prompt": "I like the cake.",
+          "sourceAnswer": "Me gusta la tarta.",
+          "options": [
+            "Me gusta la tarta.",
+            "Me gusta la vela.",
+            "Me gusta el globo."
+          ]
+        },
+        {
+          "sourceIndex": 35,
+          "type": "Traduce la frase",
+          "prompt": "I like the candle.",
+          "sourceAnswer": "Me gusta la vela.",
+          "options": [
+            "Me gusta la vela.",
+            "Me gusta el globo.",
+            "Me gusta la tarjeta."
+          ]
+        },
+        {
+          "sourceIndex": 36,
+          "type": "Traduce la frase",
+          "prompt": "I like the balloon.",
+          "sourceAnswer": "Me gusta el globo.",
+          "options": [
+            "Me gusta el globo.",
+            "Me gusta la tarjeta.",
+            "Me gusta el invitado."
+          ]
+        },
+        {
+          "sourceIndex": 37,
+          "type": "Traduce la frase",
+          "prompt": "I like the card.",
+          "sourceAnswer": "Me gusta la tarjeta.",
+          "options": [
+            "Me gusta la tarjeta.",
+            "Me gusta el invitado.",
+            "Me gusta la canción."
+          ]
+        },
+        {
+          "sourceIndex": 38,
+          "type": "Traduce la frase",
+          "prompt": "I like the guest.",
+          "sourceAnswer": "Me gusta el invitado.",
+          "options": [
+            "Me gusta el invitado.",
+            "Me gusta la canción.",
+            "Me gusta el baile."
+          ]
+        },
+        {
+          "sourceIndex": 39,
+          "type": "Traduce la frase",
+          "prompt": "I like the song.",
+          "sourceAnswer": "Me gusta la canción.",
+          "options": [
+            "Me gusta la canción.",
+            "Me gusta el baile.",
+            "Me gusta el cumpleaños."
+          ]
+        },
+        {
+          "sourceIndex": 40,
+          "type": "Traduce la frase",
+          "prompt": "I like the dance.",
+          "sourceAnswer": "Me gusta el baile.",
+          "options": [
+            "Me gusta el baile.",
+            "Me gusta el cumpleaños.",
+            "Me gusta la fiesta."
+          ]
+        },
+        {
+          "sourceIndex": 41,
+          "type": "Traduce la frase",
+          "prompt": "This is the birthday.",
+          "sourceAnswer": "Esto es el cumpleaños.",
+          "options": [
+            "Esto es el cumpleaños.",
+            "Esto es la fiesta.",
+            "Esto es el regalo."
+          ]
+        },
+        {
+          "sourceIndex": 42,
+          "type": "Traduce la frase",
+          "prompt": "This is the party.",
+          "sourceAnswer": "Esto es la fiesta.",
+          "options": [
+            "Esto es la fiesta.",
+            "Esto es el regalo.",
+            "Esto es la tarta."
+          ]
+        },
+        {
+          "sourceIndex": 43,
+          "type": "Traduce la frase",
+          "prompt": "This is the present.",
+          "sourceAnswer": "Esto es el regalo.",
+          "options": [
+            "Esto es el regalo.",
+            "Esto es la tarta.",
+            "Esto es la vela."
+          ]
+        },
+        {
+          "sourceIndex": 44,
+          "type": "Traduce la frase",
+          "prompt": "This is the cake.",
+          "sourceAnswer": "Esto es la tarta.",
+          "options": [
+            "Esto es la tarta.",
+            "Esto es la vela.",
+            "Esto es el globo."
+          ]
+        },
+        {
+          "sourceIndex": 45,
+          "type": "Traduce la frase",
+          "prompt": "This is the candle.",
+          "sourceAnswer": "Esto es la vela.",
+          "options": [
+            "Esto es la vela.",
+            "Esto es el globo.",
+            "Esto es la tarjeta."
+          ]
+        },
+        {
+          "sourceIndex": 46,
+          "type": "Traduce la frase",
+          "prompt": "This is the balloon.",
+          "sourceAnswer": "Esto es el globo.",
+          "options": [
+            "Esto es el globo.",
+            "Esto es la tarjeta.",
+            "Esto es el invitado."
+          ]
+        },
+        {
+          "sourceIndex": 47,
+          "type": "Traduce la frase",
+          "prompt": "This is the card.",
+          "sourceAnswer": "Esto es la tarjeta.",
+          "options": [
+            "Esto es la tarjeta.",
+            "Esto es el invitado.",
+            "Esto es la canción."
+          ]
+        },
+        {
+          "sourceIndex": 48,
+          "type": "Traduce la frase",
+          "prompt": "This is the guest.",
+          "sourceAnswer": "Esto es el invitado.",
+          "options": [
+            "Esto es el invitado.",
+            "Esto es la canción.",
+            "Esto es el baile."
+          ]
+        },
+        {
+          "sourceIndex": 49,
+          "type": "Traduce la frase",
+          "prompt": "This is the song.",
+          "sourceAnswer": "Esto es la canción.",
+          "options": [
+            "Esto es la canción.",
+            "Esto es el baile.",
+            "Esto es el cumpleaños."
+          ]
+        },
+        {
+          "sourceIndex": 50,
+          "type": "Traduce la frase",
+          "prompt": "This is the dance.",
+          "sourceAnswer": "Esto es el baile.",
+          "options": [
+            "Esto es el baile.",
+            "Esto es el cumpleaños.",
+            "Esto es la fiesta."
+          ]
+        }
+      ]
+    }
+  ]
+}

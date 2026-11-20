@@ -56,6 +56,20 @@
             }
           ],
           "tip": "Remember: ON Monday, IN the morning, AT eight o’clock."
+          "title": "Days of the Week: words and simple English",
+          "explanation": "Learn ten useful words about days of the week. Listen to each British English model and repeat it.",
+          "patterns": [
+            {
+              "label": "Useful sentence",
+              "pattern": "The first day in this list is Monday.",
+              "examples": [
+                "Monday is the first day of my school week.",
+                "Tuesday is after Monday.",
+                "Wednesday is in the middle of the week."
+              ]
+            }
+          ],
+          "tip": "Say each new word aloud, then use it in a short sentence."
         },
         "items": [
           {
@@ -434,6 +448,7 @@
             "itemId": "english-pre-a1-m016-grammar-ex01-i01",
             "position": 1,
             "prompt": "Choose the correct preposition: I go to school ___ Monday.",
+            "prompt": "Choose the correct word or phrase: The first day in this list is ___.",
             "evaluation": {
               "type": "single_choice"
             },
@@ -441,12 +456,16 @@
               "on",
               "in",
               "at"
+              "Monday",
+              "Friday",
+              "Sunday"
             ]
           },
           {
             "itemId": "english-pre-a1-m016-grammar-ex01-i02",
             "position": 2,
             "prompt": "Choose the correct preposition: We play football ___ Saturday.",
+            "prompt": "Choose the correct word or phrase: The day after Monday is ___.",
             "evaluation": {
               "type": "single_choice"
             },
@@ -454,12 +473,16 @@
               "in",
               "on",
               "at"
+              "Tuesday",
+              "Thursday",
+              "Sunday"
             ]
           },
           {
             "itemId": "english-pre-a1-m016-grammar-ex01-i03",
             "position": 3,
             "prompt": "Choose the correct preposition: My music lesson is ___ Wednesday.",
+            "prompt": "Choose the correct word or phrase: The day before Friday is ___.",
             "evaluation": {
               "type": "single_choice"
             },
@@ -467,12 +490,16 @@
               "at",
               "in",
               "on"
+              "Thursday",
+              "Wednesday",
+              "Saturday"
             ]
           },
           {
             "itemId": "english-pre-a1-m016-grammar-ex01-i04",
             "position": 4,
             "prompt": "Choose the correct preposition: The shop is open ___ Sunday.",
+            "prompt": "Choose the correct word or phrase: The day after Saturday is ___.",
             "evaluation": {
               "type": "single_choice"
             },
@@ -480,12 +507,16 @@
               "on",
               "at",
               "in"
+              "Sunday",
+              "Friday",
+              "Monday"
             ]
           },
           {
             "itemId": "english-pre-a1-m016-grammar-ex01-i05",
             "position": 5,
             "prompt": "Choose the correct preposition: I visit my grandma ___ Fridays.",
+            "prompt": "Choose the correct word or phrase: Today is Monday. Tomorrow is ___.",
             "evaluation": {
               "type": "single_choice"
             },
@@ -493,12 +524,16 @@
               "in",
               "at",
               "on"
+              "Tuesday",
+              "Sunday",
+              "Friday"
             ]
           },
           {
             "itemId": "english-pre-a1-m016-grammar-ex01-i06",
             "position": 6,
             "prompt": "Choose the correct preposition: I have breakfast ___ the morning.",
+            "prompt": "Choose the correct word or phrase: Today is Friday. Yesterday was ___.",
             "evaluation": {
               "type": "single_choice"
             },
@@ -506,12 +541,16 @@
               "at",
               "in",
               "on"
+              "Thursday",
+              "Wednesday",
+              "Saturday"
             ]
           },
           {
             "itemId": "english-pre-a1-m016-grammar-ex01-i07",
             "position": 7,
             "prompt": "Choose the correct preposition: It is cold ___ winter.",
+            "prompt": "Choose the correct word or phrase: Today is Sunday. Tomorrow is ___.",
             "evaluation": {
               "type": "single_choice"
             },
@@ -519,12 +558,16 @@
               "on",
               "in",
               "at"
+              "Monday",
+              "Tuesday",
+              "Saturday"
             ]
           },
           {
             "itemId": "english-pre-a1-m016-grammar-ex01-i08",
             "position": 8,
             "prompt": "Choose the correct preposition: The lesson starts ___ eight o’clock.",
+            "prompt": "Choose the correct word or phrase: What day is it? It is ___.",
             "evaluation": {
               "type": "single_choice"
             },
@@ -532,12 +575,16 @@
               "in",
               "on",
               "at"
+              "Wednesday",
+              "yesterday",
+              "tomorrow"
             ]
           },
           {
             "itemId": "english-pre-a1-m016-grammar-ex01-i09",
             "position": 9,
             "prompt": "Complete the sentence: We do not go to school ___ Sunday.",
+            "prompt": "Choose the correct word or phrase: Today means ___.",
             "evaluation": {
               "type": "single_choice"
             },
@@ -545,12 +592,16 @@
               "at",
               "on",
               "in"
+              "this day",
+              "next week",
+              "last year"
             ]
           },
           {
             "itemId": "english-pre-a1-m016-grammar-ex01-i10",
             "position": 10,
             "prompt": "Choose the correct sentence.",
+            "prompt": "Choose the correct word or phrase: Yesterday is the day ___.",
             "evaluation": {
               "type": "single_choice"
             },
@@ -558,6 +609,9 @@
               "I have English in Tuesday.",
               "I have English at Tuesday.",
               "I have English on Tuesday."
+              "before today",
+              "after tomorrow",
+              "before Monday always"
             ]
           }
         ]
