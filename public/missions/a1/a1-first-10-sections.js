@@ -217,7 +217,7 @@ const taskUI=(id,title,intro,items)=> {
    box.querySelector("[data-model]").onclick=()=>speak(t.target);
    attachSpeechAssessment(box,t,mark);
   } else {
-   const opts=shuffle(makeChoices(t.answer,t.wrong||[]));
+   const opts= id==="reading" ? (()=>{const wrong=shuffle((t.wrong||[]).filter(x=>x!==t.answer)).slice(0,2);const choices=[...wrong];choices.splice(at%3,0,t.answer);return choices;})() : shuffle(makeChoices(t.answer,t.wrong||[]));
    box.innerHTML="<span class='tag'>EJERCICIO · "+(at+1)+"</span><p class='a1extra-question'>"+t.prompt+"</p>"+(t.audio? "<button type='button' data-audio>🔊 Escuchar audio</button>":"")+"<div class='a1extra-options'>"+opts.map((o,i)=>"<button type='button' data-option='"+i+"'>"+o+"</button>").join("")+"</div>";
    if(t.audio)box.querySelector("[data-audio]").onclick=()=>speak(t.audio);
    box.querySelectorAll("[data-option]").forEach((b,i)=>b.onclick=()=>mark(opts[i]===t.answer,opts[i]===t.answer?"¡Correcto!": "La respuesta correcta es: "+t.answer));
