@@ -28,19 +28,19 @@
         "type": "vocabulary_pairs",
         "theory": {
           "title": "Party Time: vocabulary",
-          "explanation": "Learn ten useful words about party time. Listen to each British English model and repeat it.",
+          "explanation": "Learn ten useful words for a party and simple polite expressions.",
           "patterns": [
             {
-              "label": "Useful sentence",
-              "pattern": "I like party.",
+              "label": "Party words",
+              "pattern": "[Action or item] + please · Thank you.",
               "examples": [
-                "I can see party.",
-                "This is balloon.",
-                "I like music."
+                "Dance, please.",
+                "A balloon, please.",
+                "Thank you for the gift."
               ]
             }
           ],
-          "tip": "Escucha cada palabra y úsala en una frase corta."
+          "tip": "Escucha, repite y usa cada palabra en una frase completa."
         },
         "items": [
           {
@@ -450,7 +450,7 @@
           {
             "itemId": "english-pre-a1-m038-grammar-ex01-i03",
             "position": 3,
-            "prompt": "Complete: Music, ___",
+            "prompt": "Complete: Music, ___.",
             "evaluation": {
               "type": "single_choice"
             },
@@ -476,79 +476,79 @@
           {
             "itemId": "english-pre-a1-m038-grammar-ex01-i05",
             "position": 5,
-            "prompt": "Choose the polite instruction.",
+            "prompt": "Choose the correct sentence.",
             "evaluation": {
               "type": "single_choice"
             },
             "options": [
-              "Dance, please.",
-              "Dances, please.",
-              "Dancing, please."
+              "The children dance.",
+              "The children dances.",
+              "The children dancing."
             ]
           },
           {
             "itemId": "english-pre-a1-m038-grammar-ex01-i06",
             "position": 6,
-            "prompt": "Someone gives you a gift. What do you say?",
+            "prompt": "What do you listen to at a party?",
             "evaluation": {
               "type": "single_choice"
             },
             "options": [
-              "Thank you.",
-              "Please.",
-              "Good night."
+              "Music",
+              "A toothbrush",
+              "A broom"
             ]
           },
           {
             "itemId": "english-pre-a1-m038-grammar-ex01-i07",
             "position": 7,
-            "prompt": "Complete: Music, ___",
+            "prompt": "Which phrase is polite when you ask for a gift?",
             "evaluation": {
               "type": "single_choice"
             },
             "options": [
-              "please",
-              "thank you",
-              "goodbye"
+              "A gift, please.",
+              "A gift goodbye.",
+              "Thank you gift."
             ]
           },
           {
             "itemId": "english-pre-a1-m038-grammar-ex01-i08",
             "position": 8,
-            "prompt": "Which word means “globo”?",
-            "evaluation": {
-              "type": "single_choice"
-            },
-            "options": [
-              "balloon",
-              "gift",
-              "music"
-            ]
-          },
-          {
-            "itemId": "english-pre-a1-m038-grammar-ex01-i09",
-            "position": 9,
-            "prompt": "Choose the polite instruction.",
-            "evaluation": {
-              "type": "single_choice"
-            },
-            "options": [
-              "Dance, please.",
-              "Dances, please.",
-              "Dancing, please."
-            ]
-          },
-          {
-            "itemId": "english-pre-a1-m038-grammar-ex01-i10",
-            "position": 10,
-            "prompt": "Someone gives you a gift. What do you say?",
+            "prompt": "What do you say after someone gives you a balloon?",
             "evaluation": {
               "type": "single_choice"
             },
             "options": [
               "Thank you.",
-              "Please.",
+              "Please balloon.",
               "Good night."
+            ]
+          },
+          {
+            "itemId": "english-pre-a1-m038-grammar-ex01-i09",
+            "position": 9,
+            "prompt": "What can fall on the floor at a party?",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "Confetti",
+              "A shower",
+              "A mirror"
+            ]
+          },
+          {
+            "itemId": "english-pre-a1-m038-grammar-ex01-i10",
+            "position": 10,
+            "prompt": "Which item can hang on a wall with a message?",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "A banner",
+              "A shoe",
+              "A towel"
             ]
           }
         ]
@@ -802,7 +802,6 @@
             "itemId": "english-pre-a1-m038-writing-ex01-i01",
             "position": 1,
             "audio": "tts:en-GB:party",
-            "expectedAnswer": "party",
             "evaluation": {
               "type": "normalised_text"
             }
@@ -811,7 +810,6 @@
             "itemId": "english-pre-a1-m038-writing-ex01-i02",
             "position": 2,
             "audio": "tts:en-GB:balloon",
-            "expectedAnswer": "balloon",
             "evaluation": {
               "type": "normalised_text"
             }
@@ -820,7 +818,6 @@
             "itemId": "english-pre-a1-m038-writing-ex01-i03",
             "position": 3,
             "audio": "tts:en-GB:music",
-            "expectedAnswer": "music",
             "evaluation": {
               "type": "normalised_text"
             }
@@ -829,7 +826,6 @@
             "itemId": "english-pre-a1-m038-writing-ex01-i04",
             "position": 4,
             "audio": "tts:en-GB:dance",
-            "expectedAnswer": "dance",
             "evaluation": {
               "type": "normalised_text"
             }
@@ -838,7 +834,6 @@
             "itemId": "english-pre-a1-m038-writing-ex01-i05",
             "position": 5,
             "audio": "tts:en-GB:gift",
-            "expectedAnswer": "gift",
             "evaluation": {
               "type": "normalised_text"
             }
@@ -847,7 +842,6 @@
             "itemId": "english-pre-a1-m038-writing-ex01-i06",
             "position": 6,
             "audio": "tts:en-GB:Dance, please.",
-            "expectedAnswer": "Dance, please.",
             "evaluation": {
               "type": "normalised_text"
             }
@@ -856,7 +850,6 @@
             "itemId": "english-pre-a1-m038-writing-ex01-i07",
             "position": 7,
             "audio": "tts:en-GB:Thank you.",
-            "expectedAnswer": "Thank you.",
             "evaluation": {
               "type": "normalised_text"
             }
@@ -865,7 +858,6 @@
             "itemId": "english-pre-a1-m038-writing-ex01-i08",
             "position": 8,
             "audio": "tts:en-GB:confetti",
-            "expectedAnswer": "confetti",
             "evaluation": {
               "type": "normalised_text"
             }
@@ -874,7 +866,6 @@
             "itemId": "english-pre-a1-m038-writing-ex01-i09",
             "position": 9,
             "audio": "tts:en-GB:streamer",
-            "expectedAnswer": "streamer",
             "evaluation": {
               "type": "normalised_text"
             }
@@ -883,7 +874,6 @@
             "itemId": "english-pre-a1-m038-writing-ex01-i10",
             "position": 10,
             "audio": "tts:en-GB:banner",
-            "expectedAnswer": "banner",
             "evaluation": {
               "type": "normalised_text"
             }
@@ -902,8 +892,8 @@
           {
             "itemId": "english-pre-a1-m038-speaking-ex01-i01",
             "position": 1,
-            "prompt": "Say a sentence with “party”.",
-            "modelAnswer": "I like party.",
+            "prompt": "Say a short sentence about “party”. You can use the model.",
+            "modelAnswer": "It is a party.",
             "evaluation": {
               "type": "transcription_feedback",
               "transcriptionSeparateFromPronunciation": true
@@ -912,8 +902,8 @@
           {
             "itemId": "english-pre-a1-m038-speaking-ex01-i02",
             "position": 2,
-            "prompt": "Say a sentence with “balloon”.",
-            "modelAnswer": "I like balloon.",
+            "prompt": "Say a short sentence about “balloon”. You can use the model.",
+            "modelAnswer": "I have a balloon.",
             "evaluation": {
               "type": "transcription_feedback",
               "transcriptionSeparateFromPronunciation": true
@@ -922,7 +912,7 @@
           {
             "itemId": "english-pre-a1-m038-speaking-ex01-i03",
             "position": 3,
-            "prompt": "Say a sentence with “music”.",
+            "prompt": "Say a short sentence about “music”. You can use the model.",
             "modelAnswer": "I like music.",
             "evaluation": {
               "type": "transcription_feedback",
@@ -932,8 +922,8 @@
           {
             "itemId": "english-pre-a1-m038-speaking-ex01-i04",
             "position": 4,
-            "prompt": "Say a sentence with “dance”.",
-            "modelAnswer": "I like dance.",
+            "prompt": "Say a short sentence about “dance”. You can use the model.",
+            "modelAnswer": "I can dance.",
             "evaluation": {
               "type": "transcription_feedback",
               "transcriptionSeparateFromPronunciation": true
@@ -942,8 +932,8 @@
           {
             "itemId": "english-pre-a1-m038-speaking-ex01-i05",
             "position": 5,
-            "prompt": "Say a sentence with “gift”.",
-            "modelAnswer": "I like gift.",
+            "prompt": "Say a short sentence about “gift”. You can use the model.",
+            "modelAnswer": "This is a gift.",
             "evaluation": {
               "type": "transcription_feedback",
               "transcriptionSeparateFromPronunciation": true
@@ -952,8 +942,8 @@
           {
             "itemId": "english-pre-a1-m038-speaking-ex01-i06",
             "position": 6,
-            "prompt": "Say a sentence with “please”.",
-            "modelAnswer": "I like please.",
+            "prompt": "Say a short sentence about “please”. You can use the model.",
+            "modelAnswer": "Please come to my party.",
             "evaluation": {
               "type": "transcription_feedback",
               "transcriptionSeparateFromPronunciation": true
@@ -962,8 +952,8 @@
           {
             "itemId": "english-pre-a1-m038-speaking-ex01-i07",
             "position": 7,
-            "prompt": "Say a sentence with “thank you”.",
-            "modelAnswer": "I like thank you.",
+            "prompt": "Say a short sentence about “thank you”. You can use the model.",
+            "modelAnswer": "Thank you for the gift.",
             "evaluation": {
               "type": "transcription_feedback",
               "transcriptionSeparateFromPronunciation": true
@@ -972,8 +962,8 @@
           {
             "itemId": "english-pre-a1-m038-speaking-ex01-i08",
             "position": 8,
-            "prompt": "Say a sentence with “confetti”.",
-            "modelAnswer": "I like confetti.",
+            "prompt": "Say a short sentence about “confetti”. You can use the model.",
+            "modelAnswer": "I see confetti.",
             "evaluation": {
               "type": "transcription_feedback",
               "transcriptionSeparateFromPronunciation": true
@@ -982,8 +972,8 @@
           {
             "itemId": "english-pre-a1-m038-speaking-ex01-i09",
             "position": 9,
-            "prompt": "Say a sentence with “streamer”.",
-            "modelAnswer": "I like streamer.",
+            "prompt": "Say a short sentence about “streamer”. You can use the model.",
+            "modelAnswer": "The streamer is blue.",
             "evaluation": {
               "type": "transcription_feedback",
               "transcriptionSeparateFromPronunciation": true
@@ -992,8 +982,8 @@
           {
             "itemId": "english-pre-a1-m038-speaking-ex01-i10",
             "position": 10,
-            "prompt": "Say a sentence with “banner”.",
-            "modelAnswer": "I like banner.",
+            "prompt": "Say a short sentence about “banner”. You can use the model.",
+            "modelAnswer": "The banner says hello.",
             "evaluation": {
               "type": "transcription_feedback",
               "transcriptionSeparateFromPronunciation": true
@@ -1010,9 +1000,9 @@
         "exerciseId": "english-pre-a1-m038-listening-ex01",
         "type": "listening_gap_fill",
         "content": {
-          "audio": "tts:en-GB:Welcome! This is party time. I can see party. I can see balloon. I can see music. I can see dance. I can see gift. I can see please. I can see thank you. I can see confetti. I can see streamer. I can see banner. I like this place. Thank you for listening.",
+          "audio": "tts:en-GB:It is a party. I see a balloon. I hear music. We dance. I get a gift. I say please when I ask. I say thank you after I get it. There is confetti on the floor. A streamer hangs on the wall. A banner is on the wall.",
           "audioLocale": "en-GB",
-          "transcriptTemplate": "Welcome! This is party time. I can see [[gap-01]]. I can see [[gap-02]]. I can see [[gap-03]]. I can see [[gap-04]]. I can see [[gap-05]]. I can see [[gap-06]]. I can see [[gap-07]]. I can see [[gap-08]]. I can see [[gap-09]]. I can see [[gap-10]]. I like this place. Thank you for listening.",
+          "transcriptTemplate": "It is a [[gap-01]]. I see a [[gap-02]]. I hear [[gap-03]]. We [[gap-04]]. I get a [[gap-05]]. I say [[gap-06]] when I ask. I say [[gap-07]] after I get it. There is [[gap-08]] on the floor. A [[gap-09]] hangs on the wall. A [[gap-10]] is on the wall.",
           "wordBank": [
             {
               "wordId": "english-pre-a1-m038-listening-word-01",
@@ -1061,62 +1051,52 @@
           {
             "itemId": "english-pre-a1-m038-listening-ex01-i01",
             "position": 1,
-            "gapToken": "[[gap-01]]",
-            "expectedWordId": "english-pre-a1-m038-listening-word-01"
+            "gapToken": "[[gap-01]]"
           },
           {
             "itemId": "english-pre-a1-m038-listening-ex01-i02",
             "position": 2,
-            "gapToken": "[[gap-02]]",
-            "expectedWordId": "english-pre-a1-m038-listening-word-02"
+            "gapToken": "[[gap-02]]"
           },
           {
             "itemId": "english-pre-a1-m038-listening-ex01-i03",
             "position": 3,
-            "gapToken": "[[gap-03]]",
-            "expectedWordId": "english-pre-a1-m038-listening-word-03"
+            "gapToken": "[[gap-03]]"
           },
           {
             "itemId": "english-pre-a1-m038-listening-ex01-i04",
             "position": 4,
-            "gapToken": "[[gap-04]]",
-            "expectedWordId": "english-pre-a1-m038-listening-word-04"
+            "gapToken": "[[gap-04]]"
           },
           {
             "itemId": "english-pre-a1-m038-listening-ex01-i05",
             "position": 5,
-            "gapToken": "[[gap-05]]",
-            "expectedWordId": "english-pre-a1-m038-listening-word-05"
+            "gapToken": "[[gap-05]]"
           },
           {
             "itemId": "english-pre-a1-m038-listening-ex01-i06",
             "position": 6,
-            "gapToken": "[[gap-06]]",
-            "expectedWordId": "english-pre-a1-m038-listening-word-06"
+            "gapToken": "[[gap-06]]"
           },
           {
             "itemId": "english-pre-a1-m038-listening-ex01-i07",
             "position": 7,
-            "gapToken": "[[gap-07]]",
-            "expectedWordId": "english-pre-a1-m038-listening-word-07"
+            "gapToken": "[[gap-07]]"
           },
           {
             "itemId": "english-pre-a1-m038-listening-ex01-i08",
             "position": 8,
-            "gapToken": "[[gap-08]]",
-            "expectedWordId": "english-pre-a1-m038-listening-word-08"
+            "gapToken": "[[gap-08]]"
           },
           {
             "itemId": "english-pre-a1-m038-listening-ex01-i09",
             "position": 9,
-            "gapToken": "[[gap-09]]",
-            "expectedWordId": "english-pre-a1-m038-listening-word-09"
+            "gapToken": "[[gap-09]]"
           },
           {
             "itemId": "english-pre-a1-m038-listening-ex01-i10",
             "position": 10,
-            "gapToken": "[[gap-10]]",
-            "expectedWordId": "english-pre-a1-m038-listening-word-10"
+            "gapToken": "[[gap-10]]"
           }
         ]
       }

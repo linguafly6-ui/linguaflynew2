@@ -28,19 +28,19 @@
         "type": "vocabulary_pairs",
         "theory": {
           "title": "Can You Do It?: vocabulary",
-          "explanation": "Learn ten useful words about can you do it?. Listen to each British English model and repeat it.",
+          "explanation": "Learn ten useful words for talking about things you can and cannot do.",
           "patterns": [
             {
-              "label": "Useful sentence",
-              "pattern": "I like can.",
+              "label": "Abilities",
+              "pattern": "I can + verb · I can't + verb.",
               "examples": [
-                "I can see can.",
-                "This is can't.",
-                "I like swim."
+                "I can swim.",
+                "I can't fly.",
+                "I can dance."
               ]
             }
           ],
-          "tip": "Escucha cada palabra y úsala en una frase corta."
+          "tip": "Escucha, repite y usa cada palabra en una frase completa."
         },
         "items": [
           {
@@ -103,14 +103,14 @@
             "itemId": "english-pre-a1-m040-explore-ex01-i09",
             "position": 9,
             "english": "cook",
-            "spanish": "cocinero",
+            "spanish": "cocinar",
             "audio": "tts:en-GB:cook"
           },
           {
             "itemId": "english-pre-a1-m040-explore-ex01-i10",
             "position": 10,
             "english": "skate",
-            "spanish": "patín",
+            "spanish": "patinar",
             "audio": "tts:en-GB:skate"
           }
         ]
@@ -191,7 +191,7 @@
             "options": [
               "saltar",
               "cantar",
-              "cocinero"
+              "cocinar"
             ]
           },
           {
@@ -205,7 +205,7 @@
             "options": [
               "bailar",
               "volar",
-              "patín"
+              "patinar"
             ]
           },
           {
@@ -218,7 +218,7 @@
             },
             "options": [
               "cantar",
-              "cocinero",
+              "cocinar",
               "poder / saber"
             ]
           },
@@ -232,7 +232,7 @@
             },
             "options": [
               "volar",
-              "patín",
+              "patinar",
               "no poder / no saber"
             ]
           },
@@ -245,7 +245,7 @@
               "type": "single_choice"
             },
             "options": [
-              "cocinero",
+              "cocinar",
               "poder / saber",
               "nadar"
             ]
@@ -259,7 +259,7 @@
               "type": "single_choice"
             },
             "options": [
-              "patín",
+              "patinar",
               "no poder / no saber",
               "correr"
             ]
@@ -380,7 +380,7 @@
             "itemId": "english-pre-a1-m040-practice-ex01-i19",
             "position": 19,
             "taskType": "english_vocabulary",
-            "prompt": "Which English word means “cocinero”?",
+            "prompt": "Which English word means “cocinar”?",
             "evaluation": {
               "type": "single_choice"
             },
@@ -394,7 +394,7 @@
             "itemId": "english-pre-a1-m040-practice-ex01-i20",
             "position": 20,
             "taskType": "english_vocabulary",
-            "prompt": "Which English word means “patín”?",
+            "prompt": "Which English word means “patinar”?",
             "evaluation": {
               "type": "single_choice"
             },
@@ -476,53 +476,53 @@
           {
             "itemId": "english-pre-a1-m040-grammar-ex01-i05",
             "position": 5,
-            "prompt": "Choose the correct sentence.",
+            "prompt": "Complete: She can ___.",
             "evaluation": {
               "type": "single_choice"
             },
             "options": [
-              "I can swim.",
-              "I can swims.",
-              "I am can swim."
+              "dance",
+              "dances",
+              "dancing"
             ]
           },
           {
             "itemId": "english-pre-a1-m040-grammar-ex01-i06",
             "position": 6,
-            "prompt": "Complete: I ___ fly.",
+            "prompt": "Choose the correct negative sentence.",
             "evaluation": {
               "type": "single_choice"
             },
             "options": [
-              "can't",
-              "can to",
-              "don't can"
+              "I can't fly.",
+              "I don't can fly.",
+              "I can't to fly."
             ]
           },
           {
             "itemId": "english-pre-a1-m040-grammar-ex01-i07",
             "position": 7,
-            "prompt": "Which sentence means “Puedo cantar”?",
+            "prompt": "Which sentence means “Puedo cocinar”?",
             "evaluation": {
               "type": "single_choice"
             },
             "options": [
-              "I can sing.",
-              "I can't sing.",
-              "I can singing."
+              "I can cook.",
+              "I can cooks.",
+              "I can cooking."
             ]
           },
           {
             "itemId": "english-pre-a1-m040-grammar-ex01-i08",
             "position": 8,
-            "prompt": "Choose the correct verb after can.",
+            "prompt": "Complete: He ___ run.",
             "evaluation": {
               "type": "single_choice"
             },
             "options": [
-              "jump",
-              "jumps",
-              "jumping"
+              "can",
+              "cans",
+              "canning"
             ]
           },
           {
@@ -533,22 +533,22 @@
               "type": "single_choice"
             },
             "options": [
-              "I can swim.",
-              "I can swims.",
-              "I am can swim."
+              "I can skate.",
+              "I can skates.",
+              "I am can skate."
             ]
           },
           {
             "itemId": "english-pre-a1-m040-grammar-ex01-i10",
             "position": 10,
-            "prompt": "Complete: I ___ fly.",
+            "prompt": "What comes after “can’t”?",
             "evaluation": {
               "type": "single_choice"
             },
             "options": [
-              "can't",
-              "can to",
-              "don't can"
+              "The base verb",
+              "The verb with -s",
+              "The verb with -ing"
             ]
           }
         ]
@@ -630,7 +630,7 @@
             "itemId": "english-pre-a1-m040-pronunciation-ex01-i09",
             "position": 9,
             "word": "cook",
-            "translation": "cocinero",
+            "translation": "cocinar",
             "pronunciationGuide": "Escucha el audio británico y repite.",
             "audio": "tts:en-GB:cook"
           },
@@ -638,7 +638,7 @@
             "itemId": "english-pre-a1-m040-pronunciation-ex01-i10",
             "position": 10,
             "word": "skate",
-            "translation": "patín",
+            "translation": "patinar",
             "pronunciationGuide": "Escucha el audio británico y repite.",
             "audio": "tts:en-GB:skate"
           }
@@ -802,7 +802,6 @@
             "itemId": "english-pre-a1-m040-writing-ex01-i01",
             "position": 1,
             "audio": "tts:en-GB:can",
-            "expectedAnswer": "can",
             "evaluation": {
               "type": "normalised_text"
             }
@@ -811,7 +810,6 @@
             "itemId": "english-pre-a1-m040-writing-ex01-i02",
             "position": 2,
             "audio": "tts:en-GB:can't",
-            "expectedAnswer": "can't",
             "evaluation": {
               "type": "normalised_text"
             }
@@ -820,7 +818,6 @@
             "itemId": "english-pre-a1-m040-writing-ex01-i03",
             "position": 3,
             "audio": "tts:en-GB:swim",
-            "expectedAnswer": "swim",
             "evaluation": {
               "type": "normalised_text"
             }
@@ -829,7 +826,6 @@
             "itemId": "english-pre-a1-m040-writing-ex01-i04",
             "position": 4,
             "audio": "tts:en-GB:run",
-            "expectedAnswer": "run",
             "evaluation": {
               "type": "normalised_text"
             }
@@ -838,7 +834,6 @@
             "itemId": "english-pre-a1-m040-writing-ex01-i05",
             "position": 5,
             "audio": "tts:en-GB:jump",
-            "expectedAnswer": "jump",
             "evaluation": {
               "type": "normalised_text"
             }
@@ -847,7 +842,6 @@
             "itemId": "english-pre-a1-m040-writing-ex01-i06",
             "position": 6,
             "audio": "tts:en-GB:I can swim.",
-            "expectedAnswer": "I can swim.",
             "evaluation": {
               "type": "normalised_text"
             }
@@ -856,7 +850,6 @@
             "itemId": "english-pre-a1-m040-writing-ex01-i07",
             "position": 7,
             "audio": "tts:en-GB:I can't fly.",
-            "expectedAnswer": "I can't fly.",
             "evaluation": {
               "type": "normalised_text"
             }
@@ -865,7 +858,6 @@
             "itemId": "english-pre-a1-m040-writing-ex01-i08",
             "position": 8,
             "audio": "tts:en-GB:cook",
-            "expectedAnswer": "cook",
             "evaluation": {
               "type": "normalised_text"
             }
@@ -874,7 +866,6 @@
             "itemId": "english-pre-a1-m040-writing-ex01-i09",
             "position": 9,
             "audio": "tts:en-GB:skate",
-            "expectedAnswer": "skate",
             "evaluation": {
               "type": "normalised_text"
             }
@@ -883,7 +874,6 @@
             "itemId": "english-pre-a1-m040-writing-ex01-i10",
             "position": 10,
             "audio": "tts:en-GB:ski",
-            "expectedAnswer": "ski",
             "evaluation": {
               "type": "normalised_text"
             }
@@ -902,8 +892,8 @@
           {
             "itemId": "english-pre-a1-m040-speaking-ex01-i01",
             "position": 1,
-            "prompt": "Say a sentence with “can”.",
-            "modelAnswer": "I like can.",
+            "prompt": "Say a short sentence about “can”. You can use the model.",
+            "modelAnswer": "I can swim.",
             "evaluation": {
               "type": "transcription_feedback",
               "transcriptionSeparateFromPronunciation": true
@@ -912,8 +902,8 @@
           {
             "itemId": "english-pre-a1-m040-speaking-ex01-i02",
             "position": 2,
-            "prompt": "Say a sentence with “can't”.",
-            "modelAnswer": "I like can't.",
+            "prompt": "Say a short sentence about “can't”. You can use the model.",
+            "modelAnswer": "I can't fly.",
             "evaluation": {
               "type": "transcription_feedback",
               "transcriptionSeparateFromPronunciation": true
@@ -922,8 +912,8 @@
           {
             "itemId": "english-pre-a1-m040-speaking-ex01-i03",
             "position": 3,
-            "prompt": "Say a sentence with “swim”.",
-            "modelAnswer": "I like swim.",
+            "prompt": "Say a short sentence about “swim”. You can use the model.",
+            "modelAnswer": "I can swim.",
             "evaluation": {
               "type": "transcription_feedback",
               "transcriptionSeparateFromPronunciation": true
@@ -932,8 +922,8 @@
           {
             "itemId": "english-pre-a1-m040-speaking-ex01-i04",
             "position": 4,
-            "prompt": "Say a sentence with “run”.",
-            "modelAnswer": "I like run.",
+            "prompt": "Say a short sentence about “run”. You can use the model.",
+            "modelAnswer": "I can run.",
             "evaluation": {
               "type": "transcription_feedback",
               "transcriptionSeparateFromPronunciation": true
@@ -942,8 +932,8 @@
           {
             "itemId": "english-pre-a1-m040-speaking-ex01-i05",
             "position": 5,
-            "prompt": "Say a sentence with “jump”.",
-            "modelAnswer": "I like jump.",
+            "prompt": "Say a short sentence about “jump”. You can use the model.",
+            "modelAnswer": "I can jump.",
             "evaluation": {
               "type": "transcription_feedback",
               "transcriptionSeparateFromPronunciation": true
@@ -952,8 +942,8 @@
           {
             "itemId": "english-pre-a1-m040-speaking-ex01-i06",
             "position": 6,
-            "prompt": "Say a sentence with “dance”.",
-            "modelAnswer": "I like dance.",
+            "prompt": "Say a short sentence about “dance”. You can use the model.",
+            "modelAnswer": "I can dance.",
             "evaluation": {
               "type": "transcription_feedback",
               "transcriptionSeparateFromPronunciation": true
@@ -962,8 +952,8 @@
           {
             "itemId": "english-pre-a1-m040-speaking-ex01-i07",
             "position": 7,
-            "prompt": "Say a sentence with “sing”.",
-            "modelAnswer": "I like sing.",
+            "prompt": "Say a short sentence about “sing”. You can use the model.",
+            "modelAnswer": "I can sing.",
             "evaluation": {
               "type": "transcription_feedback",
               "transcriptionSeparateFromPronunciation": true
@@ -972,8 +962,8 @@
           {
             "itemId": "english-pre-a1-m040-speaking-ex01-i08",
             "position": 8,
-            "prompt": "Say a sentence with “fly”.",
-            "modelAnswer": "I like fly.",
+            "prompt": "Say a short sentence about “fly”. You can use the model.",
+            "modelAnswer": "I can fly.",
             "evaluation": {
               "type": "transcription_feedback",
               "transcriptionSeparateFromPronunciation": true
@@ -982,8 +972,8 @@
           {
             "itemId": "english-pre-a1-m040-speaking-ex01-i09",
             "position": 9,
-            "prompt": "Say a sentence with “cook”.",
-            "modelAnswer": "I like cook.",
+            "prompt": "Say a short sentence about “cook”. You can use the model.",
+            "modelAnswer": "I can cook.",
             "evaluation": {
               "type": "transcription_feedback",
               "transcriptionSeparateFromPronunciation": true
@@ -992,8 +982,8 @@
           {
             "itemId": "english-pre-a1-m040-speaking-ex01-i10",
             "position": 10,
-            "prompt": "Say a sentence with “skate”.",
-            "modelAnswer": "I like skate.",
+            "prompt": "Say a short sentence about “skate”. You can use the model.",
+            "modelAnswer": "I can skate.",
             "evaluation": {
               "type": "transcription_feedback",
               "transcriptionSeparateFromPronunciation": true
@@ -1010,9 +1000,9 @@
         "exerciseId": "english-pre-a1-m040-listening-ex01",
         "type": "listening_gap_fill",
         "content": {
-          "audio": "tts:en-GB:Welcome! This is can you do it?. I can see can. I can see can't. I can see swim. I can see run. I can see jump. I can see dance. I can see sing. I can see fly. I can see cook. I can see skate. I like this place. Thank you for listening.",
+          "audio": "tts:en-GB:I can swim. I can't fly. I like to run, jump, dance and sing. I can cook and skate.",
           "audioLocale": "en-GB",
-          "transcriptTemplate": "Welcome! This is can you do it?. I can see can. I can see [[gap-02]]. I can see [[gap-03]]. I can see [[gap-04]]. I can see [[gap-05]]. I can see [[gap-06]]. I can see [[gap-07]]. I can see [[gap-08]]. I can see [[gap-09]]. I [[gap-01]] see [[gap-10]]. I like this place. Thank you for listening.",
+          "transcriptTemplate": "I [[gap-01]] [[gap-03]]. I [[gap-02]] [[gap-08]]. I like to [[gap-04]], [[gap-05]], [[gap-06]] and [[gap-07]]. I can [[gap-09]] and [[gap-10]].",
           "wordBank": [
             {
               "wordId": "english-pre-a1-m040-listening-word-01",
@@ -1061,62 +1051,52 @@
           {
             "itemId": "english-pre-a1-m040-listening-ex01-i01",
             "position": 1,
-            "gapToken": "[[gap-01]]",
-            "expectedWordId": "english-pre-a1-m040-listening-word-01"
+            "gapToken": "[[gap-01]]"
           },
           {
             "itemId": "english-pre-a1-m040-listening-ex01-i02",
             "position": 2,
-            "gapToken": "[[gap-02]]",
-            "expectedWordId": "english-pre-a1-m040-listening-word-02"
+            "gapToken": "[[gap-02]]"
           },
           {
             "itemId": "english-pre-a1-m040-listening-ex01-i03",
             "position": 3,
-            "gapToken": "[[gap-03]]",
-            "expectedWordId": "english-pre-a1-m040-listening-word-03"
+            "gapToken": "[[gap-03]]"
           },
           {
             "itemId": "english-pre-a1-m040-listening-ex01-i04",
             "position": 4,
-            "gapToken": "[[gap-04]]",
-            "expectedWordId": "english-pre-a1-m040-listening-word-04"
+            "gapToken": "[[gap-04]]"
           },
           {
             "itemId": "english-pre-a1-m040-listening-ex01-i05",
             "position": 5,
-            "gapToken": "[[gap-05]]",
-            "expectedWordId": "english-pre-a1-m040-listening-word-05"
+            "gapToken": "[[gap-05]]"
           },
           {
             "itemId": "english-pre-a1-m040-listening-ex01-i06",
             "position": 6,
-            "gapToken": "[[gap-06]]",
-            "expectedWordId": "english-pre-a1-m040-listening-word-06"
+            "gapToken": "[[gap-06]]"
           },
           {
             "itemId": "english-pre-a1-m040-listening-ex01-i07",
             "position": 7,
-            "gapToken": "[[gap-07]]",
-            "expectedWordId": "english-pre-a1-m040-listening-word-07"
+            "gapToken": "[[gap-07]]"
           },
           {
             "itemId": "english-pre-a1-m040-listening-ex01-i08",
             "position": 8,
-            "gapToken": "[[gap-08]]",
-            "expectedWordId": "english-pre-a1-m040-listening-word-08"
+            "gapToken": "[[gap-08]]"
           },
           {
             "itemId": "english-pre-a1-m040-listening-ex01-i09",
             "position": 9,
-            "gapToken": "[[gap-09]]",
-            "expectedWordId": "english-pre-a1-m040-listening-word-09"
+            "gapToken": "[[gap-09]]"
           },
           {
             "itemId": "english-pre-a1-m040-listening-ex01-i10",
             "position": 10,
-            "gapToken": "[[gap-10]]",
-            "expectedWordId": "english-pre-a1-m040-listening-word-10"
+            "gapToken": "[[gap-10]]"
           }
         ]
       }
