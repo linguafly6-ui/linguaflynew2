@@ -297,6 +297,194 @@
                     }
                   },
                   "additionalProperties": false
+                },
+                "lesson": {
+                  "type": "object",
+                  "required": [
+                    "phrases",
+                    "grammar",
+                    "reading",
+                    "writing",
+                    "speaking",
+                    "listening"
+                  ],
+                  "properties": {
+                    "phrases": {
+                      "type": "array",
+                      "minItems": 1,
+                      "items": {
+                        "type": "object",
+                        "required": [
+                          "english",
+                          "spanish"
+                        ],
+                        "properties": {
+                          "english": {
+                            "$ref": "#/$defs/nonEmpty"
+                          },
+                          "spanish": {
+                            "$ref": "#/$defs/nonEmpty"
+                          },
+                          "note": {
+                            "$ref": "#/$defs/nonEmpty"
+                          },
+                          "prompt": {
+                            "$ref": "#/$defs/nonEmpty"
+                          },
+                          "promptSpanish": {
+                            "$ref": "#/$defs/nonEmpty"
+                          }
+                        },
+                        "additionalProperties": false
+                      }
+                    },
+                    "grammar": {
+                      "type": "array",
+                      "minItems": 1,
+                      "items": {
+                        "type": "object",
+                        "required": [
+                          "english",
+                          "spanish"
+                        ],
+                        "properties": {
+                          "english": {
+                            "$ref": "#/$defs/nonEmpty"
+                          },
+                          "spanish": {
+                            "$ref": "#/$defs/nonEmpty"
+                          },
+                          "note": {
+                            "$ref": "#/$defs/nonEmpty"
+                          },
+                          "prompt": {
+                            "$ref": "#/$defs/nonEmpty"
+                          },
+                          "promptSpanish": {
+                            "$ref": "#/$defs/nonEmpty"
+                          }
+                        },
+                        "additionalProperties": false
+                      }
+                    },
+                    "reading": {
+                      "type": "array",
+                      "minItems": 1,
+                      "items": {
+                        "type": "object",
+                        "required": [
+                          "english",
+                          "spanish"
+                        ],
+                        "properties": {
+                          "english": {
+                            "$ref": "#/$defs/nonEmpty"
+                          },
+                          "spanish": {
+                            "$ref": "#/$defs/nonEmpty"
+                          },
+                          "note": {
+                            "$ref": "#/$defs/nonEmpty"
+                          },
+                          "prompt": {
+                            "$ref": "#/$defs/nonEmpty"
+                          },
+                          "promptSpanish": {
+                            "$ref": "#/$defs/nonEmpty"
+                          }
+                        },
+                        "additionalProperties": false
+                      }
+                    },
+                    "writing": {
+                      "type": "array",
+                      "minItems": 1,
+                      "items": {
+                        "type": "object",
+                        "required": [
+                          "english",
+                          "spanish"
+                        ],
+                        "properties": {
+                          "english": {
+                            "$ref": "#/$defs/nonEmpty"
+                          },
+                          "spanish": {
+                            "$ref": "#/$defs/nonEmpty"
+                          },
+                          "note": {
+                            "$ref": "#/$defs/nonEmpty"
+                          },
+                          "prompt": {
+                            "$ref": "#/$defs/nonEmpty"
+                          },
+                          "promptSpanish": {
+                            "$ref": "#/$defs/nonEmpty"
+                          }
+                        },
+                        "additionalProperties": false
+                      }
+                    },
+                    "speaking": {
+                      "type": "array",
+                      "minItems": 1,
+                      "items": {
+                        "type": "object",
+                        "required": [
+                          "english",
+                          "spanish"
+                        ],
+                        "properties": {
+                          "english": {
+                            "$ref": "#/$defs/nonEmpty"
+                          },
+                          "spanish": {
+                            "$ref": "#/$defs/nonEmpty"
+                          },
+                          "note": {
+                            "$ref": "#/$defs/nonEmpty"
+                          },
+                          "prompt": {
+                            "$ref": "#/$defs/nonEmpty"
+                          },
+                          "promptSpanish": {
+                            "$ref": "#/$defs/nonEmpty"
+                          }
+                        },
+                        "additionalProperties": false
+                      }
+                    },
+                    "listening": {
+                      "type": "array",
+                      "minItems": 1,
+                      "items": {
+                        "type": "object",
+                        "required": [
+                          "english",
+                          "spanish"
+                        ],
+                        "properties": {
+                          "english": {
+                            "$ref": "#/$defs/nonEmpty"
+                          },
+                          "spanish": {
+                            "$ref": "#/$defs/nonEmpty"
+                          },
+                          "note": {
+                            "$ref": "#/$defs/nonEmpty"
+                          },
+                          "prompt": {
+                            "$ref": "#/$defs/nonEmpty"
+                          },
+                          "promptSpanish": {
+                            "$ref": "#/$defs/nonEmpty"
+                          }
+                        },
+                        "additionalProperties": false
+                      }
+                    }
+                  },
+                  "additionalProperties": false
                 }
               },
               "required": [
