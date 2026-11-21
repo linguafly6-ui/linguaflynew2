@@ -1,9 +1,9 @@
 import Link from "next/link";
-import CanonicalMissionFrame from "@/components/academy/CanonicalMissionFrame";
+import CanonicalMission from "@/components/academy/CanonicalMission";
 
 export const metadata = {
   title: "A1 · Misión 001 · Linguafly Academy",
-  description: "Misión piloto con la presentación minimalista unificada de Linguafly Academy.",
+  description: "Misión A1 piloto con el runtime canónico compartido de Linguafly Academy.",
   robots: { index: false, follow: false },
 };
 
@@ -15,11 +15,8 @@ export default function CanonicalA1MissionPage() {
           <span aria-hidden="true">←</span> Volver al diseño de la academia
         </Link>
         <div className="mt-5">
-          <CanonicalMissionFrame />
+          <CanonicalMission />
         </div>
-        <p className="mx-auto mt-4 max-w-3xl text-xs leading-5 text-slate-400">
-          Piloto visual. Se reutiliza el contenido y el runtime de la misión existente; esta vista no modifica ni registra el progreso del alumno.
-        </p>
       </div>
     </main>
   );
