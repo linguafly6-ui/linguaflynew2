@@ -136,7 +136,8 @@ export async function processReview(
     nextReview.toISOString(),
     new Date().toISOString(),
     result.was_correct ? 1 : 0,
-    result.item_id
+    result.item_id,
+    userId
   ).run();
 
   // Guardar la revisiÃ³n
