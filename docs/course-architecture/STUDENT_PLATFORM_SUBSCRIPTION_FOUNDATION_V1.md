@@ -289,3 +289,19 @@ Cambios aplicados en la rama de trabajo, sin despliegue ni migraciones:
 - Se añadió una condición de coherencia entre el alumno asociado y el identificador de cliente Stripe al actualizar una suscripción con `student_id` en metadatos.
 
 La idempotencia duradera por `event.id` sigue pendiente y requiere almacenamiento persistente/migración; el procesamiento de eventos fuera de orden y la política de impago/gracia también necesitan pruebas y definición antes de producción.
+
+## 14. Auditoría adicional de progreso y ubicación de datos
+
+- Se confirmó en `wrangler.jsonc` que `DB` es la base del blog y `COURSE_DB` la base de aprendizaje, con bases separadas también para previews.
+- Se localizó el esquema real de repetición: `migrations/001_lingua_features.sql` crea `sr_items` y `sr_reviews` en `DB`. Por tanto, el motivo de no moverlas era conservar compatibilidad hasta preparar una migración; ya no es una ubicación desconocida.
+- Se confirmó que las tablas de progreso de ejercicios y rachas se crean/importan mediante migraciones de `COURSE_DB`; varias son resúmenes de fuentes históricas y no deben migrarse dos veces.
+- El árbol de la rama contiene 100 rutas de comprobación Pre-A1. Se inspeccionaron las rutas 001, 002 y 100: requieren sesión, corrigen la respuesta con una clave del servidor y no guardan el intento ni el progreso.
+- `getStudent` adapta la caducidad de ciertas cuentas `pro_test`, pero el acceso comercial `pro` no se deriva de forma general del estado Stripe y `current_period_end`. Se debe centralizar la política antes de cambiar los controles dispersos.
+- La ruta `/api/learn/submit` valida el ID de ejercicio y el bloqueo por número de unidad, pero la autorización debe cubrir también la pertenencia del ejercicio al curso/nivel habilitado para el alumno. La contabilización de XP/racha debe probarse bajo concurrencia.
+- Login y registro no muestran un rate limit propio en el código inspeccionado. Las mutaciones con cookie necesitan una política explícita de Origin/CSRF.
+
+El plan de inventario, tablas aditivas propuestas, copia, verificación, corte, rollback y aceptación está en:
+
+`docs/course-architecture/PROGRESS_AND_DATA_MIGRATION_PLAN_V1.md`
+
+Este plan no contiene una migración ejecutada ni autoriza modificar bases remotas.
