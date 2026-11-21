@@ -1,5 +1,5 @@
 {
-  "schemaVersion": "1.0.0",
+  "schemaVersion": "1.2.0",
   "contentVersion": 1,
   "course": {
     "courseId": "english-a1",
@@ -8,101 +8,160 @@
   },
   "unit": {
     "unitId": "english-a1-unit-001",
+    "courseId": "english-a1",
+    "position": 1,
     "title": "Personal information"
   },
   "mission": {
     "missionId": "english-a1-m001",
+    "unitId": "english-a1-unit-001",
     "position": 1,
-    "title": "Who Am I?",
-    "objective": "Presentarte y compartir información personal básica.",
-    "sections": [
-      {
-        "sectionId": "english-a1-m001-explore",
-        "sectionKey": "explore",
-        "title": "Exploración",
+    "title": "Who Am I?"
+  },
+  "sections": [
+    {
+      "sectionId": "english-a1-m001-explore",
+      "sectionKey": "explore",
+      "position": 1,
+      "exercise": {
+        "exerciseId": "english-a1-m001-explore-exercise",
+        "type": "vocabulary_pairs",
         "items": [
           {
             "itemId": "english-a1-m001-explore-pair01",
             "en": "name",
-            "es": "nombre"
+            "es": "nombre",
+            "position": 1,
+            "english": "name",
+            "spanish": "nombre",
+            "audio": "tts:en-GB"
           },
           {
             "itemId": "english-a1-m001-explore-pair02",
             "en": "surname",
-            "es": "apellido"
+            "es": "apellido",
+            "position": 2,
+            "english": "surname",
+            "spanish": "apellido",
+            "audio": "tts:en-GB"
           },
           {
             "itemId": "english-a1-m001-explore-pair03",
             "en": "age",
-            "es": "edad"
+            "es": "edad",
+            "position": 3,
+            "english": "age",
+            "spanish": "edad",
+            "audio": "tts:en-GB"
           },
           {
             "itemId": "english-a1-m001-explore-pair04",
             "en": "address",
-            "es": "dirección"
+            "es": "dirección",
+            "position": 4,
+            "english": "address",
+            "spanish": "dirección",
+            "audio": "tts:en-GB"
           },
           {
             "itemId": "english-a1-m001-explore-pair05",
             "en": "city",
-            "es": "ciudad"
+            "es": "ciudad",
+            "position": 5,
+            "english": "city",
+            "spanish": "ciudad",
+            "audio": "tts:en-GB"
           },
           {
             "itemId": "english-a1-m001-explore-pair06",
             "en": "country",
-            "es": "país"
+            "es": "país",
+            "position": 6,
+            "english": "country",
+            "spanish": "país",
+            "audio": "tts:en-GB"
           },
           {
             "itemId": "english-a1-m001-explore-pair07",
             "en": "nationality",
-            "es": "nacionalidad"
+            "es": "nacionalidad",
+            "position": 7,
+            "english": "nationality",
+            "spanish": "nacionalidad",
+            "audio": "tts:en-GB"
           },
           {
             "itemId": "english-a1-m001-explore-pair08",
             "en": "phone number",
-            "es": "número de teléfono"
+            "es": "número de teléfono",
+            "position": 8,
+            "english": "phone number",
+            "spanish": "número de teléfono",
+            "audio": "tts:en-GB"
           },
           {
             "itemId": "english-a1-m001-explore-pair09",
             "en": "email address",
-            "es": "correo electrónico"
+            "es": "correo electrónico",
+            "position": 9,
+            "english": "email address",
+            "spanish": "correo electrónico",
+            "audio": "tts:en-GB"
           },
           {
             "itemId": "english-a1-m001-explore-pair10",
             "en": "date of birth",
-            "es": "fecha de nacimiento"
+            "es": "fecha de nacimiento",
+            "position": 10,
+            "english": "date of birth",
+            "spanish": "fecha de nacimiento",
+            "audio": "tts:en-GB"
           }
         ],
         "theory": {
           "title": "El verbo TO BE: am / is / are",
-          "explain": "Usamos TO BE para decir quiénes somos, cómo estamos, nuestra edad o de dónde somos. En español suele equivaler a ser o estar.",
+          "explanation": "Usamos TO BE para decir quiénes somos, cómo estamos, nuestra edad o de dónde somos. En español suele equivaler a ser o estar.",
+          "tip": "Sujeto + am/is/are + not. Ejemplo: I am not from London. Am/Is/Are + sujeto...? Ejemplo: Are you a student?",
           "patterns": [
-            "I am (I'm) · yo soy / estoy",
-            "You are (you're) · tú eres / estás",
-            "He / She / It is · él / ella es / está",
-            "We / You / They are · nosotros / vosotros / ellos somos / sois / son"
-          ],
-          "negative": "Sujeto + am/is/are + not. Ejemplo: I am not from London.",
-          "question": "Am/Is/Are + sujeto...? Ejemplo: Are you a student?",
-          "examples": [
-            [
-              "I am twenty-four years old.",
-              "Tengo veinticuatro años."
-            ],
-            [
-              "She is from Spain.",
-              "Ella es de España."
-            ],
-            [
-              "They are students.",
-              "Ellos son estudiantes."
-            ]
+            {
+              "label": "Patrón 1",
+              "pattern": "I am (I'm) · yo soy / estoy",
+              "examples": [
+                "I am (I'm) · yo soy / estoy"
+              ]
+            },
+            {
+              "label": "Patrón 2",
+              "pattern": "You are (you're) · tú eres / estás",
+              "examples": [
+                "You are (you're) · tú eres / estás"
+              ]
+            },
+            {
+              "label": "Patrón 3",
+              "pattern": "He / She / It is · él / ella es / está",
+              "examples": [
+                "He / She / It is · él / ella es / está"
+              ]
+            },
+            {
+              "label": "Patrón 4",
+              "pattern": "We / You / They are · nosotros / vosotros / ellos somos / sois / son",
+              "examples": [
+                "We / You / They are · nosotros / vosotros / ellos somos / sois / son"
+              ]
+            }
           ]
         }
-      },
-      {
-        "sectionId": "english-a1-m001-practice",
-        "sectionKey": "practice",
-        "title": "Practice",
+      }
+    },
+    {
+      "sectionId": "english-a1-m001-practice",
+      "sectionKey": "practice",
+      "position": 2,
+      "exercise": {
+        "exerciseId": "english-a1-m001-practice-exercise",
+        "type": "mixed_practice",
         "items": [
           {
             "itemId": "english-a1-m001-practice-q01",
@@ -112,7 +171,12 @@
               "nombre",
               "ciudad",
               "país"
-            ]
+            ],
+            "position": 1,
+            "taskType": "translation",
+            "evaluation": {
+              "type": "single_choice"
+            }
           },
           {
             "itemId": "english-a1-m001-practice-q02",
@@ -122,7 +186,12 @@
               "apellido",
               "país",
               "nacionalidad"
-            ]
+            ],
+            "position": 2,
+            "taskType": "translation",
+            "evaluation": {
+              "type": "single_choice"
+            }
           },
           {
             "itemId": "english-a1-m001-practice-q03",
@@ -132,7 +201,12 @@
               "edad",
               "nacionalidad",
               "número de teléfono"
-            ]
+            ],
+            "position": 3,
+            "taskType": "translation",
+            "evaluation": {
+              "type": "single_choice"
+            }
           },
           {
             "itemId": "english-a1-m001-practice-q04",
@@ -142,7 +216,12 @@
               "dirección",
               "número de teléfono",
               "correo electrónico"
-            ]
+            ],
+            "position": 4,
+            "taskType": "translation",
+            "evaluation": {
+              "type": "single_choice"
+            }
           },
           {
             "itemId": "english-a1-m001-practice-q05",
@@ -152,7 +231,12 @@
               "ciudad",
               "correo electrónico",
               "fecha de nacimiento"
-            ]
+            ],
+            "position": 5,
+            "taskType": "translation",
+            "evaluation": {
+              "type": "single_choice"
+            }
           },
           {
             "itemId": "english-a1-m001-practice-q06",
@@ -162,7 +246,12 @@
               "país",
               "fecha de nacimiento",
               "Me llamo Laura."
-            ]
+            ],
+            "position": 6,
+            "taskType": "translation",
+            "evaluation": {
+              "type": "single_choice"
+            }
           },
           {
             "itemId": "english-a1-m001-practice-q07",
@@ -172,7 +261,12 @@
               "nacionalidad",
               "Me llamo Laura.",
               "Tengo veinticuatro años."
-            ]
+            ],
+            "position": 7,
+            "taskType": "translation",
+            "evaluation": {
+              "type": "single_choice"
+            }
           },
           {
             "itemId": "english-a1-m001-practice-q08",
@@ -182,7 +276,12 @@
               "número de teléfono",
               "Tengo veinticuatro años.",
               "Soy de España."
-            ]
+            ],
+            "position": 8,
+            "taskType": "translation",
+            "evaluation": {
+              "type": "single_choice"
+            }
           },
           {
             "itemId": "english-a1-m001-practice-q09",
@@ -192,7 +291,12 @@
               "correo electrónico",
               "Soy de España.",
               "Vivo en Madrid."
-            ]
+            ],
+            "position": 9,
+            "taskType": "translation",
+            "evaluation": {
+              "type": "single_choice"
+            }
           },
           {
             "itemId": "english-a1-m001-practice-q10",
@@ -202,7 +306,12 @@
               "fecha de nacimiento",
               "nombre",
               "apellido"
-            ]
+            ],
+            "position": 10,
+            "taskType": "translation",
+            "evaluation": {
+              "type": "single_choice"
+            }
           },
           {
             "itemId": "english-a1-m001-practice-q11",
@@ -212,7 +321,12 @@
               "Me llamo Laura.",
               "apellido",
               "edad"
-            ]
+            ],
+            "position": 11,
+            "taskType": "translation",
+            "evaluation": {
+              "type": "single_choice"
+            }
           },
           {
             "itemId": "english-a1-m001-practice-q12",
@@ -222,7 +336,12 @@
               "Tengo veinticuatro años.",
               "edad",
               "dirección"
-            ]
+            ],
+            "position": 12,
+            "taskType": "translation",
+            "evaluation": {
+              "type": "single_choice"
+            }
           },
           {
             "itemId": "english-a1-m001-practice-q13",
@@ -232,7 +351,12 @@
               "Soy de España.",
               "dirección",
               "ciudad"
-            ]
+            ],
+            "position": 13,
+            "taskType": "translation",
+            "evaluation": {
+              "type": "single_choice"
+            }
           },
           {
             "itemId": "english-a1-m001-practice-q14",
@@ -242,7 +366,12 @@
               "Vivo en Madrid.",
               "ciudad",
               "país"
-            ]
+            ],
+            "position": 14,
+            "taskType": "translation",
+            "evaluation": {
+              "type": "single_choice"
+            }
           },
           {
             "itemId": "english-a1-m001-practice-q15",
@@ -252,7 +381,12 @@
               "Mi apellido es García.",
               "país",
               "nacionalidad"
-            ]
+            ],
+            "position": 15,
+            "taskType": "translation",
+            "evaluation": {
+              "type": "single_choice"
+            }
           },
           {
             "itemId": "english-a1-m001-practice-q16",
@@ -262,7 +396,12 @@
               "¿Cuál es tu dirección?",
               "nacionalidad",
               "número de teléfono"
-            ]
+            ],
+            "position": 16,
+            "taskType": "translation",
+            "evaluation": {
+              "type": "single_choice"
+            }
           },
           {
             "itemId": "english-a1-m001-practice-q17",
@@ -272,7 +411,12 @@
               "¿Cuál es tu número de teléfono?",
               "número de teléfono",
               "correo electrónico"
-            ]
+            ],
+            "position": 17,
+            "taskType": "translation",
+            "evaluation": {
+              "type": "single_choice"
+            }
           },
           {
             "itemId": "english-a1-m001-practice-q18",
@@ -282,7 +426,12 @@
               "Mi correo electrónico es laura@example.com.",
               "correo electrónico",
               "fecha de nacimiento"
-            ]
+            ],
+            "position": 18,
+            "taskType": "translation",
+            "evaluation": {
+              "type": "single_choice"
+            }
           },
           {
             "itemId": "english-a1-m001-practice-q19",
@@ -292,7 +441,12 @@
               "¿Dónde vives?",
               "fecha de nacimiento",
               "Me llamo Laura."
-            ]
+            ],
+            "position": 19,
+            "taskType": "translation",
+            "evaluation": {
+              "type": "single_choice"
+            }
           },
           {
             "itemId": "english-a1-m001-practice-q20",
@@ -302,14 +456,23 @@
               "¿Cuándo es tu cumpleaños?",
               "Me llamo Laura.",
               "Tengo veinticuatro años."
-            ]
+            ],
+            "position": 20,
+            "taskType": "translation",
+            "evaluation": {
+              "type": "single_choice"
+            }
           }
         ]
-      },
-      {
-        "sectionId": "english-a1-m001-grammar",
-        "sectionKey": "grammar",
-        "title": "Grammar",
+      }
+    },
+    {
+      "sectionId": "english-a1-m001-grammar",
+      "sectionKey": "grammar",
+      "position": 3,
+      "exercise": {
+        "exerciseId": "english-a1-m001-grammar-exercise",
+        "type": "grammar",
         "items": [
           {
             "itemId": "english-a1-m001-grammar-q01",
@@ -319,7 +482,11 @@
               "am",
               "is",
               "are"
-            ]
+            ],
+            "position": 1,
+            "evaluation": {
+              "type": "single_choice"
+            }
           },
           {
             "itemId": "english-a1-m001-grammar-q02",
@@ -329,7 +496,11 @@
               "is",
               "am",
               "are"
-            ]
+            ],
+            "position": 2,
+            "evaluation": {
+              "type": "single_choice"
+            }
           },
           {
             "itemId": "english-a1-m001-grammar-q03",
@@ -339,7 +510,11 @@
               "Are",
               "Am",
               "Is"
-            ]
+            ],
+            "position": 3,
+            "evaluation": {
+              "type": "single_choice"
+            }
           },
           {
             "itemId": "english-a1-m001-grammar-q04",
@@ -349,7 +524,11 @@
               "is",
               "am",
               "are"
-            ]
+            ],
+            "position": 4,
+            "evaluation": {
+              "type": "single_choice"
+            }
           },
           {
             "itemId": "english-a1-m001-grammar-q05",
@@ -359,7 +538,11 @@
               "are",
               "is",
               "am"
-            ]
+            ],
+            "position": 5,
+            "evaluation": {
+              "type": "single_choice"
+            }
           },
           {
             "itemId": "english-a1-m001-grammar-q06",
@@ -369,7 +552,11 @@
               "is",
               "are",
               "am"
-            ]
+            ],
+            "position": 6,
+            "evaluation": {
+              "type": "single_choice"
+            }
           },
           {
             "itemId": "english-a1-m001-grammar-q07",
@@ -379,7 +566,11 @@
               "Are",
               "Is",
               "Am"
-            ]
+            ],
+            "position": 7,
+            "evaluation": {
+              "type": "single_choice"
+            }
           },
           {
             "itemId": "english-a1-m001-grammar-q08",
@@ -389,7 +580,11 @@
               "am",
               "is",
               "are"
-            ]
+            ],
+            "position": 8,
+            "evaluation": {
+              "type": "single_choice"
+            }
           },
           {
             "itemId": "english-a1-m001-grammar-q09",
@@ -399,7 +594,11 @@
               "is",
               "are",
               "am"
-            ]
+            ],
+            "position": 9,
+            "evaluation": {
+              "type": "single_choice"
+            }
           },
           {
             "itemId": "english-a1-m001-grammar-q10",
@@ -409,83 +608,133 @@
               "are",
               "is",
               "am"
-            ]
+            ],
+            "position": 10,
+            "evaluation": {
+              "type": "single_choice"
+            }
           }
         ]
-      },
-      {
-        "sectionId": "english-a1-m001-pronunciation",
-        "sectionKey": "pronunciation",
-        "title": "Pronunciation",
+      }
+    },
+    {
+      "sectionId": "english-a1-m001-pronunciation",
+      "sectionKey": "pronunciation",
+      "position": 4,
+      "exercise": {
+        "exerciseId": "english-a1-m001-pronunciation-exercise",
+        "type": "pronunciation_cards",
         "items": [
           {
             "itemId": "english-a1-m001-pronunciation-word01",
             "word": "name",
             "meaning": "nombre",
-            "cue": "neim"
+            "cue": "neim",
+            "position": 1,
+            "translation": "nombre",
+            "pronunciationGuide": "neim",
+            "audio": "tts:en-GB"
           },
           {
             "itemId": "english-a1-m001-pronunciation-word02",
             "word": "surname",
             "meaning": "apellido",
-            "cue": "ser-neim"
+            "cue": "ser-neim",
+            "position": 2,
+            "translation": "apellido",
+            "pronunciationGuide": "ser-neim",
+            "audio": "tts:en-GB"
           },
           {
             "itemId": "english-a1-m001-pronunciation-word03",
             "word": "age",
             "meaning": "edad",
-            "cue": "eidch"
+            "cue": "eidch",
+            "position": 3,
+            "translation": "edad",
+            "pronunciationGuide": "eidch",
+            "audio": "tts:en-GB"
           },
           {
             "itemId": "english-a1-m001-pronunciation-word04",
             "word": "address",
             "meaning": "dirección",
-            "cue": "a-dres"
+            "cue": "a-dres",
+            "position": 4,
+            "translation": "dirección",
+            "pronunciationGuide": "a-dres",
+            "audio": "tts:en-GB"
           },
           {
             "itemId": "english-a1-m001-pronunciation-word05",
             "word": "city",
             "meaning": "ciudad",
-            "cue": "si-ti"
+            "cue": "si-ti",
+            "position": 5,
+            "translation": "ciudad",
+            "pronunciationGuide": "si-ti",
+            "audio": "tts:en-GB"
           },
           {
             "itemId": "english-a1-m001-pronunciation-word06",
             "word": "country",
             "meaning": "país",
-            "cue": "kan-tri"
+            "cue": "kan-tri",
+            "position": 6,
+            "translation": "país",
+            "pronunciationGuide": "kan-tri",
+            "audio": "tts:en-GB"
           },
           {
             "itemId": "english-a1-m001-pronunciation-word07",
             "word": "nationality",
             "meaning": "nacionalidad",
-            "cue": "na-sha-na-li-ti"
+            "cue": "na-sha-na-li-ti",
+            "position": 7,
+            "translation": "nacionalidad",
+            "pronunciationGuide": "na-sha-na-li-ti",
+            "audio": "tts:en-GB"
           },
           {
             "itemId": "english-a1-m001-pronunciation-word08",
             "word": "phone number",
             "meaning": "número de teléfono",
-            "cue": "feun nam-ba"
+            "cue": "feun nam-ba",
+            "position": 8,
+            "translation": "número de teléfono",
+            "pronunciationGuide": "feun nam-ba",
+            "audio": "tts:en-GB"
           },
           {
             "itemId": "english-a1-m001-pronunciation-word09",
             "word": "email address",
             "meaning": "correo electrónico",
-            "cue": "i-meil a-dres"
+            "cue": "i-meil a-dres",
+            "position": 9,
+            "translation": "correo electrónico",
+            "pronunciationGuide": "i-meil a-dres",
+            "audio": "tts:en-GB"
           },
           {
             "itemId": "english-a1-m001-pronunciation-word10",
             "word": "date of birth",
             "meaning": "fecha de nacimiento",
-            "cue": "deit av berth"
+            "cue": "deit av berth",
+            "position": 10,
+            "translation": "fecha de nacimiento",
+            "pronunciationGuide": "deit av berth",
+            "audio": "tts:en-GB"
           }
         ]
-      },
-      {
-        "sectionId": "english-a1-m001-reading",
-        "sectionKey": "reading",
-        "title": "Reading",
-        "passageId": "english-a1-m001-reading-passage01",
-        "passage": "My name is Laura García. I am twenty-four years old. I am from Spain and I live in Madrid. My address is 14 Green Street. My phone number is 612 345 678. My email address is laura@example.com. My date of birth is 12 May.",
+      }
+    },
+    {
+      "sectionId": "english-a1-m001-reading",
+      "sectionKey": "reading",
+      "position": 5,
+      "exercise": {
+        "exerciseId": "english-a1-m001-reading-exercise",
+        "type": "reading_comprehension",
         "items": [
           {
             "itemId": "english-a1-m001-reading-q01",
@@ -495,7 +744,11 @@
               "Laura's personal details",
               "A school timetable",
               "A holiday in Spain"
-            ]
+            ],
+            "position": 1,
+            "evaluation": {
+              "type": "single_choice"
+            }
           },
           {
             "itemId": "english-a1-m001-reading-q02",
@@ -505,7 +758,11 @@
               "Twenty-four",
               "Twenty-eight",
               "Fourteen"
-            ]
+            ],
+            "position": 2,
+            "evaluation": {
+              "type": "single_choice"
+            }
           },
           {
             "itemId": "english-a1-m001-reading-q03",
@@ -515,7 +772,11 @@
               "Spain",
               "Italy",
               "The United Kingdom"
-            ]
+            ],
+            "position": 3,
+            "evaluation": {
+              "type": "single_choice"
+            }
           },
           {
             "itemId": "english-a1-m001-reading-q04",
@@ -525,7 +786,11 @@
               "Madrid",
               "Seville",
               "London"
-            ]
+            ],
+            "position": 4,
+            "evaluation": {
+              "type": "single_choice"
+            }
           },
           {
             "itemId": "english-a1-m001-reading-q05",
@@ -535,7 +800,11 @@
               "García",
               "Green",
               "Ruiz"
-            ]
+            ],
+            "position": 5,
+            "evaluation": {
+              "type": "single_choice"
+            }
           },
           {
             "itemId": "english-a1-m001-reading-q06",
@@ -545,7 +814,11 @@
               "14 Green Street",
               "12 May",
               "612 345 678"
-            ]
+            ],
+            "position": 6,
+            "evaluation": {
+              "type": "single_choice"
+            }
           },
           {
             "itemId": "english-a1-m001-reading-q07",
@@ -555,7 +828,11 @@
               "612 345 678",
               "612 345 876",
               "600 123 456"
-            ]
+            ],
+            "position": 7,
+            "evaluation": {
+              "type": "single_choice"
+            }
           },
           {
             "itemId": "english-a1-m001-reading-q08",
@@ -565,7 +842,11 @@
               "12 May",
               "3 March",
               "24 May"
-            ]
+            ],
+            "position": 8,
+            "evaluation": {
+              "type": "single_choice"
+            }
           },
           {
             "itemId": "english-a1-m001-reading-q09",
@@ -575,7 +856,11 @@
               "Laura lives in Madrid.",
               "Laura is twenty-eight.",
               "Laura is from France."
-            ]
+            ],
+            "position": 9,
+            "evaluation": {
+              "type": "single_choice"
+            }
           },
           {
             "itemId": "english-a1-m001-reading-q10",
@@ -585,192 +870,410 @@
               "To contact her by email",
               "To find her age",
               "To ask where she lives"
-            ]
+            ],
+            "position": 10,
+            "evaluation": {
+              "type": "single_choice"
+            }
           }
-        ]
-      },
-      {
-        "sectionId": "english-a1-m001-writing",
-        "sectionKey": "writing",
-        "title": "Writing · Dictation",
+        ],
+        "content": {
+          "passageId": "english-a1-m001-reading-passage01",
+          "passage": "My name is Laura García. I am twenty-four years old. I am from Spain and I live in Madrid. My address is 14 Green Street. My phone number is 612 345 678. My email address is laura@example.com. My date of birth is 12 May."
+        }
+      }
+    },
+    {
+      "sectionId": "english-a1-m001-writing",
+      "sectionKey": "writing",
+      "position": 6,
+      "exercise": {
+        "exerciseId": "english-a1-m001-writing-exercise",
+        "type": "dictation",
         "items": [
           {
             "itemId": "english-a1-m001-writing-dictation01",
             "target": "name",
-            "kind": "word"
+            "kind": "word",
+            "position": 1,
+            "audio": "tts:en-GB",
+            "expectedAnswer": "name",
+            "evaluation": {
+              "type": "normalised_text"
+            }
           },
           {
             "itemId": "english-a1-m001-writing-dictation02",
             "target": "surname",
-            "kind": "word"
+            "kind": "word",
+            "position": 2,
+            "audio": "tts:en-GB",
+            "expectedAnswer": "surname",
+            "evaluation": {
+              "type": "normalised_text"
+            }
           },
           {
             "itemId": "english-a1-m001-writing-dictation03",
             "target": "age",
-            "kind": "word"
+            "kind": "word",
+            "position": 3,
+            "audio": "tts:en-GB",
+            "expectedAnswer": "age",
+            "evaluation": {
+              "type": "normalised_text"
+            }
           },
           {
             "itemId": "english-a1-m001-writing-dictation04",
             "target": "address",
-            "kind": "word"
+            "kind": "word",
+            "position": 4,
+            "audio": "tts:en-GB",
+            "expectedAnswer": "address",
+            "evaluation": {
+              "type": "normalised_text"
+            }
           },
           {
             "itemId": "english-a1-m001-writing-dictation05",
             "target": "city",
-            "kind": "word"
+            "kind": "word",
+            "position": 5,
+            "audio": "tts:en-GB",
+            "expectedAnswer": "city",
+            "evaluation": {
+              "type": "normalised_text"
+            }
           },
           {
             "itemId": "english-a1-m001-writing-dictation06",
             "target": "country",
-            "kind": "word"
+            "kind": "word",
+            "position": 6,
+            "audio": "tts:en-GB",
+            "expectedAnswer": "country",
+            "evaluation": {
+              "type": "normalised_text"
+            }
           },
           {
             "itemId": "english-a1-m001-writing-dictation07",
             "target": "My name is Laura.",
-            "kind": "phrase"
+            "kind": "phrase",
+            "position": 7,
+            "audio": "tts:en-GB",
+            "expectedAnswer": "My name is Laura.",
+            "evaluation": {
+              "type": "normalised_text"
+            }
           },
           {
             "itemId": "english-a1-m001-writing-dictation08",
             "target": "I am twenty-four years old.",
-            "kind": "phrase"
+            "kind": "phrase",
+            "position": 8,
+            "audio": "tts:en-GB",
+            "expectedAnswer": "I am twenty-four years old.",
+            "evaluation": {
+              "type": "normalised_text"
+            }
           },
           {
             "itemId": "english-a1-m001-writing-dictation09",
             "target": "I am from Spain.",
-            "kind": "phrase"
+            "kind": "phrase",
+            "position": 9,
+            "audio": "tts:en-GB",
+            "expectedAnswer": "I am from Spain.",
+            "evaluation": {
+              "type": "normalised_text"
+            }
           },
           {
             "itemId": "english-a1-m001-writing-dictation10",
             "target": "I live in Madrid.",
-            "kind": "phrase"
+            "kind": "phrase",
+            "position": 10,
+            "audio": "tts:en-GB",
+            "expectedAnswer": "I live in Madrid.",
+            "evaluation": {
+              "type": "normalised_text"
+            }
           }
         ]
-      },
-      {
-        "sectionId": "english-a1-m001-speaking",
-        "sectionKey": "speaking",
-        "title": "Speaking",
+      }
+    },
+    {
+      "sectionId": "english-a1-m001-speaking",
+      "sectionKey": "speaking",
+      "position": 7,
+      "exercise": {
+        "exerciseId": "english-a1-m001-speaking-exercise",
+        "type": "speaking_prompts",
         "items": [
           {
             "itemId": "english-a1-m001-speaking-prompt01",
             "prompt": "Say your first name.",
             "model": "My name is Laura.",
-            "focus": "name"
+            "focus": "name",
+            "position": 1,
+            "modelAnswer": "My name is Laura.",
+            "evaluation": {
+              "type": "rubric",
+              "transcriptionSeparateFromPronunciation": true
+            }
           },
           {
             "itemId": "english-a1-m001-speaking-prompt02",
             "prompt": "Spell your surname.",
             "model": "My surname is García.",
-            "focus": "surname"
+            "focus": "surname",
+            "position": 2,
+            "modelAnswer": "My surname is García.",
+            "evaluation": {
+              "type": "rubric",
+              "transcriptionSeparateFromPronunciation": true
+            }
           },
           {
             "itemId": "english-a1-m001-speaking-prompt03",
             "prompt": "Say how old you are.",
             "model": "I am twenty-four years old.",
-            "focus": "age"
+            "focus": "age",
+            "position": 3,
+            "modelAnswer": "I am twenty-four years old.",
+            "evaluation": {
+              "type": "rubric",
+              "transcriptionSeparateFromPronunciation": true
+            }
           },
           {
             "itemId": "english-a1-m001-speaking-prompt04",
             "prompt": "Say where you are from.",
             "model": "I am from Spain.",
-            "focus": "country"
+            "focus": "country",
+            "position": 4,
+            "modelAnswer": "I am from Spain.",
+            "evaluation": {
+              "type": "rubric",
+              "transcriptionSeparateFromPronunciation": true
+            }
           },
           {
             "itemId": "english-a1-m001-speaking-prompt05",
             "prompt": "Say which city you live in.",
             "model": "I live in Madrid.",
-            "focus": "city"
+            "focus": "city",
+            "position": 5,
+            "modelAnswer": "I live in Madrid.",
+            "evaluation": {
+              "type": "rubric",
+              "transcriptionSeparateFromPronunciation": true
+            }
           },
           {
             "itemId": "english-a1-m001-speaking-prompt06",
             "prompt": "Give a fictional address.",
             "model": "My address is 14 Green Street.",
-            "focus": "address"
+            "focus": "address",
+            "position": 6,
+            "modelAnswer": "My address is 14 Green Street.",
+            "evaluation": {
+              "type": "rubric",
+              "transcriptionSeparateFromPronunciation": true
+            }
           },
           {
             "itemId": "english-a1-m001-speaking-prompt07",
             "prompt": "Say a fictional phone number.",
             "model": "My phone number is 612 345 678.",
-            "focus": "phone number"
+            "focus": "phone number",
+            "position": 7,
+            "modelAnswer": "My phone number is 612 345 678.",
+            "evaluation": {
+              "type": "rubric",
+              "transcriptionSeparateFromPronunciation": true
+            }
           },
           {
             "itemId": "english-a1-m001-speaking-prompt08",
             "prompt": "Give a fictional email address.",
             "model": "My email address is laura@example.com.",
-            "focus": "email address"
+            "focus": "email address",
+            "position": 8,
+            "modelAnswer": "My email address is laura@example.com.",
+            "evaluation": {
+              "type": "rubric",
+              "transcriptionSeparateFromPronunciation": true
+            }
           },
           {
             "itemId": "english-a1-m001-speaking-prompt09",
             "prompt": "Say your date of birth.",
             "model": "My date of birth is 12 May.",
-            "focus": "date of birth"
+            "focus": "date of birth",
+            "position": 9,
+            "modelAnswer": "My date of birth is 12 May.",
+            "evaluation": {
+              "type": "rubric",
+              "transcriptionSeparateFromPronunciation": true
+            }
           },
           {
             "itemId": "english-a1-m001-speaking-prompt10",
             "prompt": "Introduce yourself in three sentences.",
             "model": "My name is Laura. I am from Spain. I live in Madrid.",
-            "focus": "introduction"
+            "focus": "introduction",
+            "position": 10,
+            "modelAnswer": "My name is Laura. I am from Spain. I live in Madrid.",
+            "evaluation": {
+              "type": "rubric",
+              "transcriptionSeparateFromPronunciation": true
+            }
           }
         ]
-      },
-      {
-        "sectionId": "english-a1-m001-listening",
-        "sectionKey": "listening",
-        "title": "Listening",
-        "audioText": "Hello. My name is Daniel Ruiz. I am twenty-eight years old. I am Spanish. I live in Seville. My phone number is 600 123 456. My birthday is on 3 March.",
+      }
+    },
+    {
+      "sectionId": "english-a1-m001-listening",
+      "sectionKey": "listening",
+      "position": 8,
+      "exercise": {
+        "exerciseId": "english-a1-m001-listening-exercise",
+        "type": "listening_gap_fill",
         "items": [
           {
             "itemId": "english-a1-m001-listening-gap01",
             "prompt": "Hello. My name is ____ ____.",
-            "answer": "Daniel"
+            "answer": "Daniel",
+            "position": 1,
+            "gapToken": "[[gap-01]]",
+            "expectedWordId": "english-a1-m001-listening-word-01"
           },
           {
             "itemId": "english-a1-m001-listening-gap02",
             "prompt": "Hello. My name is Daniel ____.",
-            "answer": "Ruiz"
+            "answer": "Ruiz",
+            "position": 2,
+            "gapToken": "[[gap-02]]",
+            "expectedWordId": "english-a1-m001-listening-word-02"
           },
           {
             "itemId": "english-a1-m001-listening-gap03",
             "prompt": "I am ____ years old.",
-            "answer": "twenty-eight"
+            "answer": "twenty-eight",
+            "position": 3,
+            "gapToken": "[[gap-03]]",
+            "expectedWordId": "english-a1-m001-listening-word-03"
           },
           {
             "itemId": "english-a1-m001-listening-gap04",
             "prompt": "I am ____.",
-            "answer": "Spanish"
+            "answer": "Spanish",
+            "position": 4,
+            "gapToken": "[[gap-04]]",
+            "expectedWordId": "english-a1-m001-listening-word-04"
           },
           {
             "itemId": "english-a1-m001-listening-gap05",
             "prompt": "I ____ in Seville.",
-            "answer": "live"
+            "answer": "live",
+            "position": 5,
+            "gapToken": "[[gap-05]]",
+            "expectedWordId": "english-a1-m001-listening-word-05"
           },
           {
             "itemId": "english-a1-m001-listening-gap06",
             "prompt": "I live in ____.",
-            "answer": "Seville"
+            "answer": "Seville",
+            "position": 6,
+            "gapToken": "[[gap-06]]",
+            "expectedWordId": "english-a1-m001-listening-word-06"
           },
           {
             "itemId": "english-a1-m001-listening-gap07",
             "prompt": "My ____ number is 600 123 456.",
-            "answer": "phone"
+            "answer": "phone",
+            "position": 7,
+            "gapToken": "[[gap-07]]",
+            "expectedWordId": "english-a1-m001-listening-word-07"
           },
           {
             "itemId": "english-a1-m001-listening-gap08",
             "prompt": "My phone ____ is 600 123 456.",
-            "answer": "number"
+            "answer": "number",
+            "position": 8,
+            "gapToken": "[[gap-08]]",
+            "expectedWordId": "english-a1-m001-listening-word-08"
           },
           {
             "itemId": "english-a1-m001-listening-gap09",
             "prompt": "My ____ is on 3 March.",
-            "answer": "birthday"
+            "answer": "birthday",
+            "position": 9,
+            "gapToken": "[[gap-09]]",
+            "expectedWordId": "english-a1-m001-listening-word-09"
           },
           {
             "itemId": "english-a1-m001-listening-gap10",
             "prompt": "My birthday is on 3 ____.",
-            "answer": "March"
+            "answer": "March",
+            "position": 10,
+            "gapToken": "[[gap-10]]",
+            "expectedWordId": "english-a1-m001-listening-word-10"
           }
-        ]
+        ],
+        "content": {
+          "audio": "tts:en-GB",
+          "audioLocale": "en-GB",
+          "transcriptTemplate": "Hello. My name is ____ ____. Hello. My name is Daniel ____. I am ____ years old. I am ____. I ____ in Seville. I live in ____. My ____ number is 600 123 456. My phone ____ is 600 123 456. My ____ is on 3 March. My birthday is on 3 ____.",
+          "audioTranscript": "Hello. My name is Daniel Ruiz. I am twenty-eight years old. I am Spanish. I live in Seville. My phone number is 600 123 456. My birthday is on 3 March.",
+          "wordBank": [
+            {
+              "wordId": "english-a1-m001-listening-word-01",
+              "word": "Daniel"
+            },
+            {
+              "wordId": "english-a1-m001-listening-word-02",
+              "word": "Ruiz"
+            },
+            {
+              "wordId": "english-a1-m001-listening-word-03",
+              "word": "twenty-eight"
+            },
+            {
+              "wordId": "english-a1-m001-listening-word-04",
+              "word": "Spanish"
+            },
+            {
+              "wordId": "english-a1-m001-listening-word-05",
+              "word": "live"
+            },
+            {
+              "wordId": "english-a1-m001-listening-word-06",
+              "word": "Seville"
+            },
+            {
+              "wordId": "english-a1-m001-listening-word-07",
+              "word": "phone"
+            },
+            {
+              "wordId": "english-a1-m001-listening-word-08",
+              "word": "number"
+            },
+            {
+              "wordId": "english-a1-m001-listening-word-09",
+              "word": "birthday"
+            },
+            {
+              "wordId": "english-a1-m001-listening-word-10",
+              "word": "March"
+            }
+          ],
+          "interaction": "select_place_move_replace"
+        }
       }
-    ]
-  }
+    }
+  ]
 }
