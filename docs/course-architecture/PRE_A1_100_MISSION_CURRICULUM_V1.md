@@ -1,3 +1,5 @@
+> **DOCUMENTO SUPERADO — NO USAR COMO MAPA ACTUAL DE PRODUCCIÓN.** Tras auditar las 100 misiones heredadas, se decidió preservar la correspondencia de sus identificadores y reconstruir el mapa de acuerdo con el contenido real existente. El mapa vigente es [PRE_A1_100_MISSIONS_MASTER_PLAN_V1.md](./PRE_A1_100_MISSIONS_MASTER_PLAN_V1.md). Este documento se conserva únicamente como propuesta curricular histórica.
+
 # Pre-A1 — Inglés desde cero: mapa curricular de 100 misiones
 
 **Estado:** mapa curricular base para producción y revisión.  
