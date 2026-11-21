@@ -6,7 +6,7 @@ on:
       - work/linguafly-academy-audit
     paths:
       - "app/academia/a1/001-canonical/**"
-      - "app/academia/pre-a1/001/**"
+      - "app/academia/pre-a1/**"
       - "components/academy/CanonicalMission.tsx"
       - "app/api/auth/**"
       - "app/api/billing/**"
@@ -59,6 +59,7 @@ jobs:
         run: |
           npx --yes ajv-cli@5 validate --spec=draft2020 -s schemas/course-mission.schema.json -d content/canonical-missions/a1/001.json
           npx --yes ajv-cli@5 validate --spec=draft2020 -s schemas/course-mission.schema.json -d content/canonical-missions/pre-a1/001.json
+          npx --yes ajv-cli@5 validate --spec=draft2020 -s schemas/course-mission.schema.json -d content/canonical-missions/pre-a1/002.json
 
       - name: Type-check application
         run: npx tsc --noEmit
