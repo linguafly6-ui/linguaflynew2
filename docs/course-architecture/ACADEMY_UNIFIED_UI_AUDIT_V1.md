@@ -140,3 +140,44 @@ La siguiente iteración, tras validar el piloto, debe extraer los datos de misi�
 ### Verificación de estructura del piloto
 
 La misión A1 001 carga `public/missions/a1/a1-first-10-sections.js`. Ese runtime conserva Exploración y Práctica del HTML base y añade dinámicamente Gramática, Pronunciación, Reading, Writing, Speaking y Listening: en conjunto, aparecen las ocho secciones. La inspección del código confirma también una diferencia importante frente al estándar maestro: la Práctica heredada está configurada para 50 retos, no 20. La sección Reading inspeccionada usa tres consignas abiertas genéricas, no diez preguntas autocorregibles. Por tanto, el piloto permite revisar la coherencia visual de las ocho áreas, pero no certifica todavía la conformidad pedagógica de la misión. Estas diferencias deben resolverse con revisión del contenido antes de convertirla en plantilla de producción.
+
+
+## 10. Iteración funcional · renderer canónico A1 001
+
+La siguiente iteración sustituye el iframe en la ruta de revisión por un renderer React compartido y un archivo de contenido independiente:
+
+- Datos: `content/canonical-missions/a1/001.json`.
+- Renderer: `components/academy/CanonicalMission.tsx`.
+- Ruta: `app/academia/a1/001-canonical/page.tsx`.
+- El renderer consume el esquema JSON de la misión y genera la navegación de las ocho secciones a partir de los datos; no usa el HTML heredado como interfaz.
+- El HTML anterior, sus scripts y sus assets siguen intactos y disponibles para comparación y reversión.
+
+### Contenido migrado y recuentos comprobados
+
+| Sección | Contenido | Elementos |
+|---|---|---:|
+| Exploración | 10 parejas inglés-español + explicación de TO BE | 10 |
+| Practice | 10 términos + 10 frases/preguntas de traducción | 20 |
+| Grammar | 10 ejercicios de am/is/are | 10 |
+| Pronunciation | 10 palabras, traducción y guía aproximada | 10 |
+| Reading | Pasaje de Laura + preguntas de comprensión | 10 |
+| Writing | 6 palabras + 4 frases para dictado | 10 |
+| Speaking | 10 tareas con modelo de referencia | 10 |
+| Listening | Texto de Daniel + 10 huecos y banco de 10 palabras | 10 |
+
+Se ejecutó una comprobación estructural sobre el JSON: las ocho secciones tienen el número exacto de elementos, los IDs de cada sección son únicos, los ejercicios autocorregibles tienen respuesta y las preguntas de selección incluyen al menos tres opciones con la respuesta correcta. Esta comprobación se realizó sobre el contenido recuperado del repositorio; no equivale a ejecutar el validador formal ni a probar el renderer en navegador.
+
+### Estado funcional y limitaciones conocidas
+
+- Exploración permite emparejar cada palabra con su traducción mediante selector.
+- Practice, Grammar y Reading son preguntas autocorregibles con feedback.
+- Pronunciation y los dictados usan la síntesis de voz del navegador configurada en inglés británico (`en-GB`); la disponibilidad y calidad de voces dependen del dispositivo.
+- Listening presenta los diez huecos y un banco de palabras reutilizable; se puede retirar una palabra de un hueco y colocarla en otro antes de comprobar.
+- Speaking presenta diez prompts y modelos de referencia reproducibles. La grabación y el análisis automático de voz todavía no están conectados en este renderer.
+- El progreso y la puntuación son estado local de la sesión: no se guardan en cuenta, D1 ni `COURSE_DB`.
+- No se afirma que la síntesis de voz sea un audio humano grabado ni que el renderer evalúe fonética.
+- El contenido del nuevo JSON se ha adaptado a partir de la misión A1 001 y de su runtime; las nuevas diez preguntas de Grammar y parte de las actividades se han normalizado para cumplir el contrato de cantidades. Deben pasar revisión pedagógica antes de considerarse contenido de producción.
+
+### Pruebas pendientes antes de integrar
+
+No se ha ejecutado build, TypeScript, lint, pruebas unitarias, navegador, móvil, accesibilidad, micrófono ni despliegue Preview. La ruta continúa siendo de revisión y no está enlazada como ruta de curso en producción. No se han tocado bases de datos, bindings, configuración Cloudflare, blog ni la rama `main`.
