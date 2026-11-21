@@ -117,7 +117,7 @@ export default function CanonicalMission() {
           <p className="text-sm leading-6 text-slate-600">Escucha el pasaje completo y completa los diez huecos seleccionando palabras del banco. Puedes mover o sustituir palabras antes de comprobar.</p>
           <button onClick={() => speak(section.exercise.content?.audioTranscript ?? "")} className="mt-3 rounded-xl border border-slate-200 px-4 py-3 text-sm">▶ Escuchar audio completo</button>
           <div className="mt-5 rounded-xl border border-slate-200 bg-slate-50 p-5 text-base leading-10 text-slate-700">
-            {listeningTemplate.split(/(\\[\\[gap-(?:0[1-9]|10)\\]\\])/g).map((part, i) => {
+            {listeningTemplate.split(/(\[\[gap-(?:0[1-9]|10)\]\])/g).map((part, i) => {
               const gap = listeningItems.find((entry) => entry.gapToken === part);
               if (!gap) return <span key={`text-${i}`}>{part}</span>;
               const placed = listeningAnswers[gap.itemId];
