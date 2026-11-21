@@ -271,3 +271,16 @@ Estos cambios no migran datos ni activan cobros. El checkout sigue sujeto a las 
 - Añadir pruebas automatizadas de propiedad de datos, permisos, concurrencia e idempotencia.
 - Ejecutar typecheck/build/QA en un workflow que incluya explícitamente estas rutas de backend. El workflow de piloto actual no se activa con todos estos paths.
 
+## 13. Endurecimiento incremental de autenticación y repetición (rama de auditoría)
+
+Cambios aplicados en la rama de trabajo, sin despliegue ni migraciones:
+
+- Los endpoints `/api/repetition/add`, `/due` y `/review` exigen ahora una sesión de alumno válida. El identificador de propietario se deriva de la sesión (`student-<id>`), nunca del cuerpo o query string del cliente.
+- La lectura y actualización de una revisión se restringen conjuntamente por `item_id` y `user_id`; un alumno no puede modificar el elemento de otro aunque conozca su identificador.
+- Se validan longitudes de los campos de alta y el rango entero de la valoración SM-2 (0–5); el límite de consulta de repasos queda acotado a 1–50.
+- El cambio de contraseña invalida todas las sesiones del alumno y borra la cookie de la sesión actual. El usuario debe iniciar sesión de nuevo.
+- El workflow de CI ahora se activa también con cambios en APIs de autenticación, facturación y repetición, y en sus módulos de soporte.
+
+**Límite deliberado:** los endpoints de repetición siguen usando el binding `DB` porque el esquema y los consumidores existentes de `sr_items`/`sr_reviews` no se han migrado ni se ha confirmado su ubicación en `COURSE_DB`. No se ha cambiado el binding ni se ha ejecutado SQL. La consolidación de esos datos en `COURSE_DB` requiere inventario de tablas/consumidores, plan de copia verificable y autorización de migración.
+
+**Pendiente antes de producción:** idempotencia persistente de eventos Stripe; tratamiento completo de pagos fallidos, cancelaciones al fin de periodo, reembolsos y disputas; límites de intentos de login/registro; comprobación de origen/CSRF; pruebas automatizadas de aislamiento entre alumnos; verificación de que el webhook solo actualiza suscripciones asociadas a un cliente/alumno inequívoco; y ejecución de CI tras estos cambios. Este endurecimiento no equivale a certificar el sistema de suscripciones ni a autorizar un lanzamiento.
