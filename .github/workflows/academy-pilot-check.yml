@@ -1,0 +1,50 @@
+name: Academy pilot checks
+
+on:
+  push:
+    branches:
+      - work/linguafly-academy-audit
+    paths:
+      - "app/academia/a1/001-canonical/**"
+      - "components/academy/CanonicalMission.tsx"
+      - "content/canonical-missions/**"
+      - "schemas/course-mission.schema.json"
+      - "package.json"
+      - "package-lock.json"
+      - "tsconfig.json"
+      - ".github/workflows/academy-pilot-check.yml"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: academy-pilot-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  validate:
+    name: Validate content, types and production build
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+
+      - name: Install locked dependencies
+        run: npm ci
+
+      - name: Validate canonical mission JSON Schema
+        run: npx --yes ajv-cli@5 validate --spec=draft2020 -s schemas/course-mission.schema.json -d content/canonical-missions/a1/001.json
+
+      - name: Type-check application
+        run: npx tsc --noEmit
+
+      - name: Build Next.js application
+        run: npm run build
