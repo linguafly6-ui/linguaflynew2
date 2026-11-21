@@ -473,9 +473,9 @@
               "type": "single_choice"
             },
             "options": [
-              "adiós",
               "hola",
-              "hasta pronto"
+              "hasta pronto",
+              "adiós"
             ],
             "answer": "adiós"
           },
@@ -488,8 +488,8 @@
               "type": "single_choice"
             },
             "options": [
-              "por favor",
               "gracias",
+              "por favor",
               "de nada"
             ],
             "answer": "por favor"
@@ -503,8 +503,8 @@
               "type": "single_choice"
             },
             "options": [
-              "gracias",
               "por favor",
+              "gracias",
               "perdón"
             ],
             "answer": "gracias"
@@ -518,9 +518,9 @@
               "type": "single_choice"
             },
             "options": [
-              "sí",
               "no",
-              "quizás"
+              "quizás",
+              "sí"
             ],
             "answer": "sí"
           },
@@ -548,9 +548,9 @@
               "type": "single_choice"
             },
             "options": [
-              "nombre",
               "apellido",
-              "edad"
+              "edad",
+              "nombre"
             ],
             "answer": "nombre"
           },
@@ -563,8 +563,8 @@
               "type": "single_choice"
             },
             "options": [
-              "amigo",
               "profesor",
+              "amigo",
               "alumno"
             ],
             "answer": "amigo"
@@ -593,8 +593,8 @@
               "type": "single_choice"
             },
             "options": [
-              "alumno",
               "profesor",
+              "alumno",
               "amigo"
             ],
             "answer": "alumno"
@@ -623,9 +623,9 @@
               "type": "single_choice"
             },
             "options": [
-              "Buenos días.",
               "Buenas tardes.",
-              "Buenas noches."
+              "Buenas noches.",
+              "Buenos días."
             ],
             "answer": "Buenos días."
           },
@@ -638,8 +638,8 @@
               "type": "single_choice"
             },
             "options": [
-              "Buenas tardes.",
               "Buenos días.",
+              "Buenas tardes.",
               "Hasta pronto."
             ],
             "answer": "Buenas tardes."
@@ -668,9 +668,9 @@
               "type": "single_choice"
             },
             "options": [
-              "¡Adiós!",
               "¡Hola!",
-              "Por favor."
+              "Por favor.",
+              "¡Adiós!"
             ],
             "answer": "¡Adiós!"
           },
@@ -698,8 +698,8 @@
               "type": "single_choice"
             },
             "options": [
-              "Por favor, ayúdame.",
               "Muchas gracias.",
+              "Por favor, ayúdame.",
               "De nada."
             ],
             "answer": "Por favor, ayúdame."
@@ -713,9 +713,9 @@
               "type": "single_choice"
             },
             "options": [
-              "Muchas gracias.",
               "Por favor.",
-              "Lo siento."
+              "Lo siento.",
+              "Muchas gracias."
             ],
             "answer": "Muchas gracias."
           },
@@ -728,8 +728,8 @@
               "type": "single_choice"
             },
             "options": [
-              "De nada.",
               "Muchas gracias.",
+              "De nada.",
               "Por favor."
             ],
             "answer": "De nada."
@@ -782,8 +782,8 @@
               "type": "single_choice"
             },
             "options": [
-              "My",
               "I",
+              "My",
               "You"
             ],
             "answer": "My"
@@ -796,9 +796,9 @@
               "type": "single_choice"
             },
             "options": [
-              "am",
               "is",
-              "are"
+              "are",
+              "am"
             ],
             "answer": "am"
           },
@@ -811,8 +811,8 @@
             },
             "options": [
               "am",
-              "is",
-              "are"
+              "are",
+              "is"
             ],
             "answer": "are"
           },
@@ -824,8 +824,8 @@
               "type": "single_choice"
             },
             "options": [
-              "you",
               "your",
+              "you",
               "you're"
             ],
             "answer": "your"
@@ -838,9 +838,9 @@
               "type": "single_choice"
             },
             "options": [
-              "I'm",
               "you're",
-              "she's"
+              "she's",
+              "I'm"
             ],
             "answer": "I'm"
           },
@@ -866,8 +866,8 @@
               "type": "single_choice"
             },
             "options": [
-              "you",
               "your",
+              "you",
               "are"
             ],
             "answer": "you"
@@ -880,9 +880,9 @@
               "type": "single_choice"
             },
             "options": [
-              "help",
               "hello",
-              "name"
+              "name",
+              "help"
             ],
             "answer": "help"
           },
@@ -894,9 +894,9 @@
               "type": "single_choice"
             },
             "options": [
-              "meet",
               "name",
-              "morning"
+              "morning",
+              "meet"
             ],
             "answer": "meet"
           }
@@ -1014,9 +1014,9 @@
               "type": "single_choice"
             },
             "options": [
-              "Alex",
               "Ben",
-              "Mia"
+              "Mia",
+              "Alex"
             ],
             "answer": "Alex"
           },
@@ -1042,8 +1042,8 @@
               "type": "single_choice"
             },
             "options": [
-              "Ben",
               "Mia",
+              "Ben",
               "Alex"
             ],
             "answer": "Ben"
@@ -1056,9 +1056,9 @@
               "type": "single_choice"
             },
             "options": [
-              "A student",
               "A teacher",
-              "A doctor"
+              "A doctor",
+              "A student"
             ],
             "answer": "A student"
           },
@@ -1070,8 +1070,8 @@
               "type": "single_choice"
             },
             "options": [
-              "In the morning",
               "At night",
+              "In the morning",
               "In the afternoon"
             ],
             "answer": "In the morning"
@@ -1112,8 +1112,8 @@
               "type": "single_choice"
             },
             "options": [
-              "No, he is a student",
               "Yes, he is",
+              "No, he is a student",
               "The text doesn't say"
             ],
             "answer": "No, he is a student"
@@ -1126,9 +1126,9 @@
               "type": "single_choice"
             },
             "options": [
-              "The teacher",
               "The friend",
-              "The student"
+              "The student",
+              "The teacher"
             ],
             "answer": "The teacher"
           },
@@ -1140,9 +1140,9 @@
               "type": "single_choice"
             },
             "options": [
-              "Greetings and introductions",
               "Food and shopping",
-              "A family holiday"
+              "A family holiday",
+              "Greetings and introductions"
             ],
             "answer": "Greetings and introductions"
           }
