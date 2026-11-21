@@ -51,7 +51,6 @@ export default function CanonicalMissionFrame() {
         src="/missions/a1/001/index.html"
         onLoad={(event) => applyCanonicalStyles(event.currentTarget)}
         className="block min-h-[1500px] w-full bg-slate-50"
-        sandbox="allow-scripts allow-same-origin allow-forms"
       />
     </section>
   );
