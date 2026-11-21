@@ -34,9 +34,10 @@ export default function AcademyPreviewPage() {
             <p className="text-xs font-semibold uppercase tracking-[0.16em] text-blue-700">Linguafly Academy</p>
             <p className="mt-0.5 text-xs text-slate-500">Prototipo visual · No registra progreso real</p>
           </div>
-          <Link href="/academia" className="rounded-lg border border-slate-200 px-3 py-2 text-sm font-medium text-slate-600 transition hover:bg-slate-50">
-            Volver a la academia
-          </Link>
+          <div className="flex items-center gap-2">
+            <Link href="/academia/a1/001-canonical" className="rounded-lg bg-blue-600 px-3 py-2 text-sm font-medium text-white transition hover:bg-blue-700">Probar misión piloto</Link>
+            <Link href="/academia" className="rounded-lg border border-slate-200 px-3 py-2 text-sm font-medium text-slate-600 transition hover:bg-slate-50">Volver</Link>
+          </div>
         </div>
       </div>
 
