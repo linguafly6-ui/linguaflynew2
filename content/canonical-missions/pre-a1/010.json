@@ -1,9 +1,9 @@
 {
-  "schemaVersion": "1.2.0",
-  "contentVersion": 2,
+  "schemaVersion": 1,
+  "contentVersion": "2026-11-21-curriculum-alignment-v1",
   "course": {
     "courseId": "english-pre-a1",
-    "level": "PRE-A1",
+    "level": "Pre-A1",
     "language": "en-GB"
   },
   "unit": {
@@ -16,7 +16,7 @@
     "missionId": "english-pre-a1-m010",
     "unitId": "english-pre-a1-unit-01",
     "position": 10,
-    "title": "Daily Actions"
+    "title": "Nice to meet you"
   },
   "sections": [
     {
@@ -26,382 +26,624 @@
       "exercise": {
         "exerciseId": "english-pre-a1-m010-explore-ex01",
         "type": "vocabulary_pairs",
-        "theory": {
-          "title": "Rutinas: presente simple con todos los pronombres",
-          "explanation": "Primero aprende el presente simple con I, you, we y they: el verbo conserva su forma base. Después aprende he y she: normalmente añadimos -s o -es. Compara cada pronombre antes de pasar a las actividades.",
-          "tip": "I play, you play, we play, they play; pero he plays y she plays.",
-          "patterns": [
-            {
-              "label": "1. I / You / We / They + verbo base",
-              "pattern": "subject + base verb",
-              "examples": [
-                "I wake up at seven. — Me despierto a las siete.",
-                "You get up early. — Te levantas temprano.",
-                "We eat breakfast. — Desayunamos.",
-                "They study English. — Ellos estudian inglés."
-              ]
-            },
-            {
-              "label": "2. He / She + verbo con -s / -es",
-              "pattern": "he/she + verb-s or verb-es",
-              "examples": [
-                "He brushes his teeth. — Él se cepilla los dientes.",
-                "She gets up early. — Ella se levanta temprano.",
-                "He goes to school. — Él va al colegio.",
-                "She washes her face. — Ella se lava la cara."
-              ]
-            }
-          ]
-        },
         "items": [
           {
             "itemId": "english-pre-a1-m010-explore-ex01-i01",
             "position": 1,
-            "english": "wake up",
-            "spanish": "despertarse",
-            "audio": "tts:en-GB:wake up"
+            "english": "nice",
+            "spanish": "agradable",
+            "pronunciationGuide": "náis",
+            "audio": "tts:en-GB:nice",
+            "audioStatus": "synthetic_pending_review"
           },
           {
             "itemId": "english-pre-a1-m010-explore-ex01-i02",
             "position": 2,
-            "english": "get up",
-            "spanish": "levantarse",
-            "audio": "tts:en-GB:get up"
+            "english": "to",
+            "spanish": "a/para",
+            "pronunciationGuide": "tú",
+            "audio": "tts:en-GB:to",
+            "audioStatus": "synthetic_pending_review"
           },
           {
             "itemId": "english-pre-a1-m010-explore-ex01-i03",
             "position": 3,
-            "english": "wash",
-            "spanish": "lavarse",
-            "audio": "tts:en-GB:wash"
+            "english": "meet",
+            "spanish": "conocer",
+            "pronunciationGuide": "míit",
+            "audio": "tts:en-GB:meet",
+            "audioStatus": "synthetic_pending_review"
           },
           {
             "itemId": "english-pre-a1-m010-explore-ex01-i04",
             "position": 4,
-            "english": "brush",
-            "spanish": "cepillarse",
-            "audio": "tts:en-GB:brush"
+            "english": "you",
+            "spanish": "tú",
+            "pronunciationGuide": "iú",
+            "audio": "tts:en-GB:you",
+            "audioStatus": "synthetic_pending_review"
           },
           {
             "itemId": "english-pre-a1-m010-explore-ex01-i05",
             "position": 5,
-            "english": "eat",
-            "spanish": "comer",
-            "audio": "tts:en-GB:eat"
+            "english": "too",
+            "spanish": "también",
+            "pronunciationGuide": "tú",
+            "audio": "tts:en-GB:too",
+            "audioStatus": "synthetic_pending_review"
           },
           {
             "itemId": "english-pre-a1-m010-explore-ex01-i06",
             "position": 6,
-            "english": "drink",
-            "spanish": "beber",
-            "audio": "tts:en-GB:drink"
+            "english": "pleased",
+            "spanish": "encantado",
+            "pronunciationGuide": "plíizd",
+            "audio": "tts:en-GB:pleased",
+            "audioStatus": "synthetic_pending_review"
           },
           {
             "itemId": "english-pre-a1-m010-explore-ex01-i07",
             "position": 7,
-            "english": "go",
-            "spanish": "ir",
-            "audio": "tts:en-GB:go"
+            "english": "This is…",
+            "spanish": "Este/a es…",
+            "pronunciationGuide": "dhis iz",
+            "audio": "tts:en-GB:This is…",
+            "audioStatus": "synthetic_pending_review"
           },
           {
             "itemId": "english-pre-a1-m010-explore-ex01-i08",
             "position": 8,
-            "english": "study",
-            "spanish": "estudiar",
-            "audio": "tts:en-GB:study"
+            "english": "person",
+            "spanish": "persona",
+            "pronunciationGuide": "PÉR-son",
+            "audio": "tts:en-GB:person",
+            "audioStatus": "synthetic_pending_review"
           },
           {
             "itemId": "english-pre-a1-m010-explore-ex01-i09",
             "position": 9,
-            "english": "play",
-            "spanish": "jugar",
-            "audio": "tts:en-GB:play"
+            "english": "friend",
+            "spanish": "amigo",
+            "pronunciationGuide": "frend",
+            "audio": "tts:en-GB:friend",
+            "audioStatus": "synthetic_pending_review"
           },
           {
             "itemId": "english-pre-a1-m010-explore-ex01-i10",
             "position": 10,
-            "english": "sleep",
-            "spanish": "dormir",
-            "audio": "tts:en-GB:sleep"
+            "english": "student",
+            "spanish": "estudiante",
+            "pronunciationGuide": "STIÚ-dent",
+            "audio": "tts:en-GB:student",
+            "audioStatus": "synthetic_pending_review"
+          },
+          {
+            "itemId": "english-pre-a1-m010-explore-ex01-i11",
+            "position": 11,
+            "english": "teacher",
+            "spanish": "profesor",
+            "pronunciationGuide": "TÍ-cha",
+            "audio": "tts:en-GB:teacher",
+            "audioStatus": "synthetic_pending_review"
+          },
+          {
+            "itemId": "english-pre-a1-m010-explore-ex01-i12",
+            "position": 12,
+            "english": "boy",
+            "spanish": "niño",
+            "pronunciationGuide": "bói",
+            "audio": "tts:en-GB:boy",
+            "audioStatus": "synthetic_pending_review"
+          },
+          {
+            "itemId": "english-pre-a1-m010-explore-ex01-i13",
+            "position": 13,
+            "english": "girl",
+            "spanish": "niña",
+            "pronunciationGuide": "guérl",
+            "audio": "tts:en-GB:girl",
+            "audioStatus": "synthetic_pending_review"
+          },
+          {
+            "itemId": "english-pre-a1-m010-explore-ex01-i14",
+            "position": 14,
+            "english": "name",
+            "spanish": "nombre",
+            "pronunciationGuide": "NÉIM",
+            "audio": "tts:en-GB:name",
+            "audioStatus": "synthetic_pending_review"
+          },
+          {
+            "itemId": "english-pre-a1-m010-explore-ex01-i15",
+            "position": 15,
+            "english": "my",
+            "spanish": "mi",
+            "pronunciationGuide": "mái",
+            "audio": "tts:en-GB:my",
+            "audioStatus": "synthetic_pending_review"
+          },
+          {
+            "itemId": "english-pre-a1-m010-explore-ex01-i16",
+            "position": 16,
+            "english": "your",
+            "spanish": "tu",
+            "pronunciationGuide": "iór",
+            "audio": "tts:en-GB:your",
+            "audioStatus": "synthetic_pending_review"
+          },
+          {
+            "itemId": "english-pre-a1-m010-explore-ex01-i17",
+            "position": 17,
+            "english": "what",
+            "spanish": "qué",
+            "pronunciationGuide": "uót",
+            "audio": "tts:en-GB:what",
+            "audioStatus": "synthetic_pending_review"
+          },
+          {
+            "itemId": "english-pre-a1-m010-explore-ex01-i18",
+            "position": 18,
+            "english": "is",
+            "spanish": "es",
+            "pronunciationGuide": "iz",
+            "audio": "tts:en-GB:is",
+            "audioStatus": "synthetic_pending_review"
+          },
+          {
+            "itemId": "english-pre-a1-m010-explore-ex01-i19",
+            "position": 19,
+            "english": "I'm",
+            "spanish": "soy/estoy",
+            "pronunciationGuide": "áim",
+            "audio": "tts:en-GB:I'm",
+            "audioStatus": "synthetic_pending_review"
+          },
+          {
+            "itemId": "english-pre-a1-m010-explore-ex01-i20",
+            "position": 20,
+            "english": "you're",
+            "spanish": "eres/estás",
+            "pronunciationGuide": "ior",
+            "audio": "tts:en-GB:you're",
+            "audioStatus": "synthetic_pending_review"
           }
         ],
+        "theory": {
+          "title": "Nice to meet you",
+          "explanation": "Nice to meet you expresa el gusto de conocer a alguien. Nice to meet you too responde. Pleased to meet you es algo más formal. This is… presenta a una persona. La misión integra saludos, nombres, cortesía e I am/I'm y you are/you're.",
+          "tip": "Comprende todos los modelos de Explore antes de comenzar las actividades.",
+          "patterns": [
+            {
+              "label": "Bloque 1",
+              "pattern": "Nice to meet you",
+              "examples": [
+                "Nice to meet you."
+              ]
+            },
+            {
+              "label": "Bloque 2",
+              "pattern": "Nice to meet you expresa el gusto de conocer a alguien. Nice to meet you too responde. Pleased to meet you es algo más formal. This is… presenta a una persona. La misión integra saludos, nombres, cortesía e I am/I'm y you are/you're.",
+              "examples": [
+                "Nice to meet you too."
+              ]
+            },
+            {
+              "label": "Bloque 3",
+              "pattern": "Nice to meet you expresa el gusto de conocer a alguien. Nice to meet you too responde. Pleased to meet you es algo más formal. This is… presenta a una persona. La misión integra saludos, nombres, cortesía e I am/I'm y you are/you're.",
+              "examples": [
+                "Pleased to meet you."
+              ]
+            },
+            {
+              "label": "Bloque 4",
+              "pattern": "Nice to meet you expresa el gusto de conocer a alguien. Nice to meet you too responde. Pleased to meet you es algo más formal. This is… presenta a una persona. La misión integra saludos, nombres, cortesía e I am/I'm y you are/you're.",
+              "examples": [
+                "This is Ana."
+              ]
+            },
+            {
+              "label": "Bloque 5",
+              "pattern": "Nice to meet you expresa el gusto de conocer a alguien. Nice to meet you too responde. Pleased to meet you es algo más formal. This is… presenta a una persona. La misión integra saludos, nombres, cortesía e I am/I'm y you are/you're.",
+              "examples": [
+                "This is my friend."
+              ]
+            },
+            {
+              "label": "Bloque 6",
+              "pattern": "Nice to meet you expresa el gusto de conocer a alguien. Nice to meet you too responde. Pleased to meet you es algo más formal. This is… presenta a una persona. La misión integra saludos, nombres, cortesía e I am/I'm y you are/you're.",
+              "examples": [
+                "Hello! My name is Ana."
+              ]
+            },
+            {
+              "label": "Bloque 7",
+              "pattern": "Nice to meet you expresa el gusto de conocer a alguien. Nice to meet you too responde. Pleased to meet you es algo más formal. This is… presenta a una persona. La misión integra saludos, nombres, cortesía e I am/I'm y you are/you're.",
+              "examples": [
+                "What's your name?"
+              ]
+            },
+            {
+              "label": "Bloque 8",
+              "pattern": "Nice to meet you expresa el gusto de conocer a alguien. Nice to meet you too responde. Pleased to meet you es algo más formal. This is… presenta a una persona. La misión integra saludos, nombres, cortesía e I am/I'm y you are/you're.",
+              "examples": [
+                "I'm Alex."
+              ]
+            },
+            {
+              "label": "Bloque 9",
+              "pattern": "Nice to meet you expresa el gusto de conocer a alguien. Nice to meet you too responde. Pleased to meet you es algo más formal. This is… presenta a una persona. La misión integra saludos, nombres, cortesía e I am/I'm y you are/you're.",
+              "examples": [
+                "You're my friend."
+              ]
+            },
+            {
+              "label": "Bloque 10",
+              "pattern": "Nice to meet you expresa el gusto de conocer a alguien. Nice to meet you too responde. Pleased to meet you es algo más formal. This is… presenta a una persona. La misión integra saludos, nombres, cortesía e I am/I'm y you are/you're.",
+              "examples": [
+                "Goodbye!"
+              ]
+            }
+          ]
+        },
         "lesson": {
           "phrases": [
             {
-              "english": "I wake up at seven.",
-              "spanish": "Me despierto a las siete."
+              "english": "Nice to meet you.",
+              "spanish": "Nice to meet you.",
+              "note": "Modelo enseñado en Explore."
             },
             {
-              "english": "I get up in the morning.",
-              "spanish": "Me levanto por la mañana."
+              "english": "Nice to meet you too.",
+              "spanish": "Nice to meet you too.",
+              "note": "Modelo enseñado en Explore."
             },
             {
-              "english": "She gets up early.",
-              "spanish": "Ella se levanta temprano."
+              "english": "Pleased to meet you.",
+              "spanish": "Pleased to meet you.",
+              "note": "Modelo enseñado en Explore."
             },
             {
-              "english": "He brushes his teeth.",
-              "spanish": "Él se cepilla los dientes."
+              "english": "This is Ana.",
+              "spanish": "This is Ana.",
+              "note": "Modelo enseñado en Explore."
             },
             {
-              "english": "We eat breakfast.",
-              "spanish": "Desayunamos."
+              "english": "This is my friend.",
+              "spanish": "This is my friend.",
+              "note": "Modelo enseñado en Explore."
             },
             {
-              "english": "My brother drinks water.",
-              "spanish": "Mi hermano bebe agua."
+              "english": "Hello! My name is Ana.",
+              "spanish": "Hello! My name is Ana.",
+              "note": "Modelo enseñado en Explore."
             },
             {
-              "english": "She goes to school.",
-              "spanish": "Ella va al colegio."
+              "english": "What's your name?",
+              "spanish": "What's your name?",
+              "note": "Modelo enseñado en Explore."
             },
             {
-              "english": "He plays football.",
-              "spanish": "Él juega al fútbol."
+              "english": "I'm Alex.",
+              "spanish": "I'm Alex.",
+              "note": "Modelo enseñado en Explore."
             },
             {
-              "english": "I study English.",
-              "spanish": "Estudio inglés."
+              "english": "You're my friend.",
+              "spanish": "You're my friend.",
+              "note": "Modelo enseñado en Explore."
             },
             {
-              "english": "I sleep at nine.",
-              "spanish": "Me duermo a las nueve."
-            },
-            {
-              "english": "Then",
-              "spanish": "Después",
-              "note": "Then indica que una acción ocurre a continuación."
-            },
-            {
-              "english": "in the morning / in the afternoon",
-              "spanish": "por la mañana / por la tarde"
+              "english": "Goodbye!",
+              "spanish": "Goodbye!",
+              "note": "Modelo enseñado en Explore."
             }
           ],
           "grammar": [
             {
-              "english": "I wake up at seven.",
-              "spanish": "Me despierto a las siete.",
-              "note": "Con I usamos wake up."
+              "english": "Nice to meet you.",
+              "spanish": "Modelo de la misión",
+              "note": "Nice to meet you"
             },
             {
-              "english": "She gets up early.",
-              "spanish": "Ella se levanta temprano.",
-              "note": "Con she añadimos -s a gets."
+              "english": "Nice to meet you too.",
+              "spanish": "Modelo de la misión",
+              "note": "Nice to meet you expresa el gusto de conocer a alguien. Nice to meet you too responde. Pleased to meet you es algo más formal. This is… presenta a una persona. La misión integra saludos, nombres, cortesía e I am/I'm y you are/you're."
             },
             {
-              "english": "He brushes his teeth.",
-              "spanish": "Él se cepilla los dientes.",
-              "note": "Con he añadimos -es a brushes."
+              "english": "Pleased to meet you.",
+              "spanish": "Modelo de la misión",
+              "note": "Nice to meet you expresa el gusto de conocer a alguien. Nice to meet you too responde. Pleased to meet you es algo más formal. This is… presenta a una persona. La misión integra saludos, nombres, cortesía e I am/I'm y you are/you're."
             },
             {
-              "english": "We eat breakfast.",
-              "spanish": "Desayunamos.",
-              "note": "Con we usamos eat."
+              "english": "This is Ana.",
+              "spanish": "Modelo de la misión",
+              "note": "Nice to meet you expresa el gusto de conocer a alguien. Nice to meet you too responde. Pleased to meet you es algo más formal. This is… presenta a una persona. La misión integra saludos, nombres, cortesía e I am/I'm y you are/you're."
             },
             {
-              "english": "My brother drinks water.",
-              "spanish": "Mi hermano bebe agua.",
-              "note": "Con he/she/it añadimos -s a drinks."
+              "english": "This is my friend.",
+              "spanish": "Modelo de la misión",
+              "note": "Nice to meet you expresa el gusto de conocer a alguien. Nice to meet you too responde. Pleased to meet you es algo más formal. This is… presenta a una persona. La misión integra saludos, nombres, cortesía e I am/I'm y you are/you're."
             },
             {
-              "english": "She goes to school.",
-              "spanish": "Ella va al colegio.",
-              "note": "Go cambia a goes con she."
+              "english": "Hello! My name is Ana.",
+              "spanish": "Modelo de la misión",
+              "note": "Nice to meet you expresa el gusto de conocer a alguien. Nice to meet you too responde. Pleased to meet you es algo más formal. This is… presenta a una persona. La misión integra saludos, nombres, cortesía e I am/I'm y you are/you're."
             },
             {
-              "english": "I study English.",
-              "spanish": "Estudio inglés.",
-              "note": "Con I usamos study."
+              "english": "What's your name?",
+              "spanish": "Modelo de la misión",
+              "note": "Nice to meet you expresa el gusto de conocer a alguien. Nice to meet you too responde. Pleased to meet you es algo más formal. This is… presenta a una persona. La misión integra saludos, nombres, cortesía e I am/I'm y you are/you're."
             },
             {
-              "english": "He plays football.",
-              "spanish": "Él juega al fútbol.",
-              "note": "Con he usamos plays."
+              "english": "I'm Alex.",
+              "spanish": "Modelo de la misión",
+              "note": "Nice to meet you expresa el gusto de conocer a alguien. Nice to meet you too responde. Pleased to meet you es algo más formal. This is… presenta a una persona. La misión integra saludos, nombres, cortesía e I am/I'm y you are/you're."
             },
             {
-              "english": "I sleep at nine.",
-              "spanish": "Me duermo a las nueve."
+              "english": "You're my friend.",
+              "spanish": "Modelo de la misión",
+              "note": "Nice to meet you expresa el gusto de conocer a alguien. Nice to meet you too responde. Pleased to meet you es algo más formal. This is… presenta a una persona. La misión integra saludos, nombres, cortesía e I am/I'm y you are/you're."
             },
             {
-              "english": "She washes her face.",
-              "spanish": "Ella se lava la cara.",
-              "note": "Wash añade -es: washes."
+              "english": "Goodbye!",
+              "spanish": "Modelo de la misión",
+              "note": "Nice to meet you expresa el gusto de conocer a alguien. Nice to meet you too responde. Pleased to meet you es algo más formal. This is… presenta a una persona. La misión integra saludos, nombres, cortesía e I am/I'm y you are/you're."
             }
           ],
           "reading": [
             {
-              "english": "I wake up at seven in the morning.",
-              "spanish": "Me despierto a las siete de la mañana."
-            },
-            {
-              "english": "I get up and wash my face.",
-              "spanish": "Me levanto y me lavo la cara."
-            },
-            {
-              "english": "Then I brush my teeth and eat breakfast.",
-              "spanish": "Después me cepillo los dientes y desayuno."
-            },
-            {
-              "english": "I drink water and go to school.",
-              "spanish": "Bebo agua y voy al colegio."
-            },
-            {
-              "english": "In the afternoon, I study and play with my friends.",
-              "spanish": "Por la tarde, estudio y juego con mis amigos."
-            },
-            {
-              "english": "I eat dinner at seven.",
-              "spanish": "Ceno a las siete."
-            },
-            {
-              "english": "I sleep at nine.",
-              "spanish": "Me duermo a las nueve."
+              "english": "Hello! My name is Lucy. This is Tom. Nice to meet you. Nice to meet you too. Goodbye!",
+              "spanish": "Texto completo presentado arriba."
             }
           ],
           "writing": [
             {
-              "english": "I wake up at seven.",
-              "spanish": "Me despierto a las siete."
+              "english": "Nice to meet you.",
+              "spanish": "Nice to meet you.",
+              "note": "Modelo enseñado en Explore."
             },
             {
-              "english": "I get up in the morning.",
-              "spanish": "Me levanto por la mañana."
+              "english": "Nice to meet you too.",
+              "spanish": "Nice to meet you too.",
+              "note": "Modelo enseñado en Explore."
             },
             {
-              "english": "I wash my face.",
-              "spanish": "Me lavo la cara."
+              "english": "Pleased to meet you.",
+              "spanish": "Pleased to meet you.",
+              "note": "Modelo enseñado en Explore."
             },
             {
-              "english": "I brush my teeth.",
-              "spanish": "Me cepillo los dientes."
+              "english": "This is Ana.",
+              "spanish": "This is Ana.",
+              "note": "Modelo enseñado en Explore."
             },
             {
-              "english": "I eat breakfast.",
-              "spanish": "Desayuno."
+              "english": "This is my friend.",
+              "spanish": "This is my friend.",
+              "note": "Modelo enseñado en Explore."
             },
             {
-              "english": "I drink water.",
-              "spanish": "Bebo agua."
+              "english": "Hello! My name is Ana.",
+              "spanish": "Hello! My name is Ana.",
+              "note": "Modelo enseñado en Explore."
             },
             {
-              "english": "I go to school.",
-              "spanish": "Voy al colegio."
+              "english": "What's your name?",
+              "spanish": "What's your name?",
+              "note": "Modelo enseñado en Explore."
             },
             {
-              "english": "I study English.",
-              "spanish": "Estudio inglés."
+              "english": "I'm Alex.",
+              "spanish": "I'm Alex.",
+              "note": "Modelo enseñado en Explore."
             },
             {
-              "english": "I play with my friends.",
-              "spanish": "Juego con mis amigos."
+              "english": "You're my friend.",
+              "spanish": "You're my friend.",
+              "note": "Modelo enseñado en Explore."
             },
             {
-              "english": "I sleep at nine.",
-              "spanish": "Me duermo a las nueve."
+              "english": "Goodbye!",
+              "spanish": "Goodbye!",
+              "note": "Modelo enseñado en Explore."
             }
           ],
           "speaking": [
             {
-              "english": "I wake up at seven.",
-              "spanish": "Me despierto a las siete.",
-              "prompt": "Say a short sentence using wake up.",
-              "promptSpanish": "Di una frase corta usando wake up (despertarse)."
+              "english": "Nice to meet you.",
+              "spanish": "Nice to meet you.",
+              "note": "Modelo enseñado en Explore.",
+              "prompt": "Practica esta expresión.",
+              "promptSpanish": "Di la expresión en voz alta."
             },
             {
-              "english": "I get up at seven.",
-              "spanish": "Me levanto a las siete.",
-              "prompt": "Say a short sentence using get up.",
-              "promptSpanish": "Di una frase corta usando get up (levantarse)."
+              "english": "Nice to meet you too.",
+              "spanish": "Nice to meet you too.",
+              "note": "Modelo enseñado en Explore.",
+              "prompt": "Practica esta expresión.",
+              "promptSpanish": "Di la expresión en voz alta."
             },
             {
-              "english": "I wash my face.",
-              "spanish": "Me lavo la cara.",
-              "prompt": "Say a short sentence using wash.",
-              "promptSpanish": "Di una frase corta usando wash (lavarse)."
+              "english": "Pleased to meet you.",
+              "spanish": "Pleased to meet you.",
+              "note": "Modelo enseñado en Explore.",
+              "prompt": "Practica esta expresión.",
+              "promptSpanish": "Di la expresión en voz alta."
             },
             {
-              "english": "I brush my teeth.",
-              "spanish": "Me cepillo los dientes.",
-              "prompt": "Say a short sentence using brush.",
-              "promptSpanish": "Di una frase corta usando brush (cepillarse)."
+              "english": "This is Ana.",
+              "spanish": "This is Ana.",
+              "note": "Modelo enseñado en Explore.",
+              "prompt": "Practica esta expresión.",
+              "promptSpanish": "Di la expresión en voz alta."
             },
             {
-              "english": "I eat breakfast.",
-              "spanish": "Desayuno.",
-              "prompt": "Say a short sentence using eat.",
-              "promptSpanish": "Di una frase corta usando eat (comer)."
+              "english": "This is my friend.",
+              "spanish": "This is my friend.",
+              "note": "Modelo enseñado en Explore.",
+              "prompt": "Practica esta expresión.",
+              "promptSpanish": "Di la expresión en voz alta."
             },
             {
-              "english": "I drink water.",
-              "spanish": "Bebo agua.",
-              "prompt": "Say a short sentence using drink.",
-              "promptSpanish": "Di una frase corta usando drink (beber)."
+              "english": "Hello! My name is Ana.",
+              "spanish": "Hello! My name is Ana.",
+              "note": "Modelo enseñado en Explore.",
+              "prompt": "Practica esta expresión.",
+              "promptSpanish": "Di la expresión en voz alta."
             },
             {
-              "english": "I go to school.",
-              "spanish": "Voy al colegio.",
-              "prompt": "Say a short sentence using go.",
-              "promptSpanish": "Di una frase corta usando go (ir)."
+              "english": "What's your name?",
+              "spanish": "What's your name?",
+              "note": "Modelo enseñado en Explore.",
+              "prompt": "Practica esta expresión.",
+              "promptSpanish": "Di la expresión en voz alta."
             },
             {
-              "english": "I study English.",
-              "spanish": "Estudio inglés.",
-              "prompt": "Say a short sentence using study.",
-              "promptSpanish": "Di una frase corta usando study (estudiar)."
+              "english": "I'm Alex.",
+              "spanish": "I'm Alex.",
+              "note": "Modelo enseñado en Explore.",
+              "prompt": "Practica esta expresión.",
+              "promptSpanish": "Di la expresión en voz alta."
             },
             {
-              "english": "I play football.",
-              "spanish": "Juego al fútbol.",
-              "prompt": "Say a short sentence using play.",
-              "promptSpanish": "Di una frase corta usando play (jugar)."
+              "english": "You're my friend.",
+              "spanish": "You're my friend.",
+              "note": "Modelo enseñado en Explore.",
+              "prompt": "Practica esta expresión.",
+              "promptSpanish": "Di la expresión en voz alta."
             },
             {
-              "english": "I sleep at nine.",
-              "spanish": "Me duermo a las nueve.",
-              "prompt": "Say a short sentence using sleep.",
-              "promptSpanish": "Di una frase corta usando sleep (dormir)."
+              "english": "Goodbye!",
+              "spanish": "Goodbye!",
+              "note": "Modelo enseñado en Explore.",
+              "prompt": "Practica esta expresión.",
+              "promptSpanish": "Di la expresión en voz alta."
             }
           ],
           "listening": [
             {
-              "english": "I wake up at seven.",
-              "spanish": "Me despierto a las siete."
+              "english": "Nice to meet you.",
+              "spanish": "Nice to meet you.",
+              "note": "Modelo enseñado en Explore."
             },
             {
-              "english": "I get up and leave my bed.",
-              "spanish": "Me levanto y salgo de la cama."
+              "english": "Nice to meet you too.",
+              "spanish": "Nice to meet you too.",
+              "note": "Modelo enseñado en Explore."
             },
             {
-              "english": "I wash my face.",
-              "spanish": "Me lavo la cara."
+              "english": "Pleased to meet you.",
+              "spanish": "Pleased to meet you.",
+              "note": "Modelo enseñado en Explore."
             },
             {
-              "english": "I brush my teeth.",
-              "spanish": "Me cepillo los dientes."
+              "english": "This is Ana.",
+              "spanish": "This is Ana.",
+              "note": "Modelo enseñado en Explore."
             },
             {
-              "english": "I eat breakfast.",
-              "spanish": "Desayuno."
+              "english": "This is my friend.",
+              "spanish": "This is my friend.",
+              "note": "Modelo enseñado en Explore."
             },
             {
-              "english": "I drink water.",
-              "spanish": "Bebo agua."
+              "english": "Hello! My name is Ana.",
+              "spanish": "Hello! My name is Ana.",
+              "note": "Modelo enseñado en Explore."
             },
             {
-              "english": "I go to school.",
-              "spanish": "Voy al colegio."
+              "english": "What's your name?",
+              "spanish": "What's your name?",
+              "note": "Modelo enseñado en Explore."
             },
             {
-              "english": "I study English.",
-              "spanish": "Estudio inglés."
+              "english": "I'm Alex.",
+              "spanish": "I'm Alex.",
+              "note": "Modelo enseñado en Explore."
             },
             {
-              "english": "I play football with friends.",
-              "spanish": "Juego al fútbol con mis amigos."
+              "english": "You're my friend.",
+              "spanish": "You're my friend.",
+              "note": "Modelo enseñado en Explore."
             },
             {
-              "english": "I sleep at night.",
-              "spanish": "Duermo por la noche."
+              "english": "Goodbye!",
+              "spanish": "Goodbye!",
+              "note": "Modelo enseñado en Explore."
+            }
+          ]
+        },
+        "content": {
+          "blocks": [
+            {
+              "position": 1,
+              "title": "Bloque 1",
+              "content": "Nice to meet you",
+              "example": "Nice to meet you.",
+              "translation": "Consulta la traducción y la guía de pronunciación de cada elemento."
+            },
+            {
+              "position": 2,
+              "title": "Bloque 2",
+              "content": "Nice to meet you expresa el gusto de conocer a alguien. Nice to meet you too responde. Pleased to meet you es algo más formal. This is… presenta a una persona. La misión integra saludos, nombres, cortesía e I am/I'm y you are/you're.",
+              "example": "Nice to meet you too.",
+              "translation": "Consulta la traducción y la guía de pronunciación de cada elemento."
+            },
+            {
+              "position": 3,
+              "title": "Bloque 3",
+              "content": "Nice to meet you expresa el gusto de conocer a alguien. Nice to meet you too responde. Pleased to meet you es algo más formal. This is… presenta a una persona. La misión integra saludos, nombres, cortesía e I am/I'm y you are/you're.",
+              "example": "Pleased to meet you.",
+              "translation": "Consulta la traducción y la guía de pronunciación de cada elemento."
+            },
+            {
+              "position": 4,
+              "title": "Bloque 4",
+              "content": "Nice to meet you expresa el gusto de conocer a alguien. Nice to meet you too responde. Pleased to meet you es algo más formal. This is… presenta a una persona. La misión integra saludos, nombres, cortesía e I am/I'm y you are/you're.",
+              "example": "This is Ana.",
+              "translation": "Consulta la traducción y la guía de pronunciación de cada elemento."
+            },
+            {
+              "position": 5,
+              "title": "Bloque 5",
+              "content": "Nice to meet you expresa el gusto de conocer a alguien. Nice to meet you too responde. Pleased to meet you es algo más formal. This is… presenta a una persona. La misión integra saludos, nombres, cortesía e I am/I'm y you are/you're.",
+              "example": "This is my friend.",
+              "translation": "Consulta la traducción y la guía de pronunciación de cada elemento."
+            },
+            {
+              "position": 6,
+              "title": "Bloque 6",
+              "content": "Nice to meet you expresa el gusto de conocer a alguien. Nice to meet you too responde. Pleased to meet you es algo más formal. This is… presenta a una persona. La misión integra saludos, nombres, cortesía e I am/I'm y you are/you're.",
+              "example": "Hello! My name is Ana.",
+              "translation": "Consulta la traducción y la guía de pronunciación de cada elemento."
+            },
+            {
+              "position": 7,
+              "title": "Bloque 7",
+              "content": "Nice to meet you expresa el gusto de conocer a alguien. Nice to meet you too responde. Pleased to meet you es algo más formal. This is… presenta a una persona. La misión integra saludos, nombres, cortesía e I am/I'm y you are/you're.",
+              "example": "What's your name?",
+              "translation": "Consulta la traducción y la guía de pronunciación de cada elemento."
+            },
+            {
+              "position": 8,
+              "title": "Bloque 8",
+              "content": "Nice to meet you expresa el gusto de conocer a alguien. Nice to meet you too responde. Pleased to meet you es algo más formal. This is… presenta a una persona. La misión integra saludos, nombres, cortesía e I am/I'm y you are/you're.",
+              "example": "I'm Alex.",
+              "translation": "Consulta la traducción y la guía de pronunciación de cada elemento."
+            },
+            {
+              "position": 9,
+              "title": "Bloque 9",
+              "content": "Nice to meet you expresa el gusto de conocer a alguien. Nice to meet you too responde. Pleased to meet you es algo más formal. This is… presenta a una persona. La misión integra saludos, nombres, cortesía e I am/I'm y you are/you're.",
+              "example": "You're my friend.",
+              "translation": "Consulta la traducción y la guía de pronunciación de cada elemento."
+            },
+            {
+              "position": 10,
+              "title": "Bloque 10",
+              "content": "Nice to meet you expresa el gusto de conocer a alguien. Nice to meet you too responde. Pleased to meet you es algo más formal. This is… presenta a una persona. La misión integra saludos, nombres, cortesía e I am/I'm y you are/you're.",
+              "example": "Goodbye!",
+              "translation": "Consulta la traducción y la guía de pronunciación de cada elemento."
             }
           ]
         }
@@ -418,302 +660,142 @@
           {
             "itemId": "english-pre-a1-m010-practice-ex01-i01",
             "position": 1,
-            "taskType": "vocabulary_translation",
-            "prompt": "Choose the Spanish meaning of “wake up”.",
+            "prompt": "Elige la traducción de “nice”.",
             "evaluation": {
               "type": "single_choice"
             },
             "options": [
-              "cepillarse",
-              "ir",
-              "despertarse"
+              "a/para",
+              "agradable",
+              "conocer"
             ],
-            "answer": "despertarse"
+            "answer": "agradable"
           },
           {
             "itemId": "english-pre-a1-m010-practice-ex01-i02",
             "position": 2,
-            "taskType": "vocabulary_translation",
-            "prompt": "Choose the Spanish meaning of “get up”.",
+            "prompt": "Elige la traducción de “to”.",
             "evaluation": {
               "type": "single_choice"
             },
             "options": [
-              "levantarse",
-              "comer",
-              "estudiar"
+              "tú",
+              "conocer",
+              "a/para"
             ],
-            "answer": "levantarse"
+            "answer": "a/para"
           },
           {
             "itemId": "english-pre-a1-m010-practice-ex01-i03",
             "position": 3,
-            "taskType": "vocabulary_translation",
-            "prompt": "Choose the Spanish meaning of “wash”.",
+            "prompt": "Elige la traducción de “meet”.",
             "evaluation": {
               "type": "single_choice"
             },
             "options": [
-              "beber",
-              "lavarse",
-              "jugar"
+              "conocer",
+              "tú",
+              "también"
             ],
-            "answer": "lavarse"
+            "answer": "conocer"
           },
           {
             "itemId": "english-pre-a1-m010-practice-ex01-i04",
             "position": 4,
-            "taskType": "vocabulary_translation",
-            "prompt": "Choose the Spanish meaning of “brush”.",
+            "prompt": "Elige la traducción de “you”.",
             "evaluation": {
               "type": "single_choice"
             },
             "options": [
-              "cepillarse",
-              "ir",
-              "dormir"
+              "también",
+              "tú",
+              "encantado"
             ],
-            "answer": "cepillarse"
+            "answer": "tú"
           },
           {
             "itemId": "english-pre-a1-m010-practice-ex01-i05",
             "position": 5,
-            "taskType": "vocabulary_translation",
-            "prompt": "Choose the Spanish meaning of “eat”.",
+            "prompt": "Elige la traducción de “too”.",
             "evaluation": {
               "type": "single_choice"
             },
             "options": [
-              "estudiar",
-              "comer",
-              "despertarse"
+              "Este/a es…",
+              "encantado",
+              "también"
             ],
-            "answer": "comer"
+            "answer": "también"
           },
           {
             "itemId": "english-pre-a1-m010-practice-ex01-i06",
             "position": 6,
-            "taskType": "vocabulary_translation",
-            "prompt": "Choose the Spanish meaning of “drink”.",
+            "prompt": "Elige la traducción de “pleased”.",
             "evaluation": {
               "type": "single_choice"
             },
             "options": [
-              "jugar",
-              "levantarse",
-              "beber"
+              "encantado",
+              "Este/a es…",
+              "persona"
             ],
-            "answer": "beber"
+            "answer": "encantado"
           },
           {
             "itemId": "english-pre-a1-m010-practice-ex01-i07",
             "position": 7,
-            "taskType": "vocabulary_translation",
-            "prompt": "Choose the Spanish meaning of “go”.",
+            "prompt": "Elige la traducción de “This is…”.",
             "evaluation": {
               "type": "single_choice"
             },
             "options": [
-              "dormir",
-              "ir",
-              "lavarse"
+              "persona",
+              "Este/a es…",
+              "amigo"
             ],
-            "answer": "ir"
+            "answer": "Este/a es…"
           },
           {
             "itemId": "english-pre-a1-m010-practice-ex01-i08",
             "position": 8,
-            "taskType": "vocabulary_translation",
-            "prompt": "Choose the Spanish meaning of “study”.",
+            "prompt": "Elige la traducción de “person”.",
             "evaluation": {
               "type": "single_choice"
             },
             "options": [
-              "despertarse",
-              "cepillarse",
-              "estudiar"
+              "estudiante",
+              "amigo",
+              "persona"
             ],
-            "answer": "estudiar"
+            "answer": "persona"
           },
           {
             "itemId": "english-pre-a1-m010-practice-ex01-i09",
             "position": 9,
-            "taskType": "vocabulary_translation",
-            "prompt": "Choose the Spanish meaning of “play”.",
+            "prompt": "Elige la traducción de “friend”.",
             "evaluation": {
               "type": "single_choice"
             },
             "options": [
-              "jugar",
-              "levantarse",
-              "comer"
+              "amigo",
+              "estudiante",
+              "profesor"
             ],
-            "answer": "jugar"
+            "answer": "amigo"
           },
           {
             "itemId": "english-pre-a1-m010-practice-ex01-i10",
             "position": 10,
-            "taskType": "vocabulary_translation",
-            "prompt": "Choose the Spanish meaning of “sleep”.",
+            "prompt": "Elige la traducción de “student”.",
             "evaluation": {
               "type": "single_choice"
             },
             "options": [
-              "lavarse",
-              "dormir",
-              "beber"
+              "profesor",
+              "estudiante",
+              "niño"
             ],
-            "answer": "dormir"
-          },
-          {
-            "itemId": "english-pre-a1-m010-practice-ex01-i11",
-            "position": 11,
-            "taskType": "topic_vocabulary",
-            "prompt": "Which English word means “despertarse”?",
-            "evaluation": {
-              "type": "single_choice"
-            },
-            "options": [
-              "wake up",
-              "wash",
-              "drink"
-            ],
-            "answer": "wake up"
-          },
-          {
-            "itemId": "english-pre-a1-m010-practice-ex01-i12",
-            "position": 12,
-            "taskType": "topic_vocabulary",
-            "prompt": "Choose the word for “levantarse”?",
-            "evaluation": {
-              "type": "single_choice"
-            },
-            "options": [
-              "brush",
-              "go",
-              "get up"
-            ],
-            "answer": "get up"
-          },
-          {
-            "itemId": "english-pre-a1-m010-practice-ex01-i13",
-            "position": 13,
-            "taskType": "topic_vocabulary",
-            "prompt": "Select the English word for “lavarse”?",
-            "evaluation": {
-              "type": "single_choice"
-            },
-            "options": [
-              "wash",
-              "eat",
-              "study"
-            ],
-            "answer": "wash"
-          },
-          {
-            "itemId": "english-pre-a1-m010-practice-ex01-i14",
-            "position": 14,
-            "taskType": "topic_vocabulary",
-            "prompt": "What is the English word for “cepillarse”?",
-            "evaluation": {
-              "type": "single_choice"
-            },
-            "options": [
-              "drink",
-              "play",
-              "brush"
-            ],
-            "answer": "brush"
-          },
-          {
-            "itemId": "english-pre-a1-m010-practice-ex01-i15",
-            "position": 15,
-            "taskType": "topic_vocabulary",
-            "prompt": "Find the word that means “comer”?",
-            "evaluation": {
-              "type": "single_choice"
-            },
-            "options": [
-              "go",
-              "eat",
-              "sleep"
-            ],
-            "answer": "eat"
-          },
-          {
-            "itemId": "english-pre-a1-m010-practice-ex01-i16",
-            "position": 16,
-            "taskType": "topic_vocabulary",
-            "prompt": "Which word matches “beber”?",
-            "evaluation": {
-              "type": "single_choice"
-            },
-            "options": [
-              "study",
-              "wake up",
-              "drink"
-            ],
-            "answer": "drink"
-          },
-          {
-            "itemId": "english-pre-a1-m010-practice-ex01-i17",
-            "position": 17,
-            "taskType": "topic_vocabulary",
-            "prompt": "Choose the translation for “ir”?",
-            "evaluation": {
-              "type": "single_choice"
-            },
-            "options": [
-              "play",
-              "go",
-              "get up"
-            ],
-            "answer": "go"
-          },
-          {
-            "itemId": "english-pre-a1-m010-practice-ex01-i18",
-            "position": 18,
-            "taskType": "topic_vocabulary",
-            "prompt": "Select the matching word for “estudiar”?",
-            "evaluation": {
-              "type": "single_choice"
-            },
-            "options": [
-              "study",
-              "sleep",
-              "wash"
-            ],
-            "answer": "study"
-          },
-          {
-            "itemId": "english-pre-a1-m010-practice-ex01-i19",
-            "position": 19,
-            "taskType": "topic_vocabulary",
-            "prompt": "What word means “jugar”?",
-            "evaluation": {
-              "type": "single_choice"
-            },
-            "options": [
-              "play",
-              "wake up",
-              "brush"
-            ],
-            "answer": "play"
-          },
-          {
-            "itemId": "english-pre-a1-m010-practice-ex01-i20",
-            "position": 20,
-            "taskType": "topic_vocabulary",
-            "prompt": "Find the English word for “dormir”?",
-            "evaluation": {
-              "type": "single_choice"
-            },
-            "options": [
-              "get up",
-              "eat",
-              "sleep"
-            ],
-            "answer": "sleep"
+            "answer": "estudiante"
           }
         ]
       }
@@ -725,146 +807,223 @@
       "exercise": {
         "exerciseId": "english-pre-a1-m010-grammar-ex01",
         "type": "grammar",
+        "theory": {
+          "title": "Nice to meet you",
+          "explanation": "Nice to meet you expresa el gusto de conocer a alguien. Nice to meet you too responde. Pleased to meet you es algo más formal. This is… presenta a una persona. La misión integra saludos, nombres, cortesía e I am/I'm y you are/you're.",
+          "tip": "Comprende todos los modelos de Explore antes de comenzar las actividades.",
+          "patterns": [
+            {
+              "label": "Bloque 1",
+              "pattern": "Nice to meet you",
+              "examples": [
+                "Nice to meet you."
+              ]
+            },
+            {
+              "label": "Bloque 2",
+              "pattern": "Nice to meet you expresa el gusto de conocer a alguien. Nice to meet you too responde. Pleased to meet you es algo más formal. This is… presenta a una persona. La misión integra saludos, nombres, cortesía e I am/I'm y you are/you're.",
+              "examples": [
+                "Nice to meet you too."
+              ]
+            },
+            {
+              "label": "Bloque 3",
+              "pattern": "Nice to meet you expresa el gusto de conocer a alguien. Nice to meet you too responde. Pleased to meet you es algo más formal. This is… presenta a una persona. La misión integra saludos, nombres, cortesía e I am/I'm y you are/you're.",
+              "examples": [
+                "Pleased to meet you."
+              ]
+            },
+            {
+              "label": "Bloque 4",
+              "pattern": "Nice to meet you expresa el gusto de conocer a alguien. Nice to meet you too responde. Pleased to meet you es algo más formal. This is… presenta a una persona. La misión integra saludos, nombres, cortesía e I am/I'm y you are/you're.",
+              "examples": [
+                "This is Ana."
+              ]
+            },
+            {
+              "label": "Bloque 5",
+              "pattern": "Nice to meet you expresa el gusto de conocer a alguien. Nice to meet you too responde. Pleased to meet you es algo más formal. This is… presenta a una persona. La misión integra saludos, nombres, cortesía e I am/I'm y you are/you're.",
+              "examples": [
+                "This is my friend."
+              ]
+            },
+            {
+              "label": "Bloque 6",
+              "pattern": "Nice to meet you expresa el gusto de conocer a alguien. Nice to meet you too responde. Pleased to meet you es algo más formal. This is… presenta a una persona. La misión integra saludos, nombres, cortesía e I am/I'm y you are/you're.",
+              "examples": [
+                "Hello! My name is Ana."
+              ]
+            },
+            {
+              "label": "Bloque 7",
+              "pattern": "Nice to meet you expresa el gusto de conocer a alguien. Nice to meet you too responde. Pleased to meet you es algo más formal. This is… presenta a una persona. La misión integra saludos, nombres, cortesía e I am/I'm y you are/you're.",
+              "examples": [
+                "What's your name?"
+              ]
+            },
+            {
+              "label": "Bloque 8",
+              "pattern": "Nice to meet you expresa el gusto de conocer a alguien. Nice to meet you too responde. Pleased to meet you es algo más formal. This is… presenta a una persona. La misión integra saludos, nombres, cortesía e I am/I'm y you are/you're.",
+              "examples": [
+                "I'm Alex."
+              ]
+            },
+            {
+              "label": "Bloque 9",
+              "pattern": "Nice to meet you expresa el gusto de conocer a alguien. Nice to meet you too responde. Pleased to meet you es algo más formal. This is… presenta a una persona. La misión integra saludos, nombres, cortesía e I am/I'm y you are/you're.",
+              "examples": [
+                "You're my friend."
+              ]
+            },
+            {
+              "label": "Bloque 10",
+              "pattern": "Nice to meet you expresa el gusto de conocer a alguien. Nice to meet you too responde. Pleased to meet you es algo más formal. This is… presenta a una persona. La misión integra saludos, nombres, cortesía e I am/I'm y you are/you're.",
+              "examples": [
+                "Goodbye!"
+              ]
+            }
+          ]
+        },
         "items": [
           {
             "itemId": "english-pre-a1-m010-grammar-ex01-i01",
             "position": 1,
-            "prompt": "Choose the correct word or phrase: I ___ at seven.",
+            "prompt": "Reconoce el modelo trabajado: Nice to meet you.",
             "evaluation": {
               "type": "single_choice"
             },
             "options": [
-              "wakes up",
-              "wake up",
-              "waking up"
+              "Nice to meet you too.",
+              "Nice to meet you.",
+              "Pleased to meet you."
             ],
-            "answer": "wake up"
-          },
-          {
-            "itemId": "english-pre-a1-m010-grammar-ex01-i04",
-            "position": 4,
-            "prompt": "Choose the correct word or phrase: We ___ breakfast.",
-            "evaluation": {
-              "type": "single_choice"
-            },
-            "options": [
-              "eat",
-              "eats",
-              "eating"
-            ],
-            "answer": "eat"
-          },
-          {
-            "itemId": "english-pre-a1-m010-grammar-ex01-i07",
-            "position": 7,
-            "prompt": "Choose the correct word or phrase: I ___ English.",
-            "evaluation": {
-              "type": "single_choice"
-            },
-            "options": [
-              "studies",
-              "studying",
-              "study"
-            ],
-            "answer": "study"
-          },
-          {
-            "itemId": "english-pre-a1-m010-grammar-ex01-i09",
-            "position": 9,
-            "prompt": "Choose the correct word or phrase: I ___ at nine.",
-            "evaluation": {
-              "type": "single_choice"
-            },
-            "options": [
-              "sleeps",
-              "sleep",
-              "sleeping"
-            ],
-            "answer": "sleep"
+            "answer": "Nice to meet you."
           },
           {
             "itemId": "english-pre-a1-m010-grammar-ex01-i02",
             "position": 2,
-            "prompt": "Choose the correct word or phrase: She ___ early.",
+            "prompt": "Reconoce el modelo trabajado: Nice to meet you too.",
             "evaluation": {
               "type": "single_choice"
             },
             "options": [
-              "get up",
-              "getting up",
-              "gets up"
+              "This is Ana.",
+              "Pleased to meet you.",
+              "Nice to meet you too."
             ],
-            "answer": "gets up"
+            "answer": "Nice to meet you too."
           },
           {
             "itemId": "english-pre-a1-m010-grammar-ex01-i03",
             "position": 3,
-            "prompt": "Choose the correct word or phrase: He ___ his teeth.",
+            "prompt": "Reconoce el modelo trabajado: Pleased to meet you.",
             "evaluation": {
               "type": "single_choice"
             },
             "options": [
-              "brushes",
-              "brush",
-              "brushing"
+              "Pleased to meet you.",
+              "This is Ana.",
+              "This is my friend."
             ],
-            "answer": "brushes"
+            "answer": "Pleased to meet you."
+          },
+          {
+            "itemId": "english-pre-a1-m010-grammar-ex01-i04",
+            "position": 4,
+            "prompt": "Reconoce el modelo trabajado: This is Ana.",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "This is my friend.",
+              "This is Ana.",
+              "Hello! My name is Ana."
+            ],
+            "answer": "This is Ana."
           },
           {
             "itemId": "english-pre-a1-m010-grammar-ex01-i05",
             "position": 5,
-            "prompt": "Choose the correct word or phrase: My brother ___ water.",
+            "prompt": "Reconoce el modelo trabajado: This is my friend.",
             "evaluation": {
               "type": "single_choice"
             },
             "options": [
-              "drink",
-              "drinks",
-              "drinking"
+              "What's your name?",
+              "Hello! My name is Ana.",
+              "This is my friend."
             ],
-            "answer": "drinks"
+            "answer": "This is my friend."
           },
           {
             "itemId": "english-pre-a1-m010-grammar-ex01-i06",
             "position": 6,
-            "prompt": "Choose the correct word or phrase: She ___ to school.",
+            "prompt": "Reconoce el modelo trabajado: Hello! My name is Ana.",
             "evaluation": {
               "type": "single_choice"
             },
             "options": [
-              "go",
-              "going",
-              "goes"
+              "Hello! My name is Ana.",
+              "What's your name?",
+              "I'm Alex."
             ],
-            "answer": "goes"
+            "answer": "Hello! My name is Ana."
+          },
+          {
+            "itemId": "english-pre-a1-m010-grammar-ex01-i07",
+            "position": 7,
+            "prompt": "Reconoce el modelo trabajado: What's your name?",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "I'm Alex.",
+              "What's your name?",
+              "You're my friend."
+            ],
+            "answer": "What's your name?"
           },
           {
             "itemId": "english-pre-a1-m010-grammar-ex01-i08",
             "position": 8,
-            "prompt": "Choose the correct word or phrase: He ___ football.",
+            "prompt": "Reconoce el modelo trabajado: I'm Alex.",
             "evaluation": {
               "type": "single_choice"
             },
             "options": [
-              "plays",
-              "play",
-              "playing"
+              "Goodbye!",
+              "You're my friend.",
+              "I'm Alex."
             ],
-            "answer": "plays"
+            "answer": "I'm Alex."
+          },
+          {
+            "itemId": "english-pre-a1-m010-grammar-ex01-i09",
+            "position": 9,
+            "prompt": "Reconoce el modelo trabajado: You're my friend.",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "You're my friend.",
+              "Goodbye!",
+              "Nice to meet you."
+            ],
+            "answer": "You're my friend."
           },
           {
             "itemId": "english-pre-a1-m010-grammar-ex01-i10",
             "position": 10,
-            "prompt": "Choose the correct word or phrase: She ___ her face.",
+            "prompt": "Reconoce el modelo trabajado: Goodbye!",
             "evaluation": {
               "type": "single_choice"
             },
             "options": [
-              "wash",
-              "washing",
-              "washes"
+              "Nice to meet you.",
+              "Goodbye!",
+              "Nice to meet you too."
             ],
-            "answer": "washes"
+            "answer": "Goodbye!"
           }
         ]
       }
@@ -880,82 +1039,182 @@
           {
             "itemId": "english-pre-a1-m010-pronunciation-ex01-i01",
             "position": 1,
-            "word": "wake up",
-            "translation": "despertarse",
-            "pronunciationGuide": "uéik ap",
-            "audio": "tts:en-GB:wake up"
+            "word": "nice",
+            "translation": "agradable",
+            "pronunciationGuide": "náis",
+            "audio": "tts:en-GB:nice",
+            "audioStatus": "synthetic_pending_review",
+            "guideType": "approximate_spanish"
           },
           {
             "itemId": "english-pre-a1-m010-pronunciation-ex01-i02",
             "position": 2,
-            "word": "get up",
-            "translation": "levantarse",
-            "pronunciationGuide": "get ap",
-            "audio": "tts:en-GB:get up"
+            "word": "to",
+            "translation": "a/para",
+            "pronunciationGuide": "tú",
+            "audio": "tts:en-GB:to",
+            "audioStatus": "synthetic_pending_review",
+            "guideType": "approximate_spanish"
           },
           {
             "itemId": "english-pre-a1-m010-pronunciation-ex01-i03",
             "position": 3,
-            "word": "wash",
-            "translation": "lavarse",
-            "pronunciationGuide": "uósh",
-            "audio": "tts:en-GB:wash"
+            "word": "meet",
+            "translation": "conocer",
+            "pronunciationGuide": "míit",
+            "audio": "tts:en-GB:meet",
+            "audioStatus": "synthetic_pending_review",
+            "guideType": "approximate_spanish"
           },
           {
             "itemId": "english-pre-a1-m010-pronunciation-ex01-i04",
             "position": 4,
-            "word": "brush",
-            "translation": "cepillarse",
-            "pronunciationGuide": "brásh",
-            "audio": "tts:en-GB:brush"
+            "word": "you",
+            "translation": "tú",
+            "pronunciationGuide": "iú",
+            "audio": "tts:en-GB:you",
+            "audioStatus": "synthetic_pending_review",
+            "guideType": "approximate_spanish"
           },
           {
             "itemId": "english-pre-a1-m010-pronunciation-ex01-i05",
             "position": 5,
-            "word": "eat",
-            "translation": "comer",
-            "pronunciationGuide": "íit",
-            "audio": "tts:en-GB:eat"
+            "word": "too",
+            "translation": "también",
+            "pronunciationGuide": "tú",
+            "audio": "tts:en-GB:too",
+            "audioStatus": "synthetic_pending_review",
+            "guideType": "approximate_spanish"
           },
           {
             "itemId": "english-pre-a1-m010-pronunciation-ex01-i06",
             "position": 6,
-            "word": "drink",
-            "translation": "beber",
-            "pronunciationGuide": "drink",
-            "audio": "tts:en-GB:drink"
+            "word": "pleased",
+            "translation": "encantado",
+            "pronunciationGuide": "plíizd",
+            "audio": "tts:en-GB:pleased",
+            "audioStatus": "synthetic_pending_review",
+            "guideType": "approximate_spanish"
           },
           {
             "itemId": "english-pre-a1-m010-pronunciation-ex01-i07",
             "position": 7,
-            "word": "go",
-            "translation": "ir",
-            "pronunciationGuide": "góu",
-            "audio": "tts:en-GB:go"
+            "word": "This is…",
+            "translation": "Este/a es…",
+            "pronunciationGuide": "dhis iz",
+            "audio": "tts:en-GB:This is…",
+            "audioStatus": "synthetic_pending_review",
+            "guideType": "approximate_spanish"
           },
           {
             "itemId": "english-pre-a1-m010-pronunciation-ex01-i08",
             "position": 8,
-            "word": "study",
-            "translation": "estudiar",
-            "pronunciationGuide": "stá-di",
-            "audio": "tts:en-GB:study"
+            "word": "person",
+            "translation": "persona",
+            "pronunciationGuide": "PÉR-son",
+            "audio": "tts:en-GB:person",
+            "audioStatus": "synthetic_pending_review",
+            "guideType": "approximate_spanish"
           },
           {
             "itemId": "english-pre-a1-m010-pronunciation-ex01-i09",
             "position": 9,
-            "word": "play",
-            "translation": "jugar",
-            "pronunciationGuide": "pléi",
-            "audio": "tts:en-GB:play"
+            "word": "friend",
+            "translation": "amigo",
+            "pronunciationGuide": "frend",
+            "audio": "tts:en-GB:friend",
+            "audioStatus": "synthetic_pending_review",
+            "guideType": "approximate_spanish"
           },
           {
             "itemId": "english-pre-a1-m010-pronunciation-ex01-i10",
             "position": 10,
-            "word": "sleep",
-            "translation": "dormir",
-            "pronunciationGuide": "slíip",
-            "audio": "tts:en-GB:sleep"
+            "word": "student",
+            "translation": "estudiante",
+            "pronunciationGuide": "STIÚ-dent",
+            "audio": "tts:en-GB:student",
+            "audioStatus": "synthetic_pending_review",
+            "guideType": "approximate_spanish"
+          },
+          {
+            "itemId": "english-pre-a1-m010-pronunciation-ex01-i11",
+            "position": 11,
+            "word": "teacher",
+            "translation": "profesor",
+            "pronunciationGuide": "TÍ-cha",
+            "audio": "tts:en-GB:teacher",
+            "audioStatus": "synthetic_pending_review",
+            "guideType": "approximate_spanish"
+          },
+          {
+            "itemId": "english-pre-a1-m010-pronunciation-ex01-i12",
+            "position": 12,
+            "word": "boy",
+            "translation": "niño",
+            "pronunciationGuide": "bói",
+            "audio": "tts:en-GB:boy",
+            "audioStatus": "synthetic_pending_review",
+            "guideType": "approximate_spanish"
+          },
+          {
+            "itemId": "english-pre-a1-m010-pronunciation-ex01-i13",
+            "position": 13,
+            "word": "girl",
+            "translation": "niña",
+            "pronunciationGuide": "guérl",
+            "audio": "tts:en-GB:girl",
+            "audioStatus": "synthetic_pending_review",
+            "guideType": "approximate_spanish"
+          },
+          {
+            "itemId": "english-pre-a1-m010-pronunciation-ex01-i14",
+            "position": 14,
+            "word": "name",
+            "translation": "nombre",
+            "pronunciationGuide": "NÉIM",
+            "audio": "tts:en-GB:name",
+            "audioStatus": "synthetic_pending_review",
+            "guideType": "approximate_spanish"
+          },
+          {
+            "itemId": "english-pre-a1-m010-pronunciation-ex01-i15",
+            "position": 15,
+            "word": "my",
+            "translation": "mi",
+            "pronunciationGuide": "mái",
+            "audio": "tts:en-GB:my",
+            "audioStatus": "synthetic_pending_review",
+            "guideType": "approximate_spanish"
+          },
+          {
+            "itemId": "english-pre-a1-m010-pronunciation-ex01-i16",
+            "position": 16,
+            "word": "your",
+            "translation": "tu",
+            "pronunciationGuide": "iór",
+            "audio": "tts:en-GB:your",
+            "audioStatus": "synthetic_pending_review",
+            "guideType": "approximate_spanish"
+          },
+          {
+            "itemId": "english-pre-a1-m010-pronunciation-ex01-i17",
+            "position": 17,
+            "word": "what",
+            "translation": "qué",
+            "pronunciationGuide": "uót",
+            "audio": "tts:en-GB:what",
+            "audioStatus": "synthetic_pending_review",
+            "guideType": "approximate_spanish"
+          },
+          {
+            "itemId": "english-pre-a1-m010-pronunciation-ex01-i18",
+            "position": 18,
+            "word": "is",
+            "translation": "es",
+            "pronunciationGuide": "iz",
+            "audio": "tts:en-GB:is",
+            "audioStatus": "synthetic_pending_review",
+            "guideType": "approximate_spanish"
           }
         ]
       }
@@ -969,148 +1228,251 @@
         "type": "reading_comprehension",
         "content": {
           "passageId": "english-pre-a1-m010-reading-passage-01",
-          "passage": "I wake up at seven in the morning. I get up and wash my face. Then I brush my teeth and eat breakfast. I drink water and go to school. In the afternoon, I study and play with my friends. I eat dinner at seven. I sleep at nine."
+          "passage": "Hello! My name is Lucy. This is Tom. Nice to meet you. Nice to meet you too. Goodbye!",
+          "translation": "Traducción del texto: Hello! My name is Lucy. This is Tom. Nice to meet you. Nice to meet you too. Goodbye!",
+          "vocabulary": [
+            {
+              "word": "nice",
+              "translation": "agradable",
+              "pronunciationGuide": "náis"
+            },
+            {
+              "word": "to",
+              "translation": "a/para",
+              "pronunciationGuide": "tú"
+            },
+            {
+              "word": "meet",
+              "translation": "conocer",
+              "pronunciationGuide": "míit"
+            },
+            {
+              "word": "you",
+              "translation": "tú",
+              "pronunciationGuide": "iú"
+            },
+            {
+              "word": "too",
+              "translation": "también",
+              "pronunciationGuide": "tú"
+            },
+            {
+              "word": "pleased",
+              "translation": "encantado",
+              "pronunciationGuide": "plíizd"
+            },
+            {
+              "word": "This is…",
+              "translation": "Este/a es…",
+              "pronunciationGuide": "dhis iz"
+            },
+            {
+              "word": "person",
+              "translation": "persona",
+              "pronunciationGuide": "PÉR-son"
+            },
+            {
+              "word": "friend",
+              "translation": "amigo",
+              "pronunciationGuide": "frend"
+            },
+            {
+              "word": "student",
+              "translation": "estudiante",
+              "pronunciationGuide": "STIÚ-dent"
+            },
+            {
+              "word": "teacher",
+              "translation": "profesor",
+              "pronunciationGuide": "TÍ-cha"
+            },
+            {
+              "word": "boy",
+              "translation": "niño",
+              "pronunciationGuide": "bói"
+            },
+            {
+              "word": "girl",
+              "translation": "niña",
+              "pronunciationGuide": "guérl"
+            },
+            {
+              "word": "name",
+              "translation": "nombre",
+              "pronunciationGuide": "NÉIM"
+            },
+            {
+              "word": "my",
+              "translation": "mi",
+              "pronunciationGuide": "mái"
+            },
+            {
+              "word": "your",
+              "translation": "tu",
+              "pronunciationGuide": "iór"
+            },
+            {
+              "word": "what",
+              "translation": "qué",
+              "pronunciationGuide": "uót"
+            },
+            {
+              "word": "is",
+              "translation": "es",
+              "pronunciationGuide": "iz"
+            },
+            {
+              "word": "I'm",
+              "translation": "soy/estoy",
+              "pronunciationGuide": "áim"
+            },
+            {
+              "word": "you're",
+              "translation": "eres/estás",
+              "pronunciationGuide": "ior"
+            }
+          ]
         },
         "items": [
           {
             "itemId": "english-pre-a1-m010-reading-ex01-i01",
             "position": 1,
-            "prompt": "When does the writer wake up?",
+            "prompt": "¿Qué tema presenta el texto?",
             "evaluation": {
               "type": "single_choice"
             },
             "options": [
-              "At seven",
-              "At six",
-              "At nine"
+              "agradable",
+              "Nice to meet you",
+              "a/para"
             ],
-            "answer": "At seven"
+            "answer": "Nice to meet you"
           },
           {
             "itemId": "english-pre-a1-m010-reading-ex01-i02",
             "position": 2,
-            "prompt": "What does the writer wash?",
+            "prompt": "¿Qué significa “to” en el texto?",
             "evaluation": {
               "type": "single_choice"
             },
             "options": [
-              "Their hands only",
-              "Their face",
-              "Their hair"
+              "tú",
+              "conocer",
+              "a/para"
             ],
-            "answer": "Their face"
+            "answer": "a/para"
           },
           {
             "itemId": "english-pre-a1-m010-reading-ex01-i03",
             "position": 3,
-            "prompt": "What does the writer brush?",
+            "prompt": "¿Qué significa “meet” en el texto?",
             "evaluation": {
               "type": "single_choice"
             },
             "options": [
-              "Their shoes",
-              "Their hair",
-              "Their teeth"
+              "conocer",
+              "tú",
+              "también"
             ],
-            "answer": "Their teeth"
+            "answer": "conocer"
           },
           {
             "itemId": "english-pre-a1-m010-reading-ex01-i04",
             "position": 4,
-            "prompt": "What does the writer eat after brushing?",
+            "prompt": "¿Qué significa “you” en el texto?",
             "evaluation": {
               "type": "single_choice"
             },
             "options": [
-              "Lunch",
-              "Dinner",
-              "Breakfast"
+              "también",
+              "tú",
+              "encantado"
             ],
-            "answer": "Breakfast"
+            "answer": "tú"
           },
           {
             "itemId": "english-pre-a1-m010-reading-ex01-i05",
             "position": 5,
-            "prompt": "What does the writer drink?",
+            "prompt": "¿Qué significa “too” en el texto?",
             "evaluation": {
               "type": "single_choice"
             },
             "options": [
-              "Water",
-              "Milk",
-              "Juice"
+              "Este/a es…",
+              "encantado",
+              "también"
             ],
-            "answer": "Water"
+            "answer": "también"
           },
           {
             "itemId": "english-pre-a1-m010-reading-ex01-i06",
             "position": 6,
-            "prompt": "Where does the writer go?",
+            "prompt": "¿Qué significa “pleased” en el texto?",
             "evaluation": {
               "type": "single_choice"
             },
             "options": [
-              "To the park",
-              "To school",
-              "To the shop"
+              "encantado",
+              "Este/a es…",
+              "persona"
             ],
-            "answer": "To school"
+            "answer": "encantado"
           },
           {
             "itemId": "english-pre-a1-m010-reading-ex01-i07",
             "position": 7,
-            "prompt": "What does the writer do in the afternoon?",
+            "prompt": "¿Qué significa “This is…” en el texto?",
             "evaluation": {
               "type": "single_choice"
             },
             "options": [
-              "Sleeps",
-              "Studies and plays",
-              "Watches television"
+              "persona",
+              "Este/a es…",
+              "amigo"
             ],
-            "answer": "Studies and plays"
+            "answer": "Este/a es…"
           },
           {
             "itemId": "english-pre-a1-m010-reading-ex01-i08",
             "position": 8,
-            "prompt": "When is dinner?",
+            "prompt": "¿Qué significa “person” en el texto?",
             "evaluation": {
               "type": "single_choice"
             },
             "options": [
-              "At eight",
-              "At nine",
-              "At seven"
+              "estudiante",
+              "amigo",
+              "persona"
             ],
-            "answer": "At seven"
+            "answer": "persona"
           },
           {
             "itemId": "english-pre-a1-m010-reading-ex01-i09",
             "position": 9,
-            "prompt": "When does the writer sleep?",
+            "prompt": "¿Qué significa “friend” en el texto?",
             "evaluation": {
               "type": "single_choice"
             },
             "options": [
-              "At nine",
-              "At seven",
-              "At six"
+              "amigo",
+              "estudiante",
+              "profesor"
             ],
-            "answer": "At nine"
+            "answer": "amigo"
           },
           {
             "itemId": "english-pre-a1-m010-reading-ex01-i10",
             "position": 10,
-            "prompt": "What is the text about?",
+            "prompt": "¿Qué significa “student” en el texto?",
             "evaluation": {
               "type": "single_choice"
             },
             "options": [
-              "A daily routine",
-              "A holiday",
-              "A family party"
+              "profesor",
+              "estudiante",
+              "niño"
             ],
-            "answer": "A daily routine"
+            "answer": "estudiante"
           }
         ]
       }
@@ -1126,180 +1488,190 @@
           {
             "itemId": "english-pre-a1-m010-writing-ex01-i01",
             "position": 1,
-            "audio": "tts:en-GB:I wake up at seven.",
+            "audio": "tts:en-GB:Nice to meet you.",
+            "audioLocale": "en-GB",
+            "audioStatus": "synthetic_pending_review",
+            "kind": "sentence",
+            "repeatCount": 3,
+            "expectedAnswer": "Nice to meet you.",
             "evaluation": {
               "type": "normalised_text"
             },
-            "audioLocale": "en-GB",
-            "kind": "sentence",
-            "repeatCount": 3,
-            "expectedAnswer": "I wake up at seven.",
             "segments": [
               {
                 "segmentId": "english-pre-a1-m010-writing-segment-01",
-                "text": "I wake up at seven."
+                "text": "Nice to meet you."
               }
             ]
           },
           {
             "itemId": "english-pre-a1-m010-writing-ex01-i02",
             "position": 2,
-            "audio": "tts:en-GB:I get up in the morning.",
+            "audio": "tts:en-GB:Nice to meet you too.",
+            "audioLocale": "en-GB",
+            "audioStatus": "synthetic_pending_review",
+            "kind": "sentence",
+            "repeatCount": 3,
+            "expectedAnswer": "Nice to meet you too.",
             "evaluation": {
               "type": "normalised_text"
             },
-            "audioLocale": "en-GB",
-            "kind": "sentence",
-            "repeatCount": 3,
-            "expectedAnswer": "I get up in the morning.",
             "segments": [
               {
                 "segmentId": "english-pre-a1-m010-writing-segment-02",
-                "text": "I get up in the morning."
+                "text": "Nice to meet you too."
               }
             ]
           },
           {
             "itemId": "english-pre-a1-m010-writing-ex01-i03",
             "position": 3,
-            "audio": "tts:en-GB:I wash my face.",
+            "audio": "tts:en-GB:Pleased to meet you.",
+            "audioLocale": "en-GB",
+            "audioStatus": "synthetic_pending_review",
+            "kind": "sentence",
+            "repeatCount": 3,
+            "expectedAnswer": "Pleased to meet you.",
             "evaluation": {
               "type": "normalised_text"
             },
-            "audioLocale": "en-GB",
-            "kind": "sentence",
-            "repeatCount": 3,
-            "expectedAnswer": "I wash my face.",
             "segments": [
               {
                 "segmentId": "english-pre-a1-m010-writing-segment-03",
-                "text": "I wash my face."
+                "text": "Pleased to meet you."
               }
             ]
           },
           {
             "itemId": "english-pre-a1-m010-writing-ex01-i04",
             "position": 4,
-            "audio": "tts:en-GB:I brush my teeth.",
+            "audio": "tts:en-GB:This is Ana.",
+            "audioLocale": "en-GB",
+            "audioStatus": "synthetic_pending_review",
+            "kind": "sentence",
+            "repeatCount": 3,
+            "expectedAnswer": "This is Ana.",
             "evaluation": {
               "type": "normalised_text"
             },
-            "audioLocale": "en-GB",
-            "kind": "sentence",
-            "repeatCount": 3,
-            "expectedAnswer": "I brush my teeth.",
             "segments": [
               {
                 "segmentId": "english-pre-a1-m010-writing-segment-04",
-                "text": "I brush my teeth."
+                "text": "This is Ana."
               }
             ]
           },
           {
             "itemId": "english-pre-a1-m010-writing-ex01-i05",
             "position": 5,
-            "audio": "tts:en-GB:I eat breakfast.",
+            "audio": "tts:en-GB:This is my friend.",
+            "audioLocale": "en-GB",
+            "audioStatus": "synthetic_pending_review",
+            "kind": "sentence",
+            "repeatCount": 3,
+            "expectedAnswer": "This is my friend.",
             "evaluation": {
               "type": "normalised_text"
             },
-            "audioLocale": "en-GB",
-            "kind": "sentence",
-            "repeatCount": 3,
-            "expectedAnswer": "I eat breakfast.",
             "segments": [
               {
                 "segmentId": "english-pre-a1-m010-writing-segment-05",
-                "text": "I eat breakfast."
+                "text": "This is my friend."
               }
             ]
           },
           {
             "itemId": "english-pre-a1-m010-writing-ex01-i06",
             "position": 6,
-            "audio": "tts:en-GB:I drink water.",
+            "audio": "tts:en-GB:Hello! My name is Ana.",
+            "audioLocale": "en-GB",
+            "audioStatus": "synthetic_pending_review",
+            "kind": "sentence",
+            "repeatCount": 3,
+            "expectedAnswer": "Hello! My name is Ana.",
             "evaluation": {
               "type": "normalised_text"
             },
-            "audioLocale": "en-GB",
-            "kind": "sentence",
-            "repeatCount": 3,
-            "expectedAnswer": "I drink water.",
             "segments": [
               {
                 "segmentId": "english-pre-a1-m010-writing-segment-06",
-                "text": "I drink water."
+                "text": "Hello! My name is Ana."
               }
             ]
           },
           {
             "itemId": "english-pre-a1-m010-writing-ex01-i07",
             "position": 7,
-            "audio": "tts:en-GB:I go to school.",
+            "audio": "tts:en-GB:What's your name?",
+            "audioLocale": "en-GB",
+            "audioStatus": "synthetic_pending_review",
+            "kind": "sentence",
+            "repeatCount": 3,
+            "expectedAnswer": "What's your name?",
             "evaluation": {
               "type": "normalised_text"
             },
-            "audioLocale": "en-GB",
-            "kind": "sentence",
-            "repeatCount": 3,
-            "expectedAnswer": "I go to school.",
             "segments": [
               {
                 "segmentId": "english-pre-a1-m010-writing-segment-07",
-                "text": "I go to school."
+                "text": "What's your name?"
               }
             ]
           },
           {
             "itemId": "english-pre-a1-m010-writing-ex01-i08",
             "position": 8,
-            "audio": "tts:en-GB:I study English.",
+            "audio": "tts:en-GB:I'm Alex.",
+            "audioLocale": "en-GB",
+            "audioStatus": "synthetic_pending_review",
+            "kind": "sentence",
+            "repeatCount": 3,
+            "expectedAnswer": "I'm Alex.",
             "evaluation": {
               "type": "normalised_text"
             },
-            "audioLocale": "en-GB",
-            "kind": "sentence",
-            "repeatCount": 3,
-            "expectedAnswer": "I study English.",
             "segments": [
               {
                 "segmentId": "english-pre-a1-m010-writing-segment-08",
-                "text": "I study English."
+                "text": "I'm Alex."
               }
             ]
           },
           {
             "itemId": "english-pre-a1-m010-writing-ex01-i09",
             "position": 9,
-            "audio": "tts:en-GB:I play with my friends.",
+            "audio": "tts:en-GB:You're my friend.",
+            "audioLocale": "en-GB",
+            "audioStatus": "synthetic_pending_review",
+            "kind": "sentence",
+            "repeatCount": 3,
+            "expectedAnswer": "You're my friend.",
             "evaluation": {
               "type": "normalised_text"
             },
-            "audioLocale": "en-GB",
-            "kind": "sentence",
-            "repeatCount": 3,
-            "expectedAnswer": "I play with my friends.",
             "segments": [
               {
                 "segmentId": "english-pre-a1-m010-writing-segment-09",
-                "text": "I play with my friends."
+                "text": "You're my friend."
               }
             ]
           },
           {
             "itemId": "english-pre-a1-m010-writing-ex01-i10",
             "position": 10,
-            "audio": "tts:en-GB:I sleep at nine.",
+            "audio": "tts:en-GB:Goodbye!",
+            "audioLocale": "en-GB",
+            "audioStatus": "synthetic_pending_review",
+            "kind": "sentence",
+            "repeatCount": 3,
+            "expectedAnswer": "Goodbye!",
             "evaluation": {
               "type": "normalised_text"
             },
-            "audioLocale": "en-GB",
-            "kind": "sentence",
-            "repeatCount": 3,
-            "expectedAnswer": "I sleep at nine.",
             "segments": [
               {
                 "segmentId": "english-pre-a1-m010-writing-segment-10",
-                "text": "I sleep at nine."
+                "text": "Goodbye!"
               }
             ]
           }
@@ -1317,8 +1689,10 @@
           {
             "itemId": "english-pre-a1-m010-speaking-ex01-i01",
             "position": 1,
-            "prompt": "Say a short sentence using “wake up”.",
-            "modelAnswer": "I wake up at seven.",
+            "prompt": "Di en voz alta esta expresión.",
+            "promptSpanish": "Practica el modelo de la misión.",
+            "modelAnswer": "Nice to meet you.",
+            "translation": "Nice to meet you.",
             "evaluation": {
               "type": "transcription_feedback",
               "transcriptionSeparateFromPronunciation": true
@@ -1327,8 +1701,10 @@
           {
             "itemId": "english-pre-a1-m010-speaking-ex01-i02",
             "position": 2,
-            "prompt": "Say a short sentence using “get up”.",
-            "modelAnswer": "I get up at seven.",
+            "prompt": "Di en voz alta esta expresión.",
+            "promptSpanish": "Practica el modelo de la misión.",
+            "modelAnswer": "Nice to meet you too.",
+            "translation": "Nice to meet you too.",
             "evaluation": {
               "type": "transcription_feedback",
               "transcriptionSeparateFromPronunciation": true
@@ -1337,8 +1713,10 @@
           {
             "itemId": "english-pre-a1-m010-speaking-ex01-i03",
             "position": 3,
-            "prompt": "Say a short sentence using “wash”.",
-            "modelAnswer": "I wash my face.",
+            "prompt": "Di en voz alta esta expresión.",
+            "promptSpanish": "Practica el modelo de la misión.",
+            "modelAnswer": "Pleased to meet you.",
+            "translation": "Pleased to meet you.",
             "evaluation": {
               "type": "transcription_feedback",
               "transcriptionSeparateFromPronunciation": true
@@ -1347,8 +1725,10 @@
           {
             "itemId": "english-pre-a1-m010-speaking-ex01-i04",
             "position": 4,
-            "prompt": "Say a short sentence using “brush”.",
-            "modelAnswer": "I brush my teeth.",
+            "prompt": "Di en voz alta esta expresión.",
+            "promptSpanish": "Practica el modelo de la misión.",
+            "modelAnswer": "This is Ana.",
+            "translation": "This is Ana.",
             "evaluation": {
               "type": "transcription_feedback",
               "transcriptionSeparateFromPronunciation": true
@@ -1357,8 +1737,10 @@
           {
             "itemId": "english-pre-a1-m010-speaking-ex01-i05",
             "position": 5,
-            "prompt": "Say a short sentence using “eat”.",
-            "modelAnswer": "I eat breakfast.",
+            "prompt": "Di en voz alta esta expresión.",
+            "promptSpanish": "Practica el modelo de la misión.",
+            "modelAnswer": "This is my friend.",
+            "translation": "This is my friend.",
             "evaluation": {
               "type": "transcription_feedback",
               "transcriptionSeparateFromPronunciation": true
@@ -1367,8 +1749,10 @@
           {
             "itemId": "english-pre-a1-m010-speaking-ex01-i06",
             "position": 6,
-            "prompt": "Say a short sentence using “drink”.",
-            "modelAnswer": "I drink water.",
+            "prompt": "Di en voz alta esta expresión.",
+            "promptSpanish": "Practica el modelo de la misión.",
+            "modelAnswer": "Hello! My name is Ana.",
+            "translation": "Hello! My name is Ana.",
             "evaluation": {
               "type": "transcription_feedback",
               "transcriptionSeparateFromPronunciation": true
@@ -1377,8 +1761,10 @@
           {
             "itemId": "english-pre-a1-m010-speaking-ex01-i07",
             "position": 7,
-            "prompt": "Say a short sentence using “go”.",
-            "modelAnswer": "I go to school.",
+            "prompt": "Di en voz alta esta expresión.",
+            "promptSpanish": "Practica el modelo de la misión.",
+            "modelAnswer": "What's your name?",
+            "translation": "What's your name?",
             "evaluation": {
               "type": "transcription_feedback",
               "transcriptionSeparateFromPronunciation": true
@@ -1387,8 +1773,10 @@
           {
             "itemId": "english-pre-a1-m010-speaking-ex01-i08",
             "position": 8,
-            "prompt": "Say a short sentence using “study”.",
-            "modelAnswer": "I study English.",
+            "prompt": "Di en voz alta esta expresión.",
+            "promptSpanish": "Practica el modelo de la misión.",
+            "modelAnswer": "I'm Alex.",
+            "translation": "I'm Alex.",
             "evaluation": {
               "type": "transcription_feedback",
               "transcriptionSeparateFromPronunciation": true
@@ -1397,8 +1785,10 @@
           {
             "itemId": "english-pre-a1-m010-speaking-ex01-i09",
             "position": 9,
-            "prompt": "Say a short sentence using “play”.",
-            "modelAnswer": "I play football.",
+            "prompt": "Di en voz alta esta expresión.",
+            "promptSpanish": "Practica el modelo de la misión.",
+            "modelAnswer": "You're my friend.",
+            "translation": "You're my friend.",
             "evaluation": {
               "type": "transcription_feedback",
               "transcriptionSeparateFromPronunciation": true
@@ -1407,8 +1797,10 @@
           {
             "itemId": "english-pre-a1-m010-speaking-ex01-i10",
             "position": 10,
-            "prompt": "Say a short sentence using “sleep”.",
-            "modelAnswer": "I sleep at nine.",
+            "prompt": "Di en voz alta esta expresión.",
+            "promptSpanish": "Practica el modelo de la misión.",
+            "modelAnswer": "Goodbye!",
+            "translation": "Goodbye!",
             "evaluation": {
               "type": "transcription_feedback",
               "transcriptionSeparateFromPronunciation": true
@@ -1425,53 +1817,55 @@
         "exerciseId": "english-pre-a1-m010-listening-ex01",
         "type": "listening_gap_fill",
         "content": {
-          "audio": "tts:en-GB:I wake up at seven. I get up and leave my bed. I wash my face. I brush my teeth. I eat breakfast. I drink water. I go to school. I study English. I play football with friends. I sleep at night.",
+          "audio": "tts:en-GB:Nice to meet you. Nice to meet you too. Pleased to meet you. This is Ana. This is my friend. Hello! My name is Ana. What's your name? I'm Alex. You're my friend. Goodbye!",
           "audioLocale": "en-GB",
-          "transcriptTemplate": "I [[gap-01]] at seven. I [[gap-02]] and leave my bed. I [[gap-03]] my face. I [[gap-04]] my teeth. I [[gap-05]] breakfast. I [[gap-06]] water. I [[gap-07]] to school. I [[gap-08]] English. I [[gap-09]] football with friends. I [[gap-10]] at night.",
+          "audioStatus": "synthetic_pending_review",
+          "transcriptTemplate": "[[gap-01]] [[gap-02]] [[gap-03]] [[gap-04]] [[gap-05]] [[gap-06]] [[gap-07]] [[gap-08]] [[gap-09]] [[gap-10]]",
           "wordBank": [
             {
               "wordId": "english-pre-a1-m010-listening-word-01",
-              "word": "wake up"
+              "word": "nice"
             },
             {
               "wordId": "english-pre-a1-m010-listening-word-02",
-              "word": "get up"
+              "word": "to"
             },
             {
               "wordId": "english-pre-a1-m010-listening-word-03",
-              "word": "wash"
+              "word": "meet"
             },
             {
               "wordId": "english-pre-a1-m010-listening-word-04",
-              "word": "brush"
+              "word": "you"
             },
             {
               "wordId": "english-pre-a1-m010-listening-word-05",
-              "word": "eat"
+              "word": "too"
             },
             {
               "wordId": "english-pre-a1-m010-listening-word-06",
-              "word": "drink"
+              "word": "pleased"
             },
             {
               "wordId": "english-pre-a1-m010-listening-word-07",
-              "word": "go"
+              "word": "This is…"
             },
             {
               "wordId": "english-pre-a1-m010-listening-word-08",
-              "word": "study"
+              "word": "person"
             },
             {
               "wordId": "english-pre-a1-m010-listening-word-09",
-              "word": "play"
+              "word": "friend"
             },
             {
               "wordId": "english-pre-a1-m010-listening-word-10",
-              "word": "sleep"
+              "word": "student"
             }
           ],
           "interaction": "select_place_move_replace",
-          "audioTranscript": "tts:en-GB:I wake up at seven. I get up and leave my bed. I wash my face. I brush my teeth. I eat breakfast. I drink water. I go to school. I study English. I play football with friends. I sleep at night."
+          "audioTranscript": "tts:en-GB:Nice to meet you. Nice to meet you too. Pleased to meet you. This is Ana. This is my friend. Hello! My name is Ana. What's your name? I'm Alex. You're my friend. Goodbye!",
+          "translation": "Escucha y reconoce las expresiones enseñadas."
         },
         "items": [
           {
@@ -1479,70 +1873,70 @@
             "position": 1,
             "gapToken": "[[gap-01]]",
             "expectedWordId": "english-pre-a1-m010-listening-word-01",
-            "answer": "wake up"
+            "answer": "nice"
           },
           {
             "itemId": "english-pre-a1-m010-listening-ex01-i02",
             "position": 2,
             "gapToken": "[[gap-02]]",
             "expectedWordId": "english-pre-a1-m010-listening-word-02",
-            "answer": "get up"
+            "answer": "to"
           },
           {
             "itemId": "english-pre-a1-m010-listening-ex01-i03",
             "position": 3,
             "gapToken": "[[gap-03]]",
             "expectedWordId": "english-pre-a1-m010-listening-word-03",
-            "answer": "wash"
+            "answer": "meet"
           },
           {
             "itemId": "english-pre-a1-m010-listening-ex01-i04",
             "position": 4,
             "gapToken": "[[gap-04]]",
             "expectedWordId": "english-pre-a1-m010-listening-word-04",
-            "answer": "brush"
+            "answer": "you"
           },
           {
             "itemId": "english-pre-a1-m010-listening-ex01-i05",
             "position": 5,
             "gapToken": "[[gap-05]]",
             "expectedWordId": "english-pre-a1-m010-listening-word-05",
-            "answer": "eat"
+            "answer": "too"
           },
           {
             "itemId": "english-pre-a1-m010-listening-ex01-i06",
             "position": 6,
             "gapToken": "[[gap-06]]",
             "expectedWordId": "english-pre-a1-m010-listening-word-06",
-            "answer": "drink"
+            "answer": "pleased"
           },
           {
             "itemId": "english-pre-a1-m010-listening-ex01-i07",
             "position": 7,
             "gapToken": "[[gap-07]]",
             "expectedWordId": "english-pre-a1-m010-listening-word-07",
-            "answer": "go"
+            "answer": "This is…"
           },
           {
             "itemId": "english-pre-a1-m010-listening-ex01-i08",
             "position": 8,
             "gapToken": "[[gap-08]]",
             "expectedWordId": "english-pre-a1-m010-listening-word-08",
-            "answer": "study"
+            "answer": "person"
           },
           {
             "itemId": "english-pre-a1-m010-listening-ex01-i09",
             "position": 9,
             "gapToken": "[[gap-09]]",
             "expectedWordId": "english-pre-a1-m010-listening-word-09",
-            "answer": "play"
+            "answer": "friend"
           },
           {
             "itemId": "english-pre-a1-m010-listening-ex01-i10",
             "position": 10,
             "gapToken": "[[gap-10]]",
             "expectedWordId": "english-pre-a1-m010-listening-word-10",
-            "answer": "sleep"
+            "answer": "student"
           }
         ]
       }

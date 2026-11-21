@@ -1,9 +1,9 @@
 {
-  "schemaVersion": "1.2.0",
-  "contentVersion": 2,
+  "schemaVersion": 1,
+  "contentVersion": "2026-11-21-curriculum-alignment-v1",
   "course": {
     "courseId": "english-pre-a1",
-    "level": "PRE-A1",
+    "level": "Pre-A1",
     "language": "en-GB"
   },
   "unit": {
@@ -16,7 +16,7 @@
     "missionId": "english-pre-a1-m003",
     "unitId": "english-pre-a1-unit-01",
     "position": 3,
-    "title": "Colours"
+    "title": "How are you?"
   },
   "sections": [
     {
@@ -26,374 +26,579 @@
       "exercise": {
         "exerciseId": "english-pre-a1-m003-explore-ex01",
         "type": "vocabulary_pairs",
-        "theory": {
-          "title": "Colores y orden de los adjetivos",
-          "explanation": "Primero aprende los colores. En inglés, el color va delante del nombre: a red ball. Después aprende a describir un objeto con It is… y a expresar lo que ves con I can see…",
-          "tip": "Di primero el color y después el objeto: a blue sky, no a sky blue.",
-          "patterns": [
-            {
-              "label": "1. Color + nombre",
-              "pattern": "a/an + colour + noun",
-              "examples": [
-                "a red ball — una pelota roja",
-                "a blue sky — un cielo azul",
-                "a green tree — un árbol verde"
-              ]
-            },
-            {
-              "label": "2. Describir con to be",
-              "pattern": "It is + a/an + colour + noun · The noun is + colour",
-              "examples": [
-                "It is a red flower. — Es una flor roja.",
-                "The sky is blue. — El cielo es azul.",
-                "The grass is green. — La hierba es verde."
-              ]
-            },
-            {
-              "label": "3. Decir lo que ves",
-              "pattern": "I can see + noun",
-              "examples": [
-                "I can see a white cloud. — Puedo ver una nube blanca.",
-                "I can see a purple ball. — Puedo ver una pelota morada."
-              ]
-            }
-          ]
-        },
         "items": [
           {
             "itemId": "english-pre-a1-m003-explore-ex01-i01",
             "position": 1,
-            "english": "red",
-            "spanish": "rojo",
-            "audio": "tts:en-GB:red"
+            "english": "How",
+            "spanish": "cómo",
+            "pronunciationGuide": "jáu",
+            "audio": "tts:en-GB:How",
+            "audioStatus": "synthetic_pending_review"
           },
           {
             "itemId": "english-pre-a1-m003-explore-ex01-i02",
             "position": 2,
-            "english": "blue",
-            "spanish": "azul",
-            "audio": "tts:en-GB:blue"
+            "english": "are",
+            "spanish": "estás",
+            "pronunciationGuide": "ar",
+            "audio": "tts:en-GB:are",
+            "audioStatus": "synthetic_pending_review"
           },
           {
             "itemId": "english-pre-a1-m003-explore-ex01-i03",
             "position": 3,
-            "english": "yellow",
-            "spanish": "amarillo",
-            "audio": "tts:en-GB:yellow"
+            "english": "you",
+            "spanish": "tú",
+            "pronunciationGuide": "iú",
+            "audio": "tts:en-GB:you",
+            "audioStatus": "synthetic_pending_review"
           },
           {
             "itemId": "english-pre-a1-m003-explore-ex01-i04",
             "position": 4,
-            "english": "green",
-            "spanish": "verde",
-            "audio": "tts:en-GB:green"
+            "english": "fine",
+            "spanish": "bien",
+            "pronunciationGuide": "fáin",
+            "audio": "tts:en-GB:fine",
+            "audioStatus": "synthetic_pending_review"
           },
           {
             "itemId": "english-pre-a1-m003-explore-ex01-i05",
             "position": 5,
-            "english": "black",
-            "spanish": "negro",
-            "audio": "tts:en-GB:black"
+            "english": "good",
+            "spanish": "bien",
+            "pronunciationGuide": "gud",
+            "audio": "tts:en-GB:good",
+            "audioStatus": "synthetic_pending_review"
           },
           {
             "itemId": "english-pre-a1-m003-explore-ex01-i06",
             "position": 6,
-            "english": "white",
-            "spanish": "blanco",
-            "audio": "tts:en-GB:white"
+            "english": "very",
+            "spanish": "muy",
+            "pronunciationGuide": "VÉ-ri",
+            "audio": "tts:en-GB:very",
+            "audioStatus": "synthetic_pending_review"
           },
           {
             "itemId": "english-pre-a1-m003-explore-ex01-i07",
             "position": 7,
-            "english": "orange",
-            "spanish": "naranja",
-            "audio": "tts:en-GB:orange"
+            "english": "well",
+            "spanish": "bien",
+            "pronunciationGuide": "uél",
+            "audio": "tts:en-GB:well",
+            "audioStatus": "synthetic_pending_review"
           },
           {
             "itemId": "english-pre-a1-m003-explore-ex01-i08",
             "position": 8,
-            "english": "pink",
-            "spanish": "rosa",
-            "audio": "tts:en-GB:pink"
+            "english": "OK",
+            "spanish": "bien/de acuerdo",
+            "pronunciationGuide": "óu-KÉI",
+            "audio": "tts:en-GB:OK",
+            "audioStatus": "synthetic_pending_review"
           },
           {
             "itemId": "english-pre-a1-m003-explore-ex01-i09",
             "position": 9,
-            "english": "purple",
-            "spanish": "morado",
-            "audio": "tts:en-GB:purple"
+            "english": "not",
+            "spanish": "no",
+            "pronunciationGuide": "not",
+            "audio": "tts:en-GB:not",
+            "audioStatus": "synthetic_pending_review"
           },
           {
             "itemId": "english-pre-a1-m003-explore-ex01-i10",
             "position": 10,
-            "english": "brown",
-            "spanish": "marrón",
-            "audio": "tts:en-GB:brown"
+            "english": "bad",
+            "spanish": "mal",
+            "pronunciationGuide": "bad",
+            "audio": "tts:en-GB:bad",
+            "audioStatus": "synthetic_pending_review"
+          },
+          {
+            "itemId": "english-pre-a1-m003-explore-ex01-i11",
+            "position": 11,
+            "english": "and",
+            "spanish": "y",
+            "pronunciationGuide": "and",
+            "audio": "tts:en-GB:and",
+            "audioStatus": "synthetic_pending_review"
+          },
+          {
+            "itemId": "english-pre-a1-m003-explore-ex01-i12",
+            "position": 12,
+            "english": "happy",
+            "spanish": "feliz",
+            "pronunciationGuide": "JÁ-pi",
+            "audio": "tts:en-GB:happy",
+            "audioStatus": "synthetic_pending_review"
+          },
+          {
+            "itemId": "english-pre-a1-m003-explore-ex01-i13",
+            "position": 13,
+            "english": "sad",
+            "spanish": "triste",
+            "pronunciationGuide": "sad",
+            "audio": "tts:en-GB:sad",
+            "audioStatus": "synthetic_pending_review"
+          },
+          {
+            "itemId": "english-pre-a1-m003-explore-ex01-i14",
+            "position": 14,
+            "english": "tired",
+            "spanish": "cansado",
+            "pronunciationGuide": "TÁI-erd",
+            "audio": "tts:en-GB:tired",
+            "audioStatus": "synthetic_pending_review"
+          },
+          {
+            "itemId": "english-pre-a1-m003-explore-ex01-i15",
+            "position": 15,
+            "english": "great",
+            "spanish": "genial",
+            "pronunciationGuide": "gréit",
+            "audio": "tts:en-GB:great",
+            "audioStatus": "synthetic_pending_review"
           }
         ],
+        "theory": {
+          "title": "How are you?",
+          "explanation": "How are you? pregunta por el estado. Se puede responder I'm fine/good/OK, Very well o Not bad. And you? devuelve la pregunta. I'm se usa como fórmula; su contracción se explica en la misión 009.",
+          "tip": "Comprende todos los modelos de Explore antes de comenzar las actividades.",
+          "patterns": [
+            {
+              "label": "Bloque 1",
+              "pattern": "How are you?",
+              "examples": [
+                "How are you?"
+              ]
+            },
+            {
+              "label": "Bloque 2",
+              "pattern": "How are you? pregunta por el estado. Se puede responder I'm fine/good/OK, Very well o Not bad. And you? devuelve la pregunta. I'm se usa como fórmula; su contracción se explica en la misión 009.",
+              "examples": [
+                "I'm fine."
+              ]
+            },
+            {
+              "label": "Bloque 3",
+              "pattern": "How are you? pregunta por el estado. Se puede responder I'm fine/good/OK, Very well o Not bad. And you? devuelve la pregunta. I'm se usa como fórmula; su contracción se explica en la misión 009.",
+              "examples": [
+                "I'm good."
+              ]
+            },
+            {
+              "label": "Bloque 4",
+              "pattern": "How are you? pregunta por el estado. Se puede responder I'm fine/good/OK, Very well o Not bad. And you? devuelve la pregunta. I'm se usa como fórmula; su contracción se explica en la misión 009.",
+              "examples": [
+                "Very well."
+              ]
+            },
+            {
+              "label": "Bloque 5",
+              "pattern": "How are you? pregunta por el estado. Se puede responder I'm fine/good/OK, Very well o Not bad. And you? devuelve la pregunta. I'm se usa como fórmula; su contracción se explica en la misión 009.",
+              "examples": [
+                "I'm OK."
+              ]
+            },
+            {
+              "label": "Bloque 6",
+              "pattern": "How are you? pregunta por el estado. Se puede responder I'm fine/good/OK, Very well o Not bad. And you? devuelve la pregunta. I'm se usa como fórmula; su contracción se explica en la misión 009.",
+              "examples": [
+                "Not bad."
+              ]
+            },
+            {
+              "label": "Bloque 7",
+              "pattern": "How are you? pregunta por el estado. Se puede responder I'm fine/good/OK, Very well o Not bad. And you? devuelve la pregunta. I'm se usa como fórmula; su contracción se explica en la misión 009.",
+              "examples": [
+                "And you?"
+              ]
+            },
+            {
+              "label": "Bloque 8",
+              "pattern": "How are you? pregunta por el estado. Se puede responder I'm fine/good/OK, Very well o Not bad. And you? devuelve la pregunta. I'm se usa como fórmula; su contracción se explica en la misión 009.",
+              "examples": [
+                "I'm happy."
+              ]
+            },
+            {
+              "label": "Bloque 9",
+              "pattern": "How are you? pregunta por el estado. Se puede responder I'm fine/good/OK, Very well o Not bad. And you? devuelve la pregunta. I'm se usa como fórmula; su contracción se explica en la misión 009.",
+              "examples": [
+                "I'm sad."
+              ]
+            },
+            {
+              "label": "Bloque 10",
+              "pattern": "How are you? pregunta por el estado. Se puede responder I'm fine/good/OK, Very well o Not bad. And you? devuelve la pregunta. I'm se usa como fórmula; su contracción se explica en la misión 009.",
+              "examples": [
+                "I'm tired."
+              ]
+            }
+          ]
+        },
         "lesson": {
           "phrases": [
             {
-              "english": "a red ball",
-              "spanish": "una pelota roja"
+              "english": "How are you?",
+              "spanish": "How are you?",
+              "note": "Modelo enseñado en Explore."
             },
             {
-              "english": "a blue sky",
-              "spanish": "un cielo azul"
+              "english": "I'm fine.",
+              "spanish": "I'm fine.",
+              "note": "Modelo enseñado en Explore."
             },
             {
-              "english": "a green tree",
-              "spanish": "un árbol verde"
+              "english": "I'm good.",
+              "spanish": "I'm good.",
+              "note": "Modelo enseñado en Explore."
             },
             {
-              "english": "a yellow sun",
-              "spanish": "un sol amarillo"
+              "english": "Very well.",
+              "spanish": "Very well.",
+              "note": "Modelo enseñado en Explore."
             },
             {
-              "english": "a red flower",
-              "spanish": "una flor roja"
+              "english": "I'm OK.",
+              "spanish": "I'm OK.",
+              "note": "Modelo enseñado en Explore."
             },
             {
-              "english": "a white cloud",
-              "spanish": "una nube blanca"
+              "english": "Not bad.",
+              "spanish": "Not bad.",
+              "note": "Modelo enseñado en Explore."
             },
             {
-              "english": "a blue car",
-              "spanish": "un coche azul"
+              "english": "And you?",
+              "spanish": "And you?",
+              "note": "Modelo enseñado en Explore."
             },
             {
-              "english": "three pink flowers",
-              "spanish": "tres flores rosas"
+              "english": "I'm happy.",
+              "spanish": "I'm happy.",
+              "note": "Modelo enseñado en Explore."
             },
             {
-              "english": "an orange fish",
-              "spanish": "un pez naranja"
+              "english": "I'm sad.",
+              "spanish": "I'm sad.",
+              "note": "Modelo enseñado en Explore."
             },
             {
-              "english": "a brown dog",
-              "spanish": "un perro marrón"
-            },
-            {
-              "english": "What colour is it?",
-              "spanish": "¿De qué color es?",
-              "note": "What colour pregunta por el color."
-            },
-            {
-              "english": "It is a red flower.",
-              "spanish": "Es una flor roja.",
-              "note": "El color va antes del nombre."
+              "english": "I'm tired.",
+              "spanish": "I'm tired.",
+              "note": "Modelo enseñado en Explore."
             }
           ],
           "grammar": [
             {
-              "english": "The sky is blue.",
-              "spanish": "El cielo es azul."
+              "english": "How are you?",
+              "spanish": "Modelo de la misión",
+              "note": "How are you?"
             },
             {
-              "english": "The grass is green.",
-              "spanish": "La hierba es verde."
+              "english": "I'm fine.",
+              "spanish": "Modelo de la misión",
+              "note": "How are you? pregunta por el estado. Se puede responder I'm fine/good/OK, Very well o Not bad. And you? devuelve la pregunta. I'm se usa como fórmula; su contracción se explica en la misión 009."
             },
             {
-              "english": "It is a black cat.",
-              "spanish": "Es un gato negro."
+              "english": "I'm good.",
+              "spanish": "Modelo de la misión",
+              "note": "How are you? pregunta por el estado. Se puede responder I'm fine/good/OK, Very well o Not bad. And you? devuelve la pregunta. I'm se usa como fórmula; su contracción se explica en la misión 009."
             },
             {
-              "english": "a white cloud",
-              "spanish": "una nube blanca"
+              "english": "Very well.",
+              "spanish": "Modelo de la misión",
+              "note": "How are you? pregunta por el estado. Se puede responder I'm fine/good/OK, Very well o Not bad. And you? devuelve la pregunta. I'm se usa como fórmula; su contracción se explica en la misión 009."
             },
             {
-              "english": "an orange fish",
-              "spanish": "un pez naranja",
-              "note": "An se usa antes de un sonido vocálico."
+              "english": "I'm OK.",
+              "spanish": "Modelo de la misión",
+              "note": "How are you? pregunta por el estado. Se puede responder I'm fine/good/OK, Very well o Not bad. And you? devuelve la pregunta. I'm se usa como fórmula; su contracción se explica en la misión 009."
             },
             {
-              "english": "three pink flowers",
-              "spanish": "tres flores rosas",
-              "note": "El nombre plural flowers lleva -s."
+              "english": "Not bad.",
+              "spanish": "Modelo de la misión",
+              "note": "How are you? pregunta por el estado. Se puede responder I'm fine/good/OK, Very well o Not bad. And you? devuelve la pregunta. I'm se usa como fórmula; su contracción se explica en la misión 009."
             },
             {
-              "english": "The brown dog is big.",
-              "spanish": "El perro marrón es grande."
+              "english": "And you?",
+              "spanish": "Modelo de la misión",
+              "note": "How are you? pregunta por el estado. Se puede responder I'm fine/good/OK, Very well o Not bad. And you? devuelve la pregunta. I'm se usa como fórmula; su contracción se explica en la misión 009."
             },
             {
-              "english": "The carrot is orange.",
-              "spanish": "La zanahoria es naranja."
+              "english": "I'm happy.",
+              "spanish": "Modelo de la misión",
+              "note": "How are you? pregunta por el estado. Se puede responder I'm fine/good/OK, Very well o Not bad. And you? devuelve la pregunta. I'm se usa como fórmula; su contracción se explica en la misión 009."
             },
             {
-              "english": "The strawberry is red.",
-              "spanish": "La fresa es roja."
+              "english": "I'm sad.",
+              "spanish": "Modelo de la misión",
+              "note": "How are you? pregunta por el estado. Se puede responder I'm fine/good/OK, Very well o Not bad. And you? devuelve la pregunta. I'm se usa como fórmula; su contracción se explica en la misión 009."
             },
             {
-              "english": "The snow is white.",
-              "spanish": "La nieve es blanca."
+              "english": "I'm tired.",
+              "spanish": "Modelo de la misión",
+              "note": "How are you? pregunta por el estado. Se puede responder I'm fine/good/OK, Very well o Not bad. And you? devuelve la pregunta. I'm se usa como fórmula; su contracción se explica en la misión 009."
             }
           ],
           "reading": [
             {
-              "english": "I can see colours in the garden.",
-              "spanish": "Puedo ver colores en el jardín."
-            },
-            {
-              "english": "The sun is yellow.",
-              "spanish": "El sol es amarillo."
-            },
-            {
-              "english": "The sky is blue.",
-              "spanish": "El cielo es azul."
-            },
-            {
-              "english": "The grass is green.",
-              "spanish": "La hierba es verde."
-            },
-            {
-              "english": "I see a red flower and a white cloud.",
-              "spanish": "Veo una flor roja y una nube blanca."
-            },
-            {
-              "english": "My ball is blue too.",
-              "spanish": "Mi pelota también es azul."
-            },
-            {
-              "english": "What is your favourite colour?",
-              "spanish": "¿Cuál es tu color favorito?"
+              "english": "Hello! How are you? I'm fine. And you? I'm good. I'm happy. I'm not tired.",
+              "spanish": "Texto completo presentado arriba."
             }
           ],
           "writing": [
             {
-              "english": "The sun is yellow.",
-              "spanish": "El sol es amarillo."
+              "english": "How are you?",
+              "spanish": "How are you?",
+              "note": "Modelo enseñado en Explore."
             },
             {
-              "english": "The sky is blue.",
-              "spanish": "El cielo es azul."
+              "english": "I'm fine.",
+              "spanish": "I'm fine.",
+              "note": "Modelo enseñado en Explore."
             },
             {
-              "english": "The grass is green.",
-              "spanish": "La hierba es verde."
+              "english": "I'm good.",
+              "spanish": "I'm good.",
+              "note": "Modelo enseñado en Explore."
             },
             {
-              "english": "I see a red flower.",
-              "spanish": "Veo una flor roja."
+              "english": "Very well.",
+              "spanish": "Very well.",
+              "note": "Modelo enseñado en Explore."
             },
             {
-              "english": "The cloud is white.",
-              "spanish": "La nube es blanca."
+              "english": "I'm OK.",
+              "spanish": "I'm OK.",
+              "note": "Modelo enseñado en Explore."
             },
             {
-              "english": "My ball is purple.",
-              "spanish": "Mi pelota es morada."
+              "english": "Not bad.",
+              "spanish": "Not bad.",
+              "note": "Modelo enseñado en Explore."
             },
             {
-              "english": "I see an orange fish.",
-              "spanish": "Veo un pez naranja."
+              "english": "And you?",
+              "spanish": "And you?",
+              "note": "Modelo enseñado en Explore."
             },
             {
-              "english": "The house is pink.",
-              "spanish": "La casa es rosa."
+              "english": "I'm happy.",
+              "spanish": "I'm happy.",
+              "note": "Modelo enseñado en Explore."
             },
             {
-              "english": "The dog is brown.",
-              "spanish": "El perro es marrón."
+              "english": "I'm sad.",
+              "spanish": "I'm sad.",
+              "note": "Modelo enseñado en Explore."
             },
             {
-              "english": "My favourite colour is blue.",
-              "spanish": "Mi color favorito es el azul."
+              "english": "I'm tired.",
+              "spanish": "I'm tired.",
+              "note": "Modelo enseñado en Explore."
             }
           ],
           "speaking": [
             {
-              "english": "Red, blue and yellow.",
-              "spanish": "Rojo, azul y amarillo.",
-              "prompt": "Say three colours.",
-              "promptSpanish": "Di tres colores."
+              "english": "How are you?",
+              "spanish": "How are you?",
+              "note": "Modelo enseñado en Explore.",
+              "prompt": "Practica esta expresión.",
+              "promptSpanish": "Di la expresión en voz alta."
             },
             {
-              "english": "The sky is blue.",
-              "spanish": "El cielo es azul.",
-              "prompt": "What colour is the sky?",
-              "promptSpanish": "¿De qué color es el cielo?"
+              "english": "I'm fine.",
+              "spanish": "I'm fine.",
+              "note": "Modelo enseñado en Explore.",
+              "prompt": "Practica esta expresión.",
+              "promptSpanish": "Di la expresión en voz alta."
             },
             {
-              "english": "The grass is green.",
-              "spanish": "La hierba es verde.",
-              "prompt": "What colour is the grass?",
-              "promptSpanish": "¿De qué color es la hierba?"
+              "english": "I'm good.",
+              "spanish": "I'm good.",
+              "note": "Modelo enseñado en Explore.",
+              "prompt": "Practica esta expresión.",
+              "promptSpanish": "Di la expresión en voz alta."
             },
             {
-              "english": "The flower is red.",
-              "spanish": "La flor es roja.",
-              "prompt": "Name a colour of a flower in the reading.",
-              "promptSpanish": "Di un color de una flor del texto."
+              "english": "Very well.",
+              "spanish": "Very well.",
+              "note": "Modelo enseñado en Explore.",
+              "prompt": "Practica esta expresión.",
+              "promptSpanish": "Di la expresión en voz alta."
             },
             {
-              "english": "The cloud is white.",
-              "spanish": "La nube es blanca.",
-              "prompt": "Say the colour of a cloud in the reading.",
-              "promptSpanish": "Di el color de una nube del texto."
+              "english": "I'm OK.",
+              "spanish": "I'm OK.",
+              "note": "Modelo enseñado en Explore.",
+              "prompt": "Practica esta expresión.",
+              "promptSpanish": "Di la expresión en voz alta."
             },
             {
-              "english": "It is a purple ball.",
-              "spanish": "Es una pelota morada.",
-              "prompt": "Describe a ball using a colour.",
-              "promptSpanish": "Describe una pelota usando un color."
+              "english": "Not bad.",
+              "spanish": "Not bad.",
+              "note": "Modelo enseñado en Explore.",
+              "prompt": "Practica esta expresión.",
+              "promptSpanish": "Di la expresión en voz alta."
             },
             {
-              "english": "I can see yellow and green.",
-              "spanish": "Puedo ver amarillo y verde.",
-              "prompt": "Say two colours you can see in the garden.",
-              "promptSpanish": "Di dos colores que puedes ver en el jardín."
+              "english": "And you?",
+              "spanish": "And you?",
+              "note": "Modelo enseñado en Explore.",
+              "prompt": "Practica esta expresión.",
+              "promptSpanish": "Di la expresión en voz alta."
             },
             {
-              "english": "A carrot is orange.",
-              "spanish": "Una zanahoria es naranja.",
-              "prompt": "What colour is a carrot usually?",
-              "promptSpanish": "¿De qué color suele ser una zanahoria?"
+              "english": "I'm happy.",
+              "spanish": "I'm happy.",
+              "note": "Modelo enseñado en Explore.",
+              "prompt": "Practica esta expresión.",
+              "promptSpanish": "Di la expresión en voz alta."
             },
             {
-              "english": "The dog is brown.",
-              "spanish": "El perro es marrón.",
-              "prompt": "Make a sentence with the words brown and dog.",
-              "promptSpanish": "Forma una frase con brown y dog."
+              "english": "I'm sad.",
+              "spanish": "I'm sad.",
+              "note": "Modelo enseñado en Explore.",
+              "prompt": "Practica esta expresión.",
+              "promptSpanish": "Di la expresión en voz alta."
             },
             {
-              "english": "What is your favourite colour?",
-              "spanish": "¿Cuál es tu color favorito?",
-              "prompt": "Ask a friend about their favourite colour.",
-              "promptSpanish": "Pregunta a un amigo cuál es su color favorito."
+              "english": "I'm tired.",
+              "spanish": "I'm tired.",
+              "note": "Modelo enseñado en Explore.",
+              "prompt": "Practica esta expresión.",
+              "promptSpanish": "Di la expresión en voz alta."
             }
           ],
           "listening": [
             {
-              "english": "Look around!",
-              "spanish": "¡Mira a tu alrededor!"
+              "english": "How are you?",
+              "spanish": "How are you?",
+              "note": "Modelo enseñado en Explore."
             },
             {
-              "english": "The sun is yellow, the sky is blue and the grass is green.",
-              "spanish": "El sol es amarillo, el cielo es azul y la hierba es verde."
+              "english": "I'm fine.",
+              "spanish": "I'm fine.",
+              "note": "Modelo enseñado en Explore."
             },
             {
-              "english": "Here is a red flower.",
-              "spanish": "Aquí hay una flor roja."
+              "english": "I'm good.",
+              "spanish": "I'm good.",
+              "note": "Modelo enseñado en Explore."
             },
             {
-              "english": "I can see a white cloud.",
-              "spanish": "Puedo ver una nube blanca."
+              "english": "Very well.",
+              "spanish": "Very well.",
+              "note": "Modelo enseñado en Explore."
             },
             {
-              "english": "My ball is purple too.",
-              "spanish": "Mi pelota también es morada."
+              "english": "I'm OK.",
+              "spanish": "I'm OK.",
+              "note": "Modelo enseñado en Explore."
             },
             {
-              "english": "Find something orange near the pink house.",
-              "spanish": "Encuentra algo naranja cerca de la casa rosa."
+              "english": "Not bad.",
+              "spanish": "Not bad.",
+              "note": "Modelo enseñado en Explore."
             },
             {
-              "english": "Point to a brown object.",
-              "spanish": "Señala un objeto marrón."
+              "english": "And you?",
+              "spanish": "And you?",
+              "note": "Modelo enseñado en Explore."
             },
             {
-              "english": "Great work!",
-              "spanish": "¡Muy bien!"
+              "english": "I'm happy.",
+              "spanish": "I'm happy.",
+              "note": "Modelo enseñado en Explore."
+            },
+            {
+              "english": "I'm sad.",
+              "spanish": "I'm sad.",
+              "note": "Modelo enseñado en Explore."
+            },
+            {
+              "english": "I'm tired.",
+              "spanish": "I'm tired.",
+              "note": "Modelo enseñado en Explore."
+            }
+          ]
+        },
+        "content": {
+          "blocks": [
+            {
+              "position": 1,
+              "title": "Bloque 1",
+              "content": "How are you?",
+              "example": "How are you?",
+              "translation": "Consulta la traducción y la guía de pronunciación de cada elemento."
+            },
+            {
+              "position": 2,
+              "title": "Bloque 2",
+              "content": "How are you? pregunta por el estado. Se puede responder I'm fine/good/OK, Very well o Not bad. And you? devuelve la pregunta. I'm se usa como fórmula; su contracción se explica en la misión 009.",
+              "example": "I'm fine.",
+              "translation": "Consulta la traducción y la guía de pronunciación de cada elemento."
+            },
+            {
+              "position": 3,
+              "title": "Bloque 3",
+              "content": "How are you? pregunta por el estado. Se puede responder I'm fine/good/OK, Very well o Not bad. And you? devuelve la pregunta. I'm se usa como fórmula; su contracción se explica en la misión 009.",
+              "example": "I'm good.",
+              "translation": "Consulta la traducción y la guía de pronunciación de cada elemento."
+            },
+            {
+              "position": 4,
+              "title": "Bloque 4",
+              "content": "How are you? pregunta por el estado. Se puede responder I'm fine/good/OK, Very well o Not bad. And you? devuelve la pregunta. I'm se usa como fórmula; su contracción se explica en la misión 009.",
+              "example": "Very well.",
+              "translation": "Consulta la traducción y la guía de pronunciación de cada elemento."
+            },
+            {
+              "position": 5,
+              "title": "Bloque 5",
+              "content": "How are you? pregunta por el estado. Se puede responder I'm fine/good/OK, Very well o Not bad. And you? devuelve la pregunta. I'm se usa como fórmula; su contracción se explica en la misión 009.",
+              "example": "I'm OK.",
+              "translation": "Consulta la traducción y la guía de pronunciación de cada elemento."
+            },
+            {
+              "position": 6,
+              "title": "Bloque 6",
+              "content": "How are you? pregunta por el estado. Se puede responder I'm fine/good/OK, Very well o Not bad. And you? devuelve la pregunta. I'm se usa como fórmula; su contracción se explica en la misión 009.",
+              "example": "Not bad.",
+              "translation": "Consulta la traducción y la guía de pronunciación de cada elemento."
+            },
+            {
+              "position": 7,
+              "title": "Bloque 7",
+              "content": "How are you? pregunta por el estado. Se puede responder I'm fine/good/OK, Very well o Not bad. And you? devuelve la pregunta. I'm se usa como fórmula; su contracción se explica en la misión 009.",
+              "example": "And you?",
+              "translation": "Consulta la traducción y la guía de pronunciación de cada elemento."
+            },
+            {
+              "position": 8,
+              "title": "Bloque 8",
+              "content": "How are you? pregunta por el estado. Se puede responder I'm fine/good/OK, Very well o Not bad. And you? devuelve la pregunta. I'm se usa como fórmula; su contracción se explica en la misión 009.",
+              "example": "I'm happy.",
+              "translation": "Consulta la traducción y la guía de pronunciación de cada elemento."
+            },
+            {
+              "position": 9,
+              "title": "Bloque 9",
+              "content": "How are you? pregunta por el estado. Se puede responder I'm fine/good/OK, Very well o Not bad. And you? devuelve la pregunta. I'm se usa como fórmula; su contracción se explica en la misión 009.",
+              "example": "I'm sad.",
+              "translation": "Consulta la traducción y la guía de pronunciación de cada elemento."
+            },
+            {
+              "position": 10,
+              "title": "Bloque 10",
+              "content": "How are you? pregunta por el estado. Se puede responder I'm fine/good/OK, Very well o Not bad. And you? devuelve la pregunta. I'm se usa como fórmula; su contracción se explica en la misión 009.",
+              "example": "I'm tired.",
+              "translation": "Consulta la traducción y la guía de pronunciación de cada elemento."
             }
           ]
         }
@@ -410,302 +615,142 @@
           {
             "itemId": "english-pre-a1-m003-practice-ex01-i01",
             "position": 1,
-            "taskType": "vocabulary_translation",
-            "prompt": "Choose the Spanish meaning of “red”.",
+            "prompt": "Elige la traducción de “How”.",
             "evaluation": {
               "type": "single_choice"
             },
             "options": [
-              "rojo",
-              "verde",
-              "naranja"
+              "estás",
+              "cómo",
+              "tú"
             ],
-            "answer": "rojo"
+            "answer": "cómo"
           },
           {
             "itemId": "english-pre-a1-m003-practice-ex01-i02",
             "position": 2,
-            "taskType": "vocabulary_translation",
-            "prompt": "Choose the Spanish meaning of “blue”.",
+            "prompt": "Elige la traducción de “are”.",
             "evaluation": {
               "type": "single_choice"
             },
             "options": [
-              "negro",
-              "rosa",
-              "azul"
+              "bien",
+              "tú",
+              "estás"
             ],
-            "answer": "azul"
+            "answer": "estás"
           },
           {
             "itemId": "english-pre-a1-m003-practice-ex01-i03",
             "position": 3,
-            "taskType": "vocabulary_translation",
-            "prompt": "Choose the Spanish meaning of “yellow”.",
+            "prompt": "Elige la traducción de “you”.",
             "evaluation": {
               "type": "single_choice"
             },
             "options": [
-              "blanco",
-              "amarillo",
-              "morado"
+              "tú",
+              "bien",
+              "una alternativa"
             ],
-            "answer": "amarillo"
+            "answer": "tú"
           },
           {
             "itemId": "english-pre-a1-m003-practice-ex01-i04",
             "position": 4,
-            "taskType": "vocabulary_translation",
-            "prompt": "Choose the Spanish meaning of “green”.",
+            "prompt": "Elige la traducción de “fine”.",
             "evaluation": {
               "type": "single_choice"
             },
             "options": [
-              "naranja",
-              "marrón",
-              "verde"
+              "otra opción",
+              "bien",
+              "muy"
             ],
-            "answer": "verde"
+            "answer": "bien"
           },
           {
             "itemId": "english-pre-a1-m003-practice-ex01-i05",
             "position": 5,
-            "taskType": "vocabulary_translation",
-            "prompt": "Choose the Spanish meaning of “black”.",
+            "prompt": "Elige la traducción de “good”.",
             "evaluation": {
               "type": "single_choice"
             },
             "options": [
-              "rosa",
-              "negro",
-              "rojo"
+              "una alternativa",
+              "muy",
+              "bien"
             ],
-            "answer": "negro"
+            "answer": "bien"
           },
           {
             "itemId": "english-pre-a1-m003-practice-ex01-i06",
             "position": 6,
-            "taskType": "vocabulary_translation",
-            "prompt": "Choose the Spanish meaning of “white”.",
+            "prompt": "Elige la traducción de “very”.",
             "evaluation": {
               "type": "single_choice"
             },
             "options": [
-              "blanco",
-              "morado",
-              "azul"
+              "muy",
+              "bien",
+              "bien/de acuerdo"
             ],
-            "answer": "blanco"
+            "answer": "muy"
           },
           {
             "itemId": "english-pre-a1-m003-practice-ex01-i07",
             "position": 7,
-            "taskType": "vocabulary_translation",
-            "prompt": "Choose the Spanish meaning of “orange”.",
+            "prompt": "Elige la traducción de “well”.",
             "evaluation": {
               "type": "single_choice"
             },
             "options": [
-              "naranja",
-              "marrón",
-              "amarillo"
+              "bien/de acuerdo",
+              "bien",
+              "no"
             ],
-            "answer": "naranja"
+            "answer": "bien"
           },
           {
             "itemId": "english-pre-a1-m003-practice-ex01-i08",
             "position": 8,
-            "taskType": "vocabulary_translation",
-            "prompt": "Choose the Spanish meaning of “pink”.",
+            "prompt": "Elige la traducción de “OK”.",
             "evaluation": {
               "type": "single_choice"
             },
             "options": [
-              "rojo",
-              "verde",
-              "rosa"
+              "mal",
+              "no",
+              "bien/de acuerdo"
             ],
-            "answer": "rosa"
+            "answer": "bien/de acuerdo"
           },
           {
             "itemId": "english-pre-a1-m003-practice-ex01-i09",
             "position": 9,
-            "taskType": "vocabulary_translation",
-            "prompt": "Choose the Spanish meaning of “purple”.",
+            "prompt": "Elige la traducción de “not”.",
             "evaluation": {
               "type": "single_choice"
             },
             "options": [
-              "azul",
-              "morado",
-              "negro"
+              "no",
+              "mal",
+              "y"
             ],
-            "answer": "morado"
+            "answer": "no"
           },
           {
             "itemId": "english-pre-a1-m003-practice-ex01-i10",
             "position": 10,
-            "taskType": "vocabulary_translation",
-            "prompt": "Choose the Spanish meaning of “brown”.",
+            "prompt": "Elige la traducción de “bad”.",
             "evaluation": {
               "type": "single_choice"
             },
             "options": [
-              "marrón",
-              "amarillo",
-              "blanco"
+              "y",
+              "mal",
+              "feliz"
             ],
-            "answer": "marrón"
-          },
-          {
-            "itemId": "english-pre-a1-m003-practice-ex01-i11",
-            "position": 11,
-            "taskType": "colour_in_context",
-            "prompt": "What colour is the sky on a clear day?",
-            "evaluation": {
-              "type": "single_choice"
-            },
-            "options": [
-              "green",
-              "blue",
-              "brown"
-            ],
-            "answer": "blue"
-          },
-          {
-            "itemId": "english-pre-a1-m003-practice-ex01-i12",
-            "position": 12,
-            "taskType": "colour_in_context",
-            "prompt": "Which colour is a ripe banana usually?",
-            "evaluation": {
-              "type": "single_choice"
-            },
-            "options": [
-              "purple",
-              "black",
-              "yellow"
-            ],
-            "answer": "yellow"
-          },
-          {
-            "itemId": "english-pre-a1-m003-practice-ex01-i13",
-            "position": 13,
-            "taskType": "colour_in_context",
-            "prompt": "What colour is fresh grass?",
-            "evaluation": {
-              "type": "single_choice"
-            },
-            "options": [
-              "green",
-              "pink",
-              "orange"
-            ],
-            "answer": "green"
-          },
-          {
-            "itemId": "english-pre-a1-m003-practice-ex01-i14",
-            "position": 14,
-            "taskType": "colour_in_context",
-            "prompt": "Which colour is a strawberry usually?",
-            "evaluation": {
-              "type": "single_choice"
-            },
-            "options": [
-              "blue",
-              "red",
-              "white"
-            ],
-            "answer": "red"
-          },
-          {
-            "itemId": "english-pre-a1-m003-practice-ex01-i15",
-            "position": 15,
-            "taskType": "colour_in_context",
-            "prompt": "What colour is snow?",
-            "evaluation": {
-              "type": "single_choice"
-            },
-            "options": [
-              "brown",
-              "purple",
-              "white"
-            ],
-            "answer": "white"
-          },
-          {
-            "itemId": "english-pre-a1-m003-practice-ex01-i16",
-            "position": 16,
-            "taskType": "colour_in_context",
-            "prompt": "Which colour is a carrot usually?",
-            "evaluation": {
-              "type": "single_choice"
-            },
-            "options": [
-              "orange",
-              "pink",
-              "black"
-            ],
-            "answer": "orange"
-          },
-          {
-            "itemId": "english-pre-a1-m003-practice-ex01-i17",
-            "position": 17,
-            "taskType": "colour_in_context",
-            "prompt": "What colour are many flamingos?",
-            "evaluation": {
-              "type": "single_choice"
-            },
-            "options": [
-              "green",
-              "pink",
-              "blue"
-            ],
-            "answer": "pink"
-          },
-          {
-            "itemId": "english-pre-a1-m003-practice-ex01-i18",
-            "position": 18,
-            "taskType": "colour_in_context",
-            "prompt": "Which colour is often used for an aubergine?",
-            "evaluation": {
-              "type": "single_choice"
-            },
-            "options": [
-              "yellow",
-              "white",
-              "purple"
-            ],
-            "answer": "purple"
-          },
-          {
-            "itemId": "english-pre-a1-m003-practice-ex01-i19",
-            "position": 19,
-            "taskType": "colour_in_context",
-            "prompt": "What colour is dark chocolate?",
-            "evaluation": {
-              "type": "single_choice"
-            },
-            "options": [
-              "blue",
-              "brown",
-              "pink"
-            ],
-            "answer": "brown"
-          },
-          {
-            "itemId": "english-pre-a1-m003-practice-ex01-i20",
-            "position": 20,
-            "taskType": "colour_in_context",
-            "prompt": "Which colour is the darkest in this list?",
-            "evaluation": {
-              "type": "single_choice"
-            },
-            "options": [
-              "yellow",
-              "white",
-              "black"
-            ],
-            "answer": "black"
+            "answer": "mal"
           }
         ]
       }
@@ -717,146 +762,223 @@
       "exercise": {
         "exerciseId": "english-pre-a1-m003-grammar-ex01",
         "type": "grammar",
+        "theory": {
+          "title": "How are you?",
+          "explanation": "How are you? pregunta por el estado. Se puede responder I'm fine/good/OK, Very well o Not bad. And you? devuelve la pregunta. I'm se usa como fórmula; su contracción se explica en la misión 009.",
+          "tip": "Comprende todos los modelos de Explore antes de comenzar las actividades.",
+          "patterns": [
+            {
+              "label": "Bloque 1",
+              "pattern": "How are you?",
+              "examples": [
+                "How are you?"
+              ]
+            },
+            {
+              "label": "Bloque 2",
+              "pattern": "How are you? pregunta por el estado. Se puede responder I'm fine/good/OK, Very well o Not bad. And you? devuelve la pregunta. I'm se usa como fórmula; su contracción se explica en la misión 009.",
+              "examples": [
+                "I'm fine."
+              ]
+            },
+            {
+              "label": "Bloque 3",
+              "pattern": "How are you? pregunta por el estado. Se puede responder I'm fine/good/OK, Very well o Not bad. And you? devuelve la pregunta. I'm se usa como fórmula; su contracción se explica en la misión 009.",
+              "examples": [
+                "I'm good."
+              ]
+            },
+            {
+              "label": "Bloque 4",
+              "pattern": "How are you? pregunta por el estado. Se puede responder I'm fine/good/OK, Very well o Not bad. And you? devuelve la pregunta. I'm se usa como fórmula; su contracción se explica en la misión 009.",
+              "examples": [
+                "Very well."
+              ]
+            },
+            {
+              "label": "Bloque 5",
+              "pattern": "How are you? pregunta por el estado. Se puede responder I'm fine/good/OK, Very well o Not bad. And you? devuelve la pregunta. I'm se usa como fórmula; su contracción se explica en la misión 009.",
+              "examples": [
+                "I'm OK."
+              ]
+            },
+            {
+              "label": "Bloque 6",
+              "pattern": "How are you? pregunta por el estado. Se puede responder I'm fine/good/OK, Very well o Not bad. And you? devuelve la pregunta. I'm se usa como fórmula; su contracción se explica en la misión 009.",
+              "examples": [
+                "Not bad."
+              ]
+            },
+            {
+              "label": "Bloque 7",
+              "pattern": "How are you? pregunta por el estado. Se puede responder I'm fine/good/OK, Very well o Not bad. And you? devuelve la pregunta. I'm se usa como fórmula; su contracción se explica en la misión 009.",
+              "examples": [
+                "And you?"
+              ]
+            },
+            {
+              "label": "Bloque 8",
+              "pattern": "How are you? pregunta por el estado. Se puede responder I'm fine/good/OK, Very well o Not bad. And you? devuelve la pregunta. I'm se usa como fórmula; su contracción se explica en la misión 009.",
+              "examples": [
+                "I'm happy."
+              ]
+            },
+            {
+              "label": "Bloque 9",
+              "pattern": "How are you? pregunta por el estado. Se puede responder I'm fine/good/OK, Very well o Not bad. And you? devuelve la pregunta. I'm se usa como fórmula; su contracción se explica en la misión 009.",
+              "examples": [
+                "I'm sad."
+              ]
+            },
+            {
+              "label": "Bloque 10",
+              "pattern": "How are you? pregunta por el estado. Se puede responder I'm fine/good/OK, Very well o Not bad. And you? devuelve la pregunta. I'm se usa como fórmula; su contracción se explica en la misión 009.",
+              "examples": [
+                "I'm tired."
+              ]
+            }
+          ]
+        },
         "items": [
           {
             "itemId": "english-pre-a1-m003-grammar-ex01-i01",
             "position": 1,
-            "prompt": "Choose the correct phrase.",
+            "prompt": "Reconoce el modelo trabajado: How are you?",
             "evaluation": {
               "type": "single_choice"
             },
             "options": [
-              "a ball red",
-              "red a ball",
-              "a red ball"
+              "I'm fine.",
+              "How are you?",
+              "I'm good."
             ],
-            "answer": "a red ball"
-          },
-          {
-            "itemId": "english-pre-a1-m003-grammar-ex01-i03",
-            "position": 3,
-            "prompt": "Choose the correct phrase.",
-            "evaluation": {
-              "type": "single_choice"
-            },
-            "options": [
-              "a car blue",
-              "a blue car",
-              "blue a car"
-            ],
-            "answer": "a blue car"
-          },
-          {
-            "itemId": "english-pre-a1-m003-grammar-ex01-i05",
-            "position": 5,
-            "prompt": "Choose the correct sentence.",
-            "evaluation": {
-              "type": "single_choice"
-            },
-            "options": [
-              "It is black a cat.",
-              "It a black is cat.",
-              "It is a black cat."
-            ],
-            "answer": "It is a black cat."
-          },
-          {
-            "itemId": "english-pre-a1-m003-grammar-ex01-i10",
-            "position": 10,
-            "prompt": "Choose the correct sentence.",
-            "evaluation": {
-              "type": "single_choice"
-            },
-            "options": [
-              "The dog brown is big.",
-              "The big is brown dog.",
-              "The brown dog is big."
-            ],
-            "answer": "The brown dog is big."
+            "answer": "How are you?"
           },
           {
             "itemId": "english-pre-a1-m003-grammar-ex01-i02",
             "position": 2,
-            "prompt": "Complete: It is a ___ flower.",
+            "prompt": "Reconoce el modelo trabajado: I'm fine.",
             "evaluation": {
               "type": "single_choice"
             },
             "options": [
-              "yellow",
-              "yellowly",
-              "yellows"
+              "Very well.",
+              "I'm good.",
+              "I'm fine."
             ],
-            "answer": "yellow"
+            "answer": "I'm fine."
+          },
+          {
+            "itemId": "english-pre-a1-m003-grammar-ex01-i03",
+            "position": 3,
+            "prompt": "Reconoce el modelo trabajado: I'm good.",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "I'm good.",
+              "Very well.",
+              "I'm OK."
+            ],
+            "answer": "I'm good."
           },
           {
             "itemId": "english-pre-a1-m003-grammar-ex01-i04",
             "position": 4,
-            "prompt": "Complete: The grass is ___.",
+            "prompt": "Reconoce el modelo trabajado: Very well.",
             "evaluation": {
               "type": "single_choice"
             },
             "options": [
-              "green",
-              "a green",
-              "greens"
+              "I'm OK.",
+              "Very well.",
+              "Not bad."
             ],
-            "answer": "green"
+            "answer": "Very well."
+          },
+          {
+            "itemId": "english-pre-a1-m003-grammar-ex01-i05",
+            "position": 5,
+            "prompt": "Reconoce el modelo trabajado: I'm OK.",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "And you?",
+              "Not bad.",
+              "I'm OK."
+            ],
+            "answer": "I'm OK."
           },
           {
             "itemId": "english-pre-a1-m003-grammar-ex01-i06",
             "position": 6,
-            "prompt": "Put the words in the correct order: (white / a / cloud).",
+            "prompt": "Reconoce el modelo trabajado: Not bad.",
             "evaluation": {
               "type": "single_choice"
             },
             "options": [
-              "a cloud white",
-              "a white cloud",
-              "white a cloud"
+              "Not bad.",
+              "And you?",
+              "I'm happy."
             ],
-            "answer": "a white cloud"
+            "answer": "Not bad."
           },
           {
             "itemId": "english-pre-a1-m003-grammar-ex01-i07",
             "position": 7,
-            "prompt": "Complete: I can see ___ orange fish.",
+            "prompt": "Reconoce el modelo trabajado: And you?",
             "evaluation": {
               "type": "single_choice"
             },
             "options": [
-              "a",
-              "an",
-              "are"
+              "I'm happy.",
+              "And you?",
+              "I'm sad."
             ],
-            "answer": "an"
+            "answer": "And you?"
           },
           {
             "itemId": "english-pre-a1-m003-grammar-ex01-i08",
             "position": 8,
-            "prompt": "Choose the correct phrase.",
+            "prompt": "Reconoce el modelo trabajado: I'm happy.",
             "evaluation": {
               "type": "single_choice"
             },
             "options": [
-              "three pink flowers",
-              "three flowers pink",
-              "pink three flowers"
+              "I'm tired.",
+              "I'm sad.",
+              "I'm happy."
             ],
-            "answer": "three pink flowers"
+            "answer": "I'm happy."
           },
           {
             "itemId": "english-pre-a1-m003-grammar-ex01-i09",
             "position": 9,
-            "prompt": "Complete: The ball is ___.",
+            "prompt": "Reconoce el modelo trabajado: I'm sad.",
             "evaluation": {
               "type": "single_choice"
             },
             "options": [
-              "a purple",
-              "purples",
-              "purple"
+              "I'm sad.",
+              "I'm tired.",
+              "How are you?"
             ],
-            "answer": "purple"
+            "answer": "I'm sad."
+          },
+          {
+            "itemId": "english-pre-a1-m003-grammar-ex01-i10",
+            "position": 10,
+            "prompt": "Reconoce el modelo trabajado: I'm tired.",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "How are you?",
+              "I'm tired.",
+              "I'm fine."
+            ],
+            "answer": "I'm tired."
           }
         ]
       }
@@ -872,82 +994,152 @@
           {
             "itemId": "english-pre-a1-m003-pronunciation-ex01-i01",
             "position": 1,
-            "word": "red",
-            "translation": "rojo",
-            "pronunciationGuide": "red",
-            "audio": "tts:en-GB:red"
+            "word": "How",
+            "translation": "cómo",
+            "pronunciationGuide": "jáu",
+            "audio": "tts:en-GB:How",
+            "audioStatus": "synthetic_pending_review",
+            "guideType": "approximate_spanish"
           },
           {
             "itemId": "english-pre-a1-m003-pronunciation-ex01-i02",
             "position": 2,
-            "word": "blue",
-            "translation": "azul",
-            "pronunciationGuide": "blúu",
-            "audio": "tts:en-GB:blue"
+            "word": "are",
+            "translation": "estás",
+            "pronunciationGuide": "ar",
+            "audio": "tts:en-GB:are",
+            "audioStatus": "synthetic_pending_review",
+            "guideType": "approximate_spanish"
           },
           {
             "itemId": "english-pre-a1-m003-pronunciation-ex01-i03",
             "position": 3,
-            "word": "yellow",
-            "translation": "amarillo",
-            "pronunciationGuide": "iélou",
-            "audio": "tts:en-GB:yellow"
+            "word": "you",
+            "translation": "tú",
+            "pronunciationGuide": "iú",
+            "audio": "tts:en-GB:you",
+            "audioStatus": "synthetic_pending_review",
+            "guideType": "approximate_spanish"
           },
           {
             "itemId": "english-pre-a1-m003-pronunciation-ex01-i04",
             "position": 4,
-            "word": "green",
-            "translation": "verde",
-            "pronunciationGuide": "gríin",
-            "audio": "tts:en-GB:green"
+            "word": "fine",
+            "translation": "bien",
+            "pronunciationGuide": "fáin",
+            "audio": "tts:en-GB:fine",
+            "audioStatus": "synthetic_pending_review",
+            "guideType": "approximate_spanish"
           },
           {
             "itemId": "english-pre-a1-m003-pronunciation-ex01-i05",
             "position": 5,
-            "word": "black",
-            "translation": "negro",
-            "pronunciationGuide": "blak",
-            "audio": "tts:en-GB:black"
+            "word": "good",
+            "translation": "bien",
+            "pronunciationGuide": "gud",
+            "audio": "tts:en-GB:good",
+            "audioStatus": "synthetic_pending_review",
+            "guideType": "approximate_spanish"
           },
           {
             "itemId": "english-pre-a1-m003-pronunciation-ex01-i06",
             "position": 6,
-            "word": "white",
-            "translation": "blanco",
-            "pronunciationGuide": "uáit",
-            "audio": "tts:en-GB:white"
+            "word": "very",
+            "translation": "muy",
+            "pronunciationGuide": "VÉ-ri",
+            "audio": "tts:en-GB:very",
+            "audioStatus": "synthetic_pending_review",
+            "guideType": "approximate_spanish"
           },
           {
             "itemId": "english-pre-a1-m003-pronunciation-ex01-i07",
             "position": 7,
-            "word": "orange",
-            "translation": "naranja",
-            "pronunciationGuide": "órinch",
-            "audio": "tts:en-GB:orange"
+            "word": "well",
+            "translation": "bien",
+            "pronunciationGuide": "uél",
+            "audio": "tts:en-GB:well",
+            "audioStatus": "synthetic_pending_review",
+            "guideType": "approximate_spanish"
           },
           {
             "itemId": "english-pre-a1-m003-pronunciation-ex01-i08",
             "position": 8,
-            "word": "pink",
-            "translation": "rosa",
-            "pronunciationGuide": "pink",
-            "audio": "tts:en-GB:pink"
+            "word": "OK",
+            "translation": "bien/de acuerdo",
+            "pronunciationGuide": "óu-KÉI",
+            "audio": "tts:en-GB:OK",
+            "audioStatus": "synthetic_pending_review",
+            "guideType": "approximate_spanish"
           },
           {
             "itemId": "english-pre-a1-m003-pronunciation-ex01-i09",
             "position": 9,
-            "word": "purple",
-            "translation": "morado",
-            "pronunciationGuide": "pérpol",
-            "audio": "tts:en-GB:purple"
+            "word": "not",
+            "translation": "no",
+            "pronunciationGuide": "not",
+            "audio": "tts:en-GB:not",
+            "audioStatus": "synthetic_pending_review",
+            "guideType": "approximate_spanish"
           },
           {
             "itemId": "english-pre-a1-m003-pronunciation-ex01-i10",
             "position": 10,
-            "word": "brown",
-            "translation": "marrón",
-            "pronunciationGuide": "braun",
-            "audio": "tts:en-GB:brown"
+            "word": "bad",
+            "translation": "mal",
+            "pronunciationGuide": "bad",
+            "audio": "tts:en-GB:bad",
+            "audioStatus": "synthetic_pending_review",
+            "guideType": "approximate_spanish"
+          },
+          {
+            "itemId": "english-pre-a1-m003-pronunciation-ex01-i11",
+            "position": 11,
+            "word": "and",
+            "translation": "y",
+            "pronunciationGuide": "and",
+            "audio": "tts:en-GB:and",
+            "audioStatus": "synthetic_pending_review",
+            "guideType": "approximate_spanish"
+          },
+          {
+            "itemId": "english-pre-a1-m003-pronunciation-ex01-i12",
+            "position": 12,
+            "word": "happy",
+            "translation": "feliz",
+            "pronunciationGuide": "JÁ-pi",
+            "audio": "tts:en-GB:happy",
+            "audioStatus": "synthetic_pending_review",
+            "guideType": "approximate_spanish"
+          },
+          {
+            "itemId": "english-pre-a1-m003-pronunciation-ex01-i13",
+            "position": 13,
+            "word": "sad",
+            "translation": "triste",
+            "pronunciationGuide": "sad",
+            "audio": "tts:en-GB:sad",
+            "audioStatus": "synthetic_pending_review",
+            "guideType": "approximate_spanish"
+          },
+          {
+            "itemId": "english-pre-a1-m003-pronunciation-ex01-i14",
+            "position": 14,
+            "word": "tired",
+            "translation": "cansado",
+            "pronunciationGuide": "TÁI-erd",
+            "audio": "tts:en-GB:tired",
+            "audioStatus": "synthetic_pending_review",
+            "guideType": "approximate_spanish"
+          },
+          {
+            "itemId": "english-pre-a1-m003-pronunciation-ex01-i15",
+            "position": 15,
+            "word": "great",
+            "translation": "genial",
+            "pronunciationGuide": "gréit",
+            "audio": "tts:en-GB:great",
+            "audioStatus": "synthetic_pending_review",
+            "guideType": "approximate_spanish"
           }
         ]
       }
@@ -961,148 +1153,226 @@
         "type": "reading_comprehension",
         "content": {
           "passageId": "english-pre-a1-m003-reading-passage-01",
-          "passage": "I can see colours in the garden. The sun is yellow. The sky is blue. The grass is green. I see a red flower and a white cloud. My ball is blue too. What is your favourite colour?"
+          "passage": "Hello! How are you? I'm fine. And you? I'm good. I'm happy. I'm not tired.",
+          "translation": "Traducción del texto: Hello! How are you? I'm fine. And you? I'm good. I'm happy. I'm not tired.",
+          "vocabulary": [
+            {
+              "word": "How",
+              "translation": "cómo",
+              "pronunciationGuide": "jáu"
+            },
+            {
+              "word": "are",
+              "translation": "estás",
+              "pronunciationGuide": "ar"
+            },
+            {
+              "word": "you",
+              "translation": "tú",
+              "pronunciationGuide": "iú"
+            },
+            {
+              "word": "fine",
+              "translation": "bien",
+              "pronunciationGuide": "fáin"
+            },
+            {
+              "word": "good",
+              "translation": "bien",
+              "pronunciationGuide": "gud"
+            },
+            {
+              "word": "very",
+              "translation": "muy",
+              "pronunciationGuide": "VÉ-ri"
+            },
+            {
+              "word": "well",
+              "translation": "bien",
+              "pronunciationGuide": "uél"
+            },
+            {
+              "word": "OK",
+              "translation": "bien/de acuerdo",
+              "pronunciationGuide": "óu-KÉI"
+            },
+            {
+              "word": "not",
+              "translation": "no",
+              "pronunciationGuide": "not"
+            },
+            {
+              "word": "bad",
+              "translation": "mal",
+              "pronunciationGuide": "bad"
+            },
+            {
+              "word": "and",
+              "translation": "y",
+              "pronunciationGuide": "and"
+            },
+            {
+              "word": "happy",
+              "translation": "feliz",
+              "pronunciationGuide": "JÁ-pi"
+            },
+            {
+              "word": "sad",
+              "translation": "triste",
+              "pronunciationGuide": "sad"
+            },
+            {
+              "word": "tired",
+              "translation": "cansado",
+              "pronunciationGuide": "TÁI-erd"
+            },
+            {
+              "word": "great",
+              "translation": "genial",
+              "pronunciationGuide": "gréit"
+            }
+          ]
         },
         "items": [
           {
             "itemId": "english-pre-a1-m003-reading-ex01-i01",
             "position": 1,
-            "prompt": "What can the writer see in the garden?",
+            "prompt": "¿Qué tema presenta el texto?",
             "evaluation": {
               "type": "single_choice"
             },
             "options": [
-              "Colours",
-              "Animals",
-              "Cars"
+              "cómo",
+              "How are you?",
+              "estás"
             ],
-            "answer": "Colours"
+            "answer": "How are you?"
           },
           {
             "itemId": "english-pre-a1-m003-reading-ex01-i02",
             "position": 2,
-            "prompt": "What colour is the sun?",
+            "prompt": "¿Qué significa “are” en el texto?",
             "evaluation": {
               "type": "single_choice"
             },
             "options": [
-              "Blue",
-              "Yellow",
-              "Green"
+              "bien",
+              "tú",
+              "estás"
             ],
-            "answer": "Yellow"
+            "answer": "estás"
           },
           {
             "itemId": "english-pre-a1-m003-reading-ex01-i03",
             "position": 3,
-            "prompt": "What colour is the sky?",
+            "prompt": "¿Qué significa “you” en el texto?",
             "evaluation": {
               "type": "single_choice"
             },
             "options": [
-              "Red",
-              "White",
-              "Blue"
+              "tú",
+              "bien",
+              "otra respuesta"
             ],
-            "answer": "Blue"
+            "answer": "tú"
           },
           {
             "itemId": "english-pre-a1-m003-reading-ex01-i04",
             "position": 4,
-            "prompt": "What colour is the grass?",
+            "prompt": "¿Qué significa “fine” en el texto?",
             "evaluation": {
               "type": "single_choice"
             },
             "options": [
-              "Green",
-              "Black",
-              "Pink"
+              "otra opción",
+              "bien",
+              "muy"
             ],
-            "answer": "Green"
+            "answer": "bien"
           },
           {
             "itemId": "english-pre-a1-m003-reading-ex01-i05",
             "position": 5,
-            "prompt": "What colour is the flower?",
+            "prompt": "¿Qué significa “good” en el texto?",
             "evaluation": {
               "type": "single_choice"
             },
             "options": [
-              "White",
-              "Red",
-              "Brown"
+              "otra respuesta",
+              "muy",
+              "bien"
             ],
-            "answer": "Red"
+            "answer": "bien"
           },
           {
             "itemId": "english-pre-a1-m003-reading-ex01-i06",
             "position": 6,
-            "prompt": "What colour is the cloud?",
+            "prompt": "¿Qué significa “very” en el texto?",
             "evaluation": {
               "type": "single_choice"
             },
             "options": [
-              "Purple",
-              "Orange",
-              "White"
+              "muy",
+              "bien",
+              "bien/de acuerdo"
             ],
-            "answer": "White"
+            "answer": "muy"
           },
           {
             "itemId": "english-pre-a1-m003-reading-ex01-i07",
             "position": 7,
-            "prompt": "What colour is the writer's ball?",
+            "prompt": "¿Qué significa “well” en el texto?",
             "evaluation": {
               "type": "single_choice"
             },
             "options": [
-              "Yellow",
-              "Red",
-              "Blue"
+              "bien/de acuerdo",
+              "bien",
+              "no"
             ],
-            "answer": "Blue"
+            "answer": "bien"
           },
           {
             "itemId": "english-pre-a1-m003-reading-ex01-i08",
             "position": 8,
-            "prompt": "Which colour describes both the sky and the ball?",
+            "prompt": "¿Qué significa “OK” en el texto?",
             "evaluation": {
               "type": "single_choice"
             },
             "options": [
-              "Blue",
-              "Yellow",
-              "Red"
+              "mal",
+              "no",
+              "bien/de acuerdo"
             ],
-            "answer": "Blue"
+            "answer": "bien/de acuerdo"
           },
           {
             "itemId": "english-pre-a1-m003-reading-ex01-i09",
             "position": 9,
-            "prompt": "Which two things are described after the grass?",
+            "prompt": "¿Qué significa “not” en el texto?",
             "evaluation": {
               "type": "single_choice"
             },
             "options": [
-              "A tree and a bird",
-              "A flower and a cloud",
-              "A book and a pen"
+              "no",
+              "mal",
+              "y"
             ],
-            "answer": "A flower and a cloud"
+            "answer": "no"
           },
           {
             "itemId": "english-pre-a1-m003-reading-ex01-i10",
             "position": 10,
-            "prompt": "What does the writer ask at the end?",
+            "prompt": "¿Qué significa “bad” en el texto?",
             "evaluation": {
               "type": "single_choice"
             },
             "options": [
-              "Your favourite colour",
-              "Your favourite food",
-              "Your name"
+              "y",
+              "mal",
+              "feliz"
             ],
-            "answer": "Your favourite colour"
+            "answer": "mal"
           }
         ]
       }
@@ -1118,180 +1388,190 @@
           {
             "itemId": "english-pre-a1-m003-writing-ex01-i01",
             "position": 1,
-            "audio": "tts:en-GB:The sun is yellow.",
-            "expectedAnswer": "The sun is yellow.",
+            "audio": "tts:en-GB:How are you?",
+            "audioLocale": "en-GB",
+            "audioStatus": "synthetic_pending_review",
+            "kind": "sentence",
+            "repeatCount": 3,
+            "expectedAnswer": "How are you?",
             "evaluation": {
               "type": "normalised_text"
             },
-            "audioLocale": "en-GB",
-            "kind": "sentence",
-            "repeatCount": 3,
             "segments": [
               {
                 "segmentId": "english-pre-a1-m003-writing-segment-01",
-                "text": "The sun is yellow."
+                "text": "How are you?"
               }
             ]
           },
           {
             "itemId": "english-pre-a1-m003-writing-ex01-i02",
             "position": 2,
-            "audio": "tts:en-GB:The sky is blue.",
-            "expectedAnswer": "The sky is blue.",
+            "audio": "tts:en-GB:I'm fine.",
+            "audioLocale": "en-GB",
+            "audioStatus": "synthetic_pending_review",
+            "kind": "sentence",
+            "repeatCount": 3,
+            "expectedAnswer": "I'm fine.",
             "evaluation": {
               "type": "normalised_text"
             },
-            "audioLocale": "en-GB",
-            "kind": "sentence",
-            "repeatCount": 3,
             "segments": [
               {
                 "segmentId": "english-pre-a1-m003-writing-segment-02",
-                "text": "The sky is blue."
+                "text": "I'm fine."
               }
             ]
           },
           {
             "itemId": "english-pre-a1-m003-writing-ex01-i03",
             "position": 3,
-            "audio": "tts:en-GB:The grass is green.",
-            "expectedAnswer": "The grass is green.",
+            "audio": "tts:en-GB:I'm good.",
+            "audioLocale": "en-GB",
+            "audioStatus": "synthetic_pending_review",
+            "kind": "sentence",
+            "repeatCount": 3,
+            "expectedAnswer": "I'm good.",
             "evaluation": {
               "type": "normalised_text"
             },
-            "audioLocale": "en-GB",
-            "kind": "sentence",
-            "repeatCount": 3,
             "segments": [
               {
                 "segmentId": "english-pre-a1-m003-writing-segment-03",
-                "text": "The grass is green."
+                "text": "I'm good."
               }
             ]
           },
           {
             "itemId": "english-pre-a1-m003-writing-ex01-i04",
             "position": 4,
-            "audio": "tts:en-GB:I see a red flower.",
-            "expectedAnswer": "I see a red flower.",
+            "audio": "tts:en-GB:Very well.",
+            "audioLocale": "en-GB",
+            "audioStatus": "synthetic_pending_review",
+            "kind": "sentence",
+            "repeatCount": 3,
+            "expectedAnswer": "Very well.",
             "evaluation": {
               "type": "normalised_text"
             },
-            "audioLocale": "en-GB",
-            "kind": "sentence",
-            "repeatCount": 3,
             "segments": [
               {
                 "segmentId": "english-pre-a1-m003-writing-segment-04",
-                "text": "I see a red flower."
+                "text": "Very well."
               }
             ]
           },
           {
             "itemId": "english-pre-a1-m003-writing-ex01-i05",
             "position": 5,
-            "audio": "tts:en-GB:The cloud is white.",
-            "expectedAnswer": "The cloud is white.",
+            "audio": "tts:en-GB:I'm OK.",
+            "audioLocale": "en-GB",
+            "audioStatus": "synthetic_pending_review",
+            "kind": "sentence",
+            "repeatCount": 3,
+            "expectedAnswer": "I'm OK.",
             "evaluation": {
               "type": "normalised_text"
             },
-            "audioLocale": "en-GB",
-            "kind": "sentence",
-            "repeatCount": 3,
             "segments": [
               {
                 "segmentId": "english-pre-a1-m003-writing-segment-05",
-                "text": "The cloud is white."
+                "text": "I'm OK."
               }
             ]
           },
           {
             "itemId": "english-pre-a1-m003-writing-ex01-i06",
             "position": 6,
-            "audio": "tts:en-GB:My ball is purple.",
-            "expectedAnswer": "My ball is purple.",
+            "audio": "tts:en-GB:Not bad.",
+            "audioLocale": "en-GB",
+            "audioStatus": "synthetic_pending_review",
+            "kind": "sentence",
+            "repeatCount": 3,
+            "expectedAnswer": "Not bad.",
             "evaluation": {
               "type": "normalised_text"
             },
-            "audioLocale": "en-GB",
-            "kind": "sentence",
-            "repeatCount": 3,
             "segments": [
               {
                 "segmentId": "english-pre-a1-m003-writing-segment-06",
-                "text": "My ball is purple."
+                "text": "Not bad."
               }
             ]
           },
           {
             "itemId": "english-pre-a1-m003-writing-ex01-i07",
             "position": 7,
-            "audio": "tts:en-GB:I see an orange fish.",
-            "expectedAnswer": "I see an orange fish.",
+            "audio": "tts:en-GB:And you?",
+            "audioLocale": "en-GB",
+            "audioStatus": "synthetic_pending_review",
+            "kind": "sentence",
+            "repeatCount": 3,
+            "expectedAnswer": "And you?",
             "evaluation": {
               "type": "normalised_text"
             },
-            "audioLocale": "en-GB",
-            "kind": "sentence",
-            "repeatCount": 3,
             "segments": [
               {
                 "segmentId": "english-pre-a1-m003-writing-segment-07",
-                "text": "I see an orange fish."
+                "text": "And you?"
               }
             ]
           },
           {
             "itemId": "english-pre-a1-m003-writing-ex01-i08",
             "position": 8,
-            "audio": "tts:en-GB:The house is pink.",
-            "expectedAnswer": "The house is pink.",
+            "audio": "tts:en-GB:I'm happy.",
+            "audioLocale": "en-GB",
+            "audioStatus": "synthetic_pending_review",
+            "kind": "sentence",
+            "repeatCount": 3,
+            "expectedAnswer": "I'm happy.",
             "evaluation": {
               "type": "normalised_text"
             },
-            "audioLocale": "en-GB",
-            "kind": "sentence",
-            "repeatCount": 3,
             "segments": [
               {
                 "segmentId": "english-pre-a1-m003-writing-segment-08",
-                "text": "The house is pink."
+                "text": "I'm happy."
               }
             ]
           },
           {
             "itemId": "english-pre-a1-m003-writing-ex01-i09",
             "position": 9,
-            "audio": "tts:en-GB:The dog is brown.",
-            "expectedAnswer": "The dog is brown.",
+            "audio": "tts:en-GB:I'm sad.",
+            "audioLocale": "en-GB",
+            "audioStatus": "synthetic_pending_review",
+            "kind": "sentence",
+            "repeatCount": 3,
+            "expectedAnswer": "I'm sad.",
             "evaluation": {
               "type": "normalised_text"
             },
-            "audioLocale": "en-GB",
-            "kind": "sentence",
-            "repeatCount": 3,
             "segments": [
               {
                 "segmentId": "english-pre-a1-m003-writing-segment-09",
-                "text": "The dog is brown."
+                "text": "I'm sad."
               }
             ]
           },
           {
             "itemId": "english-pre-a1-m003-writing-ex01-i10",
             "position": 10,
-            "audio": "tts:en-GB:My favourite colour is blue.",
-            "expectedAnswer": "My favourite colour is blue.",
+            "audio": "tts:en-GB:I'm tired.",
+            "audioLocale": "en-GB",
+            "audioStatus": "synthetic_pending_review",
+            "kind": "sentence",
+            "repeatCount": 3,
+            "expectedAnswer": "I'm tired.",
             "evaluation": {
               "type": "normalised_text"
             },
-            "audioLocale": "en-GB",
-            "kind": "sentence",
-            "repeatCount": 3,
             "segments": [
               {
                 "segmentId": "english-pre-a1-m003-writing-segment-10",
-                "text": "My favourite colour is blue."
+                "text": "I'm tired."
               }
             ]
           }
@@ -1309,8 +1589,10 @@
           {
             "itemId": "english-pre-a1-m003-speaking-ex01-i01",
             "position": 1,
-            "prompt": "Say three colours.",
-            "modelAnswer": "Red, blue and yellow.",
+            "prompt": "Di en voz alta esta expresión.",
+            "promptSpanish": "Practica el modelo de la misión.",
+            "modelAnswer": "How are you?",
+            "translation": "How are you?",
             "evaluation": {
               "type": "transcription_feedback",
               "transcriptionSeparateFromPronunciation": true
@@ -1319,8 +1601,10 @@
           {
             "itemId": "english-pre-a1-m003-speaking-ex01-i02",
             "position": 2,
-            "prompt": "What colour is the sky?",
-            "modelAnswer": "The sky is blue.",
+            "prompt": "Di en voz alta esta expresión.",
+            "promptSpanish": "Practica el modelo de la misión.",
+            "modelAnswer": "I'm fine.",
+            "translation": "I'm fine.",
             "evaluation": {
               "type": "transcription_feedback",
               "transcriptionSeparateFromPronunciation": true
@@ -1329,8 +1613,10 @@
           {
             "itemId": "english-pre-a1-m003-speaking-ex01-i03",
             "position": 3,
-            "prompt": "What colour is the grass?",
-            "modelAnswer": "The grass is green.",
+            "prompt": "Di en voz alta esta expresión.",
+            "promptSpanish": "Practica el modelo de la misión.",
+            "modelAnswer": "I'm good.",
+            "translation": "I'm good.",
             "evaluation": {
               "type": "transcription_feedback",
               "transcriptionSeparateFromPronunciation": true
@@ -1339,8 +1625,10 @@
           {
             "itemId": "english-pre-a1-m003-speaking-ex01-i04",
             "position": 4,
-            "prompt": "Name a colour of a flower in the reading.",
-            "modelAnswer": "The flower is red.",
+            "prompt": "Di en voz alta esta expresión.",
+            "promptSpanish": "Practica el modelo de la misión.",
+            "modelAnswer": "Very well.",
+            "translation": "Very well.",
             "evaluation": {
               "type": "transcription_feedback",
               "transcriptionSeparateFromPronunciation": true
@@ -1349,8 +1637,10 @@
           {
             "itemId": "english-pre-a1-m003-speaking-ex01-i05",
             "position": 5,
-            "prompt": "Say the colour of a cloud in the reading.",
-            "modelAnswer": "The cloud is white.",
+            "prompt": "Di en voz alta esta expresión.",
+            "promptSpanish": "Practica el modelo de la misión.",
+            "modelAnswer": "I'm OK.",
+            "translation": "I'm OK.",
             "evaluation": {
               "type": "transcription_feedback",
               "transcriptionSeparateFromPronunciation": true
@@ -1359,8 +1649,10 @@
           {
             "itemId": "english-pre-a1-m003-speaking-ex01-i06",
             "position": 6,
-            "prompt": "Describe a ball using a colour.",
-            "modelAnswer": "It is a purple ball.",
+            "prompt": "Di en voz alta esta expresión.",
+            "promptSpanish": "Practica el modelo de la misión.",
+            "modelAnswer": "Not bad.",
+            "translation": "Not bad.",
             "evaluation": {
               "type": "transcription_feedback",
               "transcriptionSeparateFromPronunciation": true
@@ -1369,8 +1661,10 @@
           {
             "itemId": "english-pre-a1-m003-speaking-ex01-i07",
             "position": 7,
-            "prompt": "Say two colours you can see in the garden.",
-            "modelAnswer": "I can see yellow and green.",
+            "prompt": "Di en voz alta esta expresión.",
+            "promptSpanish": "Practica el modelo de la misión.",
+            "modelAnswer": "And you?",
+            "translation": "And you?",
             "evaluation": {
               "type": "transcription_feedback",
               "transcriptionSeparateFromPronunciation": true
@@ -1379,8 +1673,10 @@
           {
             "itemId": "english-pre-a1-m003-speaking-ex01-i08",
             "position": 8,
-            "prompt": "What colour is a carrot usually?",
-            "modelAnswer": "A carrot is orange.",
+            "prompt": "Di en voz alta esta expresión.",
+            "promptSpanish": "Practica el modelo de la misión.",
+            "modelAnswer": "I'm happy.",
+            "translation": "I'm happy.",
             "evaluation": {
               "type": "transcription_feedback",
               "transcriptionSeparateFromPronunciation": true
@@ -1389,8 +1685,10 @@
           {
             "itemId": "english-pre-a1-m003-speaking-ex01-i09",
             "position": 9,
-            "prompt": "Make a sentence with the words “brown” and “dog”.",
-            "modelAnswer": "The dog is brown.",
+            "prompt": "Di en voz alta esta expresión.",
+            "promptSpanish": "Practica el modelo de la misión.",
+            "modelAnswer": "I'm sad.",
+            "translation": "I'm sad.",
             "evaluation": {
               "type": "transcription_feedback",
               "transcriptionSeparateFromPronunciation": true
@@ -1399,8 +1697,10 @@
           {
             "itemId": "english-pre-a1-m003-speaking-ex01-i10",
             "position": 10,
-            "prompt": "Ask a friend about their favourite colour.",
-            "modelAnswer": "What is your favourite colour?",
+            "prompt": "Di en voz alta esta expresión.",
+            "promptSpanish": "Practica el modelo de la misión.",
+            "modelAnswer": "I'm tired.",
+            "translation": "I'm tired.",
             "evaluation": {
               "type": "transcription_feedback",
               "transcriptionSeparateFromPronunciation": true
@@ -1417,53 +1717,55 @@
         "exerciseId": "english-pre-a1-m003-listening-ex01",
         "type": "listening_gap_fill",
         "content": {
-          "audio": "tts:en-GB:Look around! The sun is yellow, the sky is blue and the grass is green. Here is a red flower. I can see a white cloud. My ball is purple too. Find something orange near the pink house. Point to a brown object. Great work!",
+          "audio": "tts:en-GB:How are you? I'm fine. I'm good. Very well. I'm OK. Not bad. And you? I'm happy. I'm sad. I'm tired.",
           "audioLocale": "en-GB",
-          "transcriptTemplate": "Look around! The sun is [[gap-01]], the sky is [[gap-02]] and the grass is [[gap-03]]. Here is a [[gap-04]] flower. I can see a [[gap-05]] cloud. My ball is [[gap-06]] too. Find something [[gap-07]] near the [[gap-08]] house. Point to a [[gap-09]] object. Great [[gap-10]]!",
+          "audioStatus": "synthetic_pending_review",
+          "transcriptTemplate": "[[gap-01]] [[gap-02]] [[gap-03]] [[gap-04]] [[gap-05]] [[gap-06]] [[gap-07]] [[gap-08]] [[gap-09]] [[gap-10]]",
           "wordBank": [
             {
               "wordId": "english-pre-a1-m003-listening-word-01",
-              "word": "yellow"
+              "word": "How"
             },
             {
               "wordId": "english-pre-a1-m003-listening-word-02",
-              "word": "blue"
+              "word": "are"
             },
             {
               "wordId": "english-pre-a1-m003-listening-word-03",
-              "word": "green"
+              "word": "you"
             },
             {
               "wordId": "english-pre-a1-m003-listening-word-04",
-              "word": "red"
+              "word": "fine"
             },
             {
               "wordId": "english-pre-a1-m003-listening-word-05",
-              "word": "white"
+              "word": "good"
             },
             {
               "wordId": "english-pre-a1-m003-listening-word-06",
-              "word": "purple"
+              "word": "very"
             },
             {
               "wordId": "english-pre-a1-m003-listening-word-07",
-              "word": "orange"
+              "word": "well"
             },
             {
               "wordId": "english-pre-a1-m003-listening-word-08",
-              "word": "pink"
+              "word": "OK"
             },
             {
               "wordId": "english-pre-a1-m003-listening-word-09",
-              "word": "brown"
+              "word": "not"
             },
             {
               "wordId": "english-pre-a1-m003-listening-word-10",
-              "word": "work"
+              "word": "bad"
             }
           ],
           "interaction": "select_place_move_replace",
-          "audioTranscript": "tts:en-GB:Look around! The sun is yellow, the sky is blue and the grass is green. Here is a red flower. I can see a white cloud. My ball is purple too. Find something orange near the pink house. Point to a brown object. Great work!"
+          "audioTranscript": "tts:en-GB:How are you? I'm fine. I'm good. Very well. I'm OK. Not bad. And you? I'm happy. I'm sad. I'm tired.",
+          "translation": "Escucha y reconoce las expresiones enseñadas."
         },
         "items": [
           {
@@ -1471,70 +1773,70 @@
             "position": 1,
             "gapToken": "[[gap-01]]",
             "expectedWordId": "english-pre-a1-m003-listening-word-01",
-            "answer": "yellow"
+            "answer": "How"
           },
           {
             "itemId": "english-pre-a1-m003-listening-ex01-i02",
             "position": 2,
             "gapToken": "[[gap-02]]",
             "expectedWordId": "english-pre-a1-m003-listening-word-02",
-            "answer": "blue"
+            "answer": "are"
           },
           {
             "itemId": "english-pre-a1-m003-listening-ex01-i03",
             "position": 3,
             "gapToken": "[[gap-03]]",
             "expectedWordId": "english-pre-a1-m003-listening-word-03",
-            "answer": "green"
+            "answer": "you"
           },
           {
             "itemId": "english-pre-a1-m003-listening-ex01-i04",
             "position": 4,
             "gapToken": "[[gap-04]]",
             "expectedWordId": "english-pre-a1-m003-listening-word-04",
-            "answer": "red"
+            "answer": "fine"
           },
           {
             "itemId": "english-pre-a1-m003-listening-ex01-i05",
             "position": 5,
             "gapToken": "[[gap-05]]",
             "expectedWordId": "english-pre-a1-m003-listening-word-05",
-            "answer": "white"
+            "answer": "good"
           },
           {
             "itemId": "english-pre-a1-m003-listening-ex01-i06",
             "position": 6,
             "gapToken": "[[gap-06]]",
             "expectedWordId": "english-pre-a1-m003-listening-word-06",
-            "answer": "purple"
+            "answer": "very"
           },
           {
             "itemId": "english-pre-a1-m003-listening-ex01-i07",
             "position": 7,
             "gapToken": "[[gap-07]]",
             "expectedWordId": "english-pre-a1-m003-listening-word-07",
-            "answer": "orange"
+            "answer": "well"
           },
           {
             "itemId": "english-pre-a1-m003-listening-ex01-i08",
             "position": 8,
             "gapToken": "[[gap-08]]",
             "expectedWordId": "english-pre-a1-m003-listening-word-08",
-            "answer": "pink"
+            "answer": "OK"
           },
           {
             "itemId": "english-pre-a1-m003-listening-ex01-i09",
             "position": 9,
             "gapToken": "[[gap-09]]",
             "expectedWordId": "english-pre-a1-m003-listening-word-09",
-            "answer": "brown"
+            "answer": "not"
           },
           {
             "itemId": "english-pre-a1-m003-listening-ex01-i10",
             "position": 10,
             "gapToken": "[[gap-10]]",
             "expectedWordId": "english-pre-a1-m003-listening-word-10",
-            "answer": "work"
+            "answer": "bad"
           }
         ]
       }

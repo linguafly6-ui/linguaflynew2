@@ -1,9 +1,9 @@
 {
-  "schemaVersion": "1.2.0",
-  "contentVersion": 2,
+  "schemaVersion": 1,
+  "contentVersion": "2026-11-21-curriculum-alignment-v1",
   "course": {
     "courseId": "english-pre-a1",
-    "level": "PRE-A1",
+    "level": "Pre-A1",
     "language": "en-GB"
   },
   "unit": {
@@ -16,7 +16,7 @@
     "missionId": "english-pre-a1-m008",
     "unitId": "english-pre-a1-unit-01",
     "position": 8,
-    "title": "My Body"
+    "title": "I am…"
   },
   "sections": [
     {
@@ -26,383 +26,624 @@
       "exercise": {
         "exerciseId": "english-pre-a1-m008-explore-ex01",
         "type": "vocabulary_pairs",
-        "theory": {
-          "title": "El cuerpo: have got y has got",
-          "explanation": "Primero aprende have got con I, you, we y they. Después observa que he y she cambian a has got. Termina con descripciones sencillas y órdenes para señalar partes del cuerpo.",
-          "tip": "I/You/We/They have got; He/She has got. Con can, el verbo queda en forma base.",
-          "patterns": [
-            {
-              "label": "1. Have got",
-              "pattern": "I · You · We · They + have got",
-              "examples": [
-                "I have got two eyes. — Tengo dos ojos.",
-                "You have got two hands. — Tienes dos manos.",
-                "We have got two ears. — Tenemos dos orejas.",
-                "They have got two arms. — Tienen dos brazos."
-              ]
-            },
-            {
-              "label": "2. Has got",
-              "pattern": "He · She · It + has got",
-              "examples": [
-                "He has got one nose. — Él tiene una nariz.",
-                "She has got brown hair. — Ella tiene el pelo castaño."
-              ]
-            },
-            {
-              "label": "3. Describir y expresar habilidad",
-              "pattern": "body part + is · subject + can + verb",
-              "examples": [
-                "My hair is brown. — Mi pelo es castaño.",
-                "We can smile. — Podemos sonreír."
-              ]
-            },
-            {
-              "label": "4. Instrucciones",
-              "pattern": "base verb + body part",
-              "examples": [
-                "Touch your head. — Tócate la cabeza.",
-                "Brush your hair. — Cepíllate el pelo."
-              ]
-            }
-          ]
-        },
         "items": [
           {
             "itemId": "english-pre-a1-m008-explore-ex01-i01",
             "position": 1,
-            "english": "head",
-            "spanish": "cabeza",
-            "audio": "tts:en-GB:head"
+            "english": "I",
+            "spanish": "yo",
+            "pronunciationGuide": "ái",
+            "audio": "tts:en-GB:I",
+            "audioStatus": "synthetic_pending_review"
           },
           {
             "itemId": "english-pre-a1-m008-explore-ex01-i02",
             "position": 2,
-            "english": "hair",
-            "spanish": "pelo",
-            "audio": "tts:en-GB:hair"
+            "english": "am",
+            "spanish": "soy/estoy",
+            "pronunciationGuide": "am",
+            "audio": "tts:en-GB:am",
+            "audioStatus": "synthetic_pending_review"
           },
           {
             "itemId": "english-pre-a1-m008-explore-ex01-i03",
             "position": 3,
-            "english": "eye",
-            "spanish": "ojo",
-            "audio": "tts:en-GB:eye"
+            "english": "be",
+            "spanish": "ser/estar",
+            "pronunciationGuide": "bí",
+            "audio": "tts:en-GB:be",
+            "audioStatus": "synthetic_pending_review"
           },
           {
             "itemId": "english-pre-a1-m008-explore-ex01-i04",
             "position": 4,
-            "english": "ear",
-            "spanish": "oreja",
-            "audio": "tts:en-GB:ear"
+            "english": "happy",
+            "spanish": "feliz",
+            "pronunciationGuide": "JÁ-pi",
+            "audio": "tts:en-GB:happy",
+            "audioStatus": "synthetic_pending_review"
           },
           {
             "itemId": "english-pre-a1-m008-explore-ex01-i05",
             "position": 5,
-            "english": "nose",
-            "spanish": "nariz",
-            "audio": "tts:en-GB:nose"
+            "english": "sad",
+            "spanish": "triste",
+            "pronunciationGuide": "sad",
+            "audio": "tts:en-GB:sad",
+            "audioStatus": "synthetic_pending_review"
           },
           {
             "itemId": "english-pre-a1-m008-explore-ex01-i06",
             "position": 6,
-            "english": "mouth",
-            "spanish": "boca",
-            "audio": "tts:en-GB:mouth"
+            "english": "tired",
+            "spanish": "cansado",
+            "pronunciationGuide": "TÁI-erd",
+            "audio": "tts:en-GB:tired",
+            "audioStatus": "synthetic_pending_review"
           },
           {
             "itemId": "english-pre-a1-m008-explore-ex01-i07",
             "position": 7,
-            "english": "tooth",
-            "spanish": "diente",
-            "audio": "tts:en-GB:tooth"
+            "english": "excited",
+            "spanish": "emocionado",
+            "pronunciationGuide": "ik-SÁI-tid",
+            "audio": "tts:en-GB:excited",
+            "audioStatus": "synthetic_pending_review"
           },
           {
             "itemId": "english-pre-a1-m008-explore-ex01-i08",
             "position": 8,
-            "english": "hand",
-            "spanish": "mano",
-            "audio": "tts:en-GB:hand"
+            "english": "angry",
+            "spanish": "enfadado",
+            "pronunciationGuide": "ÁNG-gri",
+            "audio": "tts:en-GB:angry",
+            "audioStatus": "synthetic_pending_review"
           },
           {
             "itemId": "english-pre-a1-m008-explore-ex01-i09",
             "position": 9,
-            "english": "arm",
-            "spanish": "brazo",
-            "audio": "tts:en-GB:arm"
+            "english": "calm",
+            "spanish": "tranquilo",
+            "pronunciationGuide": "kám",
+            "audio": "tts:en-GB:calm",
+            "audioStatus": "synthetic_pending_review"
           },
           {
             "itemId": "english-pre-a1-m008-explore-ex01-i10",
             "position": 10,
-            "english": "leg",
-            "spanish": "pierna",
-            "audio": "tts:en-GB:leg"
+            "english": "student",
+            "spanish": "estudiante",
+            "pronunciationGuide": "STIÚ-dent",
+            "audio": "tts:en-GB:student",
+            "audioStatus": "synthetic_pending_review"
+          },
+          {
+            "itemId": "english-pre-a1-m008-explore-ex01-i11",
+            "position": 11,
+            "english": "teacher",
+            "spanish": "profesor",
+            "pronunciationGuide": "TÍ-cha",
+            "audio": "tts:en-GB:teacher",
+            "audioStatus": "synthetic_pending_review"
+          },
+          {
+            "itemId": "english-pre-a1-m008-explore-ex01-i12",
+            "position": 12,
+            "english": "boy",
+            "spanish": "niño",
+            "pronunciationGuide": "bói",
+            "audio": "tts:en-GB:boy",
+            "audioStatus": "synthetic_pending_review"
+          },
+          {
+            "itemId": "english-pre-a1-m008-explore-ex01-i13",
+            "position": 13,
+            "english": "girl",
+            "spanish": "niña",
+            "pronunciationGuide": "guérl",
+            "audio": "tts:en-GB:girl",
+            "audioStatus": "synthetic_pending_review"
+          },
+          {
+            "itemId": "english-pre-a1-m008-explore-ex01-i14",
+            "position": 14,
+            "english": "child",
+            "spanish": "niño/a",
+            "pronunciationGuide": "cháild",
+            "audio": "tts:en-GB:child",
+            "audioStatus": "synthetic_pending_review"
+          },
+          {
+            "itemId": "english-pre-a1-m008-explore-ex01-i15",
+            "position": 15,
+            "english": "friend",
+            "spanish": "amigo",
+            "pronunciationGuide": "frend",
+            "audio": "tts:en-GB:friend",
+            "audioStatus": "synthetic_pending_review"
+          },
+          {
+            "itemId": "english-pre-a1-m008-explore-ex01-i16",
+            "position": 16,
+            "english": "very",
+            "spanish": "muy",
+            "pronunciationGuide": "VÉ-ri",
+            "audio": "tts:en-GB:very",
+            "audioStatus": "synthetic_pending_review"
+          },
+          {
+            "itemId": "english-pre-a1-m008-explore-ex01-i17",
+            "position": 17,
+            "english": "today",
+            "spanish": "hoy",
+            "pronunciationGuide": "ta-DÉI",
+            "audio": "tts:en-GB:today",
+            "audioStatus": "synthetic_pending_review"
+          },
+          {
+            "itemId": "english-pre-a1-m008-explore-ex01-i18",
+            "position": 18,
+            "english": "here",
+            "spanish": "aquí",
+            "pronunciationGuide": "jíar",
+            "audio": "tts:en-GB:here",
+            "audioStatus": "synthetic_pending_review"
+          },
+          {
+            "itemId": "english-pre-a1-m008-explore-ex01-i19",
+            "position": 19,
+            "english": "school",
+            "spanish": "escuela",
+            "pronunciationGuide": "skúl",
+            "audio": "tts:en-GB:school",
+            "audioStatus": "synthetic_pending_review"
+          },
+          {
+            "itemId": "english-pre-a1-m008-explore-ex01-i20",
+            "position": 20,
+            "english": "a",
+            "spanish": "un/una",
+            "pronunciationGuide": "a",
+            "audio": "tts:en-GB:a",
+            "audioStatus": "synthetic_pending_review"
           }
         ],
+        "theory": {
+          "title": "I am…",
+          "explanation": "I am + estado o identidad habla de uno mismo. I significa yo y am acompaña a I. Ante una profesión singular contable se usa a: I am a student. Esta misión enseña afirmaciones; la negación y las preguntas vendrán después.",
+          "tip": "Comprende todos los modelos de Explore antes de comenzar las actividades.",
+          "patterns": [
+            {
+              "label": "Bloque 1",
+              "pattern": "I am…",
+              "examples": [
+                "I am happy."
+              ]
+            },
+            {
+              "label": "Bloque 2",
+              "pattern": "I am + estado o identidad habla de uno mismo. I significa yo y am acompaña a I. Ante una profesión singular contable se usa a: I am a student. Esta misión enseña afirmaciones; la negación y las preguntas vendrán después.",
+              "examples": [
+                "I am sad."
+              ]
+            },
+            {
+              "label": "Bloque 3",
+              "pattern": "I am + estado o identidad habla de uno mismo. I significa yo y am acompaña a I. Ante una profesión singular contable se usa a: I am a student. Esta misión enseña afirmaciones; la negación y las preguntas vendrán después.",
+              "examples": [
+                "I am tired."
+              ]
+            },
+            {
+              "label": "Bloque 4",
+              "pattern": "I am + estado o identidad habla de uno mismo. I significa yo y am acompaña a I. Ante una profesión singular contable se usa a: I am a student. Esta misión enseña afirmaciones; la negación y las preguntas vendrán después.",
+              "examples": [
+                "I am excited."
+              ]
+            },
+            {
+              "label": "Bloque 5",
+              "pattern": "I am + estado o identidad habla de uno mismo. I significa yo y am acompaña a I. Ante una profesión singular contable se usa a: I am a student. Esta misión enseña afirmaciones; la negación y las preguntas vendrán después.",
+              "examples": [
+                "I am angry."
+              ]
+            },
+            {
+              "label": "Bloque 6",
+              "pattern": "I am + estado o identidad habla de uno mismo. I significa yo y am acompaña a I. Ante una profesión singular contable se usa a: I am a student. Esta misión enseña afirmaciones; la negación y las preguntas vendrán después.",
+              "examples": [
+                "I am calm."
+              ]
+            },
+            {
+              "label": "Bloque 7",
+              "pattern": "I am + estado o identidad habla de uno mismo. I significa yo y am acompaña a I. Ante una profesión singular contable se usa a: I am a student. Esta misión enseña afirmaciones; la negación y las preguntas vendrán después.",
+              "examples": [
+                "I am a student."
+              ]
+            },
+            {
+              "label": "Bloque 8",
+              "pattern": "I am + estado o identidad habla de uno mismo. I significa yo y am acompaña a I. Ante una profesión singular contable se usa a: I am a student. Esta misión enseña afirmaciones; la negación y las preguntas vendrán después.",
+              "examples": [
+                "I am a teacher."
+              ]
+            },
+            {
+              "label": "Bloque 9",
+              "pattern": "I am + estado o identidad habla de uno mismo. I significa yo y am acompaña a I. Ante una profesión singular contable se usa a: I am a student. Esta misión enseña afirmaciones; la negación y las preguntas vendrán después.",
+              "examples": [
+                "I am here today."
+              ]
+            },
+            {
+              "label": "Bloque 10",
+              "pattern": "I am + estado o identidad habla de uno mismo. I significa yo y am acompaña a I. Ante una profesión singular contable se usa a: I am a student. Esta misión enseña afirmaciones; la negación y las preguntas vendrán después.",
+              "examples": [
+                "I am a friend."
+              ]
+            }
+          ]
+        },
         "lesson": {
           "phrases": [
             {
-              "english": "I have got two eyes.",
-              "spanish": "Tengo dos ojos.",
-              "note": "I, you, we y they usan have got."
+              "english": "I am happy.",
+              "spanish": "I am happy.",
+              "note": "Modelo enseñado en Explore."
             },
             {
-              "english": "She has got brown hair.",
-              "spanish": "Ella tiene el pelo castaño.",
-              "note": "She usa has got."
+              "english": "I am sad.",
+              "spanish": "I am sad.",
+              "note": "Modelo enseñado en Explore."
             },
             {
-              "english": "You have got two hands.",
-              "spanish": "Tienes dos manos."
+              "english": "I am tired.",
+              "spanish": "I am tired.",
+              "note": "Modelo enseñado en Explore."
             },
             {
-              "english": "He has got one nose.",
-              "spanish": "Él tiene una nariz."
+              "english": "I am excited.",
+              "spanish": "I am excited.",
+              "note": "Modelo enseñado en Explore."
             },
             {
-              "english": "My brother has got short hair.",
-              "spanish": "Mi hermano tiene el pelo corto."
+              "english": "I am angry.",
+              "spanish": "I am angry.",
+              "note": "Modelo enseñado en Explore."
             },
             {
-              "english": "We have got two ears.",
-              "spanish": "Tenemos dos orejas."
+              "english": "I am calm.",
+              "spanish": "I am calm.",
+              "note": "Modelo enseñado en Explore."
             },
             {
-              "english": "They have got two arms.",
-              "spanish": "Ellos tienen dos brazos."
+              "english": "I am a student.",
+              "spanish": "I am a student.",
+              "note": "Modelo enseñado en Explore."
             },
             {
-              "english": "your",
-              "spanish": "tu / tus",
-              "note": "Your indica posesión de la persona a quien hablas."
+              "english": "I am a teacher.",
+              "spanish": "I am a teacher.",
+              "note": "Modelo enseñado en Explore."
             },
             {
-              "english": "our",
-              "spanish": "nuestro/a/os/as",
-              "note": "Our indica posesión compartida."
+              "english": "I am here today.",
+              "spanish": "I am here today.",
+              "note": "Modelo enseñado en Explore."
             },
             {
-              "english": "have got / has got",
-              "spanish": "tener",
-              "note": "Have got con I/you/we/they; has got con he/she/it."
+              "english": "I am a friend.",
+              "spanish": "I am a friend.",
+              "note": "Modelo enseñado en Explore."
             }
           ],
           "grammar": [
             {
-              "english": "I have got two eyes.",
-              "spanish": "Tengo dos ojos."
+              "english": "I am happy.",
+              "spanish": "Modelo de la misión",
+              "note": "I am…"
             },
             {
-              "english": "She has got brown hair.",
-              "spanish": "Ella tiene el pelo castaño."
+              "english": "I am sad.",
+              "spanish": "Modelo de la misión",
+              "note": "I am + estado o identidad habla de uno mismo. I significa yo y am acompaña a I. Ante una profesión singular contable se usa a: I am a student. Esta misión enseña afirmaciones; la negación y las preguntas vendrán después."
             },
             {
-              "english": "You have got two hands.",
-              "spanish": "Tienes dos manos."
+              "english": "I am tired.",
+              "spanish": "Modelo de la misión",
+              "note": "I am + estado o identidad habla de uno mismo. I significa yo y am acompaña a I. Ante una profesión singular contable se usa a: I am a student. Esta misión enseña afirmaciones; la negación y las preguntas vendrán después."
             },
             {
-              "english": "He has got one nose.",
-              "spanish": "Él tiene una nariz."
+              "english": "I am excited.",
+              "spanish": "Modelo de la misión",
+              "note": "I am + estado o identidad habla de uno mismo. I significa yo y am acompaña a I. Ante una profesión singular contable se usa a: I am a student. Esta misión enseña afirmaciones; la negación y las preguntas vendrán después."
             },
             {
-              "english": "I have got two legs.",
-              "spanish": "Tengo dos piernas."
+              "english": "I am angry.",
+              "spanish": "Modelo de la misión",
+              "note": "I am + estado o identidad habla de uno mismo. I significa yo y am acompaña a I. Ante una profesión singular contable se usa a: I am a student. Esta misión enseña afirmaciones; la negación y las preguntas vendrán después."
             },
             {
-              "english": "My brother has got short hair.",
-              "spanish": "Mi hermano tiene el pelo corto."
+              "english": "I am calm.",
+              "spanish": "Modelo de la misión",
+              "note": "I am + estado o identidad habla de uno mismo. I significa yo y am acompaña a I. Ante una profesión singular contable se usa a: I am a student. Esta misión enseña afirmaciones; la negación y las preguntas vendrán después."
             },
             {
-              "english": "We have got two ears.",
-              "spanish": "Tenemos dos orejas."
+              "english": "I am a student.",
+              "spanish": "Modelo de la misión",
+              "note": "I am + estado o identidad habla de uno mismo. I significa yo y am acompaña a I. Ante una profesión singular contable se usa a: I am a student. Esta misión enseña afirmaciones; la negación y las preguntas vendrán después."
             },
             {
-              "english": "My sister has got a small mouth.",
-              "spanish": "Mi hermana tiene una boca pequeña."
+              "english": "I am a teacher.",
+              "spanish": "Modelo de la misión",
+              "note": "I am + estado o identidad habla de uno mismo. I significa yo y am acompaña a I. Ante una profesión singular contable se usa a: I am a student. Esta misión enseña afirmaciones; la negación y las preguntas vendrán después."
             },
             {
-              "english": "They have got two arms.",
-              "spanish": "Ellos tienen dos brazos."
+              "english": "I am here today.",
+              "spanish": "Modelo de la misión",
+              "note": "I am + estado o identidad habla de uno mismo. I significa yo y am acompaña a I. Ante una profesión singular contable se usa a: I am a student. Esta misión enseña afirmaciones; la negación y las preguntas vendrán después."
             },
             {
-              "english": "The boy has got ten toes.",
-              "spanish": "El niño tiene diez dedos de los pies."
+              "english": "I am a friend.",
+              "spanish": "Modelo de la misión",
+              "note": "I am + estado o identidad habla de uno mismo. I significa yo y am acompaña a I. Ante una profesión singular contable se usa a: I am a student. Esta misión enseña afirmaciones; la negación y las preguntas vendrán después."
             }
           ],
           "reading": [
             {
-              "english": "I am Alex.",
-              "spanish": "Soy Alex."
-            },
-            {
-              "english": "I have got brown hair and two blue eyes.",
-              "spanish": "Tengo el pelo castaño y dos ojos azules."
-            },
-            {
-              "english": "I have got two ears, one nose and one mouth.",
-              "spanish": "Tengo dos orejas, una nariz y una boca."
-            },
-            {
-              "english": "I have got two arms and two hands.",
-              "spanish": "Tengo dos brazos y dos manos."
-            },
-            {
-              "english": "I have got two legs and ten toes.",
-              "spanish": "Tengo dos piernas y diez dedos de los pies."
-            },
-            {
-              "english": "My little brother has got short hair.",
-              "spanish": "Mi hermano pequeño tiene el pelo corto."
-            },
-            {
-              "english": "We can smile with our mouths.",
-              "spanish": "Podemos sonreír con la boca."
+              "english": "I am a student. I am happy today. I am excited. I am here at school.",
+              "spanish": "Texto completo presentado arriba."
             }
           ],
           "writing": [
             {
-              "english": "Touch your head.",
-              "spanish": "Tócate la cabeza."
+              "english": "I am happy.",
+              "spanish": "I am happy.",
+              "note": "Modelo enseñado en Explore."
             },
             {
-              "english": "My hair is brown.",
-              "spanish": "Mi pelo es castaño."
+              "english": "I am sad.",
+              "spanish": "I am sad.",
+              "note": "Modelo enseñado en Explore."
             },
             {
-              "english": "I have two eyes.",
-              "spanish": "Tengo dos ojos."
+              "english": "I am tired.",
+              "spanish": "I am tired.",
+              "note": "Modelo enseñado en Explore."
             },
             {
-              "english": "I have two ears.",
-              "spanish": "Tengo dos orejas."
+              "english": "I am excited.",
+              "spanish": "I am excited.",
+              "note": "Modelo enseñado en Explore."
             },
             {
-              "english": "I smell with my nose.",
-              "spanish": "Huelo con la nariz."
+              "english": "I am angry.",
+              "spanish": "I am angry.",
+              "note": "Modelo enseñado en Explore."
             },
             {
-              "english": "I eat with my mouth.",
-              "spanish": "Como con la boca."
+              "english": "I am calm.",
+              "spanish": "I am calm.",
+              "note": "Modelo enseñado en Explore."
             },
             {
-              "english": "My tooth is white.",
-              "spanish": "Mi diente es blanco."
+              "english": "I am a student.",
+              "spanish": "I am a student.",
+              "note": "Modelo enseñado en Explore."
             },
             {
-              "english": "I wave my hand.",
-              "spanish": "Muevo la mano para saludar."
+              "english": "I am a teacher.",
+              "spanish": "I am a teacher.",
+              "note": "Modelo enseñado en Explore."
             },
             {
-              "english": "I have two arms.",
-              "spanish": "Tengo dos brazos."
+              "english": "I am here today.",
+              "spanish": "I am here today.",
+              "note": "Modelo enseñado en Explore."
             },
             {
-              "english": "I walk with my legs.",
-              "spanish": "Camino con las piernas."
+              "english": "I am a friend.",
+              "spanish": "I am a friend.",
+              "note": "Modelo enseñado en Explore."
             }
           ],
           "speaking": [
             {
-              "english": "I have got a head.",
-              "spanish": "Tengo cabeza.",
-              "prompt": "Say a short sentence using head.",
-              "promptSpanish": "Di una frase corta usando head (cabeza)."
+              "english": "I am happy.",
+              "spanish": "I am happy.",
+              "note": "Modelo enseñado en Explore.",
+              "prompt": "Practica esta expresión.",
+              "promptSpanish": "Di la expresión en voz alta."
             },
             {
-              "english": "I have got brown hair.",
-              "spanish": "Tengo el pelo castaño.",
-              "prompt": "Say a short sentence using hair.",
-              "promptSpanish": "Di una frase corta usando hair (pelo)."
+              "english": "I am sad.",
+              "spanish": "I am sad.",
+              "note": "Modelo enseñado en Explore.",
+              "prompt": "Practica esta expresión.",
+              "promptSpanish": "Di la expresión en voz alta."
             },
             {
-              "english": "I have got two eyes.",
-              "spanish": "Tengo dos ojos.",
-              "prompt": "Say a short sentence using eye.",
-              "promptSpanish": "Di una frase corta usando eye (ojo)."
+              "english": "I am tired.",
+              "spanish": "I am tired.",
+              "note": "Modelo enseñado en Explore.",
+              "prompt": "Practica esta expresión.",
+              "promptSpanish": "Di la expresión en voz alta."
             },
             {
-              "english": "I have got two ears.",
-              "spanish": "Tengo dos orejas.",
-              "prompt": "Say a short sentence using ear.",
-              "promptSpanish": "Di una frase corta usando ear (oreja)."
+              "english": "I am excited.",
+              "spanish": "I am excited.",
+              "note": "Modelo enseñado en Explore.",
+              "prompt": "Practica esta expresión.",
+              "promptSpanish": "Di la expresión en voz alta."
             },
             {
-              "english": "I have got one nose.",
-              "spanish": "Tengo una nariz.",
-              "prompt": "Say a short sentence using nose.",
-              "promptSpanish": "Di una frase corta usando nose (nariz)."
+              "english": "I am angry.",
+              "spanish": "I am angry.",
+              "note": "Modelo enseñado en Explore.",
+              "prompt": "Practica esta expresión.",
+              "promptSpanish": "Di la expresión en voz alta."
             },
             {
-              "english": "I have got one mouth.",
-              "spanish": "Tengo una boca.",
-              "prompt": "Say a short sentence using mouth.",
-              "promptSpanish": "Di una frase corta usando mouth (boca)."
+              "english": "I am calm.",
+              "spanish": "I am calm.",
+              "note": "Modelo enseñado en Explore.",
+              "prompt": "Practica esta expresión.",
+              "promptSpanish": "Di la expresión en voz alta."
             },
             {
-              "english": "A tooth is in my mouth.",
-              "spanish": "Tengo un diente en la boca.",
-              "prompt": "Say a short sentence using tooth.",
-              "promptSpanish": "Di una frase corta usando tooth (diente)."
+              "english": "I am a student.",
+              "spanish": "I am a student.",
+              "note": "Modelo enseñado en Explore.",
+              "prompt": "Practica esta expresión.",
+              "promptSpanish": "Di la expresión en voz alta."
             },
             {
-              "english": "I have got two hands.",
-              "spanish": "Tengo dos manos.",
-              "prompt": "Say a short sentence using hand.",
-              "promptSpanish": "Di una frase corta usando hand (mano)."
+              "english": "I am a teacher.",
+              "spanish": "I am a teacher.",
+              "note": "Modelo enseñado en Explore.",
+              "prompt": "Practica esta expresión.",
+              "promptSpanish": "Di la expresión en voz alta."
             },
             {
-              "english": "I have got two arms.",
-              "spanish": "Tengo dos brazos.",
-              "prompt": "Say a short sentence using arm.",
-              "promptSpanish": "Di una frase corta usando arm (brazo)."
+              "english": "I am here today.",
+              "spanish": "I am here today.",
+              "note": "Modelo enseñado en Explore.",
+              "prompt": "Practica esta expresión.",
+              "promptSpanish": "Di la expresión en voz alta."
             },
             {
-              "english": "I have got two legs.",
-              "spanish": "Tengo dos piernas.",
-              "prompt": "Say a short sentence using leg.",
-              "promptSpanish": "Di una frase corta usando leg (pierna)."
+              "english": "I am a friend.",
+              "spanish": "I am a friend.",
+              "note": "Modelo enseñado en Explore.",
+              "prompt": "Practica esta expresión.",
+              "promptSpanish": "Di la expresión en voz alta."
             }
           ],
           "listening": [
             {
-              "english": "Touch your head.",
-              "spanish": "Tócate la cabeza."
+              "english": "I am happy.",
+              "spanish": "I am happy.",
+              "note": "Modelo enseñado en Explore."
             },
             {
-              "english": "Brush your hair every morning.",
-              "spanish": "Cepíllate el pelo cada mañana."
+              "english": "I am sad.",
+              "spanish": "I am sad.",
+              "note": "Modelo enseñado en Explore."
             },
             {
-              "english": "You use your eye to see.",
-              "spanish": "Usas los ojos para ver."
+              "english": "I am tired.",
+              "spanish": "I am tired.",
+              "note": "Modelo enseñado en Explore."
             },
             {
-              "english": "You use your ear to hear.",
-              "spanish": "Usas los oídos para oír."
+              "english": "I am excited.",
+              "spanish": "I am excited.",
+              "note": "Modelo enseñado en Explore."
             },
             {
-              "english": "Smell with your nose.",
-              "spanish": "Huele con la nariz."
+              "english": "I am angry.",
+              "spanish": "I am angry.",
+              "note": "Modelo enseñado en Explore."
             },
             {
-              "english": "Eat with your mouth.",
-              "spanish": "Come con la boca."
+              "english": "I am calm.",
+              "spanish": "I am calm.",
+              "note": "Modelo enseñado en Explore."
             },
             {
-              "english": "A tooth is in your mouth.",
-              "spanish": "Un diente está en tu boca."
+              "english": "I am a student.",
+              "spanish": "I am a student.",
+              "note": "Modelo enseñado en Explore."
             },
             {
-              "english": "Wave with your hand.",
-              "spanish": "Saluda con la mano."
+              "english": "I am a teacher.",
+              "spanish": "I am a teacher.",
+              "note": "Modelo enseñado en Explore."
             },
             {
-              "english": "Your arm is between your hand and shoulder.",
-              "spanish": "Tu brazo está entre la mano y el hombro."
+              "english": "I am here today.",
+              "spanish": "I am here today.",
+              "note": "Modelo enseñado en Explore."
             },
             {
-              "english": "You walk with your leg.",
-              "spanish": "Caminas con la pierna."
+              "english": "I am a friend.",
+              "spanish": "I am a friend.",
+              "note": "Modelo enseñado en Explore."
+            }
+          ]
+        },
+        "content": {
+          "blocks": [
+            {
+              "position": 1,
+              "title": "Bloque 1",
+              "content": "I am…",
+              "example": "I am happy.",
+              "translation": "Consulta la traducción y la guía de pronunciación de cada elemento."
+            },
+            {
+              "position": 2,
+              "title": "Bloque 2",
+              "content": "I am + estado o identidad habla de uno mismo. I significa yo y am acompaña a I. Ante una profesión singular contable se usa a: I am a student. Esta misión enseña afirmaciones; la negación y las preguntas vendrán después.",
+              "example": "I am sad.",
+              "translation": "Consulta la traducción y la guía de pronunciación de cada elemento."
+            },
+            {
+              "position": 3,
+              "title": "Bloque 3",
+              "content": "I am + estado o identidad habla de uno mismo. I significa yo y am acompaña a I. Ante una profesión singular contable se usa a: I am a student. Esta misión enseña afirmaciones; la negación y las preguntas vendrán después.",
+              "example": "I am tired.",
+              "translation": "Consulta la traducción y la guía de pronunciación de cada elemento."
+            },
+            {
+              "position": 4,
+              "title": "Bloque 4",
+              "content": "I am + estado o identidad habla de uno mismo. I significa yo y am acompaña a I. Ante una profesión singular contable se usa a: I am a student. Esta misión enseña afirmaciones; la negación y las preguntas vendrán después.",
+              "example": "I am excited.",
+              "translation": "Consulta la traducción y la guía de pronunciación de cada elemento."
+            },
+            {
+              "position": 5,
+              "title": "Bloque 5",
+              "content": "I am + estado o identidad habla de uno mismo. I significa yo y am acompaña a I. Ante una profesión singular contable se usa a: I am a student. Esta misión enseña afirmaciones; la negación y las preguntas vendrán después.",
+              "example": "I am angry.",
+              "translation": "Consulta la traducción y la guía de pronunciación de cada elemento."
+            },
+            {
+              "position": 6,
+              "title": "Bloque 6",
+              "content": "I am + estado o identidad habla de uno mismo. I significa yo y am acompaña a I. Ante una profesión singular contable se usa a: I am a student. Esta misión enseña afirmaciones; la negación y las preguntas vendrán después.",
+              "example": "I am calm.",
+              "translation": "Consulta la traducción y la guía de pronunciación de cada elemento."
+            },
+            {
+              "position": 7,
+              "title": "Bloque 7",
+              "content": "I am + estado o identidad habla de uno mismo. I significa yo y am acompaña a I. Ante una profesión singular contable se usa a: I am a student. Esta misión enseña afirmaciones; la negación y las preguntas vendrán después.",
+              "example": "I am a student.",
+              "translation": "Consulta la traducción y la guía de pronunciación de cada elemento."
+            },
+            {
+              "position": 8,
+              "title": "Bloque 8",
+              "content": "I am + estado o identidad habla de uno mismo. I significa yo y am acompaña a I. Ante una profesión singular contable se usa a: I am a student. Esta misión enseña afirmaciones; la negación y las preguntas vendrán después.",
+              "example": "I am a teacher.",
+              "translation": "Consulta la traducción y la guía de pronunciación de cada elemento."
+            },
+            {
+              "position": 9,
+              "title": "Bloque 9",
+              "content": "I am + estado o identidad habla de uno mismo. I significa yo y am acompaña a I. Ante una profesión singular contable se usa a: I am a student. Esta misión enseña afirmaciones; la negación y las preguntas vendrán después.",
+              "example": "I am here today.",
+              "translation": "Consulta la traducción y la guía de pronunciación de cada elemento."
+            },
+            {
+              "position": 10,
+              "title": "Bloque 10",
+              "content": "I am + estado o identidad habla de uno mismo. I significa yo y am acompaña a I. Ante una profesión singular contable se usa a: I am a student. Esta misión enseña afirmaciones; la negación y las preguntas vendrán después.",
+              "example": "I am a friend.",
+              "translation": "Consulta la traducción y la guía de pronunciación de cada elemento."
             }
           ]
         }
@@ -419,302 +660,142 @@
           {
             "itemId": "english-pre-a1-m008-practice-ex01-i01",
             "position": 1,
-            "taskType": "vocabulary_translation",
-            "prompt": "Choose the Spanish meaning of “head”.",
+            "prompt": "Elige la traducción de “I”.",
             "evaluation": {
               "type": "single_choice"
             },
             "options": [
-              "cabeza",
-              "oreja",
-              "diente"
+              "soy/estoy",
+              "yo",
+              "ser/estar"
             ],
-            "answer": "cabeza"
+            "answer": "yo"
           },
           {
             "itemId": "english-pre-a1-m008-practice-ex01-i02",
             "position": 2,
-            "taskType": "vocabulary_translation",
-            "prompt": "Choose the Spanish meaning of “hair”.",
+            "prompt": "Elige la traducción de “am”.",
             "evaluation": {
               "type": "single_choice"
             },
             "options": [
-              "nariz",
-              "mano",
-              "pelo"
+              "feliz",
+              "ser/estar",
+              "soy/estoy"
             ],
-            "answer": "pelo"
+            "answer": "soy/estoy"
           },
           {
             "itemId": "english-pre-a1-m008-practice-ex01-i03",
             "position": 3,
-            "taskType": "vocabulary_translation",
-            "prompt": "Choose the Spanish meaning of “eye”.",
+            "prompt": "Elige la traducción de “be”.",
             "evaluation": {
               "type": "single_choice"
             },
             "options": [
-              "boca",
-              "ojo",
-              "brazo"
+              "ser/estar",
+              "feliz",
+              "triste"
             ],
-            "answer": "ojo"
+            "answer": "ser/estar"
           },
           {
             "itemId": "english-pre-a1-m008-practice-ex01-i04",
             "position": 4,
-            "taskType": "vocabulary_translation",
-            "prompt": "Choose the Spanish meaning of “ear”.",
+            "prompt": "Elige la traducción de “happy”.",
             "evaluation": {
               "type": "single_choice"
             },
             "options": [
-              "diente",
-              "oreja",
-              "pierna"
+              "triste",
+              "feliz",
+              "cansado"
             ],
-            "answer": "oreja"
+            "answer": "feliz"
           },
           {
             "itemId": "english-pre-a1-m008-practice-ex01-i05",
             "position": 5,
-            "taskType": "vocabulary_translation",
-            "prompt": "Choose the Spanish meaning of “nose”.",
+            "prompt": "Elige la traducción de “sad”.",
             "evaluation": {
               "type": "single_choice"
             },
             "options": [
-              "mano",
-              "cabeza",
-              "nariz"
+              "emocionado",
+              "cansado",
+              "triste"
             ],
-            "answer": "nariz"
+            "answer": "triste"
           },
           {
             "itemId": "english-pre-a1-m008-practice-ex01-i06",
             "position": 6,
-            "taskType": "vocabulary_translation",
-            "prompt": "Choose the Spanish meaning of “mouth”.",
+            "prompt": "Elige la traducción de “tired”.",
             "evaluation": {
               "type": "single_choice"
             },
             "options": [
-              "boca",
-              "brazo",
-              "pelo"
+              "cansado",
+              "emocionado",
+              "enfadado"
             ],
-            "answer": "boca"
+            "answer": "cansado"
           },
           {
             "itemId": "english-pre-a1-m008-practice-ex01-i07",
             "position": 7,
-            "taskType": "vocabulary_translation",
-            "prompt": "Choose the Spanish meaning of “tooth”.",
+            "prompt": "Elige la traducción de “excited”.",
             "evaluation": {
               "type": "single_choice"
             },
             "options": [
-              "pierna",
-              "ojo",
-              "diente"
+              "enfadado",
+              "emocionado",
+              "tranquilo"
             ],
-            "answer": "diente"
+            "answer": "emocionado"
           },
           {
             "itemId": "english-pre-a1-m008-practice-ex01-i08",
             "position": 8,
-            "taskType": "vocabulary_translation",
-            "prompt": "Choose the Spanish meaning of “hand”.",
+            "prompt": "Elige la traducción de “angry”.",
             "evaluation": {
               "type": "single_choice"
             },
             "options": [
-              "mano",
-              "cabeza",
-              "oreja"
+              "estudiante",
+              "tranquilo",
+              "enfadado"
             ],
-            "answer": "mano"
+            "answer": "enfadado"
           },
           {
             "itemId": "english-pre-a1-m008-practice-ex01-i09",
             "position": 9,
-            "taskType": "vocabulary_translation",
-            "prompt": "Choose the Spanish meaning of “arm”.",
+            "prompt": "Elige la traducción de “calm”.",
             "evaluation": {
               "type": "single_choice"
             },
             "options": [
-              "pelo",
-              "brazo",
-              "nariz"
+              "tranquilo",
+              "estudiante",
+              "profesor"
             ],
-            "answer": "brazo"
+            "answer": "tranquilo"
           },
           {
             "itemId": "english-pre-a1-m008-practice-ex01-i10",
             "position": 10,
-            "taskType": "vocabulary_translation",
-            "prompt": "Choose the Spanish meaning of “leg”.",
+            "prompt": "Elige la traducción de “student”.",
             "evaluation": {
               "type": "single_choice"
             },
             "options": [
-              "ojo",
-              "pierna",
-              "boca"
+              "profesor",
+              "estudiante",
+              "niño"
             ],
-            "answer": "pierna"
-          },
-          {
-            "itemId": "english-pre-a1-m008-practice-ex01-i11",
-            "position": 11,
-            "taskType": "topic_vocabulary",
-            "prompt": "Which English word means “cabeza”?",
-            "evaluation": {
-              "type": "single_choice"
-            },
-            "options": [
-              "head",
-              "eye",
-              "mouth"
-            ],
-            "answer": "head"
-          },
-          {
-            "itemId": "english-pre-a1-m008-practice-ex01-i12",
-            "position": 12,
-            "taskType": "topic_vocabulary",
-            "prompt": "Choose the word for “pelo”?",
-            "evaluation": {
-              "type": "single_choice"
-            },
-            "options": [
-              "ear",
-              "tooth",
-              "hair"
-            ],
-            "answer": "hair"
-          },
-          {
-            "itemId": "english-pre-a1-m008-practice-ex01-i13",
-            "position": 13,
-            "taskType": "topic_vocabulary",
-            "prompt": "Select the English word for “ojo”?",
-            "evaluation": {
-              "type": "single_choice"
-            },
-            "options": [
-              "eye",
-              "nose",
-              "hand"
-            ],
-            "answer": "eye"
-          },
-          {
-            "itemId": "english-pre-a1-m008-practice-ex01-i14",
-            "position": 14,
-            "taskType": "topic_vocabulary",
-            "prompt": "What is the English word for “oreja”?",
-            "evaluation": {
-              "type": "single_choice"
-            },
-            "options": [
-              "mouth",
-              "arm",
-              "ear"
-            ],
-            "answer": "ear"
-          },
-          {
-            "itemId": "english-pre-a1-m008-practice-ex01-i15",
-            "position": 15,
-            "taskType": "topic_vocabulary",
-            "prompt": "Find the word that means “nariz”?",
-            "evaluation": {
-              "type": "single_choice"
-            },
-            "options": [
-              "tooth",
-              "nose",
-              "leg"
-            ],
-            "answer": "nose"
-          },
-          {
-            "itemId": "english-pre-a1-m008-practice-ex01-i16",
-            "position": 16,
-            "taskType": "topic_vocabulary",
-            "prompt": "Which word matches “boca”?",
-            "evaluation": {
-              "type": "single_choice"
-            },
-            "options": [
-              "mouth",
-              "hand",
-              "head"
-            ],
-            "answer": "mouth"
-          },
-          {
-            "itemId": "english-pre-a1-m008-practice-ex01-i17",
-            "position": 17,
-            "taskType": "topic_vocabulary",
-            "prompt": "Choose the translation for “diente”?",
-            "evaluation": {
-              "type": "single_choice"
-            },
-            "options": [
-              "arm",
-              "hair",
-              "tooth"
-            ],
-            "answer": "tooth"
-          },
-          {
-            "itemId": "english-pre-a1-m008-practice-ex01-i18",
-            "position": 18,
-            "taskType": "topic_vocabulary",
-            "prompt": "Select the matching word for “mano”?",
-            "evaluation": {
-              "type": "single_choice"
-            },
-            "options": [
-              "leg",
-              "hand",
-              "eye"
-            ],
-            "answer": "hand"
-          },
-          {
-            "itemId": "english-pre-a1-m008-practice-ex01-i19",
-            "position": 19,
-            "taskType": "topic_vocabulary",
-            "prompt": "What word means “brazo”?",
-            "evaluation": {
-              "type": "single_choice"
-            },
-            "options": [
-              "arm",
-              "head",
-              "ear"
-            ],
-            "answer": "arm"
-          },
-          {
-            "itemId": "english-pre-a1-m008-practice-ex01-i20",
-            "position": 20,
-            "taskType": "topic_vocabulary",
-            "prompt": "Find the English word for “pierna”?",
-            "evaluation": {
-              "type": "single_choice"
-            },
-            "options": [
-              "hair",
-              "nose",
-              "leg"
-            ],
-            "answer": "leg"
+            "answer": "estudiante"
           }
         ]
       }
@@ -726,146 +807,223 @@
       "exercise": {
         "exerciseId": "english-pre-a1-m008-grammar-ex01",
         "type": "grammar",
+        "theory": {
+          "title": "I am…",
+          "explanation": "I am + estado o identidad habla de uno mismo. I significa yo y am acompaña a I. Ante una profesión singular contable se usa a: I am a student. Esta misión enseña afirmaciones; la negación y las preguntas vendrán después.",
+          "tip": "Comprende todos los modelos de Explore antes de comenzar las actividades.",
+          "patterns": [
+            {
+              "label": "Bloque 1",
+              "pattern": "I am…",
+              "examples": [
+                "I am happy."
+              ]
+            },
+            {
+              "label": "Bloque 2",
+              "pattern": "I am + estado o identidad habla de uno mismo. I significa yo y am acompaña a I. Ante una profesión singular contable se usa a: I am a student. Esta misión enseña afirmaciones; la negación y las preguntas vendrán después.",
+              "examples": [
+                "I am sad."
+              ]
+            },
+            {
+              "label": "Bloque 3",
+              "pattern": "I am + estado o identidad habla de uno mismo. I significa yo y am acompaña a I. Ante una profesión singular contable se usa a: I am a student. Esta misión enseña afirmaciones; la negación y las preguntas vendrán después.",
+              "examples": [
+                "I am tired."
+              ]
+            },
+            {
+              "label": "Bloque 4",
+              "pattern": "I am + estado o identidad habla de uno mismo. I significa yo y am acompaña a I. Ante una profesión singular contable se usa a: I am a student. Esta misión enseña afirmaciones; la negación y las preguntas vendrán después.",
+              "examples": [
+                "I am excited."
+              ]
+            },
+            {
+              "label": "Bloque 5",
+              "pattern": "I am + estado o identidad habla de uno mismo. I significa yo y am acompaña a I. Ante una profesión singular contable se usa a: I am a student. Esta misión enseña afirmaciones; la negación y las preguntas vendrán después.",
+              "examples": [
+                "I am angry."
+              ]
+            },
+            {
+              "label": "Bloque 6",
+              "pattern": "I am + estado o identidad habla de uno mismo. I significa yo y am acompaña a I. Ante una profesión singular contable se usa a: I am a student. Esta misión enseña afirmaciones; la negación y las preguntas vendrán después.",
+              "examples": [
+                "I am calm."
+              ]
+            },
+            {
+              "label": "Bloque 7",
+              "pattern": "I am + estado o identidad habla de uno mismo. I significa yo y am acompaña a I. Ante una profesión singular contable se usa a: I am a student. Esta misión enseña afirmaciones; la negación y las preguntas vendrán después.",
+              "examples": [
+                "I am a student."
+              ]
+            },
+            {
+              "label": "Bloque 8",
+              "pattern": "I am + estado o identidad habla de uno mismo. I significa yo y am acompaña a I. Ante una profesión singular contable se usa a: I am a student. Esta misión enseña afirmaciones; la negación y las preguntas vendrán después.",
+              "examples": [
+                "I am a teacher."
+              ]
+            },
+            {
+              "label": "Bloque 9",
+              "pattern": "I am + estado o identidad habla de uno mismo. I significa yo y am acompaña a I. Ante una profesión singular contable se usa a: I am a student. Esta misión enseña afirmaciones; la negación y las preguntas vendrán después.",
+              "examples": [
+                "I am here today."
+              ]
+            },
+            {
+              "label": "Bloque 10",
+              "pattern": "I am + estado o identidad habla de uno mismo. I significa yo y am acompaña a I. Ante una profesión singular contable se usa a: I am a student. Esta misión enseña afirmaciones; la negación y las preguntas vendrán después.",
+              "examples": [
+                "I am a friend."
+              ]
+            }
+          ]
+        },
         "items": [
           {
             "itemId": "english-pre-a1-m008-grammar-ex01-i01",
             "position": 1,
-            "prompt": "Choose the correct word or phrase: I ___ two eyes.",
+            "prompt": "Reconoce el modelo trabajado: I am happy.",
             "evaluation": {
               "type": "single_choice"
             },
             "options": [
-              "have got",
-              "has got",
-              "is"
+              "I am sad.",
+              "I am happy.",
+              "I am tired."
             ],
-            "answer": "have got"
-          },
-          {
-            "itemId": "english-pre-a1-m008-grammar-ex01-i03",
-            "position": 3,
-            "prompt": "Choose the correct word or phrase: You ___ two hands.",
-            "evaluation": {
-              "type": "single_choice"
-            },
-            "options": [
-              "has got",
-              "have got",
-              "is"
-            ],
-            "answer": "have got"
-          },
-          {
-            "itemId": "english-pre-a1-m008-grammar-ex01-i05",
-            "position": 5,
-            "prompt": "Choose the correct word or phrase: I ___ two legs.",
-            "evaluation": {
-              "type": "single_choice"
-            },
-            "options": [
-              "has got",
-              "are",
-              "have got"
-            ],
-            "answer": "have got"
-          },
-          {
-            "itemId": "english-pre-a1-m008-grammar-ex01-i07",
-            "position": 7,
-            "prompt": "Choose the correct word or phrase: We ___ two ears.",
-            "evaluation": {
-              "type": "single_choice"
-            },
-            "options": [
-              "has got",
-              "are",
-              "have got"
-            ],
-            "answer": "have got"
-          },
-          {
-            "itemId": "english-pre-a1-m008-grammar-ex01-i09",
-            "position": 9,
-            "prompt": "Choose the correct word or phrase: They ___ two arms.",
-            "evaluation": {
-              "type": "single_choice"
-            },
-            "options": [
-              "has got",
-              "have got",
-              "is"
-            ],
-            "answer": "have got"
+            "answer": "I am happy."
           },
           {
             "itemId": "english-pre-a1-m008-grammar-ex01-i02",
             "position": 2,
-            "prompt": "Choose the correct word or phrase: She ___ brown hair.",
+            "prompt": "Reconoce el modelo trabajado: I am sad.",
             "evaluation": {
               "type": "single_choice"
             },
             "options": [
-              "have got",
-              "are",
-              "has got"
+              "I am excited.",
+              "I am tired.",
+              "I am sad."
             ],
-            "answer": "has got"
+            "answer": "I am sad."
+          },
+          {
+            "itemId": "english-pre-a1-m008-grammar-ex01-i03",
+            "position": 3,
+            "prompt": "Reconoce el modelo trabajado: I am tired.",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "I am tired.",
+              "I am excited.",
+              "I am angry."
+            ],
+            "answer": "I am tired."
           },
           {
             "itemId": "english-pre-a1-m008-grammar-ex01-i04",
             "position": 4,
-            "prompt": "Choose the correct word or phrase: He ___ one nose.",
+            "prompt": "Reconoce el modelo trabajado: I am excited.",
             "evaluation": {
               "type": "single_choice"
             },
             "options": [
-              "have got",
-              "has got",
-              "am"
+              "I am angry.",
+              "I am excited.",
+              "I am calm."
             ],
-            "answer": "has got"
+            "answer": "I am excited."
+          },
+          {
+            "itemId": "english-pre-a1-m008-grammar-ex01-i05",
+            "position": 5,
+            "prompt": "Reconoce el modelo trabajado: I am angry.",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "I am a student.",
+              "I am calm.",
+              "I am angry."
+            ],
+            "answer": "I am angry."
           },
           {
             "itemId": "english-pre-a1-m008-grammar-ex01-i06",
             "position": 6,
-            "prompt": "Choose the correct word or phrase: My brother ___ short hair.",
+            "prompt": "Reconoce el modelo trabajado: I am calm.",
             "evaluation": {
               "type": "single_choice"
             },
             "options": [
-              "has got",
-              "have got",
-              "is"
+              "I am calm.",
+              "I am a student.",
+              "I am a teacher."
             ],
-            "answer": "has got"
+            "answer": "I am calm."
+          },
+          {
+            "itemId": "english-pre-a1-m008-grammar-ex01-i07",
+            "position": 7,
+            "prompt": "Reconoce el modelo trabajado: I am a student.",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "I am a teacher.",
+              "I am a student.",
+              "I am here today."
+            ],
+            "answer": "I am a student."
           },
           {
             "itemId": "english-pre-a1-m008-grammar-ex01-i08",
             "position": 8,
-            "prompt": "Choose the correct word or phrase: My sister ___ a small mouth.",
+            "prompt": "Reconoce el modelo trabajado: I am a teacher.",
             "evaluation": {
               "type": "single_choice"
             },
             "options": [
-              "has got",
-              "have got",
-              "am"
+              "I am a friend.",
+              "I am here today.",
+              "I am a teacher."
             ],
-            "answer": "has got"
+            "answer": "I am a teacher."
+          },
+          {
+            "itemId": "english-pre-a1-m008-grammar-ex01-i09",
+            "position": 9,
+            "prompt": "Reconoce el modelo trabajado: I am here today.",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "I am here today.",
+              "I am a friend.",
+              "I am happy."
+            ],
+            "answer": "I am here today."
           },
           {
             "itemId": "english-pre-a1-m008-grammar-ex01-i10",
             "position": 10,
-            "prompt": "Choose the correct word or phrase: The boy ___ ten toes.",
+            "prompt": "Reconoce el modelo trabajado: I am a friend.",
             "evaluation": {
               "type": "single_choice"
             },
             "options": [
-              "has got",
-              "have got",
-              "are"
+              "I am happy.",
+              "I am a friend.",
+              "I am sad."
             ],
-            "answer": "has got"
+            "answer": "I am a friend."
           }
         ]
       }
@@ -881,82 +1039,182 @@
           {
             "itemId": "english-pre-a1-m008-pronunciation-ex01-i01",
             "position": 1,
-            "word": "head",
-            "translation": "cabeza",
-            "pronunciationGuide": "hed",
-            "audio": "tts:en-GB:head"
+            "word": "I",
+            "translation": "yo",
+            "pronunciationGuide": "ái",
+            "audio": "tts:en-GB:I",
+            "audioStatus": "synthetic_pending_review",
+            "guideType": "approximate_spanish"
           },
           {
             "itemId": "english-pre-a1-m008-pronunciation-ex01-i02",
             "position": 2,
-            "word": "hair",
-            "translation": "pelo",
-            "pronunciationGuide": "her",
-            "audio": "tts:en-GB:hair"
+            "word": "am",
+            "translation": "soy/estoy",
+            "pronunciationGuide": "am",
+            "audio": "tts:en-GB:am",
+            "audioStatus": "synthetic_pending_review",
+            "guideType": "approximate_spanish"
           },
           {
             "itemId": "english-pre-a1-m008-pronunciation-ex01-i03",
             "position": 3,
-            "word": "eye",
-            "translation": "ojo",
-            "pronunciationGuide": "ái",
-            "audio": "tts:en-GB:eye"
+            "word": "be",
+            "translation": "ser/estar",
+            "pronunciationGuide": "bí",
+            "audio": "tts:en-GB:be",
+            "audioStatus": "synthetic_pending_review",
+            "guideType": "approximate_spanish"
           },
           {
             "itemId": "english-pre-a1-m008-pronunciation-ex01-i04",
             "position": 4,
-            "word": "ear",
-            "translation": "oreja",
-            "pronunciationGuide": "íer",
-            "audio": "tts:en-GB:ear"
+            "word": "happy",
+            "translation": "feliz",
+            "pronunciationGuide": "JÁ-pi",
+            "audio": "tts:en-GB:happy",
+            "audioStatus": "synthetic_pending_review",
+            "guideType": "approximate_spanish"
           },
           {
             "itemId": "english-pre-a1-m008-pronunciation-ex01-i05",
             "position": 5,
-            "word": "nose",
-            "translation": "nariz",
-            "pronunciationGuide": "nóus",
-            "audio": "tts:en-GB:nose"
+            "word": "sad",
+            "translation": "triste",
+            "pronunciationGuide": "sad",
+            "audio": "tts:en-GB:sad",
+            "audioStatus": "synthetic_pending_review",
+            "guideType": "approximate_spanish"
           },
           {
             "itemId": "english-pre-a1-m008-pronunciation-ex01-i06",
             "position": 6,
-            "word": "mouth",
-            "translation": "boca",
-            "pronunciationGuide": "máuth",
-            "audio": "tts:en-GB:mouth"
+            "word": "tired",
+            "translation": "cansado",
+            "pronunciationGuide": "TÁI-erd",
+            "audio": "tts:en-GB:tired",
+            "audioStatus": "synthetic_pending_review",
+            "guideType": "approximate_spanish"
           },
           {
             "itemId": "english-pre-a1-m008-pronunciation-ex01-i07",
             "position": 7,
-            "word": "tooth",
-            "translation": "diente",
-            "pronunciationGuide": "túuth",
-            "audio": "tts:en-GB:tooth"
+            "word": "excited",
+            "translation": "emocionado",
+            "pronunciationGuide": "ik-SÁI-tid",
+            "audio": "tts:en-GB:excited",
+            "audioStatus": "synthetic_pending_review",
+            "guideType": "approximate_spanish"
           },
           {
             "itemId": "english-pre-a1-m008-pronunciation-ex01-i08",
             "position": 8,
-            "word": "hand",
-            "translation": "mano",
-            "pronunciationGuide": "hand",
-            "audio": "tts:en-GB:hand"
+            "word": "angry",
+            "translation": "enfadado",
+            "pronunciationGuide": "ÁNG-gri",
+            "audio": "tts:en-GB:angry",
+            "audioStatus": "synthetic_pending_review",
+            "guideType": "approximate_spanish"
           },
           {
             "itemId": "english-pre-a1-m008-pronunciation-ex01-i09",
             "position": 9,
-            "word": "arm",
-            "translation": "brazo",
-            "pronunciationGuide": "arm",
-            "audio": "tts:en-GB:arm"
+            "word": "calm",
+            "translation": "tranquilo",
+            "pronunciationGuide": "kám",
+            "audio": "tts:en-GB:calm",
+            "audioStatus": "synthetic_pending_review",
+            "guideType": "approximate_spanish"
           },
           {
             "itemId": "english-pre-a1-m008-pronunciation-ex01-i10",
             "position": 10,
-            "word": "leg",
-            "translation": "pierna",
-            "pronunciationGuide": "leg",
-            "audio": "tts:en-GB:leg"
+            "word": "student",
+            "translation": "estudiante",
+            "pronunciationGuide": "STIÚ-dent",
+            "audio": "tts:en-GB:student",
+            "audioStatus": "synthetic_pending_review",
+            "guideType": "approximate_spanish"
+          },
+          {
+            "itemId": "english-pre-a1-m008-pronunciation-ex01-i11",
+            "position": 11,
+            "word": "teacher",
+            "translation": "profesor",
+            "pronunciationGuide": "TÍ-cha",
+            "audio": "tts:en-GB:teacher",
+            "audioStatus": "synthetic_pending_review",
+            "guideType": "approximate_spanish"
+          },
+          {
+            "itemId": "english-pre-a1-m008-pronunciation-ex01-i12",
+            "position": 12,
+            "word": "boy",
+            "translation": "niño",
+            "pronunciationGuide": "bói",
+            "audio": "tts:en-GB:boy",
+            "audioStatus": "synthetic_pending_review",
+            "guideType": "approximate_spanish"
+          },
+          {
+            "itemId": "english-pre-a1-m008-pronunciation-ex01-i13",
+            "position": 13,
+            "word": "girl",
+            "translation": "niña",
+            "pronunciationGuide": "guérl",
+            "audio": "tts:en-GB:girl",
+            "audioStatus": "synthetic_pending_review",
+            "guideType": "approximate_spanish"
+          },
+          {
+            "itemId": "english-pre-a1-m008-pronunciation-ex01-i14",
+            "position": 14,
+            "word": "child",
+            "translation": "niño/a",
+            "pronunciationGuide": "cháild",
+            "audio": "tts:en-GB:child",
+            "audioStatus": "synthetic_pending_review",
+            "guideType": "approximate_spanish"
+          },
+          {
+            "itemId": "english-pre-a1-m008-pronunciation-ex01-i15",
+            "position": 15,
+            "word": "friend",
+            "translation": "amigo",
+            "pronunciationGuide": "frend",
+            "audio": "tts:en-GB:friend",
+            "audioStatus": "synthetic_pending_review",
+            "guideType": "approximate_spanish"
+          },
+          {
+            "itemId": "english-pre-a1-m008-pronunciation-ex01-i16",
+            "position": 16,
+            "word": "very",
+            "translation": "muy",
+            "pronunciationGuide": "VÉ-ri",
+            "audio": "tts:en-GB:very",
+            "audioStatus": "synthetic_pending_review",
+            "guideType": "approximate_spanish"
+          },
+          {
+            "itemId": "english-pre-a1-m008-pronunciation-ex01-i17",
+            "position": 17,
+            "word": "today",
+            "translation": "hoy",
+            "pronunciationGuide": "ta-DÉI",
+            "audio": "tts:en-GB:today",
+            "audioStatus": "synthetic_pending_review",
+            "guideType": "approximate_spanish"
+          },
+          {
+            "itemId": "english-pre-a1-m008-pronunciation-ex01-i18",
+            "position": 18,
+            "word": "here",
+            "translation": "aquí",
+            "pronunciationGuide": "jíar",
+            "audio": "tts:en-GB:here",
+            "audioStatus": "synthetic_pending_review",
+            "guideType": "approximate_spanish"
           }
         ]
       }
@@ -970,148 +1228,251 @@
         "type": "reading_comprehension",
         "content": {
           "passageId": "english-pre-a1-m008-reading-passage-01",
-          "passage": "I am Alex. I have got brown hair and two blue eyes. I have got two ears, one nose and one mouth. I have got two arms and two hands. I have got two legs and ten toes. My little brother has got short hair. We can smile with our mouths."
+          "passage": "I am a student. I am happy today. I am excited. I am here at school.",
+          "translation": "Traducción del texto: I am a student. I am happy today. I am excited. I am here at school.",
+          "vocabulary": [
+            {
+              "word": "I",
+              "translation": "yo",
+              "pronunciationGuide": "ái"
+            },
+            {
+              "word": "am",
+              "translation": "soy/estoy",
+              "pronunciationGuide": "am"
+            },
+            {
+              "word": "be",
+              "translation": "ser/estar",
+              "pronunciationGuide": "bí"
+            },
+            {
+              "word": "happy",
+              "translation": "feliz",
+              "pronunciationGuide": "JÁ-pi"
+            },
+            {
+              "word": "sad",
+              "translation": "triste",
+              "pronunciationGuide": "sad"
+            },
+            {
+              "word": "tired",
+              "translation": "cansado",
+              "pronunciationGuide": "TÁI-erd"
+            },
+            {
+              "word": "excited",
+              "translation": "emocionado",
+              "pronunciationGuide": "ik-SÁI-tid"
+            },
+            {
+              "word": "angry",
+              "translation": "enfadado",
+              "pronunciationGuide": "ÁNG-gri"
+            },
+            {
+              "word": "calm",
+              "translation": "tranquilo",
+              "pronunciationGuide": "kám"
+            },
+            {
+              "word": "student",
+              "translation": "estudiante",
+              "pronunciationGuide": "STIÚ-dent"
+            },
+            {
+              "word": "teacher",
+              "translation": "profesor",
+              "pronunciationGuide": "TÍ-cha"
+            },
+            {
+              "word": "boy",
+              "translation": "niño",
+              "pronunciationGuide": "bói"
+            },
+            {
+              "word": "girl",
+              "translation": "niña",
+              "pronunciationGuide": "guérl"
+            },
+            {
+              "word": "child",
+              "translation": "niño/a",
+              "pronunciationGuide": "cháild"
+            },
+            {
+              "word": "friend",
+              "translation": "amigo",
+              "pronunciationGuide": "frend"
+            },
+            {
+              "word": "very",
+              "translation": "muy",
+              "pronunciationGuide": "VÉ-ri"
+            },
+            {
+              "word": "today",
+              "translation": "hoy",
+              "pronunciationGuide": "ta-DÉI"
+            },
+            {
+              "word": "here",
+              "translation": "aquí",
+              "pronunciationGuide": "jíar"
+            },
+            {
+              "word": "school",
+              "translation": "escuela",
+              "pronunciationGuide": "skúl"
+            },
+            {
+              "word": "a",
+              "translation": "un/una",
+              "pronunciationGuide": "a"
+            }
+          ]
         },
         "items": [
           {
             "itemId": "english-pre-a1-m008-reading-ex01-i01",
             "position": 1,
-            "prompt": "What is the writer's name?",
+            "prompt": "¿Qué tema presenta el texto?",
             "evaluation": {
               "type": "single_choice"
             },
             "options": [
-              "Alex",
-              "Ben",
-              "Sam"
+              "yo",
+              "I am…",
+              "soy/estoy"
             ],
-            "answer": "Alex"
+            "answer": "I am…"
           },
           {
             "itemId": "english-pre-a1-m008-reading-ex01-i02",
             "position": 2,
-            "prompt": "What colour is the writer's hair?",
+            "prompt": "¿Qué significa “am” en el texto?",
             "evaluation": {
               "type": "single_choice"
             },
             "options": [
-              "Blue",
-              "Brown",
-              "Black"
+              "feliz",
+              "ser/estar",
+              "soy/estoy"
             ],
-            "answer": "Brown"
+            "answer": "soy/estoy"
           },
           {
             "itemId": "english-pre-a1-m008-reading-ex01-i03",
             "position": 3,
-            "prompt": "How many eyes has Alex got?",
+            "prompt": "¿Qué significa “be” en el texto?",
             "evaluation": {
               "type": "single_choice"
             },
             "options": [
-              "One",
-              "Three",
-              "Two"
+              "ser/estar",
+              "feliz",
+              "triste"
             ],
-            "answer": "Two"
+            "answer": "ser/estar"
           },
           {
             "itemId": "english-pre-a1-m008-reading-ex01-i04",
             "position": 4,
-            "prompt": "How many noses has Alex got?",
+            "prompt": "¿Qué significa “happy” en el texto?",
             "evaluation": {
               "type": "single_choice"
             },
             "options": [
-              "Two",
-              "One",
-              "Three"
+              "triste",
+              "feliz",
+              "cansado"
             ],
-            "answer": "One"
+            "answer": "feliz"
           },
           {
             "itemId": "english-pre-a1-m008-reading-ex01-i05",
             "position": 5,
-            "prompt": "How many arms has Alex got?",
+            "prompt": "¿Qué significa “sad” en el texto?",
             "evaluation": {
               "type": "single_choice"
             },
             "options": [
-              "Two",
-              "Four",
-              "One"
+              "emocionado",
+              "cansado",
+              "triste"
             ],
-            "answer": "Two"
+            "answer": "triste"
           },
           {
             "itemId": "english-pre-a1-m008-reading-ex01-i06",
             "position": 6,
-            "prompt": "How many hands has Alex got?",
+            "prompt": "¿Qué significa “tired” en el texto?",
             "evaluation": {
               "type": "single_choice"
             },
             "options": [
-              "One",
-              "Ten",
-              "Two"
+              "cansado",
+              "emocionado",
+              "enfadado"
             ],
-            "answer": "Two"
+            "answer": "cansado"
           },
           {
             "itemId": "english-pre-a1-m008-reading-ex01-i07",
             "position": 7,
-            "prompt": "How many legs has Alex got?",
+            "prompt": "¿Qué significa “excited” en el texto?",
             "evaluation": {
               "type": "single_choice"
             },
             "options": [
-              "Two",
-              "Three",
-              "Four"
+              "enfadado",
+              "emocionado",
+              "tranquilo"
             ],
-            "answer": "Two"
+            "answer": "emocionado"
           },
           {
             "itemId": "english-pre-a1-m008-reading-ex01-i08",
             "position": 8,
-            "prompt": "Who has got short hair?",
+            "prompt": "¿Qué significa “angry” en el texto?",
             "evaluation": {
               "type": "single_choice"
             },
             "options": [
-              "The teacher",
-              "The mother",
-              "The little brother"
+              "estudiante",
+              "tranquilo",
+              "enfadado"
             ],
-            "answer": "The little brother"
+            "answer": "enfadado"
           },
           {
             "itemId": "english-pre-a1-m008-reading-ex01-i09",
             "position": 9,
-            "prompt": "What do we use to smile?",
+            "prompt": "¿Qué significa “calm” en el texto?",
             "evaluation": {
               "type": "single_choice"
             },
             "options": [
-              "Our ears",
-              "Our mouths",
-              "Our hands"
+              "tranquilo",
+              "estudiante",
+              "profesor"
             ],
-            "answer": "Our mouths"
+            "answer": "tranquilo"
           },
           {
             "itemId": "english-pre-a1-m008-reading-ex01-i10",
             "position": 10,
-            "prompt": "What is the text about?",
+            "prompt": "¿Qué significa “student” en el texto?",
             "evaluation": {
               "type": "single_choice"
             },
             "options": [
-              "Food",
-              "School things",
-              "The body"
+              "profesor",
+              "estudiante",
+              "niño"
             ],
-            "answer": "The body"
+            "answer": "estudiante"
           }
         ]
       }
@@ -1127,180 +1488,190 @@
           {
             "itemId": "english-pre-a1-m008-writing-ex01-i01",
             "position": 1,
-            "audio": "tts:en-GB:Touch your head.",
+            "audio": "tts:en-GB:I am happy.",
+            "audioLocale": "en-GB",
+            "audioStatus": "synthetic_pending_review",
+            "kind": "sentence",
+            "repeatCount": 3,
+            "expectedAnswer": "I am happy.",
             "evaluation": {
               "type": "normalised_text"
             },
-            "audioLocale": "en-GB",
-            "kind": "sentence",
-            "repeatCount": 3,
-            "expectedAnswer": "Touch your head.",
             "segments": [
               {
                 "segmentId": "english-pre-a1-m008-writing-segment-01",
-                "text": "Touch your head."
+                "text": "I am happy."
               }
             ]
           },
           {
             "itemId": "english-pre-a1-m008-writing-ex01-i02",
             "position": 2,
-            "audio": "tts:en-GB:My hair is brown.",
+            "audio": "tts:en-GB:I am sad.",
+            "audioLocale": "en-GB",
+            "audioStatus": "synthetic_pending_review",
+            "kind": "sentence",
+            "repeatCount": 3,
+            "expectedAnswer": "I am sad.",
             "evaluation": {
               "type": "normalised_text"
             },
-            "audioLocale": "en-GB",
-            "kind": "sentence",
-            "repeatCount": 3,
-            "expectedAnswer": "My hair is brown.",
             "segments": [
               {
                 "segmentId": "english-pre-a1-m008-writing-segment-02",
-                "text": "My hair is brown."
+                "text": "I am sad."
               }
             ]
           },
           {
             "itemId": "english-pre-a1-m008-writing-ex01-i03",
             "position": 3,
-            "audio": "tts:en-GB:I have two eyes.",
+            "audio": "tts:en-GB:I am tired.",
+            "audioLocale": "en-GB",
+            "audioStatus": "synthetic_pending_review",
+            "kind": "sentence",
+            "repeatCount": 3,
+            "expectedAnswer": "I am tired.",
             "evaluation": {
               "type": "normalised_text"
             },
-            "audioLocale": "en-GB",
-            "kind": "sentence",
-            "repeatCount": 3,
-            "expectedAnswer": "I have two eyes.",
             "segments": [
               {
                 "segmentId": "english-pre-a1-m008-writing-segment-03",
-                "text": "I have two eyes."
+                "text": "I am tired."
               }
             ]
           },
           {
             "itemId": "english-pre-a1-m008-writing-ex01-i04",
             "position": 4,
-            "audio": "tts:en-GB:I have two ears.",
+            "audio": "tts:en-GB:I am excited.",
+            "audioLocale": "en-GB",
+            "audioStatus": "synthetic_pending_review",
+            "kind": "sentence",
+            "repeatCount": 3,
+            "expectedAnswer": "I am excited.",
             "evaluation": {
               "type": "normalised_text"
             },
-            "audioLocale": "en-GB",
-            "kind": "sentence",
-            "repeatCount": 3,
-            "expectedAnswer": "I have two ears.",
             "segments": [
               {
                 "segmentId": "english-pre-a1-m008-writing-segment-04",
-                "text": "I have two ears."
+                "text": "I am excited."
               }
             ]
           },
           {
             "itemId": "english-pre-a1-m008-writing-ex01-i05",
             "position": 5,
-            "audio": "tts:en-GB:I smell with my nose.",
+            "audio": "tts:en-GB:I am angry.",
+            "audioLocale": "en-GB",
+            "audioStatus": "synthetic_pending_review",
+            "kind": "sentence",
+            "repeatCount": 3,
+            "expectedAnswer": "I am angry.",
             "evaluation": {
               "type": "normalised_text"
             },
-            "audioLocale": "en-GB",
-            "kind": "sentence",
-            "repeatCount": 3,
-            "expectedAnswer": "I smell with my nose.",
             "segments": [
               {
                 "segmentId": "english-pre-a1-m008-writing-segment-05",
-                "text": "I smell with my nose."
+                "text": "I am angry."
               }
             ]
           },
           {
             "itemId": "english-pre-a1-m008-writing-ex01-i06",
             "position": 6,
-            "audio": "tts:en-GB:I eat with my mouth.",
+            "audio": "tts:en-GB:I am calm.",
+            "audioLocale": "en-GB",
+            "audioStatus": "synthetic_pending_review",
+            "kind": "sentence",
+            "repeatCount": 3,
+            "expectedAnswer": "I am calm.",
             "evaluation": {
               "type": "normalised_text"
             },
-            "audioLocale": "en-GB",
-            "kind": "sentence",
-            "repeatCount": 3,
-            "expectedAnswer": "I eat with my mouth.",
             "segments": [
               {
                 "segmentId": "english-pre-a1-m008-writing-segment-06",
-                "text": "I eat with my mouth."
+                "text": "I am calm."
               }
             ]
           },
           {
             "itemId": "english-pre-a1-m008-writing-ex01-i07",
             "position": 7,
-            "audio": "tts:en-GB:My tooth is white.",
+            "audio": "tts:en-GB:I am a student.",
+            "audioLocale": "en-GB",
+            "audioStatus": "synthetic_pending_review",
+            "kind": "sentence",
+            "repeatCount": 3,
+            "expectedAnswer": "I am a student.",
             "evaluation": {
               "type": "normalised_text"
             },
-            "audioLocale": "en-GB",
-            "kind": "sentence",
-            "repeatCount": 3,
-            "expectedAnswer": "My tooth is white.",
             "segments": [
               {
                 "segmentId": "english-pre-a1-m008-writing-segment-07",
-                "text": "My tooth is white."
+                "text": "I am a student."
               }
             ]
           },
           {
             "itemId": "english-pre-a1-m008-writing-ex01-i08",
             "position": 8,
-            "audio": "tts:en-GB:I wave my hand.",
+            "audio": "tts:en-GB:I am a teacher.",
+            "audioLocale": "en-GB",
+            "audioStatus": "synthetic_pending_review",
+            "kind": "sentence",
+            "repeatCount": 3,
+            "expectedAnswer": "I am a teacher.",
             "evaluation": {
               "type": "normalised_text"
             },
-            "audioLocale": "en-GB",
-            "kind": "sentence",
-            "repeatCount": 3,
-            "expectedAnswer": "I wave my hand.",
             "segments": [
               {
                 "segmentId": "english-pre-a1-m008-writing-segment-08",
-                "text": "I wave my hand."
+                "text": "I am a teacher."
               }
             ]
           },
           {
             "itemId": "english-pre-a1-m008-writing-ex01-i09",
             "position": 9,
-            "audio": "tts:en-GB:I have two arms.",
+            "audio": "tts:en-GB:I am here today.",
+            "audioLocale": "en-GB",
+            "audioStatus": "synthetic_pending_review",
+            "kind": "sentence",
+            "repeatCount": 3,
+            "expectedAnswer": "I am here today.",
             "evaluation": {
               "type": "normalised_text"
             },
-            "audioLocale": "en-GB",
-            "kind": "sentence",
-            "repeatCount": 3,
-            "expectedAnswer": "I have two arms.",
             "segments": [
               {
                 "segmentId": "english-pre-a1-m008-writing-segment-09",
-                "text": "I have two arms."
+                "text": "I am here today."
               }
             ]
           },
           {
             "itemId": "english-pre-a1-m008-writing-ex01-i10",
             "position": 10,
-            "audio": "tts:en-GB:I walk with my legs.",
+            "audio": "tts:en-GB:I am a friend.",
+            "audioLocale": "en-GB",
+            "audioStatus": "synthetic_pending_review",
+            "kind": "sentence",
+            "repeatCount": 3,
+            "expectedAnswer": "I am a friend.",
             "evaluation": {
               "type": "normalised_text"
             },
-            "audioLocale": "en-GB",
-            "kind": "sentence",
-            "repeatCount": 3,
-            "expectedAnswer": "I walk with my legs.",
             "segments": [
               {
                 "segmentId": "english-pre-a1-m008-writing-segment-10",
-                "text": "I walk with my legs."
+                "text": "I am a friend."
               }
             ]
           }
@@ -1318,8 +1689,10 @@
           {
             "itemId": "english-pre-a1-m008-speaking-ex01-i01",
             "position": 1,
-            "prompt": "Say a short sentence using “head”.",
-            "modelAnswer": "I have got a head.",
+            "prompt": "Di en voz alta esta expresión.",
+            "promptSpanish": "Practica el modelo de la misión.",
+            "modelAnswer": "I am happy.",
+            "translation": "I am happy.",
             "evaluation": {
               "type": "transcription_feedback",
               "transcriptionSeparateFromPronunciation": true
@@ -1328,8 +1701,10 @@
           {
             "itemId": "english-pre-a1-m008-speaking-ex01-i02",
             "position": 2,
-            "prompt": "Say a short sentence using “hair”.",
-            "modelAnswer": "I have got brown hair.",
+            "prompt": "Di en voz alta esta expresión.",
+            "promptSpanish": "Practica el modelo de la misión.",
+            "modelAnswer": "I am sad.",
+            "translation": "I am sad.",
             "evaluation": {
               "type": "transcription_feedback",
               "transcriptionSeparateFromPronunciation": true
@@ -1338,8 +1713,10 @@
           {
             "itemId": "english-pre-a1-m008-speaking-ex01-i03",
             "position": 3,
-            "prompt": "Say a short sentence using “eye”.",
-            "modelAnswer": "I have got two eyes.",
+            "prompt": "Di en voz alta esta expresión.",
+            "promptSpanish": "Practica el modelo de la misión.",
+            "modelAnswer": "I am tired.",
+            "translation": "I am tired.",
             "evaluation": {
               "type": "transcription_feedback",
               "transcriptionSeparateFromPronunciation": true
@@ -1348,8 +1725,10 @@
           {
             "itemId": "english-pre-a1-m008-speaking-ex01-i04",
             "position": 4,
-            "prompt": "Say a short sentence using “ear”.",
-            "modelAnswer": "I have got two ears.",
+            "prompt": "Di en voz alta esta expresión.",
+            "promptSpanish": "Practica el modelo de la misión.",
+            "modelAnswer": "I am excited.",
+            "translation": "I am excited.",
             "evaluation": {
               "type": "transcription_feedback",
               "transcriptionSeparateFromPronunciation": true
@@ -1358,8 +1737,10 @@
           {
             "itemId": "english-pre-a1-m008-speaking-ex01-i05",
             "position": 5,
-            "prompt": "Say a short sentence using “nose”.",
-            "modelAnswer": "I have got one nose.",
+            "prompt": "Di en voz alta esta expresión.",
+            "promptSpanish": "Practica el modelo de la misión.",
+            "modelAnswer": "I am angry.",
+            "translation": "I am angry.",
             "evaluation": {
               "type": "transcription_feedback",
               "transcriptionSeparateFromPronunciation": true
@@ -1368,8 +1749,10 @@
           {
             "itemId": "english-pre-a1-m008-speaking-ex01-i06",
             "position": 6,
-            "prompt": "Say a short sentence using “mouth”.",
-            "modelAnswer": "I have got one mouth.",
+            "prompt": "Di en voz alta esta expresión.",
+            "promptSpanish": "Practica el modelo de la misión.",
+            "modelAnswer": "I am calm.",
+            "translation": "I am calm.",
             "evaluation": {
               "type": "transcription_feedback",
               "transcriptionSeparateFromPronunciation": true
@@ -1378,8 +1761,10 @@
           {
             "itemId": "english-pre-a1-m008-speaking-ex01-i07",
             "position": 7,
-            "prompt": "Say a short sentence using “tooth”.",
-            "modelAnswer": "A tooth is in my mouth.",
+            "prompt": "Di en voz alta esta expresión.",
+            "promptSpanish": "Practica el modelo de la misión.",
+            "modelAnswer": "I am a student.",
+            "translation": "I am a student.",
             "evaluation": {
               "type": "transcription_feedback",
               "transcriptionSeparateFromPronunciation": true
@@ -1388,8 +1773,10 @@
           {
             "itemId": "english-pre-a1-m008-speaking-ex01-i08",
             "position": 8,
-            "prompt": "Say a short sentence using “hand”.",
-            "modelAnswer": "I have got two hands.",
+            "prompt": "Di en voz alta esta expresión.",
+            "promptSpanish": "Practica el modelo de la misión.",
+            "modelAnswer": "I am a teacher.",
+            "translation": "I am a teacher.",
             "evaluation": {
               "type": "transcription_feedback",
               "transcriptionSeparateFromPronunciation": true
@@ -1398,8 +1785,10 @@
           {
             "itemId": "english-pre-a1-m008-speaking-ex01-i09",
             "position": 9,
-            "prompt": "Say a short sentence using “arm”.",
-            "modelAnswer": "I have got two arms.",
+            "prompt": "Di en voz alta esta expresión.",
+            "promptSpanish": "Practica el modelo de la misión.",
+            "modelAnswer": "I am here today.",
+            "translation": "I am here today.",
             "evaluation": {
               "type": "transcription_feedback",
               "transcriptionSeparateFromPronunciation": true
@@ -1408,8 +1797,10 @@
           {
             "itemId": "english-pre-a1-m008-speaking-ex01-i10",
             "position": 10,
-            "prompt": "Say a short sentence using “leg”.",
-            "modelAnswer": "I have got two legs.",
+            "prompt": "Di en voz alta esta expresión.",
+            "promptSpanish": "Practica el modelo de la misión.",
+            "modelAnswer": "I am a friend.",
+            "translation": "I am a friend.",
             "evaluation": {
               "type": "transcription_feedback",
               "transcriptionSeparateFromPronunciation": true
@@ -1426,53 +1817,55 @@
         "exerciseId": "english-pre-a1-m008-listening-ex01",
         "type": "listening_gap_fill",
         "content": {
-          "audio": "tts:en-GB:Touch your head. Brush your hair every morning. You use your eye to see. You use your ear to hear. Smell with your nose. Eat with your mouth. A tooth is in your mouth. Wave with your hand. Your arm is between your hand and shoulder. You walk with your leg.",
+          "audio": "tts:en-GB:I am happy. I am sad. I am tired. I am excited. I am angry. I am calm. I am a student. I am a teacher. I am here today. I am a friend.",
           "audioLocale": "en-GB",
-          "transcriptTemplate": "Touch your [[gap-01]]. Brush your [[gap-02]] every morning. You use your [[gap-03]] to see. You use your [[gap-04]] to hear. Smell with your [[gap-05]]. Eat with your [[gap-06]]. A [[gap-07]] is in your mouth. Wave with your [[gap-08]]. Your [[gap-09]] is between your hand and shoulder. You walk with your [[gap-10]].",
+          "audioStatus": "synthetic_pending_review",
+          "transcriptTemplate": "[[gap-01]] [[gap-02]] [[gap-03]] [[gap-04]] [[gap-05]] [[gap-06]] [[gap-07]] [[gap-08]] [[gap-09]] [[gap-10]]",
           "wordBank": [
             {
               "wordId": "english-pre-a1-m008-listening-word-01",
-              "word": "head"
+              "word": "I"
             },
             {
               "wordId": "english-pre-a1-m008-listening-word-02",
-              "word": "hair"
+              "word": "am"
             },
             {
               "wordId": "english-pre-a1-m008-listening-word-03",
-              "word": "eye"
+              "word": "be"
             },
             {
               "wordId": "english-pre-a1-m008-listening-word-04",
-              "word": "ear"
+              "word": "happy"
             },
             {
               "wordId": "english-pre-a1-m008-listening-word-05",
-              "word": "nose"
+              "word": "sad"
             },
             {
               "wordId": "english-pre-a1-m008-listening-word-06",
-              "word": "mouth"
+              "word": "tired"
             },
             {
               "wordId": "english-pre-a1-m008-listening-word-07",
-              "word": "tooth"
+              "word": "excited"
             },
             {
               "wordId": "english-pre-a1-m008-listening-word-08",
-              "word": "hand"
+              "word": "angry"
             },
             {
               "wordId": "english-pre-a1-m008-listening-word-09",
-              "word": "arm"
+              "word": "calm"
             },
             {
               "wordId": "english-pre-a1-m008-listening-word-10",
-              "word": "leg"
+              "word": "student"
             }
           ],
           "interaction": "select_place_move_replace",
-          "audioTranscript": "tts:en-GB:Touch your head. Brush your hair every morning. You use your eye to see. You use your ear to hear. Smell with your nose. Eat with your mouth. A tooth is in your mouth. Wave with your hand. Your arm is between your hand and shoulder. You walk with your leg."
+          "audioTranscript": "tts:en-GB:I am happy. I am sad. I am tired. I am excited. I am angry. I am calm. I am a student. I am a teacher. I am here today. I am a friend.",
+          "translation": "Escucha y reconoce las expresiones enseñadas."
         },
         "items": [
           {
@@ -1480,70 +1873,70 @@
             "position": 1,
             "gapToken": "[[gap-01]]",
             "expectedWordId": "english-pre-a1-m008-listening-word-01",
-            "answer": "head"
+            "answer": "I"
           },
           {
             "itemId": "english-pre-a1-m008-listening-ex01-i02",
             "position": 2,
             "gapToken": "[[gap-02]]",
             "expectedWordId": "english-pre-a1-m008-listening-word-02",
-            "answer": "hair"
+            "answer": "am"
           },
           {
             "itemId": "english-pre-a1-m008-listening-ex01-i03",
             "position": 3,
             "gapToken": "[[gap-03]]",
             "expectedWordId": "english-pre-a1-m008-listening-word-03",
-            "answer": "eye"
+            "answer": "be"
           },
           {
             "itemId": "english-pre-a1-m008-listening-ex01-i04",
             "position": 4,
             "gapToken": "[[gap-04]]",
             "expectedWordId": "english-pre-a1-m008-listening-word-04",
-            "answer": "ear"
+            "answer": "happy"
           },
           {
             "itemId": "english-pre-a1-m008-listening-ex01-i05",
             "position": 5,
             "gapToken": "[[gap-05]]",
             "expectedWordId": "english-pre-a1-m008-listening-word-05",
-            "answer": "nose"
+            "answer": "sad"
           },
           {
             "itemId": "english-pre-a1-m008-listening-ex01-i06",
             "position": 6,
             "gapToken": "[[gap-06]]",
             "expectedWordId": "english-pre-a1-m008-listening-word-06",
-            "answer": "mouth"
+            "answer": "tired"
           },
           {
             "itemId": "english-pre-a1-m008-listening-ex01-i07",
             "position": 7,
             "gapToken": "[[gap-07]]",
             "expectedWordId": "english-pre-a1-m008-listening-word-07",
-            "answer": "tooth"
+            "answer": "excited"
           },
           {
             "itemId": "english-pre-a1-m008-listening-ex01-i08",
             "position": 8,
             "gapToken": "[[gap-08]]",
             "expectedWordId": "english-pre-a1-m008-listening-word-08",
-            "answer": "hand"
+            "answer": "angry"
           },
           {
             "itemId": "english-pre-a1-m008-listening-ex01-i09",
             "position": 9,
             "gapToken": "[[gap-09]]",
             "expectedWordId": "english-pre-a1-m008-listening-word-09",
-            "answer": "arm"
+            "answer": "calm"
           },
           {
             "itemId": "english-pre-a1-m008-listening-ex01-i10",
             "position": 10,
             "gapToken": "[[gap-10]]",
             "expectedWordId": "english-pre-a1-m008-listening-word-10",
-            "answer": "leg"
+            "answer": "student"
           }
         ]
       }

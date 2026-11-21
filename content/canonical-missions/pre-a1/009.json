@@ -1,9 +1,9 @@
 {
-  "schemaVersion": "1.2.0",
-  "contentVersion": 2,
+  "schemaVersion": 1,
+  "contentVersion": "2026-11-21-curriculum-alignment-v1",
   "course": {
     "courseId": "english-pre-a1",
-    "level": "PRE-A1",
+    "level": "Pre-A1",
     "language": "en-GB"
   },
   "unit": {
@@ -16,7 +16,7 @@
     "missionId": "english-pre-a1-m009",
     "unitId": "english-pre-a1-unit-01",
     "position": 9,
-    "title": "At Home"
+    "title": "I'm and you're"
   },
   "sections": [
     {
@@ -26,382 +26,642 @@
       "exercise": {
         "exerciseId": "english-pre-a1-m009-explore-ex01",
         "type": "vocabulary_pairs",
-        "theory": {
-          "title": "La casa: qué hay y dónde están las cosas",
-          "explanation": "Primero aprende a decir qué hay en una habitación con There is y There are. Después indica dónde está un objeto con in, on, under y next to. Termina describiendo la casa y dando instrucciones sencillas.",
-          "tip": "There is + una cosa; There are + varias. Las preposiciones van antes del lugar.",
-          "patterns": [
-            {
-              "label": "1. Existencia en singular y plural",
-              "pattern": "There is + singular · There are + plural",
-              "examples": [
-                "There is a kitchen. — Hay una cocina.",
-                "There are two bedrooms. — Hay dos dormitorios.",
-                "There is a sofa. — Hay un sofá."
-              ]
-            },
-            {
-              "label": "2. Ubicación",
-              "pattern": "in · on · under · next to + place",
-              "examples": [
-                "The bed is in the bedroom. — La cama está en el dormitorio.",
-                "The book is on the table. — El libro está sobre la mesa.",
-                "The cat is under the chair. — El gato está debajo de la silla.",
-                "The door is next to the table. — La puerta está al lado de la mesa."
-              ]
-            },
-            {
-              "label": "3. Describir y dar instrucciones",
-              "pattern": "subject + is/are + adjective · base verb",
-              "examples": [
-                "My house is small. — Mi casa es pequeña.",
-                "The chairs are in the kitchen. — Las sillas están en la cocina.",
-                "Please close the door. — Por favor, cierra la puerta."
-              ]
-            }
-          ]
-        },
         "items": [
           {
             "itemId": "english-pre-a1-m009-explore-ex01-i01",
             "position": 1,
-            "english": "house",
-            "spanish": "casa",
-            "audio": "tts:en-GB:house"
+            "english": "I",
+            "spanish": "yo",
+            "pronunciationGuide": "ái",
+            "audio": "tts:en-GB:I",
+            "audioStatus": "synthetic_pending_review"
           },
           {
             "itemId": "english-pre-a1-m009-explore-ex01-i02",
             "position": 2,
-            "english": "kitchen",
-            "spanish": "cocina",
-            "audio": "tts:en-GB:kitchen"
+            "english": "you",
+            "spanish": "tú",
+            "pronunciationGuide": "iú",
+            "audio": "tts:en-GB:you",
+            "audioStatus": "synthetic_pending_review"
           },
           {
             "itemId": "english-pre-a1-m009-explore-ex01-i03",
             "position": 3,
-            "english": "bedroom",
-            "spanish": "dormitorio",
-            "audio": "tts:en-GB:bedroom"
+            "english": "am",
+            "spanish": "soy/estoy",
+            "pronunciationGuide": "am",
+            "audio": "tts:en-GB:am",
+            "audioStatus": "synthetic_pending_review"
           },
           {
             "itemId": "english-pre-a1-m009-explore-ex01-i04",
             "position": 4,
-            "english": "bathroom",
-            "spanish": "baño",
-            "audio": "tts:en-GB:bathroom"
+            "english": "are",
+            "spanish": "eres/estás",
+            "pronunciationGuide": "ar",
+            "audio": "tts:en-GB:are",
+            "audioStatus": "synthetic_pending_review"
           },
           {
             "itemId": "english-pre-a1-m009-explore-ex01-i05",
             "position": 5,
-            "english": "living room",
-            "spanish": "salón",
-            "audio": "tts:en-GB:living room"
+            "english": "I am",
+            "spanish": "yo soy/estoy",
+            "pronunciationGuide": "ái am",
+            "audio": "tts:en-GB:I am",
+            "audioStatus": "synthetic_pending_review"
           },
           {
             "itemId": "english-pre-a1-m009-explore-ex01-i06",
             "position": 6,
-            "english": "table",
-            "spanish": "mesa",
-            "audio": "tts:en-GB:table"
+            "english": "you are",
+            "spanish": "tú eres/estás",
+            "pronunciationGuide": "iú ar",
+            "audio": "tts:en-GB:you are",
+            "audioStatus": "synthetic_pending_review"
           },
           {
             "itemId": "english-pre-a1-m009-explore-ex01-i07",
             "position": 7,
-            "english": "bed",
-            "spanish": "cama",
-            "audio": "tts:en-GB:bed"
+            "english": "I'm",
+            "spanish": "contracción de I am",
+            "pronunciationGuide": "áim",
+            "audio": "tts:en-GB:I'm",
+            "audioStatus": "synthetic_pending_review"
           },
           {
             "itemId": "english-pre-a1-m009-explore-ex01-i08",
             "position": 8,
-            "english": "sofa",
-            "spanish": "sofá",
-            "audio": "tts:en-GB:sofa"
+            "english": "you're",
+            "spanish": "contracción de you are",
+            "pronunciationGuide": "ior",
+            "audio": "tts:en-GB:you're",
+            "audioStatus": "synthetic_pending_review"
           },
           {
             "itemId": "english-pre-a1-m009-explore-ex01-i09",
             "position": 9,
-            "english": "door",
-            "spanish": "puerta",
-            "audio": "tts:en-GB:door"
+            "english": "happy",
+            "spanish": "feliz",
+            "pronunciationGuide": "JÁ-pi",
+            "audio": "tts:en-GB:happy",
+            "audioStatus": "synthetic_pending_review"
           },
           {
             "itemId": "english-pre-a1-m009-explore-ex01-i10",
             "position": 10,
-            "english": "window",
-            "spanish": "ventana",
-            "audio": "tts:en-GB:window"
+            "english": "sad",
+            "spanish": "triste",
+            "pronunciationGuide": "sad",
+            "audio": "tts:en-GB:sad",
+            "audioStatus": "synthetic_pending_review"
+          },
+          {
+            "itemId": "english-pre-a1-m009-explore-ex01-i11",
+            "position": 11,
+            "english": "tired",
+            "spanish": "cansado",
+            "pronunciationGuide": "TÁI-erd",
+            "audio": "tts:en-GB:tired",
+            "audioStatus": "synthetic_pending_review"
+          },
+          {
+            "itemId": "english-pre-a1-m009-explore-ex01-i12",
+            "position": 12,
+            "english": "fine",
+            "spanish": "bien",
+            "pronunciationGuide": "fáin",
+            "audio": "tts:en-GB:fine",
+            "audioStatus": "synthetic_pending_review"
+          },
+          {
+            "itemId": "english-pre-a1-m009-explore-ex01-i13",
+            "position": 13,
+            "english": "good",
+            "spanish": "bien",
+            "pronunciationGuide": "gud",
+            "audio": "tts:en-GB:good",
+            "audioStatus": "synthetic_pending_review"
+          },
+          {
+            "itemId": "english-pre-a1-m009-explore-ex01-i14",
+            "position": 14,
+            "english": "great",
+            "spanish": "genial",
+            "pronunciationGuide": "gréit",
+            "audio": "tts:en-GB:great",
+            "audioStatus": "synthetic_pending_review"
+          },
+          {
+            "itemId": "english-pre-a1-m009-explore-ex01-i15",
+            "position": 15,
+            "english": "student",
+            "spanish": "estudiante",
+            "pronunciationGuide": "STIÚ-dent",
+            "audio": "tts:en-GB:student",
+            "audioStatus": "synthetic_pending_review"
+          },
+          {
+            "itemId": "english-pre-a1-m009-explore-ex01-i16",
+            "position": 16,
+            "english": "teacher",
+            "spanish": "profesor",
+            "pronunciationGuide": "TÍ-cha",
+            "audio": "tts:en-GB:teacher",
+            "audioStatus": "synthetic_pending_review"
+          },
+          {
+            "itemId": "english-pre-a1-m009-explore-ex01-i17",
+            "position": 17,
+            "english": "friend",
+            "spanish": "amigo",
+            "pronunciationGuide": "frend",
+            "audio": "tts:en-GB:friend",
+            "audioStatus": "synthetic_pending_review"
+          },
+          {
+            "itemId": "english-pre-a1-m009-explore-ex01-i18",
+            "position": 18,
+            "english": "ready",
+            "spanish": "preparado",
+            "pronunciationGuide": "RÉ-di",
+            "audio": "tts:en-GB:ready",
+            "audioStatus": "synthetic_pending_review"
+          },
+          {
+            "itemId": "english-pre-a1-m009-explore-ex01-i19",
+            "position": 19,
+            "english": "nice",
+            "spanish": "agradable",
+            "pronunciationGuide": "náis",
+            "audio": "tts:en-GB:nice",
+            "audioStatus": "synthetic_pending_review"
+          },
+          {
+            "itemId": "english-pre-a1-m009-explore-ex01-i20",
+            "position": 20,
+            "english": "here",
+            "spanish": "aquí",
+            "pronunciationGuide": "jíar",
+            "audio": "tts:en-GB:here",
+            "audioStatus": "synthetic_pending_review"
+          },
+          {
+            "itemId": "english-pre-a1-m009-explore-ex01-i21",
+            "position": 21,
+            "english": "my",
+            "spanish": "mi",
+            "pronunciationGuide": "mái",
+            "audio": "tts:en-GB:my",
+            "audioStatus": "synthetic_pending_review"
+          },
+          {
+            "itemId": "english-pre-a1-m009-explore-ex01-i22",
+            "position": 22,
+            "english": "your",
+            "spanish": "tu",
+            "pronunciationGuide": "iór",
+            "audio": "tts:en-GB:your",
+            "audioStatus": "synthetic_pending_review"
           }
         ],
+        "theory": {
+          "title": "I'm and you're",
+          "explanation": "I am se contrae como I'm; you are como you're. El apóstrofo marca la contracción. You're significa you are; your significa tu y no lleva apóstrofo.",
+          "tip": "Comprende todos los modelos de Explore antes de comenzar las actividades.",
+          "patterns": [
+            {
+              "label": "Bloque 1",
+              "pattern": "I'm and you're",
+              "examples": [
+                "I am → I'm."
+              ]
+            },
+            {
+              "label": "Bloque 2",
+              "pattern": "I am se contrae como I'm; you are como you're. El apóstrofo marca la contracción. You're significa you are; your significa tu y no lleva apóstrofo.",
+              "examples": [
+                "You are → You're."
+              ]
+            },
+            {
+              "label": "Bloque 3",
+              "pattern": "I am se contrae como I'm; you are como you're. El apóstrofo marca la contracción. You're significa you are; your significa tu y no lleva apóstrofo.",
+              "examples": [
+                "I'm happy."
+              ]
+            },
+            {
+              "label": "Bloque 4",
+              "pattern": "I am se contrae como I'm; you are como you're. El apóstrofo marca la contracción. You're significa you are; your significa tu y no lleva apóstrofo.",
+              "examples": [
+                "You're happy."
+              ]
+            },
+            {
+              "label": "Bloque 5",
+              "pattern": "I am se contrae como I'm; you are como you're. El apóstrofo marca la contracción. You're significa you are; your significa tu y no lleva apóstrofo.",
+              "examples": [
+                "I'm a student."
+              ]
+            },
+            {
+              "label": "Bloque 6",
+              "pattern": "I am se contrae como I'm; you are como you're. El apóstrofo marca la contracción. You're significa you are; your significa tu y no lleva apóstrofo.",
+              "examples": [
+                "You're a teacher."
+              ]
+            },
+            {
+              "label": "Bloque 7",
+              "pattern": "I am se contrae como I'm; you are como you're. El apóstrofo marca la contracción. You're significa you are; your significa tu y no lleva apóstrofo.",
+              "examples": [
+                "I'm fine."
+              ]
+            },
+            {
+              "label": "Bloque 8",
+              "pattern": "I am se contrae como I'm; you are como you're. El apóstrofo marca la contracción. You're significa you are; your significa tu y no lleva apóstrofo.",
+              "examples": [
+                "You're great."
+              ]
+            },
+            {
+              "label": "Bloque 9",
+              "pattern": "I am se contrae como I'm; you are como you're. El apóstrofo marca la contracción. You're significa you are; your significa tu y no lleva apóstrofo.",
+              "examples": [
+                "I'm ready."
+              ]
+            },
+            {
+              "label": "Bloque 10",
+              "pattern": "I am se contrae como I'm; you are como you're. El apóstrofo marca la contracción. You're significa you are; your significa tu y no lleva apóstrofo.",
+              "examples": [
+                "You're my friend."
+              ]
+            }
+          ]
+        },
         "lesson": {
           "phrases": [
             {
-              "english": "There is a kitchen.",
-              "spanish": "Hay una cocina.",
-              "note": "There is se usa con singular."
+              "english": "I am → I'm.",
+              "spanish": "I am → I'm.",
+              "note": "Modelo enseñado en Explore."
             },
             {
-              "english": "There are two bedrooms.",
-              "spanish": "Hay dos dormitorios.",
-              "note": "There are se usa con plural."
+              "english": "You are → You're.",
+              "spanish": "You are → You're.",
+              "note": "Modelo enseñado en Explore."
             },
             {
-              "english": "The bed is in the bedroom.",
-              "spanish": "La cama está en el dormitorio.",
-              "note": "In indica dentro de un lugar."
+              "english": "I'm happy.",
+              "spanish": "I'm happy.",
+              "note": "Modelo enseñado en Explore."
             },
             {
-              "english": "The book is on the table.",
-              "spanish": "El libro está sobre la mesa.",
-              "note": "On indica contacto con una superficie."
+              "english": "You're happy.",
+              "spanish": "You're happy.",
+              "note": "Modelo enseñado en Explore."
             },
             {
-              "english": "The cat is under the chair.",
-              "spanish": "El gato está debajo de la silla.",
-              "note": "Under significa debajo de."
+              "english": "I'm a student.",
+              "spanish": "I'm a student.",
+              "note": "Modelo enseñado en Explore."
             },
             {
-              "english": "The door is next to the table.",
-              "spanish": "La puerta está al lado de la mesa.",
-              "note": "Next to significa al lado de."
+              "english": "You're a teacher.",
+              "spanish": "You're a teacher.",
+              "note": "Modelo enseñado en Explore."
             },
             {
-              "english": "between",
-              "spanish": "entre",
-              "note": "Between indica posición entre dos elementos."
+              "english": "I'm fine.",
+              "spanish": "I'm fine.",
+              "note": "Modelo enseñado en Explore."
             },
             {
-              "english": "Open the window, please.",
-              "spanish": "Abre la ventana, por favor.",
-              "note": "Open es una instrucción."
+              "english": "You're great.",
+              "spanish": "You're great.",
+              "note": "Modelo enseñado en Explore."
             },
             {
-              "english": "Close the door, please.",
-              "spanish": "Cierra la puerta, por favor.",
-              "note": "Close es una instrucción."
+              "english": "I'm ready.",
+              "spanish": "I'm ready.",
+              "note": "Modelo enseñado en Explore."
             },
             {
-              "english": "There is / There are",
-              "spanish": "Hay",
-              "note": "There is + singular; there are + plural."
+              "english": "You're my friend.",
+              "spanish": "You're my friend.",
+              "note": "Modelo enseñado en Explore."
             }
           ],
           "grammar": [
             {
-              "english": "There is a kitchen.",
-              "spanish": "Hay una cocina."
+              "english": "I am → I'm.",
+              "spanish": "Modelo de la misión",
+              "note": "I'm and you're"
             },
             {
-              "english": "There are two bedrooms.",
-              "spanish": "Hay dos dormitorios."
+              "english": "You are → You're.",
+              "spanish": "Modelo de la misión",
+              "note": "I am se contrae como I'm; you are como you're. El apóstrofo marca la contracción. You're significa you are; your significa tu y no lleva apóstrofo."
             },
             {
-              "english": "The bed is in the bedroom.",
-              "spanish": "La cama está en el dormitorio."
+              "english": "I'm happy.",
+              "spanish": "Modelo de la misión",
+              "note": "I am se contrae como I'm; you are como you're. El apóstrofo marca la contracción. You're significa you are; your significa tu y no lleva apóstrofo."
             },
             {
-              "english": "The book is on the table.",
-              "spanish": "El libro está sobre la mesa."
+              "english": "You're happy.",
+              "spanish": "Modelo de la misión",
+              "note": "I am se contrae como I'm; you are como you're. El apóstrofo marca la contracción. You're significa you are; your significa tu y no lleva apóstrofo."
             },
             {
-              "english": "The cat is under the chair.",
-              "spanish": "El gato está debajo de la silla."
+              "english": "I'm a student.",
+              "spanish": "Modelo de la misión",
+              "note": "I am se contrae como I'm; you are como you're. El apóstrofo marca la contracción. You're significa you are; your significa tu y no lleva apóstrofo."
             },
             {
-              "english": "There is a sofa.",
-              "spanish": "Hay un sofá."
+              "english": "You're a teacher.",
+              "spanish": "Modelo de la misión",
+              "note": "I am se contrae como I'm; you are como you're. El apóstrofo marca la contracción. You're significa you are; your significa tu y no lleva apóstrofo."
             },
             {
-              "english": "There are three windows.",
-              "spanish": "Hay tres ventanas."
+              "english": "I'm fine.",
+              "spanish": "Modelo de la misión",
+              "note": "I am se contrae como I'm; you are como you're. El apóstrofo marca la contracción. You're significa you are; your significa tu y no lleva apóstrofo."
             },
             {
-              "english": "The door is next to the table.",
-              "spanish": "La puerta está al lado de la mesa."
+              "english": "You're great.",
+              "spanish": "Modelo de la misión",
+              "note": "I am se contrae como I'm; you are como you're. El apóstrofo marca la contracción. You're significa you are; your significa tu y no lleva apóstrofo."
             },
             {
-              "english": "My house is small.",
-              "spanish": "Mi casa es pequeña."
+              "english": "I'm ready.",
+              "spanish": "Modelo de la misión",
+              "note": "I am se contrae como I'm; you are como you're. El apóstrofo marca la contracción. You're significa you are; your significa tu y no lleva apóstrofo."
             },
             {
-              "english": "The chairs are in the kitchen.",
-              "spanish": "Las sillas están en la cocina."
+              "english": "You're my friend.",
+              "spanish": "Modelo de la misión",
+              "note": "I am se contrae como I'm; you are como you're. El apóstrofo marca la contracción. You're significa you are; your significa tu y no lleva apóstrofo."
             }
           ],
           "reading": [
             {
-              "english": "My house is small but nice.",
-              "spanish": "Mi casa es pequeña pero bonita."
-            },
-            {
-              "english": "There is a kitchen, a bathroom and two bedrooms.",
-              "spanish": "Hay una cocina, un baño y dos dormitorios."
-            },
-            {
-              "english": "In the living room, there is a sofa and a table.",
-              "spanish": "En el salón hay un sofá y una mesa."
-            },
-            {
-              "english": "There is a big window next to the door.",
-              "spanish": "Hay una ventana grande al lado de la puerta."
-            },
-            {
-              "english": "My bed is in my bedroom.",
-              "spanish": "Mi cama está en mi dormitorio."
-            },
-            {
-              "english": "My books are on the table.",
-              "spanish": "Mis libros están sobre la mesa."
-            },
-            {
-              "english": "I like my home.",
-              "spanish": "Me gusta mi hogar."
+              "english": "Hello! I'm Alex. You're my friend. I'm a student. You're a teacher. I'm happy today. You're very nice.",
+              "spanish": "Texto completo presentado arriba."
             }
           ],
           "writing": [
             {
-              "english": "This is my house.",
-              "spanish": "Esta es mi casa."
+              "english": "I am → I'm.",
+              "spanish": "I am → I'm.",
+              "note": "Modelo enseñado en Explore."
             },
             {
-              "english": "I cook in the kitchen.",
-              "spanish": "Cocino en la cocina."
+              "english": "You are → You're.",
+              "spanish": "You are → You're.",
+              "note": "Modelo enseñado en Explore."
             },
             {
-              "english": "I sleep in my bedroom.",
-              "spanish": "Duermo en mi dormitorio."
+              "english": "I'm happy.",
+              "spanish": "I'm happy.",
+              "note": "Modelo enseñado en Explore."
             },
             {
-              "english": "I wash in the bathroom.",
-              "spanish": "Me lavo en el baño."
+              "english": "You're happy.",
+              "spanish": "You're happy.",
+              "note": "Modelo enseñado en Explore."
             },
             {
-              "english": "We sit in the living room.",
-              "spanish": "Nos sentamos en el salón."
+              "english": "I'm a student.",
+              "spanish": "I'm a student.",
+              "note": "Modelo enseñado en Explore."
             },
             {
-              "english": "The table is big.",
-              "spanish": "La mesa es grande."
+              "english": "You're a teacher.",
+              "spanish": "You're a teacher.",
+              "note": "Modelo enseñado en Explore."
             },
             {
-              "english": "My bed is in my bedroom.",
-              "spanish": "Mi cama está en mi dormitorio."
+              "english": "I'm fine.",
+              "spanish": "I'm fine.",
+              "note": "Modelo enseñado en Explore."
             },
             {
-              "english": "We sit on the sofa.",
-              "spanish": "Nos sentamos en el sofá."
+              "english": "You're great.",
+              "spanish": "You're great.",
+              "note": "Modelo enseñado en Explore."
             },
             {
-              "english": "Please close the door.",
-              "spanish": "Por favor, cierra la puerta."
+              "english": "I'm ready.",
+              "spanish": "I'm ready.",
+              "note": "Modelo enseñado en Explore."
             },
             {
-              "english": "Open the window, please.",
-              "spanish": "Abre la ventana, por favor."
+              "english": "You're my friend.",
+              "spanish": "You're my friend.",
+              "note": "Modelo enseñado en Explore."
             }
           ],
           "speaking": [
             {
-              "english": "This is my house.",
-              "spanish": "Esta es mi casa.",
-              "prompt": "Say a short sentence using house.",
-              "promptSpanish": "Di una frase corta usando house (casa)."
+              "english": "I am → I'm.",
+              "spanish": "I am → I'm.",
+              "note": "Modelo enseñado en Explore.",
+              "prompt": "Practica esta expresión.",
+              "promptSpanish": "Di la expresión en voz alta."
             },
             {
-              "english": "I cook in the kitchen.",
-              "spanish": "Cocino en la cocina.",
-              "prompt": "Say a short sentence using kitchen.",
-              "promptSpanish": "Di una frase corta usando kitchen (cocina)."
+              "english": "You are → You're.",
+              "spanish": "You are → You're.",
+              "note": "Modelo enseñado en Explore.",
+              "prompt": "Practica esta expresión.",
+              "promptSpanish": "Di la expresión en voz alta."
             },
             {
-              "english": "I sleep in the bedroom.",
-              "spanish": "Duermo en el dormitorio.",
-              "prompt": "Say a short sentence using bedroom.",
-              "promptSpanish": "Di una frase corta usando bedroom (dormitorio)."
+              "english": "I'm happy.",
+              "spanish": "I'm happy.",
+              "note": "Modelo enseñado en Explore.",
+              "prompt": "Practica esta expresión.",
+              "promptSpanish": "Di la expresión en voz alta."
             },
             {
-              "english": "I wash in the bathroom.",
-              "spanish": "Me lavo en el baño.",
-              "prompt": "Say a short sentence using bathroom.",
-              "promptSpanish": "Di una frase corta usando bathroom (baño)."
+              "english": "You're happy.",
+              "spanish": "You're happy.",
+              "note": "Modelo enseñado en Explore.",
+              "prompt": "Practica esta expresión.",
+              "promptSpanish": "Di la expresión en voz alta."
             },
             {
-              "english": "We sit in the living room.",
-              "spanish": "Nos sentamos en el salón.",
-              "prompt": "Say a short sentence using living room.",
-              "promptSpanish": "Di una frase corta usando living room (salón)."
+              "english": "I'm a student.",
+              "spanish": "I'm a student.",
+              "note": "Modelo enseñado en Explore.",
+              "prompt": "Practica esta expresión.",
+              "promptSpanish": "Di la expresión en voz alta."
             },
             {
-              "english": "This is a table.",
-              "spanish": "Esta es una mesa.",
-              "prompt": "Say a short sentence using table.",
-              "promptSpanish": "Di una frase corta usando table (mesa)."
+              "english": "You're a teacher.",
+              "spanish": "You're a teacher.",
+              "note": "Modelo enseñado en Explore.",
+              "prompt": "Practica esta expresión.",
+              "promptSpanish": "Di la expresión en voz alta."
             },
             {
-              "english": "This is my bed.",
-              "spanish": "Esta es mi cama.",
-              "prompt": "Say a short sentence using bed.",
-              "promptSpanish": "Di una frase corta usando bed (cama)."
+              "english": "I'm fine.",
+              "spanish": "I'm fine.",
+              "note": "Modelo enseñado en Explore.",
+              "prompt": "Practica esta expresión.",
+              "promptSpanish": "Di la expresión en voz alta."
             },
             {
-              "english": "This is a sofa.",
-              "spanish": "Este es un sofá.",
-              "prompt": "Say a short sentence using sofa.",
-              "promptSpanish": "Di una frase corta usando sofa (sofá)."
+              "english": "You're great.",
+              "spanish": "You're great.",
+              "note": "Modelo enseñado en Explore.",
+              "prompt": "Practica esta expresión.",
+              "promptSpanish": "Di la expresión en voz alta."
             },
             {
-              "english": "This is a door.",
-              "spanish": "Esta es una puerta.",
-              "prompt": "Say a short sentence using door.",
-              "promptSpanish": "Di una frase corta usando door (puerta)."
+              "english": "I'm ready.",
+              "spanish": "I'm ready.",
+              "note": "Modelo enseñado en Explore.",
+              "prompt": "Practica esta expresión.",
+              "promptSpanish": "Di la expresión en voz alta."
             },
             {
-              "english": "This is a window.",
-              "spanish": "Esta es una ventana.",
-              "prompt": "Say a short sentence using window.",
-              "promptSpanish": "Di una frase corta usando window (ventana)."
+              "english": "You're my friend.",
+              "spanish": "You're my friend.",
+              "note": "Modelo enseñado en Explore.",
+              "prompt": "Practica esta expresión.",
+              "promptSpanish": "Di la expresión en voz alta."
             }
           ],
           "listening": [
             {
-              "english": "This is my house.",
-              "spanish": "Esta es mi casa."
+              "english": "I am → I'm.",
+              "spanish": "I am → I'm.",
+              "note": "Modelo enseñado en Explore."
             },
             {
-              "english": "I cook in the kitchen.",
-              "spanish": "Cocino en la cocina."
+              "english": "You are → You're.",
+              "spanish": "You are → You're.",
+              "note": "Modelo enseñado en Explore."
             },
             {
-              "english": "I sleep in my bedroom.",
-              "spanish": "Duermo en mi dormitorio."
+              "english": "I'm happy.",
+              "spanish": "I'm happy.",
+              "note": "Modelo enseñado en Explore."
             },
             {
-              "english": "I wash in the bathroom.",
-              "spanish": "Me lavo en el baño."
+              "english": "You're happy.",
+              "spanish": "You're happy.",
+              "note": "Modelo enseñado en Explore."
             },
             {
-              "english": "We watch television in the living room.",
-              "spanish": "Vemos la televisión en el salón."
+              "english": "I'm a student.",
+              "spanish": "I'm a student.",
+              "note": "Modelo enseñado en Explore."
             },
             {
-              "english": "We eat at the table.",
-              "spanish": "Comemos en la mesa."
+              "english": "You're a teacher.",
+              "spanish": "You're a teacher.",
+              "note": "Modelo enseñado en Explore."
             },
             {
-              "english": "I sleep in my bed.",
-              "spanish": "Duermo en mi cama."
+              "english": "I'm fine.",
+              "spanish": "I'm fine.",
+              "note": "Modelo enseñado en Explore."
             },
             {
-              "english": "We sit on the sofa.",
-              "spanish": "Nos sentamos en el sofá."
+              "english": "You're great.",
+              "spanish": "You're great.",
+              "note": "Modelo enseñado en Explore."
             },
             {
-              "english": "Please close the door.",
-              "spanish": "Por favor, cierra la puerta."
+              "english": "I'm ready.",
+              "spanish": "I'm ready.",
+              "note": "Modelo enseñado en Explore."
             },
             {
-              "english": "Open the window for fresh air.",
-              "spanish": "Abre la ventana para que entre aire fresco."
+              "english": "You're my friend.",
+              "spanish": "You're my friend.",
+              "note": "Modelo enseñado en Explore."
+            }
+          ]
+        },
+        "content": {
+          "blocks": [
+            {
+              "position": 1,
+              "title": "Bloque 1",
+              "content": "I'm and you're",
+              "example": "I am → I'm.",
+              "translation": "Consulta la traducción y la guía de pronunciación de cada elemento."
+            },
+            {
+              "position": 2,
+              "title": "Bloque 2",
+              "content": "I am se contrae como I'm; you are como you're. El apóstrofo marca la contracción. You're significa you are; your significa tu y no lleva apóstrofo.",
+              "example": "You are → You're.",
+              "translation": "Consulta la traducción y la guía de pronunciación de cada elemento."
+            },
+            {
+              "position": 3,
+              "title": "Bloque 3",
+              "content": "I am se contrae como I'm; you are como you're. El apóstrofo marca la contracción. You're significa you are; your significa tu y no lleva apóstrofo.",
+              "example": "I'm happy.",
+              "translation": "Consulta la traducción y la guía de pronunciación de cada elemento."
+            },
+            {
+              "position": 4,
+              "title": "Bloque 4",
+              "content": "I am se contrae como I'm; you are como you're. El apóstrofo marca la contracción. You're significa you are; your significa tu y no lleva apóstrofo.",
+              "example": "You're happy.",
+              "translation": "Consulta la traducción y la guía de pronunciación de cada elemento."
+            },
+            {
+              "position": 5,
+              "title": "Bloque 5",
+              "content": "I am se contrae como I'm; you are como you're. El apóstrofo marca la contracción. You're significa you are; your significa tu y no lleva apóstrofo.",
+              "example": "I'm a student.",
+              "translation": "Consulta la traducción y la guía de pronunciación de cada elemento."
+            },
+            {
+              "position": 6,
+              "title": "Bloque 6",
+              "content": "I am se contrae como I'm; you are como you're. El apóstrofo marca la contracción. You're significa you are; your significa tu y no lleva apóstrofo.",
+              "example": "You're a teacher.",
+              "translation": "Consulta la traducción y la guía de pronunciación de cada elemento."
+            },
+            {
+              "position": 7,
+              "title": "Bloque 7",
+              "content": "I am se contrae como I'm; you are como you're. El apóstrofo marca la contracción. You're significa you are; your significa tu y no lleva apóstrofo.",
+              "example": "I'm fine.",
+              "translation": "Consulta la traducción y la guía de pronunciación de cada elemento."
+            },
+            {
+              "position": 8,
+              "title": "Bloque 8",
+              "content": "I am se contrae como I'm; you are como you're. El apóstrofo marca la contracción. You're significa you are; your significa tu y no lleva apóstrofo.",
+              "example": "You're great.",
+              "translation": "Consulta la traducción y la guía de pronunciación de cada elemento."
+            },
+            {
+              "position": 9,
+              "title": "Bloque 9",
+              "content": "I am se contrae como I'm; you are como you're. El apóstrofo marca la contracción. You're significa you are; your significa tu y no lleva apóstrofo.",
+              "example": "I'm ready.",
+              "translation": "Consulta la traducción y la guía de pronunciación de cada elemento."
+            },
+            {
+              "position": 10,
+              "title": "Bloque 10",
+              "content": "I am se contrae como I'm; you are como you're. El apóstrofo marca la contracción. You're significa you are; your significa tu y no lleva apóstrofo.",
+              "example": "You're my friend.",
+              "translation": "Consulta la traducción y la guía de pronunciación de cada elemento."
             }
           ]
         }
@@ -418,302 +678,142 @@
           {
             "itemId": "english-pre-a1-m009-practice-ex01-i01",
             "position": 1,
-            "taskType": "vocabulary_translation",
-            "prompt": "Choose the Spanish meaning of “house”.",
+            "prompt": "Elige la traducción de “I”.",
             "evaluation": {
               "type": "single_choice"
             },
             "options": [
-              "baño",
-              "casa",
-              "cama"
+              "tú",
+              "yo",
+              "soy/estoy"
             ],
-            "answer": "casa"
+            "answer": "yo"
           },
           {
             "itemId": "english-pre-a1-m009-practice-ex01-i02",
             "position": 2,
-            "taskType": "vocabulary_translation",
-            "prompt": "Choose the Spanish meaning of “kitchen”.",
+            "prompt": "Elige la traducción de “you”.",
             "evaluation": {
               "type": "single_choice"
             },
             "options": [
-              "salón",
-              "sofá",
-              "cocina"
+              "eres/estás",
+              "soy/estoy",
+              "tú"
             ],
-            "answer": "cocina"
+            "answer": "tú"
           },
           {
             "itemId": "english-pre-a1-m009-practice-ex01-i03",
             "position": 3,
-            "taskType": "vocabulary_translation",
-            "prompt": "Choose the Spanish meaning of “bedroom”.",
+            "prompt": "Elige la traducción de “am”.",
             "evaluation": {
               "type": "single_choice"
             },
             "options": [
-              "dormitorio",
-              "mesa",
-              "puerta"
+              "soy/estoy",
+              "eres/estás",
+              "yo soy/estoy"
             ],
-            "answer": "dormitorio"
+            "answer": "soy/estoy"
           },
           {
             "itemId": "english-pre-a1-m009-practice-ex01-i04",
             "position": 4,
-            "taskType": "vocabulary_translation",
-            "prompt": "Choose the Spanish meaning of “bathroom”.",
+            "prompt": "Elige la traducción de “are”.",
             "evaluation": {
               "type": "single_choice"
             },
             "options": [
-              "baño",
-              "cama",
-              "ventana"
+              "yo soy/estoy",
+              "eres/estás",
+              "tú eres/estás"
             ],
-            "answer": "baño"
+            "answer": "eres/estás"
           },
           {
             "itemId": "english-pre-a1-m009-practice-ex01-i05",
             "position": 5,
-            "taskType": "vocabulary_translation",
-            "prompt": "Choose the Spanish meaning of “living room”.",
+            "prompt": "Elige la traducción de “I am”.",
             "evaluation": {
               "type": "single_choice"
             },
             "options": [
-              "sofá",
-              "casa",
-              "salón"
+              "contracción de I am",
+              "tú eres/estás",
+              "yo soy/estoy"
             ],
-            "answer": "salón"
+            "answer": "yo soy/estoy"
           },
           {
             "itemId": "english-pre-a1-m009-practice-ex01-i06",
             "position": 6,
-            "taskType": "vocabulary_translation",
-            "prompt": "Choose the Spanish meaning of “table”.",
+            "prompt": "Elige la traducción de “you are”.",
             "evaluation": {
               "type": "single_choice"
             },
             "options": [
-              "puerta",
-              "mesa",
-              "cocina"
+              "tú eres/estás",
+              "contracción de I am",
+              "contracción de you are"
             ],
-            "answer": "mesa"
+            "answer": "tú eres/estás"
           },
           {
             "itemId": "english-pre-a1-m009-practice-ex01-i07",
             "position": 7,
-            "taskType": "vocabulary_translation",
-            "prompt": "Choose the Spanish meaning of “bed”.",
+            "prompt": "Elige la traducción de “I'm”.",
             "evaluation": {
               "type": "single_choice"
             },
             "options": [
-              "cama",
-              "ventana",
-              "dormitorio"
+              "contracción de you are",
+              "contracción de I am",
+              "feliz"
             ],
-            "answer": "cama"
+            "answer": "contracción de I am"
           },
           {
             "itemId": "english-pre-a1-m009-practice-ex01-i08",
             "position": 8,
-            "taskType": "vocabulary_translation",
-            "prompt": "Choose the Spanish meaning of “sofa”.",
+            "prompt": "Elige la traducción de “you're”.",
             "evaluation": {
               "type": "single_choice"
             },
             "options": [
-              "casa",
-              "baño",
-              "sofá"
+              "triste",
+              "feliz",
+              "contracción de you are"
             ],
-            "answer": "sofá"
+            "answer": "contracción de you are"
           },
           {
             "itemId": "english-pre-a1-m009-practice-ex01-i09",
             "position": 9,
-            "taskType": "vocabulary_translation",
-            "prompt": "Choose the Spanish meaning of “door”.",
+            "prompt": "Elige la traducción de “happy”.",
             "evaluation": {
               "type": "single_choice"
             },
             "options": [
-              "cocina",
-              "puerta",
-              "salón"
+              "feliz",
+              "triste",
+              "cansado"
             ],
-            "answer": "puerta"
+            "answer": "feliz"
           },
           {
             "itemId": "english-pre-a1-m009-practice-ex01-i10",
             "position": 10,
-            "taskType": "vocabulary_translation",
-            "prompt": "Choose the Spanish meaning of “window”.",
+            "prompt": "Elige la traducción de “sad”.",
             "evaluation": {
               "type": "single_choice"
             },
             "options": [
-              "dormitorio",
-              "ventana",
-              "mesa"
+              "cansado",
+              "triste",
+              "bien"
             ],
-            "answer": "ventana"
-          },
-          {
-            "itemId": "english-pre-a1-m009-practice-ex01-i11",
-            "position": 11,
-            "taskType": "topic_vocabulary",
-            "prompt": "Which English word means “casa”?",
-            "evaluation": {
-              "type": "single_choice"
-            },
-            "options": [
-              "bedroom",
-              "table",
-              "house"
-            ],
-            "answer": "house"
-          },
-          {
-            "itemId": "english-pre-a1-m009-practice-ex01-i12",
-            "position": 12,
-            "taskType": "topic_vocabulary",
-            "prompt": "Choose the word for “cocina”?",
-            "evaluation": {
-              "type": "single_choice"
-            },
-            "options": [
-              "kitchen",
-              "bathroom",
-              "bed"
-            ],
-            "answer": "kitchen"
-          },
-          {
-            "itemId": "english-pre-a1-m009-practice-ex01-i13",
-            "position": 13,
-            "taskType": "topic_vocabulary",
-            "prompt": "Select the English word for “dormitorio”?",
-            "evaluation": {
-              "type": "single_choice"
-            },
-            "options": [
-              "living room",
-              "bedroom",
-              "sofa"
-            ],
-            "answer": "bedroom"
-          },
-          {
-            "itemId": "english-pre-a1-m009-practice-ex01-i14",
-            "position": 14,
-            "taskType": "topic_vocabulary",
-            "prompt": "What is the English word for “baño”?",
-            "evaluation": {
-              "type": "single_choice"
-            },
-            "options": [
-              "table",
-              "door",
-              "bathroom"
-            ],
-            "answer": "bathroom"
-          },
-          {
-            "itemId": "english-pre-a1-m009-practice-ex01-i15",
-            "position": 15,
-            "taskType": "topic_vocabulary",
-            "prompt": "Find the word that means “salón”?",
-            "evaluation": {
-              "type": "single_choice"
-            },
-            "options": [
-              "living room",
-              "bed",
-              "window"
-            ],
-            "answer": "living room"
-          },
-          {
-            "itemId": "english-pre-a1-m009-practice-ex01-i16",
-            "position": 16,
-            "taskType": "topic_vocabulary",
-            "prompt": "Which word matches “mesa”?",
-            "evaluation": {
-              "type": "single_choice"
-            },
-            "options": [
-              "sofa",
-              "house",
-              "table"
-            ],
-            "answer": "table"
-          },
-          {
-            "itemId": "english-pre-a1-m009-practice-ex01-i17",
-            "position": 17,
-            "taskType": "topic_vocabulary",
-            "prompt": "Choose the translation for “cama”?",
-            "evaluation": {
-              "type": "single_choice"
-            },
-            "options": [
-              "bed",
-              "door",
-              "kitchen"
-            ],
-            "answer": "bed"
-          },
-          {
-            "itemId": "english-pre-a1-m009-practice-ex01-i18",
-            "position": 18,
-            "taskType": "topic_vocabulary",
-            "prompt": "Select the matching word for “sofá”?",
-            "evaluation": {
-              "type": "single_choice"
-            },
-            "options": [
-              "window",
-              "sofa",
-              "bedroom"
-            ],
-            "answer": "sofa"
-          },
-          {
-            "itemId": "english-pre-a1-m009-practice-ex01-i19",
-            "position": 19,
-            "taskType": "topic_vocabulary",
-            "prompt": "What word means “puerta”?",
-            "evaluation": {
-              "type": "single_choice"
-            },
-            "options": [
-              "house",
-              "bathroom",
-              "door"
-            ],
-            "answer": "door"
-          },
-          {
-            "itemId": "english-pre-a1-m009-practice-ex01-i20",
-            "position": 20,
-            "taskType": "topic_vocabulary",
-            "prompt": "Find the English word for “ventana”?",
-            "evaluation": {
-              "type": "single_choice"
-            },
-            "options": [
-              "kitchen",
-              "window",
-              "living room"
-            ],
-            "answer": "window"
+            "answer": "triste"
           }
         ]
       }
@@ -725,146 +825,223 @@
       "exercise": {
         "exerciseId": "english-pre-a1-m009-grammar-ex01",
         "type": "grammar",
+        "theory": {
+          "title": "I'm and you're",
+          "explanation": "I am se contrae como I'm; you are como you're. El apóstrofo marca la contracción. You're significa you are; your significa tu y no lleva apóstrofo.",
+          "tip": "Comprende todos los modelos de Explore antes de comenzar las actividades.",
+          "patterns": [
+            {
+              "label": "Bloque 1",
+              "pattern": "I'm and you're",
+              "examples": [
+                "I am → I'm."
+              ]
+            },
+            {
+              "label": "Bloque 2",
+              "pattern": "I am se contrae como I'm; you are como you're. El apóstrofo marca la contracción. You're significa you are; your significa tu y no lleva apóstrofo.",
+              "examples": [
+                "You are → You're."
+              ]
+            },
+            {
+              "label": "Bloque 3",
+              "pattern": "I am se contrae como I'm; you are como you're. El apóstrofo marca la contracción. You're significa you are; your significa tu y no lleva apóstrofo.",
+              "examples": [
+                "I'm happy."
+              ]
+            },
+            {
+              "label": "Bloque 4",
+              "pattern": "I am se contrae como I'm; you are como you're. El apóstrofo marca la contracción. You're significa you are; your significa tu y no lleva apóstrofo.",
+              "examples": [
+                "You're happy."
+              ]
+            },
+            {
+              "label": "Bloque 5",
+              "pattern": "I am se contrae como I'm; you are como you're. El apóstrofo marca la contracción. You're significa you are; your significa tu y no lleva apóstrofo.",
+              "examples": [
+                "I'm a student."
+              ]
+            },
+            {
+              "label": "Bloque 6",
+              "pattern": "I am se contrae como I'm; you are como you're. El apóstrofo marca la contracción. You're significa you are; your significa tu y no lleva apóstrofo.",
+              "examples": [
+                "You're a teacher."
+              ]
+            },
+            {
+              "label": "Bloque 7",
+              "pattern": "I am se contrae como I'm; you are como you're. El apóstrofo marca la contracción. You're significa you are; your significa tu y no lleva apóstrofo.",
+              "examples": [
+                "I'm fine."
+              ]
+            },
+            {
+              "label": "Bloque 8",
+              "pattern": "I am se contrae como I'm; you are como you're. El apóstrofo marca la contracción. You're significa you are; your significa tu y no lleva apóstrofo.",
+              "examples": [
+                "You're great."
+              ]
+            },
+            {
+              "label": "Bloque 9",
+              "pattern": "I am se contrae como I'm; you are como you're. El apóstrofo marca la contracción. You're significa you are; your significa tu y no lleva apóstrofo.",
+              "examples": [
+                "I'm ready."
+              ]
+            },
+            {
+              "label": "Bloque 10",
+              "pattern": "I am se contrae como I'm; you are como you're. El apóstrofo marca la contracción. You're significa you are; your significa tu y no lleva apóstrofo.",
+              "examples": [
+                "You're my friend."
+              ]
+            }
+          ]
+        },
         "items": [
           {
             "itemId": "english-pre-a1-m009-grammar-ex01-i01",
             "position": 1,
-            "prompt": "Choose the correct word or phrase: ___ a kitchen.",
+            "prompt": "Reconoce el modelo trabajado: I am → I'm.",
             "evaluation": {
               "type": "single_choice"
             },
             "options": [
-              "There is",
-              "There are",
-              "It are"
+              "You are → You're.",
+              "I am → I'm.",
+              "I'm happy."
             ],
-            "answer": "There is"
+            "answer": "I am → I'm."
           },
           {
             "itemId": "english-pre-a1-m009-grammar-ex01-i02",
             "position": 2,
-            "prompt": "Choose the correct word or phrase: ___ two bedrooms.",
+            "prompt": "Reconoce el modelo trabajado: You are → You're.",
             "evaluation": {
               "type": "single_choice"
             },
             "options": [
-              "There is",
-              "There are",
-              "There be"
+              "You're happy.",
+              "I'm happy.",
+              "You are → You're."
             ],
-            "answer": "There are"
-          },
-          {
-            "itemId": "english-pre-a1-m009-grammar-ex01-i06",
-            "position": 6,
-            "prompt": "Choose the correct word or phrase: ___ a sofa.",
-            "evaluation": {
-              "type": "single_choice"
-            },
-            "options": [
-              "There are",
-              "There is",
-              "There am"
-            ],
-            "answer": "There is"
-          },
-          {
-            "itemId": "english-pre-a1-m009-grammar-ex01-i07",
-            "position": 7,
-            "prompt": "Choose the correct word or phrase: ___ three windows.",
-            "evaluation": {
-              "type": "single_choice"
-            },
-            "options": [
-              "There is",
-              "There are",
-              "There be"
-            ],
-            "answer": "There are"
+            "answer": "You are → You're."
           },
           {
             "itemId": "english-pre-a1-m009-grammar-ex01-i03",
             "position": 3,
-            "prompt": "Choose the correct word or phrase: The bed is ___ the bedroom.",
+            "prompt": "Reconoce el modelo trabajado: I'm happy.",
             "evaluation": {
               "type": "single_choice"
             },
             "options": [
-              "on",
-              "under",
-              "in"
+              "I'm happy.",
+              "You're happy.",
+              "I'm a student."
             ],
-            "answer": "in"
+            "answer": "I'm happy."
           },
           {
             "itemId": "english-pre-a1-m009-grammar-ex01-i04",
             "position": 4,
-            "prompt": "Choose the correct word or phrase: The book is ___ the table.",
+            "prompt": "Reconoce el modelo trabajado: You're happy.",
             "evaluation": {
               "type": "single_choice"
             },
             "options": [
-              "in",
-              "at",
-              "on"
+              "I'm a student.",
+              "You're happy.",
+              "You're a teacher."
             ],
-            "answer": "on"
+            "answer": "You're happy."
           },
           {
             "itemId": "english-pre-a1-m009-grammar-ex01-i05",
             "position": 5,
-            "prompt": "Choose the correct word or phrase: The cat is ___ the chair.",
+            "prompt": "Reconoce el modelo trabajado: I'm a student.",
             "evaluation": {
               "type": "single_choice"
             },
             "options": [
-              "under",
-              "on",
-              "in"
+              "I'm fine.",
+              "You're a teacher.",
+              "I'm a student."
             ],
-            "answer": "under"
+            "answer": "I'm a student."
+          },
+          {
+            "itemId": "english-pre-a1-m009-grammar-ex01-i06",
+            "position": 6,
+            "prompt": "Reconoce el modelo trabajado: You're a teacher.",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "You're a teacher.",
+              "I'm fine.",
+              "You're great."
+            ],
+            "answer": "You're a teacher."
+          },
+          {
+            "itemId": "english-pre-a1-m009-grammar-ex01-i07",
+            "position": 7,
+            "prompt": "Reconoce el modelo trabajado: I'm fine.",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "You're great.",
+              "I'm fine.",
+              "I'm ready."
+            ],
+            "answer": "I'm fine."
           },
           {
             "itemId": "english-pre-a1-m009-grammar-ex01-i08",
             "position": 8,
-            "prompt": "Choose the correct word or phrase: The door is ___ the table.",
+            "prompt": "Reconoce el modelo trabajado: You're great.",
             "evaluation": {
               "type": "single_choice"
             },
             "options": [
-              "under",
-              "between",
-              "next to"
+              "You're my friend.",
+              "I'm ready.",
+              "You're great."
             ],
-            "answer": "next to"
+            "answer": "You're great."
           },
           {
             "itemId": "english-pre-a1-m009-grammar-ex01-i09",
             "position": 9,
-            "prompt": "Choose the correct word or phrase: My house ___ small.",
+            "prompt": "Reconoce el modelo trabajado: I'm ready.",
             "evaluation": {
               "type": "single_choice"
             },
             "options": [
-              "is",
-              "are",
-              "am"
+              "I'm ready.",
+              "You're my friend.",
+              "I am → I'm."
             ],
-            "answer": "is"
+            "answer": "I'm ready."
           },
           {
             "itemId": "english-pre-a1-m009-grammar-ex01-i10",
             "position": 10,
-            "prompt": "Choose the correct word or phrase: The chairs ___ in the kitchen.",
+            "prompt": "Reconoce el modelo trabajado: You're my friend.",
             "evaluation": {
               "type": "single_choice"
             },
             "options": [
-              "is",
-              "are",
-              "am"
+              "I am → I'm.",
+              "You're my friend.",
+              "You are → You're."
             ],
-            "answer": "are"
+            "answer": "You're my friend."
           }
         ]
       }
@@ -880,82 +1057,182 @@
           {
             "itemId": "english-pre-a1-m009-pronunciation-ex01-i01",
             "position": 1,
-            "word": "house",
-            "translation": "casa",
-            "pronunciationGuide": "háus",
-            "audio": "tts:en-GB:house"
+            "word": "I",
+            "translation": "yo",
+            "pronunciationGuide": "ái",
+            "audio": "tts:en-GB:I",
+            "audioStatus": "synthetic_pending_review",
+            "guideType": "approximate_spanish"
           },
           {
             "itemId": "english-pre-a1-m009-pronunciation-ex01-i02",
             "position": 2,
-            "word": "kitchen",
-            "translation": "cocina",
-            "pronunciationGuide": "kí-chen",
-            "audio": "tts:en-GB:kitchen"
+            "word": "you",
+            "translation": "tú",
+            "pronunciationGuide": "iú",
+            "audio": "tts:en-GB:you",
+            "audioStatus": "synthetic_pending_review",
+            "guideType": "approximate_spanish"
           },
           {
             "itemId": "english-pre-a1-m009-pronunciation-ex01-i03",
             "position": 3,
-            "word": "bedroom",
-            "translation": "dormitorio",
-            "pronunciationGuide": "béd-rum",
-            "audio": "tts:en-GB:bedroom"
+            "word": "am",
+            "translation": "soy/estoy",
+            "pronunciationGuide": "am",
+            "audio": "tts:en-GB:am",
+            "audioStatus": "synthetic_pending_review",
+            "guideType": "approximate_spanish"
           },
           {
             "itemId": "english-pre-a1-m009-pronunciation-ex01-i04",
             "position": 4,
-            "word": "bathroom",
-            "translation": "baño",
-            "pronunciationGuide": "báth-rum",
-            "audio": "tts:en-GB:bathroom"
+            "word": "are",
+            "translation": "eres/estás",
+            "pronunciationGuide": "ar",
+            "audio": "tts:en-GB:are",
+            "audioStatus": "synthetic_pending_review",
+            "guideType": "approximate_spanish"
           },
           {
             "itemId": "english-pre-a1-m009-pronunciation-ex01-i05",
             "position": 5,
-            "word": "living room",
-            "translation": "salón",
-            "pronunciationGuide": "lí-ving rum",
-            "audio": "tts:en-GB:living room"
+            "word": "I am",
+            "translation": "yo soy/estoy",
+            "pronunciationGuide": "ái am",
+            "audio": "tts:en-GB:I am",
+            "audioStatus": "synthetic_pending_review",
+            "guideType": "approximate_spanish"
           },
           {
             "itemId": "english-pre-a1-m009-pronunciation-ex01-i06",
             "position": 6,
-            "word": "table",
-            "translation": "mesa",
-            "pronunciationGuide": "téibol",
-            "audio": "tts:en-GB:table"
+            "word": "you are",
+            "translation": "tú eres/estás",
+            "pronunciationGuide": "iú ar",
+            "audio": "tts:en-GB:you are",
+            "audioStatus": "synthetic_pending_review",
+            "guideType": "approximate_spanish"
           },
           {
             "itemId": "english-pre-a1-m009-pronunciation-ex01-i07",
             "position": 7,
-            "word": "bed",
-            "translation": "cama",
-            "pronunciationGuide": "bed",
-            "audio": "tts:en-GB:bed"
+            "word": "I'm",
+            "translation": "contracción de I am",
+            "pronunciationGuide": "áim",
+            "audio": "tts:en-GB:I'm",
+            "audioStatus": "synthetic_pending_review",
+            "guideType": "approximate_spanish"
           },
           {
             "itemId": "english-pre-a1-m009-pronunciation-ex01-i08",
             "position": 8,
-            "word": "sofa",
-            "translation": "sofá",
-            "pronunciationGuide": "sóu-fa",
-            "audio": "tts:en-GB:sofa"
+            "word": "you're",
+            "translation": "contracción de you are",
+            "pronunciationGuide": "ior",
+            "audio": "tts:en-GB:you're",
+            "audioStatus": "synthetic_pending_review",
+            "guideType": "approximate_spanish"
           },
           {
             "itemId": "english-pre-a1-m009-pronunciation-ex01-i09",
             "position": 9,
-            "word": "door",
-            "translation": "puerta",
-            "pronunciationGuide": "dor",
-            "audio": "tts:en-GB:door"
+            "word": "happy",
+            "translation": "feliz",
+            "pronunciationGuide": "JÁ-pi",
+            "audio": "tts:en-GB:happy",
+            "audioStatus": "synthetic_pending_review",
+            "guideType": "approximate_spanish"
           },
           {
             "itemId": "english-pre-a1-m009-pronunciation-ex01-i10",
             "position": 10,
-            "word": "window",
-            "translation": "ventana",
-            "pronunciationGuide": "uín-dou",
-            "audio": "tts:en-GB:window"
+            "word": "sad",
+            "translation": "triste",
+            "pronunciationGuide": "sad",
+            "audio": "tts:en-GB:sad",
+            "audioStatus": "synthetic_pending_review",
+            "guideType": "approximate_spanish"
+          },
+          {
+            "itemId": "english-pre-a1-m009-pronunciation-ex01-i11",
+            "position": 11,
+            "word": "tired",
+            "translation": "cansado",
+            "pronunciationGuide": "TÁI-erd",
+            "audio": "tts:en-GB:tired",
+            "audioStatus": "synthetic_pending_review",
+            "guideType": "approximate_spanish"
+          },
+          {
+            "itemId": "english-pre-a1-m009-pronunciation-ex01-i12",
+            "position": 12,
+            "word": "fine",
+            "translation": "bien",
+            "pronunciationGuide": "fáin",
+            "audio": "tts:en-GB:fine",
+            "audioStatus": "synthetic_pending_review",
+            "guideType": "approximate_spanish"
+          },
+          {
+            "itemId": "english-pre-a1-m009-pronunciation-ex01-i13",
+            "position": 13,
+            "word": "good",
+            "translation": "bien",
+            "pronunciationGuide": "gud",
+            "audio": "tts:en-GB:good",
+            "audioStatus": "synthetic_pending_review",
+            "guideType": "approximate_spanish"
+          },
+          {
+            "itemId": "english-pre-a1-m009-pronunciation-ex01-i14",
+            "position": 14,
+            "word": "great",
+            "translation": "genial",
+            "pronunciationGuide": "gréit",
+            "audio": "tts:en-GB:great",
+            "audioStatus": "synthetic_pending_review",
+            "guideType": "approximate_spanish"
+          },
+          {
+            "itemId": "english-pre-a1-m009-pronunciation-ex01-i15",
+            "position": 15,
+            "word": "student",
+            "translation": "estudiante",
+            "pronunciationGuide": "STIÚ-dent",
+            "audio": "tts:en-GB:student",
+            "audioStatus": "synthetic_pending_review",
+            "guideType": "approximate_spanish"
+          },
+          {
+            "itemId": "english-pre-a1-m009-pronunciation-ex01-i16",
+            "position": 16,
+            "word": "teacher",
+            "translation": "profesor",
+            "pronunciationGuide": "TÍ-cha",
+            "audio": "tts:en-GB:teacher",
+            "audioStatus": "synthetic_pending_review",
+            "guideType": "approximate_spanish"
+          },
+          {
+            "itemId": "english-pre-a1-m009-pronunciation-ex01-i17",
+            "position": 17,
+            "word": "friend",
+            "translation": "amigo",
+            "pronunciationGuide": "frend",
+            "audio": "tts:en-GB:friend",
+            "audioStatus": "synthetic_pending_review",
+            "guideType": "approximate_spanish"
+          },
+          {
+            "itemId": "english-pre-a1-m009-pronunciation-ex01-i18",
+            "position": 18,
+            "word": "ready",
+            "translation": "preparado",
+            "pronunciationGuide": "RÉ-di",
+            "audio": "tts:en-GB:ready",
+            "audioStatus": "synthetic_pending_review",
+            "guideType": "approximate_spanish"
           }
         ]
       }
@@ -969,148 +1246,261 @@
         "type": "reading_comprehension",
         "content": {
           "passageId": "english-pre-a1-m009-reading-passage-01",
-          "passage": "My house is small but nice. There is a kitchen, a bathroom and two bedrooms. In the living room, there is a sofa and a table. There is a big window next to the door. My bed is in my bedroom. My books are on the table. I like my home."
+          "passage": "Hello! I'm Alex. You're my friend. I'm a student. You're a teacher. I'm happy today. You're very nice.",
+          "translation": "Traducción del texto: Hello! I'm Alex. You're my friend. I'm a student. You're a teacher. I'm happy today. You're very nice.",
+          "vocabulary": [
+            {
+              "word": "I",
+              "translation": "yo",
+              "pronunciationGuide": "ái"
+            },
+            {
+              "word": "you",
+              "translation": "tú",
+              "pronunciationGuide": "iú"
+            },
+            {
+              "word": "am",
+              "translation": "soy/estoy",
+              "pronunciationGuide": "am"
+            },
+            {
+              "word": "are",
+              "translation": "eres/estás",
+              "pronunciationGuide": "ar"
+            },
+            {
+              "word": "I am",
+              "translation": "yo soy/estoy",
+              "pronunciationGuide": "ái am"
+            },
+            {
+              "word": "you are",
+              "translation": "tú eres/estás",
+              "pronunciationGuide": "iú ar"
+            },
+            {
+              "word": "I'm",
+              "translation": "contracción de I am",
+              "pronunciationGuide": "áim"
+            },
+            {
+              "word": "you're",
+              "translation": "contracción de you are",
+              "pronunciationGuide": "ior"
+            },
+            {
+              "word": "happy",
+              "translation": "feliz",
+              "pronunciationGuide": "JÁ-pi"
+            },
+            {
+              "word": "sad",
+              "translation": "triste",
+              "pronunciationGuide": "sad"
+            },
+            {
+              "word": "tired",
+              "translation": "cansado",
+              "pronunciationGuide": "TÁI-erd"
+            },
+            {
+              "word": "fine",
+              "translation": "bien",
+              "pronunciationGuide": "fáin"
+            },
+            {
+              "word": "good",
+              "translation": "bien",
+              "pronunciationGuide": "gud"
+            },
+            {
+              "word": "great",
+              "translation": "genial",
+              "pronunciationGuide": "gréit"
+            },
+            {
+              "word": "student",
+              "translation": "estudiante",
+              "pronunciationGuide": "STIÚ-dent"
+            },
+            {
+              "word": "teacher",
+              "translation": "profesor",
+              "pronunciationGuide": "TÍ-cha"
+            },
+            {
+              "word": "friend",
+              "translation": "amigo",
+              "pronunciationGuide": "frend"
+            },
+            {
+              "word": "ready",
+              "translation": "preparado",
+              "pronunciationGuide": "RÉ-di"
+            },
+            {
+              "word": "nice",
+              "translation": "agradable",
+              "pronunciationGuide": "náis"
+            },
+            {
+              "word": "here",
+              "translation": "aquí",
+              "pronunciationGuide": "jíar"
+            },
+            {
+              "word": "my",
+              "translation": "mi",
+              "pronunciationGuide": "mái"
+            },
+            {
+              "word": "your",
+              "translation": "tu",
+              "pronunciationGuide": "iór"
+            }
+          ]
         },
         "items": [
           {
             "itemId": "english-pre-a1-m009-reading-ex01-i01",
             "position": 1,
-            "prompt": "Is the house big?",
+            "prompt": "¿Qué tema presenta el texto?",
             "evaluation": {
               "type": "single_choice"
             },
             "options": [
-              "No, it is small",
-              "Yes, it is very big",
-              "It does not say"
+              "yo",
+              "I'm and you're",
+              "tú"
             ],
-            "answer": "No, it is small"
+            "answer": "I'm and you're"
           },
           {
             "itemId": "english-pre-a1-m009-reading-ex01-i02",
             "position": 2,
-            "prompt": "How many bedrooms are there?",
+            "prompt": "¿Qué significa “you” en el texto?",
             "evaluation": {
               "type": "single_choice"
             },
             "options": [
-              "One",
-              "Three",
-              "Two"
+              "eres/estás",
+              "soy/estoy",
+              "tú"
             ],
-            "answer": "Two"
+            "answer": "tú"
           },
           {
             "itemId": "english-pre-a1-m009-reading-ex01-i03",
             "position": 3,
-            "prompt": "Which room has a sofa?",
+            "prompt": "¿Qué significa “am” en el texto?",
             "evaluation": {
               "type": "single_choice"
             },
             "options": [
-              "The bathroom",
-              "The living room",
-              "The kitchen"
+              "soy/estoy",
+              "eres/estás",
+              "yo soy/estoy"
             ],
-            "answer": "The living room"
+            "answer": "soy/estoy"
           },
           {
             "itemId": "english-pre-a1-m009-reading-ex01-i04",
             "position": 4,
-            "prompt": "Where is the window?",
+            "prompt": "¿Qué significa “are” en el texto?",
             "evaluation": {
               "type": "single_choice"
             },
             "options": [
-              "Under the bed",
-              "In the kitchen",
-              "Next to the door"
+              "yo soy/estoy",
+              "eres/estás",
+              "tú eres/estás"
             ],
-            "answer": "Next to the door"
+            "answer": "eres/estás"
           },
           {
             "itemId": "english-pre-a1-m009-reading-ex01-i05",
             "position": 5,
-            "prompt": "Where is the bed?",
+            "prompt": "¿Qué significa “I am” en el texto?",
             "evaluation": {
               "type": "single_choice"
             },
             "options": [
-              "In the bathroom",
-              "In the bedroom",
-              "In the garden"
+              "contracción de I am",
+              "tú eres/estás",
+              "yo soy/estoy"
             ],
-            "answer": "In the bedroom"
+            "answer": "yo soy/estoy"
           },
           {
             "itemId": "english-pre-a1-m009-reading-ex01-i06",
             "position": 6,
-            "prompt": "Where are the books?",
+            "prompt": "¿Qué significa “you are” en el texto?",
             "evaluation": {
               "type": "single_choice"
             },
             "options": [
-              "On the table",
-              "Under the sofa",
-              "By the door"
+              "tú eres/estás",
+              "contracción de I am",
+              "contracción de you are"
             ],
-            "answer": "On the table"
+            "answer": "tú eres/estás"
           },
           {
             "itemId": "english-pre-a1-m009-reading-ex01-i07",
             "position": 7,
-            "prompt": "Is there a bathroom?",
+            "prompt": "¿Qué significa “I'm” en el texto?",
             "evaluation": {
               "type": "single_choice"
             },
             "options": [
-              "Yes",
-              "No",
-              "It does not say"
+              "contracción de you are",
+              "contracción de I am",
+              "feliz"
             ],
-            "answer": "Yes"
+            "answer": "contracción de I am"
           },
           {
             "itemId": "english-pre-a1-m009-reading-ex01-i08",
             "position": 8,
-            "prompt": "What is next to the window?",
+            "prompt": "¿Qué significa “you're” en el texto?",
             "evaluation": {
               "type": "single_choice"
             },
             "options": [
-              "The bed",
-              "The door",
-              "The sofa"
+              "triste",
+              "feliz",
+              "contracción de you are"
             ],
-            "answer": "The door"
+            "answer": "contracción de you are"
           },
           {
             "itemId": "english-pre-a1-m009-reading-ex01-i09",
             "position": 9,
-            "prompt": "Does the writer like the home?",
+            "prompt": "¿Qué significa “happy” en el texto?",
             "evaluation": {
               "type": "single_choice"
             },
             "options": [
-              "No",
-              "It does not say",
-              "Yes"
+              "feliz",
+              "triste",
+              "cansado"
             ],
-            "answer": "Yes"
+            "answer": "feliz"
           },
           {
             "itemId": "english-pre-a1-m009-reading-ex01-i10",
             "position": 10,
-            "prompt": "What is the text about?",
+            "prompt": "¿Qué significa “sad” en el texto?",
             "evaluation": {
               "type": "single_choice"
             },
             "options": [
-              "A school",
-              "A home",
-              "An animal"
+              "cansado",
+              "triste",
+              "bien"
             ],
-            "answer": "A home"
+            "answer": "triste"
           }
         ]
       }
@@ -1126,180 +1516,190 @@
           {
             "itemId": "english-pre-a1-m009-writing-ex01-i01",
             "position": 1,
-            "audio": "tts:en-GB:This is my house.",
+            "audio": "tts:en-GB:I am → I'm.",
+            "audioLocale": "en-GB",
+            "audioStatus": "synthetic_pending_review",
+            "kind": "sentence",
+            "repeatCount": 3,
+            "expectedAnswer": "I am → I'm.",
             "evaluation": {
               "type": "normalised_text"
             },
-            "audioLocale": "en-GB",
-            "kind": "sentence",
-            "repeatCount": 3,
-            "expectedAnswer": "This is my house.",
             "segments": [
               {
                 "segmentId": "english-pre-a1-m009-writing-segment-01",
-                "text": "This is my house."
+                "text": "I am → I'm."
               }
             ]
           },
           {
             "itemId": "english-pre-a1-m009-writing-ex01-i02",
             "position": 2,
-            "audio": "tts:en-GB:I cook in the kitchen.",
+            "audio": "tts:en-GB:You are → You're.",
+            "audioLocale": "en-GB",
+            "audioStatus": "synthetic_pending_review",
+            "kind": "sentence",
+            "repeatCount": 3,
+            "expectedAnswer": "You are → You're.",
             "evaluation": {
               "type": "normalised_text"
             },
-            "audioLocale": "en-GB",
-            "kind": "sentence",
-            "repeatCount": 3,
-            "expectedAnswer": "I cook in the kitchen.",
             "segments": [
               {
                 "segmentId": "english-pre-a1-m009-writing-segment-02",
-                "text": "I cook in the kitchen."
+                "text": "You are → You're."
               }
             ]
           },
           {
             "itemId": "english-pre-a1-m009-writing-ex01-i03",
             "position": 3,
-            "audio": "tts:en-GB:I sleep in my bedroom.",
+            "audio": "tts:en-GB:I'm happy.",
+            "audioLocale": "en-GB",
+            "audioStatus": "synthetic_pending_review",
+            "kind": "sentence",
+            "repeatCount": 3,
+            "expectedAnswer": "I'm happy.",
             "evaluation": {
               "type": "normalised_text"
             },
-            "audioLocale": "en-GB",
-            "kind": "sentence",
-            "repeatCount": 3,
-            "expectedAnswer": "I sleep in my bedroom.",
             "segments": [
               {
                 "segmentId": "english-pre-a1-m009-writing-segment-03",
-                "text": "I sleep in my bedroom."
+                "text": "I'm happy."
               }
             ]
           },
           {
             "itemId": "english-pre-a1-m009-writing-ex01-i04",
             "position": 4,
-            "audio": "tts:en-GB:I wash in the bathroom.",
+            "audio": "tts:en-GB:You're happy.",
+            "audioLocale": "en-GB",
+            "audioStatus": "synthetic_pending_review",
+            "kind": "sentence",
+            "repeatCount": 3,
+            "expectedAnswer": "You're happy.",
             "evaluation": {
               "type": "normalised_text"
             },
-            "audioLocale": "en-GB",
-            "kind": "sentence",
-            "repeatCount": 3,
-            "expectedAnswer": "I wash in the bathroom.",
             "segments": [
               {
                 "segmentId": "english-pre-a1-m009-writing-segment-04",
-                "text": "I wash in the bathroom."
+                "text": "You're happy."
               }
             ]
           },
           {
             "itemId": "english-pre-a1-m009-writing-ex01-i05",
             "position": 5,
-            "audio": "tts:en-GB:We sit in the living room.",
+            "audio": "tts:en-GB:I'm a student.",
+            "audioLocale": "en-GB",
+            "audioStatus": "synthetic_pending_review",
+            "kind": "sentence",
+            "repeatCount": 3,
+            "expectedAnswer": "I'm a student.",
             "evaluation": {
               "type": "normalised_text"
             },
-            "audioLocale": "en-GB",
-            "kind": "sentence",
-            "repeatCount": 3,
-            "expectedAnswer": "We sit in the living room.",
             "segments": [
               {
                 "segmentId": "english-pre-a1-m009-writing-segment-05",
-                "text": "We sit in the living room."
+                "text": "I'm a student."
               }
             ]
           },
           {
             "itemId": "english-pre-a1-m009-writing-ex01-i06",
             "position": 6,
-            "audio": "tts:en-GB:The table is big.",
+            "audio": "tts:en-GB:You're a teacher.",
+            "audioLocale": "en-GB",
+            "audioStatus": "synthetic_pending_review",
+            "kind": "sentence",
+            "repeatCount": 3,
+            "expectedAnswer": "You're a teacher.",
             "evaluation": {
               "type": "normalised_text"
             },
-            "audioLocale": "en-GB",
-            "kind": "sentence",
-            "repeatCount": 3,
-            "expectedAnswer": "The table is big.",
             "segments": [
               {
                 "segmentId": "english-pre-a1-m009-writing-segment-06",
-                "text": "The table is big."
+                "text": "You're a teacher."
               }
             ]
           },
           {
             "itemId": "english-pre-a1-m009-writing-ex01-i07",
             "position": 7,
-            "audio": "tts:en-GB:My bed is in my bedroom.",
+            "audio": "tts:en-GB:I'm fine.",
+            "audioLocale": "en-GB",
+            "audioStatus": "synthetic_pending_review",
+            "kind": "sentence",
+            "repeatCount": 3,
+            "expectedAnswer": "I'm fine.",
             "evaluation": {
               "type": "normalised_text"
             },
-            "audioLocale": "en-GB",
-            "kind": "sentence",
-            "repeatCount": 3,
-            "expectedAnswer": "My bed is in my bedroom.",
             "segments": [
               {
                 "segmentId": "english-pre-a1-m009-writing-segment-07",
-                "text": "My bed is in my bedroom."
+                "text": "I'm fine."
               }
             ]
           },
           {
             "itemId": "english-pre-a1-m009-writing-ex01-i08",
             "position": 8,
-            "audio": "tts:en-GB:We sit on the sofa.",
+            "audio": "tts:en-GB:You're great.",
+            "audioLocale": "en-GB",
+            "audioStatus": "synthetic_pending_review",
+            "kind": "sentence",
+            "repeatCount": 3,
+            "expectedAnswer": "You're great.",
             "evaluation": {
               "type": "normalised_text"
             },
-            "audioLocale": "en-GB",
-            "kind": "sentence",
-            "repeatCount": 3,
-            "expectedAnswer": "We sit on the sofa.",
             "segments": [
               {
                 "segmentId": "english-pre-a1-m009-writing-segment-08",
-                "text": "We sit on the sofa."
+                "text": "You're great."
               }
             ]
           },
           {
             "itemId": "english-pre-a1-m009-writing-ex01-i09",
             "position": 9,
-            "audio": "tts:en-GB:Please close the door.",
+            "audio": "tts:en-GB:I'm ready.",
+            "audioLocale": "en-GB",
+            "audioStatus": "synthetic_pending_review",
+            "kind": "sentence",
+            "repeatCount": 3,
+            "expectedAnswer": "I'm ready.",
             "evaluation": {
               "type": "normalised_text"
             },
-            "audioLocale": "en-GB",
-            "kind": "sentence",
-            "repeatCount": 3,
-            "expectedAnswer": "Please close the door.",
             "segments": [
               {
                 "segmentId": "english-pre-a1-m009-writing-segment-09",
-                "text": "Please close the door."
+                "text": "I'm ready."
               }
             ]
           },
           {
             "itemId": "english-pre-a1-m009-writing-ex01-i10",
             "position": 10,
-            "audio": "tts:en-GB:Open the window, please.",
+            "audio": "tts:en-GB:You're my friend.",
+            "audioLocale": "en-GB",
+            "audioStatus": "synthetic_pending_review",
+            "kind": "sentence",
+            "repeatCount": 3,
+            "expectedAnswer": "You're my friend.",
             "evaluation": {
               "type": "normalised_text"
             },
-            "audioLocale": "en-GB",
-            "kind": "sentence",
-            "repeatCount": 3,
-            "expectedAnswer": "Open the window, please.",
             "segments": [
               {
                 "segmentId": "english-pre-a1-m009-writing-segment-10",
-                "text": "Open the window, please."
+                "text": "You're my friend."
               }
             ]
           }
@@ -1317,8 +1717,10 @@
           {
             "itemId": "english-pre-a1-m009-speaking-ex01-i01",
             "position": 1,
-            "prompt": "Say a short sentence using “house”.",
-            "modelAnswer": "This is my house.",
+            "prompt": "Di en voz alta esta expresión.",
+            "promptSpanish": "Practica el modelo de la misión.",
+            "modelAnswer": "I am → I'm.",
+            "translation": "I am → I'm.",
             "evaluation": {
               "type": "transcription_feedback",
               "transcriptionSeparateFromPronunciation": true
@@ -1327,8 +1729,10 @@
           {
             "itemId": "english-pre-a1-m009-speaking-ex01-i02",
             "position": 2,
-            "prompt": "Say a short sentence using “kitchen”.",
-            "modelAnswer": "I cook in the kitchen.",
+            "prompt": "Di en voz alta esta expresión.",
+            "promptSpanish": "Practica el modelo de la misión.",
+            "modelAnswer": "You are → You're.",
+            "translation": "You are → You're.",
             "evaluation": {
               "type": "transcription_feedback",
               "transcriptionSeparateFromPronunciation": true
@@ -1337,8 +1741,10 @@
           {
             "itemId": "english-pre-a1-m009-speaking-ex01-i03",
             "position": 3,
-            "prompt": "Say a short sentence using “bedroom”.",
-            "modelAnswer": "I sleep in the bedroom.",
+            "prompt": "Di en voz alta esta expresión.",
+            "promptSpanish": "Practica el modelo de la misión.",
+            "modelAnswer": "I'm happy.",
+            "translation": "I'm happy.",
             "evaluation": {
               "type": "transcription_feedback",
               "transcriptionSeparateFromPronunciation": true
@@ -1347,8 +1753,10 @@
           {
             "itemId": "english-pre-a1-m009-speaking-ex01-i04",
             "position": 4,
-            "prompt": "Say a short sentence using “bathroom”.",
-            "modelAnswer": "I wash in the bathroom.",
+            "prompt": "Di en voz alta esta expresión.",
+            "promptSpanish": "Practica el modelo de la misión.",
+            "modelAnswer": "You're happy.",
+            "translation": "You're happy.",
             "evaluation": {
               "type": "transcription_feedback",
               "transcriptionSeparateFromPronunciation": true
@@ -1357,8 +1765,10 @@
           {
             "itemId": "english-pre-a1-m009-speaking-ex01-i05",
             "position": 5,
-            "prompt": "Say a short sentence using “living room”.",
-            "modelAnswer": "We sit in the living room.",
+            "prompt": "Di en voz alta esta expresión.",
+            "promptSpanish": "Practica el modelo de la misión.",
+            "modelAnswer": "I'm a student.",
+            "translation": "I'm a student.",
             "evaluation": {
               "type": "transcription_feedback",
               "transcriptionSeparateFromPronunciation": true
@@ -1367,8 +1777,10 @@
           {
             "itemId": "english-pre-a1-m009-speaking-ex01-i06",
             "position": 6,
-            "prompt": "Say a short sentence using “table”.",
-            "modelAnswer": "This is a table.",
+            "prompt": "Di en voz alta esta expresión.",
+            "promptSpanish": "Practica el modelo de la misión.",
+            "modelAnswer": "You're a teacher.",
+            "translation": "You're a teacher.",
             "evaluation": {
               "type": "transcription_feedback",
               "transcriptionSeparateFromPronunciation": true
@@ -1377,8 +1789,10 @@
           {
             "itemId": "english-pre-a1-m009-speaking-ex01-i07",
             "position": 7,
-            "prompt": "Say a short sentence using “bed”.",
-            "modelAnswer": "This is my bed.",
+            "prompt": "Di en voz alta esta expresión.",
+            "promptSpanish": "Practica el modelo de la misión.",
+            "modelAnswer": "I'm fine.",
+            "translation": "I'm fine.",
             "evaluation": {
               "type": "transcription_feedback",
               "transcriptionSeparateFromPronunciation": true
@@ -1387,8 +1801,10 @@
           {
             "itemId": "english-pre-a1-m009-speaking-ex01-i08",
             "position": 8,
-            "prompt": "Say a short sentence using “sofa”.",
-            "modelAnswer": "This is a sofa.",
+            "prompt": "Di en voz alta esta expresión.",
+            "promptSpanish": "Practica el modelo de la misión.",
+            "modelAnswer": "You're great.",
+            "translation": "You're great.",
             "evaluation": {
               "type": "transcription_feedback",
               "transcriptionSeparateFromPronunciation": true
@@ -1397,8 +1813,10 @@
           {
             "itemId": "english-pre-a1-m009-speaking-ex01-i09",
             "position": 9,
-            "prompt": "Say a short sentence using “door”.",
-            "modelAnswer": "This is a door.",
+            "prompt": "Di en voz alta esta expresión.",
+            "promptSpanish": "Practica el modelo de la misión.",
+            "modelAnswer": "I'm ready.",
+            "translation": "I'm ready.",
             "evaluation": {
               "type": "transcription_feedback",
               "transcriptionSeparateFromPronunciation": true
@@ -1407,8 +1825,10 @@
           {
             "itemId": "english-pre-a1-m009-speaking-ex01-i10",
             "position": 10,
-            "prompt": "Say a short sentence using “window”.",
-            "modelAnswer": "This is a window.",
+            "prompt": "Di en voz alta esta expresión.",
+            "promptSpanish": "Practica el modelo de la misión.",
+            "modelAnswer": "You're my friend.",
+            "translation": "You're my friend.",
             "evaluation": {
               "type": "transcription_feedback",
               "transcriptionSeparateFromPronunciation": true
@@ -1425,53 +1845,55 @@
         "exerciseId": "english-pre-a1-m009-listening-ex01",
         "type": "listening_gap_fill",
         "content": {
-          "audio": "tts:en-GB:This is my house. I cook in the kitchen. I sleep in my bedroom. I wash in the bathroom. We watch television in the living room. We eat at the table. I sleep in my bed. We sit on the sofa. Please close the door. Open the window for fresh air.",
+          "audio": "tts:en-GB:I am → I'm. You are → You're. I'm happy. You're happy. I'm a student. You're a teacher. I'm fine. You're great. I'm ready. You're my friend.",
           "audioLocale": "en-GB",
-          "transcriptTemplate": "This is my [[gap-01]]. I cook in the [[gap-02]]. I sleep in my [[gap-03]]. I wash in the [[gap-04]]. We watch television in the [[gap-05]]. We eat at the [[gap-06]]. I sleep in my [[gap-07]]. We sit on the [[gap-08]]. Please close the [[gap-09]]. Open the [[gap-10]] for fresh air.",
+          "audioStatus": "synthetic_pending_review",
+          "transcriptTemplate": "[[gap-01]] [[gap-02]] [[gap-03]] [[gap-04]] [[gap-05]] [[gap-06]] [[gap-07]] [[gap-08]] [[gap-09]] [[gap-10]]",
           "wordBank": [
             {
               "wordId": "english-pre-a1-m009-listening-word-01",
-              "word": "house"
+              "word": "I"
             },
             {
               "wordId": "english-pre-a1-m009-listening-word-02",
-              "word": "kitchen"
+              "word": "you"
             },
             {
               "wordId": "english-pre-a1-m009-listening-word-03",
-              "word": "bedroom"
+              "word": "am"
             },
             {
               "wordId": "english-pre-a1-m009-listening-word-04",
-              "word": "bathroom"
+              "word": "are"
             },
             {
               "wordId": "english-pre-a1-m009-listening-word-05",
-              "word": "living room"
+              "word": "I am"
             },
             {
               "wordId": "english-pre-a1-m009-listening-word-06",
-              "word": "table"
+              "word": "you are"
             },
             {
               "wordId": "english-pre-a1-m009-listening-word-07",
-              "word": "bed"
+              "word": "I'm"
             },
             {
               "wordId": "english-pre-a1-m009-listening-word-08",
-              "word": "sofa"
+              "word": "you're"
             },
             {
               "wordId": "english-pre-a1-m009-listening-word-09",
-              "word": "door"
+              "word": "happy"
             },
             {
               "wordId": "english-pre-a1-m009-listening-word-10",
-              "word": "window"
+              "word": "sad"
             }
           ],
           "interaction": "select_place_move_replace",
-          "audioTranscript": "tts:en-GB:This is my house. I cook in the kitchen. I sleep in my bedroom. I wash in the bathroom. We watch television in the living room. We eat at the table. I sleep in my bed. We sit on the sofa. Please close the door. Open the window for fresh air."
+          "audioTranscript": "tts:en-GB:I am → I'm. You are → You're. I'm happy. You're happy. I'm a student. You're a teacher. I'm fine. You're great. I'm ready. You're my friend.",
+          "translation": "Escucha y reconoce las expresiones enseñadas."
         },
         "items": [
           {
@@ -1479,70 +1901,70 @@
             "position": 1,
             "gapToken": "[[gap-01]]",
             "expectedWordId": "english-pre-a1-m009-listening-word-01",
-            "answer": "house"
+            "answer": "I"
           },
           {
             "itemId": "english-pre-a1-m009-listening-ex01-i02",
             "position": 2,
             "gapToken": "[[gap-02]]",
             "expectedWordId": "english-pre-a1-m009-listening-word-02",
-            "answer": "kitchen"
+            "answer": "you"
           },
           {
             "itemId": "english-pre-a1-m009-listening-ex01-i03",
             "position": 3,
             "gapToken": "[[gap-03]]",
             "expectedWordId": "english-pre-a1-m009-listening-word-03",
-            "answer": "bedroom"
+            "answer": "am"
           },
           {
             "itemId": "english-pre-a1-m009-listening-ex01-i04",
             "position": 4,
             "gapToken": "[[gap-04]]",
             "expectedWordId": "english-pre-a1-m009-listening-word-04",
-            "answer": "bathroom"
+            "answer": "are"
           },
           {
             "itemId": "english-pre-a1-m009-listening-ex01-i05",
             "position": 5,
             "gapToken": "[[gap-05]]",
             "expectedWordId": "english-pre-a1-m009-listening-word-05",
-            "answer": "living room"
+            "answer": "I am"
           },
           {
             "itemId": "english-pre-a1-m009-listening-ex01-i06",
             "position": 6,
             "gapToken": "[[gap-06]]",
             "expectedWordId": "english-pre-a1-m009-listening-word-06",
-            "answer": "table"
+            "answer": "you are"
           },
           {
             "itemId": "english-pre-a1-m009-listening-ex01-i07",
             "position": 7,
             "gapToken": "[[gap-07]]",
             "expectedWordId": "english-pre-a1-m009-listening-word-07",
-            "answer": "bed"
+            "answer": "I'm"
           },
           {
             "itemId": "english-pre-a1-m009-listening-ex01-i08",
             "position": 8,
             "gapToken": "[[gap-08]]",
             "expectedWordId": "english-pre-a1-m009-listening-word-08",
-            "answer": "sofa"
+            "answer": "you're"
           },
           {
             "itemId": "english-pre-a1-m009-listening-ex01-i09",
             "position": 9,
             "gapToken": "[[gap-09]]",
             "expectedWordId": "english-pre-a1-m009-listening-word-09",
-            "answer": "door"
+            "answer": "happy"
           },
           {
             "itemId": "english-pre-a1-m009-listening-ex01-i10",
             "position": 10,
             "gapToken": "[[gap-10]]",
             "expectedWordId": "english-pre-a1-m009-listening-word-10",
-            "answer": "window"
+            "answer": "sad"
           }
         ]
       }

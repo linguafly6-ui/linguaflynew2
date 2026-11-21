@@ -1,9 +1,9 @@
 {
-  "schemaVersion": "1.2.0",
-  "contentVersion": 2,
+  "schemaVersion": 1,
+  "contentVersion": "2026-11-21-curriculum-alignment-v1",
   "course": {
     "courseId": "english-pre-a1",
-    "level": "PRE-A1",
+    "level": "Pre-A1",
     "language": "en-GB"
   },
   "unit": {
@@ -16,7 +16,7 @@
     "missionId": "english-pre-a1-m005",
     "unitId": "english-pre-a1-unit-01",
     "position": 5,
-    "title": "Animals"
+    "title": "Yes or no"
   },
   "sections": [
     {
@@ -26,394 +26,579 @@
       "exercise": {
         "exerciseId": "english-pre-a1-m005-explore-ex01",
         "type": "vocabulary_pairs",
-        "theory": {
-          "title": "Animales: describir, expresar posesión y habilidades",
-          "explanation": "Aprende a describir un animal con is/are. Después añade características con has got, indica dónde está con preposiciones y expresa habilidades con can. Sigue este orden para no mezclar las estructuras.",
-          "tip": "A fish can swim: después de can usamos el verbo sin -s.",
-          "patterns": [
-            {
-              "label": "1. Describir con to be",
-              "pattern": "The + singular animal + is · The + plural animals + are",
-              "examples": [
-                "The dog is small. — El perro es pequeño.",
-                "The cats are black. — Los gatos son negros.",
-                "The ducks are here. — Los patos están aquí."
-              ]
-            },
-            {
-              "label": "2. Características con have got",
-              "pattern": "A + animal + has got + feature",
-              "examples": [
-                "A rabbit has got long ears. — Un conejo tiene las orejas largas."
-              ]
-            },
-            {
-              "label": "3. Decir dónde está",
-              "pattern": "in · on · under + place",
-              "examples": [
-                "The bird is in the tree. — El pájaro está en el árbol.",
-                "The cow is on the farm. — La vaca está en la granja."
-              ]
-            },
-            {
-              "label": "4. Habilidades con can",
-              "pattern": "Animal + can + base verb",
-              "examples": [
-                "A fish can swim. — Un pez puede nadar.",
-                "A bird can fly. — Un pájaro puede volar."
-              ]
-            },
-            {
-              "label": "5. Expresar gustos",
-              "pattern": "I like + plural noun",
-              "examples": [
-                "I like animals. — Me gustan los animales."
-              ]
-            }
-          ]
-        },
         "items": [
           {
             "itemId": "english-pre-a1-m005-explore-ex01-i01",
             "position": 1,
-            "english": "dog",
-            "spanish": "perro",
-            "audio": "tts:en-GB:dog"
+            "english": "yes",
+            "spanish": "sí",
+            "pronunciationGuide": "iés",
+            "audio": "tts:en-GB:yes",
+            "audioStatus": "synthetic_pending_review"
           },
           {
             "itemId": "english-pre-a1-m005-explore-ex01-i02",
             "position": 2,
-            "english": "cat",
-            "spanish": "gato",
-            "audio": "tts:en-GB:cat"
+            "english": "no",
+            "spanish": "no",
+            "pronunciationGuide": "nóu",
+            "audio": "tts:en-GB:no",
+            "audioStatus": "synthetic_pending_review"
           },
           {
             "itemId": "english-pre-a1-m005-explore-ex01-i03",
             "position": 3,
-            "english": "bird",
-            "spanish": "pájaro",
-            "audio": "tts:en-GB:bird"
+            "english": "maybe",
+            "spanish": "quizás",
+            "pronunciationGuide": "MÉI-bi",
+            "audio": "tts:en-GB:maybe",
+            "audioStatus": "synthetic_pending_review"
           },
           {
             "itemId": "english-pre-a1-m005-explore-ex01-i04",
             "position": 4,
-            "english": "fish",
-            "spanish": "pez",
-            "audio": "tts:en-GB:fish"
+            "english": "right",
+            "spanish": "correcto",
+            "pronunciationGuide": "ráit",
+            "audio": "tts:en-GB:right",
+            "audioStatus": "synthetic_pending_review"
           },
           {
             "itemId": "english-pre-a1-m005-explore-ex01-i05",
             "position": 5,
-            "english": "rabbit",
-            "spanish": "conejo",
-            "audio": "tts:en-GB:rabbit"
+            "english": "wrong",
+            "spanish": "incorrecto",
+            "pronunciationGuide": "róng",
+            "audio": "tts:en-GB:wrong",
+            "audioStatus": "synthetic_pending_review"
           },
           {
             "itemId": "english-pre-a1-m005-explore-ex01-i06",
             "position": 6,
-            "english": "horse",
-            "spanish": "caballo",
-            "audio": "tts:en-GB:horse"
+            "english": "correct",
+            "spanish": "correcto",
+            "pronunciationGuide": "ka-RÉKT",
+            "audio": "tts:en-GB:correct",
+            "audioStatus": "synthetic_pending_review"
           },
           {
             "itemId": "english-pre-a1-m005-explore-ex01-i07",
             "position": 7,
-            "english": "cow",
-            "spanish": "vaca",
-            "audio": "tts:en-GB:cow"
+            "english": "true",
+            "spanish": "verdadero",
+            "pronunciationGuide": "trú",
+            "audio": "tts:en-GB:true",
+            "audioStatus": "synthetic_pending_review"
           },
           {
             "itemId": "english-pre-a1-m005-explore-ex01-i08",
             "position": 8,
-            "english": "duck",
-            "spanish": "pato",
-            "audio": "tts:en-GB:duck"
+            "english": "false",
+            "spanish": "falso",
+            "pronunciationGuide": "fóls",
+            "audio": "tts:en-GB:false",
+            "audioStatus": "synthetic_pending_review"
           },
           {
             "itemId": "english-pre-a1-m005-explore-ex01-i09",
             "position": 9,
-            "english": "sheep",
-            "spanish": "oveja",
-            "audio": "tts:en-GB:sheep"
+            "english": "question",
+            "spanish": "pregunta",
+            "pronunciationGuide": "KUÉS-chan",
+            "audio": "tts:en-GB:question",
+            "audioStatus": "synthetic_pending_review"
           },
           {
             "itemId": "english-pre-a1-m005-explore-ex01-i10",
             "position": 10,
-            "english": "lion",
-            "spanish": "león",
-            "audio": "tts:en-GB:lion"
+            "english": "answer",
+            "spanish": "respuesta",
+            "pronunciationGuide": "ÁN-ser",
+            "audio": "tts:en-GB:answer",
+            "audioStatus": "synthetic_pending_review"
+          },
+          {
+            "itemId": "english-pre-a1-m005-explore-ex01-i11",
+            "position": 11,
+            "english": "okay",
+            "spanish": "de acuerdo",
+            "pronunciationGuide": "óu-KÉI",
+            "audio": "tts:en-GB:okay",
+            "audioStatus": "synthetic_pending_review"
+          },
+          {
+            "itemId": "english-pre-a1-m005-explore-ex01-i12",
+            "position": 12,
+            "english": "sure",
+            "spanish": "claro",
+            "pronunciationGuide": "shúr",
+            "audio": "tts:en-GB:sure",
+            "audioStatus": "synthetic_pending_review"
+          },
+          {
+            "itemId": "english-pre-a1-m005-explore-ex01-i13",
+            "position": 13,
+            "english": "again",
+            "spanish": "otra vez",
+            "pronunciationGuide": "a-GUÉN",
+            "audio": "tts:en-GB:again",
+            "audioStatus": "synthetic_pending_review"
+          },
+          {
+            "itemId": "english-pre-a1-m005-explore-ex01-i14",
+            "position": 14,
+            "english": "repeat",
+            "spanish": "repetir",
+            "pronunciationGuide": "ri-PÍT",
+            "audio": "tts:en-GB:repeat",
+            "audioStatus": "synthetic_pending_review"
+          },
+          {
+            "itemId": "english-pre-a1-m005-explore-ex01-i15",
+            "position": 15,
+            "english": "understand",
+            "spanish": "entender",
+            "pronunciationGuide": "an-der-STÁND",
+            "audio": "tts:en-GB:understand",
+            "audioStatus": "synthetic_pending_review"
           }
         ],
+        "theory": {
+          "title": "Yes or no",
+          "explanation": "Yes/no expresan afirmación y negación; maybe indica posibilidad. Right/correct y wrong evalúan corrección; true/false significan verdadero/falso. Question es pregunta y answer respuesta. Again/repeat piden repetición. Understand significa entender.",
+          "tip": "Comprende todos los modelos de Explore antes de comenzar las actividades.",
+          "patterns": [
+            {
+              "label": "Bloque 1",
+              "pattern": "Yes or no",
+              "examples": [
+                "Yes."
+              ]
+            },
+            {
+              "label": "Bloque 2",
+              "pattern": "Yes/no expresan afirmación y negación; maybe indica posibilidad. Right/correct y wrong evalúan corrección; true/false significan verdadero/falso. Question es pregunta y answer respuesta. Again/repeat piden repetición. Understand significa entender.",
+              "examples": [
+                "No."
+              ]
+            },
+            {
+              "label": "Bloque 3",
+              "pattern": "Yes/no expresan afirmación y negación; maybe indica posibilidad. Right/correct y wrong evalúan corrección; true/false significan verdadero/falso. Question es pregunta y answer respuesta. Again/repeat piden repetición. Understand significa entender.",
+              "examples": [
+                "Maybe."
+              ]
+            },
+            {
+              "label": "Bloque 4",
+              "pattern": "Yes/no expresan afirmación y negación; maybe indica posibilidad. Right/correct y wrong evalúan corrección; true/false significan verdadero/falso. Question es pregunta y answer respuesta. Again/repeat piden repetición. Understand significa entender.",
+              "examples": [
+                "Okay."
+              ]
+            },
+            {
+              "label": "Bloque 5",
+              "pattern": "Yes/no expresan afirmación y negación; maybe indica posibilidad. Right/correct y wrong evalúan corrección; true/false significan verdadero/falso. Question es pregunta y answer respuesta. Again/repeat piden repetición. Understand significa entender.",
+              "examples": [
+                "Yes, that's right."
+              ]
+            },
+            {
+              "label": "Bloque 6",
+              "pattern": "Yes/no expresan afirmación y negación; maybe indica posibilidad. Right/correct y wrong evalúan corrección; true/false significan verdadero/falso. Question es pregunta y answer respuesta. Again/repeat piden repetición. Understand significa entender.",
+              "examples": [
+                "No, that's wrong."
+              ]
+            },
+            {
+              "label": "Bloque 7",
+              "pattern": "Yes/no expresan afirmación y negación; maybe indica posibilidad. Right/correct y wrong evalúan corrección; true/false significan verdadero/falso. Question es pregunta y answer respuesta. Again/repeat piden repetición. Understand significa entender.",
+              "examples": [
+                "Please repeat."
+              ]
+            },
+            {
+              "label": "Bloque 8",
+              "pattern": "Yes/no expresan afirmación y negación; maybe indica posibilidad. Right/correct y wrong evalúan corrección; true/false significan verdadero/falso. Question es pregunta y answer respuesta. Again/repeat piden repetición. Understand significa entender.",
+              "examples": [
+                "I understand."
+              ]
+            },
+            {
+              "label": "Bloque 9",
+              "pattern": "Yes/no expresan afirmación y negación; maybe indica posibilidad. Right/correct y wrong evalúan corrección; true/false significan verdadero/falso. Question es pregunta y answer respuesta. Again/repeat piden repetición. Understand significa entender.",
+              "examples": [
+                "True or false?"
+              ]
+            },
+            {
+              "label": "Bloque 10",
+              "pattern": "Yes/no expresan afirmación y negación; maybe indica posibilidad. Right/correct y wrong evalúan corrección; true/false significan verdadero/falso. Question es pregunta y answer respuesta. Again/repeat piden repetición. Understand significa entender.",
+              "examples": [
+                "Question and answer."
+              ]
+            }
+          ]
+        },
         "lesson": {
           "phrases": [
             {
-              "english": "The dog is small.",
-              "spanish": "El perro es pequeño."
+              "english": "Yes.",
+              "spanish": "Yes.",
+              "note": "Modelo enseñado en Explore."
             },
             {
-              "english": "The cats are black.",
-              "spanish": "Los gatos son negros."
+              "english": "No.",
+              "spanish": "No.",
+              "note": "Modelo enseñado en Explore."
             },
             {
-              "english": "A rabbit has got long ears.",
-              "spanish": "Un conejo tiene las orejas largas."
+              "english": "Maybe.",
+              "spanish": "Maybe.",
+              "note": "Modelo enseñado en Explore."
             },
             {
-              "english": "The bird is in the tree.",
-              "spanish": "El pájaro está en el árbol."
+              "english": "Okay.",
+              "spanish": "Okay.",
+              "note": "Modelo enseñado en Explore."
             },
             {
-              "english": "The cow is on the farm.",
-              "spanish": "La vaca está en la granja."
+              "english": "Yes, that's right.",
+              "spanish": "Yes, that's right.",
+              "note": "Modelo enseñado en Explore."
             },
             {
-              "english": "I like animals.",
-              "spanish": "Me gustan los animales."
+              "english": "No, that's wrong.",
+              "spanish": "No, that's wrong.",
+              "note": "Modelo enseñado en Explore."
             },
             {
-              "english": "A fish can swim.",
-              "spanish": "Un pez puede nadar."
+              "english": "Please repeat.",
+              "spanish": "Please repeat.",
+              "note": "Modelo enseñado en Explore."
             },
             {
-              "english": "The ducks are here.",
-              "spanish": "Los patos están aquí."
+              "english": "I understand.",
+              "spanish": "I understand.",
+              "note": "Modelo enseñado en Explore."
             },
             {
-              "english": "in",
-              "spanish": "dentro de / en",
-              "note": "In indica interior o ubicación dentro de algo."
+              "english": "True or false?",
+              "spanish": "True or false?",
+              "note": "Modelo enseñado en Explore."
             },
             {
-              "english": "on",
-              "spanish": "en / sobre",
-              "note": "On indica superficie o ubicación en la granja."
-            },
-            {
-              "english": "can",
-              "spanish": "poder",
-              "note": "Can expresa habilidad y va seguido del verbo base."
+              "english": "Question and answer.",
+              "spanish": "Question and answer.",
+              "note": "Modelo enseñado en Explore."
             }
           ],
           "grammar": [
             {
-              "english": "The dog is small.",
-              "spanish": "El perro es pequeño.",
-              "note": "Con un animal usamos is."
+              "english": "Yes.",
+              "spanish": "Modelo de la misión",
+              "note": "Yes or no"
             },
             {
-              "english": "The cats are black.",
-              "spanish": "Los gatos son negros.",
-              "note": "Con un sujeto plural usamos are."
+              "english": "No.",
+              "spanish": "Modelo de la misión",
+              "note": "Yes/no expresan afirmación y negación; maybe indica posibilidad. Right/correct y wrong evalúan corrección; true/false significan verdadero/falso. Question es pregunta y answer respuesta. Again/repeat piden repetición. Understand significa entender."
             },
             {
-              "english": "A rabbit has got long ears.",
-              "spanish": "Un conejo tiene las orejas largas.",
-              "note": "Has got se usa con he, she, it y nombres singulares."
+              "english": "Maybe.",
+              "spanish": "Modelo de la misión",
+              "note": "Yes/no expresan afirmación y negación; maybe indica posibilidad. Right/correct y wrong evalúan corrección; true/false significan verdadero/falso. Question es pregunta y answer respuesta. Again/repeat piden repetición. Understand significa entender."
             },
             {
-              "english": "The bird is in the tree.",
-              "spanish": "El pájaro está en el árbol.",
-              "note": "In indica dentro o entre las ramas."
+              "english": "Okay.",
+              "spanish": "Modelo de la misión",
+              "note": "Yes/no expresan afirmación y negación; maybe indica posibilidad. Right/correct y wrong evalúan corrección; true/false significan verdadero/falso. Question es pregunta y answer respuesta. Again/repeat piden repetición. Understand significa entender."
             },
             {
-              "english": "The cow is on the farm.",
-              "spanish": "La vaca está en la granja.",
-              "note": "On the farm es la expresión habitual."
+              "english": "Yes, that's right.",
+              "spanish": "Modelo de la misión",
+              "note": "Yes/no expresan afirmación y negación; maybe indica posibilidad. Right/correct y wrong evalúan corrección; true/false significan verdadero/falso. Question es pregunta y answer respuesta. Again/repeat piden repetición. Understand significa entender."
             },
             {
-              "english": "I like animals.",
-              "spanish": "Me gustan los animales.",
-              "note": "Con I usamos like."
+              "english": "No, that's wrong.",
+              "spanish": "Modelo de la misión",
+              "note": "Yes/no expresan afirmación y negación; maybe indica posibilidad. Right/correct y wrong evalúan corrección; true/false significan verdadero/falso. Question es pregunta y answer respuesta. Again/repeat piden repetición. Understand significa entender."
             },
             {
-              "english": "A fish can swim.",
-              "spanish": "Un pez puede nadar.",
-              "note": "Can + verbo base."
+              "english": "Please repeat.",
+              "spanish": "Modelo de la misión",
+              "note": "Yes/no expresan afirmación y negación; maybe indica posibilidad. Right/correct y wrong evalúan corrección; true/false significan verdadero/falso. Question es pregunta y answer respuesta. Again/repeat piden repetición. Understand significa entender."
             },
             {
-              "english": "A lion is big.",
-              "spanish": "Un león es grande."
+              "english": "I understand.",
+              "spanish": "Modelo de la misión",
+              "note": "Yes/no expresan afirmación y negación; maybe indica posibilidad. Right/correct y wrong evalúan corrección; true/false significan verdadero/falso. Question es pregunta y answer respuesta. Again/repeat piden repetición. Understand significa entender."
             },
             {
-              "english": "The ducks are here.",
-              "spanish": "Los patos están aquí.",
-              "note": "Ducks es plural."
+              "english": "True or false?",
+              "spanish": "Modelo de la misión",
+              "note": "Yes/no expresan afirmación y negación; maybe indica posibilidad. Right/correct y wrong evalúan corrección; true/false significan verdadero/falso. Question es pregunta y answer respuesta. Again/repeat piden repetición. Understand significa entender."
             },
             {
-              "english": "The horse is brown.",
-              "spanish": "El caballo es marrón."
+              "english": "Question and answer.",
+              "spanish": "Modelo de la misión",
+              "note": "Yes/no expresan afirmación y negación; maybe indica posibilidad. Right/correct y wrong evalúan corrección; true/false significan verdadero/falso. Question es pregunta y answer respuesta. Again/repeat piden repetición. Understand significa entender."
             }
           ],
           "reading": [
             {
-              "english": "I have got a small dog called Max.",
-              "spanish": "Tengo un perro pequeño que se llama Max."
-            },
-            {
-              "english": "My friend has got a black cat.",
-              "spanish": "Mi amigo tiene un gato negro."
-            },
-            {
-              "english": "We see a bird in a tree and a fish in a pond.",
-              "spanish": "Vemos un pájaro en un árbol y un pez en un estanque."
-            },
-            {
-              "english": "At the farm there is a cow, a horse, a duck and a sheep.",
-              "spanish": "En la granja hay una vaca, un caballo, un pato y una oveja."
-            },
-            {
-              "english": "A rabbit has got long ears.",
-              "spanish": "Un conejo tiene las orejas largas."
-            },
-            {
-              "english": "A lion is big.",
-              "spanish": "Un león es grande."
+              "english": "Yes. No. Maybe. Okay. Right or wrong? True or false? Please repeat. I understand.",
+              "spanish": "Texto completo presentado arriba."
             }
           ],
           "writing": [
             {
-              "english": "The dog is small.",
-              "spanish": "El perro es pequeño."
+              "english": "Yes.",
+              "spanish": "Yes.",
+              "note": "Modelo enseñado en Explore."
             },
             {
-              "english": "My cat is black.",
-              "spanish": "Mi gato es negro."
+              "english": "No.",
+              "spanish": "No.",
+              "note": "Modelo enseñado en Explore."
             },
             {
-              "english": "A bird is in the tree.",
-              "spanish": "Hay un pájaro en el árbol."
+              "english": "Maybe.",
+              "spanish": "Maybe.",
+              "note": "Modelo enseñado en Explore."
             },
             {
-              "english": "The fish is in the pond.",
-              "spanish": "El pez está en el estanque."
+              "english": "Okay.",
+              "spanish": "Okay.",
+              "note": "Modelo enseñado en Explore."
             },
             {
-              "english": "The rabbit has long ears.",
-              "spanish": "El conejo tiene las orejas largas."
+              "english": "Yes, that's right.",
+              "spanish": "Yes, that's right.",
+              "note": "Modelo enseñado en Explore."
             },
             {
-              "english": "The horse is on the farm.",
-              "spanish": "El caballo está en la granja."
+              "english": "No, that's wrong.",
+              "spanish": "No, that's wrong.",
+              "note": "Modelo enseñado en Explore."
             },
             {
-              "english": "The cow is big.",
-              "spanish": "La vaca es grande."
+              "english": "Please repeat.",
+              "spanish": "Please repeat.",
+              "note": "Modelo enseñado en Explore."
             },
             {
-              "english": "The duck can swim.",
-              "spanish": "El pato puede nadar."
+              "english": "I understand.",
+              "spanish": "I understand.",
+              "note": "Modelo enseñado en Explore."
             },
             {
-              "english": "The sheep is white.",
-              "spanish": "La oveja es blanca."
+              "english": "True or false?",
+              "spanish": "True or false?",
+              "note": "Modelo enseñado en Explore."
             },
             {
-              "english": "The lion is big.",
-              "spanish": "El león es grande."
+              "english": "Question and answer.",
+              "spanish": "Question and answer.",
+              "note": "Modelo enseñado en Explore."
             }
           ],
           "speaking": [
             {
-              "english": "I can see a dog.",
-              "spanish": "Puedo ver un perro.",
-              "prompt": "Say a short sentence using dog.",
-              "promptSpanish": "Di una frase corta usando dog (perro)."
+              "english": "Yes.",
+              "spanish": "Yes.",
+              "note": "Modelo enseñado en Explore.",
+              "prompt": "Practica esta expresión.",
+              "promptSpanish": "Di la expresión en voz alta."
             },
             {
-              "english": "I can see a cat.",
-              "spanish": "Puedo ver un gato.",
-              "prompt": "Say a short sentence using cat.",
-              "promptSpanish": "Di una frase corta usando cat (gato)."
+              "english": "No.",
+              "spanish": "No.",
+              "note": "Modelo enseñado en Explore.",
+              "prompt": "Practica esta expresión.",
+              "promptSpanish": "Di la expresión en voz alta."
             },
             {
-              "english": "A bird can fly.",
-              "spanish": "Un pájaro puede volar.",
-              "prompt": "Say a short sentence using bird.",
-              "promptSpanish": "Di una frase corta usando bird (pájaro)."
+              "english": "Maybe.",
+              "spanish": "Maybe.",
+              "note": "Modelo enseñado en Explore.",
+              "prompt": "Practica esta expresión.",
+              "promptSpanish": "Di la expresión en voz alta."
             },
             {
-              "english": "A fish can swim.",
-              "spanish": "Un pez puede nadar.",
-              "prompt": "Say a short sentence using fish.",
-              "promptSpanish": "Di una frase corta usando fish (pez)."
+              "english": "Okay.",
+              "spanish": "Okay.",
+              "note": "Modelo enseñado en Explore.",
+              "prompt": "Practica esta expresión.",
+              "promptSpanish": "Di la expresión en voz alta."
             },
             {
-              "english": "A rabbit has long ears.",
-              "spanish": "Un conejo tiene las orejas largas.",
-              "prompt": "Say a short sentence using rabbit.",
-              "promptSpanish": "Di una frase corta usando rabbit (conejo)."
+              "english": "Yes, that's right.",
+              "spanish": "Yes, that's right.",
+              "note": "Modelo enseñado en Explore.",
+              "prompt": "Practica esta expresión.",
+              "promptSpanish": "Di la expresión en voz alta."
             },
             {
-              "english": "A horse lives on a farm.",
-              "spanish": "Un caballo vive en una granja.",
-              "prompt": "Say a short sentence using horse.",
-              "promptSpanish": "Di una frase corta usando horse (caballo)."
+              "english": "No, that's wrong.",
+              "spanish": "No, that's wrong.",
+              "note": "Modelo enseñado en Explore.",
+              "prompt": "Practica esta expresión.",
+              "promptSpanish": "Di la expresión en voz alta."
             },
             {
-              "english": "A cow gives us milk.",
-              "spanish": "Una vaca nos da leche.",
-              "prompt": "Say a short sentence using cow.",
-              "promptSpanish": "Di una frase corta usando cow (vaca)."
+              "english": "Please repeat.",
+              "spanish": "Please repeat.",
+              "note": "Modelo enseñado en Explore.",
+              "prompt": "Practica esta expresión.",
+              "promptSpanish": "Di la expresión en voz alta."
             },
             {
-              "english": "A duck can swim.",
-              "spanish": "Un pato puede nadar.",
-              "prompt": "Say a short sentence using duck.",
-              "promptSpanish": "Di una frase corta usando duck (pato)."
+              "english": "I understand.",
+              "spanish": "I understand.",
+              "note": "Modelo enseñado en Explore.",
+              "prompt": "Practica esta expresión.",
+              "promptSpanish": "Di la expresión en voz alta."
             },
             {
-              "english": "A sheep has wool.",
-              "spanish": "Una oveja tiene lana.",
-              "prompt": "Say a short sentence using sheep.",
-              "promptSpanish": "Di una frase corta usando sheep (oveja)."
+              "english": "True or false?",
+              "spanish": "True or false?",
+              "note": "Modelo enseñado en Explore.",
+              "prompt": "Practica esta expresión.",
+              "promptSpanish": "Di la expresión en voz alta."
             },
             {
-              "english": "A lion is a wild animal.",
-              "spanish": "Un león es un animal salvaje.",
-              "prompt": "Say a short sentence using lion.",
-              "promptSpanish": "Di una frase corta usando lion (león)."
+              "english": "Question and answer.",
+              "spanish": "Question and answer.",
+              "note": "Modelo enseñado en Explore.",
+              "prompt": "Practica esta expresión.",
+              "promptSpanish": "Di la expresión en voz alta."
             }
           ],
           "listening": [
             {
-              "english": "The dog is called Max.",
-              "spanish": "El perro se llama Max."
+              "english": "Yes.",
+              "spanish": "Yes.",
+              "note": "Modelo enseñado en Explore."
             },
             {
-              "english": "My friend has got a cat.",
-              "spanish": "Mi amigo tiene un gato."
+              "english": "No.",
+              "spanish": "No.",
+              "note": "Modelo enseñado en Explore."
             },
             {
-              "english": "A bird is in the tree.",
-              "spanish": "Hay un pájaro en el árbol."
+              "english": "Maybe.",
+              "spanish": "Maybe.",
+              "note": "Modelo enseñado en Explore."
             },
             {
-              "english": "A fish swims in the pond.",
-              "spanish": "Un pez nada en el estanque."
+              "english": "Okay.",
+              "spanish": "Okay.",
+              "note": "Modelo enseñado en Explore."
             },
             {
-              "english": "The rabbit has long ears.",
-              "spanish": "El conejo tiene las orejas largas."
+              "english": "Yes, that's right.",
+              "spanish": "Yes, that's right.",
+              "note": "Modelo enseñado en Explore."
             },
             {
-              "english": "A horse lives on the farm.",
-              "spanish": "Un caballo vive en la granja."
+              "english": "No, that's wrong.",
+              "spanish": "No, that's wrong.",
+              "note": "Modelo enseñado en Explore."
             },
             {
-              "english": "The cow gives us milk.",
-              "spanish": "La vaca nos da leche."
+              "english": "Please repeat.",
+              "spanish": "Please repeat.",
+              "note": "Modelo enseñado en Explore."
             },
             {
-              "english": "A duck can swim on the pond.",
-              "spanish": "Un pato puede nadar en el estanque."
+              "english": "I understand.",
+              "spanish": "I understand.",
+              "note": "Modelo enseñado en Explore."
             },
             {
-              "english": "A sheep has wool.",
-              "spanish": "Una oveja tiene lana."
+              "english": "True or false?",
+              "spanish": "True or false?",
+              "note": "Modelo enseñado en Explore."
             },
             {
-              "english": "The lion is a big wild animal.",
-              "spanish": "El león es un animal salvaje grande."
+              "english": "Question and answer.",
+              "spanish": "Question and answer.",
+              "note": "Modelo enseñado en Explore."
+            }
+          ]
+        },
+        "content": {
+          "blocks": [
+            {
+              "position": 1,
+              "title": "Bloque 1",
+              "content": "Yes or no",
+              "example": "Yes.",
+              "translation": "Consulta la traducción y la guía de pronunciación de cada elemento."
+            },
+            {
+              "position": 2,
+              "title": "Bloque 2",
+              "content": "Yes/no expresan afirmación y negación; maybe indica posibilidad. Right/correct y wrong evalúan corrección; true/false significan verdadero/falso. Question es pregunta y answer respuesta. Again/repeat piden repetición. Understand significa entender.",
+              "example": "No.",
+              "translation": "Consulta la traducción y la guía de pronunciación de cada elemento."
+            },
+            {
+              "position": 3,
+              "title": "Bloque 3",
+              "content": "Yes/no expresan afirmación y negación; maybe indica posibilidad. Right/correct y wrong evalúan corrección; true/false significan verdadero/falso. Question es pregunta y answer respuesta. Again/repeat piden repetición. Understand significa entender.",
+              "example": "Maybe.",
+              "translation": "Consulta la traducción y la guía de pronunciación de cada elemento."
+            },
+            {
+              "position": 4,
+              "title": "Bloque 4",
+              "content": "Yes/no expresan afirmación y negación; maybe indica posibilidad. Right/correct y wrong evalúan corrección; true/false significan verdadero/falso. Question es pregunta y answer respuesta. Again/repeat piden repetición. Understand significa entender.",
+              "example": "Okay.",
+              "translation": "Consulta la traducción y la guía de pronunciación de cada elemento."
+            },
+            {
+              "position": 5,
+              "title": "Bloque 5",
+              "content": "Yes/no expresan afirmación y negación; maybe indica posibilidad. Right/correct y wrong evalúan corrección; true/false significan verdadero/falso. Question es pregunta y answer respuesta. Again/repeat piden repetición. Understand significa entender.",
+              "example": "Yes, that's right.",
+              "translation": "Consulta la traducción y la guía de pronunciación de cada elemento."
+            },
+            {
+              "position": 6,
+              "title": "Bloque 6",
+              "content": "Yes/no expresan afirmación y negación; maybe indica posibilidad. Right/correct y wrong evalúan corrección; true/false significan verdadero/falso. Question es pregunta y answer respuesta. Again/repeat piden repetición. Understand significa entender.",
+              "example": "No, that's wrong.",
+              "translation": "Consulta la traducción y la guía de pronunciación de cada elemento."
+            },
+            {
+              "position": 7,
+              "title": "Bloque 7",
+              "content": "Yes/no expresan afirmación y negación; maybe indica posibilidad. Right/correct y wrong evalúan corrección; true/false significan verdadero/falso. Question es pregunta y answer respuesta. Again/repeat piden repetición. Understand significa entender.",
+              "example": "Please repeat.",
+              "translation": "Consulta la traducción y la guía de pronunciación de cada elemento."
+            },
+            {
+              "position": 8,
+              "title": "Bloque 8",
+              "content": "Yes/no expresan afirmación y negación; maybe indica posibilidad. Right/correct y wrong evalúan corrección; true/false significan verdadero/falso. Question es pregunta y answer respuesta. Again/repeat piden repetición. Understand significa entender.",
+              "example": "I understand.",
+              "translation": "Consulta la traducción y la guía de pronunciación de cada elemento."
+            },
+            {
+              "position": 9,
+              "title": "Bloque 9",
+              "content": "Yes/no expresan afirmación y negación; maybe indica posibilidad. Right/correct y wrong evalúan corrección; true/false significan verdadero/falso. Question es pregunta y answer respuesta. Again/repeat piden repetición. Understand significa entender.",
+              "example": "True or false?",
+              "translation": "Consulta la traducción y la guía de pronunciación de cada elemento."
+            },
+            {
+              "position": 10,
+              "title": "Bloque 10",
+              "content": "Yes/no expresan afirmación y negación; maybe indica posibilidad. Right/correct y wrong evalúan corrección; true/false significan verdadero/falso. Question es pregunta y answer respuesta. Again/repeat piden repetición. Understand significa entender.",
+              "example": "Question and answer.",
+              "translation": "Consulta la traducción y la guía de pronunciación de cada elemento."
             }
           ]
         }
@@ -430,302 +615,142 @@
           {
             "itemId": "english-pre-a1-m005-practice-ex01-i01",
             "position": 1,
-            "taskType": "vocabulary_translation",
-            "prompt": "Choose the Spanish meaning of “dog”.",
+            "prompt": "Elige la traducción de “yes”.",
             "evaluation": {
               "type": "single_choice"
             },
             "options": [
-              "pez",
-              "vaca",
-              "perro"
+              "no",
+              "sí",
+              "quizás"
             ],
-            "answer": "perro"
+            "answer": "sí"
           },
           {
             "itemId": "english-pre-a1-m005-practice-ex01-i02",
             "position": 2,
-            "taskType": "vocabulary_translation",
-            "prompt": "Choose the Spanish meaning of “cat”.",
+            "prompt": "Elige la traducción de “no”.",
             "evaluation": {
               "type": "single_choice"
             },
             "options": [
-              "conejo",
-              "gato",
-              "pato"
+              "correcto",
+              "quizás",
+              "no"
             ],
-            "answer": "gato"
+            "answer": "no"
           },
           {
             "itemId": "english-pre-a1-m005-practice-ex01-i03",
             "position": 3,
-            "taskType": "vocabulary_translation",
-            "prompt": "Choose the Spanish meaning of “bird”.",
+            "prompt": "Elige la traducción de “maybe”.",
             "evaluation": {
               "type": "single_choice"
             },
             "options": [
-              "pájaro",
-              "caballo",
-              "oveja"
+              "quizás",
+              "correcto",
+              "incorrecto"
             ],
-            "answer": "pájaro"
+            "answer": "quizás"
           },
           {
             "itemId": "english-pre-a1-m005-practice-ex01-i04",
             "position": 4,
-            "taskType": "vocabulary_translation",
-            "prompt": "Choose the Spanish meaning of “fish”.",
+            "prompt": "Elige la traducción de “right”.",
             "evaluation": {
               "type": "single_choice"
             },
             "options": [
-              "pez",
-              "vaca",
-              "león"
+              "incorrecto",
+              "correcto",
+              "una alternativa"
             ],
-            "answer": "pez"
+            "answer": "correcto"
           },
           {
             "itemId": "english-pre-a1-m005-practice-ex01-i05",
             "position": 5,
-            "taskType": "vocabulary_translation",
-            "prompt": "Choose the Spanish meaning of “rabbit”.",
+            "prompt": "Elige la traducción de “wrong”.",
             "evaluation": {
               "type": "single_choice"
             },
             "options": [
-              "pato",
-              "perro",
-              "conejo"
+              "verdadero",
+              "correcto",
+              "incorrecto"
             ],
-            "answer": "conejo"
+            "answer": "incorrecto"
           },
           {
             "itemId": "english-pre-a1-m005-practice-ex01-i06",
             "position": 6,
-            "taskType": "vocabulary_translation",
-            "prompt": "Choose the Spanish meaning of “horse”.",
+            "prompt": "Elige la traducción de “correct”.",
             "evaluation": {
               "type": "single_choice"
             },
             "options": [
-              "oveja",
-              "caballo",
-              "gato"
+              "correcto",
+              "verdadero",
+              "falso"
             ],
-            "answer": "caballo"
+            "answer": "correcto"
           },
           {
             "itemId": "english-pre-a1-m005-practice-ex01-i07",
             "position": 7,
-            "taskType": "vocabulary_translation",
-            "prompt": "Choose the Spanish meaning of “cow”.",
+            "prompt": "Elige la traducción de “true”.",
             "evaluation": {
               "type": "single_choice"
             },
             "options": [
-              "vaca",
-              "león",
-              "pájaro"
+              "falso",
+              "verdadero",
+              "pregunta"
             ],
-            "answer": "vaca"
+            "answer": "verdadero"
           },
           {
             "itemId": "english-pre-a1-m005-practice-ex01-i08",
             "position": 8,
-            "taskType": "vocabulary_translation",
-            "prompt": "Choose the Spanish meaning of “duck”.",
+            "prompt": "Elige la traducción de “false”.",
             "evaluation": {
               "type": "single_choice"
             },
             "options": [
-              "perro",
-              "pato",
-              "pez"
+              "respuesta",
+              "pregunta",
+              "falso"
             ],
-            "answer": "pato"
+            "answer": "falso"
           },
           {
             "itemId": "english-pre-a1-m005-practice-ex01-i09",
             "position": 9,
-            "taskType": "vocabulary_translation",
-            "prompt": "Choose the Spanish meaning of “sheep”.",
+            "prompt": "Elige la traducción de “question”.",
             "evaluation": {
               "type": "single_choice"
             },
             "options": [
-              "gato",
-              "conejo",
-              "oveja"
+              "pregunta",
+              "respuesta",
+              "de acuerdo"
             ],
-            "answer": "oveja"
+            "answer": "pregunta"
           },
           {
             "itemId": "english-pre-a1-m005-practice-ex01-i10",
             "position": 10,
-            "taskType": "vocabulary_translation",
-            "prompt": "Choose the Spanish meaning of “lion”.",
+            "prompt": "Elige la traducción de “answer”.",
             "evaluation": {
               "type": "single_choice"
             },
             "options": [
-              "león",
-              "pájaro",
-              "caballo"
+              "de acuerdo",
+              "respuesta",
+              "claro"
             ],
-            "answer": "león"
-          },
-          {
-            "itemId": "english-pre-a1-m005-practice-ex01-i11",
-            "position": 11,
-            "taskType": "topic_vocabulary",
-            "prompt": "Which English word means “perro”?",
-            "evaluation": {
-              "type": "single_choice"
-            },
-            "options": [
-              "bird",
-              "horse",
-              "dog"
-            ],
-            "answer": "dog"
-          },
-          {
-            "itemId": "english-pre-a1-m005-practice-ex01-i12",
-            "position": 12,
-            "taskType": "topic_vocabulary",
-            "prompt": "Choose the word for “gato”?",
-            "evaluation": {
-              "type": "single_choice"
-            },
-            "options": [
-              "fish",
-              "cat",
-              "cow"
-            ],
-            "answer": "cat"
-          },
-          {
-            "itemId": "english-pre-a1-m005-practice-ex01-i13",
-            "position": 13,
-            "taskType": "topic_vocabulary",
-            "prompt": "Select the English word for “pájaro”?",
-            "evaluation": {
-              "type": "single_choice"
-            },
-            "options": [
-              "bird",
-              "rabbit",
-              "duck"
-            ],
-            "answer": "bird"
-          },
-          {
-            "itemId": "english-pre-a1-m005-practice-ex01-i14",
-            "position": 14,
-            "taskType": "topic_vocabulary",
-            "prompt": "What is the English word for “pez”?",
-            "evaluation": {
-              "type": "single_choice"
-            },
-            "options": [
-              "horse",
-              "fish",
-              "sheep"
-            ],
-            "answer": "fish"
-          },
-          {
-            "itemId": "english-pre-a1-m005-practice-ex01-i15",
-            "position": 15,
-            "taskType": "topic_vocabulary",
-            "prompt": "Find the word that means “conejo”?",
-            "evaluation": {
-              "type": "single_choice"
-            },
-            "options": [
-              "cow",
-              "lion",
-              "rabbit"
-            ],
-            "answer": "rabbit"
-          },
-          {
-            "itemId": "english-pre-a1-m005-practice-ex01-i16",
-            "position": 16,
-            "taskType": "topic_vocabulary",
-            "prompt": "Which word matches “caballo”?",
-            "evaluation": {
-              "type": "single_choice"
-            },
-            "options": [
-              "horse",
-              "duck",
-              "dog"
-            ],
-            "answer": "horse"
-          },
-          {
-            "itemId": "english-pre-a1-m005-practice-ex01-i17",
-            "position": 17,
-            "taskType": "topic_vocabulary",
-            "prompt": "Choose the translation for “vaca”?",
-            "evaluation": {
-              "type": "single_choice"
-            },
-            "options": [
-              "sheep",
-              "cow",
-              "cat"
-            ],
-            "answer": "cow"
-          },
-          {
-            "itemId": "english-pre-a1-m005-practice-ex01-i18",
-            "position": 18,
-            "taskType": "topic_vocabulary",
-            "prompt": "Select the matching word for “pato”?",
-            "evaluation": {
-              "type": "single_choice"
-            },
-            "options": [
-              "lion",
-              "bird",
-              "duck"
-            ],
-            "answer": "duck"
-          },
-          {
-            "itemId": "english-pre-a1-m005-practice-ex01-i19",
-            "position": 19,
-            "taskType": "topic_vocabulary",
-            "prompt": "What word means “oveja”?",
-            "evaluation": {
-              "type": "single_choice"
-            },
-            "options": [
-              "sheep",
-              "dog",
-              "fish"
-            ],
-            "answer": "sheep"
-          },
-          {
-            "itemId": "english-pre-a1-m005-practice-ex01-i20",
-            "position": 20,
-            "taskType": "topic_vocabulary",
-            "prompt": "Find the English word for “león”?",
-            "evaluation": {
-              "type": "single_choice"
-            },
-            "options": [
-              "cat",
-              "lion",
-              "rabbit"
-            ],
-            "answer": "lion"
+            "answer": "respuesta"
           }
         ]
       }
@@ -737,146 +762,223 @@
       "exercise": {
         "exerciseId": "english-pre-a1-m005-grammar-ex01",
         "type": "grammar",
+        "theory": {
+          "title": "Yes or no",
+          "explanation": "Yes/no expresan afirmación y negación; maybe indica posibilidad. Right/correct y wrong evalúan corrección; true/false significan verdadero/falso. Question es pregunta y answer respuesta. Again/repeat piden repetición. Understand significa entender.",
+          "tip": "Comprende todos los modelos de Explore antes de comenzar las actividades.",
+          "patterns": [
+            {
+              "label": "Bloque 1",
+              "pattern": "Yes or no",
+              "examples": [
+                "Yes."
+              ]
+            },
+            {
+              "label": "Bloque 2",
+              "pattern": "Yes/no expresan afirmación y negación; maybe indica posibilidad. Right/correct y wrong evalúan corrección; true/false significan verdadero/falso. Question es pregunta y answer respuesta. Again/repeat piden repetición. Understand significa entender.",
+              "examples": [
+                "No."
+              ]
+            },
+            {
+              "label": "Bloque 3",
+              "pattern": "Yes/no expresan afirmación y negación; maybe indica posibilidad. Right/correct y wrong evalúan corrección; true/false significan verdadero/falso. Question es pregunta y answer respuesta. Again/repeat piden repetición. Understand significa entender.",
+              "examples": [
+                "Maybe."
+              ]
+            },
+            {
+              "label": "Bloque 4",
+              "pattern": "Yes/no expresan afirmación y negación; maybe indica posibilidad. Right/correct y wrong evalúan corrección; true/false significan verdadero/falso. Question es pregunta y answer respuesta. Again/repeat piden repetición. Understand significa entender.",
+              "examples": [
+                "Okay."
+              ]
+            },
+            {
+              "label": "Bloque 5",
+              "pattern": "Yes/no expresan afirmación y negación; maybe indica posibilidad. Right/correct y wrong evalúan corrección; true/false significan verdadero/falso. Question es pregunta y answer respuesta. Again/repeat piden repetición. Understand significa entender.",
+              "examples": [
+                "Yes, that's right."
+              ]
+            },
+            {
+              "label": "Bloque 6",
+              "pattern": "Yes/no expresan afirmación y negación; maybe indica posibilidad. Right/correct y wrong evalúan corrección; true/false significan verdadero/falso. Question es pregunta y answer respuesta. Again/repeat piden repetición. Understand significa entender.",
+              "examples": [
+                "No, that's wrong."
+              ]
+            },
+            {
+              "label": "Bloque 7",
+              "pattern": "Yes/no expresan afirmación y negación; maybe indica posibilidad. Right/correct y wrong evalúan corrección; true/false significan verdadero/falso. Question es pregunta y answer respuesta. Again/repeat piden repetición. Understand significa entender.",
+              "examples": [
+                "Please repeat."
+              ]
+            },
+            {
+              "label": "Bloque 8",
+              "pattern": "Yes/no expresan afirmación y negación; maybe indica posibilidad. Right/correct y wrong evalúan corrección; true/false significan verdadero/falso. Question es pregunta y answer respuesta. Again/repeat piden repetición. Understand significa entender.",
+              "examples": [
+                "I understand."
+              ]
+            },
+            {
+              "label": "Bloque 9",
+              "pattern": "Yes/no expresan afirmación y negación; maybe indica posibilidad. Right/correct y wrong evalúan corrección; true/false significan verdadero/falso. Question es pregunta y answer respuesta. Again/repeat piden repetición. Understand significa entender.",
+              "examples": [
+                "True or false?"
+              ]
+            },
+            {
+              "label": "Bloque 10",
+              "pattern": "Yes/no expresan afirmación y negación; maybe indica posibilidad. Right/correct y wrong evalúan corrección; true/false significan verdadero/falso. Question es pregunta y answer respuesta. Again/repeat piden repetición. Understand significa entender.",
+              "examples": [
+                "Question and answer."
+              ]
+            }
+          ]
+        },
         "items": [
           {
             "itemId": "english-pre-a1-m005-grammar-ex01-i01",
             "position": 1,
-            "prompt": "Choose the correct word or phrase: The dog ___ small.",
+            "prompt": "Reconoce el modelo trabajado: Yes.",
             "evaluation": {
               "type": "single_choice"
             },
             "options": [
-              "are",
-              "am",
-              "is"
+              "No.",
+              "Yes.",
+              "Maybe."
             ],
-            "answer": "is"
+            "answer": "Yes."
           },
           {
             "itemId": "english-pre-a1-m005-grammar-ex01-i02",
             "position": 2,
-            "prompt": "Choose the correct word or phrase: The cats ___ black.",
+            "prompt": "Reconoce el modelo trabajado: No.",
             "evaluation": {
               "type": "single_choice"
             },
             "options": [
-              "are",
-              "is",
-              "am"
+              "Okay.",
+              "Maybe.",
+              "No."
             ],
-            "answer": "are"
-          },
-          {
-            "itemId": "english-pre-a1-m005-grammar-ex01-i04",
-            "position": 4,
-            "prompt": "Choose the correct word or phrase: A lion ___ big.",
-            "evaluation": {
-              "type": "single_choice"
-            },
-            "options": [
-              "are",
-              "has",
-              "is"
-            ],
-            "answer": "is"
-          },
-          {
-            "itemId": "english-pre-a1-m005-grammar-ex01-i09",
-            "position": 9,
-            "prompt": "Choose the correct word or phrase: The ducks ___ here.",
-            "evaluation": {
-              "type": "single_choice"
-            },
-            "options": [
-              "are",
-              "is",
-              "am"
-            ],
-            "answer": "are"
-          },
-          {
-            "itemId": "english-pre-a1-m005-grammar-ex01-i10",
-            "position": 10,
-            "prompt": "Choose the correct word or phrase: My horse ___ brown.",
-            "evaluation": {
-              "type": "single_choice"
-            },
-            "options": [
-              "are",
-              "be",
-              "is"
-            ],
-            "answer": "is"
+            "answer": "No."
           },
           {
             "itemId": "english-pre-a1-m005-grammar-ex01-i03",
             "position": 3,
-            "prompt": "Choose the correct word or phrase: A rabbit ___ long ears.",
+            "prompt": "Reconoce el modelo trabajado: Maybe.",
             "evaluation": {
               "type": "single_choice"
             },
             "options": [
-              "have got",
-              "has got",
-              "is"
+              "Maybe.",
+              "Okay.",
+              "Yes, that's right."
             ],
-            "answer": "has got"
+            "answer": "Maybe."
+          },
+          {
+            "itemId": "english-pre-a1-m005-grammar-ex01-i04",
+            "position": 4,
+            "prompt": "Reconoce el modelo trabajado: Okay.",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "Yes, that's right.",
+              "Okay.",
+              "No, that's wrong."
+            ],
+            "answer": "Okay."
           },
           {
             "itemId": "english-pre-a1-m005-grammar-ex01-i05",
             "position": 5,
-            "prompt": "Choose the correct word or phrase: The bird is ___ the tree.",
+            "prompt": "Reconoce el modelo trabajado: Yes, that's right.",
             "evaluation": {
               "type": "single_choice"
             },
             "options": [
-              "on",
-              "in",
-              "under"
+              "Please repeat.",
+              "No, that's wrong.",
+              "Yes, that's right."
             ],
-            "answer": "in"
-          },
-          {
-            "itemId": "english-pre-a1-m005-grammar-ex01-i07",
-            "position": 7,
-            "prompt": "Choose the correct word or phrase: The cow is ___ the farm.",
-            "evaluation": {
-              "type": "single_choice"
-            },
-            "options": [
-              "in",
-              "at",
-              "on"
-            ],
-            "answer": "on"
-          },
-          {
-            "itemId": "english-pre-a1-m005-grammar-ex01-i08",
-            "position": 8,
-            "prompt": "Choose the correct word or phrase: A fish ___ swim.",
-            "evaluation": {
-              "type": "single_choice"
-            },
-            "options": [
-              "is",
-              "can",
-              "has"
-            ],
-            "answer": "can"
+            "answer": "Yes, that's right."
           },
           {
             "itemId": "english-pre-a1-m005-grammar-ex01-i06",
             "position": 6,
-            "prompt": "Choose the correct word or phrase: I ___ animals.",
+            "prompt": "Reconoce el modelo trabajado: No, that's wrong.",
             "evaluation": {
               "type": "single_choice"
             },
             "options": [
-              "like",
-              "likes",
-              "liking"
+              "No, that's wrong.",
+              "Please repeat.",
+              "I understand."
             ],
-            "answer": "like"
+            "answer": "No, that's wrong."
+          },
+          {
+            "itemId": "english-pre-a1-m005-grammar-ex01-i07",
+            "position": 7,
+            "prompt": "Reconoce el modelo trabajado: Please repeat.",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "I understand.",
+              "Please repeat.",
+              "True or false?"
+            ],
+            "answer": "Please repeat."
+          },
+          {
+            "itemId": "english-pre-a1-m005-grammar-ex01-i08",
+            "position": 8,
+            "prompt": "Reconoce el modelo trabajado: I understand.",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "Question and answer.",
+              "True or false?",
+              "I understand."
+            ],
+            "answer": "I understand."
+          },
+          {
+            "itemId": "english-pre-a1-m005-grammar-ex01-i09",
+            "position": 9,
+            "prompt": "Reconoce el modelo trabajado: True or false?",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "True or false?",
+              "Question and answer.",
+              "Yes."
+            ],
+            "answer": "True or false?"
+          },
+          {
+            "itemId": "english-pre-a1-m005-grammar-ex01-i10",
+            "position": 10,
+            "prompt": "Reconoce el modelo trabajado: Question and answer.",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "Yes.",
+              "Question and answer.",
+              "No."
+            ],
+            "answer": "Question and answer."
           }
         ]
       }
@@ -892,82 +994,152 @@
           {
             "itemId": "english-pre-a1-m005-pronunciation-ex01-i01",
             "position": 1,
-            "word": "dog",
-            "translation": "perro",
-            "pronunciationGuide": "dog",
-            "audio": "tts:en-GB:dog"
+            "word": "yes",
+            "translation": "sí",
+            "pronunciationGuide": "iés",
+            "audio": "tts:en-GB:yes",
+            "audioStatus": "synthetic_pending_review",
+            "guideType": "approximate_spanish"
           },
           {
             "itemId": "english-pre-a1-m005-pronunciation-ex01-i02",
             "position": 2,
-            "word": "cat",
-            "translation": "gato",
-            "pronunciationGuide": "kat",
-            "audio": "tts:en-GB:cat"
+            "word": "no",
+            "translation": "no",
+            "pronunciationGuide": "nóu",
+            "audio": "tts:en-GB:no",
+            "audioStatus": "synthetic_pending_review",
+            "guideType": "approximate_spanish"
           },
           {
             "itemId": "english-pre-a1-m005-pronunciation-ex01-i03",
             "position": 3,
-            "word": "bird",
-            "translation": "pájaro",
-            "pronunciationGuide": "berd",
-            "audio": "tts:en-GB:bird"
+            "word": "maybe",
+            "translation": "quizás",
+            "pronunciationGuide": "MÉI-bi",
+            "audio": "tts:en-GB:maybe",
+            "audioStatus": "synthetic_pending_review",
+            "guideType": "approximate_spanish"
           },
           {
             "itemId": "english-pre-a1-m005-pronunciation-ex01-i04",
             "position": 4,
-            "word": "fish",
-            "translation": "pez",
-            "pronunciationGuide": "fish",
-            "audio": "tts:en-GB:fish"
+            "word": "right",
+            "translation": "correcto",
+            "pronunciationGuide": "ráit",
+            "audio": "tts:en-GB:right",
+            "audioStatus": "synthetic_pending_review",
+            "guideType": "approximate_spanish"
           },
           {
             "itemId": "english-pre-a1-m005-pronunciation-ex01-i05",
             "position": 5,
-            "word": "rabbit",
-            "translation": "conejo",
-            "pronunciationGuide": "rá-bit",
-            "audio": "tts:en-GB:rabbit"
+            "word": "wrong",
+            "translation": "incorrecto",
+            "pronunciationGuide": "róng",
+            "audio": "tts:en-GB:wrong",
+            "audioStatus": "synthetic_pending_review",
+            "guideType": "approximate_spanish"
           },
           {
             "itemId": "english-pre-a1-m005-pronunciation-ex01-i06",
             "position": 6,
-            "word": "horse",
-            "translation": "caballo",
-            "pronunciationGuide": "hors",
-            "audio": "tts:en-GB:horse"
+            "word": "correct",
+            "translation": "correcto",
+            "pronunciationGuide": "ka-RÉKT",
+            "audio": "tts:en-GB:correct",
+            "audioStatus": "synthetic_pending_review",
+            "guideType": "approximate_spanish"
           },
           {
             "itemId": "english-pre-a1-m005-pronunciation-ex01-i07",
             "position": 7,
-            "word": "cow",
-            "translation": "vaca",
-            "pronunciationGuide": "káu",
-            "audio": "tts:en-GB:cow"
+            "word": "true",
+            "translation": "verdadero",
+            "pronunciationGuide": "trú",
+            "audio": "tts:en-GB:true",
+            "audioStatus": "synthetic_pending_review",
+            "guideType": "approximate_spanish"
           },
           {
             "itemId": "english-pre-a1-m005-pronunciation-ex01-i08",
             "position": 8,
-            "word": "duck",
-            "translation": "pato",
-            "pronunciationGuide": "dak",
-            "audio": "tts:en-GB:duck"
+            "word": "false",
+            "translation": "falso",
+            "pronunciationGuide": "fóls",
+            "audio": "tts:en-GB:false",
+            "audioStatus": "synthetic_pending_review",
+            "guideType": "approximate_spanish"
           },
           {
             "itemId": "english-pre-a1-m005-pronunciation-ex01-i09",
             "position": 9,
-            "word": "sheep",
-            "translation": "oveja",
-            "pronunciationGuide": "shíip",
-            "audio": "tts:en-GB:sheep"
+            "word": "question",
+            "translation": "pregunta",
+            "pronunciationGuide": "KUÉS-chan",
+            "audio": "tts:en-GB:question",
+            "audioStatus": "synthetic_pending_review",
+            "guideType": "approximate_spanish"
           },
           {
             "itemId": "english-pre-a1-m005-pronunciation-ex01-i10",
             "position": 10,
-            "word": "lion",
-            "translation": "león",
-            "pronunciationGuide": "lái-an",
-            "audio": "tts:en-GB:lion"
+            "word": "answer",
+            "translation": "respuesta",
+            "pronunciationGuide": "ÁN-ser",
+            "audio": "tts:en-GB:answer",
+            "audioStatus": "synthetic_pending_review",
+            "guideType": "approximate_spanish"
+          },
+          {
+            "itemId": "english-pre-a1-m005-pronunciation-ex01-i11",
+            "position": 11,
+            "word": "okay",
+            "translation": "de acuerdo",
+            "pronunciationGuide": "óu-KÉI",
+            "audio": "tts:en-GB:okay",
+            "audioStatus": "synthetic_pending_review",
+            "guideType": "approximate_spanish"
+          },
+          {
+            "itemId": "english-pre-a1-m005-pronunciation-ex01-i12",
+            "position": 12,
+            "word": "sure",
+            "translation": "claro",
+            "pronunciationGuide": "shúr",
+            "audio": "tts:en-GB:sure",
+            "audioStatus": "synthetic_pending_review",
+            "guideType": "approximate_spanish"
+          },
+          {
+            "itemId": "english-pre-a1-m005-pronunciation-ex01-i13",
+            "position": 13,
+            "word": "again",
+            "translation": "otra vez",
+            "pronunciationGuide": "a-GUÉN",
+            "audio": "tts:en-GB:again",
+            "audioStatus": "synthetic_pending_review",
+            "guideType": "approximate_spanish"
+          },
+          {
+            "itemId": "english-pre-a1-m005-pronunciation-ex01-i14",
+            "position": 14,
+            "word": "repeat",
+            "translation": "repetir",
+            "pronunciationGuide": "ri-PÍT",
+            "audio": "tts:en-GB:repeat",
+            "audioStatus": "synthetic_pending_review",
+            "guideType": "approximate_spanish"
+          },
+          {
+            "itemId": "english-pre-a1-m005-pronunciation-ex01-i15",
+            "position": 15,
+            "word": "understand",
+            "translation": "entender",
+            "pronunciationGuide": "an-der-STÁND",
+            "audio": "tts:en-GB:understand",
+            "audioStatus": "synthetic_pending_review",
+            "guideType": "approximate_spanish"
           }
         ]
       }
@@ -981,148 +1153,226 @@
         "type": "reading_comprehension",
         "content": {
           "passageId": "english-pre-a1-m005-reading-passage-01",
-          "passage": "I have got a small dog called Max. My friend has got a black cat. We see a bird in a tree and a fish in a pond. At the farm there is a cow, a horse, a duck and a sheep. A rabbit has got long ears. A lion is big."
+          "passage": "Yes. No. Maybe. Okay. Right or wrong? True or false? Please repeat. I understand.",
+          "translation": "Traducción del texto: Yes. No. Maybe. Okay. Right or wrong? True or false? Please repeat. I understand.",
+          "vocabulary": [
+            {
+              "word": "yes",
+              "translation": "sí",
+              "pronunciationGuide": "iés"
+            },
+            {
+              "word": "no",
+              "translation": "no",
+              "pronunciationGuide": "nóu"
+            },
+            {
+              "word": "maybe",
+              "translation": "quizás",
+              "pronunciationGuide": "MÉI-bi"
+            },
+            {
+              "word": "right",
+              "translation": "correcto",
+              "pronunciationGuide": "ráit"
+            },
+            {
+              "word": "wrong",
+              "translation": "incorrecto",
+              "pronunciationGuide": "róng"
+            },
+            {
+              "word": "correct",
+              "translation": "correcto",
+              "pronunciationGuide": "ka-RÉKT"
+            },
+            {
+              "word": "true",
+              "translation": "verdadero",
+              "pronunciationGuide": "trú"
+            },
+            {
+              "word": "false",
+              "translation": "falso",
+              "pronunciationGuide": "fóls"
+            },
+            {
+              "word": "question",
+              "translation": "pregunta",
+              "pronunciationGuide": "KUÉS-chan"
+            },
+            {
+              "word": "answer",
+              "translation": "respuesta",
+              "pronunciationGuide": "ÁN-ser"
+            },
+            {
+              "word": "okay",
+              "translation": "de acuerdo",
+              "pronunciationGuide": "óu-KÉI"
+            },
+            {
+              "word": "sure",
+              "translation": "claro",
+              "pronunciationGuide": "shúr"
+            },
+            {
+              "word": "again",
+              "translation": "otra vez",
+              "pronunciationGuide": "a-GUÉN"
+            },
+            {
+              "word": "repeat",
+              "translation": "repetir",
+              "pronunciationGuide": "ri-PÍT"
+            },
+            {
+              "word": "understand",
+              "translation": "entender",
+              "pronunciationGuide": "an-der-STÁND"
+            }
+          ]
         },
         "items": [
           {
             "itemId": "english-pre-a1-m005-reading-ex01-i01",
             "position": 1,
-            "prompt": "What is the dog's name?",
+            "prompt": "¿Qué tema presenta el texto?",
             "evaluation": {
               "type": "single_choice"
             },
             "options": [
-              "Ben",
-              "Tom",
-              "Max"
+              "sí",
+              "Yes or no",
+              "no"
             ],
-            "answer": "Max"
+            "answer": "Yes or no"
           },
           {
             "itemId": "english-pre-a1-m005-reading-ex01-i02",
             "position": 2,
-            "prompt": "Is the dog big?",
+            "prompt": "¿Qué significa “no” en el texto?",
             "evaluation": {
               "type": "single_choice"
             },
             "options": [
-              "Yes, it is big",
-              "No, it is small",
-              "It does not say"
+              "correcto",
+              "quizás",
+              "no"
             ],
-            "answer": "No, it is small"
+            "answer": "no"
           },
           {
             "itemId": "english-pre-a1-m005-reading-ex01-i03",
             "position": 3,
-            "prompt": "What colour is the cat?",
+            "prompt": "¿Qué significa “maybe” en el texto?",
             "evaluation": {
               "type": "single_choice"
             },
             "options": [
-              "Black",
-              "White",
-              "Brown"
+              "quizás",
+              "correcto",
+              "incorrecto"
             ],
-            "answer": "Black"
+            "answer": "quizás"
           },
           {
             "itemId": "english-pre-a1-m005-reading-ex01-i04",
             "position": 4,
-            "prompt": "Where is the bird?",
+            "prompt": "¿Qué significa “right” en el texto?",
             "evaluation": {
               "type": "single_choice"
             },
             "options": [
-              "In the pond",
-              "At school",
-              "In the tree"
+              "incorrecto",
+              "correcto",
+              "otra respuesta"
             ],
-            "answer": "In the tree"
+            "answer": "correcto"
           },
           {
             "itemId": "english-pre-a1-m005-reading-ex01-i05",
             "position": 5,
-            "prompt": "Where is the fish?",
+            "prompt": "¿Qué significa “wrong” en el texto?",
             "evaluation": {
               "type": "single_choice"
             },
             "options": [
-              "In the pond",
-              "In the tree",
-              "On the farm"
+              "verdadero",
+              "correcto",
+              "incorrecto"
             ],
-            "answer": "In the pond"
+            "answer": "incorrecto"
           },
           {
             "itemId": "english-pre-a1-m005-reading-ex01-i06",
             "position": 6,
-            "prompt": "Which animal is at the farm?",
+            "prompt": "¿Qué significa “correct” en el texto?",
             "evaluation": {
               "type": "single_choice"
             },
             "options": [
-              "A tiger",
-              "A cow",
-              "A monkey"
+              "correcto",
+              "verdadero",
+              "falso"
             ],
-            "answer": "A cow"
+            "answer": "correcto"
           },
           {
             "itemId": "english-pre-a1-m005-reading-ex01-i07",
             "position": 7,
-            "prompt": "Which animal has long ears?",
+            "prompt": "¿Qué significa “true” en el texto?",
             "evaluation": {
               "type": "single_choice"
             },
             "options": [
-              "A rabbit",
-              "A lion",
-              "A duck"
+              "falso",
+              "verdadero",
+              "pregunta"
             ],
-            "answer": "A rabbit"
+            "answer": "verdadero"
           },
           {
             "itemId": "english-pre-a1-m005-reading-ex01-i08",
             "position": 8,
-            "prompt": "Is the lion small?",
+            "prompt": "¿Qué significa “false” en el texto?",
             "evaluation": {
               "type": "single_choice"
             },
             "options": [
-              "Yes, it is small",
-              "It is not an animal",
-              "No, it is big"
+              "respuesta",
+              "pregunta",
+              "falso"
             ],
-            "answer": "No, it is big"
+            "answer": "falso"
           },
           {
             "itemId": "english-pre-a1-m005-reading-ex01-i09",
             "position": 9,
-            "prompt": "Name one farm animal.",
+            "prompt": "¿Qué significa “question” en el texto?",
             "evaluation": {
               "type": "single_choice"
             },
             "options": [
-              "A shark",
-              "A sheep",
-              "A whale"
+              "pregunta",
+              "respuesta",
+              "de acuerdo"
             ],
-            "answer": "A sheep"
+            "answer": "pregunta"
           },
           {
             "itemId": "english-pre-a1-m005-reading-ex01-i10",
             "position": 10,
-            "prompt": "What does the writer like?",
+            "prompt": "¿Qué significa “answer” en el texto?",
             "evaluation": {
               "type": "single_choice"
             },
             "options": [
-              "Cars",
-              "Animals",
-              "Books"
+              "de acuerdo",
+              "respuesta",
+              "claro"
             ],
-            "answer": "Animals"
+            "answer": "respuesta"
           }
         ]
       }
@@ -1138,180 +1388,190 @@
           {
             "itemId": "english-pre-a1-m005-writing-ex01-i01",
             "position": 1,
-            "audio": "tts:en-GB:The dog is small.",
+            "audio": "tts:en-GB:Yes.",
+            "audioLocale": "en-GB",
+            "audioStatus": "synthetic_pending_review",
+            "kind": "sentence",
+            "repeatCount": 3,
+            "expectedAnswer": "Yes.",
             "evaluation": {
               "type": "normalised_text"
             },
-            "audioLocale": "en-GB",
-            "kind": "sentence",
-            "repeatCount": 3,
-            "expectedAnswer": "The dog is small.",
             "segments": [
               {
                 "segmentId": "english-pre-a1-m005-writing-segment-01",
-                "text": "The dog is small."
+                "text": "Yes."
               }
             ]
           },
           {
             "itemId": "english-pre-a1-m005-writing-ex01-i02",
             "position": 2,
-            "audio": "tts:en-GB:My cat is black.",
+            "audio": "tts:en-GB:No.",
+            "audioLocale": "en-GB",
+            "audioStatus": "synthetic_pending_review",
+            "kind": "sentence",
+            "repeatCount": 3,
+            "expectedAnswer": "No.",
             "evaluation": {
               "type": "normalised_text"
             },
-            "audioLocale": "en-GB",
-            "kind": "sentence",
-            "repeatCount": 3,
-            "expectedAnswer": "My cat is black.",
             "segments": [
               {
                 "segmentId": "english-pre-a1-m005-writing-segment-02",
-                "text": "My cat is black."
+                "text": "No."
               }
             ]
           },
           {
             "itemId": "english-pre-a1-m005-writing-ex01-i03",
             "position": 3,
-            "audio": "tts:en-GB:A bird is in the tree.",
+            "audio": "tts:en-GB:Maybe.",
+            "audioLocale": "en-GB",
+            "audioStatus": "synthetic_pending_review",
+            "kind": "sentence",
+            "repeatCount": 3,
+            "expectedAnswer": "Maybe.",
             "evaluation": {
               "type": "normalised_text"
             },
-            "audioLocale": "en-GB",
-            "kind": "sentence",
-            "repeatCount": 3,
-            "expectedAnswer": "A bird is in the tree.",
             "segments": [
               {
                 "segmentId": "english-pre-a1-m005-writing-segment-03",
-                "text": "A bird is in the tree."
+                "text": "Maybe."
               }
             ]
           },
           {
             "itemId": "english-pre-a1-m005-writing-ex01-i04",
             "position": 4,
-            "audio": "tts:en-GB:The fish is in the pond.",
+            "audio": "tts:en-GB:Okay.",
+            "audioLocale": "en-GB",
+            "audioStatus": "synthetic_pending_review",
+            "kind": "sentence",
+            "repeatCount": 3,
+            "expectedAnswer": "Okay.",
             "evaluation": {
               "type": "normalised_text"
             },
-            "audioLocale": "en-GB",
-            "kind": "sentence",
-            "repeatCount": 3,
-            "expectedAnswer": "The fish is in the pond.",
             "segments": [
               {
                 "segmentId": "english-pre-a1-m005-writing-segment-04",
-                "text": "The fish is in the pond."
+                "text": "Okay."
               }
             ]
           },
           {
             "itemId": "english-pre-a1-m005-writing-ex01-i05",
             "position": 5,
-            "audio": "tts:en-GB:The rabbit has long ears.",
+            "audio": "tts:en-GB:Yes, that's right.",
+            "audioLocale": "en-GB",
+            "audioStatus": "synthetic_pending_review",
+            "kind": "sentence",
+            "repeatCount": 3,
+            "expectedAnswer": "Yes, that's right.",
             "evaluation": {
               "type": "normalised_text"
             },
-            "audioLocale": "en-GB",
-            "kind": "sentence",
-            "repeatCount": 3,
-            "expectedAnswer": "The rabbit has long ears.",
             "segments": [
               {
                 "segmentId": "english-pre-a1-m005-writing-segment-05",
-                "text": "The rabbit has long ears."
+                "text": "Yes, that's right."
               }
             ]
           },
           {
             "itemId": "english-pre-a1-m005-writing-ex01-i06",
             "position": 6,
-            "audio": "tts:en-GB:The horse is on the farm.",
+            "audio": "tts:en-GB:No, that's wrong.",
+            "audioLocale": "en-GB",
+            "audioStatus": "synthetic_pending_review",
+            "kind": "sentence",
+            "repeatCount": 3,
+            "expectedAnswer": "No, that's wrong.",
             "evaluation": {
               "type": "normalised_text"
             },
-            "audioLocale": "en-GB",
-            "kind": "sentence",
-            "repeatCount": 3,
-            "expectedAnswer": "The horse is on the farm.",
             "segments": [
               {
                 "segmentId": "english-pre-a1-m005-writing-segment-06",
-                "text": "The horse is on the farm."
+                "text": "No, that's wrong."
               }
             ]
           },
           {
             "itemId": "english-pre-a1-m005-writing-ex01-i07",
             "position": 7,
-            "audio": "tts:en-GB:The cow is big.",
+            "audio": "tts:en-GB:Please repeat.",
+            "audioLocale": "en-GB",
+            "audioStatus": "synthetic_pending_review",
+            "kind": "sentence",
+            "repeatCount": 3,
+            "expectedAnswer": "Please repeat.",
             "evaluation": {
               "type": "normalised_text"
             },
-            "audioLocale": "en-GB",
-            "kind": "sentence",
-            "repeatCount": 3,
-            "expectedAnswer": "The cow is big.",
             "segments": [
               {
                 "segmentId": "english-pre-a1-m005-writing-segment-07",
-                "text": "The cow is big."
+                "text": "Please repeat."
               }
             ]
           },
           {
             "itemId": "english-pre-a1-m005-writing-ex01-i08",
             "position": 8,
-            "audio": "tts:en-GB:The duck can swim.",
+            "audio": "tts:en-GB:I understand.",
+            "audioLocale": "en-GB",
+            "audioStatus": "synthetic_pending_review",
+            "kind": "sentence",
+            "repeatCount": 3,
+            "expectedAnswer": "I understand.",
             "evaluation": {
               "type": "normalised_text"
             },
-            "audioLocale": "en-GB",
-            "kind": "sentence",
-            "repeatCount": 3,
-            "expectedAnswer": "The duck can swim.",
             "segments": [
               {
                 "segmentId": "english-pre-a1-m005-writing-segment-08",
-                "text": "The duck can swim."
+                "text": "I understand."
               }
             ]
           },
           {
             "itemId": "english-pre-a1-m005-writing-ex01-i09",
             "position": 9,
-            "audio": "tts:en-GB:The sheep is white.",
+            "audio": "tts:en-GB:True or false?",
+            "audioLocale": "en-GB",
+            "audioStatus": "synthetic_pending_review",
+            "kind": "sentence",
+            "repeatCount": 3,
+            "expectedAnswer": "True or false?",
             "evaluation": {
               "type": "normalised_text"
             },
-            "audioLocale": "en-GB",
-            "kind": "sentence",
-            "repeatCount": 3,
-            "expectedAnswer": "The sheep is white.",
             "segments": [
               {
                 "segmentId": "english-pre-a1-m005-writing-segment-09",
-                "text": "The sheep is white."
+                "text": "True or false?"
               }
             ]
           },
           {
             "itemId": "english-pre-a1-m005-writing-ex01-i10",
             "position": 10,
-            "audio": "tts:en-GB:The lion is big.",
+            "audio": "tts:en-GB:Question and answer.",
+            "audioLocale": "en-GB",
+            "audioStatus": "synthetic_pending_review",
+            "kind": "sentence",
+            "repeatCount": 3,
+            "expectedAnswer": "Question and answer.",
             "evaluation": {
               "type": "normalised_text"
             },
-            "audioLocale": "en-GB",
-            "kind": "sentence",
-            "repeatCount": 3,
-            "expectedAnswer": "The lion is big.",
             "segments": [
               {
                 "segmentId": "english-pre-a1-m005-writing-segment-10",
-                "text": "The lion is big."
+                "text": "Question and answer."
               }
             ]
           }
@@ -1329,8 +1589,10 @@
           {
             "itemId": "english-pre-a1-m005-speaking-ex01-i01",
             "position": 1,
-            "prompt": "Say a short sentence using “dog”.",
-            "modelAnswer": "I can see a dog.",
+            "prompt": "Di en voz alta esta expresión.",
+            "promptSpanish": "Practica el modelo de la misión.",
+            "modelAnswer": "Yes.",
+            "translation": "Yes.",
             "evaluation": {
               "type": "transcription_feedback",
               "transcriptionSeparateFromPronunciation": true
@@ -1339,8 +1601,10 @@
           {
             "itemId": "english-pre-a1-m005-speaking-ex01-i02",
             "position": 2,
-            "prompt": "Say a short sentence using “cat”.",
-            "modelAnswer": "I can see a cat.",
+            "prompt": "Di en voz alta esta expresión.",
+            "promptSpanish": "Practica el modelo de la misión.",
+            "modelAnswer": "No.",
+            "translation": "No.",
             "evaluation": {
               "type": "transcription_feedback",
               "transcriptionSeparateFromPronunciation": true
@@ -1349,8 +1613,10 @@
           {
             "itemId": "english-pre-a1-m005-speaking-ex01-i03",
             "position": 3,
-            "prompt": "Say a short sentence using “bird”.",
-            "modelAnswer": "A bird can fly.",
+            "prompt": "Di en voz alta esta expresión.",
+            "promptSpanish": "Practica el modelo de la misión.",
+            "modelAnswer": "Maybe.",
+            "translation": "Maybe.",
             "evaluation": {
               "type": "transcription_feedback",
               "transcriptionSeparateFromPronunciation": true
@@ -1359,8 +1625,10 @@
           {
             "itemId": "english-pre-a1-m005-speaking-ex01-i04",
             "position": 4,
-            "prompt": "Say a short sentence using “fish”.",
-            "modelAnswer": "A fish can swim.",
+            "prompt": "Di en voz alta esta expresión.",
+            "promptSpanish": "Practica el modelo de la misión.",
+            "modelAnswer": "Okay.",
+            "translation": "Okay.",
             "evaluation": {
               "type": "transcription_feedback",
               "transcriptionSeparateFromPronunciation": true
@@ -1369,8 +1637,10 @@
           {
             "itemId": "english-pre-a1-m005-speaking-ex01-i05",
             "position": 5,
-            "prompt": "Say a short sentence using “rabbit”.",
-            "modelAnswer": "A rabbit has long ears.",
+            "prompt": "Di en voz alta esta expresión.",
+            "promptSpanish": "Practica el modelo de la misión.",
+            "modelAnswer": "Yes, that's right.",
+            "translation": "Yes, that's right.",
             "evaluation": {
               "type": "transcription_feedback",
               "transcriptionSeparateFromPronunciation": true
@@ -1379,8 +1649,10 @@
           {
             "itemId": "english-pre-a1-m005-speaking-ex01-i06",
             "position": 6,
-            "prompt": "Say a short sentence using “horse”.",
-            "modelAnswer": "A horse lives on a farm.",
+            "prompt": "Di en voz alta esta expresión.",
+            "promptSpanish": "Practica el modelo de la misión.",
+            "modelAnswer": "No, that's wrong.",
+            "translation": "No, that's wrong.",
             "evaluation": {
               "type": "transcription_feedback",
               "transcriptionSeparateFromPronunciation": true
@@ -1389,8 +1661,10 @@
           {
             "itemId": "english-pre-a1-m005-speaking-ex01-i07",
             "position": 7,
-            "prompt": "Say a short sentence using “cow”.",
-            "modelAnswer": "A cow gives us milk.",
+            "prompt": "Di en voz alta esta expresión.",
+            "promptSpanish": "Practica el modelo de la misión.",
+            "modelAnswer": "Please repeat.",
+            "translation": "Please repeat.",
             "evaluation": {
               "type": "transcription_feedback",
               "transcriptionSeparateFromPronunciation": true
@@ -1399,8 +1673,10 @@
           {
             "itemId": "english-pre-a1-m005-speaking-ex01-i08",
             "position": 8,
-            "prompt": "Say a short sentence using “duck”.",
-            "modelAnswer": "A duck can swim.",
+            "prompt": "Di en voz alta esta expresión.",
+            "promptSpanish": "Practica el modelo de la misión.",
+            "modelAnswer": "I understand.",
+            "translation": "I understand.",
             "evaluation": {
               "type": "transcription_feedback",
               "transcriptionSeparateFromPronunciation": true
@@ -1409,8 +1685,10 @@
           {
             "itemId": "english-pre-a1-m005-speaking-ex01-i09",
             "position": 9,
-            "prompt": "Say a short sentence using “sheep”.",
-            "modelAnswer": "A sheep has wool.",
+            "prompt": "Di en voz alta esta expresión.",
+            "promptSpanish": "Practica el modelo de la misión.",
+            "modelAnswer": "True or false?",
+            "translation": "True or false?",
             "evaluation": {
               "type": "transcription_feedback",
               "transcriptionSeparateFromPronunciation": true
@@ -1419,8 +1697,10 @@
           {
             "itemId": "english-pre-a1-m005-speaking-ex01-i10",
             "position": 10,
-            "prompt": "Say a short sentence using “lion”.",
-            "modelAnswer": "A lion is a wild animal.",
+            "prompt": "Di en voz alta esta expresión.",
+            "promptSpanish": "Practica el modelo de la misión.",
+            "modelAnswer": "Question and answer.",
+            "translation": "Question and answer.",
             "evaluation": {
               "type": "transcription_feedback",
               "transcriptionSeparateFromPronunciation": true
@@ -1437,53 +1717,55 @@
         "exerciseId": "english-pre-a1-m005-listening-ex01",
         "type": "listening_gap_fill",
         "content": {
-          "audio": "tts:en-GB:The dog is called Max. My friend has got a cat. A bird is in the tree. A fish swims in the pond. The rabbit has long ears. A horse lives on the farm. The cow gives us milk. A duck can swim on the pond. A sheep has wool. The lion is a big wild animal.",
+          "audio": "tts:en-GB:Yes. No. Maybe. Okay. Yes, that's right. No, that's wrong. Please repeat. I understand. True or false? Question and answer.",
           "audioLocale": "en-GB",
-          "transcriptTemplate": "The [[gap-01]] is called Max. My friend has got a [[gap-02]]. A [[gap-03]] is in the tree. A [[gap-04]] swims in the pond. The [[gap-05]] has long ears. A [[gap-06]] lives on the farm. The [[gap-07]] gives us milk. A [[gap-08]] can swim on the pond. A [[gap-09]] has wool. The [[gap-10]] is a big wild animal.",
+          "audioStatus": "synthetic_pending_review",
+          "transcriptTemplate": "[[gap-01]] [[gap-02]] [[gap-03]] [[gap-04]] [[gap-05]] [[gap-06]] [[gap-07]] [[gap-08]] [[gap-09]] [[gap-10]]",
           "wordBank": [
             {
               "wordId": "english-pre-a1-m005-listening-word-01",
-              "word": "dog"
+              "word": "yes"
             },
             {
               "wordId": "english-pre-a1-m005-listening-word-02",
-              "word": "cat"
+              "word": "no"
             },
             {
               "wordId": "english-pre-a1-m005-listening-word-03",
-              "word": "bird"
+              "word": "maybe"
             },
             {
               "wordId": "english-pre-a1-m005-listening-word-04",
-              "word": "fish"
+              "word": "right"
             },
             {
               "wordId": "english-pre-a1-m005-listening-word-05",
-              "word": "rabbit"
+              "word": "wrong"
             },
             {
               "wordId": "english-pre-a1-m005-listening-word-06",
-              "word": "horse"
+              "word": "correct"
             },
             {
               "wordId": "english-pre-a1-m005-listening-word-07",
-              "word": "cow"
+              "word": "true"
             },
             {
               "wordId": "english-pre-a1-m005-listening-word-08",
-              "word": "duck"
+              "word": "false"
             },
             {
               "wordId": "english-pre-a1-m005-listening-word-09",
-              "word": "sheep"
+              "word": "question"
             },
             {
               "wordId": "english-pre-a1-m005-listening-word-10",
-              "word": "lion"
+              "word": "answer"
             }
           ],
           "interaction": "select_place_move_replace",
-          "audioTranscript": "tts:en-GB:The dog is called Max. My friend has got a cat. A bird is in the tree. A fish swims in the pond. The rabbit has long ears. A horse lives on the farm. The cow gives us milk. A duck can swim on the pond. A sheep has wool. The lion is a big wild animal."
+          "audioTranscript": "tts:en-GB:Yes. No. Maybe. Okay. Yes, that's right. No, that's wrong. Please repeat. I understand. True or false? Question and answer.",
+          "translation": "Escucha y reconoce las expresiones enseñadas."
         },
         "items": [
           {
@@ -1491,70 +1773,70 @@
             "position": 1,
             "gapToken": "[[gap-01]]",
             "expectedWordId": "english-pre-a1-m005-listening-word-01",
-            "answer": "dog"
+            "answer": "yes"
           },
           {
             "itemId": "english-pre-a1-m005-listening-ex01-i02",
             "position": 2,
             "gapToken": "[[gap-02]]",
             "expectedWordId": "english-pre-a1-m005-listening-word-02",
-            "answer": "cat"
+            "answer": "no"
           },
           {
             "itemId": "english-pre-a1-m005-listening-ex01-i03",
             "position": 3,
             "gapToken": "[[gap-03]]",
             "expectedWordId": "english-pre-a1-m005-listening-word-03",
-            "answer": "bird"
+            "answer": "maybe"
           },
           {
             "itemId": "english-pre-a1-m005-listening-ex01-i04",
             "position": 4,
             "gapToken": "[[gap-04]]",
             "expectedWordId": "english-pre-a1-m005-listening-word-04",
-            "answer": "fish"
+            "answer": "right"
           },
           {
             "itemId": "english-pre-a1-m005-listening-ex01-i05",
             "position": 5,
             "gapToken": "[[gap-05]]",
             "expectedWordId": "english-pre-a1-m005-listening-word-05",
-            "answer": "rabbit"
+            "answer": "wrong"
           },
           {
             "itemId": "english-pre-a1-m005-listening-ex01-i06",
             "position": 6,
             "gapToken": "[[gap-06]]",
             "expectedWordId": "english-pre-a1-m005-listening-word-06",
-            "answer": "horse"
+            "answer": "correct"
           },
           {
             "itemId": "english-pre-a1-m005-listening-ex01-i07",
             "position": 7,
             "gapToken": "[[gap-07]]",
             "expectedWordId": "english-pre-a1-m005-listening-word-07",
-            "answer": "cow"
+            "answer": "true"
           },
           {
             "itemId": "english-pre-a1-m005-listening-ex01-i08",
             "position": 8,
             "gapToken": "[[gap-08]]",
             "expectedWordId": "english-pre-a1-m005-listening-word-08",
-            "answer": "duck"
+            "answer": "false"
           },
           {
             "itemId": "english-pre-a1-m005-listening-ex01-i09",
             "position": 9,
             "gapToken": "[[gap-09]]",
             "expectedWordId": "english-pre-a1-m005-listening-word-09",
-            "answer": "sheep"
+            "answer": "question"
           },
           {
             "itemId": "english-pre-a1-m005-listening-ex01-i10",
             "position": 10,
             "gapToken": "[[gap-10]]",
             "expectedWordId": "english-pre-a1-m005-listening-word-10",
-            "answer": "lion"
+            "answer": "answer"
           }
         ]
       }

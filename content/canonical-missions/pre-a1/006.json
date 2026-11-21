@@ -1,9 +1,9 @@
 {
-  "schemaVersion": "1.2.0",
-  "contentVersion": 2,
+  "schemaVersion": 1,
+  "contentVersion": "2026-11-21-curriculum-alignment-v1",
   "course": {
     "courseId": "english-pre-a1",
-    "level": "PRE-A1",
+    "level": "Pre-A1",
     "language": "en-GB"
   },
   "unit": {
@@ -16,7 +16,7 @@
     "missionId": "english-pre-a1-m006",
     "unitId": "english-pre-a1-unit-01",
     "position": 6,
-    "title": "Food and Drinks"
+    "title": "English alphabet"
   },
   "sections": [
     {
@@ -26,406 +26,678 @@
       "exercise": {
         "exerciseId": "english-pre-a1-m006-explore-ex01",
         "type": "vocabulary_pairs",
-        "theory": {
-          "title": "Comida y bebida: artículos, gustos y acciones",
-          "explanation": "Primero aprende cuándo usar a o an delante de un alimento en singular. Después forma frases con like/likes, aprende la negativa do not y practica verbos de comida y bebida.",
-          "tip": "He/She usa likes; I/You/We/They usan like. Para negar con I usamos do not like.",
-          "patterns": [
-            {
-              "label": "1. Artículos a / an",
-              "pattern": "a + consonant sound · an + vowel sound",
-              "examples": [
-                "a banana — un plátano",
-                "an apple — una manzana",
-                "an orange — una naranja"
-              ]
-            },
-            {
-              "label": "2. Gustos en afirmativa",
-              "pattern": "I/You/We/They like · He/She likes",
-              "examples": [
-                "I like bread. — Me gusta el pan.",
-                "We like rice. — Nos gusta el arroz.",
-                "She likes cheese. — A ella le gusta el queso."
-              ]
-            },
-            {
-              "label": "3. Gustos en negativa",
-              "pattern": "I/You/We/They do not like",
-              "examples": [
-                "I do not like milk. — No me gusta la leche."
-              ]
-            },
-            {
-              "label": "4. Acciones con alimentos",
-              "pattern": "subject + eat/drink + food or drink",
-              "examples": [
-                "We eat chicken. — Comemos pollo.",
-                "He drinks water. — Él bebe agua."
-              ]
-            },
-            {
-              "label": "5. Describir con to be",
-              "pattern": "food/drink + is + adjective",
-              "examples": [
-                "The juice is cold. — El zumo está frío."
-              ]
-            }
-          ]
-        },
         "items": [
           {
             "itemId": "english-pre-a1-m006-explore-ex01-i01",
             "position": 1,
-            "english": "apple",
-            "spanish": "manzana",
-            "audio": "tts:en-GB:apple"
+            "english": "A",
+            "spanish": "nombre de la letra A",
+            "pronunciationGuide": "éi",
+            "audio": "tts:en-GB:A",
+            "audioStatus": "synthetic_pending_review"
           },
           {
             "itemId": "english-pre-a1-m006-explore-ex01-i02",
             "position": 2,
-            "english": "bread",
-            "spanish": "pan",
-            "audio": "tts:en-GB:bread"
+            "english": "B",
+            "spanish": "nombre de la letra B",
+            "pronunciationGuide": "bí",
+            "audio": "tts:en-GB:B",
+            "audioStatus": "synthetic_pending_review"
           },
           {
             "itemId": "english-pre-a1-m006-explore-ex01-i03",
             "position": 3,
-            "english": "cheese",
-            "spanish": "queso",
-            "audio": "tts:en-GB:cheese"
+            "english": "C",
+            "spanish": "nombre de la letra C",
+            "pronunciationGuide": "sí",
+            "audio": "tts:en-GB:C",
+            "audioStatus": "synthetic_pending_review"
           },
           {
             "itemId": "english-pre-a1-m006-explore-ex01-i04",
             "position": 4,
-            "english": "rice",
-            "spanish": "arroz",
-            "audio": "tts:en-GB:rice"
+            "english": "D",
+            "spanish": "nombre de la letra D",
+            "pronunciationGuide": "dí",
+            "audio": "tts:en-GB:D",
+            "audioStatus": "synthetic_pending_review"
           },
           {
             "itemId": "english-pre-a1-m006-explore-ex01-i05",
             "position": 5,
-            "english": "chicken",
-            "spanish": "pollo",
-            "audio": "tts:en-GB:chicken"
+            "english": "E",
+            "spanish": "nombre de la letra E",
+            "pronunciationGuide": "í",
+            "audio": "tts:en-GB:E",
+            "audioStatus": "synthetic_pending_review"
           },
           {
             "itemId": "english-pre-a1-m006-explore-ex01-i06",
             "position": 6,
-            "english": "banana",
-            "spanish": "plátano",
-            "audio": "tts:en-GB:banana"
+            "english": "F",
+            "spanish": "nombre de la letra F",
+            "pronunciationGuide": "éf",
+            "audio": "tts:en-GB:F",
+            "audioStatus": "synthetic_pending_review"
           },
           {
             "itemId": "english-pre-a1-m006-explore-ex01-i07",
             "position": 7,
-            "english": "water",
-            "spanish": "agua",
-            "audio": "tts:en-GB:water"
+            "english": "G",
+            "spanish": "nombre de la letra G",
+            "pronunciationGuide": "yí",
+            "audio": "tts:en-GB:G",
+            "audioStatus": "synthetic_pending_review"
           },
           {
             "itemId": "english-pre-a1-m006-explore-ex01-i08",
             "position": 8,
-            "english": "milk",
-            "spanish": "leche",
-            "audio": "tts:en-GB:milk"
+            "english": "H",
+            "spanish": "nombre de la letra H",
+            "pronunciationGuide": "éich",
+            "audio": "tts:en-GB:H",
+            "audioStatus": "synthetic_pending_review"
           },
           {
             "itemId": "english-pre-a1-m006-explore-ex01-i09",
             "position": 9,
-            "english": "juice",
-            "spanish": "zumo",
-            "audio": "tts:en-GB:juice"
+            "english": "I",
+            "spanish": "nombre de la letra I",
+            "pronunciationGuide": "ái",
+            "audio": "tts:en-GB:I",
+            "audioStatus": "synthetic_pending_review"
           },
           {
             "itemId": "english-pre-a1-m006-explore-ex01-i10",
             "position": 10,
-            "english": "carrot",
-            "spanish": "zanahoria",
-            "audio": "tts:en-GB:carrot"
+            "english": "J",
+            "spanish": "nombre de la letra J",
+            "pronunciationGuide": "yéi",
+            "audio": "tts:en-GB:J",
+            "audioStatus": "synthetic_pending_review"
+          },
+          {
+            "itemId": "english-pre-a1-m006-explore-ex01-i11",
+            "position": 11,
+            "english": "K",
+            "spanish": "nombre de la letra K",
+            "pronunciationGuide": "kéi",
+            "audio": "tts:en-GB:K",
+            "audioStatus": "synthetic_pending_review"
+          },
+          {
+            "itemId": "english-pre-a1-m006-explore-ex01-i12",
+            "position": 12,
+            "english": "L",
+            "spanish": "nombre de la letra L",
+            "pronunciationGuide": "él",
+            "audio": "tts:en-GB:L",
+            "audioStatus": "synthetic_pending_review"
+          },
+          {
+            "itemId": "english-pre-a1-m006-explore-ex01-i13",
+            "position": 13,
+            "english": "M",
+            "spanish": "nombre de la letra M",
+            "pronunciationGuide": "ém",
+            "audio": "tts:en-GB:M",
+            "audioStatus": "synthetic_pending_review"
+          },
+          {
+            "itemId": "english-pre-a1-m006-explore-ex01-i14",
+            "position": 14,
+            "english": "N",
+            "spanish": "nombre de la letra N",
+            "pronunciationGuide": "én",
+            "audio": "tts:en-GB:N",
+            "audioStatus": "synthetic_pending_review"
+          },
+          {
+            "itemId": "english-pre-a1-m006-explore-ex01-i15",
+            "position": 15,
+            "english": "O",
+            "spanish": "nombre de la letra O",
+            "pronunciationGuide": "óu",
+            "audio": "tts:en-GB:O",
+            "audioStatus": "synthetic_pending_review"
+          },
+          {
+            "itemId": "english-pre-a1-m006-explore-ex01-i16",
+            "position": 16,
+            "english": "P",
+            "spanish": "nombre de la letra P",
+            "pronunciationGuide": "pí",
+            "audio": "tts:en-GB:P",
+            "audioStatus": "synthetic_pending_review"
+          },
+          {
+            "itemId": "english-pre-a1-m006-explore-ex01-i17",
+            "position": 17,
+            "english": "Q",
+            "spanish": "nombre de la letra Q",
+            "pronunciationGuide": "kiú",
+            "audio": "tts:en-GB:Q",
+            "audioStatus": "synthetic_pending_review"
+          },
+          {
+            "itemId": "english-pre-a1-m006-explore-ex01-i18",
+            "position": 18,
+            "english": "R",
+            "spanish": "nombre de la letra R",
+            "pronunciationGuide": "ar",
+            "audio": "tts:en-GB:R",
+            "audioStatus": "synthetic_pending_review"
+          },
+          {
+            "itemId": "english-pre-a1-m006-explore-ex01-i19",
+            "position": 19,
+            "english": "S",
+            "spanish": "nombre de la letra S",
+            "pronunciationGuide": "és",
+            "audio": "tts:en-GB:S",
+            "audioStatus": "synthetic_pending_review"
+          },
+          {
+            "itemId": "english-pre-a1-m006-explore-ex01-i20",
+            "position": 20,
+            "english": "T",
+            "spanish": "nombre de la letra T",
+            "pronunciationGuide": "tí",
+            "audio": "tts:en-GB:T",
+            "audioStatus": "synthetic_pending_review"
+          },
+          {
+            "itemId": "english-pre-a1-m006-explore-ex01-i21",
+            "position": 21,
+            "english": "U",
+            "spanish": "nombre de la letra U",
+            "pronunciationGuide": "iú",
+            "audio": "tts:en-GB:U",
+            "audioStatus": "synthetic_pending_review"
+          },
+          {
+            "itemId": "english-pre-a1-m006-explore-ex01-i22",
+            "position": 22,
+            "english": "V",
+            "spanish": "nombre de la letra V",
+            "pronunciationGuide": "ví",
+            "audio": "tts:en-GB:V",
+            "audioStatus": "synthetic_pending_review"
+          },
+          {
+            "itemId": "english-pre-a1-m006-explore-ex01-i23",
+            "position": 23,
+            "english": "W",
+            "spanish": "nombre de la letra W",
+            "pronunciationGuide": "DÁ-bol iú",
+            "audio": "tts:en-GB:W",
+            "audioStatus": "synthetic_pending_review"
+          },
+          {
+            "itemId": "english-pre-a1-m006-explore-ex01-i24",
+            "position": 24,
+            "english": "X",
+            "spanish": "nombre de la letra X",
+            "pronunciationGuide": "éks",
+            "audio": "tts:en-GB:X",
+            "audioStatus": "synthetic_pending_review"
+          },
+          {
+            "itemId": "english-pre-a1-m006-explore-ex01-i25",
+            "position": 25,
+            "english": "Y",
+            "spanish": "nombre de la letra Y",
+            "pronunciationGuide": "uái",
+            "audio": "tts:en-GB:Y",
+            "audioStatus": "synthetic_pending_review"
+          },
+          {
+            "itemId": "english-pre-a1-m006-explore-ex01-i26",
+            "position": 26,
+            "english": "Z",
+            "spanish": "nombre de la letra Z",
+            "pronunciationGuide": "zed / zí",
+            "audio": "tts:en-GB:Z",
+            "audioStatus": "synthetic_pending_review"
           }
         ],
+        "theory": {
+          "title": "English alphabet",
+          "explanation": "El alfabeto inglés tiene 26 letras. A, E, I, O, U son vocales; las demás, consonantes. Z se dice zed en inglés británico y zee en estadounidense. W se llama double u.",
+          "tip": "Comprende todos los modelos de Explore antes de comenzar las actividades.",
+          "patterns": [
+            {
+              "label": "Bloque 1",
+              "pattern": "English alphabet",
+              "examples": [
+                "A B C D E"
+              ]
+            },
+            {
+              "label": "Bloque 2",
+              "pattern": "El alfabeto inglés tiene 26 letras. A, E, I, O, U son vocales; las demás, consonantes. Z se dice zed en inglés británico y zee en estadounidense. W se llama double u.",
+              "examples": [
+                "F G H I J"
+              ]
+            },
+            {
+              "label": "Bloque 3",
+              "pattern": "El alfabeto inglés tiene 26 letras. A, E, I, O, U son vocales; las demás, consonantes. Z se dice zed en inglés británico y zee en estadounidense. W se llama double u.",
+              "examples": [
+                "K L M N O"
+              ]
+            },
+            {
+              "label": "Bloque 4",
+              "pattern": "El alfabeto inglés tiene 26 letras. A, E, I, O, U son vocales; las demás, consonantes. Z se dice zed en inglés británico y zee en estadounidense. W se llama double u.",
+              "examples": [
+                "P Q R S T"
+              ]
+            },
+            {
+              "label": "Bloque 5",
+              "pattern": "El alfabeto inglés tiene 26 letras. A, E, I, O, U son vocales; las demás, consonantes. Z se dice zed en inglés británico y zee en estadounidense. W se llama double u.",
+              "examples": [
+                "U V W X Y Z"
+              ]
+            },
+            {
+              "label": "Bloque 6",
+              "pattern": "El alfabeto inglés tiene 26 letras. A, E, I, O, U son vocales; las demás, consonantes. Z se dice zed en inglés británico y zee en estadounidense. W se llama double u.",
+              "examples": [
+                "A E I O U"
+              ]
+            },
+            {
+              "label": "Bloque 7",
+              "pattern": "El alfabeto inglés tiene 26 letras. A, E, I, O, U son vocales; las demás, consonantes. Z se dice zed en inglés británico y zee en estadounidense. W se llama double u.",
+              "examples": [
+                "Capital letter"
+              ]
+            },
+            {
+              "label": "Bloque 8",
+              "pattern": "El alfabeto inglés tiene 26 letras. A, E, I, O, U son vocales; las demás, consonantes. Z se dice zed en inglés británico y zee en estadounidense. W se llama double u.",
+              "examples": [
+                "Small letter"
+              ]
+            },
+            {
+              "label": "Bloque 9",
+              "pattern": "El alfabeto inglés tiene 26 letras. A, E, I, O, U son vocales; las demás, consonantes. Z se dice zed en inglés británico y zee en estadounidense. W se llama double u.",
+              "examples": [
+                "Consonant"
+              ]
+            },
+            {
+              "label": "Bloque 10",
+              "pattern": "El alfabeto inglés tiene 26 letras. A, E, I, O, U son vocales; las demás, consonantes. Z se dice zed en inglés británico y zee en estadounidense. W se llama double u.",
+              "examples": [
+                "How do you spell your name?"
+              ]
+            }
+          ]
+        },
         "lesson": {
           "phrases": [
             {
-              "english": "It is an apple.",
-              "spanish": "Es una manzana.",
-              "note": "An se usa antes de un sonido vocálico."
+              "english": "A B C D E",
+              "spanish": "A B C D E",
+              "note": "Modelo enseñado en Explore."
             },
             {
-              "english": "I like bread.",
-              "spanish": "Me gusta el pan.",
-              "note": "Con I usamos like."
+              "english": "F G H I J",
+              "spanish": "F G H I J",
+              "note": "Modelo enseñado en Explore."
             },
             {
-              "english": "I do not like milk.",
-              "spanish": "No me gusta la leche.",
-              "note": "Do not forma la negación."
+              "english": "K L M N O",
+              "spanish": "K L M N O",
+              "note": "Modelo enseñado en Explore."
             },
             {
-              "english": "She likes cheese.",
-              "spanish": "A ella le gusta el queso.",
-              "note": "Con she añadimos -s a likes."
+              "english": "P Q R S T",
+              "spanish": "P Q R S T",
+              "note": "Modelo enseñado en Explore."
             },
             {
-              "english": "We eat rice.",
-              "spanish": "Comemos arroz.",
-              "note": "Con we usamos el verbo base."
+              "english": "U V W X Y Z",
+              "spanish": "U V W X Y Z",
+              "note": "Modelo enseñado en Explore."
             },
             {
-              "english": "He drinks water.",
-              "spanish": "Él bebe agua.",
-              "note": "Con he añadimos -s a drinks."
+              "english": "A E I O U",
+              "spanish": "A E I O U",
+              "note": "Modelo enseñado en Explore."
             },
             {
-              "english": "An orange is a fruit.",
-              "spanish": "Una naranja es una fruta."
+              "english": "Capital letter",
+              "spanish": "Capital letter",
+              "note": "Modelo enseñado en Explore."
             },
             {
-              "english": "I have a banana.",
-              "spanish": "Tengo un plátano.",
-              "note": "A va antes de un sonido consonántico."
+              "english": "Small letter",
+              "spanish": "Small letter",
+              "note": "Modelo enseñado en Explore."
             },
             {
-              "english": "They like chicken.",
-              "spanish": "A ellos les gusta el pollo."
+              "english": "Consonant",
+              "spanish": "Consonant",
+              "note": "Modelo enseñado en Explore."
             },
             {
-              "english": "The juice is cold.",
-              "spanish": "El zumo está frío.",
-              "note": "Con juice usamos is."
-            },
-            {
-              "english": "a / an",
-              "spanish": "un / una",
-              "note": "A va ante sonido consonántico; an, ante sonido vocálico."
+              "english": "How do you spell your name?",
+              "spanish": "How do you spell your name?",
+              "note": "Modelo enseñado en Explore."
             }
           ],
           "grammar": [
             {
-              "english": "I eat an apple.",
-              "spanish": "Como una manzana.",
-              "note": "An precede a apple."
+              "english": "A B C D E",
+              "spanish": "Modelo de la misión",
+              "note": "English alphabet"
             },
             {
-              "english": "I like bread.",
-              "spanish": "Me gusta el pan.",
-              "note": "Like expresa gustos."
+              "english": "F G H I J",
+              "spanish": "Modelo de la misión",
+              "note": "El alfabeto inglés tiene 26 letras. A, E, I, O, U son vocales; las demás, consonantes. Z se dice zed en inglés británico y zee en estadounidense. W se llama double u."
             },
             {
-              "english": "I do not like milk.",
-              "spanish": "No me gusta la leche.",
-              "note": "Do not + verbo base."
+              "english": "K L M N O",
+              "spanish": "Modelo de la misión",
+              "note": "El alfabeto inglés tiene 26 letras. A, E, I, O, U son vocales; las demás, consonantes. Z se dice zed en inglés británico y zee en estadounidense. W se llama double u."
             },
             {
-              "english": "She likes cheese.",
-              "spanish": "A ella le gusta el queso.",
-              "note": "Con she, like cambia a likes."
+              "english": "P Q R S T",
+              "spanish": "Modelo de la misión",
+              "note": "El alfabeto inglés tiene 26 letras. A, E, I, O, U son vocales; las demás, consonantes. Z se dice zed en inglés británico y zee en estadounidense. W se llama double u."
             },
             {
-              "english": "We eat rice.",
-              "spanish": "Comemos arroz.",
-              "note": "We + eat."
+              "english": "U V W X Y Z",
+              "spanish": "Modelo de la misión",
+              "note": "El alfabeto inglés tiene 26 letras. A, E, I, O, U son vocales; las demás, consonantes. Z se dice zed en inglés británico y zee en estadounidense. W se llama double u."
             },
             {
-              "english": "He drinks water.",
-              "spanish": "Él bebe agua.",
-              "note": "He + drinks."
+              "english": "A E I O U",
+              "spanish": "Modelo de la misión",
+              "note": "El alfabeto inglés tiene 26 letras. A, E, I, O, U son vocales; las demás, consonantes. Z se dice zed en inglés británico y zee en estadounidense. W se llama double u."
             },
             {
-              "english": "An orange is a fruit.",
-              "spanish": "Una naranja es una fruta.",
-              "note": "An se usa ante orange."
+              "english": "Capital letter",
+              "spanish": "Modelo de la misión",
+              "note": "El alfabeto inglés tiene 26 letras. A, E, I, O, U son vocales; las demás, consonantes. Z se dice zed en inglés británico y zee en estadounidense. W se llama double u."
             },
             {
-              "english": "I have a banana.",
-              "spanish": "Tengo un plátano.",
-              "note": "A se usa ante banana."
+              "english": "Small letter",
+              "spanish": "Modelo de la misión",
+              "note": "El alfabeto inglés tiene 26 letras. A, E, I, O, U son vocales; las demás, consonantes. Z se dice zed en inglés británico y zee en estadounidense. W se llama double u."
             },
             {
-              "english": "They like chicken.",
-              "spanish": "A ellos les gusta el pollo."
+              "english": "Consonant",
+              "spanish": "Modelo de la misión",
+              "note": "El alfabeto inglés tiene 26 letras. A, E, I, O, U son vocales; las demás, consonantes. Z se dice zed en inglés británico y zee en estadounidense. W se llama double u."
             },
             {
-              "english": "The juice is cold.",
-              "spanish": "El zumo está frío.",
-              "note": "Is describe cómo está el zumo."
+              "english": "How do you spell your name?",
+              "spanish": "Modelo de la misión",
+              "note": "El alfabeto inglés tiene 26 letras. A, E, I, O, U son vocales; las demás, consonantes. Z se dice zed en inglés británico y zee en estadounidense. W se llama double u."
             }
           ],
           "reading": [
             {
-              "english": "For breakfast, I eat bread and cheese.",
-              "spanish": "Para desayunar, como pan y queso."
-            },
-            {
-              "english": "I drink milk.",
-              "spanish": "Bebo leche."
-            },
-            {
-              "english": "My sister likes an apple and a banana.",
-              "spanish": "A mi hermana le gustan una manzana y un plátano."
-            },
-            {
-              "english": "At lunch, we eat rice and chicken.",
-              "spanish": "En el almuerzo, comemos arroz y pollo."
-            },
-            {
-              "english": "I drink water.",
-              "spanish": "Bebo agua."
-            },
-            {
-              "english": "My brother likes carrot juice, but I prefer orange juice.",
-              "spanish": "A mi hermano le gusta el zumo de zanahoria, pero yo prefiero el zumo de naranja."
-            },
-            {
-              "english": "We like fresh food.",
-              "spanish": "Nos gusta la comida fresca."
+              "english": "A B C D E. F G H I J. K L M N O. P Q R S T. U V W X Y Z.",
+              "spanish": "Texto completo presentado arriba."
             }
           ],
           "writing": [
             {
-              "english": "I eat an apple.",
-              "spanish": "Como una manzana."
+              "english": "A B C D E",
+              "spanish": "A B C D E",
+              "note": "Modelo enseñado en Explore."
             },
             {
-              "english": "I like bread.",
-              "spanish": "Me gusta el pan."
+              "english": "F G H I J",
+              "spanish": "F G H I J",
+              "note": "Modelo enseñado en Explore."
             },
             {
-              "english": "I like cheese.",
-              "spanish": "Me gusta el queso."
+              "english": "K L M N O",
+              "spanish": "K L M N O",
+              "note": "Modelo enseñado en Explore."
             },
             {
-              "english": "We eat rice.",
-              "spanish": "Comemos arroz."
+              "english": "P Q R S T",
+              "spanish": "P Q R S T",
+              "note": "Modelo enseñado en Explore."
             },
             {
-              "english": "We eat chicken.",
-              "spanish": "Comemos pollo."
+              "english": "U V W X Y Z",
+              "spanish": "U V W X Y Z",
+              "note": "Modelo enseñado en Explore."
             },
             {
-              "english": "A banana is yellow.",
-              "spanish": "Un plátano es amarillo."
+              "english": "A E I O U",
+              "spanish": "A E I O U",
+              "note": "Modelo enseñado en Explore."
             },
             {
-              "english": "Please drink water.",
-              "spanish": "Por favor, bebe agua."
+              "english": "Capital letter",
+              "spanish": "Capital letter",
+              "note": "Modelo enseñado en Explore."
             },
             {
-              "english": "The baby drinks milk.",
-              "spanish": "El bebé bebe leche."
+              "english": "Small letter",
+              "spanish": "Small letter",
+              "note": "Modelo enseñado en Explore."
             },
             {
-              "english": "I like orange juice.",
-              "spanish": "Me gusta el zumo de naranja."
+              "english": "Consonant",
+              "spanish": "Consonant",
+              "note": "Modelo enseñado en Explore."
             },
             {
-              "english": "A carrot is orange.",
-              "spanish": "Una zanahoria es naranja."
+              "english": "How do you spell your name?",
+              "spanish": "How do you spell your name?",
+              "note": "Modelo enseñado en Explore."
             }
           ],
           "speaking": [
             {
-              "english": "I eat an apple.",
-              "spanish": "Como una manzana.",
-              "prompt": "Say a short sentence using apple.",
-              "promptSpanish": "Di una frase corta usando apple (manzana)."
+              "english": "A B C D E",
+              "spanish": "A B C D E",
+              "note": "Modelo enseñado en Explore.",
+              "prompt": "Practica esta expresión.",
+              "promptSpanish": "Di la expresión en voz alta."
             },
             {
-              "english": "I eat bread.",
-              "spanish": "Como pan.",
-              "prompt": "Say a short sentence using bread.",
-              "promptSpanish": "Di una frase corta usando bread (pan)."
+              "english": "F G H I J",
+              "spanish": "F G H I J",
+              "note": "Modelo enseñado en Explore.",
+              "prompt": "Practica esta expresión.",
+              "promptSpanish": "Di la expresión en voz alta."
             },
             {
-              "english": "I like cheese.",
-              "spanish": "Me gusta el queso.",
-              "prompt": "Say a short sentence using cheese.",
-              "promptSpanish": "Di una frase corta usando cheese (queso)."
+              "english": "K L M N O",
+              "spanish": "K L M N O",
+              "note": "Modelo enseñado en Explore.",
+              "prompt": "Practica esta expresión.",
+              "promptSpanish": "Di la expresión en voz alta."
             },
             {
-              "english": "We cook rice.",
-              "spanish": "Cocinamos arroz.",
-              "prompt": "Say a short sentence using rice.",
-              "promptSpanish": "Di una frase corta usando rice (arroz)."
+              "english": "P Q R S T",
+              "spanish": "P Q R S T",
+              "note": "Modelo enseñado en Explore.",
+              "prompt": "Practica esta expresión.",
+              "promptSpanish": "Di la expresión en voz alta."
             },
             {
-              "english": "We eat chicken.",
-              "spanish": "Comemos pollo.",
-              "prompt": "Say a short sentence using chicken.",
-              "promptSpanish": "Di una frase corta usando chicken (pollo)."
+              "english": "U V W X Y Z",
+              "spanish": "U V W X Y Z",
+              "note": "Modelo enseñado en Explore.",
+              "prompt": "Practica esta expresión.",
+              "promptSpanish": "Di la expresión en voz alta."
             },
             {
-              "english": "I eat a banana.",
-              "spanish": "Como un plátano.",
-              "prompt": "Say a short sentence using banana.",
-              "promptSpanish": "Di una frase corta usando banana (plátano)."
+              "english": "A E I O U",
+              "spanish": "A E I O U",
+              "note": "Modelo enseñado en Explore.",
+              "prompt": "Practica esta expresión.",
+              "promptSpanish": "Di la expresión en voz alta."
             },
             {
-              "english": "I drink water.",
-              "spanish": "Bebo agua.",
-              "prompt": "Say a short sentence using water.",
-              "promptSpanish": "Di una frase corta usando water (agua)."
+              "english": "Capital letter",
+              "spanish": "Capital letter",
+              "note": "Modelo enseñado en Explore.",
+              "prompt": "Practica esta expresión.",
+              "promptSpanish": "Di la expresión en voz alta."
             },
             {
-              "english": "I drink milk.",
-              "spanish": "Bebo leche.",
-              "prompt": "Say a short sentence using milk.",
-              "promptSpanish": "Di una frase corta usando milk (leche)."
+              "english": "Small letter",
+              "spanish": "Small letter",
+              "note": "Modelo enseñado en Explore.",
+              "prompt": "Practica esta expresión.",
+              "promptSpanish": "Di la expresión en voz alta."
             },
             {
-              "english": "I like orange juice.",
-              "spanish": "Me gusta el zumo de naranja.",
-              "prompt": "Say a short sentence using juice.",
-              "promptSpanish": "Di una frase corta usando juice (zumo)."
+              "english": "Consonant",
+              "spanish": "Consonant",
+              "note": "Modelo enseñado en Explore.",
+              "prompt": "Practica esta expresión.",
+              "promptSpanish": "Di la expresión en voz alta."
             },
             {
-              "english": "I eat a carrot.",
-              "spanish": "Como una zanahoria.",
-              "prompt": "Say a short sentence using carrot.",
-              "promptSpanish": "Di una frase corta usando carrot (zanahoria)."
+              "english": "How do you spell your name?",
+              "spanish": "How do you spell your name?",
+              "note": "Modelo enseñado en Explore.",
+              "prompt": "Practica esta expresión.",
+              "promptSpanish": "Di la expresión en voz alta."
             }
           ],
           "listening": [
             {
-              "english": "I eat an apple for breakfast.",
-              "spanish": "Como una manzana en el desayuno."
+              "english": "A B C D E",
+              "spanish": "A B C D E",
+              "note": "Modelo enseñado en Explore."
             },
             {
-              "english": "I have some bread with my meal.",
-              "spanish": "Como un poco de pan con mi comida."
+              "english": "F G H I J",
+              "spanish": "F G H I J",
+              "note": "Modelo enseñado en Explore."
             },
             {
-              "english": "I like cheese on my toast.",
-              "spanish": "Me gusta el queso sobre mi tostada."
+              "english": "K L M N O",
+              "spanish": "K L M N O",
+              "note": "Modelo enseñado en Explore."
             },
             {
-              "english": "We cook rice for lunch.",
-              "spanish": "Cocinamos arroz para el almuerzo."
+              "english": "P Q R S T",
+              "spanish": "P Q R S T",
+              "note": "Modelo enseñado en Explore."
             },
             {
-              "english": "We eat chicken with rice.",
-              "spanish": "Comemos pollo con arroz."
+              "english": "U V W X Y Z",
+              "spanish": "U V W X Y Z",
+              "note": "Modelo enseñado en Explore."
             },
             {
-              "english": "A banana is a yellow fruit.",
-              "spanish": "El plátano es una fruta amarilla."
+              "english": "A E I O U",
+              "spanish": "A E I O U",
+              "note": "Modelo enseñado en Explore."
             },
             {
-              "english": "Please drink some water.",
-              "spanish": "Por favor, bebe un poco de agua."
+              "english": "Capital letter",
+              "spanish": "Capital letter",
+              "note": "Modelo enseñado en Explore."
             },
             {
-              "english": "The baby drinks milk.",
-              "spanish": "El bebé bebe leche."
+              "english": "Small letter",
+              "spanish": "Small letter",
+              "note": "Modelo enseñado en Explore."
             },
             {
-              "english": "Orange juice is sweet.",
-              "spanish": "El zumo de naranja es dulce."
+              "english": "Consonant",
+              "spanish": "Consonant",
+              "note": "Modelo enseñado en Explore."
             },
             {
-              "english": "A carrot is an orange vegetable.",
-              "spanish": "La zanahoria es una hortaliza naranja."
+              "english": "How do you spell your name?",
+              "spanish": "How do you spell your name?",
+              "note": "Modelo enseñado en Explore."
+            }
+          ]
+        },
+        "content": {
+          "blocks": [
+            {
+              "position": 1,
+              "title": "Bloque 1",
+              "content": "English alphabet",
+              "example": "A B C D E",
+              "translation": "Consulta la traducción y la guía de pronunciación de cada elemento."
+            },
+            {
+              "position": 2,
+              "title": "Bloque 2",
+              "content": "El alfabeto inglés tiene 26 letras. A, E, I, O, U son vocales; las demás, consonantes. Z se dice zed en inglés británico y zee en estadounidense. W se llama double u.",
+              "example": "F G H I J",
+              "translation": "Consulta la traducción y la guía de pronunciación de cada elemento."
+            },
+            {
+              "position": 3,
+              "title": "Bloque 3",
+              "content": "El alfabeto inglés tiene 26 letras. A, E, I, O, U son vocales; las demás, consonantes. Z se dice zed en inglés británico y zee en estadounidense. W se llama double u.",
+              "example": "K L M N O",
+              "translation": "Consulta la traducción y la guía de pronunciación de cada elemento."
+            },
+            {
+              "position": 4,
+              "title": "Bloque 4",
+              "content": "El alfabeto inglés tiene 26 letras. A, E, I, O, U son vocales; las demás, consonantes. Z se dice zed en inglés británico y zee en estadounidense. W se llama double u.",
+              "example": "P Q R S T",
+              "translation": "Consulta la traducción y la guía de pronunciación de cada elemento."
+            },
+            {
+              "position": 5,
+              "title": "Bloque 5",
+              "content": "El alfabeto inglés tiene 26 letras. A, E, I, O, U son vocales; las demás, consonantes. Z se dice zed en inglés británico y zee en estadounidense. W se llama double u.",
+              "example": "U V W X Y Z",
+              "translation": "Consulta la traducción y la guía de pronunciación de cada elemento."
+            },
+            {
+              "position": 6,
+              "title": "Bloque 6",
+              "content": "El alfabeto inglés tiene 26 letras. A, E, I, O, U son vocales; las demás, consonantes. Z se dice zed en inglés británico y zee en estadounidense. W se llama double u.",
+              "example": "A E I O U",
+              "translation": "Consulta la traducción y la guía de pronunciación de cada elemento."
+            },
+            {
+              "position": 7,
+              "title": "Bloque 7",
+              "content": "El alfabeto inglés tiene 26 letras. A, E, I, O, U son vocales; las demás, consonantes. Z se dice zed en inglés británico y zee en estadounidense. W se llama double u.",
+              "example": "Capital letter",
+              "translation": "Consulta la traducción y la guía de pronunciación de cada elemento."
+            },
+            {
+              "position": 8,
+              "title": "Bloque 8",
+              "content": "El alfabeto inglés tiene 26 letras. A, E, I, O, U son vocales; las demás, consonantes. Z se dice zed en inglés británico y zee en estadounidense. W se llama double u.",
+              "example": "Small letter",
+              "translation": "Consulta la traducción y la guía de pronunciación de cada elemento."
+            },
+            {
+              "position": 9,
+              "title": "Bloque 9",
+              "content": "El alfabeto inglés tiene 26 letras. A, E, I, O, U son vocales; las demás, consonantes. Z se dice zed en inglés británico y zee en estadounidense. W se llama double u.",
+              "example": "Consonant",
+              "translation": "Consulta la traducción y la guía de pronunciación de cada elemento."
+            },
+            {
+              "position": 10,
+              "title": "Bloque 10",
+              "content": "El alfabeto inglés tiene 26 letras. A, E, I, O, U son vocales; las demás, consonantes. Z se dice zed en inglés británico y zee en estadounidense. W se llama double u.",
+              "example": "How do you spell your name?",
+              "translation": "Consulta la traducción y la guía de pronunciación de cada elemento."
             }
           ]
         }
@@ -442,302 +714,142 @@
           {
             "itemId": "english-pre-a1-m006-practice-ex01-i01",
             "position": 1,
-            "taskType": "vocabulary_translation",
-            "prompt": "Choose the Spanish meaning of “apple”.",
+            "prompt": "Elige la traducción de “A”.",
             "evaluation": {
               "type": "single_choice"
             },
             "options": [
-              "manzana",
-              "arroz",
-              "agua"
+              "nombre de la letra B",
+              "nombre de la letra A",
+              "nombre de la letra C"
             ],
-            "answer": "manzana"
+            "answer": "nombre de la letra A"
           },
           {
             "itemId": "english-pre-a1-m006-practice-ex01-i02",
             "position": 2,
-            "taskType": "vocabulary_translation",
-            "prompt": "Choose the Spanish meaning of “bread”.",
+            "prompt": "Elige la traducción de “B”.",
             "evaluation": {
               "type": "single_choice"
             },
             "options": [
-              "pollo",
-              "leche",
-              "pan"
+              "nombre de la letra D",
+              "nombre de la letra C",
+              "nombre de la letra B"
             ],
-            "answer": "pan"
+            "answer": "nombre de la letra B"
           },
           {
             "itemId": "english-pre-a1-m006-practice-ex01-i03",
             "position": 3,
-            "taskType": "vocabulary_translation",
-            "prompt": "Choose the Spanish meaning of “cheese”.",
+            "prompt": "Elige la traducción de “C”.",
             "evaluation": {
               "type": "single_choice"
             },
             "options": [
-              "plátano",
-              "queso",
-              "zumo"
+              "nombre de la letra C",
+              "nombre de la letra D",
+              "nombre de la letra E"
             ],
-            "answer": "queso"
+            "answer": "nombre de la letra C"
           },
           {
             "itemId": "english-pre-a1-m006-practice-ex01-i04",
             "position": 4,
-            "taskType": "vocabulary_translation",
-            "prompt": "Choose the Spanish meaning of “rice”.",
+            "prompt": "Elige la traducción de “D”.",
             "evaluation": {
               "type": "single_choice"
             },
             "options": [
-              "arroz",
-              "agua",
-              "zanahoria"
+              "nombre de la letra E",
+              "nombre de la letra D",
+              "nombre de la letra F"
             ],
-            "answer": "arroz"
+            "answer": "nombre de la letra D"
           },
           {
             "itemId": "english-pre-a1-m006-practice-ex01-i05",
             "position": 5,
-            "taskType": "vocabulary_translation",
-            "prompt": "Choose the Spanish meaning of “chicken”.",
+            "prompt": "Elige la traducción de “E”.",
             "evaluation": {
               "type": "single_choice"
             },
             "options": [
-              "leche",
-              "manzana",
-              "pollo"
+              "nombre de la letra G",
+              "nombre de la letra F",
+              "nombre de la letra E"
             ],
-            "answer": "pollo"
+            "answer": "nombre de la letra E"
           },
           {
             "itemId": "english-pre-a1-m006-practice-ex01-i06",
             "position": 6,
-            "taskType": "vocabulary_translation",
-            "prompt": "Choose the Spanish meaning of “banana”.",
+            "prompt": "Elige la traducción de “F”.",
             "evaluation": {
               "type": "single_choice"
             },
             "options": [
-              "zumo",
-              "plátano",
-              "pan"
+              "nombre de la letra F",
+              "nombre de la letra G",
+              "nombre de la letra H"
             ],
-            "answer": "plátano"
+            "answer": "nombre de la letra F"
           },
           {
             "itemId": "english-pre-a1-m006-practice-ex01-i07",
             "position": 7,
-            "taskType": "vocabulary_translation",
-            "prompt": "Choose the Spanish meaning of “water”.",
+            "prompt": "Elige la traducción de “G”.",
             "evaluation": {
               "type": "single_choice"
             },
             "options": [
-              "agua",
-              "zanahoria",
-              "queso"
+              "nombre de la letra H",
+              "nombre de la letra G",
+              "nombre de la letra I"
             ],
-            "answer": "agua"
+            "answer": "nombre de la letra G"
           },
           {
             "itemId": "english-pre-a1-m006-practice-ex01-i08",
             "position": 8,
-            "taskType": "vocabulary_translation",
-            "prompt": "Choose the Spanish meaning of “milk”.",
+            "prompt": "Elige la traducción de “H”.",
             "evaluation": {
               "type": "single_choice"
             },
             "options": [
-              "manzana",
-              "arroz",
-              "leche"
+              "nombre de la letra J",
+              "nombre de la letra I",
+              "nombre de la letra H"
             ],
-            "answer": "leche"
+            "answer": "nombre de la letra H"
           },
           {
             "itemId": "english-pre-a1-m006-practice-ex01-i09",
             "position": 9,
-            "taskType": "vocabulary_translation",
-            "prompt": "Choose the Spanish meaning of “juice”.",
+            "prompt": "Elige la traducción de “I”.",
             "evaluation": {
               "type": "single_choice"
             },
             "options": [
-              "pan",
-              "zumo",
-              "pollo"
+              "nombre de la letra I",
+              "nombre de la letra J",
+              "nombre de la letra K"
             ],
-            "answer": "zumo"
+            "answer": "nombre de la letra I"
           },
           {
             "itemId": "english-pre-a1-m006-practice-ex01-i10",
             "position": 10,
-            "taskType": "vocabulary_translation",
-            "prompt": "Choose the Spanish meaning of “carrot”.",
+            "prompt": "Elige la traducción de “J”.",
             "evaluation": {
               "type": "single_choice"
             },
             "options": [
-              "queso",
-              "plátano",
-              "zanahoria"
+              "nombre de la letra K",
+              "nombre de la letra J",
+              "nombre de la letra L"
             ],
-            "answer": "zanahoria"
-          },
-          {
-            "itemId": "english-pre-a1-m006-practice-ex01-i11",
-            "position": 11,
-            "taskType": "topic_vocabulary",
-            "prompt": "Which English word means “manzana”?",
-            "evaluation": {
-              "type": "single_choice"
-            },
-            "options": [
-              "apple",
-              "cheese",
-              "banana"
-            ],
-            "answer": "apple"
-          },
-          {
-            "itemId": "english-pre-a1-m006-practice-ex01-i12",
-            "position": 12,
-            "taskType": "topic_vocabulary",
-            "prompt": "Choose the word for “pan”?",
-            "evaluation": {
-              "type": "single_choice"
-            },
-            "options": [
-              "rice",
-              "bread",
-              "water"
-            ],
-            "answer": "bread"
-          },
-          {
-            "itemId": "english-pre-a1-m006-practice-ex01-i13",
-            "position": 13,
-            "taskType": "topic_vocabulary",
-            "prompt": "Select the English word for “queso”?",
-            "evaluation": {
-              "type": "single_choice"
-            },
-            "options": [
-              "chicken",
-              "milk",
-              "cheese"
-            ],
-            "answer": "cheese"
-          },
-          {
-            "itemId": "english-pre-a1-m006-practice-ex01-i14",
-            "position": 14,
-            "taskType": "topic_vocabulary",
-            "prompt": "What is the English word for “arroz”?",
-            "evaluation": {
-              "type": "single_choice"
-            },
-            "options": [
-              "banana",
-              "rice",
-              "juice"
-            ],
-            "answer": "rice"
-          },
-          {
-            "itemId": "english-pre-a1-m006-practice-ex01-i15",
-            "position": 15,
-            "taskType": "topic_vocabulary",
-            "prompt": "Find the word that means “pollo”?",
-            "evaluation": {
-              "type": "single_choice"
-            },
-            "options": [
-              "chicken",
-              "water",
-              "carrot"
-            ],
-            "answer": "chicken"
-          },
-          {
-            "itemId": "english-pre-a1-m006-practice-ex01-i16",
-            "position": 16,
-            "taskType": "topic_vocabulary",
-            "prompt": "Which word matches “plátano”?",
-            "evaluation": {
-              "type": "single_choice"
-            },
-            "options": [
-              "banana",
-              "milk",
-              "apple"
-            ],
-            "answer": "banana"
-          },
-          {
-            "itemId": "english-pre-a1-m006-practice-ex01-i17",
-            "position": 17,
-            "taskType": "topic_vocabulary",
-            "prompt": "Choose the translation for “agua”?",
-            "evaluation": {
-              "type": "single_choice"
-            },
-            "options": [
-              "juice",
-              "water",
-              "bread"
-            ],
-            "answer": "water"
-          },
-          {
-            "itemId": "english-pre-a1-m006-practice-ex01-i18",
-            "position": 18,
-            "taskType": "topic_vocabulary",
-            "prompt": "Select the matching word for “leche”?",
-            "evaluation": {
-              "type": "single_choice"
-            },
-            "options": [
-              "carrot",
-              "cheese",
-              "milk"
-            ],
-            "answer": "milk"
-          },
-          {
-            "itemId": "english-pre-a1-m006-practice-ex01-i19",
-            "position": 19,
-            "taskType": "topic_vocabulary",
-            "prompt": "What word means “zumo”?",
-            "evaluation": {
-              "type": "single_choice"
-            },
-            "options": [
-              "apple",
-              "rice",
-              "juice"
-            ],
-            "answer": "juice"
-          },
-          {
-            "itemId": "english-pre-a1-m006-practice-ex01-i20",
-            "position": 20,
-            "taskType": "topic_vocabulary",
-            "prompt": "Find the English word for “zanahoria”?",
-            "evaluation": {
-              "type": "single_choice"
-            },
-            "options": [
-              "bread",
-              "carrot",
-              "chicken"
-            ],
-            "answer": "carrot"
+            "answer": "nombre de la letra J"
           }
         ]
       }
@@ -749,146 +861,223 @@
       "exercise": {
         "exerciseId": "english-pre-a1-m006-grammar-ex01",
         "type": "grammar",
+        "theory": {
+          "title": "English alphabet",
+          "explanation": "El alfabeto inglés tiene 26 letras. A, E, I, O, U son vocales; las demás, consonantes. Z se dice zed en inglés británico y zee en estadounidense. W se llama double u.",
+          "tip": "Comprende todos los modelos de Explore antes de comenzar las actividades.",
+          "patterns": [
+            {
+              "label": "Bloque 1",
+              "pattern": "English alphabet",
+              "examples": [
+                "A B C D E"
+              ]
+            },
+            {
+              "label": "Bloque 2",
+              "pattern": "El alfabeto inglés tiene 26 letras. A, E, I, O, U son vocales; las demás, consonantes. Z se dice zed en inglés británico y zee en estadounidense. W se llama double u.",
+              "examples": [
+                "F G H I J"
+              ]
+            },
+            {
+              "label": "Bloque 3",
+              "pattern": "El alfabeto inglés tiene 26 letras. A, E, I, O, U son vocales; las demás, consonantes. Z se dice zed en inglés británico y zee en estadounidense. W se llama double u.",
+              "examples": [
+                "K L M N O"
+              ]
+            },
+            {
+              "label": "Bloque 4",
+              "pattern": "El alfabeto inglés tiene 26 letras. A, E, I, O, U son vocales; las demás, consonantes. Z se dice zed en inglés británico y zee en estadounidense. W se llama double u.",
+              "examples": [
+                "P Q R S T"
+              ]
+            },
+            {
+              "label": "Bloque 5",
+              "pattern": "El alfabeto inglés tiene 26 letras. A, E, I, O, U son vocales; las demás, consonantes. Z se dice zed en inglés británico y zee en estadounidense. W se llama double u.",
+              "examples": [
+                "U V W X Y Z"
+              ]
+            },
+            {
+              "label": "Bloque 6",
+              "pattern": "El alfabeto inglés tiene 26 letras. A, E, I, O, U son vocales; las demás, consonantes. Z se dice zed en inglés británico y zee en estadounidense. W se llama double u.",
+              "examples": [
+                "A E I O U"
+              ]
+            },
+            {
+              "label": "Bloque 7",
+              "pattern": "El alfabeto inglés tiene 26 letras. A, E, I, O, U son vocales; las demás, consonantes. Z se dice zed en inglés británico y zee en estadounidense. W se llama double u.",
+              "examples": [
+                "Capital letter"
+              ]
+            },
+            {
+              "label": "Bloque 8",
+              "pattern": "El alfabeto inglés tiene 26 letras. A, E, I, O, U son vocales; las demás, consonantes. Z se dice zed en inglés británico y zee en estadounidense. W se llama double u.",
+              "examples": [
+                "Small letter"
+              ]
+            },
+            {
+              "label": "Bloque 9",
+              "pattern": "El alfabeto inglés tiene 26 letras. A, E, I, O, U son vocales; las demás, consonantes. Z se dice zed en inglés británico y zee en estadounidense. W se llama double u.",
+              "examples": [
+                "Consonant"
+              ]
+            },
+            {
+              "label": "Bloque 10",
+              "pattern": "El alfabeto inglés tiene 26 letras. A, E, I, O, U son vocales; las demás, consonantes. Z se dice zed en inglés británico y zee en estadounidense. W se llama double u.",
+              "examples": [
+                "How do you spell your name?"
+              ]
+            }
+          ]
+        },
         "items": [
           {
             "itemId": "english-pre-a1-m006-grammar-ex01-i01",
             "position": 1,
-            "prompt": "Choose the correct word or phrase: It is ___ apple.",
+            "prompt": "Reconoce el modelo trabajado: A B C D E",
             "evaluation": {
               "type": "single_choice"
             },
             "options": [
-              "a",
-              "an",
-              "are"
+              "F G H I J",
+              "A B C D E",
+              "K L M N O"
             ],
-            "answer": "an"
-          },
-          {
-            "itemId": "english-pre-a1-m006-grammar-ex01-i07",
-            "position": 7,
-            "prompt": "Choose the correct word or phrase: ___ orange is a fruit.",
-            "evaluation": {
-              "type": "single_choice"
-            },
-            "options": [
-              "A",
-              "An",
-              "The"
-            ],
-            "answer": "An"
-          },
-          {
-            "itemId": "english-pre-a1-m006-grammar-ex01-i08",
-            "position": 8,
-            "prompt": "Complete: I have ___ banana.",
-            "evaluation": {
-              "type": "single_choice"
-            },
-            "options": [
-              "an",
-              "the",
-              "a"
-            ],
-            "answer": "a"
+            "answer": "A B C D E"
           },
           {
             "itemId": "english-pre-a1-m006-grammar-ex01-i02",
             "position": 2,
-            "prompt": "Choose the correct word or phrase: I ___ bread.",
+            "prompt": "Reconoce el modelo trabajado: F G H I J",
             "evaluation": {
               "type": "single_choice"
             },
             "options": [
-              "like",
-              "likes",
-              "liking"
+              "P Q R S T",
+              "K L M N O",
+              "F G H I J"
             ],
-            "answer": "like"
-          },
-          {
-            "itemId": "english-pre-a1-m006-grammar-ex01-i04",
-            "position": 4,
-            "prompt": "Choose the correct word or phrase: She ___ cheese.",
-            "evaluation": {
-              "type": "single_choice"
-            },
-            "options": [
-              "like",
-              "likes",
-              "liking"
-            ],
-            "answer": "likes"
-          },
-          {
-            "itemId": "english-pre-a1-m006-grammar-ex01-i05",
-            "position": 5,
-            "prompt": "Choose the correct word or phrase: We ___ rice.",
-            "evaluation": {
-              "type": "single_choice"
-            },
-            "options": [
-              "eats",
-              "eating",
-              "eat"
-            ],
-            "answer": "eat"
-          },
-          {
-            "itemId": "english-pre-a1-m006-grammar-ex01-i06",
-            "position": 6,
-            "prompt": "Choose the correct word or phrase: He ___ water.",
-            "evaluation": {
-              "type": "single_choice"
-            },
-            "options": [
-              "drinks",
-              "drink",
-              "drinking"
-            ],
-            "answer": "drinks"
-          },
-          {
-            "itemId": "english-pre-a1-m006-grammar-ex01-i09",
-            "position": 9,
-            "prompt": "Choose the correct word or phrase: They ___ chicken.",
-            "evaluation": {
-              "type": "single_choice"
-            },
-            "options": [
-              "like",
-              "likes",
-              "liking"
-            ],
-            "answer": "like"
+            "answer": "F G H I J"
           },
           {
             "itemId": "english-pre-a1-m006-grammar-ex01-i03",
             "position": 3,
-            "prompt": "Choose the correct word or phrase: I ___ like milk.",
+            "prompt": "Reconoce el modelo trabajado: K L M N O",
             "evaluation": {
               "type": "single_choice"
             },
             "options": [
-              "does not",
-              "not",
-              "do not"
+              "K L M N O",
+              "P Q R S T",
+              "U V W X Y Z"
             ],
-            "answer": "do not"
+            "answer": "K L M N O"
+          },
+          {
+            "itemId": "english-pre-a1-m006-grammar-ex01-i04",
+            "position": 4,
+            "prompt": "Reconoce el modelo trabajado: P Q R S T",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "U V W X Y Z",
+              "P Q R S T",
+              "A E I O U"
+            ],
+            "answer": "P Q R S T"
+          },
+          {
+            "itemId": "english-pre-a1-m006-grammar-ex01-i05",
+            "position": 5,
+            "prompt": "Reconoce el modelo trabajado: U V W X Y Z",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "Capital letter",
+              "A E I O U",
+              "U V W X Y Z"
+            ],
+            "answer": "U V W X Y Z"
+          },
+          {
+            "itemId": "english-pre-a1-m006-grammar-ex01-i06",
+            "position": 6,
+            "prompt": "Reconoce el modelo trabajado: A E I O U",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "A E I O U",
+              "Capital letter",
+              "Small letter"
+            ],
+            "answer": "A E I O U"
+          },
+          {
+            "itemId": "english-pre-a1-m006-grammar-ex01-i07",
+            "position": 7,
+            "prompt": "Reconoce el modelo trabajado: Capital letter",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "Small letter",
+              "Capital letter",
+              "Consonant"
+            ],
+            "answer": "Capital letter"
+          },
+          {
+            "itemId": "english-pre-a1-m006-grammar-ex01-i08",
+            "position": 8,
+            "prompt": "Reconoce el modelo trabajado: Small letter",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "How do you spell your name?",
+              "Consonant",
+              "Small letter"
+            ],
+            "answer": "Small letter"
+          },
+          {
+            "itemId": "english-pre-a1-m006-grammar-ex01-i09",
+            "position": 9,
+            "prompt": "Reconoce el modelo trabajado: Consonant",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "Consonant",
+              "How do you spell your name?",
+              "A B C D E"
+            ],
+            "answer": "Consonant"
           },
           {
             "itemId": "english-pre-a1-m006-grammar-ex01-i10",
             "position": 10,
-            "prompt": "Choose the correct word or phrase: The juice ___ cold.",
+            "prompt": "Reconoce el modelo trabajado: How do you spell your name?",
             "evaluation": {
               "type": "single_choice"
             },
             "options": [
-              "are",
-              "is",
-              "am"
+              "A B C D E",
+              "How do you spell your name?",
+              "F G H I J"
             ],
-            "answer": "is"
+            "answer": "How do you spell your name?"
           }
         ]
       }
@@ -904,82 +1093,262 @@
           {
             "itemId": "english-pre-a1-m006-pronunciation-ex01-i01",
             "position": 1,
-            "word": "apple",
-            "translation": "manzana",
-            "pronunciationGuide": "á-pol",
-            "audio": "tts:en-GB:apple"
+            "word": "A",
+            "translation": "nombre de la letra A",
+            "pronunciationGuide": "éi",
+            "audio": "tts:en-GB:A",
+            "audioStatus": "synthetic_pending_review",
+            "guideType": "approximate_spanish"
           },
           {
             "itemId": "english-pre-a1-m006-pronunciation-ex01-i02",
             "position": 2,
-            "word": "bread",
-            "translation": "pan",
-            "pronunciationGuide": "bred",
-            "audio": "tts:en-GB:bread"
+            "word": "B",
+            "translation": "nombre de la letra B",
+            "pronunciationGuide": "bí",
+            "audio": "tts:en-GB:B",
+            "audioStatus": "synthetic_pending_review",
+            "guideType": "approximate_spanish"
           },
           {
             "itemId": "english-pre-a1-m006-pronunciation-ex01-i03",
             "position": 3,
-            "word": "cheese",
-            "translation": "queso",
-            "pronunciationGuide": "chíiz",
-            "audio": "tts:en-GB:cheese"
+            "word": "C",
+            "translation": "nombre de la letra C",
+            "pronunciationGuide": "sí",
+            "audio": "tts:en-GB:C",
+            "audioStatus": "synthetic_pending_review",
+            "guideType": "approximate_spanish"
           },
           {
             "itemId": "english-pre-a1-m006-pronunciation-ex01-i04",
             "position": 4,
-            "word": "rice",
-            "translation": "arroz",
-            "pronunciationGuide": "rais",
-            "audio": "tts:en-GB:rice"
+            "word": "D",
+            "translation": "nombre de la letra D",
+            "pronunciationGuide": "dí",
+            "audio": "tts:en-GB:D",
+            "audioStatus": "synthetic_pending_review",
+            "guideType": "approximate_spanish"
           },
           {
             "itemId": "english-pre-a1-m006-pronunciation-ex01-i05",
             "position": 5,
-            "word": "chicken",
-            "translation": "pollo",
-            "pronunciationGuide": "chí-ken",
-            "audio": "tts:en-GB:chicken"
+            "word": "E",
+            "translation": "nombre de la letra E",
+            "pronunciationGuide": "í",
+            "audio": "tts:en-GB:E",
+            "audioStatus": "synthetic_pending_review",
+            "guideType": "approximate_spanish"
           },
           {
             "itemId": "english-pre-a1-m006-pronunciation-ex01-i06",
             "position": 6,
-            "word": "banana",
-            "translation": "plátano",
-            "pronunciationGuide": "ba-ná-na",
-            "audio": "tts:en-GB:banana"
+            "word": "F",
+            "translation": "nombre de la letra F",
+            "pronunciationGuide": "éf",
+            "audio": "tts:en-GB:F",
+            "audioStatus": "synthetic_pending_review",
+            "guideType": "approximate_spanish"
           },
           {
             "itemId": "english-pre-a1-m006-pronunciation-ex01-i07",
             "position": 7,
-            "word": "water",
-            "translation": "agua",
-            "pronunciationGuide": "uó-ter",
-            "audio": "tts:en-GB:water"
+            "word": "G",
+            "translation": "nombre de la letra G",
+            "pronunciationGuide": "yí",
+            "audio": "tts:en-GB:G",
+            "audioStatus": "synthetic_pending_review",
+            "guideType": "approximate_spanish"
           },
           {
             "itemId": "english-pre-a1-m006-pronunciation-ex01-i08",
             "position": 8,
-            "word": "milk",
-            "translation": "leche",
-            "pronunciationGuide": "milk",
-            "audio": "tts:en-GB:milk"
+            "word": "H",
+            "translation": "nombre de la letra H",
+            "pronunciationGuide": "éich",
+            "audio": "tts:en-GB:H",
+            "audioStatus": "synthetic_pending_review",
+            "guideType": "approximate_spanish"
           },
           {
             "itemId": "english-pre-a1-m006-pronunciation-ex01-i09",
             "position": 9,
-            "word": "juice",
-            "translation": "zumo",
-            "pronunciationGuide": "yús",
-            "audio": "tts:en-GB:juice"
+            "word": "I",
+            "translation": "nombre de la letra I",
+            "pronunciationGuide": "ái",
+            "audio": "tts:en-GB:I",
+            "audioStatus": "synthetic_pending_review",
+            "guideType": "approximate_spanish"
           },
           {
             "itemId": "english-pre-a1-m006-pronunciation-ex01-i10",
             "position": 10,
-            "word": "carrot",
-            "translation": "zanahoria",
-            "pronunciationGuide": "ká-rot",
-            "audio": "tts:en-GB:carrot"
+            "word": "J",
+            "translation": "nombre de la letra J",
+            "pronunciationGuide": "yéi",
+            "audio": "tts:en-GB:J",
+            "audioStatus": "synthetic_pending_review",
+            "guideType": "approximate_spanish"
+          },
+          {
+            "itemId": "english-pre-a1-m006-pronunciation-ex01-i11",
+            "position": 11,
+            "word": "K",
+            "translation": "nombre de la letra K",
+            "pronunciationGuide": "kéi",
+            "audio": "tts:en-GB:K",
+            "audioStatus": "synthetic_pending_review",
+            "guideType": "approximate_spanish"
+          },
+          {
+            "itemId": "english-pre-a1-m006-pronunciation-ex01-i12",
+            "position": 12,
+            "word": "L",
+            "translation": "nombre de la letra L",
+            "pronunciationGuide": "él",
+            "audio": "tts:en-GB:L",
+            "audioStatus": "synthetic_pending_review",
+            "guideType": "approximate_spanish"
+          },
+          {
+            "itemId": "english-pre-a1-m006-pronunciation-ex01-i13",
+            "position": 13,
+            "word": "M",
+            "translation": "nombre de la letra M",
+            "pronunciationGuide": "ém",
+            "audio": "tts:en-GB:M",
+            "audioStatus": "synthetic_pending_review",
+            "guideType": "approximate_spanish"
+          },
+          {
+            "itemId": "english-pre-a1-m006-pronunciation-ex01-i14",
+            "position": 14,
+            "word": "N",
+            "translation": "nombre de la letra N",
+            "pronunciationGuide": "én",
+            "audio": "tts:en-GB:N",
+            "audioStatus": "synthetic_pending_review",
+            "guideType": "approximate_spanish"
+          },
+          {
+            "itemId": "english-pre-a1-m006-pronunciation-ex01-i15",
+            "position": 15,
+            "word": "O",
+            "translation": "nombre de la letra O",
+            "pronunciationGuide": "óu",
+            "audio": "tts:en-GB:O",
+            "audioStatus": "synthetic_pending_review",
+            "guideType": "approximate_spanish"
+          },
+          {
+            "itemId": "english-pre-a1-m006-pronunciation-ex01-i16",
+            "position": 16,
+            "word": "P",
+            "translation": "nombre de la letra P",
+            "pronunciationGuide": "pí",
+            "audio": "tts:en-GB:P",
+            "audioStatus": "synthetic_pending_review",
+            "guideType": "approximate_spanish"
+          },
+          {
+            "itemId": "english-pre-a1-m006-pronunciation-ex01-i17",
+            "position": 17,
+            "word": "Q",
+            "translation": "nombre de la letra Q",
+            "pronunciationGuide": "kiú",
+            "audio": "tts:en-GB:Q",
+            "audioStatus": "synthetic_pending_review",
+            "guideType": "approximate_spanish"
+          },
+          {
+            "itemId": "english-pre-a1-m006-pronunciation-ex01-i18",
+            "position": 18,
+            "word": "R",
+            "translation": "nombre de la letra R",
+            "pronunciationGuide": "ar",
+            "audio": "tts:en-GB:R",
+            "audioStatus": "synthetic_pending_review",
+            "guideType": "approximate_spanish"
+          },
+          {
+            "itemId": "english-pre-a1-m006-pronunciation-ex01-i19",
+            "position": 19,
+            "word": "S",
+            "translation": "nombre de la letra S",
+            "pronunciationGuide": "és",
+            "audio": "tts:en-GB:S",
+            "audioStatus": "synthetic_pending_review",
+            "guideType": "approximate_spanish"
+          },
+          {
+            "itemId": "english-pre-a1-m006-pronunciation-ex01-i20",
+            "position": 20,
+            "word": "T",
+            "translation": "nombre de la letra T",
+            "pronunciationGuide": "tí",
+            "audio": "tts:en-GB:T",
+            "audioStatus": "synthetic_pending_review",
+            "guideType": "approximate_spanish"
+          },
+          {
+            "itemId": "english-pre-a1-m006-pronunciation-ex01-i21",
+            "position": 21,
+            "word": "U",
+            "translation": "nombre de la letra U",
+            "pronunciationGuide": "iú",
+            "audio": "tts:en-GB:U",
+            "audioStatus": "synthetic_pending_review",
+            "guideType": "approximate_spanish"
+          },
+          {
+            "itemId": "english-pre-a1-m006-pronunciation-ex01-i22",
+            "position": 22,
+            "word": "V",
+            "translation": "nombre de la letra V",
+            "pronunciationGuide": "ví",
+            "audio": "tts:en-GB:V",
+            "audioStatus": "synthetic_pending_review",
+            "guideType": "approximate_spanish"
+          },
+          {
+            "itemId": "english-pre-a1-m006-pronunciation-ex01-i23",
+            "position": 23,
+            "word": "W",
+            "translation": "nombre de la letra W",
+            "pronunciationGuide": "DÁ-bol iú",
+            "audio": "tts:en-GB:W",
+            "audioStatus": "synthetic_pending_review",
+            "guideType": "approximate_spanish"
+          },
+          {
+            "itemId": "english-pre-a1-m006-pronunciation-ex01-i24",
+            "position": 24,
+            "word": "X",
+            "translation": "nombre de la letra X",
+            "pronunciationGuide": "éks",
+            "audio": "tts:en-GB:X",
+            "audioStatus": "synthetic_pending_review",
+            "guideType": "approximate_spanish"
+          },
+          {
+            "itemId": "english-pre-a1-m006-pronunciation-ex01-i25",
+            "position": 25,
+            "word": "Y",
+            "translation": "nombre de la letra Y",
+            "pronunciationGuide": "uái",
+            "audio": "tts:en-GB:Y",
+            "audioStatus": "synthetic_pending_review",
+            "guideType": "approximate_spanish"
+          },
+          {
+            "itemId": "english-pre-a1-m006-pronunciation-ex01-i26",
+            "position": 26,
+            "word": "Z",
+            "translation": "nombre de la letra Z",
+            "pronunciationGuide": "zed / zí",
+            "audio": "tts:en-GB:Z",
+            "audioStatus": "synthetic_pending_review",
+            "guideType": "approximate_spanish"
           }
         ]
       }
@@ -993,148 +1362,281 @@
         "type": "reading_comprehension",
         "content": {
           "passageId": "english-pre-a1-m006-reading-passage-01",
-          "passage": "For breakfast, I eat bread and cheese. I drink milk. My sister likes an apple and a banana. At lunch, we eat rice and chicken. I drink water. My brother likes carrot juice, but I prefer orange juice. We like fresh food."
+          "passage": "A B C D E. F G H I J. K L M N O. P Q R S T. U V W X Y Z.",
+          "translation": "Traducción del texto: A B C D E. F G H I J. K L M N O. P Q R S T. U V W X Y Z.",
+          "vocabulary": [
+            {
+              "word": "A",
+              "translation": "nombre de la letra A",
+              "pronunciationGuide": "éi"
+            },
+            {
+              "word": "B",
+              "translation": "nombre de la letra B",
+              "pronunciationGuide": "bí"
+            },
+            {
+              "word": "C",
+              "translation": "nombre de la letra C",
+              "pronunciationGuide": "sí"
+            },
+            {
+              "word": "D",
+              "translation": "nombre de la letra D",
+              "pronunciationGuide": "dí"
+            },
+            {
+              "word": "E",
+              "translation": "nombre de la letra E",
+              "pronunciationGuide": "í"
+            },
+            {
+              "word": "F",
+              "translation": "nombre de la letra F",
+              "pronunciationGuide": "éf"
+            },
+            {
+              "word": "G",
+              "translation": "nombre de la letra G",
+              "pronunciationGuide": "yí"
+            },
+            {
+              "word": "H",
+              "translation": "nombre de la letra H",
+              "pronunciationGuide": "éich"
+            },
+            {
+              "word": "I",
+              "translation": "nombre de la letra I",
+              "pronunciationGuide": "ái"
+            },
+            {
+              "word": "J",
+              "translation": "nombre de la letra J",
+              "pronunciationGuide": "yéi"
+            },
+            {
+              "word": "K",
+              "translation": "nombre de la letra K",
+              "pronunciationGuide": "kéi"
+            },
+            {
+              "word": "L",
+              "translation": "nombre de la letra L",
+              "pronunciationGuide": "él"
+            },
+            {
+              "word": "M",
+              "translation": "nombre de la letra M",
+              "pronunciationGuide": "ém"
+            },
+            {
+              "word": "N",
+              "translation": "nombre de la letra N",
+              "pronunciationGuide": "én"
+            },
+            {
+              "word": "O",
+              "translation": "nombre de la letra O",
+              "pronunciationGuide": "óu"
+            },
+            {
+              "word": "P",
+              "translation": "nombre de la letra P",
+              "pronunciationGuide": "pí"
+            },
+            {
+              "word": "Q",
+              "translation": "nombre de la letra Q",
+              "pronunciationGuide": "kiú"
+            },
+            {
+              "word": "R",
+              "translation": "nombre de la letra R",
+              "pronunciationGuide": "ar"
+            },
+            {
+              "word": "S",
+              "translation": "nombre de la letra S",
+              "pronunciationGuide": "és"
+            },
+            {
+              "word": "T",
+              "translation": "nombre de la letra T",
+              "pronunciationGuide": "tí"
+            },
+            {
+              "word": "U",
+              "translation": "nombre de la letra U",
+              "pronunciationGuide": "iú"
+            },
+            {
+              "word": "V",
+              "translation": "nombre de la letra V",
+              "pronunciationGuide": "ví"
+            },
+            {
+              "word": "W",
+              "translation": "nombre de la letra W",
+              "pronunciationGuide": "DÁ-bol iú"
+            },
+            {
+              "word": "X",
+              "translation": "nombre de la letra X",
+              "pronunciationGuide": "éks"
+            },
+            {
+              "word": "Y",
+              "translation": "nombre de la letra Y",
+              "pronunciationGuide": "uái"
+            },
+            {
+              "word": "Z",
+              "translation": "nombre de la letra Z",
+              "pronunciationGuide": "zed / zí"
+            }
+          ]
         },
         "items": [
           {
             "itemId": "english-pre-a1-m006-reading-ex01-i01",
             "position": 1,
-            "prompt": "What does the writer eat for breakfast?",
+            "prompt": "¿Qué tema presenta el texto?",
             "evaluation": {
               "type": "single_choice"
             },
             "options": [
-              "Bread and cheese",
-              "Rice and chicken",
-              "An apple"
+              "nombre de la letra A",
+              "English alphabet",
+              "nombre de la letra B"
             ],
-            "answer": "Bread and cheese"
+            "answer": "English alphabet"
           },
           {
             "itemId": "english-pre-a1-m006-reading-ex01-i02",
             "position": 2,
-            "prompt": "What does the writer drink at breakfast?",
+            "prompt": "¿Qué significa “B” en el texto?",
             "evaluation": {
               "type": "single_choice"
             },
             "options": [
-              "Water",
-              "Milk",
-              "Juice"
+              "nombre de la letra D",
+              "nombre de la letra C",
+              "nombre de la letra B"
             ],
-            "answer": "Milk"
+            "answer": "nombre de la letra B"
           },
           {
             "itemId": "english-pre-a1-m006-reading-ex01-i03",
             "position": 3,
-            "prompt": "Who likes an apple and a banana?",
+            "prompt": "¿Qué significa “C” en el texto?",
             "evaluation": {
               "type": "single_choice"
             },
             "options": [
-              "The brother",
-              "The father",
-              "The sister"
+              "nombre de la letra C",
+              "nombre de la letra D",
+              "nombre de la letra E"
             ],
-            "answer": "The sister"
+            "answer": "nombre de la letra C"
           },
           {
             "itemId": "english-pre-a1-m006-reading-ex01-i04",
             "position": 4,
-            "prompt": "What do they eat at lunch?",
+            "prompt": "¿Qué significa “D” en el texto?",
             "evaluation": {
               "type": "single_choice"
             },
             "options": [
-              "Bread and cheese",
-              "Rice and chicken",
-              "Milk and fruit"
+              "nombre de la letra E",
+              "nombre de la letra D",
+              "nombre de la letra F"
             ],
-            "answer": "Rice and chicken"
+            "answer": "nombre de la letra D"
           },
           {
             "itemId": "english-pre-a1-m006-reading-ex01-i05",
             "position": 5,
-            "prompt": "What does the writer drink at lunch?",
+            "prompt": "¿Qué significa “E” en el texto?",
             "evaluation": {
               "type": "single_choice"
             },
             "options": [
-              "Water",
-              "Milk",
-              "Tea"
+              "nombre de la letra G",
+              "nombre de la letra F",
+              "nombre de la letra E"
             ],
-            "answer": "Water"
+            "answer": "nombre de la letra E"
           },
           {
             "itemId": "english-pre-a1-m006-reading-ex01-i06",
             "position": 6,
-            "prompt": "What juice does the brother like?",
+            "prompt": "¿Qué significa “F” en el texto?",
             "evaluation": {
               "type": "single_choice"
             },
             "options": [
-              "Apple juice",
-              "Lemon juice",
-              "Carrot juice"
+              "nombre de la letra F",
+              "nombre de la letra G",
+              "nombre de la letra H"
             ],
-            "answer": "Carrot juice"
+            "answer": "nombre de la letra F"
           },
           {
             "itemId": "english-pre-a1-m006-reading-ex01-i07",
             "position": 7,
-            "prompt": "What juice does the writer prefer?",
+            "prompt": "¿Qué significa “G” en el texto?",
             "evaluation": {
               "type": "single_choice"
             },
             "options": [
-              "Orange juice",
-              "Carrot juice",
-              "Grape juice"
+              "nombre de la letra H",
+              "nombre de la letra G",
+              "nombre de la letra I"
             ],
-            "answer": "Orange juice"
+            "answer": "nombre de la letra G"
           },
           {
             "itemId": "english-pre-a1-m006-reading-ex01-i08",
             "position": 8,
-            "prompt": "Is the text about food?",
+            "prompt": "¿Qué significa “H” en el texto?",
             "evaluation": {
               "type": "single_choice"
             },
             "options": [
-              "No",
-              "It is about animals",
-              "Yes"
+              "nombre de la letra J",
+              "nombre de la letra I",
+              "nombre de la letra H"
             ],
-            "answer": "Yes"
+            "answer": "nombre de la letra H"
           },
           {
             "itemId": "english-pre-a1-m006-reading-ex01-i09",
             "position": 9,
-            "prompt": "Name one fruit in the text.",
+            "prompt": "¿Qué significa “I” en el texto?",
             "evaluation": {
               "type": "single_choice"
             },
             "options": [
-              "A potato",
-              "A banana",
-              "A tomato"
+              "nombre de la letra I",
+              "nombre de la letra J",
+              "nombre de la letra K"
             ],
-            "answer": "A banana"
+            "answer": "nombre de la letra I"
           },
           {
             "itemId": "english-pre-a1-m006-reading-ex01-i10",
             "position": 10,
-            "prompt": "What kind of food do they like?",
+            "prompt": "¿Qué significa “J” en el texto?",
             "evaluation": {
               "type": "single_choice"
             },
             "options": [
-              "Hot food only",
-              "Sweet food only",
-              "Fresh food"
+              "nombre de la letra K",
+              "nombre de la letra J",
+              "nombre de la letra L"
             ],
-            "answer": "Fresh food"
+            "answer": "nombre de la letra J"
           }
         ]
       }
@@ -1150,180 +1652,190 @@
           {
             "itemId": "english-pre-a1-m006-writing-ex01-i01",
             "position": 1,
-            "audio": "tts:en-GB:I eat an apple.",
+            "audio": "tts:en-GB:A B C D E",
+            "audioLocale": "en-GB",
+            "audioStatus": "synthetic_pending_review",
+            "kind": "sentence",
+            "repeatCount": 3,
+            "expectedAnswer": "A B C D E",
             "evaluation": {
               "type": "normalised_text"
             },
-            "audioLocale": "en-GB",
-            "kind": "sentence",
-            "repeatCount": 3,
-            "expectedAnswer": "I eat an apple.",
             "segments": [
               {
                 "segmentId": "english-pre-a1-m006-writing-segment-01",
-                "text": "I eat an apple."
+                "text": "A B C D E"
               }
             ]
           },
           {
             "itemId": "english-pre-a1-m006-writing-ex01-i02",
             "position": 2,
-            "audio": "tts:en-GB:I like bread.",
+            "audio": "tts:en-GB:F G H I J",
+            "audioLocale": "en-GB",
+            "audioStatus": "synthetic_pending_review",
+            "kind": "sentence",
+            "repeatCount": 3,
+            "expectedAnswer": "F G H I J",
             "evaluation": {
               "type": "normalised_text"
             },
-            "audioLocale": "en-GB",
-            "kind": "sentence",
-            "repeatCount": 3,
-            "expectedAnswer": "I like bread.",
             "segments": [
               {
                 "segmentId": "english-pre-a1-m006-writing-segment-02",
-                "text": "I like bread."
+                "text": "F G H I J"
               }
             ]
           },
           {
             "itemId": "english-pre-a1-m006-writing-ex01-i03",
             "position": 3,
-            "audio": "tts:en-GB:I like cheese.",
+            "audio": "tts:en-GB:K L M N O",
+            "audioLocale": "en-GB",
+            "audioStatus": "synthetic_pending_review",
+            "kind": "sentence",
+            "repeatCount": 3,
+            "expectedAnswer": "K L M N O",
             "evaluation": {
               "type": "normalised_text"
             },
-            "audioLocale": "en-GB",
-            "kind": "sentence",
-            "repeatCount": 3,
-            "expectedAnswer": "I like cheese.",
             "segments": [
               {
                 "segmentId": "english-pre-a1-m006-writing-segment-03",
-                "text": "I like cheese."
+                "text": "K L M N O"
               }
             ]
           },
           {
             "itemId": "english-pre-a1-m006-writing-ex01-i04",
             "position": 4,
-            "audio": "tts:en-GB:We eat rice.",
+            "audio": "tts:en-GB:P Q R S T",
+            "audioLocale": "en-GB",
+            "audioStatus": "synthetic_pending_review",
+            "kind": "sentence",
+            "repeatCount": 3,
+            "expectedAnswer": "P Q R S T",
             "evaluation": {
               "type": "normalised_text"
             },
-            "audioLocale": "en-GB",
-            "kind": "sentence",
-            "repeatCount": 3,
-            "expectedAnswer": "We eat rice.",
             "segments": [
               {
                 "segmentId": "english-pre-a1-m006-writing-segment-04",
-                "text": "We eat rice."
+                "text": "P Q R S T"
               }
             ]
           },
           {
             "itemId": "english-pre-a1-m006-writing-ex01-i05",
             "position": 5,
-            "audio": "tts:en-GB:We eat chicken.",
+            "audio": "tts:en-GB:U V W X Y Z",
+            "audioLocale": "en-GB",
+            "audioStatus": "synthetic_pending_review",
+            "kind": "sentence",
+            "repeatCount": 3,
+            "expectedAnswer": "U V W X Y Z",
             "evaluation": {
               "type": "normalised_text"
             },
-            "audioLocale": "en-GB",
-            "kind": "sentence",
-            "repeatCount": 3,
-            "expectedAnswer": "We eat chicken.",
             "segments": [
               {
                 "segmentId": "english-pre-a1-m006-writing-segment-05",
-                "text": "We eat chicken."
+                "text": "U V W X Y Z"
               }
             ]
           },
           {
             "itemId": "english-pre-a1-m006-writing-ex01-i06",
             "position": 6,
-            "audio": "tts:en-GB:A banana is yellow.",
+            "audio": "tts:en-GB:A E I O U",
+            "audioLocale": "en-GB",
+            "audioStatus": "synthetic_pending_review",
+            "kind": "sentence",
+            "repeatCount": 3,
+            "expectedAnswer": "A E I O U",
             "evaluation": {
               "type": "normalised_text"
             },
-            "audioLocale": "en-GB",
-            "kind": "sentence",
-            "repeatCount": 3,
-            "expectedAnswer": "A banana is yellow.",
             "segments": [
               {
                 "segmentId": "english-pre-a1-m006-writing-segment-06",
-                "text": "A banana is yellow."
+                "text": "A E I O U"
               }
             ]
           },
           {
             "itemId": "english-pre-a1-m006-writing-ex01-i07",
             "position": 7,
-            "audio": "tts:en-GB:Please drink water.",
+            "audio": "tts:en-GB:Capital letter",
+            "audioLocale": "en-GB",
+            "audioStatus": "synthetic_pending_review",
+            "kind": "sentence",
+            "repeatCount": 3,
+            "expectedAnswer": "Capital letter",
             "evaluation": {
               "type": "normalised_text"
             },
-            "audioLocale": "en-GB",
-            "kind": "sentence",
-            "repeatCount": 3,
-            "expectedAnswer": "Please drink water.",
             "segments": [
               {
                 "segmentId": "english-pre-a1-m006-writing-segment-07",
-                "text": "Please drink water."
+                "text": "Capital letter"
               }
             ]
           },
           {
             "itemId": "english-pre-a1-m006-writing-ex01-i08",
             "position": 8,
-            "audio": "tts:en-GB:The baby drinks milk.",
+            "audio": "tts:en-GB:Small letter",
+            "audioLocale": "en-GB",
+            "audioStatus": "synthetic_pending_review",
+            "kind": "sentence",
+            "repeatCount": 3,
+            "expectedAnswer": "Small letter",
             "evaluation": {
               "type": "normalised_text"
             },
-            "audioLocale": "en-GB",
-            "kind": "sentence",
-            "repeatCount": 3,
-            "expectedAnswer": "The baby drinks milk.",
             "segments": [
               {
                 "segmentId": "english-pre-a1-m006-writing-segment-08",
-                "text": "The baby drinks milk."
+                "text": "Small letter"
               }
             ]
           },
           {
             "itemId": "english-pre-a1-m006-writing-ex01-i09",
             "position": 9,
-            "audio": "tts:en-GB:I like orange juice.",
+            "audio": "tts:en-GB:Consonant",
+            "audioLocale": "en-GB",
+            "audioStatus": "synthetic_pending_review",
+            "kind": "sentence",
+            "repeatCount": 3,
+            "expectedAnswer": "Consonant",
             "evaluation": {
               "type": "normalised_text"
             },
-            "audioLocale": "en-GB",
-            "kind": "sentence",
-            "repeatCount": 3,
-            "expectedAnswer": "I like orange juice.",
             "segments": [
               {
                 "segmentId": "english-pre-a1-m006-writing-segment-09",
-                "text": "I like orange juice."
+                "text": "Consonant"
               }
             ]
           },
           {
             "itemId": "english-pre-a1-m006-writing-ex01-i10",
             "position": 10,
-            "audio": "tts:en-GB:A carrot is orange.",
+            "audio": "tts:en-GB:How do you spell your name?",
+            "audioLocale": "en-GB",
+            "audioStatus": "synthetic_pending_review",
+            "kind": "sentence",
+            "repeatCount": 3,
+            "expectedAnswer": "How do you spell your name?",
             "evaluation": {
               "type": "normalised_text"
             },
-            "audioLocale": "en-GB",
-            "kind": "sentence",
-            "repeatCount": 3,
-            "expectedAnswer": "A carrot is orange.",
             "segments": [
               {
                 "segmentId": "english-pre-a1-m006-writing-segment-10",
-                "text": "A carrot is orange."
+                "text": "How do you spell your name?"
               }
             ]
           }
@@ -1341,8 +1853,10 @@
           {
             "itemId": "english-pre-a1-m006-speaking-ex01-i01",
             "position": 1,
-            "prompt": "Say a short sentence using “apple”.",
-            "modelAnswer": "I eat an apple.",
+            "prompt": "Di en voz alta esta expresión.",
+            "promptSpanish": "Practica el modelo de la misión.",
+            "modelAnswer": "A B C D E",
+            "translation": "A B C D E",
             "evaluation": {
               "type": "transcription_feedback",
               "transcriptionSeparateFromPronunciation": true
@@ -1351,8 +1865,10 @@
           {
             "itemId": "english-pre-a1-m006-speaking-ex01-i02",
             "position": 2,
-            "prompt": "Say a short sentence using “bread”.",
-            "modelAnswer": "I eat bread.",
+            "prompt": "Di en voz alta esta expresión.",
+            "promptSpanish": "Practica el modelo de la misión.",
+            "modelAnswer": "F G H I J",
+            "translation": "F G H I J",
             "evaluation": {
               "type": "transcription_feedback",
               "transcriptionSeparateFromPronunciation": true
@@ -1361,8 +1877,10 @@
           {
             "itemId": "english-pre-a1-m006-speaking-ex01-i03",
             "position": 3,
-            "prompt": "Say a short sentence using “cheese”.",
-            "modelAnswer": "I like cheese.",
+            "prompt": "Di en voz alta esta expresión.",
+            "promptSpanish": "Practica el modelo de la misión.",
+            "modelAnswer": "K L M N O",
+            "translation": "K L M N O",
             "evaluation": {
               "type": "transcription_feedback",
               "transcriptionSeparateFromPronunciation": true
@@ -1371,8 +1889,10 @@
           {
             "itemId": "english-pre-a1-m006-speaking-ex01-i04",
             "position": 4,
-            "prompt": "Say a short sentence using “rice”.",
-            "modelAnswer": "We cook rice.",
+            "prompt": "Di en voz alta esta expresión.",
+            "promptSpanish": "Practica el modelo de la misión.",
+            "modelAnswer": "P Q R S T",
+            "translation": "P Q R S T",
             "evaluation": {
               "type": "transcription_feedback",
               "transcriptionSeparateFromPronunciation": true
@@ -1381,8 +1901,10 @@
           {
             "itemId": "english-pre-a1-m006-speaking-ex01-i05",
             "position": 5,
-            "prompt": "Say a short sentence using “chicken”.",
-            "modelAnswer": "We eat chicken.",
+            "prompt": "Di en voz alta esta expresión.",
+            "promptSpanish": "Practica el modelo de la misión.",
+            "modelAnswer": "U V W X Y Z",
+            "translation": "U V W X Y Z",
             "evaluation": {
               "type": "transcription_feedback",
               "transcriptionSeparateFromPronunciation": true
@@ -1391,8 +1913,10 @@
           {
             "itemId": "english-pre-a1-m006-speaking-ex01-i06",
             "position": 6,
-            "prompt": "Say a short sentence using “banana”.",
-            "modelAnswer": "I eat a banana.",
+            "prompt": "Di en voz alta esta expresión.",
+            "promptSpanish": "Practica el modelo de la misión.",
+            "modelAnswer": "A E I O U",
+            "translation": "A E I O U",
             "evaluation": {
               "type": "transcription_feedback",
               "transcriptionSeparateFromPronunciation": true
@@ -1401,8 +1925,10 @@
           {
             "itemId": "english-pre-a1-m006-speaking-ex01-i07",
             "position": 7,
-            "prompt": "Say a short sentence using “water”.",
-            "modelAnswer": "I drink water.",
+            "prompt": "Di en voz alta esta expresión.",
+            "promptSpanish": "Practica el modelo de la misión.",
+            "modelAnswer": "Capital letter",
+            "translation": "Capital letter",
             "evaluation": {
               "type": "transcription_feedback",
               "transcriptionSeparateFromPronunciation": true
@@ -1411,8 +1937,10 @@
           {
             "itemId": "english-pre-a1-m006-speaking-ex01-i08",
             "position": 8,
-            "prompt": "Say a short sentence using “milk”.",
-            "modelAnswer": "I drink milk.",
+            "prompt": "Di en voz alta esta expresión.",
+            "promptSpanish": "Practica el modelo de la misión.",
+            "modelAnswer": "Small letter",
+            "translation": "Small letter",
             "evaluation": {
               "type": "transcription_feedback",
               "transcriptionSeparateFromPronunciation": true
@@ -1421,8 +1949,10 @@
           {
             "itemId": "english-pre-a1-m006-speaking-ex01-i09",
             "position": 9,
-            "prompt": "Say a short sentence using “juice”.",
-            "modelAnswer": "I like orange juice.",
+            "prompt": "Di en voz alta esta expresión.",
+            "promptSpanish": "Practica el modelo de la misión.",
+            "modelAnswer": "Consonant",
+            "translation": "Consonant",
             "evaluation": {
               "type": "transcription_feedback",
               "transcriptionSeparateFromPronunciation": true
@@ -1431,8 +1961,10 @@
           {
             "itemId": "english-pre-a1-m006-speaking-ex01-i10",
             "position": 10,
-            "prompt": "Say a short sentence using “carrot”.",
-            "modelAnswer": "I eat a carrot.",
+            "prompt": "Di en voz alta esta expresión.",
+            "promptSpanish": "Practica el modelo de la misión.",
+            "modelAnswer": "How do you spell your name?",
+            "translation": "How do you spell your name?",
             "evaluation": {
               "type": "transcription_feedback",
               "transcriptionSeparateFromPronunciation": true
@@ -1449,53 +1981,55 @@
         "exerciseId": "english-pre-a1-m006-listening-ex01",
         "type": "listening_gap_fill",
         "content": {
-          "audio": "tts:en-GB:I eat an apple for breakfast. I have some bread with my meal. I like cheese on my toast. We cook rice for lunch. We eat chicken with rice. A banana is a yellow fruit. Please drink some water. The baby drinks milk. Orange juice is sweet. A carrot is an orange vegetable.",
+          "audio": "tts:en-GB:A B C D E F G H I J K L M N O P Q R S T U V W X Y Z A E I O U Capital letter Small letter Consonant How do you spell your name?",
           "audioLocale": "en-GB",
-          "transcriptTemplate": "I eat an [[gap-01]] for breakfast. I have some [[gap-02]] with my meal. I like [[gap-03]] on my toast. We cook [[gap-04]] for lunch. We eat [[gap-05]] with rice. A [[gap-06]] is a yellow fruit. Please drink some [[gap-07]]. The baby drinks [[gap-08]]. Orange [[gap-09]] is sweet. A [[gap-10]] is an orange vegetable.",
+          "audioStatus": "synthetic_pending_review",
+          "transcriptTemplate": "[[gap-01]] [[gap-02]] [[gap-03]] [[gap-04]] [[gap-05]] [[gap-06]] [[gap-07]] [[gap-08]] [[gap-09]] [[gap-10]]",
           "wordBank": [
             {
               "wordId": "english-pre-a1-m006-listening-word-01",
-              "word": "apple"
+              "word": "A"
             },
             {
               "wordId": "english-pre-a1-m006-listening-word-02",
-              "word": "bread"
+              "word": "B"
             },
             {
               "wordId": "english-pre-a1-m006-listening-word-03",
-              "word": "cheese"
+              "word": "C"
             },
             {
               "wordId": "english-pre-a1-m006-listening-word-04",
-              "word": "rice"
+              "word": "D"
             },
             {
               "wordId": "english-pre-a1-m006-listening-word-05",
-              "word": "chicken"
+              "word": "E"
             },
             {
               "wordId": "english-pre-a1-m006-listening-word-06",
-              "word": "banana"
+              "word": "F"
             },
             {
               "wordId": "english-pre-a1-m006-listening-word-07",
-              "word": "water"
+              "word": "G"
             },
             {
               "wordId": "english-pre-a1-m006-listening-word-08",
-              "word": "milk"
+              "word": "H"
             },
             {
               "wordId": "english-pre-a1-m006-listening-word-09",
-              "word": "juice"
+              "word": "I"
             },
             {
               "wordId": "english-pre-a1-m006-listening-word-10",
-              "word": "carrot"
+              "word": "J"
             }
           ],
           "interaction": "select_place_move_replace",
-          "audioTranscript": "tts:en-GB:I eat an apple for breakfast. I have some bread with my meal. I like cheese on my toast. We cook rice for lunch. We eat chicken with rice. A banana is a yellow fruit. Please drink some water. The baby drinks milk. Orange juice is sweet. A carrot is an orange vegetable."
+          "audioTranscript": "tts:en-GB:A B C D E F G H I J K L M N O P Q R S T U V W X Y Z A E I O U Capital letter Small letter Consonant How do you spell your name?",
+          "translation": "Escucha y reconoce las expresiones enseñadas."
         },
         "items": [
           {
@@ -1503,70 +2037,70 @@
             "position": 1,
             "gapToken": "[[gap-01]]",
             "expectedWordId": "english-pre-a1-m006-listening-word-01",
-            "answer": "apple"
+            "answer": "A"
           },
           {
             "itemId": "english-pre-a1-m006-listening-ex01-i02",
             "position": 2,
             "gapToken": "[[gap-02]]",
             "expectedWordId": "english-pre-a1-m006-listening-word-02",
-            "answer": "bread"
+            "answer": "B"
           },
           {
             "itemId": "english-pre-a1-m006-listening-ex01-i03",
             "position": 3,
             "gapToken": "[[gap-03]]",
             "expectedWordId": "english-pre-a1-m006-listening-word-03",
-            "answer": "cheese"
+            "answer": "C"
           },
           {
             "itemId": "english-pre-a1-m006-listening-ex01-i04",
             "position": 4,
             "gapToken": "[[gap-04]]",
             "expectedWordId": "english-pre-a1-m006-listening-word-04",
-            "answer": "rice"
+            "answer": "D"
           },
           {
             "itemId": "english-pre-a1-m006-listening-ex01-i05",
             "position": 5,
             "gapToken": "[[gap-05]]",
             "expectedWordId": "english-pre-a1-m006-listening-word-05",
-            "answer": "chicken"
+            "answer": "E"
           },
           {
             "itemId": "english-pre-a1-m006-listening-ex01-i06",
             "position": 6,
             "gapToken": "[[gap-06]]",
             "expectedWordId": "english-pre-a1-m006-listening-word-06",
-            "answer": "banana"
+            "answer": "F"
           },
           {
             "itemId": "english-pre-a1-m006-listening-ex01-i07",
             "position": 7,
             "gapToken": "[[gap-07]]",
             "expectedWordId": "english-pre-a1-m006-listening-word-07",
-            "answer": "water"
+            "answer": "G"
           },
           {
             "itemId": "english-pre-a1-m006-listening-ex01-i08",
             "position": 8,
             "gapToken": "[[gap-08]]",
             "expectedWordId": "english-pre-a1-m006-listening-word-08",
-            "answer": "milk"
+            "answer": "H"
           },
           {
             "itemId": "english-pre-a1-m006-listening-ex01-i09",
             "position": 9,
             "gapToken": "[[gap-09]]",
             "expectedWordId": "english-pre-a1-m006-listening-word-09",
-            "answer": "juice"
+            "answer": "I"
           },
           {
             "itemId": "english-pre-a1-m006-listening-ex01-i10",
             "position": 10,
             "gapToken": "[[gap-10]]",
             "expectedWordId": "english-pre-a1-m006-listening-word-10",
-            "answer": "carrot"
+            "answer": "J"
           }
         ]
       }

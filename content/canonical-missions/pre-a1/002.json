@@ -1,9 +1,9 @@
 {
-  "schemaVersion": "1.2.0",
-  "contentVersion": 2,
+  "schemaVersion": 1,
+  "contentVersion": "2026-11-21-curriculum-alignment-v1",
   "course": {
     "courseId": "english-pre-a1",
-    "level": "PRE-A1",
+    "level": "Pre-A1",
     "language": "en-GB"
   },
   "unit": {
@@ -16,7 +16,7 @@
     "missionId": "english-pre-a1-m002",
     "unitId": "english-pre-a1-unit-01",
     "position": 2,
-    "title": "Numbers 1–10"
+    "title": "My name is…"
   },
   "sections": [
     {
@@ -30,113 +30,140 @@
           {
             "itemId": "english-pre-a1-m002-explore-ex01-i01",
             "position": 1,
-            "english": "one",
-            "spanish": "uno",
-            "audio": "tts:en-GB:one"
+            "english": "What",
+            "spanish": "qué",
+            "pronunciationGuide": "uót",
+            "audio": "tts:en-GB:What",
+            "audioStatus": "synthetic_pending_review"
           },
           {
             "itemId": "english-pre-a1-m002-explore-ex01-i02",
             "position": 2,
-            "english": "two",
-            "spanish": "dos",
-            "audio": "tts:en-GB:two"
+            "english": "is",
+            "spanish": "es",
+            "pronunciationGuide": "iz",
+            "audio": "tts:en-GB:is",
+            "audioStatus": "synthetic_pending_review"
           },
           {
             "itemId": "english-pre-a1-m002-explore-ex01-i03",
             "position": 3,
-            "english": "three",
-            "spanish": "tres",
-            "audio": "tts:en-GB:three"
+            "english": "your",
+            "spanish": "tu",
+            "pronunciationGuide": "iór",
+            "audio": "tts:en-GB:your",
+            "audioStatus": "synthetic_pending_review"
           },
           {
             "itemId": "english-pre-a1-m002-explore-ex01-i04",
             "position": 4,
-            "english": "four",
-            "spanish": "cuatro",
-            "audio": "tts:en-GB:four"
+            "english": "name",
+            "spanish": "nombre",
+            "pronunciationGuide": "NÉIM",
+            "audio": "tts:en-GB:name",
+            "audioStatus": "synthetic_pending_review"
           },
           {
             "itemId": "english-pre-a1-m002-explore-ex01-i05",
             "position": 5,
-            "english": "five",
-            "spanish": "cinco",
-            "audio": "tts:en-GB:five"
+            "english": "my",
+            "spanish": "mi",
+            "pronunciationGuide": "mái",
+            "audio": "tts:en-GB:my",
+            "audioStatus": "synthetic_pending_review"
           },
           {
             "itemId": "english-pre-a1-m002-explore-ex01-i06",
             "position": 6,
-            "english": "six",
-            "spanish": "seis",
-            "audio": "tts:en-GB:six"
+            "english": "What's your name?",
+            "spanish": "¿Cómo te llamas?",
+            "pronunciationGuide": "uóts iór NÉIM",
+            "audio": "tts:en-GB:What's your name?",
+            "audioStatus": "synthetic_pending_review"
           },
           {
             "itemId": "english-pre-a1-m002-explore-ex01-i07",
             "position": 7,
-            "english": "seven",
-            "spanish": "siete",
-            "audio": "tts:en-GB:seven"
-          },
-          {
-            "itemId": "english-pre-a1-m002-explore-ex01-i08",
-            "position": 8,
-            "english": "eight",
-            "spanish": "ocho",
-            "audio": "tts:en-GB:eight"
-          },
-          {
-            "itemId": "english-pre-a1-m002-explore-ex01-i09",
-            "position": 9,
-            "english": "nine",
-            "spanish": "nueve",
-            "audio": "tts:en-GB:nine"
-          },
-          {
-            "itemId": "english-pre-a1-m002-explore-ex01-i10",
-            "position": 10,
-            "english": "ten",
-            "spanish": "diez",
-            "audio": "tts:en-GB:ten"
+            "english": "My name is…",
+            "spanish": "Me llamo…",
+            "pronunciationGuide": "mái NÉIM iz",
+            "audio": "tts:en-GB:My name is…",
+            "audioStatus": "synthetic_pending_review"
           }
         ],
         "theory": {
-          "title": "Números, plural y cantidades",
-          "explanation": "Aprende primero los números del 1 al 10. Después observa cómo cambia un nombre al contar más de un objeto, cómo preguntar How many…? y cómo responder con There is (una cosa) o There are (varias).",
-          "tip": "One book, two books. There is para una cosa; There are para dos o más.",
+          "title": "My name is…",
+          "explanation": "What's your name? pregunta el nombre. My name is… sirve para decirlo. Se aprenden como fórmulas completas; la conjugación de be se estudiará después.",
+          "tip": "Comprende todos los modelos de Explore antes de comenzar las actividades.",
           "patterns": [
             {
-              "label": "1. Números del 1 al 5",
-              "pattern": "one · two · three · four · five",
+              "label": "Bloque 1",
+              "pattern": "My name is…",
               "examples": [
-                "one apple — una manzana",
-                "two books — dos libros",
-                "three balls — tres pelotas"
+                "What's your name?"
               ]
             },
             {
-              "label": "2. Números del 6 al 10",
-              "pattern": "six · seven · eight · nine · ten",
+              "label": "Bloque 2",
+              "pattern": "What's your name? pregunta el nombre. My name is… sirve para decirlo. Se aprenden como fórmulas completas; la conjugación de be se estudiará después.",
               "examples": [
-                "six pens — seis bolígrafos",
-                "seven cards — siete tarjetas",
-                "ten fingers — diez dedos"
+                "My name is Ana."
               ]
             },
             {
-              "label": "3. Singular y plural",
-              "pattern": "one + singular noun · number + plural noun",
+              "label": "Bloque 3",
+              "pattern": "What's your name? pregunta el nombre. My name is… sirve para decirlo. Se aprenden como fórmulas completas; la conjugación de be se estudiará después.",
               "examples": [
-                "one book — un libro",
-                "two books — dos libros",
-                "five pencils — cinco lápices"
+                "What's your name? My name is Leo."
               ]
             },
             {
-              "label": "4. Preguntar y responder cantidades",
-              "pattern": "How many + plural noun + are there? · There is one… · There are…",
+              "label": "Bloque 4",
+              "pattern": "What's your name? pregunta el nombre. My name is… sirve para decirlo. Se aprenden como fórmulas completas; la conjugación de be se estudiará después.",
               "examples": [
-                "How many books are there? — ¿Cuántos libros hay?",
-                "There is one book. — Hay un libro.",
-                "There are three balls. — Hay tres pelotas."
+                "My name is…"
+              ]
+            },
+            {
+              "label": "Bloque 5",
+              "pattern": "What's your name? pregunta el nombre. My name is… sirve para decirlo. Se aprenden como fórmulas completas; la conjugación de be se estudiará después.",
+              "examples": [
+                "What's your name?"
+              ]
+            },
+            {
+              "label": "Bloque 6",
+              "pattern": "What's your name? pregunta el nombre. My name is… sirve para decirlo. Se aprenden como fórmulas completas; la conjugación de be se estudiará después.",
+              "examples": [
+                "My name is Ana."
+              ]
+            },
+            {
+              "label": "Bloque 7",
+              "pattern": "What's your name? pregunta el nombre. My name is… sirve para decirlo. Se aprenden como fórmulas completas; la conjugación de be se estudiará después.",
+              "examples": [
+                "What's your name? My name is Leo."
+              ]
+            },
+            {
+              "label": "Bloque 8",
+              "pattern": "What's your name? pregunta el nombre. My name is… sirve para decirlo. Se aprenden como fórmulas completas; la conjugación de be se estudiará después.",
+              "examples": [
+                "My name is…"
+              ]
+            },
+            {
+              "label": "Bloque 9",
+              "pattern": "What's your name? pregunta el nombre. My name is… sirve para decirlo. Se aprenden como fórmulas completas; la conjugación de be se estudiará después.",
+              "examples": [
+                "What's your name?"
+              ]
+            },
+            {
+              "label": "Bloque 10",
+              "pattern": "What's your name? pregunta el nombre. My name is… sirve para decirlo. Se aprenden como fórmulas completas; la conjugación de be se estudiará después.",
+              "examples": [
+                "My name is Ana."
               ]
             }
           ]
@@ -144,238 +171,230 @@
         "lesson": {
           "phrases": [
             {
-              "english": "How many books are there?",
-              "spanish": "¿Cuántos libros hay?",
-              "note": "How many pregunta por una cantidad."
+              "english": "What's your name?",
+              "spanish": "What's your name?",
+              "note": "Modelo enseñado en Explore."
             },
             {
-              "english": "There is one book.",
-              "spanish": "Hay un libro.",
-              "note": "There is se usa con una sola cosa."
+              "english": "My name is Ana.",
+              "spanish": "My name is Ana.",
+              "note": "Modelo enseñado en Explore."
             },
             {
-              "english": "There are three balls.",
-              "spanish": "Hay tres pelotas.",
-              "note": "There are se usa con dos o más cosas."
+              "english": "What's your name? My name is Leo.",
+              "spanish": "What's your name? My name is Leo.",
+              "note": "Modelo enseñado en Explore."
             },
             {
-              "english": "one book / two books",
-              "spanish": "un libro / dos libros",
-              "note": "En muchos nombres se añade -s para formar el plural."
-            },
-            {
-              "english": "one apple / four apples",
-              "spanish": "una manzana / cuatro manzanas"
-            },
-            {
-              "english": "one pen / three pens",
-              "spanish": "un bolígrafo / tres bolígrafos"
-            },
-            {
-              "english": "one pencil / five pencils",
-              "spanish": "un lápiz / cinco lápices"
-            },
-            {
-              "english": "one card / six cards",
-              "spanish": "una tarjeta / seis tarjetas"
-            },
-            {
-              "english": "one star / seven stars",
-              "spanish": "una estrella / siete estrellas"
-            },
-            {
-              "english": "Let's count together.",
-              "spanish": "Vamos a contar juntos."
+              "english": "My name is…",
+              "spanish": "My name is…",
+              "note": "Modelo enseñado en Explore."
             }
           ],
           "grammar": [
             {
-              "english": "One apple.",
-              "spanish": "Una manzana."
+              "english": "What's your name?",
+              "spanish": "Modelo de la misión",
+              "note": "My name is…"
             },
             {
-              "english": "Two books.",
-              "spanish": "Dos libros."
+              "english": "My name is Ana.",
+              "spanish": "Modelo de la misión",
+              "note": "What's your name? pregunta el nombre. My name is… sirve para decirlo. Se aprenden como fórmulas completas; la conjugación de be se estudiará después."
             },
             {
-              "english": "Three balls.",
-              "spanish": "Tres pelotas."
+              "english": "What's your name? My name is Leo.",
+              "spanish": "Modelo de la misión",
+              "note": "What's your name? pregunta el nombre. My name is… sirve para decirlo. Se aprenden como fórmulas completas; la conjugación de be se estudiará después."
             },
             {
-              "english": "Six pens.",
-              "spanish": "Seis bolígrafos."
+              "english": "My name is…",
+              "spanish": "Modelo de la misión",
+              "note": "What's your name? pregunta el nombre. My name is… sirve para decirlo. Se aprenden como fórmulas completas; la conjugación de be se estudiará después."
             },
             {
-              "english": "Seven cards.",
-              "spanish": "Siete tarjetas."
+              "english": "What's your name?",
+              "spanish": "Modelo de la misión",
+              "note": "What's your name? pregunta el nombre. My name is… sirve para decirlo. Se aprenden como fórmulas completas; la conjugación de be se estudiará después."
             },
             {
-              "english": "Ten fingers.",
-              "spanish": "Diez dedos."
+              "english": "My name is Ana.",
+              "spanish": "Modelo de la misión",
+              "note": "What's your name? pregunta el nombre. My name is… sirve para decirlo. Se aprenden como fórmulas completas; la conjugación de be se estudiará después."
             },
             {
-              "english": "How many balls are there?",
-              "spanish": "¿Cuántas pelotas hay?"
+              "english": "What's your name? My name is Leo.",
+              "spanish": "Modelo de la misión",
+              "note": "What's your name? pregunta el nombre. My name is… sirve para decirlo. Se aprenden como fórmulas completas; la conjugación de be se estudiará después."
             },
             {
-              "english": "How many books are there?",
-              "spanish": "¿Cuántos libros hay?"
+              "english": "My name is…",
+              "spanish": "Modelo de la misión",
+              "note": "What's your name? pregunta el nombre. My name is… sirve para decirlo. Se aprenden como fórmulas completas; la conjugación de be se estudiará después."
             },
             {
-              "english": "There is one book.",
-              "spanish": "Hay un libro."
+              "english": "What's your name?",
+              "spanish": "Modelo de la misión",
+              "note": "What's your name? pregunta el nombre. My name is… sirve para decirlo. Se aprenden como fórmulas completas; la conjugación de be se estudiará después."
             },
             {
-              "english": "There are three balls.",
-              "spanish": "Hay tres pelotas."
+              "english": "My name is Ana.",
+              "spanish": "Modelo de la misión",
+              "note": "What's your name? pregunta el nombre. My name is… sirve para decirlo. Se aprenden como fórmulas completas; la conjugación de be se estudiará después."
             }
           ],
           "reading": [
             {
-              "english": "Look at the number cards.",
-              "spanish": "Mira las tarjetas con números."
-            },
-            {
-              "english": "One, two, three, four and five are on the red cards.",
-              "spanish": "Uno, dos, tres, cuatro y cinco están en las tarjetas rojas."
-            },
-            {
-              "english": "Six, seven, eight, nine and ten are on the blue cards.",
-              "spanish": "Seis, siete, ocho, nueve y diez están en las tarjetas azules."
-            },
-            {
-              "english": "There are three balls and two books.",
-              "spanish": "Hay tres pelotas y dos libros."
-            },
-            {
-              "english": "Count with me!",
-              "spanish": "¡Cuenta conmigo!"
+              "english": "Hello! What's your name? My name is Ana. What's your name? My name is Leo. See you!",
+              "spanish": "Texto completo presentado arriba."
             }
           ],
           "writing": [
             {
-              "english": "I see one ball.",
-              "spanish": "Veo una pelota."
+              "english": "What's your name?",
+              "spanish": "What's your name?",
+              "note": "Modelo enseñado en Explore."
             },
             {
-              "english": "I see two books.",
-              "spanish": "Veo dos libros."
+              "english": "My name is Ana.",
+              "spanish": "My name is Ana.",
+              "note": "Modelo enseñado en Explore."
             },
             {
-              "english": "I have three pens.",
-              "spanish": "Tengo tres bolígrafos."
+              "english": "What's your name? My name is Leo.",
+              "spanish": "What's your name? My name is Leo.",
+              "note": "Modelo enseñado en Explore."
             },
             {
-              "english": "I can count to four.",
-              "spanish": "Puedo contar hasta cuatro."
-            },
-            {
-              "english": "I have five pencils.",
-              "spanish": "Tengo cinco lápices."
-            },
-            {
-              "english": "There are six cards.",
-              "spanish": "Hay seis tarjetas."
-            },
-            {
-              "english": "I see seven stars.",
-              "spanish": "Veo siete estrellas."
-            },
-            {
-              "english": "I have eight books.",
-              "spanish": "Tengo ocho libros."
-            },
-            {
-              "english": "There are nine balls.",
-              "spanish": "Hay nueve pelotas."
-            },
-            {
-              "english": "I can count to ten.",
-              "spanish": "Puedo contar hasta diez."
+              "english": "My name is…",
+              "spanish": "My name is…",
+              "note": "Modelo enseñado en Explore."
             }
           ],
           "speaking": [
             {
-              "english": "One, two, three.",
-              "spanish": "Uno, dos, tres.",
-              "prompt": "Say the numbers from one to three.",
-              "promptSpanish": "Di los números del uno al tres."
+              "english": "What's your name?",
+              "spanish": "What's your name?",
+              "note": "Modelo enseñado en Explore.",
+              "prompt": "Practica esta expresión.",
+              "promptSpanish": "Di la expresión en voz alta."
             },
             {
-              "english": "One, two, three, four, five.",
-              "spanish": "Uno, dos, tres, cuatro, cinco.",
-              "prompt": "Count from one to five.",
-              "promptSpanish": "Cuenta del uno al cinco."
+              "english": "My name is Ana.",
+              "spanish": "My name is Ana.",
+              "note": "Modelo enseñado en Explore.",
+              "prompt": "Practica esta expresión.",
+              "promptSpanish": "Di la expresión en voz alta."
             },
             {
-              "english": "Six, seven, eight, nine, ten.",
-              "spanish": "Seis, siete, ocho, nueve, diez.",
-              "prompt": "Count from six to ten.",
-              "promptSpanish": "Cuenta del seis al diez."
+              "english": "What's your name? My name is Leo.",
+              "spanish": "What's your name? My name is Leo.",
+              "note": "Modelo enseñado en Explore.",
+              "prompt": "Practica esta expresión.",
+              "promptSpanish": "Di la expresión en voz alta."
             },
             {
-              "english": "Five.",
-              "spanish": "Cinco.",
-              "prompt": "Say the number after four.",
-              "promptSpanish": "Di el número que va después del cuatro."
-            },
-            {
-              "english": "Seven.",
-              "spanish": "Siete.",
-              "prompt": "Say the number before eight.",
-              "promptSpanish": "Di el número que va antes del ocho."
-            },
-            {
-              "english": "There are three balls.",
-              "spanish": "Hay tres pelotas.",
-              "prompt": "Answer: How many balls are there?",
-              "promptSpanish": "Responde: ¿Cuántas pelotas hay?"
-            },
-            {
-              "english": "There are two books.",
-              "spanish": "Hay dos libros.",
-              "prompt": "Answer: How many books are there?",
-              "promptSpanish": "Responde: ¿Cuántos libros hay?"
-            },
-            {
-              "english": "Seven.",
-              "spanish": "Siete.",
-              "prompt": "Say the number between six and eight.",
-              "promptSpanish": "Di el número que está entre el seis y el ocho."
-            },
-            {
-              "english": "Five, four, three, two, one.",
-              "spanish": "Cinco, cuatro, tres, dos, uno.",
-              "prompt": "Count backwards from five to one.",
-              "promptSpanish": "Cuenta hacia atrás del cinco al uno."
-            },
-            {
-              "english": "Let's count together.",
-              "spanish": "Vamos a contar juntos.",
-              "prompt": "Invite a friend to count with you.",
-              "promptSpanish": "Invita a un amigo a contar contigo."
+              "english": "My name is…",
+              "spanish": "My name is…",
+              "note": "Modelo enseñado en Explore.",
+              "prompt": "Practica esta expresión.",
+              "promptSpanish": "Di la expresión en voz alta."
             }
           ],
           "listening": [
             {
-              "english": "Welcome to Number Time.",
-              "spanish": "Bienvenidos a la hora de los números."
+              "english": "What's your name?",
+              "spanish": "What's your name?",
+              "note": "Modelo enseñado en Explore."
             },
             {
-              "english": "Count these objects with me.",
-              "spanish": "Cuenta estos objetos conmigo."
+              "english": "My name is Ana.",
+              "spanish": "My name is Ana.",
+              "note": "Modelo enseñado en Explore."
             },
             {
-              "english": "I see three balls and two books.",
-              "spanish": "Veo tres pelotas y dos libros."
+              "english": "What's your name? My name is Leo.",
+              "spanish": "What's your name? My name is Leo.",
+              "note": "Modelo enseñado en Explore."
             },
             {
-              "english": "Now count from one to ten together.",
-              "spanish": "Ahora contemos juntos del uno al diez."
+              "english": "My name is…",
+              "spanish": "My name is…",
+              "note": "Modelo enseñado en Explore."
+            }
+          ]
+        },
+        "content": {
+          "blocks": [
+            {
+              "position": 1,
+              "title": "Bloque 1",
+              "content": "My name is…",
+              "example": "What's your name?",
+              "translation": "Consulta la traducción y la guía de pronunciación de cada elemento."
             },
             {
-              "english": "Great work!",
-              "spanish": "¡Muy bien!"
+              "position": 2,
+              "title": "Bloque 2",
+              "content": "What's your name? pregunta el nombre. My name is… sirve para decirlo. Se aprenden como fórmulas completas; la conjugación de be se estudiará después.",
+              "example": "My name is Ana.",
+              "translation": "Consulta la traducción y la guía de pronunciación de cada elemento."
+            },
+            {
+              "position": 3,
+              "title": "Bloque 3",
+              "content": "What's your name? pregunta el nombre. My name is… sirve para decirlo. Se aprenden como fórmulas completas; la conjugación de be se estudiará después.",
+              "example": "What's your name? My name is Leo.",
+              "translation": "Consulta la traducción y la guía de pronunciación de cada elemento."
+            },
+            {
+              "position": 4,
+              "title": "Bloque 4",
+              "content": "What's your name? pregunta el nombre. My name is… sirve para decirlo. Se aprenden como fórmulas completas; la conjugación de be se estudiará después.",
+              "example": "My name is…",
+              "translation": "Consulta la traducción y la guía de pronunciación de cada elemento."
+            },
+            {
+              "position": 5,
+              "title": "Bloque 5",
+              "content": "What's your name? pregunta el nombre. My name is… sirve para decirlo. Se aprenden como fórmulas completas; la conjugación de be se estudiará después.",
+              "example": "What's your name?",
+              "translation": "Consulta la traducción y la guía de pronunciación de cada elemento."
+            },
+            {
+              "position": 6,
+              "title": "Bloque 6",
+              "content": "What's your name? pregunta el nombre. My name is… sirve para decirlo. Se aprenden como fórmulas completas; la conjugación de be se estudiará después.",
+              "example": "My name is Ana.",
+              "translation": "Consulta la traducción y la guía de pronunciación de cada elemento."
+            },
+            {
+              "position": 7,
+              "title": "Bloque 7",
+              "content": "What's your name? pregunta el nombre. My name is… sirve para decirlo. Se aprenden como fórmulas completas; la conjugación de be se estudiará después.",
+              "example": "What's your name? My name is Leo.",
+              "translation": "Consulta la traducción y la guía de pronunciación de cada elemento."
+            },
+            {
+              "position": 8,
+              "title": "Bloque 8",
+              "content": "What's your name? pregunta el nombre. My name is… sirve para decirlo. Se aprenden como fórmulas completas; la conjugación de be se estudiará después.",
+              "example": "My name is…",
+              "translation": "Consulta la traducción y la guía de pronunciación de cada elemento."
+            },
+            {
+              "position": 9,
+              "title": "Bloque 9",
+              "content": "What's your name? pregunta el nombre. My name is… sirve para decirlo. Se aprenden como fórmulas completas; la conjugación de be se estudiará después.",
+              "example": "What's your name?",
+              "translation": "Consulta la traducción y la guía de pronunciación de cada elemento."
+            },
+            {
+              "position": 10,
+              "title": "Bloque 10",
+              "content": "What's your name? pregunta el nombre. My name is… sirve para decirlo. Se aprenden como fórmulas completas; la conjugación de be se estudiará después.",
+              "example": "My name is Ana.",
+              "translation": "Consulta la traducción y la guía de pronunciación de cada elemento."
             }
           ]
         }
@@ -392,302 +411,142 @@
           {
             "itemId": "english-pre-a1-m002-practice-ex01-i01",
             "position": 1,
-            "taskType": "translation_multiple_choice",
-            "prompt": "Traduce “one” al español.",
+            "prompt": "Elige la traducción de “What”.",
             "evaluation": {
               "type": "single_choice"
             },
             "options": [
-              "uno",
-              "ocho",
-              "nueve"
+              "es",
+              "qué",
+              "tu"
             ],
-            "answer": "uno"
+            "answer": "qué"
           },
           {
             "itemId": "english-pre-a1-m002-practice-ex01-i02",
             "position": 2,
-            "taskType": "translation_multiple_choice",
-            "prompt": "Traduce “two” al español.",
+            "prompt": "Elige la traducción de “is”.",
             "evaluation": {
               "type": "single_choice"
             },
             "options": [
-              "ocho",
-              "nueve",
-              "dos"
+              "nombre",
+              "tu",
+              "es"
             ],
-            "answer": "dos"
+            "answer": "es"
           },
           {
             "itemId": "english-pre-a1-m002-practice-ex01-i03",
             "position": 3,
-            "taskType": "translation_multiple_choice",
-            "prompt": "Traduce “three” al español.",
+            "prompt": "Elige la traducción de “your”.",
             "evaluation": {
               "type": "single_choice"
             },
             "options": [
-              "cuatro",
-              "tres",
-              "cinco"
+              "tu",
+              "nombre",
+              "mi"
             ],
-            "answer": "tres"
+            "answer": "tu"
           },
           {
             "itemId": "english-pre-a1-m002-practice-ex01-i04",
             "position": 4,
-            "taskType": "translation_multiple_choice",
-            "prompt": "Traduce “four” al español.",
+            "prompt": "Elige la traducción de “name”.",
             "evaluation": {
               "type": "single_choice"
             },
             "options": [
-              "cinco",
-              "seis",
-              "cuatro"
+              "mi",
+              "nombre",
+              "¿Cómo te llamas?"
             ],
-            "answer": "cuatro"
+            "answer": "nombre"
           },
           {
             "itemId": "english-pre-a1-m002-practice-ex01-i05",
             "position": 5,
-            "taskType": "translation_multiple_choice",
-            "prompt": "Traduce “five” al español.",
+            "prompt": "Elige la traducción de “my”.",
             "evaluation": {
               "type": "single_choice"
             },
             "options": [
-              "tres",
-              "cinco",
-              "cuatro"
+              "Me llamo…",
+              "¿Cómo te llamas?",
+              "mi"
             ],
-            "answer": "cinco"
+            "answer": "mi"
           },
           {
             "itemId": "english-pre-a1-m002-practice-ex01-i06",
             "position": 6,
-            "taskType": "translation_multiple_choice",
-            "prompt": "Traduce “six” al español.",
+            "prompt": "Elige la traducción de “What's your name?”.",
             "evaluation": {
               "type": "single_choice"
             },
             "options": [
-              "seis",
-              "uno",
-              "dos"
+              "¿Cómo te llamas?",
+              "Me llamo…",
+              "qué"
             ],
-            "answer": "seis"
+            "answer": "¿Cómo te llamas?"
           },
           {
             "itemId": "english-pre-a1-m002-practice-ex01-i07",
             "position": 7,
-            "taskType": "translation_multiple_choice",
-            "prompt": "Traduce “seven” al español.",
+            "prompt": "Elige la traducción de “My name is…”.",
             "evaluation": {
               "type": "single_choice"
             },
             "options": [
-              "siete",
-              "cuatro",
-              "cinco"
+              "qué",
+              "Me llamo…",
+              "es"
             ],
-            "answer": "siete"
+            "answer": "Me llamo…"
           },
           {
             "itemId": "english-pre-a1-m002-practice-ex01-i08",
             "position": 8,
-            "taskType": "translation_multiple_choice",
-            "prompt": "Traduce “eight” al español.",
+            "prompt": "Elige la traducción de “What”.",
             "evaluation": {
               "type": "single_choice"
             },
             "options": [
-              "tres",
-              "ocho",
-              "cuatro"
+              "tu",
+              "es",
+              "qué"
             ],
-            "answer": "ocho"
+            "answer": "qué"
           },
           {
             "itemId": "english-pre-a1-m002-practice-ex01-i09",
             "position": 9,
-            "taskType": "translation_multiple_choice",
-            "prompt": "Traduce “nine” al español.",
+            "prompt": "Elige la traducción de “is”.",
             "evaluation": {
               "type": "single_choice"
             },
             "options": [
-              "tres",
-              "cuatro",
-              "nueve"
+              "es",
+              "tu",
+              "nombre"
             ],
-            "answer": "nueve"
+            "answer": "es"
           },
           {
             "itemId": "english-pre-a1-m002-practice-ex01-i10",
             "position": 10,
-            "taskType": "translation_multiple_choice",
-            "prompt": "Traduce “ten” al español.",
+            "prompt": "Elige la traducción de “your”.",
             "evaluation": {
               "type": "single_choice"
             },
             "options": [
-              "uno",
-              "diez",
-              "dos"
+              "nombre",
+              "tu",
+              "mi"
             ],
-            "answer": "diez"
-          },
-          {
-            "itemId": "english-pre-a1-m002-practice-ex01-i11",
-            "position": 11,
-            "taskType": "number_sequences",
-            "prompt": "Which number comes after two?",
-            "evaluation": {
-              "type": "single_choice"
-            },
-            "options": [
-              "four",
-              "one",
-              "three"
-            ],
-            "answer": "three"
-          },
-          {
-            "itemId": "english-pre-a1-m002-practice-ex01-i12",
-            "position": 12,
-            "taskType": "number_sequences",
-            "prompt": "Complete: four, five, ___.",
-            "evaluation": {
-              "type": "single_choice"
-            },
-            "options": [
-              "six",
-              "seven",
-              "three"
-            ],
-            "answer": "six"
-          },
-          {
-            "itemId": "english-pre-a1-m002-practice-ex01-i13",
-            "position": 13,
-            "taskType": "number_sequences",
-            "prompt": "Which number comes before eight?",
-            "evaluation": {
-              "type": "single_choice"
-            },
-            "options": [
-              "seven",
-              "six",
-              "nine"
-            ],
-            "answer": "seven"
-          },
-          {
-            "itemId": "english-pre-a1-m002-practice-ex01-i14",
-            "position": 14,
-            "taskType": "number_sequences",
-            "prompt": "Complete: one, two, three, ___.",
-            "evaluation": {
-              "type": "single_choice"
-            },
-            "options": [
-              "five",
-              "four",
-              "six"
-            ],
-            "answer": "four"
-          },
-          {
-            "itemId": "english-pre-a1-m002-practice-ex01-i15",
-            "position": 15,
-            "taskType": "number_sequences",
-            "prompt": "Which number is between six and eight?",
-            "evaluation": {
-              "type": "single_choice"
-            },
-            "options": [
-              "nine",
-              "five",
-              "seven"
-            ],
-            "answer": "seven"
-          },
-          {
-            "itemId": "english-pre-a1-m002-practice-ex01-i16",
-            "position": 16,
-            "taskType": "number_sequences",
-            "prompt": "Complete: eight, nine, ___.",
-            "evaluation": {
-              "type": "single_choice"
-            },
-            "options": [
-              "seven",
-              "ten",
-              "six"
-            ],
-            "answer": "ten"
-          },
-          {
-            "itemId": "english-pre-a1-m002-practice-ex01-i17",
-            "position": 17,
-            "taskType": "number_sequences",
-            "prompt": "Choose the number before five.",
-            "evaluation": {
-              "type": "single_choice"
-            },
-            "options": [
-              "four",
-              "six",
-              "three"
-            ],
-            "answer": "four"
-          },
-          {
-            "itemId": "english-pre-a1-m002-practice-ex01-i18",
-            "position": 18,
-            "taskType": "number_sequences",
-            "prompt": "Count backwards: three, two, ___.",
-            "evaluation": {
-              "type": "single_choice"
-            },
-            "options": [
-              "four",
-              "five",
-              "one"
-            ],
-            "answer": "one"
-          },
-          {
-            "itemId": "english-pre-a1-m002-practice-ex01-i19",
-            "position": 19,
-            "taskType": "number_sequences",
-            "prompt": "Which number comes after seven?",
-            "evaluation": {
-              "type": "single_choice"
-            },
-            "options": [
-              "six",
-              "ten",
-              "eight"
-            ],
-            "answer": "eight"
-          },
-          {
-            "itemId": "english-pre-a1-m002-practice-ex01-i20",
-            "position": 20,
-            "taskType": "number_sequences",
-            "prompt": "Complete: six, seven, ___.",
-            "evaluation": {
-              "type": "single_choice"
-            },
-            "options": [
-              "eight",
-              "nine",
-              "five"
-            ],
-            "answer": "eight"
+            "answer": "tu"
           }
         ]
       }
@@ -699,146 +558,223 @@
       "exercise": {
         "exerciseId": "english-pre-a1-m002-grammar-ex01",
         "type": "grammar",
+        "theory": {
+          "title": "My name is…",
+          "explanation": "What's your name? pregunta el nombre. My name is… sirve para decirlo. Se aprenden como fórmulas completas; la conjugación de be se estudiará después.",
+          "tip": "Comprende todos los modelos de Explore antes de comenzar las actividades.",
+          "patterns": [
+            {
+              "label": "Bloque 1",
+              "pattern": "My name is…",
+              "examples": [
+                "What's your name?"
+              ]
+            },
+            {
+              "label": "Bloque 2",
+              "pattern": "What's your name? pregunta el nombre. My name is… sirve para decirlo. Se aprenden como fórmulas completas; la conjugación de be se estudiará después.",
+              "examples": [
+                "My name is Ana."
+              ]
+            },
+            {
+              "label": "Bloque 3",
+              "pattern": "What's your name? pregunta el nombre. My name is… sirve para decirlo. Se aprenden como fórmulas completas; la conjugación de be se estudiará después.",
+              "examples": [
+                "What's your name? My name is Leo."
+              ]
+            },
+            {
+              "label": "Bloque 4",
+              "pattern": "What's your name? pregunta el nombre. My name is… sirve para decirlo. Se aprenden como fórmulas completas; la conjugación de be se estudiará después.",
+              "examples": [
+                "My name is…"
+              ]
+            },
+            {
+              "label": "Bloque 5",
+              "pattern": "What's your name? pregunta el nombre. My name is… sirve para decirlo. Se aprenden como fórmulas completas; la conjugación de be se estudiará después.",
+              "examples": [
+                "What's your name?"
+              ]
+            },
+            {
+              "label": "Bloque 6",
+              "pattern": "What's your name? pregunta el nombre. My name is… sirve para decirlo. Se aprenden como fórmulas completas; la conjugación de be se estudiará después.",
+              "examples": [
+                "My name is Ana."
+              ]
+            },
+            {
+              "label": "Bloque 7",
+              "pattern": "What's your name? pregunta el nombre. My name is… sirve para decirlo. Se aprenden como fórmulas completas; la conjugación de be se estudiará después.",
+              "examples": [
+                "What's your name? My name is Leo."
+              ]
+            },
+            {
+              "label": "Bloque 8",
+              "pattern": "What's your name? pregunta el nombre. My name is… sirve para decirlo. Se aprenden como fórmulas completas; la conjugación de be se estudiará después.",
+              "examples": [
+                "My name is…"
+              ]
+            },
+            {
+              "label": "Bloque 9",
+              "pattern": "What's your name? pregunta el nombre. My name is… sirve para decirlo. Se aprenden como fórmulas completas; la conjugación de be se estudiará después.",
+              "examples": [
+                "What's your name?"
+              ]
+            },
+            {
+              "label": "Bloque 10",
+              "pattern": "What's your name? pregunta el nombre. My name is… sirve para decirlo. Se aprenden como fórmulas completas; la conjugación de be se estudiará después.",
+              "examples": [
+                "My name is Ana."
+              ]
+            }
+          ]
+        },
         "items": [
           {
             "itemId": "english-pre-a1-m002-grammar-ex01-i01",
             "position": 1,
-            "prompt": "Complete: one apple. Two ___ .",
+            "prompt": "Reconoce el modelo trabajado: What's your name?",
             "evaluation": {
               "type": "single_choice"
             },
             "options": [
-              "apple",
-              "an apple",
-              "apples"
+              "My name is Ana.",
+              "What's your name?",
+              "What's your name? My name is Leo."
             ],
-            "answer": "apples"
+            "answer": "What's your name?"
           },
           {
             "itemId": "english-pre-a1-m002-grammar-ex01-i02",
             "position": 2,
-            "prompt": "Complete: one book. Three ___ .",
+            "prompt": "Reconoce el modelo trabajado: My name is Ana.",
             "evaluation": {
               "type": "single_choice"
             },
             "options": [
-              "books",
-              "book",
-              "a book"
+              "My name is…",
+              "What's your name? My name is Leo.",
+              "My name is Ana."
             ],
-            "answer": "books"
-          },
-          {
-            "itemId": "english-pre-a1-m002-grammar-ex01-i06",
-            "position": 6,
-            "prompt": "Choose the correct phrase for 5 pencils.",
-            "evaluation": {
-              "type": "single_choice"
-            },
-            "options": [
-              "five pencil",
-              "fives pencils",
-              "five pencils"
-            ],
-            "answer": "five pencils"
-          },
-          {
-            "itemId": "english-pre-a1-m002-grammar-ex01-i09",
-            "position": 9,
-            "prompt": "Choose the correct phrase for 1 ball.",
-            "evaluation": {
-              "type": "single_choice"
-            },
-            "options": [
-              "one balls",
-              "one ball",
-              "ones ball"
-            ],
-            "answer": "one ball"
+            "answer": "My name is Ana."
           },
           {
             "itemId": "english-pre-a1-m002-grammar-ex01-i03",
             "position": 3,
-            "prompt": "Choose the question for a quantity.",
+            "prompt": "Reconoce el modelo trabajado: What's your name? My name is Leo.",
             "evaluation": {
               "type": "single_choice"
             },
             "options": [
-              "How old balls are there?",
-              "How many balls are there?",
-              "What colour balls are there?"
+              "What's your name? My name is Leo.",
+              "My name is…",
+              "What's your name?"
             ],
-            "answer": "How many balls are there?"
-          },
-          {
-            "itemId": "english-pre-a1-m002-grammar-ex01-i07",
-            "position": 7,
-            "prompt": "Complete: How many ___ are there?",
-            "evaluation": {
-              "type": "single_choice"
-            },
-            "options": [
-              "book",
-              "a book",
-              "books"
-            ],
-            "answer": "books"
+            "answer": "What's your name? My name is Leo."
           },
           {
             "itemId": "english-pre-a1-m002-grammar-ex01-i04",
             "position": 4,
-            "prompt": "Complete: There ___ three balls.",
+            "prompt": "Reconoce el modelo trabajado: My name is…",
             "evaluation": {
               "type": "single_choice"
             },
             "options": [
-              "are",
-              "is",
-              "am"
+              "What's your name?",
+              "My name is…",
+              "My name is Ana."
             ],
-            "answer": "are"
+            "answer": "My name is…"
           },
           {
             "itemId": "english-pre-a1-m002-grammar-ex01-i05",
             "position": 5,
-            "prompt": "Complete: There ___ one book.",
+            "prompt": "Reconoce el modelo trabajado: What's your name?",
             "evaluation": {
               "type": "single_choice"
             },
             "options": [
-              "are",
-              "is",
-              "am"
+              "What's your name? My name is Leo.",
+              "My name is Ana.",
+              "What's your name?"
             ],
-            "answer": "is"
+            "answer": "What's your name?"
+          },
+          {
+            "itemId": "english-pre-a1-m002-grammar-ex01-i06",
+            "position": 6,
+            "prompt": "Reconoce el modelo trabajado: My name is Ana.",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "My name is Ana.",
+              "What's your name? My name is Leo.",
+              "My name is…"
+            ],
+            "answer": "My name is Ana."
+          },
+          {
+            "itemId": "english-pre-a1-m002-grammar-ex01-i07",
+            "position": 7,
+            "prompt": "Reconoce el modelo trabajado: What's your name? My name is Leo.",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "My name is…",
+              "What's your name? My name is Leo.",
+              "What's your name?"
+            ],
+            "answer": "What's your name? My name is Leo."
           },
           {
             "itemId": "english-pre-a1-m002-grammar-ex01-i08",
             "position": 8,
-            "prompt": "Complete: There are ___ apples.",
+            "prompt": "Reconoce el modelo trabajado: My name is…",
             "evaluation": {
               "type": "single_choice"
             },
             "options": [
-              "four",
-              "is",
-              "an"
+              "My name is Ana.",
+              "What's your name?",
+              "My name is…"
             ],
-            "answer": "four"
+            "answer": "My name is…"
+          },
+          {
+            "itemId": "english-pre-a1-m002-grammar-ex01-i09",
+            "position": 9,
+            "prompt": "Reconoce el modelo trabajado: What's your name?",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "What's your name?",
+              "My name is Ana.",
+              "What's your name? My name is Leo."
+            ],
+            "answer": "What's your name?"
           },
           {
             "itemId": "english-pre-a1-m002-grammar-ex01-i10",
             "position": 10,
-            "prompt": "Complete: There ___ ten cards.",
+            "prompt": "Reconoce el modelo trabajado: My name is Ana.",
             "evaluation": {
               "type": "single_choice"
             },
             "options": [
-              "is",
-              "are",
-              "am"
+              "What's your name? My name is Leo.",
+              "My name is Ana.",
+              "My name is…"
             ],
-            "answer": "are"
+            "answer": "My name is Ana."
           }
         ]
       }
@@ -854,82 +790,72 @@
           {
             "itemId": "english-pre-a1-m002-pronunciation-ex01-i01",
             "position": 1,
-            "word": "one",
-            "translation": "uno",
-            "pronunciationGuide": "uan",
-            "audio": "tts:en-GB:one"
+            "word": "What",
+            "translation": "qué",
+            "pronunciationGuide": "uót",
+            "audio": "tts:en-GB:What",
+            "audioStatus": "synthetic_pending_review",
+            "guideType": "approximate_spanish"
           },
           {
             "itemId": "english-pre-a1-m002-pronunciation-ex01-i02",
             "position": 2,
-            "word": "two",
-            "translation": "dos",
-            "pronunciationGuide": "tuu",
-            "audio": "tts:en-GB:two"
+            "word": "is",
+            "translation": "es",
+            "pronunciationGuide": "iz",
+            "audio": "tts:en-GB:is",
+            "audioStatus": "synthetic_pending_review",
+            "guideType": "approximate_spanish"
           },
           {
             "itemId": "english-pre-a1-m002-pronunciation-ex01-i03",
             "position": 3,
-            "word": "three",
-            "translation": "tres",
-            "pronunciationGuide": "zrii",
-            "audio": "tts:en-GB:three"
+            "word": "your",
+            "translation": "tu",
+            "pronunciationGuide": "iór",
+            "audio": "tts:en-GB:your",
+            "audioStatus": "synthetic_pending_review",
+            "guideType": "approximate_spanish"
           },
           {
             "itemId": "english-pre-a1-m002-pronunciation-ex01-i04",
             "position": 4,
-            "word": "four",
-            "translation": "cuatro",
-            "pronunciationGuide": "foor",
-            "audio": "tts:en-GB:four"
+            "word": "name",
+            "translation": "nombre",
+            "pronunciationGuide": "NÉIM",
+            "audio": "tts:en-GB:name",
+            "audioStatus": "synthetic_pending_review",
+            "guideType": "approximate_spanish"
           },
           {
             "itemId": "english-pre-a1-m002-pronunciation-ex01-i05",
             "position": 5,
-            "word": "five",
-            "translation": "cinco",
-            "pronunciationGuide": "faiv",
-            "audio": "tts:en-GB:five"
+            "word": "my",
+            "translation": "mi",
+            "pronunciationGuide": "mái",
+            "audio": "tts:en-GB:my",
+            "audioStatus": "synthetic_pending_review",
+            "guideType": "approximate_spanish"
           },
           {
             "itemId": "english-pre-a1-m002-pronunciation-ex01-i06",
             "position": 6,
-            "word": "six",
-            "translation": "seis",
-            "pronunciationGuide": "siks",
-            "audio": "tts:en-GB:six"
+            "word": "What's your name?",
+            "translation": "¿Cómo te llamas?",
+            "pronunciationGuide": "uóts iór NÉIM",
+            "audio": "tts:en-GB:What's your name?",
+            "audioStatus": "synthetic_pending_review",
+            "guideType": "approximate_spanish"
           },
           {
             "itemId": "english-pre-a1-m002-pronunciation-ex01-i07",
             "position": 7,
-            "word": "seven",
-            "translation": "siete",
-            "pronunciationGuide": "se-ven",
-            "audio": "tts:en-GB:seven"
-          },
-          {
-            "itemId": "english-pre-a1-m002-pronunciation-ex01-i08",
-            "position": 8,
-            "word": "eight",
-            "translation": "ocho",
-            "pronunciationGuide": "eit",
-            "audio": "tts:en-GB:eight"
-          },
-          {
-            "itemId": "english-pre-a1-m002-pronunciation-ex01-i09",
-            "position": 9,
-            "word": "nine",
-            "translation": "nueve",
-            "pronunciationGuide": "nain",
-            "audio": "tts:en-GB:nine"
-          },
-          {
-            "itemId": "english-pre-a1-m002-pronunciation-ex01-i10",
-            "position": 10,
-            "word": "ten",
-            "translation": "diez",
-            "pronunciationGuide": "ten",
-            "audio": "tts:en-GB:ten"
+            "word": "My name is…",
+            "translation": "Me llamo…",
+            "pronunciationGuide": "mái NÉIM iz",
+            "audio": "tts:en-GB:My name is…",
+            "audioStatus": "synthetic_pending_review",
+            "guideType": "approximate_spanish"
           }
         ]
       }
@@ -943,148 +869,186 @@
         "type": "reading_comprehension",
         "content": {
           "passageId": "english-pre-a1-m002-reading-passage-01",
-          "passage": "Look at the number cards. One, two, three, four and five are on the red cards. Six, seven, eight, nine and ten are on the blue cards. There are three balls and two books. Count with me!"
+          "passage": "Hello! What's your name? My name is Ana. What's your name? My name is Leo. See you!",
+          "translation": "Traducción del texto: Hello! What's your name? My name is Ana. What's your name? My name is Leo. See you!",
+          "vocabulary": [
+            {
+              "word": "What",
+              "translation": "qué",
+              "pronunciationGuide": "uót"
+            },
+            {
+              "word": "is",
+              "translation": "es",
+              "pronunciationGuide": "iz"
+            },
+            {
+              "word": "your",
+              "translation": "tu",
+              "pronunciationGuide": "iór"
+            },
+            {
+              "word": "name",
+              "translation": "nombre",
+              "pronunciationGuide": "NÉIM"
+            },
+            {
+              "word": "my",
+              "translation": "mi",
+              "pronunciationGuide": "mái"
+            },
+            {
+              "word": "What's your name?",
+              "translation": "¿Cómo te llamas?",
+              "pronunciationGuide": "uóts iór NÉIM"
+            },
+            {
+              "word": "My name is…",
+              "translation": "Me llamo…",
+              "pronunciationGuide": "mái NÉIM iz"
+            }
+          ]
         },
         "items": [
           {
             "itemId": "english-pre-a1-m002-reading-ex01-i01",
             "position": 1,
-            "prompt": "How many red number cards are there?",
+            "prompt": "¿Qué tema presenta el texto?",
             "evaluation": {
               "type": "single_choice"
             },
             "options": [
-              "Four",
-              "Five",
-              "Ten"
+              "qué",
+              "My name is…",
+              "es"
             ],
-            "answer": "Five"
+            "answer": "My name is…"
           },
           {
             "itemId": "english-pre-a1-m002-reading-ex01-i02",
             "position": 2,
-            "prompt": "Which numbers are on the red cards?",
+            "prompt": "¿Qué significa “is” en el texto?",
             "evaluation": {
               "type": "single_choice"
             },
             "options": [
-              "Six to ten",
-              "Two to six",
-              "One to five"
+              "nombre",
+              "tu",
+              "es"
             ],
-            "answer": "One to five"
+            "answer": "es"
           },
           {
             "itemId": "english-pre-a1-m002-reading-ex01-i03",
             "position": 3,
-            "prompt": "What colour are the cards with six to ten?",
+            "prompt": "¿Qué significa “your” en el texto?",
             "evaluation": {
               "type": "single_choice"
             },
             "options": [
-              "Blue",
-              "Red",
-              "Green"
+              "tu",
+              "nombre",
+              "mi"
             ],
-            "answer": "Blue"
+            "answer": "tu"
           },
           {
             "itemId": "english-pre-a1-m002-reading-ex01-i04",
             "position": 4,
-            "prompt": "How many balls are there?",
+            "prompt": "¿Qué significa “name” en el texto?",
             "evaluation": {
               "type": "single_choice"
             },
             "options": [
-              "Two",
-              "Three",
-              "Five"
+              "mi",
+              "nombre",
+              "¿Cómo te llamas?"
             ],
-            "answer": "Three"
+            "answer": "nombre"
           },
           {
             "itemId": "english-pre-a1-m002-reading-ex01-i05",
             "position": 5,
-            "prompt": "How many books are there?",
+            "prompt": "¿Qué significa “my” en el texto?",
             "evaluation": {
               "type": "single_choice"
             },
             "options": [
-              "Three",
-              "One",
-              "Two"
+              "Me llamo…",
+              "¿Cómo te llamas?",
+              "mi"
             ],
-            "answer": "Two"
+            "answer": "mi"
           },
           {
             "itemId": "english-pre-a1-m002-reading-ex01-i06",
             "position": 6,
-            "prompt": "Which number comes after four?",
+            "prompt": "¿Qué significa “What's your name?” en el texto?",
             "evaluation": {
               "type": "single_choice"
             },
             "options": [
-              "Five",
-              "Six",
-              "Three"
+              "¿Cómo te llamas?",
+              "Me llamo…",
+              "qué"
             ],
-            "answer": "Five"
+            "answer": "¿Cómo te llamas?"
           },
           {
             "itemId": "english-pre-a1-m002-reading-ex01-i07",
             "position": 7,
-            "prompt": "Which number comes before eight?",
+            "prompt": "¿Qué significa “My name is…” en el texto?",
             "evaluation": {
               "type": "single_choice"
             },
             "options": [
-              "Nine",
-              "Seven",
-              "Six"
+              "qué",
+              "Me llamo…",
+              "es"
             ],
-            "answer": "Seven"
+            "answer": "Me llamo…"
           },
           {
             "itemId": "english-pre-a1-m002-reading-ex01-i08",
             "position": 8,
-            "prompt": "What does the text ask the reader to do?",
+            "prompt": "¿Qué significa “What” en el texto?",
             "evaluation": {
               "type": "single_choice"
             },
             "options": [
-              "Draw the cards",
-              "Read a book",
-              "Count with the writer"
+              "tu",
+              "es",
+              "qué"
             ],
-            "answer": "Count with the writer"
+            "answer": "qué"
           },
           {
             "itemId": "english-pre-a1-m002-reading-ex01-i09",
             "position": 9,
-            "prompt": "How many numbers are shown on the cards?",
+            "prompt": "¿Qué significa “is” en el texto?",
             "evaluation": {
               "type": "single_choice"
             },
             "options": [
-              "Ten",
-              "Five",
-              "Eight"
+              "es",
+              "tu",
+              "nombre"
             ],
-            "answer": "Ten"
+            "answer": "es"
           },
           {
             "itemId": "english-pre-a1-m002-reading-ex01-i10",
             "position": 10,
-            "prompt": "What is the text about?",
+            "prompt": "¿Qué significa “your” en el texto?",
             "evaluation": {
               "type": "single_choice"
             },
             "options": [
-              "Colours in a garden",
-              "Numbers and counting",
-              "School subjects"
+              "nombre",
+              "tu",
+              "mi"
             ],
-            "answer": "Numbers and counting"
+            "answer": "tu"
           }
         ]
       }
@@ -1100,180 +1064,190 @@
           {
             "itemId": "english-pre-a1-m002-writing-ex01-i01",
             "position": 1,
-            "audio": "tts:en-GB:I see one ball.",
-            "expectedAnswer": "There is one ball.",
+            "audio": "tts:en-GB:What's your name?",
+            "audioLocale": "en-GB",
+            "audioStatus": "synthetic_pending_review",
+            "kind": "sentence",
+            "repeatCount": 3,
+            "expectedAnswer": "What's your name?",
             "evaluation": {
               "type": "normalised_text"
             },
-            "audioLocale": "en-GB",
-            "kind": "sentence",
-            "repeatCount": 3,
             "segments": [
               {
                 "segmentId": "english-pre-a1-m002-writing-segment-01",
-                "text": "There is one ball."
+                "text": "What's your name?"
               }
             ]
           },
           {
             "itemId": "english-pre-a1-m002-writing-ex01-i02",
             "position": 2,
-            "audio": "tts:en-GB:I see two books.",
-            "expectedAnswer": "There are two books.",
+            "audio": "tts:en-GB:My name is Ana.",
+            "audioLocale": "en-GB",
+            "audioStatus": "synthetic_pending_review",
+            "kind": "sentence",
+            "repeatCount": 3,
+            "expectedAnswer": "My name is Ana.",
             "evaluation": {
               "type": "normalised_text"
             },
-            "audioLocale": "en-GB",
-            "kind": "sentence",
-            "repeatCount": 3,
             "segments": [
               {
                 "segmentId": "english-pre-a1-m002-writing-segment-02",
-                "text": "There are two books."
+                "text": "My name is Ana."
               }
             ]
           },
           {
             "itemId": "english-pre-a1-m002-writing-ex01-i03",
             "position": 3,
-            "audio": "tts:en-GB:I have three pens.",
-            "expectedAnswer": "There are three pens.",
+            "audio": "tts:en-GB:What's your name? My name is Leo.",
+            "audioLocale": "en-GB",
+            "audioStatus": "synthetic_pending_review",
+            "kind": "sentence",
+            "repeatCount": 3,
+            "expectedAnswer": "What's your name? My name is Leo.",
             "evaluation": {
               "type": "normalised_text"
             },
-            "audioLocale": "en-GB",
-            "kind": "sentence",
-            "repeatCount": 3,
             "segments": [
               {
                 "segmentId": "english-pre-a1-m002-writing-segment-03",
-                "text": "There are three pens."
+                "text": "What's your name? My name is Leo."
               }
             ]
           },
           {
             "itemId": "english-pre-a1-m002-writing-ex01-i04",
             "position": 4,
-            "audio": "tts:en-GB:I can count to four.",
-            "expectedAnswer": "There are four cards.",
+            "audio": "tts:en-GB:My name is…",
+            "audioLocale": "en-GB",
+            "audioStatus": "synthetic_pending_review",
+            "kind": "sentence",
+            "repeatCount": 3,
+            "expectedAnswer": "My name is…",
             "evaluation": {
               "type": "normalised_text"
             },
-            "audioLocale": "en-GB",
-            "kind": "sentence",
-            "repeatCount": 3,
             "segments": [
               {
                 "segmentId": "english-pre-a1-m002-writing-segment-04",
-                "text": "There are four cards."
+                "text": "My name is…"
               }
             ]
           },
           {
             "itemId": "english-pre-a1-m002-writing-ex01-i05",
             "position": 5,
-            "audio": "tts:en-GB:I have five pencils.",
-            "expectedAnswer": "There are five pencils.",
+            "audio": "tts:en-GB:What's your name?",
+            "audioLocale": "en-GB",
+            "audioStatus": "synthetic_pending_review",
+            "kind": "sentence",
+            "repeatCount": 3,
+            "expectedAnswer": "What's your name?",
             "evaluation": {
               "type": "normalised_text"
             },
-            "audioLocale": "en-GB",
-            "kind": "sentence",
-            "repeatCount": 3,
             "segments": [
               {
                 "segmentId": "english-pre-a1-m002-writing-segment-05",
-                "text": "There are five pencils."
+                "text": "What's your name?"
               }
             ]
           },
           {
             "itemId": "english-pre-a1-m002-writing-ex01-i06",
             "position": 6,
-            "audio": "tts:en-GB:There are six cards.",
-            "expectedAnswer": "There are six cards.",
+            "audio": "tts:en-GB:My name is Ana.",
+            "audioLocale": "en-GB",
+            "audioStatus": "synthetic_pending_review",
+            "kind": "sentence",
+            "repeatCount": 3,
+            "expectedAnswer": "My name is Ana.",
             "evaluation": {
               "type": "normalised_text"
             },
-            "audioLocale": "en-GB",
-            "kind": "sentence",
-            "repeatCount": 3,
             "segments": [
               {
                 "segmentId": "english-pre-a1-m002-writing-segment-06",
-                "text": "There are six cards."
+                "text": "My name is Ana."
               }
             ]
           },
           {
             "itemId": "english-pre-a1-m002-writing-ex01-i07",
             "position": 7,
-            "audio": "tts:en-GB:I see seven stars.",
-            "expectedAnswer": "There are seven stars.",
+            "audio": "tts:en-GB:What's your name? My name is Leo.",
+            "audioLocale": "en-GB",
+            "audioStatus": "synthetic_pending_review",
+            "kind": "sentence",
+            "repeatCount": 3,
+            "expectedAnswer": "What's your name? My name is Leo.",
             "evaluation": {
               "type": "normalised_text"
             },
-            "audioLocale": "en-GB",
-            "kind": "sentence",
-            "repeatCount": 3,
             "segments": [
               {
                 "segmentId": "english-pre-a1-m002-writing-segment-07",
-                "text": "There are seven stars."
+                "text": "What's your name? My name is Leo."
               }
             ]
           },
           {
             "itemId": "english-pre-a1-m002-writing-ex01-i08",
             "position": 8,
-            "audio": "tts:en-GB:I have eight books.",
-            "expectedAnswer": "There are eight books.",
+            "audio": "tts:en-GB:My name is…",
+            "audioLocale": "en-GB",
+            "audioStatus": "synthetic_pending_review",
+            "kind": "sentence",
+            "repeatCount": 3,
+            "expectedAnswer": "My name is…",
             "evaluation": {
               "type": "normalised_text"
             },
-            "audioLocale": "en-GB",
-            "kind": "sentence",
-            "repeatCount": 3,
             "segments": [
               {
                 "segmentId": "english-pre-a1-m002-writing-segment-08",
-                "text": "There are eight books."
+                "text": "My name is…"
               }
             ]
           },
           {
             "itemId": "english-pre-a1-m002-writing-ex01-i09",
             "position": 9,
-            "audio": "tts:en-GB:There are nine balls.",
-            "expectedAnswer": "There are nine balls.",
+            "audio": "tts:en-GB:What's your name?",
+            "audioLocale": "en-GB",
+            "audioStatus": "synthetic_pending_review",
+            "kind": "sentence",
+            "repeatCount": 3,
+            "expectedAnswer": "What's your name?",
             "evaluation": {
               "type": "normalised_text"
             },
-            "audioLocale": "en-GB",
-            "kind": "sentence",
-            "repeatCount": 3,
             "segments": [
               {
                 "segmentId": "english-pre-a1-m002-writing-segment-09",
-                "text": "There are nine balls."
+                "text": "What's your name?"
               }
             ]
           },
           {
             "itemId": "english-pre-a1-m002-writing-ex01-i10",
             "position": 10,
-            "audio": "tts:en-GB:I can count to ten.",
-            "expectedAnswer": "There are ten cards.",
+            "audio": "tts:en-GB:My name is Ana.",
+            "audioLocale": "en-GB",
+            "audioStatus": "synthetic_pending_review",
+            "kind": "sentence",
+            "repeatCount": 3,
+            "expectedAnswer": "My name is Ana.",
             "evaluation": {
               "type": "normalised_text"
             },
-            "audioLocale": "en-GB",
-            "kind": "sentence",
-            "repeatCount": 3,
             "segments": [
               {
                 "segmentId": "english-pre-a1-m002-writing-segment-10",
-                "text": "There are ten cards."
+                "text": "My name is Ana."
               }
             ]
           }
@@ -1291,8 +1265,10 @@
           {
             "itemId": "english-pre-a1-m002-speaking-ex01-i01",
             "position": 1,
-            "prompt": "Say the numbers from one to three.",
-            "modelAnswer": "One, two, three.",
+            "prompt": "Di en voz alta esta expresión.",
+            "promptSpanish": "Practica el modelo de la misión.",
+            "modelAnswer": "What's your name?",
+            "translation": "What's your name?",
             "evaluation": {
               "type": "transcription_feedback",
               "transcriptionSeparateFromPronunciation": true
@@ -1301,8 +1277,10 @@
           {
             "itemId": "english-pre-a1-m002-speaking-ex01-i02",
             "position": 2,
-            "prompt": "Count from one to five.",
-            "modelAnswer": "One, two, three, four, five.",
+            "prompt": "Di en voz alta esta expresión.",
+            "promptSpanish": "Practica el modelo de la misión.",
+            "modelAnswer": "My name is Ana.",
+            "translation": "My name is Ana.",
             "evaluation": {
               "type": "transcription_feedback",
               "transcriptionSeparateFromPronunciation": true
@@ -1311,8 +1289,10 @@
           {
             "itemId": "english-pre-a1-m002-speaking-ex01-i03",
             "position": 3,
-            "prompt": "Count from six to ten.",
-            "modelAnswer": "Six, seven, eight, nine, ten.",
+            "prompt": "Di en voz alta esta expresión.",
+            "promptSpanish": "Practica el modelo de la misión.",
+            "modelAnswer": "What's your name? My name is Leo.",
+            "translation": "What's your name? My name is Leo.",
             "evaluation": {
               "type": "transcription_feedback",
               "transcriptionSeparateFromPronunciation": true
@@ -1321,8 +1301,10 @@
           {
             "itemId": "english-pre-a1-m002-speaking-ex01-i04",
             "position": 4,
-            "prompt": "Say the number after four.",
-            "modelAnswer": "Five.",
+            "prompt": "Di en voz alta esta expresión.",
+            "promptSpanish": "Practica el modelo de la misión.",
+            "modelAnswer": "My name is…",
+            "translation": "My name is…",
             "evaluation": {
               "type": "transcription_feedback",
               "transcriptionSeparateFromPronunciation": true
@@ -1331,8 +1313,10 @@
           {
             "itemId": "english-pre-a1-m002-speaking-ex01-i05",
             "position": 5,
-            "prompt": "Say the number before eight.",
-            "modelAnswer": "Seven.",
+            "prompt": "Di en voz alta esta expresión.",
+            "promptSpanish": "Practica el modelo de la misión.",
+            "modelAnswer": "What's your name?",
+            "translation": "What's your name?",
             "evaluation": {
               "type": "transcription_feedback",
               "transcriptionSeparateFromPronunciation": true
@@ -1341,8 +1325,10 @@
           {
             "itemId": "english-pre-a1-m002-speaking-ex01-i06",
             "position": 6,
-            "prompt": "Answer: How many balls are there?",
-            "modelAnswer": "There are three balls.",
+            "prompt": "Di en voz alta esta expresión.",
+            "promptSpanish": "Practica el modelo de la misión.",
+            "modelAnswer": "My name is Ana.",
+            "translation": "My name is Ana.",
             "evaluation": {
               "type": "transcription_feedback",
               "transcriptionSeparateFromPronunciation": true
@@ -1351,8 +1337,10 @@
           {
             "itemId": "english-pre-a1-m002-speaking-ex01-i07",
             "position": 7,
-            "prompt": "Answer: How many books are there?",
-            "modelAnswer": "There are two books.",
+            "prompt": "Di en voz alta esta expresión.",
+            "promptSpanish": "Practica el modelo de la misión.",
+            "modelAnswer": "What's your name? My name is Leo.",
+            "translation": "What's your name? My name is Leo.",
             "evaluation": {
               "type": "transcription_feedback",
               "transcriptionSeparateFromPronunciation": true
@@ -1361,8 +1349,10 @@
           {
             "itemId": "english-pre-a1-m002-speaking-ex01-i08",
             "position": 8,
-            "prompt": "Say the number between six and eight.",
-            "modelAnswer": "Seven.",
+            "prompt": "Di en voz alta esta expresión.",
+            "promptSpanish": "Practica el modelo de la misión.",
+            "modelAnswer": "My name is…",
+            "translation": "My name is…",
             "evaluation": {
               "type": "transcription_feedback",
               "transcriptionSeparateFromPronunciation": true
@@ -1371,8 +1361,10 @@
           {
             "itemId": "english-pre-a1-m002-speaking-ex01-i09",
             "position": 9,
-            "prompt": "Count backwards from five to one.",
-            "modelAnswer": "Five, four, three, two, one.",
+            "prompt": "Di en voz alta esta expresión.",
+            "promptSpanish": "Practica el modelo de la misión.",
+            "modelAnswer": "What's your name?",
+            "translation": "What's your name?",
             "evaluation": {
               "type": "transcription_feedback",
               "transcriptionSeparateFromPronunciation": true
@@ -1381,8 +1373,10 @@
           {
             "itemId": "english-pre-a1-m002-speaking-ex01-i10",
             "position": 10,
-            "prompt": "Invite a friend to count with you.",
-            "modelAnswer": "Let's count together.",
+            "prompt": "Di en voz alta esta expresión.",
+            "promptSpanish": "Practica el modelo de la misión.",
+            "modelAnswer": "My name is Ana.",
+            "translation": "My name is Ana.",
             "evaluation": {
               "type": "transcription_feedback",
               "transcriptionSeparateFromPronunciation": true
@@ -1399,53 +1393,55 @@
         "exerciseId": "english-pre-a1-m002-listening-ex01",
         "type": "listening_gap_fill",
         "content": {
-          "audio": "tts:en-GB:Welcome to Number Time. Count these objects with me. I see three balls and two books. Now count from one to ten together. Great work!",
-          "transcriptTemplate": "Welcome to [[gap-01]] Time. Count these [[gap-02]] with me. I see [[gap-03]] [[gap-04]] and [[gap-05]] [[gap-06]]. Now count from [[gap-07]] to [[gap-08]] [[gap-09]]. [[gap-10]] work!",
+          "audio": "tts:en-GB:What's your name? My name is Ana. What's your name? My name is Leo. My name is… What's your name? My name is Ana. What's your name? My name is Leo. My name is… What's your name? My name is Ana.",
+          "audioLocale": "en-GB",
+          "audioStatus": "synthetic_pending_review",
+          "transcriptTemplate": "[[gap-01]] [[gap-02]] [[gap-03]] [[gap-04]] [[gap-05]] [[gap-06]] [[gap-07]] [[gap-08]] [[gap-09]] [[gap-10]]",
           "wordBank": [
             {
               "wordId": "english-pre-a1-m002-listening-word-01",
-              "word": "Number"
+              "word": "What"
             },
             {
               "wordId": "english-pre-a1-m002-listening-word-02",
-              "word": "objects"
+              "word": "is"
             },
             {
               "wordId": "english-pre-a1-m002-listening-word-03",
-              "word": "three"
+              "word": "your"
             },
             {
               "wordId": "english-pre-a1-m002-listening-word-04",
-              "word": "balls"
+              "word": "name"
             },
             {
               "wordId": "english-pre-a1-m002-listening-word-05",
-              "word": "two"
+              "word": "my"
             },
             {
               "wordId": "english-pre-a1-m002-listening-word-06",
-              "word": "books"
+              "word": "What's your name?"
             },
             {
               "wordId": "english-pre-a1-m002-listening-word-07",
-              "word": "one"
+              "word": "My name is…"
             },
             {
               "wordId": "english-pre-a1-m002-listening-word-08",
-              "word": "ten"
+              "word": "What"
             },
             {
               "wordId": "english-pre-a1-m002-listening-word-09",
-              "word": "together"
+              "word": "is"
             },
             {
               "wordId": "english-pre-a1-m002-listening-word-10",
-              "word": "Great"
+              "word": "your"
             }
           ],
-          "audioLocale": "en-GB",
           "interaction": "select_place_move_replace",
-          "audioTranscript": "tts:en-GB:Welcome to Number Time. Count these objects with me. I see three balls and two books. Now count from one to ten together. Great work!"
+          "audioTranscript": "tts:en-GB:What's your name? My name is Ana. What's your name? My name is Leo. My name is… What's your name? My name is Ana. What's your name? My name is Leo. My name is… What's your name? My name is Ana.",
+          "translation": "Escucha y reconoce las expresiones enseñadas."
         },
         "items": [
           {
@@ -1453,74 +1449,72 @@
             "position": 1,
             "gapToken": "[[gap-01]]",
             "expectedWordId": "english-pre-a1-m002-listening-word-01",
-            "answer": "Number"
+            "answer": "What"
           },
           {
             "itemId": "english-pre-a1-m002-listening-ex01-i02",
             "position": 2,
             "gapToken": "[[gap-02]]",
             "expectedWordId": "english-pre-a1-m002-listening-word-02",
-            "answer": "objects"
+            "answer": "is"
           },
           {
             "itemId": "english-pre-a1-m002-listening-ex01-i03",
             "position": 3,
             "gapToken": "[[gap-03]]",
             "expectedWordId": "english-pre-a1-m002-listening-word-03",
-            "answer": "three"
+            "answer": "your"
           },
           {
             "itemId": "english-pre-a1-m002-listening-ex01-i04",
             "position": 4,
             "gapToken": "[[gap-04]]",
             "expectedWordId": "english-pre-a1-m002-listening-word-04",
-            "answer": "balls"
+            "answer": "name"
           },
           {
             "itemId": "english-pre-a1-m002-listening-ex01-i05",
             "position": 5,
             "gapToken": "[[gap-05]]",
             "expectedWordId": "english-pre-a1-m002-listening-word-05",
-            "answer": "two"
+            "answer": "my"
           },
           {
             "itemId": "english-pre-a1-m002-listening-ex01-i06",
             "position": 6,
             "gapToken": "[[gap-06]]",
             "expectedWordId": "english-pre-a1-m002-listening-word-06",
-            "answer": "books"
+            "answer": "What's your name?"
           },
           {
             "itemId": "english-pre-a1-m002-listening-ex01-i07",
             "position": 7,
             "gapToken": "[[gap-07]]",
             "expectedWordId": "english-pre-a1-m002-listening-word-07",
-            "answer": "one"
+            "answer": "My name is…"
           },
           {
             "itemId": "english-pre-a1-m002-listening-ex01-i08",
             "position": 8,
             "gapToken": "[[gap-08]]",
             "expectedWordId": "english-pre-a1-m002-listening-word-08",
-            "answer": "ten"
+            "answer": "What"
           },
           {
             "itemId": "english-pre-a1-m002-listening-ex01-i09",
             "position": 9,
             "gapToken": "[[gap-09]]",
             "expectedWordId": "english-pre-a1-m002-listening-word-09",
-            "answer": "together"
+            "answer": "is"
           },
           {
             "itemId": "english-pre-a1-m002-listening-ex01-i10",
             "position": 10,
             "gapToken": "[[gap-10]]",
             "expectedWordId": "english-pre-a1-m002-listening-word-10",
-            "answer": "Great"
+            "answer": "your"
           }
-        ],
-        "audioLocale": "en-GB",
-        "interaction": "select_place_move_replace"
+        ]
       }
     }
   ]

@@ -1,9 +1,9 @@
 {
-  "schemaVersion": "1.2.0",
-  "contentVersion": 2,
+  "schemaVersion": 1,
+  "contentVersion": "2026-11-21-curriculum-alignment-v1",
   "course": {
     "courseId": "english-pre-a1",
-    "level": "PRE-A1",
+    "level": "Pre-A1",
     "language": "en-GB"
   },
   "unit": {
@@ -16,7 +16,7 @@
     "missionId": "english-pre-a1-m007",
     "unitId": "english-pre-a1-unit-01",
     "position": 7,
-    "title": "School Things"
+    "title": "My first sounds"
   },
   "sections": [
     {
@@ -26,383 +26,606 @@
       "exercise": {
         "exerciseId": "english-pre-a1-m007-explore-ex01",
         "type": "vocabulary_pairs",
-        "theory": {
-          "title": "Objetos escolares: señalar y describir",
-          "explanation": "Aprende a señalar un objeto cercano en singular o varios objetos cercanos. Después compara con objetos lejanos. Finalmente practica los artículos a/an, decir qué tienes y describir objetos.",
-          "tip": "This/That se usan con una cosa; These/Those con varias.",
-          "patterns": [
-            {
-              "label": "1. Cerca: singular y plural",
-              "pattern": "This is + singular · These are + plural",
-              "examples": [
-                "This is a book. — Este es un libro.",
-                "These are pencils. — Estos son lápices."
-              ]
-            },
-            {
-              "label": "2. Lejos: singular y plural",
-              "pattern": "That is + singular · Those are + plural",
-              "examples": [
-                "That is my notebook. — Ese es mi cuaderno.",
-                "Those are two rubbers. — Esas son dos gomas."
-              ]
-            },
-            {
-              "label": "3. Artículos",
-              "pattern": "a + consonant sound · an + vowel sound",
-              "examples": [
-                "a pen — un bolígrafo",
-                "an orange ruler — una regla naranja"
-              ]
-            },
-            {
-              "label": "4. Posesión y descripción",
-              "pattern": "I have got + object · object + is + adjective",
-              "examples": [
-                "I have got a desk. — Tengo un pupitre.",
-                "My pencil case is blue. — Mi estuche es azul."
-              ]
-            }
-          ]
-        },
         "items": [
           {
             "itemId": "english-pre-a1-m007-explore-ex01-i01",
             "position": 1,
-            "english": "book",
-            "spanish": "libro",
-            "audio": "tts:en-GB:book"
+            "english": "hello",
+            "spanish": "hola",
+            "pronunciationGuide": "je-LOU",
+            "audio": "tts:en-GB:hello",
+            "audioStatus": "synthetic_pending_review"
           },
           {
             "itemId": "english-pre-a1-m007-explore-ex01-i02",
             "position": 2,
-            "english": "pen",
-            "spanish": "bolígrafo",
-            "audio": "tts:en-GB:pen"
+            "english": "hat",
+            "spanish": "sombrero",
+            "pronunciationGuide": "jat",
+            "audio": "tts:en-GB:hat",
+            "audioStatus": "synthetic_pending_review"
           },
           {
             "itemId": "english-pre-a1-m007-explore-ex01-i03",
             "position": 3,
-            "english": "pencil",
-            "spanish": "lápiz",
-            "audio": "tts:en-GB:pencil"
+            "english": "house",
+            "spanish": "casa",
+            "pronunciationGuide": "jáus",
+            "audio": "tts:en-GB:house",
+            "audioStatus": "synthetic_pending_review"
           },
           {
             "itemId": "english-pre-a1-m007-explore-ex01-i04",
             "position": 4,
-            "english": "ruler",
-            "spanish": "regla",
-            "audio": "tts:en-GB:ruler"
+            "english": "hand",
+            "spanish": "mano",
+            "pronunciationGuide": "jand",
+            "audio": "tts:en-GB:hand",
+            "audioStatus": "synthetic_pending_review"
           },
           {
             "itemId": "english-pre-a1-m007-explore-ex01-i05",
             "position": 5,
-            "english": "rubber",
-            "spanish": "goma",
-            "audio": "tts:en-GB:rubber"
+            "english": "thin",
+            "spanish": "delgado",
+            "pronunciationGuide": "THIN*",
+            "audio": "tts:en-GB:thin",
+            "audioStatus": "synthetic_pending_review"
           },
           {
             "itemId": "english-pre-a1-m007-explore-ex01-i06",
             "position": 6,
-            "english": "schoolbag",
-            "spanish": "mochila",
-            "audio": "tts:en-GB:schoolbag"
+            "english": "three",
+            "spanish": "tres",
+            "pronunciationGuide": "THRÍ*",
+            "audio": "tts:en-GB:three",
+            "audioStatus": "synthetic_pending_review"
           },
           {
             "itemId": "english-pre-a1-m007-explore-ex01-i07",
             "position": 7,
-            "english": "notebook",
-            "spanish": "cuaderno",
-            "audio": "tts:en-GB:notebook"
+            "english": "thank",
+            "spanish": "agradecer",
+            "pronunciationGuide": "THÁNK*",
+            "audio": "tts:en-GB:thank",
+            "audioStatus": "synthetic_pending_review"
           },
           {
             "itemId": "english-pre-a1-m007-explore-ex01-i08",
             "position": 8,
-            "english": "desk",
-            "spanish": "pupitre",
-            "audio": "tts:en-GB:desk"
+            "english": "this",
+            "spanish": "esto",
+            "pronunciationGuide": "DHIS*",
+            "audio": "tts:en-GB:this",
+            "audioStatus": "synthetic_pending_review"
           },
           {
             "itemId": "english-pre-a1-m007-explore-ex01-i09",
             "position": 9,
-            "english": "chair",
-            "spanish": "silla",
-            "audio": "tts:en-GB:chair"
+            "english": "that",
+            "spanish": "eso",
+            "pronunciationGuide": "DHAT*",
+            "audio": "tts:en-GB:that",
+            "audioStatus": "synthetic_pending_review"
           },
           {
             "itemId": "english-pre-a1-m007-explore-ex01-i10",
             "position": 10,
-            "english": "pencil case",
-            "spanish": "estuche",
-            "audio": "tts:en-GB:pencil case"
+            "english": "ship",
+            "spanish": "barco",
+            "pronunciationGuide": "ship",
+            "audio": "tts:en-GB:ship",
+            "audioStatus": "synthetic_pending_review"
+          },
+          {
+            "itemId": "english-pre-a1-m007-explore-ex01-i11",
+            "position": 11,
+            "english": "she",
+            "spanish": "ella",
+            "pronunciationGuide": "shí",
+            "audio": "tts:en-GB:she",
+            "audioStatus": "synthetic_pending_review"
+          },
+          {
+            "itemId": "english-pre-a1-m007-explore-ex01-i12",
+            "position": 12,
+            "english": "fish",
+            "spanish": "pez",
+            "pronunciationGuide": "fish",
+            "audio": "tts:en-GB:fish",
+            "audioStatus": "synthetic_pending_review"
+          },
+          {
+            "itemId": "english-pre-a1-m007-explore-ex01-i13",
+            "position": 13,
+            "english": "chair",
+            "spanish": "silla",
+            "pronunciationGuide": "chéar",
+            "audio": "tts:en-GB:chair",
+            "audioStatus": "synthetic_pending_review"
+          },
+          {
+            "itemId": "english-pre-a1-m007-explore-ex01-i14",
+            "position": 14,
+            "english": "cheese",
+            "spanish": "queso",
+            "pronunciationGuide": "chíis",
+            "audio": "tts:en-GB:cheese",
+            "audioStatus": "synthetic_pending_review"
+          },
+          {
+            "itemId": "english-pre-a1-m007-explore-ex01-i15",
+            "position": 15,
+            "english": "teacher",
+            "spanish": "profesor",
+            "pronunciationGuide": "TÍ-cha",
+            "audio": "tts:en-GB:teacher",
+            "audioStatus": "synthetic_pending_review"
+          },
+          {
+            "itemId": "english-pre-a1-m007-explore-ex01-i16",
+            "position": 16,
+            "english": "sheep",
+            "spanish": "oveja",
+            "pronunciationGuide": "shíip",
+            "audio": "tts:en-GB:sheep",
+            "audioStatus": "synthetic_pending_review"
+          },
+          {
+            "itemId": "english-pre-a1-m007-explore-ex01-i17",
+            "position": 17,
+            "english": "sit",
+            "spanish": "sentarse",
+            "pronunciationGuide": "sit",
+            "audio": "tts:en-GB:sit",
+            "audioStatus": "synthetic_pending_review"
+          },
+          {
+            "itemId": "english-pre-a1-m007-explore-ex01-i18",
+            "position": 18,
+            "english": "seat",
+            "spanish": "asiento",
+            "pronunciationGuide": "síit",
+            "audio": "tts:en-GB:seat",
+            "audioStatus": "synthetic_pending_review"
           }
         ],
+        "theory": {
+          "title": "My first sounds",
+          "explanation": "H inglesa: aire suave, no jota. TH sorda en thin/three/thank: lengua entre dientes sin vibración. TH sonora en this/that: misma posición con vibración. SH suena como 'sh'; CH como 'ch'. Sit/seat y ship/sheep contrastan vocales.",
+          "tip": "Comprende todos los modelos de Explore antes de comenzar las actividades.",
+          "patterns": [
+            {
+              "label": "Bloque 1",
+              "pattern": "My first sounds",
+              "examples": [
+                "H: hello, hat, house, hand"
+              ]
+            },
+            {
+              "label": "Bloque 2",
+              "pattern": "H inglesa: aire suave, no jota. TH sorda en thin/three/thank: lengua entre dientes sin vibración. TH sonora en this/that: misma posición con vibración. SH suena como 'sh'; CH como 'ch'. Sit/seat y ship/sheep contrastan vocales.",
+              "examples": [
+                "TH: thin, three, thank"
+              ]
+            },
+            {
+              "label": "Bloque 3",
+              "pattern": "H inglesa: aire suave, no jota. TH sorda en thin/three/thank: lengua entre dientes sin vibración. TH sonora en this/that: misma posición con vibración. SH suena como 'sh'; CH como 'ch'. Sit/seat y ship/sheep contrastan vocales.",
+              "examples": [
+                "TH: this, that"
+              ]
+            },
+            {
+              "label": "Bloque 4",
+              "pattern": "H inglesa: aire suave, no jota. TH sorda en thin/three/thank: lengua entre dientes sin vibración. TH sonora en this/that: misma posición con vibración. SH suena como 'sh'; CH como 'ch'. Sit/seat y ship/sheep contrastan vocales.",
+              "examples": [
+                "SH: ship, she, fish"
+              ]
+            },
+            {
+              "label": "Bloque 5",
+              "pattern": "H inglesa: aire suave, no jota. TH sorda en thin/three/thank: lengua entre dientes sin vibración. TH sonora en this/that: misma posición con vibración. SH suena como 'sh'; CH como 'ch'. Sit/seat y ship/sheep contrastan vocales.",
+              "examples": [
+                "CH: chair, cheese, teacher"
+              ]
+            },
+            {
+              "label": "Bloque 6",
+              "pattern": "H inglesa: aire suave, no jota. TH sorda en thin/three/thank: lengua entre dientes sin vibración. TH sonora en this/that: misma posición con vibración. SH suena como 'sh'; CH como 'ch'. Sit/seat y ship/sheep contrastan vocales.",
+              "examples": [
+                "sit / seat"
+              ]
+            },
+            {
+              "label": "Bloque 7",
+              "pattern": "H inglesa: aire suave, no jota. TH sorda en thin/three/thank: lengua entre dientes sin vibración. TH sonora en this/that: misma posición con vibración. SH suena como 'sh'; CH como 'ch'. Sit/seat y ship/sheep contrastan vocales.",
+              "examples": [
+                "ship / sheep"
+              ]
+            },
+            {
+              "label": "Bloque 8",
+              "pattern": "H inglesa: aire suave, no jota. TH sorda en thin/three/thank: lengua entre dientes sin vibración. TH sonora en this/that: misma posición con vibración. SH suena como 'sh'; CH como 'ch'. Sit/seat y ship/sheep contrastan vocales.",
+              "examples": [
+                "thin / this"
+              ]
+            },
+            {
+              "label": "Bloque 9",
+              "pattern": "H inglesa: aire suave, no jota. TH sorda en thin/three/thank: lengua entre dientes sin vibración. TH sonora en this/that: misma posición con vibración. SH suena como 'sh'; CH como 'ch'. Sit/seat y ship/sheep contrastan vocales.",
+              "examples": [
+                "hat / hand"
+              ]
+            },
+            {
+              "label": "Bloque 10",
+              "pattern": "H inglesa: aire suave, no jota. TH sorda en thin/three/thank: lengua entre dientes sin vibración. TH sonora en this/that: misma posición con vibración. SH suena como 'sh'; CH como 'ch'. Sit/seat y ship/sheep contrastan vocales.",
+              "examples": [
+                "she / ship"
+              ]
+            }
+          ]
+        },
         "lesson": {
           "phrases": [
             {
-              "english": "This is a book.",
-              "spanish": "Este es un libro.",
-              "note": "This is presenta una cosa cercana en singular."
+              "english": "H: hello, hat, house, hand",
+              "spanish": "H: hello, hat, house, hand",
+              "note": "Modelo enseñado en Explore."
             },
             {
-              "english": "These are pencils.",
-              "spanish": "Estos son lápices.",
-              "note": "These are presenta varias cosas cercanas."
+              "english": "TH: thin, three, thank",
+              "spanish": "TH: thin, three, thank",
+              "note": "Modelo enseñado en Explore."
             },
             {
-              "english": "That is your notebook.",
-              "spanish": "Ese es tu cuaderno.",
-              "note": "That is presenta una cosa más alejada."
+              "english": "TH: this, that",
+              "spanish": "TH: this, that",
+              "note": "Modelo enseñado en Explore."
             },
             {
-              "english": "Those are two rubbers.",
-              "spanish": "Esas son dos gomas.",
-              "note": "Those are presenta varias cosas alejadas."
+              "english": "SH: ship, she, fish",
+              "spanish": "SH: ship, she, fish",
+              "note": "Modelo enseñado en Explore."
             },
             {
-              "english": "It is a pen.",
-              "spanish": "Es un bolígrafo."
+              "english": "CH: chair, cheese, teacher",
+              "spanish": "CH: chair, cheese, teacher",
+              "note": "Modelo enseñado en Explore."
             },
             {
-              "english": "I have got a desk.",
-              "spanish": "Tengo un pupitre.",
-              "note": "Have got expresa posesión."
+              "english": "sit / seat",
+              "spanish": "sit / seat",
+              "note": "Modelo enseñado en Explore."
             },
             {
-              "english": "The chair is here.",
-              "spanish": "La silla está aquí."
+              "english": "ship / sheep",
+              "spanish": "ship / sheep",
+              "note": "Modelo enseñado en Explore."
             },
             {
-              "english": "a / an",
-              "spanish": "un / una",
-              "note": "A va ante sonido consonántico; an, ante sonido vocálico."
+              "english": "thin / this",
+              "spanish": "thin / this",
+              "note": "Modelo enseñado en Explore."
             },
             {
-              "english": "next to",
-              "spanish": "al lado de",
-              "note": "Indica que algo está junto a otra cosa."
+              "english": "hat / hand",
+              "spanish": "hat / hand",
+              "note": "Modelo enseñado en Explore."
             },
             {
-              "english": "in / on",
-              "spanish": "dentro de / sobre",
-              "note": "In indica interior; on indica superficie."
+              "english": "she / ship",
+              "spanish": "she / ship",
+              "note": "Modelo enseñado en Explore."
             }
           ],
           "grammar": [
             {
-              "english": "This is a book.",
-              "spanish": "Este es un libro."
+              "english": "H: hello, hat, house, hand",
+              "spanish": "Modelo de la misión",
+              "note": "My first sounds"
             },
             {
-              "english": "These are pencils.",
-              "spanish": "Estos son lápices.",
-              "note": "These are concuerda con plural."
+              "english": "TH: thin, three, thank",
+              "spanish": "Modelo de la misión",
+              "note": "H inglesa: aire suave, no jota. TH sorda en thin/three/thank: lengua entre dientes sin vibración. TH sonora en this/that: misma posición con vibración. SH suena como 'sh'; CH como 'ch'. Sit/seat y ship/sheep contrastan vocales."
             },
             {
-              "english": "It is a pen.",
-              "spanish": "Es un bolígrafo.",
-              "note": "Pen comienza con sonido consonántico."
+              "english": "TH: this, that",
+              "spanish": "Modelo de la misión",
+              "note": "H inglesa: aire suave, no jota. TH sorda en thin/three/thank: lengua entre dientes sin vibración. TH sonora en this/that: misma posición con vibración. SH suena como 'sh'; CH como 'ch'. Sit/seat y ship/sheep contrastan vocales."
             },
             {
-              "english": "This is an orange ruler.",
-              "spanish": "Esta es una regla naranja.",
-              "note": "An va antes de orange."
+              "english": "SH: ship, she, fish",
+              "spanish": "Modelo de la misión",
+              "note": "H inglesa: aire suave, no jota. TH sorda en thin/three/thank: lengua entre dientes sin vibración. TH sonora en this/that: misma posición con vibración. SH suena como 'sh'; CH como 'ch'. Sit/seat y ship/sheep contrastan vocales."
             },
             {
-              "english": "That is my notebook.",
-              "spanish": "Ese es mi cuaderno."
+              "english": "CH: chair, cheese, teacher",
+              "spanish": "Modelo de la misión",
+              "note": "H inglesa: aire suave, no jota. TH sorda en thin/three/thank: lengua entre dientes sin vibración. TH sonora en this/that: misma posición con vibración. SH suena como 'sh'; CH como 'ch'. Sit/seat y ship/sheep contrastan vocales."
             },
             {
-              "english": "These are two rubbers.",
-              "spanish": "Estas son dos gomas."
+              "english": "sit / seat",
+              "spanish": "Modelo de la misión",
+              "note": "H inglesa: aire suave, no jota. TH sorda en thin/three/thank: lengua entre dientes sin vibración. TH sonora en this/that: misma posición con vibración. SH suena como 'sh'; CH como 'ch'. Sit/seat y ship/sheep contrastan vocales."
             },
             {
-              "english": "I have got a desk.",
-              "spanish": "Tengo un pupitre."
+              "english": "ship / sheep",
+              "spanish": "Modelo de la misión",
+              "note": "H inglesa: aire suave, no jota. TH sorda en thin/three/thank: lengua entre dientes sin vibración. TH sonora en this/that: misma posición con vibración. SH suena como 'sh'; CH como 'ch'. Sit/seat y ship/sheep contrastan vocales."
             },
             {
-              "english": "This is my schoolbag.",
-              "spanish": "Esta es mi mochila."
+              "english": "thin / this",
+              "spanish": "Modelo de la misión",
+              "note": "H inglesa: aire suave, no jota. TH sorda en thin/three/thank: lengua entre dientes sin vibración. TH sonora en this/that: misma posición con vibración. SH suena como 'sh'; CH como 'ch'. Sit/seat y ship/sheep contrastan vocales."
             },
             {
-              "english": "The chair is here.",
-              "spanish": "La silla está aquí."
+              "english": "hat / hand",
+              "spanish": "Modelo de la misión",
+              "note": "H inglesa: aire suave, no jota. TH sorda en thin/three/thank: lengua entre dientes sin vibración. TH sonora en this/that: misma posición con vibración. SH suena como 'sh'; CH como 'ch'. Sit/seat y ship/sheep contrastan vocales."
             },
             {
-              "english": "My pencil case is blue.",
-              "spanish": "Mi estuche es azul."
+              "english": "she / ship",
+              "spanish": "Modelo de la misión",
+              "note": "H inglesa: aire suave, no jota. TH sorda en thin/three/thank: lengua entre dientes sin vibración. TH sonora en this/that: misma posición con vibración. SH suena como 'sh'; CH como 'ch'. Sit/seat y ship/sheep contrastan vocales."
             }
           ],
           "reading": [
             {
-              "english": "My schoolbag is blue.",
-              "spanish": "Mi mochila es azul."
-            },
-            {
-              "english": "In my bag, I have got a book, a notebook and a pencil case.",
-              "spanish": "En mi mochila tengo un libro, un cuaderno y un estuche."
-            },
-            {
-              "english": "My pencil case has a pen, two pencils and a rubber.",
-              "spanish": "Mi estuche tiene un bolígrafo, dos lápices y una goma."
-            },
-            {
-              "english": "I have got a ruler too.",
-              "spanish": "También tengo una regla."
-            },
-            {
-              "english": "In the classroom, my desk is next to a chair.",
-              "spanish": "En el aula, mi pupitre está al lado de una silla."
-            },
-            {
-              "english": "I like my school things.",
-              "spanish": "Me gustan mis cosas del colegio."
+              "english": "Hello. Hat. House. Hand. Thin. Three. Thank. This. That. Ship. She. Fish. Chair. Cheese. Teacher. Sheep. Sit. Seat.",
+              "spanish": "Texto completo presentado arriba."
             }
           ],
           "writing": [
             {
-              "english": "This is my book.",
-              "spanish": "Este es mi libro."
+              "english": "H: hello, hat, house, hand",
+              "spanish": "H: hello, hat, house, hand",
+              "note": "Modelo enseñado en Explore."
             },
             {
-              "english": "I write with a pen.",
-              "spanish": "Escribo con un bolígrafo."
+              "english": "TH: thin, three, thank",
+              "spanish": "TH: thin, three, thank",
+              "note": "Modelo enseñado en Explore."
             },
             {
-              "english": "I draw with a pencil.",
-              "spanish": "Dibujo con un lápiz."
+              "english": "TH: this, that",
+              "spanish": "TH: this, that",
+              "note": "Modelo enseñado en Explore."
             },
             {
-              "english": "A ruler is long.",
-              "spanish": "Una regla es larga."
+              "english": "SH: ship, she, fish",
+              "spanish": "SH: ship, she, fish",
+              "note": "Modelo enseñado en Explore."
             },
             {
-              "english": "I use a rubber.",
-              "spanish": "Uso una goma."
+              "english": "CH: chair, cheese, teacher",
+              "spanish": "CH: chair, cheese, teacher",
+              "note": "Modelo enseñado en Explore."
             },
             {
-              "english": "My schoolbag is blue.",
-              "spanish": "Mi mochila es azul."
+              "english": "sit / seat",
+              "spanish": "sit / seat",
+              "note": "Modelo enseñado en Explore."
             },
             {
-              "english": "This is my notebook.",
-              "spanish": "Este es mi cuaderno."
+              "english": "ship / sheep",
+              "spanish": "ship / sheep",
+              "note": "Modelo enseñado en Explore."
             },
             {
-              "english": "I sit at my desk.",
-              "spanish": "Me siento en mi pupitre."
+              "english": "thin / this",
+              "spanish": "thin / this",
+              "note": "Modelo enseñado en Explore."
             },
             {
-              "english": "I sit on a chair.",
-              "spanish": "Me siento en una silla."
+              "english": "hat / hand",
+              "spanish": "hat / hand",
+              "note": "Modelo enseñado en Explore."
             },
             {
-              "english": "My pencil case is blue.",
-              "spanish": "Mi estuche es azul."
+              "english": "she / ship",
+              "spanish": "she / ship",
+              "note": "Modelo enseñado en Explore."
             }
           ],
           "speaking": [
             {
-              "english": "This is a book.",
-              "spanish": "Este es un libro.",
-              "prompt": "Say a short sentence using book.",
-              "promptSpanish": "Di una frase corta usando book (libro)."
+              "english": "H: hello, hat, house, hand",
+              "spanish": "H: hello, hat, house, hand",
+              "note": "Modelo enseñado en Explore.",
+              "prompt": "Practica esta expresión.",
+              "promptSpanish": "Di la expresión en voz alta."
             },
             {
-              "english": "This is a pen.",
-              "spanish": "Este es un bolígrafo.",
-              "prompt": "Say a short sentence using pen.",
-              "promptSpanish": "Di una frase corta usando pen (bolígrafo)."
+              "english": "TH: thin, three, thank",
+              "spanish": "TH: thin, three, thank",
+              "note": "Modelo enseñado en Explore.",
+              "prompt": "Practica esta expresión.",
+              "promptSpanish": "Di la expresión en voz alta."
             },
             {
-              "english": "This is a pencil.",
-              "spanish": "Este es un lápiz.",
-              "prompt": "Say a short sentence using pencil.",
-              "promptSpanish": "Di una frase corta usando pencil (lápiz)."
+              "english": "TH: this, that",
+              "spanish": "TH: this, that",
+              "note": "Modelo enseñado en Explore.",
+              "prompt": "Practica esta expresión.",
+              "promptSpanish": "Di la expresión en voz alta."
             },
             {
-              "english": "This is a ruler.",
-              "spanish": "Esta es una regla.",
-              "prompt": "Say a short sentence using ruler.",
-              "promptSpanish": "Di una frase corta usando ruler (regla)."
+              "english": "SH: ship, she, fish",
+              "spanish": "SH: ship, she, fish",
+              "note": "Modelo enseñado en Explore.",
+              "prompt": "Practica esta expresión.",
+              "promptSpanish": "Di la expresión en voz alta."
             },
             {
-              "english": "This is a rubber.",
-              "spanish": "Esta es una goma.",
-              "prompt": "Say a short sentence using rubber.",
-              "promptSpanish": "Di una frase corta usando rubber (goma)."
+              "english": "CH: chair, cheese, teacher",
+              "spanish": "CH: chair, cheese, teacher",
+              "note": "Modelo enseñado en Explore.",
+              "prompt": "Practica esta expresión.",
+              "promptSpanish": "Di la expresión en voz alta."
             },
             {
-              "english": "This is my schoolbag.",
-              "spanish": "Esta es mi mochila.",
-              "prompt": "Say a short sentence using schoolbag.",
-              "promptSpanish": "Di una frase corta usando schoolbag (mochila)."
+              "english": "sit / seat",
+              "spanish": "sit / seat",
+              "note": "Modelo enseñado en Explore.",
+              "prompt": "Practica esta expresión.",
+              "promptSpanish": "Di la expresión en voz alta."
             },
             {
-              "english": "This is my notebook.",
-              "spanish": "Este es mi cuaderno.",
-              "prompt": "Say a short sentence using notebook.",
-              "promptSpanish": "Di una frase corta usando notebook (cuaderno)."
+              "english": "ship / sheep",
+              "spanish": "ship / sheep",
+              "note": "Modelo enseñado en Explore.",
+              "prompt": "Practica esta expresión.",
+              "promptSpanish": "Di la expresión en voz alta."
             },
             {
-              "english": "This is my desk.",
-              "spanish": "Este es mi pupitre.",
-              "prompt": "Say a short sentence using desk.",
-              "promptSpanish": "Di una frase corta usando desk (pupitre)."
+              "english": "thin / this",
+              "spanish": "thin / this",
+              "note": "Modelo enseñado en Explore.",
+              "prompt": "Practica esta expresión.",
+              "promptSpanish": "Di la expresión en voz alta."
             },
             {
-              "english": "This is my chair.",
-              "spanish": "Esta es mi silla.",
-              "prompt": "Say a short sentence using chair.",
-              "promptSpanish": "Di una frase corta usando chair (silla)."
+              "english": "hat / hand",
+              "spanish": "hat / hand",
+              "note": "Modelo enseñado en Explore.",
+              "prompt": "Practica esta expresión.",
+              "promptSpanish": "Di la expresión en voz alta."
             },
             {
-              "english": "This is my pencil case.",
-              "spanish": "Este es mi estuche.",
-              "prompt": "Say a short sentence using pencil case.",
-              "promptSpanish": "Di una frase corta usando pencil case (estuche)."
+              "english": "she / ship",
+              "spanish": "she / ship",
+              "note": "Modelo enseñado en Explore.",
+              "prompt": "Practica esta expresión.",
+              "promptSpanish": "Di la expresión en voz alta."
             }
           ],
           "listening": [
             {
-              "english": "I read a book at school.",
-              "spanish": "Leo un libro en el colegio."
+              "english": "H: hello, hat, house, hand",
+              "spanish": "H: hello, hat, house, hand",
+              "note": "Modelo enseñado en Explore."
             },
             {
-              "english": "I write with a pen.",
-              "spanish": "Escribo con un bolígrafo."
+              "english": "TH: thin, three, thank",
+              "spanish": "TH: thin, three, thank",
+              "note": "Modelo enseñado en Explore."
             },
             {
-              "english": "I draw with a pencil.",
-              "spanish": "Dibujo con un lápiz."
+              "english": "TH: this, that",
+              "spanish": "TH: this, that",
+              "note": "Modelo enseñado en Explore."
             },
             {
-              "english": "A ruler helps me draw a straight line.",
-              "spanish": "Una regla me ayuda a dibujar una línea recta."
+              "english": "SH: ship, she, fish",
+              "spanish": "SH: ship, she, fish",
+              "note": "Modelo enseñado en Explore."
             },
             {
-              "english": "I clean pencil marks with a rubber.",
-              "spanish": "Borro las marcas de lápiz con una goma."
+              "english": "CH: chair, cheese, teacher",
+              "spanish": "CH: chair, cheese, teacher",
+              "note": "Modelo enseñado en Explore."
             },
             {
-              "english": "I carry my books in my schoolbag.",
-              "spanish": "Llevo mis libros en la mochila."
+              "english": "sit / seat",
+              "spanish": "sit / seat",
+              "note": "Modelo enseñado en Explore."
             },
             {
-              "english": "I write notes in my notebook.",
-              "spanish": "Escribo notas en mi cuaderno."
+              "english": "ship / sheep",
+              "spanish": "ship / sheep",
+              "note": "Modelo enseñado en Explore."
             },
             {
-              "english": "I sit at my desk.",
-              "spanish": "Me siento en mi pupitre."
+              "english": "thin / this",
+              "spanish": "thin / this",
+              "note": "Modelo enseñado en Explore."
             },
             {
-              "english": "I sit on a chair.",
-              "spanish": "Me siento en una silla."
+              "english": "hat / hand",
+              "spanish": "hat / hand",
+              "note": "Modelo enseñado en Explore."
             },
             {
-              "english": "My pens are in my pencil case.",
-              "spanish": "Mis bolígrafos están en mi estuche."
+              "english": "she / ship",
+              "spanish": "she / ship",
+              "note": "Modelo enseñado en Explore."
+            }
+          ]
+        },
+        "content": {
+          "blocks": [
+            {
+              "position": 1,
+              "title": "Bloque 1",
+              "content": "My first sounds",
+              "example": "H: hello, hat, house, hand",
+              "translation": "Consulta la traducción y la guía de pronunciación de cada elemento."
+            },
+            {
+              "position": 2,
+              "title": "Bloque 2",
+              "content": "H inglesa: aire suave, no jota. TH sorda en thin/three/thank: lengua entre dientes sin vibración. TH sonora en this/that: misma posición con vibración. SH suena como 'sh'; CH como 'ch'. Sit/seat y ship/sheep contrastan vocales.",
+              "example": "TH: thin, three, thank",
+              "translation": "Consulta la traducción y la guía de pronunciación de cada elemento."
+            },
+            {
+              "position": 3,
+              "title": "Bloque 3",
+              "content": "H inglesa: aire suave, no jota. TH sorda en thin/three/thank: lengua entre dientes sin vibración. TH sonora en this/that: misma posición con vibración. SH suena como 'sh'; CH como 'ch'. Sit/seat y ship/sheep contrastan vocales.",
+              "example": "TH: this, that",
+              "translation": "Consulta la traducción y la guía de pronunciación de cada elemento."
+            },
+            {
+              "position": 4,
+              "title": "Bloque 4",
+              "content": "H inglesa: aire suave, no jota. TH sorda en thin/three/thank: lengua entre dientes sin vibración. TH sonora en this/that: misma posición con vibración. SH suena como 'sh'; CH como 'ch'. Sit/seat y ship/sheep contrastan vocales.",
+              "example": "SH: ship, she, fish",
+              "translation": "Consulta la traducción y la guía de pronunciación de cada elemento."
+            },
+            {
+              "position": 5,
+              "title": "Bloque 5",
+              "content": "H inglesa: aire suave, no jota. TH sorda en thin/three/thank: lengua entre dientes sin vibración. TH sonora en this/that: misma posición con vibración. SH suena como 'sh'; CH como 'ch'. Sit/seat y ship/sheep contrastan vocales.",
+              "example": "CH: chair, cheese, teacher",
+              "translation": "Consulta la traducción y la guía de pronunciación de cada elemento."
+            },
+            {
+              "position": 6,
+              "title": "Bloque 6",
+              "content": "H inglesa: aire suave, no jota. TH sorda en thin/three/thank: lengua entre dientes sin vibración. TH sonora en this/that: misma posición con vibración. SH suena como 'sh'; CH como 'ch'. Sit/seat y ship/sheep contrastan vocales.",
+              "example": "sit / seat",
+              "translation": "Consulta la traducción y la guía de pronunciación de cada elemento."
+            },
+            {
+              "position": 7,
+              "title": "Bloque 7",
+              "content": "H inglesa: aire suave, no jota. TH sorda en thin/three/thank: lengua entre dientes sin vibración. TH sonora en this/that: misma posición con vibración. SH suena como 'sh'; CH como 'ch'. Sit/seat y ship/sheep contrastan vocales.",
+              "example": "ship / sheep",
+              "translation": "Consulta la traducción y la guía de pronunciación de cada elemento."
+            },
+            {
+              "position": 8,
+              "title": "Bloque 8",
+              "content": "H inglesa: aire suave, no jota. TH sorda en thin/three/thank: lengua entre dientes sin vibración. TH sonora en this/that: misma posición con vibración. SH suena como 'sh'; CH como 'ch'. Sit/seat y ship/sheep contrastan vocales.",
+              "example": "thin / this",
+              "translation": "Consulta la traducción y la guía de pronunciación de cada elemento."
+            },
+            {
+              "position": 9,
+              "title": "Bloque 9",
+              "content": "H inglesa: aire suave, no jota. TH sorda en thin/three/thank: lengua entre dientes sin vibración. TH sonora en this/that: misma posición con vibración. SH suena como 'sh'; CH como 'ch'. Sit/seat y ship/sheep contrastan vocales.",
+              "example": "hat / hand",
+              "translation": "Consulta la traducción y la guía de pronunciación de cada elemento."
+            },
+            {
+              "position": 10,
+              "title": "Bloque 10",
+              "content": "H inglesa: aire suave, no jota. TH sorda en thin/three/thank: lengua entre dientes sin vibración. TH sonora en this/that: misma posición con vibración. SH suena como 'sh'; CH como 'ch'. Sit/seat y ship/sheep contrastan vocales.",
+              "example": "she / ship",
+              "translation": "Consulta la traducción y la guía de pronunciación de cada elemento."
             }
           ]
         }
@@ -419,302 +642,142 @@
           {
             "itemId": "english-pre-a1-m007-practice-ex01-i01",
             "position": 1,
-            "taskType": "vocabulary_translation",
-            "prompt": "Choose the Spanish meaning of “book”.",
+            "prompt": "Elige la traducción de “hello”.",
             "evaluation": {
               "type": "single_choice"
             },
             "options": [
-              "regla",
-              "cuaderno",
-              "libro"
+              "sombrero",
+              "hola",
+              "casa"
             ],
-            "answer": "libro"
+            "answer": "hola"
           },
           {
             "itemId": "english-pre-a1-m007-practice-ex01-i02",
             "position": 2,
-            "taskType": "vocabulary_translation",
-            "prompt": "Choose the Spanish meaning of “pen”.",
+            "prompt": "Elige la traducción de “hat”.",
             "evaluation": {
               "type": "single_choice"
             },
             "options": [
-              "bolígrafo",
-              "goma",
-              "pupitre"
+              "mano",
+              "casa",
+              "sombrero"
             ],
-            "answer": "bolígrafo"
+            "answer": "sombrero"
           },
           {
             "itemId": "english-pre-a1-m007-practice-ex01-i03",
             "position": 3,
-            "taskType": "vocabulary_translation",
-            "prompt": "Choose the Spanish meaning of “pencil”.",
+            "prompt": "Elige la traducción de “house”.",
             "evaluation": {
               "type": "single_choice"
             },
             "options": [
-              "mochila",
-              "lápiz",
-              "silla"
+              "casa",
+              "mano",
+              "delgado"
             ],
-            "answer": "lápiz"
+            "answer": "casa"
           },
           {
             "itemId": "english-pre-a1-m007-practice-ex01-i04",
             "position": 4,
-            "taskType": "vocabulary_translation",
-            "prompt": "Choose the Spanish meaning of “ruler”.",
+            "prompt": "Elige la traducción de “hand”.",
             "evaluation": {
               "type": "single_choice"
             },
             "options": [
-              "cuaderno",
-              "regla",
-              "estuche"
+              "delgado",
+              "mano",
+              "tres"
             ],
-            "answer": "regla"
+            "answer": "mano"
           },
           {
             "itemId": "english-pre-a1-m007-practice-ex01-i05",
             "position": 5,
-            "taskType": "vocabulary_translation",
-            "prompt": "Choose the Spanish meaning of “rubber”.",
+            "prompt": "Elige la traducción de “thin”.",
             "evaluation": {
               "type": "single_choice"
             },
             "options": [
-              "goma",
-              "pupitre",
-              "libro"
+              "agradecer",
+              "tres",
+              "delgado"
             ],
-            "answer": "goma"
+            "answer": "delgado"
           },
           {
             "itemId": "english-pre-a1-m007-practice-ex01-i06",
             "position": 6,
-            "taskType": "vocabulary_translation",
-            "prompt": "Choose the Spanish meaning of “schoolbag”.",
+            "prompt": "Elige la traducción de “three”.",
             "evaluation": {
               "type": "single_choice"
             },
             "options": [
-              "silla",
-              "bolígrafo",
-              "mochila"
+              "tres",
+              "agradecer",
+              "esto"
             ],
-            "answer": "mochila"
+            "answer": "tres"
           },
           {
             "itemId": "english-pre-a1-m007-practice-ex01-i07",
             "position": 7,
-            "taskType": "vocabulary_translation",
-            "prompt": "Choose the Spanish meaning of “notebook”.",
+            "prompt": "Elige la traducción de “thank”.",
             "evaluation": {
               "type": "single_choice"
             },
             "options": [
-              "cuaderno",
-              "estuche",
-              "lápiz"
+              "esto",
+              "agradecer",
+              "eso"
             ],
-            "answer": "cuaderno"
+            "answer": "agradecer"
           },
           {
             "itemId": "english-pre-a1-m007-practice-ex01-i08",
             "position": 8,
-            "taskType": "vocabulary_translation",
-            "prompt": "Choose the Spanish meaning of “desk”.",
+            "prompt": "Elige la traducción de “this”.",
             "evaluation": {
               "type": "single_choice"
             },
             "options": [
-              "libro",
-              "regla",
-              "pupitre"
+              "barco",
+              "eso",
+              "esto"
             ],
-            "answer": "pupitre"
+            "answer": "esto"
           },
           {
             "itemId": "english-pre-a1-m007-practice-ex01-i09",
             "position": 9,
-            "taskType": "vocabulary_translation",
-            "prompt": "Choose the Spanish meaning of “chair”.",
+            "prompt": "Elige la traducción de “that”.",
             "evaluation": {
               "type": "single_choice"
             },
             "options": [
-              "bolígrafo",
-              "silla",
-              "goma"
+              "eso",
+              "barco",
+              "ella"
             ],
-            "answer": "silla"
+            "answer": "eso"
           },
           {
             "itemId": "english-pre-a1-m007-practice-ex01-i10",
             "position": 10,
-            "taskType": "vocabulary_translation",
-            "prompt": "Choose the Spanish meaning of “pencil case”.",
+            "prompt": "Elige la traducción de “ship”.",
             "evaluation": {
               "type": "single_choice"
             },
             "options": [
-              "estuche",
-              "lápiz",
-              "mochila"
+              "ella",
+              "barco",
+              "pez"
             ],
-            "answer": "estuche"
-          },
-          {
-            "itemId": "english-pre-a1-m007-practice-ex01-i11",
-            "position": 11,
-            "taskType": "topic_vocabulary",
-            "prompt": "Which English word means “libro”?",
-            "evaluation": {
-              "type": "single_choice"
-            },
-            "options": [
-              "pencil",
-              "book",
-              "schoolbag"
-            ],
-            "answer": "book"
-          },
-          {
-            "itemId": "english-pre-a1-m007-practice-ex01-i12",
-            "position": 12,
-            "taskType": "topic_vocabulary",
-            "prompt": "Choose the word for “bolígrafo”?",
-            "evaluation": {
-              "type": "single_choice"
-            },
-            "options": [
-              "ruler",
-              "notebook",
-              "pen"
-            ],
-            "answer": "pen"
-          },
-          {
-            "itemId": "english-pre-a1-m007-practice-ex01-i13",
-            "position": 13,
-            "taskType": "topic_vocabulary",
-            "prompt": "Select the English word for “lápiz”?",
-            "evaluation": {
-              "type": "single_choice"
-            },
-            "options": [
-              "rubber",
-              "desk",
-              "pencil"
-            ],
-            "answer": "pencil"
-          },
-          {
-            "itemId": "english-pre-a1-m007-practice-ex01-i14",
-            "position": 14,
-            "taskType": "topic_vocabulary",
-            "prompt": "What is the English word for “regla”?",
-            "evaluation": {
-              "type": "single_choice"
-            },
-            "options": [
-              "schoolbag",
-              "ruler",
-              "chair"
-            ],
-            "answer": "ruler"
-          },
-          {
-            "itemId": "english-pre-a1-m007-practice-ex01-i15",
-            "position": 15,
-            "taskType": "topic_vocabulary",
-            "prompt": "Find the word that means “goma”?",
-            "evaluation": {
-              "type": "single_choice"
-            },
-            "options": [
-              "rubber",
-              "notebook",
-              "pencil case"
-            ],
-            "answer": "rubber"
-          },
-          {
-            "itemId": "english-pre-a1-m007-practice-ex01-i16",
-            "position": 16,
-            "taskType": "topic_vocabulary",
-            "prompt": "Which word matches “mochila”?",
-            "evaluation": {
-              "type": "single_choice"
-            },
-            "options": [
-              "schoolbag",
-              "desk",
-              "book"
-            ],
-            "answer": "schoolbag"
-          },
-          {
-            "itemId": "english-pre-a1-m007-practice-ex01-i17",
-            "position": 17,
-            "taskType": "topic_vocabulary",
-            "prompt": "Choose the translation for “cuaderno”?",
-            "evaluation": {
-              "type": "single_choice"
-            },
-            "options": [
-              "chair",
-              "notebook",
-              "pen"
-            ],
-            "answer": "notebook"
-          },
-          {
-            "itemId": "english-pre-a1-m007-practice-ex01-i18",
-            "position": 18,
-            "taskType": "topic_vocabulary",
-            "prompt": "Select the matching word for “pupitre”?",
-            "evaluation": {
-              "type": "single_choice"
-            },
-            "options": [
-              "pencil case",
-              "pencil",
-              "desk"
-            ],
-            "answer": "desk"
-          },
-          {
-            "itemId": "english-pre-a1-m007-practice-ex01-i19",
-            "position": 19,
-            "taskType": "topic_vocabulary",
-            "prompt": "What word means “silla”?",
-            "evaluation": {
-              "type": "single_choice"
-            },
-            "options": [
-              "book",
-              "ruler",
-              "chair"
-            ],
-            "answer": "chair"
-          },
-          {
-            "itemId": "english-pre-a1-m007-practice-ex01-i20",
-            "position": 20,
-            "taskType": "topic_vocabulary",
-            "prompt": "Find the English word for “estuche”?",
-            "evaluation": {
-              "type": "single_choice"
-            },
-            "options": [
-              "pen",
-              "pencil case",
-              "rubber"
-            ],
-            "answer": "pencil case"
+            "answer": "barco"
           }
         ]
       }
@@ -726,146 +789,223 @@
       "exercise": {
         "exerciseId": "english-pre-a1-m007-grammar-ex01",
         "type": "grammar",
+        "theory": {
+          "title": "My first sounds",
+          "explanation": "H inglesa: aire suave, no jota. TH sorda en thin/three/thank: lengua entre dientes sin vibración. TH sonora en this/that: misma posición con vibración. SH suena como 'sh'; CH como 'ch'. Sit/seat y ship/sheep contrastan vocales.",
+          "tip": "Comprende todos los modelos de Explore antes de comenzar las actividades.",
+          "patterns": [
+            {
+              "label": "Bloque 1",
+              "pattern": "My first sounds",
+              "examples": [
+                "H: hello, hat, house, hand"
+              ]
+            },
+            {
+              "label": "Bloque 2",
+              "pattern": "H inglesa: aire suave, no jota. TH sorda en thin/three/thank: lengua entre dientes sin vibración. TH sonora en this/that: misma posición con vibración. SH suena como 'sh'; CH como 'ch'. Sit/seat y ship/sheep contrastan vocales.",
+              "examples": [
+                "TH: thin, three, thank"
+              ]
+            },
+            {
+              "label": "Bloque 3",
+              "pattern": "H inglesa: aire suave, no jota. TH sorda en thin/three/thank: lengua entre dientes sin vibración. TH sonora en this/that: misma posición con vibración. SH suena como 'sh'; CH como 'ch'. Sit/seat y ship/sheep contrastan vocales.",
+              "examples": [
+                "TH: this, that"
+              ]
+            },
+            {
+              "label": "Bloque 4",
+              "pattern": "H inglesa: aire suave, no jota. TH sorda en thin/three/thank: lengua entre dientes sin vibración. TH sonora en this/that: misma posición con vibración. SH suena como 'sh'; CH como 'ch'. Sit/seat y ship/sheep contrastan vocales.",
+              "examples": [
+                "SH: ship, she, fish"
+              ]
+            },
+            {
+              "label": "Bloque 5",
+              "pattern": "H inglesa: aire suave, no jota. TH sorda en thin/three/thank: lengua entre dientes sin vibración. TH sonora en this/that: misma posición con vibración. SH suena como 'sh'; CH como 'ch'. Sit/seat y ship/sheep contrastan vocales.",
+              "examples": [
+                "CH: chair, cheese, teacher"
+              ]
+            },
+            {
+              "label": "Bloque 6",
+              "pattern": "H inglesa: aire suave, no jota. TH sorda en thin/three/thank: lengua entre dientes sin vibración. TH sonora en this/that: misma posición con vibración. SH suena como 'sh'; CH como 'ch'. Sit/seat y ship/sheep contrastan vocales.",
+              "examples": [
+                "sit / seat"
+              ]
+            },
+            {
+              "label": "Bloque 7",
+              "pattern": "H inglesa: aire suave, no jota. TH sorda en thin/three/thank: lengua entre dientes sin vibración. TH sonora en this/that: misma posición con vibración. SH suena como 'sh'; CH como 'ch'. Sit/seat y ship/sheep contrastan vocales.",
+              "examples": [
+                "ship / sheep"
+              ]
+            },
+            {
+              "label": "Bloque 8",
+              "pattern": "H inglesa: aire suave, no jota. TH sorda en thin/three/thank: lengua entre dientes sin vibración. TH sonora en this/that: misma posición con vibración. SH suena como 'sh'; CH como 'ch'. Sit/seat y ship/sheep contrastan vocales.",
+              "examples": [
+                "thin / this"
+              ]
+            },
+            {
+              "label": "Bloque 9",
+              "pattern": "H inglesa: aire suave, no jota. TH sorda en thin/three/thank: lengua entre dientes sin vibración. TH sonora en this/that: misma posición con vibración. SH suena como 'sh'; CH como 'ch'. Sit/seat y ship/sheep contrastan vocales.",
+              "examples": [
+                "hat / hand"
+              ]
+            },
+            {
+              "label": "Bloque 10",
+              "pattern": "H inglesa: aire suave, no jota. TH sorda en thin/three/thank: lengua entre dientes sin vibración. TH sonora en this/that: misma posición con vibración. SH suena como 'sh'; CH como 'ch'. Sit/seat y ship/sheep contrastan vocales.",
+              "examples": [
+                "she / ship"
+              ]
+            }
+          ]
+        },
         "items": [
           {
             "itemId": "english-pre-a1-m007-grammar-ex01-i01",
             "position": 1,
-            "prompt": "Choose the correct word or phrase: ___ a book.",
+            "prompt": "Reconoce el modelo trabajado: H: hello, hat, house, hand",
             "evaluation": {
               "type": "single_choice"
             },
             "options": [
-              "This is",
-              "These are",
-              "Those are"
+              "TH: thin, three, thank",
+              "H: hello, hat, house, hand",
+              "TH: this, that"
             ],
-            "answer": "This is"
+            "answer": "H: hello, hat, house, hand"
           },
           {
             "itemId": "english-pre-a1-m007-grammar-ex01-i02",
             "position": 2,
-            "prompt": "Choose the correct word or phrase: ___ pencils.",
+            "prompt": "Reconoce el modelo trabajado: TH: thin, three, thank",
             "evaluation": {
               "type": "single_choice"
             },
             "options": [
-              "This is",
-              "These are",
-              "That is"
+              "SH: ship, she, fish",
+              "TH: this, that",
+              "TH: thin, three, thank"
             ],
-            "answer": "These are"
-          },
-          {
-            "itemId": "english-pre-a1-m007-grammar-ex01-i05",
-            "position": 5,
-            "prompt": "Choose the correct word or phrase: ___ my notebook.",
-            "evaluation": {
-              "type": "single_choice"
-            },
-            "options": [
-              "Those are",
-              "That is",
-              "These are"
-            ],
-            "answer": "That is"
-          },
-          {
-            "itemId": "english-pre-a1-m007-grammar-ex01-i06",
-            "position": 6,
-            "prompt": "Choose the correct word or phrase: ___ two rubbers.",
-            "evaluation": {
-              "type": "single_choice"
-            },
-            "options": [
-              "These are",
-              "This is",
-              "That is"
-            ],
-            "answer": "These are"
-          },
-          {
-            "itemId": "english-pre-a1-m007-grammar-ex01-i08",
-            "position": 8,
-            "prompt": "Choose the correct word or phrase: ___ my schoolbag.",
-            "evaluation": {
-              "type": "single_choice"
-            },
-            "options": [
-              "These are",
-              "This is",
-              "Those are"
-            ],
-            "answer": "This is"
+            "answer": "TH: thin, three, thank"
           },
           {
             "itemId": "english-pre-a1-m007-grammar-ex01-i03",
             "position": 3,
-            "prompt": "Choose the correct word or phrase: It is ___ pen.",
+            "prompt": "Reconoce el modelo trabajado: TH: this, that",
             "evaluation": {
               "type": "single_choice"
             },
             "options": [
-              "an",
-              "are",
-              "a"
+              "TH: this, that",
+              "SH: ship, she, fish",
+              "CH: chair, cheese, teacher"
             ],
-            "answer": "a"
+            "answer": "TH: this, that"
           },
           {
             "itemId": "english-pre-a1-m007-grammar-ex01-i04",
             "position": 4,
-            "prompt": "Choose the correct word or phrase: This is ___ orange ruler.",
+            "prompt": "Reconoce el modelo trabajado: SH: ship, she, fish",
             "evaluation": {
               "type": "single_choice"
             },
             "options": [
-              "a",
-              "the",
-              "an"
+              "CH: chair, cheese, teacher",
+              "SH: ship, she, fish",
+              "sit / seat"
             ],
-            "answer": "an"
+            "answer": "SH: ship, she, fish"
+          },
+          {
+            "itemId": "english-pre-a1-m007-grammar-ex01-i05",
+            "position": 5,
+            "prompt": "Reconoce el modelo trabajado: CH: chair, cheese, teacher",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "ship / sheep",
+              "sit / seat",
+              "CH: chair, cheese, teacher"
+            ],
+            "answer": "CH: chair, cheese, teacher"
+          },
+          {
+            "itemId": "english-pre-a1-m007-grammar-ex01-i06",
+            "position": 6,
+            "prompt": "Reconoce el modelo trabajado: sit / seat",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "sit / seat",
+              "ship / sheep",
+              "thin / this"
+            ],
+            "answer": "sit / seat"
           },
           {
             "itemId": "english-pre-a1-m007-grammar-ex01-i07",
             "position": 7,
-            "prompt": "Choose the correct word or phrase: I ___ a desk.",
+            "prompt": "Reconoce el modelo trabajado: ship / sheep",
             "evaluation": {
               "type": "single_choice"
             },
             "options": [
-              "has got",
-              "is",
-              "have got"
+              "thin / this",
+              "ship / sheep",
+              "hat / hand"
             ],
-            "answer": "have got"
+            "answer": "ship / sheep"
+          },
+          {
+            "itemId": "english-pre-a1-m007-grammar-ex01-i08",
+            "position": 8,
+            "prompt": "Reconoce el modelo trabajado: thin / this",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "she / ship",
+              "hat / hand",
+              "thin / this"
+            ],
+            "answer": "thin / this"
           },
           {
             "itemId": "english-pre-a1-m007-grammar-ex01-i09",
             "position": 9,
-            "prompt": "Choose the correct word or phrase: The chair ___ here.",
+            "prompt": "Reconoce el modelo trabajado: hat / hand",
             "evaluation": {
               "type": "single_choice"
             },
             "options": [
-              "is",
-              "are",
-              "am"
+              "hat / hand",
+              "she / ship",
+              "H: hello, hat, house, hand"
             ],
-            "answer": "is"
+            "answer": "hat / hand"
           },
           {
             "itemId": "english-pre-a1-m007-grammar-ex01-i10",
             "position": 10,
-            "prompt": "Choose the correct word or phrase: My pencil case ___ blue.",
+            "prompt": "Reconoce el modelo trabajado: she / ship",
             "evaluation": {
               "type": "single_choice"
             },
             "options": [
-              "are",
-              "am",
-              "is"
+              "H: hello, hat, house, hand",
+              "she / ship",
+              "TH: thin, three, thank"
             ],
-            "answer": "is"
+            "answer": "she / ship"
           }
         ]
       }
@@ -881,82 +1021,182 @@
           {
             "itemId": "english-pre-a1-m007-pronunciation-ex01-i01",
             "position": 1,
-            "word": "book",
-            "translation": "libro",
-            "pronunciationGuide": "buk",
-            "audio": "tts:en-GB:book"
+            "word": "hello",
+            "translation": "hola",
+            "pronunciationGuide": "je-LOU",
+            "audio": "tts:en-GB:hello",
+            "audioStatus": "synthetic_pending_review",
+            "guideType": "approximate_spanish"
           },
           {
             "itemId": "english-pre-a1-m007-pronunciation-ex01-i02",
             "position": 2,
-            "word": "pen",
-            "translation": "bolígrafo",
-            "pronunciationGuide": "pen",
-            "audio": "tts:en-GB:pen"
+            "word": "hat",
+            "translation": "sombrero",
+            "pronunciationGuide": "jat",
+            "audio": "tts:en-GB:hat",
+            "audioStatus": "synthetic_pending_review",
+            "guideType": "approximate_spanish"
           },
           {
             "itemId": "english-pre-a1-m007-pronunciation-ex01-i03",
             "position": 3,
-            "word": "pencil",
-            "translation": "lápiz",
-            "pronunciationGuide": "pén-sol",
-            "audio": "tts:en-GB:pencil"
+            "word": "house",
+            "translation": "casa",
+            "pronunciationGuide": "jáus",
+            "audio": "tts:en-GB:house",
+            "audioStatus": "synthetic_pending_review",
+            "guideType": "approximate_spanish"
           },
           {
             "itemId": "english-pre-a1-m007-pronunciation-ex01-i04",
             "position": 4,
-            "word": "ruler",
-            "translation": "regla",
-            "pronunciationGuide": "rú-ler",
-            "audio": "tts:en-GB:ruler"
+            "word": "hand",
+            "translation": "mano",
+            "pronunciationGuide": "jand",
+            "audio": "tts:en-GB:hand",
+            "audioStatus": "synthetic_pending_review",
+            "guideType": "approximate_spanish"
           },
           {
             "itemId": "english-pre-a1-m007-pronunciation-ex01-i05",
             "position": 5,
-            "word": "rubber",
-            "translation": "goma",
-            "pronunciationGuide": "rá-ber",
-            "audio": "tts:en-GB:rubber"
+            "word": "thin",
+            "translation": "delgado",
+            "pronunciationGuide": "THIN*",
+            "audio": "tts:en-GB:thin",
+            "audioStatus": "synthetic_pending_review",
+            "guideType": "approximate_spanish"
           },
           {
             "itemId": "english-pre-a1-m007-pronunciation-ex01-i06",
             "position": 6,
-            "word": "schoolbag",
-            "translation": "mochila",
-            "pronunciationGuide": "skúl-bag",
-            "audio": "tts:en-GB:schoolbag"
+            "word": "three",
+            "translation": "tres",
+            "pronunciationGuide": "THRÍ*",
+            "audio": "tts:en-GB:three",
+            "audioStatus": "synthetic_pending_review",
+            "guideType": "approximate_spanish"
           },
           {
             "itemId": "english-pre-a1-m007-pronunciation-ex01-i07",
             "position": 7,
-            "word": "notebook",
-            "translation": "cuaderno",
-            "pronunciationGuide": "nóut-buk",
-            "audio": "tts:en-GB:notebook"
+            "word": "thank",
+            "translation": "agradecer",
+            "pronunciationGuide": "THÁNK*",
+            "audio": "tts:en-GB:thank",
+            "audioStatus": "synthetic_pending_review",
+            "guideType": "approximate_spanish"
           },
           {
             "itemId": "english-pre-a1-m007-pronunciation-ex01-i08",
             "position": 8,
-            "word": "desk",
-            "translation": "pupitre",
-            "pronunciationGuide": "desk",
-            "audio": "tts:en-GB:desk"
+            "word": "this",
+            "translation": "esto",
+            "pronunciationGuide": "DHIS*",
+            "audio": "tts:en-GB:this",
+            "audioStatus": "synthetic_pending_review",
+            "guideType": "approximate_spanish"
           },
           {
             "itemId": "english-pre-a1-m007-pronunciation-ex01-i09",
             "position": 9,
-            "word": "chair",
-            "translation": "silla",
-            "pronunciationGuide": "cher",
-            "audio": "tts:en-GB:chair"
+            "word": "that",
+            "translation": "eso",
+            "pronunciationGuide": "DHAT*",
+            "audio": "tts:en-GB:that",
+            "audioStatus": "synthetic_pending_review",
+            "guideType": "approximate_spanish"
           },
           {
             "itemId": "english-pre-a1-m007-pronunciation-ex01-i10",
             "position": 10,
-            "word": "pencil case",
-            "translation": "estuche",
-            "pronunciationGuide": "pén-sol keis",
-            "audio": "tts:en-GB:pencil case"
+            "word": "ship",
+            "translation": "barco",
+            "pronunciationGuide": "ship",
+            "audio": "tts:en-GB:ship",
+            "audioStatus": "synthetic_pending_review",
+            "guideType": "approximate_spanish"
+          },
+          {
+            "itemId": "english-pre-a1-m007-pronunciation-ex01-i11",
+            "position": 11,
+            "word": "she",
+            "translation": "ella",
+            "pronunciationGuide": "shí",
+            "audio": "tts:en-GB:she",
+            "audioStatus": "synthetic_pending_review",
+            "guideType": "approximate_spanish"
+          },
+          {
+            "itemId": "english-pre-a1-m007-pronunciation-ex01-i12",
+            "position": 12,
+            "word": "fish",
+            "translation": "pez",
+            "pronunciationGuide": "fish",
+            "audio": "tts:en-GB:fish",
+            "audioStatus": "synthetic_pending_review",
+            "guideType": "approximate_spanish"
+          },
+          {
+            "itemId": "english-pre-a1-m007-pronunciation-ex01-i13",
+            "position": 13,
+            "word": "chair",
+            "translation": "silla",
+            "pronunciationGuide": "chéar",
+            "audio": "tts:en-GB:chair",
+            "audioStatus": "synthetic_pending_review",
+            "guideType": "approximate_spanish"
+          },
+          {
+            "itemId": "english-pre-a1-m007-pronunciation-ex01-i14",
+            "position": 14,
+            "word": "cheese",
+            "translation": "queso",
+            "pronunciationGuide": "chíis",
+            "audio": "tts:en-GB:cheese",
+            "audioStatus": "synthetic_pending_review",
+            "guideType": "approximate_spanish"
+          },
+          {
+            "itemId": "english-pre-a1-m007-pronunciation-ex01-i15",
+            "position": 15,
+            "word": "teacher",
+            "translation": "profesor",
+            "pronunciationGuide": "TÍ-cha",
+            "audio": "tts:en-GB:teacher",
+            "audioStatus": "synthetic_pending_review",
+            "guideType": "approximate_spanish"
+          },
+          {
+            "itemId": "english-pre-a1-m007-pronunciation-ex01-i16",
+            "position": 16,
+            "word": "sheep",
+            "translation": "oveja",
+            "pronunciationGuide": "shíip",
+            "audio": "tts:en-GB:sheep",
+            "audioStatus": "synthetic_pending_review",
+            "guideType": "approximate_spanish"
+          },
+          {
+            "itemId": "english-pre-a1-m007-pronunciation-ex01-i17",
+            "position": 17,
+            "word": "sit",
+            "translation": "sentarse",
+            "pronunciationGuide": "sit",
+            "audio": "tts:en-GB:sit",
+            "audioStatus": "synthetic_pending_review",
+            "guideType": "approximate_spanish"
+          },
+          {
+            "itemId": "english-pre-a1-m007-pronunciation-ex01-i18",
+            "position": 18,
+            "word": "seat",
+            "translation": "asiento",
+            "pronunciationGuide": "síit",
+            "audio": "tts:en-GB:seat",
+            "audioStatus": "synthetic_pending_review",
+            "guideType": "approximate_spanish"
           }
         ]
       }
@@ -970,148 +1210,241 @@
         "type": "reading_comprehension",
         "content": {
           "passageId": "english-pre-a1-m007-reading-passage-01",
-          "passage": "My schoolbag is blue. In my bag, I have got a book, a notebook and a pencil case. My pencil case has a pen, two pencils and a rubber. I have got a ruler too. In the classroom, my desk is next to a chair. I like my school things."
+          "passage": "Hello. Hat. House. Hand. Thin. Three. Thank. This. That. Ship. She. Fish. Chair. Cheese. Teacher. Sheep. Sit. Seat.",
+          "translation": "Traducción del texto: Hello. Hat. House. Hand. Thin. Three. Thank. This. That. Ship. She. Fish. Chair. Cheese. Teacher. Sheep. Sit. Seat.",
+          "vocabulary": [
+            {
+              "word": "hello",
+              "translation": "hola",
+              "pronunciationGuide": "je-LOU"
+            },
+            {
+              "word": "hat",
+              "translation": "sombrero",
+              "pronunciationGuide": "jat"
+            },
+            {
+              "word": "house",
+              "translation": "casa",
+              "pronunciationGuide": "jáus"
+            },
+            {
+              "word": "hand",
+              "translation": "mano",
+              "pronunciationGuide": "jand"
+            },
+            {
+              "word": "thin",
+              "translation": "delgado",
+              "pronunciationGuide": "THIN*"
+            },
+            {
+              "word": "three",
+              "translation": "tres",
+              "pronunciationGuide": "THRÍ*"
+            },
+            {
+              "word": "thank",
+              "translation": "agradecer",
+              "pronunciationGuide": "THÁNK*"
+            },
+            {
+              "word": "this",
+              "translation": "esto",
+              "pronunciationGuide": "DHIS*"
+            },
+            {
+              "word": "that",
+              "translation": "eso",
+              "pronunciationGuide": "DHAT*"
+            },
+            {
+              "word": "ship",
+              "translation": "barco",
+              "pronunciationGuide": "ship"
+            },
+            {
+              "word": "she",
+              "translation": "ella",
+              "pronunciationGuide": "shí"
+            },
+            {
+              "word": "fish",
+              "translation": "pez",
+              "pronunciationGuide": "fish"
+            },
+            {
+              "word": "chair",
+              "translation": "silla",
+              "pronunciationGuide": "chéar"
+            },
+            {
+              "word": "cheese",
+              "translation": "queso",
+              "pronunciationGuide": "chíis"
+            },
+            {
+              "word": "teacher",
+              "translation": "profesor",
+              "pronunciationGuide": "TÍ-cha"
+            },
+            {
+              "word": "sheep",
+              "translation": "oveja",
+              "pronunciationGuide": "shíip"
+            },
+            {
+              "word": "sit",
+              "translation": "sentarse",
+              "pronunciationGuide": "sit"
+            },
+            {
+              "word": "seat",
+              "translation": "asiento",
+              "pronunciationGuide": "síit"
+            }
+          ]
         },
         "items": [
           {
             "itemId": "english-pre-a1-m007-reading-ex01-i01",
             "position": 1,
-            "prompt": "What colour is the schoolbag?",
+            "prompt": "¿Qué tema presenta el texto?",
             "evaluation": {
               "type": "single_choice"
             },
             "options": [
-              "Red",
-              "Green",
-              "Blue"
+              "hola",
+              "My first sounds",
+              "sombrero"
             ],
-            "answer": "Blue"
+            "answer": "My first sounds"
           },
           {
             "itemId": "english-pre-a1-m007-reading-ex01-i02",
             "position": 2,
-            "prompt": "What is in the schoolbag?",
+            "prompt": "¿Qué significa “hat” en el texto?",
             "evaluation": {
               "type": "single_choice"
             },
             "options": [
-              "A ball",
-              "A book",
-              "A sandwich"
+              "mano",
+              "casa",
+              "sombrero"
             ],
-            "answer": "A book"
+            "answer": "sombrero"
           },
           {
             "itemId": "english-pre-a1-m007-reading-ex01-i03",
             "position": 3,
-            "prompt": "What else is in the bag?",
+            "prompt": "¿Qué significa “house” en el texto?",
             "evaluation": {
               "type": "single_choice"
             },
             "options": [
-              "A notebook",
-              "A toy car",
-              "A coat"
+              "casa",
+              "mano",
+              "delgado"
             ],
-            "answer": "A notebook"
+            "answer": "casa"
           },
           {
             "itemId": "english-pre-a1-m007-reading-ex01-i04",
             "position": 4,
-            "prompt": "Where is the pen?",
+            "prompt": "¿Qué significa “hand” en el texto?",
             "evaluation": {
               "type": "single_choice"
             },
             "options": [
-              "On the chair",
-              "In the pencil case",
-              "Under the desk"
+              "delgado",
+              "mano",
+              "tres"
             ],
-            "answer": "In the pencil case"
+            "answer": "mano"
           },
           {
             "itemId": "english-pre-a1-m007-reading-ex01-i05",
             "position": 5,
-            "prompt": "How many pencils are there?",
+            "prompt": "¿Qué significa “thin” en el texto?",
             "evaluation": {
               "type": "single_choice"
             },
             "options": [
-              "Two",
-              "One",
-              "Three"
+              "agradecer",
+              "tres",
+              "delgado"
             ],
-            "answer": "Two"
+            "answer": "delgado"
           },
           {
             "itemId": "english-pre-a1-m007-reading-ex01-i06",
             "position": 6,
-            "prompt": "What else is in the pencil case?",
+            "prompt": "¿Qué significa “three” en el texto?",
             "evaluation": {
               "type": "single_choice"
             },
             "options": [
-              "A ruler",
-              "A book",
-              "A rubber"
+              "tres",
+              "agradecer",
+              "esto"
             ],
-            "answer": "A rubber"
+            "answer": "tres"
           },
           {
             "itemId": "english-pre-a1-m007-reading-ex01-i07",
             "position": 7,
-            "prompt": "Has the writer got a ruler?",
+            "prompt": "¿Qué significa “thank” en el texto?",
             "evaluation": {
               "type": "single_choice"
             },
             "options": [
-              "Yes",
-              "No",
-              "It does not say"
+              "esto",
+              "agradecer",
+              "eso"
             ],
-            "answer": "Yes"
+            "answer": "agradecer"
           },
           {
             "itemId": "english-pre-a1-m007-reading-ex01-i08",
             "position": 8,
-            "prompt": "Where is the desk?",
+            "prompt": "¿Qué significa “this” en el texto?",
             "evaluation": {
               "type": "single_choice"
             },
             "options": [
-              "In the garden",
-              "Next to a chair",
-              "Near the door"
+              "barco",
+              "eso",
+              "esto"
             ],
-            "answer": "Next to a chair"
+            "answer": "esto"
           },
           {
             "itemId": "english-pre-a1-m007-reading-ex01-i09",
             "position": 9,
-            "prompt": "Does the writer like the school things?",
+            "prompt": "¿Qué significa “that” en el texto?",
             "evaluation": {
               "type": "single_choice"
             },
             "options": [
-              "No",
-              "It does not say",
-              "Yes"
+              "eso",
+              "barco",
+              "ella"
             ],
-            "answer": "Yes"
+            "answer": "eso"
           },
           {
             "itemId": "english-pre-a1-m007-reading-ex01-i10",
             "position": 10,
-            "prompt": "What is the text about?",
+            "prompt": "¿Qué significa “ship” en el texto?",
             "evaluation": {
               "type": "single_choice"
             },
             "options": [
-              "A schoolbag",
-              "A family",
-              "A farm"
+              "ella",
+              "barco",
+              "pez"
             ],
-            "answer": "A schoolbag"
+            "answer": "barco"
           }
         ]
       }
@@ -1127,180 +1460,190 @@
           {
             "itemId": "english-pre-a1-m007-writing-ex01-i01",
             "position": 1,
-            "audio": "tts:en-GB:This is my book.",
+            "audio": "tts:en-GB:H: hello, hat, house, hand",
+            "audioLocale": "en-GB",
+            "audioStatus": "synthetic_pending_review",
+            "kind": "sentence",
+            "repeatCount": 3,
+            "expectedAnswer": "H: hello, hat, house, hand",
             "evaluation": {
               "type": "normalised_text"
             },
-            "audioLocale": "en-GB",
-            "kind": "sentence",
-            "repeatCount": 3,
-            "expectedAnswer": "This is my book.",
             "segments": [
               {
                 "segmentId": "english-pre-a1-m007-writing-segment-01",
-                "text": "This is my book."
+                "text": "H: hello, hat, house, hand"
               }
             ]
           },
           {
             "itemId": "english-pre-a1-m007-writing-ex01-i02",
             "position": 2,
-            "audio": "tts:en-GB:I write with a pen.",
+            "audio": "tts:en-GB:TH: thin, three, thank",
+            "audioLocale": "en-GB",
+            "audioStatus": "synthetic_pending_review",
+            "kind": "sentence",
+            "repeatCount": 3,
+            "expectedAnswer": "TH: thin, three, thank",
             "evaluation": {
               "type": "normalised_text"
             },
-            "audioLocale": "en-GB",
-            "kind": "sentence",
-            "repeatCount": 3,
-            "expectedAnswer": "I write with a pen.",
             "segments": [
               {
                 "segmentId": "english-pre-a1-m007-writing-segment-02",
-                "text": "I write with a pen."
+                "text": "TH: thin, three, thank"
               }
             ]
           },
           {
             "itemId": "english-pre-a1-m007-writing-ex01-i03",
             "position": 3,
-            "audio": "tts:en-GB:I draw with a pencil.",
+            "audio": "tts:en-GB:TH: this, that",
+            "audioLocale": "en-GB",
+            "audioStatus": "synthetic_pending_review",
+            "kind": "sentence",
+            "repeatCount": 3,
+            "expectedAnswer": "TH: this, that",
             "evaluation": {
               "type": "normalised_text"
             },
-            "audioLocale": "en-GB",
-            "kind": "sentence",
-            "repeatCount": 3,
-            "expectedAnswer": "I draw with a pencil.",
             "segments": [
               {
                 "segmentId": "english-pre-a1-m007-writing-segment-03",
-                "text": "I draw with a pencil."
+                "text": "TH: this, that"
               }
             ]
           },
           {
             "itemId": "english-pre-a1-m007-writing-ex01-i04",
             "position": 4,
-            "audio": "tts:en-GB:A ruler is long.",
+            "audio": "tts:en-GB:SH: ship, she, fish",
+            "audioLocale": "en-GB",
+            "audioStatus": "synthetic_pending_review",
+            "kind": "sentence",
+            "repeatCount": 3,
+            "expectedAnswer": "SH: ship, she, fish",
             "evaluation": {
               "type": "normalised_text"
             },
-            "audioLocale": "en-GB",
-            "kind": "sentence",
-            "repeatCount": 3,
-            "expectedAnswer": "A ruler is long.",
             "segments": [
               {
                 "segmentId": "english-pre-a1-m007-writing-segment-04",
-                "text": "A ruler is long."
+                "text": "SH: ship, she, fish"
               }
             ]
           },
           {
             "itemId": "english-pre-a1-m007-writing-ex01-i05",
             "position": 5,
-            "audio": "tts:en-GB:I use a rubber.",
+            "audio": "tts:en-GB:CH: chair, cheese, teacher",
+            "audioLocale": "en-GB",
+            "audioStatus": "synthetic_pending_review",
+            "kind": "sentence",
+            "repeatCount": 3,
+            "expectedAnswer": "CH: chair, cheese, teacher",
             "evaluation": {
               "type": "normalised_text"
             },
-            "audioLocale": "en-GB",
-            "kind": "sentence",
-            "repeatCount": 3,
-            "expectedAnswer": "I use a rubber.",
             "segments": [
               {
                 "segmentId": "english-pre-a1-m007-writing-segment-05",
-                "text": "I use a rubber."
+                "text": "CH: chair, cheese, teacher"
               }
             ]
           },
           {
             "itemId": "english-pre-a1-m007-writing-ex01-i06",
             "position": 6,
-            "audio": "tts:en-GB:My schoolbag is blue.",
+            "audio": "tts:en-GB:sit / seat",
+            "audioLocale": "en-GB",
+            "audioStatus": "synthetic_pending_review",
+            "kind": "sentence",
+            "repeatCount": 3,
+            "expectedAnswer": "sit / seat",
             "evaluation": {
               "type": "normalised_text"
             },
-            "audioLocale": "en-GB",
-            "kind": "sentence",
-            "repeatCount": 3,
-            "expectedAnswer": "My schoolbag is blue.",
             "segments": [
               {
                 "segmentId": "english-pre-a1-m007-writing-segment-06",
-                "text": "My schoolbag is blue."
+                "text": "sit / seat"
               }
             ]
           },
           {
             "itemId": "english-pre-a1-m007-writing-ex01-i07",
             "position": 7,
-            "audio": "tts:en-GB:This is my notebook.",
+            "audio": "tts:en-GB:ship / sheep",
+            "audioLocale": "en-GB",
+            "audioStatus": "synthetic_pending_review",
+            "kind": "sentence",
+            "repeatCount": 3,
+            "expectedAnswer": "ship / sheep",
             "evaluation": {
               "type": "normalised_text"
             },
-            "audioLocale": "en-GB",
-            "kind": "sentence",
-            "repeatCount": 3,
-            "expectedAnswer": "This is my notebook.",
             "segments": [
               {
                 "segmentId": "english-pre-a1-m007-writing-segment-07",
-                "text": "This is my notebook."
+                "text": "ship / sheep"
               }
             ]
           },
           {
             "itemId": "english-pre-a1-m007-writing-ex01-i08",
             "position": 8,
-            "audio": "tts:en-GB:I sit at my desk.",
+            "audio": "tts:en-GB:thin / this",
+            "audioLocale": "en-GB",
+            "audioStatus": "synthetic_pending_review",
+            "kind": "sentence",
+            "repeatCount": 3,
+            "expectedAnswer": "thin / this",
             "evaluation": {
               "type": "normalised_text"
             },
-            "audioLocale": "en-GB",
-            "kind": "sentence",
-            "repeatCount": 3,
-            "expectedAnswer": "I sit at my desk.",
             "segments": [
               {
                 "segmentId": "english-pre-a1-m007-writing-segment-08",
-                "text": "I sit at my desk."
+                "text": "thin / this"
               }
             ]
           },
           {
             "itemId": "english-pre-a1-m007-writing-ex01-i09",
             "position": 9,
-            "audio": "tts:en-GB:I sit on a chair.",
+            "audio": "tts:en-GB:hat / hand",
+            "audioLocale": "en-GB",
+            "audioStatus": "synthetic_pending_review",
+            "kind": "sentence",
+            "repeatCount": 3,
+            "expectedAnswer": "hat / hand",
             "evaluation": {
               "type": "normalised_text"
             },
-            "audioLocale": "en-GB",
-            "kind": "sentence",
-            "repeatCount": 3,
-            "expectedAnswer": "I sit on a chair.",
             "segments": [
               {
                 "segmentId": "english-pre-a1-m007-writing-segment-09",
-                "text": "I sit on a chair."
+                "text": "hat / hand"
               }
             ]
           },
           {
             "itemId": "english-pre-a1-m007-writing-ex01-i10",
             "position": 10,
-            "audio": "tts:en-GB:My pencil case is blue.",
+            "audio": "tts:en-GB:she / ship",
+            "audioLocale": "en-GB",
+            "audioStatus": "synthetic_pending_review",
+            "kind": "sentence",
+            "repeatCount": 3,
+            "expectedAnswer": "she / ship",
             "evaluation": {
               "type": "normalised_text"
             },
-            "audioLocale": "en-GB",
-            "kind": "sentence",
-            "repeatCount": 3,
-            "expectedAnswer": "My pencil case is blue.",
             "segments": [
               {
                 "segmentId": "english-pre-a1-m007-writing-segment-10",
-                "text": "My pencil case is blue."
+                "text": "she / ship"
               }
             ]
           }
@@ -1318,8 +1661,10 @@
           {
             "itemId": "english-pre-a1-m007-speaking-ex01-i01",
             "position": 1,
-            "prompt": "Say a short sentence using “book”.",
-            "modelAnswer": "This is a book.",
+            "prompt": "Di en voz alta esta expresión.",
+            "promptSpanish": "Practica el modelo de la misión.",
+            "modelAnswer": "H: hello, hat, house, hand",
+            "translation": "H: hello, hat, house, hand",
             "evaluation": {
               "type": "transcription_feedback",
               "transcriptionSeparateFromPronunciation": true
@@ -1328,8 +1673,10 @@
           {
             "itemId": "english-pre-a1-m007-speaking-ex01-i02",
             "position": 2,
-            "prompt": "Say a short sentence using “pen”.",
-            "modelAnswer": "This is a pen.",
+            "prompt": "Di en voz alta esta expresión.",
+            "promptSpanish": "Practica el modelo de la misión.",
+            "modelAnswer": "TH: thin, three, thank",
+            "translation": "TH: thin, three, thank",
             "evaluation": {
               "type": "transcription_feedback",
               "transcriptionSeparateFromPronunciation": true
@@ -1338,8 +1685,10 @@
           {
             "itemId": "english-pre-a1-m007-speaking-ex01-i03",
             "position": 3,
-            "prompt": "Say a short sentence using “pencil”.",
-            "modelAnswer": "This is a pencil.",
+            "prompt": "Di en voz alta esta expresión.",
+            "promptSpanish": "Practica el modelo de la misión.",
+            "modelAnswer": "TH: this, that",
+            "translation": "TH: this, that",
             "evaluation": {
               "type": "transcription_feedback",
               "transcriptionSeparateFromPronunciation": true
@@ -1348,8 +1697,10 @@
           {
             "itemId": "english-pre-a1-m007-speaking-ex01-i04",
             "position": 4,
-            "prompt": "Say a short sentence using “ruler”.",
-            "modelAnswer": "This is a ruler.",
+            "prompt": "Di en voz alta esta expresión.",
+            "promptSpanish": "Practica el modelo de la misión.",
+            "modelAnswer": "SH: ship, she, fish",
+            "translation": "SH: ship, she, fish",
             "evaluation": {
               "type": "transcription_feedback",
               "transcriptionSeparateFromPronunciation": true
@@ -1358,8 +1709,10 @@
           {
             "itemId": "english-pre-a1-m007-speaking-ex01-i05",
             "position": 5,
-            "prompt": "Say a short sentence using “rubber”.",
-            "modelAnswer": "This is a rubber.",
+            "prompt": "Di en voz alta esta expresión.",
+            "promptSpanish": "Practica el modelo de la misión.",
+            "modelAnswer": "CH: chair, cheese, teacher",
+            "translation": "CH: chair, cheese, teacher",
             "evaluation": {
               "type": "transcription_feedback",
               "transcriptionSeparateFromPronunciation": true
@@ -1368,8 +1721,10 @@
           {
             "itemId": "english-pre-a1-m007-speaking-ex01-i06",
             "position": 6,
-            "prompt": "Say a short sentence using “schoolbag”.",
-            "modelAnswer": "This is my schoolbag.",
+            "prompt": "Di en voz alta esta expresión.",
+            "promptSpanish": "Practica el modelo de la misión.",
+            "modelAnswer": "sit / seat",
+            "translation": "sit / seat",
             "evaluation": {
               "type": "transcription_feedback",
               "transcriptionSeparateFromPronunciation": true
@@ -1378,8 +1733,10 @@
           {
             "itemId": "english-pre-a1-m007-speaking-ex01-i07",
             "position": 7,
-            "prompt": "Say a short sentence using “notebook”.",
-            "modelAnswer": "This is my notebook.",
+            "prompt": "Di en voz alta esta expresión.",
+            "promptSpanish": "Practica el modelo de la misión.",
+            "modelAnswer": "ship / sheep",
+            "translation": "ship / sheep",
             "evaluation": {
               "type": "transcription_feedback",
               "transcriptionSeparateFromPronunciation": true
@@ -1388,8 +1745,10 @@
           {
             "itemId": "english-pre-a1-m007-speaking-ex01-i08",
             "position": 8,
-            "prompt": "Say a short sentence using “desk”.",
-            "modelAnswer": "This is my desk.",
+            "prompt": "Di en voz alta esta expresión.",
+            "promptSpanish": "Practica el modelo de la misión.",
+            "modelAnswer": "thin / this",
+            "translation": "thin / this",
             "evaluation": {
               "type": "transcription_feedback",
               "transcriptionSeparateFromPronunciation": true
@@ -1398,8 +1757,10 @@
           {
             "itemId": "english-pre-a1-m007-speaking-ex01-i09",
             "position": 9,
-            "prompt": "Say a short sentence using “chair”.",
-            "modelAnswer": "This is my chair.",
+            "prompt": "Di en voz alta esta expresión.",
+            "promptSpanish": "Practica el modelo de la misión.",
+            "modelAnswer": "hat / hand",
+            "translation": "hat / hand",
             "evaluation": {
               "type": "transcription_feedback",
               "transcriptionSeparateFromPronunciation": true
@@ -1408,8 +1769,10 @@
           {
             "itemId": "english-pre-a1-m007-speaking-ex01-i10",
             "position": 10,
-            "prompt": "Say a short sentence using “pencil case”.",
-            "modelAnswer": "This is my pencil case.",
+            "prompt": "Di en voz alta esta expresión.",
+            "promptSpanish": "Practica el modelo de la misión.",
+            "modelAnswer": "she / ship",
+            "translation": "she / ship",
             "evaluation": {
               "type": "transcription_feedback",
               "transcriptionSeparateFromPronunciation": true
@@ -1426,53 +1789,55 @@
         "exerciseId": "english-pre-a1-m007-listening-ex01",
         "type": "listening_gap_fill",
         "content": {
-          "audio": "tts:en-GB:I read a book at school. I write with a pen. I draw with a pencil. A ruler helps me draw a straight line. I clean pencil marks with a rubber. I carry my books in my schoolbag. I write notes in my notebook. I sit at my desk. I sit on a chair. My pens are in my pencil case.",
+          "audio": "tts:en-GB:H: hello, hat, house, hand TH: thin, three, thank TH: this, that SH: ship, she, fish CH: chair, cheese, teacher sit / seat ship / sheep thin / this hat / hand she / ship",
           "audioLocale": "en-GB",
-          "transcriptTemplate": "I read a [[gap-01]] at school. I write with a [[gap-02]]. I draw with a [[gap-03]]. A [[gap-04]] helps me draw a straight line. I clean pencil marks with a [[gap-05]]. I carry my books in my [[gap-06]]. I write notes in my [[gap-07]]. I sit at my [[gap-08]]. I sit on a [[gap-09]]. My pens are in my [[gap-10]].",
+          "audioStatus": "synthetic_pending_review",
+          "transcriptTemplate": "[[gap-01]] [[gap-02]] [[gap-03]] [[gap-04]] [[gap-05]] [[gap-06]] [[gap-07]] [[gap-08]] [[gap-09]] [[gap-10]]",
           "wordBank": [
             {
               "wordId": "english-pre-a1-m007-listening-word-01",
-              "word": "book"
+              "word": "hello"
             },
             {
               "wordId": "english-pre-a1-m007-listening-word-02",
-              "word": "pen"
+              "word": "hat"
             },
             {
               "wordId": "english-pre-a1-m007-listening-word-03",
-              "word": "pencil"
+              "word": "house"
             },
             {
               "wordId": "english-pre-a1-m007-listening-word-04",
-              "word": "ruler"
+              "word": "hand"
             },
             {
               "wordId": "english-pre-a1-m007-listening-word-05",
-              "word": "rubber"
+              "word": "thin"
             },
             {
               "wordId": "english-pre-a1-m007-listening-word-06",
-              "word": "schoolbag"
+              "word": "three"
             },
             {
               "wordId": "english-pre-a1-m007-listening-word-07",
-              "word": "notebook"
+              "word": "thank"
             },
             {
               "wordId": "english-pre-a1-m007-listening-word-08",
-              "word": "desk"
+              "word": "this"
             },
             {
               "wordId": "english-pre-a1-m007-listening-word-09",
-              "word": "chair"
+              "word": "that"
             },
             {
               "wordId": "english-pre-a1-m007-listening-word-10",
-              "word": "pencil case"
+              "word": "ship"
             }
           ],
           "interaction": "select_place_move_replace",
-          "audioTranscript": "tts:en-GB:I read a book at school. I write with a pen. I draw with a pencil. A ruler helps me draw a straight line. I clean pencil marks with a rubber. I carry my books in my schoolbag. I write notes in my notebook. I sit at my desk. I sit on a chair. My pens are in my pencil case."
+          "audioTranscript": "tts:en-GB:H: hello, hat, house, hand TH: thin, three, thank TH: this, that SH: ship, she, fish CH: chair, cheese, teacher sit / seat ship / sheep thin / this hat / hand she / ship",
+          "translation": "Escucha y reconoce las expresiones enseñadas."
         },
         "items": [
           {
@@ -1480,70 +1845,70 @@
             "position": 1,
             "gapToken": "[[gap-01]]",
             "expectedWordId": "english-pre-a1-m007-listening-word-01",
-            "answer": "book"
+            "answer": "hello"
           },
           {
             "itemId": "english-pre-a1-m007-listening-ex01-i02",
             "position": 2,
             "gapToken": "[[gap-02]]",
             "expectedWordId": "english-pre-a1-m007-listening-word-02",
-            "answer": "pen"
+            "answer": "hat"
           },
           {
             "itemId": "english-pre-a1-m007-listening-ex01-i03",
             "position": 3,
             "gapToken": "[[gap-03]]",
             "expectedWordId": "english-pre-a1-m007-listening-word-03",
-            "answer": "pencil"
+            "answer": "house"
           },
           {
             "itemId": "english-pre-a1-m007-listening-ex01-i04",
             "position": 4,
             "gapToken": "[[gap-04]]",
             "expectedWordId": "english-pre-a1-m007-listening-word-04",
-            "answer": "ruler"
+            "answer": "hand"
           },
           {
             "itemId": "english-pre-a1-m007-listening-ex01-i05",
             "position": 5,
             "gapToken": "[[gap-05]]",
             "expectedWordId": "english-pre-a1-m007-listening-word-05",
-            "answer": "rubber"
+            "answer": "thin"
           },
           {
             "itemId": "english-pre-a1-m007-listening-ex01-i06",
             "position": 6,
             "gapToken": "[[gap-06]]",
             "expectedWordId": "english-pre-a1-m007-listening-word-06",
-            "answer": "schoolbag"
+            "answer": "three"
           },
           {
             "itemId": "english-pre-a1-m007-listening-ex01-i07",
             "position": 7,
             "gapToken": "[[gap-07]]",
             "expectedWordId": "english-pre-a1-m007-listening-word-07",
-            "answer": "notebook"
+            "answer": "thank"
           },
           {
             "itemId": "english-pre-a1-m007-listening-ex01-i08",
             "position": 8,
             "gapToken": "[[gap-08]]",
             "expectedWordId": "english-pre-a1-m007-listening-word-08",
-            "answer": "desk"
+            "answer": "this"
           },
           {
             "itemId": "english-pre-a1-m007-listening-ex01-i09",
             "position": 9,
             "gapToken": "[[gap-09]]",
             "expectedWordId": "english-pre-a1-m007-listening-word-09",
-            "answer": "chair"
+            "answer": "that"
           },
           {
             "itemId": "english-pre-a1-m007-listening-ex01-i10",
             "position": 10,
             "gapToken": "[[gap-10]]",
             "expectedWordId": "english-pre-a1-m007-listening-word-10",
-            "answer": "pencil case"
+            "answer": "ship"
           }
         ]
       }

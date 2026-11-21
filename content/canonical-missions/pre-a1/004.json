@@ -1,9 +1,9 @@
 {
-  "schemaVersion": "1.2.0",
-  "contentVersion": 2,
+  "schemaVersion": 1,
+  "contentVersion": "2026-11-21-curriculum-alignment-v1",
   "course": {
     "courseId": "english-pre-a1",
-    "level": "PRE-A1",
+    "level": "Pre-A1",
     "language": "en-GB"
   },
   "unit": {
@@ -16,7 +16,7 @@
     "missionId": "english-pre-a1-m004",
     "unitId": "english-pre-a1-unit-01",
     "position": 4,
-    "title": "My Family"
+    "title": "Polite words"
   },
   "sections": [
     {
@@ -26,381 +26,552 @@
       "exercise": {
         "exerciseId": "english-pre-a1-m004-explore-ex01",
         "type": "vocabulary_pairs",
-        "theory": {
-          "title": "La familia: identificar y hablar de parentescos",
-          "explanation": "Aprende primero a identificar familiares con This is… y He/She is… Después usa my, your, his, her y our para decir de quién es cada familiar. Por último, aprende have got para decir qué familiares tienes.",
-          "tip": "My = mi; your = tu; his = su de él; her = su de ella; our = nuestro/a.",
-          "patterns": [
-            {
-              "label": "1. Identificar familiares",
-              "pattern": "This is my… · He is… · She is…",
-              "examples": [
-                "This is my mother. — Esta es mi madre.",
-                "He is my brother. — Él es mi hermano.",
-                "She is my sister. — Ella es mi hermana."
-              ]
-            },
-            {
-              "label": "2. Adjetivos posesivos",
-              "pattern": "my · your · his · her · our · their + family word",
-              "examples": [
-                "My father is Tom. — Mi padre es Tom.",
-                "Your sister is kind. — Tu hermana es amable.",
-                "His brother is Ben. — Su hermano (de él) es Ben.",
-                "Her daughter is Lily. — Su hija (de ella) es Lily.",
-                "Our family is happy. — Nuestra familia es feliz."
-              ]
-            },
-            {
-              "label": "3. Have got",
-              "pattern": "I/You/We/They have got · He/She has got",
-              "examples": [
-                "I have got one sister. — Tengo una hermana.",
-                "She has got one brother. — Ella tiene un hermano."
-              ]
-            },
-            {
-              "label": "4. Describir con to be",
-              "pattern": "Family member + am/is/are + adjective",
-              "examples": [
-                "My grandmother is kind. — Mi abuela es amable.",
-                "My grandparents are funny. — Mis abuelos son divertidos."
-              ]
-            }
-          ]
-        },
         "items": [
           {
             "itemId": "english-pre-a1-m004-explore-ex01-i01",
             "position": 1,
-            "english": "mother",
-            "spanish": "madre",
-            "audio": "tts:en-GB:mother"
+            "english": "please",
+            "spanish": "por favor",
+            "pronunciationGuide": "plíis",
+            "audio": "tts:en-GB:please",
+            "audioStatus": "synthetic_pending_review"
           },
           {
             "itemId": "english-pre-a1-m004-explore-ex01-i02",
             "position": 2,
-            "english": "father",
-            "spanish": "padre",
-            "audio": "tts:en-GB:father"
+            "english": "thank",
+            "spanish": "agradecer",
+            "pronunciationGuide": "zánk*",
+            "audio": "tts:en-GB:thank",
+            "audioStatus": "synthetic_pending_review"
           },
           {
             "itemId": "english-pre-a1-m004-explore-ex01-i03",
             "position": 3,
-            "english": "sister",
-            "spanish": "hermana",
-            "audio": "tts:en-GB:sister"
+            "english": "thanks",
+            "spanish": "gracias",
+            "pronunciationGuide": "zánks*",
+            "audio": "tts:en-GB:thanks",
+            "audioStatus": "synthetic_pending_review"
           },
           {
             "itemId": "english-pre-a1-m004-explore-ex01-i04",
             "position": 4,
-            "english": "brother",
-            "spanish": "hermano",
-            "audio": "tts:en-GB:brother"
+            "english": "thank you",
+            "spanish": "gracias",
+            "pronunciationGuide": "zánk iu*",
+            "audio": "tts:en-GB:thank you",
+            "audioStatus": "synthetic_pending_review"
           },
           {
             "itemId": "english-pre-a1-m004-explore-ex01-i05",
             "position": 5,
-            "english": "grandmother",
-            "spanish": "abuela",
-            "audio": "tts:en-GB:grandmother"
+            "english": "you're welcome",
+            "spanish": "de nada",
+            "pronunciationGuide": "ior UÉL-kam",
+            "audio": "tts:en-GB:you're welcome",
+            "audioStatus": "synthetic_pending_review"
           },
           {
             "itemId": "english-pre-a1-m004-explore-ex01-i06",
             "position": 6,
-            "english": "grandfather",
-            "spanish": "abuelo",
-            "audio": "tts:en-GB:grandfather"
+            "english": "sorry",
+            "spanish": "lo siento",
+            "pronunciationGuide": "SÓ-ri",
+            "audio": "tts:en-GB:sorry",
+            "audioStatus": "synthetic_pending_review"
           },
           {
             "itemId": "english-pre-a1-m004-explore-ex01-i07",
             "position": 7,
-            "english": "parents",
-            "spanish": "padres",
-            "audio": "tts:en-GB:parents"
+            "english": "excuse me",
+            "spanish": "disculpe",
+            "pronunciationGuide": "eks-KIÚS mí",
+            "audio": "tts:en-GB:excuse me",
+            "audioStatus": "synthetic_pending_review"
           },
           {
             "itemId": "english-pre-a1-m004-explore-ex01-i08",
             "position": 8,
-            "english": "daughter",
-            "spanish": "hija",
-            "audio": "tts:en-GB:daughter"
+            "english": "yes",
+            "spanish": "sí",
+            "pronunciationGuide": "iés",
+            "audio": "tts:en-GB:yes",
+            "audioStatus": "synthetic_pending_review"
           },
           {
             "itemId": "english-pre-a1-m004-explore-ex01-i09",
             "position": 9,
-            "english": "son",
-            "spanish": "hijo",
-            "audio": "tts:en-GB:son"
+            "english": "no",
+            "spanish": "no",
+            "pronunciationGuide": "nóu",
+            "audio": "tts:en-GB:no",
+            "audioStatus": "synthetic_pending_review"
           },
           {
             "itemId": "english-pre-a1-m004-explore-ex01-i10",
             "position": 10,
-            "english": "family",
-            "spanish": "familia",
-            "audio": "tts:en-GB:family"
+            "english": "help",
+            "spanish": "ayuda",
+            "pronunciationGuide": "jelp",
+            "audio": "tts:en-GB:help",
+            "audioStatus": "synthetic_pending_review"
+          },
+          {
+            "itemId": "english-pre-a1-m004-explore-ex01-i11",
+            "position": 11,
+            "english": "here",
+            "spanish": "aquí",
+            "pronunciationGuide": "jíar",
+            "audio": "tts:en-GB:here",
+            "audioStatus": "synthetic_pending_review"
+          },
+          {
+            "itemId": "english-pre-a1-m004-explore-ex01-i12",
+            "position": 12,
+            "english": "door",
+            "spanish": "puerta",
+            "pronunciationGuide": "dór",
+            "audio": "tts:en-GB:door",
+            "audioStatus": "synthetic_pending_review"
           }
         ],
+        "theory": {
+          "title": "Polite words",
+          "explanation": "Please suaviza peticiones. Thank you/thanks expresan agradecimiento; thanks es informal. You're welcome responde a thank you. Sorry expresa disculpa. Excuse me sirve para llamar la atención. TH requiere lengua entre los dientes; no es exactamente una z española.",
+          "tip": "Comprende todos los modelos de Explore antes de comenzar las actividades.",
+          "patterns": [
+            {
+              "label": "Bloque 1",
+              "pattern": "Polite words",
+              "examples": [
+                "Please."
+              ]
+            },
+            {
+              "label": "Bloque 2",
+              "pattern": "Please suaviza peticiones. Thank you/thanks expresan agradecimiento; thanks es informal. You're welcome responde a thank you. Sorry expresa disculpa. Excuse me sirve para llamar la atención. TH requiere lengua entre los dientes; no es exactamente una z española.",
+              "examples": [
+                "Thank you."
+              ]
+            },
+            {
+              "label": "Bloque 3",
+              "pattern": "Please suaviza peticiones. Thank you/thanks expresan agradecimiento; thanks es informal. You're welcome responde a thank you. Sorry expresa disculpa. Excuse me sirve para llamar la atención. TH requiere lengua entre los dientes; no es exactamente una z española.",
+              "examples": [
+                "Thanks."
+              ]
+            },
+            {
+              "label": "Bloque 4",
+              "pattern": "Please suaviza peticiones. Thank you/thanks expresan agradecimiento; thanks es informal. You're welcome responde a thank you. Sorry expresa disculpa. Excuse me sirve para llamar la atención. TH requiere lengua entre los dientes; no es exactamente una z española.",
+              "examples": [
+                "You're welcome."
+              ]
+            },
+            {
+              "label": "Bloque 5",
+              "pattern": "Please suaviza peticiones. Thank you/thanks expresan agradecimiento; thanks es informal. You're welcome responde a thank you. Sorry expresa disculpa. Excuse me sirve para llamar la atención. TH requiere lengua entre los dientes; no es exactamente una z española.",
+              "examples": [
+                "Sorry."
+              ]
+            },
+            {
+              "label": "Bloque 6",
+              "pattern": "Please suaviza peticiones. Thank you/thanks expresan agradecimiento; thanks es informal. You're welcome responde a thank you. Sorry expresa disculpa. Excuse me sirve para llamar la atención. TH requiere lengua entre los dientes; no es exactamente una z española.",
+              "examples": [
+                "Excuse me."
+              ]
+            },
+            {
+              "label": "Bloque 7",
+              "pattern": "Please suaviza peticiones. Thank you/thanks expresan agradecimiento; thanks es informal. You're welcome responde a thank you. Sorry expresa disculpa. Excuse me sirve para llamar la atención. TH requiere lengua entre los dientes; no es exactamente una z española.",
+              "examples": [
+                "Yes, please."
+              ]
+            },
+            {
+              "label": "Bloque 8",
+              "pattern": "Please suaviza peticiones. Thank you/thanks expresan agradecimiento; thanks es informal. You're welcome responde a thank you. Sorry expresa disculpa. Excuse me sirve para llamar la atención. TH requiere lengua entre los dientes; no es exactamente una z española.",
+              "examples": [
+                "No, thank you."
+              ]
+            },
+            {
+              "label": "Bloque 9",
+              "pattern": "Please suaviza peticiones. Thank you/thanks expresan agradecimiento; thanks es informal. You're welcome responde a thank you. Sorry expresa disculpa. Excuse me sirve para llamar la atención. TH requiere lengua entre los dientes; no es exactamente una z española.",
+              "examples": [
+                "Help, please."
+              ]
+            },
+            {
+              "label": "Bloque 10",
+              "pattern": "Please suaviza peticiones. Thank you/thanks expresan agradecimiento; thanks es informal. You're welcome responde a thank you. Sorry expresa disculpa. Excuse me sirve para llamar la atención. TH requiere lengua entre los dientes; no es exactamente una z española.",
+              "examples": [
+                "Excuse me."
+              ]
+            }
+          ]
+        },
         "lesson": {
           "phrases": [
             {
-              "english": "This is my mother.",
-              "spanish": "Esta es mi madre."
+              "english": "Please.",
+              "spanish": "Please.",
+              "note": "Modelo enseñado en Explore."
             },
             {
-              "english": "That is your father.",
-              "spanish": "Ese es tu padre."
+              "english": "Thank you.",
+              "spanish": "Thank you.",
+              "note": "Modelo enseñado en Explore."
             },
             {
-              "english": "He is my brother.",
-              "spanish": "Él es mi hermano."
+              "english": "Thanks.",
+              "spanish": "Thanks.",
+              "note": "Modelo enseñado en Explore."
             },
             {
-              "english": "She is my sister.",
-              "spanish": "Ella es mi hermana."
+              "english": "You're welcome.",
+              "spanish": "You're welcome.",
+              "note": "Modelo enseñado en Explore."
             },
             {
-              "english": "These are my parents.",
-              "spanish": "Estos son mis padres."
+              "english": "Sorry.",
+              "spanish": "Sorry.",
+              "note": "Modelo enseñado en Explore."
             },
             {
-              "english": "We love our family.",
-              "spanish": "Queremos a nuestra familia."
+              "english": "Excuse me.",
+              "spanish": "Excuse me.",
+              "note": "Modelo enseñado en Explore."
             },
             {
-              "english": "my",
-              "spanish": "mi / mis",
-              "note": "My indica posesión de quien habla."
+              "english": "Yes, please.",
+              "spanish": "Yes, please.",
+              "note": "Modelo enseñado en Explore."
             },
             {
-              "english": "your",
-              "spanish": "tu / tus",
-              "note": "Your indica posesión de la persona a quien hablas."
+              "english": "No, thank you.",
+              "spanish": "No, thank you.",
+              "note": "Modelo enseñado en Explore."
             },
             {
-              "english": "his",
-              "spanish": "su / sus (de él)",
-              "note": "His expresa posesión de un hombre o niño."
+              "english": "Help, please.",
+              "spanish": "Help, please.",
+              "note": "Modelo enseñado en Explore."
             },
             {
-              "english": "her",
-              "spanish": "su / sus (de ella)",
-              "note": "Her expresa posesión de una mujer o niña."
-            },
-            {
-              "english": "our",
-              "spanish": "nuestro/a/os/as",
-              "note": "Our expresa posesión compartida."
+              "english": "Excuse me.",
+              "spanish": "Excuse me.",
+              "note": "Modelo enseñado en Explore."
             }
           ],
           "grammar": [
             {
-              "english": "My parents are kind.",
-              "spanish": "Mis padres son amables.",
-              "note": "Parents es plural y usamos are."
+              "english": "Please.",
+              "spanish": "Modelo de la misión",
+              "note": "Polite words"
             },
             {
-              "english": "I have got one sister.",
-              "spanish": "Tengo una hermana.",
-              "note": "Have got expresa posesión."
+              "english": "Thank you.",
+              "spanish": "Modelo de la misión",
+              "note": "Please suaviza peticiones. Thank you/thanks expresan agradecimiento; thanks es informal. You're welcome responde a thank you. Sorry expresa disculpa. Excuse me sirve para llamar la atención. TH requiere lengua entre los dientes; no es exactamente una z española."
             },
             {
-              "english": "My grandmother is kind.",
-              "spanish": "Mi abuela es amable.",
-              "note": "Con grandmother usamos is."
+              "english": "Thanks.",
+              "spanish": "Modelo de la misión",
+              "note": "Please suaviza peticiones. Thank you/thanks expresan agradecimiento; thanks es informal. You're welcome responde a thank you. Sorry expresa disculpa. Excuse me sirve para llamar la atención. TH requiere lengua entre los dientes; no es exactamente una z española."
             },
             {
-              "english": "He is my brother.",
-              "spanish": "Él es mi hermano.",
-              "note": "He se refiere a un hombre o niño."
+              "english": "You're welcome.",
+              "spanish": "Modelo de la misión",
+              "note": "Please suaviza peticiones. Thank you/thanks expresan agradecimiento; thanks es informal. You're welcome responde a thank you. Sorry expresa disculpa. Excuse me sirve para llamar la atención. TH requiere lengua entre los dientes; no es exactamente una z española."
             },
             {
-              "english": "She is my sister.",
-              "spanish": "Ella es mi hermana.",
-              "note": "She se refiere a una mujer o niña."
+              "english": "Sorry.",
+              "spanish": "Modelo de la misión",
+              "note": "Please suaviza peticiones. Thank you/thanks expresan agradecimiento; thanks es informal. You're welcome responde a thank you. Sorry expresa disculpa. Excuse me sirve para llamar la atención. TH requiere lengua entre los dientes; no es exactamente una z española."
             },
             {
-              "english": "Ben is talking about his son.",
-              "spanish": "Ben está hablando de su hijo.",
-              "note": "His significa su, de él."
+              "english": "Excuse me.",
+              "spanish": "Modelo de la misión",
+              "note": "Please suaviza peticiones. Thank you/thanks expresan agradecimiento; thanks es informal. You're welcome responde a thank you. Sorry expresa disculpa. Excuse me sirve para llamar la atención. TH requiere lengua entre los dientes; no es exactamente una z española."
             },
             {
-              "english": "Mia is talking about her daughter.",
-              "spanish": "Mia está hablando de su hija.",
-              "note": "Her significa su, de ella."
+              "english": "Yes, please.",
+              "spanish": "Modelo de la misión",
+              "note": "Please suaviza peticiones. Thank you/thanks expresan agradecimiento; thanks es informal. You're welcome responde a thank you. Sorry expresa disculpa. Excuse me sirve para llamar la atención. TH requiere lengua entre los dientes; no es exactamente una z española."
             },
             {
-              "english": "We love our family.",
-              "spanish": "Queremos a nuestra familia.",
-              "note": "Our significa nuestra."
+              "english": "No, thank you.",
+              "spanish": "Modelo de la misión",
+              "note": "Please suaviza peticiones. Thank you/thanks expresan agradecimiento; thanks es informal. You're welcome responde a thank you. Sorry expresa disculpa. Excuse me sirve para llamar la atención. TH requiere lengua entre los dientes; no es exactamente una z española."
+            },
+            {
+              "english": "Help, please.",
+              "spanish": "Modelo de la misión",
+              "note": "Please suaviza peticiones. Thank you/thanks expresan agradecimiento; thanks es informal. You're welcome responde a thank you. Sorry expresa disculpa. Excuse me sirve para llamar la atención. TH requiere lengua entre los dientes; no es exactamente una z española."
+            },
+            {
+              "english": "Excuse me.",
+              "spanish": "Modelo de la misión",
+              "note": "Please suaviza peticiones. Thank you/thanks expresan agradecimiento; thanks es informal. You're welcome responde a thank you. Sorry expresa disculpa. Excuse me sirve para llamar la atención. TH requiere lengua entre los dientes; no es exactamente una z española."
             }
           ],
           "reading": [
             {
-              "english": "My mother is Anna and my father is Tom.",
-              "spanish": "Mi madre es Anna y mi padre es Tom."
-            },
-            {
-              "english": "I have got one sister, Lily, and one brother, Ben.",
-              "spanish": "Tengo una hermana, Lily, y un hermano, Ben."
-            },
-            {
-              "english": "My grandmother is kind and my grandfather is funny.",
-              "spanish": "Mi abuela es amable y mi abuelo es divertido."
-            },
-            {
-              "english": "We are a happy family.",
-              "spanish": "Somos una familia feliz."
-            },
-            {
-              "english": "We visit our grandparents on Sunday.",
-              "spanish": "Visitamos a nuestros abuelos el domingo."
+              "english": "Please. Thank you. You're welcome. Sorry. Excuse me. Help, please.",
+              "spanish": "Texto completo presentado arriba."
             }
           ],
           "writing": [
             {
-              "english": "This is my mother.",
-              "spanish": "Esta es mi madre."
+              "english": "Please.",
+              "spanish": "Please.",
+              "note": "Modelo enseñado en Explore."
             },
             {
-              "english": "My father is Tom.",
-              "spanish": "Mi padre es Tom."
+              "english": "Thank you.",
+              "spanish": "Thank you.",
+              "note": "Modelo enseñado en Explore."
             },
             {
-              "english": "I have one sister.",
-              "spanish": "Tengo una hermana."
+              "english": "Thanks.",
+              "spanish": "Thanks.",
+              "note": "Modelo enseñado en Explore."
             },
             {
-              "english": "My brother is Ben.",
-              "spanish": "Mi hermano es Ben."
+              "english": "You're welcome.",
+              "spanish": "You're welcome.",
+              "note": "Modelo enseñado en Explore."
             },
             {
-              "english": "My grandmother is kind.",
-              "spanish": "Mi abuela es amable."
+              "english": "Sorry.",
+              "spanish": "Sorry.",
+              "note": "Modelo enseñado en Explore."
             },
             {
-              "english": "My grandfather is funny.",
-              "spanish": "Mi abuelo es divertido."
+              "english": "Excuse me.",
+              "spanish": "Excuse me.",
+              "note": "Modelo enseñado en Explore."
             },
             {
-              "english": "We are a happy family.",
-              "spanish": "Somos una familia feliz."
+              "english": "Yes, please.",
+              "spanish": "Yes, please.",
+              "note": "Modelo enseñado en Explore."
             },
             {
-              "english": "We visit our grandparents.",
-              "spanish": "Visitamos a nuestros abuelos."
+              "english": "No, thank you.",
+              "spanish": "No, thank you.",
+              "note": "Modelo enseñado en Explore."
             },
             {
-              "english": "We visit on Sunday.",
-              "spanish": "Vamos de visita el domingo."
+              "english": "Help, please.",
+              "spanish": "Help, please.",
+              "note": "Modelo enseñado en Explore."
             },
             {
-              "english": "I love my family.",
-              "spanish": "Quiero a mi familia."
+              "english": "Excuse me.",
+              "spanish": "Excuse me.",
+              "note": "Modelo enseñado en Explore."
             }
           ],
           "speaking": [
             {
-              "english": "This is my mother.",
-              "spanish": "Esta es mi madre.",
-              "prompt": "Say a short sentence using mother.",
-              "promptSpanish": "Di una frase corta usando mother (madre)."
+              "english": "Please.",
+              "spanish": "Please.",
+              "note": "Modelo enseñado en Explore.",
+              "prompt": "Practica esta expresión.",
+              "promptSpanish": "Di la expresión en voz alta."
             },
             {
-              "english": "This is my father.",
-              "spanish": "Este es mi padre.",
-              "prompt": "Say a short sentence using father.",
-              "promptSpanish": "Di una frase corta usando father (padre)."
+              "english": "Thank you.",
+              "spanish": "Thank you.",
+              "note": "Modelo enseñado en Explore.",
+              "prompt": "Practica esta expresión.",
+              "promptSpanish": "Di la expresión en voz alta."
             },
             {
-              "english": "Lily is my sister.",
-              "spanish": "Lily es mi hermana.",
-              "prompt": "Say a short sentence using sister.",
-              "promptSpanish": "Di una frase corta usando sister (hermana)."
+              "english": "Thanks.",
+              "spanish": "Thanks.",
+              "note": "Modelo enseñado en Explore.",
+              "prompt": "Practica esta expresión.",
+              "promptSpanish": "Di la expresión en voz alta."
             },
             {
-              "english": "Ben is my brother.",
-              "spanish": "Ben es mi hermano.",
-              "prompt": "Say a short sentence using brother.",
-              "promptSpanish": "Di una frase corta usando brother (hermano)."
+              "english": "You're welcome.",
+              "spanish": "You're welcome.",
+              "note": "Modelo enseñado en Explore.",
+              "prompt": "Practica esta expresión.",
+              "promptSpanish": "Di la expresión en voz alta."
             },
             {
-              "english": "My grandmother is kind.",
-              "spanish": "Mi abuela es amable.",
-              "prompt": "Say a short sentence using grandmother.",
-              "promptSpanish": "Di una frase corta usando grandmother (abuela)."
+              "english": "Sorry.",
+              "spanish": "Sorry.",
+              "note": "Modelo enseñado en Explore.",
+              "prompt": "Practica esta expresión.",
+              "promptSpanish": "Di la expresión en voz alta."
             },
             {
-              "english": "My grandfather is funny.",
-              "spanish": "Mi abuelo es divertido.",
-              "prompt": "Say a short sentence using grandfather.",
-              "promptSpanish": "Di una frase corta usando grandfather (abuelo)."
+              "english": "Excuse me.",
+              "spanish": "Excuse me.",
+              "note": "Modelo enseñado en Explore.",
+              "prompt": "Practica esta expresión.",
+              "promptSpanish": "Di la expresión en voz alta."
             },
             {
-              "english": "These are my parents.",
-              "spanish": "Estos son mis padres.",
-              "prompt": "Say a short sentence using parents.",
-              "promptSpanish": "Di una frase corta usando parents (padres)."
+              "english": "Yes, please.",
+              "spanish": "Yes, please.",
+              "note": "Modelo enseñado en Explore.",
+              "prompt": "Practica esta expresión.",
+              "promptSpanish": "Di la expresión en voz alta."
             },
             {
-              "english": "She is their daughter.",
-              "spanish": "Ella es su hija.",
-              "prompt": "Say a short sentence using daughter.",
-              "promptSpanish": "Di una frase corta usando daughter (hija)."
+              "english": "No, thank you.",
+              "spanish": "No, thank you.",
+              "note": "Modelo enseñado en Explore.",
+              "prompt": "Practica esta expresión.",
+              "promptSpanish": "Di la expresión en voz alta."
             },
             {
-              "english": "He is their son.",
-              "spanish": "Él es su hijo.",
-              "prompt": "Say a short sentence using son.",
-              "promptSpanish": "Di una frase corta usando son (hijo)."
+              "english": "Help, please.",
+              "spanish": "Help, please.",
+              "note": "Modelo enseñado en Explore.",
+              "prompt": "Practica esta expresión.",
+              "promptSpanish": "Di la expresión en voz alta."
             },
             {
-              "english": "This is my family.",
-              "spanish": "Esta es mi familia.",
-              "prompt": "Say a short sentence using family.",
-              "promptSpanish": "Di una frase corta usando family (familia)."
+              "english": "Excuse me.",
+              "spanish": "Excuse me.",
+              "note": "Modelo enseñado en Explore.",
+              "prompt": "Practica esta expresión.",
+              "promptSpanish": "Di la expresión en voz alta."
             }
           ],
           "listening": [
             {
-              "english": "My mother is Anna.",
-              "spanish": "Mi madre es Anna."
+              "english": "Please.",
+              "spanish": "Please.",
+              "note": "Modelo enseñado en Explore."
             },
             {
-              "english": "My father is Tom.",
-              "spanish": "Mi padre es Tom."
+              "english": "Thank you.",
+              "spanish": "Thank you.",
+              "note": "Modelo enseñado en Explore."
             },
             {
-              "english": "Lily is my sister.",
-              "spanish": "Lily es mi hermana."
+              "english": "Thanks.",
+              "spanish": "Thanks.",
+              "note": "Modelo enseñado en Explore."
             },
             {
-              "english": "Ben is my brother.",
-              "spanish": "Ben es mi hermano."
+              "english": "You're welcome.",
+              "spanish": "You're welcome.",
+              "note": "Modelo enseñado en Explore."
             },
             {
-              "english": "My grandmother is kind.",
-              "spanish": "Mi abuela es amable."
+              "english": "Sorry.",
+              "spanish": "Sorry.",
+              "note": "Modelo enseñado en Explore."
             },
             {
-              "english": "My grandfather is funny.",
-              "spanish": "Mi abuelo es divertido."
+              "english": "Excuse me.",
+              "spanish": "Excuse me.",
+              "note": "Modelo enseñado en Explore."
             },
             {
-              "english": "My mother and father are my parents.",
-              "spanish": "Mi madre y mi padre son mis padres."
+              "english": "Yes, please.",
+              "spanish": "Yes, please.",
+              "note": "Modelo enseñado en Explore."
             },
             {
-              "english": "Lily is their daughter.",
-              "spanish": "Lily es su hija."
+              "english": "No, thank you.",
+              "spanish": "No, thank you.",
+              "note": "Modelo enseñado en Explore."
             },
             {
-              "english": "Ben is their son.",
-              "spanish": "Ben es su hijo."
+              "english": "Help, please.",
+              "spanish": "Help, please.",
+              "note": "Modelo enseñado en Explore."
             },
             {
-              "english": "I love my family.",
-              "spanish": "Quiero a mi familia."
+              "english": "Excuse me.",
+              "spanish": "Excuse me.",
+              "note": "Modelo enseñado en Explore."
+            }
+          ]
+        },
+        "content": {
+          "blocks": [
+            {
+              "position": 1,
+              "title": "Bloque 1",
+              "content": "Polite words",
+              "example": "Please.",
+              "translation": "Consulta la traducción y la guía de pronunciación de cada elemento."
+            },
+            {
+              "position": 2,
+              "title": "Bloque 2",
+              "content": "Please suaviza peticiones. Thank you/thanks expresan agradecimiento; thanks es informal. You're welcome responde a thank you. Sorry expresa disculpa. Excuse me sirve para llamar la atención. TH requiere lengua entre los dientes; no es exactamente una z española.",
+              "example": "Thank you.",
+              "translation": "Consulta la traducción y la guía de pronunciación de cada elemento."
+            },
+            {
+              "position": 3,
+              "title": "Bloque 3",
+              "content": "Please suaviza peticiones. Thank you/thanks expresan agradecimiento; thanks es informal. You're welcome responde a thank you. Sorry expresa disculpa. Excuse me sirve para llamar la atención. TH requiere lengua entre los dientes; no es exactamente una z española.",
+              "example": "Thanks.",
+              "translation": "Consulta la traducción y la guía de pronunciación de cada elemento."
+            },
+            {
+              "position": 4,
+              "title": "Bloque 4",
+              "content": "Please suaviza peticiones. Thank you/thanks expresan agradecimiento; thanks es informal. You're welcome responde a thank you. Sorry expresa disculpa. Excuse me sirve para llamar la atención. TH requiere lengua entre los dientes; no es exactamente una z española.",
+              "example": "You're welcome.",
+              "translation": "Consulta la traducción y la guía de pronunciación de cada elemento."
+            },
+            {
+              "position": 5,
+              "title": "Bloque 5",
+              "content": "Please suaviza peticiones. Thank you/thanks expresan agradecimiento; thanks es informal. You're welcome responde a thank you. Sorry expresa disculpa. Excuse me sirve para llamar la atención. TH requiere lengua entre los dientes; no es exactamente una z española.",
+              "example": "Sorry.",
+              "translation": "Consulta la traducción y la guía de pronunciación de cada elemento."
+            },
+            {
+              "position": 6,
+              "title": "Bloque 6",
+              "content": "Please suaviza peticiones. Thank you/thanks expresan agradecimiento; thanks es informal. You're welcome responde a thank you. Sorry expresa disculpa. Excuse me sirve para llamar la atención. TH requiere lengua entre los dientes; no es exactamente una z española.",
+              "example": "Excuse me.",
+              "translation": "Consulta la traducción y la guía de pronunciación de cada elemento."
+            },
+            {
+              "position": 7,
+              "title": "Bloque 7",
+              "content": "Please suaviza peticiones. Thank you/thanks expresan agradecimiento; thanks es informal. You're welcome responde a thank you. Sorry expresa disculpa. Excuse me sirve para llamar la atención. TH requiere lengua entre los dientes; no es exactamente una z española.",
+              "example": "Yes, please.",
+              "translation": "Consulta la traducción y la guía de pronunciación de cada elemento."
+            },
+            {
+              "position": 8,
+              "title": "Bloque 8",
+              "content": "Please suaviza peticiones. Thank you/thanks expresan agradecimiento; thanks es informal. You're welcome responde a thank you. Sorry expresa disculpa. Excuse me sirve para llamar la atención. TH requiere lengua entre los dientes; no es exactamente una z española.",
+              "example": "No, thank you.",
+              "translation": "Consulta la traducción y la guía de pronunciación de cada elemento."
+            },
+            {
+              "position": 9,
+              "title": "Bloque 9",
+              "content": "Please suaviza peticiones. Thank you/thanks expresan agradecimiento; thanks es informal. You're welcome responde a thank you. Sorry expresa disculpa. Excuse me sirve para llamar la atención. TH requiere lengua entre los dientes; no es exactamente una z española.",
+              "example": "Help, please.",
+              "translation": "Consulta la traducción y la guía de pronunciación de cada elemento."
+            },
+            {
+              "position": 10,
+              "title": "Bloque 10",
+              "content": "Please suaviza peticiones. Thank you/thanks expresan agradecimiento; thanks es informal. You're welcome responde a thank you. Sorry expresa disculpa. Excuse me sirve para llamar la atención. TH requiere lengua entre los dientes; no es exactamente una z española.",
+              "example": "Excuse me.",
+              "translation": "Consulta la traducción y la guía de pronunciación de cada elemento."
             }
           ]
         }
@@ -417,302 +588,142 @@
           {
             "itemId": "english-pre-a1-m004-practice-ex01-i01",
             "position": 1,
-            "taskType": "vocabulary_translation",
-            "prompt": "Choose the Spanish meaning of “mother”.",
+            "prompt": "Elige la traducción de “please”.",
             "evaluation": {
               "type": "single_choice"
             },
             "options": [
-              "madre",
-              "hermano",
-              "padres"
+              "agradecer",
+              "por favor",
+              "gracias"
             ],
-            "answer": "madre"
+            "answer": "por favor"
           },
           {
             "itemId": "english-pre-a1-m004-practice-ex01-i02",
             "position": 2,
-            "taskType": "vocabulary_translation",
-            "prompt": "Choose the Spanish meaning of “father”.",
+            "prompt": "Elige la traducción de “thank”.",
             "evaluation": {
               "type": "single_choice"
             },
             "options": [
-              "abuela",
-              "padre",
-              "hija"
+              "una alternativa",
+              "gracias",
+              "agradecer"
             ],
-            "answer": "padre"
+            "answer": "agradecer"
           },
           {
             "itemId": "english-pre-a1-m004-practice-ex01-i03",
             "position": 3,
-            "taskType": "vocabulary_translation",
-            "prompt": "Choose the Spanish meaning of “sister”.",
+            "prompt": "Elige la traducción de “thanks”.",
             "evaluation": {
               "type": "single_choice"
             },
             "options": [
-              "abuelo",
-              "hijo",
-              "hermana"
+              "gracias",
+              "otra opción",
+              "de nada"
             ],
-            "answer": "hermana"
+            "answer": "gracias"
           },
           {
             "itemId": "english-pre-a1-m004-practice-ex01-i04",
             "position": 4,
-            "taskType": "vocabulary_translation",
-            "prompt": "Choose the Spanish meaning of “brother”.",
+            "prompt": "Elige la traducción de “thank you”.",
             "evaluation": {
               "type": "single_choice"
             },
             "options": [
-              "padres",
-              "hermano",
-              "familia"
+              "de nada",
+              "gracias",
+              "lo siento"
             ],
-            "answer": "hermano"
+            "answer": "gracias"
           },
           {
             "itemId": "english-pre-a1-m004-practice-ex01-i05",
             "position": 5,
-            "taskType": "vocabulary_translation",
-            "prompt": "Choose the Spanish meaning of “grandmother”.",
+            "prompt": "Elige la traducción de “you're welcome”.",
             "evaluation": {
               "type": "single_choice"
             },
             "options": [
-              "abuela",
-              "hija",
-              "madre"
+              "disculpe",
+              "lo siento",
+              "de nada"
             ],
-            "answer": "abuela"
+            "answer": "de nada"
           },
           {
             "itemId": "english-pre-a1-m004-practice-ex01-i06",
             "position": 6,
-            "taskType": "vocabulary_translation",
-            "prompt": "Choose the Spanish meaning of “grandfather”.",
+            "prompt": "Elige la traducción de “sorry”.",
             "evaluation": {
               "type": "single_choice"
             },
             "options": [
-              "hijo",
-              "padre",
-              "abuelo"
+              "lo siento",
+              "disculpe",
+              "sí"
             ],
-            "answer": "abuelo"
+            "answer": "lo siento"
           },
           {
             "itemId": "english-pre-a1-m004-practice-ex01-i07",
             "position": 7,
-            "taskType": "vocabulary_translation",
-            "prompt": "Choose the Spanish meaning of “parents”.",
+            "prompt": "Elige la traducción de “excuse me”.",
             "evaluation": {
               "type": "single_choice"
             },
             "options": [
-              "padres",
-              "familia",
-              "hermana"
+              "sí",
+              "disculpe",
+              "no"
             ],
-            "answer": "padres"
+            "answer": "disculpe"
           },
           {
             "itemId": "english-pre-a1-m004-practice-ex01-i08",
             "position": 8,
-            "taskType": "vocabulary_translation",
-            "prompt": "Choose the Spanish meaning of “daughter”.",
+            "prompt": "Elige la traducción de “yes”.",
             "evaluation": {
               "type": "single_choice"
             },
             "options": [
-              "madre",
-              "hija",
-              "hermano"
+              "ayuda",
+              "no",
+              "sí"
             ],
-            "answer": "hija"
+            "answer": "sí"
           },
           {
             "itemId": "english-pre-a1-m004-practice-ex01-i09",
             "position": 9,
-            "taskType": "vocabulary_translation",
-            "prompt": "Choose the Spanish meaning of “son”.",
+            "prompt": "Elige la traducción de “no”.",
             "evaluation": {
               "type": "single_choice"
             },
             "options": [
-              "padre",
-              "abuela",
-              "hijo"
+              "no",
+              "ayuda",
+              "aquí"
             ],
-            "answer": "hijo"
+            "answer": "no"
           },
           {
             "itemId": "english-pre-a1-m004-practice-ex01-i10",
             "position": 10,
-            "taskType": "vocabulary_translation",
-            "prompt": "Choose the Spanish meaning of “family”.",
+            "prompt": "Elige la traducción de “help”.",
             "evaluation": {
               "type": "single_choice"
             },
             "options": [
-              "hermana",
-              "familia",
-              "abuelo"
+              "aquí",
+              "ayuda",
+              "puerta"
             ],
-            "answer": "familia"
-          },
-          {
-            "itemId": "english-pre-a1-m004-practice-ex01-i11",
-            "position": 11,
-            "taskType": "topic_vocabulary",
-            "prompt": "Which English word means “madre”?",
-            "evaluation": {
-              "type": "single_choice"
-            },
-            "options": [
-              "mother",
-              "sister",
-              "grandfather"
-            ],
-            "answer": "mother"
-          },
-          {
-            "itemId": "english-pre-a1-m004-practice-ex01-i12",
-            "position": 12,
-            "taskType": "topic_vocabulary",
-            "prompt": "Choose the word for “padre”?",
-            "evaluation": {
-              "type": "single_choice"
-            },
-            "options": [
-              "brother",
-              "parents",
-              "father"
-            ],
-            "answer": "father"
-          },
-          {
-            "itemId": "english-pre-a1-m004-practice-ex01-i13",
-            "position": 13,
-            "taskType": "topic_vocabulary",
-            "prompt": "Select the English word for “hermana”?",
-            "evaluation": {
-              "type": "single_choice"
-            },
-            "options": [
-              "grandmother",
-              "sister",
-              "daughter"
-            ],
-            "answer": "sister"
-          },
-          {
-            "itemId": "english-pre-a1-m004-practice-ex01-i14",
-            "position": 14,
-            "taskType": "topic_vocabulary",
-            "prompt": "What is the English word for “hermano”?",
-            "evaluation": {
-              "type": "single_choice"
-            },
-            "options": [
-              "grandfather",
-              "son",
-              "brother"
-            ],
-            "answer": "brother"
-          },
-          {
-            "itemId": "english-pre-a1-m004-practice-ex01-i15",
-            "position": 15,
-            "taskType": "topic_vocabulary",
-            "prompt": "Find the word that means “abuela”?",
-            "evaluation": {
-              "type": "single_choice"
-            },
-            "options": [
-              "grandmother",
-              "parents",
-              "family"
-            ],
-            "answer": "grandmother"
-          },
-          {
-            "itemId": "english-pre-a1-m004-practice-ex01-i16",
-            "position": 16,
-            "taskType": "topic_vocabulary",
-            "prompt": "Which word matches “abuelo”?",
-            "evaluation": {
-              "type": "single_choice"
-            },
-            "options": [
-              "daughter",
-              "mother",
-              "grandfather"
-            ],
-            "answer": "grandfather"
-          },
-          {
-            "itemId": "english-pre-a1-m004-practice-ex01-i17",
-            "position": 17,
-            "taskType": "topic_vocabulary",
-            "prompt": "Choose the translation for “padres”?",
-            "evaluation": {
-              "type": "single_choice"
-            },
-            "options": [
-              "parents",
-              "son",
-              "father"
-            ],
-            "answer": "parents"
-          },
-          {
-            "itemId": "english-pre-a1-m004-practice-ex01-i18",
-            "position": 18,
-            "taskType": "topic_vocabulary",
-            "prompt": "Select the matching word for “hija”?",
-            "evaluation": {
-              "type": "single_choice"
-            },
-            "options": [
-              "family",
-              "daughter",
-              "sister"
-            ],
-            "answer": "daughter"
-          },
-          {
-            "itemId": "english-pre-a1-m004-practice-ex01-i19",
-            "position": 19,
-            "taskType": "topic_vocabulary",
-            "prompt": "What word means “hijo”?",
-            "evaluation": {
-              "type": "single_choice"
-            },
-            "options": [
-              "mother",
-              "brother",
-              "son"
-            ],
-            "answer": "son"
-          },
-          {
-            "itemId": "english-pre-a1-m004-practice-ex01-i20",
-            "position": 20,
-            "taskType": "topic_vocabulary",
-            "prompt": "Find the English word for “familia”?",
-            "evaluation": {
-              "type": "single_choice"
-            },
-            "options": [
-              "father",
-              "family",
-              "grandmother"
-            ],
-            "answer": "family"
+            "answer": "ayuda"
           }
         ]
       }
@@ -724,146 +735,223 @@
       "exercise": {
         "exerciseId": "english-pre-a1-m004-grammar-ex01",
         "type": "grammar",
+        "theory": {
+          "title": "Polite words",
+          "explanation": "Please suaviza peticiones. Thank you/thanks expresan agradecimiento; thanks es informal. You're welcome responde a thank you. Sorry expresa disculpa. Excuse me sirve para llamar la atención. TH requiere lengua entre los dientes; no es exactamente una z española.",
+          "tip": "Comprende todos los modelos de Explore antes de comenzar las actividades.",
+          "patterns": [
+            {
+              "label": "Bloque 1",
+              "pattern": "Polite words",
+              "examples": [
+                "Please."
+              ]
+            },
+            {
+              "label": "Bloque 2",
+              "pattern": "Please suaviza peticiones. Thank you/thanks expresan agradecimiento; thanks es informal. You're welcome responde a thank you. Sorry expresa disculpa. Excuse me sirve para llamar la atención. TH requiere lengua entre los dientes; no es exactamente una z española.",
+              "examples": [
+                "Thank you."
+              ]
+            },
+            {
+              "label": "Bloque 3",
+              "pattern": "Please suaviza peticiones. Thank you/thanks expresan agradecimiento; thanks es informal. You're welcome responde a thank you. Sorry expresa disculpa. Excuse me sirve para llamar la atención. TH requiere lengua entre los dientes; no es exactamente una z española.",
+              "examples": [
+                "Thanks."
+              ]
+            },
+            {
+              "label": "Bloque 4",
+              "pattern": "Please suaviza peticiones. Thank you/thanks expresan agradecimiento; thanks es informal. You're welcome responde a thank you. Sorry expresa disculpa. Excuse me sirve para llamar la atención. TH requiere lengua entre los dientes; no es exactamente una z española.",
+              "examples": [
+                "You're welcome."
+              ]
+            },
+            {
+              "label": "Bloque 5",
+              "pattern": "Please suaviza peticiones. Thank you/thanks expresan agradecimiento; thanks es informal. You're welcome responde a thank you. Sorry expresa disculpa. Excuse me sirve para llamar la atención. TH requiere lengua entre los dientes; no es exactamente una z española.",
+              "examples": [
+                "Sorry."
+              ]
+            },
+            {
+              "label": "Bloque 6",
+              "pattern": "Please suaviza peticiones. Thank you/thanks expresan agradecimiento; thanks es informal. You're welcome responde a thank you. Sorry expresa disculpa. Excuse me sirve para llamar la atención. TH requiere lengua entre los dientes; no es exactamente una z española.",
+              "examples": [
+                "Excuse me."
+              ]
+            },
+            {
+              "label": "Bloque 7",
+              "pattern": "Please suaviza peticiones. Thank you/thanks expresan agradecimiento; thanks es informal. You're welcome responde a thank you. Sorry expresa disculpa. Excuse me sirve para llamar la atención. TH requiere lengua entre los dientes; no es exactamente una z española.",
+              "examples": [
+                "Yes, please."
+              ]
+            },
+            {
+              "label": "Bloque 8",
+              "pattern": "Please suaviza peticiones. Thank you/thanks expresan agradecimiento; thanks es informal. You're welcome responde a thank you. Sorry expresa disculpa. Excuse me sirve para llamar la atención. TH requiere lengua entre los dientes; no es exactamente una z española.",
+              "examples": [
+                "No, thank you."
+              ]
+            },
+            {
+              "label": "Bloque 9",
+              "pattern": "Please suaviza peticiones. Thank you/thanks expresan agradecimiento; thanks es informal. You're welcome responde a thank you. Sorry expresa disculpa. Excuse me sirve para llamar la atención. TH requiere lengua entre los dientes; no es exactamente una z española.",
+              "examples": [
+                "Help, please."
+              ]
+            },
+            {
+              "label": "Bloque 10",
+              "pattern": "Please suaviza peticiones. Thank you/thanks expresan agradecimiento; thanks es informal. You're welcome responde a thank you. Sorry expresa disculpa. Excuse me sirve para llamar la atención. TH requiere lengua entre los dientes; no es exactamente una z española.",
+              "examples": [
+                "Excuse me."
+              ]
+            }
+          ]
+        },
         "items": [
           {
             "itemId": "english-pre-a1-m004-grammar-ex01-i01",
             "position": 1,
-            "prompt": "I am Alex. This is ___ mother.",
+            "prompt": "Reconoce el modelo trabajado: Please.",
             "evaluation": {
               "type": "single_choice"
             },
             "options": [
-              "your",
-              "my",
-              "his"
+              "Thank you.",
+              "Please.",
+              "Thanks."
             ],
-            "answer": "my"
+            "answer": "Please."
           },
           {
             "itemId": "english-pre-a1-m004-grammar-ex01-i02",
             "position": 2,
-            "prompt": "You are Mia. That is ___ father.",
+            "prompt": "Reconoce el modelo trabajado: Thank you.",
             "evaluation": {
               "type": "single_choice"
             },
             "options": [
-              "your",
-              "his",
-              "her"
+              "You're welcome.",
+              "Thanks.",
+              "Thank you."
             ],
-            "answer": "your"
+            "answer": "Thank you."
           },
           {
             "itemId": "english-pre-a1-m004-grammar-ex01-i03",
             "position": 3,
-            "prompt": "I am Sam. He is ___ brother.",
+            "prompt": "Reconoce el modelo trabajado: Thanks.",
             "evaluation": {
               "type": "single_choice"
             },
             "options": [
-              "her",
-              "our",
-              "my"
+              "Thanks.",
+              "You're welcome.",
+              "Sorry."
             ],
-            "answer": "my"
+            "answer": "Thanks."
           },
           {
             "itemId": "english-pre-a1-m004-grammar-ex01-i04",
             "position": 4,
-            "prompt": "Ben is talking about Mia. She is ___ sister.",
+            "prompt": "Reconoce el modelo trabajado: You're welcome.",
             "evaluation": {
               "type": "single_choice"
             },
             "options": [
-              "my",
-              "their",
-              "his"
+              "Sorry.",
+              "You're welcome.",
+              "Excuse me."
             ],
-            "answer": "his"
-          },
-          {
-            "itemId": "english-pre-a1-m004-grammar-ex01-i08",
-            "position": 8,
-            "prompt": "Ben is talking about his son. The boy is ___ son.",
-            "evaluation": {
-              "type": "single_choice"
-            },
-            "options": [
-              "her",
-              "his",
-              "my"
-            ],
-            "answer": "his"
-          },
-          {
-            "itemId": "english-pre-a1-m004-grammar-ex01-i09",
-            "position": 9,
-            "prompt": "Mia is talking about her daughter. Lily is ___ daughter.",
-            "evaluation": {
-              "type": "single_choice"
-            },
-            "options": [
-              "her",
-              "his",
-              "our"
-            ],
-            "answer": "her"
-          },
-          {
-            "itemId": "english-pre-a1-m004-grammar-ex01-i10",
-            "position": 10,
-            "prompt": "We love ___ family.",
-            "evaluation": {
-              "type": "single_choice"
-            },
-            "options": [
-              "our",
-              "my",
-              "their"
-            ],
-            "answer": "our"
+            "answer": "You're welcome."
           },
           {
             "itemId": "english-pre-a1-m004-grammar-ex01-i05",
             "position": 5,
-            "prompt": "My parents ___ kind.",
+            "prompt": "Reconoce el modelo trabajado: Sorry.",
             "evaluation": {
               "type": "single_choice"
             },
             "options": [
-              "is",
-              "are",
-              "am"
+              "Yes, please.",
+              "Excuse me.",
+              "Sorry."
             ],
-            "answer": "are"
-          },
-          {
-            "itemId": "english-pre-a1-m004-grammar-ex01-i07",
-            "position": 7,
-            "prompt": "My grandmother ___ kind.",
-            "evaluation": {
-              "type": "single_choice"
-            },
-            "options": [
-              "are",
-              "am",
-              "is"
-            ],
-            "answer": "is"
+            "answer": "Sorry."
           },
           {
             "itemId": "english-pre-a1-m004-grammar-ex01-i06",
             "position": 6,
-            "prompt": "I ___ one sister.",
+            "prompt": "Reconoce el modelo trabajado: Excuse me.",
             "evaluation": {
               "type": "single_choice"
             },
             "options": [
-              "have got",
-              "has got",
-              "is"
+              "Excuse me.",
+              "Yes, please.",
+              "No, thank you."
             ],
-            "answer": "have got"
+            "answer": "Excuse me."
+          },
+          {
+            "itemId": "english-pre-a1-m004-grammar-ex01-i07",
+            "position": 7,
+            "prompt": "Reconoce el modelo trabajado: Yes, please.",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "No, thank you.",
+              "Yes, please.",
+              "Help, please."
+            ],
+            "answer": "Yes, please."
+          },
+          {
+            "itemId": "english-pre-a1-m004-grammar-ex01-i08",
+            "position": 8,
+            "prompt": "Reconoce el modelo trabajado: No, thank you.",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "Excuse me.",
+              "Help, please.",
+              "No, thank you."
+            ],
+            "answer": "No, thank you."
+          },
+          {
+            "itemId": "english-pre-a1-m004-grammar-ex01-i09",
+            "position": 9,
+            "prompt": "Reconoce el modelo trabajado: Help, please.",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "Help, please.",
+              "Excuse me.",
+              "Please."
+            ],
+            "answer": "Help, please."
+          },
+          {
+            "itemId": "english-pre-a1-m004-grammar-ex01-i10",
+            "position": 10,
+            "prompt": "Reconoce el modelo trabajado: Excuse me.",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "Please.",
+              "Excuse me.",
+              "Thank you."
+            ],
+            "answer": "Excuse me."
           }
         ]
       }
@@ -879,82 +967,122 @@
           {
             "itemId": "english-pre-a1-m004-pronunciation-ex01-i01",
             "position": 1,
-            "word": "mother",
-            "translation": "madre",
-            "pronunciationGuide": "má-der",
-            "audio": "tts:en-GB:mother"
+            "word": "please",
+            "translation": "por favor",
+            "pronunciationGuide": "plíis",
+            "audio": "tts:en-GB:please",
+            "audioStatus": "synthetic_pending_review",
+            "guideType": "approximate_spanish"
           },
           {
             "itemId": "english-pre-a1-m004-pronunciation-ex01-i02",
             "position": 2,
-            "word": "father",
-            "translation": "padre",
-            "pronunciationGuide": "fá-der",
-            "audio": "tts:en-GB:father"
+            "word": "thank",
+            "translation": "agradecer",
+            "pronunciationGuide": "zánk*",
+            "audio": "tts:en-GB:thank",
+            "audioStatus": "synthetic_pending_review",
+            "guideType": "approximate_spanish"
           },
           {
             "itemId": "english-pre-a1-m004-pronunciation-ex01-i03",
             "position": 3,
-            "word": "sister",
-            "translation": "hermana",
-            "pronunciationGuide": "sís-ter",
-            "audio": "tts:en-GB:sister"
+            "word": "thanks",
+            "translation": "gracias",
+            "pronunciationGuide": "zánks*",
+            "audio": "tts:en-GB:thanks",
+            "audioStatus": "synthetic_pending_review",
+            "guideType": "approximate_spanish"
           },
           {
             "itemId": "english-pre-a1-m004-pronunciation-ex01-i04",
             "position": 4,
-            "word": "brother",
-            "translation": "hermano",
-            "pronunciationGuide": "brá-der",
-            "audio": "tts:en-GB:brother"
+            "word": "thank you",
+            "translation": "gracias",
+            "pronunciationGuide": "zánk iu*",
+            "audio": "tts:en-GB:thank you",
+            "audioStatus": "synthetic_pending_review",
+            "guideType": "approximate_spanish"
           },
           {
             "itemId": "english-pre-a1-m004-pronunciation-ex01-i05",
             "position": 5,
-            "word": "grandmother",
-            "translation": "abuela",
-            "pronunciationGuide": "gránd-má-der",
-            "audio": "tts:en-GB:grandmother"
+            "word": "you're welcome",
+            "translation": "de nada",
+            "pronunciationGuide": "ior UÉL-kam",
+            "audio": "tts:en-GB:you're welcome",
+            "audioStatus": "synthetic_pending_review",
+            "guideType": "approximate_spanish"
           },
           {
             "itemId": "english-pre-a1-m004-pronunciation-ex01-i06",
             "position": 6,
-            "word": "grandfather",
-            "translation": "abuelo",
-            "pronunciationGuide": "gránd-fá-der",
-            "audio": "tts:en-GB:grandfather"
+            "word": "sorry",
+            "translation": "lo siento",
+            "pronunciationGuide": "SÓ-ri",
+            "audio": "tts:en-GB:sorry",
+            "audioStatus": "synthetic_pending_review",
+            "guideType": "approximate_spanish"
           },
           {
             "itemId": "english-pre-a1-m004-pronunciation-ex01-i07",
             "position": 7,
-            "word": "parents",
-            "translation": "padres",
-            "pronunciationGuide": "pé-rents",
-            "audio": "tts:en-GB:parents"
+            "word": "excuse me",
+            "translation": "disculpe",
+            "pronunciationGuide": "eks-KIÚS mí",
+            "audio": "tts:en-GB:excuse me",
+            "audioStatus": "synthetic_pending_review",
+            "guideType": "approximate_spanish"
           },
           {
             "itemId": "english-pre-a1-m004-pronunciation-ex01-i08",
             "position": 8,
-            "word": "daughter",
-            "translation": "hija",
-            "pronunciationGuide": "dó-ter",
-            "audio": "tts:en-GB:daughter"
+            "word": "yes",
+            "translation": "sí",
+            "pronunciationGuide": "iés",
+            "audio": "tts:en-GB:yes",
+            "audioStatus": "synthetic_pending_review",
+            "guideType": "approximate_spanish"
           },
           {
             "itemId": "english-pre-a1-m004-pronunciation-ex01-i09",
             "position": 9,
-            "word": "son",
-            "translation": "hijo",
-            "pronunciationGuide": "san",
-            "audio": "tts:en-GB:son"
+            "word": "no",
+            "translation": "no",
+            "pronunciationGuide": "nóu",
+            "audio": "tts:en-GB:no",
+            "audioStatus": "synthetic_pending_review",
+            "guideType": "approximate_spanish"
           },
           {
             "itemId": "english-pre-a1-m004-pronunciation-ex01-i10",
             "position": 10,
-            "word": "family",
-            "translation": "familia",
-            "pronunciationGuide": "fá-mi-li",
-            "audio": "tts:en-GB:family"
+            "word": "help",
+            "translation": "ayuda",
+            "pronunciationGuide": "jelp",
+            "audio": "tts:en-GB:help",
+            "audioStatus": "synthetic_pending_review",
+            "guideType": "approximate_spanish"
+          },
+          {
+            "itemId": "english-pre-a1-m004-pronunciation-ex01-i11",
+            "position": 11,
+            "word": "here",
+            "translation": "aquí",
+            "pronunciationGuide": "jíar",
+            "audio": "tts:en-GB:here",
+            "audioStatus": "synthetic_pending_review",
+            "guideType": "approximate_spanish"
+          },
+          {
+            "itemId": "english-pre-a1-m004-pronunciation-ex01-i12",
+            "position": 12,
+            "word": "door",
+            "translation": "puerta",
+            "pronunciationGuide": "dór",
+            "audio": "tts:en-GB:door",
+            "audioStatus": "synthetic_pending_review",
+            "guideType": "approximate_spanish"
           }
         ]
       }
@@ -968,148 +1096,211 @@
         "type": "reading_comprehension",
         "content": {
           "passageId": "english-pre-a1-m004-reading-passage-01",
-          "passage": "My mother is Anna and my father is Tom. I have got one sister, Lily, and one brother, Ben. My grandmother is kind and my grandfather is funny. We are a happy family. We visit our grandparents on Sunday."
+          "passage": "Please. Thank you. You're welcome. Sorry. Excuse me. Help, please.",
+          "translation": "Traducción del texto: Please. Thank you. You're welcome. Sorry. Excuse me. Help, please.",
+          "vocabulary": [
+            {
+              "word": "please",
+              "translation": "por favor",
+              "pronunciationGuide": "plíis"
+            },
+            {
+              "word": "thank",
+              "translation": "agradecer",
+              "pronunciationGuide": "zánk*"
+            },
+            {
+              "word": "thanks",
+              "translation": "gracias",
+              "pronunciationGuide": "zánks*"
+            },
+            {
+              "word": "thank you",
+              "translation": "gracias",
+              "pronunciationGuide": "zánk iu*"
+            },
+            {
+              "word": "you're welcome",
+              "translation": "de nada",
+              "pronunciationGuide": "ior UÉL-kam"
+            },
+            {
+              "word": "sorry",
+              "translation": "lo siento",
+              "pronunciationGuide": "SÓ-ri"
+            },
+            {
+              "word": "excuse me",
+              "translation": "disculpe",
+              "pronunciationGuide": "eks-KIÚS mí"
+            },
+            {
+              "word": "yes",
+              "translation": "sí",
+              "pronunciationGuide": "iés"
+            },
+            {
+              "word": "no",
+              "translation": "no",
+              "pronunciationGuide": "nóu"
+            },
+            {
+              "word": "help",
+              "translation": "ayuda",
+              "pronunciationGuide": "jelp"
+            },
+            {
+              "word": "here",
+              "translation": "aquí",
+              "pronunciationGuide": "jíar"
+            },
+            {
+              "word": "door",
+              "translation": "puerta",
+              "pronunciationGuide": "dór"
+            }
+          ]
         },
         "items": [
           {
             "itemId": "english-pre-a1-m004-reading-ex01-i01",
             "position": 1,
-            "prompt": "Who is Anna?",
+            "prompt": "¿Qué tema presenta el texto?",
             "evaluation": {
               "type": "single_choice"
             },
             "options": [
-              "My sister",
-              "My grandmother",
-              "My mother"
+              "por favor",
+              "Polite words",
+              "agradecer"
             ],
-            "answer": "My mother"
+            "answer": "Polite words"
           },
           {
             "itemId": "english-pre-a1-m004-reading-ex01-i02",
             "position": 2,
-            "prompt": "What is the father's name?",
+            "prompt": "¿Qué significa “thank” en el texto?",
             "evaluation": {
               "type": "single_choice"
             },
             "options": [
-              "Tom",
-              "Ben",
-              "Sam"
+              "otra respuesta",
+              "gracias",
+              "agradecer"
             ],
-            "answer": "Tom"
+            "answer": "agradecer"
           },
           {
             "itemId": "english-pre-a1-m004-reading-ex01-i03",
             "position": 3,
-            "prompt": "How many sisters has the writer got?",
+            "prompt": "¿Qué significa “thanks” en el texto?",
             "evaluation": {
               "type": "single_choice"
             },
             "options": [
-              "Two",
-              "One",
-              "Three"
+              "gracias",
+              "otra opción",
+              "de nada"
             ],
-            "answer": "One"
+            "answer": "gracias"
           },
           {
             "itemId": "english-pre-a1-m004-reading-ex01-i04",
             "position": 4,
-            "prompt": "What is the brother's name?",
+            "prompt": "¿Qué significa “thank you” en el texto?",
             "evaluation": {
               "type": "single_choice"
             },
             "options": [
-              "Tom",
-              "Ben",
-              "Lily"
+              "de nada",
+              "gracias",
+              "lo siento"
             ],
-            "answer": "Ben"
+            "answer": "gracias"
           },
           {
             "itemId": "english-pre-a1-m004-reading-ex01-i05",
             "position": 5,
-            "prompt": "Who is kind?",
+            "prompt": "¿Qué significa “you're welcome” en el texto?",
             "evaluation": {
               "type": "single_choice"
             },
             "options": [
-              "The grandmother",
-              "The father",
-              "The sister"
+              "disculpe",
+              "lo siento",
+              "de nada"
             ],
-            "answer": "The grandmother"
+            "answer": "de nada"
           },
           {
             "itemId": "english-pre-a1-m004-reading-ex01-i06",
             "position": 6,
-            "prompt": "Who is funny?",
+            "prompt": "¿Qué significa “sorry” en el texto?",
             "evaluation": {
               "type": "single_choice"
             },
             "options": [
-              "The brother",
-              "The mother",
-              "The grandfather"
+              "lo siento",
+              "disculpe",
+              "sí"
             ],
-            "answer": "The grandfather"
+            "answer": "lo siento"
           },
           {
             "itemId": "english-pre-a1-m004-reading-ex01-i07",
             "position": 7,
-            "prompt": "Are they a happy family?",
+            "prompt": "¿Qué significa “excuse me” en el texto?",
             "evaluation": {
               "type": "single_choice"
             },
             "options": [
-              "No, they are not",
-              "Yes, they are",
-              "It does not say"
+              "sí",
+              "disculpe",
+              "no"
             ],
-            "answer": "Yes, they are"
+            "answer": "disculpe"
           },
           {
             "itemId": "english-pre-a1-m004-reading-ex01-i08",
             "position": 8,
-            "prompt": "Who is Lily?",
+            "prompt": "¿Qué significa “yes” en el texto?",
             "evaluation": {
               "type": "single_choice"
             },
             "options": [
-              "The mother",
-              "The grandmother",
-              "The sister"
+              "ayuda",
+              "no",
+              "sí"
             ],
-            "answer": "The sister"
+            "answer": "sí"
           },
           {
             "itemId": "english-pre-a1-m004-reading-ex01-i09",
             "position": 9,
-            "prompt": "When do they visit grandparents?",
+            "prompt": "¿Qué significa “no” en el texto?",
             "evaluation": {
               "type": "single_choice"
             },
             "options": [
-              "On Sunday",
-              "On Monday",
-              "On Friday"
+              "no",
+              "ayuda",
+              "aquí"
             ],
-            "answer": "On Sunday"
+            "answer": "no"
           },
           {
             "itemId": "english-pre-a1-m004-reading-ex01-i10",
             "position": 10,
-            "prompt": "What is the text about?",
+            "prompt": "¿Qué significa “help” en el texto?",
             "evaluation": {
               "type": "single_choice"
             },
             "options": [
-              "A school",
-              "A meal",
-              "A family"
+              "aquí",
+              "ayuda",
+              "puerta"
             ],
-            "answer": "A family"
+            "answer": "ayuda"
           }
         ]
       }
@@ -1125,180 +1316,190 @@
           {
             "itemId": "english-pre-a1-m004-writing-ex01-i01",
             "position": 1,
-            "audio": "tts:en-GB:This is my mother.",
+            "audio": "tts:en-GB:Please.",
+            "audioLocale": "en-GB",
+            "audioStatus": "synthetic_pending_review",
+            "kind": "sentence",
+            "repeatCount": 3,
+            "expectedAnswer": "Please.",
             "evaluation": {
               "type": "normalised_text"
             },
-            "audioLocale": "en-GB",
-            "kind": "sentence",
-            "repeatCount": 3,
-            "expectedAnswer": "This is my mother.",
             "segments": [
               {
                 "segmentId": "english-pre-a1-m004-writing-segment-01",
-                "text": "This is my mother."
+                "text": "Please."
               }
             ]
           },
           {
             "itemId": "english-pre-a1-m004-writing-ex01-i02",
             "position": 2,
-            "audio": "tts:en-GB:My father is Tom.",
+            "audio": "tts:en-GB:Thank you.",
+            "audioLocale": "en-GB",
+            "audioStatus": "synthetic_pending_review",
+            "kind": "sentence",
+            "repeatCount": 3,
+            "expectedAnswer": "Thank you.",
             "evaluation": {
               "type": "normalised_text"
             },
-            "audioLocale": "en-GB",
-            "kind": "sentence",
-            "repeatCount": 3,
-            "expectedAnswer": "My father is Tom.",
             "segments": [
               {
                 "segmentId": "english-pre-a1-m004-writing-segment-02",
-                "text": "My father is Tom."
+                "text": "Thank you."
               }
             ]
           },
           {
             "itemId": "english-pre-a1-m004-writing-ex01-i03",
             "position": 3,
-            "audio": "tts:en-GB:I have one sister.",
+            "audio": "tts:en-GB:Thanks.",
+            "audioLocale": "en-GB",
+            "audioStatus": "synthetic_pending_review",
+            "kind": "sentence",
+            "repeatCount": 3,
+            "expectedAnswer": "Thanks.",
             "evaluation": {
               "type": "normalised_text"
             },
-            "audioLocale": "en-GB",
-            "kind": "sentence",
-            "repeatCount": 3,
-            "expectedAnswer": "I have one sister.",
             "segments": [
               {
                 "segmentId": "english-pre-a1-m004-writing-segment-03",
-                "text": "I have one sister."
+                "text": "Thanks."
               }
             ]
           },
           {
             "itemId": "english-pre-a1-m004-writing-ex01-i04",
             "position": 4,
-            "audio": "tts:en-GB:My brother is Ben.",
+            "audio": "tts:en-GB:You're welcome.",
+            "audioLocale": "en-GB",
+            "audioStatus": "synthetic_pending_review",
+            "kind": "sentence",
+            "repeatCount": 3,
+            "expectedAnswer": "You're welcome.",
             "evaluation": {
               "type": "normalised_text"
             },
-            "audioLocale": "en-GB",
-            "kind": "sentence",
-            "repeatCount": 3,
-            "expectedAnswer": "My brother is Ben.",
             "segments": [
               {
                 "segmentId": "english-pre-a1-m004-writing-segment-04",
-                "text": "My brother is Ben."
+                "text": "You're welcome."
               }
             ]
           },
           {
             "itemId": "english-pre-a1-m004-writing-ex01-i05",
             "position": 5,
-            "audio": "tts:en-GB:My grandmother is kind.",
+            "audio": "tts:en-GB:Sorry.",
+            "audioLocale": "en-GB",
+            "audioStatus": "synthetic_pending_review",
+            "kind": "sentence",
+            "repeatCount": 3,
+            "expectedAnswer": "Sorry.",
             "evaluation": {
               "type": "normalised_text"
             },
-            "audioLocale": "en-GB",
-            "kind": "sentence",
-            "repeatCount": 3,
-            "expectedAnswer": "My grandmother is kind.",
             "segments": [
               {
                 "segmentId": "english-pre-a1-m004-writing-segment-05",
-                "text": "My grandmother is kind."
+                "text": "Sorry."
               }
             ]
           },
           {
             "itemId": "english-pre-a1-m004-writing-ex01-i06",
             "position": 6,
-            "audio": "tts:en-GB:My grandfather is funny.",
+            "audio": "tts:en-GB:Excuse me.",
+            "audioLocale": "en-GB",
+            "audioStatus": "synthetic_pending_review",
+            "kind": "sentence",
+            "repeatCount": 3,
+            "expectedAnswer": "Excuse me.",
             "evaluation": {
               "type": "normalised_text"
             },
-            "audioLocale": "en-GB",
-            "kind": "sentence",
-            "repeatCount": 3,
-            "expectedAnswer": "My grandfather is funny.",
             "segments": [
               {
                 "segmentId": "english-pre-a1-m004-writing-segment-06",
-                "text": "My grandfather is funny."
+                "text": "Excuse me."
               }
             ]
           },
           {
             "itemId": "english-pre-a1-m004-writing-ex01-i07",
             "position": 7,
-            "audio": "tts:en-GB:We are a happy family.",
+            "audio": "tts:en-GB:Yes, please.",
+            "audioLocale": "en-GB",
+            "audioStatus": "synthetic_pending_review",
+            "kind": "sentence",
+            "repeatCount": 3,
+            "expectedAnswer": "Yes, please.",
             "evaluation": {
               "type": "normalised_text"
             },
-            "audioLocale": "en-GB",
-            "kind": "sentence",
-            "repeatCount": 3,
-            "expectedAnswer": "We are a happy family.",
             "segments": [
               {
                 "segmentId": "english-pre-a1-m004-writing-segment-07",
-                "text": "We are a happy family."
+                "text": "Yes, please."
               }
             ]
           },
           {
             "itemId": "english-pre-a1-m004-writing-ex01-i08",
             "position": 8,
-            "audio": "tts:en-GB:We visit our grandparents.",
+            "audio": "tts:en-GB:No, thank you.",
+            "audioLocale": "en-GB",
+            "audioStatus": "synthetic_pending_review",
+            "kind": "sentence",
+            "repeatCount": 3,
+            "expectedAnswer": "No, thank you.",
             "evaluation": {
               "type": "normalised_text"
             },
-            "audioLocale": "en-GB",
-            "kind": "sentence",
-            "repeatCount": 3,
-            "expectedAnswer": "We visit our grandparents.",
             "segments": [
               {
                 "segmentId": "english-pre-a1-m004-writing-segment-08",
-                "text": "We visit our grandparents."
+                "text": "No, thank you."
               }
             ]
           },
           {
             "itemId": "english-pre-a1-m004-writing-ex01-i09",
             "position": 9,
-            "audio": "tts:en-GB:We visit on Sunday.",
+            "audio": "tts:en-GB:Help, please.",
+            "audioLocale": "en-GB",
+            "audioStatus": "synthetic_pending_review",
+            "kind": "sentence",
+            "repeatCount": 3,
+            "expectedAnswer": "Help, please.",
             "evaluation": {
               "type": "normalised_text"
             },
-            "audioLocale": "en-GB",
-            "kind": "sentence",
-            "repeatCount": 3,
-            "expectedAnswer": "We visit on Sunday.",
             "segments": [
               {
                 "segmentId": "english-pre-a1-m004-writing-segment-09",
-                "text": "We visit on Sunday."
+                "text": "Help, please."
               }
             ]
           },
           {
             "itemId": "english-pre-a1-m004-writing-ex01-i10",
             "position": 10,
-            "audio": "tts:en-GB:I love my family.",
+            "audio": "tts:en-GB:Excuse me.",
+            "audioLocale": "en-GB",
+            "audioStatus": "synthetic_pending_review",
+            "kind": "sentence",
+            "repeatCount": 3,
+            "expectedAnswer": "Excuse me.",
             "evaluation": {
               "type": "normalised_text"
             },
-            "audioLocale": "en-GB",
-            "kind": "sentence",
-            "repeatCount": 3,
-            "expectedAnswer": "I love my family.",
             "segments": [
               {
                 "segmentId": "english-pre-a1-m004-writing-segment-10",
-                "text": "I love my family."
+                "text": "Excuse me."
               }
             ]
           }
@@ -1316,8 +1517,10 @@
           {
             "itemId": "english-pre-a1-m004-speaking-ex01-i01",
             "position": 1,
-            "prompt": "Say a short sentence using “mother”.",
-            "modelAnswer": "This is my mother.",
+            "prompt": "Di en voz alta esta expresión.",
+            "promptSpanish": "Practica el modelo de la misión.",
+            "modelAnswer": "Please.",
+            "translation": "Please.",
             "evaluation": {
               "type": "transcription_feedback",
               "transcriptionSeparateFromPronunciation": true
@@ -1326,8 +1529,10 @@
           {
             "itemId": "english-pre-a1-m004-speaking-ex01-i02",
             "position": 2,
-            "prompt": "Say a short sentence using “father”.",
-            "modelAnswer": "This is my father.",
+            "prompt": "Di en voz alta esta expresión.",
+            "promptSpanish": "Practica el modelo de la misión.",
+            "modelAnswer": "Thank you.",
+            "translation": "Thank you.",
             "evaluation": {
               "type": "transcription_feedback",
               "transcriptionSeparateFromPronunciation": true
@@ -1336,8 +1541,10 @@
           {
             "itemId": "english-pre-a1-m004-speaking-ex01-i03",
             "position": 3,
-            "prompt": "Say a short sentence using “sister”.",
-            "modelAnswer": "Lily is my sister.",
+            "prompt": "Di en voz alta esta expresión.",
+            "promptSpanish": "Practica el modelo de la misión.",
+            "modelAnswer": "Thanks.",
+            "translation": "Thanks.",
             "evaluation": {
               "type": "transcription_feedback",
               "transcriptionSeparateFromPronunciation": true
@@ -1346,8 +1553,10 @@
           {
             "itemId": "english-pre-a1-m004-speaking-ex01-i04",
             "position": 4,
-            "prompt": "Say a short sentence using “brother”.",
-            "modelAnswer": "Ben is my brother.",
+            "prompt": "Di en voz alta esta expresión.",
+            "promptSpanish": "Practica el modelo de la misión.",
+            "modelAnswer": "You're welcome.",
+            "translation": "You're welcome.",
             "evaluation": {
               "type": "transcription_feedback",
               "transcriptionSeparateFromPronunciation": true
@@ -1356,8 +1565,10 @@
           {
             "itemId": "english-pre-a1-m004-speaking-ex01-i05",
             "position": 5,
-            "prompt": "Say a short sentence using “grandmother”.",
-            "modelAnswer": "My grandmother is kind.",
+            "prompt": "Di en voz alta esta expresión.",
+            "promptSpanish": "Practica el modelo de la misión.",
+            "modelAnswer": "Sorry.",
+            "translation": "Sorry.",
             "evaluation": {
               "type": "transcription_feedback",
               "transcriptionSeparateFromPronunciation": true
@@ -1366,8 +1577,10 @@
           {
             "itemId": "english-pre-a1-m004-speaking-ex01-i06",
             "position": 6,
-            "prompt": "Say a short sentence using “grandfather”.",
-            "modelAnswer": "My grandfather is funny.",
+            "prompt": "Di en voz alta esta expresión.",
+            "promptSpanish": "Practica el modelo de la misión.",
+            "modelAnswer": "Excuse me.",
+            "translation": "Excuse me.",
             "evaluation": {
               "type": "transcription_feedback",
               "transcriptionSeparateFromPronunciation": true
@@ -1376,8 +1589,10 @@
           {
             "itemId": "english-pre-a1-m004-speaking-ex01-i07",
             "position": 7,
-            "prompt": "Say a short sentence using “parents”.",
-            "modelAnswer": "These are my parents.",
+            "prompt": "Di en voz alta esta expresión.",
+            "promptSpanish": "Practica el modelo de la misión.",
+            "modelAnswer": "Yes, please.",
+            "translation": "Yes, please.",
             "evaluation": {
               "type": "transcription_feedback",
               "transcriptionSeparateFromPronunciation": true
@@ -1386,8 +1601,10 @@
           {
             "itemId": "english-pre-a1-m004-speaking-ex01-i08",
             "position": 8,
-            "prompt": "Say a short sentence using “daughter”.",
-            "modelAnswer": "She is their daughter.",
+            "prompt": "Di en voz alta esta expresión.",
+            "promptSpanish": "Practica el modelo de la misión.",
+            "modelAnswer": "No, thank you.",
+            "translation": "No, thank you.",
             "evaluation": {
               "type": "transcription_feedback",
               "transcriptionSeparateFromPronunciation": true
@@ -1396,8 +1613,10 @@
           {
             "itemId": "english-pre-a1-m004-speaking-ex01-i09",
             "position": 9,
-            "prompt": "Say a short sentence using “son”.",
-            "modelAnswer": "He is their son.",
+            "prompt": "Di en voz alta esta expresión.",
+            "promptSpanish": "Practica el modelo de la misión.",
+            "modelAnswer": "Help, please.",
+            "translation": "Help, please.",
             "evaluation": {
               "type": "transcription_feedback",
               "transcriptionSeparateFromPronunciation": true
@@ -1406,8 +1625,10 @@
           {
             "itemId": "english-pre-a1-m004-speaking-ex01-i10",
             "position": 10,
-            "prompt": "Say a short sentence using “family”.",
-            "modelAnswer": "This is my family.",
+            "prompt": "Di en voz alta esta expresión.",
+            "promptSpanish": "Practica el modelo de la misión.",
+            "modelAnswer": "Excuse me.",
+            "translation": "Excuse me.",
             "evaluation": {
               "type": "transcription_feedback",
               "transcriptionSeparateFromPronunciation": true
@@ -1424,53 +1645,55 @@
         "exerciseId": "english-pre-a1-m004-listening-ex01",
         "type": "listening_gap_fill",
         "content": {
-          "audio": "tts:en-GB:My mother is Anna. My father is Tom. Lily is my sister. Ben is my brother. My grandmother is kind. My grandfather is funny. My mother and father are my parents. Lily is their daughter. Ben is their son. I love my family.",
+          "audio": "tts:en-GB:Please. Thank you. Thanks. You're welcome. Sorry. Excuse me. Yes, please. No, thank you. Help, please. Excuse me.",
           "audioLocale": "en-GB",
-          "transcriptTemplate": "My [[gap-01]] is Anna. My [[gap-02]] is Tom. Lily is my [[gap-03]]. Ben is my [[gap-04]]. My [[gap-05]] is kind. My [[gap-06]] is funny. My mother and father are my [[gap-07]]. Lily is their [[gap-08]]. Ben is their [[gap-09]]. I love my [[gap-10]].",
+          "audioStatus": "synthetic_pending_review",
+          "transcriptTemplate": "[[gap-01]] [[gap-02]] [[gap-03]] [[gap-04]] [[gap-05]] [[gap-06]] [[gap-07]] [[gap-08]] [[gap-09]] [[gap-10]]",
           "wordBank": [
             {
               "wordId": "english-pre-a1-m004-listening-word-01",
-              "word": "mother"
+              "word": "please"
             },
             {
               "wordId": "english-pre-a1-m004-listening-word-02",
-              "word": "father"
+              "word": "thank"
             },
             {
               "wordId": "english-pre-a1-m004-listening-word-03",
-              "word": "sister"
+              "word": "thanks"
             },
             {
               "wordId": "english-pre-a1-m004-listening-word-04",
-              "word": "brother"
+              "word": "thank you"
             },
             {
               "wordId": "english-pre-a1-m004-listening-word-05",
-              "word": "grandmother"
+              "word": "you're welcome"
             },
             {
               "wordId": "english-pre-a1-m004-listening-word-06",
-              "word": "grandfather"
+              "word": "sorry"
             },
             {
               "wordId": "english-pre-a1-m004-listening-word-07",
-              "word": "parents"
+              "word": "excuse me"
             },
             {
               "wordId": "english-pre-a1-m004-listening-word-08",
-              "word": "daughter"
+              "word": "yes"
             },
             {
               "wordId": "english-pre-a1-m004-listening-word-09",
-              "word": "son"
+              "word": "no"
             },
             {
               "wordId": "english-pre-a1-m004-listening-word-10",
-              "word": "family"
+              "word": "help"
             }
           ],
           "interaction": "select_place_move_replace",
-          "audioTranscript": "tts:en-GB:My mother is Anna. My father is Tom. Lily is my sister. Ben is my brother. My grandmother is kind. My grandfather is funny. My mother and father are my parents. Lily is their daughter. Ben is their son. I love my family."
+          "audioTranscript": "tts:en-GB:Please. Thank you. Thanks. You're welcome. Sorry. Excuse me. Yes, please. No, thank you. Help, please. Excuse me.",
+          "translation": "Escucha y reconoce las expresiones enseñadas."
         },
         "items": [
           {
@@ -1478,70 +1701,70 @@
             "position": 1,
             "gapToken": "[[gap-01]]",
             "expectedWordId": "english-pre-a1-m004-listening-word-01",
-            "answer": "mother"
+            "answer": "please"
           },
           {
             "itemId": "english-pre-a1-m004-listening-ex01-i02",
             "position": 2,
             "gapToken": "[[gap-02]]",
             "expectedWordId": "english-pre-a1-m004-listening-word-02",
-            "answer": "father"
+            "answer": "thank"
           },
           {
             "itemId": "english-pre-a1-m004-listening-ex01-i03",
             "position": 3,
             "gapToken": "[[gap-03]]",
             "expectedWordId": "english-pre-a1-m004-listening-word-03",
-            "answer": "sister"
+            "answer": "thanks"
           },
           {
             "itemId": "english-pre-a1-m004-listening-ex01-i04",
             "position": 4,
             "gapToken": "[[gap-04]]",
             "expectedWordId": "english-pre-a1-m004-listening-word-04",
-            "answer": "brother"
+            "answer": "thank you"
           },
           {
             "itemId": "english-pre-a1-m004-listening-ex01-i05",
             "position": 5,
             "gapToken": "[[gap-05]]",
             "expectedWordId": "english-pre-a1-m004-listening-word-05",
-            "answer": "grandmother"
+            "answer": "you're welcome"
           },
           {
             "itemId": "english-pre-a1-m004-listening-ex01-i06",
             "position": 6,
             "gapToken": "[[gap-06]]",
             "expectedWordId": "english-pre-a1-m004-listening-word-06",
-            "answer": "grandfather"
+            "answer": "sorry"
           },
           {
             "itemId": "english-pre-a1-m004-listening-ex01-i07",
             "position": 7,
             "gapToken": "[[gap-07]]",
             "expectedWordId": "english-pre-a1-m004-listening-word-07",
-            "answer": "parents"
+            "answer": "excuse me"
           },
           {
             "itemId": "english-pre-a1-m004-listening-ex01-i08",
             "position": 8,
             "gapToken": "[[gap-08]]",
             "expectedWordId": "english-pre-a1-m004-listening-word-08",
-            "answer": "daughter"
+            "answer": "yes"
           },
           {
             "itemId": "english-pre-a1-m004-listening-ex01-i09",
             "position": 9,
             "gapToken": "[[gap-09]]",
             "expectedWordId": "english-pre-a1-m004-listening-word-09",
-            "answer": "son"
+            "answer": "no"
           },
           {
             "itemId": "english-pre-a1-m004-listening-ex01-i10",
             "position": 10,
             "gapToken": "[[gap-10]]",
             "expectedWordId": "english-pre-a1-m004-listening-word-10",
-            "answer": "family"
+            "answer": "help"
           }
         ]
       }
