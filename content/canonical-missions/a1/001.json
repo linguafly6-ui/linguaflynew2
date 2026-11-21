@@ -1152,7 +1152,7 @@
         "items": [
           {
             "itemId": "english-a1-m001-listening-gap01",
-            "prompt": "Hello. My name is ____ ____.",
+            "prompt": "The speaker's first name is ____.",
             "answer": "Daniel",
             "position": 1,
             "gapToken": "[[gap-01]]",
@@ -1160,7 +1160,7 @@
           },
           {
             "itemId": "english-a1-m001-listening-gap02",
-            "prompt": "Hello. My name is Daniel ____.",
+            "prompt": "The speaker's surname is ____.",
             "answer": "Ruiz",
             "position": 2,
             "gapToken": "[[gap-02]]",
@@ -1234,7 +1234,7 @@
         "content": {
           "audio": "tts:en-GB",
           "audioLocale": "en-GB",
-          "transcriptTemplate": "Hello. My name is ____ ____. Hello. My name is Daniel ____. I am ____ years old. I am ____. I ____ in Seville. I live in ____. My ____ number is 600 123 456. My phone ____ is 600 123 456. My ____ is on 3 March. My birthday is on 3 ____.",
+          "transcriptTemplate": "Hello. My name is [[gap-01]] [[gap-02]]. I am [[gap-03]] years old. I am [[gap-04]]. I [[gap-05]] in [[gap-06]]. My [[gap-07]] [[gap-08]] is 600 123 456. My [[gap-09]] is on 3 [[gap-10]].",
           "audioTranscript": "Hello. My name is Daniel Ruiz. I am twenty-eight years old. I am Spanish. I live in Seville. My phone number is 600 123 456. My birthday is on 3 March.",
           "wordBank": [
             {
