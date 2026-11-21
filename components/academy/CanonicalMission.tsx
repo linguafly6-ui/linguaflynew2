@@ -183,9 +183,25 @@ export default function CanonicalMission({ missionData = missionSource as Missio
             <div className="mb-4"><p className="text-[10px] font-bold uppercase tracking-[.17em] text-[#8290a3]">01 · VOCABULARIO</p><h3 className="mt-1 text-lg font-semibold text-[#26364b]">Palabras esenciales</h3><p className="mt-1 text-sm text-[#7b8798]">Mira cada imagen, lee su significado y escucha cómo suena en inglés.</p></div>
             <div className="grid grid-cols-2 gap-3 sm:grid-cols-3 lg:grid-cols-5">
               {section.exercise.items.map((entry) => {
-                const visual: Record<string,string> = {hello:"👋",goodbye:"👋",please:"🙏","thank you":"💛",yes:"👍",no:"👎",name:"🪪",friend:"🧑‍🤝‍🧑",teacher:"👩‍🏫",student:"🎒"};
+                const visual: Record<string,string> = {
+                  hello:"👋",goodbye:"👋",please:"🙏","thank you":"💛",yes:"👍",no:"👎",name:"🪪",friend:"🧑‍🤝‍🧑",teacher:"👩‍🏫",student:"🎒",
+                  red:"🔴",blue:"🔵",yellow:"🟡",green:"🟢",black:"⚫",white:"⚪",orange:"🟠",pink:"🩷",purple:"🟣",brown:"🟤",
+                  mother:"👩",father:"👨",sister:"👧",brother:"👦",grandmother:"👵",grandfather:"👴",parents:"👨‍👩‍👧",daughter:"👧",son:"👦",family:"👨‍👩‍👧‍👦",
+                  dog:"🐶",cat:"🐱",bird:"🐦",fish:"🐟",rabbit:"🐰",horse:"🐴",cow:"🐮",duck:"🦆",sheep:"🐑",lion:"🦁",
+                  apple:"🍎",bread:"🍞",cheese:"🧀",rice:"🍚",chicken:"🍗",banana:"🍌",water:"💧",milk:"🥛",juice:"🧃",carrot:"🥕",
+                  book:"📘",pen:"🖊️",pencil:"✏️",ruler:"📏",rubber:"🧽",schoolbag:"🎒",notebook:"📓",desk:"🪑",chair:"🪑","pencil case":"🖍️",
+                  head:"🙂",hair:"💇",eye:"👁️",ear:"👂",nose:"👃",mouth:"👄",tooth:"🦷",hand:"✋",arm:"💪",leg:"🦵",
+                  house:"🏠",kitchen:"🍳",bedroom:"🛏️",bathroom:"🛁","living room":"🛋️",table:"🪑",bed:"🛏️",sofa:"🛋️",door:"🚪",window:"🪟",
+                  "wake up":"⏰","get up":"🛌",wash:"🧼",brush:"🪥",eat:"🍽️",drink:"🥤",go:"🚶",study:"📚",play:"🧸",sleep:"😴",
+                  run:"🏃",jump:"🤸",climb:"🧗",swing:"🛝",slide:"🛝",stop:"🛑",walk:"🚶",hop:"🐇",skip:"🦘"
+                };
+                const numberCounts: Record<string,number> = {one:1,two:2,three:3,four:4,five:5,six:6,seven:7,eight:8,nine:9,ten:10};
+                const word = (entry.english ?? "").toLowerCase();
+                const count = numberCounts[word];
                 return <article key={entry.itemId} className="flex min-w-0 flex-col items-center rounded-2xl border border-[#e8ebf0] bg-white p-3 text-center sm:p-4">
-                  <div aria-hidden="true" className="grid h-16 w-16 place-items-center rounded-2xl bg-[#f2f6fb] text-4xl sm:h-20 sm:w-20 sm:text-5xl">{visual[(entry.english ?? "").toLowerCase()] ?? "🔤"}</div>
+                  <div aria-hidden="true" className="grid h-16 w-16 place-items-center rounded-2xl bg-[#f2f6fb] sm:h-20 sm:w-20">
+                    {count ? <div className="flex flex-col items-center justify-center"><span className="text-3xl font-extrabold leading-none text-[#2872c8] sm:text-4xl">{count}</span><span className="mt-1 grid grid-cols-5 gap-0.5 text-[10px] leading-none sm:text-xs">{Array.from({length:count},(_,i)=><span key={i}>🍎</span>)}</span></div> : <span className="text-4xl sm:text-5xl">{visual[word] ?? "🖼️"}</span>}
+                  </div>
                   <p className="mt-3 break-words text-base font-bold text-[#26364b] sm:text-lg">{entry.english}</p>
                   <p className="mt-1 text-sm font-medium text-[#64816f]">{entry.spanish}</p>
                   <button type="button" onClick={() => speak(entry.english ?? "")} className="mt-3 rounded-full border border-[#dce6f0] bg-white px-3 py-1.5 text-xs font-semibold text-[#55708f]">♫ Escuchar</button>
@@ -206,7 +222,7 @@ export default function CanonicalMission({ missionData = missionSource as Missio
           </section>
 
           <section>
-            <div className="mb-4"><p className="text-[10px] font-bold uppercase tracking-[.17em] text-[#8290a3]">03 · GRAMÁTICA</p><h3 className="mt-1 text-lg font-semibold text-[#26364b]">Cómo presentarte con <em>to be</em></h3><p className="mt-1 text-sm leading-6 text-[#7b8798]">{section.exercise.theory?.explanation}</p></div>
+            <div className="mb-4"><p className="text-[10px] font-bold uppercase tracking-[.17em] text-[#8290a3]">03 · GRAMÁTICA</p><h3 className="mt-1 text-lg font-semibold text-[#26364b]">{section.exercise.theory?.title ?? "Gramática de la misión"}</h3><p className="mt-1 text-sm leading-6 text-[#7b8798]">{section.exercise.theory?.explanation}</p></div>
             <div className="grid gap-3 sm:grid-cols-2">
               {section.exercise.theory?.patterns.map((pattern) => <article key={pattern.label} className="rounded-xl border border-[#e8ebf0] bg-[#fbfcfe] p-4">
                 <p className="text-xs font-bold uppercase tracking-wide text-[#55779d]">{pattern.label}</p>
