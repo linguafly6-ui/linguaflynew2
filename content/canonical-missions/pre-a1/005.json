@@ -28,7 +28,7 @@
         "type": "vocabulary_pairs",
         "theory": {
           "title": "Animals: key words and simple sentences",
-          "explanation": "Learn ten useful words about animals. Listen to the British English model and say each word aloud.",
+          "explanation": "Aprende diez nombres de animales y frases sencillas para describirlos. Observa cómo hablar de su tamaño, dónde están, qué pueden hacer y qué características tienen.",
           "patterns": [
             {
               "label": "Simple sentence",
@@ -113,7 +113,280 @@
             "spanish": "león",
             "audio": "tts:en-GB:lion"
           }
-        ]
+        ],
+        "lesson": {
+          "phrases": [
+            {
+              "english": "The dog is small.",
+              "spanish": "El perro es pequeño."
+            },
+            {
+              "english": "The cats are black.",
+              "spanish": "Los gatos son negros."
+            },
+            {
+              "english": "A rabbit has got long ears.",
+              "spanish": "Un conejo tiene las orejas largas."
+            },
+            {
+              "english": "The bird is in the tree.",
+              "spanish": "El pájaro está en el árbol."
+            },
+            {
+              "english": "The cow is on the farm.",
+              "spanish": "La vaca está en la granja."
+            },
+            {
+              "english": "I like animals.",
+              "spanish": "Me gustan los animales."
+            },
+            {
+              "english": "A fish can swim.",
+              "spanish": "Un pez puede nadar."
+            },
+            {
+              "english": "The ducks are here.",
+              "spanish": "Los patos están aquí."
+            },
+            {
+              "english": "in",
+              "spanish": "dentro de / en",
+              "note": "In indica interior o ubicación dentro de algo."
+            },
+            {
+              "english": "on",
+              "spanish": "en / sobre",
+              "note": "On indica superficie o ubicación en la granja."
+            },
+            {
+              "english": "can",
+              "spanish": "poder",
+              "note": "Can expresa habilidad y va seguido del verbo base."
+            }
+          ],
+          "grammar": [
+            {
+              "english": "The dog is small.",
+              "spanish": "El perro es pequeño.",
+              "note": "Con un animal usamos is."
+            },
+            {
+              "english": "The cats are black.",
+              "spanish": "Los gatos son negros.",
+              "note": "Con un sujeto plural usamos are."
+            },
+            {
+              "english": "A rabbit has got long ears.",
+              "spanish": "Un conejo tiene las orejas largas.",
+              "note": "Has got se usa con he, she, it y nombres singulares."
+            },
+            {
+              "english": "The bird is in the tree.",
+              "spanish": "El pájaro está en el árbol.",
+              "note": "In indica dentro o entre las ramas."
+            },
+            {
+              "english": "The cow is on the farm.",
+              "spanish": "La vaca está en la granja.",
+              "note": "On the farm es la expresión habitual."
+            },
+            {
+              "english": "I like animals.",
+              "spanish": "Me gustan los animales.",
+              "note": "Con I usamos like."
+            },
+            {
+              "english": "A fish can swim.",
+              "spanish": "Un pez puede nadar.",
+              "note": "Can + verbo base."
+            },
+            {
+              "english": "A lion is big.",
+              "spanish": "Un león es grande."
+            },
+            {
+              "english": "The ducks are here.",
+              "spanish": "Los patos están aquí.",
+              "note": "Ducks es plural."
+            },
+            {
+              "english": "The horse is brown.",
+              "spanish": "El caballo es marrón."
+            }
+          ],
+          "reading": [
+            {
+              "english": "I have got a small dog called Max.",
+              "spanish": "Tengo un perro pequeño que se llama Max."
+            },
+            {
+              "english": "My friend has got a black cat.",
+              "spanish": "Mi amigo tiene un gato negro."
+            },
+            {
+              "english": "We see a bird in a tree and a fish in a pond.",
+              "spanish": "Vemos un pájaro en un árbol y un pez en un estanque."
+            },
+            {
+              "english": "At the farm there is a cow, a horse, a duck and a sheep.",
+              "spanish": "En la granja hay una vaca, un caballo, un pato y una oveja."
+            },
+            {
+              "english": "A rabbit has got long ears.",
+              "spanish": "Un conejo tiene las orejas largas."
+            },
+            {
+              "english": "A lion is big.",
+              "spanish": "Un león es grande."
+            }
+          ],
+          "writing": [
+            {
+              "english": "The dog is small.",
+              "spanish": "El perro es pequeño."
+            },
+            {
+              "english": "My cat is black.",
+              "spanish": "Mi gato es negro."
+            },
+            {
+              "english": "A bird is in the tree.",
+              "spanish": "Hay un pájaro en el árbol."
+            },
+            {
+              "english": "The fish is in the pond.",
+              "spanish": "El pez está en el estanque."
+            },
+            {
+              "english": "The rabbit has long ears.",
+              "spanish": "El conejo tiene las orejas largas."
+            },
+            {
+              "english": "The horse is on the farm.",
+              "spanish": "El caballo está en la granja."
+            },
+            {
+              "english": "The cow is big.",
+              "spanish": "La vaca es grande."
+            },
+            {
+              "english": "The duck can swim.",
+              "spanish": "El pato puede nadar."
+            },
+            {
+              "english": "The sheep is white.",
+              "spanish": "La oveja es blanca."
+            },
+            {
+              "english": "The lion is big.",
+              "spanish": "El león es grande."
+            }
+          ],
+          "speaking": [
+            {
+              "english": "I can see a dog.",
+              "spanish": "Puedo ver un perro.",
+              "prompt": "Say a short sentence using dog.",
+              "promptSpanish": "Di una frase corta usando dog (perro)."
+            },
+            {
+              "english": "I can see a cat.",
+              "spanish": "Puedo ver un gato.",
+              "prompt": "Say a short sentence using cat.",
+              "promptSpanish": "Di una frase corta usando cat (gato)."
+            },
+            {
+              "english": "A bird can fly.",
+              "spanish": "Un pájaro puede volar.",
+              "prompt": "Say a short sentence using bird.",
+              "promptSpanish": "Di una frase corta usando bird (pájaro)."
+            },
+            {
+              "english": "A fish can swim.",
+              "spanish": "Un pez puede nadar.",
+              "prompt": "Say a short sentence using fish.",
+              "promptSpanish": "Di una frase corta usando fish (pez)."
+            },
+            {
+              "english": "A rabbit has long ears.",
+              "spanish": "Un conejo tiene las orejas largas.",
+              "prompt": "Say a short sentence using rabbit.",
+              "promptSpanish": "Di una frase corta usando rabbit (conejo)."
+            },
+            {
+              "english": "A horse lives on a farm.",
+              "spanish": "Un caballo vive en una granja.",
+              "prompt": "Say a short sentence using horse.",
+              "promptSpanish": "Di una frase corta usando horse (caballo)."
+            },
+            {
+              "english": "A cow gives us milk.",
+              "spanish": "Una vaca nos da leche.",
+              "prompt": "Say a short sentence using cow.",
+              "promptSpanish": "Di una frase corta usando cow (vaca)."
+            },
+            {
+              "english": "A duck can swim.",
+              "spanish": "Un pato puede nadar.",
+              "prompt": "Say a short sentence using duck.",
+              "promptSpanish": "Di una frase corta usando duck (pato)."
+            },
+            {
+              "english": "A sheep has wool.",
+              "spanish": "Una oveja tiene lana.",
+              "prompt": "Say a short sentence using sheep.",
+              "promptSpanish": "Di una frase corta usando sheep (oveja)."
+            },
+            {
+              "english": "A lion is a wild animal.",
+              "spanish": "Un león es un animal salvaje.",
+              "prompt": "Say a short sentence using lion.",
+              "promptSpanish": "Di una frase corta usando lion (león)."
+            }
+          ],
+          "listening": [
+            {
+              "english": "The dog is called Max.",
+              "spanish": "El perro se llama Max."
+            },
+            {
+              "english": "My friend has got a cat.",
+              "spanish": "Mi amigo tiene un gato."
+            },
+            {
+              "english": "A bird is in the tree.",
+              "spanish": "Hay un pájaro en el árbol."
+            },
+            {
+              "english": "A fish swims in the pond.",
+              "spanish": "Un pez nada en el estanque."
+            },
+            {
+              "english": "The rabbit has long ears.",
+              "spanish": "El conejo tiene las orejas largas."
+            },
+            {
+              "english": "A horse lives on the farm.",
+              "spanish": "Un caballo vive en la granja."
+            },
+            {
+              "english": "The cow gives us milk.",
+              "spanish": "La vaca nos da leche."
+            },
+            {
+              "english": "A duck can swim on the pond.",
+              "spanish": "Un pato puede nadar en el estanque."
+            },
+            {
+              "english": "A sheep has wool.",
+              "spanish": "Una oveja tiene lana."
+            },
+            {
+              "english": "The lion is a big wild animal.",
+              "spanish": "El león es un animal salvaje grande."
+            }
+          ]
+        }
       }
     },
     {

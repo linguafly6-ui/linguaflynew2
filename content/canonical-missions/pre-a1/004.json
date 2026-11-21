@@ -28,7 +28,7 @@
         "type": "vocabulary_pairs",
         "theory": {
           "title": "My Family: key words and simple sentences",
-          "explanation": "Learn ten useful words about my family. Listen to the British English model and say each word aloud.",
+          "explanation": "Aprende diez palabras útiles para hablar de tu familia. Escucha el modelo de inglés británico y repite cada palabra. Después, aprende a decir quién es cada persona y cómo expresar de quién es algo.",
           "patterns": [
             {
               "label": "Simple sentence",
@@ -113,7 +113,270 @@
             "spanish": "familia",
             "audio": "tts:en-GB:family"
           }
-        ]
+        ],
+        "lesson": {
+          "phrases": [
+            {
+              "english": "This is my mother.",
+              "spanish": "Esta es mi madre."
+            },
+            {
+              "english": "That is your father.",
+              "spanish": "Ese es tu padre."
+            },
+            {
+              "english": "He is my brother.",
+              "spanish": "Él es mi hermano."
+            },
+            {
+              "english": "She is my sister.",
+              "spanish": "Ella es mi hermana."
+            },
+            {
+              "english": "These are my parents.",
+              "spanish": "Estos son mis padres."
+            },
+            {
+              "english": "We love our family.",
+              "spanish": "Queremos a nuestra familia."
+            },
+            {
+              "english": "my",
+              "spanish": "mi / mis",
+              "note": "My indica posesión de quien habla."
+            },
+            {
+              "english": "your",
+              "spanish": "tu / tus",
+              "note": "Your indica posesión de la persona a quien hablas."
+            },
+            {
+              "english": "his",
+              "spanish": "su / sus (de él)",
+              "note": "His expresa posesión de un hombre o niño."
+            },
+            {
+              "english": "her",
+              "spanish": "su / sus (de ella)",
+              "note": "Her expresa posesión de una mujer o niña."
+            },
+            {
+              "english": "our",
+              "spanish": "nuestro/a/os/as",
+              "note": "Our expresa posesión compartida."
+            }
+          ],
+          "grammar": [
+            {
+              "english": "My parents are kind.",
+              "spanish": "Mis padres son amables.",
+              "note": "Parents es plural y usamos are."
+            },
+            {
+              "english": "I have got one sister.",
+              "spanish": "Tengo una hermana.",
+              "note": "Have got expresa posesión."
+            },
+            {
+              "english": "My grandmother is kind.",
+              "spanish": "Mi abuela es amable.",
+              "note": "Con grandmother usamos is."
+            },
+            {
+              "english": "He is my brother.",
+              "spanish": "Él es mi hermano.",
+              "note": "He se refiere a un hombre o niño."
+            },
+            {
+              "english": "She is my sister.",
+              "spanish": "Ella es mi hermana.",
+              "note": "She se refiere a una mujer o niña."
+            },
+            {
+              "english": "Ben is talking about his son.",
+              "spanish": "Ben está hablando de su hijo.",
+              "note": "His significa su, de él."
+            },
+            {
+              "english": "Mia is talking about her daughter.",
+              "spanish": "Mia está hablando de su hija.",
+              "note": "Her significa su, de ella."
+            },
+            {
+              "english": "We love our family.",
+              "spanish": "Queremos a nuestra familia.",
+              "note": "Our significa nuestra."
+            }
+          ],
+          "reading": [
+            {
+              "english": "My mother is Anna and my father is Tom.",
+              "spanish": "Mi madre es Anna y mi padre es Tom."
+            },
+            {
+              "english": "I have got one sister, Lily, and one brother, Ben.",
+              "spanish": "Tengo una hermana, Lily, y un hermano, Ben."
+            },
+            {
+              "english": "My grandmother is kind and my grandfather is funny.",
+              "spanish": "Mi abuela es amable y mi abuelo es divertido."
+            },
+            {
+              "english": "We are a happy family.",
+              "spanish": "Somos una familia feliz."
+            },
+            {
+              "english": "We visit our grandparents on Sunday.",
+              "spanish": "Visitamos a nuestros abuelos el domingo."
+            }
+          ],
+          "writing": [
+            {
+              "english": "This is my mother.",
+              "spanish": "Esta es mi madre."
+            },
+            {
+              "english": "My father is Tom.",
+              "spanish": "Mi padre es Tom."
+            },
+            {
+              "english": "I have one sister.",
+              "spanish": "Tengo una hermana."
+            },
+            {
+              "english": "My brother is Ben.",
+              "spanish": "Mi hermano es Ben."
+            },
+            {
+              "english": "My grandmother is kind.",
+              "spanish": "Mi abuela es amable."
+            },
+            {
+              "english": "My grandfather is funny.",
+              "spanish": "Mi abuelo es divertido."
+            },
+            {
+              "english": "We are a happy family.",
+              "spanish": "Somos una familia feliz."
+            },
+            {
+              "english": "We visit our grandparents.",
+              "spanish": "Visitamos a nuestros abuelos."
+            },
+            {
+              "english": "We visit on Sunday.",
+              "spanish": "Vamos de visita el domingo."
+            },
+            {
+              "english": "I love my family.",
+              "spanish": "Quiero a mi familia."
+            }
+          ],
+          "speaking": [
+            {
+              "english": "This is my mother.",
+              "spanish": "Esta es mi madre.",
+              "prompt": "Say a short sentence using mother.",
+              "promptSpanish": "Di una frase corta usando mother (madre)."
+            },
+            {
+              "english": "This is my father.",
+              "spanish": "Este es mi padre.",
+              "prompt": "Say a short sentence using father.",
+              "promptSpanish": "Di una frase corta usando father (padre)."
+            },
+            {
+              "english": "Lily is my sister.",
+              "spanish": "Lily es mi hermana.",
+              "prompt": "Say a short sentence using sister.",
+              "promptSpanish": "Di una frase corta usando sister (hermana)."
+            },
+            {
+              "english": "Ben is my brother.",
+              "spanish": "Ben es mi hermano.",
+              "prompt": "Say a short sentence using brother.",
+              "promptSpanish": "Di una frase corta usando brother (hermano)."
+            },
+            {
+              "english": "My grandmother is kind.",
+              "spanish": "Mi abuela es amable.",
+              "prompt": "Say a short sentence using grandmother.",
+              "promptSpanish": "Di una frase corta usando grandmother (abuela)."
+            },
+            {
+              "english": "My grandfather is funny.",
+              "spanish": "Mi abuelo es divertido.",
+              "prompt": "Say a short sentence using grandfather.",
+              "promptSpanish": "Di una frase corta usando grandfather (abuelo)."
+            },
+            {
+              "english": "These are my parents.",
+              "spanish": "Estos son mis padres.",
+              "prompt": "Say a short sentence using parents.",
+              "promptSpanish": "Di una frase corta usando parents (padres)."
+            },
+            {
+              "english": "She is their daughter.",
+              "spanish": "Ella es su hija.",
+              "prompt": "Say a short sentence using daughter.",
+              "promptSpanish": "Di una frase corta usando daughter (hija)."
+            },
+            {
+              "english": "He is their son.",
+              "spanish": "Él es su hijo.",
+              "prompt": "Say a short sentence using son.",
+              "promptSpanish": "Di una frase corta usando son (hijo)."
+            },
+            {
+              "english": "This is my family.",
+              "spanish": "Esta es mi familia.",
+              "prompt": "Say a short sentence using family.",
+              "promptSpanish": "Di una frase corta usando family (familia)."
+            }
+          ],
+          "listening": [
+            {
+              "english": "My mother is Anna.",
+              "spanish": "Mi madre es Anna."
+            },
+            {
+              "english": "My father is Tom.",
+              "spanish": "Mi padre es Tom."
+            },
+            {
+              "english": "Lily is my sister.",
+              "spanish": "Lily es mi hermana."
+            },
+            {
+              "english": "Ben is my brother.",
+              "spanish": "Ben es mi hermano."
+            },
+            {
+              "english": "My grandmother is kind.",
+              "spanish": "Mi abuela es amable."
+            },
+            {
+              "english": "My grandfather is funny.",
+              "spanish": "Mi abuelo es divertido."
+            },
+            {
+              "english": "My mother and father are my parents.",
+              "spanish": "Mi madre y mi padre son mis padres."
+            },
+            {
+              "english": "Lily is their daughter.",
+              "spanish": "Lily es su hija."
+            },
+            {
+              "english": "Ben is their son.",
+              "spanish": "Ben es su hijo."
+            },
+            {
+              "english": "I love my family.",
+              "spanish": "Quiero a mi familia."
+            }
+          ]
+        }
       }
     },
     {

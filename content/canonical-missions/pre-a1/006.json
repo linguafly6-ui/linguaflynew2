@@ -28,7 +28,7 @@
         "type": "vocabulary_pairs",
         "theory": {
           "title": "Food and Drinks: key words and simple sentences",
-          "explanation": "Learn ten useful words about food and drinks. Listen to the British English model and say each word aloud.",
+          "explanation": "Aprende diez palabras de alimentos y bebidas. Practica cómo decir qué comes, qué bebes y qué te gusta o no te gusta.",
           "patterns": [
             {
               "label": "Simple sentence",
@@ -113,7 +113,291 @@
             "spanish": "zanahoria",
             "audio": "tts:en-GB:carrot"
           }
-        ]
+        ],
+        "lesson": {
+          "phrases": [
+            {
+              "english": "It is an apple.",
+              "spanish": "Es una manzana.",
+              "note": "An se usa antes de un sonido vocálico."
+            },
+            {
+              "english": "I like bread.",
+              "spanish": "Me gusta el pan.",
+              "note": "Con I usamos like."
+            },
+            {
+              "english": "I do not like milk.",
+              "spanish": "No me gusta la leche.",
+              "note": "Do not forma la negación."
+            },
+            {
+              "english": "She likes cheese.",
+              "spanish": "A ella le gusta el queso.",
+              "note": "Con she añadimos -s a likes."
+            },
+            {
+              "english": "We eat rice.",
+              "spanish": "Comemos arroz.",
+              "note": "Con we usamos el verbo base."
+            },
+            {
+              "english": "He drinks water.",
+              "spanish": "Él bebe agua.",
+              "note": "Con he añadimos -s a drinks."
+            },
+            {
+              "english": "An orange is a fruit.",
+              "spanish": "Una naranja es una fruta."
+            },
+            {
+              "english": "I have a banana.",
+              "spanish": "Tengo un plátano.",
+              "note": "A va antes de un sonido consonántico."
+            },
+            {
+              "english": "They like chicken.",
+              "spanish": "A ellos les gusta el pollo."
+            },
+            {
+              "english": "The juice is cold.",
+              "spanish": "El zumo está frío.",
+              "note": "Con juice usamos is."
+            },
+            {
+              "english": "a / an",
+              "spanish": "un / una",
+              "note": "A va ante sonido consonántico; an, ante sonido vocálico."
+            }
+          ],
+          "grammar": [
+            {
+              "english": "I eat an apple.",
+              "spanish": "Como una manzana.",
+              "note": "An precede a apple."
+            },
+            {
+              "english": "I like bread.",
+              "spanish": "Me gusta el pan.",
+              "note": "Like expresa gustos."
+            },
+            {
+              "english": "I do not like milk.",
+              "spanish": "No me gusta la leche.",
+              "note": "Do not + verbo base."
+            },
+            {
+              "english": "She likes cheese.",
+              "spanish": "A ella le gusta el queso.",
+              "note": "Con she, like cambia a likes."
+            },
+            {
+              "english": "We eat rice.",
+              "spanish": "Comemos arroz.",
+              "note": "We + eat."
+            },
+            {
+              "english": "He drinks water.",
+              "spanish": "Él bebe agua.",
+              "note": "He + drinks."
+            },
+            {
+              "english": "An orange is a fruit.",
+              "spanish": "Una naranja es una fruta.",
+              "note": "An se usa ante orange."
+            },
+            {
+              "english": "I have a banana.",
+              "spanish": "Tengo un plátano.",
+              "note": "A se usa ante banana."
+            },
+            {
+              "english": "They like chicken.",
+              "spanish": "A ellos les gusta el pollo."
+            },
+            {
+              "english": "The juice is cold.",
+              "spanish": "El zumo está frío.",
+              "note": "Is describe cómo está el zumo."
+            }
+          ],
+          "reading": [
+            {
+              "english": "For breakfast, I eat bread and cheese.",
+              "spanish": "Para desayunar, como pan y queso."
+            },
+            {
+              "english": "I drink milk.",
+              "spanish": "Bebo leche."
+            },
+            {
+              "english": "My sister likes an apple and a banana.",
+              "spanish": "A mi hermana le gustan una manzana y un plátano."
+            },
+            {
+              "english": "At lunch, we eat rice and chicken.",
+              "spanish": "En el almuerzo, comemos arroz y pollo."
+            },
+            {
+              "english": "I drink water.",
+              "spanish": "Bebo agua."
+            },
+            {
+              "english": "My brother likes carrot juice, but I prefer orange juice.",
+              "spanish": "A mi hermano le gusta el zumo de zanahoria, pero yo prefiero el zumo de naranja."
+            },
+            {
+              "english": "We like fresh food.",
+              "spanish": "Nos gusta la comida fresca."
+            }
+          ],
+          "writing": [
+            {
+              "english": "I eat an apple.",
+              "spanish": "Como una manzana."
+            },
+            {
+              "english": "I like bread.",
+              "spanish": "Me gusta el pan."
+            },
+            {
+              "english": "I like cheese.",
+              "spanish": "Me gusta el queso."
+            },
+            {
+              "english": "We eat rice.",
+              "spanish": "Comemos arroz."
+            },
+            {
+              "english": "We eat chicken.",
+              "spanish": "Comemos pollo."
+            },
+            {
+              "english": "A banana is yellow.",
+              "spanish": "Un plátano es amarillo."
+            },
+            {
+              "english": "Please drink water.",
+              "spanish": "Por favor, bebe agua."
+            },
+            {
+              "english": "The baby drinks milk.",
+              "spanish": "El bebé bebe leche."
+            },
+            {
+              "english": "I like orange juice.",
+              "spanish": "Me gusta el zumo de naranja."
+            },
+            {
+              "english": "A carrot is orange.",
+              "spanish": "Una zanahoria es naranja."
+            }
+          ],
+          "speaking": [
+            {
+              "english": "I eat an apple.",
+              "spanish": "Como una manzana.",
+              "prompt": "Say a short sentence using apple.",
+              "promptSpanish": "Di una frase corta usando apple (manzana)."
+            },
+            {
+              "english": "I eat bread.",
+              "spanish": "Como pan.",
+              "prompt": "Say a short sentence using bread.",
+              "promptSpanish": "Di una frase corta usando bread (pan)."
+            },
+            {
+              "english": "I like cheese.",
+              "spanish": "Me gusta el queso.",
+              "prompt": "Say a short sentence using cheese.",
+              "promptSpanish": "Di una frase corta usando cheese (queso)."
+            },
+            {
+              "english": "We cook rice.",
+              "spanish": "Cocinamos arroz.",
+              "prompt": "Say a short sentence using rice.",
+              "promptSpanish": "Di una frase corta usando rice (arroz)."
+            },
+            {
+              "english": "We eat chicken.",
+              "spanish": "Comemos pollo.",
+              "prompt": "Say a short sentence using chicken.",
+              "promptSpanish": "Di una frase corta usando chicken (pollo)."
+            },
+            {
+              "english": "I eat a banana.",
+              "spanish": "Como un plátano.",
+              "prompt": "Say a short sentence using banana.",
+              "promptSpanish": "Di una frase corta usando banana (plátano)."
+            },
+            {
+              "english": "I drink water.",
+              "spanish": "Bebo agua.",
+              "prompt": "Say a short sentence using water.",
+              "promptSpanish": "Di una frase corta usando water (agua)."
+            },
+            {
+              "english": "I drink milk.",
+              "spanish": "Bebo leche.",
+              "prompt": "Say a short sentence using milk.",
+              "promptSpanish": "Di una frase corta usando milk (leche)."
+            },
+            {
+              "english": "I like orange juice.",
+              "spanish": "Me gusta el zumo de naranja.",
+              "prompt": "Say a short sentence using juice.",
+              "promptSpanish": "Di una frase corta usando juice (zumo)."
+            },
+            {
+              "english": "I eat a carrot.",
+              "spanish": "Como una zanahoria.",
+              "prompt": "Say a short sentence using carrot.",
+              "promptSpanish": "Di una frase corta usando carrot (zanahoria)."
+            }
+          ],
+          "listening": [
+            {
+              "english": "I eat an apple for breakfast.",
+              "spanish": "Como una manzana en el desayuno."
+            },
+            {
+              "english": "I have some bread with my meal.",
+              "spanish": "Como un poco de pan con mi comida."
+            },
+            {
+              "english": "I like cheese on my toast.",
+              "spanish": "Me gusta el queso sobre mi tostada."
+            },
+            {
+              "english": "We cook rice for lunch.",
+              "spanish": "Cocinamos arroz para el almuerzo."
+            },
+            {
+              "english": "We eat chicken with rice.",
+              "spanish": "Comemos pollo con arroz."
+            },
+            {
+              "english": "A banana is a yellow fruit.",
+              "spanish": "El plátano es una fruta amarilla."
+            },
+            {
+              "english": "Please drink some water.",
+              "spanish": "Por favor, bebe un poco de agua."
+            },
+            {
+              "english": "The baby drinks milk.",
+              "spanish": "El bebé bebe leche."
+            },
+            {
+              "english": "Orange juice is sweet.",
+              "spanish": "El zumo de naranja es dulce."
+            },
+            {
+              "english": "A carrot is an orange vegetable.",
+              "spanish": "La zanahoria es una hortaliza naranja."
+            }
+          ]
+        }
       }
     },
     {
