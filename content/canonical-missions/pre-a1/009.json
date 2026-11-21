@@ -1,6 +1,6 @@
 {
-  "schemaVersion": 1,
-  "contentVersion": "2026-11-21-curriculum-alignment-v3",
+  "schemaVersion": "1.2.0",
+  "contentVersion": 3,
   "course": {
     "courseId": "english-pre-a1",
     "level": "Pre-A1",
@@ -116,114 +116,6 @@
             "pronunciationGuide": "sad",
             "audio": "tts:en-GB:sad",
             "audioStatus": "synthetic_pending_review"
-          },
-          {
-            "itemId": "english-pre-a1-m009-explore-ex01-i11",
-            "position": 11,
-            "english": "tired",
-            "spanish": "cansado",
-            "pronunciationGuide": "TÁI-erd",
-            "audio": "tts:en-GB:tired",
-            "audioStatus": "synthetic_pending_review"
-          },
-          {
-            "itemId": "english-pre-a1-m009-explore-ex01-i12",
-            "position": 12,
-            "english": "fine",
-            "spanish": "bien",
-            "pronunciationGuide": "fáin",
-            "audio": "tts:en-GB:fine",
-            "audioStatus": "synthetic_pending_review"
-          },
-          {
-            "itemId": "english-pre-a1-m009-explore-ex01-i13",
-            "position": 13,
-            "english": "good",
-            "spanish": "bien",
-            "pronunciationGuide": "gud",
-            "audio": "tts:en-GB:good",
-            "audioStatus": "synthetic_pending_review"
-          },
-          {
-            "itemId": "english-pre-a1-m009-explore-ex01-i14",
-            "position": 14,
-            "english": "great",
-            "spanish": "genial",
-            "pronunciationGuide": "gréit",
-            "audio": "tts:en-GB:great",
-            "audioStatus": "synthetic_pending_review"
-          },
-          {
-            "itemId": "english-pre-a1-m009-explore-ex01-i15",
-            "position": 15,
-            "english": "student",
-            "spanish": "estudiante",
-            "pronunciationGuide": "STIÚ-dent",
-            "audio": "tts:en-GB:student",
-            "audioStatus": "synthetic_pending_review"
-          },
-          {
-            "itemId": "english-pre-a1-m009-explore-ex01-i16",
-            "position": 16,
-            "english": "teacher",
-            "spanish": "profesor",
-            "pronunciationGuide": "TÍ-cha",
-            "audio": "tts:en-GB:teacher",
-            "audioStatus": "synthetic_pending_review"
-          },
-          {
-            "itemId": "english-pre-a1-m009-explore-ex01-i17",
-            "position": 17,
-            "english": "friend",
-            "spanish": "amigo",
-            "pronunciationGuide": "frend",
-            "audio": "tts:en-GB:friend",
-            "audioStatus": "synthetic_pending_review"
-          },
-          {
-            "itemId": "english-pre-a1-m009-explore-ex01-i18",
-            "position": 18,
-            "english": "ready",
-            "spanish": "preparado",
-            "pronunciationGuide": "RÉ-di",
-            "audio": "tts:en-GB:ready",
-            "audioStatus": "synthetic_pending_review"
-          },
-          {
-            "itemId": "english-pre-a1-m009-explore-ex01-i19",
-            "position": 19,
-            "english": "nice",
-            "spanish": "agradable",
-            "pronunciationGuide": "náis",
-            "audio": "tts:en-GB:nice",
-            "audioStatus": "synthetic_pending_review"
-          },
-          {
-            "itemId": "english-pre-a1-m009-explore-ex01-i20",
-            "position": 20,
-            "english": "here",
-            "spanish": "aquí",
-            "pronunciationGuide": "jíar",
-            "audio": "tts:en-GB:here",
-            "audioStatus": "synthetic_pending_review"
-          },
-          {
-            "itemId": "english-pre-a1-m009-explore-ex01-i21",
-            "position": 21,
-            "english": "my",
-            "spanish": "mi",
-            "pronunciationGuide": "mái",
-            "audio": "tts:en-GB:my",
-            "audioStatus": "synthetic_pending_review"
-          },
-          {
-            "itemId": "english-pre-a1-m009-explore-ex01-i22",
-            "position": 22,
-            "english": "your",
-            "spanish": "tu",
-            "pronunciationGuide": "iór",
-            "audio": "tts:en-GB:your",
-            "audioStatus": "synthetic_pending_review"
           }
         ],
         "theory": {
@@ -296,7 +188,7 @@
             },
             {
               "label": "Bloque 10",
-              "pattern": "You're my friend. — Eres mi amigo/a..",
+              "pattern": "You're my friend. — Eres mi amigo/a.",
               "examples": [
                 "You're my friend."
               ]
@@ -352,8 +244,58 @@
             },
             {
               "english": "You're my friend.",
-              "spanish": "Eres mi amigo/a.",
+              "spanish": "Eres mi amigo/a",
               "note": "Modelo enseñado en Explore."
+            },
+            {
+              "english": "I",
+              "spanish": "yo",
+              "note": "Pronunciación aproximada: ái."
+            },
+            {
+              "english": "you",
+              "spanish": "tú",
+              "note": "Pronunciación aproximada: iú."
+            },
+            {
+              "english": "am",
+              "spanish": "soy/estoy",
+              "note": "Pronunciación aproximada: am."
+            },
+            {
+              "english": "are",
+              "spanish": "eres/estás",
+              "note": "Pronunciación aproximada: ar."
+            },
+            {
+              "english": "I am",
+              "spanish": "yo soy/estoy",
+              "note": "Pronunciación aproximada: ái am."
+            },
+            {
+              "english": "you are",
+              "spanish": "tú eres/estás",
+              "note": "Pronunciación aproximada: iú ar."
+            },
+            {
+              "english": "I'm",
+              "spanish": "contracción de I am",
+              "note": "Pronunciación aproximada: áim."
+            },
+            {
+              "english": "you're",
+              "spanish": "contracción de you are",
+              "note": "Pronunciación aproximada: ior."
+            },
+            {
+              "english": "happy",
+              "spanish": "feliz",
+              "note": "Pronunciación aproximada: JÁ-pi."
+            },
+            {
+              "english": "sad",
+              "spanish": "triste",
+              "note": "Pronunciación aproximada: sad."
             }
           ],
           "grammar": [
@@ -404,7 +346,7 @@
             },
             {
               "english": "You're my friend.",
-              "spanish": "Eres mi amigo/a.",
+              "spanish": "Eres mi amigo/a",
               "note": "I am se contrae como I'm; you are como you're. El apóstrofo marca la contracción. You're significa you are; your significa tu y no lleva apóstrofo."
             }
           ],
@@ -462,7 +404,7 @@
             },
             {
               "english": "You're my friend.",
-              "spanish": "Eres mi amigo/a.",
+              "spanish": "Eres mi amigo/a",
               "note": "Modelo enseñado en Explore."
             }
           ],
@@ -532,7 +474,7 @@
             },
             {
               "english": "You're my friend.",
-              "spanish": "Eres mi amigo/a.",
+              "spanish": "Eres mi amigo/a",
               "note": "Modelo enseñado en Explore.",
               "prompt": "Practica esta expresión.",
               "promptSpanish": "Di la expresión en voz alta."
@@ -586,7 +528,7 @@
             },
             {
               "english": "You're my friend.",
-              "spanish": "Eres mi amigo/a.",
+              "spanish": "Eres mi amigo/a",
               "note": "Modelo enseñado en Explore."
             }
           ]
@@ -659,9 +601,9 @@
             {
               "position": 10,
               "title": "Bloque 10",
-              "content": "You're my friend. — Eres mi amigo/a..",
+              "content": "You're my friend. — Eres mi amigo/a.",
               "example": "You're my friend.",
-              "translation": "Eres mi amigo/a."
+              "translation": "Eres mi amigo/a"
             }
           ]
         }
@@ -687,7 +629,8 @@
               "soy/estoy",
               "yo"
             ],
-            "answer": "yo"
+            "answer": "yo",
+            "taskType": "vocabulary_translation"
           },
           {
             "itemId": "english-pre-a1-m009-practice-ex01-i02",
@@ -701,7 +644,8 @@
               "tú",
               "soy/estoy"
             ],
-            "answer": "tú"
+            "answer": "tú",
+            "taskType": "vocabulary_translation"
           },
           {
             "itemId": "english-pre-a1-m009-practice-ex01-i03",
@@ -715,7 +659,8 @@
               "eres/estás",
               "yo soy/estoy"
             ],
-            "answer": "soy/estoy"
+            "answer": "soy/estoy",
+            "taskType": "vocabulary_translation"
           },
           {
             "itemId": "english-pre-a1-m009-practice-ex01-i04",
@@ -729,7 +674,8 @@
               "tú eres/estás",
               "eres/estás"
             ],
-            "answer": "eres/estás"
+            "answer": "eres/estás",
+            "taskType": "vocabulary_translation"
           },
           {
             "itemId": "english-pre-a1-m009-practice-ex01-i05",
@@ -743,7 +689,8 @@
               "yo soy/estoy",
               "tú eres/estás"
             ],
-            "answer": "yo soy/estoy"
+            "answer": "yo soy/estoy",
+            "taskType": "vocabulary_translation"
           },
           {
             "itemId": "english-pre-a1-m009-practice-ex01-i06",
@@ -757,7 +704,8 @@
               "contracción de I am",
               "contracción de you are"
             ],
-            "answer": "tú eres/estás"
+            "answer": "tú eres/estás",
+            "taskType": "vocabulary_translation"
           },
           {
             "itemId": "english-pre-a1-m009-practice-ex01-i07",
@@ -771,7 +719,8 @@
               "feliz",
               "contracción de I am"
             ],
-            "answer": "contracción de I am"
+            "answer": "contracción de I am",
+            "taskType": "vocabulary_translation"
           },
           {
             "itemId": "english-pre-a1-m009-practice-ex01-i08",
@@ -785,7 +734,8 @@
               "contracción de you are",
               "feliz"
             ],
-            "answer": "contracción de you are"
+            "answer": "contracción de you are",
+            "taskType": "vocabulary_translation"
           },
           {
             "itemId": "english-pre-a1-m009-practice-ex01-i09",
@@ -799,7 +749,8 @@
               "triste",
               "cansado"
             ],
-            "answer": "feliz"
+            "answer": "feliz",
+            "taskType": "vocabulary_translation"
           },
           {
             "itemId": "english-pre-a1-m009-practice-ex01-i10",
@@ -813,7 +764,8 @@
               "bien",
               "triste"
             ],
-            "answer": "triste"
+            "answer": "triste",
+            "taskType": "vocabulary_translation"
           }
         ]
       }
@@ -1060,9 +1012,7 @@
             "word": "I",
             "translation": "yo",
             "pronunciationGuide": "ái",
-            "audio": "tts:en-GB:I",
-            "audioStatus": "synthetic_pending_review",
-            "guideType": "approximate_spanish"
+            "audio": "tts:en-GB:I"
           },
           {
             "itemId": "english-pre-a1-m009-pronunciation-ex01-i02",
@@ -1070,9 +1020,7 @@
             "word": "you",
             "translation": "tú",
             "pronunciationGuide": "iú",
-            "audio": "tts:en-GB:you",
-            "audioStatus": "synthetic_pending_review",
-            "guideType": "approximate_spanish"
+            "audio": "tts:en-GB:you"
           },
           {
             "itemId": "english-pre-a1-m009-pronunciation-ex01-i03",
@@ -1080,9 +1028,7 @@
             "word": "am",
             "translation": "soy/estoy",
             "pronunciationGuide": "am",
-            "audio": "tts:en-GB:am",
-            "audioStatus": "synthetic_pending_review",
-            "guideType": "approximate_spanish"
+            "audio": "tts:en-GB:am"
           },
           {
             "itemId": "english-pre-a1-m009-pronunciation-ex01-i04",
@@ -1090,9 +1036,7 @@
             "word": "are",
             "translation": "eres/estás",
             "pronunciationGuide": "ar",
-            "audio": "tts:en-GB:are",
-            "audioStatus": "synthetic_pending_review",
-            "guideType": "approximate_spanish"
+            "audio": "tts:en-GB:are"
           },
           {
             "itemId": "english-pre-a1-m009-pronunciation-ex01-i05",
@@ -1100,9 +1044,7 @@
             "word": "I am",
             "translation": "yo soy/estoy",
             "pronunciationGuide": "ái am",
-            "audio": "tts:en-GB:I am",
-            "audioStatus": "synthetic_pending_review",
-            "guideType": "approximate_spanish"
+            "audio": "tts:en-GB:I am"
           },
           {
             "itemId": "english-pre-a1-m009-pronunciation-ex01-i06",
@@ -1110,9 +1052,7 @@
             "word": "you are",
             "translation": "tú eres/estás",
             "pronunciationGuide": "iú ar",
-            "audio": "tts:en-GB:you are",
-            "audioStatus": "synthetic_pending_review",
-            "guideType": "approximate_spanish"
+            "audio": "tts:en-GB:you are"
           },
           {
             "itemId": "english-pre-a1-m009-pronunciation-ex01-i07",
@@ -1120,9 +1060,7 @@
             "word": "I'm",
             "translation": "contracción de I am",
             "pronunciationGuide": "áim",
-            "audio": "tts:en-GB:I'm",
-            "audioStatus": "synthetic_pending_review",
-            "guideType": "approximate_spanish"
+            "audio": "tts:en-GB:I'm"
           },
           {
             "itemId": "english-pre-a1-m009-pronunciation-ex01-i08",
@@ -1130,9 +1068,7 @@
             "word": "you're",
             "translation": "contracción de you are",
             "pronunciationGuide": "ior",
-            "audio": "tts:en-GB:you're",
-            "audioStatus": "synthetic_pending_review",
-            "guideType": "approximate_spanish"
+            "audio": "tts:en-GB:you're"
           },
           {
             "itemId": "english-pre-a1-m009-pronunciation-ex01-i09",
@@ -1140,9 +1076,7 @@
             "word": "happy",
             "translation": "feliz",
             "pronunciationGuide": "JÁ-pi",
-            "audio": "tts:en-GB:happy",
-            "audioStatus": "synthetic_pending_review",
-            "guideType": "approximate_spanish"
+            "audio": "tts:en-GB:happy"
           },
           {
             "itemId": "english-pre-a1-m009-pronunciation-ex01-i10",
@@ -1150,89 +1084,7 @@
             "word": "sad",
             "translation": "triste",
             "pronunciationGuide": "sad",
-            "audio": "tts:en-GB:sad",
-            "audioStatus": "synthetic_pending_review",
-            "guideType": "approximate_spanish"
-          },
-          {
-            "itemId": "english-pre-a1-m009-pronunciation-ex01-i11",
-            "position": 11,
-            "word": "tired",
-            "translation": "cansado",
-            "pronunciationGuide": "TÁI-erd",
-            "audio": "tts:en-GB:tired",
-            "audioStatus": "synthetic_pending_review",
-            "guideType": "approximate_spanish"
-          },
-          {
-            "itemId": "english-pre-a1-m009-pronunciation-ex01-i12",
-            "position": 12,
-            "word": "fine",
-            "translation": "bien",
-            "pronunciationGuide": "fáin",
-            "audio": "tts:en-GB:fine",
-            "audioStatus": "synthetic_pending_review",
-            "guideType": "approximate_spanish"
-          },
-          {
-            "itemId": "english-pre-a1-m009-pronunciation-ex01-i13",
-            "position": 13,
-            "word": "good",
-            "translation": "bien",
-            "pronunciationGuide": "gud",
-            "audio": "tts:en-GB:good",
-            "audioStatus": "synthetic_pending_review",
-            "guideType": "approximate_spanish"
-          },
-          {
-            "itemId": "english-pre-a1-m009-pronunciation-ex01-i14",
-            "position": 14,
-            "word": "great",
-            "translation": "genial",
-            "pronunciationGuide": "gréit",
-            "audio": "tts:en-GB:great",
-            "audioStatus": "synthetic_pending_review",
-            "guideType": "approximate_spanish"
-          },
-          {
-            "itemId": "english-pre-a1-m009-pronunciation-ex01-i15",
-            "position": 15,
-            "word": "student",
-            "translation": "estudiante",
-            "pronunciationGuide": "STIÚ-dent",
-            "audio": "tts:en-GB:student",
-            "audioStatus": "synthetic_pending_review",
-            "guideType": "approximate_spanish"
-          },
-          {
-            "itemId": "english-pre-a1-m009-pronunciation-ex01-i16",
-            "position": 16,
-            "word": "teacher",
-            "translation": "profesor",
-            "pronunciationGuide": "TÍ-cha",
-            "audio": "tts:en-GB:teacher",
-            "audioStatus": "synthetic_pending_review",
-            "guideType": "approximate_spanish"
-          },
-          {
-            "itemId": "english-pre-a1-m009-pronunciation-ex01-i17",
-            "position": 17,
-            "word": "friend",
-            "translation": "amigo",
-            "pronunciationGuide": "frend",
-            "audio": "tts:en-GB:friend",
-            "audioStatus": "synthetic_pending_review",
-            "guideType": "approximate_spanish"
-          },
-          {
-            "itemId": "english-pre-a1-m009-pronunciation-ex01-i18",
-            "position": 18,
-            "word": "ready",
-            "translation": "preparado",
-            "pronunciationGuide": "RÉ-di",
-            "audio": "tts:en-GB:ready",
-            "audioStatus": "synthetic_pending_review",
-            "guideType": "approximate_spanish"
+            "audio": "tts:en-GB:sad"
           }
         ]
       }
@@ -1246,120 +1098,7 @@
         "type": "reading_comprehension",
         "content": {
           "passageId": "english-pre-a1-m009-reading-passage-01",
-          "passage": "Hello! I'm Alex. You're my friend. I'm a student. You're a teacher. I'm happy today. You're very nice.",
-          "translation": "Hola, soy Alex. Eres mi amigo/a. Soy estudiante. Eres profesor/a. Estoy feliz hoy. Eres muy agradable.",
-          "vocabulary": [
-            {
-              "word": "I",
-              "translation": "yo",
-              "pronunciationGuide": "ái"
-            },
-            {
-              "word": "you",
-              "translation": "tú",
-              "pronunciationGuide": "iú"
-            },
-            {
-              "word": "am",
-              "translation": "soy/estoy",
-              "pronunciationGuide": "am"
-            },
-            {
-              "word": "are",
-              "translation": "eres/estás",
-              "pronunciationGuide": "ar"
-            },
-            {
-              "word": "I am",
-              "translation": "yo soy/estoy",
-              "pronunciationGuide": "ái am"
-            },
-            {
-              "word": "you are",
-              "translation": "tú eres/estás",
-              "pronunciationGuide": "iú ar"
-            },
-            {
-              "word": "I'm",
-              "translation": "contracción de I am",
-              "pronunciationGuide": "áim"
-            },
-            {
-              "word": "you're",
-              "translation": "contracción de you are",
-              "pronunciationGuide": "ior"
-            },
-            {
-              "word": "happy",
-              "translation": "feliz",
-              "pronunciationGuide": "JÁ-pi"
-            },
-            {
-              "word": "sad",
-              "translation": "triste",
-              "pronunciationGuide": "sad"
-            },
-            {
-              "word": "tired",
-              "translation": "cansado",
-              "pronunciationGuide": "TÁI-erd"
-            },
-            {
-              "word": "fine",
-              "translation": "bien",
-              "pronunciationGuide": "fáin"
-            },
-            {
-              "word": "good",
-              "translation": "bien",
-              "pronunciationGuide": "gud"
-            },
-            {
-              "word": "great",
-              "translation": "genial",
-              "pronunciationGuide": "gréit"
-            },
-            {
-              "word": "student",
-              "translation": "estudiante",
-              "pronunciationGuide": "STIÚ-dent"
-            },
-            {
-              "word": "teacher",
-              "translation": "profesor",
-              "pronunciationGuide": "TÍ-cha"
-            },
-            {
-              "word": "friend",
-              "translation": "amigo",
-              "pronunciationGuide": "frend"
-            },
-            {
-              "word": "ready",
-              "translation": "preparado",
-              "pronunciationGuide": "RÉ-di"
-            },
-            {
-              "word": "nice",
-              "translation": "agradable",
-              "pronunciationGuide": "náis"
-            },
-            {
-              "word": "here",
-              "translation": "aquí",
-              "pronunciationGuide": "jíar"
-            },
-            {
-              "word": "my",
-              "translation": "mi",
-              "pronunciationGuide": "mái"
-            },
-            {
-              "word": "your",
-              "translation": "tu",
-              "pronunciationGuide": "iór"
-            }
-          ]
+          "passage": "Hello! I'm Alex. You're my friend. I'm a student. You're a teacher. I'm happy today. You're very nice."
         },
         "items": [
           {

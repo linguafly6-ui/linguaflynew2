@@ -1,6 +1,6 @@
 {
-  "schemaVersion": 1,
-  "contentVersion": "2026-11-21-curriculum-alignment-v3",
+  "schemaVersion": "1.2.0",
+  "contentVersion": 3,
   "course": {
     "courseId": "english-pre-a1",
     "level": "Pre-A1",
@@ -115,51 +115,6 @@
             "spanish": "respuesta",
             "pronunciationGuide": "ÁN-ser",
             "audio": "tts:en-GB:answer",
-            "audioStatus": "synthetic_pending_review"
-          },
-          {
-            "itemId": "english-pre-a1-m005-explore-ex01-i11",
-            "position": 11,
-            "english": "okay",
-            "spanish": "de acuerdo",
-            "pronunciationGuide": "óu-KÉI",
-            "audio": "tts:en-GB:okay",
-            "audioStatus": "synthetic_pending_review"
-          },
-          {
-            "itemId": "english-pre-a1-m005-explore-ex01-i12",
-            "position": 12,
-            "english": "sure",
-            "spanish": "claro",
-            "pronunciationGuide": "shúr",
-            "audio": "tts:en-GB:sure",
-            "audioStatus": "synthetic_pending_review"
-          },
-          {
-            "itemId": "english-pre-a1-m005-explore-ex01-i13",
-            "position": 13,
-            "english": "again",
-            "spanish": "otra vez",
-            "pronunciationGuide": "a-GUÉN",
-            "audio": "tts:en-GB:again",
-            "audioStatus": "synthetic_pending_review"
-          },
-          {
-            "itemId": "english-pre-a1-m005-explore-ex01-i14",
-            "position": 14,
-            "english": "repeat",
-            "spanish": "repetir",
-            "pronunciationGuide": "ri-PÍT",
-            "audio": "tts:en-GB:repeat",
-            "audioStatus": "synthetic_pending_review"
-          },
-          {
-            "itemId": "english-pre-a1-m005-explore-ex01-i15",
-            "position": 15,
-            "english": "understand",
-            "spanish": "entender",
-            "pronunciationGuide": "an-der-STÁND",
-            "audio": "tts:en-GB:understand",
             "audioStatus": "synthetic_pending_review"
           }
         ],
@@ -291,6 +246,56 @@
               "english": "Question and answer.",
               "spanish": "Pregunta y respuesta.",
               "note": "Modelo enseñado en Explore."
+            },
+            {
+              "english": "yes",
+              "spanish": "sí",
+              "note": "Pronunciación aproximada: iés."
+            },
+            {
+              "english": "no",
+              "spanish": "no",
+              "note": "Pronunciación aproximada: nóu."
+            },
+            {
+              "english": "maybe",
+              "spanish": "quizás",
+              "note": "Pronunciación aproximada: MÉI-bi."
+            },
+            {
+              "english": "right",
+              "spanish": "correcto",
+              "note": "Pronunciación aproximada: ráit."
+            },
+            {
+              "english": "wrong",
+              "spanish": "incorrecto",
+              "note": "Pronunciación aproximada: róng."
+            },
+            {
+              "english": "correct",
+              "spanish": "correcto",
+              "note": "Pronunciación aproximada: ka-RÉKT."
+            },
+            {
+              "english": "true",
+              "spanish": "verdadero",
+              "note": "Pronunciación aproximada: trú."
+            },
+            {
+              "english": "false",
+              "spanish": "falso",
+              "note": "Pronunciación aproximada: fóls."
+            },
+            {
+              "english": "question",
+              "spanish": "pregunta",
+              "note": "Pronunciación aproximada: KUÉS-chan."
+            },
+            {
+              "english": "answer",
+              "spanish": "respuesta",
+              "note": "Pronunciación aproximada: ÁN-ser."
             }
           ],
           "grammar": [
@@ -624,7 +629,8 @@
               "quizás",
               "sí"
             ],
-            "answer": "sí"
+            "answer": "sí",
+            "taskType": "vocabulary_translation"
           },
           {
             "itemId": "english-pre-a1-m005-practice-ex01-i02",
@@ -638,7 +644,8 @@
               "no",
               "quizás"
             ],
-            "answer": "no"
+            "answer": "no",
+            "taskType": "vocabulary_translation"
           },
           {
             "itemId": "english-pre-a1-m005-practice-ex01-i03",
@@ -652,7 +659,8 @@
               "correcto",
               "incorrecto"
             ],
-            "answer": "quizás"
+            "answer": "quizás",
+            "taskType": "vocabulary_translation"
           },
           {
             "itemId": "english-pre-a1-m005-practice-ex01-i04",
@@ -666,7 +674,8 @@
               "verdadero",
               "correcto"
             ],
-            "answer": "correcto"
+            "answer": "correcto",
+            "taskType": "vocabulary_translation"
           },
           {
             "itemId": "english-pre-a1-m005-practice-ex01-i05",
@@ -680,7 +689,8 @@
               "incorrecto",
               "verdadero"
             ],
-            "answer": "incorrecto"
+            "answer": "incorrecto",
+            "taskType": "vocabulary_translation"
           },
           {
             "itemId": "english-pre-a1-m005-practice-ex01-i06",
@@ -694,7 +704,8 @@
               "falso",
               "pregunta"
             ],
-            "answer": "correcto"
+            "answer": "correcto",
+            "taskType": "vocabulary_translation"
           },
           {
             "itemId": "english-pre-a1-m005-practice-ex01-i07",
@@ -708,7 +719,8 @@
               "respuesta",
               "verdadero"
             ],
-            "answer": "verdadero"
+            "answer": "verdadero",
+            "taskType": "vocabulary_translation"
           },
           {
             "itemId": "english-pre-a1-m005-practice-ex01-i08",
@@ -722,7 +734,8 @@
               "falso",
               "respuesta"
             ],
-            "answer": "falso"
+            "answer": "falso",
+            "taskType": "vocabulary_translation"
           },
           {
             "itemId": "english-pre-a1-m005-practice-ex01-i09",
@@ -736,7 +749,8 @@
               "de acuerdo",
               "claro"
             ],
-            "answer": "pregunta"
+            "answer": "pregunta",
+            "taskType": "vocabulary_translation"
           },
           {
             "itemId": "english-pre-a1-m005-practice-ex01-i10",
@@ -750,7 +764,8 @@
               "otra vez",
               "respuesta"
             ],
-            "answer": "respuesta"
+            "answer": "respuesta",
+            "taskType": "vocabulary_translation"
           }
         ]
       }
@@ -997,9 +1012,7 @@
             "word": "yes",
             "translation": "sí",
             "pronunciationGuide": "iés",
-            "audio": "tts:en-GB:yes",
-            "audioStatus": "synthetic_pending_review",
-            "guideType": "approximate_spanish"
+            "audio": "tts:en-GB:yes"
           },
           {
             "itemId": "english-pre-a1-m005-pronunciation-ex01-i02",
@@ -1007,9 +1020,7 @@
             "word": "no",
             "translation": "no",
             "pronunciationGuide": "nóu",
-            "audio": "tts:en-GB:no",
-            "audioStatus": "synthetic_pending_review",
-            "guideType": "approximate_spanish"
+            "audio": "tts:en-GB:no"
           },
           {
             "itemId": "english-pre-a1-m005-pronunciation-ex01-i03",
@@ -1017,9 +1028,7 @@
             "word": "maybe",
             "translation": "quizás",
             "pronunciationGuide": "MÉI-bi",
-            "audio": "tts:en-GB:maybe",
-            "audioStatus": "synthetic_pending_review",
-            "guideType": "approximate_spanish"
+            "audio": "tts:en-GB:maybe"
           },
           {
             "itemId": "english-pre-a1-m005-pronunciation-ex01-i04",
@@ -1027,9 +1036,7 @@
             "word": "right",
             "translation": "correcto",
             "pronunciationGuide": "ráit",
-            "audio": "tts:en-GB:right",
-            "audioStatus": "synthetic_pending_review",
-            "guideType": "approximate_spanish"
+            "audio": "tts:en-GB:right"
           },
           {
             "itemId": "english-pre-a1-m005-pronunciation-ex01-i05",
@@ -1037,9 +1044,7 @@
             "word": "wrong",
             "translation": "incorrecto",
             "pronunciationGuide": "róng",
-            "audio": "tts:en-GB:wrong",
-            "audioStatus": "synthetic_pending_review",
-            "guideType": "approximate_spanish"
+            "audio": "tts:en-GB:wrong"
           },
           {
             "itemId": "english-pre-a1-m005-pronunciation-ex01-i06",
@@ -1047,9 +1052,7 @@
             "word": "correct",
             "translation": "correcto",
             "pronunciationGuide": "ka-RÉKT",
-            "audio": "tts:en-GB:correct",
-            "audioStatus": "synthetic_pending_review",
-            "guideType": "approximate_spanish"
+            "audio": "tts:en-GB:correct"
           },
           {
             "itemId": "english-pre-a1-m005-pronunciation-ex01-i07",
@@ -1057,9 +1060,7 @@
             "word": "true",
             "translation": "verdadero",
             "pronunciationGuide": "trú",
-            "audio": "tts:en-GB:true",
-            "audioStatus": "synthetic_pending_review",
-            "guideType": "approximate_spanish"
+            "audio": "tts:en-GB:true"
           },
           {
             "itemId": "english-pre-a1-m005-pronunciation-ex01-i08",
@@ -1067,9 +1068,7 @@
             "word": "false",
             "translation": "falso",
             "pronunciationGuide": "fóls",
-            "audio": "tts:en-GB:false",
-            "audioStatus": "synthetic_pending_review",
-            "guideType": "approximate_spanish"
+            "audio": "tts:en-GB:false"
           },
           {
             "itemId": "english-pre-a1-m005-pronunciation-ex01-i09",
@@ -1077,9 +1076,7 @@
             "word": "question",
             "translation": "pregunta",
             "pronunciationGuide": "KUÉS-chan",
-            "audio": "tts:en-GB:question",
-            "audioStatus": "synthetic_pending_review",
-            "guideType": "approximate_spanish"
+            "audio": "tts:en-GB:question"
           },
           {
             "itemId": "english-pre-a1-m005-pronunciation-ex01-i10",
@@ -1087,59 +1084,7 @@
             "word": "answer",
             "translation": "respuesta",
             "pronunciationGuide": "ÁN-ser",
-            "audio": "tts:en-GB:answer",
-            "audioStatus": "synthetic_pending_review",
-            "guideType": "approximate_spanish"
-          },
-          {
-            "itemId": "english-pre-a1-m005-pronunciation-ex01-i11",
-            "position": 11,
-            "word": "okay",
-            "translation": "de acuerdo",
-            "pronunciationGuide": "óu-KÉI",
-            "audio": "tts:en-GB:okay",
-            "audioStatus": "synthetic_pending_review",
-            "guideType": "approximate_spanish"
-          },
-          {
-            "itemId": "english-pre-a1-m005-pronunciation-ex01-i12",
-            "position": 12,
-            "word": "sure",
-            "translation": "claro",
-            "pronunciationGuide": "shúr",
-            "audio": "tts:en-GB:sure",
-            "audioStatus": "synthetic_pending_review",
-            "guideType": "approximate_spanish"
-          },
-          {
-            "itemId": "english-pre-a1-m005-pronunciation-ex01-i13",
-            "position": 13,
-            "word": "again",
-            "translation": "otra vez",
-            "pronunciationGuide": "a-GUÉN",
-            "audio": "tts:en-GB:again",
-            "audioStatus": "synthetic_pending_review",
-            "guideType": "approximate_spanish"
-          },
-          {
-            "itemId": "english-pre-a1-m005-pronunciation-ex01-i14",
-            "position": 14,
-            "word": "repeat",
-            "translation": "repetir",
-            "pronunciationGuide": "ri-PÍT",
-            "audio": "tts:en-GB:repeat",
-            "audioStatus": "synthetic_pending_review",
-            "guideType": "approximate_spanish"
-          },
-          {
-            "itemId": "english-pre-a1-m005-pronunciation-ex01-i15",
-            "position": 15,
-            "word": "understand",
-            "translation": "entender",
-            "pronunciationGuide": "an-der-STÁND",
-            "audio": "tts:en-GB:understand",
-            "audioStatus": "synthetic_pending_review",
-            "guideType": "approximate_spanish"
+            "audio": "tts:en-GB:answer"
           }
         ]
       }
@@ -1153,85 +1098,7 @@
         "type": "reading_comprehension",
         "content": {
           "passageId": "english-pre-a1-m005-reading-passage-01",
-          "passage": "Yes. No. Maybe. Okay. Right or wrong? True or false? Please repeat. I understand.",
-          "translation": "Sí. No. Quizás. De acuerdo. ¿Correcto o incorrecto? ¿Verdadero o falso? Repite, por favor. Entiendo.",
-          "vocabulary": [
-            {
-              "word": "yes",
-              "translation": "sí",
-              "pronunciationGuide": "iés"
-            },
-            {
-              "word": "no",
-              "translation": "no",
-              "pronunciationGuide": "nóu"
-            },
-            {
-              "word": "maybe",
-              "translation": "quizás",
-              "pronunciationGuide": "MÉI-bi"
-            },
-            {
-              "word": "right",
-              "translation": "correcto",
-              "pronunciationGuide": "ráit"
-            },
-            {
-              "word": "wrong",
-              "translation": "incorrecto",
-              "pronunciationGuide": "róng"
-            },
-            {
-              "word": "correct",
-              "translation": "correcto",
-              "pronunciationGuide": "ka-RÉKT"
-            },
-            {
-              "word": "true",
-              "translation": "verdadero",
-              "pronunciationGuide": "trú"
-            },
-            {
-              "word": "false",
-              "translation": "falso",
-              "pronunciationGuide": "fóls"
-            },
-            {
-              "word": "question",
-              "translation": "pregunta",
-              "pronunciationGuide": "KUÉS-chan"
-            },
-            {
-              "word": "answer",
-              "translation": "respuesta",
-              "pronunciationGuide": "ÁN-ser"
-            },
-            {
-              "word": "okay",
-              "translation": "de acuerdo",
-              "pronunciationGuide": "óu-KÉI"
-            },
-            {
-              "word": "sure",
-              "translation": "claro",
-              "pronunciationGuide": "shúr"
-            },
-            {
-              "word": "again",
-              "translation": "otra vez",
-              "pronunciationGuide": "a-GUÉN"
-            },
-            {
-              "word": "repeat",
-              "translation": "repetir",
-              "pronunciationGuide": "ri-PÍT"
-            },
-            {
-              "word": "understand",
-              "translation": "entender",
-              "pronunciationGuide": "an-der-STÁND"
-            }
-          ]
+          "passage": "Yes. No. Maybe. Okay. Right or wrong? True or false? Please repeat. I understand."
         },
         "items": [
           {

@@ -1,6 +1,6 @@
 {
-  "schemaVersion": 1,
-  "contentVersion": "2026-11-21-curriculum-alignment-v3",
+  "schemaVersion": "1.2.0",
+  "contentVersion": 3,
   "course": {
     "courseId": "english-pre-a1",
     "level": "Pre-A1",
@@ -89,6 +89,30 @@
             "pronunciationGuide": "mái NÉIM iz",
             "audio": "tts:en-GB:My name is…",
             "audioStatus": "synthetic_pending_review"
+          },
+          {
+            "itemId": "english-pre-a1-m002-explore-ex01-i08",
+            "position": 8,
+            "english": "What's your name?",
+            "spanish": "¿Cómo te llamas?",
+            "pronunciationGuide": "uót",
+            "audio": "tts:en-GB:What's your name?"
+          },
+          {
+            "itemId": "english-pre-a1-m002-explore-ex01-i09",
+            "position": 9,
+            "english": "What's your name?",
+            "spanish": "¿Cómo te llamas?",
+            "pronunciationGuide": "uót",
+            "audio": "tts:en-GB:What's your name?"
+          },
+          {
+            "itemId": "english-pre-a1-m002-explore-ex01-i10",
+            "position": 10,
+            "english": "What's your name?",
+            "spanish": "¿Cómo te llamas?",
+            "pronunciationGuide": "uót",
+            "audio": "tts:en-GB:What's your name?"
           }
         ],
         "theory": {
@@ -126,44 +150,44 @@
             },
             {
               "label": "Bloque 5",
-              "pattern": "What's your name? — ¿Cómo te llamas?.",
+              "pattern": "What — qué.",
               "examples": [
-                "What's your name?"
+                "What"
               ]
             },
             {
               "label": "Bloque 6",
-              "pattern": "My name is Ana. — Me llamo Ana..",
+              "pattern": "is — es.",
               "examples": [
-                "My name is Ana."
+                "is"
               ]
             },
             {
               "label": "Bloque 7",
               "pattern": "What's your name? pregunta el nombre. My name is… sirve para decirlo. Se aprenden como fórmulas completas; la conjugación de be se estudiará después.",
               "examples": [
-                "What's your name? My name is Leo."
+                "your"
               ]
             },
             {
               "label": "Bloque 8",
-              "pattern": "My name is… — Me llamo….",
+              "pattern": "name — nombre.",
               "examples": [
-                "My name is…"
+                "name"
               ]
             },
             {
               "label": "Bloque 9",
-              "pattern": "What's your name? — ¿Cómo te llamas?.",
+              "pattern": "my — mi.",
               "examples": [
-                "What's your name?"
+                "my"
               ]
             },
             {
               "label": "Bloque 10",
-              "pattern": "My name is Ana. — Me llamo Ana..",
+              "pattern": "What's your name? — ¿Cómo te llamas?.",
               "examples": [
-                "My name is Ana."
+                "What's your name?"
               ]
             }
           ]
@@ -189,6 +213,31 @@
               "english": "My name is…",
               "spanish": "Me llamo…",
               "note": "Modelo enseñado en Explore."
+            },
+            {
+              "english": "What",
+              "spanish": "qué",
+              "note": "Pronunciación aproximada: uót."
+            },
+            {
+              "english": "is",
+              "spanish": "es",
+              "note": "Pronunciación aproximada: iz."
+            },
+            {
+              "english": "your",
+              "spanish": "tu",
+              "note": "Pronunciación aproximada: iór."
+            },
+            {
+              "english": "name",
+              "spanish": "nombre",
+              "note": "Pronunciación aproximada: NÉIM."
+            },
+            {
+              "english": "my",
+              "spanish": "mi",
+              "note": "Pronunciación aproximada: mái."
             }
           ],
           "grammar": [
@@ -345,7 +394,7 @@
               "title": "Bloque 3",
               "content": "What's your name? My name is Leo. — What's your name? My name is Leo..",
               "example": "What's your name? My name is Leo.",
-              "translation": "Consulta el vocabulario traducido."
+              "translation": "What's your name? My name is Leo."
             },
             {
               "position": 4,
@@ -357,44 +406,44 @@
             {
               "position": 5,
               "title": "Bloque 5",
-              "content": "What's your name? — ¿Cómo te llamas?.",
-              "example": "What's your name?",
-              "translation": "¿Cómo te llamas?"
+              "content": "What — qué.",
+              "example": "What",
+              "translation": "qué"
             },
             {
               "position": 6,
               "title": "Bloque 6",
-              "content": "My name is Ana. — Me llamo Ana..",
-              "example": "My name is Ana.",
-              "translation": "Me llamo Ana."
+              "content": "is — es.",
+              "example": "is",
+              "translation": "es"
             },
             {
               "position": 7,
               "title": "Bloque 7",
               "content": "What's your name? pregunta el nombre. My name is… sirve para decirlo. Se aprenden como fórmulas completas; la conjugación de be se estudiará después.",
-              "example": "What's your name? My name is Leo.",
-              "translation": "Consulta el vocabulario traducido."
+              "example": "your",
+              "translation": "tu"
             },
             {
               "position": 8,
               "title": "Bloque 8",
-              "content": "My name is… — Me llamo….",
-              "example": "My name is…",
-              "translation": "Me llamo…"
+              "content": "name — nombre.",
+              "example": "name",
+              "translation": "nombre"
             },
             {
               "position": 9,
               "title": "Bloque 9",
-              "content": "What's your name? — ¿Cómo te llamas?.",
-              "example": "What's your name?",
-              "translation": "¿Cómo te llamas?"
+              "content": "my — mi.",
+              "example": "my",
+              "translation": "mi"
             },
             {
               "position": 10,
               "title": "Bloque 10",
-              "content": "My name is Ana. — Me llamo Ana..",
-              "example": "My name is Ana.",
-              "translation": "Me llamo Ana."
+              "content": "What's your name? — ¿Cómo te llamas?.",
+              "example": "What's your name?",
+              "translation": "¿Cómo te llamas?"
             }
           ]
         }
@@ -420,7 +469,8 @@
               "tu",
               "qué"
             ],
-            "answer": "qué"
+            "answer": "qué",
+            "taskType": "vocabulary_translation"
           },
           {
             "itemId": "english-pre-a1-m002-practice-ex01-i02",
@@ -434,7 +484,8 @@
               "es",
               "tu"
             ],
-            "answer": "es"
+            "answer": "es",
+            "taskType": "vocabulary_translation"
           },
           {
             "itemId": "english-pre-a1-m002-practice-ex01-i03",
@@ -448,7 +499,8 @@
               "nombre",
               "mi"
             ],
-            "answer": "tu"
+            "answer": "tu",
+            "taskType": "vocabulary_translation"
           },
           {
             "itemId": "english-pre-a1-m002-practice-ex01-i04",
@@ -462,7 +514,8 @@
               "¿Cómo te llamas?",
               "nombre"
             ],
-            "answer": "nombre"
+            "answer": "nombre",
+            "taskType": "vocabulary_translation"
           },
           {
             "itemId": "english-pre-a1-m002-practice-ex01-i05",
@@ -476,7 +529,8 @@
               "mi",
               "¿Cómo te llamas?"
             ],
-            "answer": "mi"
+            "answer": "mi",
+            "taskType": "vocabulary_translation"
           },
           {
             "itemId": "english-pre-a1-m002-practice-ex01-i06",
@@ -490,7 +544,8 @@
               "Me llamo…",
               "qué"
             ],
-            "answer": "¿Cómo te llamas?"
+            "answer": "¿Cómo te llamas?",
+            "taskType": "vocabulary_translation"
           },
           {
             "itemId": "english-pre-a1-m002-practice-ex01-i07",
@@ -504,7 +559,8 @@
               "es",
               "Me llamo…"
             ],
-            "answer": "Me llamo…"
+            "answer": "Me llamo…",
+            "taskType": "vocabulary_translation"
           },
           {
             "itemId": "english-pre-a1-m002-practice-ex01-i08",
@@ -518,7 +574,8 @@
               "qué",
               "tu"
             ],
-            "answer": "qué"
+            "answer": "qué",
+            "taskType": "vocabulary_translation"
           },
           {
             "itemId": "english-pre-a1-m002-practice-ex01-i09",
@@ -532,7 +589,8 @@
               "nombre",
               "mi"
             ],
-            "answer": "es"
+            "answer": "es",
+            "taskType": "vocabulary_translation"
           },
           {
             "itemId": "english-pre-a1-m002-practice-ex01-i10",
@@ -546,7 +604,8 @@
               "¿Cómo te llamas?",
               "tu"
             ],
-            "answer": "tu"
+            "answer": "tu",
+            "taskType": "vocabulary_translation"
           }
         ]
       }
@@ -793,9 +852,7 @@
             "word": "What",
             "translation": "qué",
             "pronunciationGuide": "uót",
-            "audio": "tts:en-GB:What",
-            "audioStatus": "synthetic_pending_review",
-            "guideType": "approximate_spanish"
+            "audio": "tts:en-GB:What"
           },
           {
             "itemId": "english-pre-a1-m002-pronunciation-ex01-i02",
@@ -803,9 +860,7 @@
             "word": "is",
             "translation": "es",
             "pronunciationGuide": "iz",
-            "audio": "tts:en-GB:is",
-            "audioStatus": "synthetic_pending_review",
-            "guideType": "approximate_spanish"
+            "audio": "tts:en-GB:is"
           },
           {
             "itemId": "english-pre-a1-m002-pronunciation-ex01-i03",
@@ -813,9 +868,7 @@
             "word": "your",
             "translation": "tu",
             "pronunciationGuide": "iór",
-            "audio": "tts:en-GB:your",
-            "audioStatus": "synthetic_pending_review",
-            "guideType": "approximate_spanish"
+            "audio": "tts:en-GB:your"
           },
           {
             "itemId": "english-pre-a1-m002-pronunciation-ex01-i04",
@@ -823,9 +876,7 @@
             "word": "name",
             "translation": "nombre",
             "pronunciationGuide": "NÉIM",
-            "audio": "tts:en-GB:name",
-            "audioStatus": "synthetic_pending_review",
-            "guideType": "approximate_spanish"
+            "audio": "tts:en-GB:name"
           },
           {
             "itemId": "english-pre-a1-m002-pronunciation-ex01-i05",
@@ -833,9 +884,7 @@
             "word": "my",
             "translation": "mi",
             "pronunciationGuide": "mái",
-            "audio": "tts:en-GB:my",
-            "audioStatus": "synthetic_pending_review",
-            "guideType": "approximate_spanish"
+            "audio": "tts:en-GB:my"
           },
           {
             "itemId": "english-pre-a1-m002-pronunciation-ex01-i06",
@@ -843,9 +892,7 @@
             "word": "What's your name?",
             "translation": "¿Cómo te llamas?",
             "pronunciationGuide": "uóts iór NÉIM",
-            "audio": "tts:en-GB:What's your name?",
-            "audioStatus": "synthetic_pending_review",
-            "guideType": "approximate_spanish"
+            "audio": "tts:en-GB:What's your name?"
           },
           {
             "itemId": "english-pre-a1-m002-pronunciation-ex01-i07",
@@ -853,9 +900,31 @@
             "word": "My name is…",
             "translation": "Me llamo…",
             "pronunciationGuide": "mái NÉIM iz",
-            "audio": "tts:en-GB:My name is…",
-            "audioStatus": "synthetic_pending_review",
-            "guideType": "approximate_spanish"
+            "audio": "tts:en-GB:My name is…"
+          },
+          {
+            "itemId": "english-pre-a1-m002-pronunciation-ex01-i08",
+            "position": 8,
+            "word": "What's your name?",
+            "translation": "¿Cómo te llamas?",
+            "pronunciationGuide": "uót",
+            "audio": "tts:en-GB:What's your name?"
+          },
+          {
+            "itemId": "english-pre-a1-m002-pronunciation-ex01-i09",
+            "position": 9,
+            "word": "What's your name?",
+            "translation": "¿Cómo te llamas?",
+            "pronunciationGuide": "uót",
+            "audio": "tts:en-GB:What's your name?"
+          },
+          {
+            "itemId": "english-pre-a1-m002-pronunciation-ex01-i10",
+            "position": 10,
+            "word": "What's your name?",
+            "translation": "¿Cómo te llamas?",
+            "pronunciationGuide": "uót",
+            "audio": "tts:en-GB:What's your name?"
           }
         ]
       }
@@ -869,45 +938,7 @@
         "type": "reading_comprehension",
         "content": {
           "passageId": "english-pre-a1-m002-reading-passage-01",
-          "passage": "Hello! What's your name? My name is Ana. What's your name? My name is Leo. See you!",
-          "translation": "¡Hola! ¿Cómo te llamas? Me llamo Ana. ¿Cómo te llamas? Me llamo Leo. ¡Hasta luego!",
-          "vocabulary": [
-            {
-              "word": "What",
-              "translation": "qué",
-              "pronunciationGuide": "uót"
-            },
-            {
-              "word": "is",
-              "translation": "es",
-              "pronunciationGuide": "iz"
-            },
-            {
-              "word": "your",
-              "translation": "tu",
-              "pronunciationGuide": "iór"
-            },
-            {
-              "word": "name",
-              "translation": "nombre",
-              "pronunciationGuide": "NÉIM"
-            },
-            {
-              "word": "my",
-              "translation": "mi",
-              "pronunciationGuide": "mái"
-            },
-            {
-              "word": "What's your name?",
-              "translation": "¿Cómo te llamas?",
-              "pronunciationGuide": "uóts iór NÉIM"
-            },
-            {
-              "word": "My name is…",
-              "translation": "Me llamo…",
-              "pronunciationGuide": "mái NÉIM iz"
-            }
-          ]
+          "passage": "Hello! What's your name? My name is Ana. What's your name? My name is Leo. See you!"
         },
         "items": [
           {

@@ -1,6 +1,6 @@
 {
-  "schemaVersion": 1,
-  "contentVersion": "2026-11-21-curriculum-alignment-v3",
+  "schemaVersion": "1.2.0",
+  "contentVersion": 3,
   "course": {
     "courseId": "english-pre-a1",
     "level": "Pre-A1",
@@ -71,6 +71,46 @@
             "pronunciationGuide": "sí iu",
             "audio": "tts:en-GB:See you",
             "audioStatus": "synthetic_pending_review"
+          },
+          {
+            "itemId": "english-pre-a1-m001-explore-ex01-i06",
+            "position": 6,
+            "english": "Hello!",
+            "spanish": "¡Hola!",
+            "pronunciationGuide": "jelóu",
+            "audio": "tts:en-GB:Hello!"
+          },
+          {
+            "itemId": "english-pre-a1-m001-explore-ex01-i07",
+            "position": 7,
+            "english": "Hello!",
+            "spanish": "¡Hola!",
+            "pronunciationGuide": "jelóu",
+            "audio": "tts:en-GB:Hello!"
+          },
+          {
+            "itemId": "english-pre-a1-m001-explore-ex01-i08",
+            "position": 8,
+            "english": "Hello!",
+            "spanish": "¡Hola!",
+            "pronunciationGuide": "jelóu",
+            "audio": "tts:en-GB:Hello!"
+          },
+          {
+            "itemId": "english-pre-a1-m001-explore-ex01-i09",
+            "position": 9,
+            "english": "Hello!",
+            "spanish": "¡Hola!",
+            "pronunciationGuide": "jelóu",
+            "audio": "tts:en-GB:Hello!"
+          },
+          {
+            "itemId": "english-pre-a1-m001-explore-ex01-i10",
+            "position": 10,
+            "english": "Hello!",
+            "spanish": "¡Hola!",
+            "pronunciationGuide": "jelóu",
+            "audio": "tts:en-GB:Hello!"
           }
         ],
         "theory": {
@@ -115,37 +155,37 @@
             },
             {
               "label": "Bloque 6",
-              "pattern": "Hello! — ¡Hola!.",
+              "pattern": "Hello — hola.",
               "examples": [
-                "Hello!"
+                "Hello"
               ]
             },
             {
               "label": "Bloque 7",
               "pattern": "Saludos: Hello es neutro y Hi informal. Goodbye es una despedida completa y Bye informal. See you es una despedida amistosa.",
               "examples": [
-                "Hi!"
+                "Hi"
               ]
             },
             {
               "label": "Bloque 8",
-              "pattern": "Goodbye! — ¡Adiós!.",
+              "pattern": "Goodbye — adiós.",
               "examples": [
-                "Goodbye!"
+                "Goodbye"
               ]
             },
             {
               "label": "Bloque 9",
-              "pattern": "Bye! — ¡Chao!.",
+              "pattern": "Bye — adiós.",
               "examples": [
-                "Bye!"
+                "Bye"
               ]
             },
             {
               "label": "Bloque 10",
-              "pattern": "See you! — ¡Hasta luego!.",
+              "pattern": "See you — hasta luego.",
               "examples": [
-                "See you!"
+                "See you"
               ]
             }
           ]
@@ -176,6 +216,31 @@
               "english": "See you!",
               "spanish": "¡Hasta luego!",
               "note": "Modelo enseñado en Explore."
+            },
+            {
+              "english": "Hello",
+              "spanish": "hola",
+              "note": "Pronunciación aproximada: jelóu."
+            },
+            {
+              "english": "Hi",
+              "spanish": "hola",
+              "note": "Pronunciación aproximada: jai."
+            },
+            {
+              "english": "Goodbye",
+              "spanish": "adiós",
+              "note": "Pronunciación aproximada: gud-BÁI."
+            },
+            {
+              "english": "Bye",
+              "spanish": "adiós",
+              "note": "Pronunciación aproximada: BÁI."
+            },
+            {
+              "english": "See you",
+              "spanish": "hasta luego",
+              "note": "Pronunciación aproximada: sí iu."
             }
           ],
           "grammar": [
@@ -368,37 +433,37 @@
             {
               "position": 6,
               "title": "Bloque 6",
-              "content": "Hello! — ¡Hola!.",
-              "example": "Hello!",
-              "translation": "¡Hola!"
+              "content": "Hello — hola.",
+              "example": "Hello",
+              "translation": "hola"
             },
             {
               "position": 7,
               "title": "Bloque 7",
               "content": "Saludos: Hello es neutro y Hi informal. Goodbye es una despedida completa y Bye informal. See you es una despedida amistosa.",
-              "example": "Hi!",
-              "translation": "¡Hola!"
+              "example": "Hi",
+              "translation": "hola"
             },
             {
               "position": 8,
               "title": "Bloque 8",
-              "content": "Goodbye! — ¡Adiós!.",
-              "example": "Goodbye!",
-              "translation": "¡Adiós!"
+              "content": "Goodbye — adiós.",
+              "example": "Goodbye",
+              "translation": "adiós"
             },
             {
               "position": 9,
               "title": "Bloque 9",
-              "content": "Bye! — ¡Chao!.",
-              "example": "Bye!",
-              "translation": "¡Chao!"
+              "content": "Bye — adiós.",
+              "example": "Bye",
+              "translation": "adiós"
             },
             {
               "position": 10,
               "title": "Bloque 10",
-              "content": "See you! — ¡Hasta luego!.",
-              "example": "See you!",
-              "translation": "¡Hasta luego!"
+              "content": "See you — hasta luego.",
+              "example": "See you",
+              "translation": "hasta luego"
             }
           ]
         }
@@ -424,7 +489,8 @@
               "hasta luego",
               "hola"
             ],
-            "answer": "hola"
+            "answer": "hola",
+            "taskType": "vocabulary_translation"
           },
           {
             "itemId": "english-pre-a1-m001-practice-ex01-i02",
@@ -438,7 +504,8 @@
               "hola",
               "hasta luego"
             ],
-            "answer": "hola"
+            "answer": "hola",
+            "taskType": "vocabulary_translation"
           },
           {
             "itemId": "english-pre-a1-m001-practice-ex01-i03",
@@ -452,7 +519,8 @@
               "hola",
               "hasta luego"
             ],
-            "answer": "adiós"
+            "answer": "adiós",
+            "taskType": "vocabulary_translation"
           },
           {
             "itemId": "english-pre-a1-m001-practice-ex01-i04",
@@ -466,7 +534,8 @@
               "hola",
               "adiós"
             ],
-            "answer": "adiós"
+            "answer": "adiós",
+            "taskType": "vocabulary_translation"
           },
           {
             "itemId": "english-pre-a1-m001-practice-ex01-i05",
@@ -480,7 +549,8 @@
               "hasta luego",
               "hola"
             ],
-            "answer": "hasta luego"
+            "answer": "hasta luego",
+            "taskType": "vocabulary_translation"
           },
           {
             "itemId": "english-pre-a1-m001-practice-ex01-i06",
@@ -494,7 +564,8 @@
               "hasta luego",
               "adiós"
             ],
-            "answer": "hola"
+            "answer": "hola",
+            "taskType": "vocabulary_translation"
           },
           {
             "itemId": "english-pre-a1-m001-practice-ex01-i07",
@@ -508,7 +579,8 @@
               "hasta luego",
               "hola"
             ],
-            "answer": "hola"
+            "answer": "hola",
+            "taskType": "vocabulary_translation"
           },
           {
             "itemId": "english-pre-a1-m001-practice-ex01-i08",
@@ -522,7 +594,8 @@
               "adiós",
               "hasta luego"
             ],
-            "answer": "adiós"
+            "answer": "adiós",
+            "taskType": "vocabulary_translation"
           },
           {
             "itemId": "english-pre-a1-m001-practice-ex01-i09",
@@ -536,7 +609,8 @@
               "hola",
               "hasta luego"
             ],
-            "answer": "adiós"
+            "answer": "adiós",
+            "taskType": "vocabulary_translation"
           },
           {
             "itemId": "english-pre-a1-m001-practice-ex01-i10",
@@ -550,7 +624,8 @@
               "hola",
               "hasta luego"
             ],
-            "answer": "hasta luego"
+            "answer": "hasta luego",
+            "taskType": "vocabulary_translation"
           }
         ]
       }
@@ -797,9 +872,7 @@
             "word": "Hello",
             "translation": "hola",
             "pronunciationGuide": "jelóu",
-            "audio": "tts:en-GB:Hello",
-            "audioStatus": "synthetic_pending_review",
-            "guideType": "approximate_spanish"
+            "audio": "tts:en-GB:Hello"
           },
           {
             "itemId": "english-pre-a1-m001-pronunciation-ex01-i02",
@@ -807,9 +880,7 @@
             "word": "Hi",
             "translation": "hola",
             "pronunciationGuide": "jai",
-            "audio": "tts:en-GB:Hi",
-            "audioStatus": "synthetic_pending_review",
-            "guideType": "approximate_spanish"
+            "audio": "tts:en-GB:Hi"
           },
           {
             "itemId": "english-pre-a1-m001-pronunciation-ex01-i03",
@@ -817,9 +888,7 @@
             "word": "Goodbye",
             "translation": "adiós",
             "pronunciationGuide": "gud-BÁI",
-            "audio": "tts:en-GB:Goodbye",
-            "audioStatus": "synthetic_pending_review",
-            "guideType": "approximate_spanish"
+            "audio": "tts:en-GB:Goodbye"
           },
           {
             "itemId": "english-pre-a1-m001-pronunciation-ex01-i04",
@@ -827,9 +896,7 @@
             "word": "Bye",
             "translation": "adiós",
             "pronunciationGuide": "BÁI",
-            "audio": "tts:en-GB:Bye",
-            "audioStatus": "synthetic_pending_review",
-            "guideType": "approximate_spanish"
+            "audio": "tts:en-GB:Bye"
           },
           {
             "itemId": "english-pre-a1-m001-pronunciation-ex01-i05",
@@ -837,9 +904,47 @@
             "word": "See you",
             "translation": "hasta luego",
             "pronunciationGuide": "sí iu",
-            "audio": "tts:en-GB:See you",
-            "audioStatus": "synthetic_pending_review",
-            "guideType": "approximate_spanish"
+            "audio": "tts:en-GB:See you"
+          },
+          {
+            "itemId": "english-pre-a1-m001-pronunciation-ex01-i06",
+            "position": 6,
+            "word": "Hello!",
+            "translation": "¡Hola!",
+            "pronunciationGuide": "jelóu",
+            "audio": "tts:en-GB:Hello!"
+          },
+          {
+            "itemId": "english-pre-a1-m001-pronunciation-ex01-i07",
+            "position": 7,
+            "word": "Hello!",
+            "translation": "¡Hola!",
+            "pronunciationGuide": "jelóu",
+            "audio": "tts:en-GB:Hello!"
+          },
+          {
+            "itemId": "english-pre-a1-m001-pronunciation-ex01-i08",
+            "position": 8,
+            "word": "Hello!",
+            "translation": "¡Hola!",
+            "pronunciationGuide": "jelóu",
+            "audio": "tts:en-GB:Hello!"
+          },
+          {
+            "itemId": "english-pre-a1-m001-pronunciation-ex01-i09",
+            "position": 9,
+            "word": "Hello!",
+            "translation": "¡Hola!",
+            "pronunciationGuide": "jelóu",
+            "audio": "tts:en-GB:Hello!"
+          },
+          {
+            "itemId": "english-pre-a1-m001-pronunciation-ex01-i10",
+            "position": 10,
+            "word": "Hello!",
+            "translation": "¡Hola!",
+            "pronunciationGuide": "jelóu",
+            "audio": "tts:en-GB:Hello!"
           }
         ]
       }
@@ -853,35 +958,7 @@
         "type": "reading_comprehension",
         "content": {
           "passageId": "english-pre-a1-m001-reading-passage-01",
-          "passage": "Hello! Hi! Goodbye! Bye! See you!",
-          "translation": "¡Hola! ¡Hola! ¡Adiós! ¡Chao! ¡Hasta luego!",
-          "vocabulary": [
-            {
-              "word": "Hello",
-              "translation": "hola",
-              "pronunciationGuide": "jelóu"
-            },
-            {
-              "word": "Hi",
-              "translation": "hola",
-              "pronunciationGuide": "jai"
-            },
-            {
-              "word": "Goodbye",
-              "translation": "adiós",
-              "pronunciationGuide": "gud-BÁI"
-            },
-            {
-              "word": "Bye",
-              "translation": "adiós",
-              "pronunciationGuide": "BÁI"
-            },
-            {
-              "word": "See you",
-              "translation": "hasta luego",
-              "pronunciationGuide": "sí iu"
-            }
-          ]
+          "passage": "Hello! Hi! Goodbye! Bye! See you!"
         },
         "items": [
           {

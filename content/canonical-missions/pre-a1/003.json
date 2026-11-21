@@ -1,6 +1,6 @@
 {
-  "schemaVersion": 1,
-  "contentVersion": "2026-11-21-curriculum-alignment-v3",
+  "schemaVersion": "1.2.0",
+  "contentVersion": 3,
   "course": {
     "courseId": "english-pre-a1",
     "level": "Pre-A1",
@@ -115,51 +115,6 @@
             "spanish": "mal",
             "pronunciationGuide": "bad",
             "audio": "tts:en-GB:bad",
-            "audioStatus": "synthetic_pending_review"
-          },
-          {
-            "itemId": "english-pre-a1-m003-explore-ex01-i11",
-            "position": 11,
-            "english": "and",
-            "spanish": "y",
-            "pronunciationGuide": "and",
-            "audio": "tts:en-GB:and",
-            "audioStatus": "synthetic_pending_review"
-          },
-          {
-            "itemId": "english-pre-a1-m003-explore-ex01-i12",
-            "position": 12,
-            "english": "happy",
-            "spanish": "feliz",
-            "pronunciationGuide": "JÁ-pi",
-            "audio": "tts:en-GB:happy",
-            "audioStatus": "synthetic_pending_review"
-          },
-          {
-            "itemId": "english-pre-a1-m003-explore-ex01-i13",
-            "position": 13,
-            "english": "sad",
-            "spanish": "triste",
-            "pronunciationGuide": "sad",
-            "audio": "tts:en-GB:sad",
-            "audioStatus": "synthetic_pending_review"
-          },
-          {
-            "itemId": "english-pre-a1-m003-explore-ex01-i14",
-            "position": 14,
-            "english": "tired",
-            "spanish": "cansado",
-            "pronunciationGuide": "TÁI-erd",
-            "audio": "tts:en-GB:tired",
-            "audioStatus": "synthetic_pending_review"
-          },
-          {
-            "itemId": "english-pre-a1-m003-explore-ex01-i15",
-            "position": 15,
-            "english": "great",
-            "spanish": "genial",
-            "pronunciationGuide": "gréit",
-            "audio": "tts:en-GB:great",
             "audioStatus": "synthetic_pending_review"
           }
         ],
@@ -291,6 +246,56 @@
               "english": "I'm tired.",
               "spanish": "Estoy cansado/a.",
               "note": "Modelo enseñado en Explore."
+            },
+            {
+              "english": "How",
+              "spanish": "cómo",
+              "note": "Pronunciación aproximada: jáu."
+            },
+            {
+              "english": "are",
+              "spanish": "estás",
+              "note": "Pronunciación aproximada: ar."
+            },
+            {
+              "english": "you",
+              "spanish": "tú",
+              "note": "Pronunciación aproximada: iú."
+            },
+            {
+              "english": "fine",
+              "spanish": "bien",
+              "note": "Pronunciación aproximada: fáin."
+            },
+            {
+              "english": "good",
+              "spanish": "bien",
+              "note": "Pronunciación aproximada: gud."
+            },
+            {
+              "english": "very",
+              "spanish": "muy",
+              "note": "Pronunciación aproximada: VÉ-ri."
+            },
+            {
+              "english": "well",
+              "spanish": "bien",
+              "note": "Pronunciación aproximada: uél."
+            },
+            {
+              "english": "OK",
+              "spanish": "bien/de acuerdo",
+              "note": "Pronunciación aproximada: óu-KÉI."
+            },
+            {
+              "english": "not",
+              "spanish": "no",
+              "note": "Pronunciación aproximada: not."
+            },
+            {
+              "english": "bad",
+              "spanish": "mal",
+              "note": "Pronunciación aproximada: bad."
             }
           ],
           "grammar": [
@@ -624,7 +629,8 @@
               "tú",
               "cómo"
             ],
-            "answer": "cómo"
+            "answer": "cómo",
+            "taskType": "vocabulary_translation"
           },
           {
             "itemId": "english-pre-a1-m003-practice-ex01-i02",
@@ -638,7 +644,8 @@
               "estás",
               "tú"
             ],
-            "answer": "estás"
+            "answer": "estás",
+            "taskType": "vocabulary_translation"
           },
           {
             "itemId": "english-pre-a1-m003-practice-ex01-i03",
@@ -652,7 +659,8 @@
               "bien",
               "muy"
             ],
-            "answer": "tú"
+            "answer": "tú",
+            "taskType": "vocabulary_translation"
           },
           {
             "itemId": "english-pre-a1-m003-practice-ex01-i04",
@@ -666,7 +674,8 @@
               "bien/de acuerdo",
               "bien"
             ],
-            "answer": "bien"
+            "answer": "bien",
+            "taskType": "vocabulary_translation"
           },
           {
             "itemId": "english-pre-a1-m003-practice-ex01-i05",
@@ -680,7 +689,8 @@
               "bien",
               "bien/de acuerdo"
             ],
-            "answer": "bien"
+            "answer": "bien",
+            "taskType": "vocabulary_translation"
           },
           {
             "itemId": "english-pre-a1-m003-practice-ex01-i06",
@@ -694,7 +704,8 @@
               "no",
               "mal"
             ],
-            "answer": "muy"
+            "answer": "muy",
+            "taskType": "vocabulary_translation"
           },
           {
             "itemId": "english-pre-a1-m003-practice-ex01-i07",
@@ -708,7 +719,8 @@
               "y",
               "bien"
             ],
-            "answer": "bien"
+            "answer": "bien",
+            "taskType": "vocabulary_translation"
           },
           {
             "itemId": "english-pre-a1-m003-practice-ex01-i08",
@@ -722,7 +734,8 @@
               "bien/de acuerdo",
               "y"
             ],
-            "answer": "bien/de acuerdo"
+            "answer": "bien/de acuerdo",
+            "taskType": "vocabulary_translation"
           },
           {
             "itemId": "english-pre-a1-m003-practice-ex01-i09",
@@ -736,7 +749,8 @@
               "feliz",
               "triste"
             ],
-            "answer": "no"
+            "answer": "no",
+            "taskType": "vocabulary_translation"
           },
           {
             "itemId": "english-pre-a1-m003-practice-ex01-i10",
@@ -750,7 +764,8 @@
               "cansado",
               "mal"
             ],
-            "answer": "mal"
+            "answer": "mal",
+            "taskType": "vocabulary_translation"
           }
         ]
       }
@@ -997,9 +1012,7 @@
             "word": "How",
             "translation": "cómo",
             "pronunciationGuide": "jáu",
-            "audio": "tts:en-GB:How",
-            "audioStatus": "synthetic_pending_review",
-            "guideType": "approximate_spanish"
+            "audio": "tts:en-GB:How"
           },
           {
             "itemId": "english-pre-a1-m003-pronunciation-ex01-i02",
@@ -1007,9 +1020,7 @@
             "word": "are",
             "translation": "estás",
             "pronunciationGuide": "ar",
-            "audio": "tts:en-GB:are",
-            "audioStatus": "synthetic_pending_review",
-            "guideType": "approximate_spanish"
+            "audio": "tts:en-GB:are"
           },
           {
             "itemId": "english-pre-a1-m003-pronunciation-ex01-i03",
@@ -1017,9 +1028,7 @@
             "word": "you",
             "translation": "tú",
             "pronunciationGuide": "iú",
-            "audio": "tts:en-GB:you",
-            "audioStatus": "synthetic_pending_review",
-            "guideType": "approximate_spanish"
+            "audio": "tts:en-GB:you"
           },
           {
             "itemId": "english-pre-a1-m003-pronunciation-ex01-i04",
@@ -1027,9 +1036,7 @@
             "word": "fine",
             "translation": "bien",
             "pronunciationGuide": "fáin",
-            "audio": "tts:en-GB:fine",
-            "audioStatus": "synthetic_pending_review",
-            "guideType": "approximate_spanish"
+            "audio": "tts:en-GB:fine"
           },
           {
             "itemId": "english-pre-a1-m003-pronunciation-ex01-i05",
@@ -1037,9 +1044,7 @@
             "word": "good",
             "translation": "bien",
             "pronunciationGuide": "gud",
-            "audio": "tts:en-GB:good",
-            "audioStatus": "synthetic_pending_review",
-            "guideType": "approximate_spanish"
+            "audio": "tts:en-GB:good"
           },
           {
             "itemId": "english-pre-a1-m003-pronunciation-ex01-i06",
@@ -1047,9 +1052,7 @@
             "word": "very",
             "translation": "muy",
             "pronunciationGuide": "VÉ-ri",
-            "audio": "tts:en-GB:very",
-            "audioStatus": "synthetic_pending_review",
-            "guideType": "approximate_spanish"
+            "audio": "tts:en-GB:very"
           },
           {
             "itemId": "english-pre-a1-m003-pronunciation-ex01-i07",
@@ -1057,9 +1060,7 @@
             "word": "well",
             "translation": "bien",
             "pronunciationGuide": "uél",
-            "audio": "tts:en-GB:well",
-            "audioStatus": "synthetic_pending_review",
-            "guideType": "approximate_spanish"
+            "audio": "tts:en-GB:well"
           },
           {
             "itemId": "english-pre-a1-m003-pronunciation-ex01-i08",
@@ -1067,9 +1068,7 @@
             "word": "OK",
             "translation": "bien/de acuerdo",
             "pronunciationGuide": "óu-KÉI",
-            "audio": "tts:en-GB:OK",
-            "audioStatus": "synthetic_pending_review",
-            "guideType": "approximate_spanish"
+            "audio": "tts:en-GB:OK"
           },
           {
             "itemId": "english-pre-a1-m003-pronunciation-ex01-i09",
@@ -1077,9 +1076,7 @@
             "word": "not",
             "translation": "no",
             "pronunciationGuide": "not",
-            "audio": "tts:en-GB:not",
-            "audioStatus": "synthetic_pending_review",
-            "guideType": "approximate_spanish"
+            "audio": "tts:en-GB:not"
           },
           {
             "itemId": "english-pre-a1-m003-pronunciation-ex01-i10",
@@ -1087,59 +1084,7 @@
             "word": "bad",
             "translation": "mal",
             "pronunciationGuide": "bad",
-            "audio": "tts:en-GB:bad",
-            "audioStatus": "synthetic_pending_review",
-            "guideType": "approximate_spanish"
-          },
-          {
-            "itemId": "english-pre-a1-m003-pronunciation-ex01-i11",
-            "position": 11,
-            "word": "and",
-            "translation": "y",
-            "pronunciationGuide": "and",
-            "audio": "tts:en-GB:and",
-            "audioStatus": "synthetic_pending_review",
-            "guideType": "approximate_spanish"
-          },
-          {
-            "itemId": "english-pre-a1-m003-pronunciation-ex01-i12",
-            "position": 12,
-            "word": "happy",
-            "translation": "feliz",
-            "pronunciationGuide": "JÁ-pi",
-            "audio": "tts:en-GB:happy",
-            "audioStatus": "synthetic_pending_review",
-            "guideType": "approximate_spanish"
-          },
-          {
-            "itemId": "english-pre-a1-m003-pronunciation-ex01-i13",
-            "position": 13,
-            "word": "sad",
-            "translation": "triste",
-            "pronunciationGuide": "sad",
-            "audio": "tts:en-GB:sad",
-            "audioStatus": "synthetic_pending_review",
-            "guideType": "approximate_spanish"
-          },
-          {
-            "itemId": "english-pre-a1-m003-pronunciation-ex01-i14",
-            "position": 14,
-            "word": "tired",
-            "translation": "cansado",
-            "pronunciationGuide": "TÁI-erd",
-            "audio": "tts:en-GB:tired",
-            "audioStatus": "synthetic_pending_review",
-            "guideType": "approximate_spanish"
-          },
-          {
-            "itemId": "english-pre-a1-m003-pronunciation-ex01-i15",
-            "position": 15,
-            "word": "great",
-            "translation": "genial",
-            "pronunciationGuide": "gréit",
-            "audio": "tts:en-GB:great",
-            "audioStatus": "synthetic_pending_review",
-            "guideType": "approximate_spanish"
+            "audio": "tts:en-GB:bad"
           }
         ]
       }
@@ -1153,85 +1098,7 @@
         "type": "reading_comprehension",
         "content": {
           "passageId": "english-pre-a1-m003-reading-passage-01",
-          "passage": "Hello! How are you? I'm fine. And you? I'm good. I'm happy.",
-          "translation": "¡Hola! ¿Cómo estás? Estoy bien. ¿Y tú? Estoy bien. Estoy feliz. Estoy cansado/a.",
-          "vocabulary": [
-            {
-              "word": "How",
-              "translation": "cómo",
-              "pronunciationGuide": "jáu"
-            },
-            {
-              "word": "are",
-              "translation": "estás",
-              "pronunciationGuide": "ar"
-            },
-            {
-              "word": "you",
-              "translation": "tú",
-              "pronunciationGuide": "iú"
-            },
-            {
-              "word": "fine",
-              "translation": "bien",
-              "pronunciationGuide": "fáin"
-            },
-            {
-              "word": "good",
-              "translation": "bien",
-              "pronunciationGuide": "gud"
-            },
-            {
-              "word": "very",
-              "translation": "muy",
-              "pronunciationGuide": "VÉ-ri"
-            },
-            {
-              "word": "well",
-              "translation": "bien",
-              "pronunciationGuide": "uél"
-            },
-            {
-              "word": "OK",
-              "translation": "bien/de acuerdo",
-              "pronunciationGuide": "óu-KÉI"
-            },
-            {
-              "word": "not",
-              "translation": "no",
-              "pronunciationGuide": "not"
-            },
-            {
-              "word": "bad",
-              "translation": "mal",
-              "pronunciationGuide": "bad"
-            },
-            {
-              "word": "and",
-              "translation": "y",
-              "pronunciationGuide": "and"
-            },
-            {
-              "word": "happy",
-              "translation": "feliz",
-              "pronunciationGuide": "JÁ-pi"
-            },
-            {
-              "word": "sad",
-              "translation": "triste",
-              "pronunciationGuide": "sad"
-            },
-            {
-              "word": "tired",
-              "translation": "cansado",
-              "pronunciationGuide": "TÁI-erd"
-            },
-            {
-              "word": "great",
-              "translation": "genial",
-              "pronunciationGuide": "gréit"
-            }
-          ]
+          "passage": "Hello! How are you? I'm fine. And you? I'm good. I'm happy."
         },
         "items": [
           {

@@ -1,6 +1,6 @@
 {
-  "schemaVersion": 1,
-  "contentVersion": "2026-11-21-curriculum-alignment-v3",
+  "schemaVersion": "1.2.0",
+  "contentVersion": 3,
   "course": {
     "courseId": "english-pre-a1",
     "level": "Pre-A1",
@@ -116,96 +116,6 @@
             "pronunciationGuide": "STIÚ-dent",
             "audio": "tts:en-GB:student",
             "audioStatus": "synthetic_pending_review"
-          },
-          {
-            "itemId": "english-pre-a1-m010-explore-ex01-i11",
-            "position": 11,
-            "english": "teacher",
-            "spanish": "profesor",
-            "pronunciationGuide": "TÍ-cha",
-            "audio": "tts:en-GB:teacher",
-            "audioStatus": "synthetic_pending_review"
-          },
-          {
-            "itemId": "english-pre-a1-m010-explore-ex01-i12",
-            "position": 12,
-            "english": "boy",
-            "spanish": "niño",
-            "pronunciationGuide": "bói",
-            "audio": "tts:en-GB:boy",
-            "audioStatus": "synthetic_pending_review"
-          },
-          {
-            "itemId": "english-pre-a1-m010-explore-ex01-i13",
-            "position": 13,
-            "english": "girl",
-            "spanish": "niña",
-            "pronunciationGuide": "guérl",
-            "audio": "tts:en-GB:girl",
-            "audioStatus": "synthetic_pending_review"
-          },
-          {
-            "itemId": "english-pre-a1-m010-explore-ex01-i14",
-            "position": 14,
-            "english": "name",
-            "spanish": "nombre",
-            "pronunciationGuide": "NÉIM",
-            "audio": "tts:en-GB:name",
-            "audioStatus": "synthetic_pending_review"
-          },
-          {
-            "itemId": "english-pre-a1-m010-explore-ex01-i15",
-            "position": 15,
-            "english": "my",
-            "spanish": "mi",
-            "pronunciationGuide": "mái",
-            "audio": "tts:en-GB:my",
-            "audioStatus": "synthetic_pending_review"
-          },
-          {
-            "itemId": "english-pre-a1-m010-explore-ex01-i16",
-            "position": 16,
-            "english": "your",
-            "spanish": "tu",
-            "pronunciationGuide": "iór",
-            "audio": "tts:en-GB:your",
-            "audioStatus": "synthetic_pending_review"
-          },
-          {
-            "itemId": "english-pre-a1-m010-explore-ex01-i17",
-            "position": 17,
-            "english": "what",
-            "spanish": "qué",
-            "pronunciationGuide": "uót",
-            "audio": "tts:en-GB:what",
-            "audioStatus": "synthetic_pending_review"
-          },
-          {
-            "itemId": "english-pre-a1-m010-explore-ex01-i18",
-            "position": 18,
-            "english": "is",
-            "spanish": "es",
-            "pronunciationGuide": "iz",
-            "audio": "tts:en-GB:is",
-            "audioStatus": "synthetic_pending_review"
-          },
-          {
-            "itemId": "english-pre-a1-m010-explore-ex01-i19",
-            "position": 19,
-            "english": "I'm",
-            "spanish": "soy/estoy",
-            "pronunciationGuide": "áim",
-            "audio": "tts:en-GB:I'm",
-            "audioStatus": "synthetic_pending_review"
-          },
-          {
-            "itemId": "english-pre-a1-m010-explore-ex01-i20",
-            "position": 20,
-            "english": "you're",
-            "spanish": "eres/estás",
-            "pronunciationGuide": "ior",
-            "audio": "tts:en-GB:you're",
-            "audioStatus": "synthetic_pending_review"
           }
         ],
         "theory": {
@@ -271,7 +181,7 @@
             },
             {
               "label": "Bloque 9",
-              "pattern": "You're my friend. — Eres mi amigo/a..",
+              "pattern": "You're my friend. — Eres mi amigo/a.",
               "examples": [
                 "You're my friend."
               ]
@@ -329,13 +239,63 @@
             },
             {
               "english": "You're my friend.",
-              "spanish": "Eres mi amigo/a.",
+              "spanish": "Eres mi amigo/a",
               "note": "Modelo enseñado en Explore."
             },
             {
               "english": "Goodbye!",
               "spanish": "¡Adiós!",
               "note": "Modelo enseñado en Explore."
+            },
+            {
+              "english": "nice",
+              "spanish": "agradable",
+              "note": "Pronunciación aproximada: náis."
+            },
+            {
+              "english": "to",
+              "spanish": "a/para",
+              "note": "Pronunciación aproximada: tú."
+            },
+            {
+              "english": "meet",
+              "spanish": "conocer",
+              "note": "Pronunciación aproximada: míit."
+            },
+            {
+              "english": "you",
+              "spanish": "tú",
+              "note": "Pronunciación aproximada: iú."
+            },
+            {
+              "english": "too",
+              "spanish": "también",
+              "note": "Pronunciación aproximada: tú."
+            },
+            {
+              "english": "pleased",
+              "spanish": "encantado",
+              "note": "Pronunciación aproximada: plíizd."
+            },
+            {
+              "english": "This is…",
+              "spanish": "Este/a es…",
+              "note": "Pronunciación aproximada: dhis iz."
+            },
+            {
+              "english": "person",
+              "spanish": "persona",
+              "note": "Pronunciación aproximada: PÉR-son."
+            },
+            {
+              "english": "friend",
+              "spanish": "amigo",
+              "note": "Pronunciación aproximada: frend."
+            },
+            {
+              "english": "student",
+              "spanish": "estudiante",
+              "note": "Pronunciación aproximada: STIÚ-dent."
             }
           ],
           "grammar": [
@@ -381,7 +341,7 @@
             },
             {
               "english": "You're my friend.",
-              "spanish": "Eres mi amigo/a.",
+              "spanish": "Eres mi amigo/a",
               "note": "Nice to meet you expresa el gusto de conocer a alguien. Nice to meet you too responde. Pleased to meet you es algo más formal. This is… presenta a una persona. La misión integra saludos, nombres, cortesía e I am/I'm y you are/you're."
             },
             {
@@ -439,7 +399,7 @@
             },
             {
               "english": "You're my friend.",
-              "spanish": "Eres mi amigo/a.",
+              "spanish": "Eres mi amigo/a",
               "note": "Modelo enseñado en Explore."
             },
             {
@@ -507,7 +467,7 @@
             },
             {
               "english": "You're my friend.",
-              "spanish": "Eres mi amigo/a.",
+              "spanish": "Eres mi amigo/a",
               "note": "Modelo enseñado en Explore.",
               "prompt": "Practica esta expresión.",
               "promptSpanish": "Di la expresión en voz alta."
@@ -563,7 +523,7 @@
             },
             {
               "english": "You're my friend.",
-              "spanish": "Eres mi amigo/a.",
+              "spanish": "Eres mi amigo/a",
               "note": "Modelo enseñado en Explore."
             },
             {
@@ -634,9 +594,9 @@
             {
               "position": 9,
               "title": "Bloque 9",
-              "content": "You're my friend. — Eres mi amigo/a..",
+              "content": "You're my friend. — Eres mi amigo/a.",
               "example": "You're my friend.",
-              "translation": "Eres mi amigo/a."
+              "translation": "Eres mi amigo/a"
             },
             {
               "position": 10,
@@ -669,7 +629,8 @@
               "conocer",
               "agradable"
             ],
-            "answer": "agradable"
+            "answer": "agradable",
+            "taskType": "vocabulary_translation"
           },
           {
             "itemId": "english-pre-a1-m010-practice-ex01-i02",
@@ -683,7 +644,8 @@
               "a/para",
               "conocer"
             ],
-            "answer": "a/para"
+            "answer": "a/para",
+            "taskType": "vocabulary_translation"
           },
           {
             "itemId": "english-pre-a1-m010-practice-ex01-i03",
@@ -697,7 +659,8 @@
               "tú",
               "también"
             ],
-            "answer": "conocer"
+            "answer": "conocer",
+            "taskType": "vocabulary_translation"
           },
           {
             "itemId": "english-pre-a1-m010-practice-ex01-i04",
@@ -711,7 +674,8 @@
               "encantado",
               "tú"
             ],
-            "answer": "tú"
+            "answer": "tú",
+            "taskType": "vocabulary_translation"
           },
           {
             "itemId": "english-pre-a1-m010-practice-ex01-i05",
@@ -725,7 +689,8 @@
               "también",
               "encantado"
             ],
-            "answer": "también"
+            "answer": "también",
+            "taskType": "vocabulary_translation"
           },
           {
             "itemId": "english-pre-a1-m010-practice-ex01-i06",
@@ -739,7 +704,8 @@
               "Este/a es…",
               "persona"
             ],
-            "answer": "encantado"
+            "answer": "encantado",
+            "taskType": "vocabulary_translation"
           },
           {
             "itemId": "english-pre-a1-m010-practice-ex01-i07",
@@ -753,7 +719,8 @@
               "amigo",
               "Este/a es…"
             ],
-            "answer": "Este/a es…"
+            "answer": "Este/a es…",
+            "taskType": "vocabulary_translation"
           },
           {
             "itemId": "english-pre-a1-m010-practice-ex01-i08",
@@ -767,7 +734,8 @@
               "persona",
               "amigo"
             ],
-            "answer": "persona"
+            "answer": "persona",
+            "taskType": "vocabulary_translation"
           },
           {
             "itemId": "english-pre-a1-m010-practice-ex01-i09",
@@ -781,7 +749,8 @@
               "estudiante",
               "profesor"
             ],
-            "answer": "amigo"
+            "answer": "amigo",
+            "taskType": "vocabulary_translation"
           },
           {
             "itemId": "english-pre-a1-m010-practice-ex01-i10",
@@ -795,7 +764,8 @@
               "niño",
               "estudiante"
             ],
-            "answer": "estudiante"
+            "answer": "estudiante",
+            "taskType": "vocabulary_translation"
           }
         ]
       }
@@ -1042,9 +1012,7 @@
             "word": "nice",
             "translation": "agradable",
             "pronunciationGuide": "náis",
-            "audio": "tts:en-GB:nice",
-            "audioStatus": "synthetic_pending_review",
-            "guideType": "approximate_spanish"
+            "audio": "tts:en-GB:nice"
           },
           {
             "itemId": "english-pre-a1-m010-pronunciation-ex01-i02",
@@ -1052,9 +1020,7 @@
             "word": "to",
             "translation": "a/para",
             "pronunciationGuide": "tú",
-            "audio": "tts:en-GB:to",
-            "audioStatus": "synthetic_pending_review",
-            "guideType": "approximate_spanish"
+            "audio": "tts:en-GB:to"
           },
           {
             "itemId": "english-pre-a1-m010-pronunciation-ex01-i03",
@@ -1062,9 +1028,7 @@
             "word": "meet",
             "translation": "conocer",
             "pronunciationGuide": "míit",
-            "audio": "tts:en-GB:meet",
-            "audioStatus": "synthetic_pending_review",
-            "guideType": "approximate_spanish"
+            "audio": "tts:en-GB:meet"
           },
           {
             "itemId": "english-pre-a1-m010-pronunciation-ex01-i04",
@@ -1072,9 +1036,7 @@
             "word": "you",
             "translation": "tú",
             "pronunciationGuide": "iú",
-            "audio": "tts:en-GB:you",
-            "audioStatus": "synthetic_pending_review",
-            "guideType": "approximate_spanish"
+            "audio": "tts:en-GB:you"
           },
           {
             "itemId": "english-pre-a1-m010-pronunciation-ex01-i05",
@@ -1082,9 +1044,7 @@
             "word": "too",
             "translation": "también",
             "pronunciationGuide": "tú",
-            "audio": "tts:en-GB:too",
-            "audioStatus": "synthetic_pending_review",
-            "guideType": "approximate_spanish"
+            "audio": "tts:en-GB:too"
           },
           {
             "itemId": "english-pre-a1-m010-pronunciation-ex01-i06",
@@ -1092,9 +1052,7 @@
             "word": "pleased",
             "translation": "encantado",
             "pronunciationGuide": "plíizd",
-            "audio": "tts:en-GB:pleased",
-            "audioStatus": "synthetic_pending_review",
-            "guideType": "approximate_spanish"
+            "audio": "tts:en-GB:pleased"
           },
           {
             "itemId": "english-pre-a1-m010-pronunciation-ex01-i07",
@@ -1102,9 +1060,7 @@
             "word": "This is…",
             "translation": "Este/a es…",
             "pronunciationGuide": "dhis iz",
-            "audio": "tts:en-GB:This is…",
-            "audioStatus": "synthetic_pending_review",
-            "guideType": "approximate_spanish"
+            "audio": "tts:en-GB:This is…"
           },
           {
             "itemId": "english-pre-a1-m010-pronunciation-ex01-i08",
@@ -1112,9 +1068,7 @@
             "word": "person",
             "translation": "persona",
             "pronunciationGuide": "PÉR-son",
-            "audio": "tts:en-GB:person",
-            "audioStatus": "synthetic_pending_review",
-            "guideType": "approximate_spanish"
+            "audio": "tts:en-GB:person"
           },
           {
             "itemId": "english-pre-a1-m010-pronunciation-ex01-i09",
@@ -1122,9 +1076,7 @@
             "word": "friend",
             "translation": "amigo",
             "pronunciationGuide": "frend",
-            "audio": "tts:en-GB:friend",
-            "audioStatus": "synthetic_pending_review",
-            "guideType": "approximate_spanish"
+            "audio": "tts:en-GB:friend"
           },
           {
             "itemId": "english-pre-a1-m010-pronunciation-ex01-i10",
@@ -1132,89 +1084,7 @@
             "word": "student",
             "translation": "estudiante",
             "pronunciationGuide": "STIÚ-dent",
-            "audio": "tts:en-GB:student",
-            "audioStatus": "synthetic_pending_review",
-            "guideType": "approximate_spanish"
-          },
-          {
-            "itemId": "english-pre-a1-m010-pronunciation-ex01-i11",
-            "position": 11,
-            "word": "teacher",
-            "translation": "profesor",
-            "pronunciationGuide": "TÍ-cha",
-            "audio": "tts:en-GB:teacher",
-            "audioStatus": "synthetic_pending_review",
-            "guideType": "approximate_spanish"
-          },
-          {
-            "itemId": "english-pre-a1-m010-pronunciation-ex01-i12",
-            "position": 12,
-            "word": "boy",
-            "translation": "niño",
-            "pronunciationGuide": "bói",
-            "audio": "tts:en-GB:boy",
-            "audioStatus": "synthetic_pending_review",
-            "guideType": "approximate_spanish"
-          },
-          {
-            "itemId": "english-pre-a1-m010-pronunciation-ex01-i13",
-            "position": 13,
-            "word": "girl",
-            "translation": "niña",
-            "pronunciationGuide": "guérl",
-            "audio": "tts:en-GB:girl",
-            "audioStatus": "synthetic_pending_review",
-            "guideType": "approximate_spanish"
-          },
-          {
-            "itemId": "english-pre-a1-m010-pronunciation-ex01-i14",
-            "position": 14,
-            "word": "name",
-            "translation": "nombre",
-            "pronunciationGuide": "NÉIM",
-            "audio": "tts:en-GB:name",
-            "audioStatus": "synthetic_pending_review",
-            "guideType": "approximate_spanish"
-          },
-          {
-            "itemId": "english-pre-a1-m010-pronunciation-ex01-i15",
-            "position": 15,
-            "word": "my",
-            "translation": "mi",
-            "pronunciationGuide": "mái",
-            "audio": "tts:en-GB:my",
-            "audioStatus": "synthetic_pending_review",
-            "guideType": "approximate_spanish"
-          },
-          {
-            "itemId": "english-pre-a1-m010-pronunciation-ex01-i16",
-            "position": 16,
-            "word": "your",
-            "translation": "tu",
-            "pronunciationGuide": "iór",
-            "audio": "tts:en-GB:your",
-            "audioStatus": "synthetic_pending_review",
-            "guideType": "approximate_spanish"
-          },
-          {
-            "itemId": "english-pre-a1-m010-pronunciation-ex01-i17",
-            "position": 17,
-            "word": "what",
-            "translation": "qué",
-            "pronunciationGuide": "uót",
-            "audio": "tts:en-GB:what",
-            "audioStatus": "synthetic_pending_review",
-            "guideType": "approximate_spanish"
-          },
-          {
-            "itemId": "english-pre-a1-m010-pronunciation-ex01-i18",
-            "position": 18,
-            "word": "is",
-            "translation": "es",
-            "pronunciationGuide": "iz",
-            "audio": "tts:en-GB:is",
-            "audioStatus": "synthetic_pending_review",
-            "guideType": "approximate_spanish"
+            "audio": "tts:en-GB:student"
           }
         ]
       }
@@ -1228,110 +1098,7 @@
         "type": "reading_comprehension",
         "content": {
           "passageId": "english-pre-a1-m010-reading-passage-01",
-          "passage": "Hello! My name is Lucy. This is Tom. Nice to meet you. Nice to meet you too. Goodbye!",
-          "translation": "¡Hola! Me llamo Lucy. Este es Tom. Encantado/a de conocerte. Encantado/a también. ¡Adiós!",
-          "vocabulary": [
-            {
-              "word": "nice",
-              "translation": "agradable",
-              "pronunciationGuide": "náis"
-            },
-            {
-              "word": "to",
-              "translation": "a/para",
-              "pronunciationGuide": "tú"
-            },
-            {
-              "word": "meet",
-              "translation": "conocer",
-              "pronunciationGuide": "míit"
-            },
-            {
-              "word": "you",
-              "translation": "tú",
-              "pronunciationGuide": "iú"
-            },
-            {
-              "word": "too",
-              "translation": "también",
-              "pronunciationGuide": "tú"
-            },
-            {
-              "word": "pleased",
-              "translation": "encantado",
-              "pronunciationGuide": "plíizd"
-            },
-            {
-              "word": "This is…",
-              "translation": "Este/a es…",
-              "pronunciationGuide": "dhis iz"
-            },
-            {
-              "word": "person",
-              "translation": "persona",
-              "pronunciationGuide": "PÉR-son"
-            },
-            {
-              "word": "friend",
-              "translation": "amigo",
-              "pronunciationGuide": "frend"
-            },
-            {
-              "word": "student",
-              "translation": "estudiante",
-              "pronunciationGuide": "STIÚ-dent"
-            },
-            {
-              "word": "teacher",
-              "translation": "profesor",
-              "pronunciationGuide": "TÍ-cha"
-            },
-            {
-              "word": "boy",
-              "translation": "niño",
-              "pronunciationGuide": "bói"
-            },
-            {
-              "word": "girl",
-              "translation": "niña",
-              "pronunciationGuide": "guérl"
-            },
-            {
-              "word": "name",
-              "translation": "nombre",
-              "pronunciationGuide": "NÉIM"
-            },
-            {
-              "word": "my",
-              "translation": "mi",
-              "pronunciationGuide": "mái"
-            },
-            {
-              "word": "your",
-              "translation": "tu",
-              "pronunciationGuide": "iór"
-            },
-            {
-              "word": "what",
-              "translation": "qué",
-              "pronunciationGuide": "uót"
-            },
-            {
-              "word": "is",
-              "translation": "es",
-              "pronunciationGuide": "iz"
-            },
-            {
-              "word": "I'm",
-              "translation": "soy/estoy",
-              "pronunciationGuide": "áim"
-            },
-            {
-              "word": "you're",
-              "translation": "eres/estás",
-              "pronunciationGuide": "ior"
-            }
-          ]
+          "passage": "Hello! My name is Lucy. This is Tom. Nice to meet you. Nice to meet you too. Goodbye!"
         },
         "items": [
           {

@@ -1,6 +1,6 @@
 {
-  "schemaVersion": 1,
-  "contentVersion": "2026-11-21-curriculum-alignment-v3",
+  "schemaVersion": "1.2.0",
+  "contentVersion": 3,
   "course": {
     "courseId": "english-pre-a1",
     "level": "Pre-A1",
@@ -115,105 +115,6 @@
             "spanish": "estudiante",
             "pronunciationGuide": "STIÚ-dent",
             "audio": "tts:en-GB:student",
-            "audioStatus": "synthetic_pending_review"
-          },
-          {
-            "itemId": "english-pre-a1-m008-explore-ex01-i11",
-            "position": 11,
-            "english": "teacher",
-            "spanish": "profesor",
-            "pronunciationGuide": "TÍ-cha",
-            "audio": "tts:en-GB:teacher",
-            "audioStatus": "synthetic_pending_review"
-          },
-          {
-            "itemId": "english-pre-a1-m008-explore-ex01-i12",
-            "position": 12,
-            "english": "boy",
-            "spanish": "niño",
-            "pronunciationGuide": "bói",
-            "audio": "tts:en-GB:boy",
-            "audioStatus": "synthetic_pending_review"
-          },
-          {
-            "itemId": "english-pre-a1-m008-explore-ex01-i13",
-            "position": 13,
-            "english": "girl",
-            "spanish": "niña",
-            "pronunciationGuide": "guérl",
-            "audio": "tts:en-GB:girl",
-            "audioStatus": "synthetic_pending_review"
-          },
-          {
-            "itemId": "english-pre-a1-m008-explore-ex01-i14",
-            "position": 14,
-            "english": "child",
-            "spanish": "niño/a",
-            "pronunciationGuide": "cháild",
-            "audio": "tts:en-GB:child",
-            "audioStatus": "synthetic_pending_review"
-          },
-          {
-            "itemId": "english-pre-a1-m008-explore-ex01-i15",
-            "position": 15,
-            "english": "friend",
-            "spanish": "amigo",
-            "pronunciationGuide": "frend",
-            "audio": "tts:en-GB:friend",
-            "audioStatus": "synthetic_pending_review"
-          },
-          {
-            "itemId": "english-pre-a1-m008-explore-ex01-i16",
-            "position": 16,
-            "english": "very",
-            "spanish": "muy",
-            "pronunciationGuide": "VÉ-ri",
-            "audio": "tts:en-GB:very",
-            "audioStatus": "synthetic_pending_review"
-          },
-          {
-            "itemId": "english-pre-a1-m008-explore-ex01-i17",
-            "position": 17,
-            "english": "today",
-            "spanish": "hoy",
-            "pronunciationGuide": "ta-DÉI",
-            "audio": "tts:en-GB:today",
-            "audioStatus": "synthetic_pending_review"
-          },
-          {
-            "itemId": "english-pre-a1-m008-explore-ex01-i18",
-            "position": 18,
-            "english": "here",
-            "spanish": "aquí",
-            "pronunciationGuide": "jíar",
-            "audio": "tts:en-GB:here",
-            "audioStatus": "synthetic_pending_review"
-          },
-          {
-            "itemId": "english-pre-a1-m008-explore-ex01-i19",
-            "position": 19,
-            "english": "school",
-            "spanish": "escuela",
-            "pronunciationGuide": "skúl",
-            "audio": "tts:en-GB:school",
-            "audioStatus": "synthetic_pending_review"
-          },
-          {
-            "itemId": "english-pre-a1-m008-explore-ex01-i20",
-            "position": 20,
-            "english": "a",
-            "spanish": "un/una",
-            "pronunciationGuide": "a",
-            "audio": "tts:en-GB:a",
-            "audioStatus": "synthetic_pending_review"
-          },
-          {
-            "itemId": "english-pre-a1-m008-explore-ex01-i21",
-            "position": 21,
-            "english": "at",
-            "spanish": "en/a",
-            "pronunciationGuide": "at",
-            "audio": "tts:en-GB:at",
             "audioStatus": "synthetic_pending_review"
           }
         ],
@@ -345,6 +246,56 @@
               "english": "I am a friend.",
               "spanish": "Soy amigo/a",
               "note": "Modelo enseñado en Explore."
+            },
+            {
+              "english": "I",
+              "spanish": "yo",
+              "note": "Pronunciación aproximada: ái."
+            },
+            {
+              "english": "am",
+              "spanish": "soy/estoy",
+              "note": "Pronunciación aproximada: am."
+            },
+            {
+              "english": "be",
+              "spanish": "ser/estar",
+              "note": "Pronunciación aproximada: bí."
+            },
+            {
+              "english": "happy",
+              "spanish": "feliz",
+              "note": "Pronunciación aproximada: JÁ-pi."
+            },
+            {
+              "english": "sad",
+              "spanish": "triste",
+              "note": "Pronunciación aproximada: sad."
+            },
+            {
+              "english": "tired",
+              "spanish": "cansado",
+              "note": "Pronunciación aproximada: TÁI-erd."
+            },
+            {
+              "english": "excited",
+              "spanish": "emocionado",
+              "note": "Pronunciación aproximada: ik-SÁI-tid."
+            },
+            {
+              "english": "angry",
+              "spanish": "enfadado",
+              "note": "Pronunciación aproximada: ÁNG-gri."
+            },
+            {
+              "english": "calm",
+              "spanish": "tranquilo",
+              "note": "Pronunciación aproximada: kám."
+            },
+            {
+              "english": "student",
+              "spanish": "estudiante",
+              "note": "Pronunciación aproximada: STIÚ-dent."
             }
           ],
           "grammar": [
@@ -678,7 +629,8 @@
               "ser/estar",
               "yo"
             ],
-            "answer": "yo"
+            "answer": "yo",
+            "taskType": "vocabulary_translation"
           },
           {
             "itemId": "english-pre-a1-m008-practice-ex01-i02",
@@ -692,7 +644,8 @@
               "soy/estoy",
               "ser/estar"
             ],
-            "answer": "soy/estoy"
+            "answer": "soy/estoy",
+            "taskType": "vocabulary_translation"
           },
           {
             "itemId": "english-pre-a1-m008-practice-ex01-i03",
@@ -706,7 +659,8 @@
               "feliz",
               "triste"
             ],
-            "answer": "ser/estar"
+            "answer": "ser/estar",
+            "taskType": "vocabulary_translation"
           },
           {
             "itemId": "english-pre-a1-m008-practice-ex01-i04",
@@ -720,7 +674,8 @@
               "cansado",
               "feliz"
             ],
-            "answer": "feliz"
+            "answer": "feliz",
+            "taskType": "vocabulary_translation"
           },
           {
             "itemId": "english-pre-a1-m008-practice-ex01-i05",
@@ -734,7 +689,8 @@
               "triste",
               "cansado"
             ],
-            "answer": "triste"
+            "answer": "triste",
+            "taskType": "vocabulary_translation"
           },
           {
             "itemId": "english-pre-a1-m008-practice-ex01-i06",
@@ -748,7 +704,8 @@
               "emocionado",
               "enfadado"
             ],
-            "answer": "cansado"
+            "answer": "cansado",
+            "taskType": "vocabulary_translation"
           },
           {
             "itemId": "english-pre-a1-m008-practice-ex01-i07",
@@ -762,7 +719,8 @@
               "tranquilo",
               "emocionado"
             ],
-            "answer": "emocionado"
+            "answer": "emocionado",
+            "taskType": "vocabulary_translation"
           },
           {
             "itemId": "english-pre-a1-m008-practice-ex01-i08",
@@ -776,7 +734,8 @@
               "enfadado",
               "tranquilo"
             ],
-            "answer": "enfadado"
+            "answer": "enfadado",
+            "taskType": "vocabulary_translation"
           },
           {
             "itemId": "english-pre-a1-m008-practice-ex01-i09",
@@ -790,7 +749,8 @@
               "estudiante",
               "profesor"
             ],
-            "answer": "tranquilo"
+            "answer": "tranquilo",
+            "taskType": "vocabulary_translation"
           },
           {
             "itemId": "english-pre-a1-m008-practice-ex01-i10",
@@ -804,7 +764,8 @@
               "niño",
               "estudiante"
             ],
-            "answer": "estudiante"
+            "answer": "estudiante",
+            "taskType": "vocabulary_translation"
           }
         ]
       }
@@ -1051,9 +1012,7 @@
             "word": "I",
             "translation": "yo",
             "pronunciationGuide": "ái",
-            "audio": "tts:en-GB:I",
-            "audioStatus": "synthetic_pending_review",
-            "guideType": "approximate_spanish"
+            "audio": "tts:en-GB:I"
           },
           {
             "itemId": "english-pre-a1-m008-pronunciation-ex01-i02",
@@ -1061,9 +1020,7 @@
             "word": "am",
             "translation": "soy/estoy",
             "pronunciationGuide": "am",
-            "audio": "tts:en-GB:am",
-            "audioStatus": "synthetic_pending_review",
-            "guideType": "approximate_spanish"
+            "audio": "tts:en-GB:am"
           },
           {
             "itemId": "english-pre-a1-m008-pronunciation-ex01-i03",
@@ -1071,9 +1028,7 @@
             "word": "be",
             "translation": "ser/estar",
             "pronunciationGuide": "bí",
-            "audio": "tts:en-GB:be",
-            "audioStatus": "synthetic_pending_review",
-            "guideType": "approximate_spanish"
+            "audio": "tts:en-GB:be"
           },
           {
             "itemId": "english-pre-a1-m008-pronunciation-ex01-i04",
@@ -1081,9 +1036,7 @@
             "word": "happy",
             "translation": "feliz",
             "pronunciationGuide": "JÁ-pi",
-            "audio": "tts:en-GB:happy",
-            "audioStatus": "synthetic_pending_review",
-            "guideType": "approximate_spanish"
+            "audio": "tts:en-GB:happy"
           },
           {
             "itemId": "english-pre-a1-m008-pronunciation-ex01-i05",
@@ -1091,9 +1044,7 @@
             "word": "sad",
             "translation": "triste",
             "pronunciationGuide": "sad",
-            "audio": "tts:en-GB:sad",
-            "audioStatus": "synthetic_pending_review",
-            "guideType": "approximate_spanish"
+            "audio": "tts:en-GB:sad"
           },
           {
             "itemId": "english-pre-a1-m008-pronunciation-ex01-i06",
@@ -1101,9 +1052,7 @@
             "word": "tired",
             "translation": "cansado",
             "pronunciationGuide": "TÁI-erd",
-            "audio": "tts:en-GB:tired",
-            "audioStatus": "synthetic_pending_review",
-            "guideType": "approximate_spanish"
+            "audio": "tts:en-GB:tired"
           },
           {
             "itemId": "english-pre-a1-m008-pronunciation-ex01-i07",
@@ -1111,9 +1060,7 @@
             "word": "excited",
             "translation": "emocionado",
             "pronunciationGuide": "ik-SÁI-tid",
-            "audio": "tts:en-GB:excited",
-            "audioStatus": "synthetic_pending_review",
-            "guideType": "approximate_spanish"
+            "audio": "tts:en-GB:excited"
           },
           {
             "itemId": "english-pre-a1-m008-pronunciation-ex01-i08",
@@ -1121,9 +1068,7 @@
             "word": "angry",
             "translation": "enfadado",
             "pronunciationGuide": "ÁNG-gri",
-            "audio": "tts:en-GB:angry",
-            "audioStatus": "synthetic_pending_review",
-            "guideType": "approximate_spanish"
+            "audio": "tts:en-GB:angry"
           },
           {
             "itemId": "english-pre-a1-m008-pronunciation-ex01-i09",
@@ -1131,9 +1076,7 @@
             "word": "calm",
             "translation": "tranquilo",
             "pronunciationGuide": "kám",
-            "audio": "tts:en-GB:calm",
-            "audioStatus": "synthetic_pending_review",
-            "guideType": "approximate_spanish"
+            "audio": "tts:en-GB:calm"
           },
           {
             "itemId": "english-pre-a1-m008-pronunciation-ex01-i10",
@@ -1141,89 +1084,7 @@
             "word": "student",
             "translation": "estudiante",
             "pronunciationGuide": "STIÚ-dent",
-            "audio": "tts:en-GB:student",
-            "audioStatus": "synthetic_pending_review",
-            "guideType": "approximate_spanish"
-          },
-          {
-            "itemId": "english-pre-a1-m008-pronunciation-ex01-i11",
-            "position": 11,
-            "word": "teacher",
-            "translation": "profesor",
-            "pronunciationGuide": "TÍ-cha",
-            "audio": "tts:en-GB:teacher",
-            "audioStatus": "synthetic_pending_review",
-            "guideType": "approximate_spanish"
-          },
-          {
-            "itemId": "english-pre-a1-m008-pronunciation-ex01-i12",
-            "position": 12,
-            "word": "boy",
-            "translation": "niño",
-            "pronunciationGuide": "bói",
-            "audio": "tts:en-GB:boy",
-            "audioStatus": "synthetic_pending_review",
-            "guideType": "approximate_spanish"
-          },
-          {
-            "itemId": "english-pre-a1-m008-pronunciation-ex01-i13",
-            "position": 13,
-            "word": "girl",
-            "translation": "niña",
-            "pronunciationGuide": "guérl",
-            "audio": "tts:en-GB:girl",
-            "audioStatus": "synthetic_pending_review",
-            "guideType": "approximate_spanish"
-          },
-          {
-            "itemId": "english-pre-a1-m008-pronunciation-ex01-i14",
-            "position": 14,
-            "word": "child",
-            "translation": "niño/a",
-            "pronunciationGuide": "cháild",
-            "audio": "tts:en-GB:child",
-            "audioStatus": "synthetic_pending_review",
-            "guideType": "approximate_spanish"
-          },
-          {
-            "itemId": "english-pre-a1-m008-pronunciation-ex01-i15",
-            "position": 15,
-            "word": "friend",
-            "translation": "amigo",
-            "pronunciationGuide": "frend",
-            "audio": "tts:en-GB:friend",
-            "audioStatus": "synthetic_pending_review",
-            "guideType": "approximate_spanish"
-          },
-          {
-            "itemId": "english-pre-a1-m008-pronunciation-ex01-i16",
-            "position": 16,
-            "word": "very",
-            "translation": "muy",
-            "pronunciationGuide": "VÉ-ri",
-            "audio": "tts:en-GB:very",
-            "audioStatus": "synthetic_pending_review",
-            "guideType": "approximate_spanish"
-          },
-          {
-            "itemId": "english-pre-a1-m008-pronunciation-ex01-i17",
-            "position": 17,
-            "word": "today",
-            "translation": "hoy",
-            "pronunciationGuide": "ta-DÉI",
-            "audio": "tts:en-GB:today",
-            "audioStatus": "synthetic_pending_review",
-            "guideType": "approximate_spanish"
-          },
-          {
-            "itemId": "english-pre-a1-m008-pronunciation-ex01-i18",
-            "position": 18,
-            "word": "here",
-            "translation": "aquí",
-            "pronunciationGuide": "jíar",
-            "audio": "tts:en-GB:here",
-            "audioStatus": "synthetic_pending_review",
-            "guideType": "approximate_spanish"
+            "audio": "tts:en-GB:student"
           }
         ]
       }
@@ -1237,110 +1098,7 @@
         "type": "reading_comprehension",
         "content": {
           "passageId": "english-pre-a1-m008-reading-passage-01",
-          "passage": "I am a student. I am happy today. I am excited. I am here at school.",
-          "translation": "Soy estudiante. Estoy feliz hoy. Estoy emocionado/a. Estoy aquí en la escuela.",
-          "vocabulary": [
-            {
-              "word": "I",
-              "translation": "yo",
-              "pronunciationGuide": "ái"
-            },
-            {
-              "word": "am",
-              "translation": "soy/estoy",
-              "pronunciationGuide": "am"
-            },
-            {
-              "word": "be",
-              "translation": "ser/estar",
-              "pronunciationGuide": "bí"
-            },
-            {
-              "word": "happy",
-              "translation": "feliz",
-              "pronunciationGuide": "JÁ-pi"
-            },
-            {
-              "word": "sad",
-              "translation": "triste",
-              "pronunciationGuide": "sad"
-            },
-            {
-              "word": "tired",
-              "translation": "cansado",
-              "pronunciationGuide": "TÁI-erd"
-            },
-            {
-              "word": "excited",
-              "translation": "emocionado",
-              "pronunciationGuide": "ik-SÁI-tid"
-            },
-            {
-              "word": "angry",
-              "translation": "enfadado",
-              "pronunciationGuide": "ÁNG-gri"
-            },
-            {
-              "word": "calm",
-              "translation": "tranquilo",
-              "pronunciationGuide": "kám"
-            },
-            {
-              "word": "student",
-              "translation": "estudiante",
-              "pronunciationGuide": "STIÚ-dent"
-            },
-            {
-              "word": "teacher",
-              "translation": "profesor",
-              "pronunciationGuide": "TÍ-cha"
-            },
-            {
-              "word": "boy",
-              "translation": "niño",
-              "pronunciationGuide": "bói"
-            },
-            {
-              "word": "girl",
-              "translation": "niña",
-              "pronunciationGuide": "guérl"
-            },
-            {
-              "word": "child",
-              "translation": "niño/a",
-              "pronunciationGuide": "cháild"
-            },
-            {
-              "word": "friend",
-              "translation": "amigo",
-              "pronunciationGuide": "frend"
-            },
-            {
-              "word": "very",
-              "translation": "muy",
-              "pronunciationGuide": "VÉ-ri"
-            },
-            {
-              "word": "today",
-              "translation": "hoy",
-              "pronunciationGuide": "ta-DÉI"
-            },
-            {
-              "word": "here",
-              "translation": "aquí",
-              "pronunciationGuide": "jíar"
-            },
-            {
-              "word": "school",
-              "translation": "escuela",
-              "pronunciationGuide": "skúl"
-            },
-            {
-              "word": "a",
-              "translation": "un/una",
-              "pronunciationGuide": "a"
-            }
-          ]
+          "passage": "I am a student. I am happy today. I am excited. I am here at school."
         },
         "items": [
           {
