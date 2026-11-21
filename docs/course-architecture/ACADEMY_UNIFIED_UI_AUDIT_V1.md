@@ -146,7 +146,7 @@ La misión A1 001 carga `public/missions/a1/a1-first-10-sections.js`. Ese runtim
 
 La siguiente iteración sustituye el iframe en la ruta de revisión por un renderer React compartido y un archivo de contenido independiente:
 
-- Datos: `content/canonical-missions/a1/001.json`.
+- Datos: `content/canonical-missions/a1/001.json`, migrados al contrato existente `schemas/course-mission.schema.json` (Draft 2020-12, versión `1.2.0`).
 - Renderer: `components/academy/CanonicalMission.tsx`.
 - Ruta: `app/academia/a1/001-canonical/page.tsx`.
 - El renderer consume el esquema JSON de la misión y genera la navegación de las ocho secciones a partir de los datos; no usa el HTML heredado como interfaz.
@@ -165,7 +165,7 @@ La siguiente iteración sustituye el iframe en la ruta de revisión por un rende
 | Speaking | 10 tareas con modelo de referencia | 10 |
 | Listening | Texto de Daniel + 10 huecos y banco de 10 palabras | 10 |
 
-Se ejecutó una comprobación estructural sobre el JSON: las ocho secciones tienen el número exacto de elementos, los IDs de cada sección son únicos, los ejercicios autocorregibles tienen respuesta y las preguntas de selección incluyen al menos tres opciones con la respuesta correcta. Esta comprobación se realizó sobre el contenido recuperado del repositorio; no equivale a ejecutar el validador formal ni a probar el renderer en navegador.
+Se ejecutó una comprobación estructural sobre el JSON: las ocho secciones están en el orden requerido y tienen los recuentos exactos (90 elementos en total), los IDs de los elementos son únicos, los ejercicios autocorregibles tienen respuesta y las preguntas de selección incluyen al menos tres opciones con la respuesta correcta. También se comprobaron los campos obligatorios del contrato v1.2.0 y las referencias de los diez huecos a las diez palabras del banco. Es una verificación estructural realizada sobre el contenido recuperado; no equivale a ejecutar un motor JSON Schema ni a probar el renderer en navegador.
 
 ### Estado funcional y limitaciones conocidas
 
@@ -181,3 +181,10 @@ Se ejecutó una comprobación estructural sobre el JSON: las ocho secciones tien
 ### Pruebas pendientes antes de integrar
 
 No se ha ejecutado build, TypeScript, lint, pruebas unitarias, navegador, móvil, accesibilidad, prueba real de micrófono ni despliegue Preview. El permiso y la grabación se implementaron, pero aún requieren comprobación en navegador. La ruta continúa siendo de revisión y no está enlazada como ruta de curso en producción. No se han tocado bases de datos, bindings, configuración Cloudflare, blog ni la rama `main`.
+
+
+### Contrato de contenido y estado de validación
+
+El contenido piloto ya no usa el primer borrador de esquema interno. Se ha ajustado al formato del repositorio `schemas/course-mission.schema.json`, versión `1.2.0`: `course`, `unit`, `mission` y las ocho `sections` en la raíz, con `exercise`, tipos de ejercicio, IDs y referencias explícitas. El renderer React se ha actualizado para consumir esa estructura.
+
+La revisión estructural comprobó los campos y cantidades exigidos para cada tipo de sección, pero no se ejecutó un validador JSON Schema Draft 2020-12. Tampoco se encontró `scripts/validate_mission.py` en esta rama; la documentación maestra lo menciona como pieza prevista, pero no debe darse por implementado. La creación de ese validador y su ejecución quedan pendientes.
