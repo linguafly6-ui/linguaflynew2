@@ -202,3 +202,16 @@ Se añadió `.github/workflows/academy-pilot-check.yml`, limitado a la rama de a
 Ejecución: https://github.com/linguafly6-ui/linguaflynew2/actions/runs/44920502362
 
 Esto confirma que el contenido cumple el esquema y que la aplicación completa pasa TypeScript y el build de Next.js en CI. No sustituye las pruebas manuales de interacción en navegador, responsive, audio y permisos de micrófono. No se ejecutó `opennextjs-cloudflare deploy`, ni se publicó un Preview.
+
+## 11. Iteración de calidad visual y experiencia (v2)
+
+Se ha realizado una segunda pasada aislada sobre las dos vistas del piloto:
+
+- **Dashboard de academia** (app/academia/preview/page.tsx): nueva jerarquía editorial, cabecera de marca, navegación más clara, bloque principal de continuidad, resumen de aprendizaje, tarjetas de niveles con estados y barras de avance, y presentación más legible de las ocho etapas. Se ha reforzado el responsive y los estados de foco de los enlaces principales.
+- **Misión canónica** (components/academy/CanonicalMission.tsx): se unificó el idioma de las secciones en español, se refinó la jerarquía de cabecera y navegación, se añadió contexto de etapa y una barra de progreso accesible con valores anunciados, y se mejoraron los estados de feedback y foco de teclado.
+
+La dirección visual usa una paleta sobria azul tinta, superficies claras, bordes discretos, tipografía con jerarquía más marcada y espaciado más generoso. No se añadieron dependencias ni se modificaron estilos globales, blog, navegación global, bases de datos, bindings o recursos Cloudflare.
+
+### Límites de verificación de v2
+
+Los cambios se guardaron únicamente en la rama work/linguafly-academy-audit. En esta iteración no se ha confirmado todavía una nueva ejecución de CI para los commits de v2 ni se han realizado pruebas manuales en navegador, móvil, teclado, lector de pantalla, síntesis de voz o micrófono. Los valores del dashboard siguen siendo datos de demostración. Antes de considerar aprobada esta dirección visual se requiere revisar ambas rutas en un Preview y completar una pasada de QA funcional y accesible.
