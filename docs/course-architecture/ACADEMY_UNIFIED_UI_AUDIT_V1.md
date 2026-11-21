@@ -188,3 +188,17 @@ No se ha ejecutado build, TypeScript, lint, pruebas unitarias, navegador, móvil
 El contenido piloto ya no usa el primer borrador de esquema interno. Se ha ajustado al formato del repositorio `schemas/course-mission.schema.json`, versión `1.2.0`: `course`, `unit`, `mission` y las ocho `sections` en la raíz, con `exercise`, tipos de ejercicio, IDs y referencias explícitas. El renderer React se ha actualizado para consumir esa estructura.
 
 La revisión estructural comprobó los campos y cantidades exigidos para cada tipo de sección, pero no se ejecutó un validador JSON Schema Draft 2020-12. Tampoco se encontró `scripts/validate_mission.py` en esta rama; la documentación maestra lo menciona como pieza prevista, pero no debe darse por implementado. La creación de ese validador y su ejecución quedan pendientes.
+
+
+### Resultado de CI del piloto (21-11-2026)
+
+Se añadió `.github/workflows/academy-pilot-check.yml`, limitado a la rama de auditoría y sin pasos de despliegue. La ejecución de GitHub Actions terminó con conclusión `success`:
+
+- `npm ci`: correcto.
+- Validación JSON Schema Draft 2020-12 de `content/canonical-missions/a1/001.json`: correcta.
+- `npx tsc --noEmit`: correcto.
+- `npm run build`: correcto.
+
+Ejecución: https://github.com/linguafly6-ui/linguaflynew2/actions/runs/44920502362
+
+Esto confirma que el contenido cumple el esquema y que la aplicación completa pasa TypeScript y el build de Next.js en CI. No sustituye las pruebas manuales de interacción en navegador, responsive, audio y permisos de micrófono. No se ejecutó `opennextjs-cloudflare deploy`, ni se publicó un Preview.
