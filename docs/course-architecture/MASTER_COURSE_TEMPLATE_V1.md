@@ -22,7 +22,7 @@ Orden fijo de las ocho secciones:
 | 3 | grammar | Grammar | 10 ejercicios autocorregibles vinculados al objetivo gramatical de la misión |
 | 4 | pronunciation | Pronunciation | 10 elementos de vocabulario; palabra, traducción, guía aproximada para hispanohablantes y audio británico |
 | 5 | reading | Reading | 1 pasaje completo y visible + 10 preguntas de comprensión autocorregibles |
-| 6 | writing | Writing | 10 dictados de palabras y frases; audio británico, entrada de respuesta, corrección y resultado |
+| 6 | writing | Writing | 10 dictados guiados; una frase en Pre-A1/A1, varias en A2-B2 y textos segmentados en C1-C2; tres pasadas por segmento |
 | 7 | speaking | Speaking | 10 tareas/prompts; modelo de referencia, grabación, transcripción/análisis y feedback. No presentar la transcripción como medición fonética |
 | 8 | listening | Listening | 1 audio/pasaje completo + texto con 10 huecos + banco de 10 palabras mezcladas; asignar, mover y sustituir palabras, corregir, mostrar soluciones y puntuación |
 
@@ -165,7 +165,7 @@ Primera inspección de código de referencia en `main` (incluye Pre-A1 misión 0
 | Grammar | 10 preguntas | Usa un bloque extra con numeración heredada; verificar contenido y adaptar al contrato de 10 |
 | Pronunciation | 10 tarjetas con significado, guía y audio | Tiene 10 tarjetas, pero añade además un bloque de 10 retos de discriminación auditiva que no forma parte del patrón A1 de tarjetas |
 | Reading | Pasaje independiente + 10 preguntas | Hay pasaje + 10 preguntas; verificar el render y normalizar el bloque visual |
-| Writing | 10 dictados de palabra/frase | La muestra Pre-A1 muestra 22 dictados y una interfaz de dictado letra a letra; debe migrarse a 10 y al flujo común acordado |
+| Writing | 10 dictados de frase con tres pasadas por segmento | La muestra Pre-A1 muestra 22 dictados y una interfaz de dictado letra a letra; debe migrarse a 10 y al flujo común acordado |
 | Speaking | 10 prompts con grabación y análisis por elemento | La muestra Pre-A1 permite seleccionar palabras y grabar, pero no presenta una secuencia completa de 10 prompts |
 | Listening | Audio + 10 huecos inline + banco movible de palabras | La muestra Pre-A1 usa 10 preguntas tipo test y transcripción diferida; debe migrarse al formato gap-fill de A1 |
 
