@@ -580,6 +580,9 @@
                     ],
                     "required": [
                       "audio",
+                      "audioLocale",
+                      "repeatCount",
+                      "segments",
                       "expectedAnswer",
                       "evaluation"
                     ],
@@ -592,6 +595,39 @@
                       },
                       "evaluation": {
                         "$ref": "#/$defs/evaluation"
+                      },
+                      "audioLocale": {
+                        "const": "en-GB"
+                      },
+                      "repeatCount": {
+                        "const": 3
+                      },
+                      "kind": {
+                        "enum": [
+                          "sentence",
+                          "passage"
+                        ]
+                      },
+                      "segments": {
+                        "type": "array",
+                        "minItems": 1,
+                        "maxItems": 30,
+                        "items": {
+                          "type": "object",
+                          "required": [
+                            "segmentId",
+                            "text"
+                          ],
+                          "properties": {
+                            "segmentId": {
+                              "$ref": "#/$defs/id"
+                            },
+                            "text": {
+                              "$ref": "#/$defs/nonEmpty"
+                            }
+                          },
+                          "additionalProperties": false
+                        }
                       }
                     }
                   }
