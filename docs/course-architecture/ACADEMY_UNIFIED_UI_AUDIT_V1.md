@@ -117,3 +117,21 @@ No se deben borrar `index.html`, `index-v2.html`, JSON, runtimes, ejercicios ni 
 ## 8. Siguiente implementación propuesta
 
 El primer entregable de código debe ser un piloto aislado del shell y la plantilla de misión, con tokens centralizados y datos de una misión real. Debe poder revisarse en Cloudflare Preview sin tocar producción. Tras aprobar visual y funcionalmente el piloto, se integrará con el layout compartido y se migrarán los niveles de forma incremental.
+
+
+## 9. Piloto visual A1 · Misión 001
+
+Implementado en esta rama como primera prueba aislada:
+- Ruta de revisión: `/academia/a1/001-canonical`.
+- Componente compartido: `components/academy/CanonicalMissionFrame.tsx`.
+- La vista reutiliza el HTML y el runtime existentes de A1 misión 001; no modifica el contenido original ni la ruta pública heredada.
+- El componente aplica una capa de estilos minimalistas al documento de la misión después de cargarlo, normalizando fondo, tipografía, navegación, botones, paneles, tarjetas, campos y estados de progreso.
+- La página de demostración `/academia/preview` enlaza al piloto.
+
+### Qué valida y qué no valida
+
+Valida una dirección de presentación común sobre el contenido y runtime reales de la misión A1 001. Es un paso de transición, no el renderer canónico final: el contenido sigue ejecutándose dentro de un iframe y conserva el runtime heredado. No se ha migrado todavía a un esquema de contenido tipado ni se ha implementado persistencia de progreso.
+
+No se han ejecutado build, pruebas automatizadas, pruebas de navegador ni validación de audio/micrófono en esta entrega. Antes de ampliar el patrón a otras misiones hay que revisar la ruta en un Preview, verificar que las ocho secciones se muestran, comprobar las interacciones y comparar respuestas/contenido con la versión original.
+
+La siguiente iteración, tras validar el piloto, debe extraer los datos de misión a un formato canónico y reemplazar progresivamente los iframes por un renderer React compartido. No se deben convertir los estilos inyectados en una solución permanente ni duplicar esta técnica por misión.
