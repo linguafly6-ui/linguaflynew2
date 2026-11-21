@@ -1,0 +1,1240 @@
+{
+  "schemaVersion": "1.2.0",
+  "contentVersion": 2,
+  "course": {
+    "courseId": "english-pre-a1",
+    "level": "PRE-A1",
+    "language": "en-GB"
+  },
+  "unit": {
+    "unitId": "english-pre-a1-unit-01",
+    "courseId": "english-pre-a1",
+    "position": 1,
+    "title": "Primer vocabulario y entorno inmediato"
+  },
+  "mission": {
+    "missionId": "english-pre-a1-m008",
+    "unitId": "english-pre-a1-unit-01",
+    "position": 8,
+    "title": "My Body"
+  },
+  "sections": [
+    {
+      "sectionId": "english-pre-a1-m008-explore",
+      "sectionKey": "explore",
+      "position": 1,
+      "exercise": {
+        "exerciseId": "english-pre-a1-m008-explore-ex01",
+        "type": "vocabulary_pairs",
+        "theory": {
+          "title": "My Body: key words and simple sentences",
+          "explanation": "Learn ten useful words about my body. Listen to the British English model and say each word aloud.",
+          "patterns": [
+            {
+              "label": "Simple sentence",
+              "pattern": "I have got two eyes.",
+              "examples": [
+                "I have got two eyes.",
+                "She has got brown hair.",
+                "You have got two hands."
+              ]
+            }
+          ],
+          "tip": "Read each word aloud and use it in a short sentence."
+        },
+        "items": [
+          {
+            "itemId": "english-pre-a1-m008-explore-ex01-i01",
+            "position": 1,
+            "english": "head",
+            "spanish": "cabeza",
+            "audio": "tts:en-GB:head"
+          },
+          {
+            "itemId": "english-pre-a1-m008-explore-ex01-i02",
+            "position": 2,
+            "english": "hair",
+            "spanish": "pelo",
+            "audio": "tts:en-GB:hair"
+          },
+          {
+            "itemId": "english-pre-a1-m008-explore-ex01-i03",
+            "position": 3,
+            "english": "eye",
+            "spanish": "ojo",
+            "audio": "tts:en-GB:eye"
+          },
+          {
+            "itemId": "english-pre-a1-m008-explore-ex01-i04",
+            "position": 4,
+            "english": "ear",
+            "spanish": "oreja",
+            "audio": "tts:en-GB:ear"
+          },
+          {
+            "itemId": "english-pre-a1-m008-explore-ex01-i05",
+            "position": 5,
+            "english": "nose",
+            "spanish": "nariz",
+            "audio": "tts:en-GB:nose"
+          },
+          {
+            "itemId": "english-pre-a1-m008-explore-ex01-i06",
+            "position": 6,
+            "english": "mouth",
+            "spanish": "boca",
+            "audio": "tts:en-GB:mouth"
+          },
+          {
+            "itemId": "english-pre-a1-m008-explore-ex01-i07",
+            "position": 7,
+            "english": "tooth",
+            "spanish": "diente",
+            "audio": "tts:en-GB:tooth"
+          },
+          {
+            "itemId": "english-pre-a1-m008-explore-ex01-i08",
+            "position": 8,
+            "english": "hand",
+            "spanish": "mano",
+            "audio": "tts:en-GB:hand"
+          },
+          {
+            "itemId": "english-pre-a1-m008-explore-ex01-i09",
+            "position": 9,
+            "english": "arm",
+            "spanish": "brazo",
+            "audio": "tts:en-GB:arm"
+          },
+          {
+            "itemId": "english-pre-a1-m008-explore-ex01-i10",
+            "position": 10,
+            "english": "leg",
+            "spanish": "pierna",
+            "audio": "tts:en-GB:leg"
+          }
+        ]
+      }
+    },
+    {
+      "sectionId": "english-pre-a1-m008-practice",
+      "sectionKey": "practice",
+      "position": 2,
+      "exercise": {
+        "exerciseId": "english-pre-a1-m008-practice-ex01",
+        "type": "mixed_practice",
+        "items": [
+          {
+            "itemId": "english-pre-a1-m008-practice-ex01-i01",
+            "position": 1,
+            "taskType": "vocabulary_translation",
+            "prompt": "Choose the Spanish meaning of “head”.",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "cabeza",
+              "oreja",
+              "diente"
+            ],
+            "answer": "cabeza"
+          },
+          {
+            "itemId": "english-pre-a1-m008-practice-ex01-i02",
+            "position": 2,
+            "taskType": "vocabulary_translation",
+            "prompt": "Choose the Spanish meaning of “hair”.",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "pelo",
+              "nariz",
+              "mano"
+            ],
+            "answer": "pelo"
+          },
+          {
+            "itemId": "english-pre-a1-m008-practice-ex01-i03",
+            "position": 3,
+            "taskType": "vocabulary_translation",
+            "prompt": "Choose the Spanish meaning of “eye”.",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "ojo",
+              "boca",
+              "brazo"
+            ],
+            "answer": "ojo"
+          },
+          {
+            "itemId": "english-pre-a1-m008-practice-ex01-i04",
+            "position": 4,
+            "taskType": "vocabulary_translation",
+            "prompt": "Choose the Spanish meaning of “ear”.",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "oreja",
+              "diente",
+              "pierna"
+            ],
+            "answer": "oreja"
+          },
+          {
+            "itemId": "english-pre-a1-m008-practice-ex01-i05",
+            "position": 5,
+            "taskType": "vocabulary_translation",
+            "prompt": "Choose the Spanish meaning of “nose”.",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "nariz",
+              "mano",
+              "cabeza"
+            ],
+            "answer": "nariz"
+          },
+          {
+            "itemId": "english-pre-a1-m008-practice-ex01-i06",
+            "position": 6,
+            "taskType": "vocabulary_translation",
+            "prompt": "Choose the Spanish meaning of “mouth”.",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "boca",
+              "brazo",
+              "pelo"
+            ],
+            "answer": "boca"
+          },
+          {
+            "itemId": "english-pre-a1-m008-practice-ex01-i07",
+            "position": 7,
+            "taskType": "vocabulary_translation",
+            "prompt": "Choose the Spanish meaning of “tooth”.",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "diente",
+              "pierna",
+              "ojo"
+            ],
+            "answer": "diente"
+          },
+          {
+            "itemId": "english-pre-a1-m008-practice-ex01-i08",
+            "position": 8,
+            "taskType": "vocabulary_translation",
+            "prompt": "Choose the Spanish meaning of “hand”.",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "mano",
+              "cabeza",
+              "oreja"
+            ],
+            "answer": "mano"
+          },
+          {
+            "itemId": "english-pre-a1-m008-practice-ex01-i09",
+            "position": 9,
+            "taskType": "vocabulary_translation",
+            "prompt": "Choose the Spanish meaning of “arm”.",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "brazo",
+              "pelo",
+              "nariz"
+            ],
+            "answer": "brazo"
+          },
+          {
+            "itemId": "english-pre-a1-m008-practice-ex01-i10",
+            "position": 10,
+            "taskType": "vocabulary_translation",
+            "prompt": "Choose the Spanish meaning of “leg”.",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "pierna",
+              "ojo",
+              "boca"
+            ],
+            "answer": "pierna"
+          },
+          {
+            "itemId": "english-pre-a1-m008-practice-ex01-i11",
+            "position": 11,
+            "taskType": "topic_vocabulary",
+            "prompt": "Which English word means “cabeza”?",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "head",
+              "eye",
+              "mouth"
+            ],
+            "answer": "head"
+          },
+          {
+            "itemId": "english-pre-a1-m008-practice-ex01-i12",
+            "position": 12,
+            "taskType": "topic_vocabulary",
+            "prompt": "Choose the word for “pelo”?",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "hair",
+              "ear",
+              "tooth"
+            ],
+            "answer": "hair"
+          },
+          {
+            "itemId": "english-pre-a1-m008-practice-ex01-i13",
+            "position": 13,
+            "taskType": "topic_vocabulary",
+            "prompt": "Select the English word for “ojo”?",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "eye",
+              "nose",
+              "hand"
+            ],
+            "answer": "eye"
+          },
+          {
+            "itemId": "english-pre-a1-m008-practice-ex01-i14",
+            "position": 14,
+            "taskType": "topic_vocabulary",
+            "prompt": "What is the English word for “oreja”?",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "ear",
+              "mouth",
+              "arm"
+            ],
+            "answer": "ear"
+          },
+          {
+            "itemId": "english-pre-a1-m008-practice-ex01-i15",
+            "position": 15,
+            "taskType": "topic_vocabulary",
+            "prompt": "Find the word that means “nariz”?",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "nose",
+              "tooth",
+              "leg"
+            ],
+            "answer": "nose"
+          },
+          {
+            "itemId": "english-pre-a1-m008-practice-ex01-i16",
+            "position": 16,
+            "taskType": "topic_vocabulary",
+            "prompt": "Which word matches “boca”?",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "mouth",
+              "hand",
+              "head"
+            ],
+            "answer": "mouth"
+          },
+          {
+            "itemId": "english-pre-a1-m008-practice-ex01-i17",
+            "position": 17,
+            "taskType": "topic_vocabulary",
+            "prompt": "Choose the translation for “diente”?",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "tooth",
+              "arm",
+              "hair"
+            ],
+            "answer": "tooth"
+          },
+          {
+            "itemId": "english-pre-a1-m008-practice-ex01-i18",
+            "position": 18,
+            "taskType": "topic_vocabulary",
+            "prompt": "Select the matching word for “mano”?",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "hand",
+              "leg",
+              "eye"
+            ],
+            "answer": "hand"
+          },
+          {
+            "itemId": "english-pre-a1-m008-practice-ex01-i19",
+            "position": 19,
+            "taskType": "topic_vocabulary",
+            "prompt": "What word means “brazo”?",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "arm",
+              "head",
+              "ear"
+            ],
+            "answer": "arm"
+          },
+          {
+            "itemId": "english-pre-a1-m008-practice-ex01-i20",
+            "position": 20,
+            "taskType": "topic_vocabulary",
+            "prompt": "Find the English word for “pierna”?",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "leg",
+              "hair",
+              "nose"
+            ],
+            "answer": "leg"
+          }
+        ]
+      }
+    },
+    {
+      "sectionId": "english-pre-a1-m008-grammar",
+      "sectionKey": "grammar",
+      "position": 3,
+      "exercise": {
+        "exerciseId": "english-pre-a1-m008-grammar-ex01",
+        "type": "grammar",
+        "items": [
+          {
+            "itemId": "english-pre-a1-m008-grammar-ex01-i01",
+            "position": 1,
+            "prompt": "Choose the correct word or phrase: I ___ two eyes.",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "have got",
+              "has got",
+              "is"
+            ],
+            "answer": "have got"
+          },
+          {
+            "itemId": "english-pre-a1-m008-grammar-ex01-i02",
+            "position": 2,
+            "prompt": "Choose the correct word or phrase: She ___ brown hair.",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "has got",
+              "have got",
+              "are"
+            ],
+            "answer": "has got"
+          },
+          {
+            "itemId": "english-pre-a1-m008-grammar-ex01-i03",
+            "position": 3,
+            "prompt": "Choose the correct word or phrase: You ___ two hands.",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "have got",
+              "has got",
+              "is"
+            ],
+            "answer": "have got"
+          },
+          {
+            "itemId": "english-pre-a1-m008-grammar-ex01-i04",
+            "position": 4,
+            "prompt": "Choose the correct word or phrase: He ___ one nose.",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "has got",
+              "have got",
+              "am"
+            ],
+            "answer": "has got"
+          },
+          {
+            "itemId": "english-pre-a1-m008-grammar-ex01-i05",
+            "position": 5,
+            "prompt": "Choose the correct word or phrase: I ___ two legs.",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "have got",
+              "has got",
+              "are"
+            ],
+            "answer": "have got"
+          },
+          {
+            "itemId": "english-pre-a1-m008-grammar-ex01-i06",
+            "position": 6,
+            "prompt": "Choose the correct word or phrase: My brother ___ short hair.",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "has got",
+              "have got",
+              "is"
+            ],
+            "answer": "has got"
+          },
+          {
+            "itemId": "english-pre-a1-m008-grammar-ex01-i07",
+            "position": 7,
+            "prompt": "Choose the correct word or phrase: We ___ two ears.",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "have got",
+              "has got",
+              "are"
+            ],
+            "answer": "have got"
+          },
+          {
+            "itemId": "english-pre-a1-m008-grammar-ex01-i08",
+            "position": 8,
+            "prompt": "Choose the correct word or phrase: My sister ___ a small mouth.",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "has got",
+              "have got",
+              "am"
+            ],
+            "answer": "has got"
+          },
+          {
+            "itemId": "english-pre-a1-m008-grammar-ex01-i09",
+            "position": 9,
+            "prompt": "Choose the correct word or phrase: They ___ two arms.",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "have got",
+              "has got",
+              "is"
+            ],
+            "answer": "have got"
+          },
+          {
+            "itemId": "english-pre-a1-m008-grammar-ex01-i10",
+            "position": 10,
+            "prompt": "Choose the correct word or phrase: The boy ___ ten toes.",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "has got",
+              "have got",
+              "are"
+            ],
+            "answer": "has got"
+          }
+        ]
+      }
+    },
+    {
+      "sectionId": "english-pre-a1-m008-pronunciation",
+      "sectionKey": "pronunciation",
+      "position": 4,
+      "exercise": {
+        "exerciseId": "english-pre-a1-m008-pronunciation-ex01",
+        "type": "pronunciation_cards",
+        "items": [
+          {
+            "itemId": "english-pre-a1-m008-pronunciation-ex01-i01",
+            "position": 1,
+            "word": "head",
+            "translation": "cabeza",
+            "pronunciationGuide": "hed",
+            "audio": "tts:en-GB:head"
+          },
+          {
+            "itemId": "english-pre-a1-m008-pronunciation-ex01-i02",
+            "position": 2,
+            "word": "hair",
+            "translation": "pelo",
+            "pronunciationGuide": "her",
+            "audio": "tts:en-GB:hair"
+          },
+          {
+            "itemId": "english-pre-a1-m008-pronunciation-ex01-i03",
+            "position": 3,
+            "word": "eye",
+            "translation": "ojo",
+            "pronunciationGuide": "ái",
+            "audio": "tts:en-GB:eye"
+          },
+          {
+            "itemId": "english-pre-a1-m008-pronunciation-ex01-i04",
+            "position": 4,
+            "word": "ear",
+            "translation": "oreja",
+            "pronunciationGuide": "íer",
+            "audio": "tts:en-GB:ear"
+          },
+          {
+            "itemId": "english-pre-a1-m008-pronunciation-ex01-i05",
+            "position": 5,
+            "word": "nose",
+            "translation": "nariz",
+            "pronunciationGuide": "nóus",
+            "audio": "tts:en-GB:nose"
+          },
+          {
+            "itemId": "english-pre-a1-m008-pronunciation-ex01-i06",
+            "position": 6,
+            "word": "mouth",
+            "translation": "boca",
+            "pronunciationGuide": "máuth",
+            "audio": "tts:en-GB:mouth"
+          },
+          {
+            "itemId": "english-pre-a1-m008-pronunciation-ex01-i07",
+            "position": 7,
+            "word": "tooth",
+            "translation": "diente",
+            "pronunciationGuide": "túuth",
+            "audio": "tts:en-GB:tooth"
+          },
+          {
+            "itemId": "english-pre-a1-m008-pronunciation-ex01-i08",
+            "position": 8,
+            "word": "hand",
+            "translation": "mano",
+            "pronunciationGuide": "hand",
+            "audio": "tts:en-GB:hand"
+          },
+          {
+            "itemId": "english-pre-a1-m008-pronunciation-ex01-i09",
+            "position": 9,
+            "word": "arm",
+            "translation": "brazo",
+            "pronunciationGuide": "arm",
+            "audio": "tts:en-GB:arm"
+          },
+          {
+            "itemId": "english-pre-a1-m008-pronunciation-ex01-i10",
+            "position": 10,
+            "word": "leg",
+            "translation": "pierna",
+            "pronunciationGuide": "leg",
+            "audio": "tts:en-GB:leg"
+          }
+        ]
+      }
+    },
+    {
+      "sectionId": "english-pre-a1-m008-reading",
+      "sectionKey": "reading",
+      "position": 5,
+      "exercise": {
+        "exerciseId": "english-pre-a1-m008-reading-ex01",
+        "type": "reading_comprehension",
+        "content": {
+          "passageId": "english-pre-a1-m008-reading-passage-01",
+          "passage": "I am Alex. I have got brown hair and two blue eyes. I have got two ears, one nose and one mouth. I have got two arms and two hands. I have got two legs and ten toes. My little brother has got short hair. We can smile with our mouths."
+        },
+        "items": [
+          {
+            "itemId": "english-pre-a1-m008-reading-ex01-i01",
+            "position": 1,
+            "prompt": "What is the writer's name?",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "Alex",
+              "Ben",
+              "Sam"
+            ],
+            "answer": "Alex"
+          },
+          {
+            "itemId": "english-pre-a1-m008-reading-ex01-i02",
+            "position": 2,
+            "prompt": "What colour is the writer's hair?",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "Brown",
+              "Blue",
+              "Black"
+            ],
+            "answer": "Brown"
+          },
+          {
+            "itemId": "english-pre-a1-m008-reading-ex01-i03",
+            "position": 3,
+            "prompt": "How many eyes has Alex got?",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "Two",
+              "One",
+              "Three"
+            ],
+            "answer": "Two"
+          },
+          {
+            "itemId": "english-pre-a1-m008-reading-ex01-i04",
+            "position": 4,
+            "prompt": "How many noses has Alex got?",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "One",
+              "Two",
+              "Three"
+            ],
+            "answer": "One"
+          },
+          {
+            "itemId": "english-pre-a1-m008-reading-ex01-i05",
+            "position": 5,
+            "prompt": "How many arms has Alex got?",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "Two",
+              "Four",
+              "One"
+            ],
+            "answer": "Two"
+          },
+          {
+            "itemId": "english-pre-a1-m008-reading-ex01-i06",
+            "position": 6,
+            "prompt": "How many hands has Alex got?",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "Two",
+              "One",
+              "Ten"
+            ],
+            "answer": "Two"
+          },
+          {
+            "itemId": "english-pre-a1-m008-reading-ex01-i07",
+            "position": 7,
+            "prompt": "How many legs has Alex got?",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "Two",
+              "Three",
+              "Four"
+            ],
+            "answer": "Two"
+          },
+          {
+            "itemId": "english-pre-a1-m008-reading-ex01-i08",
+            "position": 8,
+            "prompt": "Who has got short hair?",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "The little brother",
+              "The teacher",
+              "The mother"
+            ],
+            "answer": "The little brother"
+          },
+          {
+            "itemId": "english-pre-a1-m008-reading-ex01-i09",
+            "position": 9,
+            "prompt": "What do we use to smile?",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "Our mouths",
+              "Our ears",
+              "Our hands"
+            ],
+            "answer": "Our mouths"
+          },
+          {
+            "itemId": "english-pre-a1-m008-reading-ex01-i10",
+            "position": 10,
+            "prompt": "What is the text about?",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "The body",
+              "Food",
+              "School things"
+            ],
+            "answer": "The body"
+          }
+        ]
+      }
+    },
+    {
+      "sectionId": "english-pre-a1-m008-writing",
+      "sectionKey": "writing",
+      "position": 6,
+      "exercise": {
+        "exerciseId": "english-pre-a1-m008-writing-ex01",
+        "type": "dictation",
+        "items": [
+          {
+            "itemId": "english-pre-a1-m008-writing-ex01-i01",
+            "position": 1,
+            "audio": "tts:en-GB:Touch your head.",
+            "evaluation": {
+              "type": "normalised_text"
+            },
+            "audioLocale": "en-GB",
+            "kind": "sentence",
+            "repeatCount": 3,
+            "expectedAnswer": "Touch your head.",
+            "segments": [
+              {
+                "segmentId": "english-pre-a1-m008-writing-segment-01",
+                "text": "Touch your head."
+              }
+            ]
+          },
+          {
+            "itemId": "english-pre-a1-m008-writing-ex01-i02",
+            "position": 2,
+            "audio": "tts:en-GB:My hair is brown.",
+            "evaluation": {
+              "type": "normalised_text"
+            },
+            "audioLocale": "en-GB",
+            "kind": "sentence",
+            "repeatCount": 3,
+            "expectedAnswer": "My hair is brown.",
+            "segments": [
+              {
+                "segmentId": "english-pre-a1-m008-writing-segment-02",
+                "text": "My hair is brown."
+              }
+            ]
+          },
+          {
+            "itemId": "english-pre-a1-m008-writing-ex01-i03",
+            "position": 3,
+            "audio": "tts:en-GB:I have two eyes.",
+            "evaluation": {
+              "type": "normalised_text"
+            },
+            "audioLocale": "en-GB",
+            "kind": "sentence",
+            "repeatCount": 3,
+            "expectedAnswer": "I have two eyes.",
+            "segments": [
+              {
+                "segmentId": "english-pre-a1-m008-writing-segment-03",
+                "text": "I have two eyes."
+              }
+            ]
+          },
+          {
+            "itemId": "english-pre-a1-m008-writing-ex01-i04",
+            "position": 4,
+            "audio": "tts:en-GB:I have two ears.",
+            "evaluation": {
+              "type": "normalised_text"
+            },
+            "audioLocale": "en-GB",
+            "kind": "sentence",
+            "repeatCount": 3,
+            "expectedAnswer": "I have two ears.",
+            "segments": [
+              {
+                "segmentId": "english-pre-a1-m008-writing-segment-04",
+                "text": "I have two ears."
+              }
+            ]
+          },
+          {
+            "itemId": "english-pre-a1-m008-writing-ex01-i05",
+            "position": 5,
+            "audio": "tts:en-GB:I smell with my nose.",
+            "evaluation": {
+              "type": "normalised_text"
+            },
+            "audioLocale": "en-GB",
+            "kind": "sentence",
+            "repeatCount": 3,
+            "expectedAnswer": "I smell with my nose.",
+            "segments": [
+              {
+                "segmentId": "english-pre-a1-m008-writing-segment-05",
+                "text": "I smell with my nose."
+              }
+            ]
+          },
+          {
+            "itemId": "english-pre-a1-m008-writing-ex01-i06",
+            "position": 6,
+            "audio": "tts:en-GB:I eat with my mouth.",
+            "evaluation": {
+              "type": "normalised_text"
+            },
+            "audioLocale": "en-GB",
+            "kind": "sentence",
+            "repeatCount": 3,
+            "expectedAnswer": "I eat with my mouth.",
+            "segments": [
+              {
+                "segmentId": "english-pre-a1-m008-writing-segment-06",
+                "text": "I eat with my mouth."
+              }
+            ]
+          },
+          {
+            "itemId": "english-pre-a1-m008-writing-ex01-i07",
+            "position": 7,
+            "audio": "tts:en-GB:My tooth is white.",
+            "evaluation": {
+              "type": "normalised_text"
+            },
+            "audioLocale": "en-GB",
+            "kind": "sentence",
+            "repeatCount": 3,
+            "expectedAnswer": "My tooth is white.",
+            "segments": [
+              {
+                "segmentId": "english-pre-a1-m008-writing-segment-07",
+                "text": "My tooth is white."
+              }
+            ]
+          },
+          {
+            "itemId": "english-pre-a1-m008-writing-ex01-i08",
+            "position": 8,
+            "audio": "tts:en-GB:I wave my hand.",
+            "evaluation": {
+              "type": "normalised_text"
+            },
+            "audioLocale": "en-GB",
+            "kind": "sentence",
+            "repeatCount": 3,
+            "expectedAnswer": "I wave my hand.",
+            "segments": [
+              {
+                "segmentId": "english-pre-a1-m008-writing-segment-08",
+                "text": "I wave my hand."
+              }
+            ]
+          },
+          {
+            "itemId": "english-pre-a1-m008-writing-ex01-i09",
+            "position": 9,
+            "audio": "tts:en-GB:I have two arms.",
+            "evaluation": {
+              "type": "normalised_text"
+            },
+            "audioLocale": "en-GB",
+            "kind": "sentence",
+            "repeatCount": 3,
+            "expectedAnswer": "I have two arms.",
+            "segments": [
+              {
+                "segmentId": "english-pre-a1-m008-writing-segment-09",
+                "text": "I have two arms."
+              }
+            ]
+          },
+          {
+            "itemId": "english-pre-a1-m008-writing-ex01-i10",
+            "position": 10,
+            "audio": "tts:en-GB:I walk with my legs.",
+            "evaluation": {
+              "type": "normalised_text"
+            },
+            "audioLocale": "en-GB",
+            "kind": "sentence",
+            "repeatCount": 3,
+            "expectedAnswer": "I walk with my legs.",
+            "segments": [
+              {
+                "segmentId": "english-pre-a1-m008-writing-segment-10",
+                "text": "I walk with my legs."
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "sectionId": "english-pre-a1-m008-speaking",
+      "sectionKey": "speaking",
+      "position": 7,
+      "exercise": {
+        "exerciseId": "english-pre-a1-m008-speaking-ex01",
+        "type": "speaking_prompts",
+        "items": [
+          {
+            "itemId": "english-pre-a1-m008-speaking-ex01-i01",
+            "position": 1,
+            "prompt": "Say a short sentence using “head”.",
+            "modelAnswer": "I have got a head.",
+            "evaluation": {
+              "type": "transcription_feedback",
+              "transcriptionSeparateFromPronunciation": true
+            }
+          },
+          {
+            "itemId": "english-pre-a1-m008-speaking-ex01-i02",
+            "position": 2,
+            "prompt": "Say a short sentence using “hair”.",
+            "modelAnswer": "I have got brown hair.",
+            "evaluation": {
+              "type": "transcription_feedback",
+              "transcriptionSeparateFromPronunciation": true
+            }
+          },
+          {
+            "itemId": "english-pre-a1-m008-speaking-ex01-i03",
+            "position": 3,
+            "prompt": "Say a short sentence using “eye”.",
+            "modelAnswer": "I have got two eyes.",
+            "evaluation": {
+              "type": "transcription_feedback",
+              "transcriptionSeparateFromPronunciation": true
+            }
+          },
+          {
+            "itemId": "english-pre-a1-m008-speaking-ex01-i04",
+            "position": 4,
+            "prompt": "Say a short sentence using “ear”.",
+            "modelAnswer": "I have got two ears.",
+            "evaluation": {
+              "type": "transcription_feedback",
+              "transcriptionSeparateFromPronunciation": true
+            }
+          },
+          {
+            "itemId": "english-pre-a1-m008-speaking-ex01-i05",
+            "position": 5,
+            "prompt": "Say a short sentence using “nose”.",
+            "modelAnswer": "I have got one nose.",
+            "evaluation": {
+              "type": "transcription_feedback",
+              "transcriptionSeparateFromPronunciation": true
+            }
+          },
+          {
+            "itemId": "english-pre-a1-m008-speaking-ex01-i06",
+            "position": 6,
+            "prompt": "Say a short sentence using “mouth”.",
+            "modelAnswer": "I have got one mouth.",
+            "evaluation": {
+              "type": "transcription_feedback",
+              "transcriptionSeparateFromPronunciation": true
+            }
+          },
+          {
+            "itemId": "english-pre-a1-m008-speaking-ex01-i07",
+            "position": 7,
+            "prompt": "Say a short sentence using “tooth”.",
+            "modelAnswer": "A tooth is in my mouth.",
+            "evaluation": {
+              "type": "transcription_feedback",
+              "transcriptionSeparateFromPronunciation": true
+            }
+          },
+          {
+            "itemId": "english-pre-a1-m008-speaking-ex01-i08",
+            "position": 8,
+            "prompt": "Say a short sentence using “hand”.",
+            "modelAnswer": "I have got two hands.",
+            "evaluation": {
+              "type": "transcription_feedback",
+              "transcriptionSeparateFromPronunciation": true
+            }
+          },
+          {
+            "itemId": "english-pre-a1-m008-speaking-ex01-i09",
+            "position": 9,
+            "prompt": "Say a short sentence using “arm”.",
+            "modelAnswer": "I have got two arms.",
+            "evaluation": {
+              "type": "transcription_feedback",
+              "transcriptionSeparateFromPronunciation": true
+            }
+          },
+          {
+            "itemId": "english-pre-a1-m008-speaking-ex01-i10",
+            "position": 10,
+            "prompt": "Say a short sentence using “leg”.",
+            "modelAnswer": "I have got two legs.",
+            "evaluation": {
+              "type": "transcription_feedback",
+              "transcriptionSeparateFromPronunciation": true
+            }
+          }
+        ]
+      }
+    },
+    {
+      "sectionId": "english-pre-a1-m008-listening",
+      "sectionKey": "listening",
+      "position": 8,
+      "exercise": {
+        "exerciseId": "english-pre-a1-m008-listening-ex01",
+        "type": "listening_gap_fill",
+        "content": {
+          "audio": "tts:en-GB:Touch your head. Brush your hair every morning. You use your eye to see. You use your ear to hear. Smell with your nose. Eat with your mouth. A tooth is in your mouth. Wave with your hand. Your arm is between your hand and shoulder. You walk with your leg.",
+          "audioLocale": "en-GB",
+          "transcriptTemplate": "Touch your [[gap-01]]. Brush your [[gap-02]] every morning. You use your [[gap-03]] to see. You use your [[gap-04]] to hear. Smell with your [[gap-05]]. Eat with your [[gap-06]]. A [[gap-07]] is in your mouth. Wave with your [[gap-08]]. Your [[gap-09]] is between your hand and shoulder. You walk with your [[gap-10]].",
+          "wordBank": [
+            {
+              "wordId": "english-pre-a1-m008-listening-word-01",
+              "word": "head"
+            },
+            {
+              "wordId": "english-pre-a1-m008-listening-word-02",
+              "word": "hair"
+            },
+            {
+              "wordId": "english-pre-a1-m008-listening-word-03",
+              "word": "eye"
+            },
+            {
+              "wordId": "english-pre-a1-m008-listening-word-04",
+              "word": "ear"
+            },
+            {
+              "wordId": "english-pre-a1-m008-listening-word-05",
+              "word": "nose"
+            },
+            {
+              "wordId": "english-pre-a1-m008-listening-word-06",
+              "word": "mouth"
+            },
+            {
+              "wordId": "english-pre-a1-m008-listening-word-07",
+              "word": "tooth"
+            },
+            {
+              "wordId": "english-pre-a1-m008-listening-word-08",
+              "word": "hand"
+            },
+            {
+              "wordId": "english-pre-a1-m008-listening-word-09",
+              "word": "arm"
+            },
+            {
+              "wordId": "english-pre-a1-m008-listening-word-10",
+              "word": "leg"
+            }
+          ],
+          "interaction": "select_place_move_replace",
+          "audioTranscript": "tts:en-GB:Touch your head. Brush your hair every morning. You use your eye to see. You use your ear to hear. Smell with your nose. Eat with your mouth. A tooth is in your mouth. Wave with your hand. Your arm is between your hand and shoulder. You walk with your leg."
+        },
+        "items": [
+          {
+            "itemId": "english-pre-a1-m008-listening-ex01-i01",
+            "position": 1,
+            "gapToken": "[[gap-01]]"
+          },
+          {
+            "itemId": "english-pre-a1-m008-listening-ex01-i02",
+            "position": 2,
+            "gapToken": "[[gap-02]]"
+          },
+          {
+            "itemId": "english-pre-a1-m008-listening-ex01-i03",
+            "position": 3,
+            "gapToken": "[[gap-03]]"
+          },
+          {
+            "itemId": "english-pre-a1-m008-listening-ex01-i04",
+            "position": 4,
+            "gapToken": "[[gap-04]]"
+          },
+          {
+            "itemId": "english-pre-a1-m008-listening-ex01-i05",
+            "position": 5,
+            "gapToken": "[[gap-05]]"
+          },
+          {
+            "itemId": "english-pre-a1-m008-listening-ex01-i06",
+            "position": 6,
+            "gapToken": "[[gap-06]]"
+          },
+          {
+            "itemId": "english-pre-a1-m008-listening-ex01-i07",
+            "position": 7,
+            "gapToken": "[[gap-07]]"
+          },
+          {
+            "itemId": "english-pre-a1-m008-listening-ex01-i08",
+            "position": 8,
+            "gapToken": "[[gap-08]]"
+          },
+          {
+            "itemId": "english-pre-a1-m008-listening-ex01-i09",
+            "position": 9,
+            "gapToken": "[[gap-09]]"
+          },
+          {
+            "itemId": "english-pre-a1-m008-listening-ex01-i10",
+            "position": 10,
+            "gapToken": "[[gap-10]]"
+          }
+        ]
+      }
+    }
+  ]
+}
