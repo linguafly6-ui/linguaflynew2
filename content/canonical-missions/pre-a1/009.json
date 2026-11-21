@@ -28,7 +28,7 @@
         "type": "vocabulary_pairs",
         "theory": {
           "title": "At Home: key words and simple sentences",
-          "explanation": "Learn ten useful words about at home. Listen to the British English model and say each word aloud.",
+          "explanation": "Aprende diez palabras para hablar de tu casa. Descubre cómo decir qué hay en cada habitación y dónde están los objetos.",
           "patterns": [
             {
               "label": "Simple sentence",
@@ -113,7 +113,279 @@
             "spanish": "ventana",
             "audio": "tts:en-GB:window"
           }
-        ]
+        ],
+        "lesson": {
+          "phrases": [
+            {
+              "english": "There is a kitchen.",
+              "spanish": "Hay una cocina.",
+              "note": "There is se usa con singular."
+            },
+            {
+              "english": "There are two bedrooms.",
+              "spanish": "Hay dos dormitorios.",
+              "note": "There are se usa con plural."
+            },
+            {
+              "english": "The bed is in the bedroom.",
+              "spanish": "La cama está en el dormitorio.",
+              "note": "In indica dentro de un lugar."
+            },
+            {
+              "english": "The book is on the table.",
+              "spanish": "El libro está sobre la mesa.",
+              "note": "On indica contacto con una superficie."
+            },
+            {
+              "english": "The cat is under the chair.",
+              "spanish": "El gato está debajo de la silla.",
+              "note": "Under significa debajo de."
+            },
+            {
+              "english": "The door is next to the table.",
+              "spanish": "La puerta está al lado de la mesa.",
+              "note": "Next to significa al lado de."
+            },
+            {
+              "english": "between",
+              "spanish": "entre",
+              "note": "Between indica posición entre dos elementos."
+            },
+            {
+              "english": "Open the window, please.",
+              "spanish": "Abre la ventana, por favor.",
+              "note": "Open es una instrucción."
+            },
+            {
+              "english": "Close the door, please.",
+              "spanish": "Cierra la puerta, por favor.",
+              "note": "Close es una instrucción."
+            },
+            {
+              "english": "There is / There are",
+              "spanish": "Hay",
+              "note": "There is + singular; there are + plural."
+            }
+          ],
+          "grammar": [
+            {
+              "english": "There is a kitchen.",
+              "spanish": "Hay una cocina."
+            },
+            {
+              "english": "There are two bedrooms.",
+              "spanish": "Hay dos dormitorios."
+            },
+            {
+              "english": "The bed is in the bedroom.",
+              "spanish": "La cama está en el dormitorio."
+            },
+            {
+              "english": "The book is on the table.",
+              "spanish": "El libro está sobre la mesa."
+            },
+            {
+              "english": "The cat is under the chair.",
+              "spanish": "El gato está debajo de la silla."
+            },
+            {
+              "english": "There is a sofa.",
+              "spanish": "Hay un sofá."
+            },
+            {
+              "english": "There are three windows.",
+              "spanish": "Hay tres ventanas."
+            },
+            {
+              "english": "The door is next to the table.",
+              "spanish": "La puerta está al lado de la mesa."
+            },
+            {
+              "english": "My house is small.",
+              "spanish": "Mi casa es pequeña."
+            },
+            {
+              "english": "The chairs are in the kitchen.",
+              "spanish": "Las sillas están en la cocina."
+            }
+          ],
+          "reading": [
+            {
+              "english": "My house is small but nice.",
+              "spanish": "Mi casa es pequeña pero bonita."
+            },
+            {
+              "english": "There is a kitchen, a bathroom and two bedrooms.",
+              "spanish": "Hay una cocina, un baño y dos dormitorios."
+            },
+            {
+              "english": "In the living room, there is a sofa and a table.",
+              "spanish": "En el salón hay un sofá y una mesa."
+            },
+            {
+              "english": "There is a big window next to the door.",
+              "spanish": "Hay una ventana grande al lado de la puerta."
+            },
+            {
+              "english": "My bed is in my bedroom.",
+              "spanish": "Mi cama está en mi dormitorio."
+            },
+            {
+              "english": "My books are on the table.",
+              "spanish": "Mis libros están sobre la mesa."
+            },
+            {
+              "english": "I like my home.",
+              "spanish": "Me gusta mi hogar."
+            }
+          ],
+          "writing": [
+            {
+              "english": "This is my house.",
+              "spanish": "Esta es mi casa."
+            },
+            {
+              "english": "I cook in the kitchen.",
+              "spanish": "Cocino en la cocina."
+            },
+            {
+              "english": "I sleep in my bedroom.",
+              "spanish": "Duermo en mi dormitorio."
+            },
+            {
+              "english": "I wash in the bathroom.",
+              "spanish": "Me lavo en el baño."
+            },
+            {
+              "english": "We sit in the living room.",
+              "spanish": "Nos sentamos en el salón."
+            },
+            {
+              "english": "The table is big.",
+              "spanish": "La mesa es grande."
+            },
+            {
+              "english": "My bed is in my bedroom.",
+              "spanish": "Mi cama está en mi dormitorio."
+            },
+            {
+              "english": "We sit on the sofa.",
+              "spanish": "Nos sentamos en el sofá."
+            },
+            {
+              "english": "Please close the door.",
+              "spanish": "Por favor, cierra la puerta."
+            },
+            {
+              "english": "Open the window, please.",
+              "spanish": "Abre la ventana, por favor."
+            }
+          ],
+          "speaking": [
+            {
+              "english": "This is my house.",
+              "spanish": "Esta es mi casa.",
+              "prompt": "Say a short sentence using house.",
+              "promptSpanish": "Di una frase corta usando house (casa)."
+            },
+            {
+              "english": "I cook in the kitchen.",
+              "spanish": "Cocino en la cocina.",
+              "prompt": "Say a short sentence using kitchen.",
+              "promptSpanish": "Di una frase corta usando kitchen (cocina)."
+            },
+            {
+              "english": "I sleep in the bedroom.",
+              "spanish": "Duermo en el dormitorio.",
+              "prompt": "Say a short sentence using bedroom.",
+              "promptSpanish": "Di una frase corta usando bedroom (dormitorio)."
+            },
+            {
+              "english": "I wash in the bathroom.",
+              "spanish": "Me lavo en el baño.",
+              "prompt": "Say a short sentence using bathroom.",
+              "promptSpanish": "Di una frase corta usando bathroom (baño)."
+            },
+            {
+              "english": "We sit in the living room.",
+              "spanish": "Nos sentamos en el salón.",
+              "prompt": "Say a short sentence using living room.",
+              "promptSpanish": "Di una frase corta usando living room (salón)."
+            },
+            {
+              "english": "This is a table.",
+              "spanish": "Esta es una mesa.",
+              "prompt": "Say a short sentence using table.",
+              "promptSpanish": "Di una frase corta usando table (mesa)."
+            },
+            {
+              "english": "This is my bed.",
+              "spanish": "Esta es mi cama.",
+              "prompt": "Say a short sentence using bed.",
+              "promptSpanish": "Di una frase corta usando bed (cama)."
+            },
+            {
+              "english": "This is a sofa.",
+              "spanish": "Este es un sofá.",
+              "prompt": "Say a short sentence using sofa.",
+              "promptSpanish": "Di una frase corta usando sofa (sofá)."
+            },
+            {
+              "english": "This is a door.",
+              "spanish": "Esta es una puerta.",
+              "prompt": "Say a short sentence using door.",
+              "promptSpanish": "Di una frase corta usando door (puerta)."
+            },
+            {
+              "english": "This is a window.",
+              "spanish": "Esta es una ventana.",
+              "prompt": "Say a short sentence using window.",
+              "promptSpanish": "Di una frase corta usando window (ventana)."
+            }
+          ],
+          "listening": [
+            {
+              "english": "This is my house.",
+              "spanish": "Esta es mi casa."
+            },
+            {
+              "english": "I cook in the kitchen.",
+              "spanish": "Cocino en la cocina."
+            },
+            {
+              "english": "I sleep in my bedroom.",
+              "spanish": "Duermo en mi dormitorio."
+            },
+            {
+              "english": "I wash in the bathroom.",
+              "spanish": "Me lavo en el baño."
+            },
+            {
+              "english": "We watch television in the living room.",
+              "spanish": "Vemos la televisión en el salón."
+            },
+            {
+              "english": "We eat at the table.",
+              "spanish": "Comemos en la mesa."
+            },
+            {
+              "english": "I sleep in my bed.",
+              "spanish": "Duermo en mi cama."
+            },
+            {
+              "english": "We sit on the sofa.",
+              "spanish": "Nos sentamos en el sofá."
+            },
+            {
+              "english": "Please close the door.",
+              "spanish": "Por favor, cierra la puerta."
+            },
+            {
+              "english": "Open the window for fresh air.",
+              "spanish": "Abre la ventana para que entre aire fresco."
+            }
+          ]
+        }
       }
     },
     {

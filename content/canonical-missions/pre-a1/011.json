@@ -28,7 +28,7 @@
         "type": "vocabulary_pairs",
         "theory": {
           "title": "At the Playground: words and simple English",
-          "explanation": "Learn ten useful words about at the playground. Listen to each British English model and repeat it.",
+          "explanation": "Aprende diez acciones del parque infantil. Descubre cómo dar instrucciones sencillas y expresar lo que puedes hacer con can.",
           "patterns": [
             {
               "label": "Useful sentence",
@@ -113,7 +113,282 @@
             "spanish": "saltar a saltitos",
             "audio": "tts:en-GB:skip"
           }
-        ]
+        ],
+        "lesson": {
+          "phrases": [
+            {
+              "english": "Run to the gate.",
+              "spanish": "Corre hasta la puerta."
+            },
+            {
+              "english": "Jump over the line.",
+              "spanish": "Salta por encima de la línea."
+            },
+            {
+              "english": "Please stop here.",
+              "spanish": "Por favor, para aquí."
+            },
+            {
+              "english": "We play in the park.",
+              "spanish": "Jugamos en el parque."
+            },
+            {
+              "english": "I can climb.",
+              "spanish": "Puedo trepar.",
+              "note": "Can + verbo en forma base."
+            },
+            {
+              "english": "She can run.",
+              "spanish": "Ella puede correr.",
+              "note": "Después de can, el verbo no lleva -s."
+            },
+            {
+              "english": "Do not run.",
+              "spanish": "No corras.",
+              "note": "Do not + verbo base forma una orden negativa."
+            },
+            {
+              "english": "They walk to school.",
+              "spanish": "Ellos caminan al colegio."
+            },
+            {
+              "english": "Skip to the music.",
+              "spanish": "Avanza dando saltitos al ritmo de la música."
+            },
+            {
+              "english": "A command starts with a base verb.",
+              "spanish": "Una orden empieza con un verbo en forma base.",
+              "note": "Run, jump y stop son imperativos."
+            },
+            {
+              "english": "can + base verb",
+              "spanish": "poder + infinitivo",
+              "note": "Can no cambia con he/she/it."
+            }
+          ],
+          "grammar": [
+            {
+              "english": "Run to the gate.",
+              "spanish": "Corre hasta la puerta.",
+              "note": "El imperativo usa el verbo base."
+            },
+            {
+              "english": "Jump over the line.",
+              "spanish": "Salta por encima de la línea.",
+              "note": "Jump es la forma base."
+            },
+            {
+              "english": "Please stop here.",
+              "spanish": "Por favor, para aquí.",
+              "note": "Please suaviza la orden."
+            },
+            {
+              "english": "We play in the park.",
+              "spanish": "Jugamos en el parque.",
+              "note": "Con we usamos play."
+            },
+            {
+              "english": "I can climb.",
+              "spanish": "Puedo trepar.",
+              "note": "Can + verbo base."
+            },
+            {
+              "english": "She can run.",
+              "spanish": "Ella puede correr.",
+              "note": "No decimos can runs."
+            },
+            {
+              "english": "Do not run on the wet floor.",
+              "spanish": "No corras en el suelo mojado.",
+              "note": "Orden negativa: do not + verbo base."
+            },
+            {
+              "english": "They walk to school.",
+              "spanish": "Ellos caminan al colegio.",
+              "note": "Con they usamos walk."
+            },
+            {
+              "english": "A command starts with a base verb.",
+              "spanish": "Una orden empieza con un verbo en forma base."
+            },
+            {
+              "english": "Skip to the music.",
+              "spanish": "Avanza dando saltitos al ritmo de la música."
+            }
+          ],
+          "reading": [
+            {
+              "english": "On Saturday, Mia goes to the playground with her brother Leo.",
+              "spanish": "El sábado, Mia va al parque infantil con su hermano Leo."
+            },
+            {
+              "english": "They run to the swings and jump over a small line.",
+              "spanish": "Corren hacia los columpios y saltan por encima de una línea pequeña."
+            },
+            {
+              "english": "Leo can climb the steps and go down the slide.",
+              "spanish": "Leo puede subir los escalones y bajar por el tobogán."
+            },
+            {
+              "english": "Mia likes to swing.",
+              "spanish": "A Mia le gusta columpiarse."
+            },
+            {
+              "english": "They play with a ball, but they stop when their mum calls.",
+              "spanish": "Juegan con una pelota, pero paran cuando su mamá los llama."
+            },
+            {
+              "english": "Then they walk home together.",
+              "spanish": "Después vuelven caminando a casa juntos."
+            }
+          ],
+          "writing": [
+            {
+              "english": "I run to the gate.",
+              "spanish": "Corro hasta la puerta."
+            },
+            {
+              "english": "I jump over the line.",
+              "spanish": "Salto por encima de la línea."
+            },
+            {
+              "english": "I can climb the steps.",
+              "spanish": "Puedo subir los escalones."
+            },
+            {
+              "english": "I swing on the seat.",
+              "spanish": "Me columpio en el asiento."
+            },
+            {
+              "english": "I slide down the slide.",
+              "spanish": "Me deslizo por el tobogán."
+            },
+            {
+              "english": "I play with my friends.",
+              "spanish": "Juego con mis amigos."
+            },
+            {
+              "english": "Please stop here.",
+              "spanish": "Por favor, para aquí."
+            },
+            {
+              "english": "I walk to school.",
+              "spanish": "Camino hasta el colegio."
+            },
+            {
+              "english": "I hop on one foot.",
+              "spanish": "Salto a la pata coja."
+            },
+            {
+              "english": "I skip to the music.",
+              "spanish": "Avanzo dando saltitos al ritmo de la música."
+            }
+          ],
+          "speaking": [
+            {
+              "english": "I can run.",
+              "spanish": "Puedo correr.",
+              "prompt": "Say a short sentence using run.",
+              "promptSpanish": "Di una frase corta usando run (correr)."
+            },
+            {
+              "english": "I can jump.",
+              "spanish": "Puedo saltar.",
+              "prompt": "Say a short sentence using jump.",
+              "promptSpanish": "Di una frase corta usando jump (saltar)."
+            },
+            {
+              "english": "I can climb a tree.",
+              "spanish": "Puedo trepar a un árbol.",
+              "prompt": "Say a short sentence using climb.",
+              "promptSpanish": "Di una frase corta usando climb (trepar)."
+            },
+            {
+              "english": "I like to swing.",
+              "spanish": "Me gusta columpiarme.",
+              "prompt": "Say a short sentence using swing.",
+              "promptSpanish": "Di una frase corta usando swing (columpiarse)."
+            },
+            {
+              "english": "I go down the slide.",
+              "spanish": "Bajo por el tobogán.",
+              "prompt": "Say a short sentence using slide.",
+              "promptSpanish": "Di una frase corta usando slide (deslizarse)."
+            },
+            {
+              "english": "I play with my friends.",
+              "spanish": "Juego con mis amigos.",
+              "prompt": "Say a short sentence using play.",
+              "promptSpanish": "Di una frase corta usando play (jugar)."
+            },
+            {
+              "english": "I stop at the gate.",
+              "spanish": "Me paro en la puerta.",
+              "prompt": "Say a short sentence using stop.",
+              "promptSpanish": "Di una frase corta usando stop (parar)."
+            },
+            {
+              "english": "I walk to school.",
+              "spanish": "Camino al colegio.",
+              "prompt": "Say a short sentence using walk.",
+              "promptSpanish": "Di una frase corta usando walk (caminar)."
+            },
+            {
+              "english": "I can hop on one foot.",
+              "spanish": "Puedo saltar a la pata coja.",
+              "prompt": "Say a short sentence using hop.",
+              "promptSpanish": "Di una frase corta usando hop (saltar a la pata coja)."
+            },
+            {
+              "english": "I skip to the music.",
+              "spanish": "Avanzo dando saltitos al ritmo de la música.",
+              "prompt": "Say a short sentence using skip.",
+              "promptSpanish": "Di una frase corta usando skip (saltar a saltitos)."
+            }
+          ],
+          "listening": [
+            {
+              "english": "At the playground, I run to the gate.",
+              "spanish": "En el parque infantil, corro hasta la puerta."
+            },
+            {
+              "english": "I jump over a small line.",
+              "spanish": "Salto por encima de una línea pequeña."
+            },
+            {
+              "english": "I climb the steps.",
+              "spanish": "Subo los escalones."
+            },
+            {
+              "english": "I swing on the seat.",
+              "spanish": "Me columpio en el asiento."
+            },
+            {
+              "english": "I go down the slide.",
+              "spanish": "Bajo por el tobogán."
+            },
+            {
+              "english": "I play with my friends.",
+              "spanish": "Juego con mis amigos."
+            },
+            {
+              "english": "When Mum says stop, I stop.",
+              "spanish": "Cuando mamá dice «para», me paro."
+            },
+            {
+              "english": "Then I walk slowly.",
+              "spanish": "Después camino despacio."
+            },
+            {
+              "english": "I hop on one foot.",
+              "spanish": "Salto a la pata coja."
+            },
+            {
+              "english": "I skip to the music.",
+              "spanish": "Avanzo dando saltitos al ritmo de la música."
+            }
+          ]
+        }
       }
     },
     {

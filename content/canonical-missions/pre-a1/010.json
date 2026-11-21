@@ -28,7 +28,7 @@
         "type": "vocabulary_pairs",
         "theory": {
           "title": "Daily Actions: key words and simple sentences",
-          "explanation": "Learn ten useful words about daily actions. Listen to the British English model and say each word aloud.",
+          "explanation": "Aprende diez acciones cotidianas y cómo contar una rutina sencilla. Observa cómo cambia el verbo cuando hablamos de he o she.",
           "patterns": [
             {
               "label": "Simple sentence",
@@ -113,7 +113,287 @@
             "spanish": "dormir",
             "audio": "tts:en-GB:sleep"
           }
-        ]
+        ],
+        "lesson": {
+          "phrases": [
+            {
+              "english": "I wake up at seven.",
+              "spanish": "Me despierto a las siete."
+            },
+            {
+              "english": "I get up in the morning.",
+              "spanish": "Me levanto por la mañana."
+            },
+            {
+              "english": "She gets up early.",
+              "spanish": "Ella se levanta temprano."
+            },
+            {
+              "english": "He brushes his teeth.",
+              "spanish": "Él se cepilla los dientes."
+            },
+            {
+              "english": "We eat breakfast.",
+              "spanish": "Desayunamos."
+            },
+            {
+              "english": "My brother drinks water.",
+              "spanish": "Mi hermano bebe agua."
+            },
+            {
+              "english": "She goes to school.",
+              "spanish": "Ella va al colegio."
+            },
+            {
+              "english": "He plays football.",
+              "spanish": "Él juega al fútbol."
+            },
+            {
+              "english": "I study English.",
+              "spanish": "Estudio inglés."
+            },
+            {
+              "english": "I sleep at nine.",
+              "spanish": "Me duermo a las nueve."
+            },
+            {
+              "english": "Then",
+              "spanish": "Después",
+              "note": "Then indica que una acción ocurre a continuación."
+            },
+            {
+              "english": "in the morning / in the afternoon",
+              "spanish": "por la mañana / por la tarde"
+            }
+          ],
+          "grammar": [
+            {
+              "english": "I wake up at seven.",
+              "spanish": "Me despierto a las siete.",
+              "note": "Con I usamos wake up."
+            },
+            {
+              "english": "She gets up early.",
+              "spanish": "Ella se levanta temprano.",
+              "note": "Con she añadimos -s a gets."
+            },
+            {
+              "english": "He brushes his teeth.",
+              "spanish": "Él se cepilla los dientes.",
+              "note": "Con he añadimos -es a brushes."
+            },
+            {
+              "english": "We eat breakfast.",
+              "spanish": "Desayunamos.",
+              "note": "Con we usamos eat."
+            },
+            {
+              "english": "My brother drinks water.",
+              "spanish": "Mi hermano bebe agua.",
+              "note": "Con he/she/it añadimos -s a drinks."
+            },
+            {
+              "english": "She goes to school.",
+              "spanish": "Ella va al colegio.",
+              "note": "Go cambia a goes con she."
+            },
+            {
+              "english": "I study English.",
+              "spanish": "Estudio inglés.",
+              "note": "Con I usamos study."
+            },
+            {
+              "english": "He plays football.",
+              "spanish": "Él juega al fútbol.",
+              "note": "Con he usamos plays."
+            },
+            {
+              "english": "I sleep at nine.",
+              "spanish": "Me duermo a las nueve."
+            },
+            {
+              "english": "She washes her face.",
+              "spanish": "Ella se lava la cara.",
+              "note": "Wash añade -es: washes."
+            }
+          ],
+          "reading": [
+            {
+              "english": "I wake up at seven in the morning.",
+              "spanish": "Me despierto a las siete de la mañana."
+            },
+            {
+              "english": "I get up and wash my face.",
+              "spanish": "Me levanto y me lavo la cara."
+            },
+            {
+              "english": "Then I brush my teeth and eat breakfast.",
+              "spanish": "Después me cepillo los dientes y desayuno."
+            },
+            {
+              "english": "I drink water and go to school.",
+              "spanish": "Bebo agua y voy al colegio."
+            },
+            {
+              "english": "In the afternoon, I study and play with my friends.",
+              "spanish": "Por la tarde, estudio y juego con mis amigos."
+            },
+            {
+              "english": "I eat dinner at seven.",
+              "spanish": "Ceno a las siete."
+            },
+            {
+              "english": "I sleep at nine.",
+              "spanish": "Me duermo a las nueve."
+            }
+          ],
+          "writing": [
+            {
+              "english": "I wake up at seven.",
+              "spanish": "Me despierto a las siete."
+            },
+            {
+              "english": "I get up in the morning.",
+              "spanish": "Me levanto por la mañana."
+            },
+            {
+              "english": "I wash my face.",
+              "spanish": "Me lavo la cara."
+            },
+            {
+              "english": "I brush my teeth.",
+              "spanish": "Me cepillo los dientes."
+            },
+            {
+              "english": "I eat breakfast.",
+              "spanish": "Desayuno."
+            },
+            {
+              "english": "I drink water.",
+              "spanish": "Bebo agua."
+            },
+            {
+              "english": "I go to school.",
+              "spanish": "Voy al colegio."
+            },
+            {
+              "english": "I study English.",
+              "spanish": "Estudio inglés."
+            },
+            {
+              "english": "I play with my friends.",
+              "spanish": "Juego con mis amigos."
+            },
+            {
+              "english": "I sleep at nine.",
+              "spanish": "Me duermo a las nueve."
+            }
+          ],
+          "speaking": [
+            {
+              "english": "I wake up at seven.",
+              "spanish": "Me despierto a las siete.",
+              "prompt": "Say a short sentence using wake up.",
+              "promptSpanish": "Di una frase corta usando wake up (despertarse)."
+            },
+            {
+              "english": "I get up at seven.",
+              "spanish": "Me levanto a las siete.",
+              "prompt": "Say a short sentence using get up.",
+              "promptSpanish": "Di una frase corta usando get up (levantarse)."
+            },
+            {
+              "english": "I wash my face.",
+              "spanish": "Me lavo la cara.",
+              "prompt": "Say a short sentence using wash.",
+              "promptSpanish": "Di una frase corta usando wash (lavarse)."
+            },
+            {
+              "english": "I brush my teeth.",
+              "spanish": "Me cepillo los dientes.",
+              "prompt": "Say a short sentence using brush.",
+              "promptSpanish": "Di una frase corta usando brush (cepillarse)."
+            },
+            {
+              "english": "I eat breakfast.",
+              "spanish": "Desayuno.",
+              "prompt": "Say a short sentence using eat.",
+              "promptSpanish": "Di una frase corta usando eat (comer)."
+            },
+            {
+              "english": "I drink water.",
+              "spanish": "Bebo agua.",
+              "prompt": "Say a short sentence using drink.",
+              "promptSpanish": "Di una frase corta usando drink (beber)."
+            },
+            {
+              "english": "I go to school.",
+              "spanish": "Voy al colegio.",
+              "prompt": "Say a short sentence using go.",
+              "promptSpanish": "Di una frase corta usando go (ir)."
+            },
+            {
+              "english": "I study English.",
+              "spanish": "Estudio inglés.",
+              "prompt": "Say a short sentence using study.",
+              "promptSpanish": "Di una frase corta usando study (estudiar)."
+            },
+            {
+              "english": "I play football.",
+              "spanish": "Juego al fútbol.",
+              "prompt": "Say a short sentence using play.",
+              "promptSpanish": "Di una frase corta usando play (jugar)."
+            },
+            {
+              "english": "I sleep at nine.",
+              "spanish": "Me duermo a las nueve.",
+              "prompt": "Say a short sentence using sleep.",
+              "promptSpanish": "Di una frase corta usando sleep (dormir)."
+            }
+          ],
+          "listening": [
+            {
+              "english": "I wake up at seven.",
+              "spanish": "Me despierto a las siete."
+            },
+            {
+              "english": "I get up and leave my bed.",
+              "spanish": "Me levanto y salgo de la cama."
+            },
+            {
+              "english": "I wash my face.",
+              "spanish": "Me lavo la cara."
+            },
+            {
+              "english": "I brush my teeth.",
+              "spanish": "Me cepillo los dientes."
+            },
+            {
+              "english": "I eat breakfast.",
+              "spanish": "Desayuno."
+            },
+            {
+              "english": "I drink water.",
+              "spanish": "Bebo agua."
+            },
+            {
+              "english": "I go to school.",
+              "spanish": "Voy al colegio."
+            },
+            {
+              "english": "I study English.",
+              "spanish": "Estudio inglés."
+            },
+            {
+              "english": "I play football with friends.",
+              "spanish": "Juego al fútbol con mis amigos."
+            },
+            {
+              "english": "I sleep at night.",
+              "spanish": "Duermo por la noche."
+            }
+          ]
+        }
       }
     },
     {

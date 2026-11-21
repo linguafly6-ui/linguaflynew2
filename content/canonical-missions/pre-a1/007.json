@@ -28,7 +28,7 @@
         "type": "vocabulary_pairs",
         "theory": {
           "title": "School Things: key words and simple sentences",
-          "explanation": "Learn ten useful words about school things. Listen to the British English model and say each word aloud.",
+          "explanation": "Aprende diez palabras de objetos escolares. Descubre cómo señalar objetos cercanos y lejanos, decir qué tienes y describir dónde están.",
           "patterns": [
             {
               "label": "Simple sentence",
@@ -113,7 +113,276 @@
             "spanish": "estuche",
             "audio": "tts:en-GB:pencil case"
           }
-        ]
+        ],
+        "lesson": {
+          "phrases": [
+            {
+              "english": "This is a book.",
+              "spanish": "Este es un libro.",
+              "note": "This is presenta una cosa cercana en singular."
+            },
+            {
+              "english": "These are pencils.",
+              "spanish": "Estos son lápices.",
+              "note": "These are presenta varias cosas cercanas."
+            },
+            {
+              "english": "That is your notebook.",
+              "spanish": "Ese es tu cuaderno.",
+              "note": "That is presenta una cosa más alejada."
+            },
+            {
+              "english": "Those are two rubbers.",
+              "spanish": "Esas son dos gomas.",
+              "note": "Those are presenta varias cosas alejadas."
+            },
+            {
+              "english": "It is a pen.",
+              "spanish": "Es un bolígrafo."
+            },
+            {
+              "english": "I have got a desk.",
+              "spanish": "Tengo un pupitre.",
+              "note": "Have got expresa posesión."
+            },
+            {
+              "english": "The chair is here.",
+              "spanish": "La silla está aquí."
+            },
+            {
+              "english": "a / an",
+              "spanish": "un / una",
+              "note": "A va ante sonido consonántico; an, ante sonido vocálico."
+            },
+            {
+              "english": "next to",
+              "spanish": "al lado de",
+              "note": "Indica que algo está junto a otra cosa."
+            },
+            {
+              "english": "in / on",
+              "spanish": "dentro de / sobre",
+              "note": "In indica interior; on indica superficie."
+            }
+          ],
+          "grammar": [
+            {
+              "english": "This is a book.",
+              "spanish": "Este es un libro."
+            },
+            {
+              "english": "These are pencils.",
+              "spanish": "Estos son lápices.",
+              "note": "These are concuerda con plural."
+            },
+            {
+              "english": "It is a pen.",
+              "spanish": "Es un bolígrafo.",
+              "note": "Pen comienza con sonido consonántico."
+            },
+            {
+              "english": "This is an orange ruler.",
+              "spanish": "Esta es una regla naranja.",
+              "note": "An va antes de orange."
+            },
+            {
+              "english": "That is my notebook.",
+              "spanish": "Ese es mi cuaderno."
+            },
+            {
+              "english": "These are two rubbers.",
+              "spanish": "Estas son dos gomas."
+            },
+            {
+              "english": "I have got a desk.",
+              "spanish": "Tengo un pupitre."
+            },
+            {
+              "english": "This is my schoolbag.",
+              "spanish": "Esta es mi mochila."
+            },
+            {
+              "english": "The chair is here.",
+              "spanish": "La silla está aquí."
+            },
+            {
+              "english": "My pencil case is blue.",
+              "spanish": "Mi estuche es azul."
+            }
+          ],
+          "reading": [
+            {
+              "english": "My schoolbag is blue.",
+              "spanish": "Mi mochila es azul."
+            },
+            {
+              "english": "In my bag, I have got a book, a notebook and a pencil case.",
+              "spanish": "En mi mochila tengo un libro, un cuaderno y un estuche."
+            },
+            {
+              "english": "My pencil case has a pen, two pencils and a rubber.",
+              "spanish": "Mi estuche tiene un bolígrafo, dos lápices y una goma."
+            },
+            {
+              "english": "I have got a ruler too.",
+              "spanish": "También tengo una regla."
+            },
+            {
+              "english": "In the classroom, my desk is next to a chair.",
+              "spanish": "En el aula, mi pupitre está al lado de una silla."
+            },
+            {
+              "english": "I like my school things.",
+              "spanish": "Me gustan mis cosas del colegio."
+            }
+          ],
+          "writing": [
+            {
+              "english": "This is my book.",
+              "spanish": "Este es mi libro."
+            },
+            {
+              "english": "I write with a pen.",
+              "spanish": "Escribo con un bolígrafo."
+            },
+            {
+              "english": "I draw with a pencil.",
+              "spanish": "Dibujo con un lápiz."
+            },
+            {
+              "english": "A ruler is long.",
+              "spanish": "Una regla es larga."
+            },
+            {
+              "english": "I use a rubber.",
+              "spanish": "Uso una goma."
+            },
+            {
+              "english": "My schoolbag is blue.",
+              "spanish": "Mi mochila es azul."
+            },
+            {
+              "english": "This is my notebook.",
+              "spanish": "Este es mi cuaderno."
+            },
+            {
+              "english": "I sit at my desk.",
+              "spanish": "Me siento en mi pupitre."
+            },
+            {
+              "english": "I sit on a chair.",
+              "spanish": "Me siento en una silla."
+            },
+            {
+              "english": "My pencil case is blue.",
+              "spanish": "Mi estuche es azul."
+            }
+          ],
+          "speaking": [
+            {
+              "english": "This is a book.",
+              "spanish": "Este es un libro.",
+              "prompt": "Say a short sentence using book.",
+              "promptSpanish": "Di una frase corta usando book (libro)."
+            },
+            {
+              "english": "This is a pen.",
+              "spanish": "Este es un bolígrafo.",
+              "prompt": "Say a short sentence using pen.",
+              "promptSpanish": "Di una frase corta usando pen (bolígrafo)."
+            },
+            {
+              "english": "This is a pencil.",
+              "spanish": "Este es un lápiz.",
+              "prompt": "Say a short sentence using pencil.",
+              "promptSpanish": "Di una frase corta usando pencil (lápiz)."
+            },
+            {
+              "english": "This is a ruler.",
+              "spanish": "Esta es una regla.",
+              "prompt": "Say a short sentence using ruler.",
+              "promptSpanish": "Di una frase corta usando ruler (regla)."
+            },
+            {
+              "english": "This is a rubber.",
+              "spanish": "Esta es una goma.",
+              "prompt": "Say a short sentence using rubber.",
+              "promptSpanish": "Di una frase corta usando rubber (goma)."
+            },
+            {
+              "english": "This is my schoolbag.",
+              "spanish": "Esta es mi mochila.",
+              "prompt": "Say a short sentence using schoolbag.",
+              "promptSpanish": "Di una frase corta usando schoolbag (mochila)."
+            },
+            {
+              "english": "This is my notebook.",
+              "spanish": "Este es mi cuaderno.",
+              "prompt": "Say a short sentence using notebook.",
+              "promptSpanish": "Di una frase corta usando notebook (cuaderno)."
+            },
+            {
+              "english": "This is my desk.",
+              "spanish": "Este es mi pupitre.",
+              "prompt": "Say a short sentence using desk.",
+              "promptSpanish": "Di una frase corta usando desk (pupitre)."
+            },
+            {
+              "english": "This is my chair.",
+              "spanish": "Esta es mi silla.",
+              "prompt": "Say a short sentence using chair.",
+              "promptSpanish": "Di una frase corta usando chair (silla)."
+            },
+            {
+              "english": "This is my pencil case.",
+              "spanish": "Este es mi estuche.",
+              "prompt": "Say a short sentence using pencil case.",
+              "promptSpanish": "Di una frase corta usando pencil case (estuche)."
+            }
+          ],
+          "listening": [
+            {
+              "english": "I read a book at school.",
+              "spanish": "Leo un libro en el colegio."
+            },
+            {
+              "english": "I write with a pen.",
+              "spanish": "Escribo con un bolígrafo."
+            },
+            {
+              "english": "I draw with a pencil.",
+              "spanish": "Dibujo con un lápiz."
+            },
+            {
+              "english": "A ruler helps me draw a straight line.",
+              "spanish": "Una regla me ayuda a dibujar una línea recta."
+            },
+            {
+              "english": "I clean pencil marks with a rubber.",
+              "spanish": "Borro las marcas de lápiz con una goma."
+            },
+            {
+              "english": "I carry my books in my schoolbag.",
+              "spanish": "Llevo mis libros en la mochila."
+            },
+            {
+              "english": "I write notes in my notebook.",
+              "spanish": "Escribo notas en mi cuaderno."
+            },
+            {
+              "english": "I sit at my desk.",
+              "spanish": "Me siento en mi pupitre."
+            },
+            {
+              "english": "I sit on a chair.",
+              "spanish": "Me siento en una silla."
+            },
+            {
+              "english": "My pens are in my pencil case.",
+              "spanish": "Mis bolígrafos están en mi estuche."
+            }
+          ]
+        }
       }
     },
     {
