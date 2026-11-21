@@ -6,6 +6,7 @@ on:
       - work/linguafly-academy-audit
     paths:
       - "app/academia/a1/001-canonical/**"
+      - "app/academia/pre-a1/001/**"
       - "components/academy/CanonicalMission.tsx"
       - "app/api/auth/**"
       - "app/api/billing/**"
@@ -21,6 +22,7 @@ on:
       - "lib/spaced-repetition.ts"
       - "lib/cf-context.ts"
       - "content/canonical-missions/**"
+      - "content/missions/pre-a1/**"
       - "schemas/course-mission.schema.json"
       - "package.json"
       - "package-lock.json"
@@ -54,7 +56,9 @@ jobs:
         run: npm ci
 
       - name: Validate canonical mission JSON Schema
-        run: npx --yes ajv-cli@5 validate --spec=draft2020 -s schemas/course-mission.schema.json -d content/canonical-missions/a1/001.json
+        run: |
+          npx --yes ajv-cli@5 validate --spec=draft2020 -s schemas/course-mission.schema.json -d content/canonical-missions/a1/001.json
+          npx --yes ajv-cli@5 validate --spec=draft2020 -s schemas/course-mission.schema.json -d content/canonical-missions/pre-a1/001.json
 
       - name: Type-check application
         run: npx tsc --noEmit
