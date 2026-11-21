@@ -1,0 +1,81 @@
+"use client";
+
+import { useMemo, useState } from "react";
+import missionSource from "@/content/canonical-missions/a1/001.json";
+
+type Item = { itemId: string; en?: string; es?: string; prompt?: string; answer?: string; options?: string[]; word?: string; meaning?: string; cue?: string; target?: string; kind?: string; model?: string; focus?: string };
+type Section = { sectionId: string; sectionKey: string; title: string; items: Item[]; theory?: { title: string; explain: string; patterns: string[]; negative: string; question: string; examples: string[][] }; passage?: string; audioText?: string };
+type Mission = { course: { level: string }; mission: { title: string; objective: string; sections: Section[] } };
+const mission = missionSource as Mission;
+const labels: Record<string, string> = { explore: "Exploración", practice: "Practice", grammar: "Grammar", pronunciation: "Pronunciation", reading: "Reading", writing: "Writing", speaking: "Speaking", listening: "Listening" };
+
+function speak(text: string) {
+  if (typeof window === "undefined" || !("speechSynthesis" in window)) return;
+  window.speechSynthesis.cancel();
+  const utterance = new SpeechSynthesisUtterance(text);
+  utterance.lang = "en-GB";
+  window.speechSynthesis.speak(utterance);
+}
+
+export default function CanonicalMission() {
+  const [sectionKey, setSectionKey] = useState("explore");
+  const [index, setIndex] = useState(0);
+  const [answers, setAnswers] = useState<Record<string, string>>({});
+  const [feedback, setFeedback] = useState("");
+  const [checked, setChecked] = useState(false);
+  const [score, setScore] = useState(0);
+  const [selectedPair, setSelectedPair] = useState<number | null>(null);
+  const [matched, setMatched] = useState<number[]>([]);
+  const [draft, setDraft] = useState("");
+  const section = mission.mission.sections.find((item) => item.sectionKey === sectionKey) ?? mission.mission.sections[0];
+  const item = section.items[index];
+  const progress = useMemo(() => section.items.length ? Math.round(((index + (checked ? 1 : 0)) / section.items.length) * 100) : 0, [index, checked, section.items.length]);
+
+  function changeSection(key: string) {
+    setSectionKey(key); setIndex(0); setFeedback(""); setChecked(false); setDraft(""); setSelectedPair(null);
+  }
+  function mark(correct: boolean, expected: string) {
+    if (checked) return;
+    setChecked(true);
+    setFeedback(correct ? "¡Correcto!" : `Respuesta correcta: ${expected}`);
+    if (correct) setScore((value) => value + 1);
+  }
+  function next() {
+    setIndex((value) => Math.min(value + 1, section.items.length - 1));
+    setChecked(false); setFeedback(""); setDraft("");
+  }
+
+  return (
+    <div className="mx-auto w-full max-w-5xl text-slate-900">
+      <header className="mb-6 rounded-2xl border border-slate-200 bg-white p-6 sm:p-8">
+        <p className="text-xs font-semibold uppercase tracking-[.16em] text-blue-700">LINGUAFLY ACADEMY · A1</p>
+        <div className="mt-3 flex flex-wrap items-start justify-between gap-4">
+          <div><h1 className="text-3xl font-semibold tracking-tight">{mission.mission.title}</h1><p className="mt-2 max-w-2xl text-sm leading-6 text-slate-600">{mission.mission.objective}</p></div>
+          <span className="rounded-full bg-slate-100 px-3 py-1.5 text-xs font-semibold text-slate-600">Misión 001</span>
+        </div>
+      </header>
+      <nav aria-label="Secciones de la misión" className="mb-5 flex gap-2 overflow-x-auto pb-2">
+        {mission.mission.sections.map((entry, i) => <button key={entry.sectionId} onClick={() => changeSection(entry.sectionKey)} className={`shrink-0 rounded-xl border px-3 py-2 text-sm font-medium transition ${sectionKey === entry.sectionKey ? "border-blue-700 bg-blue-700 text-white" : "border-slate-200 bg-white text-slate-600 hover:border-slate-400"}`}><span className="mr-1.5 text-xs opacity-70">{String(i + 1).padStart(2, "0")}</span>{labels[entry.sectionKey]}</button>)}
+      </nav>
+      <section className="rounded-2xl border border-slate-200 bg-white p-5 sm:p-8">
+        <div className="flex flex-wrap items-center justify-between gap-3">
+          <div><p className="text-xs font-semibold uppercase tracking-widest text-blue-700">A1 · MISIÓN 001</p><h2 className="mt-1 text-2xl font-semibold tracking-tight">{section.title}</h2></div>
+          <span className="text-sm text-slate-500">{section.items.length} actividades</span>
+        </div>
+        <div className="mt-5 h-1.5 overflow-hidden rounded-full bg-slate-100"><div className="h-full rounded-full bg-blue-600 transition-all" style={{ width: `${sectionKey === "explore" ? matched.length * 10 : progress}%` }} /></div>
+        {section.theory && <div className="mt-6 rounded-xl border border-slate-200 bg-slate-50 p-5"><h3 className="font-semibold">{section.theory.title}</h3><p className="mt-2 text-sm leading-6 text-slate-600">{section.theory.explain}</p><ul className="mt-4 grid gap-2 text-sm text-slate-700">{section.theory.patterns.map((pattern) => <li key={pattern}>• {pattern}</li>)}</ul><p className="mt-4 text-sm text-slate-600"><strong>Negativa:</strong> {section.theory.negative}</p><p className="mt-2 text-sm text-slate-600"><strong>Pregunta:</strong> {section.theory.question}</p><div className="mt-4 grid gap-2 sm:grid-cols-3">{section.theory.examples.map(([en, es]) => <div key={en} className="rounded-lg border border-slate-200 bg-white p-3 text-sm"><p className="font-medium">{en}</p><p className="mt-1 text-slate-500">{es}</p></div>)}</div></div>}
+        {section.passage && <article className="mt-6 rounded-xl bg-slate-50 p-5 text-base leading-8 text-slate-700">{section.passage}</article>}
+        {sectionKey === "explore" && <div className="mt-6 grid gap-3 sm:grid-cols-2">{section.items.map((entry, i) => <div key={entry.itemId} className="flex items-center gap-2 rounded-xl border border-slate-200 p-3"><span className="min-w-0 flex-1 text-sm font-medium">{entry.en}</span><select aria-label={`Traducción de ${entry.en}`} value={answers[entry.itemId] ?? ""} disabled={matched.includes(i)} onChange={(e) => { const value = e.target.value; setAnswers((old) => ({ ...old, [entry.itemId]: value })); if (value === entry.es) setMatched((old) => [...old, i]); }} className="max-w-[55%] rounded-lg border border-slate-300 bg-white p-2 text-sm"><option value="">Elige traducción</option>{section.items.map((option) => <option key={option.itemId} value={option.es}>{option.es}</option>)}</select>{matched.includes(i) && <span aria-label="Correcto" className="text-emerald-700">✓</span>}</div>)}</div>}
+        {sectionKey === "pronunciation" && <div className="mt-6 grid gap-3 sm:grid-cols-2">{section.items.map((entry) => <article key={entry.itemId} className="rounded-xl border border-slate-200 p-4"><p className="text-lg font-semibold">{entry.word}</p><p className="text-sm text-slate-500">{entry.meaning}</p><p className="mt-2 font-medium text-blue-700">{entry.cue}</p><p className="text-xs text-slate-400">Guía aproximada para hispanohablantes; no es IPA.</p><button onClick={() => speak(entry.word ?? "")} className="mt-3 rounded-lg border border-slate-200 px-3 py-2 text-sm">▶ Escuchar modelo británico</button></article>)}</div>}
+        {["practice", "grammar", "reading"].includes(sectionKey) && item && <div className="mt-7"><p className="text-xs font-semibold uppercase tracking-widest text-slate-400">Actividad {index + 1} de {section.items.length}</p><h3 className="mt-3 text-lg font-semibold leading-7">{item.prompt}</h3><div className="mt-5 grid gap-2">{item.options?.map((option) => <button key={option} disabled={checked} onClick={() => mark(option === item.answer, item.answer ?? "")} className={`rounded-xl border px-4 py-3 text-left text-sm transition disabled:cursor-default ${checked && option === item.answer ? "border-emerald-500 bg-emerald-50" : "border-slate-200 hover:border-blue-400"}`}>{option}</button>)}</div></div>}
+        {sectionKey === "writing" && item && <div className="mt-7"><p className="text-xs font-semibold uppercase tracking-widest text-slate-400">Dictado {index + 1} de 10 · {item.kind === "word" ? "Palabra" : "Frase"}</p><p className="mt-3 text-sm text-slate-600">Escucha el audio británico y escribe exactamente lo que oyes.</p><button onClick={() => speak(item.target ?? "")} className="mt-4 rounded-xl border border-slate-200 px-4 py-3 text-sm font-medium">▶ Reproducir dictado</button><label className="mt-5 block text-sm font-medium">Tu respuesta<input value={draft} onChange={(e) => setDraft(e.target.value)} disabled={checked} className="mt-2 block w-full rounded-xl border border-slate-300 p-3" /></label><button disabled={checked || !draft.trim()} onClick={() => mark(draft.trim().toLowerCase().replace(/[.,!?']/g, "") === (item.target ?? "").toLowerCase().replace(/[.,!?']/g, ""), item.target ?? "")} className="mt-3 rounded-xl bg-blue-700 px-4 py-3 text-sm font-semibold text-white disabled:opacity-40">Comprobar dictado</button></div>}
+        {sectionKey === "speaking" && item && <div className="mt-7"><p className="text-xs font-semibold uppercase tracking-widest text-slate-400">Tarea oral {index + 1} de 10</p><h3 className="mt-3 text-lg font-semibold">{item.prompt}</h3><div className="mt-4 rounded-xl bg-slate-50 p-4"><p className="text-xs font-semibold uppercase tracking-wider text-slate-400">Modelo de referencia</p><p className="mt-2 text-sm text-slate-700">{item.model}</p><button onClick={() => speak(item.model ?? "")} className="mt-3 rounded-lg border border-slate-200 bg-white px-3 py-2 text-sm">▶ Escuchar modelo</button></div><p className="mt-4 text-sm text-slate-500">Graba tu respuesta con el grabador de tu dispositivo y compárala con el modelo. Esta versión no atribuye una nota fonética automática.</p></div>}
+        {sectionKey === "listening" && item && <div className="mt-7"><p className="text-xs font-semibold uppercase tracking-widest text-slate-400">Hueco {index + 1} de 10</p><button onClick={() => speak(section.audioText ?? "")} className="mt-3 rounded-xl border border-slate-200 px-4 py-3 text-sm">▶ Escuchar audio completo</button><h3 className="mt-5 text-lg font-semibold">{item.prompt}</h3><input value={draft} onChange={(e) => setDraft(e.target.value)} disabled={checked} className="mt-4 block w-full rounded-xl border border-slate-300 p-3" placeholder="Escribe la palabra que falta" /><button disabled={checked || !draft.trim()} onClick={() => mark(draft.trim().toLowerCase() === (item.answer ?? "").toLowerCase(), item.answer ?? "")} className="mt-3 rounded-xl bg-blue-700 px-4 py-3 text-sm font-semibold text-white disabled:opacity-40">Comprobar respuesta</button></div>}
+        {feedback && <p role="status" className="mt-5 rounded-xl bg-slate-50 p-4 text-sm font-semibold text-slate-700">{feedback}</p>}
+        {sectionKey !== "explore" && sectionKey !== "pronunciation" && <div className="mt-7 flex items-center justify-between gap-3"><span className="text-xs text-slate-400">Puntuación de esta sesión: {score}</span><button onClick={next} disabled={!checked || index === section.items.length - 1} className="rounded-xl bg-blue-700 px-5 py-3 text-sm font-semibold text-white disabled:cursor-not-allowed disabled:opacity-40">Siguiente →</button></div>}
+        {sectionKey === "explore" && <p className="mt-5 text-sm text-slate-500" role="status">{matched.length} de 10 parejas correctas.</p>}
+      </section>
+      <p className="mt-4 text-center text-xs leading-5 text-slate-400">El progreso de esta vista es local y temporal; todavía no se guarda en la cuenta del alumno.</p>
+    </div>
+  );
+}
