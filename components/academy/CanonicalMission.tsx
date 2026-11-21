@@ -1,6 +1,6 @@
 "use client";
 
-import { useMemo, useState } from "react";
+import { useEffect, useMemo, useRef, useState } from "react";
 import missionSource from "@/content/canonical-missions/a1/001.json";
 
 type Item = { itemId: string; en?: string; es?: string; prompt?: string; answer?: string; options?: string[]; word?: string; meaning?: string; cue?: string; target?: string; kind?: string; model?: string; focus?: string };
@@ -24,17 +24,56 @@ export default function CanonicalMission() {
   const [feedback, setFeedback] = useState("");
   const [checked, setChecked] = useState(false);
   const [score, setScore] = useState(0);
-  const [selectedPair, setSelectedPair] = useState<number | null>(null);
   const [matched, setMatched] = useState<number[]>([]);
   const [listeningAnswers, setListeningAnswers] = useState<Record<string, string>>({});
   const [selectedListeningWord, setSelectedListeningWord] = useState("");
   const [draft, setDraft] = useState("");
+  const [recording, setRecording] = useState(false);
+  const [recordedUrl, setRecordedUrl] = useState("");
+  const [recordingMessage, setRecordingMessage] = useState("");
+  const recorderRef = useRef<MediaRecorder | null>(null);
+  const streamRef = useRef<MediaStream | null>(null);
+  const chunksRef = useRef<Blob[]>([]);
+
+  useEffect(() => () => {
+    streamRef.current?.getTracks().forEach((track) => track.stop());
+    if (recordedUrl) URL.revokeObjectURL(recordedUrl);
+  }, [recordedUrl]);
+
+  async function startRecording() {
+    try {
+      if (!navigator.mediaDevices?.getUserMedia || !window.MediaRecorder) {
+        setRecordingMessage("Este navegador no permite grabar audio."); return;
+      }
+      const stream = await navigator.mediaDevices.getUserMedia({ audio: true });
+      streamRef.current = stream;
+      chunksRef.current = [];
+      const recorder = new MediaRecorder(stream);
+      recorderRef.current = recorder;
+      recorder.ondataavailable = (event) => { if (event.data.size) chunksRef.current.push(event.data); };
+      recorder.onstop = () => {
+        const blob = new Blob(chunksRef.current, { type: recorder.mimeType || "audio/webm" });
+        setRecordedUrl(URL.createObjectURL(blob));
+        stream.getTracks().forEach((track) => track.stop());
+        streamRef.current = null;
+        setRecordingMessage("Grabación guardada temporalmente en esta página. No se ha enviado al servidor.");
+      };
+      recorder.start(); setRecording(true); setRecordingMessage("Grabando… habla cuando estés preparado.");
+    } catch {
+      setRecordingMessage("No se pudo acceder al micrófono. Revisa los permisos del navegador.");
+    }
+  }
+
+  function stopRecording() {
+    if (recorderRef.current?.state === "recording") recorderRef.current.stop();
+    setRecording(false);
+  }
   const section = mission.mission.sections.find((item) => item.sectionKey === sectionKey) ?? mission.mission.sections[0];
   const item = section.items[index];
   const progress = useMemo(() => section.items.length ? Math.round(((index + (checked ? 1 : 0)) / section.items.length) * 100) : 0, [index, checked, section.items.length]);
 
   function changeSection(key: string) {
-    setSectionKey(key); setIndex(0); setFeedback(""); setChecked(false); setDraft(""); setSelectedPair(null); setListeningAnswers({}); setSelectedListeningWord("");
+    setSectionKey(key); setIndex(0); setFeedback(""); setChecked(false); setDraft(""); setListeningAnswers({}); setSelectedListeningWord("");
   }
   function mark(correct: boolean, expected: string) {
     if (checked) return;
@@ -71,7 +110,7 @@ export default function CanonicalMission() {
         {sectionKey === "pronunciation" && <div className="mt-6 grid gap-3 sm:grid-cols-2">{section.items.map((entry) => <article key={entry.itemId} className="rounded-xl border border-slate-200 p-4"><p className="text-lg font-semibold">{entry.word}</p><p className="text-sm text-slate-500">{entry.meaning}</p><p className="mt-2 font-medium text-blue-700">{entry.cue}</p><p className="text-xs text-slate-400">Guía aproximada para hispanohablantes; no es IPA.</p><button onClick={() => speak(entry.word ?? "")} className="mt-3 rounded-lg border border-slate-200 px-3 py-2 text-sm">▶ Escuchar modelo británico</button></article>)}</div>}
         {["practice", "grammar", "reading"].includes(sectionKey) && item && <div className="mt-7"><p className="text-xs font-semibold uppercase tracking-widest text-slate-400">Actividad {index + 1} de {section.items.length}</p><h3 className="mt-3 text-lg font-semibold leading-7">{item.prompt}</h3><div className="mt-5 grid gap-2">{item.options?.map((option) => <button key={option} disabled={checked} onClick={() => mark(option === item.answer, item.answer ?? "")} className={`rounded-xl border px-4 py-3 text-left text-sm transition disabled:cursor-default ${checked && option === item.answer ? "border-emerald-500 bg-emerald-50" : "border-slate-200 hover:border-blue-400"}`}>{option}</button>)}</div></div>}
         {sectionKey === "writing" && item && <div className="mt-7"><p className="text-xs font-semibold uppercase tracking-widest text-slate-400">Dictado {index + 1} de 10 · {item.kind === "word" ? "Palabra" : "Frase"}</p><p className="mt-3 text-sm text-slate-600">Escucha el audio británico y escribe exactamente lo que oyes.</p><button onClick={() => speak(item.target ?? "")} className="mt-4 rounded-xl border border-slate-200 px-4 py-3 text-sm font-medium">▶ Reproducir dictado</button><label className="mt-5 block text-sm font-medium">Tu respuesta<input value={draft} onChange={(e) => setDraft(e.target.value)} disabled={checked} className="mt-2 block w-full rounded-xl border border-slate-300 p-3" /></label><button disabled={checked || !draft.trim()} onClick={() => mark(draft.trim().toLowerCase().replace(/[.,!?']/g, "") === (item.target ?? "").toLowerCase().replace(/[.,!?']/g, ""), item.target ?? "")} className="mt-3 rounded-xl bg-blue-700 px-4 py-3 text-sm font-semibold text-white disabled:opacity-40">Comprobar dictado</button></div>}
-        {sectionKey === "speaking" && item && <div className="mt-7"><p className="text-xs font-semibold uppercase tracking-widest text-slate-400">Tarea oral {index + 1} de 10</p><h3 className="mt-3 text-lg font-semibold">{item.prompt}</h3><div className="mt-4 rounded-xl bg-slate-50 p-4"><p className="text-xs font-semibold uppercase tracking-wider text-slate-400">Modelo de referencia</p><p className="mt-2 text-sm text-slate-700">{item.model}</p><button onClick={() => speak(item.model ?? "")} className="mt-3 rounded-lg border border-slate-200 bg-white px-3 py-2 text-sm">▶ Escuchar modelo</button></div><p className="mt-4 text-sm text-slate-500">Graba tu respuesta con el grabador de tu dispositivo y compárala con el modelo. Esta versión no atribuye una nota fonética automática.</p></div>}
+        {sectionKey === "speaking" && item && <div className="mt-7"><p className="text-xs font-semibold uppercase tracking-widest text-slate-400">Tarea oral {index + 1} de 10</p><h3 className="mt-3 text-lg font-semibold">{item.prompt}</h3><div className="mt-4 rounded-xl bg-slate-50 p-4"><p className="text-xs font-semibold uppercase tracking-wider text-slate-400">Modelo de referencia</p><p className="mt-2 text-sm text-slate-700">{item.model}</p><button onClick={() => speak(item.model ?? "")} className="mt-3 rounded-lg border border-slate-200 bg-white px-3 py-2 text-sm">▶ Escuchar modelo</button></div><div className="mt-4 flex flex-wrap gap-2"><button onClick={recording ? stopRecording : startRecording} className={recording ? "rounded-xl bg-rose-600 px-4 py-3 text-sm font-semibold text-white" : "rounded-xl bg-blue-700 px-4 py-3 text-sm font-semibold text-white"}>{recording ? "■ Detener grabación" : "● Grabar mi respuesta"}</button>{recordedUrl && <audio controls src={recordedUrl} className="w-full" />}</div><p role="status" className="mt-3 text-sm text-slate-500">{recordingMessage || "La grabación permanece en esta página y no se envía al servidor."}</p><p className="mt-2 text-xs text-slate-400">No se genera una nota fonética automática en esta versión.</p></div>}
         {sectionKey === "listening" && <div className="mt-7">
           <p className="text-sm leading-6 text-slate-600">Escucha el pasaje completo y completa los diez huecos seleccionando palabras del banco. Puedes retirar una palabra colocada y usarla en otro hueco.</p>
           <button onClick={() => speak(section.audioText ?? "")} className="mt-3 rounded-xl border border-slate-200 px-4 py-3 text-sm">▶ Escuchar audio completo</button>
@@ -82,7 +121,7 @@ export default function CanonicalMission() {
               <button disabled={checked} onClick={() => { if (selectedListeningWord) { setListeningAnswers((old) => ({ ...old, [entry.itemId]: selectedListeningWord })); setSelectedListeningWord(""); } else if (listeningAnswers[entry.itemId]) { setListeningAnswers((old) => { const copy = { ...old }; delete copy[entry.itemId]; return copy; }); } }} className={`min-w-28 rounded-lg border px-3 py-2 text-sm font-medium ${listeningAnswers[entry.itemId] ? "border-blue-300 bg-blue-50 text-blue-800" : "border-slate-300 bg-white"}`}>{listeningAnswers[entry.itemId] ?? (selectedListeningWord ? "Colocar aquí" : "Hueco libre")}</button>
             </div>)}
           </div>
-          <div className="mt-5 rounded-xl bg-slate-50 p-4"><p className="text-xs font-semibold uppercase tracking-widest text-slate-500">Banco de palabras</p><div className="mt-3 flex flex-wrap gap-2">{[...new Set(section.items.map((entry) => entry.answer ?? ""))].map((word) => <button key={word} disabled={checked || Object.values(listeningAnswers).includes(word)} onClick={() => setSelectedListeningWord(word)} className={`rounded-lg border px-3 py-2 text-sm ${selectedListeningWord === word ? "border-blue-700 bg-blue-700 text-white" : "border-slate-200 bg-white"} disabled:opacity-30`}>{word}</button>)}</div><p className="mt-3 text-xs text-slate-500">{selectedListeningWord ? `Seleccionada: ${selectedListeningWord}. Pulsa un hueco para colocarla.` : `${Object.keys(listeningAnswers).length} de 10 palabras colocadas. Pulsa una palabra ya colocada para devolverla al banco.`}</p></div>
+          <div className="mt-5 rounded-xl bg-slate-50 p-4"><p className="text-xs font-semibold uppercase tracking-widest text-slate-500">Banco de palabras</p><div className="mt-3 flex flex-wrap gap-2">{[...new Set(section.items.map((entry) => entry.answer ?? ""))].map((word) => <button key={word} disabled={checked || Object.values(listeningAnswers).includes(word)} onClick={() => setSelectedListeningWord(word)} className={`rounded-lg border px-3 py-2 text-sm ${selectedListeningWord === word ? "border-blue-700 bg-blue-700 text-white" : "border-slate-200 bg-white"} disabled:opacity-30`}>{word}</button>)}</div><p className="mt-3 text-xs text-slate-500">{selectedListeningWord ? `Seleccionada: ${selectedListeningWord}. Pulsa un hueco para colocarla.` : `${Object.keys(listeningAnswers).length} de 10 palabras colocadas. Pulsa un hueco ocupado sin seleccionar palabra para devolverla al banco.`}</p></div>
           <button disabled={checked || Object.keys(listeningAnswers).length !== 10} onClick={() => { const correct = section.items.filter((entry) => listeningAnswers[entry.itemId]?.toLowerCase() === entry.answer?.toLowerCase()).length; setScore((value) => value + correct); setChecked(true); setFeedback(`Resultado: ${correct} de 10 respuestas correctas. Soluciones: ${section.items.map((entry, i) => `${i + 1}. ${entry.answer}`).join(" · ")}`); }} className="mt-4 rounded-xl bg-blue-700 px-4 py-3 text-sm font-semibold text-white disabled:opacity-40">Comprobar las 10 respuestas</button>
         </div>}
         {feedback && <p role="status" className="mt-5 rounded-xl bg-slate-50 p-4 text-sm font-semibold text-slate-700">{feedback}</p>}
