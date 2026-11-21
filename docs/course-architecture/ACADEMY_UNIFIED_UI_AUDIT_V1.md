@@ -215,3 +215,9 @@ La dirección visual usa una paleta sobria azul tinta, superficies claras, borde
 ### Límites de verificación de v2
 
 Los cambios se guardaron únicamente en la rama work/linguafly-academy-audit. En esta iteración no se ha confirmado todavía una nueva ejecución de CI para los commits de v2 ni se han realizado pruebas manuales en navegador, móvil, teclado, lector de pantalla, síntesis de voz o micrófono. Los valores del dashboard siguen siendo datos de demostración. Antes de considerar aprobada esta dirección visual se requiere revisar ambas rutas en un Preview y completar una pasada de QA funcional y accesible.
+
+### Iteración de Exploración visual
+
+La etapa Exploración de la misión canónica A1-001 se ha rediseñado como una cuadrícula responsive de tarjetas de vocabulario. Cada tarjeta presenta el término en inglés con jerarquía tipográfica, control para escuchar el modelo británico, selector de significado, número de elemento y estado de pareja resuelta. Se incorporan mensajes de acierto/intento, se impide reutilizar una traducción ya emparejada y aparece un cierre visual al completar las diez parejas. La selección sigue siendo accesible mediante controles nativos etiquetados; el audio utiliza la síntesis de voz del navegador.
+
+Pendiente de verificación: interacción manual en navegador/móvil, síntesis de voz en distintos navegadores y nueva ejecución CI del commit más reciente. No se han añadido recursos externos ni dependencias.
