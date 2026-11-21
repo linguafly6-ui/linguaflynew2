@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "contentVersion": "2026-11-21-curriculum-alignment-v1",
+  "contentVersion": "2026-11-21-curriculum-alignment-v3",
   "course": {
     "courseId": "english-pre-a1",
     "level": "Pre-A1",
@@ -206,6 +206,15 @@
             "pronunciationGuide": "a",
             "audio": "tts:en-GB:a",
             "audioStatus": "synthetic_pending_review"
+          },
+          {
+            "itemId": "english-pre-a1-m008-explore-ex01-i21",
+            "position": 21,
+            "english": "at",
+            "spanish": "en/a",
+            "pronunciationGuide": "at",
+            "audio": "tts:en-GB:at",
+            "audioStatus": "synthetic_pending_review"
           }
         ],
         "theory": {
@@ -215,42 +224,42 @@
           "patterns": [
             {
               "label": "Bloque 1",
-              "pattern": "I am…",
+              "pattern": "Objetivo: I am….",
               "examples": [
                 "I am happy."
               ]
             },
             {
               "label": "Bloque 2",
-              "pattern": "I am + estado o identidad habla de uno mismo. I significa yo y am acompaña a I. Ante una profesión singular contable se usa a: I am a student. Esta misión enseña afirmaciones; la negación y las preguntas vendrán después.",
+              "pattern": "am — soy/estoy. Pronunciación: am.",
               "examples": [
                 "I am sad."
               ]
             },
             {
               "label": "Bloque 3",
-              "pattern": "I am + estado o identidad habla de uno mismo. I significa yo y am acompaña a I. Ante una profesión singular contable se usa a: I am a student. Esta misión enseña afirmaciones; la negación y las preguntas vendrán después.",
+              "pattern": "I am tired. — Estoy cansado/a..",
               "examples": [
                 "I am tired."
               ]
             },
             {
               "label": "Bloque 4",
-              "pattern": "I am + estado o identidad habla de uno mismo. I significa yo y am acompaña a I. Ante una profesión singular contable se usa a: I am a student. Esta misión enseña afirmaciones; la negación y las preguntas vendrán después.",
+              "pattern": "I am excited. — Estoy emocionado/a..",
               "examples": [
                 "I am excited."
               ]
             },
             {
               "label": "Bloque 5",
-              "pattern": "I am + estado o identidad habla de uno mismo. I significa yo y am acompaña a I. Ante una profesión singular contable se usa a: I am a student. Esta misión enseña afirmaciones; la negación y las preguntas vendrán después.",
+              "pattern": "I am angry. — Estoy enfadado/a..",
               "examples": [
                 "I am angry."
               ]
             },
             {
               "label": "Bloque 6",
-              "pattern": "I am + estado o identidad habla de uno mismo. I significa yo y am acompaña a I. Ante una profesión singular contable se usa a: I am a student. Esta misión enseña afirmaciones; la negación y las preguntas vendrán después.",
+              "pattern": "I am calm. — Estoy tranquilo/a..",
               "examples": [
                 "I am calm."
               ]
@@ -264,21 +273,21 @@
             },
             {
               "label": "Bloque 8",
-              "pattern": "I am + estado o identidad habla de uno mismo. I significa yo y am acompaña a I. Ante una profesión singular contable se usa a: I am a student. Esta misión enseña afirmaciones; la negación y las preguntas vendrán después.",
+              "pattern": "I am a teacher. — Soy profesor/a..",
               "examples": [
                 "I am a teacher."
               ]
             },
             {
               "label": "Bloque 9",
-              "pattern": "I am + estado o identidad habla de uno mismo. I significa yo y am acompaña a I. Ante una profesión singular contable se usa a: I am a student. Esta misión enseña afirmaciones; la negación y las preguntas vendrán después.",
+              "pattern": "I am here today. — Estoy aquí hoy..",
               "examples": [
                 "I am here today."
               ]
             },
             {
               "label": "Bloque 10",
-              "pattern": "I am + estado o identidad habla de uno mismo. I significa yo y am acompaña a I. Ante una profesión singular contable se usa a: I am a student. Esta misión enseña afirmaciones; la negación y las preguntas vendrán después.",
+              "pattern": "I am a friend. — Soy amigo/a.",
               "examples": [
                 "I am a friend."
               ]
@@ -289,232 +298,232 @@
           "phrases": [
             {
               "english": "I am happy.",
-              "spanish": "I am happy.",
+              "spanish": "Estoy feliz.",
               "note": "Modelo enseñado en Explore."
             },
             {
               "english": "I am sad.",
-              "spanish": "I am sad.",
+              "spanish": "Estoy triste.",
               "note": "Modelo enseñado en Explore."
             },
             {
               "english": "I am tired.",
-              "spanish": "I am tired.",
+              "spanish": "Estoy cansado/a.",
               "note": "Modelo enseñado en Explore."
             },
             {
               "english": "I am excited.",
-              "spanish": "I am excited.",
+              "spanish": "Estoy emocionado/a.",
               "note": "Modelo enseñado en Explore."
             },
             {
               "english": "I am angry.",
-              "spanish": "I am angry.",
+              "spanish": "Estoy enfadado/a.",
               "note": "Modelo enseñado en Explore."
             },
             {
               "english": "I am calm.",
-              "spanish": "I am calm.",
+              "spanish": "Estoy tranquilo/a.",
               "note": "Modelo enseñado en Explore."
             },
             {
               "english": "I am a student.",
-              "spanish": "I am a student.",
+              "spanish": "Soy estudiante.",
               "note": "Modelo enseñado en Explore."
             },
             {
               "english": "I am a teacher.",
-              "spanish": "I am a teacher.",
+              "spanish": "Soy profesor/a.",
               "note": "Modelo enseñado en Explore."
             },
             {
               "english": "I am here today.",
-              "spanish": "I am here today.",
+              "spanish": "Estoy aquí hoy.",
               "note": "Modelo enseñado en Explore."
             },
             {
               "english": "I am a friend.",
-              "spanish": "I am a friend.",
+              "spanish": "Soy amigo/a",
               "note": "Modelo enseñado en Explore."
             }
           ],
           "grammar": [
             {
               "english": "I am happy.",
-              "spanish": "Modelo de la misión",
+              "spanish": "Estoy feliz.",
               "note": "I am…"
             },
             {
               "english": "I am sad.",
-              "spanish": "Modelo de la misión",
+              "spanish": "Estoy triste.",
               "note": "I am + estado o identidad habla de uno mismo. I significa yo y am acompaña a I. Ante una profesión singular contable se usa a: I am a student. Esta misión enseña afirmaciones; la negación y las preguntas vendrán después."
             },
             {
               "english": "I am tired.",
-              "spanish": "Modelo de la misión",
+              "spanish": "Estoy cansado/a.",
               "note": "I am + estado o identidad habla de uno mismo. I significa yo y am acompaña a I. Ante una profesión singular contable se usa a: I am a student. Esta misión enseña afirmaciones; la negación y las preguntas vendrán después."
             },
             {
               "english": "I am excited.",
-              "spanish": "Modelo de la misión",
+              "spanish": "Estoy emocionado/a.",
               "note": "I am + estado o identidad habla de uno mismo. I significa yo y am acompaña a I. Ante una profesión singular contable se usa a: I am a student. Esta misión enseña afirmaciones; la negación y las preguntas vendrán después."
             },
             {
               "english": "I am angry.",
-              "spanish": "Modelo de la misión",
+              "spanish": "Estoy enfadado/a.",
               "note": "I am + estado o identidad habla de uno mismo. I significa yo y am acompaña a I. Ante una profesión singular contable se usa a: I am a student. Esta misión enseña afirmaciones; la negación y las preguntas vendrán después."
             },
             {
               "english": "I am calm.",
-              "spanish": "Modelo de la misión",
+              "spanish": "Estoy tranquilo/a.",
               "note": "I am + estado o identidad habla de uno mismo. I significa yo y am acompaña a I. Ante una profesión singular contable se usa a: I am a student. Esta misión enseña afirmaciones; la negación y las preguntas vendrán después."
             },
             {
               "english": "I am a student.",
-              "spanish": "Modelo de la misión",
+              "spanish": "Soy estudiante.",
               "note": "I am + estado o identidad habla de uno mismo. I significa yo y am acompaña a I. Ante una profesión singular contable se usa a: I am a student. Esta misión enseña afirmaciones; la negación y las preguntas vendrán después."
             },
             {
               "english": "I am a teacher.",
-              "spanish": "Modelo de la misión",
+              "spanish": "Soy profesor/a.",
               "note": "I am + estado o identidad habla de uno mismo. I significa yo y am acompaña a I. Ante una profesión singular contable se usa a: I am a student. Esta misión enseña afirmaciones; la negación y las preguntas vendrán después."
             },
             {
               "english": "I am here today.",
-              "spanish": "Modelo de la misión",
+              "spanish": "Estoy aquí hoy.",
               "note": "I am + estado o identidad habla de uno mismo. I significa yo y am acompaña a I. Ante una profesión singular contable se usa a: I am a student. Esta misión enseña afirmaciones; la negación y las preguntas vendrán después."
             },
             {
               "english": "I am a friend.",
-              "spanish": "Modelo de la misión",
+              "spanish": "Soy amigo/a",
               "note": "I am + estado o identidad habla de uno mismo. I significa yo y am acompaña a I. Ante una profesión singular contable se usa a: I am a student. Esta misión enseña afirmaciones; la negación y las preguntas vendrán después."
             }
           ],
           "reading": [
             {
               "english": "I am a student. I am happy today. I am excited. I am here at school.",
-              "spanish": "Texto completo presentado arriba."
+              "spanish": "Soy estudiante. Estoy feliz hoy. Estoy emocionado/a. Estoy aquí en la escuela."
             }
           ],
           "writing": [
             {
               "english": "I am happy.",
-              "spanish": "I am happy.",
+              "spanish": "Estoy feliz.",
               "note": "Modelo enseñado en Explore."
             },
             {
               "english": "I am sad.",
-              "spanish": "I am sad.",
+              "spanish": "Estoy triste.",
               "note": "Modelo enseñado en Explore."
             },
             {
               "english": "I am tired.",
-              "spanish": "I am tired.",
+              "spanish": "Estoy cansado/a.",
               "note": "Modelo enseñado en Explore."
             },
             {
               "english": "I am excited.",
-              "spanish": "I am excited.",
+              "spanish": "Estoy emocionado/a.",
               "note": "Modelo enseñado en Explore."
             },
             {
               "english": "I am angry.",
-              "spanish": "I am angry.",
+              "spanish": "Estoy enfadado/a.",
               "note": "Modelo enseñado en Explore."
             },
             {
               "english": "I am calm.",
-              "spanish": "I am calm.",
+              "spanish": "Estoy tranquilo/a.",
               "note": "Modelo enseñado en Explore."
             },
             {
               "english": "I am a student.",
-              "spanish": "I am a student.",
+              "spanish": "Soy estudiante.",
               "note": "Modelo enseñado en Explore."
             },
             {
               "english": "I am a teacher.",
-              "spanish": "I am a teacher.",
+              "spanish": "Soy profesor/a.",
               "note": "Modelo enseñado en Explore."
             },
             {
               "english": "I am here today.",
-              "spanish": "I am here today.",
+              "spanish": "Estoy aquí hoy.",
               "note": "Modelo enseñado en Explore."
             },
             {
               "english": "I am a friend.",
-              "spanish": "I am a friend.",
+              "spanish": "Soy amigo/a",
               "note": "Modelo enseñado en Explore."
             }
           ],
           "speaking": [
             {
               "english": "I am happy.",
-              "spanish": "I am happy.",
+              "spanish": "Estoy feliz.",
               "note": "Modelo enseñado en Explore.",
               "prompt": "Practica esta expresión.",
               "promptSpanish": "Di la expresión en voz alta."
             },
             {
               "english": "I am sad.",
-              "spanish": "I am sad.",
+              "spanish": "Estoy triste.",
               "note": "Modelo enseñado en Explore.",
               "prompt": "Practica esta expresión.",
               "promptSpanish": "Di la expresión en voz alta."
             },
             {
               "english": "I am tired.",
-              "spanish": "I am tired.",
+              "spanish": "Estoy cansado/a.",
               "note": "Modelo enseñado en Explore.",
               "prompt": "Practica esta expresión.",
               "promptSpanish": "Di la expresión en voz alta."
             },
             {
               "english": "I am excited.",
-              "spanish": "I am excited.",
+              "spanish": "Estoy emocionado/a.",
               "note": "Modelo enseñado en Explore.",
               "prompt": "Practica esta expresión.",
               "promptSpanish": "Di la expresión en voz alta."
             },
             {
               "english": "I am angry.",
-              "spanish": "I am angry.",
+              "spanish": "Estoy enfadado/a.",
               "note": "Modelo enseñado en Explore.",
               "prompt": "Practica esta expresión.",
               "promptSpanish": "Di la expresión en voz alta."
             },
             {
               "english": "I am calm.",
-              "spanish": "I am calm.",
+              "spanish": "Estoy tranquilo/a.",
               "note": "Modelo enseñado en Explore.",
               "prompt": "Practica esta expresión.",
               "promptSpanish": "Di la expresión en voz alta."
             },
             {
               "english": "I am a student.",
-              "spanish": "I am a student.",
+              "spanish": "Soy estudiante.",
               "note": "Modelo enseñado en Explore.",
               "prompt": "Practica esta expresión.",
               "promptSpanish": "Di la expresión en voz alta."
             },
             {
               "english": "I am a teacher.",
-              "spanish": "I am a teacher.",
+              "spanish": "Soy profesor/a.",
               "note": "Modelo enseñado en Explore.",
               "prompt": "Practica esta expresión.",
               "promptSpanish": "Di la expresión en voz alta."
             },
             {
               "english": "I am here today.",
-              "spanish": "I am here today.",
+              "spanish": "Estoy aquí hoy.",
               "note": "Modelo enseñado en Explore.",
               "prompt": "Practica esta expresión.",
               "promptSpanish": "Di la expresión en voz alta."
             },
             {
               "english": "I am a friend.",
-              "spanish": "I am a friend.",
+              "spanish": "Soy amigo/a",
               "note": "Modelo enseñado en Explore.",
               "prompt": "Practica esta expresión.",
               "promptSpanish": "Di la expresión en voz alta."
@@ -523,52 +532,52 @@
           "listening": [
             {
               "english": "I am happy.",
-              "spanish": "I am happy.",
+              "spanish": "Estoy feliz.",
               "note": "Modelo enseñado en Explore."
             },
             {
               "english": "I am sad.",
-              "spanish": "I am sad.",
+              "spanish": "Estoy triste.",
               "note": "Modelo enseñado en Explore."
             },
             {
               "english": "I am tired.",
-              "spanish": "I am tired.",
+              "spanish": "Estoy cansado/a.",
               "note": "Modelo enseñado en Explore."
             },
             {
               "english": "I am excited.",
-              "spanish": "I am excited.",
+              "spanish": "Estoy emocionado/a.",
               "note": "Modelo enseñado en Explore."
             },
             {
               "english": "I am angry.",
-              "spanish": "I am angry.",
+              "spanish": "Estoy enfadado/a.",
               "note": "Modelo enseñado en Explore."
             },
             {
               "english": "I am calm.",
-              "spanish": "I am calm.",
+              "spanish": "Estoy tranquilo/a.",
               "note": "Modelo enseñado en Explore."
             },
             {
               "english": "I am a student.",
-              "spanish": "I am a student.",
+              "spanish": "Soy estudiante.",
               "note": "Modelo enseñado en Explore."
             },
             {
               "english": "I am a teacher.",
-              "spanish": "I am a teacher.",
+              "spanish": "Soy profesor/a.",
               "note": "Modelo enseñado en Explore."
             },
             {
               "english": "I am here today.",
-              "spanish": "I am here today.",
+              "spanish": "Estoy aquí hoy.",
               "note": "Modelo enseñado en Explore."
             },
             {
               "english": "I am a friend.",
-              "spanish": "I am a friend.",
+              "spanish": "Soy amigo/a",
               "note": "Modelo enseñado en Explore."
             }
           ]
@@ -578,72 +587,72 @@
             {
               "position": 1,
               "title": "Bloque 1",
-              "content": "I am…",
+              "content": "Objetivo: I am….",
               "example": "I am happy.",
-              "translation": "Consulta la traducción y la guía de pronunciación de cada elemento."
+              "translation": "Estoy feliz."
             },
             {
               "position": 2,
               "title": "Bloque 2",
-              "content": "I am + estado o identidad habla de uno mismo. I significa yo y am acompaña a I. Ante una profesión singular contable se usa a: I am a student. Esta misión enseña afirmaciones; la negación y las preguntas vendrán después.",
+              "content": "am — soy/estoy. Pronunciación: am.",
               "example": "I am sad.",
-              "translation": "Consulta la traducción y la guía de pronunciación de cada elemento."
+              "translation": "Estoy triste."
             },
             {
               "position": 3,
               "title": "Bloque 3",
-              "content": "I am + estado o identidad habla de uno mismo. I significa yo y am acompaña a I. Ante una profesión singular contable se usa a: I am a student. Esta misión enseña afirmaciones; la negación y las preguntas vendrán después.",
+              "content": "I am tired. — Estoy cansado/a..",
               "example": "I am tired.",
-              "translation": "Consulta la traducción y la guía de pronunciación de cada elemento."
+              "translation": "Estoy cansado/a."
             },
             {
               "position": 4,
               "title": "Bloque 4",
-              "content": "I am + estado o identidad habla de uno mismo. I significa yo y am acompaña a I. Ante una profesión singular contable se usa a: I am a student. Esta misión enseña afirmaciones; la negación y las preguntas vendrán después.",
+              "content": "I am excited. — Estoy emocionado/a..",
               "example": "I am excited.",
-              "translation": "Consulta la traducción y la guía de pronunciación de cada elemento."
+              "translation": "Estoy emocionado/a."
             },
             {
               "position": 5,
               "title": "Bloque 5",
-              "content": "I am + estado o identidad habla de uno mismo. I significa yo y am acompaña a I. Ante una profesión singular contable se usa a: I am a student. Esta misión enseña afirmaciones; la negación y las preguntas vendrán después.",
+              "content": "I am angry. — Estoy enfadado/a..",
               "example": "I am angry.",
-              "translation": "Consulta la traducción y la guía de pronunciación de cada elemento."
+              "translation": "Estoy enfadado/a."
             },
             {
               "position": 6,
               "title": "Bloque 6",
-              "content": "I am + estado o identidad habla de uno mismo. I significa yo y am acompaña a I. Ante una profesión singular contable se usa a: I am a student. Esta misión enseña afirmaciones; la negación y las preguntas vendrán después.",
+              "content": "I am calm. — Estoy tranquilo/a..",
               "example": "I am calm.",
-              "translation": "Consulta la traducción y la guía de pronunciación de cada elemento."
+              "translation": "Estoy tranquilo/a."
             },
             {
               "position": 7,
               "title": "Bloque 7",
               "content": "I am + estado o identidad habla de uno mismo. I significa yo y am acompaña a I. Ante una profesión singular contable se usa a: I am a student. Esta misión enseña afirmaciones; la negación y las preguntas vendrán después.",
               "example": "I am a student.",
-              "translation": "Consulta la traducción y la guía de pronunciación de cada elemento."
+              "translation": "Soy estudiante."
             },
             {
               "position": 8,
               "title": "Bloque 8",
-              "content": "I am + estado o identidad habla de uno mismo. I significa yo y am acompaña a I. Ante una profesión singular contable se usa a: I am a student. Esta misión enseña afirmaciones; la negación y las preguntas vendrán después.",
+              "content": "I am a teacher. — Soy profesor/a..",
               "example": "I am a teacher.",
-              "translation": "Consulta la traducción y la guía de pronunciación de cada elemento."
+              "translation": "Soy profesor/a."
             },
             {
               "position": 9,
               "title": "Bloque 9",
-              "content": "I am + estado o identidad habla de uno mismo. I significa yo y am acompaña a I. Ante una profesión singular contable se usa a: I am a student. Esta misión enseña afirmaciones; la negación y las preguntas vendrán después.",
+              "content": "I am here today. — Estoy aquí hoy..",
               "example": "I am here today.",
-              "translation": "Consulta la traducción y la guía de pronunciación de cada elemento."
+              "translation": "Estoy aquí hoy."
             },
             {
               "position": 10,
               "title": "Bloque 10",
-              "content": "I am + estado o identidad habla de uno mismo. I significa yo y am acompaña a I. Ante una profesión singular contable se usa a: I am a student. Esta misión enseña afirmaciones; la negación y las preguntas vendrán después.",
+              "content": "I am a friend. — Soy amigo/a.",
               "example": "I am a friend.",
-              "translation": "Consulta la traducción y la guía de pronunciación de cada elemento."
+              "translation": "Soy amigo/a"
             }
           ]
         }
@@ -666,8 +675,8 @@
             },
             "options": [
               "soy/estoy",
-              "yo",
-              "ser/estar"
+              "ser/estar",
+              "yo"
             ],
             "answer": "yo"
           },
@@ -680,8 +689,8 @@
             },
             "options": [
               "feliz",
-              "ser/estar",
-              "soy/estoy"
+              "soy/estoy",
+              "ser/estar"
             ],
             "answer": "soy/estoy"
           },
@@ -708,8 +717,8 @@
             },
             "options": [
               "triste",
-              "feliz",
-              "cansado"
+              "cansado",
+              "feliz"
             ],
             "answer": "feliz"
           },
@@ -722,8 +731,8 @@
             },
             "options": [
               "emocionado",
-              "cansado",
-              "triste"
+              "triste",
+              "cansado"
             ],
             "answer": "triste"
           },
@@ -750,8 +759,8 @@
             },
             "options": [
               "enfadado",
-              "emocionado",
-              "tranquilo"
+              "tranquilo",
+              "emocionado"
             ],
             "answer": "emocionado"
           },
@@ -764,8 +773,8 @@
             },
             "options": [
               "estudiante",
-              "tranquilo",
-              "enfadado"
+              "enfadado",
+              "tranquilo"
             ],
             "answer": "enfadado"
           },
@@ -792,8 +801,8 @@
             },
             "options": [
               "profesor",
-              "estudiante",
-              "niño"
+              "niño",
+              "estudiante"
             ],
             "answer": "estudiante"
           }
@@ -1229,7 +1238,7 @@
         "content": {
           "passageId": "english-pre-a1-m008-reading-passage-01",
           "passage": "I am a student. I am happy today. I am excited. I am here at school.",
-          "translation": "Traducción del texto: I am a student. I am happy today. I am excited. I am here at school.",
+          "translation": "Soy estudiante. Estoy feliz hoy. Estoy emocionado/a. Estoy aquí en la escuela.",
           "vocabulary": [
             {
               "word": "I",
@@ -1343,8 +1352,8 @@
             },
             "options": [
               "yo",
-              "I am…",
-              "soy/estoy"
+              "soy/estoy",
+              "I am…"
             ],
             "answer": "I am…"
           },
@@ -1357,8 +1366,8 @@
             },
             "options": [
               "feliz",
-              "ser/estar",
-              "soy/estoy"
+              "soy/estoy",
+              "ser/estar"
             ],
             "answer": "soy/estoy"
           },
@@ -1385,8 +1394,8 @@
             },
             "options": [
               "triste",
-              "feliz",
-              "cansado"
+              "cansado",
+              "feliz"
             ],
             "answer": "feliz"
           },
@@ -1399,8 +1408,8 @@
             },
             "options": [
               "emocionado",
-              "cansado",
-              "triste"
+              "triste",
+              "cansado"
             ],
             "answer": "triste"
           },
@@ -1427,8 +1436,8 @@
             },
             "options": [
               "enfadado",
-              "emocionado",
-              "tranquilo"
+              "tranquilo",
+              "emocionado"
             ],
             "answer": "emocionado"
           },
@@ -1441,8 +1450,8 @@
             },
             "options": [
               "estudiante",
-              "tranquilo",
-              "enfadado"
+              "enfadado",
+              "tranquilo"
             ],
             "answer": "enfadado"
           },
@@ -1469,8 +1478,8 @@
             },
             "options": [
               "profesor",
-              "estudiante",
-              "niño"
+              "niño",
+              "estudiante"
             ],
             "answer": "estudiante"
           }
@@ -1824,48 +1833,48 @@
           "wordBank": [
             {
               "wordId": "english-pre-a1-m008-listening-word-01",
-              "word": "I"
+              "word": "I am happy."
             },
             {
               "wordId": "english-pre-a1-m008-listening-word-02",
-              "word": "am"
+              "word": "I am sad."
             },
             {
               "wordId": "english-pre-a1-m008-listening-word-03",
-              "word": "be"
+              "word": "I am tired."
             },
             {
               "wordId": "english-pre-a1-m008-listening-word-04",
-              "word": "happy"
+              "word": "I am excited."
             },
             {
               "wordId": "english-pre-a1-m008-listening-word-05",
-              "word": "sad"
+              "word": "I am angry."
             },
             {
               "wordId": "english-pre-a1-m008-listening-word-06",
-              "word": "tired"
+              "word": "I am calm."
             },
             {
               "wordId": "english-pre-a1-m008-listening-word-07",
-              "word": "excited"
+              "word": "I am a student."
             },
             {
               "wordId": "english-pre-a1-m008-listening-word-08",
-              "word": "angry"
+              "word": "I am a teacher."
             },
             {
               "wordId": "english-pre-a1-m008-listening-word-09",
-              "word": "calm"
+              "word": "I am here today."
             },
             {
               "wordId": "english-pre-a1-m008-listening-word-10",
-              "word": "student"
+              "word": "I am a friend."
             }
           ],
           "interaction": "select_place_move_replace",
           "audioTranscript": "tts:en-GB:I am happy. I am sad. I am tired. I am excited. I am angry. I am calm. I am a student. I am a teacher. I am here today. I am a friend.",
-          "translation": "Escucha y reconoce las expresiones enseñadas."
+          "translation": "Estoy feliz. Estoy triste. Estoy cansado/a. Estoy emocionado/a. Estoy enfadado/a. Estoy tranquilo/a. Soy estudiante. Soy profesor/a. Estoy aquí hoy. Soy amigo/a"
         },
         "items": [
           {
@@ -1873,70 +1882,70 @@
             "position": 1,
             "gapToken": "[[gap-01]]",
             "expectedWordId": "english-pre-a1-m008-listening-word-01",
-            "answer": "I"
+            "answer": "I am happy."
           },
           {
             "itemId": "english-pre-a1-m008-listening-ex01-i02",
             "position": 2,
             "gapToken": "[[gap-02]]",
             "expectedWordId": "english-pre-a1-m008-listening-word-02",
-            "answer": "am"
+            "answer": "I am sad."
           },
           {
             "itemId": "english-pre-a1-m008-listening-ex01-i03",
             "position": 3,
             "gapToken": "[[gap-03]]",
             "expectedWordId": "english-pre-a1-m008-listening-word-03",
-            "answer": "be"
+            "answer": "I am tired."
           },
           {
             "itemId": "english-pre-a1-m008-listening-ex01-i04",
             "position": 4,
             "gapToken": "[[gap-04]]",
             "expectedWordId": "english-pre-a1-m008-listening-word-04",
-            "answer": "happy"
+            "answer": "I am excited."
           },
           {
             "itemId": "english-pre-a1-m008-listening-ex01-i05",
             "position": 5,
             "gapToken": "[[gap-05]]",
             "expectedWordId": "english-pre-a1-m008-listening-word-05",
-            "answer": "sad"
+            "answer": "I am angry."
           },
           {
             "itemId": "english-pre-a1-m008-listening-ex01-i06",
             "position": 6,
             "gapToken": "[[gap-06]]",
             "expectedWordId": "english-pre-a1-m008-listening-word-06",
-            "answer": "tired"
+            "answer": "I am calm."
           },
           {
             "itemId": "english-pre-a1-m008-listening-ex01-i07",
             "position": 7,
             "gapToken": "[[gap-07]]",
             "expectedWordId": "english-pre-a1-m008-listening-word-07",
-            "answer": "excited"
+            "answer": "I am a student."
           },
           {
             "itemId": "english-pre-a1-m008-listening-ex01-i08",
             "position": 8,
             "gapToken": "[[gap-08]]",
             "expectedWordId": "english-pre-a1-m008-listening-word-08",
-            "answer": "angry"
+            "answer": "I am a teacher."
           },
           {
             "itemId": "english-pre-a1-m008-listening-ex01-i09",
             "position": 9,
             "gapToken": "[[gap-09]]",
             "expectedWordId": "english-pre-a1-m008-listening-word-09",
-            "answer": "calm"
+            "answer": "I am here today."
           },
           {
             "itemId": "english-pre-a1-m008-listening-ex01-i10",
             "position": 10,
             "gapToken": "[[gap-10]]",
             "expectedWordId": "english-pre-a1-m008-listening-word-10",
-            "answer": "student"
+            "answer": "I am a friend."
           }
         ]
       }
