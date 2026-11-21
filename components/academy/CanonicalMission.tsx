@@ -3,7 +3,8 @@
 import { useEffect, useMemo, useRef, useState } from "react";
 import missionSource from "@/content/canonical-missions/a1/001.json";
 
-type Item = { itemId: string; english?: string; spanish?: string; prompt?: string; answer?: string; options?: string[]; word?: string; translation?: string; pronunciationGuide?: string; expectedAnswer?: string; kind?: string; modelAnswer?: string; focus?: string; expectedWordId?: string; gapToken?: string; position: number };
+type DictationSegment = { segmentId: string; text: string };
+type Item = { itemId: string; english?: string; spanish?: string; prompt?: string; answer?: string; options?: string[]; word?: string; translation?: string; pronunciationGuide?: string; expectedAnswer?: string; kind?: string; audioLocale?: string; repeatCount?: number; segments?: DictationSegment[]; modelAnswer?: string; focus?: string; expectedWordId?: string; gapToken?: string; position: number };
 type Section = { sectionId: string; sectionKey: string; position: number; title: string; exercise: { exerciseId: string; type: string; items: Item[]; theory?: { title: string; explanation: string; tip: string; patterns: { label: string; pattern: string; examples: string[] }[] }; content?: { passageId?: string; passage?: string; audio?: string; audioTranscript?: string; transcriptTemplate?: string; wordBank?: { wordId: string; word: string }[] } } };
 type Mission = { course: { level: string }; unit: { title: string }; mission: { title: string }; sections: Section[] };
 const mission = missionSource as Mission;
@@ -28,6 +29,13 @@ export default function CanonicalMission() {
   const [listeningAnswers, setListeningAnswers] = useState<Record<string, string>>({});
   const [selectedListeningWord, setSelectedListeningWord] = useState("");
   const [draft, setDraft] = useState("");
+  const [dictationPlaying, setDictationPlaying] = useState(false);
+  const [dictationPaused, setDictationPaused] = useState(false);
+  const [dictationSegment, setDictationSegment] = useState(0);
+  const [dictationRepeat, setDictationRepeat] = useState(0);
+  const [dictationMessage, setDictationMessage] = useState("");
+  const dictationTimerRef = useRef<ReturnType<typeof setTimeout> | null>(null);
+  const dictationRunRef = useRef(0);
   const [recording, setRecording] = useState(false);
   const [recordedUrl, setRecordedUrl] = useState("");
   const [recordingMessage, setRecordingMessage] = useState("");
@@ -40,6 +48,54 @@ export default function CanonicalMission() {
     if (recordedUrl) URL.revokeObjectURL(recordedUrl);
   }, [recordedUrl]);
 
+  useEffect(() => () => {
+    dictationRunRef.current += 1;
+    if (dictationTimerRef.current) clearTimeout(dictationTimerRef.current);
+    if (typeof window !== "undefined" && "speechSynthesis" in window) window.speechSynthesis.cancel();
+  }, []);
+
+  function stopDictation() {
+    dictationRunRef.current += 1;
+    if (dictationTimerRef.current) clearTimeout(dictationTimerRef.current);
+    dictationTimerRef.current = null;
+    if (typeof window !== "undefined" && "speechSynthesis" in window) window.speechSynthesis.cancel();
+    setDictationPlaying(false); setDictationPaused(false);
+    setDictationMessage("Dictado detenido. Puedes volver a escucharlo cuando quieras.");
+  }
+
+  function startDictation() {
+    if (typeof window === "undefined" || !("speechSynthesis" in window)) { setDictationMessage("Este navegador no dispone de reproducción de voz."); return; }
+    const segments = item?.segments?.map((segment) => segment.text) ?? [item?.expectedAnswer ?? ""];
+    if (!segments.length || !segments.every((segment) => segment.trim())) return;
+    stopDictation();
+    const run = dictationRunRef.current;
+    let segmentIndex = 0;
+    let repetition = 0;
+    const repeatCount = item?.repeatCount ?? 3;
+    setDictationSegment(0); setDictationRepeat(0); setDictationPlaying(true); setDictationPaused(false);
+    setDictationMessage("Escucha con atención. Cada fragmento se repetirá tres veces.");
+    const playCurrentSegment = () => {
+      if (run !== dictationRunRef.current) return;
+      repetition += 1; setDictationSegment(segmentIndex); setDictationRepeat(repetition);
+      const utterance = new SpeechSynthesisUtterance(segments[segmentIndex]);
+      utterance.lang = item?.audioLocale ?? "en-GB";
+      utterance.rate = repetition === 2 ? 0.78 : 0.92;
+      const britishVoice = window.speechSynthesis.getVoices().find((voice) => voice.lang.toLowerCase() === "en-gb");
+      if (britishVoice) utterance.voice = britishVoice;
+      utterance.onend = () => {
+        if (run !== dictationRunRef.current) return;
+        if (repetition < repeatCount) dictationTimerRef.current = setTimeout(playCurrentSegment, 900);
+        else if (segmentIndex < segments.length - 1) { segmentIndex += 1; repetition = 0; dictationTimerRef.current = setTimeout(playCurrentSegment, 1300); }
+        else { setDictationPlaying(false); setDictationPaused(false); setDictationMessage("Dictado terminado. Revisa lo que has escrito antes de comprobarlo."); }
+      };
+      utterance.onerror = () => { if (run !== dictationRunRef.current) return; setDictationPlaying(false); setDictationPaused(false); setDictationMessage("No se pudo completar el audio. Puedes intentarlo de nuevo."); };
+      window.speechSynthesis.speak(utterance);
+    };
+    playCurrentSegment();
+  }
+
+  function pauseDictation() { if (!dictationPlaying || dictationPaused) return; window.speechSynthesis.pause(); setDictationPaused(true); }
+  function resumeDictation() { if (!dictationPaused) return; window.speechSynthesis.resume(); setDictationPaused(false); }
   async function startRecording() {
     try {
       if (!navigator.mediaDevices?.getUserMedia || !window.MediaRecorder) {
@@ -75,6 +131,7 @@ export default function CanonicalMission() {
   const progress = useMemo(() => section.exercise.items.length ? Math.round(((index + (checked ? 1 : 0)) / section.exercise.items.length) * 100) : 0, [index, checked, section.exercise.items.length]);
 
   function changeSection(key: string) {
+    stopDictation();
     setSectionKey(key); setIndex(0); setFeedback(""); setChecked(false); setDraft(""); setListeningAnswers({}); setSelectedListeningWord("");
   }
   function mark(correct: boolean, expected: string) {
@@ -84,6 +141,7 @@ export default function CanonicalMission() {
     if (correct) setScore((value) => value + 1);
   }
   function next() {
+    stopDictation();
     if (index === section.exercise.items.length - 1) {
       setFeedback("Sección completada. Has llegado al final de las actividades.");
       return;
@@ -149,7 +207,7 @@ export default function CanonicalMission() {
         </div>}
         {sectionKey === "pronunciation" && <div className="mt-6 grid gap-3 sm:grid-cols-2">{section.exercise.items.map((entry) => <article key={entry.itemId} className="rounded-xl border border-slate-200 p-4"><p className="text-lg font-semibold">{entry.word}</p><p className="text-sm text-slate-500">{entry.translation}</p><p className="mt-2 font-medium text-blue-700">{entry.pronunciationGuide}</p><p className="text-xs text-slate-400">Guía aproximada para hispanohablantes; no es IPA.</p><button onClick={() => speak(entry.word ?? "")} className="mt-3 rounded-lg border border-slate-200 px-3 py-2 text-sm">▶ Escuchar modelo británico</button></article>)}</div>}
         {["practice", "grammar", "reading"].includes(sectionKey) && item && <div className="mt-7"><p className="text-xs font-semibold uppercase tracking-widest text-slate-400">Actividad {index + 1} de {section.exercise.items.length}</p><h3 className="mt-3 text-lg font-semibold leading-7">{item.prompt}</h3><div className="mt-5 grid gap-2">{item.options?.map((option) => <button key={option} disabled={checked} onClick={() => mark(option === item.answer, item.answer ?? "")} className={`rounded-xl border px-4 py-3 text-left text-sm transition disabled:cursor-default ${checked && option === item.answer ? "border-emerald-500 bg-emerald-50" : "border-slate-200 hover:border-blue-400"}`}>{option}</button>)}</div></div>}
-        {sectionKey === "writing" && item && <div className="mt-7"><p className="text-xs font-semibold uppercase tracking-widest text-slate-400">Dictado {index + 1} de 10 · {item.kind === "word" ? "Palabra" : "Frase"}</p><p className="mt-3 text-sm text-slate-600">Escucha el audio británico y escribe exactamente lo que oyes.</p><button onClick={() => speak(item.expectedAnswer ?? "")} className="mt-4 rounded-xl border border-slate-200 px-4 py-3 text-sm font-medium">▶ Reproducir dictado</button><label className="mt-5 block text-sm font-medium">Tu respuesta<input value={draft} onChange={(e) => setDraft(e.target.value)} disabled={checked} className="mt-2 block w-full rounded-xl border border-slate-300 p-3" /></label><button disabled={checked || !draft.trim()} onClick={() => mark(draft.trim().toLowerCase().replace(/[.,!?']/g, "") === (item.expectedAnswer ?? "").toLowerCase().replace(/[.,!?']/g, ""), item.expectedAnswer ?? "")} className="mt-3 rounded-xl bg-blue-700 px-4 py-3 text-sm font-semibold text-white disabled:opacity-40">Comprobar dictado</button></div>}
+{sectionKey === "writing" && item && <div className="mt-7"><p className="text-xs font-semibold uppercase tracking-widest text-slate-400">Dictado {index + 1} de 10 · {item.kind === "passage" ? "Texto" : "Una frase"}</p><p className="mt-3 text-sm leading-6 text-slate-600">Escucha como en un dictado de clase. Cada frase se reproduce tres veces: a ritmo natural, más despacio y de nuevo a ritmo natural. El texto no se muestra hasta que compruebes tu respuesta.</p><div className="mt-5 rounded-2xl border border-slate-200 bg-slate-50 p-4 sm:p-5"><div className="flex flex-wrap items-center justify-between gap-2"><p className="text-sm font-semibold text-slate-800">Dictado guiado</p><span className="rounded-full bg-white px-3 py-1 text-xs font-semibold text-slate-600">3 repeticiones por frase</span></div><div className="mt-4 flex flex-wrap gap-2"><button type="button" onClick={startDictation} className="rounded-xl bg-blue-700 px-4 py-3 text-sm font-semibold text-white">▶ {dictationPlaying ? "Reiniciar dictado" : "Reproducir dictado"}</button><button type="button" onClick={dictationPaused ? resumeDictation : pauseDictation} disabled={!dictationPlaying} className="rounded-xl border border-slate-200 bg-white px-4 py-3 text-sm font-semibold text-slate-700 disabled:opacity-40">{dictationPaused ? "Continuar" : "Pausar"}</button><button type="button" onClick={stopDictation} disabled={!dictationPlaying} className="rounded-xl border border-slate-200 bg-white px-4 py-3 text-sm font-semibold text-slate-700 disabled:opacity-40">Detener</button></div><div className="mt-4 flex items-center justify-between gap-3 text-xs text-slate-500"><span>Frase {dictationSegment + 1} de {item.segments?.length ?? 1}</span><span>Repetición {dictationRepeat || 0} de {item.repeatCount ?? 3}</span></div><div className="mt-2 h-1.5 overflow-hidden rounded-full bg-slate-200"><div className="h-full rounded-full bg-blue-700 transition-all" style={{ width: (((dictationSegment * (item.repeatCount ?? 3)) + dictationRepeat) / ((item.segments?.length ?? 1) * (item.repeatCount ?? 3))) * 100 + "%" }} /></div><p role="status" aria-live="polite" className="mt-3 text-xs leading-5 text-slate-500">{dictationMessage || "Pulsa reproducir para empezar. Puedes pausar o repetir el dictado."}</p></div><label className="mt-5 block text-sm font-medium">Escribe lo que has escuchado<textarea value={draft} onChange={(e) => setDraft(e.target.value)} disabled={checked} rows={item.kind === "passage" ? 7 : 3} placeholder="Escribe aquí el dictado completo…" className="mt-2 block w-full resize-y rounded-xl border border-slate-300 p-3 leading-7 outline-none focus:border-blue-500 focus:ring-2 focus:ring-blue-100 disabled:bg-slate-50" /></label><p className="mt-2 text-xs text-slate-500">Puedes volver a escuchar el audio tantas veces como necesites.</p><button disabled={checked || !draft.trim()} onClick={() => { const normalise = (value: string) => value.toLocaleLowerCase("en-GB").normalize("NFKC").replace(/[.,!?;:'’"]/g, "").replace(/\s+/g, " ").trim(); mark(normalise(draft) === normalise(item.expectedAnswer ?? ""), item.expectedAnswer ?? ""); }} className="mt-3 rounded-xl bg-blue-700 px-4 py-3 text-sm font-semibold text-white disabled:opacity-40">Comprobar dictado</button></div>}
         {sectionKey === "speaking" && item && <div className="mt-7"><p className="text-xs font-semibold uppercase tracking-widest text-slate-400">Tarea oral {index + 1} de 10</p><h3 className="mt-3 text-lg font-semibold">{item.prompt}</h3><div className="mt-4 rounded-xl bg-slate-50 p-4"><p className="text-xs font-semibold uppercase tracking-wider text-slate-400">Modelo de referencia</p><p className="mt-2 text-sm text-slate-700">{item.modelAnswer}</p><button onClick={() => speak(item.modelAnswer ?? "")} className="mt-3 rounded-lg border border-slate-200 bg-white px-3 py-2 text-sm">▶ Escuchar modelo</button></div><div className="mt-4 flex flex-wrap gap-2"><button onClick={recording ? stopRecording : startRecording} className={recording ? "rounded-xl bg-rose-600 px-4 py-3 text-sm font-semibold text-white" : "rounded-xl bg-blue-700 px-4 py-3 text-sm font-semibold text-white"}>{recording ? "■ Detener grabación" : "● Grabar mi respuesta"}</button>{recordedUrl && <audio controls src={recordedUrl} className="w-full" />}</div><p role="status" className="mt-3 text-sm text-slate-500">{recordingMessage || "La grabación permanece en esta página y no se envía al servidor."}</p><p className="mt-2 text-xs text-slate-400">No se genera una nota fonética automática en esta versión.</p><button disabled={checked} onClick={() => { setChecked(true); setFeedback("Tarea oral completada. Tu grabación permanece en esta página y no se ha evaluado."); }} className="mt-4 rounded-xl border border-slate-200 px-4 py-3 text-sm font-semibold disabled:opacity-40">Marcar tarea como completada</button></div>}
         {sectionKey === "listening" && <div className="mt-7">
           <p className="text-sm leading-6 text-slate-600">Escucha el pasaje completo y completa los diez huecos seleccionando palabras del banco. Puedes mover o sustituir palabras antes de comprobar.</p>
