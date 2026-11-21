@@ -1,0 +1,1240 @@
+{
+  "schemaVersion": "1.2.0",
+  "contentVersion": 2,
+  "course": {
+    "courseId": "english-pre-a1",
+    "level": "PRE-A1",
+    "language": "en-GB"
+  },
+  "unit": {
+    "unitId": "english-pre-a1-unit-01",
+    "courseId": "english-pre-a1",
+    "position": 1,
+    "title": "Primer vocabulario y entorno inmediato"
+  },
+  "mission": {
+    "missionId": "english-pre-a1-m006",
+    "unitId": "english-pre-a1-unit-01",
+    "position": 6,
+    "title": "Food and Drinks"
+  },
+  "sections": [
+    {
+      "sectionId": "english-pre-a1-m006-explore",
+      "sectionKey": "explore",
+      "position": 1,
+      "exercise": {
+        "exerciseId": "english-pre-a1-m006-explore-ex01",
+        "type": "vocabulary_pairs",
+        "theory": {
+          "title": "Food and Drinks: key words and simple sentences",
+          "explanation": "Learn ten useful words about food and drinks. Listen to the British English model and say each word aloud.",
+          "patterns": [
+            {
+              "label": "Simple sentence",
+              "pattern": "It is an apple.",
+              "examples": [
+                "It is an apple.",
+                "I like bread.",
+                "I do not like milk."
+              ]
+            }
+          ],
+          "tip": "Read each word aloud and use it in a short sentence."
+        },
+        "items": [
+          {
+            "itemId": "english-pre-a1-m006-explore-ex01-i01",
+            "position": 1,
+            "english": "apple",
+            "spanish": "manzana",
+            "audio": "tts:en-GB:apple"
+          },
+          {
+            "itemId": "english-pre-a1-m006-explore-ex01-i02",
+            "position": 2,
+            "english": "bread",
+            "spanish": "pan",
+            "audio": "tts:en-GB:bread"
+          },
+          {
+            "itemId": "english-pre-a1-m006-explore-ex01-i03",
+            "position": 3,
+            "english": "cheese",
+            "spanish": "queso",
+            "audio": "tts:en-GB:cheese"
+          },
+          {
+            "itemId": "english-pre-a1-m006-explore-ex01-i04",
+            "position": 4,
+            "english": "rice",
+            "spanish": "arroz",
+            "audio": "tts:en-GB:rice"
+          },
+          {
+            "itemId": "english-pre-a1-m006-explore-ex01-i05",
+            "position": 5,
+            "english": "chicken",
+            "spanish": "pollo",
+            "audio": "tts:en-GB:chicken"
+          },
+          {
+            "itemId": "english-pre-a1-m006-explore-ex01-i06",
+            "position": 6,
+            "english": "banana",
+            "spanish": "plátano",
+            "audio": "tts:en-GB:banana"
+          },
+          {
+            "itemId": "english-pre-a1-m006-explore-ex01-i07",
+            "position": 7,
+            "english": "water",
+            "spanish": "agua",
+            "audio": "tts:en-GB:water"
+          },
+          {
+            "itemId": "english-pre-a1-m006-explore-ex01-i08",
+            "position": 8,
+            "english": "milk",
+            "spanish": "leche",
+            "audio": "tts:en-GB:milk"
+          },
+          {
+            "itemId": "english-pre-a1-m006-explore-ex01-i09",
+            "position": 9,
+            "english": "juice",
+            "spanish": "zumo",
+            "audio": "tts:en-GB:juice"
+          },
+          {
+            "itemId": "english-pre-a1-m006-explore-ex01-i10",
+            "position": 10,
+            "english": "carrot",
+            "spanish": "zanahoria",
+            "audio": "tts:en-GB:carrot"
+          }
+        ]
+      }
+    },
+    {
+      "sectionId": "english-pre-a1-m006-practice",
+      "sectionKey": "practice",
+      "position": 2,
+      "exercise": {
+        "exerciseId": "english-pre-a1-m006-practice-ex01",
+        "type": "mixed_practice",
+        "items": [
+          {
+            "itemId": "english-pre-a1-m006-practice-ex01-i01",
+            "position": 1,
+            "taskType": "vocabulary_translation",
+            "prompt": "Choose the Spanish meaning of “apple”.",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "manzana",
+              "arroz",
+              "agua"
+            ],
+            "answer": "manzana"
+          },
+          {
+            "itemId": "english-pre-a1-m006-practice-ex01-i02",
+            "position": 2,
+            "taskType": "vocabulary_translation",
+            "prompt": "Choose the Spanish meaning of “bread”.",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "pan",
+              "pollo",
+              "leche"
+            ],
+            "answer": "pan"
+          },
+          {
+            "itemId": "english-pre-a1-m006-practice-ex01-i03",
+            "position": 3,
+            "taskType": "vocabulary_translation",
+            "prompt": "Choose the Spanish meaning of “cheese”.",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "queso",
+              "plátano",
+              "zumo"
+            ],
+            "answer": "queso"
+          },
+          {
+            "itemId": "english-pre-a1-m006-practice-ex01-i04",
+            "position": 4,
+            "taskType": "vocabulary_translation",
+            "prompt": "Choose the Spanish meaning of “rice”.",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "arroz",
+              "agua",
+              "zanahoria"
+            ],
+            "answer": "arroz"
+          },
+          {
+            "itemId": "english-pre-a1-m006-practice-ex01-i05",
+            "position": 5,
+            "taskType": "vocabulary_translation",
+            "prompt": "Choose the Spanish meaning of “chicken”.",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "pollo",
+              "leche",
+              "manzana"
+            ],
+            "answer": "pollo"
+          },
+          {
+            "itemId": "english-pre-a1-m006-practice-ex01-i06",
+            "position": 6,
+            "taskType": "vocabulary_translation",
+            "prompt": "Choose the Spanish meaning of “banana”.",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "plátano",
+              "zumo",
+              "pan"
+            ],
+            "answer": "plátano"
+          },
+          {
+            "itemId": "english-pre-a1-m006-practice-ex01-i07",
+            "position": 7,
+            "taskType": "vocabulary_translation",
+            "prompt": "Choose the Spanish meaning of “water”.",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "agua",
+              "zanahoria",
+              "queso"
+            ],
+            "answer": "agua"
+          },
+          {
+            "itemId": "english-pre-a1-m006-practice-ex01-i08",
+            "position": 8,
+            "taskType": "vocabulary_translation",
+            "prompt": "Choose the Spanish meaning of “milk”.",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "leche",
+              "manzana",
+              "arroz"
+            ],
+            "answer": "leche"
+          },
+          {
+            "itemId": "english-pre-a1-m006-practice-ex01-i09",
+            "position": 9,
+            "taskType": "vocabulary_translation",
+            "prompt": "Choose the Spanish meaning of “juice”.",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "zumo",
+              "pan",
+              "pollo"
+            ],
+            "answer": "zumo"
+          },
+          {
+            "itemId": "english-pre-a1-m006-practice-ex01-i10",
+            "position": 10,
+            "taskType": "vocabulary_translation",
+            "prompt": "Choose the Spanish meaning of “carrot”.",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "zanahoria",
+              "queso",
+              "plátano"
+            ],
+            "answer": "zanahoria"
+          },
+          {
+            "itemId": "english-pre-a1-m006-practice-ex01-i11",
+            "position": 11,
+            "taskType": "topic_vocabulary",
+            "prompt": "Which English word means “manzana”?",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "apple",
+              "cheese",
+              "banana"
+            ],
+            "answer": "apple"
+          },
+          {
+            "itemId": "english-pre-a1-m006-practice-ex01-i12",
+            "position": 12,
+            "taskType": "topic_vocabulary",
+            "prompt": "Choose the word for “pan”?",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "bread",
+              "rice",
+              "water"
+            ],
+            "answer": "bread"
+          },
+          {
+            "itemId": "english-pre-a1-m006-practice-ex01-i13",
+            "position": 13,
+            "taskType": "topic_vocabulary",
+            "prompt": "Select the English word for “queso”?",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "cheese",
+              "chicken",
+              "milk"
+            ],
+            "answer": "cheese"
+          },
+          {
+            "itemId": "english-pre-a1-m006-practice-ex01-i14",
+            "position": 14,
+            "taskType": "topic_vocabulary",
+            "prompt": "What is the English word for “arroz”?",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "rice",
+              "banana",
+              "juice"
+            ],
+            "answer": "rice"
+          },
+          {
+            "itemId": "english-pre-a1-m006-practice-ex01-i15",
+            "position": 15,
+            "taskType": "topic_vocabulary",
+            "prompt": "Find the word that means “pollo”?",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "chicken",
+              "water",
+              "carrot"
+            ],
+            "answer": "chicken"
+          },
+          {
+            "itemId": "english-pre-a1-m006-practice-ex01-i16",
+            "position": 16,
+            "taskType": "topic_vocabulary",
+            "prompt": "Which word matches “plátano”?",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "banana",
+              "milk",
+              "apple"
+            ],
+            "answer": "banana"
+          },
+          {
+            "itemId": "english-pre-a1-m006-practice-ex01-i17",
+            "position": 17,
+            "taskType": "topic_vocabulary",
+            "prompt": "Choose the translation for “agua”?",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "water",
+              "juice",
+              "bread"
+            ],
+            "answer": "water"
+          },
+          {
+            "itemId": "english-pre-a1-m006-practice-ex01-i18",
+            "position": 18,
+            "taskType": "topic_vocabulary",
+            "prompt": "Select the matching word for “leche”?",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "milk",
+              "carrot",
+              "cheese"
+            ],
+            "answer": "milk"
+          },
+          {
+            "itemId": "english-pre-a1-m006-practice-ex01-i19",
+            "position": 19,
+            "taskType": "topic_vocabulary",
+            "prompt": "What word means “zumo”?",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "juice",
+              "apple",
+              "rice"
+            ],
+            "answer": "juice"
+          },
+          {
+            "itemId": "english-pre-a1-m006-practice-ex01-i20",
+            "position": 20,
+            "taskType": "topic_vocabulary",
+            "prompt": "Find the English word for “zanahoria”?",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "carrot",
+              "bread",
+              "chicken"
+            ],
+            "answer": "carrot"
+          }
+        ]
+      }
+    },
+    {
+      "sectionId": "english-pre-a1-m006-grammar",
+      "sectionKey": "grammar",
+      "position": 3,
+      "exercise": {
+        "exerciseId": "english-pre-a1-m006-grammar-ex01",
+        "type": "grammar",
+        "items": [
+          {
+            "itemId": "english-pre-a1-m006-grammar-ex01-i01",
+            "position": 1,
+            "prompt": "Choose the correct word or phrase: It is ___ apple.",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "an",
+              "a",
+              "are"
+            ],
+            "answer": "an"
+          },
+          {
+            "itemId": "english-pre-a1-m006-grammar-ex01-i02",
+            "position": 2,
+            "prompt": "Choose the correct word or phrase: I ___ bread.",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "like",
+              "likes",
+              "liking"
+            ],
+            "answer": "like"
+          },
+          {
+            "itemId": "english-pre-a1-m006-grammar-ex01-i03",
+            "position": 3,
+            "prompt": "Choose the correct word or phrase: I ___ like milk.",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "do not",
+              "does not",
+              "not"
+            ],
+            "answer": "do not"
+          },
+          {
+            "itemId": "english-pre-a1-m006-grammar-ex01-i04",
+            "position": 4,
+            "prompt": "Choose the correct word or phrase: She ___ cheese.",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "likes",
+              "like",
+              "liking"
+            ],
+            "answer": "likes"
+          },
+          {
+            "itemId": "english-pre-a1-m006-grammar-ex01-i05",
+            "position": 5,
+            "prompt": "Choose the correct word or phrase: We ___ rice.",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "eat",
+              "eats",
+              "eating"
+            ],
+            "answer": "eat"
+          },
+          {
+            "itemId": "english-pre-a1-m006-grammar-ex01-i06",
+            "position": 6,
+            "prompt": "Choose the correct word or phrase: He ___ water.",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "drinks",
+              "drink",
+              "drinking"
+            ],
+            "answer": "drinks"
+          },
+          {
+            "itemId": "english-pre-a1-m006-grammar-ex01-i07",
+            "position": 7,
+            "prompt": "Choose the correct word or phrase: ___ orange is a fruit.",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "An",
+              "A",
+              "The"
+            ],
+            "answer": "An"
+          },
+          {
+            "itemId": "english-pre-a1-m006-grammar-ex01-i08",
+            "position": 8,
+            "prompt": "Complete: I have ___ banana.",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "a",
+              "an",
+              "the"
+            ],
+            "answer": "a"
+          },
+          {
+            "itemId": "english-pre-a1-m006-grammar-ex01-i09",
+            "position": 9,
+            "prompt": "Choose the correct word or phrase: They ___ chicken.",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "like",
+              "likes",
+              "liking"
+            ],
+            "answer": "like"
+          },
+          {
+            "itemId": "english-pre-a1-m006-grammar-ex01-i10",
+            "position": 10,
+            "prompt": "Choose the correct word or phrase: The juice ___ cold.",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "is",
+              "are",
+              "am"
+            ],
+            "answer": "is"
+          }
+        ]
+      }
+    },
+    {
+      "sectionId": "english-pre-a1-m006-pronunciation",
+      "sectionKey": "pronunciation",
+      "position": 4,
+      "exercise": {
+        "exerciseId": "english-pre-a1-m006-pronunciation-ex01",
+        "type": "pronunciation_cards",
+        "items": [
+          {
+            "itemId": "english-pre-a1-m006-pronunciation-ex01-i01",
+            "position": 1,
+            "word": "apple",
+            "translation": "manzana",
+            "pronunciationGuide": "á-pol",
+            "audio": "tts:en-GB:apple"
+          },
+          {
+            "itemId": "english-pre-a1-m006-pronunciation-ex01-i02",
+            "position": 2,
+            "word": "bread",
+            "translation": "pan",
+            "pronunciationGuide": "bred",
+            "audio": "tts:en-GB:bread"
+          },
+          {
+            "itemId": "english-pre-a1-m006-pronunciation-ex01-i03",
+            "position": 3,
+            "word": "cheese",
+            "translation": "queso",
+            "pronunciationGuide": "chíiz",
+            "audio": "tts:en-GB:cheese"
+          },
+          {
+            "itemId": "english-pre-a1-m006-pronunciation-ex01-i04",
+            "position": 4,
+            "word": "rice",
+            "translation": "arroz",
+            "pronunciationGuide": "rais",
+            "audio": "tts:en-GB:rice"
+          },
+          {
+            "itemId": "english-pre-a1-m006-pronunciation-ex01-i05",
+            "position": 5,
+            "word": "chicken",
+            "translation": "pollo",
+            "pronunciationGuide": "chí-ken",
+            "audio": "tts:en-GB:chicken"
+          },
+          {
+            "itemId": "english-pre-a1-m006-pronunciation-ex01-i06",
+            "position": 6,
+            "word": "banana",
+            "translation": "plátano",
+            "pronunciationGuide": "ba-ná-na",
+            "audio": "tts:en-GB:banana"
+          },
+          {
+            "itemId": "english-pre-a1-m006-pronunciation-ex01-i07",
+            "position": 7,
+            "word": "water",
+            "translation": "agua",
+            "pronunciationGuide": "uó-ter",
+            "audio": "tts:en-GB:water"
+          },
+          {
+            "itemId": "english-pre-a1-m006-pronunciation-ex01-i08",
+            "position": 8,
+            "word": "milk",
+            "translation": "leche",
+            "pronunciationGuide": "milk",
+            "audio": "tts:en-GB:milk"
+          },
+          {
+            "itemId": "english-pre-a1-m006-pronunciation-ex01-i09",
+            "position": 9,
+            "word": "juice",
+            "translation": "zumo",
+            "pronunciationGuide": "yús",
+            "audio": "tts:en-GB:juice"
+          },
+          {
+            "itemId": "english-pre-a1-m006-pronunciation-ex01-i10",
+            "position": 10,
+            "word": "carrot",
+            "translation": "zanahoria",
+            "pronunciationGuide": "ká-rot",
+            "audio": "tts:en-GB:carrot"
+          }
+        ]
+      }
+    },
+    {
+      "sectionId": "english-pre-a1-m006-reading",
+      "sectionKey": "reading",
+      "position": 5,
+      "exercise": {
+        "exerciseId": "english-pre-a1-m006-reading-ex01",
+        "type": "reading_comprehension",
+        "content": {
+          "passageId": "english-pre-a1-m006-reading-passage-01",
+          "passage": "For breakfast, I eat bread and cheese. I drink milk. My sister likes an apple and a banana. At lunch, we eat rice and chicken. I drink water. My brother likes carrot juice, but I prefer orange juice. We like fresh food."
+        },
+        "items": [
+          {
+            "itemId": "english-pre-a1-m006-reading-ex01-i01",
+            "position": 1,
+            "prompt": "What does the writer eat for breakfast?",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "Bread and cheese",
+              "Rice and chicken",
+              "An apple"
+            ],
+            "answer": "Bread and cheese"
+          },
+          {
+            "itemId": "english-pre-a1-m006-reading-ex01-i02",
+            "position": 2,
+            "prompt": "What does the writer drink at breakfast?",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "Milk",
+              "Water",
+              "Juice"
+            ],
+            "answer": "Milk"
+          },
+          {
+            "itemId": "english-pre-a1-m006-reading-ex01-i03",
+            "position": 3,
+            "prompt": "Who likes an apple and a banana?",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "The sister",
+              "The brother",
+              "The father"
+            ],
+            "answer": "The sister"
+          },
+          {
+            "itemId": "english-pre-a1-m006-reading-ex01-i04",
+            "position": 4,
+            "prompt": "What do they eat at lunch?",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "Rice and chicken",
+              "Bread and cheese",
+              "Milk and fruit"
+            ],
+            "answer": "Rice and chicken"
+          },
+          {
+            "itemId": "english-pre-a1-m006-reading-ex01-i05",
+            "position": 5,
+            "prompt": "What does the writer drink at lunch?",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "Water",
+              "Milk",
+              "Tea"
+            ],
+            "answer": "Water"
+          },
+          {
+            "itemId": "english-pre-a1-m006-reading-ex01-i06",
+            "position": 6,
+            "prompt": "What juice does the brother like?",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "Carrot juice",
+              "Apple juice",
+              "Lemon juice"
+            ],
+            "answer": "Carrot juice"
+          },
+          {
+            "itemId": "english-pre-a1-m006-reading-ex01-i07",
+            "position": 7,
+            "prompt": "What juice does the writer prefer?",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "Orange juice",
+              "Carrot juice",
+              "Grape juice"
+            ],
+            "answer": "Orange juice"
+          },
+          {
+            "itemId": "english-pre-a1-m006-reading-ex01-i08",
+            "position": 8,
+            "prompt": "Is the text about food?",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "Yes",
+              "No",
+              "It is about animals"
+            ],
+            "answer": "Yes"
+          },
+          {
+            "itemId": "english-pre-a1-m006-reading-ex01-i09",
+            "position": 9,
+            "prompt": "Name one fruit in the text.",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "A banana",
+              "A potato",
+              "A tomato"
+            ],
+            "answer": "A banana"
+          },
+          {
+            "itemId": "english-pre-a1-m006-reading-ex01-i10",
+            "position": 10,
+            "prompt": "What kind of food do they like?",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "Fresh food",
+              "Hot food only",
+              "Sweet food only"
+            ],
+            "answer": "Fresh food"
+          }
+        ]
+      }
+    },
+    {
+      "sectionId": "english-pre-a1-m006-writing",
+      "sectionKey": "writing",
+      "position": 6,
+      "exercise": {
+        "exerciseId": "english-pre-a1-m006-writing-ex01",
+        "type": "dictation",
+        "items": [
+          {
+            "itemId": "english-pre-a1-m006-writing-ex01-i01",
+            "position": 1,
+            "audio": "tts:en-GB:I eat an apple.",
+            "evaluation": {
+              "type": "normalised_text"
+            },
+            "audioLocale": "en-GB",
+            "kind": "sentence",
+            "repeatCount": 3,
+            "expectedAnswer": "I eat an apple.",
+            "segments": [
+              {
+                "segmentId": "english-pre-a1-m006-writing-segment-01",
+                "text": "I eat an apple."
+              }
+            ]
+          },
+          {
+            "itemId": "english-pre-a1-m006-writing-ex01-i02",
+            "position": 2,
+            "audio": "tts:en-GB:I like bread.",
+            "evaluation": {
+              "type": "normalised_text"
+            },
+            "audioLocale": "en-GB",
+            "kind": "sentence",
+            "repeatCount": 3,
+            "expectedAnswer": "I like bread.",
+            "segments": [
+              {
+                "segmentId": "english-pre-a1-m006-writing-segment-02",
+                "text": "I like bread."
+              }
+            ]
+          },
+          {
+            "itemId": "english-pre-a1-m006-writing-ex01-i03",
+            "position": 3,
+            "audio": "tts:en-GB:I like cheese.",
+            "evaluation": {
+              "type": "normalised_text"
+            },
+            "audioLocale": "en-GB",
+            "kind": "sentence",
+            "repeatCount": 3,
+            "expectedAnswer": "I like cheese.",
+            "segments": [
+              {
+                "segmentId": "english-pre-a1-m006-writing-segment-03",
+                "text": "I like cheese."
+              }
+            ]
+          },
+          {
+            "itemId": "english-pre-a1-m006-writing-ex01-i04",
+            "position": 4,
+            "audio": "tts:en-GB:We eat rice.",
+            "evaluation": {
+              "type": "normalised_text"
+            },
+            "audioLocale": "en-GB",
+            "kind": "sentence",
+            "repeatCount": 3,
+            "expectedAnswer": "We eat rice.",
+            "segments": [
+              {
+                "segmentId": "english-pre-a1-m006-writing-segment-04",
+                "text": "We eat rice."
+              }
+            ]
+          },
+          {
+            "itemId": "english-pre-a1-m006-writing-ex01-i05",
+            "position": 5,
+            "audio": "tts:en-GB:We eat chicken.",
+            "evaluation": {
+              "type": "normalised_text"
+            },
+            "audioLocale": "en-GB",
+            "kind": "sentence",
+            "repeatCount": 3,
+            "expectedAnswer": "We eat chicken.",
+            "segments": [
+              {
+                "segmentId": "english-pre-a1-m006-writing-segment-05",
+                "text": "We eat chicken."
+              }
+            ]
+          },
+          {
+            "itemId": "english-pre-a1-m006-writing-ex01-i06",
+            "position": 6,
+            "audio": "tts:en-GB:A banana is yellow.",
+            "evaluation": {
+              "type": "normalised_text"
+            },
+            "audioLocale": "en-GB",
+            "kind": "sentence",
+            "repeatCount": 3,
+            "expectedAnswer": "A banana is yellow.",
+            "segments": [
+              {
+                "segmentId": "english-pre-a1-m006-writing-segment-06",
+                "text": "A banana is yellow."
+              }
+            ]
+          },
+          {
+            "itemId": "english-pre-a1-m006-writing-ex01-i07",
+            "position": 7,
+            "audio": "tts:en-GB:Please drink water.",
+            "evaluation": {
+              "type": "normalised_text"
+            },
+            "audioLocale": "en-GB",
+            "kind": "sentence",
+            "repeatCount": 3,
+            "expectedAnswer": "Please drink water.",
+            "segments": [
+              {
+                "segmentId": "english-pre-a1-m006-writing-segment-07",
+                "text": "Please drink water."
+              }
+            ]
+          },
+          {
+            "itemId": "english-pre-a1-m006-writing-ex01-i08",
+            "position": 8,
+            "audio": "tts:en-GB:The baby drinks milk.",
+            "evaluation": {
+              "type": "normalised_text"
+            },
+            "audioLocale": "en-GB",
+            "kind": "sentence",
+            "repeatCount": 3,
+            "expectedAnswer": "The baby drinks milk.",
+            "segments": [
+              {
+                "segmentId": "english-pre-a1-m006-writing-segment-08",
+                "text": "The baby drinks milk."
+              }
+            ]
+          },
+          {
+            "itemId": "english-pre-a1-m006-writing-ex01-i09",
+            "position": 9,
+            "audio": "tts:en-GB:I like orange juice.",
+            "evaluation": {
+              "type": "normalised_text"
+            },
+            "audioLocale": "en-GB",
+            "kind": "sentence",
+            "repeatCount": 3,
+            "expectedAnswer": "I like orange juice.",
+            "segments": [
+              {
+                "segmentId": "english-pre-a1-m006-writing-segment-09",
+                "text": "I like orange juice."
+              }
+            ]
+          },
+          {
+            "itemId": "english-pre-a1-m006-writing-ex01-i10",
+            "position": 10,
+            "audio": "tts:en-GB:A carrot is orange.",
+            "evaluation": {
+              "type": "normalised_text"
+            },
+            "audioLocale": "en-GB",
+            "kind": "sentence",
+            "repeatCount": 3,
+            "expectedAnswer": "A carrot is orange.",
+            "segments": [
+              {
+                "segmentId": "english-pre-a1-m006-writing-segment-10",
+                "text": "A carrot is orange."
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "sectionId": "english-pre-a1-m006-speaking",
+      "sectionKey": "speaking",
+      "position": 7,
+      "exercise": {
+        "exerciseId": "english-pre-a1-m006-speaking-ex01",
+        "type": "speaking_prompts",
+        "items": [
+          {
+            "itemId": "english-pre-a1-m006-speaking-ex01-i01",
+            "position": 1,
+            "prompt": "Say a short sentence using “apple”.",
+            "modelAnswer": "I eat an apple.",
+            "evaluation": {
+              "type": "transcription_feedback",
+              "transcriptionSeparateFromPronunciation": true
+            }
+          },
+          {
+            "itemId": "english-pre-a1-m006-speaking-ex01-i02",
+            "position": 2,
+            "prompt": "Say a short sentence using “bread”.",
+            "modelAnswer": "I eat bread.",
+            "evaluation": {
+              "type": "transcription_feedback",
+              "transcriptionSeparateFromPronunciation": true
+            }
+          },
+          {
+            "itemId": "english-pre-a1-m006-speaking-ex01-i03",
+            "position": 3,
+            "prompt": "Say a short sentence using “cheese”.",
+            "modelAnswer": "I like cheese.",
+            "evaluation": {
+              "type": "transcription_feedback",
+              "transcriptionSeparateFromPronunciation": true
+            }
+          },
+          {
+            "itemId": "english-pre-a1-m006-speaking-ex01-i04",
+            "position": 4,
+            "prompt": "Say a short sentence using “rice”.",
+            "modelAnswer": "We cook rice.",
+            "evaluation": {
+              "type": "transcription_feedback",
+              "transcriptionSeparateFromPronunciation": true
+            }
+          },
+          {
+            "itemId": "english-pre-a1-m006-speaking-ex01-i05",
+            "position": 5,
+            "prompt": "Say a short sentence using “chicken”.",
+            "modelAnswer": "We eat chicken.",
+            "evaluation": {
+              "type": "transcription_feedback",
+              "transcriptionSeparateFromPronunciation": true
+            }
+          },
+          {
+            "itemId": "english-pre-a1-m006-speaking-ex01-i06",
+            "position": 6,
+            "prompt": "Say a short sentence using “banana”.",
+            "modelAnswer": "I eat a banana.",
+            "evaluation": {
+              "type": "transcription_feedback",
+              "transcriptionSeparateFromPronunciation": true
+            }
+          },
+          {
+            "itemId": "english-pre-a1-m006-speaking-ex01-i07",
+            "position": 7,
+            "prompt": "Say a short sentence using “water”.",
+            "modelAnswer": "I drink water.",
+            "evaluation": {
+              "type": "transcription_feedback",
+              "transcriptionSeparateFromPronunciation": true
+            }
+          },
+          {
+            "itemId": "english-pre-a1-m006-speaking-ex01-i08",
+            "position": 8,
+            "prompt": "Say a short sentence using “milk”.",
+            "modelAnswer": "I drink milk.",
+            "evaluation": {
+              "type": "transcription_feedback",
+              "transcriptionSeparateFromPronunciation": true
+            }
+          },
+          {
+            "itemId": "english-pre-a1-m006-speaking-ex01-i09",
+            "position": 9,
+            "prompt": "Say a short sentence using “juice”.",
+            "modelAnswer": "I like orange juice.",
+            "evaluation": {
+              "type": "transcription_feedback",
+              "transcriptionSeparateFromPronunciation": true
+            }
+          },
+          {
+            "itemId": "english-pre-a1-m006-speaking-ex01-i10",
+            "position": 10,
+            "prompt": "Say a short sentence using “carrot”.",
+            "modelAnswer": "I eat a carrot.",
+            "evaluation": {
+              "type": "transcription_feedback",
+              "transcriptionSeparateFromPronunciation": true
+            }
+          }
+        ]
+      }
+    },
+    {
+      "sectionId": "english-pre-a1-m006-listening",
+      "sectionKey": "listening",
+      "position": 8,
+      "exercise": {
+        "exerciseId": "english-pre-a1-m006-listening-ex01",
+        "type": "listening_gap_fill",
+        "content": {
+          "audio": "tts:en-GB:I eat an apple for breakfast. I have some bread with my meal. I like cheese on my toast. We cook rice for lunch. We eat chicken with rice. A banana is a yellow fruit. Please drink some water. The baby drinks milk. Orange juice is sweet. A carrot is an orange vegetable.",
+          "audioLocale": "en-GB",
+          "transcriptTemplate": "I eat an [[gap-01]] for breakfast. I have some [[gap-02]] with my meal. I like [[gap-03]] on my toast. We cook [[gap-04]] for lunch. We eat [[gap-05]] with rice. A [[gap-06]] is a yellow fruit. Please drink some [[gap-07]]. The baby drinks [[gap-08]]. Orange [[gap-09]] is sweet. A [[gap-10]] is an orange vegetable.",
+          "wordBank": [
+            {
+              "wordId": "english-pre-a1-m006-listening-word-01",
+              "word": "apple"
+            },
+            {
+              "wordId": "english-pre-a1-m006-listening-word-02",
+              "word": "bread"
+            },
+            {
+              "wordId": "english-pre-a1-m006-listening-word-03",
+              "word": "cheese"
+            },
+            {
+              "wordId": "english-pre-a1-m006-listening-word-04",
+              "word": "rice"
+            },
+            {
+              "wordId": "english-pre-a1-m006-listening-word-05",
+              "word": "chicken"
+            },
+            {
+              "wordId": "english-pre-a1-m006-listening-word-06",
+              "word": "banana"
+            },
+            {
+              "wordId": "english-pre-a1-m006-listening-word-07",
+              "word": "water"
+            },
+            {
+              "wordId": "english-pre-a1-m006-listening-word-08",
+              "word": "milk"
+            },
+            {
+              "wordId": "english-pre-a1-m006-listening-word-09",
+              "word": "juice"
+            },
+            {
+              "wordId": "english-pre-a1-m006-listening-word-10",
+              "word": "carrot"
+            }
+          ],
+          "interaction": "select_place_move_replace",
+          "audioTranscript": "tts:en-GB:I eat an apple for breakfast. I have some bread with my meal. I like cheese on my toast. We cook rice for lunch. We eat chicken with rice. A banana is a yellow fruit. Please drink some water. The baby drinks milk. Orange juice is sweet. A carrot is an orange vegetable."
+        },
+        "items": [
+          {
+            "itemId": "english-pre-a1-m006-listening-ex01-i01",
+            "position": 1,
+            "gapToken": "[[gap-01]]"
+          },
+          {
+            "itemId": "english-pre-a1-m006-listening-ex01-i02",
+            "position": 2,
+            "gapToken": "[[gap-02]]"
+          },
+          {
+            "itemId": "english-pre-a1-m006-listening-ex01-i03",
+            "position": 3,
+            "gapToken": "[[gap-03]]"
+          },
+          {
+            "itemId": "english-pre-a1-m006-listening-ex01-i04",
+            "position": 4,
+            "gapToken": "[[gap-04]]"
+          },
+          {
+            "itemId": "english-pre-a1-m006-listening-ex01-i05",
+            "position": 5,
+            "gapToken": "[[gap-05]]"
+          },
+          {
+            "itemId": "english-pre-a1-m006-listening-ex01-i06",
+            "position": 6,
+            "gapToken": "[[gap-06]]"
+          },
+          {
+            "itemId": "english-pre-a1-m006-listening-ex01-i07",
+            "position": 7,
+            "gapToken": "[[gap-07]]"
+          },
+          {
+            "itemId": "english-pre-a1-m006-listening-ex01-i08",
+            "position": 8,
+            "gapToken": "[[gap-08]]"
+          },
+          {
+            "itemId": "english-pre-a1-m006-listening-ex01-i09",
+            "position": 9,
+            "gapToken": "[[gap-09]]"
+          },
+          {
+            "itemId": "english-pre-a1-m006-listening-ex01-i10",
+            "position": 10,
+            "gapToken": "[[gap-10]]"
+          }
+        ]
+      }
+    }
+  ]
+}
