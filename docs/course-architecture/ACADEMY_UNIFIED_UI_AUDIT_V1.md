@@ -20,7 +20,7 @@ La rama auditada contiene 259 páginas `page.tsx` dentro de `app`; 216 pertenece
 
 Inventario observado:
 - Pre-A1: 100 rutas de misión y 100 documentos HTML; además hay 100 archivos JSON en `content/missions/pre-a1`.
-- A1: 100 rutas de misión y 110 documentos HTML. En misiones desde la 041 aparecen variantes `index.html` y `index-v2.html`; las rutas 041 y 042 inspeccionadas ya apuntan a `index-v2.html`.
+- A1: 100 rutas de misión y 110 documentos HTML. En las misiones 041–050 coexisten `index.html` y `index-v2.html`; de la 051 a la 100 aparece `index-v2.html`. Las rutas 041 y 042 inspeccionadas ya apuntan a `index-v2.html`.
 - A2: 10 rutas de misión y 10 documentos HTML.
 - Los catálogos y las páginas de misión están escritos como páginas Next independientes.
 - Las páginas de misión envuelven los HTML con `iframe`. Por tanto, cada HTML lleva su propio CSS, estructura y comportamiento; los estilos globales del sitio no unifican el contenido del iframe.
