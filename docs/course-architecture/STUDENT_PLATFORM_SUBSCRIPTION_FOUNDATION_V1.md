@@ -246,3 +246,28 @@ El portal de cliente solo se crea para un customer perteneciente al alumno auten
 - No se ha tocado el blog ni su D1 `DB`.
 
 Este documento es el contrato previo para que el responsable técnico pueda aprobar y secuenciar los cambios compartidos. No debe interpretarse como una implementación lista para cobrar.
+
+
+## 12. Cambios de consolidación aplicados en la rama
+
+Fecha de revisión: 2026-11-21.
+
+Se han aplicado cambios pequeños y aditivos, sin migraciones ni cambios de infraestructura:
+
+- `app/api/learn/submit/route.ts`: las operaciones de aprendizaje usan exclusivamente `COURSE_DB`; si no está disponible, responden 503.
+- `app/api/learn/next/route.ts`: misma protección para la carga de la siguiente actividad.
+- `app/api/learn/stats/route.ts`: misma protección para estadísticas.
+- `app/api/exercises/progress/route.ts`: misma protección para el historial de ejercicios.
+- `app/api/billing/checkout/route.ts`: la identidad del alumno se toma de la sesión autenticada; ya no se exige ni se confía en un `studentId` enviado por el cliente.
+
+Estos cambios no migran datos ni activan cobros. El checkout sigue sujeto a las claves y precios Stripe ya configurados en el entorno, y no se ha iniciado ninguna sesión de pago.
+
+### Pendiente de la siguiente iteración
+
+- Consolidar permisos Premium en una única función y aplicarla a todas las rutas de contenido; no se ha cambiado todavía la política comercial porque existen cuentas de prueba y estados administrativos que requieren definir una matriz de permisos sin bloquear usuarios legítimos.
+- Idempotencia del webhook Stripe y cobertura de todos los eventos del ciclo de vida. Requiere una migración aditiva en `COURSE_DB` y pruebas con eventos simulados.
+- Auditoría de las 100 rutas `/api/canonical-missions/pre-a1/*/submit`: actualmente comprueban respuestas, pero no persisten intentos ni progreso.
+- El sistema de repetición espaciada tiene rutas que utilizan `env.DB` y aceptan identificadores de usuario enviados por el cliente. No se han modificado porque su ubicación de datos y consumidores deben migrarse de forma coordinada; no debe asumirse que `DB` es intercambiable con `COURSE_DB`.
+- Añadir pruebas automatizadas de propiedad de datos, permisos, concurrencia e idempotencia.
+- Ejecutar typecheck/build/QA en un workflow que incluya explícitamente estas rutas de backend. El workflow de piloto actual no se activa con todos estos paths.
+
