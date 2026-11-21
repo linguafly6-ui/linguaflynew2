@@ -6,7 +6,8 @@ export async function GET(request: NextRequest) {
   try {
     const student = await getStudent(request);
     if (!student) return NextResponse.json({ error: "Inicia sesión." }, { status: 401 });
-    const db = getEnv().COURSE_DB || getEnv().DB;
+    const db = getEnv().COURSE_DB;
+    if (!db) return NextResponse.json({ error: "Base de datos de aprendizaje no disponible." }, { status: 503 });
     const row = await db.prepare("SELECT xp_total,current_streak,longest_streak,last_practice_date FROM learning_streaks WHERE student_id=?")
       .bind(student.id).first() as any;
     return NextResponse.json({
