@@ -1,0 +1,1269 @@
+{
+  "schemaVersion": "1.2.0",
+  "contentVersion": 2,
+  "course": {
+    "courseId": "english-pre-a1",
+    "level": "PRE-A1",
+    "language": "en-GB"
+  },
+  "unit": {
+    "unitId": "english-pre-a1-unit-01",
+    "courseId": "english-pre-a1",
+    "position": 1,
+    "title": "Primer vocabulario y entorno inmediato"
+  },
+  "mission": {
+    "missionId": "english-pre-a1-m003",
+    "unitId": "english-pre-a1-unit-01",
+    "position": 3,
+    "title": "Colours"
+  },
+  "sections": [
+    {
+      "sectionId": "english-pre-a1-m003-explore",
+      "sectionKey": "explore",
+      "position": 1,
+      "exercise": {
+        "exerciseId": "english-pre-a1-m003-explore-ex01",
+        "type": "vocabulary_pairs",
+        "theory": {
+          "title": "Colours: names and simple descriptions",
+          "explanation": "Aprende diez colores y úsalos para describir objetos. En inglés, el color suele ir antes del nombre del objeto.",
+          "patterns": [
+            {
+              "label": "Colour + noun",
+              "pattern": "a + colour + noun",
+              "examples": [
+                "a red ball",
+                "a blue sky",
+                "a green tree"
+              ]
+            },
+            {
+              "label": "Describir algo",
+              "pattern": "It is + a/an + colour + noun",
+              "examples": [
+                "It is a red flower.",
+                "It is a blue ball.",
+                "It is a green leaf."
+              ]
+            }
+          ],
+          "tip": "Primero decimos el color y después el objeto: a yellow sun, no a sun yellow."
+        },
+        "items": [
+          {
+            "itemId": "english-pre-a1-m003-explore-ex01-i01",
+            "position": 1,
+            "english": "red",
+            "spanish": "rojo",
+            "audio": "tts:en-GB:red"
+          },
+          {
+            "itemId": "english-pre-a1-m003-explore-ex01-i02",
+            "position": 2,
+            "english": "blue",
+            "spanish": "azul",
+            "audio": "tts:en-GB:blue"
+          },
+          {
+            "itemId": "english-pre-a1-m003-explore-ex01-i03",
+            "position": 3,
+            "english": "yellow",
+            "spanish": "amarillo",
+            "audio": "tts:en-GB:yellow"
+          },
+          {
+            "itemId": "english-pre-a1-m003-explore-ex01-i04",
+            "position": 4,
+            "english": "green",
+            "spanish": "verde",
+            "audio": "tts:en-GB:green"
+          },
+          {
+            "itemId": "english-pre-a1-m003-explore-ex01-i05",
+            "position": 5,
+            "english": "black",
+            "spanish": "negro",
+            "audio": "tts:en-GB:black"
+          },
+          {
+            "itemId": "english-pre-a1-m003-explore-ex01-i06",
+            "position": 6,
+            "english": "white",
+            "spanish": "blanco",
+            "audio": "tts:en-GB:white"
+          },
+          {
+            "itemId": "english-pre-a1-m003-explore-ex01-i07",
+            "position": 7,
+            "english": "orange",
+            "spanish": "naranja",
+            "audio": "tts:en-GB:orange"
+          },
+          {
+            "itemId": "english-pre-a1-m003-explore-ex01-i08",
+            "position": 8,
+            "english": "pink",
+            "spanish": "rosa",
+            "audio": "tts:en-GB:pink"
+          },
+          {
+            "itemId": "english-pre-a1-m003-explore-ex01-i09",
+            "position": 9,
+            "english": "purple",
+            "spanish": "morado",
+            "audio": "tts:en-GB:purple"
+          },
+          {
+            "itemId": "english-pre-a1-m003-explore-ex01-i10",
+            "position": 10,
+            "english": "brown",
+            "spanish": "marrón",
+            "audio": "tts:en-GB:brown"
+          }
+        ]
+      }
+    },
+    {
+      "sectionId": "english-pre-a1-m003-practice",
+      "sectionKey": "practice",
+      "position": 2,
+      "exercise": {
+        "exerciseId": "english-pre-a1-m003-practice-ex01",
+        "type": "mixed_practice",
+        "items": [
+          {
+            "itemId": "english-pre-a1-m003-practice-ex01-i01",
+            "position": 1,
+            "taskType": "vocabulary_translation",
+            "prompt": "Choose the Spanish meaning of “red”.",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "rojo",
+              "verde",
+              "naranja"
+            ],
+            "answer": "rojo"
+          },
+          {
+            "itemId": "english-pre-a1-m003-practice-ex01-i02",
+            "position": 2,
+            "taskType": "vocabulary_translation",
+            "prompt": "Choose the Spanish meaning of “blue”.",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "azul",
+              "negro",
+              "rosa"
+            ],
+            "answer": "azul"
+          },
+          {
+            "itemId": "english-pre-a1-m003-practice-ex01-i03",
+            "position": 3,
+            "taskType": "vocabulary_translation",
+            "prompt": "Choose the Spanish meaning of “yellow”.",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "amarillo",
+              "blanco",
+              "morado"
+            ],
+            "answer": "amarillo"
+          },
+          {
+            "itemId": "english-pre-a1-m003-practice-ex01-i04",
+            "position": 4,
+            "taskType": "vocabulary_translation",
+            "prompt": "Choose the Spanish meaning of “green”.",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "verde",
+              "naranja",
+              "marrón"
+            ],
+            "answer": "verde"
+          },
+          {
+            "itemId": "english-pre-a1-m003-practice-ex01-i05",
+            "position": 5,
+            "taskType": "vocabulary_translation",
+            "prompt": "Choose the Spanish meaning of “black”.",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "negro",
+              "rosa",
+              "rojo"
+            ],
+            "answer": "negro"
+          },
+          {
+            "itemId": "english-pre-a1-m003-practice-ex01-i06",
+            "position": 6,
+            "taskType": "vocabulary_translation",
+            "prompt": "Choose the Spanish meaning of “white”.",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "blanco",
+              "morado",
+              "azul"
+            ],
+            "answer": "blanco"
+          },
+          {
+            "itemId": "english-pre-a1-m003-practice-ex01-i07",
+            "position": 7,
+            "taskType": "vocabulary_translation",
+            "prompt": "Choose the Spanish meaning of “orange”.",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "naranja",
+              "marrón",
+              "amarillo"
+            ],
+            "answer": "naranja"
+          },
+          {
+            "itemId": "english-pre-a1-m003-practice-ex01-i08",
+            "position": 8,
+            "taskType": "vocabulary_translation",
+            "prompt": "Choose the Spanish meaning of “pink”.",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "rosa",
+              "rojo",
+              "verde"
+            ],
+            "answer": "rosa"
+          },
+          {
+            "itemId": "english-pre-a1-m003-practice-ex01-i09",
+            "position": 9,
+            "taskType": "vocabulary_translation",
+            "prompt": "Choose the Spanish meaning of “purple”.",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "morado",
+              "azul",
+              "negro"
+            ],
+            "answer": "morado"
+          },
+          {
+            "itemId": "english-pre-a1-m003-practice-ex01-i10",
+            "position": 10,
+            "taskType": "vocabulary_translation",
+            "prompt": "Choose the Spanish meaning of “brown”.",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "marrón",
+              "amarillo",
+              "blanco"
+            ],
+            "answer": "marrón"
+          },
+          {
+            "itemId": "english-pre-a1-m003-practice-ex01-i11",
+            "position": 11,
+            "taskType": "colour_in_context",
+            "prompt": "What colour is the sky on a clear day?",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "blue",
+              "green",
+              "brown"
+            ],
+            "answer": "blue"
+          },
+          {
+            "itemId": "english-pre-a1-m003-practice-ex01-i12",
+            "position": 12,
+            "taskType": "colour_in_context",
+            "prompt": "Which colour is a ripe banana usually?",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "yellow",
+              "purple",
+              "black"
+            ],
+            "answer": "yellow"
+          },
+          {
+            "itemId": "english-pre-a1-m003-practice-ex01-i13",
+            "position": 13,
+            "taskType": "colour_in_context",
+            "prompt": "What colour is fresh grass?",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "green",
+              "pink",
+              "orange"
+            ],
+            "answer": "green"
+          },
+          {
+            "itemId": "english-pre-a1-m003-practice-ex01-i14",
+            "position": 14,
+            "taskType": "colour_in_context",
+            "prompt": "Which colour is a strawberry usually?",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "red",
+              "blue",
+              "white"
+            ],
+            "answer": "red"
+          },
+          {
+            "itemId": "english-pre-a1-m003-practice-ex01-i15",
+            "position": 15,
+            "taskType": "colour_in_context",
+            "prompt": "What colour is snow?",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "white",
+              "brown",
+              "purple"
+            ],
+            "answer": "white"
+          },
+          {
+            "itemId": "english-pre-a1-m003-practice-ex01-i16",
+            "position": 16,
+            "taskType": "colour_in_context",
+            "prompt": "Which colour is a carrot usually?",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "orange",
+              "pink",
+              "black"
+            ],
+            "answer": "orange"
+          },
+          {
+            "itemId": "english-pre-a1-m003-practice-ex01-i17",
+            "position": 17,
+            "taskType": "colour_in_context",
+            "prompt": "What colour are many flamingos?",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "pink",
+              "green",
+              "blue"
+            ],
+            "answer": "pink"
+          },
+          {
+            "itemId": "english-pre-a1-m003-practice-ex01-i18",
+            "position": 18,
+            "taskType": "colour_in_context",
+            "prompt": "Which colour is often used for an aubergine?",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "purple",
+              "yellow",
+              "white"
+            ],
+            "answer": "purple"
+          },
+          {
+            "itemId": "english-pre-a1-m003-practice-ex01-i19",
+            "position": 19,
+            "taskType": "colour_in_context",
+            "prompt": "What colour is dark chocolate?",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "brown",
+              "blue",
+              "pink"
+            ],
+            "answer": "brown"
+          },
+          {
+            "itemId": "english-pre-a1-m003-practice-ex01-i20",
+            "position": 20,
+            "taskType": "colour_in_context",
+            "prompt": "Which colour is the darkest in this list?",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "black",
+              "yellow",
+              "white"
+            ],
+            "answer": "black"
+          }
+        ]
+      }
+    },
+    {
+      "sectionId": "english-pre-a1-m003-grammar",
+      "sectionKey": "grammar",
+      "position": 3,
+      "exercise": {
+        "exerciseId": "english-pre-a1-m003-grammar-ex01",
+        "type": "grammar",
+        "items": [
+          {
+            "itemId": "english-pre-a1-m003-grammar-ex01-i01",
+            "position": 1,
+            "prompt": "Choose the correct phrase.",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "a red ball",
+              "a ball red",
+              "red a ball"
+            ],
+            "answer": "a red ball"
+          },
+          {
+            "itemId": "english-pre-a1-m003-grammar-ex01-i02",
+            "position": 2,
+            "prompt": "Complete: It is a ___ flower.",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "yellow",
+              "yellowly",
+              "yellows"
+            ],
+            "answer": "yellow"
+          },
+          {
+            "itemId": "english-pre-a1-m003-grammar-ex01-i03",
+            "position": 3,
+            "prompt": "Choose the correct phrase.",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "a blue car",
+              "a car blue",
+              "blue a car"
+            ],
+            "answer": "a blue car"
+          },
+          {
+            "itemId": "english-pre-a1-m003-grammar-ex01-i04",
+            "position": 4,
+            "prompt": "Complete: The grass is ___.",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "green",
+              "a green",
+              "greens"
+            ],
+            "answer": "green"
+          },
+          {
+            "itemId": "english-pre-a1-m003-grammar-ex01-i05",
+            "position": 5,
+            "prompt": "Choose the correct sentence.",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "It is a black cat.",
+              "It is black a cat.",
+              "It a black is cat."
+            ],
+            "answer": "It is a black cat."
+          },
+          {
+            "itemId": "english-pre-a1-m003-grammar-ex01-i06",
+            "position": 6,
+            "prompt": "Put the words in the correct order: (white / a / cloud).",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "a white cloud",
+              "a cloud white",
+              "white a cloud"
+            ],
+            "answer": "a white cloud"
+          },
+          {
+            "itemId": "english-pre-a1-m003-grammar-ex01-i07",
+            "position": 7,
+            "prompt": "Complete: I can see ___ orange fish.",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "an",
+              "a",
+              "are"
+            ],
+            "answer": "an"
+          },
+          {
+            "itemId": "english-pre-a1-m003-grammar-ex01-i08",
+            "position": 8,
+            "prompt": "Choose the correct phrase.",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "three pink flowers",
+              "three flowers pink",
+              "pink three flowers"
+            ],
+            "answer": "three pink flowers"
+          },
+          {
+            "itemId": "english-pre-a1-m003-grammar-ex01-i09",
+            "position": 9,
+            "prompt": "Complete: The ball is ___.",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "purple",
+              "a purple",
+              "purples"
+            ],
+            "answer": "purple"
+          },
+          {
+            "itemId": "english-pre-a1-m003-grammar-ex01-i10",
+            "position": 10,
+            "prompt": "Choose the correct sentence.",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "The brown dog is big.",
+              "The dog brown is big.",
+              "The big is brown dog."
+            ],
+            "answer": "The brown dog is big."
+          }
+        ]
+      }
+    },
+    {
+      "sectionId": "english-pre-a1-m003-pronunciation",
+      "sectionKey": "pronunciation",
+      "position": 4,
+      "exercise": {
+        "exerciseId": "english-pre-a1-m003-pronunciation-ex01",
+        "type": "pronunciation_cards",
+        "items": [
+          {
+            "itemId": "english-pre-a1-m003-pronunciation-ex01-i01",
+            "position": 1,
+            "word": "red",
+            "translation": "rojo",
+            "pronunciationGuide": "red",
+            "audio": "tts:en-GB:red"
+          },
+          {
+            "itemId": "english-pre-a1-m003-pronunciation-ex01-i02",
+            "position": 2,
+            "word": "blue",
+            "translation": "azul",
+            "pronunciationGuide": "blúu",
+            "audio": "tts:en-GB:blue"
+          },
+          {
+            "itemId": "english-pre-a1-m003-pronunciation-ex01-i03",
+            "position": 3,
+            "word": "yellow",
+            "translation": "amarillo",
+            "pronunciationGuide": "iélou",
+            "audio": "tts:en-GB:yellow"
+          },
+          {
+            "itemId": "english-pre-a1-m003-pronunciation-ex01-i04",
+            "position": 4,
+            "word": "green",
+            "translation": "verde",
+            "pronunciationGuide": "gríin",
+            "audio": "tts:en-GB:green"
+          },
+          {
+            "itemId": "english-pre-a1-m003-pronunciation-ex01-i05",
+            "position": 5,
+            "word": "black",
+            "translation": "negro",
+            "pronunciationGuide": "blak",
+            "audio": "tts:en-GB:black"
+          },
+          {
+            "itemId": "english-pre-a1-m003-pronunciation-ex01-i06",
+            "position": 6,
+            "word": "white",
+            "translation": "blanco",
+            "pronunciationGuide": "uáit",
+            "audio": "tts:en-GB:white"
+          },
+          {
+            "itemId": "english-pre-a1-m003-pronunciation-ex01-i07",
+            "position": 7,
+            "word": "orange",
+            "translation": "naranja",
+            "pronunciationGuide": "órinch",
+            "audio": "tts:en-GB:orange"
+          },
+          {
+            "itemId": "english-pre-a1-m003-pronunciation-ex01-i08",
+            "position": 8,
+            "word": "pink",
+            "translation": "rosa",
+            "pronunciationGuide": "pink",
+            "audio": "tts:en-GB:pink"
+          },
+          {
+            "itemId": "english-pre-a1-m003-pronunciation-ex01-i09",
+            "position": 9,
+            "word": "purple",
+            "translation": "morado",
+            "pronunciationGuide": "pérpol",
+            "audio": "tts:en-GB:purple"
+          },
+          {
+            "itemId": "english-pre-a1-m003-pronunciation-ex01-i10",
+            "position": 10,
+            "word": "brown",
+            "translation": "marrón",
+            "pronunciationGuide": "braun",
+            "audio": "tts:en-GB:brown"
+          }
+        ]
+      }
+    },
+    {
+      "sectionId": "english-pre-a1-m003-reading",
+      "sectionKey": "reading",
+      "position": 5,
+      "exercise": {
+        "exerciseId": "english-pre-a1-m003-reading-ex01",
+        "type": "reading_comprehension",
+        "content": {
+          "passageId": "english-pre-a1-m003-reading-passage-01",
+          "passage": "I can see colours in the garden. The sun is yellow. The sky is blue. The grass is green. I see a red flower and a white cloud. My ball is blue too. What is your favourite colour?"
+        },
+        "items": [
+          {
+            "itemId": "english-pre-a1-m003-reading-ex01-i01",
+            "position": 1,
+            "prompt": "What can the writer see in the garden?",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "Colours",
+              "Animals",
+              "Cars"
+            ],
+            "answer": "Colours"
+          },
+          {
+            "itemId": "english-pre-a1-m003-reading-ex01-i02",
+            "position": 2,
+            "prompt": "What colour is the sun?",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "Yellow",
+              "Blue",
+              "Green"
+            ],
+            "answer": "Yellow"
+          },
+          {
+            "itemId": "english-pre-a1-m003-reading-ex01-i03",
+            "position": 3,
+            "prompt": "What colour is the sky?",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "Blue",
+              "Red",
+              "White"
+            ],
+            "answer": "Blue"
+          },
+          {
+            "itemId": "english-pre-a1-m003-reading-ex01-i04",
+            "position": 4,
+            "prompt": "What colour is the grass?",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "Green",
+              "Black",
+              "Pink"
+            ],
+            "answer": "Green"
+          },
+          {
+            "itemId": "english-pre-a1-m003-reading-ex01-i05",
+            "position": 5,
+            "prompt": "What colour is the flower?",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "Red",
+              "White",
+              "Brown"
+            ],
+            "answer": "Red"
+          },
+          {
+            "itemId": "english-pre-a1-m003-reading-ex01-i06",
+            "position": 6,
+            "prompt": "What colour is the cloud?",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "White",
+              "Purple",
+              "Orange"
+            ],
+            "answer": "White"
+          },
+          {
+            "itemId": "english-pre-a1-m003-reading-ex01-i07",
+            "position": 7,
+            "prompt": "What colour is the writer's ball?",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "Blue",
+              "Yellow",
+              "Red"
+            ],
+            "answer": "Blue"
+          },
+          {
+            "itemId": "english-pre-a1-m003-reading-ex01-i08",
+            "position": 8,
+            "prompt": "Which colour describes both the sky and the ball?",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "Blue",
+              "Yellow",
+              "Red"
+            ],
+            "answer": "Blue"
+          },
+          {
+            "itemId": "english-pre-a1-m003-reading-ex01-i09",
+            "position": 9,
+            "prompt": "Which two things are described after the grass?",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "A flower and a cloud",
+              "A tree and a bird",
+              "A book and a pen"
+            ],
+            "answer": "A flower and a cloud"
+          },
+          {
+            "itemId": "english-pre-a1-m003-reading-ex01-i10",
+            "position": 10,
+            "prompt": "What does the writer ask at the end?",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "Your favourite colour",
+              "Your favourite food",
+              "Your name"
+            ],
+            "answer": "Your favourite colour"
+          }
+        ]
+      }
+    },
+    {
+      "sectionId": "english-pre-a1-m003-writing",
+      "sectionKey": "writing",
+      "position": 6,
+      "exercise": {
+        "exerciseId": "english-pre-a1-m003-writing-ex01",
+        "type": "dictation",
+        "items": [
+          {
+            "itemId": "english-pre-a1-m003-writing-ex01-i01",
+            "position": 1,
+            "audio": "tts:en-GB:The sun is yellow.",
+            "expectedAnswer": "The sun is yellow.",
+            "evaluation": {
+              "type": "normalised_text"
+            },
+            "audioLocale": "en-GB",
+            "kind": "sentence",
+            "repeatCount": 3,
+            "segments": [
+              {
+                "segmentId": "english-pre-a1-m003-writing-segment-01",
+                "text": "The sun is yellow."
+              }
+            ]
+          },
+          {
+            "itemId": "english-pre-a1-m003-writing-ex01-i02",
+            "position": 2,
+            "audio": "tts:en-GB:The sky is blue.",
+            "expectedAnswer": "The sky is blue.",
+            "evaluation": {
+              "type": "normalised_text"
+            },
+            "audioLocale": "en-GB",
+            "kind": "sentence",
+            "repeatCount": 3,
+            "segments": [
+              {
+                "segmentId": "english-pre-a1-m003-writing-segment-02",
+                "text": "The sky is blue."
+              }
+            ]
+          },
+          {
+            "itemId": "english-pre-a1-m003-writing-ex01-i03",
+            "position": 3,
+            "audio": "tts:en-GB:The grass is green.",
+            "expectedAnswer": "The grass is green.",
+            "evaluation": {
+              "type": "normalised_text"
+            },
+            "audioLocale": "en-GB",
+            "kind": "sentence",
+            "repeatCount": 3,
+            "segments": [
+              {
+                "segmentId": "english-pre-a1-m003-writing-segment-03",
+                "text": "The grass is green."
+              }
+            ]
+          },
+          {
+            "itemId": "english-pre-a1-m003-writing-ex01-i04",
+            "position": 4,
+            "audio": "tts:en-GB:I see a red flower.",
+            "expectedAnswer": "I see a red flower.",
+            "evaluation": {
+              "type": "normalised_text"
+            },
+            "audioLocale": "en-GB",
+            "kind": "sentence",
+            "repeatCount": 3,
+            "segments": [
+              {
+                "segmentId": "english-pre-a1-m003-writing-segment-04",
+                "text": "I see a red flower."
+              }
+            ]
+          },
+          {
+            "itemId": "english-pre-a1-m003-writing-ex01-i05",
+            "position": 5,
+            "audio": "tts:en-GB:The cloud is white.",
+            "expectedAnswer": "The cloud is white.",
+            "evaluation": {
+              "type": "normalised_text"
+            },
+            "audioLocale": "en-GB",
+            "kind": "sentence",
+            "repeatCount": 3,
+            "segments": [
+              {
+                "segmentId": "english-pre-a1-m003-writing-segment-05",
+                "text": "The cloud is white."
+              }
+            ]
+          },
+          {
+            "itemId": "english-pre-a1-m003-writing-ex01-i06",
+            "position": 6,
+            "audio": "tts:en-GB:My ball is purple.",
+            "expectedAnswer": "My ball is purple.",
+            "evaluation": {
+              "type": "normalised_text"
+            },
+            "audioLocale": "en-GB",
+            "kind": "sentence",
+            "repeatCount": 3,
+            "segments": [
+              {
+                "segmentId": "english-pre-a1-m003-writing-segment-06",
+                "text": "My ball is purple."
+              }
+            ]
+          },
+          {
+            "itemId": "english-pre-a1-m003-writing-ex01-i07",
+            "position": 7,
+            "audio": "tts:en-GB:I see an orange fish.",
+            "expectedAnswer": "I see an orange fish.",
+            "evaluation": {
+              "type": "normalised_text"
+            },
+            "audioLocale": "en-GB",
+            "kind": "sentence",
+            "repeatCount": 3,
+            "segments": [
+              {
+                "segmentId": "english-pre-a1-m003-writing-segment-07",
+                "text": "I see an orange fish."
+              }
+            ]
+          },
+          {
+            "itemId": "english-pre-a1-m003-writing-ex01-i08",
+            "position": 8,
+            "audio": "tts:en-GB:The house is pink.",
+            "expectedAnswer": "The house is pink.",
+            "evaluation": {
+              "type": "normalised_text"
+            },
+            "audioLocale": "en-GB",
+            "kind": "sentence",
+            "repeatCount": 3,
+            "segments": [
+              {
+                "segmentId": "english-pre-a1-m003-writing-segment-08",
+                "text": "The house is pink."
+              }
+            ]
+          },
+          {
+            "itemId": "english-pre-a1-m003-writing-ex01-i09",
+            "position": 9,
+            "audio": "tts:en-GB:The dog is brown.",
+            "expectedAnswer": "The dog is brown.",
+            "evaluation": {
+              "type": "normalised_text"
+            },
+            "audioLocale": "en-GB",
+            "kind": "sentence",
+            "repeatCount": 3,
+            "segments": [
+              {
+                "segmentId": "english-pre-a1-m003-writing-segment-09",
+                "text": "The dog is brown."
+              }
+            ]
+          },
+          {
+            "itemId": "english-pre-a1-m003-writing-ex01-i10",
+            "position": 10,
+            "audio": "tts:en-GB:My favourite colour is blue.",
+            "expectedAnswer": "My favourite colour is blue.",
+            "evaluation": {
+              "type": "normalised_text"
+            },
+            "audioLocale": "en-GB",
+            "kind": "sentence",
+            "repeatCount": 3,
+            "segments": [
+              {
+                "segmentId": "english-pre-a1-m003-writing-segment-10",
+                "text": "My favourite colour is blue."
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "sectionId": "english-pre-a1-m003-speaking",
+      "sectionKey": "speaking",
+      "position": 7,
+      "exercise": {
+        "exerciseId": "english-pre-a1-m003-speaking-ex01",
+        "type": "speaking_prompts",
+        "items": [
+          {
+            "itemId": "english-pre-a1-m003-speaking-ex01-i01",
+            "position": 1,
+            "prompt": "Say three colours.",
+            "modelAnswer": "Red, blue and yellow.",
+            "evaluation": {
+              "type": "transcription_feedback",
+              "transcriptionSeparateFromPronunciation": true
+            }
+          },
+          {
+            "itemId": "english-pre-a1-m003-speaking-ex01-i02",
+            "position": 2,
+            "prompt": "What colour is the sky?",
+            "modelAnswer": "The sky is blue.",
+            "evaluation": {
+              "type": "transcription_feedback",
+              "transcriptionSeparateFromPronunciation": true
+            }
+          },
+          {
+            "itemId": "english-pre-a1-m003-speaking-ex01-i03",
+            "position": 3,
+            "prompt": "What colour is the grass?",
+            "modelAnswer": "The grass is green.",
+            "evaluation": {
+              "type": "transcription_feedback",
+              "transcriptionSeparateFromPronunciation": true
+            }
+          },
+          {
+            "itemId": "english-pre-a1-m003-speaking-ex01-i04",
+            "position": 4,
+            "prompt": "Name a colour of a flower in the reading.",
+            "modelAnswer": "The flower is red.",
+            "evaluation": {
+              "type": "transcription_feedback",
+              "transcriptionSeparateFromPronunciation": true
+            }
+          },
+          {
+            "itemId": "english-pre-a1-m003-speaking-ex01-i05",
+            "position": 5,
+            "prompt": "Say the colour of a cloud in the reading.",
+            "modelAnswer": "The cloud is white.",
+            "evaluation": {
+              "type": "transcription_feedback",
+              "transcriptionSeparateFromPronunciation": true
+            }
+          },
+          {
+            "itemId": "english-pre-a1-m003-speaking-ex01-i06",
+            "position": 6,
+            "prompt": "Describe a ball using a colour.",
+            "modelAnswer": "It is a purple ball.",
+            "evaluation": {
+              "type": "transcription_feedback",
+              "transcriptionSeparateFromPronunciation": true
+            }
+          },
+          {
+            "itemId": "english-pre-a1-m003-speaking-ex01-i07",
+            "position": 7,
+            "prompt": "Say two colours you can see in the garden.",
+            "modelAnswer": "I can see yellow and green.",
+            "evaluation": {
+              "type": "transcription_feedback",
+              "transcriptionSeparateFromPronunciation": true
+            }
+          },
+          {
+            "itemId": "english-pre-a1-m003-speaking-ex01-i08",
+            "position": 8,
+            "prompt": "What colour is a carrot usually?",
+            "modelAnswer": "A carrot is orange.",
+            "evaluation": {
+              "type": "transcription_feedback",
+              "transcriptionSeparateFromPronunciation": true
+            }
+          },
+          {
+            "itemId": "english-pre-a1-m003-speaking-ex01-i09",
+            "position": 9,
+            "prompt": "Make a sentence with the words “brown” and “dog”.",
+            "modelAnswer": "The dog is brown.",
+            "evaluation": {
+              "type": "transcription_feedback",
+              "transcriptionSeparateFromPronunciation": true
+            }
+          },
+          {
+            "itemId": "english-pre-a1-m003-speaking-ex01-i10",
+            "position": 10,
+            "prompt": "Ask a friend about their favourite colour.",
+            "modelAnswer": "What is your favourite colour?",
+            "evaluation": {
+              "type": "transcription_feedback",
+              "transcriptionSeparateFromPronunciation": true
+            }
+          }
+        ]
+      }
+    },
+    {
+      "sectionId": "english-pre-a1-m003-listening",
+      "sectionKey": "listening",
+      "position": 8,
+      "exercise": {
+        "exerciseId": "english-pre-a1-m003-listening-ex01",
+        "type": "listening_gap_fill",
+        "content": {
+          "audio": "tts:en-GB:Look around! The sun is yellow, the sky is blue and the grass is green. Here is a red flower. I can see a white cloud. My ball is purple too. Find something orange near the pink house. Point to a brown object. Great work!",
+          "audioLocale": "en-GB",
+          "transcriptTemplate": "Look around! The sun is [[gap-01]], the sky is [[gap-02]] and the grass is [[gap-03]]. Here is a [[gap-04]] flower. I can see a [[gap-05]] cloud. My ball is [[gap-06]] too. Find something [[gap-07]] near the [[gap-08]] house. Point to a [[gap-09]] object. Great [[gap-10]]!",
+          "wordBank": [
+            {
+              "wordId": "english-pre-a1-m003-listening-word-01",
+              "word": "yellow"
+            },
+            {
+              "wordId": "english-pre-a1-m003-listening-word-02",
+              "word": "blue"
+            },
+            {
+              "wordId": "english-pre-a1-m003-listening-word-03",
+              "word": "green"
+            },
+            {
+              "wordId": "english-pre-a1-m003-listening-word-04",
+              "word": "red"
+            },
+            {
+              "wordId": "english-pre-a1-m003-listening-word-05",
+              "word": "white"
+            },
+            {
+              "wordId": "english-pre-a1-m003-listening-word-06",
+              "word": "purple"
+            },
+            {
+              "wordId": "english-pre-a1-m003-listening-word-07",
+              "word": "orange"
+            },
+            {
+              "wordId": "english-pre-a1-m003-listening-word-08",
+              "word": "pink"
+            },
+            {
+              "wordId": "english-pre-a1-m003-listening-word-09",
+              "word": "brown"
+            },
+            {
+              "wordId": "english-pre-a1-m003-listening-word-10",
+              "word": "work"
+            }
+          ],
+          "interaction": "select_place_move_replace",
+          "audioTranscript": "tts:en-GB:Look around! The sun is yellow, the sky is blue and the grass is green. Here is a red flower. I can see a white cloud. My ball is purple too. Find something orange near the pink house. Point to a brown object. Great work!"
+        },
+        "items": [
+          {
+            "itemId": "english-pre-a1-m003-listening-ex01-i01",
+            "position": 1,
+            "gapToken": "[[gap-01]]",
+            "expectedWordId": "english-pre-a1-m003-listening-word-01",
+            "answer": "yellow"
+          },
+          {
+            "itemId": "english-pre-a1-m003-listening-ex01-i02",
+            "position": 2,
+            "gapToken": "[[gap-02]]",
+            "expectedWordId": "english-pre-a1-m003-listening-word-02",
+            "answer": "blue"
+          },
+          {
+            "itemId": "english-pre-a1-m003-listening-ex01-i03",
+            "position": 3,
+            "gapToken": "[[gap-03]]",
+            "expectedWordId": "english-pre-a1-m003-listening-word-03",
+            "answer": "green"
+          },
+          {
+            "itemId": "english-pre-a1-m003-listening-ex01-i04",
+            "position": 4,
+            "gapToken": "[[gap-04]]",
+            "expectedWordId": "english-pre-a1-m003-listening-word-04",
+            "answer": "red"
+          },
+          {
+            "itemId": "english-pre-a1-m003-listening-ex01-i05",
+            "position": 5,
+            "gapToken": "[[gap-05]]",
+            "expectedWordId": "english-pre-a1-m003-listening-word-05",
+            "answer": "white"
+          },
+          {
+            "itemId": "english-pre-a1-m003-listening-ex01-i06",
+            "position": 6,
+            "gapToken": "[[gap-06]]",
+            "expectedWordId": "english-pre-a1-m003-listening-word-06",
+            "answer": "purple"
+          },
+          {
+            "itemId": "english-pre-a1-m003-listening-ex01-i07",
+            "position": 7,
+            "gapToken": "[[gap-07]]",
+            "expectedWordId": "english-pre-a1-m003-listening-word-07",
+            "answer": "orange"
+          },
+          {
+            "itemId": "english-pre-a1-m003-listening-ex01-i08",
+            "position": 8,
+            "gapToken": "[[gap-08]]",
+            "expectedWordId": "english-pre-a1-m003-listening-word-08",
+            "answer": "pink"
+          },
+          {
+            "itemId": "english-pre-a1-m003-listening-ex01-i09",
+            "position": 9,
+            "gapToken": "[[gap-09]]",
+            "expectedWordId": "english-pre-a1-m003-listening-word-09",
+            "answer": "brown"
+          },
+          {
+            "itemId": "english-pre-a1-m003-listening-ex01-i10",
+            "position": 10,
+            "gapToken": "[[gap-10]]",
+            "expectedWordId": "english-pre-a1-m003-listening-word-10",
+            "answer": "work"
+          }
+        ]
+      }
+    }
+  ]
+}
