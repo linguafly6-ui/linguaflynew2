@@ -1,6 +1,6 @@
 # Pre-A1 — Plan maestro de las 100 misiones
 
-Estado: mapa curricular revisado contra el inventario real del repositorio.  
+Estado: mapa curricular vigente, revisado contra el inventario real del repositorio.  
 Curso: **Pre-A1 — Inglés desde cero** · Idioma objetivo: inglés británico (en-GB) · Apoyo: español.
 
 > Esta versión conserva la correspondencia de los 100 identificadores heredados (`m001`–`m100`) para no romper rutas ni perder referencias. El inventario antiguo se reutiliza como fuente, no como contenido aprobado. La secuencia temática queda organizada en diez unidades; durante la reconstrucción se ajustarán objetivos, dificultad, redundancias y dependencias sin renombrar IDs estables.
