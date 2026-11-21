@@ -10,6 +10,8 @@ on:
       - "app/api/auth/**"
       - "app/api/billing/**"
       - "app/api/repetition/**"
+      - "app/api/learn/**"
+      - "app/api/exercises/progress/**"
       - "lib/student-auth.ts"
       - "lib/spaced-repetition.ts"
       - "lib/cf-context.ts"
