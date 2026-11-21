@@ -35,13 +35,23 @@ Las cantidades son exactas, no mínimos. Una misión incompleta no se considera 
 - **Grammar:** exactamente diez preguntas. Cada pregunta tiene respuesta esperada, opciones cuando aplique y feedback.
 - **Pronunciation:** exactamente diez tarjetas de práctica; reproducción individual en inglés británico y guía de pronunciación aproximada. La guía española nunca se etiqueta como IPA.
 - **Reading:** el pasaje se muestra como bloque independiente antes de las preguntas. Exactamente diez preguntas vinculadas al pasaje; el alumno puede volver a consultarlo.
-- **Writing:** exactamente diez dictados, combinando palabras y frases. Cada elemento tiene audio, respuesta esperada y evaluación; los intentos deben conservarse.
+- **Writing:** exactamente diez dictados. En Pre-A1 y A1 cada dictado contiene una frase; en A2, B1 y B2 contiene varias frases; en C1 y C2 contiene un texto completo dividido en segmentos dictables. Cada segmento se reproduce tres veces (ritmo natural, más pausado y natural), con pausas para escribir, controles de reproducir/pausar/continuar/detener y respuesta esperada. El runtime común utiliza `segments[]`, `repeatCount: 3` y `audioLocale: en-GB`; el contenido no se revela antes de comprobar. La voz TTS del navegador es una solución inicial; una locución profesional podrá sustituirla sin cambiar el contrato de contenido. Los intentos deben conservarse.
 - **Speaking:** exactamente diez prompts evaluables. Se permite volver a grabar. La respuesta del servicio de voz distingue transcripción, coincidencia textual y feedback. No se afirma que una coincidencia de Whisper mida la calidad fonética.
 - **Listening:** audio reproducible; texto con diez huecos numerados; banco con las diez respuestas en orden mezclado; las palabras colocadas se pueden mover; al sustituir una respuesta, la anterior vuelve al banco; al comprobar se muestran aciertos, errores y soluciones.
 
 ### 2.2 Teoría gramatical en Exploración
 
 Exploración incluye diez parejas de vocabulario y una explicación breve del objetivo gramatical de la misión. La teoría contiene explicación en español, patrones, ejemplos en inglés y una pista de uso. Grammar conserva sus diez ejercicios autocorregibles; no sustituye ni duplica la explicación.
+
+### 2.3 Dictado progresivo por nivel
+
+| Nivel | Unidad de dictado | Reproducción |
+|---|---|---|
+| Pre-A1 y A1 | Una frase por actividad | La frase completa tres veces, con la segunda pasada más lenta |
+| A2, B1 y B2 | Varias frases relacionadas | Cada frase se reproduce tres veces antes de pasar a la siguiente |
+| C1 y C2 | Texto completo dividido en segmentos naturales | Cada segmento se reproduce tres veces, manteniendo el contexto del texto |
+
+El alumno escribe el dictado completo en un área de texto amplia. Puede repetir el audio, pausarlo y reanudarlo. La corrección compara el texto completo y debe distinguir errores de contenido, ortografía y puntuación; en los primeros niveles se puede tolerar temporalmente la capitalización y la puntuación para no penalizar el reconocimiento de palabras. El texto esperado permanece oculto hasta la corrección. El reproductor debe usar el mismo diseño y controles en todos los niveles.
 
 ## 3. Identificadores estables
 
