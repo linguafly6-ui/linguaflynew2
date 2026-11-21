@@ -172,12 +172,12 @@ Se ejecutó una comprobación estructural sobre el JSON: las ocho secciones tien
 - Exploración permite emparejar cada palabra con su traducción mediante selector.
 - Practice, Grammar y Reading son preguntas autocorregibles con feedback.
 - Pronunciation y los dictados usan la síntesis de voz del navegador configurada en inglés británico (`en-GB`); la disponibilidad y calidad de voces dependen del dispositivo.
-- Listening presenta los diez huecos y un banco de palabras reutilizable; se puede retirar una palabra de un hueco y colocarla en otro antes de comprobar.
-- Speaking presenta diez prompts y modelos de referencia reproducibles. La grabación y el análisis automático de voz todavía no están conectados en este renderer.
-- El progreso y la puntuación son estado local de la sesión: no se guardan en cuenta, D1 ni `COURSE_DB`.
+- Listening presenta los diez huecos y un banco de diez palabras únicas reutilizable; se puede retirar una palabra de un hueco y colocarla en otro antes de comprobar.
+- Speaking presenta diez prompts y modelos de referencia reproducibles; permite grabar y reproducir audio localmente en el navegador. El audio no se envía al servidor y no se genera análisis automático ni nota fonética.
+- El progreso y la puntuación son estado local de la sesión: no se guardan en cuenta, D1 ni `COURSE_DB`. Las grabaciones de Speaking también permanecen localmente en la página y no se suben.
 - No se afirma que la síntesis de voz sea un audio humano grabado ni que el renderer evalúe fonética.
 - El contenido del nuevo JSON se ha adaptado a partir de la misión A1 001 y de su runtime; las nuevas diez preguntas de Grammar y parte de las actividades se han normalizado para cumplir el contrato de cantidades. Deben pasar revisión pedagógica antes de considerarse contenido de producción.
 
 ### Pruebas pendientes antes de integrar
 
-No se ha ejecutado build, TypeScript, lint, pruebas unitarias, navegador, móvil, accesibilidad, micrófono ni despliegue Preview. La ruta continúa siendo de revisión y no está enlazada como ruta de curso en producción. No se han tocado bases de datos, bindings, configuración Cloudflare, blog ni la rama `main`.
+No se ha ejecutado build, TypeScript, lint, pruebas unitarias, navegador, móvil, accesibilidad, prueba real de micrófono ni despliegue Preview. El permiso y la grabación se implementaron, pero aún requieren comprobación en navegador. La ruta continúa siendo de revisión y no está enlazada como ruta de curso en producción. No se han tocado bases de datos, bindings, configuración Cloudflare, blog ni la rama `main`.
