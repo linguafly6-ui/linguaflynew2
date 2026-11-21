@@ -135,3 +135,8 @@ Valida una dirección de presentación común sobre el contenido y runtime reale
 No se han ejecutado build, pruebas automatizadas, pruebas de navegador ni validación de audio/micrófono en esta entrega. Antes de ampliar el patrón a otras misiones hay que revisar la ruta en un Preview, verificar que las ocho secciones se muestran, comprobar las interacciones y comparar respuestas/contenido con la versión original.
 
 La siguiente iteración, tras validar el piloto, debe extraer los datos de misión a un formato canónico y reemplazar progresivamente los iframes por un renderer React compartido. No se deben convertir los estilos inyectados en una solución permanente ni duplicar esta técnica por misión.
+
+
+### Verificación de estructura del piloto
+
+La misión A1 001 carga `public/missions/a1/a1-first-10-sections.js`. Ese runtime conserva Exploración y Práctica del HTML base y añade dinámicamente Gramática, Pronunciación, Reading, Writing, Speaking y Listening: en conjunto, aparecen las ocho secciones. La inspección del código confirma también una diferencia importante frente al estándar maestro: la Práctica heredada está configurada para 50 retos, no 20. La sección Reading inspeccionada usa tres consignas abiertas genéricas, no diez preguntas autocorregibles. Por tanto, el piloto permite revisar la coherencia visual de las ocho áreas, pero no certifica todavía la conformidad pedagógica de la misión. Estas diferencias deben resolverse con revisión del contenido antes de convertirla en plantilla de producción.
