@@ -7,6 +7,12 @@ on:
     paths:
       - "app/academia/a1/001-canonical/**"
       - "components/academy/CanonicalMission.tsx"
+      - "app/api/auth/**"
+      - "app/api/billing/**"
+      - "app/api/repetition/**"
+      - "lib/student-auth.ts"
+      - "lib/spaced-repetition.ts"
+      - "lib/cf-context.ts"
       - "content/canonical-missions/**"
       - "schemas/course-mission.schema.json"
       - "package.json"
