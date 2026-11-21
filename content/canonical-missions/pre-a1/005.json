@@ -27,20 +27,50 @@
         "exerciseId": "english-pre-a1-m005-explore-ex01",
         "type": "vocabulary_pairs",
         "theory": {
-          "title": "Animals: key words and simple sentences",
-          "explanation": "Aprende diez nombres de animales y frases sencillas para describirlos. Observa cómo hablar de su tamaño, dónde están, qué pueden hacer y qué características tienen.",
+          "title": "Animales: describir, expresar posesión y habilidades",
+          "explanation": "Aprende a describir un animal con is/are. Después añade características con has got, indica dónde está con preposiciones y expresa habilidades con can. Sigue este orden para no mezclar las estructuras.",
+          "tip": "A fish can swim: después de can usamos el verbo sin -s.",
           "patterns": [
             {
-              "label": "Simple sentence",
-              "pattern": "The dog is small.",
+              "label": "1. Describir con to be",
+              "pattern": "The + singular animal + is · The + plural animals + are",
               "examples": [
-                "The dog is small.",
-                "The cats are black.",
-                "A rabbit has got long ears."
+                "The dog is small. — El perro es pequeño.",
+                "The cats are black. — Los gatos son negros.",
+                "The ducks are here. — Los patos están aquí."
+              ]
+            },
+            {
+              "label": "2. Características con have got",
+              "pattern": "A + animal + has got + feature",
+              "examples": [
+                "A rabbit has got long ears. — Un conejo tiene las orejas largas."
+              ]
+            },
+            {
+              "label": "3. Decir dónde está",
+              "pattern": "in · on · under + place",
+              "examples": [
+                "The bird is in the tree. — El pájaro está en el árbol.",
+                "The cow is on the farm. — La vaca está en la granja."
+              ]
+            },
+            {
+              "label": "4. Habilidades con can",
+              "pattern": "Animal + can + base verb",
+              "examples": [
+                "A fish can swim. — Un pez puede nadar.",
+                "A bird can fly. — Un pájaro puede volar."
+              ]
+            },
+            {
+              "label": "5. Expresar gustos",
+              "pattern": "I like + plural noun",
+              "examples": [
+                "I like animals. — Me gustan los animales."
               ]
             }
-          ],
-          "tip": "Read each word aloud and use it in a short sentence."
+          ]
         },
         "items": [
           {
@@ -737,20 +767,6 @@
             "answer": "are"
           },
           {
-            "itemId": "english-pre-a1-m005-grammar-ex01-i03",
-            "position": 3,
-            "prompt": "Choose the correct word or phrase: A rabbit ___ long ears.",
-            "evaluation": {
-              "type": "single_choice"
-            },
-            "options": [
-              "have got",
-              "has got",
-              "is"
-            ],
-            "answer": "has got"
-          },
-          {
             "itemId": "english-pre-a1-m005-grammar-ex01-i04",
             "position": 4,
             "prompt": "Choose the correct word or phrase: A lion ___ big.",
@@ -765,6 +781,48 @@
             "answer": "is"
           },
           {
+            "itemId": "english-pre-a1-m005-grammar-ex01-i09",
+            "position": 9,
+            "prompt": "Choose the correct word or phrase: The ducks ___ here.",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "are",
+              "is",
+              "am"
+            ],
+            "answer": "are"
+          },
+          {
+            "itemId": "english-pre-a1-m005-grammar-ex01-i10",
+            "position": 10,
+            "prompt": "Choose the correct word or phrase: My horse ___ brown.",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "are",
+              "be",
+              "is"
+            ],
+            "answer": "is"
+          },
+          {
+            "itemId": "english-pre-a1-m005-grammar-ex01-i03",
+            "position": 3,
+            "prompt": "Choose the correct word or phrase: A rabbit ___ long ears.",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "have got",
+              "has got",
+              "is"
+            ],
+            "answer": "has got"
+          },
+          {
             "itemId": "english-pre-a1-m005-grammar-ex01-i05",
             "position": 5,
             "prompt": "Choose the correct word or phrase: The bird is ___ the tree.",
@@ -777,20 +835,6 @@
               "under"
             ],
             "answer": "in"
-          },
-          {
-            "itemId": "english-pre-a1-m005-grammar-ex01-i06",
-            "position": 6,
-            "prompt": "Choose the correct word or phrase: I ___ animals.",
-            "evaluation": {
-              "type": "single_choice"
-            },
-            "options": [
-              "like",
-              "likes",
-              "liking"
-            ],
-            "answer": "like"
           },
           {
             "itemId": "english-pre-a1-m005-grammar-ex01-i07",
@@ -821,32 +865,18 @@
             "answer": "can"
           },
           {
-            "itemId": "english-pre-a1-m005-grammar-ex01-i09",
-            "position": 9,
-            "prompt": "Choose the correct word or phrase: The ducks ___ here.",
+            "itemId": "english-pre-a1-m005-grammar-ex01-i06",
+            "position": 6,
+            "prompt": "Choose the correct word or phrase: I ___ animals.",
             "evaluation": {
               "type": "single_choice"
             },
             "options": [
-              "are",
-              "is",
-              "am"
+              "like",
+              "likes",
+              "liking"
             ],
-            "answer": "are"
-          },
-          {
-            "itemId": "english-pre-a1-m005-grammar-ex01-i10",
-            "position": 10,
-            "prompt": "Choose the correct word or phrase: My horse ___ brown.",
-            "evaluation": {
-              "type": "single_choice"
-            },
-            "options": [
-              "are",
-              "be",
-              "is"
-            ],
-            "answer": "is"
+            "answer": "like"
           }
         ]
       }

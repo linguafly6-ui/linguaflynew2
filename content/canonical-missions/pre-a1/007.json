@@ -27,20 +27,43 @@
         "exerciseId": "english-pre-a1-m007-explore-ex01",
         "type": "vocabulary_pairs",
         "theory": {
-          "title": "School Things: key words and simple sentences",
-          "explanation": "Aprende diez palabras de objetos escolares. Descubre cómo señalar objetos cercanos y lejanos, decir qué tienes y describir dónde están.",
+          "title": "Objetos escolares: señalar y describir",
+          "explanation": "Aprende a señalar un objeto cercano en singular o varios objetos cercanos. Después compara con objetos lejanos. Finalmente practica los artículos a/an, decir qué tienes y describir objetos.",
+          "tip": "This/That se usan con una cosa; These/Those con varias.",
           "patterns": [
             {
-              "label": "Simple sentence",
-              "pattern": "This is a book.",
+              "label": "1. Cerca: singular y plural",
+              "pattern": "This is + singular · These are + plural",
               "examples": [
-                "This is a book.",
-                "These are pencils.",
-                "It is a pen."
+                "This is a book. — Este es un libro.",
+                "These are pencils. — Estos son lápices."
+              ]
+            },
+            {
+              "label": "2. Lejos: singular y plural",
+              "pattern": "That is + singular · Those are + plural",
+              "examples": [
+                "That is my notebook. — Ese es mi cuaderno.",
+                "Those are two rubbers. — Esas son dos gomas."
+              ]
+            },
+            {
+              "label": "3. Artículos",
+              "pattern": "a + consonant sound · an + vowel sound",
+              "examples": [
+                "a pen — un bolígrafo",
+                "an orange ruler — una regla naranja"
+              ]
+            },
+            {
+              "label": "4. Posesión y descripción",
+              "pattern": "I have got + object · object + is + adjective",
+              "examples": [
+                "I have got a desk. — Tengo un pupitre.",
+                "My pencil case is blue. — Mi estuche es azul."
               ]
             }
-          ],
-          "tip": "Read each word aloud and use it in a short sentence."
+          ]
         },
         "items": [
           {
@@ -733,34 +756,6 @@
             "answer": "These are"
           },
           {
-            "itemId": "english-pre-a1-m007-grammar-ex01-i03",
-            "position": 3,
-            "prompt": "Choose the correct word or phrase: It is ___ pen.",
-            "evaluation": {
-              "type": "single_choice"
-            },
-            "options": [
-              "an",
-              "are",
-              "a"
-            ],
-            "answer": "a"
-          },
-          {
-            "itemId": "english-pre-a1-m007-grammar-ex01-i04",
-            "position": 4,
-            "prompt": "Choose the correct word or phrase: This is ___ orange ruler.",
-            "evaluation": {
-              "type": "single_choice"
-            },
-            "options": [
-              "a",
-              "the",
-              "an"
-            ],
-            "answer": "an"
-          },
-          {
             "itemId": "english-pre-a1-m007-grammar-ex01-i05",
             "position": 5,
             "prompt": "Choose the correct word or phrase: ___ my notebook.",
@@ -789,20 +784,6 @@
             "answer": "These are"
           },
           {
-            "itemId": "english-pre-a1-m007-grammar-ex01-i07",
-            "position": 7,
-            "prompt": "Choose the correct word or phrase: I ___ a desk.",
-            "evaluation": {
-              "type": "single_choice"
-            },
-            "options": [
-              "has got",
-              "is",
-              "have got"
-            ],
-            "answer": "have got"
-          },
-          {
             "itemId": "english-pre-a1-m007-grammar-ex01-i08",
             "position": 8,
             "prompt": "Choose the correct word or phrase: ___ my schoolbag.",
@@ -815,6 +796,48 @@
               "Those are"
             ],
             "answer": "This is"
+          },
+          {
+            "itemId": "english-pre-a1-m007-grammar-ex01-i03",
+            "position": 3,
+            "prompt": "Choose the correct word or phrase: It is ___ pen.",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "an",
+              "are",
+              "a"
+            ],
+            "answer": "a"
+          },
+          {
+            "itemId": "english-pre-a1-m007-grammar-ex01-i04",
+            "position": 4,
+            "prompt": "Choose the correct word or phrase: This is ___ orange ruler.",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "a",
+              "the",
+              "an"
+            ],
+            "answer": "an"
+          },
+          {
+            "itemId": "english-pre-a1-m007-grammar-ex01-i07",
+            "position": 7,
+            "prompt": "Choose the correct word or phrase: I ___ a desk.",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "has got",
+              "is",
+              "have got"
+            ],
+            "answer": "have got"
           },
           {
             "itemId": "english-pre-a1-m007-grammar-ex01-i09",

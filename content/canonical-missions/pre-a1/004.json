@@ -27,20 +27,47 @@
         "exerciseId": "english-pre-a1-m004-explore-ex01",
         "type": "vocabulary_pairs",
         "theory": {
-          "title": "My Family: key words and simple sentences",
-          "explanation": "Aprende diez palabras útiles para hablar de tu familia. Escucha el modelo de inglés británico y repite cada palabra. Después, aprende a decir quién es cada persona y cómo expresar de quién es algo.",
+          "title": "La familia: identificar y hablar de parentescos",
+          "explanation": "Aprende primero a identificar familiares con This is… y He/She is… Después usa my, your, his, her y our para decir de quién es cada familiar. Por último, aprende have got para decir qué familiares tienes.",
+          "tip": "My = mi; your = tu; his = su de él; her = su de ella; our = nuestro/a.",
           "patterns": [
             {
-              "label": "Simple sentence",
-              "pattern": "This is my mother.",
+              "label": "1. Identificar familiares",
+              "pattern": "This is my… · He is… · She is…",
               "examples": [
-                "This is my mother.",
-                "That is your father.",
-                "He is my brother."
+                "This is my mother. — Esta es mi madre.",
+                "He is my brother. — Él es mi hermano.",
+                "She is my sister. — Ella es mi hermana."
+              ]
+            },
+            {
+              "label": "2. Adjetivos posesivos",
+              "pattern": "my · your · his · her · our · their + family word",
+              "examples": [
+                "My father is Tom. — Mi padre es Tom.",
+                "Your sister is kind. — Tu hermana es amable.",
+                "His brother is Ben. — Su hermano (de él) es Ben.",
+                "Her daughter is Lily. — Su hija (de ella) es Lily.",
+                "Our family is happy. — Nuestra familia es feliz."
+              ]
+            },
+            {
+              "label": "3. Have got",
+              "pattern": "I/You/We/They have got · He/She has got",
+              "examples": [
+                "I have got one sister. — Tengo una hermana.",
+                "She has got one brother. — Ella tiene un hermano."
+              ]
+            },
+            {
+              "label": "4. Describir con to be",
+              "pattern": "Family member + am/is/are + adjective",
+              "examples": [
+                "My grandmother is kind. — Mi abuela es amable.",
+                "My grandparents are funny. — Mis abuelos son divertidos."
               ]
             }
-          ],
-          "tip": "Read each word aloud and use it in a short sentence."
+          ]
         },
         "items": [
           {
@@ -755,48 +782,6 @@
             "answer": "his"
           },
           {
-            "itemId": "english-pre-a1-m004-grammar-ex01-i05",
-            "position": 5,
-            "prompt": "My parents ___ kind.",
-            "evaluation": {
-              "type": "single_choice"
-            },
-            "options": [
-              "is",
-              "are",
-              "am"
-            ],
-            "answer": "are"
-          },
-          {
-            "itemId": "english-pre-a1-m004-grammar-ex01-i06",
-            "position": 6,
-            "prompt": "I ___ one sister.",
-            "evaluation": {
-              "type": "single_choice"
-            },
-            "options": [
-              "have got",
-              "has got",
-              "is"
-            ],
-            "answer": "have got"
-          },
-          {
-            "itemId": "english-pre-a1-m004-grammar-ex01-i07",
-            "position": 7,
-            "prompt": "My grandmother ___ kind.",
-            "evaluation": {
-              "type": "single_choice"
-            },
-            "options": [
-              "are",
-              "am",
-              "is"
-            ],
-            "answer": "is"
-          },
-          {
             "itemId": "english-pre-a1-m004-grammar-ex01-i08",
             "position": 8,
             "prompt": "Ben is talking about his son. The boy is ___ son.",
@@ -837,6 +822,48 @@
               "their"
             ],
             "answer": "our"
+          },
+          {
+            "itemId": "english-pre-a1-m004-grammar-ex01-i05",
+            "position": 5,
+            "prompt": "My parents ___ kind.",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "is",
+              "are",
+              "am"
+            ],
+            "answer": "are"
+          },
+          {
+            "itemId": "english-pre-a1-m004-grammar-ex01-i07",
+            "position": 7,
+            "prompt": "My grandmother ___ kind.",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "are",
+              "am",
+              "is"
+            ],
+            "answer": "is"
+          },
+          {
+            "itemId": "english-pre-a1-m004-grammar-ex01-i06",
+            "position": 6,
+            "prompt": "I ___ one sister.",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "have got",
+              "has got",
+              "is"
+            ],
+            "answer": "have got"
           }
         ]
       }

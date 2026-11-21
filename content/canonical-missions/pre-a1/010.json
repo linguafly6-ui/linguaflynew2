@@ -27,20 +27,31 @@
         "exerciseId": "english-pre-a1-m010-explore-ex01",
         "type": "vocabulary_pairs",
         "theory": {
-          "title": "Daily Actions: key words and simple sentences",
-          "explanation": "Aprende diez acciones cotidianas y cómo contar una rutina sencilla. Observa cómo cambia el verbo cuando hablamos de he o she.",
+          "title": "Rutinas: presente simple con todos los pronombres",
+          "explanation": "Primero aprende el presente simple con I, you, we y they: el verbo conserva su forma base. Después aprende he y she: normalmente añadimos -s o -es. Compara cada pronombre antes de pasar a las actividades.",
+          "tip": "I play, you play, we play, they play; pero he plays y she plays.",
           "patterns": [
             {
-              "label": "Simple sentence",
-              "pattern": "I wake up at seven.",
+              "label": "1. I / You / We / They + verbo base",
+              "pattern": "subject + base verb",
               "examples": [
-                "I wake up at seven.",
-                "She gets up early.",
-                "He brushes his teeth."
+                "I wake up at seven. — Me despierto a las siete.",
+                "You get up early. — Te levantas temprano.",
+                "We eat breakfast. — Desayunamos.",
+                "They study English. — Ellos estudian inglés."
+              ]
+            },
+            {
+              "label": "2. He / She + verbo con -s / -es",
+              "pattern": "he/she + verb-s or verb-es",
+              "examples": [
+                "He brushes his teeth. — Él se cepilla los dientes.",
+                "She gets up early. — Ella se levanta temprano.",
+                "He goes to school. — Él va al colegio.",
+                "She washes her face. — Ella se lava la cara."
               ]
             }
-          ],
-          "tip": "Read each word aloud and use it in a short sentence."
+          ]
         },
         "items": [
           {
@@ -730,6 +741,48 @@
             "answer": "wake up"
           },
           {
+            "itemId": "english-pre-a1-m010-grammar-ex01-i04",
+            "position": 4,
+            "prompt": "Choose the correct word or phrase: We ___ breakfast.",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "eat",
+              "eats",
+              "eating"
+            ],
+            "answer": "eat"
+          },
+          {
+            "itemId": "english-pre-a1-m010-grammar-ex01-i07",
+            "position": 7,
+            "prompt": "Choose the correct word or phrase: I ___ English.",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "studies",
+              "studying",
+              "study"
+            ],
+            "answer": "study"
+          },
+          {
+            "itemId": "english-pre-a1-m010-grammar-ex01-i09",
+            "position": 9,
+            "prompt": "Choose the correct word or phrase: I ___ at nine.",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "sleeps",
+              "sleep",
+              "sleeping"
+            ],
+            "answer": "sleep"
+          },
+          {
             "itemId": "english-pre-a1-m010-grammar-ex01-i02",
             "position": 2,
             "prompt": "Choose the correct word or phrase: She ___ early.",
@@ -756,20 +809,6 @@
               "brushing"
             ],
             "answer": "brushes"
-          },
-          {
-            "itemId": "english-pre-a1-m010-grammar-ex01-i04",
-            "position": 4,
-            "prompt": "Choose the correct word or phrase: We ___ breakfast.",
-            "evaluation": {
-              "type": "single_choice"
-            },
-            "options": [
-              "eat",
-              "eats",
-              "eating"
-            ],
-            "answer": "eat"
           },
           {
             "itemId": "english-pre-a1-m010-grammar-ex01-i05",
@@ -800,20 +839,6 @@
             "answer": "goes"
           },
           {
-            "itemId": "english-pre-a1-m010-grammar-ex01-i07",
-            "position": 7,
-            "prompt": "Choose the correct word or phrase: I ___ English.",
-            "evaluation": {
-              "type": "single_choice"
-            },
-            "options": [
-              "studies",
-              "studying",
-              "study"
-            ],
-            "answer": "study"
-          },
-          {
             "itemId": "english-pre-a1-m010-grammar-ex01-i08",
             "position": 8,
             "prompt": "Choose the correct word or phrase: He ___ football.",
@@ -826,20 +851,6 @@
               "playing"
             ],
             "answer": "plays"
-          },
-          {
-            "itemId": "english-pre-a1-m010-grammar-ex01-i09",
-            "position": 9,
-            "prompt": "Choose the correct word or phrase: I ___ at nine.",
-            "evaluation": {
-              "type": "single_choice"
-            },
-            "options": [
-              "sleeps",
-              "sleep",
-              "sleeping"
-            ],
-            "answer": "sleep"
           },
           {
             "itemId": "english-pre-a1-m010-grammar-ex01-i10",

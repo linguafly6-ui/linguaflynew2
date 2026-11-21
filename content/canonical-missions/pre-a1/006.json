@@ -27,20 +27,51 @@
         "exerciseId": "english-pre-a1-m006-explore-ex01",
         "type": "vocabulary_pairs",
         "theory": {
-          "title": "Food and Drinks: key words and simple sentences",
-          "explanation": "Aprende diez palabras de alimentos y bebidas. Practica cómo decir qué comes, qué bebes y qué te gusta o no te gusta.",
+          "title": "Comida y bebida: artículos, gustos y acciones",
+          "explanation": "Primero aprende cuándo usar a o an delante de un alimento en singular. Después forma frases con like/likes, aprende la negativa do not y practica verbos de comida y bebida.",
+          "tip": "He/She usa likes; I/You/We/They usan like. Para negar con I usamos do not like.",
           "patterns": [
             {
-              "label": "Simple sentence",
-              "pattern": "It is an apple.",
+              "label": "1. Artículos a / an",
+              "pattern": "a + consonant sound · an + vowel sound",
               "examples": [
-                "It is an apple.",
-                "I like bread.",
-                "I do not like milk."
+                "a banana — un plátano",
+                "an apple — una manzana",
+                "an orange — una naranja"
+              ]
+            },
+            {
+              "label": "2. Gustos en afirmativa",
+              "pattern": "I/You/We/They like · He/She likes",
+              "examples": [
+                "I like bread. — Me gusta el pan.",
+                "We like rice. — Nos gusta el arroz.",
+                "She likes cheese. — A ella le gusta el queso."
+              ]
+            },
+            {
+              "label": "3. Gustos en negativa",
+              "pattern": "I/You/We/They do not like",
+              "examples": [
+                "I do not like milk. — No me gusta la leche."
+              ]
+            },
+            {
+              "label": "4. Acciones con alimentos",
+              "pattern": "subject + eat/drink + food or drink",
+              "examples": [
+                "We eat chicken. — Comemos pollo.",
+                "He drinks water. — Él bebe agua."
+              ]
+            },
+            {
+              "label": "5. Describir con to be",
+              "pattern": "food/drink + is + adjective",
+              "examples": [
+                "The juice is cold. — El zumo está frío."
               ]
             }
-          ],
-          "tip": "Read each word aloud and use it in a short sentence."
+          ]
         },
         "items": [
           {
@@ -734,6 +765,34 @@
             "answer": "an"
           },
           {
+            "itemId": "english-pre-a1-m006-grammar-ex01-i07",
+            "position": 7,
+            "prompt": "Choose the correct word or phrase: ___ orange is a fruit.",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "A",
+              "An",
+              "The"
+            ],
+            "answer": "An"
+          },
+          {
+            "itemId": "english-pre-a1-m006-grammar-ex01-i08",
+            "position": 8,
+            "prompt": "Complete: I have ___ banana.",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "an",
+              "the",
+              "a"
+            ],
+            "answer": "a"
+          },
+          {
             "itemId": "english-pre-a1-m006-grammar-ex01-i02",
             "position": 2,
             "prompt": "Choose the correct word or phrase: I ___ bread.",
@@ -746,20 +805,6 @@
               "liking"
             ],
             "answer": "like"
-          },
-          {
-            "itemId": "english-pre-a1-m006-grammar-ex01-i03",
-            "position": 3,
-            "prompt": "Choose the correct word or phrase: I ___ like milk.",
-            "evaluation": {
-              "type": "single_choice"
-            },
-            "options": [
-              "does not",
-              "not",
-              "do not"
-            ],
-            "answer": "do not"
           },
           {
             "itemId": "english-pre-a1-m006-grammar-ex01-i04",
@@ -804,34 +849,6 @@
             "answer": "drinks"
           },
           {
-            "itemId": "english-pre-a1-m006-grammar-ex01-i07",
-            "position": 7,
-            "prompt": "Choose the correct word or phrase: ___ orange is a fruit.",
-            "evaluation": {
-              "type": "single_choice"
-            },
-            "options": [
-              "A",
-              "An",
-              "The"
-            ],
-            "answer": "An"
-          },
-          {
-            "itemId": "english-pre-a1-m006-grammar-ex01-i08",
-            "position": 8,
-            "prompt": "Complete: I have ___ banana.",
-            "evaluation": {
-              "type": "single_choice"
-            },
-            "options": [
-              "an",
-              "the",
-              "a"
-            ],
-            "answer": "a"
-          },
-          {
             "itemId": "english-pre-a1-m006-grammar-ex01-i09",
             "position": 9,
             "prompt": "Choose the correct word or phrase: They ___ chicken.",
@@ -844,6 +861,20 @@
               "liking"
             ],
             "answer": "like"
+          },
+          {
+            "itemId": "english-pre-a1-m006-grammar-ex01-i03",
+            "position": 3,
+            "prompt": "Choose the correct word or phrase: I ___ like milk.",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "does not",
+              "not",
+              "do not"
+            ],
+            "answer": "do not"
           },
           {
             "itemId": "english-pre-a1-m006-grammar-ex01-i10",

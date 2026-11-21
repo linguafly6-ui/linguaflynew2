@@ -27,20 +27,52 @@
         "exerciseId": "english-pre-a1-m011-explore-ex01",
         "type": "vocabulary_pairs",
         "theory": {
-          "title": "At the Playground: words and simple English",
-          "explanation": "Aprende diez acciones del parque infantil. Descubre cómo dar instrucciones sencillas y expresar lo que puedes hacer con can.",
+          "title": "At the Playground: present simple and can",
+          "explanation": "Aprende las acciones del parque y construye frases en dos pasos. Primero, presente simple: I/you/we/they + verbo base y he/she + verbo con -s. Después, can para expresar habilidad: todos los pronombres usan can + verbo base. No mezcles los dos patrones hasta reconocer cada uno.",
+          "tip": "He plays (añadimos -s), pero he can play (después de can el verbo no lleva -s).",
           "patterns": [
             {
-              "label": "Useful sentence",
-              "pattern": "Run to the gate.",
+              "label": "1. Presente simple: I / You / We / They",
+              "pattern": "pronoun + base verb",
               "examples": [
-                "I can run.",
-                "I can jump.",
-                "I can climb a tree."
+                "I play. — Yo juego.",
+                "You play. — Tú juegas.",
+                "We play. — Nosotros jugamos.",
+                "They play. — Ellos juegan."
+              ]
+            },
+            {
+              "label": "2. Presente simple: He / She",
+              "pattern": "he/she + verb-s",
+              "examples": [
+                "He plays. — Él juega.",
+                "She plays. — Ella juega.",
+                "He runs. — Él corre.",
+                "She jumps. — Ella salta."
+              ]
+            },
+            {
+              "label": "3. Can + verbo base: todos los pronombres",
+              "pattern": "I/You/He/She/We/They + can + base verb",
+              "examples": [
+                "I can play. — Puedo jugar.",
+                "You can run. — Puedes correr.",
+                "He can climb. — Él puede trepar.",
+                "She can swing. — Ella puede columpiarse.",
+                "We can jump. — Podemos saltar.",
+                "They can skip. — Ellos pueden saltar a saltitos."
+              ]
+            },
+            {
+              "label": "4. La diferencia importante",
+              "pattern": "He plays ≠ He can play",
+              "examples": [
+                "He plays in the park. — Él juega en el parque.",
+                "He can play in the park. — Él puede jugar en el parque.",
+                "Correct: He can play. — Incorrect: He can plays."
               ]
             }
-          ],
-          "tip": "Say each new word aloud, then use it in a short sentence."
+          ]
         },
         "items": [
           {
@@ -713,49 +745,7 @@
           {
             "itemId": "english-pre-a1-m011-grammar-ex01-i01",
             "position": 1,
-            "prompt": "Choose the correct word or phrase: ___ to the gate.",
-            "evaluation": {
-              "type": "single_choice"
-            },
-            "options": [
-              "Runs",
-              "Run",
-              "Running"
-            ],
-            "answer": "Run"
-          },
-          {
-            "itemId": "english-pre-a1-m011-grammar-ex01-i02",
-            "position": 2,
-            "prompt": "Choose the correct word or phrase: ___ over the line.",
-            "evaluation": {
-              "type": "single_choice"
-            },
-            "options": [
-              "Jump",
-              "Jumps",
-              "Jumping"
-            ],
-            "answer": "Jump"
-          },
-          {
-            "itemId": "english-pre-a1-m011-grammar-ex01-i03",
-            "position": 3,
-            "prompt": "Choose the correct word or phrase: Please ___ here.",
-            "evaluation": {
-              "type": "single_choice"
-            },
-            "options": [
-              "stops",
-              "stopping",
-              "stop"
-            ],
-            "answer": "stop"
-          },
-          {
-            "itemId": "english-pre-a1-m011-grammar-ex01-i04",
-            "position": 4,
-            "prompt": "Choose the correct word or phrase: We ___ in the park.",
+            "prompt": "Complete: I ___ in the playground.",
             "evaluation": {
               "type": "single_choice"
             },
@@ -767,51 +757,9 @@
             "answer": "play"
           },
           {
-            "itemId": "english-pre-a1-m011-grammar-ex01-i05",
-            "position": 5,
-            "prompt": "Choose the correct word or phrase: I can ___.",
-            "evaluation": {
-              "type": "single_choice"
-            },
-            "options": [
-              "climbs",
-              "climbing",
-              "climb"
-            ],
-            "answer": "climb"
-          },
-          {
-            "itemId": "english-pre-a1-m011-grammar-ex01-i06",
-            "position": 6,
-            "prompt": "Choose the correct word or phrase: She can ___.",
-            "evaluation": {
-              "type": "single_choice"
-            },
-            "options": [
-              "run",
-              "runs",
-              "running"
-            ],
-            "answer": "run"
-          },
-          {
-            "itemId": "english-pre-a1-m011-grammar-ex01-i07",
-            "position": 7,
-            "prompt": "Choose the correct word or phrase: Do not ___ on the wet floor.",
-            "evaluation": {
-              "type": "single_choice"
-            },
-            "options": [
-              "run",
-              "runs",
-              "running"
-            ],
-            "answer": "run"
-          },
-          {
-            "itemId": "english-pre-a1-m011-grammar-ex01-i08",
-            "position": 8,
-            "prompt": "Choose the correct word or phrase: They ___ to school.",
+            "itemId": "english-pre-a1-m011-grammar-ex01-i02",
+            "position": 2,
+            "prompt": "Complete: You ___ to the swings.",
             "evaluation": {
               "type": "single_choice"
             },
@@ -823,32 +771,116 @@
             "answer": "walk"
           },
           {
-            "itemId": "english-pre-a1-m011-grammar-ex01-i09",
-            "position": 9,
-            "prompt": "Choose the correct word or phrase: A command starts with ___.",
+            "itemId": "english-pre-a1-m011-grammar-ex01-i03",
+            "position": 3,
+            "prompt": "Complete: He ___ to the gate.",
             "evaluation": {
               "type": "single_choice"
             },
             "options": [
-              "an -ing form",
-              "a base verb",
-              "a past form"
+              "run",
+              "running",
+              "runs"
             ],
-            "answer": "a base verb"
+            "answer": "runs"
+          },
+          {
+            "itemId": "english-pre-a1-m011-grammar-ex01-i04",
+            "position": 4,
+            "prompt": "Complete: She ___ over a line.",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "jumping",
+              "jumps",
+              "jump"
+            ],
+            "answer": "jumps"
+          },
+          {
+            "itemId": "english-pre-a1-m011-grammar-ex01-i05",
+            "position": 5,
+            "prompt": "Complete: They ___ together.",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "swings",
+              "swing",
+              "swinging"
+            ],
+            "answer": "swing"
+          },
+          {
+            "itemId": "english-pre-a1-m011-grammar-ex01-i06",
+            "position": 6,
+            "prompt": "Complete: I can ___ the steps.",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "climbs",
+              "climbing",
+              "climb"
+            ],
+            "answer": "climb"
+          },
+          {
+            "itemId": "english-pre-a1-m011-grammar-ex01-i07",
+            "position": 7,
+            "prompt": "Complete: You can ___ down the slide.",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "slides",
+              "slide",
+              "sliding"
+            ],
+            "answer": "slide"
+          },
+          {
+            "itemId": "english-pre-a1-m011-grammar-ex01-i08",
+            "position": 8,
+            "prompt": "Complete: He can ___ on one foot.",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "hop",
+              "hops",
+              "hopping"
+            ],
+            "answer": "hop"
+          },
+          {
+            "itemId": "english-pre-a1-m011-grammar-ex01-i09",
+            "position": 9,
+            "prompt": "Complete: She can ___ to the music.",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "skipping",
+              "skips",
+              "skip"
+            ],
+            "answer": "skip"
           },
           {
             "itemId": "english-pre-a1-m011-grammar-ex01-i10",
             "position": 10,
-            "prompt": "Choose the correct word or phrase: ___ to the music.",
+            "prompt": "Complete: We can ___ here.",
             "evaluation": {
               "type": "single_choice"
             },
             "options": [
-              "Skip",
-              "Skips",
-              "Skipping"
+              "stops",
+              "stopping",
+              "stop"
             ],
-            "answer": "Skip"
+            "answer": "stop"
           }
         ]
       }
@@ -1111,7 +1143,7 @@
             "itemId": "english-pre-a1-m011-writing-ex01-i01",
             "position": 1,
             "audio": "tts:en-GB:I run to the gate.",
-            "expectedAnswer": "I run to the gate.",
+            "expectedAnswer": "I play in the playground.",
             "evaluation": {
               "type": "normalised_text"
             },
@@ -1121,7 +1153,7 @@
             "segments": [
               {
                 "segmentId": "english-pre-a1-m011-writing-segment-01",
-                "text": "I run to the gate."
+                "text": "I play in the playground."
               }
             ]
           },
@@ -1129,7 +1161,7 @@
             "itemId": "english-pre-a1-m011-writing-ex01-i02",
             "position": 2,
             "audio": "tts:en-GB:I jump over the line.",
-            "expectedAnswer": "I jump over the line.",
+            "expectedAnswer": "You walk to the swings.",
             "evaluation": {
               "type": "normalised_text"
             },
@@ -1139,7 +1171,7 @@
             "segments": [
               {
                 "segmentId": "english-pre-a1-m011-writing-segment-02",
-                "text": "I jump over the line."
+                "text": "You walk to the swings."
               }
             ]
           },
@@ -1147,7 +1179,7 @@
             "itemId": "english-pre-a1-m011-writing-ex01-i03",
             "position": 3,
             "audio": "tts:en-GB:I can climb the steps.",
-            "expectedAnswer": "I can climb the steps.",
+            "expectedAnswer": "He runs to the gate.",
             "evaluation": {
               "type": "normalised_text"
             },
@@ -1157,7 +1189,7 @@
             "segments": [
               {
                 "segmentId": "english-pre-a1-m011-writing-segment-03",
-                "text": "I can climb the steps."
+                "text": "He runs to the gate."
               }
             ]
           },
@@ -1165,7 +1197,7 @@
             "itemId": "english-pre-a1-m011-writing-ex01-i04",
             "position": 4,
             "audio": "tts:en-GB:I swing on the seat.",
-            "expectedAnswer": "I swing on the seat.",
+            "expectedAnswer": "She jumps over a line.",
             "evaluation": {
               "type": "normalised_text"
             },
@@ -1175,7 +1207,7 @@
             "segments": [
               {
                 "segmentId": "english-pre-a1-m011-writing-segment-04",
-                "text": "I swing on the seat."
+                "text": "She jumps over a line."
               }
             ]
           },
@@ -1183,7 +1215,7 @@
             "itemId": "english-pre-a1-m011-writing-ex01-i05",
             "position": 5,
             "audio": "tts:en-GB:I slide down the slide.",
-            "expectedAnswer": "I slide down the slide.",
+            "expectedAnswer": "They swing together.",
             "evaluation": {
               "type": "normalised_text"
             },
@@ -1193,7 +1225,7 @@
             "segments": [
               {
                 "segmentId": "english-pre-a1-m011-writing-segment-05",
-                "text": "I slide down the slide."
+                "text": "They swing together."
               }
             ]
           },
@@ -1201,7 +1233,7 @@
             "itemId": "english-pre-a1-m011-writing-ex01-i06",
             "position": 6,
             "audio": "tts:en-GB:I play with my friends.",
-            "expectedAnswer": "I play with my friends.",
+            "expectedAnswer": "I can climb the steps.",
             "evaluation": {
               "type": "normalised_text"
             },
@@ -1211,7 +1243,7 @@
             "segments": [
               {
                 "segmentId": "english-pre-a1-m011-writing-segment-06",
-                "text": "I play with my friends."
+                "text": "I can climb the steps."
               }
             ]
           },
@@ -1219,7 +1251,7 @@
             "itemId": "english-pre-a1-m011-writing-ex01-i07",
             "position": 7,
             "audio": "tts:en-GB:Please stop here.",
-            "expectedAnswer": "Please stop here.",
+            "expectedAnswer": "You can slide down the slide.",
             "evaluation": {
               "type": "normalised_text"
             },
@@ -1229,7 +1261,7 @@
             "segments": [
               {
                 "segmentId": "english-pre-a1-m011-writing-segment-07",
-                "text": "Please stop here."
+                "text": "You can slide down the slide."
               }
             ]
           },
@@ -1237,7 +1269,7 @@
             "itemId": "english-pre-a1-m011-writing-ex01-i08",
             "position": 8,
             "audio": "tts:en-GB:I walk to school.",
-            "expectedAnswer": "I walk to school.",
+            "expectedAnswer": "He can hop on one foot.",
             "evaluation": {
               "type": "normalised_text"
             },
@@ -1247,7 +1279,7 @@
             "segments": [
               {
                 "segmentId": "english-pre-a1-m011-writing-segment-08",
-                "text": "I walk to school."
+                "text": "He can hop on one foot."
               }
             ]
           },
@@ -1255,7 +1287,7 @@
             "itemId": "english-pre-a1-m011-writing-ex01-i09",
             "position": 9,
             "audio": "tts:en-GB:I hop on one foot.",
-            "expectedAnswer": "I hop on one foot.",
+            "expectedAnswer": "She can skip to the music.",
             "evaluation": {
               "type": "normalised_text"
             },
@@ -1265,7 +1297,7 @@
             "segments": [
               {
                 "segmentId": "english-pre-a1-m011-writing-segment-09",
-                "text": "I hop on one foot."
+                "text": "She can skip to the music."
               }
             ]
           },
@@ -1273,7 +1305,7 @@
             "itemId": "english-pre-a1-m011-writing-ex01-i10",
             "position": 10,
             "audio": "tts:en-GB:I skip to the music.",
-            "expectedAnswer": "I skip to the music.",
+            "expectedAnswer": "We can stop here.",
             "evaluation": {
               "type": "normalised_text"
             },
@@ -1283,7 +1315,7 @@
             "segments": [
               {
                 "segmentId": "english-pre-a1-m011-writing-segment-10",
-                "text": "I skip to the music."
+                "text": "We can stop here."
               }
             ]
           }
@@ -1301,8 +1333,8 @@
           {
             "itemId": "english-pre-a1-m011-speaking-ex01-i01",
             "position": 1,
-            "prompt": "Say a short sentence using “run”.",
-            "modelAnswer": "I can run.",
+            "prompt": "Say a sentence with “play” and I.",
+            "modelAnswer": "I play in the playground.",
             "evaluation": {
               "type": "transcription_feedback",
               "transcriptionSeparateFromPronunciation": true
@@ -1311,8 +1343,8 @@
           {
             "itemId": "english-pre-a1-m011-speaking-ex01-i02",
             "position": 2,
-            "prompt": "Say a short sentence using “jump”.",
-            "modelAnswer": "I can jump.",
+            "prompt": "Say a sentence with “walk” and you.",
+            "modelAnswer": "You walk to the swings.",
             "evaluation": {
               "type": "transcription_feedback",
               "transcriptionSeparateFromPronunciation": true
@@ -1321,8 +1353,8 @@
           {
             "itemId": "english-pre-a1-m011-speaking-ex01-i03",
             "position": 3,
-            "prompt": "Say a short sentence using “climb”.",
-            "modelAnswer": "I can climb a tree.",
+            "prompt": "Say a sentence with “run” and he.",
+            "modelAnswer": "He runs to the gate.",
             "evaluation": {
               "type": "transcription_feedback",
               "transcriptionSeparateFromPronunciation": true
@@ -1331,8 +1363,8 @@
           {
             "itemId": "english-pre-a1-m011-speaking-ex01-i04",
             "position": 4,
-            "prompt": "Say a short sentence using “swing”.",
-            "modelAnswer": "I like to swing.",
+            "prompt": "Say a sentence with “jump” and she.",
+            "modelAnswer": "She jumps over a line.",
             "evaluation": {
               "type": "transcription_feedback",
               "transcriptionSeparateFromPronunciation": true
@@ -1341,8 +1373,8 @@
           {
             "itemId": "english-pre-a1-m011-speaking-ex01-i05",
             "position": 5,
-            "prompt": "Say a short sentence using “slide”.",
-            "modelAnswer": "I go down the slide.",
+            "prompt": "Say a sentence with “swing” and they.",
+            "modelAnswer": "They swing together.",
             "evaluation": {
               "type": "transcription_feedback",
               "transcriptionSeparateFromPronunciation": true
@@ -1351,8 +1383,8 @@
           {
             "itemId": "english-pre-a1-m011-speaking-ex01-i06",
             "position": 6,
-            "prompt": "Say a short sentence using “play”.",
-            "modelAnswer": "I play with my friends.",
+            "prompt": "Say what you can do with “climb”.",
+            "modelAnswer": "I can climb the steps.",
             "evaluation": {
               "type": "transcription_feedback",
               "transcriptionSeparateFromPronunciation": true
@@ -1361,8 +1393,8 @@
           {
             "itemId": "english-pre-a1-m011-speaking-ex01-i07",
             "position": 7,
-            "prompt": "Say a short sentence using “stop”.",
-            "modelAnswer": "I stop at the gate.",
+            "prompt": "Say what you can do with “slide”.",
+            "modelAnswer": "You can slide down the slide.",
             "evaluation": {
               "type": "transcription_feedback",
               "transcriptionSeparateFromPronunciation": true
@@ -1371,8 +1403,8 @@
           {
             "itemId": "english-pre-a1-m011-speaking-ex01-i08",
             "position": 8,
-            "prompt": "Say a short sentence using “walk”.",
-            "modelAnswer": "I walk to school.",
+            "prompt": "Say what he can do with “hop”.",
+            "modelAnswer": "He can hop on one foot.",
             "evaluation": {
               "type": "transcription_feedback",
               "transcriptionSeparateFromPronunciation": true
@@ -1381,8 +1413,8 @@
           {
             "itemId": "english-pre-a1-m011-speaking-ex01-i09",
             "position": 9,
-            "prompt": "Say a short sentence using “hop”.",
-            "modelAnswer": "I can hop on one foot.",
+            "prompt": "Say what she can do with “skip”.",
+            "modelAnswer": "She can skip to the music.",
             "evaluation": {
               "type": "transcription_feedback",
               "transcriptionSeparateFromPronunciation": true
@@ -1391,8 +1423,8 @@
           {
             "itemId": "english-pre-a1-m011-speaking-ex01-i10",
             "position": 10,
-            "prompt": "Say a short sentence using “skip”.",
-            "modelAnswer": "I skip to the music.",
+            "prompt": "Say what we can do with “stop”.",
+            "modelAnswer": "We can stop here.",
             "evaluation": {
               "type": "transcription_feedback",
               "transcriptionSeparateFromPronunciation": true
@@ -1409,53 +1441,53 @@
         "exerciseId": "english-pre-a1-m011-listening-ex01",
         "type": "listening_gap_fill",
         "content": {
-          "audio": "tts:en-GB:At the playground, I run to the gate. I jump over a small line. I climb the steps. I swing on the seat. I go down the slide. I play with my friends. When Mum says stop, I stop. Then I walk slowly. I hop on one foot. I skip to the music.",
+          "audio": "tts:en-GB:I play in the playground. You walk to the swings. He runs to the gate. She jumps over a line. They swing together. I can climb the steps. You can slide down the slide. He can hop on one foot. She can skip to the music. We can stop here.",
           "audioLocale": "en-GB",
-          "transcriptTemplate": "At the playground, I [[gap-01]] to the gate. I [[gap-02]] over a small line. I [[gap-03]] the steps. I [[gap-04]] on the seat. I go down the [[gap-05]]. I [[gap-06]] with my friends. When Mum says [[gap-07]], I stop. Then I [[gap-08]] slowly. I [[gap-09]] on one foot. I [[gap-10]] to the music.",
+          "transcriptTemplate": "I [[gap-01]] in the playground. You [[gap-02]] to the swings. He [[gap-03]] to the gate. She [[gap-04]] over a line. They [[gap-05]] together. I can [[gap-06]] the steps. You can [[gap-07]] down the slide. He can [[gap-08]] on one foot. She can [[gap-09]] to the music. We can [[gap-10]] here.",
           "wordBank": [
             {
               "wordId": "english-pre-a1-m011-listening-word-01",
-              "word": "run"
-            },
-            {
-              "wordId": "english-pre-a1-m011-listening-word-02",
-              "word": "jump"
-            },
-            {
-              "wordId": "english-pre-a1-m011-listening-word-03",
-              "word": "climb"
-            },
-            {
-              "wordId": "english-pre-a1-m011-listening-word-04",
-              "word": "swing"
-            },
-            {
-              "wordId": "english-pre-a1-m011-listening-word-05",
-              "word": "slide"
-            },
-            {
-              "wordId": "english-pre-a1-m011-listening-word-06",
               "word": "play"
             },
             {
-              "wordId": "english-pre-a1-m011-listening-word-07",
-              "word": "stop"
-            },
-            {
-              "wordId": "english-pre-a1-m011-listening-word-08",
+              "wordId": "english-pre-a1-m011-listening-word-02",
               "word": "walk"
             },
             {
-              "wordId": "english-pre-a1-m011-listening-word-09",
+              "wordId": "english-pre-a1-m011-listening-word-03",
+              "word": "runs"
+            },
+            {
+              "wordId": "english-pre-a1-m011-listening-word-04",
+              "word": "jumps"
+            },
+            {
+              "wordId": "english-pre-a1-m011-listening-word-05",
+              "word": "swing"
+            },
+            {
+              "wordId": "english-pre-a1-m011-listening-word-06",
+              "word": "climb"
+            },
+            {
+              "wordId": "english-pre-a1-m011-listening-word-07",
+              "word": "slide"
+            },
+            {
+              "wordId": "english-pre-a1-m011-listening-word-08",
               "word": "hop"
             },
             {
-              "wordId": "english-pre-a1-m011-listening-word-10",
+              "wordId": "english-pre-a1-m011-listening-word-09",
               "word": "skip"
+            },
+            {
+              "wordId": "english-pre-a1-m011-listening-word-10",
+              "word": "stop"
             }
           ],
           "interaction": "select_place_move_replace",
-          "audioTranscript": "tts:en-GB:At the playground, I run to the gate. I jump over a small line. I climb the steps. I swing on the seat. I go down the slide. I play with my friends. When Mum says stop, I stop. Then I walk slowly. I hop on one foot. I skip to the music."
+          "audioTranscript": "tts:en-GB:I play in the playground. You walk to the swings. He runs to the gate. She jumps over a line. They swing together. I can climb the steps. You can slide down the slide. He can hop on one foot. She can skip to the music. We can stop here."
         },
         "items": [
           {
@@ -1463,70 +1495,70 @@
             "position": 1,
             "gapToken": "[[gap-01]]",
             "expectedWordId": "english-pre-a1-m011-listening-word-01",
-            "answer": "run"
+            "answer": "play"
           },
           {
             "itemId": "english-pre-a1-m011-listening-ex01-i02",
             "position": 2,
             "gapToken": "[[gap-02]]",
             "expectedWordId": "english-pre-a1-m011-listening-word-02",
-            "answer": "jump"
+            "answer": "walk"
           },
           {
             "itemId": "english-pre-a1-m011-listening-ex01-i03",
             "position": 3,
             "gapToken": "[[gap-03]]",
             "expectedWordId": "english-pre-a1-m011-listening-word-03",
-            "answer": "climb"
+            "answer": "runs"
           },
           {
             "itemId": "english-pre-a1-m011-listening-ex01-i04",
             "position": 4,
             "gapToken": "[[gap-04]]",
             "expectedWordId": "english-pre-a1-m011-listening-word-04",
-            "answer": "swing"
+            "answer": "jumps"
           },
           {
             "itemId": "english-pre-a1-m011-listening-ex01-i05",
             "position": 5,
             "gapToken": "[[gap-05]]",
             "expectedWordId": "english-pre-a1-m011-listening-word-05",
-            "answer": "slide"
+            "answer": "swing"
           },
           {
             "itemId": "english-pre-a1-m011-listening-ex01-i06",
             "position": 6,
             "gapToken": "[[gap-06]]",
             "expectedWordId": "english-pre-a1-m011-listening-word-06",
-            "answer": "play"
+            "answer": "climb"
           },
           {
             "itemId": "english-pre-a1-m011-listening-ex01-i07",
             "position": 7,
             "gapToken": "[[gap-07]]",
             "expectedWordId": "english-pre-a1-m011-listening-word-07",
-            "answer": "stop"
+            "answer": "slide"
           },
           {
             "itemId": "english-pre-a1-m011-listening-ex01-i08",
             "position": 8,
             "gapToken": "[[gap-08]]",
             "expectedWordId": "english-pre-a1-m011-listening-word-08",
-            "answer": "walk"
+            "answer": "hop"
           },
           {
             "itemId": "english-pre-a1-m011-listening-ex01-i09",
             "position": 9,
             "gapToken": "[[gap-09]]",
             "expectedWordId": "english-pre-a1-m011-listening-word-09",
-            "answer": "hop"
+            "answer": "skip"
           },
           {
             "itemId": "english-pre-a1-m011-listening-ex01-i10",
             "position": 10,
             "gapToken": "[[gap-10]]",
             "expectedWordId": "english-pre-a1-m011-listening-word-10",
-            "answer": "skip"
+            "answer": "stop"
           }
         ]
       }

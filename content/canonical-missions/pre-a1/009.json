@@ -27,20 +27,39 @@
         "exerciseId": "english-pre-a1-m009-explore-ex01",
         "type": "vocabulary_pairs",
         "theory": {
-          "title": "At Home: key words and simple sentences",
-          "explanation": "Aprende diez palabras para hablar de tu casa. Descubre cómo decir qué hay en cada habitación y dónde están los objetos.",
+          "title": "La casa: qué hay y dónde están las cosas",
+          "explanation": "Primero aprende a decir qué hay en una habitación con There is y There are. Después indica dónde está un objeto con in, on, under y next to. Termina describiendo la casa y dando instrucciones sencillas.",
+          "tip": "There is + una cosa; There are + varias. Las preposiciones van antes del lugar.",
           "patterns": [
             {
-              "label": "Simple sentence",
-              "pattern": "There is a kitchen.",
+              "label": "1. Existencia en singular y plural",
+              "pattern": "There is + singular · There are + plural",
               "examples": [
-                "There is a kitchen.",
-                "There are two bedrooms.",
-                "The bed is in the bedroom."
+                "There is a kitchen. — Hay una cocina.",
+                "There are two bedrooms. — Hay dos dormitorios.",
+                "There is a sofa. — Hay un sofá."
+              ]
+            },
+            {
+              "label": "2. Ubicación",
+              "pattern": "in · on · under · next to + place",
+              "examples": [
+                "The bed is in the bedroom. — La cama está en el dormitorio.",
+                "The book is on the table. — El libro está sobre la mesa.",
+                "The cat is under the chair. — El gato está debajo de la silla.",
+                "The door is next to the table. — La puerta está al lado de la mesa."
+              ]
+            },
+            {
+              "label": "3. Describir y dar instrucciones",
+              "pattern": "subject + is/are + adjective · base verb",
+              "examples": [
+                "My house is small. — Mi casa es pequeña.",
+                "The chairs are in the kitchen. — Las sillas están en la cocina.",
+                "Please close the door. — Por favor, cierra la puerta."
               ]
             }
-          ],
-          "tip": "Read each word aloud and use it in a short sentence."
+          ]
         },
         "items": [
           {
@@ -736,6 +755,34 @@
             "answer": "There are"
           },
           {
+            "itemId": "english-pre-a1-m009-grammar-ex01-i06",
+            "position": 6,
+            "prompt": "Choose the correct word or phrase: ___ a sofa.",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "There are",
+              "There is",
+              "There am"
+            ],
+            "answer": "There is"
+          },
+          {
+            "itemId": "english-pre-a1-m009-grammar-ex01-i07",
+            "position": 7,
+            "prompt": "Choose the correct word or phrase: ___ three windows.",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "There is",
+              "There are",
+              "There be"
+            ],
+            "answer": "There are"
+          },
+          {
             "itemId": "english-pre-a1-m009-grammar-ex01-i03",
             "position": 3,
             "prompt": "Choose the correct word or phrase: The bed is ___ the bedroom.",
@@ -776,34 +823,6 @@
               "in"
             ],
             "answer": "under"
-          },
-          {
-            "itemId": "english-pre-a1-m009-grammar-ex01-i06",
-            "position": 6,
-            "prompt": "Choose the correct word or phrase: ___ a sofa.",
-            "evaluation": {
-              "type": "single_choice"
-            },
-            "options": [
-              "There are",
-              "There is",
-              "There am"
-            ],
-            "answer": "There is"
-          },
-          {
-            "itemId": "english-pre-a1-m009-grammar-ex01-i07",
-            "position": 7,
-            "prompt": "Choose the correct word or phrase: ___ three windows.",
-            "evaluation": {
-              "type": "single_choice"
-            },
-            "options": [
-              "There is",
-              "There are",
-              "There be"
-            ],
-            "answer": "There are"
           },
           {
             "itemId": "english-pre-a1-m009-grammar-ex01-i08",

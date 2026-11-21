@@ -27,20 +27,45 @@
         "exerciseId": "english-pre-a1-m008-explore-ex01",
         "type": "vocabulary_pairs",
         "theory": {
-          "title": "My Body: key words and simple sentences",
-          "explanation": "Aprende diez partes del cuerpo y cómo describirlas. Descubre cómo expresar lo que tú y otras personas tenéis usando have got y has got.",
+          "title": "El cuerpo: have got y has got",
+          "explanation": "Primero aprende have got con I, you, we y they. Después observa que he y she cambian a has got. Termina con descripciones sencillas y órdenes para señalar partes del cuerpo.",
+          "tip": "I/You/We/They have got; He/She has got. Con can, el verbo queda en forma base.",
           "patterns": [
             {
-              "label": "Simple sentence",
-              "pattern": "I have got two eyes.",
+              "label": "1. Have got",
+              "pattern": "I · You · We · They + have got",
               "examples": [
-                "I have got two eyes.",
-                "She has got brown hair.",
-                "You have got two hands."
+                "I have got two eyes. — Tengo dos ojos.",
+                "You have got two hands. — Tienes dos manos.",
+                "We have got two ears. — Tenemos dos orejas.",
+                "They have got two arms. — Tienen dos brazos."
+              ]
+            },
+            {
+              "label": "2. Has got",
+              "pattern": "He · She · It + has got",
+              "examples": [
+                "He has got one nose. — Él tiene una nariz.",
+                "She has got brown hair. — Ella tiene el pelo castaño."
+              ]
+            },
+            {
+              "label": "3. Describir y expresar habilidad",
+              "pattern": "body part + is · subject + can + verb",
+              "examples": [
+                "My hair is brown. — Mi pelo es castaño.",
+                "We can smile. — Podemos sonreír."
+              ]
+            },
+            {
+              "label": "4. Instrucciones",
+              "pattern": "base verb + body part",
+              "examples": [
+                "Touch your head. — Tócate la cabeza.",
+                "Brush your hair. — Cepíllate el pelo."
               ]
             }
-          ],
-          "tip": "Read each word aloud and use it in a short sentence."
+          ]
         },
         "items": [
           {
@@ -717,20 +742,6 @@
             "answer": "have got"
           },
           {
-            "itemId": "english-pre-a1-m008-grammar-ex01-i02",
-            "position": 2,
-            "prompt": "Choose the correct word or phrase: She ___ brown hair.",
-            "evaluation": {
-              "type": "single_choice"
-            },
-            "options": [
-              "have got",
-              "are",
-              "has got"
-            ],
-            "answer": "has got"
-          },
-          {
             "itemId": "english-pre-a1-m008-grammar-ex01-i03",
             "position": 3,
             "prompt": "Choose the correct word or phrase: You ___ two hands.",
@@ -743,20 +754,6 @@
               "is"
             ],
             "answer": "have got"
-          },
-          {
-            "itemId": "english-pre-a1-m008-grammar-ex01-i04",
-            "position": 4,
-            "prompt": "Choose the correct word or phrase: He ___ one nose.",
-            "evaluation": {
-              "type": "single_choice"
-            },
-            "options": [
-              "have got",
-              "has got",
-              "am"
-            ],
-            "answer": "has got"
           },
           {
             "itemId": "english-pre-a1-m008-grammar-ex01-i05",
@@ -773,20 +770,6 @@
             "answer": "have got"
           },
           {
-            "itemId": "english-pre-a1-m008-grammar-ex01-i06",
-            "position": 6,
-            "prompt": "Choose the correct word or phrase: My brother ___ short hair.",
-            "evaluation": {
-              "type": "single_choice"
-            },
-            "options": [
-              "has got",
-              "have got",
-              "is"
-            ],
-            "answer": "has got"
-          },
-          {
             "itemId": "english-pre-a1-m008-grammar-ex01-i07",
             "position": 7,
             "prompt": "Choose the correct word or phrase: We ___ two ears.",
@@ -801,20 +784,6 @@
             "answer": "have got"
           },
           {
-            "itemId": "english-pre-a1-m008-grammar-ex01-i08",
-            "position": 8,
-            "prompt": "Choose the correct word or phrase: My sister ___ a small mouth.",
-            "evaluation": {
-              "type": "single_choice"
-            },
-            "options": [
-              "has got",
-              "have got",
-              "am"
-            ],
-            "answer": "has got"
-          },
-          {
             "itemId": "english-pre-a1-m008-grammar-ex01-i09",
             "position": 9,
             "prompt": "Choose the correct word or phrase: They ___ two arms.",
@@ -827,6 +796,62 @@
               "is"
             ],
             "answer": "have got"
+          },
+          {
+            "itemId": "english-pre-a1-m008-grammar-ex01-i02",
+            "position": 2,
+            "prompt": "Choose the correct word or phrase: She ___ brown hair.",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "have got",
+              "are",
+              "has got"
+            ],
+            "answer": "has got"
+          },
+          {
+            "itemId": "english-pre-a1-m008-grammar-ex01-i04",
+            "position": 4,
+            "prompt": "Choose the correct word or phrase: He ___ one nose.",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "have got",
+              "has got",
+              "am"
+            ],
+            "answer": "has got"
+          },
+          {
+            "itemId": "english-pre-a1-m008-grammar-ex01-i06",
+            "position": 6,
+            "prompt": "Choose the correct word or phrase: My brother ___ short hair.",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "has got",
+              "have got",
+              "is"
+            ],
+            "answer": "has got"
+          },
+          {
+            "itemId": "english-pre-a1-m008-grammar-ex01-i08",
+            "position": 8,
+            "prompt": "Choose the correct word or phrase: My sister ___ a small mouth.",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "has got",
+              "have got",
+              "am"
+            ],
+            "answer": "has got"
           },
           {
             "itemId": "english-pre-a1-m008-grammar-ex01-i10",

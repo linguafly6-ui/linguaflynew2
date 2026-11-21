@@ -99,46 +99,50 @@
           }
         ],
         "theory": {
-          "title": "Presentarte con el verbo to be",
-          "explanation": "Usamos to be para decir quiénes somos y presentar a otras personas. I am, you are, he is y she is. En saludos también usamos expresiones fijas como Good morning, Hello y Nice to meet you.",
+          "title": "Presentarte con to be y saludar",
+          "explanation": "Primero aprende quién hace la acción (I, you, he, she, we, they) y la forma correcta de to be. Después practica contracciones, preguntas y, al final, saludos y expresiones de cortesía. Cada ejemplo incluye su significado.",
+          "tip": "I va con am; you, we y they con are; he y she con is.",
           "patterns": [
             {
-              "label": "Afirmativa",
-              "pattern": "Subject + am/is/are + information",
+              "label": "1. Pronombres + to be",
+              "pattern": "I am · You are · He/She is · We/They are",
               "examples": [
-                "I am Alex.",
-                "You are my friend.",
-                "She is my teacher."
+                "I am Alex. — Soy Alex.",
+                "You are my friend. — Eres mi amigo/a.",
+                "He is Ben. — Él es Ben.",
+                "She is my teacher. — Ella es mi profesora.",
+                "We are students. — Somos estudiantes.",
+                "They are friends. — Ellos son amigos."
               ]
             },
             {
-              "label": "Contracciones",
+              "label": "2. Contracciones",
               "pattern": "I am → I'm · You are → You're · He is → He's · She is → She's",
               "examples": [
-                "I'm Alex.",
-                "You're my friend.",
-                "She's Mia."
+                "I'm Alex. — Soy Alex.",
+                "You're my friend. — Eres mi amigo/a.",
+                "He's Ben. — Él es Ben.",
+                "She's Mia. — Ella es Mia."
               ]
             },
             {
-              "label": "Preguntas",
-              "pattern": "Am/Is/Are + subject ...?",
+              "label": "3. Preguntas con to be",
+              "pattern": "Am/Is/Are + pronombre ...?",
               "examples": [
-                "Are you a student?",
-                "Is she your teacher?"
+                "Are you a student? — ¿Eres estudiante?",
+                "Is she your teacher? — ¿Es ella tu profesora?"
               ]
             },
             {
-              "label": "Saludos",
-              "pattern": "Good morning · Good afternoon · Hello · Goodbye",
+              "label": "4. Saludos y cortesía",
+              "pattern": "Good morning · Hello · Nice to meet you · Please · Thank you · Goodbye",
               "examples": [
-                "Good morning, Mia!",
-                "Hello, my name is Alex.",
-                "Nice to meet you."
+                "Good morning, Mia! — ¡Buenos días, Mia!",
+                "Hello, my name is Alex. — Hola, me llamo Alex.",
+                "Nice to meet you. — Encantado/a de conocerte."
               ]
             }
-          ],
-          "tip": "I siempre usa am; you usa are; he, she e it usan is."
+          ]
         },
         "lesson": {
           "phrases": [
@@ -1402,7 +1406,7 @@
             "itemId": "english-pre-a1-m001-speaking-ex01-i06",
             "position": 6,
             "prompt": "Ask someone politely for help.",
-            "modelAnswer": "Please, can you help me?",
+            "modelAnswer": "Please help me.",
             "evaluation": {
               "type": "transcription_feedback",
               "transcriptionSeparateFromPronunciation": true

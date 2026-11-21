@@ -99,45 +99,47 @@
           }
         ],
         "theory": {
-          "title": "Números del 1 al 10, cantidades y plural",
-          "explanation": "Los números nos ayudan a contar personas y objetos. Aprende su orden y cómo preguntar por cantidades con How many…? y responder con There is o There are.",
+          "title": "Números, plural y cantidades",
+          "explanation": "Aprende primero los números del 1 al 10. Después observa cómo cambia un nombre al contar más de un objeto, cómo preguntar How many…? y cómo responder con There is (una cosa) o There are (varias).",
+          "tip": "One book, two books. There is para una cosa; There are para dos o más.",
           "patterns": [
             {
-              "label": "Números del 1 al 5",
+              "label": "1. Números del 1 al 5",
               "pattern": "one · two · three · four · five",
               "examples": [
-                "One apple.",
-                "Two books.",
-                "Three balls."
+                "one apple — una manzana",
+                "two books — dos libros",
+                "three balls — tres pelotas"
               ]
             },
             {
-              "label": "Números del 6 al 10",
+              "label": "2. Números del 6 al 10",
               "pattern": "six · seven · eight · nine · ten",
               "examples": [
-                "Six pens.",
-                "Seven cards.",
-                "Ten fingers."
+                "six pens — seis bolígrafos",
+                "seven cards — siete tarjetas",
+                "ten fingers — diez dedos"
               ]
             },
             {
-              "label": "Preguntar cantidades",
-              "pattern": "How many + plural noun + are there?",
+              "label": "3. Singular y plural",
+              "pattern": "one + singular noun · number + plural noun",
               "examples": [
-                "How many books are there?",
-                "How many balls are there?"
+                "one book — un libro",
+                "two books — dos libros",
+                "five pencils — cinco lápices"
               ]
             },
             {
-              "label": "Responder cantidades",
-              "pattern": "There is + one + singular noun / There are + number + plural noun",
+              "label": "4. Preguntar y responder cantidades",
+              "pattern": "How many + plural noun + are there? · There is one… · There are…",
               "examples": [
-                "There is one book.",
-                "There are three balls."
+                "How many books are there? — ¿Cuántos libros hay?",
+                "There is one book. — Hay un libro.",
+                "There are three balls. — Hay tres pelotas."
               ]
             }
-          ],
-          "tip": "Usa How many con sustantivos contables en plural. Con una cosa puedes decir There is one…; con dos o más, There are…."
+          ]
         },
         "lesson": {
           "phrases": [
@@ -727,6 +729,34 @@
             "answer": "books"
           },
           {
+            "itemId": "english-pre-a1-m002-grammar-ex01-i06",
+            "position": 6,
+            "prompt": "Choose the correct phrase for 5 pencils.",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "five pencil",
+              "fives pencils",
+              "five pencils"
+            ],
+            "answer": "five pencils"
+          },
+          {
+            "itemId": "english-pre-a1-m002-grammar-ex01-i09",
+            "position": 9,
+            "prompt": "Choose the correct phrase for 1 ball.",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "one balls",
+              "one ball",
+              "ones ball"
+            ],
+            "answer": "one ball"
+          },
+          {
             "itemId": "english-pre-a1-m002-grammar-ex01-i03",
             "position": 3,
             "prompt": "Choose the question for a quantity.",
@@ -739,6 +769,20 @@
               "What colour balls are there?"
             ],
             "answer": "How many balls are there?"
+          },
+          {
+            "itemId": "english-pre-a1-m002-grammar-ex01-i07",
+            "position": 7,
+            "prompt": "Complete: How many ___ are there?",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "book",
+              "a book",
+              "books"
+            ],
+            "answer": "books"
           },
           {
             "itemId": "english-pre-a1-m002-grammar-ex01-i04",
@@ -769,34 +813,6 @@
             "answer": "is"
           },
           {
-            "itemId": "english-pre-a1-m002-grammar-ex01-i06",
-            "position": 6,
-            "prompt": "Choose the correct phrase for 5 pencils.",
-            "evaluation": {
-              "type": "single_choice"
-            },
-            "options": [
-              "five pencil",
-              "fives pencils",
-              "five pencils"
-            ],
-            "answer": "five pencils"
-          },
-          {
-            "itemId": "english-pre-a1-m002-grammar-ex01-i07",
-            "position": 7,
-            "prompt": "Complete: How many ___ are there?",
-            "evaluation": {
-              "type": "single_choice"
-            },
-            "options": [
-              "book",
-              "a book",
-              "books"
-            ],
-            "answer": "books"
-          },
-          {
             "itemId": "english-pre-a1-m002-grammar-ex01-i08",
             "position": 8,
             "prompt": "Complete: There are ___ apples.",
@@ -809,20 +825,6 @@
               "an"
             ],
             "answer": "four"
-          },
-          {
-            "itemId": "english-pre-a1-m002-grammar-ex01-i09",
-            "position": 9,
-            "prompt": "Choose the correct phrase for 1 ball.",
-            "evaluation": {
-              "type": "single_choice"
-            },
-            "options": [
-              "one balls",
-              "one ball",
-              "ones ball"
-            ],
-            "answer": "one ball"
           },
           {
             "itemId": "english-pre-a1-m002-grammar-ex01-i10",
@@ -1099,7 +1101,7 @@
             "itemId": "english-pre-a1-m002-writing-ex01-i01",
             "position": 1,
             "audio": "tts:en-GB:I see one ball.",
-            "expectedAnswer": "I see one ball.",
+            "expectedAnswer": "There is one ball.",
             "evaluation": {
               "type": "normalised_text"
             },
@@ -1109,7 +1111,7 @@
             "segments": [
               {
                 "segmentId": "english-pre-a1-m002-writing-segment-01",
-                "text": "I see one ball."
+                "text": "There is one ball."
               }
             ]
           },
@@ -1117,7 +1119,7 @@
             "itemId": "english-pre-a1-m002-writing-ex01-i02",
             "position": 2,
             "audio": "tts:en-GB:I see two books.",
-            "expectedAnswer": "I see two books.",
+            "expectedAnswer": "There are two books.",
             "evaluation": {
               "type": "normalised_text"
             },
@@ -1127,7 +1129,7 @@
             "segments": [
               {
                 "segmentId": "english-pre-a1-m002-writing-segment-02",
-                "text": "I see two books."
+                "text": "There are two books."
               }
             ]
           },
@@ -1135,7 +1137,7 @@
             "itemId": "english-pre-a1-m002-writing-ex01-i03",
             "position": 3,
             "audio": "tts:en-GB:I have three pens.",
-            "expectedAnswer": "I have three pens.",
+            "expectedAnswer": "There are three pens.",
             "evaluation": {
               "type": "normalised_text"
             },
@@ -1145,7 +1147,7 @@
             "segments": [
               {
                 "segmentId": "english-pre-a1-m002-writing-segment-03",
-                "text": "I have three pens."
+                "text": "There are three pens."
               }
             ]
           },
@@ -1153,7 +1155,7 @@
             "itemId": "english-pre-a1-m002-writing-ex01-i04",
             "position": 4,
             "audio": "tts:en-GB:I can count to four.",
-            "expectedAnswer": "I can count to four.",
+            "expectedAnswer": "There are four cards.",
             "evaluation": {
               "type": "normalised_text"
             },
@@ -1163,7 +1165,7 @@
             "segments": [
               {
                 "segmentId": "english-pre-a1-m002-writing-segment-04",
-                "text": "I can count to four."
+                "text": "There are four cards."
               }
             ]
           },
@@ -1171,7 +1173,7 @@
             "itemId": "english-pre-a1-m002-writing-ex01-i05",
             "position": 5,
             "audio": "tts:en-GB:I have five pencils.",
-            "expectedAnswer": "I have five pencils.",
+            "expectedAnswer": "There are five pencils.",
             "evaluation": {
               "type": "normalised_text"
             },
@@ -1181,7 +1183,7 @@
             "segments": [
               {
                 "segmentId": "english-pre-a1-m002-writing-segment-05",
-                "text": "I have five pencils."
+                "text": "There are five pencils."
               }
             ]
           },
@@ -1207,7 +1209,7 @@
             "itemId": "english-pre-a1-m002-writing-ex01-i07",
             "position": 7,
             "audio": "tts:en-GB:I see seven stars.",
-            "expectedAnswer": "I see seven stars.",
+            "expectedAnswer": "There are seven stars.",
             "evaluation": {
               "type": "normalised_text"
             },
@@ -1217,7 +1219,7 @@
             "segments": [
               {
                 "segmentId": "english-pre-a1-m002-writing-segment-07",
-                "text": "I see seven stars."
+                "text": "There are seven stars."
               }
             ]
           },
@@ -1225,7 +1227,7 @@
             "itemId": "english-pre-a1-m002-writing-ex01-i08",
             "position": 8,
             "audio": "tts:en-GB:I have eight books.",
-            "expectedAnswer": "I have eight books.",
+            "expectedAnswer": "There are eight books.",
             "evaluation": {
               "type": "normalised_text"
             },
@@ -1235,7 +1237,7 @@
             "segments": [
               {
                 "segmentId": "english-pre-a1-m002-writing-segment-08",
-                "text": "I have eight books."
+                "text": "There are eight books."
               }
             ]
           },
@@ -1261,7 +1263,7 @@
             "itemId": "english-pre-a1-m002-writing-ex01-i10",
             "position": 10,
             "audio": "tts:en-GB:I can count to ten.",
-            "expectedAnswer": "I can count to ten.",
+            "expectedAnswer": "There are ten cards.",
             "evaluation": {
               "type": "normalised_text"
             },
@@ -1271,7 +1273,7 @@
             "segments": [
               {
                 "segmentId": "english-pre-a1-m002-writing-segment-10",
-                "text": "I can count to ten."
+                "text": "There are ten cards."
               }
             ]
           }

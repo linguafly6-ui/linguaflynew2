@@ -27,29 +27,37 @@
         "exerciseId": "english-pre-a1-m003-explore-ex01",
         "type": "vocabulary_pairs",
         "theory": {
-          "title": "Colours: names and simple descriptions",
-          "explanation": "Aprende diez colores y úsalos para describir objetos. En inglés, el color suele ir antes del nombre del objeto.",
+          "title": "Colores y orden de los adjetivos",
+          "explanation": "Primero aprende los colores. En inglés, el color va delante del nombre: a red ball. Después aprende a describir un objeto con It is… y a expresar lo que ves con I can see…",
+          "tip": "Di primero el color y después el objeto: a blue sky, no a sky blue.",
           "patterns": [
             {
-              "label": "Colour + noun",
-              "pattern": "a + colour + noun",
+              "label": "1. Color + nombre",
+              "pattern": "a/an + colour + noun",
               "examples": [
-                "a red ball",
-                "a blue sky",
-                "a green tree"
+                "a red ball — una pelota roja",
+                "a blue sky — un cielo azul",
+                "a green tree — un árbol verde"
               ]
             },
             {
-              "label": "Describir algo",
-              "pattern": "It is + a/an + colour + noun",
+              "label": "2. Describir con to be",
+              "pattern": "It is + a/an + colour + noun · The noun is + colour",
               "examples": [
-                "It is a red flower.",
-                "It is a blue ball.",
-                "It is a green leaf."
+                "It is a red flower. — Es una flor roja.",
+                "The sky is blue. — El cielo es azul.",
+                "The grass is green. — La hierba es verde."
+              ]
+            },
+            {
+              "label": "3. Decir lo que ves",
+              "pattern": "I can see + noun",
+              "examples": [
+                "I can see a white cloud. — Puedo ver una nube blanca.",
+                "I can see a purple ball. — Puedo ver una pelota morada."
               ]
             }
-          ],
-          "tip": "Primero decimos el color y después el objeto: a yellow sun, no a sun yellow."
+          ]
         },
         "items": [
           {
@@ -725,20 +733,6 @@
             "answer": "a red ball"
           },
           {
-            "itemId": "english-pre-a1-m003-grammar-ex01-i02",
-            "position": 2,
-            "prompt": "Complete: It is a ___ flower.",
-            "evaluation": {
-              "type": "single_choice"
-            },
-            "options": [
-              "yellow",
-              "yellowly",
-              "yellows"
-            ],
-            "answer": "yellow"
-          },
-          {
             "itemId": "english-pre-a1-m003-grammar-ex01-i03",
             "position": 3,
             "prompt": "Choose the correct phrase.",
@@ -753,20 +747,6 @@
             "answer": "a blue car"
           },
           {
-            "itemId": "english-pre-a1-m003-grammar-ex01-i04",
-            "position": 4,
-            "prompt": "Complete: The grass is ___.",
-            "evaluation": {
-              "type": "single_choice"
-            },
-            "options": [
-              "green",
-              "a green",
-              "greens"
-            ],
-            "answer": "green"
-          },
-          {
             "itemId": "english-pre-a1-m003-grammar-ex01-i05",
             "position": 5,
             "prompt": "Choose the correct sentence.",
@@ -779,6 +759,48 @@
               "It is a black cat."
             ],
             "answer": "It is a black cat."
+          },
+          {
+            "itemId": "english-pre-a1-m003-grammar-ex01-i10",
+            "position": 10,
+            "prompt": "Choose the correct sentence.",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "The dog brown is big.",
+              "The big is brown dog.",
+              "The brown dog is big."
+            ],
+            "answer": "The brown dog is big."
+          },
+          {
+            "itemId": "english-pre-a1-m003-grammar-ex01-i02",
+            "position": 2,
+            "prompt": "Complete: It is a ___ flower.",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "yellow",
+              "yellowly",
+              "yellows"
+            ],
+            "answer": "yellow"
+          },
+          {
+            "itemId": "english-pre-a1-m003-grammar-ex01-i04",
+            "position": 4,
+            "prompt": "Complete: The grass is ___.",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "green",
+              "a green",
+              "greens"
+            ],
+            "answer": "green"
           },
           {
             "itemId": "english-pre-a1-m003-grammar-ex01-i06",
@@ -835,20 +857,6 @@
               "purple"
             ],
             "answer": "purple"
-          },
-          {
-            "itemId": "english-pre-a1-m003-grammar-ex01-i10",
-            "position": 10,
-            "prompt": "Choose the correct sentence.",
-            "evaluation": {
-              "type": "single_choice"
-            },
-            "options": [
-              "The dog brown is big.",
-              "The big is brown dog.",
-              "The brown dog is big."
-            ],
-            "answer": "The brown dog is big."
           }
         ]
       }
