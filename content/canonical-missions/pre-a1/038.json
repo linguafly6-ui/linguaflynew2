@@ -652,7 +652,7 @@
           {
             "itemId": "english-pre-a1-m038-grammar-ex01-i01",
             "position": 1,
-            "prompt": "Choose the polite instruction.",
+            "prompt": "Choose the correct instruction.",
             "evaluation": {
               "type": "single_choice"
             },
@@ -660,50 +660,46 @@
               "Dance, please.",
               "Dances, please.",
               "Dancing, please."
-            ],
-            "answer": "Dance, please."
+            ]
           },
           {
             "itemId": "english-pre-a1-m038-grammar-ex01-i02",
             "position": 2,
-            "prompt": "Someone gives you a gift. What do you say?",
+            "prompt": "Someone gives you a gift. Choose the response.",
             "evaluation": {
               "type": "single_choice"
             },
             "options": [
               "Thank you.",
-              "Please.",
-              "Good night."
-            ],
-            "answer": "Thank you."
+              "Thanks you.",
+              "Thanking you."
+            ]
           },
           {
             "itemId": "english-pre-a1-m038-grammar-ex01-i03",
             "position": 3,
-            "prompt": "Complete: Music, ___.",
+            "prompt": "Complete the polite request: Music, ___.",
             "evaluation": {
               "type": "single_choice"
             },
             "options": [
               "please",
-              "thank you",
-              "goodbye"
-            ],
-            "answer": "please"
+              "pleases",
+              "pleased"
+            ]
           },
           {
             "itemId": "english-pre-a1-m038-grammar-ex01-i04",
             "position": 4,
-            "prompt": "Which word means “globo”?",
+            "prompt": "Complete: The balloon ___ red.",
             "evaluation": {
               "type": "single_choice"
             },
             "options": [
-              "balloon",
-              "gift",
-              "music"
-            ],
-            "answer": "balloon"
+              "is",
+              "are",
+              "am"
+            ]
           },
           {
             "itemId": "english-pre-a1-m038-grammar-ex01-i05",
@@ -716,78 +712,72 @@
               "The children dance.",
               "The children dances.",
               "The children dancing."
-            ],
-            "answer": "The children dance."
+            ]
           },
           {
             "itemId": "english-pre-a1-m038-grammar-ex01-i06",
             "position": 6,
-            "prompt": "What do you listen to at a party?",
+            "prompt": "Complete: We listen ___ music.",
             "evaluation": {
               "type": "single_choice"
             },
             "options": [
-              "Music",
-              "A toothbrush",
-              "A broom"
-            ],
-            "answer": "Music"
+              "to",
+              "at",
+              "on"
+            ]
           },
           {
             "itemId": "english-pre-a1-m038-grammar-ex01-i07",
             "position": 7,
-            "prompt": "Which phrase is polite when you ask for a gift?",
+            "prompt": "Choose the polite request.",
             "evaluation": {
               "type": "single_choice"
             },
             "options": [
               "A gift, please.",
-              "A gift goodbye.",
-              "Thank you gift."
-            ],
-            "answer": "A gift, please."
+              "A gift pleases.",
+              "Please a gift is."
+            ]
           },
           {
             "itemId": "english-pre-a1-m038-grammar-ex01-i08",
             "position": 8,
-            "prompt": "What do you say after someone gives you a balloon?",
+            "prompt": "Someone gives you a balloon. Choose the response.",
             "evaluation": {
               "type": "single_choice"
             },
             "options": [
               "Thank you.",
-              "Please balloon.",
-              "Good night."
-            ],
-            "answer": "Thank you."
+              "Thanking you.",
+              "Thanks you."
+            ]
           },
           {
             "itemId": "english-pre-a1-m038-grammar-ex01-i09",
             "position": 9,
-            "prompt": "What can fall on the floor at a party?",
+            "prompt": "Complete: The confetti ___ on the floor.",
             "evaluation": {
               "type": "single_choice"
             },
             "options": [
-              "Confetti",
-              "A shower",
-              "A mirror"
-            ],
-            "answer": "Confetti"
+              "is",
+              "are",
+              "am"
+            ]
           },
           {
             "itemId": "english-pre-a1-m038-grammar-ex01-i10",
             "position": 10,
-            "prompt": "Which item can hang on a wall with a message?",
+            "prompt": "Complete: The banner ___ on the wall.",
             "evaluation": {
               "type": "single_choice"
             },
             "options": [
-              "A banner",
-              "A shoe",
-              "A towel"
-            ],
-            "answer": "A banner"
+              "is",
+              "are",
+              "am"
+            ]
           }
         ],
         "theory": {
