@@ -36,6 +36,10 @@ for (const file of files) {
   }
 
   if (mission.course?.level !== "C2") errors.push(`${file}: course.level must be C2.`);
+  const expectedUnit = `english-c2-unit-${String(Math.ceil(number / 10)).padStart(2, "0")}`;
+  if (mission.unit?.unitId !== expectedUnit || mission.mission?.unitId !== expectedUnit) {
+    errors.push(`${file}: unitId must match the mission's ten-mission unit (${expectedUnit}).`);
+  }
   if (mission.mission?.position !== number) {
     errors.push(`${file}: mission.position must equal its filename number (${number}).`);
   }
@@ -52,6 +56,9 @@ for (const file of files) {
 
   for (const [index, section] of sections.entries()) {
     const sectionKey = expectedSections[index];
+    if (section.position !== index + 1) {
+      errors.push(`${file} / ${sectionKey}: section position must be ${index + 1}.`);
+    }
     const expectedSuffix = `m${String(number).padStart(3, "0")}-${sectionKey}`;
     if (section.sectionId !== `english-c2-${expectedSuffix}`) {
       errors.push(`${file} / ${sectionKey}: sectionId must be unique to this mission and section.`);
