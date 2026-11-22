@@ -375,8 +375,8 @@
           ],
           "reading": [
             {
-              "english": "Ben is at the fruit market with his dad. He likes apples, bananas and oranges. He also likes strawberries and grapes. He does not like lemons. His dad buys a watermelon. Ben smiles. He likes fruit, and he is happy to help.",
-              "spanish": "Ben está en el mercado de fruta con su padre. Le gustan las manzanas, los plátanos y las naranjas. También le gustan las fresas y las uvas. No le gustan los limones. Su padre compra una sandía. Ben sonríe. Le gusta la fruta y está contento de ayudar.",
+              "english": "Ben is at the fruit market with his dad. Ben: I like apples, bananas and oranges. I like strawberries and grapes too. I don't like lemons. Dad: A watermelon for home. Ben: My favourite fruit is watermelon. I like fruit!",
+              "spanish": "Ben está en el mercado de fruta con su padre. Ben: Me gustan las manzanas, los plátanos y las naranjas. También me gustan las fresas y las uvas. No me gustan los limones. Padre: Una sandía para casa. Ben: Mi fruta favorita es la sandía. ¡Me gusta la fruta!",
               "note": "El vocabulario del texto se enseña previamente en Explore."
             }
           ],
@@ -1305,7 +1305,7 @@
           {
             "itemId": "english-pre-a1-m019-reading-ex01-i03",
             "position": 3,
-            "prompt": "Which fruit does Ben like?",
+            "prompt": "Fruit Ben likes: apples or lemons?",
             "evaluation": {
               "type": "single_choice"
             },
@@ -1319,7 +1319,7 @@
           {
             "itemId": "english-pre-a1-m019-reading-ex01-i04",
             "position": 4,
-            "prompt": "Does he like bananas?",
+            "prompt": "Fruit Ben likes: bananas?",
             "evaluation": {
               "type": "single_choice"
             },
@@ -1333,7 +1333,7 @@
           {
             "itemId": "english-pre-a1-m019-reading-ex01-i05",
             "position": 5,
-            "prompt": "Which fruit does he not like?",
+            "prompt": "Fruit Ben doesn't like: ...?",
             "evaluation": {
               "type": "single_choice"
             },
@@ -1347,7 +1347,7 @@
           {
             "itemId": "english-pre-a1-m019-reading-ex01-i06",
             "position": 6,
-            "prompt": "Which red fruit does he like?",
+            "prompt": "Red fruit Ben likes: ...?",
             "evaluation": {
               "type": "single_choice"
             },
@@ -1361,7 +1361,7 @@
           {
             "itemId": "english-pre-a1-m019-reading-ex01-i07",
             "position": 7,
-            "prompt": "What else does he like?",
+            "prompt": "Other fruit Ben likes: ...?",
             "evaluation": {
               "type": "single_choice"
             },
@@ -1375,7 +1375,7 @@
           {
             "itemId": "english-pre-a1-m019-reading-ex01-i08",
             "position": 8,
-            "prompt": "What does his dad buy?",
+            "prompt": "Fruit for home: ...?",
             "evaluation": {
               "type": "single_choice"
             },
@@ -1389,7 +1389,7 @@
           {
             "itemId": "english-pre-a1-m019-reading-ex01-i09",
             "position": 9,
-            "prompt": "How does Ben feel?",
+            "prompt": "Ben: happy or angry?",
             "evaluation": {
               "type": "single_choice"
             },
@@ -1403,7 +1403,7 @@
           {
             "itemId": "english-pre-a1-m019-reading-ex01-i10",
             "position": 10,
-            "prompt": "What does Ben like?",
+            "prompt": "Ben: favourite food group?",
             "evaluation": {
               "type": "single_choice"
             },
@@ -2021,8 +2021,8 @@
           "audio": "tts:en-GB:At the market, Ben is with his dad. Dad: What fruit do you like, Ben? Ben: I like apples and bananas. Dad: Do you like oranges? Ben: Yes, I like oranges. Dad: What about lemons? Ben: I don't like lemons. They are very sour. Dad: Do you like strawberries? Ben: Yes! I like strawberries and grapes. Dad: Here is a watermelon. Ben: I like watermelon too. Dad: Good. Let's buy fruit for home.",
           "audioLocale": "en-GB",
           "audioStatus": "synthetic_pending_review",
-          "audioTranscript": "At the market, Ben is with his dad. Dad: What fruit do you like, Ben? Ben: I like apples and bananas. Dad: Do you like oranges? Ben: Yes, I like oranges. Dad: What about lemons? Ben: I don't like lemons. They are very sour. Dad: Do you like strawberries? Ben: Yes! I like strawberries and grapes. Dad: Here is a watermelon. Ben: I like watermelon too. Dad: Good. Let's buy fruit for home.",
-          "transcriptTemplate": "At the [[gap-01]], Ben is with his dad. Dad: What [[gap-10]] do you [[gap-05]], Ben? Ben: I like [[gap-02]] and [[gap-03]]. Dad: Do you like [[gap-04]]? Ben: Yes, I like oranges. Dad: What about [[gap-06]]? Ben: I don't like lemons. They are very sour. Dad: Do you like [[gap-07]]? Ben: Yes! I like strawberries and [[gap-08]]. Dad: Here is a [[gap-09]]. Ben: I like watermelon too. Dad: Good. Let's buy fruit for home.",
+          "audioTranscript": "At the fruit market, Ben is with Dad. Dad: Apples and bananas. Ben: I like apples and bananas. Dad: Oranges and lemons. Ben: I like oranges. I don't like lemons. Dad: Strawberries and grapes. Ben: I like strawberries and grapes. Dad: A watermelon for home. Ben: My favourite fruit is watermelon. Dad: Fruit for home!",
+          "transcriptTemplate": "At the [[gap-01]], Ben is with Dad. Dad: [[gap-02]] and [[gap-03]]. Ben: I like apples and bananas. Dad: [[gap-04]] and [[gap-05]]. Ben: I like oranges. I don't like [[gap-06]]. Dad: [[gap-07]] and [[gap-08]]. Ben: I like strawberries and grapes. Dad: A [[gap-09]] for home. Ben: My [[gap-10]] fruit is watermelon. Dad: Fruit for home!",
           "wordBank": [
             {
               "wordId": "english-pre-a1-m019-listening-word-01",
@@ -2030,7 +2030,7 @@
             },
             {
               "wordId": "english-pre-a1-m019-listening-word-02",
-              "word": "apples"
+              "word": "Apples"
             },
             {
               "wordId": "english-pre-a1-m019-listening-word-03",
@@ -2038,11 +2038,11 @@
             },
             {
               "wordId": "english-pre-a1-m019-listening-word-04",
-              "word": "oranges"
+              "word": "Oranges"
             },
             {
               "wordId": "english-pre-a1-m019-listening-word-05",
-              "word": "like"
+              "word": "lemons"
             },
             {
               "wordId": "english-pre-a1-m019-listening-word-06",
@@ -2050,7 +2050,7 @@
             },
             {
               "wordId": "english-pre-a1-m019-listening-word-07",
-              "word": "strawberries"
+              "word": "Strawberries"
             },
             {
               "wordId": "english-pre-a1-m019-listening-word-08",
@@ -2062,11 +2062,11 @@
             },
             {
               "wordId": "english-pre-a1-m019-listening-word-10",
-              "word": "fruit"
+              "word": "favourite"
             }
           ],
           "interaction": "select_place_move_replace",
-          "translation": "En el mercado, Ben está con su padre. Padre: ¿Qué fruta te gusta, Ben? Ben: Me gustan las manzanas y los plátanos. Padre: ¿Te gustan las naranjas? Ben: Sí, me gustan las naranjas. Padre: ¿Y los limones? Ben: No me gustan los limones. Son muy ácidos. Padre: ¿Te gustan las fresas? Ben: ¡Sí! Me gustan las fresas y las uvas. Padre: Aquí tienes una sandía. Ben: También me gusta la sandía. Padre: Bien. Compremos fruta para casa."
+          "translation": "En el mercado de fruta, Ben está con papá. Papá: Manzanas y plátanos. Ben: Me gustan las manzanas y los plátanos. Papá: Naranjas y limones. Ben: Me gustan las naranjas. No me gustan los limones. Papá: Fresas y uvas. Ben: Me gustan las fresas y las uvas. Papá: Una sandía para casa. Ben: Mi fruta favorita es la sandía. Papá: ¡Fruta para casa!"
         },
         "items": [
           {
@@ -2081,7 +2081,7 @@
             "position": 2,
             "gapToken": "[[gap-02]]",
             "expectedWordId": "english-pre-a1-m019-listening-word-02",
-            "answer": "apples"
+            "answer": "Apples"
           },
           {
             "itemId": "english-pre-a1-m019-listening-ex01-i03",
@@ -2095,14 +2095,14 @@
             "position": 4,
             "gapToken": "[[gap-04]]",
             "expectedWordId": "english-pre-a1-m019-listening-word-04",
-            "answer": "oranges"
+            "answer": "Oranges"
           },
           {
             "itemId": "english-pre-a1-m019-listening-ex01-i05",
             "position": 5,
             "gapToken": "[[gap-05]]",
             "expectedWordId": "english-pre-a1-m019-listening-word-05",
-            "answer": "like"
+            "answer": "lemons"
           },
           {
             "itemId": "english-pre-a1-m019-listening-ex01-i06",
@@ -2116,7 +2116,7 @@
             "position": 7,
             "gapToken": "[[gap-07]]",
             "expectedWordId": "english-pre-a1-m019-listening-word-07",
-            "answer": "strawberries"
+            "answer": "Strawberries"
           },
           {
             "itemId": "english-pre-a1-m019-listening-ex01-i08",
@@ -2137,7 +2137,7 @@
             "position": 10,
             "gapToken": "[[gap-10]]",
             "expectedWordId": "english-pre-a1-m019-listening-word-10",
-            "answer": "fruit"
+            "answer": "favourite"
           }
         ],
         "theory": {

@@ -375,8 +375,8 @@
           ],
           "reading": [
             {
-              "english": "Sam looks out of the window. It is cloudy and windy. The day is cool. Sam has a coat and a hat. He sees a cloud in the sky. There is no rain now. Later, the sun comes out. Sam says, “It's sunny!” He is happy.",
-              "spanish": "Sam mira por la ventana. Está nublado y hace viento. El día está fresco. Sam tiene un abrigo y un sombrero. Ve una nube en el cielo. Ahora no llueve. Más tarde sale el sol. Sam dice: «¡Hace sol!». Está contento.",
+              "english": "Sam is at the window. Sam: It's cloudy and windy today. It's cool. I have a coat and a hat. Look! A cloud in the sky. The sun! It's sunny now. It's a sunny day.",
+              "spanish": "Sam está junto a la ventana. Sam: Hoy está nublado y hace viento. Está fresco. Tengo un abrigo y un sombrero. ¡Mira! Una nube en el cielo. ¡El sol! Ahora hace sol. Es un día soleado.",
               "note": "El vocabulario del texto se enseña previamente en Explore."
             }
           ],
@@ -1319,7 +1319,7 @@
           {
             "itemId": "english-pre-a1-m017-reading-ex01-i04",
             "position": 4,
-            "prompt": "What does Sam have?",
+            "prompt": "Sam: coat and ...?",
             "evaluation": {
               "type": "single_choice"
             },
@@ -1333,7 +1333,7 @@
           {
             "itemId": "english-pre-a1-m017-reading-ex01-i05",
             "position": 5,
-            "prompt": "What does he see in the sky?",
+            "prompt": "In the sky: a ...?",
             "evaluation": {
               "type": "single_choice"
             },
@@ -1347,21 +1347,21 @@
           {
             "itemId": "english-pre-a1-m017-reading-ex01-i06",
             "position": 6,
-            "prompt": "Is it rainy now?",
+            "prompt": "Weather today: rainy or cloudy?",
             "evaluation": {
               "type": "single_choice"
             },
             "options": [
-              "No",
-              "Yes"
+              "Cloudy",
+              "Rainy"
             ],
-            "answer": "No",
+            "answer": "Cloudy",
             "taskType": "reading_comprehension"
           },
           {
             "itemId": "english-pre-a1-m017-reading-ex01-i07",
             "position": 7,
-            "prompt": "What comes out later?",
+            "prompt": "In the sky: the ...?",
             "evaluation": {
               "type": "single_choice"
             },
@@ -1375,7 +1375,7 @@
           {
             "itemId": "english-pre-a1-m017-reading-ex01-i08",
             "position": 8,
-            "prompt": "What does Sam say?",
+            "prompt": "Sam: It's ... now!",
             "evaluation": {
               "type": "single_choice"
             },
@@ -1389,29 +1389,29 @@
           {
             "itemId": "english-pre-a1-m017-reading-ex01-i09",
             "position": 9,
-            "prompt": "How does Sam feel?",
+            "prompt": "Sam: a ... day!",
             "evaluation": {
               "type": "single_choice"
             },
             "options": [
-              "Happy",
-              "Sad"
+              "Sunny",
+              "Snowy"
             ],
-            "answer": "Happy",
+            "answer": "Sunny",
             "taskType": "reading_comprehension"
           },
           {
             "itemId": "english-pre-a1-m017-reading-ex01-i10",
             "position": 10,
-            "prompt": "Where does Sam look?",
+            "prompt": "Where is Sam?",
             "evaluation": {
               "type": "single_choice"
             },
             "options": [
-              "Out of the window",
+              "At the window",
               "Under the table"
             ],
-            "answer": "Out of the window",
+            "answer": "At the window",
             "taskType": "reading_comprehension"
           }
         ],
@@ -2021,8 +2021,8 @@
           "audio": "tts:en-GB:Mum: Good morning, Sam. Look outside. Sam: It's cloudy today. Mum: Yes, and it's windy. Sam: Is it cold? Mum: It's cool, not cold. Take your coat. Sam: I have a coat and a hat. Mum: Good. Is it rainy? Sam: No, it isn't rainy. The sun is behind the cloud. Mum: Maybe it is sunny later. Sam: I like sunny days!",
           "audioLocale": "en-GB",
           "audioStatus": "synthetic_pending_review",
-          "audioTranscript": "Mum: Good morning, Sam. Look outside. Sam: It's cloudy today. Mum: Yes, and it's windy. Sam: Is it cold? Mum: It's cool, not cold. Take your coat. Sam: I have a coat and a hat. Mum: Good. Is it rainy? Sam: No, it isn't rainy. The sun is behind the cloud. Mum: Maybe it is sunny later. Sam: I like sunny days!",
-          "transcriptTemplate": "Mum: Good morning, Sam. Look outside. Sam: It's [[gap-01]] today. Mum: Yes, and it's [[gap-02]]. Sam: Is it cold? Mum: It's [[gap-03]], not cold. Take your [[gap-04]]. Sam: I have a coat and a [[gap-05]]. Mum: Good. Is it [[gap-06]]? Sam: No, it isn't rainy. The [[gap-07]] is behind the [[gap-08]]. Mum: Maybe it is [[gap-09]] later. Sam: I like [[gap-10]] days!",
+          "audioTranscript": "Mum: Good morning, Sam. Look at the sky. Sam: It's cloudy today. Mum: Yes, and it's windy. Sam: It's cool today. Mum: Yes. I have a coat. Sam: I have a hat too. Mum: Look! A cloud and the sun. Sam: It's sunny now. Mum: A sunny day. Sam: I like sunny days!",
+          "transcriptTemplate": "Mum: Good morning, Sam. Look at the sky. Sam: It's [[gap-01]] today. Mum: Yes, and it's [[gap-02]]. Sam: It's [[gap-03]] today. Mum: Yes. I have a [[gap-04]]. Sam: I have a [[gap-05]] too. Mum: Look! A [[gap-06]] and the [[gap-07]]. Sam: It's [[gap-08]] now. Mum: A [[gap-09]] day. Sam: I like sunny [[gap-10]]!",
           "wordBank": [
             {
               "wordId": "english-pre-a1-m017-listening-word-01",
@@ -2046,7 +2046,7 @@
             },
             {
               "wordId": "english-pre-a1-m017-listening-word-06",
-              "word": "rainy"
+              "word": "cloud"
             },
             {
               "wordId": "english-pre-a1-m017-listening-word-07",
@@ -2054,7 +2054,7 @@
             },
             {
               "wordId": "english-pre-a1-m017-listening-word-08",
-              "word": "cloud"
+              "word": "sunny"
             },
             {
               "wordId": "english-pre-a1-m017-listening-word-09",
@@ -2062,11 +2062,11 @@
             },
             {
               "wordId": "english-pre-a1-m017-listening-word-10",
-              "word": "sunny"
+              "word": "days"
             }
           ],
           "interaction": "select_place_move_replace",
-          "translation": "Mamá: Buenos días, Sam. Mira afuera. Sam: Hoy está nublado. Mamá: Sí, y hace viento. Sam: ¿Hace frío? Mamá: Está fresco, no hace frío. Coge tu abrigo. Sam: Tengo un abrigo y un sombrero. Mamá: Bien. ¿Llueve? Sam: No, no llueve. El sol está detrás de la nube. Mamá: Quizá haga sol más tarde. Sam: ¡Me gustan los días soleados!"
+          "translation": "Mamá: Buenos días, Sam. Mira el cielo. Sam: Hoy está nublado. Mamá: Sí, y hace viento. Sam: Hoy está fresco. Mamá: Sí. Tengo un abrigo. Sam: Yo también tengo un sombrero. Mamá: ¡Mira! Una nube y el sol. Sam: Ahora hace sol. Mamá: Un día soleado. Sam: ¡Me gustan los días soleados!"
         },
         "items": [
           {
@@ -2109,7 +2109,7 @@
             "position": 6,
             "gapToken": "[[gap-06]]",
             "expectedWordId": "english-pre-a1-m017-listening-word-06",
-            "answer": "rainy"
+            "answer": "cloud"
           },
           {
             "itemId": "english-pre-a1-m017-listening-ex01-i07",
@@ -2123,7 +2123,7 @@
             "position": 8,
             "gapToken": "[[gap-08]]",
             "expectedWordId": "english-pre-a1-m017-listening-word-08",
-            "answer": "cloud"
+            "answer": "sunny"
           },
           {
             "itemId": "english-pre-a1-m017-listening-ex01-i09",
@@ -2137,7 +2137,7 @@
             "position": 10,
             "gapToken": "[[gap-10]]",
             "expectedWordId": "english-pre-a1-m017-listening-word-10",
-            "answer": "sunny"
+            "answer": "days"
           }
         ],
         "theory": {

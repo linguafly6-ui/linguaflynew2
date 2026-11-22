@@ -375,8 +375,8 @@
           ],
           "reading": [
             {
-              "english": "A year has four seasons. Spring is warm. Flowers grow and trees have new leaves. Summer is hot and sunny. Autumn is cool. Leaves fall from the trees. Winter is cold. Sometimes there is snow. The seasons are different, and each one is special.",
-              "spanish": "Un año tiene cuatro estaciones. La primavera es templada. Crecen flores y los árboles tienen hojas nuevas. El verano es caluroso y soleado. El otoño es fresco. Las hojas caen de los árboles. El invierno es frío. A veces hay nieve. Las estaciones son diferentes y cada una es especial.",
+              "english": "A year has four seasons. Spring is warm. Flowers grow in spring. New leaves in spring. Summer is hot and sunny. Autumn is cool. Leaves fall in autumn. Winter is cold. Snow in winter. Four seasons in a year.",
+              "spanish": "Un año tiene cuatro estaciones. La primavera es templada. Las flores crecen en primavera. En primavera hay hojas nuevas. El verano es caluroso y soleado. El otoño es fresco. Las hojas caen en otoño. El invierno es frío. Nieve en invierno. Cuatro estaciones en un año.",
               "note": "El vocabulario del texto se enseña previamente en Explore."
             }
           ],
@@ -2021,12 +2021,12 @@
           "audio": "tts:en-GB:Ella: Look at the calendar, Dad. There are four seasons in a year. Dad: Yes. Spring, summer, autumn and winter. Ella: What is spring like? Dad: Spring is warm. Flowers grow and trees have new leaves. Ella: Summer is hot. I like summer! Dad: Autumn is cool. Leaves fall from the trees. Ella: And winter is cold. Sometimes there is snow. Dad: That's right. Every season is different.",
           "audioLocale": "en-GB",
           "audioStatus": "synthetic_pending_review",
-          "audioTranscript": "Ella: Look at the calendar, Dad. There are four seasons in a year. Dad: Yes. Spring, summer, autumn and winter. Ella: What is spring like? Dad: Spring is warm. Flowers grow and trees have new leaves. Ella: Summer is hot. I like summer! Dad: Autumn is cool. Leaves fall from the trees. Ella: And winter is cold. Sometimes there is snow. Dad: That's right. Every season is different.",
-          "transcriptTemplate": "Ella: Look at the calendar, Dad. There are [[gap-01]] seasons in a year. Dad: Yes. [[gap-02]], [[gap-03]], autumn and winter. Ella: What is spring like? Dad: Spring is [[gap-04]]. [[gap-05]] grow and trees have new [[gap-08]]. Ella: Summer is [[gap-06]]. I like summer! Dad: Autumn is [[gap-07]]. Leaves fall from the trees. Ella: And winter is [[gap-09]]. Sometimes there is [[gap-10]]. Dad: That's right. Every season is different.",
+          "audioTranscript": "Ella: Look at the calendar, Dad. Four seasons in a year. Dad: Spring, summer, autumn and winter. Ella: Spring is warm. Dad: Yes. Flowers grow in spring. Ella: Summer is hot. I like summer! Dad: Autumn is cool. Leaves fall in autumn. Ella: Winter is cold. Snow in winter. Dad: Four seasons in a year.",
+          "transcriptTemplate": "Ella: Look at the calendar, Dad. [[gap-01]] seasons in a year. Dad: [[gap-02]], [[gap-03]], autumn and winter. Ella: Spring is [[gap-04]]. Dad: Yes. [[gap-05]] grow in spring. Ella: Summer is [[gap-06]]. I like summer! Dad: Autumn is [[gap-07]]. [[gap-08]] fall in autumn. Ella: Winter is [[gap-09]]. [[gap-10]] in winter. Dad: Four seasons in a year.",
           "wordBank": [
             {
               "wordId": "english-pre-a1-m018-listening-word-01",
-              "word": "four"
+              "word": "Four"
             },
             {
               "wordId": "english-pre-a1-m018-listening-word-02",
@@ -2062,11 +2062,11 @@
             },
             {
               "wordId": "english-pre-a1-m018-listening-word-10",
-              "word": "snow"
+              "word": "Snow"
             }
           ],
           "interaction": "select_place_move_replace",
-          "translation": "Ella: Mira el calendario, papá. Hay cuatro estaciones en un año. Papá: Sí. Primavera, verano, otoño e invierno. Ella: ¿Cómo es la primavera? Papá: La primavera es templada. Crecen flores y los árboles tienen hojas nuevas. Ella: El verano es caluroso. ¡Me gusta el verano! Papá: El otoño es fresco. Las hojas caen de los árboles. Ella: Y el invierno es frío. A veces hay nieve. Papá: Así es. Cada estación es diferente."
+          "translation": "Ella: Mira el calendario, papá. Cuatro estaciones en un año. Papá: Primavera, verano, otoño e invierno. Ella: La primavera es templada. Papá: Sí. Las flores crecen en primavera. Ella: El verano es caluroso. ¡Me gusta el verano! Papá: El otoño es fresco. Las hojas caen en otoño. Ella: El invierno es frío. Nieve en invierno. Papá: Cuatro estaciones en un año."
         },
         "items": [
           {
@@ -2074,7 +2074,7 @@
             "position": 1,
             "gapToken": "[[gap-01]]",
             "expectedWordId": "english-pre-a1-m018-listening-word-01",
-            "answer": "four"
+            "answer": "Four"
           },
           {
             "itemId": "english-pre-a1-m018-listening-ex01-i02",
@@ -2137,7 +2137,7 @@
             "position": 10,
             "gapToken": "[[gap-10]]",
             "expectedWordId": "english-pre-a1-m018-listening-word-10",
-            "answer": "snow"
+            "answer": "Snow"
           }
         ],
         "theory": {

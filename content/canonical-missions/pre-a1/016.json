@@ -357,8 +357,8 @@
           ],
           "reading": [
             {
-              "english": "Ben looks at his calendar. Today is Monday. He goes to school. Tomorrow is Tuesday. Wednesday and Thursday are school days too. Friday is the last school day. Saturday and Sunday are the weekend. Ben likes Saturday. His sister likes Sunday.",
-              "spanish": "Ben mira su calendario. Hoy es lunes. Va al colegio. Mañana es martes. Miércoles y jueves también son días de colegio. Viernes es el último día de colegio. Sábado y domingo son el fin de semana. A Ben le gusta el sábado. A su hermana le gusta el domingo.",
+              "english": "Lily and Ben look at a calendar. Lily: Today is Monday. Ben: I go to school on Monday. Tomorrow is Tuesday. Wednesday and Thursday are school days too. Friday is the last school day. Saturday and Sunday are the weekend. Ben: Saturday is a good day. Lily: Sunday is a good day too.",
+              "spanish": "Lily y Ben miran un calendario. Lily: Hoy es lunes. Ben: Voy al colegio el lunes. Mañana es martes. Miércoles y jueves también son días de colegio. Viernes es el último día de colegio. Sábado y domingo son el fin de semana. Ben: El sábado es un buen día. Lily: El domingo también es un buen día.",
               "note": "El vocabulario del texto se enseña previamente en Explore."
             }
           ],
@@ -1273,7 +1273,7 @@
           {
             "itemId": "english-pre-a1-m016-reading-ex01-i02",
             "position": 2,
-            "prompt": "Where does Ben go?",
+            "prompt": "Ben: school day?",
             "evaluation": {
               "type": "single_choice"
             },
@@ -1343,7 +1343,7 @@
           {
             "itemId": "english-pre-a1-m016-reading-ex01-i07",
             "position": 7,
-            "prompt": "Which day does Ben like?",
+            "prompt": "Ben: good day?",
             "evaluation": {
               "type": "single_choice"
             },
@@ -1357,15 +1357,15 @@
           {
             "itemId": "english-pre-a1-m016-reading-ex01-i08",
             "position": 8,
-            "prompt": "Who likes Sunday?",
+            "prompt": "Lily: good day?",
             "evaluation": {
               "type": "single_choice"
             },
             "options": [
-              "His sister",
-              "His teacher"
+              "Sunday",
+              "Tuesday"
             ],
-            "answer": "His sister",
+            "answer": "Sunday",
             "taskType": "reading_comprehension"
           },
           {
@@ -1385,7 +1385,7 @@
           {
             "itemId": "english-pre-a1-m016-reading-ex01-i10",
             "position": 10,
-            "prompt": "What does Ben look at?",
+            "prompt": "Lily and Ben: what do they look at?",
             "evaluation": {
               "type": "single_choice"
             },
@@ -2003,8 +2003,8 @@
           "audio": "tts:en-GB:Lily: Hello, Ben. What day is it today? Ben: Today is Monday. Lily: Is it a school day? Ben: Yes. I go to school on Monday. Lily: And tomorrow? Ben: Tomorrow is Tuesday. Lily: A week has seven days: Monday, Tuesday, Wednesday, Thursday, Friday, Saturday and Sunday. Ben: Yes. Saturday and Sunday are the weekend. Lily: I like Sunday. Ben: I like Saturday. See you on Tuesday!",
           "audioLocale": "en-GB",
           "audioStatus": "synthetic_pending_review",
-          "audioTranscript": "Lily: Hello, Ben. What day is it today? Ben: Today is Monday. Lily: Is it a school day? Ben: Yes. I go to school on Monday. Lily: And tomorrow? Ben: Tomorrow is Tuesday. Lily: A week has seven days: Monday, Tuesday, Wednesday, Thursday, Friday, Saturday and Sunday. Ben: Yes. Saturday and Sunday are the weekend. Lily: I like Sunday. Ben: I like Saturday. See you on Tuesday!",
-          "transcriptTemplate": "Lily: Hello, Ben. What day is it today? Ben: Today is [[gap-01]]. Lily: Is it a [[gap-02]] day? Ben: Yes. I go to school on [[gap-03]]. Lily: And tomorrow? Ben: Tomorrow is [[gap-04]]. Lily: A week has [[gap-05]] days: Monday, Tuesday, [[gap-06]], [[gap-07]], [[gap-08]], Saturday and [[gap-10]]. Ben: Yes. Saturday and Sunday are the [[gap-09]]. Lily: I like Sunday. Ben: I like Saturday. See you on Tuesday!",
+          "audioTranscript": "Lily: Hello, Ben. What day is it today? Ben: Today is Monday. Lily: A school day? Ben: Yes. I go to school on Monday. Lily: And tomorrow? Ben: Tomorrow is Tuesday. Lily: A week has seven days: Monday, Tuesday, Wednesday, Thursday, Friday, Saturday and Sunday. Ben: Yes. Saturday and Sunday are the weekend. Lily: Sunday is a good day. Ben: Saturday is a good day. See you on Tuesday!",
+          "transcriptTemplate": "Lily: Hello, Ben. What day is it today? Ben: Today is [[gap-01]]. Lily: A [[gap-02]] day? Ben: Yes. I go to school on [[gap-03]]. Lily: And tomorrow? Ben: Tomorrow is [[gap-04]]. Lily: A week has [[gap-05]] days: Monday, Tuesday, [[gap-06]], [[gap-07]], [[gap-08]], Saturday and [[gap-10]]. Ben: Yes. Saturday and Sunday are the [[gap-09]]. Lily: Sunday is a good day. Ben: Saturday is a good day. See you on Tuesday!",
           "wordBank": [
             {
               "wordId": "english-pre-a1-m016-listening-word-01",
@@ -2048,7 +2048,7 @@
             }
           ],
           "interaction": "select_place_move_replace",
-          "translation": "Lily: Hola, Ben. ¿Qué día es hoy? Ben: Hoy es lunes. Lily: ¿Es día de colegio? Ben: Sí. Voy al colegio el lunes. Lily: ¿Y mañana? Ben: Mañana es martes. Lily: Una semana tiene siete días: lunes, martes, miércoles, jueves, viernes, sábado y domingo. Ben: Sí. Sábado y domingo son el fin de semana. Lily: Me gusta el domingo. Ben: Me gusta el sábado. ¡Nos vemos el martes!"
+          "translation": "Lily: Hola, Ben. ¿Qué día es hoy? Ben: Hoy es lunes. Lily: ¿Día de colegio? Ben: Sí. Voy al colegio el lunes. Lily: ¿Y mañana? Ben: Mañana es martes. Lily: Una semana tiene siete días: lunes, martes, miércoles, jueves, viernes, sábado y domingo. Ben: Sí. Sábado y domingo son el fin de semana. Lily: El domingo es un buen día. Ben: El sábado es un buen día. ¡Nos vemos el martes!"
         },
         "items": [
           {
