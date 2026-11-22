@@ -197,8 +197,8 @@
               "note": "Modelo completo presentado y explicado en Explore."
             },
             {
-              "english": "Let's have a race.",
-              "spanish": "Vamos a hacer una carrera.",
+              "english": "This is a race.",
+              "spanish": "Esto es una carrera.",
               "note": "Modelo completo presentado y explicado en Explore."
             }
           ],
@@ -249,15 +249,15 @@
               "note": "Our team is ready."
             },
             {
-              "english": "Let's have a race.",
-              "spanish": "Vamos a hacer una carrera.",
+              "english": "This is a race.",
+              "spanish": "Esto es una carrera.",
               "note": "Our team is ready."
             }
           ],
           "reading": [
             {
-              "english": "Emma and Leo are at Sports Day. Emma: Here is the ball. Leo: I have a racket. Emma: Look at the goal. Leo: Our team is ready. Emma: Let's win! Leo: start the game. Emma: stop! Leo: The medal is here. Emma: I am a player. Leo: Let's have a race.",
-              "spanish": "Emma y Leo están en el día del deporte. Preparan la pelota y la raqueta, miran la portería y animan a su equipo. Empiezan el partido, paran cuando se indica, reciben una medalla y hacen una carrera.",
+              "english": "Emma and Leo are at Sports Day. Emma: Here is the ball. Leo: I have a racket. Emma: Look at the goal. Leo: Our team is ready. Emma: We can win! Leo: start the game. Emma: stop! Leo: The medal is here. Emma: I am a player. Leo: This is a race.",
+              "spanish": "Emma y Leo están en un día deportivo. Nombran los objetos, lugares y acciones de su actividad.",
               "note": "Vocabulario y modelos presentados previamente en Explore."
             }
           ],
@@ -308,8 +308,8 @@
               "note": "Modelo completo presentado y explicado en Explore."
             },
             {
-              "english": "Let's have a race.",
-              "spanish": "Vamos a hacer una carrera.",
+              "english": "This is a race.",
+              "spanish": "Esto es una carrera.",
               "note": "Modelo completo presentado y explicado en Explore."
             }
           ],
@@ -360,15 +360,15 @@
               "note": "Modelo completo presentado y explicado en Explore."
             },
             {
-              "english": "Let's have a race.",
-              "spanish": "Vamos a hacer una carrera.",
+              "english": "This is a race.",
+              "spanish": "Esto es una carrera.",
               "note": "Modelo completo presentado y explicado en Explore."
             }
           ],
           "listening": [
             {
-              "english": "Emma and Leo are at Sports Day. Emma: Here is the ball. Leo: I have a racket. Emma: Look at the goal. Leo: Our team is ready. Emma: Let's win! Leo: start the game. Emma: stop! Leo: The medal is here. Emma: I am a player. Leo: Let's have a race.",
-              "spanish": "Emma y Leo están en el día del deporte. Preparan la pelota y la raqueta, miran la portería y animan a su equipo. Empiezan el partido, paran cuando se indica, reciben una medalla y hacen una carrera.",
+              "english": "Emma and Leo are at Sports Day. Emma: Here is the ball. Leo: I have a racket. Emma: Look at the goal. Leo: Our team is ready. Emma: We can win! Leo: start the game. Emma: stop! Leo: The medal is here. Emma: I am a player. Leo: This is a race.",
+              "spanish": "Emma y Leo están en un día deportivo. Nombran los objetos, lugares y acciones de su actividad.",
               "note": "El audio reproduce el diálogo completo, incluidas las diez respuestas ocultas."
             }
           ]
@@ -442,7 +442,7 @@
               "position": 10,
               "title": "Preparación para escuchar",
               "content": "El diálogo cuenta una situación con las palabras y estructuras de esta misión.",
-              "example": "Start the game. / Stop! / This is a medal. / I am a player. / Let's have a race.",
+              "example": "Start the game. / Stop! / This is a medal. / I am a player. / This is a race.",
               "translation": "Explore es didáctico y no contiene actividades evaluables."
             }
           ]
@@ -757,7 +757,7 @@
             "options": [
               "This is a medal.",
               "I am a player.",
-              "Let's have a race."
+              "This is a race."
             ],
             "answer": "This is a medal."
           },
@@ -770,7 +770,7 @@
             },
             "options": [
               "I am a player.",
-              "Let's have a race.",
+              "This is a race.",
               "This is a ball."
             ],
             "answer": "I am a player."
@@ -778,16 +778,16 @@
           {
             "itemId": "english-pre-a1-m042-grammar-ex01-i10",
             "position": 10,
-            "prompt": "Choose the English model for: Vamos a hacer una carrera.",
+            "prompt": "Choose the English model for: Esto es una carrera.",
             "evaluation": {
               "type": "single_choice"
             },
             "options": [
-              "Let's have a race.",
+              "This is a race.",
               "This is a ball.",
               "This is a racket."
             ],
-            "answer": "Let's have a race."
+            "answer": "This is a race."
           }
         ],
         "theory": {
@@ -1117,7 +1117,7 @@
         },
         "content": {
           "passageId": "english-pre-a1-m042-reading-passage-01",
-          "passage": "Emma and Leo are at Sports Day. Emma: Here is the ball. Leo: I have a racket. Emma: Look at the goal. Leo: Our team is ready. Emma: Let's win! Leo: start the game. Emma: stop! Leo: The medal is here. Emma: I am a player. Leo: Let's have a race."
+          "passage": "Emma and Leo are at Sports Day. Emma: Here is the ball. Leo: I have a racket. Emma: Look at the goal. Leo: Our team is ready. Emma: We can win! Leo: start the game. Emma: stop! Leo: The medal is here. Emma: I am a player. Leo: This is a race."
         }
       }
     },
@@ -1303,19 +1303,19 @@
           {
             "itemId": "english-pre-a1-m042-writing-ex01-i10",
             "position": 10,
-            "audio": "tts:en-GB:Let's have a race.",
+            "audio": "tts:en-GB:This is a race.",
             "audioLocale": "en-GB",
             "audioStatus": "synthetic_pending_review",
             "kind": "sentence",
             "repeatCount": 3,
-            "expectedAnswer": "Let's have a race.",
+            "expectedAnswer": "This is a race.",
             "evaluation": {
               "type": "normalised_text"
             },
             "segments": [
               {
                 "segmentId": "english-pre-a1-m042-writing-segment-10",
-                "text": "Let's have a race."
+                "text": "This is a race."
               }
             ]
           }
@@ -1473,9 +1473,9 @@
             "itemId": "english-pre-a1-m042-speaking-ex01-i10",
             "position": 10,
             "prompt": "Say the English sentence aloud.",
-            "promptSpanish": "Practica esta frase: Vamos a hacer una carrera.",
-            "modelAnswer": "Let's have a race.",
-            "translation": "Vamos a hacer una carrera.",
+            "promptSpanish": "Practica esta frase: Esto es una carrera.",
+            "modelAnswer": "This is a race.",
+            "translation": "Esto es una carrera.",
             "evaluation": {
               "type": "transcription_feedback",
               "transcriptionSeparateFromPronunciation": true
@@ -1626,11 +1626,11 @@
           ]
         },
         "content": {
-          "audio": "tts:en-GB:Emma and Leo are at Sports Day. Emma: Here is the ball. Leo: I have a racket. Emma: Look at the goal. Leo: Our team is ready. Emma: Let's win! Leo: start the game. Emma: stop! Leo: The medal is here. Emma: I am a player. Leo: Let's have a race.",
+          "audio": "tts:en-GB:Emma and Leo are at Sports Day. Emma: Here is the ball. Leo: I have a racket. Emma: Look at the goal. Leo: Our team is ready. Emma: We can win! Leo: start the game. Emma: stop! Leo: The medal is here. Emma: I am a player. Leo: This is a race.",
           "audioLocale": "en-GB",
           "audioStatus": "synthetic_pending_review",
-          "audioTranscript": "Emma and Leo are at Sports Day. Emma: Here is the ball. Leo: I have a racket. Emma: Look at the goal. Leo: Our team is ready. Emma: Let's win! Leo: start the game. Emma: stop! Leo: The medal is here. Emma: I am a player. Leo: Let's have a race.",
-          "transcriptTemplate": "Emma and Leo are at Sports Day. Emma: Here is the [[gap-01]]. Leo: I have a [[gap-02]]. Emma: Look at the [[gap-03]]. Leo: Our [[gap-04]] is ready. Emma: Let's [[gap-05]]! Leo: [[gap-06]] the game. Emma: [[gap-07]]! Leo: The [[gap-08]] is here. Emma: I am a [[gap-09]]. Leo: Let's have a [[gap-10]].",
+          "audioTranscript": "Emma and Leo are at Sports Day. Emma: Here is the ball. Leo: I have a racket. Emma: Look at the goal. Leo: Our team is ready. Emma: We can win! Leo: start the game. Emma: stop! Leo: The medal is here. Emma: I am a player. Leo: This is a race.",
+          "transcriptTemplate": "Emma and Leo are at Sports Day. Emma: Here is the [[gap-01]]. Leo: I have a [[gap-02]]. Emma: Look at the [[gap-03]]. Leo: Our [[gap-04]] is ready. Emma: We can [[gap-05]]! Leo: [[gap-06]] the game. Emma: [[gap-07]]! Leo: The [[gap-08]] is here. Emma: I am a [[gap-09]]. Leo: This is a [[gap-10]].",
           "wordBank": [
             {
               "wordId": "english-pre-a1-m042-listening-word-01",

@@ -197,8 +197,8 @@
               "note": "Modelo completo presentado y explicado en Explore."
             },
             {
-              "english": "Let's play a game.",
-              "spanish": "Vamos a jugar un partido.",
+              "english": "This is a game.",
+              "spanish": "Esto es un partido.",
               "note": "Modelo completo presentado y explicado en Explore."
             }
           ],
@@ -249,15 +249,15 @@
               "note": "This is my team. · This is the field."
             },
             {
-              "english": "Let's play a game.",
-              "spanish": "Vamos a jugar un partido.",
+              "english": "This is a game.",
+              "spanish": "Esto es un partido.",
               "note": "This is my team. · This is the field."
             }
           ],
           "reading": [
             {
-              "english": "Emma and Leo are at Sports Day. Emma: I like football. Leo: I like basketball. Emma: I play tennis. Leo: I can swim. Emma: I can run. Leo: I can ride a bike. Emma: This is my favourite sport. Leo: Look at the field. Emma: Our team is here. Leo: Let's play a game.",
-              "spanish": "Emma y Leo están en el día del deporte. Hablan de fútbol, baloncesto y tenis. También nombran acciones como nadar, correr y montar en bicicleta. Después miran el campo, encuentran a su equipo y juegan un partido.",
+              "english": "Emma and Leo are at Sports Day. Emma: I like football. Leo: I like basketball. Emma: I like tennis. Leo: I can swim. Emma: I can run. Leo: I can ride a bike. Emma: This is my favourite sport. Leo: Look at the field. Emma: Our team is here. Leo: This is a game.",
+              "spanish": "Emma y Leo están en un día deportivo. Nombran los objetos, lugares y acciones de su actividad.",
               "note": "Vocabulario y modelos presentados previamente en Explore."
             }
           ],
@@ -308,8 +308,8 @@
               "note": "Modelo completo presentado y explicado en Explore."
             },
             {
-              "english": "Let's play a game.",
-              "spanish": "Vamos a jugar un partido.",
+              "english": "This is a game.",
+              "spanish": "Esto es un partido.",
               "note": "Modelo completo presentado y explicado en Explore."
             }
           ],
@@ -360,15 +360,15 @@
               "note": "Modelo completo presentado y explicado en Explore."
             },
             {
-              "english": "Let's play a game.",
-              "spanish": "Vamos a jugar un partido.",
+              "english": "This is a game.",
+              "spanish": "Esto es un partido.",
               "note": "Modelo completo presentado y explicado en Explore."
             }
           ],
           "listening": [
             {
-              "english": "Emma and Leo are at Sports Day. Emma: I like football. Leo: I like basketball. Emma: I play tennis. Leo: I can swim. Emma: I can run. Leo: I can ride a bike. Emma: This is my favourite sport. Leo: Look at the field. Emma: Our team is here. Leo: Let's play a game.",
-              "spanish": "Emma y Leo están en el día del deporte. Hablan de fútbol, baloncesto y tenis. También nombran acciones como nadar, correr y montar en bicicleta. Después miran el campo, encuentran a su equipo y juegan un partido.",
+              "english": "Emma and Leo are at Sports Day. Emma: I like football. Leo: I like basketball. Emma: I like tennis. Leo: I can swim. Emma: I can run. Leo: I can ride a bike. Emma: This is my favourite sport. Leo: Look at the field. Emma: Our team is here. Leo: This is a game.",
+              "spanish": "Emma y Leo están en un día deportivo. Nombran los objetos, lugares y acciones de su actividad.",
               "note": "El audio reproduce el diálogo completo, incluidas las diez respuestas ocultas."
             }
           ]
@@ -442,7 +442,7 @@
               "position": 10,
               "title": "Preparación para escuchar",
               "content": "El diálogo cuenta una situación con las palabras y estructuras de esta misión.",
-              "example": "I can ride a bike. / This is my favourite sport. / This is the field. / This is my team. / Let's play a game.",
+              "example": "I can ride a bike. / This is my favourite sport. / This is the field. / This is my team. / This is a game.",
               "translation": "Explore es didáctico y no contiene actividades evaluables."
             }
           ]
@@ -757,7 +757,7 @@
             "options": [
               "This is the field.",
               "This is my team.",
-              "Let's play a game."
+              "This is a game."
             ],
             "answer": "This is the field."
           },
@@ -770,7 +770,7 @@
             },
             "options": [
               "This is my team.",
-              "Let's play a game.",
+              "This is a game.",
               "I like football."
             ],
             "answer": "This is my team."
@@ -778,16 +778,16 @@
           {
             "itemId": "english-pre-a1-m041-grammar-ex01-i10",
             "position": 10,
-            "prompt": "Choose the English model for: Vamos a jugar un partido.",
+            "prompt": "Choose the English model for: Esto es un partido.",
             "evaluation": {
               "type": "single_choice"
             },
             "options": [
-              "Let's play a game.",
+              "This is a game.",
               "I like football.",
               "I like basketball."
             ],
-            "answer": "Let's play a game."
+            "answer": "This is a game."
           }
         ],
         "theory": {
@@ -1117,7 +1117,7 @@
         },
         "content": {
           "passageId": "english-pre-a1-m041-reading-passage-01",
-          "passage": "Emma and Leo are at Sports Day. Emma: I like football. Leo: I like basketball. Emma: I play tennis. Leo: I can swim. Emma: I can run. Leo: I can ride a bike. Emma: This is my favourite sport. Leo: Look at the field. Emma: Our team is here. Leo: Let's play a game."
+          "passage": "Emma and Leo are at Sports Day. Emma: I like football. Leo: I like basketball. Emma: I like tennis. Leo: I can swim. Emma: I can run. Leo: I can ride a bike. Emma: This is my favourite sport. Leo: Look at the field. Emma: Our team is here. Leo: This is a game."
         }
       }
     },
@@ -1303,19 +1303,19 @@
           {
             "itemId": "english-pre-a1-m041-writing-ex01-i10",
             "position": 10,
-            "audio": "tts:en-GB:Let's play a game.",
+            "audio": "tts:en-GB:This is a game.",
             "audioLocale": "en-GB",
             "audioStatus": "synthetic_pending_review",
             "kind": "sentence",
             "repeatCount": 3,
-            "expectedAnswer": "Let's play a game.",
+            "expectedAnswer": "This is a game.",
             "evaluation": {
               "type": "normalised_text"
             },
             "segments": [
               {
                 "segmentId": "english-pre-a1-m041-writing-segment-10",
-                "text": "Let's play a game."
+                "text": "This is a game."
               }
             ]
           }
@@ -1473,9 +1473,9 @@
             "itemId": "english-pre-a1-m041-speaking-ex01-i10",
             "position": 10,
             "prompt": "Say the English sentence aloud.",
-            "promptSpanish": "Practica esta frase: Vamos a jugar un partido.",
-            "modelAnswer": "Let's play a game.",
-            "translation": "Vamos a jugar un partido.",
+            "promptSpanish": "Practica esta frase: Esto es un partido.",
+            "modelAnswer": "This is a game.",
+            "translation": "Esto es un partido.",
             "evaluation": {
               "type": "transcription_feedback",
               "transcriptionSeparateFromPronunciation": true
@@ -1626,11 +1626,11 @@
           ]
         },
         "content": {
-          "audio": "tts:en-GB:Emma and Leo are at Sports Day. Emma: I like football. Leo: I like basketball. Emma: I play tennis. Leo: I can swim. Emma: I can run. Leo: I can ride a bike. Emma: This is my favourite sport. Leo: Look at the field. Emma: Our team is here. Leo: Let's play a game.",
+          "audio": "tts:en-GB:Emma and Leo are at Sports Day. Emma: I like football. Leo: I like basketball. Emma: I like tennis. Leo: I can swim. Emma: I can run. Leo: I can ride a bike. Emma: This is my favourite sport. Leo: Look at the field. Emma: Our team is here. Leo: This is a game.",
           "audioLocale": "en-GB",
           "audioStatus": "synthetic_pending_review",
-          "audioTranscript": "Emma and Leo are at Sports Day. Emma: I like football. Leo: I like basketball. Emma: I play tennis. Leo: I can swim. Emma: I can run. Leo: I can ride a bike. Emma: This is my favourite sport. Leo: Look at the field. Emma: Our team is here. Leo: Let's play a game.",
-          "transcriptTemplate": "Emma and Leo are at Sports Day. Emma: I like [[gap-01]]. Leo: I like [[gap-02]]. Emma: I play [[gap-03]]. Leo: I can [[gap-04]]. Emma: I can [[gap-05]]. Leo: I can [[gap-06]]. Emma: This is my favourite [[gap-07]]. Leo: Look at the [[gap-08]]. Emma: Our [[gap-09]] is here. Leo: Let's play a [[gap-10]].",
+          "audioTranscript": "Emma and Leo are at Sports Day. Emma: I like football. Leo: I like basketball. Emma: I like tennis. Leo: I can swim. Emma: I can run. Leo: I can ride a bike. Emma: This is my favourite sport. Leo: Look at the field. Emma: Our team is here. Leo: This is a game.",
+          "transcriptTemplate": "Emma and Leo are at Sports Day. Emma: I like [[gap-01]]. Leo: I like [[gap-02]]. Emma: I like [[gap-03]]. Leo: I can [[gap-04]]. Emma: I can [[gap-05]]. Leo: I can [[gap-06]]. Emma: This is my favourite [[gap-07]]. Leo: Look at the [[gap-08]]. Emma: Our [[gap-09]] is here. Leo: This is a [[gap-10]].",
           "wordBank": [
             {
               "wordId": "english-pre-a1-m041-listening-word-01",
