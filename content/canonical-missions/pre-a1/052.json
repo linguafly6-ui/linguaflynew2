@@ -636,142 +636,132 @@
           {
             "itemId": "english-pre-a1-m052-grammar-ex01-i01",
             "position": 1,
-            "prompt": "Elige el modelo correcto: This is a book.",
+            "prompt": "A book is near me. Complete: ___ is a book.",
             "evaluation": {
               "type": "single_choice"
             },
             "options": [
-              "This is a book.",
-              "That is a pen.",
-              "These are books."
-            ],
-            "answer": "This is a book."
+              "This",
+              "These",
+              "Those"
+            ]
           },
           {
             "itemId": "english-pre-a1-m052-grammar-ex01-i02",
             "position": 2,
-            "prompt": "Elige el modelo correcto: That is a pen.",
+            "prompt": "A pen is far away. Complete: ___ is a pen.",
             "evaluation": {
               "type": "single_choice"
             },
             "options": [
-              "That is a pen.",
-              "These are books.",
-              "Those are chairs."
-            ],
-            "answer": "That is a pen."
+              "That",
+              "This",
+              "Those"
+            ]
           },
           {
             "itemId": "english-pre-a1-m052-grammar-ex01-i03",
             "position": 3,
-            "prompt": "Elige el modelo correcto: These are books.",
+            "prompt": "Several books are near me. Complete: ___ are books.",
             "evaluation": {
               "type": "single_choice"
             },
             "options": [
-              "These are books.",
-              "Those are chairs.",
-              "This is a pencil."
-            ],
-            "answer": "These are books."
+              "These",
+              "This",
+              "That"
+            ]
           },
           {
             "itemId": "english-pre-a1-m052-grammar-ex01-i04",
             "position": 4,
-            "prompt": "Elige el modelo correcto: Those are chairs.",
+            "prompt": "Several chairs are far away. Complete: ___ are chairs.",
             "evaluation": {
               "type": "single_choice"
             },
             "options": [
-              "Those are chairs.",
-              "This is a pencil.",
-              "That is a chair."
-            ],
-            "answer": "Those are chairs."
+              "Those",
+              "That",
+              "This"
+            ]
           },
           {
             "itemId": "english-pre-a1-m052-grammar-ex01-i05",
             "position": 5,
-            "prompt": "Elige el modelo correcto: This is a pencil.",
+            "prompt": "Complete: ___ is a pencil near me.",
             "evaluation": {
               "type": "single_choice"
             },
             "options": [
-              "This is a pencil.",
-              "That is a chair.",
-              "These are pens."
-            ],
-            "answer": "This is a pencil."
+              "This",
+              "These",
+              "Those"
+            ]
           },
           {
             "itemId": "english-pre-a1-m052-grammar-ex01-i06",
             "position": 6,
-            "prompt": "Elige el modelo correcto: That is a chair.",
+            "prompt": "Complete: ___ is a chair over there.",
             "evaluation": {
               "type": "single_choice"
             },
             "options": [
-              "That is a chair.",
-              "These are pens.",
-              "Those are tables."
-            ],
-            "answer": "That is a chair."
+              "That",
+              "Those",
+              "These"
+            ]
           },
           {
             "itemId": "english-pre-a1-m052-grammar-ex01-i07",
             "position": 7,
-            "prompt": "Elige el modelo correcto: These are pens.",
+            "prompt": "Complete: ___ are pens here.",
             "evaluation": {
               "type": "single_choice"
             },
             "options": [
-              "These are pens.",
-              "Those are tables.",
-              "The book is here."
-            ],
-            "answer": "These are pens."
+              "These",
+              "This",
+              "That"
+            ]
           },
           {
             "itemId": "english-pre-a1-m052-grammar-ex01-i08",
             "position": 8,
-            "prompt": "Elige el modelo correcto: Those are tables.",
+            "prompt": "Complete: ___ are tables over there.",
             "evaluation": {
               "type": "single_choice"
             },
             "options": [
-              "Those are tables.",
-              "The book is here.",
-              "The chair is there."
-            ],
-            "answer": "Those are tables."
+              "Those",
+              "That",
+              "This"
+            ]
           },
           {
             "itemId": "english-pre-a1-m052-grammar-ex01-i09",
             "position": 9,
-            "prompt": "Elige el modelo correcto: The book is here.",
+            "prompt": "Choose the correct sentence.",
             "evaluation": {
               "type": "single_choice"
             },
             "options": [
               "The book is here.",
-              "The chair is there.",
-              "This is a book."
-            ],
-            "answer": "The book is here."
+              "The book are here.",
+              "The book am here."
+            ]
           },
           {
             "itemId": "english-pre-a1-m052-grammar-ex01-i10",
             "position": 10,
-            "prompt": "Elige el modelo correcto: The chair is there.",
+            "prompt": "Choose the correct sentence.",
             "evaluation": {
               "type": "single_choice"
             },
             "options": [
-              "The chair is there.",
-              "This is a book.",
-              "That is a pen."
-            ],
-            "answer": "The chair is there."
+              "The chairs are there.",
+              "The chairs is there.",
+              "The chairs am there."
+            ]
           }
         ],
         "theory": {

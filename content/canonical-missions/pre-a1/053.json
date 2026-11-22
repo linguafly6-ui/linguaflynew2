@@ -636,142 +636,132 @@
           {
             "itemId": "english-pre-a1-m053-grammar-ex01-i01",
             "position": 1,
-            "prompt": "Elige el modelo correcto: I have a book.",
+            "prompt": "Complete: I have ___ book.",
             "evaluation": {
               "type": "single_choice"
             },
             "options": [
-              "I have a book.",
-              "I have an apple.",
-              "One book."
-            ],
-            "answer": "I have a book."
+              "a",
+              "an",
+              "many"
+            ]
           },
           {
             "itemId": "english-pre-a1-m053-grammar-ex01-i02",
             "position": 2,
-            "prompt": "Elige el modelo correcto: I have an apple.",
+            "prompt": "Complete: I have ___ apple.",
             "evaluation": {
               "type": "single_choice"
             },
             "options": [
-              "I have an apple.",
-              "One book.",
-              "Two apples."
-            ],
-            "answer": "I have an apple."
+              "an",
+              "a",
+              "many"
+            ]
           },
           {
             "itemId": "english-pre-a1-m053-grammar-ex01-i03",
             "position": 3,
-            "prompt": "Elige el modelo correcto: One book.",
+            "prompt": "Choose the correct singular phrase.",
             "evaluation": {
               "type": "single_choice"
             },
             "options": [
-              "One book.",
-              "Two apples.",
-              "Many books."
-            ],
-            "answer": "One book."
+              "one book",
+              "one books",
+              "one bookes"
+            ]
           },
           {
             "itemId": "english-pre-a1-m053-grammar-ex01-i04",
             "position": 4,
-            "prompt": "Elige el modelo correcto: Two apples.",
+            "prompt": "Choose the correct plural phrase.",
             "evaluation": {
               "type": "single_choice"
             },
             "options": [
-              "Two apples.",
-              "Many books.",
-              "Many apples."
-            ],
-            "answer": "Two apples."
+              "two apples",
+              "two apple",
+              "two appleses"
+            ]
           },
           {
             "itemId": "english-pre-a1-m053-grammar-ex01-i05",
             "position": 5,
-            "prompt": "Elige el modelo correcto: Many books.",
+            "prompt": "Choose the correct plural phrase.",
             "evaluation": {
               "type": "single_choice"
             },
             "options": [
-              "Many books.",
-              "Many apples.",
-              "One orange."
-            ],
-            "answer": "Many books."
+              "many books",
+              "many book",
+              "many bookes"
+            ]
           },
           {
             "itemId": "english-pre-a1-m053-grammar-ex01-i06",
             "position": 6,
-            "prompt": "Elige el modelo correcto: Many apples.",
+            "prompt": "Choose the correct plural phrase.",
             "evaluation": {
               "type": "single_choice"
             },
             "options": [
-              "Many apples.",
-              "One orange.",
-              "Two cars."
-            ],
-            "answer": "Many apples."
+              "many apples",
+              "many apple",
+              "many appleses"
+            ]
           },
           {
             "itemId": "english-pre-a1-m053-grammar-ex01-i07",
             "position": 7,
-            "prompt": "Elige el modelo correcto: One orange.",
+            "prompt": "Complete: I have ___ orange.",
             "evaluation": {
               "type": "single_choice"
             },
             "options": [
-              "One orange.",
-              "Two cars.",
-              "Many boxes."
-            ],
-            "answer": "One orange."
+              "an",
+              "a",
+              "many"
+            ]
           },
           {
             "itemId": "english-pre-a1-m053-grammar-ex01-i08",
             "position": 8,
-            "prompt": "Elige el modelo correcto: Two cars.",
+            "prompt": "Choose the correct plural phrase.",
             "evaluation": {
               "type": "single_choice"
             },
             "options": [
-              "Two cars.",
-              "Many boxes.",
-              "I have two books."
-            ],
-            "answer": "Two cars."
+              "two cars",
+              "two car",
+              "two carses"
+            ]
           },
           {
             "itemId": "english-pre-a1-m053-grammar-ex01-i09",
             "position": 9,
-            "prompt": "Elige el modelo correcto: Many boxes.",
+            "prompt": "Complete: I have two ___.",
             "evaluation": {
               "type": "single_choice"
             },
             "options": [
-              "Many boxes.",
-              "I have two books.",
-              "I have a book."
-            ],
-            "answer": "Many boxes."
+              "books",
+              "book",
+              "a book"
+            ]
           },
           {
             "itemId": "english-pre-a1-m053-grammar-ex01-i10",
             "position": 10,
-            "prompt": "Elige el modelo correcto: I have two books.",
+            "prompt": "Choose the correct sentence.",
             "evaluation": {
               "type": "single_choice"
             },
             "options": [
-              "I have two books.",
               "I have a book.",
-              "I have an apple."
-            ],
-            "answer": "I have two books."
+              "I have an book.",
+              "I has a book."
+            ]
           }
         ],
         "theory": {
