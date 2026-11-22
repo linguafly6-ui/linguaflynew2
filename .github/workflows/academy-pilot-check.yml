@@ -92,6 +92,11 @@ jobs:
           npx --yes ajv-cli@5 validate --spec=draft2020 -s schemas/course-mission.schema.json -d content/canonical-missions/pre-a1/028.json
           npx --yes ajv-cli@5 validate --spec=draft2020 -s schemas/course-mission.schema.json -d content/canonical-missions/pre-a1/029.json
           npx --yes ajv-cli@5 validate --spec=draft2020 -s schemas/course-mission.schema.json -d content/canonical-missions/pre-a1/030.json
+          npx --yes ajv-cli@5 validate --spec=draft2020 -s schemas/course-mission.schema.json -d content/canonical-missions/pre-a1/031.json
+          npx --yes ajv-cli@5 validate --spec=draft2020 -s schemas/course-mission.schema.json -d content/canonical-missions/pre-a1/032.json
+          npx --yes ajv-cli@5 validate --spec=draft2020 -s schemas/course-mission.schema.json -d content/canonical-missions/pre-a1/033.json
+          npx --yes ajv-cli@5 validate --spec=draft2020 -s schemas/course-mission.schema.json -d content/canonical-missions/pre-a1/034.json
+          npx --yes ajv-cli@5 validate --spec=draft2020 -s schemas/course-mission.schema.json -d content/canonical-missions/pre-a1/035.json
 
       - name: Type-check application
         run: npx tsc --noEmit
