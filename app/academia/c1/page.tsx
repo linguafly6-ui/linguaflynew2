@@ -51,7 +51,23 @@ export default function C1Page() {
           <p className="text-xs font-extrabold tracking-widest text-violet-700">MISIÓN 006</p><h3 className="mt-1 text-xl font-bold text-slate-950">Emotion and Self-regulation</h3>
           <p className="mt-1 text-sm text-slate-600">Alfabetización emocional, reevaluación cognitiva y flexibilidad psicológica.</p><span className="mt-3 inline-block text-sm font-bold text-violet-700">Empezar misión →</span>
         </Link>
-        <p className="mt-4 text-xs leading-5 text-slate-500">Las misiones 001–006 están implementadas. Las misiones 007–100 siguen en desarrollo. Writing utiliza el dictado compatible con el runtime actual; la producción y evaluación automática de ensayos C1 requieren una ampliación técnica posterior. Los audios sintéticos están pendientes de revisión.</p>
+        <Link href="/academia/c1/007" className="mt-4 block rounded-2xl border border-violet-100 bg-white p-5 transition hover:border-violet-400 hover:shadow-sm">
+          <p className="text-xs font-extrabold tracking-widest text-violet-700">MISIÓN 007</p><h3 className="mt-1 text-xl font-bold text-slate-950">Life Transitions and Resilience</h3>
+          <p className="mt-1 text-sm text-slate-600">Adaptación al cambio, incertidumbre, recursos personales y resiliencia.</p><span className="mt-3 inline-block text-sm font-bold text-violet-700">Empezar misión →</span>
+        </Link>
+        <Link href="/academia/c1/008" className="mt-4 block rounded-2xl border border-violet-100 bg-white p-5 transition hover:border-violet-400 hover:shadow-sm">
+          <p className="text-xs font-extrabold tracking-widest text-violet-700">MISIÓN 008</p><h3 className="mt-1 text-xl font-bold text-slate-950">Identity and Social Roles</h3>
+          <p className="mt-1 text-sm text-slate-600">Identidad social, pertenencia, expectativas de rol y autonomía.</p><span className="mt-3 inline-block text-sm font-bold text-violet-700">Empezar misión →</span>
+        </Link>
+        <Link href="/academia/c1/009" className="mt-4 block rounded-2xl border border-violet-100 bg-white p-5 transition hover:border-violet-400 hover:shadow-sm">
+          <p className="text-xs font-extrabold tracking-widest text-violet-700">MISIÓN 009</p><h3 className="mt-1 text-xl font-bold text-slate-950">Reflective Narrative Synthesis</h3>
+          <p className="mt-1 text-sm text-slate-600">Narración retrospectiva, perspectiva, coherencia y síntesis reflexiva.</p><span className="mt-3 inline-block text-sm font-bold text-violet-700">Empezar misión →</span>
+        </Link>
+        <Link href="/academia/c1/010" className="mt-4 block rounded-2xl border border-violet-100 bg-white p-5 transition hover:border-violet-400 hover:shadow-sm">
+          <p className="text-xs font-extrabold tracking-widest text-violet-700">MISIÓN 010</p><h3 className="mt-1 text-xl font-bold text-slate-950">Integration and Review</h3>
+          <p className="mt-1 text-sm text-slate-600">Integración de identidad, memoria, motivación, relaciones y autorregulación.</p><span className="mt-3 inline-block text-sm font-bold text-violet-700">Empezar misión →</span>
+        </Link>
+        <p className="mt-4 text-xs leading-5 text-slate-500">Las misiones 001–010 de la unidad 1 están implementadas. Las misiones 011–100 siguen en desarrollo. Writing utiliza el dictado compatible con el runtime actual; la producción y evaluación automática de ensayos C1 requieren una ampliación técnica posterior. Los audios sintéticos están pendientes de revisión.</p>
       </section>
     </main>
   );
