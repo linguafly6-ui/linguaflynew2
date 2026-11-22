@@ -239,7 +239,7 @@ export default function CanonicalMission({ missionData = missionSource as Missio
                   head:"🙂",hair:"💇",eye:"👁️",ear:"👂",nose:"👃",mouth:"👄",tooth:"🦷",hand:"✋",arm:"💪",leg:"🦵",
                   house:"🏠",kitchen:"🍳",bedroom:"🛏️",bathroom:"🛁","living room":"🛋️",table:"🪑",bed:"🛏️",sofa:"🛋️",door:"🚪",window:"🪟",
                   "wake up":"⏰","get up":"🛌",wash:"🧼",brush:"🪥",eat:"🍽️",drink:"🥤",go:"🚶",study:"📚",play:"🧸",sleep:"😴",
-                  run:"🏃",jump:"🤸",climb:"🧗",swing:"🛝",slide:"🛝",stop:"🛑",walk:"🚶",hop:"🐇",skip:"🦘"
+                  run:"🏃",jump:"🤸",climb:"🧗",swing:"🛝",slide:"🛝",stop:"🛑",walk:"🚶",hop:"🐇",skip:"🦘",breakfast:"🍳",cereal:"🥣",toast:"🍞",egg:"🥚",yoghurt:"🥛",pancake:"🥞",waffle:"🧇",porridge:"🥣",tea:"🍵",sandwich:"🥪",coffee:"☕",lemonade:"🍋",cocoa:"☕",moo:"🐮",quack:"🦆",rooster:"🐓",turkey:"🦃",farm:"🚜",barn:"🏚️",field:"🌾",farmer:"👩‍🌾",goat:"🐐",hen:"🐔",tractor:"🚜",silo:"🏭",shark:"🦈",whale:"🐋",dolphin:"🐬",octopus:"🐙",crab:"🦀",turtle:"🐢",seal:"🦭",jellyfish:"🪼",seahorse:"🐴
                 };
                 const numberCounts: Record<string,number> = {one:1,two:2,three:3,four:4,five:5,six:6,seven:7,eight:8,nine:9,ten:10};
                 const word = (entry.english ?? "").toLowerCase();
