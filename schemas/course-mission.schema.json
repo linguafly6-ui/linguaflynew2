@@ -245,6 +245,9 @@
                       },
                       "audio": {
                         "type": "string"
+                      },
+                      "pronunciationGuide": {
+                        "type": "string"
                       }
                     }
                   }
@@ -481,6 +484,70 @@
                           },
                           "promptSpanish": {
                             "$ref": "#/$defs/nonEmpty"
+                          }
+                        },
+                        "additionalProperties": false
+                      }
+                    },
+                    "examples": {
+                      "type": "array",
+                      "minItems": 1,
+                      "items": {
+                        "type": "object",
+                        "required": [
+                          "english",
+                          "spanish"
+                        ],
+                        "properties": {
+                          "english": {
+                            "$ref": "#/$defs/nonEmpty"
+                          },
+                          "spanish": {
+                            "$ref": "#/$defs/nonEmpty"
+                          },
+                          "note": {
+                            "$ref": "#/$defs/nonEmpty"
+                          },
+                          "prompt": {
+                            "$ref": "#/$defs/nonEmpty"
+                          },
+                          "promptSpanish": {
+                            "$ref": "#/$defs/nonEmpty"
+                          },
+                          "pronunciationGuide": {
+                            "type": "string"
+                          }
+                        },
+                        "additionalProperties": false
+                      }
+                    },
+                    "communication": {
+                      "type": "array",
+                      "minItems": 1,
+                      "items": {
+                        "type": "object",
+                        "required": [
+                          "english",
+                          "spanish"
+                        ],
+                        "properties": {
+                          "english": {
+                            "$ref": "#/$defs/nonEmpty"
+                          },
+                          "spanish": {
+                            "$ref": "#/$defs/nonEmpty"
+                          },
+                          "note": {
+                            "$ref": "#/$defs/nonEmpty"
+                          },
+                          "prompt": {
+                            "$ref": "#/$defs/nonEmpty"
+                          },
+                          "promptSpanish": {
+                            "$ref": "#/$defs/nonEmpty"
+                          },
+                          "pronunciationGuide": {
+                            "type": "string"
                           }
                         },
                         "additionalProperties": false
@@ -961,6 +1028,9 @@
                     },
                     "interaction": {
                       "const": "select_place_move_replace"
+                    },
+                    "audioTranscript": {
+                      "$ref": "#/$defs/nonEmpty"
                     }
                   }
                 },
