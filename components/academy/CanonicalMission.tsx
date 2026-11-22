@@ -5,7 +5,7 @@ import missionSource from "@/content/canonical-missions/a1/001.json";
 
 type DictationSegment = { segmentId: string; text: string };
 type Item = { itemId: string; english?: string; spanish?: string; prompt?: string; answer?: string; options?: string[]; word?: string; translation?: string; pronunciationGuide?: string; expectedAnswer?: string; kind?: string; audioLocale?: string; repeatCount?: number; segments?: DictationSegment[]; modelAnswer?: string; focus?: string; expectedWordId?: string; gapToken?: string; position: number };
-type LessonEntry = { english: string; spanish: string; note?: string; prompt?: string; promptSpanish?: string };
+type LessonEntry = { english: string; spanish: string; note?: string; prompt?: string; promptSpanish?: string; pronunciationGuide?: string };
 type Lesson = { phrases: LessonEntry[]; grammar: LessonEntry[]; reading: LessonEntry[]; writing: LessonEntry[]; speaking: LessonEntry[]; listening: LessonEntry[] };
 type Section = { sectionId: string; sectionKey: string; position: number; title?: string; exercise: { exerciseId: string; type: string; items: Item[]; lesson?: Lesson; theory?: { title: string; explanation: string; tip: string; patterns: { label: string; pattern: string; examples: string[] }[] }; content?: { passageId?: string; passage?: string; audio?: string; audioTranscript?: string; transcriptTemplate?: string; wordBank?: { wordId: string; word: string }[] } } };
 export type Mission = { course: { level: string }; unit: { title: string }; mission: { title: string; position?: number }; sections: Section[] };
@@ -204,7 +204,7 @@ export default function CanonicalMission({ missionData = missionSource as Missio
                 const pronunciationGuide = pronunciationByWord.get(word);
                 return <article key={entry.itemId} className="flex min-w-0 flex-col items-center rounded-2xl border border-[#e8ebf0] bg-white p-3 text-center sm:p-4">
                   <div aria-hidden="true" className="grid h-16 w-16 place-items-center rounded-2xl bg-[#f2f6fb] sm:h-20 sm:w-20">
-                    {count ? <div className="flex flex-col items-center justify-center"><span className="text-3xl font-extrabold leading-none text-[#2872c8] sm:text-4xl">{count}</span><span className="mt-1 grid grid-cols-5 gap-0.5 text-[10px] leading-none sm:text-xs">{Array.from({length:count},(_,i)=><span key={i}>🍎</span>)}</span></div> : <span className="text-4xl sm:text-5xl">{visual[word] ?? "🖼️"}</span>}
+                    {count ? <div className="flex flex-col items-center justify-center"><span className="text-3xl font-extrabold leading-none text-[#2872c8] sm:text-4xl">{count}</span><span className="mt-1 grid grid-cols-5 gap-0.5 text-[10px] leading-none sm:text-xs">{Array.from({length:count},(_,i)=><span key={i}>🍎</span>)}</span></div> : <span className="text-4xl sm:text-5xl">{word.length === 1 && /^[a-z]$/.test(word) ? "🔠" : visual[word] ?? "🖼️"}</span>}
                   </div>
                   <p className="mt-3 break-words text-base font-bold text-[#26364b] sm:text-lg">{entry.english}</p>
                   <p className="mt-1 text-sm font-medium text-[#64816f]">{entry.spanish}</p>
