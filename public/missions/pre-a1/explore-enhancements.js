@@ -176,25 +176,60 @@
     "Flowers often grow in spring.":"Las flores suelen crecer en primavera.",
     "I see a carrot.":"Veo una zanahoria."
   });
+  var titleTranslations = {
+    "At the Playground":"En el parque infantil",
+    "Shapes Around Us":"Las formas que nos rodean",
+    "Big and Small":"Grande y pequeño",
+    "My School Bag":"Mi mochila escolar",
+    "The Classroom":"El aula",
+    "Days of the Week":"Los días de la semana",
+    "Weather Watchers":"El tiempo atmosférico",
+    "Seasons of the Year":"Las estaciones del año",
+    "Fruit Market":"El mercado de frutas",
+    "Veggie Garden":"El huerto de verduras"
+  };
+  var topicTranslations = {
+    "At the Playground":"el parque infantil",
+    "Shapes Around Us":"las formas que nos rodean",
+    "Big and Small":"los tamaños grande y pequeño",
+    "My School Bag":"el material de mi mochila",
+    "The Classroom":"el aula",
+    "Days of the Week":"los días de la semana",
+    "Weather Watchers":"el tiempo atmosférico",
+    "Seasons of the Year":"las estaciones del año",
+    "Fruit Market":"las frutas",
+    "Veggie Garden":"las verduras del huerto"
+  };
+  var labelTranslations = {"Useful sentence":"Frase útil"};
+  var explanationEs = "";
+  if (/^Learn ten useful words/.test(theory.explanation || "")) {
+    var topic = topicTranslations[data.mission && data.mission.title] || "este tema";
+    explanationEs = "Aprende diez palabras útiles sobre " + topic + ". Escucha cada modelo de inglés británico y repítelo.";
+  }
+  var tipEs = theory.tip === "Say each new word aloud, then use it in a short sentence."
+    ? "Di cada palabra nueva en voz alta y después úsala en una frase corta." : "";
   function esc(v) { return String(v == null ? "" : v).replace(/[&<>"']/g, function (c) { return {"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]; }); }
   function speak(text) { if (!window.speechSynthesis || !window.SpeechSynthesisUtterance) return; window.speechSynthesis.cancel(); var u = new SpeechSynthesisUtterance(String(text)); u.lang = "en-GB"; u.rate = .88; window.speechSynthesis.speak(u); }
   var host = document.getElementById("content") || document.getElementById("p-explore");
   if (!host) return;
   var title = theory.title || "Vocabulario y frases clave";
-  var html = '<div class="lf-explore"><header class="lf-explore-head"><span class="lf-explore-kicker">EXPLORE · EXPLORACIÓN</span><h2>' + esc(title) + '</h2><p>' + esc(theory.explanation || "Aprende el vocabulario y observa cómo se usa en frases sencillas.") + '</p></header>';
+  var missionTitle = data.mission && data.mission.title || "";
+  var titleEs = titleTranslations[missionTitle] || "";
+  var explanation = theory.explanation || "Aprende el vocabulario y observa cómo se usa en frases sencillas.";
+  var html = '<div class="lf-explore"><header class="lf-explore-head"><span class="lf-explore-kicker">EXPLORE · EXPLORACIÓN</span><h2>' + esc(title) + '</h2>' + (titleEs ? '<p class="lf-explore-title-es">' + esc(titleEs) + '</p>' : '') + '<p class="lf-explore-explanation-en">' + esc(explanation) + '</p>' + (explanationEs ? '<p class="lf-explore-explanation-es">' + esc(explanationEs) + '</p>' : '') + '</header>';
   html += '<section class="lf-vocab-section"><div class="lf-section-heading"><span>01</span><div><h3>Vocabulario clave</h3><p>Inglés y español, siempre juntos.</p></div></div><div class="lf-vocab-grid">';
   items.forEach(function (item) { html += '<article class="lf-vocab-card"><div class="lf-vocab-label">ENGLISH</div><div class="lf-vocab-word">' + esc(item.english || item.word || "") + '</div><div class="lf-vocab-translation">' + esc(item.spanish || item.translation || "") + '</div><button type="button" class="lf-audio" data-audio="' + esc(item.english || item.word || "") + '">🔊 Escuchar</button></article>'; });
   html += '</div></section>';
   html += '<section class="lf-phrases-section"><div class="lf-section-heading"><span>02</span><div><h3>Frases y estructuras</h3><p>Cada frase en inglés incluye su traducción al español.</p></div></div>';
   (theory.patterns || []).forEach(function (pattern, i) {
     var patternEn = phraseDisplay[pattern.pattern] || pattern.pattern; var patternEs = patternTranslations[pattern.pattern] || translations[pattern.pattern] || "";
-    html += '<article class="lf-pattern-card"><div class="lf-pattern-top"><span class="lf-pattern-index">' + String(i + 1).padStart(2, "0") + '</span><div><h4>' + esc(pattern.label || "Modelo") + '</h4><div class="lf-pattern-en">' + esc(patternEn) + '</div>' + (patternEs ? '<div class="lf-pattern-es">' + esc(patternEs) + '</div>' : '') + '</div></div>';
+    html += '<article class="lf-pattern-card"><div class="lf-pattern-top"><span class="lf-pattern-index">' + String(i + 1).padStart(2, "0") + '</span><div><h4>' + esc(labelTranslations[pattern.label] || pattern.label || "Modelo") + '</h4><div class="lf-pattern-en">' + esc(patternEn) + '</div>' + (patternEs ? '<div class="lf-pattern-es">' + esc(patternEs) + '</div>' : '') + '</div></div>';
     (pattern.examples || []).forEach(function (phrase) { var shownPhrase = phraseDisplay[phrase] || phrase; var translated = translations[phrase] || ""; html += '<div class="lf-example"><div><div class="lf-example-en" lang="en">' + esc(shownPhrase) + '</div><div class="lf-example-es">' + (translated ? esc(translated) : "Traducción en español no disponible") + '</div></div><button type="button" class="lf-audio" data-audio="' + esc(shownPhrase) + '" aria-label="Escuchar ' + esc(shownPhrase) + '">🔊</button></div>'; });
     html += '</article>';
   });
-  html += '</section>' + (theory.tip ? '<aside class="lf-explore-tip"><strong>Recuerda</strong><p>' + esc(theory.tip) + '</p></aside>' : '') + '</div>';
+  html += '</section>' + (theory.tip ? '<aside class="lf-explore-tip"><strong>Recuerda</strong><p>' + esc(theory.tip) + '</p>' + (tipEs ? '<p class="lf-explore-tip-es">' + esc(tipEs) + '</p>' : '') + '</aside>' : '') + '</div>';
   var style = document.createElement("style");
-  style.textContent = '.lf-explore{color:#24385f}.lf-explore-head{padding:22px 24px;border-radius:22px;background:linear-gradient(135deg,#e7f6ff,#f1edff);border:1px solid #dce6fb;margin-bottom:22px}.lf-explore-kicker{font-size:11px;letter-spacing:.14em;font-weight:900;color:#087c91}.lf-explore-head h2{font-size:clamp(23px,3vw,30px);margin:8px 0;color:#253f78}.lf-explore-head p,.lf-section-heading p{color:#667997;line-height:1.6;margin:0}.lf-vocab-section,.lf-phrases-section{margin:20px 0 26px}.lf-section-heading{display:flex;align-items:center;gap:12px;margin-bottom:13px}.lf-section-heading>span{display:grid;place-items:center;min-width:34px;height:34px;border-radius:11px;background:#e5f4ff;color:#167c99;font-weight:900}.lf-section-heading h3{font-size:19px;margin:0 0 3px;color:#243e75}.lf-vocab-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(145px,1fr));gap:11px}.lf-vocab-card{border:1px solid #dce6f7;border-radius:17px;padding:15px;background:linear-gradient(145deg,#f8fbff,#fff);box-shadow:0 5px 16px #2947770a}.lf-vocab-label{font-size:10px;font-weight:900;letter-spacing:.13em;color:#6f83a4}.lf-vocab-word{font-size:20px;font-weight:900;color:#2c4a85;margin:5px 0}.lf-vocab-translation{font-size:14px;color:#81532f;font-weight:750;min-height:22px}.lf-audio{border:0;border-radius:10px;background:#e4f7fb;color:#087c91;padding:8px 11px;font-weight:800;cursor:pointer;margin-top:8px}.lf-pattern-card{border:1px solid #dce6f7;border-radius:18px;padding:16px 17px;background:#fff;margin:12px 0;box-shadow:0 7px 22px #2947770b}.lf-pattern-top{display:flex;gap:12px;align-items:flex-start;margin-bottom:10px}.lf-pattern-index{display:grid;place-items:center;min-width:30px;height:30px;border-radius:10px;background:#f1edff;color:#5a4c9d;font-weight:900;font-size:12px}.lf-pattern-top h4{margin:0 0 5px;color:#304a7b;font-size:15px}.lf-pattern-en{font-weight:850;color:#3156a4;line-height:1.5}.lf-pattern-es{font-size:13px;color:#6c7b95;margin-top:3px;line-height:1.5}.lf-example{display:flex;justify-content:space-between;align-items:center;gap:12px;padding:10px 0;border-top:1px solid #edf1f8}.lf-example-en{font-weight:800;color:#2d416d;line-height:1.45}.lf-example-es{font-size:14px;color:#7d552f;line-height:1.45;margin-top:2px}.lf-example .lf-audio{flex-shrink:0;margin:0}.lf-explore-tip{padding:15px 17px;border-radius:15px;background:#f0faf7;border:1px solid #d8eee5;color:#27654e}.lf-explore-tip p{margin:5px 0 0;line-height:1.55}@media(max-width:600px){.lf-explore-head{padding:17px}.lf-vocab-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.lf-pattern-card{padding:13px}.lf-example{align-items:flex-start}}';
+  style.textContent = '.lf-explore{color:#24385f}.lf-explore-head{padding:22px 24px;border-radius:22px;background:linear-gradient(135deg,#e7f6ff,#f1edff);border:1px solid #dce6fb;margin-bottom:22px}.lf-explore-kicker{font-size:11px;letter-spacing:.14em;font-weight:900;color:#087c91}.lf-explore-head h2{font-size:clamp(23px,3vw,30px);margin:8px 0;color:#253f78}.lf-explore-head p,.lf-section-heading p{color:#667997;line-height:1.6;margin:0}.lf-explore-title-es{font-size:14px;font-weight:800;color:#81532f;margin:4px 0 10px!important}.lf-explore-explanation-en{margin-top:8px!important}.lf-explore-explanation-es,.lf-explore-tip-es{font-size:14px;color:#81532f;line-height:1.55;margin-top:4px!important}.lf-vocab-section,.lf-phrases-section{margin:20px 0 26px}.lf-section-heading{display:flex;align-items:center;gap:12px;margin-bottom:13px}.lf-section-heading>span{display:grid;place-items:center;min-width:34px;height:34px;border-radius:11px;background:#e5f4ff;color:#167c99;font-weight:900}.lf-section-heading h3{font-size:19px;margin:0 0 3px;color:#243e75}.lf-vocab-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(145px,1fr));gap:11px}.lf-vocab-card{border:1px solid #dce6f7;border-radius:17px;padding:15px;background:linear-gradient(145deg,#f8fbff,#fff);box-shadow:0 5px 16px #2947770a}.lf-vocab-label{font-size:10px;font-weight:900;letter-spacing:.13em;color:#6f83a4}.lf-vocab-word{font-size:20px;font-weight:900;color:#2c4a85;margin:5px 0}.lf-vocab-translation{font-size:14px;color:#81532f;font-weight:750;min-height:22px}.lf-audio{border:0;border-radius:10px;background:#e4f7fb;color:#087c91;padding:8px 11px;font-weight:800;cursor:pointer;margin-top:8px}.lf-pattern-card{border:1px solid #dce6f7;border-radius:18px;padding:16px 17px;background:#fff;margin:12px 0;box-shadow:0 7px 22px #2947770b}.lf-pattern-top{display:flex;gap:12px;align-items:flex-start;margin-bottom:10px}.lf-pattern-index{display:grid;place-items:center;min-width:30px;height:30px;border-radius:10px;background:#f1edff;color:#5a4c9d;font-weight:900;font-size:12px}.lf-pattern-top h4{margin:0 0 5px;color:#304a7b;font-size:15px}.lf-pattern-en{font-weight:850;color:#3156a4;line-height:1.5}.lf-pattern-es{font-size:13px;color:#6c7b95;margin-top:3px;line-height:1.5}.lf-example{display:flex;justify-content:space-between;align-items:center;gap:12px;padding:10px 0;border-top:1px solid #edf1f8}.lf-example-en{font-weight:800;color:#2d416d;line-height:1.45}.lf-example-es{font-size:14px;color:#7d552f;line-height:1.45;margin-top:2px}.lf-example .lf-audio{flex-shrink:0;margin:0}.lf-explore-tip{padding:15px 17px;border-radius:15px;background:#f0faf7;border:1px solid #d8eee5;color:#27654e}.lf-explore-tip p{margin:5px 0 0;line-height:1.55}@media(max-width:600px){.lf-explore-head{padding:17px}.lf-vocab-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.lf-pattern-card{padding:13px}.lf-example{align-items:flex-start}}';
   document.head.appendChild(style);
   host.innerHTML = html;
   host.addEventListener("click", function (event) { var button = event.target.closest("[data-audio]"); if (button) speak(button.dataset.audio); });
