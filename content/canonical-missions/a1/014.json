@@ -266,6 +266,14 @@
             "spanish": "domingo",
             "pronunciationGuide": "SÁN-dei",
             "audio": "tts:en-GB"
+          },
+          {
+            "itemId": "english-a1-m014-explore-word-31",
+            "position": 31,
+            "english": "activity",
+            "spanish": "actividad",
+            "pronunciationGuide": "ak-TÍ-və-ti",
+            "audio": "tts:en-GB"
           }
         ],
         "theory": {
@@ -418,6 +426,14 @@
             {
               "english": "We enjoy cooking together on Sunday.",
               "spanish": "Disfrutamos cocinando juntos el domingo."
+            },
+            {
+              "english": "My favourite books are adventure books.",
+              "spanish": "Mis libros favoritos son los libros de aventuras."
+            },
+            {
+              "english": "My favourite activity is listening to music in my room.",
+              "spanish": "Mi actividad favorita es escuchar música en mi habitación."
             }
           ],
           "grammar": [
@@ -482,12 +498,12 @@
               "spanish": "Tengo tiempo libre después del colegio."
             },
             {
-              "english": "I like reading adventure books.",
-              "spanish": "Me gusta leer libros de aventuras."
+              "english": "My favourite books are adventure books.",
+              "spanish": "Mis libros favoritos son los libros de aventuras."
             },
             {
-              "english": "I also enjoy listening to music in my room.",
-              "spanish": "También disfruto escuchando música en mi habitación."
+              "english": "My favourite activity is listening to music in my room.",
+              "spanish": "Mi actividad favorita es escuchar música en mi habitación."
             },
             {
               "english": "On Saturdays, I go cycling with my friend Sam.",
@@ -861,7 +877,7 @@
             "prompt": "Choose the correct phrase.",
             "answer": "I don't like singing.",
             "options": [
-              "I doesn't like singing.",
+              "I don't liking singing.",
               "I don't like singing.",
               "I not like singing."
             ],
@@ -974,7 +990,7 @@
             "prompt": "I ___ like watching films.",
             "answer": "don't",
             "options": [
-              "doesn't",
+              "not",
               "don't",
               "am not"
             ],
@@ -1030,8 +1046,8 @@
             "prompt": "Choose the correct negative sentence.",
             "answer": "I don't like singing.",
             "options": [
-              "I doesn't like singing.",
               "I don't like singing.",
+              "I don't liking singing.",
               "I not like singing."
             ],
             "evaluation": {
@@ -1251,12 +1267,12 @@
           {
             "itemId": "english-a1-m014-reading-1",
             "position": 1,
-            "prompt": "Where does Leo live?",
-            "answer": "In Leeds",
+            "prompt": "Where is Leo's home?",
+            "answer": "Leeds",
             "options": [
-              "In Leeds",
-              "In Bristol",
-              "In London"
+              "Leeds",
+              "Bristol",
+              "London"
             ],
             "evaluation": {
               "type": "single_choice"
@@ -1265,7 +1281,7 @@
           {
             "itemId": "english-a1-m014-reading-2",
             "position": 2,
-            "prompt": "When does Leo have free time?",
+            "prompt": "When is Leo free?",
             "answer": "After school",
             "options": [
               "Before breakfast",
@@ -1279,12 +1295,12 @@
           {
             "itemId": "english-a1-m014-reading-3",
             "position": 3,
-            "prompt": "What does Leo like reading?",
+            "prompt": "What are Leo's favourite books?",
             "answer": "Adventure books",
             "options": [
-              "History books",
               "Adventure books",
-              "Cookbooks"
+              "Cookbooks",
+              "History books"
             ],
             "evaluation": {
               "type": "single_choice"
@@ -1293,12 +1309,12 @@
           {
             "itemId": "english-a1-m014-reading-4",
             "position": 4,
-            "prompt": "What does Leo enjoy listening to?",
-            "answer": "Music",
+            "prompt": "What is Leo's favourite activity?",
+            "answer": "Listening to music",
             "options": [
-              "Music",
-              "The radio",
-              "Podcasts"
+              "Reading books",
+              "Listening to music",
+              "Cycling"
             ],
             "evaluation": {
               "type": "single_choice"
@@ -1307,7 +1323,7 @@
           {
             "itemId": "english-a1-m014-reading-5",
             "position": 5,
-            "prompt": "When does Leo go cycling?",
+            "prompt": "Which day is Leo's cycling trip?",
             "answer": "On Saturdays",
             "options": [
               "On Mondays",
@@ -1321,7 +1337,7 @@
           {
             "itemId": "english-a1-m014-reading-6",
             "position": 6,
-            "prompt": "Who takes photos in the park?",
+            "prompt": "Who likes taking photos in the park?",
             "answer": "Sam",
             "options": [
               "Leo",
@@ -1377,7 +1393,7 @@
           {
             "itemId": "english-a1-m014-reading-10",
             "position": 10,
-            "prompt": "When do they cook together?",
+            "prompt": "Which day is their cooking day?",
             "answer": "On Sundays",
             "options": [
               "On Fridays",
@@ -1391,7 +1407,7 @@
         ],
         "content": {
           "passageId": "english-a1-m014-reading-passage",
-          "passage": "My name is Leo and I live in Leeds. I have free time after school. I like reading adventure books. I also enjoy listening to music in my room. On Saturdays, I go cycling with my friend Sam. Sam loves taking photos in the park. My sister Mia likes painting and drawing. She also likes watching films. Our favourite hobby is cooking together on Sundays. We cook together and listen to music."
+          "passage": "My name is Leo and I live in Leeds. I have free time after school. My favourite books are adventure books. My favourite activity is listening to music in my room. On Saturdays, I go cycling with my friend Sam. Sam loves taking photos in the park. My sister Mia likes painting and drawing. She also likes watching films. Our favourite hobby is cooking together on Sundays. We cook together and listen to music."
         }
       }
     },
