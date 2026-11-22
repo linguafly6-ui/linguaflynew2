@@ -278,6 +278,15 @@
             "pronunciationGuide": "and",
             "audio": "tts:en-GB:and",
             "audioStatus": "synthetic_pending_review"
+          },
+          {
+            "itemId": "english-pre-a1-m010-explore-context-29",
+            "position": 29,
+            "english": "meets",
+            "spanish": "conoce / se encuentra",
+            "pronunciationGuide": "míits",
+            "audio": "tts:en-GB:meets",
+            "audioStatus": "synthetic_pending_review"
           }
         ],
         "theory": {
@@ -595,8 +604,8 @@
           ],
           "listening": [
             {
-              "english": "At the door, Ana meets Alex and Ben. Ana: Hello! This is my friend, Alex. Alex: Nice to meet you. Ana: Nice to meet you too. Ben: Pleased to meet you. Ana: This is Ben. Ben: You're my friend. Alex: What's your name? Ben: My name is Ben. All: Goodbye!",
-              "spanish": "En la puerta, Ana conoce a Alex y Ben. Ana: ¡Hola! Este es mi amigo Alex. Alex: Encantado de conocerte. Ana: Encantada también. Ben: Encantado de conocerte. Ana: Este es Ben. Ben: Eres mi amigo. Alex: ¿Cómo te llamas? Ben: Me llamo Ben. Todos: ¡Adiós!",
+              "english": "At the door, Ana meets Alex and Ben. Ana: Hello! This is my friend, Alex. Alex: Nice to meet you. Ana: Nice to meet you too. Ben: Pleased to meet you. Ana: This is Ben. Ben: You're my friend. Alex: What's your name? Ben: My name is Ben. Alex: Goodbye!",
+              "spanish": "En la puerta, Ana conoce a Alex y Ben. Ana: ¡Hola! Este es mi amigo Alex. Alex: Encantado de conocerte. Ana: Encantada también. Ben: Encantado de conocerte. Ana: Este es Ben. Ben: Eres mi amigo. Alex: ¿Cómo te llamas? Ben: Me llamo Ben. Alex: ¡Adiós!",
               "note": "Texto contextual completo; el vocabulario de apoyo y las expresiones objetivo se explican antes en Explore."
             }
           ]
@@ -1682,7 +1691,7 @@
         "exerciseId": "english-pre-a1-m010-listening-ex01",
         "type": "listening_gap_fill",
         "content": {
-          "audio": "tts:en-GB:At the door, Ana meets Alex and Ben. Ana: Hello! This is my friend, Alex. Alex: Nice to meet you. Ana: Nice to meet you too. Ben: Pleased to meet you. Ana: This is Ben. Ben: You're my friend. Alex: What's your name? Ben: My name is Ben. All: Goodbye!",
+          "audio": "tts:en-GB:At the door, Ana meets Alex and Ben. Ana: Hello! This is my friend, Alex. Alex: Nice to meet you. Ana: Nice to meet you too. Ben: Pleased to meet you. Ana: This is Ben. Ben: You're my friend. Alex: What's your name? Ben: My name is Ben. Alex: Goodbye!",
           "audioLocale": "en-GB",
           "audioStatus": "synthetic_pending_review",
           "transcriptTemplate": "[[gap-01]] [[gap-02]] [[gap-03]] [[gap-04]] [[gap-05]] [[gap-06]] [[gap-07]] [[gap-08]] [[gap-09]] [[gap-10]]",
@@ -1725,11 +1734,11 @@
             },
             {
               "wordId": "english-pre-a1-m010-listening-word-10",
-              "word": "All: Goodbye!"
+              "word": "Alex: Goodbye!"
             }
           ],
           "interaction": "select_place_move_replace",
-          "audioTranscript": "At the door, Ana meets Alex and Ben. Ana: Hello! This is my friend, Alex. Alex: Nice to meet you. Ana: Nice to meet you too. Ben: Pleased to meet you. Ana: This is Ben. Ben: You're my friend. Alex: What's your name? Ben: My name is Ben. All: Goodbye!",
+          "audioTranscript": "At the door, Ana meets Alex and Ben. Ana: Hello! This is my friend, Alex. Alex: Nice to meet you. Ana: Nice to meet you too. Ben: Pleased to meet you. Ana: This is Ben. Ben: You're my friend. Alex: What's your name? Ben: My name is Ben. Alex: Goodbye!",
           "translation": "En la puerta, Ana conoce a Alex y Ben. Ana: ¡Hola! Este es mi amigo Alex. Alex: Encantado de conocerte. Ana: Encantada también. Ben: Encantado de conocerte. Ana: Este es Ben. Ben: Eres mi amigo. Alex: ¿Cómo te llamas? Ben: Me llamo Ben. Todos: ¡Adiós!"
         },
         "items": [
@@ -1801,7 +1810,7 @@
             "position": 10,
             "gapToken": "[[gap-10]]",
             "expectedWordId": "english-pre-a1-m010-listening-word-10",
-            "answer": "All: Goodbye!"
+            "answer": "Alex: Goodbye!"
           }
         ]
       }
