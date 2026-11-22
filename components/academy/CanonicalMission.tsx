@@ -213,7 +213,20 @@ export default function CanonicalMission({ missionData = missionSource as Missio
   };
   const pronunciationSection = mission.sections.find((entry) => entry.sectionKey === "pronunciation");
   const exploreItems = mission.sections.find((entry) => entry.sectionKey === "explore")?.exercise.items ?? [];
-  const pronunciationByWord = new Map([...exploreItems, ...(pronunciationSection?.exercise.items ?? [])].map((entry) => [((entry.word ?? entry.english) ?? "").toLowerCase(), entry.pronunciationGuide ?? ""]));
+  const pronunciationByWord = new Map<string, string>();
+  [...exploreItems, ...(pronunciationSection?.exercise.items ?? [])].forEach((entry) => {
+    const sourceWords = (entry.word ?? entry.english ?? "").toLowerCase().match(/[a-z]+(?:['’][a-z]+)?/g) ?? [];
+    const guideWords = (entry.pronunciationGuide ?? "").trim().split(/\\s+/).filter(Boolean);
+    // Las expresiones de varias palabras suelen tener una sílaba-guía por palabra.
+    // Se registra cada palabra individual para poder mostrarla bajo el token correspondiente.
+    if (sourceWords.length === guideWords.length) {
+      sourceWords.forEach((word, wordIndex) => {
+        if (!pronunciationByWord.has(word)) pronunciationByWord.set(word, guideWords[wordIndex]);
+      });
+    } else if (sourceWords.length === 1 && guideWords.length) {
+      if (!pronunciationByWord.has(sourceWords[0])) pronunciationByWord.set(sourceWords[0], guideWords.join(" "));
+    }
+  });
   const progress = useMemo(() => activeItems.length ? Math.round(((index + (checked ? 1 : 0)) / activeItems.length) * 100) : 0, [index, checked, activeItems.length]);
 
   function changeSection(key: string) {
