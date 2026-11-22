@@ -4,7 +4,7 @@ import mission from "@/content/canonical-missions/a2/018.json";
 
 export const metadata = {
   title: "At the Sports Centre: Facilities and Membership · Misión 018 · Linguafly A2",
-  description: "Pregunta por instalaciones, horarios, precios y reservas en un polideportivo.",
+  description: "Practica cómo preguntar por instalaciones, horarios, precios, normas y reservas en un polideportivo.",
   robots: { index: false, follow: false },
 };
 
