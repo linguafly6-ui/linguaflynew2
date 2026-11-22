@@ -1,3 +1,23 @@
 import Link from "next/link";
-export const metadata={title:"People in My Class · Misión 009 · Linguafly A1",description:"Identifica, presenta y describe a tus compañeros."};
-export default function MissionPage(){return <main className="mx-auto min-h-[70vh] max-w-5xl px-5 py-10"><section className="mb-7"><Link href="/academia/a1" className="text-sm font-semibold text-blue-700">← Misiones A1</Link><p className="mt-6 text-sm font-extrabold uppercase tracking-widest text-indigo-700">Linguafly Quest · A1 · Misión 009</p><h1 className="mt-2 text-4xl font-black text-slate-950">People in My Class</h1><p className="mt-3 text-slate-600">Identifica, presenta y describe a tus compañeros.</p></section><iframe title="Misión 009 · People in My Class" src="/missions/a1/009/index.html" className="h-[1100px] w-full rounded-2xl border border-slate-200 bg-white"/></main>}
+import CanonicalMission, { type Mission } from "@/components/academy/CanonicalMission";
+import missionData from "@/content/canonical-missions/a1/009.json";
+
+export const metadata = {
+  title: "People in My Class · Misión 009 · Linguafly Academy",
+  description: "Describe a compañeros y profesores con pronombres, posesivos y adjetivos sencillos.",
+};
+
+export default function A1Mission009Page() {
+  return (
+    <main className="min-h-screen bg-slate-50 px-4 py-7 sm:px-6">
+      <div className="mx-auto max-w-5xl">
+        <Link href="/academia/a1" className="inline-flex items-center gap-2 text-sm font-medium text-slate-500 transition hover:text-blue-700">
+          <span aria-hidden="true">←</span> Volver al curso A1
+        </Link>
+        <div className="mt-5">
+          <CanonicalMission missionData={missionData as Mission} />
+        </div>
+      </div>
+    </main>
+  );
+}
