@@ -4,7 +4,7 @@ import path from "node:path";
 const directory = "content/canonical-missions/c2";
 const requireAll = process.env.REQUIRE_ALL_MISSIONS === "true";
 const files = fs.readdirSync(directory)
-  .filter((name) => /^\\d{3}\\.json$/.test(name))
+  .filter((name) => /^\d{3}\.json$/.test(name))
   .sort();
 
 if (files.length === 0) {
