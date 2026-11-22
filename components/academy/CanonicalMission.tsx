@@ -115,7 +115,7 @@ export default function CanonicalMission({ missionData = missionSource as Missio
       }
       questions.forEach((entry, questionIndex) => {
         const options = [...(entry.options ?? [])];
-        const correct = entry.answer && options.includes(entry.answer) ? entry.answer : options[0];
+        const correct = entry.answer && options.includes(entry.answer) ? entry.answer : mission.course.level.toUpperCase() === "PRE-A1" ? options[0] : undefined;
         if (!correct || new Set(options).size !== options.length) return;
         const distractors = options.filter((option) => option !== correct);
         for (let i = distractors.length - 1; i > 0; i -= 1) {
@@ -133,7 +133,7 @@ export default function CanonicalMission({ missionData = missionSource as Missio
   }, [mission]);
 
   const getOptions = (entry: Item) => optionOrders[entry.itemId] ?? entry.options ?? [];
-  const getCorrectAnswer = (entry: Item) => entry.answer ?? entry.options?.[0] ?? "";
+  const getCorrectAnswer = (entry: Item) => entry.answer ?? (mission.course.level.toUpperCase() === "PRE-A1" ? entry.options?.[0] : "") ?? "";
 
   useEffect(() => () => {
     dictationRunRef.current += 1;
