@@ -1,0 +1,1315 @@
+{
+  "schemaVersion": "1.2.0",
+  "contentVersion": 1,
+  "course": {
+    "courseId": "english-c2",
+    "level": "C2",
+    "language": "en-GB"
+  },
+  "unit": {
+    "unitId": "english-c2-unit-02",
+    "courseId": "english-c2",
+    "position": 2,
+    "title": "Rhetoric, Persuasion and Discourse"
+  },
+  "mission": {
+    "missionId": "english-c2-m013",
+    "unitId": "english-c2-unit-02",
+    "position": 13,
+    "title": "Evidence, Claims and the Limits of Generalisation"
+  },
+  "sections": [
+    {
+      "sectionId": "english-c2-m013-explore",
+      "sectionKey": "explore",
+      "position": 1,
+      "title": "explore",
+      "exercise": {
+        "exerciseId": "english-c2-m013-explore-exercise",
+        "type": "vocabulary_pairs",
+        "items": [
+          {
+            "itemId": "english-c2-m013-explore-word-1",
+            "position": 1,
+            "english": "generalisability",
+            "spanish": "posibilidad de generalización",
+            "pronunciationGuide": "jen-er-a-li-ZA-bi-li-ti",
+            "audio": "tts:en-GB"
+          },
+          {
+            "itemId": "english-c2-m013-explore-word-2",
+            "position": 2,
+            "english": "representative sample",
+            "spanish": "muestra representativa",
+            "pronunciationGuide": "rep-ri-ZEN-ta-tiv SÁM-pol",
+            "audio": "tts:en-GB"
+          },
+          {
+            "itemId": "english-c2-m013-explore-word-3",
+            "position": 3,
+            "english": "sampling bias",
+            "spanish": "sesgo de muestreo",
+            "pronunciationGuide": "SÁM-pling BÁI-as",
+            "audio": "tts:en-GB"
+          },
+          {
+            "itemId": "english-c2-m013-explore-word-4",
+            "position": 4,
+            "english": "confounding variable",
+            "spanish": "variable de confusión",
+            "pronunciationGuide": "kon-FÁUN-ding VÉ-ri-a-bol",
+            "audio": "tts:en-GB"
+          },
+          {
+            "itemId": "english-c2-m013-explore-word-5",
+            "position": 5,
+            "english": "corroboration",
+            "spanish": "corroboración",
+            "pronunciationGuide": "ko-ro-bo-RÉI-shon",
+            "audio": "tts:en-GB"
+          },
+          {
+            "itemId": "english-c2-m013-explore-word-6",
+            "position": 6,
+            "english": "anecdotal evidence",
+            "spanish": "evidencia anecdótica",
+            "pronunciationGuide": "an-ik-DÓU-tal É-vi-dens",
+            "audio": "tts:en-GB"
+          },
+          {
+            "itemId": "english-c2-m013-explore-word-7",
+            "position": 7,
+            "english": "external validity",
+            "spanish": "validez externa",
+            "pronunciationGuide": "eks-TÉR-nal va-LÍ-di-ti",
+            "audio": "tts:en-GB"
+          },
+          {
+            "itemId": "english-c2-m013-explore-word-8",
+            "position": 8,
+            "english": "selection effect",
+            "spanish": "efecto de selección",
+            "pronunciationGuide": "si-LEK-shon i-FEKT",
+            "audio": "tts:en-GB"
+          },
+          {
+            "itemId": "english-c2-m013-explore-word-9",
+            "position": 9,
+            "english": "replication",
+            "spanish": "replicación",
+            "pronunciationGuide": "rep-li-KÉI-shon",
+            "audio": "tts:en-GB"
+          },
+          {
+            "itemId": "english-c2-m013-explore-word-10",
+            "position": 10,
+            "english": "evidential threshold",
+            "spanish": "umbral probatorio",
+            "pronunciationGuide": "e-vi-DEN-shal THRESH-hould",
+            "audio": "tts:en-GB"
+          }
+        ],
+        "theory": {
+          "title": "Evidence, claims and the limits of generalisation",
+          "explanation": "A result can be accurately measured and still be overinterpreted. Ask who was studied, how participants were selected, which groups were absent and whether the sample resembles the population to which the claim is applied. Sampling bias, self-selection, confounding variables and narrow settings can restrict external validity. Replication strengthens confidence in a finding, but it does not automatically make an unrepresentative sample representative. Distinguish statistical significance from practical importance, association from causation, and a result observed in one context from a claim about a wider population. At C2 level, state precisely what the evidence supports, identify what remains uncertain and specify what further evidence would change the conclusion.",
+          "tip": "Trace the chain from population → sampling frame → sample → measurement → finding → generalisation. At each step, ask who or what may have been excluded and whether an alternative explanation remains plausible.",
+          "patterns": [
+            {
+              "label": "Scope of inference",
+              "pattern": "Limit a claim to the population and conditions actually studied.",
+              "examples": [
+                "The findings may apply to the participating clinics, but cannot yet be extrapolated to the national population."
+              ]
+            },
+            {
+              "label": "Sampling limitations",
+              "pattern": "Identify selection effects and missing perspectives.",
+              "examples": [
+                "Because participation was voluntary, respondents may have been more engaged than non-participants."
+              ]
+            },
+            {
+              "label": "Corroboration and replication",
+              "pattern": "Separate independent confirmation from repetition within the same dataset.",
+              "examples": [
+                "The pattern has been replicated in a second setting, although both studies used similar recruitment methods."
+              ]
+            },
+            {
+              "label": "Proportionate conclusion",
+              "pattern": "Match the strength of the wording to the strength and reach of the evidence.",
+              "examples": [
+                "The results are consistent with the hypothesis, but further research is needed before a broader claim can be made."
+              ]
+            }
+          ]
+        },
+        "lesson": {
+          "phrases": [
+            {
+              "english": "The sample is not sufficiently representative to support that generalisation.",
+              "spanish": "La muestra no es suficientemente representativa para respaldar esa generalización.",
+              "note": "Limita el alcance de la conclusión."
+            },
+            {
+              "english": "The evidence is suggestive rather than conclusive.",
+              "spanish": "La evidencia es indicativa, no concluyente.",
+              "note": "Distingue indicio de demostración."
+            },
+            {
+              "english": "That pattern may reflect a selection effect.",
+              "spanish": "Ese patrón puede reflejar un efecto de selección.",
+              "note": "Introduce una explicación alternativa."
+            },
+            {
+              "english": "The finding has yet to be independently replicated.",
+              "spanish": "El hallazgo aún no se ha replicado de forma independiente.",
+              "note": "Señala la necesidad de reproducibilidad."
+            }
+          ],
+          "grammar": [
+            {
+              "english": "Had the sample been drawn randomly, the findings might have been more robust.",
+              "spanish": "Si la muestra se hubiera seleccionado al azar, los resultados podrían haber sido más sólidos.",
+              "note": "Inversión condicional mixta."
+            },
+            {
+              "english": "Only when the data are disaggregated does the disparity become apparent.",
+              "spanish": "Solo cuando se desglosan los datos se hace patente la disparidad.",
+              "note": "Inversión tras only."
+            }
+          ],
+          "reading": [
+            {
+              "english": "A finding may be internally consistent yet fail to generalise beyond the population studied.",
+              "spanish": "Un hallazgo puede ser internamente coherente y aun así no generalizarse más allá de la población estudiada.",
+              "note": "Distingue validez interna y externa."
+            }
+          ],
+          "writing": [
+            {
+              "english": "The results warrant cautious interpretation until the sampling limitations have been addressed.",
+              "spanish": "Los resultados justifican una interpretación cautelosa hasta que se hayan abordado las limitaciones del muestreo.",
+              "note": "Expresa cautela proporcional."
+            }
+          ],
+          "speaking": [
+            {
+              "english": "Explain why a statistically clear result may have limited external validity.",
+              "spanish": "Explica por qué un resultado estadísticamente claro puede tener una validez externa limitada.",
+              "prompt": "Assess a research claim, identify sampling limitations and explain how far the findings can reasonably be generalised.",
+              "promptSpanish": "Evalúa una afirmación de investigación, identifica las limitaciones del muestreo y explica hasta dónde pueden generalizarse razonablemente los hallazgos."
+            }
+          ],
+          "listening": [
+            {
+              "english": "The apparent improvement disappeared once the researchers adjusted for the age distribution.",
+              "spanish": "La mejora aparente desapareció cuando los investigadores ajustaron la distribución por edades.",
+              "note": "Escucha cómo una variable de confusión altera la interpretación."
+            }
+          ],
+          "examples": [
+            {
+              "english": "Although the association was replicated, the original sample remained too narrow to justify a population-wide claim.",
+              "spanish": "Aunque se replicó la asociación, la muestra original seguía siendo demasiado limitada para justificar una afirmación sobre toda la población.",
+              "note": "La replicación no corrige por sí sola un muestreo sesgado."
+            }
+          ],
+          "communication": [
+            {
+              "english": "To what extent can these findings be generalised to a population that was not represented in the study?",
+              "spanish": "¿Hasta qué punto pueden generalizarse estos hallazgos a una población que no estuvo representada en el estudio?",
+              "note": "Pregunta por la validez externa."
+            }
+          ]
+        }
+      },
+      "lesson": {
+        "phrases": [
+          {
+            "english": "The sample is not sufficiently representative to support that generalisation.",
+            "spanish": "La muestra no es suficientemente representativa para respaldar esa generalización.",
+            "note": "Limita el alcance de la conclusión."
+          },
+          {
+            "english": "The evidence is suggestive rather than conclusive.",
+            "spanish": "La evidencia es indicativa, no concluyente.",
+            "note": "Distingue indicio de demostración."
+          },
+          {
+            "english": "That pattern may reflect a selection effect.",
+            "spanish": "Ese patrón puede reflejar un efecto de selección.",
+            "note": "Introduce una explicación alternativa."
+          },
+          {
+            "english": "The finding has yet to be independently replicated.",
+            "spanish": "El hallazgo aún no se ha replicado de forma independiente.",
+            "note": "Señala la necesidad de reproducibilidad."
+          }
+        ],
+        "grammar": [
+          {
+            "english": "Had the sample been drawn randomly, the findings might have been more robust.",
+            "spanish": "Si la muestra se hubiera seleccionado al azar, los resultados podrían haber sido más sólidos.",
+            "note": "Inversión condicional mixta."
+          },
+          {
+            "english": "Only when the data are disaggregated does the disparity become apparent.",
+            "spanish": "Solo cuando se desglosan los datos se hace patente la disparidad.",
+            "note": "Inversión tras only."
+          }
+        ],
+        "reading": [
+          {
+            "english": "A finding may be internally consistent yet fail to generalise beyond the population studied.",
+            "spanish": "Un hallazgo puede ser internamente coherente y aun así no generalizarse más allá de la población estudiada.",
+            "note": "Distingue validez interna y externa."
+          }
+        ],
+        "writing": [
+          {
+            "english": "The results warrant cautious interpretation until the sampling limitations have been addressed.",
+            "spanish": "Los resultados justifican una interpretación cautelosa hasta que se hayan abordado las limitaciones del muestreo.",
+            "note": "Expresa cautela proporcional."
+          }
+        ],
+        "speaking": [
+          {
+            "english": "Explain why a statistically clear result may have limited external validity.",
+            "spanish": "Explica por qué un resultado estadísticamente claro puede tener una validez externa limitada.",
+            "prompt": "Assess a research claim, identify sampling limitations and explain how far the findings can reasonably be generalised.",
+            "promptSpanish": "Evalúa una afirmación de investigación, identifica las limitaciones del muestreo y explica hasta dónde pueden generalizarse razonablemente los hallazgos."
+          }
+        ],
+        "listening": [
+          {
+            "english": "The apparent improvement disappeared once the researchers adjusted for the age distribution.",
+            "spanish": "La mejora aparente desapareció cuando los investigadores ajustaron la distribución por edades.",
+            "note": "Escucha cómo una variable de confusión altera la interpretación."
+          }
+        ],
+        "examples": [
+          {
+            "english": "Although the association was replicated, the original sample remained too narrow to justify a population-wide claim.",
+            "spanish": "Aunque se replicó la asociación, la muestra original seguía siendo demasiado limitada para justificar una afirmación sobre toda la población.",
+            "note": "La replicación no corrige por sí sola un muestreo sesgado."
+          }
+        ],
+        "communication": [
+          {
+            "english": "To what extent can these findings be generalised to a population that was not represented in the study?",
+            "spanish": "¿Hasta qué punto pueden generalizarse estos hallazgos a una población que no estuvo representada en el estudio?",
+            "note": "Pregunta por la validez externa."
+          }
+        ]
+      }
+    },
+    {
+      "sectionId": "english-c2-m013-practice",
+      "sectionKey": "practice",
+      "position": 2,
+      "title": "practice",
+      "exercise": {
+        "exerciseId": "english-c2-m013-practice-exercise",
+        "type": "mixed_practice",
+        "items": [
+          {
+            "itemId": "english-c2-m013-practice-1",
+            "position": 1,
+            "taskType": "pragmatic_choice",
+            "prompt": "A survey about public transport is distributed only through a commuter app. What is the main limitation?",
+            "options": [
+              "The sampling frame may exclude people who do not use the app.",
+              "This proves the claim universally.",
+              "The evidence is irrelevant."
+            ],
+            "answer": "The sampling frame may exclude people who do not use the app.",
+            "evaluation": {
+              "type": "single_choice"
+            }
+          },
+          {
+            "itemId": "english-c2-m013-practice-2",
+            "position": 2,
+            "taskType": "pragmatic_choice",
+            "prompt": "A study reports a strong association between screen time and poor sleep. What is still needed before claiming causation?",
+            "options": [
+              "Evidence that addresses confounding variables and alternative explanations.",
+              "This proves the claim universally.",
+              "The evidence is irrelevant."
+            ],
+            "answer": "Evidence that addresses confounding variables and alternative explanations.",
+            "evaluation": {
+              "type": "single_choice"
+            }
+          },
+          {
+            "itemId": "english-c2-m013-practice-3",
+            "position": 3,
+            "taskType": "pragmatic_choice",
+            "prompt": "Which statement is best supported by a study conducted in three urban hospitals?",
+            "options": [
+              "The findings describe the participating hospitals; wider applicability requires further evidence.",
+              "This proves the claim universally.",
+              "The evidence is irrelevant."
+            ],
+            "answer": "The findings describe the participating hospitals; wider applicability requires further evidence.",
+            "evaluation": {
+              "type": "single_choice"
+            }
+          },
+          {
+            "itemId": "english-c2-m013-practice-4",
+            "position": 4,
+            "taskType": "pragmatic_choice",
+            "prompt": "A second team reproduces a result using the same narrow recruitment method. What remains unresolved?",
+            "options": [
+              "Whether the finding generalises beyond the original sampling frame.",
+              "This proves the claim universally.",
+              "The evidence is irrelevant."
+            ],
+            "answer": "Whether the finding generalises beyond the original sampling frame.",
+            "evaluation": {
+              "type": "single_choice"
+            }
+          },
+          {
+            "itemId": "english-c2-m013-practice-5",
+            "position": 5,
+            "taskType": "pragmatic_choice",
+            "prompt": "Why might a very large sample still be unrepresentative?",
+            "options": [
+              "Its size does not correct systematic selection bias.",
+              "This proves the claim universally.",
+              "The evidence is irrelevant."
+            ],
+            "answer": "Its size does not correct systematic selection bias.",
+            "evaluation": {
+              "type": "single_choice"
+            }
+          },
+          {
+            "itemId": "english-c2-m013-practice-6",
+            "position": 6,
+            "taskType": "pragmatic_choice",
+            "prompt": "What does external validity concern?",
+            "options": [
+              "Whether findings can reasonably apply beyond the specific study conditions.",
+              "This proves the claim universally.",
+              "The evidence is irrelevant."
+            ],
+            "answer": "Whether findings can reasonably apply beyond the specific study conditions.",
+            "evaluation": {
+              "type": "single_choice"
+            }
+          },
+          {
+            "itemId": "english-c2-m013-practice-7",
+            "position": 7,
+            "taskType": "pragmatic_choice",
+            "prompt": "A result is statistically significant but the effect is negligible. Which distinction matters?",
+            "options": [
+              "Statistical significance does not by itself establish practical importance.",
+              "This proves the claim universally.",
+              "The evidence is irrelevant."
+            ],
+            "answer": "Statistical significance does not by itself establish practical importance.",
+            "evaluation": {
+              "type": "single_choice"
+            }
+          },
+          {
+            "itemId": "english-c2-m013-practice-8",
+            "position": 8,
+            "taskType": "pragmatic_choice",
+            "prompt": "Which evidence best corroborates a contested finding?",
+            "options": [
+              "Independent evidence gathered with a suitable method in a distinct setting.",
+              "This proves the claim universally.",
+              "The evidence is irrelevant."
+            ],
+            "answer": "Independent evidence gathered with a suitable method in a distinct setting.",
+            "evaluation": {
+              "type": "single_choice"
+            }
+          },
+          {
+            "itemId": "english-c2-m013-practice-9",
+            "position": 9,
+            "taskType": "pragmatic_choice",
+            "prompt": "A national claim is based on one specialist institution. What is the most defensible response?",
+            "options": [
+              "The institution may not represent the wider population.",
+              "This proves the claim universally.",
+              "The evidence is irrelevant."
+            ],
+            "answer": "The institution may not represent the wider population.",
+            "evaluation": {
+              "type": "single_choice"
+            }
+          },
+          {
+            "itemId": "english-c2-m013-practice-10",
+            "position": 10,
+            "taskType": "pragmatic_choice",
+            "prompt": "Which conclusion is most proportionate after one exploratory study?",
+            "options": [
+              "The pattern merits further investigation but should not yet be treated as established.",
+              "This proves the claim universally.",
+              "The evidence is irrelevant."
+            ],
+            "answer": "The pattern merits further investigation but should not yet be treated as established.",
+            "evaluation": {
+              "type": "single_choice"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "sectionId": "english-c2-m013-grammar",
+      "sectionKey": "grammar",
+      "position": 3,
+      "title": "grammar",
+      "exercise": {
+        "exerciseId": "english-c2-m013-grammar-exercise",
+        "type": "grammar",
+        "items": [
+          {
+            "itemId": "english-c2-m013-grammar-1",
+            "position": 1,
+            "taskType": "pragmatic_choice",
+            "prompt": "Choose the correct inversion: “Only after the second sample was analysed ___ the discrepancy become clear.”",
+            "options": [
+              "did",
+              "does",
+              "has"
+            ],
+            "answer": "did",
+            "evaluation": {
+              "type": "single_choice"
+            }
+          },
+          {
+            "itemId": "english-c2-m013-grammar-2",
+            "position": 2,
+            "taskType": "pragmatic_choice",
+            "prompt": "Complete the mixed conditional: “Had the recruitment been broader, the results ___ more widely applicable.”",
+            "options": [
+              "might have been",
+              "will be",
+              "are"
+            ],
+            "answer": "might have been",
+            "evaluation": {
+              "type": "single_choice"
+            }
+          },
+          {
+            "itemId": "english-c2-m013-grammar-3",
+            "position": 3,
+            "taskType": "pragmatic_choice",
+            "prompt": "Choose the correct correlative construction: “The more selective the sample, ___ the generalisation.”",
+            "options": [
+              "the narrower",
+              "narrower",
+              "the narrowest"
+            ],
+            "answer": "the narrower",
+            "evaluation": {
+              "type": "single_choice"
+            }
+          },
+          {
+            "itemId": "english-c2-m013-grammar-4",
+            "position": 4,
+            "taskType": "pragmatic_choice",
+            "prompt": "Complete: “Not until the data were disaggregated ___ the hidden disparity emerge.”",
+            "options": [
+              "did",
+              "was",
+              "has"
+            ],
+            "answer": "did",
+            "evaluation": {
+              "type": "single_choice"
+            }
+          },
+          {
+            "itemId": "english-c2-m013-grammar-5",
+            "position": 5,
+            "taskType": "pragmatic_choice",
+            "prompt": "Choose the concessive form: “___ the apparent consistency, the sample remains unrepresentative.”",
+            "options": [
+              "Despite",
+              "Although of",
+              "Nevertheless of"
+            ],
+            "answer": "Despite",
+            "evaluation": {
+              "type": "single_choice"
+            }
+          },
+          {
+            "itemId": "english-c2-m013-grammar-6",
+            "position": 6,
+            "taskType": "pragmatic_choice",
+            "prompt": "Complete: “Were the effect independently replicated, confidence ___ increase.”",
+            "options": [
+              "would",
+              "will",
+              "has"
+            ],
+            "answer": "would",
+            "evaluation": {
+              "type": "single_choice"
+            }
+          },
+          {
+            "itemId": "english-c2-m013-grammar-7",
+            "position": 7,
+            "taskType": "pragmatic_choice",
+            "prompt": "Choose the accurate reporting verb: “The data ___ a modest association, not a causal link.”",
+            "options": [
+              "indicate",
+              "insist",
+              "allege"
+            ],
+            "answer": "indicate",
+            "evaluation": {
+              "type": "single_choice"
+            }
+          },
+          {
+            "itemId": "english-c2-m013-grammar-8",
+            "position": 8,
+            "taskType": "pragmatic_choice",
+            "prompt": "Complete: “The findings are consistent ___ the hypothesis.”",
+            "options": [
+              "with",
+              "to",
+              "for"
+            ],
+            "answer": "with",
+            "evaluation": {
+              "type": "single_choice"
+            }
+          },
+          {
+            "itemId": "english-c2-m013-grammar-9",
+            "position": 9,
+            "taskType": "pragmatic_choice",
+            "prompt": "Choose the correct inversion: “Rarely ___ a single study justify such a sweeping claim.”",
+            "options": [
+              "does",
+              "do",
+              "is"
+            ],
+            "answer": "does",
+            "evaluation": {
+              "type": "single_choice"
+            }
+          },
+          {
+            "itemId": "english-c2-m013-grammar-10",
+            "position": 10,
+            "taskType": "pragmatic_choice",
+            "prompt": "Complete: “The claim should be qualified ___ the sample was self-selected.”",
+            "options": [
+              "insofar as",
+              "despite",
+              "whereas"
+            ],
+            "answer": "insofar as",
+            "evaluation": {
+              "type": "single_choice"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "sectionId": "english-c2-m013-pronunciation",
+      "sectionKey": "pronunciation",
+      "position": 4,
+      "title": "pronunciation",
+      "exercise": {
+        "exerciseId": "english-c2-m013-pronunciation-exercise",
+        "type": "pronunciation_cards",
+        "items": [
+          {
+            "itemId": "english-c2-m013-pronunciation-1",
+            "position": 1,
+            "word": "generalisability",
+            "translation": "posibilidad de generalización",
+            "pronunciationGuide": "jen-er-a-li-ZA-bi-li-ti",
+            "audio": "tts:en-GB"
+          },
+          {
+            "itemId": "english-c2-m013-pronunciation-2",
+            "position": 2,
+            "word": "representative sample",
+            "translation": "muestra representativa",
+            "pronunciationGuide": "rep-ri-ZEN-ta-tiv SÁM-pol",
+            "audio": "tts:en-GB"
+          },
+          {
+            "itemId": "english-c2-m013-pronunciation-3",
+            "position": 3,
+            "word": "sampling bias",
+            "translation": "sesgo de muestreo",
+            "pronunciationGuide": "SÁM-pling BÁI-as",
+            "audio": "tts:en-GB"
+          },
+          {
+            "itemId": "english-c2-m013-pronunciation-4",
+            "position": 4,
+            "word": "confounding variable",
+            "translation": "variable de confusión",
+            "pronunciationGuide": "kon-FÁUN-ding VÉ-ri-a-bol",
+            "audio": "tts:en-GB"
+          },
+          {
+            "itemId": "english-c2-m013-pronunciation-5",
+            "position": 5,
+            "word": "corroboration",
+            "translation": "corroboración",
+            "pronunciationGuide": "ko-ro-bo-RÉI-shon",
+            "audio": "tts:en-GB"
+          },
+          {
+            "itemId": "english-c2-m013-pronunciation-6",
+            "position": 6,
+            "word": "anecdotal evidence",
+            "translation": "evidencia anecdótica",
+            "pronunciationGuide": "an-ik-DÓU-tal É-vi-dens",
+            "audio": "tts:en-GB"
+          },
+          {
+            "itemId": "english-c2-m013-pronunciation-7",
+            "position": 7,
+            "word": "external validity",
+            "translation": "validez externa",
+            "pronunciationGuide": "eks-TÉR-nal va-LÍ-di-ti",
+            "audio": "tts:en-GB"
+          },
+          {
+            "itemId": "english-c2-m013-pronunciation-8",
+            "position": 8,
+            "word": "selection effect",
+            "translation": "efecto de selección",
+            "pronunciationGuide": "si-LEK-shon i-FEKT",
+            "audio": "tts:en-GB"
+          },
+          {
+            "itemId": "english-c2-m013-pronunciation-9",
+            "position": 9,
+            "word": "replication",
+            "translation": "replicación",
+            "pronunciationGuide": "rep-li-KÉI-shon",
+            "audio": "tts:en-GB"
+          },
+          {
+            "itemId": "english-c2-m013-pronunciation-10",
+            "position": 10,
+            "word": "evidential threshold",
+            "translation": "umbral probatorio",
+            "pronunciationGuide": "e-vi-DEN-shal THRESH-hould",
+            "audio": "tts:en-GB"
+          }
+        ]
+      }
+    },
+    {
+      "sectionId": "english-c2-m013-reading",
+      "sectionKey": "reading",
+      "position": 5,
+      "title": "reading",
+      "exercise": {
+        "exerciseId": "english-c2-m013-reading-exercise",
+        "type": "reading_comprehension",
+        "items": [
+          {
+            "itemId": "english-c2-m013-reading-1",
+            "position": 1,
+            "taskType": "pragmatic_choice",
+            "prompt": "What prompted the authority's recommendation?",
+            "options": [
+              "A reported reduction in missed appointments during the pilot.",
+              "The programme has been proven to work in every setting.",
+              "The data should be disregarded."
+            ],
+            "answer": "A reported reduction in missed appointments during the pilot.",
+            "evaluation": {
+              "type": "single_choice"
+            }
+          },
+          {
+            "itemId": "english-c2-m013-reading-2",
+            "position": 2,
+            "taskType": "pragmatic_choice",
+            "prompt": "Why was the causal interpretation considered provisional?",
+            "options": [
+              "The participating clinics may have differed in ways that influenced the outcome.",
+              "The programme has been proven to work in every setting.",
+              "The data should be disregarded."
+            ],
+            "answer": "The participating clinics may have differed in ways that influenced the outcome.",
+            "evaluation": {
+              "type": "single_choice"
+            }
+          },
+          {
+            "itemId": "english-c2-m013-reading-3",
+            "position": 3,
+            "taskType": "pragmatic_choice",
+            "prompt": "What does the passage imply about a larger sample?",
+            "options": [
+              "Size alone cannot remedy systematic recruitment bias.",
+              "The programme has been proven to work in every setting.",
+              "The data should be disregarded."
+            ],
+            "answer": "Size alone cannot remedy systematic recruitment bias.",
+            "evaluation": {
+              "type": "single_choice"
+            }
+          },
+          {
+            "itemId": "english-c2-m013-reading-4",
+            "position": 4,
+            "taskType": "pragmatic_choice",
+            "prompt": "Which feature may limit the programme's transferability?",
+            "options": [
+              "The additional training and messaging system may not be available elsewhere.",
+              "The programme has been proven to work in every setting.",
+              "The data should be disregarded."
+            ],
+            "answer": "The additional training and messaging system may not be available elsewhere.",
+            "evaluation": {
+              "type": "single_choice"
+            }
+          },
+          {
+            "itemId": "english-c2-m013-reading-5",
+            "position": 5,
+            "taskType": "pragmatic_choice",
+            "prompt": "What is the central distinction made in the passage?",
+            "options": [
+              "Between the observed result and the broader inference drawn from it.",
+              "The programme has been proven to work in every setting.",
+              "The data should be disregarded."
+            ],
+            "answer": "Between the observed result and the broader inference drawn from it.",
+            "evaluation": {
+              "type": "single_choice"
+            }
+          },
+          {
+            "itemId": "english-c2-m013-reading-6",
+            "position": 6,
+            "taskType": "pragmatic_choice",
+            "prompt": "What would strengthen external validity?",
+            "options": [
+              "Independent replication in settings with varied characteristics.",
+              "The programme has been proven to work in every setting.",
+              "The data should be disregarded."
+            ],
+            "answer": "Independent replication in settings with varied characteristics.",
+            "evaluation": {
+              "type": "single_choice"
+            }
+          },
+          {
+            "itemId": "english-c2-m013-reading-7",
+            "position": 7,
+            "taskType": "pragmatic_choice",
+            "prompt": "Why might volunteer clinics differ from non-participants?",
+            "options": [
+              "They may have more committed managers or greater resources.",
+              "The programme has been proven to work in every setting.",
+              "The data should be disregarded."
+            ],
+            "answer": "They may have more committed managers or greater resources.",
+            "evaluation": {
+              "type": "single_choice"
+            }
+          },
+          {
+            "itemId": "english-c2-m013-reading-8",
+            "position": 8,
+            "taskType": "pragmatic_choice",
+            "prompt": "What conclusion does the writer consider defensible?",
+            "options": [
+              "The pilot was associated with improvement in the participating clinics.",
+              "The programme has been proven to work in every setting.",
+              "The data should be disregarded."
+            ],
+            "answer": "The pilot was associated with improvement in the participating clinics.",
+            "evaluation": {
+              "type": "single_choice"
+            }
+          },
+          {
+            "itemId": "english-c2-m013-reading-9",
+            "position": 9,
+            "taskType": "pragmatic_choice",
+            "prompt": "What is the function of the final paragraph?",
+            "options": [
+              "To offer a carefully qualified conclusion that preserves the value of the findings.",
+              "The programme has been proven to work in every setting.",
+              "The data should be disregarded."
+            ],
+            "answer": "To offer a carefully qualified conclusion that preserves the value of the findings.",
+            "evaluation": {
+              "type": "single_choice"
+            }
+          },
+          {
+            "itemId": "english-c2-m013-reading-10",
+            "position": 10,
+            "taskType": "pragmatic_choice",
+            "prompt": "Which statement best captures the writer's stance?",
+            "options": [
+              "Supportive of further evaluation but critical of claims that exceed the evidence.",
+              "The programme has been proven to work in every setting.",
+              "The data should be disregarded."
+            ],
+            "answer": "Supportive of further evaluation but critical of claims that exceed the evidence.",
+            "evaluation": {
+              "type": "single_choice"
+            }
+          }
+        ],
+        "content": {
+          "passageId": "english-c2-m013-reading-passage",
+          "passage": "A regional health authority announced that a pilot programme had reduced missed appointments by 18 per cent. The headline was compelling, and the report recommended extending the intervention nationally. Yet the evaluation had taken place in four clinics that had volunteered to participate. Their staff had received additional training, and patients had been contacted through a messaging system not available in every region.\n\nThe figures themselves were not disputed. The difficulty lay in the leap from an observed change in those clinics to a claim about the programme's likely effect elsewhere. Clinics that volunteered may have had more committed managers; their patient populations may also have differed from those served by less well-resourced practices. These factors could have influenced the outcome independently of the intervention. Without a comparison capable of addressing such differences, the causal interpretation remained provisional.\n\nNor would a larger sample necessarily settle the matter if recruitment continued to favour clinics with similar characteristics. Representativeness concerns how cases enter a study, not merely how many cases it contains. Independent replication in settings with different staffing levels, patient profiles and communication systems would provide a stronger test of external validity.\n\nA defensible conclusion would therefore be narrower: the pilot was associated with fewer missed appointments in the participating clinics and merits further evaluation under varied conditions. Such wording does not diminish the result. It distinguishes what was observed from what is being inferred, preserving the practical value of the evidence without overstating its reach."
+        }
+      }
+    },
+    {
+      "sectionId": "english-c2-m013-writing",
+      "sectionKey": "writing",
+      "position": 6,
+      "title": "writing",
+      "exercise": {
+        "exerciseId": "english-c2-m013-writing-exercise",
+        "type": "dictation",
+        "items": [
+          {
+            "itemId": "english-c2-m013-writing-1",
+            "position": 1,
+            "audio": "tts:en-GB",
+            "audioLocale": "en-GB",
+            "kind": "sentence",
+            "repeatCount": 3,
+            "segments": [
+              {
+                "segmentId": "english-c2-m013-writing-1-segment",
+                "text": "The sample was drawn from a narrow recruitment pool."
+              }
+            ],
+            "expectedAnswer": "The sample was drawn from a narrow recruitment pool.",
+            "evaluation": {
+              "type": "normalised_text"
+            }
+          },
+          {
+            "itemId": "english-c2-m013-writing-2",
+            "position": 2,
+            "audio": "tts:en-GB",
+            "audioLocale": "en-GB",
+            "kind": "sentence",
+            "repeatCount": 3,
+            "segments": [
+              {
+                "segmentId": "english-c2-m013-writing-2-segment",
+                "text": "Statistical significance does not guarantee practical importance."
+              }
+            ],
+            "expectedAnswer": "Statistical significance does not guarantee practical importance.",
+            "evaluation": {
+              "type": "normalised_text"
+            }
+          },
+          {
+            "itemId": "english-c2-m013-writing-3",
+            "position": 3,
+            "audio": "tts:en-GB",
+            "audioLocale": "en-GB",
+            "kind": "sentence",
+            "repeatCount": 3,
+            "segments": [
+              {
+                "segmentId": "english-c2-m013-writing-3-segment",
+                "text": "The findings should not be extrapolated without further evidence."
+              }
+            ],
+            "expectedAnswer": "The findings should not be extrapolated without further evidence.",
+            "evaluation": {
+              "type": "normalised_text"
+            }
+          },
+          {
+            "itemId": "english-c2-m013-writing-4",
+            "position": 4,
+            "audio": "tts:en-GB",
+            "audioLocale": "en-GB",
+            "kind": "sentence",
+            "repeatCount": 3,
+            "segments": [
+              {
+                "segmentId": "english-c2-m013-writing-4-segment",
+                "text": "Independent replication would strengthen confidence in the observed pattern."
+              }
+            ],
+            "expectedAnswer": "Independent replication would strengthen confidence in the observed pattern.",
+            "evaluation": {
+              "type": "normalised_text"
+            }
+          },
+          {
+            "itemId": "english-c2-m013-writing-5",
+            "position": 5,
+            "audio": "tts:en-GB",
+            "audioLocale": "en-GB",
+            "kind": "sentence",
+            "repeatCount": 3,
+            "segments": [
+              {
+                "segmentId": "english-c2-m013-writing-5-segment",
+                "text": "Self-selection may have introduced a systematic bias."
+              }
+            ],
+            "expectedAnswer": "Self-selection may have introduced a systematic bias.",
+            "evaluation": {
+              "type": "normalised_text"
+            }
+          },
+          {
+            "itemId": "english-c2-m013-writing-6",
+            "position": 6,
+            "audio": "tts:en-GB",
+            "audioLocale": "en-GB",
+            "kind": "sentence",
+            "repeatCount": 3,
+            "segments": [
+              {
+                "segmentId": "english-c2-m013-writing-6-segment",
+                "text": "The study's external validity remains an open question."
+              }
+            ],
+            "expectedAnswer": "The study's external validity remains an open question.",
+            "evaluation": {
+              "type": "normalised_text"
+            }
+          },
+          {
+            "itemId": "english-c2-m013-writing-7",
+            "position": 7,
+            "audio": "tts:en-GB",
+            "audioLocale": "en-GB",
+            "kind": "sentence",
+            "repeatCount": 3,
+            "segments": [
+              {
+                "segmentId": "english-c2-m013-writing-7-segment",
+                "text": "The apparent effect diminished after the researchers adjusted for age."
+              }
+            ],
+            "expectedAnswer": "The apparent effect diminished after the researchers adjusted for age.",
+            "evaluation": {
+              "type": "normalised_text"
+            }
+          },
+          {
+            "itemId": "english-c2-m013-writing-8",
+            "position": 8,
+            "audio": "tts:en-GB",
+            "audioLocale": "en-GB",
+            "kind": "sentence",
+            "repeatCount": 3,
+            "segments": [
+              {
+                "segmentId": "english-c2-m013-writing-8-segment",
+                "text": "A larger sample cannot compensate for a flawed sampling frame."
+              }
+            ],
+            "expectedAnswer": "A larger sample cannot compensate for a flawed sampling frame.",
+            "evaluation": {
+              "type": "normalised_text"
+            }
+          },
+          {
+            "itemId": "english-c2-m013-writing-9",
+            "position": 9,
+            "audio": "tts:en-GB",
+            "audioLocale": "en-GB",
+            "kind": "sentence",
+            "repeatCount": 3,
+            "segments": [
+              {
+                "segmentId": "english-c2-m013-writing-9-segment",
+                "text": "The evidence supports a qualified conclusion rather than a universal claim."
+              }
+            ],
+            "expectedAnswer": "The evidence supports a qualified conclusion rather than a universal claim.",
+            "evaluation": {
+              "type": "normalised_text"
+            }
+          },
+          {
+            "itemId": "english-c2-m013-writing-10",
+            "position": 10,
+            "audio": "tts:en-GB",
+            "audioLocale": "en-GB",
+            "kind": "sentence",
+            "repeatCount": 3,
+            "segments": [
+              {
+                "segmentId": "english-c2-m013-writing-10-segment",
+                "text": "Further research should include groups that were absent from the original study."
+              }
+            ],
+            "expectedAnswer": "Further research should include groups that were absent from the original study.",
+            "evaluation": {
+              "type": "normalised_text"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "sectionId": "english-c2-m013-speaking",
+      "sectionKey": "speaking",
+      "position": 7,
+      "title": "speaking",
+      "exercise": {
+        "exerciseId": "english-c2-m013-speaking-exercise",
+        "type": "speaking_prompts",
+        "items": [
+          {
+            "itemId": "english-c2-m013-speaking-1",
+            "position": 1,
+            "prompt": "Explain how a self-selected sample can distort a research finding.",
+            "modelAnswer": "A well-calibrated response identifies the population and sampling method, distinguishes the observed pattern from the proposed explanation, considers plausible sources of bias and states what additional evidence would be needed before extending the conclusion. The strength of the claim should remain proportionate to the scope and quality of the data.",
+            "evaluation": {
+              "type": "rubric",
+              "transcriptionSeparateFromPronunciation": true
+            }
+          },
+          {
+            "itemId": "english-c2-m013-speaking-2",
+            "position": 2,
+            "prompt": "Distinguish statistical significance from practical importance using an example.",
+            "modelAnswer": "A well-calibrated response identifies the population and sampling method, distinguishes the observed pattern from the proposed explanation, considers plausible sources of bias and states what additional evidence would be needed before extending the conclusion. The strength of the claim should remain proportionate to the scope and quality of the data.",
+            "evaluation": {
+              "type": "rubric",
+              "transcriptionSeparateFromPronunciation": true
+            }
+          },
+          {
+            "itemId": "english-c2-m013-speaking-3",
+            "position": 3,
+            "prompt": "Assess whether a finding from one institution can be generalised nationally.",
+            "modelAnswer": "A well-calibrated response identifies the population and sampling method, distinguishes the observed pattern from the proposed explanation, considers plausible sources of bias and states what additional evidence would be needed before extending the conclusion. The strength of the claim should remain proportionate to the scope and quality of the data.",
+            "evaluation": {
+              "type": "rubric",
+              "transcriptionSeparateFromPronunciation": true
+            }
+          },
+          {
+            "itemId": "english-c2-m013-speaking-4",
+            "position": 4,
+            "prompt": "Describe how confounding variables can weaken a causal claim.",
+            "modelAnswer": "A well-calibrated response identifies the population and sampling method, distinguishes the observed pattern from the proposed explanation, considers plausible sources of bias and states what additional evidence would be needed before extending the conclusion. The strength of the claim should remain proportionate to the scope and quality of the data.",
+            "evaluation": {
+              "type": "rubric",
+              "transcriptionSeparateFromPronunciation": true
+            }
+          },
+          {
+            "itemId": "english-c2-m013-speaking-5",
+            "position": 5,
+            "prompt": "Explain why replication does not automatically establish external validity.",
+            "modelAnswer": "A well-calibrated response identifies the population and sampling method, distinguishes the observed pattern from the proposed explanation, considers plausible sources of bias and states what additional evidence would be needed before extending the conclusion. The strength of the claim should remain proportionate to the scope and quality of the data.",
+            "evaluation": {
+              "type": "rubric",
+              "transcriptionSeparateFromPronunciation": true
+            }
+          },
+          {
+            "itemId": "english-c2-m013-speaking-6",
+            "position": 6,
+            "prompt": "Present the strongest case for a promising result while qualifying its limitations.",
+            "modelAnswer": "A well-calibrated response identifies the population and sampling method, distinguishes the observed pattern from the proposed explanation, considers plausible sources of bias and states what additional evidence would be needed before extending the conclusion. The strength of the claim should remain proportionate to the scope and quality of the data.",
+            "evaluation": {
+              "type": "rubric",
+              "transcriptionSeparateFromPronunciation": true
+            }
+          },
+          {
+            "itemId": "english-c2-m013-speaking-7",
+            "position": 7,
+            "prompt": "Compare anecdotal evidence with systematic evidence in a public debate.",
+            "modelAnswer": "A well-calibrated response identifies the population and sampling method, distinguishes the observed pattern from the proposed explanation, considers plausible sources of bias and states what additional evidence would be needed before extending the conclusion. The strength of the claim should remain proportionate to the scope and quality of the data.",
+            "evaluation": {
+              "type": "rubric",
+              "transcriptionSeparateFromPronunciation": true
+            }
+          },
+          {
+            "itemId": "english-c2-m013-speaking-8",
+            "position": 8,
+            "prompt": "Recommend a follow-up study that addresses an identified sampling weakness.",
+            "modelAnswer": "A well-calibrated response identifies the population and sampling method, distinguishes the observed pattern from the proposed explanation, considers plausible sources of bias and states what additional evidence would be needed before extending the conclusion. The strength of the claim should remain proportionate to the scope and quality of the data.",
+            "evaluation": {
+              "type": "rubric",
+              "transcriptionSeparateFromPronunciation": true
+            }
+          },
+          {
+            "itemId": "english-c2-m013-speaking-9",
+            "position": 9,
+            "prompt": "Respond diplomatically to a colleague who has overstated a research conclusion.",
+            "modelAnswer": "A well-calibrated response identifies the population and sampling method, distinguishes the observed pattern from the proposed explanation, considers plausible sources of bias and states what additional evidence would be needed before extending the conclusion. The strength of the claim should remain proportionate to the scope and quality of the data.",
+            "evaluation": {
+              "type": "rubric",
+              "transcriptionSeparateFromPronunciation": true
+            }
+          },
+          {
+            "itemId": "english-c2-m013-speaking-10",
+            "position": 10,
+            "prompt": "Summarise a complex study for a non-specialist audience without exaggerating its implications.",
+            "modelAnswer": "A well-calibrated response identifies the population and sampling method, distinguishes the observed pattern from the proposed explanation, considers plausible sources of bias and states what additional evidence would be needed before extending the conclusion. The strength of the claim should remain proportionate to the scope and quality of the data.",
+            "evaluation": {
+              "type": "rubric",
+              "transcriptionSeparateFromPronunciation": true
+            }
+          }
+        ]
+      }
+    },
+    {
+      "sectionId": "english-c2-m013-listening",
+      "sectionKey": "listening",
+      "position": 8,
+      "title": "listening",
+      "exercise": {
+        "exerciseId": "english-c2-m013-listening-exercise",
+        "type": "listening_gap_fill",
+        "items": [
+          {
+            "itemId": "english-c2-m013-listening-1",
+            "position": 1,
+            "gapToken": "[[gap-01]]",
+            "expectedWordId": "english-c2-m013-listening-word-1"
+          },
+          {
+            "itemId": "english-c2-m013-listening-2",
+            "position": 2,
+            "gapToken": "[[gap-02]]",
+            "expectedWordId": "english-c2-m013-listening-word-2"
+          },
+          {
+            "itemId": "english-c2-m013-listening-3",
+            "position": 3,
+            "gapToken": "[[gap-03]]",
+            "expectedWordId": "english-c2-m013-listening-word-3"
+          },
+          {
+            "itemId": "english-c2-m013-listening-4",
+            "position": 4,
+            "gapToken": "[[gap-04]]",
+            "expectedWordId": "english-c2-m013-listening-word-4"
+          },
+          {
+            "itemId": "english-c2-m013-listening-5",
+            "position": 5,
+            "gapToken": "[[gap-05]]",
+            "expectedWordId": "english-c2-m013-listening-word-5"
+          },
+          {
+            "itemId": "english-c2-m013-listening-6",
+            "position": 6,
+            "gapToken": "[[gap-06]]",
+            "expectedWordId": "english-c2-m013-listening-word-6"
+          },
+          {
+            "itemId": "english-c2-m013-listening-7",
+            "position": 7,
+            "gapToken": "[[gap-07]]",
+            "expectedWordId": "english-c2-m013-listening-word-7"
+          },
+          {
+            "itemId": "english-c2-m013-listening-8",
+            "position": 8,
+            "gapToken": "[[gap-08]]",
+            "expectedWordId": "english-c2-m013-listening-word-8"
+          },
+          {
+            "itemId": "english-c2-m013-listening-9",
+            "position": 9,
+            "gapToken": "[[gap-09]]",
+            "expectedWordId": "english-c2-m013-listening-word-9"
+          },
+          {
+            "itemId": "english-c2-m013-listening-10",
+            "position": 10,
+            "gapToken": "[[gap-10]]",
+            "expectedWordId": "english-c2-m013-listening-word-10"
+          }
+        ],
+        "content": {
+          "audio": "tts:en-GB",
+          "audioLocale": "en-GB",
+          "audioTranscript": "The evaluation team welcomed the reduction in missed appointments but cautioned against extending the conclusion too far. The clinics had volunteered, and their staffing levels were unusually high. One analyst noted that the sample was therefore unlikely to represent every practice in the region. Another said that the pattern was encouraging, although the study could not rule out other explanations. The team recommended independent replication in a more diverse group of settings before the authority made a national claim.",
+          "transcriptTemplate": "The [[gap-01]] team welcomed the reduction in missed appointments but cautioned against extending the conclusion too far. The clinics had [[gap-02]] and their [[gap-03]] levels were unusually high. One analyst noted that the sample was unlikely to [[gap-04]] every practice in the region. Another said that the pattern was [[gap-05]] although the study could not rule out other [[gap-09]]. The team recommended independent [[gap-06]] in a more [[gap-07]] group of [[gap-08]] before the authority made a [[gap-10]] claim.",
+          "wordBank": [
+            {
+              "wordId": "english-c2-m013-listening-word-1",
+              "word": "evaluation"
+            },
+            {
+              "wordId": "english-c2-m013-listening-word-2",
+              "word": "volunteered"
+            },
+            {
+              "wordId": "english-c2-m013-listening-word-3",
+              "word": "staffing"
+            },
+            {
+              "wordId": "english-c2-m013-listening-word-4",
+              "word": "represent"
+            },
+            {
+              "wordId": "english-c2-m013-listening-word-5",
+              "word": "encouraging"
+            },
+            {
+              "wordId": "english-c2-m013-listening-word-6",
+              "word": "replication"
+            },
+            {
+              "wordId": "english-c2-m013-listening-word-7",
+              "word": "diverse"
+            },
+            {
+              "wordId": "english-c2-m013-listening-word-8",
+              "word": "settings"
+            },
+            {
+              "wordId": "english-c2-m013-listening-word-9",
+              "word": "explanations"
+            },
+            {
+              "wordId": "english-c2-m013-listening-word-10",
+              "word": "national"
+            }
+          ],
+          "interaction": "select_place_move_replace"
+        }
+      }
+    }
+  ]
+}
