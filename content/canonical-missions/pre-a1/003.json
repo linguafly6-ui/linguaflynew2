@@ -514,9 +514,9 @@
           ],
           "listening": [
             {
-              "english": "At school, Ana and Leo talk. Ana: Hello, Leo. How are you? Leo: I'm fine. And you? Ana: I'm good. Leo: Very well. Ana: I'm very happy today. Leo: I'm tired today. Ana: I'm OK. Leo: Not bad. Ana: Great!",
-              "spanish": "En la escuela, Ana y Leo hablan. Ana: Hola, Leo. ¿Cómo estás? Leo: Estoy bien. ¿Y tú? Ana: Estoy bien. Leo: Muy bien. Ana: Estoy muy feliz hoy. Leo: Estoy cansado hoy. Ana: Estoy bien. Leo: No estoy mal. Ana: ¡Genial!",
-              "note": "Texto contextual y transcripción sincronizados con la actividad de Listening; el vocabulario objetivo se presenta previamente en Explore."
+              "english": "At school, Ana and Leo talk. Ana: Hello, Leo! How are you? Leo: I'm tired. Ana: I'm happy. Leo: And you? Ana: I'm fine. Leo: I'm good too. Ana: Very well! Leo: Not bad. Ana: Great!",
+              "spanish": "En la escuela, Ana y Leo hablan. Ana: ¡Hola, Leo! ¿Cómo estás? Leo: Estoy cansado. Ana: Estoy feliz. Leo: ¿Y tú? Ana: Estoy bien. Leo: Yo también estoy bien. Ana: ¡Muy bien! Leo: No estoy mal. Ana: ¡Genial!",
+              "note": "Texto narrativo contextual; el audio reproduce el diálogo completo y pronuncia también las diez respuestas ocultas en la transcripción."
             }
           ]
         },
@@ -1601,10 +1601,10 @@
         "exerciseId": "english-pre-a1-m003-listening-ex01",
         "type": "listening_gap_fill",
         "content": {
-          "audio": "tts:en-GB:At school, Ana and Leo talk. Ana: Hello, Leo. How are you? Leo: I'm fine. And you? Ana: I'm good. Leo: Very well. Ana: I'm very happy today. Leo: I'm tired today. Ana: I'm OK. Leo: Not bad. Ana: Great!",
+          "audio": "tts:en-GB:At school, Ana and Leo talk. Ana: Hello, Leo! How are you? Leo: I'm tired. Ana: I'm happy. Leo: And you? Ana: I'm fine. Leo: I'm good too. Ana: Very well! Leo: Not bad. Ana: Great!",
           "audioLocale": "en-GB",
           "audioStatus": "synthetic_pending_review",
-          "transcriptTemplate": "At school, Ana and Leo talk. Ana: Hello, Leo. [[gap-01]] [[gap-02]] [[gap-03]]? Leo: [[gap-04]] [[gap-05]]. [[gap-06]] [[gap-07]]? Ana: I'm [[gap-08]]. Leo: Very well. Ana: I'm very [[gap-09]] today. Leo: I'm [[gap-10]] today. Ana: I'm OK. Leo: Not bad. Ana: Great!",
+          "transcriptTemplate": "At school, Ana and Leo talk. Ana: Hello, Leo! [[gap-01]] [[gap-02]] [[gap-03]]? Leo: [[gap-04]] tired. Ana: I'm happy. Leo: [[gap-05]] [[gap-06]]? Ana: I'm [[gap-07]]. Leo: I'm [[gap-08]] too. Ana: [[gap-09]] well! Leo: [[gap-10]] bad. Ana: Great!",
           "wordBank": [
             {
               "wordId": "english-pre-a1-m003-listening-word-01",
@@ -1624,15 +1624,15 @@
             },
             {
               "wordId": "english-pre-a1-m003-listening-word-05",
-              "word": "fine"
-            },
-            {
-              "wordId": "english-pre-a1-m003-listening-word-06",
               "word": "And"
             },
             {
-              "wordId": "english-pre-a1-m003-listening-word-07",
+              "wordId": "english-pre-a1-m003-listening-word-06",
               "word": "you"
+            },
+            {
+              "wordId": "english-pre-a1-m003-listening-word-07",
+              "word": "fine"
             },
             {
               "wordId": "english-pre-a1-m003-listening-word-08",
@@ -1640,16 +1640,16 @@
             },
             {
               "wordId": "english-pre-a1-m003-listening-word-09",
-              "word": "happy"
+              "word": "Very"
             },
             {
               "wordId": "english-pre-a1-m003-listening-word-10",
-              "word": "tired"
+              "word": "Not"
             }
           ],
           "interaction": "select_place_move_replace",
-          "audioTranscript": "At school, Ana and Leo talk. Ana: Hello, Leo. How are you? Leo: I'm fine. And you? Ana: I'm good. Leo: Very well. Ana: I'm very happy today. Leo: I'm tired today. Ana: I'm OK. Leo: Not bad. Ana: Great!",
-          "translation": "En la escuela, Ana y Leo hablan. Ana: Hola, Leo. ¿Cómo estás? Leo: Estoy bien. ¿Y tú? Ana: Estoy bien. Leo: Muy bien. Ana: Estoy muy feliz hoy. Leo: Estoy cansado hoy. Ana: Estoy bien. Leo: No estoy mal. Ana: ¡Genial!"
+          "audioTranscript": "At school, Ana and Leo talk. Ana: Hello, Leo! How are you? Leo: I'm tired. Ana: I'm happy. Leo: And you? Ana: I'm fine. Leo: I'm good too. Ana: Very well! Leo: Not bad. Ana: Great!",
+          "translation": "En la escuela, Ana y Leo hablan. Ana: ¡Hola, Leo! ¿Cómo estás? Leo: Estoy cansado. Ana: Estoy feliz. Leo: ¿Y tú? Ana: Estoy bien. Leo: Yo también estoy bien. Ana: ¡Muy bien! Leo: No estoy mal. Ana: ¡Genial!"
         },
         "items": [
           {
@@ -1685,21 +1685,21 @@
             "position": 5,
             "gapToken": "[[gap-05]]",
             "expectedWordId": "english-pre-a1-m003-listening-word-05",
-            "answer": "fine"
+            "answer": "And"
           },
           {
             "itemId": "english-pre-a1-m003-listening-ex01-i06",
             "position": 6,
             "gapToken": "[[gap-06]]",
             "expectedWordId": "english-pre-a1-m003-listening-word-06",
-            "answer": "And"
+            "answer": "you"
           },
           {
             "itemId": "english-pre-a1-m003-listening-ex01-i07",
             "position": 7,
             "gapToken": "[[gap-07]]",
             "expectedWordId": "english-pre-a1-m003-listening-word-07",
-            "answer": "you"
+            "answer": "fine"
           },
           {
             "itemId": "english-pre-a1-m003-listening-ex01-i08",
@@ -1713,14 +1713,14 @@
             "position": 9,
             "gapToken": "[[gap-09]]",
             "expectedWordId": "english-pre-a1-m003-listening-word-09",
-            "answer": "happy"
+            "answer": "Very"
           },
           {
             "itemId": "english-pre-a1-m003-listening-ex01-i10",
             "position": 10,
             "gapToken": "[[gap-10]]",
             "expectedWordId": "english-pre-a1-m003-listening-word-10",
-            "answer": "tired"
+            "answer": "Not"
           }
         ]
       }

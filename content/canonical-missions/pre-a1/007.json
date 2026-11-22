@@ -640,9 +640,9 @@
           ],
           "listening": [
             {
-              "english": "At school, a teacher and a student look at a picture. The teacher points to a hat, a house and a hand. The student listens. The teacher says thin, three, thank you and this. At the end, the teacher says ship and sheep, then sit and seat.",
-              "spanish": "En la escuela, un profesor y un alumno miran una imagen. El profesor señala un sombrero, una casa y una mano. El alumno escucha. El profesor dice thin, three, thank you y this. Al final, el profesor dice ship y sheep, y después sit y seat.",
-              "note": "Texto contextual y transcripción sincronizados con la actividad de Listening; el vocabulario objetivo se presenta previamente en Explore."
+              "english": "At school, a teacher and a student look at the picture. Teacher: Look at the picture. Listen and point to a hat, a house and a hand. Student: Yes. Teacher: Listen: thin, three, thank you, this. At the end, the teacher says ship and sheep, then sit and seat.",
+              "spanish": "En la escuela, un profesor y un alumno miran la imagen. Profesor: Mira la imagen. Escucha y señala un sombrero, una casa y una mano. Alumno: Sí. Profesor: Escucha: thin, three, thank you, this. Al final, el profesor dice ship y sheep, y después sit y seat.",
+              "note": "Texto narrativo contextual; el audio reproduce el diálogo completo y pronuncia también las diez respuestas ocultas en la transcripción."
             }
           ]
         },
@@ -1727,55 +1727,55 @@
         "exerciseId": "english-pre-a1-m007-listening-ex01",
         "type": "listening_gap_fill",
         "content": {
-          "audio": "tts:en-GB:At school, a teacher and a student look at a picture. The teacher points to a hat, a house and a hand. The student listens. The teacher says thin, three, thank you and this. At the end, the teacher says ship and sheep, then sit and seat.",
+          "audio": "tts:en-GB:At school, a teacher and a student look at the picture. Teacher: Look at the picture. Listen and point to a hat, a house and a hand. Student: Yes. Teacher: Listen: thin, three, thank you, this. At the end, the teacher says ship and sheep, then sit and seat.",
           "audioLocale": "en-GB",
           "audioStatus": "synthetic_pending_review",
-          "transcriptTemplate": "At school, a teacher and a student look at a picture. The teacher points to a [[gap-01]], a [[gap-02]] and a [[gap-03]]. The student listens. The teacher says [[gap-04]], [[gap-05]], [[gap-06]] you and [[gap-07]]. At the end, the teacher says [[gap-08]] and [[gap-09]], then sit and [[gap-10]].",
+          "transcriptTemplate": "At school, a teacher and a student look at the picture. Teacher: Look at the picture. Listen and point to a [[gap-01]], a [[gap-02]] and a [[gap-03]]. Student: Yes. Teacher: Listen: [[gap-04]], [[gap-05]], [[gap-06]] you, [[gap-07]]. At the end, the teacher says [[gap-08]] and [[gap-09]], then sit and [[gap-10]].",
           "wordBank": [
             {
               "wordId": "english-pre-a1-m007-listening-word-01",
-              "word": "Hat"
+              "word": "hat"
             },
             {
               "wordId": "english-pre-a1-m007-listening-word-02",
-              "word": "House"
+              "word": "house"
             },
             {
               "wordId": "english-pre-a1-m007-listening-word-03",
-              "word": "Hand"
+              "word": "hand"
             },
             {
               "wordId": "english-pre-a1-m007-listening-word-04",
-              "word": "Thin"
+              "word": "thin"
             },
             {
               "wordId": "english-pre-a1-m007-listening-word-05",
-              "word": "Three"
+              "word": "three"
             },
             {
               "wordId": "english-pre-a1-m007-listening-word-06",
-              "word": "Thank"
+              "word": "thank"
             },
             {
               "wordId": "english-pre-a1-m007-listening-word-07",
-              "word": "This"
+              "word": "this"
             },
             {
               "wordId": "english-pre-a1-m007-listening-word-08",
-              "word": "Ship"
+              "word": "ship"
             },
             {
               "wordId": "english-pre-a1-m007-listening-word-09",
-              "word": "Sheep"
+              "word": "sheep"
             },
             {
               "wordId": "english-pre-a1-m007-listening-word-10",
-              "word": "Seat"
+              "word": "seat"
             }
           ],
           "interaction": "select_place_move_replace",
-          "audioTranscript": "At school, a teacher and a student look at a picture. The teacher points to a hat, a house and a hand. The student listens. The teacher says thin, three, thank you and this. At the end, the teacher says ship and sheep, then sit and seat.",
-          "translation": "En la escuela, un profesor y un alumno miran una imagen. El profesor señala un sombrero, una casa y una mano. El alumno escucha. El profesor dice thin, three, thank you y this. Al final, el profesor dice ship y sheep, y después sit y seat."
+          "audioTranscript": "At school, a teacher and a student look at the picture. Teacher: Look at the picture. Listen and point to a hat, a house and a hand. Student: Yes. Teacher: Listen: thin, three, thank you, this. At the end, the teacher says ship and sheep, then sit and seat.",
+          "translation": "En la escuela, un profesor y un alumno miran la imagen. Profesor: Mira la imagen. Escucha y señala un sombrero, una casa y una mano. Alumno: Sí. Profesor: Escucha: thin, three, thank you, this. Al final, el profesor dice ship y sheep, y después sit y seat."
         },
         "items": [
           {
@@ -1783,70 +1783,70 @@
             "position": 1,
             "gapToken": "[[gap-01]]",
             "expectedWordId": "english-pre-a1-m007-listening-word-01",
-            "answer": "Hat"
+            "answer": "hat"
           },
           {
             "itemId": "english-pre-a1-m007-listening-ex01-i02",
             "position": 2,
             "gapToken": "[[gap-02]]",
             "expectedWordId": "english-pre-a1-m007-listening-word-02",
-            "answer": "House"
+            "answer": "house"
           },
           {
             "itemId": "english-pre-a1-m007-listening-ex01-i03",
             "position": 3,
             "gapToken": "[[gap-03]]",
             "expectedWordId": "english-pre-a1-m007-listening-word-03",
-            "answer": "Hand"
+            "answer": "hand"
           },
           {
             "itemId": "english-pre-a1-m007-listening-ex01-i04",
             "position": 4,
             "gapToken": "[[gap-04]]",
             "expectedWordId": "english-pre-a1-m007-listening-word-04",
-            "answer": "Thin"
+            "answer": "thin"
           },
           {
             "itemId": "english-pre-a1-m007-listening-ex01-i05",
             "position": 5,
             "gapToken": "[[gap-05]]",
             "expectedWordId": "english-pre-a1-m007-listening-word-05",
-            "answer": "Three"
+            "answer": "three"
           },
           {
             "itemId": "english-pre-a1-m007-listening-ex01-i06",
             "position": 6,
             "gapToken": "[[gap-06]]",
             "expectedWordId": "english-pre-a1-m007-listening-word-06",
-            "answer": "Thank"
+            "answer": "thank"
           },
           {
             "itemId": "english-pre-a1-m007-listening-ex01-i07",
             "position": 7,
             "gapToken": "[[gap-07]]",
             "expectedWordId": "english-pre-a1-m007-listening-word-07",
-            "answer": "This"
+            "answer": "this"
           },
           {
             "itemId": "english-pre-a1-m007-listening-ex01-i08",
             "position": 8,
             "gapToken": "[[gap-08]]",
             "expectedWordId": "english-pre-a1-m007-listening-word-08",
-            "answer": "Ship"
+            "answer": "ship"
           },
           {
             "itemId": "english-pre-a1-m007-listening-ex01-i09",
             "position": 9,
             "gapToken": "[[gap-09]]",
             "expectedWordId": "english-pre-a1-m007-listening-word-09",
-            "answer": "Sheep"
+            "answer": "sheep"
           },
           {
             "itemId": "english-pre-a1-m007-listening-ex01-i10",
             "position": 10,
             "gapToken": "[[gap-10]]",
             "expectedWordId": "english-pre-a1-m007-listening-word-10",
-            "answer": "Seat"
+            "answer": "seat"
           }
         ]
       }

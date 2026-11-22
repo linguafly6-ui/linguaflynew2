@@ -559,9 +559,9 @@
           ],
           "listening": [
             {
-              "english": "At school, I am a student. I am happy today. My friend is sad. The teacher is calm. A boy is tired. A girl is excited. I am here.",
-              "spanish": "En la escuela, soy estudiante. Hoy estoy feliz. Mi amigo está triste. El profesor está tranquilo. Un niño está cansado. Una niña está emocionada. Estoy aquí.",
-              "note": "Texto contextual y transcripción sincronizados con la actividad de Listening; el vocabulario objetivo se presenta previamente en Explore."
+              "english": "At school, I am a student. I talk to a friend. I say: How are you? The friend is sad. I am happy. The teacher is calm. A boy is tired. A girl is excited. I am here.",
+              "spanish": "En la escuela, soy estudiante. Hablo con un amigo. Digo: ¿Cómo estás? Mi amigo está triste. Estoy feliz. El profesor está tranquilo. Un niño está cansado. Una niña está emocionada. Estoy aquí.",
+              "note": "Texto narrativo contextual; el audio reproduce el diálogo completo y pronuncia también las diez respuestas ocultas en la transcripción."
             }
           ]
         },
@@ -1646,10 +1646,10 @@
         "exerciseId": "english-pre-a1-m008-listening-ex01",
         "type": "listening_gap_fill",
         "content": {
-          "audio": "tts:en-GB:At school, I am a student. I am happy today. My friend is sad. The teacher is calm. A boy is tired. A girl is excited. I am here.",
+          "audio": "tts:en-GB:At school, I am a student. I talk to a friend. I say: How are you? The friend is sad. I am happy. The teacher is calm. A boy is tired. A girl is excited. I am here.",
           "audioLocale": "en-GB",
           "audioStatus": "synthetic_pending_review",
-          "transcriptTemplate": "At school, I am a [[gap-01]]. I am [[gap-02]] today. My [[gap-03]] is [[gap-04]]. The [[gap-05]] is [[gap-06]]. A [[gap-07]] is [[gap-08]]. A [[gap-09]] is [[gap-10]]. I am here.",
+          "transcriptTemplate": "At school, I am a [[gap-01]]. I talk to a [[gap-02]]. I say: How are you? The friend is [[gap-03]]. I am [[gap-04]]. The [[gap-05]] is [[gap-06]]. A [[gap-07]] is [[gap-08]]. A [[gap-09]] is [[gap-10]]. I am here.",
           "wordBank": [
             {
               "wordId": "english-pre-a1-m008-listening-word-01",
@@ -1657,15 +1657,15 @@
             },
             {
               "wordId": "english-pre-a1-m008-listening-word-02",
-              "word": "happy"
-            },
-            {
-              "wordId": "english-pre-a1-m008-listening-word-03",
               "word": "friend"
             },
             {
-              "wordId": "english-pre-a1-m008-listening-word-04",
+              "wordId": "english-pre-a1-m008-listening-word-03",
               "word": "sad"
+            },
+            {
+              "wordId": "english-pre-a1-m008-listening-word-04",
+              "word": "happy"
             },
             {
               "wordId": "english-pre-a1-m008-listening-word-05",
@@ -1693,8 +1693,8 @@
             }
           ],
           "interaction": "select_place_move_replace",
-          "audioTranscript": "At school, I am a student. I am happy today. My friend is sad. The teacher is calm. A boy is tired. A girl is excited. I am here.",
-          "translation": "En la escuela, soy estudiante. Hoy estoy feliz. Mi amigo está triste. El profesor está tranquilo. Un niño está cansado. Una niña está emocionada. Estoy aquí."
+          "audioTranscript": "At school, I am a student. I talk to a friend. I say: How are you? The friend is sad. I am happy. The teacher is calm. A boy is tired. A girl is excited. I am here.",
+          "translation": "En la escuela, soy estudiante. Hablo con un amigo. Digo: ¿Cómo estás? Mi amigo está triste. Estoy feliz. El profesor está tranquilo. Un niño está cansado. Una niña está emocionada. Estoy aquí."
         },
         "items": [
           {
@@ -1709,21 +1709,21 @@
             "position": 2,
             "gapToken": "[[gap-02]]",
             "expectedWordId": "english-pre-a1-m008-listening-word-02",
-            "answer": "happy"
+            "answer": "friend"
           },
           {
             "itemId": "english-pre-a1-m008-listening-ex01-i03",
             "position": 3,
             "gapToken": "[[gap-03]]",
             "expectedWordId": "english-pre-a1-m008-listening-word-03",
-            "answer": "friend"
+            "answer": "sad"
           },
           {
             "itemId": "english-pre-a1-m008-listening-ex01-i04",
             "position": 4,
             "gapToken": "[[gap-04]]",
             "expectedWordId": "english-pre-a1-m008-listening-word-04",
-            "answer": "sad"
+            "answer": "happy"
           },
           {
             "itemId": "english-pre-a1-m008-listening-ex01-i05",

@@ -396,9 +396,9 @@
           ],
           "listening": [
             {
-              "english": "Ana and Leo meet at school. Ana: Hello, Leo! What's your name? Leo: My name is Leo. Ana: My name is Ana. Leo: Hello, Ana! Ana: Hi, Leo! Leo: See you! Ana: Goodbye!",
-              "spanish": "Ana y Leo se encuentran en la escuela. Ana: ¡Hola, Leo! ¿Cómo te llamas? Leo: Me llamo Leo. Ana: Me llamo Ana. Leo: ¡Hola, Ana! Ana: ¡Hola, Leo! Leo: ¡Hasta luego! Ana: ¡Adiós!",
-              "note": "Texto contextual y transcripción sincronizados con la actividad de Listening; el vocabulario objetivo se presenta previamente en Explore."
+              "english": "At school, Ana and Leo meet. Ana: Hello, Leo! Ana: What's your name? Leo: My name is Leo. Leo: What's your name? Ana: My name is Ana. Leo: See you, Ana! Ana: Goodbye, Leo!",
+              "spanish": "En la escuela, Ana y Leo se encuentran. Ana: ¡Hola, Leo! Ana: ¿Cómo te llamas? Leo: Me llamo Leo. Leo: ¿Cómo te llamas? Ana: Me llamo Ana. Leo: ¡Hasta luego, Ana! Ana: ¡Adiós, Leo!",
+              "note": "Texto narrativo contextual; el audio reproduce el diálogo completo y pronuncia también las diez respuestas ocultas en la transcripción."
             }
           ]
         },
@@ -1448,10 +1448,10 @@
         "exerciseId": "english-pre-a1-m002-listening-ex01",
         "type": "listening_gap_fill",
         "content": {
-          "audio": "tts:en-GB:Ana and Leo meet at school. Ana: Hello, Leo! What's your name? Leo: My name is Leo. Ana: My name is Ana. Leo: Hello, Ana! Ana: Hi, Leo! Leo: See you! Ana: Goodbye!",
+          "audio": "tts:en-GB:At school, Ana and Leo meet. Ana: Hello, Leo! Ana: What's your name? Leo: My name is Leo. Leo: What's your name? Ana: My name is Ana. Leo: See you, Ana! Ana: Goodbye, Leo!",
           "audioLocale": "en-GB",
           "audioStatus": "synthetic_pending_review",
-          "transcriptTemplate": "Ana and Leo meet at school. Ana: [[gap-01]], Leo! [[gap-02]] [[gap-03]] [[gap-04]]? Leo: [[gap-05]] name [[gap-06]] Leo. Ana: My name is [[gap-10]]. Leo: Hello, Ana! Ana: Hi, Leo! Leo: [[gap-07]] [[gap-08]]! Ana: [[gap-09]]!",
+          "transcriptTemplate": "At school, Ana and Leo meet. Ana: [[gap-01]], Leo! Ana: [[gap-02]] [[gap-03]] [[gap-04]]? Leo: [[gap-05]] name [[gap-06]] Leo. Leo: What's your name? Ana: My name is [[gap-07]]. Leo: [[gap-08]] [[gap-09]]! Ana: [[gap-10]]!",
           "wordBank": [
             {
               "wordId": "english-pre-a1-m002-listening-word-01",
@@ -1479,24 +1479,24 @@
             },
             {
               "wordId": "english-pre-a1-m002-listening-word-07",
-              "word": "See"
+              "word": "Ana"
             },
             {
               "wordId": "english-pre-a1-m002-listening-word-08",
-              "word": "you"
+              "word": "See"
             },
             {
               "wordId": "english-pre-a1-m002-listening-word-09",
-              "word": "Goodbye"
+              "word": "you"
             },
             {
               "wordId": "english-pre-a1-m002-listening-word-10",
-              "word": "Ana"
+              "word": "Goodbye"
             }
           ],
           "interaction": "select_place_move_replace",
-          "audioTranscript": "Ana and Leo meet at school. Ana: Hello, Leo! What's your name? Leo: My name is Leo. Ana: My name is Ana. Leo: Hello, Ana! Ana: Hi, Leo! Leo: See you! Ana: Goodbye!",
-          "translation": "Ana y Leo se encuentran en la escuela. Ana: ¡Hola, Leo! ¿Cómo te llamas? Leo: Me llamo Leo. Ana: Me llamo Ana. Leo: ¡Hola, Ana! Ana: ¡Hola, Leo! Leo: ¡Hasta luego! Ana: ¡Adiós!"
+          "audioTranscript": "At school, Ana and Leo meet. Ana: Hello, Leo! Ana: What's your name? Leo: My name is Leo. Leo: What's your name? Ana: My name is Ana. Leo: See you, Ana! Ana: Goodbye, Leo!",
+          "translation": "En la escuela, Ana y Leo se encuentran. Ana: ¡Hola, Leo! Ana: ¿Cómo te llamas? Leo: Me llamo Leo. Leo: ¿Cómo te llamas? Ana: Me llamo Ana. Leo: ¡Hasta luego, Ana! Ana: ¡Adiós, Leo!"
         },
         "items": [
           {
@@ -1546,28 +1546,28 @@
             "position": 7,
             "gapToken": "[[gap-07]]",
             "expectedWordId": "english-pre-a1-m002-listening-word-07",
-            "answer": "See"
+            "answer": "Ana"
           },
           {
             "itemId": "english-pre-a1-m002-listening-ex01-i08",
             "position": 8,
             "gapToken": "[[gap-08]]",
             "expectedWordId": "english-pre-a1-m002-listening-word-08",
-            "answer": "you"
+            "answer": "See"
           },
           {
             "itemId": "english-pre-a1-m002-listening-ex01-i09",
             "position": 9,
             "gapToken": "[[gap-09]]",
             "expectedWordId": "english-pre-a1-m002-listening-word-09",
-            "answer": "Goodbye"
+            "answer": "you"
           },
           {
             "itemId": "english-pre-a1-m002-listening-ex01-i10",
             "position": 10,
             "gapToken": "[[gap-10]]",
             "expectedWordId": "english-pre-a1-m002-listening-word-10",
-            "answer": "Ana"
+            "answer": "Goodbye"
           }
         ]
       }

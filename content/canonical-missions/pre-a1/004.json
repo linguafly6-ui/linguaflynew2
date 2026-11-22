@@ -505,9 +505,9 @@
           ],
           "listening": [
             {
-              "english": "Ben needs help at the door. Ben: Excuse me. Ana: Yes? Ben: Help, please. Ana: Here. Ben: Thank you. Ana: You're welcome. Ben: Sorry. Ana: It's OK. Ben: Thanks! Ana: You're welcome!",
-              "spanish": "Ben necesita ayuda en la puerta. Ben: Disculpa. Ana: ¿Sí? Ben: Ayuda, por favor. Ana: Aquí tienes. Ben: Gracias. Ana: De nada. Ben: Lo siento. Ana: No pasa nada. Ben: ¡Gracias! Ana: ¡De nada!",
-              "note": "Texto contextual y transcripción sincronizados con la actividad de Listening; el vocabulario objetivo se presenta previamente en Explore."
+              "english": "At the school door, Ben needs help. Ben: Excuse me. Ana: Yes? Ben: Help, please. Ana: Here! Ben: Thank you. Ana: You're welcome. Leo: Sorry, Ben! Ben: It's OK. Leo: Thanks! Ben: You're welcome!",
+              "spanish": "En la puerta de la escuela, Ben necesita ayuda. Ben: Disculpa. Ana: ¿Sí? Ben: Ayuda, por favor. Ana: ¡Aquí tienes! Ben: Gracias. Ana: De nada. Leo: ¡Lo siento, Ben! Ben: No pasa nada. Leo: ¡Gracias! Ben: ¡De nada!",
+              "note": "Texto narrativo contextual; el audio reproduce el diálogo completo y pronuncia también las diez respuestas ocultas en la transcripción."
             }
           ]
         },
@@ -1592,10 +1592,10 @@
         "exerciseId": "english-pre-a1-m004-listening-ex01",
         "type": "listening_gap_fill",
         "content": {
-          "audio": "tts:en-GB:Ben needs help at the door. Ben: Excuse me. Ana: Yes? Ben: Help, please. Ana: Here. Ben: Thank you. Ana: You're welcome. Ben: Sorry. Ana: It's OK. Ben: Thanks! Ana: You're welcome!",
+          "audio": "tts:en-GB:At the school door, Ben needs help. Ben: Excuse me. Ana: Yes? Ben: Help, please. Ana: Here! Ben: Thank you. Ana: You're welcome. Leo: Sorry, Ben! Ben: It's OK. Leo: Thanks! Ben: You're welcome!",
           "audioLocale": "en-GB",
           "audioStatus": "synthetic_pending_review",
-          "transcriptTemplate": "Ben needs help at the door. Ben: [[gap-01]] [[gap-02]]. Ana: [[gap-03]]? Ben: [[gap-04]], [[gap-05]]. Ana: [[gap-06]]. Ben: [[gap-07]] [[gap-08]]. Ana: You're [[gap-09]]. Ben: [[gap-10]]. Ana: It's OK. Ben: Thanks! Ana: You're welcome!",
+          "transcriptTemplate": "At the school door, Ben needs help. Ben: [[gap-01]] [[gap-02]]. Ana: [[gap-03]]? Ben: [[gap-04]], [[gap-05]]. Ana: [[gap-06]]! Ben: [[gap-07]] [[gap-08]]. Ana: You're welcome. Leo: [[gap-09]], Ben! Ben: It's OK. Leo: Thanks! Ben: You're [[gap-10]]!",
           "wordBank": [
             {
               "wordId": "english-pre-a1-m004-listening-word-01",
@@ -1631,16 +1631,16 @@
             },
             {
               "wordId": "english-pre-a1-m004-listening-word-09",
-              "word": "welcome"
+              "word": "Sorry"
             },
             {
               "wordId": "english-pre-a1-m004-listening-word-10",
-              "word": "Sorry"
+              "word": "welcome"
             }
           ],
           "interaction": "select_place_move_replace",
-          "audioTranscript": "Ben needs help at the door. Ben: Excuse me. Ana: Yes? Ben: Help, please. Ana: Here. Ben: Thank you. Ana: You're welcome. Ben: Sorry. Ana: It's OK. Ben: Thanks! Ana: You're welcome!",
-          "translation": "Ben necesita ayuda en la puerta. Ben: Disculpa. Ana: ¿Sí? Ben: Ayuda, por favor. Ana: Aquí tienes. Ben: Gracias. Ana: De nada. Ben: Lo siento. Ana: No pasa nada. Ben: ¡Gracias! Ana: ¡De nada!"
+          "audioTranscript": "At the school door, Ben needs help. Ben: Excuse me. Ana: Yes? Ben: Help, please. Ana: Here! Ben: Thank you. Ana: You're welcome. Leo: Sorry, Ben! Ben: It's OK. Leo: Thanks! Ben: You're welcome!",
+          "translation": "En la puerta de la escuela, Ben necesita ayuda. Ben: Disculpa. Ana: ¿Sí? Ben: Ayuda, por favor. Ana: ¡Aquí tienes! Ben: Gracias. Ana: De nada. Leo: ¡Lo siento, Ben! Ben: No pasa nada. Leo: ¡Gracias! Ben: ¡De nada!"
         },
         "items": [
           {
@@ -1704,14 +1704,14 @@
             "position": 9,
             "gapToken": "[[gap-09]]",
             "expectedWordId": "english-pre-a1-m004-listening-word-09",
-            "answer": "welcome"
+            "answer": "Sorry"
           },
           {
             "itemId": "english-pre-a1-m004-listening-ex01-i10",
             "position": 10,
             "gapToken": "[[gap-10]]",
             "expectedWordId": "english-pre-a1-m004-listening-word-10",
-            "answer": "Sorry"
+            "answer": "welcome"
           }
         ]
       }
