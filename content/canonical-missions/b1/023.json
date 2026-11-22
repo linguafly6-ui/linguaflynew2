@@ -701,13 +701,13 @@
           {
             "itemId": "english-b1-m023-grammar-01",
             "position": 1,
-            "prompt": "I've ___ three courses this year.",
+            "prompt": "Look at those clouds! It ___ rain.",
             "options": [
-              "completed",
-              "complete",
-              "completing"
+              "is going to",
+              "will to",
+              "is"
             ],
-            "answer": "completed",
+            "answer": "is going to",
             "evaluation": {
               "type": "single_choice"
             }
@@ -715,39 +715,11 @@
           {
             "itemId": "english-b1-m023-grammar-02",
             "position": 2,
-            "prompt": "I ___ my first job in 2021.",
-            "options": [
-              "started",
-              "have start",
-              "have started yesterday"
-            ],
-            "answer": "started",
-            "evaluation": {
-              "type": "single_choice"
-            }
-          },
-          {
-            "itemId": "english-b1-m023-grammar-03",
-            "position": 3,
-            "prompt": "I ___ work late, but now I finish early.",
-            "options": [
-              "used to",
-              "use to",
-              "am used to"
-            ],
-            "answer": "used to",
-            "evaluation": {
-              "type": "single_choice"
-            }
-          },
-          {
-            "itemId": "english-b1-m023-grammar-04",
-            "position": 4,
-            "prompt": "We ___ the manager at ten tomorrow.",
+            "prompt": "We ___ the tutor at 10 tomorrow; it's in the calendar.",
             "options": [
               "are meeting",
-              "meet yesterday",
-              "will meeting"
+              "will meet",
+              "meet yesterday"
             ],
             "answer": "are meeting",
             "evaluation": {
@@ -755,15 +727,43 @@
             }
           },
           {
+            "itemId": "english-b1-m023-grammar-03",
+            "position": 3,
+            "prompt": "The phone is ringing. I ___ answer it.",
+            "options": [
+              "will",
+              "am going",
+              "going to"
+            ],
+            "answer": "will",
+            "evaluation": {
+              "type": "single_choice"
+            }
+          },
+          {
+            "itemId": "english-b1-m023-grammar-04",
+            "position": 4,
+            "prompt": "She has decided: she ___ apply for the course.",
+            "options": [
+              "is going to",
+              "will to",
+              "is"
+            ],
+            "answer": "is going to",
+            "evaluation": {
+              "type": "single_choice"
+            }
+          },
+          {
             "itemId": "english-b1-m023-grammar-05",
             "position": 5,
-            "prompt": "If the train ___ late, we'll take a taxi.",
+            "prompt": "I think the new project ___ be successful.",
             "options": [
-              "is",
-              "will be",
-              "was"
+              "will",
+              "is going",
+              "is being"
             ],
-            "answer": "is",
+            "answer": "will",
             "evaluation": {
               "type": "single_choice"
             }
@@ -771,13 +771,13 @@
           {
             "itemId": "english-b1-m023-grammar-06",
             "position": 6,
-            "prompt": "She said that she ___ busy.",
+            "prompt": "They ___ dinner with the clients on Friday; the table is booked.",
             "options": [
-              "was",
-              "is being",
-              "be"
+              "are having",
+              "will have",
+              "have yesterday"
             ],
-            "answer": "was",
+            "answer": "are having",
             "evaluation": {
               "type": "single_choice"
             }
@@ -785,13 +785,13 @@
           {
             "itemId": "english-b1-m023-grammar-07",
             "position": 7,
-            "prompt": "He asked me where I ___.",
+            "prompt": "Don't worry, I ___ help you with that form.",
             "options": [
-              "worked",
-              "do work",
-              "did worked"
+              "will",
+              "am going",
+              "going to"
             ],
-            "answer": "worked",
+            "answer": "will",
             "evaluation": {
               "type": "single_choice"
             }
@@ -799,13 +799,13 @@
           {
             "itemId": "english-b1-m023-grammar-08",
             "position": 8,
-            "prompt": "As soon as I ___, I'll call you.",
+            "prompt": "He has bought paint because he ___ decorate his office.",
             "options": [
-              "arrive",
-              "will arrive",
-              "arrived"
+              "is going to",
+              "will to",
+              "is"
             ],
-            "answer": "arrive",
+            "answer": "is going to",
             "evaluation": {
               "type": "single_choice"
             }
@@ -813,13 +813,13 @@
           {
             "itemId": "english-b1-m023-grammar-09",
             "position": 9,
-            "prompt": "They ___ the report yesterday.",
+            "prompt": "The train ___ at 7:15 tomorrow morning according to the timetable.",
             "options": [
-              "handed in",
-              "have hand in",
-              "has handed in"
+              "leaves",
+              "is leaving yesterday",
+              "will leaves"
             ],
-            "answer": "handed in",
+            "answer": "leaves",
             "evaluation": {
               "type": "single_choice"
             }
@@ -827,13 +827,13 @@
           {
             "itemId": "english-b1-m023-grammar-10",
             "position": 10,
-            "prompt": "I'll send you the details if anything ___.",
+            "prompt": "We ___ the new schedule with the team next Monday; everyone has confirmed.",
             "options": [
-              "changes",
-              "will change",
-              "changed"
+              "are discussing",
+              "will discussing",
+              "discussed"
             ],
-            "answer": "changes",
+            "answer": "are discussing",
             "evaluation": {
               "type": "single_choice"
             }
