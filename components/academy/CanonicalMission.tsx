@@ -184,6 +184,16 @@ export default function CanonicalMission({ missionData = missionSource as Missio
   const section = mission.sections.find((item) => item.sectionKey === sectionKey) ?? mission.sections[0];
   const activeItems = sectionKey === "practice" ? section.exercise.items.slice(0, 10) : section.exercise.items;
   const item = activeItems[index];
+  // Baraja las opciones por pregunta sin separar la respuesta correcta de su texto.
+  const shuffledOptions = useMemo(() => {
+    if (!item?.options?.length) return [];
+    const options = [...item.options];
+    for (let i = options.length - 1; i > 0; i -= 1) {
+      const j = Math.floor(Math.random() * (i + 1));
+      [options[i], options[j]] = [options[j], options[i]];
+    }
+    return options;
+  }, [item?.itemId, item?.options]);
   const preA1Audio = mission.course.level.toUpperCase() === "PRE-A1" ? { audioTranscript: section.exercise.content?.audioTranscript ?? "", template: section.exercise.content?.transcriptTemplate ?? "", words: (section.exercise.content?.wordBank ?? []).map((entry) => entry.word) } : undefined;
   const listeningAudioTranscript = preA1Audio?.audioTranscript ?? section.exercise.content?.audioTranscript ?? "";
   const listeningTemplate = preA1Audio?.template ?? section.exercise.content?.transcriptTemplate ?? "";
@@ -360,7 +370,7 @@ export default function CanonicalMission({ missionData = missionSource as Missio
           <p className="text-xs font-semibold uppercase tracking-widest text-slate-400">Actividad de pronunciación {index + 1} de {activeItems.length}</p>
           <div className="mt-4 rounded-2xl border border-slate-200 bg-slate-50 p-5"><p className="text-lg font-bold text-slate-900">{item.word}</p><p className="mt-1 text-sm text-slate-600">{item.translation}</p><p className="mt-2 inline-block rounded-lg bg-white px-3 py-2 text-sm font-semibold text-blue-800">{item.pronunciationGuide}</p><p className="mt-2 text-xs text-slate-500">Guía aproximada para hispanohablantes; no es AFI.</p><button type="button" onClick={() => speak(item.word ?? "")} className="mt-3 rounded-xl border border-slate-200 bg-white px-4 py-2.5 text-sm font-semibold">♫ Escuchar modelo británico</button></div>
           <h3 className="mt-5 text-lg font-semibold leading-7">{item.prompt}</h3>
-          <div className="mt-4 grid gap-2">{item.options.map((option) => <button key={option} type="button" disabled={checked} onClick={() => mark(option === item.answer, item.answer ?? "")} className={`rounded-xl border px-4 py-3 text-left text-sm transition disabled:cursor-default ${checked && option === item.answer ? "border-emerald-500 bg-emerald-50" : "border-slate-200 hover:border-blue-400"}`}>{option}</button>)}</div>
+          <div className="mt-4 grid gap-2">{shuffledOptions.map((option) => <button key={option} type="button" disabled={checked} onClick={() => mark(option === item.answer, item.answer ?? "")} className={`rounded-xl border px-4 py-3 text-left text-sm transition disabled:cursor-default ${checked && option === item.answer ? "border-emerald-500 bg-emerald-50" : "border-slate-200 hover:border-blue-400"}`}>{option}</button>)}</div>
         </div> : null}
         {sectionKey === "pronunciation" && !item?.options?.length && <div className="mt-6 grid gap-3 sm:grid-cols-2">{section.exercise.items.map((entry) => <article key={entry.itemId} className="rounded-xl border border-slate-200 p-4"><p className="text-lg font-semibold">{entry.word}</p><p className="text-sm text-slate-500">{entry.translation}</p><p className="mt-2 font-medium text-blue-700">{entry.pronunciationGuide}</p><p className="text-xs text-slate-400">Guía aproximada para hispanohablantes; no es AFI.</p><button onClick={() => speak(entry.word ?? "")} className="mt-3 rounded-lg border border-slate-200 px-3 py-2 text-sm">▶ Escuchar modelo británico</button></article>)}</div>}
         {["practice", "grammar", "reading"].includes(sectionKey) && item && <div className="mt-7"><p className="text-xs font-semibold uppercase tracking-widest text-slate-400">Actividad {index + 1} de {activeItems.length}</p><h3 className="mt-3 text-lg font-semibold leading-7">{item.prompt}</h3>{sectionKey === "grammar" && item.audio && <button type="button" onClick={() => speak(item.audio?.replace(/^tts:[^:]+:/, "") ?? "")} className="mt-4 inline-flex items-center gap-2 rounded-xl border border-blue-200 bg-blue-50 px-4 py-3 text-sm font-semibold text-blue-800">♫ Escuchar nombre de la letra</button>}<div className="mt-5 grid gap-2">{item.options?.map((option) => <button key={option} disabled={checked} onClick={() => mark(option === item.answer, item.answer ?? "")} className={`rounded-xl border px-4 py-3 text-left text-sm transition disabled:cursor-default ${checked && option === item.answer ? "border-emerald-500 bg-emerald-50" : "border-slate-200 hover:border-blue-400"}`}>{option}</button>)}</div></div>}
