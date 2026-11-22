@@ -1604,47 +1604,47 @@
           "audio": "tts:en-GB:Mia asks Ben a question. Mia: True or false? Ben: Maybe. Mia: Correct! Ben: OK. Mia: That's right. Ben: That's wrong? Mia: No. Ben: Again, please. Mia: Repeat, please.",
           "audioLocale": "en-GB",
           "audioStatus": "synthetic_pending_review",
-          "transcriptTemplate": "[[gap-01]] [[gap-02]] [[gap-03]] [[gap-04]] [[gap-05]] [[gap-06]] [[gap-07]] [[gap-08]] [[gap-09]] [[gap-10]]",
+          "transcriptTemplate": "Mia asks Ben a question. Mia: [[gap-01]] or [[gap-02]]? Ben: [[gap-03]]. Mia: [[gap-04]]! Ben: [[gap-05]]. Mia: That's [[gap-06]]. Ben: That's [[gap-07]]? Mia: [[gap-08]]. Ben: [[gap-09]], please. Mia: [[gap-10]], please.",
           "wordBank": [
             {
               "wordId": "english-pre-a1-m005-listening-word-01",
-              "word": "Mia asks Ben a question."
+              "word": "True"
             },
             {
               "wordId": "english-pre-a1-m005-listening-word-02",
-              "word": "Mia: True or false?"
+              "word": "false"
             },
             {
               "wordId": "english-pre-a1-m005-listening-word-03",
-              "word": "Ben: Maybe."
+              "word": "Maybe"
             },
             {
               "wordId": "english-pre-a1-m005-listening-word-04",
-              "word": "Mia: Correct!"
+              "word": "Correct"
             },
             {
               "wordId": "english-pre-a1-m005-listening-word-05",
-              "word": "Ben: OK."
+              "word": "OK"
             },
             {
               "wordId": "english-pre-a1-m005-listening-word-06",
-              "word": "Mia: That's right."
+              "word": "right"
             },
             {
               "wordId": "english-pre-a1-m005-listening-word-07",
-              "word": "Ben: That's wrong?"
+              "word": "wrong"
             },
             {
               "wordId": "english-pre-a1-m005-listening-word-08",
-              "word": "Mia: No."
+              "word": "No"
             },
             {
               "wordId": "english-pre-a1-m005-listening-word-09",
-              "word": "Ben: Again, please."
+              "word": "Again"
             },
             {
               "wordId": "english-pre-a1-m005-listening-word-10",
-              "word": "Mia: Repeat, please."
+              "word": "Repeat"
             }
           ],
           "interaction": "select_place_move_replace",
@@ -1657,70 +1657,70 @@
             "position": 1,
             "gapToken": "[[gap-01]]",
             "expectedWordId": "english-pre-a1-m005-listening-word-01",
-            "answer": "Mia asks Ben a question."
+            "answer": "True"
           },
           {
             "itemId": "english-pre-a1-m005-listening-ex01-i02",
             "position": 2,
             "gapToken": "[[gap-02]]",
             "expectedWordId": "english-pre-a1-m005-listening-word-02",
-            "answer": "Mia: True or false?"
+            "answer": "false"
           },
           {
             "itemId": "english-pre-a1-m005-listening-ex01-i03",
             "position": 3,
             "gapToken": "[[gap-03]]",
             "expectedWordId": "english-pre-a1-m005-listening-word-03",
-            "answer": "Ben: Maybe."
+            "answer": "Maybe"
           },
           {
             "itemId": "english-pre-a1-m005-listening-ex01-i04",
             "position": 4,
             "gapToken": "[[gap-04]]",
             "expectedWordId": "english-pre-a1-m005-listening-word-04",
-            "answer": "Mia: Correct!"
+            "answer": "Correct"
           },
           {
             "itemId": "english-pre-a1-m005-listening-ex01-i05",
             "position": 5,
             "gapToken": "[[gap-05]]",
             "expectedWordId": "english-pre-a1-m005-listening-word-05",
-            "answer": "Ben: OK."
+            "answer": "OK"
           },
           {
             "itemId": "english-pre-a1-m005-listening-ex01-i06",
             "position": 6,
             "gapToken": "[[gap-06]]",
             "expectedWordId": "english-pre-a1-m005-listening-word-06",
-            "answer": "Mia: That's right."
+            "answer": "right"
           },
           {
             "itemId": "english-pre-a1-m005-listening-ex01-i07",
             "position": 7,
             "gapToken": "[[gap-07]]",
             "expectedWordId": "english-pre-a1-m005-listening-word-07",
-            "answer": "Ben: That's wrong?"
+            "answer": "wrong"
           },
           {
             "itemId": "english-pre-a1-m005-listening-ex01-i08",
             "position": 8,
             "gapToken": "[[gap-08]]",
             "expectedWordId": "english-pre-a1-m005-listening-word-08",
-            "answer": "Mia: No."
+            "answer": "No"
           },
           {
             "itemId": "english-pre-a1-m005-listening-ex01-i09",
             "position": 9,
             "gapToken": "[[gap-09]]",
             "expectedWordId": "english-pre-a1-m005-listening-word-09",
-            "answer": "Ben: Again, please."
+            "answer": "Again"
           },
           {
             "itemId": "english-pre-a1-m005-listening-ex01-i10",
             "position": 10,
             "gapToken": "[[gap-10]]",
             "expectedWordId": "english-pre-a1-m005-listening-word-10",
-            "answer": "Mia: Repeat, please."
+            "answer": "Repeat"
           }
         ]
       }

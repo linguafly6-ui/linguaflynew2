@@ -1685,47 +1685,47 @@
           "audio": "tts:en-GB:Teacher: Look at the picture. Student: Hat? Teacher: Yes, a hat. Student: House? Teacher: Yes, a house. Student: Hand? Teacher: Yes, a hand. Teacher: Three sheep. Student: Ship? Teacher: No, sheep. Listen: ship and sheep.",
           "audioLocale": "en-GB",
           "audioStatus": "synthetic_pending_review",
-          "transcriptTemplate": "[[gap-01]] [[gap-02]] [[gap-03]] [[gap-04]] [[gap-05]] [[gap-06]] [[gap-07]] [[gap-08]] [[gap-09]] [[gap-10]]",
+          "transcriptTemplate": "Teacher: [[gap-01]] at the [[gap-02]]. Student: [[gap-03]]? Teacher: Yes, a hat. Student: [[gap-04]]? Teacher: Yes, a house. Student: [[gap-05]]? Teacher: Yes, a hand. Teacher: [[gap-06]] [[gap-07]]. Student: [[gap-08]]? Teacher: [[gap-09]], sheep. [[gap-10]]: ship and sheep.",
           "wordBank": [
             {
               "wordId": "english-pre-a1-m007-listening-word-01",
-              "word": "Teacher: Look at the picture."
+              "word": "Look"
             },
             {
               "wordId": "english-pre-a1-m007-listening-word-02",
-              "word": "Student: Hat?"
+              "word": "picture"
             },
             {
               "wordId": "english-pre-a1-m007-listening-word-03",
-              "word": "Teacher: Yes, a hat."
+              "word": "Hat"
             },
             {
               "wordId": "english-pre-a1-m007-listening-word-04",
-              "word": "Student: House?"
+              "word": "House"
             },
             {
               "wordId": "english-pre-a1-m007-listening-word-05",
-              "word": "Teacher: Yes, a house."
+              "word": "Hand"
             },
             {
               "wordId": "english-pre-a1-m007-listening-word-06",
-              "word": "Student: Hand?"
+              "word": "Three"
             },
             {
               "wordId": "english-pre-a1-m007-listening-word-07",
-              "word": "Teacher: Yes, a hand."
+              "word": "sheep"
             },
             {
               "wordId": "english-pre-a1-m007-listening-word-08",
-              "word": "Teacher: Three sheep."
+              "word": "Ship"
             },
             {
               "wordId": "english-pre-a1-m007-listening-word-09",
-              "word": "Student: Ship?"
+              "word": "No"
             },
             {
               "wordId": "english-pre-a1-m007-listening-word-10",
-              "word": "Teacher: No, sheep. Listen: ship and sheep."
+              "word": "Listen"
             }
           ],
           "interaction": "select_place_move_replace",
@@ -1738,70 +1738,70 @@
             "position": 1,
             "gapToken": "[[gap-01]]",
             "expectedWordId": "english-pre-a1-m007-listening-word-01",
-            "answer": "Teacher: Look at the picture."
+            "answer": "Look"
           },
           {
             "itemId": "english-pre-a1-m007-listening-ex01-i02",
             "position": 2,
             "gapToken": "[[gap-02]]",
             "expectedWordId": "english-pre-a1-m007-listening-word-02",
-            "answer": "Student: Hat?"
+            "answer": "picture"
           },
           {
             "itemId": "english-pre-a1-m007-listening-ex01-i03",
             "position": 3,
             "gapToken": "[[gap-03]]",
             "expectedWordId": "english-pre-a1-m007-listening-word-03",
-            "answer": "Teacher: Yes, a hat."
+            "answer": "Hat"
           },
           {
             "itemId": "english-pre-a1-m007-listening-ex01-i04",
             "position": 4,
             "gapToken": "[[gap-04]]",
             "expectedWordId": "english-pre-a1-m007-listening-word-04",
-            "answer": "Student: House?"
+            "answer": "House"
           },
           {
             "itemId": "english-pre-a1-m007-listening-ex01-i05",
             "position": 5,
             "gapToken": "[[gap-05]]",
             "expectedWordId": "english-pre-a1-m007-listening-word-05",
-            "answer": "Teacher: Yes, a house."
+            "answer": "Hand"
           },
           {
             "itemId": "english-pre-a1-m007-listening-ex01-i06",
             "position": 6,
             "gapToken": "[[gap-06]]",
             "expectedWordId": "english-pre-a1-m007-listening-word-06",
-            "answer": "Student: Hand?"
+            "answer": "Three"
           },
           {
             "itemId": "english-pre-a1-m007-listening-ex01-i07",
             "position": 7,
             "gapToken": "[[gap-07]]",
             "expectedWordId": "english-pre-a1-m007-listening-word-07",
-            "answer": "Teacher: Yes, a hand."
+            "answer": "sheep"
           },
           {
             "itemId": "english-pre-a1-m007-listening-ex01-i08",
             "position": 8,
             "gapToken": "[[gap-08]]",
             "expectedWordId": "english-pre-a1-m007-listening-word-08",
-            "answer": "Teacher: Three sheep."
+            "answer": "Ship"
           },
           {
             "itemId": "english-pre-a1-m007-listening-ex01-i09",
             "position": 9,
             "gapToken": "[[gap-09]]",
             "expectedWordId": "english-pre-a1-m007-listening-word-09",
-            "answer": "Student: Ship?"
+            "answer": "No"
           },
           {
             "itemId": "english-pre-a1-m007-listening-ex01-i10",
             "position": 10,
             "gapToken": "[[gap-10]]",
             "expectedWordId": "english-pre-a1-m007-listening-word-10",
-            "answer": "Teacher: No, sheep. Listen: ship and sheep."
+            "answer": "Listen"
           }
         ]
       }

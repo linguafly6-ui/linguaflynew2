@@ -1595,47 +1595,47 @@
           "audio": "tts:en-GB:Ben needs help at the door. Ben: Excuse me. Ana: Yes? Ben: Help, please. Ana: Here. Ben: Thank you. Ana: You're welcome. Ben: Sorry. Ana: It's OK. Ben: Goodbye!",
           "audioLocale": "en-GB",
           "audioStatus": "synthetic_pending_review",
-          "transcriptTemplate": "[[gap-01]] [[gap-02]] [[gap-03]] [[gap-04]] [[gap-05]] [[gap-06]] [[gap-07]] [[gap-08]] [[gap-09]] [[gap-10]]",
+          "transcriptTemplate": "Ben needs help at the door. Ben: [[gap-01]] [[gap-02]]. Ana: [[gap-03]]? Ben: [[gap-04]], [[gap-05]]. Ana: [[gap-06]]. Ben: [[gap-07]] [[gap-08]]. Ana: You're welcome. Ben: [[gap-09]]. Ana: It's OK. Ben: [[gap-10]]!",
           "wordBank": [
             {
               "wordId": "english-pre-a1-m004-listening-word-01",
-              "word": "Ben needs help at the door."
+              "word": "Excuse"
             },
             {
               "wordId": "english-pre-a1-m004-listening-word-02",
-              "word": "Ben: Excuse me."
+              "word": "me"
             },
             {
               "wordId": "english-pre-a1-m004-listening-word-03",
-              "word": "Ana: Yes?"
+              "word": "Yes"
             },
             {
               "wordId": "english-pre-a1-m004-listening-word-04",
-              "word": "Ben: Help, please."
+              "word": "Help"
             },
             {
               "wordId": "english-pre-a1-m004-listening-word-05",
-              "word": "Ana: Here."
+              "word": "please"
             },
             {
               "wordId": "english-pre-a1-m004-listening-word-06",
-              "word": "Ben: Thank you."
+              "word": "Here"
             },
             {
               "wordId": "english-pre-a1-m004-listening-word-07",
-              "word": "Ana: You're welcome."
+              "word": "Thank"
             },
             {
               "wordId": "english-pre-a1-m004-listening-word-08",
-              "word": "Ben: Sorry."
+              "word": "you"
             },
             {
               "wordId": "english-pre-a1-m004-listening-word-09",
-              "word": "Ana: It's OK."
+              "word": "Sorry"
             },
             {
               "wordId": "english-pre-a1-m004-listening-word-10",
-              "word": "Ben: Goodbye!"
+              "word": "Goodbye"
             }
           ],
           "interaction": "select_place_move_replace",
@@ -1648,70 +1648,70 @@
             "position": 1,
             "gapToken": "[[gap-01]]",
             "expectedWordId": "english-pre-a1-m004-listening-word-01",
-            "answer": "Ben needs help at the door."
+            "answer": "Excuse"
           },
           {
             "itemId": "english-pre-a1-m004-listening-ex01-i02",
             "position": 2,
             "gapToken": "[[gap-02]]",
             "expectedWordId": "english-pre-a1-m004-listening-word-02",
-            "answer": "Ben: Excuse me."
+            "answer": "me"
           },
           {
             "itemId": "english-pre-a1-m004-listening-ex01-i03",
             "position": 3,
             "gapToken": "[[gap-03]]",
             "expectedWordId": "english-pre-a1-m004-listening-word-03",
-            "answer": "Ana: Yes?"
+            "answer": "Yes"
           },
           {
             "itemId": "english-pre-a1-m004-listening-ex01-i04",
             "position": 4,
             "gapToken": "[[gap-04]]",
             "expectedWordId": "english-pre-a1-m004-listening-word-04",
-            "answer": "Ben: Help, please."
+            "answer": "Help"
           },
           {
             "itemId": "english-pre-a1-m004-listening-ex01-i05",
             "position": 5,
             "gapToken": "[[gap-05]]",
             "expectedWordId": "english-pre-a1-m004-listening-word-05",
-            "answer": "Ana: Here."
+            "answer": "please"
           },
           {
             "itemId": "english-pre-a1-m004-listening-ex01-i06",
             "position": 6,
             "gapToken": "[[gap-06]]",
             "expectedWordId": "english-pre-a1-m004-listening-word-06",
-            "answer": "Ben: Thank you."
+            "answer": "Here"
           },
           {
             "itemId": "english-pre-a1-m004-listening-ex01-i07",
             "position": 7,
             "gapToken": "[[gap-07]]",
             "expectedWordId": "english-pre-a1-m004-listening-word-07",
-            "answer": "Ana: You're welcome."
+            "answer": "Thank"
           },
           {
             "itemId": "english-pre-a1-m004-listening-ex01-i08",
             "position": 8,
             "gapToken": "[[gap-08]]",
             "expectedWordId": "english-pre-a1-m004-listening-word-08",
-            "answer": "Ben: Sorry."
+            "answer": "you"
           },
           {
             "itemId": "english-pre-a1-m004-listening-ex01-i09",
             "position": 9,
             "gapToken": "[[gap-09]]",
             "expectedWordId": "english-pre-a1-m004-listening-word-09",
-            "answer": "Ana: It's OK."
+            "answer": "Sorry"
           },
           {
             "itemId": "english-pre-a1-m004-listening-ex01-i10",
             "position": 10,
             "gapToken": "[[gap-10]]",
             "expectedWordId": "english-pre-a1-m004-listening-word-10",
-            "answer": "Ben: Goodbye!"
+            "answer": "Goodbye"
           }
         ]
       }

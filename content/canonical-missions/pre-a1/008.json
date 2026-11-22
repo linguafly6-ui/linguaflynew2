@@ -1649,47 +1649,47 @@
           "audio": "tts:en-GB:At school, Ana talks to Tom. Tom: Hello, Ana. How are you today? Ana: I am very happy. Tom: I am a teacher. Ana: I am a student. Tom: I am happy today. Ana: I am tired. Tom: I am calm. Ana: I am excited. Tom: Great!",
           "audioLocale": "en-GB",
           "audioStatus": "synthetic_pending_review",
-          "transcriptTemplate": "[[gap-01]] [[gap-02]] [[gap-03]] [[gap-04]] [[gap-05]] [[gap-06]] [[gap-07]] [[gap-08]] [[gap-09]] [[gap-10]]",
+          "transcriptTemplate": "At school, Ana talks to Tom. Tom: [[gap-01]], Ana. [[gap-02]] are you [[gap-03]]? Ana: [[gap-04]] very [[gap-05]]. Tom: I am a [[gap-06]]. Ana: I am a [[gap-07]]. Tom: I am happy today. Ana: I am [[gap-08]]. Tom: I am [[gap-09]]. Ana: I am [[gap-10]]. Tom: Great!",
           "wordBank": [
             {
               "wordId": "english-pre-a1-m008-listening-word-01",
-              "word": "At school, Ana talks to Tom."
+              "word": "Hello"
             },
             {
               "wordId": "english-pre-a1-m008-listening-word-02",
-              "word": "Tom: Hello, Ana. How are you today?"
+              "word": "How"
             },
             {
               "wordId": "english-pre-a1-m008-listening-word-03",
-              "word": "Ana: I am very happy."
+              "word": "today"
             },
             {
               "wordId": "english-pre-a1-m008-listening-word-04",
-              "word": "Tom: I am a teacher."
+              "word": "I am"
             },
             {
               "wordId": "english-pre-a1-m008-listening-word-05",
-              "word": "Ana: I am a student."
+              "word": "happy"
             },
             {
               "wordId": "english-pre-a1-m008-listening-word-06",
-              "word": "Tom: I am happy today."
+              "word": "teacher"
             },
             {
               "wordId": "english-pre-a1-m008-listening-word-07",
-              "word": "Ana: I am tired."
+              "word": "student"
             },
             {
               "wordId": "english-pre-a1-m008-listening-word-08",
-              "word": "Tom: I am calm."
+              "word": "tired"
             },
             {
               "wordId": "english-pre-a1-m008-listening-word-09",
-              "word": "Ana: I am excited."
+              "word": "calm"
             },
             {
               "wordId": "english-pre-a1-m008-listening-word-10",
-              "word": "Tom: Great!"
+              "word": "excited"
             }
           ],
           "interaction": "select_place_move_replace",
@@ -1702,70 +1702,70 @@
             "position": 1,
             "gapToken": "[[gap-01]]",
             "expectedWordId": "english-pre-a1-m008-listening-word-01",
-            "answer": "At school, Ana talks to Tom."
+            "answer": "Hello"
           },
           {
             "itemId": "english-pre-a1-m008-listening-ex01-i02",
             "position": 2,
             "gapToken": "[[gap-02]]",
             "expectedWordId": "english-pre-a1-m008-listening-word-02",
-            "answer": "Tom: Hello, Ana. How are you today?"
+            "answer": "How"
           },
           {
             "itemId": "english-pre-a1-m008-listening-ex01-i03",
             "position": 3,
             "gapToken": "[[gap-03]]",
             "expectedWordId": "english-pre-a1-m008-listening-word-03",
-            "answer": "Ana: I am very happy."
+            "answer": "today"
           },
           {
             "itemId": "english-pre-a1-m008-listening-ex01-i04",
             "position": 4,
             "gapToken": "[[gap-04]]",
             "expectedWordId": "english-pre-a1-m008-listening-word-04",
-            "answer": "Tom: I am a teacher."
+            "answer": "I am"
           },
           {
             "itemId": "english-pre-a1-m008-listening-ex01-i05",
             "position": 5,
             "gapToken": "[[gap-05]]",
             "expectedWordId": "english-pre-a1-m008-listening-word-05",
-            "answer": "Ana: I am a student."
+            "answer": "happy"
           },
           {
             "itemId": "english-pre-a1-m008-listening-ex01-i06",
             "position": 6,
             "gapToken": "[[gap-06]]",
             "expectedWordId": "english-pre-a1-m008-listening-word-06",
-            "answer": "Tom: I am happy today."
+            "answer": "teacher"
           },
           {
             "itemId": "english-pre-a1-m008-listening-ex01-i07",
             "position": 7,
             "gapToken": "[[gap-07]]",
             "expectedWordId": "english-pre-a1-m008-listening-word-07",
-            "answer": "Ana: I am tired."
+            "answer": "student"
           },
           {
             "itemId": "english-pre-a1-m008-listening-ex01-i08",
             "position": 8,
             "gapToken": "[[gap-08]]",
             "expectedWordId": "english-pre-a1-m008-listening-word-08",
-            "answer": "Tom: I am calm."
+            "answer": "tired"
           },
           {
             "itemId": "english-pre-a1-m008-listening-ex01-i09",
             "position": 9,
             "gapToken": "[[gap-09]]",
             "expectedWordId": "english-pre-a1-m008-listening-word-09",
-            "answer": "Ana: I am excited."
+            "answer": "calm"
           },
           {
             "itemId": "english-pre-a1-m008-listening-ex01-i10",
             "position": 10,
             "gapToken": "[[gap-10]]",
             "expectedWordId": "english-pre-a1-m008-listening-word-10",
-            "answer": "Tom: Great!"
+            "answer": "excited"
           }
         ]
       }

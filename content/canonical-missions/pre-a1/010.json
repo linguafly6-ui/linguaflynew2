@@ -1694,47 +1694,47 @@
           "audio": "tts:en-GB:At the door, Ana meets Alex and Ben. Ana: Hello! This is my friend, Alex. Alex: Nice to meet you. Ana: Nice to meet you too. Ben: Pleased to meet you. Ana: This is Ben. Ben: You're my friend. Alex: What's your name? Ben: My name is Ben. Alex: Goodbye!",
           "audioLocale": "en-GB",
           "audioStatus": "synthetic_pending_review",
-          "transcriptTemplate": "[[gap-01]] [[gap-02]] [[gap-03]] [[gap-04]] [[gap-05]] [[gap-06]] [[gap-07]] [[gap-08]] [[gap-09]] [[gap-10]]",
+          "transcriptTemplate": "At the door, Ana meets Alex and Ben. Ana: [[gap-01]]! [[gap-02]] is [[gap-03]] [[gap-04]], [[gap-05]]. Alex: [[gap-06]]. Ana: Nice to meet you [[gap-07]]. Ben: [[gap-08]]. Ana: This is Ben. Ben: You're my friend. Alex: What's your [[gap-09]]? Ben: My name is Ben. Alex: [[gap-10]]!",
           "wordBank": [
             {
               "wordId": "english-pre-a1-m010-listening-word-01",
-              "word": "At the door, Ana meets Alex and Ben."
+              "word": "Hello"
             },
             {
               "wordId": "english-pre-a1-m010-listening-word-02",
-              "word": "Ana: Hello! This is my friend, Alex."
+              "word": "This"
             },
             {
               "wordId": "english-pre-a1-m010-listening-word-03",
-              "word": "Alex: Nice to meet you."
+              "word": "my"
             },
             {
               "wordId": "english-pre-a1-m010-listening-word-04",
-              "word": "Ana: Nice to meet you too."
+              "word": "friend"
             },
             {
               "wordId": "english-pre-a1-m010-listening-word-05",
-              "word": "Ben: Pleased to meet you."
+              "word": "Alex"
             },
             {
               "wordId": "english-pre-a1-m010-listening-word-06",
-              "word": "Ana: This is Ben."
+              "word": "Nice to meet you"
             },
             {
               "wordId": "english-pre-a1-m010-listening-word-07",
-              "word": "Ben: You're my friend."
+              "word": "too"
             },
             {
               "wordId": "english-pre-a1-m010-listening-word-08",
-              "word": "Alex: What's your name?"
+              "word": "Pleased to meet you"
             },
             {
               "wordId": "english-pre-a1-m010-listening-word-09",
-              "word": "Ben: My name is Ben."
+              "word": "name"
             },
             {
               "wordId": "english-pre-a1-m010-listening-word-10",
-              "word": "Alex: Goodbye!"
+              "word": "Goodbye"
             }
           ],
           "interaction": "select_place_move_replace",
@@ -1747,70 +1747,70 @@
             "position": 1,
             "gapToken": "[[gap-01]]",
             "expectedWordId": "english-pre-a1-m010-listening-word-01",
-            "answer": "At the door, Ana meets Alex and Ben."
+            "answer": "Hello"
           },
           {
             "itemId": "english-pre-a1-m010-listening-ex01-i02",
             "position": 2,
             "gapToken": "[[gap-02]]",
             "expectedWordId": "english-pre-a1-m010-listening-word-02",
-            "answer": "Ana: Hello! This is my friend, Alex."
+            "answer": "This"
           },
           {
             "itemId": "english-pre-a1-m010-listening-ex01-i03",
             "position": 3,
             "gapToken": "[[gap-03]]",
             "expectedWordId": "english-pre-a1-m010-listening-word-03",
-            "answer": "Alex: Nice to meet you."
+            "answer": "my"
           },
           {
             "itemId": "english-pre-a1-m010-listening-ex01-i04",
             "position": 4,
             "gapToken": "[[gap-04]]",
             "expectedWordId": "english-pre-a1-m010-listening-word-04",
-            "answer": "Ana: Nice to meet you too."
+            "answer": "friend"
           },
           {
             "itemId": "english-pre-a1-m010-listening-ex01-i05",
             "position": 5,
             "gapToken": "[[gap-05]]",
             "expectedWordId": "english-pre-a1-m010-listening-word-05",
-            "answer": "Ben: Pleased to meet you."
+            "answer": "Alex"
           },
           {
             "itemId": "english-pre-a1-m010-listening-ex01-i06",
             "position": 6,
             "gapToken": "[[gap-06]]",
             "expectedWordId": "english-pre-a1-m010-listening-word-06",
-            "answer": "Ana: This is Ben."
+            "answer": "Nice to meet you"
           },
           {
             "itemId": "english-pre-a1-m010-listening-ex01-i07",
             "position": 7,
             "gapToken": "[[gap-07]]",
             "expectedWordId": "english-pre-a1-m010-listening-word-07",
-            "answer": "Ben: You're my friend."
+            "answer": "too"
           },
           {
             "itemId": "english-pre-a1-m010-listening-ex01-i08",
             "position": 8,
             "gapToken": "[[gap-08]]",
             "expectedWordId": "english-pre-a1-m010-listening-word-08",
-            "answer": "Alex: What's your name?"
+            "answer": "Pleased to meet you"
           },
           {
             "itemId": "english-pre-a1-m010-listening-ex01-i09",
             "position": 9,
             "gapToken": "[[gap-09]]",
             "expectedWordId": "english-pre-a1-m010-listening-word-09",
-            "answer": "Ben: My name is Ben."
+            "answer": "name"
           },
           {
             "itemId": "english-pre-a1-m010-listening-ex01-i10",
             "position": 10,
             "gapToken": "[[gap-10]]",
             "expectedWordId": "english-pre-a1-m010-listening-word-10",
-            "answer": "Alex: Goodbye!"
+            "answer": "Goodbye"
           }
         ]
       }

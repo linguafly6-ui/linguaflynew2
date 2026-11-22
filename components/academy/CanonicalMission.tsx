@@ -141,7 +141,7 @@ export default function CanonicalMission({ missionData = missionSource as Missio
   const section = mission.sections.find((item) => item.sectionKey === sectionKey) ?? mission.sections[0];
   const activeItems = sectionKey === "practice" ? section.exercise.items.slice(0, 10) : section.exercise.items;
   const item = activeItems[index];
-  const preA1Audio = mission.course.level.toUpperCase() === "PRE-A1" ? preA1Listening[mission.mission.position ?? 0] : undefined;
+  const preA1Audio = mission.course.level.toUpperCase() === "PRE-A1" ? { audioTranscript: section.exercise.content?.audioTranscript ?? "", template: section.exercise.content?.transcriptTemplate ?? "", words: (section.exercise.content?.wordBank ?? []).map((entry) => entry.word) } : undefined;
   const listeningAudioTranscript = preA1Audio?.audioTranscript ?? section.exercise.content?.audioTranscript ?? "";
   const listeningTemplate = preA1Audio?.template ?? section.exercise.content?.transcriptTemplate ?? "";
   const listeningWordBank = preA1Audio
