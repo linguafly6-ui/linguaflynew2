@@ -27,49 +27,78 @@
         "exerciseId": "english-pre-a1-m011-explore-ex01",
         "type": "vocabulary_pairs",
         "theory": {
-          "title": "At the Playground: present simple and can",
-          "explanation": "Aprende las acciones del parque y construye frases en dos pasos. Primero, presente simple: I/you/we/they + verbo base y he/she + verbo con -s. Después, can para expresar habilidad: todos los pronombres usan can + verbo base. No mezcles los dos patrones hasta reconocer cada uno.",
-          "tip": "He plays (añadimos -s), pero he can play (después de can el verbo no lleva -s).",
+          "title": "Actions and positive commands",
+          "explanation": "Aprende diez acciones del parque infantil. Para dar una instrucción afirmativa directa, usamos el verbo en su forma base, sin sujeto delante y sin añadir -s: Run! (¡Corre!), Jump! (¡Salta!). Esta forma se llama imperativo afirmativo. En esta misión no usamos órdenes negativas.",
+          "tip": "Please suaviza una orden: Play, please! — ¡Juega, por favor!",
           "patterns": [
             {
-              "label": "1. Presente simple: I / You / We / They",
-              "pattern": "pronoun + base verb",
+              "label": "Bloque 1: Play and run",
+              "pattern": "play = jugar; run = correr",
               "examples": [
-                "I play. — Yo juego.",
-                "You play. — Tú juegas.",
-                "We play. — Nosotros jugamos.",
-                "They play. — Ellos juegan."
+                "Play! — ¡Juega! / Run! — ¡Corre!"
               ]
             },
             {
-              "label": "2. Presente simple: He / She",
-              "pattern": "he/she + verb-s",
+              "label": "Bloque 2: Jump and climb",
+              "pattern": "jump = saltar; climb = trepar",
               "examples": [
-                "He plays. — Él juega.",
-                "She plays. — Ella juega.",
-                "He runs. — Él corre.",
-                "She jumps. — Ella salta."
+                "Jump! — ¡Salta! / Climb! — ¡Trepa!"
               ]
             },
             {
-              "label": "3. Can + verbo base: todos los pronombres",
-              "pattern": "I/You/He/She/We/They + can + base verb",
+              "label": "Bloque 3: Swing and slide",
+              "pattern": "swing = columpiarse; slide = deslizarse",
               "examples": [
-                "I can play. — Puedo jugar.",
-                "You can run. — Puedes correr.",
-                "He can climb. — Él puede trepar.",
-                "She can swing. — Ella puede columpiarse.",
-                "We can jump. — Podemos saltar.",
-                "They can skip. — Ellos pueden saltar a saltitos."
+                "Swing! — ¡Colúmpiate! / Slide! — ¡Deslízate!"
               ]
             },
             {
-              "label": "4. La diferencia importante",
-              "pattern": "He plays ≠ He can play",
+              "label": "Bloque 4: Hop and skip",
+              "pattern": "hop = saltar a la pata coja; skip = saltar a saltitos",
               "examples": [
-                "He plays in the park. — Él juega en el parque.",
-                "He can play in the park. — Él puede jugar en el parque.",
-                "Correct: He can play. — Incorrect: He can plays."
+                "Hop! — ¡Salta a la pata coja! / Skip! — ¡Da saltitos!"
+              ]
+            },
+            {
+              "label": "Bloque 5: Walk and stop",
+              "pattern": "walk = caminar; stop = parar",
+              "examples": [
+                "Walk! — ¡Camina! / Stop! — ¡Para!"
+              ]
+            },
+            {
+              "label": "Bloque 6: The playground",
+              "pattern": "playground = parque infantil",
+              "examples": [
+                "At the playground. — En el parque infantil."
+              ]
+            },
+            {
+              "label": "Bloque 7: The command form",
+              "pattern": "Para dar una orden afirmativa, usamos el verbo en forma base.",
+              "examples": [
+                "Run! — ¡Corre!"
+              ]
+            },
+            {
+              "label": "Bloque 8: No -s in a command",
+              "pattern": "No añadimos -s al verbo cuando damos una orden.",
+              "examples": [
+                "Correct: Jump! / Not: Jumps!"
+              ]
+            },
+            {
+              "label": "Bloque 9: Polite commands",
+              "pattern": "Please hace que una instrucción suene más amable.",
+              "examples": [
+                "Play, please! — ¡Juega, por favor!"
+              ]
+            },
+            {
+              "label": "Bloque 10: Pronunciation tips",
+              "pattern": "La h de hop es una aspiración suave, no la jota española. En walk la w suena aproximadamente como una u breve. En climb la b final no se pronuncia.",
+              "examples": [
+                "hop — jap* / walk — uók / climb — kláim"
               ]
             }
           ]
@@ -78,91 +107,91 @@
           {
             "itemId": "english-pre-a1-m011-explore-ex01-i01",
             "position": 1,
-            "english": "run",
-            "spanish": "correr",
-            "audio": "tts:en-GB:run",
-            "pronunciationGuide": "rán",
+            "english": "play",
+            "spanish": "jugar",
+            "pronunciationGuide": "pléi",
+            "audio": "tts:en-GB:play",
             "audioStatus": "synthetic_pending_review"
           },
           {
             "itemId": "english-pre-a1-m011-explore-ex01-i02",
             "position": 2,
-            "english": "jump",
-            "spanish": "saltar",
-            "audio": "tts:en-GB:jump",
-            "pronunciationGuide": "yámp",
+            "english": "run",
+            "spanish": "correr",
+            "pronunciationGuide": "rán",
+            "audio": "tts:en-GB:run",
             "audioStatus": "synthetic_pending_review"
           },
           {
             "itemId": "english-pre-a1-m011-explore-ex01-i03",
             "position": 3,
-            "english": "climb",
-            "spanish": "trepar",
-            "audio": "tts:en-GB:climb",
-            "pronunciationGuide": "kláim",
+            "english": "jump",
+            "spanish": "saltar",
+            "pronunciationGuide": "yámp",
+            "audio": "tts:en-GB:jump",
             "audioStatus": "synthetic_pending_review"
           },
           {
             "itemId": "english-pre-a1-m011-explore-ex01-i04",
             "position": 4,
-            "english": "swing",
-            "spanish": "columpiarse",
-            "audio": "tts:en-GB:swing",
-            "pronunciationGuide": "suíng",
+            "english": "climb",
+            "spanish": "trepar",
+            "pronunciationGuide": "kláim",
+            "audio": "tts:en-GB:climb",
             "audioStatus": "synthetic_pending_review"
           },
           {
             "itemId": "english-pre-a1-m011-explore-ex01-i05",
             "position": 5,
-            "english": "slide",
-            "spanish": "deslizarse",
-            "audio": "tts:en-GB:slide",
-            "pronunciationGuide": "sláid",
+            "english": "swing",
+            "spanish": "columpiarse",
+            "pronunciationGuide": "suíng",
+            "audio": "tts:en-GB:swing",
             "audioStatus": "synthetic_pending_review"
           },
           {
             "itemId": "english-pre-a1-m011-explore-ex01-i06",
             "position": 6,
-            "english": "play",
-            "spanish": "jugar",
-            "audio": "tts:en-GB:play",
-            "pronunciationGuide": "pléi",
+            "english": "slide",
+            "spanish": "deslizarse",
+            "pronunciationGuide": "sláid",
+            "audio": "tts:en-GB:slide",
             "audioStatus": "synthetic_pending_review"
           },
           {
             "itemId": "english-pre-a1-m011-explore-ex01-i07",
             "position": 7,
-            "english": "stop",
-            "spanish": "parar",
-            "audio": "tts:en-GB:stop",
-            "pronunciationGuide": "stap",
+            "english": "hop",
+            "spanish": "saltar a la pata coja",
+            "pronunciationGuide": "jap*",
+            "audio": "tts:en-GB:hop",
             "audioStatus": "synthetic_pending_review"
           },
           {
             "itemId": "english-pre-a1-m011-explore-ex01-i08",
             "position": 8,
-            "english": "walk",
-            "spanish": "caminar",
-            "audio": "tts:en-GB:walk",
-            "pronunciationGuide": "uók",
+            "english": "skip",
+            "spanish": "saltar a saltitos",
+            "pronunciationGuide": "skíp",
+            "audio": "tts:en-GB:skip",
             "audioStatus": "synthetic_pending_review"
           },
           {
             "itemId": "english-pre-a1-m011-explore-ex01-i09",
             "position": 9,
-            "english": "hop",
-            "spanish": "saltar a la pata coja",
-            "audio": "tts:en-GB:hop",
-            "pronunciationGuide": "jap",
+            "english": "walk",
+            "spanish": "caminar",
+            "pronunciationGuide": "uók",
+            "audio": "tts:en-GB:walk",
             "audioStatus": "synthetic_pending_review"
           },
           {
             "itemId": "english-pre-a1-m011-explore-ex01-i10",
             "position": 10,
-            "english": "skip",
-            "spanish": "saltar a saltitos",
-            "audio": "tts:en-GB:skip",
-            "pronunciationGuide": "skíp",
+            "english": "stop",
+            "spanish": "parar",
+            "pronunciationGuide": "stóp",
+            "audio": "tts:en-GB:stop",
             "audioStatus": "synthetic_pending_review"
           },
           {
@@ -178,276 +207,273 @@
         "lesson": {
           "phrases": [
             {
-              "english": "Run to the gate.",
-              "spanish": "Corre hasta la puerta."
+              "english": "Play!",
+              "spanish": "¡Jugar!",
+              "pronunciationGuide": "pléi",
+              "note": "Orden afirmativa: verbo en forma base."
             },
             {
-              "english": "Jump over the line.",
-              "spanish": "Salta por encima de la línea."
+              "english": "Run!",
+              "spanish": "¡Correr!",
+              "pronunciationGuide": "rán",
+              "note": "Orden afirmativa: verbo en forma base."
             },
             {
-              "english": "Please stop here.",
-              "spanish": "Por favor, para aquí."
+              "english": "Jump!",
+              "spanish": "¡Saltar!",
+              "pronunciationGuide": "yámp",
+              "note": "Orden afirmativa: verbo en forma base."
             },
             {
-              "english": "We play in the park.",
-              "spanish": "Jugamos en el parque."
+              "english": "Climb!",
+              "spanish": "¡Trepar!",
+              "pronunciationGuide": "kláim",
+              "note": "Orden afirmativa: verbo en forma base."
             },
             {
-              "english": "I can climb.",
-              "spanish": "Puedo trepar.",
-              "note": "Can + verbo en forma base."
+              "english": "Swing!",
+              "spanish": "¡Columpiarse!",
+              "pronunciationGuide": "suíng",
+              "note": "Orden afirmativa: verbo en forma base."
             },
             {
-              "english": "She can run.",
-              "spanish": "Ella puede correr.",
-              "note": "Después de can, el verbo no lleva -s."
+              "english": "Slide!",
+              "spanish": "¡Deslizarse!",
+              "pronunciationGuide": "sláid",
+              "note": "Orden afirmativa: verbo en forma base."
             },
             {
-              "english": "Do not run.",
-              "spanish": "No corras.",
-              "note": "Do not + verbo base forma una orden negativa."
+              "english": "Hop!",
+              "spanish": "¡Saltar a la pata coja!",
+              "pronunciationGuide": "jap*",
+              "note": "Orden afirmativa: verbo en forma base."
             },
             {
-              "english": "They walk to school.",
-              "spanish": "Ellos caminan al colegio."
+              "english": "Skip!",
+              "spanish": "¡Saltar a saltitos!",
+              "pronunciationGuide": "skíp",
+              "note": "Orden afirmativa: verbo en forma base."
             },
             {
-              "english": "Skip to the music.",
-              "spanish": "Avanza dando saltitos al ritmo de la música."
+              "english": "Walk!",
+              "spanish": "¡Caminar!",
+              "pronunciationGuide": "uók",
+              "note": "Orden afirmativa: verbo en forma base."
             },
             {
-              "english": "A command starts with a base verb.",
-              "spanish": "Una orden empieza con un verbo en forma base.",
-              "note": "Run, jump y stop son imperativos."
-            },
-            {
-              "english": "can + base verb",
-              "spanish": "poder + infinitivo",
-              "note": "Can no cambia con he/she/it."
+              "english": "Stop!",
+              "spanish": "¡Parar!",
+              "pronunciationGuide": "stóp",
+              "note": "Orden afirmativa: verbo en forma base."
             }
           ],
           "grammar": [
             {
-              "english": "Run to the gate.",
-              "spanish": "Corre hasta la puerta.",
-              "note": "El imperativo usa el verbo base."
+              "english": "Run!",
+              "spanish": "¡Corre!",
+              "note": "Imperativo afirmativo con verbo base."
             },
             {
-              "english": "Jump over the line.",
-              "spanish": "Salta por encima de la línea.",
-              "note": "Jump es la forma base."
+              "english": "Jump!",
+              "spanish": "¡Salta!",
+              "note": "No se añade -s."
             },
             {
-              "english": "Please stop here.",
-              "spanish": "Por favor, para aquí.",
-              "note": "Please suaviza la orden."
-            },
-            {
-              "english": "We play in the park.",
-              "spanish": "Jugamos en el parque.",
-              "note": "Con we usamos play."
-            },
-            {
-              "english": "I can climb.",
-              "spanish": "Puedo trepar.",
-              "note": "Can + verbo base."
-            },
-            {
-              "english": "She can run.",
-              "spanish": "Ella puede correr.",
-              "note": "No decimos can runs."
-            },
-            {
-              "english": "Do not run on the wet floor.",
-              "spanish": "No corras en el suelo mojado.",
-              "note": "Orden negativa: do not + verbo base."
-            },
-            {
-              "english": "They walk to school.",
-              "spanish": "Ellos caminan al colegio.",
-              "note": "Con they usamos walk."
-            },
-            {
-              "english": "A command starts with a base verb.",
-              "spanish": "Una orden empieza con un verbo en forma base."
-            },
-            {
-              "english": "Skip to the music.",
-              "spanish": "Avanza dando saltitos al ritmo de la música."
+              "english": "Play, please!",
+              "spanish": "¡Juega, por favor!",
+              "note": "Please suaviza la instrucción."
             }
           ],
           "reading": [
             {
-              "english": "On Saturday, Mia goes to the playground with her brother Leo.",
-              "spanish": "El sábado, Mia va al parque infantil con su hermano Leo."
-            },
-            {
-              "english": "They run to the swings and jump over a small line.",
-              "spanish": "Corren hacia los columpios y saltan por encima de una línea pequeña."
-            },
-            {
-              "english": "Leo can climb the steps and go down the slide.",
-              "spanish": "Leo puede subir los escalones y bajar por el tobogán."
-            },
-            {
-              "english": "Mia likes to swing.",
-              "spanish": "A Mia le gusta columpiarse."
-            },
-            {
-              "english": "They play with a ball, but they stop when their mum calls.",
-              "spanish": "Juegan con una pelota, pero paran cuando su mamá los llama."
-            },
-            {
-              "english": "Then they walk home together.",
-              "spanish": "Después vuelven caminando a casa juntos."
+              "english": "At the playground. Mia: Hello, Leo! Leo: Hi, Mia! Mia: Play, please! Leo: OK! Mia: Run! Leo: OK! Mia: Jump! Leo: OK! Mia: Climb! Leo: OK! Mia: Swing! Leo: OK! Mia: Slide! Leo: OK! Mia: Hop! Leo: OK! Mia: Skip! Leo: OK! Mia: Walk! Leo: OK! Mia: Stop! Leo: OK! Mia: Goodbye! Leo: Goodbye!",
+              "spanish": "En el parque infantil. Mia: ¡Hola, Leo! Leo: ¡Hola, Mia! Mia: ¡Juega, por favor! Leo: ¡Vale! Mia: ¡Corre! Leo: ¡Vale! Mia: ¡Salta! Leo: ¡Vale! Mia: ¡Trepa! Leo: ¡Vale! Mia: ¡Colúmpiate! Leo: ¡Vale! Mia: ¡Deslízate! Leo: ¡Vale! Mia: ¡Salta a la pata coja! Leo: ¡Vale! Mia: ¡Da saltitos! Leo: ¡Vale! Mia: ¡Camina! Leo: ¡Vale! Mia: ¡Para! Leo: ¡Vale! Mia: ¡Adiós! Leo: ¡Adiós!",
+              "note": "Diálogo contextual y órdenes afirmativas explicados antes de Reading."
             }
           ],
           "writing": [
             {
-              "english": "I run to the gate.",
-              "spanish": "Corro hasta la puerta."
+              "english": "Play, please!",
+              "spanish": "Orden afirmativa con verbo en forma base.",
+              "note": "Modelo de dictado presentado previamente en Explore."
             },
             {
-              "english": "I jump over the line.",
-              "spanish": "Salto por encima de la línea."
+              "english": "Run!",
+              "spanish": "Orden afirmativa con verbo en forma base.",
+              "note": "Modelo de dictado presentado previamente en Explore."
             },
             {
-              "english": "I can climb the steps.",
-              "spanish": "Puedo subir los escalones."
+              "english": "Jump!",
+              "spanish": "Orden afirmativa con verbo en forma base.",
+              "note": "Modelo de dictado presentado previamente en Explore."
             },
             {
-              "english": "I swing on the seat.",
-              "spanish": "Me columpio en el asiento."
+              "english": "Climb!",
+              "spanish": "Orden afirmativa con verbo en forma base.",
+              "note": "Modelo de dictado presentado previamente en Explore."
             },
             {
-              "english": "I slide down the slide.",
-              "spanish": "Me deslizo por el tobogán."
+              "english": "Swing!",
+              "spanish": "Orden afirmativa con verbo en forma base.",
+              "note": "Modelo de dictado presentado previamente en Explore."
             },
             {
-              "english": "I play with my friends.",
-              "spanish": "Juego con mis amigos."
+              "english": "Slide!",
+              "spanish": "Orden afirmativa con verbo en forma base.",
+              "note": "Modelo de dictado presentado previamente en Explore."
             },
             {
-              "english": "Please stop here.",
-              "spanish": "Por favor, para aquí."
+              "english": "Hop!",
+              "spanish": "Orden afirmativa con verbo en forma base.",
+              "note": "Modelo de dictado presentado previamente en Explore."
             },
             {
-              "english": "I walk to school.",
-              "spanish": "Camino hasta el colegio."
+              "english": "Skip!",
+              "spanish": "Orden afirmativa con verbo en forma base.",
+              "note": "Modelo de dictado presentado previamente en Explore."
             },
             {
-              "english": "I hop on one foot.",
-              "spanish": "Salto a la pata coja."
+              "english": "Walk!",
+              "spanish": "Orden afirmativa con verbo en forma base.",
+              "note": "Modelo de dictado presentado previamente en Explore."
             },
             {
-              "english": "I skip to the music.",
-              "spanish": "Avanzo dando saltitos al ritmo de la música."
+              "english": "Stop!",
+              "spanish": "Orden afirmativa con verbo en forma base.",
+              "note": "Modelo de dictado presentado previamente en Explore."
             }
           ],
           "speaking": [
             {
-              "english": "I can run.",
-              "spanish": "Puedo correr.",
-              "prompt": "Say a short sentence using run.",
-              "promptSpanish": "Di una frase corta usando run (correr)."
+              "english": "Play!",
+              "spanish": "Di la orden en inglés para «jugar».",
+              "note": "Modelo oral explicado previamente en Explore."
             },
             {
-              "english": "I can jump.",
-              "spanish": "Puedo saltar.",
-              "prompt": "Say a short sentence using jump.",
-              "promptSpanish": "Di una frase corta usando jump (saltar)."
+              "english": "Run!",
+              "spanish": "Di la orden en inglés para «correr».",
+              "note": "Modelo oral explicado previamente en Explore."
             },
             {
-              "english": "I can climb a tree.",
-              "spanish": "Puedo trepar a un árbol.",
-              "prompt": "Say a short sentence using climb.",
-              "promptSpanish": "Di una frase corta usando climb (trepar)."
+              "english": "Jump!",
+              "spanish": "Di la orden en inglés para «saltar».",
+              "note": "Modelo oral explicado previamente en Explore."
             },
             {
-              "english": "I like to swing.",
-              "spanish": "Me gusta columpiarme.",
-              "prompt": "Say a short sentence using swing.",
-              "promptSpanish": "Di una frase corta usando swing (columpiarse)."
+              "english": "Climb!",
+              "spanish": "Di la orden en inglés para «trepar».",
+              "note": "Modelo oral explicado previamente en Explore."
             },
             {
-              "english": "I go down the slide.",
-              "spanish": "Bajo por el tobogán.",
-              "prompt": "Say a short sentence using slide.",
-              "promptSpanish": "Di una frase corta usando slide (deslizarse)."
+              "english": "Swing!",
+              "spanish": "Di la orden en inglés para «columpiarse».",
+              "note": "Modelo oral explicado previamente en Explore."
             },
             {
-              "english": "I play with my friends.",
-              "spanish": "Juego con mis amigos.",
-              "prompt": "Say a short sentence using play.",
-              "promptSpanish": "Di una frase corta usando play (jugar)."
+              "english": "Slide!",
+              "spanish": "Di la orden en inglés para «deslizarse».",
+              "note": "Modelo oral explicado previamente en Explore."
             },
             {
-              "english": "I stop at the gate.",
-              "spanish": "Me paro en la puerta.",
-              "prompt": "Say a short sentence using stop.",
-              "promptSpanish": "Di una frase corta usando stop (parar)."
+              "english": "Hop!",
+              "spanish": "Di la orden en inglés para «saltar a la pata coja».",
+              "note": "Modelo oral explicado previamente en Explore."
             },
             {
-              "english": "I walk to school.",
-              "spanish": "Camino al colegio.",
-              "prompt": "Say a short sentence using walk.",
-              "promptSpanish": "Di una frase corta usando walk (caminar)."
+              "english": "Skip!",
+              "spanish": "Di la orden en inglés para «saltar a saltitos».",
+              "note": "Modelo oral explicado previamente en Explore."
             },
             {
-              "english": "I can hop on one foot.",
-              "spanish": "Puedo saltar a la pata coja.",
-              "prompt": "Say a short sentence using hop.",
-              "promptSpanish": "Di una frase corta usando hop (saltar a la pata coja)."
+              "english": "Walk!",
+              "spanish": "Di la orden en inglés para «caminar».",
+              "note": "Modelo oral explicado previamente en Explore."
             },
             {
-              "english": "I skip to the music.",
-              "spanish": "Avanzo dando saltitos al ritmo de la música.",
-              "prompt": "Say a short sentence using skip.",
-              "promptSpanish": "Di una frase corta usando skip (saltar a saltitos)."
+              "english": "Stop!",
+              "spanish": "Di la orden en inglés para «parar».",
+              "note": "Modelo oral explicado previamente en Explore."
             }
           ],
           "listening": [
             {
-              "english": "At the playground, I play. I run and jump. I climb, swing and slide. I hop and skip. I walk and stop.",
-              "spanish": "En el parque infantil, juego. Corro y salto. Trepo, me columpio y me deslizo. Salto a la pata coja y doy saltitos. Camino y me detengo.",
-              "note": "Texto contextual y transcripción sincronizados con la actividad de Listening; el vocabulario objetivo se presenta previamente en Explore."
+              "english": "At the playground. Mia: Hello, Leo! Leo: Hi, Mia! Mia: Play, please! Leo: OK! Mia: Run! Leo: OK! Mia: Jump! Leo: OK! Mia: Climb! Leo: OK! Mia: Swing! Leo: OK! Mia: Slide! Leo: OK! Mia: Hop! Leo: OK! Mia: Skip! Leo: OK! Mia: Walk! Leo: OK! Mia: Stop! Leo: OK! Mia: Goodbye! Leo: Goodbye!",
+              "spanish": "En el parque infantil. Mia: ¡Hola, Leo! Leo: ¡Hola, Mia! Mia: ¡Juega, por favor! Leo: ¡Vale! Mia: ¡Corre! Leo: ¡Vale! Mia: ¡Salta! Leo: ¡Vale! Mia: ¡Trepa! Leo: ¡Vale! Mia: ¡Colúmpiate! Leo: ¡Vale! Mia: ¡Deslízate! Leo: ¡Vale! Mia: ¡Salta a la pata coja! Leo: ¡Vale! Mia: ¡Da saltitos! Leo: ¡Vale! Mia: ¡Camina! Leo: ¡Vale! Mia: ¡Para! Leo: ¡Vale! Mia: ¡Adiós! Leo: ¡Adiós!",
+              "note": "Audio contextual completo; los diez verbos objetivo aparecen en los huecos."
+            }
+          ]
+        },
+        "content": {
+          "blocks": [
+            {
+              "position": 1,
+              "title": "Play and run",
+              "content": "play = jugar; run = correr",
+              "example": "Play! — ¡Juega! / Run! — ¡Corre!",
+              "translation": "¡Juega! / Run!"
             },
             {
-              "english": "I jump over a small line.",
-              "spanish": "Salto por encima de una línea pequeña."
+              "position": 2,
+              "title": "Jump and climb",
+              "content": "jump = saltar; climb = trepar",
+              "example": "Jump! — ¡Salta! / Climb! — ¡Trepa!",
+              "translation": "¡Salta! / Climb!"
             },
             {
-              "english": "I climb the steps.",
-              "spanish": "Subo los escalones."
+              "position": 3,
+              "title": "Swing and slide",
+              "content": "swing = columpiarse; slide = deslizarse",
+              "example": "Swing! — ¡Colúmpiate! / Slide! — ¡Deslízate!",
+              "translation": "¡Colúmpiate! / Slide!"
             },
             {
-              "english": "I swing on the seat.",
-              "spanish": "Me columpio en el asiento."
+              "position": 4,
+              "title": "Hop and skip",
+              "content": "hop = saltar a la pata coja; skip = saltar a saltitos",
+              "example": "Hop! — ¡Salta a la pata coja! / Skip! — ¡Da saltitos!",
+              "translation": "¡Salta a la pata coja! / Skip!"
             },
             {
-              "english": "I go down the slide.",
-              "spanish": "Bajo por el tobogán."
+              "position": 5,
+              "title": "Walk and stop",
+              "content": "walk = caminar; stop = parar",
+              "example": "Walk! — ¡Camina! / Stop! — ¡Para!",
+              "translation": "¡Camina! / Stop!"
             },
             {
-              "english": "I play with my friends.",
-              "spanish": "Juego con mis amigos."
+              "position": 6,
+              "title": "The playground",
+              "content": "playground = parque infantil",
+              "example": "At the playground. — En el parque infantil.",
+              "translation": "En el parque infantil."
             },
             {
-              "english": "When Mum says stop, I stop.",
-              "spanish": "Cuando mamá dice «para», me paro."
+              "position": 7,
+              "title": "The command form",
+              "content": "Para dar una orden afirmativa, usamos el verbo en forma base.",
+              "example": "Run! — ¡Corre!",
+              "translation": "¡Corre!"
             },
             {
-              "english": "Then I walk slowly.",
-              "spanish": "Después camino despacio."
+              "position": 8,
+              "title": "No -s in a command",
+              "content": "No añadimos -s al verbo cuando damos una orden.",
+              "example": "Correct: Jump! / Not: Jumps!",
+              "translation": ""
             },
             {
-              "english": "I hop on one foot.",
-              "spanish": "Salto a la pata coja."
+              "position": 9,
+              "title": "Polite commands",
+              "content": "Please hace que una instrucción suene más amable.",
+              "example": "Play, please! — ¡Juega, por favor!",
+              "translation": "¡Juega, por favor!"
             },
             {
-              "english": "I skip to the music.",
-              "spanish": "Avanzo dando saltitos al ritmo de la música."
+              "position": 10,
+              "title": "Pronunciation tips",
+              "content": "La h de hop es una aspiración suave, no la jota española. En walk la w suena aproximadamente como una u breve. En climb la b final no se pronuncia.",
+              "example": "hop — jap* / walk — uók / climb — kláim",
+              "translation": "jap* / walk"
             }
           ]
         }
@@ -465,35 +491,50 @@
             "itemId": "english-pre-a1-m011-practice-ex01-i01",
             "position": 1,
             "taskType": "vocabulary_translation",
+            "prompt": "Choose the Spanish meaning of “play”.",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "jugar",
+              "correr",
+              "saltar"
+            ],
+            "answer": "jugar"
+          },
+          {
+            "itemId": "english-pre-a1-m011-practice-ex01-i02",
+            "position": 2,
+            "taskType": "vocabulary_translation",
             "prompt": "Choose the Spanish meaning of “run”.",
             "evaluation": {
               "type": "single_choice"
             },
             "options": [
-              "columpiarse",
-              "parar",
-              "correr"
+              "correr",
+              "jugar",
+              "saltar"
             ],
             "answer": "correr"
           },
           {
-            "itemId": "english-pre-a1-m011-practice-ex01-i02",
-            "position": 2,
+            "itemId": "english-pre-a1-m011-practice-ex01-i03",
+            "position": 3,
             "taskType": "vocabulary_translation",
             "prompt": "Choose the Spanish meaning of “jump”.",
             "evaluation": {
               "type": "single_choice"
             },
             "options": [
-              "deslizarse",
               "saltar",
-              "caminar"
+              "jugar",
+              "correr"
             ],
             "answer": "saltar"
           },
           {
-            "itemId": "english-pre-a1-m011-practice-ex01-i03",
-            "position": 3,
+            "itemId": "english-pre-a1-m011-practice-ex01-i04",
+            "position": 4,
             "taskType": "vocabulary_translation",
             "prompt": "Choose the Spanish meaning of “climb”.",
             "evaluation": {
@@ -502,28 +543,28 @@
             "options": [
               "trepar",
               "jugar",
-              "saltar a la pata coja"
+              "correr"
             ],
             "answer": "trepar"
           },
           {
-            "itemId": "english-pre-a1-m011-practice-ex01-i04",
-            "position": 4,
+            "itemId": "english-pre-a1-m011-practice-ex01-i05",
+            "position": 5,
             "taskType": "vocabulary_translation",
             "prompt": "Choose the Spanish meaning of “swing”.",
             "evaluation": {
               "type": "single_choice"
             },
             "options": [
-              "parar",
               "columpiarse",
-              "saltar a saltitos"
+              "jugar",
+              "correr"
             ],
             "answer": "columpiarse"
           },
           {
-            "itemId": "english-pre-a1-m011-practice-ex01-i05",
-            "position": 5,
+            "itemId": "english-pre-a1-m011-practice-ex01-i06",
+            "position": 6,
             "taskType": "vocabulary_translation",
             "prompt": "Choose the Spanish meaning of “slide”.",
             "evaluation": {
@@ -531,74 +572,29 @@
             },
             "options": [
               "deslizarse",
-              "caminar",
+              "jugar",
               "correr"
             ],
             "answer": "deslizarse"
           },
           {
-            "itemId": "english-pre-a1-m011-practice-ex01-i06",
-            "position": 6,
-            "taskType": "vocabulary_translation",
-            "prompt": "Choose the Spanish meaning of “play”.",
-            "evaluation": {
-              "type": "single_choice"
-            },
-            "options": [
-              "saltar a la pata coja",
-              "saltar",
-              "jugar"
-            ],
-            "answer": "jugar"
-          },
-          {
             "itemId": "english-pre-a1-m011-practice-ex01-i07",
             "position": 7,
-            "taskType": "vocabulary_translation",
-            "prompt": "Choose the Spanish meaning of “stop”.",
-            "evaluation": {
-              "type": "single_choice"
-            },
-            "options": [
-              "parar",
-              "saltar a saltitos",
-              "trepar"
-            ],
-            "answer": "parar"
-          },
-          {
-            "itemId": "english-pre-a1-m011-practice-ex01-i08",
-            "position": 8,
-            "taskType": "vocabulary_translation",
-            "prompt": "Choose the Spanish meaning of “walk”.",
-            "evaluation": {
-              "type": "single_choice"
-            },
-            "options": [
-              "correr",
-              "columpiarse",
-              "caminar"
-            ],
-            "answer": "caminar"
-          },
-          {
-            "itemId": "english-pre-a1-m011-practice-ex01-i09",
-            "position": 9,
             "taskType": "vocabulary_translation",
             "prompt": "Choose the Spanish meaning of “hop”.",
             "evaluation": {
               "type": "single_choice"
             },
             "options": [
-              "saltar",
               "saltar a la pata coja",
-              "deslizarse"
+              "jugar",
+              "correr"
             ],
             "answer": "saltar a la pata coja"
           },
           {
-            "itemId": "english-pre-a1-m011-practice-ex01-i10",
-            "position": 10,
+            "itemId": "english-pre-a1-m011-practice-ex01-i08",
+            "position": 8,
             "taskType": "vocabulary_translation",
             "prompt": "Choose the Spanish meaning of “skip”.",
             "evaluation": {
@@ -606,160 +602,40 @@
             },
             "options": [
               "saltar a saltitos",
-              "trepar",
-              "jugar"
+              "jugar",
+              "correr"
             ],
             "answer": "saltar a saltitos"
           },
           {
-            "itemId": "english-pre-a1-m011-practice-ex01-i11",
-            "position": 11,
-            "taskType": "topic_vocabulary",
-            "prompt": "Which English word means “correr”?",
+            "itemId": "english-pre-a1-m011-practice-ex01-i09",
+            "position": 9,
+            "taskType": "vocabulary_translation",
+            "prompt": "Choose the Spanish meaning of “walk”.",
             "evaluation": {
               "type": "single_choice"
             },
             "options": [
-              "climb",
-              "run",
-              "play"
+              "caminar",
+              "jugar",
+              "correr"
             ],
-            "answer": "run"
+            "answer": "caminar"
           },
           {
-            "itemId": "english-pre-a1-m011-practice-ex01-i12",
-            "position": 12,
-            "taskType": "topic_vocabulary",
-            "prompt": "Choose the word for “saltar”?",
+            "itemId": "english-pre-a1-m011-practice-ex01-i10",
+            "position": 10,
+            "taskType": "vocabulary_translation",
+            "prompt": "Choose the Spanish meaning of “stop”.",
             "evaluation": {
               "type": "single_choice"
             },
             "options": [
-              "swing",
-              "stop",
-              "jump"
+              "parar",
+              "jugar",
+              "correr"
             ],
-            "answer": "jump"
-          },
-          {
-            "itemId": "english-pre-a1-m011-practice-ex01-i13",
-            "position": 13,
-            "taskType": "topic_vocabulary",
-            "prompt": "Select the English word for “trepar”?",
-            "evaluation": {
-              "type": "single_choice"
-            },
-            "options": [
-              "climb",
-              "slide",
-              "walk"
-            ],
-            "answer": "climb"
-          },
-          {
-            "itemId": "english-pre-a1-m011-practice-ex01-i14",
-            "position": 14,
-            "taskType": "topic_vocabulary",
-            "prompt": "What is the English word for “columpiarse”?",
-            "evaluation": {
-              "type": "single_choice"
-            },
-            "options": [
-              "play",
-              "hop",
-              "swing"
-            ],
-            "answer": "swing"
-          },
-          {
-            "itemId": "english-pre-a1-m011-practice-ex01-i15",
-            "position": 15,
-            "taskType": "topic_vocabulary",
-            "prompt": "Find the word that means “deslizarse”?",
-            "evaluation": {
-              "type": "single_choice"
-            },
-            "options": [
-              "stop",
-              "slide",
-              "skip"
-            ],
-            "answer": "slide"
-          },
-          {
-            "itemId": "english-pre-a1-m011-practice-ex01-i16",
-            "position": 16,
-            "taskType": "topic_vocabulary",
-            "prompt": "Which word matches “jugar”?",
-            "evaluation": {
-              "type": "single_choice"
-            },
-            "options": [
-              "play",
-              "walk",
-              "run"
-            ],
-            "answer": "play"
-          },
-          {
-            "itemId": "english-pre-a1-m011-practice-ex01-i17",
-            "position": 17,
-            "taskType": "topic_vocabulary",
-            "prompt": "Choose the translation for “parar”?",
-            "evaluation": {
-              "type": "single_choice"
-            },
-            "options": [
-              "hop",
-              "stop",
-              "jump"
-            ],
-            "answer": "stop"
-          },
-          {
-            "itemId": "english-pre-a1-m011-practice-ex01-i18",
-            "position": 18,
-            "taskType": "topic_vocabulary",
-            "prompt": "Select the matching word for “caminar”?",
-            "evaluation": {
-              "type": "single_choice"
-            },
-            "options": [
-              "skip",
-              "climb",
-              "walk"
-            ],
-            "answer": "walk"
-          },
-          {
-            "itemId": "english-pre-a1-m011-practice-ex01-i19",
-            "position": 19,
-            "taskType": "topic_vocabulary",
-            "prompt": "What word means “saltar a la pata coja”?",
-            "evaluation": {
-              "type": "single_choice"
-            },
-            "options": [
-              "run",
-              "swing",
-              "hop"
-            ],
-            "answer": "hop"
-          },
-          {
-            "itemId": "english-pre-a1-m011-practice-ex01-i20",
-            "position": 20,
-            "taskType": "topic_vocabulary",
-            "prompt": "Find the English word for “saltar a saltitos”?",
-            "evaluation": {
-              "type": "single_choice"
-            },
-            "options": [
-              "jump",
-              "skip",
-              "slide"
-            ],
-            "answer": "skip"
+            "answer": "parar"
           }
         ]
       }
@@ -775,144 +651,158 @@
           {
             "itemId": "english-pre-a1-m011-grammar-ex01-i01",
             "position": 1,
-            "prompt": "Complete: I ___ in the playground.",
+            "prompt": "Which is the correct command form of “play”?",
             "evaluation": {
               "type": "single_choice"
             },
             "options": [
-              "plays",
-              "play",
-              "playing"
+              "Play!",
+              "Plays!"
             ],
-            "answer": "play"
+            "answer": "Play!"
           },
           {
             "itemId": "english-pre-a1-m011-grammar-ex01-i02",
             "position": 2,
-            "prompt": "Complete: You ___ to the swings.",
+            "prompt": "Which is the correct command form of “run”?",
             "evaluation": {
               "type": "single_choice"
             },
             "options": [
-              "walks",
-              "walking",
-              "walk"
+              "Run!",
+              "Runs!"
             ],
-            "answer": "walk"
+            "answer": "Run!"
           },
           {
             "itemId": "english-pre-a1-m011-grammar-ex01-i03",
             "position": 3,
-            "prompt": "Complete: He ___ to the gate.",
+            "prompt": "Which is the correct command form of “jump”?",
             "evaluation": {
               "type": "single_choice"
             },
             "options": [
-              "run",
-              "running",
-              "runs"
+              "Jump!",
+              "Jumps!"
             ],
-            "answer": "runs"
+            "answer": "Jump!"
           },
           {
             "itemId": "english-pre-a1-m011-grammar-ex01-i04",
             "position": 4,
-            "prompt": "Complete: She ___ over a line.",
+            "prompt": "Which is the correct command form of “climb”?",
             "evaluation": {
               "type": "single_choice"
             },
             "options": [
-              "jumping",
-              "jumps",
-              "jump"
+              "Climb!",
+              "Climbs!"
             ],
-            "answer": "jumps"
+            "answer": "Climb!"
           },
           {
             "itemId": "english-pre-a1-m011-grammar-ex01-i05",
             "position": 5,
-            "prompt": "Complete: They ___ together.",
+            "prompt": "Which is the correct command form of “swing”?",
             "evaluation": {
               "type": "single_choice"
             },
             "options": [
-              "swings",
-              "swing",
-              "swinging"
+              "Swing!",
+              "Swings!"
             ],
-            "answer": "swing"
+            "answer": "Swing!"
           },
           {
             "itemId": "english-pre-a1-m011-grammar-ex01-i06",
             "position": 6,
-            "prompt": "Complete: I can ___ the steps.",
+            "prompt": "Which is the correct command form of “slide”?",
             "evaluation": {
               "type": "single_choice"
             },
             "options": [
-              "climbs",
-              "climbing",
-              "climb"
+              "Slide!",
+              "Slides!"
             ],
-            "answer": "climb"
+            "answer": "Slide!"
           },
           {
             "itemId": "english-pre-a1-m011-grammar-ex01-i07",
             "position": 7,
-            "prompt": "Complete: You can ___ down the slide.",
+            "prompt": "Which is the correct command form of “hop”?",
             "evaluation": {
               "type": "single_choice"
             },
             "options": [
-              "slides",
-              "slide",
-              "sliding"
+              "Hop!",
+              "Hops!"
             ],
-            "answer": "slide"
+            "answer": "Hop!"
           },
           {
             "itemId": "english-pre-a1-m011-grammar-ex01-i08",
             "position": 8,
-            "prompt": "Complete: He can ___ on one foot.",
+            "prompt": "Which is the correct command form of “skip”?",
             "evaluation": {
               "type": "single_choice"
             },
             "options": [
-              "hop",
-              "hops",
-              "hopping"
+              "Skip!",
+              "Skips!"
             ],
-            "answer": "hop"
+            "answer": "Skip!"
           },
           {
             "itemId": "english-pre-a1-m011-grammar-ex01-i09",
             "position": 9,
-            "prompt": "Complete: She can ___ to the music.",
+            "prompt": "Which is the correct command form of “walk”?",
             "evaluation": {
               "type": "single_choice"
             },
             "options": [
-              "skipping",
-              "skips",
-              "skip"
+              "Walk!",
+              "Walks!"
             ],
-            "answer": "skip"
+            "answer": "Walk!"
           },
           {
             "itemId": "english-pre-a1-m011-grammar-ex01-i10",
             "position": 10,
-            "prompt": "Complete: We can ___ here.",
+            "prompt": "Which is the correct command form of “stop”?",
             "evaluation": {
               "type": "single_choice"
             },
             "options": [
-              "stops",
-              "stopping",
-              "stop"
+              "Stop!",
+              "Stops!"
             ],
-            "answer": "stop"
+            "answer": "Stop!"
           }
-        ]
+        ],
+        "theory": {
+          "title": "The affirmative imperative",
+          "explanation": "Usamos el verbo en forma base para dar una instrucción directa. No escribimos el sujeto y no añadimos -s. Please puede hacer la orden más amable.",
+          "tip": "Run! = ¡Corre! / Run, please. = Corre, por favor.",
+          "patterns": [
+            {
+              "label": "Forma afirmativa",
+              "pattern": "base verb (+ please)",
+              "examples": [
+                "Run!",
+                "Jump, please.",
+                "Stop!"
+              ]
+            },
+            {
+              "label": "Sin -s",
+              "pattern": "verb, not verb-s",
+              "examples": [
+                "Correct: Run!",
+                "Not: Runs!"
+              ]
+            }
+          ]
+        }
       }
     },
     {
@@ -926,82 +816,82 @@
           {
             "itemId": "english-pre-a1-m011-pronunciation-ex01-i01",
             "position": 1,
-            "word": "run",
-            "translation": "correr",
-            "pronunciationGuide": "ran",
-            "audio": "tts:en-GB:run"
-          },
-          {
-            "itemId": "english-pre-a1-m011-pronunciation-ex01-i02",
-            "position": 2,
-            "word": "jump",
-            "translation": "saltar",
-            "pronunciationGuide": "yamp",
-            "audio": "tts:en-GB:jump"
-          },
-          {
-            "itemId": "english-pre-a1-m011-pronunciation-ex01-i03",
-            "position": 3,
-            "word": "climb",
-            "translation": "trepar",
-            "pronunciationGuide": "kláim",
-            "audio": "tts:en-GB:climb"
-          },
-          {
-            "itemId": "english-pre-a1-m011-pronunciation-ex01-i04",
-            "position": 4,
-            "word": "swing",
-            "translation": "columpiarse",
-            "pronunciationGuide": "suíng",
-            "audio": "tts:en-GB:swing"
-          },
-          {
-            "itemId": "english-pre-a1-m011-pronunciation-ex01-i05",
-            "position": 5,
-            "word": "slide",
-            "translation": "deslizarse",
-            "pronunciationGuide": "sláid",
-            "audio": "tts:en-GB:slide"
-          },
-          {
-            "itemId": "english-pre-a1-m011-pronunciation-ex01-i06",
-            "position": 6,
             "word": "play",
             "translation": "jugar",
             "pronunciationGuide": "pléi",
             "audio": "tts:en-GB:play"
           },
           {
+            "itemId": "english-pre-a1-m011-pronunciation-ex01-i02",
+            "position": 2,
+            "word": "run",
+            "translation": "correr",
+            "pronunciationGuide": "rán",
+            "audio": "tts:en-GB:run"
+          },
+          {
+            "itemId": "english-pre-a1-m011-pronunciation-ex01-i03",
+            "position": 3,
+            "word": "jump",
+            "translation": "saltar",
+            "pronunciationGuide": "yámp",
+            "audio": "tts:en-GB:jump"
+          },
+          {
+            "itemId": "english-pre-a1-m011-pronunciation-ex01-i04",
+            "position": 4,
+            "word": "climb",
+            "translation": "trepar",
+            "pronunciationGuide": "kláim",
+            "audio": "tts:en-GB:climb"
+          },
+          {
+            "itemId": "english-pre-a1-m011-pronunciation-ex01-i05",
+            "position": 5,
+            "word": "swing",
+            "translation": "columpiarse",
+            "pronunciationGuide": "suíng",
+            "audio": "tts:en-GB:swing"
+          },
+          {
+            "itemId": "english-pre-a1-m011-pronunciation-ex01-i06",
+            "position": 6,
+            "word": "slide",
+            "translation": "deslizarse",
+            "pronunciationGuide": "sláid",
+            "audio": "tts:en-GB:slide"
+          },
+          {
             "itemId": "english-pre-a1-m011-pronunciation-ex01-i07",
             "position": 7,
-            "word": "stop",
-            "translation": "parar",
-            "pronunciationGuide": "stop",
-            "audio": "tts:en-GB:stop"
+            "word": "hop",
+            "translation": "saltar a la pata coja",
+            "pronunciationGuide": "jap*",
+            "audio": "tts:en-GB:hop"
           },
           {
             "itemId": "english-pre-a1-m011-pronunciation-ex01-i08",
             "position": 8,
+            "word": "skip",
+            "translation": "saltar a saltitos",
+            "pronunciationGuide": "skíp",
+            "audio": "tts:en-GB:skip"
+          },
+          {
+            "itemId": "english-pre-a1-m011-pronunciation-ex01-i09",
+            "position": 9,
             "word": "walk",
             "translation": "caminar",
             "pronunciationGuide": "uók",
             "audio": "tts:en-GB:walk"
           },
           {
-            "itemId": "english-pre-a1-m011-pronunciation-ex01-i09",
-            "position": 9,
-            "word": "hop",
-            "translation": "saltar a la pata coja",
-            "pronunciationGuide": "hop",
-            "audio": "tts:en-GB:hop"
-          },
-          {
             "itemId": "english-pre-a1-m011-pronunciation-ex01-i10",
             "position": 10,
-            "word": "skip",
-            "translation": "saltar a saltitos",
-            "pronunciationGuide": "skip",
-            "audio": "tts:en-GB:skip"
+            "word": "stop",
+            "translation": "parar",
+            "pronunciationGuide": "stóp",
+            "audio": "tts:en-GB:stop"
           }
         ]
       }
@@ -1015,88 +905,82 @@
         "type": "reading_comprehension",
         "content": {
           "passageId": "english-pre-a1-m011-reading-passage-01",
-          "passage": "On Saturday, Mia goes to the playground with her brother Leo. They run to the swings and jump over a small line. Leo can climb the steps and go down the slide. Mia likes to swing. They play with a ball, but they stop when their mum calls. Then they walk home together."
+          "passage": "At the playground. Mia: Hello, Leo! Leo: Hi, Mia! Mia: Play, please! Leo: OK! Mia: Run! Leo: OK! Mia: Jump! Leo: OK! Mia: Climb! Leo: OK! Mia: Swing! Leo: OK! Mia: Slide! Leo: OK! Mia: Hop! Leo: OK! Mia: Skip! Leo: OK! Mia: Walk! Leo: OK! Mia: Stop! Leo: OK! Mia: Goodbye! Leo: Goodbye!"
         },
         "items": [
           {
             "itemId": "english-pre-a1-m011-reading-ex01-i01",
             "position": 1,
-            "prompt": "When does Mia go to the playground?",
+            "prompt": "¿Dónde están Mia y Leo?",
             "evaluation": {
               "type": "single_choice"
             },
             "options": [
-              "On Saturday",
-              "On Monday",
-              "On Friday"
+              "At the playground",
+              "At home"
             ],
-            "answer": "On Saturday"
+            "answer": "At the playground"
           },
           {
             "itemId": "english-pre-a1-m011-reading-ex01-i02",
             "position": 2,
-            "prompt": "Who goes with Mia?",
+            "prompt": "¿Quién dice «Play, please!»?",
             "evaluation": {
               "type": "single_choice"
             },
             "options": [
-              "Her teacher",
-              "Her brother Leo",
-              "Her friend"
+              "Mia",
+              "Leo"
             ],
-            "answer": "Her brother Leo"
+            "answer": "Mia"
           },
           {
             "itemId": "english-pre-a1-m011-reading-ex01-i03",
             "position": 3,
-            "prompt": "Where do they run?",
+            "prompt": "¿Qué palabra significa «correr»?",
             "evaluation": {
               "type": "single_choice"
             },
             "options": [
-              "To the shops",
-              "To school",
-              "To the swings"
+              "Run",
+              "Walk"
             ],
-            "answer": "To the swings"
+            "answer": "Run"
           },
           {
             "itemId": "english-pre-a1-m011-reading-ex01-i04",
             "position": 4,
-            "prompt": "What does Leo climb?",
+            "prompt": "¿Qué orden significa «saltar»?",
             "evaluation": {
               "type": "single_choice"
             },
             "options": [
-              "A tree",
-              "A wall",
-              "The steps"
+              "Jump",
+              "Stop"
             ],
-            "answer": "The steps"
+            "answer": "Jump"
           },
           {
             "itemId": "english-pre-a1-m011-reading-ex01-i05",
             "position": 5,
-            "prompt": "What does Leo go down?",
-            "evaluation": {
-              "type": "single_choice"
-            },
-            "options": [
-              "The slide",
-              "The stairs at home",
-              "The hill"
-            ],
-            "answer": "The slide"
-          },
-          {
-            "itemId": "english-pre-a1-m011-reading-ex01-i06",
-            "position": 6,
-            "prompt": "What does Mia like to do?",
+            "prompt": "¿Qué orden significa «trepar»?",
             "evaluation": {
               "type": "single_choice"
             },
             "options": [
               "Climb",
+              "Slide"
+            ],
+            "answer": "Climb"
+          },
+          {
+            "itemId": "english-pre-a1-m011-reading-ex01-i06",
+            "position": 6,
+            "prompt": "¿Qué orden significa «columpiarse»?",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
               "Swing",
               "Skip"
             ],
@@ -1105,58 +989,54 @@
           {
             "itemId": "english-pre-a1-m011-reading-ex01-i07",
             "position": 7,
-            "prompt": "What do they play with?",
+            "prompt": "¿Qué orden significa «deslizarse»?",
             "evaluation": {
               "type": "single_choice"
             },
             "options": [
-              "A kite",
-              "A bike",
-              "A ball"
+              "Slide",
+              "Play"
             ],
-            "answer": "A ball"
+            "answer": "Slide"
           },
           {
             "itemId": "english-pre-a1-m011-reading-ex01-i08",
             "position": 8,
-            "prompt": "Why do they stop?",
+            "prompt": "¿Qué orden significa «caminar»?",
             "evaluation": {
               "type": "single_choice"
             },
             "options": [
-              "It starts to rain",
-              "Their mum calls",
-              "They are tired"
+              "Walk",
+              "Hop"
             ],
-            "answer": "Their mum calls"
+            "answer": "Walk"
           },
           {
             "itemId": "english-pre-a1-m011-reading-ex01-i09",
             "position": 9,
-            "prompt": "How do they go home?",
+            "prompt": "¿Qué orden significa «parar»?",
             "evaluation": {
               "type": "single_choice"
             },
             "options": [
-              "They walk",
-              "They run",
-              "They take a bus"
+              "Stop",
+              "Run"
             ],
-            "answer": "They walk"
+            "answer": "Stop"
           },
           {
             "itemId": "english-pre-a1-m011-reading-ex01-i10",
             "position": 10,
-            "prompt": "Who is Leo?",
+            "prompt": "¿Qué dicen al final?",
             "evaluation": {
               "type": "single_choice"
             },
             "options": [
-              "Mia's brother",
-              "Mia's dad",
-              "Mia's teacher"
+              "Goodbye",
+              "Hello"
             ],
-            "answer": "Mia's brother"
+            "answer": "Goodbye"
           }
         ]
       }
@@ -1172,8 +1052,8 @@
           {
             "itemId": "english-pre-a1-m011-writing-ex01-i01",
             "position": 1,
-            "audio": "tts:en-GB:I run to the gate.",
-            "expectedAnswer": "I play in the playground.",
+            "audio": "tts:en-GB:Play, please!",
+            "expectedAnswer": "Play, please!",
             "evaluation": {
               "type": "normalised_text"
             },
@@ -1183,15 +1063,15 @@
             "segments": [
               {
                 "segmentId": "english-pre-a1-m011-writing-segment-01",
-                "text": "I play in the playground."
+                "text": "Play, please!"
               }
             ]
           },
           {
             "itemId": "english-pre-a1-m011-writing-ex01-i02",
             "position": 2,
-            "audio": "tts:en-GB:I jump over the line.",
-            "expectedAnswer": "You walk to the swings.",
+            "audio": "tts:en-GB:Run!",
+            "expectedAnswer": "Run!",
             "evaluation": {
               "type": "normalised_text"
             },
@@ -1201,15 +1081,15 @@
             "segments": [
               {
                 "segmentId": "english-pre-a1-m011-writing-segment-02",
-                "text": "You walk to the swings."
+                "text": "Run!"
               }
             ]
           },
           {
             "itemId": "english-pre-a1-m011-writing-ex01-i03",
             "position": 3,
-            "audio": "tts:en-GB:I can climb the steps.",
-            "expectedAnswer": "He runs to the gate.",
+            "audio": "tts:en-GB:Jump!",
+            "expectedAnswer": "Jump!",
             "evaluation": {
               "type": "normalised_text"
             },
@@ -1219,15 +1099,15 @@
             "segments": [
               {
                 "segmentId": "english-pre-a1-m011-writing-segment-03",
-                "text": "He runs to the gate."
+                "text": "Jump!"
               }
             ]
           },
           {
             "itemId": "english-pre-a1-m011-writing-ex01-i04",
             "position": 4,
-            "audio": "tts:en-GB:I swing on the seat.",
-            "expectedAnswer": "She jumps over a line.",
+            "audio": "tts:en-GB:Climb!",
+            "expectedAnswer": "Climb!",
             "evaluation": {
               "type": "normalised_text"
             },
@@ -1237,15 +1117,15 @@
             "segments": [
               {
                 "segmentId": "english-pre-a1-m011-writing-segment-04",
-                "text": "She jumps over a line."
+                "text": "Climb!"
               }
             ]
           },
           {
             "itemId": "english-pre-a1-m011-writing-ex01-i05",
             "position": 5,
-            "audio": "tts:en-GB:I slide down the slide.",
-            "expectedAnswer": "They swing together.",
+            "audio": "tts:en-GB:Swing!",
+            "expectedAnswer": "Swing!",
             "evaluation": {
               "type": "normalised_text"
             },
@@ -1255,15 +1135,15 @@
             "segments": [
               {
                 "segmentId": "english-pre-a1-m011-writing-segment-05",
-                "text": "They swing together."
+                "text": "Swing!"
               }
             ]
           },
           {
             "itemId": "english-pre-a1-m011-writing-ex01-i06",
             "position": 6,
-            "audio": "tts:en-GB:I play with my friends.",
-            "expectedAnswer": "I can climb the steps.",
+            "audio": "tts:en-GB:Slide!",
+            "expectedAnswer": "Slide!",
             "evaluation": {
               "type": "normalised_text"
             },
@@ -1273,15 +1153,15 @@
             "segments": [
               {
                 "segmentId": "english-pre-a1-m011-writing-segment-06",
-                "text": "I can climb the steps."
+                "text": "Slide!"
               }
             ]
           },
           {
             "itemId": "english-pre-a1-m011-writing-ex01-i07",
             "position": 7,
-            "audio": "tts:en-GB:Please stop here.",
-            "expectedAnswer": "You can slide down the slide.",
+            "audio": "tts:en-GB:Hop!",
+            "expectedAnswer": "Hop!",
             "evaluation": {
               "type": "normalised_text"
             },
@@ -1291,15 +1171,15 @@
             "segments": [
               {
                 "segmentId": "english-pre-a1-m011-writing-segment-07",
-                "text": "You can slide down the slide."
+                "text": "Hop!"
               }
             ]
           },
           {
             "itemId": "english-pre-a1-m011-writing-ex01-i08",
             "position": 8,
-            "audio": "tts:en-GB:I walk to school.",
-            "expectedAnswer": "He can hop on one foot.",
+            "audio": "tts:en-GB:Skip!",
+            "expectedAnswer": "Skip!",
             "evaluation": {
               "type": "normalised_text"
             },
@@ -1309,15 +1189,15 @@
             "segments": [
               {
                 "segmentId": "english-pre-a1-m011-writing-segment-08",
-                "text": "He can hop on one foot."
+                "text": "Skip!"
               }
             ]
           },
           {
             "itemId": "english-pre-a1-m011-writing-ex01-i09",
             "position": 9,
-            "audio": "tts:en-GB:I hop on one foot.",
-            "expectedAnswer": "She can skip to the music.",
+            "audio": "tts:en-GB:Walk!",
+            "expectedAnswer": "Walk!",
             "evaluation": {
               "type": "normalised_text"
             },
@@ -1327,15 +1207,15 @@
             "segments": [
               {
                 "segmentId": "english-pre-a1-m011-writing-segment-09",
-                "text": "She can skip to the music."
+                "text": "Walk!"
               }
             ]
           },
           {
             "itemId": "english-pre-a1-m011-writing-ex01-i10",
             "position": 10,
-            "audio": "tts:en-GB:I skip to the music.",
-            "expectedAnswer": "We can stop here.",
+            "audio": "tts:en-GB:Stop!",
+            "expectedAnswer": "Stop!",
             "evaluation": {
               "type": "normalised_text"
             },
@@ -1345,7 +1225,7 @@
             "segments": [
               {
                 "segmentId": "english-pre-a1-m011-writing-segment-10",
-                "text": "We can stop here."
+                "text": "Stop!"
               }
             ]
           }
@@ -1363,8 +1243,8 @@
           {
             "itemId": "english-pre-a1-m011-speaking-ex01-i01",
             "position": 1,
-            "prompt": "Say a sentence with “play” and I.",
-            "modelAnswer": "I play in the playground.",
+            "prompt": "Say the English command for “jugar”.",
+            "modelAnswer": "Play!",
             "evaluation": {
               "type": "transcription_feedback",
               "transcriptionSeparateFromPronunciation": true
@@ -1373,8 +1253,8 @@
           {
             "itemId": "english-pre-a1-m011-speaking-ex01-i02",
             "position": 2,
-            "prompt": "Say a sentence with “walk” and you.",
-            "modelAnswer": "You walk to the swings.",
+            "prompt": "Say the English command for “correr”.",
+            "modelAnswer": "Run!",
             "evaluation": {
               "type": "transcription_feedback",
               "transcriptionSeparateFromPronunciation": true
@@ -1383,8 +1263,8 @@
           {
             "itemId": "english-pre-a1-m011-speaking-ex01-i03",
             "position": 3,
-            "prompt": "Say a sentence with “run” and he.",
-            "modelAnswer": "He runs to the gate.",
+            "prompt": "Say the English command for “saltar”.",
+            "modelAnswer": "Jump!",
             "evaluation": {
               "type": "transcription_feedback",
               "transcriptionSeparateFromPronunciation": true
@@ -1393,8 +1273,8 @@
           {
             "itemId": "english-pre-a1-m011-speaking-ex01-i04",
             "position": 4,
-            "prompt": "Say a sentence with “jump” and she.",
-            "modelAnswer": "She jumps over a line.",
+            "prompt": "Say the English command for “trepar”.",
+            "modelAnswer": "Climb!",
             "evaluation": {
               "type": "transcription_feedback",
               "transcriptionSeparateFromPronunciation": true
@@ -1403,8 +1283,8 @@
           {
             "itemId": "english-pre-a1-m011-speaking-ex01-i05",
             "position": 5,
-            "prompt": "Say a sentence with “swing” and they.",
-            "modelAnswer": "They swing together.",
+            "prompt": "Say the English command for “columpiarse”.",
+            "modelAnswer": "Swing!",
             "evaluation": {
               "type": "transcription_feedback",
               "transcriptionSeparateFromPronunciation": true
@@ -1413,8 +1293,8 @@
           {
             "itemId": "english-pre-a1-m011-speaking-ex01-i06",
             "position": 6,
-            "prompt": "Say what you can do with “climb”.",
-            "modelAnswer": "I can climb the steps.",
+            "prompt": "Say the English command for “deslizarse”.",
+            "modelAnswer": "Slide!",
             "evaluation": {
               "type": "transcription_feedback",
               "transcriptionSeparateFromPronunciation": true
@@ -1423,8 +1303,8 @@
           {
             "itemId": "english-pre-a1-m011-speaking-ex01-i07",
             "position": 7,
-            "prompt": "Say what you can do with “slide”.",
-            "modelAnswer": "You can slide down the slide.",
+            "prompt": "Say the English command for “saltar a la pata coja”.",
+            "modelAnswer": "Hop!",
             "evaluation": {
               "type": "transcription_feedback",
               "transcriptionSeparateFromPronunciation": true
@@ -1433,8 +1313,8 @@
           {
             "itemId": "english-pre-a1-m011-speaking-ex01-i08",
             "position": 8,
-            "prompt": "Say what he can do with “hop”.",
-            "modelAnswer": "He can hop on one foot.",
+            "prompt": "Say the English command for “saltar a saltitos”.",
+            "modelAnswer": "Skip!",
             "evaluation": {
               "type": "transcription_feedback",
               "transcriptionSeparateFromPronunciation": true
@@ -1443,8 +1323,8 @@
           {
             "itemId": "english-pre-a1-m011-speaking-ex01-i09",
             "position": 9,
-            "prompt": "Say what she can do with “skip”.",
-            "modelAnswer": "She can skip to the music.",
+            "prompt": "Say the English command for “caminar”.",
+            "modelAnswer": "Walk!",
             "evaluation": {
               "type": "transcription_feedback",
               "transcriptionSeparateFromPronunciation": true
@@ -1453,8 +1333,8 @@
           {
             "itemId": "english-pre-a1-m011-speaking-ex01-i10",
             "position": 10,
-            "prompt": "Say what we can do with “stop”.",
-            "modelAnswer": "We can stop here.",
+            "prompt": "Say the English command for “parar”.",
+            "modelAnswer": "Stop!",
             "evaluation": {
               "type": "transcription_feedback",
               "transcriptionSeparateFromPronunciation": true
@@ -1471,9 +1351,9 @@
         "exerciseId": "english-pre-a1-m011-listening-ex01",
         "type": "listening_gap_fill",
         "content": {
-          "audio": "tts:en-GB:At the playground, I play. I run and jump. I climb, swing and slide. I hop and skip. I walk and stop.",
+          "audio": "tts:en-GB:At the playground. Mia: Hello, Leo! Leo: Hi, Mia! Mia: Play, please! Leo: OK! Mia: Run! Leo: OK! Mia: Jump! Leo: OK! Mia: Climb! Leo: OK! Mia: Swing! Leo: OK! Mia: Slide! Leo: OK! Mia: Hop! Leo: OK! Mia: Skip! Leo: OK! Mia: Walk! Leo: OK! Mia: Stop! Leo: OK! Mia: Goodbye! Leo: Goodbye!",
           "audioLocale": "en-GB",
-          "transcriptTemplate": "At the playground, I [[gap-01]]. I [[gap-02]] and [[gap-03]]. I [[gap-04]], [[gap-05]] and [[gap-06]]. I [[gap-07]] and [[gap-08]]. I [[gap-09]] and [[gap-10]].",
+          "transcriptTemplate": "At the playground. Mia: Hello, Leo! Leo: Hi, Mia! Mia: [[gap-01]], please! Leo: OK! Mia: [[gap-02]]! Leo: OK! Mia: [[gap-03]]! Leo: OK! Mia: [[gap-04]]! Leo: OK! Mia: [[gap-05]]! Leo: OK! Mia: [[gap-06]]! Leo: OK! Mia: [[gap-07]]! Leo: OK! Mia: [[gap-08]]! Leo: OK! Mia: [[gap-09]]! Leo: OK! Mia: [[gap-10]]! Leo: OK! Mia: Goodbye! Leo: Goodbye!",
           "wordBank": [
             {
               "wordId": "english-pre-a1-m011-listening-word-01",
@@ -1517,9 +1397,9 @@
             }
           ],
           "interaction": "select_place_move_replace",
-          "audioTranscript": "At the playground, I play. I run and jump. I climb, swing and slide. I hop and skip. I walk and stop.",
+          "audioTranscript": "At the playground. Mia: Hello, Leo! Leo: Hi, Mia! Mia: Play, please! Leo: OK! Mia: Run! Leo: OK! Mia: Jump! Leo: OK! Mia: Climb! Leo: OK! Mia: Swing! Leo: OK! Mia: Slide! Leo: OK! Mia: Hop! Leo: OK! Mia: Skip! Leo: OK! Mia: Walk! Leo: OK! Mia: Stop! Leo: OK! Mia: Goodbye! Leo: Goodbye!",
           "audioStatus": "synthetic_pending_review",
-          "translation": "En el parque infantil, juego. Corro y salto. Trepo, me columpio y me deslizo. Salto a la pata coja y doy saltitos. Camino y me detengo."
+          "translation": "En el parque infantil. Mia: ¡Hola, Leo! Leo: ¡Hola, Mia! Mia: ¡Juega, por favor! Leo: ¡Vale! Mia: ¡Corre! Leo: ¡Vale! Mia: ¡Salta! Leo: ¡Vale! Mia: ¡Trepa! Leo: ¡Vale! Mia: ¡Colúmpiate! Leo: ¡Vale! Mia: ¡Deslízate! Leo: ¡Vale! Mia: ¡Salta a la pata coja! Leo: ¡Vale! Mia: ¡Da saltitos! Leo: ¡Vale! Mia: ¡Camina! Leo: ¡Vale! Mia: ¡Para! Leo: ¡Vale! Mia: ¡Adiós! Leo: ¡Adiós!"
         },
         "items": [
           {
