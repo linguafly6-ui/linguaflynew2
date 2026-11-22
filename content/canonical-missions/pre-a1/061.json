@@ -636,142 +636,132 @@
           {
             "itemId": "english-pre-a1-m061-grammar-ex01-i01",
             "position": 1,
-            "prompt": "Elige el modelo correcto: This is my bag.",
+            "prompt": "Complete: This is ___ bag. (I own it.)",
             "evaluation": {
               "type": "single_choice"
             },
             "options": [
-              "This is my bag.",
-              "This is your book.",
-              "This is his pencil."
-            ],
-            "answer": "This is my bag."
+              "my",
+              "your",
+              "his"
+            ]
           },
           {
             "itemId": "english-pre-a1-m061-grammar-ex01-i02",
             "position": 2,
-            "prompt": "Elige el modelo correcto: This is your book.",
+            "prompt": "Complete: This is ___ book. (You own it.)",
             "evaluation": {
               "type": "single_choice"
             },
             "options": [
-              "This is your book.",
-              "This is his pencil.",
-              "This is her toy."
-            ],
-            "answer": "This is your book."
+              "your",
+              "my",
+              "her"
+            ]
           },
           {
             "itemId": "english-pre-a1-m061-grammar-ex01-i03",
             "position": 3,
-            "prompt": "Elige el modelo correcto: This is his pencil.",
+            "prompt": "Complete: This is ___ pencil. (Tom owns it.)",
             "evaluation": {
               "type": "single_choice"
             },
             "options": [
-              "This is his pencil.",
-              "This is her toy.",
-              "My ruler is here."
-            ],
-            "answer": "This is his pencil."
+              "his",
+              "her",
+              "my"
+            ]
           },
           {
             "itemId": "english-pre-a1-m061-grammar-ex01-i04",
             "position": 4,
-            "prompt": "Elige el modelo correcto: This is her toy.",
+            "prompt": "Complete: This is ___ toy. (Anna owns it.)",
             "evaluation": {
               "type": "single_choice"
             },
             "options": [
-              "This is her toy.",
-              "My ruler is here.",
-              "Your eraser is here."
-            ],
-            "answer": "This is her toy."
+              "her",
+              "his",
+              "your"
+            ]
           },
           {
             "itemId": "english-pre-a1-m061-grammar-ex01-i05",
             "position": 5,
-            "prompt": "Elige el modelo correcto: My ruler is here.",
+            "prompt": "Complete: ___ ruler is here. (I own it.)",
             "evaluation": {
               "type": "single_choice"
             },
             "options": [
-              "My ruler is here.",
-              "Your eraser is here.",
-              "His book is here."
-            ],
-            "answer": "My ruler is here."
+              "My",
+              "Your",
+              "His"
+            ]
           },
           {
             "itemId": "english-pre-a1-m061-grammar-ex01-i06",
             "position": 6,
-            "prompt": "Elige el modelo correcto: Your eraser is here.",
+            "prompt": "Complete: ___ eraser is here. (You own it.)",
             "evaluation": {
               "type": "single_choice"
             },
             "options": [
-              "Your eraser is here.",
-              "His book is here.",
-              "Her bag is here."
-            ],
-            "answer": "Your eraser is here."
+              "Your",
+              "My",
+              "Her"
+            ]
           },
           {
             "itemId": "english-pre-a1-m061-grammar-ex01-i07",
             "position": 7,
-            "prompt": "Elige el modelo correcto: His book is here.",
+            "prompt": "Complete: ___ book is here. (Tom owns it.)",
             "evaluation": {
               "type": "single_choice"
             },
             "options": [
-              "His book is here.",
-              "Her bag is here.",
-              "This is my pencil."
-            ],
-            "answer": "His book is here."
+              "His",
+              "Her",
+              "My"
+            ]
           },
           {
             "itemId": "english-pre-a1-m061-grammar-ex01-i08",
             "position": 8,
-            "prompt": "Elige el modelo correcto: Her bag is here.",
+            "prompt": "Complete: ___ bag is here. (Anna owns it.)",
             "evaluation": {
               "type": "single_choice"
             },
             "options": [
-              "Her bag is here.",
-              "This is my pencil.",
-              "This is her ruler."
-            ],
-            "answer": "Her bag is here."
+              "Her",
+              "His",
+              "Your"
+            ]
           },
           {
             "itemId": "english-pre-a1-m061-grammar-ex01-i09",
             "position": 9,
-            "prompt": "Elige el modelo correcto: This is my pencil.",
+            "prompt": "Choose the correct sentence.",
             "evaluation": {
               "type": "single_choice"
             },
             "options": [
               "This is my pencil.",
-              "This is her ruler.",
-              "This is my bag."
-            ],
-            "answer": "This is my pencil."
+              "This is I pencil.",
+              "This is mine pencil."
+            ]
           },
           {
             "itemId": "english-pre-a1-m061-grammar-ex01-i10",
             "position": 10,
-            "prompt": "Elige el modelo correcto: This is her ruler.",
+            "prompt": "Choose the correct sentence.",
             "evaluation": {
               "type": "single_choice"
             },
             "options": [
               "This is her ruler.",
-              "This is my bag.",
-              "This is your book."
-            ],
-            "answer": "This is her ruler."
+              "This is she ruler.",
+              "This is hers ruler."
+            ]
           }
         ],
         "theory": {
