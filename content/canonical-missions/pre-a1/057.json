@@ -636,49 +636,46 @@
           {
             "itemId": "english-pre-a1-m057-grammar-ex01-i01",
             "position": 1,
-            "prompt": "Elige el modelo correcto: Hello, Emma.",
+            "prompt": "You meet Emma in the morning. Choose the greeting.",
             "evaluation": {
               "type": "single_choice"
             },
             "options": [
-              "Hello, Emma.",
-              "Hi, Leo.",
-              "Good morning."
-            ],
-            "answer": "Hello, Emma."
+              "Good morning, Emma.",
+              "Good night, Emma.",
+              "Goodbye, Emma."
+            ]
           },
           {
             "itemId": "english-pre-a1-m057-grammar-ex01-i02",
             "position": 2,
-            "prompt": "Elige el modelo correcto: Hi, Leo.",
+            "prompt": "You greet Leo informally. Choose the phrase.",
             "evaluation": {
               "type": "single_choice"
             },
             "options": [
               "Hi, Leo.",
-              "Good morning.",
-              "Good afternoon."
-            ],
-            "answer": "Hi, Leo."
+              "Good night, Leo.",
+              "See you tomorrow, Leo."
+            ]
           },
           {
             "itemId": "english-pre-a1-m057-grammar-ex01-i03",
             "position": 3,
-            "prompt": "Elige el modelo correcto: Good morning.",
+            "prompt": "You meet your teacher at 9 a.m. Choose the greeting.",
             "evaluation": {
               "type": "single_choice"
             },
             "options": [
               "Good morning.",
-              "Good afternoon.",
-              "Good night."
-            ],
-            "answer": "Good morning."
+              "Good night.",
+              "Goodbye."
+            ]
           },
           {
             "itemId": "english-pre-a1-m057-grammar-ex01-i04",
             "position": 4,
-            "prompt": "Elige el modelo correcto: Good afternoon.",
+            "prompt": "You meet a friend at 2 p.m. Choose the greeting.",
             "evaluation": {
               "type": "single_choice"
             },
@@ -686,92 +683,85 @@
               "Good afternoon.",
               "Good night.",
               "Goodbye."
-            ],
-            "answer": "Good afternoon."
+            ]
           },
           {
             "itemId": "english-pre-a1-m057-grammar-ex01-i05",
             "position": 5,
-            "prompt": "Elige el modelo correcto: Good night.",
+            "prompt": "You are going to bed. Choose the phrase.",
             "evaluation": {
               "type": "single_choice"
             },
             "options": [
               "Good night.",
-              "Goodbye.",
-              "See you tomorrow."
-            ],
-            "answer": "Good night."
+              "Good afternoon.",
+              "Good morning."
+            ]
           },
           {
             "itemId": "english-pre-a1-m057-grammar-ex01-i06",
             "position": 6,
-            "prompt": "Elige el modelo correcto: Goodbye.",
+            "prompt": "You are leaving school. Choose the phrase.",
             "evaluation": {
               "type": "single_choice"
             },
             "options": [
               "Goodbye.",
-              "See you tomorrow.",
-              "Welcome, Emma."
-            ],
-            "answer": "Goodbye."
+              "Welcome.",
+              "Good morning."
+            ]
           },
           {
             "itemId": "english-pre-a1-m057-grammar-ex01-i07",
             "position": 7,
-            "prompt": "Elige el modelo correcto: See you tomorrow.",
+            "prompt": "You will see your friend tomorrow. Choose the phrase.",
             "evaluation": {
               "type": "single_choice"
             },
             "options": [
               "See you tomorrow.",
-              "Welcome, Emma.",
-              "A book, please."
-            ],
-            "answer": "See you tomorrow."
+              "Welcome.",
+              "Good afternoon."
+            ]
           },
           {
             "itemId": "english-pre-a1-m057-grammar-ex01-i08",
             "position": 8,
-            "prompt": "Elige el modelo correcto: Welcome, Emma.",
+            "prompt": "A new student arrives. Choose the welcoming phrase.",
             "evaluation": {
               "type": "single_choice"
             },
             "options": [
               "Welcome, Emma.",
-              "A book, please.",
-              "See you."
-            ],
-            "answer": "Welcome, Emma."
+              "Goodbye, Emma.",
+              "See you tomorrow, Emma."
+            ]
           },
           {
             "itemId": "english-pre-a1-m057-grammar-ex01-i09",
             "position": 9,
-            "prompt": "Elige el modelo correcto: A book, please.",
+            "prompt": "Ask politely for a book.",
             "evaluation": {
               "type": "single_choice"
             },
             "options": [
               "A book, please.",
-              "See you.",
-              "Hello, Emma."
-            ],
-            "answer": "A book, please."
+              "A book, goodbye.",
+              "Please a book is."
+            ]
           },
           {
             "itemId": "english-pre-a1-m057-grammar-ex01-i10",
             "position": 10,
-            "prompt": "Elige el modelo correcto: See you.",
+            "prompt": "You are leaving a friend. Choose the phrase.",
             "evaluation": {
               "type": "single_choice"
             },
             "options": [
               "See you.",
-              "Hello, Emma.",
-              "Hi, Leo."
-            ],
-            "answer": "See you."
+              "Welcome.",
+              "Good morning."
+            ]
           }
         ],
         "theory": {

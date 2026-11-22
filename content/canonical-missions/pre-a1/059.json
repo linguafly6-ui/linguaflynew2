@@ -636,142 +636,132 @@
           {
             "itemId": "english-pre-a1-m059-grammar-ex01-i01",
             "position": 1,
-            "prompt": "Elige el modelo correcto: What is this?",
+            "prompt": "Choose the correct question about an object.",
             "evaluation": {
               "type": "single_choice"
             },
             "options": [
               "What is this?",
-              "It's a pencil.",
-              "Is it a book?"
-            ],
-            "answer": "What is this?"
+              "What this is?",
+              "What are this?"
+            ]
           },
           {
             "itemId": "english-pre-a1-m059-grammar-ex01-i02",
             "position": 2,
-            "prompt": "Elige el modelo correcto: It's a pencil.",
+            "prompt": "Complete: It is ___ pencil.",
             "evaluation": {
               "type": "single_choice"
             },
             "options": [
-              "It's a pencil.",
-              "Is it a book?",
-              "Yes, it is."
-            ],
-            "answer": "It's a pencil."
+              "a",
+              "an",
+              "are"
+            ]
           },
           {
             "itemId": "english-pre-a1-m059-grammar-ex01-i03",
             "position": 3,
-            "prompt": "Elige el modelo correcto: Is it a book?",
+            "prompt": "Choose the correct question.",
             "evaluation": {
               "type": "single_choice"
             },
             "options": [
               "Is it a book?",
-              "Yes, it is.",
-              "No, it isn't."
-            ],
-            "answer": "Is it a book?"
+              "It is a book?",
+              "Is a book it?"
+            ]
           },
           {
             "itemId": "english-pre-a1-m059-grammar-ex01-i04",
             "position": 4,
-            "prompt": "Elige el modelo correcto: Yes, it is.",
+            "prompt": "The object is a book. Choose the short answer.",
             "evaluation": {
               "type": "single_choice"
             },
             "options": [
               "Yes, it is.",
-              "No, it isn't.",
-              "It's a ruler."
-            ],
-            "answer": "Yes, it is."
+              "Yes, it are.",
+              "Yes, it am."
+            ]
           },
           {
             "itemId": "english-pre-a1-m059-grammar-ex01-i05",
             "position": 5,
-            "prompt": "Elige el modelo correcto: No, it isn't.",
+            "prompt": "The object is not a ruler. Choose the short answer.",
             "evaluation": {
               "type": "single_choice"
             },
             "options": [
               "No, it isn't.",
-              "It's a ruler.",
-              "It's a bag."
-            ],
-            "answer": "No, it isn't."
+              "No, it aren't.",
+              "No, it am not."
+            ]
           },
           {
             "itemId": "english-pre-a1-m059-grammar-ex01-i06",
             "position": 6,
-            "prompt": "Elige el modelo correcto: It's a ruler.",
+            "prompt": "Complete: It is ___ ruler.",
             "evaluation": {
               "type": "single_choice"
             },
             "options": [
-              "It's a ruler.",
-              "It's a bag.",
-              "It's an eraser."
-            ],
-            "answer": "It's a ruler."
+              "a",
+              "an",
+              "are"
+            ]
           },
           {
             "itemId": "english-pre-a1-m059-grammar-ex01-i07",
             "position": 7,
-            "prompt": "Elige el modelo correcto: It's a bag.",
+            "prompt": "Complete: It is ___ bag.",
             "evaluation": {
               "type": "single_choice"
             },
             "options": [
-              "It's a bag.",
-              "It's an eraser.",
-              "It's a chair."
-            ],
-            "answer": "It's a bag."
+              "a",
+              "an",
+              "are"
+            ]
           },
           {
             "itemId": "english-pre-a1-m059-grammar-ex01-i08",
             "position": 8,
-            "prompt": "Elige el modelo correcto: It's an eraser.",
+            "prompt": "Complete: It is ___ eraser.",
             "evaluation": {
               "type": "single_choice"
             },
             "options": [
-              "It's an eraser.",
-              "It's a chair.",
-              "It's a desk."
-            ],
-            "answer": "It's an eraser."
+              "an",
+              "a",
+              "are"
+            ]
           },
           {
             "itemId": "english-pre-a1-m059-grammar-ex01-i09",
             "position": 9,
-            "prompt": "Elige el modelo correcto: It's a chair.",
+            "prompt": "Choose the correct sentence.",
             "evaluation": {
               "type": "single_choice"
             },
             "options": [
-              "It's a chair.",
-              "It's a desk.",
-              "What is this?"
-            ],
-            "answer": "It's a chair."
+              "It is a chair.",
+              "It are a chair.",
+              "It am a chair."
+            ]
           },
           {
             "itemId": "english-pre-a1-m059-grammar-ex01-i10",
             "position": 10,
-            "prompt": "Elige el modelo correcto: It's a desk.",
+            "prompt": "Choose the correct sentence.",
             "evaluation": {
               "type": "single_choice"
             },
             "options": [
-              "It's a desk.",
-              "What is this?",
-              "It's a pencil."
-            ],
-            "answer": "It's a desk."
+              "It is a desk.",
+              "It are a desk.",
+              "It am a desk."
+            ]
           }
         ],
         "theory": {
