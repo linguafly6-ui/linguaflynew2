@@ -223,7 +223,16 @@ const PRE_A1_EXAMPLE_TRANSLATIONS: Record<string, string> = {
   "a book · an apple": "un libro · una manzana",
   "What is it? Who is she?": "¿Qué es? ¿Quién es ella?",
   "This is my bag. I've got a ball.": "Esta es mi mochila. Tengo una pelota.",
-  "I like apples. It has got a tail.": "Me gustan las manzanas. Tiene cola."
+  "I like apples. It has got a tail.": "Me gustan las manzanas. Tiene cola.",
+  "This is my bag.": "Esta es mi mochila.",
+  "This is your book.": "Este es tu libro.",
+  "I've got a ball.": "Tengo una pelota.",
+  "Have you got a pencil?": "¿Tienes un lápiz?",
+  "I like apples.": "Me gustan las manzanas.",
+  "It has got a tail.": "Tiene cola.",
+  "It is big.": "Es grande.",
+  "It's a red hat.": "Es un sombrero rojo.",
+  "What is it?": "¿Qué es?"
 };
 
 const preA1Listening: Record<number, { audioTranscript: string; template: string; words: string[] }> = {
@@ -269,7 +278,7 @@ export default function CanonicalMission({ missionData = missionSource as Missio
     const add = (english?: string, spanish?: string, overwrite = false) => {
       if (!english?.trim() || !spanish?.trim()) return;
       const value = spanish.trim();
-      if (/^(frase de repaso|modelo oral|modelo completo|estructura practicada|texto completo|repaso no evaluable|modelos con su significado|estructura y ejemplos|saludar|despedirse|preguntar|responder|expresar|reconocer|identificar|presentar|hablar|usar|utilizar|distinguir|aprender|practicar|comprender|observar|leer|elegir|decir|describir|fórmula|regla|concordancia|orden de las palabras)/i.test(value)) return;
+      if (/^(frase|expresión|texto|modelo|estructura|repaso|práctica|practica|contenido|significado|saludar|despedirse|preguntar|responder|expresar|reconocer|identificar|presentar|hablar|usar|utilizar|distinguir|aprender|comprender|observar|leer|elegir|decir|describir|fórmula|regla|concordancia|orden de las palabras)/i.test(value)) return;
       const key = normalise(english);
       if (overwrite || !translations.has(key)) translations.set(key, value);
     };
@@ -300,6 +309,10 @@ export default function CanonicalMission({ missionData = missionSource as Missio
     return translations;
   }, [mission]);
   const getExampleTranslation = (english: string) => exploreTranslations.get(english.toLocaleLowerCase("en-GB").replace(/[“”]/g, '"').replace(/[.!?…]/g, "").replace(/\s+/g, " ").trim());
+  const resolveSpanish = (english?: string, spanish?: string) => {
+    const isPlaceholder = !spanish?.trim() || /^(frase|expresión|texto|modelo|estructura|repaso|práctica|practica|contenido|significado|saludar|despedirse|preguntar|responder|expresar|reconocer|identificar|presentar|hablar|usar|utilizar|distinguir|aprender|comprender|observar|leer|elegir|decir|describir)/i.test(spanish);
+    return isPlaceholder ? (english ? getExampleTranslation(english) : undefined) ?? "Traducción pendiente de revisión académica." : spanish;
+  };
   const sectionLabel = (key: string) => mission.course.level.toUpperCase() === "B1" && key === "practice" ? "Vocabulary" : labels[key] ?? key;
   const [sectionKey, setSectionKey] = useState("explore");
   const [index, setIndex] = useState(0);
@@ -559,7 +572,7 @@ export default function CanonicalMission({ missionData = missionSource as Missio
                     {count ? <div className="flex flex-col items-center justify-center"><span className="text-3xl font-extrabold leading-none text-[#2872c8] sm:text-4xl">{count}</span><span className="mt-1 grid grid-cols-5 gap-0.5 text-[10px] leading-none sm:text-xs">{Array.from({length:count},(_,i)=><span key={i}>🍎</span>)}</span></div> : <span className="text-4xl sm:text-5xl">{word.length === 1 && /^[a-z]$/.test(word) ? "🔠" : visual[word] ?? "🖼️"}</span>}
                   </div>
                   <p className="mt-3 break-words text-base font-bold text-[#26364b] sm:text-lg">{entry.english}</p>
-                  <p className="mt-1 text-sm font-medium text-[#64816f]">{entry.spanish}</p>
+                  <p className="mt-1 text-sm font-medium text-[#64816f]">{resolveSpanish(entry.english, entry.spanish)}</p>
                   <p className="mt-1 min-h-5 text-xs font-semibold text-[#55708f]">{pronunciationGuide || "Guía de pronunciación pendiente"}</p>
                   <button type="button" aria-label={`Escuchar pronunciación de ${entry.english}`} onClick={() => speak(entry.english ?? "")} className="mt-3 rounded-full border border-[#dce6f0] bg-white px-3 py-1.5 text-xs font-semibold text-[#55708f]">♫ Escuchar voz automática</button>
                 </article>;
@@ -572,7 +585,7 @@ export default function CanonicalMission({ missionData = missionSource as Missio
             <div className="grid gap-3 sm:grid-cols-2">
               {(section.exercise.lesson?.phrases ?? []).map((entry,i) => <article key={i} className="flex items-start gap-3 rounded-xl border border-[#e8ebf0] bg-white p-4">
                 <span className="grid h-10 w-10 shrink-0 place-items-center rounded-xl bg-[#f2f6fb] text-xl" aria-hidden="true">{["👋","🌅","☀️","🌆","👋","🗓️","🙏","💛","🤝","❓"][i]}</span>
-                <div className="min-w-0 flex-1"><p className="font-semibold text-[#26364b]">{entry.english}</p><p className="mt-1 text-sm text-[#64816f]">{entry.spanish}</p>{entry.pronunciationGuide && <p className="mt-1 text-xs font-semibold text-[#55708f]">{entry.pronunciationGuide}</p>}{entry.note && <p className="mt-1 text-xs leading-5 text-[#8290a3]">{entry.note}</p>}</div>
+                <div className="min-w-0 flex-1"><p className="font-semibold text-[#26364b]">{entry.english}</p><p className="mt-1 text-sm text-[#64816f]">{resolveSpanish(entry.english, entry.spanish)}</p>{entry.pronunciationGuide && <p className="mt-1 text-xs font-semibold text-[#55708f]">{entry.pronunciationGuide}</p>}{entry.note && <p className="mt-1 text-xs leading-5 text-[#8290a3]">{entry.note}</p>}</div>
                 <button type="button" aria-label={`Escuchar ${entry.english}`} onClick={() => speak(entry.english)} className="shrink-0 rounded-full border border-[#dce6f0] px-3 py-2 text-xs text-[#55708f]">♫</button>
               </article>)}
             </div>
@@ -602,7 +615,7 @@ export default function CanonicalMission({ missionData = missionSource as Missio
             </div>
             <div className="mt-3 grid gap-3 sm:grid-cols-2">
               {(section.exercise.lesson?.grammar ?? []).map((entry,i) => <article key={i} className="rounded-xl border border-[#e8ebf0] bg-white p-4">
-                <p className="font-semibold text-[#26364b]">{entry.english}</p><p className="mt-1 text-sm font-medium text-[#64816f]">{entry.spanish}</p>{entry.note && <p className="mt-1 text-xs leading-5 text-[#8290a3]">{entry.note}</p>}
+                <p className="font-semibold text-[#26364b]">{entry.english}</p><p className="mt-1 text-sm font-medium text-[#64816f]">{resolveSpanish(entry.english, entry.spanish)}</p>{entry.note && <p className="mt-1 text-xs leading-5 text-[#8290a3]">{entry.note}</p>}
                 <button type="button" onClick={() => speak(entry.english)} className="mt-2 text-xs font-semibold text-[#55708f]">♫ Escuchar ejemplo</button>
               </article>)}
             </div>
@@ -621,33 +634,33 @@ export default function CanonicalMission({ missionData = missionSource as Missio
 
           {(section.exercise.lesson?.reading?.length ?? 0) > 0 && <section>
             <div className="mb-4"><p className="text-[10px] font-bold uppercase tracking-[.17em] text-[#8290a3]">05 · LECTURA</p><h3 className="mt-1 text-lg font-semibold text-[#26364b]">Lee y comprende el texto</h3><p className="mt-1 text-sm text-[#7b8798]">Cada frase aparece con su traducción para que entiendas el texto antes de responder preguntas.</p></div>
-            <div className="space-y-2">{(section.exercise.lesson?.reading ?? []).map((entry,i) => <article key={i} className="grid gap-1 rounded-xl border border-[#e8ebf0] bg-white p-4 sm:grid-cols-2 sm:gap-4"><p className="font-medium text-[#26364b]">{entry.english}</p><p className="text-sm text-[#64816f]">{entry.spanish}</p></article>)}</div>
+            <div className="space-y-2">{(section.exercise.lesson?.reading ?? []).map((entry,i) => <article key={i} className="grid gap-1 rounded-xl border border-[#e8ebf0] bg-white p-4 sm:grid-cols-2 sm:gap-4"><p className="font-medium text-[#26364b]">{entry.english}</p><p className="text-sm text-[#64816f]">{resolveSpanish(entry.english, entry.spanish)}</p></article>)}</div>
           </section>}
 
           {(section.exercise.lesson?.writing?.length ?? 0) > 0 && <section>
             <div className="mb-4"><p className="text-[10px] font-bold uppercase tracking-[.17em] text-[#8290a3]">06 · ESCRITURA</p><h3 className="mt-1 text-lg font-semibold text-[#26364b]">Frases del dictado</h3><p className="mt-1 text-sm text-[#7b8798]">Estas son exactamente las frases que escucharás y escribirás en la actividad.</p></div>
-            <div className="grid gap-2 sm:grid-cols-2">{(section.exercise.lesson?.writing ?? []).map((entry,i) => <article key={i} className="rounded-xl border border-[#e8ebf0] bg-white p-4"><p className="font-semibold text-[#26364b]">{entry.english}</p><p className="mt-1 text-sm text-[#64816f]">{entry.spanish}</p><button type="button" onClick={() => speak(entry.english)} className="mt-2 text-xs font-semibold text-[#55708f]">♫ Escuchar frase</button></article>)}</div>
+            <div className="grid gap-2 sm:grid-cols-2">{(section.exercise.lesson?.writing ?? []).map((entry,i) => <article key={i} className="rounded-xl border border-[#e8ebf0] bg-white p-4"><p className="font-semibold text-[#26364b]">{entry.english}</p><p className="mt-1 text-sm text-[#64816f]">{resolveSpanish(entry.english, entry.spanish)}</p><button type="button" onClick={() => speak(entry.english)} className="mt-2 text-xs font-semibold text-[#55708f]">♫ Escuchar frase</button></article>)}</div>
           </section>}
 
           {(section.exercise.lesson?.speaking?.length ?? 0) > 0 && <section>
             <div className="mb-4"><p className="text-[10px] font-bold uppercase tracking-[.17em] text-[#8290a3]">07 · EXPRESIÓN ORAL</p><h3 className="mt-1 text-lg font-semibold text-[#26364b]">Lo que podrás decir</h3><p className="mt-1 text-sm text-[#7b8798]">Primero entiende la consigna y aprende una posible respuesta.</p></div>
             <div className="grid gap-3 sm:grid-cols-2">{(section.exercise.lesson?.speaking ?? []).map((entry,i) => <article key={i} className="rounded-xl border border-[#e8ebf0] bg-white p-4">
-              <p className="text-xs font-semibold text-[#8290a3]">{entry.promptSpanish}</p><p className="mt-2 font-semibold text-[#26364b]">{entry.english}</p><p className="mt-1 text-sm text-[#64816f]">{entry.spanish}</p><button type="button" onClick={() => speak(entry.english)} className="mt-2 text-xs font-semibold text-[#55708f]">♫ Escuchar modelo</button>
+              <p className="text-xs font-semibold text-[#8290a3]">{entry.promptSpanish}</p><p className="mt-2 font-semibold text-[#26364b]">{entry.english}</p><p className="mt-1 text-sm text-[#64816f]">{resolveSpanish(entry.english, entry.spanish)}</p><button type="button" onClick={() => speak(entry.english)} className="mt-2 text-xs font-semibold text-[#55708f]">♫ Escuchar modelo</button>
             </article>)}</div>
           </section>}
 
           {(section.exercise.lesson?.listening?.length ?? 0) > 0 && <section>
             <div className="mb-4"><p className="text-[10px] font-bold uppercase tracking-[.17em] text-[#8290a3]">08 · COMPRENSIÓN AUDITIVA</p><h3 className="mt-1 text-lg font-semibold text-[#26364b]">Escucha el contenido antes del ejercicio</h3><p className="mt-1 text-sm text-[#7b8798]">Lee el audio completo con su traducción. Después podrás reconocer estas mismas palabras y expresiones al escucharlas.</p></div>
             <div className="mb-3 rounded-xl border border-[#dce8f4] bg-[#f3f8fd] p-4"><p className="text-xs font-bold uppercase tracking-wide text-[#55779d]">Audio completo</p><button type="button" onClick={() => speak(mission.sections.find(s => s.sectionKey === "listening")?.exercise.content?.audioTranscript?.replace(/^tts:en-GB:/,"") ?? "")} className="mt-2 rounded-full border border-[#dce6f0] bg-white px-3 py-2 text-xs font-semibold text-[#55708f]">♫ Escuchar audio modelo</button></div>
-            <div className="space-y-2">{(section.exercise.lesson?.listening ?? []).map((entry,i) => <article key={i} className="grid gap-1 rounded-xl border border-[#e8ebf0] bg-white p-4 sm:grid-cols-2 sm:gap-4"><p className="font-medium text-[#26364b]">{entry.english}</p><p className="text-sm text-[#64816f]">{entry.spanish}</p></article>)}</div>
+            <div className="space-y-2">{(section.exercise.lesson?.listening ?? []).map((entry,i) => <article key={i} className="grid gap-1 rounded-xl border border-[#e8ebf0] bg-white p-4 sm:grid-cols-2 sm:gap-4"><p className="font-medium text-[#26364b]">{entry.english}</p><p className="text-sm text-[#64816f]">{resolveSpanish(entry.english, entry.spanish)}</p></article>)}</div>
           </section>}
           {(section.exercise.lesson?.examples?.length ?? 0) > 0 && <section>
             <div className="mb-4"><p className="text-[10px] font-bold uppercase tracking-[.17em] text-[#8290a3]">09 · EJEMPLOS EN CONTEXTO</p><h3 className="mt-1 text-lg font-semibold text-[#26364b]">El inglés en situaciones reales</h3><p className="mt-1 text-sm text-[#7b8798]">Observa cómo se combinan las palabras y estructuras de la misión.</p></div>
-            <div className="grid gap-2 sm:grid-cols-2">{(section.exercise.lesson?.examples ?? []).map((entry,i) => <article key={i} className="rounded-xl border border-[#e8ebf0] bg-white p-4"><p className="font-semibold text-[#26364b]">{entry.english}</p><p className="mt-1 text-sm text-[#64816f]">{entry.spanish}</p>{entry.note && <p className="mt-2 text-xs leading-5 text-[#8290a3]">{entry.note}</p>}<button type="button" onClick={() => speak(entry.english)} className="mt-2 text-xs font-semibold text-[#55708f]">♫ Escuchar ejemplo</button></article>)}</div>
+            <div className="grid gap-2 sm:grid-cols-2">{(section.exercise.lesson?.examples ?? []).map((entry,i) => <article key={i} className="rounded-xl border border-[#e8ebf0] bg-white p-4"><p className="font-semibold text-[#26364b]">{entry.english}</p><p className="mt-1 text-sm text-[#64816f]">{resolveSpanish(entry.english, entry.spanish)}</p>{entry.note && <p className="mt-2 text-xs leading-5 text-[#8290a3]">{entry.note}</p>}<button type="button" onClick={() => speak(entry.english)} className="mt-2 text-xs font-semibold text-[#55708f]">♫ Escuchar ejemplo</button></article>)}</div>
           </section>}
           {(section.exercise.lesson?.communication?.length ?? 0) > 0 && <section>
             <div className="mb-4"><p className="text-[10px] font-bold uppercase tracking-[.17em] text-[#8290a3]">10 · GUÍA DE COMUNICACIÓN</p><h3 className="mt-1 text-lg font-semibold text-[#26364b]">Utiliza lo que has aprendido</h3><p className="mt-1 text-sm text-[#7b8798]">Estas expresiones te ayudan a resolver la situación comunicativa de la misión.</p></div>
-            <div className="space-y-2">{(section.exercise.lesson?.communication ?? []).map((entry,i) => <article key={i} className="grid gap-1 rounded-xl border border-[#e8ebf0] bg-white p-4 sm:grid-cols-2 sm:gap-4"><div><p className="font-semibold text-[#26364b]">{entry.english}</p>{entry.note && <p className="mt-1 text-xs text-[#8290a3]">{entry.note}</p>}</div><div className="flex items-start justify-between gap-3"><p className="text-sm text-[#64816f]">{entry.spanish}</p><button type="button" onClick={() => speak(entry.english)} className="shrink-0 text-xs font-semibold text-[#55708f]">♫</button></div></article>)}</div>
+            <div className="space-y-2">{(section.exercise.lesson?.communication ?? []).map((entry,i) => <article key={i} className="grid gap-1 rounded-xl border border-[#e8ebf0] bg-white p-4 sm:grid-cols-2 sm:gap-4"><div><p className="font-semibold text-[#26364b]">{entry.english}</p>{entry.note && <p className="mt-1 text-xs text-[#8290a3]">{entry.note}</p>}</div><div className="flex items-start justify-between gap-3"><p className="text-sm text-[#64816f]">{resolveSpanish(entry.english, entry.spanish)}</p><button type="button" onClick={() => speak(entry.english)} className="shrink-0 text-xs font-semibold text-[#55708f]">♫</button></div></article>)}</div>
           </section>}
           <div className="rounded-2xl border border-[#dce8f4] bg-[#f3f8fd] p-5 text-center"><p className="text-sm font-semibold text-[#284866]">Ya has visto y comprendido el temario de esta misión.</p><p className="mt-1 text-sm text-[#61738a]">Cuando estés preparado, pasa a las actividades para practicarlo.</p></div>
         </div>}
