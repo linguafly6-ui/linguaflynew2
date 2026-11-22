@@ -701,62 +701,6 @@
           {
             "itemId": "english-b1-m024-grammar-01",
             "position": 1,
-            "prompt": "I've ___ three courses this year.",
-            "options": [
-              "completed",
-              "complete",
-              "completing"
-            ],
-            "answer": "completed",
-            "evaluation": {
-              "type": "single_choice"
-            }
-          },
-          {
-            "itemId": "english-b1-m024-grammar-02",
-            "position": 2,
-            "prompt": "I ___ my first job in 2021.",
-            "options": [
-              "started",
-              "have start",
-              "have started yesterday"
-            ],
-            "answer": "started",
-            "evaluation": {
-              "type": "single_choice"
-            }
-          },
-          {
-            "itemId": "english-b1-m024-grammar-03",
-            "position": 3,
-            "prompt": "I ___ work late, but now I finish early.",
-            "options": [
-              "used to",
-              "use to",
-              "am used to"
-            ],
-            "answer": "used to",
-            "evaluation": {
-              "type": "single_choice"
-            }
-          },
-          {
-            "itemId": "english-b1-m024-grammar-04",
-            "position": 4,
-            "prompt": "We ___ the manager at ten tomorrow.",
-            "options": [
-              "are meeting",
-              "meet yesterday",
-              "will meeting"
-            ],
-            "answer": "are meeting",
-            "evaluation": {
-              "type": "single_choice"
-            }
-          },
-          {
-            "itemId": "english-b1-m024-grammar-05",
-            "position": 5,
             "prompt": "If the train ___ late, we'll take a taxi.",
             "options": [
               "is",
@@ -769,37 +713,9 @@
             }
           },
           {
-            "itemId": "english-b1-m024-grammar-06",
-            "position": 6,
-            "prompt": "She said that she ___ busy.",
-            "options": [
-              "was",
-              "is being",
-              "be"
-            ],
-            "answer": "was",
-            "evaluation": {
-              "type": "single_choice"
-            }
-          },
-          {
-            "itemId": "english-b1-m024-grammar-07",
-            "position": 7,
-            "prompt": "He asked me where I ___.",
-            "options": [
-              "worked",
-              "do work",
-              "did worked"
-            ],
-            "answer": "worked",
-            "evaluation": {
-              "type": "single_choice"
-            }
-          },
-          {
-            "itemId": "english-b1-m024-grammar-08",
-            "position": 8,
-            "prompt": "As soon as I ___, I'll call you.",
+            "itemId": "english-b1-m024-grammar-02",
+            "position": 2,
+            "prompt": "I'll call you as soon as I ___.",
             "options": [
               "arrive",
               "will arrive",
@@ -811,15 +727,99 @@
             }
           },
           {
+            "itemId": "english-b1-m024-grammar-03",
+            "position": 3,
+            "prompt": "Unless it ___, we'll have the meeting outside.",
+            "options": [
+              "rains",
+              "will rain",
+              "rained"
+            ],
+            "answer": "rains",
+            "evaluation": {
+              "type": "single_choice"
+            }
+          },
+          {
+            "itemId": "english-b1-m024-grammar-04",
+            "position": 4,
+            "prompt": "If you don't hurry, you ___ the bus.",
+            "options": [
+              "will miss",
+              "missed",
+              "would miss"
+            ],
+            "answer": "will miss",
+            "evaluation": {
+              "type": "single_choice"
+            }
+          },
+          {
+            "itemId": "english-b1-m024-grammar-05",
+            "position": 5,
+            "prompt": "We'll wait here until the manager ___.",
+            "options": [
+              "arrives",
+              "will arrive",
+              "arrived"
+            ],
+            "answer": "arrives",
+            "evaluation": {
+              "type": "single_choice"
+            }
+          },
+          {
+            "itemId": "english-b1-m024-grammar-06",
+            "position": 6,
+            "prompt": "If they send the details today, we ___ them tonight.",
+            "options": [
+              "will check",
+              "checked",
+              "would check"
+            ],
+            "answer": "will check",
+            "evaluation": {
+              "type": "single_choice"
+            }
+          },
+          {
+            "itemId": "english-b1-m024-grammar-07",
+            "position": 7,
+            "prompt": "Take an umbrella in case it ___.",
+            "options": [
+              "rains",
+              "will rain",
+              "rained"
+            ],
+            "answer": "rains",
+            "evaluation": {
+              "type": "single_choice"
+            }
+          },
+          {
+            "itemId": "english-b1-m024-grammar-08",
+            "position": 8,
+            "prompt": "Before you ___, please check the address.",
+            "options": [
+              "leave",
+              "will leave",
+              "left"
+            ],
+            "answer": "leave",
+            "evaluation": {
+              "type": "single_choice"
+            }
+          },
+          {
             "itemId": "english-b1-m024-grammar-09",
             "position": 9,
-            "prompt": "They ___ the report yesterday.",
+            "prompt": "If the office is closed, we ___ the support team.",
             "options": [
-              "handed in",
-              "have hand in",
-              "has handed in"
+              "will contact",
+              "contacted",
+              "would contact"
             ],
-            "answer": "handed in",
+            "answer": "will contact",
             "evaluation": {
               "type": "single_choice"
             }
@@ -827,13 +827,13 @@
           {
             "itemId": "english-b1-m024-grammar-10",
             "position": 10,
-            "prompt": "I'll send you the details if anything ___.",
+            "prompt": "I'll send the update when I ___ the final time.",
             "options": [
-              "changes",
-              "will change",
-              "changed"
+              "know",
+              "will know",
+              "knew"
             ],
-            "answer": "changes",
+            "answer": "know",
             "evaluation": {
               "type": "single_choice"
             }
