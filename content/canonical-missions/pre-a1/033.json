@@ -652,142 +652,132 @@
           {
             "itemId": "english-pre-a1-m033-grammar-ex01-i01",
             "position": 1,
-            "prompt": "Elige el modelo correcto: Limpia la mesa.",
+            "prompt": "Choose the correct instruction.",
             "evaluation": {
               "type": "single_choice"
             },
             "options": [
               "Clean the table.",
-              "Wash your hands.",
-              "Brush your teeth."
-            ],
-            "answer": "Clean the table."
+              "Cleans the table.",
+              "Cleaning the table."
+            ]
           },
           {
             "itemId": "english-pre-a1-m033-grammar-ex01-i02",
             "position": 2,
-            "prompt": "Elige el modelo correcto: Lávate las manos.",
+            "prompt": "Choose the correct instruction.",
             "evaluation": {
               "type": "single_choice"
             },
             "options": [
               "Wash your hands.",
-              "Brush your teeth.",
-              "Use soap."
-            ],
-            "answer": "Wash your hands."
+              "Washes your hands.",
+              "Washing your hands."
+            ]
           },
           {
             "itemId": "english-pre-a1-m033-grammar-ex01-i03",
             "position": 3,
-            "prompt": "Elige el modelo correcto: Cepíllate los dientes.",
+            "prompt": "Choose the correct instruction.",
             "evaluation": {
               "type": "single_choice"
             },
             "options": [
               "Brush your teeth.",
-              "Use soap.",
-              "Use a towel."
-            ],
-            "answer": "Brush your teeth."
+              "Brushes your teeth.",
+              "Brushing your teeth."
+            ]
           },
           {
             "itemId": "english-pre-a1-m033-grammar-ex01-i04",
             "position": 4,
-            "prompt": "Elige el modelo correcto: Usa jabón.",
+            "prompt": "Choose the correct instruction.",
             "evaluation": {
               "type": "single_choice"
             },
             "options": [
               "Use soap.",
-              "Use a towel.",
-              "Tidy your room."
-            ],
-            "answer": "Use soap."
+              "Uses soap.",
+              "Using soap."
+            ]
           },
           {
             "itemId": "english-pre-a1-m033-grammar-ex01-i05",
             "position": 5,
-            "prompt": "Elige el modelo correcto: Usa una toalla.",
+            "prompt": "Choose the correct instruction.",
             "evaluation": {
               "type": "single_choice"
             },
             "options": [
               "Use a towel.",
-              "Tidy your room.",
-              "The table is dirty."
-            ],
-            "answer": "Use a towel."
+              "Uses a towel.",
+              "Using a towel."
+            ]
           },
           {
             "itemId": "english-pre-a1-m033-grammar-ex01-i06",
             "position": 6,
-            "prompt": "Elige el modelo correcto: Ordena tu habitación.",
+            "prompt": "Choose the correct instruction.",
             "evaluation": {
               "type": "single_choice"
             },
             "options": [
               "Tidy your room.",
-              "The table is dirty.",
-              "Use a sponge."
-            ],
-            "answer": "Tidy your room."
+              "Tidies your room.",
+              "Tidying your room."
+            ]
           },
           {
             "itemId": "english-pre-a1-m033-grammar-ex01-i07",
             "position": 7,
-            "prompt": "Elige el modelo correcto: La mesa está sucia.",
+            "prompt": "Complete: The table ___ dirty.",
             "evaluation": {
               "type": "single_choice"
             },
             "options": [
-              "The table is dirty.",
-              "Use a sponge.",
-              "Use a broom."
-            ],
-            "answer": "The table is dirty."
+              "is",
+              "are",
+              "am"
+            ]
           },
           {
             "itemId": "english-pre-a1-m033-grammar-ex01-i08",
             "position": 8,
-            "prompt": "Elige el modelo correcto: Usa una esponja.",
+            "prompt": "Choose the correct instruction.",
             "evaluation": {
               "type": "single_choice"
             },
             "options": [
               "Use a sponge.",
-              "Use a broom.",
-              "Use a mop."
-            ],
-            "answer": "Use a sponge."
+              "Uses a sponge.",
+              "Using a sponge."
+            ]
           },
           {
             "itemId": "english-pre-a1-m033-grammar-ex01-i09",
             "position": 9,
-            "prompt": "Elige el modelo correcto: Usa una escoba.",
+            "prompt": "Choose the correct instruction.",
             "evaluation": {
               "type": "single_choice"
             },
             "options": [
               "Use a broom.",
-              "Use a mop.",
-              "Clean the table."
-            ],
-            "answer": "Use a broom."
+              "Uses a broom.",
+              "Using a broom."
+            ]
           },
           {
             "itemId": "english-pre-a1-m033-grammar-ex01-i10",
             "position": 10,
-            "prompt": "Elige el modelo correcto: Usa una fregona.",
+            "prompt": "Choose the correct instruction.",
             "evaluation": {
               "type": "single_choice"
             },
             "options": [
               "Use a mop.",
-              "Clean the table.",
-              "Wash your hands."
-            ],
-            "answer": "Use a mop."
+              "Uses a mop.",
+              "Using a mop."
+            ]
           }
         ],
         "theory": {
