@@ -73,6 +73,11 @@ jobs:
           npx --yes ajv-cli@5 validate --spec=draft2020 -s schemas/course-mission.schema.json -d content/canonical-missions/b1/007.json
           npx --yes ajv-cli@5 validate --spec=draft2020 -s schemas/course-mission.schema.json -d content/canonical-missions/b1/008.json
           npx --yes ajv-cli@5 validate --spec=draft2020 -s schemas/course-mission.schema.json -d content/canonical-missions/b1/009.json
+          npx --yes ajv-cli@5 validate --spec=draft2020 -s schemas/course-mission.schema.json -d content/canonical-missions/b1/011.json
+          npx --yes ajv-cli@5 validate --spec=draft2020 -s schemas/course-mission.schema.json -d content/canonical-missions/b1/012.json
+          npx --yes ajv-cli@5 validate --spec=draft2020 -s schemas/course-mission.schema.json -d content/canonical-missions/b1/013.json
+          npx --yes ajv-cli@5 validate --spec=draft2020 -s schemas/course-mission.schema.json -d content/canonical-missions/b1/014.json
+          npx --yes ajv-cli@5 validate --spec=draft2020 -s schemas/course-mission.schema.json -d content/canonical-missions/b1/015.json
           npx --yes ajv-cli@5 validate --spec=draft2020 -s schemas/course-mission.schema.json -d content/canonical-missions/b1/010.json
           npx --yes ajv-cli@5 validate --spec=draft2020 -s schemas/course-mission.schema.json -d content/canonical-missions/pre-a1/001.json
           npx --yes ajv-cli@5 validate --spec=draft2020 -s schemas/course-mission.schema.json -d content/canonical-missions/pre-a1/002.json
