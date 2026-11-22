@@ -150,6 +150,13 @@ export default function CanonicalMission({ missionData = missionSource as Missio
   const listeningItems = preA1Audio
     ? preA1Audio.words.map((_, index) => ({ itemId: `pre-a1-m${String(mission.mission.position).padStart(3, "0")}-listening-item-${String(index + 1).padStart(2, "0")}`, position: index + 1, gapToken: `[[gap-${String(index + 1).padStart(2, "0")}]]`, expectedWordId: `pre-a1-m${String(mission.mission.position).padStart(3, "0")}-listening-word-${String(index + 1).padStart(2, "0")}` }))
     : section.exercise.items;
+  const getListeningAnswer = (entry: (typeof listeningItems)[number]) => {
+    if ("answer" in entry && entry.answer) return entry.answer;
+    if ("expectedWordId" in entry && entry.expectedWordId) {
+      return listeningWordBank.find((word) => word.wordId === entry.expectedWordId)?.word ?? "";
+    }
+    return "";
+  };
   const pronunciationSection = mission.sections.find((entry) => entry.sectionKey === "pronunciation");
   const exploreItems = mission.sections.find((entry) => entry.sectionKey === "explore")?.exercise.items ?? [];
   const pronunciationByWord = new Map([...exploreItems, ...(pronunciationSection?.exercise.items ?? [])].map((entry) => [((entry.word ?? entry.english) ?? "").toLowerCase(), entry.pronunciationGuide ?? ""]));
@@ -321,7 +328,7 @@ export default function CanonicalMission({ missionData = missionSource as Missio
             })}
           </div>
           <div className="mt-5 rounded-xl bg-slate-50 p-4"><p className="text-xs font-semibold uppercase tracking-widest text-slate-500">Banco de palabras</p><div className="mt-3 flex flex-wrap gap-2">{listeningWordBank.map((bankItem) => bankItem.word).map((word) => <button key={word} disabled={checked || Object.values(listeningAnswers).includes(word)} onClick={() => setSelectedListeningWord(word)} className={`rounded-lg border px-3 py-2 text-sm ${selectedListeningWord === word ? "border-blue-700 bg-blue-700 text-white" : "border-slate-200 bg-white"} disabled:opacity-30`}>{word}</button>)}</div><p className="mt-3 text-xs text-slate-500">{selectedListeningWord ? `Seleccionada: ${selectedListeningWord}. Pulsa un hueco para colocarla.` : `${Object.keys(listeningAnswers).length} de 10 palabras colocadas. Pulsa un hueco ocupado para devolver su palabra al banco.`}</p></div>
-          <button disabled={checked || Object.keys(listeningAnswers).length !== 10} onClick={() => { const correct = listeningItems.filter((entry) => listeningAnswers[entry.itemId]?.toLowerCase() === entry.answer?.toLowerCase()).length; setScore((value) => value + correct); setChecked(true); setFeedback(`Resultado: ${correct} de 10 respuestas correctas. Soluciones: ${listeningItems.map((entry, i) => `${i + 1}. ${entry.answer}`).join(" · ")}`); }} className="mt-4 rounded-xl bg-blue-700 px-4 py-3 text-sm font-semibold text-white disabled:opacity-40">Comprobar las 10 respuestas</button>
+          <button disabled={checked || Object.keys(listeningAnswers).length !== 10} onClick={() => { const correct = listeningItems.filter((entry) => listeningAnswers[entry.itemId]?.toLowerCase() === getListeningAnswer(entry).toLowerCase()).length; setScore((value) => value + correct); setChecked(true); setFeedback(`Resultado: ${correct} de 10 respuestas correctas. Soluciones: ${listeningItems.map((entry, i) => `${i + 1}. ${getListeningAnswer(entry)}`).join(" · ")}`); }} className="mt-4 rounded-xl bg-blue-700 px-4 py-3 text-sm font-semibold text-white disabled:opacity-40">Comprobar las 10 respuestas</button>
         </div>}
         {feedback && <p role="status" aria-live="polite" className="mt-5 rounded-2xl border border-[#e4ebf2] bg-[#f5f8fb] p-4 text-sm font-semibold leading-6 text-[#43546b]">{feedback}</p>}
         {sectionKey !== "explore" && sectionKey !== "pronunciation" && sectionKey !== "listening" && <div className="mt-7 flex items-center justify-between gap-3"><span className="text-xs text-slate-400">Puntuación de esta sesión: {score}</span><button onClick={next} disabled={!checked} className="rounded-xl bg-blue-700 px-5 py-3 text-sm font-semibold text-white disabled:cursor-not-allowed disabled:opacity-40">{index === activeItems.length - 1 ? "Finalizar sección" : "Siguiente →"}</button></div>}
