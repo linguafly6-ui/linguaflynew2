@@ -58,7 +58,31 @@ export default function B1Page() {
           <p className="mt-1 text-sm text-slate-600">Transmite conversaciones, afirmaciones y preguntas con el estilo indirecto.</p>
           <span className="mt-3 inline-block text-sm font-bold text-indigo-700">Empezar misión →</span>
         </Link>
-        <p className="mt-4 text-xs text-slate-500">Las misiones 007–100 forman parte del plan curricular y se incorporarán progresivamente. Esta página no implica que el resto del nivel ya esté desarrollado.</p>
+        <Link href="/academia/b1/007" className="mt-3 block rounded-2xl border border-indigo-100 bg-white p-5 transition hover:border-indigo-400 hover:shadow-sm">
+          <p className="text-xs font-extrabold tracking-widest text-indigo-700">MISIÓN 007 · DISPONIBLE</p>
+          <h3 className="mt-1 text-xl font-bold text-slate-950">People Who Shape Us</h3>
+          <p className="mt-1 text-sm text-slate-600">Describe influential people and relationships using defining and non-defining relative clauses.</p>
+          <span className="mt-3 inline-block text-sm font-bold text-indigo-700">Empezar misión →</span>
+        </Link>
+        <Link href="/academia/b1/008" className="mt-3 block rounded-2xl border border-indigo-100 bg-white p-5 transition hover:border-indigo-400 hover:shadow-sm">
+          <p className="text-xs font-extrabold tracking-widest text-indigo-700">MISIÓN 008 · DISPONIBLE</p>
+          <h3 className="mt-1 text-xl font-bold text-slate-950">Choices That Shape Us</h3>
+          <p className="mt-1 text-sm text-slate-600">Talk about habits, preferences and decisions using gerunds and infinitives.</p>
+          <span className="mt-3 inline-block text-sm font-bold text-indigo-700">Empezar misión →</span>
+        </Link>
+        <Link href="/academia/b1/009" className="mt-3 block rounded-2xl border border-indigo-100 bg-white p-5 transition hover:border-indigo-400 hover:shadow-sm">
+          <p className="text-xs font-extrabold tracking-widest text-indigo-700">MISIÓN 009 · DISPONIBLE</p>
+          <h3 className="mt-1 text-xl font-bold text-slate-950">A Story in the Making</h3>
+          <p className="mt-1 text-sm text-slate-600">Tell a clear personal story by combining past simple, past continuous and past perfect.</p>
+          <span className="mt-3 inline-block text-sm font-bold text-indigo-700">Empezar misión →</span>
+        </Link>
+        <Link href="/academia/b1/010" className="mt-3 block rounded-2xl border border-indigo-100 bg-white p-5 transition hover:border-indigo-400 hover:shadow-sm">
+          <p className="text-xs font-extrabold tracking-widest text-indigo-700">MISIÓN 010 · DISPONIBLE</p>
+          <h3 className="mt-1 text-xl font-bold text-slate-950">Unit 1 Checkpoint: Life Stories</h3>
+          <p className="mt-1 text-sm text-slate-600">Integra experiencias, personas, decisiones y relatos personales; sin gramática nueva.</p>
+          <span className="mt-3 inline-block text-sm font-bold text-indigo-700">Empezar misión →</span>
+        </Link>
+        <p className="mt-4 text-xs text-slate-500">Las misiones 011–100 forman parte del plan curricular y se incorporarán progresivamente. Esta página no implica que el resto del nivel ya esté desarrollado.</p>
       </section>
     </main>
   );
