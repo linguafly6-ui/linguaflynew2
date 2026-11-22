@@ -41,10 +41,7 @@ function buildDictationHint(answer: string, level: number) {
 function speak(text: string) {
   if (typeof window === "undefined" || !("speechSynthesis" in window)) return;
   window.speechSynthesis.cancel();
-  // Keep the displayed spelling "Mia", but guide browser TTS to say MEE-uh,
-  // rather than interpreting the name as the initials M-I-A.
-  const speechText = text.replace(/\\bMia\\b/gi, "Mee-uh");
-  const utterance = new SpeechSynthesisUtterance(speechText);
+  const utterance = new SpeechSynthesisUtterance(text);
   utterance.lang = "en-GB";
   window.speechSynthesis.speak(utterance);
 }

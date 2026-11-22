@@ -402,8 +402,8 @@
           ],
           "reading": [
             {
-              "english": "Mia: Hello. I am at school. This is my family photo. Teacher: Who is this? Mia: This is my mother, Anna. This is my father, Ben. This is my sister, Lily, and this is my brother, Tom. I have a baby brother too. This is Leo. This is my grandmother and this is my grandfather. My family is big.",
-              "spanish": "Mia: Hola. Estoy en la escuela. Esta es la foto de mi familia. Profesora: ¿Quién es esta persona? Mia: Esta es mi madre, Anna. Este es mi padre, Ben. Esta es mi hermana, Lily, y este es mi hermano, Tom. También tengo un hermano bebé. Este es Leo. Esta es mi abuela y este es mi abuelo. Mi familia es grande.",
+              "english": "Maya: Hello. I am at school. This is my family photo. Teacher: Who is this? Maya: This is my mother, Anna. This is my father, Ben. This is my sister, Lily, and this is my brother, Tom. I have a baby brother too. This is Leo. This is my grandmother and this is my grandfather. My family is big.",
+              "spanish": "Maya: Hola. Estoy en la escuela. Esta es la foto de mi familia. Profesora: ¿Quién es esta persona? Maya: Esta es mi madre, Anna. Este es mi padre, Ben. Esta es mi hermana, Lily, y este es mi hermano, Tom. También tengo un hermano bebé. Este es Leo. Esta es mi abuela y este es mi abuelo. Mi familia es grande.",
               "note": "El texto y todas sus estructuras se explican en Explore."
             }
           ],
@@ -513,8 +513,8 @@
           ],
           "listening": [
             {
-              "english": "Mia: Hello, teacher. This is my family photo. Teacher: Who is this? Mia: This is my mother, Anna. This is my father, Ben. This is my brother, Tom, and this is my sister, Lily. I have a baby brother too. This is Leo. This is my grandmother and this is my grandfather. Teacher: What a big family! Mia: Yes, this is my family.",
-              "spanish": "Mia: Hola, profesora. Esta es la foto de mi familia. Profesora: ¿Quién es esta persona? Mia: Esta es mi madre, Anna. Este es mi padre, Ben. Este es mi hermano, Tom, y esta es mi hermana, Lily. También tengo un hermano bebé. Este es Leo. Esta es mi abuela y este es mi abuelo. Profesora: ¡Qué familia tan grande! Mia: Sí, esta es mi familia.",
+              "english": "Maya: Hello, teacher. This is my family photo. Teacher: Who is this? Maya: This is my mother, Anna. This is my father, Ben. This is my brother, Tom, and this is my sister, Lily. I have a baby brother too. This is Leo. This is my grandmother and this is my grandfather. Teacher: What a big family! Maya: Yes, this is my family.",
+              "spanish": "Maya: Hola, profesora. Esta es la foto de mi familia. Profesora: ¿Quién es esta persona? Maya: Esta es mi madre, Anna. Este es mi padre, Ben. Este es mi hermano, Tom, y esta es mi hermana, Lily. También tengo un hermano bebé. Este es Leo. Esta es mi abuela y este es mi abuelo. Profesora: ¡Qué familia tan grande! Maya: Sí, esta es mi familia.",
               "note": "El audio reproduce el diálogo completo, incluidas las diez palabras ocultas en la transcripción."
             }
           ]
@@ -1295,13 +1295,13 @@
         "type": "reading_comprehension",
         "content": {
           "passageId": "english-pre-a1-m014-reading-passage-01",
-          "passage": "Mia: Hello. I am at school. This is my family photo. Teacher: Who is this? Mia: This is my mother, Anna. This is my father, Ben. This is my sister, Lily, and this is my brother, Tom. I have a baby brother too. This is Leo. This is my grandmother and this is my grandfather. My family is big."
+          "passage": "Maya: Hello. I am at school. This is my family photo. Teacher: Who is this? Maya: This is my mother, Anna. This is my father, Ben. This is my sister, Lily, and this is my brother, Tom. I have a baby brother too. This is Leo. This is my grandmother and this is my grandfather. My family is big."
         },
         "items": [
           {
             "itemId": "english-pre-a1-m014-reading-ex01-i01",
             "position": 1,
-            "prompt": "Where is Mia?",
+            "prompt": "Where is Maya?",
             "evaluation": {
               "type": "single_choice"
             },
@@ -1315,7 +1315,7 @@
           {
             "itemId": "english-pre-a1-m014-reading-ex01-i02",
             "position": 2,
-            "prompt": "What does Mia have?",
+            "prompt": "What does Maya have?",
             "evaluation": {
               "type": "single_choice"
             },
@@ -1348,10 +1348,10 @@
               "type": "single_choice"
             },
             "options": [
-              "Mia’s mother",
-              "Mia’s sister"
+              "Maya’s mother",
+              "Maya’s sister"
             ],
-            "answer": "Mia’s mother",
+            "answer": "Maya’s mother",
             "taskType": "reading_detail"
           },
           {
@@ -1362,10 +1362,10 @@
               "type": "single_choice"
             },
             "options": [
-              "Mia’s father",
-              "Mia’s brother"
+              "Maya’s father",
+              "Maya’s brother"
             ],
-            "answer": "Mia’s father",
+            "answer": "Maya’s father",
             "taskType": "reading_detail"
           },
           {
@@ -1376,10 +1376,10 @@
               "type": "single_choice"
             },
             "options": [
-              "Mia’s sister",
-              "Mia’s grandmother"
+              "Maya’s sister",
+              "Maya’s grandmother"
             ],
-            "answer": "Mia’s sister",
+            "answer": "Maya’s sister",
             "taskType": "reading_detail"
           },
           {
@@ -1390,16 +1390,16 @@
               "type": "single_choice"
             },
             "options": [
-              "Mia’s brother",
-              "Mia’s son"
+              "Maya’s brother",
+              "Maya’s son"
             ],
-            "answer": "Mia’s brother",
+            "answer": "Maya’s brother",
             "taskType": "reading_detail"
           },
           {
             "itemId": "english-pre-a1-m014-reading-ex01-i08",
             "position": 8,
-            "prompt": "Does Mia have a baby brother?",
+            "prompt": "Does Maya have a baby brother?",
             "evaluation": {
               "type": "single_choice"
             },
@@ -1418,16 +1418,16 @@
               "type": "single_choice"
             },
             "options": [
-              "Mia’s baby brother",
-              "Mia’s father"
+              "Maya’s baby brother",
+              "Maya’s father"
             ],
-            "answer": "Mia’s baby brother",
+            "answer": "Maya’s baby brother",
             "taskType": "reading_detail"
           },
           {
             "itemId": "english-pre-a1-m014-reading-ex01-i10",
             "position": 10,
-            "prompt": "Is Mia’s family big or small?",
+            "prompt": "Is Maya’s family big or small?",
             "evaluation": {
               "type": "single_choice"
             },
@@ -2039,11 +2039,11 @@
         "exerciseId": "english-pre-a1-m014-listening-ex01",
         "type": "listening_gap_fill",
         "content": {
-          "audio": "tts:en-GB:Mia: Hello, teacher. This is my family photo. Teacher: Who is this? Mia: This is my mother, Anna. This is my father, Ben. This is my brother, Tom, and this is my sister, Lily. I have a baby brother too. This is Leo. This is my grandmother and this is my grandfather. Teacher: What a big family! Mia: Yes, this is my family.",
+          "audio": "tts:en-GB:Maya: Hello, teacher. This is my family photo. Teacher: Who is this? Maya: This is my mother, Anna. This is my father, Ben. This is my brother, Tom, and this is my sister, Lily. I have a baby brother too. This is Leo. This is my grandmother and this is my grandfather. Teacher: What a big family! Maya: Yes, this is my family.",
           "audioLocale": "en-GB",
           "audioStatus": "synthetic_pending_review",
-          "audioTranscript": "Mia: Hello, teacher. This is my family photo. Teacher: Who is this? Mia: This is my mother, Anna. This is my father, Ben. This is my brother, Tom, and this is my sister, Lily. I have a baby brother too. This is Leo. This is my grandmother and this is my grandfather. Teacher: What a big family! Mia: Yes, this is my family.",
-          "transcriptTemplate": "Mia: Hello, [[gap-01]]. This is my family [[gap-02]]. Teacher: Who is this? Mia: This is my [[gap-03]], Anna. This is my [[gap-04]], Ben. This is my [[gap-05]], Tom, and this is my [[gap-06]], Lily. I have a [[gap-07]] brother too. This is Leo. This is my [[gap-08]] and this is my [[gap-09]]. Teacher: What a big family! Mia: Yes, this is my [[gap-10]].",
+          "audioTranscript": "Maya: Hello, teacher. This is my family photo. Teacher: Who is this? Maya: This is my mother, Anna. This is my father, Ben. This is my brother, Tom, and this is my sister, Lily. I have a baby brother too. This is Leo. This is my grandmother and this is my grandfather. Teacher: What a big family! Maya: Yes, this is my family.",
+          "transcriptTemplate": "Maya: Hello, [[gap-01]]. This is my family [[gap-02]]. Teacher: Who is this? Maya: This is my [[gap-03]], Anna. This is my [[gap-04]], Ben. This is my [[gap-05]], Tom, and this is my [[gap-06]], Lily. I have a [[gap-07]] brother too. This is Leo. This is my [[gap-08]] and this is my [[gap-09]]. Teacher: What a big family! Maya: Yes, this is my [[gap-10]].",
           "wordBank": [
             {
               "wordId": "english-pre-a1-m014-listening-word-01",
@@ -2087,7 +2087,7 @@
             }
           ],
           "interaction": "select_place_move_replace",
-          "translation": "Mia: Hola, profesora. Esta es la foto de mi familia. Profesora: ¿Quién es esta persona? Mia: Esta es mi madre, Anna. Este es mi padre, Ben. Este es mi hermano, Tom, y esta es mi hermana, Lily. También tengo un hermano bebé. Este es Leo. Esta es mi abuela y este es mi abuelo. Profesora: ¡Qué familia tan grande! Mia: Sí, esta es mi familia."
+          "translation": "Maya: Hola, profesora. Esta es la foto de mi familia. Profesora: ¿Quién es esta persona? Maya: Esta es mi madre, Anna. Este es mi padre, Ben. Este es mi hermano, Tom, y esta es mi hermana, Lily. También tengo un hermano bebé. Este es Leo. Esta es mi abuela y este es mi abuelo. Profesora: ¡Qué familia tan grande! Maya: Sí, esta es mi familia."
         },
         "items": [
           {
