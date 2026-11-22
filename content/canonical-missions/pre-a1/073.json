@@ -636,142 +636,132 @@
           {
             "itemId": "english-pre-a1-m073-grammar-ex01-i01",
             "position": 1,
-            "prompt": "Elige el modelo correcto: The doctor is here.",
+            "prompt": "Complete: The doctor ___ here.",
             "evaluation": {
               "type": "single_choice"
             },
             "options": [
-              "The doctor is here.",
-              "The nurse is here.",
-              "I am a patient."
-            ],
-            "answer": "The doctor is here."
+              "is",
+              "are",
+              "am"
+            ]
           },
           {
             "itemId": "english-pre-a1-m073-grammar-ex01-i02",
             "position": 2,
-            "prompt": "Elige el modelo correcto: The nurse is here.",
+            "prompt": "Complete: The nurses ___ here.",
             "evaluation": {
               "type": "single_choice"
             },
             "options": [
-              "The nurse is here.",
-              "I am a patient.",
-              "I have an appointment."
-            ],
-            "answer": "The nurse is here."
+              "are",
+              "is",
+              "am"
+            ]
           },
           {
             "itemId": "english-pre-a1-m073-grammar-ex01-i03",
             "position": 3,
-            "prompt": "Elige el modelo correcto: I am a patient.",
+            "prompt": "Complete: I ___ a patient.",
             "evaluation": {
               "type": "single_choice"
             },
             "options": [
-              "I am a patient.",
-              "I have an appointment.",
-              "This is my medicine."
-            ],
-            "answer": "I am a patient."
+              "am",
+              "is",
+              "are"
+            ]
           },
           {
             "itemId": "english-pre-a1-m073-grammar-ex01-i04",
             "position": 4,
-            "prompt": "Elige el modelo correcto: I have an appointment.",
+            "prompt": "Complete: I ___ an appointment.",
             "evaluation": {
               "type": "single_choice"
             },
             "options": [
-              "I have an appointment.",
-              "This is my medicine.",
-              "I have pain."
-            ],
-            "answer": "I have an appointment."
+              "have",
+              "has",
+              "having"
+            ]
           },
           {
             "itemId": "english-pre-a1-m073-grammar-ex01-i05",
             "position": 5,
-            "prompt": "Elige el modelo correcto: This is my medicine.",
+            "prompt": "Complete: This ___ my medicine.",
             "evaluation": {
               "type": "single_choice"
             },
             "options": [
-              "This is my medicine.",
-              "I have pain.",
-              "I have pain in my head."
-            ],
-            "answer": "This is my medicine."
+              "is",
+              "are",
+              "am"
+            ]
           },
           {
             "itemId": "english-pre-a1-m073-grammar-ex01-i06",
             "position": 6,
-            "prompt": "Elige el modelo correcto: I have pain.",
+            "prompt": "Complete: I ___ pain.",
             "evaluation": {
               "type": "single_choice"
             },
             "options": [
-              "I have pain.",
-              "I have pain in my head.",
-              "I have pain in my arm."
-            ],
-            "answer": "I have pain."
+              "have",
+              "has",
+              "having"
+            ]
           },
           {
             "itemId": "english-pre-a1-m073-grammar-ex01-i07",
             "position": 7,
-            "prompt": "Elige el modelo correcto: I have pain in my head.",
+            "prompt": "Complete: I have pain ___ my head.",
             "evaluation": {
               "type": "single_choice"
             },
             "options": [
-              "I have pain in my head.",
-              "I have pain in my arm.",
-              "Check my temperature, please."
-            ],
-            "answer": "I have pain in my head."
+              "in",
+              "on",
+              "at"
+            ]
           },
           {
             "itemId": "english-pre-a1-m073-grammar-ex01-i08",
             "position": 8,
-            "prompt": "Elige el modelo correcto: I have pain in my arm.",
+            "prompt": "Complete: I have pain ___ my arm.",
             "evaluation": {
               "type": "single_choice"
             },
             "options": [
-              "I have pain in my arm.",
-              "Check my temperature, please.",
-              "I am at the hospital."
-            ],
-            "answer": "I have pain in my arm."
+              "in",
+              "on",
+              "at"
+            ]
           },
           {
             "itemId": "english-pre-a1-m073-grammar-ex01-i09",
             "position": 9,
-            "prompt": "Elige el modelo correcto: Check my temperature, please.",
+            "prompt": "Choose the correct instruction.",
             "evaluation": {
               "type": "single_choice"
             },
             "options": [
               "Check my temperature, please.",
-              "I am at the hospital.",
-              "The doctor is here."
-            ],
-            "answer": "Check my temperature, please."
+              "Checks my temperature, please.",
+              "Checking my temperature, please."
+            ]
           },
           {
             "itemId": "english-pre-a1-m073-grammar-ex01-i10",
             "position": 10,
-            "prompt": "Elige el modelo correcto: I am at the hospital.",
+            "prompt": "Complete: I ___ at the hospital.",
             "evaluation": {
               "type": "single_choice"
             },
             "options": [
-              "I am at the hospital.",
-              "The doctor is here.",
-              "The nurse is here."
-            ],
-            "answer": "I am at the hospital."
+              "am",
+              "is",
+              "are"
+            ]
           }
         ],
         "theory": {
