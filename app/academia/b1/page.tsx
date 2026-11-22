@@ -52,7 +52,13 @@ export default function B1Page() {
           <p className="mt-1 text-sm text-slate-600">Organiza planes, reacciona a cambios y expresa intenciones, acuerdos y posibilidades futuras.</p>
           <span className="mt-3 inline-block text-sm font-bold text-indigo-700">Empezar misión →</span>
         </Link>
-        <p className="mt-4 text-xs text-slate-500">Las misiones 006–100 forman parte del plan curricular y se incorporarán progresivamente. Esta página no implica que el resto del nivel ya esté desarrollado.</p>
+        <Link href="/academia/b1/006" className="mt-3 block rounded-2xl border border-indigo-100 bg-white p-5 transition hover:border-indigo-400 hover:shadow-sm">
+          <p className="text-xs font-extrabold tracking-widest text-indigo-700">MISIÓN 006 · DISPONIBLE</p>
+          <h3 className="mt-1 text-xl font-bold text-slate-950">Stories We Tell</h3>
+          <p className="mt-1 text-sm text-slate-600">Transmite conversaciones, afirmaciones y preguntas con el estilo indirecto.</p>
+          <span className="mt-3 inline-block text-sm font-bold text-indigo-700">Empezar misión →</span>
+        </Link>
+        <p className="mt-4 text-xs text-slate-500">Las misiones 007–100 forman parte del plan curricular y se incorporarán progresivamente. Esta página no implica que el resto del nivel ya esté desarrollado.</p>
       </section>
     </main>
   );
