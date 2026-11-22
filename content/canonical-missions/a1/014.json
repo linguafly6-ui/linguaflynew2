@@ -32,7 +32,7 @@
             "position": 1,
             "english": "free time",
             "spanish": "tiempo libre",
-            "pronunciationGuide": "FRÍ táim",
+            "pronunciationGuide": "F + R inglesa suave + ÍI táim",
             "audio": "tts:en-GB"
           },
           {
@@ -48,7 +48,7 @@
             "position": 3,
             "english": "reading",
             "spanish": "lectura",
-            "pronunciationGuide": "RÍ-ding",
+            "pronunciationGuide": "R inglesa suave + Í-ding",
             "audio": "tts:en-GB"
           },
           {
@@ -128,7 +128,7 @@
             "position": 13,
             "english": "drawing",
             "spanish": "dibujar",
-            "pronunciationGuide": "DRÓ-ing",
+            "pronunciationGuide": "D + R inglesa suave + Ó-ing",
             "audio": "tts:en-GB"
           },
           {
@@ -136,7 +136,7 @@
             "position": 14,
             "english": "photography",
             "spanish": "fotografía",
-            "pronunciationGuide": "fə-TÓ-gra-fi",
+            "pronunciationGuide": "fə-TÓ-gra-fi, con R inglesa suave",
             "audio": "tts:en-GB"
           },
           {
@@ -192,7 +192,7 @@
             "position": 21,
             "english": "playing the guitar",
             "spanish": "tocar la guitarra",
-            "pronunciationGuide": "PLÉI-ing dha gui-TÁR",
+            "pronunciationGuide": "PLÉI-ing dha gui-TÁA",
             "audio": "tts:en-GB"
           },
           {
@@ -200,7 +200,7 @@
             "position": 22,
             "english": "favourite",
             "spanish": "favorito/a",
-            "pronunciationGuide": "FÉI-və-rit",
+            "pronunciationGuide": "FÉI-və-rit, con R inglesa suave",
             "audio": "tts:en-GB"
           },
           {
@@ -217,6 +217,54 @@
             "english": "at the weekend",
             "spanish": "el fin de semana",
             "pronunciationGuide": "at dha UÍIK-end",
+            "audio": "tts:en-GB"
+          },
+          {
+            "itemId": "english-a1-m014-explore-word-25",
+            "position": 25,
+            "english": "after school",
+            "spanish": "después del colegio",
+            "pronunciationGuide": "ÁF-ter SKÚUL",
+            "audio": "tts:en-GB"
+          },
+          {
+            "itemId": "english-a1-m014-explore-word-26",
+            "position": 26,
+            "english": "adventure book",
+            "spanish": "libro de aventuras",
+            "pronunciationGuide": "əd-VÉN-cher BÚK",
+            "audio": "tts:en-GB"
+          },
+          {
+            "itemId": "english-a1-m014-explore-word-27",
+            "position": 27,
+            "english": "room",
+            "spanish": "habitación",
+            "pronunciationGuide": "RÚUM",
+            "audio": "tts:en-GB"
+          },
+          {
+            "itemId": "english-a1-m014-explore-word-28",
+            "position": 28,
+            "english": "park",
+            "spanish": "parque",
+            "pronunciationGuide": "PÁAK",
+            "audio": "tts:en-GB"
+          },
+          {
+            "itemId": "english-a1-m014-explore-word-29",
+            "position": 29,
+            "english": "together",
+            "spanish": "juntos",
+            "pronunciationGuide": "tə-GÉ-dher",
+            "audio": "tts:en-GB"
+          },
+          {
+            "itemId": "english-a1-m014-explore-word-30",
+            "position": 30,
+            "english": "Sunday",
+            "spanish": "domingo",
+            "pronunciationGuide": "SÁN-dei",
             "audio": "tts:en-GB"
           }
         ],
@@ -342,6 +390,34 @@
             {
               "english": "We enjoy cycling in the park.",
               "spanish": "Disfrutamos yendo en bicicleta por el parque."
+            },
+            {
+              "english": "I have free time after school.",
+              "spanish": "Tengo tiempo libre después del colegio."
+            },
+            {
+              "english": "I like reading adventure books.",
+              "spanish": "Me gusta leer libros de aventuras."
+            },
+            {
+              "english": "I enjoy listening to music in my room.",
+              "spanish": "Disfruto escuchando música en mi habitación."
+            },
+            {
+              "english": "Sam likes taking photos in the park.",
+              "spanish": "A Sam le gusta hacer fotos en el parque."
+            },
+            {
+              "english": "My sister Mia likes painting and drawing.",
+              "spanish": "A mi hermana Mia le gusta pintar y dibujar."
+            },
+            {
+              "english": "She also likes watching films.",
+              "spanish": "A ella también le gusta ver películas."
+            },
+            {
+              "english": "We enjoy cooking together on Sunday.",
+              "spanish": "Disfrutamos cocinando juntos el domingo."
             }
           ],
           "grammar": [
@@ -426,16 +502,16 @@
               "spanish": "A mi hermana Mia le gusta pintar y dibujar."
             },
             {
-              "english": "She doesn't like watching films.",
-              "spanish": "A ella no le gusta ver películas."
+              "english": "She also likes watching films.",
+              "spanish": "A ella también le gusta ver películas."
             },
             {
               "english": "Our favourite hobby is cooking together on Sundays.",
               "spanish": "Nuestra afición favorita es cocinar juntos los domingos."
             },
             {
-              "english": "We make simple food and listen to music.",
-              "spanish": "Preparamos comida sencilla y escuchamos música."
+              "english": "We cook together and listen to music.",
+              "spanish": "Cocinamos juntos y escuchamos música."
             }
           ],
           "writing": [
@@ -1259,7 +1335,7 @@
           {
             "itemId": "english-a1-m014-reading-7",
             "position": 7,
-            "prompt": "What does Mia like doing?",
+            "prompt": "What are Mia's hobbies?",
             "answer": "Painting and drawing",
             "options": [
               "Cooking and singing",
@@ -1273,12 +1349,12 @@
           {
             "itemId": "english-a1-m014-reading-8",
             "position": 8,
-            "prompt": "Does Mia like watching films?",
-            "answer": "No, she doesn't",
+            "prompt": "Who likes watching films?",
+            "answer": "Mia",
             "options": [
-              "Yes, she does",
-              "No, she doesn't",
-              "The text doesn't say"
+              "Leo",
+              "Mia",
+              "Sam"
             ],
             "evaluation": {
               "type": "single_choice"
@@ -1315,7 +1391,7 @@
         ],
         "content": {
           "passageId": "english-a1-m014-reading-passage",
-          "passage": "My name is Leo and I live in Leeds. I have free time after school. I like reading adventure books. I also enjoy listening to music in my room. On Saturdays, I go cycling with my friend Sam. Sam loves taking photos in the park. My sister Mia likes painting and drawing. She doesn't like watching films. Our favourite hobby is cooking together on Sundays. We make simple food and listen to music."
+          "passage": "My name is Leo and I live in Leeds. I have free time after school. I like reading adventure books. I also enjoy listening to music in my room. On Saturdays, I go cycling with my friend Sam. Sam loves taking photos in the park. My sister Mia likes painting and drawing. She also likes watching films. Our favourite hobby is cooking together on Sundays. We cook together and listen to music."
         }
       }
     },
@@ -1693,8 +1769,8 @@
         "content": {
           "audio": "tts:en-GB",
           "audioLocale": "en-GB",
-          "audioTranscript": "Hi, Leo. What do you like doing after school? I like reading and listening to music. What do you do on Saturday? I go cycling with Sam. Does Sam like taking photos? Yes, he does. My sister Mia likes painting, but she doesn't like watching films. We enjoy cooking together on Sunday. It is our favourite hobby.",
-          "transcriptTemplate": "Hi, Leo. What do you like doing after school? I like [[gap-01]] and listening to [[gap-02]]. What do you do on [[gap-03]]? I go [[gap-04]] with Sam. Does Sam like taking [[gap-05]]? Yes, he does. My sister Mia likes [[gap-06]], but she doesn't like watching [[gap-07]]. We enjoy [[gap-08]] together on [[gap-09]]. It is our favourite [[gap-10]].",
+          "audioTranscript": "Hi, Leo. What do you like doing after school? I like reading and listening to music. What do you do on Saturday? I go cycling with Sam. Sam likes taking photos in the park. My sister Mia likes painting and drawing, and she also likes watching films. We enjoy cooking together on Sunday. It is our favourite hobby.",
+          "transcriptTemplate": "Hi, Leo. What do you like doing after school? I like [[gap-01]] and listening to [[gap-02]]. What do you do on [[gap-03]]? I go [[gap-04]] with Sam. Sam likes taking [[gap-05]] in the park. My sister Mia likes [[gap-06]] and drawing, and she also likes watching [[gap-07]]. We enjoy [[gap-08]] together on [[gap-09]]. It is our favourite [[gap-10]].",
           "wordBank": [
             {
               "wordId": "english-a1-m014-listen-word-01",
@@ -1738,7 +1814,7 @@
             }
           ],
           "interaction": "select_place_move_replace",
-          "transcriptTranslation": "Hola, Leo. ¿Qué te gusta hacer después del colegio? Me gusta leer y escuchar música. ¿Qué haces el sábado? Voy en bicicleta con Sam. ¿A Sam le gusta hacer fotos? Sí. A mi hermana Mia le gusta pintar, pero no le gusta ver películas. Disfrutamos cocinando juntos el domingo. Es nuestra afición favorita."
+          "transcriptTranslation": "Hola, Leo. ¿Qué te gusta hacer después del colegio? Me gusta leer y escuchar música. ¿Qué haces el sábado? Voy en bicicleta con Sam. A Sam le gusta hacer fotos en el parque. A mi hermana Mia le gusta pintar y dibujar, y también le gusta ver películas. Disfrutamos cocinando juntos el domingo. Es nuestra afición favorita."
         }
       }
     }
