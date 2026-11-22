@@ -272,10 +272,10 @@ export default function CanonicalMission({ missionData = missionSource as Missio
           {((section.exercise.theory?.title || section.exercise.theory?.explanation || (section.exercise.theory?.patterns?.length ?? 0) > 0) || (section.exercise.lesson?.grammar?.length ?? 0) > 0) && <section>
             <div className="mb-4"><p className="text-[10px] font-bold uppercase tracking-[.17em] text-[#8290a3]">03 · GRAMÁTICA</p><h3 className="mt-1 text-lg font-semibold text-[#26364b]">{section.exercise.theory?.title ?? "Gramática de la misión"}</h3><p className="mt-1 text-sm leading-6 text-[#7b8798]">{section.exercise.theory?.explanation}</p></div>
             <div className="grid gap-3 sm:grid-cols-2">
-              {section.exercise.theory?.patterns.map((pattern, i) => <article key={typeof pattern === "string" ? pattern : pattern.label ?? pattern.pattern ?? i} className="rounded-xl border border-[#e8ebf0] bg-[#fbfcfe] p-4">
+              {(section.exercise.theory?.patterns ?? []).filter(Boolean).map((pattern, i) => <article key={typeof pattern === "string" ? pattern : pattern.label ?? pattern.pattern ?? i} className="rounded-xl border border-[#e8ebf0] bg-[#fbfcfe] p-4">
                 {typeof pattern !== "string" && pattern.label && <p className="text-xs font-bold uppercase tracking-wide text-[#55779d]">{pattern.label}</p>}
                 <p className="mt-2 font-semibold text-[#26364b]">{typeof pattern === "string" ? pattern : pattern.pattern}</p>
-                {typeof pattern !== "string" && pattern.examples?.length ? <ul className="mt-3 space-y-2">{pattern.examples.map(example => <li key={example} className="text-sm text-[#53657b]">• {example}</li>)}</ul> : null}
+                {typeof pattern !== "string" && pattern.examples?.length ? <ul className="mt-3 space-y-2">{(pattern.examples ?? []).map(example => <li key={example} className="text-sm text-[#53657b]">• {example}</li>)}</ul> : null}
               </article>)}
             </div>
             <div className="mt-3 grid gap-3 sm:grid-cols-2">
