@@ -1,0 +1,1201 @@
+{
+  "schemaVersion": "1.2.0",
+  "contentVersion": 1,
+  "course": {
+    "courseId": "english-c2",
+    "level": "C2",
+    "language": "en-GB"
+  },
+  "unit": {
+    "unitId": "english-c2-unit-01",
+    "courseId": "english-c2",
+    "position": 1,
+    "title": "Meaning, Inference and Context"
+  },
+  "mission": {
+    "missionId": "english-c2-m004",
+    "unitId": "english-c2-unit-01",
+    "position": 4,
+    "title": "When Meaning Has More Than One Scope"
+  },
+  "sections": [
+    {
+      "sectionId": "english-c2-m003-explore",
+      "sectionKey": "explore",
+      "position": 1,
+      "title": "explore",
+      "exercise": {
+        "exerciseId": "english-c2-m003-explore-exercise",
+        "type": "vocabulary_pairs",
+        "items": [
+          {
+            "itemId": "english-c2-m004-explore-word-1",
+            "position": 1,
+            "english": "scope",
+            "spanish": "alcance",
+            "pronunciationGuide": "SKOHP",
+            "audio": "tts:en-GB"
+          },
+          {
+            "itemId": "english-c2-m004-explore-word-2",
+            "position": 2,
+            "english": "ambiguity",
+            "spanish": "ambigüedad",
+            "pronunciationGuide": "am-bi-GYÚ-i-ti",
+            "audio": "tts:en-GB"
+          },
+          {
+            "itemId": "english-c2-m004-explore-word-3",
+            "position": 3,
+            "english": "attachment",
+            "spanish": "adjunción",
+            "pronunciationGuide": "a-TÁCH-ment",
+            "audio": "tts:en-GB"
+          },
+          {
+            "itemId": "english-c2-m004-explore-word-4",
+            "position": 4,
+            "english": "modifier",
+            "spanish": "modificador",
+            "pronunciationGuide": "MÓ-di-fái-er",
+            "audio": "tts:en-GB"
+          },
+          {
+            "itemId": "english-c2-m004-explore-word-5",
+            "position": 5,
+            "english": "constituent",
+            "spanish": "constituyente",
+            "pronunciationGuide": "kon-STÍ-chu-ent",
+            "audio": "tts:en-GB"
+          },
+          {
+            "itemId": "english-c2-m004-explore-word-6",
+            "position": 6,
+            "english": "reading",
+            "spanish": "interpretación",
+            "pronunciationGuide": "RÍ-ding",
+            "audio": "tts:en-GB"
+          },
+          {
+            "itemId": "english-c2-m004-explore-word-7",
+            "position": 7,
+            "english": "referent",
+            "spanish": "referente",
+            "pronunciationGuide": "RÉ-fe-rent",
+            "audio": "tts:en-GB"
+          },
+          {
+            "itemId": "english-c2-m004-explore-word-8",
+            "position": 8,
+            "english": "syntactic",
+            "spanish": "sintáctico",
+            "pronunciationGuide": "sin-TÁK-tik",
+            "audio": "tts:en-GB"
+          },
+          {
+            "itemId": "english-c2-m004-explore-word-9",
+            "position": 9,
+            "english": "structural",
+            "spanish": "estructural",
+            "pronunciationGuide": "STRÁK-chu-ral",
+            "audio": "tts:en-GB"
+          },
+          {
+            "itemId": "english-c2-m004-explore-word-10",
+            "position": 10,
+            "english": "disambiguate",
+            "spanish": "desambiguar",
+            "pronunciationGuide": "dis-am-BÍ-gyu-eit",
+            "audio": "tts:en-GB"
+          }
+        ],
+        "theory": {
+          "title": "Ambiguity, attachment and scope",
+          "explanation": "A sentence can be grammatically well formed yet support more than one interpretation. Structural ambiguity arises when a phrase can attach to different parts of a sentence; lexical ambiguity arises when a word has more than one sense. Scope ambiguity concerns which expression takes semantic scope over another, especially with negation, quantifiers, modality and conditionals. Context often favours one reading, but a careful reader should be able to state the alternatives before deciding. Do not confuse ambiguity with vagueness: an ambiguous expression has distinct readings, whereas a vague expression has boundaries that are not sharply defined.",
+          "tip": "Paraphrase each plausible reading in a separate sentence. Then identify the word, phrase or operator responsible for the difference.",
+          "patterns": [
+            {
+              "label": "Attachment",
+              "pattern": "A modifier may relate to more than one constituent.",
+              "examples": [
+                "“I saw the analyst with the telescope” allows two attachment readings."
+              ]
+            },
+            {
+              "label": "Quantifier scope",
+              "pattern": "The order of quantifiers can change who is committed to what.",
+              "examples": [
+                "“Every reviewer read a paper” need not mean they all read the same paper."
+              ]
+            },
+            {
+              "label": "Negation",
+              "pattern": "Negation may target a whole proposition or a narrower constituent.",
+              "examples": [
+                "“She did not claim that it was certain” does not mean she claimed it was false."
+              ]
+            },
+            {
+              "label": "Ambiguity and vagueness",
+              "pattern": "Separate distinct readings from imprecise boundaries.",
+              "examples": [
+                "“Old” is often vague; “visiting relatives” can be structurally ambiguous."
+              ]
+            }
+          ]
+        },
+        "lesson": {
+          "phrases": [
+            {
+              "english": "The sentence permits two structurally distinct readings.",
+              "spanish": "La oración permite dos interpretaciones estructuralmente distintas.",
+              "note": "Señala ambigüedad sin atribuir un error al hablante."
+            },
+            {
+              "english": "On the narrower-scope reading, the qualification applies only to the final claim.",
+              "spanish": "En la lectura de alcance más restringido, la salvedad solo se aplica a la afirmación final.",
+              "note": "Explicita el alcance de una expresión."
+            }
+          ],
+          "grammar": [
+            {
+              "english": "Not every reviewer read the same paper.",
+              "spanish": "No todos los revisores leyeron el mismo artículo.",
+              "note": "Distingue entre cuantificación distributiva y lectura colectiva."
+            }
+          ],
+          "reading": [
+            {
+              "english": "A modifier's position can leave its attachment unresolved.",
+              "spanish": "La posición de un modificador puede dejar sin resolver a qué elemento se adjunta.",
+              "note": "Reconoce una fuente de ambigüedad estructural."
+            }
+          ],
+          "writing": [
+            {
+              "english": "The wording is compatible with two readings; the surrounding paragraph favours the second.",
+              "spanish": "La formulación admite dos lecturas; el párrafo circundante favorece la segunda.",
+              "note": "Presenta alternativas y justifica una preferencia."
+            }
+          ],
+          "speaking": [
+            {
+              "english": "The ambiguity is genuine, although context makes one interpretation more plausible.",
+              "spanish": "La ambigüedad es real, aunque el contexto hace más plausible una interpretación.",
+              "prompt": "Explain two readings of an ambiguous sentence.",
+              "promptSpanish": "Explica dos interpretaciones de una oración ambigua."
+            }
+          ],
+          "listening": [
+            {
+              "english": "The chair clarified that the restriction applied to new applicants, not to every applicant.",
+              "spanish": "La presidenta aclaró que la restricción se aplicaba a los nuevos solicitantes, no a todos.",
+              "note": "Identifica el alcance de una restricción."
+            }
+          ],
+          "examples": [
+            {
+              "english": "We did not review every submission.",
+              "spanish": "No revisamos todas las propuestas.",
+              "note": "Puede significar que no se revisaron todas, sin implicar que no se revisara ninguna."
+            }
+          ],
+          "communication": [
+            {
+              "english": "Before drawing a conclusion, we should establish which reading the author intended.",
+              "spanish": "Antes de extraer una conclusión, deberíamos determinar qué interpretación pretendía el autor.",
+              "note": "Pide aclaración interpretativa con precisión."
+            }
+          ]
+        }
+      }
+    },
+    {
+      "sectionId": "english-c2-m003-practice",
+      "sectionKey": "practice",
+      "position": 2,
+      "title": "practice",
+      "exercise": {
+        "exerciseId": "english-c2-m003-practice-exercise",
+        "type": "mixed_practice",
+        "items": [
+          {
+            "itemId": "english-c2-m004-practice-1",
+            "position": 1,
+            "taskType": "contextual_inference",
+            "prompt": "In “I saw the researcher with the binoculars”, what are the two possible readings? ",
+            "options": [
+              "The researcher owns binoculars / I used binoculars to see the researcher.",
+              "The researcher was alone / I saw two researchers.",
+              "The researcher was researching / I was using a camera."
+            ],
+            "answer": "The researcher owns binoculars / I used binoculars to see the researcher.",
+            "evaluation": {
+              "type": "single_choice"
+            }
+          },
+          {
+            "itemId": "english-c2-m004-practice-2",
+            "position": 2,
+            "taskType": "contextual_inference",
+            "prompt": "What makes “visiting relatives can be exhausting” structurally ambiguous?",
+            "options": [
+              "“Visiting” can be a gerund or part of a participial phrase.",
+              "“Exhausting” has no meaning.",
+              "The sentence lacks a verb."
+            ],
+            "answer": "“Visiting” can be a gerund or part of a participial phrase.",
+            "evaluation": {
+              "type": "single_choice"
+            }
+          },
+          {
+            "itemId": "english-c2-m004-practice-3",
+            "position": 3,
+            "taskType": "contextual_inference",
+            "prompt": "Which statement best distinguishes ambiguity from vagueness?",
+            "options": [
+              "Ambiguity offers distinct readings; vagueness has imprecise boundaries.",
+              "They are identical.",
+              "Vagueness always involves two syntactic trees."
+            ],
+            "answer": "Ambiguity offers distinct readings; vagueness has imprecise boundaries.",
+            "evaluation": {
+              "type": "single_choice"
+            }
+          },
+          {
+            "itemId": "english-c2-m004-practice-4",
+            "position": 4,
+            "taskType": "contextual_inference",
+            "prompt": "In “Every editor read a manuscript”, what is a possible scope contrast?",
+            "options": [
+              "One shared manuscript versus potentially different manuscripts.",
+              "Editors versus manuscripts as nouns.",
+              "Past versus present time."
+            ],
+            "answer": "One shared manuscript versus potentially different manuscripts.",
+            "evaluation": {
+              "type": "single_choice"
+            }
+          },
+          {
+            "itemId": "english-c2-m004-practice-5",
+            "position": 5,
+            "taskType": "contextual_inference",
+            "prompt": "What is the safest first step when a sentence seems ambiguous?",
+            "options": [
+              "State the plausible readings before choosing one.",
+              "Assume the writer made a mistake.",
+              "Choose the most unusual interpretation."
+            ],
+            "answer": "State the plausible readings before choosing one.",
+            "evaluation": {
+              "type": "single_choice"
+            }
+          },
+          {
+            "itemId": "english-c2-m004-practice-6",
+            "position": 6,
+            "taskType": "contextual_inference",
+            "prompt": "What does a modifier's attachment determine?",
+            "options": [
+              "Which constituent the modifier describes or qualifies.",
+              "Whether the sentence is formal.",
+              "The tense of the main verb."
+            ],
+            "answer": "Which constituent the modifier describes or qualifies.",
+            "evaluation": {
+              "type": "single_choice"
+            }
+          },
+          {
+            "itemId": "english-c2-m004-practice-7",
+            "position": 7,
+            "taskType": "contextual_inference",
+            "prompt": "Why can context fail to remove ambiguity completely?",
+            "options": [
+              "More than one reading may remain compatible with the available context.",
+              "Context never affects meaning.",
+              "Grammar prevents alternative readings."
+            ],
+            "answer": "More than one reading may remain compatible with the available context.",
+            "evaluation": {
+              "type": "single_choice"
+            }
+          },
+          {
+            "itemId": "english-c2-m004-practice-8",
+            "position": 8,
+            "taskType": "contextual_inference",
+            "prompt": "In “She did not say that all applicants qualified”, what is denied?",
+            "options": [
+              "The act of saying that all applicants qualified.",
+              "That no applicants qualified.",
+              "That applicants existed."
+            ],
+            "answer": "The act of saying that all applicants qualified.",
+            "evaluation": {
+              "type": "single_choice"
+            }
+          },
+          {
+            "itemId": "english-c2-m004-practice-9",
+            "position": 9,
+            "taskType": "contextual_inference",
+            "prompt": "Which wording explicitly disambiguates “I photographed the man with the drone” to mean the drone was used?",
+            "options": [
+              "Using a drone, I photographed the man.",
+              "I photographed the man who owned the drone.",
+              "The man with the drone was photographed."
+            ],
+            "answer": "Using a drone, I photographed the man.",
+            "evaluation": {
+              "type": "single_choice"
+            }
+          },
+          {
+            "itemId": "english-c2-m004-practice-10",
+            "position": 10,
+            "taskType": "contextual_inference",
+            "prompt": "How should an analyst report unresolved scope?",
+            "options": [
+              "Describe both readings and explain what evidence favours either one.",
+              "Present one reading as certain.",
+              "Avoid mentioning the wording."
+            ],
+            "answer": "Describe both readings and explain what evidence favours either one.",
+            "evaluation": {
+              "type": "single_choice"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "sectionId": "english-c2-m003-grammar",
+      "sectionKey": "grammar",
+      "position": 3,
+      "title": "grammar",
+      "exercise": {
+        "exerciseId": "english-c2-m003-grammar-exercise",
+        "type": "grammar",
+        "items": [
+          {
+            "itemId": "english-c2-m004-grammar-1",
+            "position": 1,
+            "prompt": "Choose the unambiguous version meaning that I used binoculars.",
+            "options": [
+              "I saw the researcher through binoculars.",
+              "I saw the researcher with binoculars.",
+              "I saw the researcher who had binoculars."
+            ],
+            "answer": "I saw the researcher through binoculars.",
+            "evaluation": {
+              "type": "single_choice"
+            }
+          },
+          {
+            "itemId": "english-c2-m004-grammar-2",
+            "position": 2,
+            "prompt": "Which sentence clearly means that each reviewer read a different paper?",
+            "options": [
+              "Each reviewer read a different paper.",
+              "Each reviewer read the same paper.",
+              "A paper was read by a reviewer."
+            ],
+            "answer": "Each reviewer read a different paper.",
+            "evaluation": {
+              "type": "single_choice"
+            }
+          },
+          {
+            "itemId": "english-c2-m004-grammar-3",
+            "position": 3,
+            "prompt": "Choose the correct analysis of “Not all the witnesses agreed”.",
+            "options": [
+              "Some or all may have disagreed; unanimity is denied.",
+              "No witness agreed.",
+              "Every witness disagreed."
+            ],
+            "answer": "Some or all may have disagreed; unanimity is denied.",
+            "evaluation": {
+              "type": "single_choice"
+            }
+          },
+          {
+            "itemId": "english-c2-m004-grammar-4",
+            "position": 4,
+            "prompt": "Which phrase is structurally ambiguous?",
+            "options": [
+              "old friends and colleagues",
+              "extremely carefully",
+              "the red door"
+            ],
+            "answer": "old friends and colleagues",
+            "evaluation": {
+              "type": "single_choice"
+            }
+          },
+          {
+            "itemId": "english-c2-m004-grammar-5",
+            "position": 5,
+            "prompt": "Choose the sentence in which only the director is said to have approved the plan.",
+            "options": [
+              "Only the director approved the plan.",
+              "The director approved only the plan.",
+              "The director only approved the plan."
+            ],
+            "answer": "Only the director approved the plan.",
+            "evaluation": {
+              "type": "single_choice"
+            }
+          },
+          {
+            "itemId": "english-c2-m004-grammar-6",
+            "position": 6,
+            "prompt": "Which sentence places the negation over the act of claiming?",
+            "options": [
+              "She did not claim that the data were conclusive.",
+              "She claimed that the data were not conclusive.",
+              "She never claimed anything."
+            ],
+            "answer": "She did not claim that the data were conclusive.",
+            "evaluation": {
+              "type": "single_choice"
+            }
+          },
+          {
+            "itemId": "english-c2-m004-grammar-7",
+            "position": 7,
+            "prompt": "Choose the clearest rewrite of “The report discussed the policy with recommendations”.",
+            "options": [
+              "The report discussed the policy and included recommendations.",
+              "The report discussed the policy alongside a person with recommendations.",
+              "The report was recommended by the policy."
+            ],
+            "answer": "The report discussed the policy and included recommendations.",
+            "evaluation": {
+              "type": "single_choice"
+            }
+          },
+          {
+            "itemId": "english-c2-m004-grammar-8",
+            "position": 8,
+            "prompt": "Which quantifier phrase is most clearly distributive?",
+            "options": [
+              "Each applicant submitted a separate form.",
+              "The applicants submitted one form together.",
+              "A form was submitted."
+            ],
+            "answer": "Each applicant submitted a separate form.",
+            "evaluation": {
+              "type": "single_choice"
+            }
+          },
+          {
+            "itemId": "english-c2-m004-grammar-9",
+            "position": 9,
+            "prompt": "Choose the sentence that avoids an unclear pronoun reference.",
+            "options": [
+              "When Maya spoke to Elena, Maya said the draft was incomplete.",
+              "When Maya spoke to Elena, she said the draft was incomplete.",
+              "She said it was incomplete."
+            ],
+            "answer": "When Maya spoke to Elena, Maya said the draft was incomplete.",
+            "evaluation": {
+              "type": "single_choice"
+            }
+          },
+          {
+            "itemId": "english-c2-m004-grammar-10",
+            "position": 10,
+            "prompt": "Which statement is logically cautious?",
+            "options": [
+              "The wording allows two readings, though context favours one.",
+              "The wording can only mean one thing.",
+              "The writer certainly intended the first reading."
+            ],
+            "answer": "The wording allows two readings, though context favours one.",
+            "evaluation": {
+              "type": "single_choice"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "sectionId": "english-c2-m003-pronunciation",
+      "sectionKey": "pronunciation",
+      "position": 4,
+      "title": "pronunciation",
+      "exercise": {
+        "exerciseId": "english-c2-m003-pronunciation-exercise",
+        "type": "pronunciation_cards",
+        "items": [
+          {
+            "itemId": "english-c2-m004-pronunciation-1",
+            "position": 1,
+            "word": "scope",
+            "translation": "alcance",
+            "pronunciationGuide": "SKOHP",
+            "audio": "tts:en-GB"
+          },
+          {
+            "itemId": "english-c2-m004-pronunciation-2",
+            "position": 2,
+            "word": "ambiguity",
+            "translation": "ambigüedad",
+            "pronunciationGuide": "am-bi-GYÚ-i-ti",
+            "audio": "tts:en-GB"
+          },
+          {
+            "itemId": "english-c2-m004-pronunciation-3",
+            "position": 3,
+            "word": "attachment",
+            "translation": "adjunción",
+            "pronunciationGuide": "a-TÁCH-ment",
+            "audio": "tts:en-GB"
+          },
+          {
+            "itemId": "english-c2-m004-pronunciation-4",
+            "position": 4,
+            "word": "modifier",
+            "translation": "modificador",
+            "pronunciationGuide": "MÓ-di-fái-er",
+            "audio": "tts:en-GB"
+          },
+          {
+            "itemId": "english-c2-m004-pronunciation-5",
+            "position": 5,
+            "word": "constituent",
+            "translation": "constituyente",
+            "pronunciationGuide": "kon-STÍ-chu-ent",
+            "audio": "tts:en-GB"
+          },
+          {
+            "itemId": "english-c2-m004-pronunciation-6",
+            "position": 6,
+            "word": "reading",
+            "translation": "interpretación",
+            "pronunciationGuide": "RÍ-ding",
+            "audio": "tts:en-GB"
+          },
+          {
+            "itemId": "english-c2-m004-pronunciation-7",
+            "position": 7,
+            "word": "referent",
+            "translation": "referente",
+            "pronunciationGuide": "RÉ-fe-rent",
+            "audio": "tts:en-GB"
+          },
+          {
+            "itemId": "english-c2-m004-pronunciation-8",
+            "position": 8,
+            "word": "syntactic",
+            "translation": "sintáctico",
+            "pronunciationGuide": "sin-TÁK-tik",
+            "audio": "tts:en-GB"
+          },
+          {
+            "itemId": "english-c2-m004-pronunciation-9",
+            "position": 9,
+            "word": "structural",
+            "translation": "estructural",
+            "pronunciationGuide": "STRÁK-chu-ral",
+            "audio": "tts:en-GB"
+          },
+          {
+            "itemId": "english-c2-m004-pronunciation-10",
+            "position": 10,
+            "word": "disambiguate",
+            "translation": "desambiguar",
+            "pronunciationGuide": "dis-am-BÍ-gyu-eit",
+            "audio": "tts:en-GB"
+          }
+        ]
+      }
+    },
+    {
+      "sectionId": "english-c2-m003-reading",
+      "sectionKey": "reading",
+      "position": 5,
+      "title": "reading",
+      "exercise": {
+        "exerciseId": "english-c2-m003-reading-exercise",
+        "type": "reading_comprehension",
+        "items": [
+          {
+            "itemId": "english-c2-m004-reading-1",
+            "position": 1,
+            "prompt": "What is the central issue in the opening example?",
+            "options": [
+              "Whether the final phrase identifies the visitors or describes the method.",
+              "Whether the visitors are allowed to enter.",
+              "Whether the photograph is in colour."
+            ],
+            "answer": "Whether the final phrase identifies the visitors or describes the method.",
+            "evaluation": {
+              "type": "single_choice"
+            }
+          },
+          {
+            "itemId": "english-c2-m004-reading-2",
+            "position": 2,
+            "prompt": "Why does context favour different readings in different settings?",
+            "options": [
+              "The same phrase can attach to different constituents.",
+              "Context changes the spelling.",
+              "The sentence has no grammatical structure."
+            ],
+            "answer": "The same phrase can attach to different constituents.",
+            "evaluation": {
+              "type": "single_choice"
+            }
+          },
+          {
+            "itemId": "english-c2-m004-reading-3",
+            "position": 3,
+            "prompt": "What does “Every researcher reviewed a proposal” leave unresolved?",
+            "options": [
+              "Whether there was one shared proposal or several.",
+              "Whether the researchers were employed.",
+              "Whether the review happened."
+            ],
+            "answer": "Whether there was one shared proposal or several.",
+            "evaluation": {
+              "type": "single_choice"
+            }
+          },
+          {
+            "itemId": "english-c2-m004-reading-4",
+            "position": 4,
+            "prompt": "Which fields are mentioned as potentially affected by scope?",
+            "options": [
+              "Contracts, policy statements and research summaries.",
+              "Cooking, sport and tourism.",
+              "Only literary criticism."
+            ],
+            "answer": "Contracts, policy statements and research summaries.",
+            "evaluation": {
+              "type": "single_choice"
+            }
+          },
+          {
+            "itemId": "english-c2-m004-reading-5",
+            "position": 5,
+            "prompt": "Does the passage claim every ambiguity is harmful?",
+            "options": [
+              "No; some are harmless or useful.",
+              "Yes, all ambiguity is a defect.",
+              "Only spoken ambiguity is harmful."
+            ],
+            "answer": "No; some are harmless or useful.",
+            "evaluation": {
+              "type": "single_choice"
+            }
+          },
+          {
+            "itemId": "english-c2-m004-reading-6",
+            "position": 6,
+            "prompt": "What can a writer do when ambiguity has serious consequences?",
+            "options": [
+              "Recast the sentence, define scope or add context.",
+              "Rely on readers to guess.",
+              "Remove all modifiers."
+            ],
+            "answer": "Recast the sentence, define scope or add context.",
+            "evaluation": {
+              "type": "single_choice"
+            }
+          },
+          {
+            "itemId": "english-c2-m004-reading-7",
+            "position": 7,
+            "prompt": "What distinction should a reader maintain?",
+            "options": [
+              "What wording permits versus what context makes probable.",
+              "What is long versus what is short.",
+              "What is formal versus informal."
+            ],
+            "answer": "What wording permits versus what context makes probable.",
+            "evaluation": {
+              "type": "single_choice"
+            }
+          },
+          {
+            "itemId": "english-c2-m004-reading-8",
+            "position": 8,
+            "prompt": "Which word best describes the passage's attitude?",
+            "options": [
+              "Analytical and measured.",
+              "Dismissive and sarcastic.",
+              "Unreservedly alarmist."
+            ],
+            "answer": "Analytical and measured.",
+            "evaluation": {
+              "type": "single_choice"
+            }
+          },
+          {
+            "itemId": "english-c2-m004-reading-9",
+            "position": 9,
+            "prompt": "Why are quantifiers important in the passage?",
+            "options": [
+              "Their scope can alter the obligations or claims expressed.",
+              "They always make writing informal.",
+              "They replace all verbs."
+            ],
+            "answer": "Their scope can alter the obligations or claims expressed.",
+            "evaluation": {
+              "type": "single_choice"
+            }
+          },
+          {
+            "itemId": "english-c2-m004-reading-10",
+            "position": 10,
+            "prompt": "Which title best captures the passage?",
+            "options": [
+              "The Consequences of Ambiguous Scope",
+              "The History of Photography",
+              "Why Grammar Should Be Avoided"
+            ],
+            "answer": "The Consequences of Ambiguous Scope",
+            "evaluation": {
+              "type": "single_choice"
+            }
+          }
+        ],
+        "content": {
+          "passageId": "english-c2-m003-reading-passage",
+          "passage": "A sentence may appear straightforward until a reader asks exactly which words belong together. Consider the instruction “Photograph the visitors with the red badges”. Does the phrase with the red badges identify the visitors, or does it describe the means by which they should be photographed? In a setting where visitors wear badges, the first reading is likely; in a photography manual, the second may be more plausible. Neither interpretation can be ruled out by the wording alone.\n\nScope creates a related difficulty. “Every researcher reviewed a proposal” does not establish whether the researchers reviewed one shared proposal or whether each reviewed a different one. Negation can also take different scopes, and small changes in word order or stress may affect the interpretation. Such questions are not merely academic: contractual obligations, policy statements and research summaries can turn on the precise reach of a quantifier or qualification.\n\nA responsible editor does not label every ambiguity a defect. Sometimes alternatives are harmless or even useful. Where consequences matter, however, the writer should recast the sentence, define the relevant scope or supply context. The reader, meanwhile, should distinguish what the wording permits from what the situation makes probable."
+        }
+      }
+    },
+    {
+      "sectionId": "english-c2-m003-writing",
+      "sectionKey": "writing",
+      "position": 6,
+      "title": "writing",
+      "exercise": {
+        "exerciseId": "english-c2-m003-writing-exercise",
+        "type": "dictation",
+        "items": [
+          {
+            "itemId": "english-c2-m004-writing-1",
+            "position": 1,
+            "audio": "tts:en-GB",
+            "audioLocale": "en-GB",
+            "kind": "sentence",
+            "repeatCount": 3,
+            "segments": [
+              {
+                "segmentId": "english-c2-m004-writing-1-segment",
+                "text": "A modifier can attach to more than one constituent."
+              }
+            ],
+            "expectedAnswer": "A modifier can attach to more than one constituent.",
+            "evaluation": {
+              "type": "normalised_text"
+            }
+          },
+          {
+            "itemId": "english-c2-m004-writing-2",
+            "position": 2,
+            "audio": "tts:en-GB",
+            "audioLocale": "en-GB",
+            "kind": "sentence",
+            "repeatCount": 3,
+            "segments": [
+              {
+                "segmentId": "english-c2-m004-writing-2-segment",
+                "text": "Quantifier scope determines how a sentence is interpreted."
+              }
+            ],
+            "expectedAnswer": "Quantifier scope determines how a sentence is interpreted.",
+            "evaluation": {
+              "type": "normalised_text"
+            }
+          },
+          {
+            "itemId": "english-c2-m004-writing-3",
+            "position": 3,
+            "audio": "tts:en-GB",
+            "audioLocale": "en-GB",
+            "kind": "sentence",
+            "repeatCount": 3,
+            "segments": [
+              {
+                "segmentId": "english-c2-m004-writing-3-segment",
+                "text": "The wording permits two distinct readings."
+              }
+            ],
+            "expectedAnswer": "The wording permits two distinct readings.",
+            "evaluation": {
+              "type": "normalised_text"
+            }
+          },
+          {
+            "itemId": "english-c2-m004-writing-4",
+            "position": 4,
+            "audio": "tts:en-GB",
+            "audioLocale": "en-GB",
+            "kind": "sentence",
+            "repeatCount": 3,
+            "segments": [
+              {
+                "segmentId": "english-c2-m004-writing-4-segment",
+                "text": "Context may favour one interpretation without proving it."
+              }
+            ],
+            "expectedAnswer": "Context may favour one interpretation without proving it.",
+            "evaluation": {
+              "type": "normalised_text"
+            }
+          },
+          {
+            "itemId": "english-c2-m004-writing-5",
+            "position": 5,
+            "audio": "tts:en-GB",
+            "audioLocale": "en-GB",
+            "kind": "sentence",
+            "repeatCount": 3,
+            "segments": [
+              {
+                "segmentId": "english-c2-m004-writing-5-segment",
+                "text": "Negation can take scope over different parts of a proposition."
+              }
+            ],
+            "expectedAnswer": "Negation can take scope over different parts of a proposition.",
+            "evaluation": {
+              "type": "normalised_text"
+            }
+          },
+          {
+            "itemId": "english-c2-m004-writing-6",
+            "position": 6,
+            "audio": "tts:en-GB",
+            "audioLocale": "en-GB",
+            "kind": "sentence",
+            "repeatCount": 3,
+            "segments": [
+              {
+                "segmentId": "english-c2-m004-writing-6-segment",
+                "text": "The editor clarified which applicants were affected."
+              }
+            ],
+            "expectedAnswer": "The editor clarified which applicants were affected.",
+            "evaluation": {
+              "type": "normalised_text"
+            }
+          },
+          {
+            "itemId": "english-c2-m004-writing-7",
+            "position": 7,
+            "audio": "tts:en-GB",
+            "audioLocale": "en-GB",
+            "kind": "sentence",
+            "repeatCount": 3,
+            "segments": [
+              {
+                "segmentId": "english-c2-m004-writing-7-segment",
+                "text": "A vague expression has imprecise boundaries."
+              }
+            ],
+            "expectedAnswer": "A vague expression has imprecise boundaries.",
+            "evaluation": {
+              "type": "normalised_text"
+            }
+          },
+          {
+            "itemId": "english-c2-m004-writing-8",
+            "position": 8,
+            "audio": "tts:en-GB",
+            "audioLocale": "en-GB",
+            "kind": "sentence",
+            "repeatCount": 3,
+            "segments": [
+              {
+                "segmentId": "english-c2-m004-writing-8-segment",
+                "text": "Structural ambiguity arises from alternative grammatical groupings."
+              }
+            ],
+            "expectedAnswer": "Structural ambiguity arises from alternative grammatical groupings.",
+            "evaluation": {
+              "type": "normalised_text"
+            }
+          },
+          {
+            "itemId": "english-c2-m004-writing-9",
+            "position": 9,
+            "audio": "tts:en-GB",
+            "audioLocale": "en-GB",
+            "kind": "sentence",
+            "repeatCount": 3,
+            "segments": [
+              {
+                "segmentId": "english-c2-m004-writing-9-segment",
+                "text": "The contract was revised to remove an unintended reading."
+              }
+            ],
+            "expectedAnswer": "The contract was revised to remove an unintended reading.",
+            "evaluation": {
+              "type": "normalised_text"
+            }
+          },
+          {
+            "itemId": "english-c2-m004-writing-10",
+            "position": 10,
+            "audio": "tts:en-GB",
+            "audioLocale": "en-GB",
+            "kind": "sentence",
+            "repeatCount": 3,
+            "segments": [
+              {
+                "segmentId": "english-c2-m004-writing-10-segment",
+                "text": "A careful reader distinguishes probability from entailment."
+              }
+            ],
+            "expectedAnswer": "A careful reader distinguishes probability from entailment.",
+            "evaluation": {
+              "type": "normalised_text"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "sectionId": "english-c2-m003-speaking",
+      "sectionKey": "speaking",
+      "position": 7,
+      "title": "speaking",
+      "exercise": {
+        "exerciseId": "english-c2-m003-speaking-exercise",
+        "type": "speaking_prompts",
+        "items": [
+          {
+            "itemId": "english-c2-m004-speaking-1",
+            "position": 1,
+            "prompt": "Explain the difference between ambiguity and vagueness.",
+            "modelAnswer": "Ambiguity involves distinct possible interpretations; vagueness involves a lack of precise boundaries.",
+            "evaluation": {
+              "type": "rubric",
+              "transcriptionSeparateFromPronunciation": true
+            }
+          },
+          {
+            "itemId": "english-c2-m004-speaking-2",
+            "position": 2,
+            "prompt": "Give two readings of “I saw the journalist with the camera”.",
+            "modelAnswer": "The journalist may have had the camera, or I may have used the camera to see or photograph the journalist.",
+            "evaluation": {
+              "type": "rubric",
+              "transcriptionSeparateFromPronunciation": true
+            }
+          },
+          {
+            "itemId": "english-c2-m004-speaking-3",
+            "position": 3,
+            "prompt": "Explain why quantifier scope matters in policy writing.",
+            "modelAnswer": "Scope determines exactly who is covered and how widely a claim or obligation applies.",
+            "evaluation": {
+              "type": "rubric",
+              "transcriptionSeparateFromPronunciation": true
+            }
+          },
+          {
+            "itemId": "english-c2-m004-speaking-4",
+            "position": 4,
+            "prompt": "Describe a case where context favours one reading but does not prove it.",
+            "modelAnswer": "A phrase may attach naturally to the nearest noun, yet another grammatical attachment may remain possible.",
+            "evaluation": {
+              "type": "rubric",
+              "transcriptionSeparateFromPronunciation": true
+            }
+          },
+          {
+            "itemId": "english-c2-m004-speaking-5",
+            "position": 5,
+            "prompt": "How would you edit an ambiguous instruction?",
+            "modelAnswer": "I would identify the intended relation and rewrite the phrase so the modifier clearly attaches to the intended constituent.",
+            "evaluation": {
+              "type": "rubric",
+              "transcriptionSeparateFromPronunciation": true
+            }
+          },
+          {
+            "itemId": "english-c2-m004-speaking-6",
+            "position": 6,
+            "prompt": "Explain the difference between “not all” and “none”.",
+            "modelAnswer": "Not all denies that everyone is included; none denies that even one is included.",
+            "evaluation": {
+              "type": "rubric",
+              "transcriptionSeparateFromPronunciation": true
+            }
+          },
+          {
+            "itemId": "english-c2-m004-speaking-7",
+            "position": 7,
+            "prompt": "Why should a lawyer be cautious about pronoun reference?",
+            "modelAnswer": "An unclear pronoun may leave the responsible person, object or obligation uncertain.",
+            "evaluation": {
+              "type": "rubric",
+              "transcriptionSeparateFromPronunciation": true
+            }
+          },
+          {
+            "itemId": "english-c2-m004-speaking-8",
+            "position": 8,
+            "prompt": "Can ambiguity ever be stylistically useful? Give an example.",
+            "modelAnswer": "Yes; in literary writing, deliberate ambiguity can sustain multiple interpretations and invite rereading.",
+            "evaluation": {
+              "type": "rubric",
+              "transcriptionSeparateFromPronunciation": true
+            }
+          },
+          {
+            "itemId": "english-c2-m004-speaking-9",
+            "position": 9,
+            "prompt": "Analyse the scope of “Only the committee did not approve the proposal”.",
+            "modelAnswer": "Depending on stress and structure, only may focus on the committee while negation denies approval; the intended focus should be clarified.",
+            "evaluation": {
+              "type": "rubric",
+              "transcriptionSeparateFromPronunciation": true
+            }
+          },
+          {
+            "itemId": "english-c2-m004-speaking-10",
+            "position": 10,
+            "prompt": "Summarise a method for resolving scope ambiguity.",
+            "modelAnswer": "State each reading, identify the operator or attachment causing it, and test the readings against context and consequences.",
+            "evaluation": {
+              "type": "rubric",
+              "transcriptionSeparateFromPronunciation": true
+            }
+          }
+        ]
+      }
+    },
+    {
+      "sectionId": "english-c2-m003-listening",
+      "sectionKey": "listening",
+      "position": 8,
+      "title": "listening",
+      "exercise": {
+        "exerciseId": "english-c2-m003-listening-exercise",
+        "type": "listening_gap_fill",
+        "items": [
+          {
+            "itemId": "english-c2-m004-listening-gap-1",
+            "position": 1,
+            "gapToken": "[[gap-01]]",
+            "expectedWordId": "english-c2-m004-listening-word-1"
+          },
+          {
+            "itemId": "english-c2-m004-listening-gap-2",
+            "position": 2,
+            "gapToken": "[[gap-02]]",
+            "expectedWordId": "english-c2-m004-listening-word-2"
+          },
+          {
+            "itemId": "english-c2-m004-listening-gap-3",
+            "position": 3,
+            "gapToken": "[[gap-03]]",
+            "expectedWordId": "english-c2-m004-listening-word-3"
+          },
+          {
+            "itemId": "english-c2-m004-listening-gap-4",
+            "position": 4,
+            "gapToken": "[[gap-04]]",
+            "expectedWordId": "english-c2-m004-listening-word-4"
+          },
+          {
+            "itemId": "english-c2-m004-listening-gap-5",
+            "position": 5,
+            "gapToken": "[[gap-05]]",
+            "expectedWordId": "english-c2-m004-listening-word-5"
+          },
+          {
+            "itemId": "english-c2-m004-listening-gap-6",
+            "position": 6,
+            "gapToken": "[[gap-06]]",
+            "expectedWordId": "english-c2-m004-listening-word-6"
+          },
+          {
+            "itemId": "english-c2-m004-listening-gap-7",
+            "position": 7,
+            "gapToken": "[[gap-07]]",
+            "expectedWordId": "english-c2-m004-listening-word-7"
+          },
+          {
+            "itemId": "english-c2-m004-listening-gap-8",
+            "position": 8,
+            "gapToken": "[[gap-08]]",
+            "expectedWordId": "english-c2-m004-listening-word-8"
+          },
+          {
+            "itemId": "english-c2-m004-listening-gap-9",
+            "position": 9,
+            "gapToken": "[[gap-09]]",
+            "expectedWordId": "english-c2-m004-listening-word-9"
+          },
+          {
+            "itemId": "english-c2-m004-listening-gap-10",
+            "position": 10,
+            "gapToken": "[[gap-10]]",
+            "expectedWordId": "english-c2-m004-listening-word-10"
+          }
+        ],
+        "content": {
+          "audio": "tts:en-GB",
+          "audioLocale": "en-GB",
+          "audioTranscript": "The wording of the new guidance caused some confusion. It referred to staff who had completed the advanced course with distinction. The policy team had intended the phrase with distinction to describe the course result, not the manner in which staff completed it. The team therefore revised the sentence. It also clarified that the requirement applied to each new appointment, rather than to every member of staff. The changes did not alter the policy itself; they made its intended scope explicit.",
+          "transcriptTemplate": "The wording of the new guidance caused some [[gap-01]]. It referred to staff who had completed the [[gap-02]] course with [[gap-03]]. The policy team had intended the phrase with distinction to describe the course [[gap-04]], not the manner in which staff completed it. The team therefore [[gap-05]] the sentence. It also clarified that the [[gap-06]] applied to each new appointment, rather than to [[gap-07]] member of staff. The changes did not alter the policy itself; they made its intended [[gap-08]] explicit and reduced the risk of [[gap-09]]. The final wording was therefore more [[gap-10]].",
+          "wordBank": [
+            {
+              "wordId": "english-c2-m004-listening-word-1",
+              "word": "confusion"
+            },
+            {
+              "wordId": "english-c2-m004-listening-word-2",
+              "word": "advanced"
+            },
+            {
+              "wordId": "english-c2-m004-listening-word-3",
+              "word": "distinction"
+            },
+            {
+              "wordId": "english-c2-m004-listening-word-4",
+              "word": "result"
+            },
+            {
+              "wordId": "english-c2-m004-listening-word-5",
+              "word": "revised"
+            },
+            {
+              "wordId": "english-c2-m004-listening-word-6",
+              "word": "requirement"
+            },
+            {
+              "wordId": "english-c2-m004-listening-word-7",
+              "word": "every"
+            },
+            {
+              "wordId": "english-c2-m004-listening-word-8",
+              "word": "scope"
+            },
+            {
+              "wordId": "english-c2-m004-listening-word-9",
+              "word": "misinterpretation"
+            },
+            {
+              "wordId": "english-c2-m004-listening-word-10",
+              "word": "precise"
+            }
+          ],
+          "interaction": "select_place_move_replace"
+        }
+      }
+    }
+  ]
+}
