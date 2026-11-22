@@ -85,17 +85,16 @@ function getSpanishPronunciationGuide(word: string) {
   const rules: Array<[RegExp, string]> = [
     [/tʃ/g, "ch"], [/dʒ/g, "dy"], [/θ/g, "z"], [/ð/g, "d"],
     [/ʃ/g, "sh"], [/ʒ/g, "zh"], [/ŋ/g, "ng"], [/ɹ/g, "r"],
-    [/j/g, "y"], [/h/g, "j"], [/ɐ/g, "a"], [/ə/g, "a"],
+    [/j/g, "y"], [/h/g, "j"], [/eɪ/g, "ei"], [/aɪ/g, "ai"], [/aʊ/g, "au"], [/əʊ/g, "ou"], [/oʊ/g, "ou"], [/ɔɪ/g, "oi"], [/ɪə/g, "ia"], [/eə/g, "ea"], [/ʊə/g, "ua"], [/ɐ/g, "a"], [/ə/g, "e"],
     [/ʌ/g, "a"], [/æ/g, "a"], [/ɑ/g, "a"], [/ɒ/g, "o"],
     [/ɔ/g, "o"], [/ɛ/g, "e"], [/ɪ/g, "i"], [/i/g, "i"],
-    [/ʊ/g, "u"], [/u/g, "u"], [/eɪ/g, "ei"], [/aɪ/g, "ai"],
-    [/aʊ/g, "au"], [/əʊ/g, "ou"], [/oʊ/g, "ou"], [/ɔɪ/g, "oi"],
-    [/ɪə/g, "ia"], [/eə/g, "ea"], [/ʊə/g, "ua"], [/ɜː?/g, "er"],
+    [/ʊ/g, "u"], [/u/g, "u"], [/ɜː?/g, "er"],
     [/ɡ/g, "g"], [/r/g, "r"], [/w/g, "u"], [/v/g, "v"],
     [/ð/g, "d"], [/z/g, "z"], [/s/g, "s"], [/ʔ/g, ""]
   ];
   for (const [pattern, sound] of rules) value = value.replace(pattern, sound);
   value = value.replace(/[^a-zñ]/gi, "").replace(/([aeiou])\1+/g, "$1");
+  value = value.replace(/^e/, "a").replace(/e$/, "a");
   return value || "";
 }
 
