@@ -99,24 +99,37 @@
           }
         ],
         "theory": {
-          "title": "Frases y vocabulario de la misión",
-          "explanation": "Observa el orden de las palabras en las frases y relaciona cada expresión con su significado en español.",
+          "title": "Frases útiles y vocabulario",
+          "explanation": "Lee cada pregunta y su significado en español. Fíjate en el orden de las palabras y en si hablamos de una cosa o de varias.",
           "patterns": [
             {
-              "label": "Modelo",
-              "pattern": "Where is the clothes shop?",
+              "label": "Preguntar dónde está una prenda",
+              "pattern": "Where is the shirt?",
+              "translation": "¿Dónde está la camisa?",
               "examples": [
                 "Where is the clothes shop?",
                 "Where is the shirt?",
-                "Where is the trousers?"
+                "Where is the skirt?",
+                "Where is the dress?"
+              ],
+              "exampleTranslations": [
+                "¿Dónde está la tienda de ropa?",
+                "¿Dónde está la camisa?",
+                "¿Dónde está la falda?",
+                "¿Dónde está el vestido?"
               ]
             },
             {
-              "label": "Traducción",
-              "pattern": "English sentence → significado en español",
+              "label": "Preguntar por una prenda plural",
+              "pattern": "Where are the trousers?",
+              "translation": "¿Dónde están los pantalones?",
               "examples": [
-                "Where is the skirt?",
-                "Where is the dress?"
+                "Where are the trousers?",
+                "The trousers are here."
+              ],
+              "exampleTranslations": [
+                "¿Dónde están los pantalones?",
+                "Los pantalones están aquí."
               ]
             }
           ],

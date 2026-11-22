@@ -99,24 +99,35 @@
           }
         ],
         "theory": {
-          "title": "Frases y vocabulario de la misión",
-          "explanation": "Observa el orden de las palabras en las frases y relaciona cada expresión con su significado en español.",
+          "title": "Instrucciones de clase",
+          "explanation": "Aprende instrucciones que el profesor utiliza en clase. Son órdenes breves: escucha, repite, lee, escribe y abre el libro. No se pregunta dónde está una acción.",
           "patterns": [
             {
-              "label": "Modelo",
-              "pattern": "Where is the listen?",
+              "label": "Dar instrucciones de clase",
+              "pattern": "Listen, please. · Repeat after me. · Read the sentence.",
+              "translation": "Escucha, por favor. · Repite después de mí. · Lee la oración.",
               "examples": [
-                "Where is the listen?",
-                "Where is the repeat?",
-                "Where is the read?"
+                "Listen, please.",
+                "Repeat after me.",
+                "Read the sentence."
+              ],
+              "exampleTranslations": [
+                "Escucha, por favor.",
+                "Repite después de mí.",
+                "Lee la oración."
               ]
             },
             {
-              "label": "Traducción",
-              "pattern": "English sentence → significado en español",
+              "label": "Pedir que escriban o abran el libro",
+              "pattern": "Write your name. · Open your book.",
+              "translation": "Escribe tu nombre. · Abre tu libro.",
               "examples": [
-                "Where is the write?",
-                "Where is the open?"
+                "Write your name.",
+                "Open your book."
+              ],
+              "exampleTranslations": [
+                "Escribe tu nombre.",
+                "Abre tu libro."
               ]
             }
           ],

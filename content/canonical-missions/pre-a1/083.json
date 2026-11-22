@@ -99,24 +99,37 @@
           }
         ],
         "theory": {
-          "title": "Frases y vocabulario de la misión",
-          "explanation": "Observa el orden de las palabras en las frases y relaciona cada expresión con su significado en español.",
+          "title": "Frases útiles y vocabulario",
+          "explanation": "Lee cada pregunta y su significado en español. Fíjate en el orden de las palabras y en si hablamos de una cosa o de varias.",
           "patterns": [
             {
-              "label": "Modelo",
+              "label": "Preguntar dónde está el peluquero",
               "pattern": "Where is the hairdresser?",
+              "translation": "¿Dónde está el peluquero?",
               "examples": [
                 "Where is the hairdresser?",
-                "Where is the hair?",
-                "Where is the scissors?"
+                "Is your hair short or long?",
+                "How long is your hair?"
+              ],
+              "exampleTranslations": [
+                "¿Dónde está el peluquero?",
+                "¿Tienes el pelo corto o largo?",
+                "¿Cuánto mide tu pelo?"
               ]
             },
             {
-              "label": "Traducción",
-              "pattern": "English sentence → significado en español",
+              "label": "Preguntar por el pelo",
+              "pattern": "Is your hair short or long?",
+              "translation": "¿Tienes el pelo corto o largo?",
               "examples": [
-                "Where is the comb?",
-                "Where is the brush?"
+                "Is your hair short or long?",
+                "My hair is short.",
+                "My hair is long."
+              ],
+              "exampleTranslations": [
+                "¿Tienes el pelo corto o largo?",
+                "Tengo el pelo corto.",
+                "Tengo el pelo largo."
               ]
             }
           ],
