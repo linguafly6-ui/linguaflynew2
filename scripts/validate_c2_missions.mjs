@@ -50,7 +50,15 @@ for (const file of files) {
     continue;
   }
 
-  for (const section of sections) {
+  for (const [index, section] of sections.entries()) {
+    const sectionKey = expectedSections[index];
+    const expectedSuffix = `m${String(number).padStart(3, "0")}-${sectionKey}`;
+    if (section.sectionId !== `english-c2-${expectedSuffix}`) {
+      errors.push(`${file} / ${sectionKey}: sectionId must be unique to this mission and section.`);
+    }
+    if (section.exercise?.exerciseId !== `english-c2-${expectedSuffix}-exercise`) {
+      errors.push(`${file} / ${sectionKey}: exerciseId must be unique to this mission and section.`);
+    }
     const items = section.exercise?.items;
     if (!Array.isArray(items) || items.length !== 10) {
       errors.push(`${file} / ${section.sectionKey}: expected exactly 10 activities/blocks.`);
