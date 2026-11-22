@@ -7,21 +7,11 @@ type DictationSegment = { segmentId: string; text: string };
 type Item = { itemId: string; english?: string; spanish?: string; prompt?: string; answer?: string; options?: string[]; word?: string; translation?: string; pronunciationGuide?: string; expectedAnswer?: string; kind?: string; audioLocale?: string; audio?: string; repeatCount?: number; segments?: DictationSegment[]; modelAnswer?: string; focus?: string; expectedWordId?: string; gapToken?: string; position: number };
 type LessonEntry = { english: string; spanish: string; note?: string; prompt?: string; promptSpanish?: string; pronunciationGuide?: string };
 type Lesson = { phrases: LessonEntry[]; grammar: LessonEntry[]; reading: LessonEntry[]; writing: LessonEntry[]; speaking: LessonEntry[]; listening: LessonEntry[]; examples?: LessonEntry[]; communication?: LessonEntry[] };
-type Section = { sectionId: string; sectionKey: string; position: number; title?: string; exercise: { exerciseId: string; type: string; items: Item[]; lesson?: Lesson; theory?: { title: string; explanation: string; tip: string; patterns: ({ label?: string; pattern: string; examples?: string[] } | string)[] }; content?: { passageId?: string; passage?: string; audio?: string; audioTranscript?: string; transcriptTemplate?: string; wordBank?: { wordId: string; word: string }[] } } };
+type Section = { sectionId: string; sectionKey: string; position: number; title?: string; exercise: { exerciseId: string; type: string; items: Item[]; lesson?: Lesson; theory?: { title: string; explanation: string; tip: string; patterns: ({ label?: string; pattern: string; translation?: string; examples?: string[]; exampleTranslations?: string[] } | string)[] }; content?: { passageId?: string; passage?: string; audio?: string; audioTranscript?: string; transcriptTemplate?: string; wordBank?: { wordId: string; word: string }[]; translation?: string; blocks?: { position?: number; title?: string; content?: string; example?: string; translation?: string }[] } } };
 export type Mission = { course: { level: string }; unit: { title: string }; mission: { title: string; position?: number }; sections: Section[] };
 const labels: Record<string, string> = { explore: "Exploración", practice: "Práctica", grammar: "Gramática", pronunciation: "Pronunciación", reading: "Lectura", writing: "Escritura", speaking: "Expresión oral", listening: "Comprensión auditiva" };
 
-const preA1Listening: Record<number, { audioTranscript: string; template: string; words: string[] }> = {
-  1: { audioTranscript: "At the school door, Mia and Ben meet. Mia: Hello, Ben! Ben: Hi, Mia! Mia: Hello! Ben: Hi! Mia: Goodbye, Ben! Ben: Bye, Mia! Mia: See you! Ben: See you! Mia: Goodbye!", template: "[[gap-01]] [[gap-02]] [[gap-03]] [[gap-04]] [[gap-05]] [[gap-06]] [[gap-07]] [[gap-08]] [[gap-09]] [[gap-10]]", words: ["At the school door, Mia and Ben meet.","Mia: Hello, Ben!","Ben: Hi, Mia!","Mia: Hello!","Ben: Hi!","Mia: Goodbye, Ben!","Ben: Bye, Mia!","Mia: See you!","Ben: See you!","Mia: Goodbye!"] },
-  2: { audioTranscript: "Ana and Leo meet. Ana: Hello! What's your name? Leo: My name is Leo. Ana: My name is Ana. Leo: Hello, Ana! Ana: Hi, Leo! Leo: What's your name? Ana: My name is Ana. Leo: See you! Ana: Goodbye!", template: "[[gap-01]] [[gap-02]] [[gap-03]] [[gap-04]] [[gap-05]] [[gap-06]] [[gap-07]] [[gap-08]] [[gap-09]] [[gap-10]]", words: ["Ana and Leo meet.","Ana: Hello! What's your name?","Leo: My name is Leo.","Ana: My name is Ana.","Leo: Hello, Ana!","Ana: Hi, Leo!","Leo: What's your name?","Ana: My name is Ana.","Leo: See you!","Ana: Goodbye!"] },
-  3: { audioTranscript: "At school, Ana and Leo talk. Ana: Hello, Leo. How are you? Leo: I'm fine. And you? Ana: I'm good. Leo: Very well. Ana: I'm very happy today. Leo: I'm tired today. Ana: I'm OK. Leo: Not bad. Ana: Great!", template: "[[gap-01]] [[gap-02]] [[gap-03]] [[gap-04]] [[gap-05]] [[gap-06]] [[gap-07]] [[gap-08]] [[gap-09]] [[gap-10]]", words: ["At school, Ana and Leo talk.","Ana: Hello, Leo. How are you?","Leo: I'm fine. And you?","Ana: I'm good.","Leo: Very well.","Ana: I'm very happy today.","Leo: I'm tired today.","Ana: I'm OK.","Leo: Not bad.","Ana: Great!"] },
-  4: { audioTranscript: "Ben needs help at the door. Ben: Excuse me. Ana: Yes? Ben: Help, please. Ana: Here. Ben: Thank you. Ana: You're welcome. Ben: Sorry. Ana: It's OK. Ben: Goodbye!", template: "[[gap-01]] [[gap-02]] [[gap-03]] [[gap-04]] [[gap-05]] [[gap-06]] [[gap-07]] [[gap-08]] [[gap-09]] [[gap-10]]", words: ["Ben needs help at the door.","Ben: Excuse me.","Ana: Yes?","Ben: Help, please.","Ana: Here.","Ben: Thank you.","Ana: You're welcome.","Ben: Sorry.","Ana: It's OK.","Ben: Goodbye!"] },
-  5: { audioTranscript: "Mia asks Ben a question. Mia: True or false? Ben: Maybe. Mia: Correct! Ben: OK. Mia: That's right. Ben: That's wrong? Mia: No. Ben: Again, please. Mia: Repeat, please.", template: "[[gap-01]] [[gap-02]] [[gap-03]] [[gap-04]] [[gap-05]] [[gap-06]] [[gap-07]] [[gap-08]] [[gap-09]] [[gap-10]]", words: ["Mia asks Ben a question.","Mia: True or false?","Ben: Maybe.","Mia: Correct!","Ben: OK.","Mia: That's right.","Ben: That's wrong?","Mia: No.","Ben: Again, please.","Mia: Repeat, please."] },
-  6: { audioTranscript: "Tom and Ben meet at school. Tom: Hello! My name is Tom. Ben: Hi! My name is Ben. Tom: How do you spell your name? Ben: B-E-N. Tom: Thank you. Ben: You're welcome. Ben: How do you spell your name? Tom: T-O-M. Ben: Goodbye!", template: "[[gap-01]] [[gap-02]] [[gap-03]] [[gap-04]] [[gap-05]] [[gap-06]] [[gap-07]] [[gap-08]] [[gap-09]] [[gap-10]]", words: ["Tom and Ben meet at school.","Tom: Hello! My name is Tom.","Ben: Hi! My name is Ben.","Tom: How do you spell your name?","Ben: B-E-N.","Tom: Thank you.","Ben: You're welcome.","Ben: How do you spell your name?","Tom: T-O-M.","Ben: Goodbye!"] },
-  7: { audioTranscript: "Teacher: Look at the picture. Student: Hat? Teacher: Yes, a hat. Student: House? Teacher: Yes, a house. Student: Hand? Teacher: Yes, a hand. Teacher: Three sheep. Student: Ship? Teacher: No, sheep. Listen: ship and sheep.", template: "[[gap-01]] [[gap-02]] [[gap-03]] [[gap-04]] [[gap-05]] [[gap-06]] [[gap-07]] [[gap-08]] [[gap-09]] [[gap-10]]", words: ["Teacher: Look at the picture.","Student: Hat?","Teacher: Yes, a hat.","Student: House?","Teacher: Yes, a house.","Student: Hand?","Teacher: Yes, a hand.","Teacher: Three sheep.","Student: Ship?","Teacher: No, sheep. Listen: ship and sheep."] },
-  8: { audioTranscript: "At school, Ana talks to Tom. Tom: Hello, Ana. How are you today? Ana: I am very happy. Tom: I am a teacher. Ana: I am a student. Tom: I am happy today. Ana: I am tired. Tom: I am calm. Ana: I am excited. Tom: Great!", template: "[[gap-01]] [[gap-02]] [[gap-03]] [[gap-04]] [[gap-05]] [[gap-06]] [[gap-07]] [[gap-08]] [[gap-09]] [[gap-10]]", words: ["At school, Ana talks to Tom.","Tom: Hello, Ana. How are you today?","Ana: I am very happy.","Tom: I am a teacher.","Ana: I am a student.","Tom: I am happy today.","Ana: I am tired.","Tom: I am calm.","Ana: I am excited.","Tom: Great!"] },
-  9: { audioTranscript: "At school, Ana and Leo talk. Ana: Hello, Leo. I'm happy today. Leo: You're happy. Ana: I'm fine. Leo: You're great. Ana: I'm ready. Leo: You're nice. Ana: I'm a student. Leo: You're a teacher. Ana: Goodbye!", template: "[[gap-01]] [[gap-02]] [[gap-03]] [[gap-04]] [[gap-05]] [[gap-06]] [[gap-07]] [[gap-08]] [[gap-09]] [[gap-10]]", words: ["At school, Ana and Leo talk.","Ana: Hello, Leo. I'm happy today.","Leo: You're happy.","Ana: I'm fine.","Leo: You're great.","Ana: I'm ready.","Leo: You're nice.","Ana: I'm a student.","Leo: You're a teacher.","Ana: Goodbye!"] },
-  10: { audioTranscript: "At the door, Ana meets Alex and Ben. Ana: Hello! This is my friend, Alex. Alex: Nice to meet you. Ana: Nice to meet you too. Ben: Pleased to meet you. Ana: This is Ben. Ben: You're my friend. Alex: What's your name? Ben: My name is Ben. Alex: Goodbye!", template: "[[gap-01]] [[gap-02]] [[gap-03]] [[gap-04]] [[gap-05]] [[gap-06]] [[gap-07]] [[gap-08]] [[gap-09]] [[gap-10]]", words: ["At the door, Ana meets Alex and Ben.","Ana: Hello! This is my friend, Alex.","Alex: Nice to meet you.","Ana: Nice to meet you too.","Ben: Pleased to meet you.","Ana: This is Ben.","Ben: You're my friend.","Alex: What's your name?","Ben: My name is Ben.","Alex: Goodbye!"] },
+const PRE_A1_EXAMPLE_TRANSLATIONS: Record<string, string> = {
   "Correct: Jump! / Not: Jumps!": "Correcto: «¡Salta!». Incorrecto: añadir una -s al imperativo.",
   "one, two, three, four, five": "uno, dos, tres, cuatro, cinco",
   "six, seven, eight, nine, ten": "seis, siete, ocho, nueve, diez",
@@ -106,6 +96,92 @@ const preA1Listening: Record<number, { audioTranscript: string; template: string
   "tomatoes and lettuce": "tomates y lechuga",
   "green peas": "guisantes verdes",
   "green lettuce": "lechuga verde",
+  "Where is the hairdresser?": "¿Dónde está el peluquero?",
+  "Is your hair short or long?": "¿Tienes el pelo corto o largo?",
+  "How long is your hair?": "¿Cuánto mide tu pelo?",
+  "Where is the hair?": "¿Dónde está el pelo?",
+  "Where is the comb?": "¿Dónde está el peine?",
+  "Where is the brush?": "¿Dónde está el cepillo?",
+  "Where is the scissors?": "¿Dónde están las tijeras?",
+  "Where are the scissors?": "¿Dónde están las tijeras?",
+  "I want a teddy bear.": "Quiero un oso de peluche.",
+  "Have you got a toy train?": "¿Tienes un tren de juguete?",
+  "The robot is blue.": "El robot es azul.",
+  "Where is the pet shop?": "¿Dónde está la tienda de animales?",
+  "Where is the pet?": "¿Dónde está la mascota?",
+  "Where is the dog?": "¿Dónde está el perro?",
+  "Where is the cat?": "¿Dónde está el gato?",
+  "Where is the fish?": "¿Dónde está el pez?",
+  "Where is the clothes shop?": "¿Dónde está la tienda de ropa?",
+  "Where is the shirt?": "¿Dónde está la camisa?",
+  "Where are the trousers?": "¿Dónde están los pantalones?",
+  "Where is the skirt?": "¿Dónde está la falda?",
+  "Where is the dress?": "¿Dónde está el vestido?",
+  "Listen, please.": "Escucha, por favor.",
+  "Repeat after me.": "Repite después de mí.",
+  "Read the sentence.": "Lee la oración.",
+  "Write your name.": "Escribe tu nombre.",
+  "Open your book.": "Abre tu libro.",
+  "There is a farm shop.": "Hay una tienda en la granja.",
+  "There are six eggs.": "Hay seis huevos.",
+  "I buy milk and cheese.": "Compro leche y queso.",
+  "A firefighter wears a helmet.": "Un bombero lleva un casco.",
+  "The fire engine is red.": "El camión de bomberos es rojo.",
+  "The firefighter uses a hose.": "El bombero usa una manguera.",
+  "I am at the campsite.": "Estoy en el camping.",
+  "My tent is near the lake.": "Mi tienda de campaña está cerca del lago.",
+  "I have a sleeping bag.": "Tengo un saco de dormir.",
+  "I'd like a cup of tea, please.": "Quisiera una taza de té, por favor.",
+  "Can I have a sandwich?": "¿Me pones un sándwich, por favor?",
+  "The juice is in a glass.": "El zumo está en un vaso.",
+  "I feel tired today.": "Hoy me siento cansado/a.",
+  "I am hungry and thirsty.": "Tengo hambre y sed.",
+  "I am better now.": "Ahora estoy mejor.",
+  "The horse is big.": "El caballo es grande.",
+  "The duck can swim.": "El pato puede nadar.",
+  "The sheep is white.": "La oveja es blanca.",
+  "There is a boat in the harbour.": "Hay un barco en el puerto.",
+  "The lighthouse is tall.": "El faro es alto.",
+  "The sand is warm.": "La arena está templada.",
+  "There is a sofa in the living room.": "Hay un sofá en el salón.",
+  "The remote control is on the table.": "El mando a distancia está sobre la mesa.",
+  "The clock is on the wall.": "El reloj está en la pared.",
+  "I can climb.": "Puedo trepar.",
+  "I can jump and run.": "Puedo saltar y correr.",
+  "Let's share the ball.": "Compartamos el balón.",
+  "a bottle of water": "una botella de agua",
+  "a packet of rice": "un paquete de arroz",
+  "a few apples": "unas pocas manzanas",
+  "I have my passport.": "Tengo mi pasaporte.",
+  "The plane is on the runway.": "El avión está en la pista.",
+  "The pilot is on the plane.": "El piloto está en el avión.",
+  "I have breakfast in the morning.": "Desayuno por la mañana.",
+  "I eat lunch in the afternoon.": "Almuerzo por la tarde.",
+  "I go to bed at night.": "Me voy a la cama por la noche.",
+  "There is a plant in the pot.": "Hay una planta en la maceta.",
+  "The seed grows in the soil.": "La semilla crece en la tierra.",
+  "I water the rose.": "Riego la rosa.",
+  "I clean my room.": "Limpio mi habitación.",
+  "I sweep the floor.": "Barro el suelo.",
+  "Please wash the cup.": "Lava la taza, por favor.",
+  "Hello! I am Alex.": "¡Hola! Soy Alex.",
+  "This is my family.": "Esta es mi familia.",
+  "I have a book. Thank you!": "Tengo un libro. ¡Gracias!",
+  "I like + sport.": "Me gusta + deporte.",
+  "I can + verb.": "Puedo + verbo."
+};
+
+const preA1Listening: Record<number, { audioTranscript: string; template: string; words: string[] }> = {
+  1: { audioTranscript: "At the school door, Mia and Ben meet. Mia: Hello, Ben! Ben: Hi, Mia! Mia: Hello! Ben: Hi! Mia: Goodbye, Ben! Ben: Bye, Mia! Mia: See you! Ben: See you! Mia: Goodbye!", template: "[[gap-01]] [[gap-02]] [[gap-03]] [[gap-04]] [[gap-05]] [[gap-06]] [[gap-07]] [[gap-08]] [[gap-09]] [[gap-10]]", words: ["At the school door, Mia and Ben meet.","Mia: Hello, Ben!","Ben: Hi, Mia!","Mia: Hello!","Ben: Hi!","Mia: Goodbye, Ben!","Ben: Bye, Mia!","Mia: See you!","Ben: See you!","Mia: Goodbye!"] },
+  2: { audioTranscript: "Ana and Leo meet. Ana: Hello! What's your name? Leo: My name is Leo. Ana: My name is Ana. Leo: Hello, Ana! Ana: Hi, Leo! Leo: What's your name? Ana: My name is Ana. Leo: See you! Ana: Goodbye!", template: "[[gap-01]] [[gap-02]] [[gap-03]] [[gap-04]] [[gap-05]] [[gap-06]] [[gap-07]] [[gap-08]] [[gap-09]] [[gap-10]]", words: ["Ana and Leo meet.","Ana: Hello! What's your name?","Leo: My name is Leo.","Ana: My name is Ana.","Leo: Hello, Ana!","Ana: Hi, Leo!","Leo: What's your name?","Ana: My name is Ana.","Leo: See you!","Ana: Goodbye!"] },
+  3: { audioTranscript: "At school, Ana and Leo talk. Ana: Hello, Leo. How are you? Leo: I'm fine. And you? Ana: I'm good. Leo: Very well. Ana: I'm very happy today. Leo: I'm tired today. Ana: I'm OK. Leo: Not bad. Ana: Great!", template: "[[gap-01]] [[gap-02]] [[gap-03]] [[gap-04]] [[gap-05]] [[gap-06]] [[gap-07]] [[gap-08]] [[gap-09]] [[gap-10]]", words: ["At school, Ana and Leo talk.","Ana: Hello, Leo. How are you?","Leo: I'm fine. And you?","Ana: I'm good.","Leo: Very well.","Ana: I'm very happy today.","Leo: I'm tired today.","Ana: I'm OK.","Leo: Not bad.","Ana: Great!"] },
+  4: { audioTranscript: "Ben needs help at the door. Ben: Excuse me. Ana: Yes? Ben: Help, please. Ana: Here. Ben: Thank you. Ana: You're welcome. Ben: Sorry. Ana: It's OK. Ben: Goodbye!", template: "[[gap-01]] [[gap-02]] [[gap-03]] [[gap-04]] [[gap-05]] [[gap-06]] [[gap-07]] [[gap-08]] [[gap-09]] [[gap-10]]", words: ["Ben needs help at the door.","Ben: Excuse me.","Ana: Yes?","Ben: Help, please.","Ana: Here.","Ben: Thank you.","Ana: You're welcome.","Ben: Sorry.","Ana: It's OK.","Ben: Goodbye!"] },
+  5: { audioTranscript: "Mia asks Ben a question. Mia: True or false? Ben: Maybe. Mia: Correct! Ben: OK. Mia: That's right. Ben: That's wrong? Mia: No. Ben: Again, please. Mia: Repeat, please.", template: "[[gap-01]] [[gap-02]] [[gap-03]] [[gap-04]] [[gap-05]] [[gap-06]] [[gap-07]] [[gap-08]] [[gap-09]] [[gap-10]]", words: ["Mia asks Ben a question.","Mia: True or false?","Ben: Maybe.","Mia: Correct!","Ben: OK.","Mia: That's right.","Ben: That's wrong?","Mia: No.","Ben: Again, please.","Mia: Repeat, please."] },
+  6: { audioTranscript: "Tom and Ben meet at school. Tom: Hello! My name is Tom. Ben: Hi! My name is Ben. Tom: How do you spell your name? Ben: B-E-N. Tom: Thank you. Ben: You're welcome. Ben: How do you spell your name? Tom: T-O-M. Ben: Goodbye!", template: "[[gap-01]] [[gap-02]] [[gap-03]] [[gap-04]] [[gap-05]] [[gap-06]] [[gap-07]] [[gap-08]] [[gap-09]] [[gap-10]]", words: ["Tom and Ben meet at school.","Tom: Hello! My name is Tom.","Ben: Hi! My name is Ben.","Tom: How do you spell your name?","Ben: B-E-N.","Tom: Thank you.","Ben: You're welcome.","Ben: How do you spell your name?","Tom: T-O-M.","Ben: Goodbye!"] },
+  7: { audioTranscript: "Teacher: Look at the picture. Student: Hat? Teacher: Yes, a hat. Student: House? Teacher: Yes, a house. Student: Hand? Teacher: Yes, a hand. Teacher: Three sheep. Student: Ship? Teacher: No, sheep. Listen: ship and sheep.", template: "[[gap-01]] [[gap-02]] [[gap-03]] [[gap-04]] [[gap-05]] [[gap-06]] [[gap-07]] [[gap-08]] [[gap-09]] [[gap-10]]", words: ["Teacher: Look at the picture.","Student: Hat?","Teacher: Yes, a hat.","Student: House?","Teacher: Yes, a house.","Student: Hand?","Teacher: Yes, a hand.","Teacher: Three sheep.","Student: Ship?","Teacher: No, sheep. Listen: ship and sheep."] },
+  8: { audioTranscript: "At school, Ana talks to Tom. Tom: Hello, Ana. How are you today? Ana: I am very happy. Tom: I am a teacher. Ana: I am a student. Tom: I am happy today. Ana: I am tired. Tom: I am calm. Ana: I am excited. Tom: Great!", template: "[[gap-01]] [[gap-02]] [[gap-03]] [[gap-04]] [[gap-05]] [[gap-06]] [[gap-07]] [[gap-08]] [[gap-09]] [[gap-10]]", words: ["At school, Ana talks to Tom.","Tom: Hello, Ana. How are you today?","Ana: I am very happy.","Tom: I am a teacher.","Ana: I am a student.","Tom: I am happy today.","Ana: I am tired.","Tom: I am calm.","Ana: I am excited.","Tom: Great!"] },
+  9: { audioTranscript: "At school, Ana and Leo talk. Ana: Hello, Leo. I'm happy today. Leo: You're happy. Ana: I'm fine. Leo: You're great. Ana: I'm ready. Leo: You're nice. Ana: I'm a student. Leo: You're a teacher. Ana: Goodbye!", template: "[[gap-01]] [[gap-02]] [[gap-03]] [[gap-04]] [[gap-05]] [[gap-06]] [[gap-07]] [[gap-08]] [[gap-09]] [[gap-10]]", words: ["At school, Ana and Leo talk.","Ana: Hello, Leo. I'm happy today.","Leo: You're happy.","Ana: I'm fine.","Leo: You're great.","Ana: I'm ready.","Leo: You're nice.","Ana: I'm a student.","Leo: You're a teacher.","Ana: Goodbye!"] },
+  10: { audioTranscript: "At the door, Ana meets Alex and Ben. Ana: Hello! This is my friend, Alex. Alex: Nice to meet you. Ana: Nice to meet you too. Ben: Pleased to meet you. Ana: This is Ben. Ben: You're my friend. Alex: What's your name? Ben: My name is Ben. Alex: Goodbye!", template: "[[gap-01]] [[gap-02]] [[gap-03]] [[gap-04]] [[gap-05]] [[gap-06]] [[gap-07]] [[gap-08]] [[gap-09]] [[gap-10]]", words: ["At the door, Ana meets Alex and Ben.","Ana: Hello! This is my friend, Alex.","Alex: Nice to meet you.","Ana: Nice to meet you too.","Ben: Pleased to meet you.","Ana: This is Ben.","Ben: You're my friend.","Alex: What's your name?","Ben: My name is Ben.","Alex: Goodbye!"] },
 };
 
 function buildDictationHint(answer: string, level: number) {
@@ -132,6 +208,43 @@ function speak(text: string) {
 
 export default function CanonicalMission({ missionData = missionSource as Mission }: { missionData?: Mission }) {
   const mission = missionData;
+  const exploreTranslations = useMemo(() => {
+    const normalise = (value: string) => value.toLocaleLowerCase("en-GB").replace(/[“”]/g, '"').replace(/[.!?…]/g, "").replace(/\s+/g, " ").trim();
+    const translations = new Map<string, string>();
+    const add = (english?: string, spanish?: string, overwrite = false) => {
+      if (!english?.trim() || !spanish?.trim()) return;
+      const value = spanish.trim();
+      if (/^(frase de repaso|modelo oral|modelo completo|estructura practicada|texto completo|repaso no evaluable|modelos con su significado|estructura y ejemplos|saludar|despedirse|preguntar|responder|expresar|reconocer|identificar|presentar|hablar|usar|utilizar|distinguir|aprender|practicar|comprender|observar|leer|elegir|decir|describir|fórmula|regla|concordancia|orden de las palabras)/i.test(value)) return;
+      const key = normalise(english);
+      if (overwrite || !translations.has(key)) translations.set(key, value);
+    };
+    mission.sections.forEach((currentSection) => {
+      currentSection.exercise.items.forEach((entry) => {
+        add(entry.english, entry.spanish);
+        add(entry.word, entry.translation);
+        add(entry.modelAnswer, entry.translation);
+        const prompt = entry.prompt ?? "";
+        const translatedPhrase = prompt.match(/(?:Traduce la frase:|¿Qué significa)\s*[“"](.+?)[”"]\??$/i)?.[1];
+        if (translatedPhrase && entry.options?.[0]) add(translatedPhrase, entry.options[0]);
+      });
+      const lesson = currentSection.exercise.lesson;
+      if (lesson) Object.values(lesson).forEach((entries) => {
+        if (Array.isArray(entries)) entries.forEach((entry) => add(entry.english, entry.spanish));
+      });
+      const content = currentSection.exercise.content as (typeof currentSection.exercise.content & { translation?: string }) | undefined;
+      add(content?.audioTranscript ?? content?.passage, content?.translation);
+      currentSection.exercise.content?.blocks?.forEach((block) => add(block.example, block.translation));
+      currentSection.exercise.theory?.patterns.forEach((pattern) => {
+        if (typeof pattern !== "string") {
+          add(pattern.pattern, pattern.translation, true);
+          pattern.examples?.forEach((example, index) => add(example, pattern.exampleTranslations?.[index], true));
+        }
+      });
+    });
+    Object.entries(PRE_A1_EXAMPLE_TRANSLATIONS).forEach(([english, spanish]) => add(english, spanish));
+    return translations;
+  }, [mission]);
+  const getExampleTranslation = (english: string) => exploreTranslations.get(english.toLocaleLowerCase("en-GB").replace(/[“”]/g, '"').replace(/[.!?…]/g, "").replace(/\s+/g, " ").trim());
   const sectionLabel = (key: string) => mission.course.level.toUpperCase() === "B1" && key === "practice" ? "Vocabulary" : labels[key] ?? key;
   const [sectionKey, setSectionKey] = useState("explore");
   const [index, setIndex] = useState(0);
@@ -363,7 +476,7 @@ export default function CanonicalMission({ missionData = missionSource as Missio
           <div className="rounded-2xl border border-[#dce8f4] bg-gradient-to-br from-[#f3f8fd] to-white p-5 sm:p-6">
             <p className="text-[10px] font-bold uppercase tracking-[.18em] text-[#55779d]">ANTES DE PRACTICAR</p>
             <h3 className="mt-2 text-xl font-semibold tracking-tight text-[#203752]">Primero comprende. Después practica.</h3>
-            <p className="mt-2 max-w-3xl text-sm leading-6 text-[#61738a]">Aquí tienes explicado y traducido todo lo que aparecerá en las actividades de esta misión. No hay preguntas ni ejercicios en esta sección: puedes leer, mirar y escuchar cada ejemplo a tu ritmo.</p><p className="mt-2 text-xs leading-5 text-[#8792a3]">Aviso: los botones de escucha usan voz sintética del navegador; todavía no representan grabaciones de audio reales revisadas por el equipo académico.</p>
+            <p className="mt-2 max-w-3xl text-sm leading-6 text-[#61738a]">Aquí tienes explicado todo lo que aparecerá en esta misión. Cada palabra y frase en inglés se acompaña de su significado en español para que puedas aprender desde cero. Primero comprende; después escucha y practica.</p><p className="mt-2 text-xs leading-5 text-[#8792a3]">Aviso: los botones de escucha usan voz sintética del navegador; todavía no representan grabaciones de audio reales revisadas por el equipo académico.</p>
           </div>
 
           {section.exercise.items.length > 0 && <section>
@@ -415,8 +528,21 @@ export default function CanonicalMission({ missionData = missionSource as Missio
             <div className="grid gap-3 sm:grid-cols-2">
               {(section.exercise.theory?.patterns ?? []).filter(Boolean).map((pattern, i) => <article key={typeof pattern === "string" ? pattern : pattern.label ?? pattern.pattern ?? i} className="rounded-xl border border-[#e8ebf0] bg-[#fbfcfe] p-4">
                 {typeof pattern !== "string" && pattern.label && <p className="text-xs font-bold uppercase tracking-wide text-[#55779d]">{pattern.label}</p>}
-                <p className="mt-2 font-semibold text-[#26364b]">{typeof pattern === "string" ? pattern : pattern.pattern}</p>
-                {typeof pattern !== "string" && pattern.examples?.length ? <ul className="mt-3 space-y-2">{(pattern.examples ?? []).map(example => <li key={example} className="text-sm text-[#53657b]">• {example}</li>)}</ul> : null}
+                <p className="mt-2 font-semibold text-[#26364b]">{typeof pattern === "string" ? pattern : pattern.pattern}</p>{typeof pattern !== "string" && (pattern.translation ?? getExampleTranslation(pattern.pattern)) && <p className="mt-1 text-sm text-[#47745b]">{pattern.translation ?? getExampleTranslation(pattern.pattern)}</p>
+                {typeof pattern !== "string" && pattern.examples?.length ? <ul className="mt-3 space-y-2">{(pattern.examples ?? []).map((example, exampleIndex) => {
+                  const inlineTranslation = example.match(/^(.+?)\s+[—–]\s+(.+)$/);
+                  const displayedExample = inlineTranslation?.[1] ?? example;
+                  const translation = pattern.exampleTranslations?.[exampleIndex] ?? getExampleTranslation(displayedExample) ?? inlineTranslation?.[2];
+                  return <li key={example + exampleIndex} className="list-none rounded-xl border border-[#e8edf3] bg-white p-3">
+                    <div className="flex items-start justify-between gap-3">
+                      <div className="min-w-0">
+                        <p className="font-semibold leading-6 text-[#26364b]">{displayedExample}</p>
+                        {translation ? <p className="mt-1 text-sm leading-6 text-[#47745b]">{translation}</p> : <p className="mt-1 text-xs text-amber-700">Traducción pendiente de revisión académica.</p>}
+                      </div>
+                      <button type="button" aria-label={`Escuchar ${displayedExample}`} onClick={() => speak(displayedExample)} className="shrink-0 rounded-full border border-[#dce6f0] px-3 py-2 text-xs font-semibold text-[#55708f]">♫</button>
+                    </div>
+                  </li>;
+                })}</ul> : null}
               </article>)}
             </div>
             <div className="mt-3 grid gap-3 sm:grid-cols-2">
