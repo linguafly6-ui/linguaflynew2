@@ -215,11 +215,29 @@
             "pronunciationGuide": "a",
             "audio": "tts:en-GB:a",
             "audioStatus": "synthetic_pending_review"
+          },
+          {
+            "itemId": "english-pre-a1-m008-explore-context-22",
+            "position": 22,
+            "english": "talk",
+            "spanish": "hablar",
+            "pronunciationGuide": "tók",
+            "audio": "tts:en-GB:talk",
+            "audioStatus": "synthetic_pending_review"
+          },
+          {
+            "itemId": "english-pre-a1-m008-explore-context-23",
+            "position": 23,
+            "english": "to",
+            "spanish": "a / con",
+            "pronunciationGuide": "tu",
+            "audio": "tts:en-GB:to",
+            "audioStatus": "synthetic_pending_review"
           }
         ],
         "theory": {
           "title": "I am…",
-          "explanation": "I am + estado o identidad. En esta misión no se evalúan negaciones ni preguntas. Se usa a ante un nombre contable singular como student o teacher.",
+          "explanation": "I am + estado o identidad. En esta misión no se evalúan negaciones ni preguntas. Se usa a ante un nombre contable singular como student o teacher. El texto completo de comprensión auditiva y su vocabulario de apoyo se presentan en Explore antes de la práctica.",
           "tip": "Exploración es aprendizaje, no un examen. Revisa todos los bloques, palabras y modelos antes de practicar.",
           "patterns": [
             {
@@ -532,54 +550,9 @@
           ],
           "listening": [
             {
-              "english": "I am happy.",
-              "spanish": "Estoy feliz.",
-              "note": "Expresión del audio explicada previamente en Explore."
-            },
-            {
-              "english": "I am sad.",
-              "spanish": "Estoy triste.",
-              "note": "Expresión del audio explicada previamente en Explore."
-            },
-            {
-              "english": "I am tired.",
-              "spanish": "Estoy cansado/a.",
-              "note": "Expresión del audio explicada previamente en Explore."
-            },
-            {
-              "english": "I am excited.",
-              "spanish": "Estoy emocionado/a.",
-              "note": "Expresión del audio explicada previamente en Explore."
-            },
-            {
-              "english": "I am angry.",
-              "spanish": "Estoy enfadado/a.",
-              "note": "Expresión del audio explicada previamente en Explore."
-            },
-            {
-              "english": "I am calm.",
-              "spanish": "Estoy tranquilo/a.",
-              "note": "Expresión del audio explicada previamente en Explore."
-            },
-            {
-              "english": "I am a student.",
-              "spanish": "Soy estudiante.",
-              "note": "Expresión del audio explicada previamente en Explore."
-            },
-            {
-              "english": "I am a teacher.",
-              "spanish": "Soy profesor/a.",
-              "note": "Expresión del audio explicada previamente en Explore."
-            },
-            {
-              "english": "I am here today.",
-              "spanish": "Estoy aquí hoy.",
-              "note": "Expresión del audio explicada previamente en Explore."
-            },
-            {
-              "english": "I am a child.",
-              "spanish": "Soy un niño / una niña.",
-              "note": "Expresión del audio explicada previamente en Explore."
+              "english": "At school, Ana talks to Tom. Tom: Hello, Ana. How are you today? Ana: I am very happy. Tom: I am a teacher. Ana: I am a student. Tom: I am happy today. Ana: I am tired. Tom: I am calm. Ana: I am excited. Tom: Great!",
+              "spanish": "En la escuela, Ana habla con Tom. Tom: Hola, Ana. ¿Cómo estás hoy? Ana: Estoy muy feliz. Tom: Soy profesor. Ana: Soy estudiante. Tom: Estoy feliz hoy. Ana: Estoy cansada. Tom: Estoy tranquilo. Ana: Estoy emocionada. Tom: ¡Genial!",
+              "note": "Texto contextual completo; el vocabulario de apoyo y las expresiones objetivo se explican antes en Explore."
             }
           ]
         },
@@ -1664,55 +1637,55 @@
         "exerciseId": "english-pre-a1-m008-listening-ex01",
         "type": "listening_gap_fill",
         "content": {
-          "audio": "tts:en-GB:I am happy. I am sad. I am tired. I am excited. I am angry. I am calm. I am a student. I am a teacher. I am here today. I am a child.",
+          "audio": "tts:en-GB:At school, Ana talks to Tom. Tom: Hello, Ana. How are you today? Ana: I am very happy. Tom: I am a teacher. Ana: I am a student. Tom: I am happy today. Ana: I am tired. Tom: I am calm. Ana: I am excited. Tom: Great!",
           "audioLocale": "en-GB",
           "audioStatus": "synthetic_pending_review",
           "transcriptTemplate": "[[gap-01]] [[gap-02]] [[gap-03]] [[gap-04]] [[gap-05]] [[gap-06]] [[gap-07]] [[gap-08]] [[gap-09]] [[gap-10]]",
           "wordBank": [
             {
               "wordId": "english-pre-a1-m008-listening-word-01",
-              "word": "I am happy."
+              "word": "At school, Ana talks to Tom."
             },
             {
               "wordId": "english-pre-a1-m008-listening-word-02",
-              "word": "I am sad."
+              "word": "Tom: Hello, Ana. How are you today?"
             },
             {
               "wordId": "english-pre-a1-m008-listening-word-03",
-              "word": "I am tired."
+              "word": "Ana: I am very happy."
             },
             {
               "wordId": "english-pre-a1-m008-listening-word-04",
-              "word": "I am excited."
+              "word": "Tom: I am a teacher."
             },
             {
               "wordId": "english-pre-a1-m008-listening-word-05",
-              "word": "I am angry."
+              "word": "Ana: I am a student."
             },
             {
               "wordId": "english-pre-a1-m008-listening-word-06",
-              "word": "I am calm."
+              "word": "Tom: I am happy today."
             },
             {
               "wordId": "english-pre-a1-m008-listening-word-07",
-              "word": "I am a student."
+              "word": "Ana: I am tired."
             },
             {
               "wordId": "english-pre-a1-m008-listening-word-08",
-              "word": "I am a teacher."
+              "word": "Tom: I am calm."
             },
             {
               "wordId": "english-pre-a1-m008-listening-word-09",
-              "word": "I am here today."
+              "word": "Ana: I am excited."
             },
             {
               "wordId": "english-pre-a1-m008-listening-word-10",
-              "word": "I am a child."
+              "word": "Tom: Great!"
             }
           ],
           "interaction": "select_place_move_replace",
-          "audioTranscript": "tts:en-GB:I am happy. I am sad. I am tired. I am excited. I am angry. I am calm. I am a student. I am a teacher. I am here today. I am a child.",
-          "translation": "Estoy feliz. Estoy triste. Estoy cansado/a. Estoy emocionado/a. Estoy enfadado/a. Estoy tranquilo/a. Soy estudiante. Soy profesor/a. Estoy aquí hoy. Soy un niño / una niña."
+          "audioTranscript": "At school, Ana talks to Tom. Tom: Hello, Ana. How are you today? Ana: I am very happy. Tom: I am a teacher. Ana: I am a student. Tom: I am happy today. Ana: I am tired. Tom: I am calm. Ana: I am excited. Tom: Great!",
+          "translation": "En la escuela, Ana habla con Tom. Tom: Hola, Ana. ¿Cómo estás hoy? Ana: Estoy muy feliz. Tom: Soy profesor. Ana: Soy estudiante. Tom: Estoy feliz hoy. Ana: Estoy cansada. Tom: Estoy tranquilo. Ana: Estoy emocionada. Tom: ¡Genial!"
         },
         "items": [
           {
@@ -1720,70 +1693,70 @@
             "position": 1,
             "gapToken": "[[gap-01]]",
             "expectedWordId": "english-pre-a1-m008-listening-word-01",
-            "answer": "I am happy."
+            "answer": "At school, Ana talks to Tom."
           },
           {
             "itemId": "english-pre-a1-m008-listening-ex01-i02",
             "position": 2,
             "gapToken": "[[gap-02]]",
             "expectedWordId": "english-pre-a1-m008-listening-word-02",
-            "answer": "I am sad."
+            "answer": "Tom: Hello, Ana. How are you today?"
           },
           {
             "itemId": "english-pre-a1-m008-listening-ex01-i03",
             "position": 3,
             "gapToken": "[[gap-03]]",
             "expectedWordId": "english-pre-a1-m008-listening-word-03",
-            "answer": "I am tired."
+            "answer": "Ana: I am very happy."
           },
           {
             "itemId": "english-pre-a1-m008-listening-ex01-i04",
             "position": 4,
             "gapToken": "[[gap-04]]",
             "expectedWordId": "english-pre-a1-m008-listening-word-04",
-            "answer": "I am excited."
+            "answer": "Tom: I am a teacher."
           },
           {
             "itemId": "english-pre-a1-m008-listening-ex01-i05",
             "position": 5,
             "gapToken": "[[gap-05]]",
             "expectedWordId": "english-pre-a1-m008-listening-word-05",
-            "answer": "I am angry."
+            "answer": "Ana: I am a student."
           },
           {
             "itemId": "english-pre-a1-m008-listening-ex01-i06",
             "position": 6,
             "gapToken": "[[gap-06]]",
             "expectedWordId": "english-pre-a1-m008-listening-word-06",
-            "answer": "I am calm."
+            "answer": "Tom: I am happy today."
           },
           {
             "itemId": "english-pre-a1-m008-listening-ex01-i07",
             "position": 7,
             "gapToken": "[[gap-07]]",
             "expectedWordId": "english-pre-a1-m008-listening-word-07",
-            "answer": "I am a student."
+            "answer": "Ana: I am tired."
           },
           {
             "itemId": "english-pre-a1-m008-listening-ex01-i08",
             "position": 8,
             "gapToken": "[[gap-08]]",
             "expectedWordId": "english-pre-a1-m008-listening-word-08",
-            "answer": "I am a teacher."
+            "answer": "Tom: I am calm."
           },
           {
             "itemId": "english-pre-a1-m008-listening-ex01-i09",
             "position": 9,
             "gapToken": "[[gap-09]]",
             "expectedWordId": "english-pre-a1-m008-listening-word-09",
-            "answer": "I am here today."
+            "answer": "Ana: I am excited."
           },
           {
             "itemId": "english-pre-a1-m008-listening-ex01-i10",
             "position": 10,
             "gapToken": "[[gap-10]]",
             "expectedWordId": "english-pre-a1-m008-listening-word-10",
-            "answer": "I am a child."
+            "answer": "Tom: Great!"
           }
         ]
       }

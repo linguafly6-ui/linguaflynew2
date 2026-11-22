@@ -197,11 +197,47 @@
             "pronunciationGuide": "mái",
             "audio": "tts:en-GB:my",
             "audioStatus": "synthetic_pending_review"
+          },
+          {
+            "itemId": "english-pre-a1-m009-explore-context-20",
+            "position": 20,
+            "english": "at",
+            "spanish": "en",
+            "pronunciationGuide": "at",
+            "audio": "tts:en-GB:at",
+            "audioStatus": "synthetic_pending_review"
+          },
+          {
+            "itemId": "english-pre-a1-m009-explore-context-21",
+            "position": 21,
+            "english": "school",
+            "spanish": "escuela",
+            "pronunciationGuide": "skúl",
+            "audio": "tts:en-GB:school",
+            "audioStatus": "synthetic_pending_review"
+          },
+          {
+            "itemId": "english-pre-a1-m009-explore-context-22",
+            "position": 22,
+            "english": "and",
+            "spanish": "y",
+            "pronunciationGuide": "and",
+            "audio": "tts:en-GB:and",
+            "audioStatus": "synthetic_pending_review"
+          },
+          {
+            "itemId": "english-pre-a1-m009-explore-context-23",
+            "position": 23,
+            "english": "talk",
+            "spanish": "hablar",
+            "pronunciationGuide": "tók",
+            "audio": "tts:en-GB:talk",
+            "audioStatus": "synthetic_pending_review"
           }
         ],
         "theory": {
           "title": "I'm and you're",
-          "explanation": "I'm = I am y you're = you are. El apóstrofo señala una contracción. You're no es lo mismo que your, que significa tu.",
+          "explanation": "I'm = I am y you're = you are. El apóstrofo señala una contracción. You're no es lo mismo que your, que significa tu. El texto completo de comprensión auditiva y su vocabulario de apoyo se presentan en Explore antes de la práctica.",
           "tip": "Exploración es aprendizaje, no un examen. Revisa todos los bloques, palabras y modelos antes de practicar.",
           "patterns": [
             {
@@ -514,54 +550,9 @@
           ],
           "listening": [
             {
-              "english": "I am → I'm",
-              "spanish": "I am se contrae como I'm.",
-              "note": "Expresión del audio explicada previamente en Explore."
-            },
-            {
-              "english": "You are → You're",
-              "spanish": "You are se contrae como you're.",
-              "note": "Expresión del audio explicada previamente en Explore."
-            },
-            {
-              "english": "I'm happy.",
-              "spanish": "Estoy feliz.",
-              "note": "Expresión del audio explicada previamente en Explore."
-            },
-            {
-              "english": "You're happy.",
-              "spanish": "Estás feliz.",
-              "note": "Expresión del audio explicada previamente en Explore."
-            },
-            {
-              "english": "I'm a student.",
-              "spanish": "Soy estudiante.",
-              "note": "Expresión del audio explicada previamente en Explore."
-            },
-            {
-              "english": "You're a teacher.",
-              "spanish": "Eres profesor/a.",
-              "note": "Expresión del audio explicada previamente en Explore."
-            },
-            {
-              "english": "I'm fine.",
-              "spanish": "Estoy bien.",
-              "note": "Expresión del audio explicada previamente en Explore."
-            },
-            {
-              "english": "You're great.",
-              "spanish": "Eres genial.",
-              "note": "Expresión del audio explicada previamente en Explore."
-            },
-            {
-              "english": "I'm ready.",
-              "spanish": "Estoy preparado/a.",
-              "note": "Expresión del audio explicada previamente en Explore."
-            },
-            {
-              "english": "You're nice.",
-              "spanish": "Eres agradable.",
-              "note": "Expresión del audio explicada previamente en Explore."
+              "english": "At school, Ana and Leo talk. Ana: Hello, Leo. I'm happy today. Leo: You're happy. Ana: I'm fine. Leo: You're great. Ana: I'm ready. Leo: You're nice. Ana: I'm a student. Leo: You're a teacher. Ana: Goodbye!",
+              "spanish": "En la escuela, Ana y Leo hablan. Ana: Hola, Leo. Estoy feliz hoy. Leo: Estás feliz. Ana: Estoy bien. Leo: Eres genial. Ana: Estoy preparada. Leo: Eres agradable. Ana: Soy estudiante. Leo: Eres profesor. Ana: ¡Adiós!",
+              "note": "Texto contextual completo; el vocabulario de apoyo y las expresiones objetivo se explican antes en Explore."
             }
           ]
         },
@@ -1646,55 +1637,55 @@
         "exerciseId": "english-pre-a1-m009-listening-ex01",
         "type": "listening_gap_fill",
         "content": {
-          "audio": "tts:en-GB:I am → I'm You are → You're I'm happy. You're happy. I'm a student. You're a teacher. I'm fine. You're great. I'm ready. You're nice.",
+          "audio": "tts:en-GB:At school, Ana and Leo talk. Ana: Hello, Leo. I'm happy today. Leo: You're happy. Ana: I'm fine. Leo: You're great. Ana: I'm ready. Leo: You're nice. Ana: I'm a student. Leo: You're a teacher. Ana: Goodbye!",
           "audioLocale": "en-GB",
           "audioStatus": "synthetic_pending_review",
           "transcriptTemplate": "[[gap-01]] [[gap-02]] [[gap-03]] [[gap-04]] [[gap-05]] [[gap-06]] [[gap-07]] [[gap-08]] [[gap-09]] [[gap-10]]",
           "wordBank": [
             {
               "wordId": "english-pre-a1-m009-listening-word-01",
-              "word": "I am → I'm"
+              "word": "At school, Ana and Leo talk."
             },
             {
               "wordId": "english-pre-a1-m009-listening-word-02",
-              "word": "You are → You're"
+              "word": "Ana: Hello, Leo. I'm happy today."
             },
             {
               "wordId": "english-pre-a1-m009-listening-word-03",
-              "word": "I'm happy."
+              "word": "Leo: You're happy."
             },
             {
               "wordId": "english-pre-a1-m009-listening-word-04",
-              "word": "You're happy."
+              "word": "Ana: I'm fine."
             },
             {
               "wordId": "english-pre-a1-m009-listening-word-05",
-              "word": "I'm a student."
+              "word": "Leo: You're great."
             },
             {
               "wordId": "english-pre-a1-m009-listening-word-06",
-              "word": "You're a teacher."
+              "word": "Ana: I'm ready."
             },
             {
               "wordId": "english-pre-a1-m009-listening-word-07",
-              "word": "I'm fine."
+              "word": "Leo: You're nice."
             },
             {
               "wordId": "english-pre-a1-m009-listening-word-08",
-              "word": "You're great."
+              "word": "Ana: I'm a student."
             },
             {
               "wordId": "english-pre-a1-m009-listening-word-09",
-              "word": "I'm ready."
+              "word": "Leo: You're a teacher."
             },
             {
               "wordId": "english-pre-a1-m009-listening-word-10",
-              "word": "You're nice."
+              "word": "Ana: Goodbye!"
             }
           ],
           "interaction": "select_place_move_replace",
-          "audioTranscript": "tts:en-GB:I am → I'm You are → You're I'm happy. You're happy. I'm a student. You're a teacher. I'm fine. You're great. I'm ready. You're nice.",
-          "translation": "I am se contrae como I'm. You are se contrae como you're. Estoy feliz. Estás feliz. Soy estudiante. Eres profesor/a. Estoy bien. Eres genial. Estoy preparado/a. Eres agradable."
+          "audioTranscript": "At school, Ana and Leo talk. Ana: Hello, Leo. I'm happy today. Leo: You're happy. Ana: I'm fine. Leo: You're great. Ana: I'm ready. Leo: You're nice. Ana: I'm a student. Leo: You're a teacher. Ana: Goodbye!",
+          "translation": "En la escuela, Ana y Leo hablan. Ana: Hola, Leo. Estoy feliz hoy. Leo: Estás feliz. Ana: Estoy bien. Leo: Eres genial. Ana: Estoy preparada. Leo: Eres agradable. Ana: Soy estudiante. Leo: Eres profesor. Ana: ¡Adiós!"
         },
         "items": [
           {
@@ -1702,70 +1693,70 @@
             "position": 1,
             "gapToken": "[[gap-01]]",
             "expectedWordId": "english-pre-a1-m009-listening-word-01",
-            "answer": "I am → I'm"
+            "answer": "At school, Ana and Leo talk."
           },
           {
             "itemId": "english-pre-a1-m009-listening-ex01-i02",
             "position": 2,
             "gapToken": "[[gap-02]]",
             "expectedWordId": "english-pre-a1-m009-listening-word-02",
-            "answer": "You are → You're"
+            "answer": "Ana: Hello, Leo. I'm happy today."
           },
           {
             "itemId": "english-pre-a1-m009-listening-ex01-i03",
             "position": 3,
             "gapToken": "[[gap-03]]",
             "expectedWordId": "english-pre-a1-m009-listening-word-03",
-            "answer": "I'm happy."
+            "answer": "Leo: You're happy."
           },
           {
             "itemId": "english-pre-a1-m009-listening-ex01-i04",
             "position": 4,
             "gapToken": "[[gap-04]]",
             "expectedWordId": "english-pre-a1-m009-listening-word-04",
-            "answer": "You're happy."
+            "answer": "Ana: I'm fine."
           },
           {
             "itemId": "english-pre-a1-m009-listening-ex01-i05",
             "position": 5,
             "gapToken": "[[gap-05]]",
             "expectedWordId": "english-pre-a1-m009-listening-word-05",
-            "answer": "I'm a student."
+            "answer": "Leo: You're great."
           },
           {
             "itemId": "english-pre-a1-m009-listening-ex01-i06",
             "position": 6,
             "gapToken": "[[gap-06]]",
             "expectedWordId": "english-pre-a1-m009-listening-word-06",
-            "answer": "You're a teacher."
+            "answer": "Ana: I'm ready."
           },
           {
             "itemId": "english-pre-a1-m009-listening-ex01-i07",
             "position": 7,
             "gapToken": "[[gap-07]]",
             "expectedWordId": "english-pre-a1-m009-listening-word-07",
-            "answer": "I'm fine."
+            "answer": "Leo: You're nice."
           },
           {
             "itemId": "english-pre-a1-m009-listening-ex01-i08",
             "position": 8,
             "gapToken": "[[gap-08]]",
             "expectedWordId": "english-pre-a1-m009-listening-word-08",
-            "answer": "You're great."
+            "answer": "Ana: I'm a student."
           },
           {
             "itemId": "english-pre-a1-m009-listening-ex01-i09",
             "position": 9,
             "gapToken": "[[gap-09]]",
             "expectedWordId": "english-pre-a1-m009-listening-word-09",
-            "answer": "I'm ready."
+            "answer": "Leo: You're a teacher."
           },
           {
             "itemId": "english-pre-a1-m009-listening-ex01-i10",
             "position": 10,
             "gapToken": "[[gap-10]]",
             "expectedWordId": "english-pre-a1-m009-listening-word-10",
-            "answer": "You're nice."
+            "answer": "Ana: Goodbye!"
           }
         ]
       }

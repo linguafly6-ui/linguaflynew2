@@ -116,11 +116,65 @@
             "pronunciationGuide": "sí iu",
             "audio": "tts:en-GB:See you!",
             "audioStatus": "synthetic_pending_review"
+          },
+          {
+            "itemId": "english-pre-a1-m001-explore-context-11",
+            "position": 11,
+            "english": "at",
+            "spanish": "en",
+            "pronunciationGuide": "at",
+            "audio": "tts:en-GB:at",
+            "audioStatus": "synthetic_pending_review"
+          },
+          {
+            "itemId": "english-pre-a1-m001-explore-context-12",
+            "position": 12,
+            "english": "the",
+            "spanish": "el/la",
+            "pronunciationGuide": "de (TH sonora)",
+            "audio": "tts:en-GB:the",
+            "audioStatus": "synthetic_pending_review"
+          },
+          {
+            "itemId": "english-pre-a1-m001-explore-context-13",
+            "position": 13,
+            "english": "school",
+            "spanish": "escuela",
+            "pronunciationGuide": "skúl",
+            "audio": "tts:en-GB:school",
+            "audioStatus": "synthetic_pending_review"
+          },
+          {
+            "itemId": "english-pre-a1-m001-explore-context-14",
+            "position": 14,
+            "english": "door",
+            "spanish": "puerta",
+            "pronunciationGuide": "dor",
+            "audio": "tts:en-GB:door",
+            "audioStatus": "synthetic_pending_review"
+          },
+          {
+            "itemId": "english-pre-a1-m001-explore-context-15",
+            "position": 15,
+            "english": "and",
+            "spanish": "y",
+            "pronunciationGuide": "and",
+            "audio": "tts:en-GB:and",
+            "audioStatus": "synthetic_pending_review"
+          },
+          {
+            "itemId": "english-pre-a1-m001-explore-context-16",
+            "position": 16,
+            "english": "meet",
+            "spanish": "encontrarse",
+            "pronunciationGuide": "míit",
+            "audio": "tts:en-GB:meet",
+            "audioStatus": "synthetic_pending_review"
           }
         ],
         "theory": {
           "title": "Hello!",
-          "explanation": "Hello es neutro; Hi es informal. Goodbye es una despedida completa y Bye es más informal. See you equivale a hasta luego.",
+          "explanation": "Hello es neutro; Hi es informal. Goodbye es una despedida completa y Bye es más informal. See you equivale a hasta luego. El texto completo de comprensión auditiva y su vocabulario de apoyo se presentan en Explore antes de la práctica.",
           "tip": "Exploración es aprendizaje, no un examen. Revisa todos los bloques, palabras y modelos antes de practicar.",
           "patterns": [
             {
@@ -378,54 +432,9 @@
           ],
           "listening": [
             {
-              "english": "Hello!",
-              "spanish": "¡Hola!",
-              "note": "Expresión del audio explicada previamente en Explore."
-            },
-            {
-              "english": "Hi!",
-              "spanish": "¡Hola!",
-              "note": "Expresión del audio explicada previamente en Explore."
-            },
-            {
-              "english": "Goodbye!",
-              "spanish": "¡Adiós!",
-              "note": "Expresión del audio explicada previamente en Explore."
-            },
-            {
-              "english": "Bye!",
-              "spanish": "¡Chao!",
-              "note": "Expresión del audio explicada previamente en Explore."
-            },
-            {
-              "english": "See you!",
-              "spanish": "¡Hasta luego!",
-              "note": "Expresión del audio explicada previamente en Explore."
-            },
-            {
-              "english": "Hello!",
-              "spanish": "¡Hola!",
-              "note": "Expresión del audio explicada previamente en Explore."
-            },
-            {
-              "english": "Hi!",
-              "spanish": "¡Hola!",
-              "note": "Expresión del audio explicada previamente en Explore."
-            },
-            {
-              "english": "Goodbye!",
-              "spanish": "¡Adiós!",
-              "note": "Expresión del audio explicada previamente en Explore."
-            },
-            {
-              "english": "Bye!",
-              "spanish": "¡Chao!",
-              "note": "Expresión del audio explicada previamente en Explore."
-            },
-            {
-              "english": "See you!",
-              "spanish": "¡Hasta luego!",
-              "note": "Expresión del audio explicada previamente en Explore."
+              "english": "At the school door, Mia and Ben meet. Mia: Hello, Ben! Ben: Hi, Mia! Mia: Hello! Ben: Hi! Mia: Goodbye, Ben! Ben: Bye, Mia! Mia: See you! Ben: See you! Mia: Goodbye!",
+              "spanish": "En la puerta de la escuela, Mia y Ben se encuentran. Mia: ¡Hola, Ben! Ben: ¡Hola, Mia! Mia: ¡Hola! Ben: ¡Hola! Mia: ¡Adiós, Ben! Ben: ¡Chao, Mia! Mia: ¡Hasta luego! Ben: ¡Hasta luego! Mia: ¡Adiós!",
+              "note": "Texto contextual completo; el vocabulario de apoyo y las expresiones objetivo se explican antes en Explore."
             }
           ]
         },
@@ -1475,55 +1484,55 @@
         "exerciseId": "english-pre-a1-m001-listening-ex01",
         "type": "listening_gap_fill",
         "content": {
-          "audio": "tts:en-GB:Hello! Hi! Goodbye! Bye! See you! Hello! Hi! Goodbye! Bye! See you!",
+          "audio": "tts:en-GB:At the school door, Mia and Ben meet. Mia: Hello, Ben! Ben: Hi, Mia! Mia: Hello! Ben: Hi! Mia: Goodbye, Ben! Ben: Bye, Mia! Mia: See you! Ben: See you! Mia: Goodbye!",
           "audioLocale": "en-GB",
           "audioStatus": "synthetic_pending_review",
           "transcriptTemplate": "[[gap-01]] [[gap-02]] [[gap-03]] [[gap-04]] [[gap-05]] [[gap-06]] [[gap-07]] [[gap-08]] [[gap-09]] [[gap-10]]",
           "wordBank": [
             {
               "wordId": "english-pre-a1-m001-listening-word-01",
-              "word": "Hello!"
+              "word": "At the school door, Mia and Ben meet."
             },
             {
               "wordId": "english-pre-a1-m001-listening-word-02",
-              "word": "Hi!"
+              "word": "Mia: Hello, Ben!"
             },
             {
               "wordId": "english-pre-a1-m001-listening-word-03",
-              "word": "Goodbye!"
+              "word": "Ben: Hi, Mia!"
             },
             {
               "wordId": "english-pre-a1-m001-listening-word-04",
-              "word": "Bye!"
+              "word": "Mia: Hello!"
             },
             {
               "wordId": "english-pre-a1-m001-listening-word-05",
-              "word": "See you!"
+              "word": "Ben: Hi!"
             },
             {
               "wordId": "english-pre-a1-m001-listening-word-06",
-              "word": "Hello!"
+              "word": "Mia: Goodbye, Ben!"
             },
             {
               "wordId": "english-pre-a1-m001-listening-word-07",
-              "word": "Hi!"
+              "word": "Ben: Bye, Mia!"
             },
             {
               "wordId": "english-pre-a1-m001-listening-word-08",
-              "word": "Goodbye!"
+              "word": "Mia: See you!"
             },
             {
               "wordId": "english-pre-a1-m001-listening-word-09",
-              "word": "Bye!"
+              "word": "Ben: See you!"
             },
             {
               "wordId": "english-pre-a1-m001-listening-word-10",
-              "word": "See you!"
+              "word": "Mia: Goodbye!"
             }
           ],
           "interaction": "select_place_move_replace",
-          "audioTranscript": "tts:en-GB:Hello! Hi! Goodbye! Bye! See you! Hello! Hi! Goodbye! Bye! See you!",
-          "translation": "¡Hola! ¡Hola! ¡Adiós! ¡Chao! ¡Hasta luego! ¡Hola! ¡Hola! ¡Adiós! ¡Chao! ¡Hasta luego!"
+          "audioTranscript": "At the school door, Mia and Ben meet. Mia: Hello, Ben! Ben: Hi, Mia! Mia: Hello! Ben: Hi! Mia: Goodbye, Ben! Ben: Bye, Mia! Mia: See you! Ben: See you! Mia: Goodbye!",
+          "translation": "En la puerta de la escuela, Mia y Ben se encuentran. Mia: ¡Hola, Ben! Ben: ¡Hola, Mia! Mia: ¡Hola! Ben: ¡Hola! Mia: ¡Adiós, Ben! Ben: ¡Chao, Mia! Mia: ¡Hasta luego! Ben: ¡Hasta luego! Mia: ¡Adiós!"
         },
         "items": [
           {
@@ -1531,70 +1540,70 @@
             "position": 1,
             "gapToken": "[[gap-01]]",
             "expectedWordId": "english-pre-a1-m001-listening-word-01",
-            "answer": "Hello!"
+            "answer": "At the school door, Mia and Ben meet."
           },
           {
             "itemId": "english-pre-a1-m001-listening-ex01-i02",
             "position": 2,
             "gapToken": "[[gap-02]]",
             "expectedWordId": "english-pre-a1-m001-listening-word-02",
-            "answer": "Hi!"
+            "answer": "Mia: Hello, Ben!"
           },
           {
             "itemId": "english-pre-a1-m001-listening-ex01-i03",
             "position": 3,
             "gapToken": "[[gap-03]]",
             "expectedWordId": "english-pre-a1-m001-listening-word-03",
-            "answer": "Goodbye!"
+            "answer": "Ben: Hi, Mia!"
           },
           {
             "itemId": "english-pre-a1-m001-listening-ex01-i04",
             "position": 4,
             "gapToken": "[[gap-04]]",
             "expectedWordId": "english-pre-a1-m001-listening-word-04",
-            "answer": "Bye!"
+            "answer": "Mia: Hello!"
           },
           {
             "itemId": "english-pre-a1-m001-listening-ex01-i05",
             "position": 5,
             "gapToken": "[[gap-05]]",
             "expectedWordId": "english-pre-a1-m001-listening-word-05",
-            "answer": "See you!"
+            "answer": "Ben: Hi!"
           },
           {
             "itemId": "english-pre-a1-m001-listening-ex01-i06",
             "position": 6,
             "gapToken": "[[gap-06]]",
             "expectedWordId": "english-pre-a1-m001-listening-word-06",
-            "answer": "Hello!"
+            "answer": "Mia: Goodbye, Ben!"
           },
           {
             "itemId": "english-pre-a1-m001-listening-ex01-i07",
             "position": 7,
             "gapToken": "[[gap-07]]",
             "expectedWordId": "english-pre-a1-m001-listening-word-07",
-            "answer": "Hi!"
+            "answer": "Ben: Bye, Mia!"
           },
           {
             "itemId": "english-pre-a1-m001-listening-ex01-i08",
             "position": 8,
             "gapToken": "[[gap-08]]",
             "expectedWordId": "english-pre-a1-m001-listening-word-08",
-            "answer": "Goodbye!"
+            "answer": "Mia: See you!"
           },
           {
             "itemId": "english-pre-a1-m001-listening-ex01-i09",
             "position": 9,
             "gapToken": "[[gap-09]]",
             "expectedWordId": "english-pre-a1-m001-listening-word-09",
-            "answer": "Bye!"
+            "answer": "Ben: See you!"
           },
           {
             "itemId": "english-pre-a1-m001-listening-ex01-i10",
             "position": 10,
             "gapToken": "[[gap-10]]",
             "expectedWordId": "english-pre-a1-m001-listening-word-10",
-            "answer": "See you!"
+            "answer": "Mia: Goodbye!"
           }
         ]
       }

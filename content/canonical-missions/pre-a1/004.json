@@ -152,11 +152,38 @@
             "pronunciationGuide": "dór",
             "audio": "tts:en-GB:door",
             "audioStatus": "synthetic_pending_review"
+          },
+          {
+            "itemId": "english-pre-a1-m004-explore-context-15",
+            "position": 15,
+            "english": "need",
+            "spanish": "necesitar",
+            "pronunciationGuide": "níid",
+            "audio": "tts:en-GB:need",
+            "audioStatus": "synthetic_pending_review"
+          },
+          {
+            "itemId": "english-pre-a1-m004-explore-context-16",
+            "position": 16,
+            "english": "at",
+            "spanish": "en",
+            "pronunciationGuide": "at",
+            "audio": "tts:en-GB:at",
+            "audioStatus": "synthetic_pending_review"
+          },
+          {
+            "itemId": "english-pre-a1-m004-explore-context-17",
+            "position": 17,
+            "english": "it's OK",
+            "spanish": "no pasa nada",
+            "pronunciationGuide": "its ou-KÉI",
+            "audio": "tts:en-GB:it's OK",
+            "audioStatus": "synthetic_pending_review"
           }
         ],
         "theory": {
           "title": "Polite words",
-          "explanation": "En Thank, Thanks y Thank you, TH es interdental: coloca suavemente la punta de la lengua entre los dientes. No es exactamente la z castellana ni una s.",
+          "explanation": "En Thank, Thanks y Thank you, TH es interdental: coloca suavemente la punta de la lengua entre los dientes. No es exactamente la z castellana ni una s. El texto completo de comprensión auditiva y su vocabulario de apoyo se presentan en Explore antes de la práctica.",
           "tip": "Exploración es aprendizaje, no un examen. Revisa todos los bloques, palabras y modelos antes de practicar.",
           "patterns": [
             {
@@ -469,54 +496,9 @@
           ],
           "listening": [
             {
-              "english": "Please.",
-              "spanish": "Por favor.",
-              "note": "Expresión del audio explicada previamente en Explore."
-            },
-            {
-              "english": "Thank you.",
-              "spanish": "Gracias.",
-              "note": "Expresión del audio explicada previamente en Explore."
-            },
-            {
-              "english": "Thanks.",
-              "spanish": "Gracias.",
-              "note": "Expresión del audio explicada previamente en Explore."
-            },
-            {
-              "english": "You're welcome.",
-              "spanish": "De nada.",
-              "note": "Expresión del audio explicada previamente en Explore."
-            },
-            {
-              "english": "Sorry.",
-              "spanish": "Lo siento.",
-              "note": "Expresión del audio explicada previamente en Explore."
-            },
-            {
-              "english": "I'm sorry.",
-              "spanish": "Lo siento.",
-              "note": "Expresión del audio explicada previamente en Explore."
-            },
-            {
-              "english": "Excuse me.",
-              "spanish": "Disculpe / perdón.",
-              "note": "Expresión del audio explicada previamente en Explore."
-            },
-            {
-              "english": "Yes, please.",
-              "spanish": "Sí, por favor.",
-              "note": "Expresión del audio explicada previamente en Explore."
-            },
-            {
-              "english": "No, thank you.",
-              "spanish": "No, gracias.",
-              "note": "Expresión del audio explicada previamente en Explore."
-            },
-            {
-              "english": "Help, please.",
-              "spanish": "Ayuda, por favor.",
-              "note": "Expresión del audio explicada previamente en Explore."
+              "english": "Ben needs help at the door. Ben: Excuse me. Ana: Yes? Ben: Help, please. Ana: Here. Ben: Thank you. Ana: You're welcome. Ben: Sorry. Ana: It's OK. Ben: Goodbye!",
+              "spanish": "Ben necesita ayuda en la puerta. Ben: Disculpa. Ana: ¿Sí? Ben: Ayuda, por favor. Ana: Aquí tienes. Ben: Gracias. Ana: De nada. Ben: Lo siento. Ana: No pasa nada. Ben: ¡Adiós!",
+              "note": "Texto contextual completo; el vocabulario de apoyo y las expresiones objetivo se explican antes en Explore."
             }
           ]
         },
@@ -1601,55 +1583,55 @@
         "exerciseId": "english-pre-a1-m004-listening-ex01",
         "type": "listening_gap_fill",
         "content": {
-          "audio": "tts:en-GB:Please. Thank you. Thanks. You're welcome. Sorry. I'm sorry. Excuse me. Yes, please. No, thank you. Help, please.",
+          "audio": "tts:en-GB:Ben needs help at the door. Ben: Excuse me. Ana: Yes? Ben: Help, please. Ana: Here. Ben: Thank you. Ana: You're welcome. Ben: Sorry. Ana: It's OK. Ben: Goodbye!",
           "audioLocale": "en-GB",
           "audioStatus": "synthetic_pending_review",
           "transcriptTemplate": "[[gap-01]] [[gap-02]] [[gap-03]] [[gap-04]] [[gap-05]] [[gap-06]] [[gap-07]] [[gap-08]] [[gap-09]] [[gap-10]]",
           "wordBank": [
             {
               "wordId": "english-pre-a1-m004-listening-word-01",
-              "word": "Please."
+              "word": "Ben needs help at the door."
             },
             {
               "wordId": "english-pre-a1-m004-listening-word-02",
-              "word": "Thank you."
+              "word": "Ben: Excuse me."
             },
             {
               "wordId": "english-pre-a1-m004-listening-word-03",
-              "word": "Thanks."
+              "word": "Ana: Yes?"
             },
             {
               "wordId": "english-pre-a1-m004-listening-word-04",
-              "word": "You're welcome."
+              "word": "Ben: Help, please."
             },
             {
               "wordId": "english-pre-a1-m004-listening-word-05",
-              "word": "Sorry."
+              "word": "Ana: Here."
             },
             {
               "wordId": "english-pre-a1-m004-listening-word-06",
-              "word": "I'm sorry."
+              "word": "Ben: Thank you."
             },
             {
               "wordId": "english-pre-a1-m004-listening-word-07",
-              "word": "Excuse me."
+              "word": "Ana: You're welcome."
             },
             {
               "wordId": "english-pre-a1-m004-listening-word-08",
-              "word": "Yes, please."
+              "word": "Ben: Sorry."
             },
             {
               "wordId": "english-pre-a1-m004-listening-word-09",
-              "word": "No, thank you."
+              "word": "Ana: It's OK."
             },
             {
               "wordId": "english-pre-a1-m004-listening-word-10",
-              "word": "Help, please."
+              "word": "Ben: Goodbye!"
             }
           ],
           "interaction": "select_place_move_replace",
-          "audioTranscript": "tts:en-GB:Please. Thank you. Thanks. You're welcome. Sorry. I'm sorry. Excuse me. Yes, please. No, thank you. Help, please.",
-          "translation": "Por favor. Gracias. Gracias. De nada. Lo siento. Lo siento. Disculpe / perdón. Sí, por favor. No, gracias. Ayuda, por favor."
+          "audioTranscript": "Ben needs help at the door. Ben: Excuse me. Ana: Yes? Ben: Help, please. Ana: Here. Ben: Thank you. Ana: You're welcome. Ben: Sorry. Ana: It's OK. Ben: Goodbye!",
+          "translation": "Ben necesita ayuda en la puerta. Ben: Disculpa. Ana: ¿Sí? Ben: Ayuda, por favor. Ana: Aquí tienes. Ben: Gracias. Ana: De nada. Ben: Lo siento. Ana: No pasa nada. Ben: ¡Adiós!"
         },
         "items": [
           {
@@ -1657,70 +1639,70 @@
             "position": 1,
             "gapToken": "[[gap-01]]",
             "expectedWordId": "english-pre-a1-m004-listening-word-01",
-            "answer": "Please."
+            "answer": "Ben needs help at the door."
           },
           {
             "itemId": "english-pre-a1-m004-listening-ex01-i02",
             "position": 2,
             "gapToken": "[[gap-02]]",
             "expectedWordId": "english-pre-a1-m004-listening-word-02",
-            "answer": "Thank you."
+            "answer": "Ben: Excuse me."
           },
           {
             "itemId": "english-pre-a1-m004-listening-ex01-i03",
             "position": 3,
             "gapToken": "[[gap-03]]",
             "expectedWordId": "english-pre-a1-m004-listening-word-03",
-            "answer": "Thanks."
+            "answer": "Ana: Yes?"
           },
           {
             "itemId": "english-pre-a1-m004-listening-ex01-i04",
             "position": 4,
             "gapToken": "[[gap-04]]",
             "expectedWordId": "english-pre-a1-m004-listening-word-04",
-            "answer": "You're welcome."
+            "answer": "Ben: Help, please."
           },
           {
             "itemId": "english-pre-a1-m004-listening-ex01-i05",
             "position": 5,
             "gapToken": "[[gap-05]]",
             "expectedWordId": "english-pre-a1-m004-listening-word-05",
-            "answer": "Sorry."
+            "answer": "Ana: Here."
           },
           {
             "itemId": "english-pre-a1-m004-listening-ex01-i06",
             "position": 6,
             "gapToken": "[[gap-06]]",
             "expectedWordId": "english-pre-a1-m004-listening-word-06",
-            "answer": "I'm sorry."
+            "answer": "Ben: Thank you."
           },
           {
             "itemId": "english-pre-a1-m004-listening-ex01-i07",
             "position": 7,
             "gapToken": "[[gap-07]]",
             "expectedWordId": "english-pre-a1-m004-listening-word-07",
-            "answer": "Excuse me."
+            "answer": "Ana: You're welcome."
           },
           {
             "itemId": "english-pre-a1-m004-listening-ex01-i08",
             "position": 8,
             "gapToken": "[[gap-08]]",
             "expectedWordId": "english-pre-a1-m004-listening-word-08",
-            "answer": "Yes, please."
+            "answer": "Ben: Sorry."
           },
           {
             "itemId": "english-pre-a1-m004-listening-ex01-i09",
             "position": 9,
             "gapToken": "[[gap-09]]",
             "expectedWordId": "english-pre-a1-m004-listening-word-09",
-            "answer": "No, thank you."
+            "answer": "Ana: It's OK."
           },
           {
             "itemId": "english-pre-a1-m004-listening-ex01-i10",
             "position": 10,
             "gapToken": "[[gap-10]]",
             "expectedWordId": "english-pre-a1-m004-listening-word-10",
-            "answer": "Help, please."
+            "answer": "Ben: Goodbye!"
           }
         ]
       }

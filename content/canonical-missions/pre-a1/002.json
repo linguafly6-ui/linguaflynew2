@@ -116,11 +116,29 @@
             "pronunciationGuide": "uóts iór néim",
             "audio": "tts:en-GB:What's your name?",
             "audioStatus": "synthetic_pending_review"
+          },
+          {
+            "itemId": "english-pre-a1-m002-explore-context-11",
+            "position": 11,
+            "english": "meet",
+            "spanish": "conocer / encontrarse",
+            "pronunciationGuide": "míit",
+            "audio": "tts:en-GB:meet",
+            "audioStatus": "synthetic_pending_review"
+          },
+          {
+            "itemId": "english-pre-a1-m002-explore-context-12",
+            "position": 12,
+            "english": "and",
+            "spanish": "y",
+            "pronunciationGuide": "and",
+            "audio": "tts:en-GB:and",
+            "audioStatus": "synthetic_pending_review"
           }
         ],
         "theory": {
           "title": "My name is…",
-          "explanation": "What's your name? y My name is… se aprenden como expresiones completas. En esta misión no se estudia todavía la conjugación general de be.",
+          "explanation": "What's your name? y My name is… se aprenden como expresiones completas. En esta misión no se estudia todavía la conjugación general de be. El texto completo de comprensión auditiva y su vocabulario de apoyo se presentan en Explore antes de la práctica.",
           "tip": "Exploración es aprendizaje, no un examen. Revisa todos los bloques, palabras y modelos antes de practicar.",
           "patterns": [
             {
@@ -378,54 +396,9 @@
           ],
           "listening": [
             {
-              "english": "What's your name?",
-              "spanish": "¿Cómo te llamas?",
-              "note": "Expresión del audio explicada previamente en Explore."
-            },
-            {
-              "english": "My name is Ana.",
-              "spanish": "Me llamo Ana.",
-              "note": "Expresión del audio explicada previamente en Explore."
-            },
-            {
-              "english": "My name is Leo.",
-              "spanish": "Me llamo Leo.",
-              "note": "Expresión del audio explicada previamente en Explore."
-            },
-            {
-              "english": "Hello!",
-              "spanish": "¡Hola!",
-              "note": "Expresión del audio explicada previamente en Explore."
-            },
-            {
-              "english": "See you!",
-              "spanish": "¡Hasta luego!",
-              "note": "Expresión del audio explicada previamente en Explore."
-            },
-            {
-              "english": "What's your name?",
-              "spanish": "¿Cómo te llamas?",
-              "note": "Expresión del audio explicada previamente en Explore."
-            },
-            {
-              "english": "My name is Ana.",
-              "spanish": "Me llamo Ana.",
-              "note": "Expresión del audio explicada previamente en Explore."
-            },
-            {
-              "english": "My name is Leo.",
-              "spanish": "Me llamo Leo.",
-              "note": "Expresión del audio explicada previamente en Explore."
-            },
-            {
-              "english": "Hello!",
-              "spanish": "¡Hola!",
-              "note": "Expresión del audio explicada previamente en Explore."
-            },
-            {
-              "english": "See you!",
-              "spanish": "¡Hasta luego!",
-              "note": "Expresión del audio explicada previamente en Explore."
+              "english": "Ana and Leo meet. Ana: Hello! What's your name? Leo: My name is Leo. Ana: My name is Ana. Leo: Hello, Ana! Ana: Hi, Leo! Leo: What's your name? Ana: My name is Ana. Leo: See you! Ana: Goodbye!",
+              "spanish": "Ana y Leo se conocen. Ana: ¡Hola! ¿Cómo te llamas? Leo: Me llamo Leo. Ana: Me llamo Ana. Leo: ¡Hola, Ana! Ana: ¡Hola, Leo! Leo: ¿Cómo te llamas? Ana: Me llamo Ana. Leo: ¡Hasta luego! Ana: ¡Adiós!",
+              "note": "Texto contextual completo; el vocabulario de apoyo y las expresiones objetivo se explican antes en Explore."
             }
           ]
         },
@@ -1475,55 +1448,55 @@
         "exerciseId": "english-pre-a1-m002-listening-ex01",
         "type": "listening_gap_fill",
         "content": {
-          "audio": "tts:en-GB:What's your name? My name is Ana. My name is Leo. Hello! See you! What's your name? My name is Ana. My name is Leo. Hello! See you!",
+          "audio": "tts:en-GB:Ana and Leo meet. Ana: Hello! What's your name? Leo: My name is Leo. Ana: My name is Ana. Leo: Hello, Ana! Ana: Hi, Leo! Leo: What's your name? Ana: My name is Ana. Leo: See you! Ana: Goodbye!",
           "audioLocale": "en-GB",
           "audioStatus": "synthetic_pending_review",
           "transcriptTemplate": "[[gap-01]] [[gap-02]] [[gap-03]] [[gap-04]] [[gap-05]] [[gap-06]] [[gap-07]] [[gap-08]] [[gap-09]] [[gap-10]]",
           "wordBank": [
             {
               "wordId": "english-pre-a1-m002-listening-word-01",
-              "word": "What's your name?"
+              "word": "Ana and Leo meet."
             },
             {
               "wordId": "english-pre-a1-m002-listening-word-02",
-              "word": "My name is Ana."
+              "word": "Ana: Hello! What's your name?"
             },
             {
               "wordId": "english-pre-a1-m002-listening-word-03",
-              "word": "My name is Leo."
+              "word": "Leo: My name is Leo."
             },
             {
               "wordId": "english-pre-a1-m002-listening-word-04",
-              "word": "Hello!"
+              "word": "Ana: My name is Ana."
             },
             {
               "wordId": "english-pre-a1-m002-listening-word-05",
-              "word": "See you!"
+              "word": "Leo: Hello, Ana!"
             },
             {
               "wordId": "english-pre-a1-m002-listening-word-06",
-              "word": "What's your name?"
+              "word": "Ana: Hi, Leo!"
             },
             {
               "wordId": "english-pre-a1-m002-listening-word-07",
-              "word": "My name is Ana."
+              "word": "Leo: What's your name?"
             },
             {
               "wordId": "english-pre-a1-m002-listening-word-08",
-              "word": "My name is Leo."
+              "word": "Ana: My name is Ana."
             },
             {
               "wordId": "english-pre-a1-m002-listening-word-09",
-              "word": "Hello!"
+              "word": "Leo: See you!"
             },
             {
               "wordId": "english-pre-a1-m002-listening-word-10",
-              "word": "See you!"
+              "word": "Ana: Goodbye!"
             }
           ],
           "interaction": "select_place_move_replace",
-          "audioTranscript": "tts:en-GB:What's your name? My name is Ana. My name is Leo. Hello! See you! What's your name? My name is Ana. My name is Leo. Hello! See you!",
-          "translation": "¿Cómo te llamas? Me llamo Ana. Me llamo Leo. ¡Hola! ¡Hasta luego! ¿Cómo te llamas? Me llamo Ana. Me llamo Leo. ¡Hola! ¡Hasta luego!"
+          "audioTranscript": "Ana and Leo meet. Ana: Hello! What's your name? Leo: My name is Leo. Ana: My name is Ana. Leo: Hello, Ana! Ana: Hi, Leo! Leo: What's your name? Ana: My name is Ana. Leo: See you! Ana: Goodbye!",
+          "translation": "Ana y Leo se conocen. Ana: ¡Hola! ¿Cómo te llamas? Leo: Me llamo Leo. Ana: Me llamo Ana. Leo: ¡Hola, Ana! Ana: ¡Hola, Leo! Leo: ¿Cómo te llamas? Ana: Me llamo Ana. Leo: ¡Hasta luego! Ana: ¡Adiós!"
         },
         "items": [
           {
@@ -1531,70 +1504,70 @@
             "position": 1,
             "gapToken": "[[gap-01]]",
             "expectedWordId": "english-pre-a1-m002-listening-word-01",
-            "answer": "What's your name?"
+            "answer": "Ana and Leo meet."
           },
           {
             "itemId": "english-pre-a1-m002-listening-ex01-i02",
             "position": 2,
             "gapToken": "[[gap-02]]",
             "expectedWordId": "english-pre-a1-m002-listening-word-02",
-            "answer": "My name is Ana."
+            "answer": "Ana: Hello! What's your name?"
           },
           {
             "itemId": "english-pre-a1-m002-listening-ex01-i03",
             "position": 3,
             "gapToken": "[[gap-03]]",
             "expectedWordId": "english-pre-a1-m002-listening-word-03",
-            "answer": "My name is Leo."
+            "answer": "Leo: My name is Leo."
           },
           {
             "itemId": "english-pre-a1-m002-listening-ex01-i04",
             "position": 4,
             "gapToken": "[[gap-04]]",
             "expectedWordId": "english-pre-a1-m002-listening-word-04",
-            "answer": "Hello!"
+            "answer": "Ana: My name is Ana."
           },
           {
             "itemId": "english-pre-a1-m002-listening-ex01-i05",
             "position": 5,
             "gapToken": "[[gap-05]]",
             "expectedWordId": "english-pre-a1-m002-listening-word-05",
-            "answer": "See you!"
+            "answer": "Leo: Hello, Ana!"
           },
           {
             "itemId": "english-pre-a1-m002-listening-ex01-i06",
             "position": 6,
             "gapToken": "[[gap-06]]",
             "expectedWordId": "english-pre-a1-m002-listening-word-06",
-            "answer": "What's your name?"
+            "answer": "Ana: Hi, Leo!"
           },
           {
             "itemId": "english-pre-a1-m002-listening-ex01-i07",
             "position": 7,
             "gapToken": "[[gap-07]]",
             "expectedWordId": "english-pre-a1-m002-listening-word-07",
-            "answer": "My name is Ana."
+            "answer": "Leo: What's your name?"
           },
           {
             "itemId": "english-pre-a1-m002-listening-ex01-i08",
             "position": 8,
             "gapToken": "[[gap-08]]",
             "expectedWordId": "english-pre-a1-m002-listening-word-08",
-            "answer": "My name is Leo."
+            "answer": "Ana: My name is Ana."
           },
           {
             "itemId": "english-pre-a1-m002-listening-ex01-i09",
             "position": 9,
             "gapToken": "[[gap-09]]",
             "expectedWordId": "english-pre-a1-m002-listening-word-09",
-            "answer": "Hello!"
+            "answer": "Leo: See you!"
           },
           {
             "itemId": "english-pre-a1-m002-listening-ex01-i10",
             "position": 10,
             "gapToken": "[[gap-10]]",
             "expectedWordId": "english-pre-a1-m002-listening-word-10",
-            "answer": "See you!"
+            "answer": "Ana: Goodbye!"
           }
         ]
       }

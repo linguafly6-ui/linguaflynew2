@@ -242,11 +242,47 @@
             "pronunciationGuide": "Á-leks",
             "audio": "tts:en-GB:Alex",
             "audioStatus": "synthetic_pending_review"
+          },
+          {
+            "itemId": "english-pre-a1-m010-explore-context-25",
+            "position": 25,
+            "english": "at",
+            "spanish": "en",
+            "pronunciationGuide": "at",
+            "audio": "tts:en-GB:at",
+            "audioStatus": "synthetic_pending_review"
+          },
+          {
+            "itemId": "english-pre-a1-m010-explore-context-26",
+            "position": 26,
+            "english": "the",
+            "spanish": "el/la",
+            "pronunciationGuide": "de (TH sonora)",
+            "audio": "tts:en-GB:the",
+            "audioStatus": "synthetic_pending_review"
+          },
+          {
+            "itemId": "english-pre-a1-m010-explore-context-27",
+            "position": 27,
+            "english": "door",
+            "spanish": "puerta",
+            "pronunciationGuide": "dor",
+            "audio": "tts:en-GB:door",
+            "audioStatus": "synthetic_pending_review"
+          },
+          {
+            "itemId": "english-pre-a1-m010-explore-context-28",
+            "position": 28,
+            "english": "and",
+            "spanish": "y",
+            "pronunciationGuide": "and",
+            "audio": "tts:en-GB:and",
+            "audioStatus": "synthetic_pending_review"
           }
         ],
         "theory": {
           "title": "Nice to meet you",
-          "explanation": "Esta misión integra expresiones anteriores. This is… se enseña como fórmula de presentación; no se explica todavía todos los usos de this o is.",
+          "explanation": "Esta misión integra expresiones anteriores. This is… se enseña como fórmula de presentación; no se explica todavía todos los usos de this o is. El texto completo de comprensión auditiva y su vocabulario de apoyo se presentan en Explore antes de la práctica.",
           "tip": "Exploración es aprendizaje, no un examen. Revisa todos los bloques, palabras y modelos antes de practicar.",
           "patterns": [
             {
@@ -559,54 +595,9 @@
           ],
           "listening": [
             {
-              "english": "Nice to meet you.",
-              "spanish": "Encantado/a de conocerte.",
-              "note": "Expresión del audio explicada previamente en Explore."
-            },
-            {
-              "english": "Nice to meet you too.",
-              "spanish": "Encantado/a también.",
-              "note": "Expresión del audio explicada previamente en Explore."
-            },
-            {
-              "english": "Pleased to meet you.",
-              "spanish": "Encantado/a de conocerte.",
-              "note": "Expresión del audio explicada previamente en Explore."
-            },
-            {
-              "english": "This is Ana.",
-              "spanish": "Esta es Ana.",
-              "note": "Expresión del audio explicada previamente en Explore."
-            },
-            {
-              "english": "This is my friend.",
-              "spanish": "Este/a es mi amigo/a.",
-              "note": "Expresión del audio explicada previamente en Explore."
-            },
-            {
-              "english": "Hello! My name is Ana.",
-              "spanish": "¡Hola! Me llamo Ana.",
-              "note": "Expresión del audio explicada previamente en Explore."
-            },
-            {
-              "english": "What's your name?",
-              "spanish": "¿Cómo te llamas?",
-              "note": "Expresión del audio explicada previamente en Explore."
-            },
-            {
-              "english": "I'm Alex.",
-              "spanish": "Soy Alex.",
-              "note": "Expresión del audio explicada previamente en Explore."
-            },
-            {
-              "english": "You're my friend.",
-              "spanish": "Eres mi amigo/a",
-              "note": "Expresión del audio explicada previamente en Explore."
-            },
-            {
-              "english": "Goodbye!",
-              "spanish": "¡Adiós!",
-              "note": "Expresión del audio explicada previamente en Explore."
+              "english": "At the door, Ana meets Alex and Ben. Ana: Hello! This is my friend, Alex. Alex: Nice to meet you. Ana: Nice to meet you too. Ben: Pleased to meet you. Ana: This is Ben. Ben: You're my friend. Alex: What's your name? Ben: My name is Ben. All: Goodbye!",
+              "spanish": "En la puerta, Ana conoce a Alex y Ben. Ana: ¡Hola! Este es mi amigo Alex. Alex: Encantado de conocerte. Ana: Encantada también. Ben: Encantado de conocerte. Ana: Este es Ben. Ben: Eres mi amigo. Alex: ¿Cómo te llamas? Ben: Me llamo Ben. Todos: ¡Adiós!",
+              "note": "Texto contextual completo; el vocabulario de apoyo y las expresiones objetivo se explican antes en Explore."
             }
           ]
         },
@@ -1691,55 +1682,55 @@
         "exerciseId": "english-pre-a1-m010-listening-ex01",
         "type": "listening_gap_fill",
         "content": {
-          "audio": "tts:en-GB:Nice to meet you. Nice to meet you too. Pleased to meet you. This is Ana. This is my friend. Hello! My name is Ana. What's your name? I'm Alex. You're my friend. Goodbye!",
+          "audio": "tts:en-GB:At the door, Ana meets Alex and Ben. Ana: Hello! This is my friend, Alex. Alex: Nice to meet you. Ana: Nice to meet you too. Ben: Pleased to meet you. Ana: This is Ben. Ben: You're my friend. Alex: What's your name? Ben: My name is Ben. All: Goodbye!",
           "audioLocale": "en-GB",
           "audioStatus": "synthetic_pending_review",
           "transcriptTemplate": "[[gap-01]] [[gap-02]] [[gap-03]] [[gap-04]] [[gap-05]] [[gap-06]] [[gap-07]] [[gap-08]] [[gap-09]] [[gap-10]]",
           "wordBank": [
             {
               "wordId": "english-pre-a1-m010-listening-word-01",
-              "word": "Nice to meet you."
+              "word": "At the door, Ana meets Alex and Ben."
             },
             {
               "wordId": "english-pre-a1-m010-listening-word-02",
-              "word": "Nice to meet you too."
+              "word": "Ana: Hello! This is my friend, Alex."
             },
             {
               "wordId": "english-pre-a1-m010-listening-word-03",
-              "word": "Pleased to meet you."
+              "word": "Alex: Nice to meet you."
             },
             {
               "wordId": "english-pre-a1-m010-listening-word-04",
-              "word": "This is Ana."
+              "word": "Ana: Nice to meet you too."
             },
             {
               "wordId": "english-pre-a1-m010-listening-word-05",
-              "word": "This is my friend."
+              "word": "Ben: Pleased to meet you."
             },
             {
               "wordId": "english-pre-a1-m010-listening-word-06",
-              "word": "Hello! My name is Ana."
+              "word": "Ana: This is Ben."
             },
             {
               "wordId": "english-pre-a1-m010-listening-word-07",
-              "word": "What's your name?"
+              "word": "Ben: You're my friend."
             },
             {
               "wordId": "english-pre-a1-m010-listening-word-08",
-              "word": "I'm Alex."
+              "word": "Alex: What's your name?"
             },
             {
               "wordId": "english-pre-a1-m010-listening-word-09",
-              "word": "You're my friend."
+              "word": "Ben: My name is Ben."
             },
             {
               "wordId": "english-pre-a1-m010-listening-word-10",
-              "word": "Goodbye!"
+              "word": "All: Goodbye!"
             }
           ],
           "interaction": "select_place_move_replace",
-          "audioTranscript": "tts:en-GB:Nice to meet you. Nice to meet you too. Pleased to meet you. This is Ana. This is my friend. Hello! My name is Ana. What's your name? I'm Alex. You're my friend. Goodbye!",
-          "translation": "Encantado/a de conocerte. Encantado/a también. Encantado/a de conocerte. Esta es Ana. Este/a es mi amigo/a. ¡Hola! Me llamo Ana. ¿Cómo te llamas? Soy Alex. Eres mi amigo/a ¡Adiós!"
+          "audioTranscript": "At the door, Ana meets Alex and Ben. Ana: Hello! This is my friend, Alex. Alex: Nice to meet you. Ana: Nice to meet you too. Ben: Pleased to meet you. Ana: This is Ben. Ben: You're my friend. Alex: What's your name? Ben: My name is Ben. All: Goodbye!",
+          "translation": "En la puerta, Ana conoce a Alex y Ben. Ana: ¡Hola! Este es mi amigo Alex. Alex: Encantado de conocerte. Ana: Encantada también. Ben: Encantado de conocerte. Ana: Este es Ben. Ben: Eres mi amigo. Alex: ¿Cómo te llamas? Ben: Me llamo Ben. Todos: ¡Adiós!"
         },
         "items": [
           {
@@ -1747,70 +1738,70 @@
             "position": 1,
             "gapToken": "[[gap-01]]",
             "expectedWordId": "english-pre-a1-m010-listening-word-01",
-            "answer": "Nice to meet you."
+            "answer": "At the door, Ana meets Alex and Ben."
           },
           {
             "itemId": "english-pre-a1-m010-listening-ex01-i02",
             "position": 2,
             "gapToken": "[[gap-02]]",
             "expectedWordId": "english-pre-a1-m010-listening-word-02",
-            "answer": "Nice to meet you too."
+            "answer": "Ana: Hello! This is my friend, Alex."
           },
           {
             "itemId": "english-pre-a1-m010-listening-ex01-i03",
             "position": 3,
             "gapToken": "[[gap-03]]",
             "expectedWordId": "english-pre-a1-m010-listening-word-03",
-            "answer": "Pleased to meet you."
+            "answer": "Alex: Nice to meet you."
           },
           {
             "itemId": "english-pre-a1-m010-listening-ex01-i04",
             "position": 4,
             "gapToken": "[[gap-04]]",
             "expectedWordId": "english-pre-a1-m010-listening-word-04",
-            "answer": "This is Ana."
+            "answer": "Ana: Nice to meet you too."
           },
           {
             "itemId": "english-pre-a1-m010-listening-ex01-i05",
             "position": 5,
             "gapToken": "[[gap-05]]",
             "expectedWordId": "english-pre-a1-m010-listening-word-05",
-            "answer": "This is my friend."
+            "answer": "Ben: Pleased to meet you."
           },
           {
             "itemId": "english-pre-a1-m010-listening-ex01-i06",
             "position": 6,
             "gapToken": "[[gap-06]]",
             "expectedWordId": "english-pre-a1-m010-listening-word-06",
-            "answer": "Hello! My name is Ana."
+            "answer": "Ana: This is Ben."
           },
           {
             "itemId": "english-pre-a1-m010-listening-ex01-i07",
             "position": 7,
             "gapToken": "[[gap-07]]",
             "expectedWordId": "english-pre-a1-m010-listening-word-07",
-            "answer": "What's your name?"
+            "answer": "Ben: You're my friend."
           },
           {
             "itemId": "english-pre-a1-m010-listening-ex01-i08",
             "position": 8,
             "gapToken": "[[gap-08]]",
             "expectedWordId": "english-pre-a1-m010-listening-word-08",
-            "answer": "I'm Alex."
+            "answer": "Alex: What's your name?"
           },
           {
             "itemId": "english-pre-a1-m010-listening-ex01-i09",
             "position": 9,
             "gapToken": "[[gap-09]]",
             "expectedWordId": "english-pre-a1-m010-listening-word-09",
-            "answer": "You're my friend."
+            "answer": "Ben: My name is Ben."
           },
           {
             "itemId": "english-pre-a1-m010-listening-ex01-i10",
             "position": 10,
             "gapToken": "[[gap-10]]",
             "expectedWordId": "english-pre-a1-m010-listening-word-10",
-            "answer": "Goodbye!"
+            "answer": "All: Goodbye!"
           }
         ]
       }

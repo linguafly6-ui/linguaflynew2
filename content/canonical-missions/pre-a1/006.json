@@ -636,11 +636,47 @@
             "pronunciationGuide": "zed (RU) / zí (EE. UU.)",
             "audio": "tts:en-GB:Z",
             "audioStatus": "synthetic_pending_review"
+          },
+          {
+            "itemId": "english-pre-a1-m006-explore-context-63",
+            "position": 63,
+            "english": "meet",
+            "spanish": "encontrarse",
+            "pronunciationGuide": "míit",
+            "audio": "tts:en-GB:meet",
+            "audioStatus": "synthetic_pending_review"
+          },
+          {
+            "itemId": "english-pre-a1-m006-explore-context-64",
+            "position": 64,
+            "english": "at",
+            "spanish": "en",
+            "pronunciationGuide": "at",
+            "audio": "tts:en-GB:at",
+            "audioStatus": "synthetic_pending_review"
+          },
+          {
+            "itemId": "english-pre-a1-m006-explore-context-65",
+            "position": 65,
+            "english": "school",
+            "spanish": "escuela",
+            "pronunciationGuide": "skúl",
+            "audio": "tts:en-GB:school",
+            "audioStatus": "synthetic_pending_review"
+          },
+          {
+            "itemId": "english-pre-a1-m006-explore-context-66",
+            "position": 66,
+            "english": "and",
+            "spanish": "y",
+            "pronunciationGuide": "and",
+            "audio": "tts:en-GB:and",
+            "audioStatus": "synthetic_pending_review"
           }
         ],
         "theory": {
           "title": "English alphabet",
-          "explanation": "El alfabeto inglés tiene 26 letras. Cada letra tiene una forma mayúscula (A) y una minúscula (a): A/a, B/b, C/c… Z/z. Los nombres de las letras no siempre coinciden con sus sonidos dentro de las palabras. Las vocales son A, E, I, O, U; las demás letras son consonantes. Para deletrear, dices el nombre de cada letra por separado y en orden, por ejemplo T-O-M. La W se llama double u. En inglés británico, la Z se llama zed; en inglés estadounidense, zee.",
+          "explanation": "El alfabeto inglés tiene 26 letras. Cada letra tiene una forma mayúscula (A) y una minúscula (a): A/a, B/b, C/c… Z/z. Los nombres de las letras no siempre coinciden con sus sonidos dentro de las palabras. Las vocales son A, E, I, O, U; las demás letras son consonantes. Para deletrear, dices el nombre de cada letra por separado y en orden, por ejemplo T-O-M. La W se llama double u. En inglés británico, la Z se llama zed; en inglés estadounidense, zee. El texto completo de comprensión auditiva y su vocabulario de apoyo se presentan en Explore antes de la práctica.",
           "tip": "Exploración es aprendizaje, no un examen. Revisa todos los bloques, palabras y modelos antes de practicar.",
           "patterns": [
             {
@@ -809,9 +845,9 @@
           ],
           "listening": [
             {
-              "english": "Hello! My name is Tom. T-O-M. How do you spell your name? My name is Ben. B-E-N.",
-              "spanish": "¡Hola! Me llamo Tom. T-O-M. ¿Cómo se deletrea tu nombre? Me llamo Ben. B-E-N.",
-              "note": "Diálogo completo con vocabulario y fórmulas explicados en Explore."
+              "english": "Tom and Ben meet at school. Tom: Hello! My name is Tom. Ben: Hi! My name is Ben. Tom: How do you spell your name? Ben: B-E-N. Tom: Thank you. Ben: You're welcome. Ben: How do you spell your name? Tom: T-O-M. Ben: Goodbye!",
+              "spanish": "Tom y Ben se encuentran en la escuela. Tom: ¡Hola! Me llamo Tom. Ben: ¡Hola! Me llamo Ben. Tom: ¿Cómo se deletrea tu nombre? Ben: B-E-N. Tom: Gracias. Ben: De nada. Ben: ¿Cómo se deletrea tu nombre? Tom: T-O-M. Ben: ¡Adiós!",
+              "note": "Texto contextual completo; el vocabulario de apoyo y las expresiones objetivo se explican antes en Explore."
             }
           ]
         },
@@ -1850,55 +1886,55 @@
         "exerciseId": "english-pre-a1-m006-listening-ex01",
         "type": "listening_gap_fill",
         "content": {
-          "audio": "tts:en-GB:Hello! My name is Tom. T-O-M. How do you spell your name? My name is Ben. B-E-N. Thank you!",
+          "audio": "tts:en-GB:Tom and Ben meet at school. Tom: Hello! My name is Tom. Ben: Hi! My name is Ben. Tom: How do you spell your name? Ben: B-E-N. Tom: Thank you. Ben: You're welcome. Ben: How do you spell your name? Tom: T-O-M. Ben: Goodbye!",
           "audioLocale": "en-GB",
           "audioStatus": "synthetic_pending_review",
           "transcriptTemplate": "[[gap-01]] [[gap-02]] [[gap-03]] [[gap-04]] [[gap-05]] [[gap-06]] [[gap-07]] [[gap-08]] [[gap-09]] [[gap-10]]",
           "wordBank": [
             {
               "wordId": "english-pre-a1-m006-listening-word-01",
-              "word": "Hello!"
+              "word": "Tom and Ben meet at school."
             },
             {
               "wordId": "english-pre-a1-m006-listening-word-02",
-              "word": "My name is Tom."
+              "word": "Tom: Hello! My name is Tom."
             },
             {
               "wordId": "english-pre-a1-m006-listening-word-03",
-              "word": "T-O-M."
+              "word": "Ben: Hi! My name is Ben."
             },
             {
               "wordId": "english-pre-a1-m006-listening-word-04",
-              "word": "How do you spell your name?"
+              "word": "Tom: How do you spell your name?"
             },
             {
               "wordId": "english-pre-a1-m006-listening-word-05",
-              "word": "My name is Ben."
+              "word": "Ben: B-E-N."
             },
             {
               "wordId": "english-pre-a1-m006-listening-word-06",
-              "word": "B-E-N."
+              "word": "Tom: Thank you."
             },
             {
               "wordId": "english-pre-a1-m006-listening-word-07",
-              "word": "Thank you!"
+              "word": "Ben: You're welcome."
             },
             {
               "wordId": "english-pre-a1-m006-listening-word-08",
-              "word": "Tom"
+              "word": "Ben: How do you spell your name?"
             },
             {
               "wordId": "english-pre-a1-m006-listening-word-09",
-              "word": "Ben"
+              "word": "Tom: T-O-M."
             },
             {
               "wordId": "english-pre-a1-m006-listening-word-10",
-              "word": "T-O-M"
+              "word": "Ben: Goodbye!"
             }
           ],
           "interaction": "select_place_move_replace",
-          "audioTranscript": "Hello! My name is Tom. T-O-M. How do you spell your name? My name is Ben. B-E-N. Thank you!",
-          "translation": "¡Hola! Me llamo Tom. T-O-M. ¿Cómo se deletrea tu nombre? Me llamo Ben. B-E-N. ¡Gracias!"
+          "audioTranscript": "Tom and Ben meet at school. Tom: Hello! My name is Tom. Ben: Hi! My name is Ben. Tom: How do you spell your name? Ben: B-E-N. Tom: Thank you. Ben: You're welcome. Ben: How do you spell your name? Tom: T-O-M. Ben: Goodbye!",
+          "translation": "Tom y Ben se encuentran en la escuela. Tom: ¡Hola! Me llamo Tom. Ben: ¡Hola! Me llamo Ben. Tom: ¿Cómo se deletrea tu nombre? Ben: B-E-N. Tom: Gracias. Ben: De nada. Ben: ¿Cómo se deletrea tu nombre? Tom: T-O-M. Ben: ¡Adiós!"
         },
         "items": [
           {
@@ -1906,70 +1942,70 @@
             "position": 1,
             "gapToken": "[[gap-01]]",
             "expectedWordId": "english-pre-a1-m006-listening-word-01",
-            "answer": "Hello!"
+            "answer": "Tom and Ben meet at school."
           },
           {
             "itemId": "english-pre-a1-m006-listening-ex01-i02",
             "position": 2,
             "gapToken": "[[gap-02]]",
             "expectedWordId": "english-pre-a1-m006-listening-word-02",
-            "answer": "My name is Tom."
+            "answer": "Tom: Hello! My name is Tom."
           },
           {
             "itemId": "english-pre-a1-m006-listening-ex01-i03",
             "position": 3,
             "gapToken": "[[gap-03]]",
             "expectedWordId": "english-pre-a1-m006-listening-word-03",
-            "answer": "T-O-M."
+            "answer": "Ben: Hi! My name is Ben."
           },
           {
             "itemId": "english-pre-a1-m006-listening-ex01-i04",
             "position": 4,
             "gapToken": "[[gap-04]]",
             "expectedWordId": "english-pre-a1-m006-listening-word-04",
-            "answer": "How do you spell your name?"
+            "answer": "Tom: How do you spell your name?"
           },
           {
             "itemId": "english-pre-a1-m006-listening-ex01-i05",
             "position": 5,
             "gapToken": "[[gap-05]]",
             "expectedWordId": "english-pre-a1-m006-listening-word-05",
-            "answer": "My name is Ben."
+            "answer": "Ben: B-E-N."
           },
           {
             "itemId": "english-pre-a1-m006-listening-ex01-i06",
             "position": 6,
             "gapToken": "[[gap-06]]",
             "expectedWordId": "english-pre-a1-m006-listening-word-06",
-            "answer": "B-E-N."
+            "answer": "Tom: Thank you."
           },
           {
             "itemId": "english-pre-a1-m006-listening-ex01-i07",
             "position": 7,
             "gapToken": "[[gap-07]]",
             "expectedWordId": "english-pre-a1-m006-listening-word-07",
-            "answer": "Thank you!"
+            "answer": "Ben: You're welcome."
           },
           {
             "itemId": "english-pre-a1-m006-listening-ex01-i08",
             "position": 8,
             "gapToken": "[[gap-08]]",
             "expectedWordId": "english-pre-a1-m006-listening-word-08",
-            "answer": "Tom"
+            "answer": "Ben: How do you spell your name?"
           },
           {
             "itemId": "english-pre-a1-m006-listening-ex01-i09",
             "position": 9,
             "gapToken": "[[gap-09]]",
             "expectedWordId": "english-pre-a1-m006-listening-word-09",
-            "answer": "Ben"
+            "answer": "Tom: T-O-M."
           },
           {
             "itemId": "english-pre-a1-m006-listening-ex01-i10",
             "position": 10,
             "gapToken": "[[gap-10]]",
             "expectedWordId": "english-pre-a1-m006-listening-word-10",
-            "answer": "T-O-M"
+            "answer": "Ben: Goodbye!"
           }
         ]
       }
