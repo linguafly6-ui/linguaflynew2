@@ -394,8 +394,8 @@
           ],
           "reading": [
             {
-              "english": "Maya: Hello. I am at school. This is my family photo. Teacher: Who is this? Maya: This is my mother, Anna. This is my father, Ben. This is my sister, Lily, and this is my brother, Tom. I have a baby brother too. This is Leo. This is my grandmother and this is my grandfather. My family is big.",
-              "spanish": "Maya: Hola. Estoy en la escuela. Esta es la foto de mi familia. Profesora: ¿Quién es esta persona? Maya: Esta es mi madre, Anna. Este es mi padre, Ben. Esta es mi hermana, Lily, y este es mi hermano, Tom. También tengo un hermano bebé. Este es Leo. Esta es mi abuela y este es mi abuelo. Mi familia es grande.",
+              "english": "Maya: Hello. I am a student. This is my classroom. This is my teacher. I have a schoolbag. I have a book, a notebook, a pencil and a pen. This is my desk. This is my chair. This is the board. This is the window. I am happy.",
+              "spanish": "Maya: Hola. Soy alumna. Esta es mi aula. Este/a es mi profesor/a. Tengo una mochila escolar. Tengo un libro, un cuaderno, un lápiz y un bolígrafo. Este es mi pupitre. Esta es mi silla. Esta es la pizarra. Esta es la ventana. Estoy contenta.",
               "note": "El texto y todas sus estructuras se explican en Explore."
             }
           ],
@@ -505,8 +505,8 @@
           ],
           "listening": [
             {
-              "english": "Maya: Hello, teacher. This is my family photo. Teacher: Who is this? Maya: This is my mother, Anna. This is my father, Ben. This is my brother, Tom, and this is my sister, Lily. I have a baby brother too. This is Leo. This is my grandmother and this is my grandfather. Teacher: What a big family! Maya: Yes, this is my family.",
-              "spanish": "Maya: Hola, profesora. Esta es la foto de mi familia. Profesora: ¿Quién es esta persona? Maya: Esta es mi madre, Anna. Este es mi padre, Ben. Este es mi hermano, Tom, y esta es mi hermana, Lily. También tengo un hermano bebé. Este es Leo. Esta es mi abuela y este es mi abuelo. Profesora: ¡Qué familia tan grande! Maya: Sí, esta es mi familia.",
+              "english": "Maya: Hello, teacher. This is my classroom. Teacher: Hello, Maya. You are a student. Maya: Yes. I am a student. Teacher: This is your desk and this is your chair. Maya: Thank you. Teacher: This is the board. Maya: And this is the window. Teacher: Very good. Maya: I have a schoolbag. I have a book, a notebook, a pencil and a pen. Teacher: Very good, Maya. This is a computer. Welcome to the classroom.",
+              "spanish": "Maya: Hola, profesor/a. Esta es mi aula. Profesor/a: Hola, Maya. Eres alumno/a. Maya: Sí. Soy alumno/a. Profesor/a: Este es tu pupitre y esta es tu silla. Maya: Gracias. Profesor/a: Esta es la pizarra. Maya: Y esta es la ventana. Profesor/a: Muy bien. Maya: Tengo una mochila escolar. Tengo un libro, un cuaderno, un lápiz y un bolígrafo. Profesor/a: Muy bien, Maya. Este es un ordenador. Bienvenida al aula.",
               "note": "El audio reproduce el diálogo completo, incluidas las diez palabras ocultas en la transcripción."
             }
           ]
@@ -1290,7 +1290,7 @@
         "type": "reading_comprehension",
         "content": {
           "passageId": "english-pre-a1-m015-reading-passage-01",
-          "passage": "Maya: Hello. I am a student. This is my classroom. This is my teacher, Mr Brown. I have a schoolbag. I have a book, a notebook, a pencil and a pen. This is my desk. This is my chair. This is the board. This is the window. I am happy."
+          "passage": "Maya: Hello. I am a student. This is my classroom. This is my teacher. I have a schoolbag. I have a book, a notebook, a pencil and a pen. This is my desk. This is my chair. This is the board. This is the window. I am happy."
         },
         "items": [
           {
@@ -1324,15 +1324,15 @@
           {
             "itemId": "english-pre-a1-m015-reading-ex01-i03",
             "position": 3,
-            "prompt": "Who is Mr Brown?",
+            "prompt": "Who is this?",
             "evaluation": {
               "type": "single_choice"
             },
             "options": [
-              "Her teacher",
-              "Her brother"
+              "My teacher",
+              "My brother"
             ],
-            "answer": "Her teacher",
+            "answer": "My teacher",
             "taskType": "reading_detail"
           },
           {
@@ -1352,7 +1352,7 @@
           {
             "itemId": "english-pre-a1-m015-reading-ex01-i05",
             "position": 5,
-            "prompt": "Which thing is in her schoolbag?",
+            "prompt": "Which classroom item is mentioned?",
             "evaluation": {
               "type": "single_choice"
             },
@@ -1380,15 +1380,15 @@
           {
             "itemId": "english-pre-a1-m015-reading-ex01-i07",
             "position": 7,
-            "prompt": "Which object is Maya's?",
+            "prompt": "Which word names a place to sit?",
             "evaluation": {
               "type": "single_choice"
             },
             "options": [
-              "Her desk",
-              "A bus"
+              "chair",
+              "bus"
             ],
-            "answer": "Her desk",
+            "answer": "chair",
             "taskType": "reading_detail"
           },
           {
@@ -2037,11 +2037,11 @@
         "exerciseId": "english-pre-a1-m015-listening-ex01",
         "type": "listening_gap_fill",
         "content": {
-          "audio": "tts:en-GB:Maya: Hello, Mr Brown. This is my classroom. Mr Brown: Hello, Maya. You are a student. Maya: Yes. I am a student. Mr Brown: This is your desk and this is your chair. Maya: Thank you. Mr Brown: This is the board. Maya: And this is the window. Mr Brown: Very good. Maya: I have a schoolbag. I have a book, a notebook, a pencil and a pen. Mr Brown: Excellent, Maya. This is a computer. Welcome to the classroom.",
+          "audio": "tts:en-GB:Maya: Hello, teacher. This is my classroom. Teacher: Hello, Maya. You are a student. Maya: Yes. I am a student. Teacher: This is your desk and this is your chair. Maya: Thank you. Teacher: This is the board. Maya: And this is the window. Teacher: Very good. Maya: I have a schoolbag. I have a book, a notebook, a pencil and a pen. Teacher: Very good, Maya. This is a computer. Welcome to the classroom.",
           "audioLocale": "en-GB",
           "audioStatus": "synthetic_pending_review",
-          "audioTranscript": "Maya: Hello, Mr Brown. This is my classroom. Mr Brown: Hello, Maya. You are a student. Maya: Yes. I am a student. Mr Brown: This is your desk and this is your chair. Maya: Thank you. Mr Brown: This is the board. Maya: And this is the window. Mr Brown: Very good. Maya: I have a schoolbag. I have a book, a notebook, a pencil and a pen. Mr Brown: Excellent, Maya. This is a computer. Welcome to the classroom.",
-          "transcriptTemplate": "Maya: Hello, Mr Brown. This is my [[gap-01]]. Mr Brown: Hello, Maya. You are a [[gap-02]]. Maya: Yes. I am a student. Mr Brown: This is your [[gap-03]] and this is your [[gap-04]]. Maya: Thank you. Mr Brown: This is the [[gap-05]]. Maya: And this is the [[gap-06]]. Mr Brown: Very good. Maya: I have a [[gap-07]]. I have a [[gap-08]], a [[gap-09]], a pencil and a pen. Mr Brown: Excellent, Maya. This is a [[gap-10]]. Welcome to the classroom.",
+          "audioTranscript": "Maya: Hello, teacher. This is my classroom. Teacher: Hello, Maya. You are a student. Maya: Yes. I am a student. Teacher: This is your desk and this is your chair. Maya: Thank you. Teacher: This is the board. Maya: And this is the window. Teacher: Very good. Maya: I have a schoolbag. I have a book, a notebook, a pencil and a pen. Teacher: Very good, Maya. This is a computer. Welcome to the classroom.",
+          "transcriptTemplate": "Maya: Hello, teacher. This is my [[gap-01]]. Teacher: Hello, Maya. You are a [[gap-02]]. Maya: Yes. I am a student. Teacher: This is your [[gap-03]] and this is your [[gap-04]]. Maya: Thank you. Teacher: This is the [[gap-05]]. Maya: And this is the [[gap-06]]. Teacher: Very good. Maya: I have a [[gap-07]]. I have a [[gap-08]], a [[gap-09]], a pencil and a pen. Teacher: Very good, Maya. This is a [[gap-10]]. Welcome to the classroom.",
           "wordBank": [
             {
               "wordId": "english-pre-a1-m015-listening-word-01",
@@ -2085,7 +2085,7 @@
             }
           ],
           "interaction": "select_place_move_replace",
-          "translation": "Maya: Hola, señor Brown. Esta es mi aula. Señor Brown: Hola, Maya. Eres alumna. Maya: Sí. Soy alumna. Señor Brown: Este es tu pupitre y esta es tu silla. Maya: Gracias. Señor Brown: Esta es la pizarra. Maya: Y esta es la ventana. Señor Brown: Muy bien. Maya: Tengo una mochila escolar. Tengo un libro, un cuaderno, un lápiz y un bolígrafo. Señor Brown: Excelente, Maya. Este es un ordenador. Bienvenida al aula."
+          "translation": "Maya: Hola, profesor/a. Esta es mi aula. Profesor/a: Hola, Maya. Eres alumno/a. Maya: Sí. Soy alumno/a. Profesor/a: Este es tu pupitre y esta es tu silla. Maya: Gracias. Profesor/a: Esta es la pizarra. Maya: Y esta es la ventana. Profesor/a: Muy bien. Maya: Tengo una mochila escolar. Tengo un libro, un cuaderno, un lápiz y un bolígrafo. Profesor/a: Muy bien, Maya. Este es un ordenador. Bienvenida al aula."
         },
         "items": [
           {
