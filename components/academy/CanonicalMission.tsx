@@ -9,6 +9,33 @@ type LessonEntry = { english: string; spanish: string; note?: string; prompt?: s
 type Lesson = { phrases: LessonEntry[]; grammar: LessonEntry[]; reading: LessonEntry[]; writing: LessonEntry[]; speaking: LessonEntry[]; listening: LessonEntry[]; examples?: LessonEntry[]; communication?: LessonEntry[] };
 type Section = { sectionId: string; sectionKey: string; position: number; title?: string; exercise: { exerciseId: string; type: string; items: Item[]; lesson?: Lesson; theory?: { title: string; explanation: string; tip: string; patterns: ({ label?: string; pattern: string; examples?: string[] } | string)[] }; content?: { passageId?: string; passage?: string; audio?: string; audioTranscript?: string; transcriptTemplate?: string; wordBank?: { wordId: string; word: string }[] } } };
 export type Mission = { course: { level: string }; unit: { title: string }; mission: { title: string; position?: number }; sections: Section[] };
+function visualForVocabulary(english: string, spanish: string) {
+  const source = `${english} ${spanish}`.toLowerCase();
+  const groups: [string[], string][] = [
+    [["trabajo","empleo","profesión","oficina","empresa","jefe","reunión","salario","carrera","entrevista","cliente","equipo"],"💼"],
+    [["viaje","viajar","turismo","viajero","aeropuerto","vuelo","tren","autobús","hotel","equipaje","billete","destino","mapa","carretera"],"🧳"],
+    [["familia","madre","padre","hermano","hermana","abuelo","abuela","hijo","hija","pariente"],"👨‍👩‍👧"],
+    [["amigo","amistad","relación","pareja","vecino","compañero","comunidad"],"🫂"],
+    [["salud","médico","doctor","hospital","dolor","enfermo","síntoma","medicina","descanso","sueño","estrés","bienestar","ejercicio"],"🩺"],
+    [["comida","alimento","desayuno","almuerzo","cena","fruta","verdura","bebida","cocinar","restaurante"],"🍎"],
+    [["estudio","aprender","enseñar","curso","clase","escuela","universidad","examen","conocimiento","habilidad","idioma","gramática"],"📚"],
+    [["cultura","tradición","costumbre","festival","museo","arte","música","película","teatro","libro","historia"],"🎭"],
+    [["dinero","precio","coste","gasto","ahorro","pagar","compra","vender","presupuesto","descuento","factura"],"💳"],
+    [["tecnología","internet","digital","ordenador","móvil","teléfono","aplicación","pantalla","red","mensaje","correo"],"📱"],
+    [["medioambiente","ambiente","naturaleza","clima","energía","reciclaje","residuo","contaminación","planeta","bosque","agua"],"🌍"],
+    [["tiempo","fecha","hora","mañana","tarde","noche","semana","mes","año","momento","plazo"],"🕒"],
+    [["problema","solución","decisión","opción","elección","resultado","objetivo","meta","progreso","mejora","reto","desafío"],"🧩"],
+    [["emoción","sentimiento","feliz","triste","miedo","confianza","orgullo","sorpresa","preocupación","esperanza"],"💬"],
+    [["ley","norma","regla","derecho","deber","permiso","seguridad","responsabilidad"],"⚖️"],
+    [["comunicación","conversación","hablar","escuchar","pregunta","respuesta","opinión","argumento","debate"],"🗣️"],
+    [["edificio","casa","vivienda","habitación","cocina","jardín","ciudad","pueblo","barrio"],"🏙️"],
+    [["deporte","correr","caminar","nadar","jugar","partido"],"🏃"],
+    [["ropa","vestir","zapato","camisa","abrigo","uniforme"],"👕"]
+  ];
+  for (const [words, emoji] of groups) if (words.some(word => source.includes(word))) return emoji;
+  return "💡";
+}
+
 const labels: Record<string, string> = { explore: "Exploración", practice: "Práctica", grammar: "Gramática", pronunciation: "Pronunciación", reading: "Lectura", writing: "Escritura", speaking: "Expresión oral", listening: "Comprensión auditiva" };
 
 const preA1Listening: Record<number, { audioTranscript: string; template: string; words: string[] }> = {
@@ -247,7 +274,7 @@ export default function CanonicalMission({ missionData = missionSource as Missio
                 const pronunciationGuide = entry.pronunciationGuide ?? pronunciationByWord.get(word);
                 return <article key={entry.itemId} className="flex min-w-0 flex-col items-center rounded-2xl border border-[#e8ebf0] bg-white p-3 text-center sm:p-4">
                   <div aria-hidden="true" className="grid h-16 w-16 place-items-center rounded-2xl bg-[#f2f6fb] sm:h-20 sm:w-20">
-                    {count ? <div className="flex flex-col items-center justify-center"><span className="text-3xl font-extrabold leading-none text-[#2872c8] sm:text-4xl">{count}</span><span className="mt-1 grid grid-cols-5 gap-0.5 text-[10px] leading-none sm:text-xs">{Array.from({length:count},(_,i)=><span key={i}>🍎</span>)}</span></div> : <span className="text-4xl sm:text-5xl">{word.length === 1 && /^[a-z]$/.test(word) ? "🔠" : visual[word] ?? "🖼️"}</span>}
+                    {count ? <div className="flex flex-col items-center justify-center"><span className="text-3xl font-extrabold leading-none text-[#2872c8] sm:text-4xl">{count}</span><span className="mt-1 grid grid-cols-5 gap-0.5 text-[10px] leading-none sm:text-xs">{Array.from({length:count},(_,i)=><span key={i}>🍎</span>)}</span></div> : <span className="text-4xl sm:text-5xl">{word.length === 1 && /^[a-z]$/.test(word) ? "🔠" : visual[word] ?? visualForVocabulary(word, entry.spanish ?? "")}</span>}
                   </div>
                   <p className="mt-3 break-words text-base font-bold text-[#26364b] sm:text-lg">{entry.english}</p>
                   <p className="mt-1 text-sm font-medium text-[#64816f]">{entry.spanish}</p>
@@ -275,7 +302,7 @@ export default function CanonicalMission({ missionData = missionSource as Missio
               {section.exercise.theory?.patterns.map((pattern, i) => <article key={typeof pattern === "string" ? pattern : pattern.label ?? pattern.pattern ?? i} className="rounded-xl border border-[#e8ebf0] bg-[#fbfcfe] p-4">
                 {typeof pattern !== "string" && pattern.label && <p className="text-xs font-bold uppercase tracking-wide text-[#55779d]">{pattern.label}</p>}
                 <p className="mt-2 font-semibold text-[#26364b]">{typeof pattern === "string" ? pattern : pattern.pattern}</p>
-                {typeof pattern !== "string" && pattern.examples?.length ? <ul className="mt-3 space-y-2">{pattern.examples.map(example => <li key={example} className="text-sm text-[#53657b]">• {example}</li>)}</ul> : null}
+                {typeof pattern !== "string" && pattern.examples?.length ? <ul className="mt-3 space-y-2">{pattern.examples.map(example => { const parts = example.split("\\n→ "); const english = parts[0]; const linked = (section.exercise.lesson?.examples ?? []).find(entry => entry.english === english)?.spanish ?? (section.exercise.lesson?.phrases ?? []).find(entry => entry.english === english)?.spanish; const spanish = parts[1] ?? (linked && !/observa|ejemplo contextualizado|ejemplo de uso/i.test(linked) ? linked : ""); return <li key={example} className="rounded-lg border border-[#e8ebf0] bg-white p-3"><p className="text-sm font-medium text-[#26364b]">🇬🇧 {english}</p>{spanish && <p className="mt-1 text-sm text-[#64816f]">🇪🇸 {spanish}</p>}</li>; })}</ul> : null}
               </article>)}
             </div>
             <div className="mt-3 grid gap-3 sm:grid-cols-2">
