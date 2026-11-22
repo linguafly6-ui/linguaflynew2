@@ -31,6 +31,12 @@ export default function AcademyPage() {
         <p className="mt-3 text-slate-600">Cuenta experiencias, expresa opiniones y participa en conversaciones con mayor autonomía. La misión piloto ya está disponible.</p>
         <span className="mt-6 inline-block font-bold text-violet-700">Ver B1 →</span>
       </Link>
+      <Link href="/academia/c1" className="block rounded-3xl border border-fuchsia-200 bg-fuchsia-50 p-7 shadow-sm transition hover:border-fuchsia-400">
+        <p className="text-sm font-extrabold tracking-widest text-fuchsia-700">04 / PROFICIENT</p>
+        <h2 className="mt-3 text-3xl font-black text-slate-950">C1 · Inglés avanzado</h2>
+        <p className="mt-3 text-slate-600">Desarrolla argumentos complejos, adapta el registro y comunica ideas con precisión. La misión piloto está disponible.</p>
+        <span className="mt-6 inline-block font-bold text-fuchsia-700">Ver C1 →</span>
+      </Link>
       <Link href="/academia/speaking" className="block rounded-3xl border border-cyan-200 bg-cyan-50 p-7 shadow-sm transition hover:border-cyan-400 md:col-span-2">
         <p className="text-sm font-extrabold tracking-widest text-cyan-800">02 / PRONUNCIATION STUDIO</p>
         <h2 className="mt-3 text-3xl font-black text-slate-950">Speaking · British English</h2>
