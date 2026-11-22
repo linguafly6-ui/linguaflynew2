@@ -914,151 +914,141 @@
           {
             "itemId": "english-pre-a1-m020-grammar-ex01-i01",
             "position": 1,
-            "prompt": "Name a vegetable: This is a + vegetable.",
+            "prompt": "Complete: This ___ a carrot.",
             "evaluation": {
               "type": "single_choice"
             },
             "options": [
-              "This is a carrot.",
-              "This is a tomato.",
-              "I like carrots."
+              "is",
+              "are",
+              "am"
             ],
-            "answer": "This is a carrot.",
             "taskType": "pattern_recognition"
           },
           {
             "itemId": "english-pre-a1-m020-grammar-ex01-i02",
             "position": 2,
-            "prompt": "Say what you like: I like + vegetable.",
+            "prompt": "Complete: I ___ carrots.",
             "evaluation": {
               "type": "single_choice"
             },
             "options": [
-              "I like carrots.",
-              "I like peas.",
-              "I don't like onions."
+              "like",
+              "likes",
+              "liking"
             ],
-            "answer": "I like carrots.",
             "taskType": "pattern_recognition"
           },
           {
             "itemId": "english-pre-a1-m020-grammar-ex01-i03",
             "position": 3,
-            "prompt": "Say what you don't like: I don't like + vegetable.",
+            "prompt": "Complete: I ___ like onions.",
             "evaluation": {
               "type": "single_choice"
             },
             "options": [
-              "I don't like onions.",
-              "I don't like peppers.",
-              "The lettuce is green."
+              "don't",
+              "doesn't",
+              "not"
             ],
-            "answer": "I don't like onions.",
             "taskType": "pattern_recognition"
           },
           {
             "itemId": "english-pre-a1-m020-grammar-ex01-i04",
             "position": 4,
-            "prompt": "Describe colour: The + vegetable + is + colour.",
+            "prompt": "Complete: The lettuce ___ green.",
             "evaluation": {
               "type": "single_choice"
             },
             "options": [
-              "The lettuce is green.",
-              "The tomato is red.",
-              "The peas are green."
+              "is",
+              "are",
+              "am"
             ],
-            "answer": "The lettuce is green.",
             "taskType": "pattern_recognition"
           },
           {
             "itemId": "english-pre-a1-m020-grammar-ex01-i05",
             "position": 5,
-            "prompt": "Use ARE for plural: The peas are green.",
+            "prompt": "Complete: The peas ___ green.",
             "evaluation": {
               "type": "single_choice"
             },
             "options": [
-              "The peas are green.",
-              "The carrots are orange.",
-              "We grow vegetables."
+              "are",
+              "is",
+              "am"
             ],
-            "answer": "The peas are green.",
             "taskType": "pattern_recognition"
           },
           {
             "itemId": "english-pre-a1-m020-grammar-ex01-i06",
             "position": 6,
-            "prompt": "Talk about the garden: We grow vegetables.",
+            "prompt": "Choose the correct sentence.",
             "evaluation": {
               "type": "single_choice"
             },
             "options": [
               "We grow vegetables.",
-              "A vegetable garden.",
-              "Wash the carrots."
+              "We grows vegetables.",
+              "We growing vegetables."
             ],
-            "answer": "We grow vegetables.",
             "taskType": "pattern_recognition"
           },
           {
             "itemId": "english-pre-a1-m020-grammar-ex01-i07",
             "position": 7,
-            "prompt": "Use WASH: wash = lavar.",
+            "prompt": "Choose the correct instruction.",
             "evaluation": {
               "type": "single_choice"
             },
             "options": [
               "Wash the carrots.",
-              "Wash the tomatoes.",
-              "Wash the carrots, please."
+              "Washes the carrots.",
+              "Washing the carrots."
             ],
-            "answer": "Wash the carrots.",
             "taskType": "pattern_recognition"
           },
           {
             "itemId": "english-pre-a1-m020-grammar-ex01-i08",
             "position": 8,
-            "prompt": "Use PLEASE: please = por favor.",
+            "prompt": "Choose the correct polite instruction.",
             "evaluation": {
               "type": "single_choice"
             },
             "options": [
               "Wash the carrots, please.",
-              "A tomato, please.",
-              "carrots and peas"
+              "Washes the carrots, please.",
+              "Washing the carrots, please."
             ],
-            "answer": "Wash the carrots, please.",
             "taskType": "pattern_recognition"
           },
           {
             "itemId": "english-pre-a1-m020-grammar-ex01-i09",
             "position": 9,
-            "prompt": "Use AND: and = y.",
+            "prompt": "Choose the correct phrase.",
             "evaluation": {
               "type": "single_choice"
             },
             "options": [
               "carrots and peas",
-              "tomatoes and lettuce",
-              "green peas"
+              "carrots but peas and",
+              "and carrots peas"
             ],
-            "answer": "carrots and peas",
             "taskType": "pattern_recognition"
           },
           {
             "itemId": "english-pre-a1-m020-grammar-ex01-i10",
             "position": 10,
-            "prompt": "Name green vegetables: peas, lettuce, cucumber and broccoli.",
+            "prompt": "Complete: This is ___ tomato.",
             "evaluation": {
               "type": "single_choice"
             },
             "options": [
-              "green peas",
-              "green lettuce",
-              "This is a carrot."
+              "a",
+              "an",
+              "are"
             ],
-            "answer": "green peas",
             "taskType": "pattern_recognition"
           }
         ]

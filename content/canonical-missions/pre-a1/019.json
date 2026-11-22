@@ -914,151 +914,141 @@
           {
             "itemId": "english-pre-a1-m019-grammar-ex01-i01",
             "position": 1,
-            "prompt": "Say what you like: I like + fruit.",
+            "prompt": "Complete: I ___ apples.",
             "evaluation": {
               "type": "single_choice"
             },
             "options": [
-              "I like apples.",
-              "I like mango.",
-              "I don't like lemons."
+              "like",
+              "likes",
+              "liking"
             ],
-            "answer": "I like apples.",
             "taskType": "pattern_recognition"
           },
           {
             "itemId": "english-pre-a1-m019-grammar-ex01-i02",
             "position": 2,
-            "prompt": "Say what you don't like: I don't like + fruit.",
+            "prompt": "Complete: I ___ like lemons.",
             "evaluation": {
               "type": "single_choice"
             },
             "options": [
-              "I don't like lemons.",
-              "I don't like pears.",
-              "I like bananas."
+              "don't",
+              "doesn't",
+              "not"
             ],
-            "answer": "I don't like lemons.",
             "taskType": "pattern_recognition"
           },
           {
             "itemId": "english-pre-a1-m019-grammar-ex01-i03",
             "position": 3,
-            "prompt": "Use LIKE: like = gustar.",
+            "prompt": "Complete: I like ___.",
             "evaluation": {
               "type": "single_choice"
             },
             "options": [
-              "I like bananas.",
-              "I like grapes.",
-              "I don't like lemons."
+              "bananas",
+              "banana",
+              "bananasing"
             ],
-            "answer": "I like bananas.",
             "taskType": "pattern_recognition"
           },
           {
             "itemId": "english-pre-a1-m019-grammar-ex01-i04",
             "position": 4,
-            "prompt": "Use DON'T LIKE: don't like = no gustar.",
+            "prompt": "Complete: I don't like ___.",
             "evaluation": {
               "type": "single_choice"
             },
             "options": [
-              "I don't like lemons.",
-              "I don't like cherries.",
-              "My favourite fruit is mango."
+              "lemons",
+              "lemon",
+              "lemoning"
             ],
-            "answer": "I don't like lemons.",
             "taskType": "pattern_recognition"
           },
           {
             "itemId": "english-pre-a1-m019-grammar-ex01-i05",
             "position": 5,
-            "prompt": "Name a favourite: My favourite fruit is + fruit.",
+            "prompt": "Complete: My favourite fruit ___ mango.",
             "evaluation": {
               "type": "single_choice"
             },
             "options": [
-              "My favourite fruit is mango.",
-              "My favourite fruit is pear.",
-              "a red apple"
+              "is",
+              "are",
+              "am"
             ],
-            "answer": "My favourite fruit is mango.",
             "taskType": "pattern_recognition"
           },
           {
             "itemId": "english-pre-a1-m019-grammar-ex01-i06",
             "position": 6,
-            "prompt": "Use fruit colours: red, green, yellow, orange.",
+            "prompt": "Complete: The apple ___ red.",
             "evaluation": {
               "type": "single_choice"
             },
             "options": [
-              "a red apple",
-              "a yellow banana",
-              "two apples"
+              "is",
+              "are",
+              "am"
             ],
-            "answer": "a red apple",
             "taskType": "pattern_recognition"
           },
           {
             "itemId": "english-pre-a1-m019-grammar-ex01-i07",
             "position": 7,
-            "prompt": "Recognise plural fruit names: apples, bananas, oranges, grapes.",
+            "prompt": "Complete: There are two ___.",
             "evaluation": {
               "type": "single_choice"
             },
             "options": [
-              "two apples",
-              "three bananas",
-              "apples and pears"
+              "apples",
+              "apple",
+              "an apple"
             ],
-            "answer": "two apples",
             "taskType": "pattern_recognition"
           },
           {
             "itemId": "english-pre-a1-m019-grammar-ex01-i08",
             "position": 8,
-            "prompt": "Use AND: and = y.",
+            "prompt": "Choose the correct phrase.",
             "evaluation": {
               "type": "single_choice"
             },
             "options": [
               "apples and pears",
-              "mango and banana",
-              "at the market"
+              "apples but pear",
+              "and apples pear"
             ],
-            "answer": "apples and pears",
             "taskType": "pattern_recognition"
           },
           {
             "itemId": "english-pre-a1-m019-grammar-ex01-i09",
             "position": 9,
-            "prompt": "At the market: fruit market = mercado de fruta.",
+            "prompt": "Complete: I am ___ the market.",
             "evaluation": {
               "type": "single_choice"
             },
             "options": [
-              "at the market",
-              "fruit, please",
-              "I like strawberries."
+              "at",
+              "in",
+              "on"
             ],
-            "answer": "at the market",
             "taskType": "pattern_recognition"
           },
           {
             "itemId": "english-pre-a1-m019-grammar-ex01-i10",
             "position": 10,
-            "prompt": "A simple preference: I like + word(s).",
+            "prompt": "Choose the correct sentence.",
             "evaluation": {
               "type": "single_choice"
             },
             "options": [
               "I like strawberries.",
-              "I like watermelon.",
-              "I like apples."
+              "I likes strawberries.",
+              "I liking strawberries."
             ],
-            "answer": "I like strawberries.",
             "taskType": "pattern_recognition"
           }
         ]
