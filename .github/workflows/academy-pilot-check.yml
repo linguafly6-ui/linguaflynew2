@@ -66,7 +66,9 @@ jobs:
           npx --yes ajv-cli@5 validate --spec=draft2020 -s schemas/course-mission.schema.json -d content/canonical-missions/a2/001.json
           npx --yes ajv-cli@5 validate --spec=draft2020 -s schemas/course-mission.schema.json -d content/canonical-missions/a2/002.json
           npx --yes ajv-cli@5 validate --spec=draft2020 -s schemas/course-mission.schema.json -d content/canonical-missions/b1/001.json
-          npx --yes ajv-cli@5 validate --spec=draft2020 -s schemas/course-mission.schema.json -d content/canonical-missions/c1/001.json
+          for mission in content/canonical-missions/c1/*.json; do
+            npx --yes ajv-cli@5 validate --spec=draft2020 -s schemas/course-mission.schema.json -d "$mission"
+          done
           npx --yes ajv-cli@5 validate --spec=draft2020 -s schemas/course-mission.schema.json -d content/canonical-missions/pre-a1/001.json
           npx --yes ajv-cli@5 validate --spec=draft2020 -s schemas/course-mission.schema.json -d content/canonical-missions/pre-a1/002.json
           npx --yes ajv-cli@5 validate --spec=draft2020 -s schemas/course-mission.schema.json -d content/canonical-missions/pre-a1/003.json
