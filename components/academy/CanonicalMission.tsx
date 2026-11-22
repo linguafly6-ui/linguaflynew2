@@ -187,6 +187,7 @@ export default function CanonicalMission({ missionData = missionSource as Missio
   // Baraja las opciones por pregunta sin separar la respuesta correcta de su texto.
   const shuffledOptions = useMemo(() => {
     if (!item?.options?.length) return [];
+    if (mission.course.level.toUpperCase() !== "B1") return item.options;
     const options = [...item.options];
     for (let i = options.length - 1; i > 0; i -= 1) {
       const j = Math.floor(Math.random() * (i + 1));
