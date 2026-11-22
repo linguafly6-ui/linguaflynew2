@@ -90,6 +90,16 @@ jobs:
           npx --yes ajv-cli@5 validate --spec=draft2020 -s schemas/course-mission.schema.json -d content/canonical-missions/b1/028.json
           npx --yes ajv-cli@5 validate --spec=draft2020 -s schemas/course-mission.schema.json -d content/canonical-missions/b1/029.json
           npx --yes ajv-cli@5 validate --spec=draft2020 -s schemas/course-mission.schema.json -d content/canonical-missions/b1/030.json
+          npx --yes ajv-cli@5 validate --spec=draft2020 -s schemas/course-mission.schema.json -d content/canonical-missions/b1/031.json
+          npx --yes ajv-cli@5 validate --spec=draft2020 -s schemas/course-mission.schema.json -d content/canonical-missions/b1/032.json
+          npx --yes ajv-cli@5 validate --spec=draft2020 -s schemas/course-mission.schema.json -d content/canonical-missions/b1/033.json
+          npx --yes ajv-cli@5 validate --spec=draft2020 -s schemas/course-mission.schema.json -d content/canonical-missions/b1/034.json
+          npx --yes ajv-cli@5 validate --spec=draft2020 -s schemas/course-mission.schema.json -d content/canonical-missions/b1/035.json
+          npx --yes ajv-cli@5 validate --spec=draft2020 -s schemas/course-mission.schema.json -d content/canonical-missions/b1/036.json
+          npx --yes ajv-cli@5 validate --spec=draft2020 -s schemas/course-mission.schema.json -d content/canonical-missions/b1/037.json
+          npx --yes ajv-cli@5 validate --spec=draft2020 -s schemas/course-mission.schema.json -d content/canonical-missions/b1/038.json
+          npx --yes ajv-cli@5 validate --spec=draft2020 -s schemas/course-mission.schema.json -d content/canonical-missions/b1/039.json
+          npx --yes ajv-cli@5 validate --spec=draft2020 -s schemas/course-mission.schema.json -d content/canonical-missions/b1/040.json
           npx --yes ajv-cli@5 validate --spec=draft2020 -s schemas/course-mission.schema.json -d content/canonical-missions/b1/025.json
           npx --yes ajv-cli@5 validate --spec=draft2020 -s schemas/course-mission.schema.json -d content/canonical-missions/b1/020.json
           npx --yes ajv-cli@5 validate --spec=draft2020 -s schemas/course-mission.schema.json -d content/canonical-missions/b1/015.json
