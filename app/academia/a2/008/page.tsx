@@ -1,3 +1,24 @@
 import Link from "next/link";
-export const metadata={title:"Giving Opinions About People · Misión 008 · Linguafly A2",description:"Opiniones sobre personas. Da tu opinión sobre personas y muestra acuerdo o desacuerdo de forma respetuosa. Practica I think, in my opinion, because y but."};
-export default function MissionPage(){return <main className="mx-auto min-h-[70vh] max-w-5xl px-5 py-10"><Link href="/academia/a2" className="text-sm font-semibold text-blue-700">← Misiones A2</Link><p className="mt-6 text-sm font-extrabold uppercase tracking-widest text-indigo-700">Linguafly Quest · A2 · Misión 008</p><h1 className="mt-2 text-4xl font-black text-slate-950">Giving Opinions About People</h1><p className="mt-3 text-slate-600">Opiniones sobre personas</p><p className="mt-2 text-sm text-slate-500">Present simple; verbos de opinión; because / but; preguntas con what y why.</p><iframe title="Misión 008 · Giving Opinions About People" src="/missions/a2/008/index-v2.html?rev=20261119-a2-001-010" className="mt-6 h-[1100px] w-full rounded-2xl border border-slate-200 bg-white"/></main>}
+import CanonicalMission, { type Mission } from "@/components/academy/CanonicalMission";
+import mission from "@/content/canonical-missions/a2/008.json";
+
+export const metadata = {
+  title: "Food, Meals and Eating Out · Misión 008 · Linguafly A2",
+  description: "Habla de comidas, cantidades y cómo pedir en cafeterías y restaurantes.",
+  robots: { index: false, follow: false },
+};
+
+export default function MissionPage() {
+  return (
+    <main className="min-h-screen bg-slate-50 px-4 py-7 sm:px-6">
+      <div className="mx-auto max-w-5xl">
+        <Link href="/academia/a2" className="inline-flex items-center gap-2 text-sm font-medium text-slate-500 transition hover:text-blue-700">
+          <span aria-hidden="true">←</span> Volver a las misiones A2
+        </Link>
+        <div className="mt-5">
+          <CanonicalMission missionData={mission as Mission} />
+        </div>
+      </div>
+    </main>
+  );
+}
