@@ -22,7 +22,7 @@
     "I have a small nose.":"Tengo la nariz pequeña.","My eyes are brown.":"Mis ojos son marrones.","She has got curly hair.":"Ella tiene el pelo rizado.",
     "I put on my coat.":"Me pongo el abrigo.","Take off your shoes.":"Quítate los zapatos.","I wear a warm hat.":"Llevo un gorro abrigado.",
     "Wash your hands.":"Lávate las manos.","Brush your teeth.":"Cepíllate los dientes.","Clean the table.":"Limpia la mesa.",
-    "I take a bath.":"Me baño.","I use shampoo for my hair.":"Uso champú para el pelo.",
+    "I take a bath.":"Me baño.","I use shampoo for my hair.":"Uso champú para el pelo.","I brush my teeth.":"Me cepillo los dientes.",
     "I wake up in the morning.":"Me despierto por la mañana.","I eat breakfast.":"Desayuno.","I go to school.":"Voy al colegio.",
     "What time is it?":"¿Qué hora es?","It is one o'clock.":"Es la una en punto.","It is seven o'clock.":"Son las siete en punto.",
     "It is my birthday.":"Es mi cumpleaños.","I have a birthday cake.":"Tengo una tarta de cumpleaños.","I make a wish.":"Pido un deseo.",
@@ -208,6 +208,18 @@
   }
   var tipEs = theory.tip === "Say each new word aloud, then use it in a short sentence."
     ? "Di cada palabra nueva en voz alta y después úsala en una frase corta." : "";
+  Object.assign(translations, {
+    "I can swim. I ride a bike.":"Puedo nadar. Monto en bicicleta.",
+    "Start the game. Stop the ball.":"Empieza el juego. Para la pelota.",
+    "It is a bus. It is a train.":"Es un autobús. Es un tren.",
+    "Stop at red. Go at green.":"Detente cuando el semáforo esté en rojo. Avanza cuando esté en verde.",
+    "There is a school. There is a park.":"Hay una escuela. Hay un parque.",
+    "How much? One coin, please.":"¿Cuánto cuesta? Una moneda, por favor.",
+    "There is a bed. The book is on the table.":"Hay una cama. El libro está sobre la mesa.",
+    "Water the flower. Seeds grow.":"Riega la flor. Las semillas crecen.",
+    "There is sand. Find a shell.":"Hay arena. Encuentra una concha.",
+    "What’s the weather like? It’s rainy.":"¿Qué tiempo hace? Está lloviendo."
+  });
   function esc(v) { return String(v == null ? "" : v).replace(/[&<>"']/g, function (c) { return {"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]; }); }
   function speak(text) { if (!window.speechSynthesis || !window.SpeechSynthesisUtterance) return; window.speechSynthesis.cancel(); var u = new SpeechSynthesisUtterance(String(text)); u.lang = "en-GB"; u.rate = .88; window.speechSynthesis.speak(u); }
   var host = document.getElementById("content") || document.getElementById("p-explore");
