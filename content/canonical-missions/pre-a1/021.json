@@ -146,6 +146,14 @@
                 "I like a pancake.",
                 "I like a waffle."
               ]
+            },
+            {
+              "label": "Name breakfast time",
+              "pattern": "It is + meal time.",
+              "examples": [
+                "It is breakfast time.",
+                "It is morning."
+              ]
             }
           ]
         },
@@ -252,12 +260,17 @@
               "english": "I eat toast for breakfast.",
               "spanish": "Como tostadas para desayunar.",
               "note": "I like + food."
+            },
+            {
+              "english": "It is breakfast time.",
+              "spanish": "Es la hora del desayuno.",
+              "note": "It is + meal time."
             }
           ],
           "reading": [
             {
-              "english": "Emma and Dad are in the kitchen. Dad: Breakfast time, Emma. Emma: I eat cereal and toast. Dad: I eat an egg and yoghurt. Emma: I drink milk. Dad: I drink juice. Emma: A pancake, please. Dad: A waffle, please. Emma: I like porridge for breakfast. Dad: Me too!",
-              "spanish": "Emma y papá están en la cocina. Papá: Hora del desayuno, Emma. Emma: Como cereales y tostadas. Papá: Como un huevo y yogur. Emma: Bebo leche. Papá: Bebo zumo. Emma: Una tortita, por favor. Papá: Un gofre, por favor. Emma: Me gustan las gachas para desayunar. Papá: ¡A mí también!",
+              "english": "Emma and Dad are in the kitchen. Dad: Breakfast time, Emma. Emma: I eat cereal and toast. Dad: I eat an egg and yoghurt. Emma: I drink milk. Dad: I drink juice. Emma: A pancake, please. Dad: A waffle, please. Emma: I eat porridge for breakfast. Dad: I eat porridge too!",
+              "spanish": "Emma y papá están en la cocina. Papá: Hora del desayuno, Emma. Emma: Como cereales y tostadas. Papá: Como un huevo y yogur. Emma: Bebo leche. Papá: Bebo zumo. Emma: Una tortita, por favor. Papá: Un gofre, por favor. Emma: Como gachas para desayunar. Papá: Yo también como gachas.",
               "note": "El vocabulario y las estructuras del texto se presentan previamente en Explore."
             }
           ],
@@ -367,8 +380,8 @@
           ],
           "listening": [
             {
-              "english": "Emma and Dad are in the kitchen. Dad: Breakfast time, Emma. Emma: I eat cereal and toast. Dad: I eat an egg and yoghurt. Emma: I drink milk. Dad: I drink juice. Emma: A pancake, please. Dad: A waffle, please. Emma: I like porridge for breakfast. Dad: Me too!",
-              "spanish": "Emma y papá están en la cocina. Papá: Hora del desayuno, Emma. Emma: Como cereales y tostadas. Papá: Como un huevo y yogur. Emma: Bebo leche. Papá: Bebo zumo. Emma: Una tortita, por favor. Papá: Un gofre, por favor. Emma: Me gustan las gachas para desayunar. Papá: ¡A mí también!",
+              "english": "Emma and Dad are in the kitchen. Dad: Breakfast time, Emma. Emma: I eat cereal and toast. Dad: I eat an egg and yoghurt. Emma: I drink milk. Dad: I drink juice. Emma: A pancake, please. Dad: A waffle, please. Emma: I eat porridge for breakfast. Dad: I eat porridge too!",
+              "spanish": "Emma y papá están en la cocina. Papá: Hora del desayuno, Emma. Emma: Como cereales y tostadas. Papá: Como un huevo y yogur. Emma: Bebo leche. Papá: Bebo zumo. Emma: Una tortita, por favor. Papá: Un gofre, por favor. Emma: Como gachas para desayunar. Papá: Yo también como gachas.",
               "note": "El audio reproduce el diálogo completo, incluidas las diez respuestas ocultas en la transcripción."
             }
           ]
@@ -442,7 +455,7 @@
               "position": 10,
               "title": "Listos para comprender",
               "content": "El texto y el diálogo utilizan las palabras y estructuras que acabas de estudiar.",
-              "example": "I eat yoghurt. / I like a pancake. / I like a waffle. / I eat porridge. / I eat toast for breakfast.",
+              "example": "I eat yoghurt. / I like a pancake. / I like a waffle. / I eat porridge. / I eat toast for breakfast. / It is breakfast time.",
               "translation": "No hay ejercicios evaluables en Explore."
             }
           ]
@@ -956,132 +969,132 @@
           {
             "itemId": "english-pre-a1-m021-reading-ex01-i01",
             "position": 1,
-            "prompt": "Busca “breakfast” en el diálogo.",
+            "prompt": "¿Dónde están Emma y papá?",
             "evaluation": {
               "type": "single_choice"
             },
             "options": [
-              "breakfast",
-              "cereal"
+              "In the kitchen",
+              "At the farm"
             ],
-            "answer": "breakfast"
+            "answer": "In the kitchen"
           },
           {
             "itemId": "english-pre-a1-m021-reading-ex01-i02",
             "position": 2,
-            "prompt": "Busca “cereal” en el diálogo.",
+            "prompt": "¿Qué hora es?",
             "evaluation": {
               "type": "single_choice"
             },
             "options": [
-              "cereal",
-              "toast"
+              "Breakfast time",
+              "Dinner time"
             ],
-            "answer": "cereal"
+            "answer": "Breakfast time"
           },
           {
             "itemId": "english-pre-a1-m021-reading-ex01-i03",
             "position": 3,
-            "prompt": "Busca “toast” en el diálogo.",
+            "prompt": "¿Qué come Emma?",
             "evaluation": {
               "type": "single_choice"
             },
             "options": [
-              "toast",
-              "milk"
+              "Cereal and toast",
+              "An egg and yoghurt"
             ],
-            "answer": "toast"
+            "answer": "Cereal and toast"
           },
           {
             "itemId": "english-pre-a1-m021-reading-ex01-i04",
             "position": 4,
-            "prompt": "Busca “milk” en el diálogo.",
+            "prompt": "¿Qué bebe Emma?",
             "evaluation": {
               "type": "single_choice"
             },
             "options": [
-              "milk",
-              "juice"
+              "Milk",
+              "Juice"
             ],
-            "answer": "milk"
+            "answer": "Milk"
           },
           {
             "itemId": "english-pre-a1-m021-reading-ex01-i05",
             "position": 5,
-            "prompt": "Busca “juice” en el diálogo.",
+            "prompt": "¿Qué come papá?",
             "evaluation": {
               "type": "single_choice"
             },
             "options": [
-              "juice",
-              "egg"
+              "An egg and yoghurt",
+              "A pancake"
             ],
-            "answer": "juice"
+            "answer": "An egg and yoghurt"
           },
           {
             "itemId": "english-pre-a1-m021-reading-ex01-i06",
             "position": 6,
-            "prompt": "Busca “egg” en el diálogo.",
+            "prompt": "¿Qué bebe papá?",
             "evaluation": {
               "type": "single_choice"
             },
             "options": [
-              "egg",
-              "yoghurt"
+              "Juice",
+              "Milk"
             ],
-            "answer": "egg"
+            "answer": "Juice"
           },
           {
             "itemId": "english-pre-a1-m021-reading-ex01-i07",
             "position": 7,
-            "prompt": "Busca “yoghurt” en el diálogo.",
+            "prompt": "¿Qué pide Emma?",
             "evaluation": {
               "type": "single_choice"
             },
             "options": [
-              "yoghurt",
-              "pancake"
+              "A pancake",
+              "A waffle"
             ],
-            "answer": "yoghurt"
+            "answer": "A pancake"
           },
           {
             "itemId": "english-pre-a1-m021-reading-ex01-i08",
             "position": 8,
-            "prompt": "Busca “pancake” en el diálogo.",
+            "prompt": "¿Qué pide papá?",
             "evaluation": {
               "type": "single_choice"
             },
             "options": [
-              "pancake",
-              "waffle"
+              "A waffle",
+              "A sandwich"
             ],
-            "answer": "pancake"
+            "answer": "A waffle"
           },
           {
             "itemId": "english-pre-a1-m021-reading-ex01-i09",
             "position": 9,
-            "prompt": "Busca “waffle” en el diálogo.",
+            "prompt": "¿Qué come Emma también para desayunar?",
             "evaluation": {
               "type": "single_choice"
             },
             "options": [
-              "waffle",
-              "porridge"
+              "Porridge",
+              "Tea"
             ],
-            "answer": "waffle"
+            "answer": "Porridge"
           },
           {
             "itemId": "english-pre-a1-m021-reading-ex01-i10",
             "position": 10,
-            "prompt": "Busca “porridge” en el diálogo.",
+            "prompt": "¿Qué comida están tomando?",
             "evaluation": {
               "type": "single_choice"
             },
             "options": [
-              "porridge",
-              "breakfast"
+              "Breakfast",
+              "Lunch"
             ],
-            "answer": "porridge"
+            "answer": "Breakfast"
           }
         ],
         "theory": {
@@ -1117,7 +1130,7 @@
         },
         "content": {
           "passageId": "english-pre-a1-m021-reading-passage-01",
-          "passage": "Emma and Dad are in the kitchen. Dad: Breakfast time, Emma. Emma: I eat cereal and toast. Dad: I eat an egg and yoghurt. Emma: I drink milk. Dad: I drink juice. Emma: A pancake, please. Dad: A waffle, please. Emma: I like porridge for breakfast. Dad: Me too!"
+          "passage": "Emma and Dad are in the kitchen. Dad: Breakfast time, Emma. Emma: I eat cereal and toast. Dad: I eat an egg and yoghurt. Emma: I drink milk. Dad: I drink juice. Emma: A pancake, please. Dad: A waffle, please. Emma: I eat porridge for breakfast. Dad: I eat porridge too!"
         }
       }
     },
@@ -1626,11 +1639,11 @@
           ]
         },
         "content": {
-          "audio": "tts:en-GB:Emma and Dad are in the kitchen. Dad: Breakfast time, Emma. Emma: I eat cereal and toast. Dad: I eat an egg and yoghurt. Emma: I drink milk. Dad: I drink juice. Emma: A pancake, please. Dad: A waffle, please. Emma: I like porridge for breakfast. Dad: Me too!",
+          "audio": "tts:en-GB:Emma and Dad are in the kitchen. Dad: Breakfast time, Emma. Emma: I eat cereal and toast. Dad: I eat an egg and yoghurt. Emma: I drink milk. Dad: I drink juice. Emma: A pancake, please. Dad: A waffle, please. Emma: I eat porridge for breakfast. Dad: I eat porridge too!",
           "audioLocale": "en-GB",
           "audioStatus": "synthetic_pending_review",
-          "audioTranscript": "Emma and Dad are in the kitchen. Dad: Breakfast time, Emma. Emma: I eat cereal and toast. Dad: I eat an egg and yoghurt. Emma: I drink milk. Dad: I drink juice. Emma: A pancake, please. Dad: A waffle, please. Emma: I like porridge for breakfast. Dad: Me too!",
-          "transcriptTemplate": "Emma and Dad are in the kitchen. Dad: [[gap-01]] time, Emma. Emma: I eat [[gap-02]] and [[gap-03]]. Dad: I eat an [[gap-04]] and [[gap-05]]. Emma: I drink [[gap-06]]. Dad: I drink [[gap-07]]. Emma: A [[gap-08]], please. Dad: A [[gap-09]], please. Emma: I like [[gap-10]] for breakfast. Dad: Me too!",
+          "audioTranscript": "Emma and Dad are in the kitchen. Dad: Breakfast time, Emma. Emma: I eat cereal and toast. Dad: I eat an egg and yoghurt. Emma: I drink milk. Dad: I drink juice. Emma: A pancake, please. Dad: A waffle, please. Emma: I eat porridge for breakfast. Dad: I eat porridge too!",
+          "transcriptTemplate": "Emma and Dad are in the kitchen. Dad: [[gap-01]] time, Emma. Emma: I eat [[gap-02]] and [[gap-03]]. Dad: I eat an [[gap-04]] and [[gap-05]]. Emma: I drink [[gap-06]]. Dad: I drink [[gap-07]]. Emma: A [[gap-08]], please. Dad: A [[gap-09]], please. Emma: I like [[gap-10]] for breakfast. Dad: I eat porridge too!",
           "wordBank": [
             {
               "wordId": "english-pre-a1-m021-listening-word-01",
@@ -1674,7 +1687,7 @@
             }
           ],
           "interaction": "select_place_move_replace",
-          "translation": "Emma y papá están en la cocina. Papá: Hora del desayuno, Emma. Emma: Como cereales y tostadas. Papá: Como un huevo y yogur. Emma: Bebo leche. Papá: Bebo zumo. Emma: Una tortita, por favor. Papá: Un gofre, por favor. Emma: Me gustan las gachas para desayunar. Papá: ¡A mí también!"
+          "translation": "Emma y papá están en la cocina. Papá: Hora del desayuno, Emma. Emma: Como cereales y tostadas. Papá: Como un huevo y yogur. Emma: Bebo leche. Papá: Bebo zumo. Emma: Una tortita, por favor. Papá: Un gofre, por favor. Emma: Como gachas para desayunar. Papá: Yo también como gachas."
         }
       }
     }
