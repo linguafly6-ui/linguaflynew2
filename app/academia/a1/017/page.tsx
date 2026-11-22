@@ -1,3 +1,9 @@
 import Link from "next/link";
-export const metadata={title:"There Is and There Are · Misión 017 · Linguafly A1",description:"Indica qué hay y dónde están las cosas."};
-export default function MissionPage(){return <main className="mx-auto min-h-[70vh] max-w-5xl px-5 py-10"><section className="mb-7"><Link href="/academia/a1" className="text-sm font-semibold text-blue-700">← Misiones A1</Link><p className="mt-6 text-sm font-extrabold uppercase tracking-widest text-indigo-700">Linguafly Quest · A1 · Misión 017</p><h1 className="mt-2 text-4xl font-black text-slate-950">There Is and There Are</h1><p className="mt-3 text-slate-600">Indica qué hay y dónde están las cosas.</p></section><iframe title="Misión 017 · There Is and There Are" src="/missions/a1/017/index.html" className="h-[1100px] w-full rounded-2xl border border-slate-200 bg-white"/></main>}
+import CanonicalMission, { type Mission } from "@/components/academy/CanonicalMission";
+import missionData from "@/content/canonical-missions/a1/017.json";
+
+export const metadata = { title: "There Is and There Are · Misión 017 · Linguafly Academy", description: "Aprende a decir qué hay y qué no hay en una vivienda con there is y there are." };
+
+export default function A1Mission017Page() {
+  return <main className="min-h-screen bg-slate-50 px-4 py-7 sm:px-6"><div className="mx-auto max-w-5xl"><Link href="/academia/a1" className="text-sm font-medium text-slate-500 hover:text-blue-700">← Volver al curso A1</Link><div className="mt-5"><CanonicalMission missionData={missionData as Mission} /></div></div></main>;
+}
