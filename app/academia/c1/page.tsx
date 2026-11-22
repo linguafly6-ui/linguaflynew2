@@ -43,11 +43,7 @@ export default function C1Page() {
           <p className="text-xs font-extrabold tracking-widest text-violet-700">MISIÓN 004</p><h3 className="mt-1 text-xl font-bold text-slate-950">Perception and Cognitive Bias</h3>
           <p className="mt-1 text-sm text-slate-600">Atención selectiva, sesgos cognitivos, encuadre y evaluación de pruebas.</p><span className="mt-3 inline-block text-sm font-bold text-violet-700">Empezar misión →</span>
         </Link>
-        <Link href="/academia/c1/005" className="mt-4 block rounded-2xl border border-violet-100 bg-white p-5 transition hover:border-violet-400 hover:shadow-sm">
-          <p className="text-xs font-extrabold tracking-widest text-violet-700">MISIÓN 005</p><h3 className="mt-1 text-xl font-bold text-slate-950">Relationships and Boundaries</h3>
-          <p className="mt-1 text-sm text-slate-600">Confianza, reciprocidad, límites, consentimiento y comunicación asertiva.</p><span className="mt-3 inline-block text-sm font-bold text-violet-700">Empezar misión →</span>
-        </Link>
-        <p className="mt-4 text-xs leading-5 text-slate-500">Las misiones 001–005 están implementadas. Las misiones 006–100 siguen en desarrollo. Writing utiliza el dictado compatible con el runtime actual; la producción y evaluación automática de ensayos C1 requieren una ampliación técnica posterior. Los audios sintéticos están pendientes de revisión.</p>
+        <p className="mt-4 text-xs leading-5 text-slate-500">Las misiones 001–004 están implementadas. Las misiones 005–100 siguen en desarrollo. Writing utiliza el dictado compatible con el runtime actual; la producción y evaluación automática de ensayos C1 requieren una ampliación técnica posterior. Los audios sintéticos están pendientes de revisión.</p>
       </section>
     </main>
   );
