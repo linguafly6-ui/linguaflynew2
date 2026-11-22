@@ -1,3 +1,24 @@
 import Link from "next/link";
-export const metadata={title:"Comparing People · Misión 005 · Linguafly A2",description:"Comparar personas. Compara a familiares, amigos y compañeros expresando semejanzas y diferencias. Practica comparativos, superlativos y as…as."};
-export default function MissionPage(){return <main className="mx-auto min-h-[70vh] max-w-5xl px-5 py-10"><Link href="/academia/a2" className="text-sm font-semibold text-blue-700">← Misiones A2</Link><p className="mt-6 text-sm font-extrabold uppercase tracking-widest text-indigo-700">Linguafly Quest · A2 · Misión 005</p><h1 className="mt-2 text-4xl font-black text-slate-950">Comparing People</h1><p className="mt-3 text-slate-600">Comparar personas</p><p className="mt-2 text-sm text-slate-500">Comparatives and superlatives; as…as; less…than; present simple.</p><iframe title="Misión 005 · Comparing People" src="/missions/a2/005/index-v2.html?rev=20261119-a2-001-010" className="mt-6 h-[1100px] w-full rounded-2xl border border-slate-200 bg-white"/></main>}
+import CanonicalMission, { type Mission } from "@/components/academy/CanonicalMission";
+import mission from "@/content/canonical-missions/a2/005.json";
+
+export const metadata = {
+  title: "Meeting People and Personal Profiles · Misión 005 · Linguafly A2",
+  description: "Preséntate, comparte datos personales e introduce a otras personas.",
+  robots: { index: false, follow: false },
+};
+
+export default function MissionPage() {
+  return (
+    <main className="min-h-screen bg-slate-50 px-4 py-7 sm:px-6">
+      <div className="mx-auto max-w-5xl">
+        <Link href="/academia/a2" className="inline-flex items-center gap-2 text-sm font-medium text-slate-500 transition hover:text-blue-700">
+          <span aria-hidden="true">←</span> Volver a las misiones A2
+        </Link>
+        <div className="mt-5">
+          <CanonicalMission missionData={mission as Mission} />
+        </div>
+      </div>
+    </main>
+  );
+}
