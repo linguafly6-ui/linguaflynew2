@@ -1,0 +1,1125 @@
+{
+  "schemaVersion": "1.2.0",
+  "contentVersion": 1,
+  "course": {
+    "courseId": "english-pre-a1",
+    "level": "PRE-A1",
+    "language": "en-GB"
+  },
+  "unit": {
+    "unitId": "english-pre-a1-unit-27",
+    "courseId": "english-pre-a1",
+    "position": 27,
+    "title": "At the Zoo"
+  },
+  "mission": {
+    "missionId": "english-pre-a1-m027",
+    "unitId": "english-pre-a1-unit-27",
+    "position": 27,
+    "title": "At the Zoo"
+  },
+  "sections": [
+    {
+      "sectionId": "english-pre-a1-m027-explore",
+      "sectionKey": "explore",
+      "position": 1,
+      "exercise": {
+        "exerciseId": "english-pre-a1-m027-explore-ex01",
+        "type": "vocabulary_pairs",
+        "theory": {
+          "title": "At the Zoo: vocabulary",
+          "explanation": "Learn ten useful words about animals at the zoo. Listen to each British English model and repeat it.",
+          "patterns": [
+            {
+              "label": "Describe an animal",
+              "pattern": "It is a + adjective + animal.",
+              "examples": [
+                "It is a big lion.",
+                "It is a tall giraffe.",
+                "It is a small monkey."
+              ]
+            }
+          ],
+          "tip": "Escucha, repite y fíjate en la frase completa. Usa el modelo para crear tu propia frase."
+        },
+        "items": [
+          {
+            "itemId": "english-pre-a1-m027-explore-ex01-i01",
+            "position": 1,
+            "english": "lion",
+            "spanish": "león",
+            "audio": "tts:en-GB:lion"
+          },
+          {
+            "itemId": "english-pre-a1-m027-explore-ex01-i02",
+            "position": 2,
+            "english": "tiger",
+            "spanish": "tigre",
+            "audio": "tts:en-GB:tiger"
+          },
+          {
+            "itemId": "english-pre-a1-m027-explore-ex01-i03",
+            "position": 3,
+            "english": "elephant",
+            "spanish": "elefante",
+            "audio": "tts:en-GB:elephant"
+          },
+          {
+            "itemId": "english-pre-a1-m027-explore-ex01-i04",
+            "position": 4,
+            "english": "giraffe",
+            "spanish": "jirafa",
+            "audio": "tts:en-GB:giraffe"
+          },
+          {
+            "itemId": "english-pre-a1-m027-explore-ex01-i05",
+            "position": 5,
+            "english": "monkey",
+            "spanish": "mono",
+            "audio": "tts:en-GB:monkey"
+          },
+          {
+            "itemId": "english-pre-a1-m027-explore-ex01-i06",
+            "position": 6,
+            "english": "zebra",
+            "spanish": "cebra",
+            "audio": "tts:en-GB:zebra"
+          },
+          {
+            "itemId": "english-pre-a1-m027-explore-ex01-i07",
+            "position": 7,
+            "english": "bear",
+            "spanish": "oso",
+            "audio": "tts:en-GB:bear"
+          },
+          {
+            "itemId": "english-pre-a1-m027-explore-ex01-i08",
+            "position": 8,
+            "english": "rhino",
+            "spanish": "rinoceronte",
+            "audio": "tts:en-GB:rhino"
+          },
+          {
+            "itemId": "english-pre-a1-m027-explore-ex01-i09",
+            "position": 9,
+            "english": "hippo",
+            "spanish": "hipopótamo",
+            "audio": "tts:en-GB:hippo"
+          },
+          {
+            "itemId": "english-pre-a1-m027-explore-ex01-i10",
+            "position": 10,
+            "english": "crocodile",
+            "spanish": "cocodrilo",
+            "audio": "tts:en-GB:crocodile"
+          }
+        ]
+      }
+    },
+    {
+      "sectionId": "english-pre-a1-m027-practice",
+      "sectionKey": "practice",
+      "position": 2,
+      "exercise": {
+        "exerciseId": "english-pre-a1-m027-practice-ex01",
+        "type": "mixed_practice",
+        "items": [
+          {
+            "itemId": "english-pre-a1-m027-practice-ex01-i01",
+            "position": 1,
+            "taskType": "vocabulary_translation",
+            "prompt": "Choose the Spanish meaning of “lion”.",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "león",
+              "elefante",
+              "mono"
+            ]
+          },
+          {
+            "itemId": "english-pre-a1-m027-practice-ex01-i02",
+            "position": 2,
+            "taskType": "vocabulary_translation",
+            "prompt": "Choose the Spanish meaning of “tiger”.",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "tigre",
+              "jirafa",
+              "cebra"
+            ]
+          },
+          {
+            "itemId": "english-pre-a1-m027-practice-ex01-i03",
+            "position": 3,
+            "taskType": "vocabulary_translation",
+            "prompt": "Choose the Spanish meaning of “elephant”.",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "elefante",
+              "mono",
+              "oso"
+            ]
+          },
+          {
+            "itemId": "english-pre-a1-m027-practice-ex01-i04",
+            "position": 4,
+            "taskType": "vocabulary_translation",
+            "prompt": "Choose the Spanish meaning of “giraffe”.",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "jirafa",
+              "cebra",
+              "rinoceronte"
+            ]
+          },
+          {
+            "itemId": "english-pre-a1-m027-practice-ex01-i05",
+            "position": 5,
+            "taskType": "vocabulary_translation",
+            "prompt": "Choose the Spanish meaning of “monkey”.",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "mono",
+              "oso",
+              "hipopótamo"
+            ]
+          },
+          {
+            "itemId": "english-pre-a1-m027-practice-ex01-i06",
+            "position": 6,
+            "taskType": "vocabulary_translation",
+            "prompt": "Choose the Spanish meaning of “zebra”.",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "cebra",
+              "rinoceronte",
+              "cocodrilo"
+            ]
+          },
+          {
+            "itemId": "english-pre-a1-m027-practice-ex01-i07",
+            "position": 7,
+            "taskType": "vocabulary_translation",
+            "prompt": "Choose the Spanish meaning of “bear”.",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "oso",
+              "hipopótamo",
+              "león"
+            ]
+          },
+          {
+            "itemId": "english-pre-a1-m027-practice-ex01-i08",
+            "position": 8,
+            "taskType": "vocabulary_translation",
+            "prompt": "Choose the Spanish meaning of “rhino”.",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "rinoceronte",
+              "cocodrilo",
+              "tigre"
+            ]
+          },
+          {
+            "itemId": "english-pre-a1-m027-practice-ex01-i09",
+            "position": 9,
+            "taskType": "vocabulary_translation",
+            "prompt": "Choose the Spanish meaning of “hippo”.",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "hipopótamo",
+              "león",
+              "elefante"
+            ]
+          },
+          {
+            "itemId": "english-pre-a1-m027-practice-ex01-i10",
+            "position": 10,
+            "taskType": "vocabulary_translation",
+            "prompt": "Choose the Spanish meaning of “crocodile”.",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "cocodrilo",
+              "tigre",
+              "jirafa"
+            ]
+          },
+          {
+            "itemId": "english-pre-a1-m027-practice-ex01-i11",
+            "position": 11,
+            "taskType": "english_vocabulary",
+            "prompt": "Which English word means “león”?",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "lion",
+              "elephant",
+              "monkey"
+            ]
+          },
+          {
+            "itemId": "english-pre-a1-m027-practice-ex01-i12",
+            "position": 12,
+            "taskType": "english_vocabulary",
+            "prompt": "Which English word means “tigre”?",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "tiger",
+              "giraffe",
+              "zebra"
+            ]
+          },
+          {
+            "itemId": "english-pre-a1-m027-practice-ex01-i13",
+            "position": 13,
+            "taskType": "english_vocabulary",
+            "prompt": "Which English word means “elefante”?",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "elephant",
+              "monkey",
+              "bear"
+            ]
+          },
+          {
+            "itemId": "english-pre-a1-m027-practice-ex01-i14",
+            "position": 14,
+            "taskType": "english_vocabulary",
+            "prompt": "Which English word means “jirafa”?",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "giraffe",
+              "zebra",
+              "rhino"
+            ]
+          },
+          {
+            "itemId": "english-pre-a1-m027-practice-ex01-i15",
+            "position": 15,
+            "taskType": "english_vocabulary",
+            "prompt": "Which English word means “mono”?",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "monkey",
+              "bear",
+              "hippo"
+            ]
+          },
+          {
+            "itemId": "english-pre-a1-m027-practice-ex01-i16",
+            "position": 16,
+            "taskType": "english_vocabulary",
+            "prompt": "Which English word means “cebra”?",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "zebra",
+              "rhino",
+              "crocodile"
+            ]
+          },
+          {
+            "itemId": "english-pre-a1-m027-practice-ex01-i17",
+            "position": 17,
+            "taskType": "english_vocabulary",
+            "prompt": "Which English word means “oso”?",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "bear",
+              "hippo",
+              "lion"
+            ]
+          },
+          {
+            "itemId": "english-pre-a1-m027-practice-ex01-i18",
+            "position": 18,
+            "taskType": "english_vocabulary",
+            "prompt": "Which English word means “rinoceronte”?",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "rhino",
+              "crocodile",
+              "tiger"
+            ]
+          },
+          {
+            "itemId": "english-pre-a1-m027-practice-ex01-i19",
+            "position": 19,
+            "taskType": "english_vocabulary",
+            "prompt": "Which English word means “hipopótamo”?",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "hippo",
+              "lion",
+              "elephant"
+            ]
+          },
+          {
+            "itemId": "english-pre-a1-m027-practice-ex01-i20",
+            "position": 20,
+            "taskType": "english_vocabulary",
+            "prompt": "Which English word means “cocodrilo”?",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "crocodile",
+              "tiger",
+              "giraffe"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "sectionId": "english-pre-a1-m027-grammar",
+      "sectionKey": "grammar",
+      "position": 3,
+      "exercise": {
+        "exerciseId": "english-pre-a1-m027-grammar-ex01",
+        "type": "grammar",
+        "theory": {
+          "focus": "It is a…; adjetivo + animal",
+          "explanation": "Para nombrar y describir un animal, usamos «It is a…» y podemos añadir un adjetivo antes del nombre: «a big elephant». El adjetivo va antes del animal.",
+          "model": "It is a big elephant.",
+          "practice": "Elige el adjetivo y el animal que coinciden con la descripción."
+        },
+        "items": [
+          {
+            "itemId": "english-pre-a1-m027-grammar-ex01-i01",
+            "position": 1,
+            "prompt": "Choose the correct word order.",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "a big elephant",
+              "an elephant big",
+              "big a elephant"
+            ]
+          },
+          {
+            "itemId": "english-pre-a1-m027-grammar-ex01-i02",
+            "position": 2,
+            "prompt": "Complete: It is ___ lion.",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "a",
+              "an",
+              "are"
+            ]
+          },
+          {
+            "itemId": "english-pre-a1-m027-grammar-ex01-i03",
+            "position": 3,
+            "prompt": "Choose the correct sentence.",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "It is a small monkey.",
+              "It is monkey small.",
+              "It are a small monkey."
+            ]
+          },
+          {
+            "itemId": "english-pre-a1-m027-grammar-ex01-i04",
+            "position": 4,
+            "prompt": "Which sentence describes a tall animal?",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "It is a tall giraffe.",
+              "It is a giraffe tall.",
+              "It are tall giraffe."
+            ]
+          },
+          {
+            "itemId": "english-pre-a1-m027-grammar-ex01-i05",
+            "position": 5,
+            "prompt": "Complete: It is ___ elephant.",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "an",
+              "a",
+              "are"
+            ]
+          },
+          {
+            "itemId": "english-pre-a1-m027-grammar-ex01-i06",
+            "position": 6,
+            "prompt": "Choose the correct description of a zebra.",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "It is a black and white zebra.",
+              "It is zebra black and white.",
+              "It are a zebra."
+            ]
+          },
+          {
+            "itemId": "english-pre-a1-m027-grammar-ex01-i07",
+            "position": 7,
+            "prompt": "Which adjective describes a bear that is not big?",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "small",
+              "drink",
+              "under"
+            ]
+          },
+          {
+            "itemId": "english-pre-a1-m027-grammar-ex01-i08",
+            "position": 8,
+            "prompt": "Choose the correct phrase for a crocodile.",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "a long crocodile",
+              "a crocodile long",
+              "long a crocodile"
+            ]
+          },
+          {
+            "itemId": "english-pre-a1-m027-grammar-ex01-i09",
+            "position": 9,
+            "prompt": "Complete: The tiger is ___.",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "big",
+              "a big",
+              "are big"
+            ]
+          },
+          {
+            "itemId": "english-pre-a1-m027-grammar-ex01-i10",
+            "position": 10,
+            "prompt": "Choose the correct sentence about a hippo.",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "It is a big hippo.",
+              "It is hippo big.",
+              "It are a big hippo."
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "sectionId": "english-pre-a1-m027-pronunciation",
+      "sectionKey": "pronunciation",
+      "position": 4,
+      "exercise": {
+        "exerciseId": "english-pre-a1-m027-pronunciation-ex01",
+        "type": "pronunciation_cards",
+        "items": [
+          {
+            "itemId": "english-pre-a1-m027-pronunciation-ex01-i01",
+            "position": 1,
+            "word": "lion",
+            "translation": "león",
+            "pronunciationGuide": "lái-on",
+            "audio": "tts:en-GB:lion"
+          },
+          {
+            "itemId": "english-pre-a1-m027-pronunciation-ex01-i02",
+            "position": 2,
+            "word": "tiger",
+            "translation": "tigre",
+            "pronunciationGuide": "tái-ga",
+            "audio": "tts:en-GB:tiger"
+          },
+          {
+            "itemId": "english-pre-a1-m027-pronunciation-ex01-i03",
+            "position": 3,
+            "word": "elephant",
+            "translation": "elefante",
+            "pronunciationGuide": "é-li-fənt",
+            "audio": "tts:en-GB:elephant"
+          },
+          {
+            "itemId": "english-pre-a1-m027-pronunciation-ex01-i04",
+            "position": 4,
+            "word": "giraffe",
+            "translation": "jirafa",
+            "pronunciationGuide": "yi-ráaf",
+            "audio": "tts:en-GB:giraffe"
+          },
+          {
+            "itemId": "english-pre-a1-m027-pronunciation-ex01-i05",
+            "position": 5,
+            "word": "monkey",
+            "translation": "mono",
+            "pronunciationGuide": "mán-ki",
+            "audio": "tts:en-GB:monkey"
+          },
+          {
+            "itemId": "english-pre-a1-m027-pronunciation-ex01-i06",
+            "position": 6,
+            "word": "zebra",
+            "translation": "cebra",
+            "pronunciationGuide": "zé-bra",
+            "audio": "tts:en-GB:zebra"
+          },
+          {
+            "itemId": "english-pre-a1-m027-pronunciation-ex01-i07",
+            "position": 7,
+            "word": "bear",
+            "translation": "oso",
+            "pronunciationGuide": "béa",
+            "audio": "tts:en-GB:bear"
+          },
+          {
+            "itemId": "english-pre-a1-m027-pronunciation-ex01-i08",
+            "position": 8,
+            "word": "rhino",
+            "translation": "rinoceronte",
+            "pronunciationGuide": "Escucha el audio británico y repite.",
+            "audio": "tts:en-GB:rhino"
+          },
+          {
+            "itemId": "english-pre-a1-m027-pronunciation-ex01-i09",
+            "position": 9,
+            "word": "hippo",
+            "translation": "hipopótamo",
+            "pronunciationGuide": "Escucha el audio británico y repite.",
+            "audio": "tts:en-GB:hippo"
+          },
+          {
+            "itemId": "english-pre-a1-m027-pronunciation-ex01-i10",
+            "position": 10,
+            "word": "crocodile",
+            "translation": "cocodrilo",
+            "pronunciationGuide": "Escucha el audio británico y repite.",
+            "audio": "tts:en-GB:crocodile"
+          }
+        ]
+      }
+    },
+    {
+      "sectionId": "english-pre-a1-m027-reading",
+      "sectionKey": "reading",
+      "position": 5,
+      "exercise": {
+        "exerciseId": "english-pre-a1-m027-reading-ex01",
+        "type": "reading_comprehension",
+        "content": {
+          "passageId": "english-pre-a1-m027-reading-passage-01",
+          "passage": "At the zoo, Leo visits the animals with his class. The lion is big. The tiger is orange and black. A tall giraffe eats leaves. An elephant drinks water. A monkey climbs a tree. The zebra has black and white stripes. A bear is near the rocks. Leo likes the giraffe best."
+        },
+        "items": [
+          {
+            "itemId": "english-pre-a1-m027-reading-ex01-i01",
+            "position": 1,
+            "prompt": "Who visits the zoo?",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "Leo and his class",
+              "Mum and Dad",
+              "A farmer and a friend"
+            ]
+          },
+          {
+            "itemId": "english-pre-a1-m027-reading-ex01-i02",
+            "position": 2,
+            "prompt": "Which animal is big?",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "The lion",
+              "The monkey",
+              "The zebra"
+            ]
+          },
+          {
+            "itemId": "english-pre-a1-m027-reading-ex01-i03",
+            "position": 3,
+            "prompt": "What colours is the tiger?",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "Orange and black",
+              "Black and white",
+              "Brown and green"
+            ]
+          },
+          {
+            "itemId": "english-pre-a1-m027-reading-ex01-i04",
+            "position": 4,
+            "prompt": "What does the giraffe eat?",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "Leaves",
+              "Fish",
+              "Bread"
+            ]
+          },
+          {
+            "itemId": "english-pre-a1-m027-reading-ex01-i05",
+            "position": 5,
+            "prompt": "Which animal drinks water?",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "The elephant",
+              "The bear",
+              "The tiger"
+            ]
+          },
+          {
+            "itemId": "english-pre-a1-m027-reading-ex01-i06",
+            "position": 6,
+            "prompt": "What does the monkey do?",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "It climbs a tree",
+              "It swims",
+              "It sleeps"
+            ]
+          },
+          {
+            "itemId": "english-pre-a1-m027-reading-ex01-i07",
+            "position": 7,
+            "prompt": "What stripes does the zebra have?",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "Black and white",
+              "Red and yellow",
+              "Blue and green"
+            ]
+          },
+          {
+            "itemId": "english-pre-a1-m027-reading-ex01-i08",
+            "position": 8,
+            "prompt": "Where is the bear?",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "Near the rocks",
+              "In the water",
+              "In a tree"
+            ]
+          },
+          {
+            "itemId": "english-pre-a1-m027-reading-ex01-i09",
+            "position": 9,
+            "prompt": "Which animal does Leo like best?",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "The giraffe",
+              "The lion",
+              "The elephant"
+            ]
+          },
+          {
+            "itemId": "english-pre-a1-m027-reading-ex01-i10",
+            "position": 10,
+            "prompt": "Where are the animals?",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "At the zoo",
+              "On a farm",
+              "At home"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "sectionId": "english-pre-a1-m027-writing",
+      "sectionKey": "writing",
+      "position": 6,
+      "exercise": {
+        "exerciseId": "english-pre-a1-m027-writing-ex01",
+        "type": "dictation",
+        "items": [
+          {
+            "itemId": "english-pre-a1-m027-writing-ex01-i01",
+            "position": 1,
+            "audio": "tts:en-GB:lion",
+            "expectedAnswer": "lion",
+            "evaluation": {
+              "type": "normalised_text"
+            }
+          },
+          {
+            "itemId": "english-pre-a1-m027-writing-ex01-i02",
+            "position": 2,
+            "audio": "tts:en-GB:tiger",
+            "expectedAnswer": "tiger",
+            "evaluation": {
+              "type": "normalised_text"
+            }
+          },
+          {
+            "itemId": "english-pre-a1-m027-writing-ex01-i03",
+            "position": 3,
+            "audio": "tts:en-GB:elephant",
+            "expectedAnswer": "elephant",
+            "evaluation": {
+              "type": "normalised_text"
+            }
+          },
+          {
+            "itemId": "english-pre-a1-m027-writing-ex01-i04",
+            "position": 4,
+            "audio": "tts:en-GB:giraffe",
+            "expectedAnswer": "giraffe",
+            "evaluation": {
+              "type": "normalised_text"
+            }
+          },
+          {
+            "itemId": "english-pre-a1-m027-writing-ex01-i05",
+            "position": 5,
+            "audio": "tts:en-GB:monkey",
+            "expectedAnswer": "monkey",
+            "evaluation": {
+              "type": "normalised_text"
+            }
+          },
+          {
+            "itemId": "english-pre-a1-m027-writing-ex01-i06",
+            "position": 6,
+            "audio": "tts:en-GB:It is a big elephant.",
+            "expectedAnswer": "It is a big elephant.",
+            "evaluation": {
+              "type": "normalised_text"
+            }
+          },
+          {
+            "itemId": "english-pre-a1-m027-writing-ex01-i07",
+            "position": 7,
+            "audio": "tts:en-GB:rhino",
+            "expectedAnswer": "rhino",
+            "evaluation": {
+              "type": "normalised_text"
+            }
+          },
+          {
+            "itemId": "english-pre-a1-m027-writing-ex01-i08",
+            "position": 8,
+            "audio": "tts:en-GB:hippo",
+            "expectedAnswer": "hippo",
+            "evaluation": {
+              "type": "normalised_text"
+            }
+          },
+          {
+            "itemId": "english-pre-a1-m027-writing-ex01-i09",
+            "position": 9,
+            "audio": "tts:en-GB:crocodile",
+            "expectedAnswer": "crocodile",
+            "evaluation": {
+              "type": "normalised_text"
+            }
+          },
+          {
+            "itemId": "english-pre-a1-m027-writing-ex01-i10",
+            "position": 10,
+            "audio": "tts:en-GB:kangaroo",
+            "expectedAnswer": "kangaroo",
+            "evaluation": {
+              "type": "normalised_text"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "sectionId": "english-pre-a1-m027-speaking",
+      "sectionKey": "speaking",
+      "position": 7,
+      "exercise": {
+        "exerciseId": "english-pre-a1-m027-speaking-ex01",
+        "type": "speaking_prompts",
+        "items": [
+          {
+            "itemId": "english-pre-a1-m027-speaking-ex01-i01",
+            "position": 1,
+            "prompt": "Say a short sentence about “lion”. You can use the model.",
+            "modelAnswer": "I can see a lion.",
+            "evaluation": {
+              "type": "transcription_feedback",
+              "transcriptionSeparateFromPronunciation": true
+            }
+          },
+          {
+            "itemId": "english-pre-a1-m027-speaking-ex01-i02",
+            "position": 2,
+            "prompt": "Say a short sentence about “tiger”. You can use the model.",
+            "modelAnswer": "I can see a tiger.",
+            "evaluation": {
+              "type": "transcription_feedback",
+              "transcriptionSeparateFromPronunciation": true
+            }
+          },
+          {
+            "itemId": "english-pre-a1-m027-speaking-ex01-i03",
+            "position": 3,
+            "prompt": "Say a short sentence about “elephant”. You can use the model.",
+            "modelAnswer": "I can see an elephant.",
+            "evaluation": {
+              "type": "transcription_feedback",
+              "transcriptionSeparateFromPronunciation": true
+            }
+          },
+          {
+            "itemId": "english-pre-a1-m027-speaking-ex01-i04",
+            "position": 4,
+            "prompt": "Say a short sentence about “giraffe”. You can use the model.",
+            "modelAnswer": "I can see a giraffe.",
+            "evaluation": {
+              "type": "transcription_feedback",
+              "transcriptionSeparateFromPronunciation": true
+            }
+          },
+          {
+            "itemId": "english-pre-a1-m027-speaking-ex01-i05",
+            "position": 5,
+            "prompt": "Say a short sentence about “monkey”. You can use the model.",
+            "modelAnswer": "I can see a monkey.",
+            "evaluation": {
+              "type": "transcription_feedback",
+              "transcriptionSeparateFromPronunciation": true
+            }
+          },
+          {
+            "itemId": "english-pre-a1-m027-speaking-ex01-i06",
+            "position": 6,
+            "prompt": "Say a short sentence about “zebra”. You can use the model.",
+            "modelAnswer": "I can see a zebra.",
+            "evaluation": {
+              "type": "transcription_feedback",
+              "transcriptionSeparateFromPronunciation": true
+            }
+          },
+          {
+            "itemId": "english-pre-a1-m027-speaking-ex01-i07",
+            "position": 7,
+            "prompt": "Say a short sentence about “bear”. You can use the model.",
+            "modelAnswer": "I can see a bear.",
+            "evaluation": {
+              "type": "transcription_feedback",
+              "transcriptionSeparateFromPronunciation": true
+            }
+          },
+          {
+            "itemId": "english-pre-a1-m027-speaking-ex01-i08",
+            "position": 8,
+            "prompt": "Say a short sentence about “rhino”. You can use the model.",
+            "modelAnswer": "I can see a rhino.",
+            "evaluation": {
+              "type": "transcription_feedback",
+              "transcriptionSeparateFromPronunciation": true
+            }
+          },
+          {
+            "itemId": "english-pre-a1-m027-speaking-ex01-i09",
+            "position": 9,
+            "prompt": "Say a short sentence about “hippo”. You can use the model.",
+            "modelAnswer": "I can see a hippo.",
+            "evaluation": {
+              "type": "transcription_feedback",
+              "transcriptionSeparateFromPronunciation": true
+            }
+          },
+          {
+            "itemId": "english-pre-a1-m027-speaking-ex01-i10",
+            "position": 10,
+            "prompt": "Say a short sentence about “crocodile”. You can use the model.",
+            "modelAnswer": "I can see a crocodile.",
+            "evaluation": {
+              "type": "transcription_feedback",
+              "transcriptionSeparateFromPronunciation": true
+            }
+          }
+        ]
+      }
+    },
+    {
+      "sectionId": "english-pre-a1-m027-listening",
+      "sectionKey": "listening",
+      "position": 8,
+      "exercise": {
+        "exerciseId": "english-pre-a1-m027-listening-ex01",
+        "type": "listening_gap_fill",
+        "content": {
+          "audio": "tts:en-GB:At the zoo, I see a lion, a tiger, an elephant, a giraffe and a monkey. I see a zebra and a bear. I also see a rhino, a hippo and a crocodile.",
+          "audioLocale": "en-GB",
+          "transcriptTemplate": "At the zoo, I see a [[gap-01]], a [[gap-02]], an [[gap-03]], a [[gap-04]] and a [[gap-05]]. I see a [[gap-06]] and a [[gap-07]]. I also see a [[gap-08]], a [[gap-09]] and a [[gap-10]].",
+          "wordBank": [
+            {
+              "wordId": "english-pre-a1-m027-listening-word-01",
+              "word": "lion"
+            },
+            {
+              "wordId": "english-pre-a1-m027-listening-word-02",
+              "word": "tiger"
+            },
+            {
+              "wordId": "english-pre-a1-m027-listening-word-03",
+              "word": "elephant"
+            },
+            {
+              "wordId": "english-pre-a1-m027-listening-word-04",
+              "word": "giraffe"
+            },
+            {
+              "wordId": "english-pre-a1-m027-listening-word-05",
+              "word": "monkey"
+            },
+            {
+              "wordId": "english-pre-a1-m027-listening-word-06",
+              "word": "zebra"
+            },
+            {
+              "wordId": "english-pre-a1-m027-listening-word-07",
+              "word": "bear"
+            },
+            {
+              "wordId": "english-pre-a1-m027-listening-word-08",
+              "word": "rhino"
+            },
+            {
+              "wordId": "english-pre-a1-m027-listening-word-09",
+              "word": "hippo"
+            },
+            {
+              "wordId": "english-pre-a1-m027-listening-word-10",
+              "word": "crocodile"
+            }
+          ],
+          "interaction": "select_place_move_replace"
+        },
+        "items": [
+          {
+            "itemId": "english-pre-a1-m027-listening-ex01-i01",
+            "position": 1,
+            "gapToken": "[[gap-01]]",
+            "expectedWordId": "english-pre-a1-m027-listening-word-01"
+          },
+          {
+            "itemId": "english-pre-a1-m027-listening-ex01-i02",
+            "position": 2,
+            "gapToken": "[[gap-02]]",
+            "expectedWordId": "english-pre-a1-m027-listening-word-02"
+          },
+          {
+            "itemId": "english-pre-a1-m027-listening-ex01-i03",
+            "position": 3,
+            "gapToken": "[[gap-03]]",
+            "expectedWordId": "english-pre-a1-m027-listening-word-03"
+          },
+          {
+            "itemId": "english-pre-a1-m027-listening-ex01-i04",
+            "position": 4,
+            "gapToken": "[[gap-04]]",
+            "expectedWordId": "english-pre-a1-m027-listening-word-04"
+          },
+          {
+            "itemId": "english-pre-a1-m027-listening-ex01-i05",
+            "position": 5,
+            "gapToken": "[[gap-05]]",
+            "expectedWordId": "english-pre-a1-m027-listening-word-05"
+          },
+          {
+            "itemId": "english-pre-a1-m027-listening-ex01-i06",
+            "position": 6,
+            "gapToken": "[[gap-06]]",
+            "expectedWordId": "english-pre-a1-m027-listening-word-06"
+          },
+          {
+            "itemId": "english-pre-a1-m027-listening-ex01-i07",
+            "position": 7,
+            "gapToken": "[[gap-07]]",
+            "expectedWordId": "english-pre-a1-m027-listening-word-07"
+          },
+          {
+            "itemId": "english-pre-a1-m027-listening-ex01-i08",
+            "position": 8,
+            "gapToken": "[[gap-08]]",
+            "expectedWordId": "english-pre-a1-m027-listening-word-08"
+          },
+          {
+            "itemId": "english-pre-a1-m027-listening-ex01-i09",
+            "position": 9,
+            "gapToken": "[[gap-09]]",
+            "expectedWordId": "english-pre-a1-m027-listening-word-09"
+          },
+          {
+            "itemId": "english-pre-a1-m027-listening-ex01-i10",
+            "position": 10,
+            "gapToken": "[[gap-10]]",
+            "expectedWordId": "english-pre-a1-m027-listening-word-10"
+          }
+        ]
+      }
+    }
+  ]
+}

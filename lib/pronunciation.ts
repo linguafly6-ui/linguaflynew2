@@ -1,0 +1,208 @@
+import { getEnv } from "./cf-context";
+
+/**
+ * ============================================================
+ * TUTOR DE PRONUNCIACIÓN
+ * ============================================================
+ * Transcribe el audio del usuario con Workers AI (Whisper),
+ * compara con la frase objetivo y devuelve puntuación + feedback.
+ */
+
+// Modelos de Workers AI disponibles en plan Free
+const STT_MODEL = "@cf/openai/whisper-large-v3-turbo";
+const TTS_MODEL = "@cf/myshell-ai/melotts";
+
+export interface PronunciationResult {
+  score: number;
+  transcription: string;
+  feedback: string;
+  phoneticIssues: string[];
+}
+
+export async function transcribeAudio(
+  audio: ArrayBuffer,
+  language: string
+): Promise<string> {
+  const env = getEnv();
+  if (!env?.AI?.run) {
+    throw new Error("Workers AI binding no disponible para transcripción");
+  }
+
+  // Workers AI Whisper espera el audio codificado en Base64. Enviar un
+  // array de bytes puede producir una respuesta vacía sin transcribir el audio.
+  const bytes = new Uint8Array(audio);
+  let binary = "";
+  const chunkSize = 0x8000;
+  for (let offset = 0; offset < bytes.length; offset += chunkSize) {
+    binary += String.fromCharCode(...bytes.subarray(offset, offset + chunkSize));
+  }
+  const audioBase64 = btoa(binary);
+
+  const response = await env.AI.run(STT_MODEL as any, {
+    audio: audioBase64,
+    task: "transcribe",
+    language: ({ english: "en", spanish: "es", french: "fr", german: "de", italian: "it", portuguese: "pt" } as Record<string, string>)[(language || "en").toLowerCase()] || (language || "en").toLowerCase().split("-")[0],
+    vad_filter: false,
+  });
+
+  const transcription = (response as any).text?.trim();
+  if (typeof transcription !== "string") {
+    throw new Error("Whisper devolvió una respuesta sin el campo de transcripción");
+  }
+  return transcription;
+}
+
+export function calculateSimilarity(a: string, b: string): number {
+  const s1 = a.toLowerCase().trim().replace(/[.,!?;:]/g, "");
+  const s2 = b.toLowerCase().trim().replace(/[.,!?;:]/g, "");
+
+  if (s1 === s2) return 100;
+  const matrix: number[][] = [];
+  const len1 = s1.length;
+  const len2 = s2.length;
+  if (len1 === 0 || len2 === 0) return 0;
+
+  for (let i = 0; i <= len1; i++) matrix[i] = [i];
+  for (let j = 0; j <= len2; j++) matrix[0][j] = j;
+
+  for (let i = 1; i <= len1; i++) {
+    for (let j = 1; j <= len2; j++) {
+      const cost = s1[i - 1] === s2[j - 1] ? 0 : 1;
+      matrix[i][j] = Math.min(
+        matrix[i - 1][j] + 1,
+        matrix[i][j - 1] + 1,
+        matrix[i - 1][j - 1] + cost
+      );
+    }
+  }
+
+  const distance = matrix[len1][len2];
+  const maxLen = Math.max(len1, len2);
+  return Math.round(((maxLen - distance) / maxLen) * 100);
+}
+
+export function detectRecognitionIssues(
+  target: string,
+  transcribed: string
+): string[] {
+  const issues: string[] = [];
+  const targetWords = target.toLowerCase().split(/\s+/);
+  const transcribedWords = transcribed.toLowerCase().split(/\s+/);
+
+  const missing = targetWords.filter(
+    (w) => !transcribedWords.some((tw) => tw.includes(w) || w.includes(tw))
+  );
+  if (missing.length > 0) {
+    issues.push(`Palabras que no aparecen en la transcripción: ${missing.join(", ")}`);
+  }
+
+  const extra = transcribedWords.filter(
+    (w) => !targetWords.some((tw) => tw.includes(w) || w.includes(tw))
+  );
+  if (extra.length > 0 && extra.length <= 3) {
+    issues.push(`Palabras adicionales en la transcripción: ${extra.join(", ")}`);
+  }
+
+  return issues;
+}
+
+export function generateFeedback(score: number, issues: string[]): string {
+  if (score >= 90) {
+    return "La transcripción coincide con el texto esperado. Esto no permite valorar por sí solo la pronunciación de cada sonido.";
+  } else if (score >= 75) {
+    return "La mayoría de las palabras coincide. Revisa estas diferencias de reconocimiento: " + issues.join("; ");
+  } else if (score >= 50) {
+    return "La coincidencia es parcial. Repite la frase y comprueba las palabras que no se reconocieron.";
+  } else {
+    return "La transcripción se parece poco al texto esperado. Escucha el modelo y repite más despacio. La puntuación no es una nota fonética.";
+  }
+}
+
+/**
+ * Genera audio WAV con MeloTTS, decodifica su base64 y lo guarda en R2.
+ */
+export async function generateReferenceAudio(
+  phrase: string,
+  language: string
+): Promise<string | null> {
+  try {
+    const env = getEnv();
+
+    if (!env?.AI?.run || !env?.LINGUAFLY_MEDIA) {
+      return null;
+    }
+
+    const result = await env.AI.run(TTS_MODEL as any, {
+    prompt: phrase,
+    lang: language || "en",
+  });
+
+  // Registrar la estructura real de la respuesta para depurar.
+  console.log("MeloTTS tipo de resultado:", typeof result);
+  console.log(
+    "MeloTTS claves del resultado:",
+    result && typeof result === "object" ? Object.keys(result) : "N/A"
+  );
+  console.log("MeloTTS constructor:", (result as any)?.constructor?.name);
+
+  let audioBytes: ArrayBuffer | Uint8Array | string | null = null;
+  const response = result as any;
+
+  // Caso 1: objeto Response (tiene método arrayBuffer).
+  if (result && typeof response.arrayBuffer === "function") {
+    audioBytes = await response.arrayBuffer();
+  }
+  // Caso 2: objeto con propiedad audio.
+  else if (result && typeof result === "object" && response.audio) {
+    audioBytes = response.audio;
+  }
+  // Caso 3: string (audio binario).
+  else if (typeof result === "string") {
+    audioBytes = result;
+  }
+  // Caso 4: objeto con body.
+  else if (result && response.body) {
+    audioBytes = await new Response(response.body).arrayBuffer();
+  } else {
+    const resultStr = JSON.stringify(result, null, 2);
+    throw new Error(
+      `MeloTTS devolvió un formato inesperado. Tipo: ${typeof result}, Valor: ${resultStr?.substring(0, 500)}`
+    );
+  }
+
+  if (!audioBytes) {
+    throw new Error("MeloTTS devolvió audio vacío");
+  }
+
+  let audioData: Uint8Array;
+
+  if (typeof audioBytes === "string") {
+    // MeloTTS devuelve el WAV codificado en base64: decodificarlo a bytes.
+    const binaryString = atob(audioBytes);
+    audioData = new Uint8Array(binaryString.length);
+    for (let i = 0; i < binaryString.length; i++) {
+      audioData[i] = binaryString.charCodeAt(i);
+    }
+  } else if (audioBytes instanceof ArrayBuffer) {
+    audioData = new Uint8Array(audioBytes);
+  } else if (audioBytes instanceof Uint8Array) {
+    audioData = audioBytes;
+  } else {
+    throw new Error(`Formato de audio no reconocido: ${typeof audioBytes}`);
+  }
+
+  if (audioData.byteLength === 0) {
+    throw new Error("MeloTTS devolvió audio vacío");
+  }
+
+  const r2Key = `pronunciation-ref/${Date.now()}-${Math.random().toString(36).slice(2)}.wav`;
+  await env.LINGUAFLY_MEDIA.put(r2Key, audioData, {
+    httpMetadata: { contentType: "audio/wav" },
+  });
+
+    return r2Key;
+  } catch (error) {
+    console.error("Reference audio generation failed:", error);
+    return null;
+  }
+}

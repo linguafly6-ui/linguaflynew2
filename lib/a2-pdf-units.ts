@@ -1,0 +1,94 @@
+import type { A2PdfUnit } from "./a2-pdf-unit-types";
+export type { A2PdfExercise, A2PdfUnit } from "./a2-pdf-unit-types";
+import { A2_PDF_UNITS_CONTINUED } from "./a2-pdf-units-11-20";
+import { A2_PDF_UNITS_21_30 } from "./a2-pdf-units-21-30";
+import { A2_PDF_UNITS_31_40 } from "./a2-pdf-units-31-40";
+import { A2_PDF_UNITS_41_50 } from "./a2-pdf-units-41-50";
+import { A2_PDF_UNITS_51_60 } from "./a2-pdf-units-51-60";
+export const A2_PDF_UNITS: A2PdfUnit[] = [
+{number:1,slug:"unidad-1-past-simple-memorable-events",title:"Past Simple: memorable events",focus:"Contar experiencias y acontecimientos terminados en el pasado.",explanation:"Usamos el Past Simple para hablar de acciones terminadas en un momento pasado. En afirmativa, los verbos regulares suelen añadir -ed (visit → visited) y los irregulares tienen una forma propia (go → went). Para negar y preguntar usamos did/didn't + verbo en forma base. Con el verbo be usamos was/were.",structure:["Afirmativa: sujeto + verbo en pasado + complemento.","Negativa: sujeto + didn't + verbo base.","Pregunta: Did + sujeto + verbo base?","Marcadores: yesterday, last weekend, two days ago, in 2022."],examples:["We visited the old castle last Saturday.","I didn't take any photos.","Did you enjoy the concert? — Yes, I did.","She went to London in 2023."],vocabulary:["memorable — inolvidable","journey — viaje","crowded — lleno de gente","arrive — llegar","discover — descubrir","take a photo — hacer una foto"],exercises:[
+{question:"Last summer, we ___ (travel) to Italy.",answer:"travelled / traveled",note:"Verbo regular: añade -ed; travelled es la grafía británica y traveled la estadounidense."},
+{question:"He ___ (see) a famous actor yesterday.",answer:"saw",note:"See es irregular: see → saw."},
+{question:"I ___ (not / buy) anything at the market.",answer:"didn't buy",note:"Después de didn't usamos la forma base buy."},
+{question:"___ you ___ (visit) the museum?",answer:"Did you visit",note:"Did + sujeto + verbo base."},
+{question:"They ___ (be) very happy with the result.",answer:"were",note:"Con they usamos were."},
+{question:"Corrige: She didn't went to the party.",answer:"She didn't go to the party.",note:"Después de didn't va go, no went."}
+]},
+{number:2,slug:"unidad-2-present-continuous-arrangements",title:"Present Continuous and arrangements",focus:"Describir acciones actuales y hablar de planes ya organizados.",explanation:"El Present Continuous describe acciones que ocurren ahora o situaciones temporales. También puede expresar planes futuros cuando ya existe un arreglo, normalmente con una hora o fecha. Se forma con am/is/are + verbo terminado en -ing.",structure:["Afirmativa: sujeto + am/is/are + verbo-ing.","Negativa: sujeto + am/is/are + not + verbo-ing.","Pregunta: Am/Is/Are + sujeto + verbo-ing?","Futuro organizado: I'm meeting Ana at six tomorrow."],examples:["I'm studying for my exam right now.","They aren't staying at the hotel this week.","Are you working tomorrow?","We're having dinner with Sam on Friday."],vocabulary:["arrangement — plan organizado","appointment — cita","available — disponible","schedule — horario","meet — quedar con / reunirse","cancel — cancelar"],exercises:[
+{question:"Look! The children ___ (play) in the garden.",answer:"are playing",note:"Acción que ocurre ahora: are + playing."},
+{question:"She ___ (not / work) this week.",answer:"isn't working",note:"Negativa: is not + verbo-ing."},
+{question:"___ you ___ (meet) Tom after class?",answer:"Are you meeting",note:"Pregunta con Are + sujeto + verbo-ing."},
+{question:"We ___ (have) lunch with my aunt tomorrow at one.",answer:"are having",note:"Plan futuro ya organizado."},
+{question:"Escribe el gerundio de make.",answer:"making",note:"Se elimina la e final antes de -ing."},
+{question:"Corrige: I am meet my friends tonight.",answer:"I am meeting my friends tonight.",note:"Después de am necesitamos el verbo en -ing."}
+]},
+{number:3,slug:"unidad-3-comparatives-superlatives",title:"Comparatives and superlatives",focus:"Comparar personas, lugares, objetos y experiencias.",explanation:"Usamos el comparativo para comparar dos elementos y el superlativo para destacar uno dentro de un grupo. Los adjetivos cortos suelen añadir -er/-est; los largos usan more/most. Hay formas irregulares frecuentes: good → better → the best; bad → worse → the worst.",structure:["Comparativo: adjective + -er + than / more + adjective + than.","Superlativo: the + adjective-est / the most + adjective.","Igualdad: as + adjective + as.","Adjetivo corto terminado en consonante-vocal-consonante: big → bigger → biggest."],examples:["A train is faster than a bus.","This is the most interesting book in the class.","My room is as large as yours.","Today is better than yesterday."],vocabulary:["cheap — barato","expensive — caro","comfortable — cómodo","far — lejos","quiet — tranquilo","crowded — concurrido"],exercises:[
+{question:"A bike is ___ (slow) than a motorbike.",answer:"slower",note:"Adjetivo corto: slow + -er."},
+{question:"This is ___ (good) restaurant in town.",answer:"the best",note:"Superlativo irregular de good."},
+{question:"My new phone is ___ (expensive) than my old one.",answer:"more expensive",note:"Adjetivo largo: more + adjetivo."},
+{question:"This test is as ___ (easy) as the last one.",answer:"easy",note:"La estructura as…as mantiene el adjetivo en forma base."},
+{question:"What's the ___ (bad) film you've seen?",answer:"worst",note:"Superlativo irregular: bad → worst."},
+{question:"Corrige: The blue car is more cheaper than the red one.",answer:"The blue car is cheaper than the red one.",note:"No combinamos more con la terminación -er."}
+]},
+{number:4,slug:"unidad-4-going-to-plans-intentions",title:"Going to: plans and intentions",focus:"Expresar planes, intenciones y predicciones basadas en evidencias.",explanation:"Usamos be going to para hablar de planes o intenciones decididos antes del momento de hablar y para predicciones basadas en señales presentes. La forma be cambia según el sujeto; going to va seguido de un verbo en forma base.",structure:["Afirmativa: sujeto + am/is/are + going to + verbo base.","Negativa: sujeto + am/is/are + not + going to + verbo base.","Pregunta: Am/Is/Are + sujeto + going to + verbo base?","Predicción con evidencia: Look at those clouds. It's going to rain."],examples:["I'm going to learn how to drive.","They aren't going to move house.","Are you going to apply for the job?","Be careful! You're going to drop that glass."],vocabulary:["intention — intención","apply for — solicitar","save money — ahorrar dinero","move house — mudarse","improve — mejorar","probably — probablemente"],exercises:[
+{question:"I ___ going to ___ (visit) my cousins.",answer:"am; visit",note:"Con I usamos am y después going to + verbo base."},
+{question:"She ___ (not / buy) a new car this year.",answer:"isn't going to buy",note:"Negativa: isn't going to + verbo base."},
+{question:"___ they going to ___ (travel) abroad?",answer:"Are; travel",note:"Pregunta: Are + sujeto + going to + verbo base."},
+{question:"Look at the broken glass! Someone ___ (cut) their foot.",answer:"is going to cut",note:"Predicción basada en una evidencia presente."},
+{question:"Ordena: going / we / are / start / to / soon.",answer:"We are going to start soon.",note:"Sujeto + are + going to + verbo base."},
+{question:"Corrige: He is going to studies medicine.",answer:"He is going to study medicine.",note:"Después de going to usamos la forma base."}
+]},
+{number:5,slug:"unidad-5-countable-uncountable-nouns",title:"Countable and uncountable nouns",focus:"Hablar de cantidades, alimentos y objetos usando cuantificadores.",explanation:"Los sustantivos contables tienen singular y plural (an apple, three apples). Los incontables normalmente no tienen plural (water, rice, information). Usamos many/a few con contables plurales y much/a little con incontables. Some suele aparecer en afirmativas y any en negativas y preguntas.",structure:["How many + sustantivo contable plural?","How much + sustantivo incontable?","a few / many + contables plurales.","a little / much + incontables.","Some y any expresan una cantidad no especificada."],examples:["There are a few eggs in the fridge.","We don't have much milk.","How many tomatoes do we need?","Would you like some water?"],vocabulary:["flour — harina","sugar — azúcar","bottle — botella","loaf — barra de pan","piece — trozo","ingredients — ingredientes"],exercises:[
+{question:"How ___ bananas do we need?",answer:"many",note:"Bananas es contable plural."},
+{question:"There isn't ___ rice left.",answer:"much",note:"Rice es incontable."},
+{question:"We have ___ apples, so we can make a pie.",answer:"a few",note:"A few acompaña a contables plurales."},
+{question:"Can I have ___ water, please?",answer:"some",note:"Some es habitual en ofrecimientos y peticiones."},
+{question:"How ___ sugar do you take in your tea?",answer:"much",note:"Sugar es incontable."},
+{question:"Corrige: I need an information.",answer:"I need some information.",note:"Information es incontable; no usamos an."}
+]},
+{number:6,slug:"unidad-6-adverbs-frequency-habits",title:"Adverbs of frequency and habits",focus:"Describir rutinas y explicar con qué frecuencia hacemos actividades.",explanation:"Los adverbios de frecuencia indican cada cuánto ocurre una acción. Normalmente van antes del verbo principal, pero después del verbo be. Las expresiones como once a week o every day suelen ir al final de la frase.",structure:["always (100%), usually, often, sometimes, rarely, hardly ever, never (0%).","Antes del verbo principal: I usually walk to work.","Después de be: She is often tired.","Expresiones: once/twice a week, every morning, three times a month."],examples:["I usually have coffee before work.","He is never late for class.","We go swimming twice a week.","They hardly ever eat fast food."],vocabulary:["routine — rutina","habit — hábito","regularly — regularmente","hardly ever — casi nunca","twice a week — dos veces por semana","at weekends — los fines de semana"],exercises:[
+{question:"I ___ (usually) get up at seven. Coloca el adverbio.",answer:"I usually get up at seven.",note:"Usually va antes del verbo principal get."},
+{question:"She is ___ late. (never)",answer:"She is never late.",note:"Con be, never va después del verbo."},
+{question:"We play tennis ___ (two times a week).",answer:"twice a week",note:"La expresión natural es twice a week."},
+{question:"Ordena: hardly / they / ever / drive.",answer:"They hardly ever drive.",note:"El adverbio va antes del verbo principal."},
+{question:"Which is stronger: sometimes or usually?",answer:"usually",note:"Usually indica una frecuencia mayor que sometimes."},
+{question:"Corrige: He goes always to bed early.",answer:"He always goes to bed early.",note:"Always va antes del verbo principal."}
+]},
+{number:7,slug:"unidad-7-past-continuous-interruptions",title:"Past Continuous and interruptions",focus:"Describir acciones en progreso en el pasado y acontecimientos que las interrumpen.",explanation:"El Past Continuous describe una acción que estaba en desarrollo en un momento pasado. Se forma con was/were + verbo-ing. A menudo se combina con Past Simple: la acción larga va en Past Continuous y el acontecimiento que la interrumpe en Past Simple. While suele introducir la acción en progreso y when el acontecimiento.",structure:["Afirmativa: sujeto + was/were + verbo-ing.","Negativa: sujeto + wasn't/weren't + verbo-ing.","Pregunta: Was/Were + sujeto + verbo-ing?","While + Past Continuous; when + Past Simple (uso frecuente)."],examples:["I was cooking when the phone rang.","While they were walking, it started to rain.","She wasn't listening when the teacher asked her.","Were you sleeping at eleven?"],vocabulary:["interrupt — interrumpir","suddenly — de repente","while — mientras","fall asleep — quedarse dormido","ring — sonar","power cut — apagón"],exercises:[
+{question:"At eight o'clock, I ___ (watch) TV.",answer:"was watching",note:"I + was + verbo-ing."},
+{question:"They ___ (walk) home when it started to snow.",answer:"were walking",note:"Acción en progreso interrumpida por Past Simple."},
+{question:"While I was studying, my brother ___ (come) in.",answer:"came",note:"El acontecimiento puntual va en Past Simple."},
+{question:"She ___ (not / sleep) when I called.",answer:"wasn't sleeping",note:"Negativa con was not + verbo-ing."},
+{question:"___ you ___ (drive) when the accident happened?",answer:"Were you driving",note:"Pregunta con Were + sujeto + verbo-ing."},
+{question:"Corrige: We were have dinner when he arrived.",answer:"We were having dinner when he arrived.",note:"Past Continuous requiere verbo-ing: having."}
+]},
+{number:8,slug:"unidad-8-should-must-advice",title:"Should, must and advice",focus:"Dar consejos, expresar obligaciones y hablar de normas.",explanation:"Should se usa para recomendar o aconsejar; la forma negativa es shouldn't. Must expresa una obligación fuerte o una necesidad. Mustn't indica prohibición. En muchos contextos have to también expresa obligación, y don't have to significa que algo no es necesario.",structure:["should / shouldn't + verbo base: consejo.","must + verbo base: obligación.","mustn't + verbo base: prohibición.","don't have to + verbo base: ausencia de obligación."],examples:["You should get more sleep.","You shouldn't eat so much sugar.","Visitors must show their tickets.","You mustn't use your phone during the exam.","We don't have to wear a uniform."],vocabulary:["advice — consejo","rule — norma","allowed — permitido","forbidden — prohibido","healthy — saludable","necessary — necesario"],exercises:[
+{question:"You look tired. You ___ go to bed earlier.",answer:"should",note:"Should da un consejo."},
+{question:"You ___ smoke in the hospital. (prohibición)",answer:"mustn't",note:"Mustn't expresa prohibición."},
+{question:"Employees ___ wear an ID badge. (obligación)",answer:"must",note:"Must expresa obligación."},
+{question:"You ___ bring food; lunch is provided. (no es necesario)",answer:"don't have to",note:"Don't have to significa que no es obligatorio."},
+{question:"He ___ (should) drive so fast. Escribe la forma negativa.",answer:"shouldn't",note:"La negativa de should es shouldn't."},
+{question:"Corrige: You must to wear a seat belt.",answer:"You must wear a seat belt.",note:"Must va seguido directamente del verbo base, sin to."}
+]},
+{number:9,slug:"unidad-9-first-conditional-consequences",title:"First Conditional and consequences",focus:"Hablar de situaciones futuras posibles y sus consecuencias.",explanation:"El First Conditional describe una condición futura real o posible y su resultado. En la parte con if usamos Present Simple; en la oración principal usamos will + verbo base. No solemos poner will inmediatamente después de if. Unless significa if…not.",structure:["If + Present Simple, will + verbo base.","La cláusula con if puede ir al final: I'll call you if I arrive early.","En la cláusula con if no usamos will: If it rains…","Unless = if…not."],examples:["If it rains, we'll stay at home.","You'll miss the bus if you don't hurry.","If she studies, she'll pass the exam.","Unless we leave now, we'll be late."],vocabulary:["condition — condición","result — resultado","unless — a menos que","hurry — darse prisa","miss — perder","decision — decisión"],exercises:[
+{question:"If I ___ (have) time, I'll help you.",answer:"have",note:"Después de if usamos Present Simple."},
+{question:"She will be happy if you ___ (call) her.",answer:"call",note:"La cláusula if lleva Present Simple."},
+{question:"If they don't leave now, they ___ (miss) the train.",answer:"will miss",note:"Resultado futuro: will + verbo base."},
+{question:"Unless you study, you ___ (not / pass) the test.",answer:"won't pass",note:"Unless equivale a if you don't."},
+{question:"Corrige: If it will rain, we will cancel the match.",answer:"If it rains, we will cancel the match.",note:"No usamos will en la cláusula con if."},
+{question:"Completa: If I see Anna, I ___ (tell) her.",answer:"will tell",note:"La oración principal usa will + verbo base."}
+]},
+{number:10,slug:"unidad-10-relative-clauses-descriptions",title:"Relative clauses and descriptions",focus:"Unir ideas y describir personas, lugares y objetos con who, which, that y whose.",explanation:"Las relative clauses añaden información sobre un sustantivo. Who se refiere a personas; which a cosas o animales; that puede sustituir a who o which en muchas defining relative clauses; whose expresa posesión. En las defining relative clauses, el pronombre relativo puede omitirse cuando funciona como objeto, pero no cuando es sujeto.",structure:["who = personas: The woman who lives next door…","which = cosas/animales: The book which I bought…","that = personas o cosas en defining clauses.","whose = posesión: A student whose project won…"],examples:["That's the man who helped me.","This is the laptop which I use for work.","The film that we watched was funny.","She's the girl whose brother is a pilot."],vocabulary:["neighbour — vecino/a","device — dispositivo","owner — propietario/a","whose — de quién / cuyo","description — descripción","belong to — pertenecer a"],exercises:[
+{question:"A chef is a person ___ prepares food.",answer:"who / that",note:"Who o that pueden referirse a personas en una defining clause."},
+{question:"This is the phone ___ I bought yesterday.",answer:"which / that",note:"Which o that se refieren a cosas."},
+{question:"That's the woman ___ car was stolen.",answer:"whose",note:"Whose expresa posesión."},
+{question:"The book ___ is on the table is mine.",answer:"which / that",note:"El relativo es sujeto de la cláusula; no se omite."},
+{question:"Une: I know a boy. He speaks four languages.",answer:"I know a boy who speaks four languages.",note:"Who conecta las dos ideas y se refiere a boy."},
+{question:"Corrige: The café who we visited was lovely.",answer:"The café which/that we visited was lovely.",note:"Para lugares/objetos usamos which o that, no who."}
+]},
+...A2_PDF_UNITS_CONTINUED,
+...A2_PDF_UNITS_21_30,
+...A2_PDF_UNITS_31_40,
+...A2_PDF_UNITS_41_50,
+...A2_PDF_UNITS_51_60
+];

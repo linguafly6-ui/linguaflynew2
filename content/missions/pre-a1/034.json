@@ -1,0 +1,1105 @@
+{
+  "schemaVersion": "1.2.0",
+  "contentVersion": 1,
+  "course": {
+    "courseId": "english-pre-a1",
+    "level": "PRE-A1",
+    "language": "en-GB"
+  },
+  "unit": {
+    "unitId": "english-pre-a1-unit-34",
+    "courseId": "english-pre-a1",
+    "position": 34,
+    "title": "Bath Time"
+  },
+  "mission": {
+    "missionId": "english-pre-a1-m034",
+    "unitId": "english-pre-a1-unit-34",
+    "position": 34,
+    "title": "Bath Time"
+  },
+  "sections": [
+    {
+      "sectionId": "english-pre-a1-m034-explore",
+      "sectionKey": "explore",
+      "position": 1,
+      "exercise": {
+        "exerciseId": "english-pre-a1-m034-explore-ex01",
+        "type": "vocabulary_pairs",
+        "theory": {
+          "title": "Bath Time: vocabulary",
+          "explanation": "Learn ten useful words for bathroom items and a simple washing routine.",
+          "patterns": [
+            {
+              "label": "Bathroom routine",
+              "pattern": "I use + bathroom item · Wash / Brush + body part.",
+              "examples": [
+                "I take a bath.",
+                "I use shampoo for my hair.",
+                "I brush my teeth."
+              ]
+            }
+          ],
+          "tip": "Escucha, repite y usa cada palabra en una frase completa."
+        },
+        "items": [
+          {
+            "itemId": "english-pre-a1-m034-explore-ex01-i01",
+            "position": 1,
+            "english": "bath",
+            "spanish": "baño / bañera",
+            "audio": "tts:en-GB:bath"
+          },
+          {
+            "itemId": "english-pre-a1-m034-explore-ex01-i02",
+            "position": 2,
+            "english": "shower",
+            "spanish": "ducha",
+            "audio": "tts:en-GB:shower"
+          },
+          {
+            "itemId": "english-pre-a1-m034-explore-ex01-i03",
+            "position": 3,
+            "english": "toothbrush",
+            "spanish": "cepillo de dientes",
+            "audio": "tts:en-GB:toothbrush"
+          },
+          {
+            "itemId": "english-pre-a1-m034-explore-ex01-i04",
+            "position": 4,
+            "english": "toothpaste",
+            "spanish": "pasta de dientes",
+            "audio": "tts:en-GB:toothpaste"
+          },
+          {
+            "itemId": "english-pre-a1-m034-explore-ex01-i05",
+            "position": 5,
+            "english": "shampoo",
+            "spanish": "champú",
+            "audio": "tts:en-GB:shampoo"
+          },
+          {
+            "itemId": "english-pre-a1-m034-explore-ex01-i06",
+            "position": 6,
+            "english": "hands",
+            "spanish": "manos",
+            "audio": "tts:en-GB:hands"
+          },
+          {
+            "itemId": "english-pre-a1-m034-explore-ex01-i07",
+            "position": 7,
+            "english": "flannel",
+            "spanish": "manopla",
+            "audio": "tts:en-GB:flannel"
+          },
+          {
+            "itemId": "english-pre-a1-m034-explore-ex01-i08",
+            "position": 8,
+            "english": "razor",
+            "spanish": "maquinilla de afeitar",
+            "audio": "tts:en-GB:razor"
+          },
+          {
+            "itemId": "english-pre-a1-m034-explore-ex01-i09",
+            "position": 9,
+            "english": "comb",
+            "spanish": "peine",
+            "audio": "tts:en-GB:comb"
+          },
+          {
+            "itemId": "english-pre-a1-m034-explore-ex01-i10",
+            "position": 10,
+            "english": "mirror",
+            "spanish": "espejo",
+            "audio": "tts:en-GB:mirror"
+          }
+        ]
+      }
+    },
+    {
+      "sectionId": "english-pre-a1-m034-practice",
+      "sectionKey": "practice",
+      "position": 2,
+      "exercise": {
+        "exerciseId": "english-pre-a1-m034-practice-ex01",
+        "type": "mixed_practice",
+        "items": [
+          {
+            "itemId": "english-pre-a1-m034-practice-ex01-i01",
+            "position": 1,
+            "taskType": "vocabulary_translation",
+            "prompt": "Choose the Spanish meaning of “bath”.",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "baño / bañera",
+              "cepillo de dientes",
+              "champú"
+            ]
+          },
+          {
+            "itemId": "english-pre-a1-m034-practice-ex01-i02",
+            "position": 2,
+            "taskType": "vocabulary_translation",
+            "prompt": "Choose the Spanish meaning of “shower”.",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "ducha",
+              "pasta de dientes",
+              "manos"
+            ]
+          },
+          {
+            "itemId": "english-pre-a1-m034-practice-ex01-i03",
+            "position": 3,
+            "taskType": "vocabulary_translation",
+            "prompt": "Choose the Spanish meaning of “toothbrush”.",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "cepillo de dientes",
+              "champú",
+              "manopla"
+            ]
+          },
+          {
+            "itemId": "english-pre-a1-m034-practice-ex01-i04",
+            "position": 4,
+            "taskType": "vocabulary_translation",
+            "prompt": "Choose the Spanish meaning of “toothpaste”.",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "pasta de dientes",
+              "manos",
+              "maquinilla de afeitar"
+            ]
+          },
+          {
+            "itemId": "english-pre-a1-m034-practice-ex01-i05",
+            "position": 5,
+            "taskType": "vocabulary_translation",
+            "prompt": "Choose the Spanish meaning of “shampoo”.",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "champú",
+              "manopla",
+              "peine"
+            ]
+          },
+          {
+            "itemId": "english-pre-a1-m034-practice-ex01-i06",
+            "position": 6,
+            "taskType": "vocabulary_translation",
+            "prompt": "Choose the Spanish meaning of “hands”.",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "manos",
+              "maquinilla de afeitar",
+              "espejo"
+            ]
+          },
+          {
+            "itemId": "english-pre-a1-m034-practice-ex01-i07",
+            "position": 7,
+            "taskType": "vocabulary_translation",
+            "prompt": "Choose the Spanish meaning of “flannel”.",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "manopla",
+              "peine",
+              "baño / bañera"
+            ]
+          },
+          {
+            "itemId": "english-pre-a1-m034-practice-ex01-i08",
+            "position": 8,
+            "taskType": "vocabulary_translation",
+            "prompt": "Choose the Spanish meaning of “razor”.",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "maquinilla de afeitar",
+              "espejo",
+              "ducha"
+            ]
+          },
+          {
+            "itemId": "english-pre-a1-m034-practice-ex01-i09",
+            "position": 9,
+            "taskType": "vocabulary_translation",
+            "prompt": "Choose the Spanish meaning of “comb”.",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "peine",
+              "baño / bañera",
+              "cepillo de dientes"
+            ]
+          },
+          {
+            "itemId": "english-pre-a1-m034-practice-ex01-i10",
+            "position": 10,
+            "taskType": "vocabulary_translation",
+            "prompt": "Choose the Spanish meaning of “mirror”.",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "espejo",
+              "ducha",
+              "pasta de dientes"
+            ]
+          },
+          {
+            "itemId": "english-pre-a1-m034-practice-ex01-i11",
+            "position": 11,
+            "taskType": "english_vocabulary",
+            "prompt": "Which English word means “baño / bañera”?",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "bath",
+              "toothbrush",
+              "shampoo"
+            ]
+          },
+          {
+            "itemId": "english-pre-a1-m034-practice-ex01-i12",
+            "position": 12,
+            "taskType": "english_vocabulary",
+            "prompt": "Which English word means “ducha”?",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "shower",
+              "toothpaste",
+              "hands"
+            ]
+          },
+          {
+            "itemId": "english-pre-a1-m034-practice-ex01-i13",
+            "position": 13,
+            "taskType": "english_vocabulary",
+            "prompt": "Which English word means “cepillo de dientes”?",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "toothbrush",
+              "shampoo",
+              "flannel"
+            ]
+          },
+          {
+            "itemId": "english-pre-a1-m034-practice-ex01-i14",
+            "position": 14,
+            "taskType": "english_vocabulary",
+            "prompt": "Which English word means “pasta de dientes”?",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "toothpaste",
+              "hands",
+              "razor"
+            ]
+          },
+          {
+            "itemId": "english-pre-a1-m034-practice-ex01-i15",
+            "position": 15,
+            "taskType": "english_vocabulary",
+            "prompt": "Which English word means “champú”?",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "shampoo",
+              "flannel",
+              "comb"
+            ]
+          },
+          {
+            "itemId": "english-pre-a1-m034-practice-ex01-i16",
+            "position": 16,
+            "taskType": "english_vocabulary",
+            "prompt": "Which English word means “manos”?",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "hands",
+              "razor",
+              "mirror"
+            ]
+          },
+          {
+            "itemId": "english-pre-a1-m034-practice-ex01-i17",
+            "position": 17,
+            "taskType": "english_vocabulary",
+            "prompt": "Which English word means “manopla”?",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "flannel",
+              "comb",
+              "bath"
+            ]
+          },
+          {
+            "itemId": "english-pre-a1-m034-practice-ex01-i18",
+            "position": 18,
+            "taskType": "english_vocabulary",
+            "prompt": "Which English word means “maquinilla de afeitar”?",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "razor",
+              "mirror",
+              "shower"
+            ]
+          },
+          {
+            "itemId": "english-pre-a1-m034-practice-ex01-i19",
+            "position": 19,
+            "taskType": "english_vocabulary",
+            "prompt": "Which English word means “peine”?",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "comb",
+              "bath",
+              "toothbrush"
+            ]
+          },
+          {
+            "itemId": "english-pre-a1-m034-practice-ex01-i20",
+            "position": 20,
+            "taskType": "english_vocabulary",
+            "prompt": "Which English word means “espejo”?",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "mirror",
+              "shower",
+              "toothpaste"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "sectionId": "english-pre-a1-m034-grammar",
+      "sectionKey": "grammar",
+      "position": 3,
+      "exercise": {
+        "exerciseId": "english-pre-a1-m034-grammar-ex01",
+        "type": "grammar",
+        "theory": {
+          "focus": "Imperativos y secuencia sencilla de rutina",
+          "explanation": "Para dar instrucciones de higiene usamos el verbo al principio: «Brush your teeth» y «Wash your hands». Podemos ordenar varias acciones con «First» (primero) y «Then» (después).",
+          "model": "Brush your teeth. Wash your hands.",
+          "practice": "Relaciona cada objeto del baño con la instrucción correspondiente y ordena los pasos."
+        },
+        "items": [
+          {
+            "itemId": "english-pre-a1-m034-grammar-ex01-i01",
+            "position": 1,
+            "prompt": "Which object do you use with toothpaste?",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "A toothbrush",
+              "A towel",
+              "A bath"
+            ]
+          },
+          {
+            "itemId": "english-pre-a1-m034-grammar-ex01-i02",
+            "position": 2,
+            "prompt": "Complete: Wash your ___.",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "hands",
+              "toothpaste",
+              "shower"
+            ]
+          },
+          {
+            "itemId": "english-pre-a1-m034-grammar-ex01-i03",
+            "position": 3,
+            "prompt": "Choose the correct instruction.",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "Brush your teeth.",
+              "Brushes your teeth.",
+              "Brushing your teeth."
+            ]
+          },
+          {
+            "itemId": "english-pre-a1-m034-grammar-ex01-i04",
+            "position": 4,
+            "prompt": "Which word means “champú”?",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "Shampoo",
+              "Shower",
+              "Toothbrush"
+            ]
+          },
+          {
+            "itemId": "english-pre-a1-m034-grammar-ex01-i05",
+            "position": 5,
+            "prompt": "What can you take to wash your body?",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "A bath",
+              "A comb",
+              "A mirror"
+            ]
+          },
+          {
+            "itemId": "english-pre-a1-m034-grammar-ex01-i06",
+            "position": 6,
+            "prompt": "Which item do you use to wash your hair?",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "Shampoo",
+              "Toothpaste",
+              "A razor"
+            ]
+          },
+          {
+            "itemId": "english-pre-a1-m034-grammar-ex01-i07",
+            "position": 7,
+            "prompt": "What can you use to wash your face?",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "A flannel",
+              "A mirror",
+              "A comb"
+            ]
+          },
+          {
+            "itemId": "english-pre-a1-m034-grammar-ex01-i08",
+            "position": 8,
+            "prompt": "What is a razor used for?",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "Shaving",
+              "Brushing teeth",
+              "Washing hands"
+            ]
+          },
+          {
+            "itemId": "english-pre-a1-m034-grammar-ex01-i09",
+            "position": 9,
+            "prompt": "What do you use to make your hair neat?",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "A comb",
+              "A bath",
+              "Toothpaste"
+            ]
+          },
+          {
+            "itemId": "english-pre-a1-m034-grammar-ex01-i10",
+            "position": 10,
+            "prompt": "Where can you see your face?",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "In a mirror",
+              "In a toothbrush",
+              "In shampoo"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "sectionId": "english-pre-a1-m034-pronunciation",
+      "sectionKey": "pronunciation",
+      "position": 4,
+      "exercise": {
+        "exerciseId": "english-pre-a1-m034-pronunciation-ex01",
+        "type": "pronunciation_cards",
+        "items": [
+          {
+            "itemId": "english-pre-a1-m034-pronunciation-ex01-i01",
+            "position": 1,
+            "word": "bath",
+            "translation": "baño / bañera",
+            "pronunciationGuide": "baaz",
+            "audio": "tts:en-GB:bath"
+          },
+          {
+            "itemId": "english-pre-a1-m034-pronunciation-ex01-i02",
+            "position": 2,
+            "word": "shower",
+            "translation": "ducha",
+            "pronunciationGuide": "sháua",
+            "audio": "tts:en-GB:shower"
+          },
+          {
+            "itemId": "english-pre-a1-m034-pronunciation-ex01-i03",
+            "position": 3,
+            "word": "toothbrush",
+            "translation": "cepillo de dientes",
+            "pronunciationGuide": "túz-brásh",
+            "audio": "tts:en-GB:toothbrush"
+          },
+          {
+            "itemId": "english-pre-a1-m034-pronunciation-ex01-i04",
+            "position": 4,
+            "word": "toothpaste",
+            "translation": "pasta de dientes",
+            "pronunciationGuide": "túz-péist",
+            "audio": "tts:en-GB:toothpaste"
+          },
+          {
+            "itemId": "english-pre-a1-m034-pronunciation-ex01-i05",
+            "position": 5,
+            "word": "shampoo",
+            "translation": "champú",
+            "pronunciationGuide": "sham-púu",
+            "audio": "tts:en-GB:shampoo"
+          },
+          {
+            "itemId": "english-pre-a1-m034-pronunciation-ex01-i06",
+            "position": 6,
+            "word": "hands",
+            "translation": "manos",
+            "pronunciationGuide": "jandz",
+            "audio": "tts:en-GB:hands"
+          },
+          {
+            "itemId": "english-pre-a1-m034-pronunciation-ex01-i07",
+            "position": 7,
+            "word": "flannel",
+            "translation": "manopla",
+            "pronunciationGuide": "Escucha el audio británico y repite.",
+            "audio": "tts:en-GB:flannel"
+          },
+          {
+            "itemId": "english-pre-a1-m034-pronunciation-ex01-i08",
+            "position": 8,
+            "word": "razor",
+            "translation": "maquinilla de afeitar",
+            "pronunciationGuide": "Escucha el audio británico y repite.",
+            "audio": "tts:en-GB:razor"
+          },
+          {
+            "itemId": "english-pre-a1-m034-pronunciation-ex01-i09",
+            "position": 9,
+            "word": "comb",
+            "translation": "peine",
+            "pronunciationGuide": "Escucha el audio británico y repite.",
+            "audio": "tts:en-GB:comb"
+          },
+          {
+            "itemId": "english-pre-a1-m034-pronunciation-ex01-i10",
+            "position": 10,
+            "word": "mirror",
+            "translation": "espejo",
+            "pronunciationGuide": "Escucha el audio británico y repite.",
+            "audio": "tts:en-GB:mirror"
+          }
+        ]
+      }
+    },
+    {
+      "sectionId": "english-pre-a1-m034-reading",
+      "sectionKey": "reading",
+      "position": 5,
+      "exercise": {
+        "exerciseId": "english-pre-a1-m034-reading-ex01",
+        "type": "reading_comprehension",
+        "content": {
+          "passageId": "english-pre-a1-m034-reading-passage-01",
+          "passage": "It is bath time for Ella. First, she takes a shower. She uses shampoo to wash her hair. Then she gets her toothbrush and toothpaste. She brushes her teeth. After that, she washes her hands. Her bath time is finished and she is ready for bed."
+        },
+        "items": [
+          {
+            "itemId": "english-pre-a1-m034-reading-ex01-i01",
+            "position": 1,
+            "prompt": "Who is getting ready for bed?",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "Ella",
+              "Ben",
+              "Mia"
+            ]
+          },
+          {
+            "itemId": "english-pre-a1-m034-reading-ex01-i02",
+            "position": 2,
+            "prompt": "What time is it for Ella?",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "Bath time",
+              "Lunch time",
+              "Play time"
+            ]
+          },
+          {
+            "itemId": "english-pre-a1-m034-reading-ex01-i03",
+            "position": 3,
+            "prompt": "What does Ella do first?",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "She takes a shower",
+              "She brushes her teeth",
+              "She washes her hands"
+            ]
+          },
+          {
+            "itemId": "english-pre-a1-m034-reading-ex01-i04",
+            "position": 4,
+            "prompt": "What does she use to wash her hair?",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "Shampoo",
+              "Toothpaste",
+              "Soap for dishes"
+            ]
+          },
+          {
+            "itemId": "english-pre-a1-m034-reading-ex01-i05",
+            "position": 5,
+            "prompt": "What does Ella get after her shower?",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "Her toothbrush and toothpaste",
+              "Her shoes and coat",
+              "Her book and bag"
+            ]
+          },
+          {
+            "itemId": "english-pre-a1-m034-reading-ex01-i06",
+            "position": 6,
+            "prompt": "What does she brush?",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "Her teeth",
+              "Her hair",
+              "Her hands"
+            ]
+          },
+          {
+            "itemId": "english-pre-a1-m034-reading-ex01-i07",
+            "position": 7,
+            "prompt": "What does Ella wash after brushing her teeth?",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "Her hands",
+              "Her shoes",
+              "Her face only"
+            ]
+          },
+          {
+            "itemId": "english-pre-a1-m034-reading-ex01-i08",
+            "position": 8,
+            "prompt": "When is her bath time finished?",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "After she washes her hands",
+              "Before the shower",
+              "Before brushing her teeth"
+            ]
+          },
+          {
+            "itemId": "english-pre-a1-m034-reading-ex01-i09",
+            "position": 9,
+            "prompt": "What is Ella ready for?",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "Bed",
+              "School",
+              "The café"
+            ]
+          },
+          {
+            "itemId": "english-pre-a1-m034-reading-ex01-i10",
+            "position": 10,
+            "prompt": "Which item is used for cleaning teeth?",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "Toothpaste",
+              "Shampoo",
+              "A bath"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "sectionId": "english-pre-a1-m034-writing",
+      "sectionKey": "writing",
+      "position": 6,
+      "exercise": {
+        "exerciseId": "english-pre-a1-m034-writing-ex01",
+        "type": "dictation",
+        "items": [
+          {
+            "itemId": "english-pre-a1-m034-writing-ex01-i01",
+            "position": 1,
+            "audio": "tts:en-GB:bath",
+            "evaluation": {
+              "type": "normalised_text"
+            }
+          },
+          {
+            "itemId": "english-pre-a1-m034-writing-ex01-i02",
+            "position": 2,
+            "audio": "tts:en-GB:shower",
+            "evaluation": {
+              "type": "normalised_text"
+            }
+          },
+          {
+            "itemId": "english-pre-a1-m034-writing-ex01-i03",
+            "position": 3,
+            "audio": "tts:en-GB:toothbrush",
+            "evaluation": {
+              "type": "normalised_text"
+            }
+          },
+          {
+            "itemId": "english-pre-a1-m034-writing-ex01-i04",
+            "position": 4,
+            "audio": "tts:en-GB:toothpaste",
+            "evaluation": {
+              "type": "normalised_text"
+            }
+          },
+          {
+            "itemId": "english-pre-a1-m034-writing-ex01-i05",
+            "position": 5,
+            "audio": "tts:en-GB:shampoo",
+            "evaluation": {
+              "type": "normalised_text"
+            }
+          },
+          {
+            "itemId": "english-pre-a1-m034-writing-ex01-i06",
+            "position": 6,
+            "audio": "tts:en-GB:Brush your teeth.",
+            "evaluation": {
+              "type": "normalised_text"
+            }
+          },
+          {
+            "itemId": "english-pre-a1-m034-writing-ex01-i07",
+            "position": 7,
+            "audio": "tts:en-GB:Wash your hands.",
+            "evaluation": {
+              "type": "normalised_text"
+            }
+          },
+          {
+            "itemId": "english-pre-a1-m034-writing-ex01-i08",
+            "position": 8,
+            "audio": "tts:en-GB:flannel",
+            "evaluation": {
+              "type": "normalised_text"
+            }
+          },
+          {
+            "itemId": "english-pre-a1-m034-writing-ex01-i09",
+            "position": 9,
+            "audio": "tts:en-GB:razor",
+            "evaluation": {
+              "type": "normalised_text"
+            }
+          },
+          {
+            "itemId": "english-pre-a1-m034-writing-ex01-i10",
+            "position": 10,
+            "audio": "tts:en-GB:comb",
+            "evaluation": {
+              "type": "normalised_text"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "sectionId": "english-pre-a1-m034-speaking",
+      "sectionKey": "speaking",
+      "position": 7,
+      "exercise": {
+        "exerciseId": "english-pre-a1-m034-speaking-ex01",
+        "type": "speaking_prompts",
+        "items": [
+          {
+            "itemId": "english-pre-a1-m034-speaking-ex01-i01",
+            "position": 1,
+            "prompt": "Say a short sentence about “bath”. You can use the model.",
+            "modelAnswer": "I take a bath.",
+            "evaluation": {
+              "type": "transcription_feedback",
+              "transcriptionSeparateFromPronunciation": true
+            }
+          },
+          {
+            "itemId": "english-pre-a1-m034-speaking-ex01-i02",
+            "position": 2,
+            "prompt": "Say a short sentence about “shower”. You can use the model.",
+            "modelAnswer": "I take a shower.",
+            "evaluation": {
+              "type": "transcription_feedback",
+              "transcriptionSeparateFromPronunciation": true
+            }
+          },
+          {
+            "itemId": "english-pre-a1-m034-speaking-ex01-i03",
+            "position": 3,
+            "prompt": "Say a short sentence about “toothbrush”. You can use the model.",
+            "modelAnswer": "I use a toothbrush.",
+            "evaluation": {
+              "type": "transcription_feedback",
+              "transcriptionSeparateFromPronunciation": true
+            }
+          },
+          {
+            "itemId": "english-pre-a1-m034-speaking-ex01-i04",
+            "position": 4,
+            "prompt": "Say a short sentence about “toothpaste”. You can use the model.",
+            "modelAnswer": "I use toothpaste.",
+            "evaluation": {
+              "type": "transcription_feedback",
+              "transcriptionSeparateFromPronunciation": true
+            }
+          },
+          {
+            "itemId": "english-pre-a1-m034-speaking-ex01-i05",
+            "position": 5,
+            "prompt": "Say a short sentence about “shampoo”. You can use the model.",
+            "modelAnswer": "I wash my hair with shampoo.",
+            "evaluation": {
+              "type": "transcription_feedback",
+              "transcriptionSeparateFromPronunciation": true
+            }
+          },
+          {
+            "itemId": "english-pre-a1-m034-speaking-ex01-i06",
+            "position": 6,
+            "prompt": "Say a short sentence about “hands”. You can use the model.",
+            "modelAnswer": "I wash my hands.",
+            "evaluation": {
+              "type": "transcription_feedback",
+              "transcriptionSeparateFromPronunciation": true
+            }
+          },
+          {
+            "itemId": "english-pre-a1-m034-speaking-ex01-i07",
+            "position": 7,
+            "prompt": "Say a short sentence about “flannel”. You can use the model.",
+            "modelAnswer": "I use a flannel.",
+            "evaluation": {
+              "type": "transcription_feedback",
+              "transcriptionSeparateFromPronunciation": true
+            }
+          },
+          {
+            "itemId": "english-pre-a1-m034-speaking-ex01-i08",
+            "position": 8,
+            "prompt": "Say a short sentence about “razor”. You can use the model.",
+            "modelAnswer": "A razor is for shaving.",
+            "evaluation": {
+              "type": "transcription_feedback",
+              "transcriptionSeparateFromPronunciation": true
+            }
+          },
+          {
+            "itemId": "english-pre-a1-m034-speaking-ex01-i09",
+            "position": 9,
+            "prompt": "Say a short sentence about “comb”. You can use the model.",
+            "modelAnswer": "I comb my hair.",
+            "evaluation": {
+              "type": "transcription_feedback",
+              "transcriptionSeparateFromPronunciation": true
+            }
+          },
+          {
+            "itemId": "english-pre-a1-m034-speaking-ex01-i10",
+            "position": 10,
+            "prompt": "Say a short sentence about “mirror”. You can use the model.",
+            "modelAnswer": "I look in the mirror.",
+            "evaluation": {
+              "type": "transcription_feedback",
+              "transcriptionSeparateFromPronunciation": true
+            }
+          }
+        ]
+      }
+    },
+    {
+      "sectionId": "english-pre-a1-m034-listening",
+      "sectionKey": "listening",
+      "position": 8,
+      "exercise": {
+        "exerciseId": "english-pre-a1-m034-listening-ex01",
+        "type": "listening_gap_fill",
+        "content": {
+          "audio": "tts:en-GB:I have a bath and a shower. I use a toothbrush and toothpaste to clean my teeth. I use shampoo to wash my hair. I wash my hands. I use a flannel to wash my face. A razor is for shaving. I use a comb for my hair. I look in the mirror.",
+          "audioLocale": "en-GB",
+          "transcriptTemplate": "I have a [[gap-01]] and a [[gap-02]]. I use a [[gap-03]] and [[gap-04]] to clean my teeth. I use [[gap-05]] to wash my hair. I wash my [[gap-06]]. I use a [[gap-07]] to wash my face. A [[gap-08]] is for shaving. I use a [[gap-09]] for my hair. I look in the [[gap-10]].",
+          "wordBank": [
+            {
+              "wordId": "english-pre-a1-m034-listening-word-01",
+              "word": "bath"
+            },
+            {
+              "wordId": "english-pre-a1-m034-listening-word-02",
+              "word": "shower"
+            },
+            {
+              "wordId": "english-pre-a1-m034-listening-word-03",
+              "word": "toothbrush"
+            },
+            {
+              "wordId": "english-pre-a1-m034-listening-word-04",
+              "word": "toothpaste"
+            },
+            {
+              "wordId": "english-pre-a1-m034-listening-word-05",
+              "word": "shampoo"
+            },
+            {
+              "wordId": "english-pre-a1-m034-listening-word-06",
+              "word": "hands"
+            },
+            {
+              "wordId": "english-pre-a1-m034-listening-word-07",
+              "word": "flannel"
+            },
+            {
+              "wordId": "english-pre-a1-m034-listening-word-08",
+              "word": "razor"
+            },
+            {
+              "wordId": "english-pre-a1-m034-listening-word-09",
+              "word": "comb"
+            },
+            {
+              "wordId": "english-pre-a1-m034-listening-word-10",
+              "word": "mirror"
+            }
+          ],
+          "interaction": "select_place_move_replace"
+        },
+        "items": [
+          {
+            "itemId": "english-pre-a1-m034-listening-ex01-i01",
+            "position": 1,
+            "gapToken": "[[gap-01]]"
+          },
+          {
+            "itemId": "english-pre-a1-m034-listening-ex01-i02",
+            "position": 2,
+            "gapToken": "[[gap-02]]"
+          },
+          {
+            "itemId": "english-pre-a1-m034-listening-ex01-i03",
+            "position": 3,
+            "gapToken": "[[gap-03]]"
+          },
+          {
+            "itemId": "english-pre-a1-m034-listening-ex01-i04",
+            "position": 4,
+            "gapToken": "[[gap-04]]"
+          },
+          {
+            "itemId": "english-pre-a1-m034-listening-ex01-i05",
+            "position": 5,
+            "gapToken": "[[gap-05]]"
+          },
+          {
+            "itemId": "english-pre-a1-m034-listening-ex01-i06",
+            "position": 6,
+            "gapToken": "[[gap-06]]"
+          },
+          {
+            "itemId": "english-pre-a1-m034-listening-ex01-i07",
+            "position": 7,
+            "gapToken": "[[gap-07]]"
+          },
+          {
+            "itemId": "english-pre-a1-m034-listening-ex01-i08",
+            "position": 8,
+            "gapToken": "[[gap-08]]"
+          },
+          {
+            "itemId": "english-pre-a1-m034-listening-ex01-i09",
+            "position": 9,
+            "gapToken": "[[gap-09]]"
+          },
+          {
+            "itemId": "english-pre-a1-m034-listening-ex01-i10",
+            "position": 10,
+            "gapToken": "[[gap-10]]"
+          }
+        ]
+      }
+    }
+  ]
+}

@@ -1,0 +1,1105 @@
+{
+  "schemaVersion": "1.2.0",
+  "contentVersion": 1,
+  "course": {
+    "courseId": "english-pre-a1",
+    "level": "PRE-A1",
+    "language": "en-GB"
+  },
+  "unit": {
+    "unitId": "english-pre-a1-unit-35",
+    "courseId": "english-pre-a1",
+    "position": 35,
+    "title": "My Daily Routine"
+  },
+  "mission": {
+    "missionId": "english-pre-a1-m035",
+    "unitId": "english-pre-a1-unit-35",
+    "position": 35,
+    "title": "My Daily Routine"
+  },
+  "sections": [
+    {
+      "sectionId": "english-pre-a1-m035-explore",
+      "sectionKey": "explore",
+      "position": 1,
+      "exercise": {
+        "exerciseId": "english-pre-a1-m035-explore-ex01",
+        "type": "vocabulary_pairs",
+        "theory": {
+          "title": "My Daily Routine: vocabulary",
+          "explanation": "Learn ten useful words for talking about your daily routine.",
+          "patterns": [
+            {
+              "label": "Daily routine",
+              "pattern": "I + action · I wake up / get up / eat / go.",
+              "examples": [
+                "I wake up in the morning.",
+                "I eat breakfast.",
+                "I go to school."
+              ]
+            }
+          ],
+          "tip": "Escucha, repite y usa cada palabra en una frase completa."
+        },
+        "items": [
+          {
+            "itemId": "english-pre-a1-m035-explore-ex01-i01",
+            "position": 1,
+            "english": "wake up",
+            "spanish": "despertarse",
+            "audio": "tts:en-GB:wake up"
+          },
+          {
+            "itemId": "english-pre-a1-m035-explore-ex01-i02",
+            "position": 2,
+            "english": "get up",
+            "spanish": "levantarse",
+            "audio": "tts:en-GB:get up"
+          },
+          {
+            "itemId": "english-pre-a1-m035-explore-ex01-i03",
+            "position": 3,
+            "english": "eat",
+            "spanish": "comer",
+            "audio": "tts:en-GB:eat"
+          },
+          {
+            "itemId": "english-pre-a1-m035-explore-ex01-i04",
+            "position": 4,
+            "english": "go",
+            "spanish": "ir",
+            "audio": "tts:en-GB:go"
+          },
+          {
+            "itemId": "english-pre-a1-m035-explore-ex01-i05",
+            "position": 5,
+            "english": "play",
+            "spanish": "jugar",
+            "audio": "tts:en-GB:play"
+          },
+          {
+            "itemId": "english-pre-a1-m035-explore-ex01-i06",
+            "position": 6,
+            "english": "sleep",
+            "spanish": "dormir",
+            "audio": "tts:en-GB:sleep"
+          },
+          {
+            "itemId": "english-pre-a1-m035-explore-ex01-i07",
+            "position": 7,
+            "english": "shower",
+            "spanish": "ducha",
+            "audio": "tts:en-GB:shower"
+          },
+          {
+            "itemId": "english-pre-a1-m035-explore-ex01-i08",
+            "position": 8,
+            "english": "brush",
+            "spanish": "cepillar",
+            "audio": "tts:en-GB:brush"
+          },
+          {
+            "itemId": "english-pre-a1-m035-explore-ex01-i09",
+            "position": 9,
+            "english": "breakfast",
+            "spanish": "desayuno",
+            "audio": "tts:en-GB:breakfast"
+          },
+          {
+            "itemId": "english-pre-a1-m035-explore-ex01-i10",
+            "position": 10,
+            "english": "lunch",
+            "spanish": "almuerzo",
+            "audio": "tts:en-GB:lunch"
+          }
+        ]
+      }
+    },
+    {
+      "sectionId": "english-pre-a1-m035-practice",
+      "sectionKey": "practice",
+      "position": 2,
+      "exercise": {
+        "exerciseId": "english-pre-a1-m035-practice-ex01",
+        "type": "mixed_practice",
+        "items": [
+          {
+            "itemId": "english-pre-a1-m035-practice-ex01-i01",
+            "position": 1,
+            "taskType": "vocabulary_translation",
+            "prompt": "Choose the Spanish meaning of “wake up”.",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "despertarse",
+              "comer",
+              "jugar"
+            ]
+          },
+          {
+            "itemId": "english-pre-a1-m035-practice-ex01-i02",
+            "position": 2,
+            "taskType": "vocabulary_translation",
+            "prompt": "Choose the Spanish meaning of “get up”.",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "levantarse",
+              "ir",
+              "dormir"
+            ]
+          },
+          {
+            "itemId": "english-pre-a1-m035-practice-ex01-i03",
+            "position": 3,
+            "taskType": "vocabulary_translation",
+            "prompt": "Choose the Spanish meaning of “eat”.",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "comer",
+              "jugar",
+              "ducha"
+            ]
+          },
+          {
+            "itemId": "english-pre-a1-m035-practice-ex01-i04",
+            "position": 4,
+            "taskType": "vocabulary_translation",
+            "prompt": "Choose the Spanish meaning of “go”.",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "ir",
+              "dormir",
+              "cepillar"
+            ]
+          },
+          {
+            "itemId": "english-pre-a1-m035-practice-ex01-i05",
+            "position": 5,
+            "taskType": "vocabulary_translation",
+            "prompt": "Choose the Spanish meaning of “play”.",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "jugar",
+              "ducha",
+              "desayuno"
+            ]
+          },
+          {
+            "itemId": "english-pre-a1-m035-practice-ex01-i06",
+            "position": 6,
+            "taskType": "vocabulary_translation",
+            "prompt": "Choose the Spanish meaning of “sleep”.",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "dormir",
+              "cepillar",
+              "almuerzo"
+            ]
+          },
+          {
+            "itemId": "english-pre-a1-m035-practice-ex01-i07",
+            "position": 7,
+            "taskType": "vocabulary_translation",
+            "prompt": "Choose the Spanish meaning of “shower”.",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "ducha",
+              "desayuno",
+              "despertarse"
+            ]
+          },
+          {
+            "itemId": "english-pre-a1-m035-practice-ex01-i08",
+            "position": 8,
+            "taskType": "vocabulary_translation",
+            "prompt": "Choose the Spanish meaning of “brush”.",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "cepillar",
+              "almuerzo",
+              "levantarse"
+            ]
+          },
+          {
+            "itemId": "english-pre-a1-m035-practice-ex01-i09",
+            "position": 9,
+            "taskType": "vocabulary_translation",
+            "prompt": "Choose the Spanish meaning of “breakfast”.",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "desayuno",
+              "despertarse",
+              "comer"
+            ]
+          },
+          {
+            "itemId": "english-pre-a1-m035-practice-ex01-i10",
+            "position": 10,
+            "taskType": "vocabulary_translation",
+            "prompt": "Choose the Spanish meaning of “lunch”.",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "almuerzo",
+              "levantarse",
+              "ir"
+            ]
+          },
+          {
+            "itemId": "english-pre-a1-m035-practice-ex01-i11",
+            "position": 11,
+            "taskType": "english_vocabulary",
+            "prompt": "Which English word means “despertarse”?",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "wake up",
+              "eat",
+              "play"
+            ]
+          },
+          {
+            "itemId": "english-pre-a1-m035-practice-ex01-i12",
+            "position": 12,
+            "taskType": "english_vocabulary",
+            "prompt": "Which English word means “levantarse”?",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "get up",
+              "go",
+              "sleep"
+            ]
+          },
+          {
+            "itemId": "english-pre-a1-m035-practice-ex01-i13",
+            "position": 13,
+            "taskType": "english_vocabulary",
+            "prompt": "Which English word means “comer”?",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "eat",
+              "play",
+              "shower"
+            ]
+          },
+          {
+            "itemId": "english-pre-a1-m035-practice-ex01-i14",
+            "position": 14,
+            "taskType": "english_vocabulary",
+            "prompt": "Which English word means “ir”?",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "go",
+              "sleep",
+              "brush"
+            ]
+          },
+          {
+            "itemId": "english-pre-a1-m035-practice-ex01-i15",
+            "position": 15,
+            "taskType": "english_vocabulary",
+            "prompt": "Which English word means “jugar”?",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "play",
+              "shower",
+              "breakfast"
+            ]
+          },
+          {
+            "itemId": "english-pre-a1-m035-practice-ex01-i16",
+            "position": 16,
+            "taskType": "english_vocabulary",
+            "prompt": "Which English word means “dormir”?",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "sleep",
+              "brush",
+              "lunch"
+            ]
+          },
+          {
+            "itemId": "english-pre-a1-m035-practice-ex01-i17",
+            "position": 17,
+            "taskType": "english_vocabulary",
+            "prompt": "Which English word means “ducha”?",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "shower",
+              "breakfast",
+              "wake up"
+            ]
+          },
+          {
+            "itemId": "english-pre-a1-m035-practice-ex01-i18",
+            "position": 18,
+            "taskType": "english_vocabulary",
+            "prompt": "Which English word means “cepillar”?",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "brush",
+              "lunch",
+              "get up"
+            ]
+          },
+          {
+            "itemId": "english-pre-a1-m035-practice-ex01-i19",
+            "position": 19,
+            "taskType": "english_vocabulary",
+            "prompt": "Which English word means “desayuno”?",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "breakfast",
+              "wake up",
+              "eat"
+            ]
+          },
+          {
+            "itemId": "english-pre-a1-m035-practice-ex01-i20",
+            "position": 20,
+            "taskType": "english_vocabulary",
+            "prompt": "Which English word means “almuerzo”?",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "lunch",
+              "get up",
+              "go"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "sectionId": "english-pre-a1-m035-grammar",
+      "sectionKey": "grammar",
+      "position": 3,
+      "exercise": {
+        "exerciseId": "english-pre-a1-m035-grammar-ex01",
+        "type": "grammar",
+        "theory": {
+          "focus": "Presente simple en bloques de acción: I…",
+          "explanation": "Para hablar de la rutina usamos «I» + un verbo en presente. Por ejemplo: «I wake up», «I eat» y «I sleep». En esta misión aprendemos estas expresiones como bloques completos, sin añadir terminaciones.",
+          "model": "I wake up. I eat. I sleep.",
+          "practice": "Ordena tres acciones y completa cada frase con el verbo correcto."
+        },
+        "items": [
+          {
+            "itemId": "english-pre-a1-m035-grammar-ex01-i01",
+            "position": 1,
+            "prompt": "Complete: I ___ up in the morning.",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "wake",
+              "wakes",
+              "waking"
+            ]
+          },
+          {
+            "itemId": "english-pre-a1-m035-grammar-ex01-i02",
+            "position": 2,
+            "prompt": "Choose the correct sentence.",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "I eat breakfast.",
+              "I eats breakfast.",
+              "I eating breakfast."
+            ]
+          },
+          {
+            "itemId": "english-pre-a1-m035-grammar-ex01-i03",
+            "position": 3,
+            "prompt": "Which phrase means “dormir”?",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "sleep",
+              "play",
+              "go"
+            ]
+          },
+          {
+            "itemId": "english-pre-a1-m035-grammar-ex01-i04",
+            "position": 4,
+            "prompt": "Complete: I ___ to school.",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "go",
+              "goes",
+              "going"
+            ]
+          },
+          {
+            "itemId": "english-pre-a1-m035-grammar-ex01-i05",
+            "position": 5,
+            "prompt": "Choose the correct sentence about the afternoon.",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "I play with my friends.",
+              "I plays with my friends.",
+              "I playing with my friends."
+            ]
+          },
+          {
+            "itemId": "english-pre-a1-m035-grammar-ex01-i06",
+            "position": 6,
+            "prompt": "Complete: I ___ at night.",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "sleep",
+              "sleeps",
+              "sleeping"
+            ]
+          },
+          {
+            "itemId": "english-pre-a1-m035-grammar-ex01-i07",
+            "position": 7,
+            "prompt": "Choose the correct phrase.",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "take a shower",
+              "take shower a",
+              "takes a shower I"
+            ]
+          },
+          {
+            "itemId": "english-pre-a1-m035-grammar-ex01-i08",
+            "position": 8,
+            "prompt": "Complete: I ___ my teeth.",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "brush",
+              "brushes",
+              "brushing"
+            ]
+          },
+          {
+            "itemId": "english-pre-a1-m035-grammar-ex01-i09",
+            "position": 9,
+            "prompt": "Which meal do you eat in the morning?",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "breakfast",
+              "lunch",
+              "dinner"
+            ]
+          },
+          {
+            "itemId": "english-pre-a1-m035-grammar-ex01-i10",
+            "position": 10,
+            "prompt": "Which meal do you often eat in the middle of the day?",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "lunch",
+              "breakfast",
+              "supper"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "sectionId": "english-pre-a1-m035-pronunciation",
+      "sectionKey": "pronunciation",
+      "position": 4,
+      "exercise": {
+        "exerciseId": "english-pre-a1-m035-pronunciation-ex01",
+        "type": "pronunciation_cards",
+        "items": [
+          {
+            "itemId": "english-pre-a1-m035-pronunciation-ex01-i01",
+            "position": 1,
+            "word": "wake up",
+            "translation": "despertarse",
+            "pronunciationGuide": "uéik ap",
+            "audio": "tts:en-GB:wake up"
+          },
+          {
+            "itemId": "english-pre-a1-m035-pronunciation-ex01-i02",
+            "position": 2,
+            "word": "get up",
+            "translation": "levantarse",
+            "pronunciationGuide": "guét ap",
+            "audio": "tts:en-GB:get up"
+          },
+          {
+            "itemId": "english-pre-a1-m035-pronunciation-ex01-i03",
+            "position": 3,
+            "word": "eat",
+            "translation": "comer",
+            "pronunciationGuide": "íit",
+            "audio": "tts:en-GB:eat"
+          },
+          {
+            "itemId": "english-pre-a1-m035-pronunciation-ex01-i04",
+            "position": 4,
+            "word": "go",
+            "translation": "ir",
+            "pronunciationGuide": "góu",
+            "audio": "tts:en-GB:go"
+          },
+          {
+            "itemId": "english-pre-a1-m035-pronunciation-ex01-i05",
+            "position": 5,
+            "word": "play",
+            "translation": "jugar",
+            "pronunciationGuide": "pléi",
+            "audio": "tts:en-GB:play"
+          },
+          {
+            "itemId": "english-pre-a1-m035-pronunciation-ex01-i06",
+            "position": 6,
+            "word": "sleep",
+            "translation": "dormir",
+            "pronunciationGuide": "slíip",
+            "audio": "tts:en-GB:sleep"
+          },
+          {
+            "itemId": "english-pre-a1-m035-pronunciation-ex01-i07",
+            "position": 7,
+            "word": "shower",
+            "translation": "ducha",
+            "pronunciationGuide": "Escucha el audio británico y repite.",
+            "audio": "tts:en-GB:shower"
+          },
+          {
+            "itemId": "english-pre-a1-m035-pronunciation-ex01-i08",
+            "position": 8,
+            "word": "brush",
+            "translation": "cepillar",
+            "pronunciationGuide": "Escucha el audio británico y repite.",
+            "audio": "tts:en-GB:brush"
+          },
+          {
+            "itemId": "english-pre-a1-m035-pronunciation-ex01-i09",
+            "position": 9,
+            "word": "breakfast",
+            "translation": "desayuno",
+            "pronunciationGuide": "Escucha el audio británico y repite.",
+            "audio": "tts:en-GB:breakfast"
+          },
+          {
+            "itemId": "english-pre-a1-m035-pronunciation-ex01-i10",
+            "position": 10,
+            "word": "lunch",
+            "translation": "almuerzo",
+            "pronunciationGuide": "Escucha el audio británico y repite.",
+            "audio": "tts:en-GB:lunch"
+          }
+        ]
+      }
+    },
+    {
+      "sectionId": "english-pre-a1-m035-reading",
+      "sectionKey": "reading",
+      "position": 5,
+      "exercise": {
+        "exerciseId": "english-pre-a1-m035-reading-ex01",
+        "type": "reading_comprehension",
+        "content": {
+          "passageId": "english-pre-a1-m035-reading-passage-01",
+          "passage": "Tom has a busy day. He wakes up in the morning. He gets up and eats breakfast. Then he goes to school. In the afternoon, he plays with his friends. At night, Tom sleeps. He likes his daily routine because every day has time to learn and play."
+        },
+        "items": [
+          {
+            "itemId": "english-pre-a1-m035-reading-ex01-i01",
+            "position": 1,
+            "prompt": "Who has a busy day?",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "Tom",
+              "Mia",
+              "Ben"
+            ]
+          },
+          {
+            "itemId": "english-pre-a1-m035-reading-ex01-i02",
+            "position": 2,
+            "prompt": "When does Tom wake up?",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "In the morning",
+              "At night",
+              "In the afternoon"
+            ]
+          },
+          {
+            "itemId": "english-pre-a1-m035-reading-ex01-i03",
+            "position": 3,
+            "prompt": "What does Tom do after he wakes up?",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "He gets up",
+              "He goes to sleep",
+              "He plays football"
+            ]
+          },
+          {
+            "itemId": "english-pre-a1-m035-reading-ex01-i04",
+            "position": 4,
+            "prompt": "What does Tom eat?",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "Breakfast",
+              "Dinner",
+              "A birthday cake"
+            ]
+          },
+          {
+            "itemId": "english-pre-a1-m035-reading-ex01-i05",
+            "position": 5,
+            "prompt": "Where does Tom go after breakfast?",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "To school",
+              "To the zoo",
+              "To the beach"
+            ]
+          },
+          {
+            "itemId": "english-pre-a1-m035-reading-ex01-i06",
+            "position": 6,
+            "prompt": "When does Tom play with his friends?",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "In the afternoon",
+              "In the morning",
+              "At night"
+            ]
+          },
+          {
+            "itemId": "english-pre-a1-m035-reading-ex01-i07",
+            "position": 7,
+            "prompt": "What does Tom do at night?",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "He sleeps",
+              "He goes to school",
+              "He plays"
+            ]
+          },
+          {
+            "itemId": "english-pre-a1-m035-reading-ex01-i08",
+            "position": 8,
+            "prompt": "Who does Tom play with?",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "His friends",
+              "His teacher",
+              "His grandparents"
+            ]
+          },
+          {
+            "itemId": "english-pre-a1-m035-reading-ex01-i09",
+            "position": 9,
+            "prompt": "What does Tom like?",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "His daily routine",
+              "Long journeys",
+              "Cleaning the kitchen"
+            ]
+          },
+          {
+            "itemId": "english-pre-a1-m035-reading-ex01-i10",
+            "position": 10,
+            "prompt": "Which action comes first?",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "Wake up",
+              "Play",
+              "Sleep"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "sectionId": "english-pre-a1-m035-writing",
+      "sectionKey": "writing",
+      "position": 6,
+      "exercise": {
+        "exerciseId": "english-pre-a1-m035-writing-ex01",
+        "type": "dictation",
+        "items": [
+          {
+            "itemId": "english-pre-a1-m035-writing-ex01-i01",
+            "position": 1,
+            "audio": "tts:en-GB:wake up",
+            "evaluation": {
+              "type": "normalised_text"
+            }
+          },
+          {
+            "itemId": "english-pre-a1-m035-writing-ex01-i02",
+            "position": 2,
+            "audio": "tts:en-GB:get up",
+            "evaluation": {
+              "type": "normalised_text"
+            }
+          },
+          {
+            "itemId": "english-pre-a1-m035-writing-ex01-i03",
+            "position": 3,
+            "audio": "tts:en-GB:eat",
+            "evaluation": {
+              "type": "normalised_text"
+            }
+          },
+          {
+            "itemId": "english-pre-a1-m035-writing-ex01-i04",
+            "position": 4,
+            "audio": "tts:en-GB:go",
+            "evaluation": {
+              "type": "normalised_text"
+            }
+          },
+          {
+            "itemId": "english-pre-a1-m035-writing-ex01-i05",
+            "position": 5,
+            "audio": "tts:en-GB:play",
+            "evaluation": {
+              "type": "normalised_text"
+            }
+          },
+          {
+            "itemId": "english-pre-a1-m035-writing-ex01-i06",
+            "position": 6,
+            "audio": "tts:en-GB:I wake up.",
+            "evaluation": {
+              "type": "normalised_text"
+            }
+          },
+          {
+            "itemId": "english-pre-a1-m035-writing-ex01-i07",
+            "position": 7,
+            "audio": "tts:en-GB:I eat.",
+            "evaluation": {
+              "type": "normalised_text"
+            }
+          },
+          {
+            "itemId": "english-pre-a1-m035-writing-ex01-i08",
+            "position": 8,
+            "audio": "tts:en-GB:I sleep.",
+            "evaluation": {
+              "type": "normalised_text"
+            }
+          },
+          {
+            "itemId": "english-pre-a1-m035-writing-ex01-i09",
+            "position": 9,
+            "audio": "tts:en-GB:shower",
+            "evaluation": {
+              "type": "normalised_text"
+            }
+          },
+          {
+            "itemId": "english-pre-a1-m035-writing-ex01-i10",
+            "position": 10,
+            "audio": "tts:en-GB:brush",
+            "evaluation": {
+              "type": "normalised_text"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "sectionId": "english-pre-a1-m035-speaking",
+      "sectionKey": "speaking",
+      "position": 7,
+      "exercise": {
+        "exerciseId": "english-pre-a1-m035-speaking-ex01",
+        "type": "speaking_prompts",
+        "items": [
+          {
+            "itemId": "english-pre-a1-m035-speaking-ex01-i01",
+            "position": 1,
+            "prompt": "Say a short sentence about “wake up”. You can use the model.",
+            "modelAnswer": "I wake up at seven.",
+            "evaluation": {
+              "type": "transcription_feedback",
+              "transcriptionSeparateFromPronunciation": true
+            }
+          },
+          {
+            "itemId": "english-pre-a1-m035-speaking-ex01-i02",
+            "position": 2,
+            "prompt": "Say a short sentence about “get up”. You can use the model.",
+            "modelAnswer": "I get up at seven.",
+            "evaluation": {
+              "type": "transcription_feedback",
+              "transcriptionSeparateFromPronunciation": true
+            }
+          },
+          {
+            "itemId": "english-pre-a1-m035-speaking-ex01-i03",
+            "position": 3,
+            "prompt": "Say a short sentence about “eat”. You can use the model.",
+            "modelAnswer": "I eat breakfast.",
+            "evaluation": {
+              "type": "transcription_feedback",
+              "transcriptionSeparateFromPronunciation": true
+            }
+          },
+          {
+            "itemId": "english-pre-a1-m035-speaking-ex01-i04",
+            "position": 4,
+            "prompt": "Say a short sentence about “go”. You can use the model.",
+            "modelAnswer": "I go to school.",
+            "evaluation": {
+              "type": "transcription_feedback",
+              "transcriptionSeparateFromPronunciation": true
+            }
+          },
+          {
+            "itemId": "english-pre-a1-m035-speaking-ex01-i05",
+            "position": 5,
+            "prompt": "Say a short sentence about “play”. You can use the model.",
+            "modelAnswer": "I play after school.",
+            "evaluation": {
+              "type": "transcription_feedback",
+              "transcriptionSeparateFromPronunciation": true
+            }
+          },
+          {
+            "itemId": "english-pre-a1-m035-speaking-ex01-i06",
+            "position": 6,
+            "prompt": "Say a short sentence about “sleep”. You can use the model.",
+            "modelAnswer": "I sleep at night.",
+            "evaluation": {
+              "type": "transcription_feedback",
+              "transcriptionSeparateFromPronunciation": true
+            }
+          },
+          {
+            "itemId": "english-pre-a1-m035-speaking-ex01-i07",
+            "position": 7,
+            "prompt": "Say a short sentence about “shower”. You can use the model.",
+            "modelAnswer": "I take a shower.",
+            "evaluation": {
+              "type": "transcription_feedback",
+              "transcriptionSeparateFromPronunciation": true
+            }
+          },
+          {
+            "itemId": "english-pre-a1-m035-speaking-ex01-i08",
+            "position": 8,
+            "prompt": "Say a short sentence about “brush”. You can use the model.",
+            "modelAnswer": "I brush my teeth.",
+            "evaluation": {
+              "type": "transcription_feedback",
+              "transcriptionSeparateFromPronunciation": true
+            }
+          },
+          {
+            "itemId": "english-pre-a1-m035-speaking-ex01-i09",
+            "position": 9,
+            "prompt": "Say a short sentence about “breakfast”. You can use the model.",
+            "modelAnswer": "I eat breakfast in the morning.",
+            "evaluation": {
+              "type": "transcription_feedback",
+              "transcriptionSeparateFromPronunciation": true
+            }
+          },
+          {
+            "itemId": "english-pre-a1-m035-speaking-ex01-i10",
+            "position": 10,
+            "prompt": "Say a short sentence about “lunch”. You can use the model.",
+            "modelAnswer": "I eat lunch at school.",
+            "evaluation": {
+              "type": "transcription_feedback",
+              "transcriptionSeparateFromPronunciation": true
+            }
+          }
+        ]
+      }
+    },
+    {
+      "sectionId": "english-pre-a1-m035-listening",
+      "sectionKey": "listening",
+      "position": 8,
+      "exercise": {
+        "exerciseId": "english-pre-a1-m035-listening-ex01",
+        "type": "listening_gap_fill",
+        "content": {
+          "audio": "tts:en-GB:I wake up at seven. I get up and get dressed. I eat breakfast in the morning. I go to school. I play with my friends. I take a shower and brush my teeth. I eat lunch at school. I sleep at night.",
+          "audioLocale": "en-GB",
+          "transcriptTemplate": "I [[gap-01]] at seven. I [[gap-02]] and get dressed. I [[gap-03]] [[gap-09]] in the morning. I [[gap-04]] to school. I [[gap-05]] with my friends. I take a [[gap-07]] and [[gap-08]] my teeth. I eat [[gap-10]] at school. I [[gap-06]] at night.",
+          "wordBank": [
+            {
+              "wordId": "english-pre-a1-m035-listening-word-01",
+              "word": "wake up"
+            },
+            {
+              "wordId": "english-pre-a1-m035-listening-word-02",
+              "word": "get up"
+            },
+            {
+              "wordId": "english-pre-a1-m035-listening-word-03",
+              "word": "eat"
+            },
+            {
+              "wordId": "english-pre-a1-m035-listening-word-04",
+              "word": "go"
+            },
+            {
+              "wordId": "english-pre-a1-m035-listening-word-05",
+              "word": "play"
+            },
+            {
+              "wordId": "english-pre-a1-m035-listening-word-06",
+              "word": "sleep"
+            },
+            {
+              "wordId": "english-pre-a1-m035-listening-word-07",
+              "word": "shower"
+            },
+            {
+              "wordId": "english-pre-a1-m035-listening-word-08",
+              "word": "brush"
+            },
+            {
+              "wordId": "english-pre-a1-m035-listening-word-09",
+              "word": "breakfast"
+            },
+            {
+              "wordId": "english-pre-a1-m035-listening-word-10",
+              "word": "lunch"
+            }
+          ],
+          "interaction": "select_place_move_replace"
+        },
+        "items": [
+          {
+            "itemId": "english-pre-a1-m035-listening-ex01-i01",
+            "position": 1,
+            "gapToken": "[[gap-01]]"
+          },
+          {
+            "itemId": "english-pre-a1-m035-listening-ex01-i02",
+            "position": 2,
+            "gapToken": "[[gap-02]]"
+          },
+          {
+            "itemId": "english-pre-a1-m035-listening-ex01-i03",
+            "position": 3,
+            "gapToken": "[[gap-03]]"
+          },
+          {
+            "itemId": "english-pre-a1-m035-listening-ex01-i04",
+            "position": 4,
+            "gapToken": "[[gap-04]]"
+          },
+          {
+            "itemId": "english-pre-a1-m035-listening-ex01-i05",
+            "position": 5,
+            "gapToken": "[[gap-05]]"
+          },
+          {
+            "itemId": "english-pre-a1-m035-listening-ex01-i06",
+            "position": 6,
+            "gapToken": "[[gap-06]]"
+          },
+          {
+            "itemId": "english-pre-a1-m035-listening-ex01-i07",
+            "position": 7,
+            "gapToken": "[[gap-07]]"
+          },
+          {
+            "itemId": "english-pre-a1-m035-listening-ex01-i08",
+            "position": 8,
+            "gapToken": "[[gap-08]]"
+          },
+          {
+            "itemId": "english-pre-a1-m035-listening-ex01-i09",
+            "position": 9,
+            "gapToken": "[[gap-09]]"
+          },
+          {
+            "itemId": "english-pre-a1-m035-listening-ex01-i10",
+            "position": 10,
+            "gapToken": "[[gap-10]]"
+          }
+        ]
+      }
+    }
+  ]
+}

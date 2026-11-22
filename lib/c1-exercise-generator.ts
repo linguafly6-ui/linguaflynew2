@@ -1,0 +1,283 @@
+import { buildA2ExerciseSections, getA2ReadingPassages } from "@/lib/a2-exercise-generator";
+import type { A2PdfUnit, A2PdfExercise } from "@/lib/a2-pdf-unit-types";
+
+
+
+const c1GrammarBanks: Record<number, A2PdfExercise[]> = {
+1: [
+{question:"Completa con Present Perfect Continuous o Past Perfect Continuous: The team ______ (analyse) the data for months before the new evidence emerged.",answer:"had been analysing",note:"Past Perfect Continuous destaca la duración de una actividad anterior a otro momento pasado."},
+{question:"Elige la forma que presenta un resultado actual: She ______ three chapters so far. (has written / has been writing)",answer:"has written",note:"El foco está en la cantidad terminada; el continuo destacaría el proceso."},
+{question:"Corrige el error: By the time the lecture started, I have been waiting for an hour.",answer:"By the time the lecture started, I had been waiting for an hour.",note:"El punto de referencia es pasado, por lo que corresponde had been waiting."},
+{question:"Reformula con inversión: I had never encountered such resistance before. (Never...)",answer:"Never had I encountered such resistance before.",note:"Un adverbio negativo inicial exige inversión entre auxiliar y sujeto."},
+{question:"Completa: This is the first time the committee ______ (consider) such a proposal.",answer:"has considered",note:"This is the first time suele combinarse con Present Perfect."},
+{question:"Explica la diferencia: I have read the report / I have been reading the report.",answer:"La primera presenta la lectura como experiencia o tarea completada; la segunda destaca la actividad, posiblemente aún en curso.",note:"El aspecto perfectivo enfoca el resultado; el continuo, la duración o el proceso."}
+],
+2: [
+{question:"Completa con el tiempo narrativo adecuado: By the time Mara arrived, the witnesses ______ (leave).",answer:"had left",note:"Past Perfect marca el acontecimiento anterior al punto narrativo pasado."},
+{question:"Elige: He ______ (had been driving / was driving) for six hours when the engine failed.",answer:"had been driving",note:"La duración anterior al fallo se expresa con Past Perfect Continuous."},
+{question:"Reescribe para indicar anterioridad: She checked the figures and then submitted the report. (Having...)",answer:"Having checked the figures, she submitted the report.",note:"Having + participio presenta la primera acción como anterior."},
+{question:"Corrige el salto temporal: I opened the door and realise that someone had entered.",answer:"I opened the door and realised that someone had entered.",note:"La forma pasada realised mantiene la secuencia narrativa; had entered expresa anterioridad."},
+{question:"Completa: He speaks as though he ______ (witness) the event, although he was abroad.",answer:"had witnessed",note:"As though + Past Perfect expresa una comparación hipotética referida al pasado."},
+{question:"Transforma a estilo indirecto con backshift: 'I have never seen this document,' she said.",answer:"She said that she had never seen that document.",note:"En el estilo indirecto, Present Perfect suele retroceder a Past Perfect cuando el marco pasado lo requiere."}
+],
+3: [
+{question:"Reescribe con inversión: I had rarely heard such a convincing argument. (Rarely...)",answer:"Rarely had I heard such a convincing argument.",note:"Rarely al inicio provoca inversión sujeto-auxiliar."},
+{question:"Completa: Not only ______ the deadline, but she also improved the final draft.",answer:"did she meet",note:"Not only al inicio de la cláusula principal exige do-support e inversión en pasado simple."},
+{question:"Reformula con Under no circumstances: You must disclose these figures.",answer:"Under no circumstances must you disclose these figures.",note:"La expresión negativa inicial va seguida de auxiliar/modal y sujeto."},
+{question:"Corrige: No sooner the talks had begun than the power failed.",answer:"No sooner had the talks begun than the power failed.",note:"No sooner + Past Perfect invertido + than."},
+{question:"Completa: Only after the audit ______ the discrepancy become apparent.",answer:"did",note:"Only after al inicio desplaza la inversión a la oración principal."},
+{question:"Reescribe con Little: We knew that the decision would have such consequences.",answer:"Little did we know that the decision would have such consequences.",note:"Little con sentido negativo requiere inversión con did en pasado simple."}
+],
+4: [
+{question:"Transforma en it-cleft destacando the funding: The funding made the project possible.",answer:"It was the funding that made the project possible.",note:"It-cleft focaliza un elemento con It + be + foco + that/who."},
+{question:"Transforma en wh-cleft: We need greater transparency.",answer:"What we need is greater transparency.",note:"What-clause presenta la información focal como complemento de be."},
+{question:"Completa: It was the final paragraph ______ persuaded the panel.",answer:"that",note:"That es habitual en it-clefts para destacar cosas o ideas."},
+{question:"Corrige: What the report demonstrates are that the policy failed.",answer:"What the report demonstrates is that the policy failed.",note:"La cláusula what funciona como sujeto singular."},
+{question:"Reescribe destacando the reason: The chair resigned because of the conflict of interest.",answer:"The reason the chair resigned was the conflict of interest.",note:"La estructura the reason ... was permite focalizar la causa."},
+{question:"Explica el efecto de foco: It was the timing that undermined the proposal.",answer:"La oración presenta el momento como el elemento contrastivo o informativamente central.",note:"Las cleft sentences organizan la información y resaltan un constituyente."}
+],
+5: [
+{question:"Completa el condicional formal: ______ the evidence be verified, the claim would gain credibility.",answer:"Were",note:"Were + sujeto + infinitivo sustituye a if + Past Simple en una hipótesis formal."},
+{question:"Reescribe sin if: If the figures had been checked, the error would have been detected.",answer:"Had the figures been checked, the error would have been detected.",note:"Had + sujeto + participio permite invertir el tercer condicional."},
+{question:"Completa: If she ______ (take) the alternative route, she would be here by now.",answer:"had taken",note:"La condición pasada produce un resultado hipotético presente: mixed conditional."},
+{question:"Corrige: If I would have realised the risk, I would have objected.",answer:"If I had realised the risk, I would have objected.",note:"En la cláusula condicional estándar no se usa would have."},
+{question:"Completa con unless: The contract will remain valid ______ either party terminates it.",answer:"unless",note:"Unless equivale a if not y expresa la excepción que anula el resultado."},
+{question:"Reformula con provided that: You may use the dataset if you acknowledge its source.",answer:"You may use the dataset provided that you acknowledge its source.",note:"Provided that introduce una condición necesaria."}
+],
+6: [
+{question:"Completa el mixed conditional: If he were less impulsive, he ______ (not / resign) yesterday.",answer:"would not have resigned",note:"Una característica presente/general explica un resultado hipotético pasado."},
+{question:"Completa: If I had accepted the fellowship, I ______ (work) in Geneva now.",answer:"would be working",note:"La condición irreal pasada tiene una consecuencia presente."},
+{question:"Reescribe con inversión: If the premise were true, the conclusion would follow.",answer:"Were the premise true, the conclusion would follow.",note:"Were puede colocarse antes del sujeto para omitir if."},
+{question:"Elige: If they had invested earlier, they (would own / would have owned) the property now.",answer:"would own",note:"La consecuencia se sitúa ahora, aunque la condición pertenece al pasado."},
+{question:"Corrige: If she studied harder, she would have passed last week's exam.",answer:"If she had studied harder, she would have passed last week's exam.",note:"Para una condición irreal pasada se usa Past Perfect en la cláusula if."},
+{question:"Completa: But for your advice, I ______ (make) a serious mistake.",answer:"would have made",note:"But for introduce una condición implícita; aquí evita un resultado pasado."}
+],
+7: [
+{question:"Completa el subjuntivo mandativo: The board insisted that the proposal ______ (be) revised.",answer:"be",note:"En el mandative subjunctive se usa la forma base, también be."},
+{question:"Reformula con should: It is essential that every applicant submit two references.",answer:"It is essential that every applicant should submit two references.",note:"En variedades británicas, should puede alternar con el subjuntivo mandativo."},
+{question:"Corrige: The doctor recommended that he rests for a week.",answer:"The doctor recommended that he rest for a week.",note:"Recommend that + sujeto + forma base en subjuntivo mandativo."},
+{question:"Completa: The regulation requires that each vehicle ______ (carry) identification.",answer:"carry",note:"Require that selecciona una cláusula mandativa con forma base."},
+{question:"Elige: The manager demanded that the figures (are / be) checked independently.",answer:"be",note:"La forma be es invariable en el subjuntivo mandativo."},
+{question:"Reescribe en registro formal: They suggested that the committee should reconsider the decision.",answer:"They suggested that the committee reconsider the decision.",note:"La forma base reconsider expresa la recomendación en estilo formal."}
+],
+8: [
+{question:"Completa la deducción presente: Given the locked doors, the building ______ (must / be) empty.",answer:"must be",note:"Must expresa una deducción afirmativa fuerte sobre el presente."},
+{question:"Completa la deducción negativa: That ______ (can't / be) the original manuscript; the date is wrong.",answer:"can't be",note:"Can't expresa imposibilidad o incompatibilidad con la evidencia."},
+{question:"Matiza la inferencia: The figures ______ (may / indicate) a shift in demand.",answer:"may indicate",note:"May presenta la interpretación como posible, no segura."},
+{question:"Corrige: She must to know the answer by now.",answer:"She must know the answer by now.",note:"Los modales van seguidos de infinitivo sin to."},
+{question:"Completa con should: The parcel ______ (should / arrive) by noon if the service is operating normally.",answer:"should arrive",note:"Should expresa expectativa razonable."},
+{question:"Distingue must y can't: The lights are off and nobody answers; they ______ be at home.",answer:"can't",note:"Con esos indicios, can't expresa una deducción negativa; la frase completa es they can't be at home."}
+],
+9: [
+{question:"Completa la especulación pasada: The figures are missing; someone ______ (must / remove) them.",answer:"must have removed",note:"Must have + participio expresa una deducción fuerte sobre el pasado."},
+{question:"Completa con posibilidad pasada: The witness ______ (might / misread) the number.",answer:"might have misread",note:"Might have expresa una explicación pasada posible, no confirmada."},
+{question:"Expresa crítica retrospectiva: You ______ (should / tell) us about the delay.",answer:"should have told",note:"Should have + participio señala una acción pasada que habría sido conveniente."},
+{question:"Corrige: They can't had understood the instructions.",answer:"They can't have understood the instructions.",note:"La forma perfecta modal es modal + have + participio."},
+{question:"Completa: He needn't ______ (bring) a laptop; one was provided.",answer:"have brought",note:"Needn't have + participio indica que se hizo algo innecesario."},
+{question:"Distingue las formas: She didn't need to attend / She needn't have attended.",answer:"Didn't need to attend: no era necesario y normalmente no asistió. Needn't have attended: asistió, pero no hacía falta.",note:"La segunda construcción implica que la acción sí ocurrió."}
+],
+10: [
+{question:"Pasa a pasiva impersonal: People believe that the minister knew about the leak.",answer:"The minister is believed to have known about the leak.",note:"El infinitivo perfecto sitúa el conocimiento antes de la creencia actual."},
+{question:"Completa la pasiva con modal: The files must ______ (encrypt) before transmission.",answer:"be encrypted",note:"Modal + be + participio forma la pasiva."},
+{question:"Reescribe con It is reported that: Witnesses say the bridge is unsafe.",answer:"It is reported that the bridge is unsafe.",note:"It + be + participio de reporting verb + that-clause crea una estructura impersonal."},
+{question:"Completa: The suspect is alleged ______ (leave) the country.",answer:"to have left",note:"To have + participio indica que el hecho alegado es anterior al presente."},
+{question:"Corrige: The proposal is expected approving next week.",answer:"The proposal is expected to be approved next week.",note:"La pasiva de infinitivo se forma con to be + participio."},
+{question:"Transforma: They are repairing the road. (The road...)",answer:"The road is being repaired.",note:"Present Continuous passive: is/are being + participio."}
+]
+};
+
+export const buildC1ExerciseSections = (unit: A2PdfUnit) => {
+ const shared = buildA2ExerciseSections(unit);
+ const grammar = c1GrammarBanks[unit.number] ?? c1GrammarBanksExtra[unit.number] ?? c1GrammarBanksFinal[unit.number] ?? c1GrammarBanksReview[unit.number];
+ const focused = c1LexicalBanks[unit.number];
+ return [
+  ...(grammar ? [{ title: `GRAMMAR — ${grammar.length} ejercicios revisados`, exercises: grammar }] : focused ? [{ title: `LEXICAL & DISCOURSE FOCUS — ${focused.length} ejercicios revisados`, exercises: focused }] : []),
+  ...shared.filter((section) => !section.title.startsWith("GRAMMAR")),
+ ];
+};
+export const getC1ReadingPassages = (unit: A2PdfUnit) => getA2ReadingPassages(unit);
+
+
+const c1GrammarBanksExtra: Record<number, A2PdfExercise[]> = {
+11:[
+{question:"Completa con el reporting verb adecuado: The spokesperson ______ that no further details would be released. (maintain)",answer:"maintained",note:"Maintain that presenta una postura o afirmación sostenida por el hablante."},
+{question:"Reescribe con deny: 'I did not authorise the payment,' he said.",answer:"He denied having authorised the payment.",note:"Deny puede ir seguido de gerundio perfecto para una acción anterior."},
+{question:"Completa: The report ______ (claim) that the figures had been manipulated.",answer:"claims",note:"Claim that introduce el contenido atribuido a una fuente."},
+{question:"Corrige: She suggested me to contact the editor.",answer:"She suggested that I contact the editor. / She suggested contacting the editor.",note:"Suggest no selecciona normalmente objeto + to-infinitive."},
+{question:"Transforma usando is alleged to: People allege that the firm concealed the losses.",answer:"The firm is alleged to have concealed the losses.",note:"El infinitivo perfecto marca anterioridad respecto a la alegación."},
+{question:"Explica la diferencia entre claim, concede y acknowledge como reporting verbs.",answer:"Claim presenta una afirmación; concede admite un punto, a menudo contra la propia postura; acknowledge reconoce un hecho o dificultad.",note:"Los reporting verbs expresan también la actitud del emisor ante el contenido."}
+],
+12:[
+{question:"Reduce la relativa: The proposal, which was submitted yesterday, contains several amendments.",answer:"The proposal, submitted yesterday, contains several amendments.",note:"La relativa pasiva se reduce a participio pasado."},
+{question:"Completa: The candidates ______ (shortlist) for interview will be contacted tomorrow.",answer:"shortlisted",note:"El participio pasado reduce una relativa pasiva: candidates who were shortlisted."},
+{question:"Reescribe usando whom: The consultant to whom we spoke was highly experienced.",answer:"The consultant we spoke to was highly experienced.",note:"La preposición puede quedar al final en una relativa menos formal; whom conserva el registro formal."},
+{question:"Corrige el participio colgante: Having reviewed the application, the missing documents were obvious.",answer:"Having reviewed the application, the officer noticed the missing documents.",note:"El sujeto implícito de la cláusula participial debe ser quien revisa."},
+{question:"Completa con whose: The scholar, ______ work challenged the consensus, received an award.",answer:"whose",note:"Whose introduce posesión y puede referirse a personas."},
+{question:"Reescribe con which retomando toda la idea: The company withdrew its offer. This surprised the candidates.",answer:"The company withdrew its offer, which surprised the candidates.",note:"Which puede referirse a la cláusula anterior completa."}
+],
+13:[
+{question:"Amplía el grupo nominal con una relativa: the report (which the committee commissioned last year).",answer:"the report which the committee commissioned last year",note:"La relativa especifica qué informe se menciona."},
+{question:"Identifica el núcleo del grupo nominal: the unexpectedly rapid decline in regional employment.",answer:"decline",note:"El núcleo es el sustantivo principal; los demás elementos lo modifican o complementan."},
+{question:"Reordena como grupo nominal natural: policy / long-term / environmental / the effects / of.",answer:"the long-term environmental effects of the policy",note:"Los adjetivos preceden al núcleo effects y of the policy completa el significado."},
+{question:"Completa con un sustantivo compuesto: a ______-wide consultation (nation).",answer:"nation",note:"Nation-wide funciona como modificador compuesto de consultation."},
+{question:"Corrige la acumulación de modificadores: the report environmental recent policy.",answer:"the recent environmental policy report",note:"El orden de modificadores debe permitir identificar con claridad el núcleo report."},
+{question:"Explica el efecto de nominalizar en: The committee rejected the proposal / the committee's rejection of the proposal.",answer:"La segunda versión empaqueta el proceso como un sustantivo y permite usarlo como núcleo de un grupo nominal.",note:"La densidad nominal es frecuente en registros académicos y administrativos."}
+],
+14:[
+{question:"Nominaliza: The agency decided to postpone the launch.",answer:"The agency's decision to postpone the launch.",note:"Decision convierte el verbo decide en un sustantivo."},
+{question:"Completa: The ______ (allocate) of resources remains controversial.",answer:"allocation",note:"Allocation es el sustantivo derivado de allocate."},
+{question:"Reescribe con nominalización: The committee investigated how funds had been spent.",answer:"The committee conducted an investigation into the expenditure of funds.",note:"Investigation y expenditure condensan las acciones en sustantivos."},
+{question:"Corrige: The implementation of the policy was failed to improve access.",answer:"The implementation of the policy failed to improve access.",note:"Implementation es el sujeto nominal; no necesita was en esta oración activa."},
+{question:"Transforma: The researchers analysed the results carefully. (analysis)",answer:"The researchers conducted a careful analysis of the results.",note:"Analysis es la forma nominal de analyse."},
+{question:"Explica un riesgo de la nominalización excesiva.",answer:"Puede ocultar quién realiza la acción y producir textos densos o menos directos.",note:"La nominalización aporta concisión, pero debe equilibrarse con claridad y agencia."}
+],
+15:[
+{question:"Completa con so do I / neither do I: I cannot support the amendment, and ______.",answer:"neither can I",note:"Neither + auxiliar + sujeto expresa acuerdo con una oración negativa; se conserva el modal can."},
+{question:"Evita repetir el predicado: She said she would review the draft, and she ______.",answer:"did so",note:"Do so sustituye el predicado mencionado."},
+{question:"Completa con one/ones: The revised clauses are clearer than the original ______.",answer:"ones",note:"Ones sustituye un sustantivo contable plural."},
+{question:"Corrige: I prefer the first option to the later one that you suggested it.",answer:"I prefer the first option to the later one that you suggested.",note:"No se duplica el objeto mediante it dentro de la relativa."},
+{question:"Explica la elipsis en: Some agreed with the proposal; others did not.",answer:"Did not omite agree with the proposal, recuperable del contexto.",note:"La elipsis evita repetir información ya conocida."},
+{question:"Reescribe con inversión de acuerdo: He rarely attends these briefings. (Neither...)",answer:"Neither do I.",note:"La respuesta expresa que el hablante tampoco asiste; neither va seguido de auxiliar y sujeto."}
+],
+16:[
+{question:"Une con whereas para marcar contraste: The first model is inexpensive. The second is more reliable.",answer:"The first model is inexpensive, whereas the second is more reliable.",note:"Whereas introduce una cláusula contrastiva."},
+{question:"Completa con un conector de consecuencia: The sample was too small; ______, the findings cannot be generalised.",answer:"therefore",note:"Therefore señala una consecuencia lógica."},
+{question:"Corrige la puntuación: The evidence is limited however the conclusion remains plausible.",answer:"The evidence is limited; however, the conclusion remains plausible.",note:"However como conector oracional suele separarse mediante punto y coma/coma o punto."},
+{question:"Reformula evitando repetición: The policy was costly. The policy was also difficult to enforce.",answer:"The policy was costly and, moreover, difficult to enforce.",note:"Moreover añade un argumento sin repetir el sujeto."},
+{question:"Elige el conector concesivo: The method is demanding; (nevertheless / furthermore), it produces consistent results.",answer:"nevertheless",note:"Nevertheless introduce una idea que contrasta con la anterior."},
+{question:"Explica la diferencia entre consequently y conversely.",answer:"Consequently introduce un resultado; conversely introduce una alternativa o relación opuesta.",note:"La elección del marcador debe reflejar la relación lógica real."}
+],
+17:[
+{question:"Completa con despite: ______ considerable opposition, the measure was adopted.",answer:"Despite",note:"Despite va seguido de un grupo nominal."},
+{question:"Reescribe con much as: Although I respect the decision, I cannot endorse it.",answer:"Much as I respect the decision, I cannot endorse it.",note:"Much as introduce una concesión enfática."},
+{question:"Corrige: Despite the evidence was incomplete, the panel reached a verdict.",answer:"Although the evidence was incomplete, the panel reached a verdict.",note:"Despite no introduce directamente una cláusula finita."},
+{question:"Completa: Admittedly, the proposal is expensive; ______, its long-term benefits are substantial.",answer:"nonetheless",note:"Nonetheless introduce una reserva o contraste con la concesión previa."},
+{question:"Reformula con albeit: The solution is effective, although it is costly.",answer:"The solution is effective, albeit costly.",note:"Albeit introduce una concesión reducida, normalmente seguida de adjetivo o cláusula no finita."},
+{question:"Explica el matiz de notwithstanding en registro formal.",answer:"Notwithstanding significa 'a pesar de' y puede aparecer antes o después del elemento concesivo; tiene un tono formal.",note:"La posición y la estructura que sigue deben ser gramaticalmente coherentes."}
+],
+18:[
+{question:"Une usando thereby: The company streamlined the process. It reduced administrative costs.",answer:"The company streamlined the process, thereby reducing administrative costs.",note:"Thereby + gerundio expresa el resultado producido por la acción anterior."},
+{question:"Completa con owing to: The hearing was postponed ______ a procedural error.",answer:"owing to",note:"Owing to va seguido de un sustantivo o grupo nominal."},
+{question:"Corrige: Due to the roads were flooded, the event was cancelled.",answer:"Because the roads were flooded, the event was cancelled.",note:"Due to no introduce una cláusula finita; se usa because o due to + sustantivo."},
+{question:"Reformula expresando finalidad: The team encrypted the files because it wanted to protect confidentiality. (in order to)",answer:"The team encrypted the files in order to protect confidentiality.",note:"In order to + infinitivo expresa propósito."},
+{question:"Completa: The policy was revised, ______ ensuring greater consistency across departments.",answer:"thus",note:"Thus introduce el resultado de la revisión; puede preceder a un gerundio en esta construcción."},
+{question:"Distingue as a result y with a view to.",answer:"As a result introduce consecuencia; with a view to introduce finalidad y va seguido de gerundio o sustantivo.",note:"No deben intercambiarse porque expresan relaciones distintas."}
+]
+};
+
+const c1GrammarBanksFinal: Record<number, A2PdfExercise[]> = {
+19:[
+{question:"Reformula con cautela usando appears to: The policy has reduced regional inequality.",answer:"The policy appears to have reduced regional inequality.",note:"Appear to have + participio presenta una interpretación retrospectiva no categórica."},
+{question:"Completa con un modal tentativo: The discrepancy ______ (may) reflect a sampling error.",answer:"may",note:"May expresa posibilidad sin afirmar que la explicación sea cierta."},
+{question:"Corrige la afirmación demasiado categórica: These results prove that the intervention works.",answer:"These results suggest that the intervention may be effective.",note:"Suggest y may limitan la fuerza de la conclusión."},
+{question:"Reescribe con arguably: This is the most significant limitation.",answer:"Arguably, this is the most significant limitation.",note:"Arguably indica que la valoración puede defenderse, pero admite debate."},
+{question:"Completa: The measure was successful, ______ in urban areas. (to some extent)",answer:"to some extent",note:"La expresión restringe el alcance de la evaluación."},
+{question:"Distingue apparently y evidently en un informe.",answer:"Apparently presenta algo según indicios o información disponible; evidently sugiere que la evidencia lo hace claro.",note:"Ambos pueden marcar inferencia, pero difieren en la fuerza percibida."}
+],
+20:[
+{question:"Completa con un adjetivo evaluativo preciso: The evidence is ______ (convince) but not conclusive.",answer:"compelling",note:"Compelling describe evidencia persuasiva; no implica necesariamente prueba definitiva."},
+{question:"Reformula para expresar una evaluación equilibrada: The proposal is excellent.",answer:"The proposal is promising, although its long-term feasibility remains uncertain.",note:"La evaluación equilibrada reconoce méritos y limita el alcance de la valoración."},
+{question:"Completa con un adverbio evaluativo: ______, the findings support the original hypothesis. (overall)",answer:"Overall",note:"Overall resume una valoración global."},
+{question:"Corrige la colocación: The results make a strong evidence for the claim.",answer:"The results provide strong evidence for the claim.",note:"Provide evidence es una colocación natural; evidence es incontable."},
+{question:"Reformula con una reserva: The new framework is useful. (to a certain extent)",answer:"The new framework is useful to a certain extent.",note:"La expresión limita la generalidad de la evaluación."},
+{question:"Explica la diferencia entre critical, crucial y contentious.",answer:"Critical significa de importancia decisiva o relativo al análisis; crucial indica esencial; contentious describe algo que genera desacuerdo.",note:"La precisión léxica evita evaluaciones vagas o confusas."}
+],
+29:[
+{question:"Completa la preposición: The findings are consistent ______ the earlier review.",answer:"with",note:"La colocación es consistent with."},
+{question:"Completa con gerundio: The committee objected to ______ (extend) the deadline.",answer:"extending",note:"En object to, to es preposición y va seguida de gerundio."},
+{question:"Completa: The report provides an explanation ______ the discrepancy.",answer:"for",note:"La estructura nominal es an explanation for something."},
+{question:"Corrige: The results are dependent of the sample size.",answer:"The results are dependent on the sample size.",note:"La colocación estándar es dependent on."},
+{question:"Completa: The author alludes ______ a previous controversy.",answer:"to",note:"Allude to requiere la preposición to."},
+{question:"Explica la diferencia entre responsible for y responsible to.",answer:"Responsible for indica aquello de lo que alguien se ocupa o responde; responsible to identifica a la persona o entidad ante la que responde.",note:"La preposición cambia la relación semántica."}
+],
+30:[
+{question:"Completa: The panel considered ______ (postpone) the hearing.",answer:"postponing",note:"Consider selecciona gerundio como complemento."},
+{question:"Completa: The witness appears ______ (misunderstand) the question.",answer:"to have misunderstood",note:"Appear + infinitivo perfecto indica que la incomprensión precedió al momento actual."},
+{question:"Elige: I regret (informing / to inform) you that the application has been rejected.",answer:"to inform",note:"Regret + to-infinitive se usa para comunicar algo desagradable en el momento de hablar."},
+{question:"Corrige: The report recommends to revise the procedure.",answer:"The report recommends revising the procedure.",note:"Recommend suele ir seguido de gerundio o de una cláusula mandativa."},
+{question:"Completa: The organisation is committed to ______ (improve) access to education.",answer:"improving",note:"En committed to, to es preposición y requiere gerundio."},
+{question:"Explica la diferencia entre stop doing y stop to do.",answer:"Stop doing significa abandonar una actividad; stop to do significa interrumpir otra actividad para realizar algo.",note:"El tipo de complemento modifica el significado del verbo stop."}
+]
+};
+
+const c1GrammarBanksReview: Record<number, A2PdfExercise[]> = {
+59:[
+{question:"Completa con inversión: Not until the second analysis ______ the error become apparent.",answer:"did",note:"Not until inicial exige inversión en la oración principal."},
+{question:"Completa el mixed conditional: If the researchers had controlled for age, the results ______ (be) more reliable now.",answer:"would be",note:"Una condición pasada hipotética tiene una consecuencia presente."},
+{question:"Pasa a pasiva impersonal: Experts believe that the manuscript was altered.",answer:"The manuscript is believed to have been altered.",note:"La pasiva de reporting con infinitivo perfecto expresa anterioridad."},
+{question:"Completa el mandative subjunctive: The panel recommended that the data ______ (be) independently verified.",answer:"be",note:"Recommend that selecciona la forma base en la cláusula mandativa."},
+{question:"Reescribe como cleft destacando the timing: The timing caused the negotiations to fail.",answer:"It was the timing that caused the negotiations to fail.",note:"La it-cleft focaliza el constituyente destacado."},
+{question:"Corrige la complementación: The authors suggested to repeat the experiment.",answer:"The authors suggested repeating the experiment.",note:"Suggest suele seleccionar gerundio o una cláusula that, no to-infinitive."}
+]
+};
+
+
+
+const c1LexicalBanks: Record<number, A2PdfExercise[]> = {
+21:[
+{question:"Elige la colocación natural: The committee ______ a decision after reviewing the evidence. (made / did)",answer:"made",note:"Make a decision es la colocación estándar."},
+{question:"Corrige la colocación: The study gives a powerful evidence for the claim.",answer:"The study provides compelling evidence for the claim.",note:"Evidence es incontable; provide compelling evidence es una combinación idiomática."},
+{question:"Completa: The findings ______ serious doubts about the reliability of the model. (raise / lift)",answer:"raise",note:"Raise doubts es una colocación frecuente y natural."},
+{question:"Sustituye very important por una opción más precisa en registro académico.",answer:"crucial / pivotal / of considerable significance",note:"La elección depende de si se destaca necesidad, influencia o relevancia."},
+{question:"Explica la diferencia entre strong argument y powerful argument.",answer:"Strong argument destaca solidez lógica; powerful argument destaca capacidad persuasiva o impacto.",note:"Los colocativos modifican el matiz, no son intercambiables en todos los contextos."},
+{question:"Reescribe evitando repetir significant: The results are significant and the implications are significant.",answer:"The results are substantial, and their implications are far-reaching.",note:"La variación léxica debe conservar el significado y mejorar la precisión."}
+],
+22:[
+{question:"Interpreta el modismo: The negotiations reached a dead end.",answer:"Las negociaciones llegaron a un punto muerto.",note:"Dead end se usa figuradamente para una situación sin salida o progreso."},
+{question:"Sustituye la expresión literal por un modismo adecuado: The new evidence made the issue easier to understand.",answer:"The new evidence shed light on the issue.",note:"Shed light on significa aclarar o ayudar a comprender."},
+{question:"Elige el significado de to take something with a pinch of salt.",answer:"No aceptar algo como totalmente fiable; mantener cierto escepticismo.",note:"Es una expresión idiomática de cautela ante una afirmación."},
+{question:"Completa: The proposal sounds attractive, but the devil is in the ______.",answer:"details",note:"The devil is in the details advierte que los problemas están en los detalles."},
+{question:"Reformula en registro neutro: The plan went down like a lead balloon.",answer:"The plan was received very negatively.",note:"La expresión idiomática es informal; la reformulación neutra conserva el sentido."},
+{question:"Explica por qué no conviene traducir literalmente un idiom.",answer:"Porque su significado suele ser convencional y no se deduce de la suma de sus palabras; hay que atender al contexto y al registro.",note:"La equivalencia debe ser pragmática, no palabra por palabra."}
+],
+23:[
+{question:"Identifica la metáfora en: The proposal opened the door to further negotiations.",answer:"Opened the door presenta la posibilidad de negociar como una puerta que se abre.",note:"La metáfora conceptualiza una oportunidad como acceso físico."},
+{question:"Reformula la metáfora en lenguaje literal: The policy cast a long shadow over the sector.",answer:"The policy had lasting negative effects on the sector.",note:"Cast a shadow comunica influencia negativa y duradera."},
+{question:"Explica el efecto de la metáfora: The data paint a troubling picture.",answer:"Presenta los datos como una imagen visual y orienta la interpretación hacia una valoración preocupante.",note:"La metáfora hace más concreta y evaluativa una descripción abstracta."},
+{question:"Distingue metáfora y símil.",answer:"La metáfora identifica o presenta una cosa como otra; el símil establece una comparación explícita, a menudo con like o as.",note:"Ambos crean asociaciones, pero difieren en su formulación."},
+{question:"Interpreta: The debate has reached a crossroads.",answer:"El debate ha llegado a un momento en el que debe elegirse entre distintas direcciones o alternativas.",note:"Crossroads representa una decisión como una intersección de caminos."},
+{question:"Propón una versión menos figurativa de: The argument collapses under scrutiny.",answer:"The argument cannot withstand detailed examination.",note:"La reformulación mantiene la idea de falta de solidez sin imagen física."}
+],
+24:[
+{question:"Sustituye el phrasal verb por un verbo formal: The researchers looked into the discrepancy.",answer:"The researchers investigated the discrepancy.",note:"Investigate es una alternativa formal a look into."},
+{question:"Completa: The panel will ______ the proposal before reaching a decision. (look over)",answer:"look over",note:"Look over significa revisar; examine sería una alternativa más formal."},
+{question:"Distingue carry out y bring about.",answer:"Carry out significa ejecutar una tarea o estudio; bring about significa causar o producir un cambio.",note:"El primer verbo describe realización; el segundo, causación."},
+{question:"Reformula formalmente: The company put off the launch.",answer:"The company postponed the launch.",note:"Postpone es más formal que put off."},
+{question:"Completa: The report ______ several inconsistencies in the original dataset. (point out)",answer:"points out",note:"Point out significa señalar o llamar la atención sobre algo."},
+{question:"Explica por qué un phrasal verb puede ser adecuado en un texto formal.",answer:"Algunos son neutrales o están plenamente asentados en registros profesionales; la adecuación depende del verbo concreto, el género y la audiencia.",note:"No todos los phrasal verbs son informales."}
+],
+25:[
+{question:"Forma el sustantivo de assess y úsalo en una frase.",answer:"Assessment — The assessment identified three areas for improvement.",note:"-ment forma un sustantivo de proceso o resultado."},
+{question:"Completa con la forma correcta: The proposal was widely ______ (critic).",answer:"criticised",note:"Se necesita el participio/adjetivo criticised."},
+{question:"Transforma en adjetivo: a decision based on evidence",answer:"an evidence-based decision",note:"El compuesto con guion condensa la relación entre sustantivo y modificador."},
+{question:"Explica la diferencia entre disinformation y misinformation.",answer:"Disinformation implica difusión deliberada de información falsa; misinformation es información incorrecta sin que la intención de engañar sea necesaria.",note:"El prefijo dis- suele añadir intencionalidad."},
+{question:"Completa: The policy's ______ (effective) remains difficult to measure.",answer:"effectiveness",note:"Effectiveness es el sustantivo abstracto derivado de effective."},
+{question:"Identifica el proceso de formación en overgeneralisation.",answer:"Prefijación con over- y sufijación nominal con -ation sobre la base generalise.",note:"La palabra combina afijación para expresar generalización excesiva."}
+],
+26:[
+{question:"Adapta al registro académico: Kids these days get loads of information online.",answer:"Young people today are exposed to substantial amounts of information online.",note:"La reformulación sustituye léxico coloquial por expresiones neutrales y precisas."},
+{question:"Adapta a un correo profesional cortés: Send me the figures today.",answer:"Could you please send me the figures by the end of today?",note:"La petición indirecta suaviza la imposición y fija un plazo claro."},
+{question:"Identifica la audiencia probable de: Pursuant to the aforementioned provisions...",answer:"Una audiencia jurídica, administrativa o institucional.",note:"El léxico formulaico y técnico presupone familiaridad con documentos formales."},
+{question:"Reformula para un público general: The intervention yielded statistically significant outcomes.",answer:"The intervention produced results that were unlikely to be due to chance.",note:"La versión explica el concepto técnico sin depender del término especializado."},
+{question:"Explica cómo cambia el tono al usar might I suggest frente a you must.",answer:"Might I suggest formula una propuesta mitigada; you must expresa obligación directa.",note:"La modalidad y la forma interrogativa influyen en cortesía y fuerza."},
+{question:"Corrige el registro mixto: Dear Professor, I wanna ask about the aforementioned assessment.",answer:"Dear Professor, I would like to ask about the assessment mentioned above.",note:"La versión mantiene un tono formal coherente y evita wanna."}
+],
+27:[
+{question:"Reformula como desacuerdo diplomático: Your interpretation is wrong.",answer:"I am not entirely convinced by that interpretation.",note:"La mitigación expresa desacuerdo sin atacar directamente al interlocutor."},
+{question:"Completa: I take your point; ______, I would interpret the evidence differently.",answer:"however / nevertheless",note:"El conector reconoce la postura y después introduce una reserva."},
+{question:"Transforma en una objeción constructiva: This proposal will never work.",answer:"I wonder whether the proposal would be workable under the current conditions.",note:"La pregunta indirecta convierte el rechazo categórico en una evaluación abierta."},
+{question:"Explica el efecto de conceder antes de objetar.",answer:"Muestra que se ha considerado la postura ajena, reduce la confrontación y prepara el terreno para la discrepancia.",note:"La concesión puede mejorar la cooperación sin abandonar la propia posición."},
+{question:"Reformula con una reserva: I agree with the aim, but the method is flawed.",answer:"While I agree with the overall aim, I have some reservations about the proposed method.",note:"While introduce una concesión y reservations suaviza la crítica."},
+{question:"Distingue I disagree y I see it differently.",answer:"I disagree expresa oposición explícita; I see it differently presenta una perspectiva alternativa de forma menos confrontativa.",note:"La elección depende de la relación y del grado de franqueza requerido."}
+],
+28:[
+{question:"Convierte en pregunta retórica: We cannot ignore the long-term consequences.",answer:"Can we really afford to ignore the long-term consequences?",note:"La pregunta no busca información; intensifica la advertencia."},
+{question:"Explica el efecto de: How many more warnings do we need?",answer:"La pregunta presupone que ya ha habido advertencias suficientes y expresa impaciencia o crítica.",note:"La respuesta se da por implícita y refuerza la postura del hablante."},
+{question:"Reformula como pregunta retórica persuasiva: The policy is not sustainable.",answer:"How can this policy possibly be sustainable?",note:"La formulación invita al público a compartir la conclusión negativa."},
+{question:"Distingue pregunta informativa y retórica.",answer:"La informativa solicita una respuesta; la retórica se formula para afirmar, enfatizar o provocar reflexión sin esperar necesariamente respuesta.",note:"La intención comunicativa determina la interpretación."},
+{question:"Identifica el recurso: Surely no one would defend such an outcome.",answer:"Pregunta retórica implícita mediante surely y una formulación que orienta al lector hacia una respuesta negativa.",note:"Surely presenta la conclusión como compartida o difícil de negar."},
+{question:"Reescribe evitando un tono agresivo: What were they thinking?",answer:"What considerations may have led them to take that decision?",note:"La versión neutral sustituye la crítica emocional por una petición de explicación."}
+]
+};
+
+

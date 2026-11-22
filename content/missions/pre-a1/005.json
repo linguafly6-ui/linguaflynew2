@@ -1,0 +1,1099 @@
+{
+  "schemaVersion": "1.2.0",
+  "contentVersion": 1,
+  "course": {
+    "courseId": "english-pre-a1",
+    "level": "PRE-A1",
+    "language": "en-GB"
+  },
+  "unit": {
+    "unitId": "english-pre-a1-unit-05",
+    "courseId": "english-pre-a1",
+    "position": 5,
+    "title": "Animals"
+  },
+  "mission": {
+    "missionId": "english-pre-a1-m005",
+    "unitId": "english-pre-a1-unit-05",
+    "position": 5,
+    "title": "Animals"
+  },
+  "sections": [
+    {
+      "sectionId": "english-pre-a1-m005-explore",
+      "sectionKey": "explore",
+      "position": 1,
+      "exercise": {
+        "exerciseId": "english-pre-a1-m005-explore-ex01",
+        "type": "vocabulary_pairs",
+        "theory": {
+          "title": "Animals: key words and simple sentences",
+          "explanation": "Learn ten useful words about animals. Listen to the British English model and say each word aloud.",
+          "patterns": [
+            {
+              "label": "Simple sentence",
+              "pattern": "The dog is small.",
+              "examples": [
+                "The dog is small.",
+                "The cats are black.",
+                "A rabbit has got long ears."
+              ]
+            }
+          ],
+          "tip": "Read each word aloud and use it in a short sentence."
+        },
+        "items": [
+          {
+            "itemId": "english-pre-a1-m005-explore-ex01-i01",
+            "position": 1,
+            "english": "dog",
+            "spanish": "perro",
+            "audio": "tts:en-GB:dog"
+          },
+          {
+            "itemId": "english-pre-a1-m005-explore-ex01-i02",
+            "position": 2,
+            "english": "cat",
+            "spanish": "gato",
+            "audio": "tts:en-GB:cat"
+          },
+          {
+            "itemId": "english-pre-a1-m005-explore-ex01-i03",
+            "position": 3,
+            "english": "bird",
+            "spanish": "pájaro",
+            "audio": "tts:en-GB:bird"
+          },
+          {
+            "itemId": "english-pre-a1-m005-explore-ex01-i04",
+            "position": 4,
+            "english": "fish",
+            "spanish": "pez",
+            "audio": "tts:en-GB:fish"
+          },
+          {
+            "itemId": "english-pre-a1-m005-explore-ex01-i05",
+            "position": 5,
+            "english": "rabbit",
+            "spanish": "conejo",
+            "audio": "tts:en-GB:rabbit"
+          },
+          {
+            "itemId": "english-pre-a1-m005-explore-ex01-i06",
+            "position": 6,
+            "english": "horse",
+            "spanish": "caballo",
+            "audio": "tts:en-GB:horse"
+          },
+          {
+            "itemId": "english-pre-a1-m005-explore-ex01-i07",
+            "position": 7,
+            "english": "cow",
+            "spanish": "vaca",
+            "audio": "tts:en-GB:cow"
+          },
+          {
+            "itemId": "english-pre-a1-m005-explore-ex01-i08",
+            "position": 8,
+            "english": "duck",
+            "spanish": "pato",
+            "audio": "tts:en-GB:duck"
+          },
+          {
+            "itemId": "english-pre-a1-m005-explore-ex01-i09",
+            "position": 9,
+            "english": "sheep",
+            "spanish": "oveja",
+            "audio": "tts:en-GB:sheep"
+          },
+          {
+            "itemId": "english-pre-a1-m005-explore-ex01-i10",
+            "position": 10,
+            "english": "lion",
+            "spanish": "león",
+            "audio": "tts:en-GB:lion"
+          }
+        ]
+      }
+    },
+    {
+      "sectionId": "english-pre-a1-m005-practice",
+      "sectionKey": "practice",
+      "position": 2,
+      "exercise": {
+        "exerciseId": "english-pre-a1-m005-practice-ex01",
+        "type": "mixed_practice",
+        "items": [
+          {
+            "itemId": "english-pre-a1-m005-practice-ex01-i01",
+            "position": 1,
+            "taskType": "vocabulary_translation",
+            "prompt": "Choose the Spanish meaning of “dog”.",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "perro",
+              "pez",
+              "vaca"
+            ]
+          },
+          {
+            "itemId": "english-pre-a1-m005-practice-ex01-i02",
+            "position": 2,
+            "taskType": "vocabulary_translation",
+            "prompt": "Choose the Spanish meaning of “cat”.",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "gato",
+              "conejo",
+              "pato"
+            ]
+          },
+          {
+            "itemId": "english-pre-a1-m005-practice-ex01-i03",
+            "position": 3,
+            "taskType": "vocabulary_translation",
+            "prompt": "Choose the Spanish meaning of “bird”.",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "pájaro",
+              "caballo",
+              "oveja"
+            ]
+          },
+          {
+            "itemId": "english-pre-a1-m005-practice-ex01-i04",
+            "position": 4,
+            "taskType": "vocabulary_translation",
+            "prompt": "Choose the Spanish meaning of “fish”.",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "pez",
+              "vaca",
+              "león"
+            ]
+          },
+          {
+            "itemId": "english-pre-a1-m005-practice-ex01-i05",
+            "position": 5,
+            "taskType": "vocabulary_translation",
+            "prompt": "Choose the Spanish meaning of “rabbit”.",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "conejo",
+              "pato",
+              "perro"
+            ]
+          },
+          {
+            "itemId": "english-pre-a1-m005-practice-ex01-i06",
+            "position": 6,
+            "taskType": "vocabulary_translation",
+            "prompt": "Choose the Spanish meaning of “horse”.",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "caballo",
+              "oveja",
+              "gato"
+            ]
+          },
+          {
+            "itemId": "english-pre-a1-m005-practice-ex01-i07",
+            "position": 7,
+            "taskType": "vocabulary_translation",
+            "prompt": "Choose the Spanish meaning of “cow”.",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "vaca",
+              "león",
+              "pájaro"
+            ]
+          },
+          {
+            "itemId": "english-pre-a1-m005-practice-ex01-i08",
+            "position": 8,
+            "taskType": "vocabulary_translation",
+            "prompt": "Choose the Spanish meaning of “duck”.",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "pato",
+              "perro",
+              "pez"
+            ]
+          },
+          {
+            "itemId": "english-pre-a1-m005-practice-ex01-i09",
+            "position": 9,
+            "taskType": "vocabulary_translation",
+            "prompt": "Choose the Spanish meaning of “sheep”.",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "oveja",
+              "gato",
+              "conejo"
+            ]
+          },
+          {
+            "itemId": "english-pre-a1-m005-practice-ex01-i10",
+            "position": 10,
+            "taskType": "vocabulary_translation",
+            "prompt": "Choose the Spanish meaning of “lion”.",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "león",
+              "pájaro",
+              "caballo"
+            ]
+          },
+          {
+            "itemId": "english-pre-a1-m005-practice-ex01-i11",
+            "position": 11,
+            "taskType": "topic_vocabulary",
+            "prompt": "Which English word means “perro”?",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "dog",
+              "bird",
+              "horse"
+            ]
+          },
+          {
+            "itemId": "english-pre-a1-m005-practice-ex01-i12",
+            "position": 12,
+            "taskType": "topic_vocabulary",
+            "prompt": "Choose the word for “gato”?",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "cat",
+              "fish",
+              "cow"
+            ]
+          },
+          {
+            "itemId": "english-pre-a1-m005-practice-ex01-i13",
+            "position": 13,
+            "taskType": "topic_vocabulary",
+            "prompt": "Select the English word for “pájaro”?",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "bird",
+              "rabbit",
+              "duck"
+            ]
+          },
+          {
+            "itemId": "english-pre-a1-m005-practice-ex01-i14",
+            "position": 14,
+            "taskType": "topic_vocabulary",
+            "prompt": "What is the English word for “pez”?",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "fish",
+              "horse",
+              "sheep"
+            ]
+          },
+          {
+            "itemId": "english-pre-a1-m005-practice-ex01-i15",
+            "position": 15,
+            "taskType": "topic_vocabulary",
+            "prompt": "Find the word that means “conejo”?",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "rabbit",
+              "cow",
+              "lion"
+            ]
+          },
+          {
+            "itemId": "english-pre-a1-m005-practice-ex01-i16",
+            "position": 16,
+            "taskType": "topic_vocabulary",
+            "prompt": "Which word matches “caballo”?",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "horse",
+              "duck",
+              "dog"
+            ]
+          },
+          {
+            "itemId": "english-pre-a1-m005-practice-ex01-i17",
+            "position": 17,
+            "taskType": "topic_vocabulary",
+            "prompt": "Choose the translation for “vaca”?",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "cow",
+              "sheep",
+              "cat"
+            ]
+          },
+          {
+            "itemId": "english-pre-a1-m005-practice-ex01-i18",
+            "position": 18,
+            "taskType": "topic_vocabulary",
+            "prompt": "Select the matching word for “pato”?",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "duck",
+              "lion",
+              "bird"
+            ]
+          },
+          {
+            "itemId": "english-pre-a1-m005-practice-ex01-i19",
+            "position": 19,
+            "taskType": "topic_vocabulary",
+            "prompt": "What word means “oveja”?",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "sheep",
+              "dog",
+              "fish"
+            ]
+          },
+          {
+            "itemId": "english-pre-a1-m005-practice-ex01-i20",
+            "position": 20,
+            "taskType": "topic_vocabulary",
+            "prompt": "Find the English word for “león”?",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "lion",
+              "cat",
+              "rabbit"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "sectionId": "english-pre-a1-m005-grammar",
+      "sectionKey": "grammar",
+      "position": 3,
+      "exercise": {
+        "exerciseId": "english-pre-a1-m005-grammar-ex01",
+        "type": "grammar",
+        "items": [
+          {
+            "itemId": "english-pre-a1-m005-grammar-ex01-i01",
+            "position": 1,
+            "prompt": "Choose the correct word or phrase: The dog ___ small.",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "is",
+              "are",
+              "am"
+            ]
+          },
+          {
+            "itemId": "english-pre-a1-m005-grammar-ex01-i02",
+            "position": 2,
+            "prompt": "Choose the correct word or phrase: The cats ___ black.",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "are",
+              "is",
+              "am"
+            ]
+          },
+          {
+            "itemId": "english-pre-a1-m005-grammar-ex01-i03",
+            "position": 3,
+            "prompt": "Choose the correct word or phrase: A rabbit ___ long ears.",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "has got",
+              "have got",
+              "is"
+            ]
+          },
+          {
+            "itemId": "english-pre-a1-m005-grammar-ex01-i04",
+            "position": 4,
+            "prompt": "Choose the correct word or phrase: A lion ___ big.",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "is",
+              "are",
+              "has"
+            ]
+          },
+          {
+            "itemId": "english-pre-a1-m005-grammar-ex01-i05",
+            "position": 5,
+            "prompt": "Choose the correct word or phrase: The bird is ___ the tree.",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "in",
+              "on",
+              "under"
+            ]
+          },
+          {
+            "itemId": "english-pre-a1-m005-grammar-ex01-i06",
+            "position": 6,
+            "prompt": "Choose the correct word or phrase: I ___ animals.",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "like",
+              "likes",
+              "liking"
+            ]
+          },
+          {
+            "itemId": "english-pre-a1-m005-grammar-ex01-i07",
+            "position": 7,
+            "prompt": "Choose the correct word or phrase: The cow is ___ the farm.",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "on",
+              "in",
+              "at"
+            ]
+          },
+          {
+            "itemId": "english-pre-a1-m005-grammar-ex01-i08",
+            "position": 8,
+            "prompt": "Choose the correct word or phrase: A fish ___ swim.",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "can",
+              "is",
+              "has"
+            ]
+          },
+          {
+            "itemId": "english-pre-a1-m005-grammar-ex01-i09",
+            "position": 9,
+            "prompt": "Choose the correct word or phrase: The ducks ___ here.",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "are",
+              "is",
+              "am"
+            ]
+          },
+          {
+            "itemId": "english-pre-a1-m005-grammar-ex01-i10",
+            "position": 10,
+            "prompt": "Choose the correct word or phrase: My horse ___ brown.",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "is",
+              "are",
+              "be"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "sectionId": "english-pre-a1-m005-pronunciation",
+      "sectionKey": "pronunciation",
+      "position": 4,
+      "exercise": {
+        "exerciseId": "english-pre-a1-m005-pronunciation-ex01",
+        "type": "pronunciation_cards",
+        "items": [
+          {
+            "itemId": "english-pre-a1-m005-pronunciation-ex01-i01",
+            "position": 1,
+            "word": "dog",
+            "translation": "perro",
+            "pronunciationGuide": "dog",
+            "audio": "tts:en-GB:dog"
+          },
+          {
+            "itemId": "english-pre-a1-m005-pronunciation-ex01-i02",
+            "position": 2,
+            "word": "cat",
+            "translation": "gato",
+            "pronunciationGuide": "kat",
+            "audio": "tts:en-GB:cat"
+          },
+          {
+            "itemId": "english-pre-a1-m005-pronunciation-ex01-i03",
+            "position": 3,
+            "word": "bird",
+            "translation": "pájaro",
+            "pronunciationGuide": "berd",
+            "audio": "tts:en-GB:bird"
+          },
+          {
+            "itemId": "english-pre-a1-m005-pronunciation-ex01-i04",
+            "position": 4,
+            "word": "fish",
+            "translation": "pez",
+            "pronunciationGuide": "fish",
+            "audio": "tts:en-GB:fish"
+          },
+          {
+            "itemId": "english-pre-a1-m005-pronunciation-ex01-i05",
+            "position": 5,
+            "word": "rabbit",
+            "translation": "conejo",
+            "pronunciationGuide": "rá-bit",
+            "audio": "tts:en-GB:rabbit"
+          },
+          {
+            "itemId": "english-pre-a1-m005-pronunciation-ex01-i06",
+            "position": 6,
+            "word": "horse",
+            "translation": "caballo",
+            "pronunciationGuide": "hors",
+            "audio": "tts:en-GB:horse"
+          },
+          {
+            "itemId": "english-pre-a1-m005-pronunciation-ex01-i07",
+            "position": 7,
+            "word": "cow",
+            "translation": "vaca",
+            "pronunciationGuide": "káu",
+            "audio": "tts:en-GB:cow"
+          },
+          {
+            "itemId": "english-pre-a1-m005-pronunciation-ex01-i08",
+            "position": 8,
+            "word": "duck",
+            "translation": "pato",
+            "pronunciationGuide": "dak",
+            "audio": "tts:en-GB:duck"
+          },
+          {
+            "itemId": "english-pre-a1-m005-pronunciation-ex01-i09",
+            "position": 9,
+            "word": "sheep",
+            "translation": "oveja",
+            "pronunciationGuide": "shíip",
+            "audio": "tts:en-GB:sheep"
+          },
+          {
+            "itemId": "english-pre-a1-m005-pronunciation-ex01-i10",
+            "position": 10,
+            "word": "lion",
+            "translation": "león",
+            "pronunciationGuide": "lái-an",
+            "audio": "tts:en-GB:lion"
+          }
+        ]
+      }
+    },
+    {
+      "sectionId": "english-pre-a1-m005-reading",
+      "sectionKey": "reading",
+      "position": 5,
+      "exercise": {
+        "exerciseId": "english-pre-a1-m005-reading-ex01",
+        "type": "reading_comprehension",
+        "content": {
+          "passageId": "english-pre-a1-m005-reading-passage-01",
+          "passage": "I have got a small dog called Max. My friend has got a black cat. We see a bird in a tree and a fish in a pond. At the farm there is a cow, a horse, a duck and a sheep. A rabbit has got long ears. A lion is big."
+        },
+        "items": [
+          {
+            "itemId": "english-pre-a1-m005-reading-ex01-i01",
+            "position": 1,
+            "prompt": "What is the dog's name?",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "Max",
+              "Ben",
+              "Tom"
+            ]
+          },
+          {
+            "itemId": "english-pre-a1-m005-reading-ex01-i02",
+            "position": 2,
+            "prompt": "Is the dog big?",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "No, it is small",
+              "Yes, it is big",
+              "It does not say"
+            ]
+          },
+          {
+            "itemId": "english-pre-a1-m005-reading-ex01-i03",
+            "position": 3,
+            "prompt": "What colour is the cat?",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "Black",
+              "White",
+              "Brown"
+            ]
+          },
+          {
+            "itemId": "english-pre-a1-m005-reading-ex01-i04",
+            "position": 4,
+            "prompt": "Where is the bird?",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "In the tree",
+              "In the pond",
+              "At school"
+            ]
+          },
+          {
+            "itemId": "english-pre-a1-m005-reading-ex01-i05",
+            "position": 5,
+            "prompt": "Where is the fish?",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "In the pond",
+              "In the tree",
+              "On the farm"
+            ]
+          },
+          {
+            "itemId": "english-pre-a1-m005-reading-ex01-i06",
+            "position": 6,
+            "prompt": "Which animal is at the farm?",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "A cow",
+              "A tiger",
+              "A monkey"
+            ]
+          },
+          {
+            "itemId": "english-pre-a1-m005-reading-ex01-i07",
+            "position": 7,
+            "prompt": "Which animal has long ears?",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "A rabbit",
+              "A lion",
+              "A duck"
+            ]
+          },
+          {
+            "itemId": "english-pre-a1-m005-reading-ex01-i08",
+            "position": 8,
+            "prompt": "Is the lion small?",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "No, it is big",
+              "Yes, it is small",
+              "It is not an animal"
+            ]
+          },
+          {
+            "itemId": "english-pre-a1-m005-reading-ex01-i09",
+            "position": 9,
+            "prompt": "Name one farm animal.",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "A sheep",
+              "A shark",
+              "A whale"
+            ]
+          },
+          {
+            "itemId": "english-pre-a1-m005-reading-ex01-i10",
+            "position": 10,
+            "prompt": "What does the writer like?",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "Animals",
+              "Cars",
+              "Books"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "sectionId": "english-pre-a1-m005-writing",
+      "sectionKey": "writing",
+      "position": 6,
+      "exercise": {
+        "exerciseId": "english-pre-a1-m005-writing-ex01",
+        "type": "dictation",
+        "items": [
+          {
+            "itemId": "english-pre-a1-m005-writing-ex01-i01",
+            "position": 1,
+            "audio": "tts:en-GB:dog",
+            "evaluation": {
+              "type": "normalised_text"
+            }
+          },
+          {
+            "itemId": "english-pre-a1-m005-writing-ex01-i02",
+            "position": 2,
+            "audio": "tts:en-GB:cat",
+            "evaluation": {
+              "type": "normalised_text"
+            }
+          },
+          {
+            "itemId": "english-pre-a1-m005-writing-ex01-i03",
+            "position": 3,
+            "audio": "tts:en-GB:bird",
+            "evaluation": {
+              "type": "normalised_text"
+            }
+          },
+          {
+            "itemId": "english-pre-a1-m005-writing-ex01-i04",
+            "position": 4,
+            "audio": "tts:en-GB:fish",
+            "evaluation": {
+              "type": "normalised_text"
+            }
+          },
+          {
+            "itemId": "english-pre-a1-m005-writing-ex01-i05",
+            "position": 5,
+            "audio": "tts:en-GB:rabbit",
+            "evaluation": {
+              "type": "normalised_text"
+            }
+          },
+          {
+            "itemId": "english-pre-a1-m005-writing-ex01-i06",
+            "position": 6,
+            "audio": "tts:en-GB:horse",
+            "evaluation": {
+              "type": "normalised_text"
+            }
+          },
+          {
+            "itemId": "english-pre-a1-m005-writing-ex01-i07",
+            "position": 7,
+            "audio": "tts:en-GB:cow",
+            "evaluation": {
+              "type": "normalised_text"
+            }
+          },
+          {
+            "itemId": "english-pre-a1-m005-writing-ex01-i08",
+            "position": 8,
+            "audio": "tts:en-GB:duck",
+            "evaluation": {
+              "type": "normalised_text"
+            }
+          },
+          {
+            "itemId": "english-pre-a1-m005-writing-ex01-i09",
+            "position": 9,
+            "audio": "tts:en-GB:sheep",
+            "evaluation": {
+              "type": "normalised_text"
+            }
+          },
+          {
+            "itemId": "english-pre-a1-m005-writing-ex01-i10",
+            "position": 10,
+            "audio": "tts:en-GB:lion",
+            "evaluation": {
+              "type": "normalised_text"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "sectionId": "english-pre-a1-m005-speaking",
+      "sectionKey": "speaking",
+      "position": 7,
+      "exercise": {
+        "exerciseId": "english-pre-a1-m005-speaking-ex01",
+        "type": "speaking_prompts",
+        "items": [
+          {
+            "itemId": "english-pre-a1-m005-speaking-ex01-i01",
+            "position": 1,
+            "prompt": "Say a short sentence using “dog”.",
+            "modelAnswer": "I can see a dog.",
+            "evaluation": {
+              "type": "transcription_feedback",
+              "transcriptionSeparateFromPronunciation": true
+            }
+          },
+          {
+            "itemId": "english-pre-a1-m005-speaking-ex01-i02",
+            "position": 2,
+            "prompt": "Say a short sentence using “cat”.",
+            "modelAnswer": "I can see a cat.",
+            "evaluation": {
+              "type": "transcription_feedback",
+              "transcriptionSeparateFromPronunciation": true
+            }
+          },
+          {
+            "itemId": "english-pre-a1-m005-speaking-ex01-i03",
+            "position": 3,
+            "prompt": "Say a short sentence using “bird”.",
+            "modelAnswer": "A bird can fly.",
+            "evaluation": {
+              "type": "transcription_feedback",
+              "transcriptionSeparateFromPronunciation": true
+            }
+          },
+          {
+            "itemId": "english-pre-a1-m005-speaking-ex01-i04",
+            "position": 4,
+            "prompt": "Say a short sentence using “fish”.",
+            "modelAnswer": "A fish can swim.",
+            "evaluation": {
+              "type": "transcription_feedback",
+              "transcriptionSeparateFromPronunciation": true
+            }
+          },
+          {
+            "itemId": "english-pre-a1-m005-speaking-ex01-i05",
+            "position": 5,
+            "prompt": "Say a short sentence using “rabbit”.",
+            "modelAnswer": "A rabbit has long ears.",
+            "evaluation": {
+              "type": "transcription_feedback",
+              "transcriptionSeparateFromPronunciation": true
+            }
+          },
+          {
+            "itemId": "english-pre-a1-m005-speaking-ex01-i06",
+            "position": 6,
+            "prompt": "Say a short sentence using “horse”.",
+            "modelAnswer": "A horse lives on a farm.",
+            "evaluation": {
+              "type": "transcription_feedback",
+              "transcriptionSeparateFromPronunciation": true
+            }
+          },
+          {
+            "itemId": "english-pre-a1-m005-speaking-ex01-i07",
+            "position": 7,
+            "prompt": "Say a short sentence using “cow”.",
+            "modelAnswer": "A cow gives us milk.",
+            "evaluation": {
+              "type": "transcription_feedback",
+              "transcriptionSeparateFromPronunciation": true
+            }
+          },
+          {
+            "itemId": "english-pre-a1-m005-speaking-ex01-i08",
+            "position": 8,
+            "prompt": "Say a short sentence using “duck”.",
+            "modelAnswer": "A duck can swim.",
+            "evaluation": {
+              "type": "transcription_feedback",
+              "transcriptionSeparateFromPronunciation": true
+            }
+          },
+          {
+            "itemId": "english-pre-a1-m005-speaking-ex01-i09",
+            "position": 9,
+            "prompt": "Say a short sentence using “sheep”.",
+            "modelAnswer": "A sheep has wool.",
+            "evaluation": {
+              "type": "transcription_feedback",
+              "transcriptionSeparateFromPronunciation": true
+            }
+          },
+          {
+            "itemId": "english-pre-a1-m005-speaking-ex01-i10",
+            "position": 10,
+            "prompt": "Say a short sentence using “lion”.",
+            "modelAnswer": "A lion is a wild animal.",
+            "evaluation": {
+              "type": "transcription_feedback",
+              "transcriptionSeparateFromPronunciation": true
+            }
+          }
+        ]
+      }
+    },
+    {
+      "sectionId": "english-pre-a1-m005-listening",
+      "sectionKey": "listening",
+      "position": 8,
+      "exercise": {
+        "exerciseId": "english-pre-a1-m005-listening-ex01",
+        "type": "listening_gap_fill",
+        "content": {
+          "audio": "tts:en-GB:The dog is called Max. My friend has got a cat. A bird is in the tree. A fish swims in the pond. The rabbit has long ears. A horse lives on the farm. The cow gives us milk. A duck can swim on the pond. A sheep has wool. The lion is a big wild animal.",
+          "audioLocale": "en-GB",
+          "transcriptTemplate": "The [[gap-01]] is called Max. My friend has got a [[gap-02]]. A [[gap-03]] is in the tree. A [[gap-04]] swims in the pond. The [[gap-05]] has long ears. A [[gap-06]] lives on the farm. The [[gap-07]] gives us milk. A [[gap-08]] can swim on the pond. A [[gap-09]] has wool. The [[gap-10]] is a big wild animal.",
+          "wordBank": [
+            {
+              "wordId": "english-pre-a1-m005-listening-word-01",
+              "word": "dog"
+            },
+            {
+              "wordId": "english-pre-a1-m005-listening-word-02",
+              "word": "cat"
+            },
+            {
+              "wordId": "english-pre-a1-m005-listening-word-03",
+              "word": "bird"
+            },
+            {
+              "wordId": "english-pre-a1-m005-listening-word-04",
+              "word": "fish"
+            },
+            {
+              "wordId": "english-pre-a1-m005-listening-word-05",
+              "word": "rabbit"
+            },
+            {
+              "wordId": "english-pre-a1-m005-listening-word-06",
+              "word": "horse"
+            },
+            {
+              "wordId": "english-pre-a1-m005-listening-word-07",
+              "word": "cow"
+            },
+            {
+              "wordId": "english-pre-a1-m005-listening-word-08",
+              "word": "duck"
+            },
+            {
+              "wordId": "english-pre-a1-m005-listening-word-09",
+              "word": "sheep"
+            },
+            {
+              "wordId": "english-pre-a1-m005-listening-word-10",
+              "word": "lion"
+            }
+          ],
+          "interaction": "select_place_move_replace"
+        },
+        "items": [
+          {
+            "itemId": "english-pre-a1-m005-listening-ex01-i01",
+            "position": 1,
+            "gapToken": "[[gap-01]]"
+          },
+          {
+            "itemId": "english-pre-a1-m005-listening-ex01-i02",
+            "position": 2,
+            "gapToken": "[[gap-02]]"
+          },
+          {
+            "itemId": "english-pre-a1-m005-listening-ex01-i03",
+            "position": 3,
+            "gapToken": "[[gap-03]]"
+          },
+          {
+            "itemId": "english-pre-a1-m005-listening-ex01-i04",
+            "position": 4,
+            "gapToken": "[[gap-04]]"
+          },
+          {
+            "itemId": "english-pre-a1-m005-listening-ex01-i05",
+            "position": 5,
+            "gapToken": "[[gap-05]]"
+          },
+          {
+            "itemId": "english-pre-a1-m005-listening-ex01-i06",
+            "position": 6,
+            "gapToken": "[[gap-06]]"
+          },
+          {
+            "itemId": "english-pre-a1-m005-listening-ex01-i07",
+            "position": 7,
+            "gapToken": "[[gap-07]]"
+          },
+          {
+            "itemId": "english-pre-a1-m005-listening-ex01-i08",
+            "position": 8,
+            "gapToken": "[[gap-08]]"
+          },
+          {
+            "itemId": "english-pre-a1-m005-listening-ex01-i09",
+            "position": 9,
+            "gapToken": "[[gap-09]]"
+          },
+          {
+            "itemId": "english-pre-a1-m005-listening-ex01-i10",
+            "position": 10,
+            "gapToken": "[[gap-10]]"
+          }
+        ]
+      }
+    }
+  ]
+}

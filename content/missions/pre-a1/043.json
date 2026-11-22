@@ -1,0 +1,1155 @@
+{
+  "schemaVersion": "1.2.0",
+  "contentVersion": 1,
+  "course": {
+    "courseId": "english-pre-a1",
+    "level": "PRE-A1",
+    "language": "en-GB"
+  },
+  "unit": {
+    "unitId": "english-pre-a1-unit-04",
+    "courseId": "english-pre-a1",
+    "position": 43,
+    "title": "Transport Town"
+  },
+  "mission": {
+    "missionId": "english-pre-a1-m043",
+    "unitId": "english-pre-a1-unit-04",
+    "position": 43,
+    "title": "Transport Town"
+  },
+  "sections": [
+    {
+      "sectionId": "english-pre-a1-m043-explore",
+      "sectionKey": "explore",
+      "position": 1,
+      "exercise": {
+        "exerciseId": "english-pre-a1-m043-explore-ex01",
+        "type": "vocabulary_pairs",
+        "items": [
+          {
+            "itemId": "english-pre-a1-m043-explore-ex01-i01",
+            "position": 1,
+            "english": "car",
+            "spanish": "coche",
+            "audio": "tts:en-GB:car"
+          },
+          {
+            "itemId": "english-pre-a1-m043-explore-ex01-i02",
+            "position": 2,
+            "english": "bus",
+            "spanish": "autobús",
+            "audio": "tts:en-GB:bus"
+          },
+          {
+            "itemId": "english-pre-a1-m043-explore-ex01-i03",
+            "position": 3,
+            "english": "train",
+            "spanish": "tren",
+            "audio": "tts:en-GB:train"
+          },
+          {
+            "itemId": "english-pre-a1-m043-explore-ex01-i04",
+            "position": 4,
+            "english": "bike",
+            "spanish": "bicicleta",
+            "audio": "tts:en-GB:bike"
+          },
+          {
+            "itemId": "english-pre-a1-m043-explore-ex01-i05",
+            "position": 5,
+            "english": "boat",
+            "spanish": "barco",
+            "audio": "tts:en-GB:boat"
+          },
+          {
+            "itemId": "english-pre-a1-m043-explore-ex01-i06",
+            "position": 6,
+            "english": "plane",
+            "spanish": "avión",
+            "audio": "tts:en-GB:plane"
+          },
+          {
+            "itemId": "english-pre-a1-m043-explore-ex01-i07",
+            "position": 7,
+            "english": "taxi",
+            "spanish": "taxi",
+            "audio": "tts:en-GB:taxi"
+          },
+          {
+            "itemId": "english-pre-a1-m043-explore-ex01-i08",
+            "position": 8,
+            "english": "station",
+            "spanish": "estación",
+            "audio": "tts:en-GB:station"
+          },
+          {
+            "itemId": "english-pre-a1-m043-explore-ex01-i09",
+            "position": 9,
+            "english": "driver",
+            "spanish": "conductor",
+            "audio": "tts:en-GB:driver"
+          },
+          {
+            "itemId": "english-pre-a1-m043-explore-ex01-i10",
+            "position": 10,
+            "english": "ticket",
+            "spanish": "billete",
+            "audio": "tts:en-GB:ticket"
+          }
+        ],
+        "theory": {
+          "title": "It is a…; nombres de medios de transporte",
+          "explanation": "Para identificar un medio de transporte, usamos «It is a…» y el nombre: «It is a bus». La palabra del transporte va después de a.",
+          "patterns": [
+            {
+              "label": "Modelo",
+              "pattern": "It is a bus. It is a train.",
+              "examples": [
+                "It is a bus. It is a train.",
+                "It is a bus."
+              ]
+            },
+            {
+              "label": "Práctica",
+              "pattern": "Lee cada frase y elige el medio de transporte correcto.",
+              "examples": [
+                "It is a bus."
+              ]
+            }
+          ],
+          "tip": "Lee el ejemplo y observa cómo se usa el vocabulario en una frase."
+        }
+      }
+    },
+    {
+      "sectionId": "english-pre-a1-m043-practice",
+      "sectionKey": "practice",
+      "position": 2,
+      "exercise": {
+        "exerciseId": "english-pre-a1-m043-practice-ex01",
+        "type": "mixed_practice",
+        "items": [
+          {
+            "itemId": "english-pre-a1-m043-practice-ex01-i01",
+            "position": 1,
+            "taskType": "translation_multiple_choice",
+            "prompt": "Traduce “car” al español.",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "coche",
+              "bicicleta",
+              "taxi"
+            ]
+          },
+          {
+            "itemId": "english-pre-a1-m043-practice-ex01-i02",
+            "position": 2,
+            "taskType": "translation_multiple_choice",
+            "prompt": "Traduce “bus” al español.",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "autobús",
+              "barco",
+              "estación"
+            ]
+          },
+          {
+            "itemId": "english-pre-a1-m043-practice-ex01-i03",
+            "position": 3,
+            "taskType": "translation_multiple_choice",
+            "prompt": "Traduce “train” al español.",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "tren",
+              "avión",
+              "conductor"
+            ]
+          },
+          {
+            "itemId": "english-pre-a1-m043-practice-ex01-i04",
+            "position": 4,
+            "taskType": "translation_multiple_choice",
+            "prompt": "Traduce “bike” al español.",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "bicicleta",
+              "taxi",
+              "billete"
+            ]
+          },
+          {
+            "itemId": "english-pre-a1-m043-practice-ex01-i05",
+            "position": 5,
+            "taskType": "translation_multiple_choice",
+            "prompt": "Traduce “boat” al español.",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "barco",
+              "estación",
+              "coche"
+            ]
+          },
+          {
+            "itemId": "english-pre-a1-m043-practice-ex01-i06",
+            "position": 6,
+            "taskType": "translation_multiple_choice",
+            "prompt": "Traduce “plane” al español.",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "avión",
+              "conductor",
+              "autobús"
+            ]
+          },
+          {
+            "itemId": "english-pre-a1-m043-practice-ex01-i07",
+            "position": 7,
+            "taskType": "translation_multiple_choice",
+            "prompt": "Traduce “taxi” al español.",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "taxi",
+              "billete",
+              "tren"
+            ]
+          },
+          {
+            "itemId": "english-pre-a1-m043-practice-ex01-i08",
+            "position": 8,
+            "taskType": "translation_multiple_choice",
+            "prompt": "Traduce “station” al español.",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "estación",
+              "coche",
+              "bicicleta"
+            ]
+          },
+          {
+            "itemId": "english-pre-a1-m043-practice-ex01-i09",
+            "position": 9,
+            "taskType": "translation_multiple_choice",
+            "prompt": "Traduce “driver” al español.",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "conductor",
+              "autobús",
+              "barco"
+            ]
+          },
+          {
+            "itemId": "english-pre-a1-m043-practice-ex01-i10",
+            "position": 10,
+            "taskType": "translation_multiple_choice",
+            "prompt": "Traduce “ticket” al español.",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "billete",
+              "tren",
+              "avión"
+            ]
+          },
+          {
+            "itemId": "english-pre-a1-m043-practice-ex01-i11",
+            "position": 11,
+            "taskType": "translation_multiple_choice",
+            "prompt": "Selecciona la palabra inglesa para “coche”.",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "car",
+              "train",
+              "plane"
+            ]
+          },
+          {
+            "itemId": "english-pre-a1-m043-practice-ex01-i12",
+            "position": 12,
+            "taskType": "translation_multiple_choice",
+            "prompt": "Selecciona la palabra inglesa para “autobús”.",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "bus",
+              "bike",
+              "taxi"
+            ]
+          },
+          {
+            "itemId": "english-pre-a1-m043-practice-ex01-i13",
+            "position": 13,
+            "taskType": "translation_multiple_choice",
+            "prompt": "Selecciona la palabra inglesa para “tren”.",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "train",
+              "boat",
+              "station"
+            ]
+          },
+          {
+            "itemId": "english-pre-a1-m043-practice-ex01-i14",
+            "position": 14,
+            "taskType": "translation_multiple_choice",
+            "prompt": "Selecciona la palabra inglesa para “bicicleta”.",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "bike",
+              "plane",
+              "driver"
+            ]
+          },
+          {
+            "itemId": "english-pre-a1-m043-practice-ex01-i15",
+            "position": 15,
+            "taskType": "translation_multiple_choice",
+            "prompt": "Selecciona la palabra inglesa para “barco”.",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "boat",
+              "taxi",
+              "ticket"
+            ]
+          },
+          {
+            "itemId": "english-pre-a1-m043-practice-ex01-i16",
+            "position": 16,
+            "taskType": "translation_multiple_choice",
+            "prompt": "Selecciona la palabra inglesa para “avión”.",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "plane",
+              "station",
+              "car"
+            ]
+          },
+          {
+            "itemId": "english-pre-a1-m043-practice-ex01-i17",
+            "position": 17,
+            "taskType": "translation_multiple_choice",
+            "prompt": "Selecciona la palabra inglesa para “taxi”.",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "taxi",
+              "driver",
+              "bus"
+            ]
+          },
+          {
+            "itemId": "english-pre-a1-m043-practice-ex01-i18",
+            "position": 18,
+            "taskType": "translation_multiple_choice",
+            "prompt": "Selecciona la palabra inglesa para “estación”.",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "station",
+              "ticket",
+              "train"
+            ]
+          },
+          {
+            "itemId": "english-pre-a1-m043-practice-ex01-i19",
+            "position": 19,
+            "taskType": "translation_multiple_choice",
+            "prompt": "Selecciona la palabra inglesa para “conductor”.",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "driver",
+              "car",
+              "bike"
+            ]
+          },
+          {
+            "itemId": "english-pre-a1-m043-practice-ex01-i20",
+            "position": 20,
+            "taskType": "translation_multiple_choice",
+            "prompt": "Selecciona la palabra inglesa para “billete”.",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "ticket",
+              "bus",
+              "boat"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "sectionId": "english-pre-a1-m043-grammar",
+      "sectionKey": "grammar",
+      "position": 3,
+      "exercise": {
+        "exerciseId": "english-pre-a1-m043-grammar-ex01",
+        "type": "grammar",
+        "items": [
+          {
+            "itemId": "english-pre-a1-m043-grammar-ex01-i01",
+            "position": 1,
+            "prompt": "Choose the correct sentence.",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "It is a train.",
+              "It are a train.",
+              "It is train a."
+            ]
+          },
+          {
+            "itemId": "english-pre-a1-m043-grammar-ex01-i02",
+            "position": 2,
+            "prompt": "Complete: It is ___ car.",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "a",
+              "an",
+              "are"
+            ]
+          },
+          {
+            "itemId": "english-pre-a1-m043-grammar-ex01-i03",
+            "position": 3,
+            "prompt": "Which word means “avión”?",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "plane",
+              "boat",
+              "bike"
+            ]
+          },
+          {
+            "itemId": "english-pre-a1-m043-grammar-ex01-i04",
+            "position": 4,
+            "prompt": "Choose the correct sentence about a taxi.",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "It is a taxi.",
+              "It is taxi a.",
+              "It are a taxi."
+            ]
+          },
+          {
+            "itemId": "english-pre-a1-m043-grammar-ex01-i05",
+            "position": 5,
+            "prompt": "A plane travels in the ___.",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "sky",
+              "river",
+              "road"
+            ]
+          },
+          {
+            "itemId": "english-pre-a1-m043-grammar-ex01-i06",
+            "position": 6,
+            "prompt": "A boat travels on ___.",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "water",
+              "rails",
+              "the sky"
+            ]
+          },
+          {
+            "itemId": "english-pre-a1-m043-grammar-ex01-i07",
+            "position": 7,
+            "prompt": "Complete: It is ___ bus.",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "a",
+              "an",
+              "are"
+            ]
+          },
+          {
+            "itemId": "english-pre-a1-m043-grammar-ex01-i08",
+            "position": 8,
+            "prompt": "A train stops at a ___.",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "station",
+              "airport",
+              "harbour"
+            ]
+          },
+          {
+            "itemId": "english-pre-a1-m043-grammar-ex01-i09",
+            "position": 9,
+            "prompt": "Choose: A bike has two ___.",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "wheels",
+              "wings",
+              "doors"
+            ]
+          },
+          {
+            "itemId": "english-pre-a1-m043-grammar-ex01-i10",
+            "position": 10,
+            "prompt": "Complete: I go ___ bus.",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "by",
+              "on",
+              "in"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "sectionId": "english-pre-a1-m043-pronunciation",
+      "sectionKey": "pronunciation",
+      "position": 4,
+      "exercise": {
+        "exerciseId": "english-pre-a1-m043-pronunciation-ex01",
+        "type": "pronunciation_cards",
+        "items": [
+          {
+            "itemId": "english-pre-a1-m043-pronunciation-ex01-i01",
+            "position": 1,
+            "word": "car",
+            "translation": "coche",
+            "pronunciationGuide": "kaa",
+            "audio": "tts:en-GB:car"
+          },
+          {
+            "itemId": "english-pre-a1-m043-pronunciation-ex01-i02",
+            "position": 2,
+            "word": "bus",
+            "translation": "autobús",
+            "pronunciationGuide": "bas",
+            "audio": "tts:en-GB:bus"
+          },
+          {
+            "itemId": "english-pre-a1-m043-pronunciation-ex01-i03",
+            "position": 3,
+            "word": "train",
+            "translation": "tren",
+            "pronunciationGuide": "tréin",
+            "audio": "tts:en-GB:train"
+          },
+          {
+            "itemId": "english-pre-a1-m043-pronunciation-ex01-i04",
+            "position": 4,
+            "word": "bike",
+            "translation": "bicicleta",
+            "pronunciationGuide": "báik",
+            "audio": "tts:en-GB:bike"
+          },
+          {
+            "itemId": "english-pre-a1-m043-pronunciation-ex01-i05",
+            "position": 5,
+            "word": "boat",
+            "translation": "barco",
+            "pronunciationGuide": "bóut",
+            "audio": "tts:en-GB:boat"
+          },
+          {
+            "itemId": "english-pre-a1-m043-pronunciation-ex01-i06",
+            "position": 6,
+            "word": "plane",
+            "translation": "avión",
+            "pronunciationGuide": "pléin",
+            "audio": "tts:en-GB:plane"
+          },
+          {
+            "itemId": "english-pre-a1-m043-pronunciation-ex01-i07",
+            "position": 7,
+            "word": "taxi",
+            "translation": "taxi",
+            "pronunciationGuide": "ták-si",
+            "audio": "tts:en-GB:taxi"
+          },
+          {
+            "itemId": "english-pre-a1-m043-pronunciation-ex01-i08",
+            "position": 8,
+            "word": "station",
+            "translation": "estación",
+            "pronunciationGuide": "Escucha y repite despacio",
+            "audio": "tts:en-GB:station"
+          },
+          {
+            "itemId": "english-pre-a1-m043-pronunciation-ex01-i09",
+            "position": 9,
+            "word": "driver",
+            "translation": "conductor",
+            "pronunciationGuide": "Escucha y repite despacio",
+            "audio": "tts:en-GB:driver"
+          },
+          {
+            "itemId": "english-pre-a1-m043-pronunciation-ex01-i10",
+            "position": 10,
+            "word": "ticket",
+            "translation": "billete",
+            "pronunciationGuide": "Escucha y repite despacio",
+            "audio": "tts:en-GB:ticket"
+          }
+        ]
+      }
+    },
+    {
+      "sectionId": "english-pre-a1-m043-reading",
+      "sectionKey": "reading",
+      "position": 5,
+      "exercise": {
+        "exerciseId": "english-pre-a1-m043-reading-ex01",
+        "type": "reading_comprehension",
+        "items": [
+          {
+            "itemId": "english-pre-a1-m043-reading-ex01-i01",
+            "position": 1,
+            "prompt": "What is the town called?",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "Transport Town",
+              "Animal Town",
+              "Party Town"
+            ]
+          },
+          {
+            "itemId": "english-pre-a1-m043-reading-ex01-i02",
+            "position": 2,
+            "prompt": "Where does Mia see a bus?",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "Near the school",
+              "At the beach",
+              "In the park"
+            ]
+          },
+          {
+            "itemId": "english-pre-a1-m043-reading-ex01-i03",
+            "position": 3,
+            "prompt": "What is next to the shop?",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "A car",
+              "A boat",
+              "A train"
+            ]
+          },
+          {
+            "itemId": "english-pre-a1-m043-reading-ex01-i04",
+            "position": 4,
+            "prompt": "Where does the train go?",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "Past the station",
+              "Through the park",
+              "Into the river"
+            ]
+          },
+          {
+            "itemId": "english-pre-a1-m043-reading-ex01-i05",
+            "position": 5,
+            "prompt": "Who rides a bike?",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "Mia's brother",
+              "Mia's mum",
+              "Mia's teacher"
+            ]
+          },
+          {
+            "itemId": "english-pre-a1-m043-reading-ex01-i06",
+            "position": 6,
+            "prompt": "Where is the boat?",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "On the river",
+              "In the sky",
+              "At the station"
+            ]
+          },
+          {
+            "itemId": "english-pre-a1-m043-reading-ex01-i07",
+            "position": 7,
+            "prompt": "Where is the plane?",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "In the sky",
+              "On the river",
+              "Near the shop"
+            ]
+          },
+          {
+            "itemId": "english-pre-a1-m043-reading-ex01-i08",
+            "position": 8,
+            "prompt": "What does Mum take home?",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "A taxi",
+              "A train",
+              "A boat"
+            ]
+          },
+          {
+            "itemId": "english-pre-a1-m043-reading-ex01-i09",
+            "position": 9,
+            "prompt": "Which transport moves on the river?",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "A boat",
+              "A bus",
+              "A bike"
+            ]
+          },
+          {
+            "itemId": "english-pre-a1-m043-reading-ex01-i10",
+            "position": 10,
+            "prompt": "What is the text about?",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "Transport in a town",
+              "Animals on a farm",
+              "Food in a café"
+            ]
+          }
+        ],
+        "content": {
+          "passageId": "english-pre-a1-m043-reading-passage-01",
+          "passage": "It is Transport Town. Mia sees a bus near the school. A car is next to the shop. A train goes past the station. Her brother rides a bike in the park. They see a boat on the river and a plane in the sky. At the end, Mum takes a taxi home."
+        }
+      }
+    },
+    {
+      "sectionId": "english-pre-a1-m043-writing",
+      "sectionKey": "writing",
+      "position": 6,
+      "exercise": {
+        "exerciseId": "english-pre-a1-m043-writing-ex01",
+        "type": "dictation",
+        "items": [
+          {
+            "itemId": "english-pre-a1-m043-writing-ex01-i01",
+            "position": 1,
+            "audio": "tts:en-GB:car",
+            "evaluation": {
+              "type": "normalised_text"
+            }
+          },
+          {
+            "itemId": "english-pre-a1-m043-writing-ex01-i02",
+            "position": 2,
+            "audio": "tts:en-GB:bus",
+            "evaluation": {
+              "type": "normalised_text"
+            }
+          },
+          {
+            "itemId": "english-pre-a1-m043-writing-ex01-i03",
+            "position": 3,
+            "audio": "tts:en-GB:train",
+            "evaluation": {
+              "type": "normalised_text"
+            }
+          },
+          {
+            "itemId": "english-pre-a1-m043-writing-ex01-i04",
+            "position": 4,
+            "audio": "tts:en-GB:bike",
+            "evaluation": {
+              "type": "normalised_text"
+            }
+          },
+          {
+            "itemId": "english-pre-a1-m043-writing-ex01-i05",
+            "position": 5,
+            "audio": "tts:en-GB:boat",
+            "evaluation": {
+              "type": "normalised_text"
+            }
+          },
+          {
+            "itemId": "english-pre-a1-m043-writing-ex01-i06",
+            "position": 6,
+            "audio": "tts:en-GB:plane",
+            "evaluation": {
+              "type": "normalised_text"
+            }
+          },
+          {
+            "itemId": "english-pre-a1-m043-writing-ex01-i07",
+            "position": 7,
+            "audio": "tts:en-GB:taxi",
+            "evaluation": {
+              "type": "normalised_text"
+            }
+          },
+          {
+            "itemId": "english-pre-a1-m043-writing-ex01-i08",
+            "position": 8,
+            "audio": "tts:en-GB:station",
+            "evaluation": {
+              "type": "normalised_text"
+            }
+          },
+          {
+            "itemId": "english-pre-a1-m043-writing-ex01-i09",
+            "position": 9,
+            "audio": "tts:en-GB:driver",
+            "evaluation": {
+              "type": "normalised_text"
+            }
+          },
+          {
+            "itemId": "english-pre-a1-m043-writing-ex01-i10",
+            "position": 10,
+            "audio": "tts:en-GB:ticket",
+            "evaluation": {
+              "type": "normalised_text"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "sectionId": "english-pre-a1-m043-speaking",
+      "sectionKey": "speaking",
+      "position": 7,
+      "exercise": {
+        "exerciseId": "english-pre-a1-m043-speaking-ex01",
+        "type": "speaking_prompts",
+        "items": [
+          {
+            "itemId": "english-pre-a1-m043-speaking-ex01-i01",
+            "position": 1,
+            "prompt": "Say the word “car”.",
+            "audio": "tts:en-GB:car",
+            "evaluation": {
+              "type": "transcription_feedback",
+              "transcriptionSeparateFromPronunciation": true
+            },
+            "modelAnswer": "car"
+          },
+          {
+            "itemId": "english-pre-a1-m043-speaking-ex01-i02",
+            "position": 2,
+            "prompt": "Make a sentence with “bus”.",
+            "audio": "tts:en-GB:I can see bus.",
+            "evaluation": {
+              "type": "transcription_feedback",
+              "transcriptionSeparateFromPronunciation": true
+            },
+            "modelAnswer": "I can see bus."
+          },
+          {
+            "itemId": "english-pre-a1-m043-speaking-ex01-i03",
+            "position": 3,
+            "prompt": "Say the word “train”.",
+            "audio": "tts:en-GB:train",
+            "evaluation": {
+              "type": "transcription_feedback",
+              "transcriptionSeparateFromPronunciation": true
+            },
+            "modelAnswer": "train"
+          },
+          {
+            "itemId": "english-pre-a1-m043-speaking-ex01-i04",
+            "position": 4,
+            "prompt": "Make a sentence with “bike”.",
+            "audio": "tts:en-GB:I can see bike.",
+            "evaluation": {
+              "type": "transcription_feedback",
+              "transcriptionSeparateFromPronunciation": true
+            },
+            "modelAnswer": "I can see bike."
+          },
+          {
+            "itemId": "english-pre-a1-m043-speaking-ex01-i05",
+            "position": 5,
+            "prompt": "Say the word “boat”.",
+            "audio": "tts:en-GB:boat",
+            "evaluation": {
+              "type": "transcription_feedback",
+              "transcriptionSeparateFromPronunciation": true
+            },
+            "modelAnswer": "boat"
+          },
+          {
+            "itemId": "english-pre-a1-m043-speaking-ex01-i06",
+            "position": 6,
+            "prompt": "Make a sentence with “plane”.",
+            "audio": "tts:en-GB:I can see plane.",
+            "evaluation": {
+              "type": "transcription_feedback",
+              "transcriptionSeparateFromPronunciation": true
+            },
+            "modelAnswer": "I can see plane."
+          },
+          {
+            "itemId": "english-pre-a1-m043-speaking-ex01-i07",
+            "position": 7,
+            "prompt": "Say the word “taxi”.",
+            "audio": "tts:en-GB:taxi",
+            "evaluation": {
+              "type": "transcription_feedback",
+              "transcriptionSeparateFromPronunciation": true
+            },
+            "modelAnswer": "taxi"
+          },
+          {
+            "itemId": "english-pre-a1-m043-speaking-ex01-i08",
+            "position": 8,
+            "prompt": "Make a sentence with “station”.",
+            "audio": "tts:en-GB:I can see station.",
+            "evaluation": {
+              "type": "transcription_feedback",
+              "transcriptionSeparateFromPronunciation": true
+            },
+            "modelAnswer": "I can see station."
+          },
+          {
+            "itemId": "english-pre-a1-m043-speaking-ex01-i09",
+            "position": 9,
+            "prompt": "Say the word “driver”.",
+            "audio": "tts:en-GB:driver",
+            "evaluation": {
+              "type": "transcription_feedback",
+              "transcriptionSeparateFromPronunciation": true
+            },
+            "modelAnswer": "driver"
+          },
+          {
+            "itemId": "english-pre-a1-m043-speaking-ex01-i10",
+            "position": 10,
+            "prompt": "Make a sentence with “ticket”.",
+            "audio": "tts:en-GB:I can see ticket.",
+            "evaluation": {
+              "type": "transcription_feedback",
+              "transcriptionSeparateFromPronunciation": true
+            },
+            "modelAnswer": "I can see ticket."
+          }
+        ]
+      }
+    },
+    {
+      "sectionId": "english-pre-a1-m043-listening",
+      "sectionKey": "listening",
+      "position": 8,
+      "exercise": {
+        "exerciseId": "english-pre-a1-m043-listening-ex01",
+        "type": "listening_gap_fill",
+        "items": [
+          {
+            "itemId": "english-pre-a1-m043-listening-ex01-i01",
+            "position": 1,
+            "evaluation": {
+              "type": "word_bank"
+            },
+            "gapToken": "[[gap-01]]",
+            "expectedWordId": "english-pre-a1-m043-listening-word-01"
+          },
+          {
+            "itemId": "english-pre-a1-m043-listening-ex01-i02",
+            "position": 2,
+            "evaluation": {
+              "type": "word_bank"
+            },
+            "gapToken": "[[gap-02]]",
+            "expectedWordId": "english-pre-a1-m043-listening-word-02"
+          },
+          {
+            "itemId": "english-pre-a1-m043-listening-ex01-i03",
+            "position": 3,
+            "evaluation": {
+              "type": "word_bank"
+            },
+            "gapToken": "[[gap-03]]",
+            "expectedWordId": "english-pre-a1-m043-listening-word-03"
+          },
+          {
+            "itemId": "english-pre-a1-m043-listening-ex01-i04",
+            "position": 4,
+            "evaluation": {
+              "type": "word_bank"
+            },
+            "gapToken": "[[gap-04]]",
+            "expectedWordId": "english-pre-a1-m043-listening-word-04"
+          },
+          {
+            "itemId": "english-pre-a1-m043-listening-ex01-i05",
+            "position": 5,
+            "evaluation": {
+              "type": "word_bank"
+            },
+            "gapToken": "[[gap-05]]",
+            "expectedWordId": "english-pre-a1-m043-listening-word-05"
+          },
+          {
+            "itemId": "english-pre-a1-m043-listening-ex01-i06",
+            "position": 6,
+            "evaluation": {
+              "type": "word_bank"
+            },
+            "gapToken": "[[gap-06]]",
+            "expectedWordId": "english-pre-a1-m043-listening-word-06"
+          },
+          {
+            "itemId": "english-pre-a1-m043-listening-ex01-i07",
+            "position": 7,
+            "evaluation": {
+              "type": "word_bank"
+            },
+            "gapToken": "[[gap-07]]",
+            "expectedWordId": "english-pre-a1-m043-listening-word-07"
+          },
+          {
+            "itemId": "english-pre-a1-m043-listening-ex01-i08",
+            "position": 8,
+            "evaluation": {
+              "type": "word_bank"
+            },
+            "gapToken": "[[gap-08]]",
+            "expectedWordId": "english-pre-a1-m043-listening-word-08"
+          },
+          {
+            "itemId": "english-pre-a1-m043-listening-ex01-i09",
+            "position": 9,
+            "evaluation": {
+              "type": "word_bank"
+            },
+            "gapToken": "[[gap-09]]",
+            "expectedWordId": "english-pre-a1-m043-listening-word-09"
+          },
+          {
+            "itemId": "english-pre-a1-m043-listening-ex01-i10",
+            "position": 10,
+            "evaluation": {
+              "type": "word_bank"
+            },
+            "gapToken": "[[gap-10]]",
+            "expectedWordId": "english-pre-a1-m043-listening-word-10"
+          }
+        ],
+        "content": {
+          "audio": "tts:en-GB:Welcome to Transport Town. Word 1: car. Word 2: bus. Word 3: train. Word 4: bike. Word 5: boat. Word 6: plane. Word 7: taxi. Word 8: station. Word 9: driver. Word 10: ticket. Thank you for listening.",
+          "audioLocale": "en-GB",
+          "transcriptTemplate": "Welcome to Transport Town. Word 1: [[gap-01]]. Word 2: [[gap-02]]. Word 3: [[gap-03]]. Word 4: [[gap-04]]. Word 5: [[gap-05]]. Word 6: [[gap-06]]. Word 7: [[gap-07]]. Word 8: [[gap-08]]. Word 9: [[gap-09]]. Word 10: [[gap-10]]. Thank you for listening.",
+          "wordBank": [
+            {
+              "wordId": "english-pre-a1-m043-listening-word-01",
+              "word": "car"
+            },
+            {
+              "wordId": "english-pre-a1-m043-listening-word-02",
+              "word": "bus"
+            },
+            {
+              "wordId": "english-pre-a1-m043-listening-word-03",
+              "word": "train"
+            },
+            {
+              "wordId": "english-pre-a1-m043-listening-word-04",
+              "word": "bike"
+            },
+            {
+              "wordId": "english-pre-a1-m043-listening-word-05",
+              "word": "boat"
+            },
+            {
+              "wordId": "english-pre-a1-m043-listening-word-06",
+              "word": "plane"
+            },
+            {
+              "wordId": "english-pre-a1-m043-listening-word-07",
+              "word": "taxi"
+            },
+            {
+              "wordId": "english-pre-a1-m043-listening-word-08",
+              "word": "station"
+            },
+            {
+              "wordId": "english-pre-a1-m043-listening-word-09",
+              "word": "driver"
+            },
+            {
+              "wordId": "english-pre-a1-m043-listening-word-10",
+              "word": "ticket"
+            }
+          ],
+          "interaction": "select_place_move_replace"
+        }
+      }
+    }
+  ]
+}
