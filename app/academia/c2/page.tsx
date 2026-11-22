@@ -22,7 +22,8 @@ export default function C2Page() {
         <Link href="/academia/c2/001" className="mt-5 block rounded-2xl border border-violet-100 bg-white p-5 transition hover:border-violet-400 hover:shadow-sm">
           <p className="text-xs font-extrabold tracking-widest text-violet-700">MISIÓN 001 · PILOTO</p><h3 className="mt-1 text-xl font-bold text-slate-950">What Words Leave Unsaid</h3><p className="mt-1 text-sm text-slate-600">Interpreta el significado implícito, la intención y los límites de la evidencia contextual.</p><span className="mt-3 inline-block text-sm font-bold text-violet-700">Abrir misión →</span>
         </Link>
-        <p className="mt-4 text-xs text-slate-500">Solo la misión 001 está incorporada en esta fase. Las misiones 002–100 se desarrollarán y validarán progresivamente. Este curso es formativo y no constituye una certificación oficial.</p>
+        <Link href="/academia/c2/002" className="mt-3 block rounded-2xl border border-violet-100 bg-white p-5 transition hover:border-violet-400 hover:shadow-sm"><p className="text-xs font-extrabold tracking-widest text-violet-700">MISIÓN 002</p><h3 className="mt-1 text-xl font-bold text-slate-950">The Assumptions Beneath the Question</h3><p className="mt-1 text-sm text-slate-600">Detecta presuposiciones y cuestiona premisas ocultas en preguntas y argumentos.</p><span className="mt-3 inline-block text-sm font-bold text-violet-700">Abrir misión →</span></Link>
+        <p className="mt-4 text-xs text-slate-500">Las misiones 003–100 se desarrollarán progresivamente. Este curso es formativo y no constituye una certificación oficial.</p>
       </section>
     </main>
   );
