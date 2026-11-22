@@ -371,12 +371,20 @@
               "note": "Expresión explicada en Explore."
             },
             {
-              "english": "I am a friend.",
-              "spanish": "Soy amigo/a.",
-              "pronunciationGuide": "ái am a frend",
-              "audio": "tts:en-GB:I am a friend.",
+              "english": "I am a child.",
+              "spanish": "Soy un niño / una niña.",
+              "pronunciationGuide": "ái am a cháild",
+              "audio": "tts:en-GB:I am a child.",
               "audioStatus": "synthetic_pending_review",
               "note": "Expresión explicada en Explore."
+            },
+            {
+              "english": "I am a child.",
+              "spanish": "Soy un niño / una niña.",
+              "pronunciationGuide": "ái am a cháild",
+              "audio": "tts:en-GB:I am a child.",
+              "audioStatus": "synthetic_pending_review",
+              "note": "Modelo enseñado en Explore."
             }
           ],
           "grammar": [
@@ -433,8 +441,13 @@
               "note": "Texto y significado explicados antes de Reading."
             },
             {
-              "english": "I am a friend.",
-              "spanish": "Soy amigo/a.",
+              "english": "I am a child.",
+              "spanish": "Soy un niño / una niña.",
+              "note": "Texto y significado explicados antes de Reading."
+            },
+            {
+              "english": "I am a child.",
+              "spanish": "Soy un niño / una niña.",
               "note": "Texto y significado explicados antes de Reading."
             }
           ],
@@ -486,7 +499,7 @@
             },
             {
               "english": "I am a friend.",
-              "spanish": "Soy amigo/a.",
+              "spanish": "I am a friend.",
               "note": "Frase explicada previamente en Explore."
             }
           ],
@@ -600,7 +613,7 @@
             },
             {
               "english": "I am a friend.",
-              "spanish": "Soy amigo/a.",
+              "spanish": "I am a friend.",
               "note": "Expresión del audio explicada previamente en Explore."
             }
           ]
@@ -1042,7 +1055,7 @@
             "options": [
               "I am here today.",
               "I am a teacher.",
-              "I am a friend."
+              "I am a child."
             ],
             "answer": "I am a teacher.",
             "taskType": "functional_language"
@@ -1055,8 +1068,8 @@
               "type": "single_choice"
             },
             "options": [
-              "I am a friend.",
-              "I am happy.",
+              "I am a child.",
+              "I am a child.",
               "I am here today."
             ],
             "answer": "I am here today.",
@@ -1065,16 +1078,16 @@
           {
             "itemId": "english-pre-a1-m008-grammar-ex01-i10",
             "position": 10,
-            "prompt": "Selecciona el modelo que significa: “Soy amigo/a.”",
+            "prompt": "Selecciona el modelo que significa: “Soy un niño / una niña.”",
             "evaluation": {
               "type": "single_choice"
             },
             "options": [
-              "I am a friend.",
+              "I am a child.",
               "I am happy.",
               "I am sad."
             ],
-            "answer": "I am a friend.",
+            "answer": "I am a child.",
             "taskType": "functional_language"
           }
         ]
@@ -1190,7 +1203,7 @@
         "type": "reading_comprehension",
         "content": {
           "passageId": "english-pre-a1-m008-reading-passage-01",
-          "passage": "I am happy. I am sad. I am tired. I am excited. I am angry. I am calm. I am a student. I am a teacher. I am here today. I am a friend."
+          "passage": "I am happy. I am sad. I am tired. I am excited. I am angry. I am calm. I am a student. I am a teacher. I am here today. I am a child. I am a child."
         },
         "items": [
           {
@@ -1308,7 +1321,7 @@
             "options": [
               "Estoy aquí hoy.",
               "Soy profesor/a.",
-              "Soy amigo/a."
+              "Soy un niño / una niña."
             ],
             "answer": "Soy profesor/a.",
             "taskType": "reading_detail"
@@ -1321,8 +1334,8 @@
               "type": "single_choice"
             },
             "options": [
-              "Soy amigo/a.",
-              "Estoy feliz.",
+              "Soy un niño / una niña.",
+              "Soy un niño / una niña.",
               "Estoy aquí hoy."
             ],
             "answer": "Estoy aquí hoy.",
@@ -1331,16 +1344,16 @@
           {
             "itemId": "english-pre-a1-m008-reading-ex01-i10",
             "position": 10,
-            "prompt": "En el texto, ¿qué significa “I am a friend.”?",
+            "prompt": "En el texto, ¿qué significa “I am a child.”?",
             "evaluation": {
               "type": "single_choice"
             },
             "options": [
-              "Soy amigo/a.",
+              "Soy un niño / una niña.",
               "Estoy feliz.",
               "Estoy triste."
             ],
-            "answer": "Soy amigo/a.",
+            "answer": "Soy un niño / una niña.",
             "taskType": "reading_detail"
           }
         ]
@@ -1528,19 +1541,19 @@
           {
             "itemId": "english-pre-a1-m008-writing-ex01-i10",
             "position": 10,
-            "audio": "tts:en-GB:I am a friend.",
+            "audio": "tts:en-GB:I am a child.",
             "audioLocale": "en-GB",
             "audioStatus": "synthetic_pending_review",
             "kind": "sentence",
             "repeatCount": 3,
-            "expectedAnswer": "I am a friend.",
+            "expectedAnswer": "I am a child.",
             "evaluation": {
               "type": "normalised_text"
             },
             "segments": [
               {
                 "segmentId": "english-pre-a1-m008-writing-segment-10",
-                "text": "I am a friend."
+                "text": "I am a child."
               }
             ]
           }
@@ -1667,9 +1680,9 @@
             "itemId": "english-pre-a1-m008-speaking-ex01-i10",
             "position": 10,
             "prompt": "Di en voz alta el modelo.",
-            "promptSpanish": "Practica: Soy amigo/a.",
-            "modelAnswer": "I am a friend.",
-            "translation": "Soy amigo/a.",
+            "promptSpanish": "Practica: Soy un niño / una niña.",
+            "modelAnswer": "I am a child.",
+            "translation": "Soy un niño / una niña.",
             "evaluation": {
               "type": "transcription_feedback",
               "transcriptionSeparateFromPronunciation": true
@@ -1686,7 +1699,7 @@
         "exerciseId": "english-pre-a1-m008-listening-ex01",
         "type": "listening_gap_fill",
         "content": {
-          "audio": "tts:en-GB:I am happy. I am sad. I am tired. I am excited. I am angry. I am calm. I am a student. I am a teacher. I am here today. I am a friend.",
+          "audio": "tts:en-GB:I am happy. I am sad. I am tired. I am excited. I am angry. I am calm. I am a student. I am a teacher. I am here today. I am a child.",
           "audioLocale": "en-GB",
           "audioStatus": "synthetic_pending_review",
           "transcriptTemplate": "[[gap-01]] [[gap-02]] [[gap-03]] [[gap-04]] [[gap-05]] [[gap-06]] [[gap-07]] [[gap-08]] [[gap-09]] [[gap-10]]",
@@ -1729,12 +1742,12 @@
             },
             {
               "wordId": "english-pre-a1-m008-listening-word-10",
-              "word": "I am a friend."
+              "word": "I am a child."
             }
           ],
           "interaction": "select_place_move_replace",
-          "audioTranscript": "tts:en-GB:I am happy. I am sad. I am tired. I am excited. I am angry. I am calm. I am a student. I am a teacher. I am here today. I am a friend.",
-          "translation": "Estoy feliz. Estoy triste. Estoy cansado/a. Estoy emocionado/a. Estoy enfadado/a. Estoy tranquilo/a. Soy estudiante. Soy profesor/a. Estoy aquí hoy. Soy amigo/a."
+          "audioTranscript": "tts:en-GB:I am happy. I am sad. I am tired. I am excited. I am angry. I am calm. I am a student. I am a teacher. I am here today. I am a child.",
+          "translation": "Estoy feliz. Estoy triste. Estoy cansado/a. Estoy emocionado/a. Estoy enfadado/a. Estoy tranquilo/a. Soy estudiante. Soy profesor/a. Estoy aquí hoy. Soy un niño / una niña."
         },
         "items": [
           {
@@ -1805,7 +1818,7 @@
             "position": 10,
             "gapToken": "[[gap-10]]",
             "expectedWordId": "english-pre-a1-m008-listening-word-10",
-            "answer": "I am a friend."
+            "answer": "I am a child."
           }
         ]
       }

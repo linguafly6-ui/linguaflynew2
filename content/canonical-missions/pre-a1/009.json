@@ -353,12 +353,20 @@
               "note": "Expresión explicada en Explore."
             },
             {
-              "english": "You're my friend.",
-              "spanish": "Eres mi amigo/a.",
-              "pronunciationGuide": "iór mái frend",
-              "audio": "tts:en-GB:You're my friend.",
+              "english": "You're nice.",
+              "spanish": "Eres agradable.",
+              "pronunciationGuide": "iór náis",
+              "audio": "tts:en-GB:You're nice.",
               "audioStatus": "synthetic_pending_review",
               "note": "Expresión explicada en Explore."
+            },
+            {
+              "english": "You're nice.",
+              "spanish": "Eres agradable.",
+              "pronunciationGuide": "iór náis",
+              "audio": "tts:en-GB:You're nice.",
+              "audioStatus": "synthetic_pending_review",
+              "note": "Modelo enseñado en Explore."
             }
           ],
           "grammar": [
@@ -415,8 +423,13 @@
               "note": "Texto y significado explicados antes de Reading."
             },
             {
-              "english": "You're my friend.",
-              "spanish": "Eres mi amigo/a.",
+              "english": "You're nice.",
+              "spanish": "Eres agradable.",
+              "note": "Texto y significado explicados antes de Reading."
+            },
+            {
+              "english": "You're nice.",
+              "spanish": "Eres agradable.",
               "note": "Texto y significado explicados antes de Reading."
             }
           ],
@@ -468,7 +481,7 @@
             },
             {
               "english": "You're my friend.",
-              "spanish": "Eres mi amigo/a.",
+              "spanish": "You're my friend.",
               "note": "Frase explicada previamente en Explore."
             }
           ],
@@ -582,7 +595,7 @@
             },
             {
               "english": "You're my friend.",
-              "spanish": "Eres mi amigo/a.",
+              "spanish": "You're my friend.",
               "note": "Expresión del audio explicada previamente en Explore."
             }
           ]
@@ -1024,7 +1037,7 @@
             "options": [
               "I'm ready.",
               "You're great.",
-              "You're my friend."
+              "You're nice."
             ],
             "answer": "You're great.",
             "taskType": "functional_language"
@@ -1037,8 +1050,8 @@
               "type": "single_choice"
             },
             "options": [
-              "You're my friend.",
-              "I am → I'm",
+              "You're nice.",
+              "You're nice.",
               "I'm ready."
             ],
             "answer": "I'm ready.",
@@ -1047,16 +1060,16 @@
           {
             "itemId": "english-pre-a1-m009-grammar-ex01-i10",
             "position": 10,
-            "prompt": "Selecciona el modelo que significa: “Eres mi amigo/a.”",
+            "prompt": "Selecciona el modelo que significa: “Eres agradable.”",
             "evaluation": {
               "type": "single_choice"
             },
             "options": [
-              "You're my friend.",
+              "You're nice.",
               "I am → I'm",
               "You are → You're"
             ],
-            "answer": "You're my friend.",
+            "answer": "You're nice.",
             "taskType": "functional_language"
           }
         ]
@@ -1172,7 +1185,7 @@
         "type": "reading_comprehension",
         "content": {
           "passageId": "english-pre-a1-m009-reading-passage-01",
-          "passage": "I am → I'm You are → You're I'm happy. You're happy. I'm a student. You're a teacher. I'm fine. You're great. I'm ready. You're my friend."
+          "passage": "I am → I'm You are → You're I'm happy. You're happy. I'm a student. You're a teacher. I'm fine. You're great. I'm ready. You're nice. You're nice."
         },
         "items": [
           {
@@ -1290,7 +1303,7 @@
             "options": [
               "Estoy preparado/a.",
               "Eres genial.",
-              "Eres mi amigo/a."
+              "Eres agradable."
             ],
             "answer": "Eres genial.",
             "taskType": "reading_detail"
@@ -1303,8 +1316,8 @@
               "type": "single_choice"
             },
             "options": [
-              "Eres mi amigo/a.",
-              "I am se contrae como I'm.",
+              "Eres agradable.",
+              "Eres agradable.",
               "Estoy preparado/a."
             ],
             "answer": "Estoy preparado/a.",
@@ -1313,16 +1326,16 @@
           {
             "itemId": "english-pre-a1-m009-reading-ex01-i10",
             "position": 10,
-            "prompt": "En el texto, ¿qué significa “You're my friend.”?",
+            "prompt": "En el texto, ¿qué significa “You're nice.”?",
             "evaluation": {
               "type": "single_choice"
             },
             "options": [
-              "Eres mi amigo/a.",
+              "Eres agradable.",
               "I am se contrae como I'm.",
               "You are se contrae como you're."
             ],
-            "answer": "Eres mi amigo/a.",
+            "answer": "Eres agradable.",
             "taskType": "reading_detail"
           }
         ]
@@ -1510,19 +1523,19 @@
           {
             "itemId": "english-pre-a1-m009-writing-ex01-i10",
             "position": 10,
-            "audio": "tts:en-GB:You're my friend.",
+            "audio": "tts:en-GB:You're nice.",
             "audioLocale": "en-GB",
             "audioStatus": "synthetic_pending_review",
             "kind": "sentence",
             "repeatCount": 3,
-            "expectedAnswer": "You're my friend.",
+            "expectedAnswer": "You're nice.",
             "evaluation": {
               "type": "normalised_text"
             },
             "segments": [
               {
                 "segmentId": "english-pre-a1-m009-writing-segment-10",
-                "text": "You're my friend."
+                "text": "You're nice."
               }
             ]
           }
@@ -1649,9 +1662,9 @@
             "itemId": "english-pre-a1-m009-speaking-ex01-i10",
             "position": 10,
             "prompt": "Di en voz alta el modelo.",
-            "promptSpanish": "Practica: Eres mi amigo/a.",
-            "modelAnswer": "You're my friend.",
-            "translation": "Eres mi amigo/a.",
+            "promptSpanish": "Practica: Eres agradable.",
+            "modelAnswer": "You're nice.",
+            "translation": "Eres agradable.",
             "evaluation": {
               "type": "transcription_feedback",
               "transcriptionSeparateFromPronunciation": true
@@ -1668,7 +1681,7 @@
         "exerciseId": "english-pre-a1-m009-listening-ex01",
         "type": "listening_gap_fill",
         "content": {
-          "audio": "tts:en-GB:I am → I'm You are → You're I'm happy. You're happy. I'm a student. You're a teacher. I'm fine. You're great. I'm ready. You're my friend.",
+          "audio": "tts:en-GB:I am → I'm You are → You're I'm happy. You're happy. I'm a student. You're a teacher. I'm fine. You're great. I'm ready. You're nice.",
           "audioLocale": "en-GB",
           "audioStatus": "synthetic_pending_review",
           "transcriptTemplate": "[[gap-01]] [[gap-02]] [[gap-03]] [[gap-04]] [[gap-05]] [[gap-06]] [[gap-07]] [[gap-08]] [[gap-09]] [[gap-10]]",
@@ -1711,12 +1724,12 @@
             },
             {
               "wordId": "english-pre-a1-m009-listening-word-10",
-              "word": "You're my friend."
+              "word": "You're nice."
             }
           ],
           "interaction": "select_place_move_replace",
-          "audioTranscript": "tts:en-GB:I am → I'm You are → You're I'm happy. You're happy. I'm a student. You're a teacher. I'm fine. You're great. I'm ready. You're my friend.",
-          "translation": "I am se contrae como I'm. You are se contrae como you're. Estoy feliz. Estás feliz. Soy estudiante. Eres profesor/a. Estoy bien. Eres genial. Estoy preparado/a. Eres mi amigo/a."
+          "audioTranscript": "tts:en-GB:I am → I'm You are → You're I'm happy. You're happy. I'm a student. You're a teacher. I'm fine. You're great. I'm ready. You're nice.",
+          "translation": "I am se contrae como I'm. You are se contrae como you're. Estoy feliz. Estás feliz. Soy estudiante. Eres profesor/a. Estoy bien. Eres genial. Estoy preparado/a. Eres agradable."
         },
         "items": [
           {
@@ -1787,7 +1800,7 @@
             "position": 10,
             "gapToken": "[[gap-10]]",
             "expectedWordId": "english-pre-a1-m009-listening-word-10",
-            "answer": "You're my friend."
+            "answer": "You're nice."
           }
         ]
       }

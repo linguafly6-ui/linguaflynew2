@@ -122,10 +122,10 @@
           {
             "itemId": "english-pre-a1-m007-explore-ex01-i11",
             "position": 11,
-            "english": "she",
-            "spanish": "ella",
-            "pronunciationGuide": "shí",
-            "audio": "tts:en-GB:she",
+            "english": "shop",
+            "spanish": "tienda",
+            "pronunciationGuide": "shop",
+            "audio": "tts:en-GB:shop",
             "audioStatus": "synthetic_pending_review"
           },
           {
@@ -222,7 +222,7 @@
               "label": "Bloque 4",
               "pattern": "TH sonora en this y that: con vibración",
               "examples": [
-                "SH: ship, she, fish"
+                "SH: ship, shop, fish"
               ]
             },
             {
@@ -264,7 +264,7 @@
               "label": "Bloque 10",
               "pattern": "La guía aproximada no representa exactamente TH",
               "examples": [
-                "she / ship"
+                "shop / ship"
               ]
             }
           ]
@@ -296,7 +296,7 @@
               "note": "Expresión explicada en Explore."
             },
             {
-              "english": "SH: ship, she, fish",
+              "english": "SH: ship, shop, fish",
               "spanish": "SH: ship, she, fish",
               "pronunciationGuide": "sh: ship, shí, fish",
               "audio": "tts:en-GB:SH: ship, she, fish",
@@ -344,10 +344,10 @@
               "note": "Expresión explicada en Explore."
             },
             {
-              "english": "she / ship",
-              "spanish": "ella / barco",
-              "pronunciationGuide": "shí / ship",
-              "audio": "tts:en-GB:she / ship",
+              "english": "shop / ship",
+              "spanish": "tienda / barco",
+              "pronunciationGuide": "shop / ship",
+              "audio": "tts:en-GB:shop / ship",
               "audioStatus": "synthetic_pending_review",
               "note": "Expresión explicada en Explore."
             }
@@ -376,7 +376,7 @@
               "note": "Texto y significado explicados antes de Reading."
             },
             {
-              "english": "SH: ship, she, fish",
+              "english": "SH: ship, shop, fish",
               "spanish": "SH: ship, she, fish",
               "note": "Texto y significado explicados antes de Reading."
             },
@@ -406,8 +406,8 @@
               "note": "Texto y significado explicados antes de Reading."
             },
             {
-              "english": "she / ship",
-              "spanish": "ella / barco",
+              "english": "shop / ship",
+              "spanish": "tienda / barco",
               "note": "Texto y significado explicados antes de Reading."
             }
           ],
@@ -459,7 +459,7 @@
             },
             {
               "english": "she / ship",
-              "spanish": "ella / barco",
+              "spanish": "she / ship",
               "note": "Frase explicada previamente en Explore."
             }
           ],
@@ -573,7 +573,7 @@
             },
             {
               "english": "she / ship",
-              "spanish": "ella / barco",
+              "spanish": "she / ship",
               "note": "Expresión del audio explicada previamente en Explore."
             }
           ]
@@ -605,8 +605,8 @@
               "position": 4,
               "title": "Bloque 4",
               "content": "TH sonora en this y that: con vibración",
-              "example": "SH: ship, she, fish",
-              "translation": "SH: ship, she, fish"
+              "example": "SH: ship, shop, fish",
+              "translation": "SH: ship, shop, fish"
             },
             {
               "position": 5,
@@ -647,7 +647,7 @@
               "position": 10,
               "title": "Bloque 10",
               "content": "La guía aproximada no representa exactamente TH",
-              "example": "she / ship",
+              "example": "shop / ship",
               "translation": "ella / barco"
             }
           ]
@@ -925,7 +925,7 @@
             "options": [
               "TH sonora: this, that",
               "TH sorda: thin, three, thank",
-              "SH: ship, she, fish"
+              "SH: ship, shop, fish"
             ],
             "answer": "TH sorda: thin, three, thank",
             "taskType": "functional_language"
@@ -938,7 +938,7 @@
               "type": "single_choice"
             },
             "options": [
-              "SH: ship, she, fish",
+              "SH: ship, shop, fish",
               "CH: chair, cheese, teacher",
               "TH sonora: this, that"
             ],
@@ -953,11 +953,11 @@
               "type": "single_choice"
             },
             "options": [
-              "SH: ship, she, fish",
+              "SH: ship, shop, fish",
               "CH: chair, cheese, teacher",
               "ship / sheep"
             ],
-            "answer": "SH: ship, she, fish",
+            "answer": "SH: ship, shop, fish",
             "taskType": "functional_language"
           },
           {
@@ -1015,7 +1015,7 @@
             "options": [
               "hat / hand",
               "thin / this",
-              "she / ship"
+              "shop / ship"
             ],
             "answer": "thin / this",
             "taskType": "functional_language"
@@ -1028,7 +1028,7 @@
               "type": "single_choice"
             },
             "options": [
-              "she / ship",
+              "shop / ship",
               "H: hello, hat, house, hand",
               "hat / hand"
             ],
@@ -1038,16 +1038,16 @@
           {
             "itemId": "english-pre-a1-m007-grammar-ex01-i10",
             "position": 10,
-            "prompt": "Selecciona el modelo que significa: “ella / barco”",
+            "prompt": "Selecciona el modelo que significa: “tienda / barco”",
             "evaluation": {
               "type": "single_choice"
             },
             "options": [
-              "she / ship",
+              "shop / ship",
               "H: hello, hat, house, hand",
               "TH sorda: thin, three, thank"
             ],
-            "answer": "she / ship",
+            "answer": "shop / ship",
             "taskType": "functional_language"
           }
         ]
@@ -1163,7 +1163,7 @@
         "type": "reading_comprehension",
         "content": {
           "passageId": "english-pre-a1-m007-reading-passage-01",
-          "passage": "H: hello, hat, house, hand TH sorda: thin, three, thank TH sonora: this, that SH: ship, she, fish CH: chair, cheese, teacher ship / sheep sit / seat thin / this hat / hand she / ship"
+          "passage": "H: hello, hat, house, hand TH sorda: thin, three, thank TH sonora: this, that SH: ship, shop, fish CH: chair, cheese, teacher ship / sheep sit / seat thin / this hat / hand shop / ship"
         },
         "items": [
           {
@@ -1214,7 +1214,7 @@
           {
             "itemId": "english-pre-a1-m007-reading-ex01-i04",
             "position": 4,
-            "prompt": "En el texto, ¿qué significa “SH: ship, she, fish”?",
+            "prompt": "En el texto, ¿qué significa “SH: ship, shop, fish”?",
             "evaluation": {
               "type": "single_choice"
             },
@@ -1281,7 +1281,7 @@
             "options": [
               "sombrero / mano",
               "delgado / esto",
-              "ella / barco"
+              "tienda / barco"
             ],
             "answer": "delgado / esto",
             "taskType": "reading_detail"
@@ -1294,7 +1294,7 @@
               "type": "single_choice"
             },
             "options": [
-              "ella / barco",
+              "tienda / barco",
               "H: hello, hat, house, hand",
               "sombrero / mano"
             ],
@@ -1304,16 +1304,16 @@
           {
             "itemId": "english-pre-a1-m007-reading-ex01-i10",
             "position": 10,
-            "prompt": "En el texto, ¿qué significa “she / ship”?",
+            "prompt": "En el texto, ¿qué significa “shop / ship”?",
             "evaluation": {
               "type": "single_choice"
             },
             "options": [
-              "ella / barco",
+              "tienda / barco",
               "H: hello, hat, house, hand",
               "TH sorda: thin, three, thank"
             ],
-            "answer": "ella / barco",
+            "answer": "tienda / barco",
             "taskType": "reading_detail"
           }
         ]
@@ -1387,19 +1387,19 @@
           {
             "itemId": "english-pre-a1-m007-writing-ex01-i04",
             "position": 4,
-            "audio": "tts:en-GB:SH: ship, she, fish",
+            "audio": "tts:en-GB:SH: ship, shop, fish",
             "audioLocale": "en-GB",
             "audioStatus": "synthetic_pending_review",
             "kind": "sentence",
             "repeatCount": 3,
-            "expectedAnswer": "SH: ship, she, fish",
+            "expectedAnswer": "SH: ship, shop, fish",
             "evaluation": {
               "type": "normalised_text"
             },
             "segments": [
               {
                 "segmentId": "english-pre-a1-m007-writing-segment-04",
-                "text": "SH: ship, she, fish"
+                "text": "SH: ship, shop, fish"
               }
             ]
           },
@@ -1501,19 +1501,19 @@
           {
             "itemId": "english-pre-a1-m007-writing-ex01-i10",
             "position": 10,
-            "audio": "tts:en-GB:she / ship",
+            "audio": "tts:en-GB:shop / ship",
             "audioLocale": "en-GB",
             "audioStatus": "synthetic_pending_review",
             "kind": "sentence",
             "repeatCount": 3,
-            "expectedAnswer": "she / ship",
+            "expectedAnswer": "shop / ship",
             "evaluation": {
               "type": "normalised_text"
             },
             "segments": [
               {
                 "segmentId": "english-pre-a1-m007-writing-segment-10",
-                "text": "she / ship"
+                "text": "shop / ship"
               }
             ]
           }
@@ -1569,7 +1569,7 @@
             "position": 4,
             "prompt": "Di en voz alta el modelo.",
             "promptSpanish": "Practica: SH: ship, she, fish",
-            "modelAnswer": "SH: ship, she, fish",
+            "modelAnswer": "SH: ship, shop, fish",
             "translation": "SH: ship, she, fish",
             "evaluation": {
               "type": "transcription_feedback",
@@ -1640,9 +1640,9 @@
             "itemId": "english-pre-a1-m007-speaking-ex01-i10",
             "position": 10,
             "prompt": "Di en voz alta el modelo.",
-            "promptSpanish": "Practica: ella / barco",
-            "modelAnswer": "she / ship",
-            "translation": "ella / barco",
+            "promptSpanish": "Practica: tienda / barco",
+            "modelAnswer": "shop / ship",
+            "translation": "tienda / barco",
             "evaluation": {
               "type": "transcription_feedback",
               "transcriptionSeparateFromPronunciation": true
@@ -1659,7 +1659,7 @@
         "exerciseId": "english-pre-a1-m007-listening-ex01",
         "type": "listening_gap_fill",
         "content": {
-          "audio": "tts:en-GB:H: hello, hat, house, hand TH sorda: thin, three, thank TH sonora: this, that SH: ship, she, fish CH: chair, cheese, teacher ship / sheep sit / seat thin / this hat / hand she / ship",
+          "audio": "tts:en-GB:H: hello, hat, house, hand TH sorda: thin, three, thank TH sonora: this, that SH: ship, shop, fish CH: chair, cheese, teacher ship / sheep sit / seat thin / this hat / hand shop / ship",
           "audioLocale": "en-GB",
           "audioStatus": "synthetic_pending_review",
           "transcriptTemplate": "[[gap-01]] [[gap-02]] [[gap-03]] [[gap-04]] [[gap-05]] [[gap-06]] [[gap-07]] [[gap-08]] [[gap-09]] [[gap-10]]",
@@ -1678,7 +1678,7 @@
             },
             {
               "wordId": "english-pre-a1-m007-listening-word-04",
-              "word": "SH: ship, she, fish"
+              "word": "SH: ship, shop, fish"
             },
             {
               "wordId": "english-pre-a1-m007-listening-word-05",
@@ -1702,12 +1702,12 @@
             },
             {
               "wordId": "english-pre-a1-m007-listening-word-10",
-              "word": "she / ship"
+              "word": "shop / ship"
             }
           ],
           "interaction": "select_place_move_replace",
-          "audioTranscript": "tts:en-GB:H: hello, hat, house, hand TH sorda: thin, three, thank TH sonora: this, that SH: ship, she, fish CH: chair, cheese, teacher ship / sheep sit / seat thin / this hat / hand she / ship",
-          "translation": "H: hello, hat, house, hand TH sorda: thin, three, thank TH sonora: this, that SH: ship, she, fish CH: chair, cheese, teacher barco / oveja sentarse / asiento delgado / esto sombrero / mano ella / barco"
+          "audioTranscript": "tts:en-GB:H: hello, hat, house, hand TH sorda: thin, three, thank TH sonora: this, that SH: ship, shop, fish CH: chair, cheese, teacher ship / sheep sit / seat thin / this hat / hand shop / ship",
+          "translation": "H: hello, hat, house, hand TH sorda: thin, three, thank TH sonora: this, that SH: ship, she, fish CH: chair, cheese, teacher barco / oveja sentarse / asiento delgado / esto sombrero / mano tienda / barco"
         },
         "items": [
           {
@@ -1736,7 +1736,7 @@
             "position": 4,
             "gapToken": "[[gap-04]]",
             "expectedWordId": "english-pre-a1-m007-listening-word-04",
-            "answer": "SH: ship, she, fish"
+            "answer": "SH: ship, shop, fish"
           },
           {
             "itemId": "english-pre-a1-m007-listening-ex01-i05",
@@ -1778,7 +1778,7 @@
             "position": 10,
             "gapToken": "[[gap-10]]",
             "expectedWordId": "english-pre-a1-m007-listening-word-10",
-            "answer": "she / ship"
+            "answer": "shop / ship"
           }
         ]
       }

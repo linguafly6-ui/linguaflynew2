@@ -293,18 +293,18 @@
               "note": "Expresión explicada en Explore."
             },
             {
-              "english": "That's right.",
-              "spanish": "Eso es correcto.",
-              "pronunciationGuide": "dats ráit",
-              "audio": "tts:en-GB:That's right.",
+              "english": "Right.",
+              "spanish": "Correcto.",
+              "pronunciationGuide": "ráit",
+              "audio": "tts:en-GB:Right.",
               "audioStatus": "synthetic_pending_review",
               "note": "Expresión explicada en Explore."
             },
             {
-              "english": "That's wrong.",
-              "spanish": "Eso es incorrecto.",
-              "pronunciationGuide": "dats róng",
-              "audio": "tts:en-GB:That's wrong.",
+              "english": "Wrong.",
+              "spanish": "Incorrecto.",
+              "pronunciationGuide": "róng",
+              "audio": "tts:en-GB:Wrong.",
               "audioStatus": "synthetic_pending_review",
               "note": "Expresión explicada en Explore."
             },
@@ -364,13 +364,13 @@
               "note": "Texto y significado explicados antes de Reading."
             },
             {
-              "english": "That's right.",
-              "spanish": "Eso es correcto.",
+              "english": "Right.",
+              "spanish": "Correcto.",
               "note": "Texto y significado explicados antes de Reading."
             },
             {
-              "english": "That's wrong.",
-              "spanish": "Eso es incorrecto.",
+              "english": "Wrong.",
+              "spanish": "Incorrecto.",
               "note": "Texto y significado explicados antes de Reading."
             },
             {
@@ -417,12 +417,12 @@
             },
             {
               "english": "That's right.",
-              "spanish": "Eso es correcto.",
+              "spanish": "That's right.",
               "note": "Frase explicada previamente en Explore."
             },
             {
               "english": "That's wrong.",
-              "spanish": "Eso es incorrecto.",
+              "spanish": "That's wrong.",
               "note": "Frase explicada previamente en Explore."
             },
             {
@@ -531,12 +531,12 @@
             },
             {
               "english": "That's right.",
-              "spanish": "Eso es correcto.",
+              "spanish": "That's right.",
               "note": "Expresión del audio explicada previamente en Explore."
             },
             {
               "english": "That's wrong.",
-              "spanish": "Eso es incorrecto.",
+              "spanish": "That's wrong.",
               "note": "Expresión del audio explicada previamente en Explore."
             },
             {
@@ -943,7 +943,7 @@
             "options": [
               "No, thank you.",
               "Yes, please.",
-              "That's right."
+              "Right."
             ],
             "answer": "Yes, please.",
             "taskType": "functional_language"
@@ -956,8 +956,8 @@
               "type": "single_choice"
             },
             "options": [
-              "That's right.",
-              "That's wrong.",
+              "Right.",
+              "Wrong.",
               "No, thank you."
             ],
             "answer": "No, thank you.",
@@ -966,31 +966,31 @@
           {
             "itemId": "english-pre-a1-m005-grammar-ex01-i07",
             "position": 7,
-            "prompt": "Selecciona el modelo que significa: “Eso es correcto.”",
+            "prompt": "Selecciona el modelo que significa: “Correcto.”",
             "evaluation": {
               "type": "single_choice"
             },
             "options": [
-              "That's right.",
-              "That's wrong.",
+              "Right.",
+              "Wrong.",
               "Again, please."
             ],
-            "answer": "That's right.",
+            "answer": "Right.",
             "taskType": "functional_language"
           },
           {
             "itemId": "english-pre-a1-m005-grammar-ex01-i08",
             "position": 8,
-            "prompt": "Selecciona el modelo que significa: “Eso es incorrecto.”",
+            "prompt": "Selecciona el modelo que significa: “Incorrecto.”",
             "evaluation": {
               "type": "single_choice"
             },
             "options": [
               "Again, please.",
-              "That's wrong.",
+              "Wrong.",
               "Repeat, please."
             ],
-            "answer": "That's wrong.",
+            "answer": "Wrong.",
             "taskType": "functional_language"
           },
           {
@@ -1136,7 +1136,7 @@
         "type": "reading_comprehension",
         "content": {
           "passageId": "english-pre-a1-m005-reading-passage-01",
-          "passage": "Yes. No. Maybe. OK. Yes, please. No, thank you. That's right. That's wrong. Again, please. Repeat, please."
+          "passage": "Yes. No. Maybe. OK. Yes, please. No, thank you. Right. Wrong. Again, please. Repeat, please."
         },
         "items": [
           {
@@ -1209,7 +1209,7 @@
             "options": [
               "No, gracias.",
               "Sí, por favor.",
-              "Eso es correcto."
+              "Correcto."
             ],
             "answer": "Sí, por favor.",
             "taskType": "reading_detail"
@@ -1222,8 +1222,8 @@
               "type": "single_choice"
             },
             "options": [
-              "Eso es correcto.",
-              "Eso es incorrecto.",
+              "Correcto.",
+              "Incorrecto.",
               "No, gracias."
             ],
             "answer": "No, gracias.",
@@ -1232,31 +1232,31 @@
           {
             "itemId": "english-pre-a1-m005-reading-ex01-i07",
             "position": 7,
-            "prompt": "En el texto, ¿qué significa “That's right.”?",
+            "prompt": "En el texto, ¿qué significa “Right.”?",
             "evaluation": {
               "type": "single_choice"
             },
             "options": [
-              "Eso es correcto.",
-              "Eso es incorrecto.",
+              "Correcto.",
+              "Incorrecto.",
               "Otra vez, por favor."
             ],
-            "answer": "Eso es correcto.",
+            "answer": "Correcto.",
             "taskType": "reading_detail"
           },
           {
             "itemId": "english-pre-a1-m005-reading-ex01-i08",
             "position": 8,
-            "prompt": "En el texto, ¿qué significa “That's wrong.”?",
+            "prompt": "En el texto, ¿qué significa “Wrong.”?",
             "evaluation": {
               "type": "single_choice"
             },
             "options": [
               "Otra vez, por favor.",
-              "Eso es incorrecto.",
+              "Incorrecto.",
               "Repite, por favor."
             ],
-            "answer": "Eso es incorrecto.",
+            "answer": "Incorrecto.",
             "taskType": "reading_detail"
           },
           {
@@ -1417,38 +1417,38 @@
           {
             "itemId": "english-pre-a1-m005-writing-ex01-i07",
             "position": 7,
-            "audio": "tts:en-GB:That's right.",
+            "audio": "tts:en-GB:Right.",
             "audioLocale": "en-GB",
             "audioStatus": "synthetic_pending_review",
             "kind": "sentence",
             "repeatCount": 3,
-            "expectedAnswer": "That's right.",
+            "expectedAnswer": "Right.",
             "evaluation": {
               "type": "normalised_text"
             },
             "segments": [
               {
                 "segmentId": "english-pre-a1-m005-writing-segment-07",
-                "text": "That's right."
+                "text": "Right."
               }
             ]
           },
           {
             "itemId": "english-pre-a1-m005-writing-ex01-i08",
             "position": 8,
-            "audio": "tts:en-GB:That's wrong.",
+            "audio": "tts:en-GB:Wrong.",
             "audioLocale": "en-GB",
             "audioStatus": "synthetic_pending_review",
             "kind": "sentence",
             "repeatCount": 3,
-            "expectedAnswer": "That's wrong.",
+            "expectedAnswer": "Wrong.",
             "evaluation": {
               "type": "normalised_text"
             },
             "segments": [
               {
                 "segmentId": "english-pre-a1-m005-writing-segment-08",
-                "text": "That's wrong."
+                "text": "Wrong."
               }
             ]
           },
@@ -1577,9 +1577,9 @@
             "itemId": "english-pre-a1-m005-speaking-ex01-i07",
             "position": 7,
             "prompt": "Di en voz alta el modelo.",
-            "promptSpanish": "Practica: Eso es correcto.",
-            "modelAnswer": "That's right.",
-            "translation": "Eso es correcto.",
+            "promptSpanish": "Practica: Correcto.",
+            "modelAnswer": "Right.",
+            "translation": "Correcto.",
             "evaluation": {
               "type": "transcription_feedback",
               "transcriptionSeparateFromPronunciation": true
@@ -1589,9 +1589,9 @@
             "itemId": "english-pre-a1-m005-speaking-ex01-i08",
             "position": 8,
             "prompt": "Di en voz alta el modelo.",
-            "promptSpanish": "Practica: Eso es incorrecto.",
-            "modelAnswer": "That's wrong.",
-            "translation": "Eso es incorrecto.",
+            "promptSpanish": "Practica: Incorrecto.",
+            "modelAnswer": "Wrong.",
+            "translation": "Incorrecto.",
             "evaluation": {
               "type": "transcription_feedback",
               "transcriptionSeparateFromPronunciation": true
@@ -1632,7 +1632,7 @@
         "exerciseId": "english-pre-a1-m005-listening-ex01",
         "type": "listening_gap_fill",
         "content": {
-          "audio": "tts:en-GB:Yes. No. Maybe. OK. Yes, please. No, thank you. That's right. That's wrong. Again, please. Repeat, please.",
+          "audio": "tts:en-GB:Yes. No. Maybe. OK. Yes, please. No, thank you. Right. Wrong. Again, please. Repeat, please.",
           "audioLocale": "en-GB",
           "audioStatus": "synthetic_pending_review",
           "transcriptTemplate": "[[gap-01]] [[gap-02]] [[gap-03]] [[gap-04]] [[gap-05]] [[gap-06]] [[gap-07]] [[gap-08]] [[gap-09]] [[gap-10]]",
@@ -1663,11 +1663,11 @@
             },
             {
               "wordId": "english-pre-a1-m005-listening-word-07",
-              "word": "That's right."
+              "word": "Right."
             },
             {
               "wordId": "english-pre-a1-m005-listening-word-08",
-              "word": "That's wrong."
+              "word": "Wrong."
             },
             {
               "wordId": "english-pre-a1-m005-listening-word-09",
@@ -1679,8 +1679,8 @@
             }
           ],
           "interaction": "select_place_move_replace",
-          "audioTranscript": "tts:en-GB:Yes. No. Maybe. OK. Yes, please. No, thank you. That's right. That's wrong. Again, please. Repeat, please.",
-          "translation": "Sí. No. Quizá. Vale. Sí, por favor. No, gracias. Eso es correcto. Eso es incorrecto. Otra vez, por favor. Repite, por favor."
+          "audioTranscript": "tts:en-GB:Yes. No. Maybe. OK. Yes, please. No, thank you. Right. Wrong. Again, please. Repeat, please.",
+          "translation": "Sí. No. Quizá. Vale. Sí, por favor. No, gracias. Correcto. Incorrecto. Otra vez, por favor. Repite, por favor."
         },
         "items": [
           {
@@ -1730,14 +1730,14 @@
             "position": 7,
             "gapToken": "[[gap-07]]",
             "expectedWordId": "english-pre-a1-m005-listening-word-07",
-            "answer": "That's right."
+            "answer": "Right."
           },
           {
             "itemId": "english-pre-a1-m005-listening-ex01-i08",
             "position": 8,
             "gapToken": "[[gap-08]]",
             "expectedWordId": "english-pre-a1-m005-listening-word-08",
-            "answer": "That's wrong."
+            "answer": "Wrong."
           },
           {
             "itemId": "english-pre-a1-m005-listening-ex01-i09",
