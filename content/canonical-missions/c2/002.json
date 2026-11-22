@@ -1,0 +1,1203 @@
+{
+  "schemaVersion": "1.2.0",
+  "contentVersion": 1,
+  "course": {
+    "courseId": "english-c2",
+    "level": "C2",
+    "language": "en-GB"
+  },
+  "unit": {
+    "unitId": "english-c2-unit-01",
+    "courseId": "english-c2",
+    "position": 1,
+    "title": "Meaning, Inference and Context"
+  },
+  "mission": {
+    "missionId": "english-c2-m002",
+    "unitId": "english-c2-unit-01",
+    "position": 2,
+    "title": "The Assumptions Beneath the Question"
+  },
+  "sections": [
+    {
+      "sectionId": "english-c2-m002-explore",
+      "sectionKey": "explore",
+      "position": 1,
+      "title": "explore",
+      "exercise": {
+        "exerciseId": "english-c2-m002-explore-exercise",
+        "type": "vocabulary_pairs",
+        "items": [
+          {
+            "itemId": "english-c2-m002-explore-word-1",
+            "position": 1,
+            "english": "presuppose",
+            "spanish": "dar por supuesto",
+            "pronunciationGuide": "pri-sa-PÓUZ",
+            "audio": "tts:en-GB"
+          },
+          {
+            "itemId": "english-c2-m002-explore-word-2",
+            "position": 2,
+            "english": "assumption",
+            "spanish": "suposición",
+            "pronunciationGuide": "a-SÁMP-shon",
+            "audio": "tts:en-GB"
+          },
+          {
+            "itemId": "english-c2-m002-explore-word-3",
+            "position": 3,
+            "english": "background knowledge",
+            "spanish": "conocimiento previo",
+            "pronunciationGuide": "BÁK-graund NÓ-lidj",
+            "audio": "tts:en-GB"
+          },
+          {
+            "itemId": "english-c2-m002-explore-word-4",
+            "position": 4,
+            "english": "definite description",
+            "spanish": "descripción definida",
+            "pronunciationGuide": "DÉ-fi-nit dis-KRÍP-shon",
+            "audio": "tts:en-GB"
+          },
+          {
+            "itemId": "english-c2-m002-explore-word-5",
+            "position": 5,
+            "english": "factive",
+            "spanish": "factivo",
+            "pronunciationGuide": "FÁK-tiv",
+            "audio": "tts:en-GB"
+          },
+          {
+            "itemId": "english-c2-m002-explore-word-6",
+            "position": 6,
+            "english": "trigger",
+            "spanish": "desencadenante lingüístico",
+            "pronunciationGuide": "TRÍ-guer",
+            "audio": "tts:en-GB"
+          },
+          {
+            "itemId": "english-c2-m002-explore-word-7",
+            "position": 7,
+            "english": "accommodate",
+            "spanish": "incorporar como supuesto",
+            "pronunciationGuide": "a-KÓ-mo-deit",
+            "audio": "tts:en-GB"
+          },
+          {
+            "itemId": "english-c2-m002-explore-word-8",
+            "position": 8,
+            "english": "counterfactual",
+            "spanish": "contrafactual",
+            "pronunciationGuide": "kaun-ta-FÁK-chu-al",
+            "audio": "tts:en-GB"
+          },
+          {
+            "itemId": "english-c2-m002-explore-word-9",
+            "position": 9,
+            "english": "shared ground",
+            "spanish": "terreno común",
+            "pronunciationGuide": "SHÉRD gráund",
+            "audio": "tts:en-GB"
+          },
+          {
+            "itemId": "english-c2-m002-explore-word-10",
+            "position": 10,
+            "english": "challenge a premise",
+            "spanish": "cuestionar una premisa",
+            "pronunciationGuide": "CHÁ-lendj a PRÉ-mis",
+            "audio": "tts:en-GB"
+          }
+        ],
+        "theory": {
+          "title": "Presupposition and shared assumptions",
+          "explanation": "A presupposition is information a speaker presents as already accepted or recoverable from context. It often survives negation and questioning: “She stopped attending” and “She did not stop attending” both suggest prior attendance. Common triggers include factive verbs (regret, realise), change-of-state verbs (stop, resume), definite descriptions, iteratives (again), and focus particles (even). Presuppositions can be accommodated when listeners accept them without challenge, but accommodation is not proof that the assumption is true.",
+          "tip": "For each sentence, underline the trigger, state the presupposed proposition, then ask whether the context supports it.",
+          "patterns": [
+            {
+              "label": "Change of state",
+              "pattern": "stop / resume / continue + -ing",
+              "examples": [
+                "They resumed negotiations. → Negotiations had taken place before.",
+                "She stopped publishing the figures. → She had published them before."
+              ]
+            },
+            {
+              "label": "Factive predicates",
+              "pattern": "regret / realise / discover + that-clause",
+              "examples": [
+                "He regretted that he had resigned. → He had resigned.",
+                "They realised that the figures were wrong. → The figures were wrong."
+              ]
+            },
+            {
+              "label": "Iteratives",
+              "pattern": "again / another / return",
+              "examples": [
+                "The system failed again. → It had failed before."
+              ]
+            },
+            {
+              "label": "Focus particles",
+              "pattern": "even / only / also",
+              "examples": [
+                "Even the chair objected. → The chair's objection is presented as unexpected."
+              ]
+            }
+          ]
+        },
+        "lesson": {
+          "phrases": [
+            {
+              "english": "The question takes for granted that the decision was final.",
+              "spanish": "La pregunta da por sentado que la decisión era definitiva.",
+              "note": "Identifica la información presentada como compartida."
+            },
+            {
+              "english": "I would question the premise rather than accept its framing.",
+              "spanish": "Cuestionaría la premisa en lugar de aceptar su planteamiento.",
+              "note": "Reformula la pregunta antes de responder."
+            }
+          ],
+          "grammar": [
+            {
+              "english": "Had the proposal been assessed, the criticism might have been better founded.",
+              "spanish": "Si se hubiera evaluado la propuesta, la crítica podría haber estado mejor fundamentada.",
+              "note": "Condicional mixto/tercer condicional invertido."
+            }
+          ],
+          "reading": [
+            {
+              "english": "The word “again” presupposes that the action has occurred before.",
+              "spanish": "La palabra «again» presupone que la acción ya ocurrió antes.",
+              "note": "Los adverbios aspectuales pueden activar presuposiciones."
+            }
+          ],
+          "writing": [
+            {
+              "english": "The question assumes, without demonstrating, that the figures were deliberately withheld.",
+              "spanish": "La pregunta supone, sin demostrarlo, que las cifras se ocultaron deliberadamente.",
+              "note": "Separa la premisa de la prueba."
+            }
+          ],
+          "speaking": [
+            {
+              "english": "I do not accept the premise that the delay was intentional.",
+              "spanish": "No acepto la premisa de que el retraso fuera intencionado.",
+              "prompt": "Challenge a questionable premise tactfully.",
+              "promptSpanish": "Cuestiona con tacto una premisa dudosa."
+            }
+          ],
+          "listening": [
+            {
+              "english": "The chair rejected the assumption that the decision was irreversible.",
+              "spanish": "La presidencia rechazó la suposición de que la decisión fuera irreversible.",
+              "note": "Escucha cómo se explicita una premisa."
+            }
+          ],
+          "examples": [
+            {
+              "english": "When did you stop overlooking the evidence?",
+              "spanish": "¿Cuándo dejaste de pasar por alto las pruebas?",
+              "note": "La pregunta presupone que antes se ignoraban las pruebas."
+            }
+          ],
+          "communication": [
+            {
+              "english": "Before I answer, I think we should examine the assumption built into the question.",
+              "spanish": "Antes de responder, creo que deberíamos examinar la suposición implícita en la pregunta.",
+              "note": "Una fórmula útil para reencuadrar un debate."
+            }
+          ]
+        }
+      }
+    },
+    {
+      "sectionId": "english-c2-m002-practice",
+      "sectionKey": "practice",
+      "position": 2,
+      "title": "practice",
+      "exercise": {
+        "exerciseId": "english-c2-m002-practice-exercise",
+        "type": "mixed_practice",
+        "items": [
+          {
+            "itemId": "english-c2-m002-practice-1",
+            "position": 1,
+            "taskType": "contextual_inference",
+            "prompt": "“The director has stopped concealing the figures.” What does the wording presuppose?",
+            "options": [
+              "The director never had the figures.",
+              "The director previously concealed the figures.",
+              "The figures have not been published."
+            ],
+            "answer": "The director previously concealed the figures.",
+            "evaluation": {
+              "type": "single_choice"
+            }
+          },
+          {
+            "itemId": "english-c2-m002-practice-2",
+            "position": 2,
+            "taskType": "contextual_inference",
+            "prompt": "Which question most directly challenges a loaded presupposition?",
+            "options": [
+              "When did you change your mind?",
+              "What makes you assume I had already agreed?",
+              "Why did you explain it?"
+            ],
+            "answer": "What makes you assume I had already agreed?",
+            "evaluation": {
+              "type": "single_choice"
+            }
+          },
+          {
+            "itemId": "english-c2-m002-practice-3",
+            "position": 3,
+            "taskType": "contextual_inference",
+            "prompt": "“Her latest proposal was rejected.” Which background assumption is invited by “latest”?",
+            "options": [
+              "She has made at least one earlier proposal.",
+              "She has never proposed anything.",
+              "The proposal was accepted."
+            ],
+            "answer": "She has made at least one earlier proposal.",
+            "evaluation": {
+              "type": "single_choice"
+            }
+          },
+          {
+            "itemId": "english-c2-m002-practice-4",
+            "position": 4,
+            "taskType": "contextual_inference",
+            "prompt": "Which expression most clearly introduces a counterfactual assumption?",
+            "options": [
+              "If the data had been complete, the outcome might have differed.",
+              "The data are complete.",
+              "Because the data are complete."
+            ],
+            "answer": "If the data had been complete, the outcome might have differed.",
+            "evaluation": {
+              "type": "single_choice"
+            }
+          },
+          {
+            "itemId": "english-c2-m002-practice-5",
+            "position": 5,
+            "taskType": "contextual_inference",
+            "prompt": "“Even the external auditors noticed the discrepancy.” What does “even” contribute?",
+            "options": [
+              "It presents the auditors as an unexpected group to notice it.",
+              "It says no one noticed it.",
+              "It proves the discrepancy was deliberate."
+            ],
+            "answer": "It presents the auditors as an unexpected group to notice it.",
+            "evaluation": {
+              "type": "single_choice"
+            }
+          },
+          {
+            "itemId": "english-c2-m002-practice-6",
+            "position": 6,
+            "taskType": "contextual_inference",
+            "prompt": "Which reply resists a premise politely?",
+            "options": [
+              "That is a ridiculous question.",
+              "I would question the premise that the decision was unilateral.",
+              "Obviously, you are wrong."
+            ],
+            "answer": "I would question the premise that the decision was unilateral.",
+            "evaluation": {
+              "type": "single_choice"
+            }
+          },
+          {
+            "itemId": "english-c2-m002-practice-7",
+            "position": 7,
+            "taskType": "contextual_inference",
+            "prompt": "“She regretted publishing the correction.” What is commonly presupposed by “regretted”?",
+            "options": [
+              "The correction was published.",
+              "The correction was never written.",
+              "She welcomed the correction."
+            ],
+            "answer": "The correction was published.",
+            "evaluation": {
+              "type": "single_choice"
+            }
+          },
+          {
+            "itemId": "english-c2-m002-practice-8",
+            "position": 8,
+            "taskType": "contextual_inference",
+            "prompt": "Which sentence makes the presupposition explicit rather than leaving it implicit?",
+            "options": [
+              "The committee resumed its review.",
+              "The committee had reviewed the matter before and has now started again.",
+              "The committee might review it."
+            ],
+            "answer": "The committee had reviewed the matter before and has now started again.",
+            "evaluation": {
+              "type": "single_choice"
+            }
+          },
+          {
+            "itemId": "english-c2-m002-practice-9",
+            "position": 9,
+            "taskType": "contextual_inference",
+            "prompt": "What is the safest response when a question contains an unsupported premise?",
+            "options": [
+              "Answer as if the premise were true.",
+              "Identify and examine the premise before answering.",
+              "Ignore the wording and guess."
+            ],
+            "answer": "Identify and examine the premise before answering.",
+            "evaluation": {
+              "type": "single_choice"
+            }
+          },
+          {
+            "itemId": "english-c2-m002-practice-10",
+            "position": 10,
+            "taskType": "contextual_inference",
+            "prompt": "A headline says “The minister finally admitted the scheme was flawed.” Which element carries an evaluative presupposition?",
+            "options": [
+              "finally",
+              "minister",
+              "scheme"
+            ],
+            "answer": "finally",
+            "evaluation": {
+              "type": "single_choice"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "sectionId": "english-c2-m002-grammar",
+      "sectionKey": "grammar",
+      "position": 3,
+      "title": "grammar",
+      "exercise": {
+        "exerciseId": "english-c2-m002-grammar-exercise",
+        "type": "grammar",
+        "items": [
+          {
+            "itemId": "english-c2-m002-grammar-1",
+            "position": 1,
+            "prompt": "Choose the correct form: “It is regrettable that the minutes ____ omitted.”",
+            "options": [
+              "were",
+              "have",
+              "being"
+            ],
+            "answer": "were",
+            "evaluation": {
+              "type": "single_choice"
+            }
+          },
+          {
+            "itemId": "english-c2-m002-grammar-2",
+            "position": 2,
+            "prompt": "Complete: “The wording presupposes that the policy ____ previously implemented.”",
+            "options": [
+              "has been",
+              "is being",
+              "will"
+            ],
+            "answer": "has been",
+            "evaluation": {
+              "type": "single_choice"
+            }
+          },
+          {
+            "itemId": "english-c2-m002-grammar-3",
+            "position": 3,
+            "prompt": "Choose the counterfactual form: “If the premise ____ sound, the conclusion would follow.”",
+            "options": [
+              "were",
+              "is",
+              "has been"
+            ],
+            "answer": "were",
+            "evaluation": {
+              "type": "single_choice"
+            }
+          },
+          {
+            "itemId": "english-c2-m002-grammar-4",
+            "position": 4,
+            "prompt": "Which sentence correctly uses “not until” inversion?",
+            "options": [
+              "Not until later we recognised the assumption.",
+              "Not until later did we recognise the assumption.",
+              "Not until did later we recognise the assumption."
+            ],
+            "answer": "Not until later did we recognise the assumption.",
+            "evaluation": {
+              "type": "single_choice"
+            }
+          },
+          {
+            "itemId": "english-c2-m002-grammar-5",
+            "position": 5,
+            "prompt": "Complete: “The question is framed as though the outcome ____ already settled.”",
+            "options": [
+              "were",
+              "is being",
+              "will be"
+            ],
+            "answer": "were",
+            "evaluation": {
+              "type": "single_choice"
+            }
+          },
+          {
+            "itemId": "english-c2-m002-grammar-6",
+            "position": 6,
+            "prompt": "Choose the correct cleft construction.",
+            "options": [
+              "What the wording obscures is the underlying assumption.",
+              "What obscures the wording is assumption underlying.",
+              "What the wording is obscure the assumption."
+            ],
+            "answer": "What the wording obscures is the underlying assumption.",
+            "evaluation": {
+              "type": "single_choice"
+            }
+          },
+          {
+            "itemId": "english-c2-m002-grammar-7",
+            "position": 7,
+            "prompt": "Which verb commonly takes a gerund in this meaning?",
+            "options": [
+              "regret",
+              "suggest to",
+              "avoid to"
+            ],
+            "answer": "regret",
+            "evaluation": {
+              "type": "single_choice"
+            }
+          },
+          {
+            "itemId": "english-c2-m002-grammar-8",
+            "position": 8,
+            "prompt": "Complete: “The chair denied ____ been informed beforehand.”",
+            "options": [
+              "to have",
+              "having",
+              "have"
+            ],
+            "answer": "having",
+            "evaluation": {
+              "type": "single_choice"
+            }
+          },
+          {
+            "itemId": "english-c2-m002-grammar-9",
+            "position": 9,
+            "prompt": "Choose the most accurate modal for a tentative inference.",
+            "options": [
+              "The wording must presuppose consent.",
+              "The wording may presuppose consent.",
+              "The wording will presuppose consent."
+            ],
+            "answer": "The wording may presuppose consent.",
+            "evaluation": {
+              "type": "single_choice"
+            }
+          },
+          {
+            "itemId": "english-c2-m002-grammar-10",
+            "position": 10,
+            "prompt": "Which sentence uses “as if” with appropriate hypothetical distance?",
+            "options": [
+              "He spoke as if the decision had already been made.",
+              "He spoke as if the decision is already made yesterday.",
+              "He spoke as if the decision making."
+            ],
+            "answer": "He spoke as if the decision had already been made.",
+            "evaluation": {
+              "type": "single_choice"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "sectionId": "english-c2-m002-pronunciation",
+      "sectionKey": "pronunciation",
+      "position": 4,
+      "title": "pronunciation",
+      "exercise": {
+        "exerciseId": "english-c2-m002-pronunciation-exercise",
+        "type": "pronunciation_cards",
+        "items": [
+          {
+            "itemId": "english-c2-m002-pronunciation-1",
+            "position": 1,
+            "word": "presuppose",
+            "translation": "dar por supuesto",
+            "pronunciationGuide": "pri-sa-PÓUZ",
+            "audio": "tts:en-GB"
+          },
+          {
+            "itemId": "english-c2-m002-pronunciation-2",
+            "position": 2,
+            "word": "assumption",
+            "translation": "suposición",
+            "pronunciationGuide": "a-SÁMP-shon",
+            "audio": "tts:en-GB"
+          },
+          {
+            "itemId": "english-c2-m002-pronunciation-3",
+            "position": 3,
+            "word": "background knowledge",
+            "translation": "conocimiento previo",
+            "pronunciationGuide": "BÁK-graund NÓ-lidj",
+            "audio": "tts:en-GB"
+          },
+          {
+            "itemId": "english-c2-m002-pronunciation-4",
+            "position": 4,
+            "word": "definite description",
+            "translation": "descripción definida",
+            "pronunciationGuide": "DÉ-fi-nit dis-KRÍP-shon",
+            "audio": "tts:en-GB"
+          },
+          {
+            "itemId": "english-c2-m002-pronunciation-5",
+            "position": 5,
+            "word": "factive",
+            "translation": "factivo",
+            "pronunciationGuide": "FÁK-tiv",
+            "audio": "tts:en-GB"
+          },
+          {
+            "itemId": "english-c2-m002-pronunciation-6",
+            "position": 6,
+            "word": "trigger",
+            "translation": "desencadenante lingüístico",
+            "pronunciationGuide": "TRÍ-guer",
+            "audio": "tts:en-GB"
+          },
+          {
+            "itemId": "english-c2-m002-pronunciation-7",
+            "position": 7,
+            "word": "accommodate",
+            "translation": "incorporar como supuesto",
+            "pronunciationGuide": "a-KÓ-mo-deit",
+            "audio": "tts:en-GB"
+          },
+          {
+            "itemId": "english-c2-m002-pronunciation-8",
+            "position": 8,
+            "word": "counterfactual",
+            "translation": "contrafactual",
+            "pronunciationGuide": "kaun-ta-FÁK-chu-al",
+            "audio": "tts:en-GB"
+          },
+          {
+            "itemId": "english-c2-m002-pronunciation-9",
+            "position": 9,
+            "word": "shared ground",
+            "translation": "terreno común",
+            "pronunciationGuide": "SHÉRD gráund",
+            "audio": "tts:en-GB"
+          },
+          {
+            "itemId": "english-c2-m002-pronunciation-10",
+            "position": 10,
+            "word": "challenge a premise",
+            "translation": "cuestionar una premisa",
+            "pronunciationGuide": "CHÁ-lendj a PRÉ-mis",
+            "audio": "tts:en-GB"
+          }
+        ]
+      }
+    },
+    {
+      "sectionId": "english-c2-m002-reading",
+      "sectionKey": "reading",
+      "position": 5,
+      "title": "reading",
+      "exercise": {
+        "exerciseId": "english-c2-m002-reading-exercise",
+        "type": "reading_comprehension",
+        "items": [
+          {
+            "itemId": "english-c2-m002-reading-1",
+            "position": 1,
+            "prompt": "What does “resume” presuppose in the notice?",
+            "options": [
+              "Earlier efforts had taken place.",
+              "The waterfront is already accessible.",
+              "The safety review is complete."
+            ],
+            "answer": "Earlier efforts had taken place.",
+            "evaluation": {
+              "type": "single_choice"
+            }
+          },
+          {
+            "itemId": "english-c2-m002-reading-2",
+            "position": 2,
+            "prompt": "What does the notice fail to explain?",
+            "options": [
+              "The authority's existence",
+              "Why the earlier efforts were interrupted",
+              "The meaning of waterfront"
+            ],
+            "answer": "Why the earlier efforts were interrupted",
+            "evaluation": {
+              "type": "single_choice"
+            }
+          },
+          {
+            "itemId": "english-c2-m002-reading-3",
+            "position": 3,
+            "prompt": "What does “finally” imply in the councillor's question?",
+            "options": [
+              "The acknowledgement is overdue.",
+              "The plan has succeeded.",
+              "The council has no authority."
+            ],
+            "answer": "The acknowledgement is overdue.",
+            "evaluation": {
+              "type": "single_choice"
+            }
+          },
+          {
+            "itemId": "english-c2-m002-reading-4",
+            "position": 4,
+            "prompt": "Which assumption is embedded in the word “failed”?",
+            "options": [
+              "That the plan's outcome is already judged unsuccessful.",
+              "That the plan was never implemented.",
+              "That the review is complete."
+            ],
+            "answer": "That the plan's outcome is already judged unsuccessful.",
+            "evaluation": {
+              "type": "single_choice"
+            }
+          },
+          {
+            "itemId": "english-c2-m002-reading-5",
+            "position": 5,
+            "prompt": "Why did the project team reject the question's framing?",
+            "options": [
+              "The plan had been suspended and not formally evaluated.",
+              "The councillor had no right to speak.",
+              "The waterfront had been sold."
+            ],
+            "answer": "The plan had been suspended and not formally evaluated.",
+            "evaluation": {
+              "type": "single_choice"
+            }
+          },
+          {
+            "itemId": "english-c2-m002-reading-6",
+            "position": 6,
+            "prompt": "What is the passage's main point?",
+            "options": [
+              "Presuppositions can make contested claims appear settled.",
+              "All presuppositions are misleading.",
+              "Notices should avoid verbs."
+            ],
+            "answer": "Presuppositions can make contested claims appear settled.",
+            "evaluation": {
+              "type": "single_choice"
+            }
+          },
+          {
+            "itemId": "english-c2-m002-reading-7",
+            "position": 7,
+            "prompt": "What does “smuggle” mean metaphorically in paragraph three?",
+            "options": [
+              "Introduce indirectly and without explicit scrutiny.",
+              "Transport something physically.",
+              "Remove a claim from a text."
+            ],
+            "answer": "Introduce indirectly and without explicit scrutiny.",
+            "evaluation": {
+              "type": "single_choice"
+            }
+          },
+          {
+            "itemId": "english-c2-m002-reading-8",
+            "position": 8,
+            "prompt": "Which distinction does the author recommend?",
+            "options": [
+              "Wording's assumptions versus evidential support.",
+              "Formal speech versus informal speech.",
+              "Past plans versus future plans."
+            ],
+            "answer": "Wording's assumptions versus evidential support.",
+            "evaluation": {
+              "type": "single_choice"
+            }
+          },
+          {
+            "itemId": "english-c2-m002-reading-9",
+            "position": 9,
+            "prompt": "Does the passage claim that every presupposition is manipulative?",
+            "options": [
+              "Yes, explicitly.",
+              "No; it says they can support efficient communication but may also embed contested claims.",
+              "It does not discuss presuppositions."
+            ],
+            "answer": "No; it says they can support efficient communication but may also embed contested claims.",
+            "evaluation": {
+              "type": "single_choice"
+            }
+          },
+          {
+            "itemId": "english-c2-m002-reading-10",
+            "position": 10,
+            "prompt": "Which title best captures the passage?",
+            "options": [
+              "The Hidden Work of Assumptions",
+              "A Waterfront Construction Manual",
+              "Why Councils Should Stop Meeting"
+            ],
+            "answer": "The Hidden Work of Assumptions",
+            "evaluation": {
+              "type": "single_choice"
+            }
+          }
+        ],
+        "content": {
+          "passageId": "english-c2-m002-reading-passage",
+          "passage": "A city council notice announced that the authority would “resume its efforts to make the waterfront accessible”. The wording appeared innocuous, yet residents quickly asked when those efforts had first begun and why they had been interrupted. The verb “resume” quietly presents an earlier period of activity as established background; it does not, by itself, explain the interruption or establish who was responsible.\n\nAt the subsequent meeting, a councillor asked whether the authority would finally acknowledge that its previous plan had failed. The question carried more than a request for information. “Finally” suggested that an acknowledgement was overdue, while “failed” treated the plan's outcome as settled. The project team rejected both assumptions, noting that the plan had been suspended pending a safety review and had never been formally evaluated.\n\nThis exchange illustrates why presuppositions deserve scrutiny. They can make communication efficient by relying on shared knowledge, but they can also smuggle contested claims into apparently ordinary sentences. A careful respondent need not reject every background assumption; rather, they should distinguish what the wording takes for granted from what the available evidence actually supports."
+        }
+      }
+    },
+    {
+      "sectionId": "english-c2-m002-writing",
+      "sectionKey": "writing",
+      "position": 6,
+      "title": "writing",
+      "exercise": {
+        "exerciseId": "english-c2-m002-writing-exercise",
+        "type": "dictation",
+        "items": [
+          {
+            "itemId": "english-c2-m002-writing-1",
+            "position": 1,
+            "audio": "tts:en-GB",
+            "audioLocale": "en-GB",
+            "kind": "sentence",
+            "repeatCount": 3,
+            "segments": [
+              {
+                "segmentId": "english-c2-m002-writing-1-segment",
+                "text": "The verb resume presupposes an earlier period of activity."
+              }
+            ],
+            "expectedAnswer": "The verb resume presupposes an earlier period of activity.",
+            "evaluation": {
+              "type": "normalised_text"
+            }
+          },
+          {
+            "itemId": "english-c2-m002-writing-2",
+            "position": 2,
+            "audio": "tts:en-GB",
+            "audioLocale": "en-GB",
+            "kind": "sentence",
+            "repeatCount": 3,
+            "segments": [
+              {
+                "segmentId": "english-c2-m002-writing-2-segment",
+                "text": "A loaded question may contain an assumption that has not been established."
+              }
+            ],
+            "expectedAnswer": "A loaded question may contain an assumption that has not been established.",
+            "evaluation": {
+              "type": "normalised_text"
+            }
+          },
+          {
+            "itemId": "english-c2-m002-writing-3",
+            "position": 3,
+            "audio": "tts:en-GB",
+            "audioLocale": "en-GB",
+            "kind": "sentence",
+            "repeatCount": 3,
+            "segments": [
+              {
+                "segmentId": "english-c2-m002-writing-3-segment",
+                "text": "We should distinguish shared knowledge from contested background claims."
+              }
+            ],
+            "expectedAnswer": "We should distinguish shared knowledge from contested background claims.",
+            "evaluation": {
+              "type": "normalised_text"
+            }
+          },
+          {
+            "itemId": "english-c2-m002-writing-4",
+            "position": 4,
+            "audio": "tts:en-GB",
+            "audioLocale": "en-GB",
+            "kind": "sentence",
+            "repeatCount": 3,
+            "segments": [
+              {
+                "segmentId": "english-c2-m002-writing-4-segment",
+                "text": "The wording treats the outcome as settled before the evidence is examined."
+              }
+            ],
+            "expectedAnswer": "The wording treats the outcome as settled before the evidence is examined.",
+            "evaluation": {
+              "type": "normalised_text"
+            }
+          },
+          {
+            "itemId": "english-c2-m002-writing-5",
+            "position": 5,
+            "audio": "tts:en-GB",
+            "audioLocale": "en-GB",
+            "kind": "sentence",
+            "repeatCount": 3,
+            "segments": [
+              {
+                "segmentId": "english-c2-m002-writing-5-segment",
+                "text": "It would be premature to accept the premise without further scrutiny."
+              }
+            ],
+            "expectedAnswer": "It would be premature to accept the premise without further scrutiny.",
+            "evaluation": {
+              "type": "normalised_text"
+            }
+          },
+          {
+            "itemId": "english-c2-m002-writing-6",
+            "position": 6,
+            "audio": "tts:en-GB",
+            "audioLocale": "en-GB",
+            "kind": "sentence",
+            "repeatCount": 3,
+            "segments": [
+              {
+                "segmentId": "english-c2-m002-writing-6-segment",
+                "text": "The chair challenged the assumption that consent had been given."
+              }
+            ],
+            "expectedAnswer": "The chair challenged the assumption that consent had been given.",
+            "evaluation": {
+              "type": "normalised_text"
+            }
+          },
+          {
+            "itemId": "english-c2-m002-writing-7",
+            "position": 7,
+            "audio": "tts:en-GB",
+            "audioLocale": "en-GB",
+            "kind": "sentence",
+            "repeatCount": 3,
+            "segments": [
+              {
+                "segmentId": "english-c2-m002-writing-7-segment",
+                "text": "What the question takes for granted is precisely what remains disputed."
+              }
+            ],
+            "expectedAnswer": "What the question takes for granted is precisely what remains disputed.",
+            "evaluation": {
+              "type": "normalised_text"
+            }
+          },
+          {
+            "itemId": "english-c2-m002-writing-8",
+            "position": 8,
+            "audio": "tts:en-GB",
+            "audioLocale": "en-GB",
+            "kind": "sentence",
+            "repeatCount": 3,
+            "segments": [
+              {
+                "segmentId": "english-c2-m002-writing-8-segment",
+                "text": "Had the plan been evaluated, the criticism might have carried more weight."
+              }
+            ],
+            "expectedAnswer": "Had the plan been evaluated, the criticism might have carried more weight.",
+            "evaluation": {
+              "type": "normalised_text"
+            }
+          },
+          {
+            "itemId": "english-c2-m002-writing-9",
+            "position": 9,
+            "audio": "tts:en-GB",
+            "audioLocale": "en-GB",
+            "kind": "sentence",
+            "repeatCount": 3,
+            "segments": [
+              {
+                "segmentId": "english-c2-m002-writing-9-segment",
+                "text": "The phrase finally acknowledged implies that recognition was overdue."
+              }
+            ],
+            "expectedAnswer": "The phrase finally acknowledged implies that recognition was overdue.",
+            "evaluation": {
+              "type": "normalised_text"
+            }
+          },
+          {
+            "itemId": "english-c2-m002-writing-10",
+            "position": 10,
+            "audio": "tts:en-GB",
+            "audioLocale": "en-GB",
+            "kind": "sentence",
+            "repeatCount": 3,
+            "segments": [
+              {
+                "segmentId": "english-c2-m002-writing-10-segment",
+                "text": "A careful answer identifies the premise before addressing the question."
+              }
+            ],
+            "expectedAnswer": "A careful answer identifies the premise before addressing the question.",
+            "evaluation": {
+              "type": "normalised_text"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "sectionId": "english-c2-m002-speaking",
+      "sectionKey": "speaking",
+      "position": 7,
+      "title": "speaking",
+      "exercise": {
+        "exerciseId": "english-c2-m002-speaking-exercise",
+        "type": "speaking_prompts",
+        "items": [
+          {
+            "itemId": "english-c2-m002-speaking-1",
+            "position": 1,
+            "prompt": "Explain how a presupposition differs from an entailment.",
+            "modelAnswer": "A presupposition is backgrounded information treated as given and may survive negation; an entailment is a necessary consequence of a proposition.",
+            "evaluation": {
+              "type": "rubric",
+              "transcriptionSeparateFromPronunciation": true
+            }
+          },
+          {
+            "itemId": "english-c2-m002-speaking-2",
+            "position": 2,
+            "prompt": "Analyse the hidden assumption in: “When will the department stop wasting public money?”",
+            "modelAnswer": "The question presupposes that the department is wasting public money and that the behaviour should stop; neither premise is established by the question itself.",
+            "evaluation": {
+              "type": "rubric",
+              "transcriptionSeparateFromPronunciation": true
+            }
+          },
+          {
+            "itemId": "english-c2-m002-speaking-3",
+            "position": 3,
+            "prompt": "Give an example of a factive verb and explain the assumption it introduces.",
+            "modelAnswer": "“She regretted cancelling the meeting” presupposes that the meeting was cancelled; regretted presents the embedded proposition as factive.",
+            "evaluation": {
+              "type": "rubric",
+              "transcriptionSeparateFromPronunciation": true
+            }
+          },
+          {
+            "itemId": "english-c2-m002-speaking-4",
+            "position": 4,
+            "prompt": "How can presuppositions make political rhetoric persuasive?",
+            "modelAnswer": "They allow a speaker to package contested evaluations as shared background, reducing the likelihood that listeners will challenge them.",
+            "evaluation": {
+              "type": "rubric",
+              "transcriptionSeparateFromPronunciation": true
+            }
+          },
+          {
+            "itemId": "english-c2-m002-speaking-5",
+            "position": 5,
+            "prompt": "Respond diplomatically to: “Why did you ignore the warning?” when you dispute the premise.",
+            "modelAnswer": "I would first clarify that I do not accept that I ignored it; I reviewed the warning and reached a different assessment of the risk.",
+            "evaluation": {
+              "type": "rubric",
+              "transcriptionSeparateFromPronunciation": true
+            }
+          },
+          {
+            "itemId": "english-c2-m002-speaking-6",
+            "position": 6,
+            "prompt": "Explain the pragmatic effect of “even” in a sentence of your choice.",
+            "modelAnswer": "“Even the sceptics supported the proposal” frames the sceptics as an unexpected group to support it, making the support seem especially significant.",
+            "evaluation": {
+              "type": "rubric",
+              "transcriptionSeparateFromPronunciation": true
+            }
+          },
+          {
+            "itemId": "english-c2-m002-speaking-7",
+            "position": 7,
+            "prompt": "Discuss when shared assumptions improve communication and when they become risky.",
+            "modelAnswer": "They improve efficiency when genuinely shared and relevant, but become risky when they conceal disagreement or encode unsupported claims.",
+            "evaluation": {
+              "type": "rubric",
+              "transcriptionSeparateFromPronunciation": true
+            }
+          },
+          {
+            "itemId": "english-c2-m002-speaking-8",
+            "position": 8,
+            "prompt": "Rewrite a loaded question as a neutral request for information.",
+            "modelAnswer": "Instead of “When will you admit the plan failed?”, ask “How would you assess the plan's outcomes against its original objectives?”",
+            "evaluation": {
+              "type": "rubric",
+              "transcriptionSeparateFromPronunciation": true
+            }
+          },
+          {
+            "itemId": "english-c2-m002-speaking-9",
+            "position": 9,
+            "prompt": "Describe how a counterfactual can expose an unstated assumption.",
+            "modelAnswer": "A counterfactual tests a premise by imagining a different condition, making dependencies and causal claims easier to examine.",
+            "evaluation": {
+              "type": "rubric",
+              "transcriptionSeparateFromPronunciation": true
+            }
+          },
+          {
+            "itemId": "english-c2-m002-speaking-10",
+            "position": 10,
+            "prompt": "Summarise the difference between challenging a premise and refusing to answer.",
+            "modelAnswer": "Challenging a premise addresses the assumptions built into a question; it can be a substantive answer rather than an evasion.",
+            "evaluation": {
+              "type": "rubric",
+              "transcriptionSeparateFromPronunciation": true
+            }
+          }
+        ]
+      }
+    },
+    {
+      "sectionId": "english-c2-m002-listening",
+      "sectionKey": "listening",
+      "position": 8,
+      "title": "listening",
+      "exercise": {
+        "exerciseId": "english-c2-m002-listening-exercise",
+        "type": "listening_gap_fill",
+        "items": [
+          {
+            "itemId": "english-c2-m002-listening-gap-1",
+            "position": 1,
+            "gapToken": "[[gap-01]]",
+            "expectedWordId": "english-c2-m002-listening-word-1"
+          },
+          {
+            "itemId": "english-c2-m002-listening-gap-2",
+            "position": 2,
+            "gapToken": "[[gap-02]]",
+            "expectedWordId": "english-c2-m002-listening-word-2"
+          },
+          {
+            "itemId": "english-c2-m002-listening-gap-3",
+            "position": 3,
+            "gapToken": "[[gap-03]]",
+            "expectedWordId": "english-c2-m002-listening-word-3"
+          },
+          {
+            "itemId": "english-c2-m002-listening-gap-4",
+            "position": 4,
+            "gapToken": "[[gap-04]]",
+            "expectedWordId": "english-c2-m002-listening-word-4"
+          },
+          {
+            "itemId": "english-c2-m002-listening-gap-5",
+            "position": 5,
+            "gapToken": "[[gap-05]]",
+            "expectedWordId": "english-c2-m002-listening-word-5"
+          },
+          {
+            "itemId": "english-c2-m002-listening-gap-6",
+            "position": 6,
+            "gapToken": "[[gap-06]]",
+            "expectedWordId": "english-c2-m002-listening-word-6"
+          },
+          {
+            "itemId": "english-c2-m002-listening-gap-7",
+            "position": 7,
+            "gapToken": "[[gap-07]]",
+            "expectedWordId": "english-c2-m002-listening-word-7"
+          },
+          {
+            "itemId": "english-c2-m002-listening-gap-8",
+            "position": 8,
+            "gapToken": "[[gap-08]]",
+            "expectedWordId": "english-c2-m002-listening-word-8"
+          },
+          {
+            "itemId": "english-c2-m002-listening-gap-9",
+            "position": 9,
+            "gapToken": "[[gap-09]]",
+            "expectedWordId": "english-c2-m002-listening-word-9"
+          },
+          {
+            "itemId": "english-c2-m002-listening-gap-10",
+            "position": 10,
+            "gapToken": "[[gap-10]]",
+            "expectedWordId": "english-c2-m002-listening-word-10"
+          }
+        ],
+        "content": {
+          "audio": "tts:en-GB",
+          "audioLocale": "en-GB",
+          "audioTranscript": "The interviewer asked when the committee would finally reconsider its decision. The chair replied that the question assumed the decision was irreversible, which it was not. She added that the review had resumed after new evidence emerged, although no conclusion had yet been reached.",
+          "transcriptTemplate": "The interviewer asked when the committee would [[gap-01]] [[gap-02]] its decision. The chair replied that the question [[gap-03]] the decision was [[gap-04]], which it was [[gap-05]]. She added that the [[gap-06]] had [[gap-07]] after new [[gap-08]] emerged, although no [[gap-09]] had yet been [[gap-10]].",
+          "wordBank": [
+            {
+              "wordId": "english-c2-m002-listening-word-10",
+              "word": "reached"
+            },
+            {
+              "wordId": "english-c2-m002-listening-word-9",
+              "word": "conclusion"
+            },
+            {
+              "wordId": "english-c2-m002-listening-word-8",
+              "word": "evidence"
+            },
+            {
+              "wordId": "english-c2-m002-listening-word-7",
+              "word": "resumed"
+            },
+            {
+              "wordId": "english-c2-m002-listening-word-6",
+              "word": "review"
+            },
+            {
+              "wordId": "english-c2-m002-listening-word-5",
+              "word": "not"
+            },
+            {
+              "wordId": "english-c2-m002-listening-word-4",
+              "word": "irreversible"
+            },
+            {
+              "wordId": "english-c2-m002-listening-word-3",
+              "word": "assumed"
+            },
+            {
+              "wordId": "english-c2-m002-listening-word-2",
+              "word": "reconsider"
+            },
+            {
+              "wordId": "english-c2-m002-listening-word-1",
+              "word": "finally"
+            }
+          ],
+          "interaction": "select_place_move_replace"
+        }
+      }
+    }
+  ]
+}
