@@ -66,13 +66,9 @@ jobs:
           npx --yes ajv-cli@5 validate --spec=draft2020 -s schemas/course-mission.schema.json -d content/canonical-missions/a2/001.json
           npx --yes ajv-cli@5 validate --spec=draft2020 -s schemas/course-mission.schema.json -d content/canonical-missions/a2/002.json
           npx --yes ajv-cli@5 validate --spec=draft2020 -s schemas/course-mission.schema.json -d content/canonical-missions/b1/001.json
-          node - <<'NODE'
-const fs = require("node:fs");
-const schema = JSON.parse(fs.readFileSync("schemas/course-mission.schema.json", "utf8"));
-fs.writeFileSync("/tmp/b2-array-schema.json", JSON.stringify({ $schema: schema.$schema, type: "array", items: schema, $defs: schema.$defs }));
-NODE
-jq -s '[.[] | to_entries[].value]' content/canonical-missions/b2/unit-*.json > /tmp/b2-missions.json
-npx --yes ajv-cli@5 validate --spec=draft2020 -s /tmp/b2-array-schema.json -d /tmp/b2-missions.json
+          node -e 'const fs = require("node:fs"); const schema = JSON.parse(fs.readFileSync("schemas/course-mission.schema.json", "utf8")); fs.writeFileSync("/tmp/b2-array-schema.json", JSON.stringify({ $schema: schema.$schema, type: "array", items: schema, $defs: schema.$defs }));'
+          jq -s '[.[] | to_entries[].value]' content/canonical-missions/b2/unit-*.json > /tmp/b2-missions.json
+          npx --yes ajv-cli@5 validate --spec=draft2020 -s /tmp/b2-array-schema.json -d /tmp/b2-missions.json
           npx --yes ajv-cli@5 validate --spec=draft2020 -s schemas/course-mission.schema.json -d content/canonical-missions/pre-a1/001.json
           npx --yes ajv-cli@5 validate --spec=draft2020 -s schemas/course-mission.schema.json -d content/canonical-missions/pre-a1/002.json
           npx --yes ajv-cli@5 validate --spec=draft2020 -s schemas/course-mission.schema.json -d content/canonical-missions/pre-a1/003.json
