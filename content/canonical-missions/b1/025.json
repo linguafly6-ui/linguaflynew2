@@ -701,80 +701,10 @@
           {
             "itemId": "english-b1-m025-grammar-01",
             "position": 1,
-            "prompt": "I've ___ three courses this year.",
-            "options": [
-              "completed",
-              "complete",
-              "completing"
-            ],
-            "answer": "completed",
-            "evaluation": {
-              "type": "single_choice"
-            }
-          },
-          {
-            "itemId": "english-b1-m025-grammar-02",
-            "position": 2,
-            "prompt": "I ___ my first job in 2021.",
-            "options": [
-              "started",
-              "have start",
-              "have started yesterday"
-            ],
-            "answer": "started",
-            "evaluation": {
-              "type": "single_choice"
-            }
-          },
-          {
-            "itemId": "english-b1-m025-grammar-03",
-            "position": 3,
-            "prompt": "I ___ work late, but now I finish early.",
-            "options": [
-              "used to",
-              "use to",
-              "am used to"
-            ],
-            "answer": "used to",
-            "evaluation": {
-              "type": "single_choice"
-            }
-          },
-          {
-            "itemId": "english-b1-m025-grammar-04",
-            "position": 4,
-            "prompt": "We ___ the manager at ten tomorrow.",
-            "options": [
-              "are meeting",
-              "meet yesterday",
-              "will meeting"
-            ],
-            "answer": "are meeting",
-            "evaluation": {
-              "type": "single_choice"
-            }
-          },
-          {
-            "itemId": "english-b1-m025-grammar-05",
-            "position": 5,
-            "prompt": "If the train ___ late, we'll take a taxi.",
-            "options": [
-              "is",
-              "will be",
-              "was"
-            ],
-            "answer": "is",
-            "evaluation": {
-              "type": "single_choice"
-            }
-          },
-          {
-            "itemId": "english-b1-m025-grammar-06",
-            "position": 6,
-            "prompt": "She said that she ___ busy.",
+            "prompt": "She said, “I am busy.” → She said that she ___ busy.",
             "options": [
               "was",
-              "is being",
+              "is",
               "be"
             ],
             "answer": "was",
@@ -783,13 +713,27 @@
             }
           },
           {
-            "itemId": "english-b1-m025-grammar-07",
-            "position": 7,
-            "prompt": "He asked me where I ___.",
+            "itemId": "english-b1-m025-grammar-02",
+            "position": 2,
+            "prompt": "He said, “I have finished.” → He said that he ___ finished.",
+            "options": [
+              "had",
+              "has",
+              "have"
+            ],
+            "answer": "had",
+            "evaluation": {
+              "type": "single_choice"
+            }
+          },
+          {
+            "itemId": "english-b1-m025-grammar-03",
+            "position": 3,
+            "prompt": "“Where do you work?” → She asked me where I ___.",
             "options": [
               "worked",
-              "do work",
-              "did worked"
+              "did I work",
+              "do I work"
             ],
             "answer": "worked",
             "evaluation": {
@@ -797,15 +741,71 @@
             }
           },
           {
+            "itemId": "english-b1-m025-grammar-04",
+            "position": 4,
+            "prompt": "“Can you help?” → He asked if I ___ help.",
+            "options": [
+              "could",
+              "can",
+              "will"
+            ],
+            "answer": "could",
+            "evaluation": {
+              "type": "single_choice"
+            }
+          },
+          {
+            "itemId": "english-b1-m025-grammar-05",
+            "position": 5,
+            "prompt": "They said, “We will arrive soon.” → They said they ___ arrive soon.",
+            "options": [
+              "would",
+              "will",
+              "can"
+            ],
+            "answer": "would",
+            "evaluation": {
+              "type": "single_choice"
+            }
+          },
+          {
+            "itemId": "english-b1-m025-grammar-06",
+            "position": 6,
+            "prompt": "“What time does it start?” → She asked what time it ___.",
+            "options": [
+              "started",
+              "did it start",
+              "does it start"
+            ],
+            "answer": "started",
+            "evaluation": {
+              "type": "single_choice"
+            }
+          },
+          {
+            "itemId": "english-b1-m025-grammar-07",
+            "position": 7,
+            "prompt": "The tutor told us, “Read the instructions.” → The tutor told us ___ the instructions.",
+            "options": [
+              "to read",
+              "read",
+              "reading"
+            ],
+            "answer": "to read",
+            "evaluation": {
+              "type": "single_choice"
+            }
+          },
+          {
             "itemId": "english-b1-m025-grammar-08",
             "position": 8,
-            "prompt": "As soon as I ___, I'll call you.",
+            "prompt": "He said, “I didn't see the email.” → He said he ___ the email.",
             "options": [
-              "arrive",
-              "will arrive",
-              "arrived"
+              "hadn't seen",
+              "didn't saw",
+              "hasn't see"
             ],
-            "answer": "arrive",
+            "answer": "hadn't seen",
             "evaluation": {
               "type": "single_choice"
             }
@@ -813,13 +813,13 @@
           {
             "itemId": "english-b1-m025-grammar-09",
             "position": 9,
-            "prompt": "They ___ the report yesterday.",
+            "prompt": "“Are you free tomorrow?” → She asked whether I ___ free the next day.",
             "options": [
-              "handed in",
-              "have hand in",
-              "has handed in"
+              "was",
+              "am",
+              "will"
             ],
-            "answer": "handed in",
+            "answer": "was",
             "evaluation": {
               "type": "single_choice"
             }
@@ -827,13 +827,13 @@
           {
             "itemId": "english-b1-m025-grammar-10",
             "position": 10,
-            "prompt": "I'll send you the details if anything ___.",
+            "prompt": "Mia said, “I can send the file.” → Mia said she ___ send the file.",
             "options": [
-              "changes",
-              "will change",
-              "changed"
+              "could",
+              "can",
+              "will"
             ],
-            "answer": "changes",
+            "answer": "could",
             "evaluation": {
               "type": "single_choice"
             }
