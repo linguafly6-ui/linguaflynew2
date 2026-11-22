@@ -442,78 +442,42 @@
         ],
         "theory": {
           "title": "English alphabet",
-          "explanation": "El alfabeto inglés tiene 26 letras. Cada letra tiene una forma mayúscula (A) y una minúscula (a): A/a, B/b, C/c… Z/z. Los nombres de las letras no siempre coinciden con sus sonidos dentro de las palabras. Las vocales son A, E, I, O, U; las demás letras son consonantes. Para deletrear, dices el nombre de cada letra por separado y en orden, por ejemplo T-O-M. La W se llama double u. En inglés británico, la Z se llama zed; en inglés estadounidense, zee. El texto completo de comprensión auditiva y su vocabulario de apoyo se presentan en Explore antes de la práctica.",
+          "explanation": "El alfabeto inglés tiene 26 letras. Cada letra tiene una forma mayúscula y una minúscula. En esta misión aprenderás principalmente cómo se pronuncia el nombre de cada letra cuando la dices por separado o deletreas una palabra. El nombre de una letra no siempre coincide con el sonido que representa dentro de una palabra. Las vocales son A, E, I, O, U; las demás son consonantes. Para deletrear, pronuncias cada nombre de letra por separado. En inglés británico, la Z se llama zed; en inglés estadounidense, zee.",
           "tip": "Exploración es aprendizaje, no un examen. Revisa todos los bloques, palabras y modelos antes de practicar.",
           "patterns": [
             {
-              "label": "1. El alfabeto",
-              "pattern": "Hay 26 letras, ordenadas de A a Z.",
+              "label": "1. Nombres de las letras",
+              "pattern": "Aprende cómo suena cada letra cuando la nombras.",
               "examples": [
-                "A, B, C, D… X, Y, Z"
+                "A = éi · B = bí · C = sí · D = dí · E = í"
               ]
             },
             {
               "label": "2. Mayúsculas y minúsculas",
-              "pattern": "Cada letra tiene dos formas escritas: mayúscula y minúscula.",
+              "pattern": "Cada letra tiene dos formas escritas, pero el nombre se pronuncia igual.",
               "examples": [
-                "A / a · B / b · C / c",
-                "T / t · Z / z"
+                "A / a · B / b · C / c"
               ]
             },
             {
-              "label": "3. Vocales",
-              "pattern": "Las cinco vocales son A, E, I, O, U.",
+              "label": "3. Vocales y consonantes",
+              "pattern": "A, E, I, O, U son vocales; las otras letras son consonantes.",
               "examples": [
-                "A, E, I, O, U"
+                "A = éi · E = í · I = ái · O = óu · U = iú"
               ]
             },
             {
-              "label": "4. Consonantes",
-              "pattern": "Las otras 21 letras son consonantes.",
+              "label": "4. Letras que se parecen al oído",
+              "pattern": "Escucha las diferencias entre nombres de letras que pueden confundirse.",
               "examples": [
-                "B, C, D, F, G…"
+                "B / D · E / I · G / J · M / N · P / T"
               ]
             },
             {
-              "label": "5. Nombres de letras",
-              "pattern": "Pronuncia el nombre de cada letra; no lo confundas con el sonido que puede tener dentro de una palabra.",
+              "label": "5. Deletrear",
+              "pattern": "Para deletrear, pronuncia el nombre de cada letra de la palabra.",
               "examples": [
-                "A = éi · E = í · I = ái"
-              ]
-            },
-            {
-              "label": "6. Letras que pueden confundirse",
-              "pattern": "Escucha con atención las diferencias entre nombres parecidos.",
-              "examples": [
-                "B / D · E / I · G / J · M / N · A / H"
-              ]
-            },
-            {
-              "label": "7. Spell",
-              "pattern": "Spell significa deletrear: decir las letras de una palabra en orden.",
-              "examples": [
-                "Tom → T-O-M"
-              ]
-            },
-            {
-              "label": "8. Spelling",
-              "pattern": "Spelling significa deletreo u ortografía, según el contexto.",
-              "examples": [
-                "The spelling of Tom is T-O-M."
-              ]
-            },
-            {
-              "label": "9. Preguntar cómo se deletrea",
-              "pattern": "How do you spell…? = ¿Cómo se deletrea…?",
-              "examples": [
-                "How do you spell Tom?"
-              ]
-            },
-            {
-              "label": "10. Responder deletreando",
-              "pattern": "Di cada nombre de letra por separado, en el orden correcto.",
-              "examples": [
-                "T-O-M · B-E-N · A-N-A"
+                "Tom → T-O-M · Ben → B-E-N"
               ]
             }
           ]
@@ -704,152 +668,182 @@
           {
             "itemId": "english-pre-a1-m006-practice-ex01-i01",
             "position": 1,
-            "prompt": "¿Qué letra va después de C?",
-            "answer": "D",
+            "prompt": "Escucha el nombre de la letra y elige la letra correcta.",
+            "audio": "tts:en-GB:bee",
+            "audioLocale": "en-GB",
+            "audioStatus": "synthetic_pending_review",
             "options": [
-              "B",
               "D",
-              "G"
+              "B",
+              "P"
             ],
+            "answer": "B",
             "evaluation": {
               "type": "single_choice"
             },
-            "taskType": "letter_order"
+            "taskType": "letter_name_recognition"
           },
           {
             "itemId": "english-pre-a1-m006-practice-ex01-i02",
             "position": 2,
-            "prompt": "¿Cuál es la forma minúscula de G?",
-            "answer": "g",
+            "prompt": "Escucha el nombre de la letra y elige la letra correcta.",
+            "audio": "tts:en-GB:ee",
+            "audioLocale": "en-GB",
+            "audioStatus": "synthetic_pending_review",
             "options": [
-              "q",
-              "g",
-              "j"
+              "I",
+              "A",
+              "E"
             ],
+            "answer": "E",
             "evaluation": {
               "type": "single_choice"
             },
-            "taskType": "capital_lowercase"
+            "taskType": "letter_name_recognition"
           },
           {
             "itemId": "english-pre-a1-m006-practice-ex01-i03",
             "position": 3,
-            "prompt": "¿Cuál es la forma mayúscula de m?",
-            "answer": "M",
+            "prompt": "Escucha el nombre de la letra y elige la letra correcta.",
+            "audio": "tts:en-GB:gee",
+            "audioLocale": "en-GB",
+            "audioStatus": "synthetic_pending_review",
             "options": [
-              "N",
-              "W",
-              "M"
+              "J",
+              "C",
+              "G"
             ],
+            "answer": "G",
             "evaluation": {
               "type": "single_choice"
             },
-            "taskType": "capital_lowercase"
+            "taskType": "letter_name_recognition"
           },
           {
             "itemId": "english-pre-a1-m006-practice-ex01-i04",
             "position": 4,
-            "prompt": "¿Qué grupo está en el orden correcto?",
-            "answer": "J, K, L",
+            "prompt": "Escucha el nombre de la letra y elige la letra correcta.",
+            "audio": "tts:en-GB:em",
+            "audioLocale": "en-GB",
+            "audioStatus": "synthetic_pending_review",
             "options": [
-              "K, J, L",
-              "J, K, L",
-              "J, L, K"
+              "N",
+              "M",
+              "H"
             ],
+            "answer": "M",
             "evaluation": {
               "type": "single_choice"
             },
-            "taskType": "letter_order"
+            "taskType": "letter_name_recognition"
           },
           {
             "itemId": "english-pre-a1-m006-practice-ex01-i05",
             "position": 5,
-            "prompt": "¿Cuál de estas letras es una vocal?",
-            "answer": "E",
+            "prompt": "Escucha el nombre de la letra y elige la letra correcta.",
+            "audio": "tts:en-GB:ay",
+            "audioLocale": "en-GB",
+            "audioStatus": "synthetic_pending_review",
             "options": [
-              "B",
-              "E",
-              "T"
+              "H",
+              "A",
+              "I"
             ],
+            "answer": "A",
             "evaluation": {
               "type": "single_choice"
             },
-            "taskType": "vowel_recognition"
+            "taskType": "letter_name_recognition"
           },
           {
             "itemId": "english-pre-a1-m006-practice-ex01-i06",
             "position": 6,
-            "prompt": "¿Qué grupo contiene solo vocales?",
-            "answer": "A, E, I",
+            "prompt": "Escucha el nombre de la letra y elige la letra correcta.",
+            "audio": "tts:en-GB:pee",
+            "audioLocale": "en-GB",
+            "audioStatus": "synthetic_pending_review",
             "options": [
-              "A, E, I",
-              "A, B, C",
-              "E, F, G"
+              "B",
+              "P",
+              "T"
             ],
+            "answer": "P",
             "evaluation": {
               "type": "single_choice"
             },
-            "taskType": "vowel_recognition"
+            "taskType": "letter_name_recognition"
           },
           {
             "itemId": "english-pre-a1-m006-practice-ex01-i07",
             "position": 7,
-            "prompt": "¿Cómo se deletrea Tom?",
-            "answer": "T-O-M",
+            "prompt": "Escucha el nombre de la letra y elige la letra correcta.",
+            "audio": "tts:en-GB:vee",
+            "audioLocale": "en-GB",
+            "audioStatus": "synthetic_pending_review",
             "options": [
-              "T-M-O",
-              "T-O-M",
-              "O-T-M"
+              "B",
+              "V",
+              "F"
             ],
+            "answer": "V",
             "evaluation": {
               "type": "single_choice"
             },
-            "taskType": "functional_spelling"
+            "taskType": "letter_name_recognition"
           },
           {
             "itemId": "english-pre-a1-m006-practice-ex01-i08",
             "position": 8,
-            "prompt": "¿Qué letra falta: A, B, __, D?",
-            "answer": "C",
+            "prompt": "Escucha el nombre de la letra y elige la letra correcta.",
+            "audio": "tts:en-GB:jay",
+            "audioLocale": "en-GB",
+            "audioStatus": "synthetic_pending_review",
             "options": [
-              "E",
-              "C",
-              "G"
+              "G",
+              "J",
+              "Y"
             ],
+            "answer": "J",
             "evaluation": {
               "type": "single_choice"
             },
-            "taskType": "letter_order"
+            "taskType": "letter_name_recognition"
           },
           {
             "itemId": "english-pre-a1-m006-practice-ex01-i09",
             "position": 9,
-            "prompt": "¿Qué significa spell?",
-            "answer": "deletrear",
+            "prompt": "Escucha el nombre de la letra y elige la letra correcta.",
+            "audio": "tts:en-GB:ar",
+            "audioLocale": "en-GB",
+            "audioStatus": "synthetic_pending_review",
             "options": [
-              "escuchar",
-              "deletrear",
-              "escribir"
+              "A",
+              "R",
+              "L"
             ],
+            "answer": "R",
             "evaluation": {
               "type": "single_choice"
             },
-            "taskType": "vocabulary_translation"
+            "taskType": "letter_name_recognition"
           },
           {
             "itemId": "english-pre-a1-m006-practice-ex01-i10",
             "position": 10,
-            "prompt": "¿Qué pregunta significa «¿Cómo se deletrea Tom?»",
-            "answer": "How do you spell Tom?",
+            "prompt": "Escucha el nombre de la letra y elige la letra correcta.",
+            "audio": "tts:en-GB:double u",
+            "audioLocale": "en-GB",
+            "audioStatus": "synthetic_pending_review",
             "options": [
-              "What is your name?",
-              "How are you?",
-              "How do you spell Tom?"
+              "U",
+              "W",
+              "V"
             ],
+            "answer": "W",
             "evaluation": {
               "type": "single_choice"
             },
-            "taskType": "functional_language"
+            "taskType": "letter_name_recognition"
           }
         ]
       }
@@ -862,22 +856,29 @@
         "exerciseId": "english-pre-a1-m006-grammar-ex01",
         "type": "grammar",
         "theory": {
-          "title": "Uso del alfabeto y deletreo",
-          "explanation": "Esta sección practica el orden de las letras, sus formas mayúscula y minúscula y la fórmula para pedir y dar un deletreo.",
-          "tip": "Di el nombre de cada letra, no el sonido de la letra dentro de una palabra.",
+          "title": "Reconocer el nombre de cada letra",
+          "explanation": "En esta misión no necesitas recitar el alfabeto de memoria. Aprende cómo suena el nombre de cada letra y reconoce qué letra corresponde al escucharla. Algunas se parecen y conviene compararlas con atención.",
+          "tip": "Escucha primero el audio y después elige la letra. No te guíes por el orden alfabético.",
           "patterns": [
             {
-              "label": "Pregunta",
-              "pattern": "How do you spell Tom?",
+              "label": "Escucha y reconoce",
+              "pattern": "Cada letra tiene un nombre en inglés.",
               "examples": [
-                "¿Cómo se deletrea Tom?"
+                "B = bee · E = ee · G = gee"
               ]
             },
             {
-              "label": "Respuesta",
-              "pattern": "T-O-M.",
+              "label": "Distingue sonidos parecidos",
+              "pattern": "Compara las letras que pueden confundirse al escucharlas.",
               "examples": [
-                "T, luego O, luego M."
+                "B / D · E / I · G / J · M / N · P / T"
+              ]
+            },
+            {
+              "label": "Pronuncia con claridad",
+              "pattern": "Di el nombre de la letra de forma aislada y vuelve a escucharlo.",
+              "examples": [
+                "V = vee · W = double u · Y = why"
               ]
             }
           ]
@@ -886,152 +887,182 @@
           {
             "itemId": "english-pre-a1-m006-grammar-ex01-i01",
             "position": 1,
-            "prompt": "Ordena las letras: A, C, B.",
+            "prompt": "Escucha el nombre de la letra y selecciona su forma escrita.",
+            "audio": "tts:en-GB:see",
+            "audioLocale": "en-GB",
+            "audioStatus": "synthetic_pending_review",
             "options": [
-              "A, B, C",
-              "B, A, C",
-              "C, A, B"
+              "S",
+              "C",
+              "Z"
             ],
-            "answer": "A, B, C",
+            "answer": "C",
             "evaluation": {
               "type": "single_choice"
             },
-            "taskType": "alphabet_and_spelling"
+            "taskType": "letter_name_recognition"
           },
           {
             "itemId": "english-pre-a1-m006-grammar-ex01-i02",
             "position": 2,
-            "prompt": "Elige la secuencia correcta después de H.",
+            "prompt": "Escucha el nombre de la letra y selecciona su forma escrita.",
+            "audio": "tts:en-GB:dee",
+            "audioLocale": "en-GB",
+            "audioStatus": "synthetic_pending_review",
             "options": [
-              "J, I, K",
-              "I, J, K",
-              "I, K, J"
+              "B",
+              "D",
+              "T"
             ],
-            "answer": "I, J, K",
+            "answer": "D",
             "evaluation": {
               "type": "single_choice"
             },
-            "taskType": "alphabet_and_spelling"
+            "taskType": "letter_name_recognition"
           },
           {
             "itemId": "english-pre-a1-m006-grammar-ex01-i03",
             "position": 3,
-            "prompt": "Selecciona las minúsculas de A, B, C.",
+            "prompt": "Escucha el nombre de la letra y selecciona su forma escrita.",
+            "audio": "tts:en-GB:eye",
+            "audioLocale": "en-GB",
+            "audioStatus": "synthetic_pending_review",
             "options": [
-              "A, B, C",
-              "a, b, c",
-              "a, B, c"
+              "E",
+              "I",
+              "Y"
             ],
-            "answer": "a, b, c",
+            "answer": "I",
             "evaluation": {
               "type": "single_choice"
             },
-            "taskType": "alphabet_and_spelling"
+            "taskType": "letter_name_recognition"
           },
           {
             "itemId": "english-pre-a1-m006-grammar-ex01-i04",
             "position": 4,
-            "prompt": "Selecciona las mayúsculas de d, e, f.",
+            "prompt": "Escucha el nombre de la letra y selecciona su forma escrita.",
+            "audio": "tts:en-GB:kay",
+            "audioLocale": "en-GB",
+            "audioStatus": "synthetic_pending_review",
             "options": [
-              "d, e, f",
-              "D, E, F",
-              "D, e, F"
+              "Q",
+              "K",
+              "C"
             ],
-            "answer": "D, E, F",
+            "answer": "K",
             "evaluation": {
               "type": "single_choice"
             },
-            "taskType": "alphabet_and_spelling"
+            "taskType": "letter_name_recognition"
           },
           {
             "itemId": "english-pre-a1-m006-grammar-ex01-i05",
             "position": 5,
-            "prompt": "Completa: A, E, I, __, U.",
+            "prompt": "Escucha el nombre de la letra y selecciona su forma escrita.",
+            "audio": "tts:en-GB:en",
+            "audioLocale": "en-GB",
+            "audioStatus": "synthetic_pending_review",
             "options": [
-              "A",
-              "O",
-              "T"
+              "M",
+              "N",
+              "L"
             ],
-            "answer": "O",
+            "answer": "N",
             "evaluation": {
               "type": "single_choice"
             },
-            "taskType": "alphabet_and_spelling"
+            "taskType": "letter_name_recognition"
           },
           {
             "itemId": "english-pre-a1-m006-grammar-ex01-i06",
             "position": 6,
-            "prompt": "Completa: M, N, __, P.",
+            "prompt": "Escucha el nombre de la letra y selecciona su forma escrita.",
+            "audio": "tts:en-GB:oh",
+            "audioLocale": "en-GB",
+            "audioStatus": "synthetic_pending_review",
             "options": [
-              "L",
+              "U",
               "O",
-              "Q"
+              "A"
             ],
             "answer": "O",
             "evaluation": {
               "type": "single_choice"
             },
-            "taskType": "alphabet_and_spelling"
+            "taskType": "letter_name_recognition"
           },
           {
             "itemId": "english-pre-a1-m006-grammar-ex01-i07",
             "position": 7,
-            "prompt": "¿Qué secuencia deletrea BEN?",
+            "prompt": "Escucha el nombre de la letra y selecciona su forma escrita.",
+            "audio": "tts:en-GB:cue",
+            "audioLocale": "en-GB",
+            "audioStatus": "synthetic_pending_review",
             "options": [
-              "B-N-E",
-              "B-E-N",
-              "E-B-N"
+              "K",
+              "Q",
+              "U"
             ],
-            "answer": "B-E-N",
+            "answer": "Q",
             "evaluation": {
               "type": "single_choice"
             },
-            "taskType": "alphabet_and_spelling"
+            "taskType": "letter_name_recognition"
           },
           {
             "itemId": "english-pre-a1-m006-grammar-ex01-i08",
             "position": 8,
-            "prompt": "¿Qué secuencia deletrea ANA?",
+            "prompt": "Escucha el nombre de la letra y selecciona su forma escrita.",
+            "audio": "tts:en-GB:ess",
+            "audioLocale": "en-GB",
+            "audioStatus": "synthetic_pending_review",
             "options": [
-              "A-A-N",
-              "N-A-A",
-              "A-N-A"
+              "C",
+              "S",
+              "F"
             ],
-            "answer": "A-N-A",
+            "answer": "S",
             "evaluation": {
               "type": "single_choice"
             },
-            "taskType": "alphabet_and_spelling"
+            "taskType": "letter_name_recognition"
           },
           {
             "itemId": "english-pre-a1-m006-grammar-ex01-i09",
             "position": 9,
-            "prompt": "Elige la pregunta correcta para pedir el deletreo de Tom.",
+            "prompt": "Escucha el nombre de la letra y selecciona su forma escrita.",
+            "audio": "tts:en-GB:you",
+            "audioLocale": "en-GB",
+            "audioStatus": "synthetic_pending_review",
             "options": [
-              "How are you, Tom?",
-              "How do you spell Tom?",
-              "What is Tom?"
+              "V",
+              "Y",
+              "U"
             ],
-            "answer": "How do you spell Tom?",
+            "answer": "U",
             "evaluation": {
               "type": "single_choice"
             },
-            "taskType": "alphabet_and_spelling"
+            "taskType": "letter_name_recognition"
           },
           {
             "itemId": "english-pre-a1-m006-grammar-ex01-i10",
             "position": 10,
-            "prompt": "Elige la respuesta que deletrea TOM.",
+            "prompt": "Escucha el nombre de la letra y selecciona su forma escrita.",
+            "audio": "tts:en-GB:why",
+            "audioLocale": "en-GB",
+            "audioStatus": "synthetic_pending_review",
             "options": [
-              "T-M-O",
-              "T-O-M",
-              "O-T-M"
+              "I",
+              "J",
+              "Y"
             ],
-            "answer": "T-O-M",
+            "answer": "Y",
             "evaluation": {
               "type": "single_choice"
             },
-            "taskType": "alphabet_and_spelling"
+            "taskType": "letter_name_recognition"
           }
         ]
       }
@@ -1047,102 +1078,132 @@
           {
             "itemId": "english-pre-a1-m006-pronunciation-ex01-i01",
             "position": 1,
-            "word": "A, B, C",
-            "translation": "Nombres de las letras A, B, C",
-            "pronunciationGuide": "éi – bí – sí",
-            "audio": "tts:en-GB:A, B, C",
+            "word": "B · D",
+            "translation": "Distingue los nombres de las letras B y D.",
+            "pronunciationGuide": "bí / dí",
+            "audio": "tts:en-GB:B, D",
+            "audioLocale": "en-GB",
             "audioStatus": "synthetic_pending_review",
-            "note": "Pronuncia cada nombre de letra con claridad."
+            "evaluation": {
+              "type": "repeat_and_compare"
+            }
           },
           {
             "itemId": "english-pre-a1-m006-pronunciation-ex01-i02",
             "position": 2,
-            "word": "D, E, F",
-            "translation": "Nombres de las letras D, E, F",
-            "pronunciationGuide": "dí – í – éf",
-            "audio": "tts:en-GB:D, E, F",
+            "word": "E · I",
+            "translation": "Distingue los nombres de las letras E e I.",
+            "pronunciationGuide": "í / ái",
+            "audio": "tts:en-GB:E, I",
+            "audioLocale": "en-GB",
             "audioStatus": "synthetic_pending_review",
-            "note": "Pronuncia cada nombre de letra con claridad."
+            "evaluation": {
+              "type": "repeat_and_compare"
+            }
           },
           {
             "itemId": "english-pre-a1-m006-pronunciation-ex01-i03",
             "position": 3,
-            "word": "G, H, I",
-            "translation": "Nombres de las letras G, H, I",
-            "pronunciationGuide": "yí – éich – ái",
-            "audio": "tts:en-GB:G, H, I",
+            "word": "G · J",
+            "translation": "Distingue los nombres de las letras G y J.",
+            "pronunciationGuide": "yí / yéi",
+            "audio": "tts:en-GB:G, J",
+            "audioLocale": "en-GB",
             "audioStatus": "synthetic_pending_review",
-            "note": "Pronuncia cada nombre de letra con claridad."
+            "evaluation": {
+              "type": "repeat_and_compare"
+            }
           },
           {
             "itemId": "english-pre-a1-m006-pronunciation-ex01-i04",
             "position": 4,
-            "word": "J, K, L",
-            "translation": "Nombres de las letras J, K, L",
-            "pronunciationGuide": "yéi – kéi – él",
-            "audio": "tts:en-GB:J, K, L",
+            "word": "M · N",
+            "translation": "Distingue los nombres de las letras M y N.",
+            "pronunciationGuide": "ém / én",
+            "audio": "tts:en-GB:M, N",
+            "audioLocale": "en-GB",
             "audioStatus": "synthetic_pending_review",
-            "note": "Pronuncia cada nombre de letra con claridad."
+            "evaluation": {
+              "type": "repeat_and_compare"
+            }
           },
           {
             "itemId": "english-pre-a1-m006-pronunciation-ex01-i05",
             "position": 5,
-            "word": "M, N, O",
-            "translation": "Nombres de las letras M, N, O",
-            "pronunciationGuide": "ém – én – óu",
-            "audio": "tts:en-GB:M, N, O",
+            "word": "A · H",
+            "translation": "Distingue los nombres de las letras A y H.",
+            "pronunciationGuide": "éi / éich",
+            "audio": "tts:en-GB:A, H",
+            "audioLocale": "en-GB",
             "audioStatus": "synthetic_pending_review",
-            "note": "Pronuncia cada nombre de letra con claridad."
+            "evaluation": {
+              "type": "repeat_and_compare"
+            }
           },
           {
             "itemId": "english-pre-a1-m006-pronunciation-ex01-i06",
             "position": 6,
-            "word": "P, Q, R",
-            "translation": "Nombres de las letras P, Q, R",
-            "pronunciationGuide": "pí – kiú – ar",
-            "audio": "tts:en-GB:P, Q, R",
+            "word": "P · T",
+            "translation": "Distingue los nombres de las letras P y T.",
+            "pronunciationGuide": "pí / tí",
+            "audio": "tts:en-GB:P, T",
+            "audioLocale": "en-GB",
             "audioStatus": "synthetic_pending_review",
-            "note": "Pronuncia cada nombre de letra con claridad."
+            "evaluation": {
+              "type": "repeat_and_compare"
+            }
           },
           {
             "itemId": "english-pre-a1-m006-pronunciation-ex01-i07",
             "position": 7,
-            "word": "S, T, U",
-            "translation": "Nombres de las letras S, T, U",
-            "pronunciationGuide": "és – tí – iú",
-            "audio": "tts:en-GB:S, T, U",
+            "word": "V · B",
+            "translation": "Distingue los nombres de las letras V y B.",
+            "pronunciationGuide": "ví / bí",
+            "audio": "tts:en-GB:V, B",
+            "audioLocale": "en-GB",
             "audioStatus": "synthetic_pending_review",
-            "note": "Pronuncia cada nombre de letra con claridad."
+            "evaluation": {
+              "type": "repeat_and_compare"
+            }
           },
           {
             "itemId": "english-pre-a1-m006-pronunciation-ex01-i08",
             "position": 8,
-            "word": "V, W, X",
-            "translation": "Nombres de las letras V, W, X",
-            "pronunciationGuide": "ví – dá-bol iú – éks",
-            "audio": "tts:en-GB:V, W, X",
+            "word": "C · Z",
+            "translation": "Distingue los nombres de las letras C y Z.",
+            "pronunciationGuide": "sí / zed",
+            "audio": "tts:en-GB:C, Z",
+            "audioLocale": "en-GB",
             "audioStatus": "synthetic_pending_review",
-            "note": "Pronuncia cada nombre de letra con claridad."
+            "evaluation": {
+              "type": "repeat_and_compare"
+            }
           },
           {
             "itemId": "english-pre-a1-m006-pronunciation-ex01-i09",
             "position": 9,
-            "word": "Y, Z",
-            "translation": "Nombres de las letras Y, Z",
-            "pronunciationGuide": "uái – zed / zí",
-            "audio": "tts:en-GB:Y, Z",
+            "word": "I · Y",
+            "translation": "Distingue los nombres de las letras I e Y.",
+            "pronunciationGuide": "ái / uái",
+            "audio": "tts:en-GB:I, Y",
+            "audioLocale": "en-GB",
             "audioStatus": "synthetic_pending_review",
-            "note": "Pronuncia cada nombre de letra con claridad."
+            "evaluation": {
+              "type": "repeat_and_compare"
+            }
           },
           {
             "itemId": "english-pre-a1-m006-pronunciation-ex01-i10",
             "position": 10,
-            "word": "B / D · E / I · G / J",
-            "translation": "Contrasta nombres de letras que pueden confundirse",
-            "pronunciationGuide": "bí / dí · í / ái · yí / yéi",
-            "audio": "tts:en-GB:B / D · E / I · G / J",
+            "word": "U · W",
+            "translation": "Distingue los nombres de las letras U y W.",
+            "pronunciationGuide": "iú / dá-bol iú",
+            "audio": "tts:en-GB:U, W",
+            "audioLocale": "en-GB",
             "audioStatus": "synthetic_pending_review",
-            "note": "Escucha las diferencias; no son el mismo nombre."
+            "evaluation": {
+              "type": "repeat_and_compare"
+            }
           }
         ]
       }
@@ -1323,190 +1384,190 @@
           {
             "itemId": "english-pre-a1-m006-writing-ex01-i01",
             "position": 1,
-            "audio": "tts:en-GB:T-O-M",
+            "audio": "tts:en-GB:bee",
             "audioLocale": "en-GB",
             "audioStatus": "synthetic_pending_review",
             "kind": "sentence",
             "repeatCount": 3,
-            "expectedAnswer": "T-O-M",
+            "expectedAnswer": "B",
             "evaluation": {
               "type": "normalised_text"
             },
             "segments": [
               {
                 "segmentId": "english-pre-a1-m006-writing-segment-01",
-                "text": "T-O-M"
+                "text": "bee"
               }
             ]
           },
           {
             "itemId": "english-pre-a1-m006-writing-ex01-i02",
             "position": 2,
-            "audio": "tts:en-GB:B-E-N",
+            "audio": "tts:en-GB:ee",
             "audioLocale": "en-GB",
             "audioStatus": "synthetic_pending_review",
             "kind": "sentence",
             "repeatCount": 3,
-            "expectedAnswer": "B-E-N",
+            "expectedAnswer": "E",
             "evaluation": {
               "type": "normalised_text"
             },
             "segments": [
               {
                 "segmentId": "english-pre-a1-m006-writing-segment-02",
-                "text": "B-E-N"
+                "text": "ee"
               }
             ]
           },
           {
             "itemId": "english-pre-a1-m006-writing-ex01-i03",
             "position": 3,
-            "audio": "tts:en-GB:A-N-A",
+            "audio": "tts:en-GB:gee",
             "audioLocale": "en-GB",
             "audioStatus": "synthetic_pending_review",
             "kind": "sentence",
             "repeatCount": 3,
-            "expectedAnswer": "A-N-A",
+            "expectedAnswer": "G",
             "evaluation": {
               "type": "normalised_text"
             },
             "segments": [
               {
                 "segmentId": "english-pre-a1-m006-writing-segment-03",
-                "text": "A-N-A"
+                "text": "gee"
               }
             ]
           },
           {
             "itemId": "english-pre-a1-m006-writing-ex01-i04",
             "position": 4,
-            "audio": "tts:en-GB:How do you spell Tom?",
+            "audio": "tts:en-GB:em",
             "audioLocale": "en-GB",
             "audioStatus": "synthetic_pending_review",
             "kind": "sentence",
             "repeatCount": 3,
-            "expectedAnswer": "How do you spell Tom?",
+            "expectedAnswer": "M",
             "evaluation": {
               "type": "normalised_text"
             },
             "segments": [
               {
                 "segmentId": "english-pre-a1-m006-writing-segment-04",
-                "text": "How do you spell Tom?"
+                "text": "em"
               }
             ]
           },
           {
             "itemId": "english-pre-a1-m006-writing-ex01-i05",
             "position": 5,
-            "audio": "tts:en-GB:My name is Tom.",
+            "audio": "tts:en-GB:ay",
             "audioLocale": "en-GB",
             "audioStatus": "synthetic_pending_review",
             "kind": "sentence",
             "repeatCount": 3,
-            "expectedAnswer": "My name is Tom.",
+            "expectedAnswer": "A",
             "evaluation": {
               "type": "normalised_text"
             },
             "segments": [
               {
                 "segmentId": "english-pre-a1-m006-writing-segment-05",
-                "text": "My name is Tom."
+                "text": "ay"
               }
             ]
           },
           {
             "itemId": "english-pre-a1-m006-writing-ex01-i06",
             "position": 6,
-            "audio": "tts:en-GB:T-O-M. B-E-N.",
+            "audio": "tts:en-GB:pee",
             "audioLocale": "en-GB",
             "audioStatus": "synthetic_pending_review",
             "kind": "sentence",
             "repeatCount": 3,
-            "expectedAnswer": "T-O-M. B-E-N.",
+            "expectedAnswer": "P",
             "evaluation": {
               "type": "normalised_text"
             },
             "segments": [
               {
                 "segmentId": "english-pre-a1-m006-writing-segment-06",
-                "text": "T-O-M. B-E-N."
+                "text": "pee"
               }
             ]
           },
           {
             "itemId": "english-pre-a1-m006-writing-ex01-i07",
             "position": 7,
-            "audio": "tts:en-GB:How do you spell your name?",
+            "audio": "tts:en-GB:vee",
             "audioLocale": "en-GB",
             "audioStatus": "synthetic_pending_review",
             "kind": "sentence",
             "repeatCount": 3,
-            "expectedAnswer": "How do you spell your name?",
+            "expectedAnswer": "V",
             "evaluation": {
               "type": "normalised_text"
             },
             "segments": [
               {
                 "segmentId": "english-pre-a1-m006-writing-segment-07",
-                "text": "How do you spell your name?"
+                "text": "vee"
               }
             ]
           },
           {
             "itemId": "english-pre-a1-m006-writing-ex01-i08",
             "position": 8,
-            "audio": "tts:en-GB:A-N-A",
+            "audio": "tts:en-GB:jay",
             "audioLocale": "en-GB",
             "audioStatus": "synthetic_pending_review",
             "kind": "sentence",
             "repeatCount": 3,
-            "expectedAnswer": "A-N-A",
+            "expectedAnswer": "J",
             "evaluation": {
               "type": "normalised_text"
             },
             "segments": [
               {
                 "segmentId": "english-pre-a1-m006-writing-segment-08",
-                "text": "A-N-A"
+                "text": "jay"
               }
             ]
           },
           {
             "itemId": "english-pre-a1-m006-writing-ex01-i09",
             "position": 9,
-            "audio": "tts:en-GB:The spelling is T-O-M.",
+            "audio": "tts:en-GB:ar",
             "audioLocale": "en-GB",
             "audioStatus": "synthetic_pending_review",
             "kind": "sentence",
             "repeatCount": 3,
-            "expectedAnswer": "The spelling is T-O-M.",
+            "expectedAnswer": "R",
             "evaluation": {
               "type": "normalised_text"
             },
             "segments": [
               {
                 "segmentId": "english-pre-a1-m006-writing-segment-09",
-                "text": "The spelling is T-O-M."
+                "text": "ar"
               }
             ]
           },
           {
             "itemId": "english-pre-a1-m006-writing-ex01-i10",
             "position": 10,
-            "audio": "tts:en-GB:My name is Ben. B-E-N.",
+            "audio": "tts:en-GB:double u",
             "audioLocale": "en-GB",
             "audioStatus": "synthetic_pending_review",
             "kind": "sentence",
             "repeatCount": 3,
-            "expectedAnswer": "My name is Ben. B-E-N.",
+            "expectedAnswer": "W",
             "evaluation": {
               "type": "normalised_text"
             },
             "segments": [
               {
                 "segmentId": "english-pre-a1-m006-writing-segment-10",
-                "text": "My name is Ben. B-E-N."
+                "text": "double u"
               }
             ]
           }
@@ -1524,10 +1585,10 @@
           {
             "itemId": "english-pre-a1-m006-speaking-ex01-i01",
             "position": 1,
-            "prompt": "Deletrea Tom.",
-            "promptSpanish": "Tom → T-O-M",
-            "modelAnswer": "T-O-M",
-            "translation": "Tom → T-O-M",
+            "prompt": "Pronuncia el nombre inglés de la letra B.",
+            "promptSpanish": "Letra B: bí",
+            "modelAnswer": "B",
+            "translation": "Pronuncia B.",
             "evaluation": {
               "type": "transcription_feedback",
               "transcriptionSeparateFromPronunciation": true
@@ -1536,10 +1597,10 @@
           {
             "itemId": "english-pre-a1-m006-speaking-ex01-i02",
             "position": 2,
-            "prompt": "Deletrea Ben.",
-            "promptSpanish": "Ben → B-E-N",
-            "modelAnswer": "B-E-N",
-            "translation": "Ben → B-E-N",
+            "prompt": "Pronuncia el nombre inglés de la letra D.",
+            "promptSpanish": "Letra D: dí",
+            "modelAnswer": "D",
+            "translation": "Pronuncia D.",
             "evaluation": {
               "type": "transcription_feedback",
               "transcriptionSeparateFromPronunciation": true
@@ -1548,10 +1609,10 @@
           {
             "itemId": "english-pre-a1-m006-speaking-ex01-i03",
             "position": 3,
-            "prompt": "Deletrea Ana.",
-            "promptSpanish": "Ana → A-N-A",
-            "modelAnswer": "A-N-A",
-            "translation": "Ana → A-N-A",
+            "prompt": "Pronuncia el nombre inglés de la letra E.",
+            "promptSpanish": "Letra E: í",
+            "modelAnswer": "E",
+            "translation": "Pronuncia E.",
             "evaluation": {
               "type": "transcription_feedback",
               "transcriptionSeparateFromPronunciation": true
@@ -1560,10 +1621,10 @@
           {
             "itemId": "english-pre-a1-m006-speaking-ex01-i04",
             "position": 4,
-            "prompt": "Pregunta cómo se deletrea Tom.",
-            "promptSpanish": "¿Cómo se deletrea Tom?",
-            "modelAnswer": "How do you spell Tom?",
-            "translation": "¿Cómo se deletrea Tom?",
+            "prompt": "Pronuncia el nombre inglés de la letra I.",
+            "promptSpanish": "Letra I: ái",
+            "modelAnswer": "I",
+            "translation": "Pronuncia I.",
             "evaluation": {
               "type": "transcription_feedback",
               "transcriptionSeparateFromPronunciation": true
@@ -1572,10 +1633,10 @@
           {
             "itemId": "english-pre-a1-m006-speaking-ex01-i05",
             "position": 5,
-            "prompt": "Responde: How do you spell Tom?",
-            "promptSpanish": "Tom se deletrea T-O-M.",
-            "modelAnswer": "T-O-M.",
-            "translation": "Tom se deletrea T-O-M.",
+            "prompt": "Pronuncia el nombre inglés de la letra G.",
+            "promptSpanish": "Letra G: yí",
+            "modelAnswer": "G",
+            "translation": "Pronuncia G.",
             "evaluation": {
               "type": "transcription_feedback",
               "transcriptionSeparateFromPronunciation": true
@@ -1584,10 +1645,10 @@
           {
             "itemId": "english-pre-a1-m006-speaking-ex01-i06",
             "position": 6,
-            "prompt": "Pregunta cómo se deletrea el nombre de tu compañero.",
-            "promptSpanish": "¿Cómo se deletrea tu nombre?",
-            "modelAnswer": "How do you spell your name?",
-            "translation": "¿Cómo se deletrea tu nombre?",
+            "prompt": "Pronuncia el nombre inglés de la letra J.",
+            "promptSpanish": "Letra J: yéi",
+            "modelAnswer": "J",
+            "translation": "Pronuncia J.",
             "evaluation": {
               "type": "transcription_feedback",
               "transcriptionSeparateFromPronunciation": true
@@ -1596,10 +1657,10 @@
           {
             "itemId": "english-pre-a1-m006-speaking-ex01-i07",
             "position": 7,
-            "prompt": "Di tu nombre y deletrea Tom como modelo.",
-            "promptSpanish": "Me llamo Tom. T-O-M.",
-            "modelAnswer": "My name is Tom. T-O-M.",
-            "translation": "Me llamo Tom. T-O-M.",
+            "prompt": "Pronuncia el nombre inglés de la letra M.",
+            "promptSpanish": "Letra M: ém",
+            "modelAnswer": "M",
+            "translation": "Pronuncia M.",
             "evaluation": {
               "type": "transcription_feedback",
               "transcriptionSeparateFromPronunciation": true
@@ -1608,10 +1669,10 @@
           {
             "itemId": "english-pre-a1-m006-speaking-ex01-i08",
             "position": 8,
-            "prompt": "Deletrea B-E-N con pausas claras.",
-            "promptSpanish": "B, E, N.",
-            "modelAnswer": "B-E-N",
-            "translation": "B, E, N.",
+            "prompt": "Pronuncia el nombre inglés de la letra N.",
+            "promptSpanish": "Letra N: én",
+            "modelAnswer": "N",
+            "translation": "Pronuncia N.",
             "evaluation": {
               "type": "transcription_feedback",
               "transcriptionSeparateFromPronunciation": true
@@ -1620,10 +1681,10 @@
           {
             "itemId": "english-pre-a1-m006-speaking-ex01-i09",
             "position": 9,
-            "prompt": "Deletrea A-N-A con pausas claras.",
-            "promptSpanish": "A, N, A.",
-            "modelAnswer": "A-N-A",
-            "translation": "A, N, A.",
+            "prompt": "Pronuncia el nombre inglés de la letra V.",
+            "promptSpanish": "Letra V: ví",
+            "modelAnswer": "V",
+            "translation": "Pronuncia V.",
             "evaluation": {
               "type": "transcription_feedback",
               "transcriptionSeparateFromPronunciation": true
@@ -1632,10 +1693,10 @@
           {
             "itemId": "english-pre-a1-m006-speaking-ex01-i10",
             "position": 10,
-            "prompt": "Representa el diálogo: pregunta y responde.",
-            "promptSpanish": "¿Cómo se deletrea Tom? T-O-M.",
-            "modelAnswer": "How do you spell Tom? T-O-M.",
-            "translation": "¿Cómo se deletrea Tom? T-O-M.",
+            "prompt": "Pronuncia el nombre inglés de la letra W.",
+            "promptSpanish": "Letra W: dá-bol iú",
+            "modelAnswer": "W",
+            "translation": "Pronuncia W.",
             "evaluation": {
               "type": "transcription_feedback",
               "transcriptionSeparateFromPronunciation": true
