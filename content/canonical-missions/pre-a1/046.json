@@ -636,142 +636,132 @@
           {
             "itemId": "english-pre-a1-m046-grammar-ex01-i01",
             "position": 1,
-            "prompt": "Elige el modelo correcto: I want to buy a bag.",
+            "prompt": "Complete: I want ___ buy a bag.",
             "evaluation": {
               "type": "single_choice"
             },
             "options": [
-              "I want to buy a bag.",
-              "How much?",
-              "One coin, please."
-            ],
-            "answer": "I want to buy a bag."
+              "to",
+              "for",
+              "at"
+            ]
           },
           {
             "itemId": "english-pre-a1-m046-grammar-ex01-i02",
             "position": 2,
-            "prompt": "Elige el modelo correcto: How much?",
+            "prompt": "Choose the correct question about price.",
             "evaluation": {
               "type": "single_choice"
             },
             "options": [
-              "How much?",
-              "One coin, please.",
-              "Here is the money."
-            ],
-            "answer": "How much?"
+              "How much is it?",
+              "How many is it?",
+              "How much it is?"
+            ]
           },
           {
             "itemId": "english-pre-a1-m046-grammar-ex01-i03",
             "position": 3,
-            "prompt": "Elige el modelo correcto: One coin, please.",
+            "prompt": "Complete the polite request: One coin, ___.",
             "evaluation": {
               "type": "single_choice"
             },
             "options": [
-              "One coin, please.",
-              "Here is the money.",
-              "Thank you."
-            ],
-            "answer": "One coin, please."
+              "please",
+              "thanks",
+              "welcome"
+            ]
           },
           {
             "itemId": "english-pre-a1-m046-grammar-ex01-i04",
             "position": 4,
-            "prompt": "Elige el modelo correcto: Here is the money.",
+            "prompt": "Complete: Here ___ the money.",
             "evaluation": {
               "type": "single_choice"
             },
             "options": [
-              "Here is the money.",
-              "Thank you.",
-              "The price is one coin."
-            ],
-            "answer": "Here is the money."
+              "is",
+              "are",
+              "am"
+            ]
           },
           {
             "itemId": "english-pre-a1-m046-grammar-ex01-i05",
             "position": 5,
-            "prompt": "Elige el modelo correcto: Thank you.",
+            "prompt": "Choose the correct response to 'Thank you'.",
             "evaluation": {
               "type": "single_choice"
             },
             "options": [
-              "Thank you.",
-              "The price is one coin.",
-              "I have a bag."
-            ],
-            "answer": "Thank you."
+              "You're welcome.",
+              "Please.",
+              "How much?"
+            ]
           },
           {
             "itemId": "english-pre-a1-m046-grammar-ex01-i06",
             "position": 6,
-            "prompt": "Elige el modelo correcto: The price is one coin.",
+            "prompt": "Complete: The price ___ one coin.",
             "evaluation": {
               "type": "single_choice"
             },
             "options": [
-              "The price is one coin.",
-              "I have a bag.",
-              "The shop worker is here."
-            ],
-            "answer": "The price is one coin."
+              "is",
+              "are",
+              "am"
+            ]
           },
           {
             "itemId": "english-pre-a1-m046-grammar-ex01-i07",
             "position": 7,
-            "prompt": "Elige el modelo correcto: I have a bag.",
+            "prompt": "Complete: I ___ a bag.",
             "evaluation": {
               "type": "single_choice"
             },
             "options": [
-              "I have a bag.",
-              "The shop worker is here.",
-              "Please, a bag."
-            ],
-            "answer": "I have a bag."
+              "have",
+              "has",
+              "having"
+            ]
           },
           {
             "itemId": "english-pre-a1-m046-grammar-ex01-i08",
             "position": 8,
-            "prompt": "Elige el modelo correcto: The shop worker is here.",
+            "prompt": "Complete: The shop worker ___ here.",
             "evaluation": {
               "type": "single_choice"
             },
             "options": [
-              "The shop worker is here.",
-              "Please, a bag.",
-              "Thank you for the bag."
-            ],
-            "answer": "The shop worker is here."
+              "is",
+              "are",
+              "am"
+            ]
           },
           {
             "itemId": "english-pre-a1-m046-grammar-ex01-i09",
             "position": 9,
-            "prompt": "Elige el modelo correcto: Please, a bag.",
+            "prompt": "Choose the polite request.",
             "evaluation": {
               "type": "single_choice"
             },
             "options": [
-              "Please, a bag.",
-              "Thank you for the bag.",
-              "I want to buy a bag."
-            ],
-            "answer": "Please, a bag."
+              "A bag, please.",
+              "A bag, pleases.",
+              "Please a bag is."
+            ]
           },
           {
             "itemId": "english-pre-a1-m046-grammar-ex01-i10",
             "position": 10,
-            "prompt": "Elige el modelo correcto: Thank you for the bag.",
+            "prompt": "Complete: Thank you ___ the bag.",
             "evaluation": {
               "type": "single_choice"
             },
             "options": [
-              "Thank you for the bag.",
-              "I want to buy a bag.",
-              "How much?"
-            ],
-            "answer": "Thank you for the bag."
+              "for",
+              "at",
+              "on"
+            ]
           }
         ],
         "theory": {

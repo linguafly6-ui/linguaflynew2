@@ -636,142 +636,132 @@
           {
             "itemId": "english-pre-a1-m048-grammar-ex01-i01",
             "position": 1,
-            "prompt": "Elige el modelo correcto: Water the flower.",
+            "prompt": "Choose the correct instruction.",
             "evaluation": {
               "type": "single_choice"
             },
             "options": [
               "Water the flower.",
-              "Plant the seed.",
-              "Seeds grow."
-            ],
-            "answer": "Water the flower."
+              "Waters the flower.",
+              "Watering the flower."
+            ]
           },
           {
             "itemId": "english-pre-a1-m048-grammar-ex01-i02",
             "position": 2,
-            "prompt": "Elige el modelo correcto: Plant the seed.",
+            "prompt": "Choose the correct instruction.",
             "evaluation": {
               "type": "single_choice"
             },
             "options": [
               "Plant the seed.",
-              "Seeds grow.",
-              "The tree is big."
-            ],
-            "answer": "Plant the seed."
+              "Plants the seed.",
+              "Planting the seed."
+            ]
           },
           {
             "itemId": "english-pre-a1-m048-grammar-ex01-i03",
             "position": 3,
-            "prompt": "Elige el modelo correcto: Seeds grow.",
+            "prompt": "Complete: Seeds ___ in spring.",
             "evaluation": {
               "type": "single_choice"
             },
             "options": [
-              "Seeds grow.",
-              "The tree is big.",
-              "The grass is green."
-            ],
-            "answer": "Seeds grow."
+              "grow",
+              "grows",
+              "growing"
+            ]
           },
           {
             "itemId": "english-pre-a1-m048-grammar-ex01-i04",
             "position": 4,
-            "prompt": "Elige el modelo correcto: The tree is big.",
+            "prompt": "Complete: The tree ___ big.",
             "evaluation": {
               "type": "single_choice"
             },
             "options": [
-              "The tree is big.",
-              "The grass is green.",
-              "A leaf is on the plant."
-            ],
-            "answer": "The tree is big."
+              "is",
+              "are",
+              "am"
+            ]
           },
           {
             "itemId": "english-pre-a1-m048-grammar-ex01-i05",
             "position": 5,
-            "prompt": "Elige el modelo correcto: The grass is green.",
+            "prompt": "Complete: The grass ___ green.",
             "evaluation": {
               "type": "single_choice"
             },
             "options": [
-              "The grass is green.",
-              "A leaf is on the plant.",
-              "The flower is in the soil."
-            ],
-            "answer": "The grass is green."
+              "is",
+              "are",
+              "am"
+            ]
           },
           {
             "itemId": "english-pre-a1-m048-grammar-ex01-i06",
             "position": 6,
-            "prompt": "Elige el modelo correcto: A leaf is on the plant.",
+            "prompt": "Complete: A leaf ___ on the plant.",
             "evaluation": {
               "type": "single_choice"
             },
             "options": [
-              "A leaf is on the plant.",
-              "The flower is in the soil.",
-              "The sun is hot."
-            ],
-            "answer": "A leaf is on the plant."
+              "is",
+              "are",
+              "am"
+            ]
           },
           {
             "itemId": "english-pre-a1-m048-grammar-ex01-i07",
             "position": 7,
-            "prompt": "Elige el modelo correcto: The flower is in the soil.",
+            "prompt": "Complete: The flower is ___ the soil.",
             "evaluation": {
               "type": "single_choice"
             },
             "options": [
-              "The flower is in the soil.",
-              "The sun is hot.",
-              "Water the plant."
-            ],
-            "answer": "The flower is in the soil."
+              "in",
+              "on",
+              "at"
+            ]
           },
           {
             "itemId": "english-pre-a1-m048-grammar-ex01-i08",
             "position": 8,
-            "prompt": "Elige el modelo correcto: The sun is hot.",
+            "prompt": "Complete: The sun ___ hot.",
             "evaluation": {
               "type": "single_choice"
             },
             "options": [
-              "The sun is hot.",
-              "Water the plant.",
-              "The seed is in the soil."
-            ],
-            "answer": "The sun is hot."
+              "is",
+              "are",
+              "am"
+            ]
           },
           {
             "itemId": "english-pre-a1-m048-grammar-ex01-i09",
             "position": 9,
-            "prompt": "Elige el modelo correcto: Water the plant.",
+            "prompt": "Choose the correct instruction.",
             "evaluation": {
               "type": "single_choice"
             },
             "options": [
               "Water the plant.",
-              "The seed is in the soil.",
-              "Water the flower."
-            ],
-            "answer": "Water the plant."
+              "Waters the plant.",
+              "Watering the plant."
+            ]
           },
           {
             "itemId": "english-pre-a1-m048-grammar-ex01-i10",
             "position": 10,
-            "prompt": "Elige el modelo correcto: The seed is in the soil.",
+            "prompt": "Complete: The seed is ___ the soil.",
             "evaluation": {
               "type": "single_choice"
             },
             "options": [
-              "The seed is in the soil.",
-              "Water the flower.",
-              "Plant the seed."
-            ],
-            "answer": "The seed is in the soil."
+              "in",
+              "on",
+              "at"
+            ]
           }
         ],
         "theory": {
