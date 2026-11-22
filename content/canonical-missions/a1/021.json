@@ -701,7 +701,7 @@
             },
             {
               "english": "Have a lovely day.",
-              "spanish": "Que tengan un buen día."
+              "spanish": "Que tengan un día estupendo."
             }
           ]
         }
@@ -1719,12 +1719,12 @@
         "content": {
           "audio": "tts:en-GB",
           "audioLocale": "en-GB",
-          "audioTranscript": "Good afternoon. Do you have a reservation? No, we don't. A table for two, please. Of course. Here is the menu. Thank you. Could I have the soup, please? Certainly. And I'd like a cheese sandwich. Would you like anything to drink? Still water, please. Would you like anything else? No, thank you. That's all. Here is your bill. Can I pay by card? Yes, of course. Thank you. Have a lovely day.",
-          "transcriptTemplate": "Good afternoon. Do you have a [[gap-01]]? No, we don't. A table for two, please. Of course. Here is the [[gap-02]]. Thank you. Could I have the [[gap-03]], please? Certainly. And I'd like a cheese [[gap-04]]. Would you like anything to drink? Still [[gap-05]], please. Would you like [[gap-06]] else? No, thank you. That's all. Here is your [[gap-07]]. Can I pay by [[gap-08]]? Yes, of course. Would you like to pay in [[gap-09]]? No, thank you. And [[gap-10]] you. Have a lovely day.",
+          "audioTranscript": "Good afternoon. Do you have a reservation? No, we don't. A table for two, please. Of course. Here is the menu. Thank you. Could I have the soup, please? Certainly. And I'd like a cheese sandwich. Would you like anything to drink? Still water, please. Would you like anything else? No, thank you. That's all. Here is your bill. Can I pay by card? Yes, of course. Would you like to pay in cash? No, thank you. Have a lovely day.",
+          "transcriptTemplate": "Good afternoon. Do you have a [[gap-01]]? No, we don't. A table for two, please. Of course. Here is the [[gap-02]]. Thank you. Could I have the [[gap-03]], please? Certainly. And I'd like a cheese [[gap-04]]. Would you like anything to drink? Still [[gap-05]], please. Would you like [[gap-06]] else? No, thank you. That's all. Here is your [[gap-07]]. Can I pay by [[gap-08]]? Yes, of course. Would you like to pay in [[gap-09]]? No, thank you. Have a [[gap-10]] day.",
           "wordBank": [
             {
               "wordId": "english-a1-m021-listen-word-01",
-              "word": "table"
+              "word": "reservation"
             },
             {
               "wordId": "english-a1-m021-listen-word-02",
@@ -1760,11 +1760,11 @@
             },
             {
               "wordId": "english-a1-m021-listen-word-10",
-              "word": "thank"
+              "word": "lovely"
             }
           ],
           "interaction": "select_place_move_replace",
-          "transcriptTranslation": "Buenas tardes. ¿Tienen reserva? No, no tenemos. Una mesa para dos, por favor. Por supuesto. Aquí tienen la carta. Gracias. ¿Podría tomar la sopa, por favor? Claro. Y quisiera un bocadillo de queso. ¿Desean algo para beber? Agua sin gas, por favor. ¿Desean algo más? No, gracias. Eso es todo. Aquí tienen la cuenta. ¿Puedo pagar con tarjeta? Sí, por supuesto. ¿Desea pagar en efectivo? No, gracias. Y gracias a ustedes. Que tengan un buen día."
+          "transcriptTranslation": "Buenas tardes. ¿Tienen reserva? No, no tenemos. Una mesa para dos, por favor. Por supuesto. Aquí tienen la carta. Gracias. ¿Podría tomar la sopa, por favor? Claro. Y quisiera un bocadillo de queso. ¿Desean algo para beber? Agua sin gas, por favor. ¿Desean algo más? No, gracias. Eso es todo. Aquí tienen la cuenta. ¿Puedo pagar con tarjeta? Sí, por supuesto. ¿Desean pagar en efectivo? No, gracias. Que tengan un día estupendo."
         }
       }
     }
