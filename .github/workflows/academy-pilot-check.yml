@@ -1,52 +1,42 @@
-name: Academy pilot checks
+name: C2 course CI
 
 on:
   push:
     branches:
-      - work/linguafly-academy-audit
       - c2
     paths:
-      - "app/academia/a1/001-canonical/**"
-      - "app/academia/a2/**"
-      - "app/academia/b1/**"
+      - "content/canonical-missions/c2/**"
       - "app/academia/c2/**"
       - "app/academia/page.tsx"
-      - "app/academia/pre-a1/**"
       - "components/academy/CanonicalMission.tsx"
-      - "app/api/auth/**"
-      - "app/api/billing/**"
-      - "app/api/repetition/**"
-      - "app/api/learn/**"
-      - "app/api/exercises/progress/**"
-      - "app/api/progress/**"
-      - "app/api/canonical-missions/**"
-      - "components/SpacedRepetition.tsx"
-      - "migrations/d1/**"
-      - "docs/course-architecture/**"
-      - "lib/student-auth.ts"
-      - "lib/spaced-repetition.ts"
-      - "lib/cf-context.ts"
-      - "content/canonical-missions/**"
-      - "content/missions/pre-a1/**"
       - "schemas/course-mission.schema.json"
+      - "scripts/validate-c2-missions.mjs"
       - "package.json"
       - "package-lock.json"
       - "tsconfig.json"
       - ".github/workflows/academy-pilot-check.yml"
   workflow_dispatch:
+    inputs:
+      require_all:
+        description: "Require all 100 C2 missions (final completeness check)"
+        required: true
+        type: boolean
+        default: false
 
 permissions:
   contents: read
 
 concurrency:
-  group: academy-pilot-${{ github.ref }}
+  group: c2-course-${{ github.ref }}
   cancel-in-progress: true
 
 jobs:
-  validate:
-    name: Validate content, types and production build
+  c2-course:
+    name: Validate all C2 missions, types and production build
     runs-on: ubuntu-latest
-    timeout-minutes: 20
+    timeout-minutes: 30
+    env:
+      REQUIRE_ALL_MISSIONS: ${{ github.event_name == 'workflow_dispatch' && inputs.require_all || 'false' }}
     steps:
       - name: Check out repository
         uses: actions/checkout@v4
@@ -60,33 +50,22 @@ jobs:
       - name: Install locked dependencies
         run: npm ci
 
-      - name: Validate canonical mission JSON Schema
+      - name: Check C2 mission structure and item counts
+        run: node scripts/validate-c2-missions.mjs
+
+      - name: Validate every existing C2 mission against JSON Schema
+        shell: bash
         run: |
-          npx --yes ajv-cli@5 validate --spec=draft2020 -s schemas/course-mission.schema.json -d content/canonical-missions/a1/001.json
-          npx --yes ajv-cli@5 validate --spec=draft2020 -s schemas/course-mission.schema.json -d content/canonical-missions/a2/001.json
-          npx --yes ajv-cli@5 validate --spec=draft2020 -s schemas/course-mission.schema.json -d content/canonical-missions/a2/002.json
-          npx --yes ajv-cli@5 validate --spec=draft2020 -s schemas/course-mission.schema.json -d content/canonical-missions/b1/001.json
-          npx --yes ajv-cli@5 validate --spec=draft2020 -s schemas/course-mission.schema.json -d content/canonical-missions/c2/001.json
-          npx --yes ajv-cli@5 validate --spec=draft2020 -s schemas/course-mission.schema.json -d content/canonical-missions/c2/002.json
-          npx --yes ajv-cli@5 validate --spec=draft2020 -s schemas/course-mission.schema.json -d content/canonical-missions/c2/003.json
-          npx --yes ajv-cli@5 validate --spec=draft2020 -s schemas/course-mission.schema.json -d content/canonical-missions/c2/004.json
-          npx --yes ajv-cli@5 validate --spec=draft2020 -s schemas/course-mission.schema.json -d content/canonical-missions/c2/005.json
-          npx --yes ajv-cli@5 validate --spec=draft2020 -s schemas/course-mission.schema.json -d content/canonical-missions/c2/006.json
-          npx --yes ajv-cli@5 validate --spec=draft2020 -s schemas/course-mission.schema.json -d content/canonical-missions/c2/007.json
-          npx --yes ajv-cli@5 validate --spec=draft2020 -s schemas/course-mission.schema.json -d content/canonical-missions/c2/008.json
-          npx --yes ajv-cli@5 validate --spec=draft2020 -s schemas/course-mission.schema.json -d content/canonical-missions/c2/009.json
-          npx --yes ajv-cli@5 validate --spec=draft2020 -s schemas/course-mission.schema.json -d content/canonical-missions/pre-a1/001.json
-          npx --yes ajv-cli@5 validate --spec=draft2020 -s schemas/course-mission.schema.json -d content/canonical-missions/pre-a1/002.json
-          npx --yes ajv-cli@5 validate --spec=draft2020 -s schemas/course-mission.schema.json -d content/canonical-missions/pre-a1/003.json
-          npx --yes ajv-cli@5 validate --spec=draft2020 -s schemas/course-mission.schema.json -d content/canonical-missions/pre-a1/004.json
-          npx --yes ajv-cli@5 validate --spec=draft2020 -s schemas/course-mission.schema.json -d content/canonical-missions/pre-a1/005.json
-          npx --yes ajv-cli@5 validate --spec=draft2020 -s schemas/course-mission.schema.json -d content/canonical-missions/pre-a1/006.json
-          npx --yes ajv-cli@5 validate --spec=draft2020 -s schemas/course-mission.schema.json -d content/canonical-missions/pre-a1/007.json
-          npx --yes ajv-cli@5 validate --spec=draft2020 -s schemas/course-mission.schema.json -d content/canonical-missions/pre-a1/008.json
-          npx --yes ajv-cli@5 validate --spec=draft2020 -s schemas/course-mission.schema.json -d content/canonical-missions/pre-a1/009.json
-          npx --yes ajv-cli@5 validate --spec=draft2020 -s schemas/course-mission.schema.json -d content/canonical-missions/pre-a1/010.json
-          npx --yes ajv-cli@5 validate --spec=draft2020 -s schemas/course-mission.schema.json -d content/canonical-missions/pre-a1/011.json
-          npx --yes ajv-cli@5 validate --spec=draft2020 -s schemas/course-mission.schema.json -d content/canonical-missions/pre-a1/014.json
+          shopt -s nullglob
+          missions=(content/canonical-missions/c2/[0-9][0-9][0-9].json)
+          if (( ${#missions[@]} == 0 )); then
+            echo "No C2 missions found."
+            exit 1
+          fi
+          for mission in "${missions[@]}"; do
+            echo "Validating ${mission}"
+            npx --yes ajv-cli@5 validate --spec=draft2020 -s schemas/course-mission.schema.json -d "${mission}"
+          done
 
       - name: Type-check application
         run: npx tsc --noEmit
