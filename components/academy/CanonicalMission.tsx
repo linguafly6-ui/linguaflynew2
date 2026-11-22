@@ -83,16 +83,34 @@ export default function CanonicalMission({ missionData = missionSource as Missio
     const nextOrders: Record<string, string[]> = {};
     for (const currentSection of mission.sections) {
       const questions = currentSection.exercise.items.filter((entry) => entry.options?.length);
-      const positions = questions.map((_, questionIndex) => questionIndex % 3);
-      for (let i = positions.length - 1; i > 0; i -= 1) {
-        const j = Math.floor(Math.random() * (i + 1));
-        [positions[i], positions[j]] = [positions[j], positions[i]];
+      const positionsByItem: Record<string, number> = {};
+      const groups = new Map<number, Item[]>();
+      for (const question of questions) {
+        const optionCount = question.options?.length ?? 0;
+        const group = groups.get(optionCount) ?? [];
+        group.push(question);
+        groups.set(optionCount, group);
       }
-      for (let i = 1; i < positions.length; i += 1) {
-        if (positions[i] === positions[i - 1]) {
-          const swapIndex = positions.findIndex((position, candidateIndex) => candidateIndex > i && position !== positions[i - 1]);
-          if (swapIndex !== -1) [positions[i], positions[swapIndex]] = [positions[swapIndex], positions[i]];
+      for (const [optionCount, group] of groups) {
+        const remaining = Array.from({ length: optionCount }, (_, position) =>
+          Math.floor(group.length / optionCount) + (position < group.length % optionCount ? 1 : 0)
+        );
+        const sequence: number[] = [];
+        let previous = -1;
+        while (sequence.length < group.length) {
+          let candidates = remaining.map((count, position) => ({ count, position }))
+            .filter(({ count, position }) => count > 0 && position !== previous);
+          if (!candidates.length) {
+            candidates = remaining.map((count, position) => ({ count, position })).filter(({ count }) => count > 0);
+          }
+          const highestRemaining = Math.max(...candidates.map(({ count }) => count));
+          const best = candidates.filter(({ count }) => count === highestRemaining);
+          const selected = best[Math.floor(Math.random() * best.length)].position;
+          sequence.push(selected);
+          remaining[selected] -= 1;
+          previous = selected;
         }
+        group.forEach((entry, questionIndex) => { positionsByItem[entry.itemId] = sequence[questionIndex]; });
       }
       questions.forEach((entry, questionIndex) => {
         const options = [...(entry.options ?? [])];
@@ -104,7 +122,7 @@ export default function CanonicalMission({ missionData = missionSource as Missio
           [distractors[i], distractors[j]] = [distractors[j], distractors[i]];
         }
         const shuffled = [...distractors];
-        const correctPosition = Math.min((positions[questionIndex] ?? 0) % options.length, shuffled.length);
+        const correctPosition = Math.min((positionsByItem[entry.itemId] ?? 0) % options.length, shuffled.length);
         shuffled.splice(correctPosition, 0, correct);
         nextOrders[entry.itemId] = shuffled;
       });
