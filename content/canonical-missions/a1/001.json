@@ -191,7 +191,7 @@
         ],
         "theory": {
           "title": "El verbo be para dar información personal",
-          "explanation": "En Pre-A1 ya conociste I am y algunas formas de be. En esta misión amplías ese conocimiento para dar datos personales y hacer preguntas. En inglés, be cambia según el sujeto: am con I, is con he/she/it y are con you/we/they. Para negar, añade not. Para preguntar, coloca am, is o are antes del sujeto. En inglés se dice I am twenty years old (literalmente, «soy veinte años de edad»); no se utiliza have para expresar la edad.",
+          "explanation": "En Pre-A1 ya conociste I am y algunas formas de be. En esta misión amplías ese conocimiento para dar datos personales y hacer preguntas. En inglés, be cambia según el sujeto: am con I, is con he/she/it y are con you/we/they. Para negar, añade not. Para preguntar, coloca am, is o are antes del sujeto. En inglés se dice I am twenty years old (literalmente, «soy veinte años de edad»); no se utiliza have para expresar la edad. También usamos my (mi) y your (tu) antes de un sustantivo: my name, your address.",
           "tip": "Recuerda: I am / I'm; you are / you're; he is / he's; she is / she's. Para negar: I'm not, you aren't, he isn't. Para preguntar: Are you...? Is she...? Las respuestas breves repiten el verbo: Yes, I am. / No, I'm not.",
           "patterns": [
             {
@@ -237,6 +237,14 @@
                 "I am Laura.",
                 "He is Daniel.",
                 "They are twenty years old."
+              ]
+            },
+            {
+              "label": "Adjetivos posesivos",
+              "pattern": "my / your + noun",
+              "examples": [
+                "My first name is Laura.",
+                "Your address is 14 Green Street."
               ]
             }
           ]
@@ -339,6 +347,16 @@
               "english": "Yes, I am. / No, I'm not.",
               "spanish": "Sí. / No.",
               "note": "Respuestas breves con am / am not."
+            },
+            {
+              "english": "my + noun",
+              "spanish": "mi + sustantivo",
+              "note": "My se coloca antes de un sustantivo para indicar que algo pertenece a quien habla."
+            },
+            {
+              "english": "your + noun",
+              "spanish": "tu + sustantivo",
+              "note": "Your se coloca antes de un sustantivo para indicar que pertenece a la persona a la que hablamos."
             }
           ],
           "reading": [
@@ -507,8 +525,8 @@
               "spanish": "Alex: «¿Apellido?» Laura: «García»."
             },
             {
-              "english": "Alex: 'How old are you?' Laura: 'Twenty years old.'",
-              "spanish": "Alex: «¿Cuántos años tienes?» Laura: «Veinte años»."
+              "english": "Alex: 'How old are you?' Laura: 'I am twenty years old.'",
+              "spanish": "Alex: «¿Cuántos años tienes?» Laura: «Tengo veinte años»."
             },
             {
               "english": "Alex: 'Your address?' Laura: '14 Green Street.'",
@@ -1573,8 +1591,8 @@
         "content": {
           "audio": "tts:en-GB",
           "audioLocale": "en-GB",
-          "audioTranscript": "At the welcome desk, Laura meets Alex. Alex: 'Please complete this form.' Alex: 'First name?' Laura: 'Laura.' Alex: 'Surname?' Laura: 'García.' Alex: 'How old are you?' Laura: 'Twenty years old.' Alex: 'Your address?' Laura: '14 Green Street.' Alex: 'Your city?' Laura: 'Madrid.' Alex: 'Thank you, Laura.'",
-          "transcriptTemplate": "At the welcome desk, Laura meets Alex. Alex: 'Please [[gap-01]] this [[gap-02]].' Alex: '[[gap-03]] name?' Laura: 'Laura.' Alex: '[[gap-04]]?' Laura: 'García.' Alex: 'How old are you?' Laura: '[[gap-05]] years old.' Alex: 'Your [[gap-06]]?' Laura: '14 [[gap-07]] [[gap-08]].' Alex: 'Your [[gap-09]]?' Laura: '[[gap-10]].' Alex: 'Thank you, Laura.'",
+          "audioTranscript": "At the welcome desk, Laura meets Alex. Alex: 'Please complete this form.' Alex: 'First name?' Laura: 'Laura.' Alex: 'Surname?' Laura: 'García.' Alex: 'How old are you?' Laura: 'I am twenty years old.' Alex: 'Your address?' Laura: '14 Green Street.' Alex: 'Your city?' Laura: 'Madrid.' Alex: 'Thank you, Laura.'",
+          "transcriptTemplate": "At the welcome desk, Laura meets Alex. Alex: 'Please [[gap-01]] this [[gap-02]].' Alex: '[[gap-03]] name?' Laura: 'Laura.' Alex: '[[gap-04]]?' Laura: 'García.' Alex: 'How old are you?' Laura: 'I am [[gap-05]] years old.' Alex: 'Your [[gap-06]]?' Laura: '14 [[gap-07]] [[gap-08]].' Alex: 'Your [[gap-09]]?' Laura: '[[gap-10]].' Alex: 'Thank you, Laura.'",
           "wordBank": [
             {
               "wordId": "english-a1-m001-listening-word-01",
