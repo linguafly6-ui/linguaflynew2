@@ -200,7 +200,7 @@
               "examples": [
                 "I am Laura. / I'm Laura.",
                 "You are twenty years old. / You're twenty years old.",
-                "She is from Madrid. / She's from Madrid."
+                "She is Laura."
               ]
             },
             {
@@ -208,7 +208,7 @@
               "pattern": "Subject + am / is / are + not",
               "examples": [
                 "I am not nineteen.",
-                "You are not twenty-one. / You aren't twenty-one.",
+                "You are not nineteen. / You aren't nineteen.",
                 "He is not Daniel. / He isn't Daniel."
               ]
             },
@@ -692,7 +692,7 @@
           {
             "itemId": "english-a1-m001-practice-q05",
             "position": 5,
-            "prompt": "Alex asks: “What's your surname?” What information does he want?",
+            "prompt": "Alex asks: “What's your surname?” Choose the correct answer.",
             "answer": "The surname.",
             "options": [
               "The surname.",
@@ -878,7 +878,7 @@
           {
             "itemId": "english-a1-m001-grammar-q07",
             "position": 7,
-            "prompt": "You ___ not twenty-one.",
+            "prompt": "You ___ not nineteen.",
             "answer": "are",
             "options": [
               "is",
@@ -950,7 +950,7 @@
             "translation": "nombre",
             "pronunciationGuide": "FÉRST néim",
             "audio": "tts:en-GB",
-            "prompt": "Which phrase do you hear?",
+            "prompt": "Choose the phrase you hear.",
             "options": [
               "first name",
               "surname",
@@ -1118,7 +1118,7 @@
           {
             "itemId": "english-a1-m001-reading-q01",
             "position": 1,
-            "prompt": "What is the full name in the text?",
+            "prompt": "Choose the name in the text.",
             "answer": "Daniel Ruiz",
             "options": [
               "Daniel Ruiz",
@@ -1179,7 +1179,7 @@
             "options": [
               "8 King Street",
               "14 Green Street",
-              "8 King Road"
+              "8 Green Street"
             ],
             "evaluation": {
               "type": "single_choice"
