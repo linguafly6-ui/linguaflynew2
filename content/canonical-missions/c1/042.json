@@ -699,9 +699,9 @@
             "taskType": "concept_in_context",
             "prompt": "In a case study of privacy and surveillance ethics, the writer refers to information used to train a computational model. Which expression names this concept most precisely?",
             "options": [
-              "training data",
               "human oversight",
-              "scientific uncertainty"
+              "scientific uncertainty",
+              "training data"
             ],
             "answer": "training data",
             "evaluation": {
@@ -729,9 +729,9 @@
             "taskType": "concept_in_context",
             "prompt": "In a case study of privacy and surveillance ethics, the writer refers to a recurring way in which a system can malfunction or produce an unsuitable result. Which expression names this concept most precisely?",
             "options": [
+              "failure mode",
               "informed consent",
-              "explainability",
-              "failure mode"
+              "explainability"
             ],
             "answer": "failure mode",
             "evaluation": {
@@ -744,9 +744,9 @@
             "taskType": "concept_in_context",
             "prompt": "In a case study of privacy and surveillance ethics, the writer refers to meaningful human review of a system's outputs or decisions. Which expression names this concept most precisely?",
             "options": [
-              "human oversight",
               "scientific uncertainty",
-              "ethical review"
+              "ethical review",
+              "human oversight"
             ],
             "answer": "human oversight",
             "evaluation": {
@@ -759,8 +759,8 @@
             "taskType": "concept_in_context",
             "prompt": "In a case study of privacy and surveillance ethics, the writer refers to collecting and retaining only the personal data necessary for a stated purpose. Which expression names this concept most precisely?",
             "options": [
-              "algorithmic bias",
               "data minimisation",
+              "algorithmic bias",
               "training data"
             ],
             "answer": "data minimisation",
@@ -819,9 +819,9 @@
             "taskType": "concept_in_context",
             "prompt": "In a case study of privacy and surveillance ethics, the writer refers to the extent to which a system's operation or decision can be understood. Which expression names this concept most precisely?",
             "options": [
+              "explainability",
               "model capability",
-              "data minimisation",
-              "explainability"
+              "data minimisation"
             ],
             "answer": "explainability",
             "evaluation": {
@@ -834,8 +834,8 @@
             "taskType": "concept_in_context",
             "prompt": "In a case study of privacy and surveillance ethics, the writer refers to a structured assessment of whether a proposal meets ethical standards. Which expression names this concept most precisely?",
             "options": [
-              "ethical review",
               "failure mode",
+              "ethical review",
               "informed consent"
             ],
             "answer": "ethical review",

@@ -799,8 +799,8 @@
             "taskType": "collocation",
             "prompt": "Complete the collocation: “a deeply ___ belief”.",
             "options": [
-              "ingrained",
               "retrieved",
+              "ingrained",
               "anticipated"
             ],
             "answer": "ingrained",
@@ -814,8 +814,8 @@
             "taskType": "phrasal_verb",
             "prompt": "Choose the meaning of “look back on an experience”.",
             "options": [
-              "remember it",
               "avoid it",
+              "remember it",
               "predict it"
             ],
             "answer": "remember it",
@@ -829,9 +829,9 @@
             "taskType": "idiom",
             "prompt": "What does “a blessing in disguise” mean?",
             "options": [
-              "something apparently bad that has a good result",
               "an unexpected obligation",
-              "a fortunate coincidence with no downside"
+              "a fortunate coincidence with no downside",
+              "something apparently bad that has a good result"
             ],
             "answer": "something apparently bad that has a good result",
             "evaluation": {
@@ -844,8 +844,8 @@
             "taskType": "register",
             "prompt": "Choose the most appropriately hedged claim.",
             "options": [
-              "The event may have influenced my outlook.",
               "The event definitely created my identity.",
+              "The event may have influenced my outlook.",
               "The event proves that memory is always accurate."
             ],
             "answer": "The event may have influenced my outlook.",
@@ -859,9 +859,9 @@
             "taskType": "reformulation",
             "prompt": "Reformulate “I don't remember every detail” more precisely.",
             "options": [
-              "My recollection is incomplete.",
               "I remember everything vividly.",
-              "I have no memory of the event."
+              "I have no memory of the event.",
+              "My recollection is incomplete."
             ],
             "answer": "My recollection is incomplete.",
             "evaluation": {
@@ -919,9 +919,9 @@
             "taskType": "interpretation",
             "prompt": "Which statement best reflects the reading's position?",
             "options": [
-              "Memory is reconstructive, yet personal stories can still be meaningful.",
               "Memory is an exact recording of events.",
-              "All personal memories are deliberate inventions."
+              "All personal memories are deliberate inventions.",
+              "Memory is reconstructive, yet personal stories can still be meaningful."
             ],
             "answer": "Memory is reconstructive, yet personal stories can still be meaningful.",
             "evaluation": {

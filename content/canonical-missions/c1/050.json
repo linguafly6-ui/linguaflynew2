@@ -699,9 +699,9 @@
             "taskType": "concept_in_context",
             "prompt": "In a case study of review: science, technology and ethics, the writer refers to information used to train a computational model. Which expression names this concept most precisely?",
             "options": [
-              "training data",
               "human oversight",
-              "scientific uncertainty"
+              "scientific uncertainty",
+              "training data"
             ],
             "answer": "training data",
             "evaluation": {
@@ -714,8 +714,8 @@
             "taskType": "concept_in_context",
             "prompt": "In a case study of review: science, technology and ethics, the writer refers to what a system can reliably do under specified conditions. Which expression names this concept most precisely?",
             "options": [
-              "data minimisation",
               "model capability",
+              "data minimisation",
               "algorithmic bias"
             ],
             "answer": "model capability",
@@ -730,8 +730,8 @@
             "prompt": "In a case study of review: science, technology and ethics, the writer refers to a recurring way in which a system can malfunction or produce an unsuitable result. Which expression names this concept most precisely?",
             "options": [
               "informed consent",
-              "explainability",
-              "failure mode"
+              "failure mode",
+              "explainability"
             ],
             "answer": "failure mode",
             "evaluation": {
@@ -774,9 +774,9 @@
             "taskType": "concept_in_context",
             "prompt": "In a case study of review: science, technology and ethics, the writer refers to agreement given with an adequate understanding of what participation entails. Which expression names this concept most precisely?",
             "options": [
+              "informed consent",
               "explainability",
-              "model capability",
-              "informed consent"
+              "model capability"
             ],
             "answer": "informed consent",
             "evaluation": {
@@ -789,9 +789,9 @@
             "taskType": "concept_in_context",
             "prompt": "In a case study of review: science, technology and ethics, the writer refers to the limits of current knowledge or precision in a scientific claim. Which expression names this concept most precisely?",
             "options": [
-              "scientific uncertainty",
               "ethical review",
-              "failure mode"
+              "failure mode",
+              "scientific uncertainty"
             ],
             "answer": "scientific uncertainty",
             "evaluation": {
@@ -819,9 +819,9 @@
             "taskType": "concept_in_context",
             "prompt": "In a case study of review: science, technology and ethics, the writer refers to the extent to which a system's operation or decision can be understood. Which expression names this concept most precisely?",
             "options": [
+              "explainability",
               "model capability",
-              "data minimisation",
-              "explainability"
+              "data minimisation"
             ],
             "answer": "explainability",
             "evaluation": {
@@ -834,9 +834,9 @@
             "taskType": "concept_in_context",
             "prompt": "In a case study of review: science, technology and ethics, the writer refers to a structured assessment of whether a proposal meets ethical standards. Which expression names this concept most precisely?",
             "options": [
-              "ethical review",
               "failure mode",
-              "informed consent"
+              "informed consent",
+              "ethical review"
             ],
             "answer": "ethical review",
             "evaluation": {
