@@ -3,8 +3,8 @@ import CanonicalMission, { type Mission } from "@/components/academy/CanonicalMi
 import missionData from "@/content/canonical-missions/pre-a1/049.json";
 
 export const metadata = {
-  title: "Pre-A1 · Misión 049 · My Town · Linguafly Academy",
-  description: "My Town: vocabulario, expresiones y comprensión en inglés inicial.",
+  title: "Pre-A1 · Misión 049 · At the Beach · Linguafly Academy",
+  description: "At the Beach: vocabulario, expresiones y comprensión en inglés inicial.",
   robots: { index: false, follow: false },
 };
 

@@ -3,8 +3,8 @@ import CanonicalMission, { type Mission } from "@/components/academy/CanonicalMi
 import missionData from "@/content/canonical-missions/pre-a1/047.json";
 
 export const metadata = {
-  title: "Pre-A1 · Misión 047 · My Town · Linguafly Academy",
-  description: "My Town: vocabulario, expresiones y comprensión en inglés inicial.",
+  title: "Pre-A1 · Misión 047 · My Home – Where Things Are · Linguafly Academy",
+  description: "My Home – Where Things Are: vocabulario, expresiones y comprensión en inglés inicial.",
   robots: { index: false, follow: false },
 };
 
