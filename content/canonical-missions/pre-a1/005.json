@@ -514,9 +514,9 @@
           ],
           "listening": [
             {
-              "english": "Mia asks Ben a question at school. Mia: True or false? Ben: Maybe. Ben: Again, please. Mia: True or false? Ben: Sure. Mia: Correct! Ben: That's right? Mia: Yes! Ben: That's wrong? Mia: No! Ben: I understand.",
-              "spanish": "Mia le hace una pregunta a Ben en la escuela. Mia: ¿Verdadero o falso? Ben: Quizá. Ben: Otra vez, por favor. Mia: ¿Verdadero o falso? Ben: Claro. Mia: ¡Correcto! Ben: ¿Eso está bien? Mia: ¡Sí! Ben: ¿Eso está mal? Mia: ¡No! Ben: Lo entiendo.",
-              "note": "Texto narrativo contextual; el audio reproduce el diálogo completo y pronuncia también las diez respuestas ocultas en la transcripción."
+              "english": "Mia: Ben! True or false? Ben: Maybe. Mia: Again, please. Ben: Sure. Mia: True or false? Ben: True? Mia: No. Ben: False? Mia: Correct! Ben: Right? Mia: Yes. Ben: I understand. Mia: Sure!",
+              "spanish": "Mia: ¡Ben! ¿Verdadero o falso? Ben: Quizá. Mia: Otra vez, por favor. Ben: Claro. Mia: ¿Verdadero o falso? Ben: ¿Verdadero? Mia: No. Ben: ¿Falso? Mia: ¡Correcto! Ben: ¿Cierto? Mia: Sí. Ben: Lo entiendo. Mia: ¡Claro!",
+              "note": "El audio reproduce el texto completo y pronuncia también las diez respuestas ocultas en la transcripción."
             }
           ]
         },
@@ -1601,10 +1601,10 @@
         "exerciseId": "english-pre-a1-m005-listening-ex01",
         "type": "listening_gap_fill",
         "content": {
-          "audio": "tts:en-GB:Mia asks Ben a question at school. Mia: True or false? Ben: Maybe. Ben: Again, please. Mia: True or false? Ben: Sure. Mia: Correct! Ben: That's right? Mia: Yes! Ben: That's wrong? Mia: No! Ben: I understand.",
+          "audio": "tts:en-GB:Mia: Ben! True or false? Ben: Maybe. Mia: Again, please. Ben: Sure. Mia: True or false? Ben: True? Mia: No. Ben: False? Mia: Correct! Ben: Right? Mia: Yes. Ben: I understand. Mia: Sure!",
           "audioLocale": "en-GB",
           "audioStatus": "synthetic_pending_review",
-          "transcriptTemplate": "Mia asks Ben a question at school. Mia: [[gap-01]] or [[gap-02]]? Ben: [[gap-03]]. Ben: [[gap-04]], please. Mia: True or false? Ben: [[gap-05]]. Mia: [[gap-06]]! Ben: That's [[gap-07]]? Mia: Yes! Ben: That's [[gap-08]]? Mia: [[gap-09]]! Ben: I [[gap-10]].",
+          "transcriptTemplate": "Mia: Ben! [[gap-01]] or [[gap-02]]? Ben: [[gap-03]]. Mia: [[gap-04]], please. Ben: [[gap-05]]. Mia: True or false? Ben: True? Mia: [[gap-06]]. Ben: False? Mia: [[gap-07]]! Ben: [[gap-08]]? Mia: [[gap-09]]. Ben: I [[gap-10]].",
           "wordBank": [
             {
               "wordId": "english-pre-a1-m005-listening-word-01",
@@ -1628,19 +1628,19 @@
             },
             {
               "wordId": "english-pre-a1-m005-listening-word-06",
-              "word": "Correct"
+              "word": "No"
             },
             {
               "wordId": "english-pre-a1-m005-listening-word-07",
-              "word": "right"
+              "word": "Correct"
             },
             {
               "wordId": "english-pre-a1-m005-listening-word-08",
-              "word": "wrong"
+              "word": "Right"
             },
             {
               "wordId": "english-pre-a1-m005-listening-word-09",
-              "word": "No"
+              "word": "Yes"
             },
             {
               "wordId": "english-pre-a1-m005-listening-word-10",
@@ -1648,8 +1648,8 @@
             }
           ],
           "interaction": "select_place_move_replace",
-          "audioTranscript": "Mia asks Ben a question at school. Mia: True or false? Ben: Maybe. Ben: Again, please. Mia: True or false? Ben: Sure. Mia: Correct! Ben: That's right? Mia: Yes! Ben: That's wrong? Mia: No! Ben: I understand.",
-          "translation": "Mia le hace una pregunta a Ben en la escuela. Mia: ¿Verdadero o falso? Ben: Quizá. Ben: Otra vez, por favor. Mia: ¿Verdadero o falso? Ben: Claro. Mia: ¡Correcto! Ben: ¿Eso está bien? Mia: ¡Sí! Ben: ¿Eso está mal? Mia: ¡No! Ben: Lo entiendo."
+          "audioTranscript": "Mia: Ben! True or false? Ben: Maybe. Mia: Again, please. Ben: Sure. Mia: True or false? Ben: True? Mia: No. Ben: False? Mia: Correct! Ben: Right? Mia: Yes. Ben: I understand. Mia: Sure!",
+          "translation": "Mia: ¡Ben! ¿Verdadero o falso? Ben: Quizá. Mia: Otra vez, por favor. Ben: Claro. Mia: ¿Verdadero o falso? Ben: ¿Verdadero? Mia: No. Ben: ¿Falso? Mia: ¡Correcto! Ben: ¿Cierto? Mia: Sí. Ben: Lo entiendo. Mia: ¡Claro!"
         },
         "items": [
           {
@@ -1692,28 +1692,28 @@
             "position": 6,
             "gapToken": "[[gap-06]]",
             "expectedWordId": "english-pre-a1-m005-listening-word-06",
-            "answer": "Correct"
+            "answer": "No"
           },
           {
             "itemId": "english-pre-a1-m005-listening-ex01-i07",
             "position": 7,
             "gapToken": "[[gap-07]]",
             "expectedWordId": "english-pre-a1-m005-listening-word-07",
-            "answer": "right"
+            "answer": "Correct"
           },
           {
             "itemId": "english-pre-a1-m005-listening-ex01-i08",
             "position": 8,
             "gapToken": "[[gap-08]]",
             "expectedWordId": "english-pre-a1-m005-listening-word-08",
-            "answer": "wrong"
+            "answer": "Right"
           },
           {
             "itemId": "english-pre-a1-m005-listening-ex01-i09",
             "position": 9,
             "gapToken": "[[gap-09]]",
             "expectedWordId": "english-pre-a1-m005-listening-word-09",
-            "answer": "No"
+            "answer": "Yes"
           },
           {
             "itemId": "english-pre-a1-m005-listening-ex01-i10",
