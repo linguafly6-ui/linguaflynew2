@@ -1,24 +1,43 @@
-name: C2 course CI
+name: Academy + C2 continuous integration
 
 on:
   push:
     branches:
+      - work/linguafly-academy-audit
       - c2
     paths:
-      - "content/canonical-missions/c2/**"
+      - "app/academia/a1/001-canonical/**"
+      - "app/academia/a2/**"
+      - "app/academia/b1/**"
       - "app/academia/c2/**"
       - "app/academia/page.tsx"
+      - "app/academia/pre-a1/**"
       - "components/academy/CanonicalMission.tsx"
+      - "app/api/auth/**"
+      - "app/api/billing/**"
+      - "app/api/repetition/**"
+      - "app/api/learn/**"
+      - "app/api/exercises/progress/**"
+      - "app/api/progress/**"
+      - "app/api/canonical-missions/**"
+      - "components/SpacedRepetition.tsx"
+      - "migrations/d1/**"
+      - "docs/course-architecture/**"
+      - "lib/student-auth.ts"
+      - "lib/spaced-repetition.ts"
+      - "lib/cf-context.ts"
+      - "content/canonical-missions/**"
+      - "content/missions/pre-a1/**"
       - "schemas/course-mission.schema.json"
-      - "scripts/validate-c2-missions.mjs"
+      - "scripts/validate_c2_missions.mjs"
       - "package.json"
       - "package-lock.json"
       - "tsconfig.json"
       - ".github/workflows/academy-pilot-check.yml"
   workflow_dispatch:
     inputs:
-      require_all:
-        description: "Require all 100 C2 missions (final completeness check)"
+      require_all_c2_missions:
+        description: "Require all 100 C2 mission files to exist"
         required: true
         type: boolean
         default: false
@@ -27,16 +46,14 @@ permissions:
   contents: read
 
 concurrency:
-  group: c2-course-${{ github.ref }}
+  group: academy-c2-ci-${{ github.ref }}
   cancel-in-progress: true
 
 jobs:
-  c2-course:
-    name: Validate all C2 missions, types and production build
+  validate:
+    name: Validate all available C2 missions, types and production build
     runs-on: ubuntu-latest
     timeout-minutes: 30
-    env:
-      REQUIRE_ALL_MISSIONS: ${{ github.event_name == 'workflow_dispatch' && inputs.require_all || 'false' }}
     steps:
       - name: Check out repository
         uses: actions/checkout@v4
@@ -50,20 +67,31 @@ jobs:
       - name: Install locked dependencies
         run: npm ci
 
-      - name: Check C2 mission structure and item counts
-        run: node scripts/validate-c2-missions.mjs
-
-      - name: Validate every existing C2 mission against JSON Schema
-        shell: bash
+      - name: Validate every C2 mission against the canonical schema
         run: |
           shopt -s nullglob
           missions=(content/canonical-missions/c2/[0-9][0-9][0-9].json)
-          if (( ${#missions[@]} == 0 )); then
-            echo "No C2 missions found."
+          if [ "${#missions[@]}" -eq 0 ]; then
+            echo "::error::No C2 mission JSON files found."
             exit 1
           fi
           for mission in "${missions[@]}"; do
             echo "Validating ${mission}"
+            npx --yes ajv-cli@5 validate --spec=draft2020 -s schemas/course-mission.schema.json -d "${mission}"
+          done
+
+      - name: Check C2 numbering, eight sections and ten items per section
+        env:
+          C2_REQUIRE_ALL_MISSIONS: ${{ inputs.require_all_c2_missions || 'false' }}
+        run: node scripts/validate_c2_missions.mjs
+
+      - name: Validate existing canonical Academy pilots
+        run: |
+          npx --yes ajv-cli@5 validate --spec=draft2020 -s schemas/course-mission.schema.json -d content/canonical-missions/a1/001.json
+          npx --yes ajv-cli@5 validate --spec=draft2020 -s schemas/course-mission.schema.json -d content/canonical-missions/a2/001.json
+          npx --yes ajv-cli@5 validate --spec=draft2020 -s schemas/course-mission.schema.json -d content/canonical-missions/a2/002.json
+          npx --yes ajv-cli@5 validate --spec=draft2020 -s schemas/course-mission.schema.json -d content/canonical-missions/b1/001.json
+          for mission in content/canonical-missions/pre-a1/*.json; do
             npx --yes ajv-cli@5 validate --spec=draft2020 -s schemas/course-mission.schema.json -d "${mission}"
           done
 
