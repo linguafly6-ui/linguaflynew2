@@ -34,7 +34,7 @@ export default function AcademyPage() {
       <Link href="/academia/b2" className="block rounded-3xl border border-cyan-200 bg-cyan-50 p-7 shadow-sm transition hover:border-cyan-400">
         <p className="text-sm font-extrabold tracking-widest text-cyan-800">04 / UPPER-INTERMEDIATE</p>
         <h2 className="mt-3 text-3xl font-black text-slate-950">B2 · Inglés intermedio alto</h2>
-        <p className="mt-3 text-slate-700">Desarrolla precisión, fluidez, argumentación y comunicación independiente. La misión piloto 001 ya está disponible.</p>
+        <p className="mt-3 text-slate-700">Desarrolla precisión, fluidez, argumentación y comunicación independiente a través de 100 misiones.</p>
         <span className="mt-6 inline-block font-bold text-cyan-800">Ver curso B2 →</span>
       </Link>
       <Link href="/academia/speaking" className="block rounded-3xl border border-cyan-200 bg-cyan-50 p-7 shadow-sm transition hover:border-cyan-400 md:col-span-2">
