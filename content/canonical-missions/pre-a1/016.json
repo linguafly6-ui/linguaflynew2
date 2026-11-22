@@ -896,151 +896,141 @@
           {
             "itemId": "english-pre-a1-m016-grammar-ex01-i01",
             "position": 1,
-            "prompt": "Name today: Today is + day.",
-            "evaluation": {
-              "type": "single_choice"
-            },
-            "options": [
-              "Today is Monday.",
-              "Today is Friday.",
-              "Tomorrow is Tuesday."
-            ],
-            "answer": "Today is Monday.",
-            "taskType": "pattern_recognition"
-          },
-          {
-            "itemId": "english-pre-a1-m016-grammar-ex01-i02",
-            "position": 2,
-            "prompt": "Name tomorrow: Tomorrow is + day.",
-            "evaluation": {
-              "type": "single_choice"
-            },
-            "options": [
-              "Tomorrow is Tuesday.",
-              "Tomorrow is Sunday.",
-              "A week has seven days."
-            ],
-            "answer": "Tomorrow is Tuesday.",
-            "taskType": "pattern_recognition"
-          },
-          {
-            "itemId": "english-pre-a1-m016-grammar-ex01-i03",
-            "position": 3,
-            "prompt": "Talk about a week: A week has seven days.",
-            "evaluation": {
-              "type": "single_choice"
-            },
-            "options": [
-              "A week has seven days.",
-              "Seven days in a week.",
-              "on Monday"
-            ],
-            "answer": "A week has seven days.",
-            "taskType": "pattern_recognition"
-          },
-          {
-            "itemId": "english-pre-a1-m016-grammar-ex01-i04",
-            "position": 4,
-            "prompt": "Use ON: on + day = el + día.",
-            "evaluation": {
-              "type": "single_choice"
-            },
-            "options": [
-              "on Monday",
-              "on Friday",
-              "Saturday and Sunday"
-            ],
-            "answer": "on Monday",
-            "taskType": "pattern_recognition"
-          },
-          {
-            "itemId": "english-pre-a1-m016-grammar-ex01-i05",
-            "position": 5,
-            "prompt": "Say the weekend: Saturday and Sunday are the weekend.",
-            "evaluation": {
-              "type": "single_choice"
-            },
-            "options": [
-              "Saturday and Sunday",
-              "the weekend",
-              "I go to school on Tuesday."
-            ],
-            "answer": "Saturday and Sunday",
-            "taskType": "pattern_recognition"
-          },
-          {
-            "itemId": "english-pre-a1-m016-grammar-ex01-i06",
-            "position": 6,
-            "prompt": "Say a school day: I go to school on Monday.",
-            "evaluation": {
-              "type": "single_choice"
-            },
-            "options": [
-              "I go to school on Tuesday.",
-              "I go to school on Friday.",
-              "Monday and Tuesday"
-            ],
-            "answer": "I go to school on Tuesday.",
-            "taskType": "pattern_recognition"
-          },
-          {
-            "itemId": "english-pre-a1-m016-grammar-ex01-i07",
-            "position": 7,
-            "prompt": "Use AND: and = y; une dos días o ideas.",
-            "evaluation": {
-              "type": "single_choice"
-            },
-            "options": [
-              "Monday and Tuesday",
-              "Saturday and Sunday",
-              "Today is Wednesday."
-            ],
-            "answer": "Monday and Tuesday",
-            "taskType": "pattern_recognition"
-          },
-          {
-            "itemId": "english-pre-a1-m016-grammar-ex01-i08",
-            "position": 8,
-            "prompt": "Talk about today: Today = hoy.",
-            "evaluation": {
-              "type": "single_choice"
-            },
-            "options": [
-              "Today is Wednesday.",
-              "Today is Sunday.",
-              "Tomorrow is Thursday."
-            ],
-            "answer": "Today is Wednesday.",
-            "taskType": "pattern_recognition"
-          },
-          {
-            "itemId": "english-pre-a1-m016-grammar-ex01-i09",
-            "position": 9,
-            "prompt": "Talk about tomorrow: Tomorrow = mañana.",
-            "evaluation": {
-              "type": "single_choice"
-            },
-            "options": [
-              "Tomorrow is Thursday.",
-              "Tomorrow is Monday.",
-              "Monday"
-            ],
-            "answer": "Tomorrow is Thursday.",
-            "taskType": "pattern_recognition"
-          },
-          {
-            "itemId": "english-pre-a1-m016-grammar-ex01-i10",
-            "position": 10,
-            "prompt": "Recognise day names: Los días en inglés se escriben con mayúscula.",
+            "prompt": "The calendar shows Monday as today. Complete: Today is ___.",
             "evaluation": {
               "type": "single_choice"
             },
             "options": [
               "Monday",
-              "Sunday",
-              "Today is Monday."
+              "Friday",
+              "Sunday"
             ],
-            "answer": "Monday",
+            "taskType": "pattern_recognition"
+          },
+          {
+            "itemId": "english-pre-a1-m016-grammar-ex01-i02",
+            "position": 2,
+            "prompt": "The calendar shows Monday as today. Complete: Tomorrow is ___.",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "Tuesday",
+              "Sunday",
+              "Monday"
+            ],
+            "taskType": "pattern_recognition"
+          },
+          {
+            "itemId": "english-pre-a1-m016-grammar-ex01-i03",
+            "position": 3,
+            "prompt": "Complete: A week ___ seven days.",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "has",
+              "have",
+              "having"
+            ],
+            "taskType": "pattern_recognition"
+          },
+          {
+            "itemId": "english-pre-a1-m016-grammar-ex01-i04",
+            "position": 4,
+            "prompt": "Complete: I have English ___ Monday.",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "on",
+              "in",
+              "at"
+            ],
+            "taskType": "pattern_recognition"
+          },
+          {
+            "itemId": "english-pre-a1-m016-grammar-ex01-i05",
+            "position": 5,
+            "prompt": "Choose the correct sentence.",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "Saturday and Sunday are the weekend.",
+              "Saturday and Sunday is the weekend.",
+              "Saturday and Sunday am the weekend."
+            ],
+            "taskType": "pattern_recognition"
+          },
+          {
+            "itemId": "english-pre-a1-m016-grammar-ex01-i06",
+            "position": 6,
+            "prompt": "Complete: She goes to school ___ Tuesday.",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "on",
+              "in",
+              "at"
+            ],
+            "taskType": "pattern_recognition"
+          },
+          {
+            "itemId": "english-pre-a1-m016-grammar-ex01-i07",
+            "position": 7,
+            "prompt": "Choose the correct phrase.",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "Monday and Tuesday",
+              "Monday or Tuesday is",
+              "Mondays and Tuesday"
+            ],
+            "taskType": "pattern_recognition"
+          },
+          {
+            "itemId": "english-pre-a1-m016-grammar-ex01-i08",
+            "position": 8,
+            "prompt": "The calendar shows Wednesday as today. Complete: Today is ___.",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "Wednesday",
+              "Sunday",
+              "Thursday"
+            ],
+            "taskType": "pattern_recognition"
+          },
+          {
+            "itemId": "english-pre-a1-m016-grammar-ex01-i09",
+            "position": 9,
+            "prompt": "The calendar shows Wednesday as today. Complete: Tomorrow is ___.",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "Thursday",
+              "Monday",
+              "Wednesday"
+            ],
+            "taskType": "pattern_recognition"
+          },
+          {
+            "itemId": "english-pre-a1-m016-grammar-ex01-i10",
+            "position": 10,
+            "prompt": "Choose the correctly capitalised day.",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "Monday",
+              "monday",
+              "MONday"
+            ],
             "taskType": "pattern_recognition"
           }
         ]
