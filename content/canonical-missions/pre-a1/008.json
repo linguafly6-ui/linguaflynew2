@@ -377,14 +377,6 @@
               "audio": "tts:en-GB:I am a child.",
               "audioStatus": "synthetic_pending_review",
               "note": "Expresión explicada en Explore."
-            },
-            {
-              "english": "I am a child.",
-              "spanish": "Soy un niño / una niña.",
-              "pronunciationGuide": "ái am a cháild",
-              "audio": "tts:en-GB:I am a child.",
-              "audioStatus": "synthetic_pending_review",
-              "note": "Modelo enseñado en Explore."
             }
           ],
           "grammar": [
@@ -444,11 +436,6 @@
               "english": "I am a child.",
               "spanish": "Soy un niño / una niña.",
               "note": "Texto y significado explicados antes de Reading."
-            },
-            {
-              "english": "I am a child.",
-              "spanish": "Soy un niño / una niña.",
-              "note": "Texto y significado explicados antes de Reading."
             }
           ],
           "writing": [
@@ -498,8 +485,8 @@
               "note": "Frase explicada previamente en Explore."
             },
             {
-              "english": "I am a friend.",
-              "spanish": "I am a friend.",
+              "english": "I am a child.",
+              "spanish": "Soy un niño / una niña.",
               "note": "Frase explicada previamente en Explore."
             }
           ],
@@ -559,9 +546,9 @@
               "note": "Modelo explicado previamente en Explore."
             },
             {
-              "english": "I am a friend.",
-              "spanish": "Soy amigo/a.",
-              "promptSpanish": "Practica: Soy amigo/a.",
+              "english": "I am a child.",
+              "spanish": "Soy un niño / una niña.",
+              "promptSpanish": "Practica: Soy un niño / una niña.",
               "note": "Modelo explicado previamente en Explore."
             }
           ],
@@ -612,8 +599,8 @@
               "note": "Expresión del audio explicada previamente en Explore."
             },
             {
-              "english": "I am a friend.",
-              "spanish": "I am a friend.",
+              "english": "I am a child.",
+              "spanish": "Soy un niño / una niña.",
               "note": "Expresión del audio explicada previamente en Explore."
             }
           ]
@@ -687,7 +674,7 @@
               "position": 10,
               "title": "Bloque 10",
               "content": "Afirmaciones con I am; negación y preguntas vendrán después",
-              "example": "I am a friend.",
+              "example": "I am a child.",
               "translation": "Soy amigo/a."
             }
           ]
@@ -932,9 +919,9 @@
             },
             {
               "label": "Modelo 10",
-              "pattern": "I am a friend.",
+              "pattern": "I am a child.",
               "examples": [
-                "Soy amigo/a."
+                "Soy un niño / una niña."
               ]
             }
           ]
@@ -1069,7 +1056,7 @@
             },
             "options": [
               "I am a child.",
-              "I am a child.",
+              "I am happy.",
               "I am here today."
             ],
             "answer": "I am here today.",
@@ -1203,7 +1190,7 @@
         "type": "reading_comprehension",
         "content": {
           "passageId": "english-pre-a1-m008-reading-passage-01",
-          "passage": "I am happy. I am sad. I am tired. I am excited. I am angry. I am calm. I am a student. I am a teacher. I am here today. I am a child. I am a child."
+          "passage": "I am happy. I am sad. I am tired. I am excited. I am angry. I am calm. I am a student. I am a teacher. I am here today. I am a child."
         },
         "items": [
           {
@@ -1335,7 +1322,7 @@
             },
             "options": [
               "Soy un niño / una niña.",
-              "Soy un niño / una niña.",
+              "Estoy feliz.",
               "Estoy aquí hoy."
             ],
             "answer": "Estoy aquí hoy.",
