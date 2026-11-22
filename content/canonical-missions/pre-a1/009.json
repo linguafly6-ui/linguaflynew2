@@ -1,10 +1,11 @@
 {
   "schemaVersion": "1.2.0",
-  "contentVersion": 5,
+  "contentVersion": "2.0.0",
   "course": {
     "courseId": "english-pre-a1",
-    "level": "PRE-A1",
-    "language": "en-GB"
+    "level": "Pre-A1",
+    "language": "en-GB",
+    "title": "Pre-A1 · Usuario principiante"
   },
   "unit": {
     "unitId": "english-pre-a1-unit-01",
@@ -16,7 +17,8 @@
     "missionId": "english-pre-a1-m009",
     "unitId": "english-pre-a1-unit-01",
     "position": 9,
-    "title": "I'm and you're"
+    "title": "I'm and you're",
+    "objective": "Comprender y usar las contracciones I'm y you're."
   },
   "sections": [
     {
@@ -25,7 +27,7 @@
       "position": 1,
       "exercise": {
         "exerciseId": "english-pre-a1-m009-explore-ex01",
-        "type": "vocabulary_pairs",
+        "type": "lesson",
         "items": [
           {
             "itemId": "english-pre-a1-m009-explore-ex01-i01",
@@ -49,7 +51,7 @@
             "itemId": "english-pre-a1-m009-explore-ex01-i03",
             "position": 3,
             "english": "am",
-            "spanish": "soy/estoy",
+            "spanish": "soy / estoy",
             "pronunciationGuide": "am",
             "audio": "tts:en-GB:am",
             "audioStatus": "synthetic_pending_review"
@@ -58,7 +60,7 @@
             "itemId": "english-pre-a1-m009-explore-ex01-i04",
             "position": 4,
             "english": "are",
-            "spanish": "eres/estás",
+            "spanish": "eres / estás",
             "pronunciationGuide": "ar",
             "audio": "tts:en-GB:are",
             "audioStatus": "synthetic_pending_review"
@@ -66,42 +68,24 @@
           {
             "itemId": "english-pre-a1-m009-explore-ex01-i05",
             "position": 5,
-            "english": "I am",
-            "spanish": "yo soy/estoy",
-            "pronunciationGuide": "ái am",
-            "audio": "tts:en-GB:I am",
-            "audioStatus": "synthetic_pending_review"
-          },
-          {
-            "itemId": "english-pre-a1-m009-explore-ex01-i06",
-            "position": 6,
-            "english": "you are",
-            "spanish": "tú eres/estás",
-            "pronunciationGuide": "iú ar",
-            "audio": "tts:en-GB:you are",
-            "audioStatus": "synthetic_pending_review"
-          },
-          {
-            "itemId": "english-pre-a1-m009-explore-ex01-i07",
-            "position": 7,
             "english": "I'm",
-            "spanish": "contracción de I am",
+            "spanish": "yo soy / estoy",
             "pronunciationGuide": "áim",
             "audio": "tts:en-GB:I'm",
             "audioStatus": "synthetic_pending_review"
           },
           {
-            "itemId": "english-pre-a1-m009-explore-ex01-i08",
-            "position": 8,
+            "itemId": "english-pre-a1-m009-explore-ex01-i06",
+            "position": 6,
             "english": "you're",
-            "spanish": "contracción de you are",
-            "pronunciationGuide": "ior",
+            "spanish": "tú eres / estás",
+            "pronunciationGuide": "iór",
             "audio": "tts:en-GB:you're",
             "audioStatus": "synthetic_pending_review"
           },
           {
-            "itemId": "english-pre-a1-m009-explore-ex01-i09",
-            "position": 9,
+            "itemId": "english-pre-a1-m009-explore-ex01-i07",
+            "position": 7,
             "english": "happy",
             "spanish": "feliz",
             "pronunciationGuide": "JÁ-pi",
@@ -109,86 +93,185 @@
             "audioStatus": "synthetic_pending_review"
           },
           {
-            "itemId": "english-pre-a1-m009-explore-ex01-i10",
-            "position": 10,
+            "itemId": "english-pre-a1-m009-explore-ex01-i08",
+            "position": 8,
             "english": "sad",
             "spanish": "triste",
             "pronunciationGuide": "sad",
             "audio": "tts:en-GB:sad",
             "audioStatus": "synthetic_pending_review"
+          },
+          {
+            "itemId": "english-pre-a1-m009-explore-ex01-i09",
+            "position": 9,
+            "english": "tired",
+            "spanish": "cansado/a",
+            "pronunciationGuide": "TÁI-erd",
+            "audio": "tts:en-GB:tired",
+            "audioStatus": "synthetic_pending_review"
+          },
+          {
+            "itemId": "english-pre-a1-m009-explore-ex01-i10",
+            "position": 10,
+            "english": "fine",
+            "spanish": "bien",
+            "pronunciationGuide": "fáin",
+            "audio": "tts:en-GB:fine",
+            "audioStatus": "synthetic_pending_review"
+          },
+          {
+            "itemId": "english-pre-a1-m009-explore-ex01-i11",
+            "position": 11,
+            "english": "good",
+            "spanish": "bien",
+            "pronunciationGuide": "gud",
+            "audio": "tts:en-GB:good",
+            "audioStatus": "synthetic_pending_review"
+          },
+          {
+            "itemId": "english-pre-a1-m009-explore-ex01-i12",
+            "position": 12,
+            "english": "great",
+            "spanish": "genial",
+            "pronunciationGuide": "gréit",
+            "audio": "tts:en-GB:great",
+            "audioStatus": "synthetic_pending_review"
+          },
+          {
+            "itemId": "english-pre-a1-m009-explore-ex01-i13",
+            "position": 13,
+            "english": "student",
+            "spanish": "estudiante",
+            "pronunciationGuide": "STIÚ-dent",
+            "audio": "tts:en-GB:student",
+            "audioStatus": "synthetic_pending_review"
+          },
+          {
+            "itemId": "english-pre-a1-m009-explore-ex01-i14",
+            "position": 14,
+            "english": "teacher",
+            "spanish": "profesor/a",
+            "pronunciationGuide": "TÍ-cha",
+            "audio": "tts:en-GB:teacher",
+            "audioStatus": "synthetic_pending_review"
+          },
+          {
+            "itemId": "english-pre-a1-m009-explore-ex01-i15",
+            "position": 15,
+            "english": "friend",
+            "spanish": "amigo/a",
+            "pronunciationGuide": "frend",
+            "audio": "tts:en-GB:friend",
+            "audioStatus": "synthetic_pending_review"
+          },
+          {
+            "itemId": "english-pre-a1-m009-explore-ex01-i16",
+            "position": 16,
+            "english": "ready",
+            "spanish": "preparado/a",
+            "pronunciationGuide": "RÉ-di",
+            "audio": "tts:en-GB:ready",
+            "audioStatus": "synthetic_pending_review"
+          },
+          {
+            "itemId": "english-pre-a1-m009-explore-ex01-i17",
+            "position": 17,
+            "english": "nice",
+            "spanish": "agradable",
+            "pronunciationGuide": "náis",
+            "audio": "tts:en-GB:nice",
+            "audioStatus": "synthetic_pending_review"
+          },
+          {
+            "itemId": "english-pre-a1-m009-explore-ex01-i18",
+            "position": 18,
+            "english": "here",
+            "spanish": "aquí",
+            "pronunciationGuide": "jíer",
+            "audio": "tts:en-GB:here",
+            "audioStatus": "synthetic_pending_review"
+          },
+          {
+            "itemId": "english-pre-a1-m009-explore-ex01-i19",
+            "position": 19,
+            "english": "my",
+            "spanish": "mi",
+            "pronunciationGuide": "mái",
+            "audio": "tts:en-GB:my",
+            "audioStatus": "synthetic_pending_review"
           }
         ],
         "theory": {
           "title": "I'm and you're",
-          "explanation": "I am se contrae como I'm; you are como you're. El apóstrofo marca la contracción. You're significa you are; your significa tu y no lleva apóstrofo.",
-          "tip": "Comprende todos los modelos de Explore antes de comenzar las actividades.",
+          "explanation": "I'm = I am y you're = you are. El apóstrofo señala una contracción. You're no es lo mismo que your, que significa tu.",
+          "tip": "Exploración es aprendizaje, no un examen. Revisa todos los bloques, palabras y modelos antes de practicar.",
           "patterns": [
             {
               "label": "Bloque 1",
-              "pattern": "Objetivo: I'm and you're.",
+              "pattern": "I am se contrae como I'm",
               "examples": [
-                "I am → I'm."
+                "I am → I'm"
               ]
             },
             {
               "label": "Bloque 2",
-              "pattern": "you — tú. Pronunciación: iú.",
+              "pattern": "You are se contrae como you're",
               "examples": [
-                "You are → You're."
+                "You are → You're"
               ]
             },
             {
               "label": "Bloque 3",
-              "pattern": "I'm happy. — Estoy feliz..",
+              "pattern": "El apóstrofo marca letras omitidas",
               "examples": [
                 "I'm happy."
               ]
             },
             {
               "label": "Bloque 4",
-              "pattern": "You're happy. — Estás feliz..",
+              "pattern": "I'm equivale a I am",
               "examples": [
                 "You're happy."
               ]
             },
             {
               "label": "Bloque 5",
-              "pattern": "I'm a student. — Soy estudiante..",
+              "pattern": "You're equivale a you are",
               "examples": [
                 "I'm a student."
               ]
             },
             {
               "label": "Bloque 6",
-              "pattern": "You're a teacher. — Eres profesor/a..",
+              "pattern": "I'm con estados",
               "examples": [
                 "You're a teacher."
               ]
             },
             {
               "label": "Bloque 7",
-              "pattern": "I am se contrae como I'm; you are como you're. El apóstrofo marca la contracción. You're significa you are; your significa tu y no lleva apóstrofo.",
+              "pattern": "You're con estados",
               "examples": [
                 "I'm fine."
               ]
             },
             {
               "label": "Bloque 8",
-              "pattern": "You're great. — Eres genial..",
+              "pattern": "I'm y you're con identidades",
               "examples": [
                 "You're great."
               ]
             },
             {
               "label": "Bloque 9",
-              "pattern": "I'm ready. — Estoy preparado/a..",
+              "pattern": "Distinguir you're de your",
               "examples": [
                 "I'm ready."
               ]
             },
             {
               "label": "Bloque 10",
-              "pattern": "You're my friend. — Eres mi amigo/a.",
+              "pattern": "La contracción no cambia el significado",
               "examples": [
                 "You're my friend."
               ]
@@ -198,398 +281,91 @@
         "lesson": {
           "phrases": [
             {
-              "english": "I am → I'm.",
+              "english": "I am → I'm",
               "spanish": "I am se contrae como I'm.",
-              "note": "Modelo enseñado en Explore."
+              "pronunciationGuide": "ái am → áim",
+              "audio": "tts:en-GB:I am → I'm",
+              "audioStatus": "synthetic_pending_review",
+              "note": "Expresión explicada en Explore."
             },
             {
-              "english": "You are → You're.",
+              "english": "You are → You're",
               "spanish": "You are se contrae como you're.",
-              "note": "Modelo enseñado en Explore."
+              "pronunciationGuide": "iú ar → iór",
+              "audio": "tts:en-GB:You are → You're",
+              "audioStatus": "synthetic_pending_review",
+              "note": "Expresión explicada en Explore."
             },
             {
               "english": "I'm happy.",
               "spanish": "Estoy feliz.",
-              "note": "Modelo enseñado en Explore."
+              "pronunciationGuide": "áim JÁ-pi",
+              "audio": "tts:en-GB:I'm happy.",
+              "audioStatus": "synthetic_pending_review",
+              "note": "Expresión explicada en Explore."
             },
             {
               "english": "You're happy.",
               "spanish": "Estás feliz.",
-              "note": "Modelo enseñado en Explore."
+              "pronunciationGuide": "iór JÁ-pi",
+              "audio": "tts:en-GB:You're happy.",
+              "audioStatus": "synthetic_pending_review",
+              "note": "Expresión explicada en Explore."
             },
             {
               "english": "I'm a student.",
               "spanish": "Soy estudiante.",
-              "note": "Modelo enseñado en Explore."
+              "pronunciationGuide": "áim a STIÚ-dent",
+              "audio": "tts:en-GB:I'm a student.",
+              "audioStatus": "synthetic_pending_review",
+              "note": "Expresión explicada en Explore."
             },
             {
               "english": "You're a teacher.",
               "spanish": "Eres profesor/a.",
-              "note": "Modelo enseñado en Explore."
+              "pronunciationGuide": "iór a TÍ-cha",
+              "audio": "tts:en-GB:You're a teacher.",
+              "audioStatus": "synthetic_pending_review",
+              "note": "Expresión explicada en Explore."
             },
             {
               "english": "I'm fine.",
               "spanish": "Estoy bien.",
-              "note": "Modelo enseñado en Explore."
+              "pronunciationGuide": "áim fáin",
+              "audio": "tts:en-GB:I'm fine.",
+              "audioStatus": "synthetic_pending_review",
+              "note": "Expresión explicada en Explore."
             },
             {
               "english": "You're great.",
               "spanish": "Eres genial.",
-              "note": "Modelo enseñado en Explore."
+              "pronunciationGuide": "iór gréit",
+              "audio": "tts:en-GB:You're great.",
+              "audioStatus": "synthetic_pending_review",
+              "note": "Expresión explicada en Explore."
             },
             {
               "english": "I'm ready.",
               "spanish": "Estoy preparado/a.",
-              "note": "Modelo enseñado en Explore."
+              "pronunciationGuide": "áim RÉ-di",
+              "audio": "tts:en-GB:I'm ready.",
+              "audioStatus": "synthetic_pending_review",
+              "note": "Expresión explicada en Explore."
             },
             {
               "english": "You're my friend.",
-              "spanish": "Eres mi amigo/a",
-              "note": "Modelo enseñado en Explore."
-            },
-            {
-              "english": "I",
-              "spanish": "yo",
-              "note": "Pronunciación aproximada: ái."
-            },
-            {
-              "english": "you",
-              "spanish": "tú",
-              "note": "Pronunciación aproximada: iú."
-            },
-            {
-              "english": "am",
-              "spanish": "soy/estoy",
-              "note": "Pronunciación aproximada: am."
-            },
-            {
-              "english": "are",
-              "spanish": "eres/estás",
-              "note": "Pronunciación aproximada: ar."
-            },
-            {
-              "english": "I am",
-              "spanish": "yo soy/estoy",
-              "note": "Pronunciación aproximada: ái am."
-            },
-            {
-              "english": "you are",
-              "spanish": "tú eres/estás",
-              "note": "Pronunciación aproximada: iú ar."
-            },
-            {
-              "english": "I'm",
-              "spanish": "contracción de I am",
-              "note": "Pronunciación aproximada: áim."
-            },
-            {
-              "english": "you're",
-              "spanish": "contracción de you are",
-              "note": "Pronunciación aproximada: ior."
-            },
-            {
-              "english": "happy",
-              "spanish": "feliz",
-              "note": "Pronunciación aproximada: JÁ-pi."
-            },
-            {
-              "english": "sad",
-              "spanish": "triste",
-              "note": "Pronunciación aproximada: sad."
-            },
-            {
-              "english": "tired",
-              "spanish": "cansado",
-              "note": "Pronunciación aproximada: TÁI-erd."
-            },
-            {
-              "english": "fine",
-              "spanish": "bien",
-              "note": "Pronunciación aproximada: fáin."
-            },
-            {
-              "english": "good",
-              "spanish": "bien",
-              "note": "Pronunciación aproximada: gud."
-            },
-            {
-              "english": "great",
-              "spanish": "genial",
-              "note": "Pronunciación aproximada: gréit."
-            },
-            {
-              "english": "student",
-              "spanish": "estudiante",
-              "note": "Pronunciación aproximada: STIÚ-dent."
-            },
-            {
-              "english": "teacher",
-              "spanish": "profesor",
-              "note": "Pronunciación aproximada: TÍ-cha."
-            },
-            {
-              "english": "friend",
-              "spanish": "amigo",
-              "note": "Pronunciación aproximada: frend."
-            },
-            {
-              "english": "ready",
-              "spanish": "preparado",
-              "note": "Pronunciación aproximada: RÉ-di."
-            },
-            {
-              "english": "nice",
-              "spanish": "agradable",
-              "note": "Pronunciación aproximada: náis."
-            },
-            {
-              "english": "here",
-              "spanish": "aquí",
-              "note": "Pronunciación aproximada: jíar."
-            },
-            {
-              "english": "my",
-              "spanish": "mi",
-              "note": "Pronunciación aproximada: mái."
-            },
-            {
-              "english": "your",
-              "spanish": "tu",
-              "note": "Pronunciación aproximada: iór."
+              "spanish": "Eres mi amigo/a.",
+              "pronunciationGuide": "iór mái frend",
+              "audio": "tts:en-GB:You're my friend.",
+              "audioStatus": "synthetic_pending_review",
+              "note": "Expresión explicada en Explore."
             }
           ],
           "grammar": [
             {
-              "english": "I am → I'm.",
-              "spanish": "I am se contrae como I'm.",
-              "note": "I'm and you're"
-            },
-            {
-              "english": "You are → You're.",
-              "spanish": "You are se contrae como you're.",
-              "note": "I am se contrae como I'm; you are como you're. El apóstrofo marca la contracción. You're significa you are; your significa tu y no lleva apóstrofo."
-            },
-            {
-              "english": "I'm happy.",
-              "spanish": "Estoy feliz.",
-              "note": "I am se contrae como I'm; you are como you're. El apóstrofo marca la contracción. You're significa you are; your significa tu y no lleva apóstrofo."
-            },
-            {
-              "english": "You're happy.",
-              "spanish": "Estás feliz.",
-              "note": "I am se contrae como I'm; you are como you're. El apóstrofo marca la contracción. You're significa you are; your significa tu y no lleva apóstrofo."
-            },
-            {
-              "english": "I'm a student.",
-              "spanish": "Soy estudiante.",
-              "note": "I am se contrae como I'm; you are como you're. El apóstrofo marca la contracción. You're significa you are; your significa tu y no lleva apóstrofo."
-            },
-            {
-              "english": "You're a teacher.",
-              "spanish": "Eres profesor/a.",
-              "note": "I am se contrae como I'm; you are como you're. El apóstrofo marca la contracción. You're significa you are; your significa tu y no lleva apóstrofo."
-            },
-            {
-              "english": "I'm fine.",
-              "spanish": "Estoy bien.",
-              "note": "I am se contrae como I'm; you are como you're. El apóstrofo marca la contracción. You're significa you are; your significa tu y no lleva apóstrofo."
-            },
-            {
-              "english": "You're great.",
-              "spanish": "Eres genial.",
-              "note": "I am se contrae como I'm; you are como you're. El apóstrofo marca la contracción. You're significa you are; your significa tu y no lleva apóstrofo."
-            },
-            {
-              "english": "I'm ready.",
-              "spanish": "Estoy preparado/a.",
-              "note": "I am se contrae como I'm; you are como you're. El apóstrofo marca la contracción. You're significa you are; your significa tu y no lleva apóstrofo."
-            },
-            {
-              "english": "You're my friend.",
-              "spanish": "Eres mi amigo/a",
-              "note": "I am se contrae como I'm; you are como you're. El apóstrofo marca la contracción. You're significa you are; your significa tu y no lleva apóstrofo."
-            }
-          ],
-          "reading": [
-            {
-              "english": "Hello! I'm Alex. You're my friend. I'm a student. You're a teacher. I'm happy today. You're very nice.",
-              "spanish": "Hola, soy Alex. Eres mi amigo/a. Soy estudiante. Eres profesor/a. Estoy feliz hoy. Eres muy agradable."
-            }
-          ],
-          "writing": [
-            {
-              "english": "I am → I'm.",
-              "spanish": "I am se contrae como I'm.",
-              "note": "Modelo enseñado en Explore."
-            },
-            {
-              "english": "You are → You're.",
-              "spanish": "You are se contrae como you're.",
-              "note": "Modelo enseñado en Explore."
-            },
-            {
-              "english": "I'm happy.",
-              "spanish": "Estoy feliz.",
-              "note": "Modelo enseñado en Explore."
-            },
-            {
-              "english": "You're happy.",
-              "spanish": "Estás feliz.",
-              "note": "Modelo enseñado en Explore."
-            },
-            {
-              "english": "I'm a student.",
-              "spanish": "Soy estudiante.",
-              "note": "Modelo enseñado en Explore."
-            },
-            {
-              "english": "You're a teacher.",
-              "spanish": "Eres profesor/a.",
-              "note": "Modelo enseñado en Explore."
-            },
-            {
-              "english": "I'm fine.",
-              "spanish": "Estoy bien.",
-              "note": "Modelo enseñado en Explore."
-            },
-            {
-              "english": "You're great.",
-              "spanish": "Eres genial.",
-              "note": "Modelo enseñado en Explore."
-            },
-            {
-              "english": "I'm ready.",
-              "spanish": "Estoy preparado/a.",
-              "note": "Modelo enseñado en Explore."
-            },
-            {
-              "english": "You're my friend.",
-              "spanish": "Eres mi amigo/a",
-              "note": "Modelo enseñado en Explore."
-            }
-          ],
-          "speaking": [
-            {
-              "english": "I am → I'm.",
-              "spanish": "I am se contrae como I'm.",
-              "note": "Modelo enseñado en Explore.",
-              "prompt": "Practica esta expresión.",
-              "promptSpanish": "Di la expresión en voz alta."
-            },
-            {
-              "english": "You are → You're.",
-              "spanish": "You are se contrae como you're.",
-              "note": "Modelo enseñado en Explore.",
-              "prompt": "Practica esta expresión.",
-              "promptSpanish": "Di la expresión en voz alta."
-            },
-            {
-              "english": "I'm happy.",
-              "spanish": "Estoy feliz.",
-              "note": "Modelo enseñado en Explore.",
-              "prompt": "Practica esta expresión.",
-              "promptSpanish": "Di la expresión en voz alta."
-            },
-            {
-              "english": "You're happy.",
-              "spanish": "Estás feliz.",
-              "note": "Modelo enseñado en Explore.",
-              "prompt": "Practica esta expresión.",
-              "promptSpanish": "Di la expresión en voz alta."
-            },
-            {
-              "english": "I'm a student.",
-              "spanish": "Soy estudiante.",
-              "note": "Modelo enseñado en Explore.",
-              "prompt": "Practica esta expresión.",
-              "promptSpanish": "Di la expresión en voz alta."
-            },
-            {
-              "english": "You're a teacher.",
-              "spanish": "Eres profesor/a.",
-              "note": "Modelo enseñado en Explore.",
-              "prompt": "Practica esta expresión.",
-              "promptSpanish": "Di la expresión en voz alta."
-            },
-            {
-              "english": "I'm fine.",
-              "spanish": "Estoy bien.",
-              "note": "Modelo enseñado en Explore.",
-              "prompt": "Practica esta expresión.",
-              "promptSpanish": "Di la expresión en voz alta."
-            },
-            {
-              "english": "You're great.",
-              "spanish": "Eres genial.",
-              "note": "Modelo enseñado en Explore.",
-              "prompt": "Practica esta expresión.",
-              "promptSpanish": "Di la expresión en voz alta."
-            },
-            {
-              "english": "I'm ready.",
-              "spanish": "Estoy preparado/a.",
-              "note": "Modelo enseñado en Explore.",
-              "prompt": "Practica esta expresión.",
-              "promptSpanish": "Di la expresión en voz alta."
-            },
-            {
-              "english": "You're my friend.",
-              "spanish": "Eres mi amigo/a",
-              "note": "Modelo enseñado en Explore.",
-              "prompt": "Practica esta expresión.",
-              "promptSpanish": "Di la expresión en voz alta."
-            }
-          ],
-          "listening": [
-            {
-              "english": "I am → I'm.",
-              "spanish": "I am se contrae como I'm.",
-              "note": "Modelo enseñado en Explore."
-            },
-            {
-              "english": "You are → You're.",
-              "spanish": "You are se contrae como you're.",
-              "note": "Modelo enseñado en Explore."
-            },
-            {
-              "english": "I'm happy.",
-              "spanish": "Estoy feliz.",
-              "note": "Modelo enseñado en Explore."
-            },
-            {
-              "english": "You're happy.",
-              "spanish": "Estás feliz.",
-              "note": "Modelo enseñado en Explore."
-            },
-            {
-              "english": "I'm a student.",
-              "spanish": "Soy estudiante.",
-              "note": "Modelo enseñado en Explore."
-            },
-            {
-              "english": "You're a teacher.",
-              "spanish": "Eres profesor/a.",
-              "note": "Modelo enseñado en Explore."
-            },
-            {
-              "english": "I'm fine.",
-              "spanish": "Estoy bien.",
-              "note": "Modelo enseñado en Explore."
-            },
-            {
-              "english": "You're great.",
-              "spanish": "Eres genial.",
-              "note": "Modelo enseñado en Explore."
-            },
-            {
-              "english": "I'm ready.",
-              "spanish": "Estoy preparado/a.",
-              "note": "Modelo enseñado en Explore."
-            },
-            {
-              "english": "You're my friend.",
-              "spanish": "Eres mi amigo/a",
-              "note": "Modelo enseñado en Explore."
+              "english": "I'm and you're",
+              "spanish": "Comprender y usar las contracciones I'm y you're.",
+              "note": "I'm = I am y you're = you are. El apóstrofo señala una contracción. You're no es lo mismo que your, que significa tu."
             }
           ]
         },
@@ -598,72 +374,72 @@
             {
               "position": 1,
               "title": "Bloque 1",
-              "content": "Objetivo: I'm and you're.",
-              "example": "I am → I'm.",
+              "content": "I am se contrae como I'm",
+              "example": "I am → I'm",
               "translation": "I am se contrae como I'm."
             },
             {
               "position": 2,
               "title": "Bloque 2",
-              "content": "you — tú. Pronunciación: iú.",
-              "example": "You are → You're.",
+              "content": "You are se contrae como you're",
+              "example": "You are → You're",
               "translation": "You are se contrae como you're."
             },
             {
               "position": 3,
               "title": "Bloque 3",
-              "content": "I'm happy. — Estoy feliz..",
+              "content": "El apóstrofo marca letras omitidas",
               "example": "I'm happy.",
               "translation": "Estoy feliz."
             },
             {
               "position": 4,
               "title": "Bloque 4",
-              "content": "You're happy. — Estás feliz..",
+              "content": "I'm equivale a I am",
               "example": "You're happy.",
               "translation": "Estás feliz."
             },
             {
               "position": 5,
               "title": "Bloque 5",
-              "content": "I'm a student. — Soy estudiante..",
+              "content": "You're equivale a you are",
               "example": "I'm a student.",
               "translation": "Soy estudiante."
             },
             {
               "position": 6,
               "title": "Bloque 6",
-              "content": "You're a teacher. — Eres profesor/a..",
+              "content": "I'm con estados",
               "example": "You're a teacher.",
               "translation": "Eres profesor/a."
             },
             {
               "position": 7,
               "title": "Bloque 7",
-              "content": "I am se contrae como I'm; you are como you're. El apóstrofo marca la contracción. You're significa you are; your significa tu y no lleva apóstrofo.",
+              "content": "You're con estados",
               "example": "I'm fine.",
               "translation": "Estoy bien."
             },
             {
               "position": 8,
               "title": "Bloque 8",
-              "content": "You're great. — Eres genial..",
+              "content": "I'm y you're con identidades",
               "example": "You're great.",
               "translation": "Eres genial."
             },
             {
               "position": 9,
               "title": "Bloque 9",
-              "content": "I'm ready. — Estoy preparado/a..",
+              "content": "Distinguir you're de your",
               "example": "I'm ready.",
               "translation": "Estoy preparado/a."
             },
             {
               "position": 10,
               "title": "Bloque 10",
-              "content": "You're my friend. — Eres mi amigo/a.",
+              "content": "La contracción no cambia el significado",
               "example": "You're my friend.",
-              "translation": "Eres mi amigo/a"
+              "translation": "Eres mi amigo/a."
             }
           ]
         }
@@ -680,151 +456,151 @@
           {
             "itemId": "english-pre-a1-m009-practice-ex01-i01",
             "position": 1,
-            "prompt": "Elige la traducción de “I”.",
+            "prompt": "Elige el significado de “you”.",
             "evaluation": {
               "type": "single_choice"
             },
             "options": [
               "tú",
-              "soy/estoy",
-              "yo"
-            ],
-            "answer": "yo",
-            "taskType": "vocabulary_translation"
-          },
-          {
-            "itemId": "english-pre-a1-m009-practice-ex01-i02",
-            "position": 2,
-            "prompt": "Elige la traducción de “you”.",
-            "evaluation": {
-              "type": "single_choice"
-            },
-            "options": [
-              "eres/estás",
-              "tú",
-              "soy/estoy"
+              "yo",
+              "soy / estoy"
             ],
             "answer": "tú",
             "taskType": "vocabulary_translation"
           },
           {
-            "itemId": "english-pre-a1-m009-practice-ex01-i03",
-            "position": 3,
-            "prompt": "Elige la traducción de “am”.",
+            "itemId": "english-pre-a1-m009-practice-ex01-i02",
+            "position": 2,
+            "prompt": "Elige el significado de “am”.",
             "evaluation": {
               "type": "single_choice"
             },
             "options": [
-              "soy/estoy",
-              "eres/estás",
-              "yo soy/estoy"
+              "tú",
+              "soy / estoy",
+              "eres / estás"
             ],
-            "answer": "soy/estoy",
+            "answer": "soy / estoy",
+            "taskType": "vocabulary_translation"
+          },
+          {
+            "itemId": "english-pre-a1-m009-practice-ex01-i03",
+            "position": 3,
+            "prompt": "Elige el significado de “are”.",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "soy / estoy",
+              "yo soy / estoy",
+              "eres / estás"
+            ],
+            "answer": "eres / estás",
             "taskType": "vocabulary_translation"
           },
           {
             "itemId": "english-pre-a1-m009-practice-ex01-i04",
             "position": 4,
-            "prompt": "Elige la traducción de “are”.",
+            "prompt": "Elige el significado de “I'm”.",
             "evaluation": {
               "type": "single_choice"
             },
             "options": [
-              "yo soy/estoy",
-              "tú eres/estás",
-              "eres/estás"
+              "yo soy / estoy",
+              "eres / estás",
+              "tú eres / estás"
             ],
-            "answer": "eres/estás",
+            "answer": "yo soy / estoy",
             "taskType": "vocabulary_translation"
           },
           {
             "itemId": "english-pre-a1-m009-practice-ex01-i05",
             "position": 5,
-            "prompt": "Elige la traducción de “I am”.",
+            "prompt": "Elige el significado de “you're”.",
             "evaluation": {
               "type": "single_choice"
             },
             "options": [
-              "contracción de I am",
-              "yo soy/estoy",
-              "tú eres/estás"
+              "yo soy / estoy",
+              "tú eres / estás",
+              "feliz"
             ],
-            "answer": "yo soy/estoy",
+            "answer": "tú eres / estás",
             "taskType": "vocabulary_translation"
           },
           {
             "itemId": "english-pre-a1-m009-practice-ex01-i06",
             "position": 6,
-            "prompt": "Elige la traducción de “you are”.",
+            "prompt": "Elige el significado de “happy”.",
             "evaluation": {
               "type": "single_choice"
             },
             "options": [
-              "tú eres/estás",
-              "contracción de I am",
-              "contracción de you are"
-            ],
-            "answer": "tú eres/estás",
-            "taskType": "vocabulary_translation"
-          },
-          {
-            "itemId": "english-pre-a1-m009-practice-ex01-i07",
-            "position": 7,
-            "prompt": "Elige la traducción de “I'm”.",
-            "evaluation": {
-              "type": "single_choice"
-            },
-            "options": [
-              "contracción de you are",
-              "feliz",
-              "contracción de I am"
-            ],
-            "answer": "contracción de I am",
-            "taskType": "vocabulary_translation"
-          },
-          {
-            "itemId": "english-pre-a1-m009-practice-ex01-i08",
-            "position": 8,
-            "prompt": "Elige la traducción de “you're”.",
-            "evaluation": {
-              "type": "single_choice"
-            },
-            "options": [
+              "tú eres / estás",
               "triste",
-              "contracción de you are",
               "feliz"
-            ],
-            "answer": "contracción de you are",
-            "taskType": "vocabulary_translation"
-          },
-          {
-            "itemId": "english-pre-a1-m009-practice-ex01-i09",
-            "position": 9,
-            "prompt": "Elige la traducción de “happy”.",
-            "evaluation": {
-              "type": "single_choice"
-            },
-            "options": [
-              "feliz",
-              "triste",
-              "cansado"
             ],
             "answer": "feliz",
             "taskType": "vocabulary_translation"
           },
           {
-            "itemId": "english-pre-a1-m009-practice-ex01-i10",
-            "position": 10,
-            "prompt": "Elige la traducción de “sad”.",
+            "itemId": "english-pre-a1-m009-practice-ex01-i07",
+            "position": 7,
+            "prompt": "Elige el significado de “sad”.",
             "evaluation": {
               "type": "single_choice"
             },
             "options": [
-              "cansado",
-              "bien",
-              "triste"
+              "triste",
+              "feliz",
+              "cansado/a"
             ],
             "answer": "triste",
+            "taskType": "vocabulary_translation"
+          },
+          {
+            "itemId": "english-pre-a1-m009-practice-ex01-i08",
+            "position": 8,
+            "prompt": "Elige el significado de “tired”.",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "triste",
+              "cansado/a",
+              "bien"
+            ],
+            "answer": "cansado/a",
+            "taskType": "vocabulary_translation"
+          },
+          {
+            "itemId": "english-pre-a1-m009-practice-ex01-i09",
+            "position": 9,
+            "prompt": "Elige el significado de “fine”.",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "cansado/a",
+              "genial",
+              "bien"
+            ],
+            "answer": "bien",
+            "taskType": "vocabulary_translation"
+          },
+          {
+            "itemId": "english-pre-a1-m009-practice-ex01-i10",
+            "position": 10,
+            "prompt": "Elige el significado de “good”.",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "bien",
+              "genial",
+              "estudiante"
+            ],
+            "answer": "bien",
             "taskType": "vocabulary_translation"
           }
         ]
@@ -838,78 +614,78 @@
         "exerciseId": "english-pre-a1-m009-grammar-ex01",
         "type": "grammar",
         "theory": {
-          "title": "I'm and you're",
-          "explanation": "I am se contrae como I'm; you are como you're. El apóstrofo marca la contracción. You're significa you are; your significa tu y no lleva apóstrofo.",
-          "tip": "Comprende todos los modelos de Explore antes de comenzar las actividades.",
+          "title": "Expresiones y estructuras de la misión",
+          "explanation": "I'm = I am y you're = you are. El apóstrofo señala una contracción. You're no es lo mismo que your, que significa tu.",
+          "tip": "Reconoce el modelo completo antes de utilizarlo.",
           "patterns": [
             {
-              "label": "Bloque 1",
-              "pattern": "I'm and you're",
+              "label": "Modelo 1",
+              "pattern": "I am → I'm",
               "examples": [
-                "I am → I'm."
+                "I am se contrae como I'm."
               ]
             },
             {
-              "label": "Bloque 2",
-              "pattern": "I am se contrae como I'm; you are como you're. El apóstrofo marca la contracción. You're significa you are; your significa tu y no lleva apóstrofo.",
+              "label": "Modelo 2",
+              "pattern": "You are → You're",
               "examples": [
-                "You are → You're."
+                "You are se contrae como you're."
               ]
             },
             {
-              "label": "Bloque 3",
-              "pattern": "I am se contrae como I'm; you are como you're. El apóstrofo marca la contracción. You're significa you are; your significa tu y no lleva apóstrofo.",
+              "label": "Modelo 3",
+              "pattern": "I'm happy.",
               "examples": [
-                "I'm happy."
+                "Estoy feliz."
               ]
             },
             {
-              "label": "Bloque 4",
-              "pattern": "I am se contrae como I'm; you are como you're. El apóstrofo marca la contracción. You're significa you are; your significa tu y no lleva apóstrofo.",
+              "label": "Modelo 4",
+              "pattern": "You're happy.",
               "examples": [
-                "You're happy."
+                "Estás feliz."
               ]
             },
             {
-              "label": "Bloque 5",
-              "pattern": "I am se contrae como I'm; you are como you're. El apóstrofo marca la contracción. You're significa you are; your significa tu y no lleva apóstrofo.",
+              "label": "Modelo 5",
+              "pattern": "I'm a student.",
               "examples": [
-                "I'm a student."
+                "Soy estudiante."
               ]
             },
             {
-              "label": "Bloque 6",
-              "pattern": "I am se contrae como I'm; you are como you're. El apóstrofo marca la contracción. You're significa you are; your significa tu y no lleva apóstrofo.",
+              "label": "Modelo 6",
+              "pattern": "You're a teacher.",
               "examples": [
-                "You're a teacher."
+                "Eres profesor/a."
               ]
             },
             {
-              "label": "Bloque 7",
-              "pattern": "I am se contrae como I'm; you are como you're. El apóstrofo marca la contracción. You're significa you are; your significa tu y no lleva apóstrofo.",
+              "label": "Modelo 7",
+              "pattern": "I'm fine.",
               "examples": [
-                "I'm fine."
+                "Estoy bien."
               ]
             },
             {
-              "label": "Bloque 8",
-              "pattern": "I am se contrae como I'm; you are como you're. El apóstrofo marca la contracción. You're significa you are; your significa tu y no lleva apóstrofo.",
+              "label": "Modelo 8",
+              "pattern": "You're great.",
               "examples": [
-                "You're great."
+                "Eres genial."
               ]
             },
             {
-              "label": "Bloque 9",
-              "pattern": "I am se contrae como I'm; you are como you're. El apóstrofo marca la contracción. You're significa you are; your significa tu y no lleva apóstrofo.",
+              "label": "Modelo 9",
+              "pattern": "I'm ready.",
               "examples": [
-                "I'm ready."
+                "Estoy preparado/a."
               ]
             },
             {
-              "label": "Bloque 10",
-              "pattern": "I am se contrae como I'm; you are como you're. El apóstrofo marca la contracción. You're significa you are; your significa tu y no lleva apóstrofo.",
+              "label": "Modelo 10",
+              "pattern": "You're my friend.",
               "examples": [
-                "You're my friend."
+                "Eres mi amigo/a."
               ]
             }
           ]
@@ -918,142 +694,152 @@
           {
             "itemId": "english-pre-a1-m009-grammar-ex01-i01",
             "position": 1,
-            "prompt": "Reconoce el modelo trabajado: I am → I'm.",
+            "prompt": "Selecciona el modelo que significa: “I am se contrae como I'm.”",
             "evaluation": {
               "type": "single_choice"
             },
             "options": [
-              "You are → You're.",
-              "I am → I'm.",
+              "I am → I'm",
+              "You are → You're",
               "I'm happy."
             ],
-            "answer": "I am → I'm."
+            "answer": "I am → I'm",
+            "taskType": "functional_language"
           },
           {
             "itemId": "english-pre-a1-m009-grammar-ex01-i02",
             "position": 2,
-            "prompt": "Reconoce el modelo trabajado: You are → You're.",
+            "prompt": "Selecciona el modelo que significa: “You are se contrae como you're.”",
             "evaluation": {
               "type": "single_choice"
             },
             "options": [
-              "You're happy.",
               "I'm happy.",
-              "You are → You're."
+              "You are → You're",
+              "You're happy."
             ],
-            "answer": "You are → You're."
+            "answer": "You are → You're",
+            "taskType": "functional_language"
           },
           {
             "itemId": "english-pre-a1-m009-grammar-ex01-i03",
             "position": 3,
-            "prompt": "Reconoce el modelo trabajado: I'm happy.",
+            "prompt": "Selecciona el modelo que significa: “Estoy feliz.”",
             "evaluation": {
               "type": "single_choice"
             },
             "options": [
-              "I'm happy.",
               "You're happy.",
-              "I'm a student."
+              "I'm a student.",
+              "I'm happy."
             ],
-            "answer": "I'm happy."
+            "answer": "I'm happy.",
+            "taskType": "functional_language"
           },
           {
             "itemId": "english-pre-a1-m009-grammar-ex01-i04",
             "position": 4,
-            "prompt": "Reconoce el modelo trabajado: You're happy.",
+            "prompt": "Selecciona el modelo que significa: “Estás feliz.”",
             "evaluation": {
               "type": "single_choice"
             },
             "options": [
-              "I'm a student.",
               "You're happy.",
+              "I'm a student.",
               "You're a teacher."
             ],
-            "answer": "You're happy."
+            "answer": "You're happy.",
+            "taskType": "functional_language"
           },
           {
             "itemId": "english-pre-a1-m009-grammar-ex01-i05",
             "position": 5,
-            "prompt": "Reconoce el modelo trabajado: I'm a student.",
+            "prompt": "Selecciona el modelo que significa: “Soy estudiante.”",
             "evaluation": {
               "type": "single_choice"
             },
             "options": [
-              "I'm fine.",
               "You're a teacher.",
-              "I'm a student."
+              "I'm a student.",
+              "I'm fine."
             ],
-            "answer": "I'm a student."
+            "answer": "I'm a student.",
+            "taskType": "functional_language"
           },
           {
             "itemId": "english-pre-a1-m009-grammar-ex01-i06",
             "position": 6,
-            "prompt": "Reconoce el modelo trabajado: You're a teacher.",
+            "prompt": "Selecciona el modelo que significa: “Eres profesor/a.”",
             "evaluation": {
               "type": "single_choice"
             },
             "options": [
-              "You're a teacher.",
               "I'm fine.",
-              "You're great."
+              "You're great.",
+              "You're a teacher."
             ],
-            "answer": "You're a teacher."
+            "answer": "You're a teacher.",
+            "taskType": "functional_language"
           },
           {
             "itemId": "english-pre-a1-m009-grammar-ex01-i07",
             "position": 7,
-            "prompt": "Reconoce el modelo trabajado: I'm fine.",
+            "prompt": "Selecciona el modelo que significa: “Estoy bien.”",
             "evaluation": {
               "type": "single_choice"
             },
             "options": [
-              "You're great.",
               "I'm fine.",
+              "You're great.",
               "I'm ready."
             ],
-            "answer": "I'm fine."
+            "answer": "I'm fine.",
+            "taskType": "functional_language"
           },
           {
             "itemId": "english-pre-a1-m009-grammar-ex01-i08",
             "position": 8,
-            "prompt": "Reconoce el modelo trabajado: You're great.",
+            "prompt": "Selecciona el modelo que significa: “Eres genial.”",
             "evaluation": {
               "type": "single_choice"
             },
             "options": [
-              "You're my friend.",
               "I'm ready.",
-              "You're great."
+              "You're great.",
+              "You're my friend."
             ],
-            "answer": "You're great."
+            "answer": "You're great.",
+            "taskType": "functional_language"
           },
           {
             "itemId": "english-pre-a1-m009-grammar-ex01-i09",
             "position": 9,
-            "prompt": "Reconoce el modelo trabajado: I'm ready.",
+            "prompt": "Selecciona el modelo que significa: “Estoy preparado/a.”",
             "evaluation": {
               "type": "single_choice"
             },
             "options": [
-              "I'm ready.",
               "You're my friend.",
-              "I am → I'm."
+              "I am → I'm",
+              "I'm ready."
             ],
-            "answer": "I'm ready."
+            "answer": "I'm ready.",
+            "taskType": "functional_language"
           },
           {
             "itemId": "english-pre-a1-m009-grammar-ex01-i10",
             "position": 10,
-            "prompt": "Reconoce el modelo trabajado: You're my friend.",
+            "prompt": "Selecciona el modelo que significa: “Eres mi amigo/a.”",
             "evaluation": {
               "type": "single_choice"
             },
             "options": [
-              "I am → I'm.",
               "You're my friend.",
-              "You are → You're."
+              "I am → I'm",
+              "You are → You're"
             ],
-            "answer": "You're my friend."
+            "answer": "You're my friend.",
+            "taskType": "functional_language"
           }
         ]
       }
@@ -1072,7 +858,8 @@
             "word": "I",
             "translation": "yo",
             "pronunciationGuide": "ái",
-            "audio": "tts:en-GB:I"
+            "audio": "tts:en-GB:I",
+            "audioStatus": "synthetic_pending_review"
           },
           {
             "itemId": "english-pre-a1-m009-pronunciation-ex01-i02",
@@ -1080,71 +867,80 @@
             "word": "you",
             "translation": "tú",
             "pronunciationGuide": "iú",
-            "audio": "tts:en-GB:you"
+            "audio": "tts:en-GB:you",
+            "audioStatus": "synthetic_pending_review"
           },
           {
             "itemId": "english-pre-a1-m009-pronunciation-ex01-i03",
             "position": 3,
             "word": "am",
-            "translation": "soy/estoy",
+            "translation": "soy / estoy",
             "pronunciationGuide": "am",
-            "audio": "tts:en-GB:am"
+            "audio": "tts:en-GB:am",
+            "audioStatus": "synthetic_pending_review"
           },
           {
             "itemId": "english-pre-a1-m009-pronunciation-ex01-i04",
             "position": 4,
             "word": "are",
-            "translation": "eres/estás",
+            "translation": "eres / estás",
             "pronunciationGuide": "ar",
-            "audio": "tts:en-GB:are"
+            "audio": "tts:en-GB:are",
+            "audioStatus": "synthetic_pending_review"
           },
           {
             "itemId": "english-pre-a1-m009-pronunciation-ex01-i05",
             "position": 5,
-            "word": "I am",
-            "translation": "yo soy/estoy",
-            "pronunciationGuide": "ái am",
-            "audio": "tts:en-GB:I am"
+            "word": "I'm",
+            "translation": "yo soy / estoy",
+            "pronunciationGuide": "áim",
+            "audio": "tts:en-GB:I'm",
+            "audioStatus": "synthetic_pending_review"
           },
           {
             "itemId": "english-pre-a1-m009-pronunciation-ex01-i06",
             "position": 6,
-            "word": "you are",
-            "translation": "tú eres/estás",
-            "pronunciationGuide": "iú ar",
-            "audio": "tts:en-GB:you are"
+            "word": "you're",
+            "translation": "tú eres / estás",
+            "pronunciationGuide": "iór",
+            "audio": "tts:en-GB:you're",
+            "audioStatus": "synthetic_pending_review"
           },
           {
             "itemId": "english-pre-a1-m009-pronunciation-ex01-i07",
             "position": 7,
-            "word": "I'm",
-            "translation": "contracción de I am",
-            "pronunciationGuide": "áim",
-            "audio": "tts:en-GB:I'm"
+            "word": "happy",
+            "translation": "feliz",
+            "pronunciationGuide": "JÁ-pi",
+            "audio": "tts:en-GB:happy",
+            "audioStatus": "synthetic_pending_review"
           },
           {
             "itemId": "english-pre-a1-m009-pronunciation-ex01-i08",
             "position": 8,
-            "word": "you're",
-            "translation": "contracción de you are",
-            "pronunciationGuide": "ior",
-            "audio": "tts:en-GB:you're"
+            "word": "sad",
+            "translation": "triste",
+            "pronunciationGuide": "sad",
+            "audio": "tts:en-GB:sad",
+            "audioStatus": "synthetic_pending_review"
           },
           {
             "itemId": "english-pre-a1-m009-pronunciation-ex01-i09",
             "position": 9,
-            "word": "happy",
-            "translation": "feliz",
-            "pronunciationGuide": "JÁ-pi",
-            "audio": "tts:en-GB:happy"
+            "word": "tired",
+            "translation": "cansado/a",
+            "pronunciationGuide": "TÁI-erd",
+            "audio": "tts:en-GB:tired",
+            "audioStatus": "synthetic_pending_review"
           },
           {
             "itemId": "english-pre-a1-m009-pronunciation-ex01-i10",
             "position": 10,
-            "word": "sad",
-            "translation": "triste",
-            "pronunciationGuide": "sad",
-            "audio": "tts:en-GB:sad"
+            "word": "fine",
+            "translation": "bien",
+            "pronunciationGuide": "fáin",
+            "audio": "tts:en-GB:fine",
+            "audioStatus": "synthetic_pending_review"
           }
         ]
       }
@@ -1158,148 +954,158 @@
         "type": "reading_comprehension",
         "content": {
           "passageId": "english-pre-a1-m009-reading-passage-01",
-          "passage": "Hello! I'm Alex. You're my friend. I'm a student. You're a teacher. I'm happy today. You're very nice."
+          "passage": "I am → I'm You are → You're I'm happy. You're happy. I'm a student. You're a teacher. I'm fine. You're great. I'm ready. You're my friend."
         },
         "items": [
           {
             "itemId": "english-pre-a1-m009-reading-ex01-i01",
             "position": 1,
-            "prompt": "¿Qué tema presenta el texto?",
+            "prompt": "En el texto, ¿qué significa “I am → I'm”?",
             "evaluation": {
               "type": "single_choice"
             },
             "options": [
-              "yo",
-              "tú",
-              "I'm and you're"
+              "I am se contrae como I'm.",
+              "You are se contrae como you're.",
+              "Estoy feliz."
             ],
-            "answer": "I'm and you're"
+            "answer": "I am se contrae como I'm.",
+            "taskType": "reading_detail"
           },
           {
             "itemId": "english-pre-a1-m009-reading-ex01-i02",
             "position": 2,
-            "prompt": "¿Qué significa “you” en el texto?",
+            "prompt": "En el texto, ¿qué significa “You are → You're”?",
             "evaluation": {
               "type": "single_choice"
             },
             "options": [
-              "eres/estás",
-              "tú",
-              "soy/estoy"
+              "Estoy feliz.",
+              "You are se contrae como you're.",
+              "Estás feliz."
             ],
-            "answer": "tú"
+            "answer": "You are se contrae como you're.",
+            "taskType": "reading_detail"
           },
           {
             "itemId": "english-pre-a1-m009-reading-ex01-i03",
             "position": 3,
-            "prompt": "¿Qué significa “am” en el texto?",
+            "prompt": "En el texto, ¿qué significa “I'm happy.”?",
             "evaluation": {
               "type": "single_choice"
             },
             "options": [
-              "soy/estoy",
-              "eres/estás",
-              "yo soy/estoy"
+              "Estás feliz.",
+              "Soy estudiante.",
+              "Estoy feliz."
             ],
-            "answer": "soy/estoy"
+            "answer": "Estoy feliz.",
+            "taskType": "reading_detail"
           },
           {
             "itemId": "english-pre-a1-m009-reading-ex01-i04",
             "position": 4,
-            "prompt": "¿Qué significa “are” en el texto?",
+            "prompt": "En el texto, ¿qué significa “You're happy.”?",
             "evaluation": {
               "type": "single_choice"
             },
             "options": [
-              "yo soy/estoy",
-              "tú eres/estás",
-              "eres/estás"
+              "Estás feliz.",
+              "Soy estudiante.",
+              "Eres profesor/a."
             ],
-            "answer": "eres/estás"
+            "answer": "Estás feliz.",
+            "taskType": "reading_detail"
           },
           {
             "itemId": "english-pre-a1-m009-reading-ex01-i05",
             "position": 5,
-            "prompt": "¿Qué significa “I am” en el texto?",
+            "prompt": "En el texto, ¿qué significa “I'm a student.”?",
             "evaluation": {
               "type": "single_choice"
             },
             "options": [
-              "contracción de I am",
-              "yo soy/estoy",
-              "tú eres/estás"
+              "Eres profesor/a.",
+              "Soy estudiante.",
+              "Estoy bien."
             ],
-            "answer": "yo soy/estoy"
+            "answer": "Soy estudiante.",
+            "taskType": "reading_detail"
           },
           {
             "itemId": "english-pre-a1-m009-reading-ex01-i06",
             "position": 6,
-            "prompt": "¿Qué significa “you are” en el texto?",
+            "prompt": "En el texto, ¿qué significa “You're a teacher.”?",
             "evaluation": {
               "type": "single_choice"
             },
             "options": [
-              "tú eres/estás",
-              "contracción de I am",
-              "contracción de you are"
+              "Estoy bien.",
+              "Eres genial.",
+              "Eres profesor/a."
             ],
-            "answer": "tú eres/estás"
+            "answer": "Eres profesor/a.",
+            "taskType": "reading_detail"
           },
           {
             "itemId": "english-pre-a1-m009-reading-ex01-i07",
             "position": 7,
-            "prompt": "¿Qué significa “I'm” en el texto?",
+            "prompt": "En el texto, ¿qué significa “I'm fine.”?",
             "evaluation": {
               "type": "single_choice"
             },
             "options": [
-              "contracción de you are",
-              "feliz",
-              "contracción de I am"
+              "Estoy bien.",
+              "Eres genial.",
+              "Estoy preparado/a."
             ],
-            "answer": "contracción de I am"
+            "answer": "Estoy bien.",
+            "taskType": "reading_detail"
           },
           {
             "itemId": "english-pre-a1-m009-reading-ex01-i08",
             "position": 8,
-            "prompt": "¿Qué significa “you're” en el texto?",
+            "prompt": "En el texto, ¿qué significa “You're great.”?",
             "evaluation": {
               "type": "single_choice"
             },
             "options": [
-              "triste",
-              "contracción de you are",
-              "feliz"
+              "Estoy preparado/a.",
+              "Eres genial.",
+              "Eres mi amigo/a."
             ],
-            "answer": "contracción de you are"
+            "answer": "Eres genial.",
+            "taskType": "reading_detail"
           },
           {
             "itemId": "english-pre-a1-m009-reading-ex01-i09",
             "position": 9,
-            "prompt": "¿Qué significa “happy” en el texto?",
+            "prompt": "En el texto, ¿qué significa “I'm ready.”?",
             "evaluation": {
               "type": "single_choice"
             },
             "options": [
-              "feliz",
-              "triste",
-              "cansado"
+              "Eres mi amigo/a.",
+              "I am se contrae como I'm.",
+              "Estoy preparado/a."
             ],
-            "answer": "feliz"
+            "answer": "Estoy preparado/a.",
+            "taskType": "reading_detail"
           },
           {
             "itemId": "english-pre-a1-m009-reading-ex01-i10",
             "position": 10,
-            "prompt": "¿Qué significa “sad” en el texto?",
+            "prompt": "En el texto, ¿qué significa “You're my friend.”?",
             "evaluation": {
               "type": "single_choice"
             },
             "options": [
-              "cansado",
-              "bien",
-              "triste"
+              "Eres mi amigo/a.",
+              "I am se contrae como I'm.",
+              "You are se contrae como you're."
             ],
-            "answer": "triste"
+            "answer": "Eres mi amigo/a.",
+            "taskType": "reading_detail"
           }
         ]
       }
@@ -1315,38 +1121,38 @@
           {
             "itemId": "english-pre-a1-m009-writing-ex01-i01",
             "position": 1,
-            "audio": "tts:en-GB:I am → I'm.",
+            "audio": "tts:en-GB:I am → I'm",
             "audioLocale": "en-GB",
             "audioStatus": "synthetic_pending_review",
             "kind": "sentence",
             "repeatCount": 3,
-            "expectedAnswer": "I am → I'm.",
+            "expectedAnswer": "I am → I'm",
             "evaluation": {
               "type": "normalised_text"
             },
             "segments": [
               {
                 "segmentId": "english-pre-a1-m009-writing-segment-01",
-                "text": "I am → I'm."
+                "text": "I am → I'm"
               }
             ]
           },
           {
             "itemId": "english-pre-a1-m009-writing-ex01-i02",
             "position": 2,
-            "audio": "tts:en-GB:You are → You're.",
+            "audio": "tts:en-GB:You are → You're",
             "audioLocale": "en-GB",
             "audioStatus": "synthetic_pending_review",
             "kind": "sentence",
             "repeatCount": 3,
-            "expectedAnswer": "You are → You're.",
+            "expectedAnswer": "You are → You're",
             "evaluation": {
               "type": "normalised_text"
             },
             "segments": [
               {
                 "segmentId": "english-pre-a1-m009-writing-segment-02",
-                "text": "You are → You're."
+                "text": "You are → You're"
               }
             ]
           },
@@ -1516,10 +1322,10 @@
           {
             "itemId": "english-pre-a1-m009-speaking-ex01-i01",
             "position": 1,
-            "prompt": "Di en voz alta esta expresión.",
-            "promptSpanish": "Practica el modelo de la misión.",
-            "modelAnswer": "I am → I'm.",
-            "translation": "I am → I'm.",
+            "prompt": "Di en voz alta el modelo.",
+            "promptSpanish": "Practica: I am se contrae como I'm.",
+            "modelAnswer": "I am → I'm",
+            "translation": "I am se contrae como I'm.",
             "evaluation": {
               "type": "transcription_feedback",
               "transcriptionSeparateFromPronunciation": true
@@ -1528,10 +1334,10 @@
           {
             "itemId": "english-pre-a1-m009-speaking-ex01-i02",
             "position": 2,
-            "prompt": "Di en voz alta esta expresión.",
-            "promptSpanish": "Practica el modelo de la misión.",
-            "modelAnswer": "You are → You're.",
-            "translation": "You are → You're.",
+            "prompt": "Di en voz alta el modelo.",
+            "promptSpanish": "Practica: You are se contrae como you're.",
+            "modelAnswer": "You are → You're",
+            "translation": "You are se contrae como you're.",
             "evaluation": {
               "type": "transcription_feedback",
               "transcriptionSeparateFromPronunciation": true
@@ -1540,10 +1346,10 @@
           {
             "itemId": "english-pre-a1-m009-speaking-ex01-i03",
             "position": 3,
-            "prompt": "Di en voz alta esta expresión.",
-            "promptSpanish": "Practica el modelo de la misión.",
+            "prompt": "Di en voz alta el modelo.",
+            "promptSpanish": "Practica: Estoy feliz.",
             "modelAnswer": "I'm happy.",
-            "translation": "I'm happy.",
+            "translation": "Estoy feliz.",
             "evaluation": {
               "type": "transcription_feedback",
               "transcriptionSeparateFromPronunciation": true
@@ -1552,10 +1358,10 @@
           {
             "itemId": "english-pre-a1-m009-speaking-ex01-i04",
             "position": 4,
-            "prompt": "Di en voz alta esta expresión.",
-            "promptSpanish": "Practica el modelo de la misión.",
+            "prompt": "Di en voz alta el modelo.",
+            "promptSpanish": "Practica: Estás feliz.",
             "modelAnswer": "You're happy.",
-            "translation": "You're happy.",
+            "translation": "Estás feliz.",
             "evaluation": {
               "type": "transcription_feedback",
               "transcriptionSeparateFromPronunciation": true
@@ -1564,10 +1370,10 @@
           {
             "itemId": "english-pre-a1-m009-speaking-ex01-i05",
             "position": 5,
-            "prompt": "Di en voz alta esta expresión.",
-            "promptSpanish": "Practica el modelo de la misión.",
+            "prompt": "Di en voz alta el modelo.",
+            "promptSpanish": "Practica: Soy estudiante.",
             "modelAnswer": "I'm a student.",
-            "translation": "I'm a student.",
+            "translation": "Soy estudiante.",
             "evaluation": {
               "type": "transcription_feedback",
               "transcriptionSeparateFromPronunciation": true
@@ -1576,10 +1382,10 @@
           {
             "itemId": "english-pre-a1-m009-speaking-ex01-i06",
             "position": 6,
-            "prompt": "Di en voz alta esta expresión.",
-            "promptSpanish": "Practica el modelo de la misión.",
+            "prompt": "Di en voz alta el modelo.",
+            "promptSpanish": "Practica: Eres profesor/a.",
             "modelAnswer": "You're a teacher.",
-            "translation": "You're a teacher.",
+            "translation": "Eres profesor/a.",
             "evaluation": {
               "type": "transcription_feedback",
               "transcriptionSeparateFromPronunciation": true
@@ -1588,10 +1394,10 @@
           {
             "itemId": "english-pre-a1-m009-speaking-ex01-i07",
             "position": 7,
-            "prompt": "Di en voz alta esta expresión.",
-            "promptSpanish": "Practica el modelo de la misión.",
+            "prompt": "Di en voz alta el modelo.",
+            "promptSpanish": "Practica: Estoy bien.",
             "modelAnswer": "I'm fine.",
-            "translation": "I'm fine.",
+            "translation": "Estoy bien.",
             "evaluation": {
               "type": "transcription_feedback",
               "transcriptionSeparateFromPronunciation": true
@@ -1600,10 +1406,10 @@
           {
             "itemId": "english-pre-a1-m009-speaking-ex01-i08",
             "position": 8,
-            "prompt": "Di en voz alta esta expresión.",
-            "promptSpanish": "Practica el modelo de la misión.",
+            "prompt": "Di en voz alta el modelo.",
+            "promptSpanish": "Practica: Eres genial.",
             "modelAnswer": "You're great.",
-            "translation": "You're great.",
+            "translation": "Eres genial.",
             "evaluation": {
               "type": "transcription_feedback",
               "transcriptionSeparateFromPronunciation": true
@@ -1612,10 +1418,10 @@
           {
             "itemId": "english-pre-a1-m009-speaking-ex01-i09",
             "position": 9,
-            "prompt": "Di en voz alta esta expresión.",
-            "promptSpanish": "Practica el modelo de la misión.",
+            "prompt": "Di en voz alta el modelo.",
+            "promptSpanish": "Practica: Estoy preparado/a.",
             "modelAnswer": "I'm ready.",
-            "translation": "I'm ready.",
+            "translation": "Estoy preparado/a.",
             "evaluation": {
               "type": "transcription_feedback",
               "transcriptionSeparateFromPronunciation": true
@@ -1624,10 +1430,10 @@
           {
             "itemId": "english-pre-a1-m009-speaking-ex01-i10",
             "position": 10,
-            "prompt": "Di en voz alta esta expresión.",
-            "promptSpanish": "Practica el modelo de la misión.",
+            "prompt": "Di en voz alta el modelo.",
+            "promptSpanish": "Practica: Eres mi amigo/a.",
             "modelAnswer": "You're my friend.",
-            "translation": "You're my friend.",
+            "translation": "Eres mi amigo/a.",
             "evaluation": {
               "type": "transcription_feedback",
               "transcriptionSeparateFromPronunciation": true
@@ -1644,18 +1450,18 @@
         "exerciseId": "english-pre-a1-m009-listening-ex01",
         "type": "listening_gap_fill",
         "content": {
-          "audio": "tts:en-GB:I am → I'm. You are → You're. I'm happy. You're happy. I'm a student. You're a teacher. I'm fine. You're great. I'm ready. You're my friend.",
+          "audio": "tts:en-GB:I am → I'm You are → You're I'm happy. You're happy. I'm a student. You're a teacher. I'm fine. You're great. I'm ready. You're my friend.",
           "audioLocale": "en-GB",
           "audioStatus": "synthetic_pending_review",
           "transcriptTemplate": "[[gap-01]] [[gap-02]] [[gap-03]] [[gap-04]] [[gap-05]] [[gap-06]] [[gap-07]] [[gap-08]] [[gap-09]] [[gap-10]]",
           "wordBank": [
             {
               "wordId": "english-pre-a1-m009-listening-word-01",
-              "word": "I am → I'm."
+              "word": "I am → I'm"
             },
             {
               "wordId": "english-pre-a1-m009-listening-word-02",
-              "word": "You are → You're."
+              "word": "You are → You're"
             },
             {
               "wordId": "english-pre-a1-m009-listening-word-03",
@@ -1691,7 +1497,7 @@
             }
           ],
           "interaction": "select_place_move_replace",
-          "audioTranscript": "tts:en-GB:I am → I'm. You are → You're. I'm happy. You're happy. I'm a student. You're a teacher. I'm fine. You're great. I'm ready. You're my friend.",
+          "audioTranscript": "tts:en-GB:I am → I'm You are → You're I'm happy. You're happy. I'm a student. You're a teacher. I'm fine. You're great. I'm ready. You're my friend.",
           "translation": "I am se contrae como I'm. You are se contrae como you're. Estoy feliz. Estás feliz. Soy estudiante. Eres profesor/a. Estoy bien. Eres genial. Estoy preparado/a. Eres mi amigo/a."
         },
         "items": [
@@ -1700,14 +1506,14 @@
             "position": 1,
             "gapToken": "[[gap-01]]",
             "expectedWordId": "english-pre-a1-m009-listening-word-01",
-            "answer": "I am → I'm."
+            "answer": "I am → I'm"
           },
           {
             "itemId": "english-pre-a1-m009-listening-ex01-i02",
             "position": 2,
             "gapToken": "[[gap-02]]",
             "expectedWordId": "english-pre-a1-m009-listening-word-02",
-            "answer": "You are → You're."
+            "answer": "You are → You're"
           },
           {
             "itemId": "english-pre-a1-m009-listening-ex01-i03",

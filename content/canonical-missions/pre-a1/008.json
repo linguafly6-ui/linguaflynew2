@@ -1,10 +1,11 @@
 {
   "schemaVersion": "1.2.0",
-  "contentVersion": 5,
+  "contentVersion": "2.0.0",
   "course": {
     "courseId": "english-pre-a1",
-    "level": "PRE-A1",
-    "language": "en-GB"
+    "level": "Pre-A1",
+    "language": "en-GB",
+    "title": "Pre-A1 · Usuario principiante"
   },
   "unit": {
     "unitId": "english-pre-a1-unit-01",
@@ -16,7 +17,8 @@
     "missionId": "english-pre-a1-m008",
     "unitId": "english-pre-a1-unit-01",
     "position": 8,
-    "title": "I am…"
+    "title": "I am…",
+    "objective": "Hablar de uno mismo con afirmaciones sobre estados e identidad."
   },
   "sections": [
     {
@@ -25,7 +27,7 @@
       "position": 1,
       "exercise": {
         "exerciseId": "english-pre-a1-m008-explore-ex01",
-        "type": "vocabulary_pairs",
+        "type": "lesson",
         "items": [
           {
             "itemId": "english-pre-a1-m008-explore-ex01-i01",
@@ -40,7 +42,7 @@
             "itemId": "english-pre-a1-m008-explore-ex01-i02",
             "position": 2,
             "english": "am",
-            "spanish": "soy/estoy",
+            "spanish": "soy / estoy",
             "pronunciationGuide": "am",
             "audio": "tts:en-GB:am",
             "audioStatus": "synthetic_pending_review"
@@ -49,7 +51,7 @@
             "itemId": "english-pre-a1-m008-explore-ex01-i03",
             "position": 3,
             "english": "be",
-            "spanish": "ser/estar",
+            "spanish": "ser / estar",
             "pronunciationGuide": "bí",
             "audio": "tts:en-GB:be",
             "audioStatus": "synthetic_pending_review"
@@ -76,7 +78,7 @@
             "itemId": "english-pre-a1-m008-explore-ex01-i06",
             "position": 6,
             "english": "tired",
-            "spanish": "cansado",
+            "spanish": "cansado/a",
             "pronunciationGuide": "TÁI-erd",
             "audio": "tts:en-GB:tired",
             "audioStatus": "synthetic_pending_review"
@@ -85,7 +87,7 @@
             "itemId": "english-pre-a1-m008-explore-ex01-i07",
             "position": 7,
             "english": "excited",
-            "spanish": "emocionado",
+            "spanish": "emocionado/a",
             "pronunciationGuide": "ik-SÁI-tid",
             "audio": "tts:en-GB:excited",
             "audioStatus": "synthetic_pending_review"
@@ -94,7 +96,7 @@
             "itemId": "english-pre-a1-m008-explore-ex01-i08",
             "position": 8,
             "english": "angry",
-            "spanish": "enfadado",
+            "spanish": "enfadado/a",
             "pronunciationGuide": "ÁNG-gri",
             "audio": "tts:en-GB:angry",
             "audioStatus": "synthetic_pending_review"
@@ -103,8 +105,8 @@
             "itemId": "english-pre-a1-m008-explore-ex01-i09",
             "position": 9,
             "english": "calm",
-            "spanish": "tranquilo",
-            "pronunciationGuide": "kám",
+            "spanish": "tranquilo/a",
+            "pronunciationGuide": "kam",
             "audio": "tts:en-GB:calm",
             "audioStatus": "synthetic_pending_review"
           },
@@ -116,79 +118,178 @@
             "pronunciationGuide": "STIÚ-dent",
             "audio": "tts:en-GB:student",
             "audioStatus": "synthetic_pending_review"
+          },
+          {
+            "itemId": "english-pre-a1-m008-explore-ex01-i11",
+            "position": 11,
+            "english": "teacher",
+            "spanish": "profesor/a",
+            "pronunciationGuide": "TÍ-cha",
+            "audio": "tts:en-GB:teacher",
+            "audioStatus": "synthetic_pending_review"
+          },
+          {
+            "itemId": "english-pre-a1-m008-explore-ex01-i12",
+            "position": 12,
+            "english": "boy",
+            "spanish": "niño",
+            "pronunciationGuide": "bói",
+            "audio": "tts:en-GB:boy",
+            "audioStatus": "synthetic_pending_review"
+          },
+          {
+            "itemId": "english-pre-a1-m008-explore-ex01-i13",
+            "position": 13,
+            "english": "girl",
+            "spanish": "niña",
+            "pronunciationGuide": "guérl",
+            "audio": "tts:en-GB:girl",
+            "audioStatus": "synthetic_pending_review"
+          },
+          {
+            "itemId": "english-pre-a1-m008-explore-ex01-i14",
+            "position": 14,
+            "english": "child",
+            "spanish": "niño/a",
+            "pronunciationGuide": "cháild",
+            "audio": "tts:en-GB:child",
+            "audioStatus": "synthetic_pending_review"
+          },
+          {
+            "itemId": "english-pre-a1-m008-explore-ex01-i15",
+            "position": 15,
+            "english": "friend",
+            "spanish": "amigo/a",
+            "pronunciationGuide": "frend",
+            "audio": "tts:en-GB:friend",
+            "audioStatus": "synthetic_pending_review"
+          },
+          {
+            "itemId": "english-pre-a1-m008-explore-ex01-i16",
+            "position": 16,
+            "english": "very",
+            "spanish": "muy",
+            "pronunciationGuide": "VÉ-ri",
+            "audio": "tts:en-GB:very",
+            "audioStatus": "synthetic_pending_review"
+          },
+          {
+            "itemId": "english-pre-a1-m008-explore-ex01-i17",
+            "position": 17,
+            "english": "today",
+            "spanish": "hoy",
+            "pronunciationGuide": "tu-DÉI",
+            "audio": "tts:en-GB:today",
+            "audioStatus": "synthetic_pending_review"
+          },
+          {
+            "itemId": "english-pre-a1-m008-explore-ex01-i18",
+            "position": 18,
+            "english": "here",
+            "spanish": "aquí",
+            "pronunciationGuide": "jíer",
+            "audio": "tts:en-GB:here",
+            "audioStatus": "synthetic_pending_review"
+          },
+          {
+            "itemId": "english-pre-a1-m008-explore-ex01-i19",
+            "position": 19,
+            "english": "at",
+            "spanish": "en",
+            "pronunciationGuide": "at",
+            "audio": "tts:en-GB:at",
+            "audioStatus": "synthetic_pending_review"
+          },
+          {
+            "itemId": "english-pre-a1-m008-explore-ex01-i20",
+            "position": 20,
+            "english": "school",
+            "spanish": "escuela",
+            "pronunciationGuide": "skúl",
+            "audio": "tts:en-GB:school",
+            "audioStatus": "synthetic_pending_review"
+          },
+          {
+            "itemId": "english-pre-a1-m008-explore-ex01-i21",
+            "position": 21,
+            "english": "a",
+            "spanish": "un / una",
+            "pronunciationGuide": "a",
+            "audio": "tts:en-GB:a",
+            "audioStatus": "synthetic_pending_review"
           }
         ],
         "theory": {
           "title": "I am…",
-          "explanation": "I am + estado o identidad habla de uno mismo. I significa yo y am acompaña a I. Ante una profesión singular contable se usa a: I am a student. Esta misión enseña afirmaciones; la negación y las preguntas vendrán después.",
-          "tip": "Comprende todos los modelos de Explore antes de comenzar las actividades.",
+          "explanation": "I am + estado o identidad. En esta misión no se evalúan negaciones ni preguntas. Se usa a ante un nombre contable singular como student o teacher.",
+          "tip": "Exploración es aprendizaje, no un examen. Revisa todos los bloques, palabras y modelos antes de practicar.",
           "patterns": [
             {
               "label": "Bloque 1",
-              "pattern": "Objetivo: I am….",
+              "pattern": "I significa yo",
               "examples": [
                 "I am happy."
               ]
             },
             {
               "label": "Bloque 2",
-              "pattern": "am — soy/estoy. Pronunciación: am.",
+              "pattern": "Am acompaña a I en I am",
               "examples": [
                 "I am sad."
               ]
             },
             {
               "label": "Bloque 3",
-              "pattern": "I am tired. — Estoy cansado/a..",
+              "pattern": "Be es el infinitivo ser o estar",
               "examples": [
                 "I am tired."
               ]
             },
             {
               "label": "Bloque 4",
-              "pattern": "I am excited. — Estoy emocionado/a..",
+              "pattern": "I am con happy, sad y tired",
               "examples": [
                 "I am excited."
               ]
             },
             {
               "label": "Bloque 5",
-              "pattern": "I am angry. — Estoy enfadado/a..",
+              "pattern": "I am con excited, angry y calm",
               "examples": [
                 "I am angry."
               ]
             },
             {
               "label": "Bloque 6",
-              "pattern": "I am calm. — Estoy tranquilo/a..",
+              "pattern": "I am con student y teacher",
               "examples": [
                 "I am calm."
               ]
             },
             {
               "label": "Bloque 7",
-              "pattern": "I am + estado o identidad habla de uno mismo. I significa yo y am acompaña a I. Ante una profesión singular contable se usa a: I am a student. Esta misión enseña afirmaciones; la negación y las preguntas vendrán después.",
+              "pattern": "Usar a ante student o teacher singular",
               "examples": [
                 "I am a student."
               ]
             },
             {
               "label": "Bloque 8",
-              "pattern": "I am a teacher. — Soy profesor/a..",
+              "pattern": "Boy, girl, child y friend nombran personas",
               "examples": [
                 "I am a teacher."
               ]
             },
             {
               "label": "Bloque 9",
-              "pattern": "I am here today. — Estoy aquí hoy..",
+              "pattern": "Very intensifica; today significa hoy",
               "examples": [
                 "I am here today."
               ]
             },
             {
               "label": "Bloque 10",
-              "pattern": "I am a friend. — Soy amigo/a.",
+              "pattern": "Afirmaciones con I am; negación y preguntas vendrán después",
               "examples": [
                 "I am a friend."
               ]
@@ -200,391 +301,89 @@
             {
               "english": "I am happy.",
               "spanish": "Estoy feliz.",
-              "note": "Modelo enseñado en Explore."
+              "pronunciationGuide": "ái am JÁ-pi",
+              "audio": "tts:en-GB:I am happy.",
+              "audioStatus": "synthetic_pending_review",
+              "note": "Expresión explicada en Explore."
             },
             {
               "english": "I am sad.",
               "spanish": "Estoy triste.",
-              "note": "Modelo enseñado en Explore."
+              "pronunciationGuide": "ái am sad",
+              "audio": "tts:en-GB:I am sad.",
+              "audioStatus": "synthetic_pending_review",
+              "note": "Expresión explicada en Explore."
             },
             {
               "english": "I am tired.",
               "spanish": "Estoy cansado/a.",
-              "note": "Modelo enseñado en Explore."
+              "pronunciationGuide": "ái am TÁI-erd",
+              "audio": "tts:en-GB:I am tired.",
+              "audioStatus": "synthetic_pending_review",
+              "note": "Expresión explicada en Explore."
             },
             {
               "english": "I am excited.",
               "spanish": "Estoy emocionado/a.",
-              "note": "Modelo enseñado en Explore."
+              "pronunciationGuide": "ái am ik-SÁI-tid",
+              "audio": "tts:en-GB:I am excited.",
+              "audioStatus": "synthetic_pending_review",
+              "note": "Expresión explicada en Explore."
             },
             {
               "english": "I am angry.",
               "spanish": "Estoy enfadado/a.",
-              "note": "Modelo enseñado en Explore."
+              "pronunciationGuide": "ái am ÁNG-gri",
+              "audio": "tts:en-GB:I am angry.",
+              "audioStatus": "synthetic_pending_review",
+              "note": "Expresión explicada en Explore."
             },
             {
               "english": "I am calm.",
               "spanish": "Estoy tranquilo/a.",
-              "note": "Modelo enseñado en Explore."
+              "pronunciationGuide": "ái am kam",
+              "audio": "tts:en-GB:I am calm.",
+              "audioStatus": "synthetic_pending_review",
+              "note": "Expresión explicada en Explore."
             },
             {
               "english": "I am a student.",
               "spanish": "Soy estudiante.",
-              "note": "Modelo enseñado en Explore."
+              "pronunciationGuide": "ái am a STIÚ-dent",
+              "audio": "tts:en-GB:I am a student.",
+              "audioStatus": "synthetic_pending_review",
+              "note": "Expresión explicada en Explore."
             },
             {
               "english": "I am a teacher.",
               "spanish": "Soy profesor/a.",
-              "note": "Modelo enseñado en Explore."
+              "pronunciationGuide": "ái am a TÍ-cha",
+              "audio": "tts:en-GB:I am a teacher.",
+              "audioStatus": "synthetic_pending_review",
+              "note": "Expresión explicada en Explore."
             },
             {
               "english": "I am here today.",
               "spanish": "Estoy aquí hoy.",
-              "note": "Modelo enseñado en Explore."
+              "pronunciationGuide": "ái am jíer tu-DÉI",
+              "audio": "tts:en-GB:I am here today.",
+              "audioStatus": "synthetic_pending_review",
+              "note": "Expresión explicada en Explore."
             },
             {
               "english": "I am a friend.",
-              "spanish": "Soy amigo/a",
-              "note": "Modelo enseñado en Explore."
-            },
-            {
-              "english": "I",
-              "spanish": "yo",
-              "note": "Pronunciación aproximada: ái."
-            },
-            {
-              "english": "am",
-              "spanish": "soy/estoy",
-              "note": "Pronunciación aproximada: am."
-            },
-            {
-              "english": "be",
-              "spanish": "ser/estar",
-              "note": "Pronunciación aproximada: bí."
-            },
-            {
-              "english": "happy",
-              "spanish": "feliz",
-              "note": "Pronunciación aproximada: JÁ-pi."
-            },
-            {
-              "english": "sad",
-              "spanish": "triste",
-              "note": "Pronunciación aproximada: sad."
-            },
-            {
-              "english": "tired",
-              "spanish": "cansado",
-              "note": "Pronunciación aproximada: TÁI-erd."
-            },
-            {
-              "english": "excited",
-              "spanish": "emocionado",
-              "note": "Pronunciación aproximada: ik-SÁI-tid."
-            },
-            {
-              "english": "angry",
-              "spanish": "enfadado",
-              "note": "Pronunciación aproximada: ÁNG-gri."
-            },
-            {
-              "english": "calm",
-              "spanish": "tranquilo",
-              "note": "Pronunciación aproximada: kám."
-            },
-            {
-              "english": "student",
-              "spanish": "estudiante",
-              "note": "Pronunciación aproximada: STIÚ-dent."
-            },
-            {
-              "english": "teacher",
-              "spanish": "profesor",
-              "note": "Pronunciación aproximada: TÍ-cha."
-            },
-            {
-              "english": "boy",
-              "spanish": "niño",
-              "note": "Pronunciación aproximada: bói."
-            },
-            {
-              "english": "girl",
-              "spanish": "niña",
-              "note": "Pronunciación aproximada: guérl."
-            },
-            {
-              "english": "child",
-              "spanish": "niño/a",
-              "note": "Pronunciación aproximada: cháild."
-            },
-            {
-              "english": "friend",
-              "spanish": "amigo",
-              "note": "Pronunciación aproximada: frend."
-            },
-            {
-              "english": "very",
-              "spanish": "muy",
-              "note": "Pronunciación aproximada: VÉ-ri."
-            },
-            {
-              "english": "today",
-              "spanish": "hoy",
-              "note": "Pronunciación aproximada: ta-DÉI."
-            },
-            {
-              "english": "here",
-              "spanish": "aquí",
-              "note": "Pronunciación aproximada: jíar."
-            },
-            {
-              "english": "at",
-              "spanish": "en/a",
-              "note": "Pronunciación aproximada: at."
-            },
-            {
-              "english": "school",
-              "spanish": "escuela",
-              "note": "Pronunciación aproximada: skúl."
-            },
-            {
-              "english": "a",
-              "spanish": "un/una",
-              "note": "Pronunciación aproximada: a."
+              "spanish": "Soy amigo/a.",
+              "pronunciationGuide": "ái am a frend",
+              "audio": "tts:en-GB:I am a friend.",
+              "audioStatus": "synthetic_pending_review",
+              "note": "Expresión explicada en Explore."
             }
           ],
           "grammar": [
             {
-              "english": "I am happy.",
-              "spanish": "Estoy feliz.",
-              "note": "I am…"
-            },
-            {
-              "english": "I am sad.",
-              "spanish": "Estoy triste.",
-              "note": "I am + estado o identidad habla de uno mismo. I significa yo y am acompaña a I. Ante una profesión singular contable se usa a: I am a student. Esta misión enseña afirmaciones; la negación y las preguntas vendrán después."
-            },
-            {
-              "english": "I am tired.",
-              "spanish": "Estoy cansado/a.",
-              "note": "I am + estado o identidad habla de uno mismo. I significa yo y am acompaña a I. Ante una profesión singular contable se usa a: I am a student. Esta misión enseña afirmaciones; la negación y las preguntas vendrán después."
-            },
-            {
-              "english": "I am excited.",
-              "spanish": "Estoy emocionado/a.",
-              "note": "I am + estado o identidad habla de uno mismo. I significa yo y am acompaña a I. Ante una profesión singular contable se usa a: I am a student. Esta misión enseña afirmaciones; la negación y las preguntas vendrán después."
-            },
-            {
-              "english": "I am angry.",
-              "spanish": "Estoy enfadado/a.",
-              "note": "I am + estado o identidad habla de uno mismo. I significa yo y am acompaña a I. Ante una profesión singular contable se usa a: I am a student. Esta misión enseña afirmaciones; la negación y las preguntas vendrán después."
-            },
-            {
-              "english": "I am calm.",
-              "spanish": "Estoy tranquilo/a.",
-              "note": "I am + estado o identidad habla de uno mismo. I significa yo y am acompaña a I. Ante una profesión singular contable se usa a: I am a student. Esta misión enseña afirmaciones; la negación y las preguntas vendrán después."
-            },
-            {
-              "english": "I am a student.",
-              "spanish": "Soy estudiante.",
-              "note": "I am + estado o identidad habla de uno mismo. I significa yo y am acompaña a I. Ante una profesión singular contable se usa a: I am a student. Esta misión enseña afirmaciones; la negación y las preguntas vendrán después."
-            },
-            {
-              "english": "I am a teacher.",
-              "spanish": "Soy profesor/a.",
-              "note": "I am + estado o identidad habla de uno mismo. I significa yo y am acompaña a I. Ante una profesión singular contable se usa a: I am a student. Esta misión enseña afirmaciones; la negación y las preguntas vendrán después."
-            },
-            {
-              "english": "I am here today.",
-              "spanish": "Estoy aquí hoy.",
-              "note": "I am + estado o identidad habla de uno mismo. I significa yo y am acompaña a I. Ante una profesión singular contable se usa a: I am a student. Esta misión enseña afirmaciones; la negación y las preguntas vendrán después."
-            },
-            {
-              "english": "I am a friend.",
-              "spanish": "Soy amigo/a",
-              "note": "I am + estado o identidad habla de uno mismo. I significa yo y am acompaña a I. Ante una profesión singular contable se usa a: I am a student. Esta misión enseña afirmaciones; la negación y las preguntas vendrán después."
-            }
-          ],
-          "reading": [
-            {
-              "english": "I am a student. I am happy today. I am excited. I am here at school.",
-              "spanish": "Soy estudiante. Estoy feliz hoy. Estoy emocionado/a. Estoy aquí en la escuela."
-            }
-          ],
-          "writing": [
-            {
-              "english": "I am happy.",
-              "spanish": "Estoy feliz.",
-              "note": "Modelo enseñado en Explore."
-            },
-            {
-              "english": "I am sad.",
-              "spanish": "Estoy triste.",
-              "note": "Modelo enseñado en Explore."
-            },
-            {
-              "english": "I am tired.",
-              "spanish": "Estoy cansado/a.",
-              "note": "Modelo enseñado en Explore."
-            },
-            {
-              "english": "I am excited.",
-              "spanish": "Estoy emocionado/a.",
-              "note": "Modelo enseñado en Explore."
-            },
-            {
-              "english": "I am angry.",
-              "spanish": "Estoy enfadado/a.",
-              "note": "Modelo enseñado en Explore."
-            },
-            {
-              "english": "I am calm.",
-              "spanish": "Estoy tranquilo/a.",
-              "note": "Modelo enseñado en Explore."
-            },
-            {
-              "english": "I am a student.",
-              "spanish": "Soy estudiante.",
-              "note": "Modelo enseñado en Explore."
-            },
-            {
-              "english": "I am a teacher.",
-              "spanish": "Soy profesor/a.",
-              "note": "Modelo enseñado en Explore."
-            },
-            {
-              "english": "I am here today.",
-              "spanish": "Estoy aquí hoy.",
-              "note": "Modelo enseñado en Explore."
-            },
-            {
-              "english": "I am a friend.",
-              "spanish": "Soy amigo/a",
-              "note": "Modelo enseñado en Explore."
-            }
-          ],
-          "speaking": [
-            {
-              "english": "I am happy.",
-              "spanish": "Estoy feliz.",
-              "note": "Modelo enseñado en Explore.",
-              "prompt": "Practica esta expresión.",
-              "promptSpanish": "Di la expresión en voz alta."
-            },
-            {
-              "english": "I am sad.",
-              "spanish": "Estoy triste.",
-              "note": "Modelo enseñado en Explore.",
-              "prompt": "Practica esta expresión.",
-              "promptSpanish": "Di la expresión en voz alta."
-            },
-            {
-              "english": "I am tired.",
-              "spanish": "Estoy cansado/a.",
-              "note": "Modelo enseñado en Explore.",
-              "prompt": "Practica esta expresión.",
-              "promptSpanish": "Di la expresión en voz alta."
-            },
-            {
-              "english": "I am excited.",
-              "spanish": "Estoy emocionado/a.",
-              "note": "Modelo enseñado en Explore.",
-              "prompt": "Practica esta expresión.",
-              "promptSpanish": "Di la expresión en voz alta."
-            },
-            {
-              "english": "I am angry.",
-              "spanish": "Estoy enfadado/a.",
-              "note": "Modelo enseñado en Explore.",
-              "prompt": "Practica esta expresión.",
-              "promptSpanish": "Di la expresión en voz alta."
-            },
-            {
-              "english": "I am calm.",
-              "spanish": "Estoy tranquilo/a.",
-              "note": "Modelo enseñado en Explore.",
-              "prompt": "Practica esta expresión.",
-              "promptSpanish": "Di la expresión en voz alta."
-            },
-            {
-              "english": "I am a student.",
-              "spanish": "Soy estudiante.",
-              "note": "Modelo enseñado en Explore.",
-              "prompt": "Practica esta expresión.",
-              "promptSpanish": "Di la expresión en voz alta."
-            },
-            {
-              "english": "I am a teacher.",
-              "spanish": "Soy profesor/a.",
-              "note": "Modelo enseñado en Explore.",
-              "prompt": "Practica esta expresión.",
-              "promptSpanish": "Di la expresión en voz alta."
-            },
-            {
-              "english": "I am here today.",
-              "spanish": "Estoy aquí hoy.",
-              "note": "Modelo enseñado en Explore.",
-              "prompt": "Practica esta expresión.",
-              "promptSpanish": "Di la expresión en voz alta."
-            },
-            {
-              "english": "I am a friend.",
-              "spanish": "Soy amigo/a",
-              "note": "Modelo enseñado en Explore.",
-              "prompt": "Practica esta expresión.",
-              "promptSpanish": "Di la expresión en voz alta."
-            }
-          ],
-          "listening": [
-            {
-              "english": "I am happy.",
-              "spanish": "Estoy feliz.",
-              "note": "Modelo enseñado en Explore."
-            },
-            {
-              "english": "I am sad.",
-              "spanish": "Estoy triste.",
-              "note": "Modelo enseñado en Explore."
-            },
-            {
-              "english": "I am tired.",
-              "spanish": "Estoy cansado/a.",
-              "note": "Modelo enseñado en Explore."
-            },
-            {
-              "english": "I am excited.",
-              "spanish": "Estoy emocionado/a.",
-              "note": "Modelo enseñado en Explore."
-            },
-            {
-              "english": "I am angry.",
-              "spanish": "Estoy enfadado/a.",
-              "note": "Modelo enseñado en Explore."
-            },
-            {
-              "english": "I am calm.",
-              "spanish": "Estoy tranquilo/a.",
-              "note": "Modelo enseñado en Explore."
-            },
-            {
-              "english": "I am a student.",
-              "spanish": "Soy estudiante.",
-              "note": "Modelo enseñado en Explore."
-            },
-            {
-              "english": "I am a teacher.",
-              "spanish": "Soy profesor/a.",
-              "note": "Modelo enseñado en Explore."
-            },
-            {
-              "english": "I am here today.",
-              "spanish": "Estoy aquí hoy.",
-              "note": "Modelo enseñado en Explore."
-            },
-            {
-              "english": "I am a friend.",
-              "spanish": "Soy amigo/a",
-              "note": "Modelo enseñado en Explore."
+              "english": "I am…",
+              "spanish": "Hablar de uno mismo con afirmaciones sobre estados e identidad.",
+              "note": "I am + estado o identidad. En esta misión no se evalúan negaciones ni preguntas. Se usa a ante un nombre contable singular como student o teacher."
             }
           ]
         },
@@ -593,72 +392,72 @@
             {
               "position": 1,
               "title": "Bloque 1",
-              "content": "Objetivo: I am….",
+              "content": "I significa yo",
               "example": "I am happy.",
               "translation": "Estoy feliz."
             },
             {
               "position": 2,
               "title": "Bloque 2",
-              "content": "am — soy/estoy. Pronunciación: am.",
+              "content": "Am acompaña a I en I am",
               "example": "I am sad.",
               "translation": "Estoy triste."
             },
             {
               "position": 3,
               "title": "Bloque 3",
-              "content": "I am tired. — Estoy cansado/a..",
+              "content": "Be es el infinitivo ser o estar",
               "example": "I am tired.",
               "translation": "Estoy cansado/a."
             },
             {
               "position": 4,
               "title": "Bloque 4",
-              "content": "I am excited. — Estoy emocionado/a..",
+              "content": "I am con happy, sad y tired",
               "example": "I am excited.",
               "translation": "Estoy emocionado/a."
             },
             {
               "position": 5,
               "title": "Bloque 5",
-              "content": "I am angry. — Estoy enfadado/a..",
+              "content": "I am con excited, angry y calm",
               "example": "I am angry.",
               "translation": "Estoy enfadado/a."
             },
             {
               "position": 6,
               "title": "Bloque 6",
-              "content": "I am calm. — Estoy tranquilo/a..",
+              "content": "I am con student y teacher",
               "example": "I am calm.",
               "translation": "Estoy tranquilo/a."
             },
             {
               "position": 7,
               "title": "Bloque 7",
-              "content": "I am + estado o identidad habla de uno mismo. I significa yo y am acompaña a I. Ante una profesión singular contable se usa a: I am a student. Esta misión enseña afirmaciones; la negación y las preguntas vendrán después.",
+              "content": "Usar a ante student o teacher singular",
               "example": "I am a student.",
               "translation": "Soy estudiante."
             },
             {
               "position": 8,
               "title": "Bloque 8",
-              "content": "I am a teacher. — Soy profesor/a..",
+              "content": "Boy, girl, child y friend nombran personas",
               "example": "I am a teacher.",
               "translation": "Soy profesor/a."
             },
             {
               "position": 9,
               "title": "Bloque 9",
-              "content": "I am here today. — Estoy aquí hoy..",
+              "content": "Very intensifica; today significa hoy",
               "example": "I am here today.",
               "translation": "Estoy aquí hoy."
             },
             {
               "position": 10,
               "title": "Bloque 10",
-              "content": "I am a friend. — Soy amigo/a.",
+              "content": "Afirmaciones con I am; negación y preguntas vendrán después",
               "example": "I am a friend.",
-              "translation": "Soy amigo/a"
+              "translation": "Soy amigo/a."
             }
           ]
         }
@@ -675,151 +474,151 @@
           {
             "itemId": "english-pre-a1-m008-practice-ex01-i01",
             "position": 1,
-            "prompt": "Elige la traducción de “I”.",
+            "prompt": "Elige el significado de “am”.",
             "evaluation": {
               "type": "single_choice"
             },
             "options": [
-              "soy/estoy",
-              "ser/estar",
-              "yo"
+              "soy / estoy",
+              "yo",
+              "ser / estar"
             ],
-            "answer": "yo",
+            "answer": "soy / estoy",
             "taskType": "vocabulary_translation"
           },
           {
             "itemId": "english-pre-a1-m008-practice-ex01-i02",
             "position": 2,
-            "prompt": "Elige la traducción de “am”.",
+            "prompt": "Elige el significado de “be”.",
             "evaluation": {
               "type": "single_choice"
             },
             "options": [
-              "feliz",
-              "soy/estoy",
-              "ser/estar"
+              "soy / estoy",
+              "ser / estar",
+              "feliz"
             ],
-            "answer": "soy/estoy",
+            "answer": "ser / estar",
             "taskType": "vocabulary_translation"
           },
           {
             "itemId": "english-pre-a1-m008-practice-ex01-i03",
             "position": 3,
-            "prompt": "Elige la traducción de “be”.",
+            "prompt": "Elige el significado de “happy”.",
             "evaluation": {
               "type": "single_choice"
             },
             "options": [
-              "ser/estar",
-              "feliz",
-              "triste"
-            ],
-            "answer": "ser/estar",
-            "taskType": "vocabulary_translation"
-          },
-          {
-            "itemId": "english-pre-a1-m008-practice-ex01-i04",
-            "position": 4,
-            "prompt": "Elige la traducción de “happy”.",
-            "evaluation": {
-              "type": "single_choice"
-            },
-            "options": [
+              "ser / estar",
               "triste",
-              "cansado",
               "feliz"
             ],
             "answer": "feliz",
             "taskType": "vocabulary_translation"
           },
           {
-            "itemId": "english-pre-a1-m008-practice-ex01-i05",
-            "position": 5,
-            "prompt": "Elige la traducción de “sad”.",
+            "itemId": "english-pre-a1-m008-practice-ex01-i04",
+            "position": 4,
+            "prompt": "Elige el significado de “sad”.",
             "evaluation": {
               "type": "single_choice"
             },
             "options": [
-              "emocionado",
               "triste",
-              "cansado"
+              "feliz",
+              "cansado/a"
             ],
             "answer": "triste",
             "taskType": "vocabulary_translation"
           },
           {
-            "itemId": "english-pre-a1-m008-practice-ex01-i06",
-            "position": 6,
-            "prompt": "Elige la traducción de “tired”.",
+            "itemId": "english-pre-a1-m008-practice-ex01-i05",
+            "position": 5,
+            "prompt": "Elige el significado de “tired”.",
             "evaluation": {
               "type": "single_choice"
             },
             "options": [
-              "cansado",
-              "emocionado",
-              "enfadado"
+              "triste",
+              "cansado/a",
+              "emocionado/a"
             ],
-            "answer": "cansado",
+            "answer": "cansado/a",
+            "taskType": "vocabulary_translation"
+          },
+          {
+            "itemId": "english-pre-a1-m008-practice-ex01-i06",
+            "position": 6,
+            "prompt": "Elige el significado de “excited”.",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "cansado/a",
+              "enfadado/a",
+              "emocionado/a"
+            ],
+            "answer": "emocionado/a",
             "taskType": "vocabulary_translation"
           },
           {
             "itemId": "english-pre-a1-m008-practice-ex01-i07",
             "position": 7,
-            "prompt": "Elige la traducción de “excited”.",
+            "prompt": "Elige el significado de “angry”.",
             "evaluation": {
               "type": "single_choice"
             },
             "options": [
-              "enfadado",
-              "tranquilo",
-              "emocionado"
+              "enfadado/a",
+              "emocionado/a",
+              "tranquilo/a"
             ],
-            "answer": "emocionado",
+            "answer": "enfadado/a",
             "taskType": "vocabulary_translation"
           },
           {
             "itemId": "english-pre-a1-m008-practice-ex01-i08",
             "position": 8,
-            "prompt": "Elige la traducción de “angry”.",
+            "prompt": "Elige el significado de “calm”.",
             "evaluation": {
               "type": "single_choice"
             },
             "options": [
-              "estudiante",
-              "enfadado",
-              "tranquilo"
+              "enfadado/a",
+              "tranquilo/a",
+              "estudiante"
             ],
-            "answer": "enfadado",
+            "answer": "tranquilo/a",
             "taskType": "vocabulary_translation"
           },
           {
             "itemId": "english-pre-a1-m008-practice-ex01-i09",
             "position": 9,
-            "prompt": "Elige la traducción de “calm”.",
+            "prompt": "Elige el significado de “student”.",
             "evaluation": {
               "type": "single_choice"
             },
             "options": [
-              "tranquilo",
-              "estudiante",
-              "profesor"
+              "tranquilo/a",
+              "profesor/a",
+              "estudiante"
             ],
-            "answer": "tranquilo",
+            "answer": "estudiante",
             "taskType": "vocabulary_translation"
           },
           {
             "itemId": "english-pre-a1-m008-practice-ex01-i10",
             "position": 10,
-            "prompt": "Elige la traducción de “student”.",
+            "prompt": "Elige el significado de “teacher”.",
             "evaluation": {
               "type": "single_choice"
             },
             "options": [
-              "profesor",
-              "niño",
-              "estudiante"
+              "profesor/a",
+              "estudiante",
+              "niño"
             ],
-            "answer": "estudiante",
+            "answer": "profesor/a",
             "taskType": "vocabulary_translation"
           }
         ]
@@ -833,78 +632,78 @@
         "exerciseId": "english-pre-a1-m008-grammar-ex01",
         "type": "grammar",
         "theory": {
-          "title": "I am…",
-          "explanation": "I am + estado o identidad habla de uno mismo. I significa yo y am acompaña a I. Ante una profesión singular contable se usa a: I am a student. Esta misión enseña afirmaciones; la negación y las preguntas vendrán después.",
-          "tip": "Comprende todos los modelos de Explore antes de comenzar las actividades.",
+          "title": "Expresiones y estructuras de la misión",
+          "explanation": "I am + estado o identidad. En esta misión no se evalúan negaciones ni preguntas. Se usa a ante un nombre contable singular como student o teacher.",
+          "tip": "Reconoce el modelo completo antes de utilizarlo.",
           "patterns": [
             {
-              "label": "Bloque 1",
-              "pattern": "I am…",
+              "label": "Modelo 1",
+              "pattern": "I am happy.",
               "examples": [
-                "I am happy."
+                "Estoy feliz."
               ]
             },
             {
-              "label": "Bloque 2",
-              "pattern": "I am + estado o identidad habla de uno mismo. I significa yo y am acompaña a I. Ante una profesión singular contable se usa a: I am a student. Esta misión enseña afirmaciones; la negación y las preguntas vendrán después.",
+              "label": "Modelo 2",
+              "pattern": "I am sad.",
               "examples": [
-                "I am sad."
+                "Estoy triste."
               ]
             },
             {
-              "label": "Bloque 3",
-              "pattern": "I am + estado o identidad habla de uno mismo. I significa yo y am acompaña a I. Ante una profesión singular contable se usa a: I am a student. Esta misión enseña afirmaciones; la negación y las preguntas vendrán después.",
+              "label": "Modelo 3",
+              "pattern": "I am tired.",
               "examples": [
-                "I am tired."
+                "Estoy cansado/a."
               ]
             },
             {
-              "label": "Bloque 4",
-              "pattern": "I am + estado o identidad habla de uno mismo. I significa yo y am acompaña a I. Ante una profesión singular contable se usa a: I am a student. Esta misión enseña afirmaciones; la negación y las preguntas vendrán después.",
+              "label": "Modelo 4",
+              "pattern": "I am excited.",
               "examples": [
-                "I am excited."
+                "Estoy emocionado/a."
               ]
             },
             {
-              "label": "Bloque 5",
-              "pattern": "I am + estado o identidad habla de uno mismo. I significa yo y am acompaña a I. Ante una profesión singular contable se usa a: I am a student. Esta misión enseña afirmaciones; la negación y las preguntas vendrán después.",
+              "label": "Modelo 5",
+              "pattern": "I am angry.",
               "examples": [
-                "I am angry."
+                "Estoy enfadado/a."
               ]
             },
             {
-              "label": "Bloque 6",
-              "pattern": "I am + estado o identidad habla de uno mismo. I significa yo y am acompaña a I. Ante una profesión singular contable se usa a: I am a student. Esta misión enseña afirmaciones; la negación y las preguntas vendrán después.",
+              "label": "Modelo 6",
+              "pattern": "I am calm.",
               "examples": [
-                "I am calm."
+                "Estoy tranquilo/a."
               ]
             },
             {
-              "label": "Bloque 7",
-              "pattern": "I am + estado o identidad habla de uno mismo. I significa yo y am acompaña a I. Ante una profesión singular contable se usa a: I am a student. Esta misión enseña afirmaciones; la negación y las preguntas vendrán después.",
+              "label": "Modelo 7",
+              "pattern": "I am a student.",
               "examples": [
-                "I am a student."
+                "Soy estudiante."
               ]
             },
             {
-              "label": "Bloque 8",
-              "pattern": "I am + estado o identidad habla de uno mismo. I significa yo y am acompaña a I. Ante una profesión singular contable se usa a: I am a student. Esta misión enseña afirmaciones; la negación y las preguntas vendrán después.",
+              "label": "Modelo 8",
+              "pattern": "I am a teacher.",
               "examples": [
-                "I am a teacher."
+                "Soy profesor/a."
               ]
             },
             {
-              "label": "Bloque 9",
-              "pattern": "I am + estado o identidad habla de uno mismo. I significa yo y am acompaña a I. Ante una profesión singular contable se usa a: I am a student. Esta misión enseña afirmaciones; la negación y las preguntas vendrán después.",
+              "label": "Modelo 9",
+              "pattern": "I am here today.",
               "examples": [
-                "I am here today."
+                "Estoy aquí hoy."
               ]
             },
             {
-              "label": "Bloque 10",
-              "pattern": "I am + estado o identidad habla de uno mismo. I significa yo y am acompaña a I. Ante una profesión singular contable se usa a: I am a student. Esta misión enseña afirmaciones; la negación y las preguntas vendrán después.",
+              "label": "Modelo 10",
+              "pattern": "I am a friend.",
               "examples": [
-                "I am a friend."
+                "Soy amigo/a."
               ]
             }
           ]
@@ -913,142 +712,152 @@
           {
             "itemId": "english-pre-a1-m008-grammar-ex01-i01",
             "position": 1,
-            "prompt": "Reconoce el modelo trabajado: I am happy.",
+            "prompt": "Selecciona el modelo que significa: “Estoy feliz.”",
             "evaluation": {
               "type": "single_choice"
             },
             "options": [
-              "I am sad.",
               "I am happy.",
+              "I am sad.",
               "I am tired."
             ],
-            "answer": "I am happy."
+            "answer": "I am happy.",
+            "taskType": "functional_language"
           },
           {
             "itemId": "english-pre-a1-m008-grammar-ex01-i02",
             "position": 2,
-            "prompt": "Reconoce el modelo trabajado: I am sad.",
+            "prompt": "Selecciona el modelo que significa: “Estoy triste.”",
             "evaluation": {
               "type": "single_choice"
             },
             "options": [
-              "I am excited.",
               "I am tired.",
-              "I am sad."
+              "I am sad.",
+              "I am excited."
             ],
-            "answer": "I am sad."
+            "answer": "I am sad.",
+            "taskType": "functional_language"
           },
           {
             "itemId": "english-pre-a1-m008-grammar-ex01-i03",
             "position": 3,
-            "prompt": "Reconoce el modelo trabajado: I am tired.",
+            "prompt": "Selecciona el modelo que significa: “Estoy cansado/a.”",
             "evaluation": {
               "type": "single_choice"
             },
             "options": [
-              "I am tired.",
               "I am excited.",
-              "I am angry."
+              "I am angry.",
+              "I am tired."
             ],
-            "answer": "I am tired."
+            "answer": "I am tired.",
+            "taskType": "functional_language"
           },
           {
             "itemId": "english-pre-a1-m008-grammar-ex01-i04",
             "position": 4,
-            "prompt": "Reconoce el modelo trabajado: I am excited.",
+            "prompt": "Selecciona el modelo que significa: “Estoy emocionado/a.”",
             "evaluation": {
               "type": "single_choice"
             },
             "options": [
-              "I am angry.",
               "I am excited.",
+              "I am angry.",
               "I am calm."
             ],
-            "answer": "I am excited."
+            "answer": "I am excited.",
+            "taskType": "functional_language"
           },
           {
             "itemId": "english-pre-a1-m008-grammar-ex01-i05",
             "position": 5,
-            "prompt": "Reconoce el modelo trabajado: I am angry.",
+            "prompt": "Selecciona el modelo que significa: “Estoy enfadado/a.”",
             "evaluation": {
               "type": "single_choice"
             },
             "options": [
-              "I am a student.",
               "I am calm.",
-              "I am angry."
+              "I am angry.",
+              "I am a student."
             ],
-            "answer": "I am angry."
+            "answer": "I am angry.",
+            "taskType": "functional_language"
           },
           {
             "itemId": "english-pre-a1-m008-grammar-ex01-i06",
             "position": 6,
-            "prompt": "Reconoce el modelo trabajado: I am calm.",
+            "prompt": "Selecciona el modelo que significa: “Estoy tranquilo/a.”",
             "evaluation": {
               "type": "single_choice"
             },
             "options": [
-              "I am calm.",
               "I am a student.",
-              "I am a teacher."
+              "I am a teacher.",
+              "I am calm."
             ],
-            "answer": "I am calm."
+            "answer": "I am calm.",
+            "taskType": "functional_language"
           },
           {
             "itemId": "english-pre-a1-m008-grammar-ex01-i07",
             "position": 7,
-            "prompt": "Reconoce el modelo trabajado: I am a student.",
+            "prompt": "Selecciona el modelo que significa: “Soy estudiante.”",
             "evaluation": {
               "type": "single_choice"
             },
             "options": [
-              "I am a teacher.",
               "I am a student.",
+              "I am a teacher.",
               "I am here today."
             ],
-            "answer": "I am a student."
+            "answer": "I am a student.",
+            "taskType": "functional_language"
           },
           {
             "itemId": "english-pre-a1-m008-grammar-ex01-i08",
             "position": 8,
-            "prompt": "Reconoce el modelo trabajado: I am a teacher.",
+            "prompt": "Selecciona el modelo que significa: “Soy profesor/a.”",
             "evaluation": {
               "type": "single_choice"
             },
             "options": [
-              "I am a friend.",
               "I am here today.",
-              "I am a teacher."
+              "I am a teacher.",
+              "I am a friend."
             ],
-            "answer": "I am a teacher."
+            "answer": "I am a teacher.",
+            "taskType": "functional_language"
           },
           {
             "itemId": "english-pre-a1-m008-grammar-ex01-i09",
             "position": 9,
-            "prompt": "Reconoce el modelo trabajado: I am here today.",
+            "prompt": "Selecciona el modelo que significa: “Estoy aquí hoy.”",
             "evaluation": {
               "type": "single_choice"
             },
             "options": [
-              "I am here today.",
               "I am a friend.",
-              "I am happy."
+              "I am happy.",
+              "I am here today."
             ],
-            "answer": "I am here today."
+            "answer": "I am here today.",
+            "taskType": "functional_language"
           },
           {
             "itemId": "english-pre-a1-m008-grammar-ex01-i10",
             "position": 10,
-            "prompt": "Reconoce el modelo trabajado: I am a friend.",
+            "prompt": "Selecciona el modelo que significa: “Soy amigo/a.”",
             "evaluation": {
               "type": "single_choice"
             },
             "options": [
-              "I am happy.",
               "I am a friend.",
+              "I am happy.",
               "I am sad."
             ],
-            "answer": "I am a friend."
+            "answer": "I am a friend.",
+            "taskType": "functional_language"
           }
         ]
       }
@@ -1067,23 +876,26 @@
             "word": "I",
             "translation": "yo",
             "pronunciationGuide": "ái",
-            "audio": "tts:en-GB:I"
+            "audio": "tts:en-GB:I",
+            "audioStatus": "synthetic_pending_review"
           },
           {
             "itemId": "english-pre-a1-m008-pronunciation-ex01-i02",
             "position": 2,
             "word": "am",
-            "translation": "soy/estoy",
+            "translation": "soy / estoy",
             "pronunciationGuide": "am",
-            "audio": "tts:en-GB:am"
+            "audio": "tts:en-GB:am",
+            "audioStatus": "synthetic_pending_review"
           },
           {
             "itemId": "english-pre-a1-m008-pronunciation-ex01-i03",
             "position": 3,
             "word": "be",
-            "translation": "ser/estar",
+            "translation": "ser / estar",
             "pronunciationGuide": "bí",
-            "audio": "tts:en-GB:be"
+            "audio": "tts:en-GB:be",
+            "audioStatus": "synthetic_pending_review"
           },
           {
             "itemId": "english-pre-a1-m008-pronunciation-ex01-i04",
@@ -1091,7 +903,8 @@
             "word": "happy",
             "translation": "feliz",
             "pronunciationGuide": "JÁ-pi",
-            "audio": "tts:en-GB:happy"
+            "audio": "tts:en-GB:happy",
+            "audioStatus": "synthetic_pending_review"
           },
           {
             "itemId": "english-pre-a1-m008-pronunciation-ex01-i05",
@@ -1099,39 +912,44 @@
             "word": "sad",
             "translation": "triste",
             "pronunciationGuide": "sad",
-            "audio": "tts:en-GB:sad"
+            "audio": "tts:en-GB:sad",
+            "audioStatus": "synthetic_pending_review"
           },
           {
             "itemId": "english-pre-a1-m008-pronunciation-ex01-i06",
             "position": 6,
             "word": "tired",
-            "translation": "cansado",
+            "translation": "cansado/a",
             "pronunciationGuide": "TÁI-erd",
-            "audio": "tts:en-GB:tired"
+            "audio": "tts:en-GB:tired",
+            "audioStatus": "synthetic_pending_review"
           },
           {
             "itemId": "english-pre-a1-m008-pronunciation-ex01-i07",
             "position": 7,
             "word": "excited",
-            "translation": "emocionado",
+            "translation": "emocionado/a",
             "pronunciationGuide": "ik-SÁI-tid",
-            "audio": "tts:en-GB:excited"
+            "audio": "tts:en-GB:excited",
+            "audioStatus": "synthetic_pending_review"
           },
           {
             "itemId": "english-pre-a1-m008-pronunciation-ex01-i08",
             "position": 8,
             "word": "angry",
-            "translation": "enfadado",
+            "translation": "enfadado/a",
             "pronunciationGuide": "ÁNG-gri",
-            "audio": "tts:en-GB:angry"
+            "audio": "tts:en-GB:angry",
+            "audioStatus": "synthetic_pending_review"
           },
           {
             "itemId": "english-pre-a1-m008-pronunciation-ex01-i09",
             "position": 9,
             "word": "calm",
-            "translation": "tranquilo",
-            "pronunciationGuide": "kám",
-            "audio": "tts:en-GB:calm"
+            "translation": "tranquilo/a",
+            "pronunciationGuide": "kam",
+            "audio": "tts:en-GB:calm",
+            "audioStatus": "synthetic_pending_review"
           },
           {
             "itemId": "english-pre-a1-m008-pronunciation-ex01-i10",
@@ -1139,7 +957,8 @@
             "word": "student",
             "translation": "estudiante",
             "pronunciationGuide": "STIÚ-dent",
-            "audio": "tts:en-GB:student"
+            "audio": "tts:en-GB:student",
+            "audioStatus": "synthetic_pending_review"
           }
         ]
       }
@@ -1153,148 +972,158 @@
         "type": "reading_comprehension",
         "content": {
           "passageId": "english-pre-a1-m008-reading-passage-01",
-          "passage": "I am a student. I am happy today. I am excited. I am here at school."
+          "passage": "I am happy. I am sad. I am tired. I am excited. I am angry. I am calm. I am a student. I am a teacher. I am here today. I am a friend."
         },
         "items": [
           {
             "itemId": "english-pre-a1-m008-reading-ex01-i01",
             "position": 1,
-            "prompt": "¿Qué tema presenta el texto?",
+            "prompt": "En el texto, ¿qué significa “I am happy.”?",
             "evaluation": {
               "type": "single_choice"
             },
             "options": [
-              "yo",
-              "soy/estoy",
-              "I am…"
+              "Estoy feliz.",
+              "Estoy triste.",
+              "Estoy cansado/a."
             ],
-            "answer": "I am…"
+            "answer": "Estoy feliz.",
+            "taskType": "reading_detail"
           },
           {
             "itemId": "english-pre-a1-m008-reading-ex01-i02",
             "position": 2,
-            "prompt": "¿Qué significa “am” en el texto?",
+            "prompt": "En el texto, ¿qué significa “I am sad.”?",
             "evaluation": {
               "type": "single_choice"
             },
             "options": [
-              "feliz",
-              "soy/estoy",
-              "ser/estar"
+              "Estoy cansado/a.",
+              "Estoy triste.",
+              "Estoy emocionado/a."
             ],
-            "answer": "soy/estoy"
+            "answer": "Estoy triste.",
+            "taskType": "reading_detail"
           },
           {
             "itemId": "english-pre-a1-m008-reading-ex01-i03",
             "position": 3,
-            "prompt": "¿Qué significa “be” en el texto?",
+            "prompt": "En el texto, ¿qué significa “I am tired.”?",
             "evaluation": {
               "type": "single_choice"
             },
             "options": [
-              "ser/estar",
-              "feliz",
-              "triste"
+              "Estoy emocionado/a.",
+              "Estoy enfadado/a.",
+              "Estoy cansado/a."
             ],
-            "answer": "ser/estar"
+            "answer": "Estoy cansado/a.",
+            "taskType": "reading_detail"
           },
           {
             "itemId": "english-pre-a1-m008-reading-ex01-i04",
             "position": 4,
-            "prompt": "¿Qué significa “happy” en el texto?",
+            "prompt": "En el texto, ¿qué significa “I am excited.”?",
             "evaluation": {
               "type": "single_choice"
             },
             "options": [
-              "triste",
-              "cansado",
-              "feliz"
+              "Estoy emocionado/a.",
+              "Estoy enfadado/a.",
+              "Estoy tranquilo/a."
             ],
-            "answer": "feliz"
+            "answer": "Estoy emocionado/a.",
+            "taskType": "reading_detail"
           },
           {
             "itemId": "english-pre-a1-m008-reading-ex01-i05",
             "position": 5,
-            "prompt": "¿Qué significa “sad” en el texto?",
+            "prompt": "En el texto, ¿qué significa “I am angry.”?",
             "evaluation": {
               "type": "single_choice"
             },
             "options": [
-              "emocionado",
-              "triste",
-              "cansado"
+              "Estoy tranquilo/a.",
+              "Estoy enfadado/a.",
+              "Soy estudiante."
             ],
-            "answer": "triste"
+            "answer": "Estoy enfadado/a.",
+            "taskType": "reading_detail"
           },
           {
             "itemId": "english-pre-a1-m008-reading-ex01-i06",
             "position": 6,
-            "prompt": "¿Qué significa “tired” en el texto?",
+            "prompt": "En el texto, ¿qué significa “I am calm.”?",
             "evaluation": {
               "type": "single_choice"
             },
             "options": [
-              "cansado",
-              "emocionado",
-              "enfadado"
+              "Soy estudiante.",
+              "Soy profesor/a.",
+              "Estoy tranquilo/a."
             ],
-            "answer": "cansado"
+            "answer": "Estoy tranquilo/a.",
+            "taskType": "reading_detail"
           },
           {
             "itemId": "english-pre-a1-m008-reading-ex01-i07",
             "position": 7,
-            "prompt": "¿Qué significa “excited” en el texto?",
+            "prompt": "En el texto, ¿qué significa “I am a student.”?",
             "evaluation": {
               "type": "single_choice"
             },
             "options": [
-              "enfadado",
-              "tranquilo",
-              "emocionado"
+              "Soy estudiante.",
+              "Soy profesor/a.",
+              "Estoy aquí hoy."
             ],
-            "answer": "emocionado"
+            "answer": "Soy estudiante.",
+            "taskType": "reading_detail"
           },
           {
             "itemId": "english-pre-a1-m008-reading-ex01-i08",
             "position": 8,
-            "prompt": "¿Qué significa “angry” en el texto?",
+            "prompt": "En el texto, ¿qué significa “I am a teacher.”?",
             "evaluation": {
               "type": "single_choice"
             },
             "options": [
-              "estudiante",
-              "enfadado",
-              "tranquilo"
+              "Estoy aquí hoy.",
+              "Soy profesor/a.",
+              "Soy amigo/a."
             ],
-            "answer": "enfadado"
+            "answer": "Soy profesor/a.",
+            "taskType": "reading_detail"
           },
           {
             "itemId": "english-pre-a1-m008-reading-ex01-i09",
             "position": 9,
-            "prompt": "¿Qué significa “calm” en el texto?",
+            "prompt": "En el texto, ¿qué significa “I am here today.”?",
             "evaluation": {
               "type": "single_choice"
             },
             "options": [
-              "tranquilo",
-              "estudiante",
-              "profesor"
+              "Soy amigo/a.",
+              "Estoy feliz.",
+              "Estoy aquí hoy."
             ],
-            "answer": "tranquilo"
+            "answer": "Estoy aquí hoy.",
+            "taskType": "reading_detail"
           },
           {
             "itemId": "english-pre-a1-m008-reading-ex01-i10",
             "position": 10,
-            "prompt": "¿Qué significa “student” en el texto?",
+            "prompt": "En el texto, ¿qué significa “I am a friend.”?",
             "evaluation": {
               "type": "single_choice"
             },
             "options": [
-              "profesor",
-              "niño",
-              "estudiante"
+              "Soy amigo/a.",
+              "Estoy feliz.",
+              "Estoy triste."
             ],
-            "answer": "estudiante"
+            "answer": "Soy amigo/a.",
+            "taskType": "reading_detail"
           }
         ]
       }
@@ -1511,10 +1340,10 @@
           {
             "itemId": "english-pre-a1-m008-speaking-ex01-i01",
             "position": 1,
-            "prompt": "Di en voz alta esta expresión.",
-            "promptSpanish": "Practica el modelo de la misión.",
+            "prompt": "Di en voz alta el modelo.",
+            "promptSpanish": "Practica: Estoy feliz.",
             "modelAnswer": "I am happy.",
-            "translation": "I am happy.",
+            "translation": "Estoy feliz.",
             "evaluation": {
               "type": "transcription_feedback",
               "transcriptionSeparateFromPronunciation": true
@@ -1523,10 +1352,10 @@
           {
             "itemId": "english-pre-a1-m008-speaking-ex01-i02",
             "position": 2,
-            "prompt": "Di en voz alta esta expresión.",
-            "promptSpanish": "Practica el modelo de la misión.",
+            "prompt": "Di en voz alta el modelo.",
+            "promptSpanish": "Practica: Estoy triste.",
             "modelAnswer": "I am sad.",
-            "translation": "I am sad.",
+            "translation": "Estoy triste.",
             "evaluation": {
               "type": "transcription_feedback",
               "transcriptionSeparateFromPronunciation": true
@@ -1535,10 +1364,10 @@
           {
             "itemId": "english-pre-a1-m008-speaking-ex01-i03",
             "position": 3,
-            "prompt": "Di en voz alta esta expresión.",
-            "promptSpanish": "Practica el modelo de la misión.",
+            "prompt": "Di en voz alta el modelo.",
+            "promptSpanish": "Practica: Estoy cansado/a.",
             "modelAnswer": "I am tired.",
-            "translation": "I am tired.",
+            "translation": "Estoy cansado/a.",
             "evaluation": {
               "type": "transcription_feedback",
               "transcriptionSeparateFromPronunciation": true
@@ -1547,10 +1376,10 @@
           {
             "itemId": "english-pre-a1-m008-speaking-ex01-i04",
             "position": 4,
-            "prompt": "Di en voz alta esta expresión.",
-            "promptSpanish": "Practica el modelo de la misión.",
+            "prompt": "Di en voz alta el modelo.",
+            "promptSpanish": "Practica: Estoy emocionado/a.",
             "modelAnswer": "I am excited.",
-            "translation": "I am excited.",
+            "translation": "Estoy emocionado/a.",
             "evaluation": {
               "type": "transcription_feedback",
               "transcriptionSeparateFromPronunciation": true
@@ -1559,10 +1388,10 @@
           {
             "itemId": "english-pre-a1-m008-speaking-ex01-i05",
             "position": 5,
-            "prompt": "Di en voz alta esta expresión.",
-            "promptSpanish": "Practica el modelo de la misión.",
+            "prompt": "Di en voz alta el modelo.",
+            "promptSpanish": "Practica: Estoy enfadado/a.",
             "modelAnswer": "I am angry.",
-            "translation": "I am angry.",
+            "translation": "Estoy enfadado/a.",
             "evaluation": {
               "type": "transcription_feedback",
               "transcriptionSeparateFromPronunciation": true
@@ -1571,10 +1400,10 @@
           {
             "itemId": "english-pre-a1-m008-speaking-ex01-i06",
             "position": 6,
-            "prompt": "Di en voz alta esta expresión.",
-            "promptSpanish": "Practica el modelo de la misión.",
+            "prompt": "Di en voz alta el modelo.",
+            "promptSpanish": "Practica: Estoy tranquilo/a.",
             "modelAnswer": "I am calm.",
-            "translation": "I am calm.",
+            "translation": "Estoy tranquilo/a.",
             "evaluation": {
               "type": "transcription_feedback",
               "transcriptionSeparateFromPronunciation": true
@@ -1583,10 +1412,10 @@
           {
             "itemId": "english-pre-a1-m008-speaking-ex01-i07",
             "position": 7,
-            "prompt": "Di en voz alta esta expresión.",
-            "promptSpanish": "Practica el modelo de la misión.",
+            "prompt": "Di en voz alta el modelo.",
+            "promptSpanish": "Practica: Soy estudiante.",
             "modelAnswer": "I am a student.",
-            "translation": "I am a student.",
+            "translation": "Soy estudiante.",
             "evaluation": {
               "type": "transcription_feedback",
               "transcriptionSeparateFromPronunciation": true
@@ -1595,10 +1424,10 @@
           {
             "itemId": "english-pre-a1-m008-speaking-ex01-i08",
             "position": 8,
-            "prompt": "Di en voz alta esta expresión.",
-            "promptSpanish": "Practica el modelo de la misión.",
+            "prompt": "Di en voz alta el modelo.",
+            "promptSpanish": "Practica: Soy profesor/a.",
             "modelAnswer": "I am a teacher.",
-            "translation": "I am a teacher.",
+            "translation": "Soy profesor/a.",
             "evaluation": {
               "type": "transcription_feedback",
               "transcriptionSeparateFromPronunciation": true
@@ -1607,10 +1436,10 @@
           {
             "itemId": "english-pre-a1-m008-speaking-ex01-i09",
             "position": 9,
-            "prompt": "Di en voz alta esta expresión.",
-            "promptSpanish": "Practica el modelo de la misión.",
+            "prompt": "Di en voz alta el modelo.",
+            "promptSpanish": "Practica: Estoy aquí hoy.",
             "modelAnswer": "I am here today.",
-            "translation": "I am here today.",
+            "translation": "Estoy aquí hoy.",
             "evaluation": {
               "type": "transcription_feedback",
               "transcriptionSeparateFromPronunciation": true
@@ -1619,10 +1448,10 @@
           {
             "itemId": "english-pre-a1-m008-speaking-ex01-i10",
             "position": 10,
-            "prompt": "Di en voz alta esta expresión.",
-            "promptSpanish": "Practica el modelo de la misión.",
+            "prompt": "Di en voz alta el modelo.",
+            "promptSpanish": "Practica: Soy amigo/a.",
             "modelAnswer": "I am a friend.",
-            "translation": "I am a friend.",
+            "translation": "Soy amigo/a.",
             "evaluation": {
               "type": "transcription_feedback",
               "transcriptionSeparateFromPronunciation": true
@@ -1687,7 +1516,7 @@
           ],
           "interaction": "select_place_move_replace",
           "audioTranscript": "tts:en-GB:I am happy. I am sad. I am tired. I am excited. I am angry. I am calm. I am a student. I am a teacher. I am here today. I am a friend.",
-          "translation": "Estoy feliz. Estoy triste. Estoy cansado/a. Estoy emocionado/a. Estoy enfadado/a. Estoy tranquilo/a. Soy estudiante. Soy profesor/a. Estoy aquí hoy. Soy amigo/a"
+          "translation": "Estoy feliz. Estoy triste. Estoy cansado/a. Estoy emocionado/a. Estoy enfadado/a. Estoy tranquilo/a. Soy estudiante. Soy profesor/a. Estoy aquí hoy. Soy amigo/a."
         },
         "items": [
           {

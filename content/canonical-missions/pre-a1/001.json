@@ -1,10 +1,11 @@
 {
   "schemaVersion": "1.2.0",
-  "contentVersion": 5,
+  "contentVersion": "2.0.0",
   "course": {
     "courseId": "english-pre-a1",
-    "level": "PRE-A1",
-    "language": "en-GB"
+    "level": "Pre-A1",
+    "language": "en-GB",
+    "title": "Pre-A1 · Usuario principiante"
   },
   "unit": {
     "unitId": "english-pre-a1-unit-01",
@@ -16,7 +17,8 @@
     "missionId": "english-pre-a1-m001",
     "unitId": "english-pre-a1-unit-01",
     "position": 1,
-    "title": "Hello!"
+    "title": "Hello!",
+    "objective": "Saludar y despedirse."
   },
   "sections": [
     {
@@ -25,167 +27,127 @@
       "position": 1,
       "exercise": {
         "exerciseId": "english-pre-a1-m001-explore-ex01",
-        "type": "vocabulary_pairs",
+        "type": "lesson",
         "items": [
           {
             "itemId": "english-pre-a1-m001-explore-ex01-i01",
             "position": 1,
-            "english": "Hello",
+            "english": "hello",
             "spanish": "hola",
             "pronunciationGuide": "jelóu",
-            "audio": "tts:en-GB:Hello",
+            "audio": "tts:en-GB:hello",
             "audioStatus": "synthetic_pending_review"
           },
           {
             "itemId": "english-pre-a1-m001-explore-ex01-i02",
             "position": 2,
-            "english": "Hi",
-            "spanish": "hola",
+            "english": "hi",
+            "spanish": "hola informal",
             "pronunciationGuide": "jai",
-            "audio": "tts:en-GB:Hi",
+            "audio": "tts:en-GB:hi",
             "audioStatus": "synthetic_pending_review"
           },
           {
             "itemId": "english-pre-a1-m001-explore-ex01-i03",
             "position": 3,
-            "english": "Goodbye",
+            "english": "goodbye",
             "spanish": "adiós",
             "pronunciationGuide": "gud-BÁI",
-            "audio": "tts:en-GB:Goodbye",
+            "audio": "tts:en-GB:goodbye",
             "audioStatus": "synthetic_pending_review"
           },
           {
             "itemId": "english-pre-a1-m001-explore-ex01-i04",
             "position": 4,
-            "english": "Bye",
-            "spanish": "adiós",
+            "english": "bye",
+            "spanish": "chao",
             "pronunciationGuide": "BÁI",
-            "audio": "tts:en-GB:Bye",
+            "audio": "tts:en-GB:bye",
             "audioStatus": "synthetic_pending_review"
           },
           {
             "itemId": "english-pre-a1-m001-explore-ex01-i05",
             "position": 5,
-            "english": "See you",
+            "english": "see you",
             "spanish": "hasta luego",
             "pronunciationGuide": "sí iu",
-            "audio": "tts:en-GB:See you",
+            "audio": "tts:en-GB:see you",
             "audioStatus": "synthetic_pending_review"
-          },
-          {
-            "itemId": "english-pre-a1-m001-explore-ex01-i06",
-            "position": 6,
-            "english": "Hello!",
-            "spanish": "¡Hola!",
-            "pronunciationGuide": "jelóu",
-            "audio": "tts:en-GB:Hello!"
-          },
-          {
-            "itemId": "english-pre-a1-m001-explore-ex01-i07",
-            "position": 7,
-            "english": "Hello!",
-            "spanish": "¡Hola!",
-            "pronunciationGuide": "jelóu",
-            "audio": "tts:en-GB:Hello!"
-          },
-          {
-            "itemId": "english-pre-a1-m001-explore-ex01-i08",
-            "position": 8,
-            "english": "Hello!",
-            "spanish": "¡Hola!",
-            "pronunciationGuide": "jelóu",
-            "audio": "tts:en-GB:Hello!"
-          },
-          {
-            "itemId": "english-pre-a1-m001-explore-ex01-i09",
-            "position": 9,
-            "english": "Hello!",
-            "spanish": "¡Hola!",
-            "pronunciationGuide": "jelóu",
-            "audio": "tts:en-GB:Hello!"
-          },
-          {
-            "itemId": "english-pre-a1-m001-explore-ex01-i10",
-            "position": 10,
-            "english": "Hello!",
-            "spanish": "¡Hola!",
-            "pronunciationGuide": "jelóu",
-            "audio": "tts:en-GB:Hello!"
           }
         ],
         "theory": {
           "title": "Hello!",
-          "explanation": "Saludos: Hello es neutro y Hi informal. Goodbye es una despedida completa y Bye informal. See you es una despedida amistosa.",
-          "tip": "Comprende todos los modelos de Explore antes de comenzar las actividades.",
+          "explanation": "Hello es neutro; Hi es informal. Goodbye es una despedida completa y Bye es más informal. See you equivale a hasta luego.",
+          "tip": "Exploración es aprendizaje, no un examen. Revisa todos los bloques, palabras y modelos antes de practicar.",
           "patterns": [
             {
               "label": "Bloque 1",
-              "pattern": "Objetivo: Hello!.",
+              "pattern": "Saludar con Hello y Hi",
               "examples": [
                 "Hello!"
               ]
             },
             {
               "label": "Bloque 2",
-              "pattern": "Hi — hola. Pronunciación: jai.",
+              "pattern": "Diferencia entre saludo neutro e informal",
               "examples": [
                 "Hi!"
               ]
             },
             {
               "label": "Bloque 3",
-              "pattern": "Goodbye! — ¡Adiós!.",
+              "pattern": "Despedirse con Goodbye",
               "examples": [
                 "Goodbye!"
               ]
             },
             {
               "label": "Bloque 4",
-              "pattern": "Bye! — ¡Chao!.",
+              "pattern": "Despedirse informalmente con Bye",
               "examples": [
                 "Bye!"
               ]
             },
             {
               "label": "Bloque 5",
-              "pattern": "See you! — ¡Hasta luego!.",
+              "pattern": "Usar See you para despedidas amistosas",
               "examples": [
                 "See you!"
               ]
             },
             {
               "label": "Bloque 6",
-              "pattern": "Hello — hola.",
+              "pattern": "Hello significa hola",
               "examples": [
-                "Hello"
+                "Hello!"
               ]
             },
             {
               "label": "Bloque 7",
-              "pattern": "Saludos: Hello es neutro y Hi informal. Goodbye es una despedida completa y Bye informal. See you es una despedida amistosa.",
+              "pattern": "Hi es un saludo breve e informal",
               "examples": [
-                "Hi"
+                "Hi!"
               ]
             },
             {
               "label": "Bloque 8",
-              "pattern": "Goodbye — adiós.",
+              "pattern": "Goodbye es una despedida completa",
               "examples": [
-                "Goodbye"
+                "Goodbye!"
               ]
             },
             {
               "label": "Bloque 9",
-              "pattern": "Bye — adiós.",
+              "pattern": "Bye es una despedida breve",
               "examples": [
-                "Bye"
+                "Bye!"
               ]
             },
             {
               "label": "Bloque 10",
-              "pattern": "See you — hasta luego.",
+              "pattern": "Elegir el saludo según el momento",
               "examples": [
-                "See you"
+                "See you!"
               ]
             }
           ]
@@ -195,201 +157,49 @@
             {
               "english": "Hello!",
               "spanish": "¡Hola!",
-              "note": "Modelo enseñado en Explore."
+              "pronunciationGuide": "jelóu",
+              "audio": "tts:en-GB:Hello!",
+              "audioStatus": "synthetic_pending_review",
+              "note": "Expresión explicada en Explore."
             },
             {
               "english": "Hi!",
               "spanish": "¡Hola!",
-              "note": "Modelo enseñado en Explore."
+              "pronunciationGuide": "jai",
+              "audio": "tts:en-GB:Hi!",
+              "audioStatus": "synthetic_pending_review",
+              "note": "Expresión explicada en Explore."
             },
             {
               "english": "Goodbye!",
               "spanish": "¡Adiós!",
-              "note": "Modelo enseñado en Explore."
+              "pronunciationGuide": "gud-BÁI",
+              "audio": "tts:en-GB:Goodbye!",
+              "audioStatus": "synthetic_pending_review",
+              "note": "Expresión explicada en Explore."
             },
             {
               "english": "Bye!",
               "spanish": "¡Chao!",
-              "note": "Modelo enseñado en Explore."
+              "pronunciationGuide": "BÁI",
+              "audio": "tts:en-GB:Bye!",
+              "audioStatus": "synthetic_pending_review",
+              "note": "Expresión explicada en Explore."
             },
             {
               "english": "See you!",
               "spanish": "¡Hasta luego!",
-              "note": "Modelo enseñado en Explore."
-            },
-            {
-              "english": "Hello",
-              "spanish": "hola",
-              "note": "Pronunciación aproximada: jelóu."
-            },
-            {
-              "english": "Hi",
-              "spanish": "hola",
-              "note": "Pronunciación aproximada: jai."
-            },
-            {
-              "english": "Goodbye",
-              "spanish": "adiós",
-              "note": "Pronunciación aproximada: gud-BÁI."
-            },
-            {
-              "english": "Bye",
-              "spanish": "adiós",
-              "note": "Pronunciación aproximada: BÁI."
-            },
-            {
-              "english": "See you",
-              "spanish": "hasta luego",
-              "note": "Pronunciación aproximada: sí iu."
+              "pronunciationGuide": "sí iu",
+              "audio": "tts:en-GB:See you!",
+              "audioStatus": "synthetic_pending_review",
+              "note": "Expresión explicada en Explore."
             }
           ],
           "grammar": [
             {
               "english": "Hello!",
-              "spanish": "¡Hola!",
-              "note": "Hello!"
-            },
-            {
-              "english": "Hi!",
-              "spanish": "¡Hola!",
-              "note": "Saludos: Hello es neutro y Hi informal. Goodbye es una despedida completa y Bye informal. See you es una despedida amistosa."
-            },
-            {
-              "english": "Goodbye!",
-              "spanish": "¡Adiós!",
-              "note": "Saludos: Hello es neutro y Hi informal. Goodbye es una despedida completa y Bye informal. See you es una despedida amistosa."
-            },
-            {
-              "english": "Bye!",
-              "spanish": "¡Chao!",
-              "note": "Saludos: Hello es neutro y Hi informal. Goodbye es una despedida completa y Bye informal. See you es una despedida amistosa."
-            },
-            {
-              "english": "See you!",
-              "spanish": "¡Hasta luego!",
-              "note": "Saludos: Hello es neutro y Hi informal. Goodbye es una despedida completa y Bye informal. See you es una despedida amistosa."
-            },
-            {
-              "english": "Hello!",
-              "spanish": "¡Hola!",
-              "note": "Saludos: Hello es neutro y Hi informal. Goodbye es una despedida completa y Bye informal. See you es una despedida amistosa."
-            },
-            {
-              "english": "Hi!",
-              "spanish": "¡Hola!",
-              "note": "Saludos: Hello es neutro y Hi informal. Goodbye es una despedida completa y Bye informal. See you es una despedida amistosa."
-            },
-            {
-              "english": "Goodbye!",
-              "spanish": "¡Adiós!",
-              "note": "Saludos: Hello es neutro y Hi informal. Goodbye es una despedida completa y Bye informal. See you es una despedida amistosa."
-            },
-            {
-              "english": "Bye!",
-              "spanish": "¡Chao!",
-              "note": "Saludos: Hello es neutro y Hi informal. Goodbye es una despedida completa y Bye informal. See you es una despedida amistosa."
-            },
-            {
-              "english": "See you!",
-              "spanish": "¡Hasta luego!",
-              "note": "Saludos: Hello es neutro y Hi informal. Goodbye es una despedida completa y Bye informal. See you es una despedida amistosa."
-            }
-          ],
-          "reading": [
-            {
-              "english": "Hello! Hi! Goodbye! Bye! See you!",
-              "spanish": "¡Hola! ¡Hola! ¡Adiós! ¡Chao! ¡Hasta luego!"
-            }
-          ],
-          "writing": [
-            {
-              "english": "Hello!",
-              "spanish": "¡Hola!",
-              "note": "Modelo enseñado en Explore."
-            },
-            {
-              "english": "Hi!",
-              "spanish": "¡Hola!",
-              "note": "Modelo enseñado en Explore."
-            },
-            {
-              "english": "Goodbye!",
-              "spanish": "¡Adiós!",
-              "note": "Modelo enseñado en Explore."
-            },
-            {
-              "english": "Bye!",
-              "spanish": "¡Chao!",
-              "note": "Modelo enseñado en Explore."
-            },
-            {
-              "english": "See you!",
-              "spanish": "¡Hasta luego!",
-              "note": "Modelo enseñado en Explore."
-            }
-          ],
-          "speaking": [
-            {
-              "english": "Hello!",
-              "spanish": "¡Hola!",
-              "note": "Modelo enseñado en Explore.",
-              "prompt": "Practica esta expresión.",
-              "promptSpanish": "Di la expresión en voz alta."
-            },
-            {
-              "english": "Hi!",
-              "spanish": "¡Hola!",
-              "note": "Modelo enseñado en Explore.",
-              "prompt": "Practica esta expresión.",
-              "promptSpanish": "Di la expresión en voz alta."
-            },
-            {
-              "english": "Goodbye!",
-              "spanish": "¡Adiós!",
-              "note": "Modelo enseñado en Explore.",
-              "prompt": "Practica esta expresión.",
-              "promptSpanish": "Di la expresión en voz alta."
-            },
-            {
-              "english": "Bye!",
-              "spanish": "¡Chao!",
-              "note": "Modelo enseñado en Explore.",
-              "prompt": "Practica esta expresión.",
-              "promptSpanish": "Di la expresión en voz alta."
-            },
-            {
-              "english": "See you!",
-              "spanish": "¡Hasta luego!",
-              "note": "Modelo enseñado en Explore.",
-              "prompt": "Practica esta expresión.",
-              "promptSpanish": "Di la expresión en voz alta."
-            }
-          ],
-          "listening": [
-            {
-              "english": "Hello!",
-              "spanish": "¡Hola!",
-              "note": "Modelo enseñado en Explore."
-            },
-            {
-              "english": "Hi!",
-              "spanish": "¡Hola!",
-              "note": "Modelo enseñado en Explore."
-            },
-            {
-              "english": "Goodbye!",
-              "spanish": "¡Adiós!",
-              "note": "Modelo enseñado en Explore."
-            },
-            {
-              "english": "Bye!",
-              "spanish": "¡Chao!",
-              "note": "Modelo enseñado en Explore."
-            },
-            {
-              "english": "See you!",
-              "spanish": "¡Hasta luego!",
-              "note": "Modelo enseñado en Explore."
+              "spanish": "Saludar y despedirse.",
+              "note": "Hello es neutro; Hi es informal. Goodbye es una despedida completa y Bye es más informal. See you equivale a hasta luego."
             }
           ]
         },
@@ -398,72 +208,72 @@
             {
               "position": 1,
               "title": "Bloque 1",
-              "content": "Objetivo: Hello!.",
+              "content": "Saludar con Hello y Hi",
               "example": "Hello!",
               "translation": "¡Hola!"
             },
             {
               "position": 2,
               "title": "Bloque 2",
-              "content": "Hi — hola. Pronunciación: jai.",
+              "content": "Diferencia entre saludo neutro e informal",
               "example": "Hi!",
               "translation": "¡Hola!"
             },
             {
               "position": 3,
               "title": "Bloque 3",
-              "content": "Goodbye! — ¡Adiós!.",
+              "content": "Despedirse con Goodbye",
               "example": "Goodbye!",
               "translation": "¡Adiós!"
             },
             {
               "position": 4,
               "title": "Bloque 4",
-              "content": "Bye! — ¡Chao!.",
+              "content": "Despedirse informalmente con Bye",
               "example": "Bye!",
               "translation": "¡Chao!"
             },
             {
               "position": 5,
               "title": "Bloque 5",
-              "content": "See you! — ¡Hasta luego!.",
+              "content": "Usar See you para despedidas amistosas",
               "example": "See you!",
               "translation": "¡Hasta luego!"
             },
             {
               "position": 6,
               "title": "Bloque 6",
-              "content": "Hello — hola.",
-              "example": "Hello",
-              "translation": "hola"
+              "content": "Hello significa hola",
+              "example": "Hello!",
+              "translation": "¡Hola!"
             },
             {
               "position": 7,
               "title": "Bloque 7",
-              "content": "Saludos: Hello es neutro y Hi informal. Goodbye es una despedida completa y Bye informal. See you es una despedida amistosa.",
-              "example": "Hi",
-              "translation": "hola"
+              "content": "Hi es un saludo breve e informal",
+              "example": "Hi!",
+              "translation": "¡Hola!"
             },
             {
               "position": 8,
               "title": "Bloque 8",
-              "content": "Goodbye — adiós.",
-              "example": "Goodbye",
-              "translation": "adiós"
+              "content": "Goodbye es una despedida completa",
+              "example": "Goodbye!",
+              "translation": "¡Adiós!"
             },
             {
               "position": 9,
               "title": "Bloque 9",
-              "content": "Bye — adiós.",
-              "example": "Bye",
-              "translation": "adiós"
+              "content": "Bye es una despedida breve",
+              "example": "Bye!",
+              "translation": "¡Chao!"
             },
             {
               "position": 10,
               "title": "Bloque 10",
-              "content": "See you — hasta luego.",
-              "example": "See you",
-              "translation": "hasta luego"
+              "content": "Elegir el saludo según el momento",
+              "example": "See you!",
+              "translation": "¡Hasta luego!"
             }
           ]
         }
@@ -480,14 +290,14 @@
           {
             "itemId": "english-pre-a1-m001-practice-ex01-i01",
             "position": 1,
-            "prompt": "Elige la traducción de “Hello”.",
+            "prompt": "Elige el significado de “hello”.",
             "evaluation": {
               "type": "single_choice"
             },
             "options": [
-              "adiós",
-              "hasta luego",
-              "hola"
+              "hola",
+              "hola informal",
+              "adiós"
             ],
             "answer": "hola",
             "taskType": "vocabulary_translation"
@@ -495,29 +305,29 @@
           {
             "itemId": "english-pre-a1-m001-practice-ex01-i02",
             "position": 2,
-            "prompt": "Elige la traducción de “Hi”.",
+            "prompt": "Elige el significado de “hi”.",
             "evaluation": {
               "type": "single_choice"
             },
             "options": [
               "adiós",
-              "hola",
-              "hasta luego"
+              "hola informal",
+              "chao"
             ],
-            "answer": "hola",
+            "answer": "hola informal",
             "taskType": "vocabulary_translation"
           },
           {
             "itemId": "english-pre-a1-m001-practice-ex01-i03",
             "position": 3,
-            "prompt": "Elige la traducción de “Goodbye”.",
+            "prompt": "Elige el significado de “goodbye”.",
             "evaluation": {
               "type": "single_choice"
             },
             "options": [
-              "adiós",
-              "hola",
-              "hasta luego"
+              "chao",
+              "hasta luego",
+              "adiós"
             ],
             "answer": "adiós",
             "taskType": "vocabulary_translation"
@@ -525,29 +335,29 @@
           {
             "itemId": "english-pre-a1-m001-practice-ex01-i04",
             "position": 4,
-            "prompt": "Elige la traducción de “Bye”.",
+            "prompt": "Elige el significado de “bye”.",
             "evaluation": {
               "type": "single_choice"
             },
             "options": [
+              "chao",
               "hasta luego",
-              "hola",
-              "adiós"
+              "hola"
             ],
-            "answer": "adiós",
+            "answer": "chao",
             "taskType": "vocabulary_translation"
           },
           {
             "itemId": "english-pre-a1-m001-practice-ex01-i05",
             "position": 5,
-            "prompt": "Elige la traducción de “See you”.",
+            "prompt": "Elige el significado de “see you”.",
             "evaluation": {
               "type": "single_choice"
             },
             "options": [
-              "adiós",
+              "hola",
               "hasta luego",
-              "hola"
+              "hola informal"
             ],
             "answer": "hasta luego",
             "taskType": "vocabulary_translation"
@@ -555,14 +365,14 @@
           {
             "itemId": "english-pre-a1-m001-practice-ex01-i06",
             "position": 6,
-            "prompt": "Elige la traducción de “Hello”.",
+            "prompt": "Elige el significado de “hello”.",
             "evaluation": {
               "type": "single_choice"
             },
             "options": [
-              "hola",
-              "hasta luego",
-              "adiós"
+              "adiós",
+              "chao",
+              "hola"
             ],
             "answer": "hola",
             "taskType": "vocabulary_translation"
@@ -570,29 +380,29 @@
           {
             "itemId": "english-pre-a1-m001-practice-ex01-i07",
             "position": 7,
-            "prompt": "Elige la traducción de “Hi”.",
+            "prompt": "Elige el significado de “hi”.",
             "evaluation": {
               "type": "single_choice"
             },
             "options": [
-              "adiós",
-              "hasta luego",
-              "hola"
+              "hola informal",
+              "chao",
+              "hasta luego"
             ],
-            "answer": "hola",
+            "answer": "hola informal",
             "taskType": "vocabulary_translation"
           },
           {
             "itemId": "english-pre-a1-m001-practice-ex01-i08",
             "position": 8,
-            "prompt": "Elige la traducción de “Goodbye”.",
+            "prompt": "Elige el significado de “goodbye”.",
             "evaluation": {
               "type": "single_choice"
             },
             "options": [
-              "hola",
+              "hasta luego",
               "adiós",
-              "hasta luego"
+              "hola"
             ],
             "answer": "adiós",
             "taskType": "vocabulary_translation"
@@ -600,29 +410,29 @@
           {
             "itemId": "english-pre-a1-m001-practice-ex01-i09",
             "position": 9,
-            "prompt": "Elige la traducción de “Bye”.",
+            "prompt": "Elige el significado de “bye”.",
             "evaluation": {
               "type": "single_choice"
             },
             "options": [
-              "adiós",
               "hola",
-              "hasta luego"
+              "hola informal",
+              "chao"
             ],
-            "answer": "adiós",
+            "answer": "chao",
             "taskType": "vocabulary_translation"
           },
           {
             "itemId": "english-pre-a1-m001-practice-ex01-i10",
             "position": 10,
-            "prompt": "Elige la traducción de “See you”.",
+            "prompt": "Elige el significado de “see you”.",
             "evaluation": {
               "type": "single_choice"
             },
             "options": [
-              "adiós",
-              "hola",
-              "hasta luego"
+              "hasta luego",
+              "hola informal",
+              "adiós"
             ],
             "answer": "hasta luego",
             "taskType": "vocabulary_translation"
@@ -638,78 +448,43 @@
         "exerciseId": "english-pre-a1-m001-grammar-ex01",
         "type": "grammar",
         "theory": {
-          "title": "Hello!",
-          "explanation": "Saludos: Hello es neutro y Hi informal. Goodbye es una despedida completa y Bye informal. See you es una despedida amistosa.",
-          "tip": "Comprende todos los modelos de Explore antes de comenzar las actividades.",
+          "title": "Expresiones y estructuras de la misión",
+          "explanation": "Hello es neutro; Hi es informal. Goodbye es una despedida completa y Bye es más informal. See you equivale a hasta luego.",
+          "tip": "Reconoce el modelo completo antes de utilizarlo.",
           "patterns": [
             {
-              "label": "Bloque 1",
+              "label": "Modelo 1",
               "pattern": "Hello!",
               "examples": [
-                "Hello!"
+                "¡Hola!"
               ]
             },
             {
-              "label": "Bloque 2",
-              "pattern": "Saludos: Hello es neutro y Hi informal. Goodbye es una despedida completa y Bye informal. See you es una despedida amistosa.",
+              "label": "Modelo 2",
+              "pattern": "Hi!",
               "examples": [
-                "Hi!"
+                "¡Hola!"
               ]
             },
             {
-              "label": "Bloque 3",
-              "pattern": "Saludos: Hello es neutro y Hi informal. Goodbye es una despedida completa y Bye informal. See you es una despedida amistosa.",
+              "label": "Modelo 3",
+              "pattern": "Goodbye!",
               "examples": [
-                "Goodbye!"
+                "¡Adiós!"
               ]
             },
             {
-              "label": "Bloque 4",
-              "pattern": "Saludos: Hello es neutro y Hi informal. Goodbye es una despedida completa y Bye informal. See you es una despedida amistosa.",
+              "label": "Modelo 4",
+              "pattern": "Bye!",
               "examples": [
-                "Bye!"
+                "¡Chao!"
               ]
             },
             {
-              "label": "Bloque 5",
-              "pattern": "Saludos: Hello es neutro y Hi informal. Goodbye es una despedida completa y Bye informal. See you es una despedida amistosa.",
+              "label": "Modelo 5",
+              "pattern": "See you!",
               "examples": [
-                "See you!"
-              ]
-            },
-            {
-              "label": "Bloque 6",
-              "pattern": "Saludos: Hello es neutro y Hi informal. Goodbye es una despedida completa y Bye informal. See you es una despedida amistosa.",
-              "examples": [
-                "Hello!"
-              ]
-            },
-            {
-              "label": "Bloque 7",
-              "pattern": "Saludos: Hello es neutro y Hi informal. Goodbye es una despedida completa y Bye informal. See you es una despedida amistosa.",
-              "examples": [
-                "Hi!"
-              ]
-            },
-            {
-              "label": "Bloque 8",
-              "pattern": "Saludos: Hello es neutro y Hi informal. Goodbye es una despedida completa y Bye informal. See you es una despedida amistosa.",
-              "examples": [
-                "Goodbye!"
-              ]
-            },
-            {
-              "label": "Bloque 9",
-              "pattern": "Saludos: Hello es neutro y Hi informal. Goodbye es una despedida completa y Bye informal. See you es una despedida amistosa.",
-              "examples": [
-                "Bye!"
-              ]
-            },
-            {
-              "label": "Bloque 10",
-              "pattern": "Saludos: Hello es neutro y Hi informal. Goodbye es una despedida completa y Bye informal. See you es una despedida amistosa.",
-              "examples": [
-                "See you!"
+                "¡Hasta luego!"
               ]
             }
           ]
@@ -718,91 +493,22 @@
           {
             "itemId": "english-pre-a1-m001-grammar-ex01-i01",
             "position": 1,
-            "prompt": "Reconoce el modelo trabajado: Hello!",
+            "prompt": "Selecciona el modelo que significa: “¡Hola!”",
             "evaluation": {
               "type": "single_choice"
             },
             "options": [
-              "Hi!",
               "Hello!",
+              "Hi!",
               "Goodbye!"
             ],
-            "answer": "Hello!"
+            "answer": "Hello!",
+            "taskType": "functional_language"
           },
           {
             "itemId": "english-pre-a1-m001-grammar-ex01-i02",
             "position": 2,
-            "prompt": "Reconoce el modelo trabajado: Hi!",
-            "evaluation": {
-              "type": "single_choice"
-            },
-            "options": [
-              "Bye!",
-              "Goodbye!",
-              "Hi!"
-            ],
-            "answer": "Hi!"
-          },
-          {
-            "itemId": "english-pre-a1-m001-grammar-ex01-i03",
-            "position": 3,
-            "prompt": "Reconoce el modelo trabajado: Goodbye!",
-            "evaluation": {
-              "type": "single_choice"
-            },
-            "options": [
-              "Goodbye!",
-              "Bye!",
-              "See you!"
-            ],
-            "answer": "Goodbye!"
-          },
-          {
-            "itemId": "english-pre-a1-m001-grammar-ex01-i04",
-            "position": 4,
-            "prompt": "Reconoce el modelo trabajado: Bye!",
-            "evaluation": {
-              "type": "single_choice"
-            },
-            "options": [
-              "See you!",
-              "Bye!",
-              "Hello!"
-            ],
-            "answer": "Bye!"
-          },
-          {
-            "itemId": "english-pre-a1-m001-grammar-ex01-i05",
-            "position": 5,
-            "prompt": "Reconoce el modelo trabajado: See you!",
-            "evaluation": {
-              "type": "single_choice"
-            },
-            "options": [
-              "Hi!",
-              "Hello!",
-              "See you!"
-            ],
-            "answer": "See you!"
-          },
-          {
-            "itemId": "english-pre-a1-m001-grammar-ex01-i06",
-            "position": 6,
-            "prompt": "Reconoce el modelo trabajado: Hello!",
-            "evaluation": {
-              "type": "single_choice"
-            },
-            "options": [
-              "Hello!",
-              "Hi!",
-              "Goodbye!"
-            ],
-            "answer": "Hello!"
-          },
-          {
-            "itemId": "english-pre-a1-m001-grammar-ex01-i07",
-            "position": 7,
-            "prompt": "Reconoce el modelo trabajado: Hi!",
+            "prompt": "Selecciona el modelo que significa: “¡Hola!”",
             "evaluation": {
               "type": "single_choice"
             },
@@ -811,26 +517,28 @@
               "Hi!",
               "Bye!"
             ],
-            "answer": "Hi!"
+            "answer": "Hi!",
+            "taskType": "functional_language"
           },
           {
-            "itemId": "english-pre-a1-m001-grammar-ex01-i08",
-            "position": 8,
-            "prompt": "Reconoce el modelo trabajado: Goodbye!",
+            "itemId": "english-pre-a1-m001-grammar-ex01-i03",
+            "position": 3,
+            "prompt": "Selecciona el modelo que significa: “¡Adiós!”",
             "evaluation": {
               "type": "single_choice"
             },
             "options": [
-              "See you!",
               "Bye!",
+              "See you!",
               "Goodbye!"
             ],
-            "answer": "Goodbye!"
+            "answer": "Goodbye!",
+            "taskType": "functional_language"
           },
           {
-            "itemId": "english-pre-a1-m001-grammar-ex01-i09",
-            "position": 9,
-            "prompt": "Reconoce el modelo trabajado: Bye!",
+            "itemId": "english-pre-a1-m001-grammar-ex01-i04",
+            "position": 4,
+            "prompt": "Selecciona el modelo que significa: “¡Chao!”",
             "evaluation": {
               "type": "single_choice"
             },
@@ -839,12 +547,13 @@
               "See you!",
               "Hello!"
             ],
-            "answer": "Bye!"
+            "answer": "Bye!",
+            "taskType": "functional_language"
           },
           {
-            "itemId": "english-pre-a1-m001-grammar-ex01-i10",
-            "position": 10,
-            "prompt": "Reconoce el modelo trabajado: See you!",
+            "itemId": "english-pre-a1-m001-grammar-ex01-i05",
+            "position": 5,
+            "prompt": "Selecciona el modelo que significa: “¡Hasta luego!”",
             "evaluation": {
               "type": "single_choice"
             },
@@ -853,7 +562,83 @@
               "See you!",
               "Hi!"
             ],
-            "answer": "See you!"
+            "answer": "See you!",
+            "taskType": "functional_language"
+          },
+          {
+            "itemId": "english-pre-a1-m001-grammar-ex01-i06",
+            "position": 6,
+            "prompt": "Selecciona el modelo que significa: “¡Hola!”",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "Goodbye!",
+              "Bye!",
+              "Hello!"
+            ],
+            "answer": "Hello!",
+            "taskType": "functional_language"
+          },
+          {
+            "itemId": "english-pre-a1-m001-grammar-ex01-i07",
+            "position": 7,
+            "prompt": "Selecciona el modelo que significa: “¡Hola!”",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "Hi!",
+              "Bye!",
+              "See you!"
+            ],
+            "answer": "Hi!",
+            "taskType": "functional_language"
+          },
+          {
+            "itemId": "english-pre-a1-m001-grammar-ex01-i08",
+            "position": 8,
+            "prompt": "Selecciona el modelo que significa: “¡Adiós!”",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "See you!",
+              "Goodbye!",
+              "Hello!"
+            ],
+            "answer": "Goodbye!",
+            "taskType": "functional_language"
+          },
+          {
+            "itemId": "english-pre-a1-m001-grammar-ex01-i09",
+            "position": 9,
+            "prompt": "Selecciona el modelo que significa: “¡Chao!”",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "Hello!",
+              "Hi!",
+              "Bye!"
+            ],
+            "answer": "Bye!",
+            "taskType": "functional_language"
+          },
+          {
+            "itemId": "english-pre-a1-m001-grammar-ex01-i10",
+            "position": 10,
+            "prompt": "Selecciona el modelo que significa: “¡Hasta luego!”",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "See you!",
+              "Hi!",
+              "Goodbye!"
+            ],
+            "answer": "See you!",
+            "taskType": "functional_language"
           }
         ]
       }
@@ -869,82 +654,92 @@
           {
             "itemId": "english-pre-a1-m001-pronunciation-ex01-i01",
             "position": 1,
-            "word": "Hello",
+            "word": "hello",
             "translation": "hola",
             "pronunciationGuide": "jelóu",
-            "audio": "tts:en-GB:Hello"
+            "audio": "tts:en-GB:hello",
+            "audioStatus": "synthetic_pending_review"
           },
           {
             "itemId": "english-pre-a1-m001-pronunciation-ex01-i02",
             "position": 2,
-            "word": "Hi",
-            "translation": "hola",
+            "word": "hi",
+            "translation": "hola informal",
             "pronunciationGuide": "jai",
-            "audio": "tts:en-GB:Hi"
+            "audio": "tts:en-GB:hi",
+            "audioStatus": "synthetic_pending_review"
           },
           {
             "itemId": "english-pre-a1-m001-pronunciation-ex01-i03",
             "position": 3,
-            "word": "Goodbye",
+            "word": "goodbye",
             "translation": "adiós",
             "pronunciationGuide": "gud-BÁI",
-            "audio": "tts:en-GB:Goodbye"
+            "audio": "tts:en-GB:goodbye",
+            "audioStatus": "synthetic_pending_review"
           },
           {
             "itemId": "english-pre-a1-m001-pronunciation-ex01-i04",
             "position": 4,
-            "word": "Bye",
-            "translation": "adiós",
+            "word": "bye",
+            "translation": "chao",
             "pronunciationGuide": "BÁI",
-            "audio": "tts:en-GB:Bye"
+            "audio": "tts:en-GB:bye",
+            "audioStatus": "synthetic_pending_review"
           },
           {
             "itemId": "english-pre-a1-m001-pronunciation-ex01-i05",
             "position": 5,
-            "word": "See you",
+            "word": "see you",
             "translation": "hasta luego",
             "pronunciationGuide": "sí iu",
-            "audio": "tts:en-GB:See you"
+            "audio": "tts:en-GB:see you",
+            "audioStatus": "synthetic_pending_review"
           },
           {
             "itemId": "english-pre-a1-m001-pronunciation-ex01-i06",
             "position": 6,
-            "word": "Hello!",
-            "translation": "¡Hola!",
+            "word": "hello",
+            "translation": "hola",
             "pronunciationGuide": "jelóu",
-            "audio": "tts:en-GB:Hello!"
+            "audio": "tts:en-GB:hello",
+            "audioStatus": "synthetic_pending_review"
           },
           {
             "itemId": "english-pre-a1-m001-pronunciation-ex01-i07",
             "position": 7,
-            "word": "Hello!",
-            "translation": "¡Hola!",
-            "pronunciationGuide": "jelóu",
-            "audio": "tts:en-GB:Hello!"
+            "word": "hi",
+            "translation": "hola informal",
+            "pronunciationGuide": "jai",
+            "audio": "tts:en-GB:hi",
+            "audioStatus": "synthetic_pending_review"
           },
           {
             "itemId": "english-pre-a1-m001-pronunciation-ex01-i08",
             "position": 8,
-            "word": "Hello!",
-            "translation": "¡Hola!",
-            "pronunciationGuide": "jelóu",
-            "audio": "tts:en-GB:Hello!"
+            "word": "goodbye",
+            "translation": "adiós",
+            "pronunciationGuide": "gud-BÁI",
+            "audio": "tts:en-GB:goodbye",
+            "audioStatus": "synthetic_pending_review"
           },
           {
             "itemId": "english-pre-a1-m001-pronunciation-ex01-i09",
             "position": 9,
-            "word": "Hello!",
-            "translation": "¡Hola!",
-            "pronunciationGuide": "jelóu",
-            "audio": "tts:en-GB:Hello!"
+            "word": "bye",
+            "translation": "chao",
+            "pronunciationGuide": "BÁI",
+            "audio": "tts:en-GB:bye",
+            "audioStatus": "synthetic_pending_review"
           },
           {
             "itemId": "english-pre-a1-m001-pronunciation-ex01-i10",
             "position": 10,
-            "word": "Hello!",
-            "translation": "¡Hola!",
-            "pronunciationGuide": "jelóu",
-            "audio": "tts:en-GB:Hello!"
+            "word": "see you",
+            "translation": "hasta luego",
+            "pronunciationGuide": "sí iu",
+            "audio": "tts:en-GB:see you",
+            "audioStatus": "synthetic_pending_review"
           }
         ]
       }
@@ -964,142 +759,152 @@
           {
             "itemId": "english-pre-a1-m001-reading-ex01-i01",
             "position": 1,
-            "prompt": "¿Qué tema presenta el texto?",
+            "prompt": "En el texto, ¿qué significa “Hello!”?",
             "evaluation": {
               "type": "single_choice"
             },
             "options": [
-              "hola",
-              "adiós",
-              "Hello!"
+              "¡Hola!",
+              "¡Adiós!",
+              "¡Chao!"
             ],
-            "answer": "Hello!"
+            "answer": "¡Hola!",
+            "taskType": "reading_detail"
           },
           {
             "itemId": "english-pre-a1-m001-reading-ex01-i02",
             "position": 2,
-            "prompt": "¿Qué significa “Hi” en el texto?",
+            "prompt": "En el texto, ¿qué significa “Hi!”?",
             "evaluation": {
               "type": "single_choice"
             },
             "options": [
-              "adiós",
-              "hola",
-              "hasta luego"
+              "¡Chao!",
+              "¡Hola!",
+              "¡Hasta luego!"
             ],
-            "answer": "hola"
+            "answer": "¡Hola!",
+            "taskType": "reading_detail"
           },
           {
             "itemId": "english-pre-a1-m001-reading-ex01-i03",
             "position": 3,
-            "prompt": "¿Qué significa “Goodbye” en el texto?",
+            "prompt": "En el texto, ¿qué significa “Goodbye!”?",
             "evaluation": {
               "type": "single_choice"
             },
             "options": [
-              "adiós",
-              "hola",
-              "hasta luego"
+              "¡Chao!",
+              "¡Hasta luego!",
+              "¡Adiós!"
             ],
-            "answer": "adiós"
+            "answer": "¡Adiós!",
+            "taskType": "reading_detail"
           },
           {
             "itemId": "english-pre-a1-m001-reading-ex01-i04",
             "position": 4,
-            "prompt": "¿Qué significa “Bye” en el texto?",
+            "prompt": "En el texto, ¿qué significa “Bye!”?",
             "evaluation": {
               "type": "single_choice"
             },
             "options": [
-              "hasta luego",
-              "hola",
-              "adiós"
+              "¡Chao!",
+              "¡Hasta luego!",
+              "¡Hola!"
             ],
-            "answer": "adiós"
+            "answer": "¡Chao!",
+            "taskType": "reading_detail"
           },
           {
             "itemId": "english-pre-a1-m001-reading-ex01-i05",
             "position": 5,
-            "prompt": "¿Qué significa “See you” en el texto?",
+            "prompt": "En el texto, ¿qué significa “See you!”?",
             "evaluation": {
               "type": "single_choice"
             },
             "options": [
-              "adiós",
-              "hasta luego",
-              "hola"
+              "¡Hola!",
+              "¡Hasta luego!",
+              "¡Hola!"
             ],
-            "answer": "hasta luego"
+            "answer": "¡Hasta luego!",
+            "taskType": "reading_detail"
           },
           {
             "itemId": "english-pre-a1-m001-reading-ex01-i06",
             "position": 6,
-            "prompt": "¿Qué significa “Hello” en el texto?",
+            "prompt": "En el texto, ¿qué significa “Hello!”?",
             "evaluation": {
               "type": "single_choice"
             },
             "options": [
-              "hola",
-              "hasta luego",
-              "adiós"
+              "¡Hasta luego!",
+              "¡Adiós!",
+              "¡Hola!"
             ],
-            "answer": "hola"
+            "answer": "¡Hola!",
+            "taskType": "reading_detail"
           },
           {
             "itemId": "english-pre-a1-m001-reading-ex01-i07",
             "position": 7,
-            "prompt": "¿Qué significa “Hi” en el texto?",
+            "prompt": "En el texto, ¿qué significa “Hi!”?",
             "evaluation": {
               "type": "single_choice"
             },
             "options": [
-              "adiós",
-              "hasta luego",
-              "hola"
+              "¡Hola!",
+              "¡Adiós!",
+              "¡Chao!"
             ],
-            "answer": "hola"
+            "answer": "¡Hola!",
+            "taskType": "reading_detail"
           },
           {
             "itemId": "english-pre-a1-m001-reading-ex01-i08",
             "position": 8,
-            "prompt": "¿Qué significa “Goodbye” en el texto?",
+            "prompt": "En el texto, ¿qué significa “Goodbye!”?",
             "evaluation": {
               "type": "single_choice"
             },
             "options": [
-              "hola",
-              "adiós",
-              "hasta luego"
+              "¡Hasta luego!",
+              "¡Adiós!",
+              "¡Hola!"
             ],
-            "answer": "adiós"
+            "answer": "¡Adiós!",
+            "taskType": "reading_detail"
           },
           {
             "itemId": "english-pre-a1-m001-reading-ex01-i09",
             "position": 9,
-            "prompt": "¿Qué significa “Bye” en el texto?",
+            "prompt": "En el texto, ¿qué significa “Bye!”?",
             "evaluation": {
               "type": "single_choice"
             },
             "options": [
-              "adiós",
-              "hola",
-              "hasta luego"
+              "¡Hola!",
+              "¡Hola!",
+              "¡Chao!"
             ],
-            "answer": "adiós"
+            "answer": "¡Chao!",
+            "taskType": "reading_detail"
           },
           {
             "itemId": "english-pre-a1-m001-reading-ex01-i10",
             "position": 10,
-            "prompt": "¿Qué significa “See you” en el texto?",
+            "prompt": "En el texto, ¿qué significa “See you!”?",
             "evaluation": {
               "type": "single_choice"
             },
             "options": [
-              "adiós",
-              "hola",
-              "hasta luego"
+              "¡Hasta luego!",
+              "¡Hola!",
+              "¡Adiós!"
             ],
-            "answer": "hasta luego"
+            "answer": "¡Hasta luego!",
+            "taskType": "reading_detail"
           }
         ]
       }
@@ -1316,10 +1121,10 @@
           {
             "itemId": "english-pre-a1-m001-speaking-ex01-i01",
             "position": 1,
-            "prompt": "Di en voz alta esta expresión.",
-            "promptSpanish": "Practica el modelo de la misión.",
+            "prompt": "Di en voz alta el modelo.",
+            "promptSpanish": "Practica: ¡Hola!",
             "modelAnswer": "Hello!",
-            "translation": "Hello!",
+            "translation": "¡Hola!",
             "evaluation": {
               "type": "transcription_feedback",
               "transcriptionSeparateFromPronunciation": true
@@ -1328,10 +1133,10 @@
           {
             "itemId": "english-pre-a1-m001-speaking-ex01-i02",
             "position": 2,
-            "prompt": "Di en voz alta esta expresión.",
-            "promptSpanish": "Practica el modelo de la misión.",
+            "prompt": "Di en voz alta el modelo.",
+            "promptSpanish": "Practica: ¡Hola!",
             "modelAnswer": "Hi!",
-            "translation": "Hi!",
+            "translation": "¡Hola!",
             "evaluation": {
               "type": "transcription_feedback",
               "transcriptionSeparateFromPronunciation": true
@@ -1340,10 +1145,10 @@
           {
             "itemId": "english-pre-a1-m001-speaking-ex01-i03",
             "position": 3,
-            "prompt": "Di en voz alta esta expresión.",
-            "promptSpanish": "Practica el modelo de la misión.",
+            "prompt": "Di en voz alta el modelo.",
+            "promptSpanish": "Practica: ¡Adiós!",
             "modelAnswer": "Goodbye!",
-            "translation": "Goodbye!",
+            "translation": "¡Adiós!",
             "evaluation": {
               "type": "transcription_feedback",
               "transcriptionSeparateFromPronunciation": true
@@ -1352,10 +1157,10 @@
           {
             "itemId": "english-pre-a1-m001-speaking-ex01-i04",
             "position": 4,
-            "prompt": "Di en voz alta esta expresión.",
-            "promptSpanish": "Practica el modelo de la misión.",
+            "prompt": "Di en voz alta el modelo.",
+            "promptSpanish": "Practica: ¡Chao!",
             "modelAnswer": "Bye!",
-            "translation": "Bye!",
+            "translation": "¡Chao!",
             "evaluation": {
               "type": "transcription_feedback",
               "transcriptionSeparateFromPronunciation": true
@@ -1364,10 +1169,10 @@
           {
             "itemId": "english-pre-a1-m001-speaking-ex01-i05",
             "position": 5,
-            "prompt": "Di en voz alta esta expresión.",
-            "promptSpanish": "Practica el modelo de la misión.",
+            "prompt": "Di en voz alta el modelo.",
+            "promptSpanish": "Practica: ¡Hasta luego!",
             "modelAnswer": "See you!",
-            "translation": "See you!",
+            "translation": "¡Hasta luego!",
             "evaluation": {
               "type": "transcription_feedback",
               "transcriptionSeparateFromPronunciation": true
@@ -1376,10 +1181,10 @@
           {
             "itemId": "english-pre-a1-m001-speaking-ex01-i06",
             "position": 6,
-            "prompt": "Di en voz alta esta expresión.",
-            "promptSpanish": "Practica el modelo de la misión.",
+            "prompt": "Di en voz alta el modelo.",
+            "promptSpanish": "Practica: ¡Hola!",
             "modelAnswer": "Hello!",
-            "translation": "Hello!",
+            "translation": "¡Hola!",
             "evaluation": {
               "type": "transcription_feedback",
               "transcriptionSeparateFromPronunciation": true
@@ -1388,10 +1193,10 @@
           {
             "itemId": "english-pre-a1-m001-speaking-ex01-i07",
             "position": 7,
-            "prompt": "Di en voz alta esta expresión.",
-            "promptSpanish": "Practica el modelo de la misión.",
+            "prompt": "Di en voz alta el modelo.",
+            "promptSpanish": "Practica: ¡Hola!",
             "modelAnswer": "Hi!",
-            "translation": "Hi!",
+            "translation": "¡Hola!",
             "evaluation": {
               "type": "transcription_feedback",
               "transcriptionSeparateFromPronunciation": true
@@ -1400,10 +1205,10 @@
           {
             "itemId": "english-pre-a1-m001-speaking-ex01-i08",
             "position": 8,
-            "prompt": "Di en voz alta esta expresión.",
-            "promptSpanish": "Practica el modelo de la misión.",
+            "prompt": "Di en voz alta el modelo.",
+            "promptSpanish": "Practica: ¡Adiós!",
             "modelAnswer": "Goodbye!",
-            "translation": "Goodbye!",
+            "translation": "¡Adiós!",
             "evaluation": {
               "type": "transcription_feedback",
               "transcriptionSeparateFromPronunciation": true
@@ -1412,10 +1217,10 @@
           {
             "itemId": "english-pre-a1-m001-speaking-ex01-i09",
             "position": 9,
-            "prompt": "Di en voz alta esta expresión.",
-            "promptSpanish": "Practica el modelo de la misión.",
+            "prompt": "Di en voz alta el modelo.",
+            "promptSpanish": "Practica: ¡Chao!",
             "modelAnswer": "Bye!",
-            "translation": "Bye!",
+            "translation": "¡Chao!",
             "evaluation": {
               "type": "transcription_feedback",
               "transcriptionSeparateFromPronunciation": true
@@ -1424,10 +1229,10 @@
           {
             "itemId": "english-pre-a1-m001-speaking-ex01-i10",
             "position": 10,
-            "prompt": "Di en voz alta esta expresión.",
-            "promptSpanish": "Practica el modelo de la misión.",
+            "prompt": "Di en voz alta el modelo.",
+            "promptSpanish": "Practica: ¡Hasta luego!",
             "modelAnswer": "See you!",
-            "translation": "See you!",
+            "translation": "¡Hasta luego!",
             "evaluation": {
               "type": "transcription_feedback",
               "transcriptionSeparateFromPronunciation": true

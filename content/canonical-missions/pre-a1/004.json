@@ -1,10 +1,11 @@
 {
   "schemaVersion": "1.2.0",
-  "contentVersion": 5,
+  "contentVersion": "2.0.0",
   "course": {
     "courseId": "english-pre-a1",
-    "level": "PRE-A1",
-    "language": "en-GB"
+    "level": "Pre-A1",
+    "language": "en-GB",
+    "title": "Pre-A1 · Usuario principiante"
   },
   "unit": {
     "unitId": "english-pre-a1-unit-01",
@@ -16,7 +17,8 @@
     "missionId": "english-pre-a1-m004",
     "unitId": "english-pre-a1-unit-01",
     "position": 4,
-    "title": "Polite words"
+    "title": "Polite words",
+    "objective": "Pedir, agradecer y disculparse con expresiones básicas."
   },
   "sections": [
     {
@@ -25,7 +27,7 @@
       "position": 1,
       "exercise": {
         "exerciseId": "english-pre-a1-m004-explore-ex01",
-        "type": "vocabulary_pairs",
+        "type": "lesson",
         "items": [
           {
             "itemId": "english-pre-a1-m004-explore-ex01-i01",
@@ -40,7 +42,7 @@
             "itemId": "english-pre-a1-m004-explore-ex01-i02",
             "position": 2,
             "english": "thank",
-            "spanish": "agradecer",
+            "spanish": "agradecer (en Thank you)",
             "pronunciationGuide": "zánk*",
             "audio": "tts:en-GB:thank",
             "audioStatus": "synthetic_pending_review"
@@ -57,24 +59,33 @@
           {
             "itemId": "english-pre-a1-m004-explore-ex01-i04",
             "position": 4,
-            "english": "thank you",
-            "spanish": "gracias",
-            "pronunciationGuide": "zánk iu*",
-            "audio": "tts:en-GB:thank you",
+            "english": "you",
+            "spanish": "tú / usted",
+            "pronunciationGuide": "iú",
+            "audio": "tts:en-GB:you",
             "audioStatus": "synthetic_pending_review"
           },
           {
             "itemId": "english-pre-a1-m004-explore-ex01-i05",
             "position": 5,
-            "english": "you're welcome",
-            "spanish": "de nada",
-            "pronunciationGuide": "ior UÉL-kam",
-            "audio": "tts:en-GB:you're welcome",
+            "english": "you're",
+            "spanish": "eres/estás (en la fórmula)",
+            "pronunciationGuide": "iór",
+            "audio": "tts:en-GB:you're",
             "audioStatus": "synthetic_pending_review"
           },
           {
             "itemId": "english-pre-a1-m004-explore-ex01-i06",
             "position": 6,
+            "english": "welcome",
+            "spanish": "bienvenido/a",
+            "pronunciationGuide": "UÉL-kam",
+            "audio": "tts:en-GB:welcome",
+            "audioStatus": "synthetic_pending_review"
+          },
+          {
+            "itemId": "english-pre-a1-m004-explore-ex01-i07",
+            "position": 7,
             "english": "sorry",
             "spanish": "lo siento",
             "pronunciationGuide": "SÓ-ri",
@@ -82,17 +93,26 @@
             "audioStatus": "synthetic_pending_review"
           },
           {
-            "itemId": "english-pre-a1-m004-explore-ex01-i07",
-            "position": 7,
-            "english": "excuse me",
-            "spanish": "disculpe",
-            "pronunciationGuide": "eks-KIÚS mí",
-            "audio": "tts:en-GB:excuse me",
+            "itemId": "english-pre-a1-m004-explore-ex01-i08",
+            "position": 8,
+            "english": "excuse",
+            "spanish": "parte de Excuse me",
+            "pronunciationGuide": "eks-KIÚS",
+            "audio": "tts:en-GB:excuse",
             "audioStatus": "synthetic_pending_review"
           },
           {
-            "itemId": "english-pre-a1-m004-explore-ex01-i08",
-            "position": 8,
+            "itemId": "english-pre-a1-m004-explore-ex01-i09",
+            "position": 9,
+            "english": "me",
+            "spanish": "me / mí",
+            "pronunciationGuide": "mí",
+            "audio": "tts:en-GB:me",
+            "audioStatus": "synthetic_pending_review"
+          },
+          {
+            "itemId": "english-pre-a1-m004-explore-ex01-i10",
+            "position": 10,
             "english": "yes",
             "spanish": "sí",
             "pronunciationGuide": "iés",
@@ -100,8 +120,8 @@
             "audioStatus": "synthetic_pending_review"
           },
           {
-            "itemId": "english-pre-a1-m004-explore-ex01-i09",
-            "position": 9,
+            "itemId": "english-pre-a1-m004-explore-ex01-i11",
+            "position": 11,
             "english": "no",
             "spanish": "no",
             "pronunciationGuide": "nóu",
@@ -109,88 +129,106 @@
             "audioStatus": "synthetic_pending_review"
           },
           {
-            "itemId": "english-pre-a1-m004-explore-ex01-i10",
-            "position": 10,
+            "itemId": "english-pre-a1-m004-explore-ex01-i12",
+            "position": 12,
             "english": "help",
             "spanish": "ayuda",
             "pronunciationGuide": "jelp",
             "audio": "tts:en-GB:help",
             "audioStatus": "synthetic_pending_review"
+          },
+          {
+            "itemId": "english-pre-a1-m004-explore-ex01-i13",
+            "position": 13,
+            "english": "here",
+            "spanish": "aquí",
+            "pronunciationGuide": "jíer",
+            "audio": "tts:en-GB:here",
+            "audioStatus": "synthetic_pending_review"
+          },
+          {
+            "itemId": "english-pre-a1-m004-explore-ex01-i14",
+            "position": 14,
+            "english": "door",
+            "spanish": "puerta",
+            "pronunciationGuide": "dór",
+            "audio": "tts:en-GB:door",
+            "audioStatus": "synthetic_pending_review"
           }
         ],
         "theory": {
           "title": "Polite words",
-          "explanation": "Please suaviza peticiones. Thank you/thanks expresan agradecimiento; thanks es informal. You're welcome responde a thank you. Sorry expresa disculpa. Excuse me sirve para llamar la atención. TH requiere lengua entre los dientes; no es exactamente una z española.",
-          "tip": "Comprende todos los modelos de Explore antes de comenzar las actividades.",
+          "explanation": "En Thank, Thanks y Thank you, TH es interdental: coloca suavemente la punta de la lengua entre los dientes. No es exactamente la z castellana ni una s.",
+          "tip": "Exploración es aprendizaje, no un examen. Revisa todos los bloques, palabras y modelos antes de practicar.",
           "patterns": [
             {
               "label": "Bloque 1",
-              "pattern": "Objetivo: Polite words.",
+              "pattern": "Please suaviza una petición",
               "examples": [
                 "Please."
               ]
             },
             {
               "label": "Bloque 2",
-              "pattern": "thank — agradecer. Pronunciación: zánk*.",
+              "pattern": "Thank you expresa agradecimiento",
               "examples": [
                 "Thank you."
               ]
             },
             {
               "label": "Bloque 3",
-              "pattern": "Thanks. — Gracias..",
+              "pattern": "Thanks es informal",
               "examples": [
                 "Thanks."
               ]
             },
             {
               "label": "Bloque 4",
-              "pattern": "You're welcome. — De nada..",
+              "pattern": "You're welcome responde a Thank you",
               "examples": [
                 "You're welcome."
               ]
             },
             {
               "label": "Bloque 5",
-              "pattern": "Sorry. — Lo siento..",
+              "pattern": "Sorry expresa disculpa",
               "examples": [
                 "Sorry."
               ]
             },
             {
               "label": "Bloque 6",
-              "pattern": "Excuse me. — Disculpe..",
+              "pattern": "I'm sorry refuerza la disculpa",
+              "examples": [
+                "I'm sorry."
+              ]
+            },
+            {
+              "label": "Bloque 7",
+              "pattern": "Excuse me sirve para llamar la atención o pedir paso",
               "examples": [
                 "Excuse me."
               ]
             },
             {
-              "label": "Bloque 7",
-              "pattern": "Please suaviza peticiones. Thank you/thanks expresan agradecimiento; thanks es informal. You're welcome responde a thank you. Sorry expresa disculpa. Excuse me sirve para llamar la atención. TH requiere lengua entre los dientes; no es exactamente una z española.",
+              "label": "Bloque 8",
+              "pattern": "Yes, please acepta educadamente",
               "examples": [
                 "Yes, please."
               ]
             },
             {
-              "label": "Bloque 8",
-              "pattern": "No, thank you. — No, gracias..",
+              "label": "Bloque 9",
+              "pattern": "No, thank you rechaza educadamente",
               "examples": [
                 "No, thank you."
               ]
             },
             {
-              "label": "Bloque 9",
-              "pattern": "Help, please. — Ayuda, por favor..",
+              "label": "Bloque 10",
+              "pattern": "Help, please pide ayuda; TH se articula con la lengua entre los dientes",
               "examples": [
                 "Help, please."
-              ]
-            },
-            {
-              "label": "Bloque 10",
-              "pattern": "Excuse me. — Disculpe..",
-              "examples": [
-                "Excuse me."
               ]
             }
           ]
@@ -200,346 +238,89 @@
             {
               "english": "Please.",
               "spanish": "Por favor.",
-              "note": "Modelo enseñado en Explore."
+              "pronunciationGuide": "plíis",
+              "audio": "tts:en-GB:Please.",
+              "audioStatus": "synthetic_pending_review",
+              "note": "Expresión explicada en Explore."
             },
             {
               "english": "Thank you.",
               "spanish": "Gracias.",
-              "note": "Modelo enseñado en Explore."
+              "pronunciationGuide": "zánk iu*",
+              "audio": "tts:en-GB:Thank you.",
+              "audioStatus": "synthetic_pending_review",
+              "note": "Expresión explicada en Explore."
             },
             {
               "english": "Thanks.",
               "spanish": "Gracias.",
-              "note": "Modelo enseñado en Explore."
+              "pronunciationGuide": "zánks*",
+              "audio": "tts:en-GB:Thanks.",
+              "audioStatus": "synthetic_pending_review",
+              "note": "Expresión explicada en Explore."
             },
             {
               "english": "You're welcome.",
               "spanish": "De nada.",
-              "note": "Modelo enseñado en Explore."
+              "pronunciationGuide": "iór UÉL-kam",
+              "audio": "tts:en-GB:You're welcome.",
+              "audioStatus": "synthetic_pending_review",
+              "note": "Expresión explicada en Explore."
             },
             {
               "english": "Sorry.",
               "spanish": "Lo siento.",
-              "note": "Modelo enseñado en Explore."
+              "pronunciationGuide": "SÓ-ri",
+              "audio": "tts:en-GB:Sorry.",
+              "audioStatus": "synthetic_pending_review",
+              "note": "Expresión explicada en Explore."
+            },
+            {
+              "english": "I'm sorry.",
+              "spanish": "Lo siento.",
+              "pronunciationGuide": "áim SÓ-ri",
+              "audio": "tts:en-GB:I'm sorry.",
+              "audioStatus": "synthetic_pending_review",
+              "note": "Expresión explicada en Explore."
             },
             {
               "english": "Excuse me.",
-              "spanish": "Disculpe.",
-              "note": "Modelo enseñado en Explore."
+              "spanish": "Disculpe / perdón.",
+              "pronunciationGuide": "eks-KIÚS mí",
+              "audio": "tts:en-GB:Excuse me.",
+              "audioStatus": "synthetic_pending_review",
+              "note": "Expresión explicada en Explore."
             },
             {
               "english": "Yes, please.",
               "spanish": "Sí, por favor.",
-              "note": "Modelo enseñado en Explore."
+              "pronunciationGuide": "iés plíis",
+              "audio": "tts:en-GB:Yes, please.",
+              "audioStatus": "synthetic_pending_review",
+              "note": "Expresión explicada en Explore."
             },
             {
               "english": "No, thank you.",
               "spanish": "No, gracias.",
-              "note": "Modelo enseñado en Explore."
+              "pronunciationGuide": "nóu zánk iu*",
+              "audio": "tts:en-GB:No, thank you.",
+              "audioStatus": "synthetic_pending_review",
+              "note": "Expresión explicada en Explore."
             },
             {
               "english": "Help, please.",
               "spanish": "Ayuda, por favor.",
-              "note": "Modelo enseñado en Explore."
-            },
-            {
-              "english": "Excuse me.",
-              "spanish": "Disculpe.",
-              "note": "Modelo enseñado en Explore."
-            },
-            {
-              "english": "please",
-              "spanish": "por favor",
-              "note": "Pronunciación aproximada: plíis."
-            },
-            {
-              "english": "thank",
-              "spanish": "agradecer",
-              "note": "Pronunciación aproximada: zánk*."
-            },
-            {
-              "english": "thanks",
-              "spanish": "gracias",
-              "note": "Pronunciación aproximada: zánks*."
-            },
-            {
-              "english": "thank you",
-              "spanish": "gracias",
-              "note": "Pronunciación aproximada: zánk iu*."
-            },
-            {
-              "english": "you're welcome",
-              "spanish": "de nada",
-              "note": "Pronunciación aproximada: ior UÉL-kam."
-            },
-            {
-              "english": "sorry",
-              "spanish": "lo siento",
-              "note": "Pronunciación aproximada: SÓ-ri."
-            },
-            {
-              "english": "excuse me",
-              "spanish": "disculpe",
-              "note": "Pronunciación aproximada: eks-KIÚS mí."
-            },
-            {
-              "english": "yes",
-              "spanish": "sí",
-              "note": "Pronunciación aproximada: iés."
-            },
-            {
-              "english": "no",
-              "spanish": "no",
-              "note": "Pronunciación aproximada: nóu."
-            },
-            {
-              "english": "help",
-              "spanish": "ayuda",
-              "note": "Pronunciación aproximada: jelp."
-            },
-            {
-              "english": "here",
-              "spanish": "aquí",
-              "note": "Pronunciación aproximada: jíar."
-            },
-            {
-              "english": "door",
-              "spanish": "puerta",
-              "note": "Pronunciación aproximada: dór."
+              "pronunciationGuide": "jelp plíis",
+              "audio": "tts:en-GB:Help, please.",
+              "audioStatus": "synthetic_pending_review",
+              "note": "Expresión explicada en Explore."
             }
           ],
           "grammar": [
             {
-              "english": "Please.",
-              "spanish": "Por favor.",
-              "note": "Polite words"
-            },
-            {
-              "english": "Thank you.",
-              "spanish": "Gracias.",
-              "note": "Please suaviza peticiones. Thank you/thanks expresan agradecimiento; thanks es informal. You're welcome responde a thank you. Sorry expresa disculpa. Excuse me sirve para llamar la atención. TH requiere lengua entre los dientes; no es exactamente una z española."
-            },
-            {
-              "english": "Thanks.",
-              "spanish": "Gracias.",
-              "note": "Please suaviza peticiones. Thank you/thanks expresan agradecimiento; thanks es informal. You're welcome responde a thank you. Sorry expresa disculpa. Excuse me sirve para llamar la atención. TH requiere lengua entre los dientes; no es exactamente una z española."
-            },
-            {
-              "english": "You're welcome.",
-              "spanish": "De nada.",
-              "note": "Please suaviza peticiones. Thank you/thanks expresan agradecimiento; thanks es informal. You're welcome responde a thank you. Sorry expresa disculpa. Excuse me sirve para llamar la atención. TH requiere lengua entre los dientes; no es exactamente una z española."
-            },
-            {
-              "english": "Sorry.",
-              "spanish": "Lo siento.",
-              "note": "Please suaviza peticiones. Thank you/thanks expresan agradecimiento; thanks es informal. You're welcome responde a thank you. Sorry expresa disculpa. Excuse me sirve para llamar la atención. TH requiere lengua entre los dientes; no es exactamente una z española."
-            },
-            {
-              "english": "Excuse me.",
-              "spanish": "Disculpe.",
-              "note": "Please suaviza peticiones. Thank you/thanks expresan agradecimiento; thanks es informal. You're welcome responde a thank you. Sorry expresa disculpa. Excuse me sirve para llamar la atención. TH requiere lengua entre los dientes; no es exactamente una z española."
-            },
-            {
-              "english": "Yes, please.",
-              "spanish": "Sí, por favor.",
-              "note": "Please suaviza peticiones. Thank you/thanks expresan agradecimiento; thanks es informal. You're welcome responde a thank you. Sorry expresa disculpa. Excuse me sirve para llamar la atención. TH requiere lengua entre los dientes; no es exactamente una z española."
-            },
-            {
-              "english": "No, thank you.",
-              "spanish": "No, gracias.",
-              "note": "Please suaviza peticiones. Thank you/thanks expresan agradecimiento; thanks es informal. You're welcome responde a thank you. Sorry expresa disculpa. Excuse me sirve para llamar la atención. TH requiere lengua entre los dientes; no es exactamente una z española."
-            },
-            {
-              "english": "Help, please.",
-              "spanish": "Ayuda, por favor.",
-              "note": "Please suaviza peticiones. Thank you/thanks expresan agradecimiento; thanks es informal. You're welcome responde a thank you. Sorry expresa disculpa. Excuse me sirve para llamar la atención. TH requiere lengua entre los dientes; no es exactamente una z española."
-            },
-            {
-              "english": "Excuse me.",
-              "spanish": "Disculpe.",
-              "note": "Please suaviza peticiones. Thank you/thanks expresan agradecimiento; thanks es informal. You're welcome responde a thank you. Sorry expresa disculpa. Excuse me sirve para llamar la atención. TH requiere lengua entre los dientes; no es exactamente una z española."
-            }
-          ],
-          "reading": [
-            {
-              "english": "Please. Thank you. You're welcome. Sorry. Excuse me. Help, please.",
-              "spanish": "Por favor. Gracias. De nada. Lo siento. Disculpe. Ayuda, por favor."
-            }
-          ],
-          "writing": [
-            {
-              "english": "Please.",
-              "spanish": "Por favor.",
-              "note": "Modelo enseñado en Explore."
-            },
-            {
-              "english": "Thank you.",
-              "spanish": "Gracias.",
-              "note": "Modelo enseñado en Explore."
-            },
-            {
-              "english": "Thanks.",
-              "spanish": "Gracias.",
-              "note": "Modelo enseñado en Explore."
-            },
-            {
-              "english": "You're welcome.",
-              "spanish": "De nada.",
-              "note": "Modelo enseñado en Explore."
-            },
-            {
-              "english": "Sorry.",
-              "spanish": "Lo siento.",
-              "note": "Modelo enseñado en Explore."
-            },
-            {
-              "english": "Excuse me.",
-              "spanish": "Disculpe.",
-              "note": "Modelo enseñado en Explore."
-            },
-            {
-              "english": "Yes, please.",
-              "spanish": "Sí, por favor.",
-              "note": "Modelo enseñado en Explore."
-            },
-            {
-              "english": "No, thank you.",
-              "spanish": "No, gracias.",
-              "note": "Modelo enseñado en Explore."
-            },
-            {
-              "english": "Help, please.",
-              "spanish": "Ayuda, por favor.",
-              "note": "Modelo enseñado en Explore."
-            },
-            {
-              "english": "Excuse me.",
-              "spanish": "Disculpe.",
-              "note": "Modelo enseñado en Explore."
-            }
-          ],
-          "speaking": [
-            {
-              "english": "Please.",
-              "spanish": "Por favor.",
-              "note": "Modelo enseñado en Explore.",
-              "prompt": "Practica esta expresión.",
-              "promptSpanish": "Di la expresión en voz alta."
-            },
-            {
-              "english": "Thank you.",
-              "spanish": "Gracias.",
-              "note": "Modelo enseñado en Explore.",
-              "prompt": "Practica esta expresión.",
-              "promptSpanish": "Di la expresión en voz alta."
-            },
-            {
-              "english": "Thanks.",
-              "spanish": "Gracias.",
-              "note": "Modelo enseñado en Explore.",
-              "prompt": "Practica esta expresión.",
-              "promptSpanish": "Di la expresión en voz alta."
-            },
-            {
-              "english": "You're welcome.",
-              "spanish": "De nada.",
-              "note": "Modelo enseñado en Explore.",
-              "prompt": "Practica esta expresión.",
-              "promptSpanish": "Di la expresión en voz alta."
-            },
-            {
-              "english": "Sorry.",
-              "spanish": "Lo siento.",
-              "note": "Modelo enseñado en Explore.",
-              "prompt": "Practica esta expresión.",
-              "promptSpanish": "Di la expresión en voz alta."
-            },
-            {
-              "english": "Excuse me.",
-              "spanish": "Disculpe.",
-              "note": "Modelo enseñado en Explore.",
-              "prompt": "Practica esta expresión.",
-              "promptSpanish": "Di la expresión en voz alta."
-            },
-            {
-              "english": "Yes, please.",
-              "spanish": "Sí, por favor.",
-              "note": "Modelo enseñado en Explore.",
-              "prompt": "Practica esta expresión.",
-              "promptSpanish": "Di la expresión en voz alta."
-            },
-            {
-              "english": "No, thank you.",
-              "spanish": "No, gracias.",
-              "note": "Modelo enseñado en Explore.",
-              "prompt": "Practica esta expresión.",
-              "promptSpanish": "Di la expresión en voz alta."
-            },
-            {
-              "english": "Help, please.",
-              "spanish": "Ayuda, por favor.",
-              "note": "Modelo enseñado en Explore.",
-              "prompt": "Practica esta expresión.",
-              "promptSpanish": "Di la expresión en voz alta."
-            },
-            {
-              "english": "Excuse me.",
-              "spanish": "Disculpe.",
-              "note": "Modelo enseñado en Explore.",
-              "prompt": "Practica esta expresión.",
-              "promptSpanish": "Di la expresión en voz alta."
-            }
-          ],
-          "listening": [
-            {
-              "english": "Please.",
-              "spanish": "Por favor.",
-              "note": "Modelo enseñado en Explore."
-            },
-            {
-              "english": "Thank you.",
-              "spanish": "Gracias.",
-              "note": "Modelo enseñado en Explore."
-            },
-            {
-              "english": "Thanks.",
-              "spanish": "Gracias.",
-              "note": "Modelo enseñado en Explore."
-            },
-            {
-              "english": "You're welcome.",
-              "spanish": "De nada.",
-              "note": "Modelo enseñado en Explore."
-            },
-            {
-              "english": "Sorry.",
-              "spanish": "Lo siento.",
-              "note": "Modelo enseñado en Explore."
-            },
-            {
-              "english": "Excuse me.",
-              "spanish": "Disculpe.",
-              "note": "Modelo enseñado en Explore."
-            },
-            {
-              "english": "Yes, please.",
-              "spanish": "Sí, por favor.",
-              "note": "Modelo enseñado en Explore."
-            },
-            {
-              "english": "No, thank you.",
-              "spanish": "No, gracias.",
-              "note": "Modelo enseñado en Explore."
-            },
-            {
-              "english": "Help, please.",
-              "spanish": "Ayuda, por favor.",
-              "note": "Modelo enseñado en Explore."
-            },
-            {
-              "english": "Excuse me.",
-              "spanish": "Disculpe.",
-              "note": "Modelo enseñado en Explore."
+              "english": "Polite words",
+              "spanish": "Pedir, agradecer y disculparse con expresiones básicas.",
+              "note": "En Thank, Thanks y Thank you, TH es interdental: coloca suavemente la punta de la lengua entre los dientes. No es exactamente la z castellana ni una s."
             }
           ]
         },
@@ -548,72 +329,72 @@
             {
               "position": 1,
               "title": "Bloque 1",
-              "content": "Objetivo: Polite words.",
+              "content": "Please suaviza una petición",
               "example": "Please.",
               "translation": "Por favor."
             },
             {
               "position": 2,
               "title": "Bloque 2",
-              "content": "thank — agradecer. Pronunciación: zánk*.",
+              "content": "Thank you expresa agradecimiento",
               "example": "Thank you.",
               "translation": "Gracias."
             },
             {
               "position": 3,
               "title": "Bloque 3",
-              "content": "Thanks. — Gracias..",
+              "content": "Thanks es informal",
               "example": "Thanks.",
               "translation": "Gracias."
             },
             {
               "position": 4,
               "title": "Bloque 4",
-              "content": "You're welcome. — De nada..",
+              "content": "You're welcome responde a Thank you",
               "example": "You're welcome.",
               "translation": "De nada."
             },
             {
               "position": 5,
               "title": "Bloque 5",
-              "content": "Sorry. — Lo siento..",
+              "content": "Sorry expresa disculpa",
               "example": "Sorry.",
               "translation": "Lo siento."
             },
             {
               "position": 6,
               "title": "Bloque 6",
-              "content": "Excuse me. — Disculpe..",
-              "example": "Excuse me.",
-              "translation": "Disculpe."
+              "content": "I'm sorry refuerza la disculpa",
+              "example": "I'm sorry.",
+              "translation": "Lo siento."
             },
             {
               "position": 7,
               "title": "Bloque 7",
-              "content": "Please suaviza peticiones. Thank you/thanks expresan agradecimiento; thanks es informal. You're welcome responde a thank you. Sorry expresa disculpa. Excuse me sirve para llamar la atención. TH requiere lengua entre los dientes; no es exactamente una z española.",
-              "example": "Yes, please.",
-              "translation": "Sí, por favor."
+              "content": "Excuse me sirve para llamar la atención o pedir paso",
+              "example": "Excuse me.",
+              "translation": "Disculpe / perdón."
             },
             {
               "position": 8,
               "title": "Bloque 8",
-              "content": "No, thank you. — No, gracias..",
-              "example": "No, thank you.",
-              "translation": "No, gracias."
+              "content": "Yes, please acepta educadamente",
+              "example": "Yes, please.",
+              "translation": "Sí, por favor."
             },
             {
               "position": 9,
               "title": "Bloque 9",
-              "content": "Help, please. — Ayuda, por favor..",
-              "example": "Help, please.",
-              "translation": "Ayuda, por favor."
+              "content": "No, thank you rechaza educadamente",
+              "example": "No, thank you.",
+              "translation": "No, gracias."
             },
             {
               "position": 10,
               "title": "Bloque 10",
-              "content": "Excuse me. — Disculpe..",
-              "example": "Excuse me.",
-              "translation": "Disculpe."
+              "content": "Help, please pide ayuda; TH se articula con la lengua entre los dientes",
+              "example": "Help, please.",
+              "translation": "Ayuda, por favor."
             }
           ]
         }
@@ -630,14 +411,14 @@
           {
             "itemId": "english-pre-a1-m004-practice-ex01-i01",
             "position": 1,
-            "prompt": "Elige la traducción de “please”.",
+            "prompt": "Elige el significado de “please”.",
             "evaluation": {
               "type": "single_choice"
             },
             "options": [
-              "agradecer",
-              "gracias",
-              "por favor"
+              "por favor",
+              "agradecer (en Thank you)",
+              "gracias"
             ],
             "answer": "por favor",
             "taskType": "vocabulary_translation"
@@ -645,29 +426,29 @@
           {
             "itemId": "english-pre-a1-m004-practice-ex01-i02",
             "position": 2,
-            "prompt": "Elige la traducción de “thank”.",
-            "evaluation": {
-              "type": "single_choice"
-            },
-            "options": [
-              "de nada",
-              "agradecer",
-              "gracias"
-            ],
-            "answer": "agradecer",
-            "taskType": "vocabulary_translation"
-          },
-          {
-            "itemId": "english-pre-a1-m004-practice-ex01-i03",
-            "position": 3,
-            "prompt": "Elige la traducción de “thanks”.",
+            "prompt": "Elige el significado de “thank”.",
             "evaluation": {
               "type": "single_choice"
             },
             "options": [
               "gracias",
-              "de nada",
-              "lo siento"
+              "agradecer (en Thank you)",
+              "tú / usted"
+            ],
+            "answer": "agradecer (en Thank you)",
+            "taskType": "vocabulary_translation"
+          },
+          {
+            "itemId": "english-pre-a1-m004-practice-ex01-i03",
+            "position": 3,
+            "prompt": "Elige el significado de “thanks”.",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "tú / usted",
+              "eres/estás (en la fórmula)",
+              "gracias"
             ],
             "answer": "gracias",
             "taskType": "vocabulary_translation"
@@ -675,106 +456,106 @@
           {
             "itemId": "english-pre-a1-m004-practice-ex01-i04",
             "position": 4,
-            "prompt": "Elige la traducción de “thank you”.",
+            "prompt": "Elige el significado de “you”.",
             "evaluation": {
               "type": "single_choice"
             },
             "options": [
-              "lo siento",
-              "disculpe",
-              "gracias"
+              "tú / usted",
+              "eres/estás (en la fórmula)",
+              "bienvenido/a"
             ],
-            "answer": "gracias",
+            "answer": "tú / usted",
             "taskType": "vocabulary_translation"
           },
           {
             "itemId": "english-pre-a1-m004-practice-ex01-i05",
             "position": 5,
-            "prompt": "Elige la traducción de “you're welcome”.",
+            "prompt": "Elige el significado de “you're”.",
             "evaluation": {
               "type": "single_choice"
             },
             "options": [
-              "sí",
-              "de nada",
-              "disculpe"
+              "bienvenido/a",
+              "eres/estás (en la fórmula)",
+              "lo siento"
             ],
-            "answer": "de nada",
+            "answer": "eres/estás (en la fórmula)",
             "taskType": "vocabulary_translation"
           },
           {
             "itemId": "english-pre-a1-m004-practice-ex01-i06",
             "position": 6,
-            "prompt": "Elige la traducción de “sorry”.",
+            "prompt": "Elige el significado de “welcome”.",
             "evaluation": {
               "type": "single_choice"
             },
             "options": [
               "lo siento",
-              "sí",
-              "no"
+              "parte de Excuse me",
+              "bienvenido/a"
             ],
-            "answer": "lo siento",
+            "answer": "bienvenido/a",
             "taskType": "vocabulary_translation"
           },
           {
             "itemId": "english-pre-a1-m004-practice-ex01-i07",
             "position": 7,
-            "prompt": "Elige la traducción de “excuse me”.",
+            "prompt": "Elige el significado de “sorry”.",
             "evaluation": {
               "type": "single_choice"
             },
             "options": [
-              "no",
-              "ayuda",
-              "disculpe"
+              "lo siento",
+              "parte de Excuse me",
+              "me / mí"
             ],
-            "answer": "disculpe",
+            "answer": "lo siento",
             "taskType": "vocabulary_translation"
           },
           {
             "itemId": "english-pre-a1-m004-practice-ex01-i08",
             "position": 8,
-            "prompt": "Elige la traducción de “yes”.",
+            "prompt": "Elige el significado de “excuse”.",
             "evaluation": {
               "type": "single_choice"
             },
             "options": [
-              "aquí",
-              "sí",
-              "ayuda"
+              "me / mí",
+              "parte de Excuse me",
+              "sí"
             ],
-            "answer": "sí",
+            "answer": "parte de Excuse me",
             "taskType": "vocabulary_translation"
           },
           {
             "itemId": "english-pre-a1-m004-practice-ex01-i09",
             "position": 9,
-            "prompt": "Elige la traducción de “no”.",
+            "prompt": "Elige el significado de “me”.",
             "evaluation": {
               "type": "single_choice"
             },
             "options": [
+              "sí",
               "no",
-              "aquí",
-              "puerta"
+              "me / mí"
             ],
-            "answer": "no",
+            "answer": "me / mí",
             "taskType": "vocabulary_translation"
           },
           {
             "itemId": "english-pre-a1-m004-practice-ex01-i10",
             "position": 10,
-            "prompt": "Elige la traducción de “help”.",
+            "prompt": "Elige el significado de “yes”.",
             "evaluation": {
               "type": "single_choice"
             },
             "options": [
-              "puerta",
-              "por favor",
+              "sí",
+              "no",
               "ayuda"
             ],
-            "answer": "ayuda",
+            "answer": "sí",
             "taskType": "vocabulary_translation"
           }
         ]
@@ -788,78 +569,78 @@
         "exerciseId": "english-pre-a1-m004-grammar-ex01",
         "type": "grammar",
         "theory": {
-          "title": "Polite words",
-          "explanation": "Please suaviza peticiones. Thank you/thanks expresan agradecimiento; thanks es informal. You're welcome responde a thank you. Sorry expresa disculpa. Excuse me sirve para llamar la atención. TH requiere lengua entre los dientes; no es exactamente una z española.",
-          "tip": "Comprende todos los modelos de Explore antes de comenzar las actividades.",
+          "title": "Expresiones y estructuras de la misión",
+          "explanation": "En Thank, Thanks y Thank you, TH es interdental: coloca suavemente la punta de la lengua entre los dientes. No es exactamente la z castellana ni una s.",
+          "tip": "Reconoce el modelo completo antes de utilizarlo.",
           "patterns": [
             {
-              "label": "Bloque 1",
-              "pattern": "Polite words",
+              "label": "Modelo 1",
+              "pattern": "Please.",
               "examples": [
-                "Please."
+                "Por favor."
               ]
             },
             {
-              "label": "Bloque 2",
-              "pattern": "Please suaviza peticiones. Thank you/thanks expresan agradecimiento; thanks es informal. You're welcome responde a thank you. Sorry expresa disculpa. Excuse me sirve para llamar la atención. TH requiere lengua entre los dientes; no es exactamente una z española.",
+              "label": "Modelo 2",
+              "pattern": "Thank you.",
               "examples": [
-                "Thank you."
+                "Gracias."
               ]
             },
             {
-              "label": "Bloque 3",
-              "pattern": "Please suaviza peticiones. Thank you/thanks expresan agradecimiento; thanks es informal. You're welcome responde a thank you. Sorry expresa disculpa. Excuse me sirve para llamar la atención. TH requiere lengua entre los dientes; no es exactamente una z española.",
+              "label": "Modelo 3",
+              "pattern": "Thanks.",
               "examples": [
-                "Thanks."
+                "Gracias."
               ]
             },
             {
-              "label": "Bloque 4",
-              "pattern": "Please suaviza peticiones. Thank you/thanks expresan agradecimiento; thanks es informal. You're welcome responde a thank you. Sorry expresa disculpa. Excuse me sirve para llamar la atención. TH requiere lengua entre los dientes; no es exactamente una z española.",
+              "label": "Modelo 4",
+              "pattern": "You're welcome.",
               "examples": [
-                "You're welcome."
+                "De nada."
               ]
             },
             {
-              "label": "Bloque 5",
-              "pattern": "Please suaviza peticiones. Thank you/thanks expresan agradecimiento; thanks es informal. You're welcome responde a thank you. Sorry expresa disculpa. Excuse me sirve para llamar la atención. TH requiere lengua entre los dientes; no es exactamente una z española.",
+              "label": "Modelo 5",
+              "pattern": "Sorry.",
               "examples": [
-                "Sorry."
+                "Lo siento."
               ]
             },
             {
-              "label": "Bloque 6",
-              "pattern": "Please suaviza peticiones. Thank you/thanks expresan agradecimiento; thanks es informal. You're welcome responde a thank you. Sorry expresa disculpa. Excuse me sirve para llamar la atención. TH requiere lengua entre los dientes; no es exactamente una z española.",
+              "label": "Modelo 6",
+              "pattern": "I'm sorry.",
               "examples": [
-                "Excuse me."
+                "Lo siento."
               ]
             },
             {
-              "label": "Bloque 7",
-              "pattern": "Please suaviza peticiones. Thank you/thanks expresan agradecimiento; thanks es informal. You're welcome responde a thank you. Sorry expresa disculpa. Excuse me sirve para llamar la atención. TH requiere lengua entre los dientes; no es exactamente una z española.",
+              "label": "Modelo 7",
+              "pattern": "Excuse me.",
               "examples": [
-                "Yes, please."
+                "Disculpe / perdón."
               ]
             },
             {
-              "label": "Bloque 8",
-              "pattern": "Please suaviza peticiones. Thank you/thanks expresan agradecimiento; thanks es informal. You're welcome responde a thank you. Sorry expresa disculpa. Excuse me sirve para llamar la atención. TH requiere lengua entre los dientes; no es exactamente una z española.",
+              "label": "Modelo 8",
+              "pattern": "Yes, please.",
               "examples": [
-                "No, thank you."
+                "Sí, por favor."
               ]
             },
             {
-              "label": "Bloque 9",
-              "pattern": "Please suaviza peticiones. Thank you/thanks expresan agradecimiento; thanks es informal. You're welcome responde a thank you. Sorry expresa disculpa. Excuse me sirve para llamar la atención. TH requiere lengua entre los dientes; no es exactamente una z española.",
+              "label": "Modelo 9",
+              "pattern": "No, thank you.",
               "examples": [
-                "Help, please."
+                "No, gracias."
               ]
             },
             {
-              "label": "Bloque 10",
-              "pattern": "Please suaviza peticiones. Thank you/thanks expresan agradecimiento; thanks es informal. You're welcome responde a thank you. Sorry expresa disculpa. Excuse me sirve para llamar la atención. TH requiere lengua entre los dientes; no es exactamente una z española.",
+              "label": "Modelo 10",
+              "pattern": "Help, please.",
               "examples": [
-                "Excuse me."
+                "Ayuda, por favor."
               ]
             }
           ]
@@ -868,77 +649,97 @@
           {
             "itemId": "english-pre-a1-m004-grammar-ex01-i01",
             "position": 1,
-            "prompt": "Reconoce el modelo trabajado: Please.",
+            "prompt": "Selecciona el modelo que significa: “Por favor.”",
             "evaluation": {
               "type": "single_choice"
             },
             "options": [
-              "Thank you.",
               "Please.",
+              "Thank you.",
               "Thanks."
             ],
-            "answer": "Please."
+            "answer": "Please.",
+            "taskType": "functional_language"
           },
           {
             "itemId": "english-pre-a1-m004-grammar-ex01-i02",
             "position": 2,
-            "prompt": "Reconoce el modelo trabajado: Thank you.",
+            "prompt": "Selecciona el modelo que significa: “Gracias.”",
             "evaluation": {
               "type": "single_choice"
             },
             "options": [
-              "You're welcome.",
               "Thanks.",
-              "Thank you."
+              "Thank you.",
+              "You're welcome."
             ],
-            "answer": "Thank you."
+            "answer": "Thank you.",
+            "taskType": "functional_language"
           },
           {
             "itemId": "english-pre-a1-m004-grammar-ex01-i03",
             "position": 3,
-            "prompt": "Reconoce el modelo trabajado: Thanks.",
+            "prompt": "Selecciona el modelo que significa: “Gracias.”",
             "evaluation": {
               "type": "single_choice"
             },
             "options": [
-              "Thanks.",
               "You're welcome.",
-              "Sorry."
+              "Sorry.",
+              "Thanks."
             ],
-            "answer": "Thanks."
+            "answer": "Thanks.",
+            "taskType": "functional_language"
           },
           {
             "itemId": "english-pre-a1-m004-grammar-ex01-i04",
             "position": 4,
-            "prompt": "Reconoce el modelo trabajado: You're welcome.",
+            "prompt": "Selecciona el modelo que significa: “De nada.”",
             "evaluation": {
               "type": "single_choice"
             },
             "options": [
-              "Sorry.",
               "You're welcome.",
-              "Excuse me."
+              "Sorry.",
+              "I'm sorry."
             ],
-            "answer": "You're welcome."
+            "answer": "You're welcome.",
+            "taskType": "functional_language"
           },
           {
             "itemId": "english-pre-a1-m004-grammar-ex01-i05",
             "position": 5,
-            "prompt": "Reconoce el modelo trabajado: Sorry.",
+            "prompt": "Selecciona el modelo que significa: “Lo siento.”",
             "evaluation": {
               "type": "single_choice"
             },
             "options": [
-              "Yes, please.",
-              "Excuse me.",
-              "Sorry."
+              "I'm sorry.",
+              "Sorry.",
+              "Excuse me."
             ],
-            "answer": "Sorry."
+            "answer": "Sorry.",
+            "taskType": "functional_language"
           },
           {
             "itemId": "english-pre-a1-m004-grammar-ex01-i06",
             "position": 6,
-            "prompt": "Reconoce el modelo trabajado: Excuse me.",
+            "prompt": "Selecciona el modelo que significa: “Lo siento.”",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "Excuse me.",
+              "Yes, please.",
+              "I'm sorry."
+            ],
+            "answer": "I'm sorry.",
+            "taskType": "functional_language"
+          },
+          {
+            "itemId": "english-pre-a1-m004-grammar-ex01-i07",
+            "position": 7,
+            "prompt": "Selecciona el modelo que significa: “Disculpe / perdón.”",
             "evaluation": {
               "type": "single_choice"
             },
@@ -947,12 +748,13 @@
               "Yes, please.",
               "No, thank you."
             ],
-            "answer": "Excuse me."
+            "answer": "Excuse me.",
+            "taskType": "functional_language"
           },
           {
-            "itemId": "english-pre-a1-m004-grammar-ex01-i07",
-            "position": 7,
-            "prompt": "Reconoce el modelo trabajado: Yes, please.",
+            "itemId": "english-pre-a1-m004-grammar-ex01-i08",
+            "position": 8,
+            "prompt": "Selecciona el modelo que significa: “Sí, por favor.”",
             "evaluation": {
               "type": "single_choice"
             },
@@ -961,49 +763,38 @@
               "Yes, please.",
               "Help, please."
             ],
-            "answer": "Yes, please."
-          },
-          {
-            "itemId": "english-pre-a1-m004-grammar-ex01-i08",
-            "position": 8,
-            "prompt": "Reconoce el modelo trabajado: No, thank you.",
-            "evaluation": {
-              "type": "single_choice"
-            },
-            "options": [
-              "Excuse me.",
-              "Help, please.",
-              "No, thank you."
-            ],
-            "answer": "No, thank you."
+            "answer": "Yes, please.",
+            "taskType": "functional_language"
           },
           {
             "itemId": "english-pre-a1-m004-grammar-ex01-i09",
             "position": 9,
-            "prompt": "Reconoce el modelo trabajado: Help, please.",
+            "prompt": "Selecciona el modelo que significa: “No, gracias.”",
             "evaluation": {
               "type": "single_choice"
             },
             "options": [
               "Help, please.",
-              "Excuse me.",
-              "Please."
+              "Please.",
+              "No, thank you."
             ],
-            "answer": "Help, please."
+            "answer": "No, thank you.",
+            "taskType": "functional_language"
           },
           {
             "itemId": "english-pre-a1-m004-grammar-ex01-i10",
             "position": 10,
-            "prompt": "Reconoce el modelo trabajado: Excuse me.",
+            "prompt": "Selecciona el modelo que significa: “Ayuda, por favor.”",
             "evaluation": {
               "type": "single_choice"
             },
             "options": [
+              "Help, please.",
               "Please.",
-              "Excuse me.",
               "Thank you."
             ],
-            "answer": "Excuse me."
+            "answer": "Help, please.",
+            "taskType": "functional_language"
           }
         ]
       }
@@ -1022,15 +813,17 @@
             "word": "please",
             "translation": "por favor",
             "pronunciationGuide": "plíis",
-            "audio": "tts:en-GB:please"
+            "audio": "tts:en-GB:please",
+            "audioStatus": "synthetic_pending_review"
           },
           {
             "itemId": "english-pre-a1-m004-pronunciation-ex01-i02",
             "position": 2,
             "word": "thank",
-            "translation": "agradecer",
+            "translation": "agradecer (en Thank you)",
             "pronunciationGuide": "zánk*",
-            "audio": "tts:en-GB:thank"
+            "audio": "tts:en-GB:thank",
+            "audioStatus": "synthetic_pending_review"
           },
           {
             "itemId": "english-pre-a1-m004-pronunciation-ex01-i03",
@@ -1038,63 +831,71 @@
             "word": "thanks",
             "translation": "gracias",
             "pronunciationGuide": "zánks*",
-            "audio": "tts:en-GB:thanks"
+            "audio": "tts:en-GB:thanks",
+            "audioStatus": "synthetic_pending_review"
           },
           {
             "itemId": "english-pre-a1-m004-pronunciation-ex01-i04",
             "position": 4,
-            "word": "thank you",
-            "translation": "gracias",
-            "pronunciationGuide": "zánk iu*",
-            "audio": "tts:en-GB:thank you"
+            "word": "you",
+            "translation": "tú / usted",
+            "pronunciationGuide": "iú",
+            "audio": "tts:en-GB:you",
+            "audioStatus": "synthetic_pending_review"
           },
           {
             "itemId": "english-pre-a1-m004-pronunciation-ex01-i05",
             "position": 5,
-            "word": "you're welcome",
-            "translation": "de nada",
-            "pronunciationGuide": "ior UÉL-kam",
-            "audio": "tts:en-GB:you're welcome"
+            "word": "you're",
+            "translation": "eres/estás (en la fórmula)",
+            "pronunciationGuide": "iór",
+            "audio": "tts:en-GB:you're",
+            "audioStatus": "synthetic_pending_review"
           },
           {
             "itemId": "english-pre-a1-m004-pronunciation-ex01-i06",
             "position": 6,
-            "word": "sorry",
-            "translation": "lo siento",
-            "pronunciationGuide": "SÓ-ri",
-            "audio": "tts:en-GB:sorry"
+            "word": "welcome",
+            "translation": "bienvenido/a",
+            "pronunciationGuide": "UÉL-kam",
+            "audio": "tts:en-GB:welcome",
+            "audioStatus": "synthetic_pending_review"
           },
           {
             "itemId": "english-pre-a1-m004-pronunciation-ex01-i07",
             "position": 7,
-            "word": "excuse me",
-            "translation": "disculpe",
-            "pronunciationGuide": "eks-KIÚS mí",
-            "audio": "tts:en-GB:excuse me"
+            "word": "sorry",
+            "translation": "lo siento",
+            "pronunciationGuide": "SÓ-ri",
+            "audio": "tts:en-GB:sorry",
+            "audioStatus": "synthetic_pending_review"
           },
           {
             "itemId": "english-pre-a1-m004-pronunciation-ex01-i08",
             "position": 8,
-            "word": "yes",
-            "translation": "sí",
-            "pronunciationGuide": "iés",
-            "audio": "tts:en-GB:yes"
+            "word": "excuse",
+            "translation": "parte de Excuse me",
+            "pronunciationGuide": "eks-KIÚS",
+            "audio": "tts:en-GB:excuse",
+            "audioStatus": "synthetic_pending_review"
           },
           {
             "itemId": "english-pre-a1-m004-pronunciation-ex01-i09",
             "position": 9,
-            "word": "no",
-            "translation": "no",
-            "pronunciationGuide": "nóu",
-            "audio": "tts:en-GB:no"
+            "word": "me",
+            "translation": "me / mí",
+            "pronunciationGuide": "mí",
+            "audio": "tts:en-GB:me",
+            "audioStatus": "synthetic_pending_review"
           },
           {
             "itemId": "english-pre-a1-m004-pronunciation-ex01-i10",
             "position": 10,
-            "word": "help",
-            "translation": "ayuda",
-            "pronunciationGuide": "jelp",
-            "audio": "tts:en-GB:help"
+            "word": "yes",
+            "translation": "sí",
+            "pronunciationGuide": "iés",
+            "audio": "tts:en-GB:yes",
+            "audioStatus": "synthetic_pending_review"
           }
         ]
       }
@@ -1108,148 +909,158 @@
         "type": "reading_comprehension",
         "content": {
           "passageId": "english-pre-a1-m004-reading-passage-01",
-          "passage": "Please. Thank you. You're welcome. Sorry. Excuse me. Help, please."
+          "passage": "Please. Thank you. Thanks. You're welcome. Sorry. I'm sorry. Excuse me. Yes, please. No, thank you. Help, please."
         },
         "items": [
           {
             "itemId": "english-pre-a1-m004-reading-ex01-i01",
             "position": 1,
-            "prompt": "¿Qué tema presenta el texto?",
+            "prompt": "En el texto, ¿qué significa “Please.”?",
             "evaluation": {
               "type": "single_choice"
             },
             "options": [
-              "por favor",
-              "agradecer",
-              "Polite words"
+              "Por favor.",
+              "Gracias.",
+              "Gracias."
             ],
-            "answer": "Polite words"
+            "answer": "Por favor.",
+            "taskType": "reading_detail"
           },
           {
             "itemId": "english-pre-a1-m004-reading-ex01-i02",
             "position": 2,
-            "prompt": "¿Qué significa “thank” en el texto?",
+            "prompt": "En el texto, ¿qué significa “Thank you.”?",
             "evaluation": {
               "type": "single_choice"
             },
             "options": [
-              "de nada",
-              "agradecer",
-              "gracias"
+              "De nada.",
+              "Gracias.",
+              "Lo siento."
             ],
-            "answer": "agradecer"
+            "answer": "Gracias.",
+            "taskType": "reading_detail"
           },
           {
             "itemId": "english-pre-a1-m004-reading-ex01-i03",
             "position": 3,
-            "prompt": "¿Qué significa “thanks” en el texto?",
+            "prompt": "En el texto, ¿qué significa “Thanks.”?",
             "evaluation": {
               "type": "single_choice"
             },
             "options": [
-              "gracias",
-              "de nada",
-              "lo siento"
+              "Lo siento.",
+              "Lo siento.",
+              "Gracias."
             ],
-            "answer": "gracias"
+            "answer": "Gracias.",
+            "taskType": "reading_detail"
           },
           {
             "itemId": "english-pre-a1-m004-reading-ex01-i04",
             "position": 4,
-            "prompt": "¿Qué significa “thank you” en el texto?",
+            "prompt": "En el texto, ¿qué significa “You're welcome.”?",
             "evaluation": {
               "type": "single_choice"
             },
             "options": [
-              "lo siento",
-              "disculpe",
-              "gracias"
+              "De nada.",
+              "Lo siento.",
+              "Lo siento."
             ],
-            "answer": "gracias"
+            "answer": "De nada.",
+            "taskType": "reading_detail"
           },
           {
             "itemId": "english-pre-a1-m004-reading-ex01-i05",
             "position": 5,
-            "prompt": "¿Qué significa “you're welcome” en el texto?",
+            "prompt": "En el texto, ¿qué significa “Sorry.”?",
             "evaluation": {
               "type": "single_choice"
             },
             "options": [
-              "sí",
-              "de nada",
-              "disculpe"
+              "Disculpe / perdón.",
+              "Lo siento.",
+              "Sí, por favor."
             ],
-            "answer": "de nada"
+            "answer": "Lo siento.",
+            "taskType": "reading_detail"
           },
           {
             "itemId": "english-pre-a1-m004-reading-ex01-i06",
             "position": 6,
-            "prompt": "¿Qué significa “sorry” en el texto?",
+            "prompt": "En el texto, ¿qué significa “I'm sorry.”?",
             "evaluation": {
               "type": "single_choice"
             },
             "options": [
-              "lo siento",
-              "sí",
-              "no"
+              "Sí, por favor.",
+              "No, gracias.",
+              "Lo siento."
             ],
-            "answer": "lo siento"
+            "answer": "Lo siento.",
+            "taskType": "reading_detail"
           },
           {
             "itemId": "english-pre-a1-m004-reading-ex01-i07",
             "position": 7,
-            "prompt": "¿Qué significa “excuse me” en el texto?",
+            "prompt": "En el texto, ¿qué significa “Excuse me.”?",
             "evaluation": {
               "type": "single_choice"
             },
             "options": [
-              "no",
-              "ayuda",
-              "disculpe"
+              "Disculpe / perdón.",
+              "Sí, por favor.",
+              "No, gracias."
             ],
-            "answer": "disculpe"
+            "answer": "Disculpe / perdón.",
+            "taskType": "reading_detail"
           },
           {
             "itemId": "english-pre-a1-m004-reading-ex01-i08",
             "position": 8,
-            "prompt": "¿Qué significa “yes” en el texto?",
+            "prompt": "En el texto, ¿qué significa “Yes, please.”?",
             "evaluation": {
               "type": "single_choice"
             },
             "options": [
-              "aquí",
-              "sí",
-              "ayuda"
+              "No, gracias.",
+              "Sí, por favor.",
+              "Ayuda, por favor."
             ],
-            "answer": "sí"
+            "answer": "Sí, por favor.",
+            "taskType": "reading_detail"
           },
           {
             "itemId": "english-pre-a1-m004-reading-ex01-i09",
             "position": 9,
-            "prompt": "¿Qué significa “no” en el texto?",
+            "prompt": "En el texto, ¿qué significa “No, thank you.”?",
             "evaluation": {
               "type": "single_choice"
             },
             "options": [
-              "no",
-              "aquí",
-              "puerta"
+              "Ayuda, por favor.",
+              "Por favor.",
+              "No, gracias."
             ],
-            "answer": "no"
+            "answer": "No, gracias.",
+            "taskType": "reading_detail"
           },
           {
             "itemId": "english-pre-a1-m004-reading-ex01-i10",
             "position": 10,
-            "prompt": "¿Qué significa “help” en el texto?",
+            "prompt": "En el texto, ¿qué significa “Help, please.”?",
             "evaluation": {
               "type": "single_choice"
             },
             "options": [
-              "puerta",
-              "por favor",
-              "ayuda"
+              "Ayuda, por favor.",
+              "Por favor.",
+              "Gracias."
             ],
-            "answer": "ayuda"
+            "answer": "Ayuda, por favor.",
+            "taskType": "reading_detail"
           }
         ]
       }
@@ -1360,6 +1171,25 @@
           {
             "itemId": "english-pre-a1-m004-writing-ex01-i06",
             "position": 6,
+            "audio": "tts:en-GB:I'm sorry.",
+            "audioLocale": "en-GB",
+            "audioStatus": "synthetic_pending_review",
+            "kind": "sentence",
+            "repeatCount": 3,
+            "expectedAnswer": "I'm sorry.",
+            "evaluation": {
+              "type": "normalised_text"
+            },
+            "segments": [
+              {
+                "segmentId": "english-pre-a1-m004-writing-segment-06",
+                "text": "I'm sorry."
+              }
+            ]
+          },
+          {
+            "itemId": "english-pre-a1-m004-writing-ex01-i07",
+            "position": 7,
             "audio": "tts:en-GB:Excuse me.",
             "audioLocale": "en-GB",
             "audioStatus": "synthetic_pending_review",
@@ -1371,14 +1201,14 @@
             },
             "segments": [
               {
-                "segmentId": "english-pre-a1-m004-writing-segment-06",
+                "segmentId": "english-pre-a1-m004-writing-segment-07",
                 "text": "Excuse me."
               }
             ]
           },
           {
-            "itemId": "english-pre-a1-m004-writing-ex01-i07",
-            "position": 7,
+            "itemId": "english-pre-a1-m004-writing-ex01-i08",
+            "position": 8,
             "audio": "tts:en-GB:Yes, please.",
             "audioLocale": "en-GB",
             "audioStatus": "synthetic_pending_review",
@@ -1390,14 +1220,14 @@
             },
             "segments": [
               {
-                "segmentId": "english-pre-a1-m004-writing-segment-07",
+                "segmentId": "english-pre-a1-m004-writing-segment-08",
                 "text": "Yes, please."
               }
             ]
           },
           {
-            "itemId": "english-pre-a1-m004-writing-ex01-i08",
-            "position": 8,
+            "itemId": "english-pre-a1-m004-writing-ex01-i09",
+            "position": 9,
             "audio": "tts:en-GB:No, thank you.",
             "audioLocale": "en-GB",
             "audioStatus": "synthetic_pending_review",
@@ -1409,14 +1239,14 @@
             },
             "segments": [
               {
-                "segmentId": "english-pre-a1-m004-writing-segment-08",
+                "segmentId": "english-pre-a1-m004-writing-segment-09",
                 "text": "No, thank you."
               }
             ]
           },
           {
-            "itemId": "english-pre-a1-m004-writing-ex01-i09",
-            "position": 9,
+            "itemId": "english-pre-a1-m004-writing-ex01-i10",
+            "position": 10,
             "audio": "tts:en-GB:Help, please.",
             "audioLocale": "en-GB",
             "audioStatus": "synthetic_pending_review",
@@ -1428,27 +1258,8 @@
             },
             "segments": [
               {
-                "segmentId": "english-pre-a1-m004-writing-segment-09",
-                "text": "Help, please."
-              }
-            ]
-          },
-          {
-            "itemId": "english-pre-a1-m004-writing-ex01-i10",
-            "position": 10,
-            "audio": "tts:en-GB:Excuse me.",
-            "audioLocale": "en-GB",
-            "audioStatus": "synthetic_pending_review",
-            "kind": "sentence",
-            "repeatCount": 3,
-            "expectedAnswer": "Excuse me.",
-            "evaluation": {
-              "type": "normalised_text"
-            },
-            "segments": [
-              {
                 "segmentId": "english-pre-a1-m004-writing-segment-10",
-                "text": "Excuse me."
+                "text": "Help, please."
               }
             ]
           }
@@ -1466,10 +1277,10 @@
           {
             "itemId": "english-pre-a1-m004-speaking-ex01-i01",
             "position": 1,
-            "prompt": "Di en voz alta esta expresión.",
-            "promptSpanish": "Practica el modelo de la misión.",
+            "prompt": "Di en voz alta el modelo.",
+            "promptSpanish": "Practica: Por favor.",
             "modelAnswer": "Please.",
-            "translation": "Please.",
+            "translation": "Por favor.",
             "evaluation": {
               "type": "transcription_feedback",
               "transcriptionSeparateFromPronunciation": true
@@ -1478,10 +1289,10 @@
           {
             "itemId": "english-pre-a1-m004-speaking-ex01-i02",
             "position": 2,
-            "prompt": "Di en voz alta esta expresión.",
-            "promptSpanish": "Practica el modelo de la misión.",
+            "prompt": "Di en voz alta el modelo.",
+            "promptSpanish": "Practica: Gracias.",
             "modelAnswer": "Thank you.",
-            "translation": "Thank you.",
+            "translation": "Gracias.",
             "evaluation": {
               "type": "transcription_feedback",
               "transcriptionSeparateFromPronunciation": true
@@ -1490,10 +1301,10 @@
           {
             "itemId": "english-pre-a1-m004-speaking-ex01-i03",
             "position": 3,
-            "prompt": "Di en voz alta esta expresión.",
-            "promptSpanish": "Practica el modelo de la misión.",
+            "prompt": "Di en voz alta el modelo.",
+            "promptSpanish": "Practica: Gracias.",
             "modelAnswer": "Thanks.",
-            "translation": "Thanks.",
+            "translation": "Gracias.",
             "evaluation": {
               "type": "transcription_feedback",
               "transcriptionSeparateFromPronunciation": true
@@ -1502,10 +1313,10 @@
           {
             "itemId": "english-pre-a1-m004-speaking-ex01-i04",
             "position": 4,
-            "prompt": "Di en voz alta esta expresión.",
-            "promptSpanish": "Practica el modelo de la misión.",
+            "prompt": "Di en voz alta el modelo.",
+            "promptSpanish": "Practica: De nada.",
             "modelAnswer": "You're welcome.",
-            "translation": "You're welcome.",
+            "translation": "De nada.",
             "evaluation": {
               "type": "transcription_feedback",
               "transcriptionSeparateFromPronunciation": true
@@ -1514,10 +1325,10 @@
           {
             "itemId": "english-pre-a1-m004-speaking-ex01-i05",
             "position": 5,
-            "prompt": "Di en voz alta esta expresión.",
-            "promptSpanish": "Practica el modelo de la misión.",
+            "prompt": "Di en voz alta el modelo.",
+            "promptSpanish": "Practica: Lo siento.",
             "modelAnswer": "Sorry.",
-            "translation": "Sorry.",
+            "translation": "Lo siento.",
             "evaluation": {
               "type": "transcription_feedback",
               "transcriptionSeparateFromPronunciation": true
@@ -1526,10 +1337,10 @@
           {
             "itemId": "english-pre-a1-m004-speaking-ex01-i06",
             "position": 6,
-            "prompt": "Di en voz alta esta expresión.",
-            "promptSpanish": "Practica el modelo de la misión.",
-            "modelAnswer": "Excuse me.",
-            "translation": "Excuse me.",
+            "prompt": "Di en voz alta el modelo.",
+            "promptSpanish": "Practica: Lo siento.",
+            "modelAnswer": "I'm sorry.",
+            "translation": "Lo siento.",
             "evaluation": {
               "type": "transcription_feedback",
               "transcriptionSeparateFromPronunciation": true
@@ -1538,10 +1349,10 @@
           {
             "itemId": "english-pre-a1-m004-speaking-ex01-i07",
             "position": 7,
-            "prompt": "Di en voz alta esta expresión.",
-            "promptSpanish": "Practica el modelo de la misión.",
-            "modelAnswer": "Yes, please.",
-            "translation": "Yes, please.",
+            "prompt": "Di en voz alta el modelo.",
+            "promptSpanish": "Practica: Disculpe / perdón.",
+            "modelAnswer": "Excuse me.",
+            "translation": "Disculpe / perdón.",
             "evaluation": {
               "type": "transcription_feedback",
               "transcriptionSeparateFromPronunciation": true
@@ -1550,10 +1361,10 @@
           {
             "itemId": "english-pre-a1-m004-speaking-ex01-i08",
             "position": 8,
-            "prompt": "Di en voz alta esta expresión.",
-            "promptSpanish": "Practica el modelo de la misión.",
-            "modelAnswer": "No, thank you.",
-            "translation": "No, thank you.",
+            "prompt": "Di en voz alta el modelo.",
+            "promptSpanish": "Practica: Sí, por favor.",
+            "modelAnswer": "Yes, please.",
+            "translation": "Sí, por favor.",
             "evaluation": {
               "type": "transcription_feedback",
               "transcriptionSeparateFromPronunciation": true
@@ -1562,10 +1373,10 @@
           {
             "itemId": "english-pre-a1-m004-speaking-ex01-i09",
             "position": 9,
-            "prompt": "Di en voz alta esta expresión.",
-            "promptSpanish": "Practica el modelo de la misión.",
-            "modelAnswer": "Help, please.",
-            "translation": "Help, please.",
+            "prompt": "Di en voz alta el modelo.",
+            "promptSpanish": "Practica: No, gracias.",
+            "modelAnswer": "No, thank you.",
+            "translation": "No, gracias.",
             "evaluation": {
               "type": "transcription_feedback",
               "transcriptionSeparateFromPronunciation": true
@@ -1574,10 +1385,10 @@
           {
             "itemId": "english-pre-a1-m004-speaking-ex01-i10",
             "position": 10,
-            "prompt": "Di en voz alta esta expresión.",
-            "promptSpanish": "Practica el modelo de la misión.",
-            "modelAnswer": "Excuse me.",
-            "translation": "Excuse me.",
+            "prompt": "Di en voz alta el modelo.",
+            "promptSpanish": "Practica: Ayuda, por favor.",
+            "modelAnswer": "Help, please.",
+            "translation": "Ayuda, por favor.",
             "evaluation": {
               "type": "transcription_feedback",
               "transcriptionSeparateFromPronunciation": true
@@ -1594,7 +1405,7 @@
         "exerciseId": "english-pre-a1-m004-listening-ex01",
         "type": "listening_gap_fill",
         "content": {
-          "audio": "tts:en-GB:Please. Thank you. Thanks. You're welcome. Sorry. Excuse me. Yes, please. No, thank you. Help, please. Excuse me.",
+          "audio": "tts:en-GB:Please. Thank you. Thanks. You're welcome. Sorry. I'm sorry. Excuse me. Yes, please. No, thank you. Help, please.",
           "audioLocale": "en-GB",
           "audioStatus": "synthetic_pending_review",
           "transcriptTemplate": "[[gap-01]] [[gap-02]] [[gap-03]] [[gap-04]] [[gap-05]] [[gap-06]] [[gap-07]] [[gap-08]] [[gap-09]] [[gap-10]]",
@@ -1621,28 +1432,28 @@
             },
             {
               "wordId": "english-pre-a1-m004-listening-word-06",
-              "word": "Excuse me."
+              "word": "I'm sorry."
             },
             {
               "wordId": "english-pre-a1-m004-listening-word-07",
-              "word": "Yes, please."
+              "word": "Excuse me."
             },
             {
               "wordId": "english-pre-a1-m004-listening-word-08",
-              "word": "No, thank you."
+              "word": "Yes, please."
             },
             {
               "wordId": "english-pre-a1-m004-listening-word-09",
-              "word": "Help, please."
+              "word": "No, thank you."
             },
             {
               "wordId": "english-pre-a1-m004-listening-word-10",
-              "word": "Excuse me."
+              "word": "Help, please."
             }
           ],
           "interaction": "select_place_move_replace",
-          "audioTranscript": "tts:en-GB:Please. Thank you. Thanks. You're welcome. Sorry. Excuse me. Yes, please. No, thank you. Help, please. Excuse me.",
-          "translation": "Por favor. Gracias. Gracias. De nada. Lo siento. Disculpe. Sí, por favor. No, gracias. Ayuda, por favor. Disculpe."
+          "audioTranscript": "tts:en-GB:Please. Thank you. Thanks. You're welcome. Sorry. I'm sorry. Excuse me. Yes, please. No, thank you. Help, please.",
+          "translation": "Por favor. Gracias. Gracias. De nada. Lo siento. Lo siento. Disculpe / perdón. Sí, por favor. No, gracias. Ayuda, por favor."
         },
         "items": [
           {
@@ -1685,35 +1496,35 @@
             "position": 6,
             "gapToken": "[[gap-06]]",
             "expectedWordId": "english-pre-a1-m004-listening-word-06",
-            "answer": "Excuse me."
+            "answer": "I'm sorry."
           },
           {
             "itemId": "english-pre-a1-m004-listening-ex01-i07",
             "position": 7,
             "gapToken": "[[gap-07]]",
             "expectedWordId": "english-pre-a1-m004-listening-word-07",
-            "answer": "Yes, please."
+            "answer": "Excuse me."
           },
           {
             "itemId": "english-pre-a1-m004-listening-ex01-i08",
             "position": 8,
             "gapToken": "[[gap-08]]",
             "expectedWordId": "english-pre-a1-m004-listening-word-08",
-            "answer": "No, thank you."
+            "answer": "Yes, please."
           },
           {
             "itemId": "english-pre-a1-m004-listening-ex01-i09",
             "position": 9,
             "gapToken": "[[gap-09]]",
             "expectedWordId": "english-pre-a1-m004-listening-word-09",
-            "answer": "Help, please."
+            "answer": "No, thank you."
           },
           {
             "itemId": "english-pre-a1-m004-listening-ex01-i10",
             "position": 10,
             "gapToken": "[[gap-10]]",
             "expectedWordId": "english-pre-a1-m004-listening-word-10",
-            "answer": "Excuse me."
+            "answer": "Help, please."
           }
         ]
       }

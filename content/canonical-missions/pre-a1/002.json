@@ -1,10 +1,11 @@
 {
   "schemaVersion": "1.2.0",
-  "contentVersion": 5,
+  "contentVersion": "2.0.0",
   "course": {
     "courseId": "english-pre-a1",
-    "level": "PRE-A1",
-    "language": "en-GB"
+    "level": "Pre-A1",
+    "language": "en-GB",
+    "title": "Pre-A1 · Usuario principiante"
   },
   "unit": {
     "unitId": "english-pre-a1-unit-01",
@@ -16,7 +17,8 @@
     "missionId": "english-pre-a1-m002",
     "unitId": "english-pre-a1-unit-01",
     "position": 2,
-    "title": "My name is…"
+    "title": "My name is…",
+    "objective": "Preguntar el nombre y decir cómo nos llamamos con dos fórmulas completas."
   },
   "sections": [
     {
@@ -25,22 +27,22 @@
       "position": 1,
       "exercise": {
         "exerciseId": "english-pre-a1-m002-explore-ex01",
-        "type": "vocabulary_pairs",
+        "type": "lesson",
         "items": [
           {
             "itemId": "english-pre-a1-m002-explore-ex01-i01",
             "position": 1,
-            "english": "What",
+            "english": "what",
             "spanish": "qué",
             "pronunciationGuide": "uót",
-            "audio": "tts:en-GB:What",
+            "audio": "tts:en-GB:what",
             "audioStatus": "synthetic_pending_review"
           },
           {
             "itemId": "english-pre-a1-m002-explore-ex01-i02",
             "position": 2,
             "english": "is",
-            "spanish": "es",
+            "spanish": "es (en la fórmula)",
             "pronunciationGuide": "iz",
             "audio": "tts:en-GB:is",
             "audioStatus": "synthetic_pending_review"
@@ -75,119 +77,113 @@
           {
             "itemId": "english-pre-a1-m002-explore-ex01-i06",
             "position": 6,
-            "english": "What's your name?",
-            "spanish": "¿Cómo te llamas?",
-            "pronunciationGuide": "uóts iór NÉIM",
-            "audio": "tts:en-GB:What's your name?",
+            "english": "hello",
+            "spanish": "hola",
+            "pronunciationGuide": "jelóu",
+            "audio": "tts:en-GB:hello",
             "audioStatus": "synthetic_pending_review"
           },
           {
             "itemId": "english-pre-a1-m002-explore-ex01-i07",
             "position": 7,
-            "english": "My name is…",
-            "spanish": "Me llamo…",
-            "pronunciationGuide": "mái NÉIM iz",
-            "audio": "tts:en-GB:My name is…",
+            "english": "see you",
+            "spanish": "hasta luego",
+            "pronunciationGuide": "sí iu",
+            "audio": "tts:en-GB:see you",
             "audioStatus": "synthetic_pending_review"
           },
           {
             "itemId": "english-pre-a1-m002-explore-ex01-i08",
             "position": 8,
-            "english": "What's your name?",
-            "spanish": "¿Cómo te llamas?",
-            "pronunciationGuide": "uót",
-            "audio": "tts:en-GB:What's your name?"
+            "english": "Ana",
+            "spanish": "Ana",
+            "pronunciationGuide": "Á-na",
+            "audio": "tts:en-GB:Ana",
+            "audioStatus": "synthetic_pending_review"
           },
           {
             "itemId": "english-pre-a1-m002-explore-ex01-i09",
             "position": 9,
-            "english": "What's your name?",
-            "spanish": "¿Cómo te llamas?",
-            "pronunciationGuide": "uót",
-            "audio": "tts:en-GB:What's your name?"
-          },
-          {
-            "itemId": "english-pre-a1-m002-explore-ex01-i10",
-            "position": 10,
-            "english": "What's your name?",
-            "spanish": "¿Cómo te llamas?",
-            "pronunciationGuide": "uót",
-            "audio": "tts:en-GB:What's your name?"
+            "english": "Leo",
+            "spanish": "Leo",
+            "pronunciationGuide": "LÍ-ou",
+            "audio": "tts:en-GB:Leo",
+            "audioStatus": "synthetic_pending_review"
           }
         ],
         "theory": {
           "title": "My name is…",
-          "explanation": "What's your name? pregunta el nombre. My name is… sirve para decirlo. Se aprenden como fórmulas completas; la conjugación de be se estudiará después.",
-          "tip": "Comprende todos los modelos de Explore antes de comenzar las actividades.",
+          "explanation": "What's your name? y My name is… se aprenden como expresiones completas. En esta misión no se estudia todavía la conjugación general de be.",
+          "tip": "Exploración es aprendizaje, no un examen. Revisa todos los bloques, palabras y modelos antes de practicar.",
           "patterns": [
             {
               "label": "Bloque 1",
-              "pattern": "Objetivo: My name is….",
+              "pattern": "Preguntar What's your name?",
               "examples": [
                 "What's your name?"
               ]
             },
             {
               "label": "Bloque 2",
-              "pattern": "is — es. Pronunciación: iz.",
+              "pattern": "Responder My name is…",
               "examples": [
                 "My name is Ana."
               ]
             },
             {
               "label": "Bloque 3",
-              "pattern": "What's your name? My name is Leo. — What's your name? My name is Leo..",
+              "pattern": "Name significa nombre",
               "examples": [
-                "What's your name? My name is Leo."
+                "My name is Leo."
               ]
             },
             {
               "label": "Bloque 4",
-              "pattern": "My name is… — Me llamo….",
+              "pattern": "My significa mi",
               "examples": [
-                "My name is…"
+                "Hello!"
               ]
             },
             {
               "label": "Bloque 5",
-              "pattern": "What — qué.",
+              "pattern": "Your significa tu",
               "examples": [
-                "What"
+                "See you!"
               ]
             },
             {
               "label": "Bloque 6",
-              "pattern": "is — es.",
+              "pattern": "What significa qué",
               "examples": [
-                "is"
+                "What's your name?"
               ]
             },
             {
               "label": "Bloque 7",
-              "pattern": "What's your name? pregunta el nombre. My name is… sirve para decirlo. Se aprenden como fórmulas completas; la conjugación de be se estudiará después.",
+              "pattern": "Is aparece dentro de la fórmula",
               "examples": [
-                "your"
+                "My name is Ana."
               ]
             },
             {
               "label": "Bloque 8",
-              "pattern": "name — nombre.",
+              "pattern": "Usar el nombre Ana",
               "examples": [
-                "name"
+                "My name is Leo."
               ]
             },
             {
               "label": "Bloque 9",
-              "pattern": "my — mi.",
+              "pattern": "Usar el nombre Leo",
               "examples": [
-                "my"
+                "Hello!"
               ]
             },
             {
               "label": "Bloque 10",
-              "pattern": "What's your name? — ¿Cómo te llamas?.",
+              "pattern": "Aprender las dos fórmulas completas; be se estudiará después",
               "examples": [
-                "What's your name?"
+                "See you!"
               ]
             }
           ]
@@ -197,179 +193,49 @@
             {
               "english": "What's your name?",
               "spanish": "¿Cómo te llamas?",
-              "note": "Modelo enseñado en Explore."
+              "pronunciationGuide": "uóts iór néim",
+              "audio": "tts:en-GB:What's your name?",
+              "audioStatus": "synthetic_pending_review",
+              "note": "Expresión explicada en Explore."
             },
             {
               "english": "My name is Ana.",
               "spanish": "Me llamo Ana.",
-              "note": "Modelo enseñado en Explore."
+              "pronunciationGuide": "mái néim iz Á-na",
+              "audio": "tts:en-GB:My name is Ana.",
+              "audioStatus": "synthetic_pending_review",
+              "note": "Expresión explicada en Explore."
             },
             {
-              "english": "What's your name? My name is Leo.",
-              "spanish": "What's your name? My name is Leo.",
-              "note": "Modelo enseñado en Explore."
+              "english": "My name is Leo.",
+              "spanish": "Me llamo Leo.",
+              "pronunciationGuide": "mái néim iz LÍ-ou",
+              "audio": "tts:en-GB:My name is Leo.",
+              "audioStatus": "synthetic_pending_review",
+              "note": "Expresión explicada en Explore."
             },
             {
-              "english": "My name is…",
-              "spanish": "Me llamo…",
-              "note": "Modelo enseñado en Explore."
+              "english": "Hello!",
+              "spanish": "¡Hola!",
+              "pronunciationGuide": "jelóu",
+              "audio": "tts:en-GB:Hello!",
+              "audioStatus": "synthetic_pending_review",
+              "note": "Expresión explicada en Explore."
             },
             {
-              "english": "What",
-              "spanish": "qué",
-              "note": "Pronunciación aproximada: uót."
-            },
-            {
-              "english": "is",
-              "spanish": "es",
-              "note": "Pronunciación aproximada: iz."
-            },
-            {
-              "english": "your",
-              "spanish": "tu",
-              "note": "Pronunciación aproximada: iór."
-            },
-            {
-              "english": "name",
-              "spanish": "nombre",
-              "note": "Pronunciación aproximada: NÉIM."
-            },
-            {
-              "english": "my",
-              "spanish": "mi",
-              "note": "Pronunciación aproximada: mái."
+              "english": "See you!",
+              "spanish": "¡Hasta luego!",
+              "pronunciationGuide": "sí iu",
+              "audio": "tts:en-GB:See you!",
+              "audioStatus": "synthetic_pending_review",
+              "note": "Expresión explicada en Explore."
             }
           ],
           "grammar": [
             {
-              "english": "What's your name?",
-              "spanish": "¿Cómo te llamas?",
-              "note": "My name is…"
-            },
-            {
-              "english": "My name is Ana.",
-              "spanish": "Me llamo Ana.",
-              "note": "What's your name? pregunta el nombre. My name is… sirve para decirlo. Se aprenden como fórmulas completas; la conjugación de be se estudiará después."
-            },
-            {
-              "english": "What's your name? My name is Leo.",
-              "spanish": "Modelo de la misión",
-              "note": "What's your name? pregunta el nombre. My name is… sirve para decirlo. Se aprenden como fórmulas completas; la conjugación de be se estudiará después."
-            },
-            {
               "english": "My name is…",
-              "spanish": "Me llamo…",
-              "note": "What's your name? pregunta el nombre. My name is… sirve para decirlo. Se aprenden como fórmulas completas; la conjugación de be se estudiará después."
-            },
-            {
-              "english": "What's your name?",
-              "spanish": "¿Cómo te llamas?",
-              "note": "What's your name? pregunta el nombre. My name is… sirve para decirlo. Se aprenden como fórmulas completas; la conjugación de be se estudiará después."
-            },
-            {
-              "english": "My name is Ana.",
-              "spanish": "Me llamo Ana.",
-              "note": "What's your name? pregunta el nombre. My name is… sirve para decirlo. Se aprenden como fórmulas completas; la conjugación de be se estudiará después."
-            },
-            {
-              "english": "What's your name? My name is Leo.",
-              "spanish": "Modelo de la misión",
-              "note": "What's your name? pregunta el nombre. My name is… sirve para decirlo. Se aprenden como fórmulas completas; la conjugación de be se estudiará después."
-            },
-            {
-              "english": "My name is…",
-              "spanish": "Me llamo…",
-              "note": "What's your name? pregunta el nombre. My name is… sirve para decirlo. Se aprenden como fórmulas completas; la conjugación de be se estudiará después."
-            },
-            {
-              "english": "What's your name?",
-              "spanish": "¿Cómo te llamas?",
-              "note": "What's your name? pregunta el nombre. My name is… sirve para decirlo. Se aprenden como fórmulas completas; la conjugación de be se estudiará después."
-            },
-            {
-              "english": "My name is Ana.",
-              "spanish": "Me llamo Ana.",
-              "note": "What's your name? pregunta el nombre. My name is… sirve para decirlo. Se aprenden como fórmulas completas; la conjugación de be se estudiará después."
-            }
-          ],
-          "reading": [
-            {
-              "english": "Hello! What's your name? My name is Ana. What's your name? My name is Leo. See you!",
-              "spanish": "¡Hola! ¿Cómo te llamas? Me llamo Ana. ¿Cómo te llamas? Me llamo Leo. ¡Hasta luego!"
-            }
-          ],
-          "writing": [
-            {
-              "english": "What's your name?",
-              "spanish": "¿Cómo te llamas?",
-              "note": "Modelo enseñado en Explore."
-            },
-            {
-              "english": "My name is Ana.",
-              "spanish": "Me llamo Ana.",
-              "note": "Modelo enseñado en Explore."
-            },
-            {
-              "english": "What's your name? My name is Leo.",
-              "spanish": "What's your name? My name is Leo.",
-              "note": "Modelo enseñado en Explore."
-            },
-            {
-              "english": "My name is…",
-              "spanish": "Me llamo…",
-              "note": "Modelo enseñado en Explore."
-            }
-          ],
-          "speaking": [
-            {
-              "english": "What's your name?",
-              "spanish": "¿Cómo te llamas?",
-              "note": "Modelo enseñado en Explore.",
-              "prompt": "Practica esta expresión.",
-              "promptSpanish": "Di la expresión en voz alta."
-            },
-            {
-              "english": "My name is Ana.",
-              "spanish": "Me llamo Ana.",
-              "note": "Modelo enseñado en Explore.",
-              "prompt": "Practica esta expresión.",
-              "promptSpanish": "Di la expresión en voz alta."
-            },
-            {
-              "english": "What's your name? My name is Leo.",
-              "spanish": "What's your name? My name is Leo.",
-              "note": "Modelo enseñado en Explore.",
-              "prompt": "Practica esta expresión.",
-              "promptSpanish": "Di la expresión en voz alta."
-            },
-            {
-              "english": "My name is…",
-              "spanish": "Me llamo…",
-              "note": "Modelo enseñado en Explore.",
-              "prompt": "Practica esta expresión.",
-              "promptSpanish": "Di la expresión en voz alta."
-            }
-          ],
-          "listening": [
-            {
-              "english": "What's your name?",
-              "spanish": "¿Cómo te llamas?",
-              "note": "Modelo enseñado en Explore."
-            },
-            {
-              "english": "My name is Ana.",
-              "spanish": "Me llamo Ana.",
-              "note": "Modelo enseñado en Explore."
-            },
-            {
-              "english": "What's your name? My name is Leo.",
-              "spanish": "What's your name? My name is Leo.",
-              "note": "Modelo enseñado en Explore."
-            },
-            {
-              "english": "My name is…",
-              "spanish": "Me llamo…",
-              "note": "Modelo enseñado en Explore."
+              "spanish": "Preguntar el nombre y decir cómo nos llamamos con dos fórmulas completas.",
+              "note": "What's your name? y My name is… se aprenden como expresiones completas. En esta misión no se estudia todavía la conjugación general de be."
             }
           ]
         },
@@ -378,72 +244,72 @@
             {
               "position": 1,
               "title": "Bloque 1",
-              "content": "Objetivo: My name is….",
+              "content": "Preguntar What's your name?",
               "example": "What's your name?",
               "translation": "¿Cómo te llamas?"
             },
             {
               "position": 2,
               "title": "Bloque 2",
-              "content": "is — es. Pronunciación: iz.",
+              "content": "Responder My name is…",
               "example": "My name is Ana.",
               "translation": "Me llamo Ana."
             },
             {
               "position": 3,
               "title": "Bloque 3",
-              "content": "What's your name? My name is Leo. — What's your name? My name is Leo..",
-              "example": "What's your name? My name is Leo.",
-              "translation": "What's your name? My name is Leo."
+              "content": "Name significa nombre",
+              "example": "My name is Leo.",
+              "translation": "Me llamo Leo."
             },
             {
               "position": 4,
               "title": "Bloque 4",
-              "content": "My name is… — Me llamo….",
-              "example": "My name is…",
-              "translation": "Me llamo…"
+              "content": "My significa mi",
+              "example": "Hello!",
+              "translation": "¡Hola!"
             },
             {
               "position": 5,
               "title": "Bloque 5",
-              "content": "What — qué.",
-              "example": "What",
-              "translation": "qué"
+              "content": "Your significa tu",
+              "example": "See you!",
+              "translation": "¡Hasta luego!"
             },
             {
               "position": 6,
               "title": "Bloque 6",
-              "content": "is — es.",
-              "example": "is",
-              "translation": "es"
+              "content": "What significa qué",
+              "example": "What's your name?",
+              "translation": "¿Cómo te llamas?"
             },
             {
               "position": 7,
               "title": "Bloque 7",
-              "content": "What's your name? pregunta el nombre. My name is… sirve para decirlo. Se aprenden como fórmulas completas; la conjugación de be se estudiará después.",
-              "example": "your",
-              "translation": "tu"
+              "content": "Is aparece dentro de la fórmula",
+              "example": "My name is Ana.",
+              "translation": "Me llamo Ana."
             },
             {
               "position": 8,
               "title": "Bloque 8",
-              "content": "name — nombre.",
-              "example": "name",
-              "translation": "nombre"
+              "content": "Usar el nombre Ana",
+              "example": "My name is Leo.",
+              "translation": "Me llamo Leo."
             },
             {
               "position": 9,
               "title": "Bloque 9",
-              "content": "my — mi.",
-              "example": "my",
-              "translation": "mi"
+              "content": "Usar el nombre Leo",
+              "example": "Hello!",
+              "translation": "¡Hola!"
             },
             {
               "position": 10,
               "title": "Bloque 10",
-              "content": "What's your name? — ¿Cómo te llamas?.",
-              "example": "What's your name?",
-              "translation": "¿Cómo te llamas?"
+              "content": "Aprender las dos fórmulas completas; be se estudiará después",
+              "example": "See you!",
+              "translation": "¡Hasta luego!"
             }
           ]
         }
@@ -460,14 +326,14 @@
           {
             "itemId": "english-pre-a1-m002-practice-ex01-i01",
             "position": 1,
-            "prompt": "Elige la traducción de “What”.",
+            "prompt": "Elige el significado de “what”.",
             "evaluation": {
               "type": "single_choice"
             },
             "options": [
-              "es",
-              "tu",
-              "qué"
+              "qué",
+              "es (en la fórmula)",
+              "tu"
             ],
             "answer": "qué",
             "taskType": "vocabulary_translation"
@@ -475,29 +341,29 @@
           {
             "itemId": "english-pre-a1-m002-practice-ex01-i02",
             "position": 2,
-            "prompt": "Elige la traducción de “is”.",
-            "evaluation": {
-              "type": "single_choice"
-            },
-            "options": [
-              "nombre",
-              "es",
-              "tu"
-            ],
-            "answer": "es",
-            "taskType": "vocabulary_translation"
-          },
-          {
-            "itemId": "english-pre-a1-m002-practice-ex01-i03",
-            "position": 3,
-            "prompt": "Elige la traducción de “your”.",
+            "prompt": "Elige el significado de “is”.",
             "evaluation": {
               "type": "single_choice"
             },
             "options": [
               "tu",
+              "es (en la fórmula)",
+              "nombre"
+            ],
+            "answer": "es (en la fórmula)",
+            "taskType": "vocabulary_translation"
+          },
+          {
+            "itemId": "english-pre-a1-m002-practice-ex01-i03",
+            "position": 3,
+            "prompt": "Elige el significado de “your”.",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
               "nombre",
-              "mi"
+              "mi",
+              "tu"
             ],
             "answer": "tu",
             "taskType": "vocabulary_translation"
@@ -505,14 +371,14 @@
           {
             "itemId": "english-pre-a1-m002-practice-ex01-i04",
             "position": 4,
-            "prompt": "Elige la traducción de “name”.",
+            "prompt": "Elige el significado de “name”.",
             "evaluation": {
               "type": "single_choice"
             },
             "options": [
+              "nombre",
               "mi",
-              "¿Cómo te llamas?",
-              "nombre"
+              "hola"
             ],
             "answer": "nombre",
             "taskType": "vocabulary_translation"
@@ -520,14 +386,14 @@
           {
             "itemId": "english-pre-a1-m002-practice-ex01-i05",
             "position": 5,
-            "prompt": "Elige la traducción de “my”.",
+            "prompt": "Elige el significado de “my”.",
             "evaluation": {
               "type": "single_choice"
             },
             "options": [
-              "Me llamo…",
+              "hola",
               "mi",
-              "¿Cómo te llamas?"
+              "hasta luego"
             ],
             "answer": "mi",
             "taskType": "vocabulary_translation"
@@ -535,76 +401,76 @@
           {
             "itemId": "english-pre-a1-m002-practice-ex01-i06",
             "position": 6,
-            "prompt": "Elige la traducción de “What's your name?”.",
+            "prompt": "Elige el significado de “hello”.",
             "evaluation": {
               "type": "single_choice"
             },
             "options": [
-              "¿Cómo te llamas?",
-              "Me llamo…",
-              "qué"
+              "hasta luego",
+              "Ana",
+              "hola"
             ],
-            "answer": "¿Cómo te llamas?",
+            "answer": "hola",
             "taskType": "vocabulary_translation"
           },
           {
             "itemId": "english-pre-a1-m002-practice-ex01-i07",
             "position": 7,
-            "prompt": "Elige la traducción de “My name is…”.",
+            "prompt": "Elige el significado de “see you”.",
             "evaluation": {
               "type": "single_choice"
             },
             "options": [
-              "qué",
-              "es",
-              "Me llamo…"
+              "hasta luego",
+              "Ana",
+              "Leo"
             ],
-            "answer": "Me llamo…",
+            "answer": "hasta luego",
             "taskType": "vocabulary_translation"
           },
           {
             "itemId": "english-pre-a1-m002-practice-ex01-i08",
             "position": 8,
-            "prompt": "Elige la traducción de “What”.",
+            "prompt": "Elige el significado de “Ana”.",
             "evaluation": {
               "type": "single_choice"
             },
             "options": [
-              "nombre",
-              "qué",
-              "tu"
+              "Leo",
+              "Ana",
+              "qué"
             ],
-            "answer": "qué",
+            "answer": "Ana",
             "taskType": "vocabulary_translation"
           },
           {
             "itemId": "english-pre-a1-m002-practice-ex01-i09",
             "position": 9,
-            "prompt": "Elige la traducción de “is”.",
+            "prompt": "Elige el significado de “Leo”.",
             "evaluation": {
               "type": "single_choice"
             },
             "options": [
-              "es",
-              "nombre",
-              "mi"
+              "qué",
+              "es (en la fórmula)",
+              "Leo"
             ],
-            "answer": "es",
+            "answer": "Leo",
             "taskType": "vocabulary_translation"
           },
           {
             "itemId": "english-pre-a1-m002-practice-ex01-i10",
             "position": 10,
-            "prompt": "Elige la traducción de “your”.",
+            "prompt": "Elige el significado de “what”.",
             "evaluation": {
               "type": "single_choice"
             },
             "options": [
-              "mi",
-              "¿Cómo te llamas?",
-              "tu"
+              "qué",
+              "tu",
+              "nombre"
             ],
-            "answer": "tu",
+            "answer": "qué",
             "taskType": "vocabulary_translation"
           }
         ]
@@ -618,78 +484,43 @@
         "exerciseId": "english-pre-a1-m002-grammar-ex01",
         "type": "grammar",
         "theory": {
-          "title": "My name is…",
-          "explanation": "What's your name? pregunta el nombre. My name is… sirve para decirlo. Se aprenden como fórmulas completas; la conjugación de be se estudiará después.",
-          "tip": "Comprende todos los modelos de Explore antes de comenzar las actividades.",
+          "title": "Expresiones y estructuras de la misión",
+          "explanation": "What's your name? y My name is… se aprenden como expresiones completas. En esta misión no se estudia todavía la conjugación general de be.",
+          "tip": "Reconoce el modelo completo antes de utilizarlo.",
           "patterns": [
             {
-              "label": "Bloque 1",
-              "pattern": "My name is…",
+              "label": "Modelo 1",
+              "pattern": "What's your name?",
               "examples": [
-                "What's your name?"
+                "¿Cómo te llamas?"
               ]
             },
             {
-              "label": "Bloque 2",
-              "pattern": "What's your name? pregunta el nombre. My name is… sirve para decirlo. Se aprenden como fórmulas completas; la conjugación de be se estudiará después.",
+              "label": "Modelo 2",
+              "pattern": "My name is Ana.",
               "examples": [
-                "My name is Ana."
+                "Me llamo Ana."
               ]
             },
             {
-              "label": "Bloque 3",
-              "pattern": "What's your name? pregunta el nombre. My name is… sirve para decirlo. Se aprenden como fórmulas completas; la conjugación de be se estudiará después.",
+              "label": "Modelo 3",
+              "pattern": "My name is Leo.",
               "examples": [
-                "What's your name? My name is Leo."
+                "Me llamo Leo."
               ]
             },
             {
-              "label": "Bloque 4",
-              "pattern": "What's your name? pregunta el nombre. My name is… sirve para decirlo. Se aprenden como fórmulas completas; la conjugación de be se estudiará después.",
+              "label": "Modelo 4",
+              "pattern": "Hello!",
               "examples": [
-                "My name is…"
+                "¡Hola!"
               ]
             },
             {
-              "label": "Bloque 5",
-              "pattern": "What's your name? pregunta el nombre. My name is… sirve para decirlo. Se aprenden como fórmulas completas; la conjugación de be se estudiará después.",
+              "label": "Modelo 5",
+              "pattern": "See you!",
               "examples": [
-                "What's your name?"
-              ]
-            },
-            {
-              "label": "Bloque 6",
-              "pattern": "What's your name? pregunta el nombre. My name is… sirve para decirlo. Se aprenden como fórmulas completas; la conjugación de be se estudiará después.",
-              "examples": [
-                "My name is Ana."
-              ]
-            },
-            {
-              "label": "Bloque 7",
-              "pattern": "What's your name? pregunta el nombre. My name is… sirve para decirlo. Se aprenden como fórmulas completas; la conjugación de be se estudiará después.",
-              "examples": [
-                "What's your name? My name is Leo."
-              ]
-            },
-            {
-              "label": "Bloque 8",
-              "pattern": "What's your name? pregunta el nombre. My name is… sirve para decirlo. Se aprenden como fórmulas completas; la conjugación de be se estudiará después.",
-              "examples": [
-                "My name is…"
-              ]
-            },
-            {
-              "label": "Bloque 9",
-              "pattern": "What's your name? pregunta el nombre. My name is… sirve para decirlo. Se aprenden como fórmulas completas; la conjugación de be se estudiará después.",
-              "examples": [
-                "What's your name?"
-              ]
-            },
-            {
-              "label": "Bloque 10",
-              "pattern": "What's your name? pregunta el nombre. My name is… sirve para decirlo. Se aprenden como fórmulas completas; la conjugación de be se estudiará después.",
-              "examples": [
-                "My name is Ana."
+                "¡Hasta luego!"
               ]
             }
           ]
@@ -698,142 +529,152 @@
           {
             "itemId": "english-pre-a1-m002-grammar-ex01-i01",
             "position": 1,
-            "prompt": "Reconoce el modelo trabajado: What's your name?",
+            "prompt": "Selecciona el modelo que significa: “¿Cómo te llamas?”",
             "evaluation": {
               "type": "single_choice"
             },
             "options": [
-              "My name is Ana.",
               "What's your name?",
-              "What's your name? My name is Leo."
+              "My name is Ana.",
+              "My name is Leo."
             ],
-            "answer": "What's your name?"
+            "answer": "What's your name?",
+            "taskType": "functional_language"
           },
           {
             "itemId": "english-pre-a1-m002-grammar-ex01-i02",
             "position": 2,
-            "prompt": "Reconoce el modelo trabajado: My name is Ana.",
+            "prompt": "Selecciona el modelo que significa: “Me llamo Ana.”",
             "evaluation": {
               "type": "single_choice"
             },
             "options": [
-              "My name is…",
-              "What's your name? My name is Leo.",
-              "My name is Ana."
+              "My name is Leo.",
+              "My name is Ana.",
+              "Hello!"
             ],
-            "answer": "My name is Ana."
+            "answer": "My name is Ana.",
+            "taskType": "functional_language"
           },
           {
             "itemId": "english-pre-a1-m002-grammar-ex01-i03",
             "position": 3,
-            "prompt": "Reconoce el modelo trabajado: What's your name? My name is Leo.",
+            "prompt": "Selecciona el modelo que significa: “Me llamo Leo.”",
             "evaluation": {
               "type": "single_choice"
             },
             "options": [
-              "What's your name? My name is Leo.",
-              "My name is…",
-              "What's your name?"
+              "Hello!",
+              "See you!",
+              "My name is Leo."
             ],
-            "answer": "What's your name? My name is Leo."
+            "answer": "My name is Leo.",
+            "taskType": "functional_language"
           },
           {
             "itemId": "english-pre-a1-m002-grammar-ex01-i04",
             "position": 4,
-            "prompt": "Reconoce el modelo trabajado: My name is…",
+            "prompt": "Selecciona el modelo que significa: “¡Hola!”",
             "evaluation": {
               "type": "single_choice"
             },
             "options": [
-              "What's your name?",
-              "My name is…",
-              "My name is Ana."
+              "Hello!",
+              "See you!",
+              "What's your name?"
             ],
-            "answer": "My name is…"
+            "answer": "Hello!",
+            "taskType": "functional_language"
           },
           {
             "itemId": "english-pre-a1-m002-grammar-ex01-i05",
             "position": 5,
-            "prompt": "Reconoce el modelo trabajado: What's your name?",
+            "prompt": "Selecciona el modelo que significa: “¡Hasta luego!”",
             "evaluation": {
               "type": "single_choice"
             },
             "options": [
-              "What's your name? My name is Leo.",
-              "My name is Ana.",
-              "What's your name?"
+              "What's your name?",
+              "See you!",
+              "My name is Ana."
             ],
-            "answer": "What's your name?"
+            "answer": "See you!",
+            "taskType": "functional_language"
           },
           {
             "itemId": "english-pre-a1-m002-grammar-ex01-i06",
             "position": 6,
-            "prompt": "Reconoce el modelo trabajado: My name is Ana.",
+            "prompt": "Selecciona el modelo que significa: “¿Cómo te llamas?”",
             "evaluation": {
               "type": "single_choice"
             },
             "options": [
-              "My name is Ana.",
-              "What's your name? My name is Leo.",
-              "My name is…"
+              "My name is Leo.",
+              "Hello!",
+              "What's your name?"
             ],
-            "answer": "My name is Ana."
+            "answer": "What's your name?",
+            "taskType": "functional_language"
           },
           {
             "itemId": "english-pre-a1-m002-grammar-ex01-i07",
             "position": 7,
-            "prompt": "Reconoce el modelo trabajado: What's your name? My name is Leo.",
+            "prompt": "Selecciona el modelo que significa: “Me llamo Ana.”",
             "evaluation": {
               "type": "single_choice"
             },
             "options": [
-              "My name is…",
-              "What's your name? My name is Leo.",
-              "What's your name?"
+              "My name is Ana.",
+              "Hello!",
+              "See you!"
             ],
-            "answer": "What's your name? My name is Leo."
+            "answer": "My name is Ana.",
+            "taskType": "functional_language"
           },
           {
             "itemId": "english-pre-a1-m002-grammar-ex01-i08",
             "position": 8,
-            "prompt": "Reconoce el modelo trabajado: My name is…",
+            "prompt": "Selecciona el modelo que significa: “Me llamo Leo.”",
             "evaluation": {
               "type": "single_choice"
             },
             "options": [
-              "My name is Ana.",
-              "What's your name?",
-              "My name is…"
+              "See you!",
+              "My name is Leo.",
+              "What's your name?"
             ],
-            "answer": "My name is…"
+            "answer": "My name is Leo.",
+            "taskType": "functional_language"
           },
           {
             "itemId": "english-pre-a1-m002-grammar-ex01-i09",
             "position": 9,
-            "prompt": "Reconoce el modelo trabajado: What's your name?",
+            "prompt": "Selecciona el modelo que significa: “¡Hola!”",
             "evaluation": {
               "type": "single_choice"
             },
             "options": [
               "What's your name?",
               "My name is Ana.",
-              "What's your name? My name is Leo."
+              "Hello!"
             ],
-            "answer": "What's your name?"
+            "answer": "Hello!",
+            "taskType": "functional_language"
           },
           {
             "itemId": "english-pre-a1-m002-grammar-ex01-i10",
             "position": 10,
-            "prompt": "Reconoce el modelo trabajado: My name is Ana.",
+            "prompt": "Selecciona el modelo que significa: “¡Hasta luego!”",
             "evaluation": {
               "type": "single_choice"
             },
             "options": [
-              "What's your name? My name is Leo.",
+              "See you!",
               "My name is Ana.",
-              "My name is…"
+              "My name is Leo."
             ],
-            "answer": "My name is Ana."
+            "answer": "See you!",
+            "taskType": "functional_language"
           }
         ]
       }
@@ -849,18 +690,20 @@
           {
             "itemId": "english-pre-a1-m002-pronunciation-ex01-i01",
             "position": 1,
-            "word": "What",
+            "word": "what",
             "translation": "qué",
             "pronunciationGuide": "uót",
-            "audio": "tts:en-GB:What"
+            "audio": "tts:en-GB:what",
+            "audioStatus": "synthetic_pending_review"
           },
           {
             "itemId": "english-pre-a1-m002-pronunciation-ex01-i02",
             "position": 2,
             "word": "is",
-            "translation": "es",
+            "translation": "es (en la fórmula)",
             "pronunciationGuide": "iz",
-            "audio": "tts:en-GB:is"
+            "audio": "tts:en-GB:is",
+            "audioStatus": "synthetic_pending_review"
           },
           {
             "itemId": "english-pre-a1-m002-pronunciation-ex01-i03",
@@ -868,7 +711,8 @@
             "word": "your",
             "translation": "tu",
             "pronunciationGuide": "iór",
-            "audio": "tts:en-GB:your"
+            "audio": "tts:en-GB:your",
+            "audioStatus": "synthetic_pending_review"
           },
           {
             "itemId": "english-pre-a1-m002-pronunciation-ex01-i04",
@@ -876,7 +720,8 @@
             "word": "name",
             "translation": "nombre",
             "pronunciationGuide": "NÉIM",
-            "audio": "tts:en-GB:name"
+            "audio": "tts:en-GB:name",
+            "audioStatus": "synthetic_pending_review"
           },
           {
             "itemId": "english-pre-a1-m002-pronunciation-ex01-i05",
@@ -884,47 +729,53 @@
             "word": "my",
             "translation": "mi",
             "pronunciationGuide": "mái",
-            "audio": "tts:en-GB:my"
+            "audio": "tts:en-GB:my",
+            "audioStatus": "synthetic_pending_review"
           },
           {
             "itemId": "english-pre-a1-m002-pronunciation-ex01-i06",
             "position": 6,
-            "word": "What's your name?",
-            "translation": "¿Cómo te llamas?",
-            "pronunciationGuide": "uóts iór NÉIM",
-            "audio": "tts:en-GB:What's your name?"
+            "word": "hello",
+            "translation": "hola",
+            "pronunciationGuide": "jelóu",
+            "audio": "tts:en-GB:hello",
+            "audioStatus": "synthetic_pending_review"
           },
           {
             "itemId": "english-pre-a1-m002-pronunciation-ex01-i07",
             "position": 7,
-            "word": "My name is…",
-            "translation": "Me llamo…",
-            "pronunciationGuide": "mái NÉIM iz",
-            "audio": "tts:en-GB:My name is…"
+            "word": "see you",
+            "translation": "hasta luego",
+            "pronunciationGuide": "sí iu",
+            "audio": "tts:en-GB:see you",
+            "audioStatus": "synthetic_pending_review"
           },
           {
             "itemId": "english-pre-a1-m002-pronunciation-ex01-i08",
             "position": 8,
-            "word": "What's your name?",
-            "translation": "¿Cómo te llamas?",
-            "pronunciationGuide": "uót",
-            "audio": "tts:en-GB:What's your name?"
+            "word": "Ana",
+            "translation": "Ana",
+            "pronunciationGuide": "Á-na",
+            "audio": "tts:en-GB:Ana",
+            "audioStatus": "synthetic_pending_review"
           },
           {
             "itemId": "english-pre-a1-m002-pronunciation-ex01-i09",
             "position": 9,
-            "word": "What's your name?",
-            "translation": "¿Cómo te llamas?",
-            "pronunciationGuide": "uót",
-            "audio": "tts:en-GB:What's your name?"
+            "word": "Leo",
+            "translation": "Leo",
+            "pronunciationGuide": "LÍ-ou",
+            "audio": "tts:en-GB:Leo",
+            "audioStatus": "synthetic_pending_review"
           },
           {
             "itemId": "english-pre-a1-m002-pronunciation-ex01-i10",
             "position": 10,
-            "word": "What's your name?",
-            "translation": "¿Cómo te llamas?",
+            "word": "what",
+            "translation": "qué",
             "pronunciationGuide": "uót",
-            "audio": "tts:en-GB:What's your name?"
+            "audio": "tts:en-GB:what",
+            "audioStatus": "synthetic_pending_review"
           }
         ]
       }
@@ -938,148 +789,158 @@
         "type": "reading_comprehension",
         "content": {
           "passageId": "english-pre-a1-m002-reading-passage-01",
-          "passage": "Hello! What's your name? My name is Ana. What's your name? My name is Leo. See you!"
+          "passage": "What's your name? My name is Ana. My name is Leo. Hello! See you!"
         },
         "items": [
           {
             "itemId": "english-pre-a1-m002-reading-ex01-i01",
             "position": 1,
-            "prompt": "¿Qué tema presenta el texto?",
+            "prompt": "En el texto, ¿qué significa “What's your name?”?",
             "evaluation": {
               "type": "single_choice"
             },
             "options": [
-              "qué",
-              "es",
-              "My name is…"
+              "¿Cómo te llamas?",
+              "Me llamo Ana.",
+              "Me llamo Leo."
             ],
-            "answer": "My name is…"
+            "answer": "¿Cómo te llamas?",
+            "taskType": "reading_detail"
           },
           {
             "itemId": "english-pre-a1-m002-reading-ex01-i02",
             "position": 2,
-            "prompt": "¿Qué significa “is” en el texto?",
+            "prompt": "En el texto, ¿qué significa “My name is Ana.”?",
             "evaluation": {
               "type": "single_choice"
             },
             "options": [
-              "nombre",
-              "es",
-              "tu"
+              "Me llamo Leo.",
+              "Me llamo Ana.",
+              "¡Hola!"
             ],
-            "answer": "es"
+            "answer": "Me llamo Ana.",
+            "taskType": "reading_detail"
           },
           {
             "itemId": "english-pre-a1-m002-reading-ex01-i03",
             "position": 3,
-            "prompt": "¿Qué significa “your” en el texto?",
+            "prompt": "En el texto, ¿qué significa “My name is Leo.”?",
             "evaluation": {
               "type": "single_choice"
             },
             "options": [
-              "tu",
-              "nombre",
-              "mi"
+              "¡Hola!",
+              "¡Hasta luego!",
+              "Me llamo Leo."
             ],
-            "answer": "tu"
+            "answer": "Me llamo Leo.",
+            "taskType": "reading_detail"
           },
           {
             "itemId": "english-pre-a1-m002-reading-ex01-i04",
             "position": 4,
-            "prompt": "¿Qué significa “name” en el texto?",
+            "prompt": "En el texto, ¿qué significa “Hello!”?",
             "evaluation": {
               "type": "single_choice"
             },
             "options": [
-              "mi",
-              "¿Cómo te llamas?",
-              "nombre"
+              "¡Hola!",
+              "¡Hasta luego!",
+              "¿Cómo te llamas?"
             ],
-            "answer": "nombre"
+            "answer": "¡Hola!",
+            "taskType": "reading_detail"
           },
           {
             "itemId": "english-pre-a1-m002-reading-ex01-i05",
             "position": 5,
-            "prompt": "¿Qué significa “my” en el texto?",
+            "prompt": "En el texto, ¿qué significa “See you!”?",
             "evaluation": {
               "type": "single_choice"
             },
             "options": [
-              "Me llamo…",
-              "mi",
-              "¿Cómo te llamas?"
+              "¿Cómo te llamas?",
+              "¡Hasta luego!",
+              "Me llamo Ana."
             ],
-            "answer": "mi"
+            "answer": "¡Hasta luego!",
+            "taskType": "reading_detail"
           },
           {
             "itemId": "english-pre-a1-m002-reading-ex01-i06",
             "position": 6,
-            "prompt": "¿Qué significa “What's your name?” en el texto?",
+            "prompt": "En el texto, ¿qué significa “What's your name?”?",
             "evaluation": {
               "type": "single_choice"
             },
             "options": [
-              "¿Cómo te llamas?",
-              "Me llamo…",
-              "qué"
+              "Me llamo Leo.",
+              "¡Hola!",
+              "¿Cómo te llamas?"
             ],
-            "answer": "¿Cómo te llamas?"
+            "answer": "¿Cómo te llamas?",
+            "taskType": "reading_detail"
           },
           {
             "itemId": "english-pre-a1-m002-reading-ex01-i07",
             "position": 7,
-            "prompt": "¿Qué significa “My name is…” en el texto?",
+            "prompt": "En el texto, ¿qué significa “My name is Ana.”?",
             "evaluation": {
               "type": "single_choice"
             },
             "options": [
-              "qué",
-              "es",
-              "Me llamo…"
+              "Me llamo Ana.",
+              "¡Hola!",
+              "¡Hasta luego!"
             ],
-            "answer": "Me llamo…"
+            "answer": "Me llamo Ana.",
+            "taskType": "reading_detail"
           },
           {
             "itemId": "english-pre-a1-m002-reading-ex01-i08",
             "position": 8,
-            "prompt": "¿Qué significa “What” en el texto?",
+            "prompt": "En el texto, ¿qué significa “My name is Leo.”?",
             "evaluation": {
               "type": "single_choice"
             },
             "options": [
-              "nombre",
-              "qué",
-              "tu"
+              "¡Hasta luego!",
+              "Me llamo Leo.",
+              "¿Cómo te llamas?"
             ],
-            "answer": "qué"
+            "answer": "Me llamo Leo.",
+            "taskType": "reading_detail"
           },
           {
             "itemId": "english-pre-a1-m002-reading-ex01-i09",
             "position": 9,
-            "prompt": "¿Qué significa “is” en el texto?",
+            "prompt": "En el texto, ¿qué significa “Hello!”?",
             "evaluation": {
               "type": "single_choice"
             },
             "options": [
-              "es",
-              "nombre",
-              "mi"
+              "¿Cómo te llamas?",
+              "Me llamo Ana.",
+              "¡Hola!"
             ],
-            "answer": "es"
+            "answer": "¡Hola!",
+            "taskType": "reading_detail"
           },
           {
             "itemId": "english-pre-a1-m002-reading-ex01-i10",
             "position": 10,
-            "prompt": "¿Qué significa “your” en el texto?",
+            "prompt": "En el texto, ¿qué significa “See you!”?",
             "evaluation": {
               "type": "single_choice"
             },
             "options": [
-              "mi",
-              "¿Cómo te llamas?",
-              "tu"
+              "¡Hasta luego!",
+              "Me llamo Ana.",
+              "Me llamo Leo."
             ],
-            "answer": "tu"
+            "answer": "¡Hasta luego!",
+            "taskType": "reading_detail"
           }
         ]
       }
@@ -1133,120 +994,63 @@
           {
             "itemId": "english-pre-a1-m002-writing-ex01-i03",
             "position": 3,
-            "audio": "tts:en-GB:What's your name? My name is Leo.",
+            "audio": "tts:en-GB:My name is Leo.",
             "audioLocale": "en-GB",
             "audioStatus": "synthetic_pending_review",
             "kind": "sentence",
             "repeatCount": 3,
-            "expectedAnswer": "What's your name? My name is Leo.",
+            "expectedAnswer": "My name is Leo.",
             "evaluation": {
               "type": "normalised_text"
             },
             "segments": [
               {
                 "segmentId": "english-pre-a1-m002-writing-segment-03",
-                "text": "What's your name? My name is Leo."
+                "text": "My name is Leo."
               }
             ]
           },
           {
             "itemId": "english-pre-a1-m002-writing-ex01-i04",
             "position": 4,
-            "audio": "tts:en-GB:My name is…",
+            "audio": "tts:en-GB:Hello!",
             "audioLocale": "en-GB",
             "audioStatus": "synthetic_pending_review",
             "kind": "sentence",
             "repeatCount": 3,
-            "expectedAnswer": "My name is…",
+            "expectedAnswer": "Hello!",
             "evaluation": {
               "type": "normalised_text"
             },
             "segments": [
               {
                 "segmentId": "english-pre-a1-m002-writing-segment-04",
-                "text": "My name is…"
+                "text": "Hello!"
               }
             ]
           },
           {
             "itemId": "english-pre-a1-m002-writing-ex01-i05",
             "position": 5,
-            "audio": "tts:en-GB:What's your name?",
+            "audio": "tts:en-GB:See you!",
             "audioLocale": "en-GB",
             "audioStatus": "synthetic_pending_review",
             "kind": "sentence",
             "repeatCount": 3,
-            "expectedAnswer": "What's your name?",
+            "expectedAnswer": "See you!",
             "evaluation": {
               "type": "normalised_text"
             },
             "segments": [
               {
                 "segmentId": "english-pre-a1-m002-writing-segment-05",
-                "text": "What's your name?"
+                "text": "See you!"
               }
             ]
           },
           {
             "itemId": "english-pre-a1-m002-writing-ex01-i06",
             "position": 6,
-            "audio": "tts:en-GB:My name is Ana.",
-            "audioLocale": "en-GB",
-            "audioStatus": "synthetic_pending_review",
-            "kind": "sentence",
-            "repeatCount": 3,
-            "expectedAnswer": "My name is Ana.",
-            "evaluation": {
-              "type": "normalised_text"
-            },
-            "segments": [
-              {
-                "segmentId": "english-pre-a1-m002-writing-segment-06",
-                "text": "My name is Ana."
-              }
-            ]
-          },
-          {
-            "itemId": "english-pre-a1-m002-writing-ex01-i07",
-            "position": 7,
-            "audio": "tts:en-GB:What's your name? My name is Leo.",
-            "audioLocale": "en-GB",
-            "audioStatus": "synthetic_pending_review",
-            "kind": "sentence",
-            "repeatCount": 3,
-            "expectedAnswer": "What's your name? My name is Leo.",
-            "evaluation": {
-              "type": "normalised_text"
-            },
-            "segments": [
-              {
-                "segmentId": "english-pre-a1-m002-writing-segment-07",
-                "text": "What's your name? My name is Leo."
-              }
-            ]
-          },
-          {
-            "itemId": "english-pre-a1-m002-writing-ex01-i08",
-            "position": 8,
-            "audio": "tts:en-GB:My name is…",
-            "audioLocale": "en-GB",
-            "audioStatus": "synthetic_pending_review",
-            "kind": "sentence",
-            "repeatCount": 3,
-            "expectedAnswer": "My name is…",
-            "evaluation": {
-              "type": "normalised_text"
-            },
-            "segments": [
-              {
-                "segmentId": "english-pre-a1-m002-writing-segment-08",
-                "text": "My name is…"
-              }
-            ]
-          },
-          {
-            "itemId": "english-pre-a1-m002-writing-ex01-i09",
-            "position": 9,
             "audio": "tts:en-GB:What's your name?",
             "audioLocale": "en-GB",
             "audioStatus": "synthetic_pending_review",
@@ -1258,14 +1062,14 @@
             },
             "segments": [
               {
-                "segmentId": "english-pre-a1-m002-writing-segment-09",
+                "segmentId": "english-pre-a1-m002-writing-segment-06",
                 "text": "What's your name?"
               }
             ]
           },
           {
-            "itemId": "english-pre-a1-m002-writing-ex01-i10",
-            "position": 10,
+            "itemId": "english-pre-a1-m002-writing-ex01-i07",
+            "position": 7,
             "audio": "tts:en-GB:My name is Ana.",
             "audioLocale": "en-GB",
             "audioStatus": "synthetic_pending_review",
@@ -1277,8 +1081,65 @@
             },
             "segments": [
               {
-                "segmentId": "english-pre-a1-m002-writing-segment-10",
+                "segmentId": "english-pre-a1-m002-writing-segment-07",
                 "text": "My name is Ana."
+              }
+            ]
+          },
+          {
+            "itemId": "english-pre-a1-m002-writing-ex01-i08",
+            "position": 8,
+            "audio": "tts:en-GB:My name is Leo.",
+            "audioLocale": "en-GB",
+            "audioStatus": "synthetic_pending_review",
+            "kind": "sentence",
+            "repeatCount": 3,
+            "expectedAnswer": "My name is Leo.",
+            "evaluation": {
+              "type": "normalised_text"
+            },
+            "segments": [
+              {
+                "segmentId": "english-pre-a1-m002-writing-segment-08",
+                "text": "My name is Leo."
+              }
+            ]
+          },
+          {
+            "itemId": "english-pre-a1-m002-writing-ex01-i09",
+            "position": 9,
+            "audio": "tts:en-GB:Hello!",
+            "audioLocale": "en-GB",
+            "audioStatus": "synthetic_pending_review",
+            "kind": "sentence",
+            "repeatCount": 3,
+            "expectedAnswer": "Hello!",
+            "evaluation": {
+              "type": "normalised_text"
+            },
+            "segments": [
+              {
+                "segmentId": "english-pre-a1-m002-writing-segment-09",
+                "text": "Hello!"
+              }
+            ]
+          },
+          {
+            "itemId": "english-pre-a1-m002-writing-ex01-i10",
+            "position": 10,
+            "audio": "tts:en-GB:See you!",
+            "audioLocale": "en-GB",
+            "audioStatus": "synthetic_pending_review",
+            "kind": "sentence",
+            "repeatCount": 3,
+            "expectedAnswer": "See you!",
+            "evaluation": {
+              "type": "normalised_text"
+            },
+            "segments": [
+              {
+                "segmentId": "english-pre-a1-m002-writing-segment-10",
+                "text": "See you!"
               }
             ]
           }
@@ -1296,10 +1157,10 @@
           {
             "itemId": "english-pre-a1-m002-speaking-ex01-i01",
             "position": 1,
-            "prompt": "Di en voz alta esta expresión.",
-            "promptSpanish": "Practica el modelo de la misión.",
+            "prompt": "Di en voz alta el modelo.",
+            "promptSpanish": "Practica: ¿Cómo te llamas?",
             "modelAnswer": "What's your name?",
-            "translation": "What's your name?",
+            "translation": "¿Cómo te llamas?",
             "evaluation": {
               "type": "transcription_feedback",
               "transcriptionSeparateFromPronunciation": true
@@ -1308,10 +1169,10 @@
           {
             "itemId": "english-pre-a1-m002-speaking-ex01-i02",
             "position": 2,
-            "prompt": "Di en voz alta esta expresión.",
-            "promptSpanish": "Practica el modelo de la misión.",
+            "prompt": "Di en voz alta el modelo.",
+            "promptSpanish": "Practica: Me llamo Ana.",
             "modelAnswer": "My name is Ana.",
-            "translation": "My name is Ana.",
+            "translation": "Me llamo Ana.",
             "evaluation": {
               "type": "transcription_feedback",
               "transcriptionSeparateFromPronunciation": true
@@ -1320,10 +1181,10 @@
           {
             "itemId": "english-pre-a1-m002-speaking-ex01-i03",
             "position": 3,
-            "prompt": "Di en voz alta esta expresión.",
-            "promptSpanish": "Practica el modelo de la misión.",
-            "modelAnswer": "What's your name? My name is Leo.",
-            "translation": "What's your name? My name is Leo.",
+            "prompt": "Di en voz alta el modelo.",
+            "promptSpanish": "Practica: Me llamo Leo.",
+            "modelAnswer": "My name is Leo.",
+            "translation": "Me llamo Leo.",
             "evaluation": {
               "type": "transcription_feedback",
               "transcriptionSeparateFromPronunciation": true
@@ -1332,10 +1193,10 @@
           {
             "itemId": "english-pre-a1-m002-speaking-ex01-i04",
             "position": 4,
-            "prompt": "Di en voz alta esta expresión.",
-            "promptSpanish": "Practica el modelo de la misión.",
-            "modelAnswer": "My name is…",
-            "translation": "My name is…",
+            "prompt": "Di en voz alta el modelo.",
+            "promptSpanish": "Practica: ¡Hola!",
+            "modelAnswer": "Hello!",
+            "translation": "¡Hola!",
             "evaluation": {
               "type": "transcription_feedback",
               "transcriptionSeparateFromPronunciation": true
@@ -1344,10 +1205,10 @@
           {
             "itemId": "english-pre-a1-m002-speaking-ex01-i05",
             "position": 5,
-            "prompt": "Di en voz alta esta expresión.",
-            "promptSpanish": "Practica el modelo de la misión.",
-            "modelAnswer": "What's your name?",
-            "translation": "What's your name?",
+            "prompt": "Di en voz alta el modelo.",
+            "promptSpanish": "Practica: ¡Hasta luego!",
+            "modelAnswer": "See you!",
+            "translation": "¡Hasta luego!",
             "evaluation": {
               "type": "transcription_feedback",
               "transcriptionSeparateFromPronunciation": true
@@ -1356,10 +1217,10 @@
           {
             "itemId": "english-pre-a1-m002-speaking-ex01-i06",
             "position": 6,
-            "prompt": "Di en voz alta esta expresión.",
-            "promptSpanish": "Practica el modelo de la misión.",
-            "modelAnswer": "My name is Ana.",
-            "translation": "My name is Ana.",
+            "prompt": "Di en voz alta el modelo.",
+            "promptSpanish": "Practica: ¿Cómo te llamas?",
+            "modelAnswer": "What's your name?",
+            "translation": "¿Cómo te llamas?",
             "evaluation": {
               "type": "transcription_feedback",
               "transcriptionSeparateFromPronunciation": true
@@ -1368,10 +1229,10 @@
           {
             "itemId": "english-pre-a1-m002-speaking-ex01-i07",
             "position": 7,
-            "prompt": "Di en voz alta esta expresión.",
-            "promptSpanish": "Practica el modelo de la misión.",
-            "modelAnswer": "What's your name? My name is Leo.",
-            "translation": "What's your name? My name is Leo.",
+            "prompt": "Di en voz alta el modelo.",
+            "promptSpanish": "Practica: Me llamo Ana.",
+            "modelAnswer": "My name is Ana.",
+            "translation": "Me llamo Ana.",
             "evaluation": {
               "type": "transcription_feedback",
               "transcriptionSeparateFromPronunciation": true
@@ -1380,10 +1241,10 @@
           {
             "itemId": "english-pre-a1-m002-speaking-ex01-i08",
             "position": 8,
-            "prompt": "Di en voz alta esta expresión.",
-            "promptSpanish": "Practica el modelo de la misión.",
-            "modelAnswer": "My name is…",
-            "translation": "My name is…",
+            "prompt": "Di en voz alta el modelo.",
+            "promptSpanish": "Practica: Me llamo Leo.",
+            "modelAnswer": "My name is Leo.",
+            "translation": "Me llamo Leo.",
             "evaluation": {
               "type": "transcription_feedback",
               "transcriptionSeparateFromPronunciation": true
@@ -1392,10 +1253,10 @@
           {
             "itemId": "english-pre-a1-m002-speaking-ex01-i09",
             "position": 9,
-            "prompt": "Di en voz alta esta expresión.",
-            "promptSpanish": "Practica el modelo de la misión.",
-            "modelAnswer": "What's your name?",
-            "translation": "What's your name?",
+            "prompt": "Di en voz alta el modelo.",
+            "promptSpanish": "Practica: ¡Hola!",
+            "modelAnswer": "Hello!",
+            "translation": "¡Hola!",
             "evaluation": {
               "type": "transcription_feedback",
               "transcriptionSeparateFromPronunciation": true
@@ -1404,10 +1265,10 @@
           {
             "itemId": "english-pre-a1-m002-speaking-ex01-i10",
             "position": 10,
-            "prompt": "Di en voz alta esta expresión.",
-            "promptSpanish": "Practica el modelo de la misión.",
-            "modelAnswer": "My name is Ana.",
-            "translation": "My name is Ana.",
+            "prompt": "Di en voz alta el modelo.",
+            "promptSpanish": "Practica: ¡Hasta luego!",
+            "modelAnswer": "See you!",
+            "translation": "¡Hasta luego!",
             "evaluation": {
               "type": "transcription_feedback",
               "transcriptionSeparateFromPronunciation": true
@@ -1424,7 +1285,7 @@
         "exerciseId": "english-pre-a1-m002-listening-ex01",
         "type": "listening_gap_fill",
         "content": {
-          "audio": "tts:en-GB:What's your name? My name is Ana. What's your name? My name is Leo. My name is… What's your name? My name is Ana. What's your name? My name is Leo. My name is… What's your name? My name is Ana.",
+          "audio": "tts:en-GB:What's your name? My name is Ana. My name is Leo. Hello! See you! What's your name? My name is Ana. My name is Leo. Hello! See you!",
           "audioLocale": "en-GB",
           "audioStatus": "synthetic_pending_review",
           "transcriptTemplate": "[[gap-01]] [[gap-02]] [[gap-03]] [[gap-04]] [[gap-05]] [[gap-06]] [[gap-07]] [[gap-08]] [[gap-09]] [[gap-10]]",
@@ -1439,40 +1300,40 @@
             },
             {
               "wordId": "english-pre-a1-m002-listening-word-03",
-              "word": "What's your name? My name is Leo."
+              "word": "My name is Leo."
             },
             {
               "wordId": "english-pre-a1-m002-listening-word-04",
-              "word": "My name is…"
+              "word": "Hello!"
             },
             {
               "wordId": "english-pre-a1-m002-listening-word-05",
-              "word": "What's your name?"
+              "word": "See you!"
             },
             {
               "wordId": "english-pre-a1-m002-listening-word-06",
-              "word": "My name is Ana."
-            },
-            {
-              "wordId": "english-pre-a1-m002-listening-word-07",
-              "word": "What's your name? My name is Leo."
-            },
-            {
-              "wordId": "english-pre-a1-m002-listening-word-08",
-              "word": "My name is…"
-            },
-            {
-              "wordId": "english-pre-a1-m002-listening-word-09",
               "word": "What's your name?"
             },
             {
-              "wordId": "english-pre-a1-m002-listening-word-10",
+              "wordId": "english-pre-a1-m002-listening-word-07",
               "word": "My name is Ana."
+            },
+            {
+              "wordId": "english-pre-a1-m002-listening-word-08",
+              "word": "My name is Leo."
+            },
+            {
+              "wordId": "english-pre-a1-m002-listening-word-09",
+              "word": "Hello!"
+            },
+            {
+              "wordId": "english-pre-a1-m002-listening-word-10",
+              "word": "See you!"
             }
           ],
           "interaction": "select_place_move_replace",
-          "audioTranscript": "tts:en-GB:What's your name? My name is Ana. What's your name? My name is Leo. My name is… What's your name? My name is Ana. What's your name? My name is Leo. My name is… What's your name? My name is Ana.",
-          "translation": "¿Cómo te llamas? Me llamo Ana. What's your name? My name is Leo. Me llamo… ¿Cómo te llamas? Me llamo Ana. What's your name? My name is Leo. Me llamo… ¿Cómo te llamas? Me llamo Ana."
+          "audioTranscript": "tts:en-GB:What's your name? My name is Ana. My name is Leo. Hello! See you! What's your name? My name is Ana. My name is Leo. Hello! See you!",
+          "translation": "¿Cómo te llamas? Me llamo Ana. Me llamo Leo. ¡Hola! ¡Hasta luego! ¿Cómo te llamas? Me llamo Ana. Me llamo Leo. ¡Hola! ¡Hasta luego!"
         },
         "items": [
           {
@@ -1494,56 +1355,56 @@
             "position": 3,
             "gapToken": "[[gap-03]]",
             "expectedWordId": "english-pre-a1-m002-listening-word-03",
-            "answer": "What's your name? My name is Leo."
+            "answer": "My name is Leo."
           },
           {
             "itemId": "english-pre-a1-m002-listening-ex01-i04",
             "position": 4,
             "gapToken": "[[gap-04]]",
             "expectedWordId": "english-pre-a1-m002-listening-word-04",
-            "answer": "My name is…"
+            "answer": "Hello!"
           },
           {
             "itemId": "english-pre-a1-m002-listening-ex01-i05",
             "position": 5,
             "gapToken": "[[gap-05]]",
             "expectedWordId": "english-pre-a1-m002-listening-word-05",
-            "answer": "What's your name?"
+            "answer": "See you!"
           },
           {
             "itemId": "english-pre-a1-m002-listening-ex01-i06",
             "position": 6,
             "gapToken": "[[gap-06]]",
             "expectedWordId": "english-pre-a1-m002-listening-word-06",
-            "answer": "My name is Ana."
+            "answer": "What's your name?"
           },
           {
             "itemId": "english-pre-a1-m002-listening-ex01-i07",
             "position": 7,
             "gapToken": "[[gap-07]]",
             "expectedWordId": "english-pre-a1-m002-listening-word-07",
-            "answer": "What's your name? My name is Leo."
+            "answer": "My name is Ana."
           },
           {
             "itemId": "english-pre-a1-m002-listening-ex01-i08",
             "position": 8,
             "gapToken": "[[gap-08]]",
             "expectedWordId": "english-pre-a1-m002-listening-word-08",
-            "answer": "My name is…"
+            "answer": "My name is Leo."
           },
           {
             "itemId": "english-pre-a1-m002-listening-ex01-i09",
             "position": 9,
             "gapToken": "[[gap-09]]",
             "expectedWordId": "english-pre-a1-m002-listening-word-09",
-            "answer": "What's your name?"
+            "answer": "Hello!"
           },
           {
             "itemId": "english-pre-a1-m002-listening-ex01-i10",
             "position": 10,
             "gapToken": "[[gap-10]]",
             "expectedWordId": "english-pre-a1-m002-listening-word-10",
-            "answer": "My name is Ana."
+            "answer": "See you!"
           }
         ]
       }

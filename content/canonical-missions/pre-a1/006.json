@@ -1,10 +1,11 @@
 {
   "schemaVersion": "1.2.0",
-  "contentVersion": 5,
+  "contentVersion": "2.0.0",
   "course": {
     "courseId": "english-pre-a1",
-    "level": "PRE-A1",
-    "language": "en-GB"
+    "level": "Pre-A1",
+    "language": "en-GB",
+    "title": "Pre-A1 · Usuario principiante"
   },
   "unit": {
     "unitId": "english-pre-a1-unit-01",
@@ -16,7 +17,8 @@
     "missionId": "english-pre-a1-m006",
     "unitId": "english-pre-a1-unit-01",
     "position": 6,
-    "title": "English alphabet"
+    "title": "English alphabet",
+    "objective": "Reconocer las 26 letras y deletrear un nombre."
   },
   "sections": [
     {
@@ -25,160 +27,386 @@
       "position": 1,
       "exercise": {
         "exerciseId": "english-pre-a1-m006-explore-ex01",
-        "type": "vocabulary_pairs",
+        "type": "lesson",
         "items": [
           {
             "itemId": "english-pre-a1-m006-explore-ex01-i01",
             "position": 1,
-            "english": "A–E",
-            "spanish": "nombres de las letras A a E",
-            "pronunciationGuide": "éi, bí, sí, dí, í",
-            "audio": "tts:en-GB:A–E"
+            "english": "A",
+            "spanish": "letra A",
+            "pronunciationGuide": "éi",
+            "audio": "tts:en-GB:A",
+            "audioStatus": "synthetic_pending_review"
           },
           {
             "itemId": "english-pre-a1-m006-explore-ex01-i02",
             "position": 2,
-            "english": "F–J",
-            "spanish": "nombres de las letras F a J",
-            "pronunciationGuide": "éf, yí, éich, ái, yéi",
-            "audio": "tts:en-GB:F–J"
+            "english": "B",
+            "spanish": "letra B",
+            "pronunciationGuide": "bí",
+            "audio": "tts:en-GB:B",
+            "audioStatus": "synthetic_pending_review"
           },
           {
             "itemId": "english-pre-a1-m006-explore-ex01-i03",
             "position": 3,
-            "english": "K–O",
-            "spanish": "nombres de las letras K a O",
-            "pronunciationGuide": "kéi, él, ém, én, óu",
-            "audio": "tts:en-GB:K–O"
+            "english": "C",
+            "spanish": "letra C",
+            "pronunciationGuide": "sí",
+            "audio": "tts:en-GB:C",
+            "audioStatus": "synthetic_pending_review"
           },
           {
             "itemId": "english-pre-a1-m006-explore-ex01-i04",
             "position": 4,
-            "english": "P–T",
-            "spanish": "nombres de las letras P a T",
-            "pronunciationGuide": "pí, kiú, ar, és, tí",
-            "audio": "tts:en-GB:P–T"
+            "english": "D",
+            "spanish": "letra D",
+            "pronunciationGuide": "dí",
+            "audio": "tts:en-GB:D",
+            "audioStatus": "synthetic_pending_review"
           },
           {
             "itemId": "english-pre-a1-m006-explore-ex01-i05",
             "position": 5,
-            "english": "U–Z",
-            "spanish": "nombres de las letras U a Z",
-            "pronunciationGuide": "iú, ví, dá-bol iú, éks, uái, zed",
-            "audio": "tts:en-GB:U–Z"
+            "english": "E",
+            "spanish": "letra E",
+            "pronunciationGuide": "í",
+            "audio": "tts:en-GB:E",
+            "audioStatus": "synthetic_pending_review"
           },
           {
             "itemId": "english-pre-a1-m006-explore-ex01-i06",
             "position": 6,
-            "english": "vowels",
-            "spanish": "vocales",
-            "pronunciationGuide": "VÁU-elz",
-            "audio": "tts:en-GB:vowels"
+            "english": "F",
+            "spanish": "letra F",
+            "pronunciationGuide": "éf",
+            "audio": "tts:en-GB:F",
+            "audioStatus": "synthetic_pending_review"
           },
           {
             "itemId": "english-pre-a1-m006-explore-ex01-i07",
             "position": 7,
-            "english": "consonants",
-            "spanish": "consonantes",
-            "pronunciationGuide": "KÓN-so-nants",
-            "audio": "tts:en-GB:consonants"
+            "english": "G",
+            "spanish": "letra G",
+            "pronunciationGuide": "yí",
+            "audio": "tts:en-GB:G",
+            "audioStatus": "synthetic_pending_review"
           },
           {
             "itemId": "english-pre-a1-m006-explore-ex01-i08",
             "position": 8,
-            "english": "capital letter",
-            "spanish": "letra mayúscula",
-            "pronunciationGuide": "KÁ-pi-tal LÉ-ter",
-            "audio": "tts:en-GB:capital letter"
+            "english": "H",
+            "spanish": "letra H",
+            "pronunciationGuide": "éich",
+            "audio": "tts:en-GB:H",
+            "audioStatus": "synthetic_pending_review"
           },
           {
             "itemId": "english-pre-a1-m006-explore-ex01-i09",
             "position": 9,
-            "english": "small letter",
-            "spanish": "letra minúscula",
-            "pronunciationGuide": "smól LÉ-ter",
-            "audio": "tts:en-GB:small letter"
+            "english": "I",
+            "spanish": "letra I",
+            "pronunciationGuide": "ái",
+            "audio": "tts:en-GB:I",
+            "audioStatus": "synthetic_pending_review"
           },
           {
             "itemId": "english-pre-a1-m006-explore-ex01-i10",
             "position": 10,
+            "english": "J",
+            "spanish": "letra J",
+            "pronunciationGuide": "yéi",
+            "audio": "tts:en-GB:J",
+            "audioStatus": "synthetic_pending_review"
+          },
+          {
+            "itemId": "english-pre-a1-m006-explore-ex01-i11",
+            "position": 11,
+            "english": "K",
+            "spanish": "letra K",
+            "pronunciationGuide": "kéi",
+            "audio": "tts:en-GB:K",
+            "audioStatus": "synthetic_pending_review"
+          },
+          {
+            "itemId": "english-pre-a1-m006-explore-ex01-i12",
+            "position": 12,
+            "english": "L",
+            "spanish": "letra L",
+            "pronunciationGuide": "él",
+            "audio": "tts:en-GB:L",
+            "audioStatus": "synthetic_pending_review"
+          },
+          {
+            "itemId": "english-pre-a1-m006-explore-ex01-i13",
+            "position": 13,
+            "english": "M",
+            "spanish": "letra M",
+            "pronunciationGuide": "ém",
+            "audio": "tts:en-GB:M",
+            "audioStatus": "synthetic_pending_review"
+          },
+          {
+            "itemId": "english-pre-a1-m006-explore-ex01-i14",
+            "position": 14,
+            "english": "N",
+            "spanish": "letra N",
+            "pronunciationGuide": "én",
+            "audio": "tts:en-GB:N",
+            "audioStatus": "synthetic_pending_review"
+          },
+          {
+            "itemId": "english-pre-a1-m006-explore-ex01-i15",
+            "position": 15,
+            "english": "O",
+            "spanish": "letra O",
+            "pronunciationGuide": "óu",
+            "audio": "tts:en-GB:O",
+            "audioStatus": "synthetic_pending_review"
+          },
+          {
+            "itemId": "english-pre-a1-m006-explore-ex01-i16",
+            "position": 16,
+            "english": "P",
+            "spanish": "letra P",
+            "pronunciationGuide": "pí",
+            "audio": "tts:en-GB:P",
+            "audioStatus": "synthetic_pending_review"
+          },
+          {
+            "itemId": "english-pre-a1-m006-explore-ex01-i17",
+            "position": 17,
+            "english": "Q",
+            "spanish": "letra Q",
+            "pronunciationGuide": "kiú",
+            "audio": "tts:en-GB:Q",
+            "audioStatus": "synthetic_pending_review"
+          },
+          {
+            "itemId": "english-pre-a1-m006-explore-ex01-i18",
+            "position": 18,
+            "english": "R",
+            "spanish": "letra R",
+            "pronunciationGuide": "ar",
+            "audio": "tts:en-GB:R",
+            "audioStatus": "synthetic_pending_review"
+          },
+          {
+            "itemId": "english-pre-a1-m006-explore-ex01-i19",
+            "position": 19,
+            "english": "S",
+            "spanish": "letra S",
+            "pronunciationGuide": "és",
+            "audio": "tts:en-GB:S",
+            "audioStatus": "synthetic_pending_review"
+          },
+          {
+            "itemId": "english-pre-a1-m006-explore-ex01-i20",
+            "position": 20,
+            "english": "T",
+            "spanish": "letra T",
+            "pronunciationGuide": "tí",
+            "audio": "tts:en-GB:T",
+            "audioStatus": "synthetic_pending_review"
+          },
+          {
+            "itemId": "english-pre-a1-m006-explore-ex01-i21",
+            "position": 21,
+            "english": "U",
+            "spanish": "letra U",
+            "pronunciationGuide": "iú",
+            "audio": "tts:en-GB:U",
+            "audioStatus": "synthetic_pending_review"
+          },
+          {
+            "itemId": "english-pre-a1-m006-explore-ex01-i22",
+            "position": 22,
+            "english": "V",
+            "spanish": "letra V",
+            "pronunciationGuide": "ví",
+            "audio": "tts:en-GB:V",
+            "audioStatus": "synthetic_pending_review"
+          },
+          {
+            "itemId": "english-pre-a1-m006-explore-ex01-i23",
+            "position": 23,
+            "english": "W",
+            "spanish": "letra W",
+            "pronunciationGuide": "dá-bol iú",
+            "audio": "tts:en-GB:W",
+            "audioStatus": "synthetic_pending_review"
+          },
+          {
+            "itemId": "english-pre-a1-m006-explore-ex01-i24",
+            "position": 24,
+            "english": "X",
+            "spanish": "letra X",
+            "pronunciationGuide": "éks",
+            "audio": "tts:en-GB:X",
+            "audioStatus": "synthetic_pending_review"
+          },
+          {
+            "itemId": "english-pre-a1-m006-explore-ex01-i25",
+            "position": 25,
+            "english": "Y",
+            "spanish": "letra Y",
+            "pronunciationGuide": "uái",
+            "audio": "tts:en-GB:Y",
+            "audioStatus": "synthetic_pending_review"
+          },
+          {
+            "itemId": "english-pre-a1-m006-explore-ex01-i26",
+            "position": 26,
+            "english": "Z",
+            "spanish": "letra Z",
+            "pronunciationGuide": "zed (RU) / zí (EE. UU.)",
+            "audio": "tts:en-GB:Z",
+            "audioStatus": "synthetic_pending_review"
+          },
+          {
+            "itemId": "english-pre-a1-m006-explore-ex01-i27",
+            "position": 27,
+            "english": "alphabet",
+            "spanish": "alfabeto",
+            "pronunciationGuide": "ÁL-fa-bet",
+            "audio": "tts:en-GB:alphabet",
+            "audioStatus": "synthetic_pending_review"
+          },
+          {
+            "itemId": "english-pre-a1-m006-explore-ex01-i28",
+            "position": 28,
+            "english": "letter",
+            "spanish": "letra",
+            "pronunciationGuide": "LÉ-ter",
+            "audio": "tts:en-GB:letter",
+            "audioStatus": "synthetic_pending_review"
+          },
+          {
+            "itemId": "english-pre-a1-m006-explore-ex01-i29",
+            "position": 29,
+            "english": "capital letter",
+            "spanish": "mayúscula",
+            "pronunciationGuide": "KÁ-pi-tal LÉ-ter",
+            "audio": "tts:en-GB:capital letter",
+            "audioStatus": "synthetic_pending_review"
+          },
+          {
+            "itemId": "english-pre-a1-m006-explore-ex01-i30",
+            "position": 30,
+            "english": "small letter",
+            "spanish": "minúscula",
+            "pronunciationGuide": "smól LÉ-ter",
+            "audio": "tts:en-GB:small letter",
+            "audioStatus": "synthetic_pending_review"
+          },
+          {
+            "itemId": "english-pre-a1-m006-explore-ex01-i31",
+            "position": 31,
+            "english": "vowel",
+            "spanish": "vocal",
+            "pronunciationGuide": "VÁU-el",
+            "audio": "tts:en-GB:vowel",
+            "audioStatus": "synthetic_pending_review"
+          },
+          {
+            "itemId": "english-pre-a1-m006-explore-ex01-i32",
+            "position": 32,
+            "english": "consonant",
+            "spanish": "consonante",
+            "pronunciationGuide": "KÓN-so-nant",
+            "audio": "tts:en-GB:consonant",
+            "audioStatus": "synthetic_pending_review"
+          },
+          {
+            "itemId": "english-pre-a1-m006-explore-ex01-i33",
+            "position": 33,
             "english": "spell",
             "spanish": "deletrear",
             "pronunciationGuide": "spél",
-            "audio": "tts:en-GB:spell"
+            "audio": "tts:en-GB:spell",
+            "audioStatus": "synthetic_pending_review"
+          },
+          {
+            "itemId": "english-pre-a1-m006-explore-ex01-i34",
+            "position": 34,
+            "english": "spelling",
+            "spanish": "deletreo",
+            "pronunciationGuide": "SPÉ-ling",
+            "audio": "tts:en-GB:spelling",
+            "audioStatus": "synthetic_pending_review"
           }
         ],
         "theory": {
           "title": "English alphabet",
-          "explanation": "El alfabeto inglés tiene 26 letras. A, E, I, O, U son vocales; las demás, consonantes. Z se dice zed en inglés británico y zee en estadounidense. W se llama double u.",
-          "tip": "Comprende todos los modelos de Explore antes de comenzar las actividades.",
+          "explanation": "La W se llama double u. La Z se llama zed en inglés británico o zee en inglés estadounidense.",
+          "tip": "Exploración es aprendizaje, no un examen. Revisa todos los bloques, palabras y modelos antes de practicar.",
           "patterns": [
             {
               "label": "Bloque 1",
-              "pattern": "Objetivo: English alphabet.",
+              "pattern": "El alfabeto inglés tiene 26 letras",
               "examples": [
-                "A B C D E"
+                "A, B, C"
               ]
             },
             {
               "label": "Bloque 2",
-              "pattern": "F–J — nombres de las letras F a J. Pronunciación: éf, yí, éich, ái, yéi.",
+              "pattern": "Letras A–G",
               "examples": [
-                "F G H I J"
+                "D, E, F"
               ]
             },
             {
               "label": "Bloque 3",
-              "pattern": "K L M N O — K, L, M, N, O..",
+              "pattern": "Letras H–N",
               "examples": [
-                "K L M N O"
+                "G, H, I"
               ]
             },
             {
               "label": "Bloque 4",
-              "pattern": "P Q R S T — P, Q, R, S, T..",
+              "pattern": "Letras O–U",
               "examples": [
-                "P Q R S T"
+                "J, K, L"
               ]
             },
             {
               "label": "Bloque 5",
-              "pattern": "U V W X Y Z — U, V, W, X, Y, Z..",
+              "pattern": "Letras V–Z",
               "examples": [
-                "U V W X Y Z"
+                "M, N, O"
               ]
             },
             {
               "label": "Bloque 6",
-              "pattern": "A E I O U — A, E, I, O, U..",
+              "pattern": "Vocales A, E, I, O, U; las demás son consonantes",
               "examples": [
-                "A E I O U"
+                "P, Q, R"
               ]
             },
             {
               "label": "Bloque 7",
-              "pattern": "El alfabeto inglés tiene 26 letras. A, E, I, O, U son vocales; las demás, consonantes. Z se dice zed en inglés británico y zee en estadounidense. W se llama double u.",
+              "pattern": "Diferenciar nombres de letras que suenan parecidos",
               "examples": [
-                "Capital letter"
+                "S, T, U"
               ]
             },
             {
               "label": "Bloque 8",
-              "pattern": "Small letter — Letra minúscula..",
+              "pattern": "Reconocer mayúsculas y minúsculas",
               "examples": [
-                "Small letter"
+                "V, W, X"
               ]
             },
             {
               "label": "Bloque 9",
-              "pattern": "Consonant — Consonante.",
+              "pattern": "Spell significa deletrear y spelling es deletreo",
               "examples": [
-                "Consonant"
+                "Y, Z"
               ]
             },
             {
               "label": "Bloque 10",
-              "pattern": "How do you spell your name? — ¿Cómo se deletrea tu nombre?.",
+              "pattern": "Preguntar How do you spell your name?; Z puede ser zed o zee",
               "examples": [
                 "How do you spell your name?"
               ]
@@ -188,503 +416,91 @@
         "lesson": {
           "phrases": [
             {
-              "english": "A B C D E",
-              "spanish": "A, B, C, D, E.",
-              "note": "Modelo enseñado en Explore."
+              "english": "A, B, C",
+              "spanish": "A, B, C",
+              "pronunciationGuide": "éi bí sí",
+              "audio": "tts:en-GB:A, B, C",
+              "audioStatus": "synthetic_pending_review",
+              "note": "Expresión explicada en Explore."
             },
             {
-              "english": "F G H I J",
-              "spanish": "F, G, H, I, J.",
-              "note": "Modelo enseñado en Explore."
+              "english": "D, E, F",
+              "spanish": "D, E, F",
+              "pronunciationGuide": "dí í éf",
+              "audio": "tts:en-GB:D, E, F",
+              "audioStatus": "synthetic_pending_review",
+              "note": "Expresión explicada en Explore."
             },
             {
-              "english": "K L M N O",
-              "spanish": "K, L, M, N, O.",
-              "note": "Modelo enseñado en Explore."
+              "english": "G, H, I",
+              "spanish": "G, H, I",
+              "pronunciationGuide": "yí éich ái",
+              "audio": "tts:en-GB:G, H, I",
+              "audioStatus": "synthetic_pending_review",
+              "note": "Expresión explicada en Explore."
             },
             {
-              "english": "P Q R S T",
-              "spanish": "P, Q, R, S, T.",
-              "note": "Modelo enseñado en Explore."
+              "english": "J, K, L",
+              "spanish": "J, K, L",
+              "pronunciationGuide": "yéi kéi él",
+              "audio": "tts:en-GB:J, K, L",
+              "audioStatus": "synthetic_pending_review",
+              "note": "Expresión explicada en Explore."
             },
             {
-              "english": "U V W X Y Z",
-              "spanish": "U, V, W, X, Y, Z.",
-              "note": "Modelo enseñado en Explore."
+              "english": "M, N, O",
+              "spanish": "M, N, O",
+              "pronunciationGuide": "ém én óu",
+              "audio": "tts:en-GB:M, N, O",
+              "audioStatus": "synthetic_pending_review",
+              "note": "Expresión explicada en Explore."
             },
             {
-              "english": "A E I O U",
-              "spanish": "A, E, I, O, U.",
-              "note": "Modelo enseñado en Explore."
+              "english": "P, Q, R",
+              "spanish": "P, Q, R",
+              "pronunciationGuide": "pí kiú ar",
+              "audio": "tts:en-GB:P, Q, R",
+              "audioStatus": "synthetic_pending_review",
+              "note": "Expresión explicada en Explore."
             },
             {
-              "english": "Capital letter",
-              "spanish": "Letra mayúscula.",
-              "note": "Modelo enseñado en Explore."
+              "english": "S, T, U",
+              "spanish": "S, T, U",
+              "pronunciationGuide": "és tí iú",
+              "audio": "tts:en-GB:S, T, U",
+              "audioStatus": "synthetic_pending_review",
+              "note": "Expresión explicada en Explore."
             },
             {
-              "english": "Small letter",
-              "spanish": "Letra minúscula.",
-              "note": "Modelo enseñado en Explore."
+              "english": "V, W, X",
+              "spanish": "V, W, X",
+              "pronunciationGuide": "ví dá-bol iú éks",
+              "audio": "tts:en-GB:V, W, X",
+              "audioStatus": "synthetic_pending_review",
+              "note": "Expresión explicada en Explore."
             },
             {
-              "english": "Consonant",
-              "spanish": "Consonante",
-              "note": "Modelo enseñado en Explore."
+              "english": "Y, Z",
+              "spanish": "Y, Z",
+              "pronunciationGuide": "uái zed / zí",
+              "audio": "tts:en-GB:Y, Z",
+              "audioStatus": "synthetic_pending_review",
+              "note": "Expresión explicada en Explore."
             },
             {
               "english": "How do you spell your name?",
               "spanish": "¿Cómo se deletrea tu nombre?",
-              "note": "Modelo enseñado en Explore."
-            },
-            {
-              "english": "A–E",
-              "spanish": "nombres de las letras A a E",
-              "note": "Pronunciación aproximada: éi, bí, sí, dí, í."
-            },
-            {
-              "english": "F–J",
-              "spanish": "nombres de las letras F a J",
-              "note": "Pronunciación aproximada: éf, yí, éich, ái, yéi."
-            },
-            {
-              "english": "K–O",
-              "spanish": "nombres de las letras K a O",
-              "note": "Pronunciación aproximada: kéi, él, ém, én, óu."
-            },
-            {
-              "english": "P–T",
-              "spanish": "nombres de las letras P a T",
-              "note": "Pronunciación aproximada: pí, kiú, ar, és, tí."
-            },
-            {
-              "english": "U–Z",
-              "spanish": "nombres de las letras U a Z",
-              "note": "Pronunciación aproximada: iú, ví, dá-bol iú, éks, uái, zed."
-            },
-            {
-              "english": "vowels",
-              "spanish": "vocales",
-              "note": "Pronunciación aproximada: VÁU-elz."
-            },
-            {
-              "english": "consonants",
-              "spanish": "consonantes",
-              "note": "Pronunciación aproximada: KÓN-so-nants."
-            },
-            {
-              "english": "capital letter",
-              "spanish": "letra mayúscula",
-              "note": "Pronunciación aproximada: KÁ-pi-tal LÉ-ter."
-            },
-            {
-              "english": "small letter",
-              "spanish": "letra minúscula",
-              "note": "Pronunciación aproximada: smól LÉ-ter."
-            },
-            {
-              "english": "spell",
-              "spanish": "deletrear",
-              "note": "Pronunciación aproximada: spél."
-            },
-            {
-              "english": "A",
-              "spanish": "nombre de la letra A",
-              "note": "Pronunciación aproximada: éi."
-            },
-            {
-              "english": "B",
-              "spanish": "nombre de la letra B",
-              "note": "Pronunciación aproximada: bí."
-            },
-            {
-              "english": "C",
-              "spanish": "nombre de la letra C",
-              "note": "Pronunciación aproximada: sí."
-            },
-            {
-              "english": "D",
-              "spanish": "nombre de la letra D",
-              "note": "Pronunciación aproximada: dí."
-            },
-            {
-              "english": "E",
-              "spanish": "nombre de la letra E",
-              "note": "Pronunciación aproximada: í."
-            },
-            {
-              "english": "F",
-              "spanish": "nombre de la letra F",
-              "note": "Pronunciación aproximada: éf."
-            },
-            {
-              "english": "G",
-              "spanish": "nombre de la letra G",
-              "note": "Pronunciación aproximada: yí."
-            },
-            {
-              "english": "H",
-              "spanish": "nombre de la letra H",
-              "note": "Pronunciación aproximada: éich."
-            },
-            {
-              "english": "I",
-              "spanish": "nombre de la letra I",
-              "note": "Pronunciación aproximada: ái."
-            },
-            {
-              "english": "J",
-              "spanish": "nombre de la letra J",
-              "note": "Pronunciación aproximada: yéi."
-            },
-            {
-              "english": "K",
-              "spanish": "nombre de la letra K",
-              "note": "Pronunciación aproximada: kéi."
-            },
-            {
-              "english": "L",
-              "spanish": "nombre de la letra L",
-              "note": "Pronunciación aproximada: él."
-            },
-            {
-              "english": "M",
-              "spanish": "nombre de la letra M",
-              "note": "Pronunciación aproximada: ém."
-            },
-            {
-              "english": "N",
-              "spanish": "nombre de la letra N",
-              "note": "Pronunciación aproximada: én."
-            },
-            {
-              "english": "O",
-              "spanish": "nombre de la letra O",
-              "note": "Pronunciación aproximada: óu."
-            },
-            {
-              "english": "P",
-              "spanish": "nombre de la letra P",
-              "note": "Pronunciación aproximada: pí."
-            },
-            {
-              "english": "Q",
-              "spanish": "nombre de la letra Q",
-              "note": "Pronunciación aproximada: kiú."
-            },
-            {
-              "english": "R",
-              "spanish": "nombre de la letra R",
-              "note": "Pronunciación aproximada: ar."
-            },
-            {
-              "english": "S",
-              "spanish": "nombre de la letra S",
-              "note": "Pronunciación aproximada: és."
-            },
-            {
-              "english": "T",
-              "spanish": "nombre de la letra T",
-              "note": "Pronunciación aproximada: tí."
-            },
-            {
-              "english": "U",
-              "spanish": "nombre de la letra U",
-              "note": "Pronunciación aproximada: iú."
-            },
-            {
-              "english": "V",
-              "spanish": "nombre de la letra V",
-              "note": "Pronunciación aproximada: ví."
-            },
-            {
-              "english": "W",
-              "spanish": "nombre de la letra W",
-              "note": "Pronunciación aproximada: dá-bol iú."
-            },
-            {
-              "english": "X",
-              "spanish": "nombre de la letra X",
-              "note": "Pronunciación aproximada: éks."
-            },
-            {
-              "english": "Y",
-              "spanish": "nombre de la letra Y",
-              "note": "Pronunciación aproximada: uái."
-            },
-            {
-              "english": "Z",
-              "spanish": "nombre de la letra Z",
-              "note": "Pronunciación aproximada: zed / zí."
-            },
-            {
-              "english": "alphabet",
-              "spanish": "alfabeto",
-              "note": "Pronunciación aproximada: ÁL-fa-bet."
-            },
-            {
-              "english": "letter",
-              "spanish": "letra",
-              "note": "Pronunciación aproximada: LÉ-ter."
-            },
-            {
-              "english": "vowel",
-              "spanish": "vocal",
-              "note": "Pronunciación aproximada: VÁU-el."
-            },
-            {
-              "english": "consonant",
-              "spanish": "consonante",
-              "note": "Pronunciación aproximada: KÓN-so-nant."
-            },
-            {
-              "english": "spelling",
-              "spanish": "deletreo",
-              "note": "Pronunciación aproximada: SPÉ-ling."
-            },
-            {
-              "english": "repeat",
-              "spanish": "repetir",
-              "note": "Pronunciación aproximada: ri-PÍT."
-            },
-            {
-              "english": "understand",
-              "spanish": "entender",
-              "note": "Pronunciación aproximada: an-der-STÁND."
+              "pronunciationGuide": "jáu du iú spél iór néim",
+              "audio": "tts:en-GB:How do you spell your name?",
+              "audioStatus": "synthetic_pending_review",
+              "note": "Expresión explicada en Explore."
             }
           ],
           "grammar": [
             {
-              "english": "A B C D E",
-              "spanish": "A, B, C, D, E.",
-              "note": "English alphabet"
-            },
-            {
-              "english": "F G H I J",
-              "spanish": "F, G, H, I, J.",
-              "note": "El alfabeto inglés tiene 26 letras. A, E, I, O, U son vocales; las demás, consonantes. Z se dice zed en inglés británico y zee en estadounidense. W se llama double u."
-            },
-            {
-              "english": "K L M N O",
-              "spanish": "K, L, M, N, O.",
-              "note": "El alfabeto inglés tiene 26 letras. A, E, I, O, U son vocales; las demás, consonantes. Z se dice zed en inglés británico y zee en estadounidense. W se llama double u."
-            },
-            {
-              "english": "P Q R S T",
-              "spanish": "P, Q, R, S, T.",
-              "note": "El alfabeto inglés tiene 26 letras. A, E, I, O, U son vocales; las demás, consonantes. Z se dice zed en inglés británico y zee en estadounidense. W se llama double u."
-            },
-            {
-              "english": "U V W X Y Z",
-              "spanish": "U, V, W, X, Y, Z.",
-              "note": "El alfabeto inglés tiene 26 letras. A, E, I, O, U son vocales; las demás, consonantes. Z se dice zed en inglés británico y zee en estadounidense. W se llama double u."
-            },
-            {
-              "english": "A E I O U",
-              "spanish": "A, E, I, O, U.",
-              "note": "El alfabeto inglés tiene 26 letras. A, E, I, O, U son vocales; las demás, consonantes. Z se dice zed en inglés británico y zee en estadounidense. W se llama double u."
-            },
-            {
-              "english": "Capital letter",
-              "spanish": "Letra mayúscula.",
-              "note": "El alfabeto inglés tiene 26 letras. A, E, I, O, U son vocales; las demás, consonantes. Z se dice zed en inglés británico y zee en estadounidense. W se llama double u."
-            },
-            {
-              "english": "Small letter",
-              "spanish": "Letra minúscula.",
-              "note": "El alfabeto inglés tiene 26 letras. A, E, I, O, U son vocales; las demás, consonantes. Z se dice zed en inglés británico y zee en estadounidense. W se llama double u."
-            },
-            {
-              "english": "Consonant",
-              "spanish": "Consonante",
-              "note": "El alfabeto inglés tiene 26 letras. A, E, I, O, U son vocales; las demás, consonantes. Z se dice zed en inglés británico y zee en estadounidense. W se llama double u."
-            },
-            {
-              "english": "How do you spell your name?",
-              "spanish": "¿Cómo se deletrea tu nombre?",
-              "note": "El alfabeto inglés tiene 26 letras. A, E, I, O, U son vocales; las demás, consonantes. Z se dice zed en inglés británico y zee en estadounidense. W se llama double u."
-            }
-          ],
-          "reading": [
-            {
-              "english": "A B C D E. F G H I J. K L M N O. P Q R S T. U V W X Y Z.",
-              "spanish": "El alfabeto inglés, de la A a la Z."
-            }
-          ],
-          "writing": [
-            {
-              "english": "A B C D E",
-              "spanish": "A, B, C, D, E.",
-              "note": "Modelo enseñado en Explore."
-            },
-            {
-              "english": "F G H I J",
-              "spanish": "F, G, H, I, J.",
-              "note": "Modelo enseñado en Explore."
-            },
-            {
-              "english": "K L M N O",
-              "spanish": "K, L, M, N, O.",
-              "note": "Modelo enseñado en Explore."
-            },
-            {
-              "english": "P Q R S T",
-              "spanish": "P, Q, R, S, T.",
-              "note": "Modelo enseñado en Explore."
-            },
-            {
-              "english": "U V W X Y Z",
-              "spanish": "U, V, W, X, Y, Z.",
-              "note": "Modelo enseñado en Explore."
-            },
-            {
-              "english": "A E I O U",
-              "spanish": "A, E, I, O, U.",
-              "note": "Modelo enseñado en Explore."
-            },
-            {
-              "english": "Capital letter",
-              "spanish": "Letra mayúscula.",
-              "note": "Modelo enseñado en Explore."
-            },
-            {
-              "english": "Small letter",
-              "spanish": "Letra minúscula.",
-              "note": "Modelo enseñado en Explore."
-            },
-            {
-              "english": "Consonant",
-              "spanish": "Consonante",
-              "note": "Modelo enseñado en Explore."
-            },
-            {
-              "english": "How do you spell your name?",
-              "spanish": "¿Cómo se deletrea tu nombre?",
-              "note": "Modelo enseñado en Explore."
-            }
-          ],
-          "speaking": [
-            {
-              "english": "A B C D E",
-              "spanish": "A, B, C, D, E.",
-              "note": "Modelo enseñado en Explore.",
-              "prompt": "Practica esta expresión.",
-              "promptSpanish": "Di la expresión en voz alta."
-            },
-            {
-              "english": "F G H I J",
-              "spanish": "F, G, H, I, J.",
-              "note": "Modelo enseñado en Explore.",
-              "prompt": "Practica esta expresión.",
-              "promptSpanish": "Di la expresión en voz alta."
-            },
-            {
-              "english": "K L M N O",
-              "spanish": "K, L, M, N, O.",
-              "note": "Modelo enseñado en Explore.",
-              "prompt": "Practica esta expresión.",
-              "promptSpanish": "Di la expresión en voz alta."
-            },
-            {
-              "english": "P Q R S T",
-              "spanish": "P, Q, R, S, T.",
-              "note": "Modelo enseñado en Explore.",
-              "prompt": "Practica esta expresión.",
-              "promptSpanish": "Di la expresión en voz alta."
-            },
-            {
-              "english": "U V W X Y Z",
-              "spanish": "U, V, W, X, Y, Z.",
-              "note": "Modelo enseñado en Explore.",
-              "prompt": "Practica esta expresión.",
-              "promptSpanish": "Di la expresión en voz alta."
-            },
-            {
-              "english": "A E I O U",
-              "spanish": "A, E, I, O, U.",
-              "note": "Modelo enseñado en Explore.",
-              "prompt": "Practica esta expresión.",
-              "promptSpanish": "Di la expresión en voz alta."
-            },
-            {
-              "english": "Capital letter",
-              "spanish": "Letra mayúscula.",
-              "note": "Modelo enseñado en Explore.",
-              "prompt": "Practica esta expresión.",
-              "promptSpanish": "Di la expresión en voz alta."
-            },
-            {
-              "english": "Small letter",
-              "spanish": "Letra minúscula.",
-              "note": "Modelo enseñado en Explore.",
-              "prompt": "Practica esta expresión.",
-              "promptSpanish": "Di la expresión en voz alta."
-            },
-            {
-              "english": "Consonant",
-              "spanish": "Consonante",
-              "note": "Modelo enseñado en Explore.",
-              "prompt": "Practica esta expresión.",
-              "promptSpanish": "Di la expresión en voz alta."
-            },
-            {
-              "english": "How do you spell your name?",
-              "spanish": "¿Cómo se deletrea tu nombre?",
-              "note": "Modelo enseñado en Explore.",
-              "prompt": "Practica esta expresión.",
-              "promptSpanish": "Di la expresión en voz alta."
-            }
-          ],
-          "listening": [
-            {
-              "english": "A B C D E",
-              "spanish": "A, B, C, D, E.",
-              "note": "Modelo enseñado en Explore."
-            },
-            {
-              "english": "F G H I J",
-              "spanish": "F, G, H, I, J.",
-              "note": "Modelo enseñado en Explore."
-            },
-            {
-              "english": "K L M N O",
-              "spanish": "K, L, M, N, O.",
-              "note": "Modelo enseñado en Explore."
-            },
-            {
-              "english": "P Q R S T",
-              "spanish": "P, Q, R, S, T.",
-              "note": "Modelo enseñado en Explore."
-            },
-            {
-              "english": "U V W X Y Z",
-              "spanish": "U, V, W, X, Y, Z.",
-              "note": "Modelo enseñado en Explore."
-            },
-            {
-              "english": "A E I O U",
-              "spanish": "A, E, I, O, U.",
-              "note": "Modelo enseñado en Explore."
-            },
-            {
-              "english": "Capital letter",
-              "spanish": "Letra mayúscula.",
-              "note": "Modelo enseñado en Explore."
-            },
-            {
-              "english": "Small letter",
-              "spanish": "Letra minúscula.",
-              "note": "Modelo enseñado en Explore."
-            },
-            {
-              "english": "Consonant",
-              "spanish": "Consonante",
-              "note": "Modelo enseñado en Explore."
-            },
-            {
-              "english": "How do you spell your name?",
-              "spanish": "¿Cómo se deletrea tu nombre?",
-              "note": "Modelo enseñado en Explore."
+              "english": "English alphabet",
+              "spanish": "Reconocer las 26 letras y deletrear un nombre.",
+              "note": "La W se llama double u. La Z se llama zed en inglés británico o zee en inglés estadounidense."
             }
           ]
         },
@@ -693,70 +509,70 @@
             {
               "position": 1,
               "title": "Bloque 1",
-              "content": "Objetivo: English alphabet.",
-              "example": "A B C D E",
-              "translation": "A, B, C, D, E."
+              "content": "El alfabeto inglés tiene 26 letras",
+              "example": "A, B, C",
+              "translation": "A, B, C"
             },
             {
               "position": 2,
               "title": "Bloque 2",
-              "content": "F–J — nombres de las letras F a J. Pronunciación: éf, yí, éich, ái, yéi.",
-              "example": "F G H I J",
-              "translation": "F, G, H, I, J."
+              "content": "Letras A–G",
+              "example": "D, E, F",
+              "translation": "D, E, F"
             },
             {
               "position": 3,
               "title": "Bloque 3",
-              "content": "K L M N O — K, L, M, N, O..",
-              "example": "K L M N O",
-              "translation": "K, L, M, N, O."
+              "content": "Letras H–N",
+              "example": "G, H, I",
+              "translation": "G, H, I"
             },
             {
               "position": 4,
               "title": "Bloque 4",
-              "content": "P Q R S T — P, Q, R, S, T..",
-              "example": "P Q R S T",
-              "translation": "P, Q, R, S, T."
+              "content": "Letras O–U",
+              "example": "J, K, L",
+              "translation": "J, K, L"
             },
             {
               "position": 5,
               "title": "Bloque 5",
-              "content": "U V W X Y Z — U, V, W, X, Y, Z..",
-              "example": "U V W X Y Z",
-              "translation": "U, V, W, X, Y, Z."
+              "content": "Letras V–Z",
+              "example": "M, N, O",
+              "translation": "M, N, O"
             },
             {
               "position": 6,
               "title": "Bloque 6",
-              "content": "A E I O U — A, E, I, O, U..",
-              "example": "A E I O U",
-              "translation": "A, E, I, O, U."
+              "content": "Vocales A, E, I, O, U; las demás son consonantes",
+              "example": "P, Q, R",
+              "translation": "P, Q, R"
             },
             {
               "position": 7,
               "title": "Bloque 7",
-              "content": "El alfabeto inglés tiene 26 letras. A, E, I, O, U son vocales; las demás, consonantes. Z se dice zed en inglés británico y zee en estadounidense. W se llama double u.",
-              "example": "Capital letter",
-              "translation": "Letra mayúscula."
+              "content": "Diferenciar nombres de letras que suenan parecidos",
+              "example": "S, T, U",
+              "translation": "S, T, U"
             },
             {
               "position": 8,
               "title": "Bloque 8",
-              "content": "Small letter — Letra minúscula..",
-              "example": "Small letter",
-              "translation": "Letra minúscula."
+              "content": "Reconocer mayúsculas y minúsculas",
+              "example": "V, W, X",
+              "translation": "V, W, X"
             },
             {
               "position": 9,
               "title": "Bloque 9",
-              "content": "Consonant — Consonante.",
-              "example": "Consonant",
-              "translation": "Consonante"
+              "content": "Spell significa deletrear y spelling es deletreo",
+              "example": "Y, Z",
+              "translation": "Y, Z"
             },
             {
               "position": 10,
               "title": "Bloque 10",
-              "content": "How do you spell your name? — ¿Cómo se deletrea tu nombre?.",
+              "content": "Preguntar How do you spell your name?; Z puede ser zed o zee",
               "example": "How do you spell your name?",
               "translation": "¿Cómo se deletrea tu nombre?"
             }
@@ -775,151 +591,151 @@
           {
             "itemId": "english-pre-a1-m006-practice-ex01-i01",
             "position": 1,
-            "prompt": "Elige la traducción de “A”.",
+            "prompt": "Elige el significado de “alphabet”.",
             "evaluation": {
               "type": "single_choice"
             },
             "options": [
-              "nombre de la letra B",
-              "nombre de la letra C",
-              "nombre de la letra A"
+              "alfabeto",
+              "letra A",
+              "letra B"
             ],
-            "answer": "nombre de la letra A",
+            "answer": "alfabeto",
             "taskType": "vocabulary_translation"
           },
           {
             "itemId": "english-pre-a1-m006-practice-ex01-i02",
             "position": 2,
-            "prompt": "Elige la traducción de “B”.",
+            "prompt": "Elige el significado de “letter”.",
             "evaluation": {
               "type": "single_choice"
             },
             "options": [
-              "nombre de la letra D",
-              "nombre de la letra B",
-              "nombre de la letra C"
+              "letra B",
+              "letra",
+              "letra C"
             ],
-            "answer": "nombre de la letra B",
+            "answer": "letra",
             "taskType": "vocabulary_translation"
           },
           {
             "itemId": "english-pre-a1-m006-practice-ex01-i03",
             "position": 3,
-            "prompt": "Elige la traducción de “C”.",
+            "prompt": "Elige el significado de “capital letter”.",
             "evaluation": {
               "type": "single_choice"
             },
             "options": [
-              "nombre de la letra C",
-              "nombre de la letra D",
-              "nombre de la letra E"
+              "letra C",
+              "letra D",
+              "mayúscula"
             ],
-            "answer": "nombre de la letra C",
+            "answer": "mayúscula",
             "taskType": "vocabulary_translation"
           },
           {
             "itemId": "english-pre-a1-m006-practice-ex01-i04",
             "position": 4,
-            "prompt": "Elige la traducción de “D”.",
+            "prompt": "Elige el significado de “small letter”.",
             "evaluation": {
               "type": "single_choice"
             },
             "options": [
-              "nombre de la letra E",
-              "nombre de la letra F",
-              "nombre de la letra D"
+              "minúscula",
+              "letra D",
+              "letra E"
             ],
-            "answer": "nombre de la letra D",
+            "answer": "minúscula",
             "taskType": "vocabulary_translation"
           },
           {
             "itemId": "english-pre-a1-m006-practice-ex01-i05",
             "position": 5,
-            "prompt": "Elige la traducción de “E”.",
+            "prompt": "Elige el significado de “vowel”.",
             "evaluation": {
               "type": "single_choice"
             },
             "options": [
-              "nombre de la letra G",
-              "nombre de la letra E",
-              "nombre de la letra F"
+              "letra E",
+              "vocal",
+              "letra F"
             ],
-            "answer": "nombre de la letra E",
+            "answer": "vocal",
             "taskType": "vocabulary_translation"
           },
           {
             "itemId": "english-pre-a1-m006-practice-ex01-i06",
             "position": 6,
-            "prompt": "Elige la traducción de “F”.",
+            "prompt": "Elige el significado de “consonant”.",
             "evaluation": {
               "type": "single_choice"
             },
             "options": [
-              "nombre de la letra F",
-              "nombre de la letra G",
-              "nombre de la letra H"
+              "letra F",
+              "letra G",
+              "consonante"
             ],
-            "answer": "nombre de la letra F",
+            "answer": "consonante",
             "taskType": "vocabulary_translation"
           },
           {
             "itemId": "english-pre-a1-m006-practice-ex01-i07",
             "position": 7,
-            "prompt": "Elige la traducción de “G”.",
+            "prompt": "Elige el significado de “spell”.",
             "evaluation": {
               "type": "single_choice"
             },
             "options": [
-              "nombre de la letra H",
-              "nombre de la letra I",
-              "nombre de la letra G"
+              "deletrear",
+              "letra G",
+              "letra H"
             ],
-            "answer": "nombre de la letra G",
+            "answer": "deletrear",
             "taskType": "vocabulary_translation"
           },
           {
             "itemId": "english-pre-a1-m006-practice-ex01-i08",
             "position": 8,
-            "prompt": "Elige la traducción de “H”.",
+            "prompt": "Elige el significado de “spelling”.",
             "evaluation": {
               "type": "single_choice"
             },
             "options": [
-              "nombre de la letra J",
-              "nombre de la letra H",
-              "nombre de la letra I"
+              "letra H",
+              "deletreo",
+              "letra I"
             ],
-            "answer": "nombre de la letra H",
+            "answer": "deletreo",
             "taskType": "vocabulary_translation"
           },
           {
             "itemId": "english-pre-a1-m006-practice-ex01-i09",
             "position": 9,
-            "prompt": "Elige la traducción de “I”.",
+            "prompt": "Elige el significado de “alphabet”.",
             "evaluation": {
               "type": "single_choice"
             },
             "options": [
-              "nombre de la letra I",
-              "nombre de la letra J",
-              "nombre de la letra K"
+              "letra I",
+              "letra J",
+              "alfabeto"
             ],
-            "answer": "nombre de la letra I",
+            "answer": "alfabeto",
             "taskType": "vocabulary_translation"
           },
           {
             "itemId": "english-pre-a1-m006-practice-ex01-i10",
             "position": 10,
-            "prompt": "Elige la traducción de “J”.",
+            "prompt": "Elige el significado de “letter”.",
             "evaluation": {
               "type": "single_choice"
             },
             "options": [
-              "nombre de la letra K",
-              "nombre de la letra L",
-              "nombre de la letra J"
+              "letra",
+              "letra J",
+              "letra K"
             ],
-            "answer": "nombre de la letra J",
+            "answer": "letra",
             "taskType": "vocabulary_translation"
           }
         ]
@@ -933,78 +749,78 @@
         "exerciseId": "english-pre-a1-m006-grammar-ex01",
         "type": "grammar",
         "theory": {
-          "title": "English alphabet",
-          "explanation": "El alfabeto inglés tiene 26 letras. A, E, I, O, U son vocales; las demás, consonantes. Z se dice zed en inglés británico y zee en estadounidense. W se llama double u.",
-          "tip": "Comprende todos los modelos de Explore antes de comenzar las actividades.",
+          "title": "Expresiones y estructuras de la misión",
+          "explanation": "La W se llama double u. La Z se llama zed en inglés británico o zee en inglés estadounidense.",
+          "tip": "Reconoce el modelo completo antes de utilizarlo.",
           "patterns": [
             {
-              "label": "Bloque 1",
-              "pattern": "English alphabet",
+              "label": "Modelo 1",
+              "pattern": "A, B, C",
               "examples": [
-                "A B C D E"
+                "A, B, C"
               ]
             },
             {
-              "label": "Bloque 2",
-              "pattern": "El alfabeto inglés tiene 26 letras. A, E, I, O, U son vocales; las demás, consonantes. Z se dice zed en inglés británico y zee en estadounidense. W se llama double u.",
+              "label": "Modelo 2",
+              "pattern": "D, E, F",
               "examples": [
-                "F G H I J"
+                "D, E, F"
               ]
             },
             {
-              "label": "Bloque 3",
-              "pattern": "El alfabeto inglés tiene 26 letras. A, E, I, O, U son vocales; las demás, consonantes. Z se dice zed en inglés británico y zee en estadounidense. W se llama double u.",
+              "label": "Modelo 3",
+              "pattern": "G, H, I",
               "examples": [
-                "K L M N O"
+                "G, H, I"
               ]
             },
             {
-              "label": "Bloque 4",
-              "pattern": "El alfabeto inglés tiene 26 letras. A, E, I, O, U son vocales; las demás, consonantes. Z se dice zed en inglés británico y zee en estadounidense. W se llama double u.",
+              "label": "Modelo 4",
+              "pattern": "J, K, L",
               "examples": [
-                "P Q R S T"
+                "J, K, L"
               ]
             },
             {
-              "label": "Bloque 5",
-              "pattern": "El alfabeto inglés tiene 26 letras. A, E, I, O, U son vocales; las demás, consonantes. Z se dice zed en inglés británico y zee en estadounidense. W se llama double u.",
+              "label": "Modelo 5",
+              "pattern": "M, N, O",
               "examples": [
-                "U V W X Y Z"
+                "M, N, O"
               ]
             },
             {
-              "label": "Bloque 6",
-              "pattern": "El alfabeto inglés tiene 26 letras. A, E, I, O, U son vocales; las demás, consonantes. Z se dice zed en inglés británico y zee en estadounidense. W se llama double u.",
+              "label": "Modelo 6",
+              "pattern": "P, Q, R",
               "examples": [
-                "A E I O U"
+                "P, Q, R"
               ]
             },
             {
-              "label": "Bloque 7",
-              "pattern": "El alfabeto inglés tiene 26 letras. A, E, I, O, U son vocales; las demás, consonantes. Z se dice zed en inglés británico y zee en estadounidense. W se llama double u.",
+              "label": "Modelo 7",
+              "pattern": "S, T, U",
               "examples": [
-                "Capital letter"
+                "S, T, U"
               ]
             },
             {
-              "label": "Bloque 8",
-              "pattern": "El alfabeto inglés tiene 26 letras. A, E, I, O, U son vocales; las demás, consonantes. Z se dice zed en inglés británico y zee en estadounidense. W se llama double u.",
+              "label": "Modelo 8",
+              "pattern": "V, W, X",
               "examples": [
-                "Small letter"
+                "V, W, X"
               ]
             },
             {
-              "label": "Bloque 9",
-              "pattern": "El alfabeto inglés tiene 26 letras. A, E, I, O, U son vocales; las demás, consonantes. Z se dice zed en inglés británico y zee en estadounidense. W se llama double u.",
+              "label": "Modelo 9",
+              "pattern": "Y, Z",
               "examples": [
-                "Consonant"
+                "Y, Z"
               ]
             },
             {
-              "label": "Bloque 10",
-              "pattern": "El alfabeto inglés tiene 26 letras. A, E, I, O, U son vocales; las demás, consonantes. Z se dice zed en inglés británico y zee en estadounidense. W se llama double u.",
+              "label": "Modelo 10",
+              "pattern": "How do you spell your name?",
               "examples": [
-                "How do you spell your name?"
+                "¿Cómo se deletrea tu nombre?"
               ]
             }
           ]
@@ -1013,142 +829,152 @@
           {
             "itemId": "english-pre-a1-m006-grammar-ex01-i01",
             "position": 1,
-            "prompt": "Reconoce el modelo trabajado: A B C D E",
+            "prompt": "Selecciona el modelo que significa: “A, B, C”",
             "evaluation": {
               "type": "single_choice"
             },
             "options": [
-              "F G H I J",
-              "A B C D E",
-              "K L M N O"
+              "A, B, C",
+              "D, E, F",
+              "G, H, I"
             ],
-            "answer": "A B C D E"
+            "answer": "A, B, C",
+            "taskType": "functional_language"
           },
           {
             "itemId": "english-pre-a1-m006-grammar-ex01-i02",
             "position": 2,
-            "prompt": "Reconoce el modelo trabajado: F G H I J",
+            "prompt": "Selecciona el modelo que significa: “D, E, F”",
             "evaluation": {
               "type": "single_choice"
             },
             "options": [
-              "P Q R S T",
-              "K L M N O",
-              "F G H I J"
+              "G, H, I",
+              "D, E, F",
+              "J, K, L"
             ],
-            "answer": "F G H I J"
+            "answer": "D, E, F",
+            "taskType": "functional_language"
           },
           {
             "itemId": "english-pre-a1-m006-grammar-ex01-i03",
             "position": 3,
-            "prompt": "Reconoce el modelo trabajado: K L M N O",
+            "prompt": "Selecciona el modelo que significa: “G, H, I”",
             "evaluation": {
               "type": "single_choice"
             },
             "options": [
-              "K L M N O",
-              "P Q R S T",
-              "U V W X Y Z"
+              "J, K, L",
+              "M, N, O",
+              "G, H, I"
             ],
-            "answer": "K L M N O"
+            "answer": "G, H, I",
+            "taskType": "functional_language"
           },
           {
             "itemId": "english-pre-a1-m006-grammar-ex01-i04",
             "position": 4,
-            "prompt": "Reconoce el modelo trabajado: P Q R S T",
+            "prompt": "Selecciona el modelo que significa: “J, K, L”",
             "evaluation": {
               "type": "single_choice"
             },
             "options": [
-              "U V W X Y Z",
-              "P Q R S T",
-              "A E I O U"
+              "J, K, L",
+              "M, N, O",
+              "P, Q, R"
             ],
-            "answer": "P Q R S T"
+            "answer": "J, K, L",
+            "taskType": "functional_language"
           },
           {
             "itemId": "english-pre-a1-m006-grammar-ex01-i05",
             "position": 5,
-            "prompt": "Reconoce el modelo trabajado: U V W X Y Z",
+            "prompt": "Selecciona el modelo que significa: “M, N, O”",
             "evaluation": {
               "type": "single_choice"
             },
             "options": [
-              "Capital letter",
-              "A E I O U",
-              "U V W X Y Z"
+              "P, Q, R",
+              "M, N, O",
+              "S, T, U"
             ],
-            "answer": "U V W X Y Z"
+            "answer": "M, N, O",
+            "taskType": "functional_language"
           },
           {
             "itemId": "english-pre-a1-m006-grammar-ex01-i06",
             "position": 6,
-            "prompt": "Reconoce el modelo trabajado: A E I O U",
+            "prompt": "Selecciona el modelo que significa: “P, Q, R”",
             "evaluation": {
               "type": "single_choice"
             },
             "options": [
-              "A E I O U",
-              "Capital letter",
-              "Small letter"
+              "S, T, U",
+              "V, W, X",
+              "P, Q, R"
             ],
-            "answer": "A E I O U"
+            "answer": "P, Q, R",
+            "taskType": "functional_language"
           },
           {
             "itemId": "english-pre-a1-m006-grammar-ex01-i07",
             "position": 7,
-            "prompt": "Reconoce el modelo trabajado: Capital letter",
+            "prompt": "Selecciona el modelo que significa: “S, T, U”",
             "evaluation": {
               "type": "single_choice"
             },
             "options": [
-              "Small letter",
-              "Capital letter",
-              "Consonant"
+              "S, T, U",
+              "V, W, X",
+              "Y, Z"
             ],
-            "answer": "Capital letter"
+            "answer": "S, T, U",
+            "taskType": "functional_language"
           },
           {
             "itemId": "english-pre-a1-m006-grammar-ex01-i08",
             "position": 8,
-            "prompt": "Reconoce el modelo trabajado: Small letter",
+            "prompt": "Selecciona el modelo que significa: “V, W, X”",
             "evaluation": {
               "type": "single_choice"
             },
             "options": [
-              "How do you spell your name?",
-              "Consonant",
-              "Small letter"
+              "Y, Z",
+              "V, W, X",
+              "How do you spell your name?"
             ],
-            "answer": "Small letter"
+            "answer": "V, W, X",
+            "taskType": "functional_language"
           },
           {
             "itemId": "english-pre-a1-m006-grammar-ex01-i09",
             "position": 9,
-            "prompt": "Reconoce el modelo trabajado: Consonant",
+            "prompt": "Selecciona el modelo que significa: “Y, Z”",
             "evaluation": {
               "type": "single_choice"
             },
             "options": [
-              "Consonant",
               "How do you spell your name?",
-              "A B C D E"
+              "A, B, C",
+              "Y, Z"
             ],
-            "answer": "Consonant"
+            "answer": "Y, Z",
+            "taskType": "functional_language"
           },
           {
             "itemId": "english-pre-a1-m006-grammar-ex01-i10",
             "position": 10,
-            "prompt": "Reconoce el modelo trabajado: How do you spell your name?",
+            "prompt": "Selecciona el modelo que significa: “¿Cómo se deletrea tu nombre?”",
             "evaluation": {
               "type": "single_choice"
             },
             "options": [
-              "A B C D E",
               "How do you spell your name?",
-              "F G H I J"
+              "A, B, C",
+              "D, E, F"
             ],
-            "answer": "How do you spell your name?"
+            "answer": "How do you spell your name?",
+            "taskType": "functional_language"
           }
         ]
       }
@@ -1164,82 +990,92 @@
           {
             "itemId": "english-pre-a1-m006-pronunciation-ex01-i01",
             "position": 1,
-            "word": "A–E",
-            "translation": "nombres de las letras A a E",
-            "pronunciationGuide": "éi, bí, sí, dí, í",
-            "audio": "tts:en-GB:A–E"
+            "word": "A",
+            "translation": "letra A",
+            "pronunciationGuide": "éi",
+            "audio": "tts:en-GB:A",
+            "audioStatus": "synthetic_pending_review"
           },
           {
             "itemId": "english-pre-a1-m006-pronunciation-ex01-i02",
             "position": 2,
-            "word": "F–J",
-            "translation": "nombres de las letras F a J",
-            "pronunciationGuide": "éf, yí, éich, ái, yéi",
-            "audio": "tts:en-GB:F–J"
+            "word": "B",
+            "translation": "letra B",
+            "pronunciationGuide": "bí",
+            "audio": "tts:en-GB:B",
+            "audioStatus": "synthetic_pending_review"
           },
           {
             "itemId": "english-pre-a1-m006-pronunciation-ex01-i03",
             "position": 3,
-            "word": "K–O",
-            "translation": "nombres de las letras K a O",
-            "pronunciationGuide": "kéi, él, ém, én, óu",
-            "audio": "tts:en-GB:K–O"
+            "word": "C",
+            "translation": "letra C",
+            "pronunciationGuide": "sí",
+            "audio": "tts:en-GB:C",
+            "audioStatus": "synthetic_pending_review"
           },
           {
             "itemId": "english-pre-a1-m006-pronunciation-ex01-i04",
             "position": 4,
-            "word": "P–T",
-            "translation": "nombres de las letras P a T",
-            "pronunciationGuide": "pí, kiú, ar, és, tí",
-            "audio": "tts:en-GB:P–T"
+            "word": "D",
+            "translation": "letra D",
+            "pronunciationGuide": "dí",
+            "audio": "tts:en-GB:D",
+            "audioStatus": "synthetic_pending_review"
           },
           {
             "itemId": "english-pre-a1-m006-pronunciation-ex01-i05",
             "position": 5,
-            "word": "U–Z",
-            "translation": "nombres de las letras U a Z",
-            "pronunciationGuide": "iú, ví, dá-bol iú, éks, uái, zed",
-            "audio": "tts:en-GB:U–Z"
+            "word": "E",
+            "translation": "letra E",
+            "pronunciationGuide": "í",
+            "audio": "tts:en-GB:E",
+            "audioStatus": "synthetic_pending_review"
           },
           {
             "itemId": "english-pre-a1-m006-pronunciation-ex01-i06",
             "position": 6,
-            "word": "vowels",
-            "translation": "vocales",
-            "pronunciationGuide": "VÁU-elz",
-            "audio": "tts:en-GB:vowels"
+            "word": "F",
+            "translation": "letra F",
+            "pronunciationGuide": "éf",
+            "audio": "tts:en-GB:F",
+            "audioStatus": "synthetic_pending_review"
           },
           {
             "itemId": "english-pre-a1-m006-pronunciation-ex01-i07",
             "position": 7,
-            "word": "consonants",
-            "translation": "consonantes",
-            "pronunciationGuide": "KÓN-so-nants",
-            "audio": "tts:en-GB:consonants"
+            "word": "G",
+            "translation": "letra G",
+            "pronunciationGuide": "yí",
+            "audio": "tts:en-GB:G",
+            "audioStatus": "synthetic_pending_review"
           },
           {
             "itemId": "english-pre-a1-m006-pronunciation-ex01-i08",
             "position": 8,
-            "word": "capital letter",
-            "translation": "letra mayúscula",
-            "pronunciationGuide": "KÁ-pi-tal LÉ-ter",
-            "audio": "tts:en-GB:capital letter"
+            "word": "H",
+            "translation": "letra H",
+            "pronunciationGuide": "éich",
+            "audio": "tts:en-GB:H",
+            "audioStatus": "synthetic_pending_review"
           },
           {
             "itemId": "english-pre-a1-m006-pronunciation-ex01-i09",
             "position": 9,
-            "word": "small letter",
-            "translation": "letra minúscula",
-            "pronunciationGuide": "smól LÉ-ter",
-            "audio": "tts:en-GB:small letter"
+            "word": "I",
+            "translation": "letra I",
+            "pronunciationGuide": "ái",
+            "audio": "tts:en-GB:I",
+            "audioStatus": "synthetic_pending_review"
           },
           {
             "itemId": "english-pre-a1-m006-pronunciation-ex01-i10",
             "position": 10,
-            "word": "spell",
-            "translation": "deletrear",
-            "pronunciationGuide": "spél",
-            "audio": "tts:en-GB:spell"
+            "word": "J",
+            "translation": "letra J",
+            "pronunciationGuide": "yéi",
+            "audio": "tts:en-GB:J",
+            "audioStatus": "synthetic_pending_review"
           }
         ]
       }
@@ -1253,148 +1089,158 @@
         "type": "reading_comprehension",
         "content": {
           "passageId": "english-pre-a1-m006-reading-passage-01",
-          "passage": "A B C D E. F G H I J. K L M N O. P Q R S T. U V W X Y Z."
+          "passage": "A, B, C D, E, F G, H, I J, K, L M, N, O P, Q, R S, T, U V, W, X Y, Z How do you spell your name?"
         },
         "items": [
           {
             "itemId": "english-pre-a1-m006-reading-ex01-i01",
             "position": 1,
-            "prompt": "¿Qué tema presenta el texto?",
+            "prompt": "En el texto, ¿qué significa “A, B, C”?",
             "evaluation": {
               "type": "single_choice"
             },
             "options": [
-              "nombre de la letra A",
-              "nombre de la letra B",
-              "English alphabet"
+              "A, B, C",
+              "D, E, F",
+              "G, H, I"
             ],
-            "answer": "English alphabet"
+            "answer": "A, B, C",
+            "taskType": "reading_detail"
           },
           {
             "itemId": "english-pre-a1-m006-reading-ex01-i02",
             "position": 2,
-            "prompt": "¿Qué significa “B” en el texto?",
+            "prompt": "En el texto, ¿qué significa “D, E, F”?",
             "evaluation": {
               "type": "single_choice"
             },
             "options": [
-              "nombre de la letra D",
-              "nombre de la letra B",
-              "nombre de la letra C"
+              "G, H, I",
+              "D, E, F",
+              "J, K, L"
             ],
-            "answer": "nombre de la letra B"
+            "answer": "D, E, F",
+            "taskType": "reading_detail"
           },
           {
             "itemId": "english-pre-a1-m006-reading-ex01-i03",
             "position": 3,
-            "prompt": "¿Qué significa “C” en el texto?",
+            "prompt": "En el texto, ¿qué significa “G, H, I”?",
             "evaluation": {
               "type": "single_choice"
             },
             "options": [
-              "nombre de la letra C",
-              "nombre de la letra D",
-              "nombre de la letra E"
+              "J, K, L",
+              "M, N, O",
+              "G, H, I"
             ],
-            "answer": "nombre de la letra C"
+            "answer": "G, H, I",
+            "taskType": "reading_detail"
           },
           {
             "itemId": "english-pre-a1-m006-reading-ex01-i04",
             "position": 4,
-            "prompt": "¿Qué significa “D” en el texto?",
+            "prompt": "En el texto, ¿qué significa “J, K, L”?",
             "evaluation": {
               "type": "single_choice"
             },
             "options": [
-              "nombre de la letra E",
-              "nombre de la letra F",
-              "nombre de la letra D"
+              "J, K, L",
+              "M, N, O",
+              "P, Q, R"
             ],
-            "answer": "nombre de la letra D"
+            "answer": "J, K, L",
+            "taskType": "reading_detail"
           },
           {
             "itemId": "english-pre-a1-m006-reading-ex01-i05",
             "position": 5,
-            "prompt": "¿Qué significa “E” en el texto?",
+            "prompt": "En el texto, ¿qué significa “M, N, O”?",
             "evaluation": {
               "type": "single_choice"
             },
             "options": [
-              "nombre de la letra G",
-              "nombre de la letra E",
-              "nombre de la letra F"
+              "P, Q, R",
+              "M, N, O",
+              "S, T, U"
             ],
-            "answer": "nombre de la letra E"
+            "answer": "M, N, O",
+            "taskType": "reading_detail"
           },
           {
             "itemId": "english-pre-a1-m006-reading-ex01-i06",
             "position": 6,
-            "prompt": "¿Qué significa “F” en el texto?",
+            "prompt": "En el texto, ¿qué significa “P, Q, R”?",
             "evaluation": {
               "type": "single_choice"
             },
             "options": [
-              "nombre de la letra F",
-              "nombre de la letra G",
-              "nombre de la letra H"
+              "S, T, U",
+              "V, W, X",
+              "P, Q, R"
             ],
-            "answer": "nombre de la letra F"
+            "answer": "P, Q, R",
+            "taskType": "reading_detail"
           },
           {
             "itemId": "english-pre-a1-m006-reading-ex01-i07",
             "position": 7,
-            "prompt": "¿Qué significa “G” en el texto?",
+            "prompt": "En el texto, ¿qué significa “S, T, U”?",
             "evaluation": {
               "type": "single_choice"
             },
             "options": [
-              "nombre de la letra H",
-              "nombre de la letra I",
-              "nombre de la letra G"
+              "S, T, U",
+              "V, W, X",
+              "Y, Z"
             ],
-            "answer": "nombre de la letra G"
+            "answer": "S, T, U",
+            "taskType": "reading_detail"
           },
           {
             "itemId": "english-pre-a1-m006-reading-ex01-i08",
             "position": 8,
-            "prompt": "¿Qué significa “H” en el texto?",
+            "prompt": "En el texto, ¿qué significa “V, W, X”?",
             "evaluation": {
               "type": "single_choice"
             },
             "options": [
-              "nombre de la letra J",
-              "nombre de la letra H",
-              "nombre de la letra I"
+              "Y, Z",
+              "V, W, X",
+              "¿Cómo se deletrea tu nombre?"
             ],
-            "answer": "nombre de la letra H"
+            "answer": "V, W, X",
+            "taskType": "reading_detail"
           },
           {
             "itemId": "english-pre-a1-m006-reading-ex01-i09",
             "position": 9,
-            "prompt": "¿Qué significa “I” en el texto?",
+            "prompt": "En el texto, ¿qué significa “Y, Z”?",
             "evaluation": {
               "type": "single_choice"
             },
             "options": [
-              "nombre de la letra I",
-              "nombre de la letra J",
-              "nombre de la letra K"
+              "¿Cómo se deletrea tu nombre?",
+              "A, B, C",
+              "Y, Z"
             ],
-            "answer": "nombre de la letra I"
+            "answer": "Y, Z",
+            "taskType": "reading_detail"
           },
           {
             "itemId": "english-pre-a1-m006-reading-ex01-i10",
             "position": 10,
-            "prompt": "¿Qué significa “J” en el texto?",
+            "prompt": "En el texto, ¿qué significa “How do you spell your name?”?",
             "evaluation": {
               "type": "single_choice"
             },
             "options": [
-              "nombre de la letra K",
-              "nombre de la letra L",
-              "nombre de la letra J"
+              "¿Cómo se deletrea tu nombre?",
+              "A, B, C",
+              "D, E, F"
             ],
-            "answer": "nombre de la letra J"
+            "answer": "¿Cómo se deletrea tu nombre?",
+            "taskType": "reading_detail"
           }
         ]
       }
@@ -1410,171 +1256,171 @@
           {
             "itemId": "english-pre-a1-m006-writing-ex01-i01",
             "position": 1,
-            "audio": "tts:en-GB:A B C D E",
+            "audio": "tts:en-GB:A, B, C",
             "audioLocale": "en-GB",
             "audioStatus": "synthetic_pending_review",
             "kind": "sentence",
             "repeatCount": 3,
-            "expectedAnswer": "A B C D E",
+            "expectedAnswer": "A, B, C",
             "evaluation": {
               "type": "normalised_text"
             },
             "segments": [
               {
                 "segmentId": "english-pre-a1-m006-writing-segment-01",
-                "text": "A B C D E"
+                "text": "A, B, C"
               }
             ]
           },
           {
             "itemId": "english-pre-a1-m006-writing-ex01-i02",
             "position": 2,
-            "audio": "tts:en-GB:F G H I J",
+            "audio": "tts:en-GB:D, E, F",
             "audioLocale": "en-GB",
             "audioStatus": "synthetic_pending_review",
             "kind": "sentence",
             "repeatCount": 3,
-            "expectedAnswer": "F G H I J",
+            "expectedAnswer": "D, E, F",
             "evaluation": {
               "type": "normalised_text"
             },
             "segments": [
               {
                 "segmentId": "english-pre-a1-m006-writing-segment-02",
-                "text": "F G H I J"
+                "text": "D, E, F"
               }
             ]
           },
           {
             "itemId": "english-pre-a1-m006-writing-ex01-i03",
             "position": 3,
-            "audio": "tts:en-GB:K L M N O",
+            "audio": "tts:en-GB:G, H, I",
             "audioLocale": "en-GB",
             "audioStatus": "synthetic_pending_review",
             "kind": "sentence",
             "repeatCount": 3,
-            "expectedAnswer": "K L M N O",
+            "expectedAnswer": "G, H, I",
             "evaluation": {
               "type": "normalised_text"
             },
             "segments": [
               {
                 "segmentId": "english-pre-a1-m006-writing-segment-03",
-                "text": "K L M N O"
+                "text": "G, H, I"
               }
             ]
           },
           {
             "itemId": "english-pre-a1-m006-writing-ex01-i04",
             "position": 4,
-            "audio": "tts:en-GB:P Q R S T",
+            "audio": "tts:en-GB:J, K, L",
             "audioLocale": "en-GB",
             "audioStatus": "synthetic_pending_review",
             "kind": "sentence",
             "repeatCount": 3,
-            "expectedAnswer": "P Q R S T",
+            "expectedAnswer": "J, K, L",
             "evaluation": {
               "type": "normalised_text"
             },
             "segments": [
               {
                 "segmentId": "english-pre-a1-m006-writing-segment-04",
-                "text": "P Q R S T"
+                "text": "J, K, L"
               }
             ]
           },
           {
             "itemId": "english-pre-a1-m006-writing-ex01-i05",
             "position": 5,
-            "audio": "tts:en-GB:U V W X Y Z",
+            "audio": "tts:en-GB:M, N, O",
             "audioLocale": "en-GB",
             "audioStatus": "synthetic_pending_review",
             "kind": "sentence",
             "repeatCount": 3,
-            "expectedAnswer": "U V W X Y Z",
+            "expectedAnswer": "M, N, O",
             "evaluation": {
               "type": "normalised_text"
             },
             "segments": [
               {
                 "segmentId": "english-pre-a1-m006-writing-segment-05",
-                "text": "U V W X Y Z"
+                "text": "M, N, O"
               }
             ]
           },
           {
             "itemId": "english-pre-a1-m006-writing-ex01-i06",
             "position": 6,
-            "audio": "tts:en-GB:A E I O U",
+            "audio": "tts:en-GB:P, Q, R",
             "audioLocale": "en-GB",
             "audioStatus": "synthetic_pending_review",
             "kind": "sentence",
             "repeatCount": 3,
-            "expectedAnswer": "A E I O U",
+            "expectedAnswer": "P, Q, R",
             "evaluation": {
               "type": "normalised_text"
             },
             "segments": [
               {
                 "segmentId": "english-pre-a1-m006-writing-segment-06",
-                "text": "A E I O U"
+                "text": "P, Q, R"
               }
             ]
           },
           {
             "itemId": "english-pre-a1-m006-writing-ex01-i07",
             "position": 7,
-            "audio": "tts:en-GB:Capital letter",
+            "audio": "tts:en-GB:S, T, U",
             "audioLocale": "en-GB",
             "audioStatus": "synthetic_pending_review",
             "kind": "sentence",
             "repeatCount": 3,
-            "expectedAnswer": "Capital letter",
+            "expectedAnswer": "S, T, U",
             "evaluation": {
               "type": "normalised_text"
             },
             "segments": [
               {
                 "segmentId": "english-pre-a1-m006-writing-segment-07",
-                "text": "Capital letter"
+                "text": "S, T, U"
               }
             ]
           },
           {
             "itemId": "english-pre-a1-m006-writing-ex01-i08",
             "position": 8,
-            "audio": "tts:en-GB:Small letter",
+            "audio": "tts:en-GB:V, W, X",
             "audioLocale": "en-GB",
             "audioStatus": "synthetic_pending_review",
             "kind": "sentence",
             "repeatCount": 3,
-            "expectedAnswer": "Small letter",
+            "expectedAnswer": "V, W, X",
             "evaluation": {
               "type": "normalised_text"
             },
             "segments": [
               {
                 "segmentId": "english-pre-a1-m006-writing-segment-08",
-                "text": "Small letter"
+                "text": "V, W, X"
               }
             ]
           },
           {
             "itemId": "english-pre-a1-m006-writing-ex01-i09",
             "position": 9,
-            "audio": "tts:en-GB:Consonant",
+            "audio": "tts:en-GB:Y, Z",
             "audioLocale": "en-GB",
             "audioStatus": "synthetic_pending_review",
             "kind": "sentence",
             "repeatCount": 3,
-            "expectedAnswer": "Consonant",
+            "expectedAnswer": "Y, Z",
             "evaluation": {
               "type": "normalised_text"
             },
             "segments": [
               {
                 "segmentId": "english-pre-a1-m006-writing-segment-09",
-                "text": "Consonant"
+                "text": "Y, Z"
               }
             ]
           },
@@ -1611,10 +1457,10 @@
           {
             "itemId": "english-pre-a1-m006-speaking-ex01-i01",
             "position": 1,
-            "prompt": "Di en voz alta esta expresión.",
-            "promptSpanish": "Practica el modelo de la misión.",
-            "modelAnswer": "A B C D E",
-            "translation": "A B C D E",
+            "prompt": "Di en voz alta el modelo.",
+            "promptSpanish": "Practica: A, B, C",
+            "modelAnswer": "A, B, C",
+            "translation": "A, B, C",
             "evaluation": {
               "type": "transcription_feedback",
               "transcriptionSeparateFromPronunciation": true
@@ -1623,10 +1469,10 @@
           {
             "itemId": "english-pre-a1-m006-speaking-ex01-i02",
             "position": 2,
-            "prompt": "Di en voz alta esta expresión.",
-            "promptSpanish": "Practica el modelo de la misión.",
-            "modelAnswer": "F G H I J",
-            "translation": "F G H I J",
+            "prompt": "Di en voz alta el modelo.",
+            "promptSpanish": "Practica: D, E, F",
+            "modelAnswer": "D, E, F",
+            "translation": "D, E, F",
             "evaluation": {
               "type": "transcription_feedback",
               "transcriptionSeparateFromPronunciation": true
@@ -1635,10 +1481,10 @@
           {
             "itemId": "english-pre-a1-m006-speaking-ex01-i03",
             "position": 3,
-            "prompt": "Di en voz alta esta expresión.",
-            "promptSpanish": "Practica el modelo de la misión.",
-            "modelAnswer": "K L M N O",
-            "translation": "K L M N O",
+            "prompt": "Di en voz alta el modelo.",
+            "promptSpanish": "Practica: G, H, I",
+            "modelAnswer": "G, H, I",
+            "translation": "G, H, I",
             "evaluation": {
               "type": "transcription_feedback",
               "transcriptionSeparateFromPronunciation": true
@@ -1647,10 +1493,10 @@
           {
             "itemId": "english-pre-a1-m006-speaking-ex01-i04",
             "position": 4,
-            "prompt": "Di en voz alta esta expresión.",
-            "promptSpanish": "Practica el modelo de la misión.",
-            "modelAnswer": "P Q R S T",
-            "translation": "P Q R S T",
+            "prompt": "Di en voz alta el modelo.",
+            "promptSpanish": "Practica: J, K, L",
+            "modelAnswer": "J, K, L",
+            "translation": "J, K, L",
             "evaluation": {
               "type": "transcription_feedback",
               "transcriptionSeparateFromPronunciation": true
@@ -1659,10 +1505,10 @@
           {
             "itemId": "english-pre-a1-m006-speaking-ex01-i05",
             "position": 5,
-            "prompt": "Di en voz alta esta expresión.",
-            "promptSpanish": "Practica el modelo de la misión.",
-            "modelAnswer": "U V W X Y Z",
-            "translation": "U V W X Y Z",
+            "prompt": "Di en voz alta el modelo.",
+            "promptSpanish": "Practica: M, N, O",
+            "modelAnswer": "M, N, O",
+            "translation": "M, N, O",
             "evaluation": {
               "type": "transcription_feedback",
               "transcriptionSeparateFromPronunciation": true
@@ -1671,10 +1517,10 @@
           {
             "itemId": "english-pre-a1-m006-speaking-ex01-i06",
             "position": 6,
-            "prompt": "Di en voz alta esta expresión.",
-            "promptSpanish": "Practica el modelo de la misión.",
-            "modelAnswer": "A E I O U",
-            "translation": "A E I O U",
+            "prompt": "Di en voz alta el modelo.",
+            "promptSpanish": "Practica: P, Q, R",
+            "modelAnswer": "P, Q, R",
+            "translation": "P, Q, R",
             "evaluation": {
               "type": "transcription_feedback",
               "transcriptionSeparateFromPronunciation": true
@@ -1683,10 +1529,10 @@
           {
             "itemId": "english-pre-a1-m006-speaking-ex01-i07",
             "position": 7,
-            "prompt": "Di en voz alta esta expresión.",
-            "promptSpanish": "Practica el modelo de la misión.",
-            "modelAnswer": "Capital letter",
-            "translation": "Capital letter",
+            "prompt": "Di en voz alta el modelo.",
+            "promptSpanish": "Practica: S, T, U",
+            "modelAnswer": "S, T, U",
+            "translation": "S, T, U",
             "evaluation": {
               "type": "transcription_feedback",
               "transcriptionSeparateFromPronunciation": true
@@ -1695,10 +1541,10 @@
           {
             "itemId": "english-pre-a1-m006-speaking-ex01-i08",
             "position": 8,
-            "prompt": "Di en voz alta esta expresión.",
-            "promptSpanish": "Practica el modelo de la misión.",
-            "modelAnswer": "Small letter",
-            "translation": "Small letter",
+            "prompt": "Di en voz alta el modelo.",
+            "promptSpanish": "Practica: V, W, X",
+            "modelAnswer": "V, W, X",
+            "translation": "V, W, X",
             "evaluation": {
               "type": "transcription_feedback",
               "transcriptionSeparateFromPronunciation": true
@@ -1707,10 +1553,10 @@
           {
             "itemId": "english-pre-a1-m006-speaking-ex01-i09",
             "position": 9,
-            "prompt": "Di en voz alta esta expresión.",
-            "promptSpanish": "Practica el modelo de la misión.",
-            "modelAnswer": "Consonant",
-            "translation": "Consonant",
+            "prompt": "Di en voz alta el modelo.",
+            "promptSpanish": "Practica: Y, Z",
+            "modelAnswer": "Y, Z",
+            "translation": "Y, Z",
             "evaluation": {
               "type": "transcription_feedback",
               "transcriptionSeparateFromPronunciation": true
@@ -1719,10 +1565,10 @@
           {
             "itemId": "english-pre-a1-m006-speaking-ex01-i10",
             "position": 10,
-            "prompt": "Di en voz alta esta expresión.",
-            "promptSpanish": "Practica el modelo de la misión.",
+            "prompt": "Di en voz alta el modelo.",
+            "promptSpanish": "Practica: ¿Cómo se deletrea tu nombre?",
             "modelAnswer": "How do you spell your name?",
-            "translation": "How do you spell your name?",
+            "translation": "¿Cómo se deletrea tu nombre?",
             "evaluation": {
               "type": "transcription_feedback",
               "transcriptionSeparateFromPronunciation": true
@@ -1739,46 +1585,46 @@
         "exerciseId": "english-pre-a1-m006-listening-ex01",
         "type": "listening_gap_fill",
         "content": {
-          "audio": "tts:en-GB:A B C D E F G H I J K L M N O P Q R S T U V W X Y Z A E I O U Capital letter Small letter Consonant How do you spell your name?",
+          "audio": "tts:en-GB:A, B, C D, E, F G, H, I J, K, L M, N, O P, Q, R S, T, U V, W, X Y, Z How do you spell your name?",
           "audioLocale": "en-GB",
           "audioStatus": "synthetic_pending_review",
           "transcriptTemplate": "[[gap-01]] [[gap-02]] [[gap-03]] [[gap-04]] [[gap-05]] [[gap-06]] [[gap-07]] [[gap-08]] [[gap-09]] [[gap-10]]",
           "wordBank": [
             {
               "wordId": "english-pre-a1-m006-listening-word-01",
-              "word": "A B C D E"
+              "word": "A, B, C"
             },
             {
               "wordId": "english-pre-a1-m006-listening-word-02",
-              "word": "F G H I J"
+              "word": "D, E, F"
             },
             {
               "wordId": "english-pre-a1-m006-listening-word-03",
-              "word": "K L M N O"
+              "word": "G, H, I"
             },
             {
               "wordId": "english-pre-a1-m006-listening-word-04",
-              "word": "P Q R S T"
+              "word": "J, K, L"
             },
             {
               "wordId": "english-pre-a1-m006-listening-word-05",
-              "word": "U V W X Y Z"
+              "word": "M, N, O"
             },
             {
               "wordId": "english-pre-a1-m006-listening-word-06",
-              "word": "A E I O U"
+              "word": "P, Q, R"
             },
             {
               "wordId": "english-pre-a1-m006-listening-word-07",
-              "word": "Capital letter"
+              "word": "S, T, U"
             },
             {
               "wordId": "english-pre-a1-m006-listening-word-08",
-              "word": "Small letter"
+              "word": "V, W, X"
             },
             {
               "wordId": "english-pre-a1-m006-listening-word-09",
-              "word": "Consonant"
+              "word": "Y, Z"
             },
             {
               "wordId": "english-pre-a1-m006-listening-word-10",
@@ -1786,8 +1632,8 @@
             }
           ],
           "interaction": "select_place_move_replace",
-          "audioTranscript": "tts:en-GB:A B C D E F G H I J K L M N O P Q R S T U V W X Y Z A E I O U Capital letter Small letter Consonant How do you spell your name?",
-          "translation": "A, B, C, D, E. F, G, H, I, J. K, L, M, N, O. P, Q, R, S, T. U, V, W, X, Y, Z. A, E, I, O, U. Letra mayúscula. Letra minúscula. Consonante ¿Cómo se deletrea tu nombre?"
+          "audioTranscript": "tts:en-GB:A, B, C D, E, F G, H, I J, K, L M, N, O P, Q, R S, T, U V, W, X Y, Z How do you spell your name?",
+          "translation": "A, B, C D, E, F G, H, I J, K, L M, N, O P, Q, R S, T, U V, W, X Y, Z ¿Cómo se deletrea tu nombre?"
         },
         "items": [
           {
@@ -1795,63 +1641,63 @@
             "position": 1,
             "gapToken": "[[gap-01]]",
             "expectedWordId": "english-pre-a1-m006-listening-word-01",
-            "answer": "A B C D E"
+            "answer": "A, B, C"
           },
           {
             "itemId": "english-pre-a1-m006-listening-ex01-i02",
             "position": 2,
             "gapToken": "[[gap-02]]",
             "expectedWordId": "english-pre-a1-m006-listening-word-02",
-            "answer": "F G H I J"
+            "answer": "D, E, F"
           },
           {
             "itemId": "english-pre-a1-m006-listening-ex01-i03",
             "position": 3,
             "gapToken": "[[gap-03]]",
             "expectedWordId": "english-pre-a1-m006-listening-word-03",
-            "answer": "K L M N O"
+            "answer": "G, H, I"
           },
           {
             "itemId": "english-pre-a1-m006-listening-ex01-i04",
             "position": 4,
             "gapToken": "[[gap-04]]",
             "expectedWordId": "english-pre-a1-m006-listening-word-04",
-            "answer": "P Q R S T"
+            "answer": "J, K, L"
           },
           {
             "itemId": "english-pre-a1-m006-listening-ex01-i05",
             "position": 5,
             "gapToken": "[[gap-05]]",
             "expectedWordId": "english-pre-a1-m006-listening-word-05",
-            "answer": "U V W X Y Z"
+            "answer": "M, N, O"
           },
           {
             "itemId": "english-pre-a1-m006-listening-ex01-i06",
             "position": 6,
             "gapToken": "[[gap-06]]",
             "expectedWordId": "english-pre-a1-m006-listening-word-06",
-            "answer": "A E I O U"
+            "answer": "P, Q, R"
           },
           {
             "itemId": "english-pre-a1-m006-listening-ex01-i07",
             "position": 7,
             "gapToken": "[[gap-07]]",
             "expectedWordId": "english-pre-a1-m006-listening-word-07",
-            "answer": "Capital letter"
+            "answer": "S, T, U"
           },
           {
             "itemId": "english-pre-a1-m006-listening-ex01-i08",
             "position": 8,
             "gapToken": "[[gap-08]]",
             "expectedWordId": "english-pre-a1-m006-listening-word-08",
-            "answer": "Small letter"
+            "answer": "V, W, X"
           },
           {
             "itemId": "english-pre-a1-m006-listening-ex01-i09",
             "position": 9,
             "gapToken": "[[gap-09]]",
             "expectedWordId": "english-pre-a1-m006-listening-word-09",
-            "answer": "Consonant"
+            "answer": "Y, Z"
           },
           {
             "itemId": "english-pre-a1-m006-listening-ex01-i10",

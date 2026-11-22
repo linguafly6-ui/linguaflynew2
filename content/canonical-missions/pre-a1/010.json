@@ -1,10 +1,11 @@
 {
   "schemaVersion": "1.2.0",
-  "contentVersion": 5,
+  "contentVersion": "2.0.0",
   "course": {
     "courseId": "english-pre-a1",
-    "level": "PRE-A1",
-    "language": "en-GB"
+    "level": "Pre-A1",
+    "language": "en-GB",
+    "title": "Pre-A1 · Usuario principiante"
   },
   "unit": {
     "unitId": "english-pre-a1-unit-01",
@@ -16,7 +17,8 @@
     "missionId": "english-pre-a1-m010",
     "unitId": "english-pre-a1-unit-01",
     "position": 10,
-    "title": "Nice to meet you"
+    "title": "Nice to meet you",
+    "objective": "Presentarse, conocer a alguien y responder con cortesía."
   },
   "sections": [
     {
@@ -25,7 +27,7 @@
       "position": 1,
       "exercise": {
         "exerciseId": "english-pre-a1-m010-explore-ex01",
-        "type": "vocabulary_pairs",
+        "type": "lesson",
         "items": [
           {
             "itemId": "english-pre-a1-m010-explore-ex01-i01",
@@ -40,7 +42,7 @@
             "itemId": "english-pre-a1-m010-explore-ex01-i02",
             "position": 2,
             "english": "to",
-            "spanish": "a/para",
+            "spanish": "a / para en la expresión",
             "pronunciationGuide": "tú",
             "audio": "tts:en-GB:to",
             "audioStatus": "synthetic_pending_review"
@@ -58,7 +60,7 @@
             "itemId": "english-pre-a1-m010-explore-ex01-i04",
             "position": 4,
             "english": "you",
-            "spanish": "tú",
+            "spanish": "tú / usted",
             "pronunciationGuide": "iú",
             "audio": "tts:en-GB:you",
             "audioStatus": "synthetic_pending_review"
@@ -76,7 +78,7 @@
             "itemId": "english-pre-a1-m010-explore-ex01-i06",
             "position": 6,
             "english": "pleased",
-            "spanish": "encantado",
+            "spanish": "encantado/a",
             "pronunciationGuide": "plíizd",
             "audio": "tts:en-GB:pleased",
             "audioStatus": "synthetic_pending_review"
@@ -84,26 +86,26 @@
           {
             "itemId": "english-pre-a1-m010-explore-ex01-i07",
             "position": 7,
-            "english": "This is…",
-            "spanish": "Este/a es…",
-            "pronunciationGuide": "dhis iz",
-            "audio": "tts:en-GB:This is…",
+            "english": "this",
+            "spanish": "este / esta / esto",
+            "pronunciationGuide": "dis*",
+            "audio": "tts:en-GB:this",
             "audioStatus": "synthetic_pending_review"
           },
           {
             "itemId": "english-pre-a1-m010-explore-ex01-i08",
             "position": 8,
-            "english": "person",
-            "spanish": "persona",
-            "pronunciationGuide": "PÉR-son",
-            "audio": "tts:en-GB:person",
+            "english": "is",
+            "spanish": "es",
+            "pronunciationGuide": "iz",
+            "audio": "tts:en-GB:is",
             "audioStatus": "synthetic_pending_review"
           },
           {
             "itemId": "english-pre-a1-m010-explore-ex01-i09",
             "position": 9,
             "english": "friend",
-            "spanish": "amigo",
+            "spanish": "amigo/a",
             "pronunciationGuide": "frend",
             "audio": "tts:en-GB:friend",
             "audioStatus": "synthetic_pending_review"
@@ -116,79 +118,187 @@
             "pronunciationGuide": "STIÚ-dent",
             "audio": "tts:en-GB:student",
             "audioStatus": "synthetic_pending_review"
+          },
+          {
+            "itemId": "english-pre-a1-m010-explore-ex01-i11",
+            "position": 11,
+            "english": "teacher",
+            "spanish": "profesor/a",
+            "pronunciationGuide": "TÍ-cha",
+            "audio": "tts:en-GB:teacher",
+            "audioStatus": "synthetic_pending_review"
+          },
+          {
+            "itemId": "english-pre-a1-m010-explore-ex01-i12",
+            "position": 12,
+            "english": "boy",
+            "spanish": "niño",
+            "pronunciationGuide": "bói",
+            "audio": "tts:en-GB:boy",
+            "audioStatus": "synthetic_pending_review"
+          },
+          {
+            "itemId": "english-pre-a1-m010-explore-ex01-i13",
+            "position": 13,
+            "english": "girl",
+            "spanish": "niña",
+            "pronunciationGuide": "guérl",
+            "audio": "tts:en-GB:girl",
+            "audioStatus": "synthetic_pending_review"
+          },
+          {
+            "itemId": "english-pre-a1-m010-explore-ex01-i14",
+            "position": 14,
+            "english": "person",
+            "spanish": "persona",
+            "pronunciationGuide": "PÉR-son",
+            "audio": "tts:en-GB:person",
+            "audioStatus": "synthetic_pending_review"
+          },
+          {
+            "itemId": "english-pre-a1-m010-explore-ex01-i15",
+            "position": 15,
+            "english": "name",
+            "spanish": "nombre",
+            "pronunciationGuide": "NÉIM",
+            "audio": "tts:en-GB:name",
+            "audioStatus": "synthetic_pending_review"
+          },
+          {
+            "itemId": "english-pre-a1-m010-explore-ex01-i16",
+            "position": 16,
+            "english": "my",
+            "spanish": "mi",
+            "pronunciationGuide": "mái",
+            "audio": "tts:en-GB:my",
+            "audioStatus": "synthetic_pending_review"
+          },
+          {
+            "itemId": "english-pre-a1-m010-explore-ex01-i17",
+            "position": 17,
+            "english": "your",
+            "spanish": "tu",
+            "pronunciationGuide": "iór",
+            "audio": "tts:en-GB:your",
+            "audioStatus": "synthetic_pending_review"
+          },
+          {
+            "itemId": "english-pre-a1-m010-explore-ex01-i18",
+            "position": 18,
+            "english": "what",
+            "spanish": "qué",
+            "pronunciationGuide": "uót",
+            "audio": "tts:en-GB:what",
+            "audioStatus": "synthetic_pending_review"
+          },
+          {
+            "itemId": "english-pre-a1-m010-explore-ex01-i19",
+            "position": 19,
+            "english": "I'm",
+            "spanish": "yo soy / estoy",
+            "pronunciationGuide": "áim",
+            "audio": "tts:en-GB:I'm",
+            "audioStatus": "synthetic_pending_review"
+          },
+          {
+            "itemId": "english-pre-a1-m010-explore-ex01-i20",
+            "position": 20,
+            "english": "you're",
+            "spanish": "tú eres / estás",
+            "pronunciationGuide": "iór",
+            "audio": "tts:en-GB:you're",
+            "audioStatus": "synthetic_pending_review"
+          },
+          {
+            "itemId": "english-pre-a1-m010-explore-ex01-i21",
+            "position": 21,
+            "english": "hello",
+            "spanish": "hola",
+            "pronunciationGuide": "jelóu",
+            "audio": "tts:en-GB:hello",
+            "audioStatus": "synthetic_pending_review"
+          },
+          {
+            "itemId": "english-pre-a1-m010-explore-ex01-i22",
+            "position": 22,
+            "english": "goodbye",
+            "spanish": "adiós",
+            "pronunciationGuide": "gud-BÁI",
+            "audio": "tts:en-GB:goodbye",
+            "audioStatus": "synthetic_pending_review"
           }
         ],
         "theory": {
           "title": "Nice to meet you",
-          "explanation": "Nice to meet you expresa el gusto de conocer a alguien. Nice to meet you too responde. Pleased to meet you es algo más formal. This is… presenta a una persona. La misión integra saludos, nombres, cortesía e I am/I'm y you are/you're.",
-          "tip": "Comprende todos los modelos de Explore antes de comenzar las actividades.",
+          "explanation": "Esta misión integra expresiones anteriores. This is… se enseña como fórmula de presentación; no se explica todavía todos los usos de this o is.",
+          "tip": "Exploración es aprendizaje, no un examen. Revisa todos los bloques, palabras y modelos antes de practicar.",
           "patterns": [
             {
               "label": "Bloque 1",
-              "pattern": "Objetivo: Nice to meet you.",
+              "pattern": "Nice to meet you expresa el gusto de conocer a alguien",
               "examples": [
                 "Nice to meet you."
               ]
             },
             {
               "label": "Bloque 2",
-              "pattern": "to — a/para. Pronunciación: tú.",
+              "pattern": "Nice to meet you too es la respuesta habitual",
               "examples": [
                 "Nice to meet you too."
               ]
             },
             {
               "label": "Bloque 3",
-              "pattern": "Pleased to meet you. — Encantado/a de conocerte..",
+              "pattern": "Pleased to meet you es algo más formal",
               "examples": [
                 "Pleased to meet you."
               ]
             },
             {
               "label": "Bloque 4",
-              "pattern": "This is Ana. — Esta es Ana..",
+              "pattern": "This is… presenta a alguien",
               "examples": [
                 "This is Ana."
               ]
             },
             {
               "label": "Bloque 5",
-              "pattern": "This is my friend. — Este/a es mi amigo/a..",
+              "pattern": "This is my friend presenta a un amigo o amiga",
               "examples": [
                 "This is my friend."
               ]
             },
             {
               "label": "Bloque 6",
-              "pattern": "Hello! My name is Ana. — ¡Hola! Me llamo Ana..",
+              "pattern": "Hello y My name is… inician una presentación",
               "examples": [
                 "Hello! My name is Ana."
               ]
             },
             {
               "label": "Bloque 7",
-              "pattern": "Nice to meet you expresa el gusto de conocer a alguien. Nice to meet you too responde. Pleased to meet you es algo más formal. This is… presenta a una persona. La misión integra saludos, nombres, cortesía e I am/I'm y you are/you're.",
+              "pattern": "What's your name? pregunta el nombre",
               "examples": [
                 "What's your name?"
               ]
             },
             {
               "label": "Bloque 8",
-              "pattern": "I'm Alex. — Soy Alex..",
+              "pattern": "I'm permite decir el propio nombre",
               "examples": [
                 "I'm Alex."
               ]
             },
             {
               "label": "Bloque 9",
-              "pattern": "You're my friend. — Eres mi amigo/a.",
+              "pattern": "You're my friend identifica una relación",
               "examples": [
                 "You're my friend."
               ]
             },
             {
               "label": "Bloque 10",
-              "pattern": "Goodbye! — ¡Adiós!.",
+              "pattern": "Integrar saludos, nombres, cortesía y presentaciones",
               "examples": [
                 "Goodbye!"
               ]
@@ -200,381 +310,89 @@
             {
               "english": "Nice to meet you.",
               "spanish": "Encantado/a de conocerte.",
-              "note": "Modelo enseñado en Explore."
+              "pronunciationGuide": "náis tu míit iú",
+              "audio": "tts:en-GB:Nice to meet you.",
+              "audioStatus": "synthetic_pending_review",
+              "note": "Expresión explicada en Explore."
             },
             {
               "english": "Nice to meet you too.",
               "spanish": "Encantado/a también.",
-              "note": "Modelo enseñado en Explore."
+              "pronunciationGuide": "náis tu míit iú tú",
+              "audio": "tts:en-GB:Nice to meet you too.",
+              "audioStatus": "synthetic_pending_review",
+              "note": "Expresión explicada en Explore."
             },
             {
               "english": "Pleased to meet you.",
               "spanish": "Encantado/a de conocerte.",
-              "note": "Modelo enseñado en Explore."
+              "pronunciationGuide": "plíizd tu míit iú",
+              "audio": "tts:en-GB:Pleased to meet you.",
+              "audioStatus": "synthetic_pending_review",
+              "note": "Expresión explicada en Explore."
             },
             {
               "english": "This is Ana.",
               "spanish": "Esta es Ana.",
-              "note": "Modelo enseñado en Explore."
+              "pronunciationGuide": "dis* iz Á-na",
+              "audio": "tts:en-GB:This is Ana.",
+              "audioStatus": "synthetic_pending_review",
+              "note": "Expresión explicada en Explore."
             },
             {
               "english": "This is my friend.",
               "spanish": "Este/a es mi amigo/a.",
-              "note": "Modelo enseñado en Explore."
+              "pronunciationGuide": "dis* iz mái frend",
+              "audio": "tts:en-GB:This is my friend.",
+              "audioStatus": "synthetic_pending_review",
+              "note": "Expresión explicada en Explore."
             },
             {
               "english": "Hello! My name is Ana.",
               "spanish": "¡Hola! Me llamo Ana.",
-              "note": "Modelo enseñado en Explore."
+              "pronunciationGuide": "jelóu mái néim iz Á-na",
+              "audio": "tts:en-GB:Hello! My name is Ana.",
+              "audioStatus": "synthetic_pending_review",
+              "note": "Expresión explicada en Explore."
             },
             {
               "english": "What's your name?",
               "spanish": "¿Cómo te llamas?",
-              "note": "Modelo enseñado en Explore."
+              "pronunciationGuide": "uóts iór néim",
+              "audio": "tts:en-GB:What's your name?",
+              "audioStatus": "synthetic_pending_review",
+              "note": "Expresión explicada en Explore."
             },
             {
               "english": "I'm Alex.",
               "spanish": "Soy Alex.",
-              "note": "Modelo enseñado en Explore."
+              "pronunciationGuide": "áim Á-leks",
+              "audio": "tts:en-GB:I'm Alex.",
+              "audioStatus": "synthetic_pending_review",
+              "note": "Expresión explicada en Explore."
             },
             {
               "english": "You're my friend.",
               "spanish": "Eres mi amigo/a",
-              "note": "Modelo enseñado en Explore."
+              "pronunciationGuide": "iór mái frend",
+              "audio": "tts:en-GB:You're my friend.",
+              "audioStatus": "synthetic_pending_review",
+              "note": "Expresión explicada en Explore."
             },
             {
               "english": "Goodbye!",
               "spanish": "¡Adiós!",
-              "note": "Modelo enseñado en Explore."
-            },
-            {
-              "english": "nice",
-              "spanish": "agradable",
-              "note": "Pronunciación aproximada: náis."
-            },
-            {
-              "english": "to",
-              "spanish": "a/para",
-              "note": "Pronunciación aproximada: tú."
-            },
-            {
-              "english": "meet",
-              "spanish": "conocer",
-              "note": "Pronunciación aproximada: míit."
-            },
-            {
-              "english": "you",
-              "spanish": "tú",
-              "note": "Pronunciación aproximada: iú."
-            },
-            {
-              "english": "too",
-              "spanish": "también",
-              "note": "Pronunciación aproximada: tú."
-            },
-            {
-              "english": "pleased",
-              "spanish": "encantado",
-              "note": "Pronunciación aproximada: plíizd."
-            },
-            {
-              "english": "This is…",
-              "spanish": "Este/a es…",
-              "note": "Pronunciación aproximada: dhis iz."
-            },
-            {
-              "english": "person",
-              "spanish": "persona",
-              "note": "Pronunciación aproximada: PÉR-son."
-            },
-            {
-              "english": "friend",
-              "spanish": "amigo",
-              "note": "Pronunciación aproximada: frend."
-            },
-            {
-              "english": "student",
-              "spanish": "estudiante",
-              "note": "Pronunciación aproximada: STIÚ-dent."
-            },
-            {
-              "english": "boy",
-              "spanish": "niño",
-              "note": "Pronunciación aproximada: bói."
-            },
-            {
-              "english": "girl",
-              "spanish": "niña",
-              "note": "Pronunciación aproximada: guérl."
-            },
-            {
-              "english": "name",
-              "spanish": "nombre",
-              "note": "Pronunciación aproximada: NÉIM."
-            },
-            {
-              "english": "my",
-              "spanish": "mi",
-              "note": "Pronunciación aproximada: mái."
-            },
-            {
-              "english": "your",
-              "spanish": "tu",
-              "note": "Pronunciación aproximada: iór."
-            },
-            {
-              "english": "what",
-              "spanish": "qué",
-              "note": "Pronunciación aproximada: uót."
-            },
-            {
-              "english": "is",
-              "spanish": "es",
-              "note": "Pronunciación aproximada: iz."
-            },
-            {
-              "english": "I'm",
-              "spanish": "soy/estoy",
-              "note": "Pronunciación aproximada: áim."
-            },
-            {
-              "english": "you're",
-              "spanish": "eres/estás",
-              "note": "Pronunciación aproximada: ior."
+              "pronunciationGuide": "gud-BÁI",
+              "audio": "tts:en-GB:Goodbye!",
+              "audioStatus": "synthetic_pending_review",
+              "note": "Expresión explicada en Explore."
             }
           ],
           "grammar": [
             {
-              "english": "Nice to meet you.",
-              "spanish": "Encantado/a de conocerte.",
-              "note": "Nice to meet you"
-            },
-            {
-              "english": "Nice to meet you too.",
-              "spanish": "Encantado/a también.",
-              "note": "Nice to meet you expresa el gusto de conocer a alguien. Nice to meet you too responde. Pleased to meet you es algo más formal. This is… presenta a una persona. La misión integra saludos, nombres, cortesía e I am/I'm y you are/you're."
-            },
-            {
-              "english": "Pleased to meet you.",
-              "spanish": "Encantado/a de conocerte.",
-              "note": "Nice to meet you expresa el gusto de conocer a alguien. Nice to meet you too responde. Pleased to meet you es algo más formal. This is… presenta a una persona. La misión integra saludos, nombres, cortesía e I am/I'm y you are/you're."
-            },
-            {
-              "english": "This is Ana.",
-              "spanish": "Esta es Ana.",
-              "note": "Nice to meet you expresa el gusto de conocer a alguien. Nice to meet you too responde. Pleased to meet you es algo más formal. This is… presenta a una persona. La misión integra saludos, nombres, cortesía e I am/I'm y you are/you're."
-            },
-            {
-              "english": "This is my friend.",
-              "spanish": "Este/a es mi amigo/a.",
-              "note": "Nice to meet you expresa el gusto de conocer a alguien. Nice to meet you too responde. Pleased to meet you es algo más formal. This is… presenta a una persona. La misión integra saludos, nombres, cortesía e I am/I'm y you are/you're."
-            },
-            {
-              "english": "Hello! My name is Ana.",
-              "spanish": "¡Hola! Me llamo Ana.",
-              "note": "Nice to meet you expresa el gusto de conocer a alguien. Nice to meet you too responde. Pleased to meet you es algo más formal. This is… presenta a una persona. La misión integra saludos, nombres, cortesía e I am/I'm y you are/you're."
-            },
-            {
-              "english": "What's your name?",
-              "spanish": "¿Cómo te llamas?",
-              "note": "Nice to meet you expresa el gusto de conocer a alguien. Nice to meet you too responde. Pleased to meet you es algo más formal. This is… presenta a una persona. La misión integra saludos, nombres, cortesía e I am/I'm y you are/you're."
-            },
-            {
-              "english": "I'm Alex.",
-              "spanish": "Soy Alex.",
-              "note": "Nice to meet you expresa el gusto de conocer a alguien. Nice to meet you too responde. Pleased to meet you es algo más formal. This is… presenta a una persona. La misión integra saludos, nombres, cortesía e I am/I'm y you are/you're."
-            },
-            {
-              "english": "You're my friend.",
-              "spanish": "Eres mi amigo/a",
-              "note": "Nice to meet you expresa el gusto de conocer a alguien. Nice to meet you too responde. Pleased to meet you es algo más formal. This is… presenta a una persona. La misión integra saludos, nombres, cortesía e I am/I'm y you are/you're."
-            },
-            {
-              "english": "Goodbye!",
-              "spanish": "¡Adiós!",
-              "note": "Nice to meet you expresa el gusto de conocer a alguien. Nice to meet you too responde. Pleased to meet you es algo más formal. This is… presenta a una persona. La misión integra saludos, nombres, cortesía e I am/I'm y you are/you're."
-            }
-          ],
-          "reading": [
-            {
-              "english": "Hello! My name is Lucy. This is Tom. Nice to meet you. Nice to meet you too. Goodbye!",
-              "spanish": "¡Hola! Me llamo Lucy. Este es Tom. Encantado/a de conocerte. Encantado/a también. ¡Adiós!"
-            }
-          ],
-          "writing": [
-            {
-              "english": "Nice to meet you.",
-              "spanish": "Encantado/a de conocerte.",
-              "note": "Modelo enseñado en Explore."
-            },
-            {
-              "english": "Nice to meet you too.",
-              "spanish": "Encantado/a también.",
-              "note": "Modelo enseñado en Explore."
-            },
-            {
-              "english": "Pleased to meet you.",
-              "spanish": "Encantado/a de conocerte.",
-              "note": "Modelo enseñado en Explore."
-            },
-            {
-              "english": "This is Ana.",
-              "spanish": "Esta es Ana.",
-              "note": "Modelo enseñado en Explore."
-            },
-            {
-              "english": "This is my friend.",
-              "spanish": "Este/a es mi amigo/a.",
-              "note": "Modelo enseñado en Explore."
-            },
-            {
-              "english": "Hello! My name is Ana.",
-              "spanish": "¡Hola! Me llamo Ana.",
-              "note": "Modelo enseñado en Explore."
-            },
-            {
-              "english": "What's your name?",
-              "spanish": "¿Cómo te llamas?",
-              "note": "Modelo enseñado en Explore."
-            },
-            {
-              "english": "I'm Alex.",
-              "spanish": "Soy Alex.",
-              "note": "Modelo enseñado en Explore."
-            },
-            {
-              "english": "You're my friend.",
-              "spanish": "Eres mi amigo/a",
-              "note": "Modelo enseñado en Explore."
-            },
-            {
-              "english": "Goodbye!",
-              "spanish": "¡Adiós!",
-              "note": "Modelo enseñado en Explore."
-            }
-          ],
-          "speaking": [
-            {
-              "english": "Nice to meet you.",
-              "spanish": "Encantado/a de conocerte.",
-              "note": "Modelo enseñado en Explore.",
-              "prompt": "Practica esta expresión.",
-              "promptSpanish": "Di la expresión en voz alta."
-            },
-            {
-              "english": "Nice to meet you too.",
-              "spanish": "Encantado/a también.",
-              "note": "Modelo enseñado en Explore.",
-              "prompt": "Practica esta expresión.",
-              "promptSpanish": "Di la expresión en voz alta."
-            },
-            {
-              "english": "Pleased to meet you.",
-              "spanish": "Encantado/a de conocerte.",
-              "note": "Modelo enseñado en Explore.",
-              "prompt": "Practica esta expresión.",
-              "promptSpanish": "Di la expresión en voz alta."
-            },
-            {
-              "english": "This is Ana.",
-              "spanish": "Esta es Ana.",
-              "note": "Modelo enseñado en Explore.",
-              "prompt": "Practica esta expresión.",
-              "promptSpanish": "Di la expresión en voz alta."
-            },
-            {
-              "english": "This is my friend.",
-              "spanish": "Este/a es mi amigo/a.",
-              "note": "Modelo enseñado en Explore.",
-              "prompt": "Practica esta expresión.",
-              "promptSpanish": "Di la expresión en voz alta."
-            },
-            {
-              "english": "Hello! My name is Ana.",
-              "spanish": "¡Hola! Me llamo Ana.",
-              "note": "Modelo enseñado en Explore.",
-              "prompt": "Practica esta expresión.",
-              "promptSpanish": "Di la expresión en voz alta."
-            },
-            {
-              "english": "What's your name?",
-              "spanish": "¿Cómo te llamas?",
-              "note": "Modelo enseñado en Explore.",
-              "prompt": "Practica esta expresión.",
-              "promptSpanish": "Di la expresión en voz alta."
-            },
-            {
-              "english": "I'm Alex.",
-              "spanish": "Soy Alex.",
-              "note": "Modelo enseñado en Explore.",
-              "prompt": "Practica esta expresión.",
-              "promptSpanish": "Di la expresión en voz alta."
-            },
-            {
-              "english": "You're my friend.",
-              "spanish": "Eres mi amigo/a",
-              "note": "Modelo enseñado en Explore.",
-              "prompt": "Practica esta expresión.",
-              "promptSpanish": "Di la expresión en voz alta."
-            },
-            {
-              "english": "Goodbye!",
-              "spanish": "¡Adiós!",
-              "note": "Modelo enseñado en Explore.",
-              "prompt": "Practica esta expresión.",
-              "promptSpanish": "Di la expresión en voz alta."
-            }
-          ],
-          "listening": [
-            {
-              "english": "Nice to meet you.",
-              "spanish": "Encantado/a de conocerte.",
-              "note": "Modelo enseñado en Explore."
-            },
-            {
-              "english": "Nice to meet you too.",
-              "spanish": "Encantado/a también.",
-              "note": "Modelo enseñado en Explore."
-            },
-            {
-              "english": "Pleased to meet you.",
-              "spanish": "Encantado/a de conocerte.",
-              "note": "Modelo enseñado en Explore."
-            },
-            {
-              "english": "This is Ana.",
-              "spanish": "Esta es Ana.",
-              "note": "Modelo enseñado en Explore."
-            },
-            {
-              "english": "This is my friend.",
-              "spanish": "Este/a es mi amigo/a.",
-              "note": "Modelo enseñado en Explore."
-            },
-            {
-              "english": "Hello! My name is Ana.",
-              "spanish": "¡Hola! Me llamo Ana.",
-              "note": "Modelo enseñado en Explore."
-            },
-            {
-              "english": "What's your name?",
-              "spanish": "¿Cómo te llamas?",
-              "note": "Modelo enseñado en Explore."
-            },
-            {
-              "english": "I'm Alex.",
-              "spanish": "Soy Alex.",
-              "note": "Modelo enseñado en Explore."
-            },
-            {
-              "english": "You're my friend.",
-              "spanish": "Eres mi amigo/a",
-              "note": "Modelo enseñado en Explore."
-            },
-            {
-              "english": "Goodbye!",
-              "spanish": "¡Adiós!",
-              "note": "Modelo enseñado en Explore."
+              "english": "Nice to meet you",
+              "spanish": "Presentarse, conocer a alguien y responder con cortesía.",
+              "note": "Esta misión integra expresiones anteriores. This is… se enseña como fórmula de presentación; no se explica todavía todos los usos de this o is."
             }
           ]
         },
@@ -583,70 +401,70 @@
             {
               "position": 1,
               "title": "Bloque 1",
-              "content": "Objetivo: Nice to meet you.",
+              "content": "Nice to meet you expresa el gusto de conocer a alguien",
               "example": "Nice to meet you.",
               "translation": "Encantado/a de conocerte."
             },
             {
               "position": 2,
               "title": "Bloque 2",
-              "content": "to — a/para. Pronunciación: tú.",
+              "content": "Nice to meet you too es la respuesta habitual",
               "example": "Nice to meet you too.",
               "translation": "Encantado/a también."
             },
             {
               "position": 3,
               "title": "Bloque 3",
-              "content": "Pleased to meet you. — Encantado/a de conocerte..",
+              "content": "Pleased to meet you es algo más formal",
               "example": "Pleased to meet you.",
               "translation": "Encantado/a de conocerte."
             },
             {
               "position": 4,
               "title": "Bloque 4",
-              "content": "This is Ana. — Esta es Ana..",
+              "content": "This is… presenta a alguien",
               "example": "This is Ana.",
               "translation": "Esta es Ana."
             },
             {
               "position": 5,
               "title": "Bloque 5",
-              "content": "This is my friend. — Este/a es mi amigo/a..",
+              "content": "This is my friend presenta a un amigo o amiga",
               "example": "This is my friend.",
               "translation": "Este/a es mi amigo/a."
             },
             {
               "position": 6,
               "title": "Bloque 6",
-              "content": "Hello! My name is Ana. — ¡Hola! Me llamo Ana..",
+              "content": "Hello y My name is… inician una presentación",
               "example": "Hello! My name is Ana.",
               "translation": "¡Hola! Me llamo Ana."
             },
             {
               "position": 7,
               "title": "Bloque 7",
-              "content": "Nice to meet you expresa el gusto de conocer a alguien. Nice to meet you too responde. Pleased to meet you es algo más formal. This is… presenta a una persona. La misión integra saludos, nombres, cortesía e I am/I'm y you are/you're.",
+              "content": "What's your name? pregunta el nombre",
               "example": "What's your name?",
               "translation": "¿Cómo te llamas?"
             },
             {
               "position": 8,
               "title": "Bloque 8",
-              "content": "I'm Alex. — Soy Alex..",
+              "content": "I'm permite decir el propio nombre",
               "example": "I'm Alex.",
               "translation": "Soy Alex."
             },
             {
               "position": 9,
               "title": "Bloque 9",
-              "content": "You're my friend. — Eres mi amigo/a.",
+              "content": "You're my friend identifica una relación",
               "example": "You're my friend.",
               "translation": "Eres mi amigo/a"
             },
             {
               "position": 10,
               "title": "Bloque 10",
-              "content": "Goodbye! — ¡Adiós!.",
+              "content": "Integrar saludos, nombres, cortesía y presentaciones",
               "example": "Goodbye!",
               "translation": "¡Adiós!"
             }
@@ -665,14 +483,14 @@
           {
             "itemId": "english-pre-a1-m010-practice-ex01-i01",
             "position": 1,
-            "prompt": "Elige la traducción de “nice”.",
+            "prompt": "Elige el significado de “nice”.",
             "evaluation": {
               "type": "single_choice"
             },
             "options": [
-              "a/para",
-              "conocer",
-              "agradable"
+              "agradable",
+              "a / para en la expresión",
+              "conocer"
             ],
             "answer": "agradable",
             "taskType": "vocabulary_translation"
@@ -680,29 +498,29 @@
           {
             "itemId": "english-pre-a1-m010-practice-ex01-i02",
             "position": 2,
-            "prompt": "Elige la traducción de “to”.",
-            "evaluation": {
-              "type": "single_choice"
-            },
-            "options": [
-              "tú",
-              "a/para",
-              "conocer"
-            ],
-            "answer": "a/para",
-            "taskType": "vocabulary_translation"
-          },
-          {
-            "itemId": "english-pre-a1-m010-practice-ex01-i03",
-            "position": 3,
-            "prompt": "Elige la traducción de “meet”.",
+            "prompt": "Elige el significado de “to”.",
             "evaluation": {
               "type": "single_choice"
             },
             "options": [
               "conocer",
-              "tú",
-              "también"
+              "a / para en la expresión",
+              "tú / usted"
+            ],
+            "answer": "a / para en la expresión",
+            "taskType": "vocabulary_translation"
+          },
+          {
+            "itemId": "english-pre-a1-m010-practice-ex01-i03",
+            "position": 3,
+            "prompt": "Elige el significado de “meet”.",
+            "evaluation": {
+              "type": "single_choice"
+            },
+            "options": [
+              "tú / usted",
+              "también",
+              "conocer"
             ],
             "answer": "conocer",
             "taskType": "vocabulary_translation"
@@ -710,29 +528,29 @@
           {
             "itemId": "english-pre-a1-m010-practice-ex01-i04",
             "position": 4,
-            "prompt": "Elige la traducción de “you”.",
+            "prompt": "Elige el significado de “you”.",
             "evaluation": {
               "type": "single_choice"
             },
             "options": [
+              "tú / usted",
               "también",
-              "encantado",
-              "tú"
+              "encantado/a"
             ],
-            "answer": "tú",
+            "answer": "tú / usted",
             "taskType": "vocabulary_translation"
           },
           {
             "itemId": "english-pre-a1-m010-practice-ex01-i05",
             "position": 5,
-            "prompt": "Elige la traducción de “too”.",
+            "prompt": "Elige el significado de “too”.",
             "evaluation": {
               "type": "single_choice"
             },
             "options": [
-              "Este/a es…",
+              "encantado/a",
               "también",
-              "encantado"
+              "este / esta / esto"
             ],
             "answer": "también",
             "taskType": "vocabulary_translation"
@@ -740,74 +558,74 @@
           {
             "itemId": "english-pre-a1-m010-practice-ex01-i06",
             "position": 6,
-            "prompt": "Elige la traducción de “pleased”.",
+            "prompt": "Elige el significado de “pleased”.",
             "evaluation": {
               "type": "single_choice"
             },
             "options": [
-              "encantado",
-              "Este/a es…",
-              "persona"
+              "este / esta / esto",
+              "es",
+              "encantado/a"
             ],
-            "answer": "encantado",
+            "answer": "encantado/a",
             "taskType": "vocabulary_translation"
           },
           {
             "itemId": "english-pre-a1-m010-practice-ex01-i07",
             "position": 7,
-            "prompt": "Elige la traducción de “This is…”.",
+            "prompt": "Elige el significado de “this”.",
             "evaluation": {
               "type": "single_choice"
             },
             "options": [
-              "persona",
-              "amigo",
-              "Este/a es…"
+              "este / esta / esto",
+              "es",
+              "amigo/a"
             ],
-            "answer": "Este/a es…",
+            "answer": "este / esta / esto",
             "taskType": "vocabulary_translation"
           },
           {
             "itemId": "english-pre-a1-m010-practice-ex01-i08",
             "position": 8,
-            "prompt": "Elige la traducción de “person”.",
+            "prompt": "Elige el significado de “is”.",
             "evaluation": {
               "type": "single_choice"
             },
             "options": [
-              "estudiante",
-              "persona",
-              "amigo"
+              "amigo/a",
+              "es",
+              "estudiante"
             ],
-            "answer": "persona",
+            "answer": "es",
             "taskType": "vocabulary_translation"
           },
           {
             "itemId": "english-pre-a1-m010-practice-ex01-i09",
             "position": 9,
-            "prompt": "Elige la traducción de “friend”.",
+            "prompt": "Elige el significado de “friend”.",
             "evaluation": {
               "type": "single_choice"
             },
             "options": [
-              "amigo",
               "estudiante",
-              "profesor"
+              "profesor/a",
+              "amigo/a"
             ],
-            "answer": "amigo",
+            "answer": "amigo/a",
             "taskType": "vocabulary_translation"
           },
           {
             "itemId": "english-pre-a1-m010-practice-ex01-i10",
             "position": 10,
-            "prompt": "Elige la traducción de “student”.",
+            "prompt": "Elige el significado de “student”.",
             "evaluation": {
               "type": "single_choice"
             },
             "options": [
-              "profesor",
-              "niño",
-              "estudiante"
+              "estudiante",
+              "profesor/a",
+              "niño"
             ],
             "answer": "estudiante",
             "taskType": "vocabulary_translation"
@@ -823,78 +641,78 @@
         "exerciseId": "english-pre-a1-m010-grammar-ex01",
         "type": "grammar",
         "theory": {
-          "title": "Nice to meet you",
-          "explanation": "Nice to meet you expresa el gusto de conocer a alguien. Nice to meet you too responde. Pleased to meet you es algo más formal. This is… presenta a una persona. La misión integra saludos, nombres, cortesía e I am/I'm y you are/you're.",
-          "tip": "Comprende todos los modelos de Explore antes de comenzar las actividades.",
+          "title": "Expresiones y estructuras de la misión",
+          "explanation": "Esta misión integra expresiones anteriores. This is… se enseña como fórmula de presentación; no se explica todavía todos los usos de this o is.",
+          "tip": "Reconoce el modelo completo antes de utilizarlo.",
           "patterns": [
             {
-              "label": "Bloque 1",
-              "pattern": "Nice to meet you",
+              "label": "Modelo 1",
+              "pattern": "Nice to meet you.",
               "examples": [
-                "Nice to meet you."
+                "Encantado/a de conocerte."
               ]
             },
             {
-              "label": "Bloque 2",
-              "pattern": "Nice to meet you expresa el gusto de conocer a alguien. Nice to meet you too responde. Pleased to meet you es algo más formal. This is… presenta a una persona. La misión integra saludos, nombres, cortesía e I am/I'm y you are/you're.",
+              "label": "Modelo 2",
+              "pattern": "Nice to meet you too.",
               "examples": [
-                "Nice to meet you too."
+                "Encantado/a también."
               ]
             },
             {
-              "label": "Bloque 3",
-              "pattern": "Nice to meet you expresa el gusto de conocer a alguien. Nice to meet you too responde. Pleased to meet you es algo más formal. This is… presenta a una persona. La misión integra saludos, nombres, cortesía e I am/I'm y you are/you're.",
+              "label": "Modelo 3",
+              "pattern": "Pleased to meet you.",
               "examples": [
-                "Pleased to meet you."
+                "Encantado/a de conocerte."
               ]
             },
             {
-              "label": "Bloque 4",
-              "pattern": "Nice to meet you expresa el gusto de conocer a alguien. Nice to meet you too responde. Pleased to meet you es algo más formal. This is… presenta a una persona. La misión integra saludos, nombres, cortesía e I am/I'm y you are/you're.",
+              "label": "Modelo 4",
+              "pattern": "This is Ana.",
               "examples": [
-                "This is Ana."
+                "Esta es Ana."
               ]
             },
             {
-              "label": "Bloque 5",
-              "pattern": "Nice to meet you expresa el gusto de conocer a alguien. Nice to meet you too responde. Pleased to meet you es algo más formal. This is… presenta a una persona. La misión integra saludos, nombres, cortesía e I am/I'm y you are/you're.",
+              "label": "Modelo 5",
+              "pattern": "This is my friend.",
               "examples": [
-                "This is my friend."
+                "Este/a es mi amigo/a."
               ]
             },
             {
-              "label": "Bloque 6",
-              "pattern": "Nice to meet you expresa el gusto de conocer a alguien. Nice to meet you too responde. Pleased to meet you es algo más formal. This is… presenta a una persona. La misión integra saludos, nombres, cortesía e I am/I'm y you are/you're.",
+              "label": "Modelo 6",
+              "pattern": "Hello! My name is Ana.",
               "examples": [
-                "Hello! My name is Ana."
+                "¡Hola! Me llamo Ana."
               ]
             },
             {
-              "label": "Bloque 7",
-              "pattern": "Nice to meet you expresa el gusto de conocer a alguien. Nice to meet you too responde. Pleased to meet you es algo más formal. This is… presenta a una persona. La misión integra saludos, nombres, cortesía e I am/I'm y you are/you're.",
+              "label": "Modelo 7",
+              "pattern": "What's your name?",
               "examples": [
-                "What's your name?"
+                "¿Cómo te llamas?"
               ]
             },
             {
-              "label": "Bloque 8",
-              "pattern": "Nice to meet you expresa el gusto de conocer a alguien. Nice to meet you too responde. Pleased to meet you es algo más formal. This is… presenta a una persona. La misión integra saludos, nombres, cortesía e I am/I'm y you are/you're.",
+              "label": "Modelo 8",
+              "pattern": "I'm Alex.",
               "examples": [
-                "I'm Alex."
+                "Soy Alex."
               ]
             },
             {
-              "label": "Bloque 9",
-              "pattern": "Nice to meet you expresa el gusto de conocer a alguien. Nice to meet you too responde. Pleased to meet you es algo más formal. This is… presenta a una persona. La misión integra saludos, nombres, cortesía e I am/I'm y you are/you're.",
+              "label": "Modelo 9",
+              "pattern": "You're my friend.",
               "examples": [
-                "You're my friend."
+                "Eres mi amigo/a"
               ]
             },
             {
-              "label": "Bloque 10",
-              "pattern": "Nice to meet you expresa el gusto de conocer a alguien. Nice to meet you too responde. Pleased to meet you es algo más formal. This is… presenta a una persona. La misión integra saludos, nombres, cortesía e I am/I'm y you are/you're.",
+              "label": "Modelo 10",
+              "pattern": "Goodbye!",
               "examples": [
-                "Goodbye!"
+                "¡Adiós!"
               ]
             }
           ]
@@ -903,142 +721,152 @@
           {
             "itemId": "english-pre-a1-m010-grammar-ex01-i01",
             "position": 1,
-            "prompt": "Reconoce el modelo trabajado: Nice to meet you.",
+            "prompt": "Selecciona el modelo que significa: “Encantado/a de conocerte.”",
             "evaluation": {
               "type": "single_choice"
             },
             "options": [
-              "Nice to meet you too.",
               "Nice to meet you.",
+              "Nice to meet you too.",
               "Pleased to meet you."
             ],
-            "answer": "Nice to meet you."
+            "answer": "Nice to meet you.",
+            "taskType": "functional_language"
           },
           {
             "itemId": "english-pre-a1-m010-grammar-ex01-i02",
             "position": 2,
-            "prompt": "Reconoce el modelo trabajado: Nice to meet you too.",
+            "prompt": "Selecciona el modelo que significa: “Encantado/a también.”",
             "evaluation": {
               "type": "single_choice"
             },
             "options": [
-              "This is Ana.",
               "Pleased to meet you.",
-              "Nice to meet you too."
+              "Nice to meet you too.",
+              "This is Ana."
             ],
-            "answer": "Nice to meet you too."
+            "answer": "Nice to meet you too.",
+            "taskType": "functional_language"
           },
           {
             "itemId": "english-pre-a1-m010-grammar-ex01-i03",
             "position": 3,
-            "prompt": "Reconoce el modelo trabajado: Pleased to meet you.",
+            "prompt": "Selecciona el modelo que significa: “Encantado/a de conocerte.”",
             "evaluation": {
               "type": "single_choice"
             },
             "options": [
-              "Pleased to meet you.",
               "This is Ana.",
-              "This is my friend."
+              "This is my friend.",
+              "Pleased to meet you."
             ],
-            "answer": "Pleased to meet you."
+            "answer": "Pleased to meet you.",
+            "taskType": "functional_language"
           },
           {
             "itemId": "english-pre-a1-m010-grammar-ex01-i04",
             "position": 4,
-            "prompt": "Reconoce el modelo trabajado: This is Ana.",
+            "prompt": "Selecciona el modelo que significa: “Esta es Ana.”",
             "evaluation": {
               "type": "single_choice"
             },
             "options": [
-              "This is my friend.",
               "This is Ana.",
+              "This is my friend.",
               "Hello! My name is Ana."
             ],
-            "answer": "This is Ana."
+            "answer": "This is Ana.",
+            "taskType": "functional_language"
           },
           {
             "itemId": "english-pre-a1-m010-grammar-ex01-i05",
             "position": 5,
-            "prompt": "Reconoce el modelo trabajado: This is my friend.",
+            "prompt": "Selecciona el modelo que significa: “Este/a es mi amigo/a.”",
             "evaluation": {
               "type": "single_choice"
             },
             "options": [
-              "What's your name?",
               "Hello! My name is Ana.",
-              "This is my friend."
+              "This is my friend.",
+              "What's your name?"
             ],
-            "answer": "This is my friend."
+            "answer": "This is my friend.",
+            "taskType": "functional_language"
           },
           {
             "itemId": "english-pre-a1-m010-grammar-ex01-i06",
             "position": 6,
-            "prompt": "Reconoce el modelo trabajado: Hello! My name is Ana.",
+            "prompt": "Selecciona el modelo que significa: “¡Hola! Me llamo Ana.”",
             "evaluation": {
               "type": "single_choice"
             },
             "options": [
-              "Hello! My name is Ana.",
               "What's your name?",
-              "I'm Alex."
+              "I'm Alex.",
+              "Hello! My name is Ana."
             ],
-            "answer": "Hello! My name is Ana."
+            "answer": "Hello! My name is Ana.",
+            "taskType": "functional_language"
           },
           {
             "itemId": "english-pre-a1-m010-grammar-ex01-i07",
             "position": 7,
-            "prompt": "Reconoce el modelo trabajado: What's your name?",
+            "prompt": "Selecciona el modelo que significa: “¿Cómo te llamas?”",
             "evaluation": {
               "type": "single_choice"
             },
             "options": [
-              "I'm Alex.",
               "What's your name?",
+              "I'm Alex.",
               "You're my friend."
             ],
-            "answer": "What's your name?"
+            "answer": "What's your name?",
+            "taskType": "functional_language"
           },
           {
             "itemId": "english-pre-a1-m010-grammar-ex01-i08",
             "position": 8,
-            "prompt": "Reconoce el modelo trabajado: I'm Alex.",
+            "prompt": "Selecciona el modelo que significa: “Soy Alex.”",
             "evaluation": {
               "type": "single_choice"
             },
             "options": [
-              "Goodbye!",
               "You're my friend.",
-              "I'm Alex."
+              "I'm Alex.",
+              "Goodbye!"
             ],
-            "answer": "I'm Alex."
+            "answer": "I'm Alex.",
+            "taskType": "functional_language"
           },
           {
             "itemId": "english-pre-a1-m010-grammar-ex01-i09",
             "position": 9,
-            "prompt": "Reconoce el modelo trabajado: You're my friend.",
+            "prompt": "Selecciona el modelo que significa: “Eres mi amigo/a”",
             "evaluation": {
               "type": "single_choice"
             },
             "options": [
-              "You're my friend.",
               "Goodbye!",
-              "Nice to meet you."
+              "Nice to meet you.",
+              "You're my friend."
             ],
-            "answer": "You're my friend."
+            "answer": "You're my friend.",
+            "taskType": "functional_language"
           },
           {
             "itemId": "english-pre-a1-m010-grammar-ex01-i10",
             "position": 10,
-            "prompt": "Reconoce el modelo trabajado: Goodbye!",
+            "prompt": "Selecciona el modelo que significa: “¡Adiós!”",
             "evaluation": {
               "type": "single_choice"
             },
             "options": [
-              "Nice to meet you.",
               "Goodbye!",
+              "Nice to meet you.",
               "Nice to meet you too."
             ],
-            "answer": "Goodbye!"
+            "answer": "Goodbye!",
+            "taskType": "functional_language"
           }
         ]
       }
@@ -1057,15 +885,17 @@
             "word": "nice",
             "translation": "agradable",
             "pronunciationGuide": "náis",
-            "audio": "tts:en-GB:nice"
+            "audio": "tts:en-GB:nice",
+            "audioStatus": "synthetic_pending_review"
           },
           {
             "itemId": "english-pre-a1-m010-pronunciation-ex01-i02",
             "position": 2,
             "word": "to",
-            "translation": "a/para",
+            "translation": "a / para en la expresión",
             "pronunciationGuide": "tú",
-            "audio": "tts:en-GB:to"
+            "audio": "tts:en-GB:to",
+            "audioStatus": "synthetic_pending_review"
           },
           {
             "itemId": "english-pre-a1-m010-pronunciation-ex01-i03",
@@ -1073,15 +903,17 @@
             "word": "meet",
             "translation": "conocer",
             "pronunciationGuide": "míit",
-            "audio": "tts:en-GB:meet"
+            "audio": "tts:en-GB:meet",
+            "audioStatus": "synthetic_pending_review"
           },
           {
             "itemId": "english-pre-a1-m010-pronunciation-ex01-i04",
             "position": 4,
             "word": "you",
-            "translation": "tú",
+            "translation": "tú / usted",
             "pronunciationGuide": "iú",
-            "audio": "tts:en-GB:you"
+            "audio": "tts:en-GB:you",
+            "audioStatus": "synthetic_pending_review"
           },
           {
             "itemId": "english-pre-a1-m010-pronunciation-ex01-i05",
@@ -1089,39 +921,44 @@
             "word": "too",
             "translation": "también",
             "pronunciationGuide": "tú",
-            "audio": "tts:en-GB:too"
+            "audio": "tts:en-GB:too",
+            "audioStatus": "synthetic_pending_review"
           },
           {
             "itemId": "english-pre-a1-m010-pronunciation-ex01-i06",
             "position": 6,
             "word": "pleased",
-            "translation": "encantado",
+            "translation": "encantado/a",
             "pronunciationGuide": "plíizd",
-            "audio": "tts:en-GB:pleased"
+            "audio": "tts:en-GB:pleased",
+            "audioStatus": "synthetic_pending_review"
           },
           {
             "itemId": "english-pre-a1-m010-pronunciation-ex01-i07",
             "position": 7,
-            "word": "This is…",
-            "translation": "Este/a es…",
-            "pronunciationGuide": "dhis iz",
-            "audio": "tts:en-GB:This is…"
+            "word": "this",
+            "translation": "este / esta / esto",
+            "pronunciationGuide": "dis*",
+            "audio": "tts:en-GB:this",
+            "audioStatus": "synthetic_pending_review"
           },
           {
             "itemId": "english-pre-a1-m010-pronunciation-ex01-i08",
             "position": 8,
-            "word": "person",
-            "translation": "persona",
-            "pronunciationGuide": "PÉR-son",
-            "audio": "tts:en-GB:person"
+            "word": "is",
+            "translation": "es",
+            "pronunciationGuide": "iz",
+            "audio": "tts:en-GB:is",
+            "audioStatus": "synthetic_pending_review"
           },
           {
             "itemId": "english-pre-a1-m010-pronunciation-ex01-i09",
             "position": 9,
             "word": "friend",
-            "translation": "amigo",
+            "translation": "amigo/a",
             "pronunciationGuide": "frend",
-            "audio": "tts:en-GB:friend"
+            "audio": "tts:en-GB:friend",
+            "audioStatus": "synthetic_pending_review"
           },
           {
             "itemId": "english-pre-a1-m010-pronunciation-ex01-i10",
@@ -1129,7 +966,8 @@
             "word": "student",
             "translation": "estudiante",
             "pronunciationGuide": "STIÚ-dent",
-            "audio": "tts:en-GB:student"
+            "audio": "tts:en-GB:student",
+            "audioStatus": "synthetic_pending_review"
           }
         ]
       }
@@ -1143,148 +981,158 @@
         "type": "reading_comprehension",
         "content": {
           "passageId": "english-pre-a1-m010-reading-passage-01",
-          "passage": "Hello! My name is Lucy. This is Tom. Nice to meet you. Nice to meet you too. Goodbye!"
+          "passage": "Nice to meet you. Nice to meet you too. Pleased to meet you. This is Ana. This is my friend. Hello! My name is Ana. What's your name? I'm Alex. You're my friend. Goodbye!"
         },
         "items": [
           {
             "itemId": "english-pre-a1-m010-reading-ex01-i01",
             "position": 1,
-            "prompt": "¿Qué tema presenta el texto?",
+            "prompt": "En el texto, ¿qué significa “Nice to meet you.”?",
             "evaluation": {
               "type": "single_choice"
             },
             "options": [
-              "agradable",
-              "a/para",
-              "Nice to meet you"
+              "Encantado/a de conocerte.",
+              "Encantado/a también.",
+              "Esta es Ana."
             ],
-            "answer": "Nice to meet you"
+            "answer": "Encantado/a de conocerte.",
+            "taskType": "reading_detail"
           },
           {
             "itemId": "english-pre-a1-m010-reading-ex01-i02",
             "position": 2,
-            "prompt": "¿Qué significa “to” en el texto?",
+            "prompt": "En el texto, ¿qué significa “Nice to meet you too.”?",
             "evaluation": {
               "type": "single_choice"
             },
             "options": [
-              "tú",
-              "a/para",
-              "conocer"
+              "Encantado/a de conocerte.",
+              "Encantado/a también.",
+              "Esta es Ana."
             ],
-            "answer": "a/para"
+            "answer": "Encantado/a también.",
+            "taskType": "reading_detail"
           },
           {
             "itemId": "english-pre-a1-m010-reading-ex01-i03",
             "position": 3,
-            "prompt": "¿Qué significa “meet” en el texto?",
+            "prompt": "En el texto, ¿qué significa “Pleased to meet you.”?",
             "evaluation": {
               "type": "single_choice"
             },
             "options": [
-              "conocer",
-              "tú",
-              "también"
+              "Este/a es mi amigo/a.",
+              "¡Hola! Me llamo Ana.",
+              "Encantado/a de conocerte."
             ],
-            "answer": "conocer"
+            "answer": "Encantado/a de conocerte.",
+            "taskType": "reading_detail"
           },
           {
             "itemId": "english-pre-a1-m010-reading-ex01-i04",
             "position": 4,
-            "prompt": "¿Qué significa “you” en el texto?",
+            "prompt": "En el texto, ¿qué significa “This is Ana.”?",
             "evaluation": {
               "type": "single_choice"
             },
             "options": [
-              "también",
-              "encantado",
-              "tú"
+              "Esta es Ana.",
+              "Este/a es mi amigo/a.",
+              "¡Hola! Me llamo Ana."
             ],
-            "answer": "tú"
+            "answer": "Esta es Ana.",
+            "taskType": "reading_detail"
           },
           {
             "itemId": "english-pre-a1-m010-reading-ex01-i05",
             "position": 5,
-            "prompt": "¿Qué significa “too” en el texto?",
+            "prompt": "En el texto, ¿qué significa “This is my friend.”?",
             "evaluation": {
               "type": "single_choice"
             },
             "options": [
-              "Este/a es…",
-              "también",
-              "encantado"
+              "¡Hola! Me llamo Ana.",
+              "Este/a es mi amigo/a.",
+              "¿Cómo te llamas?"
             ],
-            "answer": "también"
+            "answer": "Este/a es mi amigo/a.",
+            "taskType": "reading_detail"
           },
           {
             "itemId": "english-pre-a1-m010-reading-ex01-i06",
             "position": 6,
-            "prompt": "¿Qué significa “pleased” en el texto?",
+            "prompt": "En el texto, ¿qué significa “Hello! My name is Ana.”?",
             "evaluation": {
               "type": "single_choice"
             },
             "options": [
-              "encantado",
-              "Este/a es…",
-              "persona"
+              "¿Cómo te llamas?",
+              "Soy Alex.",
+              "¡Hola! Me llamo Ana."
             ],
-            "answer": "encantado"
+            "answer": "¡Hola! Me llamo Ana.",
+            "taskType": "reading_detail"
           },
           {
             "itemId": "english-pre-a1-m010-reading-ex01-i07",
             "position": 7,
-            "prompt": "¿Qué significa “This is…” en el texto?",
+            "prompt": "En el texto, ¿qué significa “What's your name?”?",
             "evaluation": {
               "type": "single_choice"
             },
             "options": [
-              "persona",
-              "amigo",
-              "Este/a es…"
+              "¿Cómo te llamas?",
+              "Soy Alex.",
+              "Eres mi amigo/a"
             ],
-            "answer": "Este/a es…"
+            "answer": "¿Cómo te llamas?",
+            "taskType": "reading_detail"
           },
           {
             "itemId": "english-pre-a1-m010-reading-ex01-i08",
             "position": 8,
-            "prompt": "¿Qué significa “person” en el texto?",
+            "prompt": "En el texto, ¿qué significa “I'm Alex.”?",
             "evaluation": {
               "type": "single_choice"
             },
             "options": [
-              "estudiante",
-              "persona",
-              "amigo"
+              "Eres mi amigo/a",
+              "Soy Alex.",
+              "¡Adiós!"
             ],
-            "answer": "persona"
+            "answer": "Soy Alex.",
+            "taskType": "reading_detail"
           },
           {
             "itemId": "english-pre-a1-m010-reading-ex01-i09",
             "position": 9,
-            "prompt": "¿Qué significa “friend” en el texto?",
+            "prompt": "En el texto, ¿qué significa “You're my friend.”?",
             "evaluation": {
               "type": "single_choice"
             },
             "options": [
-              "amigo",
-              "estudiante",
-              "profesor"
+              "¡Adiós!",
+              "Encantado/a de conocerte.",
+              "Eres mi amigo/a"
             ],
-            "answer": "amigo"
+            "answer": "Eres mi amigo/a",
+            "taskType": "reading_detail"
           },
           {
             "itemId": "english-pre-a1-m010-reading-ex01-i10",
             "position": 10,
-            "prompt": "¿Qué significa “student” en el texto?",
+            "prompt": "En el texto, ¿qué significa “Goodbye!”?",
             "evaluation": {
               "type": "single_choice"
             },
             "options": [
-              "profesor",
-              "niño",
-              "estudiante"
+              "¡Adiós!",
+              "Encantado/a de conocerte.",
+              "Encantado/a también."
             ],
-            "answer": "estudiante"
+            "answer": "¡Adiós!",
+            "taskType": "reading_detail"
           }
         ]
       }
@@ -1501,10 +1349,10 @@
           {
             "itemId": "english-pre-a1-m010-speaking-ex01-i01",
             "position": 1,
-            "prompt": "Di en voz alta esta expresión.",
-            "promptSpanish": "Practica el modelo de la misión.",
+            "prompt": "Di en voz alta el modelo.",
+            "promptSpanish": "Practica: Encantado/a de conocerte.",
             "modelAnswer": "Nice to meet you.",
-            "translation": "Nice to meet you.",
+            "translation": "Encantado/a de conocerte.",
             "evaluation": {
               "type": "transcription_feedback",
               "transcriptionSeparateFromPronunciation": true
@@ -1513,10 +1361,10 @@
           {
             "itemId": "english-pre-a1-m010-speaking-ex01-i02",
             "position": 2,
-            "prompt": "Di en voz alta esta expresión.",
-            "promptSpanish": "Practica el modelo de la misión.",
+            "prompt": "Di en voz alta el modelo.",
+            "promptSpanish": "Practica: Encantado/a también.",
             "modelAnswer": "Nice to meet you too.",
-            "translation": "Nice to meet you too.",
+            "translation": "Encantado/a también.",
             "evaluation": {
               "type": "transcription_feedback",
               "transcriptionSeparateFromPronunciation": true
@@ -1525,10 +1373,10 @@
           {
             "itemId": "english-pre-a1-m010-speaking-ex01-i03",
             "position": 3,
-            "prompt": "Di en voz alta esta expresión.",
-            "promptSpanish": "Practica el modelo de la misión.",
+            "prompt": "Di en voz alta el modelo.",
+            "promptSpanish": "Practica: Encantado/a de conocerte.",
             "modelAnswer": "Pleased to meet you.",
-            "translation": "Pleased to meet you.",
+            "translation": "Encantado/a de conocerte.",
             "evaluation": {
               "type": "transcription_feedback",
               "transcriptionSeparateFromPronunciation": true
@@ -1537,10 +1385,10 @@
           {
             "itemId": "english-pre-a1-m010-speaking-ex01-i04",
             "position": 4,
-            "prompt": "Di en voz alta esta expresión.",
-            "promptSpanish": "Practica el modelo de la misión.",
+            "prompt": "Di en voz alta el modelo.",
+            "promptSpanish": "Practica: Esta es Ana.",
             "modelAnswer": "This is Ana.",
-            "translation": "This is Ana.",
+            "translation": "Esta es Ana.",
             "evaluation": {
               "type": "transcription_feedback",
               "transcriptionSeparateFromPronunciation": true
@@ -1549,10 +1397,10 @@
           {
             "itemId": "english-pre-a1-m010-speaking-ex01-i05",
             "position": 5,
-            "prompt": "Di en voz alta esta expresión.",
-            "promptSpanish": "Practica el modelo de la misión.",
+            "prompt": "Di en voz alta el modelo.",
+            "promptSpanish": "Practica: Este/a es mi amigo/a.",
             "modelAnswer": "This is my friend.",
-            "translation": "This is my friend.",
+            "translation": "Este/a es mi amigo/a.",
             "evaluation": {
               "type": "transcription_feedback",
               "transcriptionSeparateFromPronunciation": true
@@ -1561,10 +1409,10 @@
           {
             "itemId": "english-pre-a1-m010-speaking-ex01-i06",
             "position": 6,
-            "prompt": "Di en voz alta esta expresión.",
-            "promptSpanish": "Practica el modelo de la misión.",
+            "prompt": "Di en voz alta el modelo.",
+            "promptSpanish": "Practica: ¡Hola! Me llamo Ana.",
             "modelAnswer": "Hello! My name is Ana.",
-            "translation": "Hello! My name is Ana.",
+            "translation": "¡Hola! Me llamo Ana.",
             "evaluation": {
               "type": "transcription_feedback",
               "transcriptionSeparateFromPronunciation": true
@@ -1573,10 +1421,10 @@
           {
             "itemId": "english-pre-a1-m010-speaking-ex01-i07",
             "position": 7,
-            "prompt": "Di en voz alta esta expresión.",
-            "promptSpanish": "Practica el modelo de la misión.",
+            "prompt": "Di en voz alta el modelo.",
+            "promptSpanish": "Practica: ¿Cómo te llamas?",
             "modelAnswer": "What's your name?",
-            "translation": "What's your name?",
+            "translation": "¿Cómo te llamas?",
             "evaluation": {
               "type": "transcription_feedback",
               "transcriptionSeparateFromPronunciation": true
@@ -1585,10 +1433,10 @@
           {
             "itemId": "english-pre-a1-m010-speaking-ex01-i08",
             "position": 8,
-            "prompt": "Di en voz alta esta expresión.",
-            "promptSpanish": "Practica el modelo de la misión.",
+            "prompt": "Di en voz alta el modelo.",
+            "promptSpanish": "Practica: Soy Alex.",
             "modelAnswer": "I'm Alex.",
-            "translation": "I'm Alex.",
+            "translation": "Soy Alex.",
             "evaluation": {
               "type": "transcription_feedback",
               "transcriptionSeparateFromPronunciation": true
@@ -1597,10 +1445,10 @@
           {
             "itemId": "english-pre-a1-m010-speaking-ex01-i09",
             "position": 9,
-            "prompt": "Di en voz alta esta expresión.",
-            "promptSpanish": "Practica el modelo de la misión.",
+            "prompt": "Di en voz alta el modelo.",
+            "promptSpanish": "Practica: Eres mi amigo/a",
             "modelAnswer": "You're my friend.",
-            "translation": "You're my friend.",
+            "translation": "Eres mi amigo/a",
             "evaluation": {
               "type": "transcription_feedback",
               "transcriptionSeparateFromPronunciation": true
@@ -1609,10 +1457,10 @@
           {
             "itemId": "english-pre-a1-m010-speaking-ex01-i10",
             "position": 10,
-            "prompt": "Di en voz alta esta expresión.",
-            "promptSpanish": "Practica el modelo de la misión.",
+            "prompt": "Di en voz alta el modelo.",
+            "promptSpanish": "Practica: ¡Adiós!",
             "modelAnswer": "Goodbye!",
-            "translation": "Goodbye!",
+            "translation": "¡Adiós!",
             "evaluation": {
               "type": "transcription_feedback",
               "transcriptionSeparateFromPronunciation": true
@@ -1677,7 +1525,7 @@
           ],
           "interaction": "select_place_move_replace",
           "audioTranscript": "tts:en-GB:Nice to meet you. Nice to meet you too. Pleased to meet you. This is Ana. This is my friend. Hello! My name is Ana. What's your name? I'm Alex. You're my friend. Goodbye!",
-          "translation": "Encantado/a de conocerte. Encantado/a también. Encantado/a de conocerte. Esta es Ana. Este/a es mi amigo/a. ¡Hola! Me llamo Ana. ¿Cómo te llamas? Soy Alex. Eres mi amigo/a. ¡Adiós!"
+          "translation": "Encantado/a de conocerte. Encantado/a también. Encantado/a de conocerte. Esta es Ana. Este/a es mi amigo/a. ¡Hola! Me llamo Ana. ¿Cómo te llamas? Soy Alex. Eres mi amigo/a ¡Adiós!"
         },
         "items": [
           {
