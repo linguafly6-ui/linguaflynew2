@@ -80,70 +80,99 @@
             "position": 1,
             "english": "run",
             "spanish": "correr",
-            "audio": "tts:en-GB:run"
+            "audio": "tts:en-GB:run",
+            "pronunciationGuide": "rán",
+            "audioStatus": "synthetic_pending_review"
           },
           {
             "itemId": "english-pre-a1-m011-explore-ex01-i02",
             "position": 2,
             "english": "jump",
             "spanish": "saltar",
-            "audio": "tts:en-GB:jump"
+            "audio": "tts:en-GB:jump",
+            "pronunciationGuide": "yámp",
+            "audioStatus": "synthetic_pending_review"
           },
           {
             "itemId": "english-pre-a1-m011-explore-ex01-i03",
             "position": 3,
             "english": "climb",
             "spanish": "trepar",
-            "audio": "tts:en-GB:climb"
+            "audio": "tts:en-GB:climb",
+            "pronunciationGuide": "kláim",
+            "audioStatus": "synthetic_pending_review"
           },
           {
             "itemId": "english-pre-a1-m011-explore-ex01-i04",
             "position": 4,
             "english": "swing",
             "spanish": "columpiarse",
-            "audio": "tts:en-GB:swing"
+            "audio": "tts:en-GB:swing",
+            "pronunciationGuide": "suíng",
+            "audioStatus": "synthetic_pending_review"
           },
           {
             "itemId": "english-pre-a1-m011-explore-ex01-i05",
             "position": 5,
             "english": "slide",
             "spanish": "deslizarse",
-            "audio": "tts:en-GB:slide"
+            "audio": "tts:en-GB:slide",
+            "pronunciationGuide": "sláid",
+            "audioStatus": "synthetic_pending_review"
           },
           {
             "itemId": "english-pre-a1-m011-explore-ex01-i06",
             "position": 6,
             "english": "play",
             "spanish": "jugar",
-            "audio": "tts:en-GB:play"
+            "audio": "tts:en-GB:play",
+            "pronunciationGuide": "pléi",
+            "audioStatus": "synthetic_pending_review"
           },
           {
             "itemId": "english-pre-a1-m011-explore-ex01-i07",
             "position": 7,
             "english": "stop",
             "spanish": "parar",
-            "audio": "tts:en-GB:stop"
+            "audio": "tts:en-GB:stop",
+            "pronunciationGuide": "stap",
+            "audioStatus": "synthetic_pending_review"
           },
           {
             "itemId": "english-pre-a1-m011-explore-ex01-i08",
             "position": 8,
             "english": "walk",
             "spanish": "caminar",
-            "audio": "tts:en-GB:walk"
+            "audio": "tts:en-GB:walk",
+            "pronunciationGuide": "uók",
+            "audioStatus": "synthetic_pending_review"
           },
           {
             "itemId": "english-pre-a1-m011-explore-ex01-i09",
             "position": 9,
             "english": "hop",
             "spanish": "saltar a la pata coja",
-            "audio": "tts:en-GB:hop"
+            "audio": "tts:en-GB:hop",
+            "pronunciationGuide": "jap",
+            "audioStatus": "synthetic_pending_review"
           },
           {
             "itemId": "english-pre-a1-m011-explore-ex01-i10",
             "position": 10,
             "english": "skip",
             "spanish": "saltar a saltitos",
-            "audio": "tts:en-GB:skip"
+            "audio": "tts:en-GB:skip",
+            "pronunciationGuide": "skíp",
+            "audioStatus": "synthetic_pending_review"
+          },
+          {
+            "itemId": "english-pre-a1-m011-explore-context-playground",
+            "position": 11,
+            "english": "playground",
+            "spanish": "parque infantil",
+            "pronunciationGuide": "pléi-graund",
+            "audio": "tts:en-GB:playground",
+            "audioStatus": "synthetic_pending_review"
           }
         ],
         "lesson": {
@@ -1441,9 +1470,9 @@
         "exerciseId": "english-pre-a1-m011-listening-ex01",
         "type": "listening_gap_fill",
         "content": {
-          "audio": "tts:en-GB:I play in the playground. You walk to the swings. He runs to the gate. She jumps over a line. They swing together. I can climb the steps. You can slide down the slide. He can hop on one foot. She can skip to the music. We can stop here.",
+          "audio": "tts:en-GB:At the playground, I play. I run and jump. I climb, swing and slide. I hop and skip. I walk and stop.",
           "audioLocale": "en-GB",
-          "transcriptTemplate": "I [[gap-01]] in the playground. You [[gap-02]] to the swings. He [[gap-03]] to the gate. She [[gap-04]] over a line. They [[gap-05]] together. I can [[gap-06]] the steps. You can [[gap-07]] down the slide. He can [[gap-08]] on one foot. She can [[gap-09]] to the music. We can [[gap-10]] here.",
+          "transcriptTemplate": "At the playground, I [[gap-01]]. I [[gap-02]] and [[gap-03]]. I [[gap-04]], [[gap-05]] and [[gap-06]]. I [[gap-07]] and [[gap-08]]. I [[gap-09]] and [[gap-10]].",
           "wordBank": [
             {
               "wordId": "english-pre-a1-m011-listening-word-01",
@@ -1451,15 +1480,15 @@
             },
             {
               "wordId": "english-pre-a1-m011-listening-word-02",
-              "word": "walk"
+              "word": "run"
             },
             {
               "wordId": "english-pre-a1-m011-listening-word-03",
-              "word": "runs"
+              "word": "jump"
             },
             {
               "wordId": "english-pre-a1-m011-listening-word-04",
-              "word": "jumps"
+              "word": "climb"
             },
             {
               "wordId": "english-pre-a1-m011-listening-word-05",
@@ -1467,19 +1496,19 @@
             },
             {
               "wordId": "english-pre-a1-m011-listening-word-06",
-              "word": "climb"
-            },
-            {
-              "wordId": "english-pre-a1-m011-listening-word-07",
               "word": "slide"
             },
             {
-              "wordId": "english-pre-a1-m011-listening-word-08",
+              "wordId": "english-pre-a1-m011-listening-word-07",
               "word": "hop"
             },
             {
-              "wordId": "english-pre-a1-m011-listening-word-09",
+              "wordId": "english-pre-a1-m011-listening-word-08",
               "word": "skip"
+            },
+            {
+              "wordId": "english-pre-a1-m011-listening-word-09",
+              "word": "walk"
             },
             {
               "wordId": "english-pre-a1-m011-listening-word-10",
@@ -1487,7 +1516,9 @@
             }
           ],
           "interaction": "select_place_move_replace",
-          "audioTranscript": "tts:en-GB:I play in the playground. You walk to the swings. He runs to the gate. She jumps over a line. They swing together. I can climb the steps. You can slide down the slide. He can hop on one foot. She can skip to the music. We can stop here."
+          "audioTranscript": "At the playground, I play. I run and jump. I climb, swing and slide. I hop and skip. I walk and stop.",
+          "audioStatus": "synthetic_pending_review",
+          "translation": "En el parque infantil, juego. Corro y salto. Trepo, me columpio y me deslizo. Salto a la pata coja y doy saltitos. Camino y me detengo."
         },
         "items": [
           {
@@ -1502,21 +1533,21 @@
             "position": 2,
             "gapToken": "[[gap-02]]",
             "expectedWordId": "english-pre-a1-m011-listening-word-02",
-            "answer": "walk"
+            "answer": "run"
           },
           {
             "itemId": "english-pre-a1-m011-listening-ex01-i03",
             "position": 3,
             "gapToken": "[[gap-03]]",
             "expectedWordId": "english-pre-a1-m011-listening-word-03",
-            "answer": "runs"
+            "answer": "jump"
           },
           {
             "itemId": "english-pre-a1-m011-listening-ex01-i04",
             "position": 4,
             "gapToken": "[[gap-04]]",
             "expectedWordId": "english-pre-a1-m011-listening-word-04",
-            "answer": "jumps"
+            "answer": "climb"
           },
           {
             "itemId": "english-pre-a1-m011-listening-ex01-i05",
@@ -1530,28 +1561,28 @@
             "position": 6,
             "gapToken": "[[gap-06]]",
             "expectedWordId": "english-pre-a1-m011-listening-word-06",
-            "answer": "climb"
+            "answer": "slide"
           },
           {
             "itemId": "english-pre-a1-m011-listening-ex01-i07",
             "position": 7,
             "gapToken": "[[gap-07]]",
             "expectedWordId": "english-pre-a1-m011-listening-word-07",
-            "answer": "slide"
+            "answer": "hop"
           },
           {
             "itemId": "english-pre-a1-m011-listening-ex01-i08",
             "position": 8,
             "gapToken": "[[gap-08]]",
             "expectedWordId": "english-pre-a1-m011-listening-word-08",
-            "answer": "hop"
+            "answer": "skip"
           },
           {
             "itemId": "english-pre-a1-m011-listening-ex01-i09",
             "position": 9,
             "gapToken": "[[gap-09]]",
             "expectedWordId": "english-pre-a1-m011-listening-word-09",
-            "answer": "skip"
+            "answer": "walk"
           },
           {
             "itemId": "english-pre-a1-m011-listening-ex01-i10",

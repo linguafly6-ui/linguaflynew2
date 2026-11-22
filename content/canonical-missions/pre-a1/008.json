@@ -1646,38 +1646,38 @@
         "exerciseId": "english-pre-a1-m008-listening-ex01",
         "type": "listening_gap_fill",
         "content": {
-          "audio": "tts:en-GB:At school, Ana talks to Tom. Tom: Hello, Ana. How are you today? Ana: I am very happy. Tom: I am a teacher. Ana: I am a student. Tom: I am happy today. Ana: I am tired. Tom: I am calm. Ana: I am excited. Tom: Great!",
+          "audio": "tts:en-GB:At school, I am a student. I am happy today. My friend is sad. The teacher is calm. A boy is tired. A girl is excited. I am here.",
           "audioLocale": "en-GB",
           "audioStatus": "synthetic_pending_review",
-          "transcriptTemplate": "At school, Ana talks to Tom. Tom: [[gap-01]], Ana. [[gap-02]] are you [[gap-03]]? Ana: [[gap-04]] am very [[gap-05]]. Tom: I am a [[gap-06]]. Ana: I am a [[gap-07]]. Tom: I am happy today. Ana: I am [[gap-08]]. Tom: I am [[gap-09]]. Ana: I am [[gap-10]]. Tom: Great!",
+          "transcriptTemplate": "At school, I am a [[gap-01]]. I am [[gap-02]] today. My [[gap-03]] is [[gap-04]]. The [[gap-05]] is [[gap-06]]. A [[gap-07]] is [[gap-08]]. A [[gap-09]] is [[gap-10]]. I am here.",
           "wordBank": [
             {
               "wordId": "english-pre-a1-m008-listening-word-01",
-              "word": "Hello"
+              "word": "student"
             },
             {
               "wordId": "english-pre-a1-m008-listening-word-02",
-              "word": "How"
-            },
-            {
-              "wordId": "english-pre-a1-m008-listening-word-03",
-              "word": "today"
-            },
-            {
-              "wordId": "english-pre-a1-m008-listening-word-04",
-              "word": "I"
-            },
-            {
-              "wordId": "english-pre-a1-m008-listening-word-05",
               "word": "happy"
             },
             {
-              "wordId": "english-pre-a1-m008-listening-word-06",
+              "wordId": "english-pre-a1-m008-listening-word-03",
+              "word": "friend"
+            },
+            {
+              "wordId": "english-pre-a1-m008-listening-word-04",
+              "word": "sad"
+            },
+            {
+              "wordId": "english-pre-a1-m008-listening-word-05",
               "word": "teacher"
             },
             {
+              "wordId": "english-pre-a1-m008-listening-word-06",
+              "word": "calm"
+            },
+            {
               "wordId": "english-pre-a1-m008-listening-word-07",
-              "word": "student"
+              "word": "boy"
             },
             {
               "wordId": "english-pre-a1-m008-listening-word-08",
@@ -1685,7 +1685,7 @@
             },
             {
               "wordId": "english-pre-a1-m008-listening-word-09",
-              "word": "calm"
+              "word": "girl"
             },
             {
               "wordId": "english-pre-a1-m008-listening-word-10",
@@ -1693,8 +1693,8 @@
             }
           ],
           "interaction": "select_place_move_replace",
-          "audioTranscript": "At school, Ana talks to Tom. Tom: Hello, Ana. How are you today? Ana: I am very happy. Tom: I am a teacher. Ana: I am a student. Tom: I am happy today. Ana: I am tired. Tom: I am calm. Ana: I am excited. Tom: Great!",
-          "translation": "En la escuela, Ana habla con Tom. Tom: Hola, Ana. ¿Cómo estás hoy? Ana: Estoy muy feliz. Tom: Soy profesor. Ana: Soy estudiante. Tom: Estoy feliz hoy. Ana: Estoy cansada. Tom: Estoy tranquilo. Ana: Estoy emocionada. Tom: ¡Genial!"
+          "audioTranscript": "At school, I am a student. I am happy today. My friend is sad. The teacher is calm. A boy is tired. A girl is excited. I am here.",
+          "translation": "En la escuela, soy estudiante. Hoy estoy feliz. Mi amigo está triste. El profesor está tranquilo. Un niño está cansado. Una niña está emocionada. Estoy aquí."
         },
         "items": [
           {
@@ -1702,49 +1702,49 @@
             "position": 1,
             "gapToken": "[[gap-01]]",
             "expectedWordId": "english-pre-a1-m008-listening-word-01",
-            "answer": "Hello"
+            "answer": "student"
           },
           {
             "itemId": "english-pre-a1-m008-listening-ex01-i02",
             "position": 2,
             "gapToken": "[[gap-02]]",
             "expectedWordId": "english-pre-a1-m008-listening-word-02",
-            "answer": "How"
+            "answer": "happy"
           },
           {
             "itemId": "english-pre-a1-m008-listening-ex01-i03",
             "position": 3,
             "gapToken": "[[gap-03]]",
             "expectedWordId": "english-pre-a1-m008-listening-word-03",
-            "answer": "today"
+            "answer": "friend"
           },
           {
             "itemId": "english-pre-a1-m008-listening-ex01-i04",
             "position": 4,
             "gapToken": "[[gap-04]]",
             "expectedWordId": "english-pre-a1-m008-listening-word-04",
-            "answer": "I"
+            "answer": "sad"
           },
           {
             "itemId": "english-pre-a1-m008-listening-ex01-i05",
             "position": 5,
             "gapToken": "[[gap-05]]",
             "expectedWordId": "english-pre-a1-m008-listening-word-05",
-            "answer": "happy"
+            "answer": "teacher"
           },
           {
             "itemId": "english-pre-a1-m008-listening-ex01-i06",
             "position": 6,
             "gapToken": "[[gap-06]]",
             "expectedWordId": "english-pre-a1-m008-listening-word-06",
-            "answer": "teacher"
+            "answer": "calm"
           },
           {
             "itemId": "english-pre-a1-m008-listening-ex01-i07",
             "position": 7,
             "gapToken": "[[gap-07]]",
             "expectedWordId": "english-pre-a1-m008-listening-word-07",
-            "answer": "student"
+            "answer": "boy"
           },
           {
             "itemId": "english-pre-a1-m008-listening-ex01-i08",
@@ -1758,7 +1758,7 @@
             "position": 9,
             "gapToken": "[[gap-09]]",
             "expectedWordId": "english-pre-a1-m008-listening-word-09",
-            "answer": "calm"
+            "answer": "girl"
           },
           {
             "itemId": "english-pre-a1-m008-listening-ex01-i10",

@@ -1637,26 +1637,26 @@
         "exerciseId": "english-pre-a1-m009-listening-ex01",
         "type": "listening_gap_fill",
         "content": {
-          "audio": "tts:en-GB:At school, Ana and Leo talk. Ana: Hello, Leo. I'm happy today. Leo: You're happy. Ana: I'm fine. Leo: You're great. Ana: I'm ready. Leo: You're nice. Ana: I'm a student. Leo: You're a teacher. Ana: Goodbye!",
+          "audio": "tts:en-GB:At school, Ana and Leo talk. Ana: Hello, Leo. I'm happy today. Leo: You're happy. Ana: I'm fine. Leo: You're great. Ana: I'm ready. Leo: You're nice. Ana: I'm a student. Leo: You're a teacher.",
           "audioLocale": "en-GB",
           "audioStatus": "synthetic_pending_review",
-          "transcriptTemplate": "At school, Ana and Leo talk. Ana: [[gap-01]], Leo. [[gap-02]] happy [[gap-03]]. Leo: [[gap-04]] happy. Ana: I'm [[gap-05]]. Leo: You're [[gap-06]]. Ana: I'm [[gap-07]]. Leo: You're [[gap-08]]. Ana: I'm a [[gap-09]]. Leo: You're a [[gap-10]]. Ana: Goodbye!",
+          "transcriptTemplate": "At school, Ana and Leo talk. Ana: Hello, Leo. [[gap-01]] happy [[gap-02]]. Leo: [[gap-03]] [[gap-04]]. Ana: I'm [[gap-05]]. Leo: You're [[gap-06]]. Ana: I'm [[gap-07]]. Leo: You're [[gap-08]]. Ana: I'm a [[gap-09]]. Leo: You're a [[gap-10]].",
           "wordBank": [
             {
               "wordId": "english-pre-a1-m009-listening-word-01",
-              "word": "Hello"
-            },
-            {
-              "wordId": "english-pre-a1-m009-listening-word-02",
               "word": "I'm"
             },
             {
-              "wordId": "english-pre-a1-m009-listening-word-03",
+              "wordId": "english-pre-a1-m009-listening-word-02",
               "word": "today"
             },
             {
-              "wordId": "english-pre-a1-m009-listening-word-04",
+              "wordId": "english-pre-a1-m009-listening-word-03",
               "word": "You're"
+            },
+            {
+              "wordId": "english-pre-a1-m009-listening-word-04",
+              "word": "happy"
             },
             {
               "wordId": "english-pre-a1-m009-listening-word-05",
@@ -1684,8 +1684,8 @@
             }
           ],
           "interaction": "select_place_move_replace",
-          "audioTranscript": "At school, Ana and Leo talk. Ana: Hello, Leo. I'm happy today. Leo: You're happy. Ana: I'm fine. Leo: You're great. Ana: I'm ready. Leo: You're nice. Ana: I'm a student. Leo: You're a teacher. Ana: Goodbye!",
-          "translation": "En la escuela, Ana y Leo hablan. Ana: Hola, Leo. Estoy feliz hoy. Leo: Estás feliz. Ana: Estoy bien. Leo: Eres genial. Ana: Estoy preparada. Leo: Eres agradable. Ana: Soy estudiante. Leo: Eres profesor. Ana: ¡Adiós!"
+          "audioTranscript": "At school, Ana and Leo talk. Ana: Hello, Leo. I'm happy today. Leo: You're happy. Ana: I'm fine. Leo: You're great. Ana: I'm ready. Leo: You're nice. Ana: I'm a student. Leo: You're a teacher.",
+          "translation": "En la escuela, Ana y Leo hablan. Ana: Hola, Leo. Estoy feliz hoy. Leo: Estás feliz. Ana: Estoy bien. Leo: Eres genial. Ana: Estoy preparada. Leo: Eres agradable. Ana: Soy estudiante. Leo: Eres profesor."
         },
         "items": [
           {
@@ -1693,28 +1693,28 @@
             "position": 1,
             "gapToken": "[[gap-01]]",
             "expectedWordId": "english-pre-a1-m009-listening-word-01",
-            "answer": "Hello"
+            "answer": "I'm"
           },
           {
             "itemId": "english-pre-a1-m009-listening-ex01-i02",
             "position": 2,
             "gapToken": "[[gap-02]]",
             "expectedWordId": "english-pre-a1-m009-listening-word-02",
-            "answer": "I'm"
+            "answer": "today"
           },
           {
             "itemId": "english-pre-a1-m009-listening-ex01-i03",
             "position": 3,
             "gapToken": "[[gap-03]]",
             "expectedWordId": "english-pre-a1-m009-listening-word-03",
-            "answer": "today"
+            "answer": "You're"
           },
           {
             "itemId": "english-pre-a1-m009-listening-ex01-i04",
             "position": 4,
             "gapToken": "[[gap-04]]",
             "expectedWordId": "english-pre-a1-m009-listening-word-04",
-            "answer": "You're"
+            "answer": "happy"
           },
           {
             "itemId": "english-pre-a1-m009-listening-ex01-i05",

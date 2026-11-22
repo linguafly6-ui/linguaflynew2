@@ -1713,42 +1713,42 @@
         "exerciseId": "english-pre-a1-m006-listening-ex01",
         "type": "listening_gap_fill",
         "content": {
-          "audio": "tts:en-GB:Tom and Ben meet at school. Tom: Hello! My name is Tom. Ben: Hi! My name is Ben. Tom: How do you spell your name? Ben: B-E-N. Tom: Thank you. Ben: You're welcome. Ben: How do you spell your name? Tom: T-O-M. Ben: Goodbye!",
+          "audio": "tts:en-GB:At school, Tom and Ben meet. Tom spells BEN: B, E, N. Ben spells TOM: T, O, M. Spell ANNA: A, N, N, A. Listen to the letter names and write the letters.",
           "audioLocale": "en-GB",
           "audioStatus": "synthetic_pending_review",
-          "transcriptTemplate": "Tom and Ben meet at school. Tom: [[gap-01]]! [[gap-02]] [[gap-03]] is [[gap-04]]. Ben: [[gap-05]]! My name is Ben. Tom: How do you [[gap-06]] your name? Ben: [[gap-07]]-[[gap-08]]-[[gap-09]]. Tom: Thank you. Ben: You're welcome. Ben: How do you spell your name? Tom: T-O-M. Ben: [[gap-10]]!",
+          "transcriptTemplate": "At school, Tom and Ben meet. Tom spells BEN: [[gap-01]], [[gap-02]], [[gap-03]]. Ben spells TOM: [[gap-04]], [[gap-05]], [[gap-06]]. Spell ANNA: [[gap-07]], [[gap-08]], [[gap-09]], [[gap-10]].",
           "wordBank": [
             {
               "wordId": "english-pre-a1-m006-listening-word-01",
-              "word": "Hello"
-            },
-            {
-              "wordId": "english-pre-a1-m006-listening-word-02",
-              "word": "My"
-            },
-            {
-              "wordId": "english-pre-a1-m006-listening-word-03",
-              "word": "name"
-            },
-            {
-              "wordId": "english-pre-a1-m006-listening-word-04",
-              "word": "Tom"
-            },
-            {
-              "wordId": "english-pre-a1-m006-listening-word-05",
-              "word": "Hi"
-            },
-            {
-              "wordId": "english-pre-a1-m006-listening-word-06",
-              "word": "spell"
-            },
-            {
-              "wordId": "english-pre-a1-m006-listening-word-07",
               "word": "B"
             },
             {
-              "wordId": "english-pre-a1-m006-listening-word-08",
+              "wordId": "english-pre-a1-m006-listening-word-02",
               "word": "E"
+            },
+            {
+              "wordId": "english-pre-a1-m006-listening-word-03",
+              "word": "N"
+            },
+            {
+              "wordId": "english-pre-a1-m006-listening-word-04",
+              "word": "T"
+            },
+            {
+              "wordId": "english-pre-a1-m006-listening-word-05",
+              "word": "O"
+            },
+            {
+              "wordId": "english-pre-a1-m006-listening-word-06",
+              "word": "M"
+            },
+            {
+              "wordId": "english-pre-a1-m006-listening-word-07",
+              "word": "A"
+            },
+            {
+              "wordId": "english-pre-a1-m006-listening-word-08",
+              "word": "N"
             },
             {
               "wordId": "english-pre-a1-m006-listening-word-09",
@@ -1756,12 +1756,12 @@
             },
             {
               "wordId": "english-pre-a1-m006-listening-word-10",
-              "word": "Goodbye"
+              "word": "A"
             }
           ],
           "interaction": "select_place_move_replace",
-          "audioTranscript": "Tom and Ben meet at school. Tom: Hello! My name is Tom. Ben: Hi! My name is Ben. Tom: How do you spell your name? Ben: B-E-N. Tom: Thank you. Ben: You're welcome. Ben: How do you spell your name? Tom: T-O-M. Ben: Goodbye!",
-          "translation": "Tom y Ben se encuentran en la escuela. Tom: ¡Hola! Me llamo Tom. Ben: ¡Hola! Me llamo Ben. Tom: ¿Cómo se deletrea tu nombre? Ben: B-E-N. Tom: Gracias. Ben: De nada. Ben: ¿Cómo se deletrea tu nombre? Tom: T-O-M. Ben: ¡Adiós!"
+          "audioTranscript": "At school, Tom and Ben meet. Tom spells BEN: B, E, N. Ben spells TOM: T, O, M. Spell ANNA: A, N, N, A. Listen to the letter names and write the letters.",
+          "translation": "En la escuela, Tom y Ben se encuentran. Tom deletrea BEN: B, E, N. Ben deletrea TOM: T, O, M. Deletrea ANNA: A, N, N, A. Escucha los nombres de las letras y escribe las letras."
         },
         "items": [
           {
@@ -1769,56 +1769,56 @@
             "position": 1,
             "gapToken": "[[gap-01]]",
             "expectedWordId": "english-pre-a1-m006-listening-word-01",
-            "answer": "Hello"
+            "answer": "B"
           },
           {
             "itemId": "english-pre-a1-m006-listening-ex01-i02",
             "position": 2,
             "gapToken": "[[gap-02]]",
             "expectedWordId": "english-pre-a1-m006-listening-word-02",
-            "answer": "My"
+            "answer": "E"
           },
           {
             "itemId": "english-pre-a1-m006-listening-ex01-i03",
             "position": 3,
             "gapToken": "[[gap-03]]",
             "expectedWordId": "english-pre-a1-m006-listening-word-03",
-            "answer": "name"
+            "answer": "N"
           },
           {
             "itemId": "english-pre-a1-m006-listening-ex01-i04",
             "position": 4,
             "gapToken": "[[gap-04]]",
             "expectedWordId": "english-pre-a1-m006-listening-word-04",
-            "answer": "Tom"
+            "answer": "T"
           },
           {
             "itemId": "english-pre-a1-m006-listening-ex01-i05",
             "position": 5,
             "gapToken": "[[gap-05]]",
             "expectedWordId": "english-pre-a1-m006-listening-word-05",
-            "answer": "Hi"
+            "answer": "O"
           },
           {
             "itemId": "english-pre-a1-m006-listening-ex01-i06",
             "position": 6,
             "gapToken": "[[gap-06]]",
             "expectedWordId": "english-pre-a1-m006-listening-word-06",
-            "answer": "spell"
+            "answer": "M"
           },
           {
             "itemId": "english-pre-a1-m006-listening-ex01-i07",
             "position": 7,
             "gapToken": "[[gap-07]]",
             "expectedWordId": "english-pre-a1-m006-listening-word-07",
-            "answer": "B"
+            "answer": "A"
           },
           {
             "itemId": "english-pre-a1-m006-listening-ex01-i08",
             "position": 8,
             "gapToken": "[[gap-08]]",
             "expectedWordId": "english-pre-a1-m006-listening-word-08",
-            "answer": "E"
+            "answer": "N"
           },
           {
             "itemId": "english-pre-a1-m006-listening-ex01-i09",
@@ -1832,7 +1832,7 @@
             "position": 10,
             "gapToken": "[[gap-10]]",
             "expectedWordId": "english-pre-a1-m006-listening-word-10",
-            "answer": "Goodbye"
+            "answer": "A"
           }
         ]
       }
