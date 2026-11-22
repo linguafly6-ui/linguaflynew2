@@ -1,11 +1,10 @@
 {
   "schemaVersion": "1.2.0",
-  "contentVersion": "2.0.0",
+  "contentVersion": 2,
   "course": {
     "courseId": "english-pre-a1",
-    "level": "Pre-A1",
-    "language": "en-GB",
-    "title": "Pre-A1 · Usuario principiante"
+    "level": "PRE-A1",
+    "language": "en-GB"
   },
   "unit": {
     "unitId": "english-pre-a1-unit-01",
@@ -17,8 +16,7 @@
     "missionId": "english-pre-a1-m002",
     "unitId": "english-pre-a1-unit-01",
     "position": 2,
-    "title": "My name is…",
-    "objective": "Preguntar el nombre y decir cómo nos llamamos con dos fórmulas completas."
+    "title": "My name is…"
   },
   "sections": [
     {
@@ -27,7 +25,7 @@
       "position": 1,
       "exercise": {
         "exerciseId": "english-pre-a1-m002-explore-ex01",
-        "type": "lesson",
+        "type": "vocabulary_pairs",
         "items": [
           {
             "itemId": "english-pre-a1-m002-explore-ex01-i01",
@@ -108,6 +106,15 @@
             "spanish": "Leo",
             "pronunciationGuide": "LÍ-ou",
             "audio": "tts:en-GB:Leo",
+            "audioStatus": "synthetic_pending_review"
+          },
+          {
+            "itemId": "english-pre-a1-m002-explore-ex01-i10",
+            "position": 10,
+            "english": "What's your name?",
+            "spanish": "¿Cómo te llamas?",
+            "pronunciationGuide": "uóts iór néim",
+            "audio": "tts:en-GB:What's your name?",
             "audioStatus": "synthetic_pending_review"
           }
         ],
@@ -194,40 +201,30 @@
               "english": "What's your name?",
               "spanish": "¿Cómo te llamas?",
               "pronunciationGuide": "uóts iór néim",
-              "audio": "tts:en-GB:What's your name?",
-              "audioStatus": "synthetic_pending_review",
               "note": "Expresión explicada en Explore."
             },
             {
               "english": "My name is Ana.",
               "spanish": "Me llamo Ana.",
               "pronunciationGuide": "mái néim iz Á-na",
-              "audio": "tts:en-GB:My name is Ana.",
-              "audioStatus": "synthetic_pending_review",
               "note": "Expresión explicada en Explore."
             },
             {
               "english": "My name is Leo.",
               "spanish": "Me llamo Leo.",
               "pronunciationGuide": "mái néim iz LÍ-ou",
-              "audio": "tts:en-GB:My name is Leo.",
-              "audioStatus": "synthetic_pending_review",
               "note": "Expresión explicada en Explore."
             },
             {
               "english": "Hello!",
               "spanish": "¡Hola!",
               "pronunciationGuide": "jelóu",
-              "audio": "tts:en-GB:Hello!",
-              "audioStatus": "synthetic_pending_review",
               "note": "Expresión explicada en Explore."
             },
             {
               "english": "See you!",
               "spanish": "¡Hasta luego!",
               "pronunciationGuide": "sí iu",
-              "audio": "tts:en-GB:See you!",
-              "audioStatus": "synthetic_pending_review",
               "note": "Expresión explicada en Explore."
             }
           ],

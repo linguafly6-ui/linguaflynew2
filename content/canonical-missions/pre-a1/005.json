@@ -1,11 +1,10 @@
 {
   "schemaVersion": "1.2.0",
-  "contentVersion": "2.0.0",
+  "contentVersion": 2,
   "course": {
     "courseId": "english-pre-a1",
-    "level": "Pre-A1",
-    "language": "en-GB",
-    "title": "Pre-A1 · Usuario principiante"
+    "level": "PRE-A1",
+    "language": "en-GB"
   },
   "unit": {
     "unitId": "english-pre-a1-unit-01",
@@ -17,8 +16,7 @@
     "missionId": "english-pre-a1-m005",
     "unitId": "english-pre-a1-unit-01",
     "position": 5,
-    "title": "Yes or no",
-    "objective": "Comprender respuestas afirmativas, negativas y expresiones sencillas de confirmación."
+    "title": "Yes or no"
   },
   "sections": [
     {
@@ -27,7 +25,7 @@
       "position": 1,
       "exercise": {
         "exerciseId": "english-pre-a1-m005-explore-ex01",
-        "type": "lesson",
+        "type": "vocabulary_pairs",
         "items": [
           {
             "itemId": "english-pre-a1-m005-explore-ex01-i01",
@@ -248,80 +246,60 @@
               "english": "Yes.",
               "spanish": "Sí.",
               "pronunciationGuide": "iés",
-              "audio": "tts:en-GB:Yes.",
-              "audioStatus": "synthetic_pending_review",
               "note": "Expresión explicada en Explore."
             },
             {
               "english": "No.",
               "spanish": "No.",
               "pronunciationGuide": "nóu",
-              "audio": "tts:en-GB:No.",
-              "audioStatus": "synthetic_pending_review",
               "note": "Expresión explicada en Explore."
             },
             {
               "english": "Maybe.",
               "spanish": "Quizá.",
               "pronunciationGuide": "MÉI-bi",
-              "audio": "tts:en-GB:Maybe.",
-              "audioStatus": "synthetic_pending_review",
               "note": "Expresión explicada en Explore."
             },
             {
               "english": "OK.",
               "spanish": "Vale.",
               "pronunciationGuide": "ou-KÉI",
-              "audio": "tts:en-GB:OK.",
-              "audioStatus": "synthetic_pending_review",
               "note": "Expresión explicada en Explore."
             },
             {
               "english": "Yes, please.",
               "spanish": "Sí, por favor.",
               "pronunciationGuide": "iés plíis",
-              "audio": "tts:en-GB:Yes, please.",
-              "audioStatus": "synthetic_pending_review",
               "note": "Expresión explicada en Explore."
             },
             {
               "english": "No, thank you.",
               "spanish": "No, gracias.",
               "pronunciationGuide": "nóu zánk iu*",
-              "audio": "tts:en-GB:No, thank you.",
-              "audioStatus": "synthetic_pending_review",
               "note": "Expresión explicada en Explore."
             },
             {
               "english": "Right.",
               "spanish": "Correcto.",
               "pronunciationGuide": "ráit",
-              "audio": "tts:en-GB:Right.",
-              "audioStatus": "synthetic_pending_review",
               "note": "Expresión explicada en Explore."
             },
             {
               "english": "Wrong.",
               "spanish": "Incorrecto.",
               "pronunciationGuide": "róng",
-              "audio": "tts:en-GB:Wrong.",
-              "audioStatus": "synthetic_pending_review",
               "note": "Expresión explicada en Explore."
             },
             {
               "english": "Again, please.",
               "spanish": "Otra vez, por favor.",
               "pronunciationGuide": "a-GUÉN plíis",
-              "audio": "tts:en-GB:Again, please.",
-              "audioStatus": "synthetic_pending_review",
               "note": "Expresión explicada en Explore."
             },
             {
               "english": "Repeat, please.",
               "spanish": "Repite, por favor.",
               "pronunciationGuide": "ri-PÍT plíis",
-              "audio": "tts:en-GB:Repeat, please.",
-              "audioStatus": "synthetic_pending_review",
               "note": "Expresión explicada en Explore."
             }
           ],

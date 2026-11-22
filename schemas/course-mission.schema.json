@@ -225,7 +225,7 @@
                 "items": {
                   "type": "array",
                   "minItems": 10,
-                  "maxItems": 10,
+                  "maxItems": 50,
                   "items": {
                     "allOf": [
                       {
@@ -333,6 +333,9 @@
                           },
                           "promptSpanish": {
                             "$ref": "#/$defs/nonEmpty"
+                          },
+                          "pronunciationGuide": {
+                            "type": "string"
                           }
                         },
                         "additionalProperties": false

@@ -1,11 +1,10 @@
 {
   "schemaVersion": "1.2.0",
-  "contentVersion": "2.0.0",
+  "contentVersion": 2,
   "course": {
     "courseId": "english-pre-a1",
-    "level": "Pre-A1",
-    "language": "en-GB",
-    "title": "Pre-A1 · Usuario principiante"
+    "level": "PRE-A1",
+    "language": "en-GB"
   },
   "unit": {
     "unitId": "english-pre-a1-unit-01",
@@ -17,8 +16,7 @@
     "missionId": "english-pre-a1-m007",
     "unitId": "english-pre-a1-unit-01",
     "position": 7,
-    "title": "My first sounds",
-    "objective": "Distinguir H, TH, SH, CH y pares de vocales."
+    "title": "My first sounds"
   },
   "sections": [
     {
@@ -27,7 +25,7 @@
       "position": 1,
       "exercise": {
         "exerciseId": "english-pre-a1-m007-explore-ex01",
-        "type": "lesson",
+        "type": "vocabulary_pairs",
         "items": [
           {
             "itemId": "english-pre-a1-m007-explore-ex01-i01",
@@ -275,80 +273,60 @@
               "english": "H: hello, hat, house, hand",
               "spanish": "H: hello, hat, house, hand",
               "pronunciationGuide": "H suave; no jota fuerte",
-              "audio": "tts:en-GB:H: hello, hat, house, hand",
-              "audioStatus": "synthetic_pending_review",
               "note": "Expresión explicada en Explore."
             },
             {
               "english": "TH sorda: thin, three, thank",
               "spanish": "TH sorda: thin, three, thank",
               "pronunciationGuide": "lengua entre dientes, sin vibración",
-              "audio": "tts:en-GB:TH sorda: thin, three, thank",
-              "audioStatus": "synthetic_pending_review",
               "note": "Expresión explicada en Explore."
             },
             {
               "english": "TH sonora: this, that",
               "spanish": "TH sonora: this, that",
               "pronunciationGuide": "lengua entre dientes, con vibración",
-              "audio": "tts:en-GB:TH sonora: this, that",
-              "audioStatus": "synthetic_pending_review",
               "note": "Expresión explicada en Explore."
             },
             {
               "english": "SH: ship, shop, fish",
               "spanish": "SH: ship, she, fish",
               "pronunciationGuide": "sh: ship, shí, fish",
-              "audio": "tts:en-GB:SH: ship, she, fish",
-              "audioStatus": "synthetic_pending_review",
               "note": "Expresión explicada en Explore."
             },
             {
               "english": "CH: chair, cheese, teacher",
               "spanish": "CH: chair, cheese, teacher",
               "pronunciationGuide": "ch: chéa, chíis, TÍ-cha",
-              "audio": "tts:en-GB:CH: chair, cheese, teacher",
-              "audioStatus": "synthetic_pending_review",
               "note": "Expresión explicada en Explore."
             },
             {
               "english": "ship / sheep",
               "spanish": "barco / oveja",
               "pronunciationGuide": "ship / shíip",
-              "audio": "tts:en-GB:ship / sheep",
-              "audioStatus": "synthetic_pending_review",
               "note": "Expresión explicada en Explore."
             },
             {
               "english": "sit / seat",
               "spanish": "sentarse / asiento",
               "pronunciationGuide": "sit / síit",
-              "audio": "tts:en-GB:sit / seat",
-              "audioStatus": "synthetic_pending_review",
               "note": "Expresión explicada en Explore."
             },
             {
               "english": "thin / this",
               "spanish": "delgado / esto",
               "pronunciationGuide": "zín* / dis*",
-              "audio": "tts:en-GB:thin / this",
-              "audioStatus": "synthetic_pending_review",
               "note": "Expresión explicada en Explore."
             },
             {
               "english": "hat / hand",
               "spanish": "sombrero / mano",
               "pronunciationGuide": "jat* / jand*",
-              "audio": "tts:en-GB:hat / hand",
-              "audioStatus": "synthetic_pending_review",
               "note": "Expresión explicada en Explore."
             },
             {
               "english": "shop / ship",
               "spanish": "tienda / barco",
               "pronunciationGuide": "shop / ship",
-              "audio": "tts:en-GB:shop / ship",
-              "audioStatus": "synthetic_pending_review",
               "note": "Expresión explicada en Explore."
             }
           ],
