@@ -1595,7 +1595,7 @@
           "audio": "tts:en-GB:Ben needs help at the door. Ben: Excuse me. Ana: Yes? Ben: Help, please. Ana: Here. Ben: Thank you. Ana: You're welcome. Ben: Sorry. Ana: It's OK. Ben: Goodbye!",
           "audioLocale": "en-GB",
           "audioStatus": "synthetic_pending_review",
-          "transcriptTemplate": "Ben needs help at the door. Ben: [[gap-01]] [[gap-02]]. Ana: [[gap-03]]? Ben: [[gap-04]], [[gap-05]]. Ana: [[gap-06]]. Ben: [[gap-07]] [[gap-08]]. Ana: You're welcome. Ben: [[gap-09]]. Ana: It's OK. Ben: [[gap-10]]!",
+          "transcriptTemplate": "Ben needs help at the door. Ben: [[gap-01]] [[gap-02]]. Ana: [[gap-03]]? Ben: [[gap-04]], [[gap-05]]. Ana: [[gap-06]]. Ben: [[gap-07]] [[gap-08]]. Ana: You're [[gap-09]]. Ben: [[gap-10]]. Ana: It's OK. Ben: Goodbye!",
           "wordBank": [
             {
               "wordId": "english-pre-a1-m004-listening-word-01",
@@ -1631,11 +1631,11 @@
             },
             {
               "wordId": "english-pre-a1-m004-listening-word-09",
-              "word": "Sorry"
+              "word": "welcome"
             },
             {
               "wordId": "english-pre-a1-m004-listening-word-10",
-              "word": "Goodbye"
+              "word": "Sorry"
             }
           ],
           "interaction": "select_place_move_replace",
@@ -1704,14 +1704,14 @@
             "position": 9,
             "gapToken": "[[gap-09]]",
             "expectedWordId": "english-pre-a1-m004-listening-word-09",
-            "answer": "Sorry"
+            "answer": "welcome"
           },
           {
             "itemId": "english-pre-a1-m004-listening-ex01-i10",
             "position": 10,
             "gapToken": "[[gap-10]]",
             "expectedWordId": "english-pre-a1-m004-listening-word-10",
-            "answer": "Goodbye"
+            "answer": "Sorry"
           }
         ]
       }

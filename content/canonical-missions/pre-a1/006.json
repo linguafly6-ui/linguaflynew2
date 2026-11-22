@@ -1716,7 +1716,7 @@
           "audio": "tts:en-GB:Tom and Ben meet at school. Tom: Hello! My name is Tom. Ben: Hi! My name is Ben. Tom: How do you spell your name? Ben: B-E-N. Tom: Thank you. Ben: You're welcome. Ben: How do you spell your name? Tom: T-O-M. Ben: Goodbye!",
           "audioLocale": "en-GB",
           "audioStatus": "synthetic_pending_review",
-          "transcriptTemplate": "Tom and Ben meet at school. Tom: [[gap-01]]! [[gap-02]] [[gap-03]] is [[gap-04]]. Ben: [[gap-05]]! My name is Ben. Tom: How do you [[gap-06]] your name? Ben: [[gap-07]]. Tom: [[gap-08]] you. Ben: You're [[gap-09]]. Ben: How do you spell your name? Tom: T-O-M. Ben: [[gap-10]]!",
+          "transcriptTemplate": "Tom and Ben meet at school. Tom: [[gap-01]]! [[gap-02]] [[gap-03]] is [[gap-04]]. Ben: [[gap-05]]! My name is Ben. Tom: How do you [[gap-06]] your name? Ben: [[gap-07]]-[[gap-08]]-[[gap-09]]. Tom: Thank you. Ben: You're welcome. Ben: How do you spell your name? Tom: T-O-M. Ben: [[gap-10]]!",
           "wordBank": [
             {
               "wordId": "english-pre-a1-m006-listening-word-01",
@@ -1744,15 +1744,15 @@
             },
             {
               "wordId": "english-pre-a1-m006-listening-word-07",
-              "word": "B-E-N"
+              "word": "B"
             },
             {
               "wordId": "english-pre-a1-m006-listening-word-08",
-              "word": "Thank"
+              "word": "E"
             },
             {
               "wordId": "english-pre-a1-m006-listening-word-09",
-              "word": "welcome"
+              "word": "N"
             },
             {
               "wordId": "english-pre-a1-m006-listening-word-10",
@@ -1811,21 +1811,21 @@
             "position": 7,
             "gapToken": "[[gap-07]]",
             "expectedWordId": "english-pre-a1-m006-listening-word-07",
-            "answer": "B-E-N"
+            "answer": "B"
           },
           {
             "itemId": "english-pre-a1-m006-listening-ex01-i08",
             "position": 8,
             "gapToken": "[[gap-08]]",
             "expectedWordId": "english-pre-a1-m006-listening-word-08",
-            "answer": "Thank"
+            "answer": "E"
           },
           {
             "itemId": "english-pre-a1-m006-listening-ex01-i09",
             "position": 9,
             "gapToken": "[[gap-09]]",
             "expectedWordId": "english-pre-a1-m006-listening-word-09",
-            "answer": "welcome"
+            "answer": "N"
           },
           {
             "itemId": "english-pre-a1-m006-listening-ex01-i10",

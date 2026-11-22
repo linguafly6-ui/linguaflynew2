@@ -1694,7 +1694,7 @@
           "audio": "tts:en-GB:At the door, Ana meets Alex and Ben. Ana: Hello! This is my friend, Alex. Alex: Nice to meet you. Ana: Nice to meet you too. Ben: Pleased to meet you. Ana: This is Ben. Ben: You're my friend. Alex: What's your name? Ben: My name is Ben. Alex: Goodbye!",
           "audioLocale": "en-GB",
           "audioStatus": "synthetic_pending_review",
-          "transcriptTemplate": "At the door, Ana meets Alex and Ben. Ana: [[gap-01]]! [[gap-02]] is [[gap-03]] [[gap-04]], [[gap-05]]. Alex: [[gap-06]]. Ana: Nice to meet you [[gap-07]]. Ben: [[gap-08]]. Ana: This is Ben. Ben: You're my friend. Alex: What's your [[gap-09]]? Ben: My name is Ben. Alex: [[gap-10]]!",
+          "transcriptTemplate": "At the door, Ana meets Alex and Ben. Ana: [[gap-01]]! [[gap-02]] is [[gap-03]] [[gap-04]], [[gap-05]]. Alex: [[gap-06]] to meet you. Ana: Nice to meet you [[gap-07]]. Ben: [[gap-08]] to meet you. Ana: This is Ben. Ben: You're my friend. Alex: What's your [[gap-09]]? Ben: My name is Ben. Alex: [[gap-10]]!",
           "wordBank": [
             {
               "wordId": "english-pre-a1-m010-listening-word-01",
@@ -1718,7 +1718,7 @@
             },
             {
               "wordId": "english-pre-a1-m010-listening-word-06",
-              "word": "Nice to meet you"
+              "word": "Nice"
             },
             {
               "wordId": "english-pre-a1-m010-listening-word-07",
@@ -1726,7 +1726,7 @@
             },
             {
               "wordId": "english-pre-a1-m010-listening-word-08",
-              "word": "Pleased to meet you"
+              "word": "Pleased"
             },
             {
               "wordId": "english-pre-a1-m010-listening-word-09",
@@ -1782,7 +1782,7 @@
             "position": 6,
             "gapToken": "[[gap-06]]",
             "expectedWordId": "english-pre-a1-m010-listening-word-06",
-            "answer": "Nice to meet you"
+            "answer": "Nice"
           },
           {
             "itemId": "english-pre-a1-m010-listening-ex01-i07",
@@ -1796,7 +1796,7 @@
             "position": 8,
             "gapToken": "[[gap-08]]",
             "expectedWordId": "english-pre-a1-m010-listening-word-08",
-            "answer": "Pleased to meet you"
+            "answer": "Pleased"
           },
           {
             "itemId": "english-pre-a1-m010-listening-ex01-i09",
