@@ -2913,6 +2913,8 @@ export default function CanonicalMission({ missionData = missionSource as Missio
   }, [exploreTranslations]);
   const [hoveredWord, setHoveredWord] = useState<string | null>(null);
   const translatedWordsRenderId = useRef(0);
+  // Reinicia el contador en cada render para que los IDs sean estables entre renders.
+  translatedWordsRenderId.current = 0;
   const renderTranslatedWords = (text?: string) => {
     if (!text) return text;
     const renderId = ++translatedWordsRenderId.current;
