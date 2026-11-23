@@ -647,7 +647,7 @@ export default function CanonicalMission({ missionData = missionSource as Missio
             <div className="grid gap-3 sm:grid-cols-2">
               {(section.exercise.theory?.patterns ?? []).filter(Boolean).map((pattern, i) => <article key={typeof pattern === "string" ? pattern : pattern.label ?? pattern.pattern ?? i} className="rounded-xl border border-[#e8ebf0] bg-[#fbfcfe] p-4">
                 {typeof pattern !== "string" && pattern.label && <p className="text-xs font-bold uppercase tracking-wide text-[#55779d]">{pattern.label}{getExampleTranslation(pattern.label) && <span className="mt-1 block text-[11px] font-medium normal-case tracking-normal text-[#64816f]">{getExampleTranslation(pattern.label)}</span>}</p>}
-                <p className="mt-2 font-semibold text-[#26364b]">{typeof pattern === "string" ? pattern : pattern.pattern}</p>{typeof pattern !== "string" && (pattern.translation ?? getExampleTranslation(pattern.pattern)) && <p className="mt-1 text-sm text-[#47745b]">{pattern.translation ?? getExampleTranslation(pattern.pattern)}</p>
+                <p className="mt-2 font-semibold text-[#26364b]">{typeof pattern === "string" ? pattern : pattern.pattern}</p>{typeof pattern !== "string" && (pattern.translation ?? getExampleTranslation(pattern.pattern)) && <p className="mt-1 text-sm text-[#47745b]">{pattern.translation ?? getExampleTranslation(pattern.pattern)}</p>}
                 {typeof pattern !== "string" && pattern.examples?.length ? <ul className="mt-3 space-y-2">{pattern.examples.map((example, exampleIndex) => {
                   const inlineTranslation = example.match(/^(.+?)\\s+[—–]\\s+(.+)$/);
                   const displayedExample = inlineTranslation?.[1] ?? example;
