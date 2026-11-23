@@ -1800,7 +1800,7 @@ function getSpanishPronunciationGuide(word: string) {
         .replace(/u/g, "a").replace(/y/g, "i");
       return value.replace(/e$/, "e");
     };
-    return word.split(/(\\s+|-)/).map((part) => /^\\s+$/.test(part) || part === "-" ? part : approximateWord(part)).join("");
+    return word.split(/(\s+|-)/).map((part) => /^\s+$/.test(part) || part === "-" ? part : approximateWord(part)).join("");
   }
 
   // Convert British IPA into an accessible Spanish-friendly reading aid.
