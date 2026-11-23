@@ -1,3 +1,24 @@
 import Link from "next/link";
-export const metadata={title:"Friends and Social Groups · Misión 004 · Linguafly A2",description:"Amistades y grupos sociales. Describe tus amistades y explica cómo te relacionas con otras personas. Practica present simple, like/enjoy + -ing y adverbios de frecuencia."};
-export default function MissionPage(){return <main className="mx-auto min-h-[70vh] max-w-5xl px-5 py-10"><Link href="/academia/a2" className="text-sm font-semibold text-blue-700">← Misiones A2</Link><p className="mt-6 text-sm font-extrabold uppercase tracking-widest text-indigo-700">Linguafly Quest · A2 · Misión 004</p><h1 className="mt-2 text-4xl font-black text-slate-950">Friends and Social Groups</h1><p className="mt-3 text-slate-600">Amistades y grupos sociales</p><p className="mt-2 text-sm text-slate-500">Present simple; be; like / enjoy + -ing; adverbios de frecuencia; preguntas con do/does.</p><iframe title="Misión 004 · Friends and Social Groups" src="/missions/a2/004/index-v2.html?rev=20261119-a2-001-010" className="mt-6 h-[1100px] w-full rounded-2xl border border-slate-200 bg-white"/></main>}
+import CanonicalMission, { type Mission } from "@/components/academy/CanonicalMission";
+import mission from "@/content/canonical-missions/a2/004.json";
+
+export const metadata = {
+  title: "Friends and Free-time Activities · Misión 004 · Linguafly A2",
+  description: "Habla de tus aficiones, expresa preferencias e invita a otras personas a hacer planes.",
+  robots: { index: false, follow: false },
+};
+
+export default function MissionPage() {
+  return (
+    <main className="min-h-screen bg-slate-50 px-4 py-7 sm:px-6">
+      <div className="mx-auto max-w-5xl">
+        <Link href="/academia/a2" className="inline-flex items-center gap-2 text-sm font-medium text-slate-500 transition hover:text-blue-700">
+          <span aria-hidden="true">←</span> Volver a las misiones A2
+        </Link>
+        <div className="mt-5">
+          <CanonicalMission missionData={mission as Mission} />
+        </div>
+      </div>
+    </main>
+  );
+}

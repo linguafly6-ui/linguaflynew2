@@ -1,75 +1,34 @@
-﻿import { NextRequest, NextResponse } from "next/server";
+import { NextRequest, NextResponse } from "next/server";
 import { getEnv } from "@/lib/cf-context";
-import {
-  processReview,
-  generateAdaptiveContent,
-  type ReviewResult,
-} from "@/lib/spaced-repetition";
+import { getStudent, studentUserId } from "@/lib/student-auth";
+import { processReview, generateAdaptiveContent, type ReviewResult } from "@/lib/spaced-repetition";
 
-
-/**
- * POST /api/repetition/review
- * Registra el resultado de una revisiÃ³n y genera contenido adaptativo si fallÃ³.
- *
- * Body JSON: {
- *   itemId: string,
- *   userId: string,
- *   rating: number (0-5),
- *   wasCorrect: boolean,
- *   word: string,
- *   translation: string,
- *   language: string,
- *   userLevel: string
- * }
- */
 export async function POST(request: NextRequest) {
   try {
-    const env = getEnv();
-    const body = await request.json() as any;
+    const student = await getStudent(request);
+    if (!student) return NextResponse.json({ error: "Inicia sesión para registrar tus repasos." }, { status: 401 });
+    const db = getEnv().DB;
+    if (!db) return NextResponse.json({ error: "Servicio de repetición no disponible." }, { status: 503 });
 
-    const {
-      itemId,
-      userId,
-      rating,
-      wasCorrect,
-      word,
-      translation,
-      language,
-      userLevel,
-    } = body;
-
-    if (!itemId || rating === undefined || wasCorrect === undefined) {
-      return NextResponse.json({ error: "Faltan parÃ¡metros" }, { status: 400 });
-    }
-
-    // Si el usuario fallÃ³, generar un nuevo ejemplo con IA
-    let aiContent: string | null = null;
-    if (!wasCorrect) {
-      aiContent = await generateAdaptiveContent(
-        word,
-        translation,
-        language || "en",
-        userLevel || "A1"
-      );
-    }
-
-    // Procesar la revisiÃ³n (SM-2 + guardar en D1)
-    const result: ReviewResult = {
-      item_id: itemId,
-      rating,
-      was_correct: wasCorrect,
-      ai_generated_content: aiContent,
+    const body = await request.json() as {
+      itemId?: string; rating?: number; wasCorrect?: boolean; word?: string;
+      translation?: string; language?: string; userLevel?: string;
     };
-
-    await processReview(env.DB, result);
-
-    return NextResponse.json({
-      success: true,
-      nextReviewScheduled: true,
-      adaptiveContent: aiContent,
-    });
+    const { itemId, rating, wasCorrect } = body;
+    if (!itemId || itemId.length > 128 || !Number.isInteger(rating) || rating! < 0 || rating! > 5 || typeof wasCorrect !== "boolean") {
+      return NextResponse.json({ error: "Los datos de la revisión no son válidos." }, { status: 400 });
+    }
+    let aiContent: string | null = null;
+    if (!wasCorrect && body.word && body.translation) {
+      aiContent = await generateAdaptiveContent(body.word.slice(0, 160), body.translation.slice(0, 240),
+        (body.language || "en").slice(0, 12), (body.userLevel || "A1").slice(0, 12));
+    }
+    const result: ReviewResult = { item_id: itemId, rating: rating!, was_correct: wasCorrect, ai_generated_content: aiContent };
+    await processReview(db, result, studentUserId(student));
+    return NextResponse.json({ success: true, nextReviewScheduled: true, adaptiveContent: aiContent });
   } catch (error) {
+    if (error instanceof Error && error.message === "Item no encontrado") return NextResponse.json({ error: "Repaso no encontrado." }, { status: 404 });
     console.error("SR review error:", error);
-    return NextResponse.json({ error: "Error al procesar revisiÃ³n" }, { status: 500 });
+    return NextResponse.json({ error: "Error al procesar la revisión." }, { status: 500 });
   }
 }
