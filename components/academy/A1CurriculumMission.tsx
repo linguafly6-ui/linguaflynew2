@@ -2,7 +2,7 @@
 
 import Link from "next/link";
 import { useEffect, useState } from "react";
-import type { A1CurriculumMission as Mission, ChoiceQuestion } from "@/content/canonical-missions/a1/071-100";
+import type { A1CurriculumMission as Mission, ChoiceQuestion } from "@/content/canonical-missions/a1/a1-curriculum-types";
 
 const sections = [
   { id: "grammar", label: "Grammar" },
@@ -157,13 +157,13 @@ export default function A1CurriculumMission({ mission }: { mission: Mission }) {
             <h2 className="text-2xl font-black text-slate-950">Pronunciation</h2>
             <p className="mt-2 leading-7 text-slate-600">Escucha cada modelo en inglés británico y repítelo tres veces. La guía es aproximada para hispanohablantes; no es una transcripción fonética exacta.</p>
             <div className="mt-5 grid gap-3 sm:grid-cols-2">
-              {mission.pronunciation.map((item) => (
-                <article key={item.text} className="rounded-2xl border border-slate-200 p-4">
-                  <p className="text-lg font-bold text-slate-900">{item.text}</p>
-                  <p className="mt-1 text-sm text-slate-600">{item.translation}</p>
-                  <p className="mt-3 text-sm text-indigo-900"><strong>Prueba:</strong> {item.activity}</p>
-                  <p className="mt-2 text-sm text-slate-600"><strong>Guía:</strong> {item.guide}</p>
-                  <button type="button" onClick={() => playAudio(item.text)} className="mt-3 rounded-xl border border-indigo-200 bg-indigo-50 px-3 py-2 text-sm font-semibold text-indigo-800">
+              {mission.pronunciation.map(([text, translation, activity, guide]) => (
+                <article key={text} className="rounded-2xl border border-slate-200 p-4">
+                  <p className="text-lg font-bold text-slate-900">{text}</p>
+                  <p className="mt-1 text-sm text-slate-600">{translation}</p>
+                  <p className="mt-3 text-sm text-indigo-900"><strong>Prueba:</strong> {activity}</p>
+                  <p className="mt-2 text-sm text-slate-600"><strong>Guía:</strong> {guide}</p>
+                  <button type="button" onClick={() => playAudio(text)} className="mt-3 rounded-xl border border-indigo-200 bg-indigo-50 px-3 py-2 text-sm font-semibold text-indigo-800">
                     Escuchar modelo ×3
                   </button>
                 </article>
