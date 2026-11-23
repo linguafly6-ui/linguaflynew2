@@ -145,7 +145,7 @@ export default function A1CurriculumMission({ mission }: { mission: Mission }) {
             <h2 className="text-2xl font-black text-slate-950">Grammar</h2>
             <p className="mt-3 leading-7 text-slate-700">{mission.grammar.explanation}</p>
             <div className="mt-4 grid gap-2 rounded-2xl bg-slate-50 p-4 text-sm text-slate-800">
-              {mission.grammar.models.map((model) => <p key={model}><span className="font-semibold">{model.english}</span><span className="text-slate-500"> — {model.spanish}</span></p>)}
+              {mission.grammar.models.map((model) => <p key={`${model.english}-${model.spanish}`}><span className="font-semibold">{model.english}</span><span className="text-slate-500"> — {model.spanish}</span></p>)}
             </div>
             <p className="mt-4 text-sm font-semibold text-indigo-800">{mission.grammar.practice}</p>
             <QuestionSet key="grammar" questions={mission.grammar.questions} />
