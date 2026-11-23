@@ -277,6 +277,90 @@ const PRE_A1_EXAMPLE_TRANSLATIONS: Record<string, string> = {
   "Say the English sentence aloud.": "Di la frase en inglés en voz alta."
 };
 
+const C1_EXPLORATION_TRANSLATIONS: Record<string, string> = {
+  "Not until the move was complete did she realise how much had changed.": "No fue hasta que terminó la mudanza cuando se dio cuenta de cuánto había cambiado todo.",
+  "If he had sought support earlier, he might feel more settled now.": "Si hubiera buscado apoyo antes, quizá ahora se sentiría más adaptado.",
+  "What matters most is the ability to reassess priorities.": "Lo que más importa es la capacidad de reconsiderar las prioridades.",
+  "Although the transition was difficult, it created new opportunities.": "Aunque la transición fue difícil, creó nuevas oportunidades.",
+  "Having considered the alternatives, they reached a measured decision.": "Tras considerar las alternativas, llegaron a una decisión ponderada.",
+  "The evidence appears to suggest a gradual change in perspective.": "Las pruebas parecen indicar un cambio gradual de perspectiva.",
+  "Rarely do personal changes follow a predictable sequence.": "Rara vez los cambios personales siguen una secuencia predecible.",
+  "Were further support available, the adjustment might be easier.": "Si se dispusiera de más apoyo, la adaptación podría ser más fácil.",
+  "She acknowledged that the outcome could have been different.": "Reconoció que el resultado podría haber sido diferente.",
+  "The account is persuasive, albeit not entirely conclusive.": "El relato resulta convincente, aunque no es del todo concluyente.",
+  "Had the committee disclosed the assumptions earlier, the debate might have been more focused.": "Si el comité hubiera revelado antes los supuestos, el debate podría haber estado más centrado.",
+  "Not only does the proposal address immediate concerns, but it also anticipates longer-term risks.": "La propuesta no solo aborda las preocupaciones inmediatas, sino que también anticipa riesgos a más largo plazo.",
+  "Although the evidence is persuasive, its implications should be interpreted with caution.": "Aunque las pruebas son convincentes, sus implicaciones deben interpretarse con cautela.",
+  "Were the data independently verified, the recommendation would carry greater weight.": "Si los datos se verificaran de forma independiente, la recomendación tendría más peso.",
+  "What remains unclear is whether the observed change can be attributed to the intervention.": "Lo que sigue sin estar claro es si el cambio observado puede atribuirse a la intervención.",
+  "Having reviewed the alternatives, the panel reached a conditional agreement.": "Tras revisar las alternativas, el comité alcanzó un acuerdo condicionado.",
+  "Rarely has the issue been examined from the perspective of those most affected.": "Rara vez se ha examinado la cuestión desde la perspectiva de quienes se ven más afectados.",
+  "The findings, which were drawn from a limited sample, should not be generalised without qualification.": "Los resultados, obtenidos a partir de una muestra limitada, no deben generalizarse sin matices.",
+  "Much as the approach is promising, its implementation depends on adequate oversight.": "Por prometedor que sea el enfoque, su aplicación depende de una supervisión adecuada.",
+  "The report is concise, albeit more qualified than the initial proposal.": "El informe es conciso, aunque incluye más matices que la propuesta inicial.",
+  "By the time we moved, I had already made up my mind.": "Para cuando nos mudamos, ya me había decidido.",
+  "I had been questioning my assumptions for months.": "Llevaba meses cuestionando mis suposiciones.",
+  "I realised that I had misremembered the conversation.": "Me di cuenta de que recordaba mal la conversación.",
+  "I was trying to fit in when the incident happened.": "Estaba intentando encajar cuando ocurrió el incidente.",
+  "It was the move that changed my perspective.": "Fue la mudanza lo que cambió mi perspectiva.",
+  "Rarely do we question the stories we tell ourselves.": "Rara vez cuestionamos las historias que nos contamos a nosotros mismos.",
+  "The experience may have influenced my outlook.": "Puede que la experiencia haya influido en mi manera de ver las cosas.",
+  "Having reconsidered the event, I saw it differently.": "Tras reconsiderar lo ocurrido, lo vi de otra manera.",
+  "I remember questioning the decision.": "Recuerdo haber cuestionado la decisión.",
+  "Admittedly, memory is selective; that does not make it meaningless.": "Es cierto que la memoria es selectiva; eso no significa que carezca de sentido.",
+  "By the time the interview began, the witness had already spoken to a colleague.": "Para cuando empezó la entrevista, el testigo ya había hablado con un compañero.",
+  "She had been trying to retrieve the detail for several minutes.": "Llevaba varios minutos intentando recuperar ese detalle.",
+  "The witness may have confused the two dates.": "Puede que el testigo haya confundido las dos fechas.",
+  "He said that he had seen the vehicle near the station.": "Dijo que había visto el vehículo cerca de la estación.",
+  "She recalled noticing a distinctive sound.": "Recordó haber percibido un sonido distintivo.",
+  "At no point did he claim to remember every detail.": "En ningún momento afirmó recordar todos los detalles.",
+  "What remains uncertain is the source of that image.": "Lo que sigue siendo incierto es el origen de esa imagen.",
+  "Having checked the diary, she revised her account.": "Tras consultar el diario, revisó su relato.",
+  "The note, which had been written years earlier, contradicted the claim.": "La nota, que se había escrito años antes, contradecía la afirmación.",
+  "The available records would appear to support that interpretation.": "Los registros disponibles parecen respaldar esa interpretación.",
+  "She may well have underestimated the time required.": "Es muy posible que haya subestimado el tiempo necesario.",
+  "If he had planned ahead, he would be less stressed now.": "Si hubiera planificado con antelación, ahora estaría menos estresado.",
+  "Only then did she recognise the pattern.": "Solo entonces reconoció el patrón.",
+  "What drives her is a sense of purpose.": "Lo que la motiva es tener un propósito.",
+  "The tutor recommended that he take a short break.": "El tutor recomendó que se tomara un breve descanso.",
+  "She avoided setting unrealistic targets.": "Evitó fijarse objetivos poco realistas.",
+  "Although rewards can help, they are not always sufficient.": "Aunque las recompensas pueden ayudar, no siempre son suficientes.",
+  "Having reconsidered the goal, he changed direction.": "Tras reconsiderar el objetivo, cambió de rumbo.",
+  "a sustained commitment to professional development": "un compromiso sostenido con el desarrollo profesional",
+  "This may partly explain the difference.": "Esto puede explicar en parte la diferencia.",
+  "Rarely do we question our first impressions.": "Rara vez cuestionamos nuestras primeras impresiones.",
+  "If the sample had been wider, the conclusion would be more robust now.": "Si la muestra hubiera sido más amplia, la conclusión sería más sólida ahora.",
+  "The effect is thought to be context-dependent.": "Se cree que el efecto depende del contexto.",
+  "The wording may have influenced the responses.": "Es posible que la formulación haya influido en las respuestas.",
+  "What matters is how the evidence was selected.": "Lo importante es cómo se seleccionaron las pruebas.",
+  "Admittedly, the pattern is striking; nevertheless, the sample is small.": "Es cierto que el patrón es llamativo; aun así, la muestra es pequeña.",
+  "Having checked the source, the team revised its report.": "Tras comprobar la fuente, el equipo revisó su informe.",
+  "The panel insisted that the claim be tested.": "El comité insistió en que se comprobara la afirmación.",
+  "the selective presentation of evidence": "la presentación selectiva de las pruebas",
+  "The analyst objected to treating correlation as causation.": "El analista se opuso a tratar la correlación como causalidad.",
+  "I see your point; nevertheless, the boundary still matters.": "Entiendo tu punto de vista; sin embargo, el límite sigue siendo importante.",
+  "Under no circumstances should consent be assumed.": "Bajo ninguna circunstancia debe darse por hecho el consentimiento.",
+  "What we need is a clearer agreement.": "Lo que necesitamos es un acuerdo más claro.",
+  "You should be able to decline without pressure.": "Deberías poder negarte sin sentir presión.",
+  "Were expectations clearer, fewer misunderstandings might arise.": "Si las expectativas fueran más claras, habría menos malentendidos.",
+  "She explained that she had felt unable to refuse.": "Explicó que se había sentido incapaz de negarse.",
+  "He objected to being excluded from the discussion.": "Se opuso a que lo excluyeran de la conversación.",
+  "They insisted that the agreement be reviewed.": "Insistieron en que se revisara el acuerdo.",
+  "Having acknowledged the tension, they discussed a solution.": "Tras reconocer la tensión, hablaron de una solución.",
+  "The response may reflect an underlying power imbalance.": "La respuesta puede reflejar un desequilibrio de poder subyacente.",
+  "I may have overreacted because I was exhausted.": "Puede que haya reaccionado de forma exagerada porque estaba agotado.",
+  "If I had paused, I would feel less unsettled now.": "Si me hubiera detenido un momento, ahora me sentiría menos inquieto.",
+  "Rarely do we recognise a trigger immediately.": "Rara vez reconocemos un desencadenante de inmediato.",
+  "What matters is how we choose to respond.": "Lo importante es cómo elegimos responder.",
+  "Although anger is understandable, aggression is not acceptable.": "Aunque la ira es comprensible, la agresividad no es aceptable.",
+  "The counsellor suggested that he take time to reflect.": "El orientador sugirió que se tomara un tiempo para reflexionar.",
+  "Having identified the trigger, she reconsidered her response.": "Tras identificar el desencadenante, reconsideró su reacción.",
+  "You need not resolve the issue immediately.": "No tienes por qué resolver el problema de inmediato.",
+  "He avoided escalating the disagreement.": "Evitó agravar el desacuerdo.",
+  "The reaction may partly reflect accumulated stress.": "La reacción puede reflejar en parte el estrés acumulado."
+};
+
+
 const preA1Listening: Record<number, { audioTranscript: string; template: string; words: string[] }> = {
   1: { audioTranscript: "At the school door, Mia and Ben meet. Mia: Hello, Ben! Ben: Hi, Mia! Mia: Hello! Ben: Hi! Mia: Goodbye, Ben! Ben: Bye, Mia! Mia: See you! Ben: See you! Mia: Goodbye!", template: "[[gap-01]] [[gap-02]] [[gap-03]] [[gap-04]] [[gap-05]] [[gap-06]] [[gap-07]] [[gap-08]] [[gap-09]] [[gap-10]]", words: ["At the school door, Mia and Ben meet.","Mia: Hello, Ben!","Ben: Hi, Mia!","Mia: Hello!","Ben: Hi!","Mia: Goodbye, Ben!","Ben: Bye, Mia!","Mia: See you!","Ben: See you!","Mia: Goodbye!"] },
   2: { audioTranscript: "Ana and Leo meet. Ana: Hello! What's your name? Leo: My name is Leo. Ana: My name is Ana. Leo: Hello, Ana! Ana: Hi, Leo! Leo: What's your name? Ana: My name is Ana. Leo: See you! Ana: Goodbye!", template: "[[gap-01]] [[gap-02]] [[gap-03]] [[gap-04]] [[gap-05]] [[gap-06]] [[gap-07]] [[gap-08]] [[gap-09]] [[gap-10]]", words: ["Ana and Leo meet.","Ana: Hello! What's your name?","Leo: My name is Leo.","Ana: My name is Ana.","Leo: Hello, Ana!","Ana: Hi, Leo!","Leo: What's your name?","Ana: My name is Ana.","Leo: See you!","Ana: Goodbye!"] },
@@ -392,11 +476,12 @@ export default function CanonicalMission({ missionData = missionSource as Missio
       });
     });
     Object.entries(PRE_A1_EXAMPLE_TRANSLATIONS).forEach(([english, spanish]) => add(english, spanish));
+    Object.entries(C1_EXPLORATION_TRANSLATIONS).forEach(([english, spanish]) => add(english, spanish, true));
     return translations;
   }, [mission]);
   const getExampleTranslation = (english: string) => exploreTranslations.get(english.toLocaleLowerCase("en-GB").replace(/[“”]/g, '"').replace(/[.!?…]/g, "").replace(/\s+/g, " ").trim());
   const resolveSpanish = (english?: string, spanish?: string) => {
-    const isPlaceholder = !spanish?.trim() || /^(frase|expresión|texto|modelo|estructura|repaso|práctica|practica|contenido|significado|saludar|despedirse|preguntar|responder|expresar|reconocer|identificar|presentar|hablar|usar|utilizar|distinguir|aprender|comprender|observar|leer|elegir|decir|describir)/i.test(spanish);
+    const isPlaceholder = !spanish?.trim() || /^(frase|expresión|texto|modelo|estructura|patrón gramatical|repaso|práctica|practica|contenido|significado|saludar|despedirse|preguntar|responder|expresar|reconocer|identificar|presentar|hablar|usar|utilizar|distinguir|aprender|comprender|observar|leer|elegir|decir|describir)/i.test(spanish);
     return isPlaceholder ? (english ? getExampleTranslation(english) : undefined) ?? "Traducción pendiente de revisión académica." : spanish;
   };
   const wordTranslations = useMemo(() => {
@@ -410,7 +495,9 @@ export default function CanonicalMission({ missionData = missionSource as Missio
   const renderTranslatedWords = (text?: string) => {
     if (!text) return text;
     return text.split(/([\p{L}]+(?:['’][\p{L}]+)?)/gu).map((part, index) => {
-      const translation = wordTranslations.get(part.toLocaleLowerCase("en-GB"));
+      // Si no existe traducción aislada, usa la traducción del término o frase completa.
+      // Así cada palabra de una expresión inglesa mantiene acceso a su significado contextual.
+      const translation = wordTranslations.get(part.toLocaleLowerCase("en-GB")) ?? getExampleTranslation(text);
       if (!translation) return part;
       const wordId = `${index}:${part.toLocaleLowerCase("en-GB")}`;
       const isOpen = hoveredWord === wordId;
@@ -704,15 +791,15 @@ export default function CanonicalMission({ missionData = missionSource as Missio
         </div>
         {sectionKey !== "explore" && <div className="mt-5" aria-label="Progreso de la sección"><div className="mb-2 flex justify-between text-[11px] font-medium text-[#8792a3]"><span>Tu avance en esta etapa</span><span className="tabular-nums">{sectionKey === "listening" ? Object.keys(listeningAnswers).length * 10 : progress}%</span></div><div className="h-2 overflow-hidden rounded-full bg-[#edf0f4]" role="progressbar" aria-valuemin={0} aria-valuemax={100} aria-valuenow={sectionKey === "listening" ? Object.keys(listeningAnswers).length * 10 : progress}><div className="h-full rounded-full bg-[#557da8] transition-all duration-300" style={{ width: `${sectionKey === "listening" ? Object.keys(listeningAnswers).length * 10 : progress}%` }} /></div></div>}
         {section.exercise.theory && sectionKey !== "explore" && <div className="mt-6 rounded-xl border border-slate-200 bg-slate-50 p-5"><h3 className="font-semibold">{section.exercise.theory.title}</h3><p className="mt-2 text-sm leading-6 text-slate-600">{section.exercise.theory.explanation}</p><ul className="mt-4 grid gap-2 text-sm text-slate-700">{section.exercise.theory.patterns.map((pattern, i) => <li key={typeof pattern === "string" ? pattern : pattern.label ?? pattern.pattern ?? i}>• {typeof pattern === "string" ? pattern : pattern.pattern}</li>)}</ul><p className="mt-4 text-sm text-slate-600"><strong>Consejo:</strong> {section.exercise.theory.tip}</p><div className="mt-4 grid gap-2 sm:grid-cols-3">{section.exercise.theory.patterns.map((pattern, i) => <div key={typeof pattern === "string" ? pattern : pattern.label ?? pattern.pattern ?? i} className="rounded-lg border border-slate-200 bg-white p-3 text-sm"><p className="font-medium">{typeof pattern === "string" ? pattern : pattern.pattern}</p>{typeof pattern !== "string" && pattern.examples?.length ? <p className="mt-1 text-slate-500">{pattern.examples.join(" · ")}</p> : null}</div>)}</div></div>}
-        {section.exercise.content?.passage && <article className="mt-6 rounded-xl bg-slate-50 p-5 text-base leading-8 text-slate-700">{section.exercise.content?.passage}</article>}
+        {section.exercise.content?.passage && !(mission.course.level === "C1" && sectionKey === "explore") && <article className="mt-6 rounded-xl bg-slate-50 p-5 text-base leading-8 text-slate-700">{section.exercise.content?.passage}</article>}
         {sectionKey === "explore" && <div className="mt-7 space-y-8">
           <div className="rounded-2xl border border-[#dce8f4] bg-gradient-to-br from-[#f3f8fd] to-white p-5 sm:p-6">
             <p className="text-[10px] font-bold uppercase tracking-[.18em] text-[#55779d]">ANTES DE PRACTICAR</p>
             <h3 className="mt-2 text-xl font-semibold tracking-tight text-[#203752]">Primero comprende. Después practica.</h3>
-            <p className="mt-2 max-w-3xl text-sm leading-6 text-[#61738a]">Aquí tienes explicado todo lo que aparecerá en esta misión. Cada palabra y frase en inglés se acompaña de su significado en español para que puedas aprender desde cero. Primero comprende; después escucha y practica.</p><p className="mt-2 text-xs leading-5 text-[#8792a3]">Aviso: los botones de escucha usan voz sintética del navegador; todavía no representan grabaciones de audio reales revisadas por el equipo académico.</p>
+            <p className="mt-2 max-w-3xl text-sm leading-6 text-[#61738a]">Aquí encontrarás únicamente el vocabulario y la gramática que trabajarás en esta misión. Después podrás aplicar estos contenidos en las actividades.</p><p className="mt-2 text-xs leading-5 text-[#8792a3]">Aviso: los botones de escucha usan voz sintética del navegador; todavía no representan grabaciones de audio reales revisadas por el equipo académico.</p>
           </div>
 
-          {(() => {
+          {mission.course.level !== "C1" && (() => {
             const readingContent = mission.sections.find((entry) => entry.sectionKey === "reading")?.exercise.content as { passage?: string; passageTranslation?: string } | undefined;
             const listeningContent = mission.sections.find((entry) => entry.sectionKey === "listening")?.exercise.content as { audioTranscript?: string; audio?: string; translation?: string } | undefined;
             const listeningText = (listeningContent?.audioTranscript ?? listeningContent?.audio ?? "").replace(/^tts:en-GB:/, "");
@@ -764,7 +851,7 @@ export default function CanonicalMission({ missionData = missionSource as Missio
             </div>
           </section>}
 
-          {(section.exercise.lesson?.phrases?.length ?? 0) > 0 && <section>
+          {mission.course.level !== "C1" && (section.exercise.lesson?.phrases?.length ?? 0) > 0 && <section>
             <div className="mb-4"><p className="text-[10px] font-bold uppercase tracking-[.17em] text-[#8290a3]">02 · EXPRESIONES</p><h3 className="mt-1 text-lg font-semibold text-[#26364b]">Frases que vas a utilizar</h3><p className="mt-1 text-sm text-[#7b8798]">Estas son las expresiones que aparecerán en la práctica de traducción.</p></div>
             <div className="grid gap-3 sm:grid-cols-2">
               {(section.exercise.lesson?.phrases ?? []).map((entry,i) => <article key={i} className="flex items-start gap-3 rounded-xl border border-[#e8ebf0] bg-white p-4">
@@ -775,7 +862,19 @@ export default function CanonicalMission({ missionData = missionSource as Missio
             </div>
           </section>}
 
-          {((section.exercise.theory?.title || section.exercise.theory?.explanation || (section.exercise.theory?.patterns?.length ?? 0) > 0) || (section.exercise.lesson?.grammar?.length ?? 0) > 0) && <section>
+          {mission.course.level === "C1" ? (
+            (section.exercise.lesson?.grammar?.length ?? 0) > 0 && <section>
+              <div className="mb-4"><p className="text-[10px] font-bold uppercase tracking-[.17em] text-[#8290a3]">02 · GRAMÁTICA</p><h3 className="mt-1 text-lg font-semibold text-[#26364b]">Gramática de la misión</h3><p className="mt-1 text-sm leading-6 text-[#7b8798]">Estas son las estructuras gramaticales que trabajarás en esta misión.</p></div>
+              <div className="grid gap-3 sm:grid-cols-2">
+                {(section.exercise.lesson?.grammar ?? []).map((entry, i) => <article key={i} className="rounded-xl border border-[#e8ebf0] bg-white p-4">
+                  <p className="font-semibold text-[#26364b]">{renderTranslatedWords(entry.english)}</p><p className="mt-1 text-sm font-medium text-[#64816f]">{resolveSpanish(entry.english, entry.spanish)}</p>{entry.note && <p className="mt-1 text-xs leading-5 text-[#8290a3]">{renderTranslatedWords(entry.note)}</p>}
+                  {entry.note && getExampleTranslation(entry.note) && <p className="mt-1 text-xs leading-5 text-[#64816f]">{getExampleTranslation(entry.note)}</p>}
+                  <button type="button" onClick={() => speak(entry.english)} className="mt-2 text-xs font-semibold text-[#55708f]">♫ Escuchar ejemplo</button>
+                </article>)}
+              </div>
+            </section>
+          ) : (
+((section.exercise.theory?.title || section.exercise.theory?.explanation || (section.exercise.theory?.patterns?.length ?? 0) > 0) || (section.exercise.lesson?.grammar?.length ?? 0) > 0) && <section>
             <div className="mb-4"><p className="text-[10px] font-bold uppercase tracking-[.17em] text-[#8290a3]">03 · GRAMÁTICA</p><h3 className="mt-1 text-lg font-semibold text-[#26364b]">{section.exercise.theory?.title ?? "Gramática de la misión"}</h3><p className="mt-1 text-sm leading-6 text-[#7b8798]">{section.exercise.theory?.explanation}</p></div>
             <div className="grid gap-3 sm:grid-cols-2">
               {(section.exercise.theory?.patterns ?? []).filter(Boolean).map((pattern, i) => <article key={typeof pattern === "string" ? pattern : pattern.label ?? pattern.pattern ?? i} className="rounded-xl border border-[#e8ebf0] bg-[#fbfcfe] p-4">
@@ -806,9 +905,9 @@ export default function CanonicalMission({ missionData = missionSource as Missio
               </article>)}
             </div>
             {section.exercise.theory?.tip && <p className="mt-3 rounded-xl bg-[#f3f7fb] p-4 text-sm leading-6 text-[#53657b]"><strong>Recuerda:</strong> {section.exercise.theory.tip}</p>}
-          </section>}
-
-          {(mission.sections.find(s => s.sectionKey === "pronunciation")?.exercise.items.length ?? 0) > 0 && <section>
+          </section>
+          )}
+          {mission.course.level !== "C1" && (mission.sections.find(s => s.sectionKey === "pronunciation")?.exercise.items.length ?? 0) > 0 && <section>
             <div className="mb-4"><p className="text-[10px] font-bold uppercase tracking-[.17em] text-[#8290a3]">04 · PRONUNCIACIÓN</p><h3 className="mt-1 text-lg font-semibold text-[#26364b]">Así suenan las palabras</h3><p className="mt-1 text-sm text-[#7b8798]">La guía está adaptada a hispanohablantes; las MAYÚSCULAS marcan la sílaba tónica. Es aproximada, no AFI.</p></div>
             <div className="grid gap-3 sm:grid-cols-2 lg:grid-cols-3">
               {mission.sections.find(s => s.sectionKey === "pronunciation")?.exercise.items.map(entry => <article key={entry.itemId} className="rounded-xl border border-[#e8ebf0] bg-white p-4">
@@ -818,33 +917,33 @@ export default function CanonicalMission({ missionData = missionSource as Missio
             </div>
           </section>}
 
-          {(section.exercise.lesson?.reading?.length ?? 0) > 0 && <section>
+          {mission.course.level !== "C1" && (section.exercise.lesson?.reading?.length ?? 0) > 0 && <section>
             <div className="mb-4"><p className="text-[10px] font-bold uppercase tracking-[.17em] text-[#8290a3]">05 · LECTURA</p><h3 className="mt-1 text-lg font-semibold text-[#26364b]">Lee y comprende el texto</h3><p className="mt-1 text-sm text-[#7b8798]">El texto se presenta en inglés con apoyo en español. Las frases clave y los modelos aparecen traducidos para que puedas comprenderlos antes de responder.</p></div>
             <div className="space-y-2">{(section.exercise.lesson?.reading ?? []).map((entry,i) => <article key={i} className="grid gap-1 rounded-xl border border-[#e8ebf0] bg-white p-4 sm:grid-cols-2 sm:gap-4"><p className="font-medium text-[#26364b]">{renderTranslatedWords(entry.english)}</p><p className="text-sm text-[#64816f]">{resolveSpanish(entry.english, entry.spanish)}</p></article>)}</div>
           </section>}
 
-          {(section.exercise.lesson?.writing?.length ?? 0) > 0 && <section>
+          {mission.course.level !== "C1" && (section.exercise.lesson?.writing?.length ?? 0) > 0 && <section>
             <div className="mb-4"><p className="text-[10px] font-bold uppercase tracking-[.17em] text-[#8290a3]">06 · ESCRITURA</p><h3 className="mt-1 text-lg font-semibold text-[#26364b]">Frases del dictado</h3><p className="mt-1 text-sm text-[#7b8798]">Estas son exactamente las frases que escucharás y escribirás en la actividad.</p></div>
             <div className="grid gap-2 sm:grid-cols-2">{(section.exercise.lesson?.writing ?? []).map((entry,i) => <article key={i} className="rounded-xl border border-[#e8ebf0] bg-white p-4"><p className="font-semibold text-[#26364b]">{renderTranslatedWords(entry.english)}</p><p className="mt-1 text-sm text-[#64816f]">{resolveSpanish(entry.english, entry.spanish)}</p><button type="button" onClick={() => speak(entry.english)} className="mt-2 text-xs font-semibold text-[#55708f]">♫ Escuchar frase</button></article>)}</div>
           </section>}
 
-          {(section.exercise.lesson?.speaking?.length ?? 0) > 0 && <section>
+          {mission.course.level !== "C1" && (section.exercise.lesson?.speaking?.length ?? 0) > 0 && <section>
             <div className="mb-4"><p className="text-[10px] font-bold uppercase tracking-[.17em] text-[#8290a3]">07 · EXPRESIÓN ORAL</p><h3 className="mt-1 text-lg font-semibold text-[#26364b]">Lo que podrás decir</h3><p className="mt-1 text-sm text-[#7b8798]">Primero entiende la consigna y aprende una posible respuesta.</p></div>
             <div className="grid gap-3 sm:grid-cols-2">{(section.exercise.lesson?.speaking ?? []).map((entry,i) => <article key={i} className="rounded-xl border border-[#e8ebf0] bg-white p-4">
               <p className="text-xs font-semibold text-[#8290a3]">{entry.promptSpanish}</p><p className="mt-2 font-semibold text-[#26364b]">{renderTranslatedWords(entry.english)}</p><p className="mt-1 text-sm text-[#64816f]">{resolveSpanish(entry.english, entry.spanish)}</p><button type="button" onClick={() => speak(entry.english)} className="mt-2 text-xs font-semibold text-[#55708f]">♫ Escuchar modelo</button>
             </article>)}</div>
           </section>}
 
-          {(section.exercise.lesson?.listening?.length ?? 0) > 0 && <section>
+          {mission.course.level !== "C1" && (section.exercise.lesson?.listening?.length ?? 0) > 0 && <section>
             <div className="mb-4"><p className="text-[10px] font-bold uppercase tracking-[.17em] text-[#8290a3]">08 · COMPRENSIÓN AUDITIVA</p><h3 className="mt-1 text-lg font-semibold text-[#26364b]">Escucha el contenido antes del ejercicio</h3><p className="mt-1 text-sm text-[#7b8798]">Consulta el diálogo y su apoyo en español. Las expresiones nuevas se presentan traducidas antes de escucharlas.</p></div>
             <div className="mb-3 rounded-xl border border-[#dce8f4] bg-[#f3f8fd] p-4"><p className="text-xs font-bold uppercase tracking-wide text-[#55779d]">Audio completo</p><button type="button" onClick={() => speak(mission.sections.find(s => s.sectionKey === "listening")?.exercise.content?.audioTranscript?.replace(/^tts:en-GB:/,"") ?? "")} className="mt-2 rounded-full border border-[#dce6f0] bg-white px-3 py-2 text-xs font-semibold text-[#55708f]">♫ Escuchar audio modelo</button></div>
             <div className="space-y-2">{(section.exercise.lesson?.listening ?? []).map((entry,i) => <article key={i} className="grid gap-1 rounded-xl border border-[#e8ebf0] bg-white p-4 sm:grid-cols-2 sm:gap-4"><p className="font-medium text-[#26364b]">{renderTranslatedWords(entry.english)}</p><p className="text-sm text-[#64816f]">{resolveSpanish(entry.english, entry.spanish)}</p></article>)}</div>
           </section>}
-          {(section.exercise.lesson?.examples?.length ?? 0) > 0 && <section>
+          {mission.course.level !== "C1" && (section.exercise.lesson?.examples?.length ?? 0) > 0 && <section>
             <div className="mb-4"><p className="text-[10px] font-bold uppercase tracking-[.17em] text-[#8290a3]">09 · EJEMPLOS EN CONTEXTO</p><h3 className="mt-1 text-lg font-semibold text-[#26364b]">El inglés en situaciones reales</h3><p className="mt-1 text-sm text-[#7b8798]">Observa cómo se combinan las palabras y estructuras de la misión.</p></div>
             <div className="grid gap-2 sm:grid-cols-2">{(section.exercise.lesson?.examples ?? []).map((entry,i) => <article key={i} className="rounded-xl border border-[#e8ebf0] bg-white p-4"><p className="font-semibold text-[#26364b]">{renderTranslatedWords(entry.english)}</p><p className="mt-1 text-sm text-[#64816f]">{resolveSpanish(entry.english, entry.spanish)}</p>{entry.note && <p className="mt-2 text-xs leading-5 text-[#8290a3]">{entry.note}</p>}<button type="button" onClick={() => speak(entry.english)} className="mt-2 text-xs font-semibold text-[#55708f]">♫ Escuchar ejemplo</button></article>)}</div>
           </section>}
-          {(section.exercise.lesson?.communication?.length ?? 0) > 0 && <section>
+          {mission.course.level !== "C1" && (section.exercise.lesson?.communication?.length ?? 0) > 0 && <section>
             <div className="mb-4"><p className="text-[10px] font-bold uppercase tracking-[.17em] text-[#8290a3]">10 · GUÍA DE COMUNICACIÓN</p><h3 className="mt-1 text-lg font-semibold text-[#26364b]">Utiliza lo que has aprendido</h3><p className="mt-1 text-sm text-[#7b8798]">Estas expresiones te ayudan a resolver la situación comunicativa de la misión.</p></div>
             <div className="space-y-2">{(section.exercise.lesson?.communication ?? []).map((entry,i) => <article key={i} className="grid gap-1 rounded-xl border border-[#e8ebf0] bg-white p-4 sm:grid-cols-2 sm:gap-4"><div><p className="font-semibold text-[#26364b]">{renderTranslatedWords(entry.english)}</p>{entry.note && <p className="mt-1 text-xs text-[#8290a3]">{entry.note}</p>}</div><div className="flex items-start justify-between gap-3"><p className="text-sm text-[#64816f]">{resolveSpanish(entry.english, entry.spanish)}</p><button type="button" onClick={() => speak(entry.english)} className="shrink-0 text-xs font-semibold text-[#55708f]">♫</button></div></article>)}</div>
           </section>}
