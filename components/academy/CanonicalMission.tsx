@@ -3288,6 +3288,7 @@ export default function CanonicalMission({ missionData = missionSource as Missio
                     {count ? <div className="flex flex-col items-center justify-center"><span className="text-3xl font-extrabold leading-none text-[#2872c8] sm:text-4xl">{count}</span><span className="mt-1 grid grid-cols-5 gap-0.5 text-[10px] leading-none sm:text-xs">{Array.from({length:count},(_,i)=><span key={i}>🍎</span>)}</span></div> : <span className="text-4xl sm:text-5xl">{word.length === 1 && /^[a-z]$/.test(word) ? "🔠" : visual[word] ?? visualForVocabulary(word, entry.spanish ?? "")}</span>}
                   </div>
                   <p className="mt-3 break-words text-base font-bold text-[#26364b] sm:text-lg">{entry.english}</p>
+                  <p className="mt-1 text-sm font-medium text-[#64816f]">{resolveSpanish(entry.english, entry.spanish)}</p>
                   <p className="mt-1 min-h-5 text-xs font-semibold text-[#55708f]">{pronunciationGuide || "Guía de pronunciación pendiente"}</p>
                   <button type="button" aria-label={`Escuchar pronunciación de ${entry.english}`} onClick={() => speak(entry.english ?? "")} className="mt-3 rounded-full border border-[#dce6f0] bg-white px-3 py-1.5 text-xs font-semibold text-[#55708f]">♫ Escuchar voz automática</button>
                 </article>;
@@ -3311,7 +3312,7 @@ export default function CanonicalMission({ missionData = missionSource as Missio
               <div className="mb-4"><p className="text-[10px] font-bold uppercase tracking-[.17em] text-[#8290a3]">02 · GRAMÁTICA</p><h3 className="mt-1 text-lg font-semibold text-[#26364b]">Gramática de la misión</h3><p className="mt-1 text-sm leading-6 text-[#7b8798]">Estas son las estructuras gramaticales que trabajarás en esta misión.</p></div>
               <div className="grid gap-3 sm:grid-cols-2">
                 {(section.exercise.lesson?.grammar ?? []).map((entry, i) => <article key={i} className="rounded-xl border border-[#e8ebf0] bg-white p-4">
-                  <p className="font-semibold text-[#26364b]">{entry.english}</p>{entry.note && <p className="mt-1 text-xs leading-5 text-[#8290a3]">{entry.note}</p>}
+                  <p className="font-semibold text-[#26364b]">{entry.english}</p><p className="mt-1 text-sm font-medium text-[#64816f]">{resolveSpanish(entry.english, entry.spanish)}</p>{entry.note && <p className="mt-1 text-xs leading-5 text-[#8290a3]">{entry.note}</p>}{entry.note && getExampleTranslation(entry.note) && <p className="mt-1 text-xs leading-5 text-[#64816f]">{getExampleTranslation(entry.note)}</p>}
                   <button type="button" onClick={() => speak(entry.english)} className="mt-2 text-xs font-semibold text-[#55708f]">♫ Escuchar ejemplo</button>
                 </article>)}
               </div>
