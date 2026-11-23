@@ -26,7 +26,7 @@ const spanish: Record<string, string> = {
   "house":"casa","flat":"piso","kitchen":"cocina","bedroom":"dormitorio","bathroom":"baño","living room":"salón","garden":"jardín","sofa":"sofá","table":"mesa","next to":"al lado de",
   "bread":"pan","rice":"arroz","pasta":"pasta","apple":"manzana","banana":"plátano","water":"agua","milk":"leche","coffee":"café","chicken":"pollo","vegetables":"verduras",
   "menu":"menú","order":"pedido","I'd like":"quisiera","cup":"taza","glass":"vaso","bottle":"botella","sandwich":"sándwich","soup":"sopa","bill":"cuenta","please":"por favor",
-  "shirt":"camisa","trousers":"pantalones","dress":"vestido","shoes":"zapatos","jacket":"chaqueta","coat":"abrigo","blue":"azul","black":"negro","size":"talla","wear":"llevar puesto",
+  "shirt":"camisa","T-shirt":"camiseta","trousers":"pantalones","jeans":"vaqueros","dress":"vestido","skirt":"falda","shoes":"zapatos","jacket":"chaqueta","coat":"abrigo","trainers":"zapatillas deportivas","blue":"azul","black":"negro","red":"rojo","white":"blanco","size":"talla","wear":"llevar puesto",
   "football":"fútbol","tennis":"tenis","basketball":"baloncesto","swimming":"natación","cycling":"ciclismo","run":"correr","jump":"saltar","play":"jugar","can":"poder / saber","can't":"no poder / no saber","sports equipment":"material deportivo","training":"entrenamiento","ride a bicycle":"montar en bicicleta"
 };
 const phraseModels: Record<string, string[]> = {
@@ -42,8 +42,33 @@ const phraseModels: Record<string, string[]> = {
   "012":["There is a kitchen in my flat.","There are two bedrooms.","The sofa is in the living room.","The table is next to the window.","There is a garden behind the house.","The bathroom is small.","There are four chairs in the kitchen.","Is there a desk in your bedroom?","The lamp is on the table.","My flat has a big living room."],
   "013":["I eat bread for breakfast.","We have rice for lunch.","She likes pasta.","He eats an apple every day.","I have a banana.","Would you like some water?","I drink milk in the morning.","My father likes coffee.","They eat chicken and vegetables.","I don't like fish."],
   "014":["Can I see the menu, please?","I'd like a sandwich.","Can I have a glass of water?","I'd like a cup of coffee.","Would you like some soup?","Anything else?","No, thank you. That's all.","How much is the bill?","Can I pay by card?","Here you are. Thank you."],
+  "016":["I am wearing a blue shirt.","She wears black shoes.","He is wearing a red jacket.","What colour is your T-shirt?","I need a new pair of jeans.","This dress is white.","Do you have this skirt in black?","What size do you need?","I like your trainers.","The coat is too big."],
   "015":["I can swim very well.","She can't play tennis.","Can you ride a bicycle?","My brother plays football on Saturdays.","We can speak two languages.","He can't run very fast.","Can they play basketball?","I like swimming in the sea.","You can use my sports equipment.","I can't come to training today."]
 };
+const mission016Grammar = [
+  { prompt:"Choose the correct word order.", answer:"a blue shirt", options:["a blue shirt","a shirt blue","blue a shirt"] },
+  { prompt:"Complete: She ___ black shoes.", answer:"wears", options:["wears","wear","wearing"] },
+  { prompt:"Choose the correct sentence.", answer:"I'm wearing a red jacket.", options:["I'm wearing a red jacket.","I wearing a red jacket.","I am wear a red jacket."] },
+  { prompt:"Choose the correct question about colour.", answer:"What colour is it?", options:["What colour is it?","What is colour it?","Which colour it is?"] },
+  { prompt:"Complete: He ___ a white T-shirt.", answer:"is wearing", options:["is wearing","wear","wears wearing"] },
+  { prompt:"Choose the correct phrase.", answer:"black trousers", options:["black trousers","trousers black","the black trouserses"] },
+  { prompt:"Complete: What size ___ you need?", answer:"do", options:["do","are","does"] },
+  { prompt:"Choose the correct sentence.", answer:"I wear jeans every day.", options:["I wear jeans every day.","I wears jeans every day.","I am wear jeans every day."] },
+  { prompt:"Which adjective comes first?", answer:"The colour", options:["The colour","The clothing noun","The size"] },
+  { prompt:"Complete: This coat ___ too big.", answer:"is", options:["is","are","be"] }
+];
+const mission016Reading = [
+  { prompt:"What is Mia wearing?", answer:"A blue T-shirt and black jeans.", options:["A blue T-shirt and black jeans.","A red dress and white shoes.","A green coat and blue trousers."] },
+  { prompt:"What colour is Leo's jacket?", answer:"Red.", options:["Red.","Black.","White."] },
+  { prompt:"What does Mia want to buy?", answer:"A new pair of trainers.", options:["A new pair of trainers.","A blue skirt.","A white shirt."] },
+  { prompt:"What size does the shop assistant show her?", answer:"Size 38.", options:["Size 38.","Size 40.","Size 36."] },
+  { prompt:"Are the first trainers too small?", answer:"Yes, they are.", options:["Yes, they are.","No, they aren't.","The text doesn't say."] },
+  { prompt:"What colour trainers does Mia choose?", answer:"White.", options:["White.","Black.","Red."] },
+  { prompt:"What is Leo wearing?", answer:"A red jacket and grey trousers.", options:["A red jacket and grey trousers.","A blue shirt and black jeans.","A white coat and a skirt."] },
+  { prompt:"Where are Mia and Leo?", answer:"In a clothes shop.", options:["In a clothes shop.","At school.","In a café."] },
+  { prompt:"Which item is plural?", answer:"Trainers.", options:["Trainers.","Jacket.","T-shirt."] },
+  { prompt:"What is the main topic?", answer:"Clothes, colours and sizes.", options:["Clothes, colours and sizes.","Sports and abilities.","Food and drink."] }
+];
 const mission015Grammar = [
   { prompt:"Choose the correct sentence.", answer:"I can swim.", options:["I can swim.","I can to swim.","I cans swim."] },
   { prompt:"Complete: She ___ play tennis.", answer:"can't", options:["can't","don't","isn't"] },
@@ -81,6 +106,7 @@ const passages: Record<string,string> = {
   "012":"Emma lives in a small flat. There are two bedrooms, one bathroom and a kitchen. The living room has a sofa and a table. The kitchen is next to the living room. There is a small garden.",
   "013":"Peter has bread and milk for breakfast. He eats rice, chicken and vegetables for lunch. His favourite fruit is an apple. He drinks water every day, but he doesn't like coffee.",
   "014":"Tom and Anna are at Green Café. Tom would like a sandwich and a cup of coffee. Anna orders soup and a glass of water. They read the menu and enjoy lunch. Tom asks for the bill.",
+  "016":"Mia and Leo are in a clothes shop. Mia is wearing a blue T-shirt and black jeans. Leo is wearing a red jacket and grey trousers. Mia wants to buy new trainers. The shop assistant shows her size 38, but the first pair is too small. She tries size 40 and chooses white trainers. Leo says her new trainers look great.",
   "015":"Mia and Leo are talking about sport. Mia can swim very well and she can ride a bicycle, but she can't play tennis. Leo can play football and basketball. He runs fast, but he can't swim. They practise after school and help each other. Mia says, “Can you teach me basketball?” Leo says, “Yes, I can!”"
 };
 
@@ -117,12 +143,12 @@ function makeCanonicalMission(p: (typeof previewMissions)[number]): Mission {
     } else if (key === "practice") {
       items = vocab.map((word,i) => ({ itemId: `english-a1-m${id}-practice-${i+1}`, position:i+1, prompt:`Choose the Spanish meaning of “${word.english}”.`, answer:word.spanish, options:[word.spanish, ...vocab.filter((_,j)=>j!==i).slice(0,2).map(x=>x.spanish)], taskType:"vocabulary", evaluation:{type:"single_choice"} }));
     } else if (key === "grammar") {
-      items = (id === "015" ? mission015Grammar : Array.from({length:10},(_,i) => ({ prompt:"Which grammar structure is practised in this mission?", answer:p.grammar[i%p.grammar.length], options:[p.grammar[i%p.grammar.length],p.grammar[(i+1)%p.grammar.length],p.grammar[(i+2)%p.grammar.length]] }))).map((q:any,i:number) => ({ itemId:`english-a1-m${id}-grammar-${i+1}`, position:i+1, ...q, evaluation:{type:"single_choice"} }));
+      items = (id === "016" ? mission016Grammar : id === "015" ? mission015Grammar : Array.from({length:10},(_,i) => ({ prompt:"Which grammar structure is practised in this mission?", answer:p.grammar[i%p.grammar.length], options:[p.grammar[i%p.grammar.length],p.grammar[(i+1)%p.grammar.length],p.grammar[(i+2)%p.grammar.length]] }))).map((q:any,i:number) => ({ itemId:`english-a1-m${id}-grammar-${i+1}`, position:i+1, ...q, evaluation:{type:"single_choice"} }));
     } else if (key === "pronunciation") {
       items = vocab.flatMap((word,i) => word.english.split(" / ").map((term,partIndex) => ({ itemId:`english-a1-m${id}-pronunciation-${i+1}-${partIndex+1}`, position:i+1, word:term, translation:word.spanish.split(" / ")[partIndex] ?? word.spanish, pronunciationGuide:getSpanishPronunciationGuide(term), audio:"tts:en-GB", prompt:"Listen, read the guide and repeat the word.", options:[term,vocab[(i+1)%vocab.length].english,vocab[(i+2)%vocab.length].english], answer:term, taskType:"listening_and_guided_production" })));
     } else if (key === "reading") {
       content = { passageId:`english-a1-m${id}-reading-passage`, passage:passages[id] ?? p.goal };
-      items = (id === "015" ? mission015Reading : Array.from({length:10},(_,i) => ({ prompt:`Read the text and identify information about: ${vocab[i%vocab.length].english}.`, answer:vocab[i%vocab.length].english, options:[vocab[i%vocab.length].english,vocab[(i+1)%vocab.length].english,vocab[(i+2)%vocab.length].english] }))).map((q:any,i:number) => ({ itemId:`english-a1-m${id}-reading-${i+1}`, position:i+1, ...q, evaluation:{type:"single_choice"} }));
+      items = (id === "016" ? mission016Reading : id === "015" ? mission015Reading : Array.from({length:10},(_,i) => ({ prompt:`Read the text and identify information about: ${vocab[i%vocab.length].english}.`, answer:vocab[i%vocab.length].english, options:[vocab[i%vocab.length].english,vocab[(i+1)%vocab.length].english,vocab[(i+2)%vocab.length].english] }))).map((q:any,i:number) => ({ itemId:`english-a1-m${id}-reading-${i+1}`, position:i+1, ...q, evaluation:{type:"single_choice"} }));
     } else if (key === "writing") {
       items = phrases.map((sentence,i) => ({ itemId:`english-a1-m${id}-writing-${i+1}`, position:i+1, kind:"sentence", audio:"tts:en-GB", audioLocale:"en-GB", repeatCount:3, segments:[{segmentId:`english-a1-m${id}-writing-segment-${i+1}`,text:sentence}], expectedAnswer:sentence, evaluation:{type:"normalised_text"} }));
     } else if (key === "speaking") {
@@ -170,7 +196,7 @@ export default async function A1CurriculumPreviewMission({ params }: { params: P
         <div className="mt-5"><CanonicalMission missionData={data} /></div>
         <nav className="mt-8 flex items-center justify-between gap-3 border-t border-slate-200 pt-5">
           {mission !== "001" ? <Link href={`/academia/a1/curriculum-preview/${previous(mission)}`} className="rounded-xl border border-slate-200 bg-white px-4 py-3 text-sm font-semibold text-slate-700 hover:border-indigo-300">← Misión anterior</Link> : <span />}
-          {mission !== "015" ? <Link href={`/academia/a1/curriculum-preview/${next(mission)}`} className="rounded-xl bg-indigo-700 px-4 py-3 text-sm font-semibold text-white hover:bg-indigo-800">Misión siguiente →</Link> : <Link href="/academia/a1/curriculum-preview" className="rounded-xl bg-indigo-700 px-4 py-3 text-sm font-semibold text-white">Volver al índice →</Link>}
+          {mission !== "016" ? <Link href={`/academia/a1/curriculum-preview/${next(mission)}`} className="rounded-xl bg-indigo-700 px-4 py-3 text-sm font-semibold text-white hover:bg-indigo-800">Misión siguiente →</Link> : <Link href="/academia/a1/curriculum-preview" className="rounded-xl bg-indigo-700 px-4 py-3 text-sm font-semibold text-white">Volver al índice →</Link>}
         </nav>
       </div>
     </main>
