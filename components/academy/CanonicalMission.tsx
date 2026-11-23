@@ -735,6 +735,7 @@ export default function CanonicalMission({ missionData = missionSource as Missio
             <div className="mb-4"><p className="text-[10px] font-bold uppercase tracking-[.17em] text-[#8290a3]">01 · VOCABULARIO</p><h3 className="mt-1 text-lg font-semibold text-[#26364b]">Palabras esenciales</h3><p className="mt-1 text-sm text-[#7b8798]">Mira cada imagen, lee su significado y escucha cómo suena en inglés.</p></div>
             <div className="grid grid-cols-2 gap-3 sm:grid-cols-3 lg:grid-cols-5">
               {section.exercise.items.map((entry) => {
+                // Keep vocabulary-to-emoji keys unique; duplicate object keys fail TypeScript checks.
                 const visual: Record<string,string> = {
                   hello:"👋",goodbye:"👋",please:"🙏","thank you":"💛",yes:"👍",no:"👎",name:"🪪",friend:"🧑‍🤝‍🧑",teacher:"👩‍🏫",student:"🎒",
                   red:"🔴",blue:"🔵",yellow:"🟡",green:"🟢",black:"⚫",white:"⚪",orange:"🟠",pink:"🩷",purple:"🟣",brown:"🟤",
