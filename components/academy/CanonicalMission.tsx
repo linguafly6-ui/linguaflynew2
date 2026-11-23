@@ -1628,7 +1628,7 @@ export default function CanonicalMission({ missionData = missionSource as Missio
     if (!text) return text;
     return text.split(/([\p{L}]+(?:['’][\p{L}]+)?)/gu).map((part, index) => {
       // Conserva los espacios como separadores reales entre las palabras interactivas.
-      if (/^\s+$/u.test(part)) return null;
+      if (/^\s+$/u.test(part)) return part;
       if (!/[\p{L}]/u.test(part)) return part;
       // Si no existe traducción aislada, usa la traducción del término o frase completa.
       // Así cada palabra de una expresión inglesa mantiene acceso a su significado contextual.
@@ -1647,7 +1647,7 @@ export default function CanonicalMission({ missionData = missionSource as Missio
           onFocus={() => setHoveredWord(wordId)}
           onBlur={() => setHoveredWord((current) => current === wordId ? null : current)}
           onClick={() => setHoveredWord(wordId)}
-          className="relative inline mr-[0.25em] cursor-help border-0 border-b border-dotted border-[#7895b5] bg-transparent p-0 align-baseline [font:inherit] text-inherit"
+          className="relative inline cursor-help border-0 border-b border-dotted border-[#7895b5] bg-transparent p-0 align-baseline [font:inherit] text-inherit"
         >
           {part}
           {isOpen && (
