@@ -19,7 +19,7 @@ export default function A1CurriculumPreviewPage() {
         <Link href="/academia/a1" className="text-sm font-semibold text-indigo-700 hover:text-indigo-900">← Volver al curso A1</Link>
         <header className="mt-5 overflow-hidden rounded-[28px] bg-gradient-to-br from-slate-950 via-indigo-950 to-blue-900 p-7 text-white sm:p-10">
           <p className="text-xs font-extrabold uppercase tracking-[.2em] text-cyan-300">Linguafly Academy · Preview privado</p>
-          <h1 className="mt-3 text-3xl font-black sm:text-5xl">Currículo A1 · Misiones 001–020</h1>
+          <h1 className="mt-3 text-3xl font-black sm:text-5xl">Currículo A1 · Misiones 001–021</h1>
           <p className="mt-4 max-w-3xl text-base leading-7 text-indigo-100">Vista de integración para revisar la estructura de las misiones, sus ocho secciones y la progresión del primer tramo del curso.</p>
           <div className="mt-6 flex flex-wrap gap-2 text-xs font-bold">
             <span className="rounded-full bg-white/15 px-3 py-2">21 misiones</span>
