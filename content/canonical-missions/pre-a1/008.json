@@ -913,151 +913,141 @@
           {
             "itemId": "english-pre-a1-m008-grammar-ex01-i01",
             "position": 1,
-            "prompt": "Selecciona el modelo que significa: “Estoy feliz.”",
+            "prompt": "Complete: I ___ happy.",
             "evaluation": {
               "type": "single_choice"
             },
             "options": [
-              "I am happy.",
-              "I am sad.",
-              "I am tired."
+              "am",
+              "is",
+              "are"
             ],
-            "answer": "I am happy.",
             "taskType": "functional_language"
           },
           {
             "itemId": "english-pre-a1-m008-grammar-ex01-i02",
             "position": 2,
-            "prompt": "Selecciona el modelo que significa: “Estoy triste.”",
+            "prompt": "Complete: I ___ sad.",
             "evaluation": {
               "type": "single_choice"
             },
             "options": [
-              "I am tired.",
-              "I am sad.",
-              "I am excited."
+              "am",
+              "is",
+              "are"
             ],
-            "answer": "I am sad.",
             "taskType": "functional_language"
           },
           {
             "itemId": "english-pre-a1-m008-grammar-ex01-i03",
             "position": 3,
-            "prompt": "Selecciona el modelo que significa: “Estoy cansado/a.”",
+            "prompt": "Complete: I ___ tired.",
             "evaluation": {
               "type": "single_choice"
             },
             "options": [
-              "I am excited.",
-              "I am angry.",
-              "I am tired."
+              "am",
+              "is",
+              "are"
             ],
-            "answer": "I am tired.",
             "taskType": "functional_language"
           },
           {
             "itemId": "english-pre-a1-m008-grammar-ex01-i04",
             "position": 4,
-            "prompt": "Selecciona el modelo que significa: “Estoy emocionado/a.”",
+            "prompt": "Complete: I ___ excited.",
             "evaluation": {
               "type": "single_choice"
             },
             "options": [
-              "I am excited.",
-              "I am angry.",
-              "I am calm."
+              "am",
+              "is",
+              "are"
             ],
-            "answer": "I am excited.",
             "taskType": "functional_language"
           },
           {
             "itemId": "english-pre-a1-m008-grammar-ex01-i05",
             "position": 5,
-            "prompt": "Selecciona el modelo que significa: “Estoy enfadado/a.”",
+            "prompt": "Complete: I ___ angry.",
             "evaluation": {
               "type": "single_choice"
             },
             "options": [
-              "I am calm.",
-              "I am angry.",
-              "I am a student."
+              "am",
+              "is",
+              "are"
             ],
-            "answer": "I am angry.",
             "taskType": "functional_language"
           },
           {
             "itemId": "english-pre-a1-m008-grammar-ex01-i06",
             "position": 6,
-            "prompt": "Selecciona el modelo que significa: “Estoy tranquilo/a.”",
+            "prompt": "Complete: I ___ calm.",
             "evaluation": {
               "type": "single_choice"
             },
             "options": [
-              "I am a student.",
-              "I am a teacher.",
-              "I am calm."
+              "am",
+              "is",
+              "are"
             ],
-            "answer": "I am calm.",
             "taskType": "functional_language"
           },
           {
             "itemId": "english-pre-a1-m008-grammar-ex01-i07",
             "position": 7,
-            "prompt": "Selecciona el modelo que significa: “Soy estudiante.”",
+            "prompt": "Complete: I ___ a student.",
             "evaluation": {
               "type": "single_choice"
             },
             "options": [
-              "I am a student.",
-              "I am a teacher.",
-              "I am here today."
+              "am",
+              "is",
+              "are"
             ],
-            "answer": "I am a student.",
             "taskType": "functional_language"
           },
           {
             "itemId": "english-pre-a1-m008-grammar-ex01-i08",
             "position": 8,
-            "prompt": "Selecciona el modelo que significa: “Soy profesor/a.”",
+            "prompt": "Complete: I ___ a teacher.",
             "evaluation": {
               "type": "single_choice"
             },
             "options": [
-              "I am here today.",
-              "I am a teacher.",
-              "I am a child."
+              "am",
+              "is",
+              "are"
             ],
-            "answer": "I am a teacher.",
             "taskType": "functional_language"
           },
           {
             "itemId": "english-pre-a1-m008-grammar-ex01-i09",
             "position": 9,
-            "prompt": "Selecciona el modelo que significa: “Estoy aquí hoy.”",
+            "prompt": "Complete: I ___ here today.",
             "evaluation": {
               "type": "single_choice"
             },
             "options": [
-              "I am a child.",
-              "I am happy.",
-              "I am here today."
+              "am",
+              "is",
+              "are"
             ],
-            "answer": "I am here today.",
             "taskType": "functional_language"
           },
           {
             "itemId": "english-pre-a1-m008-grammar-ex01-i10",
             "position": 10,
-            "prompt": "Selecciona el modelo que significa: “Soy un niño / una niña.”",
+            "prompt": "Choose the correct sentence.",
             "evaluation": {
               "type": "single_choice"
             },
             "options": [
               "I am a child.",
-              "I am happy.",
-              "I am sad."
+              "I is a child.",
+              "I are a child."
             ],
-            "answer": "I am a child.",
             "taskType": "functional_language"
           }
         ]
@@ -1173,7 +1163,8 @@
         "type": "reading_comprehension",
         "content": {
           "passageId": "english-pre-a1-m008-reading-passage-01",
-          "passage": "I am happy. I am sad. I am tired. I am excited. I am angry. I am calm. I am a student. I am a teacher. I am here today. I am a child."
+          "passage": "I am happy. I am sad. I am tired. I am excited. I am angry. I am calm. I am a student. I am a teacher. I am here today. I am a child.",
+          "passageTranslation": "Estoy feliz. Estoy triste. Estoy cansado/a. Estoy emocionado/a. Estoy enfadado/a. Estoy tranquilo/a. Soy estudiante. Soy profesor/a. Estoy aquí hoy. Soy un niño/una niña."
         },
         "items": [
           {
@@ -1717,7 +1708,7 @@
           ],
           "interaction": "select_place_move_replace",
           "audioTranscript": "At school, I am a student. I talk to a friend. I say: How are you? The friend is sad. I am happy. The teacher is calm. A boy is tired. A girl is excited. I am here.",
-          "translation": "En la escuela, soy estudiante. Hablo con un amigo. Digo: ¿Cómo estás? Mi amigo está triste. Estoy feliz. El profesor está tranquilo. Un niño está cansado. Una niña está emocionada. Estoy aquí."
+          "translation": "En la escuela soy estudiante. Hablo con un amigo. Digo: ¿Cómo estás? Mi amigo está triste. Estoy feliz. El profesor está tranquilo. Un niño está cansado. Una niña está emocionada. Estoy aquí."
         },
         "items": [
           {
