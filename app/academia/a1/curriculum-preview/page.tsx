@@ -22,7 +22,7 @@ export default function A1CurriculumPreviewPage() {
           <h1 className="mt-3 text-3xl font-black sm:text-5xl">Currículo A1 · Misiones 001–027</h1>
           <p className="mt-4 max-w-3xl text-base leading-7 text-indigo-100">Vista de integración para revisar la estructura de las misiones, sus ocho secciones y la progresión del primer tramo del curso.</p>
           <div className="mt-6 flex flex-wrap gap-2 text-xs font-bold">
-            <span className="rounded-full bg-white/15 px-3 py-2">26 misiones</span>
+            <span className="rounded-full bg-white/15 px-3 py-2">27 misiones</span>
             <span className="rounded-full bg-white/15 px-3 py-2">8 secciones por misión</span>
             <span className="rounded-full bg-amber-300/20 px-3 py-2 text-amber-100">Contenido en revisión</span>
           </div>
