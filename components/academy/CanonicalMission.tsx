@@ -648,16 +648,22 @@ export default function CanonicalMission({ missionData = missionSource as Missio
               {(section.exercise.theory?.patterns ?? []).filter(Boolean).map((pattern, i) => <article key={typeof pattern === "string" ? pattern : pattern.label ?? pattern.pattern ?? i} className="rounded-xl border border-[#e8ebf0] bg-[#fbfcfe] p-4">
                 {typeof pattern !== "string" && pattern.label && <p className="text-xs font-bold uppercase tracking-wide text-[#55779d]">{pattern.label}{getExampleTranslation(pattern.label) && <span className="mt-1 block text-[11px] font-medium normal-case tracking-normal text-[#64816f]">{getExampleTranslation(pattern.label)}</span>}</p>}
                 <p className="mt-2 font-semibold text-[#26364b]">{typeof pattern === "string" ? pattern : pattern.pattern}</p>{typeof pattern !== "string" && (pattern.translation ?? getExampleTranslation(pattern.pattern)) && <p className="mt-1 text-sm text-[#47745b]">{pattern.translation ?? getExampleTranslation(pattern.pattern)}</p>}
-                {typeof pattern !== "string" && pattern.examples?.length ? <ul className="mt-3 space-y-2">{pattern.examples.map((example, exampleIndex) => {
-                  const inlineTranslation = example.match(/^(.+?)\\s+[—–]\\s+(.+)$/);
-                  const displayedExample = inlineTranslation?.[1] ?? example;
-                  const translation = pattern.exampleTranslations?.[exampleIndex] ?? getExampleTranslation(displayedExample) ?? inlineTranslation?.[2];
-                  return <li key={example + exampleIndex} className="list-none rounded-xl border border-[#e8edf3] bg-white p-3">
-                    <p className="font-semibold leading-6 text-[#26364b]">{displayedExample}</p>
-                    {translation ? <p className="mt-1 text-sm leading-6 text-[#47745b]">{translation}</p> : <p className="mt-1 text-xs text-amber-700">Traducción pendiente de revisión académica.</p>}
-                    <button type="button" aria-label={`Escuchar ${displayedExample}`} onClick={() => speak(displayedExample)} className="mt-2 rounded-full border border-[#dce6f0] px-3 py-1.5 text-xs font-semibold text-[#55708f]">♫ Escuchar</button>
-                  </li>;
-                })}</ul> : null}
+                {typeof pattern !== "string" && pattern.examples?.length ? (
+                  <ul className="mt-3 space-y-2">
+                    {pattern.examples.map((example, exampleIndex) => {
+                      const inlineTranslation = example.match(/^(.+?)\\s+[—–]\\s+(.+)$/);
+                      const displayedExample = inlineTranslation?.[1] ?? example;
+                      const translation = pattern.exampleTranslations?.[exampleIndex] ?? getExampleTranslation(displayedExample) ?? inlineTranslation?.[2];
+                      return (
+                        <li key={example + exampleIndex} className="list-none rounded-xl border border-[#e8edf3] bg-white p-3">
+                          <p className="font-semibold leading-6 text-[#26364b]">{displayedExample}</p>
+                          {translation ? <p className="mt-1 text-sm leading-6 text-[#47745b]">{translation}</p> : <p className="mt-1 text-xs text-amber-700">Traducción pendiente de revisión académica.</p>}
+                          <button type="button" aria-label={`Escuchar ${displayedExample}`} onClick={() => speak(displayedExample)} className="mt-2 rounded-full border border-[#dce6f0] px-3 py-1.5 text-xs font-semibold text-[#55708f]">♫ Escuchar</button>
+                        </li>
+                      );
+                    })}
+                  </ul>
+                ) : null}
               </article>)}
             </div>
             <div className="mt-3 grid gap-3 sm:grid-cols-2">
