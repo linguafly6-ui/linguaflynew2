@@ -67,6 +67,19 @@ const mission026Reading = [
   { prompt:"How many candles are on the cake?", answer:"Fourteen.", options:["Fourteen.","Thirteen.","Fifteen."] }
 ];
 
+const mission027Reading = [
+  { prompt:"When does Ella go shopping?", answer:"On Saturday morning.", options:["On Saturday morning.","On Sunday afternoon.","On Friday evening."] },
+  { prompt:"Where does Ella go?", answer:"Green Street Shop.", options:["Green Street Shop.","Green Street Library.","Green Street Market."] },
+  { prompt:"How many notebooks does Ella need?", answer:"Two.", options:["Two.","One.","Three."] },
+  { prompt:"What colour is the pen?", answer:"Blue.", options:["Blue.","Black.","Red."] },
+  { prompt:"How much is each notebook?", answer:"Two pounds.", options:["Two pounds.","One pound.","Two pounds fifty."] },
+  { prompt:"How much is the pen?", answer:"One pound fifty.", options:["One pound fifty.","Fifty pence.","Two pounds."] },
+  { prompt:"How much is the bottle of water?", answer:"Eighty pence.", options:["Eighty pence.","Eighteen pence.","One pound."] },
+  { prompt:"How does Ella pay?", answer:"By card.", options:["By card.","In cash.","By cheque."] },
+  { prompt:"What does Ella ask the assistant for?", answer:"A receipt.", options:["A receipt.","A discount.","A bigger bag."] },
+  { prompt:"What does Ella do before she leaves?", answer:"She checks her shopping list and says thank you.", options:["She checks her shopping list and says thank you.","She buys another notebook.","She returns the water."] }
+];
+
 const mission028Reading = [
   { prompt:"When does Noah visit the library?", answer:"On Tuesday afternoon.", options:["On Tuesday afternoon.","On Monday morning.","On Friday evening."] },
   { prompt:"Who goes with Noah?", answer:"Mia.", options:["Mia.","His brother.","His teacher."] },
