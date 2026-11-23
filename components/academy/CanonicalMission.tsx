@@ -40,6 +40,10 @@ function visualForVocabulary(english: string, spanish: string) {
 const labels: Record<string, string> = { explore: "Exploración", practice: "Práctica", grammar: "Gramática", pronunciation: "Pronunciación", reading: "Lectura", writing: "Escritura", speaking: "Expresión oral", listening: "Comprensión auditiva" };
 
 const PRE_A1_EXAMPLE_TRANSLATIONS: Record<string, string> = {
+  "Choose the correct example of modals of obligation, advice and permission.": "Elige el ejemplo correcto de los verbos modales de obligación, consejo y permiso.",
+  "You should listen before giving advice.": "Deberías escuchar antes de dar consejos.",
+  "Did you went there yesterday?": "¿Fuiste allí ayer? (La forma correcta es «Did you go there yesterday?»).",
+  "She go to work every day.": "Ella va al trabajo todos los días. (La forma correcta es «She goes to work every day»).",
   "Correct: Jump! / Not: Jumps!": "Correcto: «¡Salta!». Incorrecto: añadir una -s al imperativo.",
   "one, two, three, four, five": "uno, dos, tres, cuatro, cinco",
   "six, seven, eight, nine, ten": "seis, siete, ocho, nueve, diez",
