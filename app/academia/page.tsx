@@ -31,11 +31,11 @@ export default function AcademyPage() {
         <p className="mt-3 text-slate-600">Cuenta experiencias, expresa opiniones y participa en conversaciones con mayor autonomía. La misión piloto ya está disponible.</p>
         <span className="mt-6 inline-block font-bold text-violet-700">Ver B1 →</span>
       </Link>
-      <Link href="/academia/c2" className="block rounded-3xl border border-violet-200 bg-violet-50 p-7 shadow-sm transition hover:border-violet-400">
-        <p className="text-sm font-extrabold tracking-widest text-violet-700">06 / PROFICIENCY</p>
-        <h2 className="mt-3 text-3xl font-black text-slate-950">C2 · Dominio avanzado</h2>
-        <p className="mt-3 text-slate-600">Interpreta matices, inferencias, argumentación y registros complejos. La misión piloto está disponible.</p>
-        <span className="mt-6 inline-block font-bold text-violet-700">Ver C2 →</span>
+      <Link href="/academia/b2" className="block rounded-3xl border border-cyan-200 bg-cyan-50 p-7 shadow-sm transition hover:border-cyan-400">
+        <p className="text-sm font-extrabold tracking-widest text-cyan-800">04 / UPPER-INTERMEDIATE</p>
+        <h2 className="mt-3 text-3xl font-black text-slate-950">B2 · Inglés intermedio alto</h2>
+        <p className="mt-3 text-slate-700">Desarrolla precisión, fluidez, argumentación y comunicación independiente a través de 100 misiones.</p>
+        <span className="mt-6 inline-block font-bold text-cyan-800">Ver curso B2 →</span>
       </Link>
       <Link href="/academia/speaking" className="block rounded-3xl border border-cyan-200 bg-cyan-50 p-7 shadow-sm transition hover:border-cyan-400 md:col-span-2">
         <p className="text-sm font-extrabold tracking-widest text-cyan-800">02 / PRONUNCIATION STUDIO</p>

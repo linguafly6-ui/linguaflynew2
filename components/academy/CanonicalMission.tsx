@@ -619,7 +619,7 @@ export default function CanonicalMission({ missionData = missionSource as Missio
     setRecording(false);
   }
   const section = mission.sections.find((item) => item.sectionKey === sectionKey) ?? mission.sections[0];
-  const activeItems = sectionKey === "practice" ? section.exercise.items.slice(0, 10) : section.exercise.items;
+  const activeItems = section.exercise.items;
   const item = activeItems[index];
   // Baraja las opciones por pregunta sin separar la respuesta correcta de su texto.
   const shuffledOptions = useMemo(() => {

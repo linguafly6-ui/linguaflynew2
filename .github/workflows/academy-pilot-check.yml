@@ -4,10 +4,11 @@ on:
   push:
     branches:
       - work/linguafly-academy-audit
-      - a2
+      - b2
     paths:
       - "app/academia/a1/001-canonical/**"
       - "app/academia/a2/**"
+      - "app/academia/b2/**"
       - "app/academia/b1/**"
       - "app/academia/c2/**"
       - "app/academia/page.tsx"
@@ -46,8 +47,8 @@ permissions:
   contents: read
 
 concurrency:
-  group: academy-c2-ci-${{ github.ref }}
-  cancel-in-progress: true
+  group: academy-pilot-${{ github.ref }}
+  cancel-in-progress: false
 
 jobs:
   validate:
@@ -93,9 +94,21 @@ jobs:
           npx --yes ajv-cli@5 validate --spec=draft2020 -s schemas/course-mission.schema.json -d content/canonical-missions/a2/021.json
           npx --yes ajv-cli@5 validate --spec=draft2020 -s schemas/course-mission.schema.json -d content/canonical-missions/a2/022.json
           npx --yes ajv-cli@5 validate --spec=draft2020 -s schemas/course-mission.schema.json -d content/canonical-missions/b1/001.json
-          for mission in content/canonical-missions/pre-a1/{001..100}.json; do
-            npx --yes ajv-cli@5 validate --spec=draft2020 -s schemas/course-mission.schema.json -d "$mission"
-          done
+          node -e 'const fs = require("node:fs"); const schema = JSON.parse(fs.readFileSync("schemas/course-mission.schema.json", "utf8")); fs.writeFileSync("/tmp/b2-array-schema.json", JSON.stringify({ $schema: schema.$schema, type: "array", items: schema, $defs: schema.$defs }));'
+          jq -s '[.[] | to_entries[].value]' content/canonical-missions/b2/unit-*.json > /tmp/b2-missions.json
+          npx --yes ajv-cli@5 validate --spec=draft2020 -s /tmp/b2-array-schema.json -d /tmp/b2-missions.json
+          npx --yes ajv-cli@5 validate --spec=draft2020 -s schemas/course-mission.schema.json -d content/canonical-missions/pre-a1/001.json
+          npx --yes ajv-cli@5 validate --spec=draft2020 -s schemas/course-mission.schema.json -d content/canonical-missions/pre-a1/002.json
+          npx --yes ajv-cli@5 validate --spec=draft2020 -s schemas/course-mission.schema.json -d content/canonical-missions/pre-a1/003.json
+          npx --yes ajv-cli@5 validate --spec=draft2020 -s schemas/course-mission.schema.json -d content/canonical-missions/pre-a1/004.json
+          npx --yes ajv-cli@5 validate --spec=draft2020 -s schemas/course-mission.schema.json -d content/canonical-missions/pre-a1/005.json
+          npx --yes ajv-cli@5 validate --spec=draft2020 -s schemas/course-mission.schema.json -d content/canonical-missions/pre-a1/006.json
+          npx --yes ajv-cli@5 validate --spec=draft2020 -s schemas/course-mission.schema.json -d content/canonical-missions/pre-a1/007.json
+          npx --yes ajv-cli@5 validate --spec=draft2020 -s schemas/course-mission.schema.json -d content/canonical-missions/pre-a1/008.json
+          npx --yes ajv-cli@5 validate --spec=draft2020 -s schemas/course-mission.schema.json -d content/canonical-missions/pre-a1/009.json
+          npx --yes ajv-cli@5 validate --spec=draft2020 -s schemas/course-mission.schema.json -d content/canonical-missions/pre-a1/010.json
+          npx --yes ajv-cli@5 validate --spec=draft2020 -s schemas/course-mission.schema.json -d content/canonical-missions/pre-a1/011.json
+          npx --yes ajv-cli@5 validate --spec=draft2020 -s schemas/course-mission.schema.json -d content/canonical-missions/pre-a1/014.json
 
       - name: Type-check application
         run: npx tsc --noEmit
