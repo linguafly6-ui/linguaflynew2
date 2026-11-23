@@ -42,9 +42,34 @@ const phraseModels: Record<string, string[]> = {
   "012":["There is a kitchen in my flat.","There are two bedrooms.","The sofa is in the living room.","The table is next to the window.","There is a garden behind the house.","The bathroom is small.","There are four chairs in the kitchen.","Is there a desk in your bedroom?","The lamp is on the table.","My flat has a big living room."],
   "013":["I eat bread for breakfast.","We have rice for lunch.","She likes pasta.","He eats an apple every day.","I have a banana.","Would you like some water?","I drink milk in the morning.","My father likes coffee.","They eat chicken and vegetables.","I don't like fish."],
   "014":["Can I see the menu, please?","I'd like a sandwich.","Can I have a glass of water?","I'd like a cup of coffee.","Would you like some soup?","Anything else?","No, thank you. That's all.","How much is the bill?","Can I pay by card?","Here you are. Thank you."],
+  "017":["What do you do in your free time?","I like listening to music.","She loves reading books.","He doesn't like cooking.","Do you like dancing?","Yes, I do. I love it.","Does Nina enjoy taking photos?","They like meeting their friends.","My favourite hobby is cycling.","We sometimes play games together."],
   "016":["I am wearing a blue shirt.","She wears black shoes.","He is wearing a red jacket.","What colour is your T-shirt?","I need a new pair of jeans.","This dress is white.","Do you have this skirt in black?","What size do you need?","I like your trainers.","The coat is too big."],
   "015":["I can swim very well.","She can't play tennis.","Can you ride a bicycle?","My brother plays football on Saturdays.","We can speak two languages.","He can't run very fast.","Can they play basketball?","I like swimming in the sea.","You can use my sports equipment.","I can't come to training today."]
 };
+const mission017Grammar = [
+  { prompt:"Choose the correct sentence.", answer:"I like reading.", options:["I like reading.","I likes reading.","I like read."] },
+  { prompt:"Complete: She ___ dancing.", answer:"likes", options:["likes","like","liking"] },
+  { prompt:"Choose the correct negative.", answer:"I don't like cooking.", options:["I don't like cooking.","I doesn't like cooking.","I not like cooking."] },
+  { prompt:"Choose the correct question.", answer:"Do you like music?", options:["Do you like music?","Are you like music?","Does you like music?"] },
+  { prompt:"Complete: ___ he like taking photos?", answer:"Does", options:["Does","Do","Is"] },
+  { prompt:"Choose the correct short answer.", answer:"Yes, I do.", options:["Yes, I do.","Yes, I like.","Yes, I am."] },
+  { prompt:"Complete: They ___ meeting friends.", answer:"love", options:["love","loves","loving"] },
+  { prompt:"Which form follows like in this lesson?", answer:"verb + -ing", options:["verb + -ing","verb + -s only","past form"] },
+  { prompt:"Choose the correct sentence.", answer:"He doesn't like watching TV.", options:["He doesn't like watching TV.","He don't like watching TV.","He doesn't likes watching TV."] },
+  { prompt:"Complete: What ___ you like doing?", answer:"do", options:["do","does","are"] }
+];
+const mission017Reading = [
+  { prompt:"What does Alex like doing?", answer:"Listening to music and cycling.", options:["Listening to music and cycling.","Cooking and dancing.","Taking photos and swimming."] },
+  { prompt:"Does Alex like cooking?", answer:"No, he doesn't.", options:["No, he doesn't.","Yes, he does.","The text doesn't say."] },
+  { prompt:"What is Nina's favourite hobby?", answer:"Taking photos.", options:["Taking photos.","Reading books.","Playing football."] },
+  { prompt:"Does Nina enjoy reading?", answer:"Yes, she does.", options:["Yes, she does.","No, she doesn't.","The text doesn't say."] },
+  { prompt:"When do Alex and Nina meet?", answer:"At the weekend.", options:["At the weekend.","Every morning.","After every lesson."] },
+  { prompt:"What do they sometimes do together?", answer:"Play games.", options:["Play games.","Cook dinner.","Watch a film at school."] },
+  { prompt:"Who likes dancing?", answer:"Nina.", options:["Nina.","Alex.","Both of them."] },
+  { prompt:"Which activity does Alex dislike?", answer:"Cooking.", options:["Cooking.","Cycling.","Listening to music."] },
+  { prompt:"What do they have in common?", answer:"They both like music.", options:["They both like music.","They both like cooking.","They both dislike reading."] },
+  { prompt:"What is the text mainly about?", answer:"Free-time activities and hobbies.", options:["Free-time activities and hobbies.","Clothes and colours.","A visit to a café."] }
+];
 const mission016Grammar = [
   { prompt:"Choose the correct word order.", answer:"a blue shirt", options:["a blue shirt","a shirt blue","blue a shirt"] },
   { prompt:"Complete: She ___ black shoes.", answer:"wears", options:["wears","wear","wearing"] },
@@ -143,12 +168,12 @@ function makeCanonicalMission(p: (typeof previewMissions)[number]): Mission {
     } else if (key === "practice") {
       items = vocab.map((word,i) => ({ itemId: `english-a1-m${id}-practice-${i+1}`, position:i+1, prompt:`Choose the Spanish meaning of “${word.english}”.`, answer:word.spanish, options:[word.spanish, ...vocab.filter((_,j)=>j!==i).slice(0,2).map(x=>x.spanish)], taskType:"vocabulary", evaluation:{type:"single_choice"} }));
     } else if (key === "grammar") {
-      items = (id === "016" ? mission016Grammar : id === "015" ? mission015Grammar : Array.from({length:10},(_,i) => ({ prompt:"Which grammar structure is practised in this mission?", answer:p.grammar[i%p.grammar.length], options:[p.grammar[i%p.grammar.length],p.grammar[(i+1)%p.grammar.length],p.grammar[(i+2)%p.grammar.length]] }))).map((q:any,i:number) => ({ itemId:`english-a1-m${id}-grammar-${i+1}`, position:i+1, ...q, evaluation:{type:"single_choice"} }));
+      items = (id === "017" ? mission017Grammar : id === "016" ? mission016Grammar : id === "015" ? mission015Grammar : Array.from({length:10},(_,i) => ({ prompt:"Which grammar structure is practised in this mission?", answer:p.grammar[i%p.grammar.length], options:[p.grammar[i%p.grammar.length],p.grammar[(i+1)%p.grammar.length],p.grammar[(i+2)%p.grammar.length]] }))).map((q:any,i:number) => ({ itemId:`english-a1-m${id}-grammar-${i+1}`, position:i+1, ...q, evaluation:{type:"single_choice"} }));
     } else if (key === "pronunciation") {
       items = vocab.flatMap((word,i) => word.english.split(" / ").map((term,partIndex) => ({ itemId:`english-a1-m${id}-pronunciation-${i+1}-${partIndex+1}`, position:i+1, word:term, translation:word.spanish.split(" / ")[partIndex] ?? word.spanish, pronunciationGuide:getSpanishPronunciationGuide(term), audio:"tts:en-GB", prompt:"Listen, read the guide and repeat the word.", options:[term,vocab[(i+1)%vocab.length].english,vocab[(i+2)%vocab.length].english], answer:term, taskType:"listening_and_guided_production" })));
     } else if (key === "reading") {
       content = { passageId:`english-a1-m${id}-reading-passage`, passage:passages[id] ?? p.goal };
-      items = (id === "016" ? mission016Reading : id === "015" ? mission015Reading : Array.from({length:10},(_,i) => ({ prompt:`Read the text and identify information about: ${vocab[i%vocab.length].english}.`, answer:vocab[i%vocab.length].english, options:[vocab[i%vocab.length].english,vocab[(i+1)%vocab.length].english,vocab[(i+2)%vocab.length].english] }))).map((q:any,i:number) => ({ itemId:`english-a1-m${id}-reading-${i+1}`, position:i+1, ...q, evaluation:{type:"single_choice"} }));
+      items = (id === "017" ? mission017Reading : id === "016" ? mission016Reading : id === "015" ? mission015Reading : Array.from({length:10},(_,i) => ({ prompt:`Read the text and identify information about: ${vocab[i%vocab.length].english}.`, answer:vocab[i%vocab.length].english, options:[vocab[i%vocab.length].english,vocab[(i+1)%vocab.length].english,vocab[(i+2)%vocab.length].english] }))).map((q:any,i:number) => ({ itemId:`english-a1-m${id}-reading-${i+1}`, position:i+1, ...q, evaluation:{type:"single_choice"} }));
     } else if (key === "writing") {
       items = phrases.map((sentence,i) => ({ itemId:`english-a1-m${id}-writing-${i+1}`, position:i+1, kind:"sentence", audio:"tts:en-GB", audioLocale:"en-GB", repeatCount:3, segments:[{segmentId:`english-a1-m${id}-writing-segment-${i+1}`,text:sentence}], expectedAnswer:sentence, evaluation:{type:"normalised_text"} }));
     } else if (key === "speaking") {
@@ -196,7 +221,7 @@ export default async function A1CurriculumPreviewMission({ params }: { params: P
         <div className="mt-5"><CanonicalMission missionData={data} /></div>
         <nav className="mt-8 flex items-center justify-between gap-3 border-t border-slate-200 pt-5">
           {mission !== "001" ? <Link href={`/academia/a1/curriculum-preview/${previous(mission)}`} className="rounded-xl border border-slate-200 bg-white px-4 py-3 text-sm font-semibold text-slate-700 hover:border-indigo-300">← Misión anterior</Link> : <span />}
-          {mission !== "016" ? <Link href={`/academia/a1/curriculum-preview/${next(mission)}`} className="rounded-xl bg-indigo-700 px-4 py-3 text-sm font-semibold text-white hover:bg-indigo-800">Misión siguiente →</Link> : <Link href="/academia/a1/curriculum-preview" className="rounded-xl bg-indigo-700 px-4 py-3 text-sm font-semibold text-white">Volver al índice →</Link>}
+          {mission !== "017" ? <Link href={`/academia/a1/curriculum-preview/${next(mission)}`} className="rounded-xl bg-indigo-700 px-4 py-3 text-sm font-semibold text-white hover:bg-indigo-800">Misión siguiente →</Link> : <Link href="/academia/a1/curriculum-preview" className="rounded-xl bg-indigo-700 px-4 py-3 text-sm font-semibold text-white">Volver al índice →</Link>}
         </nav>
       </div>
     </main>
