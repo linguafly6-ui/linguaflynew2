@@ -312,7 +312,7 @@ function speak(text: string) {
   window.speechSynthesis.speak(utterance);
 }
 
-function getSpanishPronunciationGuide(word: string) {
+function getSpanishPronunciationGuide(word: string): string {
   // Preview vocabulary sometimes pairs two terms (e.g. “Spain / Spanish”).
   // Resolve each term independently so both receive their own guide.
   const pairedTerms = word.split(/\s*\/\s*/).map((term) => term.trim()).filter(Boolean);
