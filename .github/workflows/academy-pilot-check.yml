@@ -1,4 +1,4 @@
-name: Academy pilot checks
+name: Academy + C2 continuous integration
 
 on:
   push:
@@ -9,6 +9,7 @@ on:
       - "app/academia/a1/001-canonical/**"
       - "app/academia/a2/**"
       - "app/academia/b1/**"
+      - "app/academia/c2/**"
       - "app/academia/page.tsx"
       - "app/academia/pre-a1/**"
       - "components/academy/CanonicalMission.tsx"
@@ -28,24 +29,31 @@ on:
       - "content/canonical-missions/**"
       - "content/missions/pre-a1/**"
       - "schemas/course-mission.schema.json"
+      - "scripts/validate_c2_missions.mjs"
       - "package.json"
       - "package-lock.json"
       - "tsconfig.json"
       - ".github/workflows/academy-pilot-check.yml"
   workflow_dispatch:
+    inputs:
+      require_all_c2_missions:
+        description: "Require all 100 C2 mission files to exist"
+        required: true
+        type: boolean
+        default: false
 
 permissions:
   contents: read
 
 concurrency:
-  group: academy-pilot-${{ github.ref }}
+  group: academy-c2-ci-${{ github.ref }}
   cancel-in-progress: true
 
 jobs:
   validate:
-    name: Validate content, types and production build
+    name: Validate all available C2 missions, types and production build
     runs-on: ubuntu-latest
-    timeout-minutes: 20
+    timeout-minutes: 30
     steps:
       - name: Check out repository
         uses: actions/checkout@v4
@@ -59,7 +67,7 @@ jobs:
       - name: Install locked dependencies
         run: npm ci
 
-      - name: Validate canonical mission JSON Schema
+      - name: Validate every C2 mission against the canonical schema
         run: |
           npx --yes ajv-cli@5 validate --spec=draft2020 -s schemas/course-mission.schema.json -d content/canonical-missions/a1/001.json
           npx --yes ajv-cli@5 validate --spec=draft2020 -s schemas/course-mission.schema.json -d content/canonical-missions/a2/001.json
