@@ -407,11 +407,10 @@ export default function CanonicalMission({ missionData = missionSource as Missio
     return words;
   }, [exploreTranslations]);
   const [hoveredWord, setHoveredWord] = useState<string | null>(null);
-  const renderTranslatedWords = (text?: string) => {
+  const renderTranslatedWords = (text?: string, forceTranslate = false) => {
     if (!text) return text;
-    // En Exploración, el significado ya aparece debajo de cada palabra o frase:
-    // no mostrar controles ni tooltips interactivos de traducción.
-    if (sectionKey === "explore") return text;
+    // En Exploración, reservar los tooltips interactivos para el vocabulario.
+    if (sectionKey === "explore" && !forceTranslate) return text;
     return text.split(/([\p{L}]+(?:['’][\p{L}]+)?)/gu).map((part, index) => {
       const translation = wordTranslations.get(part.toLocaleLowerCase("en-GB"));
       if (!translation) return part;
@@ -759,7 +758,7 @@ export default function CanonicalMission({ missionData = missionSource as Missio
                   <div aria-hidden="true" className="grid h-16 w-16 place-items-center rounded-2xl bg-[#f2f6fb] sm:h-20 sm:w-20">
                     {count ? <div className="flex flex-col items-center justify-center"><span className="text-3xl font-extrabold leading-none text-[#2872c8] sm:text-4xl">{count}</span><span className="mt-1 grid grid-cols-5 gap-0.5 text-[10px] leading-none sm:text-xs">{Array.from({length:count},(_,i)=><span key={i}>🍎</span>)}</span></div> : <span className="text-4xl sm:text-5xl">{word.length === 1 && /^[a-z]$/.test(word) ? "🔠" : visual[word] ?? visualForVocabulary(word, entry.spanish ?? "")}</span>}
                   </div>
-                  <p className="mt-3 break-words text-base font-bold text-[#26364b] sm:text-lg">{renderTranslatedWords(entry.english)}</p>
+                  <p className="mt-3 break-words text-base font-bold text-[#26364b] sm:text-lg">{renderTranslatedWords(entry.english, true)}</p>
                   <p className="mt-1 text-sm font-medium text-[#64816f]">{resolveSpanish(entry.english, entry.spanish)}</p>
                   <p className="mt-1 min-h-5 text-xs font-semibold text-[#55708f]">{pronunciationGuide || "Guía de pronunciación pendiente"}</p>
                   <button type="button" aria-label={`Escuchar pronunciación de ${entry.english}`} onClick={() => speak(entry.english ?? "")} className="mt-3 rounded-full border border-[#dce6f0] bg-white px-3 py-1.5 text-xs font-semibold text-[#55708f]">♫ Escuchar voz automática</button>
