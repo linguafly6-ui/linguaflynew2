@@ -1114,7 +1114,7 @@
         "exerciseId": "english-pre-a1-m095-listening-ex01",
         "type": "listening_gap_fill",
         "content": {
-          "audio": "tts:en-GB:Listen and complete. I need a a bottle of water. We buy a a packet of rice. Mum wants a a kilo of apples. We need a a litre of milk. Dad likes a a loaf of bread. We choose a a tin of beans. I put a a carton of juice in the trolley. We buy some carrots. There are many apples. There are a few pears.",
+          "audio": "tts:en-GB:Listen and complete. I need a bottle of water. We buy a packet of rice. Mum wants a kilo of apples. We need a litre of milk. Dad likes a loaf of bread. We choose a tin of beans. I put a carton of juice in the trolley. We buy some carrots. There are many apples. There are a few pears.",
           "audioLocale": "en-GB",
           "transcriptTemplate": "Listen and complete. I need a [[gap-01]] of water. We buy a [[gap-02]] of rice. Mum wants a [[gap-03]] of apples. We need a [[gap-04]] of milk. Dad likes a [[gap-05]] of bread. We choose a [[gap-06]] of beans. I put a [[gap-07]] of juice in the trolley. We buy [[gap-08]] carrots. There are [[gap-09]] apples. There are a [[gap-10]] pears.",
           "wordBank": [
@@ -1159,7 +1159,8 @@
               "word": "few"
             }
           ],
-          "interaction": "select_place_move_replace"
+          "interaction": "select_place_move_replace",
+          "translation": "Escucha y completa. Necesito una botella de agua. Compramos un paquete de arroz. Mamá quiere un kilo de manzanas. Necesitamos un litro de leche. A papá le gusta una barra de pan. Elegimos una lata de alubias. Pongo un cartón de zumo en el carrito. Compramos algunas zanahorias. Hay muchas manzanas. Hay unas pocas peras."
         },
         "items": [
           {
