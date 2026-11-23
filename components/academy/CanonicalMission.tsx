@@ -2912,8 +2912,10 @@ export default function CanonicalMission({ missionData = missionSource as Missio
     return words;
   }, [exploreTranslations]);
   const [hoveredWord, setHoveredWord] = useState<string | null>(null);
+  const translatedWordsRenderId = useRef(0);
   const renderTranslatedWords = (text?: string) => {
     if (!text) return text;
+    const renderId = ++translatedWordsRenderId.current;
     return text.split(/([\p{L}]+(?:['’][\p{L}]+)?)/gu).map((part, index) => {
       // Conserva los espacios como separadores reales entre las palabras interactivas.
       if (/^\s+$/u.test(part)) return part;
@@ -2922,7 +2924,7 @@ export default function CanonicalMission({ missionData = missionSource as Missio
       // Así cada palabra de una expresión inglesa mantiene acceso a su significado contextual.
       const translation = wordTranslations.get(part.toLocaleLowerCase("en-GB")) ?? getExampleTranslation(part);
       if (!translation) return part;
-      const wordId = `${index}:${part.toLocaleLowerCase("en-GB")}`;
+      const wordId = `${renderId}:${index}:${part.toLocaleLowerCase("en-GB")}`;
       const isOpen = hoveredWord === wordId;
       return (
         <button
