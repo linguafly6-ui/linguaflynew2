@@ -333,10 +333,7 @@ const C1_PRACTICE_WORD_TRANSLATIONS: Record<string, string> = {
   "correct": "correcto",
   "incorrect": "incorrecto",
   "following": "siguiente",
-  "statement": "afirmación",
   "statements": "afirmaciones",
-  "choose": "elegir",
-  "complete": "completar",
   "match": "emparejar",
   "matching": "correspondencia",
   "gap": "hueco",
@@ -346,7 +343,6 @@ const C1_PRACTICE_WORD_TRANSLATIONS: Record<string, string> = {
   "blanks": "espacios en blanco",
   "explain": "explicar",
   "explanation": "explicación",
-  "meaning": "significado",
   "translate": "traducir",
   "translation": "traducción",
   "example": "ejemplo",
@@ -356,7 +352,6 @@ const C1_PRACTICE_WORD_TRANSLATIONS: Record<string, string> = {
   "use": "usar",
   "form": "forma",
   "forms": "formas",
-  "tense": "tiempo verbal",
   "clause": "cláusula / oración subordinada",
   "clauses": "cláusulas / oraciones subordinadas",
   "verb": "verbo",
@@ -1818,7 +1813,7 @@ export default function CanonicalMission({ missionData = missionSource as Missio
     const add = (english?: string, spanish?: string, overwrite = false) => {
       if (!english?.trim() || !spanish?.trim()) return;
       const value = spanish.trim();
-      if (/^(frase|expresión|texto|modelo|estructura|repaso|práctica|practica|contenido|significado|saludar|despedirse|preguntar|responder|expresar|reconocer|identificar|presentar|hablar|usar|utilizar|distinguir|aprender|comprender|observar|leer|elegir|decir|describir|fórmula|regla|concordancia|orden de las palabras)/i.test(value)) return;
+      if (/^(?:frase|expresión|texto|modelo|estructura|repaso|práctica|practica|contenido|significado|saludar|despedirse|preguntar|responder|expresar|reconocer|identificar|presentar|hablar|usar|utilizar|distinguir|aprender|comprender|observar|leer|elegir|decir|describir|fórmula|regla|concordancia|orden de las palabras)$/i.test(value)) return;
       const key = normalise(english);
       if (overwrite || !translations.has(key)) translations.set(key, value);
     };
