@@ -38,7 +38,11 @@ jobs:
           cat preview-deployment.json
           PREVIEW_URL="$(node -e '
             const fs = require("node:fs");
-            const data = JSON.parse(fs.readFileSync("preview-deployment.json", "utf8"));
+            const raw = fs.readFileSync("preview-deployment.json", "utf8");
+            // Wrangler may print progress lines before its --json payload.
+            const jsonStart = raw.indexOf("{");
+            if (jsonStart < 0) throw new Error("Wrangler did not return deployment JSON");
+            const data = JSON.parse(raw.slice(jsonStart));
             const urls = [];
             const visit = (value) => {
               if (typeof value === "string" && /^https:\/\//.test(value) && value.includes("workers.dev")) urls.push(value);
