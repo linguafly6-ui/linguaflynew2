@@ -2,6 +2,7 @@
 
 import { useEffect, useMemo, useRef, useState } from "react";
 import missionSource from "@/content/canonical-missions/a1/001.json";
+import britishIpa from "@/content/dictionaries/en-GB-ipa.json";
 
 type DictationSegment = { segmentId: string; text: string };
 type Item = { itemId: string; english?: string; spanish?: string; prompt?: string; answer?: string; options?: string[]; word?: string; translation?: string; pronunciationGuide?: string; expectedAnswer?: string; kind?: string; audioLocale?: string; audio?: string; repeatCount?: number; segments?: DictationSegment[]; modelAnswer?: string; focus?: string; expectedWordId?: string; gapToken?: string; position: number };
@@ -9,6 +10,33 @@ type LessonEntry = { english: string; spanish: string; note?: string; prompt?: s
 type Lesson = { phrases: LessonEntry[]; grammar: LessonEntry[]; reading: LessonEntry[]; writing: LessonEntry[]; speaking: LessonEntry[]; listening: LessonEntry[]; examples?: LessonEntry[]; communication?: LessonEntry[] };
 type Section = { sectionId: string; sectionKey: string; position: number; title?: string; exercise: { exerciseId: string; type: string; items: Item[]; lesson?: Lesson; theory?: { title: string; explanation: string; tip: string; patterns: ({ label?: string; pattern: string; translation?: string; examples?: string[]; exampleTranslations?: string[] } | string)[] }; content?: { passageId?: string; passage?: string; audio?: string; audioTranscript?: string; transcriptTemplate?: string; wordBank?: { wordId: string; word: string }[]; translation?: string; blocks?: { position?: number; title?: string; content?: string; example?: string; translation?: string }[] } } };
 export type Mission = { course: { level: string }; unit: { title: string }; mission: { title: string; position?: number }; sections: Section[] };
+function visualForVocabulary(english: string, spanish: string) {
+  const source = `${english} ${spanish}`.toLowerCase();
+  const groups: [string[], string][] = [
+    [["trabajo","empleo","profesión","oficina","empresa","jefe","reunión","salario","carrera","entrevista","cliente","equipo"],"💼"],
+    [["viaje","viajar","turismo","viajero","aeropuerto","vuelo","tren","autobús","hotel","equipaje","billete","destino","mapa","carretera"],"🧳"],
+    [["familia","madre","padre","hermano","hermana","abuelo","abuela","hijo","hija","pariente"],"👨‍👩‍👧"],
+    [["amigo","amistad","relación","pareja","vecino","compañero","comunidad"],"🫂"],
+    [["salud","médico","doctor","hospital","dolor","enfermo","síntoma","medicina","descanso","sueño","estrés","bienestar","ejercicio"],"🩺"],
+    [["comida","alimento","desayuno","almuerzo","cena","fruta","verdura","bebida","cocinar","restaurante"],"🍎"],
+    [["estudio","aprender","enseñar","curso","clase","escuela","universidad","examen","conocimiento","habilidad","idioma","gramática"],"📚"],
+    [["cultura","tradición","costumbre","festival","museo","arte","música","película","teatro","libro","historia"],"🎭"],
+    [["dinero","precio","coste","gasto","ahorro","pagar","compra","vender","presupuesto","descuento","factura"],"💳"],
+    [["tecnología","internet","digital","ordenador","móvil","teléfono","aplicación","pantalla","red","mensaje","correo"],"📱"],
+    [["medioambiente","ambiente","naturaleza","clima","energía","reciclaje","residuo","contaminación","planeta","bosque","agua"],"🌍"],
+    [["tiempo","fecha","hora","mañana","tarde","noche","semana","mes","año","momento","plazo"],"🕒"],
+    [["problema","solución","decisión","opción","elección","resultado","objetivo","meta","progreso","mejora","reto","desafío"],"🧩"],
+    [["emoción","sentimiento","feliz","triste","miedo","confianza","orgullo","sorpresa","preocupación","esperanza"],"💬"],
+    [["ley","norma","regla","derecho","deber","permiso","seguridad","responsabilidad"],"⚖️"],
+    [["comunicación","conversación","hablar","escuchar","pregunta","respuesta","opinión","argumento","debate"],"🗣️"],
+    [["edificio","casa","vivienda","habitación","cocina","jardín","ciudad","pueblo","barrio"],"🏙️"],
+    [["deporte","correr","caminar","nadar","jugar","partido"],"🏃"],
+    [["ropa","vestir","zapato","camisa","abrigo","uniforme"],"👕"]
+  ];
+  for (const [words, emoji] of groups) if (words.some(word => source.includes(word))) return emoji;
+  return "💡";
+}
+
 const labels: Record<string, string> = { explore: "Exploración", practice: "Práctica", grammar: "Gramática", pronunciation: "Pronunciación", reading: "Lectura", writing: "Escritura", speaking: "Expresión oral", listening: "Comprensión auditiva" };
 
 const PRE_A1_EXAMPLE_TRANSLATIONS: Record<string, string> = {
@@ -284,6 +312,50 @@ function speak(text: string) {
   window.speechSynthesis.speak(utterance);
 }
 
+function getSpanishPronunciationGuide(word: string) {
+  const normalized = word.toLowerCase().replace(/’/g, "'");
+  const ipa = (britishIpa as Record<string, string>)[normalized];
+  if (!ipa) return "";
+
+  // Convert British IPA into an accessible Spanish-friendly reading aid.
+  // This is deliberately an approximation, not a second phonetic alphabet.
+  let value = ipa.replace(/^\/+|\/+$/g, "").replace(/[ˈˌː]/g, "");
+  // In Spanish-friendly spelling, /j/ after an initial consonant is read as
+  // an "i" glide: future becomes fiu-cha rather than fyu-cha.
+  value = value.replace(/([bcdfghjklmnñpqrstvwxyz])j(?=u)/g, "$1i");
+  const rules: Array<[RegExp, string]> = [
+    [/tʃ/g, "ch"], [/dʒ/g, "dy"], [/θ/g, "z"], [/ð/g, "d"],
+    [/ʃ/g, "sh"], [/ʒ/g, "zh"], [/ŋ/g, "ng"], [/ɹ/g, "r"],
+    [/j/g, "y"], [/h/g, "j"], [/eɪ/g, "ei"], [/aɪ/g, "ai"], [/aʊ/g, "au"], [/əʊ/g, "ou"], [/oʊ/g, "ou"], [/ɔɪ/g, "oi"], [/ɪə/g, "ia"], [/eə/g, "ea"], [/ʊə/g, "ua"], [/ɐ/g, "a"], [/ə/g, "e"],
+    [/ʌ/g, "a"], [/æ/g, "a"], [/ɑ/g, "a"], [/ɒ/g, "o"],
+    [/ɔ/g, "o"], [/ɛ/g, "e"], [/ɪ/g, "i"], [/i/g, "i"],
+    [/ʊ/g, "u"], [/u/g, "u"], [/ɜː?/g, "er"],
+    [/ɡ/g, "g"], [/r/g, "r"], [/w/g, "u"], [/v/g, "v"],
+    [/ð/g, "d"], [/z/g, "z"], [/s/g, "s"], [/ʔ/g, ""]
+  ];
+  for (const [pattern, sound] of rules) value = value.replace(pattern, sound);
+  value = value.replace(/[^a-zñ]/gi, "").replace(/([aeiou])\1+/g, "$1");
+  value = value.replace(/^e/, "a").replace(/e$/, "a");
+
+  // Add syllable breaks between vowel nuclei, keeping English digraphs intact.
+  // Example: fiucha -> fiu-cha; jelou -> je-lou.
+  const nuclei = [...value.matchAll(/[aeiou]+/g)];
+  const breaks: number[] = [];
+  for (let i = 0; i < nuclei.length - 1; i += 1) {
+    const end = (nuclei[i].index ?? 0) + nuclei[i][0].length;
+    const nextStart = nuclei[i + 1].index ?? end;
+    const cluster = value.slice(end, nextStart);
+    if (!cluster) continue;
+    const digraphStart = cluster.search(/ch|sh|zh|ng/);
+    const splitAt = digraphStart >= 0 ? end + digraphStart : cluster.length > 1 ? nextStart - 1 : end;
+    breaks.push(splitAt);
+  }
+  for (const position of breaks.reverse()) {
+    value = value.slice(0, position) + "-" + value.slice(position);
+  }
+  return value || "";
+}
+
 export default function CanonicalMission({ missionData = missionSource as Mission }: { missionData?: Mission }) {
   const mission = missionData;
   const exploreTranslations = useMemo(() => {
@@ -549,6 +621,17 @@ export default function CanonicalMission({ missionData = missionSource as Missio
   const section = mission.sections.find((item) => item.sectionKey === sectionKey) ?? mission.sections[0];
   const activeItems = sectionKey === "practice" ? section.exercise.items.slice(0, 10) : section.exercise.items;
   const item = activeItems[index];
+  // Baraja las opciones por pregunta sin separar la respuesta correcta de su texto.
+  const shuffledOptions = useMemo(() => {
+    if (!item?.options?.length) return [];
+    if (mission.course.level.toUpperCase() !== "B1") return item.options;
+    const options = [...item.options];
+    for (let i = options.length - 1; i > 0; i -= 1) {
+      const j = Math.floor(Math.random() * (i + 1));
+      [options[i], options[j]] = [options[j], options[i]];
+    }
+    return options;
+  }, [item?.itemId, item?.options]);
   const preA1Audio = mission.course.level.toUpperCase() === "PRE-A1" ? { audioTranscript: section.exercise.content?.audioTranscript ?? "", template: section.exercise.content?.transcriptTemplate ?? "", words: (section.exercise.content?.wordBank ?? []).map((entry) => entry.word) } : undefined;
   const listeningAudioTranscript = preA1Audio?.audioTranscript ?? section.exercise.content?.audioTranscript ?? "";
   const listeningTemplate = preA1Audio?.template ?? section.exercise.content?.transcriptTemplate ?? "";
@@ -567,7 +650,19 @@ export default function CanonicalMission({ missionData = missionSource as Missio
   };
   const pronunciationSection = mission.sections.find((entry) => entry.sectionKey === "pronunciation");
   const exploreItems = mission.sections.find((entry) => entry.sectionKey === "explore")?.exercise.items ?? [];
-  const pronunciationByWord = new Map([...exploreItems, ...(pronunciationSection?.exercise.items ?? [])].map((entry) => [((entry.word ?? entry.english) ?? "").toLowerCase(), entry.pronunciationGuide ?? ""]));
+  const pronunciationByWord = new Map<string, string>();
+  [...exploreItems, ...(pronunciationSection?.exercise.items ?? [])].forEach((entry) => {
+    const sourceWords = (entry.word ?? entry.english ?? "").toLowerCase().match(/[a-z]+(?:['’][a-z]+)?/g) ?? [];
+    const guideWords = (entry.pronunciationGuide ?? "").trim().split(/\s+/).filter(Boolean);
+    if (!sourceWords.length || !guideWords.length) return;
+    sourceWords.forEach((word, wordIndex) => {
+      const remainingWords = sourceWords.length - wordIndex;
+      const remainingGuide = guideWords.length - wordIndex;
+      const take = wordIndex === sourceWords.length - 1 ? remainingGuide : Math.max(1, remainingGuide - (remainingWords - 1));
+      const guide = guideWords.slice(wordIndex, wordIndex + take).join(" ");
+      if (guide && !pronunciationByWord.has(word)) pronunciationByWord.set(word, guide);
+    });
+  });
   const progress = useMemo(() => activeItems.length ? Math.round(((index + (checked ? 1 : 0)) / activeItems.length) * 100) : 0, [index, checked, activeItems.length]);
 
   function changeSection(key: string) {
@@ -655,10 +750,10 @@ export default function CanonicalMission({ missionData = missionSource as Missio
                 const numberCounts: Record<string,number> = {one:1,two:2,three:3,four:4,five:5,six:6,seven:7,eight:8,nine:9,ten:10};
                 const word = (entry.english ?? "").toLowerCase();
                 const count = numberCounts[word];
-                const pronunciationGuide = entry.pronunciationGuide ?? pronunciationByWord.get(word);
+                const pronunciationGuide = getSpanishPronunciationGuide(word) || entry.pronunciationGuide || pronunciationByWord.get(word);
                 return <article key={entry.itemId} className="flex min-w-0 flex-col items-center rounded-2xl border border-[#e8ebf0] bg-white p-3 text-center sm:p-4">
                   <div aria-hidden="true" className="grid h-16 w-16 place-items-center rounded-2xl bg-[#f2f6fb] sm:h-20 sm:w-20">
-                    {count ? <div className="flex flex-col items-center justify-center"><span className="text-3xl font-extrabold leading-none text-[#2872c8] sm:text-4xl">{count}</span><span className="mt-1 grid grid-cols-5 gap-0.5 text-[10px] leading-none sm:text-xs">{Array.from({length:count},(_,i)=><span key={i}>🍎</span>)}</span></div> : <span className="text-4xl sm:text-5xl">{word.length === 1 && /^[a-z]$/.test(word) ? "🔠" : visual[word] ?? "🖼️"}</span>}
+                    {count ? <div className="flex flex-col items-center justify-center"><span className="text-3xl font-extrabold leading-none text-[#2872c8] sm:text-4xl">{count}</span><span className="mt-1 grid grid-cols-5 gap-0.5 text-[10px] leading-none sm:text-xs">{Array.from({length:count},(_,i)=><span key={i}>🍎</span>)}</span></div> : <span className="text-4xl sm:text-5xl">{word.length === 1 && /^[a-z]$/.test(word) ? "🔠" : visual[word] ?? visualForVocabulary(word, entry.spanish ?? "")}</span>}
                   </div>
                   <p className="mt-3 break-words text-base font-bold text-[#26364b] sm:text-lg">{renderTranslatedWords(entry.english)}</p>
                   <p className="mt-1 text-sm font-medium text-[#64816f]">{resolveSpanish(entry.english, entry.spanish)}</p>
