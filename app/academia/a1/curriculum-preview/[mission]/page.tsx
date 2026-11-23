@@ -17,7 +17,7 @@ const spanish: Record<string, string> = {
   "letter":"letra","alphabet":"alfabeto","spell":"deletrear","first name":"nombre","surname":"apellido","capital letter":"mayúscula","small letter":"minúscula","double":"doble","vowel":"vocal",
   "who":"quién","what":"qué","where":"dónde","when":"cuándo","how":"cómo","how old":"qué edad","married":"casado/a","single":"soltero/a","address":"dirección","occupation":"ocupación",
   "zero":"cero","ten":"diez","twenty":"veinte","thirty":"treinta","forty":"cuarenta","fifty":"cincuenta","sixty":"sesenta","seventy":"setenta","eighty":"ochenta","ninety":"noventa",
-  "English":"inglés","Spanish":"español","French":"francés","German":"alemán","language":"idioma","speak":"hablar","read":"leer","write":"escribir","understand":"entender","practise":"practicar",
+  "English":"inglés","language":"idioma","speak":"hablar","read":"leer","write":"escribir","understand":"entender","practise":"practicar",
   "profile":"perfil","born":"nacido/a","live":"vivir","work":"trabajar","study":"estudiar","favourite":"favorito/a","hobby":"afición","free time":"tiempo libre","profile picture":"foto de perfil",
   "classmate":"compañero/a de clase","teacher":"profesor/a","student":"estudiante","friend":"amigo/a","boy":"chico","girl":"chica","man":"hombre","woman":"mujer","people":"personas","group":"grupo",
   "conversation":"conversación","question":"pregunta","answer":"respuesta","introduce":"presentar","again":"otra vez","slowly":"despacio","together":"juntos","class":"clase","new":"nuevo/a","welcome":"bienvenido/a",
