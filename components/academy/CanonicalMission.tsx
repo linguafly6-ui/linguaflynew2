@@ -282,6 +282,11 @@ const PRE_A1_EXAMPLE_TRANSLATIONS: Record<string, string> = {
   "Say the English sentence aloud.": "Di la frase en inglés en voz alta.",
   // Diccionario ampliado para tooltips de las secciones de Gramática B1.
   "choose": "elegir",
+  "use": "usar",
+  "uses": "usa",
+  "used": "usó/utilizó",
+  "using": "usando",
+  "of": "de",
   "correct": "correcto/a",
   "form": "forma",
   "sentence": "oración",
