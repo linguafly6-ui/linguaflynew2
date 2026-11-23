@@ -2788,7 +2788,7 @@ export default function CanonicalMission({ missionData = missionSource as Missio
       reading: "lectura / texto", text: "texto",
       writer: "autor", case: "caso", study: "estudio",
       belief: "creencia", experience: "experiencia", position: "postura",
-      reflect: "reflejar", reflects: "refleja", best: "mejor", most: "más",
+      reflect: "reflejar", reflects: "refleja", design: "diseño / diseñar", examines: "examina", mission: "misión", best: "mejor", most: "más",
       appropriately: "adecuadamente", hedged: "matizada / expresada con cautela",
       what: "qué", which: "cuál / qué", why: "por qué", how: "cómo",
       does: "auxiliar interrogativo", mean: "significar",
