@@ -765,15 +765,28 @@ export default function CanonicalMission({ missionData = missionSource as Missio
             {section.exercise.theory?.tip && <p className="mt-3 rounded-xl bg-[#f3f7fb] p-4 text-sm leading-6 text-[#53657b]"><strong>Recuerda:</strong> {section.exercise.theory.tip}</p>}
           </section>}
 
-          {(mission.sections.find(s => s.sectionKey === "pronunciation")?.exercise.items.length ?? 0) > 0 && <section>
-            <div className="mb-4"><p className="text-[10px] font-bold uppercase tracking-[.17em] text-[#8290a3]">04 · PRONUNCIACIÓN</p><h3 className="mt-1 text-lg font-semibold text-[#26364b]">Así suenan las palabras</h3><p className="mt-1 text-sm text-[#7b8798]">La guía está adaptada a hispanohablantes; las MAYÚSCULAS marcan la sílaba tónica. Es aproximada, no AFI.</p></div>
-            <div className="grid gap-3 sm:grid-cols-2 lg:grid-cols-3">
-              {mission.sections.find(s => s.sectionKey === "pronunciation")?.exercise.items.map(entry => <article key={entry.itemId} className="rounded-xl border border-[#e8ebf0] bg-white p-4">
-                <p className="text-lg font-bold text-[#26364b]">{renderTranslatedWords(entry.word)}</p><p className="text-sm text-[#64816f]">{entry.translation}</p><div className="mt-2 rounded-lg bg-[#f3f7fb] px-3 py-2"><p className="text-[10px] font-bold uppercase tracking-wide text-[#8290a3]">Guía para hispanohablantes</p><p className="mt-1 text-sm font-semibold text-[#55708f]">{getSpanishPronunciationGuide(entry.word ?? "") || entry.pronunciationGuide || "Guía de pronunciación pendiente"}</p></div>
-                <button type="button" onClick={() => speak(entry.word ?? "")} className="mt-3 rounded-full border border-[#dce6f0] px-3 py-1.5 text-xs font-semibold text-[#55708f]">♫ Escuchar</button>
-              </article>)}
-            </div>
-          </section>}
+          {(() => {
+            const pronunciationItems = mission.sections.find((entry) => entry.sectionKey === "pronunciation")?.exercise.items ?? [];
+            if (!pronunciationItems.length) return null;
+            return <section aria-label="Tarjetas de pronunciación" className="rounded-2xl border border-[#dce6f0] bg-[#f8fbff] p-4 sm:p-6">
+              <div className="mb-4"><p className="text-[10px] font-bold uppercase tracking-[.17em] text-[#55708f]">04 · PRONUNCIACIÓN</p><h3 className="mt-1 text-lg font-semibold text-[#26364b]">Escucha, lee y repite</h3><p className="mt-1 text-sm leading-6 text-[#64748b]">Cada tarjeta incluye una aproximación del sonido inglés escrita para hispanohablantes. La sílaba tónica aparece en MAYÚSCULAS.</p></div>
+              <div className="grid gap-3 sm:grid-cols-2 lg:grid-cols-3">
+                {pronunciationItems.map((entry) => {
+                  const word = entry.word ?? entry.english ?? "";
+                  const guide = entry.pronunciationGuide || getSpanishPronunciationGuide(word);
+                  return <article key={entry.itemId} className="flex flex-col rounded-xl border border-[#e2eaf3] bg-white p-4 shadow-sm">
+                    <p className="text-lg font-bold text-[#26364b]">{renderTranslatedWords(word)}</p>
+                    <p className="mt-1 text-sm text-[#64816f]">{entry.translation ?? entry.spanish ?? ""}</p>
+                    <div className="mt-3 rounded-lg border border-[#dce8f5] bg-[#f2f7fc] px-3 py-3">
+                      <p className="text-[10px] font-bold uppercase tracking-wide text-[#71839a]">Cómo pronunciarlo</p>
+                      <p className="mt-1 text-base font-bold leading-6 text-[#315b87]">{guide || "Guía en preparación"}</p>
+                    </div>
+                    <button type="button" onClick={() => speak(word)} className="mt-3 self-start rounded-full border border-[#dce6f0] px-3 py-2 text-xs font-semibold text-[#55708f]">♫ Escuchar palabra</button>
+                  </article>;
+                })}
+              </div>
+            </section>;
+          })()}
 
           {(section.exercise.lesson?.reading?.length ?? 0) > 0 && <section>
             <div className="mb-4"><p className="text-[10px] font-bold uppercase tracking-[.17em] text-[#8290a3]">05 · LECTURA</p><h3 className="mt-1 text-lg font-semibold text-[#26364b]">Lee y comprende el texto</h3><p className="mt-1 text-sm text-[#7b8798]">El texto se presenta en inglés con apoyo en español. Las frases clave y los modelos aparecen traducidos para que puedas comprenderlos antes de responder.</p></div>
