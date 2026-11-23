@@ -781,6 +781,9 @@
                     },
                     "passage": {
                       "$ref": "#/$defs/nonEmpty"
+                    },
+                    "passageTranslation": {
+                      "$ref": "#/$defs/nonEmpty"
                     }
                   }
                 },
@@ -1043,6 +1046,9 @@
                       "const": "select_place_move_replace"
                     },
                     "audioTranscript": {
+                      "$ref": "#/$defs/nonEmpty"
+                    },
+                    "translation": {
                       "$ref": "#/$defs/nonEmpty"
                     }
                   }

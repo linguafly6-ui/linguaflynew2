@@ -547,6 +547,24 @@ export default function CanonicalMission({ missionData = missionSource as Missio
             <p className="mt-2 max-w-3xl text-sm leading-6 text-[#61738a]">Aquí tienes explicado todo lo que aparecerá en esta misión. Cada palabra y frase en inglés se acompaña de su significado en español para que puedas aprender desde cero. Primero comprende; después escucha y practica.</p><p className="mt-2 text-xs leading-5 text-[#8792a3]">Aviso: los botones de escucha usan voz sintética del navegador; todavía no representan grabaciones de audio reales revisadas por el equipo académico.</p>
           </div>
 
+          {(() => {
+            const readingContent = mission.sections.find((entry) => entry.sectionKey === "reading")?.exercise.content as { passage?: string; passageTranslation?: string } | undefined;
+            const listeningContent = mission.sections.find((entry) => entry.sectionKey === "listening")?.exercise.content as { audioTranscript?: string; translation?: string } | undefined;
+            return <>
+              {readingContent?.passage && <section className="rounded-2xl border border-[#e8ebf0] bg-white p-5">
+                <div className="mb-3"><p className="text-[10px] font-bold uppercase tracking-[.17em] text-[#8290a3]">LECTURA COMPLETA</p><h3 className="mt-1 text-lg font-semibold text-[#26364b]">Lee en inglés y consulta el significado</h3></div>
+                <p className="whitespace-pre-line text-sm leading-7 text-[#26364b]">{readingContent.passage}</p>
+                {readingContent.passageTranslation && <p className="mt-3 whitespace-pre-line border-t border-[#e8ebf0] pt-3 text-sm leading-7 text-[#47745b]">{readingContent.passageTranslation}</p>}
+              </section>}
+              {listeningContent?.audioTranscript && <section className="rounded-2xl border border-[#e8ebf0] bg-[#fbfcfe] p-5">
+                <div className="mb-3"><p className="text-[10px] font-bold uppercase tracking-[.17em] text-[#8290a3]">DIÁLOGO COMPLETO</p><h3 className="mt-1 text-lg font-semibold text-[#26364b]">Comprende lo que vas a escuchar</h3></div>
+                <p className="whitespace-pre-line text-sm leading-7 text-[#26364b]">{listeningContent.audioTranscript.replace(/^tts:en-GB:/, "")}</p>
+                {listeningContent.translation && <p className="mt-3 whitespace-pre-line border-t border-[#e8ebf0] pt-3 text-sm leading-7 text-[#47745b]">{listeningContent.translation}</p>}
+                <button type="button" onClick={() => speak(listeningContent.audioTranscript?.replace(/^tts:en-GB:/, "") ?? "")} className="mt-3 rounded-full border border-[#dce6f0] bg-white px-3 py-2 text-xs font-semibold text-[#55708f]">♫ Escuchar diálogo</button>
+              </section>}
+            </>;
+          })()}
+
           {section.exercise.items.length > 0 && <section>
             <div className="mb-4"><p className="text-[10px] font-bold uppercase tracking-[.17em] text-[#8290a3]">01 · VOCABULARIO</p><h3 className="mt-1 text-lg font-semibold text-[#26364b]">Palabras esenciales</h3><p className="mt-1 text-sm text-[#7b8798]">Mira cada imagen, lee su significado y escucha cómo suena en inglés.</p></div>
             <div className="grid grid-cols-2 gap-3 sm:grid-cols-3 lg:grid-cols-5">
