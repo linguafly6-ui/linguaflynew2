@@ -119,6 +119,936 @@ const mission027Reading = [
   { prompt:"What does Ella do before she leaves?", answer:"She checks her shopping list and says thank you.", options:["She checks her shopping list and says thank you.","She buys another notebook.","She returns the water."] }
 ];
 
+const mission030Grammar = [
+  {
+    "prompt": "Choose the correct sentence.",
+    "answer": "I usually study after work.",
+    "options": [
+      "I usually study after work.",
+      "I study usually after work.",
+      "I usually studies after work."
+    ]
+  },
+  {
+    "prompt": "Complete: She ___ goes swimming on Tuesday.",
+    "answer": "usually",
+    "options": [
+      "usually",
+      "usual",
+      "use"
+    ]
+  },
+  {
+    "prompt": "Choose the correct position with to be.",
+    "answer": "He is never late.",
+    "options": [
+      "He is never late.",
+      "He never is late.",
+      "Never he is late."
+    ]
+  },
+  {
+    "prompt": "Complete: We ___ visit friends on Friday.",
+    "answer": "sometimes",
+    "options": [
+      "sometimes",
+      "sometime",
+      "some times"
+    ]
+  },
+  {
+    "prompt": "Which phrase means una vez por semana?",
+    "answer": "once a week",
+    "options": [
+      "once a week",
+      "twice a week",
+      "every day"
+    ]
+  },
+  {
+    "prompt": "Complete: I play tennis ___ a week.",
+    "answer": "twice",
+    "options": [
+      "twice",
+      "two",
+      "second"
+    ]
+  },
+  {
+    "prompt": "Choose the correct sentence.",
+    "answer": "They always have lunch together.",
+    "options": [
+      "They always have lunch together.",
+      "They have always lunch together.",
+      "They always has lunch together."
+    ]
+  },
+  {
+    "prompt": "Which adverb means nunca?",
+    "answer": "never",
+    "options": [
+      "never",
+      "usually",
+      "sometimes"
+    ]
+  },
+  {
+    "prompt": "Complete: He ___ works on Sundays.",
+    "answer": "never",
+    "options": [
+      "never",
+      "always",
+      "usually"
+    ]
+  },
+  {
+    "prompt": "Choose the correct question.",
+    "answer": "What is your schedule this week?",
+    "options": [
+      "What is your schedule this week?",
+      "What your schedule is this week?",
+      "What does your schedule this week?"
+    ]
+  }
+];
+
+const mission031Grammar = [
+  {
+    "prompt": "Complete: I ___ up at seven.",
+    "answer": "get",
+    "options": [
+      "get",
+      "gets",
+      "getting"
+    ]
+  },
+  {
+    "prompt": "Choose the correct third-person form.",
+    "answer": "She has breakfast at home.",
+    "options": [
+      "She has breakfast at home.",
+      "She have breakfast at home.",
+      "She haves breakfast at home."
+    ]
+  },
+  {
+    "prompt": "Complete: He ___ to work by bus.",
+    "answer": "goes",
+    "options": [
+      "goes",
+      "go",
+      "going"
+    ]
+  },
+  {
+    "prompt": "Choose the correct sentence.",
+    "answer": "We go to school in the morning.",
+    "options": [
+      "We go to school in the morning.",
+      "We goes to school in the morning.",
+      "We going to school in the morning."
+    ]
+  },
+  {
+    "prompt": "Complete: He ___ his homework after school.",
+    "answer": "does",
+    "options": [
+      "does",
+      "do",
+      "doing"
+    ]
+  },
+  {
+    "prompt": "Choose the correct phrase.",
+    "answer": "have lunch",
+    "options": [
+      "have lunch",
+      "has lunch I",
+      "do lunch"
+    ]
+  },
+  {
+    "prompt": "Complete: They ___ home after school.",
+    "answer": "go",
+    "options": [
+      "go",
+      "goes",
+      "going"
+    ]
+  },
+  {
+    "prompt": "Choose the correct sentence.",
+    "answer": "I go to bed at ten.",
+    "options": [
+      "I go to bed at ten.",
+      "I goes to bed at ten.",
+      "I going to bed at ten."
+    ]
+  },
+  {
+    "prompt": "Complete: The children ___ at night.",
+    "answer": "sleep",
+    "options": [
+      "sleep",
+      "sleeps",
+      "sleeping"
+    ]
+  },
+  {
+    "prompt": "Choose the correct question.",
+    "answer": "What time do you get up?",
+    "options": [
+      "What time do you get up?",
+      "What time you get up?",
+      "What time does you get up?"
+    ]
+  }
+];
+
+const mission032Grammar = [
+  {
+    "prompt": "Complete: I drink tea ___ the morning.",
+    "answer": "in",
+    "options": [
+      "in",
+      "at",
+      "on"
+    ]
+  },
+  {
+    "prompt": "Complete: The baby sleeps ___ night.",
+    "answer": "at",
+    "options": [
+      "at",
+      "in",
+      "on"
+    ]
+  },
+  {
+    "prompt": "Choose the correct phrase.",
+    "answer": "in the afternoon",
+    "options": [
+      "in the afternoon",
+      "at the afternoon",
+      "on the afternoon"
+    ]
+  },
+  {
+    "prompt": "Complete: We have lunch ___ midday.",
+    "answer": "at",
+    "options": [
+      "at",
+      "in",
+      "on"
+    ]
+  },
+  {
+    "prompt": "Choose the correct sentence.",
+    "answer": "She studies in the evening.",
+    "options": [
+      "She studies in the evening.",
+      "She studies at the evening.",
+      "She studies on the evening."
+    ]
+  },
+  {
+    "prompt": "Complete: I wash my face ___ breakfast.",
+    "answer": "before",
+    "options": [
+      "before",
+      "after",
+      "late"
+    ]
+  },
+  {
+    "prompt": "Complete: We play football ___ school.",
+    "answer": "after",
+    "options": [
+      "after",
+      "before",
+      "early"
+    ]
+  },
+  {
+    "prompt": "Which word means amanecer?",
+    "answer": "sunrise",
+    "options": [
+      "sunrise",
+      "midday",
+      "night"
+    ]
+  },
+  {
+    "prompt": "Choose the natural sentence.",
+    "answer": "I get up early.",
+    "options": [
+      "I get up early.",
+      "I get up in early.",
+      "I get early up."
+    ]
+  },
+  {
+    "prompt": "Choose the correct phrase.",
+    "answer": "at night",
+    "options": [
+      "at night",
+      "in night",
+      "on night"
+    ]
+  }
+];
+
+const mission033Grammar = [
+  {
+    "prompt": "Choose the correct time.",
+    "answer": "It is seven o'clock.",
+    "options": [
+      "It is seven o'clock.",
+      "It is seven hour.",
+      "It seven o'clock."
+    ]
+  },
+  {
+    "prompt": "What time is 8:30?",
+    "answer": "Half past eight.",
+    "options": [
+      "Half past eight.",
+      "Quarter past eight.",
+      "Quarter to eight."
+    ]
+  },
+  {
+    "prompt": "What time is 9:15?",
+    "answer": "Quarter past nine.",
+    "options": [
+      "Quarter past nine.",
+      "Quarter to nine.",
+      "Half past nine."
+    ]
+  },
+  {
+    "prompt": "What time is 9:45?",
+    "answer": "Quarter to ten.",
+    "options": [
+      "Quarter to ten.",
+      "Quarter past nine.",
+      "Half past ten."
+    ]
+  },
+  {
+    "prompt": "Complete: The lesson starts ___ nine.",
+    "answer": "at",
+    "options": [
+      "at",
+      "in",
+      "on"
+    ]
+  },
+  {
+    "prompt": "What time is 3:05?",
+    "answer": "Five minutes past three.",
+    "options": [
+      "Five minutes past three.",
+      "Five minutes to three.",
+      "Quarter past three."
+    ]
+  },
+  {
+    "prompt": "Choose the correct question.",
+    "answer": "What time is it?",
+    "options": [
+      "What time is it?",
+      "What time it is?",
+      "What is time it?"
+    ]
+  },
+  {
+    "prompt": "Complete: We meet ___ half past six.",
+    "answer": "at",
+    "options": [
+      "at",
+      "in",
+      "on"
+    ]
+  },
+  {
+    "prompt": "Which word means mediodía?",
+    "answer": "noon",
+    "options": [
+      "noon",
+      "midnight",
+      "minute"
+    ]
+  },
+  {
+    "prompt": "Which word means medianoche?",
+    "answer": "midnight",
+    "options": [
+      "midnight",
+      "noon",
+      "hour"
+    ]
+  }
+];
+
+const mission034Grammar = [
+  {
+    "prompt": "Complete: My class is ___ Tuesday.",
+    "answer": "on",
+    "options": [
+      "on",
+      "in",
+      "at"
+    ]
+  },
+  {
+    "prompt": "Complete: My birthday is ___ January.",
+    "answer": "in",
+    "options": [
+      "in",
+      "on",
+      "at"
+    ]
+  },
+  {
+    "prompt": "Choose the correct sentence.",
+    "answer": "We play tennis on Wednesday.",
+    "options": [
+      "We play tennis on Wednesday.",
+      "We play tennis in Wednesday.",
+      "We play tennis at Wednesday."
+    ]
+  },
+  {
+    "prompt": "Choose the correct phrase.",
+    "answer": "in February",
+    "options": [
+      "in February",
+      "on February",
+      "at February"
+    ]
+  },
+  {
+    "prompt": "Complete: The shop is open ___ Saturday.",
+    "answer": "on",
+    "options": [
+      "on",
+      "in",
+      "at"
+    ]
+  },
+  {
+    "prompt": "Choose the correct question.",
+    "answer": "When is your birthday?",
+    "options": [
+      "When is your birthday?",
+      "When your birthday is?",
+      "When does your birthday?"
+    ]
+  },
+  {
+    "prompt": "Complete: Her birthday is ___ the fifth of May.",
+    "answer": "on",
+    "options": [
+      "on",
+      "in",
+      "at"
+    ]
+  },
+  {
+    "prompt": "Which month comes after January?",
+    "answer": "February",
+    "options": [
+      "February",
+      "Monday",
+      "Sunday"
+    ]
+  },
+  {
+    "prompt": "Which word means cumpleaños?",
+    "answer": "birthday",
+    "options": [
+      "birthday",
+      "month",
+      "week"
+    ]
+  },
+  {
+    "prompt": "Choose the correct sentence.",
+    "answer": "Today is Monday.",
+    "options": [
+      "Today is Monday.",
+      "Today are Monday.",
+      "Today Monday is."
+    ]
+  }
+];
+
+const mission030Reading = [
+  {
+    "prompt": "What does Alex do on Monday and Wednesday?",
+    "answer": "He studies English after work.",
+    "options": [
+      "He studies English after work.",
+      "He goes swimming.",
+      "He visits his grandmother."
+    ]
+  },
+  {
+    "prompt": "When does Alex usually go swimming?",
+    "answer": "On Tuesday.",
+    "options": [
+      "On Tuesday.",
+      "On Thursday.",
+      "On Sunday."
+    ]
+  },
+  {
+    "prompt": "Who does Alex visit on Thursday?",
+    "answer": "His grandmother.",
+    "options": [
+      "His grandmother.",
+      "His teacher.",
+      "His friend."
+    ]
+  },
+  {
+    "prompt": "When does he sometimes meet friends?",
+    "answer": "On Friday evening.",
+    "options": [
+      "On Friday evening.",
+      "On Monday morning.",
+      "On Saturday afternoon."
+    ]
+  },
+  {
+    "prompt": "What time does he always have lunch?",
+    "answer": "At one o'clock.",
+    "options": [
+      "At one o'clock.",
+      "At twelve o'clock.",
+      "At two o'clock."
+    ]
+  },
+  {
+    "prompt": "How often does he play tennis?",
+    "answer": "Once a week.",
+    "options": [
+      "Once a week.",
+      "Twice a week.",
+      "Every day."
+    ]
+  },
+  {
+    "prompt": "How often does he visit the cinema?",
+    "answer": "Twice a month.",
+    "options": [
+      "Twice a month.",
+      "Once a month.",
+      "Every Friday."
+    ]
+  },
+  {
+    "prompt": "What does he do at the weekend?",
+    "answer": "He relaxes.",
+    "options": [
+      "He relaxes.",
+      "He works.",
+      "He studies English."
+    ]
+  },
+  {
+    "prompt": "Does Alex work on Sunday?",
+    "answer": "No, he never works on Sunday.",
+    "options": [
+      "No, he never works on Sunday.",
+      "Yes, he works all day.",
+      "The text doesn't say."
+    ]
+  },
+  {
+    "prompt": "What is the text about?",
+    "answer": "Alex's weekly routine.",
+    "options": [
+      "Alex's weekly routine.",
+      "Alex's holiday.",
+      "Alex's new job."
+    ]
+  }
+];
+
+const mission031Reading = [
+  {
+    "prompt": "What time does Leo get up?",
+    "answer": "At seven.",
+    "options": [
+      "At seven.",
+      "At half past seven.",
+      "At eight."
+    ]
+  },
+  {
+    "prompt": "Who does Leo have breakfast with?",
+    "answer": "His family.",
+    "options": [
+      "His family.",
+      "His friends.",
+      "His teacher."
+    ]
+  },
+  {
+    "prompt": "What time does he have breakfast?",
+    "answer": "At half past seven.",
+    "options": [
+      "At half past seven.",
+      "At seven.",
+      "At eight."
+    ]
+  },
+  {
+    "prompt": "How does Leo go to school?",
+    "answer": "By bus.",
+    "options": [
+      "By bus.",
+      "By car.",
+      "On foot."
+    ]
+  },
+  {
+    "prompt": "What time does he go to school?",
+    "answer": "At eight.",
+    "options": [
+      "At eight.",
+      "At seven.",
+      "At nine."
+    ]
+  },
+  {
+    "prompt": "What time does he have lunch?",
+    "answer": "At one o'clock.",
+    "options": [
+      "At one o'clock.",
+      "At twelve o'clock.",
+      "At two o'clock."
+    ]
+  },
+  {
+    "prompt": "What does he do after school?",
+    "answer": "He goes home and does his homework.",
+    "options": [
+      "He goes home and does his homework.",
+      "He goes swimming.",
+      "He visits his grandmother."
+    ]
+  },
+  {
+    "prompt": "What does Leo do at six?",
+    "answer": "He plays football with his friends.",
+    "options": [
+      "He plays football with his friends.",
+      "He watches television.",
+      "He has dinner."
+    ]
+  },
+  {
+    "prompt": "What time does he go to bed?",
+    "answer": "At ten.",
+    "options": [
+      "At ten.",
+      "At eight.",
+      "At eleven."
+    ]
+  },
+  {
+    "prompt": "Why does Leo sleep well?",
+    "answer": "Because he has a busy day.",
+    "options": [
+      "Because he has a busy day.",
+      "Because he gets up late.",
+      "Because he does not go to school."
+    ]
+  }
+];
+
+const mission032Reading = [
+  {
+    "prompt": "What does Anna drink in the morning?",
+    "answer": "Tea.",
+    "options": [
+      "Tea.",
+      "Coffee.",
+      "Milk."
+    ]
+  },
+  {
+    "prompt": "When does the family have lunch?",
+    "answer": "At midday.",
+    "options": [
+      "At midday.",
+      "In the evening.",
+      "At sunrise."
+    ]
+  },
+  {
+    "prompt": "What do the children do after school?",
+    "answer": "They play.",
+    "options": [
+      "They play.",
+      "They sleep.",
+      "They watch a film."
+    ]
+  },
+  {
+    "prompt": "What does Anna do in the afternoon?",
+    "answer": "She works.",
+    "options": [
+      "She works.",
+      "She goes swimming.",
+      "She visits her friends."
+    ]
+  },
+  {
+    "prompt": "What does the family do in the evening?",
+    "answer": "They watch television together.",
+    "options": [
+      "They watch television together.",
+      "They have breakfast.",
+      "They go to school."
+    ]
+  },
+  {
+    "prompt": "What do the children do before bed?",
+    "answer": "They wash their faces and read a story.",
+    "options": [
+      "They wash their faces and read a story.",
+      "They play football.",
+      "They have lunch."
+    ]
+  },
+  {
+    "prompt": "When does everyone sleep?",
+    "answer": "At night.",
+    "options": [
+      "At night.",
+      "At midday.",
+      "In the afternoon."
+    ]
+  },
+  {
+    "prompt": "Who gets ready for school in the morning?",
+    "answer": "Anna's son.",
+    "options": [
+      "Anna's son.",
+      "Anna's husband.",
+      "The neighbours."
+    ]
+  },
+  {
+    "prompt": "When do the children play?",
+    "answer": "After school.",
+    "options": [
+      "After school.",
+      "Before breakfast.",
+      "At midnight."
+    ]
+  },
+  {
+    "prompt": "What is the text about?",
+    "answer": "The Green family's day.",
+    "options": [
+      "The Green family's day.",
+      "A family holiday.",
+      "A school timetable."
+    ]
+  }
+];
+
+const mission033Reading = [
+  {
+    "prompt": "What time does the English lesson start?",
+    "answer": "At nine o'clock.",
+    "options": [
+      "At nine o'clock.",
+      "At ten o'clock.",
+      "At half past nine."
+    ]
+  },
+  {
+    "prompt": "When does the art class start?",
+    "answer": "At half past ten.",
+    "options": [
+      "At half past ten.",
+      "At quarter past ten.",
+      "At eleven."
+    ]
+  },
+  {
+    "prompt": "What time does the café open for lunch?",
+    "answer": "At quarter past twelve.",
+    "options": [
+      "At quarter past twelve.",
+      "At twelve o'clock.",
+      "At quarter to twelve."
+    ]
+  },
+  {
+    "prompt": "When does the music lesson begin?",
+    "answer": "At quarter to two.",
+    "options": [
+      "At quarter to two.",
+      "At quarter past two.",
+      "At half past two."
+    ]
+  },
+  {
+    "prompt": "What time does the last class finish?",
+    "answer": "At four o'clock.",
+    "options": [
+      "At four o'clock.",
+      "At five o'clock.",
+      "At three o'clock."
+    ]
+  },
+  {
+    "prompt": "What time does the centre close?",
+    "answer": "At five.",
+    "options": [
+      "At five.",
+      "At four.",
+      "At six."
+    ]
+  },
+  {
+    "prompt": "What starts at half past six on Friday?",
+    "answer": "A film.",
+    "options": [
+      "A film.",
+      "An English lesson.",
+      "A music lesson."
+    ]
+  },
+  {
+    "prompt": "Where is the timetable?",
+    "answer": "At Green Town Community Centre.",
+    "options": [
+      "At Green Town Community Centre.",
+      "At the train station.",
+      "At the school library."
+    ]
+  },
+  {
+    "prompt": "Which activity starts first?",
+    "answer": "The English lesson.",
+    "options": [
+      "The English lesson.",
+      "The art class.",
+      "The music lesson."
+    ]
+  },
+  {
+    "prompt": "What is the text about?",
+    "answer": "A community centre timetable.",
+    "options": [
+      "A community centre timetable.",
+      "A family routine.",
+      "A birthday calendar."
+    ]
+  }
+];
+
+const mission034Reading = [
+  {
+    "prompt": "What day is it today in the text?",
+    "answer": "Monday.",
+    "options": [
+      "Monday.",
+      "Tuesday.",
+      "Friday."
+    ]
+  },
+  {
+    "prompt": "When is Mia's English class?",
+    "answer": "On Tuesday.",
+    "options": [
+      "On Tuesday.",
+      "On Monday.",
+      "On Wednesday."
+    ]
+  },
+  {
+    "prompt": "What does Mia do on Wednesday?",
+    "answer": "She plays tennis.",
+    "options": [
+      "She plays tennis.",
+      "She visits her grandmother.",
+      "She meets her friends."
+    ]
+  },
+  {
+    "prompt": "Who does Mia visit on Thursday?",
+    "answer": "Her grandmother.",
+    "options": [
+      "Her grandmother.",
+      "Her teacher.",
+      "Her friend Lily."
+    ]
+  },
+  {
+    "prompt": "Why is Friday her favourite day?",
+    "answer": "Because she meets her friends.",
+    "options": [
+      "Because she meets her friends.",
+      "Because she has English class.",
+      "Because the shop is open."
+    ]
+  },
+  {
+    "prompt": "When is the shop open?",
+    "answer": "On Saturday.",
+    "options": [
+      "On Saturday.",
+      "On Sunday.",
+      "On Monday."
+    ]
+  },
+  {
+    "prompt": "What does Mia do on Sunday?",
+    "answer": "She relaxes.",
+    "options": [
+      "She relaxes.",
+      "She plays tennis.",
+      "She goes to school."
+    ]
+  },
+  {
+    "prompt": "When is Mia's birthday?",
+    "answer": "In January.",
+    "options": [
+      "In January.",
+      "In February.",
+      "In May."
+    ]
+  },
+  {
+    "prompt": "When is her brother's birthday?",
+    "answer": "In February.",
+    "options": [
+      "In February.",
+      "In January.",
+      "In June."
+    ]
+  },
+  {
+    "prompt": "When is Lily's birthday?",
+    "answer": "On the fifth of May.",
+    "options": [
+      "On the fifth of May.",
+      "On the fifth of January.",
+      "On the fifteenth of May."
+    ]
+  }
+];
+
 const mission029Reading = [
   { prompt:"Where does Emma work?", answer:"At Green Town School.", options:["At Green Town School.","At Green Street Hospital.","In a small shop."] },
   { prompt:"What is Emma's job?", answer:"She is a teacher.", options:["She is a teacher.","She is a doctor.","She is a driver."] },
@@ -403,12 +1333,12 @@ function makeCanonicalMission(p: (typeof previewMissions)[number]): Mission {
     } else if (key === "practice") {
       items = vocab.map((word,i) => ({ itemId: `english-a1-m${id}-practice-${i+1}`, position:i+1, prompt:`Choose the Spanish meaning of “${word.english}”.`, answer:word.spanish, options:[word.spanish, ...vocab.filter((_,j)=>j!==i).slice(0,2).map(x=>x.spanish)], taskType:"vocabulary", evaluation:{type:"single_choice"} }));
     } else if (key === "grammar") {
-      items = (id === "023" ? mission023Grammar : id === "021" ? mission021Grammar : id === "020" ? mission020Grammar : id === "019" ? mission019Grammar : id === "018" ? mission018Grammar : id === "017" ? mission017Grammar : id === "016" ? mission016Grammar : id === "015" ? mission015Grammar : Array.from({length:10},(_,i) => ({ prompt:"Which grammar structure is practised in this mission?", answer:p.grammar[i%p.grammar.length], options:[p.grammar[i%p.grammar.length],p.grammar[(i+1)%p.grammar.length],p.grammar[(i+2)%p.grammar.length]] }))).map((q:any,i:number) => ({ itemId:`english-a1-m${id}-grammar-${i+1}`, position:i+1, ...q, evaluation:{type:"single_choice"} }));
+      items = (id === "034" ? mission034Grammar : id === "033" ? mission033Grammar : id === "032" ? mission032Grammar : id === "031" ? mission031Grammar : id === "030" ? mission030Grammar : id === "023" ? mission023Grammar : id === "021" ? mission021Grammar : id === "020" ? mission020Grammar : id === "019" ? mission019Grammar : id === "018" ? mission018Grammar : id === "017" ? mission017Grammar : id === "016" ? mission016Grammar : id === "015" ? mission015Grammar : Array.from({length:10},(_,i) => ({ prompt:"Which grammar structure is practised in this mission?", answer:p.grammar[i%p.grammar.length], options:[p.grammar[i%p.grammar.length],p.grammar[(i+1)%p.grammar.length],p.grammar[(i+2)%p.grammar.length]] }))).map((q:any,i:number) => ({ itemId:`english-a1-m${id}-grammar-${i+1}`, position:i+1, ...q, evaluation:{type:"single_choice"} }));
     } else if (key === "pronunciation") {
       items = vocab.flatMap((word,i) => word.english.split(" / ").map((term,partIndex) => { const normalizedTerm = term.trim().toLowerCase().replace(/’/g, "'").replace(/[?….,!;:]/g, "").replace(/\s+/g, " "); const mission028PhraseGuides: Record<string, string> = { "how long can i borrow this": "jáu long kan ai bó-rou dis", "where can i find": "uér kan ai fáind", "i must return this book": "ai mast ri-térn dis buk", "what do you do": "uót du iu dú", "where do you work": "uér du iu uérk", "i'm a teacher": "áim e tí-cher", "he works in a hospital": "ji uérks in e jós-pi-tal", "she works in a shop": "shi uérks in e shóp", "what time does the library close": "uót táim daz de lái-bre-ri klóuz" }; const pronunciationGuide = (id === "028" || id === "029") ? mission028PhraseGuides[normalizedTerm] ?? getSpanishPronunciationGuide(term) ?? getSpanishPronunciationGuide(word.english) : getSpanishPronunciationGuide(term); return { itemId:`english-a1-m${id}-pronunciation-${i+1}-${partIndex+1}`, position:i+1, word:term, translation:word.spanish.split(" / ")[partIndex] ?? word.spanish, pronunciationGuide, audio:"tts:en-GB", prompt:(id === "028" || id === "029") && pronunciationGuide ? `Listen, read this pronunciation guide: ${pronunciationGuide}. Then repeat the word.` : "Listen, read the guide and repeat the word.", options:[term,vocab[(i+1)%vocab.length].english,vocab[(i+2)%vocab.length].english], answer:term, taskType:"listening_and_guided_production" }; }));
     } else if (key === "reading") {
       content = { passageId:`english-a1-m${id}-reading-passage`, passage:passages[id] ?? p.goal };
-      items = (id === "029" ? mission029Reading : id === "028" ? mission028Reading : id === "027" ? mission027Reading : id === "026" ? mission026Reading : id === "023" ? mission023Reading : id === "021" ? mission021Reading : id === "020" ? mission020Reading : id === "019" ? mission019Reading : id === "018" ? mission018Reading : id === "017" ? mission017Reading : id === "016" ? mission016Reading : id === "015" ? mission015Reading : Array.from({length:10},(_,i) => ({ prompt:`Read the text and identify information about: ${vocab[i%vocab.length].english}.`, answer:vocab[i%vocab.length].english, options:[vocab[i%vocab.length].english,vocab[(i+1)%vocab.length].english,vocab[(i+2)%vocab.length].english] }))).map((q:any,i:number) => ({ itemId:`english-a1-m${id}-reading-${i+1}`, position:i+1, ...q, evaluation:{type:"single_choice"} }));
+      items = (id === "034" ? mission034Reading : id === "033" ? mission033Reading : id === "032" ? mission032Reading : id === "031" ? mission031Reading : id === "030" ? mission030Reading : id === "029" ? mission029Reading : id === "028" ? mission028Reading : id === "027" ? mission027Reading : id === "026" ? mission026Reading : id === "023" ? mission023Reading : id === "021" ? mission021Reading : id === "020" ? mission020Reading : id === "019" ? mission019Reading : id === "018" ? mission018Reading : id === "017" ? mission017Reading : id === "016" ? mission016Reading : id === "015" ? mission015Reading : Array.from({length:10},(_,i) => ({ prompt:`Read the text and identify information about: ${vocab[i%vocab.length].english}.`, answer:vocab[i%vocab.length].english, options:[vocab[i%vocab.length].english,vocab[(i+1)%vocab.length].english,vocab[(i+2)%vocab.length].english] }))).map((q:any,i:number) => ({ itemId:`english-a1-m${id}-reading-${i+1}`, position:i+1, ...q, evaluation:{type:"single_choice"} }));
     } else if (key === "writing") {
       items = phrases.map((sentence,i) => ({ itemId:`english-a1-m${id}-writing-${i+1}`, position:i+1, kind:"sentence", audio:"tts:en-GB", audioLocale:"en-GB", repeatCount:3, segments:[{segmentId:`english-a1-m${id}-writing-segment-${i+1}`,text:sentence}], expectedAnswer:sentence, evaluation:{type:"normalised_text"} }));
     } else if (key === "speaking") {
