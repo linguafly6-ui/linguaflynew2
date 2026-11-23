@@ -1971,7 +1971,7 @@ export default function CanonicalMission({ missionData = missionSource as Missio
       expectations: "expectativas", explained: "explicó", expresses: "expresa",
       external: "externo", feel: "sentir", feeling: "sentimiento",
       feels: "siente", felt: "sintió", findings: "hallazgos", fit: "encajar",
-      focused: "centrado", follow: "seguir", framed: "planteado",
+      follow: "seguir", framed: "planteado",
       frequent: "frecuente", full: "completo", fully: "completamente",
       further: "adicional / más", generalised: "generalizado", goals: "objetivos",
       gradual: "gradual", grammatically: "gramaticalmente", greater: "mayor",
