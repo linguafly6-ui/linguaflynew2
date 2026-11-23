@@ -718,12 +718,12 @@ export default function CanonicalMission({ missionData = missionSource as Missio
             const listeningContent = mission.sections.find((entry) => entry.sectionKey === "listening")?.exercise.content as { audioTranscript?: string; audio?: string; translation?: string } | undefined;
             const listeningText = (listeningContent?.audioTranscript ?? listeningContent?.audio ?? "").replace(/^tts:en-GB:/, "");
             return <>
-              {readingContent?.passage && <section className="rounded-2xl border border-[#e8ebf0] bg-white p-5">
+              {!isB1Mission && readingContent?.passage && <section className="rounded-2xl border border-[#e8ebf0] bg-white p-5">
                 <div className="mb-3"><p className="text-[10px] font-bold uppercase tracking-[.17em] text-[#8290a3]">LECTURA COMPLETA</p><h3 className="mt-1 text-lg font-semibold text-[#26364b]">Lee en inglés y consulta el significado</h3></div>
                 <p className="whitespace-pre-line text-sm leading-7 text-[#26364b]">{renderTranslatedWords(readingContent.passage)}</p>
                 {readingContent.passageTranslation && <p className="mt-3 whitespace-pre-line border-t border-[#e8ebf0] pt-3 text-sm leading-7 text-[#47745b]">{readingContent.passageTranslation}</p>}
               </section>}
-              {listeningText && <section className="rounded-2xl border border-[#e8ebf0] bg-[#fbfcfe] p-5">
+              {!isB1Mission && listeningText && <section className="rounded-2xl border border-[#e8ebf0] bg-[#fbfcfe] p-5">
                 <div className="mb-3"><p className="text-[10px] font-bold uppercase tracking-[.17em] text-[#8290a3]">DIÁLOGO COMPLETO</p><h3 className="mt-1 text-lg font-semibold text-[#26364b]">Comprende lo que vas a escuchar</h3></div>
                 <p className="whitespace-pre-line text-sm leading-7 text-[#26364b]">{renderTranslatedWords(listeningText)}</p>
                 {listeningContent?.translation && <p className="mt-3 whitespace-pre-line border-t border-[#e8ebf0] pt-3 text-sm leading-7 text-[#47745b]">{listeningContent?.translation}</p>}
