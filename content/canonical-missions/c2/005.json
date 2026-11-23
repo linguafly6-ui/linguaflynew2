@@ -1,0 +1,1211 @@
+{
+  "schemaVersion": "1.2.0",
+  "contentVersion": 1,
+  "course": {
+    "courseId": "english-c2",
+    "level": "C2",
+    "language": "en-GB"
+  },
+  "unit": {
+    "unitId": "english-c2-unit-01",
+    "courseId": "english-c2",
+    "position": 1,
+    "title": "Meaning, Inference and Context"
+  },
+  "mission": {
+    "missionId": "english-c2-m005",
+    "unitId": "english-c2-unit-01",
+    "position": 5,
+    "title": "The Limits of Contextual Inference"
+  },
+  "sections": [
+    {
+      "sectionId": "english-c2-m005-explore",
+      "sectionKey": "explore",
+      "position": 1,
+      "title": "explore",
+      "exercise": {
+        "exerciseId": "english-c2-m005-explore-exercise",
+        "type": "vocabulary_pairs",
+        "items": [
+          {
+            "itemId": "english-c2-m005-explore-word-1",
+            "position": 1,
+            "english": "plausible",
+            "spanish": "verosímil",
+            "pronunciationGuide": "PLÓ-zi-bol",
+            "audio": "tts:en-GB"
+          },
+          {
+            "itemId": "english-c2-m005-explore-word-2",
+            "position": 2,
+            "english": "speculative",
+            "spanish": "especulativo",
+            "pronunciationGuide": "spé-kiu-la-tiv",
+            "audio": "tts:en-GB"
+          },
+          {
+            "itemId": "english-c2-m005-explore-word-3",
+            "position": 3,
+            "english": "corroborate",
+            "spanish": "corroborar",
+            "pronunciationGuide": "ko-RÓ-bo-reit",
+            "audio": "tts:en-GB"
+          },
+          {
+            "itemId": "english-c2-m005-explore-word-4",
+            "position": 4,
+            "english": "evidence",
+            "spanish": "prueba",
+            "pronunciationGuide": "É-vi-dens",
+            "audio": "tts:en-GB"
+          },
+          {
+            "itemId": "english-c2-m005-explore-word-5",
+            "position": 5,
+            "english": "inference",
+            "spanish": "inferencia",
+            "pronunciationGuide": "ÍN-fe-rens",
+            "audio": "tts:en-GB"
+          },
+          {
+            "itemId": "english-c2-m005-explore-word-6",
+            "position": 6,
+            "english": "underdetermined",
+            "spanish": "insuficientemente determinado",
+            "pronunciationGuide": "an-der-di-TÉR-mind",
+            "audio": "tts:en-GB"
+          },
+          {
+            "itemId": "english-c2-m005-explore-word-7",
+            "position": 7,
+            "english": "tentative",
+            "spanish": "provisional",
+            "pronunciationGuide": "TÉN-ta-tiv",
+            "audio": "tts:en-GB"
+          },
+          {
+            "itemId": "english-c2-m005-explore-word-8",
+            "position": 8,
+            "english": "alternative",
+            "spanish": "alternativa",
+            "pronunciationGuide": "ol-TÉR-na-tiv",
+            "audio": "tts:en-GB"
+          },
+          {
+            "itemId": "english-c2-m005-explore-word-9",
+            "position": 9,
+            "english": "contextualise",
+            "spanish": "contextualizar",
+            "pronunciationGuide": "kon-TÉKS-chu-a-laiz",
+            "audio": "tts:en-GB"
+          },
+          {
+            "itemId": "english-c2-m005-explore-word-10",
+            "position": 10,
+            "english": "overinterpret",
+            "spanish": "sobreinterpretar",
+            "pronunciationGuide": "óu-ver-in-TÉR-prit",
+            "audio": "tts:en-GB"
+          }
+        ],
+        "theory": {
+          "title": "Inference, evidence and interpretive restraint",
+          "explanation": "Context helps listeners infer intentions, attitudes and unstated links, but it rarely licenses certainty by itself. A plausible inference fits the available evidence; a speculative interpretation goes beyond it. Strong interpretation weighs wording, shared knowledge, conversational purpose, genre, relationship and subsequent behaviour. It also tests alternatives and asks what evidence would distinguish them. Where several readings remain viable, mark the conclusion as tentative rather than presenting it as fact.",
+          "tip": "Separate observation from inference: quote what was said, state what it may suggest, then identify what additional evidence would strengthen or weaken that reading.",
+          "patterns": [
+            {
+              "label": "Evidence ladder",
+              "pattern": "Distinguish explicit wording, reasonable implication and unsupported assumption.",
+              "examples": [
+                "“The deadline may be difficult” signals concern, but does not prove refusal."
+              ]
+            },
+            {
+              "label": "Alternative readings",
+              "pattern": "Test at least one credible explanation that differs from your first interpretation.",
+              "examples": [
+                "Silence may indicate disagreement, reflection or simply a poor connection."
+              ]
+            },
+            {
+              "label": "Calibration",
+              "pattern": "Match certainty to the strength and range of evidence.",
+              "examples": [
+                "“This may suggest” is more defensible than “This proves” when evidence is incomplete."
+              ]
+            },
+            {
+              "label": "Corroboration",
+              "pattern": "Look for independent evidence before treating an inference as established.",
+              "examples": [
+                "Later actions may clarify whether a cautious response was a rejection."
+              ]
+            }
+          ]
+        },
+        "lesson": {
+          "phrases": [
+            {
+              "english": "That is one plausible reading, but the evidence is not conclusive.",
+              "spanish": "Esa es una interpretación verosímil, pero las pruebas no son concluyentes.",
+              "note": "Reconoce una hipótesis sin convertirla en certeza."
+            },
+            {
+              "english": "We should distinguish what the speaker stated from what we infer.",
+              "spanish": "Debemos distinguir lo que afirmó el hablante de lo que inferimos.",
+              "note": "Separa contenido explícito e interpretación."
+            }
+          ],
+          "grammar": [
+            {
+              "english": "The response may have been intended as a polite refusal.",
+              "spanish": "Puede que la respuesta pretendiera ser una negativa cortés.",
+              "note": "Modalidad epistémica para expresar una interpretación provisional."
+            }
+          ],
+          "reading": [
+            {
+              "english": "The available evidence supports a tentative interpretation, not a definitive conclusion.",
+              "spanish": "Las pruebas disponibles respaldan una interpretación provisional, no una conclusión definitiva.",
+              "note": "Calibra el grado de certeza."
+            }
+          ],
+          "writing": [
+            {
+              "english": "Although the wording suggests reservations, it does not establish that the proposal was rejected.",
+              "spanish": "Aunque la formulación sugiere reservas, no demuestra que se rechazara la propuesta.",
+              "note": "Construye una conclusión proporcionada a la evidencia."
+            }
+          ],
+          "speaking": [
+            {
+              "english": "A second explanation remains possible, so I would treat the inference with caution.",
+              "spanish": "Sigue siendo posible una segunda explicación, así que trataría la inferencia con cautela.",
+              "prompt": "Evaluate an inference and explain its evidential limits.",
+              "promptSpanish": "Evalúa una inferencia y explica los límites de la evidencia."
+            }
+          ],
+          "listening": [
+            {
+              "english": "The director's silence was ambiguous until she clarified her position in writing.",
+              "spanish": "El silencio de la directora fue ambiguo hasta que aclaró su postura por escrito.",
+              "note": "Identifica qué evidencia posterior resuelve una ambigüedad."
+            }
+          ],
+          "examples": [
+            {
+              "english": "He said the proposal was interesting, then asked for a full cost analysis.",
+              "spanish": "Dijo que la propuesta era interesante y después pidió un análisis completo de costes.",
+              "note": "La petición posterior puede indicar interés, cautela o ambas cosas."
+            }
+          ],
+          "communication": [
+            {
+              "english": "I can see why you read it that way; what other evidence might support a different interpretation?",
+              "spanish": "Entiendo por qué lo interpretas así; ¿qué otras pruebas podrían respaldar una lectura distinta?",
+              "note": "Invita a contrastar hipótesis sin confrontación innecesaria."
+            }
+          ]
+        }
+      }
+    },
+    {
+      "sectionId": "english-c2-m005-practice",
+      "sectionKey": "practice",
+      "position": 2,
+      "title": "practice",
+      "exercise": {
+        "exerciseId": "english-c2-m005-practice-exercise",
+        "type": "mixed_practice",
+        "items": [
+          {
+            "itemId": "english-c2-m005-practice-1",
+            "position": 1,
+            "taskType": "contextual_inference",
+            "prompt": "A manager says, “The figures are interesting, although I would want to see the raw data.” What is the safest inference?",
+            "options": [
+              "The manager has rejected the report.",
+              "The manager sees potential but wants further evidence.",
+              "The manager believes the figures are fabricated."
+            ],
+            "answer": "The manager sees potential but wants further evidence.",
+            "evaluation": {
+              "type": "single_choice"
+            }
+          },
+          {
+            "itemId": "english-c2-m005-practice-2",
+            "position": 2,
+            "taskType": "contextual_inference",
+            "prompt": "A colleague does not reply to an invitation for two hours. What can be concluded?",
+            "options": [
+              "They are definitely offended.",
+              "They have certainly declined.",
+              "The reason for the silence is not yet established."
+            ],
+            "answer": "The reason for the silence is not yet established.",
+            "evaluation": {
+              "type": "single_choice"
+            }
+          },
+          {
+            "itemId": "english-c2-m005-practice-3",
+            "position": 3,
+            "taskType": "contextual_inference",
+            "prompt": "Which is the strongest evidence that a tentative refusal was intended?",
+            "options": [
+              "A later message explicitly declining the invitation.",
+              "A colleague's guess about the speaker's mood.",
+              "The fact that the reply was brief."
+            ],
+            "answer": "A later message explicitly declining the invitation.",
+            "evaluation": {
+              "type": "single_choice"
+            }
+          },
+          {
+            "itemId": "english-c2-m005-practice-4",
+            "position": 4,
+            "taskType": "contextual_inference",
+            "prompt": "What makes an interpretation speculative?",
+            "options": [
+              "It goes beyond what the available evidence can reasonably support.",
+              "It considers the wider context.",
+              "It acknowledges alternative explanations."
+            ],
+            "answer": "It goes beyond what the available evidence can reasonably support.",
+            "evaluation": {
+              "type": "single_choice"
+            }
+          },
+          {
+            "itemId": "english-c2-m005-practice-5",
+            "position": 5,
+            "taskType": "contextual_inference",
+            "prompt": "Which phrase best calibrates an uncertain conclusion?",
+            "options": [
+              "This proves beyond doubt that...",
+              "One possible explanation is that...",
+              "The only conceivable reason is..."
+            ],
+            "answer": "One possible explanation is that...",
+            "evaluation": {
+              "type": "single_choice"
+            }
+          },
+          {
+            "itemId": "english-c2-m005-practice-6",
+            "position": 6,
+            "taskType": "contextual_inference",
+            "prompt": "A speaker says, “We will consider the proposal.” What further evidence would be most useful?",
+            "options": [
+              "Whether the organisation later evaluates or acts on it.",
+              "The speaker's favourite colour.",
+              "The length of the sentence alone."
+            ],
+            "answer": "Whether the organisation later evaluates or acts on it.",
+            "evaluation": {
+              "type": "single_choice"
+            }
+          },
+          {
+            "itemId": "english-c2-m005-practice-7",
+            "position": 7,
+            "taskType": "contextual_inference",
+            "prompt": "Why should an analyst test alternative readings?",
+            "options": [
+              "To reduce confirmation bias and assess evidential fit.",
+              "To make every interpretation equally likely.",
+              "To avoid reaching any conclusion."
+            ],
+            "answer": "To reduce confirmation bias and assess evidential fit.",
+            "evaluation": {
+              "type": "single_choice"
+            }
+          },
+          {
+            "itemId": "english-c2-m005-practice-8",
+            "position": 8,
+            "taskType": "contextual_inference",
+            "prompt": "Which statement separates observation from inference?",
+            "options": [
+              "She paused for several seconds; this may indicate hesitation.",
+              "She was dishonest because she paused.",
+              "Her pause proves she opposed the plan."
+            ],
+            "answer": "She paused for several seconds; this may indicate hesitation.",
+            "evaluation": {
+              "type": "single_choice"
+            }
+          },
+          {
+            "itemId": "english-c2-m005-practice-9",
+            "position": 9,
+            "taskType": "contextual_inference",
+            "prompt": "When is an inference best described as corroborated?",
+            "options": [
+              "When independent evidence supports it.",
+              "When it matches our first impression.",
+              "When no alternative has been imagined."
+            ],
+            "answer": "When independent evidence supports it.",
+            "evaluation": {
+              "type": "single_choice"
+            }
+          },
+          {
+            "itemId": "english-c2-m005-practice-10",
+            "position": 10,
+            "taskType": "contextual_inference",
+            "prompt": "What should you do if two readings remain equally plausible?",
+            "options": [
+              "State the uncertainty and identify what evidence could resolve it.",
+              "Present your preferred reading as fact.",
+              "Ignore the less convenient reading."
+            ],
+            "answer": "State the uncertainty and identify what evidence could resolve it.",
+            "evaluation": {
+              "type": "single_choice"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "sectionId": "english-c2-m005-grammar",
+      "sectionKey": "grammar",
+      "position": 3,
+      "title": "grammar",
+      "exercise": {
+        "exerciseId": "english-c2-m005-grammar-exercise",
+        "type": "grammar",
+        "items": [
+          {
+            "itemId": "english-c2-m005-grammar-1",
+            "position": 1,
+            "taskType": "language_precision",
+            "prompt": "Choose the most cautious interpretation.",
+            "options": [
+              "The wording may indicate reluctance.",
+              "The wording proves hostility.",
+              "The speaker certainly intended an insult."
+            ],
+            "answer": "The wording may indicate reluctance.",
+            "evaluation": {
+              "type": "single_choice"
+            }
+          },
+          {
+            "itemId": "english-c2-m005-grammar-2",
+            "position": 2,
+            "taskType": "language_precision",
+            "prompt": "Complete: “The evidence is limited; the conclusion should therefore remain ___.”",
+            "options": [
+              "tentative",
+              "absolute",
+              "unqualified"
+            ],
+            "answer": "tentative",
+            "evaluation": {
+              "type": "single_choice"
+            }
+          },
+          {
+            "itemId": "english-c2-m005-grammar-3",
+            "position": 3,
+            "taskType": "language_precision",
+            "prompt": "Choose the sentence that correctly uses an epistemic modal.",
+            "options": [
+              "She might have misunderstood the implication.",
+              "She must to have misunderstood the implication.",
+              "She might misunderstood the implication."
+            ],
+            "answer": "She might have misunderstood the implication.",
+            "evaluation": {
+              "type": "single_choice"
+            }
+          },
+          {
+            "itemId": "english-c2-m005-grammar-4",
+            "position": 4,
+            "taskType": "language_precision",
+            "prompt": "Which construction explicitly concedes uncertainty?",
+            "options": [
+              "Although this is plausible, it is not conclusive.",
+              "Because this is plausible, it is certainly true.",
+              "This is plausible and cannot be questioned."
+            ],
+            "answer": "Although this is plausible, it is not conclusive.",
+            "evaluation": {
+              "type": "single_choice"
+            }
+          },
+          {
+            "itemId": "english-c2-m005-grammar-5",
+            "position": 5,
+            "taskType": "language_precision",
+            "prompt": "Choose the best reporting verb for a cautious interpretation.",
+            "options": [
+              "The wording suggests that further review may be needed.",
+              "The wording guarantees that further review is needed.",
+              "The wording commands that further review is needed."
+            ],
+            "answer": "The wording suggests that further review may be needed.",
+            "evaluation": {
+              "type": "single_choice"
+            }
+          },
+          {
+            "itemId": "english-c2-m005-grammar-6",
+            "position": 6,
+            "taskType": "language_precision",
+            "prompt": "Complete: “Had we obtained independent confirmation, we ___ made a firmer claim.”",
+            "options": [
+              "could have",
+              "can have",
+              "will have"
+            ],
+            "answer": "could have",
+            "evaluation": {
+              "type": "single_choice"
+            }
+          },
+          {
+            "itemId": "english-c2-m005-grammar-7",
+            "position": 7,
+            "taskType": "language_precision",
+            "prompt": "Which sentence distinguishes fact from interpretation?",
+            "options": [
+              "The email arrived at noon; its brevity may suggest urgency.",
+              "The email arrived at noon, proving the sender was angry.",
+              "The sender was angry because the email existed."
+            ],
+            "answer": "The email arrived at noon; its brevity may suggest urgency.",
+            "evaluation": {
+              "type": "single_choice"
+            }
+          },
+          {
+            "itemId": "english-c2-m005-grammar-8",
+            "position": 8,
+            "taskType": "language_precision",
+            "prompt": "Choose the grammatically correct hedge.",
+            "options": [
+              "It would appear that the policy has had limited impact.",
+              "It would appears that the policy has had limited impact.",
+              "It appear that the policy has had limited impact."
+            ],
+            "answer": "It would appear that the policy has had limited impact.",
+            "evaluation": {
+              "type": "single_choice"
+            }
+          },
+          {
+            "itemId": "english-c2-m005-grammar-9",
+            "position": 9,
+            "taskType": "language_precision",
+            "prompt": "Which sentence avoids overstating causation?",
+            "options": [
+              "The timing is consistent with an effect, but does not establish one.",
+              "The timing proves that the event caused the effect.",
+              "The timing must have caused everything."
+            ],
+            "answer": "The timing is consistent with an effect, but does not establish one.",
+            "evaluation": {
+              "type": "single_choice"
+            }
+          },
+          {
+            "itemId": "english-c2-m005-grammar-10",
+            "position": 10,
+            "taskType": "language_precision",
+            "prompt": "Choose the most accurate formulation.",
+            "options": [
+              "The available evidence lends some support to this reading.",
+              "The available evidence makes this reading an unquestionable fact.",
+              "The available evidence eliminates every alternative."
+            ],
+            "answer": "The available evidence lends some support to this reading.",
+            "evaluation": {
+              "type": "single_choice"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "sectionId": "english-c2-m005-pronunciation",
+      "sectionKey": "pronunciation",
+      "position": 4,
+      "title": "pronunciation",
+      "exercise": {
+        "exerciseId": "english-c2-m005-pronunciation-exercise",
+        "type": "pronunciation_cards",
+        "items": [
+          {
+            "itemId": "english-c2-m005-pronunciation-1",
+            "position": 1,
+            "word": "plausible",
+            "translation": "verosímil",
+            "pronunciationGuide": "PLÓ-zi-bol",
+            "audio": "tts:en-GB"
+          },
+          {
+            "itemId": "english-c2-m005-pronunciation-2",
+            "position": 2,
+            "word": "speculative",
+            "translation": "especulativo",
+            "pronunciationGuide": "spé-kiu-la-tiv",
+            "audio": "tts:en-GB"
+          },
+          {
+            "itemId": "english-c2-m005-pronunciation-3",
+            "position": 3,
+            "word": "corroborate",
+            "translation": "corroborar",
+            "pronunciationGuide": "ko-RÓ-bo-reit",
+            "audio": "tts:en-GB"
+          },
+          {
+            "itemId": "english-c2-m005-pronunciation-4",
+            "position": 4,
+            "word": "evidence",
+            "translation": "prueba",
+            "pronunciationGuide": "É-vi-dens",
+            "audio": "tts:en-GB"
+          },
+          {
+            "itemId": "english-c2-m005-pronunciation-5",
+            "position": 5,
+            "word": "inference",
+            "translation": "inferencia",
+            "pronunciationGuide": "ÍN-fe-rens",
+            "audio": "tts:en-GB"
+          },
+          {
+            "itemId": "english-c2-m005-pronunciation-6",
+            "position": 6,
+            "word": "underdetermined",
+            "translation": "insuficientemente determinado",
+            "pronunciationGuide": "an-der-di-TÉR-mind",
+            "audio": "tts:en-GB"
+          },
+          {
+            "itemId": "english-c2-m005-pronunciation-7",
+            "position": 7,
+            "word": "tentative",
+            "translation": "provisional",
+            "pronunciationGuide": "TÉN-ta-tiv",
+            "audio": "tts:en-GB"
+          },
+          {
+            "itemId": "english-c2-m005-pronunciation-8",
+            "position": 8,
+            "word": "alternative",
+            "translation": "alternativa",
+            "pronunciationGuide": "ol-TÉR-na-tiv",
+            "audio": "tts:en-GB"
+          },
+          {
+            "itemId": "english-c2-m005-pronunciation-9",
+            "position": 9,
+            "word": "contextualise",
+            "translation": "contextualizar",
+            "pronunciationGuide": "kon-TÉKS-chu-a-laiz",
+            "audio": "tts:en-GB"
+          },
+          {
+            "itemId": "english-c2-m005-pronunciation-10",
+            "position": 10,
+            "word": "overinterpret",
+            "translation": "sobreinterpretar",
+            "pronunciationGuide": "óu-ver-in-TÉR-prit",
+            "audio": "tts:en-GB"
+          }
+        ]
+      }
+    },
+    {
+      "sectionId": "english-c2-m005-reading",
+      "sectionKey": "reading",
+      "position": 5,
+      "title": "reading",
+      "exercise": {
+        "exerciseId": "english-c2-m005-reading-exercise",
+        "type": "reading_comprehension",
+        "items": [
+          {
+            "itemId": "english-c2-m005-reading-1",
+            "position": 1,
+            "prompt": "How did participants interpret “promising, though not yet persuasive”?",
+            "options": [
+              "Some saw a warning; others saw a request for stronger evidence.",
+              "Everyone understood it as final approval.",
+              "Everyone understood it as a rejection."
+            ],
+            "answer": "Some saw a warning; others saw a request for stronger evidence.",
+            "evaluation": {
+              "type": "single_choice"
+            }
+          },
+          {
+            "itemId": "english-c2-m005-reading-2",
+            "position": 2,
+            "prompt": "Which detail favoured the interpretation that further work was invited?",
+            "options": [
+              "The lead requested a revised analysis and set a review date.",
+              "The lead left the room.",
+              "The comment was short."
+            ],
+            "answer": "The lead requested a revised analysis and set a review date.",
+            "evaluation": {
+              "type": "single_choice"
+            }
+          },
+          {
+            "itemId": "english-c2-m005-reading-3",
+            "position": 3,
+            "prompt": "Did the request for revision guarantee approval?",
+            "options": [
+              "No, it only provided some support for one reading.",
+              "Yes, approval was certain.",
+              "It proved the project had failed."
+            ],
+            "answer": "No, it only provided some support for one reading.",
+            "evaluation": {
+              "type": "single_choice"
+            }
+          },
+          {
+            "itemId": "english-c2-m005-reading-4",
+            "position": 4,
+            "prompt": "What does the passage say about tone and institutional roles?",
+            "options": [
+              "They matter, but should not be treated as decisive in isolation.",
+              "They always reveal the speaker's true motive.",
+              "They are irrelevant to interpretation."
+            ],
+            "answer": "They matter, but should not be treated as decisive in isolation.",
+            "evaluation": {
+              "type": "single_choice"
+            }
+          },
+          {
+            "itemId": "english-c2-m005-reading-5",
+            "position": 5,
+            "prompt": "Why does the author mention a brief reply?",
+            "options": [
+              "To illustrate that one behaviour can have several explanations.",
+              "To prove brief replies are impolite.",
+              "To show that context never matters."
+            ],
+            "answer": "To illustrate that one behaviour can have several explanations.",
+            "evaluation": {
+              "type": "single_choice"
+            }
+          },
+          {
+            "itemId": "english-c2-m005-reading-6",
+            "position": 6,
+            "prompt": "What is the analyst advised not to do?",
+            "options": [
+              "Invent a hidden motive that makes the neatest story.",
+              "Compare plausible alternatives.",
+              "State uncertainty."
+            ],
+            "answer": "Invent a hidden motive that makes the neatest story.",
+            "evaluation": {
+              "type": "single_choice"
+            }
+          },
+          {
+            "itemId": "english-c2-m005-reading-7",
+            "position": 7,
+            "prompt": "What is meant by proportioning claims to evidence?",
+            "options": [
+              "Matching the strength of a conclusion to the support available.",
+              "Avoiding all conclusions.",
+              "Treating every hypothesis as equally likely."
+            ],
+            "answer": "Matching the strength of a conclusion to the support available.",
+            "evaluation": {
+              "type": "single_choice"
+            }
+          },
+          {
+            "itemId": "english-c2-m005-reading-8",
+            "position": 8,
+            "prompt": "Why is interpretive restraint especially important?",
+            "options": [
+              "Interpretations can affect reputations and decisions.",
+              "It makes meetings shorter.",
+              "It removes the need for evidence."
+            ],
+            "answer": "Interpretations can affect reputations and decisions.",
+            "evaluation": {
+              "type": "single_choice"
+            }
+          },
+          {
+            "itemId": "english-c2-m005-reading-9",
+            "position": 9,
+            "prompt": "What may further evidence do?",
+            "options": [
+              "Strengthen, weaken or complicate an initial interpretation.",
+              "Only confirm the first interpretation.",
+              "Have no effect on a conclusion."
+            ],
+            "answer": "Strengthen, weaken or complicate an initial interpretation.",
+            "evaluation": {
+              "type": "single_choice"
+            }
+          },
+          {
+            "itemId": "english-c2-m005-reading-10",
+            "position": 10,
+            "prompt": "Which best summarises the author's position?",
+            "options": [
+              "Reason carefully, test alternatives and acknowledge uncertainty.",
+              "Always assume the worst motive.",
+              "Never infer anything from communication."
+            ],
+            "answer": "Reason carefully, test alternatives and acknowledge uncertainty.",
+            "evaluation": {
+              "type": "single_choice"
+            }
+          }
+        ],
+        "content": {
+          "passageId": "english-c2-m005-reading-passage",
+          "passage": "During a review meeting, the project lead described the pilot as “promising, though not yet persuasive”. Several participants interpreted the comment as a warning that the project would not receive further funding. Others took it as an invitation to strengthen the evidence before the next review. Both readings were compatible with the words themselves. The surrounding discussion offered some support for the second: the lead had asked for a revised analysis and set a date for reconsideration. Yet this did not guarantee approval.\n\nInterpreting communication requires more than matching phrases to fixed intentions. Tone, institutional roles, prior exchanges and subsequent actions all matter, but none should be treated as decisive in isolation. A brief reply may reflect irritation, time pressure or a preference for economy. A qualified compliment may signal reservations, politeness or genuine but limited approval. The analyst's task is not to invent the hidden motive that makes the neatest story. It is to identify what the evidence supports, compare plausible alternatives and state the remaining uncertainty.\n\nThis discipline is particularly important when interpretations affect reputations or decisions. An inference can be reasonable without being proven. Further evidence may strengthen it, weaken it or reveal that the original alternatives were incomplete. Intellectual restraint is not indecision; it is a commitment to proportion claims to evidence."
+        }
+      }
+    },
+    {
+      "sectionId": "english-c2-m005-writing",
+      "sectionKey": "writing",
+      "position": 6,
+      "title": "writing",
+      "exercise": {
+        "exerciseId": "english-c2-m005-writing-exercise",
+        "type": "dictation",
+        "items": [
+          {
+            "itemId": "english-c2-m005-writing-1",
+            "position": 1,
+            "audio": "tts:en-GB",
+            "audioLocale": "en-GB",
+            "kind": "sentence",
+            "repeatCount": 3,
+            "segments": [
+              {
+                "segmentId": "english-c2-m005-writing-1-segment",
+                "text": "Context can support an inference without making it certain."
+              }
+            ],
+            "expectedAnswer": "Context can support an inference without making it certain.",
+            "evaluation": {
+              "type": "normalised_text"
+            }
+          },
+          {
+            "itemId": "english-c2-m005-writing-2",
+            "position": 2,
+            "audio": "tts:en-GB",
+            "audioLocale": "en-GB",
+            "kind": "sentence",
+            "repeatCount": 3,
+            "segments": [
+              {
+                "segmentId": "english-c2-m005-writing-2-segment",
+                "text": "A plausible interpretation should fit the available evidence."
+              }
+            ],
+            "expectedAnswer": "A plausible interpretation should fit the available evidence.",
+            "evaluation": {
+              "type": "normalised_text"
+            }
+          },
+          {
+            "itemId": "english-c2-m005-writing-3",
+            "position": 3,
+            "audio": "tts:en-GB",
+            "audioLocale": "en-GB",
+            "kind": "sentence",
+            "repeatCount": 3,
+            "segments": [
+              {
+                "segmentId": "english-c2-m005-writing-3-segment",
+                "text": "We should consider alternative explanations before reaching a conclusion."
+              }
+            ],
+            "expectedAnswer": "We should consider alternative explanations before reaching a conclusion.",
+            "evaluation": {
+              "type": "normalised_text"
+            }
+          },
+          {
+            "itemId": "english-c2-m005-writing-4",
+            "position": 4,
+            "audio": "tts:en-GB",
+            "audioLocale": "en-GB",
+            "kind": "sentence",
+            "repeatCount": 3,
+            "segments": [
+              {
+                "segmentId": "english-c2-m005-writing-4-segment",
+                "text": "The wording suggests reservations but does not establish rejection."
+              }
+            ],
+            "expectedAnswer": "The wording suggests reservations but does not establish rejection.",
+            "evaluation": {
+              "type": "normalised_text"
+            }
+          },
+          {
+            "itemId": "english-c2-m005-writing-5",
+            "position": 5,
+            "audio": "tts:en-GB",
+            "audioLocale": "en-GB",
+            "kind": "sentence",
+            "repeatCount": 3,
+            "segments": [
+              {
+                "segmentId": "english-c2-m005-writing-5-segment",
+                "text": "Independent confirmation would strengthen the interpretation."
+              }
+            ],
+            "expectedAnswer": "Independent confirmation would strengthen the interpretation.",
+            "evaluation": {
+              "type": "normalised_text"
+            }
+          },
+          {
+            "itemId": "english-c2-m005-writing-6",
+            "position": 6,
+            "audio": "tts:en-GB",
+            "audioLocale": "en-GB",
+            "kind": "sentence",
+            "repeatCount": 3,
+            "segments": [
+              {
+                "segmentId": "english-c2-m005-writing-6-segment",
+                "text": "Her response was tentative rather than unequivocal."
+              }
+            ],
+            "expectedAnswer": "Her response was tentative rather than unequivocal.",
+            "evaluation": {
+              "type": "normalised_text"
+            }
+          },
+          {
+            "itemId": "english-c2-m005-writing-7",
+            "position": 7,
+            "audio": "tts:en-GB",
+            "audioLocale": "en-GB",
+            "kind": "sentence",
+            "repeatCount": 3,
+            "segments": [
+              {
+                "segmentId": "english-c2-m005-writing-7-segment",
+                "text": "The analyst distinguished observation from speculation."
+              }
+            ],
+            "expectedAnswer": "The analyst distinguished observation from speculation.",
+            "evaluation": {
+              "type": "normalised_text"
+            }
+          },
+          {
+            "itemId": "english-c2-m005-writing-8",
+            "position": 8,
+            "audio": "tts:en-GB",
+            "audioLocale": "en-GB",
+            "kind": "sentence",
+            "repeatCount": 3,
+            "segments": [
+              {
+                "segmentId": "english-c2-m005-writing-8-segment",
+                "text": "Subsequent behaviour may clarify an earlier remark."
+              }
+            ],
+            "expectedAnswer": "Subsequent behaviour may clarify an earlier remark.",
+            "evaluation": {
+              "type": "normalised_text"
+            }
+          },
+          {
+            "itemId": "english-c2-m005-writing-9",
+            "position": 9,
+            "audio": "tts:en-GB",
+            "audioLocale": "en-GB",
+            "kind": "sentence",
+            "repeatCount": 3,
+            "segments": [
+              {
+                "segmentId": "english-c2-m005-writing-9-segment",
+                "text": "An inference should be proportionate to its evidential basis."
+              }
+            ],
+            "expectedAnswer": "An inference should be proportionate to its evidential basis.",
+            "evaluation": {
+              "type": "normalised_text"
+            }
+          },
+          {
+            "itemId": "english-c2-m005-writing-10",
+            "position": 10,
+            "audio": "tts:en-GB",
+            "audioLocale": "en-GB",
+            "kind": "sentence",
+            "repeatCount": 3,
+            "segments": [
+              {
+                "segmentId": "english-c2-m005-writing-10-segment",
+                "text": "Intellectual restraint is not the same as indecision."
+              }
+            ],
+            "expectedAnswer": "Intellectual restraint is not the same as indecision.",
+            "evaluation": {
+              "type": "normalised_text"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "sectionId": "english-c2-m005-speaking",
+      "sectionKey": "speaking",
+      "position": 7,
+      "title": "speaking",
+      "exercise": {
+        "exerciseId": "english-c2-m005-speaking-exercise",
+        "type": "speaking_prompts",
+        "items": [
+          {
+            "itemId": "english-c2-m005-speaking-1",
+            "position": 1,
+            "prompt": "Explain the difference between a plausible inference and a proven conclusion.",
+            "modelAnswer": "A plausible inference fits the available evidence, whereas a proven conclusion requires sufficient support to rule out relevant alternatives.",
+            "evaluation": {
+              "type": "rubric",
+              "transcriptionSeparateFromPronunciation": true
+            }
+          },
+          {
+            "itemId": "english-c2-m005-speaking-2",
+            "position": 2,
+            "prompt": "Give two possible explanations for a delayed reply.",
+            "modelAnswer": "The sender may be busy or considering the message; they may also be reluctant to respond. More evidence is needed.",
+            "evaluation": {
+              "type": "rubric",
+              "transcriptionSeparateFromPronunciation": true
+            }
+          },
+          {
+            "itemId": "english-c2-m005-speaking-3",
+            "position": 3,
+            "prompt": "How can an analyst reduce confirmation bias?",
+            "modelAnswer": "They can state competing hypotheses, seek disconfirming evidence and apply the same standard of proof to each.",
+            "evaluation": {
+              "type": "rubric",
+              "transcriptionSeparateFromPronunciation": true
+            }
+          },
+          {
+            "itemId": "english-c2-m005-speaking-4",
+            "position": 4,
+            "prompt": "Why is a qualified compliment difficult to interpret?",
+            "modelAnswer": "It may express genuine but limited approval, politeness or reservations; the wider exchange helps distinguish these possibilities.",
+            "evaluation": {
+              "type": "rubric",
+              "transcriptionSeparateFromPronunciation": true
+            }
+          },
+          {
+            "itemId": "english-c2-m005-speaking-5",
+            "position": 5,
+            "prompt": "Describe a situation in which subsequent behaviour changes an interpretation.",
+            "modelAnswer": "A cautious statement may initially sound dismissive, but a later detailed response and concrete action may show genuine engagement.",
+            "evaluation": {
+              "type": "rubric",
+              "transcriptionSeparateFromPronunciation": true
+            }
+          },
+          {
+            "itemId": "english-c2-m005-speaking-6",
+            "position": 6,
+            "prompt": "How would you challenge an overconfident interpretation diplomatically?",
+            "modelAnswer": "I would ask which parts are explicit and what evidence supports the inferred intention, while acknowledging that the reading may be possible.",
+            "evaluation": {
+              "type": "rubric",
+              "transcriptionSeparateFromPronunciation": true
+            }
+          },
+          {
+            "itemId": "english-c2-m005-speaking-7",
+            "position": 7,
+            "prompt": "Explain why intellectual restraint is not indecision.",
+            "modelAnswer": "It allows conclusions where evidence supports them while keeping uncertainty visible and remaining open to revision.",
+            "evaluation": {
+              "type": "rubric",
+              "transcriptionSeparateFromPronunciation": true
+            }
+          },
+          {
+            "itemId": "english-c2-m005-speaking-8",
+            "position": 8,
+            "prompt": "What evidence would corroborate a suspected polite refusal?",
+            "modelAnswer": "A clear follow-up declining the request or a consistent pattern of actions would provide stronger corroboration than tone alone.",
+            "evaluation": {
+              "type": "rubric",
+              "transcriptionSeparateFromPronunciation": true
+            }
+          },
+          {
+            "itemId": "english-c2-m005-speaking-9",
+            "position": 9,
+            "prompt": "How should an interpreter communicate two competing readings?",
+            "modelAnswer": "They should describe each reading fairly, assess contextual fit and explain what remains unresolved.",
+            "evaluation": {
+              "type": "rubric",
+              "transcriptionSeparateFromPronunciation": true
+            }
+          },
+          {
+            "itemId": "english-c2-m005-speaking-10",
+            "position": 10,
+            "prompt": "Summarise a disciplined method for interpreting indirect communication.",
+            "modelAnswer": "Separate wording from inference, examine context, test alternatives, seek corroboration and calibrate the conclusion.",
+            "evaluation": {
+              "type": "rubric",
+              "transcriptionSeparateFromPronunciation": true
+            }
+          }
+        ]
+      }
+    },
+    {
+      "sectionId": "english-c2-m005-listening",
+      "sectionKey": "listening",
+      "position": 8,
+      "title": "listening",
+      "exercise": {
+        "exerciseId": "english-c2-m005-listening-exercise",
+        "type": "listening_gap_fill",
+        "items": [
+          {
+            "itemId": "english-c2-m005-listening-gap-1",
+            "position": 1,
+            "gapToken": "[[gap-01]]",
+            "expectedWordId": "english-c2-m005-listening-word-1"
+          },
+          {
+            "itemId": "english-c2-m005-listening-gap-2",
+            "position": 2,
+            "gapToken": "[[gap-02]]",
+            "expectedWordId": "english-c2-m005-listening-word-2"
+          },
+          {
+            "itemId": "english-c2-m005-listening-gap-3",
+            "position": 3,
+            "gapToken": "[[gap-03]]",
+            "expectedWordId": "english-c2-m005-listening-word-3"
+          },
+          {
+            "itemId": "english-c2-m005-listening-gap-4",
+            "position": 4,
+            "gapToken": "[[gap-04]]",
+            "expectedWordId": "english-c2-m005-listening-word-4"
+          },
+          {
+            "itemId": "english-c2-m005-listening-gap-5",
+            "position": 5,
+            "gapToken": "[[gap-05]]",
+            "expectedWordId": "english-c2-m005-listening-word-5"
+          },
+          {
+            "itemId": "english-c2-m005-listening-gap-6",
+            "position": 6,
+            "gapToken": "[[gap-06]]",
+            "expectedWordId": "english-c2-m005-listening-word-6"
+          },
+          {
+            "itemId": "english-c2-m005-listening-gap-7",
+            "position": 7,
+            "gapToken": "[[gap-07]]",
+            "expectedWordId": "english-c2-m005-listening-word-7"
+          },
+          {
+            "itemId": "english-c2-m005-listening-gap-8",
+            "position": 8,
+            "gapToken": "[[gap-08]]",
+            "expectedWordId": "english-c2-m005-listening-word-8"
+          },
+          {
+            "itemId": "english-c2-m005-listening-gap-9",
+            "position": 9,
+            "gapToken": "[[gap-09]]",
+            "expectedWordId": "english-c2-m005-listening-word-9"
+          },
+          {
+            "itemId": "english-c2-m005-listening-gap-10",
+            "position": 10,
+            "gapToken": "[[gap-10]]",
+            "expectedWordId": "english-c2-m005-listening-word-10"
+          }
+        ],
+        "content": {
+          "audio": "tts:en-GB",
+          "audioLocale": "en-GB",
+          "audioTranscript": "The committee's initial response was cautiously favourable. Members said the proposal addressed an important concern, but they wanted independent evidence before recommending adoption. One observer interpreted this as a likely endorsement. Another argued that the committee had simply postponed its decision. The minutes later clarified that no recommendation had been made. The chair invited the research team to submit additional data within six weeks. This did not guarantee approval, but it showed that the proposal remained under consideration.",
+          "transcriptTemplate": "The committee's initial response was [[gap-01]] [[gap-02]]. Members said the proposal addressed an important concern, but they wanted [[gap-03]] [[gap-04]] before recommending adoption. One observer interpreted this as a likely [[gap-05]]. Another argued that the committee had simply [[gap-06]] its decision. The [[gap-07]] later clarified that no [[gap-08]] had been made. The chair invited the research team to submit [[gap-09]] data within six weeks. This showed that the proposal remained under [[gap-10]].",
+          "wordBank": [
+            {
+              "wordId": "english-c2-m005-listening-word-1",
+              "word": "cautiously"
+            },
+            {
+              "wordId": "english-c2-m005-listening-word-2",
+              "word": "favourable"
+            },
+            {
+              "wordId": "english-c2-m005-listening-word-3",
+              "word": "independent"
+            },
+            {
+              "wordId": "english-c2-m005-listening-word-4",
+              "word": "evidence"
+            },
+            {
+              "wordId": "english-c2-m005-listening-word-5",
+              "word": "endorsement"
+            },
+            {
+              "wordId": "english-c2-m005-listening-word-6",
+              "word": "postponed"
+            },
+            {
+              "wordId": "english-c2-m005-listening-word-7",
+              "word": "minutes"
+            },
+            {
+              "wordId": "english-c2-m005-listening-word-8",
+              "word": "recommendation"
+            },
+            {
+              "wordId": "english-c2-m005-listening-word-9",
+              "word": "additional"
+            },
+            {
+              "wordId": "english-c2-m005-listening-word-10",
+              "word": "consideration"
+            }
+          ],
+          "interaction": "select_place_move_replace"
+        }
+      }
+    }
+  ]
+}

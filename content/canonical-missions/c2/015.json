@@ -1,0 +1,1315 @@
+{
+  "schemaVersion": "1.2.0",
+  "contentVersion": 1,
+  "course": {
+    "courseId": "english-c2",
+    "level": "C2",
+    "language": "en-GB"
+  },
+  "unit": {
+    "unitId": "english-c2-unit-02",
+    "courseId": "english-c2",
+    "position": 2,
+    "title": "Rhetoric, Persuasion and Discourse"
+  },
+  "mission": {
+    "missionId": "english-c2-m015",
+    "unitId": "english-c2-unit-02",
+    "position": 15,
+    "title": "Causal Inference and Competing Explanations"
+  },
+  "sections": [
+    {
+      "sectionId": "english-c2-m015-explore",
+      "sectionKey": "explore",
+      "position": 1,
+      "title": "explore",
+      "exercise": {
+        "exerciseId": "english-c2-m015-explore-exercise",
+        "type": "vocabulary_pairs",
+        "items": [
+          {
+            "itemId": "english-c2-m015-explore-word-1",
+            "position": 1,
+            "english": "causal inference",
+            "spanish": "inferencia causal",
+            "pronunciationGuide": "KÓ-zol ÍN-fe-rens",
+            "audio": "tts:en-GB"
+          },
+          {
+            "itemId": "english-c2-m015-explore-word-2",
+            "position": 2,
+            "english": "confounding variable",
+            "spanish": "variable de confusión",
+            "pronunciationGuide": "kon-FÁUN-ding VÉ-ri-a-bol",
+            "audio": "tts:en-GB"
+          },
+          {
+            "itemId": "english-c2-m015-explore-word-3",
+            "position": 3,
+            "english": "correlation",
+            "spanish": "correlación",
+            "pronunciationGuide": "ko-re-LÉI-shon",
+            "audio": "tts:en-GB"
+          },
+          {
+            "itemId": "english-c2-m015-explore-word-4",
+            "position": 4,
+            "english": "causal mechanism",
+            "spanish": "mecanismo causal",
+            "pronunciationGuide": "KÓ-zol MÉ-ka-ni-zom",
+            "audio": "tts:en-GB"
+          },
+          {
+            "itemId": "english-c2-m015-explore-word-5",
+            "position": 5,
+            "english": "counterfactual",
+            "spanish": "contrafactual",
+            "pronunciationGuide": "KÁUN-ter-FÁK-chu-al",
+            "audio": "tts:en-GB"
+          },
+          {
+            "itemId": "english-c2-m015-explore-word-6",
+            "position": 6,
+            "english": "selection bias",
+            "spanish": "sesgo de selección",
+            "pronunciationGuide": "si-LEK-shon BÁI-as",
+            "audio": "tts:en-GB"
+          },
+          {
+            "itemId": "english-c2-m015-explore-word-7",
+            "position": 7,
+            "english": "longitudinal study",
+            "spanish": "estudio longitudinal",
+            "pronunciationGuide": "lon-yi-TÚ-di-nol STÁ-di",
+            "audio": "tts:en-GB"
+          },
+          {
+            "itemId": "english-c2-m015-explore-word-8",
+            "position": 8,
+            "english": "natural experiment",
+            "spanish": "experimento natural",
+            "pronunciationGuide": "NÁ-chu-rol ik-SPÉ-ri-ment",
+            "audio": "tts:en-GB"
+          },
+          {
+            "itemId": "english-c2-m015-explore-word-9",
+            "position": 9,
+            "english": "reverse causality",
+            "spanish": "causalidad inversa",
+            "pronunciationGuide": "ri-VÉRS ko-ZÁ-li-ti",
+            "audio": "tts:en-GB"
+          },
+          {
+            "itemId": "english-c2-m015-explore-word-10",
+            "position": 10,
+            "english": "plausible alternative",
+            "spanish": "alternativa plausible",
+            "pronunciationGuide": "PLÓ-zi-bol ol-TÉR-na-tiv",
+            "audio": "tts:en-GB"
+          }
+        ],
+        "theory": {
+          "title": "Causal inference and competing explanations",
+          "explanation": "A causal claim goes beyond describing an association: it proposes that a change in one factor produces a change in another. Temporal order is necessary in many causal accounts, but it is not sufficient. A confounding variable may influence both the apparent cause and the outcome; selection bias may distort which cases are observed; and reverse causality may mean that the supposed outcome partly produces the supposed cause. Strong inference therefore asks whether a plausible mechanism exists, whether competing explanations have been addressed and whether the design supports the conclusion. Counterfactual reasoning considers what would have happened to the same unit, at the same time, without the intervention. Since that alternative cannot usually be observed directly, researchers use comparison groups, longitudinal evidence, natural experiments and careful adjustment. At C2 level, distinguish evidence that is consistent with a causal account from evidence that discriminates between rival accounts, and state the remaining uncertainty precisely.",
+          "tip": "Before accepting a causal explanation, ask: what else changed, who entered or left the sample, and could the direction of influence be reversed?",
+          "patterns": [
+            {
+              "label": "Separate association from cause",
+              "pattern": "Describe the observed relationship without overstating its interpretation.",
+              "examples": [
+                "The two measures moved together, although the data do not establish that one drove the other."
+              ]
+            },
+            {
+              "label": "Identify confounding",
+              "pattern": "Name a plausible third factor that could influence both variables.",
+              "examples": [
+                "The apparent link may be partly attributable to income, which affects both access and outcomes."
+              ]
+            },
+            {
+              "label": "Test rival mechanisms",
+              "pattern": "Explain what evidence would distinguish competing causal accounts.",
+              "examples": [
+                "If the mechanism is correct, the effect should appear after the intervention and vary with exposure."
+              ]
+            },
+            {
+              "label": "Qualify counterfactual claims",
+              "pattern": "State what the comparison can and cannot approximate.",
+              "examples": [
+                "The matched areas offer a useful counterfactual, albeit an imperfect one."
+              ]
+            }
+          ]
+        },
+        "lesson": {
+          "phrases": [
+            {
+              "english": "Correlation alone does not establish causation.",
+              "spanish": "La correlación por sí sola no demuestra causalidad.",
+              "note": "Separa asociación y causa."
+            },
+            {
+              "english": "A third variable may account for the observed relationship.",
+              "spanish": "Una tercera variable puede explicar la relación observada.",
+              "note": "Introduce una explicación de confusión."
+            },
+            {
+              "english": "The proposed mechanism remains to be demonstrated.",
+              "spanish": "El mecanismo propuesto aún debe demostrarse.",
+              "note": "Distingue mecanismo de asociación."
+            },
+            {
+              "english": "The pattern is consistent with, but does not prove, a causal effect.",
+              "spanish": "El patrón es compatible con un efecto causal, pero no lo demuestra.",
+              "note": "Calibra la fuerza de la conclusión."
+            }
+          ],
+          "grammar": [
+            {
+              "english": "The association may be attributable to an unmeasured confounder.",
+              "spanish": "La asociación podría deberse a un factor de confusión no medido.",
+              "note": "Usa may be attributable to para proponer una causa sin afirmarla."
+            },
+            {
+              "english": "Had the groups been comparable at baseline, the estimate would have been more reliable.",
+              "spanish": "Si los grupos hubieran sido comparables al inicio, la estimación habría sido más fiable.",
+              "note": "Inversión condicional formal para evaluar condiciones no cumplidas."
+            }
+          ],
+          "reading": [
+            {
+              "english": "A city introduces a congestion charge; traffic falls, but fuel prices rise at the same time.",
+              "spanish": "Una ciudad introduce una tasa de congestión; el tráfico baja, pero el combustible se encarece simultáneamente.",
+              "note": "Evalúa explicaciones concurrentes antes de atribuir el cambio a una sola medida."
+            }
+          ],
+          "writing": [
+            {
+              "english": "Although the intervention preceded the change, temporal order alone is insufficient to establish causation.",
+              "spanish": "Aunque la intervención precedió al cambio, el orden temporal por sí solo no basta para demostrar causalidad.",
+              "note": "Concede una observación válida y limita la inferencia."
+            }
+          ],
+          "speaking": [
+            {
+              "english": "Which competing explanation would you investigate first, and why?",
+              "spanish": "¿Qué explicación alternativa investigarías primero y por qué?",
+              "prompt": "Compare two plausible causal explanations and justify which evidence would distinguish them.",
+              "promptSpanish": "Compara dos explicaciones causales plausibles y justifica qué pruebas permitirían distinguirlas."
+            }
+          ],
+          "listening": [
+            {
+              "english": "The apparent effect diminished once the researchers adjusted for baseline differences.",
+              "spanish": "El efecto aparente disminuyó cuando los investigadores ajustaron las diferencias iniciales.",
+              "note": "Escucha cómo el ajuste estadístico modifica una interpretación causal."
+            }
+          ],
+          "examples": [
+            {
+              "english": "The programme coincided with a decline in absences, but staffing levels changed too.",
+              "spanish": "El programa coincidió con una reducción de ausencias, pero también cambió la plantilla.",
+              "note": "La coincidencia temporal deja abierta una explicación alternativa."
+            }
+          ],
+          "communication": [
+            {
+              "english": "I would be reluctant to infer causation until reverse causality had been ruled out.",
+              "spanish": "Sería prudente no inferir causalidad hasta descartar la causalidad inversa.",
+              "note": "Expresa cautela metodológica sin descartar la hipótesis."
+            }
+          ]
+        }
+      },
+      "lesson": {
+        "phrases": [
+          {
+            "english": "The burden of proof rests with whoever advances the claim.",
+            "spanish": "La carga de la prueba recae en quien formula la afirmación.",
+            "note": "Asigna la obligación de justificar una tesis."
+          },
+          {
+            "english": "The absence of contrary evidence does not, in itself, establish the proposition.",
+            "spanish": "La ausencia de pruebas en contra no demuestra por sí sola la proposición.",
+            "note": "Evita convertir la falta de refutación en confirmación."
+          },
+          {
+            "english": "What evidence would count against the hypothesis?",
+            "spanish": "¿Qué pruebas contarían en contra de la hipótesis?",
+            "note": "Prueba si una tesis es realmente falsable."
+          },
+          {
+            "english": "The objection weakens the claim without wholly disproving it.",
+            "spanish": "La objeción debilita la afirmación sin refutarla por completo.",
+            "note": "Distingue debilitamiento de refutación definitiva."
+          }
+        ],
+        "grammar": [
+          {
+            "english": "Not only does the proposal fail to address the objection, but it also shifts the burden of proof.",
+            "spanish": "La propuesta no solo no aborda la objeción, sino que además desplaza la carga de la prueba.",
+            "note": "Inversión con not only."
+          },
+          {
+            "english": "Were the claim falsifiable, its proponents would need to specify what could disconfirm it.",
+            "spanish": "Si la afirmación fuera falsable, sus defensores tendrían que especificar qué podría refutarla.",
+            "note": "Condicional formal invertida."
+          }
+        ],
+        "reading": [
+          {
+            "english": "A persuasive rebuttal engages with the strongest version of the opposing case rather than a convenient caricature.",
+            "spanish": "Una refutación convincente aborda la versión más sólida del argumento contrario, no una caricatura conveniente.",
+            "note": "Principio de caridad argumentativa."
+          }
+        ],
+        "writing": [
+          {
+            "english": "The available evidence does not discharge the burden of proof placed on the proponents of the claim.",
+            "spanish": "Las pruebas disponibles no satisfacen la carga de la prueba que recae en quienes defienden la afirmación.",
+            "note": "Formula una evaluación probatoria precisa."
+          }
+        ],
+        "speaking": [
+          {
+            "english": "Identify what evidence would genuinely count against a claim and explain why.",
+            "spanish": "Identifica qué pruebas contarían realmente en contra de una afirmación y explica por qué.",
+            "prompt": "Assess a disputed proposition, allocate the burden of proof fairly and formulate a rebuttal that addresses the strongest counterevidence.",
+            "promptSpanish": "Evalúa una proposición controvertida, asigna la carga de la prueba de forma justa y formula una refutación que aborde las pruebas contrarias más sólidas."
+          }
+        ],
+        "listening": [
+          {
+            "english": "The panel argued that the proposal had not met its evidential burden, although it stopped short of declaring the underlying idea false.",
+            "spanish": "El panel sostuvo que la propuesta no había satisfecho su carga probatoria, aunque no llegó a declarar falsa la idea subyacente.",
+            "note": "Distingue falta de justificación de falsedad."
+          }
+        ],
+        "examples": [
+          {
+            "english": "A hypothesis that accommodates every possible outcome risks becoming impossible to test.",
+            "spanish": "Una hipótesis que admite cualquier resultado posible corre el riesgo de volverse imposible de comprobar.",
+            "note": "La falsabilidad exige posibles condiciones de refutación."
+          }
+        ],
+        "communication": [
+          {
+            "english": "I accept that this is a plausible interpretation; however, what would lead us to reject it?",
+            "spanish": "Acepto que esta es una interpretación plausible; sin embargo, ¿qué nos llevaría a rechazarla?",
+            "note": "Cuestiona con tacto los criterios de refutación."
+          }
+        ]
+      }
+    },
+    {
+      "sectionId": "english-c2-m015-practice",
+      "sectionKey": "practice",
+      "position": 2,
+      "title": "practice",
+      "exercise": {
+        "exerciseId": "english-c2-m015-practice-exercise",
+        "type": "mixed_practice",
+        "items": [
+          {
+            "itemId": "english-c2-m015-practice-1",
+            "position": 1,
+            "prompt": "A report finds that employees who cycle to work take fewer sick days. What is the soundest conclusion?",
+            "taskType": "pragmatic_choice",
+            "options": [
+              "Cycling is associated with fewer sick days, but causation is not established.",
+              "Cycling must prevent every illness.",
+              "The association proves that workplace conditions are irrelevant."
+            ],
+            "answer": "Cycling is associated with fewer sick days, but causation is not established.",
+            "evaluation": {
+              "type": "single_choice"
+            }
+          },
+          {
+            "itemId": "english-c2-m015-practice-2",
+            "position": 2,
+            "prompt": "A school adds tutoring and scores rise; the intake also becomes more selective. What issue arises?",
+            "taskType": "pragmatic_choice",
+            "options": [
+              "Selection bias may help explain the improvement.",
+              "The tutoring effect is conclusively established.",
+              "The score increase must be random."
+            ],
+            "answer": "Selection bias may help explain the improvement.",
+            "evaluation": {
+              "type": "single_choice"
+            }
+          },
+          {
+            "itemId": "english-c2-m015-practice-3",
+            "position": 3,
+            "prompt": "A study links stress to poor sleep. Which alternative deserves consideration?",
+            "taskType": "pragmatic_choice",
+            "options": [
+              "Poor sleep may itself increase reported stress.",
+              "The relationship can only run from stress to sleep.",
+              "The correlation rules out other influences."
+            ],
+            "answer": "Poor sleep may itself increase reported stress.",
+            "evaluation": {
+              "type": "single_choice"
+            }
+          },
+          {
+            "itemId": "english-c2-m015-practice-4",
+            "position": 4,
+            "prompt": "Which finding would most strengthen a proposed causal mechanism?",
+            "taskType": "pragmatic_choice",
+            "options": [
+              "The predicted intermediate change occurs after exposure and before the outcome.",
+              "The outcome was already declining before exposure.",
+              "The sample excludes people who experienced no change."
+            ],
+            "answer": "The predicted intermediate change occurs after exposure and before the outcome.",
+            "evaluation": {
+              "type": "single_choice"
+            }
+          },
+          {
+            "itemId": "english-c2-m015-practice-5",
+            "position": 5,
+            "prompt": "A policy and an outcome change at the same time. What should an analyst do?",
+            "taskType": "pragmatic_choice",
+            "options": [
+              "Examine concurrent changes that could offer rival explanations.",
+              "Attribute the outcome to the policy immediately.",
+              "Treat temporal coincidence as sufficient proof."
+            ],
+            "answer": "Examine concurrent changes that could offer rival explanations.",
+            "evaluation": {
+              "type": "single_choice"
+            }
+          },
+          {
+            "itemId": "english-c2-m015-practice-6",
+            "position": 6,
+            "prompt": "What does a counterfactual comparison attempt to estimate?",
+            "taskType": "pragmatic_choice",
+            "options": [
+              "What would have happened to the treated group without the intervention.",
+              "What participants remember about the intervention.",
+              "The exact outcome for every individual in both conditions."
+            ],
+            "answer": "What would have happened to the treated group without the intervention.",
+            "evaluation": {
+              "type": "single_choice"
+            }
+          },
+          {
+            "itemId": "english-c2-m015-practice-7",
+            "position": 7,
+            "prompt": "A natural experiment is useful when...",
+            "taskType": "pragmatic_choice",
+            "options": [
+              "an external event creates plausibly comparable exposure groups.",
+              "researchers can freely assign every participant.",
+              "no assumptions about comparability are needed."
+            ],
+            "answer": "an external event creates plausibly comparable exposure groups.",
+            "evaluation": {
+              "type": "single_choice"
+            }
+          },
+          {
+            "itemId": "english-c2-m015-practice-8",
+            "position": 8,
+            "prompt": "Which statement handles confounding most carefully?",
+            "taskType": "pragmatic_choice",
+            "options": [
+              "The association weakened after adjustment for baseline income.",
+              "Income is certainly the only cause.",
+              "Adjustment proves that no confounders remain."
+            ],
+            "answer": "The association weakened after adjustment for baseline income.",
+            "evaluation": {
+              "type": "single_choice"
+            }
+          },
+          {
+            "itemId": "english-c2-m015-practice-9",
+            "position": 9,
+            "prompt": "A programme appears effective only among people who completed it. What is the concern?",
+            "taskType": "pragmatic_choice",
+            "options": [
+              "Completion may be related to characteristics that also affect the outcome.",
+              "Completion automatically establishes random assignment.",
+              "The result cannot be described at all."
+            ],
+            "answer": "Completion may be related to characteristics that also affect the outcome.",
+            "evaluation": {
+              "type": "single_choice"
+            }
+          },
+          {
+            "itemId": "english-c2-m015-practice-10",
+            "position": 10,
+            "prompt": "Which conclusion is best calibrated?",
+            "taskType": "pragmatic_choice",
+            "options": [
+              "The findings are consistent with an effect, although reverse causality remains plausible.",
+              "The findings prove the intervention caused the change.",
+              "No causal explanation can ever be investigated."
+            ],
+            "answer": "The findings are consistent with an effect, although reverse causality remains plausible.",
+            "evaluation": {
+              "type": "single_choice"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "sectionId": "english-c2-m015-grammar",
+      "sectionKey": "grammar",
+      "position": 3,
+      "title": "grammar",
+      "exercise": {
+        "exerciseId": "english-c2-m015-grammar-exercise",
+        "type": "grammar",
+        "items": [
+          {
+            "itemId": "english-c2-m015-grammar-1",
+            "position": 1,
+            "prompt": "Choose the most cautious formulation: “The intervention ___ the decline.”",
+            "taskType": "pragmatic_choice",
+            "options": [
+              "may have contributed to",
+              "must have caused",
+              "is causing"
+            ],
+            "answer": "may have contributed to",
+            "evaluation": {
+              "type": "single_choice"
+            }
+          },
+          {
+            "itemId": "english-c2-m015-grammar-2",
+            "position": 2,
+            "prompt": "Complete the inversion: “Only after the data were stratified ___ the association disappear.”",
+            "taskType": "pragmatic_choice",
+            "options": [
+              "did",
+              "had",
+              "was"
+            ],
+            "answer": "did",
+            "evaluation": {
+              "type": "single_choice"
+            }
+          },
+          {
+            "itemId": "english-c2-m015-grammar-3",
+            "position": 3,
+            "prompt": "Choose the correct mixed conditional: “If the sample ___ representative, the estimate would be more persuasive.”",
+            "taskType": "pragmatic_choice",
+            "options": [
+              "were",
+              "had been",
+              "would be"
+            ],
+            "answer": "were",
+            "evaluation": {
+              "type": "single_choice"
+            }
+          },
+          {
+            "itemId": "english-c2-m015-grammar-4",
+            "position": 4,
+            "prompt": "Select the best reporting verb: “The findings ___ the possibility of reverse causality.”",
+            "taskType": "pragmatic_choice",
+            "options": [
+              "leave open",
+              "rule out",
+              "account for"
+            ],
+            "answer": "leave open",
+            "evaluation": {
+              "type": "single_choice"
+            }
+          },
+          {
+            "itemId": "english-c2-m015-grammar-5",
+            "position": 5,
+            "prompt": "Choose the precise linker: “The groups differed at baseline; ___, the comparison may be biased.”",
+            "taskType": "pragmatic_choice",
+            "options": [
+              "consequently",
+              "nevertheless",
+              "whereas"
+            ],
+            "answer": "consequently",
+            "evaluation": {
+              "type": "single_choice"
+            }
+          },
+          {
+            "itemId": "english-c2-m015-grammar-6",
+            "position": 6,
+            "prompt": "Complete: “The outcome may be attributable ___ an unmeasured factor.”",
+            "taskType": "pragmatic_choice",
+            "options": [
+              "to",
+              "for",
+              "with"
+            ],
+            "answer": "to",
+            "evaluation": {
+              "type": "single_choice"
+            }
+          },
+          {
+            "itemId": "english-c2-m015-grammar-7",
+            "position": 7,
+            "prompt": "Choose the correct structure: “Were the mechanism ___, we would expect an earlier intermediate effect.”",
+            "taskType": "pragmatic_choice",
+            "options": [
+              "operative",
+              "operate",
+              "operating"
+            ],
+            "answer": "operative",
+            "evaluation": {
+              "type": "single_choice"
+            }
+          },
+          {
+            "itemId": "english-c2-m015-grammar-8",
+            "position": 8,
+            "prompt": "Select the most accurate hedge: “These results ___ a causal interpretation, but do not settle it.”",
+            "taskType": "pragmatic_choice",
+            "options": [
+              "lend some support to",
+              "are proof of",
+              "rule out"
+            ],
+            "answer": "lend some support to",
+            "evaluation": {
+              "type": "single_choice"
+            }
+          },
+          {
+            "itemId": "english-c2-m015-grammar-9",
+            "position": 9,
+            "prompt": "Choose the correct participle clause: “___ for baseline differences, the estimated effect was smaller.”",
+            "taskType": "pragmatic_choice",
+            "options": [
+              "Adjusting",
+              "Adjusted",
+              "Having adjust"
+            ],
+            "answer": "Adjusted",
+            "evaluation": {
+              "type": "single_choice"
+            }
+          },
+          {
+            "itemId": "english-c2-m015-grammar-10",
+            "position": 10,
+            "prompt": "Complete the contrast: “The association is robust; ___, its causal interpretation remains uncertain.”",
+            "taskType": "pragmatic_choice",
+            "options": [
+              "even so",
+              "as a result",
+              "insofar"
+            ],
+            "answer": "even so",
+            "evaluation": {
+              "type": "single_choice"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "sectionId": "english-c2-m015-pronunciation",
+      "sectionKey": "pronunciation",
+      "position": 4,
+      "title": "pronunciation",
+      "exercise": {
+        "exerciseId": "english-c2-m015-pronunciation-exercise",
+        "type": "pronunciation_cards",
+        "items": [
+          {
+            "itemId": "english-c2-m015-pronunciation-1",
+            "position": 1,
+            "word": "causal inference",
+            "translation": "inferencia causal",
+            "pronunciationGuide": "KÓ-zol ÍN-fe-rens",
+            "audio": "tts:en-GB"
+          },
+          {
+            "itemId": "english-c2-m015-pronunciation-2",
+            "position": 2,
+            "word": "confounding variable",
+            "translation": "variable de confusión",
+            "pronunciationGuide": "kon-FÁUN-ding VÉ-ri-a-bol",
+            "audio": "tts:en-GB"
+          },
+          {
+            "itemId": "english-c2-m015-pronunciation-3",
+            "position": 3,
+            "word": "correlation",
+            "translation": "correlación",
+            "pronunciationGuide": "ko-re-LÉI-shon",
+            "audio": "tts:en-GB"
+          },
+          {
+            "itemId": "english-c2-m015-pronunciation-4",
+            "position": 4,
+            "word": "causal mechanism",
+            "translation": "mecanismo causal",
+            "pronunciationGuide": "KÓ-zol MÉ-ka-ni-zom",
+            "audio": "tts:en-GB"
+          },
+          {
+            "itemId": "english-c2-m015-pronunciation-5",
+            "position": 5,
+            "word": "counterfactual",
+            "translation": "contrafactual",
+            "pronunciationGuide": "KÁUN-ter-FÁK-chu-al",
+            "audio": "tts:en-GB"
+          },
+          {
+            "itemId": "english-c2-m015-pronunciation-6",
+            "position": 6,
+            "word": "selection bias",
+            "translation": "sesgo de selección",
+            "pronunciationGuide": "si-LEK-shon BÁI-as",
+            "audio": "tts:en-GB"
+          },
+          {
+            "itemId": "english-c2-m015-pronunciation-7",
+            "position": 7,
+            "word": "longitudinal study",
+            "translation": "estudio longitudinal",
+            "pronunciationGuide": "lon-yi-TÚ-di-nol STÁ-di",
+            "audio": "tts:en-GB"
+          },
+          {
+            "itemId": "english-c2-m015-pronunciation-8",
+            "position": 8,
+            "word": "natural experiment",
+            "translation": "experimento natural",
+            "pronunciationGuide": "NÁ-chu-rol ik-SPÉ-ri-ment",
+            "audio": "tts:en-GB"
+          },
+          {
+            "itemId": "english-c2-m015-pronunciation-9",
+            "position": 9,
+            "word": "reverse causality",
+            "translation": "causalidad inversa",
+            "pronunciationGuide": "ri-VÉRS ko-ZÁ-li-ti",
+            "audio": "tts:en-GB"
+          },
+          {
+            "itemId": "english-c2-m015-pronunciation-10",
+            "position": 10,
+            "word": "plausible alternative",
+            "translation": "alternativa plausible",
+            "pronunciationGuide": "PLÓ-zi-bol ol-TÉR-na-tiv",
+            "audio": "tts:en-GB"
+          }
+        ]
+      }
+    },
+    {
+      "sectionId": "english-c2-m015-reading",
+      "sectionKey": "reading",
+      "position": 5,
+      "title": "reading",
+      "exercise": {
+        "exerciseId": "english-c2-m015-reading-exercise",
+        "type": "reading_comprehension",
+        "items": [
+          {
+            "itemId": "english-c2-m015-reading-1",
+            "position": 1,
+            "prompt": "What did managers initially attribute the fall in turnover to?",
+            "taskType": "pragmatic_choice",
+            "options": [
+              "The flexible working scheme.",
+              "A rise in local unemployment.",
+              "A recruitment freeze."
+            ],
+            "answer": "The flexible working scheme.",
+            "evaluation": {
+              "type": "single_choice"
+            }
+          },
+          {
+            "itemId": "english-c2-m015-reading-2",
+            "position": 2,
+            "prompt": "Why did the analyst reject a straightforward causal conclusion?",
+            "taskType": "pragmatic_choice",
+            "options": [
+              "The figures showed temporal association but did not isolate a causal effect.",
+              "The authority had no turnover figures.",
+              "Flexible working cannot affect retention."
+            ],
+            "answer": "The figures showed temporal association but did not isolate a causal effect.",
+            "evaluation": {
+              "type": "single_choice"
+            }
+          },
+          {
+            "itemId": "english-c2-m015-reading-3",
+            "position": 3,
+            "prompt": "How might selection have influenced the result?",
+            "taskType": "pragmatic_choice",
+            "options": [
+              "Employees able to use the scheme may already have differed from others.",
+              "All employees were randomly allocated.",
+              "The scheme reduced the number of departments."
+            ],
+            "answer": "Employees able to use the scheme may already have differed from others.",
+            "evaluation": {
+              "type": "single_choice"
+            }
+          },
+          {
+            "itemId": "english-c2-m015-reading-4",
+            "position": 4,
+            "prompt": "What second confounder did the analyst identify?",
+            "taskType": "pragmatic_choice",
+            "options": [
+              "Better-managed departments may have been more likely to adopt the scheme.",
+              "The weather changed during the study.",
+              "The authority changed its name."
+            ],
+            "answer": "Better-managed departments may have been more likely to adopt the scheme.",
+            "evaluation": {
+              "type": "single_choice"
+            }
+          },
+          {
+            "itemId": "english-c2-m015-reading-5",
+            "position": 5,
+            "prompt": "What could a longer follow-up help establish?",
+            "taskType": "pragmatic_choice",
+            "options": [
+              "Whether the pattern persisted and how departures developed over time.",
+              "Whether every employee preferred remote work.",
+              "Whether unemployment caused all resignations."
+            ],
+            "answer": "Whether the pattern persisted and how departures developed over time.",
+            "evaluation": {
+              "type": "single_choice"
+            }
+          },
+          {
+            "itemId": "english-c2-m015-reading-6",
+            "position": 6,
+            "prompt": "Why might phased introduction be informative?",
+            "taskType": "pragmatic_choice",
+            "options": [
+              "It could create comparisons across departments if timing were not driven by prior trends.",
+              "It guarantees random assignment.",
+              "It removes the need to examine baseline differences."
+            ],
+            "answer": "It could create comparisons across departments if timing were not driven by prior trends.",
+            "evaluation": {
+              "type": "single_choice"
+            }
+          },
+          {
+            "itemId": "english-c2-m015-reading-7",
+            "position": 7,
+            "prompt": "What can interviews contribute?",
+            "taskType": "pragmatic_choice",
+            "options": [
+              "Insight into a proposed mechanism, without independently excluding alternatives.",
+              "Conclusive proof of a population-wide effect.",
+              "A substitute for outcome data."
+            ],
+            "answer": "Insight into a proposed mechanism, without independently excluding alternatives.",
+            "evaluation": {
+              "type": "single_choice"
+            }
+          },
+          {
+            "itemId": "english-c2-m015-reading-8",
+            "position": 8,
+            "prompt": "Why did the authority use the word “promising”?",
+            "taskType": "pragmatic_choice",
+            "options": [
+              "It acknowledged encouraging evidence while avoiding a definitive causal claim.",
+              "It meant the scheme had failed.",
+              "It indicated that the data were unavailable."
+            ],
+            "answer": "It acknowledged encouraging evidence while avoiding a definitive causal claim.",
+            "evaluation": {
+              "type": "single_choice"
+            }
+          },
+          {
+            "itemId": "english-c2-m015-reading-9",
+            "position": 9,
+            "prompt": "What policy risk does the final paragraph highlight?",
+            "taskType": "pragmatic_choice",
+            "options": [
+              "An effect driven by workforce composition may not generalise elsewhere.",
+              "All policies have identical effects in every setting.",
+              "A causal mechanism never matters."
+            ],
+            "answer": "An effect driven by workforce composition may not generalise elsewhere.",
+            "evaluation": {
+              "type": "single_choice"
+            }
+          },
+          {
+            "itemId": "english-c2-m015-reading-10",
+            "position": 10,
+            "prompt": "Which further evidence would most directly improve the causal assessment?",
+            "taskType": "pragmatic_choice",
+            "options": [
+              "Comparable departmental trends, uptake data and documented reasons for departure.",
+              "A single favourable testimonial.",
+              "A statement that the scheme was popular."
+            ],
+            "answer": "Comparable departmental trends, uptake data and documented reasons for departure.",
+            "evaluation": {
+              "type": "single_choice"
+            }
+          }
+        ],
+        "content": {
+          "passageId": "english-c2-m015-reading-passage",
+          "passage": "A regional authority introduced a flexible working scheme and subsequently reported a marked fall in staff turnover. Senior managers attributed the improvement to the scheme, arguing that employees valued the greater autonomy. Yet the same period saw a rise in local unemployment and a freeze on recruitment across neighbouring organisations. Either development could have altered who remained in the authority's workforce.\n\nAn independent analyst cautioned that the figures established a temporal association, not a causal effect. Employees who were most able to use flexible arrangements may already have differed in seniority, caring responsibilities or job security. This selection process could account for part of the observed change. It was also possible that departments with better management practices were both more likely to adopt the scheme and more successful at retaining staff.\n\nThe analyst proposed following comparable departments over a longer period, documenting uptake and examining reasons for departure. A phased introduction might offer additional leverage if the timing were unrelated to prior turnover trends. Interviews could illuminate the proposed mechanism, although favourable accounts alone would not rule out competing explanations. The authority therefore described the early results as promising rather than conclusive.\n\nThe distinction mattered for policy. If autonomy genuinely reduced turnover, extending the scheme might be justified. If the apparent effect chiefly reflected workforce composition or wider labour-market conditions, the same intervention might achieve less elsewhere. A defensible recommendation would identify which explanation the available evidence supports, what remains uncertain and what further observation could change the judgement."
+        }
+      }
+    },
+    {
+      "sectionId": "english-c2-m015-writing",
+      "sectionKey": "writing",
+      "position": 6,
+      "title": "writing",
+      "exercise": {
+        "exerciseId": "english-c2-m015-writing-exercise",
+        "type": "dictation",
+        "items": [
+          {
+            "itemId": "english-c2-m015-writing-1",
+            "position": 1,
+            "audio": "tts:en-GB",
+            "audioLocale": "en-GB",
+            "kind": "sentence",
+            "repeatCount": 3,
+            "segments": [
+              {
+                "segmentId": "english-c2-m015-writing-1-segment",
+                "text": "The observed association does not, by itself, establish a causal relationship."
+              }
+            ],
+            "expectedAnswer": "The observed association does not, by itself, establish a causal relationship.",
+            "evaluation": {
+              "type": "normalised_text"
+            }
+          },
+          {
+            "itemId": "english-c2-m015-writing-2",
+            "position": 2,
+            "audio": "tts:en-GB",
+            "audioLocale": "en-GB",
+            "kind": "sentence",
+            "repeatCount": 3,
+            "segments": [
+              {
+                "segmentId": "english-c2-m015-writing-2-segment",
+                "text": "A confounding variable may influence both the exposure and the outcome."
+              }
+            ],
+            "expectedAnswer": "A confounding variable may influence both the exposure and the outcome.",
+            "evaluation": {
+              "type": "normalised_text"
+            }
+          },
+          {
+            "itemId": "english-c2-m015-writing-3",
+            "position": 3,
+            "audio": "tts:en-GB",
+            "audioLocale": "en-GB",
+            "kind": "sentence",
+            "repeatCount": 3,
+            "segments": [
+              {
+                "segmentId": "english-c2-m015-writing-3-segment",
+                "text": "Temporal precedence is necessary but not sufficient for causal inference."
+              }
+            ],
+            "expectedAnswer": "Temporal precedence is necessary but not sufficient for causal inference.",
+            "evaluation": {
+              "type": "normalised_text"
+            }
+          },
+          {
+            "itemId": "english-c2-m015-writing-4",
+            "position": 4,
+            "audio": "tts:en-GB",
+            "audioLocale": "en-GB",
+            "kind": "sentence",
+            "repeatCount": 3,
+            "segments": [
+              {
+                "segmentId": "english-c2-m015-writing-4-segment",
+                "text": "The researchers considered reverse causality as a competing explanation."
+              }
+            ],
+            "expectedAnswer": "The researchers considered reverse causality as a competing explanation.",
+            "evaluation": {
+              "type": "normalised_text"
+            }
+          },
+          {
+            "itemId": "english-c2-m015-writing-5",
+            "position": 5,
+            "audio": "tts:en-GB",
+            "audioLocale": "en-GB",
+            "kind": "sentence",
+            "repeatCount": 3,
+            "segments": [
+              {
+                "segmentId": "english-c2-m015-writing-5-segment",
+                "text": "A natural experiment can provide useful evidence under carefully stated assumptions."
+              }
+            ],
+            "expectedAnswer": "A natural experiment can provide useful evidence under carefully stated assumptions.",
+            "evaluation": {
+              "type": "normalised_text"
+            }
+          },
+          {
+            "itemId": "english-c2-m015-writing-6",
+            "position": 6,
+            "audio": "tts:en-GB",
+            "audioLocale": "en-GB",
+            "kind": "sentence",
+            "repeatCount": 3,
+            "segments": [
+              {
+                "segmentId": "english-c2-m015-writing-6-segment",
+                "text": "Selection bias may distort the composition of the observed sample."
+              }
+            ],
+            "expectedAnswer": "Selection bias may distort the composition of the observed sample.",
+            "evaluation": {
+              "type": "normalised_text"
+            }
+          },
+          {
+            "itemId": "english-c2-m015-writing-7",
+            "position": 7,
+            "audio": "tts:en-GB",
+            "audioLocale": "en-GB",
+            "kind": "sentence",
+            "repeatCount": 3,
+            "segments": [
+              {
+                "segmentId": "english-c2-m015-writing-7-segment",
+                "text": "The proposed mechanism remains plausible but has not yet been demonstrated."
+              }
+            ],
+            "expectedAnswer": "The proposed mechanism remains plausible but has not yet been demonstrated.",
+            "evaluation": {
+              "type": "normalised_text"
+            }
+          },
+          {
+            "itemId": "english-c2-m015-writing-8",
+            "position": 8,
+            "audio": "tts:en-GB",
+            "audioLocale": "en-GB",
+            "kind": "sentence",
+            "repeatCount": 3,
+            "segments": [
+              {
+                "segmentId": "english-c2-m015-writing-8-segment",
+                "text": "Longitudinal evidence can help establish the sequence of changes over time."
+              }
+            ],
+            "expectedAnswer": "Longitudinal evidence can help establish the sequence of changes over time.",
+            "evaluation": {
+              "type": "normalised_text"
+            }
+          },
+          {
+            "itemId": "english-c2-m015-writing-9",
+            "position": 9,
+            "audio": "tts:en-GB",
+            "audioLocale": "en-GB",
+            "kind": "sentence",
+            "repeatCount": 3,
+            "segments": [
+              {
+                "segmentId": "english-c2-m015-writing-9-segment",
+                "text": "The comparison offers an imperfect estimate of the relevant counterfactual."
+              }
+            ],
+            "expectedAnswer": "The comparison offers an imperfect estimate of the relevant counterfactual.",
+            "evaluation": {
+              "type": "normalised_text"
+            }
+          },
+          {
+            "itemId": "english-c2-m015-writing-10",
+            "position": 10,
+            "audio": "tts:en-GB",
+            "audioLocale": "en-GB",
+            "kind": "sentence",
+            "repeatCount": 3,
+            "segments": [
+              {
+                "segmentId": "english-c2-m015-writing-10-segment",
+                "text": "The conclusion should reflect the limitations of the research design."
+              }
+            ],
+            "expectedAnswer": "The conclusion should reflect the limitations of the research design.",
+            "evaluation": {
+              "type": "normalised_text"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "sectionId": "english-c2-m015-speaking",
+      "sectionKey": "speaking",
+      "position": 7,
+      "title": "speaking",
+      "exercise": {
+        "exerciseId": "english-c2-m015-speaking-exercise",
+        "type": "speaking_prompts",
+        "items": [
+          {
+            "itemId": "english-c2-m015-speaking-1",
+            "position": 1,
+            "prompt": "Explain why correlation alone cannot establish causation.",
+            "modelAnswer": "A correlation describes how two variables vary together; it does not establish that one produces the other. A causal account must address temporal order, plausible mechanisms and rival explanations such as confounding or reverse causality. The strength of the conclusion should depend on the research design and the evidence available.",
+            "evaluation": {
+              "type": "rubric",
+              "transcriptionSeparateFromPronunciation": true
+            }
+          },
+          {
+            "itemId": "english-c2-m015-speaking-2",
+            "position": 2,
+            "prompt": "Give an example of a confounding variable in a public-health study.",
+            "modelAnswer": "Suppose exercise is associated with better health outcomes. Income could influence both access to exercise facilities and access to healthcare, thereby contributing to the association. Researchers would need to measure and address such factors rather than assume the relationship is wholly causal.",
+            "evaluation": {
+              "type": "rubric",
+              "transcriptionSeparateFromPronunciation": true
+            }
+          },
+          {
+            "itemId": "english-c2-m015-speaking-3",
+            "position": 3,
+            "prompt": "Distinguish reverse causality from confounding.",
+            "modelAnswer": "Reverse causality concerns the direction of influence: the apparent outcome may affect the supposed cause. Confounding occurs when a third factor influences both variables. The two problems can coexist, but they call for different explanatory questions and, potentially, different research strategies.",
+            "evaluation": {
+              "type": "rubric",
+              "transcriptionSeparateFromPronunciation": true
+            }
+          },
+          {
+            "itemId": "english-c2-m015-speaking-4",
+            "position": 4,
+            "prompt": "Describe how a natural experiment might support causal inference.",
+            "modelAnswer": "A natural experiment uses an external event or policy variation that creates differences in exposure. It can strengthen causal inference if the groups would otherwise have followed comparable trends and if the event does not affect the outcome through unrelated routes. Those assumptions must be examined.",
+            "evaluation": {
+              "type": "rubric",
+              "transcriptionSeparateFromPronunciation": true
+            }
+          },
+          {
+            "itemId": "english-c2-m015-speaking-5",
+            "position": 5,
+            "prompt": "Explain what a counterfactual comparison is trying to estimate.",
+            "modelAnswer": "It asks what would have happened to the same treated unit without the intervention. Because both states cannot usually be observed simultaneously, researchers approximate the missing outcome using comparison groups, prior trends or other designs. The estimate therefore depends on assumptions.",
+            "evaluation": {
+              "type": "rubric",
+              "transcriptionSeparateFromPronunciation": true
+            }
+          },
+          {
+            "itemId": "english-c2-m015-speaking-6",
+            "position": 6,
+            "prompt": "How can selection bias produce a misleading result?",
+            "modelAnswer": "If entry into the sample or completion of a programme is related to both exposure and outcome, the observed participants may not represent the wider population. An apparent benefit may partly reflect who was selected rather than the intervention itself.",
+            "evaluation": {
+              "type": "rubric",
+              "transcriptionSeparateFromPronunciation": true
+            }
+          },
+          {
+            "itemId": "english-c2-m015-speaking-7",
+            "position": 7,
+            "prompt": "What evidence would help distinguish two competing mechanisms?",
+            "modelAnswer": "I would specify predictions that differ between the mechanisms, then identify measurements and timing that could test them. Evidence for an intermediate process, variation by exposure and the absence of predicted effects under the rival account would be particularly informative.",
+            "evaluation": {
+              "type": "rubric",
+              "transcriptionSeparateFromPronunciation": true
+            }
+          },
+          {
+            "itemId": "english-c2-m015-speaking-8",
+            "position": 8,
+            "prompt": "Why is temporal order important but insufficient?",
+            "modelAnswer": "A cause must generally precede its effect, so temporal order is a basic requirement. However, two events can occur sequentially because of a third factor, coincidence or reverse interpretation of the process. Temporal precedence narrows possibilities but does not settle them.",
+            "evaluation": {
+              "type": "rubric",
+              "transcriptionSeparateFromPronunciation": true
+            }
+          },
+          {
+            "itemId": "english-c2-m015-speaking-9",
+            "position": 9,
+            "prompt": "Evaluate the claim that a successful pilot will work everywhere.",
+            "modelAnswer": "A pilot may establish feasibility in one context, but its effect may depend on participants, institutions, resources and implementation. I would examine external validity and identify the conditions under which the mechanism is expected to operate before recommending universal adoption.",
+            "evaluation": {
+              "type": "rubric",
+              "transcriptionSeparateFromPronunciation": true
+            }
+          },
+          {
+            "itemId": "english-c2-m015-speaking-10",
+            "position": 10,
+            "prompt": "Present a balanced conclusion when evidence supports an association but leaves causality uncertain.",
+            "modelAnswer": "The association is consistent with the proposed explanation and merits further investigation. Nevertheless, confounding and selection effects have not been fully excluded, so a categorical causal claim would be premature. Replication and a stronger comparison design could clarify the issue.",
+            "evaluation": {
+              "type": "rubric",
+              "transcriptionSeparateFromPronunciation": true
+            }
+          }
+        ]
+      }
+    },
+    {
+      "sectionId": "english-c2-m015-listening",
+      "sectionKey": "listening",
+      "position": 8,
+      "title": "listening",
+      "exercise": {
+        "exerciseId": "english-c2-m015-listening-exercise",
+        "type": "listening_gap_fill",
+        "items": [
+          {
+            "itemId": "english-c2-m015-listening-1",
+            "position": 1,
+            "gapToken": "[[gap-01]]",
+            "expectedWordId": "english-c2-m015-listening-word-1"
+          },
+          {
+            "itemId": "english-c2-m015-listening-2",
+            "position": 2,
+            "gapToken": "[[gap-02]]",
+            "expectedWordId": "english-c2-m015-listening-word-2"
+          },
+          {
+            "itemId": "english-c2-m015-listening-3",
+            "position": 3,
+            "gapToken": "[[gap-03]]",
+            "expectedWordId": "english-c2-m015-listening-word-3"
+          },
+          {
+            "itemId": "english-c2-m015-listening-4",
+            "position": 4,
+            "gapToken": "[[gap-04]]",
+            "expectedWordId": "english-c2-m015-listening-word-4"
+          },
+          {
+            "itemId": "english-c2-m015-listening-5",
+            "position": 5,
+            "gapToken": "[[gap-05]]",
+            "expectedWordId": "english-c2-m015-listening-word-5"
+          },
+          {
+            "itemId": "english-c2-m015-listening-6",
+            "position": 6,
+            "gapToken": "[[gap-06]]",
+            "expectedWordId": "english-c2-m015-listening-word-6"
+          },
+          {
+            "itemId": "english-c2-m015-listening-7",
+            "position": 7,
+            "gapToken": "[[gap-07]]",
+            "expectedWordId": "english-c2-m015-listening-word-7"
+          },
+          {
+            "itemId": "english-c2-m015-listening-8",
+            "position": 8,
+            "gapToken": "[[gap-08]]",
+            "expectedWordId": "english-c2-m015-listening-word-8"
+          },
+          {
+            "itemId": "english-c2-m015-listening-9",
+            "position": 9,
+            "gapToken": "[[gap-09]]",
+            "expectedWordId": "english-c2-m015-listening-word-9"
+          },
+          {
+            "itemId": "english-c2-m015-listening-10",
+            "position": 10,
+            "gapToken": "[[gap-10]]",
+            "expectedWordId": "english-c2-m015-listening-word-10"
+          }
+        ],
+        "content": {
+          "audio": "tts:en-GB",
+          "audioLocale": "en-GB",
+          "audioTranscript": "The evaluation team observed that participation in the mentoring scheme was associated with higher promotion rates. However, employees who volunteered may already have had stronger professional networks. The team therefore examined baseline characteristics and compared departments that introduced mentoring at different times. The association became smaller after adjustment, although it did not disappear. Researchers said the findings were compatible with a beneficial effect, but warned that reverse causality and unmeasured confounding remained possible. They recommended a longer follow-up and a clearer assessment of the mechanism before making a definitive claim.",
+          "transcriptTemplate": "The [[gap-01]] team observed that [[gap-02]] in the mentoring scheme was associated with higher [[gap-03]] rates. However, employees who [[gap-04]] may already have had stronger professional [[gap-05]]. The team therefore examined [[gap-06]] characteristics and compared departments that introduced mentoring at different times. The association became smaller after [[gap-07]], although it did not disappear. Researchers said the findings were compatible with a [[gap-08]] effect, but warned that reverse causality and unmeasured [[gap-09]] remained possible. They recommended a longer follow-up and a clearer assessment of the [[gap-10]] before making a definitive claim.",
+          "wordBank": [
+            {
+              "wordId": "english-c2-m015-listening-word-1",
+              "word": "evaluation"
+            },
+            {
+              "wordId": "english-c2-m015-listening-word-2",
+              "word": "participation"
+            },
+            {
+              "wordId": "english-c2-m015-listening-word-3",
+              "word": "promotion"
+            },
+            {
+              "wordId": "english-c2-m015-listening-word-4",
+              "word": "volunteered"
+            },
+            {
+              "wordId": "english-c2-m015-listening-word-5",
+              "word": "networks"
+            },
+            {
+              "wordId": "english-c2-m015-listening-word-6",
+              "word": "baseline"
+            },
+            {
+              "wordId": "english-c2-m015-listening-word-7",
+              "word": "adjustment"
+            },
+            {
+              "wordId": "english-c2-m015-listening-word-8",
+              "word": "beneficial"
+            },
+            {
+              "wordId": "english-c2-m015-listening-word-9",
+              "word": "confounding"
+            },
+            {
+              "wordId": "english-c2-m015-listening-word-10",
+              "word": "mechanism"
+            }
+          ],
+          "interaction": "select_place_move_replace"
+        }
+      }
+    }
+  ]
+}

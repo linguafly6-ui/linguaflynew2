@@ -881,151 +881,141 @@
           {
             "itemId": "english-pre-a1-m009-grammar-ex01-i01",
             "position": 1,
-            "prompt": "Selecciona el modelo que significa: “I am se contrae como I'm.”",
+            "prompt": "Choose the correct contraction of 'I am'.",
             "evaluation": {
               "type": "single_choice"
             },
             "options": [
-              "I am → I'm",
-              "You are → You're",
-              "I'm happy."
+              "I'm",
+              "I's",
+              "I're"
             ],
-            "answer": "I am → I'm",
             "taskType": "functional_language"
           },
           {
             "itemId": "english-pre-a1-m009-grammar-ex01-i02",
             "position": 2,
-            "prompt": "Selecciona el modelo que significa: “You are se contrae como you're.”",
+            "prompt": "Choose the correct contraction of 'you are'.",
             "evaluation": {
               "type": "single_choice"
             },
             "options": [
-              "I'm happy.",
-              "You are → You're",
-              "You're happy."
+              "you're",
+              "you'm",
+              "you's"
             ],
-            "answer": "You are → You're",
             "taskType": "functional_language"
           },
           {
             "itemId": "english-pre-a1-m009-grammar-ex01-i03",
             "position": 3,
-            "prompt": "Selecciona el modelo que significa: “Estoy feliz.”",
+            "prompt": "Complete: ___ happy.",
             "evaluation": {
               "type": "single_choice"
             },
             "options": [
-              "You're happy.",
-              "I'm a student.",
-              "I'm happy."
+              "I'm",
+              "You're",
+              "He"
             ],
-            "answer": "I'm happy.",
             "taskType": "functional_language"
           },
           {
             "itemId": "english-pre-a1-m009-grammar-ex01-i04",
             "position": 4,
-            "prompt": "Selecciona el modelo que significa: “Estás feliz.”",
+            "prompt": "Complete: ___ happy. (You are)",
             "evaluation": {
               "type": "single_choice"
             },
             "options": [
-              "You're happy.",
-              "I'm a student.",
-              "You're a teacher."
+              "You're",
+              "I'm",
+              "She's"
             ],
-            "answer": "You're happy.",
             "taskType": "functional_language"
           },
           {
             "itemId": "english-pre-a1-m009-grammar-ex01-i05",
             "position": 5,
-            "prompt": "Selecciona el modelo que significa: “Soy estudiante.”",
+            "prompt": "Complete: ___ a student. (I am)",
             "evaluation": {
               "type": "single_choice"
             },
             "options": [
-              "You're a teacher.",
-              "I'm a student.",
-              "I'm fine."
+              "I'm",
+              "You're",
+              "He's"
             ],
-            "answer": "I'm a student.",
             "taskType": "functional_language"
           },
           {
             "itemId": "english-pre-a1-m009-grammar-ex01-i06",
             "position": 6,
-            "prompt": "Selecciona el modelo que significa: “Eres profesor/a.”",
+            "prompt": "Complete: ___ a teacher. (You are)",
             "evaluation": {
               "type": "single_choice"
             },
             "options": [
-              "I'm fine.",
-              "You're great.",
-              "You're a teacher."
+              "You're",
+              "I'm",
+              "She's"
             ],
-            "answer": "You're a teacher.",
             "taskType": "functional_language"
           },
           {
             "itemId": "english-pre-a1-m009-grammar-ex01-i07",
             "position": 7,
-            "prompt": "Selecciona el modelo que significa: “Estoy bien.”",
+            "prompt": "Complete: ___ fine. (I am)",
             "evaluation": {
               "type": "single_choice"
             },
             "options": [
-              "I'm fine.",
-              "You're great.",
-              "I'm ready."
+              "I'm",
+              "You're",
+              "He's"
             ],
-            "answer": "I'm fine.",
             "taskType": "functional_language"
           },
           {
             "itemId": "english-pre-a1-m009-grammar-ex01-i08",
             "position": 8,
-            "prompt": "Selecciona el modelo que significa: “Eres genial.”",
+            "prompt": "Complete: ___ great. (You are)",
             "evaluation": {
               "type": "single_choice"
             },
             "options": [
-              "I'm ready.",
-              "You're great.",
-              "You're nice."
+              "You're",
+              "I'm",
+              "She's"
             ],
-            "answer": "You're great.",
             "taskType": "functional_language"
           },
           {
             "itemId": "english-pre-a1-m009-grammar-ex01-i09",
             "position": 9,
-            "prompt": "Selecciona el modelo que significa: “Estoy preparado/a.”",
+            "prompt": "Complete: ___ ready. (I am)",
             "evaluation": {
               "type": "single_choice"
             },
             "options": [
-              "You're nice.",
-              "I am → I'm",
-              "I'm ready."
+              "I'm",
+              "You're",
+              "He's"
             ],
-            "answer": "I'm ready.",
             "taskType": "functional_language"
           },
           {
             "itemId": "english-pre-a1-m009-grammar-ex01-i10",
             "position": 10,
-            "prompt": "Selecciona el modelo que significa: “Eres agradable.”",
+            "prompt": "Complete: ___ nice. (You are)",
             "evaluation": {
               "type": "single_choice"
             },
             "options": [
-              "You're nice.",
-              "I am → I'm",
-              "You are → You're"
+              "You're",
+              "I'm",
+              "She's"
             ],
-            "answer": "You're nice.",
             "taskType": "functional_language"
           }
         ]
@@ -1141,7 +1131,8 @@
         "type": "reading_comprehension",
         "content": {
           "passageId": "english-pre-a1-m009-reading-passage-01",
-          "passage": "I am → I'm You are → You're I'm happy. You're happy. I'm a student. You're a teacher. I'm fine. You're great. I'm ready. You're nice."
+          "passage": "I am → I'm You are → You're I'm happy. You're happy. I'm a student. You're a teacher. I'm fine. You're great. I'm ready. You're nice.",
+          "passageTranslation": "Yo soy → I'm. Tú eres → You're. Estoy feliz. Tú estás feliz. Soy estudiante. Eres profesor/a. Estoy bien. Eres genial. Estoy preparado/a. Eres agradable."
         },
         "items": [
           {

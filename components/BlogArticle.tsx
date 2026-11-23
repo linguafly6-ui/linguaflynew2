@@ -1,7 +1,6 @@
 "use client";
 
 import { useEffect, useRef, useState } from "react";
-import CourseAd from "@/components/CourseAd";
 import { markdownToHtml } from "@/lib/markdown";
 import TranslatedBlogContent from "@/components/TranslatedBlogContent";
 
@@ -93,7 +92,6 @@ export default function BlogArticle({ content, title, excerpt, author = "LinguaF
         </header>
         <div className="blog-prose max-w-none">
           {first ? <TranslatedBlogContent html={markdownToHtml(first)} /> : null}
-          <CourseAd variant="mid" />
           {rest ? <TranslatedBlogContent html={markdownToHtml(rest)} /> : null}
         </div>
         {faqs.length ? (
@@ -111,7 +109,6 @@ export default function BlogArticle({ content, title, excerpt, author = "LinguaF
             </div>
           </section>
         ) : null}
-        <CourseAd variant="end" />
       </article>
     </>
   );
