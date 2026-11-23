@@ -1,6 +1,6 @@
 import britishIpa from "@/content/dictionaries/en-GB-ipa.json";
 
-function getSpanishPronunciationGuide(word: string): string {
+export function getSpanishPronunciationGuide(word: string): string {
   // Preview vocabulary sometimes pairs two terms (e.g. “Spain / Spanish”).
   // Resolve each term independently so both receive their own guide.
   const pairedTerms = word.split(/\s*\/\s*/).map((term) => term.trim()).filter(Boolean);
