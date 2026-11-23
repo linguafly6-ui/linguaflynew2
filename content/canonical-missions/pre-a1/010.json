@@ -935,151 +935,141 @@
           {
             "itemId": "english-pre-a1-m010-grammar-ex01-i01",
             "position": 1,
-            "prompt": "Selecciona el modelo que significa: “Encantado/a de conocerte.”",
+            "prompt": "Choose the correct phrase to introduce someone.",
             "evaluation": {
               "type": "single_choice"
             },
             "options": [
-              "Nice to meet you.",
-              "Nice to meet you too.",
-              "Pleased to meet you."
+              "This is Ana.",
+              "These is Ana.",
+              "This are Ana."
             ],
-            "answer": "Nice to meet you.",
             "taskType": "functional_language"
           },
           {
             "itemId": "english-pre-a1-m010-grammar-ex01-i02",
             "position": 2,
-            "prompt": "Selecciona el modelo que significa: “Encantado/a también.”",
+            "prompt": "Choose the correct response.",
             "evaluation": {
               "type": "single_choice"
             },
             "options": [
-              "Pleased to meet you.",
               "Nice to meet you too.",
-              "This is Ana."
+              "Nice meet you too.",
+              "Nice to meeting you too."
             ],
-            "answer": "Nice to meet you too.",
             "taskType": "functional_language"
           },
           {
             "itemId": "english-pre-a1-m010-grammar-ex01-i03",
             "position": 3,
-            "prompt": "Selecciona el modelo que significa: “Encantado/a de conocerte.”",
+            "prompt": "Choose the correct sentence.",
             "evaluation": {
               "type": "single_choice"
             },
             "options": [
-              "This is Ana.",
-              "This is my friend.",
-              "Pleased to meet you."
+              "Pleased to meet you.",
+              "Pleased meet you.",
+              "Pleased to meeting you."
             ],
-            "answer": "Pleased to meet you.",
             "taskType": "functional_language"
           },
           {
             "itemId": "english-pre-a1-m010-grammar-ex01-i04",
             "position": 4,
-            "prompt": "Selecciona el modelo que significa: “Esta es Ana.”",
+            "prompt": "Complete: This ___ Ana.",
             "evaluation": {
               "type": "single_choice"
             },
             "options": [
-              "This is Ana.",
-              "This is my friend.",
-              "Hello! My name is Ana."
+              "is",
+              "are",
+              "am"
             ],
-            "answer": "This is Ana.",
             "taskType": "functional_language"
           },
           {
             "itemId": "english-pre-a1-m010-grammar-ex01-i05",
             "position": 5,
-            "prompt": "Selecciona el modelo que significa: “Este/a es mi amigo/a.”",
+            "prompt": "Complete: This is ___ friend.",
             "evaluation": {
               "type": "single_choice"
             },
             "options": [
-              "Hello! My name is Ana.",
-              "This is my friend.",
-              "What's your name?"
+              "my",
+              "me",
+              "I"
             ],
-            "answer": "This is my friend.",
             "taskType": "functional_language"
           },
           {
             "itemId": "english-pre-a1-m010-grammar-ex01-i06",
             "position": 6,
-            "prompt": "Selecciona el modelo que significa: “¡Hola! Me llamo Ana.”",
+            "prompt": "Choose the correct introduction.",
             "evaluation": {
               "type": "single_choice"
             },
             "options": [
-              "What's your name?",
-              "I'm Alex.",
-              "Hello! My name is Ana."
+              "Hello! My name is Ana.",
+              "Hello! My names are Ana.",
+              "Hello! I name Ana."
             ],
-            "answer": "Hello! My name is Ana.",
             "taskType": "functional_language"
           },
           {
             "itemId": "english-pre-a1-m010-grammar-ex01-i07",
             "position": 7,
-            "prompt": "Selecciona el modelo que significa: “¿Cómo te llamas?”",
+            "prompt": "Choose the correct question.",
             "evaluation": {
               "type": "single_choice"
             },
             "options": [
               "What's your name?",
-              "I'm Alex.",
-              "You're my friend."
+              "What's you name?",
+              "What are your name?"
             ],
-            "answer": "What's your name?",
             "taskType": "functional_language"
           },
           {
             "itemId": "english-pre-a1-m010-grammar-ex01-i08",
             "position": 8,
-            "prompt": "Selecciona el modelo que significa: “Soy Alex.”",
+            "prompt": "Complete: I ___ Alex.",
             "evaluation": {
               "type": "single_choice"
             },
             "options": [
-              "You're my friend.",
-              "I'm Alex.",
-              "Goodbye!"
+              "am",
+              "is",
+              "are"
             ],
-            "answer": "I'm Alex.",
             "taskType": "functional_language"
           },
           {
             "itemId": "english-pre-a1-m010-grammar-ex01-i09",
             "position": 9,
-            "prompt": "Selecciona el modelo que significa: “Eres mi amigo/a”",
+            "prompt": "Complete: You ___ my friend.",
             "evaluation": {
               "type": "single_choice"
             },
             "options": [
-              "Goodbye!",
-              "Nice to meet you.",
-              "You're my friend."
+              "are",
+              "is",
+              "am"
             ],
-            "answer": "You're my friend.",
             "taskType": "functional_language"
           },
           {
             "itemId": "english-pre-a1-m010-grammar-ex01-i10",
             "position": 10,
-            "prompt": "Selecciona el modelo que significa: “¡Adiós!”",
+            "prompt": "Choose the correct farewell.",
             "evaluation": {
               "type": "single_choice"
             },
             "options": [
               "Goodbye!",
-              "Nice to meet you.",
-              "Nice to meet you too."
+              "Goodbyes!",
+              "Goodbying!"
             ],
-            "answer": "Goodbye!",
             "taskType": "functional_language"
           }
         ]
@@ -1195,7 +1185,8 @@
         "type": "reading_comprehension",
         "content": {
           "passageId": "english-pre-a1-m010-reading-passage-01",
-          "passage": "Nice to meet you. Nice to meet you too. Pleased to meet you. This is Ana. This is my friend. Hello! My name is Ana. What's your name? I'm Alex. You're my friend. Goodbye!"
+          "passage": "Nice to meet you. Nice to meet you too. Pleased to meet you. This is Ana. This is my friend. Hello! My name is Ana. What's your name? I'm Alex. You're my friend. Goodbye!",
+          "passageTranslation": "Encantado/a de conocerte. Encantado/a también. Mucho gusto. Esta es Ana. Este es mi amigo. ¡Hola! Me llamo Ana. ¿Cómo te llamas? Soy Alex. Eres mi amigo. ¡Adiós!"
         },
         "items": [
           {
