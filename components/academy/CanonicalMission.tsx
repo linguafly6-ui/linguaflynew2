@@ -2,7 +2,7 @@
 
 import { useEffect, useMemo, useRef, useState } from "react";
 import missionSource from "@/content/canonical-missions/a1/001.json";
-import britishIpa from "@/content/dictionaries/en-GB-ipa.json";
+import { getSpanishPronunciationGuide } from "@/content/pronunciation-guide";
 
 type DictationSegment = { segmentId: string; text: string };
 type Item = { itemId: string; english?: string; spanish?: string; prompt?: string; answer?: string; options?: string[]; word?: string; translation?: string; pronunciationGuide?: string; expectedAnswer?: string; kind?: string; audioLocale?: string; audio?: string; repeatCount?: number; segments?: DictationSegment[]; modelAnswer?: string; focus?: string; expectedWordId?: string; gapToken?: string; position: number };
@@ -36,6 +36,12 @@ function visualForVocabulary(english: string, spanish: string) {
   for (const [words, emoji] of groups) if (words.some(word => source.includes(word))) return emoji;
   return "💡";
 }
+
+// Traducciones globales para palabras de los textos de lectura A1. Los nombres propios se conservan.
+const A1_READING_WORD_TRANSLATIONS: Record<string, string> = {
+  "a":"un / una","café":"cafetería / café","music":"música","mr":"señor","about":"sobre / acerca de","after":"después de","age":"edad","also":"también","am":"soy / estoy","an":"un / una","and":"y","announcement":"anuncio","another":"otro / otra","are":"eres / sois / son / estáis","arrives":"llega","ask":"preguntar","asks":"pregunta","assistant":"asistente / dependiente","at":"a / en","back":"vuelta / atrás","bag":"bolsa","because":"porque","bedrooms":"dormitorios","best":"mejor","book":"libro","brother":"hermano","but":"pero","buy":"comprar","buys":"compra","by":"en / por","capital":"mayúscula / capital","card":"tarjeta","check":"comprobar / facturar","checks":"comprueba","chooses":"elige","clothes":"ropa","comfortable":"cómodo / cómoda","complete":"completo / completar","contact":"contacto","cooking":"cocinar","dancing":"bailar","day":"día","desk":"mostrador / escritorio","directions":"indicaciones","does":"auxiliar para preguntas","doesn't":"no (auxiliar de negación)","drinks":"bebe","each":"cada","easy":"fácil","eats":"come","end":"final / termina","enjoy":"disfrutar","evening":"tarde / noche","every":"cada","everyone":"todo el mundo","explains":"explica","fast":"rápido / rápidamente","finishes":"termina","first":"primero / primera","five":"cinco","for":"para / por","form":"formulario","free":"libre","friends":"amigos / amigas","from":"de / desde","fruit":"fruta","games":"juegos","gets":"consigue / se pone","gives":"da / entrega","go":"ir","good":"bueno / buena","great":"genial","green":"verde","grey":"gris","half":"media / mitad","has":"tiene","he":"él","hello":"hola","help":"ayuda / ayudar","her":"ella / su","him":"lo / le / a él","his":"su / sus (de él)","i":"yo","i'm":"soy / estoy","in":"en / dentro de","included":"incluido / incluida","is":"es / está","it":"ello / lo","languages":"idiomas","leaves":"sale","left":"izquierda","letters":"letras","like":"gustar / como","likes":"le gusta","listening":"escuchar","listens":"escucha","lives":"vive","living":"estar viviendo","local":"local / de la zona","look":"mirar","looks":"parece / mira","loves":"le encanta","lunch":"comida / almuerzo","map":"mapa","me":"me / a mí","meet":"conocer","meets":"se encuentra con","minutes":"minutos","monday":"lunes","mondays":"los lunes","morning":"mañana (parte del día)","my":"mi / mis","name":"nombre","next":"siguiente / al lado","nice":"agradable","nights":"noches","nine":"nueve","nineteen":"diecinueve","not":"no","now":"ahora","number":"número","numbers":"números","of":"de","office":"oficina","old":"mayor / de edad","on":"en / sobre","one":"uno / una","orders":"pide","other":"otro / otra","our":"nuestro / nuestra","out":"fuera","pair":"par","pass":"pase / tarjeta","past":"pasadas (hora)","person":"persona","phone":"teléfono / móvil","photos":"fotos","places":"lugares","plays":"juega","points":"señala","post":"correo","postcode":"código postal","reading":"lectura / leer","reads":"lee","receptionist":"recepcionista","repeat":"repetir","return":"ida y vuelta / regreso","ride":"montar (en bicicleta)","runs":"corre","say":"decir","says":"dice","school":"colegio / escuela","screen":"pantalla","see":"ver","seven":"siete","she":"ella","shop":"tienda","shows":"muestra","simple":"sencillo / sencilla","sixteen":"dieciséis","small":"pequeño / pequeña","smiles":"sonríe","speaks":"habla","spells":"deletrea","sport":"deporte","starts":"empieza","straight":"recto / en línea recta","students":"estudiantes","studies":"estudia","swim":"nadar","take":"llevar / tomar","takes":"toma / coge","taking":"llevando / tomando","talking":"hablando","teach":"enseñar","telephone":"teléfono","texts":"textos","thank":"agradecer / gracias","that":"ese / esa / que","the":"el / la / los / las","themselves":"ellos mismos / ellas mismas","there":"allí / hay","they":"ellos / ellas","this":"este / esta / esto","time":"hora / tiempo","to":"a / para","tomorrow":"mañana","too":"también / demasiado","travelling":"viajando","tries":"prueba / intenta","turn":"girar / doblar","tv":"televisión","twelve":"doce","two":"dos","up":"arriba","very":"muy","visitor":"visitante","waits":"espera","wakes":"se despierta","wants":"quiere","was":"era / estaba / fue","watches":"ve / mira","way":"camino / manera","we":"nosotros / nosotras","wearing":"llevando puesto","weekend":"fin de semana","well":"bien","window":"ventana","with":"con","works":"trabaja","would":"auxiliar de cortesía (quisiera)","writes":"escribe","years":"años","yes":"sí","you":"tú / usted / vosotros / ustedes",
+  "b":"letra B","e":"letra E","n":"letra N","t":"letra T","portugal":"Portugal","portuguese":"portugués / portuguesa"
+};
 
 const labels: Record<string, string> = { explore: "Exploración", practice: "Práctica", grammar: "Gramática", pronunciation: "Pronunciación", reading: "Lectura", writing: "Escritura", speaking: "Expresión oral", listening: "Comprensión auditiva" };
 
@@ -312,49 +318,6 @@ function speak(text: string) {
   window.speechSynthesis.speak(utterance);
 }
 
-function getSpanishPronunciationGuide(word: string) {
-  const normalized = word.toLowerCase().replace(/’/g, "'");
-  const ipa = (britishIpa as Record<string, string>)[normalized];
-  if (!ipa) return "";
-
-  // Convert British IPA into an accessible Spanish-friendly reading aid.
-  // This is deliberately an approximation, not a second phonetic alphabet.
-  let value = ipa.replace(/^\/+|\/+$/g, "").replace(/[ˈˌː]/g, "");
-  // In Spanish-friendly spelling, /j/ after an initial consonant is read as
-  // an "i" glide: future becomes fiu-cha rather than fyu-cha.
-  value = value.replace(/([bcdfghjklmnñpqrstvwxyz])j(?=u)/g, "$1i");
-  const rules: Array<[RegExp, string]> = [
-    [/tʃ/g, "ch"], [/dʒ/g, "dy"], [/θ/g, "z"], [/ð/g, "d"],
-    [/ʃ/g, "sh"], [/ʒ/g, "zh"], [/ŋ/g, "ng"], [/ɹ/g, "r"],
-    [/j/g, "y"], [/h/g, "j"], [/eɪ/g, "ei"], [/aɪ/g, "ai"], [/aʊ/g, "au"], [/əʊ/g, "ou"], [/oʊ/g, "ou"], [/ɔɪ/g, "oi"], [/ɪə/g, "ia"], [/eə/g, "ea"], [/ʊə/g, "ua"], [/ɐ/g, "a"], [/ə/g, "e"],
-    [/ʌ/g, "a"], [/æ/g, "a"], [/ɑ/g, "a"], [/ɒ/g, "o"],
-    [/ɔ/g, "o"], [/ɛ/g, "e"], [/ɪ/g, "i"], [/i/g, "i"],
-    [/ʊ/g, "u"], [/u/g, "u"], [/ɜː?/g, "er"],
-    [/ɡ/g, "g"], [/r/g, "r"], [/w/g, "u"], [/v/g, "v"],
-    [/ð/g, "d"], [/z/g, "z"], [/s/g, "s"], [/ʔ/g, ""]
-  ];
-  for (const [pattern, sound] of rules) value = value.replace(pattern, sound);
-  value = value.replace(/[^a-zñ]/gi, "").replace(/([aeiou])\1+/g, "$1");
-  value = value.replace(/^e/, "a").replace(/e$/, "a");
-
-  // Add syllable breaks between vowel nuclei, keeping English digraphs intact.
-  // Example: fiucha -> fiu-cha; jelou -> je-lou.
-  const nuclei = [...value.matchAll(/[aeiou]+/g)];
-  const breaks: number[] = [];
-  for (let i = 0; i < nuclei.length - 1; i += 1) {
-    const end = (nuclei[i].index ?? 0) + nuclei[i][0].length;
-    const nextStart = nuclei[i + 1].index ?? end;
-    const cluster = value.slice(end, nextStart);
-    if (!cluster) continue;
-    const digraphStart = cluster.search(/ch|sh|zh|ng/);
-    const splitAt = digraphStart >= 0 ? end + digraphStart : cluster.length > 1 ? nextStart - 1 : end;
-    breaks.push(splitAt);
-  }
-  for (const position of breaks.reverse()) {
-    value = value.slice(0, position) + "-" + value.slice(position);
-  }
-  return value || "";
-}
 
 export default function CanonicalMission({ missionData = missionSource as Mission }: { missionData?: Mission }) {
   const mission = missionData;
@@ -400,9 +363,9 @@ export default function CanonicalMission({ missionData = missionSource as Missio
     return isPlaceholder ? (english ? getExampleTranslation(english) : undefined) ?? "Traducción pendiente de revisión académica." : spanish;
   };
   const wordTranslations = useMemo(() => {
-    const words = new Map<string, string>();
+    const words = new Map<string, string>(Object.entries(A1_READING_WORD_TRANSLATIONS));
     exploreTranslations.forEach((translation, english) => {
-      if (/^[\p{L}]+(?:['’][\p{L}]+)?$/u.test(english)) words.set(english, translation);
+      if (/^[\\p{L}]+(?:['’][\\p{L}]+)?$/u.test(english)) words.set(english.toLocaleLowerCase("en-GB"), translation);
     });
     return words;
   }, [exploreTranslations]);
@@ -808,15 +771,28 @@ export default function CanonicalMission({ missionData = missionSource as Missio
             {section.exercise.theory?.tip && <p className="mt-3 rounded-xl bg-[#f3f7fb] p-4 text-sm leading-6 text-[#53657b]"><strong>Recuerda:</strong> {section.exercise.theory.tip}</p>}
           </section>}
 
-          {(mission.sections.find(s => s.sectionKey === "pronunciation")?.exercise.items.length ?? 0) > 0 && <section>
-            <div className="mb-4"><p className="text-[10px] font-bold uppercase tracking-[.17em] text-[#8290a3]">04 · PRONUNCIACIÓN</p><h3 className="mt-1 text-lg font-semibold text-[#26364b]">Así suenan las palabras</h3><p className="mt-1 text-sm text-[#7b8798]">La guía está adaptada a hispanohablantes; las MAYÚSCULAS marcan la sílaba tónica. Es aproximada, no AFI.</p></div>
-            <div className="grid gap-3 sm:grid-cols-2 lg:grid-cols-3">
-              {mission.sections.find(s => s.sectionKey === "pronunciation")?.exercise.items.map(entry => <article key={entry.itemId} className="rounded-xl border border-[#e8ebf0] bg-white p-4">
-                <p className="text-lg font-bold text-[#26364b]">{renderTranslatedWords(entry.word)}</p><p className="text-sm text-[#64816f]">{entry.translation}</p><div className="mt-2 rounded-lg bg-[#f3f7fb] px-3 py-2"><p className="text-[10px] font-bold uppercase tracking-wide text-[#8290a3]">Guía para hispanohablantes</p><p className="mt-1 text-sm font-semibold text-[#55708f]">{entry.pronunciationGuide}</p></div>
-                <button type="button" onClick={() => speak(entry.word ?? "")} className="mt-3 rounded-full border border-[#dce6f0] px-3 py-1.5 text-xs font-semibold text-[#55708f]">♫ Escuchar</button>
-              </article>)}
-            </div>
-          </section>}
+          {(() => {
+            const pronunciationItems = mission.sections.find((entry) => entry.sectionKey === "pronunciation")?.exercise.items ?? [];
+            if (![3, 4, 5, 6, 7, 8, 9, 15].includes(mission.mission.position ?? 0) || !pronunciationItems.length) return null;
+            return <section aria-label="Tarjetas de pronunciación" className="rounded-2xl border border-[#dce6f0] bg-[#f8fbff] p-4 sm:p-6">
+              <div className="mb-4"><p className="text-[10px] font-bold uppercase tracking-[.17em] text-[#55708f]">04 · PRONUNCIACIÓN</p><h3 className="mt-1 text-lg font-semibold text-[#26364b]">Escucha, lee y repite</h3><p className="mt-1 text-sm leading-6 text-[#64748b]">Cada tarjeta incluye una aproximación del sonido inglés escrita para hispanohablantes. La sílaba tónica aparece en MAYÚSCULAS.</p></div>
+              <div className="grid gap-3 sm:grid-cols-2 lg:grid-cols-3">
+                {pronunciationItems.map((entry) => {
+                  const word = entry.word ?? entry.english ?? "";
+                  const guide = entry.pronunciationGuide || getSpanishPronunciationGuide(word);
+                  return <article key={entry.itemId} className="flex flex-col rounded-xl border border-[#e2eaf3] bg-white p-4 shadow-sm">
+                    <p className="text-lg font-bold text-[#26364b]">{renderTranslatedWords(word)}</p>
+                    <p className="mt-1 text-sm text-[#64816f]">{entry.translation ?? entry.spanish ?? ""}</p>
+                    <div className="mt-3 rounded-lg border border-[#dce8f5] bg-[#f2f7fc] px-3 py-3">
+                      <p className="text-[10px] font-bold uppercase tracking-wide text-[#71839a]">Cómo pronunciarlo</p>
+                      <p className="mt-1 text-base font-bold leading-6 text-[#315b87]">{guide || "Guía en preparación"}</p>
+                    </div>
+                    <button type="button" onClick={() => speak(word)} className="mt-3 self-start rounded-full border border-[#dce6f0] px-3 py-2 text-xs font-semibold text-[#55708f]">♫ Escuchar palabra</button>
+                  </article>;
+                })}
+              </div>
+            </section>;
+          })()}
 
           {(section.exercise.lesson?.reading?.length ?? 0) > 0 && <section>
             <div className="mb-4"><p className="text-[10px] font-bold uppercase tracking-[.17em] text-[#8290a3]">05 · LECTURA</p><h3 className="mt-1 text-lg font-semibold text-[#26364b]">Lee y comprende el texto</h3><p className="mt-1 text-sm text-[#7b8798]">El texto se presenta en inglés con apoyo en español. Las frases clave y los modelos aparecen traducidos para que puedas comprenderlos antes de responder.</p></div>
@@ -850,13 +826,18 @@ export default function CanonicalMission({ missionData = missionSource as Missio
           </section>}
           <div className="rounded-2xl border border-[#dce8f4] bg-[#f3f8fd] p-5 text-center"><p className="text-sm font-semibold text-[#284866]">Ya has visto y comprendido el temario de esta misión.</p><p className="mt-1 text-sm text-[#61738a]">Cuando estés preparado, pasa a las actividades para practicarlo.</p></div>
         </div>}
-        {sectionKey === "pronunciation" && item?.options?.length ? <div className="mt-7">
-          <p className="text-xs font-semibold uppercase tracking-widest text-slate-400">Actividad de pronunciación {index + 1} de {activeItems.length}</p>
-          <div className="mt-4 rounded-2xl border border-slate-200 bg-slate-50 p-5"><p className="text-lg font-bold text-slate-900">{renderTranslatedWords(item.word)}</p><p className="mt-1 text-sm text-slate-600">{item.translation}</p><div className="mt-2 inline-block rounded-lg bg-white px-3 py-2"><p className="text-[10px] font-bold uppercase tracking-wide text-slate-400">Guía para hispanohablantes</p><p className="mt-1 text-sm font-semibold text-blue-800">{item.pronunciationGuide}</p></div><p className="mt-2 text-xs text-slate-500">Guía aproximada para hispanohablantes; no es AFI.</p><button type="button" onClick={() => speak(item.word ?? "")} className="mt-3 rounded-xl border border-slate-200 bg-white px-4 py-2.5 text-sm font-semibold">♫ Escuchar modelo británico</button></div>
-          <h3 className="mt-5 text-lg font-semibold leading-7">{renderTranslatedWords(item.prompt)}</h3>{getPromptTranslation(item.prompt) && <p className="mt-1 text-sm leading-6 text-[#64816f]">{getPromptTranslation(item.prompt)}</p>}
-          <div className="mt-4 grid gap-2">{optionsReady ? getOptions(item).map((option) => <button key={option} type="button" disabled={checked} onClick={() => mark(option === getCorrectAnswer(item), getCorrectAnswer(item))} className={`rounded-xl border px-4 py-3 text-left text-sm transition disabled:cursor-default ${checked && option === getCorrectAnswer(item) ? "border-emerald-500 bg-emerald-50" : "border-slate-200 hover:border-blue-400"}`}>{option}</button>) : <p className="rounded-xl border border-slate-200 bg-slate-50 px-4 py-3 text-sm text-slate-500">Preparando opciones…</p>}</div>
-        </div> : null}
-        {sectionKey === "pronunciation" && !item?.options?.length && <div className="mt-6 grid gap-3 sm:grid-cols-2">{section.exercise.items.map((entry) => <article key={entry.itemId} className="rounded-xl border border-slate-200 p-4"><p className="text-lg font-semibold">{renderTranslatedWords(entry.word)}</p><p className="text-sm text-slate-500">{entry.translation}</p><div className="mt-2 rounded-lg bg-blue-50 px-3 py-2"><p className="text-[10px] font-bold uppercase tracking-wide text-slate-400">Guía para hispanohablantes</p><p className="mt-1 font-medium text-blue-700">{entry.pronunciationGuide}</p></div><p className="text-xs text-slate-400">Guía aproximada para hispanohablantes; no es AFI.</p><button onClick={() => speak(entry.word ?? "")} className="mt-3 rounded-lg border border-slate-200 px-3 py-2 text-sm">▶ Escuchar modelo británico</button></article>)}</div>}
+        {sectionKey === "pronunciation" && <div className="mt-6 grid gap-3 sm:grid-cols-2">
+          {section.exercise.items.map((entry) => <article key={entry.itemId} className="rounded-xl border border-slate-200 p-4">
+            <p className="text-lg font-semibold">{renderTranslatedWords(entry.word)}</p>
+            <p className="text-sm text-slate-500">{entry.translation}</p>
+            <div className="mt-2 rounded-lg bg-blue-50 px-3 py-2">
+              <p className="text-[10px] font-bold uppercase tracking-wide text-slate-400">Guía para hispanohablantes</p>
+              <p className="mt-1 font-medium text-blue-700">{entry.pronunciationGuide}</p>
+            </div>
+            <p className="text-xs text-slate-400">Guía aproximada para hispanohablantes; no es AFI.</p>
+            <button type="button" onClick={() => speak(entry.word ?? "")} className="mt-3 rounded-lg border border-slate-200 px-3 py-2 text-sm">▶ Escuchar modelo británico</button>
+          </article>)}
+        </div>}
         {["practice", "grammar", "reading"].includes(sectionKey) && item && <div className="mt-7"><p className="text-xs font-semibold uppercase tracking-widest text-slate-400">Actividad {index + 1} de {activeItems.length}</p><h3 className="mt-3 text-lg font-semibold leading-7">{renderTranslatedWords(item.prompt)}</h3>{sectionKey === "grammar" && item.audio && <button type="button" onClick={() => speak(item.audio?.replace(/^tts:[^:]+:/, "") ?? "")} className="mt-4 inline-flex items-center gap-2 rounded-xl border border-blue-200 bg-blue-50 px-4 py-3 text-sm font-semibold text-blue-800">♫ Escuchar nombre de la letra</button>}<div className="mt-5 grid gap-2">{optionsReady ? getOptions(item).map((option) => <button key={option} disabled={checked} onClick={() => mark(option === getCorrectAnswer(item), getCorrectAnswer(item))} className={`rounded-xl border px-4 py-3 text-left text-sm transition disabled:cursor-default ${checked && option === getCorrectAnswer(item) ? "border-emerald-500 bg-emerald-50" : "border-slate-200 hover:border-blue-400"}`}>{option}</button>) : <p className="rounded-xl border border-slate-200 bg-slate-50 px-4 py-3 text-sm text-slate-500">Preparando opciones…</p>}</div></div>}
 {sectionKey === "writing" && item && <div className="mt-7"><p className="text-xs font-semibold uppercase tracking-widest text-slate-400">Dictado {index + 1} de 10 · {item.kind === "passage" ? "Texto" : "Una frase"}</p><p className="mt-3 text-sm leading-6 text-slate-600">Escucha como en un dictado de clase. Cada frase se reproduce tres veces: a ritmo natural, más despacio y de nuevo a ritmo natural. El texto no se muestra hasta que compruebes tu respuesta.</p><div className="mt-5 rounded-2xl border border-slate-200 bg-slate-50 p-4 sm:p-5"><div className="flex flex-wrap items-center justify-between gap-2"><p className="text-sm font-semibold text-slate-800">Dictado guiado</p><span className="rounded-full bg-white px-3 py-1 text-xs font-semibold text-slate-600">3 repeticiones por frase</span></div><div className="mt-4 flex flex-wrap gap-2"><button type="button" onClick={startDictation} className="rounded-xl bg-blue-700 px-4 py-3 text-sm font-semibold text-white">▶ {dictationPlaying ? "Reiniciar dictado" : "Reproducir dictado"}</button><button type="button" onClick={dictationPaused ? resumeDictation : pauseDictation} disabled={!dictationPlaying} className="rounded-xl border border-slate-200 bg-white px-4 py-3 text-sm font-semibold text-slate-700 disabled:opacity-40">{dictationPaused ? "Continuar" : "Pausar"}</button><button type="button" onClick={stopDictation} disabled={!dictationPlaying} className="rounded-xl border border-slate-200 bg-white px-4 py-3 text-sm font-semibold text-slate-700 disabled:opacity-40">Detener</button></div><div className="mt-4 flex items-center justify-between gap-3 text-xs text-slate-500"><span>Frase {dictationSegment + 1} de {item.segments?.length ?? 1}</span><span>Repetición {dictationRepeat || 0} de {item.repeatCount ?? 3}</span></div><div className="mt-2 h-1.5 overflow-hidden rounded-full bg-slate-200"><div className="h-full rounded-full bg-blue-700 transition-all" style={{ width: (((dictationSegment * (item.repeatCount ?? 3)) + dictationRepeat) / ((item.segments?.length ?? 1) * (item.repeatCount ?? 3))) * 100 + "%" }} /></div><p role="status" aria-live="polite" className="mt-3 text-xs leading-5 text-slate-500">{dictationMessage || "Pulsa reproducir para empezar. Puedes pausar o repetir el dictado."}</p></div><label className="mt-5 block text-sm font-medium">Escribe lo que has escuchado<textarea value={draft} onChange={(e) => setDraft(e.target.value)} disabled={checked} rows={item.kind === "passage" ? 7 : 3} placeholder="Escribe aquí el dictado completo…" className="mt-2 block w-full resize-y rounded-xl border border-slate-300 p-3 leading-7 outline-none focus:border-blue-500 focus:ring-2 focus:ring-blue-100 disabled:bg-slate-50" /></label><p className="mt-2 text-xs text-slate-500">Puedes volver a escuchar el audio tantas veces como necesites. El campo empieza vacío para que escribas lo que oyes.</p><div className="mt-3 flex flex-wrap items-center gap-2"><button type="button" disabled={checked || dictationHintLevel >= 2} onClick={() => setDictationHintLevel((level) => Math.min(level + 1, 2))} className="rounded-xl border border-amber-300 bg-amber-50 px-4 py-2.5 text-sm font-semibold text-amber-900 disabled:opacity-40">💡 {dictationHintLevel === 0 ? "Mostrar pista" : "Mostrar otra pista"}</button>{dictationHintLevel > 0 && <span className="text-xs font-medium text-slate-500">Pista {dictationHintLevel} de 2: <strong className="font-mono tracking-wider text-slate-800">{buildDictationHint(item.expectedAnswer ?? "", dictationHintLevel)}</strong></span>}</div><p className="mt-1 text-xs text-slate-500">La pista revela algunas letras, pero nunca muestra por completo una palabra. En respuestas de una sola letra solo indica el espacio que debes completar.</p><button disabled={checked || !draft.trim()} onClick={() => { const normalise = (value: string) => value.toLocaleLowerCase("en-GB").normalize("NFKC").replace(/[.,!?;:'’"]/g, "").replace(/\s+/g, " ").trim(); mark(normalise(draft) === normalise(item.expectedAnswer ?? ""), item.expectedAnswer ?? ""); }} className="mt-3 rounded-xl bg-blue-700 px-4 py-3 text-sm font-semibold text-white disabled:opacity-40">Comprobar dictado</button></div>}
         {sectionKey === "speaking" && item && <div className="mt-7"><p className="text-xs font-semibold uppercase tracking-widest text-slate-400">Tarea oral {index + 1} de 10</p><h3 className="mt-3 text-lg font-semibold">{renderTranslatedWords(item.prompt)}</h3><div className="mt-4 rounded-xl bg-slate-50 p-4"><p className="text-xs font-semibold uppercase tracking-wider text-slate-400">Modelo de referencia</p><p className="mt-2 text-sm text-slate-700">{renderTranslatedWords(item.modelAnswer)}</p><button onClick={() => speak(item.modelAnswer ?? "")} className="mt-3 rounded-lg border border-slate-200 bg-white px-3 py-2 text-sm">▶ Escuchar modelo</button></div><div className="mt-4 flex flex-wrap gap-2"><button onClick={recording ? stopRecording : startRecording} className={recording ? "rounded-xl bg-rose-600 px-4 py-3 text-sm font-semibold text-white" : "rounded-xl bg-blue-700 px-4 py-3 text-sm font-semibold text-white"}>{recording ? "■ Detener grabación" : "● Grabar mi respuesta"}</button>{recordedUrl && <audio controls src={recordedUrl} className="w-full" />}</div><p role="status" className="mt-3 text-sm text-slate-500">{recordingMessage || "La grabación permanece en esta página y no se envía al servidor."}</p><p className="mt-2 text-xs text-slate-400">No se genera una nota fonética automática en esta versión.</p><button disabled={checked} onClick={() => { setChecked(true); setFeedback("Tarea oral completada. Tu grabación permanece en esta página y no se ha evaluado."); }} className="mt-4 rounded-xl border border-slate-200 px-4 py-3 text-sm font-semibold disabled:opacity-40">Marcar tarea como completada</button></div>}
