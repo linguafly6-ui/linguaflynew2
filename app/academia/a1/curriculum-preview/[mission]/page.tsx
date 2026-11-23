@@ -30,6 +30,39 @@ const spanish: Record<string, string> = {
   "football":"fútbol","tennis":"tenis","basketball":"baloncesto","swimming":"natación","cycling":"ciclismo","run":"correr","jump":"saltar","play":"jugar","can":"poder / saber","can't":"no poder / no saber","sports equipment":"material deportivo","training":"entrenamiento","ride a bicycle":"montar en bicicleta",
   "town":"ciudad","city":"ciudad","street":"calle","square":"plaza","park":"parque","station":"estación","bus stop":"parada de autobús","supermarket":"supermercado","bank":"banco","post office":"oficina de correos","hospital":"hospital","turn left":"girar a la izquierda","turn right":"girar a la derecha","go straight":"seguir recto","opposite":"enfrente de","between":"entre","near":"cerca de","bus":"autobús","train":"tren","underground":"metro","taxi":"taxi","car":"coche","bicycle":"bicicleta","plane":"avión","ticket":"billete","single ticket":"billete sencillo","return ticket":"billete de ida y vuelta","platform":"andén","timetable":"horario","journey":"viaje","travel":"viajar","leave":"salir","arrive":"llegar","hotel":"hotel","reception":"recepción","room":"habitación","single room":"habitación individual","double room":"habitación doble","reservation":"reserva","key":"llave","lift":"ascensor","breakfast":"desayuno","shower":"ducha","towel":"toalla","night":"noche","check in":"registrarse","check out":"dejar la habitación","available":"disponible","airport":"aeropuerto","check-in desk":"mostrador de facturación","boarding pass":"tarjeta de embarque","passport":"pasaporte","luggage":"equipaje","suitcase":"maleta","hand luggage":"equipaje de mano","security":"control de seguridad","departure":"salida","arrival":"llegada","flight":"vuelo","gate":"puerta de embarque","boarding":"embarque","delayed":"retrasado","on time":"en hora","baggage claim":"recogida de equipaje","passport control":"control de pasaportes","terminal":"terminal","weather":"tiempo","sunny":"soleado","cloudy":"nublado","rainy":"lluvioso","windy":"ventoso","snowy":"nevado","hot":"caluroso","cold":"frío","warm":"templado","cool":"fresco","spring":"primavera","summer":"verano","autumn":"otoño","winter":"invierno","temperature":"temperatura","forecast":"previsión","rain":"lluvia","snow":"nieve","doctor":"médico/a","nurse":"enfermero/a","patient":"paciente","appointment":"cita","head":"cabeza","stomach":"estómago","throat":"garganta","tooth":"diente","back":"espalda","arm":"brazo","leg":"pierna","hand":"mano","foot":"pie","shoulder":"hombro","headache":"dolor de cabeza","stomachache":"dolor de estómago","sore throat":"dolor de garganta","toothache":"dolor de muelas","feel":"sentirse","ill":"enfermo/a","better":"mejor","medicine":"medicina","birthday":"cumpleaños","celebration":"celebración","party":"fiesta","invitation":"invitación","guest":"invitado/a","present":"regalo","cake":"pastel / tarta","card":"tarjeta","candles":"velas","balloon":"globo","January":"enero","February":"febrero","March":"marzo","April":"abril","May":"mayo","June":"junio","July":"julio","August":"agosto","September":"septiembre","October":"octubre","November":"noviembre","December":"diciembre","date":"fecha","birthday card":"tarjeta de cumpleaños",
   "shop":"tienda","shop assistant":"dependiente/a","customer":"cliente","price":"precio","pound":"libra","pence":"penique","cash":"efectivo","receipt":"recibo","bag":"bolsa","small":"pequeño/a","medium":"mediano/a","large":"grande","cheap":"barato/a","expensive":"caro/a","buy":"comprar","pay":"pagar","change":"cambio","notebook":"cuaderno","pen":"bolígrafo","How much is it?":"¿Cuánto cuesta?","How much are they?":"¿Cuánto cuestan?","Here you are":"Aquí tiene","That's all, thank you":"Eso es todo, gracias","library":"biblioteca","librarian":"bibliotecario/a","book":"libro","library card":"carné de biblioteca","borrow":"tomar prestado","return":"devolver","bookcase":"estantería","shelf":"estante","floor":"planta","opening hours":"horario de apertura","close":"cerrar","open":"abierto/a","story":"relato","adventure":"aventura","animal":"animal","quiet":"silencioso/a","three books":"tres libros","two weeks":"dos semanas","How long can I borrow this?":"¿Durante cuánto tiempo puedo tomarlo prestado?","Where can I find…?":"¿Dónde puedo encontrar…?","What time does the library close?":"¿A qué hora cierra la biblioteca?","I must return this book.":"Debo devolver este libro.","job":"profesión","driver":"conductor/a","cook":"cocinero/a","farmer":"agricultor/a","office":"oficina","school":"escuela","restaurant":"restaurante","workplace":"lugar de trabajo","What do you do?":"¿A qué te dedicas?","Where do you work?":"¿Dónde trabajas?","office worker":"empleado/a de oficina","I'm a teacher":"Soy profesor/a","He works in a hospital":"Él trabaja en un hospital","She works in a shop":"Ella trabaja en una tienda"
+""Monday":"lunes"
+""Tuesday":"martes"
+""Wednesday":"miércoles"
+""Thursday":"jueves"
+""Friday":"viernes"
+""Saturday":"sábado"
+""Sunday":"domingo"
+""every day":"todos los días"
+""once a week":"una vez por semana"
+""twice a week":"dos veces por semana"
+""never":"nunca"
+""early":"temprano"
+""late":"tarde"
+""schedule":"horario"
+""have dinner":"cenar"
+""do homework":"hacer los deberes"
+""go to bed":"acostarse"
+""sleep":"dormir"
+""morning":"mañana"
+""afternoon":"tarde"
+""evening":"atardecer / noche"
+""before":"antes"
+""after":"después"
+""sunrise":"amanecer"
+""midday":"mediodía"
+""o'clock":"en punto"
+""half past":"y media"
+""quarter past":"y cuarto"
+""quarter to":"menos cuarto"
+""minute":"minuto"
+""noon":"mediodía"
+""midnight":"medianoche"
+
 };
 const phraseModels: Record<string, string[]> = {
   "003":["Where are you from?","I'm from Spain.","What nationality are you?","I'm Spanish.","She is from France.","He is German.","We live in Italy.","They are from the United Kingdom.","I speak Spanish and English.","Where is your friend from?"],
@@ -54,6 +87,12 @@ const phraseModels: Record<string, string[]> = {
   "015":["I can swim very well.","She can't play tennis.","Can you ride a bicycle?","My brother plays football on Saturdays.","We can speak two languages.","He can't run very fast.","Can they play basketball?","I like swimming in the sea.","You can use my sports equipment.","I can't come to training today."],
   "029":["What do you do?","I'm a teacher.","Where do you work?","I work at a school.","My sister is a doctor.","She works in a hospital.","He is a shop assistant.","He works in a small shop.","My father is a driver.","My mother works in an office."],
   "028":["I would like to borrow this book.","Where is the library, please?","Can I have a library card?","You can borrow three books.","I must return this book on Friday.","The library is open today.","What time does the library close?","This book is about animals.","I like reading adventure stories.","Thank you for your help."],
+"030":["I study English on Monday and Wednesday.","I usually go swimming on Tuesday.","I visit my grandmother on Thursday.","I sometimes meet friends on Friday.","I always have lunch at one.","I never work on Sunday.","I play tennis once a week.","We go to the cinema twice a month.","What do you do at the weekend?","My week is busy but fun."]
+"031":["I get up at seven every morning.","She has breakfast at home.","He goes to work by bus.","We go to school at eight.","I have lunch at one o'clock.","They go home after school.","He does his homework in the afternoon.","We have dinner at eight.","I go to bed at ten.","The children sleep at night."]
+"032":["I drink tea in the morning.","She studies in the afternoon.","We watch television in the evening.","The baby sleeps at night.","I get up early.","He goes to bed late.","I wash my face before breakfast.","We play football after school.","The sun rises in the morning.","We have lunch at midday."]
+"033":["What time is it?","It is seven o'clock.","It is half past eight.","It is quarter past nine.","It is quarter to ten.","The lesson starts at nine.","It is five minutes past three.","We meet at half past six.","The train leaves at noon.","I go to bed at midnight."]
+"034":["Today is Monday.","My English class is on Tuesday.","We play tennis on Wednesday.","I visit my grandmother on Thursday.","Friday is my favourite day.","The shop is open on Saturday.","I relax on Sunday.","My birthday is in January.","February is a short month.","Her birthday is on the fifth of May."]
+
 };
 const mission026Reading = [
   { prompt:"Who is organising the birthday celebration?", answer:"Maya.", options:["Maya.","Oliver.","Maya's sister."] },
@@ -324,6 +363,12 @@ const passages: Record<string,string> = {
   "026":"Maya is planning a birthday celebration at Green Street Community Centre. She sends an invitation to her friend Oliver. The party is on Saturday, 14 June, at three o’clock. The centre is on Green Street, opposite the library. Maya asks her guests to arrive ten minutes early because they want to decorate the room together. Oliver sends a message to say he can come. He asks what he can bring, and Maya says, “Please bring some juice.” Maya’s sister is making a chocolate cake, and Maya is putting fourteen candles on it. There will be balloons, music and a small game. Oliver is happy to help. He writes, “Thank you for the invitation. See you on Saturday!”",
   "028":"On Tuesday afternoon, Noah visits Green Street Library with his friend Mia. He wants to borrow a book about animals. At the desk, the librarian asks for his library card. Noah does not have one, so he fills in a short form. The librarian gives him a card and explains the rules. He can borrow three books for two weeks. Noah chooses a book about wild animals and a story about a friendly dog. He must return both books by Friday, 12 September. Mia asks where the adventure books are, and the librarian shows her the second floor. The library closes at six o’clock. Noah says thank you and puts the books in his bag.",
   "027":"On Saturday morning, Ella visits Green Street Shop with a short shopping list. She needs two notebooks, a blue pen and a small bottle of water. The shop assistant shows her the notebooks. They are two pounds each. The pen is one pound fifty, and the water is eighty pence. Ella asks, “How much are these notebooks?” The assistant says, “They are four pounds.” Ella pays by card and asks for a receipt. She puts everything in a bag and checks the list. She has all the things she needs, so she says, “That’s all, thank you. Goodbye!”"
+"030":"Alex has a busy week. On Monday and Wednesday, he studies English after work. He usually goes swimming on Tuesday. On Thursday, he visits his grandmother. He sometimes meets friends on Friday evening. He always has lunch at one o'clock. He plays tennis once a week and visits the cinema twice a month. At the weekend, he relaxes. He never works on Sunday."
+"031":"Leo gets up at seven every morning. He has breakfast with his family at half past seven. He goes to school by bus at eight. He has lunch at one o'clock. After school, he goes home and does his homework. At six, he plays football with his friends. He has dinner at eight and goes to bed at ten. He sleeps well because he has a busy day."
+"032":"The Green family has different activities during the day. In the morning, Anna drinks tea and her son gets ready for school. At midday, they have lunch. In the afternoon, Anna works and the children play after school. In the evening, they watch television together. Before bed, the children wash their faces and read a story. Everyone sleeps at night."
+"033":"Green Town Community Centre has a simple timetable. The English lesson starts at nine o'clock. The art class starts at half past ten. At quarter past twelve, the café opens for lunch. The music lesson begins at quarter to two. The last class finishes at four o'clock. The centre closes at five. On Friday, a film starts at half past six."
+"034":"Mia has a small calendar on her desk. Today is Monday, and her English class is on Tuesday. She plays tennis on Wednesday and visits her grandmother on Thursday. Friday is her favourite day because she meets her friends. The shop is open on Saturday, and she relaxes on Sunday. Her birthday is in January. Her brother's birthday is in February. Their friend Lily has a birthday on the fifth of May."
+
 };
 
 function makeCanonicalMission(p: (typeof previewMissions)[number]): Mission {
