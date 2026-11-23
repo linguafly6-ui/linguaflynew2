@@ -57,7 +57,8 @@ export function getSpanishPronunciationGuide(word: string): string {
       "quarter past nine":"kuór-ter past náin",
       "quarter to ten":"kuór-ter tu tén",
       "my birthday is in january":"mái bérz-dei iz in yán-iu-e-ri",
-      "on the fifth of may":"on de fífz ov méi"};
+      "on the fifth of may":"on de fífz ov méi",
+      "January":"yán-iu-e-ri","February":"féb-ru-e-ri"};
     return a1Guides[normalized] ?? "";
   }
 
