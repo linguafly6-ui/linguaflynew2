@@ -313,6 +313,12 @@ function speak(text: string) {
 }
 
 function getSpanishPronunciationGuide(word: string) {
+  // Preview vocabulary sometimes pairs two terms (e.g. “Spain / Spanish”).
+  // Resolve each term independently so both receive their own guide.
+  const pairedTerms = word.split(/\s*\/\s*/).map((term) => term.trim()).filter(Boolean);
+  if (pairedTerms.length > 1) {
+    return pairedTerms.map(getSpanishPronunciationGuide).filter(Boolean).join(" / ");
+  }
   const normalized = word.toLowerCase().replace(/’/g, "'");
   const ipa = (britishIpa as Record<string, string>)[normalized];
   if (!ipa) {
