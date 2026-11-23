@@ -409,6 +409,9 @@ export default function CanonicalMission({ missionData = missionSource as Missio
   const [hoveredWord, setHoveredWord] = useState<string | null>(null);
   const renderTranslatedWords = (text?: string) => {
     if (!text) return text;
+    // En Exploración, el significado ya aparece debajo de cada palabra o frase:
+    // no mostrar controles ni tooltips interactivos de traducción.
+    if (sectionKey === "explore") return text;
     return text.split(/([\p{L}]+(?:['’][\p{L}]+)?)/gu).map((part, index) => {
       const translation = wordTranslations.get(part.toLocaleLowerCase("en-GB"));
       if (!translation) return part;
