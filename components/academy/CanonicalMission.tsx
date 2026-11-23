@@ -1702,7 +1702,6 @@ const PRE_A1_EXAMPLE_TRANSLATIONS: Record<string, string> = {
   "eaten": "comido",
   "set": "poner/establecer",
   "guided": "guiado",
-  "oyente": "oyente",
   "mightn't": "quizá no",
   "couldn't": "no podía",
   "man": "hombre",
