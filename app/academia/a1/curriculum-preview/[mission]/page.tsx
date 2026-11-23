@@ -1,6 +1,7 @@
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import CanonicalMission, { type Mission } from "@/components/academy/CanonicalMission";
+import { getSpanishPronunciationGuide } from "@/content/pronunciation-guide";
 import mission001 from "@/content/canonical-missions/a1/001.json";
 import mission002 from "@/content/canonical-missions/a1/002.json";
 import { getPreviewMission, previewMissions } from "@/content/a1-curriculum-preview";
@@ -64,7 +65,7 @@ function makeCanonicalMission(p: (typeof previewMissions)[number]): Mission {
     const parts = entry.split(" / ");
     const english = entry;
     const translated = parts.map((part) => spanish[part] ?? "");
-    return { english, spanish: translated.filter(Boolean).join(" / ") || "Traducción pendiente de revisión" };
+    return { english, spanish: translated.filter(Boolean).join(" / ") || "Traducción pendiente de revisión", pronunciationGuide: getSpanishPronunciationGuide(english) };
   });
   const phrases = phraseModels[id] ?? phraseModels["014"];
   const activities = p.sections;
