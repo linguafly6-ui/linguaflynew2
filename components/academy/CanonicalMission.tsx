@@ -2805,6 +2805,7 @@ export default function CanonicalMission({ missionData = missionSource as Missio
       indicate: "indicar", indicates: "indica",
       identify: "identificar", identifies: "identifica", term: "término",
 
+      consciously: "conscientemente / de forma deliberada", manipulated: "manipulado / manipularon",
       // Vocabulario específico de los ejercicios de Grammar C1.
       ability: "capacidad", able: "capaz", accumulated: "acumulado",
       accurate: "preciso", accurately: "con precisión", acknowledged: "reconoció",
