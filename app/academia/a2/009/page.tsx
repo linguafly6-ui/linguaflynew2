@@ -1,3 +1,24 @@
 import Link from "next/link";
-export const metadata={title:"Describing a Special Person · Misión 009 · Linguafly A2",description:"Describir a una persona especial. Organiza una descripción breve de una persona importante para ti, combinando aspecto, personalidad, relaciones y recuerdos."};
-export default function MissionPage(){return <main className="mx-auto min-h-[70vh] max-w-5xl px-5 py-10"><Link href="/academia/a2" className="text-sm font-semibold text-blue-700">← Misiones A2</Link><p className="mt-6 text-sm font-extrabold uppercase tracking-widest text-indigo-700">Linguafly Quest · A2 · Misión 009</p><h1 className="mt-2 text-4xl font-black text-slate-950">Describing a Special Person</h1><p className="mt-3 text-slate-600">Describir a una persona especial</p><p className="mt-2 text-sm text-slate-500">Present simple; have got; comparatives; there is / there are; conectores and / but / because.</p><iframe title="Misión 009 · Describing a Special Person" src="/missions/a2/009/index-v2.html?rev=20261119-a2-001-010" className="mt-6 h-[1100px] w-full rounded-2xl border border-slate-200 bg-white"/></main>}
+import CanonicalMission, { type Mission } from "@/components/academy/CanonicalMission";
+import mission from "@/content/canonical-missions/a2/009.json";
+
+export const metadata = {
+  title: "Shopping, Clothes and Prices · Misión 009 · Linguafly A2",
+  description: "Pregunta por precios y tallas, compara productos y compra ropa.",
+  robots: { index: false, follow: false },
+};
+
+export default function MissionPage() {
+  return (
+    <main className="min-h-screen bg-slate-50 px-4 py-7 sm:px-6">
+      <div className="mx-auto max-w-5xl">
+        <Link href="/academia/a2" className="inline-flex items-center gap-2 text-sm font-medium text-slate-500 transition hover:text-blue-700">
+          <span aria-hidden="true">←</span> Volver a las misiones A2
+        </Link>
+        <div className="mt-5">
+          <CanonicalMission missionData={mission as Mission} />
+        </div>
+      </div>
+    </main>
+  );
+}
