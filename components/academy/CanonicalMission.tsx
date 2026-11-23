@@ -767,7 +767,7 @@ export default function CanonicalMission({ missionData = missionSource as Missio
 
           {(() => {
             const pronunciationItems = mission.sections.find((entry) => entry.sectionKey === "pronunciation")?.exercise.items ?? [];
-            if (![3, 4].includes(mission.mission.position ?? 0) || !pronunciationItems.length) return null;
+            if (![3, 4, 5].includes(mission.mission.position ?? 0) || !pronunciationItems.length) return null;
             return <section aria-label="Tarjetas de pronunciación" className="rounded-2xl border border-[#dce6f0] bg-[#f8fbff] p-4 sm:p-6">
               <div className="mb-4"><p className="text-[10px] font-bold uppercase tracking-[.17em] text-[#55708f]">04 · PRONUNCIACIÓN</p><h3 className="mt-1 text-lg font-semibold text-[#26364b]">Escucha, lee y repite</h3><p className="mt-1 text-sm leading-6 text-[#64748b]">Cada tarjeta incluye una aproximación del sonido inglés escrita para hispanohablantes. La sílaba tónica aparece en MAYÚSCULAS.</p></div>
               <div className="grid gap-3 sm:grid-cols-2 lg:grid-cols-3">
