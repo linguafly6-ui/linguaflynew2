@@ -878,7 +878,18 @@ const C1_PRACTICE_EXTRA_WORD_TRANSLATIONS_2: Record<string, string> = {
   "withdrawal": "retirada",
   "writer's": "del autor",
   "writers": "autores",
-  "written": "escrito"
+  "written": "escrito",
+  "angry": "enfadado",
+  "best": "mejor",
+  "de": "de",
+  "first": "primero",
+  "improve": "mejorar",
+  "kind": "tipo / amable",
+  "listen": "escuchar",
+  "memory": "memoria",
+  "never": "nunca",
+  "open": "abrir",
+  "puzzle": "rompecabezas"
 };
 
 const labels: Record<string, string> = { explore: "Exploración", practice: "Práctica", grammar: "Gramática", pronunciation: "Pronunciación", reading: "Lectura", writing: "Escritura", speaking: "Expresión oral", listening: "Comprensión auditiva" };
