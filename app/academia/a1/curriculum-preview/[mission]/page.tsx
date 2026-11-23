@@ -61,7 +61,15 @@ const spanish: Record<string, string> = {
 "quarter to":"menos cuarto",
 "minute":"minuto",
 "noon":"mediodía",
-"midnight":"medianoche"
+"midnight":"medianoche",
+  "go to school":"ir al colegio",
+  "go to work":"ir al trabajo",
+  "go home":"volver a casa",
+  "have lunch":"almorzar",
+  "hour":"hora",
+  "What time":"a qué hora",
+  "at":"a las"
+
 };
 const phraseModels: Record<string, string[]> = {
   "003":["Where are you from?","I'm from Spain.","What nationality are you?","I'm Spanish.","She is from France.","He is German.","We live in Italy.","They are from the United Kingdom.","I speak Spanish and English.","Where is your friend from?"],
