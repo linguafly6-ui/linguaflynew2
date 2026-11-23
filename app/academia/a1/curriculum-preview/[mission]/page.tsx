@@ -27,7 +27,7 @@ const spanish: Record<string, string> = {
   "bread":"pan","rice":"arroz","pasta":"pasta","apple":"manzana","banana":"plátano","water":"agua","milk":"leche","coffee":"café","chicken":"pollo","vegetables":"verduras",
   "menu":"menú","order":"pedido","I'd like":"quisiera","cup":"taza","glass":"vaso","bottle":"botella","sandwich":"sándwich","soup":"sopa","bill":"cuenta","please":"por favor",
   "shirt":"camisa","trousers":"pantalones","dress":"vestido","shoes":"zapatos","jacket":"chaqueta","coat":"abrigo","blue":"azul","black":"negro","size":"talla","wear":"llevar puesto",
-  "football":"fútbol","tennis":"tenis","basketball":"baloncesto","swimming":"natación","cycling":"ciclismo","run":"correr","jump":"saltar","play":"jugar","can":"poder / saber","can't":"no poder / no saber","sports equipment":"material deportivo","training":"entrenamiento","ride a bicycle":"montar en bicicleta"
+  "football":"fútbol","tennis":"tenis","basketball":"baloncesto","swimming":"natación","cycling":"ciclismo","run":"correr","jump":"saltar","play":"jugar","can":"poder / saber","can't":"no poder / no saber","sports equipment":"material deportivo","training":"entrenamiento","ride a bicycle":"montar en bicicleta","sports equipment":"material deportivo","training":"entrenamiento","football":"fútbol","tennis":"tenis","basketball":"baloncesto","swimming":"natación","cycling":"ciclismo","run":"correr","jump":"saltar","play":"jugar","can":"poder / saber","can't":"no poder / no saber"
 };
 const phraseModels: Record<string, string[]> = {
   "003":["Where are you from?","I'm from Spain.","What nationality are you?","I'm Spanish.","She is from France.","He is German.","We live in Italy.","They are from the United Kingdom.","I speak Spanish and English.","Where is your friend from?"],
@@ -44,6 +44,30 @@ const phraseModels: Record<string, string[]> = {
   "014":["Can I see the menu, please?","I'd like a sandwich.","Can I have a glass of water?","I'd like a cup of coffee.","Would you like some soup?","Anything else?","No, thank you. That's all.","How much is the bill?","Can I pay by card?","Here you are. Thank you."],
   "015":["I can swim very well.","She can't play tennis.","Can you ride a bicycle?","My brother plays football on Saturdays.","We can speak two languages.","He can't run very fast.","Can they play basketball?","I like swimming in the sea.","You can use my sports equipment.","I can't come to training today."]
 };
+const mission015Grammar = [
+  { prompt:"Choose the correct sentence.", answer:"I can swim.", options:["I can swim.","I can to swim.","I cans swim."] },
+  { prompt:"Complete: She ___ play tennis.", answer:"can't", options:["can't","don't","isn't"] },
+  { prompt:"Choose the correct question.", answer:"Can you ride a bicycle?", options:["Can you ride a bicycle?","Do you can ride a bicycle?","Can ride you a bicycle?"] },
+  { prompt:"Choose the short answer: Can Leo swim?", answer:"No, he can't.", options:["No, he can't.","No, he doesn't.","No, he isn't."] },
+  { prompt:"Complete: Mia can ___ very well.", answer:"swim", options:["swim","swims","swimming"] },
+  { prompt:"Choose the correct sentence about two people.", answer:"They can play basketball.", options:["They can play basketball.","They cans play basketball.","They can to play basketball."] },
+  { prompt:"Which verb form follows can?", answer:"base form (play)", options:["base form (play)","plays","to play"] },
+  { prompt:"Complete: He ___ run very fast.", answer:"can't", options:["can't","can to","doesn't can"] },
+  { prompt:"Choose the natural expression.", answer:"play football", options:["play football","go football","do football"] },
+  { prompt:"Choose the natural expression.", answer:"go swimming", options:["go swimming","play swimming","do swim"] }
+];
+const mission015Reading = [
+  { prompt:"Which sports can Mia do?", answer:"Swimming and cycling.", options:["Swimming and cycling.","Tennis and football.","Basketball and running."] },
+  { prompt:"Can Mia play tennis?", answer:"No, she can't.", options:["No, she can't.","Yes, she can.","The text doesn't say."] },
+  { prompt:"Which sports can Leo play?", answer:"Football and basketball.", options:["Football and basketball.","Tennis and swimming.","Cycling and tennis."] },
+  { prompt:"Can Leo swim?", answer:"No, he can't.", options:["No, he can't.","Yes, he can.","Only in summer."] },
+  { prompt:"When do Mia and Leo practise?", answer:"After school.", options:["After school.","Before breakfast.","At the weekend."] },
+  { prompt:"Who runs fast?", answer:"Leo.", options:["Leo.","Mia.","Both of them."] },
+  { prompt:"What does Mia ask Leo to teach her?", answer:"Basketball.", options:["Basketball.","Tennis.","Swimming."] },
+  { prompt:"Does Leo agree to help Mia?", answer:"Yes, he does.", options:["Yes, he does.","No, he doesn't.","The text doesn't say."] },
+  { prompt:"Find the sentence that expresses inability.", answer:"Mia can't play tennis.", options:["Mia can't play tennis.","Mia can swim very well.","Leo can play football."] },
+  { prompt:"What is the main topic of the text?", answer:"Sports and abilities.", options:["Sports and abilities.","School subjects.","Food and drink."] }
+];
 const passages: Record<string,string> = {
   "003":"Ana is from Portugal. She is Portuguese and lives in Lisbon. She speaks Portuguese and English. Her friend Luca is from Italy. He is Italian and speaks Italian and English.",
   "004":"Laura Bennett is at the welcome desk. Her first name has five letters. She spells her surname B-E-N-N-E-T-T. The first letter is a capital B. There are double letters in her surname.",
@@ -93,12 +117,12 @@ function makeCanonicalMission(p: (typeof previewMissions)[number]): Mission {
     } else if (key === "practice") {
       items = vocab.map((word,i) => ({ itemId: `english-a1-m${id}-practice-${i+1}`, position:i+1, prompt:`Choose the Spanish meaning of “${word.english}”.`, answer:word.spanish, options:[word.spanish, ...vocab.filter((_,j)=>j!==i).slice(0,2).map(x=>x.spanish)], taskType:"vocabulary", evaluation:{type:"single_choice"} }));
     } else if (key === "grammar") {
-      items = Array.from({length:10},(_,i) => ({ itemId:`english-a1-m${id}-grammar-${i+1}`, position:i+1, prompt:"Which grammar structure is practised in this mission?", answer:p.grammar[i%p.grammar.length], options:[p.grammar[i%p.grammar.length],p.grammar[(i+1)%p.grammar.length],p.grammar[(i+2)%p.grammar.length]], evaluation:{type:"single_choice"} }));
+      items = (id === "015" ? mission015Grammar : Array.from({length:10},(_,i) => ({ prompt:"Which grammar structure is practised in this mission?", answer:p.grammar[i%p.grammar.length], options:[p.grammar[i%p.grammar.length],p.grammar[(i+1)%p.grammar.length],p.grammar[(i+2)%p.grammar.length]] }))).map((q:any,i:number) => ({ itemId:`english-a1-m${id}-grammar-${i+1}`, position:i+1, ...q, evaluation:{type:"single_choice"} }));
     } else if (key === "pronunciation") {
       items = vocab.flatMap((word,i) => word.english.split(" / ").map((term,partIndex) => ({ itemId:`english-a1-m${id}-pronunciation-${i+1}-${partIndex+1}`, position:i+1, word:term, translation:word.spanish.split(" / ")[partIndex] ?? word.spanish, pronunciationGuide:getSpanishPronunciationGuide(term), audio:"tts:en-GB", prompt:"Listen, read the guide and repeat the word.", options:[term,vocab[(i+1)%vocab.length].english,vocab[(i+2)%vocab.length].english], answer:term, taskType:"listening_and_guided_production" })));
     } else if (key === "reading") {
       content = { passageId:`english-a1-m${id}-reading-passage`, passage:passages[id] ?? p.goal };
-      items = Array.from({length:10},(_,i) => ({ itemId:`english-a1-m${id}-reading-${i+1}`, position:i+1, prompt:`Read the text and identify information about: ${vocab[i%vocab.length].english}.`, answer:vocab[i%vocab.length].english, options:[vocab[i%vocab.length].english,vocab[(i+1)%vocab.length].english,vocab[(i+2)%vocab.length].english], evaluation:{type:"single_choice"} }));
+      items = (id === "015" ? mission015Reading : Array.from({length:10},(_,i) => ({ prompt:`Read the text and identify information about: ${vocab[i%vocab.length].english}.`, answer:vocab[i%vocab.length].english, options:[vocab[i%vocab.length].english,vocab[(i+1)%vocab.length].english,vocab[(i+2)%vocab.length].english] }))).map((q:any,i:number) => ({ itemId:`english-a1-m${id}-reading-${i+1}`, position:i+1, ...q, evaluation:{type:"single_choice"} }));
     } else if (key === "writing") {
       items = phrases.map((sentence,i) => ({ itemId:`english-a1-m${id}-writing-${i+1}`, position:i+1, kind:"sentence", audio:"tts:en-GB", audioLocale:"en-GB", repeatCount:3, segments:[{segmentId:`english-a1-m${id}-writing-segment-${i+1}`,text:sentence}], expectedAnswer:sentence, evaluation:{type:"normalised_text"} }));
     } else if (key === "speaking") {
