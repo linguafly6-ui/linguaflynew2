@@ -1900,7 +1900,10 @@ export default function CanonicalMission({ missionData = missionSource as Missio
     });
     // Vocabulario funcional frecuente en los enunciados de Practice C1.
     const promptWords: Record<string, string> = {
-      competing: "que compite / en competencia", compete: "competir", competition: "competencia", competitive: "competitivo",\n      consideration: "consideración", considerations: "consideraciones", consider: "considerar",\n      focus: "enfoque / centrarse", focuses: "se centra / enfoques", focusing: "centrándose", focused: "centrado / enfocado",\n      phrase: "frase / expresión", phrases: "frases / expresiones",
+      competing: "que compite / en competencia", compete: "competir", competition: "competencia", competitive: "competitivo",
+      consideration: "consideración", considerations: "consideraciones", consider: "considerar",
+      focus: "enfoque / centrarse", focuses: "se centra / enfoques", focusing: "centrándose", focused: "centrado / enfocado",
+      phrase: "frase / expresión", phrases: "frases / expresiones",
       meaning: "significado", meanings: "significados",
       choose: "elegir", chooses: "elige", chosen: "elegido", choosing: "elección",
       complete: "completar", completes: "completa", completed: "completado",
