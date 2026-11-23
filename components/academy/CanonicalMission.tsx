@@ -409,8 +409,8 @@ export default function CanonicalMission({ missionData = missionSource as Missio
   const [hoveredWord, setHoveredWord] = useState<string | null>(null);
   const renderTranslatedWords = (text?: string) => {
     if (!text) return text;
-    // Translate solo está disponible en las secciones de Gramática (B1), nunca en Vocabulary.
-    if (!isB1Mission || sectionKey !== "grammar") return text;
+    // Translate solo está disponible en las secciones de Gramática de todas las misiones.
+    if (sectionKey !== "grammar") return text;
     return text.split(/([\p{L}]+(?:['’][\p{L}]+)?)/gu).map((part, index) => {
       const translation = wordTranslations.get(part.toLocaleLowerCase("en-GB"));
       if (!translation) return part;
