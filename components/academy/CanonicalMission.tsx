@@ -509,7 +509,24 @@ const C1_PRACTICE_EXTRA_WORD_TRANSLATIONS: Record<string, string> = {
   whole: "entero",
   writing: "escritura",
   s: "de una persona",
-  ai: "inteligencia artificial"
+  ai: "inteligencia artificial",
+  "bonds": "vínculos / lazos",
+  "treatment": "tratamiento",
+  "committee": "comité",
+  "consciousness": "conciencia",
+  "cost": "coste / costo",
+  "literature": "literatura",
+  "offs": "desventajas / compensaciones",
+  "producing": "produciendo",
+  "state's": "del Estado",
+  "person's": "de una persona",
+  "such": "tal / semejante",
+  "attention": "atención",
+  "audience": "público / audiencia",
+  "layout": "diseño / disposición",
+  "body": "cuerpo",
+  "discussion": "debate / discusión",
+  "originated": "se originó"
 };
 
 const labels: Record<string, string> = { explore: "Exploración", practice: "Práctica", grammar: "Gramática", pronunciation: "Pronunciación", reading: "Lectura", writing: "Escritura", speaking: "Expresión oral", listening: "Comprensión auditiva" };
