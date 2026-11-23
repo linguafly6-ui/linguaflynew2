@@ -7,7 +7,7 @@ export function getSpanishPronunciationGuide(word: string): string {
   if (pairedTerms.length > 1) {
     return pairedTerms.map(getSpanishPronunciationGuide).filter(Boolean).join(" / ");
   }
-  const normalized = word.trim().toLowerCase().replace(/’/g, "'").replace(/[?…]/g, "").replace(/\s+/g, " ");
+  const normalized = word.trim().toLowerCase().replace(/’/g, "'").replace(/[?….,!;:]/g, "").replace(/\s+/g, " ");
   const ipa = (britishIpa as Record<string, string>)[normalized];
   if (!ipa) {
     // Spanish-friendly approximations for A1 words missing from the British IPA dictionary.
