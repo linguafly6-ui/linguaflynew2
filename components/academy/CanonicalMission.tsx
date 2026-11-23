@@ -352,8 +352,8 @@ export default function CanonicalMission({ missionData = missionSource as Missio
           onMouseLeave={() => setHoveredWord((current) => current === wordId ? null : current)}
           onFocus={() => setHoveredWord(wordId)}
           onBlur={() => setHoveredWord((current) => current === wordId ? null : current)}
-          onClick={() => setHoveredWord((current) => current === wordId ? null : wordId)}
-          className="relative inline cursor-help border-0 border-b border-dotted border-[#7895b5] bg-transparent p-0 align-baseline font-inherit text-inherit"
+          onClick={() => setHoveredWord(wordId)}
+          className="relative inline cursor-help border-0 border-b border-dotted border-[#7895b5] bg-transparent p-0 align-baseline [font:inherit] text-inherit"
         >
           {part}
           {isOpen && (
