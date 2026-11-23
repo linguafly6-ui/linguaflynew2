@@ -13,7 +13,7 @@ const ids = ["001", "002", ...previewMissions.map((mission) => mission.id)];
 const keys = ["explore", "practice", "grammar", "pronunciation", "reading", "writing", "speaking", "listening"];
 const types = ["vocabulary_pairs", "mixed_practice", "grammar", "pronunciation_cards", "reading_comprehension", "dictation", "speaking_prompts", "listening_gap_fill"];
 const spanish: Record<string, string> = {
-  "Spain":"España","the United Kingdom":"Reino Unido","France":"Francia","Germany":"Alemania","Italy":"Italia",
+  "Spain":"España","Spanish":"español","the United Kingdom":"Reino Unido","British":"británico","France":"Francia","French":"francés","Germany":"Alemania","German":"alemán","Italy":"Italia","Italian":"italiano",
   "letter":"letra","alphabet":"alfabeto","spell":"deletrear","first name":"nombre","surname":"apellido","capital letter":"mayúscula","small letter":"minúscula","double":"doble","vowel":"vocal",
   "who":"quién","what":"qué","where":"dónde","when":"cuándo","how":"cómo","how old":"qué edad","married":"casado/a","single":"soltero/a","address":"dirección","occupation":"ocupación",
   "zero":"cero","ten":"diez","twenty":"veinte","thirty":"treinta","forty":"cuarenta","fifty":"cincuenta","sixty":"sesenta","seventy":"setenta","eighty":"ochenta","ninety":"noventa",
@@ -61,8 +61,10 @@ const passages: Record<string,string> = {
 function makeCanonicalMission(p: (typeof previewMissions)[number]): Mission {
   const id = p.id;
   const vocab = p.vocabulary.map((entry) => {
-    const english = entry.split(" / ")[0];
-    return { english, spanish: spanish[english] ?? "Traducción pendiente de revisión" };
+    const parts = entry.split(" / ");
+    const english = entry;
+    const translated = parts.map((part) => spanish[part] ?? "");
+    return { english, spanish: translated.filter(Boolean).join(" / ") || "Traducción pendiente de revisión" };
   });
   const phrases = phraseModels[id] ?? phraseModels["014"];
   const activities = p.sections;
@@ -101,8 +103,8 @@ function makeCanonicalMission(p: (typeof previewMissions)[number]): Mission {
       items = phrases.map((sentence,i) => ({ itemId:`english-a1-m${id}-speaking-${i+1}`, position:i+1, prompt:`Say this sentence: ${sentence}`, modelAnswer:sentence, evaluation:{type:"rubric",transcriptionSeparateFromPronunciation:true} }));
     } else {
       const bank = vocab.slice(0,10);
-      const transcript = phrases.join(" ");
-      const template = bank.map((word,i) => phrases[i].replace(word.english, `[[gap-${String(i+1).padStart(2,"0")}]]`)).join(" ");
+      const transcript = bank.map((word) => `Please say ${word.english}.`).join(" ");
+      const template = bank.map((word,i) => `Please say [[gap-${String(i+1).padStart(2,"0")}]].`).join(" ");
       content = { audio:"tts:en-GB", audioLocale:"en-GB", audioTranscript:transcript, transcriptTemplate:template, wordBank:bank.map((word,i)=>({wordId:`english-a1-m${id}-listening-word-${i+1}`,word:word.english})), interaction:"select_place_move_replace" };
       items = bank.map((word,i) => ({ itemId:`english-a1-m${id}-listening-${i+1}`, position:i+1, gapToken:`[[gap-${String(i+1).padStart(2,"0")}]]`, expectedWordId:`english-a1-m${id}-listening-word-${i+1}` }));
     }
