@@ -58,7 +58,15 @@ export function getSpanishPronunciationGuide(word: string): string {
       "quarter to ten":"kuór-ter tu tén",
       "my birthday is in january":"mái bérz-dei iz in yán-iu-e-ri",
       "on the fifth of may":"on de fífz ov méi",
-      "January":"yán-iu-e-ri","February":"féb-ru-e-ri"};
+      "January":"yán-iu-e-ri","February":"féb-ru-e-ri",
+      "monday":"mán-dei",
+      "tuesday":"tiúz-dei",
+      "wednesday":"uénz-dei",
+      "thursday":"zérz-dei",
+      "friday":"frái-dei",
+      "saturday":"sá-ta-dei",
+      "sunday":"sán-dei",
+      "what time":"uót táim"};
     return a1Guides[normalized] ?? "";
   }
 
