@@ -81,7 +81,7 @@ function getSpanishPronunciationGuide(word: string) {
 
   // Convert British IPA into an accessible Spanish-friendly reading aid.
   // This is deliberately an approximation, not a second phonetic alphabet.
-  let value = ipa.replace(/^\\/+|\\/+$/g, "").replace(/[ˈˌː]/g, "");
+  let value = ipa.replace(/^\/+|\/+$/g, "").replace(/[ˈˌː]/g, "");
   // In Spanish-friendly spelling, /j/ after an initial consonant is read as
   // an "i" glide: future becomes fiu-cha rather than fyu-cha.
   value = value.replace(/([bcdfghjklmnñpqrstvwxyz])j(?=u)/g, "$1i");
