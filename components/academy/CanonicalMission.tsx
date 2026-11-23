@@ -81,7 +81,10 @@ function getSpanishPronunciationGuide(word: string) {
 
   // Convert British IPA into an accessible Spanish-friendly reading aid.
   // This is deliberately an approximation, not a second phonetic alphabet.
-  let value = ipa.replace(/^\/+|\/+$/g, "").replace(/[ˈˌː]/g, "");
+  let value = ipa.replace(/^\\/+|\\/+$/g, "").replace(/[ˈˌː]/g, "");
+  // In Spanish-friendly spelling, /j/ after an initial consonant is read as
+  // an "i" glide: future becomes fiu-cha rather than fyu-cha.
+  value = value.replace(/([bcdfghjklmnñpqrstvwxyz])j(?=u)/g, "$1i");
   const rules: Array<[RegExp, string]> = [
     [/tʃ/g, "ch"], [/dʒ/g, "dy"], [/θ/g, "z"], [/ð/g, "d"],
     [/ʃ/g, "sh"], [/ʒ/g, "zh"], [/ŋ/g, "ng"], [/ɹ/g, "r"],
@@ -93,8 +96,25 @@ function getSpanishPronunciationGuide(word: string) {
     [/ð/g, "d"], [/z/g, "z"], [/s/g, "s"], [/ʔ/g, ""]
   ];
   for (const [pattern, sound] of rules) value = value.replace(pattern, sound);
-  value = value.replace(/[^a-zñ]/gi, "").replace(/([aeiou])\1+/g, "$1");
+  value = value.replace(/[^a-zñ]/gi, "").replace(/([aeiou])\\1+/g, "$1");
   value = value.replace(/^e/, "a").replace(/e$/, "a");
+
+  // Add syllable breaks between vowel nuclei, keeping English digraphs intact.
+  // Example: fiucha -> fiu-cha; jelou -> je-lou.
+  const nuclei = [...value.matchAll(/[aeiou]+/g)];
+  const breaks: number[] = [];
+  for (let i = 0; i < nuclei.length - 1; i += 1) {
+    const end = (nuclei[i].index ?? 0) + nuclei[i][0].length;
+    const nextStart = nuclei[i + 1].index ?? end;
+    const cluster = value.slice(end, nextStart);
+    if (!cluster) continue;
+    const digraphStart = cluster.search(/ch|sh|zh|ng/);
+    const splitAt = digraphStart >= 0 ? end + digraphStart : cluster.length > 1 ? nextStart - 1 : end;
+    breaks.push(splitAt);
+  }
+  for (const position of breaks.reverse()) {
+    value = value.slice(0, position) + "-" + value.slice(position);
+  }
   return value || "";
 }
 
