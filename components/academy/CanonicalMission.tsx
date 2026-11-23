@@ -168,7 +168,7 @@ const PRE_A1_EXAMPLE_TRANSLATIONS: Record<string, string> = {
   "This is my family.": "Esta es mi familia.",
   "I have a book. Thank you!": "Tengo un libro. ¡Gracias!",
   "I like + sport.": "Me gusta + deporte.",
-  "I can + verb.": "Puedo + verbo.",
+  "I can + verb.": "Sé + verbo / Puedo + verbo.",
   "A = éi · B = bí · C = sí · D = dí · E = í": "Pronunciación aproximada de las letras A, B, C, D y E en inglés.",
   "A / a · B / b · C / c": "Las letras A, B y C en mayúscula y en minúscula.",
   "A = éi · E = í · I = ái · O = óu · U = iú": "Pronunciación aproximada de las cinco vocales en inglés.",
@@ -232,7 +232,21 @@ const PRE_A1_EXAMPLE_TRANSLATIONS: Record<string, string> = {
   "It has got a tail.": "Tiene cola.",
   "It is big.": "Es grande.",
   "It's a red hat.": "Es un sombrero rojo.",
-  "What is it?": "¿Qué es?"
+  "What is it?": "¿Qué es?",
+  "Talk about sports": "Hablar de deportes",
+  "Talk about movement": "Hablar de actividades y movimiento",
+  "Name a team and place": "Nombrar un equipo y un lugar",
+  "This is my team. · This is the field.": "Este es mi equipo. · Este es el campo.",
+  "Review ownership and possessions": "Repasar la posesión y los objetos que tenemos",
+  "my · your · I've got · Have you got?": "mi · tu · tengo · ¿tienes?",
+  "Review preferences and descriptions": "Repasar gustos y descripciones",
+  "I like · It has got · It is.": "Me gusta · Tiene · Es/está.",
+  "Review questions": "Repasar preguntas",
+  "What is it? · Where is the book?": "¿Qué es? · ¿Dónde está el libro?",
+  "Complete:": "Completa:",
+  "Choose the correct answer.": "Elige la respuesta correcta.",
+  "Listen and complete.": "Escucha y completa.",
+  "Say the English sentence aloud.": "Di la frase en inglés en voz alta."
 };
 
 const preA1Listening: Record<number, { audioTranscript: string; template: string; words: string[] }> = {
@@ -312,6 +326,24 @@ export default function CanonicalMission({ missionData = missionSource as Missio
   const resolveSpanish = (english?: string, spanish?: string) => {
     const isPlaceholder = !spanish?.trim() || /^(frase|expresión|texto|modelo|estructura|repaso|práctica|practica|contenido|significado|saludar|despedirse|preguntar|responder|expresar|reconocer|identificar|presentar|hablar|usar|utilizar|distinguir|aprender|comprender|observar|leer|elegir|decir|describir)/i.test(spanish);
     return isPlaceholder ? (english ? getExampleTranslation(english) : undefined) ?? "Traducción pendiente de revisión académica." : spanish;
+  };
+  const getPromptTranslation = (prompt?: string) => {
+    if (!prompt?.trim()) return undefined;
+    const exact = getExampleTranslation(prompt);
+    if (exact) return exact;
+    const value = prompt.trim();
+    const meaning = value.match(/^Choose the Spanish meaning of [“"](.+?)[”"]\.?$/i);
+    if (meaning) return `Elige el significado en español de «${meaning[1]}».`;
+    const find = value.match(/^Find [“"](.+?)[”"] in the reading text\.?$/i);
+    if (find) return `Busca «${find[1]}» en el texto de lectura.`;
+    if (/^Say the English sentence aloud\.?$/i.test(value)) return "Di la frase en inglés en voz alta.";
+    if (/^Say the sentence\./i.test(value)) return "Di la frase en voz alta. Utiliza el modelo como ayuda.";
+    if (/^Listen and complete\.?$/i.test(value)) return "Escucha y completa.";
+    if (/^Choose the correct answer\.?$/i.test(value)) return "Elige la respuesta correcta.";
+    if (/^Select the correct answer\.?$/i.test(value)) return "Selecciona la respuesta correcta.";
+    if (/^Complete:/i.test(value)) return value.replace(/^Complete:/i, "Completa:");
+    if (/^Choose:/i.test(value)) return value.replace(/^Choose:/i, "Elige:");
+    return undefined;
   };
   const sectionLabel = (key: string) => mission.course.level.toUpperCase() === "B1" && key === "practice" ? "Vocabulary" : labels[key] ?? key;
   const [sectionKey, setSectionKey] = useState("explore");
@@ -613,7 +645,7 @@ export default function CanonicalMission({ missionData = missionSource as Missio
             <div className="mb-4"><p className="text-[10px] font-bold uppercase tracking-[.17em] text-[#8290a3]">03 · GRAMÁTICA</p><h3 className="mt-1 text-lg font-semibold text-[#26364b]">{section.exercise.theory?.title ?? "Gramática de la misión"}</h3><p className="mt-1 text-sm leading-6 text-[#7b8798]">{section.exercise.theory?.explanation}</p></div>
             <div className="grid gap-3 sm:grid-cols-2">
               {(section.exercise.theory?.patterns ?? []).filter(Boolean).map((pattern, i) => <article key={typeof pattern === "string" ? pattern : pattern.label ?? pattern.pattern ?? i} className="rounded-xl border border-[#e8ebf0] bg-[#fbfcfe] p-4">
-                {typeof pattern !== "string" && pattern.label && <p className="text-xs font-bold uppercase tracking-wide text-[#55779d]">{pattern.label}</p>}
+                {typeof pattern !== "string" && pattern.label && <p className="text-xs font-bold uppercase tracking-wide text-[#55779d]">{pattern.label}{getExampleTranslation(pattern.label) && <span className="mt-1 block text-[11px] font-medium normal-case tracking-normal text-[#64816f]">{getExampleTranslation(pattern.label)}</span>}</p>}
                 <p className="mt-2 font-semibold text-[#26364b]">{typeof pattern === "string" ? pattern : pattern.pattern}</p>{typeof pattern !== "string" && (pattern.translation ?? getExampleTranslation(pattern.pattern)) && <p className="mt-1 text-sm text-[#47745b]">{pattern.translation ?? getExampleTranslation(pattern.pattern)}</p>
                 {typeof pattern !== "string" && pattern.examples?.length ? <ul className="mt-3 space-y-2">{pattern.examples.map((example, exampleIndex) => {
                   const inlineTranslation = example.match(/^(.+?)\\s+[—–]\\s+(.+)$/);
@@ -681,7 +713,7 @@ export default function CanonicalMission({ missionData = missionSource as Missio
         {sectionKey === "pronunciation" && item?.options?.length ? <div className="mt-7">
           <p className="text-xs font-semibold uppercase tracking-widest text-slate-400">Actividad de pronunciación {index + 1} de {activeItems.length}</p>
           <div className="mt-4 rounded-2xl border border-slate-200 bg-slate-50 p-5"><p className="text-lg font-bold text-slate-900">{item.word}</p><p className="mt-1 text-sm text-slate-600">{item.translation}</p><div className="mt-2 inline-block rounded-lg bg-white px-3 py-2"><p className="text-[10px] font-bold uppercase tracking-wide text-slate-400">Guía para hispanohablantes</p><p className="mt-1 text-sm font-semibold text-blue-800">{item.pronunciationGuide}</p></div><p className="mt-2 text-xs text-slate-500">Guía aproximada para hispanohablantes; no es AFI.</p><button type="button" onClick={() => speak(item.word ?? "")} className="mt-3 rounded-xl border border-slate-200 bg-white px-4 py-2.5 text-sm font-semibold">♫ Escuchar modelo británico</button></div>
-          <h3 className="mt-5 text-lg font-semibold leading-7">{item.prompt}</h3>
+          <h3 className="mt-5 text-lg font-semibold leading-7">{item.prompt}</h3>{getPromptTranslation(item.prompt) && <p className="mt-1 text-sm leading-6 text-[#64816f]">{getPromptTranslation(item.prompt)}</p>}
           <div className="mt-4 grid gap-2">{optionsReady ? getOptions(item).map((option) => <button key={option} type="button" disabled={checked} onClick={() => mark(option === getCorrectAnswer(item), getCorrectAnswer(item))} className={`rounded-xl border px-4 py-3 text-left text-sm transition disabled:cursor-default ${checked && option === getCorrectAnswer(item) ? "border-emerald-500 bg-emerald-50" : "border-slate-200 hover:border-blue-400"}`}>{option}</button>) : <p className="rounded-xl border border-slate-200 bg-slate-50 px-4 py-3 text-sm text-slate-500">Preparando opciones…</p>}</div>
         </div> : null}
         {sectionKey === "pronunciation" && !item?.options?.length && <div className="mt-6 grid gap-3 sm:grid-cols-2">{section.exercise.items.map((entry) => <article key={entry.itemId} className="rounded-xl border border-slate-200 p-4"><p className="text-lg font-semibold">{entry.word}</p><p className="text-sm text-slate-500">{entry.translation}</p><div className="mt-2 rounded-lg bg-blue-50 px-3 py-2"><p className="text-[10px] font-bold uppercase tracking-wide text-slate-400">Guía para hispanohablantes</p><p className="mt-1 font-medium text-blue-700">{entry.pronunciationGuide}</p></div><p className="text-xs text-slate-400">Guía aproximada para hispanohablantes; no es AFI.</p><button onClick={() => speak(entry.word ?? "")} className="mt-3 rounded-lg border border-slate-200 px-3 py-2 text-sm">▶ Escuchar modelo británico</button></article>)}</div>}
