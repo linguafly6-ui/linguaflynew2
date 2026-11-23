@@ -279,7 +279,7 @@ const PRE_A1_EXAMPLE_TRANSLATIONS: Record<string, string> = {
   "Complete:": "Completa:",
   "Choose the correct answer.": "Elige la respuesta correcta.",
   "Listen and complete.": "Escucha y completa.",
-  "Say the English sentence aloud.": "Di la frase en inglés en voz alta."
+  "Say the English sentence aloud.": "Di la frase en inglés en voz alta.",
   // Diccionario ampliado para tooltips de las secciones de Gramática B1.
   "choose": "elegir",
   "correct": "correcto/a",
