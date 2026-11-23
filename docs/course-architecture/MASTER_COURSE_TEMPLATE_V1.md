@@ -22,7 +22,7 @@ Orden fijo de las ocho secciones:
 | 3 | grammar | Grammar | 10 ejercicios autocorregibles vinculados al objetivo gramatical de la misión |
 | 4 | pronunciation | Pronunciation | 10 elementos de vocabulario; palabra, traducción, guía aproximada para hispanohablantes y audio británico |
 | 5 | reading | Reading | 1 pasaje completo y visible + 10 preguntas de comprensión autocorregibles |
-| 6 | writing | Writing | 10 dictados de palabras y frases; audio británico, entrada de respuesta, corrección y resultado |
+| 6 | writing | Writing | 10 dictados guiados; una frase en Pre-A1/A1, varias en A2-B2 y textos segmentados en C1-C2; tres pasadas por segmento |
 | 7 | speaking | Speaking | 10 tareas/prompts; modelo de referencia, grabación, transcripción/análisis y feedback. No presentar la transcripción como medición fonética |
 | 8 | listening | Listening | 1 audio/pasaje completo + texto con 10 huecos + banco de 10 palabras mezcladas; asignar, mover y sustituir palabras, corregir, mostrar soluciones y puntuación |
 
@@ -35,13 +35,23 @@ Las cantidades son exactas, no mínimos. Una misión incompleta no se considera 
 - **Grammar:** exactamente diez preguntas. Cada pregunta tiene respuesta esperada, opciones cuando aplique y feedback.
 - **Pronunciation:** exactamente diez tarjetas de práctica; reproducción individual en inglés británico y guía de pronunciación aproximada. La guía española nunca se etiqueta como IPA.
 - **Reading:** el pasaje se muestra como bloque independiente antes de las preguntas. Exactamente diez preguntas vinculadas al pasaje; el alumno puede volver a consultarlo.
-- **Writing:** exactamente diez dictados, combinando palabras y frases. Cada elemento tiene audio, respuesta esperada y evaluación; los intentos deben conservarse.
+- **Writing:** exactamente diez dictados. En Pre-A1 y A1 cada dictado contiene una frase; en A2, B1 y B2 contiene varias frases; en C1 y C2 contiene un texto completo dividido en segmentos dictables. Cada segmento se reproduce tres veces (ritmo natural, más pausado y natural), con pausas para escribir, controles de reproducir/pausar/continuar/detener y respuesta esperada. El runtime común utiliza `segments[]`, `repeatCount: 3` y `audioLocale: en-GB`; el contenido no se revela antes de comprobar. La voz TTS del navegador es una solución inicial; una locución profesional podrá sustituirla sin cambiar el contrato de contenido. Los intentos deben conservarse.
 - **Speaking:** exactamente diez prompts evaluables. Se permite volver a grabar. La respuesta del servicio de voz distingue transcripción, coincidencia textual y feedback. No se afirma que una coincidencia de Whisper mida la calidad fonética.
 - **Listening:** audio reproducible; texto con diez huecos numerados; banco con las diez respuestas en orden mezclado; las palabras colocadas se pueden mover; al sustituir una respuesta, la anterior vuelve al banco; al comprobar se muestran aciertos, errores y soluciones.
 
 ### 2.2 Teoría gramatical en Exploración
 
 Exploración incluye diez parejas de vocabulario y una explicación breve del objetivo gramatical de la misión. La teoría contiene explicación en español, patrones, ejemplos en inglés y una pista de uso. Grammar conserva sus diez ejercicios autocorregibles; no sustituye ni duplica la explicación.
+
+### 2.3 Dictado progresivo por nivel
+
+| Nivel | Unidad de dictado | Reproducción |
+|---|---|---|
+| Pre-A1 y A1 | Una frase por actividad | La frase completa tres veces, con la segunda pasada más lenta |
+| A2, B1 y B2 | Varias frases relacionadas | Cada frase se reproduce tres veces antes de pasar a la siguiente |
+| C1 y C2 | Texto completo dividido en segmentos naturales | Cada segmento se reproduce tres veces, manteniendo el contexto del texto |
+
+El alumno escribe el dictado completo en un área de texto amplia. Puede repetir el audio, pausarlo y reanudarlo. La corrección compara el texto completo y debe distinguir errores de contenido, ortografía y puntuación; en los primeros niveles se puede tolerar temporalmente la capitalización y la puntuación para no penalizar el reconocimiento de palabras. El texto esperado permanece oculto hasta la corrección. El reproductor debe usar el mismo diseño y controles en todos los niveles.
 
 ## 3. Identificadores estables
 
@@ -155,7 +165,7 @@ Primera inspección de código de referencia en `main` (incluye Pre-A1 misión 0
 | Grammar | 10 preguntas | Usa un bloque extra con numeración heredada; verificar contenido y adaptar al contrato de 10 |
 | Pronunciation | 10 tarjetas con significado, guía y audio | Tiene 10 tarjetas, pero añade además un bloque de 10 retos de discriminación auditiva que no forma parte del patrón A1 de tarjetas |
 | Reading | Pasaje independiente + 10 preguntas | Hay pasaje + 10 preguntas; verificar el render y normalizar el bloque visual |
-| Writing | 10 dictados de palabra/frase | La muestra Pre-A1 muestra 22 dictados y una interfaz de dictado letra a letra; debe migrarse a 10 y al flujo común acordado |
+| Writing | 10 dictados de frase con tres pasadas por segmento | La muestra Pre-A1 muestra 22 dictados y una interfaz de dictado letra a letra; debe migrarse a 10 y al flujo común acordado |
 | Speaking | 10 prompts con grabación y análisis por elemento | La muestra Pre-A1 permite seleccionar palabras y grabar, pero no presenta una secuencia completa de 10 prompts |
 | Listening | Audio + 10 huecos inline + banco movible de palabras | La muestra Pre-A1 usa 10 preguntas tipo test y transcripción diferida; debe migrarse al formato gap-fill de A1 |
 

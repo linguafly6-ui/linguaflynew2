@@ -1,3 +1,24 @@
 import Link from "next/link";
-export const metadata={title:"Numbers 1–10 · Misión 002 · Linguafly",description:"Reconoce los números y comprende cantidades sencillas."};
-export default function MissionPage(){return <main className="mx-auto min-h-[70vh] max-w-5xl px-5 py-10"><section className="mb-7"><Link href="/academia/pre-a1" className="text-sm font-semibold text-blue-700">← Misiones Pre-A1</Link><p className="mt-6 text-sm font-extrabold uppercase tracking-widest text-blue-700">Linguafly Quest · Pre-A1 · Misión 002</p><h1 className="mt-2 text-4xl font-black text-slate-950">Numbers 1–10</h1><p className="mt-3 text-slate-600">Reconoce los números y comprende cantidades sencillas.</p></section><iframe title="Misión 002 · Numbers 1–10" src="/missions/pre-a1/002/index.html" className="h-[1100px] w-full rounded-2xl border border-slate-200 bg-white"/></main>}
+import CanonicalMission, { type Mission } from "@/components/academy/CanonicalMission";
+import missionData from "@/content/canonical-missions/pre-a1/002.json";
+
+export const metadata = {
+  title: "Pre-A1 · Misión 002 · Linguafly Academy",
+  description: "Números del uno al diez, conteo y dictados guiados.",
+  robots: { index: false, follow: false },
+};
+
+export default function PreA1Mission002Page() {
+  return (
+    <main className="min-h-screen bg-slate-50 px-4 py-7 sm:px-6">
+      <div className="mx-auto max-w-5xl">
+        <Link href="/academia/pre-a1" className="inline-flex items-center gap-2 text-sm font-medium text-slate-500 transition hover:text-blue-700">
+          <span aria-hidden="true">←</span> Volver a Pre-A1
+        </Link>
+        <div className="mt-5">
+          <CanonicalMission missionData={missionData as Mission} />
+        </div>
+      </div>
+    </main>
+  );
+}

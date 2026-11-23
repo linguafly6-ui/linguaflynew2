@@ -98,12 +98,13 @@ export async function getDueItems(
  */
 export async function processReview(
   db: D1Database,
-  result: ReviewResult
+  result: ReviewResult,
+  userId: string
 ): Promise<void> {
-  // Obtener el item actual
+  // La consulta vincula el identificador al propietario autenticado.
   const item = await db.prepare(
-    "SELECT * FROM sr_items WHERE id = ?"
-  ).bind(result.item_id).first<SRItem>();
+    "SELECT * FROM sr_items WHERE id = ? AND user_id = ?"
+  ).bind(result.item_id, userId).first<SRItem>();
 
   if (!item) throw new Error("Item no encontrado");
 
@@ -127,7 +128,7 @@ export async function processReview(
        last_reviewed_at = ?,
        total_reviews = total_reviews + 1,
        correct_reviews = correct_reviews + ?
-     WHERE id = ?`
+     WHERE id = ? AND user_id = ?`
   ).bind(
     newInterval,
     newEase,
@@ -135,7 +136,8 @@ export async function processReview(
     nextReview.toISOString(),
     new Date().toISOString(),
     result.was_correct ? 1 : 0,
-    result.item_id
+    result.item_id,
+    userId
   ).run();
 
   // Guardar la revisiÃ³n

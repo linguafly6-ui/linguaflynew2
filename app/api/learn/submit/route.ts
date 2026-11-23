@@ -15,9 +15,9 @@ export async function POST(request: NextRequest) {
       return NextResponse.json({ error: "Respuesta o ejercicio no válido." }, { status: 400 });
     }
 
-    const env = getEnv();
-    const db = env.COURSE_DB || env.DB;
-    if (!db) return NextResponse.json({ error: "Base de datos no disponible." }, { status: 503 });
+    // Learning data belongs exclusively to COURSE_DB. Never fall back to the blog DB.
+    const db = getEnv().COURSE_DB;
+    if (!db) return NextResponse.json({ error: "Base de datos de aprendizaje no disponible." }, { status: 503 });
     const exercise = await db.prepare(
       'SELECT ei.id,ei.correct_answer,ei.explanation,eu.course_id,eu.unit_number FROM exercise_items ei JOIN exercise_units eu ON eu.id=ei.unit_id WHERE ei.id=?'
     ).bind(exerciseId).first() as any;

@@ -1,0 +1,96 @@
+name: Academy pilot checks
+
+on:
+  push:
+    branches:
+      - work/linguafly-academy-audit
+      - a2
+    paths:
+      - "app/academia/a1/001-canonical/**"
+      - "app/academia/a2/**"
+      - "app/academia/b1/**"
+      - "app/academia/page.tsx"
+      - "app/academia/pre-a1/**"
+      - "components/academy/CanonicalMission.tsx"
+      - "app/api/auth/**"
+      - "app/api/billing/**"
+      - "app/api/repetition/**"
+      - "app/api/learn/**"
+      - "app/api/exercises/progress/**"
+      - "app/api/progress/**"
+      - "app/api/canonical-missions/**"
+      - "components/SpacedRepetition.tsx"
+      - "migrations/d1/**"
+      - "docs/course-architecture/**"
+      - "lib/student-auth.ts"
+      - "lib/spaced-repetition.ts"
+      - "lib/cf-context.ts"
+      - "content/canonical-missions/**"
+      - "content/missions/pre-a1/**"
+      - "schemas/course-mission.schema.json"
+      - "package.json"
+      - "package-lock.json"
+      - "tsconfig.json"
+      - ".github/workflows/academy-pilot-check.yml"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: academy-pilot-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  validate:
+    name: Validate content, types and production build
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+
+      - name: Install locked dependencies
+        run: npm ci
+
+      - name: Validate canonical mission JSON Schema
+        run: |
+          npx --yes ajv-cli@5 validate --spec=draft2020 -s schemas/course-mission.schema.json -d content/canonical-missions/a1/001.json
+          npx --yes ajv-cli@5 validate --spec=draft2020 -s schemas/course-mission.schema.json -d content/canonical-missions/a2/001.json
+          npx --yes ajv-cli@5 validate --spec=draft2020 -s schemas/course-mission.schema.json -d content/canonical-missions/a2/002.json
+          npx --yes ajv-cli@5 validate --spec=draft2020 -s schemas/course-mission.schema.json -d content/canonical-missions/a2/003.json
+          npx --yes ajv-cli@5 validate --spec=draft2020 -s schemas/course-mission.schema.json -d content/canonical-missions/a2/004.json
+          npx --yes ajv-cli@5 validate --spec=draft2020 -s schemas/course-mission.schema.json -d content/canonical-missions/a2/005.json
+          npx --yes ajv-cli@5 validate --spec=draft2020 -s schemas/course-mission.schema.json -d content/canonical-missions/a2/006.json
+          npx --yes ajv-cli@5 validate --spec=draft2020 -s schemas/course-mission.schema.json -d content/canonical-missions/a2/007.json
+          npx --yes ajv-cli@5 validate --spec=draft2020 -s schemas/course-mission.schema.json -d content/canonical-missions/a2/008.json
+          npx --yes ajv-cli@5 validate --spec=draft2020 -s schemas/course-mission.schema.json -d content/canonical-missions/a2/009.json
+          npx --yes ajv-cli@5 validate --spec=draft2020 -s schemas/course-mission.schema.json -d content/canonical-missions/a2/010.json
+          npx --yes ajv-cli@5 validate --spec=draft2020 -s schemas/course-mission.schema.json -d content/canonical-missions/a2/011.json
+          npx --yes ajv-cli@5 validate --spec=draft2020 -s schemas/course-mission.schema.json -d content/canonical-missions/a2/012.json
+          npx --yes ajv-cli@5 validate --spec=draft2020 -s schemas/course-mission.schema.json -d content/canonical-missions/a2/013.json
+          npx --yes ajv-cli@5 validate --spec=draft2020 -s schemas/course-mission.schema.json -d content/canonical-missions/a2/014.json
+          npx --yes ajv-cli@5 validate --spec=draft2020 -s schemas/course-mission.schema.json -d content/canonical-missions/a2/015.json
+          npx --yes ajv-cli@5 validate --spec=draft2020 -s schemas/course-mission.schema.json -d content/canonical-missions/a2/016.json
+          npx --yes ajv-cli@5 validate --spec=draft2020 -s schemas/course-mission.schema.json -d content/canonical-missions/a2/017.json
+          npx --yes ajv-cli@5 validate --spec=draft2020 -s schemas/course-mission.schema.json -d content/canonical-missions/a2/018.json
+          npx --yes ajv-cli@5 validate --spec=draft2020 -s schemas/course-mission.schema.json -d content/canonical-missions/a2/019.json
+          npx --yes ajv-cli@5 validate --spec=draft2020 -s schemas/course-mission.schema.json -d content/canonical-missions/a2/020.json
+          npx --yes ajv-cli@5 validate --spec=draft2020 -s schemas/course-mission.schema.json -d content/canonical-missions/a2/021.json
+          npx --yes ajv-cli@5 validate --spec=draft2020 -s schemas/course-mission.schema.json -d content/canonical-missions/a2/022.json
+          npx --yes ajv-cli@5 validate --spec=draft2020 -s schemas/course-mission.schema.json -d content/canonical-missions/b1/001.json
+          for mission in content/canonical-missions/pre-a1/{001..100}.json; do
+            npx --yes ajv-cli@5 validate --spec=draft2020 -s schemas/course-mission.schema.json -d "$mission"
+          done
+
+      - name: Type-check application
+        run: npx tsc --noEmit
+
+      - name: Build Next.js application
+        run: npm run build

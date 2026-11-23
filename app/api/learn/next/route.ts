@@ -9,9 +9,9 @@ export async function GET(request: NextRequest) {
     const student = await getStudent(request);
     if (!student) return NextResponse.json({ error: "Inicia sesión para continuar aprendiendo." }, { status: 401 });
     if (!student.placement_level) return NextResponse.json({ error: "Completa primero tu test de nivel.", placementRequired: true }, { status: 403 });
-    const env = getEnv();
-    const db = env.COURSE_DB || env.DB;
-    if (!db) return NextResponse.json({ error: "Base de datos no disponible." }, { status: 503 });
+    // Learning data belongs exclusively to COURSE_DB. Never fall back to the blog DB.
+    const db = getEnv().COURSE_DB;
+    if (!db) return NextResponse.json({ error: "Base de datos de aprendizaje no disponible." }, { status: 503 });
 
     let lockedCourse: { courseId: string; unitNumber: number } | null = null;
     const levelIndex = Math.max(0, LEARN_COURSES.indexOf(String(student.placement_level).toLowerCase() as typeof LEARN_COURSES[number]));

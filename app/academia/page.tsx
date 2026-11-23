@@ -25,6 +25,12 @@ export default function AcademyPage() {
         <p className="mt-3 text-slate-600">32 temas organizados en 8 bloques: información personal, vida diaria, hogar, compras, salud, estudios, viajes y comunicación.</p>
         <span className="mt-6 inline-block font-bold text-indigo-700">Ver catálogo temático →</span>
       </Link>
+      <Link href="/academia/b1" className="block rounded-3xl border border-violet-200 bg-violet-50 p-7 shadow-sm transition hover:border-violet-400">
+        <p className="text-sm font-extrabold tracking-widest text-violet-700">03 / INDEPENDENT</p>
+        <h2 className="mt-3 text-3xl font-black text-slate-950">B1 · Inglés intermedio</h2>
+        <p className="mt-3 text-slate-600">Cuenta experiencias, expresa opiniones y participa en conversaciones con mayor autonomía. La misión piloto ya está disponible.</p>
+        <span className="mt-6 inline-block font-bold text-violet-700">Ver B1 →</span>
+      </Link>
       <Link href="/academia/speaking" className="block rounded-3xl border border-cyan-200 bg-cyan-50 p-7 shadow-sm transition hover:border-cyan-400 md:col-span-2">
         <p className="text-sm font-extrabold tracking-widest text-cyan-800">02 / PRONUNCIATION STUDIO</p>
         <h2 className="mt-3 text-3xl font-black text-slate-950">Speaking · British English</h2>
