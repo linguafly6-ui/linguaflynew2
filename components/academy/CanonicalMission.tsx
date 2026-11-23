@@ -2788,7 +2788,7 @@ export default function CanonicalMission({ missionData = missionSource as Missio
       reading: "lectura / texto", text: "texto",
       writer: "autor", case: "caso", study: "estudio",
       belief: "creencia", experience: "experiencia", position: "postura",
-      reflects: "refleja", best: "mejor", most: "más",
+      reflect: "reflejar", reflects: "refleja", best: "mejor", most: "más",
       appropriately: "adecuadamente", hedged: "matizada / expresada con cautela",
       what: "qué", which: "cuál / qué", why: "por qué", how: "cómo",
       does: "auxiliar interrogativo", mean: "significar",
@@ -3404,7 +3404,7 @@ export default function CanonicalMission({ missionData = missionSource as Missio
           <div className="mt-5 rounded-xl border border-slate-200 bg-slate-50 p-5 text-base leading-10 text-slate-700">
             {listeningTemplate.split(/(\[\[gap-(?:0[1-9]|10)\]\])/g).map((part, i) => {
               const gap = listeningItems.find((entry) => entry.gapToken === part);
-              if (!gap) return <span key={`text-${i}`}>{part}</span>;
+              if (!gap) return <span key={`text-${i}`}>{renderTranslatedWords(part)}</span>;
               const placed = listeningAnswers[gap.itemId];
               return <button key={gap.itemId} disabled={checked} onClick={() => {
                 if (selectedListeningWord) {
@@ -3413,14 +3413,14 @@ export default function CanonicalMission({ missionData = missionSource as Missio
                 } else if (placed) {
                   setListeningAnswers((old) => { const copy = { ...old }; delete copy[gap.itemId]; return copy; });
                 }
-              }} className={`mx-1 inline-flex min-w-24 items-center justify-center rounded-lg border px-3 py-1 text-sm font-semibold ${placed ? "border-blue-300 bg-blue-50 text-blue-800" : "border-slate-300 bg-white text-slate-500"}`}>{placed ?? (selectedListeningWord ? "Colocar aquí" : "____")}</button>;
+              }} className={`mx-1 inline-flex min-w-24 items-center justify-center rounded-lg border px-3 py-1 text-sm font-semibold ${placed ? "border-blue-300 bg-blue-50 text-blue-800" : "border-slate-300 bg-white text-slate-500"}`}>{placed ? renderTranslatedWords(placed) : (selectedListeningWord ? "Colocar aquí" : "____")}</button>;
             })}
           </div>
-          <div className="mt-5 rounded-xl bg-slate-50 p-4"><p className="text-xs font-semibold uppercase tracking-widest text-slate-500">Banco de palabras</p><div className="mt-3 flex flex-wrap gap-2">{listeningWordBank.map((bankItem) => bankItem.word).map((word) => <button key={word} disabled={checked || Object.values(listeningAnswers).includes(word)} onClick={() => setSelectedListeningWord(word)} className={`rounded-lg border px-3 py-2 text-sm ${selectedListeningWord === word ? "border-blue-700 bg-blue-700 text-white" : "border-slate-200 bg-white"} disabled:opacity-30`}>{word}</button>)}</div><p className="mt-3 text-xs text-slate-500">{selectedListeningWord ? `Seleccionada: ${selectedListeningWord}. Pulsa un hueco para colocarla.` : `${Object.keys(listeningAnswers).length} de 10 palabras colocadas. Pulsa un hueco ocupado para devolver su palabra al banco.`}</p></div>
+          <div className="mt-5 rounded-xl bg-slate-50 p-4"><p className="text-xs font-semibold uppercase tracking-widest text-slate-500">Banco de palabras</p><div className="mt-3 flex flex-wrap gap-2">{listeningWordBank.map((bankItem) => bankItem.word).map((word) => <button key={word} disabled={checked || Object.values(listeningAnswers).includes(word)} onClick={() => setSelectedListeningWord(word)} className={`rounded-lg border px-3 py-2 text-sm ${selectedListeningWord === word ? "border-blue-700 bg-blue-700 text-white" : "border-slate-200 bg-white"} disabled:opacity-30`}>{renderTranslatedWords(word)}</button>)}</div><p className="mt-3 text-xs text-slate-500">{selectedListeningWord ? <>Seleccionada: {renderTranslatedWords(selectedListeningWord)}. Pulsa un hueco para colocarla.</> : `${Object.keys(listeningAnswers).length} de 10 palabras colocadas. Pulsa un hueco ocupado para devolver su palabra al banco.`}</p></div>
           <button disabled={checked || Object.keys(listeningAnswers).length !== 10} onClick={() => { const correct = listeningItems.filter((entry) => listeningAnswers[entry.itemId]?.toLowerCase() === getListeningAnswer(entry).toLowerCase()).length; setScore((value) => value + correct); setChecked(true); setFeedback(`Resultado: ${correct} de 10 respuestas correctas. Soluciones: ${listeningItems.map((entry, i) => `${i + 1}. ${getListeningAnswer(entry)}`).join(" · ")}`); }} className="mt-4 rounded-xl bg-blue-700 px-4 py-3 text-sm font-semibold text-white disabled:opacity-40">Comprobar las 10 respuestas</button>
         </div>}
         {sectionKey === "pronunciation" && item?.options && item.options.length > 0 && <div className="mt-7 flex items-center justify-between gap-3"><span className="text-xs text-slate-400">Actividad {index + 1} de {activeItems.length}</span><button onClick={next} disabled={!checked} className="rounded-xl bg-blue-700 px-5 py-3 text-sm font-semibold text-white disabled:cursor-not-allowed disabled:opacity-40">{index === activeItems.length - 1 ? "Finalizar sección" : "Siguiente →"}</button></div>}
-        {feedback && <p role="status" aria-live="polite" className="mt-5 rounded-2xl border border-[#e4ebf2] bg-[#f5f8fb] p-4 text-sm font-semibold leading-6 text-[#43546b]">{feedback.startsWith("Respuesta correcta: ") ? <>Respuesta correcta: {renderTranslatedWords(feedback.slice("Respuesta correcta: ".length))}</> : feedback}</p>}
+        {feedback && <p role="status" aria-live="polite" className="mt-5 rounded-2xl border border-[#e4ebf2] bg-[#f5f8fb] p-4 text-sm font-semibold leading-6 text-[#43546b]">{feedback.startsWith("Respuesta correcta: ") ? <>Respuesta correcta: {renderTranslatedWords(feedback.slice("Respuesta correcta: ".length))}</> : sectionKey === "listening" ? renderTranslatedWords(feedback) : feedback}</p>}
         {sectionKey !== "explore" && sectionKey !== "pronunciation" && sectionKey !== "listening" && <div className="mt-7 flex items-center justify-between gap-3"><span className="text-xs text-slate-400">Puntuación de esta sesión: {score}</span><button onClick={next} disabled={!checked} className="rounded-xl bg-blue-700 px-5 py-3 text-sm font-semibold text-white disabled:cursor-not-allowed disabled:opacity-40">{index === activeItems.length - 1 ? "Finalizar sección" : "Siguiente →"}</button></div>}
       </section>
       <p className="mt-4 text-center text-[11px] leading-5 text-[#9aa3b1]">Vista piloto · El progreso y las grabaciones son temporales y no se guardan en tu cuenta.</p>
