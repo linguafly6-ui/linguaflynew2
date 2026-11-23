@@ -2507,6 +2507,12 @@ const C1_SPEAKING_WORD_TRANSLATIONS: Record<string, string> = {
 };
 
 const C1_EXPLORATION_TRANSLATIONS: Record<string, string> = {
+  "Reduced": "Reducidas (estructuras gramaticales)",
+  "Modal perfects": "Perfectos modales",
+  "Cleft structures": "Estructuras hendidas o enfáticas",
+  "inversion": "Inversión (del orden gramatical)",
+  "conditionals": "Condicionales",
+  "complementation": "Complementación (gramatical)",
   "Not until the move was complete did she realise how much had changed.": "No fue hasta que terminó la mudanza cuando se dio cuenta de cuánto había cambiado todo.",
   "If he had sought support earlier, he might feel more settled now.": "Si hubiera buscado apoyo antes, quizá ahora se sentiría más adaptado.",
   "What matters most is the ability to reassess priorities.": "Lo que más importa es la capacidad de reconsiderar las prioridades.",
