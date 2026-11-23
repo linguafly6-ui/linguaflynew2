@@ -330,14 +330,14 @@ export default function CanonicalMission({ missionData = missionSource as Missio
   const wordTranslations = useMemo(() => {
     const words = new Map<string, string>();
     exploreTranslations.forEach((translation, english) => {
-      if (/^[\\p{L}]+(?:['’][\\p{L}]+)?$/u.test(english)) words.set(english, translation);
+      if (/^[\p{L}]+(?:['’][\p{L}]+)?$/u.test(english)) words.set(english, translation);
     });
     return words;
   }, [exploreTranslations]);
   const [hoveredWord, setHoveredWord] = useState<string | null>(null);
   const renderTranslatedWords = (text?: string) => {
     if (!text) return text;
-    return text.split(/([\\p{L}]+(?:['’][\\p{L}]+)?)/gu).map((part, index) => {
+    return text.split(/([\p{L}]+(?:['’][\p{L}]+)?)/gu).map((part, index) => {
       const translation = wordTranslations.get(part.toLocaleLowerCase("en-GB"));
       if (!translation) return part;
       const wordId = `${index}:${part.toLocaleLowerCase("en-GB")}`;
@@ -663,7 +663,7 @@ export default function CanonicalMission({ missionData = missionSource as Missio
                   <p className="mt-3 break-words text-base font-bold text-[#26364b] sm:text-lg">{renderTranslatedWords(entry.english)}</p>
                   <p className="mt-1 text-sm font-medium text-[#64816f]">{resolveSpanish(entry.english, entry.spanish)}</p>
                   <p className="mt-1 min-h-5 text-xs font-semibold text-[#55708f]">{pronunciationGuide || "Guía de pronunciación pendiente"}</p>
-                  <button type="button" aria-label={`Escuchar pronunciación de ${renderTranslatedWords(entry.english)}`} onClick={() => speak(entry.english ?? "")} className="mt-3 rounded-full border border-[#dce6f0] bg-white px-3 py-1.5 text-xs font-semibold text-[#55708f]">♫ Escuchar voz automática</button>
+                  <button type="button" aria-label={`Escuchar pronunciación de ${entry.english}`} onClick={() => speak(entry.english ?? "")} className="mt-3 rounded-full border border-[#dce6f0] bg-white px-3 py-1.5 text-xs font-semibold text-[#55708f]">♫ Escuchar voz automática</button>
                 </article>;
               })}
             </div>
@@ -675,7 +675,7 @@ export default function CanonicalMission({ missionData = missionSource as Missio
               {(section.exercise.lesson?.phrases ?? []).map((entry,i) => <article key={i} className="flex items-start gap-3 rounded-xl border border-[#e8ebf0] bg-white p-4">
                 <span className="grid h-10 w-10 shrink-0 place-items-center rounded-xl bg-[#f2f6fb] text-xl" aria-hidden="true">{["👋","🌅","☀️","🌆","👋","🗓️","🙏","💛","🤝","❓"][i]}</span>
                 <div className="min-w-0 flex-1"><p className="font-semibold text-[#26364b]">{renderTranslatedWords(entry.english)}</p><p className="mt-1 text-sm text-[#64816f]">{resolveSpanish(entry.english, entry.spanish)}</p>{entry.pronunciationGuide && <p className="mt-1 text-xs font-semibold text-[#55708f]">{entry.pronunciationGuide}</p>}{entry.note && <p className="mt-1 text-xs leading-5 text-[#8290a3]">{entry.note}</p>}</div>
-                <button type="button" aria-label={`Escuchar ${renderTranslatedWords(entry.english)}`} onClick={() => speak(entry.english)} className="shrink-0 rounded-full border border-[#dce6f0] px-3 py-2 text-xs text-[#55708f]">♫</button>
+                <button type="button" aria-label={`Escuchar ${entry.english}`} onClick={() => speak(entry.english)} className="shrink-0 rounded-full border border-[#dce6f0] px-3 py-2 text-xs text-[#55708f]">♫</button>
               </article>)}
             </div>
           </section>}
