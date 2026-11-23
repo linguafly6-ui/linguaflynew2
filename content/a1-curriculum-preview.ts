@@ -1,0 +1,137 @@
+export type PreviewMission = {
+  id: string;
+  title: string;
+  subtitle: string;
+  goal: string;
+  vocabulary: string[];
+  grammar: string[];
+  sections: { name: string; focus: string; activities: string[] }[];
+  audit: string;
+};
+
+export const previewMissions: PreviewMission[] = [
+  { id:"003", title:"Where Are You From?", subtitle:"Países y nacionalidades", goal:"Preguntar y responder de dónde es una persona, identificar países y nacionalidades y decir qué idiomas habla.", vocabulary:["Spain / Spanish","the United Kingdom / British","France / French","Germany / German","Italy / Italian","country","nationality","language"], grammar:["be + from","What nationality are you?","Where is your friend from?","I speak…"], sections:[
+    {name:"Explore",focus:"Países, nacionalidades y banderas.",activities:["Relacionar cinco países con sus nacionalidades.","Clasificar país, nacionalidad e idioma.","Escuchar y reconocer nombres de países."]},
+    {name:"Practice",focus:"Asociar procedencia y nacionalidad.",activities:["Completar frases con país o nacionalidad.","Elegir la respuesta a Where are you from?","Corregir frases breves."]},
+    {name:"Grammar",focus:"Verbo be + from y preguntas con be.",activities:["I am from Spain / She is from France.","Are you from Italy? Yes, I am.","Diferenciar Where are you from? y What nationality are you?"]},
+    {name:"Pronunciation",focus:"Nombres de países y terminaciones de nacionalidad.",activities:["Escuchar y repetir Spain, Spanish, Germany, German.","Practicar el ritmo de I’m from…","Repetir preguntas y respuestas completas."]},
+    {name:"Reading",focus:"Perfil de una estudiante internacional.",activities:["Leer un perfil breve de Ana, de Portugal.","Localizar país, nacionalidad e idiomas.","Responder ocho preguntas de comprensión."]},
+    {name:"Writing",focus:"Escribir un perfil de procedencia.",activities:["Completar país y nacionalidad de un personaje ficticio.","Redactar cinco frases sobre procedencia e idiomas.","Revisar mayúsculas en nombres de países."]},
+    {name:"Speaking",focus:"Preguntar y responder sobre procedencia.",activities:["Entrevistar a un compañero con datos ficticios.","Preguntar por país, nacionalidad e idiomas.","Presentar a una tercera persona."]},
+    {name:"Listening",focus:"Identificar procedencia en presentaciones breves.",activities:["Escuchar tres personas que se presentan.","Anotar país y nacionalidad.","Responder preguntas de detalle."]}
+  ], audit:"El HTML original incluye vocabulario pertinente, pero sus ejercicios mezclan países, nacionalidades e idiomas. La propuesta los organiza alrededor de Where are you from? y distingue país de nacionalidad."},
+  { id:"004", title:"Spelling My Name", subtitle:"Alfabeto y deletreo", goal:"Deletrear el nombre y el apellido, pedir aclaraciones y reconocer letras al escucharlas.", vocabulary:["letter","alphabet","spell","first name","surname","capital letter","small letter","double","vowel","How do you spell…?"], grammar:["How do you spell…?","It’s spelled…","Can you repeat that, please?","Imperativos sencillos: Write / Use"], sections:[
+    {name:"Explore",focus:"Alfabeto inglés y letras difíciles.",activities:["Reconocer las 26 letras.","Agrupar vocales y consonantes.","Identificar pares que suelen confundirse: B/V, E/I, G/J, M/N, P/B."]},
+    {name:"Practice",focus:"Reconocer y ordenar secuencias de letras.",activities:["Relacionar letra y sonido.","Completar nombres deletreados.","Detectar una letra incorrecta en un apellido."]},
+    {name:"Grammar",focus:"Preguntas y expresiones para pedir deletreo.",activities:["Practicar How do you spell your name?","Completar My surname is spelled…","Usar capital letter y small letter."]},
+    {name:"Pronunciation",focus:"Nombres de letras en inglés británico.",activities:["Escuchar y repetir el alfabeto por grupos.","Distinguir E/I y G/J.","Deletrear palabras lentamente y después a ritmo natural."]},
+    {name:"Reading",focus:"Formulario de registro de Laura Bennett.",activities:["Leer un formulario breve.","Localizar first name y surname.","Comprobar cómo se escribe el apellido."]},
+    {name:"Writing",focus:"Completar y revisar nombres ficticios.",activities:["Rellenar un formulario de ejemplo.","Escribir nombres letra por letra.","Revisar mayúsculas y orden de letras."]},
+    {name:"Speaking",focus:"Deletrear y confirmar información.",activities:["Representar un diálogo de recepción.","Pedir que repitan una letra.","Confirmar el nombre deletreado."]},
+    {name:"Listening",focus:"Comprender nombres y apellidos deletreados.",activities:["Escuchar a Anna Brown deletrear su apellido.","Seleccionar la secuencia correcta.","Escribir el nombre escuchado."]}
+  ], audit:"El HTML original tiene vocabulario de alfabeto y 50 retos de traducción. La nueva secuencia añade reconocimiento auditivo de letras y deletreo oral, competencias que no quedan suficientemente cubiertas por traducir."},
+  { id:"005", title:"Personal Questions", subtitle:"Preguntas personales", goal:"Formular y responder preguntas sencillas sobre identidad, edad, ocupación y relaciones sin exigir datos privados reales.", vocabulary:["who","what","where","when","how","how old","married","single","address","occupation"], grammar:["WH- questions with be","Are you…? / Is she…?","Do you…? (introducción contextual)","Respuestas breves"], sections:[
+    {name:"Explore",focus:"Palabras interrogativas y preguntas personales frecuentes.",activities:["Relacionar who, what, where, when y how con su función.","Clasificar preguntas sobre persona, lugar, tiempo y edad.","Identificar preguntas apropiadas en una primera conversación."]},
+    {name:"Practice",focus:"Elegir la pregunta adecuada.",activities:["Completar preguntas con la palabra interrogativa.","Relacionar preguntas y respuestas.","Ordenar palabras para formar preguntas."]},
+    {name:"Grammar",focus:"Orden de palabras en preguntas con be.",activities:["Practicar What is your name? y Where are you from?","Diferenciar Are you a student? de What is your occupation?","Introducir do/does solo en ejemplos frecuentes y guiados."]},
+    {name:"Pronunciation",focus:"Entonación de preguntas abiertas y cerradas.",activities:["Repetir preguntas con who, where y how.","Distinguir entonación de yes/no questions.","Practicar respuestas breves completas."]},
+    {name:"Reading",focus:"Ficha de presentación de Emma Wilson.",activities:["Leer un perfil ficticio.","Localizar ocupación, ciudad y edad.","Responder preguntas sin revelar datos propios."]},
+    {name:"Writing",focus:"Crear un cuestionario y responderlo con un personaje ficticio.",activities:["Escribir seis preguntas sencillas.","Responder con frases completas.","Revisar el orden de sujeto y verbo."]},
+    {name:"Speaking",focus:"Entrevista inicial por parejas.",activities:["Hacer preguntas de identidad y aficiones sencillas.","Pedir que repitan o aclaren una respuesta.","Usar personajes ficticios para datos sensibles."]},
+    {name:"Listening",focus:"Comprender una entrevista breve.",activities:["Escuchar una conversación con Emma.","Identificar quién, dónde y qué hace.","Completar una ficha con información explícita."]}
+  ], audit:"El vocabulario original mezcla interrogativos con datos personales sensibles. Dirección, estado civil y ocupación se practican con perfiles ficticios y sin pedir que el alumno comparta información privada."},
+  { id:"006", title:"Numbers and Contact Details", subtitle:"Números y contacto", goal:"Comprender y comunicar números, edades, teléfonos, códigos postales y precios sencillos.", vocabulary:["zero","ten","twenty","thirty","forty","fifty","sixty","seventy","eighty","ninety"], grammar:["Números 0–100","Números compuestos: twenty-one, thirty-five","How old…?","What’s your phone number?"], sections:[
+    {name:"Explore",focus:"Decenas, unidades y números compuestos.",activities:["Reconocer números del 0 al 100.","Clasificar -teen y -ty.","Relacionar cifras con palabras."]},
+    {name:"Practice",focus:"Leer, escribir y reconocer números.",activities:["Completar números que faltan.","Escribir cantidades en palabras.","Resolver dictados breves de números."]},
+    {name:"Grammar",focus:"Uso de números en edad, precios y contacto.",activities:["Preguntar How old are you?","Decir un número de teléfono dígito a dígito.","Practicar números compuestos en direcciones ficticias."]},
+    {name:"Pronunciation",focus:"Contraste entre -teen y -ty.",activities:["Distinguir thirteen/thirty y fifteen/fifty.","Practicar el acento de palabra.","Repetir series de números con claridad."]},
+    {name:"Reading",focus:"Tarjeta de contacto ficticia.",activities:["Leer nombre, teléfono y código postal de un personaje.","Localizar números concretos.","Responder preguntas de comprensión."]},
+    {name:"Writing",focus:"Completar una tarjeta de contacto ficticia.",activities:["Escribir números en cifras y palabras.","Completar teléfono y código postal inventados.","Revisar que cada dígito esté en orden."]},
+    {name:"Speaking",focus:"Pedir que repitan y confirmar números.",activities:["Dictar un teléfono inventado.","Preguntar Can you repeat that number, please?","Confirmar la secuencia escuchada."]},
+    {name:"Listening",focus:"Comprender secuencias numéricas.",activities:["Escuchar números de teléfono y precios.","Seleccionar la secuencia correcta.","Distinguir pares -teen/-ty."]}
+  ], audit:"El HTML original trabaja decenas y frases con números, pero debe completar las unidades y números compuestos. Se incorporan dictados de dígitos y datos ficticios para proteger la privacidad."},
+  { id:"007", title:"Languages I Speak", subtitle:"Idiomas y habilidades", goal:"Decir qué idiomas habla, lee, escribe o entiende y expresar habilidades con can/can’t.", vocabulary:["language","English","Spanish","French","German","speak","read","write","understand","practise"], grammar:["can / can’t + infinitive","Can you…?","Present simple: I speak / she speaks (extensión limitada)","Please speak slowly."], sections:[
+    {name:"Explore",focus:"Idiomas y destrezas lingüísticas.",activities:["Relacionar idiomas con sus nombres en inglés.","Clasificar speak, read, write y understand.","Asociar actividades con imágenes."]},
+    {name:"Practice",focus:"Describir habilidades lingüísticas.",activities:["Completar frases con un verbo de destreza.","Elegir can o can’t.","Relacionar preguntas y respuestas."]},
+    {name:"Grammar",focus:"Can/can’t para expresar capacidad.",activities:["Construir I can speak English.","Practicar Can you read this?","Introducir he/she speaks como extensión, no como foco simultáneo."]},
+    {name:"Pronunciation",focus:"Contracciones y ritmo de can/can’t.",activities:["Escuchar can y can’t en frases.","Repetir Please speak slowly.","Practicar preguntas con Can you…?"]},
+    {name:"Reading",focus:"Perfil lingüístico de un estudiante.",activities:["Leer qué idiomas habla y entiende un personaje.","Localizar habilidades concretas.","Responder preguntas de verdadero/falso."]},
+    {name:"Writing",focus:"Escribir un perfil de habilidades.",activities:["Completar una tabla de idiomas y destrezas.","Redactar seis frases con can/can’t.","Añadir una meta de práctica."]},
+    {name:"Speaking",focus:"Hablar de lo que uno puede hacer.",activities:["Preguntar Can you speak…?","Explicar qué se entiende o se practica.","Pedir al interlocutor que hable despacio."]},
+    {name:"Listening",focus:"Identificar idiomas y capacidades.",activities:["Escuchar a varias personas describir sus habilidades.","Completar una tabla.","Distinguir afirmaciones y negativas."]}
+  ], audit:"El HTML mezcla can/can’t con presente simple en tercera persona. La propuesta prioriza can/can’t y limita speak/speaks a una ampliación para evitar dos objetivos gramaticales principales a la vez."},
+  { id:"008", title:"My Profile", subtitle:"Perfil personal", goal:"Redactar y presentar un perfil breve con información personal, lugar de residencia, estudios, trabajo y aficiones.", vocabulary:["profile","surname","born","live","work","study","favourite","hobby","free time","profile picture"], grammar:["Present simple","have / has","like + noun / -ing (introducción)","was born como expresión fija"], sections:[
+    {name:"Explore",focus:"Partes de un perfil personal.",activities:["Identificar datos básicos en un perfil modelo.","Relacionar hobbies y actividades.","Distinguir información personal de preferencias."]},
+    {name:"Practice",focus:"Completar un perfil con datos ficticios.",activities:["Seleccionar verbos para cada frase.","Completar live, work y study.","Relacionar hobbies con imágenes."]},
+    {name:"Grammar",focus:"Presente simple y have/has.",activities:["Practicar I live / She lives.","Usar I have one brother / He has…","Presentar I was born in… como bloque fijo sin enseñar todo el pasado."]},
+    {name:"Pronunciation",focus:"Ritmo y terminaciones de tercera persona.",activities:["Repetir lives, works y studies.","Practicar frases sobre hobbies.","Leer un perfil en voz alta."]},
+    {name:"Reading",focus:"Perfil de una persona joven.",activities:["Leer un perfil de ejemplo.","Localizar lugar de nacimiento, residencia y aficiones.","Responder preguntas de detalle."]},
+    {name:"Writing",focus:"Crear un perfil de 8–10 frases.",activities:["Completar una plantilla.","Escribir sobre residencia, estudios y gustos.","Añadir una descripción sencilla."]},
+    {name:"Speaking",focus:"Presentar un perfil personal o ficticio.",activities:["Presentar un personaje en un minuto.","Responder preguntas sencillas.","Hacer una pregunta de seguimiento."]},
+    {name:"Listening",focus:"Comprender una presentación personal.",activities:["Escuchar a una persona describir su perfil.","Completar datos en una ficha.","Identificar dos aficiones."]}
+  ], audit:"El material original reúne presente simple, hobbies y la expresión was born. Se enseña was born como fórmula fija para no adelantar innecesariamente el pasado simple completo."},
+  { id:"009", title:"People in My Class", subtitle:"Personas de la clase", goal:"Describir personas de un grupo, identificar relaciones sencillas y decir dónde están.", vocabulary:["classmate","teacher","student","friend","boy","girl","man","woman","people","group"], grammar:["There is / there are","Plural regular básico","This / that","next to como expresión de ubicación"], sections:[
+    {name:"Explore",focus:"Personas y roles en el aula.",activities:["Identificar personas en una imagen de clase.","Relacionar roles y vocabulario.","Clasificar singular y plural."]},
+    {name:"Practice",focus:"Describir quién está en el grupo.",activities:["Completar frases con is/are.","Elegir student, teacher o classmate.","Describir una escena con frases modelo."]},
+    {name:"Grammar",focus:"There is/are y plurales básicos.",activities:["Practicar There is one teacher.","Practicar There are twelve students.","Usar this/that y next to en contexto."]},
+    {name:"Pronunciation",focus:"Plural -s y contracciones.",activities:["Repetir student/students y teacher/teachers.","Distinguir is y are en frases.","Practicar descripciones breves."]},
+    {name:"Reading",focus:"Una clase internacional.",activities:["Leer una descripción de aula.","Contar estudiantes y profesores.","Localizar a una persona descrita."]},
+    {name:"Writing",focus:"Describir una clase imaginaria.",activities:["Escribir cinco frases con there is/are.","Añadir dos adjetivos sencillos.","Revisar plurales."]},
+    {name:"Speaking",focus:"Describir personas y su ubicación.",activities:["Describir una imagen de grupo.","Preguntar Who is the new student?","Identificar a alguien usando next to."]},
+    {name:"Listening",focus:"Identificar personas en una descripción oral.",activities:["Escuchar una descripción de clase.","Seleccionar la persona correcta.","Completar cantidades y roles."]}
+  ], audit:"El HTML incluye there are y next to en los ejercicios, aunque el vocabulario original se centra en personas. La ficha los introduce de forma controlada y como apoyo a la descripción."},
+  { id:"010", title:"First Conversation", subtitle:"Primera conversación", goal:"Mantener una conversación inicial breve integrando identidad, procedencia, edad, idiomas, deletreo y fórmulas de cortesía.", vocabulary:["conversation","question","answer","introduce","again","slowly","together","class","new","welcome"], grammar:["Repaso de be y preguntas personales","WH- questions básicas","can/can’t en preguntas frecuentes","Pedir repetición y aclaración"], sections:[
+    {name:"Explore",focus:"Estructura de una primera conversación.",activities:["Reconocer saludo, presentación, preguntas y despedida.","Ordenar turnos de una conversación.","Identificar expresiones de reparación."]},
+    {name:"Practice",focus:"Combinar preguntas y respuestas de misiones 001–009.",activities:["Relacionar preguntas con respuestas.","Completar una conversación con huecos.","Elegir una fórmula para pedir repetición."]},
+    {name:"Grammar",focus:"Repaso integrado sin reglas nuevas extensas.",activities:["Formar preguntas con be.","Practicar respuestas breves.","Revisar can/can’t y expresiones de cortesía."]},
+    {name:"Pronunciation",focus:"Ritmo, claridad y entonación conversacional.",activities:["Repetir turnos completos.","Practicar nombres y números.","Usar pausas y entonación natural."]},
+    {name:"Reading",focus:"Conversación entre Marta y Luis.",activities:["Leer un diálogo de presentación.","Identificar datos de cada persona.","Responder preguntas de comprensión."]},
+    {name:"Writing",focus:"Preparar un guion breve de presentación.",activities:["Escribir seis preguntas y respuestas.","Añadir una presentación de un amigo.","Revisar orden y puntuación."]},
+    {name:"Speaking",focus:"Conversación de 1–2 minutos.",activities:["Presentarse y preguntar al interlocutor.","Hacer al menos una pregunta de seguimiento.","Pedir que repitan o hablen más despacio cuando sea necesario."]},
+    {name:"Listening",focus:"Comprender una conversación completa.",activities:["Escuchar un diálogo entre dos estudiantes nuevos.","Completar datos de ambos interlocutores.","Identificar saludos, preguntas y despedidas."]}
+  ], audit:"El material original tiene preguntas y traducciones, pero la misión debe evaluar interacción real por turnos. Se plantea como cierre integrador del bloque 001–009."},
+  { id:"011", title:"A Day in My Life", subtitle:"Rutinas diarias", goal:"Describir una rutina diaria, indicar horarios y hablar de la frecuencia de actividades habituales.", vocabulary:["daily routine","wake up","get up","have breakfast","start","finish","usually","sometimes","always","at night"], grammar:["Present simple","Tercera persona -s","Adverbs of frequency","Do/does en preguntas"], sections:[
+    {name:"Explore",focus:"Acciones y momentos de una rutina diaria.",activities:["Ordenar acciones desde wake up hasta go to bed.","Relacionar diez expresiones originales con imágenes.","Clasificar actividades de mañana, tarde y noche."]},
+    {name:"Practice",focus:"Describir hábitos cotidianos.",activities:["Completar frases con verbos de rutina.","Elegir usually, sometimes o always.","Ordenar frases para describir un día."]},
+    {name:"Grammar",focus:"Present simple y frecuencia.",activities:["Practicar I start / She starts.","Formar negativas con don't/doesn't.","Preguntar What time do you…? y How often…?"]},
+    {name:"Pronunciation",focus:"Terminaciones -s y ritmo de adverbios.",activities:["Practicar starts, finishes y gets up.","Escuchar la posición de usually y sometimes.","Repetir frases completas con ritmo."]},
+    {name:"Reading",focus:"A Typical Day: rutina de Daniel.",activities:["Leer la rutina de Daniel.","Localizar horarios y actividades.","Responder preguntas de comprensión."]},
+    {name:"Writing",focus:"Describir un día habitual.",activities:["Completar una línea temporal.","Escribir 8–10 frases sobre un personaje o rutina ficticia.","Usar al menos dos adverbios de frecuencia."]},
+    {name:"Speaking",focus:"Comparar rutinas sencillas.",activities:["Describir la rutina de un personaje.","Preguntar por horarios y frecuencia.","Explicar dos diferencias entre rutinas."]},
+    {name:"Listening",focus:"Comprender la rutina de Emma.",activities:["Escuchar una descripción diaria.","Ordenar cinco actividades.","Responder preguntas sobre horarios."]}
+  ], audit:"El título y el vocabulario originales son de rutinas, pero los 50 ejercicios actuales son de familia. Deben trasladarse a una misión de familia después de revisar su progresión; no representan esta misión."},
+  { id:"012", title:"My Home", subtitle:"La vivienda y sus habitaciones", goal:"Describir una vivienda, nombrar habitaciones y muebles e indicar dónde están los objetos.", vocabulary:["house","flat","kitchen","bedroom","bathroom","living room","garden","sofa","table","next to"], grammar:["There is / there are","Prepositions of place","a/an y plurales básicos","Have got como ampliación"], sections:[
+    {name:"Explore",focus:"Habitaciones, muebles y espacios del hogar.",activities:["Relacionar las diez palabras originales con imágenes.","Clasificar habitaciones y muebles.","Identificar objetos en un plano de vivienda."]},
+    {name:"Practice",focus:"Describir qué hay en una casa.",activities:["Completar frases con habitación u objeto.","Elegir there is o there are.","Situar objetos usando next to, in y under."]},
+    {name:"Grammar",focus:"There is/are y preposiciones de lugar.",activities:["Formar afirmativas y negativas.","Practicar Is there…? / Are there…?","Describir posición con next to, behind e in front of."]},
+    {name:"Pronunciation",focus:"Contracciones y plurales.",activities:["Repetir There's / There are.","Practicar bedroom, bathroom y living room.","Pronunciar plurales de objetos."]},
+    {name:"Reading",focus:"Emma's New Flat.",activities:["Leer la descripción de un piso.","Localizar habitaciones y muebles.","Responder preguntas sobre distribución."]},
+    {name:"Writing",focus:"Describir una vivienda.",activities:["Completar una ficha de habitaciones.","Escribir 8 frases sobre una casa real o imaginaria.","Incluir tres preposiciones de lugar."]},
+    {name:"Speaking",focus:"Describir un plano a otra persona.",activities:["Explicar qué hay en cada habitación.","Preguntar Is there a…?","Localizar un objeto usando preposiciones."]},
+    {name:"Listening",focus:"Comprender la descripción de la casa de Jack.",activities:["Escuchar una descripción de vivienda.","Dibujar o completar un plano sencillo.","Responder preguntas de ubicación."]}
+  ], audit:"El vocabulario original corresponde a vivienda, pero los 50 ejercicios actuales tratan rutinas diarias. La propuesta conserva las palabras originales y sustituye las actividades desalineadas."},
+  { id:"013", title:"Food and Drink", subtitle:"Comida, bebida y preferencias", goal:"Identificar alimentos y bebidas, expresar gustos y describir comidas cotidianas.", vocabulary:["bread","rice","pasta","apple","banana","water","milk","coffee","chicken","vegetables"], grammar:["like / likes","don't / doesn't like","Would you like…?","some / any en contextos frecuentes"], sections:[
+    {name:"Explore",focus:"Alimentos, bebidas y comidas del día.",activities:["Relacionar las diez palabras originales con imágenes.","Clasificar frutas, verduras, proteínas y bebidas.","Asociar alimentos con breakfast, lunch y dinner."]},
+    {name:"Practice",focus:"Vocabulario y preferencias.",activities:["Completar frases con alimentos y bebidas.","Elegir like/likes y don't/doesn't.","Responder a Would you like…?"]},
+    {name:"Grammar",focus:"Gustos, peticiones y cantidades sencillas.",activities:["Practicar I like / She likes.","Formar negativas con don't/doesn't.","Introducir some/any en afirmativas, preguntas y negativas frecuentes."]},
+    {name:"Pronunciation",focus:"Pronunciar alimentos y expresiones de preferencia.",activities:["Escuchar y repetir las diez palabras originales.","Practicar chicken, vegetables y water.","Repetir Do you like…? y Would you like…?"]},
+    {name:"Reading",focus:"My Favourite Food: perfil de Emma.",activities:["Leer qué come y bebe Emma.","Localizar sus gustos y preferencias.","Responder diez preguntas de comprensión."]},
+    {name:"Writing",focus:"Escribir sobre comida favorita.",activities:["Completar una ficha de preferencias.","Escribir qué alimentos gustan y no gustan.","Redactar 8–10 frases sobre comidas diarias."]},
+    {name:"Speaking",focus:"Hablar de gustos y preferencias.",activities:["Preguntar What food do you like?","Explicar gustos y preferencias.","Realizar un diálogo breve en una cafetería como puente a la misión 014."]},
+    {name:"Listening",focus:"Comprender qué come y bebe Peter.",activities:["Escuchar una descripción de comidas.","Identificar alimentos y bebidas.","Responder preguntas de detalle en dos escuchas."]}
+  ], audit:"El vocabulario original es pertinente, pero los 50 ejercicios actuales trabajan días, meses, fechas y horas. Esos ejercicios deben reubicarse en una misión de calendario y tiempo."},
+  { id:"014", title:"At the Café", subtitle:"Pedir comida y bebida", goal:"Leer un menú, pedir comida y bebida con cortesía, preguntar precios y solicitar la cuenta.", vocabulary:["menu","order","I'd like","cup","glass","bottle","sandwich","soup","bill","please"], grammar:["I'd like…","Would you like…?","Can I have…?","a / an / some; How much is it?"], sections:[
+    {name:"Explore",focus:"Objetos, alimentos y expresiones de una cafetería.",activities:["Relacionar las diez palabras originales con imágenes.","Clasificar vocabulario de cliente y camarero.","Identificar las partes de un menú."]},
+    {name:"Practice",focus:"Construir pedidos sencillos.",activities:["Completar pedidos con sandwich, soup y bebidas.","Elegir cup, glass o bottle.","Ordenar una conversación entre cliente y camarero."]},
+    {name:"Grammar",focus:"Peticiones educadas y precios.",activities:["Practicar I'd like… y Can I have…?","Ofrecer con Would you like…?","Usar a/an/some y preguntar How much is…?"]},
+    {name:"Pronunciation",focus:"Ritmo y entonación de peticiones.",activities:["Repetir las diez expresiones originales.","Practicar la contracción I'd.","Entonar preguntas y fórmulas de cortesía."]},
+    {name:"Reading",focus:"Menú y visita a The Little Café.",activities:["Leer un menú con siete productos y precios.","Leer un diálogo breve de dos clientes.","Calcular el pedido y responder preguntas."]},
+    {name:"Writing",focus:"Escribir un pedido y crear un menú.",activities:["Redactar un pedido de tres productos.","Crear un menú sencillo con precios.","Escribir una conversación breve de seis turnos."]},
+    {name:"Speaking",focus:"Representar una situación completa en una cafetería.",activities:["Pedir el menú y ordenar comida y bebida.","Responder a Anything else?","Preguntar el precio y pedir la cuenta."]},
+    {name:"Listening",focus:"Comprender un pedido en Green Café.",activities:["Escuchar el pedido de un cliente.","Identificar productos y precio total.","Responder preguntas de detalle."]}
+  ], audit:"El vocabulario original corresponde a cafetería, pero los 50 ejercicios actuales son de hobbies y tiempo libre. Deben trasladarse a una misión dedicada a aficiones, tras validar la secuencia."}
+];
+
+export function getPreviewMission(id: string) {
+  return previewMissions.find((mission) => mission.id === id);
+}
