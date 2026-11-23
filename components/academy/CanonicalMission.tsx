@@ -1801,6 +1801,38 @@ export default function CanonicalMission({ missionData = missionSource as Missio
     exploreTranslations.forEach((translation, english) => {
       if (/^[\p{L}]+(?:['’][\p{L}]+)?$/u.test(english)) words.set(english, translation);
     });
+    // Vocabulario funcional frecuente en los enunciados de Practice C1.
+    const promptWords: Record<string, string> = {
+      phrase: "frase / expresión", phrases: "frases / expresiones",
+      meaning: "significado", meanings: "significados",
+      choose: "elegir", chooses: "elige", chosen: "elegido", choosing: "elección",
+      complete: "completar", completes: "completa", completed: "completado",
+      collocation: "colocación léxica", collocations: "colocaciones léxicas",
+      closest: "más parecido", correct: "correcto",
+      answer: "respuesta", answers: "respuestas",
+      select: "seleccionar", selected: "seleccionado",
+      find: "buscar / encontrar", refers: "se refiere", referred: "mencionado / referido",
+      expression: "expresión", expressions: "expresiones",
+      concept: "concepto", precisely: "con precisión",
+      statement: "afirmación", statements: "afirmaciones",
+      claim: "afirmación", claims: "afirmaciones",
+      reformulate: "reformular", reformulation: "reformulación",
+      linker: "conector", linkers: "conectores",
+      reading: "lectura / texto", text: "texto",
+      writer: "autor", case: "caso", study: "estudio",
+      belief: "creencia", experience: "experiencia", position: "postura",
+      reflects: "refleja", best: "mejor", most: "más",
+      appropriately: "adecuadamente", hedged: "matizada / expresada con cautela",
+      what: "qué", which: "cuál / qué", why: "por qué", how: "cómo",
+      does: "auxiliar interrogativo", mean: "significar",
+      suggest: "sugerir", suggests: "sugiere",
+      distinction: "distinción", process: "proceso",
+      signals: "indica", uncertainty: "incertidumbre",
+      account: "relato / explicación", paraphrase: "paráfrasis",
+      indicate: "indicar", indicates: "indica",
+      identify: "identificar", identifies: "identifica", term: "término"
+    };
+    Object.entries(promptWords).forEach(([english, spanish]) => words.set(english, spanish));
     return words;
   }, [exploreTranslations]);
   const [hoveredWord, setHoveredWord] = useState<string | null>(null);
