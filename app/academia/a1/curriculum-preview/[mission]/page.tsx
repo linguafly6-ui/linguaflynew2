@@ -27,7 +27,8 @@ const spanish: Record<string, string> = {
   "bread":"pan","rice":"arroz","pasta":"pasta","apple":"manzana","banana":"plátano","water":"agua","milk":"leche","coffee":"café","chicken":"pollo","vegetables":"verduras",
   "menu":"menú","order":"pedido","I'd like":"quisiera","cup":"taza","glass":"vaso","bottle":"botella","sandwich":"sándwich","soup":"sopa","bill":"cuenta","please":"por favor",
   "shirt":"camisa","T-shirt":"camiseta","trousers":"pantalones","jeans":"vaqueros","dress":"vestido","skirt":"falda","shoes":"zapatos","jacket":"chaqueta","coat":"abrigo","trainers":"zapatillas deportivas","blue":"azul","black":"negro","red":"rojo","white":"blanco","size":"talla","wear":"llevar puesto",
-  "football":"fútbol","tennis":"tenis","basketball":"baloncesto","swimming":"natación","cycling":"ciclismo","run":"correr","jump":"saltar","play":"jugar","can":"poder / saber","can't":"no poder / no saber","sports equipment":"material deportivo","training":"entrenamiento","ride a bicycle":"montar en bicicleta"
+  "football":"fútbol","tennis":"tenis","basketball":"baloncesto","swimming":"natación","cycling":"ciclismo","run":"correr","jump":"saltar","play":"jugar","can":"poder / saber","can't":"no poder / no saber","sports equipment":"material deportivo","training":"entrenamiento","ride a bicycle":"montar en bicicleta",
+  "town":"ciudad","city":"ciudad","street":"calle","square":"plaza","park":"parque","station":"estación","bus stop":"parada de autobús","supermarket":"supermercado","bank":"banco","post office":"oficina de correos","hospital":"hospital","turn left":"girar a la izquierda","turn right":"girar a la derecha","go straight":"seguir recto","next to":"al lado de","opposite":"enfrente de","between":"entre","near":"cerca de"
 };
 const phraseModels: Record<string, string[]> = {
   "003":["Where are you from?","I'm from Spain.","What nationality are you?","I'm Spanish.","She is from France.","He is German.","We live in Italy.","They are from the United Kingdom.","I speak Spanish and English.","Where is your friend from?"],
@@ -42,10 +43,35 @@ const phraseModels: Record<string, string[]> = {
   "012":["There is a kitchen in my flat.","There are two bedrooms.","The sofa is in the living room.","The table is next to the window.","There is a garden behind the house.","The bathroom is small.","There are four chairs in the kitchen.","Is there a desk in your bedroom?","The lamp is on the table.","My flat has a big living room."],
   "013":["I eat bread for breakfast.","We have rice for lunch.","She likes pasta.","He eats an apple every day.","I have a banana.","Would you like some water?","I drink milk in the morning.","My father likes coffee.","They eat chicken and vegetables.","I don't like fish."],
   "014":["Can I see the menu, please?","I'd like a sandwich.","Can I have a glass of water?","I'd like a cup of coffee.","Would you like some soup?","Anything else?","No, thank you. That's all.","How much is the bill?","Can I pay by card?","Here you are. Thank you."],
+  "018":["Excuse me, where is the station?","Go straight and turn left.","The bank is next to the supermarket.","The park is opposite the hospital.","Where are the bus stops?","There is a post office near the square.","Turn right at the traffic lights.","The station is between the bank and the park.","How can I get to the museum?","Go straight. It is on your right."],
   "017":["What do you do in your free time?","I like listening to music.","She loves reading books.","He doesn't like cooking.","Do you like dancing?","Yes, I do. I love it.","Does Nina enjoy taking photos?","They like meeting their friends.","My favourite hobby is cycling.","We sometimes play games together."],
   "016":["I am wearing a blue shirt.","She wears black shoes.","He is wearing a red jacket.","What colour is your T-shirt?","I need a new pair of jeans.","This dress is white.","Do you have this skirt in black?","What size do you need?","I like your trainers.","The coat is too big."],
   "015":["I can swim very well.","She can't play tennis.","Can you ride a bicycle?","My brother plays football on Saturdays.","We can speak two languages.","He can't run very fast.","Can they play basketball?","I like swimming in the sea.","You can use my sports equipment.","I can't come to training today."]
 };
+const mission018Grammar = [
+  { prompt:"Choose the correct question.", answer:"Where is the station?", options:["Where is the station?","Where the station is?","Where are the station?"] },
+  { prompt:"Complete: The bank is ___ the supermarket.", answer:"next to", options:["next to","turn left","go straight"] },
+  { prompt:"Choose the correct instruction.", answer:"Turn left at the square.", options:["Turn left at the square.","Turns left at the square.","Turning left at the square."] },
+  { prompt:"Complete: ___ a park near my house.", answer:"There is", options:["There is","There are","It are"] },
+  { prompt:"Choose the correct phrase for moving forward.", answer:"Go straight.", options:["Go straight.","Go opposite.","Go between."] },
+  { prompt:"Complete: The post office is ___ the bank and the station.", answer:"between", options:["between","opposite to","turn"] },
+  { prompt:"Choose the correct question.", answer:"Where are the bus stops?", options:["Where are the bus stops?","Where is the bus stops?","Where the bus stops are?"] },
+  { prompt:"What does opposite mean?", answer:"Enfrente de.", options:["Enfrente de.","Al lado de.","A la derecha."] },
+  { prompt:"Complete: Turn right ___ the traffic lights.", answer:"at", options:["at","on","between"] },
+  { prompt:"Choose the natural polite opening.", answer:"Excuse me, where is the station?", options:["Excuse me, where is the station?","Tell me station now.","Where station you?"] }
+];
+const mission018Reading = [
+  { prompt:"Where does the visitor want to go first?", answer:"The station.", options:["The station.","The hospital.","The supermarket."] },
+  { prompt:"What is next to the supermarket?", answer:"The bank.", options:["The bank.","The park.","The post office."] },
+  { prompt:"Where is the park?", answer:"Opposite the hospital.", options:["Opposite the hospital.","Next to the station.","Between two shops."] },
+  { prompt:"What should the visitor do at the square?", answer:"Turn left.", options:["Turn left.","Turn right.","Stop and wait."] },
+  { prompt:"Is the post office far from the square?", answer:"No, it is near the square.", options:["No, it is near the square.","Yes, it is outside the town.","The text doesn't say."] },
+  { prompt:"Which place is between the bank and the park?", answer:"The station.", options:["The station.","The hospital.","The bus stop."] },
+  { prompt:"Where should the visitor go straight?", answer:"Along King Street.", options:["Along King Street.","Through the hospital.","Behind the supermarket."] },
+  { prompt:"Which place is opposite the park?", answer:"The hospital.", options:["The hospital.","The bank.","The station."] },
+  { prompt:"What does the visitor use to find the places?", answer:"A town map.", options:["A town map.","A shopping list.","A bus ticket."] },
+  { prompt:"What is the main topic?", answer:"Places in town and directions.", options:["Places in town and directions.","Hobbies and free time.","Clothes and colours."] }
+];
 const mission017Grammar = [
   { prompt:"Choose the correct sentence.", answer:"I like reading.", options:["I like reading.","I likes reading.","I like read."] },
   { prompt:"Complete: She ___ dancing.", answer:"likes", options:["likes","like","liking"] },
@@ -131,6 +157,7 @@ const passages: Record<string,string> = {
   "012":"Emma lives in a small flat. There are two bedrooms, one bathroom and a kitchen. The living room has a sofa and a table. The kitchen is next to the living room. There is a small garden.",
   "013":"Peter has bread and milk for breakfast. He eats rice, chicken and vegetables for lunch. His favourite fruit is an apple. He drinks water every day, but he doesn't like coffee.",
   "014":"Tom and Anna are at Green Café. Tom would like a sandwich and a cup of coffee. Anna orders soup and a glass of water. They read the menu and enjoy lunch. Tom asks for the bill.",
+  "018":"Welcome to Green Town. The station is on King Street. Go straight from the square and turn left at the bank. The bank is next to the supermarket. The park is opposite the hospital, and the post office is near the square. The station is between the bank and the park. A visitor looks at the town map and asks for help. A local person gives simple directions and points to the places on the map.",
   "017":"Alex and Nina are friends. Alex likes listening to music and cycling, but he does not like cooking. Nina loves reading and taking photos. She also likes dancing. They meet at the weekend and sometimes play games together. Alex asks Nina, \"Do you like music?\" Nina says, \"Yes, I do. I love it!\" They enjoy sharing their hobbies.",
   "016":"Mia and Leo are in a clothes shop. Mia is wearing a blue T-shirt and black jeans. Leo is wearing a red jacket and grey trousers. Mia wants to buy new trainers. The shop assistant shows her size 38, but the first pair is too small. She tries size 40 and chooses white trainers. Leo says her new trainers look great.",
   "015":"Mia and Leo are talking about sport. Mia can swim very well and she can ride a bicycle, but she can't play tennis. Leo can play football and basketball. He runs fast, but he can't swim. They practise after school and help each other. Mia says, “Can you teach me basketball?” Leo says, “Yes, I can!”"
@@ -169,12 +196,12 @@ function makeCanonicalMission(p: (typeof previewMissions)[number]): Mission {
     } else if (key === "practice") {
       items = vocab.map((word,i) => ({ itemId: `english-a1-m${id}-practice-${i+1}`, position:i+1, prompt:`Choose the Spanish meaning of “${word.english}”.`, answer:word.spanish, options:[word.spanish, ...vocab.filter((_,j)=>j!==i).slice(0,2).map(x=>x.spanish)], taskType:"vocabulary", evaluation:{type:"single_choice"} }));
     } else if (key === "grammar") {
-      items = (id === "017" ? mission017Grammar : id === "016" ? mission016Grammar : id === "015" ? mission015Grammar : Array.from({length:10},(_,i) => ({ prompt:"Which grammar structure is practised in this mission?", answer:p.grammar[i%p.grammar.length], options:[p.grammar[i%p.grammar.length],p.grammar[(i+1)%p.grammar.length],p.grammar[(i+2)%p.grammar.length]] }))).map((q:any,i:number) => ({ itemId:`english-a1-m${id}-grammar-${i+1}`, position:i+1, ...q, evaluation:{type:"single_choice"} }));
+      items = (id === "018" ? mission018Grammar : id === "017" ? mission017Grammar : id === "016" ? mission016Grammar : id === "015" ? mission015Grammar : Array.from({length:10},(_,i) => ({ prompt:"Which grammar structure is practised in this mission?", answer:p.grammar[i%p.grammar.length], options:[p.grammar[i%p.grammar.length],p.grammar[(i+1)%p.grammar.length],p.grammar[(i+2)%p.grammar.length]] }))).map((q:any,i:number) => ({ itemId:`english-a1-m${id}-grammar-${i+1}`, position:i+1, ...q, evaluation:{type:"single_choice"} }));
     } else if (key === "pronunciation") {
       items = vocab.flatMap((word,i) => word.english.split(" / ").map((term,partIndex) => ({ itemId:`english-a1-m${id}-pronunciation-${i+1}-${partIndex+1}`, position:i+1, word:term, translation:word.spanish.split(" / ")[partIndex] ?? word.spanish, pronunciationGuide:getSpanishPronunciationGuide(term), audio:"tts:en-GB", prompt:"Listen, read the guide and repeat the word.", options:[term,vocab[(i+1)%vocab.length].english,vocab[(i+2)%vocab.length].english], answer:term, taskType:"listening_and_guided_production" })));
     } else if (key === "reading") {
       content = { passageId:`english-a1-m${id}-reading-passage`, passage:passages[id] ?? p.goal };
-      items = (id === "017" ? mission017Reading : id === "016" ? mission016Reading : id === "015" ? mission015Reading : Array.from({length:10},(_,i) => ({ prompt:`Read the text and identify information about: ${vocab[i%vocab.length].english}.`, answer:vocab[i%vocab.length].english, options:[vocab[i%vocab.length].english,vocab[(i+1)%vocab.length].english,vocab[(i+2)%vocab.length].english] }))).map((q:any,i:number) => ({ itemId:`english-a1-m${id}-reading-${i+1}`, position:i+1, ...q, evaluation:{type:"single_choice"} }));
+      items = (id === "018" ? mission018Reading : id === "017" ? mission017Reading : id === "016" ? mission016Reading : id === "015" ? mission015Reading : Array.from({length:10},(_,i) => ({ prompt:`Read the text and identify information about: ${vocab[i%vocab.length].english}.`, answer:vocab[i%vocab.length].english, options:[vocab[i%vocab.length].english,vocab[(i+1)%vocab.length].english,vocab[(i+2)%vocab.length].english] }))).map((q:any,i:number) => ({ itemId:`english-a1-m${id}-reading-${i+1}`, position:i+1, ...q, evaluation:{type:"single_choice"} }));
     } else if (key === "writing") {
       items = phrases.map((sentence,i) => ({ itemId:`english-a1-m${id}-writing-${i+1}`, position:i+1, kind:"sentence", audio:"tts:en-GB", audioLocale:"en-GB", repeatCount:3, segments:[{segmentId:`english-a1-m${id}-writing-segment-${i+1}`,text:sentence}], expectedAnswer:sentence, evaluation:{type:"normalised_text"} }));
     } else if (key === "speaking") {
@@ -222,7 +249,7 @@ export default async function A1CurriculumPreviewMission({ params }: { params: P
         <div className="mt-5"><CanonicalMission missionData={data} /></div>
         <nav className="mt-8 flex items-center justify-between gap-3 border-t border-slate-200 pt-5">
           {mission !== "001" ? <Link href={`/academia/a1/curriculum-preview/${previous(mission)}`} className="rounded-xl border border-slate-200 bg-white px-4 py-3 text-sm font-semibold text-slate-700 hover:border-indigo-300">← Misión anterior</Link> : <span />}
-          {mission !== "017" ? <Link href={`/academia/a1/curriculum-preview/${next(mission)}`} className="rounded-xl bg-indigo-700 px-4 py-3 text-sm font-semibold text-white hover:bg-indigo-800">Misión siguiente →</Link> : <Link href="/academia/a1/curriculum-preview" className="rounded-xl bg-indigo-700 px-4 py-3 text-sm font-semibold text-white">Volver al índice →</Link>}
+          {mission !== "018" ? <Link href={`/academia/a1/curriculum-preview/${next(mission)}`} className="rounded-xl bg-indigo-700 px-4 py-3 text-sm font-semibold text-white hover:bg-indigo-800">Misión siguiente →</Link> : <Link href="/academia/a1/curriculum-preview" className="rounded-xl bg-indigo-700 px-4 py-3 text-sm font-semibold text-white">Volver al índice →</Link>}
         </nav>
       </div>
     </main>
