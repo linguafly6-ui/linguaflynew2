@@ -339,7 +339,7 @@ export default function CanonicalMission({ missionData = missionSource as Missio
                 const numberCounts: Record<string,number> = {one:1,two:2,three:3,four:4,five:5,six:6,seven:7,eight:8,nine:9,ten:10};
                 const word = (entry.english ?? "").toLowerCase();
                 const count = numberCounts[word];
-                const pronunciationGuide = entry.pronunciationGuide ?? pronunciationByWord.get(word);
+                const pronunciationGuide = getSpanishPronunciationGuide(word) || entry.pronunciationGuide || pronunciationByWord.get(word);
                 return <article key={entry.itemId} className="flex min-w-0 flex-col items-center rounded-2xl border border-[#e8ebf0] bg-white p-3 text-center sm:p-4">
                   <div aria-hidden="true" className="grid h-16 w-16 place-items-center rounded-2xl bg-[#f2f6fb] sm:h-20 sm:w-20">
                     {count ? <div className="flex flex-col items-center justify-center"><span className="text-3xl font-extrabold leading-none text-[#2872c8] sm:text-4xl">{count}</span><span className="mt-1 grid grid-cols-5 gap-0.5 text-[10px] leading-none sm:text-xs">{Array.from({length:count},(_,i)=><span key={i}>🍎</span>)}</span></div> : <span className="text-4xl sm:text-5xl">{word.length === 1 && /^[a-z]$/.test(word) ? "🔠" : visual[word] ?? visualForVocabulary(word, entry.spanish ?? "")}</span>}
@@ -437,7 +437,7 @@ export default function CanonicalMission({ missionData = missionSource as Missio
               <p className="mt-1 text-sm text-slate-600">{item.translation}</p>
               <div className="mt-5 rounded-2xl border border-white/90 bg-white/90 p-4 shadow-sm">
                 <p className="text-[10px] font-bold uppercase tracking-[.16em] text-slate-400">Cómo leer su sonido</p>
-                <p className="mt-2 text-2xl font-extrabold tracking-wide text-blue-800">{item.pronunciationGuide || "Guía pendiente"}</p>
+                <p className="mt-2 text-2xl font-extrabold tracking-wide text-blue-800">{getSpanishPronunciationGuide(item.word ?? "") || item.pronunciationGuide || "Guía pendiente"}</p>
                 <p className="mt-1.5 text-xs leading-5 text-slate-500">Aproximación escrita para hispanohablantes; no utiliza símbolos AFI.</p>
               </div>
               <button type="button" onClick={() => speak(item.word ?? "")} className="mt-4 inline-flex w-full items-center justify-center gap-2 rounded-xl bg-sky-700 px-4 py-3.5 text-sm font-bold text-white shadow-md shadow-sky-900/10 transition hover:bg-sky-800 focus:outline-none focus:ring-2 focus:ring-sky-400 focus:ring-offset-2 sm:w-auto"><span aria-hidden="true">▶</span> Escuchar pronunciación británica</button>
