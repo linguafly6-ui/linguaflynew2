@@ -52,6 +52,19 @@ const phraseModels: Record<string, string[]> = {
   "023":["What's the matter?","I have a headache.","My stomach hurts.","She has a sore throat.","I don't feel well today.","I have an appointment at ten.","The nurse is very kind.","Can you help me, please?","I feel better now.","My back hurts."],
   "015":["I can swim very well.","She can't play tennis.","Can you ride a bicycle?","My brother plays football on Saturdays.","We can speak two languages.","He can't run very fast.","Can they play basketball?","I like swimming in the sea.","You can use my sports equipment.","I can't come to training today."]
 };
+const mission026Reading = [
+  { prompt:"Who is organising the birthday celebration?", answer:"Maya.", options:["Maya.","Oliver.","Maya's sister."] },
+  { prompt:"Where is the party?", answer:"At Green Street Community Centre.", options:["At Green Street Community Centre.","At the library.","At Maya's house."] },
+  { prompt:"What day is the party?", answer:"Saturday.", options:["Saturday.","Friday.","Sunday."] },
+  { prompt:"What is the date?", answer:"14 June.", options:["14 June.","4 June.","14 July."] },
+  { prompt:"What time does the party start?", answer:"At three o'clock.", options:["At three o'clock.","At two o'clock.","At four o'clock."] },
+  { prompt:"Where is the community centre?", answer:"Opposite the library.", options:["Opposite the library.","Next to the station.","Behind the park."] },
+  { prompt:"Why should guests arrive ten minutes early?", answer:"To decorate the room together.", options:["To decorate the room together.","To eat lunch.","To play football."] },
+  { prompt:"Can Oliver come to the party?", answer:"Yes, he can.", options:["Yes, he can.","No, he can't.","He isn't sure."] },
+  { prompt:"What does Maya ask Oliver to bring?", answer:"Some juice.", options:["Some juice.","A present.","Some balloons."] },
+  { prompt:"How many candles are on the cake?", answer:"Fourteen.", options:["Fourteen.","Thirteen.","Fifteen."] }
+];
+
 const mission023Grammar = [
   { prompt:"Complete: I ___ a headache.", answer:"have", options:["have","has","am"] },
   { prompt:"Complete: She ___ a sore throat.", answer:"has", options:["has","have","is"] },
@@ -264,7 +277,7 @@ const passages: Record<string,string> = {
   "017":"Alex and Nina are friends. Alex likes listening to music and cycling, but he does not like cooking. Nina loves reading and taking photos. She also likes dancing. They meet at the weekend and sometimes play games together. Alex asks Nina, \"Do you like music?\" Nina says, \"Yes, I do. I love it!\" They enjoy sharing their hobbies.",
   "016":"Mia and Leo are in a clothes shop. Mia is wearing a blue T-shirt and black jeans. Leo is wearing a red jacket and grey trousers. Mia wants to buy new trainers. The shop assistant shows her size 38, but the first pair is too small. She tries size 40 and chooses white trainers. Leo says her new trainers look great.",
   "023":"Jamie has an appointment at the Green Street Clinic at ten o’clock. Jamie does not feel well and has a sore throat. A nurse asks, “What’s the matter?” Jamie says, “I have a sore throat.” The nurse says, “Please sit down.” Jamie drinks a glass of water and waits. After the appointment, Jamie feels better and says thank you.",
-  "015":"Mia and Leo are talking about sport. Mia can swim very well and she can ride a bicycle, but she can't play tennis. Leo can play football and basketball. He runs fast, but he can't swim. They practise after school and help each other. Mia says, “Can you teach me basketball?” Leo says, “Yes, I can!”"
+  "026":"Maya is planning a birthday celebration at Green Street Community Centre. She sends an invitation to her friend Oliver. The party is on Saturday, 14 June, at three o’clock. The centre is on Green Street, opposite the library. Maya asks her guests to arrive ten minutes early because they want to decorate the room together. Oliver sends a message to say he can come. He asks what he can bring, and Maya says, “Please bring some juice.” Maya’s sister is making a chocolate cake, and Maya is putting fourteen candles on it. There will be balloons, music and a small game. Oliver is happy to help. He writes, “Thank you for the invitation. See you on Saturday!”"
 };
 
 function makeCanonicalMission(p: (typeof previewMissions)[number]): Mission {
@@ -305,7 +318,7 @@ function makeCanonicalMission(p: (typeof previewMissions)[number]): Mission {
       items = vocab.flatMap((word,i) => word.english.split(" / ").map((term,partIndex) => ({ itemId:`english-a1-m${id}-pronunciation-${i+1}-${partIndex+1}`, position:i+1, word:term, translation:word.spanish.split(" / ")[partIndex] ?? word.spanish, pronunciationGuide:getSpanishPronunciationGuide(term), audio:"tts:en-GB", prompt:"Listen, read the guide and repeat the word.", options:[term,vocab[(i+1)%vocab.length].english,vocab[(i+2)%vocab.length].english], answer:term, taskType:"listening_and_guided_production" })));
     } else if (key === "reading") {
       content = { passageId:`english-a1-m${id}-reading-passage`, passage:passages[id] ?? p.goal };
-      items = (id === "023" ? mission023Reading : id === "021" ? mission021Reading : id === "020" ? mission020Reading : id === "019" ? mission019Reading : id === "018" ? mission018Reading : id === "017" ? mission017Reading : id === "016" ? mission016Reading : id === "015" ? mission015Reading : Array.from({length:10},(_,i) => ({ prompt:`Read the text and identify information about: ${vocab[i%vocab.length].english}.`, answer:vocab[i%vocab.length].english, options:[vocab[i%vocab.length].english,vocab[(i+1)%vocab.length].english,vocab[(i+2)%vocab.length].english] }))).map((q:any,i:number) => ({ itemId:`english-a1-m${id}-reading-${i+1}`, position:i+1, ...q, evaluation:{type:"single_choice"} }));
+      items = (id === "026" ? mission026Reading : id === "023" ? mission023Reading : id === "021" ? mission021Reading : id === "020" ? mission020Reading : id === "019" ? mission019Reading : id === "018" ? mission018Reading : id === "017" ? mission017Reading : id === "016" ? mission016Reading : id === "015" ? mission015Reading : Array.from({length:10},(_,i) => ({ prompt:`Read the text and identify information about: ${vocab[i%vocab.length].english}.`, answer:vocab[i%vocab.length].english, options:[vocab[i%vocab.length].english,vocab[(i+1)%vocab.length].english,vocab[(i+2)%vocab.length].english] }))).map((q:any,i:number) => ({ itemId:`english-a1-m${id}-reading-${i+1}`, position:i+1, ...q, evaluation:{type:"single_choice"} }));
     } else if (key === "writing") {
       items = phrases.map((sentence,i) => ({ itemId:`english-a1-m${id}-writing-${i+1}`, position:i+1, kind:"sentence", audio:"tts:en-GB", audioLocale:"en-GB", repeatCount:3, segments:[{segmentId:`english-a1-m${id}-writing-segment-${i+1}`,text:sentence}], expectedAnswer:sentence, evaluation:{type:"normalised_text"} }));
     } else if (key === "speaking") {
