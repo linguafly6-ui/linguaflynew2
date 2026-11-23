@@ -96,7 +96,7 @@ function getSpanishPronunciationGuide(word: string) {
     [/ð/g, "d"], [/z/g, "z"], [/s/g, "s"], [/ʔ/g, ""]
   ];
   for (const [pattern, sound] of rules) value = value.replace(pattern, sound);
-  value = value.replace(/[^a-zñ]/gi, "").replace(/([aeiou])\\1+/g, "$1");
+  value = value.replace(/[^a-zñ]/gi, "").replace(/([aeiou])\1+/g, "$1");
   value = value.replace(/^e/, "a").replace(/e$/, "a");
 
   // Add syllable breaks between vowel nuclei, keeping English digraphs intact.
