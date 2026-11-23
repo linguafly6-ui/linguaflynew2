@@ -1124,9 +1124,9 @@
         "exerciseId": "english-pre-a1-m088-listening-ex01",
         "type": "listening_gap_fill",
         "content": {
-          "audio": "tts:en-GB:Listen and complete. This is the listen. This is the repeat. This is the read. This is the write. This is the open. This is the close. This is the stand up. This is the sit down. This is the look. This is the answer.",
+          "audio": "tts:en-GB:Listen and complete. Listen. Repeat. Read. Write. Open. Close. Stand up. Sit down. Look. Answer.",
           "audioLocale": "en-GB",
-          "transcriptTemplate": "Listen and complete. This is the [[gap-01]]. This is the [[gap-02]]. This is the [[gap-03]]. This is the [[gap-04]]. This is the [[gap-05]]. This is the [[gap-06]]. This is the [[gap-07]]. This is the [[gap-08]]. This is the [[gap-09]]. This is the [[gap-10]].",
+          "transcriptTemplate": "Listen and complete. [[gap-01]]. [[gap-02]]. [[gap-03]]. [[gap-04]]. [[gap-05]]. [[gap-06]]. [[gap-07]]. [[gap-08]]. [[gap-09]]. [[gap-10]].",
           "wordBank": [
             {
               "wordId": "english-pre-a1-m088-listening-word-01",
@@ -1169,7 +1169,8 @@
               "word": "answer"
             }
           ],
-          "interaction": "select_place_move_replace"
+          "interaction": "select_place_move_replace",
+          "translation": "Escucha y completa. Escucha. Repite. Lee. Escribe. Abre. Cierra. Ponte de pie. Siéntate. Mira. Responde."
         },
         "items": [
           {

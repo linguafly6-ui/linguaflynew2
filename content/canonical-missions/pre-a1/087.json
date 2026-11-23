@@ -1126,9 +1126,9 @@
         "exerciseId": "english-pre-a1-m087-listening-ex01",
         "type": "listening_gap_fill",
         "content": {
-          "audio": "tts:en-GB:Listen and complete. This is the clothes shop. This is the shirt. This is the trousers. This is the skirt. This is the dress. This is the jacket. This is the shoes. This is the size. This is the colour. This is the price.",
+          "audio": "tts:en-GB:Listen and complete. This is the clothes shop. This is the shirt. These are the trousers. This is the skirt. This is the dress. This is the jacket. These are the shoes. This is the size. This is the colour. This is the price.",
           "audioLocale": "en-GB",
-          "transcriptTemplate": "Listen and complete. This is the [[gap-01]]. This is the [[gap-02]]. This is the [[gap-03]]. This is the [[gap-04]]. This is the [[gap-05]]. This is the [[gap-06]]. This is the [[gap-07]]. This is the [[gap-08]]. This is the [[gap-09]]. This is the [[gap-10]].",
+          "transcriptTemplate": "Listen and complete. This is the [[gap-01]]. This is the [[gap-02]]. These are the [[gap-03]]. This is the [[gap-04]]. This is the [[gap-05]]. This is the [[gap-06]]. These are the [[gap-07]]. This is the [[gap-08]]. This is the [[gap-09]]. This is the [[gap-10]].",
           "wordBank": [
             {
               "wordId": "english-pre-a1-m087-listening-word-01",
@@ -1171,7 +1171,8 @@
               "word": "price"
             }
           ],
-          "interaction": "select_place_move_replace"
+          "interaction": "select_place_move_replace",
+          "translation": "Escucha y completa. Esta es la tienda de ropa. Esta es la camisa. Estos son los pantalones. Esta es la falda. Este es el vestido. Esta es la chaqueta. Estos son los zapatos. Esta es la talla. Este es el color. Este es el precio."
         },
         "items": [
           {

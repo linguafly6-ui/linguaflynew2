@@ -1126,9 +1126,9 @@
         "exerciseId": "english-pre-a1-m083-listening-ex01",
         "type": "listening_gap_fill",
         "content": {
-          "audio": "tts:en-GB:Listen and complete. This is the hairdresser. This is the hair. This is the scissors. This is the comb. This is the brush. This is the mirror. This is the chair. This is the shampoo. This is the short. This is the long.",
+          "audio": "tts:en-GB:Listen and complete. This is the hairdresser. This is the hair. These are the scissors. This is the comb. This is the brush. This is the mirror. This is the chair. This is the shampoo. The hair is short. The hair is long.",
           "audioLocale": "en-GB",
-          "transcriptTemplate": "Listen and complete. This is the [[gap-01]]. This is the [[gap-02]]. This is the [[gap-03]]. This is the [[gap-04]]. This is the [[gap-05]]. This is the [[gap-06]]. This is the c[[gap-07]]. This is the [[gap-08]]. This is the [[gap-09]]. This is the [[gap-10]].",
+          "transcriptTemplate": "Listen and complete. This is the [[gap-01]]. This is the [[gap-02]]. These are the [[gap-03]]. This is the [[gap-04]]. This is the [[gap-05]]. This is the [[gap-06]]. This is the [[gap-07]]. This is the [[gap-08]]. The hair is [[gap-09]]. The hair is [[gap-10]].",
           "wordBank": [
             {
               "wordId": "english-pre-a1-m083-listening-word-01",
@@ -1171,7 +1171,8 @@
               "word": "long"
             }
           ],
-          "interaction": "select_place_move_replace"
+          "interaction": "select_place_move_replace",
+          "translation": "Escucha y completa. Esta es la peluquería. Este es el pelo. Estas son las tijeras. Este es el peine. Este es el cepillo. Este es el espejo. Esta es la silla. Este es el champú. El pelo es corto. El pelo es largo."
         },
         "items": [
           {

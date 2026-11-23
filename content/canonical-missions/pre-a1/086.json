@@ -1113,9 +1113,9 @@
         "exerciseId": "english-pre-a1-m086-listening-ex01",
         "type": "listening_gap_fill",
         "content": {
-          "audio": "tts:en-GB:Listen and complete. This is the pet shop. This is the pet. This is the dog. This is the cat. This is the fish. This is the bird. This is the food. This is the lead. This is the cage. This is the bowl.",
+          "audio": "tts:en-GB:Listen and complete. This is the pet shop. This is a pet. This is a dog. This is a cat. This is a fish. This is a bird. This is pet food. This is the lead. This is the cage. This is the bowl.",
           "audioLocale": "en-GB",
-          "transcriptTemplate": "Listen and complete. This is the [[gap-01]]. This is the [[gap-02]]. This is the [[gap-03]]. This is the [[gap-04]]. This is the [[gap-05]]. This is the [[gap-06]]. This is the [[gap-07]]. This is the [[gap-08]]. This is the [[gap-09]]. This is the [[gap-10]].",
+          "transcriptTemplate": "Listen and complete. This is the [[gap-01]]. This is a [[gap-02]]. This is a [[gap-03]]. This is a [[gap-04]]. This is a [[gap-05]]. This is a [[gap-06]]. This is [[gap-07]]. This is the [[gap-08]]. This is the [[gap-09]]. This is the [[gap-10]].",
           "wordBank": [
             {
               "wordId": "english-pre-a1-m086-listening-word-01",
@@ -1158,7 +1158,8 @@
               "word": "bowl"
             }
           ],
-          "interaction": "select_place_move_replace"
+          "interaction": "select_place_move_replace",
+          "translation": "Escucha y completa. Esta es la tienda de animales. Esta es la mascota. Este es el perro. Este es el gato. Este es el pez. Este es el pájaro. Esta es la comida para animales. Esta es la correa. Esta es la jaula. Este es el cuenco."
         },
         "items": [
           {
