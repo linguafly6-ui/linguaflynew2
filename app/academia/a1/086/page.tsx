@@ -2,4 +2,4 @@ import A1CurriculumMissionRoute, { getA1CurriculumMetadata } from "@/components/
 
 export const metadata = getA1CurriculumMetadata(86);
 
-export default function MissionPage() { return <A1CurriculumMissionRoute position=86 />; }
+export default function MissionPage() { return <A1CurriculumMissionRoute position={86} />; }
