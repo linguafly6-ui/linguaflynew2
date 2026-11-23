@@ -3,7 +3,7 @@ import { previewMissions } from "@/content/a1-curriculum-preview";
 
 export const metadata = {
   title: "Vista previa del currículo A1 · Linguafly Academy",
-  description: "Previsualización de las misiones A1 001–016 y sus ocho secciones.",
+  description: "Previsualización de las misiones A1 001–017 y sus ocho secciones.",
   robots: { index: false, follow: false },
 };
 
@@ -22,14 +22,14 @@ export default function A1CurriculumPreviewPage() {
           <h1 className="mt-3 text-3xl font-black sm:text-5xl">Currículo A1 · Misiones 001–015</h1>
           <p className="mt-4 max-w-3xl text-base leading-7 text-indigo-100">Vista de integración para revisar la estructura de las misiones, sus ocho secciones y la progresión del primer tramo del curso.</p>
           <div className="mt-6 flex flex-wrap gap-2 text-xs font-bold">
-            <span className="rounded-full bg-white/15 px-3 py-2">16 misiones</span>
+            <span className="rounded-full bg-white/15 px-3 py-2">17 misiones</span>
             <span className="rounded-full bg-white/15 px-3 py-2">8 secciones por misión</span>
             <span className="rounded-full bg-amber-300/20 px-3 py-2 text-amber-100">Contenido en revisión</span>
           </div>
         </header>
 
         <section className="mt-8 rounded-2xl border border-amber-200 bg-amber-50 p-4 text-sm leading-6 text-amber-950">
-          <strong>Estado del contenido:</strong> las misiones 001 y 002 utilizan sus JSON canónicos actuales. Las misiones 003–016 muestran fichas curriculares propuestas a partir de la auditoría del material existente; todavía no sustituyen las actividades publicadas ni se consideran contenido canónico validado.
+          <strong>Estado del contenido:</strong> las misiones 001 y 002 utilizan sus JSON canónicos actuales. Las misiones 003–017 muestran fichas curriculares propuestas a partir de la auditoría del material existente; todavía no sustituyen las actividades publicadas ni se consideran contenido canónico validado.
         </section>
 
         <section className="mt-9">
@@ -50,8 +50,8 @@ export default function A1CurriculumPreviewPage() {
 
         <section className="mt-10">
           <div className="flex flex-wrap items-end justify-between gap-3">
-            <div><p className="text-xs font-bold uppercase tracking-[.16em] text-indigo-700">Fichas curriculares propuestas</p><h2 className="mt-1 text-2xl font-black text-slate-950">Misiones 003–016</h2></div>
-            <span className="text-sm text-slate-500">14 fichas para revisión</span>
+            <div><p className="text-xs font-bold uppercase tracking-[.16em] text-indigo-700">Fichas curriculares propuestas</p><h2 className="mt-1 text-2xl font-black text-slate-950">Misiones 003–017</h2></div>
+            <span className="text-sm text-slate-500">15 fichas para revisión</span>
           </div>
           <div className="mt-4 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
             {previewMissions.map((mission) => (
