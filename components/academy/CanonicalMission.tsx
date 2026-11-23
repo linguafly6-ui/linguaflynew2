@@ -940,7 +940,9 @@ export default function CanonicalMission({ missionData = missionSource as Missio
     const add = (english?: string, spanish?: string, overwrite = false) => {
       if (!english?.trim() || !spanish?.trim()) return;
       const value = spanish.trim();
-      if (/^(frase|expresión|texto|modelo|estructura|repaso|práctica|practica|contenido|significado|saludar|despedirse|preguntar|responder|expresar|reconocer|identificar|presentar|hablar|usar|utilizar|distinguir|aprender|comprender|observar|leer|elegir|decir|describir|fórmula|regla|concordancia|orden de las palabras)/i.test(value)) return;
+      // Las entradas explícitas del diccionario tienen prioridad: algunas traducciones
+      // válidas (p. ej. "usar" y "elegir") también aparecen en la lista de placeholders.
+      if (!overwrite && /^(frase|expresión|texto|modelo|estructura|repaso|práctica|practica|contenido|significado|saludar|despedirse|preguntar|responder|expresar|reconocer|identificar|presentar|hablar|usar|utilizar|distinguir|aprender|comprender|observar|leer|elegir|decir|describir|fórmula|regla|concordancia|orden de las palabras)/i.test(value)) return;
       const key = normalise(english);
       if (overwrite || !translations.has(key)) translations.set(key, value);
     };
@@ -968,7 +970,7 @@ export default function CanonicalMission({ missionData = missionSource as Missio
         }
       });
     });
-    Object.entries(PRE_A1_EXAMPLE_TRANSLATIONS).forEach(([english, spanish]) => add(english, spanish));
+    Object.entries(PRE_A1_EXAMPLE_TRANSLATIONS).forEach(([english, spanish]) => add(english, spanish, true));
     return translations;
   }, [mission]);
   const getExampleTranslation = (english: string) => exploreTranslations.get(english.toLocaleLowerCase("en-GB").replace(/[“”]/g, '"').replace(/[.!?…]/g, "").replace(/\s+/g, " ").trim());
