@@ -1,3 +1,5 @@
-import Link from "next/link";
-export const metadata={title:"Parts of the Body · Misión 092 · Linguafly A1",description:"Nombrar partes del cuerpo en contextos de salud."};
-export default function MissionPage(){return <main className="mx-auto min-h-[70vh] max-w-5xl px-5 py-10"><Link href="/academia/a1" className="text-sm font-semibold text-blue-700">← Misiones A1</Link><p className="mt-6 text-sm font-extrabold uppercase tracking-widest text-indigo-700">Linguafly Quest · A1 · Misión 092</p><h1 className="mt-2 text-4xl font-black text-slate-950">Parts of the Body</h1><p className="mt-3 text-slate-600">Cuerpo y salud</p><iframe title="Misión 092 · Parts of the Body" src="/missions/a1/092/index-v2.html?rev=20261119-80-70" className="mt-6 h-[1100px] w-full rounded-2xl border border-slate-200 bg-white"/></main>}
+import A1CurriculumMissionRoute, { getA1CurriculumMetadata } from "@/components/academy/A1CurriculumMissionRoute";
+
+export const metadata = getA1CurriculumMetadata(92);
+
+export default function MissionPage() { return <A1CurriculumMissionRoute position=92 />; }

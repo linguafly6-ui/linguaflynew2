@@ -1,3 +1,5 @@
-import Link from "next/link";
-export const metadata={title:"Travel Questions · Misión 087 · Linguafly A1",description:"Formular preguntas frecuentes durante un viaje."};
-export default function MissionPage(){return <main className="mx-auto min-h-[70vh] max-w-5xl px-5 py-10"><Link href="/academia/a1" className="text-sm font-semibold text-blue-700">← Misiones A1</Link><p className="mt-6 text-sm font-extrabold uppercase tracking-widest text-indigo-700">Linguafly Quest · A1 · Misión 087</p><h1 className="mt-2 text-4xl font-black text-slate-950">Travel Questions</h1><p className="mt-3 text-slate-600">Preguntas de viaje</p><iframe title="Misión 087 · Travel Questions" src="/missions/a1/087/index-v2.html?rev=20261119-80-70" className="mt-6 h-[1100px] w-full rounded-2xl border border-slate-200 bg-white"/></main>}
+import A1CurriculumMissionRoute, { getA1CurriculumMetadata } from "@/components/academy/A1CurriculumMissionRoute";
+
+export const metadata = getA1CurriculumMetadata(87);
+
+export default function MissionPage() { return <A1CurriculumMissionRoute position=87 />; }
