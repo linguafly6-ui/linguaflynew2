@@ -1,19 +1,22 @@
 "use client";
 
 import { useEffect, useMemo, useRef, useState } from "react";
-import missionSource from "@/content/canonical-missions/a1/001.json";
 let britishIpa: Record<string, string> = {};
 let britishIpaPromise: Promise<void> | null = null;
 
 function loadBritishIpa() {
   if (!britishIpaPromise) {
-    britishIpaPromise = import("@/content/dictionaries/en-GB-ipa.json").then(({ default: dictionary }) => {
-      britishIpa = dictionary as Record<string, string>;
-    });
+    britishIpaPromise = fetch("/api/dictionaries/en-GB-ipa")
+      .then(async (response) => {
+        if (!response.ok) throw new Error("IPA dictionary request failed");
+        return response.json();
+      })
+      .then((dictionary) => {
+        britishIpa = dictionary as Record<string, string>;
+      });
   }
   return britishIpaPromise;
 }
-
 type DictationSegment = { segmentId: string; text: string };
 type Item = { itemId: string; english?: string; spanish?: string; prompt?: string; promptSpanish?: string; translation?: string; optionTranslations?: string[]; answerTranslation?: string; answer?: string; options?: string[]; word?: string; pronunciationGuide?: string; expectedAnswer?: string; kind?: string; audioLocale?: string; audio?: string; repeatCount?: number; segments?: DictationSegment[]; modelAnswer?: string; focus?: string; expectedWordId?: string; gapToken?: string; position: number };
 type LessonEntry = { english: string; spanish: string; note?: string; prompt?: string; promptSpanish?: string; pronunciationGuide?: string };
@@ -5676,7 +5679,7 @@ function getSpanishPronunciationGuide(word: string) {
   return value || "";
 }
 
-export default function CanonicalMission({ missionData = missionSource as Mission }: { missionData?: Mission }) {
+export default function CanonicalMission({ missionData }: { missionData: Mission }) {
   const mission = missionData;
   const exploreTranslations = useMemo(() => {
     const normalise = (value: string) => value.toLocaleLowerCase("en-GB").replace(/[“”]/g, '"').replace(/[.!?…]/g, "").replace(/\s+/g, " ").trim();
