@@ -3795,7 +3795,7 @@ export default function CanonicalMission({ missionData = missionSource as Missio
           <div className="mt-5 rounded-xl border border-slate-200 bg-slate-50 p-5 text-base leading-10 text-slate-700">
             {listeningTemplate.split(/(\[\[gap-(?:0[1-9]|10)\]\])/g).map((part, i) => {
               const gap = listeningItems.find((entry) => entry.gapToken === part);
-              if (!gap) return <span key={`text-${i}`}>{part}</span>;
+              if (!gap) return <span key={`text-${i}`}>{renderTranslatedWords(part)}</span>;
               const placed = listeningAnswers[gap.itemId];
               return <button key={gap.itemId} disabled={checked} onClick={() => {
                 if (selectedListeningWord) {
