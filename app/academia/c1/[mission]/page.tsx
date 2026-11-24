@@ -41,6 +41,8 @@ export default async function C1MissionPage({
         <div className="mt-5">
           <CanonicalMissionFromAsset
             src={`/canonical-missions/c1/${mission}.json`}
+            level="C1"
+            routeKey={mission}
           />
         </div>
       </div>
