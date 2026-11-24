@@ -2728,8 +2728,8 @@ export default function CanonicalMission({ missionData = missionSource as Missio
   const [hoveredWord, setHoveredWord] = useState<string | null>(null);
   const renderTranslatedWords = (text?: string, translationOverride?: string) => {
     if (!text) return text;
-    // Translate está disponible en Gramática y en todos los textos de las secciones de Lectura.
-    if (sectionKey !== "grammar" && sectionKey !== "reading") return text;
+    // Translate está disponible en Gramática, Práctica y todos los textos de Lectura.
+    if (!["grammar", "practice", "reading"].includes(sectionKey)) return text;
     // Si existe traducción de la expresión completa (patrones y ejemplos), mostrarla
     // como tooltip; después, para el resto del texto, traducir palabra por palabra.
     const phraseKey = text.toLocaleLowerCase("en-GB").replace(/[“”]/g, '"').replace(/[.!?…]/g, "").replace(/\s+/g, " ").trim();
