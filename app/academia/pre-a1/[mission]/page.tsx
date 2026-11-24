@@ -7,7 +7,7 @@ export async function generateMetadata({ params }: { params: Promise<{ mission: 
   const { mission } = await params;
   return {
     title: `PRE-A1 · Misión ${mission} · Linguafly Academy`,
-    description: `Practica inglés ${level} con la misión ${mission} de Linguafly Academy.`,
+    description: `Practica inglés PRE-A1 con la misión ${mission} de Linguafly Academy.`,
     robots: { index: false, follow: false },
   };
 }
