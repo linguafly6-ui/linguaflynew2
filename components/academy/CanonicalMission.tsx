@@ -11,30 +11,53 @@ type Lesson = { phrases: LessonEntry[]; grammar: LessonEntry[]; reading: LessonE
 type Section = { sectionId: string; sectionKey: string; position: number; title?: string; exercise: { exerciseId: string; type: string; items: Item[]; lesson?: Lesson; theory?: { title: string; explanation: string; tip: string; patterns: ({ label?: string; pattern: string; translation?: string; examples?: string[]; exampleTranslations?: string[] } | string)[] }; content?: { passageId?: string; passage?: string; audio?: string; audioTranscript?: string; transcriptTemplate?: string; wordBank?: { wordId: string; word: string }[]; translation?: string; blocks?: { position?: number; title?: string; content?: string; example?: string; translation?: string }[] } } };
 export type Mission = { course: { level: string }; unit: { title: string }; mission: { title: string; position?: number }; sections: Section[] };
 function visualForVocabulary(english: string, spanish: string) {
-  const source = `${english} ${spanish}`.toLowerCase();
+  const normalise = (value: string) => value.toLocaleLowerCase("en-GB").normalize("NFD").replace(/[\\u0300-\\u036f]/g, "").trim();
+  const en = normalise(english);
+  const es = normalise(spanish);
+  // Ilustraciones concretas para el vocabulario de viajes de B1-034 y términos frecuentes.
+  const specific: Record<string, string> = {
+    journey:"🚆", destination:"📍", sightseeing:"🏛️", accommodation:"🏨", reservation:"📅",
+    departure:"🛫", arrival:"🛬", platform:"🚉", luggage:"🧳", suitcase:"🧳",
+    delay:"⏳", cancellation:"❌", refund:"💶", "boarding pass":"🎫", customs:"🛃",
+    "local customs":"🏮", landmark:"🗼", crowded:"👥", peaceful:"🌿",
+    breathtaking:"🏞️", disappointed:"😞", exhausted:"🥱", "guided tour":"🧑‍🏫",
+    "travel insurance":"🛡️", "check in":"🛎️", "set off":"🧭", "get around":"🗺️",
+    "look forward to":"🤩", "run out of":"📉", "in the end":"🏁",
+    viaje:"🚆", destino:"📍", "visita turistica":"🏛️", alojamiento:"🏨", reserva:"📅",
+    salida:"🛫", llegada:"🛬", anden:"🚉", equipaje:"🧳", maleta:"🧳",
+    retraso:"⏳", cancelacion:"❌", reembolso:"💶", "tarjeta de embarque":"🎫",
+    aduana:"🛃", "costumbres locales":"🏮", "monumento emblematico":"🗼",
+    abarrotado:"👥", tranquilo:"🌿", impresionante:"🏞️", decepcionado:"😞",
+    agotado:"🥱", "visita guiada":"🧑‍🏫", "seguro de viaje":"🛡️",
+    "facturar / registrarse":"🛎️", "ponerse en camino":"🧭", desplazarse:"🗺️",
+    "tener ganas de":"🤩", "quedarse sin":"📉", "al final":"🏁"
+  };
+  if (specific[en]) return specific[en];
+  if (specific[es]) return specific[es];
+  const source = `${en} ${es}`;
   const groups: [string[], string][] = [
-    [["trabajo","empleo","profesión","oficina","empresa","jefe","reunión","salario","carrera","entrevista","cliente","equipo"],"💼"],
-    [["viaje","viajar","turismo","viajero","aeropuerto","vuelo","tren","autobús","hotel","equipaje","billete","destino","mapa","carretera"],"🧳"],
+    [["trabajo","empleo","profesion","oficina","empresa","jefe","reunion","salario","carrera","entrevista","cliente","equipo"],"💼"],
+    [["viaje","viajar","turismo","viajero","aeropuerto","vuelo","tren","autobus","hotel","equipaje","billete","destino","mapa","carretera"],"🧭"],
     [["familia","madre","padre","hermano","hermana","abuelo","abuela","hijo","hija","pariente"],"👨‍👩‍👧"],
-    [["amigo","amistad","relación","pareja","vecino","compañero","comunidad"],"🫂"],
-    [["salud","médico","doctor","hospital","dolor","enfermo","síntoma","medicina","descanso","sueño","estrés","bienestar","ejercicio"],"🩺"],
+    [["amigo","amistad","relacion","pareja","vecino","companero","comunidad"],"🫂"],
+    [["salud","medico","doctor","hospital","dolor","enfermo","sintoma","medicina","descanso","sueno","estres","bienestar","ejercicio"],"🩺"],
     [["comida","alimento","desayuno","almuerzo","cena","fruta","verdura","bebida","cocinar","restaurante"],"🍎"],
-    [["estudio","aprender","enseñar","curso","clase","escuela","universidad","examen","conocimiento","habilidad","idioma","gramática"],"📚"],
-    [["cultura","tradición","costumbre","festival","museo","arte","música","película","teatro","libro","historia"],"🎭"],
+    [["estudio","aprender","ensenar","curso","clase","escuela","universidad","examen","conocimiento","habilidad","idioma","gramatica"],"📚"],
+    [["cultura","tradicion","costumbre","festival","museo","arte","musica","pelicula","teatro","libro","historia"],"🎭"],
     [["dinero","precio","coste","gasto","ahorro","pagar","compra","vender","presupuesto","descuento","factura"],"💳"],
-    [["tecnología","internet","digital","ordenador","móvil","teléfono","aplicación","pantalla","red","mensaje","correo"],"📱"],
-    [["medioambiente","ambiente","naturaleza","clima","energía","reciclaje","residuo","contaminación","planeta","bosque","agua"],"🌍"],
-    [["tiempo","fecha","hora","mañana","tarde","noche","semana","mes","año","momento","plazo"],"🕒"],
-    [["problema","solución","decisión","opción","elección","resultado","objetivo","meta","progreso","mejora","reto","desafío"],"🧩"],
-    [["emoción","sentimiento","feliz","triste","miedo","confianza","orgullo","sorpresa","preocupación","esperanza"],"💬"],
+    [["tecnologia","internet","digital","ordenador","movil","telefono","aplicacion","pantalla","red","mensaje","correo"],"📱"],
+    [["medioambiente","ambiente","naturaleza","clima","energia","reciclaje","residuo","contaminacion","planeta","bosque","agua"],"🌍"],
+    [["tiempo","fecha","hora","manana","tarde","noche","semana","mes","ano","momento","plazo"],"🕒"],
+    [["problema","solucion","decision","opcion","eleccion","resultado","objetivo","meta","progreso","mejora","reto","desafio"],"🧩"],
+    [["emocion","sentimiento","feliz","triste","miedo","confianza","orgullo","sorpresa","preocupacion","esperanza"],"😊"],
     [["ley","norma","regla","derecho","deber","permiso","seguridad","responsabilidad"],"⚖️"],
-    [["comunicación","conversación","hablar","escuchar","pregunta","respuesta","opinión","argumento","debate"],"🗣️"],
-    [["edificio","casa","vivienda","habitación","cocina","jardín","ciudad","pueblo","barrio"],"🏙️"],
+    [["comunicacion","conversacion","hablar","escuchar","pregunta","respuesta","opinion","argumento","debate"],"🗣️"],
+    [["edificio","casa","vivienda","habitacion","cocina","jardin","ciudad","pueblo","barrio"],"🏙️"],
     [["deporte","correr","caminar","nadar","jugar","partido"],"🏃"],
     [["ropa","vestir","zapato","camisa","abrigo","uniforme"],"👕"]
   ];
   for (const [words, emoji] of groups) if (words.some(word => source.includes(word))) return emoji;
-  return "💡";
+  return "🔎";
 }
 
 function vocabularyImageSource(english: string, spanish: string, symbol: string) {
