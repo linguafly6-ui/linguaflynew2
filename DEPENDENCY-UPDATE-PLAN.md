@@ -1,37 +1,28 @@
-# Plan de actualización controlada: Next.js / OpenNext
+# Actualización controlada: Next.js / OpenNext
 
 ## Contexto
 
-El build de Preview completó `next build` y falló después, durante `Bundling the OpenNext server`, con un deadlock de esbuild (`ThreadSafeWaitGroup.Wait` / `scanner.scanAllDependencies`). No hay evidencia suficiente para atribuirlo a un paquete concreto ni para afirmar que sea un OOM.
+El build de Preview completó `next build` y falló después, durante `Bundling the OpenNext server`, con un deadlock de esbuild (`ThreadSafeWaitGroup.Wait` / `scanner.scanAllDependencies`). El log posterior termina en `Killed`; no hay evidencia suficiente para atribuirlo a un paquete concreto ni para afirmar que sea un OOM.
 
-Versiones fijadas en el lockfile de `main` al iniciar este trabajo:
+## Cambios aplicados en esta rama
 
-- `next`: 16.4.4
-- `@opennextjs/cloudflare`: 1.20.15
-- `@opennextjs/aws`: 4.1.14
-- `wrangler`: 4.156.1
-- `esbuild`: 0.28.2
+- `package.json`: `next` fijado a `16.4.6`.
+- `package.json`: `@opennextjs/cloudflare` fijado a `1.20.18`.
+- Wrangler se mantiene en el rango existente; el lockfile anterior resolvía `4.156.1`.
+- React, TypeScript y el resto de dependencias no se han cambiado.
 
-## Propuesta inicial (no aplicada todavía)
+Motivo: OpenNext 1.20.16 elevó el mínimo compatible de Next a 16.4.5; Next 16.4.6 es un parche posterior. OpenNext 1.20.18 era la versión más reciente consultada el 24-11-2026. Esta actualización es una prueba controlada, no una solución demostrada al deadlock.
 
-Actualizar conjuntamente y fijar versiones exactas:
+## Validación pendiente obligatoria
 
-- `next`: 16.4.6
-- `@opennextjs/cloudflare`: 1.20.18
-- Mantener inicialmente `wrangler`: 4.156.1 (satisface el peer range `^4.148.0` conocido del adaptador).
-- Mantener React, TypeScript y el resto de dependencias sin cambios en esta primera prueba.
+**Importante:** `package-lock.json` todavía conserva el árbol previo. No se ha regenerado porque este entorno no dispone de ejecución npm. No ejecutar `npm ci`, builds ni despliegues hasta regenerar y revisar el lockfile.
 
-Motivo: OpenNext 1.20.16 elevó el mínimo compatible de Next a 16.4.5 por correcciones de seguridad; Next 16.4.6 es un parche posterior. OpenNext 1.20.18 es la versión publicada más reciente consultada el 24-11-2026. Esta actualización es una prueba controlada, no una solución demostrada al deadlock.
+En un entorno con npm, desde esta rama:
 
-## Procedimiento requerido
+1. Ejecutar `npm install --package-lock-only --ignore-scripts`.
+2. Revisar el diff de `package-lock.json` y comprobar las versiones efectivas de Next, OpenNext, `@opennextjs/aws` y esbuild.
+3. Ejecutar `npm ci` para validar que manifiesto y lockfile son consistentes.
+4. Solo después, y con autorización separada, ejecutar el build de Preview `npx opennextjs-cloudflare build` y guardar el log completo.
+5. No desplegar a producción como parte de esta prueba.
 
-1. Cambiar las versiones de `next` y `@opennextjs/cloudflare` en `package.json` a las versiones exactas propuestas.
-2. Regenerar `package-lock.json` con npm (no editarlo manualmente):
-   `npm install --package-lock-only --ignore-scripts`
-3. Verificar que `npm ci` resuelve el árbol y que hay una sola versión efectiva de esbuild en el árbol relevante de OpenNext.
-4. Ejecutar primero `npx opennextjs-cloudflare build` en un entorno Preview autorizado y guardar el log completo.
-5. No desplegar a producción. Si el empaquetado vuelve a fallar, capturar el log desde el comienzo de `Bundling the OpenNext server` y aislar las dependencias/plugins; no aplicar cambios aleatorios de concurrencia.
-
-## Límites de este cambio
-
-Este documento solo registra el plan. No modifica `package.json` ni `package-lock.json`, no ejecuta builds y no realiza despliegues. El lockfile debe regenerarse con npm para evitar inconsistencias entre manifiesto y árbol bloqueado.
+No se ha ejecutado ningún build ni despliegue.
