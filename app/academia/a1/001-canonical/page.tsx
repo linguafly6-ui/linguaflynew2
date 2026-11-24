@@ -1,5 +1,5 @@
 import Link from "next/link";
-import CanonicalMission from "@/components/academy/CanonicalMission";
+import CanonicalMissionFromD1 from "@/components/academy/CanonicalMissionFromD1";
 
 export const metadata = {
   title: "A1 · Misión 001 · Linguafly Academy",
@@ -15,7 +15,7 @@ export default function CanonicalA1MissionPage() {
           <span aria-hidden="true">←</span> Volver al diseño de la academia
         </Link>
         <div className="mt-5">
-          <CanonicalMission />
+          <CanonicalMissionFromD1 level="A1" routeKey="001" />
         </div>
       </div>
     </main>
