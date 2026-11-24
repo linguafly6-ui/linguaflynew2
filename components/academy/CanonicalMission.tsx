@@ -5722,10 +5722,8 @@ export default function CanonicalMission({ missionData = missionSource as Missio
   }, [mission]);
   const getExampleTranslation = (english: string) => exploreTranslations.get(english.toLocaleLowerCase("en-GB").replace(/[“”]/g, '"').replace(/[.!?…]/g, "").replace(/\s+/g, " ").trim());
   const resolveSpanish = (english?: string, spanish?: string) => {
-    const isPlaceholder = !spanish?.trim() || /^(frase|expresión|texto|modelo|estructura|repaso|práctica|practica|contenido|significado|saludar|despedirse|preguntar|responder|expresar|reconocer|identificar|presentar|hablar|usar|utilizar|distinguir|aprender|comprender|observar|leer|elegir|decir|describir)/i.test(spanish);
-    return isPlaceholder ? (english ? getExampleTranslation(english) : undefined) ?? "Traducción pendiente de revisión académica." : spanish ?? "Traducción pendiente de revisión académica.";
     const isPlaceholder = !spanish?.trim() || /^(frase|expresión|texto|modelo|estructura|patrón gramatical|repaso|práctica|practica|contenido|significado|saludar|despedirse|preguntar|responder|expresar|reconocer|identificar|presentar|hablar|usar|utilizar|distinguir|aprender|comprender|observar|leer|elegir|decir|describir)/i.test(spanish);
-    return isPlaceholder ? (english ? getExampleTranslation(english) : undefined) ?? "Traducción pendiente de revisión académica." : spanish;
+    return isPlaceholder ? (english ? getExampleTranslation(english) : undefined) ?? "Traducción pendiente de revisión académica." : spanish ?? "Traducción pendiente de revisión académica.";
   };
   const wordTranslations = useMemo(() => {
     const words = new Map<string, string>();
