@@ -2,7 +2,17 @@
 
 import { useEffect, useMemo, useRef, useState } from "react";
 import missionSource from "@/content/canonical-missions/a1/001.json";
-import britishIpa from "@/content/dictionaries/en-GB-ipa.json";
+let britishIpa: Record<string, string> = {};
+let britishIpaPromise: Promise<void> | null = null;
+
+function loadBritishIpa() {
+  if (!britishIpaPromise) {
+    britishIpaPromise = import("@/content/dictionaries/en-GB-ipa.json").then(({ default: dictionary }) => {
+      britishIpa = dictionary as Record<string, string>;
+    });
+  }
+  return britishIpaPromise;
+}
 
 type DictationSegment = { segmentId: string; text: string };
 type Item = { itemId: string; english?: string; spanish?: string; prompt?: string; promptSpanish?: string; translation?: string; optionTranslations?: string[]; answerTranslation?: string; answer?: string; options?: string[]; word?: string; pronunciationGuide?: string; expectedAnswer?: string; kind?: string; audioLocale?: string; audio?: string; repeatCount?: number; segments?: DictationSegment[]; modelAnswer?: string; focus?: string; expectedWordId?: string; gapToken?: string; position: number };
@@ -5587,7 +5597,7 @@ function getSpanishPronunciationGuideForText(text: string, fallback?: string) {
 
 function getSpanishPronunciationGuide(word: string) {
   const normalized = word.toLowerCase().replace(/’/g, "'");
-  const ipa = (britishIpa as Record<string, string>)[normalized];
+  const ipa = britishIpa[normalized];
 
   // C1 entries without IPA use a spelling-based approximation instead of a placeholder.
   if (!ipa) {
@@ -5955,6 +5965,17 @@ export default function CanonicalMission({ missionData = missionSource as Missio
   };
   const sectionLabel = (key: string) => mission.course.level.toUpperCase() === "B1" && key === "practice" ? "Vocabulary" : labels[key] ?? key;
   const [sectionKey, setSectionKey] = useState("explore");
+  const [, setIpaVersion] = useState(0);
+  useEffect(() => {
+    if (sectionKey !== "explore" && sectionKey !== "pronunciation") return;
+    let cancelled = false;
+    loadBritishIpa().then(() => {
+      if (!cancelled) setIpaVersion((version) => version + 1);
+    }).catch(() => {
+      // La guía ortográfica de respaldo sigue disponible si falla la carga del diccionario.
+    });
+    return () => { cancelled = true; };
+  }, [sectionKey]);
   const [index, setIndex] = useState(0);
   const [answers, setAnswers] = useState<Record<string, string>>({});
   const [optionOrders, setOptionOrders] = useState<Record<string, string[]>>({});

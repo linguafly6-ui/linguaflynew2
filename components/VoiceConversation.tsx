@@ -1,11 +1,6 @@
 "use client";
 
 import { useCallback, useEffect, useRef, useState } from "react";
-import { A2_UNIT_WORDS, A2_DEFAULT_WORDS } from "@/lib/a2-speaking-words";
-import { B1_UNIT_WORDS, B1_DEFAULT_WORDS } from "@/lib/b1-speaking-words";
-import { B2_UNIT_WORDS, B2_DEFAULT_WORDS } from "@/lib/b2-speaking-words";
-import { C1_UNIT_WORDS, C1_DEFAULT_WORDS } from "@/lib/c1-speaking-words";
-import { C2_UNIT_WORDS, C2_DEFAULT_WORDS } from "@/lib/c2-speaking-words";
 
 
 // ============================================================
@@ -139,12 +134,25 @@ const DEFAULT_TOPICS: Record<number, string[]> = {
   99: ["I prefer this because", "This is better than that", "This one is bigger", "That one is cheaper", "This is the best one", "This is the worst one", "This is more expensive", "That is faster", "This is the most beautiful", "I like this one more"],
 };
 
-function getUnitWords(unitId: string): string[] {
-  if (unitId.startsWith("c1-speaking-")) return C1_UNIT_WORDS[unitId] || C1_DEFAULT_WORDS;
-  if (unitId.startsWith("c2-speaking-")) return C2_UNIT_WORDS[unitId] || C2_DEFAULT_WORDS;
-  if (unitId.startsWith("b2-speaking-")) return B2_UNIT_WORDS[unitId] || B2_DEFAULT_WORDS;
-  if (unitId.startsWith("b1-speaking-")) return B1_UNIT_WORDS[unitId] || B1_DEFAULT_WORDS;
+async function getUnitWords(unitId: string): Promise<string[]> {
+  if (unitId.startsWith("c1-speaking-")) {
+    const { C1_UNIT_WORDS, C1_DEFAULT_WORDS } = await import("@/lib/c1-speaking-words");
+    return C1_UNIT_WORDS[unitId] || C1_DEFAULT_WORDS;
+  }
+  if (unitId.startsWith("c2-speaking-")) {
+    const { C2_UNIT_WORDS, C2_DEFAULT_WORDS } = await import("@/lib/c2-speaking-words");
+    return C2_UNIT_WORDS[unitId] || C2_DEFAULT_WORDS;
+  }
+  if (unitId.startsWith("b2-speaking-")) {
+    const { B2_UNIT_WORDS, B2_DEFAULT_WORDS } = await import("@/lib/b2-speaking-words");
+    return B2_UNIT_WORDS[unitId] || B2_DEFAULT_WORDS;
+  }
+  if (unitId.startsWith("b1-speaking-")) {
+    const { B1_UNIT_WORDS, B1_DEFAULT_WORDS } = await import("@/lib/b1-speaking-words");
+    return B1_UNIT_WORDS[unitId] || B1_DEFAULT_WORDS;
+  }
   if (unitId.startsWith("a2-speaking-")) {
+    const { A2_UNIT_WORDS, A2_DEFAULT_WORDS } = await import("@/lib/a2-speaking-words");
     return A2_UNIT_WORDS[unitId] || A2_DEFAULT_WORDS;
   }
   const match = unitId.match(/a1-speaking-(\d+)/);
@@ -635,7 +643,7 @@ export default function VoiceConversation({ scenario, userId = "demo-user", onCo
       activeRef.current = true;
 
       // Cargar la lista de palabras de esta unidad.
-      wordListRef.current = getUnitWords(scenario.id);
+      wordListRef.current = await getUnitWords(scenario.id);
       currentWordIndexRef.current = 0;
       correctCountRef.current = 0;
       setProgress(0);
