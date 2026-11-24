@@ -627,6 +627,19 @@
                         "items": {
                           "$ref": "#/$defs/nonEmpty"
                         }
+                      },
+                      "translation": {
+                        "$ref": "#/$defs/nonEmpty"
+                      },
+                      "optionTranslations": {
+                        "type": "array",
+                        "minItems": 2,
+                        "items": {
+                          "$ref": "#/$defs/nonEmpty"
+                        }
+                      },
+                      "answerTranslation": {
+                        "$ref": "#/$defs/nonEmpty"
                       }
                     }
                   }
