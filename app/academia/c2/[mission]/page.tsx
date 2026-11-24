@@ -15,7 +15,7 @@ export async function generateMetadata({ params }: { params: Promise<{ mission: 
 export default async function MissionPage({ params }: { params: Promise<{ mission: string }> }) {
   const { mission } = await params;
   const number = Number(mission);
-  if (!/^\\d{3}$/.test(mission) || number < 1 || number > 90) {
+  if (!/^\d{3}$/.test(mission) || number < 1 || number > 90) {
     return <main className="min-h-screen bg-slate-50 p-8">Misión no encontrada.</main>;
   }
 
