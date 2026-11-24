@@ -24,6 +24,16 @@ The importer validates each mission ID, course level, content version, duplicate
 IDs and duplicate route keys. The generated SQL uses parameter-safe SQL string
 escaping and an upsert keyed by (level, route_key).
 
+## Current Preview status
+
+- The schema has been applied to the Preview `COURSE_DB` only.
+- Preview contains 100 C1 missions and 99 B2 missions (199 total).
+- All 199 stored JSON documents pass SQLite `json_valid`.
+- Representative C1 001 and B2 002 records were read back with their expected IDs and titles.
+- The C1/B2 client reader now prefers the D1 API and falls back to the existing public JSON assets.
+- Production D1 has not been changed, and no production deployment has occurred.
+- A Cloudflare OpenNext build and browser-level Preview check are still required.
+
 ## Safety / rollout
 
 1. Apply the schema only to the **Preview COURSE_DB**, never to `DB` or production.
