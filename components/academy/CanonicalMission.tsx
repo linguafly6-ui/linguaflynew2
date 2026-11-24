@@ -3309,7 +3309,8 @@ export default function CanonicalMission({ missionData = missionSource as Missio
     // como tooltip; después, para el resto del texto, traducir palabra por palabra.
     const phraseKey = text.toLocaleLowerCase("en-GB").replace(/[“”]/g, '"').replace(/[.!?…]/g, "").replace(/\s+/g, " ").trim();
     const phraseTranslation = translationOverride?.trim() || exploreTranslations.get(phraseKey);
-    if (phraseTranslation) {
+    const hasWordTranslation = text.split(/([\p{L}]+(?:['’][\p{L}]+)?)/gu).some((part) => wordTranslations.has(part.toLocaleLowerCase("en-GB")));
+    if (phraseTranslation && !hasWordTranslation) {
       const phraseId = `phrase:${phraseKey}`;
       const phraseIsOpen = hoveredWord === phraseId;
       return (
