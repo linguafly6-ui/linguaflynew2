@@ -6275,12 +6275,14 @@ export default function CanonicalMission({ missionData = missionSource as Missio
               {section.exercise.items.map((entry) => {
                 const word = (entry.english ?? "").toLowerCase();
                 const pronunciationGuide = getSpanishPronunciationGuide(word) || entry.pronunciationGuide || pronunciationByWord.get(word);
-                return <article key={entry.itemId} className="flex min-w-0 flex-col items-center justify-center rounded-2xl border border-[#e8ebf0] bg-white p-4 text-center sm:p-5">
-                  <p className="break-words text-base font-bold text-[#26364b] sm:text-lg">{entry.english}</p>
-                  <p className="mt-1 text-sm font-medium text-[#64816f]">{resolveSpanish(entry.english, entry.spanish)}</p>
-                  <p className="mt-1 min-h-5 text-xs font-semibold text-[#55708f]">{pronunciationGuide || "Guía de pronunciación pendiente"}</p>
-                  <button type="button" aria-label={`Escuchar pronunciación de ${entry.english}`} onClick={() => speak(entry.english ?? "")} className="mt-3 rounded-full border border-[#dce6f0] bg-white px-3 py-1.5 text-xs font-semibold text-[#55708f]">♫ Escuchar voz automática</button>
-                </article>;
+                return (
+                  <article key={entry.itemId} className="flex min-w-0 flex-col items-center justify-center rounded-2xl border border-[#e8ebf0] bg-white p-4 text-center sm:p-5">
+                    <p className="break-words text-base font-bold text-[#26364b] sm:text-lg">{entry.english}</p>
+                    <p className="mt-1 text-sm font-medium text-[#64816f]">{resolveSpanish(entry.english, entry.spanish)}</p>
+                    <p className="mt-1 min-h-5 text-xs font-semibold text-[#55708f]">{pronunciationGuide || "Guía de pronunciación pendiente"}</p>
+                    <button type="button" aria-label={`Escuchar pronunciación de ${entry.english}`} onClick={() => speak(entry.english ?? "")} className="mt-3 rounded-full border border-[#dce6f0] bg-white px-3 py-1.5 text-xs font-semibold text-[#55708f]">♫ Escuchar voz automática</button>
+                  </article>
+                );
               })}
             </div>
           </section>}
