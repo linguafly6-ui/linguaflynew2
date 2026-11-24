@@ -1746,8 +1746,8 @@ function makeCanonicalMission(p: (typeof previewMissions)[number]): Mission {
 
 const previewAsCanonical = Object.fromEntries(previewMissions.map((p) => [p.id, makeCanonicalMission(p)])) as Record<string, Mission>;
 const allMissions = { ...canonicalMissions, ...previewAsCanonical };
-const previous = (id: string) => String(Number(id) - 1).padStart(3, "0");
-const next = (id: string) => String(Number(id) + 1).padStart(3, "0");
+const previous = (id: string) => id === "071" ? "069" : String(Number(id) - 1).padStart(3, "0");
+const next = (id: string) => id === "069" ? "071" : String(Number(id) + 1).padStart(3, "0");
 
 export const dynamicParams = false;
 export function generateStaticParams() { return ids.map((mission) => ({ mission })); }
