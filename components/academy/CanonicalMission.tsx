@@ -36,25 +36,25 @@ function visualForVocabulary(english: string, spanish: string) {
   if (specific[es]) return specific[es];
   const source = `${en} ${es}`;
   const groups: [string[], string][] = [
-    [["trabajo","empleo","profesion","oficina","empresa","jefe","reunion","salario","carrera","entrevista","cliente","equipo"],"💼"],
-    [["viaje","viajar","turismo","viajero","aeropuerto","vuelo","tren","autobus","hotel","equipaje","billete","destino","mapa","carretera"],"🧭"],
-    [["familia","madre","padre","hermano","hermana","abuelo","abuela","hijo","hija","pariente"],"👨‍👩‍👧"],
-    [["amigo","amistad","relacion","pareja","vecino","companero","comunidad"],"🫂"],
-    [["salud","medico","doctor","hospital","dolor","enfermo","sintoma","medicina","descanso","sueno","estres","bienestar","ejercicio"],"🩺"],
-    [["comida","alimento","desayuno","almuerzo","cena","fruta","verdura","bebida","cocinar","restaurante"],"🍎"],
-    [["estudio","aprender","ensenar","curso","clase","escuela","universidad","examen","conocimiento","habilidad","idioma","gramatica"],"📚"],
-    [["cultura","tradicion","costumbre","festival","museo","arte","musica","pelicula","teatro","libro","historia"],"🎭"],
-    [["dinero","precio","coste","gasto","ahorro","pagar","compra","vender","presupuesto","descuento","factura"],"💳"],
-    [["tecnologia","internet","digital","ordenador","movil","telefono","aplicacion","pantalla","red","mensaje","correo"],"📱"],
-    [["medioambiente","ambiente","naturaleza","clima","energia","reciclaje","residuo","contaminacion","planeta","bosque","agua"],"🌍"],
-    [["tiempo","fecha","hora","manana","tarde","noche","semana","mes","ano","momento","plazo"],"🕒"],
-    [["problema","solucion","decision","opcion","eleccion","resultado","objetivo","meta","progreso","mejora","reto","desafio"],"🧩"],
-    [["emocion","sentimiento","feliz","triste","miedo","confianza","orgullo","sorpresa","preocupacion","esperanza"],"😊"],
-    [["ley","norma","regla","derecho","deber","permiso","seguridad","responsabilidad"],"⚖️"],
-    [["comunicacion","conversacion","hablar","escuchar","pregunta","respuesta","opinion","argumento","debate"],"🗣️"],
-    [["edificio","casa","vivienda","habitacion","cocina","jardin","ciudad","pueblo","barrio"],"🏙️"],
-    [["deporte","correr","caminar","nadar","jugar","partido"],"🏃"],
-    [["ropa","vestir","zapato","camisa","abrigo","uniforme"],"👕"]
+    [["trabajo","empleo","profesion","oficina","empresa","jefe","reunion","salario","carrera","entrevista","cliente","equipo","job","work","career","colleague","deadline","salary","manager","workplace","occupation"],"💼"],
+    [["viaje","viajar","turismo","viajero","aeropuerto","vuelo","tren","autobus","hotel","equipaje","billete","destino","mapa","carretera","journey","travel","trip","flight","station","platform","luggage","suitcase","destination","departure","arrival","tour","accommodation"],"🧭"],
+    [["familia","madre","padre","hermano","hermana","abuelo","abuela","hijo","hija","pariente","family","mother","father","parent","child","childhood","relative","son","daughter"],"👨‍👩‍👧"],
+    [["amigo","amistad","relacion","pareja","vecino","companero","comunidad","friend","friendship","relationship","neighbour","neighbor","classmate","acquaintance","colleague","mentor","role model","trust","loyal","supportive"],"🫂"],
+    [["salud","medico","doctor","hospital","dolor","enfermo","sintoma","medicina","descanso","sueno","estres","bienestar","ejercicio","health","illness","symptom","medicine","patient","tired","exhausted","sleep","stress","exercise"],"🩺"],
+    [["comida","alimento","desayuno","almuerzo","cena","fruta","verdura","bebida","cocinar","restaurante","food","meal","breakfast","lunch","dinner","fruit","vegetable","drink","cook","recipe"],"🍎"],
+    [["estudio","aprender","ensenar","curso","clase","escuela","universidad","examen","conocimiento","habilidad","idioma","gramatica","study","learn","teach","course","class","school","university","exam","skill","language","memory","achievement","lesson"],"📚"],
+    [["cultura","tradicion","costumbre","festival","museo","arte","musica","pelicula","teatro","libro","historia","culture","tradition","custom","festival","museum","art","music","film","theatre","theater","story","history","performance"],"🎭"],
+    [["dinero","precio","coste","gasto","ahorro","pagar","compra","vender","presupuesto","descuento","factura","money","price","cost","spend","save","pay","buy","sell","budget","refund","afford","benefit"],"💳"],
+    [["tecnologia","internet","digital","ordenador","movil","telefono","aplicacion","pantalla","red","mensaje","correo","technology","internet","digital","computer","mobile","phone","app","screen","message","email","account","notification","online","offline","platform","device","video call"],"📱"],
+    [["medioambiente","ambiente","naturaleza","clima","energia","reciclaje","residuo","contaminacion","planeta","bosque","agua","environment","nature","weather","climate","energy","recycle","waste","pollution","planet","forest"],"🌍"],
+    [["tiempo","fecha","hora","manana","tarde","noche","semana","mes","ano","momento","plazo","time","date","hour","morning","afternoon","evening","night","week","month","year","recently","eventually","deadline","schedule","appointment"],"🕒"],
+    [["problema","solucion","decision","opcion","eleccion","resultado","objetivo","meta","progreso","mejora","reto","desafio","challenge","problem","solution","decision","choice","result","goal","progress","improve","opportunity","risk","turning point","mistake","consequence","evidence","reason","outcome"],"🧩"],
+    [["emocion","sentimiento","feliz","triste","miedo","confianza","orgullo","sorpresa","preocupacion","esperanza","emotion","feeling","happy","sad","afraid","fear","proud","surprised","worried","hope","nervous","excited","embarrassed","disappointed","frightened","confident","frustrated","annoyed"],"😊"],
+    [["ley","norma","regla","derecho","deber","permiso","seguridad","responsabilidad","law","rule","right","duty","permission","safety","responsibility","insurance","boundary","agreement","promise","privacy"],"⚖️"],
+    [["comunicacion","conversacion","hablar","escuchar","pregunta","respuesta","opinion","argumento","debate","communication","conversation","speak","listen","question","reply","answer","opinion","argument","debate","report","mention","announce","explain","claim","admit","deny","promise","warn","suggest","remind","message","rumour","rumor","truth","secret","misunderstanding","assumption","viewpoint","negotiate","disagreement","announcement","invitation","recipient","sender","attachment"],"🗣️"],
+    [["edificio","casa","vivienda","habitacion","cocina","jardin","ciudad","pueblo","barrio","building","house","home","accommodation","room","kitchen","garden","city","town","neighbourhood","neighborhood","venue","landmark"],"🏙️"],
+    [["deporte","correr","caminar","nadar","jugar","partido","sport","run","walk","swim","play","match","team"],"🏃"],
+    [["ropa","vestir","zapato","camisa","abrigo","uniforme","clothes","clothing","wear","shoe","shirt","coat","uniform"],"👕"]
   ];
   for (const [words, emoji] of groups) if (words.some(word => source.includes(word))) return emoji;
   return "🔎";
@@ -93,7 +93,7 @@ function vocabularyImageSource(english: string, spanish: string, symbol: string)
   };
   const key = art[symbol] ? symbol : symbolToArt[symbol] ?? "🔎";
   const drawing = art[key] ?? art["🔎"];
-  const svg = `<svg xmlns="http://www.w3.org/2000/svg" width="240" height="180" viewBox="0 0 240 180"><defs><linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#e4f3ff"/><stop offset="1" stop-color="#fff0df"/></linearGradient></defs><rect width="240" height="180" rx="25" fill="url(#bg)"/><circle cx="120" cy="91" r="72" fill="#fff" opacity=".72"/>${drawing}<text x="120" y="169" text-anchor="middle" font-size="12" font-weight="700" fill="#29445d" font-family="Arial,sans-serif">${title}</text><text x="120" y="181" text-anchor="middle" font-size="9" fill="#64816f" font-family="Arial,sans-serif">${meaning}</text></svg>`;
+  const svg = `<svg xmlns="http://www.w3.org/2000/svg" width="240" height="180" viewBox="0 0 240 180"><defs><linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#e4f3ff"/><stop offset="1" stop-color="#fff0df"/></linearGradient></defs><rect width="240" height="180" rx="25" fill="url(#bg)"/><circle cx="120" cy="91" r="72" fill="#fff" opacity=".72"/>${drawing}<text x="120" y="163" text-anchor="middle" font-size="12" font-weight="700" fill="#29445d" font-family="Arial,sans-serif">${title}</text><text x="120" y="175" text-anchor="middle" font-size="9" fill="#64816f" font-family="Arial,sans-serif">${meaning}</text></svg>`;
   return `data:image/svg+xml;charset=UTF-8,${encodeURIComponent(svg)}`;
 }
 
