@@ -44,6 +44,8 @@ export default async function B2MissionPage({
         <div className="mt-5">
           <CanonicalMissionFromAsset
             src={`/canonical-missions/b2/${unitFile}`}
+            level="B2"
+            routeKey={mission}
             missionKey={mission}
           />
         </div>
