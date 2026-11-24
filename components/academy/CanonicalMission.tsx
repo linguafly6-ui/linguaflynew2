@@ -2,7 +2,8 @@
 
 import { useEffect, useMemo, useRef, useState } from "react";
 import missionSource from "@/content/canonical-missions/a1/001.json";
-import britishIpa from "@/content/dictionaries/en-GB-ipa.json";
+let britishIpa: Record<string, string> = {};
+let britishIpaPromise: Promise<Record<string, string>> | null = null;
 
 type DictationSegment = { segmentId: string; text: string };
 type Item = { itemId: string; english?: string; spanish?: string; prompt?: string; promptSpanish?: string; translation?: string; optionTranslations?: string[]; answerTranslation?: string; answer?: string; options?: string[]; word?: string; pronunciationGuide?: string; expectedAnswer?: string; kind?: string; audioLocale?: string; audio?: string; repeatCount?: number; segments?: DictationSegment[]; modelAnswer?: string; focus?: string; expectedWordId?: string; gapToken?: string; position: number };
@@ -5668,6 +5669,38 @@ function getSpanishPronunciationGuide(word: string) {
 
 export default function CanonicalMission({ missionData = missionSource as Mission }: { missionData?: Mission }) {
   const mission = missionData;
+  const [, setDictionaryVersion] = useState(0);
+
+  useEffect(() => {
+    let active = true;
+    if (Object.keys(britishIpa).length > 0) {
+      setDictionaryVersion((version) => version + 1);
+      return () => { active = false; };
+    }
+
+    britishIpaPromise ??= fetch("/api/dictionaries/en-GB-ipa")
+      .then((response) => {
+        if (!response.ok) throw new Error(`No se pudo cargar el diccionario IPA (${response.status})`);
+        return response.json() as Promise<Record<string, string>>;
+      })
+      .then((dictionary) => {
+        if (!dictionary || typeof dictionary !== "object" || Array.isArray(dictionary)) {
+          throw new Error("El diccionario IPA recibido no tiene un formato válido");
+        }
+        britishIpa = dictionary;
+        return dictionary;
+      })
+      .catch((error) => {
+        britishIpaPromise = null;
+        throw error;
+      });
+
+    britishIpaPromise
+      .then(() => { if (active) setDictionaryVersion((version) => version + 1); })
+      .catch((error) => { console.error("No se pudo cargar el diccionario de pronunciación:", error); });
+
+    return () => { active = false; };
+  }, []);
   const exploreTranslations = useMemo(() => {
     const normalise = (value: string) => value.toLocaleLowerCase("en-GB").replace(/[“”]/g, '"').replace(/[.!?…]/g, "").replace(/\s+/g, " ").trim();
     const translations = new Map<string, string>();
