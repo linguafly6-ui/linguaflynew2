@@ -39,7 +39,7 @@ const spanish: Record<string, string> = {
   "kilo": "kilo",
   "half a kilo": "medio kilo",
   "How many…?": "¿Cuántos…?",
-  "How much…?": "¿Cuánto…?"
+  "How much…?": "¿Cuánto…?",
   "shopping basket": "cesta de la compra",
   "shopping list": "lista de la compra",
   "customer": "cliente",
