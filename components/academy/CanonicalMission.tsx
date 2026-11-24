@@ -40,6 +40,20 @@ function visualForVocabulary(english: string, spanish: string) {
 const labels: Record<string, string> = { explore: "Exploración", practice: "Práctica", grammar: "Gramática", pronunciation: "Pronunciación", reading: "Lectura", writing: "Escritura", speaking: "Expresión oral", listening: "Comprensión auditiva" };
 
 const PRE_A1_EXAMPLE_TRANSLATIONS: Record<string, string> = {
+  "outdoor": "al aire libre",
+  "forecast": "pronóstico",
+  "poor": "malo",
+  "prepared": "prepararon",
+  "indoor": "interior",
+  "extra": "adicional",
+  "successfully": "con éxito",
+  "organisers": "organizadores",
+  "helping": "ayudar",
+  "relationships": "relaciones",
+  "understanding": "comprensión",
+  "difficulty": "dificultad",
+  "circumstances": "circunstancias",
+  "opinions": "opiniones",
   "Choose the correct example of modals of obligation, advice and permission.": "Elige el ejemplo correcto de los verbos modales de obligación, consejo y permiso.",
   "Choose the correct example of modals of deduction and speculation.": "Elige el ejemplo correcto de los verbos modales de deducción y especulación.",
   "You should listen before giving advice.": "Deberías escuchar antes de dar consejos.",
