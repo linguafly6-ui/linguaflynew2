@@ -1,214 +1,121 @@
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import CanonicalMission, { type Mission } from "@/components/academy/CanonicalMission";
-import mission001 from "@/content/canonical-missions/c1/001.json";
-import mission002 from "@/content/canonical-missions/c1/002.json";
-import mission003 from "@/content/canonical-missions/c1/003.json";
-import mission004 from "@/content/canonical-missions/c1/004.json";
-import mission005 from "@/content/canonical-missions/c1/005.json";
-import mission006 from "@/content/canonical-missions/c1/006.json";
-import mission007 from "@/content/canonical-missions/c1/007.json";
-import mission008 from "@/content/canonical-missions/c1/008.json";
-import mission009 from "@/content/canonical-missions/c1/009.json";
-import mission010 from "@/content/canonical-missions/c1/010.json";
-import mission011 from "@/content/canonical-missions/c1/011.json";
-import mission012 from "@/content/canonical-missions/c1/012.json";
-import mission013 from "@/content/canonical-missions/c1/013.json";
-import mission014 from "@/content/canonical-missions/c1/014.json";
-import mission015 from "@/content/canonical-missions/c1/015.json";
-import mission016 from "@/content/canonical-missions/c1/016.json";
-import mission017 from "@/content/canonical-missions/c1/017.json";
-import mission018 from "@/content/canonical-missions/c1/018.json";
-import mission019 from "@/content/canonical-missions/c1/019.json";
-import mission020 from "@/content/canonical-missions/c1/020.json";
-import mission021 from "@/content/canonical-missions/c1/021.json";
-import mission022 from "@/content/canonical-missions/c1/022.json";
-import mission023 from "@/content/canonical-missions/c1/023.json";
-import mission024 from "@/content/canonical-missions/c1/024.json";
-import mission025 from "@/content/canonical-missions/c1/025.json";
-import mission026 from "@/content/canonical-missions/c1/026.json";
-import mission027 from "@/content/canonical-missions/c1/027.json";
-import mission028 from "@/content/canonical-missions/c1/028.json";
-import mission029 from "@/content/canonical-missions/c1/029.json";
-import mission030 from "@/content/canonical-missions/c1/030.json";
-import mission031 from "@/content/canonical-missions/c1/031.json";
-import mission032 from "@/content/canonical-missions/c1/032.json";
-import mission033 from "@/content/canonical-missions/c1/033.json";
-import mission034 from "@/content/canonical-missions/c1/034.json";
-import mission035 from "@/content/canonical-missions/c1/035.json";
-import mission036 from "@/content/canonical-missions/c1/036.json";
-import mission037 from "@/content/canonical-missions/c1/037.json";
-import mission038 from "@/content/canonical-missions/c1/038.json";
-import mission039 from "@/content/canonical-missions/c1/039.json";
-import mission040 from "@/content/canonical-missions/c1/040.json";
-import mission041 from "@/content/canonical-missions/c1/041.json";
-import mission042 from "@/content/canonical-missions/c1/042.json";
-import mission043 from "@/content/canonical-missions/c1/043.json";
-import mission044 from "@/content/canonical-missions/c1/044.json";
-import mission045 from "@/content/canonical-missions/c1/045.json";
-import mission046 from "@/content/canonical-missions/c1/046.json";
-import mission047 from "@/content/canonical-missions/c1/047.json";
-import mission048 from "@/content/canonical-missions/c1/048.json";
-import mission049 from "@/content/canonical-missions/c1/049.json";
-import mission050 from "@/content/canonical-missions/c1/050.json";
-import mission051 from "@/content/canonical-missions/c1/051.json";
-import mission052 from "@/content/canonical-missions/c1/052.json";
-import mission053 from "@/content/canonical-missions/c1/053.json";
-import mission054 from "@/content/canonical-missions/c1/054.json";
-import mission055 from "@/content/canonical-missions/c1/055.json";
-import mission056 from "@/content/canonical-missions/c1/056.json";
-import mission057 from "@/content/canonical-missions/c1/057.json";
-import mission058 from "@/content/canonical-missions/c1/058.json";
-import mission059 from "@/content/canonical-missions/c1/059.json";
-import mission060 from "@/content/canonical-missions/c1/060.json";
-import mission061 from "@/content/canonical-missions/c1/061.json";
-import mission062 from "@/content/canonical-missions/c1/062.json";
-import mission063 from "@/content/canonical-missions/c1/063.json";
-import mission064 from "@/content/canonical-missions/c1/064.json";
-import mission065 from "@/content/canonical-missions/c1/065.json";
-import mission066 from "@/content/canonical-missions/c1/066.json";
-import mission067 from "@/content/canonical-missions/c1/067.json";
-import mission068 from "@/content/canonical-missions/c1/068.json";
-import mission069 from "@/content/canonical-missions/c1/069.json";
-import mission070 from "@/content/canonical-missions/c1/070.json";
-import mission071 from "@/content/canonical-missions/c1/071.json";
-import mission072 from "@/content/canonical-missions/c1/072.json";
-import mission073 from "@/content/canonical-missions/c1/073.json";
-import mission074 from "@/content/canonical-missions/c1/074.json";
-import mission075 from "@/content/canonical-missions/c1/075.json";
-import mission076 from "@/content/canonical-missions/c1/076.json";
-import mission077 from "@/content/canonical-missions/c1/077.json";
-import mission078 from "@/content/canonical-missions/c1/078.json";
-import mission079 from "@/content/canonical-missions/c1/079.json";
-import mission080 from "@/content/canonical-missions/c1/080.json";
-import mission081 from "@/content/canonical-missions/c1/081.json";
-import mission082 from "@/content/canonical-missions/c1/082.json";
-import mission083 from "@/content/canonical-missions/c1/083.json";
-import mission084 from "@/content/canonical-missions/c1/084.json";
-import mission085 from "@/content/canonical-missions/c1/085.json";
-import mission086 from "@/content/canonical-missions/c1/086.json";
-import mission087 from "@/content/canonical-missions/c1/087.json";
-import mission088 from "@/content/canonical-missions/c1/088.json";
-import mission089 from "@/content/canonical-missions/c1/089.json";
-import mission090 from "@/content/canonical-missions/c1/090.json";
-import mission091 from "@/content/canonical-missions/c1/091.json";
-import mission092 from "@/content/canonical-missions/c1/092.json";
-import mission093 from "@/content/canonical-missions/c1/093.json";
-import mission094 from "@/content/canonical-missions/c1/094.json";
-import mission095 from "@/content/canonical-missions/c1/095.json";
-import mission096 from "@/content/canonical-missions/c1/096.json";
-import mission097 from "@/content/canonical-missions/c1/097.json";
-import mission098 from "@/content/canonical-missions/c1/098.json";
-import mission099 from "@/content/canonical-missions/c1/099.json";
-import mission100 from "@/content/canonical-missions/c1/100.json";
 
-const missions: Record<string, Mission> = {
-  "001": mission001 as Mission,
-  "002": mission002 as Mission,
-  "003": mission003 as Mission,
-  "004": mission004 as Mission,
-  "005": mission005 as Mission,
-  "006": mission006 as Mission,
-  "007": mission007 as Mission,
-  "008": mission008 as Mission,
-  "009": mission009 as Mission,
-  "010": mission010 as Mission,
-  "011": mission011 as Mission,
-  "012": mission012 as Mission,
-  "013": mission013 as Mission,
-  "014": mission014 as Mission,
-  "015": mission015 as Mission,
-  "016": mission016 as Mission,
-  "017": mission017 as Mission,
-  "018": mission018 as Mission,
-  "019": mission019 as Mission,
-  "020": mission020 as Mission,
-  "021": mission021 as Mission,
-  "022": mission022 as Mission,
-  "023": mission023 as Mission,
-  "024": mission024 as Mission,
-  "025": mission025 as Mission,
-  "026": mission026 as Mission,
-  "027": mission027 as Mission,
-  "028": mission028 as Mission,
-  "029": mission029 as Mission,
-  "030": mission030 as Mission,
-  "031": mission031 as Mission,
-  "032": mission032 as Mission,
-  "033": mission033 as Mission,
-  "034": mission034 as Mission,
-  "035": mission035 as Mission,
-  "036": mission036 as Mission,
-  "037": mission037 as Mission,
-  "038": mission038 as Mission,
-  "039": mission039 as Mission,
-  "040": mission040 as Mission,
-  "041": mission041 as Mission,
-  "042": mission042 as Mission,
-  "043": mission043 as Mission,
-  "044": mission044 as Mission,
-  "045": mission045 as Mission,
-  "046": mission046 as Mission,
-  "047": mission047 as Mission,
-  "048": mission048 as Mission,
-  "049": mission049 as Mission,
-  "050": mission050 as Mission,
-  "051": mission051 as Mission,
-  "052": mission052 as Mission,
-  "053": mission053 as Mission,
-  "054": mission054 as Mission,
-  "055": mission055 as Mission,
-  "056": mission056 as Mission,
-  "057": mission057 as Mission,
-  "058": mission058 as Mission,
-  "059": mission059 as Mission,
-  "060": mission060 as Mission,
-  "061": mission061 as Mission,
-  "062": mission062 as Mission,
-  "063": mission063 as Mission,
-  "064": mission064 as Mission,
-  "065": mission065 as Mission,
-  "066": mission066 as Mission,
-  "067": mission067 as Mission,
-  "068": mission068 as Mission,
-  "069": mission069 as Mission,
-  "070": mission070 as Mission,
-  "071": mission071 as Mission,
-  "072": mission072 as Mission,
-  "073": mission073 as Mission,
-  "074": mission074 as Mission,
-  "075": mission075 as Mission,
-  "076": mission076 as Mission,
-  "077": mission077 as Mission,
-  "078": mission078 as Mission,
-  "079": mission079 as Mission,
-  "080": mission080 as Mission,
-  "081": mission081 as Mission,
-  "082": mission082 as Mission,
-  "083": mission083 as Mission,
-  "084": mission084 as Mission,
-  "085": mission085 as Mission,
-  "086": mission086 as Mission,
-  "087": mission087 as Mission,
-  "088": mission088 as Mission,
-  "089": mission089 as Mission,
-  "090": mission090 as Mission,
-  "091": mission091 as Mission,
-  "092": mission092 as Mission,
-  "093": mission093 as Mission,
-  "094": mission094 as Mission,
-  "095": mission095 as Mission,
-  "096": mission096 as Mission,
-  "097": mission097 as Mission,
-  "098": mission098 as Mission,
-  "099": mission099 as Mission,
-  "100": mission100 as Mission,
+const missionLoaders: Record<string, () => Promise<Mission>> = {
+  "001": async () => (await import("@/content/canonical-missions/c1/001.json")).default as Mission,
+  "002": async () => (await import("@/content/canonical-missions/c1/002.json")).default as Mission,
+  "003": async () => (await import("@/content/canonical-missions/c1/003.json")).default as Mission,
+  "004": async () => (await import("@/content/canonical-missions/c1/004.json")).default as Mission,
+  "005": async () => (await import("@/content/canonical-missions/c1/005.json")).default as Mission,
+  "006": async () => (await import("@/content/canonical-missions/c1/006.json")).default as Mission,
+  "007": async () => (await import("@/content/canonical-missions/c1/007.json")).default as Mission,
+  "008": async () => (await import("@/content/canonical-missions/c1/008.json")).default as Mission,
+  "009": async () => (await import("@/content/canonical-missions/c1/009.json")).default as Mission,
+  "010": async () => (await import("@/content/canonical-missions/c1/010.json")).default as Mission,
+  "011": async () => (await import("@/content/canonical-missions/c1/011.json")).default as Mission,
+  "012": async () => (await import("@/content/canonical-missions/c1/012.json")).default as Mission,
+  "013": async () => (await import("@/content/canonical-missions/c1/013.json")).default as Mission,
+  "014": async () => (await import("@/content/canonical-missions/c1/014.json")).default as Mission,
+  "015": async () => (await import("@/content/canonical-missions/c1/015.json")).default as Mission,
+  "016": async () => (await import("@/content/canonical-missions/c1/016.json")).default as Mission,
+  "017": async () => (await import("@/content/canonical-missions/c1/017.json")).default as Mission,
+  "018": async () => (await import("@/content/canonical-missions/c1/018.json")).default as Mission,
+  "019": async () => (await import("@/content/canonical-missions/c1/019.json")).default as Mission,
+  "020": async () => (await import("@/content/canonical-missions/c1/020.json")).default as Mission,
+  "021": async () => (await import("@/content/canonical-missions/c1/021.json")).default as Mission,
+  "022": async () => (await import("@/content/canonical-missions/c1/022.json")).default as Mission,
+  "023": async () => (await import("@/content/canonical-missions/c1/023.json")).default as Mission,
+  "024": async () => (await import("@/content/canonical-missions/c1/024.json")).default as Mission,
+  "025": async () => (await import("@/content/canonical-missions/c1/025.json")).default as Mission,
+  "026": async () => (await import("@/content/canonical-missions/c1/026.json")).default as Mission,
+  "027": async () => (await import("@/content/canonical-missions/c1/027.json")).default as Mission,
+  "028": async () => (await import("@/content/canonical-missions/c1/028.json")).default as Mission,
+  "029": async () => (await import("@/content/canonical-missions/c1/029.json")).default as Mission,
+  "030": async () => (await import("@/content/canonical-missions/c1/030.json")).default as Mission,
+  "031": async () => (await import("@/content/canonical-missions/c1/031.json")).default as Mission,
+  "032": async () => (await import("@/content/canonical-missions/c1/032.json")).default as Mission,
+  "033": async () => (await import("@/content/canonical-missions/c1/033.json")).default as Mission,
+  "034": async () => (await import("@/content/canonical-missions/c1/034.json")).default as Mission,
+  "035": async () => (await import("@/content/canonical-missions/c1/035.json")).default as Mission,
+  "036": async () => (await import("@/content/canonical-missions/c1/036.json")).default as Mission,
+  "037": async () => (await import("@/content/canonical-missions/c1/037.json")).default as Mission,
+  "038": async () => (await import("@/content/canonical-missions/c1/038.json")).default as Mission,
+  "039": async () => (await import("@/content/canonical-missions/c1/039.json")).default as Mission,
+  "040": async () => (await import("@/content/canonical-missions/c1/040.json")).default as Mission,
+  "041": async () => (await import("@/content/canonical-missions/c1/041.json")).default as Mission,
+  "042": async () => (await import("@/content/canonical-missions/c1/042.json")).default as Mission,
+  "043": async () => (await import("@/content/canonical-missions/c1/043.json")).default as Mission,
+  "044": async () => (await import("@/content/canonical-missions/c1/044.json")).default as Mission,
+  "045": async () => (await import("@/content/canonical-missions/c1/045.json")).default as Mission,
+  "046": async () => (await import("@/content/canonical-missions/c1/046.json")).default as Mission,
+  "047": async () => (await import("@/content/canonical-missions/c1/047.json")).default as Mission,
+  "048": async () => (await import("@/content/canonical-missions/c1/048.json")).default as Mission,
+  "049": async () => (await import("@/content/canonical-missions/c1/049.json")).default as Mission,
+  "050": async () => (await import("@/content/canonical-missions/c1/050.json")).default as Mission,
+  "051": async () => (await import("@/content/canonical-missions/c1/051.json")).default as Mission,
+  "052": async () => (await import("@/content/canonical-missions/c1/052.json")).default as Mission,
+  "053": async () => (await import("@/content/canonical-missions/c1/053.json")).default as Mission,
+  "054": async () => (await import("@/content/canonical-missions/c1/054.json")).default as Mission,
+  "055": async () => (await import("@/content/canonical-missions/c1/055.json")).default as Mission,
+  "056": async () => (await import("@/content/canonical-missions/c1/056.json")).default as Mission,
+  "057": async () => (await import("@/content/canonical-missions/c1/057.json")).default as Mission,
+  "058": async () => (await import("@/content/canonical-missions/c1/058.json")).default as Mission,
+  "059": async () => (await import("@/content/canonical-missions/c1/059.json")).default as Mission,
+  "060": async () => (await import("@/content/canonical-missions/c1/060.json")).default as Mission,
+  "061": async () => (await import("@/content/canonical-missions/c1/061.json")).default as Mission,
+  "062": async () => (await import("@/content/canonical-missions/c1/062.json")).default as Mission,
+  "063": async () => (await import("@/content/canonical-missions/c1/063.json")).default as Mission,
+  "064": async () => (await import("@/content/canonical-missions/c1/064.json")).default as Mission,
+  "065": async () => (await import("@/content/canonical-missions/c1/065.json")).default as Mission,
+  "066": async () => (await import("@/content/canonical-missions/c1/066.json")).default as Mission,
+  "067": async () => (await import("@/content/canonical-missions/c1/067.json")).default as Mission,
+  "068": async () => (await import("@/content/canonical-missions/c1/068.json")).default as Mission,
+  "069": async () => (await import("@/content/canonical-missions/c1/069.json")).default as Mission,
+  "070": async () => (await import("@/content/canonical-missions/c1/070.json")).default as Mission,
+  "071": async () => (await import("@/content/canonical-missions/c1/071.json")).default as Mission,
+  "072": async () => (await import("@/content/canonical-missions/c1/072.json")).default as Mission,
+  "073": async () => (await import("@/content/canonical-missions/c1/073.json")).default as Mission,
+  "074": async () => (await import("@/content/canonical-missions/c1/074.json")).default as Mission,
+  "075": async () => (await import("@/content/canonical-missions/c1/075.json")).default as Mission,
+  "076": async () => (await import("@/content/canonical-missions/c1/076.json")).default as Mission,
+  "077": async () => (await import("@/content/canonical-missions/c1/077.json")).default as Mission,
+  "078": async () => (await import("@/content/canonical-missions/c1/078.json")).default as Mission,
+  "079": async () => (await import("@/content/canonical-missions/c1/079.json")).default as Mission,
+  "080": async () => (await import("@/content/canonical-missions/c1/080.json")).default as Mission,
+  "081": async () => (await import("@/content/canonical-missions/c1/081.json")).default as Mission,
+  "082": async () => (await import("@/content/canonical-missions/c1/082.json")).default as Mission,
+  "083": async () => (await import("@/content/canonical-missions/c1/083.json")).default as Mission,
+  "084": async () => (await import("@/content/canonical-missions/c1/084.json")).default as Mission,
+  "085": async () => (await import("@/content/canonical-missions/c1/085.json")).default as Mission,
+  "086": async () => (await import("@/content/canonical-missions/c1/086.json")).default as Mission,
+  "087": async () => (await import("@/content/canonical-missions/c1/087.json")).default as Mission,
+  "088": async () => (await import("@/content/canonical-missions/c1/088.json")).default as Mission,
+  "089": async () => (await import("@/content/canonical-missions/c1/089.json")).default as Mission,
+  "090": async () => (await import("@/content/canonical-missions/c1/090.json")).default as Mission,
+  "091": async () => (await import("@/content/canonical-missions/c1/091.json")).default as Mission,
+  "092": async () => (await import("@/content/canonical-missions/c1/092.json")).default as Mission,
+  "093": async () => (await import("@/content/canonical-missions/c1/093.json")).default as Mission,
+  "094": async () => (await import("@/content/canonical-missions/c1/094.json")).default as Mission,
+  "095": async () => (await import("@/content/canonical-missions/c1/095.json")).default as Mission,
+  "096": async () => (await import("@/content/canonical-missions/c1/096.json")).default as Mission,
+  "097": async () => (await import("@/content/canonical-missions/c1/097.json")).default as Mission,
+  "098": async () => (await import("@/content/canonical-missions/c1/098.json")).default as Mission,
+  "099": async () => (await import("@/content/canonical-missions/c1/099.json")).default as Mission,
+  "100": async () => (await import("@/content/canonical-missions/c1/100.json")).default as Mission,
 };
+
+async function loadMission(mission: string): Promise<Mission | undefined> {
+  const loader = missionLoaders[mission];
+  return loader ? loader() : undefined;
+}
 
 export const dynamicParams = false;
 
 export function generateStaticParams() {
-  return Object.keys(missions).map((mission) => ({ mission }));
+  return Array.from({ length: 100 }, (_, index) => ({
+    mission: String(index + 1).padStart(3, "0"),
+  }));
 }
 
 export async function generateMetadata({
@@ -217,7 +124,7 @@ export async function generateMetadata({
   params: Promise<{ mission: string }>;
 }) {
   const { mission } = await params;
-  const data = missions[mission];
+  const data = await loadMission(mission);
 
   if (!data) return {};
 
@@ -234,7 +141,7 @@ export default async function C1MissionPage({
   params: Promise<{ mission: string }>;
 }) {
   const { mission } = await params;
-  const data = missions[mission];
+  const data = await loadMission(mission);
 
   if (!data) notFound();
 
