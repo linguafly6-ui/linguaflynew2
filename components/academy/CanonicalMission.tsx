@@ -3303,8 +3303,8 @@ export default function CanonicalMission({ missionData = missionSource as Missio
   const [hoveredWord, setHoveredWord] = useState<string | null>(null);
   const renderTranslatedWords = (text?: string, translationOverride?: string) => {
     if (!text) return text;
-    // Translate está disponible en Gramática, Práctica, Lectura y todos los textos de Expresión oral.
-    if (!["grammar", "practice", "reading", "speaking"].includes(sectionKey)) return text;
+    // Translate está disponible en Gramática, Práctica, Lectura, Expresión oral y Comprensión auditiva.
+    if (!["grammar", "practice", "reading", "speaking", "listening"].includes(sectionKey)) return text;
     // Si existe traducción de la expresión completa (patrones y ejemplos), mostrarla
     // como tooltip; después, para el resto del texto, traducir palabra por palabra.
     const phraseKey = text.toLocaleLowerCase("en-GB").replace(/[“”]/g, '"').replace(/[.!?…]/g, "").replace(/\s+/g, " ").trim();
