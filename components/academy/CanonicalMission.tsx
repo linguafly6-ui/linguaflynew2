@@ -6298,50 +6298,32 @@ export default function CanonicalMission({ missionData = missionSource as Missio
 
           {((section.exercise.theory?.title || section.exercise.theory?.explanation || (section.exercise.theory?.patterns?.length ?? 0) > 0) || (section.exercise.lesson?.grammar?.length ?? 0) > 0) && <section>
             <div className="mb-4"><p className="text-[10px] font-bold uppercase tracking-[.17em] text-[#8290a3]">03 · GRAMÁTICA</p><h3 className="mt-1 text-lg font-semibold text-[#26364b]">{renderTranslatedWords(section.exercise.theory?.title ?? "Gramática de la misión")}</h3><p className="mt-1 text-sm leading-6 text-[#7b8798]">{renderTranslatedWords(section.exercise.theory?.explanation)}</p></div>
-          {mission.course.level === "C1" ? (
-            (section.exercise.lesson?.grammar?.length ?? 0) > 0 && <section>
-              <div className="mb-4"><p className="text-[10px] font-bold uppercase tracking-[.17em] text-[#8290a3]">02 · GRAMÁTICA</p><h3 className="mt-1 text-lg font-semibold text-[#26364b]">Gramática de la misión</h3><p className="mt-1 text-sm leading-6 text-[#7b8798]">Estas son las estructuras gramaticales que trabajarás en esta misión.</p></div>
-              <div className="grid gap-3 sm:grid-cols-2">
-                {(section.exercise.lesson?.grammar ?? []).map((entry, i) => <article key={i} className="rounded-xl border border-[#e8ebf0] bg-white p-4">
-                  <p className="font-semibold text-[#26364b]">{entry.english}</p><p className="mt-1 text-sm font-medium text-[#64816f]">{resolveSpanish(entry.english, entry.spanish)}</p>{entry.note && <p className="mt-1 text-xs leading-5 text-[#8290a3]">{entry.note}</p>}{entry.note && getExampleTranslation(entry.note) && <p className="mt-1 text-xs leading-5 text-[#64816f]">{getExampleTranslation(entry.note)}</p>}
-                  <button type="button" onClick={() => speak(entry.english)} className="mt-2 text-xs font-semibold text-[#55708f]">♫ Escuchar ejemplo</button>
-                </article>)}
-              </div>
-            </section>
-          ) : (
-((section.exercise.theory?.title || section.exercise.theory?.explanation || (section.exercise.theory?.patterns?.length ?? 0) > 0) || (section.exercise.lesson?.grammar?.length ?? 0) > 0) && <section>
-            <div className="mb-4"><p className="text-[10px] font-bold uppercase tracking-[.17em] text-[#8290a3]">03 · GRAMÁTICA</p><h3 className="mt-1 text-lg font-semibold text-[#26364b]">{section.exercise.theory?.title ?? "Gramática de la misión"}</h3><p className="mt-1 text-sm leading-6 text-[#7b8798]">{section.exercise.theory?.explanation}</p></div>
             <div className="grid gap-3 sm:grid-cols-2">
               {(section.exercise.theory?.patterns ?? []).filter(Boolean).map((pattern, i) => <article key={typeof pattern === "string" ? pattern : pattern.label ?? pattern.pattern ?? i} className="rounded-xl border border-[#e8ebf0] bg-[#fbfcfe] p-4">
                 {typeof pattern !== "string" && pattern.label && <p className="text-xs font-bold uppercase tracking-wide text-[#55779d]">{renderTranslatedWords(pattern.label)}{getExampleTranslation(pattern.label) && <span className="mt-1 block text-[11px] font-medium normal-case tracking-normal text-[#64816f]">{getExampleTranslation(pattern.label)}</span>}</p>}
-                <p className="mt-2 font-semibold text-[#26364b]">{typeof pattern === "string" ? pattern : pattern.pattern}</p>{typeof pattern !== "string" && (pattern.translation ?? getExampleTranslation(pattern.pattern)) && <p className="mt-1 text-sm text-[#47745b]">{pattern.translation ?? getExampleTranslation(pattern.pattern)}</p>}
-                {typeof pattern !== "string" && pattern.examples?.length ? (
-                  <ul className="mt-3 space-y-2">
-                    {pattern.examples.map((example, exampleIndex) => {
-                      const inlineTranslation = example.match(/^(.+?)\\s+[—–]\\s+(.+)$/);
-                      const displayedExample = inlineTranslation?.[1] ?? example;
-                      const translation = pattern.exampleTranslations?.[exampleIndex] ?? getExampleTranslation(displayedExample) ?? inlineTranslation?.[2];
-                      return (
-                        <li key={example + exampleIndex} className="list-none rounded-xl border border-[#e8edf3] bg-white p-3">
-                          <p className="font-semibold leading-6 text-[#26364b]">{renderTranslatedWords(displayedExample)}</p>
-                          {translation ? <p className="mt-1 text-sm leading-6 text-[#47745b]">{translation}</p> : <p className="mt-1 text-xs text-amber-700">Traducción pendiente de revisión académica.</p>}
-                          <button type="button" aria-label={`Escuchar ${displayedExample}`} onClick={() => speak(displayedExample)} className="mt-2 rounded-full border border-[#dce6f0] px-3 py-1.5 text-xs font-semibold text-[#55708f]">♫ Escuchar</button>
-                        </li>
-                      );
-                    })}
-                  </ul>
-                ) : null}
+                <p className="mt-2 font-semibold text-[#26364b]">{typeof pattern === "string" ? renderTranslatedWords(pattern) : renderTranslatedWords(pattern.pattern)}</p>
+                {typeof pattern !== "string" && (pattern.translation ?? getExampleTranslation(pattern.pattern)) && <p className="mt-1 text-sm text-[#47745b]">{pattern.translation ?? getExampleTranslation(pattern.pattern)}</p>}
+                {typeof pattern !== "string" && pattern.examples?.length ? <ul className="mt-3 space-y-2">{pattern.examples.map((example, exampleIndex) => {
+                  const inlineTranslation = example.match(/^(.+?)\s+[—–]\s+(.+)$/);
+                  const displayedExample = inlineTranslation?.[1] ?? example;
+                  const translation = pattern.exampleTranslations?.[exampleIndex] ?? getExampleTranslation(displayedExample) ?? inlineTranslation?.[2];
+                  return <li key={example + exampleIndex} className="list-none rounded-xl border border-[#e8edf3] bg-white p-3">
+                    <p className="font-semibold leading-6 text-[#26364b]">{renderTranslatedWords(displayedExample)}</p>
+                    {translation ? <p className="mt-1 text-sm leading-6 text-[#47745b]">{translation}</p> : <p className="mt-1 text-xs text-amber-700">Traducción pendiente de revisión académica.</p>}
+                    <button type="button" aria-label={`Escuchar ${displayedExample}`} onClick={() => speak(displayedExample)} className="mt-2 rounded-full border border-[#dce6f0] px-3 py-1.5 text-xs font-semibold text-[#55708f]">♫ Escuchar</button>
+                  </li>;
+                })}</ul> : null}
               </article>)}
             </div>
-            <div className="mt-3 grid gap-3 sm:grid-cols-2">
-              {(section.exercise.lesson?.grammar ?? []).map((entry,i) => <article key={i} className="rounded-xl border border-[#e8ebf0] bg-white p-4">
-                <p className="font-semibold text-[#26364b]">{renderTranslatedWords(entry.english)}</p><p className="mt-1 text-sm font-medium text-[#64816f]">{resolveSpanish(entry.english, entry.spanish)}</p>{entry.note && <p className="mt-1 text-xs leading-5 text-[#8290a3]">{entry.note}</p>}
+            {(section.exercise.lesson?.grammar?.length ?? 0) > 0 && <div className="mt-3 grid gap-3 sm:grid-cols-2">
+              {(section.exercise.lesson?.grammar ?? []).map((entry, i) => <article key={i} className="rounded-xl border border-[#e8ebf0] bg-white p-4">
+                <p className="font-semibold text-[#26364b]">{renderTranslatedWords(entry.english)}</p><p className="mt-1 text-sm font-medium text-[#64816f]">{resolveSpanish(entry.english, entry.spanish)}</p>{entry.note && <p className="mt-1 text-xs leading-5 text-[#8290a3]">{entry.note}</p>}{entry.note && getExampleTranslation(entry.note) && <p className="mt-1 text-xs leading-5 text-[#64816f]">{getExampleTranslation(entry.note)}</p>}
                 <button type="button" onClick={() => speak(entry.english)} className="mt-2 text-xs font-semibold text-[#55708f]">♫ Escuchar ejemplo</button>
               </article>)}
-            </div>
-            {section.exercise.theory?.tip && <p className="mt-3 rounded-xl bg-[#f3f7fb] p-4 text-sm leading-6 text-[#53657b]"><strong>Recuerda:</strong> {section.exercise.theory.tip}</p>}
+            </div>}
+            {section.exercise.theory?.tip && <p className="mt-3 rounded-xl bg-[#f3f7fb] p-4 text-sm leading-6 text-[#53657b]"><strong>Recuerda:</strong> {renderTranslatedWords(section.exercise.theory.tip)}</p>}
           </section>}
-
+          
           {!isB1Mission && (mission.sections.find(s => s.sectionKey === "pronunciation")?.exercise.items.length ?? 0) > 0 && <section>
           </section>
           )}
