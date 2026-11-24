@@ -6324,9 +6324,6 @@ export default function CanonicalMission({ missionData = missionSource as Missio
             {section.exercise.theory?.tip && <p className="mt-3 rounded-xl bg-[#f3f7fb] p-4 text-sm leading-6 text-[#53657b]"><strong>Recuerda:</strong> {renderTranslatedWords(section.exercise.theory.tip)}</p>}
           </section>}
           
-          {!isB1Mission && (mission.sections.find(s => s.sectionKey === "pronunciation")?.exercise.items.length ?? 0) > 0 && <section>
-          </section>
-          )}
           {mission.course.level !== "C1" && (mission.sections.find(s => s.sectionKey === "pronunciation")?.exercise.items.length ?? 0) > 0 && <section>
             <div className="mb-4"><p className="text-[10px] font-bold uppercase tracking-[.17em] text-[#8290a3]">04 · PRONUNCIACIÓN</p><h3 className="mt-1 text-lg font-semibold text-[#26364b]">Así suenan las palabras</h3><p className="mt-1 text-sm text-[#7b8798]">La guía está adaptada a hispanohablantes; las MAYÚSCULAS marcan la sílaba tónica. Es aproximada, no AFI.</p></div>
             <div className="grid gap-3 sm:grid-cols-2 lg:grid-cols-3">
@@ -6337,19 +6334,16 @@ export default function CanonicalMission({ missionData = missionSource as Missio
             </div>
           </section>}
 
-          {!isB1Mission && (section.exercise.lesson?.reading?.length ?? 0) > 0 && <section>
           {mission.course.level !== "C1" && (section.exercise.lesson?.reading?.length ?? 0) > 0 && <section>
             <div className="mb-4"><p className="text-[10px] font-bold uppercase tracking-[.17em] text-[#8290a3]">05 · LECTURA</p><h3 className="mt-1 text-lg font-semibold text-[#26364b]">Lee y comprende el texto</h3><p className="mt-1 text-sm text-[#7b8798]">El texto se presenta en inglés con apoyo en español. Las frases clave y los modelos aparecen traducidos para que puedas comprenderlos antes de responder.</p></div>
             <div className="space-y-2">{(section.exercise.lesson?.reading ?? []).map((entry,i) => <article key={i} className="grid gap-1 rounded-xl border border-[#e8ebf0] bg-white p-4 sm:grid-cols-2 sm:gap-4"><p className="font-medium text-[#26364b]">{renderTranslatedWords(entry.english)}</p><p className="text-sm text-[#64816f]">{resolveSpanish(entry.english, entry.spanish)}</p></article>)}</div>
           </section>}
 
-          {!isB1Mission && (section.exercise.lesson?.writing?.length ?? 0) > 0 && <section>
           {mission.course.level !== "C1" && (section.exercise.lesson?.writing?.length ?? 0) > 0 && <section>
             <div className="mb-4"><p className="text-[10px] font-bold uppercase tracking-[.17em] text-[#8290a3]">06 · ESCRITURA</p><h3 className="mt-1 text-lg font-semibold text-[#26364b]">Frases del dictado</h3><p className="mt-1 text-sm text-[#7b8798]">Estas son exactamente las frases que escucharás y escribirás en la actividad.</p></div>
             <div className="grid gap-2 sm:grid-cols-2">{(section.exercise.lesson?.writing ?? []).map((entry,i) => <article key={i} className="rounded-xl border border-[#e8ebf0] bg-white p-4"><p className="font-semibold text-[#26364b]">{renderTranslatedWords(entry.english)}</p><p className="mt-1 text-sm text-[#64816f]">{resolveSpanish(entry.english, entry.spanish)}</p><button type="button" onClick={() => speak(entry.english)} className="mt-2 text-xs font-semibold text-[#55708f]">♫ Escuchar frase</button></article>)}</div>
           </section>}
 
-          {!isB1Mission && (section.exercise.lesson?.speaking?.length ?? 0) > 0 && <section>
           {mission.course.level !== "C1" && (section.exercise.lesson?.speaking?.length ?? 0) > 0 && <section>
             <div className="mb-4"><p className="text-[10px] font-bold uppercase tracking-[.17em] text-[#8290a3]">07 · EXPRESIÓN ORAL</p><h3 className="mt-1 text-lg font-semibold text-[#26364b]">Lo que podrás decir</h3><p className="mt-1 text-sm text-[#7b8798]">Primero entiende la consigna y aprende una posible respuesta.</p></div>
             <div className="grid gap-3 sm:grid-cols-2">{(section.exercise.lesson?.speaking ?? []).map((entry,i) => <article key={i} className="rounded-xl border border-[#e8ebf0] bg-white p-4">
@@ -6357,7 +6351,6 @@ export default function CanonicalMission({ missionData = missionSource as Missio
             </article>)}</div>
           </section>}
 
-          {!isB1Mission && (section.exercise.lesson?.listening?.length ?? 0) > 0 && <section>
           {mission.course.level !== "C1" && (section.exercise.lesson?.listening?.length ?? 0) > 0 && <section>
             <div className="mb-4"><p className="text-[10px] font-bold uppercase tracking-[.17em] text-[#8290a3]">08 · COMPRENSIÓN AUDITIVA</p><h3 className="mt-1 text-lg font-semibold text-[#26364b]">Escucha el contenido antes del ejercicio</h3><p className="mt-1 text-sm text-[#7b8798]">Consulta el diálogo y su apoyo en español. Las expresiones nuevas se presentan traducidas antes de escucharlas.</p></div>
             <div className="mb-3 rounded-xl border border-[#dce8f4] bg-[#f3f8fd] p-4"><p className="text-xs font-bold uppercase tracking-wide text-[#55779d]">Audio completo</p><button type="button" onClick={() => speak(mission.sections.find(s => s.sectionKey === "listening")?.exercise.content?.audioTranscript?.replace(/^tts:en-GB:/,"") ?? "")} className="mt-2 rounded-full border border-[#dce6f0] bg-white px-3 py-2 text-xs font-semibold text-[#55708f]">♫ Escuchar audio modelo</button></div>
@@ -6367,7 +6360,6 @@ export default function CanonicalMission({ missionData = missionSource as Missio
             <div className="mb-4"><p className="text-[10px] font-bold uppercase tracking-[.17em] text-[#8290a3]">09 · EJEMPLOS EN CONTEXTO</p><h3 className="mt-1 text-lg font-semibold text-[#26364b]">El inglés en situaciones reales</h3><p className="mt-1 text-sm text-[#7b8798]">Observa cómo se combinan las palabras y estructuras de la misión.</p></div>
             <div className="grid gap-2 sm:grid-cols-2">{(section.exercise.lesson?.examples ?? []).map((entry,i) => <article key={i} className="rounded-xl border border-[#e8ebf0] bg-white p-4"><p className="font-semibold text-[#26364b]">{renderTranslatedWords(entry.english)}</p><p className="mt-1 text-sm text-[#64816f]">{resolveSpanish(entry.english, entry.spanish)}</p>{entry.note && <p className="mt-2 text-xs leading-5 text-[#8290a3]">{entry.note}</p>}<button type="button" onClick={() => speak(entry.english)} className="mt-2 text-xs font-semibold text-[#55708f]">♫ Escuchar ejemplo</button></article>)}</div>
           </section>}
-          {!isB1Mission && (section.exercise.lesson?.communication?.length ?? 0) > 0 && <section>
           {mission.course.level !== "C1" && (section.exercise.lesson?.examples?.length ?? 0) > 0 && <section>
             <div className="mb-4"><p className="text-[10px] font-bold uppercase tracking-[.17em] text-[#8290a3]">09 · EJEMPLOS EN CONTEXTO</p><h3 className="mt-1 text-lg font-semibold text-[#26364b]">El inglés en situaciones reales</h3><p className="mt-1 text-sm text-[#7b8798]">Observa cómo se combinan las palabras y estructuras de la misión.</p></div>
             <div className="grid gap-2 sm:grid-cols-2">{(section.exercise.lesson?.examples ?? []).map((entry,i) => <article key={i} className="rounded-xl border border-[#e8ebf0] bg-white p-4"><p className="font-semibold text-[#26364b]">{renderTranslatedWords(entry.english)}</p><p className="mt-1 text-sm text-[#64816f]">{resolveSpanish(entry.english, entry.spanish)}</p>{entry.note && <p className="mt-2 text-xs leading-5 text-[#8290a3]">{entry.note}</p>}<button type="button" onClick={() => speak(entry.english)} className="mt-2 text-xs font-semibold text-[#55708f]">♫ Escuchar ejemplo</button></article>)}</div>
