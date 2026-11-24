@@ -40,6 +40,7 @@ function visualForVocabulary(english: string, spanish: string) {
 const labels: Record<string, string> = { explore: "Exploración", practice: "Práctica", grammar: "Gramática", pronunciation: "Pronunciación", reading: "Lectura", writing: "Escritura", speaking: "Expresión oral", listening: "Comprensión auditiva" };
 
 const PRE_A1_EXAMPLE_TRANSLATIONS: Record<string, string> = {
+  "arts": "artes",
   "challenge": "reto",
   "recipe": "receta",
   "gives": "da",
