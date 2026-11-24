@@ -22,7 +22,7 @@ export default function A1CurriculumPreviewPage() {
           <h1 className="mt-3 text-3xl font-black sm:text-5xl">Currículo A1 · Misiones 001–080</h1>
           <p className="mt-4 max-w-3xl text-base leading-7 text-indigo-100">Vista de integración para revisar la estructura de las misiones, sus ocho secciones y la progresión del primer tramo del curso.</p>
           <div className="mt-6 flex flex-wrap gap-2 text-xs font-bold">
-            <span className="rounded-full bg-white/15 px-3 py-2">69 misiones</span>
+            <span className="rounded-full bg-white/15 px-3 py-2">80 misiones</span>
             <span className="rounded-full bg-white/15 px-3 py-2">8 secciones por misión</span>
             <span className="rounded-full bg-amber-300/20 px-3 py-2 text-amber-100">Contenido en revisión</span>
           </div>
@@ -50,7 +50,7 @@ export default function A1CurriculumPreviewPage() {
 
         <section className="mt-10">
           <div className="flex flex-wrap items-end justify-between gap-3">
-            <div><p className="text-xs font-bold uppercase tracking-[.16em] text-indigo-700">Fichas curriculares propuestas</p><h2 className="mt-1 text-2xl font-black text-slate-950">Misiones 003–080</h2></div>
+            <div><p className="text-xs font-bold uppercase tracking-[.16em] text-indigo-700">Fichas curriculares propuestas</p><h2 className="mt-1 text-2xl font-black text-slate-950">Misiones 003–069 y 071–080</h2></div>
             <span className="text-sm text-slate-500">77 fichas para revisión</span>
           </div>
           <div className="mt-4 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
