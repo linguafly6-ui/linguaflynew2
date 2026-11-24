@@ -72,6 +72,56 @@ const spanish: Record<string, string> = {
 "often":"a menudo","hardly ever":"casi nunca","How often":"con qué frecuencia","Do you…?":"¿Tú…?","Does he…?":"¿Él…?","start work":"empezar a trabajar","finish school":"terminar las clases","at seven":"a las siete","weekday":"día laborable","weekend":"fin de semana","Monday morning":"lunes por la mañana","Tuesday afternoon":"martes por la tarde","Wednesday evening":"miércoles por la tarde-noche","on Friday":"el viernes","every Saturday":"todos los sábados","busy":"ocupado/a","free":"libre","weekly routine":"rutina semanal","at the weekend":"el fin de semana","on Saturday":"el sábado","on Sunday":"el domingo","go out":"salir","stay at home":"quedarse en casa","visit friends":"visitar amigos","watch a film":"ver una película","go shopping":"ir de compras","relax":"relajarse","meet friends":"quedar con amigos","lesson":"lección","break":"descanso","from…to…":"de… a…","at lunchtime":"a la hora de comer","day off":"día libre","snack":"tentempié","meal":"comida","dinner":"cena","vegetable":"verdura","fruit":"fruta","grapes":"uvas","tomato":"tomate","potato":"patata","carrot":"zanahoria","salad":"ensalada","a cup of tea":"una taza de té","a coffee":"un café","a sandwich":"un sándwich","a piece of cake":"un trozo de tarta","waiter":"camarero/a","in the morning":"por la mañana","at midday":"al mediodía","in the evening":"por la tarde-noche","have a snack":"tomar un tentempié","eat":"comer","drink":"beber","fish":"pescado","juice":"zumo","orange":"naranja","lunch":"comida / almuerzo","thank you":"gracias",
 "starter":"entrante","main course":"plato principal","dessert":"postre","side dish":"guarnición","total":"total","sparkling water":"agua con gas","orange juice":"zumo de naranja","tea":"té","without":"sin","like":"gustar","love":"encantar","prefer":"preferir","don't like":"no gustar","hate":"odiar","spicy":"picante","sweet":"dulce","salty":"salado/a","vegetarian":"vegetariano/a","recommend":"recomendar","table for two":"mesa para dos",
 "food":"comida","wearing":"llevando puesto","jumper":"jersey","scarf":"bufanda","hat":"sombrero","boots":"botas","socks":"calcetines","gloves":"guantes","today":"hoy","fitting room":"probador","try on":"probarse","cash desk":"caja","pair":"par","these":"estos / estas","those":"esos / esas","pounds":"libras"
+,
+  "coin": "moneda",
+  "note": "billete",
+  "pence": "peniques",
+  "pound": "libra",
+  "price": "precio",
+  "change": "cambio",
+  "ten pence": "diez peniques",
+  "fifty pence": "cincuenta peniques",
+  "one pound": "una libra",
+  "two pounds": "dos libras",
+  "customer": "cliente",
+  "shop assistant": "dependiente/a",
+  "available": "disponible",
+  "size": "talla",
+  "colour": "color",
+  "try on": "probarse",
+  "How much is it?": "¿Cuánto cuesta?",
+  "Can I help you?": "¿Puedo ayudarle?",
+  "Do you have…?": "¿Tiene…?",
+  "Can I pay by card?": "¿Puedo pagar con tarjeta?",
+  "wallet": "cartera",
+  "keys": "llaves",
+  "phone": "teléfono",
+  "umbrella": "paraguas",
+  "watch": "reloj",
+  "glasses": "gafas",
+  "bag": "bolso",
+  "bottle": "botella",
+  "notebook": "cuaderno",
+  "purse": "monedero",
+  "outfit": "conjunto",
+  "jumper": "jersey",
+  "jeans": "vaqueros",
+  "skirt": "falda",
+  "trainers": "zapatillas deportivas",
+  "jacket": "chaqueta",
+  "scarf": "bufanda",
+  "comfortable": "cómodo/a",
+  "smart": "elegante",
+  "market": "mercado",
+  "stall": "puesto",
+  "tomato": "tomate",
+  "potato": "patata",
+  "apple": "manzana",
+  "banana": "plátano",
+  "kilo": "kilo",
+  "half a kilo": "medio kilo",
+  "How many…?": "¿Cuántos…?",
+  "How much…?": "¿Cuánto…?"
 };
 const phraseModels: Record<string, string[]> = {
   "003":["Where are you from?","I'm from Spain.","What nationality are you?","I'm Spanish.","She is from France.","He is German.","We live in Italy.","They are from the United Kingdom.","I speak Spanish and English.","Where is your friend from?"],
@@ -122,6 +172,12 @@ const phraseModels: Record<string, string[]> = {
   "052":["What are you wearing today?","I'm wearing a warm coat.","She is wearing a red scarf.","He is wearing black boots.","Are you wearing gloves?","No, I'm not wearing gloves.","They are wearing school uniforms.","What is your brother wearing?","He is wearing a blue jumper.","I'm wearing my favourite hat."],
   "053":["Can you help me, please?","I'm looking for a blue shirt.","What size are you?","Have you got this in medium?","Can I try it on?","Where is the fitting room?","It is too small for me.","This one fits very well.","Where is the cash desk?","Can I have the receipt, please?"],
   "054":["How much are these shoes?","They are thirty pounds.","How much is that jacket?","It is forty-five pounds.","These trainers are cheap.","Those boots are expensive.","Can I try this pair on?","Do you have these in black?","That price is very good.","I'll take them, please."]
+,
+  "055": ["How much is this coin?","This note is worth ten pounds.","The apples cost two pounds.","It is fifty pence.","The total is five pounds.","Here is your change.","How much are these oranges?","They cost one pound each.","I have two pound coins.","Can I pay in cash?"],
+  "056": ["Can I help you?","Do you have this shirt in blue?","What size do you need?","Can I try it on?","Where is the fitting room?","How much is this jacket?","Do you have a smaller size?","Can I pay by card?","Yes, of course.","Thank you for your help."],
+  "057": ["This is my wallet.","These are my keys.","Is this your phone?","Those glasses are hers.","My umbrella is black.","His watch is on the table.","Whose bag is this?","It is her bag.","I have a water bottle.","The notebook is mine."],
+  "058": ["This is my favourite outfit.","I like comfortable clothes.","I'm wearing blue jeans today.","My favourite jumper is green.","She wears a smart jacket.","These trainers are very comfortable.","I like this skirt and scarf.","He is wearing a white shirt.","My outfit is simple but nice.","What are you wearing today?"],
+  "059": ["Good morning. Can I have a kilo of apples?","Of course. Anything else?","I'd like half a kilo of tomatoes.","How many bananas do you need?","Six bananas, please.","How much are the potatoes?","They are two pounds a kilo.","Can I have some carrots?","That's four pounds, please.","Here you are. Thank you."]
 };
 const mission026Reading = [
   { prompt:"Who is organising the birthday celebration?", answer:"Maya.", options:["Maya.","Oliver.","Maya's sister."] },
@@ -1370,6 +1426,12 @@ const passages: Record<string,string> = {
 "052":"It is cold today, and the students are wearing warm clothes. Anna is wearing a long grey coat and a red scarf. Her friend Peter is wearing a blue jumper, black trousers and brown boots. Two other students are wearing hats and gloves. Their teacher is not wearing a coat because she is inside the classroom. The students are talking about their clothes before the lesson starts. Anna likes Peter's jumper because it is a bright colour.",
 "053":"Tom goes to a clothes shop because he needs a new shirt for work. He finds a blue shirt and asks the shop assistant for a medium size. The assistant checks the shelf but only has a large one. Tom tries it on in the fitting room, but it is too big. The assistant finds a white shirt in medium. Tom likes it and decides to buy it. He pays at the cash desk and keeps the receipt.",
 "054":"Sophie is shopping for new shoes with her friend Mia. Sophie sees a pair of black trainers and asks the assistant how much they are. They cost thirty pounds. She also looks at some brown boots, but they are sixty pounds and too expensive. Mia points to a pair of blue shoes near the door. They are twenty-five pounds. Sophie tries them on and likes them. She decides to buy the blue shoes and thanks the assistant."
+,
+  "055": "Emma buys fruit at a market. A kilo of apples costs two pounds. Oranges cost one pound fifty, and two bottles of water cost one pound. The total is four pounds fifty. Emma gives the assistant a five-pound note and receives fifty pence change. She checks the receipt and puts the coins in her purse.",
+  "056": "Leo is looking for a blue shirt. The shop assistant asks what size he needs. He wants a medium, but the shirt is not available. The assistant finds another shirt, and Leo tries it on in the fitting room. It fits well. He asks how much it is and pays by card. The assistant gives him the receipt.",
+  "057": "Nina finds a wallet and a set of keys on a chair at the community centre. There is a phone next to them, but it belongs to her friend Sam. Nina asks the teacher whose things they are. The wallet belongs to Alex. Sam collects his phone, and Alex comes back for his wallet and keys. Everyone is happy to find their things.",
+  "058": "Maya is getting ready for a family lunch. Her favourite outfit is a green jumper, blue jeans and comfortable trainers. She wears a scarf when it is cold. Her brother prefers a smart jacket and black trousers. Their mother likes colourful dresses. Maya says clothes do not need to be expensive; they need to be comfortable and suitable for the day.",
+  "059": "Ben visits the market with his grandmother. They buy a kilo of apples and six bananas at the fruit stall. At the next stall, they ask for half a kilo of tomatoes and some carrots. The seller weighs the vegetables and tells them the price. Ben gives the seller a ten-pound note. His grandmother checks the change and puts the food in a shopping bag."
 };
 
 function makeCanonicalMission(p: (typeof previewMissions)[number]): Mission {
@@ -1420,7 +1482,13 @@ function makeCanonicalMission(p: (typeof previewMissions)[number]): Mission {
     } else if (key === "speaking") {
       items = phrases.map((sentence,i) => ({ itemId:`english-a1-m${id}-speaking-${i+1}`, position:i+1, prompt:`Say this sentence: ${sentence}`, modelAnswer:sentence, evaluation:{type:"rubric",transcriptionSeparateFromPronunciation:true} }));
     } else {
-      const listeningStories: Record<string, { transcript: string; words: string[] }> = {
+      const listeningStories: Record<string, { transcript: string; words: string[] ,
+  "055": {"transcript":"Good morning. I would like a kilo of apples, please. They cost two pounds. These oranges are one pound fifty, and the water is one pound. The total is four pounds fifty. I give the assistant a five-pound note and receive fifty pence change. I put the coins in my purse and keep the receipt.","words":["kilo","apples","two pounds","oranges","one pound fifty","water","total","five-pound note","fifty pence","receipt"]},
+  "056": {"transcript":"A customer is looking for a blue shirt. The shop assistant asks what size he needs. He would like a medium, but the shirt is not available. The assistant finds another shirt, and the customer tries it on in the fitting room. It fits well. He asks how much it is and pays by card. The assistant gives him the receipt.","words":["customer","blue shirt","shop assistant","size","medium","available","tries it on","fitting room","pays by card","receipt"]},
+  "057": {"transcript":"Hello, is this your wallet? No, it is not mine. Those are my keys, and this is my phone. Whose umbrella is that? It belongs to Nina. Her glasses are in the bag, and his watch is on the table. We also have a notebook and a water bottle. Please take your things before you leave the room.","words":["wallet","keys","phone","umbrella","Nina","glasses","bag","watch","notebook","water bottle"]},
+  "058": {"transcript":"Maya is wearing her favourite outfit today. She has a green jumper, blue jeans and comfortable trainers. Her brother is wearing a smart jacket and black trousers. Maya also has a warm scarf because it is cold outside. She likes simple clothes, but her sister prefers colourful dresses. They take a photo before going to lunch with their family.","words":["Maya","favourite outfit","green jumper","blue jeans","comfortable trainers","brother","smart jacket","black trousers","warm scarf","colourful dresses"]},
+  "059": {"transcript":"Ben goes to the market with his grandmother. They buy a kilo of apples and six bananas at the fruit stall. Then they visit a vegetable stall and ask for half a kilo of tomatoes. The seller adds some carrots and weighs everything. The total is six pounds. Ben pays with a ten-pound note and checks the change before they leave.","words":["market","grandmother","kilo","apples","bananas","fruit stall","vegetable stall","half a kilo","tomatoes","change"]}
+}> = {
         "003": { transcript: "Welcome to our language club. Ana is from Portugal, and she is Portuguese. She lives in Lisbon with her family. Her first language is Portuguese, but she also speaks English. Luca is from Italy. He is Italian and speaks Italian and English too. They meet every Tuesday to practise languages and learn about each other's countries.", words: ["Portugal","Portuguese","Lisbon","language","English","Italy","Italian","family","countries","practise"] },
         "004": { transcript: "Good morning. Welcome to the community centre. My name is Laura Bennett. Laura is my first name, and Bennett is my surname. I need a visitor card, please. Can you spell Bennett? Of course: B, E, double N, E, double T. Thank you. Is the first letter a capital letter? Yes, it is. Please write the name slowly so I can check every letter.", words: ["Laura","Bennett","first name","surname","visitor","card","spell","double","capital letter","letter"] },
         "005": { transcript: "This is Emma Wilson. She is twenty years old and she is a student. She lives in Brighton with her parents and her younger brother. Her English class is on Monday afternoon. Her teacher is Mr Brown. Emma enjoys meeting new people, so she asks her classmates simple questions about their names, jobs and favourite activities.", words: ["Emma","twenty","student","Brighton","parents","brother","Monday","teacher","classmates","activities"] },
@@ -1521,7 +1589,7 @@ export default async function A1CurriculumPreviewMission({ params }: { params: P
         <div className="mt-5"><CanonicalMission missionData={data} /></div>
         <nav className="mt-8 flex items-center justify-between gap-3 border-t border-slate-200 pt-5">
           {mission !== "001" ? <Link href={`/academia/a1/curriculum-preview/${previous(mission)}`} className="rounded-xl border border-slate-200 bg-white px-4 py-3 text-sm font-semibold text-slate-700 hover:border-indigo-300">← Misión anterior</Link> : <span />}
-          {mission !== "054" ? <Link href={`/academia/a1/curriculum-preview/${next(mission)}`} className="rounded-xl bg-indigo-700 px-4 py-3 text-sm font-semibold text-white hover:bg-indigo-800">Misión siguiente →</Link> : <Link href="/academia/a1/curriculum-preview" className="rounded-xl bg-indigo-700 px-4 py-3 text-sm font-semibold text-white">Volver al índice →</Link>}
+          {mission !== "059" ? <Link href={`/academia/a1/curriculum-preview/${next(mission)}`} className="rounded-xl bg-indigo-700 px-4 py-3 text-sm font-semibold text-white hover:bg-indigo-800">Misión siguiente →</Link> : <Link href="/academia/a1/curriculum-preview" className="rounded-xl bg-indigo-700 px-4 py-3 text-sm font-semibold text-white">Volver al índice →</Link>}
         </nav>
       </div>
     </main>
