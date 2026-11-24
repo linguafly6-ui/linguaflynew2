@@ -5875,40 +5875,6 @@ export default function CanonicalMission({ missionData = missionSource as Missio
     return words;
   }, [exploreTranslations]);
   const [hoveredWord, setHoveredWord] = useState<string | null>(null);
-  const renderTranslatedWords = (text?: string, translationOverride?: string) => {
-    if (!text) return text;
-    // Translate está disponible en Gramática, Práctica, Lectura, Expresión oral y Comprensión auditiva.
-    if (!["grammar", "practice", "reading", "speaking", "listening"].includes(sectionKey)) return text;
-    // Si existe traducción de la expresión completa (patrones y ejemplos), mostrarla
-    // como tooltip; después, para el resto del texto, traducir palabra por palabra.
-    const phraseKey = text.toLocaleLowerCase("en-GB").replace(/[“”]/g, '"').replace(/[.!?…]/g, "").replace(/\s+/g, " ").trim();
-    const phraseTranslation = translationOverride?.trim() || exploreTranslations.get(phraseKey);
-    const hasWordTranslation = text.split(/([\p{L}]+(?:['’][\p{L}]+)?)/gu).some((part) => wordTranslations.has(part.toLocaleLowerCase("en-GB")));
-    if (phraseTranslation && !hasWordTranslation) {
-      const phraseId = `phrase:${phraseKey}`;
-      const phraseIsOpen = hoveredWord === phraseId;
-      return (
-        <button
-          key={phraseId}
-          type="button"
-          aria-label={`${text}: ${phraseTranslation}`}
-          aria-expanded={phraseIsOpen}
-          onMouseEnter={() => setHoveredWord(phraseId)}
-          onMouseLeave={() => setHoveredWord((current) => current === phraseId ? null : current)}
-          onFocus={() => setHoveredWord(phraseId)}
-          onBlur={() => setHoveredWord((current) => current === phraseId ? null : current)}
-          onClick={() => setHoveredWord(phraseId)}
-          className="relative inline cursor-help border-0 border-b border-dotted border-[#7895b5] bg-transparent p-0 align-baseline text-left [font:inherit] text-inherit"
-        >
-          {text}
-          {phraseIsOpen && (
-            <span role="tooltip" className="pointer-events-none absolute bottom-full left-1/2 z-30 mb-2 w-max max-w-56 -translate-x-1/2 rounded-lg bg-slate-900 px-3 py-2 text-xs font-medium leading-5 text-white shadow-lg">
-              {phraseTranslation}
-            </span>
-          )}
-        </button>
-      );
-    }
   const translatedWordsRenderId = useRef(0);
   // Reinicia el contador en cada render para que los IDs sean estables entre renders.
   translatedWordsRenderId.current = 0;
