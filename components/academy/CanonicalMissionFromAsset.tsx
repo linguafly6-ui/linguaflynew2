@@ -5,10 +5,12 @@ import CanonicalMission, { type Mission } from "@/components/academy/CanonicalMi
 
 type Props = {
   src: string;
+  level: "C1" | "B2";
+  routeKey: string;
   missionKey?: string;
 };
 
-export default function CanonicalMissionFromAsset({ src, missionKey }: Props) {
+export default function CanonicalMissionFromAsset({ src, level, routeKey, missionKey }: Props) {
   const [mission, setMission] = useState<Mission | null>(null);
   const [failed, setFailed] = useState(false);
 
@@ -17,21 +19,36 @@ export default function CanonicalMissionFromAsset({ src, missionKey }: Props) {
 
     async function load() {
       try {
-        const response = await fetch(src);
-        if (!response.ok) {
-          throw new Error(`Mission asset request failed: ${response.status}`);
+        let data: unknown = null;
+
+        // Prefer D1. The static asset remains a temporary fallback until
+        // production COURSE_DB has been migrated and verified.
+        try {
+          const response = await fetch(
+            `/api/canonical-missions/${level}/${encodeURIComponent(routeKey)}`,
+          );
+          if (response.ok) data = await response.json();
+        } catch {
+          // Continue to the static fallback during the staged migration.
         }
 
-        const payload: unknown = await response.json();
-        const data = missionKey
-          ? (payload as Record<string, Mission>)[missionKey]
-          : (payload as Mission);
+        if (!data) {
+          const response = await fetch(src);
+          if (!response.ok) {
+            throw new Error(`Mission asset request failed: ${response.status}`);
+          }
+
+          const payload: unknown = await response.json();
+          data = missionKey
+            ? (payload as Record<string, Mission>)[missionKey]
+            : payload;
+        }
 
         if (!data || typeof data !== "object") {
           throw new Error("Mission data was not found");
         }
 
-        if (!cancelled) setMission(data);
+        if (!cancelled) setMission(data as Mission);
       } catch {
         if (!cancelled) setFailed(true);
       }
@@ -41,7 +58,7 @@ export default function CanonicalMissionFromAsset({ src, missionKey }: Props) {
     return () => {
       cancelled = true;
     };
-  }, [src, missionKey]);
+  }, [src, level, routeKey, missionKey]);
 
   if (failed) {
     return (
