@@ -70,6 +70,10 @@ export default function A1Page() {
         <span className="rounded-full bg-white/15 px-4 py-2">Nivel MCER A1</span>
       </div>
     </section>
+    <section className="mt-6 flex flex-wrap items-center justify-between gap-4 rounded-2xl border border-indigo-200 bg-indigo-50 p-5">
+      <div><p className="text-xs font-extrabold uppercase tracking-widest text-indigo-700">Nueva vista de revisión</p><h2 className="mt-1 text-lg font-black text-slate-950">Currículo A1 · Misiones 001–014</h2><p className="mt-1 text-sm text-slate-600">Previsualiza las fichas canónicas y las propuestas curriculares en una experiencia unificada.</p></div>
+      <Link href="/academia/a1/curriculum-preview" className="rounded-xl bg-indigo-700 px-4 py-3 text-sm font-bold text-white transition hover:bg-indigo-800">Abrir vista previa →</Link>
+    </section>
     <div className="mt-8 flex items-center justify-between gap-4">
       <div><h2 className="text-2xl font-black text-slate-950">Temario A1</h2><p className="mt-1 text-sm text-slate-600">Progresión pedagógica oficial del plan de 100 misiones A1.</p></div>
       <span className="rounded-xl bg-blue-50 px-3 py-2 text-sm font-bold text-blue-800">32 temas</span>
