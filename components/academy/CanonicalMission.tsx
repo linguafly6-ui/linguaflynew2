@@ -37,6 +37,14 @@ function visualForVocabulary(english: string, spanish: string) {
   return "💡";
 }
 
+function vocabularyImageSource(english: string, spanish: string, symbol: string) {
+  const escapeXml = (value: string) => value.replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;").replace(/\"/g, "&quot;");
+  const title = escapeXml(english.trim().slice(0, 28));
+  const meaning = escapeXml(spanish.trim().slice(0, 34));
+  const svg = `<svg xmlns="http://www.w3.org/2000/svg" width="240" height="180" viewBox="0 0 240 180"><defs><linearGradient id="g" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#e4f3ff"/><stop offset="1" stop-color="#f7eaff"/></linearGradient></defs><rect width="240" height="180" rx="26" fill="url(#g)"/><circle cx="120" cy="70" r="48" fill="#fff" opacity=".9"/><text x="120" y="91" text-anchor="middle" font-size="58" font-family="Arial,sans-serif">${symbol}</text><text x="120" y="145" text-anchor="middle" font-size="15" font-weight="700" fill="#26364b" font-family="Arial,sans-serif">${title}</text><text x="120" y="164" text-anchor="middle" font-size="10" fill="#64816f" font-family="Arial,sans-serif">${meaning}</text></svg>`;
+  return `data:image/svg+xml;charset=UTF-8,${encodeURIComponent(svg)}`;
+}
+
 const labels: Record<string, string> = { explore: "Exploración", practice: "Práctica", grammar: "Gramática", pronunciation: "Pronunciación", reading: "Lectura", writing: "Escritura", speaking: "Expresión oral", listening: "Comprensión auditiva" };
 
 const PRE_A1_EXAMPLE_TRANSLATIONS: Record<string, string> = {
@@ -3682,8 +3690,8 @@ export default function CanonicalMission({ missionData = missionSource as Missio
                 const count = numberCounts[word];
                 const pronunciationGuide = getSpanishPronunciationGuide(word) || entry.pronunciationGuide || pronunciationByWord.get(word);
                 return <article key={entry.itemId} className="flex min-w-0 flex-col items-center rounded-2xl border border-[#e8ebf0] bg-white p-3 text-center sm:p-4">
-                  <div aria-hidden="true" className="grid h-16 w-16 place-items-center rounded-2xl bg-[#f2f6fb] sm:h-20 sm:w-20">
-                    {count ? <div className="flex flex-col items-center justify-center"><span className="text-3xl font-extrabold leading-none text-[#2872c8] sm:text-4xl">{count}</span><span className="mt-1 grid grid-cols-5 gap-0.5 text-[10px] leading-none sm:text-xs">{Array.from({length:count},(_,i)=><span key={i}>🍎</span>)}</span></div> : <span className="text-4xl sm:text-5xl">{word.length === 1 && /^[a-z]$/.test(word) ? "🔠" : visual[word] ?? visualForVocabulary(word, entry.spanish ?? "")}</span>}
+                  <div className="grid h-24 w-full place-items-center overflow-hidden rounded-2xl bg-[#f2f6fb] sm:h-28">
+                    <img src={vocabularyImageSource(entry.english ?? word, resolveSpanish(entry.english, entry.spanish), count ? "🍎".repeat(Math.min(count, 5)) : word.length === 1 && /^[a-z]$/.test(word) ? "🔠" : visual[word] ?? visualForVocabulary(word, entry.spanish ?? ""))} alt={`Ilustración de ${entry.english}`} loading="lazy" className="h-full w-full object-contain" />
                   </div>
                   <p className="mt-3 break-words text-base font-bold text-[#26364b] sm:text-lg">{entry.english}</p>
                   <p className="mt-1 text-sm font-medium text-[#64816f]">{resolveSpanish(entry.english, entry.spanish)}</p>
