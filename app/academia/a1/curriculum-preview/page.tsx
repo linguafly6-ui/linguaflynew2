@@ -29,7 +29,7 @@ export default function A1CurriculumPreviewPage() {
         </header>
 
         <section className="mt-8 rounded-2xl border border-amber-200 bg-amber-50 p-4 text-sm leading-6 text-amber-950">
-          <strong>Estado del contenido:</strong> las misiones 001 y 002 utilizan sus JSON canónicos actuales. Las misiones 003–039 muestran fichas curriculares propuestas a partir de la auditoría del material existente; todavía no sustituyen las actividades publicadas ni se consideran contenido canónico validado.
+          <strong>Estado del contenido:</strong> las misiones 001 y 002 utilizan sus JSON canónicos actuales. Las misiones 003–069 muestran fichas curriculares propuestas a partir de la auditoría del material existente; todavía no sustituyen las actividades publicadas ni se consideran contenido canónico validado.
         </section>
 
         <section className="mt-9">
