@@ -14,7 +14,6 @@ const ids = ["001", "002", ...previewMissions.map((mission) => mission.id)];
 const keys = ["explore", "practice", "grammar", "pronunciation", "reading", "writing", "speaking", "listening"];
 const types = ["vocabulary_pairs", "mixed_practice", "grammar", "pronunciation_cards", "reading_comprehension", "dictation", "speaking_prompts", "listening_gap_fill"];
 const spanish: Record<string, string> = {
-,
   "coin": "moneda",
   "note": "billete",
   "ten pence": "diez peniques",
