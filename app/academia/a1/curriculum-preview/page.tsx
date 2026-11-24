@@ -22,14 +22,14 @@ export default function A1CurriculumPreviewPage() {
           <h1 className="mt-3 text-3xl font-black sm:text-5xl">Currículo A1 · Misiones 001–090</h1>
           <p className="mt-4 max-w-3xl text-base leading-7 text-indigo-100">Vista de integración para revisar la estructura de las misiones, sus ocho secciones y la progresión del primer tramo del curso.</p>
           <div className="mt-6 flex flex-wrap gap-2 text-xs font-bold">
-            <span className="rounded-full bg-white/15 px-3 py-2">90 identificadores</span>
+            <span className="rounded-full bg-white/15 px-3 py-2">89 fichas disponibles</span>
             <span className="rounded-full bg-white/15 px-3 py-2">8 secciones por misión</span>
             <span className="rounded-full bg-amber-300/20 px-3 py-2 text-amber-100">Contenido en revisión</span>
           </div>
         </header>
 
         <section className="mt-8 rounded-2xl border border-amber-200 bg-amber-50 p-4 text-sm leading-6 text-amber-950">
-          <strong>Estado del contenido:</strong> las misiones 001 y 002 utilizan sus JSON canónicos actuales. Las misiones 003–080 muestran fichas curriculares propuestas a partir de la auditoría del material existente; todavía no sustituyen las actividades publicadas ni se consideran contenido canónico validado.
+          <strong>Estado del contenido:</strong> las misiones 001 y 002 utilizan sus JSON canónicos actuales. Las misiones 003–069 y 071–090 muestran fichas curriculares propuestas a partir de la auditoría del material existente; todavía no sustituyen las actividades publicadas ni se consideran contenido canónico validado.
         </section>
 
         <section className="mt-9">
