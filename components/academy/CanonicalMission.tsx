@@ -61,10 +61,39 @@ function visualForVocabulary(english: string, spanish: string) {
 }
 
 function vocabularyImageSource(english: string, spanish: string, symbol: string) {
-  const escapeXml = (value: string) => value.replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;").replace(/\"/g, "&quot;");
+  const escapeXml = (value: string) => value.replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;").replace(/"/g, "&quot;");
   const title = escapeXml(english.trim().slice(0, 28));
   const meaning = escapeXml(spanish.trim().slice(0, 34));
-  const svg = `<svg xmlns="http://www.w3.org/2000/svg" width="240" height="180" viewBox="0 0 240 180"><defs><linearGradient id="g" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#e4f3ff"/><stop offset="1" stop-color="#f7eaff"/></linearGradient></defs><rect width="240" height="180" rx="26" fill="url(#g)"/><circle cx="120" cy="70" r="48" fill="#fff" opacity=".9"/><text x="120" y="91" text-anchor="middle" font-size="58" font-family="Arial,sans-serif">${symbol}</text><text x="120" y="145" text-anchor="middle" font-size="15" font-weight="700" fill="#26364b" font-family="Arial,sans-serif">${title}</text><text x="120" y="164" text-anchor="middle" font-size="10" fill="#64816f" font-family="Arial,sans-serif">${meaning}</text></svg>`;
+  const stroke = 'stroke="#29445d" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"';
+  const art: Record<string, string> = {
+    "💼": '<rect x="70" y="66" width="100" height="72" rx="12" fill="#f4b860" '+stroke+'/><path d="M98 66V53q0-9 10-9h24q10 0 10 9v13M70 91h100M112 91v12h16V91" fill="none" '+stroke+'/><circle cx="88" cy="151" r="7" fill="#5d9cec"/><circle cx="152" cy="151" r="7" fill="#5d9cec"/>',
+    "🧭": '<circle cx="120" cy="91" r="54" fill="#b9e3dc" '+stroke+'/><circle cx="120" cy="91" r="39" fill="#fff" '+stroke+'/><path d="m139 67-13 35-25 16 13-35z" fill="#ef786e" '+stroke+'/><path d="m120 38 0-13m0 132v-13m-54-53H53m134 0h-13" '+stroke+'/>',
+    "👨‍👩‍👧": '<circle cx="88" cy="70" r="20" fill="#f4b860" '+stroke+'/><circle cx="145" cy="68" r="20" fill="#8eb8ef" '+stroke+'/><circle cx="117" cy="105" r="15" fill="#e98b82" '+stroke+'/><path d="M51 145q3-48 37-48t37 48M109 145q2-48 36-48t36 48M92 153q1-34 25-34t25 34" fill="#a8d6c6" '+stroke+'/>',
+    "🫂": '<circle cx="89" cy="68" r="19" fill="#f4b860" '+stroke+'/><circle cx="151" cy="68" r="19" fill="#8eb8ef" '+stroke+'/><path d="M52 143q0-49 37-49t37 49M114 143q0-49 37-49t37 49M85 104q35 40 70 0" fill="#e98b82" '+stroke+'/>',
+    "🩺": '<path d="M76 45v42q0 30 27 30t27-30V45M76 65h0M130 65h0" fill="none" '+stroke+'/><circle cx="130" cy="120" r="13" fill="#8eb8ef" '+stroke+'/><path d="M130 133v8q0 17 18 17h8" fill="none" '+stroke+'/><circle cx="164" cy="158" r="8" fill="#e98b82" '+stroke+'/>',
+    "🍎": '<path d="M120 65q-42-33-60 12-18 49 26 74 19 11 34-3 15 14 34 3 44-25 26-74-18-45-60-12" fill="#ef786e" '+stroke+'/><path d="M120 65q-4-24 16-35M120 48q23-13 37 1-17 16-37 11" fill="#82bd8b" '+stroke+'/>',
+    "📚": '<path d="M55 61q32-12 65 8v82q-33-20-65-8z" fill="#8eb8ef" '+stroke+'/><path d="M185 61q-32-12-65 8v82q33-20 65-8z" fill="#f4b860" '+stroke+'/><path d="M120 69v82M69 82q20-5 37 5M171 82q-20-5-37 5" fill="none" '+stroke+'/>',
+    "🎭": '<path d="M62 56q32-22 62 2v67q-31 22-62 0z" fill="#f4b860" '+stroke+'/><path d="M116 56q32-22 62 2v67q-31 22-62 0z" fill="#8eb8ef" '+stroke+'/><path d="M79 89q10 12 20 0M135 89q10 12 20 0M79 108q10-10 20 0M135 108q10-10 20 0" fill="none" '+stroke+'/>',
+    "💳": '<rect x="55" y="63" width="130" height="82" rx="13" fill="#8eb8ef" '+stroke+'/><path d="M57 88h126" '+stroke+'/><rect x="72" y="108" width="35" height="19" rx="4" fill="#f4d58d"/><path d="M142 119h25" '+stroke+'/>',
+    "📱": '<rect x="83" y="36" width="74" height="119" rx="13" fill="#8eb8ef" '+stroke+'/><rect x="92" y="50" width="56" height="83" rx="5" fill="#fff"/><circle cx="120" cy="144" r="4" fill="#29445d"/><path d="M103 75h34m-34 15h24m-24 15h30" '+stroke+'/>',
+    "🌍": '<circle cx="120" cy="94" r="57" fill="#8eb8ef" '+stroke+'/><path d="M86 54q18 8 13 25l-15 13 10 17-9 24M133 39l-5 24 18 12-9 19 18 13-7 35M65 91h110M81 131q38-19 78 0" fill="#a8d6a0" '+stroke+'/>',
+    "🕒": '<circle cx="120" cy="94" r="56" fill="#fff" '+stroke+'/><path d="M120 53v43l29 18" fill="none" '+stroke+'/><path d="M120 26v10m0 116v10M52 94h10m116 0h10" '+stroke+'/>',
+    "🧩": '<path d="M64 59h38q-8 22 18 22t18-22h38v38q-22-8-22 18t22 18v21h-43q8-22-18-22t-18 22H64v-39q22 8 22-18t-22-18z" fill="#f4b860" '+stroke+'/>',
+    "😊": '<circle cx="120" cy="91" r="57" fill="#f7d47c" '+stroke+'/><path d="M94 81v5m52-5v5M91 108q29 35 58 0" fill="none" '+stroke+'/>',
+    "⚖️": '<path d="M120 45v102m-36-87h72M95 60 72 103h46zM145 60l-23 43h46zM91 150h58" fill="none" '+stroke+'/><path d="M72 103q23 23 46 0M122 103q23 23 46 0" fill="#f4b860" '+stroke+'/>',
+    "🗣️": '<path d="M57 53q0-15 17-15h92q17 0 17 15v61q0 15-17 15h-48l-30 23v-23H74q-17 0-17-15z" fill="#b9e3dc" '+stroke+'/><path d="M83 79h74m-74 22h52" '+stroke+'/>',
+    "🏙️": '<path d="M53 151V83h37v68M90 151V51h55v100M145 151V72h42v79" fill="#8eb8ef" '+stroke+'/><path d="M103 70h10m17 0h8m-35 22h10m17 0h8m-35 22h10m17 0h8M66 99h10m-10 20h10m83-27h10m-10 20h10" '+stroke+'/>',
+    "🏃": '<circle cx="137" cy="49" r="14" fill="#f4b860" '+stroke+'/><path d="m126 68-27 27 30 14 24-24m-54 10-28 23m58 2-17 37m42-52 28 30" fill="none" '+stroke+'/><path d="m95 95-22-8m57 22 24 18" '+stroke+'/>',
+    "👕": '<path d="m82 51 25-13q13 22 26 0l25 13 29 27-20 23-16-13v68H89V88l-16 13-20-23z" fill="#8eb8ef" '+stroke+'/>',
+    "🏨": '<path d="M62 151V58h116v93M50 151h140M80 80h20v22H80zm42 0h20v22h-20zm-42 38h20v22H80zm42 0h20v22h-20z" fill="#f4b860" '+stroke+'/><path d="M143 151v-34h22v34M111 58V42h18v16" fill="none" '+stroke+'/>',
+    "🔎": '<circle cx="105" cy="82" r="39" fill="#b9e3dc" '+stroke+'/><path d="m133 111 39 39" fill="none" '+stroke+' stroke-width="13"/><circle cx="105" cy="82" r="17" fill="#fff"/>'
+  };
+  const symbolToArt: Record<string, string> = {
+    "🚆":"🧭","📍":"🧭","🏛️":"🏙️","📅":"🕒","🛫":"🧭","🛬":"🧭","🚉":"🧭","🧳":"🧭","⏳":"🕒","❌":"🧩","💶":"💳","🎫":"💳","🛃":"🏙️","🏮":"🎭","🗼":"🏙️","👥":"🫂","🌿":"🌍","🏞️":"🌍","😞":"😊","🥱":"😊","🧑‍🏫":"📚","🛡️":"⚖️","🛎️":"🏨","🤩":"😊","📉":"🧩","🏁":"🕒"
+  };
+  const key = art[symbol] ? symbol : symbolToArt[symbol] ?? "🔎";
+  const drawing = art[key] ?? art["🔎"];
+  const svg = `<svg xmlns="http://www.w3.org/2000/svg" width="240" height="180" viewBox="0 0 240 180"><defs><linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#e4f3ff"/><stop offset="1" stop-color="#fff0df"/></linearGradient></defs><rect width="240" height="180" rx="25" fill="url(#bg)"/><circle cx="120" cy="91" r="72" fill="#fff" opacity=".72"/>${drawing}<text x="120" y="169" text-anchor="middle" font-size="12" font-weight="700" fill="#29445d" font-family="Arial,sans-serif">${title}</text><text x="120" y="181" text-anchor="middle" font-size="9" fill="#64816f" font-family="Arial,sans-serif">${meaning}</text></svg>`;
   return `data:image/svg+xml;charset=UTF-8,${encodeURIComponent(svg)}`;
 }
 
