@@ -232,11 +232,11 @@ const spanish: Record<string, string> = {
   "forecast": "previsión",
   "temperature": "temperatura",
   "degrees": "grados",
-  "umbrella": "paraguas",
+
   "coat": "abrigo",
   "boots": "botas",
   "scarf": "bufanda",
-  "tomorrow": "mañana",
+
   "today": "hoy",
   "weekend": "fin de semana",
   "animal": "animal",
@@ -278,16 +278,16 @@ const spanish: Record<string, string> = {
   "mirror": "espejo",
   "shelf": "estantería",
   "bed": "cama",
-  "clean": "limpiar",
+
   "tidy": "ordenar",
   "wash": "lavar",
   "dry": "secar",
-  "cook": "cocinar",
+
   "make the bed": "hacer la cama",
   "do the washing": "poner la lavadora",
   "do the dishes": "lavar los platos",
   "take out the rubbish": "sacar la basura",
-  "help": "ayudar",
+
   "in": "en",
   "on": "sobre",
   "under": "debajo",
@@ -299,7 +299,7 @@ const spanish: Record<string, string> = {
   "below": "debajo",
   "inside": "dentro",
   "at home": "en casa",
-  "relax": "relajarse",
+
   "watch television": "ver la televisión",
   "read a book": "leer un libro",
   "set the table": "poner la mesa",
@@ -314,7 +314,7 @@ const spanish: Record<string, string> = {
   "street": "calle",
   "near": "cerca",
   "quiet": "tranquilo",
-  "busy": "concurrido",
+
   "playground": "parque infantil",
   "supermarket": "supermercado",
   "bus stop": "parada de autobús",
@@ -1667,7 +1667,7 @@ const passages: Record<string,string> = {
   "077": "To: Sam. Subject: English project. Hi Sam, thanks for your message. Our English project is about animals. Can we meet in the library on Thursday at four? Please bring your notes and the pictures. I can send you my questions this evening. Let me know if Thursday is good for you. See you soon, Alex.",
   "078": "At nine o'clock, Tom calls the school office. He wants to speak to his English teacher, Mr Lee. The secretary says Mr Lee is in a meeting. Tom leaves a message: the class starts at ten today, not nine. He gives his phone number and asks Mr Lee to call back. The secretary repeats the number to check it.",
   "079": "At Green School, students must arrive before nine. They must bring their books and wear the school uniform. They must keep the classroom clean. Students mustn't use mobile phones during lessons. In the science room, everyone must listen to the teacher and mustn't touch equipment without permission. At lunchtime, students can talk quietly in the dining room.",
-  "080": "My name is Sofia and I am a student. I study at West College from Monday to Thursday. My favourite subject is English because I enjoy speaking with people. I also work in a café on Friday and Saturday. I start at nine and finish at two. I can use a computer and speak two languages. In the future, I want to work in a hotel."
+  "080": "My name is Sofia and I am a student. I study at West College from Monday to Thursday. My favourite subject is English because I enjoy speaking with people. I also work in a café on Friday and Saturday. I start at nine and finish at two. I can use a computer and speak two languages. In the future, I want to work in a hotel.",
   "081": "In Bristol, the weather changes during the year. Spring is often sunny, but it can be rainy. Summer is usually warm. Autumn is cool and windy. In winter, it is sometimes very cold and it can snow. Today it is cloudy, so Mia takes her coat and umbrella.",
   "082": "The forecast says it will be sunny on Saturday and rainy on Sunday. Leo wants to go cycling, so he plans the trip for Saturday morning. The temperature will be sixteen degrees. He takes a light jacket and water. On Sunday, he is going to stay at home because it will be wet and windy.",
   "083": "Ella has got two pets: a dog called Max and a small rabbit. Max is friendly and likes playing in the garden. Ella takes him for a walk every afternoon. The rabbit eats carrots and green leaves. Ella gives both animals fresh water every day. On Friday, she takes Max to the vet.",
