@@ -1,3 +1,11 @@
-import Link from "next/link";
-export const metadata={title:"Body and Health · Misión 026 · Linguafly A1",description:"Identifica partes del cuerpo y expresa molestias sencillas."};
-export default function MissionPage(){return <main className="mx-auto min-h-[70vh] max-w-5xl px-5 py-10"><section className="mb-7"><Link href="/academia/a1" className="text-sm font-semibold text-blue-700">← Misiones A1</Link><p className="mt-6 text-sm font-extrabold uppercase tracking-widest text-indigo-700">Linguafly Quest · A1 · Misión 026</p><h1 className="mt-2 text-4xl font-black text-slate-950">Body and Health</h1><p className="mt-3 text-slate-600">Identifica partes del cuerpo y expresa molestias sencillas.</p></section><iframe title="Misión 026 · Body and Health" src="/missions/a1/026/index.html" className="h-[1100px] w-full rounded-2xl border border-slate-200 bg-white"/></main>}
+import CanonicalMission, { type Mission } from "@/components/academy/CanonicalMission";
+import missionData from "@/content/canonical-missions/a1/026.json";
+
+export const metadata = {
+  title: "Body and Health · Misión 026 · Linguafly A1",
+  description: "Nombra partes del cuerpo y expresa molestias sencillas."
+};
+
+export default function MissionPage() {
+  return <CanonicalMission missionData={missionData as Mission} />;
+}

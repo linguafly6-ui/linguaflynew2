@@ -1,3 +1,9 @@
 import Link from "next/link";
-export const metadata={title:"At the Café and Restaurant · Misión 021 · Linguafly A1",description:"Pide comida y bebida y comprende expresiones de restaurante."};
-export default function MissionPage(){return <main className="mx-auto min-h-[70vh] max-w-5xl px-5 py-10"><section className="mb-7"><Link href="/academia/a1" className="text-sm font-semibold text-blue-700">← Misiones A1</Link><p className="mt-6 text-sm font-extrabold uppercase tracking-widest text-indigo-700">Linguafly Quest · A1 · Misión 021</p><h1 className="mt-2 text-4xl font-black text-slate-950">At the Café and Restaurant</h1><p className="mt-3 text-slate-600">Pide comida y bebida y comprende expresiones de restaurante.</p></section><iframe title="Misión 021 · At the Café and Restaurant" src="/missions/a1/021/index.html" className="h-[1100px] w-full rounded-2xl border border-slate-200 bg-white"/></main>}
+import CanonicalMission, { type Mission } from "@/components/academy/CanonicalMission";
+import missionData from "@/content/canonical-missions/a1/021.json";
+
+export const metadata = { title: "At the Café and Restaurant · Misión 021 · Linguafly Academy", description: "Pide comida y bebida con educación, comprende el servicio y paga en una cafetería o restaurante." };
+
+export default function A1Mission021Page() {
+  return <main className="min-h-screen bg-slate-50 px-4 py-7 sm:px-6"><div className="mx-auto max-w-5xl"><Link href="/academia/a1" className="text-sm font-medium text-slate-500 hover:text-blue-700">← Volver al curso A1</Link><div className="mt-5"><CanonicalMission missionData={missionData as Mission} /></div></div></main>;
+}
