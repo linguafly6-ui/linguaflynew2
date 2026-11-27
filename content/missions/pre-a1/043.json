@@ -99,26 +99,29 @@
           }
         ],
         "theory": {
-          "title": "It is a…; nombres de medios de transporte",
-          "explanation": "Para identificar un medio de transporte, usamos «It is a…» y el nombre: «It is a bus». La palabra del transporte va después de a.",
+          "title": "Medios de transporte",
+          "explanation": "Usa «It is a…» para identificar un transporte y «go by + transporte» para decir cómo viajas.",
           "patterns": [
             {
               "label": "Modelo",
-              "pattern": "It is a bus. It is a train.",
+              "pattern": "It is a bus.",
               "examples": [
-                "It is a bus. It is a train.",
-                "It is a bus."
+                "It is a bus.",
+                "I go by train.",
+                "The boat is on the river."
               ]
             },
             {
               "label": "Práctica",
-              "pattern": "Lee cada frase y elige el medio de transporte correcto.",
+              "pattern": "Lee la frase, escucha el modelo y crea una frase parecida.",
               "examples": [
-                "It is a bus."
+                "It is a bus.",
+                "I go by train.",
+                "The boat is on the river."
               ]
             }
           ],
-          "tip": "Lee el ejemplo y observa cómo se usa el vocabulario en una frase."
+          "tip": "Escucha y repite. Fíjate en el orden de las palabras y usa el modelo para hablar."
         }
       }
     },
@@ -892,112 +895,112 @@
           {
             "itemId": "english-pre-a1-m043-speaking-ex01-i01",
             "position": 1,
-            "prompt": "Say the word “car”.",
+            "prompt": "Say a short sentence about “car”. Use the model if you need help.",
             "audio": "tts:en-GB:car",
             "evaluation": {
               "type": "transcription_feedback",
               "transcriptionSeparateFromPronunciation": true
             },
-            "modelAnswer": "car"
+            "modelAnswer": "I go by car."
           },
           {
             "itemId": "english-pre-a1-m043-speaking-ex01-i02",
             "position": 2,
-            "prompt": "Make a sentence with “bus”.",
+            "prompt": "Say a short sentence about “bus”. Use the model if you need help.",
             "audio": "tts:en-GB:I can see bus.",
             "evaluation": {
               "type": "transcription_feedback",
               "transcriptionSeparateFromPronunciation": true
             },
-            "modelAnswer": "I can see bus."
+            "modelAnswer": "I go by bus."
           },
           {
             "itemId": "english-pre-a1-m043-speaking-ex01-i03",
             "position": 3,
-            "prompt": "Say the word “train”.",
+            "prompt": "Say a short sentence about “train”. Use the model if you need help.",
             "audio": "tts:en-GB:train",
             "evaluation": {
               "type": "transcription_feedback",
               "transcriptionSeparateFromPronunciation": true
             },
-            "modelAnswer": "train"
+            "modelAnswer": "I go by train."
           },
           {
             "itemId": "english-pre-a1-m043-speaking-ex01-i04",
             "position": 4,
-            "prompt": "Make a sentence with “bike”.",
+            "prompt": "Say a short sentence about “bike”. Use the model if you need help.",
             "audio": "tts:en-GB:I can see bike.",
             "evaluation": {
               "type": "transcription_feedback",
               "transcriptionSeparateFromPronunciation": true
             },
-            "modelAnswer": "I can see bike."
+            "modelAnswer": "I ride a bike."
           },
           {
             "itemId": "english-pre-a1-m043-speaking-ex01-i05",
             "position": 5,
-            "prompt": "Say the word “boat”.",
+            "prompt": "Say a short sentence about “boat”. Use the model if you need help.",
             "audio": "tts:en-GB:boat",
             "evaluation": {
               "type": "transcription_feedback",
               "transcriptionSeparateFromPronunciation": true
             },
-            "modelAnswer": "boat"
+            "modelAnswer": "The boat is on the river."
           },
           {
             "itemId": "english-pre-a1-m043-speaking-ex01-i06",
             "position": 6,
-            "prompt": "Make a sentence with “plane”.",
+            "prompt": "Say a short sentence about “plane”. Use the model if you need help.",
             "audio": "tts:en-GB:I can see plane.",
             "evaluation": {
               "type": "transcription_feedback",
               "transcriptionSeparateFromPronunciation": true
             },
-            "modelAnswer": "I can see plane."
+            "modelAnswer": "The plane is in the sky."
           },
           {
             "itemId": "english-pre-a1-m043-speaking-ex01-i07",
             "position": 7,
-            "prompt": "Say the word “taxi”.",
+            "prompt": "Say a short sentence about “taxi”. Use the model if you need help.",
             "audio": "tts:en-GB:taxi",
             "evaluation": {
               "type": "transcription_feedback",
               "transcriptionSeparateFromPronunciation": true
             },
-            "modelAnswer": "taxi"
+            "modelAnswer": "We take a taxi."
           },
           {
             "itemId": "english-pre-a1-m043-speaking-ex01-i08",
             "position": 8,
-            "prompt": "Make a sentence with “station”.",
+            "prompt": "Say a short sentence about “station”. Use the model if you need help.",
             "audio": "tts:en-GB:I can see station.",
             "evaluation": {
               "type": "transcription_feedback",
               "transcriptionSeparateFromPronunciation": true
             },
-            "modelAnswer": "I can see station."
+            "modelAnswer": "The train is at the station."
           },
           {
             "itemId": "english-pre-a1-m043-speaking-ex01-i09",
             "position": 9,
-            "prompt": "Say the word “driver”.",
+            "prompt": "Say a short sentence about “driver”. Use the model if you need help.",
             "audio": "tts:en-GB:driver",
             "evaluation": {
               "type": "transcription_feedback",
               "transcriptionSeparateFromPronunciation": true
             },
-            "modelAnswer": "driver"
+            "modelAnswer": "The driver is here."
           },
           {
             "itemId": "english-pre-a1-m043-speaking-ex01-i10",
             "position": 10,
-            "prompt": "Make a sentence with “ticket”.",
+            "prompt": "Say a short sentence about “ticket”. Use the model if you need help.",
             "audio": "tts:en-GB:I can see ticket.",
             "evaluation": {
               "type": "transcription_feedback",
               "transcriptionSeparateFromPronunciation": true
             },
-            "modelAnswer": "I can see ticket."
+            "modelAnswer": "I have a ticket."
           }
         ]
       }
@@ -1016,8 +1019,7 @@
             "evaluation": {
               "type": "word_bank"
             },
-            "gapToken": "[[gap-01]]",
-            "expectedWordId": "english-pre-a1-m043-listening-word-01"
+            "gapToken": "[[gap-01]]"
           },
           {
             "itemId": "english-pre-a1-m043-listening-ex01-i02",
@@ -1025,8 +1027,7 @@
             "evaluation": {
               "type": "word_bank"
             },
-            "gapToken": "[[gap-02]]",
-            "expectedWordId": "english-pre-a1-m043-listening-word-02"
+            "gapToken": "[[gap-02]]"
           },
           {
             "itemId": "english-pre-a1-m043-listening-ex01-i03",
@@ -1034,8 +1035,7 @@
             "evaluation": {
               "type": "word_bank"
             },
-            "gapToken": "[[gap-03]]",
-            "expectedWordId": "english-pre-a1-m043-listening-word-03"
+            "gapToken": "[[gap-03]]"
           },
           {
             "itemId": "english-pre-a1-m043-listening-ex01-i04",
@@ -1043,8 +1043,7 @@
             "evaluation": {
               "type": "word_bank"
             },
-            "gapToken": "[[gap-04]]",
-            "expectedWordId": "english-pre-a1-m043-listening-word-04"
+            "gapToken": "[[gap-04]]"
           },
           {
             "itemId": "english-pre-a1-m043-listening-ex01-i05",
@@ -1052,8 +1051,7 @@
             "evaluation": {
               "type": "word_bank"
             },
-            "gapToken": "[[gap-05]]",
-            "expectedWordId": "english-pre-a1-m043-listening-word-05"
+            "gapToken": "[[gap-05]]"
           },
           {
             "itemId": "english-pre-a1-m043-listening-ex01-i06",
@@ -1061,8 +1059,7 @@
             "evaluation": {
               "type": "word_bank"
             },
-            "gapToken": "[[gap-06]]",
-            "expectedWordId": "english-pre-a1-m043-listening-word-06"
+            "gapToken": "[[gap-06]]"
           },
           {
             "itemId": "english-pre-a1-m043-listening-ex01-i07",
@@ -1070,8 +1067,7 @@
             "evaluation": {
               "type": "word_bank"
             },
-            "gapToken": "[[gap-07]]",
-            "expectedWordId": "english-pre-a1-m043-listening-word-07"
+            "gapToken": "[[gap-07]]"
           },
           {
             "itemId": "english-pre-a1-m043-listening-ex01-i08",
@@ -1079,8 +1075,7 @@
             "evaluation": {
               "type": "word_bank"
             },
-            "gapToken": "[[gap-08]]",
-            "expectedWordId": "english-pre-a1-m043-listening-word-08"
+            "gapToken": "[[gap-08]]"
           },
           {
             "itemId": "english-pre-a1-m043-listening-ex01-i09",
@@ -1088,8 +1083,7 @@
             "evaluation": {
               "type": "word_bank"
             },
-            "gapToken": "[[gap-09]]",
-            "expectedWordId": "english-pre-a1-m043-listening-word-09"
+            "gapToken": "[[gap-09]]"
           },
           {
             "itemId": "english-pre-a1-m043-listening-ex01-i10",
@@ -1097,14 +1091,13 @@
             "evaluation": {
               "type": "word_bank"
             },
-            "gapToken": "[[gap-10]]",
-            "expectedWordId": "english-pre-a1-m043-listening-word-10"
+            "gapToken": "[[gap-10]]"
           }
         ],
         "content": {
-          "audio": "tts:en-GB:Welcome to Transport Town. Word 1: car. Word 2: bus. Word 3: train. Word 4: bike. Word 5: boat. Word 6: plane. Word 7: taxi. Word 8: station. Word 9: driver. Word 10: ticket. Thank you for listening.",
+          "audio": "tts:en-GB:Today I go to town. I see a car, a bus and a train. I ride a bike in the park. A boat is on the river. A plane is in the sky. Mum takes a taxi to the station. The driver checks my ticket.",
           "audioLocale": "en-GB",
-          "transcriptTemplate": "Welcome to Transport Town. Word 1: [[gap-01]]. Word 2: [[gap-02]]. Word 3: [[gap-03]]. Word 4: [[gap-04]]. Word 5: [[gap-05]]. Word 6: [[gap-06]]. Word 7: [[gap-07]]. Word 8: [[gap-08]]. Word 9: [[gap-09]]. Word 10: [[gap-10]]. Thank you for listening.",
+          "transcriptTemplate": "Today I go to town. I see a [[gap-01]], a [[gap-02]] and a [[gap-03]]. I ride a [[gap-04]] in the park. A [[gap-05]] is on the river. A [[gap-06]] is in the sky. Mum takes a [[gap-07]] to the [[gap-08]]. The [[gap-09]] checks my [[gap-10]].",
           "wordBank": [
             {
               "wordId": "english-pre-a1-m043-listening-word-01",

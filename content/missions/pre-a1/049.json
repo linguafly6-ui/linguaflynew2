@@ -99,26 +99,29 @@
           }
         ],
         "theory": {
-          "title": "There is… e imperativos en una escena",
-          "explanation": "«There is…» nos ayuda a decir qué hay en la playa: «There is a shell». Para dar instrucciones usamos un verbo al principio: «Find a shell». Así podemos describir la escena y pedir a alguien que busque un objeto.",
+          "title": "La playa",
+          "explanation": "Usa «There is…» para describir lo que hay y el imperativo para dar instrucciones sencillas.",
           "patterns": [
             {
               "label": "Modelo",
-              "pattern": "There is sand. Find a shell.",
+              "pattern": "There is sand.",
               "examples": [
-                "There is sand. Find a shell.",
-                "Find a shell."
+                "There is sand.",
+                "Find a shell.",
+                "I can swim in the sea."
               ]
             },
             {
               "label": "Práctica",
-              "pattern": "Elige la frase que describe la playa y sigue la instrucción para encontrar un objeto.",
+              "pattern": "Lee la frase, escucha el modelo y crea una frase parecida.",
               "examples": [
-                "Find a shell."
+                "There is sand.",
+                "Find a shell.",
+                "I can swim in the sea."
               ]
             }
           ],
-          "tip": "Lee el ejemplo y observa cómo se usa el vocabulario en una frase."
+          "tip": "Escucha y repite. Fíjate en el orden de las palabras y usa el modelo para hablar."
         }
       }
     },
@@ -892,112 +895,112 @@
           {
             "itemId": "english-pre-a1-m049-speaking-ex01-i01",
             "position": 1,
-            "prompt": "Say the word “beach”.",
+            "prompt": "Say a short sentence about “beach”. Use the model if you need help.",
             "audio": "tts:en-GB:beach",
             "evaluation": {
               "type": "transcription_feedback",
               "transcriptionSeparateFromPronunciation": true
             },
-            "modelAnswer": "beach"
+            "modelAnswer": "I am at the beach."
           },
           {
             "itemId": "english-pre-a1-m049-speaking-ex01-i02",
             "position": 2,
-            "prompt": "Make a sentence with “sea”.",
+            "prompt": "Say a short sentence about “sea”. Use the model if you need help.",
             "audio": "tts:en-GB:I can see sea.",
             "evaluation": {
               "type": "transcription_feedback",
               "transcriptionSeparateFromPronunciation": true
             },
-            "modelAnswer": "I can see sea."
+            "modelAnswer": "The sea is blue."
           },
           {
             "itemId": "english-pre-a1-m049-speaking-ex01-i03",
             "position": 3,
-            "prompt": "Say the word “sand”.",
+            "prompt": "Say a short sentence about “sand”. Use the model if you need help.",
             "audio": "tts:en-GB:sand",
             "evaluation": {
               "type": "transcription_feedback",
               "transcriptionSeparateFromPronunciation": true
             },
-            "modelAnswer": "sand"
+            "modelAnswer": "The sand is warm."
           },
           {
             "itemId": "english-pre-a1-m049-speaking-ex01-i04",
             "position": 4,
-            "prompt": "Make a sentence with “shell”.",
+            "prompt": "Say a short sentence about “shell”. Use the model if you need help.",
             "audio": "tts:en-GB:I can see shell.",
             "evaluation": {
               "type": "transcription_feedback",
               "transcriptionSeparateFromPronunciation": true
             },
-            "modelAnswer": "I can see shell."
+            "modelAnswer": "I find a shell."
           },
           {
             "itemId": "english-pre-a1-m049-speaking-ex01-i05",
             "position": 5,
-            "prompt": "Say the word “bucket”.",
+            "prompt": "Say a short sentence about “bucket”. Use the model if you need help.",
             "audio": "tts:en-GB:bucket",
             "evaluation": {
               "type": "transcription_feedback",
               "transcriptionSeparateFromPronunciation": true
             },
-            "modelAnswer": "bucket"
+            "modelAnswer": "I have a bucket."
           },
           {
             "itemId": "english-pre-a1-m049-speaking-ex01-i06",
             "position": 6,
-            "prompt": "Make a sentence with “spade”.",
+            "prompt": "Say a short sentence about “spade”. Use the model if you need help.",
             "audio": "tts:en-GB:I can see spade.",
             "evaluation": {
               "type": "transcription_feedback",
               "transcriptionSeparateFromPronunciation": true
             },
-            "modelAnswer": "I can see spade."
+            "modelAnswer": "I dig with a spade."
           },
           {
             "itemId": "english-pre-a1-m049-speaking-ex01-i07",
             "position": 7,
-            "prompt": "Say the word “sun”.",
+            "prompt": "Say a short sentence about “sun”. Use the model if you need help.",
             "audio": "tts:en-GB:sun",
             "evaluation": {
               "type": "transcription_feedback",
               "transcriptionSeparateFromPronunciation": true
             },
-            "modelAnswer": "sun"
+            "modelAnswer": "The sun is hot."
           },
           {
             "itemId": "english-pre-a1-m049-speaking-ex01-i08",
             "position": 8,
-            "prompt": "Make a sentence with “towel”.",
+            "prompt": "Say a short sentence about “towel”. Use the model if you need help.",
             "audio": "tts:en-GB:I can see towel.",
             "evaluation": {
               "type": "transcription_feedback",
               "transcriptionSeparateFromPronunciation": true
             },
-            "modelAnswer": "I can see towel."
+            "modelAnswer": "My towel is on the sand."
           },
           {
             "itemId": "english-pre-a1-m049-speaking-ex01-i09",
             "position": 9,
-            "prompt": "Say the word “sunny”.",
+            "prompt": "Say a short sentence about “sunny”. Use the model if you need help.",
             "audio": "tts:en-GB:sunny",
             "evaluation": {
               "type": "transcription_feedback",
               "transcriptionSeparateFromPronunciation": true
             },
-            "modelAnswer": "sunny"
+            "modelAnswer": "It is sunny today."
           },
           {
             "itemId": "english-pre-a1-m049-speaking-ex01-i10",
             "position": 10,
-            "prompt": "Make a sentence with “swim”.",
+            "prompt": "Say a short sentence about “swim”. Use the model if you need help.",
             "audio": "tts:en-GB:I can see swim.",
             "evaluation": {
               "type": "transcription_feedback",
               "transcriptionSeparateFromPronunciation": true
             },
-            "modelAnswer": "I can see swim."
+            "modelAnswer": "I can swim in the sea."
           }
         ]
       }
@@ -1016,8 +1019,7 @@
             "evaluation": {
               "type": "word_bank"
             },
-            "gapToken": "[[gap-01]]",
-            "expectedWordId": "english-pre-a1-m049-listening-word-01"
+            "gapToken": "[[gap-01]]"
           },
           {
             "itemId": "english-pre-a1-m049-listening-ex01-i02",
@@ -1025,8 +1027,7 @@
             "evaluation": {
               "type": "word_bank"
             },
-            "gapToken": "[[gap-02]]",
-            "expectedWordId": "english-pre-a1-m049-listening-word-02"
+            "gapToken": "[[gap-02]]"
           },
           {
             "itemId": "english-pre-a1-m049-listening-ex01-i03",
@@ -1034,8 +1035,7 @@
             "evaluation": {
               "type": "word_bank"
             },
-            "gapToken": "[[gap-03]]",
-            "expectedWordId": "english-pre-a1-m049-listening-word-03"
+            "gapToken": "[[gap-03]]"
           },
           {
             "itemId": "english-pre-a1-m049-listening-ex01-i04",
@@ -1043,8 +1043,7 @@
             "evaluation": {
               "type": "word_bank"
             },
-            "gapToken": "[[gap-04]]",
-            "expectedWordId": "english-pre-a1-m049-listening-word-04"
+            "gapToken": "[[gap-04]]"
           },
           {
             "itemId": "english-pre-a1-m049-listening-ex01-i05",
@@ -1052,8 +1051,7 @@
             "evaluation": {
               "type": "word_bank"
             },
-            "gapToken": "[[gap-05]]",
-            "expectedWordId": "english-pre-a1-m049-listening-word-05"
+            "gapToken": "[[gap-05]]"
           },
           {
             "itemId": "english-pre-a1-m049-listening-ex01-i06",
@@ -1061,8 +1059,7 @@
             "evaluation": {
               "type": "word_bank"
             },
-            "gapToken": "[[gap-06]]",
-            "expectedWordId": "english-pre-a1-m049-listening-word-06"
+            "gapToken": "[[gap-06]]"
           },
           {
             "itemId": "english-pre-a1-m049-listening-ex01-i07",
@@ -1070,8 +1067,7 @@
             "evaluation": {
               "type": "word_bank"
             },
-            "gapToken": "[[gap-07]]",
-            "expectedWordId": "english-pre-a1-m049-listening-word-07"
+            "gapToken": "[[gap-07]]"
           },
           {
             "itemId": "english-pre-a1-m049-listening-ex01-i08",
@@ -1079,8 +1075,7 @@
             "evaluation": {
               "type": "word_bank"
             },
-            "gapToken": "[[gap-08]]",
-            "expectedWordId": "english-pre-a1-m049-listening-word-08"
+            "gapToken": "[[gap-08]]"
           },
           {
             "itemId": "english-pre-a1-m049-listening-ex01-i09",
@@ -1088,8 +1083,7 @@
             "evaluation": {
               "type": "word_bank"
             },
-            "gapToken": "[[gap-09]]",
-            "expectedWordId": "english-pre-a1-m049-listening-word-09"
+            "gapToken": "[[gap-09]]"
           },
           {
             "itemId": "english-pre-a1-m049-listening-ex01-i10",
@@ -1097,14 +1091,13 @@
             "evaluation": {
               "type": "word_bank"
             },
-            "gapToken": "[[gap-10]]",
-            "expectedWordId": "english-pre-a1-m049-listening-word-10"
+            "gapToken": "[[gap-10]]"
           }
         ],
         "content": {
-          "audio": "tts:en-GB:Welcome to At the Beach. Word 1: beach. Word 2: sea. Word 3: sand. Word 4: shell. Word 5: bucket. Word 6: spade. Word 7: sun. Word 8: towel. Word 9: sunny. Word 10: swim. Thank you for listening.",
+          "audio": "tts:en-GB:It is a sunny day at the beach. The sun is hot. I can swim in the sea. I play in the sand. I find a shell and put it in my bucket. I use a spade to dig. Mum sits on a towel.",
           "audioLocale": "en-GB",
-          "transcriptTemplate": "Welcome to At the Beach. Word 1: [[gap-01]]. Word 2: [[gap-02]]. Word 3: [[gap-03]]. Word 4: [[gap-04]]. Word 5: [[gap-05]]. Word 6: [[gap-06]]. Word 7: [[gap-07]]. Word 8: [[gap-08]]. Word 9: [[gap-09]]. Word 10: [[gap-10]]. Thank you for listening.",
+          "transcriptTemplate": "It is a [[gap-09]] day at the [[gap-01]]. The [[gap-07]] is hot. I can [[gap-10]] in the [[gap-02]]. I play in the [[gap-03]]. I find a [[gap-04]] and put it in my [[gap-05]]. I use a [[gap-06]] to dig. Mum sits on a [[gap-08]].",
           "wordBank": [
             {
               "wordId": "english-pre-a1-m049-listening-word-01",

@@ -99,26 +99,29 @@
           }
         ],
         "theory": {
-          "title": "How much? / buy… (fórmulas de compra)",
-          "explanation": "En una tienda podemos preguntar «How much?» para saber el precio. La palabra «buy» significa comprar. En esta misión usamos «How much?» como pregunta fija y respondemos con una cantidad o un precio muy sencillo.",
+          "title": "Comprar en una tienda",
+          "explanation": "Pregunta «How much is it?» para saber el precio. Usa «please» al pedir y «thank you» al recibir algo.",
           "patterns": [
             {
               "label": "Modelo",
-              "pattern": "How much? One coin, please.",
+              "pattern": "How much is this bag?",
               "examples": [
-                "How much? One coin, please.",
-                "How much?"
+                "How much is this bag?",
+                "A bag, please.",
+                "Thank you."
               ]
             },
             {
               "label": "Práctica",
-              "pattern": "Completa un intercambio breve entre el cliente y la persona de la tienda.",
+              "pattern": "Lee la frase, escucha el modelo y crea una frase parecida.",
               "examples": [
-                "How much?"
+                "How much is this bag?",
+                "A bag, please.",
+                "Thank you."
               ]
             }
           ],
-          "tip": "Lee el ejemplo y observa cómo se usa el vocabulario en una frase."
+          "tip": "Escucha y repite. Fíjate en el orden de las palabras y usa el modelo para hablar."
         }
       }
     },
@@ -476,7 +479,7 @@
           {
             "itemId": "english-pre-a1-m046-grammar-ex01-i05",
             "position": 5,
-            "prompt": "Complete: I want to ___ a bag.",
+            "prompt": "Complete: I want to ___ this toy.",
             "evaluation": {
               "type": "single_choice"
             },
@@ -892,112 +895,112 @@
           {
             "itemId": "english-pre-a1-m046-speaking-ex01-i01",
             "position": 1,
-            "prompt": "Say the word “shop”.",
+            "prompt": "Say a short sentence about “shop”. Use the model if you need help.",
             "audio": "tts:en-GB:shop",
             "evaluation": {
               "type": "transcription_feedback",
               "transcriptionSeparateFromPronunciation": true
             },
-            "modelAnswer": "shop"
+            "modelAnswer": "I go to the shop."
           },
           {
             "itemId": "english-pre-a1-m046-speaking-ex01-i02",
             "position": 2,
-            "prompt": "Make a sentence with “buy”.",
+            "prompt": "Say a short sentence about “buy”. Use the model if you need help.",
             "audio": "tts:en-GB:I can see buy.",
             "evaluation": {
               "type": "transcription_feedback",
               "transcriptionSeparateFromPronunciation": true
             },
-            "modelAnswer": "I can see buy."
+            "modelAnswer": "I want to buy a bag."
           },
           {
             "itemId": "english-pre-a1-m046-speaking-ex01-i03",
             "position": 3,
-            "prompt": "Say the word “money”.",
+            "prompt": "Say a short sentence about “money”. Use the model if you need help.",
             "audio": "tts:en-GB:money",
             "evaluation": {
               "type": "transcription_feedback",
               "transcriptionSeparateFromPronunciation": true
             },
-            "modelAnswer": "money"
+            "modelAnswer": "I have some money."
           },
           {
             "itemId": "english-pre-a1-m046-speaking-ex01-i04",
             "position": 4,
-            "prompt": "Make a sentence with “coin”.",
+            "prompt": "Say a short sentence about “coin”. Use the model if you need help.",
             "audio": "tts:en-GB:I can see coin.",
             "evaluation": {
               "type": "transcription_feedback",
               "transcriptionSeparateFromPronunciation": true
             },
-            "modelAnswer": "I can see coin."
+            "modelAnswer": "I have one coin."
           },
           {
             "itemId": "english-pre-a1-m046-speaking-ex01-i05",
             "position": 5,
-            "prompt": "Say the word “bag”.",
+            "prompt": "Say a short sentence about “bag”. Use the model if you need help.",
             "audio": "tts:en-GB:bag",
             "evaluation": {
               "type": "transcription_feedback",
               "transcriptionSeparateFromPronunciation": true
             },
-            "modelAnswer": "bag"
+            "modelAnswer": "This is my bag."
           },
           {
             "itemId": "english-pre-a1-m046-speaking-ex01-i06",
             "position": 6,
-            "prompt": "Make a sentence with “How much?”.",
+            "prompt": "Say a short sentence about “How much?”. Use the model if you need help.",
             "audio": "tts:en-GB:I can see How much?.",
             "evaluation": {
               "type": "transcription_feedback",
               "transcriptionSeparateFromPronunciation": true
             },
-            "modelAnswer": "I can see How much?."
+            "modelAnswer": "How much is this bag?"
           },
           {
             "itemId": "english-pre-a1-m046-speaking-ex01-i07",
             "position": 7,
-            "prompt": "Say the word “worker”.",
+            "prompt": "Say a short sentence about “worker”. Use the model if you need help.",
             "audio": "tts:en-GB:worker",
             "evaluation": {
               "type": "transcription_feedback",
               "transcriptionSeparateFromPronunciation": true
             },
-            "modelAnswer": "worker"
+            "modelAnswer": "The shop worker is kind."
           },
           {
             "itemId": "english-pre-a1-m046-speaking-ex01-i08",
             "position": 8,
-            "prompt": "Make a sentence with “price”.",
+            "prompt": "Say a short sentence about “price”. Use the model if you need help.",
             "audio": "tts:en-GB:I can see price.",
             "evaluation": {
               "type": "transcription_feedback",
               "transcriptionSeparateFromPronunciation": true
             },
-            "modelAnswer": "I can see price."
+            "modelAnswer": "What is the price?"
           },
           {
             "itemId": "english-pre-a1-m046-speaking-ex01-i09",
             "position": 9,
-            "prompt": "Say the word “please”.",
+            "prompt": "Say a short sentence about “please”. Use the model if you need help.",
             "audio": "tts:en-GB:please",
             "evaluation": {
               "type": "transcription_feedback",
               "transcriptionSeparateFromPronunciation": true
             },
-            "modelAnswer": "please"
+            "modelAnswer": "A bag, please."
           },
           {
             "itemId": "english-pre-a1-m046-speaking-ex01-i10",
             "position": 10,
-            "prompt": "Make a sentence with “thank you”.",
+            "prompt": "Say a short sentence about “thank you”. Use the model if you need help.",
             "audio": "tts:en-GB:I can see thank you.",
             "evaluation": {
               "type": "transcription_feedback",
               "transcriptionSeparateFromPronunciation": true
             },
-            "modelAnswer": "I can see thank you."
+            "modelAnswer": "Thank you for the bag."
           }
         ]
       }
@@ -1016,8 +1019,7 @@
             "evaluation": {
               "type": "word_bank"
             },
-            "gapToken": "[[gap-01]]",
-            "expectedWordId": "english-pre-a1-m046-listening-word-01"
+            "gapToken": "[[gap-01]]"
           },
           {
             "itemId": "english-pre-a1-m046-listening-ex01-i02",
@@ -1025,8 +1027,7 @@
             "evaluation": {
               "type": "word_bank"
             },
-            "gapToken": "[[gap-02]]",
-            "expectedWordId": "english-pre-a1-m046-listening-word-02"
+            "gapToken": "[[gap-02]]"
           },
           {
             "itemId": "english-pre-a1-m046-listening-ex01-i03",
@@ -1034,8 +1035,7 @@
             "evaluation": {
               "type": "word_bank"
             },
-            "gapToken": "[[gap-03]]",
-            "expectedWordId": "english-pre-a1-m046-listening-word-03"
+            "gapToken": "[[gap-03]]"
           },
           {
             "itemId": "english-pre-a1-m046-listening-ex01-i04",
@@ -1043,8 +1043,7 @@
             "evaluation": {
               "type": "word_bank"
             },
-            "gapToken": "[[gap-04]]",
-            "expectedWordId": "english-pre-a1-m046-listening-word-04"
+            "gapToken": "[[gap-04]]"
           },
           {
             "itemId": "english-pre-a1-m046-listening-ex01-i05",
@@ -1052,8 +1051,7 @@
             "evaluation": {
               "type": "word_bank"
             },
-            "gapToken": "[[gap-05]]",
-            "expectedWordId": "english-pre-a1-m046-listening-word-05"
+            "gapToken": "[[gap-05]]"
           },
           {
             "itemId": "english-pre-a1-m046-listening-ex01-i06",
@@ -1061,8 +1059,7 @@
             "evaluation": {
               "type": "word_bank"
             },
-            "gapToken": "[[gap-06]]",
-            "expectedWordId": "english-pre-a1-m046-listening-word-06"
+            "gapToken": "[[gap-06]]"
           },
           {
             "itemId": "english-pre-a1-m046-listening-ex01-i07",
@@ -1070,8 +1067,7 @@
             "evaluation": {
               "type": "word_bank"
             },
-            "gapToken": "[[gap-07]]",
-            "expectedWordId": "english-pre-a1-m046-listening-word-07"
+            "gapToken": "[[gap-07]]"
           },
           {
             "itemId": "english-pre-a1-m046-listening-ex01-i08",
@@ -1079,8 +1075,7 @@
             "evaluation": {
               "type": "word_bank"
             },
-            "gapToken": "[[gap-08]]",
-            "expectedWordId": "english-pre-a1-m046-listening-word-08"
+            "gapToken": "[[gap-08]]"
           },
           {
             "itemId": "english-pre-a1-m046-listening-ex01-i09",
@@ -1088,8 +1083,7 @@
             "evaluation": {
               "type": "word_bank"
             },
-            "gapToken": "[[gap-09]]",
-            "expectedWordId": "english-pre-a1-m046-listening-word-09"
+            "gapToken": "[[gap-09]]"
           },
           {
             "itemId": "english-pre-a1-m046-listening-ex01-i10",
@@ -1097,14 +1091,13 @@
             "evaluation": {
               "type": "word_bank"
             },
-            "gapToken": "[[gap-10]]",
-            "expectedWordId": "english-pre-a1-m046-listening-word-10"
+            "gapToken": "[[gap-10]]"
           }
         ],
         "content": {
-          "audio": "tts:en-GB:Welcome to At the Shops. Word 1: shop. Word 2: buy. Word 3: money. Word 4: coin. Word 5: bag. Word 6: How much?. Word 7: worker. Word 8: price. Word 9: please. Word 10: thank you. Thank you for listening.",
+          "audio": "tts:en-GB:At the shop, I want to buy a bag. I have some money and one coin. I ask, 'How much?' The shop worker tells me the price. I say, 'A bag, please.' I say 'thank you' when I get it.",
           "audioLocale": "en-GB",
-          "transcriptTemplate": "Welcome to At the Shops. Word 1: [[gap-01]]. Word 2: [[gap-02]]. Word 3: [[gap-03]]. Word 4: [[gap-04]]. Word 5: [[gap-05]]. Word 6: [[gap-06]]. Word 7: [[gap-07]]. Word 8: [[gap-08]]. Word 9: [[gap-09]]. Word 10: [[gap-10]]. Thank you for listening.",
+          "transcriptTemplate": "At the [[gap-01]], I want to [[gap-02]] a [[gap-05]]. I have some [[gap-03]] and one [[gap-04]]. I ask, '[[gap-06]]' The shop [[gap-07]] tells me the [[gap-08]]. I say, 'A bag, [[gap-09]].' I say '[[gap-10]]' when I get it.",
           "wordBank": [
             {
               "wordId": "english-pre-a1-m046-listening-word-01",
