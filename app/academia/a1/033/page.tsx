@@ -1,3 +1,0 @@
-import Link from "next/link";
-export const metadata={title:"Telling the Time · Misión 033 · Linguafly A1",description:"La hora."};
-export default function MissionPage(){return <main className="mx-auto min-h-[70vh] max-w-5xl px-5 py-10"><section className="mb-7"><Link href="/academia/a1" className="text-sm font-semibold text-blue-700">← Misiones A1</Link><p className="mt-6 text-sm font-extrabold uppercase tracking-widest text-indigo-700">Linguafly Quest · A1 · Misión 033</p><h1 className="mt-2 text-4xl font-black text-slate-950">Telling the Time</h1><p className="mt-3 text-slate-600">La hora.</p></section><iframe title="Misión 033 · Telling the Time" src="/missions/a1/033/index.html" className="h-[1100px] w-full rounded-2xl border border-slate-200 bg-white"/></main>}
