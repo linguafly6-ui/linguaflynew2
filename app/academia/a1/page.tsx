@@ -1,173 +1,636 @@
 import Link from "next/link";
 
 export const metadata = {
-  title: "Inglés A1 · Catálogo temático · Linguafly Academy",
-  description: "Catálogo de temas para desarrollar las competencias iniciales de inglés A1."
+  title: "Inglés A1 · 100 misiones · Linguafly Academy",
+  description: "Curso de inglés A1 con 100 misiones organizadas en 10 bloques temáticos."
 };
 
-const units = [
+const blocks = [
+  [
+    "A1.1",
+    "001–010 · Identidad y presentaciones",
+    "Intercambia información personal y aprende a presentarte."
+  ],
+  [
+    "A1.2",
+    "011–020 · Familia y relaciones",
+    "Describe personas cercanas y habla de tus relaciones."
+  ],
+  [
+    "A1.3",
+    "021–030 · Hogar y entorno",
+    "Describe tu casa y los lugares que te rodean."
+  ],
+  [
+    "A1.4",
+    "031–040 · Rutinas y tiempo",
+    "Habla de actividades diarias, horarios y hábitos."
+  ],
+  [
+    "A1.5",
+    "041–050 · Comida y restaurantes",
+    "Pide comida y participa en conversaciones sencillas."
+  ],
+  [
+    "A1.6",
+    "051–060 · Compras, ropa y dinero",
+    "Pregunta por prendas, productos, precios y cantidades."
+  ],
+  [
+    "A1.7",
+    "061–070 · Tiempo libre y habilidades",
+    "Habla de aficiones, deportes y actividades."
+  ],
+  [
+    "A1.8",
+    "071–080 · Estudios, trabajo y comunicación",
+    "Describe estudios, ocupaciones y mensajes cotidianos."
+  ],
+  [
+    "A1.9",
+    "081–090 · Ciudad y viajes",
+    "Pide indicaciones y resuelve situaciones de viaje."
+  ],
+  [
+    "A1.10",
+    "091–100 · Salud y vida cotidiana",
+    "Practica intercambios cotidianos e integra lo aprendido."
+  ]
+] as const;
+
+const missions = [
   {
-    "number": "A1.1",
-    "title": "001–010 · Personal identity and introductions",
-    "subtitle": "Intercambia información personal básica y se presenta con frases sencillas."
+    "id": "001",
+    "title": "Who Am I?",
+    "description": "Datos personales"
   },
   {
-    "number": "A1.2",
-    "title": "011–020 · Family, people and relationships",
-    "subtitle": "Describe personas cercanas y expresa relaciones y características básicas."
+    "id": "002",
+    "title": "Nice to Meet You",
+    "description": "Saludos y presentaciones"
   },
   {
-    "number": "A1.3",
-    "title": "021–030 · Home and daily environment",
-    "subtitle": "Describe su casa y lugares cercanos; indica dónde están las cosas."
+    "id": "003",
+    "title": "Where Are You From?",
+    "description": "Países y nacionalidades"
   },
   {
-    "number": "A1.4",
-    "title": "031–040 · Daily routines and time",
-    "subtitle": "Habla de rutinas y horarios usando presente simple y expresiones temporales."
+    "id": "004",
+    "title": "Spelling My Name",
+    "description": "Alfabeto y deletreo"
   },
   {
-    "number": "A1.5",
-    "title": "041–050 · Food, drinks and restaurants",
-    "subtitle": "Identifica alimentos y bebidas y participa en intercambios sencillos en cafeterías y restaurantes."
+    "id": "005",
+    "title": "Personal Questions",
+    "description": "Preguntas personales"
   },
   {
-    "number": "A1.6",
-    "title": "051–060 · Shopping, clothes and money",
-    "subtitle": "Pregunta por productos, precios y cantidades en intercambios breves."
+    "id": "006",
+    "title": "Numbers and Contact Details",
+    "description": "Números y contacto"
   },
   {
-    "number": "A1.7",
-    "title": "061–070 · Free time, hobbies and abilities",
-    "subtitle": "Habla de tiempo libre, expresa capacidades y propone actividades."
+    "id": "007",
+    "title": "Languages I Speak",
+    "description": "Idiomas y habilidades"
   },
   {
-    "number": "A1.8",
-    "title": "071–080 · Study, work and communication",
-    "subtitle": "Describe estudios y ocupaciones y se comunica con mensajes sencillos."
+    "id": "008",
+    "title": "My Profile",
+    "description": "Perfil personal"
   },
   {
-    "number": "A1.9",
-    "title": "081–090 · Town, transport and travel",
-    "subtitle": "Pide y comprende indicaciones e información básica durante un viaje."
+    "id": "009",
+    "title": "People in My Class",
+    "description": "Personas de la clase"
   },
   {
-    "number": "A1.10",
-    "title": "091–100 · Health, weather and everyday interaction",
-    "subtitle": "Resuelve intercambios cotidianos sencillos e integra recursos del nivel A1."
+    "id": "010",
+    "title": "First Conversation",
+    "description": "Conversación integrada"
+  },
+  {
+    "id": "011",
+    "title": "Family and Friends",
+    "description": "Familia y amistades"
+  },
+  {
+    "id": "012",
+    "title": "Daily Routines",
+    "description": "Rutinas diarias"
+  },
+  {
+    "id": "013",
+    "title": "Days, Dates and Times",
+    "description": "Días, fechas y horas"
+  },
+  {
+    "id": "014",
+    "title": "Free Time and Hobbies",
+    "description": "Tiempo libre y aficiones"
+  },
+  {
+    "id": "015",
+    "title": "Sports and Abilities",
+    "description": "Deportes y habilidades"
+  },
+  {
+    "id": "016",
+    "title": "My Home",
+    "description": "La vivienda"
+  },
+  {
+    "id": "017",
+    "title": "There Is and There Are",
+    "description": "Describir lo que hay"
+  },
+  {
+    "id": "018",
+    "title": "Places in Town",
+    "description": "Lugares de la ciudad"
+  },
+  {
+    "id": "019",
+    "title": "Directions and Location",
+    "description": "Direcciones y ubicación"
+  },
+  {
+    "id": "020",
+    "title": "Food and Drinks",
+    "description": "Comida y bebidas"
+  },
+  {
+    "id": "021",
+    "title": "At the Café and Restaurant",
+    "description": "En la cafetería y restaurante"
+  },
+  {
+    "id": "022",
+    "title": "Shopping and Clothes",
+    "description": "Compras y ropa"
+  },
+  {
+    "id": "023",
+    "title": "Prices and Quantities",
+    "description": "Precios y cantidades"
+  },
+  {
+    "id": "024",
+    "title": "Physical Appearance",
+    "description": "Aspecto físico"
+  },
+  {
+    "id": "025",
+    "title": "Personality and Feelings",
+    "description": "Personalidad y emociones"
+  },
+  {
+    "id": "026",
+    "title": "Body and Health",
+    "description": "Cuerpo y salud"
+  },
+  {
+    "id": "027",
+    "title": "At the Doctor",
+    "description": "En el médico"
+  },
+  {
+    "id": "028",
+    "title": "School and Classroom",
+    "description": "Escuela y aula"
+  },
+  {
+    "id": "029",
+    "title": "Jobs and Workplaces",
+    "description": "Profesiones y lugares de trabajo"
+  },
+  {
+    "id": "030",
+    "title": "My Week",
+    "description": "Mi semana"
+  },
+  {
+    "id": "031",
+    "title": "A Typical Day",
+    "description": "Rutina diaria"
+  },
+  {
+    "id": "032",
+    "title": "Morning and Evening",
+    "description": "Momentos del día"
+  },
+  {
+    "id": "033",
+    "title": "Telling the Time",
+    "description": "La hora"
+  },
+  {
+    "id": "034",
+    "title": "Days and Months",
+    "description": "Días, meses y fechas"
+  },
+  {
+    "id": "035",
+    "title": "How Often?",
+    "description": "Frecuencia"
+  },
+  {
+    "id": "036",
+    "title": "Do You Get Up Early?",
+    "description": "Preguntas en presente simple"
+  },
+  {
+    "id": "037",
+    "title": "My Week",
+    "description": "Rutina semanal"
+  },
+  {
+    "id": "038",
+    "title": "At the Weekend",
+    "description": "Fin de semana"
+  },
+  {
+    "id": "039",
+    "title": "School and Work Schedules",
+    "description": "Horarios de estudio y trabajo"
+  },
+  {
+    "id": "040",
+    "title": "My Daily Routine",
+    "description": "Rutina integrada"
+  },
+  {
+    "id": "041",
+    "title": "Food and Drinks",
+    "description": "Alimentos y bebidas"
+  },
+  {
+    "id": "042",
+    "title": "Fruit, Vegetables and Snacks",
+    "description": "Frutas, verduras y tentempiés"
+  },
+  {
+    "id": "043",
+    "title": "Meals and Mealtimes",
+    "description": "Comidas y horarios"
+  },
+  {
+    "id": "044",
+    "title": "At the Café",
+    "description": "Pedir en una cafetería"
+  },
+  {
+    "id": "045",
+    "title": "At the Restaurant",
+    "description": "En el restaurante"
+  },
+  {
+    "id": "046",
+    "title": "Menus and Prices",
+    "description": "Menús y precios"
+  },
+  {
+    "id": "047",
+    "title": "Ordering Food and Drinks",
+    "description": "Pedir comida y bebida"
+  },
+  {
+    "id": "048",
+    "title": "Likes, Dislikes and Preferences",
+    "description": "Gustos y preferencias"
+  },
+  {
+    "id": "049",
+    "title": "A Restaurant Conversation",
+    "description": "Conversación en un restaurante"
+  },
+  {
+    "id": "050",
+    "title": "Food and Ordering",
+    "description": "Repaso: comida y pedidos"
+  },
+  {
+    "id": "051",
+    "title": "Clothes and Colours",
+    "description": "Prendas y colores"
+  },
+  {
+    "id": "052",
+    "title": "What Are You Wearing?",
+    "description": "Ropa y presente continuo"
+  },
+  {
+    "id": "053",
+    "title": "At the Clothes Shop",
+    "description": "Comprar ropa"
+  },
+  {
+    "id": "054",
+    "title": "How Much Are These Shoes?",
+    "description": "Demostrativos y precios"
+  },
+  {
+    "id": "055",
+    "title": "Money and Numbers",
+    "description": "Números y monedas"
+  },
+  {
+    "id": "056",
+    "title": "Shopping Questions",
+    "description": "Preguntas en tiendas"
+  },
+  {
+    "id": "057",
+    "title": "Everyday Objects",
+    "description": "Objetos personales"
+  },
+  {
+    "id": "058",
+    "title": "My Favourite Outfit",
+    "description": "Describir conjuntos"
+  },
+  {
+    "id": "059",
+    "title": "At the Market",
+    "description": "Puestos y cantidades"
+  },
+  {
+    "id": "060",
+    "title": "Shopping Mission",
+    "description": "Compra integrada"
+  },
+  {
+    "id": "061",
+    "title": "Free Time Activities",
+    "description": "Aficiones y tiempo libre"
+  },
+  {
+    "id": "062",
+    "title": "Sports I Play",
+    "description": "Deportes"
+  },
+  {
+    "id": "063",
+    "title": "Can You Swim?",
+    "description": "Habilidades con can / can't"
+  },
+  {
+    "id": "064",
+    "title": "Making Invitations",
+    "description": "Invitaciones"
+  },
+  {
+    "id": "065",
+    "title": "What Are You Doing?",
+    "description": "Presente continuo"
+  },
+  {
+    "id": "066",
+    "title": "At the Sports Centre",
+    "description": "Lugares y actividades deportivas"
+  },
+  {
+    "id": "067",
+    "title": "My Favourite Hobby",
+    "description": "Expresar preferencias"
+  },
+  {
+    "id": "068",
+    "title": "Plans for Saturday",
+    "description": "Planes próximos sencillos"
+  },
+  {
+    "id": "069",
+    "title": "Agreeing and Disagreeing",
+    "description": "Aceptar y rechazar propuestas"
+  },
+  {
+    "id": "070",
+    "title": "Free Time Conversation",
+    "description": "Conversación integrada"
+  },
+  {
+    "id": "071",
+    "title": "School Subjects",
+    "description": "Asignaturas y material"
+  },
+  {
+    "id": "072",
+    "title": "Classroom English",
+    "description": "Instrucciones de aula"
+  },
+  {
+    "id": "073",
+    "title": "Jobs and Workplaces",
+    "description": "Profesiones y lugares de trabajo"
+  },
+  {
+    "id": "074",
+    "title": "What Do You Do?",
+    "description": "Preguntas sobre ocupación"
+  },
+  {
+    "id": "075",
+    "title": "A Working Day",
+    "description": "Tareas y rutinas laborales"
+  },
+  {
+    "id": "076",
+    "title": "Technology Around Us",
+    "description": "Dispositivos y tecnología"
+  },
+  {
+    "id": "077",
+    "title": "Messages and Emails",
+    "description": "Comunicación escrita básica"
+  },
+  {
+    "id": "078",
+    "title": "Phone Conversations",
+    "description": "Conversación telefónica"
+  },
+  {
+    "id": "079",
+    "title": "Rules at School and Work",
+    "description": "Normas y obligación básica"
+  },
+  {
+    "id": "080",
+    "title": "Study and Work Profile",
+    "description": "Perfil de estudio y trabajo"
+  },
+  {
+    "id": "081",
+    "title": "Getting Around Town",
+    "description": "Transporte urbano"
+  },
+  {
+    "id": "082",
+    "title": "Where Is the Station?",
+    "description": "Preguntar por lugares"
+  },
+  {
+    "id": "083",
+    "title": "Travel Plans",
+    "description": "Planes de viaje"
+  },
+  {
+    "id": "084",
+    "title": "At the Train Station",
+    "description": "Estación y billetes"
+  },
+  {
+    "id": "085",
+    "title": "At the Airport",
+    "description": "Aeropuerto"
+  },
+  {
+    "id": "086",
+    "title": "Staying at a Hotel",
+    "description": "Alojamiento"
+  },
+  {
+    "id": "087",
+    "title": "Travel Questions",
+    "description": "Preguntas de viaje"
+  },
+  {
+    "id": "088",
+    "title": "Weather and Seasons",
+    "description": "Tiempo y estaciones"
+  },
+  {
+    "id": "089",
+    "title": "Holiday Activities",
+    "description": "Actividades de vacaciones"
+  },
+  {
+    "id": "090",
+    "title": "Travel Conversation",
+    "description": "Viaje integrado"
+  },
+  {
+    "id": "091",
+    "title": "At the Doctor",
+    "description": "Salud y síntomas"
+  },
+  {
+    "id": "092",
+    "title": "Parts of the Body",
+    "description": "Cuerpo y salud"
+  },
+  {
+    "id": "093",
+    "title": "Healthy Habits",
+    "description": "Hábitos saludables"
+  },
+  {
+    "id": "094",
+    "title": "Weather Plans",
+    "description": "Tiempo y actividades"
+  },
+  {
+    "id": "095",
+    "title": "Celebrations",
+    "description": "Celebraciones y cumpleaños"
+  },
+  {
+    "id": "096",
+    "title": "Making Arrangements",
+    "description": "Quedar y organizarse"
+  },
+  {
+    "id": "097",
+    "title": "Past Events: A First Look",
+    "description": "Pasado inicial frecuente"
+  },
+  {
+    "id": "098",
+    "title": "A Short Story",
+    "description": "Secuencia de acontecimientos"
+  },
+  {
+    "id": "099",
+    "title": "Reading and Listening Challenge",
+    "description": "Comprensión integrada"
+  },
+  {
+    "id": "100",
+    "title": "My A1 Project",
+    "description": "Proyecto final integrado"
   }
-];
+] as const;
 
 export default function A1Page() {
-  return <main className="mx-auto min-h-[70vh] max-w-6xl px-5 py-10">
-    <Link href="/academia" className="text-sm font-semibold text-blue-700">← Linguafly Academy</Link>
-    <section className="mt-6 rounded-3xl bg-gradient-to-br from-blue-950 via-indigo-900 to-violet-800 px-7 py-10 text-white sm:px-12">
-      <p className="text-sm font-extrabold uppercase tracking-[.2em] text-cyan-300">Linguafly Academy · Elementary</p>
-      <h1 className="mt-3 text-4xl font-black sm:text-5xl">Curso de inglés A1</h1>
-      <p className="mt-4 max-w-3xl text-lg leading-8 text-blue-100">Catálogo temático para avanzar desde las primeras frases hasta desenvolverte en intercambios cotidianos muy sencillos.</p>
-      <div className="mt-7 flex flex-wrap gap-3 text-sm font-bold">
-        <span className="rounded-full bg-white/15 px-4 py-2">100 misiones</span>
-        <span className="rounded-full bg-white/15 px-4 py-2">Nivel MCER A1</span>
-      </div>
-    </section>
-    <div className="mt-8 flex items-center justify-between gap-4">
-      <div><h2 className="text-2xl font-black text-slate-950">Temario A1</h2><p className="mt-1 text-sm text-slate-600">Progresión pedagógica oficial del plan de 100 misiones A1.</p></div>
-      <span className="rounded-xl bg-blue-50 px-3 py-2 text-sm font-bold text-blue-800">32 temas</span>
-    </div>
-    <section className="mt-8 rounded-3xl border border-indigo-100 bg-indigo-50 p-6">
-      <div className="flex flex-wrap items-end justify-between gap-3">
-        <div><p className="text-xs font-black uppercase tracking-widest text-indigo-700">Misiones interactivas disponibles</p><h2 className="mt-1 text-2xl font-black text-slate-950">Primeras 10 misiones A1</h2><p className="mt-1 text-sm text-slate-600">Cada misión incluye 50 retos, exploración, práctica, repaso y audio.</p></div>
-        <span className="rounded-full bg-white px-3 py-2 text-sm font-bold text-indigo-800">10 / 100</span>
-      </div>
-      <div className="mt-5 grid gap-3 sm:grid-cols-2">
-        <Link href="/academia/a1/001" className="rounded-2xl border border-indigo-100 bg-white p-4 transition hover:border-indigo-400 hover:shadow-sm"><p className="text-xs font-extrabold tracking-widest text-indigo-700">MISIÓN 001</p><h3 className="mt-1 font-bold text-slate-900">Who Am I?</h3><p className="mt-1 text-sm text-slate-600">Datos personales</p><span className="mt-3 inline-block text-sm font-bold text-indigo-700">Empezar misión →</span></Link>
-        <Link href="/academia/a1/002" className="rounded-2xl border border-indigo-100 bg-white p-4 transition hover:border-indigo-400 hover:shadow-sm"><p className="text-xs font-extrabold tracking-widest text-indigo-700">MISIÓN 002</p><h3 className="mt-1 font-bold text-slate-900">Nice to Meet You</h3><p className="mt-1 text-sm text-slate-600">Saludos y presentaciones</p><span className="mt-3 inline-block text-sm font-bold text-indigo-700">Empezar misión →</span></Link>
-        <Link href="/academia/a1/003" className="rounded-2xl border border-indigo-100 bg-white p-4 transition hover:border-indigo-400 hover:shadow-sm"><p className="text-xs font-extrabold tracking-widest text-indigo-700">MISIÓN 003</p><h3 className="mt-1 font-bold text-slate-900">Where Are You From?</h3><p className="mt-1 text-sm text-slate-600">Países y nacionalidades</p><span className="mt-3 inline-block text-sm font-bold text-indigo-700">Empezar misión →</span></Link>
-        <Link href="/academia/a1/004" className="rounded-2xl border border-indigo-100 bg-white p-4 transition hover:border-indigo-400 hover:shadow-sm"><p className="text-xs font-extrabold tracking-widest text-indigo-700">MISIÓN 004</p><h3 className="mt-1 font-bold text-slate-900">Spelling My Name</h3><p className="mt-1 text-sm text-slate-600">Alfabeto y deletreo</p><span className="mt-3 inline-block text-sm font-bold text-indigo-700">Empezar misión →</span></Link>
-        <Link href="/academia/a1/005" className="rounded-2xl border border-indigo-100 bg-white p-4 transition hover:border-indigo-400 hover:shadow-sm"><p className="text-xs font-extrabold tracking-widest text-indigo-700">MISIÓN 005</p><h3 className="mt-1 font-bold text-slate-900">Personal Questions</h3><p className="mt-1 text-sm text-slate-600">Preguntas personales</p><span className="mt-3 inline-block text-sm font-bold text-indigo-700">Empezar misión →</span></Link>
-        <Link href="/academia/a1/006" className="rounded-2xl border border-indigo-100 bg-white p-4 transition hover:border-indigo-400 hover:shadow-sm"><p className="text-xs font-extrabold tracking-widest text-indigo-700">MISIÓN 006</p><h3 className="mt-1 font-bold text-slate-900">Numbers and Contact Details</h3><p className="mt-1 text-sm text-slate-600">Números y contacto</p><span className="mt-3 inline-block text-sm font-bold text-indigo-700">Empezar misión →</span></Link>
-        <Link href="/academia/a1/007" className="rounded-2xl border border-indigo-100 bg-white p-4 transition hover:border-indigo-400 hover:shadow-sm"><p className="text-xs font-extrabold tracking-widest text-indigo-700">MISIÓN 007</p><h3 className="mt-1 font-bold text-slate-900">Languages I Speak</h3><p className="mt-1 text-sm text-slate-600">Idiomas y habilidades</p><span className="mt-3 inline-block text-sm font-bold text-indigo-700">Empezar misión →</span></Link>
-        <Link href="/academia/a1/008" className="rounded-2xl border border-indigo-100 bg-white p-4 transition hover:border-indigo-400 hover:shadow-sm"><p className="text-xs font-extrabold tracking-widest text-indigo-700">MISIÓN 008</p><h3 className="mt-1 font-bold text-slate-900">My Profile</h3><p className="mt-1 text-sm text-slate-600">Perfil personal</p><span className="mt-3 inline-block text-sm font-bold text-indigo-700">Empezar misión →</span></Link>
-        <Link href="/academia/a1/009" className="rounded-2xl border border-indigo-100 bg-white p-4 transition hover:border-indigo-400 hover:shadow-sm"><p className="text-xs font-extrabold tracking-widest text-indigo-700">MISIÓN 009</p><h3 className="mt-1 font-bold text-slate-900">People in My Class</h3><p className="mt-1 text-sm text-slate-600">Personas de la clase</p><span className="mt-3 inline-block text-sm font-bold text-indigo-700">Empezar misión →</span></Link>
-        <Link href="/academia/a1/010" className="rounded-2xl border border-indigo-100 bg-white p-4 transition hover:border-indigo-400 hover:shadow-sm"><p className="text-xs font-extrabold tracking-widest text-indigo-700">MISIÓN 010</p><h3 className="mt-1 font-bold text-slate-900">First Conversation</h3><p className="mt-1 text-sm text-slate-600">Conversación integrada</p><span className="mt-3 inline-block text-sm font-bold text-indigo-700">Empezar misión →</span></Link>
-      </div>
-    </section>
-    <section className="mt-6 rounded-3xl border border-indigo-100 bg-indigo-50 p-6">
-      <div className="flex flex-wrap items-end justify-between gap-3"><div><p className="text-xs font-black uppercase tracking-widest text-indigo-700">Continuación del curso A1</p><h2 className="mt-1 text-2xl font-black text-slate-950">Misiones 011–030</h2><p className="mt-1 text-sm text-slate-600">10 misiones interactivas con 50 retos cada una.</p></div><span className="rounded-full bg-white px-3 py-2 text-sm font-bold text-indigo-800">10 misiones</span></div>
-      <div className="mt-5 grid gap-3 sm:grid-cols-2 lg:grid-cols-3">
-        <Link href="/academia/a1/011" className="rounded-2xl border border-indigo-100 bg-white p-4 transition hover:border-indigo-400 hover:shadow-sm"><p className="text-xs font-extrabold tracking-widest text-indigo-700">MISIÓN 011</p><h3 className="mt-1 font-bold text-slate-900">Family and Friends</h3><p className="mt-1 text-sm text-slate-600">Familia y amistades</p><span className="mt-3 inline-block text-sm font-bold text-indigo-700">Empezar misión →</span></Link>
-        <Link href="/academia/a1/012" className="rounded-2xl border border-indigo-100 bg-white p-4 transition hover:border-indigo-400 hover:shadow-sm"><p className="text-xs font-extrabold tracking-widest text-indigo-700">MISIÓN 012</p><h3 className="mt-1 font-bold text-slate-900">Daily Routines</h3><p className="mt-1 text-sm text-slate-600">Rutinas diarias</p><span className="mt-3 inline-block text-sm font-bold text-indigo-700">Empezar misión →</span></Link>
-        <Link href="/academia/a1/013" className="rounded-2xl border border-indigo-100 bg-white p-4 transition hover:border-indigo-400 hover:shadow-sm"><p className="text-xs font-extrabold tracking-widest text-indigo-700">MISIÓN 013</p><h3 className="mt-1 font-bold text-slate-900">Days, Dates and Times</h3><p className="mt-1 text-sm text-slate-600">Días, fechas y horas</p><span className="mt-3 inline-block text-sm font-bold text-indigo-700">Empezar misión →</span></Link>
-        <Link href="/academia/a1/014" className="rounded-2xl border border-indigo-100 bg-white p-4 transition hover:border-indigo-400 hover:shadow-sm"><p className="text-xs font-extrabold tracking-widest text-indigo-700">MISIÓN 014</p><h3 className="mt-1 font-bold text-slate-900">Free Time and Hobbies</h3><p className="mt-1 text-sm text-slate-600">Tiempo libre y aficiones</p><span className="mt-3 inline-block text-sm font-bold text-indigo-700">Empezar misión →</span></Link>
-        <Link href="/academia/a1/015" className="rounded-2xl border border-indigo-100 bg-white p-4 transition hover:border-indigo-400 hover:shadow-sm"><p className="text-xs font-extrabold tracking-widest text-indigo-700">MISIÓN 015</p><h3 className="mt-1 font-bold text-slate-900">Sports and Abilities</h3><p className="mt-1 text-sm text-slate-600">Deportes y habilidades</p><span className="mt-3 inline-block text-sm font-bold text-indigo-700">Empezar misión →</span></Link>
-        <Link href="/academia/a1/016" className="rounded-2xl border border-indigo-100 bg-white p-4 transition hover:border-indigo-400 hover:shadow-sm"><p className="text-xs font-extrabold tracking-widest text-indigo-700">MISIÓN 016</p><h3 className="mt-1 font-bold text-slate-900">My Home</h3><p className="mt-1 text-sm text-slate-600">La vivienda</p><span className="mt-3 inline-block text-sm font-bold text-indigo-700">Empezar misión →</span></Link>
-        <Link href="/academia/a1/017" className="rounded-2xl border border-indigo-100 bg-white p-4 transition hover:border-indigo-400 hover:shadow-sm"><p className="text-xs font-extrabold tracking-widest text-indigo-700">MISIÓN 017</p><h3 className="mt-1 font-bold text-slate-900">There Is and There Are</h3><p className="mt-1 text-sm text-slate-600">Describir lo que hay</p><span className="mt-3 inline-block text-sm font-bold text-indigo-700">Empezar misión →</span></Link>
-        <Link href="/academia/a1/018" className="rounded-2xl border border-indigo-100 bg-white p-4 transition hover:border-indigo-400 hover:shadow-sm"><p className="text-xs font-extrabold tracking-widest text-indigo-700">MISIÓN 018</p><h3 className="mt-1 font-bold text-slate-900">Places in Town</h3><p className="mt-1 text-sm text-slate-600">Lugares de la ciudad</p><span className="mt-3 inline-block text-sm font-bold text-indigo-700">Empezar misión →</span></Link>
-        <Link href="/academia/a1/019" className="rounded-2xl border border-indigo-100 bg-white p-4 transition hover:border-indigo-400 hover:shadow-sm"><p className="text-xs font-extrabold tracking-widest text-indigo-700">MISIÓN 019</p><h3 className="mt-1 font-bold text-slate-900">Directions and Location</h3><p className="mt-1 text-sm text-slate-600">Direcciones y ubicación</p><span className="mt-3 inline-block text-sm font-bold text-indigo-700">Empezar misión →</span></Link>
-        <Link href="/academia/a1/020" className="rounded-2xl border border-indigo-100 bg-white p-4 transition hover:border-indigo-400 hover:shadow-sm"><p className="text-xs font-extrabold tracking-widest text-indigo-700">MISIÓN 020</p><h3 className="mt-1 font-bold text-slate-900">Food and Drinks</h3><p className="mt-1 text-sm text-slate-600">Comida y bebidas</p><span className="mt-3 inline-block text-sm font-bold text-indigo-700">Empezar misión →</span></Link>
-        <Link href="/academia/a1/021" className="rounded-2xl border border-indigo-100 bg-white p-4 transition hover:border-indigo-400 hover:shadow-sm"><p className="text-xs font-extrabold tracking-widest text-indigo-700">MISIÓN 021</p><h3 className="mt-1 font-bold text-slate-900">At the Café and Restaurant</h3><p className="mt-1 text-sm text-slate-600">En la cafetería y restaurante</p><span className="mt-3 inline-block text-sm font-bold text-indigo-700">Empezar misión →</span></Link>
-        <Link href="/academia/a1/022" className="rounded-2xl border border-indigo-100 bg-white p-4 transition hover:border-indigo-400 hover:shadow-sm"><p className="text-xs font-extrabold tracking-widest text-indigo-700">MISIÓN 022</p><h3 className="mt-1 font-bold text-slate-900">Shopping and Clothes</h3><p className="mt-1 text-sm text-slate-600">Compras y ropa</p><span className="mt-3 inline-block text-sm font-bold text-indigo-700">Empezar misión →</span></Link>
-        <Link href="/academia/a1/023" className="rounded-2xl border border-indigo-100 bg-white p-4 transition hover:border-indigo-400 hover:shadow-sm"><p className="text-xs font-extrabold tracking-widest text-indigo-700">MISIÓN 023</p><h3 className="mt-1 font-bold text-slate-900">Prices and Quantities</h3><p className="mt-1 text-sm text-slate-600">Precios y cantidades</p><span className="mt-3 inline-block text-sm font-bold text-indigo-700">Empezar misión →</span></Link>
-        <Link href="/academia/a1/024" className="rounded-2xl border border-indigo-100 bg-white p-4 transition hover:border-indigo-400 hover:shadow-sm"><p className="text-xs font-extrabold tracking-widest text-indigo-700">MISIÓN 024</p><h3 className="mt-1 font-bold text-slate-900">Physical Appearance</h3><p className="mt-1 text-sm text-slate-600">Aspecto físico</p><span className="mt-3 inline-block text-sm font-bold text-indigo-700">Empezar misión →</span></Link>
-        <Link href="/academia/a1/025" className="rounded-2xl border border-indigo-100 bg-white p-4 transition hover:border-indigo-400 hover:shadow-sm"><p className="text-xs font-extrabold tracking-widest text-indigo-700">MISIÓN 025</p><h3 className="mt-1 font-bold text-slate-900">Personality and Feelings</h3><p className="mt-1 text-sm text-slate-600">Personalidad y emociones</p><span className="mt-3 inline-block text-sm font-bold text-indigo-700">Empezar misión →</span></Link>
-        <Link href="/academia/a1/026" className="rounded-2xl border border-indigo-100 bg-white p-4 transition hover:border-indigo-400 hover:shadow-sm"><p className="text-xs font-extrabold tracking-widest text-indigo-700">MISIÓN 026</p><h3 className="mt-1 font-bold text-slate-900">Body and Health</h3><p className="mt-1 text-sm text-slate-600">Cuerpo y salud</p><span className="mt-3 inline-block text-sm font-bold text-indigo-700">Empezar misión →</span></Link>
-        <Link href="/academia/a1/027" className="rounded-2xl border border-indigo-100 bg-white p-4 transition hover:border-indigo-400 hover:shadow-sm"><p className="text-xs font-extrabold tracking-widest text-indigo-700">MISIÓN 027</p><h3 className="mt-1 font-bold text-slate-900">At the Doctor</h3><p className="mt-1 text-sm text-slate-600">En el médico</p><span className="mt-3 inline-block text-sm font-bold text-indigo-700">Empezar misión →</span></Link>
-        <Link href="/academia/a1/028" className="rounded-2xl border border-indigo-100 bg-white p-4 transition hover:border-indigo-400 hover:shadow-sm"><p className="text-xs font-extrabold tracking-widest text-indigo-700">MISIÓN 028</p><h3 className="mt-1 font-bold text-slate-900">School and Classroom</h3><p className="mt-1 text-sm text-slate-600">Escuela y aula</p><span className="mt-3 inline-block text-sm font-bold text-indigo-700">Empezar misión →</span></Link>
-        <Link href="/academia/a1/029" className="rounded-2xl border border-indigo-100 bg-white p-4 transition hover:border-indigo-400 hover:shadow-sm"><p className="text-xs font-extrabold tracking-widest text-indigo-700">MISIÓN 029</p><h3 className="mt-1 font-bold text-slate-900">Jobs and Workplaces</h3><p className="mt-1 text-sm text-slate-600">Profesiones y lugares de trabajo</p><span className="mt-3 inline-block text-sm font-bold text-indigo-700">Empezar misión →</span></Link>
-        <Link href="/academia/a1/030" className="rounded-2xl border border-indigo-100 bg-white p-4 transition hover:border-indigo-400 hover:shadow-sm"><p className="text-xs font-extrabold tracking-widest text-indigo-700">MISIÓN 030</p><h3 className="mt-1 font-bold text-slate-900">My Week</h3><p className="mt-1 text-sm text-slate-600">Mi semana</p><span className="mt-3 inline-block text-sm font-bold text-indigo-700">Empezar misión →</span></Link>
-      </div>
-    </section>
-    <section className="mt-6 rounded-3xl border border-indigo-100 bg-indigo-50 p-6">
-      <div className="flex flex-wrap items-end justify-between gap-3"><div><p className="text-xs font-black uppercase tracking-widest text-indigo-700">Nuevas misiones · A1.4</p><h2 className="mt-1 text-2xl font-black text-slate-950">Misiones 031–040</h2><p className="mt-1 text-sm text-slate-600">10 misiones de rutinas y horarios, con 50 retos cada una.</p></div><span className="rounded-full bg-white px-3 py-2 text-sm font-bold text-indigo-800">10 misiones</span></div>
-      <div className="mt-5 grid gap-3 sm:grid-cols-2 lg:grid-cols-3">
-        <Link href="/academia/a1/031" className="rounded-2xl border border-indigo-100 bg-white p-4 transition hover:border-indigo-400 hover:shadow-sm"><p className="text-xs font-extrabold tracking-widest text-indigo-700">MISIÓN 031</p><h3 className="mt-1 font-bold text-slate-900">A Typical Day</h3><p className="mt-1 text-sm text-slate-600">Rutina diaria</p><span className="mt-3 inline-block text-sm font-bold text-indigo-700">Empezar misión →</span></Link>
-        <Link href="/academia/a1/032" className="rounded-2xl border border-indigo-100 bg-white p-4 transition hover:border-indigo-400 hover:shadow-sm"><p className="text-xs font-extrabold tracking-widest text-indigo-700">MISIÓN 032</p><h3 className="mt-1 font-bold text-slate-900">Morning and Evening</h3><p className="mt-1 text-sm text-slate-600">Momentos del día</p><span className="mt-3 inline-block text-sm font-bold text-indigo-700">Empezar misión →</span></Link>
-        <Link href="/academia/a1/033" className="rounded-2xl border border-indigo-100 bg-white p-4 transition hover:border-indigo-400 hover:shadow-sm"><p className="text-xs font-extrabold tracking-widest text-indigo-700">MISIÓN 033</p><h3 className="mt-1 font-bold text-slate-900">Telling the Time</h3><p className="mt-1 text-sm text-slate-600">La hora</p><span className="mt-3 inline-block text-sm font-bold text-indigo-700">Empezar misión →</span></Link>
-        <Link href="/academia/a1/034" className="rounded-2xl border border-indigo-100 bg-white p-4 transition hover:border-indigo-400 hover:shadow-sm"><p className="text-xs font-extrabold tracking-widest text-indigo-700">MISIÓN 034</p><h3 className="mt-1 font-bold text-slate-900">Days and Months</h3><p className="mt-1 text-sm text-slate-600">Días, meses y fechas</p><span className="mt-3 inline-block text-sm font-bold text-indigo-700">Empezar misión →</span></Link>
-        <Link href="/academia/a1/035" className="rounded-2xl border border-indigo-100 bg-white p-4 transition hover:border-indigo-400 hover:shadow-sm"><p className="text-xs font-extrabold tracking-widest text-indigo-700">MISIÓN 035</p><h3 className="mt-1 font-bold text-slate-900">How Often?</h3><p className="mt-1 text-sm text-slate-600">Frecuencia</p><span className="mt-3 inline-block text-sm font-bold text-indigo-700">Empezar misión →</span></Link>
-        <Link href="/academia/a1/036" className="rounded-2xl border border-indigo-100 bg-white p-4 transition hover:border-indigo-400 hover:shadow-sm"><p className="text-xs font-extrabold tracking-widest text-indigo-700">MISIÓN 036</p><h3 className="mt-1 font-bold text-slate-900">Do You Get Up Early?</h3><p className="mt-1 text-sm text-slate-600">Preguntas en presente simple</p><span className="mt-3 inline-block text-sm font-bold text-indigo-700">Empezar misión →</span></Link>
-        <Link href="/academia/a1/037" className="rounded-2xl border border-indigo-100 bg-white p-4 transition hover:border-indigo-400 hover:shadow-sm"><p className="text-xs font-extrabold tracking-widest text-indigo-700">MISIÓN 037</p><h3 className="mt-1 font-bold text-slate-900">My Week</h3><p className="mt-1 text-sm text-slate-600">Rutina semanal</p><span className="mt-3 inline-block text-sm font-bold text-indigo-700">Empezar misión →</span></Link>
-        <Link href="/academia/a1/038" className="rounded-2xl border border-indigo-100 bg-white p-4 transition hover:border-indigo-400 hover:shadow-sm"><p className="text-xs font-extrabold tracking-widest text-indigo-700">MISIÓN 038</p><h3 className="mt-1 font-bold text-slate-900">At the Weekend</h3><p className="mt-1 text-sm text-slate-600">Fin de semana</p><span className="mt-3 inline-block text-sm font-bold text-indigo-700">Empezar misión →</span></Link>
-        <Link href="/academia/a1/039" className="rounded-2xl border border-indigo-100 bg-white p-4 transition hover:border-indigo-400 hover:shadow-sm"><p className="text-xs font-extrabold tracking-widest text-indigo-700">MISIÓN 039</p><h3 className="mt-1 font-bold text-slate-900">School and Work Schedules</h3><p className="mt-1 text-sm text-slate-600">Horarios de estudio y trabajo</p><span className="mt-3 inline-block text-sm font-bold text-indigo-700">Empezar misión →</span></Link>
-        <Link href="/academia/a1/040" className="rounded-2xl border border-indigo-100 bg-white p-4 transition hover:border-indigo-400 hover:shadow-sm"><p className="text-xs font-extrabold tracking-widest text-indigo-700">MISIÓN 040</p><h3 className="mt-1 font-bold text-slate-900">My Daily Routine</h3><p className="mt-1 text-sm text-slate-600">Rutina integrada</p><span className="mt-3 inline-block text-sm font-bold text-indigo-700">Empezar misión →</span></Link>
-        <Link href="/academia/a1/041" className="rounded-2xl border border-indigo-100 bg-white p-4 transition hover:border-indigo-400 hover:shadow-sm"><p className="text-xs font-extrabold tracking-widest text-indigo-700">MISIÓN 041</p><h3 className="mt-1 font-bold text-slate-900">Food and Drinks</h3><p className="mt-1 text-sm text-slate-600">Alimentos y bebidas</p><span className="mt-3 inline-block text-sm font-bold text-indigo-700">Empezar misión →</span></Link>
-        <Link href="/academia/a1/042" className="rounded-2xl border border-indigo-100 bg-white p-4 transition hover:border-indigo-400 hover:shadow-sm"><p className="text-xs font-extrabold tracking-widest text-indigo-700">MISIÓN 042</p><h3 className="mt-1 font-bold text-slate-900">Fruit, Vegetables and Snacks</h3><p className="mt-1 text-sm text-slate-600">Frutas, verduras y tentempiés</p><span className="mt-3 inline-block text-sm font-bold text-indigo-700">Empezar misión →</span></Link>
-        <Link href="/academia/a1/043" className="rounded-2xl border border-indigo-100 bg-white p-4 transition hover:border-indigo-400 hover:shadow-sm"><p className="text-xs font-extrabold tracking-widest text-indigo-700">MISIÓN 043</p><h3 className="mt-1 font-bold text-slate-900">Meals and Mealtimes</h3><p className="mt-1 text-sm text-slate-600">Comidas y horarios</p><span className="mt-3 inline-block text-sm font-bold text-indigo-700">Empezar misión →</span></Link>
-        <Link href="/academia/a1/044" className="rounded-2xl border border-indigo-100 bg-white p-4 transition hover:border-indigo-400 hover:shadow-sm"><p className="text-xs font-extrabold tracking-widest text-indigo-700">MISIÓN 044</p><h3 className="mt-1 font-bold text-slate-900">At the Café</h3><p className="mt-1 text-sm text-slate-600">Pedir en una cafetería</p><span className="mt-3 inline-block text-sm font-bold text-indigo-700">Empezar misión →</span></Link>
-        <Link href="/academia/a1/045" className="rounded-2xl border border-indigo-100 bg-white p-4 transition hover:border-indigo-400 hover:shadow-sm"><p className="text-xs font-extrabold tracking-widest text-indigo-700">MISIÓN 045</p><h3 className="mt-1 font-bold text-slate-900">At the Restaurant</h3><p className="mt-1 text-sm text-slate-600">En el restaurante</p><span className="mt-3 inline-block text-sm font-bold text-indigo-700">Empezar misión →</span></Link>
-        <Link href="/academia/a1/046" className="rounded-2xl border border-indigo-100 bg-white p-4 transition hover:border-indigo-400 hover:shadow-sm"><p className="text-xs font-extrabold tracking-widest text-indigo-700">MISIÓN 046</p><h3 className="mt-1 font-bold text-slate-900">Menus and Prices</h3><p className="mt-1 text-sm text-slate-600">Menús y precios</p><span className="mt-3 inline-block text-sm font-bold text-indigo-700">Empezar misión →</span></Link>
-        <Link href="/academia/a1/047" className="rounded-2xl border border-indigo-100 bg-white p-4 transition hover:border-indigo-400 hover:shadow-sm"><p className="text-xs font-extrabold tracking-widest text-indigo-700">MISIÓN 047</p><h3 className="mt-1 font-bold text-slate-900">Ordering Food and Drinks</h3><p className="mt-1 text-sm text-slate-600">Pedir comida y bebida</p><span className="mt-3 inline-block text-sm font-bold text-indigo-700">Empezar misión →</span></Link>
-        <Link href="/academia/a1/048" className="rounded-2xl border border-indigo-100 bg-white p-4 transition hover:border-indigo-400 hover:shadow-sm"><p className="text-xs font-extrabold tracking-widest text-indigo-700">MISIÓN 048</p><h3 className="mt-1 font-bold text-slate-900">Likes, Dislikes and Preferences</h3><p className="mt-1 text-sm text-slate-600">Gustos y preferencias</p><span className="mt-3 inline-block text-sm font-bold text-indigo-700">Empezar misión →</span></Link>
-        <Link href="/academia/a1/049" className="rounded-2xl border border-indigo-100 bg-white p-4 transition hover:border-indigo-400 hover:shadow-sm"><p className="text-xs font-extrabold tracking-widest text-indigo-700">MISIÓN 049</p><h3 className="mt-1 font-bold text-slate-900">A Restaurant Conversation</h3><p className="mt-1 text-sm text-slate-600">Conversación en un restaurante</p><span className="mt-3 inline-block text-sm font-bold text-indigo-700">Empezar misión →</span></Link>
-        <Link href="/academia/a1/050" className="rounded-2xl border border-indigo-100 bg-white p-4 transition hover:border-indigo-400 hover:shadow-sm"><p className="text-xs font-extrabold tracking-widest text-indigo-700">MISIÓN 050</p><h3 className="mt-1 font-bold text-slate-900">Food and Ordering</h3><p className="mt-1 text-sm text-slate-600">Repaso: comida y pedidos</p><span className="mt-3 inline-block text-sm font-bold text-indigo-700">Empezar misión →</span></Link>
-      </div>
-    </section>
+  return (
+    <main className="mx-auto min-h-screen max-w-7xl px-4 py-8 sm:px-6 lg:px-8">
+      <Link href="/academia" className="inline-flex items-center gap-2 text-sm font-semibold text-blue-700 transition hover:text-indigo-800">
+        <span aria-hidden="true">←</span> Linguafly Academy
+      </Link>
 
-    <section className="mt-6 rounded-3xl border border-indigo-100 bg-indigo-50 p-6">
-      <div className="flex flex-wrap items-end justify-between gap-3"><div><p className="text-xs font-black uppercase tracking-widest text-indigo-700">Nuevas misiones · A1.6</p><h2 className="mt-1 text-2xl font-black text-slate-950">Misiones 051–060</h2><p className="mt-1 text-sm text-slate-600">10 misiones de compras, ropa y dinero, con 50 retos cada una.</p></div><span className="rounded-full bg-white px-3 py-2 text-sm font-bold text-indigo-800">10 misiones</span></div>
-      <div className="mt-5 grid gap-3 sm:grid-cols-2 lg:grid-cols-3">
-        <Link href="/academia/a1/051" className="rounded-2xl border border-indigo-100 bg-white p-4 transition hover:border-indigo-400 hover:shadow-sm"><p className="text-xs font-extrabold tracking-widest text-indigo-700">MISIÓN 051</p><h3 className="mt-1 font-bold text-slate-900">Clothes and Colours</h3><p className="mt-1 text-sm text-slate-600">Prendas y colores</p><span className="mt-3 inline-block text-sm font-bold text-indigo-700">Empezar misión →</span></Link>
-        <Link href="/academia/a1/052" className="rounded-2xl border border-indigo-100 bg-white p-4 transition hover:border-indigo-400 hover:shadow-sm"><p className="text-xs font-extrabold tracking-widest text-indigo-700">MISIÓN 052</p><h3 className="mt-1 font-bold text-slate-900">What Are You Wearing?</h3><p className="mt-1 text-sm text-slate-600">Ropa y presente continuo</p><span className="mt-3 inline-block text-sm font-bold text-indigo-700">Empezar misión →</span></Link>
-        <Link href="/academia/a1/053" className="rounded-2xl border border-indigo-100 bg-white p-4 transition hover:border-indigo-400 hover:shadow-sm"><p className="text-xs font-extrabold tracking-widest text-indigo-700">MISIÓN 053</p><h3 className="mt-1 font-bold text-slate-900">At the Clothes Shop</h3><p className="mt-1 text-sm text-slate-600">Comprar ropa</p><span className="mt-3 inline-block text-sm font-bold text-indigo-700">Empezar misión →</span></Link>
-        <Link href="/academia/a1/054" className="rounded-2xl border border-indigo-100 bg-white p-4 transition hover:border-indigo-400 hover:shadow-sm"><p className="text-xs font-extrabold tracking-widest text-indigo-700">MISIÓN 054</p><h3 className="mt-1 font-bold text-slate-900">How Much Are These Shoes?</h3><p className="mt-1 text-sm text-slate-600">Demostrativos y precios</p><span className="mt-3 inline-block text-sm font-bold text-indigo-700">Empezar misión →</span></Link>
-        <Link href="/academia/a1/055" className="rounded-2xl border border-indigo-100 bg-white p-4 transition hover:border-indigo-400 hover:shadow-sm"><p className="text-xs font-extrabold tracking-widest text-indigo-700">MISIÓN 055</p><h3 className="mt-1 font-bold text-slate-900">Money and Numbers</h3><p className="mt-1 text-sm text-slate-600">Números y monedas</p><span className="mt-3 inline-block text-sm font-bold text-indigo-700">Empezar misión →</span></Link>
-        <Link href="/academia/a1/056" className="rounded-2xl border border-indigo-100 bg-white p-4 transition hover:border-indigo-400 hover:shadow-sm"><p className="text-xs font-extrabold tracking-widest text-indigo-700">MISIÓN 056</p><h3 className="mt-1 font-bold text-slate-900">Shopping Questions</h3><p className="mt-1 text-sm text-slate-600">Preguntas en tiendas</p><span className="mt-3 inline-block text-sm font-bold text-indigo-700">Empezar misión →</span></Link>
-        <Link href="/academia/a1/057" className="rounded-2xl border border-indigo-100 bg-white p-4 transition hover:border-indigo-400 hover:shadow-sm"><p className="text-xs font-extrabold tracking-widest text-indigo-700">MISIÓN 057</p><h3 className="mt-1 font-bold text-slate-900">Everyday Objects</h3><p className="mt-1 text-sm text-slate-600">Objetos personales</p><span className="mt-3 inline-block text-sm font-bold text-indigo-700">Empezar misión →</span></Link>
-        <Link href="/academia/a1/058" className="rounded-2xl border border-indigo-100 bg-white p-4 transition hover:border-indigo-400 hover:shadow-sm"><p className="text-xs font-extrabold tracking-widest text-indigo-700">MISIÓN 058</p><h3 className="mt-1 font-bold text-slate-900">My Favourite Outfit</h3><p className="mt-1 text-sm text-slate-600">Describir conjuntos</p><span className="mt-3 inline-block text-sm font-bold text-indigo-700">Empezar misión →</span></Link>
-        <Link href="/academia/a1/059" className="rounded-2xl border border-indigo-100 bg-white p-4 transition hover:border-indigo-400 hover:shadow-sm"><p className="text-xs font-extrabold tracking-widest text-indigo-700">MISIÓN 059</p><h3 className="mt-1 font-bold text-slate-900">At the Market</h3><p className="mt-1 text-sm text-slate-600">Puestos y cantidades</p><span className="mt-3 inline-block text-sm font-bold text-indigo-700">Empezar misión →</span></Link>
-        <Link href="/academia/a1/060" className="rounded-2xl border border-indigo-100 bg-white p-4 transition hover:border-indigo-400 hover:shadow-sm"><p className="text-xs font-extrabold tracking-widest text-indigo-700">MISIÓN 060</p><h3 className="mt-1 font-bold text-slate-900">Shopping Mission</h3><p className="mt-1 text-sm text-slate-600">Compra integrada</p><span className="mt-3 inline-block text-sm font-bold text-indigo-700">Empezar misión →</span></Link>
-      </div>
-    </section>
-    <section className="mt-8 rounded-2xl bg-amber-50 p-5 text-sm leading-6 text-amber-950">
-      <strong>Nota:</strong> este catálogo sigue la progresión del Excel curricular. Ya están disponibles las primeras 50 misiones interactivas, cada una con 50 retos. Las siguientes se incorporarán progresivamente hasta completar las 100 misiones del curso.
-    </section>
-  
-    <section className="mt-6 rounded-3xl border border-indigo-100 bg-indigo-50 p-6"><div><p className="text-xs font-black uppercase tracking-widest text-indigo-700">Bloque A1.7 · Free time, hobbies and abilities</p><h2 className="mt-1 text-2xl font-black text-slate-950">Misiones 061–070</h2><p className="mt-1 text-sm text-slate-600">10 misiones interactivas con 50 retos cada una.</p></div><div className="mt-5 grid gap-3 sm:grid-cols-2 lg:grid-cols-3"><Link href="/academia/a1/061" className="rounded-2xl border border-indigo-100 bg-white p-4 transition hover:border-indigo-400 hover:shadow-sm"><p className="text-xs font-extrabold tracking-widest text-indigo-700">MISIÓN 061</p><h3 className="mt-1 font-bold text-slate-900">Free Time Activities</h3><p className="mt-1 text-sm text-slate-600">Aficiones y tiempo libre</p><span className="mt-3 inline-block text-sm font-bold text-indigo-700">Empezar misión →</span></Link><Link href="/academia/a1/062" className="rounded-2xl border border-indigo-100 bg-white p-4 transition hover:border-indigo-400 hover:shadow-sm"><p className="text-xs font-extrabold tracking-widest text-indigo-700">MISIÓN 062</p><h3 className="mt-1 font-bold text-slate-900">Sports I Play</h3><p className="mt-1 text-sm text-slate-600">Deportes</p><span className="mt-3 inline-block text-sm font-bold text-indigo-700">Empezar misión →</span></Link><Link href="/academia/a1/063" className="rounded-2xl border border-indigo-100 bg-white p-4 transition hover:border-indigo-400 hover:shadow-sm"><p className="text-xs font-extrabold tracking-widest text-indigo-700">MISIÓN 063</p><h3 className="mt-1 font-bold text-slate-900">Can You Swim?</h3><p className="mt-1 text-sm text-slate-600">Habilidades con can / can't</p><span className="mt-3 inline-block text-sm font-bold text-indigo-700">Empezar misión →</span></Link><Link href="/academia/a1/064" className="rounded-2xl border border-indigo-100 bg-white p-4 transition hover:border-indigo-400 hover:shadow-sm"><p className="text-xs font-extrabold tracking-widest text-indigo-700">MISIÓN 064</p><h3 className="mt-1 font-bold text-slate-900">Making Invitations</h3><p className="mt-1 text-sm text-slate-600">Invitaciones</p><span className="mt-3 inline-block text-sm font-bold text-indigo-700">Empezar misión →</span></Link><Link href="/academia/a1/065" className="rounded-2xl border border-indigo-100 bg-white p-4 transition hover:border-indigo-400 hover:shadow-sm"><p className="text-xs font-extrabold tracking-widest text-indigo-700">MISIÓN 065</p><h3 className="mt-1 font-bold text-slate-900">What Are You Doing?</h3><p className="mt-1 text-sm text-slate-600">Presente continuo</p><span className="mt-3 inline-block text-sm font-bold text-indigo-700">Empezar misión →</span></Link><Link href="/academia/a1/066" className="rounded-2xl border border-indigo-100 bg-white p-4 transition hover:border-indigo-400 hover:shadow-sm"><p className="text-xs font-extrabold tracking-widest text-indigo-700">MISIÓN 066</p><h3 className="mt-1 font-bold text-slate-900">At the Sports Centre</h3><p className="mt-1 text-sm text-slate-600">Lugares y actividades deportivas</p><span className="mt-3 inline-block text-sm font-bold text-indigo-700">Empezar misión →</span></Link><Link href="/academia/a1/067" className="rounded-2xl border border-indigo-100 bg-white p-4 transition hover:border-indigo-400 hover:shadow-sm"><p className="text-xs font-extrabold tracking-widest text-indigo-700">MISIÓN 067</p><h3 className="mt-1 font-bold text-slate-900">My Favourite Hobby</h3><p className="mt-1 text-sm text-slate-600">Expresar preferencias</p><span className="mt-3 inline-block text-sm font-bold text-indigo-700">Empezar misión →</span></Link><Link href="/academia/a1/068" className="rounded-2xl border border-indigo-100 bg-white p-4 transition hover:border-indigo-400 hover:shadow-sm"><p className="text-xs font-extrabold tracking-widest text-indigo-700">MISIÓN 068</p><h3 className="mt-1 font-bold text-slate-900">Plans for Saturday</h3><p className="mt-1 text-sm text-slate-600">Planes próximos sencillos</p><span className="mt-3 inline-block text-sm font-bold text-indigo-700">Empezar misión →</span></Link><Link href="/academia/a1/069" className="rounded-2xl border border-indigo-100 bg-white p-4 transition hover:border-indigo-400 hover:shadow-sm"><p className="text-xs font-extrabold tracking-widest text-indigo-700">MISIÓN 069</p><h3 className="mt-1 font-bold text-slate-900">Agreeing and Disagreeing</h3><p className="mt-1 text-sm text-slate-600">Aceptar y rechazar propuestas</p><span className="mt-3 inline-block text-sm font-bold text-indigo-700">Empezar misión →</span></Link><Link href="/academia/a1/070" className="rounded-2xl border border-indigo-100 bg-white p-4 transition hover:border-indigo-400 hover:shadow-sm"><p className="text-xs font-extrabold tracking-widest text-indigo-700">MISIÓN 070</p><h3 className="mt-1 font-bold text-slate-900">Free Time Conversation</h3><p className="mt-1 text-sm text-slate-600">Conversación integrada</p><span className="mt-3 inline-block text-sm font-bold text-indigo-700">Empezar misión →</span></Link></div></section>
+      <header className="relative mt-6 overflow-hidden rounded-[2rem] bg-gradient-to-br from-slate-950 via-indigo-950 to-blue-800 px-6 py-10 text-white shadow-xl sm:px-10 sm:py-14">
+        <div className="pointer-events-none absolute -right-16 -top-24 h-72 w-72 rounded-full bg-cyan-400/15 blur-3xl" />
+        <div className="pointer-events-none absolute -bottom-28 left-1/3 h-64 w-64 rounded-full bg-violet-400/20 blur-3xl" />
+        <div className="relative max-w-3xl">
+          <p className="text-xs font-bold uppercase tracking-[.24em] text-cyan-200">Linguafly Academy · Elementary</p>
+          <h1 className="mt-4 text-4xl font-black tracking-tight sm:text-5xl">Curso de inglés A1</h1>
+          <p className="mt-4 max-w-2xl text-base leading-7 text-blue-100 sm:text-lg">
+            Avanza desde tus primeras frases hasta desenvolverte en situaciones cotidianas. El curso reúne las 100 misiones en una ruta clara y organizada.
+          </p>
+          <div className="mt-7 flex flex-wrap gap-3">
+            <span className="rounded-full border border-white/20 bg-white/10 px-4 py-2 text-sm font-semibold">100 misiones</span>
+            <span className="rounded-full border border-white/20 bg-white/10 px-4 py-2 text-sm font-semibold">10 bloques temáticos</span>
+            <span className="rounded-full border border-white/20 bg-white/10 px-4 py-2 text-sm font-semibold">Nivel MCER A1</span>
+          </div>
+        </div>
+      </header>
 
-    <section className="mt-6 rounded-3xl border border-indigo-100 bg-indigo-50 p-6"><div><p className="text-xs font-black uppercase tracking-widest text-indigo-700">Bloque A1.8 · Study, work and communication</p><h2 className="mt-1 text-2xl font-black text-slate-950">Misiones 071–080</h2><p className="mt-1 text-sm text-slate-600">10 misiones interactivas con 50 retos cada una.</p></div><div className="mt-5 grid gap-3 sm:grid-cols-2 lg:grid-cols-3"><Link href="/academia/a1/071" className="rounded-2xl border border-indigo-100 bg-white p-4 transition hover:border-indigo-400 hover:shadow-sm"><p className="text-xs font-extrabold tracking-widest text-indigo-700">MISIÓN 071</p><h3 className="mt-1 font-bold text-slate-900">School Subjects</h3><p className="mt-1 text-sm text-slate-600">Asignaturas y material</p><span className="mt-3 inline-block text-sm font-bold text-indigo-700">Empezar misión →</span></Link><Link href="/academia/a1/072" className="rounded-2xl border border-indigo-100 bg-white p-4 transition hover:border-indigo-400 hover:shadow-sm"><p className="text-xs font-extrabold tracking-widest text-indigo-700">MISIÓN 072</p><h3 className="mt-1 font-bold text-slate-900">Classroom English</h3><p className="mt-1 text-sm text-slate-600">Instrucciones de aula</p><span className="mt-3 inline-block text-sm font-bold text-indigo-700">Empezar misión →</span></Link><Link href="/academia/a1/073" className="rounded-2xl border border-indigo-100 bg-white p-4 transition hover:border-indigo-400 hover:shadow-sm"><p className="text-xs font-extrabold tracking-widest text-indigo-700">MISIÓN 073</p><h3 className="mt-1 font-bold text-slate-900">Jobs and Workplaces</h3><p className="mt-1 text-sm text-slate-600">Profesiones y lugares de trabajo</p><span className="mt-3 inline-block text-sm font-bold text-indigo-700">Empezar misión →</span></Link><Link href="/academia/a1/074" className="rounded-2xl border border-indigo-100 bg-white p-4 transition hover:border-indigo-400 hover:shadow-sm"><p className="text-xs font-extrabold tracking-widest text-indigo-700">MISIÓN 074</p><h3 className="mt-1 font-bold text-slate-900">What Do You Do?</h3><p className="mt-1 text-sm text-slate-600">Preguntas sobre ocupación</p><span className="mt-3 inline-block text-sm font-bold text-indigo-700">Empezar misión →</span></Link><Link href="/academia/a1/075" className="rounded-2xl border border-indigo-100 bg-white p-4 transition hover:border-indigo-400 hover:shadow-sm"><p className="text-xs font-extrabold tracking-widest text-indigo-700">MISIÓN 075</p><h3 className="mt-1 font-bold text-slate-900">A Working Day</h3><p className="mt-1 text-sm text-slate-600">Tareas y rutinas laborales</p><span className="mt-3 inline-block text-sm font-bold text-indigo-700">Empezar misión →</span></Link><Link href="/academia/a1/076" className="rounded-2xl border border-indigo-100 bg-white p-4 transition hover:border-indigo-400 hover:shadow-sm"><p className="text-xs font-extrabold tracking-widest text-indigo-700">MISIÓN 076</p><h3 className="mt-1 font-bold text-slate-900">Technology Around Us</h3><p className="mt-1 text-sm text-slate-600">Dispositivos y tecnología</p><span className="mt-3 inline-block text-sm font-bold text-indigo-700">Empezar misión →</span></Link><Link href="/academia/a1/077" className="rounded-2xl border border-indigo-100 bg-white p-4 transition hover:border-indigo-400 hover:shadow-sm"><p className="text-xs font-extrabold tracking-widest text-indigo-700">MISIÓN 077</p><h3 className="mt-1 font-bold text-slate-900">Messages and Emails</h3><p className="mt-1 text-sm text-slate-600">Comunicación escrita básica</p><span className="mt-3 inline-block text-sm font-bold text-indigo-700">Empezar misión →</span></Link><Link href="/academia/a1/078" className="rounded-2xl border border-indigo-100 bg-white p-4 transition hover:border-indigo-400 hover:shadow-sm"><p className="text-xs font-extrabold tracking-widest text-indigo-700">MISIÓN 078</p><h3 className="mt-1 font-bold text-slate-900">Phone Conversations</h3><p className="mt-1 text-sm text-slate-600">Conversación telefónica</p><span className="mt-3 inline-block text-sm font-bold text-indigo-700">Empezar misión →</span></Link><Link href="/academia/a1/079" className="rounded-2xl border border-indigo-100 bg-white p-4 transition hover:border-indigo-400 hover:shadow-sm"><p className="text-xs font-extrabold tracking-widest text-indigo-700">MISIÓN 079</p><h3 className="mt-1 font-bold text-slate-900">Rules at School and Work</h3><p className="mt-1 text-sm text-slate-600">Normas y obligación básica</p><span className="mt-3 inline-block text-sm font-bold text-indigo-700">Empezar misión →</span></Link><Link href="/academia/a1/080" className="rounded-2xl border border-indigo-100 bg-white p-4 transition hover:border-indigo-400 hover:shadow-sm"><p className="text-xs font-extrabold tracking-widest text-indigo-700">MISIÓN 080</p><h3 className="mt-1 font-bold text-slate-900">Study and Work Profile</h3><p className="mt-1 text-sm text-slate-600">Perfil de estudio y trabajo</p><span className="mt-3 inline-block text-sm font-bold text-indigo-700">Empezar misión →</span></Link></div></section>
+      <section className="mt-9">
+        <div className="flex flex-wrap items-end justify-between gap-3">
+          <div>
+            <p className="text-xs font-bold uppercase tracking-[.18em] text-indigo-700">Tu recorrido</p>
+            <h2 className="mt-1 text-2xl font-black text-slate-950 sm:text-3xl">Explora las misiones A1</h2>
+            <p className="mt-2 text-sm text-slate-600">Selecciona cualquier misión para abrir su contenido.</p>
+          </div>
+          <span className="rounded-full bg-indigo-50 px-4 py-2 text-sm font-bold text-indigo-800">001–100</span>
+        </div>
 
-    <section className="mt-6 rounded-3xl border border-indigo-100 bg-indigo-50 p-6"><div><p className="text-xs font-black uppercase tracking-widest text-indigo-700">Bloque A1.9 · Town, transport and travel</p><h2 className="mt-1 text-2xl font-black text-slate-950">Misiones 081–090</h2><p className="mt-1 text-sm text-slate-600">10 misiones interactivas con 50 retos cada una.</p></div><div className="mt-5 grid gap-3 sm:grid-cols-2 lg:grid-cols-3"><Link href="/academia/a1/081" className="rounded-2xl border border-indigo-100 bg-white p-4 transition hover:border-indigo-400 hover:shadow-sm"><p className="text-xs font-extrabold tracking-widest text-indigo-700">MISIÓN 081</p><h3 className="mt-1 font-bold text-slate-900">Getting Around Town</h3><p className="mt-1 text-sm text-slate-600">Transporte urbano</p><span className="mt-3 inline-block text-sm font-bold text-indigo-700">Empezar misión →</span></Link><Link href="/academia/a1/082" className="rounded-2xl border border-indigo-100 bg-white p-4 transition hover:border-indigo-400 hover:shadow-sm"><p className="text-xs font-extrabold tracking-widest text-indigo-700">MISIÓN 082</p><h3 className="mt-1 font-bold text-slate-900">Where Is the Station?</h3><p className="mt-1 text-sm text-slate-600">Preguntar por lugares</p><span className="mt-3 inline-block text-sm font-bold text-indigo-700">Empezar misión →</span></Link><Link href="/academia/a1/083" className="rounded-2xl border border-indigo-100 bg-white p-4 transition hover:border-indigo-400 hover:shadow-sm"><p className="text-xs font-extrabold tracking-widest text-indigo-700">MISIÓN 083</p><h3 className="mt-1 font-bold text-slate-900">Travel Plans</h3><p className="mt-1 text-sm text-slate-600">Planes de viaje</p><span className="mt-3 inline-block text-sm font-bold text-indigo-700">Empezar misión →</span></Link><Link href="/academia/a1/084" className="rounded-2xl border border-indigo-100 bg-white p-4 transition hover:border-indigo-400 hover:shadow-sm"><p className="text-xs font-extrabold tracking-widest text-indigo-700">MISIÓN 084</p><h3 className="mt-1 font-bold text-slate-900">At the Train Station</h3><p className="mt-1 text-sm text-slate-600">Estación y billetes</p><span className="mt-3 inline-block text-sm font-bold text-indigo-700">Empezar misión →</span></Link><Link href="/academia/a1/085" className="rounded-2xl border border-indigo-100 bg-white p-4 transition hover:border-indigo-400 hover:shadow-sm"><p className="text-xs font-extrabold tracking-widest text-indigo-700">MISIÓN 085</p><h3 className="mt-1 font-bold text-slate-900">At the Airport</h3><p className="mt-1 text-sm text-slate-600">Aeropuerto</p><span className="mt-3 inline-block text-sm font-bold text-indigo-700">Empezar misión →</span></Link><Link href="/academia/a1/086" className="rounded-2xl border border-indigo-100 bg-white p-4 transition hover:border-indigo-400 hover:shadow-sm"><p className="text-xs font-extrabold tracking-widest text-indigo-700">MISIÓN 086</p><h3 className="mt-1 font-bold text-slate-900">Staying at a Hotel</h3><p className="mt-1 text-sm text-slate-600">Alojamiento</p><span className="mt-3 inline-block text-sm font-bold text-indigo-700">Empezar misión →</span></Link><Link href="/academia/a1/087" className="rounded-2xl border border-indigo-100 bg-white p-4 transition hover:border-indigo-400 hover:shadow-sm"><p className="text-xs font-extrabold tracking-widest text-indigo-700">MISIÓN 087</p><h3 className="mt-1 font-bold text-slate-900">Travel Questions</h3><p className="mt-1 text-sm text-slate-600">Preguntas de viaje</p><span className="mt-3 inline-block text-sm font-bold text-indigo-700">Empezar misión →</span></Link><Link href="/academia/a1/088" className="rounded-2xl border border-indigo-100 bg-white p-4 transition hover:border-indigo-400 hover:shadow-sm"><p className="text-xs font-extrabold tracking-widest text-indigo-700">MISIÓN 088</p><h3 className="mt-1 font-bold text-slate-900">Weather and Seasons</h3><p className="mt-1 text-sm text-slate-600">Tiempo y estaciones</p><span className="mt-3 inline-block text-sm font-bold text-indigo-700">Empezar misión →</span></Link><Link href="/academia/a1/089" className="rounded-2xl border border-indigo-100 bg-white p-4 transition hover:border-indigo-400 hover:shadow-sm"><p className="text-xs font-extrabold tracking-widest text-indigo-700">MISIÓN 089</p><h3 className="mt-1 font-bold text-slate-900">Holiday Activities</h3><p className="mt-1 text-sm text-slate-600">Actividades de vacaciones</p><span className="mt-3 inline-block text-sm font-bold text-indigo-700">Empezar misión →</span></Link><Link href="/academia/a1/090" className="rounded-2xl border border-indigo-100 bg-white p-4 transition hover:border-indigo-400 hover:shadow-sm"><p className="text-xs font-extrabold tracking-widest text-indigo-700">MISIÓN 090</p><h3 className="mt-1 font-bold text-slate-900">Travel Conversation</h3><p className="mt-1 text-sm text-slate-600">Viaje integrado</p><span className="mt-3 inline-block text-sm font-bold text-indigo-700">Empezar misión →</span></Link></div></section>
-
-    <section className="mt-6 rounded-3xl border border-indigo-100 bg-indigo-50 p-6"><div><p className="text-xs font-black uppercase tracking-widest text-indigo-700">Bloque A1.10 · Health, weather and everyday interaction</p><h2 className="mt-1 text-2xl font-black text-slate-950">Misiones 091–100</h2><p className="mt-1 text-sm text-slate-600">10 misiones interactivas con 50 retos cada una.</p></div><div className="mt-5 grid gap-3 sm:grid-cols-2 lg:grid-cols-3"><Link href="/academia/a1/091" className="rounded-2xl border border-indigo-100 bg-white p-4 transition hover:border-indigo-400 hover:shadow-sm"><p className="text-xs font-extrabold tracking-widest text-indigo-700">MISIÓN 091</p><h3 className="mt-1 font-bold text-slate-900">At the Doctor</h3><p className="mt-1 text-sm text-slate-600">Salud y síntomas</p><span className="mt-3 inline-block text-sm font-bold text-indigo-700">Empezar misión →</span></Link><Link href="/academia/a1/092" className="rounded-2xl border border-indigo-100 bg-white p-4 transition hover:border-indigo-400 hover:shadow-sm"><p className="text-xs font-extrabold tracking-widest text-indigo-700">MISIÓN 092</p><h3 className="mt-1 font-bold text-slate-900">Parts of the Body</h3><p className="mt-1 text-sm text-slate-600">Cuerpo y salud</p><span className="mt-3 inline-block text-sm font-bold text-indigo-700">Empezar misión →</span></Link><Link href="/academia/a1/093" className="rounded-2xl border border-indigo-100 bg-white p-4 transition hover:border-indigo-400 hover:shadow-sm"><p className="text-xs font-extrabold tracking-widest text-indigo-700">MISIÓN 093</p><h3 className="mt-1 font-bold text-slate-900">Healthy Habits</h3><p className="mt-1 text-sm text-slate-600">Hábitos saludables</p><span className="mt-3 inline-block text-sm font-bold text-indigo-700">Empezar misión →</span></Link><Link href="/academia/a1/094" className="rounded-2xl border border-indigo-100 bg-white p-4 transition hover:border-indigo-400 hover:shadow-sm"><p className="text-xs font-extrabold tracking-widest text-indigo-700">MISIÓN 094</p><h3 className="mt-1 font-bold text-slate-900">Weather Plans</h3><p className="mt-1 text-sm text-slate-600">Tiempo y actividades</p><span className="mt-3 inline-block text-sm font-bold text-indigo-700">Empezar misión →</span></Link><Link href="/academia/a1/095" className="rounded-2xl border border-indigo-100 bg-white p-4 transition hover:border-indigo-400 hover:shadow-sm"><p className="text-xs font-extrabold tracking-widest text-indigo-700">MISIÓN 095</p><h3 className="mt-1 font-bold text-slate-900">Celebrations</h3><p className="mt-1 text-sm text-slate-600">Celebraciones y cumpleaños</p><span className="mt-3 inline-block text-sm font-bold text-indigo-700">Empezar misión →</span></Link><Link href="/academia/a1/096" className="rounded-2xl border border-indigo-100 bg-white p-4 transition hover:border-indigo-400 hover:shadow-sm"><p className="text-xs font-extrabold tracking-widest text-indigo-700">MISIÓN 096</p><h3 className="mt-1 font-bold text-slate-900">Making Arrangements</h3><p className="mt-1 text-sm text-slate-600">Quedar y organizarse</p><span className="mt-3 inline-block text-sm font-bold text-indigo-700">Empezar misión →</span></Link><Link href="/academia/a1/097" className="rounded-2xl border border-indigo-100 bg-white p-4 transition hover:border-indigo-400 hover:shadow-sm"><p className="text-xs font-extrabold tracking-widest text-indigo-700">MISIÓN 097</p><h3 className="mt-1 font-bold text-slate-900">Past Events: A First Look</h3><p className="mt-1 text-sm text-slate-600">Pasado inicial frecuente</p><span className="mt-3 inline-block text-sm font-bold text-indigo-700">Empezar misión →</span></Link><Link href="/academia/a1/098" className="rounded-2xl border border-indigo-100 bg-white p-4 transition hover:border-indigo-400 hover:shadow-sm"><p className="text-xs font-extrabold tracking-widest text-indigo-700">MISIÓN 098</p><h3 className="mt-1 font-bold text-slate-900">A Short Story</h3><p className="mt-1 text-sm text-slate-600">Secuencia de acontecimientos</p><span className="mt-3 inline-block text-sm font-bold text-indigo-700">Empezar misión →</span></Link><Link href="/academia/a1/099" className="rounded-2xl border border-indigo-100 bg-white p-4 transition hover:border-indigo-400 hover:shadow-sm"><p className="text-xs font-extrabold tracking-widest text-indigo-700">MISIÓN 099</p><h3 className="mt-1 font-bold text-slate-900">Reading and Listening Challenge</h3><p className="mt-1 text-sm text-slate-600">Comprensión integrada</p><span className="mt-3 inline-block text-sm font-bold text-indigo-700">Empezar misión →</span></Link><Link href="/academia/a1/100" className="rounded-2xl border border-indigo-100 bg-white p-4 transition hover:border-indigo-400 hover:shadow-sm"><p className="text-xs font-extrabold tracking-widest text-indigo-700">MISIÓN 100</p><h3 className="mt-1 font-bold text-slate-900">My A1 Project</h3><p className="mt-1 text-sm text-slate-600">Proyecto final integrado</p><span className="mt-3 inline-block text-sm font-bold text-indigo-700">Empezar misión →</span></Link></div></section>
-</main>;
+        <div className="mt-6 space-y-6">
+          {blocks.map((block, blockIndex) => {
+            const start = blockIndex * 10;
+            const blockMissions = missions.slice(start, start + 10);
+            return (
+              <section key={block[0]} className="overflow-hidden rounded-3xl border border-slate-200 bg-white shadow-sm">
+                <div className="flex flex-wrap items-start justify-between gap-4 border-b border-slate-100 bg-slate-50/80 px-5 py-5 sm:px-6">
+                  <div>
+                    <p className="text-xs font-extrabold uppercase tracking-[.18em] text-indigo-700">{block[0]}</p>
+                    <h3 className="mt-1 text-lg font-extrabold text-slate-950 sm:text-xl">{block[1]}</h3>
+                    <p className="mt-1 text-sm text-slate-600">{block[2]}</p>
+                  </div>
+                  <span className="rounded-full bg-white px-3 py-1.5 text-xs font-bold text-slate-600 ring-1 ring-slate-200">10 misiones</span>
+                </div>
+                <div className="grid gap-3 p-4 sm:grid-cols-2 sm:p-5 lg:grid-cols-3">
+                  {blockMissions.map((mission) => (
+                    <Link
+                      key={mission.id}
+                      href={`/academia/a1/${mission.id}`}
+                      className="group rounded-2xl border border-slate-200 bg-white p-4 transition hover:-translate-y-0.5 hover:border-indigo-300 hover:shadow-md focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-indigo-500"
+                    >
+                      <div className="flex items-center justify-between gap-3">
+                        <span className="text-[11px] font-extrabold tracking-[.16em] text-indigo-700">MISIÓN {mission.id}</span>
+                        <span className="text-slate-300 transition group-hover:translate-x-1 group-hover:text-indigo-600" aria-hidden="true">→</span>
+                      </div>
+                      <h4 className="mt-2 font-bold text-slate-950">{mission.title}</h4>
+                      <p className="mt-1 text-sm leading-5 text-slate-600">{mission.description}</p>
+                      <span className="mt-4 inline-flex text-xs font-bold text-indigo-700">Abrir misión</span>
+                    </Link>
+                  ))}
+                </div>
+              </section>
+            );
+          })}
+        </div>
+      </section>
+    </main>
+  );
 }
